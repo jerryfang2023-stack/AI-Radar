@@ -7,8 +7,14 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import {
   FUNDING_INSIGHT_VERSION,
+  buildFundingEntityReviewQueue,
   ensureCanonicalFundingEvidence,
+  entityResolver,
+  fundingEvidenceProofProblems,
   fundingInsightProblems,
+  normalizeFundingRound,
+  normalizeFundingInsightCard,
+  partitionRoundInvestors,
   researchPayloadProblems,
   sanitizeResearchPayload,
   subjectCompanyForEvent,
@@ -16,6 +22,7 @@ import {
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import {
+  aggregateFundingRoundCards,
   buildFundingInsightsFrontstage,
   dedupeFundingRounds,
   fundingProductFormId,
@@ -28,7 +35,7 @@ function evidence(sourceId = "SRC-1", quote = "Acme raised $20 million led by No
 }
 
 function validCard() {
-  return {
+  return normalizeFundingInsightCard({
     schema_version: FUNDING_INSIGHT_VERSION,
     funding_insight_id: "FI-1",
     triggered_by_event_id: "EV-1",
@@ -68,14 +75,14 @@ function validCard() {
     entity_links: [],
     funding_history: [],
     research_sources: [
-      { source_id: "SRC-1", title: "Funding", publisher: "Example", source_url: "https://example.com/funding", source_class: "media" },
-      { source_id: "SRC-2", title: "Product", publisher: "Acme", source_url: "https://acme.example/product", source_class: "official" },
+      { source_id: "SRC-1", title: "Funding", publisher: "Example", source_url: "https://example.com/funding", source_class: "media", content_hash: "source-one-hash" },
+      { source_id: "SRC-2", title: "Product", publisher: "Acme", source_url: "https://acme.example/product", source_class: "official", content_hash: "source-two-hash" },
     ],
     model_provenance: {},
-    auto_publish_gate: { passed: true, problems: [], gate_version: "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0" },
+    auto_publish_gate: { passed: true, problems: [], gate_version: "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1" },
     publication_status: "auto_published",
     published_at: "2026-07-26T08:00:00.000Z",
-  };
+  });
 }
 
 function writeDailyFundingFixture(projectRoot, events) {
@@ -99,6 +106,140 @@ test("自动发布门禁要求明确投资方及产品证据", () => {
   assert.deepEqual(fundingInsightProblems(card), [], "a funding event may publish without a matching Direction Card");
   card.financing.investors = [];
   assert.ok(fundingInsightProblems(card).includes("investors_missing"));
+});
+
+test("融资轮次统一为稳定代码和中文展示名，同时保留原始写法", () => {
+  assert.deepEqual(normalizeFundingRound("Series A"), {
+    code: "series_a",
+    label: "A轮",
+    original: "Series A",
+  });
+  assert.deepEqual(normalizeFundingRound("A 轮"), {
+    code: "series_a",
+    label: "A轮",
+    original: "A 轮",
+  });
+  assert.deepEqual(normalizeFundingRound("pre-seed"), {
+    code: "pre_seed",
+    label: "预种子轮",
+    original: "pre-seed",
+  });
+  assert.deepEqual(normalizeFundingRound("Series B extension"), {
+    code: "series_b_extension",
+    label: "B轮扩展",
+    original: "Series B extension",
+  });
+  assert.deepEqual(normalizeFundingRound("Seed and Series A"), {
+    code: "multi_round",
+    label: "多轮融资",
+    original: "Seed and Series A",
+  });
+});
+
+test("本轮投资方与历史或轮次不明投资方必须分开", () => {
+  const result = partitionRoundInvestors([
+    { name: "Northstar", role: "本轮领投", evidence_refs: evidence() },
+    { name: "Seed Fund", role: "种子轮领投", evidence_refs: evidence() },
+    { name: "Legacy Capital", role: "既有投资方", evidence_refs: evidence() },
+    { name: "Growth Partner", role: "A轮参投", evidence_refs: evidence() },
+  ], "Series A");
+  assert.deepEqual(result.current.map((item) => item.name), ["Northstar", "Growth Partner"]);
+  assert.deepEqual(result.other.map((item) => item.name), ["Seed Fund", "Legacy Capital"]);
+  assert.equal(result.other[0].round_context.code, "seed");
+  assert.equal(result.other[1].round_context.code, "undisclosed");
+});
+
+test("实体链接只做可解释的规范精确匹配并容忍商标与人物角色后缀", () => {
+  const resolve = entityResolver({
+    products: [{ id: "EN-PRODUCT", type: "产品/服务", name: "Acme Agent", aliases: [] }],
+    people: [{ id: "EN-PERSON", type: "人物", name: "Thomas Dohmke", aliases: [] }],
+  });
+  assert.equal(resolve("Acme Agent™", ["产品/服务"])?.id, "EN-PRODUCT");
+  assert.equal(resolve("Thomas Dohmke (CEO)", ["人物"])?.id, "EN-PERSON");
+  assert.equal(resolve("Acme", ["产品/服务"]), null, "substring matching remains forbidden");
+});
+
+test("融资卡规范化同时修复轮次、本轮投资方、研究覆盖和实体链接状态", () => {
+  const card = validCard();
+  card.financing.round = "Series A";
+  card.financing.investors.push({
+    name: "Seed Fund",
+    role: "种子轮领投",
+    entity_id: null,
+    evidence_refs: evidence(),
+  });
+  card.company.founders = [{
+    name: "Ada Lee",
+    role: "联合创始人",
+    entity_id: null,
+    evidence_refs: evidence(),
+  }];
+  const normalized = normalizeFundingInsightCard(card, {
+    products: [{ id: "EN-PRODUCT", type: "产品/服务", name: "Acme Agent", aliases: [] }],
+    people: [],
+  });
+  assert.equal(normalized.financing.round, "A轮");
+  assert.equal(normalized.financing.round_code, "series_a");
+  assert.equal(normalized.financing.round_original, "Series A");
+  assert.deepEqual(normalized.financing.investors.map((item) => item.name), ["Northstar Ventures"]);
+  assert.deepEqual(normalized.financing.other_round_investors.map((item) => item.name), ["Seed Fund"]);
+  assert.equal(normalized.products[0].entity_id, "EN-PRODUCT");
+  assert.deepEqual(normalized.entity_link_coverage.products, {
+    linked: 1,
+    total: 1,
+    unresolved_names: [],
+  });
+  assert.deepEqual(normalized.entity_link_coverage.founders.unresolved_names, ["Ada Lee"]);
+  assert.equal(normalized.customer_research.status, "no_verified_customer_found");
+  assert.equal(normalized.analysis.investment_thesis.institutional_rationale_status, "not_disclosed");
+});
+
+test("融资证据将来源内容哈希与引文哈希绑定，任一漂移都会被门禁识别", () => {
+  const card = validCard();
+  assert.deepEqual(fundingEvidenceProofProblems(card), []);
+  card.company.evidence_refs[0].quote = "tampered quote";
+  assert.ok(fundingEvidenceProofProblems(card).some((item) => item.includes("evidence_quote_hash_mismatch")));
+  const restored = validCard();
+  restored.company.evidence_refs[0].source_content_hash = "wrong-source-hash";
+  assert.ok(fundingEvidenceProofProblems(restored).some((item) => item.includes("evidence_source_hash_mismatch")));
+});
+
+test("已审核实体决策只回写到现有同类型规范实体", () => {
+  const card = validCard();
+  card.products[0].name = "Trace 工作流编排平台";
+  const decisions = {
+    decisions: [{
+      candidate_kind: "product",
+      research_name: "Trace 工作流编排平台",
+      status: "accepted",
+      canonical_entity_id: "EN-TRACE",
+    }],
+  };
+  const normalized = normalizeFundingInsightCard(card, {
+    products: [{ id: "EN-TRACE", type: "产品/服务", name: "TRACE", aliases: [] }],
+  }, decisions);
+  assert.equal(normalized.products[0].entity_id, "EN-TRACE");
+  const wrongType = normalizeFundingInsightCard(card, {
+    people: [{ id: "EN-TRACE", type: "人物", name: "TRACE", aliases: [] }],
+  }, decisions);
+  assert.equal(wrongType.products[0].entity_id, null);
+});
+
+test("未链接产品与创始人进入证据化待审队列，已链接实体不重复排队", () => {
+  const card = validCard();
+  card.products[0].entity_id = "EN-PRODUCT";
+  card.company.founders = [{
+    name: "Ada Lee",
+    role: "联合创始人",
+    entity_id: null,
+    evidence_refs: evidence(),
+  }];
+  const queue = buildFundingEntityReviewQueue([card]);
+  assert.equal(queue.meta.candidate_count, 1);
+  assert.equal(queue.meta.product_candidates, 0);
+  assert.equal(queue.meta.person_candidates, 1);
+  assert.equal(queue.candidates[0].research_name, "Ada Lee");
+  assert.ok(queue.candidates[0].evidence_refs.length);
 });
 
 test("融资卡工作检查器只调度尚未发布的已验证融资事件", () => {
@@ -217,10 +358,15 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
     "utf8",
   );
   const pagesWorkflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
+  const fullGate = fs.readFileSync(
+    path.join(root, "agent-workflow/tools/assert-funding-insights-v1.mjs"),
+    "utf8",
+  );
   assert.match(workflow, /workflow_run:[\s\S]*WaveSight Business Signals PR/u);
   assert.match(workflow, /inspect-funding-insight-work\.mjs/u);
   assert.match(workflow, /TAVILY_DISABLED: "false"/u);
   assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs/u);
+  assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
   assert.doesNotMatch(workflow, /sync-funding-insights-to-obsidian\.mjs|vault\/20-Application-Center/u);
   assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
   assert.match(workflow, /push:[\s\S]*canonical-events\.json/u);
@@ -231,6 +377,11 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.match(workflow, /gh workflow run github-pages\.yml --ref main -f source_sha=/u);
   assert.match(workflow, /gh run watch "\$run_id" --exit-status/u);
   assert.match(pagesWorkflow, /run-name: Deploy Frontstage to GitHub Pages \$\{\{ inputs\.source_sha \|\| github\.sha \}\}/u);
+  assert.match(
+    fullGate,
+    /function validateFrontstage\(\)[\s\S]*fundingEvidenceProofProblems\(card\)/u,
+    "the full gate must reject evidence-proof drift in the persisted frontstage projection",
+  );
   const fundingJob = workflow.slice(workflow.indexOf("  funding-insights-pr:"));
   assert.doesNotMatch(fundingJob, /steps\.run-date\.outputs\.date/u);
 });
@@ -461,6 +612,48 @@ test("同一公司同轮次同金额的重复融资事件只投影为一张前�
   );
 });
 
+test("同一公司与规范轮次聚合为一张卡并保留全部事件和研究信息", () => {
+  const older = validCard();
+  older.triggered_by_event_id = "EV-OLD";
+  older.financing.round = "Series A";
+  older.customers = [{
+    name: "Customer One",
+    industry: "金融",
+    use_case: "用于客户支持",
+    evidence_refs: evidence(),
+  }];
+  const newer = structuredClone(older);
+  newer.triggered_by_event_id = "EV-NEW";
+  newer.financing.round = "A 轮";
+  newer.published_at = "2026-07-27T08:00:00.000Z";
+  newer.customers = [];
+  newer.products.push({
+    name: "Acme Studio",
+    description: "企业工作流设计工具",
+    evidence_refs: evidence("SRC-2", "Acme Agent automates enterprise workflows."),
+  });
+  const cards = aggregateFundingRoundCards([older, newer]);
+  assert.equal(cards.length, 1);
+  assert.deepEqual(cards[0].source_event_ids, ["EV-NEW", "EV-OLD"]);
+  assert.equal(cards[0].aggregation.event_count, 2);
+  assert.deepEqual(cards[0].customers.map((item) => item.name), ["Customer One"]);
+  assert.deepEqual(cards[0].products.map((item) => item.name).sort(), ["Acme Agent", "Acme Studio"]);
+});
+
+test("未披露和多轮融资也严格按公司与规范轮次聚合", () => {
+  for (const round of ["未披露", "Seed and Series A"]) {
+    const older = validCard();
+    older.triggered_by_event_id = `EV-OLD-${round}`;
+    older.financing.round = round;
+    const newer = structuredClone(older);
+    newer.triggered_by_event_id = `EV-NEW-${round}`;
+    newer.published_at = "2026-07-27T08:00:00.000Z";
+    const cards = aggregateFundingRoundCards([older, newer]);
+    assert.equal(cards.length, 1);
+    assert.equal(cards[0].source_event_ids.length, 2);
+  }
+});
+
 test("模型漏填融资引用时只允许回填已验收的规范 Claim 原文", () => {
   const payload = { financing: { evidence_refs: [] } };
   const source = {
@@ -609,6 +802,10 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
     script.indexOf("function openDetail"),
   );
   assert.match(detailTemplate, /fi-detail-hero[\s\S]*创始团队[\s\S]*本轮融资[\s\S]*投资逻辑[\s\S]*机构公开理由/u);
+  assert.match(script, /other_round_investors/u);
+  assert.match(detailTemplate, /历史或轮次未明[\s\S]*不计入本轮/u);
+  assert.match(script, /investment_thesis[\s\S]*evidence_signals[\s\S]*institutional_rationale_status/u);
+  assert.match(script, /customer_research[\s\S]*searched_source_count/u);
   assert.match(detailTemplate, /<h3>产品<\/h3>[\s\S]*<h3>目标客户<\/h3>[\s\S]*<h3>客户案例<\/h3>[\s\S]*<h3>关键数据<\/h3>/u);
   assert.match(detailTemplate, /产品 \/ 方案[\s\S]*应用场景[\s\S]*目标客户[\s\S]*融资[\s\S]*已证实差异/u);
   assert.doesNotMatch(detailTemplate, /尚待验证问题|产品与买方|客户与关键数据/u);

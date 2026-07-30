@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-30",
     "generated_at": "2026-07-30T03:51:04.036Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 5,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-4940d296a418f48f",
       "triggered_by_event_id": "EV-39b075c62ba4e927",
       "as_of_date": "2026-07-30",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2fad84309f732cda",
-                "quote": "P-1 AI's co-founder and CEO Paul Eremenko, who was previously the CTO of Airbus"
+                "quote": "P-1 AI's co-founder and CEO Paul Eremenko, who was previously the CTO of Airbus",
+                "source_content_hash": "eb500aed36566823",
+                "quote_hash": "a731adbf4fec516a6696fffaf3b76ef23f86158f05a38629233d3b1184db7452"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-699e40f6a1ab35eb",
-                "quote": "Co-founded by former Airbus and United Technologies CTO and DARPA executive, Paul Eremenko, and prominent AI researcher Aleksa Gordić, formerly at Google DeepMind and Microsoft"
+                "quote": "Co-founded by former Airbus and United Technologies CTO and DARPA executive, Paul Eremenko, and prominent AI researcher Aleksa Gordić, formerly at Google DeepMind and Microsoft",
+                "source_content_hash": "2431ca9f7b3677f6",
+                "quote_hash": "2a7c35ae949f1cb5013dd08961507a4698ee8b23f1318352cd19eb5026cc1040"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-699e40f6a1ab35eb",
-                "quote": "Adam Nagel (co-founder & head of engineering) – Former director of engineering at Airbus-Silicon Valley"
+                "quote": "Adam Nagel (co-founder & head of engineering) – Former director of engineering at Airbus-Silicon Valley",
+                "source_content_hash": "2431ca9f7b3677f6",
+                "quote_hash": "8b722481bbf850b1b51dd4100d315c9d6df1b9cb75c58ee856946b967ccdf28f"
               }
             ],
             "entity_id": null
@@ -71,16 +78,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-17090c9ebbe2bea3",
-            "quote": "P-1 AI, Inc. , the company building Archie, an AI mechanical and electrical engineer for industrial teams"
+            "quote": "P-1 AI, Inc. , the company building Archie, an AI mechanical and electrical engineer for industrial teams",
+            "source_content_hash": "011d02174c292209",
+            "quote_hash": "36f0205d399da6111b1ddce6bb5b01e2e6464cddd3d97dbf94d60f0a25bbe769"
           },
           {
             "source_id": "FISRC-272ed2cd5b9ebcfa",
-            "quote": "We are building an AI engineer for the physical world named Archie."
+            "quote": "We are building an AI engineer for the physical world named Archie.",
+            "source_content_hash": "ac3328bdd9abb884",
+            "quote_hash": "9a3e6d55058a92f6547b776211eb18f370bf0770370c2b073ec8cdf0ffdfa885"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$50 million",
         "total_raised": "$73 million",
         "announced_at": "2026-07-29",
@@ -91,73 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-17090c9ebbe2bea3",
-                "quote": "today announced the initial closing of its Series A financing round led by New Enterprise Associates (NEA)"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Radical Ventures",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-17090c9ebbe2bea3",
-                "quote": "the company’s $23 million seed round led by Radical Ventures in 2025"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Village Global",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-699e40f6a1ab35eb",
-                "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Schematic Ventures",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-699e40f6a1ab35eb",
-                "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Lerer Hippeau",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-699e40f6a1ab35eb",
-                "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Jeff Dean (Google DeepMind)",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-272ed2cd5b9ebcfa",
-                "quote": "Individual: Jeff Dean (Google DeepMind)"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Zak Stone (Google Cloud)",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-272ed2cd5b9ebcfa",
-                "quote": "Individual: Jeff Dean (Google DeepMind), Zak Stone (Google Cloud)"
+                "quote": "today announced the initial closing of its Series A financing round led by New Enterprise Associates (NEA)",
+                "source_content_hash": "011d02174c292209",
+                "quote_hash": "c30252c6c218fcb26ea03ef81c883477075c4742ebe5c2dcaa74c9ab854242da"
               }
             ],
             "entity_id": null
@@ -166,11 +113,155 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-17090c9ebbe2bea3",
-            "quote": "today announced the initial closing of its Series A financing round led by New Enterprise Associates (NEA) . The Series A, on the heels of the company’s $23 million seed round led by Radical Ventures in 2025"
+            "quote": "today announced the initial closing of its Series A financing round led by New Enterprise Associates (NEA) . The Series A, on the heels of the company’s $23 million seed round led by Radical Ventures in 2025",
+            "source_content_hash": "011d02174c292209",
+            "quote_hash": "264f44c24132664b307a29aadd6dd687dde0d42bcf023cfd2d4af28d3a7436de"
           },
           {
             "source_id": "FISRC-2fad84309f732cda",
-            "quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
+            "quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round.",
+            "source_content_hash": "eb500aed36566823",
+            "quote_hash": "09303d496be7805e1dfa3d3866918edbc952cc6413ae65d378549485e4c96f11"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Radical Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-17090c9ebbe2bea3",
+                "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
+                "source_content_hash": "011d02174c292209",
+                "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮领投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Village Global",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-699e40f6a1ab35eb",
+                "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+                "source_content_hash": "2431ca9f7b3677f6",
+                "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Schematic Ventures",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-699e40f6a1ab35eb",
+                "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+                "source_content_hash": "2431ca9f7b3677f6",
+                "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Lerer Hippeau",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-699e40f6a1ab35eb",
+                "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+                "source_content_hash": "2431ca9f7b3677f6",
+                "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Jeff Dean (Google DeepMind)",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272ed2cd5b9ebcfa",
+                "quote": "Individual: Jeff Dean (Google DeepMind)",
+                "source_content_hash": "ac3328bdd9abb884",
+                "quote_hash": "07473e0f7e56e8a2b03c91dd4ccd56819af832a598f4158bd1ddbec80abc373c"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Zak Stone (Google Cloud)",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272ed2cd5b9ebcfa",
+                "quote": "Individual: Jeff Dean (Google DeepMind), Zak Stone (Google Cloud)",
+                "source_content_hash": "ac3328bdd9abb884",
+                "quote_hash": "a8c3220ef29d938d12ffb3f3ed07ea610a4810ed8392fd56199e3e56266c7318"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-39b075c62ba4e927",
+            "round_original": "Series A",
+            "amount": "$50 million",
+            "announced_at": "2026-07-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-17090c9ebbe2bea3",
+                "quote": "today announced the initial closing of its Series A financing round led by New Enterprise Associates (NEA) . The Series A, on the heels of the company’s $23 million seed round led by Radical Ventures in 2025",
+                "source_content_hash": "011d02174c292209",
+                "quote_hash": "264f44c24132664b307a29aadd6dd687dde0d42bcf023cfd2d4af28d3a7436de"
+              },
+              {
+                "source_id": "FISRC-2fad84309f732cda",
+                "quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round.",
+                "source_content_hash": "eb500aed36566823",
+                "quote_hash": "09303d496be7805e1dfa3d3866918edbc952cc6413ae65d378549485e4c96f11"
+              }
+            ]
           }
         ]
       },
@@ -190,11 +281,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "Archie, an agentic AI engineer built for hardware engineering disciplines including mechanical, electrical, thermal, fluids, and systems design"
+              "quote": "Archie, an agentic AI engineer built for hardware engineering disciplines including mechanical, electrical, thermal, fluids, and systems design",
+              "source_content_hash": "011d02174c292209",
+              "quote_hash": "2df2fcf9d10b2b0eff60dfa386ef237e31084abb178c16d2ff95a93eb594e7a2"
             },
             {
               "source_id": "FISRC-272ed2cd5b9ebcfa",
-              "quote": "Archie today is at the level of a junior mechanical and electrical engineer, with a quantitative intuition over the product design space and the ability to use complex engineering tools——the same tools his human teammates use."
+              "quote": "Archie today is at the level of a junior mechanical and electrical engineer, with a quantitative intuition over the product design space and the ability to use complex engineering tools——the same tools his human teammates use.",
+              "source_content_hash": "ac3328bdd9abb884",
+              "quote_hash": "ba195125261b4762a68aec6dc568b65c3a0b8d4a1dd0b7675fc0d52a47a85fe9"
             }
           ],
           "entity_id": null
@@ -210,7 +305,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "P-1 AI is also announcing the private preview of Archie Solo, a lightweight version of Archie suitable for individual use and integrated with various free and open-source engineering tools."
+              "quote": "P-1 AI is also announcing the private preview of Archie Solo, a lightweight version of Archie suitable for individual use and integrated with various free and open-source engineering tools.",
+              "source_content_hash": "011d02174c292209",
+              "quote_hash": "2c4386281afbf445f12d91e83ce9df57e429812fc4e19ae8697eb3c0a2b60ac8"
             }
           ],
           "entity_id": null
@@ -226,7 +323,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "the company’s $23 million seed round led by Radical Ventures in 2025"
+              "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
+              "source_content_hash": "011d02174c292209",
+              "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
             }
           ]
         },
@@ -237,7 +336,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "The $50 million financing round will accelerate P-1 AI’s deployment of Archie"
+              "quote": "The $50 million financing round will accelerate P-1 AI’s deployment of Archie",
+              "source_content_hash": "011d02174c292209",
+              "quote_hash": "e9dc63196df7bef7ca4543f8ac1e55e195dec2149c18a90a90a7b814c79b677d"
             }
           ]
         }
@@ -249,7 +350,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2fad84309f732cda",
-              "quote": "As a society, we said software engineering is where it's at. Mechanical, electrical, aerospace and industrial engineering have not been glorified as sexy disciplines. And so kids who are inclined toward STEM chose software versus physical forms of engineering, and as a result we lag in our industrial workforce as a country."
+              "quote": "As a society, we said software engineering is where it's at. Mechanical, electrical, aerospace and industrial engineering have not been glorified as sexy disciplines. And so kids who are inclined toward STEM chose software versus physical forms of engineering, and as a result we lag in our industrial workforce as a country.",
+              "source_content_hash": "eb500aed36566823",
+              "quote_hash": "d2287468d21fb7d0c231653ead08e1d9b4b04e9157b503c0dc14dd51bec277e1"
             }
           ]
         }
@@ -267,7 +370,20 @@
           "来源仅披露了设计合作伙伴关系，未提供付费客户数量、合同金额或收入数据，商业化验证程度极低。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "工业AI/智能体工程"
+        "sector": "工业AI/智能体工程",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：能否通过AI队友形态解决美国工业工程人才的结构性短缺，并以此推动制造业回流。本轮融资的已验证信号包括：已与数据中心冷却和关键电力系统领域的领先工业OEM建立设计合作伙伴关系，并在COMPUTEX 2026上展示了Archie加速数据中心设计工作流程的能力。然而，当前证据仅限于早期设计合作伙伴关系的建立和技术演示，尚未披露付费客户数量、合同金额或续约率等商业牵引力指标，因此商业化验证仍处于极早期阶段。",
+          "evidence_signals": [
+            "已与数据中心冷却和关键电力系统领域的多家领先工业OEM建立设计合作伙伴关系",
+            "在COMPUTEX 2026上展示了Archie加速数据中心设计工作流程的能力，包括支持NVIDIA DSX数据中心参考设计",
+            "汽车和航空航天与国防领域的首批设计合作伙伴关系计划于年内启动"
+          ],
+          "risks": [
+            "物理世界工程推理是AI领域最困难的问题之一，当前Archie仅达到初级工程师水平，其能力提升轨迹和能否达到高级工程师水平存在不确定性。",
+            "来源仅披露了设计合作伙伴关系，未提供付费客户数量、合同金额或收入数据，商业化验证程度极低。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -275,160 +391,84 @@
           "target_kind": "product",
           "research_name": "Archie",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "Archie, an agentic AI engineer built for hardware engineering disciplines including mechanical, electrical, thermal, fluids, and systems design"
-            },
-            {
-              "source_id": "FISRC-272ed2cd5b9ebcfa",
-              "quote": "Archie today is at the level of a junior mechanical and electrical engineer, with a quantitative intuition over the product design space and the ability to use complex engineering tools——the same tools his human teammates use."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Archie Solo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "P-1 AI is also announcing the private preview of Archie Solo, a lightweight version of Archie suitable for individual use and integrated with various free and open-source engineering tools."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Paul Eremenko",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2fad84309f732cda",
-              "quote": "P-1 AI's co-founder and CEO Paul Eremenko, who was previously the CTO of Airbus"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Aleksa Gordić",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-699e40f6a1ab35eb",
-              "quote": "Co-founded by former Airbus and United Technologies CTO and DARPA executive, Paul Eremenko, and prominent AI researcher Aleksa Gordić, formerly at Google DeepMind and Microsoft"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Adam Nagel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-699e40f6a1ab35eb",
-              "quote": "Adam Nagel (co-founder & head of engineering) – Former director of engineering at Airbus-Silicon Valley"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "New Enterprise Associates (NEA)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "today announced the initial closing of its Series A financing round led by New Enterprise Associates (NEA)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Radical Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-17090c9ebbe2bea3",
-              "quote": "the company’s $23 million seed round led by Radical Ventures in 2025"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Village Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-699e40f6a1ab35eb",
-              "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Schematic Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-699e40f6a1ab35eb",
-              "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Lerer Hippeau",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-699e40f6a1ab35eb",
-              "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Jeff Dean (Google DeepMind)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-272ed2cd5b9ebcfa",
-              "quote": "Individual: Jeff Dean (Google DeepMind)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Zak Stone (Google Cloud)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-272ed2cd5b9ebcfa",
-              "quote": "Individual: Jeff Dean (Google DeepMind), Zak Stone (Google Cloud)"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -502,13 +542,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-30T03:51:03.965Z"
+      "published_at": "2026-07-30T03:51:03.965Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Archie",
+            "Archie Solo"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Adam Nagel",
+            "Aleksa Gordić",
+            "Paul Eremenko"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-39b075c62ba4e927"
+      ],
+      "aggregation": {
+        "key": "EN-f9075cc99990820a|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-facd96bb35562fbd",
       "triggered_by_event_id": "EV-57cf8e14d6994c1b",
       "as_of_date": "2026-07-30",
@@ -526,11 +598,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3740369ba57f1602",
-                "quote": "Founded in 2022 as Insait IO by CEO Dvir Ginzburg"
+                "quote": "Founded in 2022 as Insait IO by CEO Dvir Ginzburg",
+                "source_content_hash": "2f8f1cbb0eaf55a8",
+                "quote_hash": "98417ecbb87220f80ed3e88106c6ba13826221f698de6c951fcd62273c9a2501"
               },
               {
                 "source_id": "FISRC-6734ffb9c928450a",
-                "quote": "said Dr. Dvir Ginzburg, Encore AI Founder and CEO."
+                "quote": "said Dr. Dvir Ginzburg, Encore AI Founder and CEO.",
+                "source_content_hash": "d8522e9c55a7b156",
+                "quote_hash": "1fa1b1d88860f14502d63990d9ed88398cd068f120ed4015d1c75c2f14507e7b"
               }
             ],
             "entity_id": null
@@ -542,18 +618,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1c177f9557edffe",
-              "quote": "The company currently employs around 50 people, including 35 in Israel, with the remainder based in New York and Australia."
+              "quote": "The company currently employs around 50 people, including 35 in Israel, with the remainder based in New York and Australia.",
+              "source_content_hash": "474fd24440066a3c",
+              "quote_hash": "e870f1c98dd98ebbac96c3949d4cddbfd139f6b1be506fbe99025501a8a6d48b"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-6734ffb9c928450a",
-            "quote": "Encore AI is headquartered in New York with a global presence in APAC and EMEA."
+            "quote": "Encore AI is headquartered in New York with a global presence in APAC and EMEA.",
+            "source_content_hash": "d8522e9c55a7b156",
+            "quote_hash": "a34dbbbc2c0f77684a757739700ab319e04284a4d3231eeac2aa82e3e8917838"
           },
           {
             "source_id": "FISRC-3740369ba57f1602",
-            "quote": "Founded in 2022 as Insait IO by CEO Dvir Ginzburg"
+            "quote": "Founded in 2022 as Insait IO by CEO Dvir Ginzburg",
+            "source_content_hash": "2f8f1cbb0eaf55a8",
+            "quote_hash": "98417ecbb87220f80ed3e88106c6ba13826221f698de6c951fcd62273c9a2501"
           }
         ]
       },
@@ -569,7 +651,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3740369ba57f1602",
-                "quote": "has raised $30 million in a Series A round led by Team8."
+                "quote": "has raised $30 million in a Series A round led by Team8.",
+                "source_content_hash": "2f8f1cbb0eaf55a8",
+                "quote_hash": "f35f7854126fd1f4b9597896d61375b963ab3da647f7854761fd14014c1672c0"
               }
             ],
             "entity_id": null
@@ -580,7 +664,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6734ffb9c928450a",
-                "quote": "a $30 million Series A led by Team8, Planven and The Garage"
+                "quote": "a $30 million Series A led by Team8, Planven and The Garage",
+                "source_content_hash": "d8522e9c55a7b156",
+                "quote_hash": "c805f01cb8d74c3c125b4a7bf5ad505864720b28d1612896862447391121810b"
               }
             ],
             "entity_id": null
@@ -591,11 +677,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6734ffb9c928450a",
-                "quote": "The Garage, which led the company's earlier seed round, has backed Encore since its founding."
+                "quote": "The Garage, which led the company's earlier seed round, has backed Encore since its founding.",
+                "source_content_hash": "d8522e9c55a7b156",
+                "quote_hash": "aa95ae2f2cd9e1165c7e91c232578b4a8f57bac0e82c4a5b3775317ca9327130"
               },
               {
                 "source_id": "FISRC-6734ffb9c928450a",
-                "quote": "a $30 million Series A led by Team8, Planven and The Garage"
+                "quote": "a $30 million Series A led by Team8, Planven and The Garage",
+                "source_content_hash": "d8522e9c55a7b156",
+                "quote_hash": "c805f01cb8d74c3c125b4a7bf5ad505864720b28d1612896862447391121810b"
               }
             ],
             "entity_id": null
@@ -606,7 +696,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3740369ba57f1602",
-                "quote": "Planven, Lukatz, and Garage also participated in the round"
+                "quote": "Planven, Lukatz, and Garage also participated in the round",
+                "source_content_hash": "2f8f1cbb0eaf55a8",
+                "quote_hash": "31e5e346fb08431c73dd3fc8d960f1783872b1d6a70edd4ba8e14b2f4626b845"
               }
             ],
             "entity_id": null
@@ -617,11 +709,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3740369ba57f1602",
-                "quote": "as did some banks and insurers."
+                "quote": "as did some banks and insurers.",
+                "source_content_hash": "2f8f1cbb0eaf55a8",
+                "quote_hash": "ef99665a1b315d447d1b7fa7400ce4fbe5f06404d60a6ed4bf47f83cd993a244"
               },
               {
                 "source_id": "FISRC-6734ffb9c928450a",
-                "quote": "alongside Lukatz and several large commercial banks and insurers that first came on as Encore AI customers and chose to invest after seeing the platform's impact on their own operations."
+                "quote": "alongside Lukatz and several large commercial banks and insurers that first came on as Encore AI customers and chose to invest after seeing the platform's impact on their own operations.",
+                "source_content_hash": "d8522e9c55a7b156",
+                "quote_hash": "9075881495d1d1ac6522df54f0e65ce38d0e5c728743e9178af1dff3f8233510"
               }
             ],
             "entity_id": null
@@ -630,11 +726,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-3740369ba57f1602",
-            "quote": "has raised $30 million in a Series A round led by Team8."
+            "quote": "has raised $30 million in a Series A round led by Team8.",
+            "source_content_hash": "2f8f1cbb0eaf55a8",
+            "quote_hash": "f35f7854126fd1f4b9597896d61375b963ab3da647f7854761fd14014c1672c0"
           },
           {
             "source_id": "FISRC-6734ffb9c928450a",
-            "quote": "announced today a $30 million Series A led by Team8, Planven and The Garage"
+            "quote": "announced today a $30 million Series A led by Team8, Planven and The Garage",
+            "source_content_hash": "d8522e9c55a7b156",
+            "quote_hash": "ae538568560241f796cf8eed6874621f3156fe1c721694a8b68482047a2b113c"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-57cf8e14d6994c1b",
+            "round_original": "A轮",
+            "amount": "3000万美元",
+            "announced_at": "2026-07-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3740369ba57f1602",
+                "quote": "has raised $30 million in a Series A round led by Team8.",
+                "source_content_hash": "2f8f1cbb0eaf55a8",
+                "quote_hash": "f35f7854126fd1f4b9597896d61375b963ab3da647f7854761fd14014c1672c0"
+              },
+              {
+                "source_id": "FISRC-6734ffb9c928450a",
+                "quote": "announced today a $30 million Series A led by Team8, Planven and The Garage",
+                "source_content_hash": "d8522e9c55a7b156",
+                "quote_hash": "ae538568560241f796cf8eed6874621f3156fe1c721694a8b68482047a2b113c"
+              }
+            ]
           }
         ]
       },
@@ -653,15 +778,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "Encore AI's patented Interaction Mining technology studies an organization's top performers, extracts specific actions that drive results, and deploys them as AI agents."
+              "quote": "Encore AI's patented Interaction Mining technology studies an organization's top performers, extracts specific actions that drive results, and deploys them as AI agents.",
+              "source_content_hash": "d8522e9c55a7b156",
+              "quote_hash": "f8971bee70b484dcc94c2a1b3f7ebf645426918f780efd35a0a28631b84c6c75"
             },
             {
               "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "Encore AI deploys AI agents that convert leads, close applications, recover balances, and drive upsell and cross-sell at scale, across voice, chat, IVR, and live form-fill"
+              "quote": "Encore AI deploys AI agents that convert leads, close applications, recover balances, and drive upsell and cross-sell at scale, across voice, chat, IVR, and live form-fill",
+              "source_content_hash": "d8522e9c55a7b156",
+              "quote_hash": "02a26b1b9d5c55a26ea4d7808309beadb0f727390b4b862e5c425a283aa7f01a"
             },
             {
               "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "Encore AI can go live in weeks. It does not require months of configuration, testing, and tuning."
+              "quote": "Encore AI can go live in weeks. It does not require months of configuration, testing, and tuning.",
+              "source_content_hash": "d8522e9c55a7b156",
+              "quote_hash": "a3dbe4a86c25e40d0b8c11010a1300e8b117efa8c5f10b50829680681a9b50dc"
             }
           ],
           "entity_id": null
@@ -675,9 +806,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "one of Encore AI's largest lending clients saw a 10x return on investment within months of implementation."
+              "quote": "one of Encore AI's largest lending clients saw a 10x return on investment within months of implementation.",
+              "source_content_hash": "d8522e9c55a7b156",
+              "quote_hash": "30f1f655a6978dfcd5cf73ebef99070e76b8b3e713bbebe3ae547dbc635f7122"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Harel",
@@ -686,9 +820,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1c177f9557edffe",
-              "quote": "Many of the investors in this round are also customers, including Harel, Bank Leumi and Garage"
+              "quote": "Many of the investors in this round are also customers, including Harel, Bank Leumi and Garage",
+              "source_content_hash": "474fd24440066a3c",
+              "quote_hash": "4380287f2deb62437ccb02a818038b49b870bffd1b541bed1f5d81adcad5b49b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Bank Leumi",
@@ -697,9 +834,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1c177f9557edffe",
-              "quote": "Many of the investors in this round are also customers, including Harel, Bank Leumi and Garage"
+              "quote": "Many of the investors in this round are also customers, including Harel, Bank Leumi and Garage",
+              "source_content_hash": "474fd24440066a3c",
+              "quote_hash": "4380287f2deb62437ccb02a818038b49b870bffd1b541bed1f5d81adcad5b49b"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -711,7 +851,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3740369ba57f1602",
-              "quote": "The company has more than 40 enterprise customers globally"
+              "quote": "The company has more than 40 enterprise customers globally",
+              "source_content_hash": "2f8f1cbb0eaf55a8",
+              "quote_hash": "36861dfb8b7beb1510fa928a9a7fd0fe487db1dd3ff9db92d8c1d2ca68e07666"
             }
           ]
         },
@@ -722,7 +864,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "one of Encore AI's largest lending clients saw a 10x return on investment within months of implementation."
+              "quote": "one of Encore AI's largest lending clients saw a 10x return on investment within months of implementation.",
+              "source_content_hash": "d8522e9c55a7b156",
+              "quote_hash": "30f1f655a6978dfcd5cf73ebef99070e76b8b3e713bbebe3ae547dbc635f7122"
             }
           ]
         },
@@ -733,7 +877,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1c177f9557edffe",
-              "quote": "Its platform is deployed at more than 30 organizations across Israel, Australia, Europe and the United States."
+              "quote": "Its platform is deployed at more than 30 organizations across Israel, Australia, Europe and the United States.",
+              "source_content_hash": "474fd24440066a3c",
+              "quote_hash": "9655e23102c5fe661cbbe6369067ddae1e9efcb073f3141e7e989ce7652fb692"
             }
           ]
         }
@@ -745,7 +891,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3740369ba57f1602",
-              "quote": "Sometimes our agents even tell the jokes that the relationship managers are telling, or give the anecdotes or examples that the relationship managers are giving, because we literally run by the playbooks that we see working"
+              "quote": "Sometimes our agents even tell the jokes that the relationship managers are telling, or give the anecdotes or examples that the relationship managers are giving, because we literally run by the playbooks that we see working",
+              "source_content_hash": "2f8f1cbb0eaf55a8",
+              "quote_hash": "d26a23fa4dfd786bf524ac5a151f8284efb882c496602f147ab30b08f40c147e"
             }
           ]
         },
@@ -755,7 +903,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "Today's enterprise AI industry is optimized for cost reduction. Encore was built for the other side of the equation."
+              "quote": "Today's enterprise AI industry is optimized for cost reduction. Encore was built for the other side of the equation.",
+              "source_content_hash": "d8522e9c55a7b156",
+              "quote_hash": "6e1db0e3a15e3f39c0a74966dc5daf62ab00d00c0be1e3385c6c0a3f966be551"
             }
           ]
         }
@@ -773,7 +923,20 @@
           "大型CRM提供商（如Salesforce、SAP、HubSpot）拥有客户数据基础，若其将通话记录作为AI训练的一级数据源，可能削弱Encore AI的差异化优势。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业级AI智能体、金融科技"
+        "sector": "企业级AI智能体、金融科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“交互挖掘”能否成为受监管行业（尤其是金融服务业）中，大型企业构建收入驱动型AI智能体的标准方法。本轮融资的估值未披露，但融资所依赖的已验证信号包括：ARR在18个月内增长超过5倍、超过40家全球企业客户（主要为金融机构）、以及部分银行和保险公司在作为客户使用产品后选择参与本轮投资。这些信号表明产品在核心客户群中已实现初步验证和粘性。然而，证据边界在于公司未披露绝对收入和估值，且面临来自Salesforce等CRM巨头的潜在竞争，其技术护城河的持久性尚待观察。",
+          "evidence_signals": [
+            "ARR自种子轮以来增长超过5倍",
+            "拥有超过40家全球企业客户，主要为金融机构",
+            "部分银行和保险公司在作为客户使用产品后选择参与本轮投资",
+            "某大型贷款客户在数月内实现10倍投资回报率"
+          ],
+          "risks": [
+            "大型CRM提供商（如Salesforce、SAP、HubSpot）拥有客户数据基础，若其将通话记录作为AI训练的一级数据源，可能削弱Encore AI的差异化优势。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -781,150 +944,70 @@
           "target_kind": "product",
           "research_name": "Encore AI 企业智能体平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "Encore AI's patented Interaction Mining technology studies an organization's top performers, extracts specific actions that drive results, and deploys them as AI agents."
-            },
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "Encore AI deploys AI agents that convert leads, close applications, recover balances, and drive upsell and cross-sell at scale, across voice, chat, IVR, and live form-fill"
-            },
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "Encore AI can go live in weeks. It does not require months of configuration, testing, and tuning."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dr. Dvir Ginzburg",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3740369ba57f1602",
-              "quote": "Founded in 2022 as Insait IO by CEO Dvir Ginzburg"
-            },
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "said Dr. Dvir Ginzburg, Encore AI Founder and CEO."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Team8",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3740369ba57f1602",
-              "quote": "has raised $30 million in a Series A round led by Team8."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Planven",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "a $30 million Series A led by Team8, Planven and The Garage"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "The Garage",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "The Garage, which led the company's earlier seed round, has backed Encore since its founding."
-            },
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "a $30 million Series A led by Team8, Planven and The Garage"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lukatz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3740369ba57f1602",
-              "quote": "Planven, Lukatz, and Garage also participated in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "多家大型商业银行和保险公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3740369ba57f1602",
-              "quote": "as did some banks and insurers."
-            },
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "alongside Lukatz and several large commercial banks and insurers that first came on as Encore AI customers and chose to invest after seeing the platform's impact on their own operations."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "某大型贷款客户",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6734ffb9c928450a",
-              "quote": "one of Encore AI's largest lending clients saw a 10x return on investment within months of implementation."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Harel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1c177f9557edffe",
-              "quote": "Many of the investors in this round are also customers, including Harel, Bank Leumi and Garage"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Bank Leumi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1c177f9557edffe",
-              "quote": "Many of the investors in this round are also customers, including Harel, Bank Leumi and Garage"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -986,13 +1069,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-30T03:51:00.200Z"
+      "published_at": "2026-07-30T03:51:00.200Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Encore AI 企业智能体平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Dr. Dvir Ginzburg"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-57cf8e14d6994c1b"
+      ],
+      "aggregation": {
+        "key": "EN-556c337c4f0b031e|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-828c274432129ff5",
       "triggered_by_event_id": "EV-a3ba586cbc57b5fd",
       "as_of_date": "2026-07-30",
@@ -1010,11 +1122,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "Christian Ferreira, founder and CEO of Procurement Sciences"
+                "quote": "Christian Ferreira, founder and CEO of Procurement Sciences",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "06dc8a5cb995a2a98749ee7270e0eac53620557611ffd546a98102c327dc3838"
               },
               {
                 "source_id": "FISRC-5d2e4c7341b78ac8",
-                "quote": "Christian Ferreira CEO & Founder"
+                "quote": "Christian Ferreira CEO & Founder",
+                "source_content_hash": "0f0eb0857fae690f",
+                "quote_hash": "b49afc6ad8881de6245e7f14bf89a529c31b8def0ebcda3c3b62818dc690592f"
               }
             ],
             "entity_id": null
@@ -1026,23 +1142,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "Growing our team from 16 people to more than 80"
+              "quote": "Growing our team from 16 people to more than 80",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "dee1dce94a4c16fe0b57107ae832f99e941828f2a063306deea2f35c423701f0"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-fa41049d7cbdf303",
-            "quote": "Procurement Sciences, the AI software company transforming how businesses find, win and deliver on government contracts"
+            "quote": "Procurement Sciences, the AI software company transforming how businesses find, win and deliver on government contracts",
+            "source_content_hash": "3b1619e1efabd120",
+            "quote_hash": "865c56487699120ed91689dbb34efadb58699cf02396832359753e80ed743a8c"
           },
           {
             "source_id": "FISRC-5d2e4c7341b78ac8",
-            "quote": "Established in 2022, at the dawn of the generative AI era, Procurement Sciences is redefining how government contractors navigate the complex procurement landscape."
+            "quote": "Established in 2022, at the dawn of the generative AI era, Procurement Sciences is redefining how government contractors navigate the complex procurement landscape.",
+            "source_content_hash": "0f0eb0857fae690f",
+            "quote_hash": "fdf54a6c69009756a06dac3996302d68844fe3ef68ee5898a0504d78da60738c"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$30 million",
         "total_raised": "超过4000万美元",
         "announced_at": "2025-11-05",
@@ -1053,7 +1175,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "closed $30 million in Series B funding led by New York City-based growth equity firm Catalyst Investors"
+                "quote": "closed $30 million in Series B funding led by New York City-based growth equity firm Catalyst Investors",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "12c062e3476c859cfb1fc6e8ca6b80c8421d7c408b8903f3a1d98af1f74e80fa"
               }
             ],
             "entity_id": null
@@ -1064,11 +1188,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
+                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
               },
               {
                 "source_id": "FISRC-586a76876aaf1edc",
-                "quote": "we announced our Series A investment in Procurement Sciences"
+                "quote": "we announced our Series A investment in Procurement Sciences",
+                "source_content_hash": "cfd55be4e1a718d9",
+                "quote_hash": "192110c4f1961cca91e0525d1e4329ae54608b39efa30042d39d2b87f5137de7"
               }
             ],
             "entity_id": null
@@ -1079,7 +1207,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
+                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
               }
             ],
             "entity_id": null
@@ -1090,7 +1220,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
+                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
               }
             ],
             "entity_id": null
@@ -1101,7 +1233,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
+                "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
               }
             ],
             "entity_id": null
@@ -1112,7 +1246,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels"
+                "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "fa8893112d87b7782b21a1bfe7fb38d3b508fcc351c4a8a60f17db326afb1933"
               }
             ],
             "entity_id": null
@@ -1123,7 +1259,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa41049d7cbdf303",
-                "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels"
+                "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "fa8893112d87b7782b21a1bfe7fb38d3b508fcc351c4a8a60f17db326afb1933"
               }
             ],
             "entity_id": null
@@ -1134,7 +1272,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1173d9aac2125988",
-                "quote": "strategic angel backers"
+                "quote": "strategic angel backers",
+                "source_content_hash": "dde95a853ddbff45",
+                "quote_hash": "5293beebb7b680750e2e473bdb108a5b1c005827ee3968a8fdf8620bd0f68af4"
               }
             ],
             "entity_id": null
@@ -1143,11 +1283,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1173d9aac2125988",
-            "quote": "Procurement Sciences has secured $30 million in Series B financing"
+            "quote": "Procurement Sciences has secured $30 million in Series B financing",
+            "source_content_hash": "dde95a853ddbff45",
+            "quote_hash": "18ba39cd008a28094552e7f49d9a6cfc1c033a7967ac60da18bdd1e99ab5e454"
           },
           {
             "source_id": "FISRC-fa41049d7cbdf303",
-            "quote": "closed $30 million in Series B funding led by New York City-based growth equity firm Catalyst Investors"
+            "quote": "closed $30 million in Series B funding led by New York City-based growth equity firm Catalyst Investors",
+            "source_content_hash": "3b1619e1efabd120",
+            "quote_hash": "12c062e3476c859cfb1fc6e8ca6b80c8421d7c408b8903f3a1d98af1f74e80fa"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-a3ba586cbc57b5fd",
+            "round_original": "Series B",
+            "amount": "$30 million",
+            "announced_at": "2025-11-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1173d9aac2125988",
+                "quote": "Procurement Sciences has secured $30 million in Series B financing",
+                "source_content_hash": "dde95a853ddbff45",
+                "quote_hash": "18ba39cd008a28094552e7f49d9a6cfc1c033a7967ac60da18bdd1e99ab5e454"
+              },
+              {
+                "source_id": "FISRC-fa41049d7cbdf303",
+                "quote": "closed $30 million in Series B funding led by New York City-based growth equity firm Catalyst Investors",
+                "source_content_hash": "3b1619e1efabd120",
+                "quote_hash": "12c062e3476c859cfb1fc6e8ca6b80c8421d7c408b8903f3a1d98af1f74e80fa"
+              }
+            ]
           }
         ]
       },
@@ -1165,11 +1334,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1173d9aac2125988",
-              "quote": "Awarded AI, an AI-native operating system designed to support the full government contracting life cycle by streamlining core tasks such as opportunity identification, proposal drafting, compliance review and contract execution."
+              "quote": "Awarded AI, an AI-native operating system designed to support the full government contracting life cycle by streamlining core tasks such as opportunity identification, proposal drafting, compliance review and contract execution.",
+              "source_content_hash": "dde95a853ddbff45",
+              "quote_hash": "84ef339daba80b92cd5fd738f29df30189df5bccc4c1c41d9fbdbc295b85ad1e"
             },
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "Procurement Sciences is an AI native platform for government contracting that covers three key stages: Find, Win, and Deliver."
+              "quote": "Procurement Sciences is an AI native platform for government contracting that covers three key stages: Find, Win, and Deliver.",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "8582a07e8154c7a79f47fae08c4a7cf43266e8765028e45bd23c4da7fd8c406a"
             }
           ],
           "entity_id": null
@@ -1183,9 +1356,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Expanded its user base to over 300 organizations, including four of the Top 10 defense and aerospace contractors"
+              "quote": "Expanded its user base to over 300 organizations, including four of the Top 10 defense and aerospace contractors",
+              "source_content_hash": "3b1619e1efabd120",
+              "quote_hash": "8af9969e3ed6931ab73acb2312af44fd477ec7350573f52fc6461ce22ccc8886"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Crowley Government Services",
@@ -1194,9 +1370,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5d2e4c7341b78ac8",
-              "quote": "It took us days, not weeks or months to start producing actual results from the platform. TS Tom Skrobacz Director of Business Development, Crowley Government Services"
+              "quote": "It took us days, not weeks or months to start producing actual results from the platform. TS Tom Skrobacz Director of Business Development, Crowley Government Services",
+              "source_content_hash": "0f0eb0857fae690f",
+              "quote_hash": "eed1150628c4528fbdb9ce330b1b78326cf5094fb027c43a9d68cef8df15a2ec"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "一家中型承包商",
@@ -1205,9 +1384,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "A mid-size contractor had already decided not to pursue a highly competitive bid because there were only about ten days left before submission. After they saw what our platform could do, they reversed that decision, used our AI to build a compliant and compelling proposal in a fraction of the usual time, and ended up winning a contract worth about 40 million dollars."
+              "quote": "A mid-size contractor had already decided not to pursue a highly competitive bid because there were only about ten days left before submission. After they saw what our platform could do, they reversed that decision, used our AI to build a compliant and compelling proposal in a fraction of the usual time, and ended up winning a contract worth about 40 million dollars.",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "41192b201c05c441bc6dc6de9124b6c4f6e3ed1e3419862b0bff96c914f2ac80"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1219,7 +1401,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Expanded its user base to over 300 organizations"
+              "quote": "Expanded its user base to over 300 organizations",
+              "source_content_hash": "3b1619e1efabd120",
+              "quote_hash": "ae4250d339a69cb2c19c211c6e76cde741e53f780adbfc5840088d4d02acba11"
             }
           ]
         },
@@ -1230,7 +1414,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Enabled more than $3 billion in customer contract wins"
+              "quote": "Enabled more than $3 billion in customer contract wins",
+              "source_content_hash": "3b1619e1efabd120",
+              "quote_hash": "c39bb3da28292c640dff43ea3ca67fe9cf9a07a5e0a141bed5fab5f3e3178a94"
             }
           ]
         },
@@ -1241,7 +1427,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Achieved over 10x revenue growth"
+              "quote": "Achieved over 10x revenue growth",
+              "source_content_hash": "3b1619e1efabd120",
+              "quote_hash": "2e9bedd3f7285717c1e401c8db3acf787604daceb59c62a3b2df3fc98f3ecaab"
             }
           ]
         },
@@ -1252,7 +1440,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "Growing our team from 16 people to more than 80"
+              "quote": "Growing our team from 16 people to more than 80",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "dee1dce94a4c16fe0b57107ae832f99e941828f2a063306deea2f35c423701f0"
             }
           ]
         },
@@ -1263,7 +1453,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "Enabling more than 4 billion dollars in customer contract wins in 2024"
+              "quote": "Enabling more than 4 billion dollars in customer contract wins in 2024",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "e5695389cc6f900b141b90004bcff039ff6aada8cd2f4066daa395bdb1328c7b"
             }
           ]
         },
@@ -1274,7 +1466,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "A mid-market IT contractor reduced proposal development time by about 90 percent, going from a three-week process to three days."
+              "quote": "A mid-market IT contractor reduced proposal development time by about 90 percent, going from a three-week process to three days.",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "69e0bcf340573d892cbc88c4fb68b4753e759442cdd8774034ecf059a0646847"
             }
           ]
         },
@@ -1285,7 +1479,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "Aggregates more than 40,000 daily federal and SLED opportunities"
+              "quote": "Aggregates more than 40,000 daily federal and SLED opportunities",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "665b1ae821dbc82ea99a4e1aa3bdf6e18a9561d61dcba384b9ec31e4e1944c02"
             }
           ]
         },
@@ -1296,7 +1492,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "In total, we have raised more than 40 million dollars in funding."
+              "quote": "In total, we have raised more than 40 million dollars in funding.",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "73a090048e79527ebe5091b8c51bf32bb5cc390c95fa722042928afdf1270c88"
             }
           ]
         }
@@ -1308,7 +1506,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "The U.S. government is the world's largest buyer, offering enormous opportunity, but the process is complex, competitive and leaves no margin for error"
+              "quote": "The U.S. government is the world's largest buyer, offering enormous opportunity, but the process is complex, competitive and leaves no margin for error",
+              "source_content_hash": "3b1619e1efabd120",
+              "quote_hash": "45d42cd8da5bc21a02e6d6be2379aa38f76e754ba3bcd5b7a25acfbe71d8bc76"
             }
           ]
         },
@@ -1318,7 +1518,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Work that once took weeks now takes minutes."
+              "quote": "Work that once took weeks now takes minutes.",
+              "source_content_hash": "3b1619e1efabd120",
+              "quote_hash": "af5259b4e8ced1090cde23b56cb130b548138528331f7d45828f6f28694d3f8b"
             }
           ]
         },
@@ -1328,7 +1530,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Procurement Sciences has achieved something rare – true category creation in a massive, underserved market"
+              "quote": "Procurement Sciences has achieved something rare – true category creation in a massive, underserved market",
+              "source_content_hash": "3b1619e1efabd120",
+              "quote_hash": "d940a64524e82f2c5cd9def8759d6d9b7efe487c8918699e51c7558d3165d649"
             }
           ]
         },
@@ -1338,7 +1542,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "AI is not replacing people in government contracting. It is amplifying them."
+              "quote": "AI is not replacing people in government contracting. It is amplifying them.",
+              "source_content_hash": "8b4a92843ff0a28f",
+              "quote_hash": "32d5067a855fd31db892d10044079bdc742ccda93b93e23e0e89d8c17164310e"
             }
           ]
         }
@@ -1354,7 +1560,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-586a76876aaf1edc",
-                "quote": "Procurement Sciences has flipped the process on its head. Initially, the AI-powered platform compliantly exposed best-in-class models for contractors to streamline proposal writing. Today, the platform continuously scans all new revenue opportunities to determine potential fits for government vendors; acts as a pipeline and work-list management tool; and provides automated compliance reviews to ensure the highest probability of winning government business."
+                "quote": "Procurement Sciences has flipped the process on its head. Initially, the AI-powered platform compliantly exposed best-in-class models for contractors to streamline proposal writing. Today, the platform continuously scans all new revenue opportunities to determine potential fits for government vendors; acts as a pipeline and work-list management tool; and provides automated compliance reviews to ensure the highest probability of winning government business.",
+                "source_content_hash": "cfd55be4e1a718d9",
+                "quote_hash": "290873543412fd1fc90b04a2d19019dccf03a0defae096202982690897814cc6"
               }
             ]
           }
@@ -1371,7 +1579,21 @@
           "政府合同市场技术采用速度传统上较慢，客户从试点到全面部署的周期可能长于预期，影响收入增速的可持续性。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "政府合同AI平台"
+        "sector": "政府合同AI平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Procurement Sciences能否在万亿美元规模的政府合同市场中成为AI原生的品类定义者。本轮融资的已验证信号包括：A轮后15个月内收入增长超10倍、客户群扩展至超过300家组织（含四家十大国防承包商）、帮助客户赢得超30亿美元合同。这些指标表明产品已实现从提案自动化工具向全生命周期操作系统的演进，并在高度合规敏感的政府市场中获得了实际采用验证。然而，当前判断的证据边界在于：收入绝对值和利润率未披露，客户留存率和扩张率未知，且政府技术采购的预算周期和合规审查可能限制增速。",
+          "evidence_signals": [
+            "自A轮以来收入增长超过10倍",
+            "客户组织超过300家，包括四家十大国防和航空航天承包商",
+            "帮助客户赢得超过30亿美元合同",
+            "团队从16人扩展至超过80人",
+            "平台从提案自动化演进为覆盖Find-Win-Deliver全生命周期的AI原生系统"
+          ],
+          "risks": [
+            "政府合同市场技术采用速度传统上较慢，客户从试点到全面部署的周期可能长于预期，影响收入增速的可持续性。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1379,181 +1601,91 @@
           "target_kind": "product",
           "research_name": "Awarded AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1173d9aac2125988",
-              "quote": "Awarded AI, an AI-native operating system designed to support the full government contracting life cycle by streamlining core tasks such as opportunity identification, proposal drafting, compliance review and contract execution."
-            },
-            {
-              "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "Procurement Sciences is an AI native platform for government contracting that covers three key stages: Find, Win, and Deliver."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Christian Ferreira",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Christian Ferreira, founder and CEO of Procurement Sciences"
-            },
-            {
-              "source_id": "FISRC-5d2e4c7341b78ac8",
-              "quote": "Christian Ferreira CEO & Founder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Catalyst Investors",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "closed $30 million in Series B funding led by New York City-based growth equity firm Catalyst Investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Battery Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
-            },
-            {
-              "source_id": "FISRC-586a76876aaf1edc",
-              "quote": "we announced our Series A investment in Procurement Sciences"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tower Research Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "K Street Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blu Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Existing backers Battery Ventures, Tower Research Ventures, K-Street Capital and Blu Ventures participated in the oversubscribed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bosch Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Citi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "战略天使投资人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1173d9aac2125988",
-              "quote": "strategic angel backers"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "四家十大国防和航空航天承包商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa41049d7cbdf303",
-              "quote": "Expanded its user base to over 300 organizations, including four of the Top 10 defense and aerospace contractors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Crowley Government Services",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5d2e4c7341b78ac8",
-              "quote": "It took us days, not weeks or months to start producing actual results from the platform. TS Tom Skrobacz Director of Business Development, Crowley Government Services"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家中型承包商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-896b7d50ee81e579",
-              "quote": "A mid-size contractor had already decided not to pursue a highly competitive bid because there were only about ten days left before submission. After they saw what our platform could do, they reversed that decision, used our AI to build a compliant and compelling proposal in a fraction of the usual time, and ended up winning a contract worth about 40 million dollars."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1639,13 +1771,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-30T03:47:04.660Z"
+      "published_at": "2026-07-30T03:47:04.660Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Awarded AI"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Christian Ferreira"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-a3ba586cbc57b5fd"
+      ],
+      "aggregation": {
+        "key": "EN-7035f6607ad2d162|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-fe9a9306d574c1ba",
       "triggered_by_event_id": "EV-2dff88f85e3bce86",
       "as_of_date": "2026-07-30",
@@ -1663,11 +1824,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d8e4be597a9ace83",
-                "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
+                "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago",
+                "source_content_hash": "ec0790da5452a390",
+                "quote_hash": "831bbf7b9ab529479a18c28278423cd07cd2ce2da6a83dfc50dc2be5e173119b"
               },
               {
                 "source_id": "FISRC-9b39ac49a347d5c1",
-                "quote": "Max Spero Cofounder & Ceo"
+                "quote": "Max Spero Cofounder & Ceo",
+                "source_content_hash": "bd730742ae25a8c1",
+                "quote_hash": "99ee8bcadc52190ce15c73af4728dad31c970d88fc1cf62df741f61a3e308595"
               }
             ],
             "entity_id": null
@@ -1678,11 +1843,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d8e4be597a9ace83",
-                "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
+                "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago",
+                "source_content_hash": "ec0790da5452a390",
+                "quote_hash": "831bbf7b9ab529479a18c28278423cd07cd2ce2da6a83dfc50dc2be5e173119b"
               },
               {
                 "source_id": "FISRC-9b39ac49a347d5c1",
-                "quote": "Bradley Emi Co-Founder And Cto"
+                "quote": "Bradley Emi Co-Founder And Cto",
+                "source_content_hash": "bd730742ae25a8c1",
+                "quote_hash": "a3265890cb1dda9964dd42c083b9e096e7e17f3af7d2e0228b7877e859cca415"
               }
             ],
             "entity_id": null
@@ -1694,23 +1863,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9b39ac49a347d5c1",
-              "quote": "Employees 11-20"
+              "quote": "Employees 11-20",
+              "source_content_hash": "bd730742ae25a8c1",
+              "quote_hash": "a3c6e054786e1ae092e16e77cfea150359b7396d6b9d2dc02270d523525cc591"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-d8e4be597a9ace83",
-            "quote": "New York-based AI detection startup Pangram"
+            "quote": "New York-based AI detection startup Pangram",
+            "source_content_hash": "ec0790da5452a390",
+            "quote_hash": "ef6dbe7129079422616e1f5f9d219f4e0d0360b093fa93ab788a5484818eb435"
           },
           {
             "source_id": "FISRC-9b39ac49a347d5c1",
-            "quote": "Headquarters Brooklyn, New York, United States"
+            "quote": "Headquarters Brooklyn, New York, United States",
+            "source_content_hash": "bd730742ae25a8c1",
+            "quote_hash": "d3b858620d345f4e084c7c2dc1a51ba0faa27f29b9141d5397b63105b721747a"
           }
         ]
       },
       "financing": {
-        "round": "未披露",
+        "round": "轮次未披露",
         "amount": "$9,000,000",
         "total_raised": "$2,700,000",
         "announced_at": "2026-07-29",
@@ -1721,7 +1896,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d8e4be597a9ace83",
-                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza",
+                "source_content_hash": "ec0790da5452a390",
+                "quote_hash": "23f2bea538a26d72cef7666f71e0842a8f814ce4e13ba2350d226f7c3e58e3db"
               }
             ],
             "entity_id": null
@@ -1732,7 +1909,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d8e4be597a9ace83",
-                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza",
+                "source_content_hash": "ec0790da5452a390",
+                "quote_hash": "23f2bea538a26d72cef7666f71e0842a8f814ce4e13ba2350d226f7c3e58e3db"
               }
             ],
             "entity_id": null
@@ -1743,7 +1922,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d8e4be597a9ace83",
-                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza",
+                "source_content_hash": "ec0790da5452a390",
+                "quote_hash": "23f2bea538a26d72cef7666f71e0842a8f814ce4e13ba2350d226f7c3e58e3db"
               }
             ],
             "entity_id": null
@@ -1754,7 +1935,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d8e4be597a9ace83",
-                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza",
+                "source_content_hash": "ec0790da5452a390",
+                "quote_hash": "23f2bea538a26d72cef7666f71e0842a8f814ce4e13ba2350d226f7c3e58e3db"
               }
             ],
             "entity_id": null
@@ -1763,11 +1946,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d8e4be597a9ace83",
-            "quote": "Pangram raises $9M to detect it"
+            "quote": "Pangram raises $9M to detect it",
+            "source_content_hash": "ec0790da5452a390",
+            "quote_hash": "1bb4ffb312e950a68acbb3f1d06061c53370f1f9a48b0941c4c45735f64b93ea"
           },
           {
             "source_id": "FISRC-9b39ac49a347d5c1",
-            "quote": "Total funding $2,700,000"
+            "quote": "Total funding $2,700,000",
+            "source_content_hash": "bd730742ae25a8c1",
+            "quote_hash": "a8a4543606f3df2f69dac5d64f549f5fc763b4f4b7aecac7b754d3566ccd4417"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2dff88f85e3bce86",
+            "round_original": "未披露",
+            "amount": "$9,000,000",
+            "announced_at": "2026-07-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d8e4be597a9ace83",
+                "quote": "Pangram raises $9M to detect it",
+                "source_content_hash": "ec0790da5452a390",
+                "quote_hash": "1bb4ffb312e950a68acbb3f1d06061c53370f1f9a48b0941c4c45735f64b93ea"
+              },
+              {
+                "source_id": "FISRC-9b39ac49a347d5c1",
+                "quote": "Total funding $2,700,000",
+                "source_content_hash": "bd730742ae25a8c1",
+                "quote_hash": "a8a4543606f3df2f69dac5d64f549f5fc763b4f4b7aecac7b754d3566ccd4417"
+              }
+            ]
           }
         ]
       },
@@ -1784,7 +1996,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content, plus it can more easily detect AI humanizer programs."
+              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content, plus it can more easily detect AI humanizer programs.",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "dc3a7acd0448533b64427596a9490be520d2352d9db995201852f8bf7f07f465"
             }
           ],
           "entity_id": null
@@ -1801,11 +2015,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "an AI image detection model, Pangram Image"
+              "quote": "an AI image detection model, Pangram Image",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "8d035e6acb1a7beaf5f2831399db1693ff55c4727c730281b352c10c4fcdb1d3"
             },
             {
               "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Pangram Image is a model for detecting AI-generated images."
+              "quote": "Pangram Image is a model for detecting AI-generated images.",
+              "source_content_hash": "3585aba58c9f8490",
+              "quote_hash": "06462e75d22583a2620c4d3d885323b93677390a414491c8f26da69ff4b0432b"
             }
           ],
           "entity_id": null
@@ -1821,7 +2039,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "download the Chrome extension, which automatically labels posts in real time on X, LinkedIn, Substack, Reddit, and Medium. It also provides a feed health score with a percentage breakdown of human versus AI content on your screen."
+              "quote": "download the Chrome extension, which automatically labels posts in real time on X, LinkedIn, Substack, Reddit, and Medium. It also provides a feed health score with a percentage breakdown of human versus AI content on your screen.",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "654bcae2390d1ec8c45ce9b508da6e2533b593099b9645c653c1a959c1e54b2f"
             }
           ],
           "entity_id": null
@@ -1835,13 +2055,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora"
+              "quote": "Other API customers include Quora",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "ed437d36b27b0d7d614b2d3f617d2abe542c04133cb1f3c6460959c454b19d22"
             },
             {
               "source_id": "FISRC-ffa924dedeedbea6",
-              "quote": "Pangram Labs partnered with Quora to help them take on spammers using ChatGPT to respond to posts with inauthentic, AI-generated answers."
+              "quote": "Pangram Labs partnered with Quora to help them take on spammers using ChatGPT to respond to posts with inauthentic, AI-generated answers.",
+              "source_content_hash": "766b45196cc4ab7e",
+              "quote_hash": "134f63b8d0236da28e5b003106fd0508e1ce36f4f747d540db2cd86d2ad2190a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "学校和大学",
@@ -1850,9 +2075,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "15d0bec6d3ac859b6f676695cc5ccf9891fb27a94c62e59e5c1052628ef1e582"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "出版商和代理商",
@@ -1861,9 +2089,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "15d0bec6d3ac859b6f676695cc5ccf9891fb27a94c62e59e5c1052628ef1e582"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "招聘人员",
@@ -1872,9 +2103,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "15d0bec6d3ac859b6f676695cc5ccf9891fb27a94c62e59e5c1052628ef1e582"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1888,13 +2122,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "6b4e6493559860df6effc835b759cde560b76159636859a3876afd8100b86c8d"
             },
             {
               "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Winston AI 94.27%"
+              "quote": "Winston AI 94.27%",
+              "source_content_hash": "3585aba58c9f8490",
+              "quote_hash": "47b684e97efcc6971bbd4ad106ac590b4696988f1d666c9d6c19a65bfbb56806"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Originality.ai",
@@ -1906,13 +2145,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "6b4e6493559860df6effc835b759cde560b76159636859a3876afd8100b86c8d"
             },
             {
               "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "AI or Not 87.67%"
+              "quote": "AI or Not 87.67%",
+              "source_content_hash": "3585aba58c9f8490",
+              "quote_hash": "45eab084ecb814d75a2811bf3b4475ed44359d4d7f35ccdd1b3abe90a3498932"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Copyleaks",
@@ -1924,13 +2168,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "6b4e6493559860df6effc835b759cde560b76159636859a3876afd8100b86c8d"
             },
             {
               "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Resemble AI 98.35%"
+              "quote": "Resemble AI 98.35%",
+              "source_content_hash": "3585aba58c9f8490",
+              "quote_hash": "be3dc0ed752db7d8b101ed26abc90d883d3252b9091ffb6a79e0d333e9126bb0"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "GPTZero",
@@ -1942,13 +2191,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "6b4e6493559860df6effc835b759cde560b76159636859a3876afd8100b86c8d"
             },
             {
               "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "SightEngine 99.13%"
+              "quote": "SightEngine 99.13%",
+              "source_content_hash": "3585aba58c9f8490",
+              "quote_hash": "5d543cd8053dcc23fbdc654f2d5bd80acb60d6ef54c8e733e37ead1559ebd533"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1959,7 +2213,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content"
+              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "7a9fe09185162b0e56353e8a1c4a49b38bff86e646966eafc53380625b4e4629"
             }
           ]
         },
@@ -1970,7 +2226,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Pangram Image achieves 99.5% accuracy, compared to the next closest competitor at 98%."
+              "quote": "Pangram Image achieves 99.5% accuracy, compared to the next closest competitor at 98%.",
+              "source_content_hash": "3585aba58c9f8490",
+              "quote_hash": "26e702b78f34627c493cd6a8ec35364c56da05c8b2a7b238b478cbdf3e71da1d"
             }
           ]
         },
@@ -1981,7 +2239,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Pangram Image demonstrates a false positive rate of 0.16%, approximately 1 in 625."
+              "quote": "Pangram Image demonstrates a false positive rate of 0.16%, approximately 1 in 625.",
+              "source_content_hash": "3585aba58c9f8490",
+              "quote_hash": "820bc59f3d21e4d726ca7ad64d9acf223986ae4a553d1bfefc7a5a2a228f8b0e"
             }
           ]
         },
@@ -1992,7 +2252,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ffa924dedeedbea6",
-              "quote": "Quora has identified more than 1 million AI-generated posts"
+              "quote": "Quora has identified more than 1 million AI-generated posts",
+              "source_content_hash": "766b45196cc4ab7e",
+              "quote_hash": "20e42f0713b2ab5797589fca099df69d37ed1c5b315d822aed68a113a1d96c07"
             }
           ]
         },
@@ -2003,7 +2265,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Users can access Pangram via a $20-per-month subscription on the web"
+              "quote": "Users can access Pangram via a $20-per-month subscription on the web",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "a127cf59d5e6cd4752fc89c96d253ba9a89bef0588af4c72f8305994f4fe3f45"
             }
           ]
         },
@@ -2014,7 +2278,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9b39ac49a347d5c1",
-              "quote": "Annual revenue $1,026,660"
+              "quote": "Annual revenue $1,026,660",
+              "source_content_hash": "bd730742ae25a8c1",
+              "quote_hash": "bf8a2a68d2d1cac96c13b85f76e43b3163f6cc0640e17873eceb24b894df9b88"
             }
           ]
         }
@@ -2026,7 +2292,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Our model is learning the stylistic differences and the choices that AI makes consistently and is able to use that to learn what makes something AI-generated with high confidence"
+              "quote": "Our model is learning the stylistic differences and the choices that AI makes consistently and is able to use that to learn what makes something AI-generated with high confidence",
+              "source_content_hash": "ec0790da5452a390",
+              "quote_hash": "1bc3a0fdd2aa5ae5983d2f21630291d0e74e485784bd518489d746c3e95fd2a3"
             }
           ]
         }
@@ -2044,7 +2312,20 @@
           "随着生成式 AI 模型的快速迭代，检测模型需要持续更新以保持有效性，这可能带来高昂的研发成本。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 内容检测"
+        "sector": "AI 内容检测",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 生成内容泛滥所催生的检测需求。Pangram 的融资依赖于已验证的技术信号：其文本检测模型准确率超过 99%，误报率仅为万分之一；图像检测模型在内部基准测试中达到 99.5% 的准确率。此外，Substack 和 Quora 等平台已集成其技术，验证了商业落地能力。但判断的证据边界在于，这些指标均来自公司内部测试或有限的外部基准，且公司估计估值仅为 330 万美元，与 900 万美元融资额形成反差，可能表明估值存在不确定性或数据滞后。",
+          "evidence_signals": [
+            "Pangram 4 文本检测模型准确率超过 99%，误报率约万分之一。",
+            "Pangram Image 在内部基准测试中准确率达 99.5%，在 ReLAION 数据集上误报率为 0.16%。",
+            "Substack 和 Quora 等平台已集成 Pangram 技术，Quora 已识别超过 100 万篇 AI 生成帖子。"
+          ],
+          "risks": [
+            "AI 检测技术存在固有局限性，模型在测试中仍会将人类撰写的句子误标为 AI 生成，尤其在枯燥或公式化的写作风格下。",
+            "随着生成式 AI 模型的快速迭代，检测模型需要持续更新以保持有效性，这可能带来高昂的研发成本。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2052,253 +2333,119 @@
           "target_kind": "product",
           "research_name": "Pangram 4",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content, plus it can more easily detect AI humanizer programs."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Pangram Image",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "an AI image detection model, Pangram Image"
-            },
-            {
-              "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Pangram Image is a model for detecting AI-generated images."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Chrome 扩展程序",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "download the Chrome extension, which automatically labels posts in real time on X, LinkedIn, Substack, Reddit, and Medium. It also provides a feed health score with a percentage breakdown of human versus AI content on your screen."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Max Spero",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
-            },
-            {
-              "source_id": "FISRC-9b39ac49a347d5c1",
-              "quote": "Max Spero Cofounder & Ceo"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Bradley Emi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
-            },
-            {
-              "source_id": "FISRC-9b39ac49a347d5c1",
-              "quote": "Bradley Emi Co-Founder And Cto"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Haystack",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "ScOp",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Script Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cadenza",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Quora",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora"
-            },
-            {
-              "source_id": "FISRC-ffa924dedeedbea6",
-              "quote": "Pangram Labs partnered with Quora to help them take on spammers using ChatGPT to respond to posts with inauthentic, AI-generated answers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "学校和大学",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "出版商和代理商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "招聘人员",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Winston AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
-            },
-            {
-              "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Winston AI 94.27%"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Originality.ai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
-            },
-            {
-              "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "AI or Not 87.67%"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Copyleaks",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
-            },
-            {
-              "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "Resemble AI 98.35%"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "GPTZero",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d8e4be597a9ace83",
-              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
-            },
-            {
-              "source_id": "FISRC-1a2a0a8dfddaae12",
-              "quote": "SightEngine 99.13%"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2372,13 +2519,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-30T03:19:06.866Z"
+      "published_at": "2026-07-30T03:19:06.866Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Chrome 扩展程序",
+            "Pangram 4",
+            "Pangram Image"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Bradley Emi",
+            "Max Spero"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2dff88f85e3bce86"
+      ],
+      "aggregation": {
+        "key": "EN-770ef1d2b6e24172|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-d77c00123bd7daac",
       "triggered_by_event_id": "EV-f1553722b4ce43af",
       "as_of_date": "2026-07-30",
@@ -2396,7 +2575,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7fb90907dc18444a",
-                "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint"
+                "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint",
+                "source_content_hash": "6c8f13ea3672da72",
+                "quote_hash": "e026d7cc4ec8a0e8cfd333eef334245d9c637f54a6ccde2c04f8a05461a8adcd"
               }
             ],
             "entity_id": null
@@ -2407,7 +2588,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7fb90907dc18444a",
-                "quote": "Co-founder and CTO at Hint, New York-based Kyle Rush"
+                "quote": "Co-founder and CTO at Hint, New York-based Kyle Rush",
+                "source_content_hash": "6c8f13ea3672da72",
+                "quote_hash": "f18c17cafd3d7a99767e13879880ec98892ca770adc36a368507417d3cad995d"
               }
             ],
             "entity_id": null
@@ -2418,7 +2601,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7fb90907dc18444a",
-                "quote": "Yih-Han Ma , co-founder and CEO, based out of Charlotte, North Carolina"
+                "quote": "Yih-Han Ma , co-founder and CEO, based out of Charlotte, North Carolina",
+                "source_content_hash": "6c8f13ea3672da72",
+                "quote_hash": "a374453ec02e76e82ad73436c6183742933c914c3bd7e47fcbea42b8b310203b"
               }
             ],
             "entity_id": null
@@ -2432,11 +2617,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7fb90907dc18444a",
-            "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint"
+            "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint",
+            "source_content_hash": "6c8f13ea3672da72",
+            "quote_hash": "e026d7cc4ec8a0e8cfd333eef334245d9c637f54a6ccde2c04f8a05461a8adcd"
           },
           {
             "source_id": "FISRC-c3980470a5917efd",
-            "quote": "Martha Stewart, home services executive Yih-Han Ma, and AI entrepreneur Kyle Rush announced the launch of Hint"
+            "quote": "Martha Stewart, home services executive Yih-Han Ma, and AI entrepreneur Kyle Rush announced the launch of Hint",
+            "source_content_hash": "8bc83e9e655d383b",
+            "quote_hash": "8e6a2971707a2d61feb8174cd6a4f18cb160174f293bfff39c12634a258e2bf0"
           }
         ]
       },
@@ -2452,7 +2641,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c3980470a5917efd",
-                "quote": "a $10 million seed financing round led by Slow Ventures"
+                "quote": "a $10 million seed financing round led by Slow Ventures",
+                "source_content_hash": "8bc83e9e655d383b",
+                "quote_hash": "fae0fdc17248be488b11890fcb7005268ae6ef33511bde677b38a563bf8ce1ee"
               }
             ],
             "entity_id": null
@@ -2461,7 +2652,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-c3980470a5917efd",
-            "quote": "a $10 million seed financing round led by Slow Ventures, with participation from Montauk Capital, Tusk Venture Partners, Amplo, Energy Impact Partners, Hannah Grey VC, and Brian Kelly."
+            "quote": "a $10 million seed financing round led by Slow Ventures, with participation from Montauk Capital, Tusk Venture Partners, Amplo, Energy Impact Partners, Hannah Grey VC, and Brian Kelly.",
+            "source_content_hash": "8bc83e9e655d383b",
+            "quote_hash": "b02780cf68d284daf53616b4d96b70b1dba84b76ec9d8e71fc7642e181dad416"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f1553722b4ce43af",
+            "round_original": "种子轮",
+            "amount": "$10 million",
+            "announced_at": "2026-07-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3980470a5917efd",
+                "quote": "a $10 million seed financing round led by Slow Ventures, with participation from Montauk Capital, Tusk Venture Partners, Amplo, Energy Impact Partners, Hannah Grey VC, and Brian Kelly.",
+                "source_content_hash": "8bc83e9e655d383b",
+                "quote_hash": "b02780cf68d284daf53616b4d96b70b1dba84b76ec9d8e71fc7642e181dad416"
+              }
+            ]
           }
         ]
       },
@@ -2483,11 +2695,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7fb90907dc18444a",
-              "quote": "an app that leverages AI technology to manage the tasks surrounding home maintenance and management"
+              "quote": "an app that leverages AI technology to manage the tasks surrounding home maintenance and management",
+              "source_content_hash": "6c8f13ea3672da72",
+              "quote_hash": "5f78548973c0a324d0b59e91f7d19713f974fe8ee50b23da9f0d6d8c54352bcf"
             },
             {
               "source_id": "FISRC-c3980470a5917efd",
-              "quote": "an always-on, AI-native home management platform designed to help homeowners proactively manage their homes through a single digital interface"
+              "quote": "an always-on, AI-native home management platform designed to help homeowners proactively manage their homes through a single digital interface",
+              "source_content_hash": "8bc83e9e655d383b",
+              "quote_hash": "1191392de7e719d3d59ac42af4008dcbae64b39a293bc9cc9b46de07f0a39fde"
             }
           ],
           "entity_id": null
@@ -2503,7 +2719,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c3980470a5917efd",
-              "quote": "I have always been passionate about showing people how to care for and beautify their homes. Hint brings that philosophy to more people, making the knowledge and expertise behind thoughtful homeownership accessible to everyone."
+              "quote": "I have always been passionate about showing people how to care for and beautify their homes. Hint brings that philosophy to more people, making the knowledge and expertise behind thoughtful homeownership accessible to everyone.",
+              "source_content_hash": "8bc83e9e655d383b",
+              "quote_hash": "212c6f9c20d9dd2289fe106a67cd123a08c3cf17aefc673bf614e213602d4bb9"
             }
           ]
         }
@@ -2520,7 +2738,19 @@
           "产品尚未公开上线，缺乏用户规模、留存率和付费转化等关键商业指标，当前投资完全基于创始团队和愿景"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 家居管理"
+        "sector": "AI 家居管理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Martha Stewart 的个人品牌与领域知识能否将家居管理从被动维修转变为主动的 AI 驱动决策平台。本轮 1000 万美元种子轮融资的估值未披露，但投资逻辑依赖于已验证信号：Martha Stewart 作为联合创始人的深度参与（非挂名），以及团队在 AI 应用和家居服务领域的复合经验。证据边界限于创始团队的背景和产品愿景，尚未有用户规模或收入数据支撑。",
+          "evidence_signals": [
+            "Martha Stewart 作为联合创始人深度参与产品打磨，每周两次与团队审查应用",
+            "创始团队具备 AI 工程（Kyle Rush 曾领导 Casper 工程团队）和家居服务（Yih-Han Ma 曾在 Red Ventures 建立家居服务品牌）的复合背景",
+            "产品已从脱碳激励工具转向更广泛的 AI 家居管理平台，显示出市场适应性"
+          ],
+          "risks": [
+            "产品尚未公开上线，缺乏用户规模、留存率和付费转化等关键商业指标，当前投资完全基于创始团队和愿景"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2528,69 +2758,35 @@
           "target_kind": "product",
           "research_name": "Hint App",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7fb90907dc18444a",
-              "quote": "an app that leverages AI technology to manage the tasks surrounding home maintenance and management"
-            },
-            {
-              "source_id": "FISRC-c3980470a5917efd",
-              "quote": "an always-on, AI-native home management platform designed to help homeowners proactively manage their homes through a single digital interface"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Martha Stewart",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7fb90907dc18444a",
-              "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Kyle Rush",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7fb90907dc18444a",
-              "quote": "Co-founder and CTO at Hint, New York-based Kyle Rush"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yih-Han Ma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7fb90907dc18444a",
-              "quote": "Yih-Han Ma , co-founder and CEO, based out of Charlotte, North Carolina"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Slow Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c3980470a5917efd",
-              "quote": "a $10 million seed financing round led by Slow Ventures"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2640,10 +2836,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-30T03:18:53.555Z"
+      "published_at": "2026-07-30T03:18:53.555Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Hint App"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Kyle Rush",
+            "Martha Stewart",
+            "Yih-Han Ma"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f1553722b4ce43af"
+      ],
+      "aggregation": {
+        "key": "EN-b80e0af617d0f8ff|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

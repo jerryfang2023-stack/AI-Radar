@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-24",
     "generated_at": "2026-07-27T05:17:13.250Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 2,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-d6cb4942d1df5522",
       "triggered_by_event_id": "EV-4118202ed0f91895",
       "as_of_date": "2026-06-24",
@@ -37,16 +38,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-c46abe65803d1634",
-            "quote": "Groq today announced $650 million in new growth capital to accelerate the expansion of its AI inference cloud."
+            "quote": "Groq today announced $650 million in new growth capital to accelerate the expansion of its AI inference cloud.",
+            "source_content_hash": "5d508256a555c742",
+            "quote_hash": "f5bbcaf55f7618b7a36323826f2df30a5754eb4cd27a0363c9f33692891c0e8d"
           },
           {
             "source_id": "FISRC-c66ca0ea17b53d98",
-            "quote": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资"
+            "quote": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资",
+            "source_content_hash": "394e38a9fa692709",
+            "quote_hash": "7aaa22c2bb1f457f5fb8fe50e71037f0050531de2a62486805577d1d3cb6b313"
           }
         ]
       },
       "financing": {
-        "round": "新一轮",
+        "round": "轮次未披露",
         "amount": "6.5 亿美元",
         "total_raised": "",
         "announced_at": "2026-06-22",
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c46abe65803d1634",
-                "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
+                "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company.",
+                "source_content_hash": "5d508256a555c742",
+                "quote_hash": "5fa8e7ff0693e7039e6ad85d73fdc7c34fd9f729fc601a727a2d18321b768073"
               }
             ],
             "entity_id": null
@@ -68,128 +75,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c46abe65803d1634",
-                "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Blackstone",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Newport Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Deutsche Telekom Capital Partners",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Samsung",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-              }
-            ],
-            "entity_id": "EN-968e2d5b08687bf4"
-          },
-          {
-            "name": "Cisco",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-              }
-            ],
-            "entity_id": "EN-e73b79a0b10f8cdb"
-          },
-          {
-            "name": "D1",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Altimeter",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "1789Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-85e8550490e53490",
-                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Cisco Investments",
-            "role": "D轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6ef693ebacbad168",
-                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Samsung Catalyst Fund",
-            "role": "D轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6ef693ebacbad168",
-                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "BlackRock Private Equity Partners",
-            "role": "D轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6ef693ebacbad168",
-                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
+                "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company.",
+                "source_content_hash": "5d508256a555c742",
+                "quote_hash": "5fa8e7ff0693e7039e6ad85d73fdc7c34fd9f729fc601a727a2d18321b768073"
               }
             ],
             "entity_id": null
@@ -198,11 +86,250 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-c46abe65803d1634",
-            "quote": "Groq today announced $650 million in new growth capital to accelerate the expansion of its AI inference cloud."
+            "quote": "Groq today announced $650 million in new growth capital to accelerate the expansion of its AI inference cloud.",
+            "source_content_hash": "5d508256a555c742",
+            "quote_hash": "f5bbcaf55f7618b7a36323826f2df30a5754eb4cd27a0363c9f33692891c0e8d"
           },
           {
             "source_id": "FISRC-c66ca0ea17b53d98",
-            "quote": "Groq 宣布完成新一轮 6.5 亿美元（IT之家注：现汇率约合 44.11 亿元人民币）融资"
+            "quote": "Groq 宣布完成新一轮 6.5 亿美元（IT之家注：现汇率约合 44.11 亿元人民币）融资",
+            "source_content_hash": "394e38a9fa692709",
+            "quote_hash": "893d14068a6d522a6cde9d9de571e44449fe41fece1089ff544c8acd31c9a882"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "other_round_investors": [
+          {
+            "name": "Blackstone",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Newport Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Deutsche Telekom Capital Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Samsung",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+              }
+            ],
+            "entity_id": "EN-968e2d5b08687bf4",
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Cisco",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+              }
+            ],
+            "entity_id": "EN-e73b79a0b10f8cdb",
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "D1",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Altimeter",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "1789Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
+                "source_content_hash": "6efab5b69f3f9aa3",
+                "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Cisco Investments",
+            "role": "D轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6ef693ebacbad168",
+                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
+                "source_content_hash": "49d31e2d6afab8b0",
+                "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_d",
+              "label": "D轮",
+              "original": "D轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Samsung Catalyst Fund",
+            "role": "D轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6ef693ebacbad168",
+                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
+                "source_content_hash": "49d31e2d6afab8b0",
+                "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_d",
+              "label": "D轮",
+              "original": "D轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "BlackRock Private Equity Partners",
+            "role": "D轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6ef693ebacbad168",
+                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
+                "source_content_hash": "49d31e2d6afab8b0",
+                "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_d",
+              "label": "D轮",
+              "original": "D轮参投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-4118202ed0f91895",
+            "round_original": "新一轮",
+            "amount": "6.5 亿美元",
+            "announced_at": "2026-06-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c46abe65803d1634",
+                "quote": "Groq today announced $650 million in new growth capital to accelerate the expansion of its AI inference cloud.",
+                "source_content_hash": "5d508256a555c742",
+                "quote_hash": "f5bbcaf55f7618b7a36323826f2df30a5754eb4cd27a0363c9f33692891c0e8d"
+              },
+              {
+                "source_id": "FISRC-c66ca0ea17b53d98",
+                "quote": "Groq 宣布完成新一轮 6.5 亿美元（IT之家注：现汇率约合 44.11 亿元人民币）融资",
+                "source_content_hash": "394e38a9fa692709",
+                "quote_hash": "893d14068a6d522a6cde9d9de571e44449fe41fece1089ff544c8acd31c9a882"
+              }
+            ]
           }
         ]
       },
@@ -219,11 +346,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "The AI inference platform built for developers. Fast responses, scalable performance, and costs you can plan for. Available in public, private, or co-cloud instances."
+              "quote": "The AI inference platform built for developers. Fast responses, scalable performance, and costs you can plan for. Available in public, private, or co-cloud instances.",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "bd1cf7ca8c93d5f7c7716f5ebdf52c46c3742583adadbe952c43263f8e22bc37"
             },
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "Support for LLMs, STT, TTS, and image-to-text models"
+              "quote": "Support for LLMs, STT, TTS, and image-to-text models",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "2ba06d9a08e7ee4ee38adad6a8206962d31fe58ee931c5fedd065d3f261d29eb"
             }
           ],
           "entity_id": null
@@ -237,9 +368,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-78b93a03bb4b0a9e",
-              "quote": "Today, Groq powers Stash's entire agent network, the system Parrish describes as a \"virtual company\" working on behalf of each individual user."
+              "quote": "Today, Groq powers Stash's entire agent network, the system Parrish describes as a \"virtual company\" working on behalf of each individual user.",
+              "source_content_hash": "d01cc6a511514680",
+              "quote_hash": "e11da76ad1b05581b4aa5a7f322876eb9e0f26bd237af5c37adf07e4ec3ed5fd"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -253,9 +387,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-10fe972eac4b2d88",
-              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
+              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis.",
+              "source_content_hash": "2940d9310ef20fb1",
+              "quote_hash": "adc65da26534f9d2b78b46c95d1de22fb88af0d892efd9d3995848215103c17d"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "OpenAI",
@@ -267,9 +404,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-78b93a03bb4b0a9e",
-              "quote": "With Groq and the OSS models, we're able to achieve the same level of intelligence at dramatically higher speeds. Now we can do 12 to 15 times the tasks we were doing before."
+              "quote": "With Groq and the OSS models, we're able to achieve the same level of intelligence at dramatically higher speeds. Now we can do 12 to 15 times the tasks we were doing before.",
+              "source_content_hash": "d01cc6a511514680",
+              "quote_hash": "c6e2b92a194644091e82e79e4c59a35cceb023e4045f9983d57c5b351f8d4c67"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         }
       ],
       "metrics": [
@@ -280,7 +420,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "The company serves more than five million developers and thousands of AI-native companies that consume trillions of tokens each week."
+              "quote": "The company serves more than five million developers and thousands of AI-native companies that consume trillions of tokens each week.",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "6c6121bb64147c2bbec6d0fd2dcf8b6389b162b1213ee54a257b659f3be50a58"
             }
           ]
         },
@@ -291,7 +433,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "Today, Groq operates 13 data centers across North America, Europe, the Middle East and APAC."
+              "quote": "Today, Groq operates 13 data centers across North America, Europe, the Middle East and APAC.",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "5c70f27ff13ac0c79732d489a3b0352de0c9e898437658141c5ed201319ffb73"
             }
           ]
         },
@@ -302,7 +446,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "The company serves more than five million developers and thousands of AI-native companies that consume trillions of tokens each week."
+              "quote": "The company serves more than five million developers and thousands of AI-native companies that consume trillions of tokens each week.",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "6c6121bb64147c2bbec6d0fd2dcf8b6389b162b1213ee54a257b659f3be50a58"
             }
           ]
         },
@@ -313,7 +459,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "Groq expects to scale toward 200 MW by the end of 2027."
+              "quote": "Groq expects to scale toward 200 MW by the end of 2027.",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "2a8865befaaae9e91c0a14ba0416cbabdda53d48c8113436dbcb8e590e1e07fd"
             }
           ]
         },
@@ -324,7 +472,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-10fe972eac4b2d88",
-              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
+              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis.",
+              "source_content_hash": "2940d9310ef20fb1",
+              "quote_hash": "adc65da26534f9d2b78b46c95d1de22fb88af0d892efd9d3995848215103c17d"
             }
           ]
         },
@@ -335,7 +485,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-10fe972eac4b2d88",
-              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
+              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis.",
+              "source_content_hash": "2940d9310ef20fb1",
+              "quote_hash": "adc65da26534f9d2b78b46c95d1de22fb88af0d892efd9d3995848215103c17d"
             }
           ]
         },
@@ -346,7 +498,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5590f39907841311",
-              "quote": "After switching to Groq, Tenali saw an over 25x reduction in latency and 10x cost reduction."
+              "quote": "After switching to Groq, Tenali saw an over 25x reduction in latency and 10x cost reduction.",
+              "source_content_hash": "a472c12afcd714cc",
+              "quote_hash": "0b85ed94b50baeec11293599538fbde2fdeeb33321714119bb10e2929f0ebee5"
             }
           ]
         }
@@ -358,7 +512,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale."
+              "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale.",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "f3867e20aeb233764bed2a466e7c3cb561970451725ce35f2b1a3ea9e9e2318a"
             }
           ]
         },
@@ -368,7 +524,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c46abe65803d1634",
-              "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially."
+              "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially.",
+              "source_content_hash": "5d508256a555c742",
+              "quote_hash": "65b1fd4f1cc2a5ff683cd1300f50add74d556eaf7cb2f3d61841c4557881b7f2"
             }
           ]
         }
@@ -384,7 +542,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c46abe65803d1634",
-                "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale. We believe that combination positions Groq to become a foundational layer of the AI economy."
+                "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale. We believe that combination positions Groq to become a foundational layer of the AI economy.",
+                "source_content_hash": "5d508256a555c742",
+                "quote_hash": "2da3eaec122e33fc7b2ef0cca76ecd847ee0faf02d49fcd026d0000707faf836"
               }
             ]
           },
@@ -397,7 +557,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c46abe65803d1634",
-                "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially. Groq has the rare combination of differentiated technology, operating expertise, and global scale required to capitalize on that opportunity."
+                "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially. Groq has the rare combination of differentiated technology, operating expertise, and global scale required to capitalize on that opportunity.",
+                "source_content_hash": "5d508256a555c742",
+                "quote_hash": "d9148000279635611d148b338a2243e2ac16371f7906f716b07f6df4a042f386"
               }
             ]
           }
@@ -413,7 +575,20 @@
           "Groq 的推理云业务高度依赖其 LPU 芯片，而该技术已非独家授权给英伟达，未来可能面临来自英伟达 LPX 系统的直接竞争。"
         ],
         "related_direction_id": "",
-        "sector": "AI 推理云基础设施"
+        "sector": "AI 推理云基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Groq 从芯片技术授权商向 AI 推理云服务商的战略转型。本轮融资的已验证信号包括：1) 已运营 13 座数据中心，服务超 500 万开发者，Token 周消耗量达万亿级，证明了其商业牵引力；2) 与英伟达的非排他性授权协议为其提供了资金和下一代 LPX 系统，强化了其基础设施壁垒；3) 客户 GPTZero、Tenali 和 Stash 的案例证明了其 LPU 在延迟和成本上相比 OpenAI 等竞品有数量级优势。资本判断 Groq 有机会在“推理”这一比训练大 15-20 倍的市场中占据领先地位，但这一判断的证据边界在于其转型尚在早期，且面临英伟达等巨头的直接竞争。",
+          "evidence_signals": [
+            "已运营 13 座数据中心，服务超 500 万开发者，Token 周消耗量达万亿级。",
+            "客户 GPTZero 实现端到端响应时间提升 7 倍，年度成本降低 50%。",
+            "客户 Tenali 实现延迟降低超 25 倍，成本降低 10 倍。",
+            "与英伟达达成非独家技术授权协议，并获得其下一代 LPX 系统支持。"
+          ],
+          "risks": [
+            "Groq 的推理云业务高度依赖其 LPU 芯片，而该技术已非独家授权给英伟达，未来可能面临来自英伟达 LPX 系统的直接竞争。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -421,225 +596,119 @@
           "target_kind": "product",
           "research_name": "GroqCloud",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c46abe65803d1634",
-              "quote": "The AI inference platform built for developers. Fast responses, scalable performance, and costs you can plan for. Available in public, private, or co-cloud instances."
-            },
-            {
-              "source_id": "FISRC-c46abe65803d1634",
-              "quote": "Support for LLMs, STT, TTS, and image-to-text models"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Disruptive",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c46abe65803d1634",
-              "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Infinitum",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c46abe65803d1634",
-              "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Blackstone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Newport Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Deutsche Telekom Capital Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Samsung",
           "canonical_entity_id": "EN-968e2d5b08687bf4",
-          "canonical_name": "Samsung",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-            }
-          ]
+          "canonical_name": "Samsung"
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Cisco",
           "canonical_entity_id": "EN-e73b79a0b10f8cdb",
-          "canonical_name": "Cisco",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-            }
-          ]
+          "canonical_name": "Cisco"
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "D1",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Altimeter",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "1789Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-85e8550490e53490",
-              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Cisco Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6ef693ebacbad168",
-              "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Samsung Catalyst Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6ef693ebacbad168",
-              "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "BlackRock Private Equity Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6ef693ebacbad168",
-              "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Stash",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-78b93a03bb4b0a9e",
-              "quote": "Today, Groq powers Stash's entire agent network, the system Parrish describes as a \"virtual company\" working on behalf of each individual user."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-10fe972eac4b2d88",
-              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-78b93a03bb4b0a9e",
-              "quote": "With Groq and the OSS models, we're able to achieve the same level of intelligence at dramatically higher speeds. Now we can do 12 to 15 times the tasks we were doing before."
-            }
-          ]
+          "canonical_name": "OpenAI"
         }
       ],
       "funding_history": [
@@ -749,13 +818,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-27T05:17:13.205Z"
+      "published_at": "2026-07-27T05:17:13.205Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "GroqCloud"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-4118202ed0f91895"
+      ],
+      "aggregation": {
+        "key": "EN-0b79cf2de0ee6b8e|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-ff5da818d815cfd0",
       "triggered_by_event_id": "EV-9775b60c38285615",
       "as_of_date": "2026-06-24",
@@ -773,7 +869,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "said Chetan Conikee, Founder and CEO of Modiqo."
+                "quote": "said Chetan Conikee, Founder and CEO of Modiqo.",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "d37b10d9bb54b8f3ac0f7fec57d2c55a166742f1302cb95588efc70a070c40d5"
               }
             ],
             "entity_id": null
@@ -787,16 +885,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7dcc5e58c6026e99",
-            "quote": "Modiqo , an AI infrastructure company"
+            "quote": "Modiqo , an AI infrastructure company",
+            "source_content_hash": "776c62cfdeacb511",
+            "quote_hash": "1012568d0060b6673f64b92f16e730030656155db49e2afebe4c10942dce8194"
           },
           {
             "source_id": "FISRC-a45c9fe284c1fa5d",
-            "quote": "Modiqo , based in San Francisco, California"
+            "quote": "Modiqo , based in San Francisco, California",
+            "source_content_hash": "47358ca10899ef1d",
+            "quote_hash": "35dd7696bf071d38e47c4e460c220f0cf61b6b63f2dfc1320fc63eab2f713039"
           }
         ]
       },
       "financing": {
-        "round": "Pre-Seed",
+        "round": "预种子轮",
         "amount": "$3 million",
         "total_raised": "$3 million",
         "announced_at": "2026-05-28",
@@ -807,7 +909,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "The round was co-led by Heavybit and Seligman Ventures"
+                "quote": "The round was co-led by Heavybit and Seligman Ventures",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
               }
             ],
             "entity_id": null
@@ -818,7 +922,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "The round was co-led by Heavybit and Seligman Ventures"
+                "quote": "The round was co-led by Heavybit and Seligman Ventures",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
               }
             ],
             "entity_id": null
@@ -829,7 +935,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "with participation from Irregular Expressions and angel investors."
+                "quote": "with participation from Irregular Expressions and angel investors.",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "6e72e7ee7e57dc37aaeb6a438957fcc09f3bd7116b198803924ad40df503e334"
               }
             ],
             "entity_id": null
@@ -840,7 +948,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "with participation from Irregular Expressions and angel investors."
+                "quote": "with participation from Irregular Expressions and angel investors.",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "6e72e7ee7e57dc37aaeb6a438957fcc09f3bd7116b198803924ad40df503e334"
               }
             ],
             "entity_id": null
@@ -849,11 +959,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7dcc5e58c6026e99",
-            "quote": "today announced $3 million in pre-seed funding"
+            "quote": "today announced $3 million in pre-seed funding",
+            "source_content_hash": "776c62cfdeacb511",
+            "quote_hash": "f68a8288c90e242f2b273e3f2218a0daac7b87844c1d52b708bb0f29e032f92c"
           },
           {
             "source_id": "FISRC-a45c9fe284c1fa5d",
-            "quote": "has successfully raised $3 million in a pre-seed funding round."
+            "quote": "has successfully raised $3 million in a pre-seed funding round.",
+            "source_content_hash": "47358ca10899ef1d",
+            "quote_hash": "a35631546ba28e271858040c763c6fef858fbf2ac3d36772434164357fe518ba"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-9775b60c38285615",
+            "round_original": "Pre-Seed",
+            "amount": "$3 million",
+            "announced_at": "2026-05-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "today announced $3 million in pre-seed funding",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "f68a8288c90e242f2b273e3f2218a0daac7b87844c1d52b708bb0f29e032f92c"
+              },
+              {
+                "source_id": "FISRC-a45c9fe284c1fa5d",
+                "quote": "has successfully raised $3 million in a pre-seed funding round.",
+                "source_content_hash": "47358ca10899ef1d",
+                "quote_hash": "a35631546ba28e271858040c763c6fef858fbf2ac3d36772434164357fe518ba"
+              }
+            ]
           }
         ]
       },
@@ -871,15 +1010,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "Rote, a local execution layer that makes agent workflows dependable in production."
+              "quote": "Rote, a local execution layer that makes agent workflows dependable in production.",
+              "source_content_hash": "776c62cfdeacb511",
+              "quote_hash": "c4d69a42be063e298abd7a5a27e98fc4032dabb0fe79636db138e6726db479cd"
             },
             {
               "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "Rote helps teams: Make AI work the same way every time — no more surprises when a model, APIs or system updates Plug into the tools you already use — without expensive engineering work Cut AI costs significantly — by reusing proven workflows instead of paying for the AI to figure them out from scratch each time See exactly what's happening — what ran, when, and what it cost"
+              "quote": "Rote helps teams: Make AI work the same way every time — no more surprises when a model, APIs or system updates Plug into the tools you already use — without expensive engineering work Cut AI costs significantly — by reusing proven workflows instead of paying for the AI to figure them out from scratch each time See exactly what's happening — what ran, when, and what it cost",
+              "source_content_hash": "776c62cfdeacb511",
+              "quote_hash": "4a1dae5552c987fc249a6db581dfdd6084ffc615144769f00d07aafaa6c18a31"
             },
             {
               "source_id": "FISRC-da9a7494d6dd530b",
-              "quote": "rote crystallizes the run that worked into a deterministic flow — same result, ~98% fewer tokens on replay."
+              "quote": "rote crystallizes the run that worked into a deterministic flow — same result, ~98% fewer tokens on replay.",
+              "source_content_hash": "60132abbd5ae83bd",
+              "quote_hash": "b2ad701fa801eb815ba8c85f5fd861a9f521f578ab42269ec9926a9c37845b96"
             }
           ],
           "entity_id": null
@@ -895,7 +1040,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-da9a7494d6dd530b",
-              "quote": "same result, ~98% fewer tokens on replay."
+              "quote": "same result, ~98% fewer tokens on replay.",
+              "source_content_hash": "60132abbd5ae83bd",
+              "quote_hash": "902bba68e70af832a10d9c41d2b776923085d578e81f1949f8eec55580dbf281"
             }
           ]
         }
@@ -907,7 +1054,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "AI workflows today are like sandcastles. They look impressive when you build them, then wash away the moment anything changes"
+              "quote": "AI workflows today are like sandcastles. They look impressive when you build them, then wash away the moment anything changes",
+              "source_content_hash": "776c62cfdeacb511",
+              "quote_hash": "78ba68f5290af64f65ad16e4530b1cffe53a1176a6ef97002b5b95fc566d475b"
             }
           ]
         },
@@ -917,7 +1066,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "Companies are paying their best people to rebuild the same things again and again. Rote captures what worked the first time and locks it in, so teams can move forward instead of starting over."
+              "quote": "Companies are paying their best people to rebuild the same things again and again. Rote captures what worked the first time and locks it in, so teams can move forward instead of starting over.",
+              "source_content_hash": "776c62cfdeacb511",
+              "quote_hash": "84d33b7b592a11e391f9680978add5eae025b60c44be7b76579779bc66769f02"
             }
           ]
         },
@@ -927,7 +1078,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "The industry is quickly realizing that building capable AI agents is only part of the challenge, operating them reliably at scale is the harder problem"
+              "quote": "The industry is quickly realizing that building capable AI agents is only part of the challenge, operating them reliably at scale is the harder problem",
+              "source_content_hash": "776c62cfdeacb511",
+              "quote_hash": "7fee0b5e22fc6dc8e5097c505867d0b8c456441bbbeadc8944abbbfd1398958d"
             }
           ]
         },
@@ -937,7 +1090,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "Today's AI agents are impressive in the demo and unreliable in production"
+              "quote": "Today's AI agents are impressive in the demo and unreliable in production",
+              "source_content_hash": "776c62cfdeacb511",
+              "quote_hash": "137c47a73c3f0ac969aa40f2a3afc9305e6b4ee5cbd0c794d6db4bc75da4d470"
             }
           ]
         },
@@ -947,7 +1102,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "Every serious team running agents is hitting the same wall: reliability, cost, and reproducibility"
+              "quote": "Every serious team running agents is hitting the same wall: reliability, cost, and reproducibility",
+              "source_content_hash": "776c62cfdeacb511",
+              "quote_hash": "8413153e56ff7286910544a57b4b3a42999f863a76ceb3652d37506c6ccd5311"
             }
           ]
         }
@@ -963,7 +1120,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "Modiqo is building a critical foundational AI infrastructure layer that enables teams to deploy AI workflows reliably at a fraction of the token cost."
+                "quote": "Modiqo is building a critical foundational AI infrastructure layer that enables teams to deploy AI workflows reliably at a fraction of the token cost.",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "1ebdf6cbe93f34a5ffce60fc704124b9dbad5026c58208b97021243c86918a0e"
               }
             ]
           },
@@ -976,7 +1135,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "Modiqo's Rote captures what worked the first time and turns it into deterministic code — cutting token usage, reserving inference for the parts that genuinely need it, and reining in the context bloat plaguing today's agent stacks."
+                "quote": "Modiqo's Rote captures what worked the first time and turns it into deterministic code — cutting token usage, reserving inference for the parts that genuinely need it, and reining in the context bloat plaguing today's agent stacks.",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "f0abe6c4a48fa8b6b94d73e02cc20615a275e303b09ac1c394ffac63553059bb"
               }
             ]
           },
@@ -989,7 +1150,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcc5e58c6026e99",
-                "quote": "Modiqo is the first team I've seen attack all three at the execution layer rather than the prompt layer."
+                "quote": "Modiqo is the first team I've seen attack all three at the execution layer rather than the prompt layer.",
+                "source_content_hash": "776c62cfdeacb511",
+                "quote_hash": "b741fdd39aa8c521e02d28407919cd4ac259a7f9478e5e8d91c2905b9c055847"
               }
             ]
           }
@@ -1005,7 +1168,20 @@
           "所有性能数据（如 token 降低 98%）均来自公司单方面宣称，缺乏第三方基准测试或客户生产环境验证，实际效果可能因场景而异。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI 基础设施 / 智能体执行层"
+        "sector": "AI 基础设施 / 智能体执行层",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 智能体从实验走向生产过程中必然出现的可靠性断层和成本失控问题。Modiqo 在 Pre-Seed 阶段获得 300 万美元融资，其已验证信号包括：明确的产品形态 Rote 已发布，宣称可将重放时的 token 消耗降低约 98%，并获得了 Heavybit、Seligman Ventures 等专业基础设施投资机构的联合领投。投资逻辑建立在“执行层”而非“提示层”的差异化路径上，但当前所有证据均来自公司公告和投资方引述，尚无独立客户数量、收入数据或第三方生产环境验证，产品仍处于早期市场导入阶段。",
+          "evidence_signals": [
+            "产品 Rote 已正式发布，定位为本地执行层",
+            "宣称可将 AI 工作流重放的 token 消耗降低约 98%",
+            "获得 Heavybit 和 Seligman Ventures 联合领投，Irregular Expressions 参投",
+            "投资方明确表达了对执行层而非提示层路径的认可"
+          ],
+          "risks": [
+            "所有性能数据（如 token 降低 98%）均来自公司单方面宣称，缺乏第三方基准测试或客户生产环境验证，实际效果可能因场景而异。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1013,86 +1189,42 @@
           "target_kind": "product",
           "research_name": "Rote",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "Rote, a local execution layer that makes agent workflows dependable in production."
-            },
-            {
-              "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "Rote helps teams: Make AI work the same way every time — no more surprises when a model, APIs or system updates Plug into the tools you already use — without expensive engineering work Cut AI costs significantly — by reusing proven workflows instead of paying for the AI to figure them out from scratch each time See exactly what's happening — what ran, when, and what it cost"
-            },
-            {
-              "source_id": "FISRC-da9a7494d6dd530b",
-              "quote": "rote crystallizes the run that worked into a deterministic flow — same result, ~98% fewer tokens on replay."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Chetan Conikee",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "said Chetan Conikee, Founder and CEO of Modiqo."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Heavybit",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "The round was co-led by Heavybit and Seligman Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Seligman Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "The round was co-led by Heavybit and Seligman Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Irregular Expressions",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "with participation from Irregular Expressions and angel investors."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "天使投资人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcc5e58c6026e99",
-              "quote": "with participation from Irregular Expressions and angel investors."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1154,10 +1286,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:36:07.928Z"
+      "published_at": "2026-07-26T14:36:07.928Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Rote"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Chetan Conikee"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9775b60c38285615"
+      ],
+      "aggregation": {
+        "key": "EN-aa06a7dba2266341|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

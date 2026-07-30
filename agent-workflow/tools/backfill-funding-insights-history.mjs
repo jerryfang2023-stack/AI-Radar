@@ -232,6 +232,7 @@ async function main() {
     await runNode(assertion, [`--date=${date}`]);
   }, dateConcurrency);
   await runNode(path.join(root, "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"), []);
+  await runNode(assertion, ["--all=true", "--frontstage=true"]);
   const report = reportForSelection(selection);
   const reportFile = path.resolve(args.get("report")
     || path.join(root, "agent-workflow/reports/funding-insight-historical-backfill-current.json"));

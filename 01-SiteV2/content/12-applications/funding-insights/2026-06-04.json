@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-04",
     "generated_at": "2026-07-26T15:09:21.287Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 5,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-06d78a3e69ce2cb4",
       "triggered_by_event_id": "EV-ef7346378fcf9746",
       "as_of_date": "2026-06-04",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-73f9532db4be5cd2",
-                "quote": "Elon Musk ’s rocket, satellite and artificial intelligence company"
+                "quote": "Elon Musk ’s rocket, satellite and artificial intelligence company",
+                "source_content_hash": "1a3b15219c6f0954",
+                "quote_hash": "c4722d71e32787b746ef763c4c00d7ccb212d5581f7a674ab031bbf239cba551"
               }
             ],
             "entity_id": null
@@ -49,11 +52,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-73f9532db4be5cd2",
-            "quote": "SpaceX is seeking to raise $75 billion in an initial public offering that would be the biggest of all time, as Elon Musk ’s rocket, satellite and artificial intelligence company targets a historic debut"
+            "quote": "SpaceX is seeking to raise $75 billion in an initial public offering that would be the biggest of all time, as Elon Musk ’s rocket, satellite and artificial intelligence company targets a historic debut",
+            "source_content_hash": "1a3b15219c6f0954",
+            "quote_hash": "6c2c920e0a6782c8cbfac24397e4d4ed5bd2531627146c7a6f92cd97d64752de"
           },
           {
             "source_id": "FISRC-73f9532db4be5cd2",
-            "quote": "The Starbase, Texas-based company"
+            "quote": "The Starbase, Texas-based company",
+            "source_content_hash": "1a3b15219c6f0954",
+            "quote_hash": "bdc2b7d60cd3025e33b7e1afd505634df52c76b0edf73ba5f3e047bf990963ce"
           }
         ]
       },
@@ -69,11 +76,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70b91157a7013cad",
-                "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO."
+                "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO.",
+                "source_content_hash": "a23bc17d1a408325",
+                "quote_hash": "5144d6cd354049217c8415ea27737536becf697c38df3c3583c4ec8354ab8782"
               },
               {
                 "source_id": "FISRC-9adefaf867df19d6",
-                "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO."
+                "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO.",
+                "source_content_hash": "3549f091090ec02b",
+                "quote_hash": "e9e6aa400ba72e89e811139da45cef3b45fe9cfcde4b3551824cb7abba145c2d"
               }
             ],
             "entity_id": null
@@ -84,129 +95,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f1d87a2eb46200f",
-                "quote": "BlackRock alone sought at least $5 billion worth of shares"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ron Baron",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Baron first invested in 2017 through employee tender offers when the company was valued at less than $22 billion and has since participated in 27 funding rounds."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ark Invest",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Fidelity Investments",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments."
-              },
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "The Boston-based firm got in early through former portfolio manager Gavin Baker, who began buying shares in 2015 when SpaceX was valued at just about $10 billion."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Founders Fund",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz"
-              },
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Venture firm Founders Fund began backing SpaceX in 2008"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Sequoia Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Andreessen Horowitz",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "D1 Capital Partners",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Coatue Management",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management"
-              },
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ontario Teachers' Pension Plan",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "The Ontario Teachers' Pension Plan invested more than $200 million in SpaceX in 2019"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Washington University in St. Louis",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0349532f469a6b45",
-                "quote": "Washington University in St. Louis invested roughly $50 million in SpaceX nearly a decade ago"
+                "quote": "BlackRock alone sought at least $5 billion worth of shares",
+                "source_content_hash": "c2f564ef5912c700",
+                "quote_hash": "1e683b9cd9aa6249a09e092562352ef0ee31bb9446a6afa1bacc42629354c23c"
               }
             ],
             "entity_id": null
@@ -215,7 +106,237 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-73f9532db4be5cd2",
-            "quote": "SpaceX is seeking to raise $75 billion in an initial public offering"
+            "quote": "SpaceX is seeking to raise $75 billion in an initial public offering",
+            "source_content_hash": "1a3b15219c6f0954",
+            "quote_hash": "c8a0ba719b9cc6daec5f9ca20727de20ce7d6d48bbedd37f60f32645ac2ff536"
+          }
+        ],
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "other_round_investors": [
+          {
+            "name": "Ron Baron",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Baron first invested in 2017 through employee tender offers when the company was valued at less than $22 billion and has since participated in 27 funding rounds.",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "b2baf2217396ecf02faf78334f0bf57189741df94fef0c822b3bf0ec8050a848"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Ark Invest",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Fidelity Investments",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments.",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "0293bf7a393cd5e8cd97d6f38e0c99db6d6b86f016c17c412611ac520ad6f5cb"
+              },
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "The Boston-based firm got in early through former portfolio manager Gavin Baker, who began buying shares in 2015 when SpaceX was valued at just about $10 billion.",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "ec94da6a4085af4dc8daed3ef58d93ab2289d4a2ed491a49ebba5c366006263b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Founders Fund",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "a13d368b080d768be47d6b15c3e178c28c6a312be3a864f12244b99a6e930b69"
+              },
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Venture firm Founders Fund began backing SpaceX in 2008",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "8a108d0302fbc1903a6aa3ef37bc09cc1c07461952569afa5964dee59e35881d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "a13d368b080d768be47d6b15c3e178c28c6a312be3a864f12244b99a6e930b69"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "a13d368b080d768be47d6b15c3e178c28c6a312be3a864f12244b99a6e930b69"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "D1 Capital Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Coatue Management",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+              },
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds.",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "5e8e04111f29d035d750044b9a6c77de787fbee92b8811dbab8aad251bbfb103"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Ontario Teachers' Pension Plan",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "The Ontario Teachers' Pension Plan invested more than $200 million in SpaceX in 2019",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "7ec1058b271819faee02121a73dc61d20e668e1d2a50aa327b32629183a1558d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Washington University in St. Louis",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0349532f469a6b45",
+                "quote": "Washington University in St. Louis invested roughly $50 million in SpaceX nearly a decade ago",
+                "source_content_hash": "e4b5710f29e81069",
+                "quote_hash": "57b540ee06fd3752db48b31611a594f521dd0d82460452fd232f0ef80242bf08"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-ef7346378fcf9746",
+            "round_original": "IPO",
+            "amount": "$75 billion",
+            "announced_at": "2026-06-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-73f9532db4be5cd2",
+                "quote": "SpaceX is seeking to raise $75 billion in an initial public offering",
+                "source_content_hash": "1a3b15219c6f0954",
+                "quote_hash": "c8a0ba719b9cc6daec5f9ca20727de20ce7d6d48bbedd37f60f32645ac2ff536"
+              }
+            ]
           }
         ]
       },
@@ -231,11 +352,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Falcon family operations. 165 launches in 2025"
+              "quote": "Falcon family operations. 165 launches in 2025",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "d41ca4a11ead9831234e57defc2b24f8e2f5243b8858ce568ed47785ee0f2ed7"
             },
             {
               "source_id": "FISRC-1f1d87a2eb46200f",
-              "quote": "Partial reusability has cut the cost per ton to orbit by roughly 85% versus the historical $18,500 per kilogram baseline, and Falcon 9 conducted 165 launches in 2025"
+              "quote": "Partial reusability has cut the cost per ton to orbit by roughly 85% versus the historical $18,500 per kilogram baseline, and Falcon 9 conducted 165 launches in 2025",
+              "source_content_hash": "c2f564ef5912c700",
+              "quote_hash": "2f18f2c584610a470d2eea087b43c23bb80198e64ad82ae53cfd5df340d477e7"
             }
           ],
           "entity_id": null
@@ -251,11 +376,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "10 million Starlink subscribers as of February 2026"
+              "quote": "10 million Starlink subscribers as of February 2026",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "ab6d100f97ee7f051bbb4be4b8d339078956c21136addc09940e4636923b1076"
             },
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Quilty Space estimates 2025 Starlink revenue at $11.8 billion"
+              "quote": "Quilty Space estimates 2025 Starlink revenue at $11.8 billion",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "ea956166e2371f170c1f644fd88ef72366c684eb61c284694d165004bbbfd1c4"
             }
           ],
           "entity_id": null
@@ -271,11 +400,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70b91157a7013cad",
-              "quote": "Starship is designed to haul 100 to 150 metric tons of payload to low Earth orbit versus 17.5 metrics tons for the Falcon 9"
+              "quote": "Starship is designed to haul 100 to 150 metric tons of payload to low Earth orbit versus 17.5 metrics tons for the Falcon 9",
+              "source_content_hash": "a23bc17d1a408325",
+              "quote_hash": "2d80f744a40bab1252bc845cf83065b19a84c8bcccf7962ea4fa4340f7f7c29e"
             },
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Through IFT-11 (October 13, 2025), Starship has completed 11 integrated flight tests"
+              "quote": "Through IFT-11 (October 13, 2025), Starship has completed 11 integrated flight tests",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "c246a71f26b1a103846b8d3b606e7aa74958fb248f1ad299e4a22a4df9ab7116"
             }
           ],
           "entity_id": null
@@ -290,7 +423,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Starshield + National Security (~$3 billion 2025 revenue, estimated)"
+              "quote": "Starshield + National Security (~$3 billion 2025 revenue, estimated)",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "68045757feac4e64c8099933331ddde6de7954bffae6e66d5c190a95fedb9292"
             }
           ],
           "entity_id": null
@@ -308,9 +443,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Amazon Leo, with 241 production satellites in orbit as of April 2026 and a $10 billion investment, is building toward beta launch in 2026–2027."
+              "quote": "Amazon Leo, with 241 production satellites in orbit as of April 2026 and a $10 billion investment, is building toward beta launch in 2026–2027.",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "d2027dabbe952e531d9192a6ad3cf0b48609959e7c8e69fe2bc55b8c76cba602"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "United Launch Alliance (ULA)",
@@ -322,9 +460,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "SpaceX has won 100 percent of Lane 1 task orders awarded through May 2026 — approximately $1.55 billion across 17 missions — while ULA and Blue Origin have won standing eligibility but zero task orders."
+              "quote": "SpaceX has won 100 percent of Lane 1 task orders awarded through May 2026 — approximately $1.55 billion across 17 missions — while ULA and Blue Origin have won standing eligibility but zero task orders.",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "43479a808812eb8fe9247c63a500b44a5421b1646f8c17c8670bc7757370d8dc"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Blue Origin",
@@ -336,9 +477,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "New Glenn ( Blue Origin ) has flown twice; Neutron (Rocket Lab) slipped to 2026. None of these meaningfully threaten Falcon's near-term commercial share."
+              "quote": "New Glenn ( Blue Origin ) has flown twice; Neutron (Rocket Lab) slipped to 2026. None of these meaningfully threaten Falcon's near-term commercial share.",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "fa4aa141c9bd3ca9d92d53cd90226763616aab9e121c6abe3bc148838b598c91"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -349,7 +493,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-73f9532db4be5cd2",
-              "quote": "SpaceX would have a market value of almost $1.77 trillion based on the outstanding shares in the filing."
+              "quote": "SpaceX would have a market value of almost $1.77 trillion based on the outstanding shares in the filing.",
+              "source_content_hash": "1a3b15219c6f0954",
+              "quote_hash": "0afeaf9402ab0bc3efccb31de48941bd5a1cd55c2ea68b4397f70226d8451f47"
             }
           ]
         },
@@ -360,7 +506,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "an estimated $15.5–16 billion in 2025 revenue"
+              "quote": "an estimated $15.5–16 billion in 2025 revenue",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "4d71d1567ccf5ad9214883287ca4da06ea9bdb49acf519a601297065344b746a"
             }
           ]
         },
@@ -371,7 +519,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "approximately $8 billion in 2025 operating profit"
+              "quote": "approximately $8 billion in 2025 operating profit",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "5105b9592af1a9d180fb0e0a2f46c068884814d02557824d0eda275b973d8037"
             }
           ]
         },
@@ -382,7 +532,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Quilty Space estimates 2025 Starlink revenue at $11.8 billion"
+              "quote": "Quilty Space estimates 2025 Starlink revenue at $11.8 billion",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "ea956166e2371f170c1f644fd88ef72366c684eb61c284694d165004bbbfd1c4"
             }
           ]
         },
@@ -393,7 +545,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "10 million Starlink subscribers as of February 2026"
+              "quote": "10 million Starlink subscribers as of February 2026",
+              "source_content_hash": "c4c41c9acd491380",
+              "quote_hash": "ab6d100f97ee7f051bbb4be4b8d339078956c21136addc09940e4636923b1076"
             }
           ]
         }
@@ -405,7 +559,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0349532f469a6b45",
-              "quote": "We think that SpaceX will become the largest, most profitable company on the planet"
+              "quote": "We think that SpaceX will become the largest, most profitable company on the planet",
+              "source_content_hash": "e4b5710f29e81069",
+              "quote_hash": "0d00de2b50a19b6bd96abe57643785d873ed7dd314b3e80b77d83736d3ab5caf"
             }
           ]
         },
@@ -415,7 +571,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Through Starship, Starlink and the acquisition of xAI, we believe SpaceX is building vertically integrated AI infrastructure for a much larger space economy"
+              "quote": "Through Starship, Starlink and the acquisition of xAI, we believe SpaceX is building vertically integrated AI infrastructure for a much larger space economy",
+              "source_content_hash": "e4b5710f29e81069",
+              "quote_hash": "03160d0b1d086c0ffc116f5b8f4d55672666ac146ef934b1a6de1fb9e97b6d62"
             }
           ]
         }
@@ -436,7 +594,23 @@
           "政府合同集中度极高，政治关系变化可能使数十亿美元的NSSL、HLS和星盾合同面临审查或取消风险。"
         ],
         "related_direction_id": "",
-        "sector": "航空航天与国防、卫星通信、人工智能基础设施"
+        "sector": "航空航天与国防、卫星通信、人工智能基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是星链能否维持高利润率并实现用户增长，以及星舰能否在2027-2028年实现商业化运营。当前约1.8万亿美元的IPO估值基于星链2025年118亿美元收入和约70%的EBITDA利润率，以及发射服务的垄断地位。但这一估值对应约140倍的市销率，极度依赖未来增长预期的兑现。已验证的信号包括：星链在2025年实现53%的收入增长和1000万用户，猎鹰9号在2025年完成165次发射并占据全球轨道活动的一半以上，以及SpaceX在NSSL Phase 3 Lane 1任务中赢得100%订单。",
+          "evidence_signals": [
+            "星链2025年收入118亿美元，同比增长约53%",
+            "星链用户数在2026年2月达到1000万",
+            "猎鹰9号在2025年完成165次发射，占全球轨道活动一半以上",
+            "SpaceX赢得NSSL Phase 3 Lane 1全部17个任务订单，价值约15.5亿美元",
+            "2025年运营利润约80亿美元"
+          ],
+          "risks": [
+            "星链的高利润率面临亚马逊Project Kuiper等竞争对手进入市场后带来的ARPU压缩风险，若住宅ARPU从85美元降至65美元，星链估值可能缩水200-400亿美元。",
+            "星舰尚未执行商业任务，也未验证轨道燃料加注这一关键能力，其商业化时间表存在延迟风险。",
+            "政府合同集中度极高，政治关系变化可能使数十亿美元的NSSL、HLS和星盾合同面临审查或取消风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -444,288 +618,140 @@
           "target_kind": "product",
           "research_name": "Falcon 9",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Falcon family operations. 165 launches in 2025"
-            },
-            {
-              "source_id": "FISRC-1f1d87a2eb46200f",
-              "quote": "Partial reusability has cut the cost per ton to orbit by roughly 85% versus the historical $18,500 per kilogram baseline, and Falcon 9 conducted 165 launches in 2025"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Starlink",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "10 million Starlink subscribers as of February 2026"
-            },
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Quilty Space estimates 2025 Starlink revenue at $11.8 billion"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Starship",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b91157a7013cad",
-              "quote": "Starship is designed to haul 100 to 150 metric tons of payload to low Earth orbit versus 17.5 metrics tons for the Falcon 9"
-            },
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Through IFT-11 (October 13, 2025), Starship has completed 11 integrated flight tests"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Starshield",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Starshield + National Security (~$3 billion 2025 revenue, estimated)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Elon Musk",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-73f9532db4be5cd2",
-              "quote": "Elon Musk ’s rocket, satellite and artificial intelligence company"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Baron Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b91157a7013cad",
-              "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO."
-            },
-            {
-              "source_id": "FISRC-9adefaf867df19d6",
-              "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BlackRock",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f1d87a2eb46200f",
-              "quote": "BlackRock alone sought at least $5 billion worth of shares"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ron Baron",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Baron first invested in 2017 through employee tender offers when the company was valued at less than $22 billion and has since participated in 27 funding rounds."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ark Invest",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Fidelity Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Among the biggest beneficiaries are veteran stock picker Ron Baron, Cathie Wood's Ark Invest and mutual fund giant Fidelity Investments."
-            },
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "The Boston-based firm got in early through former portfolio manager Gavin Baker, who began buying shares in 2015 when SpaceX was valued at just about $10 billion."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz"
-            },
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Venture firm Founders Fund began backing SpaceX in 2008"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Sequoia Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "D1 Capital Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Coatue Management",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management"
-            },
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ontario Teachers' Pension Plan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "The Ontario Teachers' Pension Plan invested more than $200 million in SpaceX in 2019"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Washington University in St. Louis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0349532f469a6b45",
-              "quote": "Washington University in St. Louis invested roughly $50 million in SpaceX nearly a decade ago"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Amazon (Project Kuiper)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "Amazon Leo, with 241 production satellites in orbit as of April 2026 and a $10 billion investment, is building toward beta launch in 2026–2027."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "United Launch Alliance (ULA)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "SpaceX has won 100 percent of Lane 1 task orders awarded through May 2026 — approximately $1.55 billion across 17 missions — while ULA and Blue Origin have won standing eligibility but zero task orders."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Blue Origin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ef55a8315559eb",
-              "quote": "New Glenn ( Blue Origin ) has flown twice; Neutron (Rocket Lab) slipped to 2026. None of these meaningfully threaten Falcon's near-term commercial share."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -823,13 +849,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:23:52.382Z"
+      "published_at": "2026-07-26T14:23:52.382Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Falcon 9",
+            "Starlink",
+            "Starshield",
+            "Starship"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Elon Musk"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-ef7346378fcf9746"
+      ],
+      "aggregation": {
+        "key": "EN-e78bdebae031095b|ipo",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-1fc454ab2d4f544f",
       "triggered_by_event_id": "EV-fdfd4bf00571bb35",
       "as_of_date": "2026-06-04",
@@ -847,7 +905,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-06ee45f2c6a5108e",
-                "quote": "Rick Caccia, co-founder and CEO of Witness AI"
+                "quote": "Rick Caccia, co-founder and CEO of Witness AI",
+                "source_content_hash": "79c0e4e774716976",
+                "quote_hash": "2cffa60b89a55883b2f20bffb6cd88d37251fbf0534e317ddd69e200a6dd9f24"
               }
             ],
             "entity_id": null
@@ -859,14 +919,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "scaled employee headcount by 5x over the last year"
+              "quote": "scaled employee headcount by 5x over the last year",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "c52ff1e40c8426aa1635f4c7a20711b5bd7c07eb16963c321a189e767688b014"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-06ee45f2c6a5108e",
-            "quote": "Witness AI says it monitors AI usage across enterprises and can detect when employees use unapproved tools, block attacks, and ensure compliance."
+            "quote": "Witness AI says it monitors AI usage across enterprises and can detect when employees use unapproved tools, block attacks, and ensure compliance.",
+            "source_content_hash": "79c0e4e774716976",
+            "quote_hash": "dd88d4269758c8075d4001efa02ee8edefda7b3d4cb3cc37c55a1bf0dae80b4f"
           }
         ]
       },
@@ -882,7 +946,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d51cd72272f38425",
-                "quote": "The round was led by Sound Ventures"
+                "quote": "The round was led by Sound Ventures",
+                "source_content_hash": "78340edbea8604fd",
+                "quote_hash": "2ea82ee3fbfb7e2d07754c259c9eaaff262042adcc5a4e49f9c497c09688f339"
               }
             ],
             "entity_id": null
@@ -893,29 +959,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d51cd72272f38425",
-                "quote": "with participation from leading strategic investors including Fin Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Google Ventures (GV)",
-            "role": "既有投资方（A轮联合领投）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-4849ec2aa0a0f909",
-                "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ballistic Ventures",
-            "role": "既有投资方（A轮联合领投）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-4849ec2aa0a0f909",
-                "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures."
+                "quote": "with participation from leading strategic investors including Fin Capital",
+                "source_content_hash": "78340edbea8604fd",
+                "quote_hash": "d788f57626cfebe34363961abfadac01e11a37ed90ebbddb3589be781679f5e6"
               }
             ],
             "entity_id": null
@@ -924,7 +970,67 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-4849ec2aa0a0f909",
-            "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures."
+            "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures.",
+            "source_content_hash": "430882b8c9d8a2d3",
+            "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
+          }
+        ],
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "other_round_investors": [
+          {
+            "name": "Google Ventures (GV)",
+            "role": "既有投资方（A轮联合领投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4849ec2aa0a0f909",
+                "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures.",
+                "source_content_hash": "430882b8c9d8a2d3",
+                "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_a",
+              "label": "A轮",
+              "original": "既有投资方（A轮联合领投）"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Ballistic Ventures",
+            "role": "既有投资方（A轮联合领投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4849ec2aa0a0f909",
+                "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures.",
+                "source_content_hash": "430882b8c9d8a2d3",
+                "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_a",
+              "label": "A轮",
+              "original": "既有投资方（A轮联合领投）"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-fdfd4bf00571bb35",
+            "round_original": "战略融资",
+            "amount": "$58 million",
+            "announced_at": "2026-01-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4849ec2aa0a0f909",
+                "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures.",
+                "source_content_hash": "430882b8c9d8a2d3",
+                "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
+              }
+            ]
           }
         ]
       },
@@ -944,15 +1050,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Witness AI says it monitors AI usage across enterprises and can detect when employees use unapproved tools, block attacks, and ensure compliance."
+              "quote": "Witness AI says it monitors AI usage across enterprises and can detect when employees use unapproved tools, block attacks, and ensure compliance.",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "dd88d4269758c8075d4001efa02ee8edefda7b3d4cb3cc37c55a1bf0dae80b4f"
             },
             {
               "source_id": "FISRC-4849ec2aa0a0f909",
-              "quote": "The first is securing AI agent activity similarly to LLM activity, monitoring which agents are active, what MCP servers and tools they are accessing, and what data they are sharing."
+              "quote": "The first is securing AI agent activity similarly to LLM activity, monitoring which agents are active, what MCP servers and tools they are accessing, and what data they are sharing.",
+              "source_content_hash": "430882b8c9d8a2d3",
+              "quote_hash": "ad59162c83a4ef1c54c35b55850636976c4dfe26c10c85e3883b27e3ec2d8284"
             },
             {
               "source_id": "FISRC-4849ec2aa0a0f909",
-              "quote": "The platform uniquely provides policy control based on behavioral intent, understanding the meaning and intention of any prompt."
+              "quote": "The platform uniquely provides policy control based on behavioral intent, understanding the meaning and intention of any prompt.",
+              "source_content_hash": "430882b8c9d8a2d3",
+              "quote_hash": "722d6915c1ad1e96924c4e3f878d7c47f9e407a115f45ed6d3a51c92039ef85c"
             }
           ],
           "entity_id": null
@@ -970,9 +1082,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves."
+              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves.",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "9b5b67423c9dac510f4ae79a11cc3f5c94f5511b2cd51a4a008af9b68ac146a6"
             }
-          ]
+          ],
+          "entity_id": "EN-7d1507284a5757ca"
         },
         {
           "name": "Google",
@@ -984,9 +1099,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves."
+              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves.",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "9b5b67423c9dac510f4ae79a11cc3f5c94f5511b2cd51a4a008af9b68ac146a6"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "Salesforce",
@@ -998,9 +1116,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves."
+              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves.",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "9b5b67423c9dac510f4ae79a11cc3f5c94f5511b2cd51a4a008af9b68ac146a6"
             }
-          ]
+          ],
+          "entity_id": "EN-3ccbd9105a45d8fc"
         },
         {
           "name": "OpenAI",
@@ -1012,13 +1133,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "We purposely picked a part of the problem where OpenAI couldn’t easily subsume you"
+              "quote": "We purposely picked a part of the problem where OpenAI couldn’t easily subsume you",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "3c5d20123d71ee79d2a9faf7cdb6c016299898d69adf15368cea9a6bffbd37a0"
             },
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "So it means we end up competing more with the legacy security companies than the model guys."
+              "quote": "So it means we end up competing more with the legacy security companies than the model guys.",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "27cb54cf51d489d0430303d597303d3effe6821d934c65eee090cc6600630519"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         }
       ],
       "metrics": [
@@ -1029,7 +1155,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "over 500% growth in ARR"
+              "quote": "over 500% growth in ARR",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "87545a56e50afcad3fb81f48ba6410dbd920a075932fe13453f4826fb8d3b487"
             }
           ]
         },
@@ -1040,7 +1168,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "scaled employee headcount by 5x over the last year"
+              "quote": "scaled employee headcount by 5x over the last year",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "c52ff1e40c8426aa1635f4c7a20711b5bd7c07eb16963c321a189e767688b014"
             }
           ]
         }
@@ -1052,7 +1182,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "People are building these AI agents that take on the authorizations and capabilities of the people that manage them, and you want to make sure that these agents aren’t going rogue, aren’t deleting files, aren’t doing something wrong"
+              "quote": "People are building these AI agents that take on the authorizations and capabilities of the people that manage them, and you want to make sure that these agents aren’t going rogue, aren’t deleting files, aren’t doing something wrong",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "5f1b0520ac34d43494246fd81b00d77d3eee246886d7a66f2dc6b522128101d0"
             }
           ]
         },
@@ -1062,7 +1194,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "We purposely picked a part of the problem where OpenAI couldn’t easily subsume you"
+              "quote": "We purposely picked a part of the problem where OpenAI couldn’t easily subsume you",
+              "source_content_hash": "79c0e4e774716976",
+              "quote_hash": "3c5d20123d71ee79d2a9faf7cdb6c016299898d69adf15368cea9a6bffbd37a0"
             }
           ]
         }
@@ -1079,7 +1213,19 @@
           "Witness AI 定位为独立平台，但其CEO明确表示不希望被收购，而要与CrowdStrike、Splunk、Okta等曾经的独立安全巨头比肩。在AI安全市场早期，独立厂商面临被云平台（AWS、Google）或模型厂商（OpenAI）通过内置功能挤压的风险，能否在巨头觉醒前建立足够的护城河尚不确定。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI安全与治理"
+        "sector": "AI安全与治理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：企业AI采用从“实验”转向“规模化部署”时，安全与治理将从可选项变为必选项，催生一个独立于模型厂商和传统安全厂商的巨大市场。本轮融资的估值支撑来自已验证的业务信号：ARR年增长超500%、员工规模增长5倍、以及已签约全球领先的金融服务、公用事业、航空、汽车、零售和电信等行业的大型企业客户。这些信号表明，企业对“影子AI”和智能体失控的担忧正在转化为实际采购需求。然而，目前可验证的证据仅限于ARR增长率和客户行业分布，缺乏具体的收入规模、客户数量、留存率等更精细的指标，因此无法判断其增长的可持续性和市场渗透深度。",
+          "evidence_signals": [
+            "ARR年增长超过500%",
+            "员工人数在过去一年增长5倍",
+            "已部署在全球领先的金融服务、公用事业、航空、汽车制造、零售和电信企业"
+          ],
+          "risks": [
+            "Witness AI 定位为独立平台，但其CEO明确表示不希望被收购，而要与CrowdStrike、Splunk、Okta等曾经的独立安全巨头比肩。在AI安全市场早期，独立厂商面临被云平台（AWS、Google）或模型厂商（OpenAI）通过内置功能挤压的风险，能否在巨头觉醒前建立足够的护城河尚不确定。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1087,142 +1233,70 @@
           "target_kind": "product",
           "research_name": "WitnessAI AI安全与治理平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Witness AI says it monitors AI usage across enterprises and can detect when employees use unapproved tools, block attacks, and ensure compliance."
-            },
-            {
-              "source_id": "FISRC-4849ec2aa0a0f909",
-              "quote": "The first is securing AI agent activity similarly to LLM activity, monitoring which agents are active, what MCP servers and tools they are accessing, and what data they are sharing."
-            },
-            {
-              "source_id": "FISRC-4849ec2aa0a0f909",
-              "quote": "The platform uniquely provides policy control based on behavioral intent, understanding the meaning and intention of any prompt."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rick Caccia",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Rick Caccia, co-founder and CEO of Witness AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sound Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d51cd72272f38425",
-              "quote": "The round was led by Sound Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fin Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d51cd72272f38425",
-              "quote": "with participation from leading strategic investors including Fin Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Google Ventures (GV)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4849ec2aa0a0f909",
-              "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ballistic Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4849ec2aa0a0f909",
-              "quote": "WitnessAI last raised $27.5 million in a Series A funding round in May 2024, co-led by Google Ventures and Ballistic Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "AWS",
           "canonical_entity_id": "EN-7d1507284a5757ca",
-          "canonical_name": "AWS",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves."
-            }
-          ]
+          "canonical_name": "AWS"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves."
-            }
-          ]
+          "canonical_name": "Google"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Salesforce",
           "canonical_entity_id": "EN-3ccbd9105a45d8fc",
-          "canonical_name": "Salesforce",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "Caccia noted that Witness AI lives at the infrastructure layer, monitoring interactions between users and AI models, rather than building safety features into the models themselves."
-            }
-          ]
+          "canonical_name": "Salesforce"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "We purposely picked a part of the problem where OpenAI couldn’t easily subsume you"
-            },
-            {
-              "source_id": "FISRC-06ee45f2c6a5108e",
-              "quote": "So it means we end up competing more with the legacy security companies than the model guys."
-            }
-          ]
+          "canonical_name": "OpenAI"
         }
       ],
       "funding_history": [
@@ -1284,13 +1358,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:23:26.916Z"
+      "published_at": "2026-07-26T14:23:26.916Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "WitnessAI AI安全与治理平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Rick Caccia"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-fdfd4bf00571bb35"
+      ],
+      "aggregation": {
+        "key": "EN-8e8cc11d1475231b|strategic",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-439dd52a236a8ca5",
       "triggered_by_event_id": "EV-dbbe3fd637be213f",
       "as_of_date": "2026-06-04",
@@ -1310,11 +1413,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-cb917372e663ab54",
-            "quote": "Google’s parent company had initially intended to sell a first tranche of $40 billion worth of various equity instruments"
+            "quote": "Google’s parent company had initially intended to sell a first tranche of $40 billion worth of various equity instruments",
+            "source_content_hash": "28d1c62df42d580c",
+            "quote_hash": "fd7806569c069a71592d605d6eb84f0f1081edaf930393ad161ec48a64660053"
           },
           {
             "source_id": "FISRC-cb917372e663ab54",
-            "quote": "the money from this stock sale is earmarked for AI. “Part of our multi-year investment strategy to meet the AI opportunity ahead and support the demand we’re seeing from enterprises and consumers,” as Pichai described it."
+            "quote": "the money from this stock sale is earmarked for AI. “Part of our multi-year investment strategy to meet the AI opportunity ahead and support the demand we’re seeing from enterprises and consumers,” as Pichai described it.",
+            "source_content_hash": "28d1c62df42d580c",
+            "quote_hash": "86ddff6cace8990ab0c7e65ff656a5f966a4d69d284806ff3b2a59ad00c5bb85"
           }
         ]
       },
@@ -1330,7 +1437,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-cb917372e663ab54",
-                "quote": "Among the buyers: Berkshire Hathaway, still known for its love of value investing, picked up $10 billion worth."
+                "quote": "Among the buyers: Berkshire Hathaway, still known for its love of value investing, picked up $10 billion worth.",
+                "source_content_hash": "28d1c62df42d580c",
+                "quote_hash": "df21676237e3f182fb11711026514c94c150dbd22e91dd282d7fe142ea733457"
               }
             ],
             "entity_id": null
@@ -1339,11 +1448,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-cb917372e663ab54",
-            "quote": "Alphabet’s record-breaking $85B raise for Google’s AI business"
+            "quote": "Alphabet’s record-breaking $85B raise for Google’s AI business",
+            "source_content_hash": "28d1c62df42d580c",
+            "quote_hash": "84070a4a6482c068242960acc3e056bfc095e40e3fceb31dd84b0fe9c5b47a0a"
           },
           {
             "source_id": "FISRC-cb917372e663ab54",
-            "quote": "Alphabet plans to sell another $40 billion worth next quarter, for $85 billion total."
+            "quote": "Alphabet plans to sell another $40 billion worth next quarter, for $85 billion total.",
+            "source_content_hash": "28d1c62df42d580c",
+            "quote_hash": "c6297b4d4f658e9f7fda14596dd4b723991187053c754898965ba31b14fc9d2f"
+          }
+        ],
+        "round_code": "follow_on",
+        "round_original": "后续发行",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-dbbe3fd637be213f",
+            "round_original": "后续发行",
+            "amount": "850亿美元",
+            "announced_at": "2026-06-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cb917372e663ab54",
+                "quote": "Alphabet’s record-breaking $85B raise for Google’s AI business",
+                "source_content_hash": "28d1c62df42d580c",
+                "quote_hash": "84070a4a6482c068242960acc3e056bfc095e40e3fceb31dd84b0fe9c5b47a0a"
+              },
+              {
+                "source_id": "FISRC-cb917372e663ab54",
+                "quote": "Alphabet plans to sell another $40 billion worth next quarter, for $85 billion total.",
+                "source_content_hash": "28d1c62df42d580c",
+                "quote_hash": "c6297b4d4f658e9f7fda14596dd4b723991187053c754898965ba31b14fc9d2f"
+              }
+            ]
           }
         ]
       },
@@ -1356,7 +1494,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cb917372e663ab54",
-              "quote": "the money from this stock sale is earmarked for AI. “Part of our multi-year investment strategy to meet the AI opportunity ahead and support the demand we’re seeing from enterprises and consumers,” as Pichai described it."
+              "quote": "the money from this stock sale is earmarked for AI. “Part of our multi-year investment strategy to meet the AI opportunity ahead and support the demand we’re seeing from enterprises and consumers,” as Pichai described it.",
+              "source_content_hash": "28d1c62df42d580c",
+              "quote_hash": "86ddff6cace8990ab0c7e65ff656a5f966a4d69d284806ff3b2a59ad00c5bb85"
             }
           ],
           "entity_id": null
@@ -1369,7 +1509,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0fc89ab2e4a63b3c",
-              "quote": "Google is investing $40 billion in Texas through 2027 in cloud and AI infrastructure."
+              "quote": "Google is investing $40 billion in Texas through 2027 in cloud and AI infrastructure.",
+              "source_content_hash": "2d120d3b71a98acc",
+              "quote_hash": "3b2e54bcb4416c74de67ba4b0b47053d415a56bd96cd064bdebdd2d458d89574"
             }
           ],
           "entity_id": null
@@ -1385,7 +1527,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cb917372e663ab54",
-              "quote": "$110 billion in revenue (with high profit margins) in Q1 alone, up 22% year-over-year."
+              "quote": "$110 billion in revenue (with high profit margins) in Q1 alone, up 22% year-over-year.",
+              "source_content_hash": "28d1c62df42d580c",
+              "quote_hash": "b2737e92154907cb5a7c68deef5d13bf43cfc92755328b27dd950788928b4224"
             }
           ]
         },
@@ -1396,7 +1540,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cb917372e663ab54",
-              "quote": "up 22% year-over-year."
+              "quote": "up 22% year-over-year.",
+              "source_content_hash": "28d1c62df42d580c",
+              "quote_hash": "82cf38d9217d69a961b339db4d603c74171c402ad9ac57e309b5fda97cdd0901"
             }
           ]
         },
@@ -1407,7 +1553,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cb917372e663ab54",
-              "quote": "he said the company expects to spend between $180 billion and $190 billion on capital expenditures — largely on AI infrastructure and data centers — before the year is out."
+              "quote": "he said the company expects to spend between $180 billion and $190 billion on capital expenditures — largely on AI infrastructure and data centers — before the year is out.",
+              "source_content_hash": "28d1c62df42d580c",
+              "quote_hash": "ca79b4419aad1d706e7b3076e474ad1f5b11b6db5f77dd9a1220d7b142ead167"
             }
           ]
         },
@@ -1418,7 +1566,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0fc89ab2e4a63b3c",
-              "quote": "Google is investing $40 billion in Texas through 2027 in cloud and AI infrastructure."
+              "quote": "Google is investing $40 billion in Texas through 2027 in cloud and AI infrastructure.",
+              "source_content_hash": "2d120d3b71a98acc",
+              "quote_hash": "3b2e54bcb4416c74de67ba4b0b47053d415a56bd96cd064bdebdd2d458d89574"
             }
           ]
         }
@@ -1430,7 +1580,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cb917372e663ab54",
-              "quote": "Part of our multi-year investment strategy to meet the AI opportunity ahead and support the demand we’re seeing from enterprises and consumers"
+              "quote": "Part of our multi-year investment strategy to meet the AI opportunity ahead and support the demand we’re seeing from enterprises and consumers",
+              "source_content_hash": "28d1c62df42d580c",
+              "quote_hash": "74c5001f037013c332fd9bd6dad0ba09ae31e3cbf3c17de85f4a6d9ad89fdb10"
             }
           ]
         }
@@ -1448,7 +1600,20 @@
           "未来五年全球承诺的 AI 支出高达近 8 万亿美元，公共市场是否有足够容量长期吸收如此庞大的融资需求尚不确定。"
         ],
         "related_direction_id": "",
-        "sector": "人工智能与云计算基础设施"
+        "sector": "人工智能与云计算基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是公共市场投资者对 AI 基础设施巨额支出的长期承接意愿。本次创纪录的 850 亿美元股票发行严重超额认购，验证了机构投资者（如伯克希尔·哈撒韦）对 Alphabet 健康基本面和 AI 战略的强烈信心。然而，这一判断的证据边界仅限于 Alphabet 自身强劲的营收增长和此次发行成功，并不能直接推断所有 AI 公司都能获得同等市场待遇。",
+          "evidence_signals": [
+            "850 亿美元股票发行超额认购，需求远超最初 400 亿美元计划",
+            "伯克希尔·哈撒韦认购 100 亿美元，显示价值投资者对 Alphabet AI 业务的认可",
+            "Alphabet 第一季度营收 1100 亿美元，同比增长 22%，基本面强劲",
+            "公司计划年度资本支出高达 1800 亿至 1900 亿美元，主要用于 AI 基础设施和数据中心"
+          ],
+          "risks": [
+            "未来五年全球承诺的 AI 支出高达近 8 万亿美元，公共市场是否有足够容量长期吸收如此庞大的融资需求尚不确定。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1456,39 +1621,21 @@
           "target_kind": "product",
           "research_name": "Google AI 业务",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cb917372e663ab54",
-              "quote": "the money from this stock sale is earmarked for AI. “Part of our multi-year investment strategy to meet the AI opportunity ahead and support the demand we’re seeing from enterprises and consumers,” as Pichai described it."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Google Cloud 和 AI 基础设施",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0fc89ab2e4a63b3c",
-              "quote": "Google is investing $40 billion in Texas through 2027 in cloud and AI infrastructure."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Berkshire Hathaway",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cb917372e663ab54",
-              "quote": "Among the buyers: Berkshire Hathaway, still known for its love of value investing, picked up $10 billion worth."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1647,13 +1794,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:22:51.269Z"
+      "published_at": "2026-07-26T14:22:51.269Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Google AI 业务",
+            "Google Cloud 和 AI 基础设施"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-dbbe3fd637be213f"
+      ],
+      "aggregation": {
+        "key": "EN-bbdefa2950f49882|follow_on",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f620e518e71fb8b2",
       "triggered_by_event_id": "EV-736404028b8ad33e",
       "as_of_date": "2026-06-04",
@@ -1671,7 +1846,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a279a9a1c8543f67",
-                "quote": "Byung-Gon Chun, CEO and Co-founder of FriendliAI"
+                "quote": "Byung-Gon Chun, CEO and Co-founder of FriendliAI",
+                "source_content_hash": "6780af8acb880527",
+                "quote_hash": "99e1bdf22cd1cadd31cb40bebf170805b3fbe67b6a952d250c1b861270995c83"
               }
             ],
             "entity_id": null
@@ -1685,12 +1862,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-a279a9a1c8543f67",
-            "quote": "FriendliAI is a GPU-inference platform that lets you deploy, scale, and monitor large language and multimodal models in production"
+            "quote": "FriendliAI is a GPU-inference platform that lets you deploy, scale, and monitor large language and multimodal models in production",
+            "source_content_hash": "6780af8acb880527",
+            "quote_hash": "dcd625a7edcb31ef758ff685ec2e6c5842483ce77442b4e26a021dbfd842aa39"
           }
         ]
       },
       "financing": {
-        "round": "种子扩展轮",
+        "round": "种子轮",
         "amount": "$20 million",
         "total_raised": "$20 million",
         "announced_at": "2025-08-28",
@@ -1701,7 +1880,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a279a9a1c8543f67",
-                "quote": "led by Capstone Partners"
+                "quote": "led by Capstone Partners",
+                "source_content_hash": "6780af8acb880527",
+                "quote_hash": "8f0a78f5f99a05c15b714c3c89b8688b1af97679777c518d6f946db221e5d178"
               }
             ],
             "entity_id": null
@@ -1712,7 +1893,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a279a9a1c8543f67",
-                "quote": "joined by Sierra Ventures"
+                "quote": "joined by Sierra Ventures",
+                "source_content_hash": "6780af8acb880527",
+                "quote_hash": "e28b4d241dcb3013bdf96da218497e0325e8c4b258c736181c53cdc38c6c8c1a"
               }
             ],
             "entity_id": null
@@ -1723,7 +1906,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af74b747b4936196",
-                "quote": "follow-on investment from KB Securities"
+                "quote": "follow-on investment from KB Securities",
+                "source_content_hash": "0571770aee5954df",
+                "quote_hash": "e9343aa741a2b8768a7cc22e8652a814479397d5364d0e9dd96b911f7aa846a8"
               }
             ],
             "entity_id": null
@@ -1732,7 +1917,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-dfd6f436f3ab62cc",
-            "quote": "FriendliAI closed the transaction. The company announced that it has received $20 million in funding led by new investor Capstone Partners Co., Ltd. The transaction included participation from new investors Sierra Ventures Management, LLC, Alumni Ventures Group, LLC, The Korea Development Bank and returning investor KB Investment Co., Ltd."
+            "quote": "FriendliAI closed the transaction. The company announced that it has received $20 million in funding led by new investor Capstone Partners Co., Ltd. The transaction included participation from new investors Sierra Ventures Management, LLC, Alumni Ventures Group, LLC, The Korea Development Bank and returning investor KB Investment Co., Ltd.",
+            "source_content_hash": "c27e1e5bfac64703",
+            "quote_hash": "55e5e95439fea2f6e4d82ff2f92aa6c779831c76b186c9a79de45274cb82b42d"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子扩展轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-736404028b8ad33e",
+            "round_original": "种子扩展轮",
+            "amount": "$20 million",
+            "announced_at": "2025-08-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dfd6f436f3ab62cc",
+                "quote": "FriendliAI closed the transaction. The company announced that it has received $20 million in funding led by new investor Capstone Partners Co., Ltd. The transaction included participation from new investors Sierra Ventures Management, LLC, Alumni Ventures Group, LLC, The Korea Development Bank and returning investor KB Investment Co., Ltd.",
+                "source_content_hash": "c27e1e5bfac64703",
+                "quote_hash": "55e5e95439fea2f6e4d82ff2f92aa6c779831c76b186c9a79de45274cb82b42d"
+              }
+            ]
           }
         ]
       },
@@ -1751,7 +1957,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a279a9a1c8543f67",
-              "quote": "speeds up model inference and reduces GPU costs by up to 90% while preserving model accuracy"
+              "quote": "speeds up model inference and reduces GPU costs by up to 90% while preserving model accuracy",
+              "source_content_hash": "6780af8acb880527",
+              "quote_hash": "583d55f0eafaf7fada8b4ea5e11e46a9e9411d6ade807495910122f526e4f648"
             }
           ],
           "entity_id": null
@@ -1765,9 +1973,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-36ab31f50237086e",
-              "quote": "LG AI Research used Friendli Dedicated Endpoints and Model APIs to take their 32B EXAONE and 236B K-EXAONE models from research to production — cutting deployment time by several weeks and tripling traffic."
+              "quote": "LG AI Research used Friendli Dedicated Endpoints and Model APIs to take their 32B EXAONE and 236B K-EXAONE models from research to production — cutting deployment time by several weeks and tripling traffic.",
+              "source_content_hash": "9ef186c6a0407014",
+              "quote_hash": "11239cdcb5dd7e319245fc9dde02e64bc1f6ddd6680e3d5e1a91ff08b24b53fa"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Scatter Lab",
@@ -1776,13 +1987,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6efd131b10458d1f",
-              "quote": "Scatter Lab scales Zeta to 1 billion monthly interactions with FriendliAI"
+              "quote": "Scatter Lab scales Zeta to 1 billion monthly interactions with FriendliAI",
+              "source_content_hash": "866347c1b0d3f9b1",
+              "quote_hash": "e5b87eddb6acfcad7f129104cf26a3db8e3c0f56d85899936144e71d05c2e0ef"
             },
             {
               "source_id": "FISRC-6efd131b10458d1f",
-              "quote": "Friendli Container has been instrumental in scaling Zeta as it grew across Korea, Japan, and the U.S. While handling more than 1 billion monthly interactions, it gave us the speed, stability, and cost efficiency, and helped us achieve breakeven."
+              "quote": "Friendli Container has been instrumental in scaling Zeta as it grew across Korea, Japan, and the U.S. While handling more than 1 billion monthly interactions, it gave us the speed, stability, and cost efficiency, and helped us achieve breakeven.",
+              "source_content_hash": "866347c1b0d3f9b1",
+              "quote_hash": "4a5ae6fcdaa55368d85ea5d2eeab9e9668bc0eea037b6ee72f23462373c10add"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "SK Telecom",
@@ -1791,9 +2007,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-36ab31f50237086e",
-              "quote": "SK Telecom achieves 5× LLM throughput and 3× cost savings"
+              "quote": "SK Telecom achieves 5× LLM throughput and 3× cost savings",
+              "source_content_hash": "9ef186c6a0407014",
+              "quote_hash": "dea5354b29ccf003c6b9e4b54bdaa20c25b59dd6c6b8877fd088631779d1ade8"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "NextDay AI",
@@ -1802,9 +2021,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-36ab31f50237086e",
-              "quote": "NextDay AI cuts GPU costs by 50% and boosts throughput 2–3×"
+              "quote": "NextDay AI cuts GPU costs by 50% and boosts throughput 2–3×",
+              "source_content_hash": "9ef186c6a0407014",
+              "quote_hash": "c51d948ab1af33740d92c7a46008e74cb136abbf159331263b4a65457b22b64c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1816,7 +2038,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a279a9a1c8543f67",
-              "quote": "reduces GPU costs by up to 90%"
+              "quote": "reduces GPU costs by up to 90%",
+              "source_content_hash": "6780af8acb880527",
+              "quote_hash": "cfe27d3d7a0aac54c45376e129acd39cf91d8b1c792b667195c1b7d9480c338f"
             }
           ]
         },
@@ -1827,7 +2051,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a279a9a1c8543f67",
-              "quote": "With support for over 430,000 models from Hugging Face"
+              "quote": "With support for over 430,000 models from Hugging Face",
+              "source_content_hash": "6780af8acb880527",
+              "quote_hash": "e6817ee16bf17bd62094150e4c8f5084cc3a3d466b542830d2ff529e72d374a8"
             }
           ]
         }
@@ -1845,7 +2071,19 @@
           "AI 推理市场竞争激烈，大型云服务商（如 AWS, Azure, GCP）和新兴初创公司均在提供类似的优化推理服务，FriendliAI 面临被替代或价格战的风险。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI 基础设施 / 推理优化"
+        "sector": "AI 基础设施 / 推理优化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 推理层作为企业从实验走向生产部署的关键瓶颈所蕴含的巨大市场机会。FriendliAI 获得融资的已验证信号包括：其技术能将 GPU 成本降低高达 90% 并实现业界领先的推理速度，已获得 LG AI Research、SK Telecom、Scatter Lab 等标杆客户的规模化采用，以及 Hugging Face 上超过 43 万个模型的一键部署能力。这些信号表明其产品在性能、成本和生态兼容性上具备市场竞争力。然而，当前判断的证据边界在于，来源仅披露了本轮融资额和客户案例，缺乏具体的营收数据、客户总数、续约率等量化商业指标，无法精确评估其市场渗透率和商业模式的可持续性。",
+          "evidence_signals": [
+            "技术性能：平台可将 GPU 成本降低高达 90%，并提供业界最快的 LLM 推理性能。",
+            "客户采用：已获得 LG AI Research、SK Telecom、Scatter Lab、Upstage 等多家知名企业客户，并用于生产环境。",
+            "生态集成：支持从 Hugging Face 一键部署超过 43 万个模型，降低了开发者使用门槛。"
+          ],
+          "risks": [
+            "AI 推理市场竞争激烈，大型云服务商（如 AWS, Azure, GCP）和新兴初创公司均在提供类似的优化推理服务，FriendliAI 面临被替代或价格战的风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1853,121 +2091,63 @@
           "target_kind": "product",
           "research_name": "FriendliAI Inference Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a279a9a1c8543f67",
-              "quote": "speeds up model inference and reduces GPU costs by up to 90% while preserving model accuracy"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Byung-Gon Chun",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a279a9a1c8543f67",
-              "quote": "Byung-Gon Chun, CEO and Co-founder of FriendliAI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Capstone Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a279a9a1c8543f67",
-              "quote": "led by Capstone Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sierra Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a279a9a1c8543f67",
-              "quote": "joined by Sierra Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "KB Securities",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af74b747b4936196",
-              "quote": "follow-on investment from KB Securities"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "LG AI Research",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-36ab31f50237086e",
-              "quote": "LG AI Research used Friendli Dedicated Endpoints and Model APIs to take their 32B EXAONE and 236B K-EXAONE models from research to production — cutting deployment time by several weeks and tripling traffic."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Scatter Lab",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6efd131b10458d1f",
-              "quote": "Scatter Lab scales Zeta to 1 billion monthly interactions with FriendliAI"
-            },
-            {
-              "source_id": "FISRC-6efd131b10458d1f",
-              "quote": "Friendli Container has been instrumental in scaling Zeta as it grew across Korea, Japan, and the U.S. While handling more than 1 billion monthly interactions, it gave us the speed, stability, and cost efficiency, and helped us achieve breakeven."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "SK Telecom",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-36ab31f50237086e",
-              "quote": "SK Telecom achieves 5× LLM throughput and 3× cost savings"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "NextDay AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-36ab31f50237086e",
-              "quote": "NextDay AI cuts GPU costs by 50% and boosts throughput 2–3×"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2053,13 +2233,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:22:32.976Z"
+      "published_at": "2026-07-26T14:22:32.976Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "FriendliAI Inference Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Byung-Gon Chun"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-736404028b8ad33e"
+      ],
+      "aggregation": {
+        "key": "EN-48bebf25e5bd5aca|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-aaf38fcf7063d61c",
       "triggered_by_event_id": "EV-88f4ee8cd57bdf42",
       "as_of_date": "2026-06-04",
@@ -2077,7 +2286,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-46ca8e6bf27dfb82",
-                "quote": "co-founder and Chief Executive Jordan Dearsley"
+                "quote": "co-founder and Chief Executive Jordan Dearsley",
+                "source_content_hash": "5fee028b6dad3dc4",
+                "quote_hash": "2258e81196fb6268accef5e2cc53fe58f20d86e4ffa452cb4c5a5d9bc76dc6bd"
               }
             ],
             "entity_id": null
@@ -2088,7 +2299,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3cd13dab7aac8084",
-                "quote": "Co-founders Jordan Dearsley and Nikhil Gupta met at the University of Waterloo"
+                "quote": "Co-founders Jordan Dearsley and Nikhil Gupta met at the University of Waterloo",
+                "source_content_hash": "bade7bff5dc58f65",
+                "quote_hash": "67126a62e7c2a1be4f8907ae876b5a68913ccd856dcb4b150f0bb4578dcf0ecd"
               }
             ],
             "entity_id": null
@@ -2102,16 +2315,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-46ca8e6bf27dfb82",
-            "quote": "Voice artificial intelligence startup Vapi Inc. said today it has raised $50 million in new funding"
+            "quote": "Voice artificial intelligence startup Vapi Inc. said today it has raised $50 million in new funding",
+            "source_content_hash": "5fee028b6dad3dc4",
+            "quote_hash": "b09e11a4cb00a3c149bdb99e3e1743482580d6bbe69439087345f09c049250bd"
           },
           {
             "source_id": "FISRC-3cd13dab7aac8084",
-            "quote": "Vapi, the San Francisco-based enterprise voice-AI platform"
+            "quote": "Vapi, the San Francisco-based enterprise voice-AI platform",
+            "source_content_hash": "bade7bff5dc58f65",
+            "quote_hash": "290d51105e4ed4a92b00d02518c4bd8ef9a4033af36478fcf9160e055099c700"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$50 million",
         "total_raised": "$72 million",
         "announced_at": "2026-05-12",
@@ -2122,21 +2339,12 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-46ca8e6bf27dfb82",
-                "quote": "Peak XV led the Series B funding round"
+                "quote": "Peak XV led the Series B funding round",
+                "source_content_hash": "5fee028b6dad3dc4",
+                "quote_hash": "5cf2609379d34cf45ef5f1f8f92ffd6419417258e8d6163efa74713f7b619e7e"
               }
             ],
             "entity_id": null
-          },
-          {
-            "name": "Y Combinator",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-46ca8e6bf27dfb82",
-                "quote": "with participation from Y Combinator"
-              }
-            ],
-            "entity_id": "EN-275b0f4a4023d91c"
           },
           {
             "name": "Kleiner Perkins",
@@ -2144,7 +2352,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-46ca8e6bf27dfb82",
-                "quote": "Kleiner Perkins"
+                "quote": "Kleiner Perkins",
+                "source_content_hash": "5fee028b6dad3dc4",
+                "quote_hash": "6979b8858a5e7c8c982ace7b45ef758828432a03f93c34473223caf92e0972d9"
               }
             ],
             "entity_id": null
@@ -2155,7 +2365,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3cd13dab7aac8084",
-                "quote": "Bessemer Venture Partners join; earlier investors return"
+                "quote": "Bessemer Venture Partners join; earlier investors return",
+                "source_content_hash": "bade7bff5dc58f65",
+                "quote_hash": "d92cd5aabbd18f7f42c77ed350737a8be1d81adae69f126a50b9f1d8adaa258e"
               }
             ],
             "entity_id": null
@@ -2164,11 +2376,60 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-46ca8e6bf27dfb82",
-            "quote": "Vapi nabs $50M to make voice AI more human"
+            "quote": "Vapi nabs $50M to make voice AI more human",
+            "source_content_hash": "5fee028b6dad3dc4",
+            "quote_hash": "eb9ed67b63a8180fa4f4e2462253517f12568f0fb6eb7c2bcf86d73b3cd9f8f7"
           },
           {
             "source_id": "FISRC-7202401230a1016d",
-            "quote": "Today we're announcing our $50M Series B, led by Peak XV, with participation from YC, M12 (Microsoft's Venture Fund), Kleiner Perkins, and our earlier investors. It brings our total funding to $72M."
+            "quote": "Today we're announcing our $50M Series B, led by Peak XV, with participation from YC, M12 (Microsoft's Venture Fund), Kleiner Perkins, and our earlier investors. It brings our total funding to $72M.",
+            "source_content_hash": "a493ec5ca2c89924",
+            "quote_hash": "df9b7a00e2d42f4961a6345bb1c3a3204949904a0bfebe250c4a485b6720f694"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [
+          {
+            "name": "Y Combinator",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46ca8e6bf27dfb82",
+                "quote": "with participation from Y Combinator",
+                "source_content_hash": "5fee028b6dad3dc4",
+                "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c",
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-88f4ee8cd57bdf42",
+            "round_original": "Series B",
+            "amount": "$50 million",
+            "announced_at": "2026-05-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46ca8e6bf27dfb82",
+                "quote": "Vapi nabs $50M to make voice AI more human",
+                "source_content_hash": "5fee028b6dad3dc4",
+                "quote_hash": "eb9ed67b63a8180fa4f4e2462253517f12568f0fb6eb7c2bcf86d73b3cd9f8f7"
+              },
+              {
+                "source_id": "FISRC-7202401230a1016d",
+                "quote": "Today we're announcing our $50M Series B, led by Peak XV, with participation from YC, M12 (Microsoft's Venture Fund), Kleiner Perkins, and our earlier investors. It brings our total funding to $72M.",
+                "source_content_hash": "a493ec5ca2c89924",
+                "quote_hash": "df9b7a00e2d42f4961a6345bb1c3a3204949904a0bfebe250c4a485b6720f694"
+              }
+            ]
           }
         ]
       },
@@ -2189,7 +2450,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5112aeb834a600f2",
-              "quote": "The platform supports more than 200 built-in model integrations and also allows operators to bring their own API keys for transcription, large language model inference, and text-to-speech - or to connect self-hosted models."
+              "quote": "The platform supports more than 200 built-in model integrations and also allows operators to bring their own API keys for transcription, large language model inference, and text-to-speech - or to connect self-hosted models.",
+              "source_content_hash": "15bdb48f652f0c6b",
+              "quote_hash": "959c7d20dfa6f780de2ee61d7bd19162658cbc228ebf719c62b8ddd22a5a3c00"
             }
           ],
           "entity_id": null
@@ -2203,9 +2466,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7202401230a1016d",
-              "quote": "Instawork moved candidate interviews from humans to agents. Supply doubled."
+              "quote": "Instawork moved candidate interviews from humans to agents. Supply doubled.",
+              "source_content_hash": "a493ec5ca2c89924",
+              "quote_hash": "d482e03d89906167081174b1cfca7ea09f03fccd5f391e226dcca520fa0345b8"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "New York Life",
@@ -2214,9 +2480,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3cd13dab7aac8084",
-              "quote": "Named enterprise customers include Amazon Ring, Kavak, Instawork, New York Life, UnityAI, Cherry, and Intuit."
+              "quote": "Named enterprise customers include Amazon Ring, Kavak, Instawork, New York Life, UnityAI, Cherry, and Intuit.",
+              "source_content_hash": "bade7bff5dc58f65",
+              "quote_hash": "d09a4e79b753142d8daaabe87ae20cf27494586f183bb7d12bcc5fb36c8b7019"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Intuit",
@@ -2225,9 +2494,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3cd13dab7aac8084",
-              "quote": "Named enterprise customers include Amazon Ring, Kavak, Instawork, New York Life, UnityAI, Cherry, and Intuit."
+              "quote": "Named enterprise customers include Amazon Ring, Kavak, Instawork, New York Life, UnityAI, Cherry, and Intuit.",
+              "source_content_hash": "bade7bff5dc58f65",
+              "quote_hash": "d09a4e79b753142d8daaabe87ae20cf27494586f183bb7d12bcc5fb36c8b7019"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -2239,7 +2511,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ca8e6bf27dfb82",
-              "quote": "more than 1 billion calls made"
+              "quote": "more than 1 billion calls made",
+              "source_content_hash": "5fee028b6dad3dc4",
+              "quote_hash": "717c15f3524f59e8d0375d76ea59a83ad61607d77c6e2e2dda9c60d2c1f711d9"
             }
           ]
         },
@@ -2250,7 +2524,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ca8e6bf27dfb82",
-              "quote": "more than 1 million developers"
+              "quote": "more than 1 million developers",
+              "source_content_hash": "5fee028b6dad3dc4",
+              "quote_hash": "4397fbbd62a9ac39c43d99145ccaf85fcc6a6624fd239326d3c1220722b2395c"
             }
           ]
         },
@@ -2261,7 +2537,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-46ca8e6bf27dfb82",
-              "quote": "more than 2.7 million unique AI agents"
+              "quote": "more than 2.7 million unique AI agents",
+              "source_content_hash": "5fee028b6dad3dc4",
+              "quote_hash": "43196d7446f4665ba663837612f284dd6af702c0bafe33f751fac1dd083e96e0"
             }
           ]
         },
@@ -2272,7 +2550,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7202401230a1016d",
-              "quote": "our enterprise revenue grew 10x"
+              "quote": "our enterprise revenue grew 10x",
+              "source_content_hash": "a493ec5ca2c89924",
+              "quote_hash": "6096e4f7167a6e5b0f2733887e5821c5dfb061198f563ff99bacdc984dd53a92"
             }
           ]
         }
@@ -2291,7 +2571,20 @@
           "语音 AI 基础设施市场竞争激烈，传统联络中心厂商、电话平台和超大规模云厂商可能通过捆绑语音代理功能进行反击，侵蚀 Vapi 的差异化空间"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业语音 AI 基础设施"
+        "sector": "企业语音 AI 基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Vapi 能否成为企业语音 AI 的默认基础设施层。本轮融资验证的信号包括：10 亿次通话处理量、10 倍企业 ARR 增长、Amazon Ring 等标杆客户在两周内实现 100% 呼入量迁移且 CSAT 提升。Peak XV 将其类比为语音 AI 领域的 Zapier/n8n，表明投资逻辑并非押注 AI 模型能力，而是押注其作为模型与电话系统之间编排层的平台价值。判断的证据边界限于已披露的运营指标和客户案例，尚未覆盖利润率、客户留存率或合规审计结果。",
+          "evidence_signals": [
+            "平台已处理超过 10 亿次通话，证明其基础设施具备大规模生产负载能力",
+            "企业 ARR 同比增长 10 倍，验证了 PLG 模式向企业付费转化的路径",
+            "Amazon Ring 在评估数十家供应商后选择 Vapi，两周内完成 100% 呼入量迁移，CSAT 得分提升",
+            "超过 100 万开发者和 270 万个唯一代理已创建，形成开发者生态飞轮"
+          ],
+          "risks": [
+            "语音 AI 基础设施市场竞争激烈，传统联络中心厂商、电话平台和超大规模云厂商可能通过捆绑语音代理功能进行反击，侵蚀 Vapi 的差异化空间"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2299,130 +2592,70 @@
           "target_kind": "product",
           "research_name": "Vapi Voice AI Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5112aeb834a600f2",
-              "quote": "The platform supports more than 200 built-in model integrations and also allows operators to bring their own API keys for transcription, large language model inference, and text-to-speech - or to connect self-hosted models."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jordan Dearsley",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ca8e6bf27dfb82",
-              "quote": "co-founder and Chief Executive Jordan Dearsley"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Nikhil Gupta",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3cd13dab7aac8084",
-              "quote": "Co-founders Jordan Dearsley and Nikhil Gupta met at the University of Waterloo"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Peak XV",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ca8e6bf27dfb82",
-              "quote": "Peak XV led the Series B funding round"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Y Combinator",
-          "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ca8e6bf27dfb82",
-              "quote": "with participation from Y Combinator"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kleiner Perkins",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-46ca8e6bf27dfb82",
-              "quote": "Kleiner Perkins"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3cd13dab7aac8084",
-              "quote": "Bessemer Venture Partners join; earlier investors return"
-            }
-          ]
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Instawork",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7202401230a1016d",
-              "quote": "Instawork moved candidate interviews from humans to agents. Supply doubled."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "New York Life",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3cd13dab7aac8084",
-              "quote": "Named enterprise customers include Amazon Ring, Kavak, Instawork, New York Life, UnityAI, Cherry, and Intuit."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Intuit",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3cd13dab7aac8084",
-              "quote": "Named enterprise customers include Amazon Ring, Kavak, Instawork, New York Life, UnityAI, Cherry, and Intuit."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2496,10 +2729,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:22:17.486Z"
+      "published_at": "2026-07-26T14:22:17.486Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Vapi Voice AI Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Jordan Dearsley",
+            "Nikhil Gupta"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-88f4ee8cd57bdf42"
+      ],
+      "aggregation": {
+        "key": "EN-29e1a488361f12d3|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

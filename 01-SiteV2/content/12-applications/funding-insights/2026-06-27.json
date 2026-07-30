@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-27",
     "generated_at": "2026-07-27T05:19:27.251Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 4,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-4bcb177ce9d0b4d0",
       "triggered_by_event_id": "EV-26613b5bff756274",
       "as_of_date": "2026-06-27",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f0d4056113fd3650",
-                "quote": "Goodfire CEO Eric Ho"
+                "quote": "Goodfire CEO Eric Ho",
+                "source_content_hash": "065e9d351d56505a",
+                "quote_hash": "f7b86814c7b77a81ff58d876dd390828dfc04bc07a4688293509972a62cee5b3"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f0d4056113fd3650",
-                "quote": "co-founder Tom McGrath, who founded the interpretability team at Google DeepMind"
+                "quote": "co-founder Tom McGrath, who founded the interpretability team at Google DeepMind",
+                "source_content_hash": "065e9d351d56505a",
+                "quote_hash": "8accf4e698419cc8eaa8ddf8c520908c0db485ab18352245dab372dc8679175f"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-49dd6b4ad8b49359",
-                "quote": "The company was founded in 2023 by Eric Ho, Dan Balsam and Tom McGrath."
+                "quote": "The company was founded in 2023 by Eric Ho, Dan Balsam and Tom McGrath.",
+                "source_content_hash": "dfca503db1cd4f8c",
+                "quote_hash": "2d574e4d05378aa5b7b1b8acce09a30d259f9fcf61d9609e5cd4809b8e9ce1bb"
               }
             ],
             "entity_id": null
@@ -69,19 +76,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c253e601c735392a",
-              "quote": "Now we're above 40"
+              "quote": "Now we're above 40",
+              "source_content_hash": "fe9a536af93789f6",
+              "quote_hash": "e3f2d22a0e1d345d5a301fdd165aaedf9923f9b4688db15dd1108fb5d685579b"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-f0d4056113fd3650",
-            "quote": "Goodfire is a research company and public benefit corporation based in San Francisco"
+            "quote": "Goodfire is a research company and public benefit corporation based in San Francisco",
+            "source_content_hash": "065e9d351d56505a",
+            "quote_hash": "61346bc26f473297616602b943f67a1869e40f691f7b7be8e7053aba5a4cd6b6"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$150M",
         "total_raised": "over $200M",
         "announced_at": "2026-02-05",
@@ -92,7 +103,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f0d4056113fd3650",
-                "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital"
+                "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
+                "source_content_hash": "065e9d351d56505a",
+                "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
               }
             ],
             "entity_id": null
@@ -103,7 +116,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f0d4056113fd3650",
-                "quote": "participation from existing investors Juniper Ventures"
+                "quote": "participation from existing investors Juniper Ventures",
+                "source_content_hash": "065e9d351d56505a",
+                "quote_hash": "904e87dd7b5fbd2a3abf42f836e98d8758ad00acae59ddf7951ed42faf9437e6"
               }
             ],
             "entity_id": null
@@ -114,7 +129,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f0d4056113fd3650",
-                "quote": "new investors DFJ Growth"
+                "quote": "new investors DFJ Growth",
+                "source_content_hash": "065e9d351d56505a",
+                "quote_hash": "4ef1efc93ad753b4dcd813903afa30f4673f561c7cb06a4d5966ab6b88405b15"
               }
             ],
             "entity_id": null
@@ -123,7 +140,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-84e4d0c096ffb50a",
-            "quote": "a $150 million Series B funding round at a $1.25 billion valuation"
+            "quote": "a $150 million Series B funding round at a $1.25 billion valuation",
+            "source_content_hash": "37a3bfceda84a002",
+            "quote_hash": "acae0cc2c65557cf382502bacd7e1349190bdfb7cf7b27b49f4d8edadf6706a1"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-26613b5bff756274",
+            "round_original": "Series B",
+            "amount": "$150M",
+            "announced_at": "2026-02-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-84e4d0c096ffb50a",
+                "quote": "a $150 million Series B funding round at a $1.25 billion valuation",
+                "source_content_hash": "37a3bfceda84a002",
+                "quote_hash": "acae0cc2c65557cf382502bacd7e1349190bdfb7cf7b27b49f4d8edadf6706a1"
+              }
+            ]
           }
         ]
       },
@@ -140,11 +178,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-844f3749fd963598",
-              "quote": "Introducing Silico: the platform for building AI models with the precision of written software"
+              "quote": "Introducing Silico: the platform for building AI models with the precision of written software",
+              "source_content_hash": "4727b59719874f15",
+              "quote_hash": "f4ed618571f4720c3dd7617726164637014ca195954938d096008222d47d9741"
             },
             {
               "source_id": "FISRC-844f3749fd963598",
-              "quote": "Silico lets you build AI models with the precision of written software. See what models have learned, find undesired behavior, and make targeted interventions to improve performance."
+              "quote": "Silico lets you build AI models with the precision of written software. See what models have learned, find undesired behavior, and make targeted interventions to improve performance.",
+              "source_content_hash": "4727b59719874f15",
+              "quote_hash": "0652ea0da81bc5c725186a60614345b8c1299aa472a96b4ea400616295cdd14f"
             }
           ],
           "entity_id": null
@@ -161,7 +203,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f9f02c21aeb65119",
-              "quote": "Goodfire’s interpretability platform, Ember, to develop and test different methods for PII detection"
+              "quote": "Goodfire’s interpretability platform, Ember, to develop and test different methods for PII detection",
+              "source_content_hash": "b726a23a72dd6c96",
+              "quote_hash": "99b4be53bffbb86d335908464bd0cbfdd9512adbf58396879e4797ba93159d23"
             }
           ],
           "entity_id": null
@@ -175,9 +219,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f9f02c21aeb65119",
-              "quote": "Rakuten and Goodfire partnered to explore ways to make Rakuten AI even more reliable and trustworthy, leading the industry to use frontier interpretability to improve security and prevent customers’ PII (personally identifiable information) from being sent downstream to model providers."
+              "quote": "Rakuten and Goodfire partnered to explore ways to make Rakuten AI even more reliable and trustworthy, leading the industry to use frontier interpretability to improve security and prevent customers’ PII (personally identifiable information) from being sent downstream to model providers.",
+              "source_content_hash": "b726a23a72dd6c96",
+              "quote_hash": "b8322ddc93c924081945a89b067357d0cf33957dc73d05fc3012a243ef30d652"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Prima Mente",
@@ -186,9 +233,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9ba07a04ddd30c38",
-              "quote": "Goodfire’s platform for in silico science decoded their model, identifying a novel class of biomarkers for Alzheimer’s detection"
+              "quote": "Goodfire’s platform for in silico science decoded their model, identifying a novel class of biomarkers for Alzheimer’s detection",
+              "source_content_hash": "8ec48c9b087c720d",
+              "quote_hash": "787bcd31f5dc838548db6fe413c04b14f385fe5c2527bffa6935493648353850"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Mayo Clinic",
@@ -197,9 +247,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f0d4056113fd3650",
-              "quote": "Goodfire has focused on deciphering scientific foundation models with partners like Mayo Clinic"
+              "quote": "Goodfire has focused on deciphering scientific foundation models with partners like Mayo Clinic",
+              "source_content_hash": "065e9d351d56505a",
+              "quote_hash": "d2ce3ca77d1bcad64dfcd245a65a7c49a37132b429435c32de1c5b4a6a928af8"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Arc Institute",
@@ -208,9 +261,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-844f3749fd963598",
-              "quote": "We decoded the internal representations of Arc Institute's Evo 2 genomic model, finding features that map onto biological concepts from coding sequences to protein secondary structure."
+              "quote": "We decoded the internal representations of Arc Institute's Evo 2 genomic model, finding features that map onto biological concepts from coding sequences to protein secondary structure.",
+              "source_content_hash": "4727b59719874f15",
+              "quote_hash": "8d28b8dfdd932b087862f551a5c5dd162bea90b1a9dd1771c934e4a3fdfa6f51"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Microsoft",
@@ -219,9 +275,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-84e4d0c096ffb50a",
-              "quote": "partnered with industry leaders like Arc Institute, Mayo Clinic, and Microsoft to deploy our technology"
+              "quote": "partnered with industry leaders like Arc Institute, Mayo Clinic, and Microsoft to deploy our technology",
+              "source_content_hash": "37a3bfceda84a002",
+              "quote_hash": "010c264dd4da13a7b6de20d575b74622aec29ac01553706275310b6f17eaaed9"
             }
-          ]
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
         }
       ],
       "comparisons": [],
@@ -233,7 +292,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-844f3749fd963598",
-              "quote": "We cut hallucinations in an LLM by 58% by using interpretability to guide model training."
+              "quote": "We cut hallucinations in an LLM by 58% by using interpretability to guide model training.",
+              "source_content_hash": "4727b59719874f15",
+              "quote_hash": "4450176eb1961c3d89b76c3aae72fd60a432aff57da73e5352c5f73050b36ea7"
             }
           ]
         },
@@ -244,7 +305,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-844f3749fd963598",
-              "quote": "saving up to 68% of tokens with minimal accuracy loss"
+              "quote": "saving up to 68% of tokens with minimal accuracy loss",
+              "source_content_hash": "4727b59719874f15",
+              "quote_hash": "26545c371916f88670f7c52c3c0c06b6b06834caa2545d750c34d350577f1861"
             }
           ]
         },
@@ -255,7 +318,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f9f02c21aeb65119",
-              "quote": "the SAE probes showed 15–500x cost savings over LLM-as-a-judge setups with comparable performance"
+              "quote": "the SAE probes showed 15–500x cost savings over LLM-as-a-judge setups with comparable performance",
+              "source_content_hash": "b726a23a72dd6c96",
+              "quote_hash": "3d8c3520f40f0e7dd9d85be1b97fa7fb3e89d5eb39a484bda02142b44287c0ab"
             }
           ]
         },
@@ -266,7 +331,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-844f3749fd963598",
-              "quote": "Our approach was ~90x lower cost per intervention than LLM-as-judge"
+              "quote": "Our approach was ~90x lower cost per intervention than LLM-as-judge",
+              "source_content_hash": "4727b59719874f15",
+              "quote_hash": "5a6f36aedff415f5f74dd37c02497cf32fa5ba251a365ac67c62ba710edb0f2a"
             }
           ]
         },
@@ -277,7 +344,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-844f3749fd963598",
-              "quote": "resulting in ~30% more viable candidate materials with target properties"
+              "quote": "resulting in ~30% more viable candidate materials with target properties",
+              "source_content_hash": "4727b59719874f15",
+              "quote_hash": "b4dbc83ce3a010c229f5745f2bccfb64df89f4572ef93267bd58af8bcf768784"
             }
           ]
         },
@@ -288,7 +357,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f9f02c21aeb65119",
-              "quote": "serving over 44 million monthly active users in Japan"
+              "quote": "serving over 44 million monthly active users in Japan",
+              "source_content_hash": "b726a23a72dd6c96",
+              "quote_hash": "6654d1e63757a9c475b06a4b16789172b2a26d199ffcc186be97fdfdbd97a03a"
             }
           ]
         }
@@ -300,7 +371,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c253e601c735392a",
-              "quote": "Goodfire is an AI research lab that focuses on using interpretability to understand, learn from and design AI models. We really believe that interpretability will unlock the new generation next frontier of safe and powerful AI models."
+              "quote": "Goodfire is an AI research lab that focuses on using interpretability to understand, learn from and design AI models. We really believe that interpretability will unlock the new generation next frontier of safe and powerful AI models.",
+              "source_content_hash": "fe9a536af93789f6",
+              "quote_hash": "27c3808fb0fb78e162c2ccfb6adeb76190992ff5b34672fd9d4b2e01564563d5"
             }
           ]
         }
@@ -318,7 +391,20 @@
           "可解释性技术的通用性尚未被大规模证实，目前主要应用于特定高价值场景（如 PII 检测、科学发现），能否成为所有 AI 模型训练的标配流程存在不确定性。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "人工智能可解释性与安全"
+        "sector": "人工智能可解释性与安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“可解释性”从学术研究向生产级基础设施的范式迁移。本轮融资的验证信号包括：1) 已获得 Rakuten 等企业客户的生产部署，证明了其在 PII 检测等场景的商业价值；2) 在生命科学领域实现了从基础模型中提取新型阿尔茨海默病生物标志物的科学突破；3) 展示了在万亿参数级模型上进行实时操控的技术能力。估值依据建立在将可解释性定位为 AI 安全、对齐及科学发现的底层操作系统，而非单纯的工具。",
+          "evidence_signals": [
+            "企业级生产部署：为 Rakuten 部署了基于可解释性的 PII 检测护栏，实现了 15-500 倍的成本节省。",
+            "科学发现验证：与 Prima Mente 合作，通过逆向工程基础模型发现了新型阿尔茨海默病生物标志物。",
+            "前沿模型操控：实现了对 Kimi K2（约 1 万亿参数）模型的实时特征操控。",
+            "技术降本增效：通过可解释性引导训练，将大语言模型的幻觉减少了 58%，且干预成本比 LLM-as-a-judge 低约 90 倍。"
+          ],
+          "risks": [
+            "可解释性技术的通用性尚未被大规模证实，目前主要应用于特定高价值场景（如 PII 检测、科学发现），能否成为所有 AI 模型训练的标配流程存在不确定性。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -326,173 +412,91 @@
           "target_kind": "product",
           "research_name": "Silico",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-844f3749fd963598",
-              "quote": "Introducing Silico: the platform for building AI models with the precision of written software"
-            },
-            {
-              "source_id": "FISRC-844f3749fd963598",
-              "quote": "Silico lets you build AI models with the precision of written software. See what models have learned, find undesired behavior, and make targeted interventions to improve performance."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Ember",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f9f02c21aeb65119",
-              "quote": "Goodfire’s interpretability platform, Ember, to develop and test different methods for PII detection"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Eric Ho",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f0d4056113fd3650",
-              "quote": "Goodfire CEO Eric Ho"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tom McGrath",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f0d4056113fd3650",
-              "quote": "co-founder Tom McGrath, who founded the interpretability team at Google DeepMind"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dan Balsam",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-49dd6b4ad8b49359",
-              "quote": "The company was founded in 2023 by Eric Ho, Dan Balsam and Tom McGrath."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "B Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f0d4056113fd3650",
-              "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Juniper Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f0d4056113fd3650",
-              "quote": "participation from existing investors Juniper Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "DFJ Growth",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f0d4056113fd3650",
-              "quote": "new investors DFJ Growth"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Rakuten",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f9f02c21aeb65119",
-              "quote": "Rakuten and Goodfire partnered to explore ways to make Rakuten AI even more reliable and trustworthy, leading the industry to use frontier interpretability to improve security and prevent customers’ PII (personally identifiable information) from being sent downstream to model providers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Prima Mente",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9ba07a04ddd30c38",
-              "quote": "Goodfire’s platform for in silico science decoded their model, identifying a novel class of biomarkers for Alzheimer’s detection"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Mayo Clinic",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f0d4056113fd3650",
-              "quote": "Goodfire has focused on deciphering scientific foundation models with partners like Mayo Clinic"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Arc Institute",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-844f3749fd963598",
-              "quote": "We decoded the internal representations of Arc Institute's Evo 2 genomic model, finding features that map onto biological concepts from coding sequences to protein secondary structure."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Microsoft",
           "canonical_entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-84e4d0c096ffb50a",
-              "quote": "partnered with industry leaders like Arc Institute, Mayo Clinic, and Microsoft to deploy our technology"
-            }
-          ]
+          "canonical_name": "Microsoft"
         }
       ],
       "funding_history": [
@@ -602,13 +606,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-27T05:18:20.583Z"
+      "published_at": "2026-07-27T05:18:20.583Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Ember",
+            "Silico"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Dan Balsam",
+            "Eric Ho",
+            "Tom McGrath"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-26613b5bff756274"
+      ],
+      "aggregation": {
+        "key": "EN-641a309108850fc9|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-6ecaf4b54919ed4f",
       "triggered_by_event_id": "EV-cc90f1eb2b0817e7",
       "as_of_date": "2026-06-27",
@@ -626,7 +662,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-710d897cee27dcf0",
-                "quote": "Alex Saroyan, CEO and co-founder of Netris"
+                "quote": "Alex Saroyan, CEO and co-founder of Netris",
+                "source_content_hash": "232b472dc703660c",
+                "quote_hash": "f6b260587d6f0dcdfa41e193be7659bb3333cd2d84a036ee11c49370fc8e121a"
               }
             ],
             "entity_id": null
@@ -640,16 +678,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-710d897cee27dcf0",
-            "quote": "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure, purpose-built for neoclouds, sovereign AI operators, and AI factories."
+            "quote": "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure, purpose-built for neoclouds, sovereign AI operators, and AI factories.",
+            "source_content_hash": "232b472dc703660c",
+            "quote_hash": "4899a31a9995e9b8445fc7b5f30e9b13f023f2ea4e2d8d0fc83b547536fb2e05"
           },
           {
             "source_id": "FISRC-edf2a473ca48646a",
-            "quote": "Network automation startup Netris claims it can make that problem disappear for neoclouds."
+            "quote": "Network automation startup Netris claims it can make that problem disappear for neoclouds.",
+            "source_content_hash": "577ba7cc7490d477",
+            "quote_hash": "b0e42f4e090aa5b9c5efb8309f51cca0cbc2a1ee8310077cc44864bb406d8f5f"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$15M",
         "total_raised": "",
         "announced_at": "2026-06-25",
@@ -660,11 +702,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-edf2a473ca48646a",
-                "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz"
+                "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz",
+                "source_content_hash": "577ba7cc7490d477",
+                "quote_hash": "70f2d80b38e2c8618750aeb4888a3f75deacb625a0b0625e96cfcc1f797cfb44"
               },
               {
                 "source_id": "FISRC-710d897cee27dcf0",
-                "quote": "a $15M Series A round led by Andreessen Horowitz"
+                "quote": "a $15M Series A round led by Andreessen Horowitz",
+                "source_content_hash": "232b472dc703660c",
+                "quote_hash": "9d9d3c4485f8eb0950ed56fbd975ed2b6f581c46fd1f60a5081b1e6cad8c7f65"
               }
             ],
             "entity_id": null
@@ -673,11 +719,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-edf2a473ca48646a",
-            "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz"
+            "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz",
+            "source_content_hash": "577ba7cc7490d477",
+            "quote_hash": "70f2d80b38e2c8618750aeb4888a3f75deacb625a0b0625e96cfcc1f797cfb44"
           },
           {
             "source_id": "FISRC-710d897cee27dcf0",
-            "quote": "Netris raised a $15M Series A led by Andreessen Horowitz."
+            "quote": "Netris raised a $15M Series A led by Andreessen Horowitz.",
+            "source_content_hash": "232b472dc703660c",
+            "quote_hash": "9511190d8ee79b90765742a2c32f16e0d5b2d80ab33ab1378444fcddd16370e5"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cc90f1eb2b0817e7",
+            "round_original": "Series A",
+            "amount": "$15M",
+            "announced_at": "2026-06-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-edf2a473ca48646a",
+                "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz",
+                "source_content_hash": "577ba7cc7490d477",
+                "quote_hash": "70f2d80b38e2c8618750aeb4888a3f75deacb625a0b0625e96cfcc1f797cfb44"
+              },
+              {
+                "source_id": "FISRC-710d897cee27dcf0",
+                "quote": "Netris raised a $15M Series A led by Andreessen Horowitz.",
+                "source_content_hash": "232b472dc703660c",
+                "quote_hash": "9511190d8ee79b90765742a2c32f16e0d5b2d80ab33ab1378444fcddd16370e5"
+              }
+            ]
           }
         ]
       },
@@ -695,11 +770,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "The Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) platform delivers network orchestration for AI clusters, hard multi-tenancy enforced on networking hardware, and cloud-provider-grade automation across Ethernet (including NVIDIA Spectrum-X), NVIDIA Quantum InfiniBand, NVL72, NVIDIA BlueField DPUs, and virtual and edge networking — from Day Zero design and simulation through live operations."
+              "quote": "The Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) platform delivers network orchestration for AI clusters, hard multi-tenancy enforced on networking hardware, and cloud-provider-grade automation across Ethernet (including NVIDIA Spectrum-X), NVIDIA Quantum InfiniBand, NVL72, NVIDIA BlueField DPUs, and virtual and edge networking — from Day Zero design and simulation through live operations.",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "fd25a8f4f8027c398b3ca2059b3a4d3f5f55c97b0912f2a42c0afa4d9631f633"
             },
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
+              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants.",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "f53f26664d517c36e2b90d76352062b507aad272e8926c433c983a5c383dc8b9"
             }
           ],
           "entity_id": null
@@ -713,9 +792,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI"
+              "quote": "high-growth neoclouds, including Lightning AI",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "9e7c2a38c6872463f0c7d7b732857664fe1aa7f684e2ed2aebac8f2a28b1ad36"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "TensorWave",
@@ -724,9 +806,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave"
+              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "05417e0b330bd968688a60013b6f43962b070a7f1e7567fdd0d316ba9cee26ae"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "TELUS",
@@ -735,9 +820,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA"
+              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "cde5951a88d5e1ce449578c00fc62f45aaad1289dab20536d0c8d45de8c10a5e"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Hewlett Packard Enterprise",
@@ -746,9 +834,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government."
+              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government.",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "6e0fe5347865c101fec3cca2760bb366424adfc0538dde208dd2bc31b4c57adc"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -762,9 +853,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "traditional controllers and fabric managers lack multi-tenancy and the cloud-provider functionality AI operators require."
+              "quote": "traditional controllers and fabric managers lack multi-tenancy and the cloud-provider functionality AI operators require.",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "9eb139fb11f6458e2941c97398e235466028196dd4a3f8d5a4831cb0f3ae8436"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -775,7 +869,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "In the last 12 months, Netris experienced 800% ARR growth"
+              "quote": "In the last 12 months, Netris experienced 800% ARR growth",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "bc44a5a5884d4c87ea98ffaa7bc5a94193c47587955251a2c8af84ba2b8f4be5"
             }
           ]
         },
@@ -786,7 +882,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "35+ live deployments at many of the largest neoclouds, sovereign AI operators, and AI factories in the world"
+              "quote": "35+ live deployments at many of the largest neoclouds, sovereign AI operators, and AI factories in the world",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "5e9ec17caea25f54d072fbe6b3de4723f8f57f750acc9cdf20b2a6581a00cf48"
             }
           ]
         },
@@ -797,7 +895,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-edf2a473ca48646a",
-              "quote": "Netris is live at more than 35 GPU clusters around the world (about a million GPUs total)"
+              "quote": "Netris is live at more than 35 GPU clusters around the world (about a million GPUs total)",
+              "source_content_hash": "577ba7cc7490d477",
+              "quote_hash": "c97deb467113809fa61e0b66430de73e327bc7b625f909740c8e21981d83a72b"
             }
           ]
         },
@@ -808,7 +908,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-135783c04743a1c6",
-              "quote": "about a 12% share of neoclouds by cluster count"
+              "quote": "about a 12% share of neoclouds by cluster count",
+              "source_content_hash": "9f4bada27b07feeb",
+              "quote_hash": "c398fa89b770d8992ee04dd13d272af009cb643919409c31bb1cb73f2e3d1607"
             }
           ]
         }
@@ -820,7 +922,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey."
+              "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey.",
+              "source_content_hash": "232b472dc703660c",
+              "quote_hash": "0d3fca8671fc28dafb90aa7c98842c9e8c86d6a13aa0b53cc78c18cc912d6616"
             }
           ]
         }
@@ -836,7 +940,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-710d897cee27dcf0",
-                "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey."
+                "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey.",
+                "source_content_hash": "232b472dc703660c",
+                "quote_hash": "0d3fca8671fc28dafb90aa7c98842c9e8c86d6a13aa0b53cc78c18cc912d6616"
               }
             ]
           }
@@ -853,7 +959,21 @@
           "平台吸收风险：若 NVIDIA 或交换机厂商将类似自动化能力整合进自身产品栈，Netris 的独立价值将显著缩小。"
         ],
         "related_direction_id": "",
-        "sector": "AI 基础设施 / 网络自动化"
+        "sector": "AI 基础设施 / 网络自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 基础设施扩张中网络自动化层的独立价值窗口。本轮融资所依赖的已验证信号包括：过去 12 个月 800% ARR 增长、35+ 在线部署覆盖约 100 万 GPU、约 12% 新云市场份额，以及 NVIDIA 作为首个 ISV 验证的 AI 网络自动化供应商所赋予的信用护城河。判断的证据边界限于来源中披露的运营指标和客户列表，未包含财务尽调或估值信息。",
+          "evidence_signals": [
+            "过去 12 个月 ARR 增长 800%",
+            "35+ 在线部署，覆盖约 100 万 GPU",
+            "约 12% 新云市场份额（按集群数）",
+            "NVIDIA 首个 ISV 验证的 AI 网络自动化供应商",
+            "客户包括 Lightning AI、TensorWave、TELUS、Visionbay.ai、HPE 等"
+          ],
+          "risks": [
+            "平台吸收风险：若 NVIDIA 或交换机厂商将类似自动化能力整合进自身产品栈，Netris 的独立价值将显著缩小。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -861,112 +981,56 @@
           "target_kind": "product",
           "research_name": "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) 平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "The Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) platform delivers network orchestration for AI clusters, hard multi-tenancy enforced on networking hardware, and cloud-provider-grade automation across Ethernet (including NVIDIA Spectrum-X), NVIDIA Quantum InfiniBand, NVL72, NVIDIA BlueField DPUs, and virtual and edge networking — from Day Zero design and simulation through live operations."
-            },
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alex Saroyan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Alex Saroyan, CEO and co-founder of Netris"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-edf2a473ca48646a",
-              "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz"
-            },
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "a $15M Series A round led by Andreessen Horowitz"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Lightning AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "TensorWave",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "TELUS",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Hewlett Packard Enterprise",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "传统控制器与结构管理器",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "traditional controllers and fabric managers lack multi-tenancy and the cloud-provider functionality AI operators require."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1028,13 +1092,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:38:49.079Z"
+      "published_at": "2026-07-26T14:38:49.079Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Alex Saroyan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cc90f1eb2b0817e7"
+      ],
+      "aggregation": {
+        "key": "EN-34bdfa9bfd563edb|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c0df7e1681e6d18e",
       "triggered_by_event_id": "EV-2b15f160de3c7ddf",
       "as_of_date": "2026-06-27",
@@ -1052,7 +1145,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2174e1aa45a728ef",
-                "quote": "George Eliadis, CEO and co-founder of Probook"
+                "quote": "George Eliadis, CEO and co-founder of Probook",
+                "source_content_hash": "16af0d3e75b94e37",
+                "quote_hash": "79727bb3bab67341311504ece74030a9b415f516e4b4a62017fd0ff8631264c7"
               }
             ],
             "entity_id": null
@@ -1063,7 +1158,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2174e1aa45a728ef",
-                "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
+                "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang.",
+                "source_content_hash": "16af0d3e75b94e37",
+                "quote_hash": "612036c449717670821d063ff39cd280ea889f3d22737847ac4cbad1157e2bde"
               }
             ],
             "entity_id": null
@@ -1074,7 +1171,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2174e1aa45a728ef",
-                "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
+                "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang.",
+                "source_content_hash": "16af0d3e75b94e37",
+                "quote_hash": "612036c449717670821d063ff39cd280ea889f3d22737847ac4cbad1157e2bde"
               }
             ],
             "entity_id": null
@@ -1088,12 +1187,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6bff090220b83d94",
-            "quote": "Probook, a New York company that builds field service management software for home-service businesses"
+            "quote": "Probook, a New York company that builds field service management software for home-service businesses",
+            "source_content_hash": "2d4320d45d442253",
+            "quote_hash": "1f88ca4d603eff506ef5fefdc4913a379893fd2e41d0755b0638448154d8d27b"
           }
         ]
       },
       "financing": {
-        "round": "Series A and Seed",
+        "round": "多轮融资",
         "amount": "$40 million",
         "total_raised": "$40 million",
         "announced_at": "2026-06-23",
@@ -1104,7 +1205,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2174e1aa45a728ef",
-                "quote": "a $34 million Series A led by Andreessen Horowitz (a16z)"
+                "quote": "a $34 million Series A led by Andreessen Horowitz (a16z)",
+                "source_content_hash": "16af0d3e75b94e37",
+                "quote_hash": "dfa9a8113b0f24ba1986d9224e6fa85b6bb9f18ece461778725dadc637e2437f"
               }
             ],
             "entity_id": null
@@ -1115,7 +1218,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2174e1aa45a728ef",
-                "quote": "a $6 million Seed round led by Sequoia Capital. Sequoia also participated in the Series A."
+                "quote": "a $6 million Seed round led by Sequoia Capital. Sequoia also participated in the Series A.",
+                "source_content_hash": "16af0d3e75b94e37",
+                "quote_hash": "28e88bdbebbb89d6dc7b33486f23ba4cf95a2e4e836ccf1ce8b91c0b3fbdb336"
               }
             ],
             "entity_id": null
@@ -1124,7 +1229,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2174e1aa45a728ef",
-            "quote": "Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services"
+            "quote": "Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services",
+            "source_content_hash": "16af0d3e75b94e37",
+            "quote_hash": "37d51f43585b0e197944bb1b32ace40dd759075678c3f3b0104bb9c3011ba74c"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "Series A and Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2b15f160de3c7ddf",
+            "round_original": "Series A and Seed",
+            "amount": "$40 million",
+            "announced_at": "2026-06-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2174e1aa45a728ef",
+                "quote": "Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services",
+                "source_content_hash": "16af0d3e75b94e37",
+                "quote_hash": "37d51f43585b0e197944bb1b32ace40dd759075678c3f3b0104bb9c3011ba74c"
+              }
+            ]
           }
         ]
       },
@@ -1143,11 +1269,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Probook built dispatch first. Intake, data cleaning, customer messaging, and outbound came next, only possible because everything shares one context layer."
+              "quote": "Probook built dispatch first. Intake, data cleaning, customer messaging, and outbound came next, only possible because everything shares one context layer.",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "7594c06a13d110a2a1b14f917fdfbb85ecabbe01c257c28b4ce166ff18e9b485"
             },
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Every customer stays on one text thread, with one number, from the first touch through the front door."
+              "quote": "Every customer stays on one text thread, with one number, from the first touch through the front door.",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "f8dffd3779d0ca89b1b7ddaeea0ea634ddd5d381d45adcf266fc70affe1c281b"
             }
           ],
           "entity_id": null
@@ -1161,9 +1291,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "TR Miller, a $40M HVAC, plumbing, and electrical shop in Illinois that became Probook's first customer."
+              "quote": "TR Miller, a $40M HVAC, plumbing, and electrical shop in Illinois that became Probook's first customer.",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "534874dc856c08a33b05c40a975a00aa6bf30dcb8cf54db02ca6578dd656efb9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "TurnPoint Services",
@@ -1172,9 +1305,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Notable customers include TurnPoint Services, Master Trades Group, Del-Air, Peterman Brothers, and Sila Services."
+              "quote": "Notable customers include TurnPoint Services, Master Trades Group, Del-Air, Peterman Brothers, and Sila Services.",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "a394a0194158ebd087240ed8214305a330798dcb668648d3c606e328bf8c5917"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Peterman Brothers",
@@ -1183,9 +1319,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-18e618455ac6aa11",
-              "quote": "With Probook, we've centralized dispatch across 11 markets and 180 technicians without adding overhead."
+              "quote": "With Probook, we've centralized dispatch across 11 markets and 180 technicians without adding overhead.",
+              "source_content_hash": "aea793ef2d3e8ffe",
+              "quote_hash": "dd3eb327460b4a7d77d3c440453aca3759a0e167a2728163e5bc86ebf5022de9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Summers Plumbing, Heating & Cooling",
@@ -1194,9 +1333,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Summers Plumbing, Heating & Cooling, with 14 locations and 260 technicians on the platform, booked 2,542 jobs in its first month on Probook with zero human intervention."
+              "quote": "Summers Plumbing, Heating & Cooling, with 14 locations and 260 technicians on the platform, booked 2,542 jobs in its first month on Probook with zero human intervention.",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "562383d8e8117b8e16f71878e302236842950b36ea1ed3fc582c9abbbd45adeb"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Del-Air",
@@ -1205,9 +1347,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Del-Air, an 8-location operation in Florida, runs Probook across the stack."
+              "quote": "Del-Air, an 8-location operation in Florida, runs Probook across the stack.",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "ecc2eff45963c05ba2f502300c081886f52322624af157612834221a95dd6486"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1221,9 +1366,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6bff090220b83d94",
-              "quote": "Avoca, which builds AI phone agents for home-service firms, raised $125 million at a $1 billion valuation in April."
+              "quote": "Avoca, which builds AI phone agents for home-service firms, raised $125 million at a $1 billion valuation in April.",
+              "source_content_hash": "2d4320d45d442253",
+              "quote_hash": "f25b5ce53de5410dd1d550ff8ade0ccef26e38fa6c8eadeb53b3f6c4acc1b29c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Hatch",
@@ -1235,9 +1383,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6bff090220b83d94",
-              "quote": "Yelp paid up to $300 million to acquire Hatch, an AI follow-up tool for the same customers."
+              "quote": "Yelp paid up to $300 million to acquire Hatch, an AI follow-up tool for the same customers.",
+              "source_content_hash": "2d4320d45d442253",
+              "quote_hash": "4163ef2e158998e5b19a0677aeca51c5d2d99609c704041bd56949398b53ff1a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "ServiceTitan",
@@ -1249,9 +1400,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6bff090220b83d94",
-              "quote": "ServiceTitan, the largest software platform in the market, told investors before its 2024 listing that households and businesses in the United States and Canada spend roughly $1.5 trillion a year on trades services."
+              "quote": "ServiceTitan, the largest software platform in the market, told investors before its 2024 listing that households and businesses in the United States and Canada spend roughly $1.5 trillion a year on trades services.",
+              "source_content_hash": "2d4320d45d442253",
+              "quote_hash": "7e08e943f02717c07e3ef5a87b5458a4b213f5873840a3ac38677ce1b49b53d5"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1262,7 +1416,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "booked 2,542 jobs in its first month on Probook with zero human intervention"
+              "quote": "booked 2,542 jobs in its first month on Probook with zero human intervention",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "8b80d0c1544949cf39dd8d1772ec132a7f9fcf9f46b50f8e30fad5f824cb86cb"
             }
           ]
         },
@@ -1273,7 +1429,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-18e618455ac6aa11",
-              "quote": "centralized dispatch across 11 markets and 180 technicians without adding overhead"
+              "quote": "centralized dispatch across 11 markets and 180 technicians without adding overhead",
+              "source_content_hash": "aea793ef2d3e8ffe",
+              "quote_hash": "06cb302252827dad96d03f213e9687b13304cfd9f9f2c5524c8eb67e4f992fbd"
             }
           ]
         },
@@ -1284,11 +1442,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-18e618455ac6aa11",
-              "quote": "180 technicians"
+              "quote": "180 technicians",
+              "source_content_hash": "aea793ef2d3e8ffe",
+              "quote_hash": "b51ae26b73e0a6ac2f0febc47321f19a953aa6ac1dd214b835e025248953bf90"
             },
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "200 technicians"
+              "quote": "200 technicians",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "3e88926dc07a857db162c4a0134df94abef44585794ee524f277e0eeb475de6f"
             }
           ]
         },
@@ -1299,7 +1461,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6bff090220b83d94",
-              "quote": "the shop made an additional $190,000 in HVAC revenue in a single June after adopting the software"
+              "quote": "the shop made an additional $190,000 in HVAC revenue in a single June after adopting the software",
+              "source_content_hash": "2d4320d45d442253",
+              "quote_hash": "41ab407025d665bc445f54f9f2a69d6aa99142c1a9a0911ca69d2571b00a3b3c"
             }
           ]
         },
@@ -1310,7 +1474,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6bff090220b83d94",
-              "quote": "a 24 percent rise in average HVAC sale"
+              "quote": "a 24 percent rise in average HVAC sale",
+              "source_content_hash": "2d4320d45d442253",
+              "quote_hash": "7758a68dbbc367aa23c18fc7c6a21be0ec80c1b0a0d519f1d76907b6c46ecf27"
             }
           ]
         },
@@ -1321,7 +1487,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6bff090220b83d94",
-              "quote": "a 22 percent cut in drive time"
+              "quote": "a 22 percent cut in drive time",
+              "source_content_hash": "2d4320d45d442253",
+              "quote_hash": "f748d07380e36b9dea9a7feb8f6fc2a13cc5277912c6e954da927aab0f3cb6d7"
             }
           ]
         },
@@ -1332,7 +1500,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "260 technicians on the platform"
+              "quote": "260 technicians on the platform",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "552b550105a7b1e4f6c0dd4bdf0c2f9db064c5d386cc079687a923a0d3ac963a"
             }
           ]
         },
@@ -1343,7 +1513,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "an 8-location operation in Florida"
+              "quote": "an 8-location operation in Florida",
+              "source_content_hash": "16af0d3e75b94e37",
+              "quote_hash": "876e94da3f16d1b8916f9617d4b6585426f578fc4e8a622e697bae5248348e44"
             }
           ]
         }
@@ -1360,7 +1532,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2174e1aa45a728ef",
-                "quote": "Most founders building for the trades have never worked in them. George has. Pair that with the team's outlier technical depth, and you see why we backed Probook at Seed and why we're doubling down now."
+                "quote": "Most founders building for the trades have never worked in them. George has. Pair that with the team's outlier technical depth, and you see why we backed Probook at Seed and why we're doubling down now.",
+                "source_content_hash": "16af0d3e75b94e37",
+                "quote_hash": "58f83eaea7aac0407738cef5fc4b72a984c076205bcc23b2297cc88f97f39ee2"
               }
             ]
           }
@@ -1378,7 +1552,22 @@
           "家政服务 AI 赛道竞争加剧，Avoca 以 10 亿美元估值融资 1.25 亿美元，ServiceTitan 等大型平台可能在其现有系统中增加 AI 调度功能，挤压 Probook 的差异化空间"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "家政服务 AI 操作系统"
+        "sector": "家政服务 AI 操作系统",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“调度作为家政服务 AI 化的结构性入口”。Probook 以调度为起点构建全栈操作系统，而非从销售漏斗顶部切入，这一架构选择被 a16z 视为“多年的结构性护城河”。当前融资由 a16z 和 Sequoia 两家顶级 VC 罕见地同时参与种子轮和 A 轮，表明机构对其创始人行业背景（George Eliadis 在技工行业长大）和技术深度的双重认可。已验证信号包括：Summers Plumbing 首月零人工干预预订 2,542 个工单，TR Miller 单月 HVAC 额外收入 19 万美元、平均销售额提升 24%、驾驶时间缩减 22%，以及 Peterman Brothers 在 11 个市场集中调度 180-200 名技术人员未增加管理成本。这些信号均来自公司自行披露，未经独立审计，但客户可核实。",
+          "evidence_signals": [
+            "Summers Plumbing 在 14 个地点、260 名技术人员规模下，首月零人工干预预订 2,542 个工单",
+            "TR Miller 在采用 Probook 后单月 HVAC 额外收入 19 万美元，平均 HVAC 销售额提升 24%，驾驶时间缩减 22%",
+            "Peterman Brothers 在 11 个市场集中调度 180-200 名技术人员，未增加管理成本",
+            "客户包括 TurnPoint Services、Sila Services 等私募股权支持的平台，表明产品满足规模化、标准化需求",
+            "a16z 和 Sequoia 两家顶级 VC 罕见地同时参与种子轮和 A 轮"
+          ],
+          "risks": [
+            "所有运营指标（工单数、收入提升、效率改善）均由公司自行披露，未经独立审计，实际效果可能因客户规模和运营复杂度而异",
+            "家政服务 AI 赛道竞争加剧，Avoca 以 10 亿美元估值融资 1.25 亿美元，ServiceTitan 等大型平台可能在其现有系统中增加 AI 调度功能，挤压 Probook 的差异化空间"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1386,186 +1575,98 @@
           "target_kind": "product",
           "research_name": "Probook AI Operating System",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Probook built dispatch first. Intake, data cleaning, customer messaging, and outbound came next, only possible because everything shares one context layer."
-            },
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Every customer stays on one text thread, with one number, from the first touch through the front door."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "George Eliadis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "George Eliadis, CEO and co-founder of Probook"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ben Cervantez",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Lewis Zhang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz (a16z)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "a $34 million Series A led by Andreessen Horowitz (a16z)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sequoia Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "a $6 million Seed round led by Sequoia Capital. Sequoia also participated in the Series A."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "TR Miller",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "TR Miller, a $40M HVAC, plumbing, and electrical shop in Illinois that became Probook's first customer."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "TurnPoint Services",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Notable customers include TurnPoint Services, Master Trades Group, Del-Air, Peterman Brothers, and Sila Services."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Peterman Brothers",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-18e618455ac6aa11",
-              "quote": "With Probook, we've centralized dispatch across 11 markets and 180 technicians without adding overhead."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Summers Plumbing, Heating & Cooling",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Summers Plumbing, Heating & Cooling, with 14 locations and 260 technicians on the platform, booked 2,542 jobs in its first month on Probook with zero human intervention."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Del-Air",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2174e1aa45a728ef",
-              "quote": "Del-Air, an 8-location operation in Florida, runs Probook across the stack."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Avoca",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6bff090220b83d94",
-              "quote": "Avoca, which builds AI phone agents for home-service firms, raised $125 million at a $1 billion valuation in April."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Hatch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6bff090220b83d94",
-              "quote": "Yelp paid up to $300 million to acquire Hatch, an AI follow-up tool for the same customers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ServiceTitan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6bff090220b83d94",
-              "quote": "ServiceTitan, the largest software platform in the market, told investors before its 2024 listing that households and businesses in the United States and Canada spend roughly $1.5 trillion a year on trades services."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1627,13 +1728,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:37:44.760Z"
+      "published_at": "2026-07-26T14:37:44.760Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Probook AI Operating System"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Ben Cervantez",
+            "George Eliadis",
+            "Lewis Zhang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2b15f160de3c7ddf"
+      ],
+      "aggregation": {
+        "key": "EN-03abf933127f01f3|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-ee45ffa2ccc64a4c",
       "triggered_by_event_id": "EV-f54ec32c67e9447c",
       "as_of_date": "2026-06-27",
@@ -1651,7 +1783,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2f4507e8abd3a500",
-                "quote": "Seltz founder and CEO Antonio Mallia"
+                "quote": "Seltz founder and CEO Antonio Mallia",
+                "source_content_hash": "2159da855c1c45fd",
+                "quote_hash": "d4efa49462b50750e4f5701136072000a7e1ef1ac88fed1e0d09985c8b859bab"
               }
             ],
             "entity_id": null
@@ -1663,14 +1797,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "it currently employs just 15 people, only a half dozen of whom are full time employees"
+              "quote": "it currently employs just 15 people, only a half dozen of whom are full time employees",
+              "source_content_hash": "2159da855c1c45fd",
+              "quote_hash": "d0d39198cce549e5f74da1325b1f625d3a6ddd83e4d2e0121fa6e220403bb7b6"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-2f4507e8abd3a500",
-            "quote": "Seltz, a startup trying to reinvent web search for AI agents"
+            "quote": "Seltz, a startup trying to reinvent web search for AI agents",
+            "source_content_hash": "2159da855c1c45fd",
+            "quote_hash": "b752ba4546723f070461bf5f49e0e9ad11263db6bb4ef7f30cbeede47473ce87"
           }
         ]
       },
@@ -1686,7 +1824,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2f4507e8abd3a500",
-                "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
+                "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital",
+                "source_content_hash": "2159da855c1c45fd",
+                "quote_hash": "cc491dd604afdc8716a5cbf58c5d8e8f2b0815af090325482285e1953ed3070b"
               }
             ],
             "entity_id": null
@@ -1697,7 +1837,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2f4507e8abd3a500",
-                "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
+                "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital",
+                "source_content_hash": "2159da855c1c45fd",
+                "quote_hash": "cc491dd604afdc8716a5cbf58c5d8e8f2b0815af090325482285e1953ed3070b"
               }
             ],
             "entity_id": null
@@ -1708,7 +1850,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2f4507e8abd3a500",
-                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures",
+                "source_content_hash": "2159da855c1c45fd",
+                "quote_hash": "b08bf34275bb3967ffe3ce1c23919121f7aecc862bb832b13466d35961c8eae2"
               }
             ],
             "entity_id": null
@@ -1719,7 +1863,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2f4507e8abd3a500",
-                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures",
+                "source_content_hash": "2159da855c1c45fd",
+                "quote_hash": "b08bf34275bb3967ffe3ce1c23919121f7aecc862bb832b13466d35961c8eae2"
               }
             ],
             "entity_id": null
@@ -1730,7 +1876,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2f4507e8abd3a500",
-                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company"
+                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company",
+                "source_content_hash": "2159da855c1c45fd",
+                "quote_hash": "ca315e6755d9654648bed79734423d472938965c0b75e599691e129702b407c2"
               }
             ],
             "entity_id": null
@@ -1741,7 +1889,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f8a805db6934678c",
-                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures.",
+                "source_content_hash": "31eebc04f8f6aab7",
+                "quote_hash": "41a48eb7516d831af917f95fbd23b1ff3bf81aaaf6dc98e949112b52e3cd92f7"
               }
             ],
             "entity_id": null
@@ -1752,7 +1902,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f8a805db6934678c",
-                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures.",
+                "source_content_hash": "31eebc04f8f6aab7",
+                "quote_hash": "41a48eb7516d831af917f95fbd23b1ff3bf81aaaf6dc98e949112b52e3cd92f7"
               }
             ],
             "entity_id": null
@@ -1763,7 +1915,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f8a805db6934678c",
-                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures.",
+                "source_content_hash": "31eebc04f8f6aab7",
+                "quote_hash": "41a48eb7516d831af917f95fbd23b1ff3bf81aaaf6dc98e949112b52e3cd92f7"
               }
             ],
             "entity_id": null
@@ -1774,7 +1928,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f8a805db6934678c",
-                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures.",
+                "source_content_hash": "31eebc04f8f6aab7",
+                "quote_hash": "41a48eb7516d831af917f95fbd23b1ff3bf81aaaf6dc98e949112b52e3cd92f7"
               }
             ],
             "entity_id": null
@@ -1785,7 +1941,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f8a805db6934678c",
-                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures.",
+                "source_content_hash": "31eebc04f8f6aab7",
+                "quote_hash": "41a48eb7516d831af917f95fbd23b1ff3bf81aaaf6dc98e949112b52e3cd92f7"
               }
             ],
             "entity_id": null
@@ -1794,7 +1952,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2f4507e8abd3a500",
-            "quote": "Seltz announced that it has raised $12.5 million in seed funding."
+            "quote": "Seltz announced that it has raised $12.5 million in seed funding.",
+            "source_content_hash": "2159da855c1c45fd",
+            "quote_hash": "40fdd219995a1bf4dc893c4cf18fa8a78ef6d0b33f27c8500ec447f38bda7f3a"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f54ec32c67e9447c",
+            "round_original": "种子轮",
+            "amount": "$12.5 million",
+            "announced_at": "2026-06-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2f4507e8abd3a500",
+                "quote": "Seltz announced that it has raised $12.5 million in seed funding.",
+                "source_content_hash": "2159da855c1c45fd",
+                "quote_hash": "40fdd219995a1bf4dc893c4cf18fa8a78ef6d0b33f27c8500ec447f38bda7f3a"
+              }
+            ]
           }
         ]
       },
@@ -1813,15 +1992,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-604d67eacc38719c",
-              "quote": "A web search API built for agents that need real-time information at low latency."
+              "quote": "A web search API built for agents that need real-time information at low latency.",
+              "source_content_hash": "ade312fba3460be5",
+              "quote_hash": "68e2dcc9bcaae4cd5c28cf48e6cf7f79c14ee23b37ff6f038006924b3d3273b2"
             },
             {
               "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "We return the full document, not a preview."
+              "quote": "We return the full document, not a preview.",
+              "source_content_hash": "710f172d9fe126d7",
+              "quote_hash": "7c860b27d020c11e07cb5e3668e16b5b012c69d9984c7a98334a2e7fcbace0fb"
             },
             {
               "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "We deploy on-premises, in private cloud, or in whatever region your data rules require, and we're SOC 2 Type II compliant"
+              "quote": "We deploy on-premises, in private cloud, or in whatever region your data rules require, and we're SOC 2 Type II compliant",
+              "source_content_hash": "710f172d9fe126d7",
+              "quote_hash": "cbe03dc1ffa40e783c3c58476c821b57c9fb95ad79b9de03ef8ea1e525700f7d"
             }
           ],
           "entity_id": null
@@ -1838,11 +2023,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-44eee6ef93577e29",
-              "quote": "The US News API is Seltz's first publicly available vertical."
+              "quote": "The US News API is Seltz's first publicly available vertical.",
+              "source_content_hash": "5a271de4ab5ee421",
+              "quote_hash": "ba4a71204a44097c9942d7eec4162fa50dfea97dfd0f6c0708282b8c490c1c57"
             },
             {
               "source_id": "FISRC-44eee6ef93577e29",
-              "quote": "The freshness SLA is approximately one hour from publication to searchable."
+              "quote": "The freshness SLA is approximately one hour from publication to searchable.",
+              "source_content_hash": "5a271de4ab5ee421",
+              "quote_hash": "c58829da89affaf417979f7857ced92bf5a885d1f35b7f4de76784438ce78847"
             }
           ],
           "entity_id": null
@@ -1856,9 +2045,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "have a foundational lab under contract"
+              "quote": "have a foundational lab under contract",
+              "source_content_hash": "710f172d9fe126d7",
+              "quote_hash": "b124197d4ca68abe2c02a40382e7a059568742c995823d01ba27dd2a02795aeb"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1872,9 +2064,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "Parallel, founded by former Twitter CEO Parag Agrawal, recently raised $100 million at a $2 billion valuation"
+              "quote": "Parallel, founded by former Twitter CEO Parag Agrawal, recently raised $100 million at a $2 billion valuation",
+              "source_content_hash": "2159da855c1c45fd",
+              "quote_hash": "943d5ccbb2e98323221960fc2b0f22b6364e52ecb0a665fdcabacbefd36b7279"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Exa",
@@ -1886,9 +2081,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "another AI native search company, Exa, pulled in $85 million"
+              "quote": "another AI native search company, Exa, pulled in $85 million",
+              "source_content_hash": "2159da855c1c45fd",
+              "quote_hash": "ff472f69697e1481beb60aae0d882d38359d7dab5362222616f86c8d56670125"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Tavily",
@@ -1900,9 +2098,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "another called Tavily was acquired by the AI-cloud company Nebius for up to $400 million earlier this year"
+              "quote": "another called Tavily was acquired by the AI-cloud company Nebius for up to $400 million earlier this year",
+              "source_content_hash": "2159da855c1c45fd",
+              "quote_hash": "b462ecb82b537fdb2127fbfe0cc6fe9d73420877b5a040c87a93a4d3b6e17b42"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1913,7 +2114,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "returns results in under 200 milliseconds"
+              "quote": "returns results in under 200 milliseconds",
+              "source_content_hash": "2159da855c1c45fd",
+              "quote_hash": "addb843e4a8685520cbf67d0d6b43038d9386690cea88993a37685a408f537d8"
             }
           ]
         },
@@ -1924,7 +2127,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "On our Dynamic News Search Benchmark, Seltz answers at 89% accuracy, 5% higher than the next-best"
+              "quote": "On our Dynamic News Search Benchmark, Seltz answers at 89% accuracy, 5% higher than the next-best",
+              "source_content_hash": "710f172d9fe126d7",
+              "quote_hash": "edac375fcf1071e5c5f6a99a189c6e333a26a6788f9af0bae0dedf68ed3ef671"
             }
           ]
         },
@@ -1935,7 +2140,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "returns them in under 250 milliseconds, 7 to 30 times faster than others we tested"
+              "quote": "returns them in under 250 milliseconds, 7 to 30 times faster than others we tested",
+              "source_content_hash": "710f172d9fe126d7",
+              "quote_hash": "4c78194dfef55887743a8a92335db0512857c72fc62115c8a135a86d8af606a5"
             }
           ]
         },
@@ -1946,7 +2153,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-992d636afcc8c022",
-              "quote": "Since the public API launch, Seltz has seen a six-fold increase in developer sign-ups"
+              "quote": "Since the public API launch, Seltz has seen a six-fold increase in developer sign-ups",
+              "source_content_hash": "35e3fa67ed5fa565",
+              "quote_hash": "853f54caf0dbe62720a0612fd7a78663c021e603b786df3a1e3e7938fa7bb5f0"
             }
           ]
         }
@@ -1969,7 +2178,24 @@
           "团队仅15人（约6名全职），在需要大规模基础设施投入的搜索领域，人力资源极度紧张。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI基础设施/网络检索"
+        "sector": "AI基础设施/网络检索",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI智能体需要独立于Google等传统搜索引擎的、从零构建的检索基础设施。已验证信号包括：Seltz在自有基准测试中达到89%准确率、延迟低于250毫秒（比竞品快7-30倍）、每日爬取数亿页面、开发者注册量增长6倍，以及已有一家基础模型实验室签约。然而，Seltz仅融资$12.5M，而竞品Parallel已融资$1亿、Exa融资$8500万、Tavily被以最高$4亿收购，资本差距悬殊。当前判断的证据边界限于Seltz自报的基准测试数据和早期商业牵引力，尚未有独立第三方验证或大规模企业部署的公开证据。",
+          "evidence_signals": [
+            "自研完整搜索技术栈（爬虫、索引、检索模型、排序），非包装现有搜索引擎",
+            "Dynamic News Search Benchmark准确率89%，比次优竞品高5%",
+            "查询延迟低于250毫秒，比测试的其他提供商快7-30倍",
+            "每日爬取数亿网页，响应时间低于200毫秒",
+            "已有一家基础模型实验室签约，正在进行多个智能体工作流试点",
+            "自公开API发布以来开发者注册量增长6倍"
+          ],
+          "risks": [
+            "资本劣势显著：竞品Parallel融资$1亿（估值$20亿）、Exa融资$8500万、Tavily被以最高$4亿收购，Seltz仅$1250万种子轮资金可能限制其索引规模扩张和商业化速度。",
+            "性能数据来自自有基准测试，缺乏独立第三方验证，存在基准过拟合风险。",
+            "团队仅15人（约6名全职），在需要大规模基础设施投入的搜索领域，人力资源极度紧张。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1977,233 +2203,119 @@
           "target_kind": "product",
           "research_name": "Seltz Web Search API",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-604d67eacc38719c",
-              "quote": "A web search API built for agents that need real-time information at low latency."
-            },
-            {
-              "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "We return the full document, not a preview."
-            },
-            {
-              "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "We deploy on-premises, in private cloud, or in whatever region your data rules require, and we're SOC 2 Type II compliant"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "US News API",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44eee6ef93577e29",
-              "quote": "The US News API is Seltz's first publicly available vertical."
-            },
-            {
-              "source_id": "FISRC-44eee6ef93577e29",
-              "quote": "The freshness SLA is approximately one hour from publication to searchable."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Antonio Mallia",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "Seltz founder and CEO Antonio Mallia"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Speedinvest",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "B Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Italian Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "United Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Future Back Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "futurepresent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f8a805db6934678c",
-              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "arc Investors",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f8a805db6934678c",
-              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vento Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f8a805db6934678c",
-              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mango Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f8a805db6934678c",
-              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "2100 Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f8a805db6934678c",
-              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家基础模型实验室（未具名）",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d27c7d0301fe41d7",
-              "quote": "have a foundational lab under contract"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Parallel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "Parallel, founded by former Twitter CEO Parag Agrawal, recently raised $100 million at a $2 billion valuation"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Exa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "another AI native search company, Exa, pulled in $85 million"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Tavily",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2f4507e8abd3a500",
-              "quote": "another called Tavily was acquired by the AI-cloud company Nebius for up to $400 million earlier this year"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2301,10 +2413,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:37:27.438Z"
+      "published_at": "2026-07-26T14:37:27.438Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Seltz Web Search API",
+            "US News API"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Antonio Mallia"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f54ec32c67e9447c"
+      ],
+      "aggregation": {
+        "key": "EN-e23228440ca5340f|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

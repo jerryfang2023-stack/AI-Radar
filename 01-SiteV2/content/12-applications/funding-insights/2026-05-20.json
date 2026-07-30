@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-05-20",
     "generated_at": "2026-07-26T15:05:38.386Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 1,
       "auto_published": 1,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f85a19449e9db508",
       "triggered_by_event_id": "EV-c8928410f6c145eb",
       "as_of_date": "2026-05-20",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha"
+                "quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "ae8cf4af375871d1883d4cc807e654d348dde0aff8b49fb4fb36536cb0c3cfdb"
               },
               {
                 "source_id": "FISRC-8d734c978810d91a",
-                "quote": "The company was founded in 2024 by Assem Chammah, an aerospace engineer and former McKinsey consultant who serves as CEO, and Shady Al Shoha, an AI engineer."
+                "quote": "The company was founded in 2024 by Assem Chammah, an aerospace engineer and former McKinsey consultant who serves as CEO, and Shady Al Shoha, an AI engineer.",
+                "source_content_hash": "9f6d47f3b99dee7c",
+                "quote_hash": "a281bbb6f73c640194cc1865fe5465937166c0be83ba4b7a139ea39f097fc3e0"
               }
             ],
             "entity_id": null
@@ -50,11 +55,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha"
+                "quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "ae8cf4af375871d1883d4cc807e654d348dde0aff8b49fb4fb36536cb0c3cfdb"
               },
               {
                 "source_id": "FISRC-21e200be4083b3a6",
-                "quote": "Founded by Assem Chammah and AI engineer Shady Al Shoha"
+                "quote": "Founded by Assem Chammah and AI engineer Shady Al Shoha",
+                "source_content_hash": "c0b3dc5a4e05a49c",
+                "quote_hash": "b2e74214ac8aac191668b352b9e086dfa27cac35dee46a076ee93f91c9739513"
               }
             ],
             "entity_id": null
@@ -68,12 +77,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-14ff8eaae437ca5e",
-            "quote": "Nexus is an enterprise AI platform that enables business teams to build and deploy autonomous AI agents without engineering dependency."
+            "quote": "Nexus is an enterprise AI platform that enables business teams to build and deploy autonomous AI agents without engineering dependency.",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote_hash": "f0621e26cf7d788860bbdc9233f06f2876982fdf6433f3137430b12f5b977d8a"
           }
         ]
       },
       "financing": {
-        "round": "Seed",
+        "round": "种子轮",
         "amount": "$4.3M",
         "total_raised": "$4.3M",
         "announced_at": "2026-03-31",
@@ -84,11 +95,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "The round was led by General Catalyst"
+                "quote": "The round was led by General Catalyst",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "9187a45ffe0ea1fbd2395a3bb7137ee3546c0a461603eb82f5ecb17497538472"
               },
               {
                 "source_id": "FISRC-8d734c978810d91a",
-                "quote": "General Catalyst led the round."
+                "quote": "General Catalyst led the round.",
+                "source_content_hash": "9f6d47f3b99dee7c",
+                "quote_hash": "c0ad465782008d45a74714c5a990e2a70e3ca417603a8c7b2ed8efdd33740271"
               }
             ],
             "entity_id": null
@@ -99,11 +114,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
+                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "793a270995a522f9400f62ead35edcc5509c720d017e552417dd425fae1cdc82"
               },
               {
                 "source_id": "FISRC-21e200be4083b3a6",
-                "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
+                "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+                "source_content_hash": "c0b3dc5a4e05a49c",
+                "quote_hash": "0f3e195a740becd895c67f974da211c5988a400fbde67b6a3952a62b32502067"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -114,11 +133,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
+                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
               },
               {
                 "source_id": "FISRC-79bfe2072e509ad8",
-                "quote": "The round was led by General Catalyst with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
+                "quote": "The round was led by General Catalyst with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+                "source_content_hash": "88232d44c76c7b89",
+                "quote_hash": "c91349b62c9e55a76cd28e3202ac8a1ed3a998e14ba72d443337f678714d111b"
               }
             ],
             "entity_id": null
@@ -129,11 +152,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
+                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
               },
               {
                 "source_id": "FISRC-8d734c978810d91a",
-                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, and Phosphor Capital"
+                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, and Phosphor Capital",
+                "source_content_hash": "9f6d47f3b99dee7c",
+                "quote_hash": "fd0c48147b16e12bbaf750aa3f1e3d4d1186eba51ef62462651cdd0a94d0a8b5"
               }
             ],
             "entity_id": null
@@ -144,11 +171,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
+                "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "624cd64acb9b0781f661d88dc6fea7477fd130d0bf1e7a938be291d30555f659"
               },
               {
                 "source_id": "FISRC-21e200be4083b3a6",
-                "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
+                "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital",
+                "source_content_hash": "c0b3dc5a4e05a49c",
+                "quote_hash": "0f3e195a740becd895c67f974da211c5988a400fbde67b6a3952a62b32502067"
               }
             ],
             "entity_id": null
@@ -159,11 +190,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
+                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "b6db9e16c33dea960e60b9a82a38d78bec0d727f34e8d6a002ece11b594e272b"
               },
               {
                 "source_id": "FISRC-79bfe2072e509ad8",
-                "quote": "individual investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz"
+                "quote": "individual investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz",
+                "source_content_hash": "88232d44c76c7b89",
+                "quote_hash": "8b66d5cc29786123066c125a702e61e2fed525f5569d2dd56f7da873889e29e5"
               }
             ],
             "entity_id": null
@@ -174,11 +209,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
+                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "b6db9e16c33dea960e60b9a82a38d78bec0d727f34e8d6a002ece11b594e272b"
               },
               {
                 "source_id": "FISRC-8d734c978810d91a",
-                "quote": "Angel investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz also joined."
+                "quote": "Angel investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz also joined.",
+                "source_content_hash": "9f6d47f3b99dee7c",
+                "quote_hash": "436080699317a279908b87acd550ac114e130996094788e841faab0c55e930d0"
               }
             ],
             "entity_id": null
@@ -189,11 +228,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-14ff8eaae437ca5e",
-                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
+                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "b6db9e16c33dea960e60b9a82a38d78bec0d727f34e8d6a002ece11b594e272b"
               },
               {
                 "source_id": "FISRC-21e200be4083b3a6",
-                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
+                "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+                "source_content_hash": "c0b3dc5a4e05a49c",
+                "quote_hash": "b6db9e16c33dea960e60b9a82a38d78bec0d727f34e8d6a002ece11b594e272b"
               }
             ],
             "entity_id": null
@@ -202,7 +245,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-14ff8eaae437ca5e",
-            "quote": "Nexus Raises $4.3M Seed Round to Help Business Teams Deploy"
+            "quote": "Nexus Raises $4.3M Seed Round to Help Business Teams Deploy",
+            "source_content_hash": "ed9ee46cde0da7e9",
+            "quote_hash": "db183de3d5891f042d82a6188c62e75a7009d8d169f5fd16a25da5496e1c7f3b"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c8928410f6c145eb",
+            "round_original": "Seed",
+            "amount": "$4.3M",
+            "announced_at": "2026-03-31",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-14ff8eaae437ca5e",
+                "quote": "Nexus Raises $4.3M Seed Round to Help Business Teams Deploy",
+                "source_content_hash": "ed9ee46cde0da7e9",
+                "quote_hash": "db183de3d5891f042d82a6188c62e75a7009d8d169f5fd16a25da5496e1c7f3b"
+              }
+            ]
           }
         ]
       },
@@ -222,7 +286,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "The platform enables non-technical teams to deploy agents, embedded with governance and compliance, that execute complete workflows end-to-end across CRM, ERP, Slack, Teams, and other core enterprise systems."
+              "quote": "The platform enables non-technical teams to deploy agents, embedded with governance and compliance, that execute complete workflows end-to-end across CRM, ERP, Slack, Teams, and other core enterprise systems.",
+              "source_content_hash": "ed9ee46cde0da7e9",
+              "quote_hash": "de864d7e6eb699c4abea4e07080e01589874494e4d161fa44f0d9f386b56ac78"
             }
           ],
           "entity_id": null
@@ -236,9 +302,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Orange deployed a customer onboarding agent in four weeks, saw conversion rates increase by 50%, and is generating more than $6 million in annual LTV from that single agent."
+              "quote": "Orange deployed a customer onboarding agent in four weeks, saw conversion rates increase by 50%, and is generating more than $6 million in annual LTV from that single agent.",
+              "source_content_hash": "9f6d47f3b99dee7c",
+              "quote_hash": "3da796360feec5e76e4078973e490c5836dc5499376d880b82c501b3d0faf9ce"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Lambda.ai",
@@ -247,9 +316,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Lambda.ai, an AI infrastructure company, uses Nexus to run agents across its sales and marketing functions."
+              "quote": "Lambda.ai, an AI infrastructure company, uses Nexus to run agents across its sales and marketing functions.",
+              "source_content_hash": "9f6d47f3b99dee7c",
+              "quote_hash": "a1b1bea1e96c704a420256fecfeb996b83de378eafeaebf769b3486f42124293"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Proximus Global",
@@ -258,9 +330,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Nexus also counts Proximus Global among its enterprise customers."
+              "quote": "Nexus also counts Proximus Global among its enterprise customers.",
+              "source_content_hash": "9f6d47f3b99dee7c",
+              "quote_hash": "45fd78915b744417a4aaf54c0c484bb643c6507aefe5e083afb6faf6c38624ab"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -274,9 +349,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "LangChain / LangSmith: Self-serve platform for agent orchestration, observability, and debugging. Best for technical teams with ML engineering depth."
+              "quote": "LangChain / LangSmith: Self-serve platform for agent orchestration, observability, and debugging. Best for technical teams with ML engineering depth.",
+              "source_content_hash": "fa71076c416ead44",
+              "quote_hash": "5a81ca406924c64bbd3d7c1fb6909c368ddd61078947556101d513b5f24a25e9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Fixie.ai",
@@ -288,9 +366,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "Fixie.ai: No-code agent builder with governance and compliance tools. Similar white-glove approach, focused on customer service use cases."
+              "quote": "Fixie.ai: No-code agent builder with governance and compliance tools. Similar white-glove approach, focused on customer service use cases.",
+              "source_content_hash": "fa71076c416ead44",
+              "quote_hash": "6e34a798fa71b0a72491815d113ad1bd8df12c041c6c3410f6081bf6d6f61e26"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Kore.ai",
@@ -302,9 +383,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "Kore.ai: Enterprise conversational AI platform with agent deployment services. Strong in financial services and healthcare."
+              "quote": "Kore.ai: Enterprise conversational AI platform with agent deployment services. Strong in financial services and healthcare.",
+              "source_content_hash": "fa71076c416ead44",
+              "quote_hash": "69d50d851e2a643967140bc6a5f7b68d736a27fcb390684549e53f29c9e22d8a"
             }
-          ]
+          ],
+          "entity_id": "EN-ae4ea495016fb286"
         },
         {
           "name": "CrewAI",
@@ -316,9 +400,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "CrewAI: Open-source agent orchestration framework. Zero white-glove support, requires technical teams."
+              "quote": "CrewAI: Open-source agent orchestration framework. Zero white-glove support, requires technical teams.",
+              "source_content_hash": "fa71076c416ead44",
+              "quote_hash": "2b8690aafa180fe69c40bfc6c80af58e0d624c58f524848850bbb333938cab2b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Salesforce Agentforce",
@@ -330,9 +417,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "Salesforce Agentforce: Enterprise sales and service agents with built-in Salesforce integration. White-glove deployment for Fortune 500 only."
+              "quote": "Salesforce Agentforce: Enterprise sales and service agents with built-in Salesforce integration. White-glove deployment for Fortune 500 only.",
+              "source_content_hash": "fa71076c416ead44",
+              "quote_hash": "9e8c5efdca5574e5c0f5cf87d73198f4d53967db949358ce961337e381ebf038"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -343,11 +433,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "Orange saw increased conversion rates by 50%"
+              "quote": "Orange saw increased conversion rates by 50%",
+              "source_content_hash": "ed9ee46cde0da7e9",
+              "quote_hash": "e03a1f55d20dedb61bf92cd24f54f9ba72790ea09f8cd34ba6a374411e284d15"
             },
             {
               "source_id": "FISRC-8d734c978810d91a",
-              "quote": "conversion rates increase by 50%"
+              "quote": "conversion rates increase by 50%",
+              "source_content_hash": "9f6d47f3b99dee7c",
+              "quote_hash": "c9d9ab45f53f71a9a24659ad13c62742e371121095328effc84e10134e2b7d21"
             }
           ]
         },
@@ -358,11 +452,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "generating more than $6 million in annual LTV with a single agent"
+              "quote": "generating more than $6 million in annual LTV with a single agent",
+              "source_content_hash": "ed9ee46cde0da7e9",
+              "quote_hash": "92a609f9b1c1fefdb2192f313a32097d0b35dad9ef627a704f319c9f6d4e5916"
             },
             {
               "source_id": "FISRC-8d734c978810d91a",
-              "quote": "generating more than $6 million in annual LTV from that single agent"
+              "quote": "generating more than $6 million in annual LTV from that single agent",
+              "source_content_hash": "9f6d47f3b99dee7c",
+              "quote_hash": "f61bb66c636a0b1edca2ed70107ac15d77c4b4fa05ea7bf813686c22443c72c5"
             }
           ]
         },
@@ -373,7 +471,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "Customer satisfaction increased by more than 10 points"
+              "quote": "Customer satisfaction increased by more than 10 points",
+              "source_content_hash": "ed9ee46cde0da7e9",
+              "quote_hash": "2cf7cfb777f1157c9709a7e5d455ed6f0ed43a8bafabd94705027bfe72050d7d"
             }
           ]
         },
@@ -384,11 +484,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "deployed a customer onboarding agent with Nexus in four weeks"
+              "quote": "deployed a customer onboarding agent with Nexus in four weeks",
+              "source_content_hash": "ed9ee46cde0da7e9",
+              "quote_hash": "c8952bb25d747fc0a9819e75b7ff5b80cf0ad84fbb112bda253dc36c4e530152"
             },
             {
               "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Orange deployed a customer onboarding agent in four weeks"
+              "quote": "Orange deployed a customer onboarding agent in four weeks",
+              "source_content_hash": "9f6d47f3b99dee7c",
+              "quote_hash": "139643924286a20be740edf234d646675d955ce6bea752d11c8faa74af0b4fee"
             }
           ]
         },
@@ -399,11 +503,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "It supports more than 4,000 integrations across enterprise systems"
+              "quote": "It supports more than 4,000 integrations across enterprise systems",
+              "source_content_hash": "ed9ee46cde0da7e9",
+              "quote_hash": "261ff15aec4da350c14f9cb4c42416c2c66e28647e562c44506ed532f465a30e"
             },
             {
               "source_id": "FISRC-8d734c978810d91a",
-              "quote": "connected to their existing systems through 4,000+ integrations"
+              "quote": "connected to their existing systems through 4,000+ integrations",
+              "source_content_hash": "9f6d47f3b99dee7c",
+              "quote_hash": "26bade9aa4294f2faebd3c9c4e8d5d4817ef13fbc8205e2a09f6abcddd20e6be"
             }
           ]
         }
@@ -425,7 +533,23 @@
           "跨行业ROI可复制性未证实：Orange的30倍ROI可能为电信行业特例，汽车、咨询、科技等其他行业的回报数据缺失"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI智能体部署平台"
+        "sector": "企业AI智能体部署平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业AI智能体从试点到生产的68个百分点部署缺口。Nexus以白手套实施模式切入，将部署周期压缩至4周，并通过Orange的50%转化率提升和$6M年化LTV等硬ROI数据验证了商业价值。本轮$4.3M种子轮由General Catalyst领投，YC持续参与，估值未披露，但基于可比种子轮推测在$15-25M区间。投资判断的证据边界限于两个公开客户案例（Orange和Lambda.ai），客户总数、ARR和单位经济模型均未公开，白手套模式的可扩展性和跨行业ROI可复制性尚未被大规模验证。",
+          "evidence_signals": [
+            "Orange在4周内部署客户引导智能体，转化率提升50%，单个智能体年化LTV超过$6M",
+            "Orange客户满意度提升超过10个点，对话质量和一致性显著改善",
+            "Lambda.ai在销售和市场部门部署智能体，单个智能体节省数百到数千小时",
+            "平台支持4000+企业系统集成，内嵌治理与合规控制",
+            "Proximus Global被列为早期企业客户"
+          ],
+          "risks": [
+            "客户集中度高：目前仅公开Orange和Lambda.ai两个案例，Proximus Global无具体使用数据，客户总数未知，单一客户依赖风险显著",
+            "白手套模式可扩展性存疑：每客户需配备专属工程和赋能团队，$4.3M种子轮能否支撑多客户并行交付的烧钱速度未经验证",
+            "跨行业ROI可复制性未证实：Orange的30倍ROI可能为电信行业特例，汽车、咨询、科技等其他行业的回报数据缺失"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -433,287 +557,133 @@
           "target_kind": "product",
           "research_name": "Nexus Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "The platform enables non-technical teams to deploy agents, embedded with governance and compliance, that execute complete workflows end-to-end across CRM, ERP, Slack, Teams, and other core enterprise systems."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Assem Chammah",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha"
-            },
-            {
-              "source_id": "FISRC-8d734c978810d91a",
-              "quote": "The company was founded in 2024 by Assem Chammah, an aerospace engineer and former McKinsey consultant who serves as CEO, and Shady Al Shoha, an AI engineer."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Shady Al Shoha",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "Nexus, a Y Combinator-backed company founded in 2024 by former McKinsey consultant Assem Chammah and AI engineer Shady Al Shoha"
-            },
-            {
-              "source_id": "FISRC-21e200be4083b3a6",
-              "quote": "Founded by Assem Chammah and AI engineer Shady Al Shoha"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "The round was led by General Catalyst"
-            },
-            {
-              "source_id": "FISRC-8d734c978810d91a",
-              "quote": "General Catalyst led the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital, and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
-            },
-            {
-              "source_id": "FISRC-21e200be4083b3a6",
-              "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Transpose Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
-            },
-            {
-              "source_id": "FISRC-79bfe2072e509ad8",
-              "quote": "The round was led by General Catalyst with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Twenty Two Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
-            },
-            {
-              "source_id": "FISRC-8d734c978810d91a",
-              "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, and Phosphor Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Phosphor Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
-            },
-            {
-              "source_id": "FISRC-21e200be4083b3a6",
-              "quote": "The round was led by General Catalyst, with participation from Y Combinator, Transpose Platform, Twenty Two Ventures, Phosphor Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Gokul Rajaram",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
-            },
-            {
-              "source_id": "FISRC-79bfe2072e509ad8",
-              "quote": "individual investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Raphael Schaad",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
-            },
-            {
-              "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Angel investors including Gokul Rajaram, Raphael Schaad, and Jake Mintz also joined."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jake Mintz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-14ff8eaae437ca5e",
-              "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
-            },
-            {
-              "source_id": "FISRC-21e200be4083b3a6",
-              "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Orange",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Orange deployed a customer onboarding agent in four weeks, saw conversion rates increase by 50%, and is generating more than $6 million in annual LTV from that single agent."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Lambda.ai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Lambda.ai, an AI infrastructure company, uses Nexus to run agents across its sales and marketing functions."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Proximus Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8d734c978810d91a",
-              "quote": "Nexus also counts Proximus Global among its enterprise customers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "LangChain / LangSmith",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "LangChain / LangSmith: Self-serve platform for agent orchestration, observability, and debugging. Best for technical teams with ML engineering depth."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Fixie.ai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "Fixie.ai: No-code agent builder with governance and compliance tools. Similar white-glove approach, focused on customer service use cases."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Kore.ai",
           "canonical_entity_id": "EN-ae4ea495016fb286",
-          "canonical_name": "Kore.ai",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "Kore.ai: Enterprise conversational AI platform with agent deployment services. Strong in financial services and healthcare."
-            }
-          ]
+          "canonical_name": "Kore.ai"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "CrewAI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "CrewAI: Open-source agent orchestration framework. Zero white-glove support, requires technical teams."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Salesforce Agentforce",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ae596fbb903c44f4",
-              "quote": "Salesforce Agentforce: Enterprise sales and service agents with built-in Salesforce integration. White-glove deployment for Fortune 500 only."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -799,10 +769,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:07:34.912Z"
+      "published_at": "2026-07-26T14:07:34.912Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Nexus Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Assem Chammah",
+            "Shady Al Shoha"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c8928410f6c145eb"
+      ],
+      "aggregation": {
+        "key": "EN-f5cfcb570b7edac2|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

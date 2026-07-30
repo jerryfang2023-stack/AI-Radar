@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-01",
     "generated_at": "2026-07-26T15:14:58.671Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 1,
       "auto_published": 1,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-b13dae52ea8e6715",
       "triggered_by_event_id": "EV-ad75efcb12a07793",
       "as_of_date": "2026-07-01",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen"
+                "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "79401a983ddc7934834cfac75b65dabe5f1dcf2f922ed5e11ca930d397edc26f"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen"
+                "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "79401a983ddc7934834cfac75b65dabe5f1dcf2f922ed5e11ca930d397edc26f"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-93ad55204895a7ae",
-                "quote": "Etched was founded in 2022 by Chris Zhu , Gavin Uberti , and Robert Wachen"
+                "quote": "Etched was founded in 2022 by Chris Zhu , Gavin Uberti , and Robert Wachen",
+                "source_content_hash": "ea6962ff49d28cc4",
+                "quote_hash": "81bc9377268cfde65c9a825bc26a94aac4c3b7178ae239a3b9075ce2001c5003"
               }
             ],
             "entity_id": null
@@ -69,19 +76,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "More than half of the company’s 400 employees live close to the firm’s San Jose, California, headquarters"
+              "quote": "More than half of the company’s 400 employees live close to the firm’s San Jose, California, headquarters",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "80b59eefe0694cb065296e721eafbe6c7397d08eb24fb204cd1f6ac3038fe674"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-b750a2ea9e7c7b76",
-            "quote": "Etched, founded in 2022, also revealed that it has now raised a total of $800 million to date."
+            "quote": "Etched, founded in 2022, also revealed that it has now raised a total of $800 million to date.",
+            "source_content_hash": "ae0a2fdbd54bc340",
+            "quote_hash": "7274632621b0336abc74a15ff2d61394a62253dadb174c63edfde881a7a0ce70"
           }
         ]
       },
       "financing": {
-        "round": "未披露轮次",
+        "round": "轮次未披露",
         "amount": "$500 million",
         "total_raised": "$800 million",
         "announced_at": "2026-06-30",
@@ -92,7 +103,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "Stripes, who led the $500 million round"
+                "quote": "Stripes, who led the $500 million round",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "ea3b5e4ac58dae32c13cb789b74a3cd4d97d4e4ea8ed6358c00a91af8ef0dc43"
               }
             ],
             "entity_id": null
@@ -103,7 +116,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
               }
             ],
             "entity_id": null
@@ -114,7 +129,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
               }
             ],
             "entity_id": null
@@ -125,7 +142,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
               }
             ],
             "entity_id": null
@@ -136,7 +155,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
               }
             ],
             "entity_id": null
@@ -147,7 +168,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
               }
             ],
             "entity_id": null
@@ -158,7 +181,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-93ad55204895a7ae",
-                "quote": "The latest funding round was led by Stripes, with participation from Peter Thiel , Positive Sum, and Ribbit Capital"
+                "quote": "The latest funding round was led by Stripes, with participation from Peter Thiel , Positive Sum, and Ribbit Capital",
+                "source_content_hash": "ea6962ff49d28cc4",
+                "quote_hash": "f7778dff68e632669e8b937800711d2d98c703f9bd7112ee9061bbf15fec5fd5"
               }
             ],
             "entity_id": null
@@ -169,106 +194,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-93ad55204895a7ae",
-                "quote": "The latest funding round was led by Stripes, with participation from Peter Thiel , Positive Sum, and Ribbit Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Primary Venture Partners",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-93ad55204895a7ae",
-                "quote": "Earlier supporters include Primary Venture Partners"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Andrej Karpathy",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Geoffrey Hinton",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Fei-Fei Li",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Arthur Mensch",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Scott Wu",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Stanley Druckenmiller",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b750a2ea9e7c7b76",
-                "quote": "The cap table also includes billionaires Stanley Druckenmiller and Peter Thiel."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Thomas Dohmke",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-93ad55204895a7ae",
-                "quote": "Earlier supporters include Primary Venture Partners, along with notable angels such as GitHub CEO Thomas Dohmke and former Coinbase executive Balaji Srinivasan."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Balaji Srinivasan",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-93ad55204895a7ae",
-                "quote": "Earlier supporters include Primary Venture Partners, along with notable angels such as GitHub CEO Thomas Dohmke and former Coinbase executive Balaji Srinivasan."
+                "quote": "The latest funding round was led by Stripes, with participation from Peter Thiel , Positive Sum, and Ribbit Capital",
+                "source_content_hash": "ea6962ff49d28cc4",
+                "quote_hash": "f7778dff68e632669e8b937800711d2d98c703f9bd7112ee9061bbf15fec5fd5"
               }
             ],
             "entity_id": null
@@ -277,7 +205,200 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b750a2ea9e7c7b76",
-            "quote": "The most recent tranche was an unannounced $500 million round closed in December at a $5 billion post-money valuation"
+            "quote": "The most recent tranche was an unannounced $500 million round closed in December at a $5 billion post-money valuation",
+            "source_content_hash": "ae0a2fdbd54bc340",
+            "quote_hash": "bbd340df8d7d46f617d90ae3f420007d1c8b275896cf7fb63bf6272f5c91ab89"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "other_round_investors": [
+          {
+            "name": "Primary Venture Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-93ad55204895a7ae",
+                "quote": "Earlier supporters include Primary Venture Partners",
+                "source_content_hash": "ea6962ff49d28cc4",
+                "quote_hash": "bb5b32bb7c59b66508b84a857c6ade35fa71d0e501fd0fc207f254d4ea793fa8"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Andrej Karpathy",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b750a2ea9e7c7b76",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Geoffrey Hinton",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b750a2ea9e7c7b76",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Fei-Fei Li",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b750a2ea9e7c7b76",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Arthur Mensch",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b750a2ea9e7c7b76",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Scott Wu",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b750a2ea9e7c7b76",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Stanley Druckenmiller",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b750a2ea9e7c7b76",
+                "quote": "The cap table also includes billionaires Stanley Druckenmiller and Peter Thiel.",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "9852627b60ea706872913c25702d4c735cc2449aa14d1b12db6b41fc75160882"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Thomas Dohmke",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-93ad55204895a7ae",
+                "quote": "Earlier supporters include Primary Venture Partners, along with notable angels such as GitHub CEO Thomas Dohmke and former Coinbase executive Balaji Srinivasan.",
+                "source_content_hash": "ea6962ff49d28cc4",
+                "quote_hash": "aa0b19af44eb2e8e91b81849ab52daa5abf617c83562ede7fe67e062900d6f20"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Balaji Srinivasan",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-93ad55204895a7ae",
+                "quote": "Earlier supporters include Primary Venture Partners, along with notable angels such as GitHub CEO Thomas Dohmke and former Coinbase executive Balaji Srinivasan.",
+                "source_content_hash": "ea6962ff49d28cc4",
+                "quote_hash": "aa0b19af44eb2e8e91b81849ab52daa5abf617c83562ede7fe67e062900d6f20"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-ad75efcb12a07793",
+            "round_original": "未披露轮次",
+            "amount": "$500 million",
+            "announced_at": "2026-06-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b750a2ea9e7c7b76",
+                "quote": "The most recent tranche was an unannounced $500 million round closed in December at a $5 billion post-money valuation",
+                "source_content_hash": "ae0a2fdbd54bc340",
+                "quote_hash": "bbd340df8d7d46f617d90ae3f420007d1c8b275896cf7fb63bf6272f5c91ab89"
+              }
+            ]
           }
         ]
       },
@@ -294,15 +415,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "At the centre of that effort is Sohu, Etched’s custom AI accelerator."
+              "quote": "At the centre of that effort is Sohu, Etched’s custom AI accelerator.",
+              "source_content_hash": "ea6962ff49d28cc4",
+              "quote_hash": "f9a30aa23e3b97500f4d38054e95f3c4103deaa3d3538472d890b88539b0d1f6"
             },
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "Working with TSMC, Etched has developed a technology it calls low-voltage inference, essentially running the chips at lower voltage to prevent overheating."
+              "quote": "Working with TSMC, Etched has developed a technology it calls low-voltage inference, essentially running the chips at lower voltage to prevent overheating.",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "ee781e5ccbb2741cdfce200ba77ab9f694c71e052c23b811a3002c4ebbe9d7cb"
             },
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "The company also developed a memory system that combines two different kinds — the High-Bandwidth Memory that’s critical to Nvidia’s chips and the Static Random-Access Memory that’s increasingly being used in chips meant for fast responses to AI queries."
+              "quote": "The company also developed a memory system that combines two different kinds — the High-Bandwidth Memory that’s critical to Nvidia’s chips and the Static Random-Access Memory that’s increasingly being used in chips meant for fast responses to AI queries.",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "d0384d761efbe6b7ba2df361756d6d1c6ce08284658beca3e15b6c01fe2cbda7"
             }
           ],
           "entity_id": null
@@ -319,11 +446,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "It calls these systems “frontier inference clusters,” bundles that include the chips along with custom-designed racks and software, all built to help frontier models run inference faster, more cheaply, and with better power efficiency than rivals"
+              "quote": "It calls these systems “frontier inference clusters,” bundles that include the chips along with custom-designed racks and software, all built to help frontier models run inference faster, more cheaply, and with better power efficiency than rivals",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "cd059aff52bcd7961de18c80fe8f82292bdff7b64f4d62665ac61f5c6c246574"
             },
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "Besides creating custom chips, Etched designs its entire server rack — the circuit boards, plates for cooling the chips, networking connections and more."
+              "quote": "Besides creating custom chips, Etched designs its entire server rack — the circuit boards, plates for cooling the chips, networking connections and more.",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "2acde1e5a3f7e9b6796be977f715deb18a34731c677610c3770ca631986c41c3"
             }
           ],
           "entity_id": null
@@ -341,13 +472,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Nvidia AI chip competitor Etched issued a progress report on Tuesday"
+              "quote": "Nvidia AI chip competitor Etched issued a progress report on Tuesday",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "194c4fb8b63b48b749777819123bec5f605601e2bcfe8fedd4500dff90c17bb9"
             },
             {
               "source_id": "FISRC-d34539b4a1541f11",
-              "quote": "Etched claims Sohu can deliver inference up to 20 times faster than Nvidia's H100, and that a single Sohu-equipped server could replace up to 160 H100s."
+              "quote": "Etched claims Sohu can deliver inference up to 20 times faster than Nvidia's H100, and that a single Sohu-equipped server could replace up to 160 H100s.",
+              "source_content_hash": "3965e22b7a06d1f1",
+              "quote_hash": "1c767c9150ef55173411292d7fc292174aa70681860a331a0e842b7b086b24d8"
             }
-          ]
+          ],
+          "entity_id": "EN-8d4321d936320802"
         },
         {
           "name": "Cerebras",
@@ -359,9 +495,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Competitor Cerebras had the first breakout IPO of the year"
+              "quote": "Competitor Cerebras had the first breakout IPO of the year",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "aada2167194ef18396aa5284814e82ccf525d1c2a1da326a3297e8b31ba74f23"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Groq",
@@ -373,13 +512,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "AI chip maker Groq just raised $650 million"
+              "quote": "AI chip maker Groq just raised $650 million",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "3d4c6c4773d9ab905286b6707cede959ef28bad0e734d0a6ef84daeccc1ca201"
             },
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "Groq, another inference chip company, in December agreed to license its technology to Nvidia for a reported $20 billion."
+              "quote": "Groq, another inference chip company, in December agreed to license its technology to Nvidia for a reported $20 billion.",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "a169d5f07c1c9e0a39c01732147242ac02a59c1f94264d19e9a33ae41b1e60aa"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Amazon",
@@ -391,9 +535,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Hyperscalers Amazon, Google, and Microsoft all build their own in-house AI chips."
+              "quote": "Hyperscalers Amazon, Google, and Microsoft all build their own in-house AI chips.",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "2ec597c376525b8f4354e947d5f9180ca4298713e7660e380ef447ec1e98e597"
             }
-          ]
+          ],
+          "entity_id": "EN-cbc62794911ff31b"
         },
         {
           "name": "Google",
@@ -405,9 +552,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "In April, Alphabet Inc.’s Google announced that a version of its AI chips will focus on inference."
+              "quote": "In April, Alphabet Inc.’s Google announced that a version of its AI chips will focus on inference.",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "0f44c3a3d95fc6124975fcce15af2207517ce16ac89d64d2eee206d3ba33106c"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         }
       ],
       "metrics": [
@@ -418,7 +568,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Etched, founded in 2022, also revealed that it has now raised a total of $800 million to date."
+              "quote": "Etched, founded in 2022, also revealed that it has now raised a total of $800 million to date.",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "7274632621b0336abc74a15ff2d61394a62253dadb174c63edfde881a7a0ce70"
             }
           ]
         },
@@ -429,7 +581,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "The most recent tranche was an unannounced $500 million round closed in December at a $5 billion post-money valuation"
+              "quote": "The most recent tranche was an unannounced $500 million round closed in December at a $5 billion post-money valuation",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "bbd340df8d7d46f617d90ae3f420007d1c8b275896cf7fb63bf6272f5c91ab89"
             }
           ]
         },
@@ -440,7 +594,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "a $5 billion post-money valuation"
+              "quote": "a $5 billion post-money valuation",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "a336c43a908331136df29a55b95043129188ad7317f31c8934de018786f191a9"
             }
           ]
         },
@@ -451,7 +607,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "The startup says it has already booked $1 billion in contract orders for its product"
+              "quote": "The startup says it has already booked $1 billion in contract orders for its product",
+              "source_content_hash": "ae0a2fdbd54bc340",
+              "quote_hash": "fd69938b7be7ab7cedd848273dce554053f3c6f314658df081e1faaa19475c25"
             }
           ]
         },
@@ -462,7 +620,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "More than half of the company’s 400 employees live close to the firm’s San Jose, California, headquarters"
+              "quote": "More than half of the company’s 400 employees live close to the firm’s San Jose, California, headquarters",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "80b59eefe0694cb065296e721eafbe6c7397d08eb24fb204cd1f6ac3038fe674"
             }
           ]
         },
@@ -473,7 +633,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "The trading firm has invested a total of more than $100 million in Etched, according to people familiar with the matter."
+              "quote": "The trading firm has invested a total of more than $100 million in Etched, according to people familiar with the matter.",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "be9774a9ee375fdd33339fbd6758be6e69fc0005f5682c28172ad5e2623e552f"
             }
           ]
         }
@@ -485,7 +647,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "We've been very quiet until we had stuff to show off"
+              "quote": "We've been very quiet until we had stuff to show off",
+              "source_content_hash": "adda6a37385850c7",
+              "quote_hash": "415e00fc998432888392bb2f409fd686119bdf7bf1cebb7a76a4de3a16a29d68"
             }
           ]
         }
@@ -503,7 +667,20 @@
           "Sohu芯片硬编码为Transformer架构，若AI模型架构发生根本性转变，芯片将失去价值，存在架构过时风险。"
         ],
         "related_direction_id": "",
-        "sector": "AI芯片/半导体"
+        "sector": "AI芯片/半导体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Transformer架构的持续主导地位以及专用推理芯片相对于通用GPU的性能优势能否兑现。Etched以5亿美元估值完成5亿美元融资，其核心支撑信号包括：已获得10亿美元签约订单、芯片已由台积电成功制造并进入客户测试阶段、以及Jane Street等量化交易公司作为战略投资者参与，表明其推理工作负载的真实需求。然而，这些信号尚未经过独立基准测试验证，且芯片尚未出货，判断的证据边界止于订单承诺和投资者背书，而非实际部署后的性能数据。",
+          "evidence_signals": [
+            "已签约10亿美元合同订单",
+            "芯片已由台积电成功制造",
+            "产品已进入客户测试阶段",
+            "Jane Street总投资超过1亿美元"
+          ],
+          "risks": [
+            "Sohu芯片硬编码为Transformer架构，若AI模型架构发生根本性转变，芯片将失去价值，存在架构过时风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -511,371 +688,189 @@
           "target_kind": "product",
           "research_name": "Sohu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "At the centre of that effort is Sohu, Etched’s custom AI accelerator."
-            },
-            {
-              "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "Working with TSMC, Etched has developed a technology it calls low-voltage inference, essentially running the chips at lower voltage to prevent overheating."
-            },
-            {
-              "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "The company also developed a memory system that combines two different kinds — the High-Bandwidth Memory that’s critical to Nvidia’s chips and the Static Random-Access Memory that’s increasingly being used in chips meant for fast responses to AI queries."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Frontier Inference Clusters",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "It calls these systems “frontier inference clusters,” bundles that include the chips along with custom-designed racks and software, all built to help frontier models run inference faster, more cheaply, and with better power efficiency than rivals"
-            },
-            {
-              "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "Besides creating custom chips, Etched designs its entire server rack — the circuit boards, plates for cooling the chips, networking connections and more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gavin Uberti",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Robert Wachen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Chris Zhu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "Etched was founded in 2022 by Chris Zhu , Gavin Uberti , and Robert Wachen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Stripes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Stripes, who led the $500 million round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "VentureTech Alliance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jane Street",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hudson River Trading",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Two Sigma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Ribbit Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Peter Thiel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "The latest funding round was led by Stripes, with participation from Peter Thiel , Positive Sum, and Ribbit Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Positive Sum",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "The latest funding round was led by Stripes, with participation from Peter Thiel , Positive Sum, and Ribbit Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Primary Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "Earlier supporters include Primary Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Andrej Karpathy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Geoffrey Hinton",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Fei-Fei Li",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Arthur Mensch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Scott Wu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Stanley Druckenmiller",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "The cap table also includes billionaires Stanley Druckenmiller and Peter Thiel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Thomas Dohmke",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "Earlier supporters include Primary Venture Partners, along with notable angels such as GitHub CEO Thomas Dohmke and former Coinbase executive Balaji Srinivasan."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Balaji Srinivasan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ad55204895a7ae",
-              "quote": "Earlier supporters include Primary Venture Partners, along with notable angels such as GitHub CEO Thomas Dohmke and former Coinbase executive Balaji Srinivasan."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Nvidia AI chip competitor Etched issued a progress report on Tuesday"
-            },
-            {
-              "source_id": "FISRC-d34539b4a1541f11",
-              "quote": "Etched claims Sohu can deliver inference up to 20 times faster than Nvidia's H100, and that a single Sohu-equipped server could replace up to 160 H100s."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cerebras",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Competitor Cerebras had the first breakout IPO of the year"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Groq",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "AI chip maker Groq just raised $650 million"
-            },
-            {
-              "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "Groq, another inference chip company, in December agreed to license its technology to Nvidia for a reported $20 billion."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Amazon",
           "canonical_entity_id": "EN-cbc62794911ff31b",
-          "canonical_name": "Amazon",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b750a2ea9e7c7b76",
-              "quote": "Hyperscalers Amazon, Google, and Microsoft all build their own in-house AI chips."
-            }
-          ]
+          "canonical_name": "Amazon"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-76d3c4de416491cd",
-              "quote": "In April, Alphabet Inc.’s Google announced that a version of its AI chips will focus on inference."
-            }
-          ]
+          "canonical_name": "Google"
         }
       ],
       "funding_history": [
@@ -958,10 +953,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:42:59.814Z"
+      "published_at": "2026-07-26T14:42:59.814Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Frontier Inference Clusters",
+            "Sohu"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Chris Zhu",
+            "Gavin Uberti",
+            "Robert Wachen"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-ad75efcb12a07793"
+      ],
+      "aggregation": {
+        "key": "EN-9cb45a27a2808c01|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

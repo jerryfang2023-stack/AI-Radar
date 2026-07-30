@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-11",
     "generated_at": "2026-07-27T05:15:51.350Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 7,
       "auto_published": 5,
       "blocked": 2,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9a6af1bc18a0745a",
       "triggered_by_event_id": "EV-b1138bccf5ccd86c",
       "as_of_date": "2026-06-11",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4342690a8b21ad9d",
-                "quote": "Markie Wagner, Chief Executive Officer"
+                "quote": "Markie Wagner, Chief Executive Officer",
+                "source_content_hash": "0abde996e8c7afef",
+                "quote_hash": "672083f82c04e196d4200746db4bac3effcd31c4a954de77c3ac5fa34c6262b5"
               },
               {
                 "source_id": "FISRC-39b6a9ef5993d24e",
-                "quote": "The company is led by CEO Markie Wagner"
+                "quote": "The company is led by CEO Markie Wagner",
+                "source_content_hash": "046867b4e32d36dc",
+                "quote_hash": "7f3196fbdbd312e959736da5a379e1bbbda00f19fd1018cea6d4ce4b910b905a"
               }
             ],
             "entity_id": null
@@ -51,18 +56,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "driving Poetic to an eight-figure annualized revenue run rate in 2025 with a team of only four employees"
+              "quote": "driving Poetic to an eight-figure annualized revenue run rate in 2025 with a team of only four employees",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "99b82688546683d0f807c21bc9ed728099418040e6a020d15dd94c173f3d2690"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-1da4b36f3c2caa81",
-            "quote": "Poetic, an artificial intelligence startup, is emerging from stealth with $50 million in funding"
+            "quote": "Poetic, an artificial intelligence startup, is emerging from stealth with $50 million in funding",
+            "source_content_hash": "43f94d17c593e7f7",
+            "quote_hash": "87005d200856d2d0c1e55565610f4dd44bd2b06ad1f9509f3af22ecdbfd0f1da"
           },
           {
             "source_id": "FISRC-39b6a9ef5993d24e",
-            "quote": "Poetic, a San Francisco startup, has raised $50 million in a Series A round"
+            "quote": "Poetic, a San Francisco startup, has raised $50 million in a Series A round",
+            "source_content_hash": "046867b4e32d36dc",
+            "quote_hash": "a6e907655d7c78d250a30343f1bd96278b2036b8471e3c2b30dc790f172233f2"
           }
         ]
       },
@@ -78,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1da4b36f3c2caa81",
-                "quote": "Kleiner Perkins led the financing"
+                "quote": "Kleiner Perkins led the financing",
+                "source_content_hash": "43f94d17c593e7f7",
+                "quote_hash": "d5b50edefc71d9a34cf3bd4ad4e3e1a0b7e9e50dedef5d09b12a5d7a4c75666c"
               }
             ],
             "entity_id": null
@@ -89,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1da4b36f3c2caa81",
-                "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund"
+                "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund",
+                "source_content_hash": "43f94d17c593e7f7",
+                "quote_hash": "4642a4cccc4e453f294929216377918a655227c89c89a3d454d915261fb06bc1"
               }
             ],
             "entity_id": "EN-7d3194f79e645c42"
@@ -100,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1da4b36f3c2caa81",
-                "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund"
+                "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund",
+                "source_content_hash": "43f94d17c593e7f7",
+                "quote_hash": "4642a4cccc4e453f294929216377918a655227c89c89a3d454d915261fb06bc1"
               }
             ],
             "entity_id": null
@@ -111,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e9c3e7b8cb15af82",
-                "quote": "The round was led by Kleiner Perkins, with participation from Founders Fund, First Harmonic, and OpenAI"
+                "quote": "The round was led by Kleiner Perkins, with participation from Founders Fund, First Harmonic, and OpenAI",
+                "source_content_hash": "8686cb356451f65a",
+                "quote_hash": "116deb064ce74c5c8daf6f3b47cc6af150796cebd0c295c4a1dd356fac0bc631"
               }
             ],
             "entity_id": null
@@ -120,11 +139,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1da4b36f3c2caa81",
-            "quote": "Poetic, an artificial intelligence startup, is emerging from stealth with $50 million in funding"
+            "quote": "Poetic, an artificial intelligence startup, is emerging from stealth with $50 million in funding",
+            "source_content_hash": "43f94d17c593e7f7",
+            "quote_hash": "87005d200856d2d0c1e55565610f4dd44bd2b06ad1f9509f3af22ecdbfd0f1da"
           },
           {
             "source_id": "FISRC-e9c3e7b8cb15af82",
-            "quote": "has raised a $50 million Series A round at a $500 million valuation"
+            "quote": "has raised a $50 million Series A round at a $500 million valuation",
+            "source_content_hash": "8686cb356451f65a",
+            "quote_hash": "48991a68cf98ec51a27ef14a6e29661db637bdb7c73063a72a1afb5995ea422d"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b1138bccf5ccd86c",
+            "round_original": "A轮",
+            "amount": "$50 million",
+            "announced_at": "2026-06-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1da4b36f3c2caa81",
+                "quote": "Poetic, an artificial intelligence startup, is emerging from stealth with $50 million in funding",
+                "source_content_hash": "43f94d17c593e7f7",
+                "quote_hash": "87005d200856d2d0c1e55565610f4dd44bd2b06ad1f9509f3af22ecdbfd0f1da"
+              },
+              {
+                "source_id": "FISRC-e9c3e7b8cb15af82",
+                "quote": "has raised a $50 million Series A round at a $500 million valuation",
+                "source_content_hash": "8686cb356451f65a",
+                "quote_hash": "48991a68cf98ec51a27ef14a6e29661db637bdb7c73063a72a1afb5995ea422d"
+              }
+            ]
           }
         ]
       },
@@ -143,11 +191,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "Poetic has built a domain-specific programming environment that lets operations teams describe intricate workflows in natural language and then converts that logic into near-tokenless, fully controllable execution"
+              "quote": "Poetic has built a domain-specific programming environment that lets operations teams describe intricate workflows in natural language and then converts that logic into near-tokenless, fully controllable execution",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "35bbb3f8d18b4c6c3e0c08a1d1e3e43f2559aa61b2613272ef91c9ec1fd13108"
             },
             {
               "source_id": "FISRC-4342690a8b21ad9d",
-              "quote": "Poetic’s purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution."
+              "quote": "Poetic’s purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution.",
+              "source_content_hash": "0abde996e8c7afef",
+              "quote_hash": "2d3d36cd4db55cb19203ec6b0346a6b6983c08c6a12704e820aa0d688397c8df"
             }
           ],
           "entity_id": null
@@ -161,9 +213,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "At SoFi, Poetic reportedly achieved more than 99% quality on end-to-end fraud investigations in about five weeks"
+              "quote": "At SoFi, Poetic reportedly achieved more than 99% quality on end-to-end fraud investigations in about five weeks",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "1205a7c9501d370a771f913b3dacc981540d9dbe024a98687d5b9e9dfec62609"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "AIG",
@@ -172,9 +227,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "In the insurance sector, Poetic has reached similar accuracy on multi-hour claims and investigation processes at AIG"
+              "quote": "In the insurance sector, Poetic has reached similar accuracy on multi-hour claims and investigation processes at AIG",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "d4953f5230583f86ce67520c30b8ae1bdc682166cfe5b534fe9ecf6fe4af3857"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Chime",
@@ -183,9 +241,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-39b6a9ef5993d24e",
-              "quote": "Current clients include SoFi, AIG, and Chime."
+              "quote": "Current clients include SoFi, AIG, and Chime.",
+              "source_content_hash": "046867b4e32d36dc",
+              "quote_hash": "0cf4427449d33f3421eed45c1275ec37334e9ac30946c7127c9cc03384a15151"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -197,7 +258,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1da4b36f3c2caa81",
-              "quote": "The company is now valued at $500 million."
+              "quote": "The company is now valued at $500 million.",
+              "source_content_hash": "43f94d17c593e7f7",
+              "quote_hash": "8b58491bef439cec5e9f033dc6201121b3bb7080bdf53c65deb305092251f271"
             }
           ]
         },
@@ -208,7 +271,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "driving Poetic to an eight-figure annualized revenue run rate in 2025"
+              "quote": "driving Poetic to an eight-figure annualized revenue run rate in 2025",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "93f7cfef5eac98310ed67627a71808267cc19d374295b366b50f485a9da04b3f"
             }
           ]
         },
@@ -219,7 +284,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "Management reports 99% accuracy on processes that large enterprises have struggled to automate for decades"
+              "quote": "Management reports 99% accuracy on processes that large enterprises have struggled to automate for decades",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "c454bebade958fb103027224909a11e4c27454955b5aaa72b3ddec08a3e2b685"
             }
           ]
         },
@@ -230,7 +297,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "a 100% pilot-to-production conversion rate"
+              "quote": "a 100% pilot-to-production conversion rate",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "6aac11caf42e73321beea99b3793bd51f99bf3f3c45110a9208d90612ac76f02"
             }
           ]
         },
@@ -241,7 +310,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "At SoFi, Poetic reportedly achieved more than 99% quality on end-to-end fraud investigations in about five weeks"
+              "quote": "At SoFi, Poetic reportedly achieved more than 99% quality on end-to-end fraud investigations in about five weeks",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "1205a7c9501d370a771f913b3dacc981540d9dbe024a98687d5b9e9dfec62609"
             }
           ]
         },
@@ -252,7 +323,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-570e3a1255a95255",
-              "quote": "$200M a year saved on fraud detection for one Fortune 500 financial firm"
+              "quote": "$200M a year saved on fraud detection for one Fortune 500 financial firm",
+              "source_content_hash": "334e76db55687732",
+              "quote_hash": "491d0c5dfa73d1570f570a42fd9343891914954a159695dc804ba737b80bcdd1"
             }
           ]
         }
@@ -264,7 +337,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "CEO and founder Markie Wagner positions Poetic as “software that learns like AI but runs like code,”"
+              "quote": "CEO and founder Markie Wagner positions Poetic as “software that learns like AI but runs like code,”",
+              "source_content_hash": "8686cb356451f65a",
+              "quote_hash": "62ec2cbb0c4958842865116b094909a808ff501af0930a4de3a2d930a13bfaff"
             }
           ]
         },
@@ -274,7 +349,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-39b6a9ef5993d24e",
-              "quote": "The enterprise AI landscape is littered with pilots that never made it to production. For us, we've had a 100% pilot to production conversion rate. Our technology works, and we hire the best of the best - because we're not here to run pilots. We're here to transform businesses."
+              "quote": "The enterprise AI landscape is littered with pilots that never made it to production. For us, we've had a 100% pilot to production conversion rate. Our technology works, and we hire the best of the best - because we're not here to run pilots. We're here to transform businesses.",
+              "source_content_hash": "046867b4e32d36dc",
+              "quote_hash": "2251b45b31865f28c0a8c23c5e12f06f24e03c2517490ba0a672aea42fe75886"
             }
           ]
         }
@@ -290,7 +367,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-39b6a9ef5993d24e",
-                "quote": "What Poetic has built is genuinely different - a platform that can execute the complex, high-stakes processes that large enterprises actually run, with accuracy that exceeds what human teams can deliver. The fact that they were able to automate at the largest companies with the highest requirements is a reflection of how deeply the product works."
+                "quote": "What Poetic has built is genuinely different - a platform that can execute the complex, high-stakes processes that large enterprises actually run, with accuracy that exceeds what human teams can deliver. The fact that they were able to automate at the largest companies with the highest requirements is a reflection of how deeply the product works.",
+                "source_content_hash": "046867b4e32d36dc",
+                "quote_hash": "4e76f13adee1bc6966e7583cf2c0e008cac546318cec765fa11005da16bcffab"
               }
             ]
           }
@@ -305,7 +384,19 @@
           "技术披露有限，其声称的 99% 甚至 100% 的准确率均为公司自述，缺乏独立第三方验证，在应对监管审计和极端边缘案例时的稳健性存疑。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业级 AI 自动化"
+        "sector": "企业级 AI 自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“确定性执行”在高度受监管、零容错的企业流程中，对概率性 AI 智能体的替代价值。500M 估值依赖于已验证信号：在 SoFi 和 AIG 等标杆客户中实现了 99% 以上的准确率和 100% 的试点转生产成功率，并以 4 人团队达成了八位数年收入，证明了其产品的高壁垒和强需求。但判断的证据边界在于，这些均为公司自述数据，且其技术实现细节披露有限，其声称的 100% 准确率在应对监管审计和极端边缘案例时的稳健性尚未被独立验证。",
+          "evidence_signals": [
+            "在 SoFi 和 AIG 等头部金融、保险客户中实现 99% 以上的流程自动化准确率。",
+            "100% 的试点到生产转化率，表明产品具备快速落地和客户粘性。",
+            "2025 年以仅 4 名员工的团队规模实现了八位数的年化收入运行率，人效极高。"
+          ],
+          "risks": [
+            "技术披露有限，其声称的 99% 甚至 100% 的准确率均为公司自述，缺乏独立第三方验证，在应对监管审计和极端边缘案例时的稳健性存疑。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -313,125 +404,63 @@
           "target_kind": "product",
           "research_name": "Poetic 工作流自动化平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "Poetic has built a domain-specific programming environment that lets operations teams describe intricate workflows in natural language and then converts that logic into near-tokenless, fully controllable execution"
-            },
-            {
-              "source_id": "FISRC-4342690a8b21ad9d",
-              "quote": "Poetic’s purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Markie Wagner",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4342690a8b21ad9d",
-              "quote": "Markie Wagner, Chief Executive Officer"
-            },
-            {
-              "source_id": "FISRC-39b6a9ef5993d24e",
-              "quote": "The company is led by CEO Markie Wagner"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kleiner Perkins",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1da4b36f3c2caa81",
-              "quote": "Kleiner Perkins led the financing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1da4b36f3c2caa81",
-              "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund"
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1da4b36f3c2caa81",
-              "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "First Harmonic",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "The round was led by Kleiner Perkins, with participation from Founders Fund, First Harmonic, and OpenAI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "SoFi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "At SoFi, Poetic reportedly achieved more than 99% quality on end-to-end fraud investigations in about five weeks"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "AIG",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9c3e7b8cb15af82",
-              "quote": "In the insurance sector, Poetic has reached similar accuracy on multi-hour claims and investigation processes at AIG"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Chime",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-39b6a9ef5993d24e",
-              "quote": "Current clients include SoFi, AIG, and Chime."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -526,13 +555,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-27T05:15:51.271Z"
+      "published_at": "2026-07-27T05:15:51.271Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Poetic 工作流自动化平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Markie Wagner"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-b1138bccf5ccd86c"
+      ],
+      "aggregation": {
+        "key": "EN-b314f58f5f506fd2|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-2c7e9c7109babb35",
       "triggered_by_event_id": "EV-8861a42a8679562a",
       "as_of_date": "2026-06-11",
@@ -552,11 +610,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-12d28955f3aa1a00",
-            "quote": "Initial Investment to Accelerate Anthropic’s Compute Capacity as Part of Broader Global AI Infrastructure Platform"
+            "quote": "Initial Investment to Accelerate Anthropic’s Compute Capacity as Part of Broader Global AI Infrastructure Platform",
+            "source_content_hash": "c6cabe1fdd048dc5",
+            "quote_hash": "eca45ef24cb7565993aa4142cca9142cd8beeae946989c5a90182e2c7ac4c929"
           },
           {
             "source_id": "FISRC-a2fa6a23e92fab82",
-            "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026."
+            "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
+            "source_content_hash": "4fccd7893580ad9b",
+            "quote_hash": "e4c0e73e3b60421cc8c3eeee6a46c8d628dcd8ead351e5a5266b314f708fb5e2"
           }
         ]
       },
@@ -572,11 +634,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-12d28955f3aa1a00",
-                "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution"
+                "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution",
+                "source_content_hash": "c6cabe1fdd048dc5",
+                "quote_hash": "5abeb14d93350c34a5fcca25aaa20c6bb10ce217d6931f75daa9db1b632c29b4"
               },
               {
                 "source_id": "FISRC-a689df7815b7bebf",
-                "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic"
+                "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+                "source_content_hash": "3f1bfda19f8a176b",
+                "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
               }
             ],
             "entity_id": null
@@ -587,11 +653,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-12d28955f3aa1a00",
-                "quote": "in partnership with Blackstone (NYSE: BX) and leading global banks"
+                "quote": "in partnership with Blackstone (NYSE: BX) and leading global banks",
+                "source_content_hash": "c6cabe1fdd048dc5",
+                "quote_hash": "c142430fd3a19034e88e601c9ac511ff7adec4533322806a83650221ca484a20"
               },
               {
                 "source_id": "FISRC-a689df7815b7bebf",
-                "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic"
+                "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+                "source_content_hash": "3f1bfda19f8a176b",
+                "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
               }
             ],
             "entity_id": null
@@ -600,11 +670,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-a689df7815b7bebf",
-            "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic to expand its AI infrastructure"
+            "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic to expand its AI infrastructure",
+            "source_content_hash": "3f1bfda19f8a176b",
+            "quote_hash": "981c89a388fb0ef9fb5c150a2fc6d435d11d488dbbf566275d16c36562f5428e"
           },
           {
             "source_id": "FISRC-12d28955f3aa1a00",
-            "quote": "Apollo-managed funds and affiliates are leading an initial $35 billion capital solution as part of Broadcom’s new AI XPV Platform"
+            "quote": "Apollo-managed funds and affiliates are leading an initial $35 billion capital solution as part of Broadcom’s new AI XPV Platform",
+            "source_content_hash": "c6cabe1fdd048dc5",
+            "quote_hash": "94b96b4e39bf39ad836e221dfbca37a8b0b9b4c2051940403f525e74fbf9c080"
+          }
+        ],
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-8861a42a8679562a",
+            "round_original": "基础设施融资",
+            "amount": "350亿美元",
+            "announced_at": "2026-06-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a689df7815b7bebf",
+                "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic to expand its AI infrastructure",
+                "source_content_hash": "3f1bfda19f8a176b",
+                "quote_hash": "981c89a388fb0ef9fb5c150a2fc6d435d11d488dbbf566275d16c36562f5428e"
+              },
+              {
+                "source_id": "FISRC-12d28955f3aa1a00",
+                "quote": "Apollo-managed funds and affiliates are leading an initial $35 billion capital solution as part of Broadcom’s new AI XPV Platform",
+                "source_content_hash": "c6cabe1fdd048dc5",
+                "quote_hash": "94b96b4e39bf39ad836e221dfbca37a8b0b9b4c2051940403f525e74fbf9c080"
+              }
+            ]
           }
         ]
       },
@@ -621,11 +720,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026."
+              "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026.",
+              "source_content_hash": "c6cabe1fdd048dc5",
+              "quote_hash": "e4c0e73e3b60421cc8c3eeee6a46c8d628dcd8ead351e5a5266b314f708fb5e2"
             },
             {
               "source_id": "FISRC-a2fa6a23e92fab82",
-              "quote": "pairing some of the world's most advanced silicon and networking solutions with long-term, flexible capital"
+              "quote": "pairing some of the world's most advanced silicon and networking solutions with long-term, flexible capital",
+              "source_content_hash": "4fccd7893580ad9b",
+              "quote_hash": "fd73de55ef1f51a86ad43db96b04b9a7378878b12ca80d7080c884d750e740db"
             }
           ],
           "entity_id": null
@@ -641,7 +744,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a689df7815b7bebf",
-              "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic"
+              "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic",
+              "source_content_hash": "3f1bfda19f8a176b",
+              "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
             }
           ]
         },
@@ -652,7 +757,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure"
+              "quote": "Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure",
+              "source_content_hash": "c6cabe1fdd048dc5",
+              "quote_hash": "ebaf591698ff7bb9569332a8a0a964ea30f2362411829f77042a4b1527fc7ac0"
             }
           ]
         },
@@ -663,7 +770,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "The Platform is designed to enable over 20GW in compute capacity for leading frontier AI labs through 2028."
+              "quote": "The Platform is designed to enable over 20GW in compute capacity for leading frontier AI labs through 2028.",
+              "source_content_hash": "c6cabe1fdd048dc5",
+              "quote_hash": "25899ba73b9ebc691a420e2f16a9aac60d8f5f35e3ba4f9ce6ab20042700da2a"
             }
           ]
         }
@@ -675,7 +784,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "Broadcom and Anthropic are world-class companies operating at the frontier of technological innovation, and we are proud to have led the largest private financing ever executed."
+              "quote": "Broadcom and Anthropic are world-class companies operating at the frontier of technological innovation, and we are proud to have led the largest private financing ever executed.",
+              "source_content_hash": "c6cabe1fdd048dc5",
+              "quote_hash": "450ecb52e2c69f4dbd73a276e034a31c3be9a729cc0c92966ce852ca3ce11eee"
             }
           ]
         },
@@ -685,7 +796,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "AI compute is rapidly emerging as one of the most compelling new asset classes in finance, characterized by contracted cash flows, mission-critical utility and a supply-demand dynamic that continues to intensify."
+              "quote": "AI compute is rapidly emerging as one of the most compelling new asset classes in finance, characterized by contracted cash flows, mission-critical utility and a supply-demand dynamic that continues to intensify.",
+              "source_content_hash": "c6cabe1fdd048dc5",
+              "quote_hash": "84bee757a08aeb1f469369c5465b88371d13d0fcec46aa0d4171fb5342fdb4ed"
             }
           ]
         },
@@ -695,7 +808,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "The demand for AI compute is growing faster than traditional capital markets can accommodate, and this initial transaction, led by Apollo, demonstrates what becomes possible when world-class technology is paired with a partner of that caliber."
+              "quote": "The demand for AI compute is growing faster than traditional capital markets can accommodate, and this initial transaction, led by Apollo, demonstrates what becomes possible when world-class technology is paired with a partner of that caliber.",
+              "source_content_hash": "c6cabe1fdd048dc5",
+              "quote_hash": "46a0c8e79bddc8bb6df87c268725dbee36209f9cf42b4e90310982e75755531b"
             }
           ]
         }
@@ -711,7 +826,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-12d28955f3aa1a00",
-                "quote": "AI compute is rapidly emerging as one of the most compelling new asset classes in finance, characterized by contracted cash flows, mission-critical utility and a supply-demand dynamic that continues to intensify."
+                "quote": "AI compute is rapidly emerging as one of the most compelling new asset classes in finance, characterized by contracted cash flows, mission-critical utility and a supply-demand dynamic that continues to intensify.",
+                "source_content_hash": "c6cabe1fdd048dc5",
+                "quote_hash": "84bee757a08aeb1f469369c5465b88371d13d0fcec46aa0d4171fb5342fdb4ed"
               }
             ]
           }
@@ -726,7 +843,19 @@
           "AI 终端收入增长远落后于基础设施投资规模：Apollo 自身估算 2025 年新 AI 应用收入仅 350 亿至 650 亿美元，而到 2030 年需要达到 1.5 万亿至 2 万亿美元才能支撑当前预期的 4 万亿至 5 万亿美元基础设施投资，收入实现滞后可能导致资产回报率承压。"
         ],
         "related_direction_id": "",
-        "sector": "AI 基础设施融资"
+        "sector": "AI 基础设施融资",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 计算基础设施的供需缺口——传统资本市场无法满足 AI 实验室的扩张速度，而 Apollo 和 Blackstone 通过结构化融资方案将计算能力转化为具有合同现金流支撑的资产类别。本轮 350 亿美元融资的已验证信号包括：Anthropic 已锁定超过 1GW 的计算容量扩张计划，且该容量是 Broadcom AI XPV 平台的首笔交易，平台总规划容量超过 20GW。判断的证据边界限于 Apollo 官方公告和 Bloomberg 报道，未涉及 Anthropic 自身收入、模型性能或客户采用数据。",
+          "evidence_signals": [
+            "Anthropic 已宣布超过 1GW 的计算基础设施容量扩张计划，2026 年中开始交付",
+            "Broadcom AI XPV 平台总规划容量超过 20GW，面向前沿 AI 实验室",
+            "Apollo 和 Blackstone 作为主要资本合作伙伴参与，Apollo 称此为史上最大私募融资"
+          ],
+          "risks": [
+            "AI 终端收入增长远落后于基础设施投资规模：Apollo 自身估算 2025 年新 AI 应用收入仅 350 亿至 650 亿美元，而到 2030 年需要达到 1.5 万亿至 2 万亿美元才能支撑当前预期的 4 万亿至 5 万亿美元基础设施投资，收入实现滞后可能导致资产回报率承压。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -734,51 +863,21 @@
           "target_kind": "product",
           "research_name": "AI 训练与推理基础设施",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "It will facilitate Anthropic's previously announced capacity expansion of more than 1GW of compute infrastructure for training and inference starting in mid-2026."
-            },
-            {
-              "source_id": "FISRC-a2fa6a23e92fab82",
-              "quote": "pairing some of the world's most advanced silicon and networking solutions with long-term, flexible capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Apollo Global Management",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "Apollo (NYSE: APO) today announced that Apollo-managed funds and affiliates are leading an initial $35 billion capital solution"
-            },
-            {
-              "source_id": "FISRC-a689df7815b7bebf",
-              "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blackstone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-12d28955f3aa1a00",
-              "quote": "in partnership with Blackstone (NYSE: BX) and leading global banks"
-            },
-            {
-              "source_id": "FISRC-a689df7815b7bebf",
-              "quote": "Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -840,13 +939,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:28:25.702Z"
+      "published_at": "2026-07-26T14:28:25.702Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI 训练与推理基础设施"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-8861a42a8679562a"
+      ],
+      "aggregation": {
+        "key": "EN-8d3aa1a6f227d714|infrastructure",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-35f51a516b7a4ca0",
       "triggered_by_event_id": "EV-c0ec0c026233bea5",
       "as_of_date": "2026-06-11",
@@ -864,7 +990,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-abb652ef9ea67fd6",
-                "quote": "Niteshift was co-founded by Sajid Mehmood (chief executive officer) and Conor Branagan"
+                "quote": "Niteshift was co-founded by Sajid Mehmood (chief executive officer) and Conor Branagan",
+                "source_content_hash": "56c4e235c669d008",
+                "quote_hash": "bf293d74fef1f5bcf67888049a8b668656fcba3787325aa58b5017ae744ab61e"
               }
             ],
             "entity_id": null
@@ -875,7 +1003,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-abb652ef9ea67fd6",
-                "quote": "Niteshift was co-founded by Sajid Mehmood (chief executive officer) and Conor Branagan"
+                "quote": "Niteshift was co-founded by Sajid Mehmood (chief executive officer) and Conor Branagan",
+                "source_content_hash": "56c4e235c669d008",
+                "quote_hash": "bf293d74fef1f5bcf67888049a8b668656fcba3787325aa58b5017ae744ab61e"
               }
             ],
             "entity_id": null
@@ -889,11 +1019,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ba1c7d6486dd06bf",
-            "quote": "NEW YORK CITY, NY / ACCESS Newswire/ June 10, 2026 / Niteshift, the full-stack cloud platform for AI coding agents"
+            "quote": "NEW YORK CITY, NY / ACCESS Newswire/ June 10, 2026 / Niteshift, the full-stack cloud platform for AI coding agents",
+            "source_content_hash": "29200854fe4e6bb4",
+            "quote_hash": "dac7577579e901409cbe7797cdd6ee384b45b5927e955801d01b936ee8103442"
           },
           {
             "source_id": "FISRC-01df70e43799a400",
-            "quote": "Founded by Sajid Mehmood and Conor Branagan, who helped grow Datadog from its early days to a multi-billion valuation"
+            "quote": "Founded by Sajid Mehmood and Conor Branagan, who helped grow Datadog from its early days to a multi-billion valuation",
+            "source_content_hash": "21b15182c071a779",
+            "quote_hash": "8676ff4b3fde3ddf8028fcf458bf6c62c83a1061e27f5322281e69abe4fa695e"
           }
         ]
       },
@@ -909,7 +1043,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-01df70e43799a400",
-                "quote": "Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen."
+                "quote": "Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen.",
+                "source_content_hash": "21b15182c071a779",
+                "quote_hash": "5d755020d7aeebf996ab29872032d7726456cf085ad52a99c899bc2d4a3e257c"
               }
             ],
             "entity_id": null
@@ -920,7 +1056,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a1dac8a4c0e97aee",
-                "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel."
+                "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
+                "source_content_hash": "c89dfd8f0a56c07f",
+                "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
               }
             ],
             "entity_id": null
@@ -931,7 +1069,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a1dac8a4c0e97aee",
-                "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel."
+                "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
+                "source_content_hash": "c89dfd8f0a56c07f",
+                "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
               }
             ],
             "entity_id": null
@@ -942,62 +1082,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a1dac8a4c0e97aee",
-                "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Reid Hoffman",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-01df70e43799a400",
-                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Olivier Pomel",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-01df70e43799a400",
-                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Alexis Lê-Quôc",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-01df70e43799a400",
-                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ankur Goyal",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-01df70e43799a400",
-                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Misha Laskin",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-01df70e43799a400",
-                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI."
+                "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
+                "source_content_hash": "c89dfd8f0a56c07f",
+                "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
               }
             ],
             "entity_id": null
@@ -1006,11 +1093,136 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-01df70e43799a400",
-            "quote": "AI coding agent startup Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen."
+            "quote": "AI coding agent startup Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen.",
+            "source_content_hash": "21b15182c071a779",
+            "quote_hash": "f2e072d2b1cbc0fb040fae27d3fc230789a6781a5f0275fe3b2db5261d0cfa08"
           },
           {
             "source_id": "FISRC-a1dac8a4c0e97aee",
-            "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel."
+            "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
+            "source_content_hash": "c89dfd8f0a56c07f",
+            "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [
+          {
+            "name": "Reid Hoffman",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-01df70e43799a400",
+                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman",
+                "source_content_hash": "21b15182c071a779",
+                "quote_hash": "4d019abc185cedd81af0f47a628ebc8fc53d9d0a0e464ac7de90936c2c305b0c"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Olivier Pomel",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-01df70e43799a400",
+                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
+                "source_content_hash": "21b15182c071a779",
+                "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Alexis Lê-Quôc",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-01df70e43799a400",
+                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
+                "source_content_hash": "21b15182c071a779",
+                "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Ankur Goyal",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-01df70e43799a400",
+                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI.",
+                "source_content_hash": "21b15182c071a779",
+                "quote_hash": "40f67c01bdbbbce26ad3c095c1b1c5454b2a2b4a9b9c2140446f895388ef9fd4"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Misha Laskin",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-01df70e43799a400",
+                "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI.",
+                "source_content_hash": "21b15182c071a779",
+                "quote_hash": "40f67c01bdbbbce26ad3c095c1b1c5454b2a2b4a9b9c2140446f895388ef9fd4"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-c0ec0c026233bea5",
+            "round_original": "种子轮",
+            "amount": "$7 million",
+            "announced_at": "2026-06-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-01df70e43799a400",
+                "quote": "AI coding agent startup Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen.",
+                "source_content_hash": "21b15182c071a779",
+                "quote_hash": "f2e072d2b1cbc0fb040fae27d3fc230789a6781a5f0275fe3b2db5261d0cfa08"
+              },
+              {
+                "source_id": "FISRC-a1dac8a4c0e97aee",
+                "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
+                "source_content_hash": "c89dfd8f0a56c07f",
+                "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
+              }
+            ]
           }
         ]
       },
@@ -1030,11 +1242,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ba1c7d6486dd06bf",
-              "quote": "Niteshift provides a full-stack cloud platform for AI coding agents, allowing teams to run agents such as Claude Code, Codex, and open-source models inside fully configured development environments. The platform handles the runtime, services, authentication, testing and verification workflows required for agents to build and validate software across complex application stacks."
+              "quote": "Niteshift provides a full-stack cloud platform for AI coding agents, allowing teams to run agents such as Claude Code, Codex, and open-source models inside fully configured development environments. The platform handles the runtime, services, authentication, testing and verification workflows required for agents to build and validate software across complex application stacks.",
+              "source_content_hash": "29200854fe4e6bb4",
+              "quote_hash": "41d21f0ea85bb169f86d1644501336420e8363044af3a27409b45c7c26f14242"
             },
             {
               "source_id": "FISRC-c3760d81aa22ebd7",
-              "quote": "The platform provides a full-stack cloud environment where any coding agent can run, verify, and ship code. Teams define their dev environment, tools, and policies once, then swap agents freely."
+              "quote": "The platform provides a full-stack cloud environment where any coding agent can run, verify, and ship code. Teams define their dev environment, tools, and policies once, then swap agents freely.",
+              "source_content_hash": "6c7b2c6f225e09ab",
+              "quote_hash": "a8659b4d5f2e71d770be625162604f0049ee022caee3fa5dfd020558d3ad3669"
             }
           ],
           "entity_id": null
@@ -1052,13 +1268,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-01df70e43799a400",
-              "quote": "That includes Cursor, though it could soon be gobbled up by SpaceX"
+              "quote": "That includes Cursor, though it could soon be gobbled up by SpaceX",
+              "source_content_hash": "21b15182c071a779",
+              "quote_hash": "25b837647d398b96b83ca514fd75dead5c3fea609d7050e0e1f8c4ee02519593"
             },
             {
               "source_id": "FISRC-c3760d81aa22ebd7",
-              "quote": "Cursor and Devin are coding agents — they write the code. Niteshift is the infrastructure the agents run on."
+              "quote": "Cursor and Devin are coding agents — they write the code. Niteshift is the infrastructure the agents run on.",
+              "source_content_hash": "6c7b2c6f225e09ab",
+              "quote_hash": "753178efb871d6ac37e42055b26de58b4b2baf5684690889eab2a1a40d0b0d01"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cognition",
@@ -1070,13 +1291,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-01df70e43799a400",
-              "quote": "Cognition, which just raised $1 billion at a $26 billion valuation"
+              "quote": "Cognition, which just raised $1 billion at a $26 billion valuation",
+              "source_content_hash": "21b15182c071a779",
+              "quote_hash": "2eb79791438f39224abb42652cc2ebbaa0c28bd49906ba875ba2f756dfb9c672"
             },
             {
               "source_id": "FISRC-abb652ef9ea67fd6",
-              "quote": "Direct competitors operating at the application layer include Cursor (AI-powered code editor), Cognition (autonomous coding agent)"
+              "quote": "Direct competitors operating at the application layer include Cursor (AI-powered code editor), Cognition (autonomous coding agent)",
+              "source_content_hash": "56c4e235c669d008",
+              "quote_hash": "8dae451ddb87c43942c0a87ab526fa1af4ab2121c78365e564f4a429f54fde48"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "OpenRouter",
@@ -1088,9 +1314,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-01df70e43799a400",
-              "quote": "AI gateway platform OpenRouter, which just raised $113 million at a $1.3 billion valuation"
+              "quote": "AI gateway platform OpenRouter, which just raised $113 million at a $1.3 billion valuation",
+              "source_content_hash": "21b15182c071a779",
+              "quote_hash": "d23a0fbccef2cdd09274a817c6b49fbc89ca0f6f678c96bb408468b60541cc4c"
             }
-          ]
+          ],
+          "entity_id": "EN-7f871cbf905f6e0c"
         }
       ],
       "metrics": [
@@ -1101,7 +1330,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-01df70e43799a400",
-              "quote": "Niteshift has raised a $7 million seed round"
+              "quote": "Niteshift has raised a $7 million seed round",
+              "source_content_hash": "21b15182c071a779",
+              "quote_hash": "46c93000af6d008a54454a4629e01008784568eb7512b6442ac72470587d47a0"
             }
           ]
         },
@@ -1112,7 +1343,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-01df70e43799a400",
-              "quote": "Cognition, which just raised $1 billion at a $26 billion valuation"
+              "quote": "Cognition, which just raised $1 billion at a $26 billion valuation",
+              "source_content_hash": "21b15182c071a779",
+              "quote_hash": "2eb79791438f39224abb42652cc2ebbaa0c28bd49906ba875ba2f756dfb9c672"
             }
           ]
         },
@@ -1123,7 +1356,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-01df70e43799a400",
-              "quote": "OpenRouter, which just raised $113 million at a $1.3 billion valuation"
+              "quote": "OpenRouter, which just raised $113 million at a $1.3 billion valuation",
+              "source_content_hash": "21b15182c071a779",
+              "quote_hash": "6c9895fb1deab6d675a1e5cb51001f002082b85bcd1050365d1d865697b5d53e"
             }
           ]
         }
@@ -1135,7 +1370,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ba1c7d6486dd06bf",
-              "quote": "Agents are tackling problems in hours that would have taken teams of senior engineers weeks, but the tooling needed to get that code into production hasn't kept up. At minimum, agents need a real environment to close the verification loop themselves - and that's just the starting point."
+              "quote": "Agents are tackling problems in hours that would have taken teams of senior engineers weeks, but the tooling needed to get that code into production hasn't kept up. At minimum, agents need a real environment to close the verification loop themselves - and that's just the starting point.",
+              "source_content_hash": "29200854fe4e6bb4",
+              "quote_hash": "e47b35dc2493ea547b93dd306086179153c1f1dc35110814eb25f32676a87796"
             }
           ]
         }
@@ -1151,7 +1388,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ba1c7d6486dd06bf",
-                "quote": "Sajid and Conor have been at the forefront of developer tools their entire careers from cloud, mobile, and now AI. Their knowledge of AI combined with their obsession for shipping fast make them the right leaders to navigate this new world of agentic engineering."
+                "quote": "Sajid and Conor have been at the forefront of developer tools their entire careers from cloud, mobile, and now AI. Their knowledge of AI combined with their obsession for shipping fast make them the right leaders to navigate this new world of agentic engineering.",
+                "source_content_hash": "29200854fe4e6bb4",
+                "quote_hash": "06117b4a12c78c1cc0b89a15f708df408d03868b9ea8ac1b07c72c13b16c31f3"
               }
             ]
           }
@@ -1167,7 +1406,20 @@
           "如果企业团队大多数时间只使用一个首选模型，模型路由的中立性价值主张将被削弱，平台可能被视为增加了不必要的复杂性"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI 编码基础设施"
+        "sector": "AI 编码基础设施",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是“企业对抗大模型锁定的需求”。投资逻辑建立在两个已验证信号之上：1）创始团队在 Datadog 的规模化经验——他们曾亲身经历并解决了大型工程组织当前在 AI 生成代码方面面临的扩展难题；2）市场结构类比——Datadog 曾因亚马逊同时竞争零售业务而赢得拒绝使用 AWS 的电商客户，Niteshift 认为 Anthropic 和 OpenAI 向垂直软件市场扩张将引发同样的动态。本轮融资规模（700 万美元）远低于竞争对手 Cognition（10 亿美元）和 OpenRouter（1.13 亿美元），表明投资者押注的是团队深度和基础设施层定位的差异化，而非资本规模竞争。证据边界：目前缺乏客户数量、收入数据或生产环境部署案例，所有判断仅基于创始团队背景、投资方背书和市场类比推理。",
+          "evidence_signals": [
+            "创始团队在 Datadog 近十年，帮助其从早期发展到数十亿美元估值，具备大规模工程基础设施的构建经验",
+            "Datadog 联合创始人 Olivier Pomel 和 Alexis Lê-Quôc 以天使投资人身份参与本轮，表明前同事对团队能力的认可",
+            "平台已从等待列表阶段进入正式发布（GA），支持 Claude Code、Codex、OpenCode 和 Pi 等多个智能体"
+          ],
+          "risks": [
+            "模型独立性并非新概念，竞争对手（Cursor、Cognition、Amazon Bedrock、OpenRouter）在资本、用户基础和分发渠道上拥有巨大先发优势，Niteshift 的 700 万美元种子轮在资源上处于明显劣势",
+            "如果企业团队大多数时间只使用一个首选模型，模型路由的中立性价值主张将被削弱，平台可能被视为增加了不必要的复杂性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1175,207 +1427,105 @@
           "target_kind": "product",
           "research_name": "Niteshift 全栈云平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ba1c7d6486dd06bf",
-              "quote": "Niteshift provides a full-stack cloud platform for AI coding agents, allowing teams to run agents such as Claude Code, Codex, and open-source models inside fully configured development environments. The platform handles the runtime, services, authentication, testing and verification workflows required for agents to build and validate software across complex application stacks."
-            },
-            {
-              "source_id": "FISRC-c3760d81aa22ebd7",
-              "quote": "The platform provides a full-stack cloud environment where any coding agent can run, verify, and ship code. Teams define their dev environment, tools, and policies once, then swap agents freely."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sajid Mehmood",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-abb652ef9ea67fd6",
-              "quote": "Niteshift was co-founded by Sajid Mehmood (chief executive officer) and Conor Branagan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Conor Branagan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-abb652ef9ea67fd6",
-              "quote": "Niteshift was co-founded by Sajid Mehmood (chief executive officer) and Conor Branagan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Greylock",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Amplify Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a1dac8a4c0e97aee",
-              "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BoxGroup",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a1dac8a4c0e97aee",
-              "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SV Angel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a1dac8a4c0e97aee",
-              "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Reid Hoffman",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Olivier Pomel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Alexis Lê-Quôc",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ankur Goyal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Misha Laskin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cursor",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "That includes Cursor, though it could soon be gobbled up by SpaceX"
-            },
-            {
-              "source_id": "FISRC-c3760d81aa22ebd7",
-              "quote": "Cursor and Devin are coding agents — they write the code. Niteshift is the infrastructure the agents run on."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cognition",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "Cognition, which just raised $1 billion at a $26 billion valuation"
-            },
-            {
-              "source_id": "FISRC-abb652ef9ea67fd6",
-              "quote": "Direct competitors operating at the application layer include Cursor (AI-powered code editor), Cognition (autonomous coding agent)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenRouter",
           "canonical_entity_id": "EN-7f871cbf905f6e0c",
-          "canonical_name": "OpenRouter",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-01df70e43799a400",
-              "quote": "AI gateway platform OpenRouter, which just raised $113 million at a $1.3 billion valuation"
-            }
-          ]
+          "canonical_name": "OpenRouter"
         }
       ],
       "funding_history": [
@@ -1461,13 +1611,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:28:01.102Z"
+      "published_at": "2026-07-26T14:28:01.102Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Niteshift 全栈云平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Conor Branagan",
+            "Sajid Mehmood"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c0ec0c026233bea5"
+      ],
+      "aggregation": {
+        "key": "EN-a7dd4a797cf9990b|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-844e4fe4b84a28b1",
       "triggered_by_event_id": "EV-9055cb4fa2b4ee62",
       "as_of_date": "2026-06-11",
@@ -1485,7 +1665,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "co-founder and CEO Haakam Aujla"
+                "quote": "co-founder and CEO Haakam Aujla",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "c47e36a4c9b0ca516dc124aa43a240351ffca28f06dbf029b58ea2b126930818"
               }
             ],
             "entity_id": null
@@ -1496,7 +1678,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e1b0747a0117fec0",
-                "quote": "The company was founded by Haakam Aujla , Michael (Hyun) Kim , and Adi Singh"
+                "quote": "The company was founded by Haakam Aujla , Michael (Hyun) Kim , and Adi Singh",
+                "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+                "quote_hash": "b12051bd1a931bd329551d8367e6368a78372945b5065a26e2ca1584fba4b5f8"
               }
             ],
             "entity_id": null
@@ -1507,7 +1691,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e1b0747a0117fec0",
-                "quote": "The company was founded by Haakam Aujla , Michael (Hyun) Kim , and Adi Singh"
+                "quote": "The company was founded by Haakam Aujla , Michael (Hyun) Kim , and Adi Singh",
+                "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+                "quote_hash": "b12051bd1a931bd329551d8367e6368a78372945b5065a26e2ca1584fba4b5f8"
               }
             ],
             "entity_id": null
@@ -1521,11 +1707,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f961f60a13274764",
-            "quote": "AgentMail , a startup out of San Francisco"
+            "quote": "AgentMail , a startup out of San Francisco",
+            "source_content_hash": "789e41b1b6992f50",
+            "quote_hash": "8bcfe55792f48e14a3a23fa3f6a15431f890309b9c67fe4d8bfee4c62d0635c4"
           },
           {
             "source_id": "FISRC-e1b0747a0117fec0",
-            "quote": "AgentMail Inc SAN FRANCISCO"
+            "quote": "AgentMail Inc SAN FRANCISCO",
+            "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+            "quote_hash": "224663f2befeb3d2fc84a3469423c8f93147c720b061e8df173b01eedd6693c7"
           }
         ]
       },
@@ -1541,7 +1731,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "a seed funding round led by General Catalyst"
+                "quote": "a seed funding round led by General Catalyst",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "10a2839d52e4e8fdc03b51be5126cae50c09ae904bded0172cb5b152a88ff970"
               }
             ],
             "entity_id": null
@@ -1552,7 +1744,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "with participation from Y Combinator"
+                "quote": "with participation from Y Combinator",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -1563,7 +1757,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "with participation from Y Combinator, Phosphor Capital"
+                "quote": "with participation from Y Combinator, Phosphor Capital",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "0fc95358d15cb214250546b894e9f86b4165069e09b4cc8f5bb04282d1e66f8f"
               }
             ],
             "entity_id": null
@@ -1574,7 +1770,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "angel investors Paul Graham"
+                "quote": "angel investors Paul Graham",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "9a22582b83c6be0f48ccc3878d56f3a2ff988308dc9939d076cd2a665227e796"
               }
             ],
             "entity_id": null
@@ -1585,7 +1783,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "Dharmesh Shah (CTO of HubSpot)"
+                "quote": "Dharmesh Shah (CTO of HubSpot)",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "56839666950372eb4987980a907d30e9752f24b5d43eaf1bdac845e4519a115c"
               }
             ],
             "entity_id": null
@@ -1596,7 +1796,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "Paul Copplestone (CEO of Supabase)"
+                "quote": "Paul Copplestone (CEO of Supabase)",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "590e01cb58f02b9ac0140085e5c7f2b647fd4f3649f6ef28e78d1134277be4c0"
               }
             ],
             "entity_id": null
@@ -1607,7 +1809,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f961f60a13274764",
-                "quote": "Karim Atiyeh (CTO of Ramp)"
+                "quote": "Karim Atiyeh (CTO of Ramp)",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "32fb3cf8724533475a1a22c64657c9fe3352503da53e1f02d0689e7c89cfb6b8"
               }
             ],
             "entity_id": null
@@ -1618,7 +1822,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e1b0747a0117fec0",
-                "quote": "notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah"
+                "quote": "notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah",
+                "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+                "quote_hash": "11392f8a376d849ea009980b8ba2780a0f88797abbb6a939e9c1e1df1b4d51ed"
               }
             ],
             "entity_id": null
@@ -1627,11 +1833,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f961f60a13274764",
-            "quote": "it had raised $6 million in a seed funding round led by General Catalyst, with participation from Y Combinator, Phosphor Capital, and angel investors Paul Graham, Dharmesh Shah (CTO of HubSpot), Paul Copplestone (CEO of Supabase), and Karim Atiyeh (CTO of Ramp)"
+            "quote": "it had raised $6 million in a seed funding round led by General Catalyst, with participation from Y Combinator, Phosphor Capital, and angel investors Paul Graham, Dharmesh Shah (CTO of HubSpot), Paul Copplestone (CEO of Supabase), and Karim Atiyeh (CTO of Ramp)",
+            "source_content_hash": "789e41b1b6992f50",
+            "quote_hash": "5fc05155c8a5780a70ae6f636be7d5eab34e3076adbd05a3d8469c83a68b65b5"
           },
           {
             "source_id": "FISRC-e1b0747a0117fec0",
-            "quote": "raised $6M in seed funding led by General Catalyst, with participation from Y Combinator, Phosphor Capital, and notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah (CTO of HubSpot), Paul Copplestone (CEO of Supabase), and Karim Atiyeh (CTO of Ramp)"
+            "quote": "raised $6M in seed funding led by General Catalyst, with participation from Y Combinator, Phosphor Capital, and notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah (CTO of HubSpot), Paul Copplestone (CEO of Supabase), and Karim Atiyeh (CTO of Ramp)",
+            "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+            "quote_hash": "78603b1d69c501a1707e8f9562361384cfde9af161e07448a3de45c26a8f915f"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-9055cb4fa2b4ee62",
+            "round_original": "种子轮",
+            "amount": "$6M",
+            "announced_at": "2026-03-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f961f60a13274764",
+                "quote": "it had raised $6 million in a seed funding round led by General Catalyst, with participation from Y Combinator, Phosphor Capital, and angel investors Paul Graham, Dharmesh Shah (CTO of HubSpot), Paul Copplestone (CEO of Supabase), and Karim Atiyeh (CTO of Ramp)",
+                "source_content_hash": "789e41b1b6992f50",
+                "quote_hash": "5fc05155c8a5780a70ae6f636be7d5eab34e3076adbd05a3d8469c83a68b65b5"
+              },
+              {
+                "source_id": "FISRC-e1b0747a0117fec0",
+                "quote": "raised $6M in seed funding led by General Catalyst, with participation from Y Combinator, Phosphor Capital, and notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah (CTO of HubSpot), Paul Copplestone (CEO of Supabase), and Karim Atiyeh (CTO of Ramp)",
+                "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+                "quote_hash": "78603b1d69c501a1707e8f9562361384cfde9af161e07448a3de45c26a8f915f"
+              }
+            ]
           }
         ]
       },
@@ -1651,11 +1886,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f961f60a13274764",
-              "quote": "The company provides an API platform that lets you give AI agents their own email inboxes, with support for two-way conversations, parsing, threading, labeling, searching, and replying."
+              "quote": "The company provides an API platform that lets you give AI agents their own email inboxes, with support for two-way conversations, parsing, threading, labeling, searching, and replying.",
+              "source_content_hash": "789e41b1b6992f50",
+              "quote_hash": "404c622e8c3f84bf57ffb6738df75f719c5dd640fa3e07e8631a32ae7b25d605"
             },
             {
               "source_id": "FISRC-7d0d2d96eba60e48",
-              "quote": "One API call creates an inbox. Your agent gets a real email address with full two-way communication: sending, receiving, threading, replying, searching, and labeling."
+              "quote": "One API call creates an inbox. Your agent gets a real email address with full two-way communication: sending, receiving, threading, replying, searching, and labeling.",
+              "source_content_hash": "027cc54ee48b8272",
+              "quote_hash": "81a184c03f5d0856334c27905298161d6b97ae052fe49e463ca684ecf92fd233"
             }
           ],
           "entity_id": null
@@ -1672,11 +1911,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f961f60a13274764",
-              "quote": "AgentMail also announced an onboarding API that you can point your AI agent to so it can directly sign up and create an email inbox for itself."
+              "quote": "AgentMail also announced an onboarding API that you can point your AI agent to so it can directly sign up and create an email inbox for itself.",
+              "source_content_hash": "789e41b1b6992f50",
+              "quote_hash": "61ebab60c6b626f5360c5fae25aaed26c4446aba988069cd01165a558281388a"
             },
             {
               "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "The platform is also launching its onboarding API for agents to get email addresses without human assistance."
+              "quote": "The platform is also launching its onboarding API for agents to get email addresses without human assistance.",
+              "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+              "quote_hash": "2f99aacf4c39bf89b84390bb68af4bf45225a7ab03331d1ffc25a25e7831826a"
             }
           ],
           "entity_id": null
@@ -1690,9 +1933,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "Garret Scott, CEO of DoAnything.com said, \"AgentMail took email from the thing I worried about most to something I barely think about. Now thousands of DoAnything agents operate autonomously with their own email identities.\""
+              "quote": "Garret Scott, CEO of DoAnything.com said, \"AgentMail took email from the thing I worried about most to something I barely think about. Now thousands of DoAnything agents operate autonomously with their own email identities.\"",
+              "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+              "quote_hash": "3c7f40c6715e05b6a30f809dd48c1bfaa4155b68725ccb1e7e5a0648b88adba3"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Pancake",
@@ -1701,9 +1947,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d6bd4e0389c3a7c6",
-              "quote": "Pancake is a superagent that makes your company autonomous, running squads of agents that work while you sleep. They needed an inbox the agent fully owned, not a founder's personal address."
+              "quote": "Pancake is a superagent that makes your company autonomous, running squads of agents that work while you sleep. They needed an inbox the agent fully owned, not a founder's personal address.",
+              "source_content_hash": "8aaba58b60691d64",
+              "quote_hash": "8982dcecde54dd91c7d4268435e9d141402552c5671c099636e0c73d18711db4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "AISDR",
@@ -1712,9 +1961,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ba17951fa8def674",
-              "quote": "AISDR is a fully autonomous AI SDR. Hundreds of AgentMail inboxes in production, thousands of emails per week, no human in the loop."
+              "quote": "AISDR is a fully autonomous AI SDR. Hundreds of AgentMail inboxes in production, thousands of emails per week, no human in the loop.",
+              "source_content_hash": "111232e4fc0ae026",
+              "quote_hash": "5d2c3dfcca223ab371ed9e56028838ff8584ffdf25870462515f14575f64b9b1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Balance",
@@ -1723,9 +1975,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-985fbc451b19fb95",
-              "quote": "Balance built Bea, an AI accountant serving 50+ SMB customers across Europe. They needed programmatic inboxes with whitelists, blacklists, and EU hosting."
+              "quote": "Balance built Bea, an AI accountant serving 50+ SMB customers across Europe. They needed programmatic inboxes with whitelists, blacklists, and EU hosting.",
+              "source_content_hash": "811d7a82775d2ae8",
+              "quote_hash": "60cd3d760ee5fab2c3d52eb4704fcebd5a036856bbdd47b00231a131f0b37ac2"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Browser Use",
@@ -1734,9 +1989,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-985fbc451b19fb95",
-              "quote": "Browser Use is the open-source framework for AI agents that control a browser. Every Browser Use Cloud session now ships with its own AgentMail inbox, so agents can sign up, verify, and stay logged in with no human in the loop."
+              "quote": "Browser Use is the open-source framework for AI agents that control a browser. Every Browser Use Cloud session now ships with its own AgentMail inbox, so agents can sign up, verify, and stay logged in with no human in the loop.",
+              "source_content_hash": "811d7a82775d2ae8",
+              "quote_hash": "5a53743910f79b885cb410458bf083f67d89c910b944ffd6f6f335f6d1a1b869"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1750,9 +2008,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Transactional email APIs like SendGrid and Mailgun are designed for one-way notifications, not the bidirectional, threaded conversations that agents need."
+              "quote": "Transactional email APIs like SendGrid and Mailgun are designed for one-way notifications, not the bidirectional, threaded conversations that agents need.",
+              "source_content_hash": "a8ba73be07417bca",
+              "quote_hash": "7168d6f506a9959d6755d4a548964bdf90fa4040829fb91c355cee6874ba7331"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Mailgun",
@@ -1764,9 +2025,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Transactional email APIs like SendGrid and Mailgun are designed for one-way notifications, not the bidirectional, threaded conversations that agents need."
+              "quote": "Transactional email APIs like SendGrid and Mailgun are designed for one-way notifications, not the bidirectional, threaded conversations that agents need.",
+              "source_content_hash": "a8ba73be07417bca",
+              "quote_hash": "7168d6f506a9959d6755d4a548964bdf90fa4040829fb91c355cee6874ba7331"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Gmail",
@@ -1778,9 +2042,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f961f60a13274764",
-              "quote": "traditional email providers like Gmail impose rate and volume limits on their email APIs. AgentMail, meanwhile, provides a pretty generous free tier"
+              "quote": "traditional email providers like Gmail impose rate and volume limits on their email APIs. AgentMail, meanwhile, provides a pretty generous free tier",
+              "source_content_hash": "789e41b1b6992f50",
+              "quote_hash": "acba74489ac7baeb24f03f6c1463b8302e8ac5d4734236c42f74e9ec0235e93f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Google A2A",
@@ -1792,9 +2059,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Protocol-level solutions like Google's A2A (Agent-to-Agent) protocol and the emerging Agent Communication Protocol (ACP) target structured agent-to-agent messaging directly."
+              "quote": "Protocol-level solutions like Google's A2A (Agent-to-Agent) protocol and the emerging Agent Communication Protocol (ACP) target structured agent-to-agent messaging directly.",
+              "source_content_hash": "a8ba73be07417bca",
+              "quote_hash": "e12224ea01b6017bd05aa1342e692c906d9f55c13a05f9a88038df257eb1c135"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Sending Labs",
@@ -1806,9 +2076,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Decentralized approaches like Sending Labs are building blockchain-native messaging for agents with cryptographic proof of delivery."
+              "quote": "Decentralized approaches like Sending Labs are building blockchain-native messaging for agents with cryptographic proof of delivery.",
+              "source_content_hash": "a8ba73be07417bca",
+              "quote_hash": "929e5798f2a0820a67b6b42f0cc48fb4816ca8f12c3ea432a1aa928376021c9d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1819,7 +2092,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f961f60a13274764",
-              "quote": "the company has attracted tens of thousands of human users"
+              "quote": "the company has attracted tens of thousands of human users",
+              "source_content_hash": "789e41b1b6992f50",
+              "quote_hash": "b2371abaa69a6c4da401a12d473516134de72a85492a552c21df739dd639bdef"
             }
           ]
         },
@@ -1830,7 +2105,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f961f60a13274764",
-              "quote": "more than 500 B2B customers"
+              "quote": "more than 500 B2B customers",
+              "source_content_hash": "789e41b1b6992f50",
+              "quote_hash": "b343830f79a9dc09e7132f342abc4e2efb0c3e36c48b49762d7f62ea748a2d62"
             }
           ]
         },
@@ -1841,7 +2118,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f961f60a13274764",
-              "quote": "when OpenClaw (then known as Clawdbot) burst onto the scene in late January, AgentMail saw its user count triple that week, and quadruple in February"
+              "quote": "when OpenClaw (then known as Clawdbot) burst onto the scene in late January, AgentMail saw its user count triple that week, and quadruple in February",
+              "source_content_hash": "789e41b1b6992f50",
+              "quote_hash": "8e60d6220b0e7fcb8ad338b7c3b7a8cca2621d2c90c2b58e32a31b7e8f8eec9b"
             }
           ]
         },
@@ -1852,7 +2131,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ba17951fa8def674",
-              "quote": "Hundreds of AgentMail inboxes in production"
+              "quote": "Hundreds of AgentMail inboxes in production",
+              "source_content_hash": "111232e4fc0ae026",
+              "quote_hash": "f7f58888d9e1eb81ef93700789ff9fe767a0173194fc09c6c180c561f038dcad"
             }
           ]
         },
@@ -1863,7 +2144,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ba17951fa8def674",
-              "quote": "sending thousands of emails per week"
+              "quote": "sending thousands of emails per week",
+              "source_content_hash": "111232e4fc0ae026",
+              "quote_hash": "0135b619afbeac30867364db4afd67248b1ec2938d353b32ef5966f3ef193d52"
             }
           ]
         },
@@ -1874,7 +2157,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d6bd4e0389c3a7c6",
-              "quote": "Response times dropped from hours to minutes"
+              "quote": "Response times dropped from hours to minutes",
+              "source_content_hash": "8aaba58b60691d64",
+              "quote_hash": "f4bd4f7017adbedd4e59f14a34f37cbb7a3e3c8e70cd1ad2d2b5076a9fb06878"
             }
           ]
         },
@@ -1885,7 +2170,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f912a9eabea97111",
-              "quote": "MarketsandMarkets projects the AI agent market will reach $52.62 billion by 2030"
+              "quote": "MarketsandMarkets projects the AI agent market will reach $52.62 billion by 2030",
+              "source_content_hash": "a8ba73be07417bca",
+              "quote_hash": "5d3d08ace81989e1333249076c81768a6fccff4feae59042f949e5a217a77f3b"
             }
           ]
         }
@@ -1897,7 +2184,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f961f60a13274764",
-              "quote": "You give an agent an email address, [and] it can now use essentially any software service that already exists."
+              "quote": "You give an agent an email address, [and] it can now use essentially any software service that already exists.",
+              "source_content_hash": "789e41b1b6992f50",
+              "quote_hash": "23a6bf408930536e39c25d1f4dac654d4d27947bdd2486aca87cbb0742ea9bff"
             }
           ]
         },
@@ -1907,7 +2196,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "AgentMail took email from the thing I worried about most to something I barely think about. Now thousands of DoAnything agents operate autonomously with their own email identities."
+              "quote": "AgentMail took email from the thing I worried about most to something I barely think about. Now thousands of DoAnything agents operate autonomously with their own email identities.",
+              "source_content_hash": "3211f0747780cab714787d1e1e425054285c54af65524fe6d750fcb76d6fe5ba",
+              "quote_hash": "7b0a4f3650bb8270b46619de78a28d356242df0a2aef802a14035dc7d90aad34"
             }
           ]
         },
@@ -1917,7 +2208,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d6bd4e0389c3a7c6",
-              "quote": "It's the only solution designed for agents, not humans. No OAuth dance, no personal account, no forwarding rules. Each agent gets a real address, reads its own mail, and replies in context, exactly the primitive we needed to make fully autonomous outreach and support squads work. Shipped in a day."
+              "quote": "It's the only solution designed for agents, not humans. No OAuth dance, no personal account, no forwarding rules. Each agent gets a real address, reads its own mail, and replies in context, exactly the primitive we needed to make fully autonomous outreach and support squads work. Shipped in a day.",
+              "source_content_hash": "8aaba58b60691d64",
+              "quote_hash": "4555b052c69993f9308ae8f3defb1e8ed06af9839efa2b014cc930531d3ac56e"
             }
           ]
         },
@@ -1927,7 +2220,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ba17951fa8def674",
-              "quote": "AgentMail is a YC company. It has simple documentation with all needed features for our flow."
+              "quote": "AgentMail is a YC company. It has simple documentation with all needed features for our flow.",
+              "source_content_hash": "111232e4fc0ae026",
+              "quote_hash": "835b69719b95d230c1e9766d97cfcccb22201b966d4907903d3fe4a7c4230ef7"
             }
           ]
         }
@@ -1947,7 +2242,22 @@
           "滥用与安全风险：为 AI 智能体提供电子邮件地址使滥用更容易，当前的安全措施（每日 10 封外发邮件上限、速率限制、关键词过滤）可能随着平台规模扩大而不足以应对新型攻击向量。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 智能体基础设施"
+        "sector": "AI 智能体基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：电子邮件作为互联网既有的身份和通信原语，能否成为 AI 智能体经济的基础设施层。本轮融资所依赖的已验证信号包括：OpenClaw 发布后用户数一周内增长三倍、二月增长四倍，验证了智能体对专用邮件基础设施的突发性需求；超过 500 家 B2B 客户和数十万智能体用户表明产品已找到市场契合点；DoAnything、Pancake、AISDR 等客户案例证明智能体邮件在工作流中产生了可量化的效率提升。但当前证据仅限于早期采用者数据和单一基础设施假设的验证，尚未证明该身份层能在协议层竞争（如 A2A）和去中心化方案（如 ERC-8004）的夹击下持续捕获价值。",
+          "evidence_signals": [
+            "OpenClaw 发布后用户数一周内增长三倍，二月增长四倍，验证了智能体对专用邮件基础设施的突发性需求",
+            "超过 500 家 B2B 客户和数十万智能体用户，表明产品已找到早期市场契合点",
+            "DoAnything、Pancake、AISDR 等客户案例证明智能体邮件在工作流中产生了可量化的效率提升（响应时间从数小时降至数分钟，创始人沟通开销降至接近零）",
+            "智能体已开始自主搜索、发现并注册 AgentMail，无需开发者介入，验证了智能体对身份基础设施的自发性需求"
+          ],
+          "risks": [
+            "中心化架构依赖：AgentMail 收件箱依赖其自身基础设施，对于需要去中心化、抗审查环境的智能体场景，这可能成为采用障碍，而 ERC-8004 等链上身份方案提供了替代路径。",
+            "协议层竞争：Google A2A 等协议级标准若获得广泛采用，可能将智能体通信标准化为协议而非平台，削弱 AgentMail 作为平台的价值捕获能力。",
+            "滥用与安全风险：为 AI 智能体提供电子邮件地址使滥用更容易，当前的安全措施（每日 10 封外发邮件上限、速率限制、关键词过滤）可能随着平台规模扩大而不足以应对新型攻击向量。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1955,307 +2265,161 @@
           "target_kind": "product",
           "research_name": "AgentMail API 平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "The company provides an API platform that lets you give AI agents their own email inboxes, with support for two-way conversations, parsing, threading, labeling, searching, and replying."
-            },
-            {
-              "source_id": "FISRC-7d0d2d96eba60e48",
-              "quote": "One API call creates an inbox. Your agent gets a real email address with full two-way communication: sending, receiving, threading, replying, searching, and labeling."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AgentMail 入职 API",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "AgentMail also announced an onboarding API that you can point your AI agent to so it can directly sign up and create an email inbox for itself."
-            },
-            {
-              "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "The platform is also launching its onboarding API for agents to get email addresses without human assistance."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Haakam Aujla",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "co-founder and CEO Haakam Aujla"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Michael (Hyun) Kim",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "The company was founded by Haakam Aujla , Michael (Hyun) Kim , and Adi Singh"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Adi Singh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "The company was founded by Haakam Aujla , Michael (Hyun) Kim , and Adi Singh"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "a seed funding round led by General Catalyst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "with participation from Y Combinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Phosphor Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "with participation from Y Combinator, Phosphor Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Paul Graham",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "angel investors Paul Graham"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Dharmesh Shah",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "Dharmesh Shah (CTO of HubSpot)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Paul Copplestone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "Paul Copplestone (CEO of Supabase)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Karim Atiyeh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "Karim Atiyeh (CTO of Ramp)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Taro Fukuyama",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "DoAnything.com",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e1b0747a0117fec0",
-              "quote": "Garret Scott, CEO of DoAnything.com said, \"AgentMail took email from the thing I worried about most to something I barely think about. Now thousands of DoAnything agents operate autonomously with their own email identities.\""
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Pancake",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d6bd4e0389c3a7c6",
-              "quote": "Pancake is a superagent that makes your company autonomous, running squads of agents that work while you sleep. They needed an inbox the agent fully owned, not a founder's personal address."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "AISDR",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ba17951fa8def674",
-              "quote": "AISDR is a fully autonomous AI SDR. Hundreds of AgentMail inboxes in production, thousands of emails per week, no human in the loop."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Balance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-985fbc451b19fb95",
-              "quote": "Balance built Bea, an AI accountant serving 50+ SMB customers across Europe. They needed programmatic inboxes with whitelists, blacklists, and EU hosting."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Browser Use",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-985fbc451b19fb95",
-              "quote": "Browser Use is the open-source framework for AI agents that control a browser. Every Browser Use Cloud session now ships with its own AgentMail inbox, so agents can sign up, verify, and stay logged in with no human in the loop."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "SendGrid",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Transactional email APIs like SendGrid and Mailgun are designed for one-way notifications, not the bidirectional, threaded conversations that agents need."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Mailgun",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Transactional email APIs like SendGrid and Mailgun are designed for one-way notifications, not the bidirectional, threaded conversations that agents need."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Gmail",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f961f60a13274764",
-              "quote": "traditional email providers like Gmail impose rate and volume limits on their email APIs. AgentMail, meanwhile, provides a pretty generous free tier"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google A2A",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Protocol-level solutions like Google's A2A (Agent-to-Agent) protocol and the emerging Agent Communication Protocol (ACP) target structured agent-to-agent messaging directly."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Sending Labs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f912a9eabea97111",
-              "quote": "Decentralized approaches like Sending Labs are building blockchain-native messaging for agents with cryptographic proof of delivery."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2366,13 +2530,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:27:56.504Z"
+      "published_at": "2026-07-26T14:27:56.504Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AgentMail API 平台",
+            "AgentMail 入职 API"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Adi Singh",
+            "Haakam Aujla",
+            "Michael (Hyun) Kim"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9055cb4fa2b4ee62"
+      ],
+      "aggregation": {
+        "key": "EN-befc92b3a019d04c|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-ef2e065ac45c7a32",
       "triggered_by_event_id": "EV-c3b8772c06a25dbc",
       "as_of_date": "2026-06-11",
@@ -2390,11 +2586,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ca38471e3f8361d",
-                "quote": "PointFive Chief Executive Aron Arvatz"
+                "quote": "PointFive Chief Executive Aron Arvatz",
+                "source_content_hash": "11683bab4c01ccd3",
+                "quote_hash": "02edadbf71ae338a0ef4bd27468b6549d067f28a300bd8abbdba545150472d5f"
               },
               {
                 "source_id": "FISRC-a41e631aa095953e",
-                "quote": "Founded in 2023 by former Unit 8200 graduates Alon Arvatz, Gal Ben-David, and Amir Hozez"
+                "quote": "Founded in 2023 by former Unit 8200 graduates Alon Arvatz, Gal Ben-David, and Amir Hozez",
+                "source_content_hash": "ac679368744f77ab",
+                "quote_hash": "1d9fcfab6c4f9b6dc5e52360acd561b1c522d120b51a0a659990bb91e479c160"
               }
             ],
             "entity_id": null
@@ -2405,7 +2605,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ca38471e3f8361d",
-                "quote": "Arvatz founded PointFive back in 2023 along with cybersecurity veterans Gal Ben David (left) and Amir Hozez (right)."
+                "quote": "Arvatz founded PointFive back in 2023 along with cybersecurity veterans Gal Ben David (left) and Amir Hozez (right).",
+                "source_content_hash": "11683bab4c01ccd3",
+                "quote_hash": "171def64b2706fb06280a38b219a7d4325d484903ee8173d3a50b4a5761148ac"
               }
             ],
             "entity_id": null
@@ -2416,7 +2618,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ca38471e3f8361d",
-                "quote": "Arvatz founded PointFive back in 2023 along with cybersecurity veterans Gal Ben David (left) and Amir Hozez (right)."
+                "quote": "Arvatz founded PointFive back in 2023 along with cybersecurity veterans Gal Ben David (left) and Amir Hozez (right).",
+                "source_content_hash": "11683bab4c01ccd3",
+                "quote_hash": "171def64b2706fb06280a38b219a7d4325d484903ee8173d3a50b4a5761148ac"
               }
             ],
             "entity_id": null
@@ -2428,23 +2632,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a41e631aa095953e",
-              "quote": "the company now employs over 100 people across operations in Tel Aviv, London, and the United States"
+              "quote": "the company now employs over 100 people across operations in Tel Aviv, London, and the United States",
+              "source_content_hash": "ac679368744f77ab",
+              "quote_hash": "8d7c72d555beb94fac19c3cd337d37e8ce6ef87e7fe34d8bc37e308904ee5cb5"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-3ca38471e3f8361d",
-            "quote": "New York-based PointFive has created what it calls an “AI and cloud efficiency platform”"
+            "quote": "New York-based PointFive has created what it calls an “AI and cloud efficiency platform”",
+            "source_content_hash": "11683bab4c01ccd3",
+            "quote_hash": "775ff79a05caa6a723d05dda0217c02e2db6879ed6f65d6ad6b4c4868ec93262"
           },
           {
             "source_id": "FISRC-a41e631aa095953e",
-            "quote": "PointFive, a platform designed to help enterprises manage the rising costs of artificial intelligence infrastructure"
+            "quote": "PointFive, a platform designed to help enterprises manage the rising costs of artificial intelligence infrastructure",
+            "source_content_hash": "ac679368744f77ab",
+            "quote_hash": "99c8476f61bc21df05c9bef29893efc26d0b521721044c24fa090a0d4dd2da74"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$60 million",
         "total_raised": "$96 million",
         "announced_at": "2026-06-08",
@@ -2455,7 +2665,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ca38471e3f8361d",
-                "quote": "Accel led the round"
+                "quote": "Accel led the round",
+                "source_content_hash": "11683bab4c01ccd3",
+                "quote_hash": "8e0705ecf58eaad0451a15274f1ca2e5cd980a08a9e609620031a7fe91e83c8e"
               }
             ],
             "entity_id": null
@@ -2466,7 +2678,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ca38471e3f8361d",
-                "quote": "it was joined by venture capital firms including Index Ventures"
+                "quote": "it was joined by venture capital firms including Index Ventures",
+                "source_content_hash": "11683bab4c01ccd3",
+                "quote_hash": "bda9c9e8b8f1a9c26efd2b41477d5f3e3bd8d9b3323315d38f382c74a634ca79"
               }
             ],
             "entity_id": null
@@ -2475,11 +2689,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-3ca38471e3f8361d",
-            "quote": "FinOps startup PointFive Inc. said today it has raised $60 million from investors"
+            "quote": "FinOps startup PointFive Inc. said today it has raised $60 million from investors",
+            "source_content_hash": "11683bab4c01ccd3",
+            "quote_hash": "1dd699fdc313fc0ff324c1e1720b5dc062225ccdfad70adbe7c8a59a6820ccc7"
           },
           {
             "source_id": "FISRC-f97566ec6b3eafd5",
-            "quote": "PointFive raises $60M Series B, led by Accel, to redefine AI and Cloud Efficiency"
+            "quote": "PointFive raises $60M Series B, led by Accel, to redefine AI and Cloud Efficiency",
+            "source_content_hash": "c4c8ce5f23606f5a",
+            "quote_hash": "197837bb855c590a57cf57b1045608b24de241fa307772173197c07c04c3130d"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c3b8772c06a25dbc",
+            "round_original": "Series B",
+            "amount": "$60 million",
+            "announced_at": "2026-06-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3ca38471e3f8361d",
+                "quote": "FinOps startup PointFive Inc. said today it has raised $60 million from investors",
+                "source_content_hash": "11683bab4c01ccd3",
+                "quote_hash": "1dd699fdc313fc0ff324c1e1720b5dc062225ccdfad70adbe7c8a59a6820ccc7"
+              },
+              {
+                "source_id": "FISRC-f97566ec6b3eafd5",
+                "quote": "PointFive raises $60M Series B, led by Accel, to redefine AI and Cloud Efficiency",
+                "source_content_hash": "c4c8ce5f23606f5a",
+                "quote_hash": "197837bb855c590a57cf57b1045608b24de241fa307772173197c07c04c3130d"
+              }
+            ]
           }
         ]
       },
@@ -2497,7 +2740,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f97566ec6b3eafd5",
-              "quote": "AI Efficiency OS and TokenShift are live."
+              "quote": "AI Efficiency OS and TokenShift are live.",
+              "source_content_hash": "c4c8ce5f23606f5a",
+              "quote_hash": "1d368a51e7fb63e63971b5a9eaa56182123af95ff1379b4662c00d92e73be59f"
             }
           ],
           "entity_id": null
@@ -2514,7 +2759,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "TokenShift extends PointFive into the IDE to govern and account for every token."
+              "quote": "TokenShift extends PointFive into the IDE to govern and account for every token.",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "3895ea847161011119596789e3db404cc0574df2afdc8e54207acb731a477185"
             }
           ],
           "entity_id": null
@@ -2528,13 +2775,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Nubank was able to recoup the money spent on his company’s services within just 10 days thanks to the reductions in cloud infrastructure costs."
+              "quote": "Nubank was able to recoup the money spent on his company’s services within just 10 days thanks to the reductions in cloud infrastructure costs.",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "aaf495cafd10397a32c9643b056ab83b069eb838ed7a9455e1e787fed762e786"
             },
             {
               "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How Nubank Achieved Autonomous DynamoDB Cost Optimization with PointFive"
+              "quote": "How Nubank Achieved Autonomous DynamoDB Cost Optimization with PointFive",
+              "source_content_hash": "526ff0afbbd81330",
+              "quote_hash": "32e21cdd732c59c8424a8b8aed34b0b56e4ac22a4949760a8ceb0e216ae95eb2"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "E.ON GmbH",
@@ -2543,9 +2795,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Those customers include global enterprises such as the German utility firm E.ON GmbH"
+              "quote": "Those customers include global enterprises such as the German utility firm E.ON GmbH",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "b5d55aaddbd00d608e74a13d49722226c57d883a490a8ce87404ef9c4bd04b6e"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Fanatics Inc.",
@@ -2554,13 +2809,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "U.S.-based Fanatics Inc., which sells sports merchandise, collectibles and runs gambling platforms."
+              "quote": "U.S.-based Fanatics Inc., which sells sports merchandise, collectibles and runs gambling platforms.",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "9dd2107efb71858b3bf7456f8ff93b249906be02c635b5292cb501c044640563"
             },
             {
               "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How PointFive Helped Fanatics Commerce Turn Cloud Reporting Into Cloud Optimization"
+              "quote": "How PointFive Helped Fanatics Commerce Turn Cloud Reporting Into Cloud Optimization",
+              "source_content_hash": "526ff0afbbd81330",
+              "quote_hash": "c14981fb97ea433fe2a088c9f871b08a54aa7d7377eefe6284ad39229c9bbb06"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "PwC",
@@ -2569,9 +2829,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How PwC Optimized a Custom LLM Pipeline Spanning 8 AWS Regions"
+              "quote": "How PwC Optimized a Custom LLM Pipeline Spanning 8 AWS Regions",
+              "source_content_hash": "526ff0afbbd81330",
+              "quote_hash": "2d82cd39ebefa80677ffbee3c98882f4abd732a550015adab131a2090bbb4d62"
             }
-          ]
+          ],
+          "entity_id": "EN-e4ffb7bd879b89da"
         },
         {
           "name": "Net Health",
@@ -2580,9 +2843,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How Net Health Turned Cloud Efficiency Into an Engineering Priority"
+              "quote": "How Net Health Turned Cloud Efficiency Into an Engineering Priority",
+              "source_content_hash": "526ff0afbbd81330",
+              "quote_hash": "0425757a688ea42c1d3f9031123be54f45a15db78e48f61f6320ad1a8eb6fd50"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2596,13 +2862,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero"
+              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "2ff44dd2e0297149d372e9477777d43257465b717734989bfdd99d517f7117f3"
             },
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Existing FinOps tooling stops at dashboards. Engineering teams are left to triage waste. PointFive automates the loop, from finding, to fix, to ROI."
+              "quote": "Existing FinOps tooling stops at dashboards. Engineering teams are left to triage waste. PointFive automates the loop, from finding, to fix, to ROI.",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "f95ae8f51bfa3de6428e64d5a353a60c4f5ed26a5c44d6f33ca7057470dbc145"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cloudability",
@@ -2614,13 +2885,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero"
+              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "2ff44dd2e0297149d372e9477777d43257465b717734989bfdd99d517f7117f3"
             },
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "PointFive's remediation workflow drafts the PR, opens the Jira ticket, pages the owner in Slack, and verifies the fix lands."
+              "quote": "PointFive's remediation workflow drafts the PR, opens the Jira ticket, pages the owner in Slack, and verifies the fix lands.",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "a4a8bd709360a3f08f0f9233eadb6e7d7168d67a4654203489d0736ceb3aa86e"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Flexera",
@@ -2632,13 +2908,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero"
+              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "2ff44dd2e0297149d372e9477777d43257465b717734989bfdd99d517f7117f3"
             },
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "PointFive finds the deep, engineering-grade savings other tools miss."
+              "quote": "PointFive finds the deep, engineering-grade savings other tools miss.",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "d9e92d490662d974c93fb019680a0be25735935d88726d1f64c5d906dd82ac2d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2649,7 +2930,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "its annual recurring revenue increased by six times in the last year"
+              "quote": "its annual recurring revenue increased by six times in the last year",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "6d6bbf186628be50d11b406d46893593141676cff4ed2594e6216a7c23f86baa"
             }
           ]
         },
@@ -2660,7 +2943,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "much of that driven by existing customers who doubled their spending, on average"
+              "quote": "much of that driven by existing customers who doubled their spending, on average",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "34cc27525a94092d66a3dfe952affc68c7a887a51ae8655cb55599702d84ddf5"
             }
           ]
         },
@@ -2671,7 +2956,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "its validation to $500 million, exactly half way to unicorn status"
+              "quote": "its validation to $500 million, exactly half way to unicorn status",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "10410fab4c05b73d415af59028af89bc1f7c4865af8452b95b7ade444a40fa9b"
             }
           ]
         },
@@ -2682,7 +2969,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Nubank was able to recoup the money spent on his company’s services within just 10 days"
+              "quote": "Nubank was able to recoup the money spent on his company’s services within just 10 days",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "692b70ad23da813f2e051ed6a21d265e40100f91efdbcc4404e497784ae39c9a"
             }
           ]
         },
@@ -2693,7 +2982,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "plans to add about 40 new employees to its marketing and research and development teams this year"
+              "quote": "plans to add about 40 new employees to its marketing and research and development teams this year",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "b6982f2f83894a69016510127076c9d56cab24bbf132654cb3161ecbb8d3179b"
             }
           ]
         },
@@ -2704,7 +2995,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "500+ Deep detections across cloud, Kubernetes, data, and AI providers"
+              "quote": "500+ Deep detections across cloud, Kubernetes, data, and AI providers",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "249d930e4cbc01a98f93ee96580b75fe2d0fa45f0de2af4afb17ce7d2feec8cd"
             }
           ]
         },
@@ -2715,7 +3008,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1a80493f128707dd",
-              "quote": "1,200%+ Average ROI"
+              "quote": "1,200%+ Average ROI",
+              "source_content_hash": "526ff0afbbd81330",
+              "quote_hash": "ee28e47bd78b01da9f68ce1556b8d7ce4f6dc8d2188689df5c7ab3b230fdea5d"
             }
           ]
         },
@@ -2726,7 +3021,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1a80493f128707dd",
-              "quote": "surfacing 200+ types of deep waste across AWS"
+              "quote": "surfacing 200+ types of deep waste across AWS",
+              "source_content_hash": "526ff0afbbd81330",
+              "quote_hash": "6453a3b6603ccc8e40a0c1941527de67956f9025f7747fb5d072900ae9cddc14"
             }
           ]
         }
@@ -2738,7 +3035,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "the cost of running AI applications has become one of the largest expenses for many organizations."
+              "quote": "the cost of running AI applications has become one of the largest expenses for many organizations.",
+              "source_content_hash": "11683bab4c01ccd3",
+              "quote_hash": "55f2830fa1ccc0c6fc47ae8b56bf569079d399bdbc19dca4b75d1ab940bdc332"
             }
           ]
         },
@@ -2748,7 +3047,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f97566ec6b3eafd5",
-              "quote": "Every company is now an AI company, and every AI company is about to get a bill it did not budget for."
+              "quote": "Every company is now an AI company, and every AI company is about to get a bill it did not budget for.",
+              "source_content_hash": "c4c8ce5f23606f5a",
+              "quote_hash": "3d50ef3d996b02ef4331091ecc753d20572ae8eecfbd3b8c30f88bbe8260f221"
             }
           ]
         },
@@ -2758,7 +3059,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f97566ec6b3eafd5",
-              "quote": "managing cloud and AI infrastructure is an engineering problem, not a dashboard problem, and they have built the leading agentic platform to help engineering teams maximise cloud and AI efficiency."
+              "quote": "managing cloud and AI infrastructure is an engineering problem, not a dashboard problem, and they have built the leading agentic platform to help engineering teams maximise cloud and AI efficiency.",
+              "source_content_hash": "c4c8ce5f23606f5a",
+              "quote_hash": "56f178ac977ed77437df1397f597ae4b3ed0b543c74c41764b165024fcdc6ae1"
             }
           ]
         },
@@ -2768,7 +3071,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "PointFive found waste below the dashboard line and made it safe for engineering to act."
+              "quote": "PointFive found waste below the dashboard line and made it safe for engineering to act.",
+              "source_content_hash": "a62916dfee9e2c43",
+              "quote_hash": "1f66111757e999dae7ce79e947a7b3892e9ad1067b51fbd23875d20d6374acc3"
             }
           ]
         }
@@ -2784,7 +3089,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f97566ec6b3eafd5",
-                "quote": "managing cloud and AI infrastructure is an engineering problem, not a dashboard problem, and they have built the leading agentic platform to help engineering teams maximise cloud and AI efficiency."
+                "quote": "managing cloud and AI infrastructure is an engineering problem, not a dashboard problem, and they have built the leading agentic platform to help engineering teams maximise cloud and AI efficiency.",
+                "source_content_hash": "c4c8ce5f23606f5a",
+                "quote_hash": "56f178ac977ed77437df1397f597ae4b3ed0b543c74c41764b165024fcdc6ae1"
               }
             ]
           }
@@ -2799,7 +3106,19 @@
           "公司未披露具体的营收基数，高增长倍数可能源于早期的小基数效应，其规模化后的增速有待验证。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI 基础设施成本治理与 FinOps"
+        "sector": "AI 基础设施成本治理与 FinOps",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业 AI 基础设施支出从可预测的固定订阅制向不可预测的、基于令牌的消费制转变，这催生了对工程级成本治理工具的刚性需求。本轮融资的投后估值为 5 亿美元，其关键验证信号是 ARR 同比增长 6 倍、现有客户支出翻倍，以及 Nubank 在 10 天内即实现投资回收的标杆案例。判断的证据边界在于，这些增长数据均来自公司单方面披露，且未提供具体的营收基数。",
+          "evidence_signals": [
+            "年度经常性收入（ARR）同比增长 6 倍",
+            "现有客户的平均支出翻倍",
+            "标杆客户 Nubank 在 10 天内收回投资成本"
+          ],
+          "risks": [
+            "公司未披露具体的营收基数，高增长倍数可能源于早期的小基数效应，其规模化后的增速有待验证。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2807,219 +3126,105 @@
           "target_kind": "product",
           "research_name": "AI Efficiency OS",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f97566ec6b3eafd5",
-              "quote": "AI Efficiency OS and TokenShift are live."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "TokenShift",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "TokenShift extends PointFive into the IDE to govern and account for every token."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alon Arvatz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "PointFive Chief Executive Aron Arvatz"
-            },
-            {
-              "source_id": "FISRC-a41e631aa095953e",
-              "quote": "Founded in 2023 by former Unit 8200 graduates Alon Arvatz, Gal Ben-David, and Amir Hozez"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gal Ben David",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Arvatz founded PointFive back in 2023 along with cybersecurity veterans Gal Ben David (left) and Amir Hozez (right)."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Amir Hozez",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Arvatz founded PointFive back in 2023 along with cybersecurity veterans Gal Ben David (left) and Amir Hozez (right)."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Accel led the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Index Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "it was joined by venture capital firms including Index Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Nubank",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Nubank was able to recoup the money spent on his company’s services within just 10 days thanks to the reductions in cloud infrastructure costs."
-            },
-            {
-              "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How Nubank Achieved Autonomous DynamoDB Cost Optimization with PointFive"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "E.ON GmbH",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "Those customers include global enterprises such as the German utility firm E.ON GmbH"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Fanatics Inc.",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ca38471e3f8361d",
-              "quote": "U.S.-based Fanatics Inc., which sells sports merchandise, collectibles and runs gambling platforms."
-            },
-            {
-              "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How PointFive Helped Fanatics Commerce Turn Cloud Reporting Into Cloud Optimization"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "PwC",
           "canonical_entity_id": "EN-e4ffb7bd879b89da",
-          "canonical_name": "PwC",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How PwC Optimized a Custom LLM Pipeline Spanning 8 AWS Regions"
-            }
-          ]
+          "canonical_name": "PwC"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Net Health",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a80493f128707dd",
-              "quote": "How Net Health Turned Cloud Efficiency Into an Engineering Priority"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "CloudHealth",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero"
-            },
-            {
-              "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Existing FinOps tooling stops at dashboards. Engineering teams are left to triage waste. PointFive automates the loop, from finding, to fix, to ROI."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cloudability",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero"
-            },
-            {
-              "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "PointFive's remediation workflow drafts the PR, opens the Jira ticket, pages the owner in Slack, and verifies the fix lands."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Flexera",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "Compare CloudHealth Cloudability Flexera Harness IBM Turbonomic ServiceNow Azure Advisor Finout Adaptive6 CloudZero"
-            },
-            {
-              "source_id": "FISRC-8719c7e7696d69c3",
-              "quote": "PointFive finds the deep, engineering-grade savings other tools miss."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3105,10 +3310,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:27:40.146Z"
+      "published_at": "2026-07-26T14:27:40.146Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI Efficiency OS",
+            "TokenShift"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Alon Arvatz",
+            "Amir Hozez",
+            "Gal Ben David"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c3b8772c06a25dbc"
+      ],
+      "aggregation": {
+        "key": "EN-ef292e56955a1c10|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

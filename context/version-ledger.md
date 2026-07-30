@@ -18,11 +18,11 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.5.0-private-evidence-source |
-| Version name | WaveSight V4 Private Evidence Source |
-| Version layer | Minor |
+| Current version | V4.5.1-funding-card-integrity |
+| Version name | WaveSight V4 Funding Card Integrity |
+| Version layer | Patch |
 | Release date | 2026-07-30 |
-| Last modified at | 2026-07-30T18:18:14+08:00 |
+| Last modified at | 2026-07-30T20:34:59+08:00 |
 | Product version | V4.5 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.3.0-compatibility-retired |
@@ -40,7 +40,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Reports Center column version | REPORTS-V1.1.0-lane-independent |
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
-| Funding Insights column version | FUNDING-INSIGHT-V1.0-auto-published-research |
+| Funding Insights column version | FUNDING-INSIGHT-V1.1.0-card-integrity |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
 | Canonical event contract | EVENT-V1.1 |
@@ -59,7 +59,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center supervisor Skill | guanlan-data-center-supervisor v1.2.2 |
 | Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.4.1 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.0.0 |
-| Funding Insight generator Skill | guanlan-funding-insight-generator v1.0.0 |
+| Funding Insight generator Skill | guanlan-funding-insight-generator v1.1.0 |
 | First-Line Viewpoints monitor Skill | guanlan-first-line-viewpoints-monitor v1.1.3 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.7 |
 | Follow-builders support Skill | follow-builders v1.0.1 |
@@ -73,7 +73,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.8.0 V4 retirement governance |
-| Git tag | `v4.5.0-private-evidence-source` |
+| Git tag | `v4.5.1-funding-card-integrity` |
 | Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -105,7 +105,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Opportunity Map is versioned independently as `OMAP-V2.0.0-v4-evidence`. It reads `opportunity-evidence-v2.json`, renders Entry Point Map and Product Pain Map from Claim-bound downstream assertions, and adds a small Direction Card layer. DeepSeek V4 Pro writes titles and editorial content from a bounded accepted Event/Claim/Source manifest; generated candidates stay review-only until reference, unsupported-number, judgment, counter-signal, and human-review gates pass. Direction Cards and opportunity assertions never enter V4 canonical data and are not automated recommendations.
 - Reports Center is versioned as `REPORTS-V1.1.0-lane-independent`; report content and rendering no longer depend on Opportunity Map or Direction Card generation succeeding.
 - Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
-- Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.0-auto-published-research`. Verified funding events trigger secondary source capture and DeepSeek V4 Pro application research. Every published investor is explicitly named and exact-quote-backed; missing investors or evidence block that card. Automatic publication does not mutate canonical entities or relationships, and exact matches link cards to stable entity profiles, relationship views, funding history, competitors, customers, and reviewed Direction Cards.
+- Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.1.0-card-integrity`. It normalizes free-text rounds into stable codes and Chinese labels, keeps only explicitly current-round investors in the public investor field, moves historical or ambiguous investors into a separate evidence-backed collection, aggregates repeated company-and-round disclosures, and gives every card a structured investment thesis plus explicit customer-research status. Exact canonical entity matches link immediately; unresolved product and founder names enter an evidence-backed review queue and cannot mutate V4 entities automatically.
 - Skill Store `v1.8.0` migrates current source-intake, report, opportunity, agent, and audit instructions off retired V3 interfaces and extends retirement checks to governance and deployable data.
 - `guanlan-code-rule-auditor` v1.1.0 audits V4 facts, applications, operations, deployment, and the permanent V3-retirement boundary; a green runtime-only gate is no longer sufficient when current instructions or deployable files still reference retired inputs.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
@@ -200,6 +200,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.5.1-funding-card-integrity` | Funding Insights schema / historical application bundles / frontstage aggregation / generator Skill | 2026-07-30 | 2026-07-30T20:34:59+08:00 | V4.5.1-funding-card-integrity / FUNDING-INSIGHT-V1.1.0-card-integrity / guanlan-funding-insight-generator v1.1.0 | free-text round variants; historical investors shown as current-round investors; duplicate company-and-round cards; unstructured investment theses; silent customer or entity-link gaps | 63-bundle schema and evidence gate + normalized-round gate + current-investor separation + company-round aggregation + entity-review queue completeness + funding tests + frontstage regression + responsive smoke + GitHub Pages deploy |
 | `v4.5.0-private-evidence-source` | Private evidence store / RAW-V4 public bundles / Guanlan Vault / GitHub production workflows / V4 data lake | 2026-07-30 | 2026-07-30T23:55:00+08:00 | V4.5.0-private-evidence-source / RAW-V4.0 / PRIVATE-EVIDENCE-STORE-V2.0 / GUANLAN-VAULT-V1.2-private-evidence-linked | complete original bodies in the public repository, data lake, Vault, website, workflow artifacts, or public automation commits; repository snapshots treated as authoritative | private-store integrity + public evidence boundary + all-date V4 integrity + Vault evidence contract + 23-table data-lake gate + code/rule audit + GitHub Pages deploy |
 | `v4.4.0-operations-converged` | Repository rules / Guanlan Vault / private evidence backup / V4 data lake / Windows automation / Hermes control plane | 2026-07-30 | 2026-07-30T18:18:14+08:00 | V4.4.0-operations-converged / GUANLAN-VAULT-V1.1-evidence-linked / DATA-LAKE-V4.0-23-table / WINDOWS-AUTOMATION-V1.0-seven-task | repository-local Vault; retired Vault registration; migration-proof notes; compatibility tasks; independent data-lake timer; separate Hermes heartbeat task; stale or non-V4 serving tables | two-axis code/rule review + 23-table JSONL/DuckDB gate + Vault/evidence assertions + seven-task audit + full V4/frontstage tests + GitHub Pages deploy |
 | `guanlan-vault-v1.0-independent` | External Guanlan AI System State / Data Center / Application Center / Operations / Contracts / Knowledge Assets / Workspace | 2026-07-30 | 2026-07-30T23:30:00+08:00 | GUANLAN-VAULT-V1.0 | repository-local `vault/`; parent `AI热点` indexing; AI Startup Radar; V1/V2/V3 migration material; QC/repair/diff archives; generated site or canonical data written by Vault sync | external-root isolation + directory/link/retired-content assertion; projection-only local refresh; full V4/site/OPS tests |

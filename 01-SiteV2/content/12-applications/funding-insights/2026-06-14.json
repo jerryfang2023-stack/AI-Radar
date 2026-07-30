@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-14",
     "generated_at": "2026-07-26T15:10:47.378Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 2,
       "auto_published": 2,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-0c23a160cd811687",
       "triggered_by_event_id": "EV-5762fe51987bc5ff",
       "as_of_date": "2026-06-14",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5fc1475b6c3eab2",
-                "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan"
+                "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan",
+                "source_content_hash": "7a77e21e734156f3",
+                "quote_hash": "2580d9d76cacc2471c613fcd2af362390ef40a8cef90c4096370cc77aa9ccfc7"
               },
               {
                 "source_id": "FISRC-82678ed3c9b2cc4e",
-                "quote": "CEO Scott Wu told Bloomberg Television that the raise was designed to keep Cognition independent."
+                "quote": "CEO Scott Wu told Bloomberg Television that the raise was designed to keep Cognition independent.",
+                "source_content_hash": "a9d6e72aa4b8adae",
+                "quote_hash": "ae72b6bf3cf61cad6fe3c2352a0377097c8e28c8c5b46dd3742f4b47c7b49d7e"
               }
             ],
             "entity_id": null
@@ -50,7 +55,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5fc1475b6c3eab2",
-                "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan"
+                "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan",
+                "source_content_hash": "7a77e21e734156f3",
+                "quote_hash": "2580d9d76cacc2471c613fcd2af362390ef40a8cef90c4096370cc77aa9ccfc7"
               }
             ],
             "entity_id": null
@@ -61,7 +68,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5fc1475b6c3eab2",
-                "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan"
+                "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan",
+                "source_content_hash": "7a77e21e734156f3",
+                "quote_hash": "2580d9d76cacc2471c613fcd2af362390ef40a8cef90c4096370cc77aa9ccfc7"
               }
             ],
             "entity_id": null
@@ -75,16 +84,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-82678ed3c9b2cc4e",
-            "quote": "The San Francisco-based autonomous AI coding agent maker"
+            "quote": "The San Francisco-based autonomous AI coding agent maker",
+            "source_content_hash": "a9d6e72aa4b8adae",
+            "quote_hash": "506e01f0c4440d8391ddcdf3bf0071cfb97d4a993baac946fb39f85de9613261"
           },
           {
             "source_id": "FISRC-d5fc1475b6c3eab2",
-            "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan"
+            "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan",
+            "source_content_hash": "7a77e21e734156f3",
+            "quote_hash": "2580d9d76cacc2471c613fcd2af362390ef40a8cef90c4096370cc77aa9ccfc7"
           }
         ]
       },
       "financing": {
-        "round": "Series D",
+        "round": "D轮",
         "amount": "超过 10 亿美元",
         "total_raised": "超过 25 亿美元",
         "announced_at": "2026-05-27",
@@ -95,7 +108,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "The round was led by Lux Capital, General Catalyst and 8VC"
+                "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
               }
             ],
             "entity_id": null
@@ -106,7 +121,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "The round was led by Lux Capital, General Catalyst and 8VC"
+                "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
               }
             ],
             "entity_id": null
@@ -117,7 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "The round was led by Lux Capital, General Catalyst and 8VC"
+                "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
               }
             ],
             "entity_id": null
@@ -128,7 +147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
+                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "32a689c79ede37eda5c607e1327b2f71b761bb7b8abe6ff5a893009360891e98"
               }
             ],
             "entity_id": null
@@ -139,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
+                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "32a689c79ede37eda5c607e1327b2f71b761bb7b8abe6ff5a893009360891e98"
               }
             ],
             "entity_id": null
@@ -150,7 +173,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
+                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "32a689c79ede37eda5c607e1327b2f71b761bb7b8abe6ff5a893009360891e98"
               }
             ],
             "entity_id": null
@@ -161,7 +186,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
+                "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "32a689c79ede37eda5c607e1327b2f71b761bb7b8abe6ff5a893009360891e98"
               }
             ],
             "entity_id": null
@@ -172,7 +199,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global."
+                "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
               }
             ],
             "entity_id": null
@@ -183,7 +212,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global."
+                "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
               }
             ],
             "entity_id": null
@@ -194,7 +225,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c7d89f6e73a6fe5b",
-                "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global."
+                "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
               }
             ],
             "entity_id": null
@@ -205,7 +238,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -216,7 +251,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -227,7 +264,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -238,7 +277,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -249,7 +290,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -260,7 +303,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -271,7 +316,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -282,7 +329,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7bbb48af7503bf0",
-                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
+                "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+                "source_content_hash": "f64d20b5549e1b58",
+                "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
               }
             ],
             "entity_id": null
@@ -291,11 +340,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-c7d89f6e73a6fe5b",
-            "quote": "Cognition, the makers of the autonomous AI software engineer named Devin, has raised more than $1 billion at a $25 billion pre-money valuation ($26 billion post money)"
+            "quote": "Cognition, the makers of the autonomous AI software engineer named Devin, has raised more than $1 billion at a $25 billion pre-money valuation ($26 billion post money)",
+            "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+            "quote_hash": "34069f337155c7f2d6bb18ac52afaa8fcf75262d1fb1d95598799108740669dc"
           },
           {
             "source_id": "FISRC-82678ed3c9b2cc4e",
-            "quote": "Total capital raised by Cognition since founding now exceeds $2.5 billion."
+            "quote": "Total capital raised by Cognition since founding now exceeds $2.5 billion.",
+            "source_content_hash": "a9d6e72aa4b8adae",
+            "quote_hash": "707c0a7a20d0757c4ba1135a6668d3f2c20aff7877248b2856579cc10e302a2b"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-5762fe51987bc5ff",
+            "round_original": "Series D",
+            "amount": "超过 10 亿美元",
+            "announced_at": "2026-05-27",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c7d89f6e73a6fe5b",
+                "quote": "Cognition, the makers of the autonomous AI software engineer named Devin, has raised more than $1 billion at a $25 billion pre-money valuation ($26 billion post money)",
+                "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+                "quote_hash": "34069f337155c7f2d6bb18ac52afaa8fcf75262d1fb1d95598799108740669dc"
+              },
+              {
+                "source_id": "FISRC-82678ed3c9b2cc4e",
+                "quote": "Total capital raised by Cognition since founding now exceeds $2.5 billion.",
+                "source_content_hash": "a9d6e72aa4b8adae",
+                "quote_hash": "707c0a7a20d0757c4ba1135a6668d3f2c20aff7877248b2856579cc10e302a2b"
+              }
+            ]
           }
         ]
       },
@@ -313,11 +391,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Devin is the core product. It is a cloud-based autonomous AI coding agent that takes a task description and executes the entire software engineering workflow: browsing documentation, writing code, running tests, debugging failures, and committing the result. No human in the loop."
+              "quote": "Devin is the core product. It is a cloud-based autonomous AI coding agent that takes a task description and executes the entire software engineering workflow: browsing documentation, writing code, running tests, debugging failures, and committing the result. No human in the loop.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "615350d5e4b113f34321442db23d85743654ba2d914d64e8ebe9764765c43058"
             },
             {
               "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "a product that does not suggest code but rather plans, writes, tests, debugs, and deploys it — end-to-end — inside a sandboxed environment with a shell, browser, and editor all wired together."
+              "quote": "a product that does not suggest code but rather plans, writes, tests, debugs, and deploys it — end-to-end — inside a sandboxed environment with a shell, browser, and editor all wired together.",
+              "source_content_hash": "7a77e21e734156f3",
+              "quote_hash": "a80aef1ba1516521d84155fa7773b03a1b5aa92f99ef0a83631f2f062799ce9a"
             }
           ],
           "entity_id": null
@@ -335,11 +417,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf is a desktop code editor Cognition acquired in 2025. It has over one million users across more than 4,000 organizations."
+              "quote": "Windsurf is a desktop code editor Cognition acquired in 2025. It has over one million users across more than 4,000 organizations.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "34c8af24006fb17f112c2ade882622dc3f6bfd2b44037a470b34ad0c87b53b8a"
             },
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE. It is a subscription product."
+              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE. It is a subscription product.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "1b43570bb37dc2e60f1a120865e932f55d776a79f1a9c73e05f6b55c1a3420a5"
             }
           ],
           "entity_id": null
@@ -353,9 +439,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Mercedes-Benz used Devin to compress an eight-month code modernization project to eight days."
+              "quote": "Mercedes-Benz used Devin to compress an eight-month code modernization project to eight days.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "d3b9b0ad2895d265ced38162965cd784896c1014a55a95066ea993cb43deb106"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Goldman Sachs",
@@ -364,9 +453,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "it counts big enterprises like Mercedes-Benz, NASA, Goldman Sachs, and Santander as customers."
+              "quote": "it counts big enterprises like Mercedes-Benz, NASA, Goldman Sachs, and Santander as customers.",
+              "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+              "quote_hash": "cbe03d526116e4186c907724a945c1d4b26e97d6076c8a9a3ed8a052ab4345f1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "NASA",
@@ -375,9 +467,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "it counts big enterprises like Mercedes-Benz, NASA, Goldman Sachs, and Santander as customers."
+              "quote": "it counts big enterprises like Mercedes-Benz, NASA, Goldman Sachs, and Santander as customers.",
+              "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+              "quote_hash": "cbe03d526116e4186c907724a945c1d4b26e97d6076c8a9a3ed8a052ab4345f1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Itaú",
@@ -386,9 +481,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-42825ab351973532",
-              "quote": "Itaú, Latin America’s largest bank, now uses the agent to automatically fix 70% of its security vulnerabilities."
+              "quote": "Itaú, Latin America’s largest bank, now uses the agent to automatically fix 70% of its security vulnerabilities.",
+              "source_content_hash": "0e7045ff36e5a671",
+              "quote_hash": "4650a9b01924bd6268c6e6820b3acda7e344c16e18aa2ca094f409929398c459"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "U.S. Navy",
@@ -397,9 +495,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-42825ab351973532",
-              "quote": "deployments at major organisations including Citi, Mercedes-Benz, Goldman Sachs, Dell, Santander, the U.S. Navy, and the U.S. Army."
+              "quote": "deployments at major organisations including Citi, Mercedes-Benz, Goldman Sachs, Dell, Santander, the U.S. Navy, and the U.S. Army.",
+              "source_content_hash": "0e7045ff36e5a671",
+              "quote_hash": "5495d63c99954e6ec72b5a6daa8731ec8aba78481b59ea1540b15a6f66874b5c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -413,13 +514,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Cursor (Anysphere) $2B ARR $29.3B valuation ~15x ARR"
+              "quote": "Cursor (Anysphere) $2B ARR $29.3B valuation ~15x ARR",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "14cec7cb2f896f2bec7c4f9d7bb41cdc85d8b596fc503363ce8285da59ed807d"
             },
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE."
+              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "91fd0a5e6602dac5edc465844cdf7fe93bb053753a41d73d402332f964ef3a32"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Anthropic",
@@ -431,13 +537,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "Anthropic's Claude Code crossed $1B in ARR shortly after launch and already represents approximately 10% of Anthropic's total revenue"
+              "quote": "Anthropic's Claude Code crossed $1B in ARR shortly after launch and already represents approximately 10% of Anthropic's total revenue",
+              "source_content_hash": "7a77e21e734156f3",
+              "quote_hash": "ef7c4b43f2d90fceceb967b9eeb60d43b7edc1427067796353b08a818bc9de8f"
             },
             {
               "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "These are not scrappy challengers. They are Cognition's upstream infrastructure providers."
+              "quote": "These are not scrappy challengers. They are Cognition's upstream infrastructure providers.",
+              "source_content_hash": "7a77e21e734156f3",
+              "quote_hash": "6d7272530e16a28f4b44ea5123be055aa24f5294300d1d23cd0c9231efc2b1ad"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "OpenAI",
@@ -449,13 +560,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "Certainly Anthropic’s Claude Code, OpenAI’s Codex, and maybe even Google’s coding agent Jules (after Google’s acqui-hire deal of Windsurf last year) have captured a lot of it."
+              "quote": "Certainly Anthropic’s Claude Code, OpenAI’s Codex, and maybe even Google’s coding agent Jules (after Google’s acqui-hire deal of Windsurf last year) have captured a lot of it.",
+              "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+              "quote_hash": "945bab2bfd29fa20153871491b5bc30c85efbb3b53f5fa9198b5ce1f70944bec"
             },
             {
               "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "OpenAI's Codex is moving in the same direction."
+              "quote": "OpenAI's Codex is moving in the same direction.",
+              "source_content_hash": "7a77e21e734156f3",
+              "quote_hash": "31110643f7f0b16e10650996741ddccb6371e2aacaa9f301416140ef23fcfd01"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "Google",
@@ -467,13 +583,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "Google’s coding agent Jules (after Google’s acqui-hire deal of Windsurf last year) have captured a lot of it."
+              "quote": "Google’s coding agent Jules (after Google’s acqui-hire deal of Windsurf last year) have captured a lot of it.",
+              "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+              "quote_hash": "b1fde47ea6a3c003d80e337e2939f137574d530d4612894e97c719e6aeb2e994"
             },
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Google had already hired away the core Windsurf engineering team in a separate $2.4 billion talent acquisition deal before Cognition bought the product."
+              "quote": "Google had already hired away the core Windsurf engineering team in a separate $2.4 billion talent acquisition deal before Cognition bought the product.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "669b29b936270ccf60c1732385a7f3fdfe4c5e91da652a29994d6b39c36b96af"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "GitHub Copilot",
@@ -485,13 +606,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "The AI coding agent market now includes GitHub Copilot with 4.7 million paid subscribers"
+              "quote": "The AI coding agent market now includes GitHub Copilot with 4.7 million paid subscribers",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "d7ca6d76a30ecf080218b717fd1e5106039ae1b089c20fae8c6a16528ccabd48"
             },
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE."
+              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "91fd0a5e6602dac5edc465844cdf7fe93bb053753a41d73d402332f964ef3a32"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -502,7 +628,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "it’s reached $492 million in annualized revenue run-rate"
+              "quote": "it’s reached $492 million in annualized revenue run-rate",
+              "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+              "quote_hash": "681a499c39c84168373b3a803de4b4e2de6bdeee4b6ae1024a955ffb377775dc"
             }
           ]
         },
@@ -513,7 +641,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "enterprise usage of Devin has grown 50% month-over-month for the past six months"
+              "quote": "enterprise usage of Devin has grown 50% month-over-month for the past six months",
+              "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+              "quote_hash": "bb2f88a03257671755fac4d75202814c9500f67005e880fb639be55b54933907"
             }
           ]
         },
@@ -524,7 +654,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "$25 billion pre-money valuation ($26 billion post money)"
+              "quote": "$25 billion pre-money valuation ($26 billion post money)",
+              "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
+              "quote_hash": "cfec9d823631b16147fecc43d272623f2abb76bf74b6a55a77d8cdf6e002a223"
             }
           ]
         },
@@ -535,7 +667,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-42825ab351973532",
-              "quote": "89% of Cognition’s own codebase now written by Devin"
+              "quote": "89% of Cognition’s own codebase now written by Devin",
+              "source_content_hash": "0e7045ff36e5a671",
+              "quote_hash": "e19d50ae9daaf5970a91fdd13124dffe981b9243e2f77537743a089f73eb16f5"
             }
           ]
         },
@@ -546,7 +680,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "A $26 billion valuation on $492 million ARR is a 53x revenue multiple"
+              "quote": "A $26 billion valuation on $492 million ARR is a 53x revenue multiple",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "456d25c67f6c18ef9719d6dbfa82bea19aad9330710f669a8b8cdfd371adfd36"
             }
           ]
         },
@@ -557,7 +693,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "Our enterprise usage has grown >10x since the start of this year"
+              "quote": "Our enterprise usage has grown >10x since the start of this year",
+              "source_content_hash": "f64d20b5549e1b58",
+              "quote_hash": "d839ade0cf43cfa3c5719d72e0d51b4db627ebc4b8a026566dd9b2e7c06c2313"
             }
           ]
         },
@@ -568,7 +706,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "up 13x year-over-year from $37 million in May 2025"
+              "quote": "up 13x year-over-year from $37 million in May 2025",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "e69a91936a18b5f1dc3ad40b49149549cec0f7151234fb4d4e9da59c73201b21"
             }
           ]
         },
@@ -579,7 +719,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "up to 950 tok/s"
+              "quote": "up to 950 tok/s",
+              "source_content_hash": "f64d20b5549e1b58",
+              "quote_hash": "2a6b28cac0d5c520d1155e37df7355966b51f00013350d27020ac692009ddc1e"
             }
           ]
         }
@@ -591,7 +733,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-42825ab351973532",
-              "quote": "Our goal is to build a future where software engineers operate more like architects, creatively structuring problems for armies of Devins to reliably execute on,"
+              "quote": "Our goal is to build a future where software engineers operate more like architects, creatively structuring problems for armies of Devins to reliably execute on,",
+              "source_content_hash": "0e7045ff36e5a671",
+              "quote_hash": "7924b0afd14d42bad9609c66a21fd22f63c1b0495c815f821c24a9f9a52321c9"
             }
           ]
         },
@@ -601,7 +745,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "CEO Scott Wu told Bloomberg Television that the raise was designed to keep Cognition independent."
+              "quote": "CEO Scott Wu told Bloomberg Television that the raise was designed to keep Cognition independent.",
+              "source_content_hash": "a9d6e72aa4b8adae",
+              "quote_hash": "ae72b6bf3cf61cad6fe3c2352a0377097c8e28c8c5b46dd3742f4b47c7b49d7e"
             }
           ]
         }
@@ -617,7 +763,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-cdbbc703c81aa39d",
-                "quote": "One of the most brilliant teams Lux has continued to invest more to fuel them in every round possible! Thank you @ScottWu46 for your talent magnetism as a founder leader and for the bar of brilliance and momentum you’ve set for @cognition !"
+                "quote": "One of the most brilliant teams Lux has continued to invest more to fuel them in every round possible! Thank you @ScottWu46 for your talent magnetism as a founder leader and for the bar of brilliance and momentum you’ve set for @cognition !",
+                "source_content_hash": "a28337618de4abb8",
+                "quote_hash": "e135b421354e0f44c4ac9a5b6f22f121b98cd3acf9bca3f2fa7034f3d731a7ef"
               }
             ]
           }
@@ -635,7 +783,22 @@
           "4.92 亿美元 ARR 中，订阅制产品 Windsurf 与按用量计费的 Devin 的收入占比未公开，可能导致对核心智能体业务价值的误判。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 编码智能体"
+        "sector": "AI 编码智能体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“独立自主编码智能体能否在基础模型提供商的夹击下，建立起足够深厚的企业工作流集成护城河”。本轮 53 倍 ARR 的估值并非基于当前现金流，而是对 Devin 在受监管行业（如金融、国防）中生产部署的认可，以及其 50% 月环比增长所预示的市场主导潜力。然而，这一判断的证据边界非常清晰：Devin 的最后一次公开 SWE-Bench 得分仅为 13.86%，而竞争对手已报告 50-70% 的得分，Cognition 对此保持沉默，这为技术护城河的可持续性带来了重大不确定性。",
+          "evidence_signals": [
+            "年化经常性收入达到 4.92 亿美元，同比增长 13 倍。",
+            "企业使用量连续六个月实现 50% 的月环比增长。",
+            "获得了高盛、梅赛德斯-奔驰、NASA、美国海军等对安全要求极高的头部客户的生产部署。",
+            "内部代码库 89% 的代码由 Devin 自主提交，证明了产品在受控环境下的深度可用性。"
+          ],
+          "risks": [
+            "上游基础模型提供商（Anthropic、OpenAI、Google）正积极整合智能体编排能力，可能压缩 Cognition 作为独立中间层的生存空间。",
+            "Devin 的公开基准测试得分（SWE-Bench 13.86%）已大幅落后于竞争对手（50-70%），且公司不再公布最新成绩，技术领先性存疑。",
+            "4.92 亿美元 ARR 中，订阅制产品 Windsurf 与按用量计费的 Devin 的收入占比未公开，可能导致对核心智能体业务价值的误判。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -643,461 +806,231 @@
           "target_kind": "product",
           "research_name": "Devin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Devin is the core product. It is a cloud-based autonomous AI coding agent that takes a task description and executes the entire software engineering workflow: browsing documentation, writing code, running tests, debugging failures, and committing the result. No human in the loop."
-            },
-            {
-              "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "a product that does not suggest code but rather plans, writes, tests, debugs, and deploys it — end-to-end — inside a sandboxed environment with a shell, browser, and editor all wired together."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Windsurf",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf is a desktop code editor Cognition acquired in 2025. It has over one million users across more than 4,000 organizations."
-            },
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE. It is a subscription product."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Scott Wu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan"
-            },
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "CEO Scott Wu told Bloomberg Television that the raise was designed to keep Cognition independent."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Steven Hao",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Walden Yan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "Cognition was founded in August 2023 by Scott Wu, Steven Hao, and Walden Yan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lux Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "The round was led by Lux Capital, General Catalyst and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "The round was led by Lux Capital, General Catalyst and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "8VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "The round was led by Lux Capital, General Catalyst and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Elad Gil",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Soma Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Omri Casspi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "a host of existing investors pouring in, including Elad Gil, Soma Capital, Omri Casspi, Founders Fund, and a long list of others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Ribbit Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Atreides",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Layer Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alpha Wave",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Definition Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Positive Sum",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Avenir",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vitruvian",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bain Capital Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Conversion Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "137 Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7bbb48af7503bf0",
-              "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Mercedes-Benz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Mercedes-Benz used Devin to compress an eight-month code modernization project to eight days."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Goldman Sachs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "it counts big enterprises like Mercedes-Benz, NASA, Goldman Sachs, and Santander as customers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "NASA",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "it counts big enterprises like Mercedes-Benz, NASA, Goldman Sachs, and Santander as customers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Itaú",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-42825ab351973532",
-              "quote": "Itaú, Latin America’s largest bank, now uses the agent to automatically fix 70% of its security vulnerabilities."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "U.S. Navy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-42825ab351973532",
-              "quote": "deployments at major organisations including Citi, Mercedes-Benz, Goldman Sachs, Dell, Santander, the U.S. Navy, and the U.S. Army."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cursor (Anysphere)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Cursor (Anysphere) $2B ARR $29.3B valuation ~15x ARR"
-            },
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "Anthropic's Claude Code crossed $1B in ARR shortly after launch and already represents approximately 10% of Anthropic's total revenue"
-            },
-            {
-              "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "These are not scrappy challengers. They are Cognition's upstream infrastructure providers."
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "Certainly Anthropic’s Claude Code, OpenAI’s Codex, and maybe even Google’s coding agent Jules (after Google’s acqui-hire deal of Windsurf last year) have captured a lot of it."
-            },
-            {
-              "source_id": "FISRC-d5fc1475b6c3eab2",
-              "quote": "OpenAI's Codex is moving in the same direction."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c7d89f6e73a6fe5b",
-              "quote": "Google’s coding agent Jules (after Google’s acqui-hire deal of Windsurf last year) have captured a lot of it."
-            },
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Google had already hired away the core Windsurf engineering team in a separate $2.4 billion talent acquisition deal before Cognition bought the product."
-            }
-          ]
+          "canonical_name": "Google"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "GitHub Copilot",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "The AI coding agent market now includes GitHub Copilot with 4.7 million paid subscribers"
-            },
-            {
-              "source_id": "FISRC-82678ed3c9b2cc4e",
-              "quote": "Windsurf competes directly with Cursor and GitHub Copilot as an AI-augmented IDE."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1195,13 +1128,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:30:05.942Z"
+      "published_at": "2026-07-26T14:30:05.942Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Devin",
+            "Windsurf"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Scott Wu",
+            "Steven Hao",
+            "Walden Yan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5762fe51987bc5ff"
+      ],
+      "aggregation": {
+        "key": "EN-ac32f27ba7a1346f|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-51f9b7b07ecf0ffe",
       "triggered_by_event_id": "EV-44c9a50b99c76a70",
       "as_of_date": "2026-06-14",
@@ -1219,7 +1184,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "Founder and CEO, Brett Adcock, also the entrepreneur behind robotics company Figure.AI and electric aircraft builder Archer, launched Hark in late 2025 with $100 million of his own money"
+                "quote": "Founder and CEO, Brett Adcock, also the entrepreneur behind robotics company Figure.AI and electric aircraft builder Archer, launched Hark in late 2025 with $100 million of his own money",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "6e1ca59aac3da08f9edb727f3afcd7cfab6263d9de8a10cb165be1f98abe1120"
               }
             ],
             "entity_id": null
@@ -1231,14 +1198,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "The company currently has 70 employees"
+              "quote": "The company currently has 70 employees",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "a617ace321995353bf2d9e08e69e48371402a8f70a677ac3db15c205d40290f4"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-3498976409b44e70",
-            "quote": "Hark is an artificial intelligence company developing highly intelligent, multimodal AI systems and native hardware devices designed to serve as a universal interface between humans and machines."
+            "quote": "Hark is an artificial intelligence company developing highly intelligent, multimodal AI systems and native hardware devices designed to serve as a universal interface between humans and machines.",
+            "source_content_hash": "ef34d0c32c32b4ff",
+            "quote_hash": "88262e6ec4e86c06874b3f7a3f04ca9998dcacc0d1bb25a4daf8bcdea1a1694e"
           }
         ]
       },
@@ -1254,7 +1225,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "The mega-round was led by Parkway Venture Capital"
+                "quote": "The mega-round was led by Parkway Venture Capital",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "01b57e55c5d82437d5db18cd2542dd52a8460d39b0af5bf59108f973533acd56"
               }
             ],
             "entity_id": null
@@ -1265,7 +1238,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -1276,7 +1251,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1287,7 +1264,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1298,7 +1277,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1309,7 +1290,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1320,7 +1303,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1331,7 +1316,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1342,7 +1329,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1353,7 +1342,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1364,7 +1355,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1375,18 +1368,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-353546c00a154228",
-                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Brett Adcock",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-353546c00a154228",
-                "quote": "launched Hark in late 2025 with $100 million of his own money"
+                "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "8c874899067d357988f6aefae5f3aaffd242ccd40c39d9664fec5aa1919da554"
               }
             ],
             "entity_id": null
@@ -1395,7 +1379,48 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-3498976409b44e70",
-            "quote": "Hark, a new AI lab building advanced personalized intelligence, today announced it has raised over $700 million in Series A funding at a $6 billion post-money valuation."
+            "quote": "Hark, a new AI lab building advanced personalized intelligence, today announced it has raised over $700 million in Series A funding at a $6 billion post-money valuation.",
+            "source_content_hash": "ef34d0c32c32b4ff",
+            "quote_hash": "dbdd6a6ea9b0550dc1ec3686e412378e244cb96299956786476cd6b7491532aa"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "other_round_investors": [
+          {
+            "name": "Brett Adcock",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-353546c00a154228",
+                "quote": "launched Hark in late 2025 with $100 million of his own money",
+                "source_content_hash": "cfb3b54f7f85b4a4",
+                "quote_hash": "80133e2dc27bc75992a48a28583104cdf72eb90cf75c64fe3c37892c6f67b61a"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-44c9a50b99c76a70",
+            "round_original": "A轮",
+            "amount": "7亿美元",
+            "announced_at": "2026-05-21",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3498976409b44e70",
+                "quote": "Hark, a new AI lab building advanced personalized intelligence, today announced it has raised over $700 million in Series A funding at a $6 billion post-money valuation.",
+                "source_content_hash": "ef34d0c32c32b4ff",
+                "quote_hash": "dbdd6a6ea9b0550dc1ec3686e412378e244cb96299956786476cd6b7491532aa"
+              }
+            ]
           }
         ]
       },
@@ -1412,11 +1437,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "Hark expects to release its first multimodal models this summer, which it says will power a personal AI platform that works with existing products and services."
+              "quote": "Hark expects to release its first multimodal models this summer, which it says will power a personal AI platform that works with existing products and services.",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "b533620df9ea7baf3f19fbef696b6105ba4e5a402833c2d1efeff4805a0d2a25"
             },
             {
               "source_id": "FISRC-3498976409b44e70",
-              "quote": "Hark focuses on building proactive, personalized AI that interacts with the world through speech, vision, and memory."
+              "quote": "Hark focuses on building proactive, personalized AI that interacts with the world through speech, vision, and memory.",
+              "source_content_hash": "ef34d0c32c32b4ff",
+              "quote_hash": "b2e77a156ebc6ee129edab734ba3643ba550ef7be1f48563b4f384056c3640e2"
             }
           ],
           "entity_id": null
@@ -1432,11 +1461,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "The company expects to follow that with hardware devices built specifically for those systems."
+              "quote": "The company expects to follow that with hardware devices built specifically for those systems.",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "bd1f616d6d6db58b2f172a8a014e13030e83a24fb16cdb8b7f002083ab3a7c49"
             },
             {
               "source_id": "FISRC-3498976409b44e70",
-              "quote": "Following this, Hark will introduce AI-native hardware devices designed specifically for these systems, creating a seamless experience where models, software, and hardware work together."
+              "quote": "Following this, Hark will introduce AI-native hardware devices designed specifically for these systems, creating a seamless experience where models, software, and hardware work together.",
+              "source_content_hash": "ef34d0c32c32b4ff",
+              "quote_hash": "1ad69140c642b7c8a4cd3439cd350764dca20f03c15cd61fa2cdea830809ee75"
             }
           ],
           "entity_id": null
@@ -1454,13 +1487,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "He noted that while Anthropic is prioritizing coding tools and OpenAI is moving in the same direction ahead of its IPO, few companies are focused solely on building interfaces and native hardware the way Hark is."
+              "quote": "He noted that while Anthropic is prioritizing coding tools and OpenAI is moving in the same direction ahead of its IPO, few companies are focused solely on building interfaces and native hardware the way Hark is.",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "f31af0ce52de332b8dd605a009b74c15b2fee80f2f801854269f207db1dad00d"
             },
             {
               "source_id": "FISRC-b0a9c7caaefb8d19",
-              "quote": "Anthropic, reportedly in talks to raise more than $30 billion at a valuation north of $900 billion"
+              "quote": "Anthropic, reportedly in talks to raise more than $30 billion at a valuation north of $900 billion",
+              "source_content_hash": "8d3d5dc1ca4696fd",
+              "quote_hash": "3bfc6650816c6c6430b40d325e86c1a7227ced080ae6b978bc752d418183933b"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "OpenAI",
@@ -1472,13 +1510,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "He noted that while Anthropic is prioritizing coding tools and OpenAI is moving in the same direction ahead of its IPO, few companies are focused solely on building interfaces and native hardware the way Hark is."
+              "quote": "He noted that while Anthropic is prioritizing coding tools and OpenAI is moving in the same direction ahead of its IPO, few companies are focused solely on building interfaces and native hardware the way Hark is.",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "f31af0ce52de332b8dd605a009b74c15b2fee80f2f801854269f207db1dad00d"
             },
             {
               "source_id": "FISRC-b0a9c7caaefb8d19",
-              "quote": "OpenAI, valued at roughly $852 billion in late March 2026"
+              "quote": "OpenAI, valued at roughly $852 billion in late March 2026",
+              "source_content_hash": "8d3d5dc1ca4696fd",
+              "quote_hash": "bf082c2a18f0f756eb87dd2982bbba1e7cce9fbc96d9787e2b2ed542070cc4d1"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         }
       ],
       "metrics": [
@@ -1489,7 +1532,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "AI Hark raises $700M Series A"
+              "quote": "AI Hark raises $700M Series A",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "38ae54d277ddaca01553ab73f9f2747331a4eda14b04a3f96067096d8ee7c89b"
             }
           ]
         },
@@ -1500,7 +1545,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "values it at $6 billion post-money"
+              "quote": "values it at $6 billion post-money",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "2969fbeab217e6a2ccc13176ca8f49ee776f1e849a1a878c80f89bb2ad616263"
             }
           ]
         },
@@ -1511,7 +1558,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "launched Hark in late 2025 with $100 million of his own money"
+              "quote": "launched Hark in late 2025 with $100 million of his own money",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "80133e2dc27bc75992a48a28583104cdf72eb90cf75c64fe3c37892c6f67b61a"
             }
           ]
         },
@@ -1522,7 +1571,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "The company currently has 70 employees"
+              "quote": "The company currently has 70 employees",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "a617ace321995353bf2d9e08e69e48371402a8f70a677ac3db15c205d40290f4"
             }
           ]
         },
@@ -1533,7 +1584,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-353546c00a154228",
-              "quote": "runs a data center with Nvidia B200 GPUs"
+              "quote": "runs a data center with Nvidia B200 GPUs",
+              "source_content_hash": "cfb3b54f7f85b4a4",
+              "quote_hash": "e988ef185502d51f8757eb2bdbd0ed2113cfbed7fa94fd1e6db35be054ddf1f3"
             }
           ]
         }
@@ -1553,7 +1606,21 @@
           "消费AI硬件品类存在高失败率先例：Humane AI Pin和Rabbit R1等产品均以失败告终，Hark可能重复该品类的错误。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI消费硬件与个性化智能体"
+        "sector": "AI消费硬件与个性化智能体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是创始人Brett Adcock连续成功创办资本密集型硬件公司（Figure.AI、Archer Aviation）的履历，以及AI物理层（硬件与系统）成为下一个价值池的行业共识。本轮7亿美元A轮融资和60亿美元估值完全基于创始人的历史记录和行业趋势判断，而非已验证的产品或商业牵引力。关键信号是英伟达、AMD、英特尔、高通四家直接竞争的芯片巨头罕见地同时出现在同一家早期硬件公司的资本表上，表明行业层面对AI硬件平台转移的强烈预期。但必须指出，Hark尚未发布任何公开产品、演示或定价，其核心隐私问题（如何在不侵犯他人隐私的情况下获取用户生活上下文）也未给出解决方案，估值完全依赖执行假设。",
+          "evidence_signals": [
+            "创始人Brett Adcock曾成功创办Figure.AI（人形机器人）和Archer Aviation（电动飞机）两家硬件公司，并交付了实体产品。",
+            "英伟达、AMD、英特尔、高通四家竞争性芯片巨头同时参投，表明行业层面对AI硬件方向的强烈共识。",
+            "公司已建立70人团队，并运营配备Nvidia B200 GPU的数据中心。"
+          ],
+          "risks": [
+            "产品完全未经验证：公司未公开任何产品细节、演示或定价，所有估值均基于对创始人履历和行业趋势的押注，而非商业实质。",
+            "核心隐私挑战未解决：个人AI助手需要获取用户生活上下文，但如何在公共场所不侵犯他人隐私、避免社交尴尬，公司未给出任何解决方案，仅以微笑回应。",
+            "消费AI硬件品类存在高失败率先例：Humane AI Pin和Rabbit R1等产品均以失败告终，Hark可能重复该品类的错误。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1561,250 +1628,126 @@
           "target_kind": "product",
           "research_name": "多模态AI模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "Hark expects to release its first multimodal models this summer, which it says will power a personal AI platform that works with existing products and services."
-            },
-            {
-              "source_id": "FISRC-3498976409b44e70",
-              "quote": "Hark focuses on building proactive, personalized AI that interacts with the world through speech, vision, and memory."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AI原生硬件设备",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "The company expects to follow that with hardware devices built specifically for those systems."
-            },
-            {
-              "source_id": "FISRC-3498976409b44e70",
-              "quote": "Following this, Hark will introduce AI-native hardware devices designed specifically for these systems, creating a seamless experience where models, software, and hardware work together."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Brett Adcock",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "Founder and CEO, Brett Adcock, also the entrepreneur behind robotics company Figure.AI and electric aircraft builder Archer, launched Hark in late 2025 with $100 million of his own money"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Parkway Venture Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "The mega-round was led by Parkway Venture Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Align Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AMD Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "ARK Invest",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Brookfield",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Greycroft",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Intel Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Prime Movers Lab",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Qualcomm Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Salesforce Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tamarack Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "included Nvidia, Align Ventures, AMD Ventures, ARK Invest, Brookfield, Greycroft, Intel Capital, Prime Movers Lab, Qualcomm Ventures, Salesforce Ventures, and Tamarack Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Brett Adcock",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "launched Hark in late 2025 with $100 million of his own money"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "He noted that while Anthropic is prioritizing coding tools and OpenAI is moving in the same direction ahead of its IPO, few companies are focused solely on building interfaces and native hardware the way Hark is."
-            },
-            {
-              "source_id": "FISRC-b0a9c7caaefb8d19",
-              "quote": "Anthropic, reportedly in talks to raise more than $30 billion at a valuation north of $900 billion"
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-353546c00a154228",
-              "quote": "He noted that while Anthropic is prioritizing coding tools and OpenAI is moving in the same direction ahead of its IPO, few companies are focused solely on building interfaces and native hardware the way Hark is."
-            },
-            {
-              "source_id": "FISRC-b0a9c7caaefb8d19",
-              "quote": "OpenAI, valued at roughly $852 billion in late March 2026"
-            }
-          ]
+          "canonical_name": "OpenAI"
         }
       ],
       "funding_history": [
@@ -1866,10 +1809,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:29:37.961Z"
+      "published_at": "2026-07-26T14:29:37.961Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI原生硬件设备",
+            "多模态AI模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Brett Adcock"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-44c9a50b99c76a70"
+      ],
+      "aggregation": {
+        "key": "EN-245f1e177c5169cb|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

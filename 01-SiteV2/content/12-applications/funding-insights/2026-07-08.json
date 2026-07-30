@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-08",
     "generated_at": "2026-07-27T05:21:03.542Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 7,
       "auto_published": 5,
       "blocked": 2,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-3e83e4d417d38136",
       "triggered_by_event_id": "EV-0f520c9e5b1ea1d2",
       "as_of_date": "2026-07-08",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f58149f5a78da9a4",
-                "quote": "Norm Ai founder and CEO John Nay"
+                "quote": "Norm Ai founder and CEO John Nay",
+                "source_content_hash": "419d5bb223a9cb2e",
+                "quote_hash": "7bcc212df86f842024d633d2e41b79e2e77035aa42293d26ca8d802971c30bf4"
               },
               {
                 "source_id": "FISRC-afaa91a6569d1f7a",
-                "quote": "Founded in July 2023 by John Nay"
+                "quote": "Founded in July 2023 by John Nay",
+                "source_content_hash": "afe0afef4cf0ce8c",
+                "quote_hash": "503f5b7120b480a3aff7c40b215a878f125d064e446e0a5dd43c291bda91618a"
               }
             ],
             "entity_id": null
@@ -51,23 +56,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f58149f5a78da9a4",
-              "quote": "Norm Ai has over 200 employees at present"
+              "quote": "Norm Ai has over 200 employees at present",
+              "source_content_hash": "419d5bb223a9cb2e",
+              "quote_hash": "a413244a5c83759c675416fa3911213a3bef2a2fc1d4ae4e78acd9ae2fbf25f5"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-9ec121b03e3fabc8",
-            "quote": "AI law startup Norm on Tuesday said it has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion."
+            "quote": "AI law startup Norm on Tuesday said it has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion.",
+            "source_content_hash": "cbfe35d93b913826",
+            "quote_hash": "428a60553a01fce9df2c3cefc9520cb0dacbb8e067adcada5051632879884123"
           },
           {
             "source_id": "FISRC-f58149f5a78da9a4",
-            "quote": "regulatory artificial intelligence company Norm Ai, which is affiliated with hybrid law firm Norm Law, announced the completion of a $120 million Series C funding round valuing the company at $1.2 billion."
+            "quote": "regulatory artificial intelligence company Norm Ai, which is affiliated with hybrid law firm Norm Law, announced the completion of a $120 million Series C funding round valuing the company at $1.2 billion.",
+            "source_content_hash": "419d5bb223a9cb2e",
+            "quote_hash": "0ae4209916857bfdd110bed9af10aecdc1795a647c81d0259cf989bbd7e15f35"
           }
         ]
       },
       "financing": {
-        "round": "Series C",
+        "round": "C轮",
         "amount": "$120M",
         "total_raised": "超过$260M",
         "announced_at": "2026-07-07",
@@ -78,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9ec121b03e3fabc8",
-                "quote": "led by Khosla Ventures"
+                "quote": "led by Khosla Ventures",
+                "source_content_hash": "cbfe35d93b913826",
+                "quote_hash": "f35d8c30ddbb8e36608754e103c03b67c232d4cab602b61472ba080827e32569"
               }
             ],
             "entity_id": null
@@ -89,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9ec121b03e3fabc8",
-                "quote": "Tony James (former president and COO of Blackstone)"
+                "quote": "Tony James (former president and COO of Blackstone)",
+                "source_content_hash": "cbfe35d93b913826",
+                "quote_hash": "21e7f3ebf504cbd0ec857f3a98d2b6a925ddac21bb9d3bccce0e09282a94c549"
               }
             ],
             "entity_id": null
@@ -100,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9ec121b03e3fabc8",
-                "quote": "Jeff Hammes (former chairman of Kirkland & Ellis)"
+                "quote": "Jeff Hammes (former chairman of Kirkland & Ellis)",
+                "source_content_hash": "cbfe35d93b913826",
+                "quote_hash": "5c9d2d7bc4c76e7bb28ad1074a11745ae2ad3137b4a9b63bddd0785aafbd6479"
               }
             ],
             "entity_id": null
@@ -111,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9ec121b03e3fabc8",
-                "quote": "and Fenwick LLP"
+                "quote": "and Fenwick LLP",
+                "source_content_hash": "cbfe35d93b913826",
+                "quote_hash": "8c5193ba2517764a6ab750852b6017f1a05ed9ddede895a51a96f8bd1dac213b"
               }
             ],
             "entity_id": null
@@ -122,11 +141,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f58149f5a78da9a4",
-                "quote": "a further $50 million investment in November that coincided with the launch of Norm Law"
+                "quote": "a further $50 million investment in November that coincided with the launch of Norm Law",
+                "source_content_hash": "419d5bb223a9cb2e",
+                "quote_hash": "a869b1c36e3508bd5cb2fac5647e4b682f7cfcb009dc6214aad31d741dfd48c7"
               },
               {
                 "source_id": "FISRC-d2ea16d9f5e796fe",
-                "quote": "The funding round was led by Khosla Ventures, with participation from Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA, former Blackstone president and COO Tony James, former chairman of Kirkland & Ellis Jeff Hammes and Fenwick LLP."
+                "quote": "The funding round was led by Khosla Ventures, with participation from Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA, former Blackstone president and COO Tony James, former chairman of Kirkland & Ellis Jeff Hammes and Fenwick LLP.",
+                "source_content_hash": "8b9174e8df0173a9",
+                "quote_hash": "d7cb9cc4c304a3922ecdce5764fa19d705a0ca5e12f9837f8819e59be508967e"
               }
             ],
             "entity_id": null
@@ -135,11 +158,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9ec121b03e3fabc8",
-            "quote": "AI law startup Norm on Tuesday said it has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion."
+            "quote": "AI law startup Norm on Tuesday said it has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion.",
+            "source_content_hash": "cbfe35d93b913826",
+            "quote_hash": "428a60553a01fce9df2c3cefc9520cb0dacbb8e067adcada5051632879884123"
           },
           {
             "source_id": "FISRC-f58149f5a78da9a4",
-            "quote": "Norm Ai announced the completions of a $120 million Series C."
+            "quote": "Norm Ai announced the completions of a $120 million Series C.",
+            "source_content_hash": "419d5bb223a9cb2e",
+            "quote_hash": "2a4cfca26f8c3da3e063e145e0ccacb6cb7f9559162146e32a327e7837e20252"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-0f520c9e5b1ea1d2",
+            "round_original": "Series C",
+            "amount": "$120M",
+            "announced_at": "2026-07-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ec121b03e3fabc8",
+                "quote": "AI law startup Norm on Tuesday said it has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion.",
+                "source_content_hash": "cbfe35d93b913826",
+                "quote_hash": "428a60553a01fce9df2c3cefc9520cb0dacbb8e067adcada5051632879884123"
+              },
+              {
+                "source_id": "FISRC-f58149f5a78da9a4",
+                "quote": "Norm Ai announced the completions of a $120 million Series C.",
+                "source_content_hash": "419d5bb223a9cb2e",
+                "quote_hash": "2a4cfca26f8c3da3e063e145e0ccacb6cb7f9559162146e32a327e7837e20252"
+              }
+            ]
           }
         ]
       },
@@ -156,11 +208,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f58149f5a78da9a4",
-              "quote": "Norm Ai develops AI agents that can make compliance determinations that adhere with relevant federal regulations, intended to streamline legal and compliance workflows for institutions in regulated industries including banks, hedge funds, insurance companies and other asset managers."
+              "quote": "Norm Ai develops AI agents that can make compliance determinations that adhere with relevant federal regulations, intended to streamline legal and compliance workflows for institutions in regulated industries including banks, hedge funds, insurance companies and other asset managers.",
+              "source_content_hash": "419d5bb223a9cb2e",
+              "quote_hash": "dd156114a3e7adbad3df1e69eacce479af1f07dd7443926a224103bce845b349"
             },
             {
               "source_id": "FISRC-d64af651636f62d5",
-              "quote": "Norm AI, founded by John Nay, builds software that converts regulatory text into structured, machine-readable logic that enterprise systems can check against automatically."
+              "quote": "Norm AI, founded by John Nay, builds software that converts regulatory text into structured, machine-readable logic that enterprise systems can check against automatically.",
+              "source_content_hash": "c7ecdd7ee66f8e64",
+              "quote_hash": "ccb726fcffb93dc50272d0aa400c593064682f37ef93769383266deb910332b9"
             }
           ],
           "entity_id": null
@@ -174,13 +230,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-95b2ec599987719d",
-              "quote": "Blackstone doesn't just invest in the company — Blackstone uses it."
+              "quote": "Blackstone doesn't just invest in the company — Blackstone uses it.",
+              "source_content_hash": "22e9c80eb856bc4c",
+              "quote_hash": "5ec800dd58578df863eb518c67a8cd5787f1affff3381b168a7a1d485af74a18"
             },
             {
               "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies."
+              "quote": "Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies.",
+              "source_content_hash": "afe0afef4cf0ce8c",
+              "quote_hash": "df53ca03f571ef69a1dff3e619898e642ab8a183135d9c799f30fef98e1515da"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Bain Capital",
@@ -189,9 +250,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies."
+              "quote": "Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies.",
+              "source_content_hash": "afe0afef4cf0ce8c",
+              "quote_hash": "df53ca03f571ef69a1dff3e619898e642ab8a183135d9c799f30fef98e1515da"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -205,13 +269,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d64af651636f62d5",
-              "quote": "Harvey AI, the legal-research and drafting assistant used by large law firms, raised a Sequoia-led round in March 2026 that pushed its valuation to roughly $11 billion."
+              "quote": "Harvey AI, the legal-research and drafting assistant used by large law firms, raised a Sequoia-led round in March 2026 that pushed its valuation to roughly $11 billion.",
+              "source_content_hash": "c7ecdd7ee66f8e64",
+              "quote_hash": "a8608603540c1a850f7561c5311aa18911d4b7b2e6d93461da7a869086ce8ba2"
             },
             {
               "source_id": "FISRC-de83f4c0ba7fdb45",
-              "quote": "Harvey and Legora largely sell tools to lawyers, while Norm sells the legal work itself and prices on outcomes."
+              "quote": "Harvey and Legora largely sell tools to lawyers, while Norm sells the legal work itself and prices on outcomes.",
+              "source_content_hash": "9ef2d163f6080bbe",
+              "quote_hash": "08cd316a3fef552df4dc826e35b79fca7f6c1bc6b3f4ac00d6c48e54fa24589c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Legora",
@@ -223,13 +292,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d64af651636f62d5",
-              "quote": "Legora, a European legal-AI challenger, closed a $550 million round plus an additional $50 million in April 2026 that took it to $5.6 billion"
+              "quote": "Legora, a European legal-AI challenger, closed a $550 million round plus an additional $50 million in April 2026 that took it to $5.6 billion",
+              "source_content_hash": "c7ecdd7ee66f8e64",
+              "quote_hash": "c7174691baf888589e3e3880ab5b0ac72f568d878d95cc0d26bc6514d56414b3"
             },
             {
               "source_id": "FISRC-de83f4c0ba7fdb45",
-              "quote": "Harvey and Legora largely sell tools to lawyers, while Norm sells the legal work itself and prices on outcomes."
+              "quote": "Harvey and Legora largely sell tools to lawyers, while Norm sells the legal work itself and prices on outcomes.",
+              "source_content_hash": "9ef2d163f6080bbe",
+              "quote_hash": "08cd316a3fef552df4dc826e35b79fca7f6c1bc6b3f4ac00d6c48e54fa24589c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -240,7 +314,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9ec121b03e3fabc8",
-              "quote": "valuing the almost three-year-old startup at $1.2 billion"
+              "quote": "valuing the almost three-year-old startup at $1.2 billion",
+              "source_content_hash": "cbfe35d93b913826",
+              "quote_hash": "7ae04d4d9bd20d8aa437261de4e68bd065521263b62402f7a868d0f1dfe86e2b"
             }
           ]
         },
@@ -251,7 +327,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2ea16d9f5e796fe",
-              "quote": "The platform is used by organisations representing more than $30trn in assets under management"
+              "quote": "The platform is used by organisations representing more than $30trn in assets under management",
+              "source_content_hash": "8b9174e8df0173a9",
+              "quote_hash": "6b0da7a87533eef496a7451e7ac22a09d6b41b274c0b343582f496974755826a"
             }
           ]
         },
@@ -262,7 +340,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9ec121b03e3fabc8",
-              "quote": "The company has raised more than $260 million in funding to date."
+              "quote": "The company has raised more than $260 million in funding to date.",
+              "source_content_hash": "cbfe35d93b913826",
+              "quote_hash": "873c897ef9887317f4adf1960601e5fa2f56bb444a00cda2aa9402e617684ccc"
             }
           ]
         },
@@ -273,7 +353,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f58149f5a78da9a4",
-              "quote": "Norm Ai has over 200 employees at present"
+              "quote": "Norm Ai has over 200 employees at present",
+              "source_content_hash": "419d5bb223a9cb2e",
+              "quote_hash": "a413244a5c83759c675416fa3911213a3bef2a2fc1d4ae4e78acd9ae2fbf25f5"
             }
           ]
         },
@@ -284,7 +366,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "Founded in July 2023 by John Nay"
+              "quote": "Founded in July 2023 by John Nay",
+              "source_content_hash": "afe0afef4cf0ce8c",
+              "quote_hash": "503f5b7120b480a3aff7c40b215a878f125d064e446e0a5dd43c291bda91618a"
             }
           ]
         }
@@ -296,7 +380,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2ea16d9f5e796fe",
-              "quote": "As AI capabilities race forward, one of the greatest opportunities is to build the interface between AI and the most legitimate encapsulation of human values: law. We are building that interface in an increasingly agentic society to (1) align legal services with the client, and (2) align AI with human values."
+              "quote": "As AI capabilities race forward, one of the greatest opportunities is to build the interface between AI and the most legitimate encapsulation of human values: law. We are building that interface in an increasingly agentic society to (1) align legal services with the client, and (2) align AI with human values.",
+              "source_content_hash": "8b9174e8df0173a9",
+              "quote_hash": "7cb1e83b20ae572543ba38b21e4580aaccc7031106e31b9b09b01a4b444db75c"
             }
           ]
         },
@@ -306,7 +392,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2ea16d9f5e796fe",
-              "quote": "AI will not transform regulated work until institutions trust it, and that trust is the hardest thing to earn in this market. The most demanding buyers of legal services in the world already rely on Norm Ai. We led this round because John has built the only credible path to AI-native legal work at institutional scale."
+              "quote": "AI will not transform regulated work until institutions trust it, and that trust is the hardest thing to earn in this market. The most demanding buyers of legal services in the world already rely on Norm Ai. We led this round because John has built the only credible path to AI-native legal work at institutional scale.",
+              "source_content_hash": "8b9174e8df0173a9",
+              "quote_hash": "2572181aa3204685a89bcb379adcdf788989ac7a510017f87f105ad65cdc9348"
             }
           ]
         },
@@ -316,7 +404,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "Norm offers premium legal services using a fundamentally different operating model and price structure. Norm was built to drive speed, quality and efficiency gains from AI, and share those gains with its clients. They continue to add practice areas and senior attorneys relevant to us. As Blackstone becomes more AI-forward, it's fitting that we are ramping up with an AI-native law firm."
+              "quote": "Norm offers premium legal services using a fundamentally different operating model and price structure. Norm was built to drive speed, quality and efficiency gains from AI, and share those gains with its clients. They continue to add practice areas and senior attorneys relevant to us. As Blackstone becomes more AI-forward, it's fitting that we are ramping up with an AI-native law firm.",
+              "source_content_hash": "afe0afef4cf0ce8c",
+              "quote_hash": "b93c8723ce4739b47feef0073df976d1e5080d0cba07b7af969b3f23c14b3866"
             }
           ]
         },
@@ -326,7 +416,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "The investment management ecosystem has needed a law firm built for the benefit of its clients. Norm has already proven that this is possible and we've witnessed it firsthand: Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies."
+              "quote": "The investment management ecosystem has needed a law firm built for the benefit of its clients. Norm has already proven that this is possible and we've witnessed it firsthand: Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies.",
+              "source_content_hash": "afe0afef4cf0ce8c",
+              "quote_hash": "3b2c1523108372a4d6b64d3f23d8fef61c65da9e14f2ae039c7be37dcd67fbaf"
             }
           ]
         }
@@ -342,7 +434,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d2ea16d9f5e796fe",
-                "quote": "AI will not transform regulated work until institutions trust it, and that trust is the hardest thing to earn in this market. The most demanding buyers of legal services in the world already rely on Norm Ai. We led this round because John has built the only credible path to AI-native legal work at institutional scale."
+                "quote": "AI will not transform regulated work until institutions trust it, and that trust is the hardest thing to earn in this market. The most demanding buyers of legal services in the world already rely on Norm Ai. We led this round because John has built the only credible path to AI-native legal work at institutional scale.",
+                "source_content_hash": "8b9174e8df0173a9",
+                "quote_hash": "2572181aa3204685a89bcb379adcdf788989ac7a510017f87f105ad65cdc9348"
               }
             ]
           }
@@ -359,7 +453,21 @@
           "法律 AI 赛道竞争激烈，Harvey（$11B）和 Legora（$5.6B）拥有更大资金储备，Norm Ai 的 $1.2B 估值在资本密集度上处于劣势。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "法律科技与监管合规 AI"
+        "sector": "法律科技与监管合规 AI",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“受监管行业的 AI 信任壁垒”。Norm Ai 的 $1.2B 估值并非基于传统 SaaS 指标，而是基于其独特的“平台+AI 原生律所”双轨模式，该模式直接挑战了法律行业的小时计费制，并通过结果导向定价将自身利益与客户对齐。已验证信号包括：客户资产管理规模超 $30 万亿，且 Blackstone、Bain Capital 等顶级机构既是投资者又是深度用户，形成了“客户即股东”的强验证闭环。然而，当前判断的证据边界限于私募市场定价和客户证言，缺乏公开市场的流动性检验和长期营收数据。",
+          "evidence_signals": [
+            "客户资产管理规模超 $30 万亿，涵盖全球顶级银行、对冲基金、保险公司和资产管理公司",
+            "Blackstone、Bain Capital 等关键客户同时也是本轮投资者，形成“客户即股东”的验证闭环",
+            "已从 Kirkland & Ellis、Sidley Austin 等顶级律所招募资深合伙人加入 Norm Law，验证了新模式对行业顶尖人才的吸引力"
+          ],
+          "risks": [
+            "结果导向定价模式与法律责任归属存在冲突：当 AI 智能体出错时，责任由谁承担尚不明确，可能引发客户纠纷或监管挑战。",
+            "客户与投资者高度重叠（如 Fenwick LLP 既是外部律师又是股东）可能夸大产品市场契合度的信号，独立商业验证的纯度存疑。",
+            "法律 AI 赛道竞争激烈，Harvey（$11B）和 Legora（$5.6B）拥有更大资金储备，Norm Ai 的 $1.2B 估值在资本密集度上处于劣势。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -367,167 +475,77 @@
           "target_kind": "product",
           "research_name": "Norm Ai 平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f58149f5a78da9a4",
-              "quote": "Norm Ai develops AI agents that can make compliance determinations that adhere with relevant federal regulations, intended to streamline legal and compliance workflows for institutions in regulated industries including banks, hedge funds, insurance companies and other asset managers."
-            },
-            {
-              "source_id": "FISRC-d64af651636f62d5",
-              "quote": "Norm AI, founded by John Nay, builds software that converts regulatory text into structured, machine-readable logic that enterprise systems can check against automatically."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "John Nay",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f58149f5a78da9a4",
-              "quote": "Norm Ai founder and CEO John Nay"
-            },
-            {
-              "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "Founded in July 2023 by John Nay"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Khosla Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9ec121b03e3fabc8",
-              "quote": "led by Khosla Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tony James",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9ec121b03e3fabc8",
-              "quote": "Tony James (former president and COO of Blackstone)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jeff Hammes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9ec121b03e3fabc8",
-              "quote": "Jeff Hammes (former chairman of Kirkland & Ellis)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fenwick LLP",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9ec121b03e3fabc8",
-              "quote": "and Fenwick LLP"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blackstone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f58149f5a78da9a4",
-              "quote": "a further $50 million investment in November that coincided with the launch of Norm Law"
-            },
-            {
-              "source_id": "FISRC-d2ea16d9f5e796fe",
-              "quote": "The funding round was led by Khosla Ventures, with participation from Blackstone, Bain Capital Ventures (BCV), Craft Ventures, Coatue, Vanguard, New York Life, TIAA, former Blackstone president and COO Tony James, former chairman of Kirkland & Ellis Jeff Hammes and Fenwick LLP."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Blackstone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-95b2ec599987719d",
-              "quote": "Blackstone doesn't just invest in the company — Blackstone uses it."
-            },
-            {
-              "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Bain Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afaa91a6569d1f7a",
-              "quote": "Norm Ai powers internal regulated workflows at Bain Capital, while Norm Law represents us in deals in a way that benefits our firm and our portfolio companies."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Harvey",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d64af651636f62d5",
-              "quote": "Harvey AI, the legal-research and drafting assistant used by large law firms, raised a Sequoia-led round in March 2026 that pushed its valuation to roughly $11 billion."
-            },
-            {
-              "source_id": "FISRC-de83f4c0ba7fdb45",
-              "quote": "Harvey and Legora largely sell tools to lawyers, while Norm sells the legal work itself and prices on outcomes."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Legora",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d64af651636f62d5",
-              "quote": "Legora, a European legal-AI challenger, closed a $550 million round plus an additional $50 million in April 2026 that took it to $5.6 billion"
-            },
-            {
-              "source_id": "FISRC-de83f4c0ba7fdb45",
-              "quote": "Harvey and Legora largely sell tools to lawyers, while Norm sells the legal work itself and prices on outcomes."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -637,13 +655,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:49:24.325Z"
+      "published_at": "2026-07-26T14:49:24.325Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Norm Ai 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "John Nay"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-0f520c9e5b1ea1d2"
+      ],
+      "aggregation": {
+        "key": "EN-733859c1fc6b9331|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-be3fbacdf2cc6958",
       "triggered_by_event_id": "EV-13ec78dfdbca678b",
       "as_of_date": "2026-07-08",
@@ -661,7 +708,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4f2b0513875fc0f9",
-                "quote": "Together AI founders Percy Liang, CEO Vipul Ved Prakash, CTO Ce Zhang"
+                "quote": "Together AI founders Percy Liang, CEO Vipul Ved Prakash, CTO Ce Zhang",
+                "source_content_hash": "b51b3c73726e0ec3",
+                "quote_hash": "e34deddd6bbd8f77eddc8a2f1225d5c0de104c55bbea417a756e61dd10e93260"
               }
             ],
             "entity_id": null
@@ -672,7 +721,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f0f12fb121fbd88",
-                "quote": "His Together AI co-founders are Stanford professor Percy Liang (above, left)"
+                "quote": "His Together AI co-founders are Stanford professor Percy Liang (above, left)",
+                "source_content_hash": "99e8e0f48b30eed2",
+                "quote_hash": "fa32287abeff398569fbb0f18c6d22eb4289a90a3506c1f7f990c9ca83079caa"
               }
             ],
             "entity_id": null
@@ -683,7 +734,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4f2b0513875fc0f9",
-                "quote": "Together AI founders Percy Liang, CEO Vipul Ved Prakash, CTO Ce Zhang"
+                "quote": "Together AI founders Percy Liang, CEO Vipul Ved Prakash, CTO Ce Zhang",
+                "source_content_hash": "b51b3c73726e0ec3",
+                "quote_hash": "e34deddd6bbd8f77eddc8a2f1225d5c0de104c55bbea417a756e61dd10e93260"
               }
             ],
             "entity_id": null
@@ -697,16 +750,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6f0f12fb121fbd88",
-            "quote": "Together AI — an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure"
+            "quote": "Together AI — an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure",
+            "source_content_hash": "99e8e0f48b30eed2",
+            "quote_hash": "ea2d65f88b9173d6212414f259da3db80ff36996b7c127a8e924e3b917fe49bd"
           },
           {
             "source_id": "FISRC-b46e79f7767a03c0",
-            "quote": "Together AI, a San Francisco startup that runs open-source models for enterprises"
+            "quote": "Together AI, a San Francisco startup that runs open-source models for enterprises",
+            "source_content_hash": "a4646da324784f6d",
+            "quote_hash": "114277a42bb1524084ad9f22d9826176614718bb745d6f1a14fa2722864c8c0f"
           }
         ]
       },
       "financing": {
-        "round": "Series C",
+        "round": "C轮",
         "amount": "$800 million",
         "total_raised": "$1.2075 billion",
         "announced_at": "2026-07-01",
@@ -717,7 +774,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f0f12fb121fbd88",
-                "quote": "The round was led by Aramco Ventures"
+                "quote": "The round was led by Aramco Ventures",
+                "source_content_hash": "99e8e0f48b30eed2",
+                "quote_hash": "532d1d05cbca7d9e8debeeee4449d6f35cb1c3f6c3679a46c8a23bdb58629c5b"
               }
             ],
             "entity_id": null
@@ -728,7 +787,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f0f12fb121fbd88",
-                "quote": "with participation from Vista Equity Partners"
+                "quote": "with participation from Vista Equity Partners",
+                "source_content_hash": "99e8e0f48b30eed2",
+                "quote_hash": "8675f498cc47f8b1b529cfa4f40c9f48d46b02c7ce2e8ac6c2303159a57740f2"
               }
             ],
             "entity_id": null
@@ -739,7 +800,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f0f12fb121fbd88",
-                "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023"
+                "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
+                "source_content_hash": "99e8e0f48b30eed2",
+                "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
               }
             ],
             "entity_id": null
@@ -750,7 +813,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f0f12fb121fbd88",
-                "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023"
+                "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
+                "source_content_hash": "99e8e0f48b30eed2",
+                "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -761,18 +826,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7d75683a17a8f2ca",
-                "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Kleiner Perkins",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6f0f12fb121fbd88",
-                "quote": "a $102.5 million Series A funding round led by Kleiner Perkins"
+                "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital",
+                "source_content_hash": "a24dcd74ed166799",
+                "quote_hash": "f4c6b9a12871b164051bf15691b0189abc1ed8c839db8a57879585abe41c8b7f"
               }
             ],
             "entity_id": null
@@ -781,7 +837,48 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6f0f12fb121fbd88",
-            "quote": "has raised an $800 million Series C at an $8.3 billion valuation"
+            "quote": "has raised an $800 million Series C at an $8.3 billion valuation",
+            "source_content_hash": "99e8e0f48b30eed2",
+            "quote_hash": "108a14c0ab2a64e4e589376fa292544e4bfdc259977915d5f4debd122c5efe80"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "other_round_investors": [
+          {
+            "name": "Kleiner Perkins",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f0f12fb121fbd88",
+                "quote": "a $102.5 million Series A funding round led by Kleiner Perkins",
+                "source_content_hash": "99e8e0f48b30eed2",
+                "quote_hash": "2dd322954ffcde5288d4319db57d166dd2d4d1a740f9bddbf55df5411e121cff"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮领投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-13ec78dfdbca678b",
+            "round_original": "Series C",
+            "amount": "$800 million",
+            "announced_at": "2026-07-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f0f12fb121fbd88",
+                "quote": "has raised an $800 million Series C at an $8.3 billion valuation",
+                "source_content_hash": "99e8e0f48b30eed2",
+                "quote_hash": "108a14c0ab2a64e4e589376fa292544e4bfdc259977915d5f4debd122c5efe80"
+              }
+            ]
           }
         ]
       },
@@ -798,11 +895,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure"
+              "quote": "an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "d2fb957778bd68c0f683d9203097ba9ecf8e4baa324c66eceebb35fb3af7af7b"
             },
             {
               "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "the company invests heavily in research like FlashAttention-4 for NVIDIA Blackwell and its own Megakernel and together.compile optimizations"
+              "quote": "the company invests heavily in research like FlashAttention-4 for NVIDIA Blackwell and its own Megakernel and together.compile optimizations",
+              "source_content_hash": "a24dcd74ed166799",
+              "quote_hash": "43788c21b4405ee2ad825917a5e009c55ce1505e372923d02e86b23dc2db809f"
             }
           ],
           "entity_id": null
@@ -816,9 +917,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Together AI says it has thousands of paying customers, naming Cursor, Cognition, and Decagon among them"
+              "quote": "Together AI says it has thousands of paying customers, naming Cursor, Cognition, and Decagon among them",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "1debb52bef525890286ad75171066d1eb261a40a66bcb3bbabbefaa81ce8bea4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cognition",
@@ -827,9 +931,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Together AI says it has thousands of paying customers, naming Cursor, Cognition, and Decagon among them"
+              "quote": "Together AI says it has thousands of paying customers, naming Cursor, Cognition, and Decagon among them",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "1debb52bef525890286ad75171066d1eb261a40a66bcb3bbabbefaa81ce8bea4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Decagon",
@@ -838,9 +945,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Customer-support automation firm Decagon, for example, cut its inference costs sixfold after moving to Together"
+              "quote": "Customer-support automation firm Decagon, for example, cut its inference costs sixfold after moving to Together",
+              "source_content_hash": "a24dcd74ed166799",
+              "quote_hash": "1fc4d1005ac4cde199a4fd398a1b8e24b3192ede33ab78528e4d8267308c4453"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "ElevenLabs",
@@ -849,9 +959,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Its customer roster now includes fast-growing AI companies like Cursor, Cognition, Decagon, ElevenLabs, and Suno"
+              "quote": "Its customer roster now includes fast-growing AI companies like Cursor, Cognition, Decagon, ElevenLabs, and Suno",
+              "source_content_hash": "a24dcd74ed166799",
+              "quote_hash": "67682412351dffeb0bfcd1119b9bb23712281e108f0e38efd70f11309e8ba04e"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Suno",
@@ -860,9 +973,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Its customer roster now includes fast-growing AI companies like Cursor, Cognition, Decagon, ElevenLabs, and Suno"
+              "quote": "Its customer roster now includes fast-growing AI companies like Cursor, Cognition, Decagon, ElevenLabs, and Suno",
+              "source_content_hash": "a24dcd74ed166799",
+              "quote_hash": "67682412351dffeb0bfcd1119b9bb23712281e108f0e38efd70f11309e8ba04e"
             }
-          ]
+          ],
+          "entity_id": "EN-586937124e151c46"
         }
       ],
       "comparisons": [
@@ -876,13 +992,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Upscale AI raised a Series A plus in an extension totaling $500 million at a $2 billion valuation last month"
+              "quote": "Upscale AI raised a Series A plus in an extension totaling $500 million at a $2 billion valuation last month",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "e2c77ca0877dd93ea8248dfd4626cd368a3d1ecbf429a14161d15784e780a3cb"
             },
             {
               "source_id": "FISRC-b46e79f7767a03c0",
-              "quote": "What sets Together apart is that it bundles compute with its own inference-optimization software, which it says can cut the cost of running popular models by up to 80 percent."
+              "quote": "What sets Together apart is that it bundles compute with its own inference-optimization software, which it says can cut the cost of running popular models by up to 80 percent.",
+              "source_content_hash": "a4646da324784f6d",
+              "quote_hash": "6670f5fd0c51d7d45075d06c77cf1c721febb766755dfa4ca90514098b4cfb99"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "TensorWave",
@@ -894,13 +1015,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "TensorWave — which focuses on GPU clusters from AMD — raised a $350 million Series B at $1.55 billion valuation"
+              "quote": "TensorWave — which focuses on GPU clusters from AMD — raised a $350 million Series B at $1.55 billion valuation",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "0e774a4d96395ba54d53c83feb76d471f2795bbbc40d17403fdb6f55314be2dc"
             },
             {
               "source_id": "FISRC-b46e79f7767a03c0",
-              "quote": "What sets Together apart is that it bundles compute with its own inference-optimization software"
+              "quote": "What sets Together apart is that it bundles compute with its own inference-optimization software",
+              "source_content_hash": "a4646da324784f6d",
+              "quote_hash": "96816f994d7e74ff883f0082f550dfeba0324afaa889e25f06f3bc1efef91b91"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -911,7 +1037,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Together AI claims annual bookings of over $1.15 billion as of its last quarter"
+              "quote": "Together AI claims annual bookings of over $1.15 billion as of its last quarter",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "bc8d13c9ff954bb81f014b95345adb40a59306baa744e517b66447fe76b276c7"
             }
           ]
         },
@@ -922,7 +1050,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Together AI says it has thousands of paying customers"
+              "quote": "Together AI says it has thousands of paying customers",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "d7ceb9af8cf3f703e73432728db220c516c8e2d0735abed391831c5f2485d0be"
             }
           ]
         },
@@ -933,7 +1063,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "This has tripled usage of open source models across the industry in the past year"
+              "quote": "This has tripled usage of open source models across the industry in the past year",
+              "source_content_hash": "99e8e0f48b30eed2",
+              "quote_hash": "e4e0303f2f35c9d4b8bf5177e94589347477ce9b1bf42ea81a75be2053e87c54"
             }
           ]
         },
@@ -944,7 +1076,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Enterprises running open-weight models on Together report inference costs 6x to 20x lower than closed frontier LLMs at equal or better quality"
+              "quote": "Enterprises running open-weight models on Together report inference costs 6x to 20x lower than closed frontier LLMs at equal or better quality",
+              "source_content_hash": "a24dcd74ed166799",
+              "quote_hash": "f31f87322eccac03d57107e06a8922a07df99fbd5aec6c263a5eb23fb3897ab9"
             }
           ]
         },
@@ -955,7 +1089,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b46e79f7767a03c0",
-              "quote": "the company plans to scale its compute footprint roughly 50-fold over the next five years"
+              "quote": "the company plans to scale its compute footprint roughly 50-fold over the next five years",
+              "source_content_hash": "a4646da324784f6d",
+              "quote_hash": "4ba794b0f13e85fda9c15b3352c374b660240345939c674d5e6e4c8edbc09835"
             }
           ]
         },
@@ -966,7 +1102,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Together secured commitments for more than 500 megawatts of compute capacity to be financed independently by its investors"
+              "quote": "Together secured commitments for more than 500 megawatts of compute capacity to be financed independently by its investors",
+              "source_content_hash": "a24dcd74ed166799",
+              "quote_hash": "67cf2f8946299039f9ef4910e68f0c8e096a1cfed9b86dc0f6c9dd83d5f760f6"
             }
           ]
         }
@@ -978,7 +1116,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b46e79f7767a03c0",
-              "quote": "Intelligence is becoming a foundational resource for the modern economy, every bit as essential as electricity, bandwidth or capital. Our mission is to ensure that intelligence is abundant, not expensive."
+              "quote": "Intelligence is becoming a foundational resource for the modern economy, every bit as essential as electricity, bandwidth or capital. Our mission is to ensure that intelligence is abundant, not expensive.",
+              "source_content_hash": "a4646da324784f6d",
+              "quote_hash": "2c10a8b77da10f90f4f84867cdcb0f7975095b51df35d47d0ed14f1e7d6979bc"
             }
           ]
         }
@@ -998,7 +1138,22 @@
           "新云赛道资本高度集中，若 AI 推理需求增长放缓，可能出现 GPU 集群产能过剩"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI 基础设施 / 新云（Neocloud）"
+        "sector": "AI 基础设施 / 新云（Neocloud）",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是开源模型推理成本优势带来的企业大规模迁移需求。Together AI 以 11.5 亿美元年化预订额和数千家付费客户验证了企业从闭源模型转向开源基础设施的趋势，并以 6 倍至 20 倍的推理成本节省构建了相对于闭源 API 的持久经济护城河。本轮 83 亿美元估值较 16 个月前的 33 亿美元增长超过一倍，且公司以低于此前传闻的融资额获得了更高估值，表明其在谈判中处于强势地位。能源资本（Aramco）和硬件巨头（Nvidia）的战略性领投与参投，进一步表明 AI 基础设施被视为下一代长周期、高需求资产类别。",
+          "evidence_signals": [
+            "年化预订额超过 11.5 亿美元，验证了企业级开源模型推理的规模化需求",
+            "数千家付费客户，包括 Cursor、Cognition、Decagon、ElevenLabs、Suno 等高增长 AI 公司",
+            "客户迁移后推理成本降低 6 倍至 20 倍，形成相对于闭源模型的明确经济优势",
+            "开源模型行业使用量过去一年增长三倍，验证了市场结构性转向",
+            "投资者独立融资超过 500 兆瓦计算容量，表明基础设施需求方愿意承担长期资本支出"
+          ],
+          "risks": [
+            "超大规模云厂商（hyperscalers）拥有数百亿美元的资本支出预算，正在构建自有推理能力，可能在规模上碾压新云创业公司",
+            "新云赛道资本高度集中，若 AI 推理需求增长放缓，可能出现 GPU 集群产能过剩"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1006,233 +1161,119 @@
           "target_kind": "product",
           "research_name": "AI Neocloud 基础设施",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "an AI neocloud that rents out Nvidia GPU clusters and other AI-specific infrastructure"
-            },
-            {
-              "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "the company invests heavily in research like FlashAttention-4 for NVIDIA Blackwell and its own Megakernel and together.compile optimizations"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Vipul Ved Prakash",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f2b0513875fc0f9",
-              "quote": "Together AI founders Percy Liang, CEO Vipul Ved Prakash, CTO Ce Zhang"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Percy Liang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "His Together AI co-founders are Stanford professor Percy Liang (above, left)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ce Zhang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f2b0513875fc0f9",
-              "quote": "Together AI founders Percy Liang, CEO Vipul Ved Prakash, CTO Ce Zhang"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Aramco Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "The round was led by Aramco Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vista Equity Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "with participation from Vista Equity Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Emergence Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023"
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Salesforce Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Kleiner Perkins",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "a $102.5 million Series A funding round led by Kleiner Perkins"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Cursor",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Together AI says it has thousands of paying customers, naming Cursor, Cognition, and Decagon among them"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Cognition",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Together AI says it has thousands of paying customers, naming Cursor, Cognition, and Decagon among them"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Decagon",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Customer-support automation firm Decagon, for example, cut its inference costs sixfold after moving to Together"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "ElevenLabs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Its customer roster now includes fast-growing AI companies like Cursor, Cognition, Decagon, ElevenLabs, and Suno"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Suno",
           "canonical_entity_id": "EN-586937124e151c46",
-          "canonical_name": "Suno",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7d75683a17a8f2ca",
-              "quote": "Its customer roster now includes fast-growing AI companies like Cursor, Cognition, Decagon, ElevenLabs, and Suno"
-            }
-          ]
+          "canonical_name": "Suno"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Upscale AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "Upscale AI raised a Series A plus in an extension totaling $500 million at a $2 billion valuation last month"
-            },
-            {
-              "source_id": "FISRC-b46e79f7767a03c0",
-              "quote": "What sets Together apart is that it bundles compute with its own inference-optimization software, which it says can cut the cost of running popular models by up to 80 percent."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "TensorWave",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f0f12fb121fbd88",
-              "quote": "TensorWave — which focuses on GPU clusters from AMD — raised a $350 million Series B at $1.55 billion valuation"
-            },
-            {
-              "source_id": "FISRC-b46e79f7767a03c0",
-              "quote": "What sets Together apart is that it bundles compute with its own inference-optimization software"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1306,13 +1347,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:48:09.759Z"
+      "published_at": "2026-07-26T14:48:09.759Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI Neocloud 基础设施"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Ce Zhang",
+            "Percy Liang",
+            "Vipul Ved Prakash"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-13ec78dfdbca678b"
+      ],
+      "aggregation": {
+        "key": "EN-816bab802b34b308|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-78bae511ba291add",
       "triggered_by_event_id": "EV-53acea531ac371d6",
       "as_of_date": "2026-07-08",
@@ -1330,7 +1402,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7f85c191231c7c71",
-                "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison"
+                "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison",
+                "source_content_hash": "e665c69377d47ba3",
+                "quote_hash": "c7f29573c7276febd42ab62b18c9d0920c3c5c386dbf38e3155680bf5f45bca4"
               }
             ],
             "entity_id": null
@@ -1341,7 +1415,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7f85c191231c7c71",
-                "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison"
+                "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison",
+                "source_content_hash": "e665c69377d47ba3",
+                "quote_hash": "c7f29573c7276febd42ab62b18c9d0920c3c5c386dbf38e3155680bf5f45bca4"
               }
             ],
             "entity_id": null
@@ -1355,11 +1431,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7f85c191231c7c71",
-            "quote": "General Compute , a new inference neocloud — a company that rents out AI processing power, specializing in the phase when models are running and responding to users rather than being trained"
+            "quote": "General Compute , a new inference neocloud — a company that rents out AI processing power, specializing in the phase when models are running and responding to users rather than being trained",
+            "source_content_hash": "e665c69377d47ba3",
+            "quote_hash": "7002aa444b739e68f7cecab19333094bd21a722df0f871a4b309d44a87a4fe40"
           },
           {
             "source_id": "FISRC-431b4cf79433b16b",
-            "quote": "San Francisco, United States"
+            "quote": "San Francisco, United States",
+            "source_content_hash": "b35b460a1fe5aa4b",
+            "quote_hash": "2caab87b8a1f01a2e5adbce5579dd3d5a801d3c423769cac3d9edb6536faa324"
           }
         ]
       },
@@ -1375,7 +1455,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7f85c191231c7c71",
-                "quote": "led by FUSE VC with participation from Carya Venture Partners and Village Global Ventures"
+                "quote": "led by FUSE VC with participation from Carya Venture Partners and Village Global Ventures",
+                "source_content_hash": "e665c69377d47ba3",
+                "quote_hash": "7dd3adcfa67127167fb9c70ed64d7cd6f65fa574ef2e784afde1cb8cd66490f2"
               }
             ],
             "entity_id": null
@@ -1386,7 +1468,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7f85c191231c7c71",
-                "quote": "with participation from Carya Venture Partners and Village Global Ventures"
+                "quote": "with participation from Carya Venture Partners and Village Global Ventures",
+                "source_content_hash": "e665c69377d47ba3",
+                "quote_hash": "4065ddd1bac0cc008baab2ea0cfbf12c017120cfee5ea4b2323c2d25b6dcbec9"
               }
             ],
             "entity_id": null
@@ -1397,7 +1481,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7f85c191231c7c71",
-                "quote": "with participation from Carya Venture Partners and Village Global Ventures"
+                "quote": "with participation from Carya Venture Partners and Village Global Ventures",
+                "source_content_hash": "e665c69377d47ba3",
+                "quote_hash": "4065ddd1bac0cc008baab2ea0cfbf12c017120cfee5ea4b2323c2d25b6dcbec9"
               }
             ],
             "entity_id": null
@@ -1408,7 +1494,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7f85c191231c7c71",
-                "quote": "Joe Hasselmann is a venture investor who got in on the ground floor of the inference boom when he invested in Groq in 2021. This year, he launched a new fund, Evercrest Capital Partners, focused on the AI space, and made General Compute one of his first investments."
+                "quote": "Joe Hasselmann is a venture investor who got in on the ground floor of the inference boom when he invested in Groq in 2021. This year, he launched a new fund, Evercrest Capital Partners, focused on the AI space, and made General Compute one of his first investments.",
+                "source_content_hash": "e665c69377d47ba3",
+                "quote_hash": "c0094dbb5d1f53d9883c7569db8bf97ab87df757fed1462cc7a0f6fa02d05ac7"
               }
             ],
             "entity_id": null
@@ -1417,7 +1505,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7f85c191231c7c71",
-            "quote": "Those answers helped it raise a $15 million seed round at a $60 million post-money valuation, led by FUSE VC with participation from Carya Venture Partners and Village Global Ventures."
+            "quote": "Those answers helped it raise a $15 million seed round at a $60 million post-money valuation, led by FUSE VC with participation from Carya Venture Partners and Village Global Ventures.",
+            "source_content_hash": "e665c69377d47ba3",
+            "quote_hash": "7cb11c0c9fa00adeba19527a6a1da332d1779d0f111e3d4228a5a9240bc43539"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-53acea531ac371d6",
+            "round_original": "种子轮",
+            "amount": "$15 million",
+            "announced_at": "2026-05-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7f85c191231c7c71",
+                "quote": "Those answers helped it raise a $15 million seed round at a $60 million post-money valuation, led by FUSE VC with participation from Carya Venture Partners and Village Global Ventures.",
+                "source_content_hash": "e665c69377d47ba3",
+                "quote_hash": "7cb11c0c9fa00adeba19527a6a1da332d1779d0f111e3d4228a5a9240bc43539"
+              }
+            ]
           }
         ]
       },
@@ -1436,15 +1545,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "General Compute launched its cloud offering last week, claiming it is already the fastest at running MiniMax 2.7, a powerful opensource LLM."
+              "quote": "General Compute launched its cloud offering last week, claiming it is already the fastest at running MiniMax 2.7, a powerful opensource LLM.",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "df2c6b3dabd59eaba580d93c512434c622d5f5265219c70ac108c52963d95494"
             },
             {
               "source_id": "FISRC-075a06a75b5f9ea9",
-              "quote": "the platform is also Agentic-First, meaning it is API and MCP compatible to allow AI agents to provision compute on a user’s behalf."
+              "quote": "the platform is also Agentic-First, meaning it is API and MCP compatible to allow AI agents to provision compute on a user’s behalf.",
+              "source_content_hash": "c085faea37452bf1",
+              "quote_hash": "a46df1da3c5377e02b0622ef1eed53495684ba7e0fd21253726c15d853d137e1"
             },
             {
               "source_id": "FISRC-075a06a75b5f9ea9",
-              "quote": "General Compute claims its infrastructure delivers results up to 16x faster than standard GPU clouds, alongside a 7x faster time-to-first-token."
+              "quote": "General Compute claims its infrastructure delivers results up to 16x faster than standard GPU clouds, alongside a 7x faster time-to-first-token.",
+              "source_content_hash": "c085faea37452bf1",
+              "quote_hash": "ecf1b632c57c758e4f440326e6fed9ded0449c326beedefe482f869b987389a7"
             }
           ],
           "entity_id": null
@@ -1462,9 +1577,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "Consider the $113 million Series B raised for OpenRouter this week, reflecting the company’s ability to offer customers access to multiple models in order to optimize their token spend."
+              "quote": "Consider the $113 million Series B raised for OpenRouter this week, reflecting the company’s ability to offer customers access to multiple models in order to optimize their token spend.",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "b265b15d89a2f75d7bca50254a9b5805553473dccdec265985bc6ae4ef4bd8f6"
             }
-          ]
+          ],
+          "entity_id": "EN-7f871cbf905f6e0c"
         },
         {
           "name": "CoreWeave",
@@ -1476,9 +1594,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "Hasselmann sees in SambaNova’s partnership with General Compute parallels to CoreWeave’s relationship with Nvidia"
+              "quote": "Hasselmann sees in SambaNova’s partnership with General Compute parallels to CoreWeave’s relationship with Nvidia",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "b0da529636b1f260e588baa2a4487d1d0688b08aa5b3adac08d56d65cf33430a"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1489,7 +1610,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "raise a $15 million seed round"
+              "quote": "raise a $15 million seed round",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "84d8c453858efc8a2803a0cd44e9d9ff33e7994907f2bc7231ebb7820b7c34cc"
             }
           ]
         },
@@ -1500,7 +1623,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "at a $60 million post-money valuation"
+              "quote": "at a $60 million post-money valuation",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "dd7e5af673a2b105f588001e0d6cd7f45a147f5a7101885332fdff37fdaef386"
             }
           ]
         },
@@ -1511,7 +1636,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "General Compute has $300 million of the company’s SN50 chips on order"
+              "quote": "General Compute has $300 million of the company’s SN50 chips on order",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "8677b8b433a4a99765243f9f79021f1f8abae2099385b61fd5c593511cbca3b5"
             }
           ]
         },
@@ -1522,7 +1649,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "Puklowski says the new chips will generate 600 to 700 tokens per second, versus about 250 tokens per second for GPUs."
+              "quote": "Puklowski says the new chips will generate 600 to 700 tokens per second, versus about 250 tokens per second for GPUs.",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "daebca9173bb6c0e1219129b5bf2dbde3863562d209daa0571fcf34ffd28d902"
             }
           ]
         },
@@ -1533,7 +1662,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "versus about 250 tokens per second for GPUs"
+              "quote": "versus about 250 tokens per second for GPUs",
+              "source_content_hash": "e665c69377d47ba3",
+              "quote_hash": "125d623e80aba57dff5d8cf7808e35d1c0ed5501655c1340feac12d8b9fc98ec"
             }
           ]
         }
@@ -1554,7 +1685,22 @@
           "公司尚无公开的付费客户或收入数据，商业化验证仍处于极早期阶段"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI基础设施/推理云服务"
+        "sector": "AI基础设施/推理云服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI工作负载从训练向推理的结构性迁移，以及专用推理芯片在速度和能效上对GPU的替代能力。本轮估值$60 million建立在三个已验证信号之上：SambaNova SN50芯片的推理速度达到600-700 tokens/秒（约为GPU的3倍）、风冷设计使部署周期从数年缩短至数周、以及公司已锁定$300 million芯片订单并获得首个推理云部署者地位。但判断的证据边界受限于：SambaNova芯片尚未大规模出货，性能数据来自厂商声明而非第三方实测；推理芯片的二级市场流动性未经违约事件检验；公司尚无公开的付费客户或收入数据。",
+          "evidence_signals": [
+            "已锁定$300 million SambaNova SN50芯片订单，成为首个部署该芯片的推理新云服务商",
+            "SN50芯片推理速度达600-700 tokens/秒，约为GPU的3倍",
+            "风冷设计使硬件可在现有数据中心快速部署，无需新建基础设施",
+            "云平台已上线，声称在运行MiniMax 2.7开源模型时速度最快"
+          ],
+          "risks": [
+            "SambaNova SN50芯片尚未大规模出货，性能声明未经第三方独立验证，实际部署效果存在不确定性",
+            "推理芯片二级市场流动性未经检验，若SambaNova生态发展不及预期，$300 million芯片订单可能面临资产减值风险",
+            "公司尚无公开的付费客户或收入数据，商业化验证仍处于极早期阶段"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1562,125 +1708,63 @@
           "target_kind": "product",
           "research_name": "General Compute 推理云平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "General Compute launched its cloud offering last week, claiming it is already the fastest at running MiniMax 2.7, a powerful opensource LLM."
-            },
-            {
-              "source_id": "FISRC-075a06a75b5f9ea9",
-              "quote": "the platform is also Agentic-First, meaning it is API and MCP compatible to allow AI agents to provision compute on a user’s behalf."
-            },
-            {
-              "source_id": "FISRC-075a06a75b5f9ea9",
-              "quote": "General Compute claims its infrastructure delivers results up to 16x faster than standard GPU clouds, alongside a 7x faster time-to-first-token."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Finn Puklowski",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jason Goodison",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "FUSE VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "led by FUSE VC with participation from Carya Venture Partners and Village Global Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Carya Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "with participation from Carya Venture Partners and Village Global Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Village Global Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "with participation from Carya Venture Partners and Village Global Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Evercrest Capital Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "Joe Hasselmann is a venture investor who got in on the ground floor of the inference boom when he invested in Groq in 2021. This year, he launched a new fund, Evercrest Capital Partners, focused on the AI space, and made General Compute one of his first investments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenRouter",
           "canonical_entity_id": "EN-7f871cbf905f6e0c",
-          "canonical_name": "OpenRouter",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "Consider the $113 million Series B raised for OpenRouter this week, reflecting the company’s ability to offer customers access to multiple models in order to optimize their token spend."
-            }
-          ]
+          "canonical_name": "OpenRouter"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "CoreWeave",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7f85c191231c7c71",
-              "quote": "Hasselmann sees in SambaNova’s partnership with General Compute parallels to CoreWeave’s relationship with Nvidia"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1742,13 +1826,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:47:52.036Z"
+      "published_at": "2026-07-26T14:47:52.036Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "General Compute 推理云平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Finn Puklowski",
+            "Jason Goodison"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-53acea531ac371d6"
+      ],
+      "aggregation": {
+        "key": "EN-18b4bbfd60f4137e|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-700dd2a2e57eb021",
       "triggered_by_event_id": "EV-48075ca70a5458ec",
       "as_of_date": "2026-07-08",
@@ -1766,7 +1880,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri"
+                "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "53e07de7c88e9a171f8924a6dc81cb172889ab7fd53baa17a43eec6943ce87a1"
               }
             ],
             "entity_id": null
@@ -1780,16 +1896,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2ac2183ceab4ddd7",
-            "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri, today closed its $35 million Series A financing"
+            "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri, today closed its $35 million Series A financing",
+            "source_content_hash": "ff3cf9be2d5d6563",
+            "quote_hash": "686a05817e50ae55538e35700b54e534ab2715d620907d72e96b0de7bea1cd76"
           },
           {
             "source_id": "FISRC-2ac2183ceab4ddd7",
-            "quote": "OXMIQ is headquartered in Campbell, California, with a development site in Hyderabad, India."
+            "quote": "OXMIQ is headquartered in Campbell, California, with a development site in Hyderabad, India.",
+            "source_content_hash": "ff3cf9be2d5d6563",
+            "quote_hash": "eed4e20fa4e2dff0be5af3035e5cf8d21e2cb1e16d30eb0a5b65e9697cd67da4"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$35 million",
         "total_raised": "$60 million",
         "announced_at": "2026-07-01",
@@ -1800,7 +1920,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
               }
             ],
             "entity_id": null
@@ -1811,7 +1933,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
               }
             ],
             "entity_id": null
@@ -1822,7 +1946,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting."
+                "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting.",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
               }
             ],
             "entity_id": null
@@ -1833,7 +1959,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -1844,7 +1972,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -1855,7 +1985,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -1866,7 +1998,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -1877,18 +2011,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Tenstorrent",
-            "role": "种子轮投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-be62fe7bde52c3f0",
-                "quote": "It follows a $20 million seed round backed by Tenstorrent and MediaTek."
+                "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
               }
             ],
             "entity_id": null
@@ -1897,11 +2022,60 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2ac2183ceab4ddd7",
-            "quote": "today closed its $35 million Series A financing, bringing the company's total capital raised to $60 million."
+            "quote": "today closed its $35 million Series A financing, bringing the company's total capital raised to $60 million.",
+            "source_content_hash": "ff3cf9be2d5d6563",
+            "quote_hash": "1a36736e66d411cb88b8865ea72ca807f4dd7aeafaf40754f8a6246263a3d3fa"
           },
           {
             "source_id": "FISRC-2ac2183ceab4ddd7",
-            "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital, among other financial and strategic investors."
+            "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital, among other financial and strategic investors.",
+            "source_content_hash": "ff3cf9be2d5d6563",
+            "quote_hash": "71ccddd3e18d2a4883df3dc5f5f29ed79dacb2630c0c4f398df61d6b2ce59ee8"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Tenstorrent",
+            "role": "种子轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-be62fe7bde52c3f0",
+                "quote": "It follows a $20 million seed round backed by Tenstorrent and MediaTek.",
+                "source_content_hash": "ca18589034339300",
+                "quote_hash": "92053557552855d14e48da99aa1237f895c25ed6d365f65454b758ceaba234da"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮投资方"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-48075ca70a5458ec",
+            "round_original": "Series A",
+            "amount": "$35 million",
+            "announced_at": "2026-07-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "today closed its $35 million Series A financing, bringing the company's total capital raised to $60 million.",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "1a36736e66d411cb88b8865ea72ca807f4dd7aeafaf40754f8a6246263a3d3fa"
+              },
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital, among other financial and strategic investors.",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "71ccddd3e18d2a4883df3dc5f5f29ed79dacb2630c0c4f398df61d6b2ce59ee8"
+              }
+            ]
           }
         ]
       },
@@ -1920,11 +2094,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU) responsible for coordinating workloads and agents across the system."
+              "quote": "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU) responsible for coordinating workloads and agents across the system.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "57c307b635b97bc437146a86a9c7b887eed069e443c3693ec013ac7a360b842e"
             },
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads."
+              "quote": "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "91b056a89950fc5cc7a1c4c0d48565247c33d017c2bd37184d2efc74344522c2"
             }
           ],
           "entity_id": null
@@ -1941,11 +2119,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package."
+              "quote": "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "a1a8419130cf88a308bbd53a439fb46c87e08d74f3a1efc380d7d36a7c04139a"
             },
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options."
+              "quote": "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "52f3f19e98da0dd9e6ce91b8a12d89476ff9c7dc9e2441c6f39da44f734110da"
             }
           ],
           "entity_id": null
@@ -1962,11 +2144,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware."
+              "quote": "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "8e425e85f3e83b25c7a11827494dfb7b70b9e3400cc67d4a4684c8759c7519f9"
             },
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxPython has been validated on third-party platforms with live demos available."
+              "quote": "OxPython has been validated on third-party platforms with live demos available.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "0cb990c1ac617361e83ab38780ed6e831782ccda2a35a60cb81401f0e4872ce3"
             }
           ],
           "entity_id": null
@@ -1980,9 +2166,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "Tenstorrent was also a seed investor and is the first partner running OxPython on its Wormhole and Blackhole platforms."
+              "quote": "Tenstorrent was also a seed investor and is the first partner running OxPython on its Wormhole and Blackhole platforms.",
+              "source_content_hash": "ca18589034339300",
+              "quote_hash": "d7da685481b24812a1b98881f78f692ca6cedc2ace9a0394993a545c23f9d38f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1996,9 +2185,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "Unlike Groq, Cerebras, or Etched, OXMIQ does not manufacture its own chip. It licenses GPU architecture instead."
+              "quote": "Unlike Groq, Cerebras, or Etched, OXMIQ does not manufacture its own chip. It licenses GPU architecture instead.",
+              "source_content_hash": "ca18589034339300",
+              "quote_hash": "32868f0e5801e1f3d27a325aaaa6791b29d500ccb2aef16ec19e252e3dffd689"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cerebras",
@@ -2010,9 +2202,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "Cerebras took the opposite route, going public in May 2026 at a valuation above $56 billion, though its IPO filing also disclosed heavy revenue concentration in a small number of customers."
+              "quote": "Cerebras took the opposite route, going public in May 2026 at a valuation above $56 billion, though its IPO filing also disclosed heavy revenue concentration in a small number of customers.",
+              "source_content_hash": "ca18589034339300",
+              "quote_hash": "0960a9b7f51517b433b2f9f358f024bf8a12ca53a4514de46f31f07045e34e03"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2023,7 +2218,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "today closed its $35 million Series A financing"
+              "quote": "today closed its $35 million Series A financing",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "d7a70e413c314c8c3d52aac3ddec3144f29e8da83fc74b535ade6d065db3439f"
             }
           ]
         },
@@ -2034,7 +2231,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "bringing the company's total capital raised to $60 million."
+              "quote": "bringing the company's total capital raised to $60 million.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "e58a5dc525f591f9475b9333d0d6ceda591f1cb573ae488d2759e41c08e6389b"
             }
           ]
         },
@@ -2045,7 +2244,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "It follows a $20 million seed round backed by Tenstorrent and MediaTek."
+              "quote": "It follows a $20 million seed round backed by Tenstorrent and MediaTek.",
+              "source_content_hash": "ca18589034339300",
+              "quote_hash": "92053557552855d14e48da99aa1237f895c25ed6d365f65454b758ceaba234da"
             }
           ]
         },
@@ -2056,7 +2257,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)"
+              "quote": "a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "f4c0efd16381ac9f929117b0c43c5bf04ec2514c64511670016cbedc80613c24"
             }
           ]
         },
@@ -2067,7 +2270,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxCore is running on FPGA today, with live demonstrations available."
+              "quote": "OxCore is running on FPGA today, with live demonstrations available.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "c727e66fc7dc7db3d3e453067978f7851f420dbd50a39d459b5e2a795c9794a6"
             }
           ]
         }
@@ -2079,7 +2284,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "A licensable core with an open architecture means design teams everywhere can build the custom AI silicon their work needs. Today, state-of-the-art AI reaches most people through a handful of channels, and the cost of the compute underneath is the reason. Bring that cost down, and you widen who gets to build with it."
+              "quote": "A licensable core with an open architecture means design teams everywhere can build the custom AI silicon their work needs. Today, state-of-the-art AI reaches most people through a handful of channels, and the cost of the compute underneath is the reason. Bring that cost down, and you widen who gets to build with it.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "f4c6126baabbfe11380cde5b276572dc8bfbb11b9659f861ebe1930f5546beb4"
             }
           ]
         },
@@ -2089,7 +2296,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "I am excited to join the OXMIQ board. Raja and this team are creating an open GPU architecture, a much-needed step toward removing the artificial boundaries around AI innovation. As the industry concentrates around a few incumbents, this is more important than ever. OXMIQ's open, configurable foundation, which developers can build on and own, is exactly where compute should be heading."
+              "quote": "I am excited to join the OXMIQ board. Raja and this team are creating an open GPU architecture, a much-needed step toward removing the artificial boundaries around AI innovation. As the industry concentrates around a few incumbents, this is more important than ever. OXMIQ's open, configurable foundation, which developers can build on and own, is exactly where compute should be heading.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "78136d257ac39f7f158824e88368f82e89f8e4efd4258af13a4492e9e3cb9a0f"
             }
           ]
         },
@@ -2099,7 +2308,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "We are very excited to co-lead OXMIQ's financing round and back Raja Koduri and the strong team at OXMIQ. OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads."
+              "quote": "We are very excited to co-lead OXMIQ's financing round and back Raja Koduri and the strong team at OXMIQ. OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "1b891bfe045b826c92d1b03b693c89fa27ef3a7e5900e2535db79dc471f536e9"
             }
           ]
         },
@@ -2109,7 +2320,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "Raja has built silicon at every layer of the stack, and he knows exactly where the constraints sit. Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage. We backed this team because they will define how AI compute gets built this decade."
+              "quote": "Raja has built silicon at every layer of the stack, and he knows exactly where the constraints sit. Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage. We backed this team because they will define how AI compute gets built this decade.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "08143eff11b73e6efba836066e563807d20a1db372d71225a47818c618b8a352"
             }
           ]
         },
@@ -2119,7 +2332,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "MediaTek is actively powering today's advanced AI capabilities from the edge to the cloud. Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms."
+              "quote": "MediaTek is actively powering today's advanced AI capabilities from the edge to the cloud. Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms.",
+              "source_content_hash": "ff3cf9be2d5d6563",
+              "quote_hash": "72025985c4c2cb47575a051059e0969c0c922556cc055709c479705f7dbbbb85"
             }
           ]
         }
@@ -2135,7 +2350,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads."
+                "quote": "OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads.",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "27045c7f7dcc10113ab7a7ca52fe5e682dcaefcac22fdbe06d044480a1054e6c"
               }
             ]
           },
@@ -2148,7 +2365,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage. We backed this team because they will define how AI compute gets built this decade."
+                "quote": "Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage. We backed this team because they will define how AI compute gets built this decade.",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "b1051d36615afe4923a6546e9b9ea994bde754b0b7a7f9a20aa9ebc0fd30dae0"
               }
             ]
           },
@@ -2161,7 +2380,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms."
+                "quote": "Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms.",
+                "source_content_hash": "ff3cf9be2d5d6563",
+                "quote_hash": "5f3ae12b3b27b32010241f41bd425b331381dd750073a27e38a55257ee0e2986"
               }
             ]
           }
@@ -2180,7 +2401,23 @@
           "Nvidia在AI训练芯片市场占据约80%份额，其CUDA生态锁定效应可能限制客户迁移至新架构的意愿"
         ],
         "related_direction_id": "",
-        "sector": "AI芯片/半导体IP授权"
+        "sector": "AI芯片/半导体IP授权",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI计算基础设施从“少数巨头垄断的成品芯片”向“开放、可授权的模块化架构”迁移的趋势。本轮融资所依赖的已验证信号包括：创始人Raja Koduri在Intel和AMD的硅片全栈经验；OxCore已在FPGA上运行并提供现场演示；OxPython已在第三方平台验证；种子轮投资方MediaTek和Tenstorrent在本轮继续参与或加深合作（Tenstorrent成为首个运行OxPython的合作伙伴）；以及供应链端投资者（三星催化剂基金、联发科、和硕、CDIB-TEN等）的集体背书，表明OXMIQ的IP授权模式已获得潜在客户兼投资者的初步验证。然而，当前判断的证据边界在于：公司尚未披露任何付费客户或授权收入数据，OxCore仍处于FPGA原型阶段，距离大规模商业部署尚有距离。",
+          "evidence_signals": [
+            "创始人Raja Koduri曾担任Intel首席架构师和AMD Radeon技术集团负责人，具备全栈硅片经验",
+            "OxCore已在FPGA上运行，可提供现场演示",
+            "OxPython已在第三方平台验证，可提供现场演示",
+            "种子轮投资方MediaTek本轮继续参投，Tenstorrent成为首个运行OxPython的合作伙伴",
+            "投资方组合包含供应链关键环节（三星、联发科、和硕、CDIB-TEN等），兼具资本与潜在客户属性"
+          ],
+          "risks": [
+            "IP授权模式尚未披露任何付费客户或授权收入，商业化验证仍处于极早期阶段",
+            "OxCore目前仅在FPGA上运行，距离量产硅片和客户集成仍有显著工程差距",
+            "Nvidia在AI训练芯片市场占据约80%份额，其CUDA生态锁定效应可能限制客户迁移至新架构的意愿"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2188,220 +2425,112 @@
           "target_kind": "product",
           "research_name": "OxCore",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU) responsible for coordinating workloads and agents across the system."
-            },
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "OxQuilt",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package."
-            },
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "OxPython",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware."
-            },
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxPython has been validated on third-party platforms with live demos available."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Raja Koduri",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fundomo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Samsung Catalyst Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MediaTek",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Pegatron Venture Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "CDIB-TEN",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Darwin Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Morgan Creek Digital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Intel Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Tenstorrent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "It follows a $20 million seed round backed by Tenstorrent and MediaTek."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Tenstorrent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "Tenstorrent was also a seed investor and is the first partner running OxPython on its Wormhole and Blackhole platforms."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Groq",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "Unlike Groq, Cerebras, or Etched, OXMIQ does not manufacture its own chip. It licenses GPU architecture instead."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cerebras",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-be62fe7bde52c3f0",
-              "quote": "Cerebras took the opposite route, going public in May 2026 at a valuation above $56 billion, though its IPO filing also disclosed heavy revenue concentration in a small number of customers."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2451,13 +2580,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:47:13.686Z"
+      "published_at": "2026-07-26T14:47:13.686Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "OxCore",
+            "OxPython",
+            "OxQuilt"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Raja Koduri"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-48075ca70a5458ec"
+      ],
+      "aggregation": {
+        "key": "EN-7a814849bc288dc0|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-e703d2917e942993",
       "triggered_by_event_id": "EV-7b1c734882fa1ea6",
       "as_of_date": "2026-07-08",
@@ -2475,7 +2635,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "Ornn was founded by Massachusetts Institute of Technology graduates Kush Bavaria and Wayne Nelms"
+                "quote": "Ornn was founded by Massachusetts Institute of Technology graduates Kush Bavaria and Wayne Nelms",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "774744446f2fd66028d61b835dfdd3b8d1c64a6b0511124220b3330010a9260a"
               }
             ],
             "entity_id": null
@@ -2486,7 +2648,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "Ornn was founded by Massachusetts Institute of Technology graduates Kush Bavaria and Wayne Nelms"
+                "quote": "Ornn was founded by Massachusetts Institute of Technology graduates Kush Bavaria and Wayne Nelms",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "774744446f2fd66028d61b835dfdd3b8d1c64a6b0511124220b3330010a9260a"
               }
             ],
             "entity_id": null
@@ -2500,7 +2664,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-44c6debf2c528a2a",
-            "quote": "Artificial intelligence startup Ornn AI Inc. made a big splash today as it raised $33 million in seed funding"
+            "quote": "Artificial intelligence startup Ornn AI Inc. made a big splash today as it raised $33 million in seed funding",
+            "source_content_hash": "5fe0ae2b10239c5e",
+            "quote_hash": "5a9b04bd05ae0ca7298fb5a30cc202ce417b13f494be968d726e96a7206b95b3"
           }
         ]
       },
@@ -2516,11 +2682,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "The round was co-led by Galaxy Ventures"
+                "quote": "The round was co-led by Galaxy Ventures",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "2c3c9e91e4e8f79c82504a342868a3f1c722333430812f37841c5862304fcb0e"
               },
               {
                 "source_id": "FISRC-9b94bacc61eb2e07",
-                "quote": "Joining our $33M a16z crypto-led round is Galaxy Ventures"
+                "quote": "Joining our $33M a16z crypto-led round is Galaxy Ventures",
+                "source_content_hash": "b3c340b14ea19bcb",
+                "quote_hash": "f779f3ab25405d0a5fd376731b4108ca5569b60b2972a8a3fead85fd9c9273ff"
               }
             ],
             "entity_id": null
@@ -2531,7 +2701,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "saw participation from Nordstar and SV Angel"
+                "quote": "saw participation from Nordstar and SV Angel",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "b69e97a8f4d22f773d01e50f5f3f37c7f265bd537607e7ed226aaade2c8ef399"
               }
             ],
             "entity_id": null
@@ -2542,7 +2714,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "saw participation from Nordstar and SV Angel"
+                "quote": "saw participation from Nordstar and SV Angel",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "b69e97a8f4d22f773d01e50f5f3f37c7f265bd537607e7ed226aaade2c8ef399"
               }
             ],
             "entity_id": null
@@ -2553,7 +2727,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
+                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
               }
             ],
             "entity_id": null
@@ -2564,7 +2740,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
+                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
               }
             ],
             "entity_id": null
@@ -2575,7 +2753,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
+                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
               }
             ],
             "entity_id": null
@@ -2586,7 +2766,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-44c6debf2c528a2a",
-                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
+                "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
               }
             ],
             "entity_id": null
@@ -2595,7 +2777,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-44c6debf2c528a2a",
-            "quote": "Ornn raises $33M to help companies buy and sell AI compute as a commodity like oil"
+            "quote": "Ornn raises $33M to help companies buy and sell AI compute as a commodity like oil",
+            "source_content_hash": "5fe0ae2b10239c5e",
+            "quote_hash": "a6cfd052f270329f4f16b9af73436451d2baceb45d5a40ed99ccd6db4546e67c"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7b1c734882fa1ea6",
+            "round_original": "种子轮",
+            "amount": "$33M",
+            "announced_at": "2026-06-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-44c6debf2c528a2a",
+                "quote": "Ornn raises $33M to help companies buy and sell AI compute as a commodity like oil",
+                "source_content_hash": "5fe0ae2b10239c5e",
+                "quote_hash": "a6cfd052f270329f4f16b9af73436451d2baceb45d5a40ed99ccd6db4546e67c"
+              }
+            ]
           }
         ]
       },
@@ -2612,11 +2815,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Its transaction-based compute index OCPI is designed to provide a settlement-grade benchmark that provides a single, trusted price for compute resources."
+              "quote": "Its transaction-based compute index OCPI is designed to provide a settlement-grade benchmark that provides a single, trusted price for compute resources.",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote_hash": "c51537e9da67974b41e15b285ced648e182bec87ea774e0dae1543e11be48b64"
             },
             {
               "source_id": "FISRC-5059bc7432dc6d3f",
-              "quote": "The Ornn Compute Price Index (OCPI) is a settlement-grade price index built from real-time transaction data across hardware classes and geographies. Ornn offers price indices across GPUs (H100s, A100s, B200s, etc.), Memory (DRAM, Flash, and Module), and most recently across AI model tokens (Anthropic, OpenAI, DeepSeek, etc.)."
+              "quote": "The Ornn Compute Price Index (OCPI) is a settlement-grade price index built from real-time transaction data across hardware classes and geographies. Ornn offers price indices across GPUs (H100s, A100s, B200s, etc.), Memory (DRAM, Flash, and Module), and most recently across AI model tokens (Anthropic, OpenAI, DeepSeek, etc.).",
+              "source_content_hash": "3b63238eeeaa02f5",
+              "quote_hash": "ed2a43158ba87f3e5ea6db76b6fb047a8c16426d8e03e1bb2a0649416b791a30"
             }
           ],
           "entity_id": null
@@ -2634,7 +2841,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3a125aebefd2c732",
-              "quote": "Ornn Compute is the bridge between buyers and sellers of compute. Lock in dedicated GPU capacity under one contract, at competitive prices. When workloads change, sell the rest of your term to someone else, turning excess capacity into revenue."
+              "quote": "Ornn Compute is the bridge between buyers and sellers of compute. Lock in dedicated GPU capacity under one contract, at competitive prices. When workloads change, sell the rest of your term to someone else, turning excess capacity into revenue.",
+              "source_content_hash": "9ebec310ce1b8575",
+              "quote_hash": "ce888729ce3ce36668e4291284acca4d712dde111c19af6f6c60cef46e28a8b4"
             }
           ],
           "entity_id": null
@@ -2651,11 +2860,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Risk transfer is facilitated through partners like ICE, which clears futures and options contracts that reference OCPI directly"
+              "quote": "Risk transfer is facilitated through partners like ICE, which clears futures and options contracts that reference OCPI directly",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote_hash": "170de442487ef7c952e3dc8ab4b545bdcaf414eaa0a21d216cf0393f5918d04d"
             },
             {
               "source_id": "FISRC-5059bc7432dc6d3f",
-              "quote": "Ornn's GPU-hour futures reference OCPI and clear through exchanges such as ICE futures – creating a verifiable forward curve for GPU price risk."
+              "quote": "Ornn's GPU-hour futures reference OCPI and clear through exchanges such as ICE futures – creating a verifiable forward curve for GPU price risk.",
+              "source_content_hash": "3b63238eeeaa02f5",
+              "quote_hash": "e6823b04200cd33c7d3514c8c6bd8e51cf6d86f3f48e0d8b745b72f3d6d11bb0"
             }
           ],
           "entity_id": null
@@ -2669,13 +2882,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "the New York Stock Exchange operator Intercontinental Exchange Inc. said it will be using its pricing index for compute futures contracts"
+              "quote": "the New York Stock Exchange operator Intercontinental Exchange Inc. said it will be using its pricing index for compute futures contracts",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote_hash": "ba40a1e35250c10d92468018067d9e979535e23c3a534945dbc490a80752ab6f"
             },
             {
               "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Risk transfer is facilitated through partners like ICE, which clears futures and options contracts that reference OCPI directly"
+              "quote": "Risk transfer is facilitated through partners like ICE, which clears futures and options contracts that reference OCPI directly",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote_hash": "170de442487ef7c952e3dc8ab4b545bdcaf414eaa0a21d216cf0393f5918d04d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -2687,7 +2905,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7daeb4a796963b7e",
-              "quote": "$650 billion in spend projected for 2026"
+              "quote": "$650 billion in spend projected for 2026",
+              "source_content_hash": "fe46b2dc2d3b9832",
+              "quote_hash": "59cdae5865f0c4908bf797ac461ca3f96dd0d2a87c2319dcac3ce96b1df7e624"
             }
           ]
         },
@@ -2698,7 +2918,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7daeb4a796963b7e",
-              "quote": "a forecasted path to $7 trillion by 2030"
+              "quote": "a forecasted path to $7 trillion by 2030",
+              "source_content_hash": "fe46b2dc2d3b9832",
+              "quote_hash": "66ec7292eb270698dda19e08a778eb14a201862a2e09a8661335e04dc94bffe9"
             }
           ]
         },
@@ -2709,7 +2931,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "raised $33 million in seed funding"
+              "quote": "raised $33 million in seed funding",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote_hash": "ae4595c82c1341aba53a7f7dc2e3560a6d7dcbb6386d5d5a4d980df6288a92de"
             }
           ]
         }
@@ -2721,7 +2945,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Right now, companies that need compute are shut out, overpaying or locked into opaque contracts they cannot benchmark or exit"
+              "quote": "Right now, companies that need compute are shut out, overpaying or locked into opaque contracts they cannot benchmark or exit",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote_hash": "7e62e5e7f2d2577fe59582a45b67961ef5458c3a8675eefb63580981bb5b487f"
             }
           ]
         },
@@ -2731,7 +2957,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "With a benchmark and the tools to hedge it, capital can finally flow to compute capacity the way it flows to every other commodity."
+              "quote": "With a benchmark and the tools to hedge it, capital can finally flow to compute capacity the way it flows to every other commodity.",
+              "source_content_hash": "5fe0ae2b10239c5e",
+              "quote_hash": "45eaddeb6c3657793e3df6b458641ff04167c2aed7caf288d01a45477a47e8bb"
             }
           ]
         }
@@ -2747,7 +2975,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5059bc7432dc6d3f",
-                "quote": "We believe most durable capital-markets innovations are built on three tenets: trust, vertical integration, and structural demand. Ornn stands out on all three, in our view."
+                "quote": "We believe most durable capital-markets innovations are built on three tenets: trust, vertical integration, and structural demand. Ornn stands out on all three, in our view.",
+                "source_content_hash": "3b63238eeeaa02f5",
+                "quote_hash": "39993134d5e9d43c0877f6fc8548018f192b3920b37a00b8840a9971174d239a"
               }
             ]
           },
@@ -2760,7 +2990,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5059bc7432dc6d3f",
-                "quote": "Ornn occupies the entire financial stack for compute. From index licensing to tradeable financial derivatives to a spot marketplace for GPU capacity – Ornn is front and center at the colosseum of GPU activity."
+                "quote": "Ornn occupies the entire financial stack for compute. From index licensing to tradeable financial derivatives to a spot marketplace for GPU capacity – Ornn is front and center at the colosseum of GPU activity.",
+                "source_content_hash": "3b63238eeeaa02f5",
+                "quote_hash": "408effdcf0aec5b655d889abe4108d67e7f66365c7ce636cb64e4e5c45945a74"
               }
             ]
           },
@@ -2773,7 +3005,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fd25630c6a86c9ff",
-                "quote": "Solving hard problems can accrue compounding value, and financializing compute markets is among the hardest problems out there. Heterogeneity was true of oil, electricity, and LNG futures early on. In each, a liquid market eventually emerged around an underlying spot index that matured into the trillion-volume derivative products they have become today."
+                "quote": "Solving hard problems can accrue compounding value, and financializing compute markets is among the hardest problems out there. Heterogeneity was true of oil, electricity, and LNG futures early on. In each, a liquid market eventually emerged around an underlying spot index that matured into the trillion-volume derivative products they have become today.",
+                "source_content_hash": "193c3b81141475a1",
+                "quote_hash": "2bb012eaeb6701b9b85903f9f98aa3244fef3fbd33b6519cdd5c157f8f708a83"
               }
             ]
           }
@@ -2789,7 +3023,20 @@
           "GPU 硬件代际更替频繁，新芯片发布可能导致价格跳跃，对 OCPI 作为结算级基准的稳定性和准确性构成挑战"
         ],
         "related_direction_id": "",
-        "sector": "AI 基础设施 / 算力金融市场"
+        "sector": "AI 基础设施 / 算力金融市场",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是算力从分散的私下议价商品向标准化金融资产的范式迁移。Ornn 的估值支撑来自三个已验证信号：一是 ICE 已宣布将采用 OCPI 作为算力期货合约的定价指数（尚待监管批准），为指数提供了机构级合法性；二是公司同时构建了价格指数、衍生品和现货市场三层基础设施，而非单点工具，这在商品市场历史中通常需要数十年才能分别建立；三是 2026 年全球算力支出预计达 6500 亿美元且缺乏任何标准化风险转移工具，存在巨大的结构性真空。但当前判断的证据边界明显：ICE 合作仍受监管审批约束，OCPI 作为结算级基准的市场接受度尚未被大规模交易量验证，且 GPU 硬件的快速迭代（新芯片发布导致的价格跳跃）对指数的持续准确性构成天然挑战。",
+          "evidence_signals": [
+            "ICE 宣布将使用 OCPI 作为算力期货合约的定价指数，并清算以 OCPI 为基准的期货和期权合约",
+            "Ornn 同时构建了价格指数（OCPI）、现货市场（Ornn Compute）和衍生品三层金融基础设施",
+            "2026 年全球算力支出预计达 6500 亿美元，且当前市场缺乏标准化定价参考和风险转移工具"
+          ],
+          "risks": [
+            "ICE 使用 OCPI 进行期货清算的提案仍需监管批准，存在审批不通过或延迟的风险",
+            "GPU 硬件代际更替频繁，新芯片发布可能导致价格跳跃，对 OCPI 作为结算级基准的稳定性和准确性构成挑战"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2797,185 +3044,91 @@
           "target_kind": "product",
           "research_name": "OCPI (Ornn Compute Price Index)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Its transaction-based compute index OCPI is designed to provide a settlement-grade benchmark that provides a single, trusted price for compute resources."
-            },
-            {
-              "source_id": "FISRC-5059bc7432dc6d3f",
-              "quote": "The Ornn Compute Price Index (OCPI) is a settlement-grade price index built from real-time transaction data across hardware classes and geographies. Ornn offers price indices across GPUs (H100s, A100s, B200s, etc.), Memory (DRAM, Flash, and Module), and most recently across AI model tokens (Anthropic, OpenAI, DeepSeek, etc.)."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Ornn Compute",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3a125aebefd2c732",
-              "quote": "Ornn Compute is the bridge between buyers and sellers of compute. Lock in dedicated GPU capacity under one contract, at competitive prices. When workloads change, sell the rest of your term to someone else, turning excess capacity into revenue."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "算力期货与期权合约",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Risk transfer is facilitated through partners like ICE, which clears futures and options contracts that reference OCPI directly"
-            },
-            {
-              "source_id": "FISRC-5059bc7432dc6d3f",
-              "quote": "Ornn's GPU-hour futures reference OCPI and clear through exchanges such as ICE futures – creating a verifiable forward curve for GPU price risk."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Kush Bavaria",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Ornn was founded by Massachusetts Institute of Technology graduates Kush Bavaria and Wayne Nelms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Wayne Nelms",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Ornn was founded by Massachusetts Institute of Technology graduates Kush Bavaria and Wayne Nelms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Galaxy Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "The round was co-led by Galaxy Ventures"
-            },
-            {
-              "source_id": "FISRC-9b94bacc61eb2e07",
-              "quote": "Joining our $33M a16z crypto-led round is Galaxy Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nordstar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "saw participation from Nordstar and SV Angel"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SV Angel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "saw participation from Nordstar and SV Angel"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Crucible Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vine Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Link Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Box Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Intercontinental Exchange Inc. (ICE)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "the New York Stock Exchange operator Intercontinental Exchange Inc. said it will be using its pricing index for compute futures contracts"
-            },
-            {
-              "source_id": "FISRC-44c6debf2c528a2a",
-              "quote": "Risk transfer is facilitated through partners like ICE, which clears futures and options contracts that reference OCPI directly"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3073,10 +3226,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:46:54.846Z"
+      "published_at": "2026-07-26T14:46:54.846Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "OCPI (Ornn Compute Price Index)",
+            "Ornn Compute",
+            "算力期货与期权合约"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Kush Bavaria",
+            "Wayne Nelms"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7b1c734882fa1ea6"
+      ],
+      "aggregation": {
+        "key": "EN-830cefea8ed73a00|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

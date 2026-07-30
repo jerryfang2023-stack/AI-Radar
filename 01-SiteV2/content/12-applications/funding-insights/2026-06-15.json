@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-15",
     "generated_at": "2026-07-26T15:10:47.628Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 3,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-05768d0b087a2431",
       "triggered_by_event_id": "EV-d292329c0ec64c8f",
       "as_of_date": "2026-06-15",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "Founded in 2025 by Emmanuel Menier and Matthieu Nastorg"
+                "quote": "Founded in 2025 by Emmanuel Menier and Matthieu Nastorg",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "bf7358940d23fdf3c024e1bb9b58abc18db56dbf88fad45f1054419d533f4e60"
               },
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "Emmanuel Menier, co-founder and CEO of NP Company"
+                "quote": "Emmanuel Menier, co-founder and CEO of NP Company",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "0182626fafe9dc3533cb64927255965c428888e2a806c13342b94298546a76d3"
               }
             ],
             "entity_id": null
@@ -50,11 +55,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "Founded in 2025 by Emmanuel Menier and Matthieu Nastorg"
+                "quote": "Founded in 2025 by Emmanuel Menier and Matthieu Nastorg",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "bf7358940d23fdf3c024e1bb9b58abc18db56dbf88fad45f1054419d533f4e60"
               },
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "Matthieu Nastorg, co-founder and CTO"
+                "quote": "Matthieu Nastorg, co-founder and CTO",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "e9af9defbda35d86158483ff0d76f6a02f2ade492789825109cbf0325ddfcb7b"
               }
             ],
             "entity_id": null
@@ -68,12 +77,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5c311f61df097447",
-            "quote": "NP Company (NP Co.), an AI-native simulation software company serving the aerospace, defence, energy, electronics, data centre, and automotive industries"
+            "quote": "NP Company (NP Co.), an AI-native simulation software company serving the aerospace, defence, energy, electronics, data centre, and automotive industries",
+            "source_content_hash": "a21d576724e54306",
+            "quote_hash": "27b5194429f4a0d77f9424f1c28375e57abc5b9d34f53dad548db0b25bd2104d"
           }
         ]
       },
       "financing": {
-        "round": "种子轮前",
+        "round": "预种子轮",
         "amount": "€6M",
         "total_raised": "€6M",
         "announced_at": "2026-06-02",
@@ -84,7 +95,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "The round was led by Partech"
+                "quote": "The round was led by Partech",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "cab8747d457c627ffdac6fdac0ac7b42885a8935e14b98544db02bfc0fcb8557"
               }
             ],
             "entity_id": null
@@ -95,7 +108,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "with participation from the Peugeot family office"
+                "quote": "with participation from the Peugeot family office",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "37f8051a4b5e8594ccdde8515c4ed4fadd3f717f171188e30c7bfce0a5746a79"
               }
             ],
             "entity_id": null
@@ -106,7 +121,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI"
+                "quote": "several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "4ff2124b6150046d1dcdd900fe8bc829931f0c4d8c8a2ba3892a8c7de6e12b05"
               }
             ],
             "entity_id": null
@@ -117,7 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI"
+                "quote": "several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "4ff2124b6150046d1dcdd900fe8bc829931f0c4d8c8a2ba3892a8c7de6e12b05"
               }
             ],
             "entity_id": null
@@ -128,7 +147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "Florian Douetteau, founder of Dataiku"
+                "quote": "Florian Douetteau, founder of Dataiku",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "9f93659cc4dd501faa7e7f1277b954cad8cdf624b1026e4da652c570686c568a"
               }
             ],
             "entity_id": null
@@ -139,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5c311f61df097447",
-                "quote": "Vincent Luciani, founder and CEO of Artefact"
+                "quote": "Vincent Luciani, founder and CEO of Artefact",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "4ad1b8bc6103774637e93dbf5b9b61c6dc61ad07b8d9a8e6f6e005e8a7819ca5"
               }
             ],
             "entity_id": null
@@ -148,7 +171,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5c311f61df097447",
-            "quote": "has raised a €6 million pre-seed funding round. The round was led by Partech, with participation from the Peugeot family office and several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI, Florian Douetteau, founder of Dataiku, and Vincent Luciani, founder and CEO of Artefact."
+            "quote": "has raised a €6 million pre-seed funding round. The round was led by Partech, with participation from the Peugeot family office and several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI, Florian Douetteau, founder of Dataiku, and Vincent Luciani, founder and CEO of Artefact.",
+            "source_content_hash": "a21d576724e54306",
+            "quote_hash": "df06c15caedc6090e2ad8ee26c4ea56c1cff25f2d118ec769c000e4ed0280405"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "种子轮前",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d292329c0ec64c8f",
+            "round_original": "种子轮前",
+            "amount": "€6M",
+            "announced_at": "2026-06-02",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5c311f61df097447",
+                "quote": "has raised a €6 million pre-seed funding round. The round was led by Partech, with participation from the Peugeot family office and several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI, Florian Douetteau, founder of Dataiku, and Vincent Luciani, founder and CEO of Artefact.",
+                "source_content_hash": "a21d576724e54306",
+                "quote_hash": "df06c15caedc6090e2ad8ee26c4ea56c1cff25f2d118ec769c000e4ed0280405"
+              }
+            ]
           }
         ]
       },
@@ -165,19 +209,27 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5c311f61df097447",
-              "quote": "developing a new generation of physics simulation technology powered by transformer models pre-trained on industrial physics data"
+              "quote": "developing a new generation of physics simulation technology powered by transformer models pre-trained on industrial physics data",
+              "source_content_hash": "a21d576724e54306",
+              "quote_hash": "c31d4031d65807fc1da184e5a959754f14cc4c8ee9f8f1a6860b639086261b94"
             },
             {
               "source_id": "FISRC-5c311f61df097447",
-              "quote": "delivers results in seconds while maintaining the same level of fidelity across entire assemblies"
+              "quote": "delivers results in seconds while maintaining the same level of fidelity across entire assemblies",
+              "source_content_hash": "a21d576724e54306",
+              "quote_hash": "03bd77b85be8da7240870da2a53d956892f3915583b1e86b62ea02db3e643a5e"
             },
             {
               "source_id": "FISRC-5c311f61df097447",
-              "quote": "demonstrated speed improvements of up to 1,000 times on industrial benchmarks"
+              "quote": "demonstrated speed improvements of up to 1,000 times on industrial benchmarks",
+              "source_content_hash": "a21d576724e54306",
+              "quote_hash": "3a60c83ccfc60c2ecc50201a6b5f24127cc3d146b142b51d9b786a105510e7b0"
             },
             {
               "source_id": "FISRC-5c311f61df097447",
-              "quote": "designed to deliver value from the moment they are deployed within a customer’s infrastructure"
+              "quote": "designed to deliver value from the moment they are deployed within a customer’s infrastructure",
+              "source_content_hash": "a21d576724e54306",
+              "quote_hash": "e55fb9224c84eba53dea535d9d98b7fab37edd0cc7a523bf7559537b766efdbd"
             }
           ],
           "entity_id": null
@@ -195,13 +247,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "London-based PhysicsX, founded by ex-Formula One engineers from Renault and Mercedes has raised $155 million in total, including a $135M Series B led by Atomico in June 2025 and a $20M extension from Nvidia, valuing it at close to $1 billion."
+              "quote": "London-based PhysicsX, founded by ex-Formula One engineers from Renault and Mercedes has raised $155 million in total, including a $135M Series B led by Atomico in June 2025 and a $20M extension from Nvidia, valuing it at close to $1 billion.",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "24fbd360fade1bff7bbf0c15c238f50158fb73a2ab8cb31f439e5cbc9a2a77db"
             },
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "Where both operate largely at the infrastructure or workflow layer, NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet"
+              "quote": "Where both operate largely at the infrastructure or workflow layer, NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "8e9c807ba86b0148de618effa8de17543b70e418340187895a53603ce145a972"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Rescale",
@@ -213,13 +270,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "Rescale secured $115 million in a Series D in April 2025 to modernise high-performance computing and simulation infrastructure."
+              "quote": "Rescale secured $115 million in a Series D in April 2025 to modernise high-performance computing and simulation infrastructure.",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "ee2ba911bd3ad98f1b106b78c8bc0e27856e606b6652c2aba66fb14f95ff1dbf"
             },
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "Where both operate largely at the infrastructure or workflow layer, NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet"
+              "quote": "Where both operate largely at the infrastructure or workflow layer, NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "8e9c807ba86b0148de618effa8de17543b70e418340187895a53603ce145a972"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Emmi AI",
@@ -231,9 +293,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet, and the same one Mistral just paid an undisclosed sum to acquire through Emmi."
+              "quote": "NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet, and the same one Mistral just paid an undisclosed sum to acquire through Emmi.",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "b0e4be86c1f958d602456edbcaa24ce2b3dd9f2fa99471913d970be4fed0ba45"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -244,7 +309,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5c311f61df097447",
-              "quote": "demonstrated speed improvements of up to 1,000 times on industrial benchmarks"
+              "quote": "demonstrated speed improvements of up to 1,000 times on industrial benchmarks",
+              "source_content_hash": "a21d576724e54306",
+              "quote_hash": "3a60c83ccfc60c2ecc50201a6b5f24127cc3d146b142b51d9b786a105510e7b0"
             }
           ]
         },
@@ -255,7 +322,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "with a stated path to 50,000x on full-assembly simulations"
+              "quote": "with a stated path to 50,000x on full-assembly simulations",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "f461942d8f8182b233293c7970836b0b024c778603d3a384a2c8456f67b2d94a"
             }
           ]
         },
@@ -266,7 +335,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "the global simulation software market stood at $19.95 billion in 2024"
+              "quote": "the global simulation software market stood at $19.95 billion in 2024",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "58df6e678922af4049d97b59689e3b24db1c82da7d3fa32b90041ce7f05fa061"
             }
           ]
         },
@@ -277,7 +348,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "projected to reach $36.22 billion by 2030"
+              "quote": "projected to reach $36.22 billion by 2030",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "f3f5ab8fbb4ab08f19f24d69d216b3841b910efdfa562c67baff16b2e355bcd4"
             }
           ]
         }
@@ -289,7 +362,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "Engineering is the next frontier for AI, not the next chatbot"
+              "quote": "Engineering is the next frontier for AI, not the next chatbot",
+              "source_content_hash": "a2e08b0026aa29ca",
+              "quote_hash": "5482dfae03af3bb8d5230352332cf00c95107116c79e09970ff58e14f1b4617b"
             }
           ]
         }
@@ -307,7 +382,20 @@
           "Mistral AI 收购 Emmi AI 后已具备内部物理仿真能力，NP Company 面临来自同一生态体系内资源更充裕的间接竞争。"
         ],
         "related_direction_id": "",
-        "sector": "AI 原生工业仿真软件"
+        "sector": "AI 原生工业仿真软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“用预训练物理基础模型替代传统逐次求解的仿真范式”。本轮融资所依赖的已验证信号包括：公司技术已在 Safran 组织的工业基准测试中实现 1000 倍加速，且团队源自孵化出 Mistral AI 的 Inria 研究所。Mistral AI 联合创始人在收购竞品 Emmi AI 仅 13 天后即以个人天使身份参投，暗示其对 NP Company 技术架构的差异化认可。但当前证据仅限于种子轮前阶段，尚无客户部署案例或商业收入验证，技术路径能否从基准测试扩展到全装配体仿真仍存在不确定性。",
+          "evidence_signals": [
+            "在 Safran 组织的工业基准测试中实现最高 1000 倍仿真加速",
+            "创始团队来自巴黎-萨克雷大学及 Inria，具备 AI 仿真领域博士研究背景",
+            "Mistral AI 联合创始人 Guillaume Lample 和 Cédric O 以个人天使身份参投"
+          ],
+          "risks": [
+            "公司处于种子轮前阶段，尚无公开客户案例或商业收入，技术可行性仅由基准测试而非生产环境验证。",
+            "Mistral AI 收购 Emmi AI 后已具备内部物理仿真能力，NP Company 面临来自同一生态体系内资源更充裕的间接竞争。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -315,184 +403,84 @@
           "target_kind": "product",
           "research_name": "AI-native physics simulation software",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "developing a new generation of physics simulation technology powered by transformer models pre-trained on industrial physics data"
-            },
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "delivers results in seconds while maintaining the same level of fidelity across entire assemblies"
-            },
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "demonstrated speed improvements of up to 1,000 times on industrial benchmarks"
-            },
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "designed to deliver value from the moment they are deployed within a customer’s infrastructure"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Emmanuel Menier",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "Founded in 2025 by Emmanuel Menier and Matthieu Nastorg"
-            },
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "Emmanuel Menier, co-founder and CEO of NP Company"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Matthieu Nastorg",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "Founded in 2025 by Emmanuel Menier and Matthieu Nastorg"
-            },
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "Matthieu Nastorg, co-founder and CTO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Partech",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "The round was led by Partech"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Peugeot family office",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "with participation from the Peugeot family office"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Guillaume Lample",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cédric O",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "several prominent angel investors, including Guillaume Lample and Cédric O, co-founders of Mistral AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Florian Douetteau",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "Florian Douetteau, founder of Dataiku"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vincent Luciani",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5c311f61df097447",
-              "quote": "Vincent Luciani, founder and CEO of Artefact"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "PhysicsX",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "London-based PhysicsX, founded by ex-Formula One engineers from Renault and Mercedes has raised $155 million in total, including a $135M Series B led by Atomico in June 2025 and a $20M extension from Nvidia, valuing it at close to $1 billion."
-            },
-            {
-              "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "Where both operate largely at the infrastructure or workflow layer, NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Rescale",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "Rescale secured $115 million in a Series D in April 2025 to modernise high-performance computing and simulation infrastructure."
-            },
-            {
-              "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "Where both operate largely at the infrastructure or workflow layer, NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Emmi AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-35ac7f4594a02aca",
-              "quote": "NP Co. is rebuilding the simulation engine itself using foundation models trained on physics, a fundamentally different technical bet, and the same one Mistral just paid an undisclosed sum to acquire through Emmi."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -578,13 +566,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:30:35.650Z"
+      "published_at": "2026-07-26T14:30:35.650Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI-native physics simulation software"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Emmanuel Menier",
+            "Matthieu Nastorg"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d292329c0ec64c8f"
+      ],
+      "aggregation": {
+        "key": "EN-c04bd5ebd10ab696|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-2292727d2e0b8d81",
       "triggered_by_event_id": "EV-6011ab83ebd290bd",
       "as_of_date": "2026-06-15",
@@ -602,7 +620,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "Eugene Cheah, CEO and co-founder of Featherless.ai"
+                "quote": "Eugene Cheah, CEO and co-founder of Featherless.ai",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "2c10f523a1693718662a5550754d3d27e70c83decab1d0796b543ecd3e7c83de"
               }
             ],
             "entity_id": null
@@ -616,16 +636,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2abdb8003508dda6",
-            "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding"
+            "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding",
+            "source_content_hash": "7b38f6d68d7f8881",
+            "quote_hash": "928560a85a8ead55eca71fb3cbe1978621720651719a7b7fe7f81077e80a1263"
           },
           {
             "source_id": "FISRC-be4736fbc4a3d804",
-            "quote": "2024 San Francisco, California, USA"
+            "quote": "2024 San Francisco, California, USA",
+            "source_content_hash": "446653710d989883",
+            "quote_hash": "a8915e4b2558f48ae5978994016453774d08052a31dc00352032e54fe5bf6525"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$20 million",
         "total_raised": "$20 million",
         "announced_at": "2026-04-30",
@@ -636,7 +660,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "The round was co-led by AMD Ventures and Airbus Ventures"
+                "quote": "The round was co-led by AMD Ventures and Airbus Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "f041365034fe85e104a9a233f26272bdbd019c8b3bbedcce5183fc51e4eb0bfd"
               }
             ],
             "entity_id": null
@@ -647,7 +673,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "The round was co-led by AMD Ventures and Airbus Ventures"
+                "quote": "The round was co-led by AMD Ventures and Airbus Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "f041365034fe85e104a9a233f26272bdbd019c8b3bbedcce5183fc51e4eb0bfd"
               }
             ],
             "entity_id": null
@@ -658,7 +686,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
+                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
               }
             ],
             "entity_id": null
@@ -669,11 +699,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
+                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
               },
               {
                 "source_id": "FISRC-1afbc2de05f08056",
-                "quote": "Joan Yao, General Partner at Kickstart Ventures, also said the firm backed Featherless.ai at seed because of their technical edge in inference"
+                "quote": "Joan Yao, General Partner at Kickstart Ventures, also said the firm backed Featherless.ai at seed because of their technical edge in inference",
+                "source_content_hash": "84d2adfa2c1db4c4",
+                "quote_hash": "4328b7e7f0b278cac1585876deed8168aa494544d7f523c44d12c43e0e742802"
               }
             ],
             "entity_id": null
@@ -684,7 +718,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
+                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
               }
             ],
             "entity_id": null
@@ -695,7 +731,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
+                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
               }
             ],
             "entity_id": null
@@ -704,11 +742,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2abdb8003508dda6",
-            "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding"
+            "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding",
+            "source_content_hash": "7b38f6d68d7f8881",
+            "quote_hash": "928560a85a8ead55eca71fb3cbe1978621720651719a7b7fe7f81077e80a1263"
           },
           {
             "source_id": "FISRC-d2c065a50fa67868",
-            "quote": "Today, we're announcing a $20 million Series A financing round"
+            "quote": "Today, we're announcing a $20 million Series A financing round",
+            "source_content_hash": "e848ef24a67bf0b4",
+            "quote_hash": "3fdf1e3dc29c0e62a32e43a16f9e0f49b08886c177819e78bb4e5c5cf27b49a3"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-6011ab83ebd290bd",
+            "round_original": "Series A",
+            "amount": "$20 million",
+            "announced_at": "2026-04-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2abdb8003508dda6",
+                "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "928560a85a8ead55eca71fb3cbe1978621720651719a7b7fe7f81077e80a1263"
+              },
+              {
+                "source_id": "FISRC-d2c065a50fa67868",
+                "quote": "Today, we're announcing a $20 million Series A financing round",
+                "source_content_hash": "e848ef24a67bf0b4",
+                "quote_hash": "3fdf1e3dc29c0e62a32e43a16f9e0f49b08886c177819e78bb4e5c5cf27b49a3"
+              }
+            ]
           }
         ]
       },
@@ -727,11 +794,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "Featherless.ai is a serverless inference platform. Its goal is to make all AI models available for serverless inference. It offers a production-ready alternative to proprietary compute environments."
+              "quote": "Featherless.ai is a serverless inference platform. Its goal is to make all AI models available for serverless inference. It offers a production-ready alternative to proprietary compute environments.",
+              "source_content_hash": "7b38f6d68d7f8881",
+              "quote_hash": "5fb0506491f97d447a8773d659288c74504e4c244643f619d93c0fd6f0a38e27"
             },
             {
               "source_id": "FISRC-c229f715d145c1e1",
-              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU"
+              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU",
+              "source_content_hash": "f5b6c7dcb4aad736",
+              "quote_hash": "69cf48387750c2fa92737f9358f9cc1d8178e7cb2b58b83c4a75659d0bc3b777"
             }
           ],
           "entity_id": null
@@ -747,7 +818,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "Featherless.ai supports over 30,000 open models across language, vision, and audio"
+              "quote": "Featherless.ai supports over 30,000 open models across language, vision, and audio",
+              "source_content_hash": "7b38f6d68d7f8881",
+              "quote_hash": "9270ea4fd86fe8002b02a7a5eb5c12db0d5fe1b9350a2a66cd28e23024075c5c"
             }
           ]
         },
@@ -758,7 +831,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c229f715d145c1e1",
-              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU"
+              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU",
+              "source_content_hash": "f5b6c7dcb4aad736",
+              "quote_hash": "69cf48387750c2fa92737f9358f9cc1d8178e7cb2b58b83c4a75659d0bc3b777"
             }
           ]
         }
@@ -775,7 +850,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "Featherless.ai is at the forefront of a critical new phase in the development of the AI industry. By providing a strong foundation for open-source AI, it helps expand access and supports a more competitive and diverse ecosystem. We are delighted to support Featherless.ai on their journey."
+                "quote": "Featherless.ai is at the forefront of a critical new phase in the development of the AI industry. By providing a strong foundation for open-source AI, it helps expand access and supports a more competitive and diverse ecosystem. We are delighted to support Featherless.ai on their journey.",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "543fd9fe05925b66f2b28bca354f980843901685d6f09b98974737d2564a6974"
               }
             ]
           },
@@ -788,7 +865,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "As AI adoption accelerates, enterprises want more control over performance, cost, and where their data lives. Featherless.ai is making leading open models production-ready at scale. Being able to use a variety of different models is key for future enterprise AI use cases."
+                "quote": "As AI adoption accelerates, enterprises want more control over performance, cost, and where their data lives. Featherless.ai is making leading open models production-ready at scale. Being able to use a variety of different models is key for future enterprise AI use cases.",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "2604f6ca59e79137a98215f6bdfc78567548ccbdd17f48a84c644be925274d66"
               }
             ]
           },
@@ -801,7 +880,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1afbc2de05f08056",
-                "quote": "the next phase of AI adoption will be driven by millions of specialised, fine-tuned models rather than a few general-purpose systems. She said the key challenge is not the availability of such models, but the ability to serve them reliably and cost-effectively at scale. Featherless.ai has addressed this by enabling models to load within seconds while maintaining high GPU utilization"
+                "quote": "the next phase of AI adoption will be driven by millions of specialised, fine-tuned models rather than a few general-purpose systems. She said the key challenge is not the availability of such models, but the ability to serve them reliably and cost-effectively at scale. Featherless.ai has addressed this by enabling models to load within seconds while maintaining high GPU utilization",
+                "source_content_hash": "84d2adfa2c1db4c4",
+                "quote_hash": "10b64f903d25a1b45c6853ff205dc1315418804331bc31c3d1a4227f5c287f67"
               }
             ]
           },
@@ -814,7 +895,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1afbc2de05f08056",
-                "quote": "Prashant Matta, Managing Partner at Panache Ventures, said Featherless.ai combines practical innovation with a broader mission to diversify the AI ecosystem. He warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development."
+                "quote": "Prashant Matta, Managing Partner at Panache Ventures, said Featherless.ai combines practical innovation with a broader mission to diversify the AI ecosystem. He warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development.",
+                "source_content_hash": "84d2adfa2c1db4c4",
+                "quote_hash": "49da474b1ab0e22abcce3c7515314d3b718a2bf10969371384ad6cd0223acced"
               }
             ]
           }
@@ -832,7 +915,22 @@
           "开源模型质量参差不齐，尤其在低资源语言和多语言场景下存在性能差距，来源中Cheah承认'不会声称完美的对等性，这在当前领域状态下是不诚实的'"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施与开源模型推理平台"
+        "sector": "AI基础设施与开源模型推理平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业对AI主权和供应商锁定的规避需求，以及从单一通用模型向多模型专业化部署的范式转移。本轮2000万美元A轮融资由AMD Ventures和Airbus Ventures联合领投，多家产业资本参与，验证了以下信号：平台已支持超过30,000个开源模型，是Hugging Face生态中增长最快的推理合作伙伴；创始团队创建了RWKV开源架构，具备底层技术权威；通过AMD ROCm战略合作实现了硬件多样性，提供可审计的专有硬件替代方案。估值未在来源中披露。",
+          "evidence_signals": [
+            "平台支持超过30,000个开源模型，涵盖语言、视觉和音频",
+            "是Hugging Face生态中增长最快的推理合作伙伴",
+            "创始团队创建了RWKV开源架构，挑战Transformer主导地位",
+            "与AMD达成战略合作，确保开源模型在AMD ROCm上原生运行",
+            "种子轮投资方Kickstart Ventures和Airbus Ventures在本轮继续加注"
+          ],
+          "risks": [
+            "超大规模云厂商可能通过价格战削弱中立推理平台的成本优势，来源中CEO Cheah承认超大规模厂商压低定价是威胁之一",
+            "开源模型质量参差不齐，尤其在低资源语言和多语言场景下存在性能差距，来源中Cheah承认'不会声称完美的对等性，这在当前领域状态下是不诚实的'"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -840,112 +938,56 @@
           "target_kind": "product",
           "research_name": "Featherless.ai Serverless Inference Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "Featherless.ai is a serverless inference platform. Its goal is to make all AI models available for serverless inference. It offers a production-ready alternative to proprietary compute environments."
-            },
-            {
-              "source_id": "FISRC-c229f715d145c1e1",
-              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Eugene Cheah",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "Eugene Cheah, CEO and co-founder of Featherless.ai"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AMD Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "The round was co-led by AMD Ventures and Airbus Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Airbus Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "The round was co-led by AMD Ventures and Airbus Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BMW i Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kickstart Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
-            },
-            {
-              "source_id": "FISRC-1afbc2de05f08056",
-              "quote": "Joan Yao, General Partner at Kickstart Ventures, also said the firm backed Featherless.ai at seed because of their technical edge in inference"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Panache Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Wavemaker Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1031,13 +1073,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:30:25.594Z"
+      "published_at": "2026-07-26T14:30:25.594Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Featherless.ai Serverless Inference Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Eugene Cheah"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-6011ab83ebd290bd"
+      ],
+      "aggregation": {
+        "key": "EN-8e3070c2f39507a8|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-254db0b1596faeda",
       "triggered_by_event_id": "EV-5d581d112fdbd464",
       "as_of_date": "2026-06-15",
@@ -1055,7 +1126,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-aa1f19ff48642176",
-                "quote": "Founded by Mariama Diallo and Ayooluwa Odemuyiwa"
+                "quote": "Founded by Mariama Diallo and Ayooluwa Odemuyiwa",
+                "source_content_hash": "8324262578c3234b",
+                "quote_hash": "64951adea56b95f3748e56f91f8766f48920d480c419d9327350766384352419"
               }
             ],
             "entity_id": null
@@ -1066,7 +1139,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-aa1f19ff48642176",
-                "quote": "Founded by Mariama Diallo and Ayooluwa Odemuyiwa"
+                "quote": "Founded by Mariama Diallo and Ayooluwa Odemuyiwa",
+                "source_content_hash": "8324262578c3234b",
+                "quote_hash": "64951adea56b95f3748e56f91f8766f48920d480c419d9327350766384352419"
               }
             ],
             "entity_id": null
@@ -1078,23 +1153,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "AethexAI currently has a team of 10"
+              "quote": "AethexAI currently has a team of 10",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "81f490e1c6e8109667163bbae552e2f51bd396ef3b988a0ccfa410a40f8455bd"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-aa1f19ff48642176",
-            "quote": "AethexAI, a voice AI infrastructure company building for enterprises across emerging markets"
+            "quote": "AethexAI, a voice AI infrastructure company building for enterprises across emerging markets",
+            "source_content_hash": "8324262578c3234b",
+            "quote_hash": "26816f0fc5101313d5e396c46aba66be1e8123e9a6b1a215e6dda1830b630191"
           },
           {
             "source_id": "FISRC-e7d05f2eb8afe8e6",
-            "quote": "AethexAI , a UK voice AI infrastructure company building for enterprises across emerging markets"
+            "quote": "AethexAI , a UK voice AI infrastructure company building for enterprises across emerging markets",
+            "source_content_hash": "e1c7801a6e2b37f2",
+            "quote_hash": "ff7cc3af70adefe86487a164147f5a220bd30d6924b4836b9b0f6bbb3c7bb5f7"
           }
         ]
       },
       "financing": {
-        "round": "Pre-Seed",
+        "round": "预种子轮",
         "amount": "$3 million",
         "total_raised": "$3 million",
         "announced_at": "2026-06-04",
@@ -1105,7 +1186,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-aa1f19ff48642176",
-                "quote": "a $3 million pre-seed round led by 4DX Ventures"
+                "quote": "a $3 million pre-seed round led by 4DX Ventures",
+                "source_content_hash": "8324262578c3234b",
+                "quote_hash": "f73830b8b3e98e925f05cebd5216207aa9c43a8bcf8b4b1d285570194968138a"
               }
             ],
             "entity_id": null
@@ -1116,7 +1199,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-aa1f19ff48642176",
-                "quote": "The round included participation from Enza Capital"
+                "quote": "The round included participation from Enza Capital",
+                "source_content_hash": "8324262578c3234b",
+                "quote_hash": "fa7749e8716b23423c912dd2c3b130f86aea9217d1417361a140ddb067a2f215"
               }
             ],
             "entity_id": null
@@ -1127,7 +1212,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-aa1f19ff48642176",
-                "quote": "strategic angel investors, including Stanford faculty"
+                "quote": "strategic angel investors, including Stanford faculty",
+                "source_content_hash": "8324262578c3234b",
+                "quote_hash": "8f69bff603dbf28286a34ad9420b03e2d5bb2690aa8e6be1ff944b32f2df7084"
               }
             ],
             "entity_id": null
@@ -1136,11 +1223,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-aa1f19ff48642176",
-            "quote": "today announced a $3 million pre-seed round led by 4DX Ventures"
+            "quote": "today announced a $3 million pre-seed round led by 4DX Ventures",
+            "source_content_hash": "8324262578c3234b",
+            "quote_hash": "66e7b93950210c62df6c201836726b273b9a30259519101bdbe54a0fbf6b13f3"
           },
           {
             "source_id": "FISRC-e7d05f2eb8afe8e6",
-            "quote": "today announced a $3 million pre-seed round led by 4DX Ventures"
+            "quote": "today announced a $3 million pre-seed round led by 4DX Ventures",
+            "source_content_hash": "e1c7801a6e2b37f2",
+            "quote_hash": "66e7b93950210c62df6c201836726b273b9a30259519101bdbe54a0fbf6b13f3"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-5d581d112fdbd464",
+            "round_original": "Pre-Seed",
+            "amount": "$3 million",
+            "announced_at": "2026-06-04",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-aa1f19ff48642176",
+                "quote": "today announced a $3 million pre-seed round led by 4DX Ventures",
+                "source_content_hash": "8324262578c3234b",
+                "quote_hash": "66e7b93950210c62df6c201836726b273b9a30259519101bdbe54a0fbf6b13f3"
+              },
+              {
+                "source_id": "FISRC-e7d05f2eb8afe8e6",
+                "quote": "today announced a $3 million pre-seed round led by 4DX Ventures",
+                "source_content_hash": "e1c7801a6e2b37f2",
+                "quote_hash": "66e7b93950210c62df6c201836726b273b9a30259519101bdbe54a0fbf6b13f3"
+              }
+            ]
           }
         ]
       },
@@ -1158,11 +1274,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "This is done through a single platform: self-hosted, market-localised models trained on proprietary data, wired directly into fully managed telephony, orchestration, and existing workflows. Delivered through a no-code interface and APIs"
+              "quote": "This is done through a single platform: self-hosted, market-localised models trained on proprietary data, wired directly into fully managed telephony, orchestration, and existing workflows. Delivered through a no-code interface and APIs",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "18fe4f5f482699c08f10e53f4ef732f26e91b0edcbb52ae2618fb2f33636bcb9"
             },
             {
               "source_id": "FISRC-4bce010434f76286",
-              "quote": "targeting enterprises across emerging markets, including banks, telecom companies, call centers, and fintechs"
+              "quote": "targeting enterprises across emerging markets, including banks, telecom companies, call centers, and fintechs",
+              "source_content_hash": "20ed1f44e5592b7f",
+              "quote_hash": "73f726d7166ea0f32cfd920ccf9b3fa3cca63620619cbe1f85b12230d254ed6a"
             }
           ],
           "entity_id": null
@@ -1179,7 +1299,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "The platform is powered by Kora 1, AethexAI’s proprietary voice model stack, trained on licensed datasets from call centres, radio and content platforms and designed for noisy environments, multiple accents and languages."
+              "quote": "The platform is powered by Kora 1, AethexAI’s proprietary voice model stack, trained on licensed datasets from call centres, radio and content platforms and designed for noisy environments, multiple accents and languages.",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "9655a1370e4c389adbc891f655a336203aee6d6ec819033ee9bd437dadeec144"
             }
           ],
           "entity_id": null
@@ -1194,7 +1316,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "The company is also launching a developer platform, enabling third parties to build voice applications across the region using a single API."
+              "quote": "The company is also launching a developer platform, enabling third parties to build voice applications across the region using a single API.",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "5fe46daeaf9db7b66390c5b2b3ae5c03cb405d6fd7d679678402c6b4a4fd425d"
             }
           ],
           "entity_id": null
@@ -1212,13 +1336,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Existing tools struggle with unreliable connectivity, fragmented telephony, high pricing and poor handling of local speech, often making them more expensive than human agents. AethexAI addresses this gap by rebuilding the voice stack from the ground up for these environments, enabling reliable, cost-effective deployment."
+              "quote": "Existing tools struggle with unreliable connectivity, fragmented telephony, high pricing and poor handling of local speech, often making them more expensive than human agents. AethexAI addresses this gap by rebuilding the voice stack from the ground up for these environments, enabling reliable, cost-effective deployment.",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "3fbb78a7e614591ed4686501d47f06f9574ad045faabd58e62c1cbc3c0949e10"
             },
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Pricing starts from $0.030 per minute, significantly lower than other providers, which can exceed $0.10 per minute before additional costs."
+              "quote": "Pricing starts from $0.030 per minute, significantly lower than other providers, which can exceed $0.10 per minute before additional costs.",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "d96eec8e8f0a56acb70b46a14c9be4839a39e6d4152f7047af1941cb6f6c24d7"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1229,7 +1358,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "a $3 million pre-seed round"
+              "quote": "a $3 million pre-seed round",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "298fa8a49b957315eca47126f0050f0a8dfa9bece826a0b370ffbbb1e0a72265"
             }
           ]
         },
@@ -1240,7 +1371,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "AethexAI currently has a team of 10"
+              "quote": "AethexAI currently has a team of 10",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "81f490e1c6e8109667163bbae552e2f51bd396ef3b988a0ccfa410a40f8455bd"
             }
           ]
         },
@@ -1251,7 +1384,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "expects to double its headcount by the end of 2026"
+              "quote": "expects to double its headcount by the end of 2026",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "30e0f12fc0f37bac145a87ec2e9430b1180ded688a63aa9402dafe6eb04b19d1"
             }
           ]
         },
@@ -1262,7 +1397,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "initially targeting a market of 1.5 billion people across Africa and the Middle East"
+              "quote": "initially targeting a market of 1.5 billion people across Africa and the Middle East",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "40d062b5d901fbec4d503ce9d1ff7f8922b104de7b3eaceed38a4a758596a100"
             }
           ]
         },
@@ -1273,7 +1410,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Pricing starts from $0.030 per minute"
+              "quote": "Pricing starts from $0.030 per minute",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "c257fc9507af758e8d1cc027086f19c2193ed28e0c326ea1e7e351f2f3ed8853"
             }
           ]
         },
@@ -1284,7 +1423,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "other providers, which can exceed $0.10 per minute before additional costs"
+              "quote": "other providers, which can exceed $0.10 per minute before additional costs",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "255319c621ae52ddf30958070f04a7184c7f68d513b92da71884bc2317122f4a"
             }
           ]
         }
@@ -1296,7 +1437,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Voice is already how businesses operate across emerging markets, but the technology behind it hasn’t kept up. We kept hearing the same thing from customers: that existing tools simply didn’t work in their environments. That’s why we built our own model stack and infrastructure from the ground up, designed for how these markets actually operate. With this backing, we’re now scaling AethexAI into the leading voice infrastructure platform in these markets."
+              "quote": "Voice is already how businesses operate across emerging markets, but the technology behind it hasn’t kept up. We kept hearing the same thing from customers: that existing tools simply didn’t work in their environments. That’s why we built our own model stack and infrastructure from the ground up, designed for how these markets actually operate. With this backing, we’re now scaling AethexAI into the leading voice infrastructure platform in these markets.",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "1f0a5a62952276f15d57ebfba353418a7a95242399e8353bfdfc5818b86de53e"
             }
           ]
         },
@@ -1306,7 +1449,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Voice AI failed in these markets at every layer of the stack. Latency, cost, poor handling of code switching, and weak performance under packet loss, jitter, and low-bitrate audio in real telecom networks led these systems to break in production. The fix was not incremental. It required redesigning the entire stack. Kora 1 is our family of speech models, specialised by dialect and fully self-hosted. We built and own the data pipeline behind them. Telephony, interruption handling, and retrieval are native to the system, proven and refined through enterprise deployments, not bolted on."
+              "quote": "Voice AI failed in these markets at every layer of the stack. Latency, cost, poor handling of code switching, and weak performance under packet loss, jitter, and low-bitrate audio in real telecom networks led these systems to break in production. The fix was not incremental. It required redesigning the entire stack. Kora 1 is our family of speech models, specialised by dialect and fully self-hosted. We built and own the data pipeline behind them. Telephony, interruption handling, and retrieval are native to the system, proven and refined through enterprise deployments, not bolted on.",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "10201f0fedb0006b1c6f5b58173aed64aac220483a15758f400115a63d181568"
             }
           ]
         },
@@ -1316,7 +1461,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Voice AI adoption in emerging markets has been constrained, less so due to demand, but rather by infrastructure that was never designed for these environments. AethexAI has taken a fundamentally different approach, rebuilding the stack from the ground up for how these markets actually operate. With real production deployments already at scale, the AethexAI team is building what we believe will become the defining voice infrastructure layer for the next billion users."
+              "quote": "Voice AI adoption in emerging markets has been constrained, less so due to demand, but rather by infrastructure that was never designed for these environments. AethexAI has taken a fundamentally different approach, rebuilding the stack from the ground up for how these markets actually operate. With real production deployments already at scale, the AethexAI team is building what we believe will become the defining voice infrastructure layer for the next billion users.",
+              "source_content_hash": "8324262578c3234b",
+              "quote_hash": "9be62e0704a51cac427f293a42b2d986889e3a513f95a29f58762c7f569559e7"
             }
           ]
         }
@@ -1332,7 +1479,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-aa1f19ff48642176",
-                "quote": "Voice AI adoption in emerging markets has been constrained, less so due to demand, but rather by infrastructure that was never designed for these environments. AethexAI has taken a fundamentally different approach, rebuilding the stack from the ground up for how these markets actually operate. With real production deployments already at scale, the AethexAI team is building what we believe will become the defining voice infrastructure layer for the next billion users."
+                "quote": "Voice AI adoption in emerging markets has been constrained, less so due to demand, but rather by infrastructure that was never designed for these environments. AethexAI has taken a fundamentally different approach, rebuilding the stack from the ground up for how these markets actually operate. With real production deployments already at scale, the AethexAI team is building what we believe will become the defining voice infrastructure layer for the next billion users.",
+                "source_content_hash": "8324262578c3234b",
+                "quote_hash": "9be62e0704a51cac427f293a42b2d986889e3a513f95a29f58762c7f569559e7"
               }
             ]
           }
@@ -1347,7 +1496,19 @@
           "来源未披露任何具体付费客户名称或收入数据，商业化验证程度不透明。"
         ],
         "related_direction_id": "",
-        "sector": "语音 AI 基础设施"
+        "sector": "语音 AI 基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是新兴市场语音 AI 基础设施的“全栈重建”能力，而非对现有方案的增量改进。已验证信号包括：已有规模化生产部署、专有模型 Kora 1 基于本地授权数据训练、定价仅为竞品的约三分之一。但来源未披露具体客户名称、收入数据或部署规模，估值依据仍不透明。",
+          "evidence_signals": [
+            "已有规模化生产部署（real production deployments already at scale）",
+            "专有模型 Kora 1 基于呼叫中心、广播和内容平台的授权数据集训练",
+            "定价从每分钟 0.03 美元起，显著低于其他供应商的 0.10 美元以上"
+          ],
+          "risks": [
+            "来源未披露任何具体付费客户名称或收入数据，商业化验证程度不透明。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1355,125 +1516,63 @@
           "target_kind": "product",
           "research_name": "AethexAI Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "This is done through a single platform: self-hosted, market-localised models trained on proprietary data, wired directly into fully managed telephony, orchestration, and existing workflows. Delivered through a no-code interface and APIs"
-            },
-            {
-              "source_id": "FISRC-4bce010434f76286",
-              "quote": "targeting enterprises across emerging markets, including banks, telecom companies, call centers, and fintechs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Kora 1",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "The platform is powered by Kora 1, AethexAI’s proprietary voice model stack, trained on licensed datasets from call centres, radio and content platforms and designed for noisy environments, multiple accents and languages."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Developer Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "The company is also launching a developer platform, enabling third parties to build voice applications across the region using a single API."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mariama Diallo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Founded by Mariama Diallo and Ayooluwa Odemuyiwa"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ayooluwa Odemuyiwa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Founded by Mariama Diallo and Ayooluwa Odemuyiwa"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "4DX Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "a $3 million pre-seed round led by 4DX Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Enza Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "The round included participation from Enza Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Stanford faculty (Angel Investors)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "strategic angel investors, including Stanford faculty"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Existing voice AI tools",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Existing tools struggle with unreliable connectivity, fragmented telephony, high pricing and poor handling of local speech, often making them more expensive than human agents. AethexAI addresses this gap by rebuilding the voice stack from the ground up for these environments, enabling reliable, cost-effective deployment."
-            },
-            {
-              "source_id": "FISRC-aa1f19ff48642176",
-              "quote": "Pricing starts from $0.030 per minute, significantly lower than other providers, which can exceed $0.10 per minute before additional costs."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1535,10 +1634,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:30:19.818Z"
+      "published_at": "2026-07-26T14:30:19.818Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AethexAI Platform",
+            "Developer Platform",
+            "Kora 1"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Ayooluwa Odemuyiwa",
+            "Mariama Diallo"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5d581d112fdbd464"
+      ],
+      "aggregation": {
+        "key": "EN-7011e12e346d3d22|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-26",
     "generated_at": "2026-07-27T10:25:31.347Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 4,
       "auto_published": 4,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-196069d480a4118a",
       "triggered_by_event_id": "EV-fb817fb0a5e63323",
       "as_of_date": "2026-07-26",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "We're excited to announce our Seed and Series A financing rounds to build the world's best frontier data research lab"
+                "quote": "We're excited to announce our Seed and Series A financing rounds to build the world's best frontier data research lab",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "f610dd574e76a7bc27afcddf1b812768ae070a3505253b2f0086d3e9dacc2560"
               },
               {
                 "source_id": "FISRC-338676825311d210",
-                "quote": "Mahesh Sathiamoorthy, co-founder and CEO of Bespoke Labs"
+                "quote": "Mahesh Sathiamoorthy, co-founder and CEO of Bespoke Labs",
+                "source_content_hash": "5b6857fa049ce39e",
+                "quote_hash": "08b49adbe735ec8311e42ed8cd446d62ab63436f51d374523b7a6109f17440e6"
               }
             ],
             "entity_id": null
@@ -50,11 +55,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-338676825311d210",
-                "quote": "Founded in 2024 by Sathiamoorthy and Alex Dimakis"
+                "quote": "Founded in 2024 by Sathiamoorthy and Alex Dimakis",
+                "source_content_hash": "5b6857fa049ce39e",
+                "quote_hash": "c2a44f5ab713c157a8bfb25ae7979f90c57abae3aab05e88f256f8fecf57192a"
               },
               {
                 "source_id": "FISRC-b675439a45a13649",
-                "quote": "Alex Dimakis, co-founder and Chief Science Officer of Bespoke Labs"
+                "quote": "Alex Dimakis, co-founder and Chief Science Officer of Bespoke Labs",
+                "source_content_hash": "c06a19f9bdff08b6",
+                "quote_hash": "7eac07c13ef3db800882f5ee7834a23c727c85f67b2a048f793af46c2216eaca"
               }
             ],
             "entity_id": null
@@ -66,23 +75,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-338676825311d210",
-              "quote": "employs roughly 40-48 people"
+              "quote": "employs roughly 40-48 people",
+              "source_content_hash": "5b6857fa049ce39e",
+              "quote_hash": "5d400ee080d97654c64a70315722b6ce58be8b2a6d28c21db8d62198edcb421f"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-bcf489b2ae49f41b",
-            "quote": "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents"
+            "quote": "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents",
+            "source_content_hash": "0eae2122fce5a05c",
+            "quote_hash": "3c5077629d217ff50bcf2472b37a0693fd14317429108fac89990440da1955df"
           },
           {
             "source_id": "FISRC-b675439a45a13649",
-            "quote": "Bespoke Labs is based in Mountain View, California."
+            "quote": "Bespoke Labs is based in Mountain View, California.",
+            "source_content_hash": "c06a19f9bdff08b6",
+            "quote_hash": "d4fbae8456801b88386d603c30af53702504b0996f16f47c4dfb9477e9a82f7f"
           }
         ]
       },
       "financing": {
-        "round": "Seed and Series A",
+        "round": "多轮融资",
         "amount": "$40 million",
         "total_raised": "$40 million",
         "announced_at": "2026-07-06",
@@ -93,7 +108,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "Our Series A round was led by Wing VC"
+                "quote": "Our Series A round was led by Wing VC",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "095f8d44d91fe80459a5047d3c78aba275b5619a9843e37c4be8f252bf68a42c"
               }
             ],
             "entity_id": null
@@ -104,7 +121,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "Our $8.25 million seed round was led by 8VC"
+                "quote": "Our $8.25 million seed round was led by 8VC",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "7e8323f2f9785c8509f70cc1079513704ab925be9c653ffbfda75796842ec47a"
               }
             ],
             "entity_id": null
@@ -115,7 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "with participation from Mayfield"
+                "quote": "with participation from Mayfield",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "fdd7cfc9bc6208b5d8b12d7f5c32e7d0386d421fd0f115ea88d827baba3b52c0"
               }
             ],
             "entity_id": null
@@ -126,7 +147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "with participation from Mayfield, The House Fund"
+                "quote": "with participation from Mayfield, The House Fund",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "d79798601e389d5e9d5d1c42ee0eb3b5b3e920e8bf562fe328a17a844b0ce7a7"
               }
             ],
             "entity_id": null
@@ -137,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "dbt Labs CEO Tristan Handy"
+                "quote": "dbt Labs CEO Tristan Handy",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "a3e41a0b7030c15e8627cf5e5c30e51db2ae587adf99ac3b9f6c70eff8e12ce5"
               }
             ],
             "entity_id": null
@@ -148,7 +173,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "with participation from Jeff Dean"
+                "quote": "with participation from Jeff Dean",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "fcf780d450fd4f65c92e4ba52b315dd96dad37c7d517de7d70d2c237db65376c"
               }
             ],
             "entity_id": null
@@ -159,7 +186,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "Resolve AI CEO Spiros Xanthos"
+                "quote": "Resolve AI CEO Spiros Xanthos",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "34354a9056f99c460c76ba92927ee131608285d596e8971c0b138ee3f813b89b"
               }
             ],
             "entity_id": null
@@ -170,7 +199,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "DevRev CEO Dheeraj Pandey"
+                "quote": "DevRev CEO Dheeraj Pandey",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "3b9a99cf520dfa2c8dd60566b0aec4acd56269bb2001efdd49b3fe78a08b0427"
               }
             ],
             "entity_id": null
@@ -181,7 +212,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcf489b2ae49f41b",
-                "quote": "angels from Anthropic, OpenAI, and Meta"
+                "quote": "angels from Anthropic, OpenAI, and Meta",
+                "source_content_hash": "0eae2122fce5a05c",
+                "quote_hash": "5d4d04f8b629206d36bd8e359c55e505c664eae729d4b88a21cdf1b34f99b206"
               }
             ],
             "entity_id": null
@@ -190,7 +223,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1086b3ea3749f22b",
-            "quote": "Bespoke Labs has raised $40 million total — a $31.75 million Series A led by Wing VC, layered on top of an earlier $8.25 million seed round led by 8VC"
+            "quote": "Bespoke Labs has raised $40 million total — a $31.75 million Series A led by Wing VC, layered on top of an earlier $8.25 million seed round led by 8VC",
+            "source_content_hash": "4c5e3e95abc4b920",
+            "quote_hash": "59b52ec36e4ec1b2383dc3221b338124e4bef53ea90e336468744d9b425d589f"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "Seed and Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-fb817fb0a5e63323",
+            "round_original": "Seed and Series A",
+            "amount": "$40 million",
+            "announced_at": "2026-07-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1086b3ea3749f22b",
+                "quote": "Bespoke Labs has raised $40 million total — a $31.75 million Series A led by Wing VC, layered on top of an earlier $8.25 million seed round led by 8VC",
+                "source_content_hash": "4c5e3e95abc4b920",
+                "quote_hash": "59b52ec36e4ec1b2383dc3221b338124e4bef53ea90e336468744d9b425d589f"
+              }
+            ]
           }
         ]
       },
@@ -207,11 +261,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "An environment engine that lets our expert network and our own systems compose realistic, multitool, multistep worlds"
+              "quote": "An environment engine that lets our expert network and our own systems compose realistic, multitool, multistep worlds",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "d8d098bd3c53c9bb3bb84f82d2b848def88cef80b48ede5975d1b326d46c5ff8"
             },
             {
               "source_id": "FISRC-b675439a45a13649",
-              "quote": "designs and builds environments that look and behave like real companies: large codebases, microservices, realistic logs, tickets, email, Slack, and more"
+              "quote": "designs and builds environments that look and behave like real companies: large codebases, microservices, realistic logs, tickets, email, Slack, and more",
+              "source_content_hash": "c06a19f9bdff08b6",
+              "quote_hash": "0c17b4dc3e75580045e07ce308259ebfe6ea9bac1489c4e8fe1c60a39f8f5b7e"
             }
           ],
           "entity_id": null
@@ -227,7 +285,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "OpenThoughts is one of the most impactful open data curation projects of the past year. The open reasoning dataset has been downloaded hundreds of thousands of times"
+              "quote": "OpenThoughts is one of the most impactful open data curation projects of the past year. The open reasoning dataset has been downloaded hundreds of thousands of times",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "3be6250a994725fda28448948d43c2d2475c820f2b0a6fe0fedf17cdf222807a"
             }
           ],
           "entity_id": null
@@ -242,7 +302,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Terminal-Bench is a leading agentic coding benchmark, and we're core contributors. Anthropic, OpenAI, and Google DeepMind use this benchmark"
+              "quote": "Terminal-Bench is a leading agentic coding benchmark, and we're core contributors. Anthropic, OpenAI, and Google DeepMind use this benchmark",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "7b1aabfad450a11281f821a63e8ab8530a6233af5a068e593ff3a4276978c739"
             }
           ],
           "entity_id": null
@@ -256,9 +318,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "has powered work at Meta, Amazon, and AI2"
+              "quote": "has powered work at Meta, Amazon, and AI2",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "3a40ff52b87a38123ed783d5a0ba692ee77b27e0427a3bc8fc5854c082ada5c4"
             }
-          ]
+          ],
+          "entity_id": "EN-ea3bd73e2b506e00"
         },
         {
           "name": "Amazon",
@@ -267,9 +332,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "has powered work at Meta, Amazon, and AI2"
+              "quote": "has powered work at Meta, Amazon, and AI2",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "3a40ff52b87a38123ed783d5a0ba692ee77b27e0427a3bc8fc5854c082ada5c4"
             }
-          ]
+          ],
+          "entity_id": "EN-cbc62794911ff31b"
         },
         {
           "name": "Anthropic",
@@ -278,9 +346,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models.",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "2ae5356f027b348ba2ff81b1ba9675738ca2c093e85dc21adc3f79a36c9bbabf"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "OpenAI",
@@ -289,9 +360,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models.",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "2ae5356f027b348ba2ff81b1ba9675738ca2c093e85dc21adc3f79a36c9bbabf"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "Google DeepMind",
@@ -300,9 +374,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models.",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "2ae5356f027b348ba2ff81b1ba9675738ca2c093e85dc21adc3f79a36c9bbabf"
             }
-          ]
+          ],
+          "entity_id": "EN-2b6e51bec93e86c1"
         }
       ],
       "comparisons": [
@@ -316,9 +393,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-338676825311d210",
-              "quote": "Scale AI, whose $14.3 billion investment from Meta valued it near $29 billion, supplies labelled data rather than interactive training environments."
+              "quote": "Scale AI, whose $14.3 billion investment from Meta valued it near $29 billion, supplies labelled data rather than interactive training environments.",
+              "source_content_hash": "5b6857fa049ce39e",
+              "quote_hash": "6856e468634eebdccfc0b3baac593d9d94a3bae3c5c782a993cf0afd216e7f7f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Poolside",
@@ -330,9 +410,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-338676825311d210",
-              "quote": "Poolside raised $500 million at a $3 billion valuation to build coding-focused foundation models."
+              "quote": "Poolside raised $500 million at a $3 billion valuation to build coding-focused foundation models.",
+              "source_content_hash": "5b6857fa049ce39e",
+              "quote_hash": "ef7ff4b34073a77d87495ea6544b9baca250ac53e512f870149d0c24feef58b9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Reflection AI",
@@ -344,9 +427,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-338676825311d210",
-              "quote": "Reflection AI raised $130 million in seed funding for autonomous software engineering agents."
+              "quote": "Reflection AI raised $130 million in seed funding for autonomous software engineering agents.",
+              "source_content_hash": "5b6857fa049ce39e",
+              "quote_hash": "67db8523f795d41d6c851de06a5146040056cf96ea1b877d6305072ca517ed56"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -357,7 +443,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b675439a45a13649",
-              "quote": "OpenThoughts, an open reasoning dataset that has been downloaded more than 500,000 times"
+              "quote": "OpenThoughts, an open reasoning dataset that has been downloaded more than 500,000 times",
+              "source_content_hash": "c06a19f9bdff08b6",
+              "quote_hash": "ded7b7cf6139a06f73d2c6acfee15d13158ba19e7ab89750388bc064995e9136"
             }
           ]
         },
@@ -368,7 +456,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Our $8.25 million seed round was led by 8VC"
+              "quote": "Our $8.25 million seed round was led by 8VC",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "7e8323f2f9785c8509f70cc1079513704ab925be9c653ffbfda75796842ec47a"
             }
           ]
         },
@@ -379,7 +469,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1086b3ea3749f22b",
-              "quote": "a $31.75 million Series A led by Wing VC"
+              "quote": "a $31.75 million Series A led by Wing VC",
+              "source_content_hash": "4c5e3e95abc4b920",
+              "quote_hash": "840a2d5d105acb477f2392ab106e6658e43d2c73e41de2bc11f3875db4912fa1"
             }
           ]
         },
@@ -390,7 +482,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-338676825311d210",
-              "quote": "employs roughly 40-48 people"
+              "quote": "employs roughly 40-48 people",
+              "source_content_hash": "5b6857fa049ce39e",
+              "quote_hash": "5d400ee080d97654c64a70315722b6ce58be8b2a6d28c21db8d62198edcb421f"
             }
           ]
         },
@@ -401,7 +495,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "METR's data shows the length of tasks AI agents can complete is roughly doubling every seven months."
+              "quote": "METR's data shows the length of tasks AI agents can complete is roughly doubling every seven months.",
+              "source_content_hash": "0eae2122fce5a05c",
+              "quote_hash": "20330d495e17527c3075222d3b96f231e8f0909402cabc645ded08b487494185"
             }
           ]
         },
@@ -412,7 +508,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-338676825311d210",
-              "quote": "the global AI agents market is projected to grow from $10.9 billion in 2026 to $182.9 billion by 2033"
+              "quote": "the global AI agents market is projected to grow from $10.9 billion in 2026 to $182.9 billion by 2033",
+              "source_content_hash": "5b6857fa049ce39e",
+              "quote_hash": "583770c249a87376e02b963f9dc53578c77567bfc173e817cdfcd05f9df26376"
             }
           ]
         }
@@ -431,7 +529,20 @@
           "“更好的环境”是否能真正超越“更大的模型”仍是一个未解决的问题，如果下一代基础模型显著提升了可靠性，Bespoke Labs的差异化价值可能被削弱。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI基础设施/智能体训练环境"
+        "sector": "AI基础设施/智能体训练环境",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI智能体的可靠性瓶颈不在于模型本身，而在于训练环境的质量和复杂度。本轮融资验证的信号包括：OpenThoughts数据集超过50万次下载并被Meta、Amazon等使用；Terminal-Bench被Anthropic、OpenAI、Google DeepMind采用；以及来自Anthropic、OpenAI、Meta内部人士和Jeff Dean的个人投资，表明前沿实验室内部也认为智能体可靠性是一个需要外部基础设施来解决的结构性问题。",
+          "evidence_signals": [
+            "OpenThoughts数据集下载量超过50万次，被Meta、Amazon、Thinking Machines Lab等使用",
+            "Terminal-Bench被Anthropic、OpenAI、Google DeepMind用于展示前沿模型能力",
+            "来自Anthropic、OpenAI、Meta内部人士的个人天使投资",
+            "Jeff Dean以个人身份参与种子轮投资"
+          ],
+          "risks": [
+            "“更好的环境”是否能真正超越“更大的模型”仍是一个未解决的问题，如果下一代基础模型显著提升了可靠性，Bespoke Labs的差异化价值可能被削弱。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -439,298 +550,154 @@
           "target_kind": "product",
           "research_name": "强化学习环境平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "An environment engine that lets our expert network and our own systems compose realistic, multitool, multistep worlds"
-            },
-            {
-              "source_id": "FISRC-b675439a45a13649",
-              "quote": "designs and builds environments that look and behave like real companies: large codebases, microservices, realistic logs, tickets, email, Slack, and more"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "OpenThoughts",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "OpenThoughts is one of the most impactful open data curation projects of the past year. The open reasoning dataset has been downloaded hundreds of thousands of times"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Terminal-Bench",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Terminal-Bench is a leading agentic coding benchmark, and we're core contributors. Anthropic, OpenAI, and Google DeepMind use this benchmark"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mahesh Sathiamoorthy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "We're excited to announce our Seed and Series A financing rounds to build the world's best frontier data research lab"
-            },
-            {
-              "source_id": "FISRC-338676825311d210",
-              "quote": "Mahesh Sathiamoorthy, co-founder and CEO of Bespoke Labs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alex Dimakis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-338676825311d210",
-              "quote": "Founded in 2024 by Sathiamoorthy and Alex Dimakis"
-            },
-            {
-              "source_id": "FISRC-b675439a45a13649",
-              "quote": "Alex Dimakis, co-founder and Chief Science Officer of Bespoke Labs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Wing VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Our Series A round was led by Wing VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "8VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Our $8.25 million seed round was led by 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mayfield",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "with participation from Mayfield"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "The House Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "with participation from Mayfield, The House Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tristan Handy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "dbt Labs CEO Tristan Handy"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jeff Dean",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "with participation from Jeff Dean"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Spiros Xanthos",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Resolve AI CEO Spiros Xanthos"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Dheeraj Pandey",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "DevRev CEO Dheeraj Pandey"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Angels from Anthropic, OpenAI, and Meta",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "angels from Anthropic, OpenAI, and Meta"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Meta",
           "canonical_entity_id": "EN-ea3bd73e2b506e00",
-          "canonical_name": "Meta",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "has powered work at Meta, Amazon, and AI2"
-            }
-          ]
+          "canonical_name": "Meta"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Amazon",
           "canonical_entity_id": "EN-cbc62794911ff31b",
-          "canonical_name": "Amazon",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "has powered work at Meta, Amazon, and AI2"
-            }
-          ]
+          "canonical_name": "Amazon"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Google DeepMind",
           "canonical_entity_id": "EN-2b6e51bec93e86c1",
-          "canonical_name": "Google DeepMind",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcf489b2ae49f41b",
-              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
-            }
-          ]
+          "canonical_name": "Google DeepMind"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Scale AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-338676825311d210",
-              "quote": "Scale AI, whose $14.3 billion investment from Meta valued it near $29 billion, supplies labelled data rather than interactive training environments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Poolside",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-338676825311d210",
-              "quote": "Poolside raised $500 million at a $3 billion valuation to build coding-focused foundation models."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Reflection AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-338676825311d210",
-              "quote": "Reflection AI raised $130 million in seed funding for autonomous software engineering agents."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -804,13 +771,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-27T10:25:31.285Z"
+      "published_at": "2026-07-27T10:25:31.285Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "OpenThoughts",
+            "Terminal-Bench",
+            "强化学习环境平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Alex Dimakis",
+            "Mahesh Sathiamoorthy"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-fb817fb0a5e63323"
+      ],
+      "aggregation": {
+        "key": "EN-9007bd372bab6334|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-33720a6e75d508b6",
       "triggered_by_event_id": "EV-754e83c2d19005fe",
       "as_of_date": "2026-07-26",
@@ -828,11 +827,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-579585d1555750a8",
-                "quote": "CEO Rafael Quintanilla is a former Accel VP."
+                "quote": "CEO Rafael Quintanilla is a former Accel VP.",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "1da33c8b83888efa8ae69052e8482199f2dffbd48fd89c88c2f2cafa626ed81e"
               },
               {
                 "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a"
               }
             ],
             "entity_id": null
@@ -843,7 +846,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a"
               }
             ],
             "entity_id": null
@@ -854,7 +859,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a"
               }
             ],
             "entity_id": null
@@ -865,7 +872,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a"
               }
             ],
             "entity_id": null
@@ -877,23 +886,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-579585d1555750a8",
-              "quote": "Arrakis is seven months old, has about 15 employees"
+              "quote": "Arrakis is seven months old, has about 15 employees",
+              "source_content_hash": "a18cf74b2ab09093",
+              "quote_hash": "0a1088ce8890508640359619f6da623cbeba2d10b3cf31f1f1bd551ff1ce3d4f"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-579585d1555750a8",
-            "quote": "Arrakis, a London and Paris-based startup, came out of stealth with $38 million to build what it calls an AI layer for the operations of industrial companies, targeting aerospace, energy, logistics and manufacturing."
+            "quote": "Arrakis, a London and Paris-based startup, came out of stealth with $38 million to build what it calls an AI layer for the operations of industrial companies, targeting aerospace, energy, logistics and manufacturing.",
+            "source_content_hash": "a18cf74b2ab09093",
+            "quote_hash": "9e0792ad2cab4b2dfeaa2df4aa4d92b6bbf1d7586951029f41887233d9d88355"
           },
           {
             "source_id": "FISRC-e48cc519bf5982be",
-            "quote": "Arrakis helps industrial companies deploy AI agents into mission-critical operations, tackling the \"last mile\" challenge that prevents most AI projects reaching production."
+            "quote": "Arrakis helps industrial companies deploy AI agents into mission-critical operations, tackling the \"last mile\" challenge that prevents most AI projects reaching production.",
+            "source_content_hash": "c5326009db895271",
+            "quote_hash": "fff3de61b73fb01f2b51bd07ca555685373bf84bf1700eb6937bb8907bb4ab9d"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$38 million",
         "total_raised": "$38 million",
         "announced_at": "2026-07-22",
@@ -904,7 +919,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-579585d1555750a8",
-                "quote": "The funding is a $30 million Series A led by Blossom Capital"
+                "quote": "The funding is a $30 million Series A led by Blossom Capital",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "e1d070db5405f54e1c8f65dbb0550030c769341ac4d67f82ac404ff456d1fb53"
               }
             ],
             "entity_id": null
@@ -915,11 +932,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-579585d1555750a8",
-                "quote": "on top of a $7.5 million seed round led by Accel"
+                "quote": "on top of a $7.5 million seed round led by Accel",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "6c3f47a617593a0225ddc9d9ce625a9256d5ebea115341935a2079f4c09b1af4"
               },
               {
                 "source_id": "FISRC-e48cc519bf5982be",
-                "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
+                "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round",
+                "source_content_hash": "c5326009db895271",
+                "quote_hash": "db7efc87bd0312c1bd55c8774f4fa31b7a39a02fd9ba35210c7b6874ae5e4f3e"
               }
             ],
             "entity_id": null
@@ -930,7 +951,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-579585d1555750a8",
-                "quote": "GFC, MainObject and Rerail also invested"
+                "quote": "GFC, MainObject and Rerail also invested",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "1c914fd7813541195f87924663e6f58c130b48f6f1f21491462402908b698cf0"
               }
             ],
             "entity_id": null
@@ -941,7 +964,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-579585d1555750a8",
-                "quote": "GFC, MainObject and Rerail also invested"
+                "quote": "GFC, MainObject and Rerail also invested",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "1c914fd7813541195f87924663e6f58c130b48f6f1f21491462402908b698cf0"
               }
             ],
             "entity_id": null
@@ -952,40 +977,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-579585d1555750a8",
-                "quote": "GFC, MainObject and Rerail also invested"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Olivier Pomel",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "angels Olivier Pomel, the Datadog CEO"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Olivier Godement",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "Olivier Godement, who runs business products at OpenAI"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Junaid Hussein",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Junaid Hussein, founder of Cambridge Aerospace"
+                "quote": "GFC, MainObject and Rerail also invested",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "1c914fd7813541195f87924663e6f58c130b48f6f1f21491462402908b698cf0"
               }
             ],
             "entity_id": null
@@ -994,7 +988,86 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e48cc519bf5982be",
-            "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million"
+            "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million",
+            "source_content_hash": "c5326009db895271",
+            "quote_hash": "7571312f44940cb7629917662962eb775974fe48e359ef9eabf08fe12fa95457"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Olivier Pomel",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "angels Olivier Pomel, the Datadog CEO",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "03c0064b941f9c82badf64afb50178b49e8761ae2bb1a8e99763741bc66881dd"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Olivier Godement",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "Olivier Godement, who runs business products at OpenAI",
+                "source_content_hash": "a18cf74b2ab09093",
+                "quote_hash": "70be1439c62024246f7d1cf525b010d66c2e9f6ceabf9a2c77361476f00c19e7"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Junaid Hussein",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Junaid Hussein, founder of Cambridge Aerospace",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "7812986ae94193e81194eacd0ecb45f91f7aea7ef210af5d6454ecfe565829a6"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-754e83c2d19005fe",
+            "round_original": "Series A",
+            "amount": "$38 million",
+            "announced_at": "2026-07-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e48cc519bf5982be",
+                "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million",
+                "source_content_hash": "c5326009db895271",
+                "quote_hash": "7571312f44940cb7629917662962eb775974fe48e359ef9eabf08fe12fa95457"
+              }
+            ]
           }
         ]
       },
@@ -1013,11 +1086,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Arrakis does not require companies to replace their existing software. Its AI agents connect to the tools a company already uses, such as ERP systems, data warehouses, and document repositories, and run workflows on top of them."
+              "quote": "Arrakis does not require companies to replace their existing software. Its AI agents connect to the tools a company already uses, such as ERP systems, data warehouses, and document repositories, and run workflows on top of them.",
+              "source_content_hash": "2522b5c4c402c8e8",
+              "quote_hash": "ace4ee6aea7b21c7a69e384cff1d842af6454ea2914017723247643e4f51be74"
             },
             {
               "source_id": "FISRC-857f3ec7b6684e02",
-              "quote": "Arrakis takes a full-stack approach: forward-deployed engineers working as an extension of customers' teams, combined with a model-agnostic, sovereign AI platform and an applied AI team that tunes models on each company's operational corpus."
+              "quote": "Arrakis takes a full-stack approach: forward-deployed engineers working as an extension of customers' teams, combined with a model-agnostic, sovereign AI platform and an applied AI team that tunes models on each company's operational corpus.",
+              "source_content_hash": "41709710488bb5fe",
+              "quote_hash": "359572ef2b39245e03a7d524367aa49692c9589c3309692ed9c4f86ab1fd0792"
             }
           ],
           "entity_id": null
@@ -1031,9 +1108,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-579585d1555750a8",
-              "quote": "In one example, the company says it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
+              "quote": "In one example, the company says it helped a New York-listed shipping company move from monthly to daily cash flow visibility.",
+              "source_content_hash": "a18cf74b2ab09093",
+              "quote_hash": "7f2c1b9dc1caf7b30f6b032849db02cd97c56b3577dd020630b6b98ad2e8ba62"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1045,7 +1125,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-857f3ec7b6684e02",
-              "quote": "a 90% reduction in procurement cycle times"
+              "quote": "a 90% reduction in procurement cycle times",
+              "source_content_hash": "41709710488bb5fe",
+              "quote_hash": "b19c1c9a8b83cd7f13ebb559f96a6311ae50f101b0b837722f2adee1a669a946"
             }
           ]
         },
@@ -1056,7 +1138,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-579585d1555750a8",
-              "quote": "Arrakis is seven months old"
+              "quote": "Arrakis is seven months old",
+              "source_content_hash": "a18cf74b2ab09093",
+              "quote_hash": "c632944b744c01e964780422edddebdc12a71ee80c94ba5bc9bed8f019fc1a51"
             }
           ]
         },
@@ -1067,7 +1151,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-579585d1555750a8",
-              "quote": "has about 15 employees"
+              "quote": "has about 15 employees",
+              "source_content_hash": "a18cf74b2ab09093",
+              "quote_hash": "4d3c24f289730949aeba3d801687c856c722353e0982b691bd4b00115918f1ad"
             }
           ]
         },
@@ -1078,7 +1164,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-579585d1555750a8",
-              "quote": "counts five customers"
+              "quote": "counts five customers",
+              "source_content_hash": "a18cf74b2ab09093",
+              "quote_hash": "922b69b43e99bb175432073ad5ab5840e731190342be9ebfd472f322264a64a8"
             }
           ]
         },
@@ -1089,7 +1177,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-579585d1555750a8",
-              "quote": "The company is valued at $140 million post-money."
+              "quote": "The company is valued at $140 million post-money.",
+              "source_content_hash": "a18cf74b2ab09093",
+              "quote_hash": "ff0d8348625d24ee171ff4758f0c9b6fd0d2a84632c4b7e2ab9441cfb9c86481"
             }
           ]
         }
@@ -1101,7 +1191,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e48cc519bf5982be",
-              "quote": "The West is under growing pressure to reindustrialise, but that renaissance won't be powered by net new companies alone. It requires equipping our industrial champions with the tools to harness their data, navigate the AI transition and compete on a global stage."
+              "quote": "The West is under growing pressure to reindustrialise, but that renaissance won't be powered by net new companies alone. It requires equipping our industrial champions with the tools to harness their data, navigate the AI transition and compete on a global stage.",
+              "source_content_hash": "c5326009db895271",
+              "quote_hash": "84f67e3cba6ae4d16233921d5af5785ae04c7ff95fb4c71732c6148168b9011c"
             }
           ]
         },
@@ -1111,7 +1203,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations."
+              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations.",
+              "source_content_hash": "2522b5c4c402c8e8",
+              "quote_hash": "d94f6cf98612fde036bc909f2752c85a104f21b37866072ed32c5af625ab1799"
             }
           ]
         },
@@ -1121,7 +1215,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company."
+              "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company.",
+              "source_content_hash": "2522b5c4c402c8e8",
+              "quote_hash": "0cef37383b583134d1b8a228aa294277b193488daaa412e4e99d548974911689"
             }
           ]
         }
@@ -1137,7 +1233,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes."
+                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes.",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "6217351f8b8d841618e7a5fa15dca3196b337db2c93e4147b78fc1ce5f119972"
               }
             ]
           },
@@ -1150,7 +1248,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand."
+                "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand.",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "ff4f7162613c84bc6b245e76979e653ce0a89de12605c4ccb3117e2ca3a06e1f"
               }
             ]
           }
@@ -1168,7 +1268,22 @@
           "智能体 AI 依赖快速演进的基础模型，在安全关键环境中任何失误都可能阻碍整个品类的推广。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "工业 AI 与智能体部署"
+        "sector": "工业 AI 与智能体部署",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是工业 AI 落地的“最后一公里”问题：即如何将 AI 智能体可靠地部署到运行着老旧软件和碎片化系统的工业环境中。本轮融资所依赖的已验证信号包括：公司成立仅 7 个月即获得纽约证券交易所上市企业客户，并实现了采购周期缩短 90% 等可量化成果；创始团队兼具 Accel 投资背景与 Palantir、Datadog 等顶尖企业的运营经验。$1.4 亿投后估值反映的是对创始人市场匹配度和早期客户验证的溢价，而非规模化收入的折现。",
+          "evidence_signals": [
+            "已签约包括纽约证券交易所上市企业在内的 5 家企业客户",
+            "客户采购周期时间缩短 90%",
+            "创始人为前 Accel 副总裁，具备工业与国防领域投资经验",
+            "团队来自 Palantir、Datadog、Revolut、ASML 等顶尖企业"
+          ],
+          "risks": [
+            "工业客户销售周期长、采购流程保守，7 个月的公司尚未证明其可复制性。",
+            "面临西门子、通用电气、霍尼韦尔等工业科技巨头自有 AI 项目的竞争压力。",
+            "智能体 AI 依赖快速演进的基础模型，在安全关键环境中任何失误都可能阻碍整个品类的推广。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1176,194 +1291,98 @@
           "target_kind": "product",
           "research_name": "Arrakis AI 部署平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Arrakis does not require companies to replace their existing software. Its AI agents connect to the tools a company already uses, such as ERP systems, data warehouses, and document repositories, and run workflows on top of them."
-            },
-            {
-              "source_id": "FISRC-857f3ec7b6684e02",
-              "quote": "Arrakis takes a full-stack approach: forward-deployed engineers working as an extension of customers' teams, combined with a model-agnostic, sovereign AI platform and an applied AI team that tunes models on each company's operational corpus."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rafael Quintanilla",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "CEO Rafael Quintanilla is a former Accel VP."
-            },
-            {
-              "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Haroun Beltaifa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Romain Fouilland",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mikhail Galkov",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blossom Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "The funding is a $30 million Series A led by Blossom Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "on top of a $7.5 million seed round led by Accel"
-            },
-            {
-              "source_id": "FISRC-e48cc519bf5982be",
-              "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GFC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "GFC, MainObject and Rerail also invested"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MainObject",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "GFC, MainObject and Rerail also invested"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Rerail",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "GFC, MainObject and Rerail also invested"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Olivier Pomel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "angels Olivier Pomel, the Datadog CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Olivier Godement",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Olivier Godement, who runs business products at OpenAI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Junaid Hussein",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Junaid Hussein, founder of Cambridge Aerospace"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家纽约证券交易所上市的航运公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "In one example, the company says it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1439,13 +1458,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-27T10:24:23.609Z"
+      "published_at": "2026-07-27T10:24:23.609Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Arrakis AI 部署平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Haroun Beltaifa",
+            "Mikhail Galkov",
+            "Rafael Quintanilla",
+            "Romain Fouilland"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-754e83c2d19005fe"
+      ],
+      "aggregation": {
+        "key": "EN-834cc12fc35adde7|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9c764b3afbbe409f",
       "triggered_by_event_id": "EV-fcf3c464260b6730",
       "as_of_date": "2026-07-26",
@@ -1463,7 +1514,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "said Puneet Puri, CEO and co-founder of Gritt"
+                "quote": "said Puneet Puri, CEO and co-founder of Gritt",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "941534c6e76b82aa07cd7717eaf9bca49bb46ff9577598840ba7a80d52565156"
               }
             ],
             "entity_id": null
@@ -1474,7 +1527,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "said Vishal Dugar, CTO and co-founder at Gritt"
+                "quote": "said Vishal Dugar, CTO and co-founder at Gritt",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "d7b82cc37ba5e14c32d52e87def3898db76536f4b6678f3d26ff4a86fe448133"
               }
             ],
             "entity_id": null
@@ -1488,16 +1543,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e5ce259c107507e9",
-            "quote": "Gritt , the company building an intelligent system combining robotics and AI to accelerate the world’s infrastructure buildout"
+            "quote": "Gritt , the company building an intelligent system combining robotics and AI to accelerate the world’s infrastructure buildout",
+            "source_content_hash": "6af714d5b7bb5158",
+            "quote_hash": "38cd1a41df1df59799730f3a7da3d7d8ad76016400fc0862a90b92e5aba18298"
           },
           {
             "source_id": "FISRC-e5ce259c107507e9",
-            "quote": "SAN FRANCISCO July 21, 2026"
+            "quote": "SAN FRANCISCO July 21, 2026",
+            "source_content_hash": "6af714d5b7bb5158",
+            "quote_hash": "cb806fc4d17e77007674c952e4c33f1f808f975da7c87bfd12881ad063a1cd08"
           }
         ]
       },
       "financing": {
-        "round": "pre-seed and Series A",
+        "round": "多轮融资",
         "amount": "$32.4M",
         "total_raised": "$32.4M",
         "announced_at": "2026-07-21",
@@ -1508,7 +1567,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "The $26M Series A was led by Obvious Ventures"
+                "quote": "The $26M Series A was led by Obvious Ventures",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "81086e63d2babaf8c0f0a35a849c4486d7ac5cf61163a0a63cb359b8b6a12a05"
               }
             ],
             "entity_id": null
@@ -1519,7 +1580,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "with participation from Union Square Ventures"
+                "quote": "with participation from Union Square Ventures",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "270a616f6cefd09f4198c2a353dd251ce4b68b678ea5724ceea38026e8b519e7"
               }
             ],
             "entity_id": null
@@ -1530,51 +1593,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "with participation from Union Square Ventures and Active Impact Investments"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "First Round Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "support from previous investors First Round Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Climactic",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "support from previous investors First Round Capital, Climactic"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Congruent Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "support from previous investors First Round Capital, Climactic, Congruent Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "VSC Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "support from previous investors First Round Capital, Climactic, Congruent Ventures, and VSC Ventures"
+                "quote": "with participation from Union Square Ventures and Active Impact Investments",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "4109f5add97a3833f94113a1a1bae808679ecafe980337ec572ccdaf5c63ecec"
               }
             ],
             "entity_id": null
@@ -1583,7 +1604,105 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e5ce259c107507e9",
-            "quote": "launched today with $32.4M in pre-seed and Series A funding. The $26M Series A was led by Obvious Ventures, with participation from Union Square Ventures and Active Impact Investments, and support from previous investors First Round Capital, Climactic, Congruent Ventures, and VSC Ventures."
+            "quote": "launched today with $32.4M in pre-seed and Series A funding. The $26M Series A was led by Obvious Ventures, with participation from Union Square Ventures and Active Impact Investments, and support from previous investors First Round Capital, Climactic, Congruent Ventures, and VSC Ventures.",
+            "source_content_hash": "6af714d5b7bb5158",
+            "quote_hash": "6f2f511d2d7b021dbc8242fb576b458e7b49eb53d5c068bcff9f0b73fb719d1a"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "pre-seed and Series A",
+        "other_round_investors": [
+          {
+            "name": "First Round Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5ce259c107507e9",
+                "quote": "support from previous investors First Round Capital",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "91e74913d55d149989100f9a52e220a02499003f52b00783d3c8cbab90e514ce"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Climactic",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5ce259c107507e9",
+                "quote": "support from previous investors First Round Capital, Climactic",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "1cddf5416a0e6f19cc63f696be0db3ad003fbe6e8648f2cde80d911e349baad2"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Congruent Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5ce259c107507e9",
+                "quote": "support from previous investors First Round Capital, Climactic, Congruent Ventures",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "2532b0e42996315c1b003f687a7cd737ce25ee1e60b434e9436de1d99dc5103d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "VSC Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5ce259c107507e9",
+                "quote": "support from previous investors First Round Capital, Climactic, Congruent Ventures, and VSC Ventures",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "75fc7809c93eefc87fb3d1d838cd1c26084926d1309303f426a4b2eda3ec3232"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-fcf3c464260b6730",
+            "round_original": "pre-seed and Series A",
+            "amount": "$32.4M",
+            "announced_at": "2026-07-21",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e5ce259c107507e9",
+                "quote": "launched today with $32.4M in pre-seed and Series A funding. The $26M Series A was led by Obvious Ventures, with participation from Union Square Ventures and Active Impact Investments, and support from previous investors First Round Capital, Climactic, Congruent Ventures, and VSC Ventures.",
+                "source_content_hash": "6af714d5b7bb5158",
+                "quote_hash": "6f2f511d2d7b021dbc8242fb576b458e7b49eb53d5c068bcff9f0b73fb719d1a"
+              }
+            ]
           }
         ]
       },
@@ -1602,15 +1721,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "Gritt’s robotic arms and AI connect to existing jobsite equipment, such as skid steers and forklifts, enabling the system to pick and place, assemble, and transport materials with millimeter precision in ever-changing environments."
+              "quote": "Gritt’s robotic arms and AI connect to existing jobsite equipment, such as skid steers and forklifts, enabling the system to pick and place, assemble, and transport materials with millimeter precision in ever-changing environments.",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "f0ae1f14ffd287c31ce1f1b595e726194ffea4536d7b5f36ac59f3238448c83e"
             },
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "Gritt’s system learns quickly from every deployment and is highly adaptable, so a task that took months to train the first time now only takes days."
+              "quote": "Gritt’s system learns quickly from every deployment and is highly adaptable, so a task that took months to train the first time now only takes days.",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "dad374253eedd4033fcc889a540089b974cbc5f367f67e845fd6cf1521a7fcb4"
             },
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "By deploying its machines across large-scale construction sites, Gritt can capture and process real-time data on completed work, material movement, and site conditions, using its intelligence to help supervisors make better decisions."
+              "quote": "By deploying its machines across large-scale construction sites, Gritt can capture and process real-time data on completed work, material movement, and site conditions, using its intelligence to help supervisors make better decisions.",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "ef6c6522c42644158f6c56a385b28222fa1bb731b0e50c2b81d65fc6f36c8dcf"
             }
           ],
           "entity_id": null
@@ -1624,13 +1749,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "its machines are already on real sites, trusted by top 10 U.S. construction companies, including those building massive solar farms."
+              "quote": "its machines are already on real sites, trusted by top 10 U.S. construction companies, including those building massive solar farms.",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "632ea324c19f3ec452fd436987e2cc954a55e298a86064e66ed49042f1da0d3f"
             },
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "This has enabled the autonomous placement of tens of thousands of solar panels with zero breakages."
+              "quote": "This has enabled the autonomous placement of tens of thousands of solar panels with zero breakages.",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "7ad1e4113287dc6640989d6fc4b09255638f43795d2cee794be37e519fbef6af"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1644,9 +1774,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f613c13e331e88d2",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt",
+              "source_content_hash": "2fd26d4117d0f721",
+              "quote_hash": "be8a34eb104b9541686f1979df9cd3a81dfe1693bf649909c337a7ba76691336"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cosmic",
@@ -1658,9 +1791,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f613c13e331e88d2",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt",
+              "source_content_hash": "2fd26d4117d0f721",
+              "quote_hash": "be8a34eb104b9541686f1979df9cd3a81dfe1693bf649909c337a7ba76691336"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Trinabot",
@@ -1672,9 +1808,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f613c13e331e88d2",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt",
+              "source_content_hash": "2fd26d4117d0f721",
+              "quote_hash": "be8a34eb104b9541686f1979df9cd3a81dfe1693bf649909c337a7ba76691336"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1685,7 +1824,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2033b513110bbf93",
-              "quote": "currently contracted for another 2.8 gigawatts with leading US contractors"
+              "quote": "currently contracted for another 2.8 gigawatts with leading US contractors",
+              "source_content_hash": "38c026a8aec84e52",
+              "quote_hash": "49518e2a4f564fc328cde9c99e7838ea3a912373ee97a378200fd1cf19d528ca"
             }
           ]
         },
@@ -1696,7 +1837,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "the autonomous placement of tens of thousands of solar panels with zero breakages"
+              "quote": "the autonomous placement of tens of thousands of solar panels with zero breakages",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "54af0d28782f5714d1baef67fc3a761f0b5368232180967590bf285be24dc2d1"
             }
           ]
         },
@@ -1707,7 +1850,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "More than 41% of the U.S. construction workforce is expected to retire by 2031"
+              "quote": "More than 41% of the U.S. construction workforce is expected to retire by 2031",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "f9a3d46720b4c9ebd07207424833aecf6675b692c8336cb38857b24d4772a3dd"
             }
           ]
         },
@@ -1718,7 +1863,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "construction has experienced a 46% decline in productivity"
+              "quote": "construction has experienced a 46% decline in productivity",
+              "source_content_hash": "6af714d5b7bb5158",
+              "quote_hash": "c8b800c08aa64fe4ce52cbe13f947e41b6420fb8d00272f50356c6fae38b5638"
             }
           ]
         }
@@ -1735,7 +1882,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2033b513110bbf93",
-                "quote": "We are excited to announce our investment in Gritt , which is pursuing the infrastructure robotics challenge, starting with the build-out of grid-scale solar arrays. Gritt has already deployed their robots in the construction of tens of megawatts (a number that grows by the day) and is currently contracted for another 2.8 gigawatts with leading US contractors."
+                "quote": "We are excited to announce our investment in Gritt , which is pursuing the infrastructure robotics challenge, starting with the build-out of grid-scale solar arrays. Gritt has already deployed their robots in the construction of tens of megawatts (a number that grows by the day) and is currently contracted for another 2.8 gigawatts with leading US contractors.",
+                "source_content_hash": "38c026a8aec84e52",
+                "quote_hash": "dcf8d179e3a792fcb71be702a40908f1c215e84d83949c625addffe0f1dd7178"
               }
             ]
           }
@@ -1753,7 +1902,22 @@
           "建筑行业周期性波动大，客户资本开支受宏观经济和政策影响显著，可能影响规模化部署节奏。"
         ],
         "related_direction_id": "",
-        "sector": "物理AI与建筑机器人"
+        "sector": "物理AI与建筑机器人",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Gritt 能否在户外非结构化环境中实现物理 AI 的快速泛化，并通过数据飞轮建立竞争壁垒。本轮融资的已验证信号包括：已在美国前十大建筑公司的实际工地部署，自主安装数万块太阳能电池板且零破损，签约 2.8 吉瓦太阳能安装合同，以及系统训练时间从数月缩短至数天。这些信号表明 Gritt 的技术已跨越从实验室到真实工地的鸿沟，且具备规模化复制的初步证据。但判断的证据边界仍局限于太阳能安装这一单一场景，尚未验证向其他基础设施任务（如钢筋绑扎、数据中-心建设）扩展的能力。",
+          "evidence_signals": [
+            "已在美国前十大建筑公司的实际工地部署，包括大型太阳能电站建设",
+            "自主安装数万块太阳能电池板且零破损",
+            "已签约 2.8 吉瓦太阳能安装合同",
+            "系统训练时间从数月缩短至数天，显示 AI 泛化能力"
+          ],
+          "risks": [
+            "当前验证场景集中于太阳能电池板安装，向其他基础设施任务（如桥梁、数据中心、道路）扩展的技术可行性和经济性尚未被证实。",
+            "采用现成硬件而非自研机器人，可能在长期面临供应链依赖和硬件差异化不足的风险。",
+            "建筑行业周期性波动大，客户资本开支受宏观经济和政策影响显著，可能影响规模化部署节奏。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1761,194 +1925,98 @@
           "target_kind": "product",
           "research_name": "Gritt intelligent system",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "Gritt’s robotic arms and AI connect to existing jobsite equipment, such as skid steers and forklifts, enabling the system to pick and place, assemble, and transport materials with millimeter precision in ever-changing environments."
-            },
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "Gritt’s system learns quickly from every deployment and is highly adaptable, so a task that took months to train the first time now only takes days."
-            },
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "By deploying its machines across large-scale construction sites, Gritt can capture and process real-time data on completed work, material movement, and site conditions, using its intelligence to help supervisors make better decisions."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Puneet Puri",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "said Puneet Puri, CEO and co-founder of Gritt"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Vishal Dugar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "said Vishal Dugar, CTO and co-founder at Gritt"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Obvious Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "The $26M Series A was led by Obvious Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Union Square Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "with participation from Union Square Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Active Impact Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "with participation from Union Square Ventures and Active Impact Investments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "First Round Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "support from previous investors First Round Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Climactic",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "support from previous investors First Round Capital, Climactic"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Congruent Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "support from previous investors First Round Capital, Climactic, Congruent Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "VSC Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "support from previous investors First Round Capital, Climactic, Congruent Ventures, and VSC Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "top 10 U.S. construction companies",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "its machines are already on real sites, trusted by top 10 U.S. construction companies, including those building massive solar farms."
-            },
-            {
-              "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "This has enabled the autonomous placement of tens of thousands of solar panels with zero breakages."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Luminous Robotics",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f613c13e331e88d2",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cosmic",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f613c13e331e88d2",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Trinabot",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f613c13e331e88d2",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2010,13 +2078,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T08:38:16.737Z"
+      "published_at": "2026-07-26T08:38:16.737Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Gritt intelligent system"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Puneet Puri",
+            "Vishal Dugar"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-fcf3c464260b6730"
+      ],
+      "aggregation": {
+        "key": "EN-7ef08ef63597d47c|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-01fcf93131eb921c",
       "triggered_by_event_id": "EV-3fb827f44ea109de",
       "as_of_date": "2026-07-26",
@@ -2034,7 +2132,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c3047d162f9931f",
-                "quote": "Founder and CEO Stephen Haney built Paper around agent-native workflows"
+                "quote": "Founder and CEO Stephen Haney built Paper around agent-native workflows",
+                "source_content_hash": "527b8f798f6a48e3",
+                "quote_hash": "643766ac2b4d7b303511d05ec5dce62fbf7c59d5cec433472c68e6db060cb75e"
               }
             ],
             "entity_id": null
@@ -2048,16 +2148,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1c3047d162f9931f",
-            "quote": "Paper, a San Francisco design platform built for teams shipping software alongside AI coding agents"
+            "quote": "Paper, a San Francisco design platform built for teams shipping software alongside AI coding agents",
+            "source_content_hash": "527b8f798f6a48e3",
+            "quote_hash": "363caa66d14c5dee798fb5647e851616682369f2eb862d4a317aa2b14ec4e6e6"
           },
           {
             "source_id": "FISRC-5ee1d4324588b6e4",
-            "quote": "Paper is the design platform for the agentic era. Founded by Stephen Haney, Paper is built for teams shipping software with AI and coding agents"
+            "quote": "Paper is the design platform for the agentic era. Founded by Stephen Haney, Paper is built for teams shipping software with AI and coding agents",
+            "source_content_hash": "e9164b97cb878f6a",
+            "quote_hash": "bf0dfafe793da5d365c4fe735e4f0a1e8275020cfb7719c4ae2e2058ee1f6313"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$34 million",
         "total_raised": "",
         "announced_at": "2026-07-23",
@@ -2068,7 +2172,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c3047d162f9931f",
-                "quote": "raised a $34 million Series A led by Accel and ICONIQ"
+                "quote": "raised a $34 million Series A led by Accel and ICONIQ",
+                "source_content_hash": "527b8f798f6a48e3",
+                "quote_hash": "87557f09c601a5954a16acad7e5ced2ca8883fd52361fa2f59667fd55b705ffa"
               }
             ],
             "entity_id": null
@@ -2079,7 +2185,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c3047d162f9931f",
-                "quote": "raised a $34 million Series A led by Accel and ICONIQ"
+                "quote": "raised a $34 million Series A led by Accel and ICONIQ",
+                "source_content_hash": "527b8f798f6a48e3",
+                "quote_hash": "87557f09c601a5954a16acad7e5ced2ca8883fd52361fa2f59667fd55b705ffa"
               }
             ],
             "entity_id": null
@@ -2090,7 +2198,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c3047d162f9931f",
-                "quote": "with participation from Designer Fund"
+                "quote": "with participation from Designer Fund",
+                "source_content_hash": "527b8f798f6a48e3",
+                "quote_hash": "872db1abd958652e90b9cbf22eecb40679d5d7d04961209b9cd782d331057563"
               }
             ],
             "entity_id": null
@@ -2101,7 +2211,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c3047d162f9931f",
-                "quote": "WorkOS co-founder Michael Grinich"
+                "quote": "WorkOS co-founder Michael Grinich",
+                "source_content_hash": "527b8f798f6a48e3",
+                "quote_hash": "4bbf9afeb5d61e1a9839aeaf7d92ffc05df9a973229ffd35284a57267e126f0b"
               }
             ],
             "entity_id": null
@@ -2112,7 +2224,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c3047d162f9931f",
-                "quote": "Lovable co-founder Anton Osika"
+                "quote": "Lovable co-founder Anton Osika",
+                "source_content_hash": "527b8f798f6a48e3",
+                "quote_hash": "1b5508ef0e19987f4afab25dd847d9d2539a1035f39fbe86e2e9fee4b8d674ff"
               }
             ],
             "entity_id": null
@@ -2121,11 +2235,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1c3047d162f9931f",
-            "quote": "Paper, a San Francisco design platform built for teams shipping software alongside AI coding agents, raised a $34 million Series A led by Accel and ICONIQ, with participation from Designer Fund, WorkOS co-founder Michael Grinich and Lovable co-founder Anton Osika"
+            "quote": "Paper, a San Francisco design platform built for teams shipping software alongside AI coding agents, raised a $34 million Series A led by Accel and ICONIQ, with participation from Designer Fund, WorkOS co-founder Michael Grinich and Lovable co-founder Anton Osika",
+            "source_content_hash": "527b8f798f6a48e3",
+            "quote_hash": "164670327ab4254a28f0452d8f3b526af7693fb9a4c4ba68ef181b24b9de36f1"
           },
           {
             "source_id": "FISRC-5ee1d4324588b6e4",
-            "quote": "Paper, the design platform for the agentic era, today announced its $34 million Series A with Accel and ICONIQ. Investors participating include Designer Fund, Michael Grinich (WorkOS), Anton Osika (Lovable), and engineers and designers from Anthropic and OpenAI."
+            "quote": "Paper, the design platform for the agentic era, today announced its $34 million Series A with Accel and ICONIQ. Investors participating include Designer Fund, Michael Grinich (WorkOS), Anton Osika (Lovable), and engineers and designers from Anthropic and OpenAI.",
+            "source_content_hash": "e9164b97cb878f6a",
+            "quote_hash": "dddcd2671855a47c0b5e2daf5b9450e47d478b3b09712f5246946e99643a1c5e"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3fb827f44ea109de",
+            "round_original": "Series A",
+            "amount": "$34 million",
+            "announced_at": "2026-07-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c3047d162f9931f",
+                "quote": "Paper, a San Francisco design platform built for teams shipping software alongside AI coding agents, raised a $34 million Series A led by Accel and ICONIQ, with participation from Designer Fund, WorkOS co-founder Michael Grinich and Lovable co-founder Anton Osika",
+                "source_content_hash": "527b8f798f6a48e3",
+                "quote_hash": "164670327ab4254a28f0452d8f3b526af7693fb9a4c4ba68ef181b24b9de36f1"
+              },
+              {
+                "source_id": "FISRC-5ee1d4324588b6e4",
+                "quote": "Paper, the design platform for the agentic era, today announced its $34 million Series A with Accel and ICONIQ. Investors participating include Designer Fund, Michael Grinich (WorkOS), Anton Osika (Lovable), and engineers and designers from Anthropic and OpenAI.",
+                "source_content_hash": "e9164b97cb878f6a",
+                "quote_hash": "dddcd2671855a47c0b5e2daf5b9450e47d478b3b09712f5246946e99643a1c5e"
+              }
+            ]
           }
         ]
       },
@@ -2144,23 +2287,33 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS, enabling designs to connect directly with production code and the agents increasingly responsible for creating it."
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS, enabling designs to connect directly with production code and the agents increasingly responsible for creating it.",
+              "source_content_hash": "e9164b97cb878f6a",
+              "quote_hash": "091c76b5793faad1a2f7fdaec248b05b59ba685d7cda3d34863f27adb3d113ac"
             },
             {
               "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "Paper's design environment is built to work natively alongside agentic coding workflows rather than assuming a purely human-to-human pipeline."
+              "quote": "Paper's design environment is built to work natively alongside agentic coding workflows rather than assuming a purely human-to-human pipeline.",
+              "source_content_hash": "527b8f798f6a48e3",
+              "quote_hash": "f2b6eddaba894e802fd1a46603c43a029cff4198440768bb5788ee5b18c67ea8"
             },
             {
               "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "The company has rapidly accelerated since the early 2026 launch of Paper Desktop, which turns the design canvas into a shared workspace for humans and AI agents, bridging design, code, and data in real time."
+              "quote": "The company has rapidly accelerated since the early 2026 launch of Paper Desktop, which turns the design canvas into a shared workspace for humans and AI agents, bridging design, code, and data in real time.",
+              "source_content_hash": "e9164b97cb878f6a",
+              "quote_hash": "89cfcafd7f0cb0314a80fbcddff0c1c85e30c77c2149cb9a0d40aaf6ae8285c3"
             },
             {
               "source_id": "FISRC-9fd5a7f147dd199d",
-              "quote": "Users can engage with Paper in its native canvas or via their preferred terminal or terminal emulator."
+              "quote": "Users can engage with Paper in its native canvas or via their preferred terminal or terminal emulator.",
+              "source_content_hash": "50f8239c9f3cd3ed",
+              "quote_hash": "2bf11d9332194ec4d3a7ccf8dfd8194a3f5de2f655598ecb55b2515d91e1554f"
             },
             {
               "source_id": "FISRC-3134339a0e7f4fa5",
-              "quote": "That moment: the Paper MCP server launch."
+              "quote": "That moment: the Paper MCP server launch.",
+              "source_content_hash": "2009003ef81a219d",
+              "quote_hash": "2f5c4644d368eb831cbc83a977d4e44e63bbdccb6243e74102a0eb52a4e3203c"
             }
           ],
           "entity_id": null
@@ -2174,9 +2327,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "The company's early customer list already includes Ramp"
+              "quote": "The company's early customer list already includes Ramp",
+              "source_content_hash": "527b8f798f6a48e3",
+              "quote_hash": "c5e8f224fb524b56d21340d6afb4cda80d3b46e77c42e17feefce0decdb07b60"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2190,13 +2346,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "Paper has maybe 18 months before Figma or the coding-agent platforms themselves decide this feature belongs natively in their own product."
+              "quote": "Paper has maybe 18 months before Figma or the coding-agent platforms themselves decide this feature belongs natively in their own product.",
+              "source_content_hash": "527b8f798f6a48e3",
+              "quote_hash": "54a34b08d89bccc0d0af5ab2c84e1b7f52ef1c4debb04601c1c29d6842698298"
             },
             {
               "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS"
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS",
+              "source_content_hash": "e9164b97cb878f6a",
+              "quote_hash": "18861675e3d774cf1dcdad78d4c2de165dbe06be2357c484e009e03c96414695"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Framer",
@@ -2208,9 +2369,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "if Figma, Framer or the coding-agent platforms themselves build comparable agent-native design capability directly, Paper's differentiation narrows quickly."
+              "quote": "if Figma, Framer or the coding-agent platforms themselves build comparable agent-native design capability directly, Paper's differentiation narrows quickly.",
+              "source_content_hash": "527b8f798f6a48e3",
+              "quote_hash": "690af1f8a3c0dc26f56c1e0d6ccdd27ab9aed1cda20a747537d656c558274e0c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2221,7 +2385,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "Paper has grown ARR 25x since launch"
+              "quote": "Paper has grown ARR 25x since launch",
+              "source_content_hash": "e9164b97cb878f6a",
+              "quote_hash": "770eeae53f073c22d73381f5ee5b83ac2a525afa5f6edfb34cdaa3618551d7f0"
             }
           ]
         },
@@ -2232,7 +2398,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "has appeared on Ramp's Fastest Growing Companies list for four consecutive months"
+              "quote": "has appeared on Ramp's Fastest Growing Companies list for four consecutive months",
+              "source_content_hash": "e9164b97cb878f6a",
+              "quote_hash": "69c02155b76eccb088495b485450fa05db22498ce77e8c8a1c9e32629e8bfa85"
             }
           ]
         }
@@ -2244,7 +2412,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper"
+              "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper",
+              "source_content_hash": "e9164b97cb878f6a",
+              "quote_hash": "07ba2a401f057e6e4c3928e42f19ba8754fa3a212269ace0a43ed727c40cc479"
             }
           ]
         }
@@ -2260,7 +2430,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5ee1d4324588b6e4",
-                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare."
+                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare.",
+                "source_content_hash": "e9164b97cb878f6a",
+                "quote_hash": "37219fb2e5eb080a117e976bf48e7e8318d178dd5b600bef5603e5efc1006fe3"
               }
             ]
           },
@@ -2273,7 +2445,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3134339a0e7f4fa5",
-                "quote": "That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth."
+                "quote": "That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth.",
+                "source_content_hash": "2009003ef81a219d",
+                "quote_hash": "4094667039543877332f66dc61e683fc9db8538084c6238d56ef68ab05acd0ae"
               }
             ]
           }
@@ -2289,7 +2463,20 @@
           "平台风险：如果 Figma、Framer 或编码智能体平台自身直接构建类似的智能体原生设计功能，Paper 的差异化将迅速缩小，来源估计窗口期可能只有 18 个月。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 原生设计工具 / 开发者工具"
+        "sector": "AI 原生设计工具 / 开发者工具",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：随着 AI 编程智能体（如 Claude Code、Codex）成为软件开发的主流力量，传统“人类设计师-人类工程师”的线性交接流程将被打破，设计工具本身需要重构为智能体原生。Paper 的融资依赖于以下已验证信号：1) 早期客户名单包含 Ramp、Vercel、Lovable 等 AI 原生工程组织，表明产品在高质量团队中已获得真实采用；2) ARR 自 Paper Desktop 发布以来增长 25 倍，并连续四个月登上 Ramp 增长最快公司榜单，验证了付费转化和增长势头；3) Anthropic 和 OpenAI 的工程师与设计师以个人天使身份参投，表明构建底层编码智能体的人认为其周边的设计层仍是一个开放且有价值的问题，而非实验室自身会轻易吸收的功能。这些信号共同指向一个判断：在 AI 编码智能体与下一代设计工具的交叉点上，存在一个尚未被充分占领的品类机会。但证据边界同样明确：该判断的有效性高度依赖于 Paper 能否在 Figma 或编码智能体平台自身构建同类功能之前（约 18 个月窗口期）建立起足够的护城河。",
+          "evidence_signals": [
+            "早期客户包括 Ramp、Lovable、Vercel、PostHog、Quartr 和 Y Combinator，均为 AI 原生工程组织",
+            "ARR 自 Paper Desktop 发布以来增长 25 倍",
+            "连续四个月登上 Ramp 增长最快公司榜单",
+            "Anthropic 和 OpenAI 的工程师与设计师以个人天使身份参投，表明内部人士对智能体原生设计理念的真实信心"
+          ],
+          "risks": [
+            "平台风险：如果 Figma、Framer 或编码智能体平台自身直接构建类似的智能体原生设计功能，Paper 的差异化将迅速缩小，来源估计窗口期可能只有 18 个月。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2297,150 +2484,70 @@
           "target_kind": "product",
           "research_name": "Paper",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS, enabling designs to connect directly with production code and the agents increasingly responsible for creating it."
-            },
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "Paper's design environment is built to work natively alongside agentic coding workflows rather than assuming a purely human-to-human pipeline."
-            },
-            {
-              "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "The company has rapidly accelerated since the early 2026 launch of Paper Desktop, which turns the design canvas into a shared workspace for humans and AI agents, bridging design, code, and data in real time."
-            },
-            {
-              "source_id": "FISRC-9fd5a7f147dd199d",
-              "quote": "Users can engage with Paper in its native canvas or via their preferred terminal or terminal emulator."
-            },
-            {
-              "source_id": "FISRC-3134339a0e7f4fa5",
-              "quote": "That moment: the Paper MCP server launch."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Stephen Haney",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "Founder and CEO Stephen Haney built Paper around agent-native workflows"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "raised a $34 million Series A led by Accel and ICONIQ"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "ICONIQ",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "raised a $34 million Series A led by Accel and ICONIQ"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Designer Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "with participation from Designer Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Michael Grinich",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "WorkOS co-founder Michael Grinich"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Anton Osika",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "Lovable co-founder Anton Osika"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Ramp",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "The company's early customer list already includes Ramp"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Figma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "Paper has maybe 18 months before Figma or the coding-agent platforms themselves decide this feature belongs natively in their own product."
-            },
-            {
-              "source_id": "FISRC-5ee1d4324588b6e4",
-              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Framer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c3047d162f9931f",
-              "quote": "if Figma, Framer or the coding-agent platforms themselves build comparable agent-native design capability directly, Paper's differentiation narrows quickly."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2524,10 +2631,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T08:22:29.235Z"
+      "published_at": "2026-07-26T08:22:29.235Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Paper"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Stephen Haney"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3fb827f44ea109de"
+      ],
+      "aggregation": {
+        "key": "EN-382635c9325bf327|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

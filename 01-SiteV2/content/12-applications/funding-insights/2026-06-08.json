@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-08",
     "generated_at": "2026-07-27T05:14:26.820Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 4,
       "auto_published": 3,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-1c8cdad540bbac47",
       "triggered_by_event_id": "EV-e8d1de5c77f32b9c",
       "as_of_date": "2026-06-08",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4c5668270b4cb456",
-                "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO."
+                "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO.",
+                "source_content_hash": "d4c067cbdae72c67",
+                "quote_hash": "fc74e42171777efffbab5495aae890f7cce0e1f322b0c93e5811c034140d7ac8"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4c5668270b4cb456",
-                "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO."
+                "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO.",
+                "source_content_hash": "d4c067cbdae72c67",
+                "quote_hash": "fc74e42171777efffbab5495aae890f7cce0e1f322b0c93e5811c034140d7ac8"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4c5668270b4cb456",
-                "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO."
+                "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO.",
+                "source_content_hash": "d4c067cbdae72c67",
+                "quote_hash": "fc74e42171777efffbab5495aae890f7cce0e1f322b0c93e5811c034140d7ac8"
               }
             ],
             "entity_id": null
@@ -71,11 +78,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-cde1ec652771f171",
-            "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI"
+            "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+            "source_content_hash": "facb0c84a664f360",
+            "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
           },
           {
             "source_id": "FISRC-4c5668270b4cb456",
-            "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences."
+            "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+            "source_content_hash": "d4c067cbdae72c67",
+            "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
           }
         ]
       },
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9c4c0f115d1f38be",
-                "quote": "The round was led by Novera Ventures"
+                "quote": "The round was led by Novera Ventures",
+                "source_content_hash": "941bad55959a928e",
+                "quote_hash": "7f0b087f1ffa4de2df1d6e17360a61a5f3a7b882e29934b3d474adab53b12ad2"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9c4c0f115d1f38be",
-                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
+                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
+                "source_content_hash": "941bad55959a928e",
+                "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9c4c0f115d1f38be",
-                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
+                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
+                "source_content_hash": "941bad55959a928e",
+                "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
               }
             ],
             "entity_id": null
@@ -124,7 +141,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9c4c0f115d1f38be",
-                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
+                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
+                "source_content_hash": "941bad55959a928e",
+                "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
               }
             ],
             "entity_id": null
@@ -135,7 +154,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9c4c0f115d1f38be",
-                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
+                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
+                "source_content_hash": "941bad55959a928e",
+                "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
               }
             ],
             "entity_id": null
@@ -146,7 +167,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4c5668270b4cb456",
-                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners"
+                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners",
+                "source_content_hash": "d4c067cbdae72c67",
+                "quote_hash": "4776f530dc2b58ec2e3e8e4ea8b2e0fcafc9e2b62c79a44db8bd79ad1666a651"
               }
             ],
             "entity_id": null
@@ -157,7 +180,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4c5668270b4cb456",
-                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners"
+                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners",
+                "source_content_hash": "d4c067cbdae72c67",
+                "quote_hash": "4776f530dc2b58ec2e3e8e4ea8b2e0fcafc9e2b62c79a44db8bd79ad1666a651"
               }
             ],
             "entity_id": null
@@ -168,7 +193,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4c5668270b4cb456",
-                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners (the investment fund affiliated with the owners of the San Francisco 49ers and other strategic LPs)"
+                "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners (the investment fund affiliated with the owners of the San Francisco 49ers and other strategic LPs)",
+                "source_content_hash": "d4c067cbdae72c67",
+                "quote_hash": "cee16d1293faa5baa2088f36afef472295f580e202994a6dbc9d7fd4beffcb63"
               }
             ],
             "entity_id": null
@@ -177,11 +204,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9c4c0f115d1f38be",
-            "quote": "Graphon AI, which emerged from stealth on Wednesday with $8.3 million in seed funding"
+            "quote": "Graphon AI, which emerged from stealth on Wednesday with $8.3 million in seed funding",
+            "source_content_hash": "941bad55959a928e",
+            "quote_hash": "19e06eeda9f3d31d8a337ef9942d70ae46814412624a31dd31243152ac9b82cc"
           },
           {
             "source_id": "FISRC-4c5668270b4cb456",
-            "quote": "The company has secured $8.3M in seed funding led by Arvind Gupta of Novera Ventures, with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners."
+            "quote": "The company has secured $8.3M in seed funding led by Arvind Gupta of Novera Ventures, with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners.",
+            "source_content_hash": "d4c067cbdae72c67",
+            "quote_hash": "f4201310a38ebf950b68ab9848fd61aa0f5cf64125ce8a5a2adb5caba4376ab1"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e8d1de5c77f32b9c",
+            "round_original": "种子轮",
+            "amount": "$8.3 million",
+            "announced_at": "2026-05-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9c4c0f115d1f38be",
+                "quote": "Graphon AI, which emerged from stealth on Wednesday with $8.3 million in seed funding",
+                "source_content_hash": "941bad55959a928e",
+                "quote_hash": "19e06eeda9f3d31d8a337ef9942d70ae46814412624a31dd31243152ac9b82cc"
+              },
+              {
+                "source_id": "FISRC-4c5668270b4cb456",
+                "quote": "The company has secured $8.3M in seed funding led by Arvind Gupta of Novera Ventures, with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners.",
+                "source_content_hash": "d4c067cbdae72c67",
+                "quote_hash": "f4201310a38ebf950b68ab9848fd61aa0f5cf64125ce8a5a2adb5caba4376ab1"
+              }
+            ]
           }
         ]
       },
@@ -199,7 +255,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9c4c0f115d1f38be",
-              "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory."
+              "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+              "source_content_hash": "941bad55959a928e",
+              "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
             }
           ],
           "entity_id": null
@@ -221,7 +279,19 @@
           "除GS Group外，缺乏独立基准测试或详细的客户案例研究，技术从概念到生产级基础设施的成熟度难以评估"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施"
+        "sector": "AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：解决企业AI部署中“上下文窗口瓶颈”的路径，不在于继续扩大模型上下文窗口，而在于在数据进入模型之前就对其进行结构化处理。本轮融资所依赖的已验证信号包括：1）创始团队来自Amazon、Meta、Google、NVIDIA等顶级科技公司，具备深厚的工程与AI研究背景；2）技术顾问是图子数学概念的共同发明人，为技术路线提供了学术权威性；3）已获得韩国大型综合企业集团GS Group作为早期客户，并在便利店顾客动线分析和建筑工地安全监控等真实场景中部署了多模态AI解决方案。然而，这些信号仍处于早期阶段：公司处于种子轮，除GS Group外缺乏独立基准测试或详细的客户案例研究，技术从概念到生产级基础设施的成熟度尚难以评估。",
+          "evidence_signals": [
+            "创始团队及团队成员来自Amazon、Meta、Google、Apple、NVIDIA、NASA等顶级科技与研究机构",
+            "技术顾问Jennifer Chayes和Christian Borgs是图子数学概念的共同发明人，为技术路线提供学术权威性",
+            "已获得韩国大型综合企业集团GS Group作为早期客户，并在便利店顾客动线分析和建筑工地安全监控等真实场景中部署"
+          ],
+          "risks": [
+            "除GS Group外，缺乏独立基准测试或详细的客户案例研究，技术从概念到生产级基础设施的成熟度难以评估"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -229,156 +299,84 @@
           "target_kind": "product",
           "research_name": "预模型智能层 (Pre-model Intelligence Layer)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9c4c0f115d1f38be",
-              "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Arbaaz Khan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c5668270b4cb456",
-              "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Deepak Mishra",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c5668270b4cb456",
-              "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Clark Zhang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c5668270b4cb456",
-              "quote": "Pictured from left to right: Deepak Mishra, Co-Founder & COO; Arbaaz Khan, Founder & CEO; Clark Zhang, Co-Founder & CTO."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Novera Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9c4c0f115d1f38be",
-              "quote": "The round was led by Novera Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Perplexity Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9c4c0f115d1f38be",
-              "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Samsung Next",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9c4c0f115d1f38be",
-              "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GS Futures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9c4c0f115d1f38be",
-              "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hitachi Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9c4c0f115d1f38be",
-              "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Gaia Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c5668270b4cb456",
-              "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "B37 Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c5668270b4cb456",
-              "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Aurum Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c5668270b4cb456",
-              "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners (the investment fund affiliated with the owners of the San Francisco 49ers and other strategic LPs)"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -440,13 +438,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:25:40.984Z"
+      "published_at": "2026-07-26T14:25:40.984Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "预模型智能层 (Pre-model Intelligence Layer)"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Arbaaz Khan",
+            "Clark Zhang",
+            "Deepak Mishra"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e8d1de5c77f32b9c"
+      ],
+      "aggregation": {
+        "key": "EN-67e05af6c6502566|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-2e5005ab43ef0057",
       "triggered_by_event_id": "EV-0e84a2f49d765ce3",
       "as_of_date": "2026-06-08",
@@ -464,7 +493,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "OpenRouter CEO Alex Atallah said in the company's Series B announcement."
+                "quote": "OpenRouter CEO Alex Atallah said in the company's Series B announcement.",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "23164c4a4fb6b617975689d883561fe0e89e4292bf266d1a99a149f45e08f1fb"
               }
             ],
             "entity_id": null
@@ -475,7 +506,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "Atallah, who co-founded NFT marketplace OpenSea before building OpenRouter with co-founder Louis Vichy"
+                "quote": "Atallah, who co-founded NFT marketplace OpenSea before building OpenRouter with co-founder Louis Vichy",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "fccb19fc39a2535f36e74158e1fdb88f6de3e73c58239c6ac08a56d4c7ffac85"
               }
             ],
             "entity_id": null
@@ -489,16 +522,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d1b42068c59f51d1",
-            "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models"
+            "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models",
+            "source_content_hash": "c1afd6dfb4036688",
+            "quote_hash": "edf0b4ebdee733596fea30320a0bacee4aa0b835c93c6d0bad8e4b650030a724"
           },
           {
             "source_id": "FISRC-7e6bd43593b15d6f",
-            "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands."
+            "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands.",
+            "source_content_hash": "7ee685953a9cdbd1",
+            "quote_hash": "60851747c2b46d1a786ad179e2f90de1ec0ce82f93d7d4e4c4ef421eee2fb880"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$113 million",
         "total_raised": "",
         "announced_at": "2026-05-26",
@@ -509,7 +546,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "led by CapitalG, Alphabet's independent growth fund"
+                "quote": "led by CapitalG, Alphabet's independent growth fund",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "b838cf888bbc6fd04b9b0508ae0afb3c171723d0df60f19461065b6858d0ea23"
               }
             ],
             "entity_id": null
@@ -520,48 +559,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Andreessen Horowitz",
-            "role": "既有投资方（种子轮领投、A轮领投）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures"
-              },
-              {
-                "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Menlo Ventures",
-            "role": "既有投资方（A轮领投）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures"
-              },
-              {
-                "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Sequoia",
-            "role": "A轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation"
+                "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
               }
             ],
             "entity_id": null
@@ -570,7 +570,98 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d1b42068c59f51d1",
-            "quote": "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models"
+            "quote": "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models",
+            "source_content_hash": "c1afd6dfb4036688",
+            "quote_hash": "b264cc30140a9fbd632fc5eb7a9649643d8bd2c3a66c26453dee821482dbe922"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "既有投资方（种子轮领投、A轮领投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1b42068c59f51d1",
+                "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
+              },
+              {
+                "source_id": "FISRC-d1b42068c59f51d1",
+                "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "multi_round",
+              "label": "多轮融资",
+              "original": "既有投资方（种子轮领投、A轮领投）"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Menlo Ventures",
+            "role": "既有投资方（A轮领投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1b42068c59f51d1",
+                "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
+              },
+              {
+                "source_id": "FISRC-d1b42068c59f51d1",
+                "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_a",
+              "label": "A轮",
+              "original": "既有投资方（A轮领投）"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Sequoia",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1b42068c59f51d1",
+                "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_a",
+              "label": "A轮",
+              "original": "A轮参投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-0e84a2f49d765ce3",
+            "round_original": "Series B",
+            "amount": "$113 million",
+            "announced_at": "2026-05-26",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1b42068c59f51d1",
+                "quote": "AI Gateway OpenRouter Raises $113M From Google and NVIDIA to Route Between Their Models",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "b264cc30140a9fbd632fc5eb7a9649643d8bd2c3a66c26453dee821482dbe922"
+              }
+            ]
           }
         ]
       },
@@ -591,11 +682,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports."
+              "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports.",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "5361c414c2f281801687cba8c8413d0e573cb30f77a45a86aa45cb9d4af5b856"
             },
             {
               "source_id": "FISRC-7e6bd43593b15d6f",
-              "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing."
+              "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing.",
+              "source_content_hash": "7ee685953a9cdbd1",
+              "quote_hash": "e9fdb1f22fa6c417fb731211bd14313e4cf210f74409d966f80a0b068d593df4"
             }
           ],
           "entity_id": null
@@ -609,9 +704,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
+              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users",
+              "source_content_hash": "4adee0384202d2c1",
+              "quote_hash": "12dc130f1d4977e5fb21d5177530c09e55258480bceda8ed8e1f5ef0852c798c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Framer",
@@ -620,9 +718,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
+              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users",
+              "source_content_hash": "4adee0384202d2c1",
+              "quote_hash": "12dc130f1d4977e5fb21d5177530c09e55258480bceda8ed8e1f5ef0852c798c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Zoom",
@@ -631,9 +732,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
+              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users",
+              "source_content_hash": "4adee0384202d2c1",
+              "quote_hash": "12dc130f1d4977e5fb21d5177530c09e55258480bceda8ed8e1f5ef0852c798c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Webflow",
@@ -642,9 +746,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
+              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users",
+              "source_content_hash": "4adee0384202d2c1",
+              "quote_hash": "12dc130f1d4977e5fb21d5177530c09e55258480bceda8ed8e1f5ef0852c798c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -658,9 +765,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "Large enterprises in regulated industries increasingly require on-premise inference deployment or single-tenant cloud infrastructure for compliance reasons. That architecture favors LiteLLM, the dominant open-source self-hosted gateway, over OpenRouter's hosted model."
+              "quote": "Large enterprises in regulated industries increasingly require on-premise inference deployment or single-tenant cloud infrastructure for compliance reasons. That architecture favors LiteLLM, the dominant open-source self-hosted gateway, over OpenRouter's hosted model.",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "bc2b18abf5dd65eebd2e04c8f50c4bb5072fce1be001902f75eceffd19eeb741"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -671,7 +781,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "Weekly token volume grew from 5 trillion to 25 trillion over the same six-month stretch"
+              "quote": "Weekly token volume grew from 5 trillion to 25 trillion over the same six-month stretch",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "246a69d0a6b9c3ce53475a5a8caaa00d72f08ee74b416c5e23c1dcf23f87c1db"
             }
           ]
         },
@@ -682,7 +794,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "the platform's user base expanded to 8 million globally"
+              "quote": "the platform's user base expanded to 8 million globally",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "e99d2291271d604b3e4369f00d76e17de28b1791d80e38eaad398b704a9a5e0b"
             }
           ]
         },
@@ -693,7 +807,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "400-plus large language models"
+              "quote": "400-plus large language models",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "e43a8e99c645bb7fd0b23cdd38e8606920e2918ca39c0177f4f3f88eb2ca33e2"
             }
           ]
         },
@@ -704,7 +820,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "valuing the three-year-old company at approximately $1.3 billion"
+              "quote": "valuing the three-year-old company at approximately $1.3 billion",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "f97e59095092afce2ceac0c7d2576f28c4bc10fed43b27387c6f99f21c4d633a"
             }
           ]
         },
@@ -715,7 +833,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "can reduce per-query inference cost by 30 to 50 percent without degrading quality for most workloads"
+              "quote": "can reduce per-query inference cost by 30 to 50 percent without degrading quality for most workloads",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "994fbe60b8af5c43332179f20bc4087e5ae8decab51edd538a01459d243db55e"
             }
           ]
         },
@@ -726,7 +846,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "the company applies an estimated 5 percent markup on inference spend, a figure analyst firm Sacra published in early 2026"
+              "quote": "the company applies an estimated 5 percent markup on inference spend, a figure analyst firm Sacra published in early 2026",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "233f83f696b62c97c1d59442e0bb804a99e7c53121e2236f35343b7a0dcf2d91"
             }
           ]
         },
@@ -737,7 +859,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "250,000+ applications in production"
+              "quote": "250,000+ applications in production",
+              "source_content_hash": "4adee0384202d2c1",
+              "quote_hash": "08f919c29608c2633874e574c4594de96371b40abb3cd396d06a0e6da2d6391c"
             }
           ]
         }
@@ -749,7 +873,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "Every platform shift creates infrastructure gaps: from Cloudflare with the internet and Stripe with digital payments, to Databricks with data and AI. These infrastructure gaps create opportunities for generational businesses to solve real customer needs. OpenRouter is solving the infrastructure gap for inference in the AI era."
+              "quote": "Every platform shift creates infrastructure gaps: from Cloudflare with the internet and Stripe with digital payments, to Databricks with data and AI. These infrastructure gaps create opportunities for generational businesses to solve real customer needs. OpenRouter is solving the infrastructure gap for inference in the AI era.",
+              "source_content_hash": "c1afd6dfb4036688",
+              "quote_hash": "3ffe7cb8bc39c84f22653fadc3fc9ccae5ae608c63a184dfa6a2a05c0ad14c90"
             }
           ]
         }
@@ -765,7 +891,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1b42068c59f51d1",
-                "quote": "Mo Jomaa, partner at CapitalG, framed the investment in infrastructure terms: \"Every platform shift creates infrastructure gaps: from Cloudflare with the internet and Stripe with digital payments, to Databricks with data and AI. These infrastructure gaps create opportunities for generational businesses to solve real customer needs. OpenRouter is solving the infrastructure gap for inference in the AI era.\""
+                "quote": "Mo Jomaa, partner at CapitalG, framed the investment in infrastructure terms: \"Every platform shift creates infrastructure gaps: from Cloudflare with the internet and Stripe with digital payments, to Databricks with data and AI. These infrastructure gaps create opportunities for generational businesses to solve real customer needs. OpenRouter is solving the infrastructure gap for inference in the AI era.\"",
+                "source_content_hash": "c1afd6dfb4036688",
+                "quote_hash": "39fb34bf0bc70de9ea9999869950dee87d073b425ab23052a97afad3f38af886"
               }
             ]
           }
@@ -784,7 +912,23 @@
           "OpenRouter 发布的公开模型使用排名与其作为流量路由平台的身份存在利益冲突，该数据并非中立的第三方市场份额数据"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI 基础设施 / 模型路由与网关"
+        "sector": "AI 基础设施 / 模型路由与网关",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“多模型路由层将成为 AI 基础设施的持久组成部分”。本轮融资的估值（约 13 亿美元）较 11 个月前的 A 轮（约 5.47 亿美元）翻了一番以上，其支撑信号是每周 Token 处理量在六个月内从 5 万亿增长至 25 万亿（5 倍增长），以及用户数达到 800 万。投资方阵容——包括 CapitalG、NVIDIA、Snowflake、Databricks、MongoDB 和 ServiceNow 的战略投资部门——表明这些基础设施巨头一致认为，模型层正在商品化，而位于其上方的路由、治理和成本优化层将捕获持久价值。判断的证据边界在于：这些信号验证了生产级工作负载的迁移趋势，但尚未排除基础模型实验室自建路由层、企业自托管需求分化以及平台中立性数据存在利益冲突等结构性风险。",
+          "evidence_signals": [
+            "每周 Token 处理量在六个月内从 5 万亿增长至 25 万亿，实现 5 倍增长",
+            "全球用户数达到 800 万以上，覆盖从独立开发者到大型跨国企业",
+            "支持 400 多个模型，生产环境中运行的应用超过 250,000 个",
+            "估值在 11 个月内从约 5.47 亿美元翻倍至约 13 亿美元",
+            "获得 CapitalG、NVIDIA、Snowflake、Databricks、MongoDB、ServiceNow 等基础设施巨头的战略投资"
+          ],
+          "risks": [
+            "基础模型实验室（OpenAI、Anthropic、Google）可能自建多模型路由层，从而削弱独立路由器的价值主张",
+            "受监管行业的大型企业日益要求本地部署或单租户云基础设施，这一架构偏好有利于 LiteLLM 等开源自托管网关，而非 OpenRouter 的托管模式",
+            "OpenRouter 发布的公开模型使用排名与其作为流量路由平台的身份存在利益冲突，该数据并非中立的第三方市场份额数据"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -792,181 +936,91 @@
           "target_kind": "product",
           "research_name": "OpenRouter API Gateway",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports."
-            },
-            {
-              "source_id": "FISRC-7e6bd43593b15d6f",
-              "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alex Atallah",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "OpenRouter CEO Alex Atallah said in the company's Series B announcement."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Louis Vichy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "Atallah, who co-founded NFT marketplace OpenSea before building OpenRouter with co-founder Louis Vichy"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "CapitalG",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "led by CapitalG, Alphabet's independent growth fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "NVentures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures"
-            },
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures"
-            },
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Sequoia",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Replit",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Framer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Zoom",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Webflow",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b4b8db8809ae3ff2",
-              "quote": "Replit, Framer, Zoom, and Webflow are among the named production users"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "LiteLLM",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b42068c59f51d1",
-              "quote": "Large enterprises in regulated industries increasingly require on-premise inference deployment or single-tenant cloud infrastructure for compliance reasons. That architecture favors LiteLLM, the dominant open-source self-hosted gateway, over OpenRouter's hosted model."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1028,13 +1082,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:25:32.967Z"
+      "published_at": "2026-07-26T14:25:32.967Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "OpenRouter API Gateway"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Alex Atallah",
+            "Louis Vichy"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-0e84a2f49d765ce3"
+      ],
+      "aggregation": {
+        "key": "EN-7f871cbf905f6e0c|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-086e1c90449a4ba4",
       "triggered_by_event_id": "EV-7e1624d7df300713",
       "as_of_date": "2026-06-08",
@@ -1052,7 +1136,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e9a8d571db654fd4",
-                "quote": "Jordi Romero, CEO and co-founder of Factorial"
+                "quote": "Jordi Romero, CEO and co-founder of Factorial",
+                "source_content_hash": "11af7531d19b66f0",
+                "quote_hash": "ee1e6ced1865b9a9794b1a07b9875b4ed6244c116699c51c2089195b6c5aaef1"
               }
             ],
             "entity_id": null
@@ -1063,7 +1149,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a5223e0a738cb28f",
-                "quote": "Factorial, founded in 2016 in Barcelona by Jordi Romero (CEO), Bernat Farrero (CRO), and Pau Ramon Revilla (CTO)"
+                "quote": "Factorial, founded in 2016 in Barcelona by Jordi Romero (CEO), Bernat Farrero (CRO), and Pau Ramon Revilla (CTO)",
+                "source_content_hash": "c578f3ea8e386517",
+                "quote_hash": "d257892de0906cd34f226dd5ac93b802f47afa57cc24cc1e97c9bf1083711cd0"
               }
             ],
             "entity_id": null
@@ -1074,7 +1162,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a5223e0a738cb28f",
-                "quote": "Factorial, founded in 2016 in Barcelona by Jordi Romero (CEO), Bernat Farrero (CRO), and Pau Ramon Revilla (CTO)"
+                "quote": "Factorial, founded in 2016 in Barcelona by Jordi Romero (CEO), Bernat Farrero (CRO), and Pau Ramon Revilla (CTO)",
+                "source_content_hash": "c578f3ea8e386517",
+                "quote_hash": "d257892de0906cd34f226dd5ac93b802f47afa57cc24cc1e97c9bf1083711cd0"
               }
             ],
             "entity_id": null
@@ -1086,23 +1176,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a5223e0a738cb28f",
-              "quote": "employs around 2,600 people"
+              "quote": "employs around 2,600 people",
+              "source_content_hash": "c578f3ea8e386517",
+              "quote_hash": "7e21588284ceba2b9c37968f2fe24b2cc14a22e2aa19b4cea6716c994ca9e815"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-e9a8d571db654fd4",
-            "quote": "Factorial, Europe's leading AI Workforce Operations Platform"
+            "quote": "Factorial, Europe's leading AI Workforce Operations Platform",
+            "source_content_hash": "11af7531d19b66f0",
+            "quote_hash": "efa8ede25d635055169d56f0ce3aa98a59f85dc565970b36556fe09fc75d3218"
           },
           {
             "source_id": "FISRC-fbc6b3dd930eeb9c",
-            "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform"
+            "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform",
+            "source_content_hash": "d437065d32388373",
+            "quote_hash": "51fd6b6ee1d9654cbfe478774262426dcbb29864a34cd82d87d9d2c2133d44ab"
           }
         ]
       },
       "financing": {
-        "round": "D 轮",
+        "round": "D轮",
         "amount": "1.5 亿美元",
         "total_raised": "约 3 亿美元（本轮前累计融资约 3 亿美元，不含 Customer Value Fund 非稀释性资金）",
         "announced_at": "2026-06-03",
@@ -1113,7 +1209,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e9a8d571db654fd4",
-                "quote": "The round is led by General Catalyst, which is making its first equity investment in Factorial"
+                "quote": "The round is led by General Catalyst, which is making its first equity investment in Factorial",
+                "source_content_hash": "11af7531d19b66f0",
+                "quote_hash": "b60ff6d091951b5033820c3e6c24ff6c66fe6ef1004947c9d8afb5cadc97dbbc"
               }
             ],
             "entity_id": null
@@ -1124,11 +1222,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e9a8d571db654fd4",
-                "quote": "joined by other investors including Atomico and Four Rivers"
+                "quote": "joined by other investors including Atomico and Four Rivers",
+                "source_content_hash": "11af7531d19b66f0",
+                "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
               },
               {
                 "source_id": "FISRC-a5223e0a738cb28f",
-                "quote": "reached unicorn status in October 2022 on a $120M Series C led by Atomico"
+                "quote": "reached unicorn status in October 2022 on a $120M Series C led by Atomico",
+                "source_content_hash": "c578f3ea8e386517",
+                "quote_hash": "50eabb913bd644ed706967e8b68450deefd41ffbf2e2fb521b06e585a4d1a6d6"
               }
             ],
             "entity_id": null
@@ -1139,7 +1241,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e9a8d571db654fd4",
-                "quote": "joined by other investors including Atomico and Four Rivers"
+                "quote": "joined by other investors including Atomico and Four Rivers",
+                "source_content_hash": "11af7531d19b66f0",
+                "quote_hash": "114b77c16789092678fc784bbcd2ba7b7656bfc87d84213e020d5696b43e0fc6"
               }
             ],
             "entity_id": null
@@ -1148,11 +1252,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e9a8d571db654fd4",
-            "quote": "closing of a $150 million Series D funding round at a valuation of $2.5 billion"
+            "quote": "closing of a $150 million Series D funding round at a valuation of $2.5 billion",
+            "source_content_hash": "11af7531d19b66f0",
+            "quote_hash": "85ec6814d9d8c4e17bf657b892393b2738abf96c4db60c477d689571932fd0fe"
           },
           {
             "source_id": "FISRC-a5223e0a738cb28f",
-            "quote": "Total funding prior to this Series D stood at approximately $300M across all rounds."
+            "quote": "Total funding prior to this Series D stood at approximately $300M across all rounds.",
+            "source_content_hash": "c578f3ea8e386517",
+            "quote_hash": "a71a1f0a52684f4bf3407d39092b7a525048932d176c9b39784acae941abb7e4"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "D 轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7e1624d7df300713",
+            "round_original": "D 轮",
+            "amount": "1.5 亿美元",
+            "announced_at": "2026-06-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9a8d571db654fd4",
+                "quote": "closing of a $150 million Series D funding round at a valuation of $2.5 billion",
+                "source_content_hash": "11af7531d19b66f0",
+                "quote_hash": "85ec6814d9d8c4e17bf657b892393b2738abf96c4db60c477d689571932fd0fe"
+              },
+              {
+                "source_id": "FISRC-a5223e0a738cb28f",
+                "quote": "Total funding prior to this Series D stood at approximately $300M across all rounds.",
+                "source_content_hash": "c578f3ea8e386517",
+                "quote_hash": "a71a1f0a52684f4bf3407d39092b7a525048932d176c9b39784acae941abb7e4"
+              }
+            ]
           }
         ]
       },
@@ -1170,7 +1303,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves."
+              "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves.",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "ea1a1f9c381d37d06c1138225ce4178a3f77f156b7054f234ad7f69ff291bd35"
             }
           ],
           "entity_id": null
@@ -1186,7 +1321,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "valuation of $2.5 billion"
+              "quote": "valuation of $2.5 billion",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "995e954bf0f537a9f1f2595abea902243f7fb537b4370231fbc77baa27e9076a"
             }
           ]
         },
@@ -1197,7 +1334,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "customer base of over 16,000 businesses across 90+ countries"
+              "quote": "customer base of over 16,000 businesses across 90+ countries",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "a72f2a3d9ad70df9bb818dfa362be5bf8ea31f6478f181ce4bbdd78eb8e4b9f0"
             }
           ]
         },
@@ -1208,7 +1347,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "across 90+ countries"
+              "quote": "across 90+ countries",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "7cbdd552f76f8fa188ae3df61adce9758d10a799cffe05e4d359b931735db0bc"
             }
           ]
         },
@@ -1219,7 +1360,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a5223e0a738cb28f",
-              "quote": "employs around 2,600 people"
+              "quote": "employs around 2,600 people",
+              "source_content_hash": "c578f3ea8e386517",
+              "quote_hash": "7e21588284ceba2b9c37968f2fe24b2cc14a22e2aa19b4cea6716c994ca9e815"
             }
           ]
         },
@@ -1230,7 +1373,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "expanding its team globally at up to 50 new hires per week"
+              "quote": "expanding its team globally at up to 50 new hires per week",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "14370702a657fdc8f8f4d196f504905aab03400202eb49dcf0e4afacb3285712"
             }
           ]
         },
@@ -1241,7 +1386,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "committing up to an additional $540 million through its Customer Value Fund"
+              "quote": "committing up to an additional $540 million through its Customer Value Fund",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "47a2013bf79e50c5ee7af1506150c1f59cfffbcb4a3140fe05130588ca17f39a"
             }
           ]
         },
@@ -1252,7 +1399,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "bringing total capital committed to over $700 million"
+              "quote": "bringing total capital committed to over $700 million",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "101441e00b645c62ad97e5467a44d48518c3a2a0dc3015689e52992390ccb74d"
             }
           ]
         }
@@ -1264,7 +1413,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "Ten years ago we built Factorial as a SaaS company. Today we are an AI-first company, building agents for our customers, and we are doing it for over 16,000 businesses, from Europe, with the discipline that has defined our first decade. We have reset the product, the architecture, and the way our customers run their work around AI agents. General Catalyst's partnership gives us the conviction and the capital to turn that reset into a category-defining business. This round does not close a chapter. It opens the one that matters."
+              "quote": "Ten years ago we built Factorial as a SaaS company. Today we are an AI-first company, building agents for our customers, and we are doing it for over 16,000 businesses, from Europe, with the discipline that has defined our first decade. We have reset the product, the architecture, and the way our customers run their work around AI agents. General Catalyst's partnership gives us the conviction and the capital to turn that reset into a category-defining business. This round does not close a chapter. It opens the one that matters.",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "a90f63376a2ddcc3e5b1f7a837089a9d16994dea701eec83468b5296155f9b2f"
             }
           ]
         },
@@ -1274,7 +1425,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "The next decade of enterprise software will belong to the companies that rebuild themselves around AI, not the ones that bolt it on. Factorial is doing exactly that, and doing it with a level of product horizontality and an ambitious growth at scale that is rare anywhere in the world. That combination is why we are deepening our partnership across both equity and our Customer Value Fund."
+              "quote": "The next decade of enterprise software will belong to the companies that rebuild themselves around AI, not the ones that bolt it on. Factorial is doing exactly that, and doing it with a level of product horizontality and an ambitious growth at scale that is rare anywhere in the world. That combination is why we are deepening our partnership across both equity and our Customer Value Fund.",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "6469461e2e1f3b238320a8c807ff6f995d11e56b30e145fbf03e6ffeb199ffeb"
             }
           ]
         },
@@ -1284,7 +1437,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "At General Catalyst, our goal is to be the first and last source of capital for the world's most ambitious companies. Factorial is the perfect example."
+              "quote": "At General Catalyst, our goal is to be the first and last source of capital for the world's most ambitious companies. Factorial is the perfect example.",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "e55ee25495b77fd1ca57f3c50ec282d9f1953e4c3888780577a413dbd9be5fce"
             }
           ]
         },
@@ -1294,7 +1449,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "Germany is our most important market in Europe, and it has been underserved for too long. We are putting our team, our capital, and our product roadmap behind it. Munich is just the start."
+              "quote": "Germany is our most important market in Europe, and it has been underserved for too long. We are putting our team, our capital, and our product roadmap behind it. Munich is just the start.",
+              "source_content_hash": "11af7531d19b66f0",
+              "quote_hash": "25fcd4b47aebee3b4d129d2fd0fdc07d1ebc8851c55abab6661fae85dfce3eb8"
             }
           ]
         }
@@ -1310,7 +1467,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e9a8d571db654fd4",
-                "quote": "The next decade of enterprise software will belong to the companies that rebuild themselves around AI, not the ones that bolt it on. Factorial is doing exactly that, and doing it with a level of product horizontality and an ambitious growth at scale that is rare anywhere in the world. That combination is why we are deepening our partnership across both equity and our Customer Value Fund."
+                "quote": "The next decade of enterprise software will belong to the companies that rebuild themselves around AI, not the ones that bolt it on. Factorial is doing exactly that, and doing it with a level of product horizontality and an ambitious growth at scale that is rare anywhere in the world. That combination is why we are deepening our partnership across both equity and our Customer Value Fund.",
+                "source_content_hash": "11af7531d19b66f0",
+                "quote_hash": "6469461e2e1f3b238320a8c807ff6f995d11e56b30e145fbf03e6ffeb199ffeb"
               }
             ]
           },
@@ -1323,7 +1482,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e9a8d571db654fd4",
-                "quote": "At General Catalyst, our goal is to be the first and last source of capital for the world's most ambitious companies. Factorial is the perfect example."
+                "quote": "At General Catalyst, our goal is to be the first and last source of capital for the world's most ambitious companies. Factorial is the perfect example.",
+                "source_content_hash": "11af7531d19b66f0",
+                "quote_hash": "e55ee25495b77fd1ca57f3c50ec282d9f1953e4c3888780577a413dbd9be5fce"
               }
             ]
           }
@@ -1340,7 +1501,21 @@
           "德国市场竞争激烈，Personio 在本地拥有深厚根基，且德国中小企业更换核心 HR 系统的决策过程缓慢且审慎，慕尼黑扩张可能面临长周期和高成本"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 劳动力运营平台 / 企业软件"
+        "sector": "AI 劳动力运营平台 / 企业软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Factorial 能否通过 AI 智能体架构重置，将自身从 HR SaaS 公司重新定义为横跨 HR、财务和 IT 的 AI 劳动力运营平台，从而打开远超 HR 软件的业务运营软件市场。本轮 25 亿美元估值建立在两个已验证信号之上：一是超过 16,000 家企业在 90 多个国家使用其平台，证明了跨市场国际化的产品能力；二是 General Catalyst 通过 Customer Value Fund 先期介入后，基于对单位经济模型的直接观察才做出首次股权投资，表明其客户获取效率和留存指标已通过外部验证。融资结构本身也构成信号——1.5 亿美元股权融资搭配 5.4 亿美元非稀释性 Customer Value Fund，显示资本方对收入可预测性和增长效率有足够信心，愿意以与客户价值挂钩的回报替代股权稀释。但判断的证据边界受限于：Factorial One 双智能体架构的实际采用率和客户续约数据未公开披露，德国市场的竞争结果尚未显现，且 AI 智能体在运营软件中是否具有变革性而非增量性仍待验证。",
+          "evidence_signals": [
+            "超过 16,000 家企业在 90 多个国家使用 Factorial 平台，是行业内唯一成功实现跨市场国际化的公司",
+            "General Catalyst 通过 Customer Value Fund 先期介入后，基于对单位经济模型的直接观察才做出首次股权投资",
+            "公司已实现盈利，并在过去几年中保持无现金消耗的可持续增长",
+            "德国已成为增长最快的客户群之一，验证了跨市场的产品-市场匹配"
+          ],
+          "risks": [
+            "Factorial One 双智能体架构的实际采用率、客户留存和扩展指标未公开，AI 智能体在运营软件中可能仅为增量改进而非变革性突破，若无法证明差异化价值，25 亿美元估值可能承压",
+            "德国市场竞争激烈，Personio 在本地拥有深厚根基，且德国中小企业更换核心 HR 系统的决策过程缓慢且审慎，慕尼黑扩张可能面临长周期和高成本"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1348,95 +1523,49 @@
           "target_kind": "product",
           "research_name": "Factorial One",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jordi Romero",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "Jordi Romero, CEO and co-founder of Factorial"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Bernat Farrero",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a5223e0a738cb28f",
-              "quote": "Factorial, founded in 2016 in Barcelona by Jordi Romero (CEO), Bernat Farrero (CRO), and Pau Ramon Revilla (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Pau Ramon Revilla",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a5223e0a738cb28f",
-              "quote": "Factorial, founded in 2016 in Barcelona by Jordi Romero (CEO), Bernat Farrero (CRO), and Pau Ramon Revilla (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "The round is led by General Catalyst, which is making its first equity investment in Factorial"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Atomico",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "joined by other investors including Atomico and Four Rivers"
-            },
-            {
-              "source_id": "FISRC-a5223e0a738cb28f",
-              "quote": "reached unicorn status in October 2022 on a $120M Series C led by Atomico"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Four Rivers",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9a8d571db654fd4",
-              "quote": "joined by other investors including Atomico and Four Rivers"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1498,10 +1627,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:25:25.701Z"
+      "published_at": "2026-07-26T14:25:25.701Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Factorial One"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Bernat Farrero",
+            "Jordi Romero",
+            "Pau Ramon Revilla"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7e1624d7df300713"
+      ],
+      "aggregation": {
+        "key": "EN-049b3253f4a8e2eb|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

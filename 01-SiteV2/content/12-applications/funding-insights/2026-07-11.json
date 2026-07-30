@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-11",
     "generated_at": "2026-07-27T05:21:45.369Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 2,
       "auto_published": 1,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-3e3f0d8d35770bc8",
       "triggered_by_event_id": "EV-415b083fdaa8077f",
       "as_of_date": "2026-07-11",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri"
+                "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "53e07de7c88e9a171f8924a6dc81cb172889ab7fd53baa17a43eec6943ce87a1"
               }
             ],
             "entity_id": null
@@ -49,16 +52,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b7d7449114c23ca5",
-            "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri"
+            "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri",
+            "source_content_hash": "7277428ab4a1fd81",
+            "quote_hash": "53e07de7c88e9a171f8924a6dc81cb172889ab7fd53baa17a43eec6943ce87a1"
           },
           {
             "source_id": "FISRC-2ac2183ceab4ddd7",
-            "quote": "OXMIQ is headquartered in Campbell, California, with a development site in Hyderabad, India."
+            "quote": "OXMIQ is headquartered in Campbell, California, with a development site in Hyderabad, India.",
+            "source_content_hash": "b11173439b5612a7",
+            "quote_hash": "eed4e20fa4e2dff0be5af3035e5cf8d21e2cb1e16d30eb0a5b65e9697cd67da4"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$35 million",
         "total_raised": "$60 million",
         "announced_at": "2026-07-01",
@@ -69,7 +76,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
               }
             ],
             "entity_id": null
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting."
+                "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting.",
+                "source_content_hash": "b11173439b5612a7",
+                "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -124,7 +141,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -135,7 +154,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -146,18 +167,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7d7449114c23ca5",
-                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Intel Capital",
-            "role": "既有投资方（战略IP合作伙伴）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth."
+                "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+                "source_content_hash": "7277428ab4a1fd81",
+                "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
               }
             ],
             "entity_id": null
@@ -166,7 +178,48 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2ac2183ceab4ddd7",
-            "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital, among other financial and strategic investors."
+            "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital, among other financial and strategic investors.",
+            "source_content_hash": "b11173439b5612a7",
+            "quote_hash": "71ccddd3e18d2a4883df3dc5f5f29ed79dacb2630c0c4f398df61d6b2ce59ee8"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Intel Capital",
+            "role": "既有投资方（战略IP合作伙伴）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
+                "source_content_hash": "b11173439b5612a7",
+                "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "strategic",
+              "label": "战略融资",
+              "original": "既有投资方（战略IP合作伙伴）"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-415b083fdaa8077f",
+            "round_original": "Series A",
+            "amount": "$35 million",
+            "announced_at": "2026-07-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital, among other financial and strategic investors.",
+                "source_content_hash": "b11173439b5612a7",
+                "quote_hash": "71ccddd3e18d2a4883df3dc5f5f29ed79dacb2630c0c4f398df61d6b2ce59ee8"
+              }
+            ]
           }
         ]
       },
@@ -185,11 +238,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "At the center of the architecture is OxCore, a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)"
+              "quote": "At the center of the architecture is OxCore, a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)",
+              "source_content_hash": "7277428ab4a1fd81",
+              "quote_hash": "fe21f2c0e1c10dbc39e705796a3c07c34ccaa6c2164b37d6062446b1ed01f214"
             },
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads."
+              "quote": "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads.",
+              "source_content_hash": "b11173439b5612a7",
+              "quote_hash": "91b056a89950fc5cc7a1c4c0d48565247c33d017c2bd37184d2efc74344522c2"
             }
           ],
           "entity_id": null
@@ -206,7 +263,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options."
+              "quote": "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options.",
+              "source_content_hash": "b11173439b5612a7",
+              "quote_hash": "52f3f19e98da0dd9e6ce91b8a12d89476ff9c7dc9e2441c6f39da44f734110da"
             }
           ],
           "entity_id": null
@@ -224,11 +283,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "OxPython runs existing CUDA and PyTorch code on OxCore without code changes, giving developers full portability across hardware."
+              "quote": "OxPython runs existing CUDA and PyTorch code on OxCore without code changes, giving developers full portability across hardware.",
+              "source_content_hash": "7277428ab4a1fd81",
+              "quote_hash": "0338b7a464113d72caf4cb329f006034ff8b2cdea4bc5aa0dac6c49aa865cced"
             },
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "This stack supports emerging silicon architectures for optimized inference at scale and delivers day-zero support for new models."
+              "quote": "This stack supports emerging silicon architectures for optimized inference at scale and delivers day-zero support for new models.",
+              "source_content_hash": "b11173439b5612a7",
+              "quote_hash": "d9db80045b245b2ea3e72a3bab2f3d9310c80823b664f909c60c52b4c50a318c"
             }
           ],
           "entity_id": null
@@ -244,7 +307,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "has closed its $35 million Series A financing"
+              "quote": "has closed its $35 million Series A financing",
+              "source_content_hash": "7277428ab4a1fd81",
+              "quote_hash": "cdb4dd4cb0b44829ffb436a43a12b03a0db2f9331835076ed999e1b27be4eebb"
             }
           ]
         },
@@ -255,7 +320,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "OxCore is running on FPGA today, with live demonstrations available."
+              "quote": "OxCore is running on FPGA today, with live demonstrations available.",
+              "source_content_hash": "7277428ab4a1fd81",
+              "quote_hash": "c727e66fc7dc7db3d3e453067978f7851f420dbd50a39d459b5e2a795c9794a6"
             }
           ]
         },
@@ -266,7 +333,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "The move extends the collaboration behind the 5GW AI factory initiative"
+              "quote": "The move extends the collaboration behind the 5GW AI factory initiative",
+              "source_content_hash": "b11173439b5612a7",
+              "quote_hash": "2c96d9a84f789aef16570d041043698cc046b7bdb3133fa0d4b77c7a9753670d"
             }
           ]
         },
@@ -277,7 +346,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "including a 3GW renewable-powered AI compute platform, that AMI is building in India."
+              "quote": "including a 3GW renewable-powered AI compute platform, that AMI is building in India.",
+              "source_content_hash": "b11173439b5612a7",
+              "quote_hash": "25febe8eb42b0efac0e1e2afb406c8296968547e4807391f20ecbae9c637efac"
             }
           ]
         }
@@ -289,7 +360,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "A licensable core with an open architecture means design teams everywhere can build the custom AI silicon their work needs. Today, state-of-the-art AI reaches most people through a handful of channels, and the cost of the compute underneath is the reason. Bring that cost down, and you widen who gets to build with it."
+              "quote": "A licensable core with an open architecture means design teams everywhere can build the custom AI silicon their work needs. Today, state-of-the-art AI reaches most people through a handful of channels, and the cost of the compute underneath is the reason. Bring that cost down, and you widen who gets to build with it.",
+              "source_content_hash": "7277428ab4a1fd81",
+              "quote_hash": "f4c6126baabbfe11380cde5b276572dc8bfbb11b9659f861ebe1930f5546beb4"
             }
           ]
         }
@@ -305,7 +378,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ac2183ceab4ddd7",
-                "quote": "MediaTek is actively powering today's advanced AI capabilities from the edge to the cloud. Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms."
+                "quote": "MediaTek is actively powering today's advanced AI capabilities from the edge to the cloud. Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms.",
+                "source_content_hash": "b11173439b5612a7",
+                "quote_hash": "72025985c4c2cb47575a051059e0969c0c922556cc055709c479705f7dbbbb85"
               }
             ]
           }
@@ -322,7 +397,21 @@
           "所有产品和技术验证信息均来自公司官方发布，缺乏独立第三方客户的实际部署案例和性能基准测试数据"
         ],
         "related_direction_id": "",
-        "sector": "AI芯片IP授权与可配置计算架构"
+        "sector": "AI芯片IP授权与可配置计算架构",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI计算堆栈的“可授权化”与“供应链解耦”。OXMIQ的估值逻辑并非直接挑战NVIDIA的GPU产品，而是通过提供可授权的GPU IP（OxCore）和适配任意供应链的小芯片架构（OxQuilt），让半导体公司和系统构建者能够以更低成本构建定制AI芯片。已验证信号包括：1）核心架构OxCore已在FPGA上运行并提供现场演示；2）软件栈OxPython已验证可在第三方平台上无需修改运行CUDA和PyTorch代码；3）已获得来自代工厂（Samsung、Intel）、芯片设计方（MediaTek）、系统集成商（Pegatron）和终端用户（AMI的5GW AI工厂计划）的全供应链战略投资。然而，当前所有证据均来自公司官方新闻稿和投资方声明，缺乏独立客户验证和商业部署数据，且$60M累计融资额远不足以支撑一次先进制程全芯片流片，其IP授权商业模式能否产生持续收入仍有待市场检验。",
+          "evidence_signals": [
+            "OxCore架构已在FPGA上运行，并提供现场演示",
+            "OxPython软件栈已在第三方平台上验证，可无需代码更改运行CUDA和PyTorch代码",
+            "获得涵盖代工厂、芯片设计方、系统集成商和终端用户的全供应链战略投资",
+            "与AM Intelligence Labs合作推进印度5GW AI工厂计划，其中包含3GW可再生能源AI计算平台"
+          ],
+          "risks": [
+            "累计$60M融资额远不足以支撑先进制程全芯片流片，若无法通过IP授权产生足够收入，后续仍需大额融资，存在资金链风险",
+            "所有产品和技术验证信息均来自公司官方发布，缺乏独立第三方客户的实际部署案例和性能基准测试数据"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -330,177 +419,91 @@
           "target_kind": "product",
           "research_name": "OxCore",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "At the center of the architecture is OxCore, a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)"
-            },
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxCore tightly couples compute functionality that is typically split across three chips, and was purpose-built for near-memory compute, minimizing data movement to enhance compute and energy efficiency of AI workloads."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "OxQuilt",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "OxQuilt instead adapts to any supply chain, with configuration tools that let customers design across logic process nodes, memory types, interconnect standards, and advanced packaging options."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "OxPython",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "OxPython runs existing CUDA and PyTorch code on OxCore without code changes, giving developers full portability across hardware."
-            },
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "This stack supports emerging silicon architectures for optimized inference at scale and delivers day-zero support for new models."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Raja Koduri",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fundomo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Samsung Catalyst Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MediaTek",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AM Intelligence Labs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Pegatron Venture Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "CDIB-TEN",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Darwin Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Morgan Creek Digital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7d7449114c23ca5",
-              "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Intel Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ac2183ceab4ddd7",
-              "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -550,10 +553,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:50:34.344Z"
+      "published_at": "2026-07-26T14:50:34.344Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "OxCore",
+            "OxPython",
+            "OxQuilt"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Raja Koduri"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-415b083fdaa8077f"
+      ],
+      "aggregation": {
+        "key": "EN-d3d151f3f8e7f9ed|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

@@ -472,6 +472,7 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-funding-insights.log"
           node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
           npm run test:funding-insights
 
       - name: Sync operations data after V4 production
@@ -620,6 +621,7 @@ jobs:
             01-SiteV2/site/data/data-center-v4/**
             01-SiteV2/site/data/trend-radar-v1.json
             01-SiteV2/content/12-applications/funding-insights/${{ steps.run-date.outputs.date }}.json
+            01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json
             01-SiteV2/site/data/funding-insights-v1.json
             01-SiteV2/site/data/opportunity-evidence-v2.json
             01-SiteV2/site/data/collection-telemetry-v1.json
@@ -673,6 +675,7 @@ jobs:
 
           if [ "${{ steps.funding-insights.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json"
+            stage_if_exists "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json"
             stage_if_exists "01-SiteV2/site/data/funding-insights-v1.json"
           fi
 

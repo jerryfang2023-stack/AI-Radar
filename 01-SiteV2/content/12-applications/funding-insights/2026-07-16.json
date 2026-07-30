@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-16",
     "generated_at": "2026-07-26T15:19:19.977Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 5,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c8f44dd5728f2a91",
       "triggered_by_event_id": "EV-64fb6d791e19d10a",
       "as_of_date": "2026-07-16",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7814afd7c39e886d",
-                "quote": "Founded in 2022 by former Stanford PhD student Lily Clifford, ex-Amazon Alexa engineer Brooke Larson, and Stanford engineer Ares Geovanos"
+                "quote": "Founded in 2022 by former Stanford PhD student Lily Clifford, ex-Amazon Alexa engineer Brooke Larson, and Stanford engineer Ares Geovanos",
+                "source_content_hash": "bf887bd5437c51a7",
+                "quote_hash": "74fac47ccc7039fcb1507d4c9d83ad0c8533be93d3eb1a6c7ac0bd9e3c50430d"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7814afd7c39e886d",
-                "quote": "ex-Amazon Alexa engineer Brooke Larson"
+                "quote": "ex-Amazon Alexa engineer Brooke Larson",
+                "source_content_hash": "bf887bd5437c51a7",
+                "quote_hash": "29d63f2329a8250093256d2eb2f10bac070434bf1a49affdc5ed6dfbfa579465"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7814afd7c39e886d",
-                "quote": "Stanford engineer Ares Geovanos"
+                "quote": "Stanford engineer Ares Geovanos",
+                "source_content_hash": "bf887bd5437c51a7",
+                "quote_hash": "f67cfa4b28059f646f560ff6c1c9cd3b781b6a26f119e98238f3a82263c4b53b"
               }
             ],
             "entity_id": null
@@ -69,19 +76,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Rime is planning to expand its team of 35 people"
+              "quote": "Rime is planning to expand its team of 35 people",
+              "source_content_hash": "bf887bd5437c51a7",
+              "quote_hash": "c1ab97aa7b38e5dfe56ec578133bec6d6383a33b84fb93cb6d2024a39b3b8bb7"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-7814afd7c39e886d",
-            "quote": "San Francisco-based Rime is trying to gain an edge in this crowded market with its voice AI models"
+            "quote": "San Francisco-based Rime is trying to gain an edge in this crowded market with its voice AI models",
+            "source_content_hash": "bf887bd5437c51a7",
+            "quote_hash": "eb6537ff469ec2d9b5863c91bdf4c784d7a0d54044fb6420fe86a7deb2b6d687"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$24M",
         "total_raised": "$29.5M",
         "announced_at": "2026-07-15",
@@ -92,7 +103,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7814afd7c39e886d",
-                "quote": "raised $24 million in a Series A funding round that was led by M13 Ventures"
+                "quote": "raised $24 million in a Series A funding round that was led by M13 Ventures",
+                "source_content_hash": "bf887bd5437c51a7",
+                "quote_hash": "6c08951613eb8664268a1b1597f5f45ad119e874c74e70179a613c5f9777409e"
               }
             ],
             "entity_id": null
@@ -103,7 +116,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7814afd7c39e886d",
-                "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
+                "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated",
+                "source_content_hash": "bf887bd5437c51a7",
+                "quote_hash": "723438dd8ba285c4ad5d4760fa84b935056b86105e0560a3d247df35c2737655"
               }
             ],
             "entity_id": null
@@ -114,7 +129,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7814afd7c39e886d",
-                "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
+                "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated",
+                "source_content_hash": "bf887bd5437c51a7",
+                "quote_hash": "723438dd8ba285c4ad5d4760fa84b935056b86105e0560a3d247df35c2737655"
               }
             ],
             "entity_id": null
@@ -125,29 +142,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3c23f338e9a9176f",
-                "quote": "Our Series A was led by M13, with participation from Corazon Capital, Unusual Ventures, Cadenza Ventures, and Twilio Ventures."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Founders You Should Know",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-bf64aef858152292",
-                "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Cadenza Capital",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-bf64aef858152292",
-                "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
+                "quote": "Our Series A was led by M13, with participation from Corazon Capital, Unusual Ventures, Cadenza Ventures, and Twilio Ventures.",
+                "source_content_hash": "d609dc9c3caf2e30",
+                "quote_hash": "b7d3bd934ffec15d42b249367ab0cb06a4dc51d2b3710529e28e60c2be2ffdeb"
               }
             ],
             "entity_id": null
@@ -156,7 +153,67 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7814afd7c39e886d",
-            "quote": "Rime on Wednesday said it has raised $24 million in a Series A funding round"
+            "quote": "Rime on Wednesday said it has raised $24 million in a Series A funding round",
+            "source_content_hash": "bf887bd5437c51a7",
+            "quote_hash": "ef624d047305f8c2de6c0ca24c9d728a0b44811f8e3b4e8a44022b2d9ffc6448"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Founders You Should Know",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bf64aef858152292",
+                "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital",
+                "source_content_hash": "c698b2b6158dd48c",
+                "quote_hash": "ae62133560ff9be13ea8aa685146844e0d017cc195ad72b8dddb2ede1993d230"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Cadenza Capital",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bf64aef858152292",
+                "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital",
+                "source_content_hash": "c698b2b6158dd48c",
+                "quote_hash": "ae62133560ff9be13ea8aa685146844e0d017cc195ad72b8dddb2ede1993d230"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-64fb6d791e19d10a",
+            "round_original": "Series A",
+            "amount": "$24M",
+            "announced_at": "2026-07-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7814afd7c39e886d",
+                "quote": "Rime on Wednesday said it has raised $24 million in a Series A funding round",
+                "source_content_hash": "bf887bd5437c51a7",
+                "quote_hash": "ef624d047305f8c2de6c0ca24c9d728a0b44811f8e3b4e8a44022b2d9ffc6448"
+              }
+            ]
           }
         ]
       },
@@ -174,7 +231,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Rime has built a recording studio in San Francisco to collect its own conversational data rather than relying on scraping the web for audio."
+              "quote": "Rime has built a recording studio in San Francisco to collect its own conversational data rather than relying on scraping the web for audio.",
+              "source_content_hash": "bf887bd5437c51a7",
+              "quote_hash": "492603fc3a4256ff37eb0cff2de0dd236910f99d2885cf6e0781f9030aa5a2c1"
             }
           ],
           "entity_id": null
@@ -190,7 +249,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bf64aef858152292",
-              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte and deterministic pronunciation control for brand names and medical terminology"
+              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte and deterministic pronunciation control for brand names and medical terminology",
+              "source_content_hash": "c698b2b6158dd48c",
+              "quote_hash": "dd7d48aa1270565a4cab72dc43707f448d2a2c382b6723a2385f0c3818738300"
             }
           ],
           "entity_id": null
@@ -206,7 +267,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bf64aef858152292",
-              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
+              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages",
+              "source_content_hash": "c698b2b6158dd48c",
+              "quote_hash": "312ff73d466f3b56b224fe09f3c241806e947eb2bd980922ab80dbece808543a"
             }
           ],
           "entity_id": null
@@ -224,9 +287,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "dedicated customer support shops like Decagon and Sierra"
+              "quote": "dedicated customer support shops like Decagon and Sierra",
+              "source_content_hash": "bf887bd5437c51a7",
+              "quote_hash": "e02ec0a8dbb750b337d54f505776f49689b3568447c0c79b412d378e0a04c78f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Sierra",
@@ -238,9 +304,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "dedicated customer support shops like Decagon and Sierra"
+              "quote": "dedicated customer support shops like Decagon and Sierra",
+              "source_content_hash": "bf887bd5437c51a7",
+              "quote_hash": "e02ec0a8dbb750b337d54f505776f49689b3568447c0c79b412d378e0a04c78f"
             }
-          ]
+          ],
+          "entity_id": "EN-dca6ec9510fc0176"
         },
         {
           "name": "Vapi",
@@ -252,9 +321,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bf64aef858152292",
-              "quote": "Vapi recently closed a $50M Series B at a $500M valuation, having processed one billion calls."
+              "quote": "Vapi recently closed a $50M Series B at a $500M valuation, having processed one billion calls.",
+              "source_content_hash": "c698b2b6158dd48c",
+              "quote_hash": "58b20f02f76bde556cd9ca539618346942094572cf647ce5c61a765f1bcd8324"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Deepgram",
@@ -266,13 +338,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Large organizations are offloading calls to voice model developers like ElevenLabs and Deepgram"
+              "quote": "Large organizations are offloading calls to voice model developers like ElevenLabs and Deepgram",
+              "source_content_hash": "bf887bd5437c51a7",
+              "quote_hash": "f57be05b26fb760888d44ddc615c30883c82aa7c0060bdd4b0d3b38ad1cccce9"
             },
             {
               "source_id": "FISRC-823a55431ee598b5",
-              "quote": "Deepgram has raised more than $130 million for enterprise speech recognition infrastructure."
+              "quote": "Deepgram has raised more than $130 million for enterprise speech recognition infrastructure.",
+              "source_content_hash": "4096c248663d945b",
+              "quote_hash": "8727703d15ef0f0c92af6e987b0f7554cd7761456fb46b0aa91731af5cd8c9ae"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -283,7 +360,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4e390fe10f0d05aa",
-              "quote": "Rime powers nearly 100 million phone calls monthly for enterprise customers"
+              "quote": "Rime powers nearly 100 million phone calls monthly for enterprise customers",
+              "source_content_hash": "24cca69d6572435e",
+              "quote_hash": "c5dca2dcee3669debf9262fe681ffce823edf7cd36833799c0215081bf3d0eb1"
             }
           ]
         },
@@ -294,7 +373,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bf64aef858152292",
-              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte"
+              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte",
+              "source_content_hash": "c698b2b6158dd48c",
+              "quote_hash": "ac22de9badf3389920dd54b05a9818d10a050cd7d162b5be744f1ca00cfdc7fa"
             }
           ]
         },
@@ -305,7 +386,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bf64aef858152292",
-              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
+              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages",
+              "source_content_hash": "c698b2b6158dd48c",
+              "quote_hash": "312ff73d466f3b56b224fe09f3c241806e947eb2bd980922ab80dbece808543a"
             }
           ]
         },
@@ -316,7 +399,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bf64aef858152292",
-              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
+              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages",
+              "source_content_hash": "c698b2b6158dd48c",
+              "quote_hash": "312ff73d466f3b56b224fe09f3c241806e947eb2bd980922ab80dbece808543a"
             }
           ]
         },
@@ -327,7 +412,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4e390fe10f0d05aa",
-              "quote": "A Miravoice study evaluating 12 voices across 100,000 calls found Rime produced statistically significantly lower hang up rates and the fastest time to completion of all providers tested."
+              "quote": "A Miravoice study evaluating 12 voices across 100,000 calls found Rime produced statistically significantly lower hang up rates and the fastest time to completion of all providers tested.",
+              "source_content_hash": "24cca69d6572435e",
+              "quote_hash": "56795a6f04caff960aeb33cbb136e61dd2b8f3b04d8cd4d25c7ad2c30ed4eeb8"
             }
           ]
         },
@@ -338,7 +425,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "It had previously raised $5.5 million in a seed round last May"
+              "quote": "It had previously raised $5.5 million in a seed round last May",
+              "source_content_hash": "bf887bd5437c51a7",
+              "quote_hash": "306f1f71f34452c9c3fdd18c8fb3e3edc1139a6f32c62294af4ec9d741527d58"
             }
           ]
         },
@@ -349,7 +438,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Rime is planning to expand its team of 35 people"
+              "quote": "Rime is planning to expand its team of 35 people",
+              "source_content_hash": "bf887bd5437c51a7",
+              "quote_hash": "c1ab97aa7b38e5dfe56ec578133bec6d6383a33b84fb93cb6d2024a39b3b8bb7"
             }
           ]
         },
@@ -360,7 +451,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bf64aef858152292",
-              "quote": "voice AI costs roughly $0.40 per call, compared to $7 to $12 per call for human agents"
+              "quote": "voice AI costs roughly $0.40 per call, compared to $7 to $12 per call for human agents",
+              "source_content_hash": "c698b2b6158dd48c",
+              "quote_hash": "59e1c87ee0f2756fe54756886a6267e9564d9d687b06575065e1d7bfba2c46b2"
             }
           ]
         }
@@ -372,7 +465,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4e390fe10f0d05aa",
-              "quote": "Lily and the Rime team have the rare combination of linguistic expertise and engineering rigor to build something genuinely defensible here. We are proud to double down."
+              "quote": "Lily and the Rime team have the rare combination of linguistic expertise and engineering rigor to build something genuinely defensible here. We are proud to double down.",
+              "source_content_hash": "24cca69d6572435e",
+              "quote_hash": "b2415386535333226d3d20039bd0c1e999ae9991a81484f6215f7c0a68b9cbf7"
             }
           ]
         }
@@ -388,7 +483,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3c23f338e9a9176f",
-                "quote": "The design patterns that will define the speech-to-speech era of AI haven't been built yet. Rime is doing the foundational work by combining frontier AI with deep linguistic expertise to create the speech infrastructure the next generation of AI products will rely on. Lily, Ares and Brooke are building Rime with the rare combination of world-class AI research and deep linguistic expertise to deploy real time voice people can trust in complex, regulated environments."
+                "quote": "The design patterns that will define the speech-to-speech era of AI haven't been built yet. Rime is doing the foundational work by combining frontier AI with deep linguistic expertise to create the speech infrastructure the next generation of AI products will rely on. Lily, Ares and Brooke are building Rime with the rare combination of world-class AI research and deep linguistic expertise to deploy real time voice people can trust in complex, regulated environments.",
+                "source_content_hash": "d609dc9c3caf2e30",
+                "quote_hash": "47ac42a50b3914d32dadf6c142c1575a6b69c1f40de0a1c9ba4801b9252bb2ad"
               }
             ]
           }
@@ -406,7 +503,22 @@
           "基础模型提供商（如 OpenAI）正在改进实时音频能力，未来可能将语音功能直接集成到 API 中，对 Rime 所在的专业语音层形成来自上游的挤压。"
         ],
         "related_direction_id": "",
-        "sector": "语音 AI 基础设施"
+        "sector": "语音 AI 基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Rime 能否通过自建录音棚采集的专有对话数据和音素级发音控制，在受监管行业（医疗、金融）建立语音模型的防御性壁垒。本轮融资验证的信号包括：月均处理近 1 亿次电话呼叫的生产规模、Mayo Clinic 等标杆客户、Miravoice 第三方研究证实的更低挂断率和最快完成时间，以及从种子轮领投方 Unusual Ventures 的持续加注。判断的证据边界限于已披露的客户数量、技术指标和投资方原话，尚未有独立财务数据或市场份额数据支撑。",
+          "evidence_signals": [
+            "月均处理近 1 亿次企业电话呼叫，证明生产级部署规模",
+            "获得 Mayo Clinic、Upstart 等受监管行业标杆客户",
+            "Miravoice 独立研究证实 Rime 语音的挂断率显著更低、完成时间最快",
+            "自建录音棚采集对话数据，形成数据采集的差异化路径",
+            "从语音到语音模型架构转型，降低编排依赖并减少延迟"
+          ],
+          "risks": [
+            "语音 AI 市场竞争激烈，ElevenLabs 估值已达 110 亿美元且总融资 7.81 亿美元，Vapi 等基础设施公司也在快速扩张，Rime 的 2400 万美元 A 轮融资规模相对较小，可能在资源投入上处于劣势。",
+            "基础模型提供商（如 OpenAI）正在改进实时音频能力，未来可能将语音功能直接集成到 API 中，对 Rime 所在的专业语音层形成来自上游的挤压。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -414,212 +526,112 @@
           "target_kind": "product",
           "research_name": "Rime 语音交互模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Rime has built a recording studio in San Francisco to collect its own conversational data rather than relying on scraping the web for audio."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Mist v3",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bf64aef858152292",
-              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte and deterministic pronunciation control for brand names and medical terminology"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Coda",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bf64aef858152292",
-              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Lily Clifford",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Founded in 2022 by former Stanford PhD student Lily Clifford, ex-Amazon Alexa engineer Brooke Larson, and Stanford engineer Ares Geovanos"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Brooke Larson",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "ex-Amazon Alexa engineer Brooke Larson"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ares Geovanos",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Stanford engineer Ares Geovanos"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "M13 Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "raised $24 million in a Series A funding round that was led by M13 Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Twilio Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Corazon Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cadenza Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3c23f338e9a9176f",
-              "quote": "Our Series A was led by M13, with participation from Corazon Capital, Unusual Ventures, Cadenza Ventures, and Twilio Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Founders You Should Know",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bf64aef858152292",
-              "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Cadenza Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bf64aef858152292",
-              "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Decagon",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "dedicated customer support shops like Decagon and Sierra"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Sierra",
           "canonical_entity_id": "EN-dca6ec9510fc0176",
-          "canonical_name": "Sierra",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "dedicated customer support shops like Decagon and Sierra"
-            }
-          ]
+          "canonical_name": "Sierra"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Vapi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bf64aef858152292",
-              "quote": "Vapi recently closed a $50M Series B at a $500M valuation, having processed one billion calls."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Deepgram",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7814afd7c39e886d",
-              "quote": "Large organizations are offloading calls to voice model developers like ElevenLabs and Deepgram"
-            },
-            {
-              "source_id": "FISRC-823a55431ee598b5",
-              "quote": "Deepgram has raised more than $130 million for enterprise speech recognition infrastructure."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -814,13 +826,46 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:55:04.294Z"
+      "published_at": "2026-07-26T14:55:04.294Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Coda",
+            "Mist v3",
+            "Rime 语音交互模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Ares Geovanos",
+            "Brooke Larson",
+            "Lily Clifford"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-64fb6d791e19d10a"
+      ],
+      "aggregation": {
+        "key": "EN-b0532e1af75cc4ab|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-3ffdd16ef6d6d628",
       "triggered_by_event_id": "EV-4da1a7c4d527eb69",
       "as_of_date": "2026-07-16",
@@ -838,7 +883,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "Adapter CEO Adam Ghetti didn’t expect to be building another startup"
+                "quote": "Adapter CEO Adam Ghetti didn’t expect to be building another startup",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "3eb7f634df9ac9834074e130b186bd68b311197719a213eb5fab40284b3d39d1"
               }
             ],
             "entity_id": null
@@ -849,7 +896,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "a prominent computer scientist focused on data science, professor David Bader (formerly of Georgia Tech, now at the New Jersey Institute of Technology) and a VC firm that had previously backed him, GV, called his bluff."
+                "quote": "a prominent computer scientist focused on data science, professor David Bader (formerly of Georgia Tech, now at the New Jersey Institute of Technology) and a VC firm that had previously backed him, GV, called his bluff.",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "1ff8c00007d9dc23e08551c3ba32ac084e8296a8238f5e685916ed875a7b5224"
               }
             ],
             "entity_id": null
@@ -861,14 +910,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "the startup employs 17 people"
+              "quote": "the startup employs 17 people",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "db8b5ccc3ca3b89da742ef7b20b0edb97764c9ab65bfaff73fb4f2adfbada749"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-74e051fb023f526b",
-            "quote": "Based in Austin, Texas, the startup employs 17 people"
+            "quote": "Based in Austin, Texas, the startup employs 17 people",
+            "source_content_hash": "c4b4aec73019eeb8",
+            "quote_hash": "9dc0741a24a96803b5fb7a162cf7e7865560d7180ad6bd03eed27aac71d5eae4"
           }
         ]
       },
@@ -884,7 +937,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors"
+                "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "918ca6b7204df55ee2a0ebea7cb4273f29d354276b90e6c473cd92d279be7154"
               }
             ],
             "entity_id": null
@@ -895,7 +950,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND)"
+                "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND)",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "0ae8479840fe2899d5df0731efac72d3e8c83a367e5d6cf5b4ac2182497cf4f0"
               }
             ],
             "entity_id": null
@@ -906,7 +963,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "Eric Schmidt’s family office Hillspire"
+                "quote": "Eric Schmidt’s family office Hillspire",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "ce2cf0464802115e4b9bd39744eebe6b80b82dedba55724942af86a56167aa58"
               }
             ],
             "entity_id": null
@@ -917,7 +976,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "Byers Capital"
+                "quote": "Byers Capital",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "8f9bb12f45a877354a9a78a8cae2d4fa5f2e400761c8651c8c25a198525e6b3d"
               }
             ],
             "entity_id": null
@@ -928,7 +989,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "the funds of former Lookout founder Kevin Patrick Mahaffey"
+                "quote": "the funds of former Lookout founder Kevin Patrick Mahaffey",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "dc238b227540f7583ad3150658a17da70f984bfcbd50554d20eb692246288fcc"
               }
             ],
             "entity_id": null
@@ -939,7 +1002,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "and Shana Fischer"
+                "quote": "and Shana Fischer",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "64fe6cbdce0cf93bf92d83e1158375284bd4b6e8a693c7620eb247ad0ed76527"
               }
             ],
             "entity_id": null
@@ -950,7 +1015,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "personal investors including Paul Judge"
+                "quote": "personal investors including Paul Judge",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "58f23eae3368108124818ff3d1c486d432e6115993f15dca8a618a1a3742ebed"
               }
             ],
             "entity_id": null
@@ -961,7 +1028,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "Zach Sims"
+                "quote": "Zach Sims",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "3e7c47a862fd87cabb888a6f65b08d8f254f5de08d3e1fdff7809039c676ab7c"
               }
             ],
             "entity_id": null
@@ -972,7 +1041,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "Ted Schlein"
+                "quote": "Ted Schlein",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "cfd6653fa5114388da4119a88f80211fa4a2e89d414464ca5074dfdfd8f9775d"
               }
             ],
             "entity_id": null
@@ -981,7 +1052,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-74e051fb023f526b",
-            "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors including Eric Schmidt’s family office Hillspire, Byers Capital, the funds of former Lookout founder Kevin Patrick Mahaffey and Shana Fischer, and personal investors including Paul Judge, Zach Sims and Ted Schlein."
+            "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors including Eric Schmidt’s family office Hillspire, Byers Capital, the funds of former Lookout founder Kevin Patrick Mahaffey and Shana Fischer, and personal investors including Paul Judge, Zach Sims and Ted Schlein.",
+            "source_content_hash": "c4b4aec73019eeb8",
+            "quote_hash": "18b4724967e1e2aea1ca6d3c6cbe5f885ee33c266df3c7c237f275b71568c943"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4da1a7c4d527eb69",
+            "round_original": "种子轮",
+            "amount": "1780万美元",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors including Eric Schmidt’s family office Hillspire, Byers Capital, the funds of former Lookout founder Kevin Patrick Mahaffey and Shana Fischer, and personal investors including Paul Judge, Zach Sims and Ted Schlein.",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "18b4724967e1e2aea1ca6d3c6cbe5f885ee33c266df3c7c237f275b71568c943"
+              }
+            ]
           }
         ]
       },
@@ -999,11 +1091,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Adapter is making available a developer tool and API, called Adapter Mind, intended for developers and tinkerers to start using immediately to connect to existing applications, and to spin up new ones."
+              "quote": "Adapter is making available a developer tool and API, called Adapter Mind, intended for developers and tinkerers to start using immediately to connect to existing applications, and to spin up new ones.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "edc12c6e0619ab5dbbc13edb9100ecaa862cd5078e54f805da84e30d361115c8"
             },
             {
               "source_id": "FISRC-95f81a9d87da2248",
-              "quote": "Adapter is the cognition layer for AI. Connect your data — from your life, your business, or your product — and Adapter connects the dots and builds a constantly-improving graph of your world. Ask a hard question and get a nuanced answer with cited sources in seconds."
+              "quote": "Adapter is the cognition layer for AI. Connect your data — from your life, your business, or your product — and Adapter connects the dots and builds a constantly-improving graph of your world. Ask a hard question and get a nuanced answer with cited sources in seconds.",
+              "source_content_hash": "fa5b8fcb6de57585",
+              "quote_hash": "a1c7a205e5d57afae2f811ff7aecd5003d4b22ebb5c4a5e27196701dce38db92"
             }
           ],
           "entity_id": null
@@ -1019,7 +1115,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "It’s also shared with test users a consumer-facing harness, called Adapter Life, as an example of a tool that can build upon Adapter to operate like a super-charged chatbot or agentic assistant, communicated with via iMessage or WhatsApp."
+              "quote": "It’s also shared with test users a consumer-facing harness, called Adapter Life, as an example of a tool that can build upon Adapter to operate like a super-charged chatbot or agentic assistant, communicated with via iMessage or WhatsApp.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "c01552fe996e7ef8b268b7a564d98bdbfb50fe828b823cf02d86ad4fc83201dd"
             }
           ],
           "entity_id": null
@@ -1033,9 +1131,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Erik Nordlander, a general partner at GV who previously backed Ghetti’s last startup, Ionic Security, has used it to triage his inbox. His Adapter flags qualified experts and executives in his network to help answer inbound requests from founders, beyond what he says he can do in LinkedIn."
+              "quote": "Erik Nordlander, a general partner at GV who previously backed Ghetti’s last startup, Ionic Security, has used it to triage his inbox. His Adapter flags qualified experts and executives in his network to help answer inbound requests from founders, beyond what he says he can do in LinkedIn.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "da7e92d4d556fc718ef54ca36b21fa51d496adff8bf653aba4dffb86a442a759"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Kevin Patrick Mahaffey (前Lookout创始人)",
@@ -1044,9 +1145,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Mahaffey, the former Lookout founder and an early backer and user, asks Adapter to serve as a research assistant to update him on any developments in geothermal energy, a current area of focus, as well as for reviews of mountain e-bikes using a new motor he finds promising."
+              "quote": "Mahaffey, the former Lookout founder and an early backer and user, asks Adapter to serve as a research assistant to update him on any developments in geothermal energy, a current area of focus, as well as for reviews of mountain e-bikes using a new motor he finds promising.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "56785e3a7d02416db2802f1e27d0f0a523634f252d84d6bc0c2eaea16bd38135"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Adam Ghetti (Adapter CEO)",
@@ -1055,9 +1159,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "He’s also used Adapter to write investor updates that know the depth of his relationship with each investor; on the personal side, Adapter Life (his is called Ghetti Life) knows everything about his kids’ pediatrician visits."
+              "quote": "He’s also used Adapter to write investor updates that know the depth of his relationship with each investor; on the personal side, Adapter Life (his is called Ghetti Life) knows everything about his kids’ pediatrician visits.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "9dc4175149863ac79bb07c00d9c8ccfc6cb3293006cad6149933d7877c11cd8d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1071,9 +1178,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Adapter’s CEO says it currently partners with a number of the big labs behind the scenes, but explicitly not OpenAI. (“Our entire mission is built around trust, transparency and sovereignty. OpenAI does not appear well aligned to these,” Ghetti says.)"
+              "quote": "Adapter’s CEO says it currently partners with a number of the big labs behind the scenes, but explicitly not OpenAI. (“Our entire mission is built around trust, transparency and sovereignty. OpenAI does not appear well aligned to these,” Ghetti says.)",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "2d8cbafe81289a87664662bcb957b0331b4e8a41209ac5b6e2562c091f21e411"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "Anthropic",
@@ -1085,13 +1195,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Users can drop Adapter’s model context protocol, or MCP, into whatever tools they prefer, like OpenAI’s Codex, Anthropic’s Claude Cowork, or Cursor."
+              "quote": "Users can drop Adapter’s model context protocol, or MCP, into whatever tools they prefer, like OpenAI’s Codex, Anthropic’s Claude Cowork, or Cursor.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "ef67900004c013ea172f6ff8aee2f22aa0356191b63d71d9599e8a88bcb742b6"
             },
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Adapter users who access models from Anthropic, OpenAI or elsewhere don’t share their specific data with the LLM, Ghetti notes, because Adapter sends the models an aggregate stream of traffic."
+              "quote": "Adapter users who access models from Anthropic, OpenAI or elsewhere don’t share their specific data with the LLM, Ghetti notes, because Adapter sends the models an aggregate stream of traffic.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "5eb694c13f76f2f63d0d6d44ce37956a793b0cf68a3ccc756e25cb838a56711a"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         }
       ],
       "metrics": [
@@ -1102,7 +1217,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "has raised $17.8 million in capital to date"
+              "quote": "has raised $17.8 million in capital to date",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "5089c3ed8e688c16c2fbaaf5cb3a825f492b8e3a4a821fc39cb3c23ef092c17b"
             }
           ]
         },
@@ -1113,7 +1230,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "the startup employs 17 people"
+              "quote": "the startup employs 17 people",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "db8b5ccc3ca3b89da742ef7b20b0edb97764c9ab65bfaff73fb4f2adfbada749"
             }
           ]
         },
@@ -1124,7 +1243,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "after three and a half years of operating in stealth"
+              "quote": "after three and a half years of operating in stealth",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "d4eba5c16ab83f108ea36d2a6f5d2eb0a71d428a4ee0c8a0f3310380e0508191"
             }
           ]
         }
@@ -1136,7 +1257,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "“It was obvious to us that 10,000 other people were going to go do the content thing,” he says."
+              "quote": "“It was obvious to us that 10,000 other people were going to go do the content thing,” he says.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "55a0daea7bbd035466e7db51b1aa8381e9572177abb3d87710d69087a4cd673f"
             }
           ]
         },
@@ -1146,7 +1269,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "“We don’t want to produce many things, but the things we produce, we hope will enable a whole new world of new things to do,” he says."
+              "quote": "“We don’t want to produce many things, but the things we produce, we hope will enable a whole new world of new things to do,” he says.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "1214f12eb2787e02247d36415d6c82592bd67e4d0d997be04f16c826c8b48c86"
             }
           ]
         },
@@ -1156,7 +1281,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "“You should have sovereignty over your coal mine,” he argues."
+              "quote": "“You should have sovereignty over your coal mine,” he argues.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "f0c3cbac9cf3714bb47e0e259f71bef767b704bb990297b5e48170f490ca44a3"
             }
           ]
         },
@@ -1166,7 +1293,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "“We need a world with less noise, not one with more,” he argues."
+              "quote": "“We need a world with less noise, not one with more,” he argues.",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "832481eb38053b5389ba29e069b9ddba80253d5d979acbe58d2f803c18ffedf4"
             }
           ]
         },
@@ -1176,7 +1305,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74e051fb023f526b",
-              "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”"
+              "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”",
+              "source_content_hash": "c4b4aec73019eeb8",
+              "quote_hash": "7a579be5c1e7268fe5d9ebd56d2b5bc29865576a0d8cd2ee96c637d0581749d4"
             }
           ]
         }
@@ -1192,7 +1323,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74e051fb023f526b",
-                "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”"
+                "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”",
+                "source_content_hash": "c4b4aec73019eeb8",
+                "quote_hash": "7a579be5c1e7268fe5d9ebd56d2b5bc29865576a0d8cd2ee96c637d0581749d4"
               }
             ]
           }
@@ -1209,7 +1342,21 @@
           "要求用户将个人和工作数据集中托管，尽管强调加密验证和数据主权，但用户信任建立门槛极高。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施/数据主权与认知层"
+        "sector": "AI基础设施/数据主权与认知层",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“认知即服务”能否成为AI应用的新基础设施层，其价值主张在于通过CPU托管的私有知识图谱实现低成本、高上下文理解与数据主权控制。当前融资所依赖的已验证信号包括：由GV领投的1780万美元种子轮融资、3.5年隐秘研发后推出的开发者工具Adapter Mind、以及早期用户（如GV合伙人和前Lookout创始人）在真实工作流中的使用案例。然而，这些信号仅来自有限的测试用户和投资方背书，尚未有大规模市场采用或第三方收入数据验证。",
+          "evidence_signals": [
+            "完成1780万美元种子轮融资，投资方包括GV、Bond Partners、Hillspire等",
+            "经过3.5年隐秘研发，推出面向开发者的Adapter Mind API和工具",
+            "早期用户包括GV合伙人Erik Nordlander和前Lookout创始人Kevin Patrick Mahaffey，用于收件箱分类、投资者更新和研究辅助等具体场景",
+            "声称其知识图谱因使用CPU而非GPU，设置和维护成本远低于模型令牌支出"
+          ],
+          "risks": [
+            "产品定位宽泛且雄心勃勃，可能面临“缺乏杀手级应用”的风险，导致无法落地而失败。",
+            "要求用户将个人和工作数据集中托管，尽管强调加密验证和数据主权，但用户信任建立门槛极高。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1217,242 +1364,126 @@
           "target_kind": "product",
           "research_name": "Adapter Mind",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Adapter is making available a developer tool and API, called Adapter Mind, intended for developers and tinkerers to start using immediately to connect to existing applications, and to spin up new ones."
-            },
-            {
-              "source_id": "FISRC-95f81a9d87da2248",
-              "quote": "Adapter is the cognition layer for AI. Connect your data — from your life, your business, or your product — and Adapter connects the dots and builds a constantly-improving graph of your world. Ask a hard question and get a nuanced answer with cited sources in seconds."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Adapter Life",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "It’s also shared with test users a consumer-facing harness, called Adapter Life, as an example of a tool that can build upon Adapter to operate like a super-charged chatbot or agentic assistant, communicated with via iMessage or WhatsApp."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Adam Ghetti",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Adapter CEO Adam Ghetti didn’t expect to be building another startup"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "David Bader",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "a prominent computer scientist focused on data science, professor David Bader (formerly of Georgia Tech, now at the New Jersey Institute of Technology) and a VC firm that had previously backed him, GV, called his bluff."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GV",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bond Partners (BOND旗下早期基金)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hillspire (Eric Schmidt家族办公室)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Eric Schmidt’s family office Hillspire"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Byers Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Byers Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kevin Patrick Mahaffey基金",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "the funds of former Lookout founder Kevin Patrick Mahaffey"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Shana Fischer基金",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "and Shana Fischer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Paul Judge",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "personal investors including Paul Judge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Zach Sims",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Zach Sims"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Ted Schlein",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Ted Schlein"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Erik Nordlander (GV合伙人)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Erik Nordlander, a general partner at GV who previously backed Ghetti’s last startup, Ionic Security, has used it to triage his inbox. His Adapter flags qualified experts and executives in his network to help answer inbound requests from founders, beyond what he says he can do in LinkedIn."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Kevin Patrick Mahaffey (前Lookout创始人)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Mahaffey, the former Lookout founder and an early backer and user, asks Adapter to serve as a research assistant to update him on any developments in geothermal energy, a current area of focus, as well as for reviews of mountain e-bikes using a new motor he finds promising."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Adam Ghetti (Adapter CEO)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "He’s also used Adapter to write investor updates that know the depth of his relationship with each investor; on the personal side, Adapter Life (his is called Ghetti Life) knows everything about his kids’ pediatrician visits."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Adapter’s CEO says it currently partners with a number of the big labs behind the scenes, but explicitly not OpenAI. (“Our entire mission is built around trust, transparency and sovereignty. OpenAI does not appear well aligned to these,” Ghetti says.)"
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Users can drop Adapter’s model context protocol, or MCP, into whatever tools they prefer, like OpenAI’s Codex, Anthropic’s Claude Cowork, or Cursor."
-            },
-            {
-              "source_id": "FISRC-74e051fb023f526b",
-              "quote": "Adapter users who access models from Anthropic, OpenAI or elsewhere don’t share their specific data with the LLM, Ghetti notes, because Adapter sends the models an aggregate stream of traffic."
-            }
-          ]
+          "canonical_name": "Anthropic"
         }
       ],
       "funding_history": [
@@ -1502,13 +1533,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:55:03.702Z"
+      "published_at": "2026-07-26T14:55:03.702Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Adapter Life",
+            "Adapter Mind"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Adam Ghetti",
+            "David Bader"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-4da1a7c4d527eb69"
+      ],
+      "aggregation": {
+        "key": "EN-ae1eae1d76e5b7c8|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f9af3dfc3109f5ee",
       "triggered_by_event_id": "EV-9046a75f19913ca5",
       "as_of_date": "2026-07-16",
@@ -1526,11 +1588,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-88cec30382296a0c",
-                "quote": "Co-founded by serial entrepreneur Shai Morag"
+                "quote": "Co-founded by serial entrepreneur Shai Morag",
+                "source_content_hash": "c175c57e420a1b4c",
+                "quote_hash": "605606fe510ddbdba0b9effc4c83dcb7082415f6c90f5a9f862b38ce8aed2c09"
               },
               {
                 "source_id": "FISRC-71f2f6c539ed68d8",
-                "quote": "Shai Morag, co-founder and CEO, Oak"
+                "quote": "Shai Morag, co-founder and CEO, Oak",
+                "source_content_hash": "53ffa7f9b1f42ac0",
+                "quote_hash": "fe7ceec98655e90e3df4799d058cb70046af11a3bd7e55dee5294fe7060620ca"
               }
             ],
             "entity_id": null
@@ -1541,7 +1607,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-88cec30382296a0c",
-                "quote": "Oak's other co-founder, chief product officer Tal Marom"
+                "quote": "Oak's other co-founder, chief product officer Tal Marom",
+                "source_content_hash": "c175c57e420a1b4c",
+                "quote_hash": "bed47140a899f61b4091c1b96496622a1a7c15ef9614629b5ef8f39e90510a95"
               }
             ],
             "entity_id": null
@@ -1553,18 +1621,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "While in stealth, the two also built a team of 50 people"
+              "quote": "While in stealth, the two also built a team of 50 people",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "301d1d9c136f6d5653539906e2f4a965ff80ef1a3450f18ceecf93e302a8bdc1"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-88cec30382296a0c",
-            "quote": "Israeli startup Oak is stepping out of stealth to fill, it says."
+            "quote": "Israeli startup Oak is stepping out of stealth to fill, it says.",
+            "source_content_hash": "c175c57e420a1b4c",
+            "quote_hash": "3a0a722cc34f0364bef78ff88aaa34d719d61236c826d5c6d241451744a7c37c"
           },
           {
             "source_id": "FISRC-71f2f6c539ed68d8",
-            "quote": "Tel Aviv, Israel-based Oak"
+            "quote": "Tel Aviv, Israel-based Oak",
+            "source_content_hash": "53ffa7f9b1f42ac0",
+            "quote_hash": "9767f3a8956f88854641b408c34a5bb98b1602e45209cbb227f2e756a31c8bdd"
           }
         ]
       },
@@ -1580,7 +1654,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-88cec30382296a0c",
-                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
+                "source_content_hash": "c175c57e420a1b4c",
+                "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
               }
             ],
             "entity_id": null
@@ -1591,7 +1667,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-88cec30382296a0c",
-                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
+                "source_content_hash": "c175c57e420a1b4c",
+                "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
               }
             ],
             "entity_id": null
@@ -1602,7 +1680,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-88cec30382296a0c",
-                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
+                "source_content_hash": "c175c57e420a1b4c",
+                "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
               }
             ],
             "entity_id": null
@@ -1611,11 +1691,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-88cec30382296a0c",
-            "quote": "backed by $60 million in seed funding that it raised late last year"
+            "quote": "backed by $60 million in seed funding that it raised late last year",
+            "source_content_hash": "c175c57e420a1b4c",
+            "quote_hash": "21a5afb2c2b314e3f8ebfa6e9b92ff7f3dd772969285ac40558896df55c9292c"
           },
           {
             "source_id": "FISRC-4f7729f74a79734a",
-            "quote": "Oak came out of stealth July 15 backed by $60 million in funding"
+            "quote": "Oak came out of stealth July 15 backed by $60 million in funding",
+            "source_content_hash": "d430980f71914b3f",
+            "quote_hash": "d066be38d7b9177b34be402eb8ce5cbbc40d49af1754c86d92fe63b3c363357b"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-9046a75f19913ca5",
+            "round_original": "种子轮",
+            "amount": "$60 million",
+            "announced_at": "2026-07-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-88cec30382296a0c",
+                "quote": "backed by $60 million in seed funding that it raised late last year",
+                "source_content_hash": "c175c57e420a1b4c",
+                "quote_hash": "21a5afb2c2b314e3f8ebfa6e9b92ff7f3dd772969285ac40558896df55c9292c"
+              },
+              {
+                "source_id": "FISRC-4f7729f74a79734a",
+                "quote": "Oak came out of stealth July 15 backed by $60 million in funding",
+                "source_content_hash": "d430980f71914b3f",
+                "quote_hash": "d066be38d7b9177b34be402eb8ce5cbbc40d49af1754c86d92fe63b3c363357b"
+              }
+            ]
           }
         ]
       },
@@ -1634,23 +1743,33 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "building a unified control plane that governs identity across an organization"
+              "quote": "building a unified control plane that governs identity across an organization",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "3858b38f62f59bcb7b5ab959c0370092a952598f68de7fdc44f4945aa186e894"
             },
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "an AI connector framework that maps access to actual app usage and removes permissions that are no longer needed in real time, rather than only during periodic reviews"
+              "quote": "an AI connector framework that maps access to actual app usage and removes permissions that are no longer needed in real time, rather than only during periodic reviews",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "e0a5fd3962771bb67d353677e679c4b274d343c053b501aaade3ecca819734f2"
             },
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Oak instead is building an AI-native platform designed around continuous risk assessment, automation and comprehensive visibility that's capable of managing human users, machine identities, service accounts and AI agents through a unified approach."
+              "quote": "Oak instead is building an AI-native platform designed around continuous risk assessment, automation and comprehensive visibility that's capable of managing human users, machine identities, service accounts and AI agents through a unified approach.",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "f40ad7fbe61ba20f114c4ff395785a893d6593744e0fba5a07fe0d13d8e1e920"
             },
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "AI-assisted development reduces connector creation from months to hours"
+              "quote": "AI-assisted development reduces connector creation from months to hours",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "d67e161be38a8b51dce21b2431a9d2a7cab9a29ba80175f65810790fd1f28fc9"
             },
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "We also built a framework of AI agents that work for you as a force multiplier"
+              "quote": "We also built a framework of AI agents that work for you as a force multiplier",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "71d9763a4369513d5bbb66cb42201a9e7611ef175a24efa22877e1503afab93d"
             }
           ],
           "entity_id": null
@@ -1668,9 +1787,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
+              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "b25acc4cee874a7f50b99ec3b0adf632975b231706d67fa71ce41a765761f9f9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Saviynt",
@@ -1682,9 +1804,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
+              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "b25acc4cee874a7f50b99ec3b0adf632975b231706d67fa71ce41a765761f9f9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Veza",
@@ -1696,9 +1821,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "newer vendors entering the market before the rise of generative AI like Veza continue to face many of the same architectural limitations as legacy platforms"
+              "quote": "newer vendors entering the market before the rise of generative AI like Veza continue to face many of the same architectural limitations as legacy platforms",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "463b01b2a73b86dbca622fc0b449c7ec358683dc1802c3a51fc7486599182e85"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Okta",
@@ -1710,9 +1838,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f7729f74a79734a",
-              "quote": "identity and access-management platforms like Okta and Auth0 were built around the assumption of a human logging in with credentials, MFA and role-based permissions tied to a person"
+              "quote": "identity and access-management platforms like Okta and Auth0 were built around the assumption of a human logging in with credentials, MFA and role-based permissions tied to a person",
+              "source_content_hash": "d430980f71914b3f",
+              "quote_hash": "313e5bd1d3700e9f3cca8e6579ef34a7711e7a1d06dd68c792ab337bc0a6975a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Microsoft",
@@ -1724,9 +1855,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f7729f74a79734a",
-              "quote": "Okta, Auth0's parent Okta, and Microsoft's Entra ID all have the distribution and enterprise relationships to bolt agent-identity features onto their existing platforms"
+              "quote": "Okta, Auth0's parent Okta, and Microsoft's Entra ID all have the distribution and enterprise relationships to bolt agent-identity features onto their existing platforms",
+              "source_content_hash": "d430980f71914b3f",
+              "quote_hash": "4bb255ed3f6d1f6930ac812ecab51b011370072f92d3de1ef7edb2c452de8661"
             }
-          ]
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
         }
       ],
       "metrics": [
@@ -1737,7 +1871,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "backed by $60 million in seed funding"
+              "quote": "backed by $60 million in seed funding",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "e1c91265c234143aa304f482702d04c041cc22d5fabf8cdb2b0f121ed51a5251"
             }
           ]
         },
@@ -1748,7 +1884,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "While in stealth, the two also built a team of 50 people"
+              "quote": "While in stealth, the two also built a team of 50 people",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "301d1d9c136f6d5653539906e2f4a965ff80ef1a3450f18ceecf93e302a8bdc1"
             }
           ]
         },
@@ -1759,7 +1897,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "he had three exits, including selling cyber startup Secdo to Palo Alto Networks in 2018"
+              "quote": "he had three exits, including selling cyber startup Secdo to Palo Alto Networks in 2018",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "f86d898a480e73bfd32c50f42687f5cec800b9125388026bbf3aa6c507fe0b13"
             }
           ]
         },
@@ -1770,7 +1910,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "Tenable acquired his cloud identity and security startup Ermetic for $265 million in 2023"
+              "quote": "Tenable acquired his cloud identity and security startup Ermetic for $265 million in 2023",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "e5ea89b45eca9fc02318ca01622354d61ce2254a2e9f397ecb491c11d9aa8501"
             }
           ]
         },
@@ -1781,7 +1923,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "the startup spent months talking to 100 CISOs and IAM leaders before building its product"
+              "quote": "the startup spent months talking to 100 CISOs and IAM leaders before building its product",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "26a26626e92007ad38b70b818233c76c09a66d0f092ecbfa644fda12a382466b"
             }
           ]
         },
@@ -1792,7 +1936,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "Morag, a former army major who spent more than two decades in cybersecurity"
+              "quote": "Morag, a former army major who spent more than two decades in cybersecurity",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "efbceae355c4a44b7b1eaf8bd017fc1b5ec9a9b5a0c028f0e25eae38310f6920"
             }
           ]
         },
@@ -1803,7 +1949,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "AI-assisted development reduces connector creation from months to hours"
+              "quote": "AI-assisted development reduces connector creation from months to hours",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "d67e161be38a8b51dce21b2431a9d2a7cab9a29ba80175f65810790fd1f28fc9"
             }
           ]
         },
@@ -1814,7 +1962,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Morag sold endpoint detection and response startup Secdo to Palo Alto Networks in April 2018 for $82.7 million"
+              "quote": "Morag sold endpoint detection and response startup Secdo to Palo Alto Networks in April 2018 for $82.7 million",
+              "source_content_hash": "53ffa7f9b1f42ac0",
+              "quote_hash": "48ea872112369625741ce54791e1bf87a762b004f65c70cf801e0b579a2c6847"
             }
           ]
         }
@@ -1826,7 +1976,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "Our vision is to be born as a giant"
+              "quote": "Our vision is to be born as a giant",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "3cb3eb09182c53c05b1dc52725b91a1a04f916778735b27ff8e665ac2c34759b"
             }
           ]
         },
@@ -1836,7 +1988,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "I will go big or go home"
+              "quote": "I will go big or go home",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "c6df8f5f7e046206b91396fa3630b251998b9fda64267734cc16f59559d91444"
             }
           ]
         },
@@ -1846,7 +2000,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-88cec30382296a0c",
-              "quote": "I knew he had it in him to build another company, but this time even bigger and even better."
+              "quote": "I knew he had it in him to build another company, but this time even bigger and even better.",
+              "source_content_hash": "c175c57e420a1b4c",
+              "quote_hash": "ab80a4883486e9cfdb91370887a6f3f826a1b3310563e38cb4d744c9c92356ce"
             }
           ]
         }
@@ -1866,7 +2022,22 @@
           "身份管理领域供应商锁定程度深，新进入者需要克服企业客户的高转换成本"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI智能体身份与访问管理基础设施"
+        "sector": "AI智能体身份与访问管理基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI智能体身份治理作为一个独立的新品类，而非现有IAM厂商的功能附加。6000万美元的种子轮融资规模远超历史标准，表明投资者认为智能体身份需要专用基础设施，而非在Okta或Auth0等现有平台上修补。已验证信号包括：产品已正式发布并部署于企业客户；创始人有三次成功退出记录，包括将Ermetic以2.65亿美元出售给Tenable；团队在隐身期间已与100位CISO和IAM领导者进行产品验证。判断的证据边界在于：客户名称未披露，无法验证企业部署的深度和广度；现有IAM巨头Okta、Microsoft拥有分销渠道和企业关系，可能在两个季度内推出竞争功能。",
+          "evidence_signals": [
+            "产品已正式发布并部署于企业客户",
+            "创始人有三次成功退出记录，包括将Ermetic以2.65亿美元出售给Tenable",
+            "团队在隐身期间已与100位CISO和IAM领导者进行产品验证",
+            "AI辅助开发将连接器创建时间从数月缩短至数小时，形成技术护城河"
+          ],
+          "risks": [
+            "Okta、Microsoft Entra ID等现有IAM巨头拥有分销渠道和企业关系，可能在未来两个季度内推出智能体身份功能，压缩Oak的市场窗口",
+            "客户名称未披露，无法验证企业部署的深度和广度，产品市场匹配度尚未被公开证实",
+            "身份管理领域供应商锁定程度深，新进入者需要克服企业客户的高转换成本"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1874,163 +2045,77 @@
           "target_kind": "product",
           "research_name": "统一身份控制平面",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-88cec30382296a0c",
-              "quote": "building a unified control plane that governs identity across an organization"
-            },
-            {
-              "source_id": "FISRC-88cec30382296a0c",
-              "quote": "an AI connector framework that maps access to actual app usage and removes permissions that are no longer needed in real time, rather than only during periodic reviews"
-            },
-            {
-              "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Oak instead is building an AI-native platform designed around continuous risk assessment, automation and comprehensive visibility that's capable of managing human users, machine identities, service accounts and AI agents through a unified approach."
-            },
-            {
-              "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "AI-assisted development reduces connector creation from months to hours"
-            },
-            {
-              "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "We also built a framework of AI agents that work for you as a force multiplier"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Shai Morag",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-88cec30382296a0c",
-              "quote": "Co-founded by serial entrepreneur Shai Morag"
-            },
-            {
-              "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Shai Morag, co-founder and CEO, Oak"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tal Marom",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-88cec30382296a0c",
-              "quote": "Oak's other co-founder, chief product officer Tal Marom"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AlphaDrive Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-88cec30382296a0c",
-              "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hetz Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-88cec30382296a0c",
-              "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "天使投资人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-88cec30382296a0c",
-              "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "SailPoint",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Saviynt",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Veza",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-71f2f6c539ed68d8",
-              "quote": "newer vendors entering the market before the rise of generative AI like Veza continue to face many of the same architectural limitations as legacy platforms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Okta",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f7729f74a79734a",
-              "quote": "identity and access-management platforms like Okta and Auth0 were built around the assumption of a human logging in with credentials, MFA and role-based permissions tied to a person"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Microsoft",
           "canonical_entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f7729f74a79734a",
-              "quote": "Okta, Auth0's parent Okta, and Microsoft's Entra ID all have the distribution and enterprise relationships to bolt agent-identity features onto their existing platforms"
-            }
-          ]
+          "canonical_name": "Microsoft"
         }
       ],
       "funding_history": [
@@ -2092,13 +2177,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:54:00.287Z"
+      "published_at": "2026-07-26T14:54:00.287Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "统一身份控制平面"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Shai Morag",
+            "Tal Marom"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9046a75f19913ca5"
+      ],
+      "aggregation": {
+        "key": "EN-df877645404747cb|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-516531801f5798bd",
       "triggered_by_event_id": "EV-1a6688afdfd108ef",
       "as_of_date": "2026-07-16",
@@ -2116,7 +2231,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-07d25b80d4335f93",
-                "quote": "Emergent co-founder and chief executive Mukund Jha"
+                "quote": "Emergent co-founder and chief executive Mukund Jha",
+                "source_content_hash": "27b672d0df3a3b27",
+                "quote_hash": "08dfab1f55adae7aa9fb4b6efb9f939e79d463f0e5712cada37adf5707bd77b9"
               }
             ],
             "entity_id": null
@@ -2127,7 +2244,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-07d25b80d4335f93",
-                "quote": "Jha started Emergent with his brother Madhav Jha (CTO) in June last year."
+                "quote": "Jha started Emergent with his brother Madhav Jha (CTO) in June last year.",
+                "source_content_hash": "27b672d0df3a3b27",
+                "quote_hash": "b810e8281c5c026eda3d7b2d479270467746955955685b2f0e2831ed3a933e0c"
               }
             ],
             "entity_id": null
@@ -2139,18 +2258,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Emergent has about 200 employees"
+              "quote": "Emergent has about 200 employees",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "8004126c6586bf97f33fa4714f1ba1859141cdbc2367b2415ab814fb10b7c937"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-38a009e65abe6187",
-            "quote": "Emergent, a San Francisco, CA-based provider of an AI software creation platform"
+            "quote": "Emergent, a San Francisco, CA-based provider of an AI software creation platform",
+            "source_content_hash": "92481ea1f8c85903",
+            "quote_hash": "44ab8fc09954f91de062d09212899c7ce8c8b0c59d58ff8865f3d6e6aa2c91bf"
           },
           {
             "source_id": "FISRC-07d25b80d4335f93",
-            "quote": "Emergent is looking to gain a share of this crowded market by targeting entrepreneurs looking to start new businesses and small and medium-sized companies that have traditionally relied on email, spreadsheets, and messaging apps to run their operations."
+            "quote": "Emergent is looking to gain a share of this crowded market by targeting entrepreneurs looking to start new businesses and small and medium-sized companies that have traditionally relied on email, spreadsheets, and messaging apps to run their operations.",
+            "source_content_hash": "27b672d0df3a3b27",
+            "quote_hash": "f74cb08296e36358f503e5343704f49d75ead8639c7a94cf4719947f97036971"
           }
         ]
       },
@@ -2166,7 +2291,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-07d25b80d4335f93",
-                "quote": "The funding round was led by private equity firm Creaegis."
+                "quote": "The funding round was led by private equity firm Creaegis.",
+                "source_content_hash": "27b672d0df3a3b27",
+                "quote_hash": "ceb891ebdf3633eaa061f504fe9f8638efef68087b323b39588b10d20200619d"
               }
             ],
             "entity_id": null
@@ -2175,7 +2302,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-07d25b80d4335f93",
-            "quote": "Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.5 billion post-money valuation, a five-fold jump in six months."
+            "quote": "Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.5 billion post-money valuation, a five-fold jump in six months.",
+            "source_content_hash": "27b672d0df3a3b27",
+            "quote_hash": "b65ecb36ed068ea749c24cf3281505cf5da863b955f91c624e48efe67b9bed81"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-1a6688afdfd108ef",
+            "round_original": "C轮",
+            "amount": "1.3亿美元",
+            "announced_at": "2026-07-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07d25b80d4335f93",
+                "quote": "Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.5 billion post-money valuation, a five-fold jump in six months.",
+                "source_content_hash": "27b672d0df3a3b27",
+                "quote_hash": "b65ecb36ed068ea749c24cf3281505cf5da863b955f91c624e48efe67b9bed81"
+              }
+            ]
           }
         ]
       },
@@ -2193,11 +2341,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-38a009e65abe6187",
-              "quote": "Emergent provides a platform that allows to create full-stack, production-ready applications using autonomous AI agents, working like full development teams that design, build, test, and scale software end to end."
+              "quote": "Emergent provides a platform that allows to create full-stack, production-ready applications using autonomous AI agents, working like full development teams that design, build, test, and scale software end to end.",
+              "source_content_hash": "92481ea1f8c85903",
+              "quote_hash": "235ce4d0a90afe0072406079714629cf315f01a289b5627f48b34ede9f13ef6e"
             },
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "non-technical users need a platform that handles deployment, hosting, testing, and debugging alongside the work of programming."
+              "quote": "non-technical users need a platform that handles deployment, hosting, testing, and debugging alongside the work of programming.",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "d1c142426eccc9a7a9041f2e189bce2d6018a15ca014481097f8593c26cb7274"
             }
           ],
           "entity_id": null
@@ -2211,9 +2363,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Customers include trucking companies building software to track shipments"
+              "quote": "Customers include trucking companies building software to track shipments",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "569617a9f43732459a33843b3a3dce38dbe04d96906be36a07a2e14cae3e4cc6"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "某工厂",
@@ -2222,9 +2377,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "factories"
+              "quote": "factories",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "e0e1e0673f424c9f54022092f16b7e7d70668e2a21101a2c95b494d94d409574"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "某建筑企业",
@@ -2233,9 +2391,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "construction businesses creating enterprise resource planning systems"
+              "quote": "construction businesses creating enterprise resource planning systems",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "6297aea9dac44d2048e7052027e18f8dc8d42982ed40945ad47d26b84a4a0513"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "某物业管理公司",
@@ -2244,9 +2405,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "property managers developing internal customer management tools"
+              "quote": "property managers developing internal customer management tools",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "b822f3a5da03304c33e49f2507b5ff0dc33b719e19d8182f6aa0f041d4d3a652"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "某美国酒店公司",
@@ -2255,9 +2419,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6cd9ac8be26effd6",
-              "quote": "For a US-based hospitality company with nearly 4,800 employees, the pressure to ship reliable, guest-facing product features quickly and without gaps was constant."
+              "quote": "For a US-based hospitality company with nearly 4,800 employees, the pressure to ship reliable, guest-facing product features quickly and without gaps was constant.",
+              "source_content_hash": "547ac45c3facb4f4",
+              "quote_hash": "0776502c05c30dfdd3d71f202e52044e762773290f4fab10144050ad3b490a61"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -2269,7 +2436,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Jha said the startup has reached an annual run-rate revenue of $120 million, up 70% in the last four months"
+              "quote": "Jha said the startup has reached an annual run-rate revenue of $120 million, up 70% in the last four months",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "6dbc27a92c75670f3713330b3074bd771224a5b9486dc304c8d26c8b1123ebf1"
             }
           ]
         },
@@ -2280,7 +2449,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "has more than 200,000 paying customers"
+              "quote": "has more than 200,000 paying customers",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "e24ef6172af56c18e58fadfb60a01405449f2de472a58a642fee960ab3fdf029"
             }
           ]
         },
@@ -2291,7 +2462,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-38a009e65abe6187",
-              "quote": "Since launch, more than 12 million applications have been built on Emergent by users globally"
+              "quote": "Since launch, more than 12 million applications have been built on Emergent by users globally",
+              "source_content_hash": "92481ea1f8c85903",
+              "quote_hash": "fd13a7691b4f8659abc70897dd09dfb4eb8a9ae4e80c120d5dca97afaecb11a9"
             }
           ]
         },
@@ -2302,7 +2475,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8ccec94955b7cc4c",
-              "quote": "70% of its users have no prior coding experience"
+              "quote": "70% of its users have no prior coding experience",
+              "source_content_hash": "473c57b7954d77ac",
+              "quote_hash": "171649a8b69c5b8121f58bf9c09ec62b2688f303b5ca0908f911efaf5b76bf54"
             }
           ]
         },
@@ -2313,7 +2488,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Europe makes up another third"
+              "quote": "Europe makes up another third",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "9a68cb3cf06d89eba7b5630e6dfe97537abd10b05e71ccecb9153529bfb9103d"
             }
           ]
         },
@@ -2324,7 +2501,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "India accounts for about 8% to 9%."
+              "quote": "India accounts for about 8% to 9%.",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "eba3ee91ae7522b6a019830b3ccdb3a3a9a7ece7730d8f019dab629085d78a60"
             }
           ]
         },
@@ -2335,7 +2514,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "a five-fold jump in six months"
+              "quote": "a five-fold jump in six months",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "628c95b69655acfda9c019f315da909e20062f714fc468ddf002576edcada543"
             }
           ]
         }
@@ -2347,7 +2528,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1a7a88592da3edb9",
-              "quote": "The real impact of the AI revolution will be a complete democratization of who gets to build what software, where they get to build it, and how much it costs."
+              "quote": "The real impact of the AI revolution will be a complete democratization of who gets to build what software, where they get to build it, and how much it costs.",
+              "source_content_hash": "26d7922028b675b3",
+              "quote_hash": "69498b72489b9b111255918fb30322bc1068d3641632c9b78c887bbd821b4e71"
             }
           ]
         },
@@ -2357,7 +2540,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Jha acknowledged that design remains a weakness, pointing out that many websites built using AI tools tend to look similar."
+              "quote": "Jha acknowledged that design remains a weakness, pointing out that many websites built using AI tools tend to look similar.",
+              "source_content_hash": "27b672d0df3a3b27",
+              "quote_hash": "72259787c4ccaff36d3a92f1277141f9ce96a07b0c46e396bf24cf733c8efa99"
             }
           ]
         }
@@ -2377,7 +2562,22 @@
           "竞争激烈且巨头环伺：AI编程赛道已有Replit、Cursor、Lovable等初创公司，以及OpenAI Codex、Anthropic Claude Code等来自AI实验室的产品，Emergent需要在非技术用户细分市场建立足够宽的护城河。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI编程与无代码开发平台"
+        "sector": "AI编程与无代码开发平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“非技术用户的生产级应用构建平台”这一品类能否从原型工具升级为中小企业运营基础设施。本轮1.5亿美元估值较6个月前增长5倍，验证信号包括：年化经常性收入达1.2亿美元且4个月内增长70%、超过20万付费客户、1200万应用构建量、70%用户无编程经验。这些指标表明Emergent已跨越产品市场匹配阶段，进入规模化收入增长期。但判断的证据边界受限于：来源未披露毛利率、净收入留存率或客户流失率，无法评估收入质量；设计同质化被CEO承认为弱点，可能限制企业级客户的长期留存。",
+          "evidence_signals": [
+            "年化经常性收入1.2亿美元，4个月内增长70%",
+            "超过20万付费客户",
+            "平台累计构建超过1200万应用",
+            "70%用户无编程经验，验证了非技术用户市场的真实需求",
+            "估值6个月内从3亿美元增长至15亿美元，增长5倍"
+          ],
+          "risks": [
+            "设计同质化问题：CEO承认使用AI工具构建的网站往往外观相似，这可能削弱企业客户对品牌差异化的需求，限制高端市场的拓展。",
+            "竞争激烈且巨头环伺：AI编程赛道已有Replit、Cursor、Lovable等初创公司，以及OpenAI Codex、Anthropic Claude Code等来自AI实验室的产品，Emergent需要在非技术用户细分市场建立足够宽的护城河。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2385,121 +2585,63 @@
           "target_kind": "product",
           "research_name": "Emergent平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-38a009e65abe6187",
-              "quote": "Emergent provides a platform that allows to create full-stack, production-ready applications using autonomous AI agents, working like full development teams that design, build, test, and scale software end to end."
-            },
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "non-technical users need a platform that handles deployment, hosting, testing, and debugging alongside the work of programming."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mukund Jha",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Emergent co-founder and chief executive Mukund Jha"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Madhav Jha",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Jha started Emergent with his brother Madhav Jha (CTO) in June last year."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Creaegis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "The funding round was led by private equity firm Creaegis."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "某卡车运输公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "Customers include trucking companies building software to track shipments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "某工厂",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "factories"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "某建筑企业",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "construction businesses creating enterprise resource planning systems"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "某物业管理公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-07d25b80d4335f93",
-              "quote": "property managers developing internal customer management tools"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "某美国酒店公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6cd9ac8be26effd6",
-              "quote": "For a US-based hospitality company with nearly 4,800 employees, the pressure to ship reliable, guest-facing product features quickly and without gaps was constant."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2585,13 +2727,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:53:43.565Z"
+      "published_at": "2026-07-26T14:53:43.565Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Emergent平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Madhav Jha",
+            "Mukund Jha"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-1a6688afdfd108ef"
+      ],
+      "aggregation": {
+        "key": "EN-026c3bd4be5b91f3|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-7629e68ffced6448",
       "triggered_by_event_id": "EV-34255348e97ca5fe",
       "as_of_date": "2026-07-16",
@@ -2609,7 +2781,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2536493387c26797",
-                "quote": "The company was founded by Christian Pickett and Bera Sogut"
+                "quote": "The company was founded by Christian Pickett and Bera Sogut",
+                "source_content_hash": "2d2ca8e2cdf1d254",
+                "quote_hash": "747ee1f6816aacac77287ddb1b038fbdb9885d357f5750ac5149c97369e1bf56"
               }
             ],
             "entity_id": null
@@ -2620,7 +2794,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2536493387c26797",
-                "quote": "The company was founded by Christian Pickett and Bera Sogut"
+                "quote": "The company was founded by Christian Pickett and Bera Sogut",
+                "source_content_hash": "2d2ca8e2cdf1d254",
+                "quote_hash": "747ee1f6816aacac77287ddb1b038fbdb9885d357f5750ac5149c97369e1bf56"
               }
             ],
             "entity_id": null
@@ -2632,18 +2808,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "Orthogonal is a San Francisco startup founded in 2025 by Christian Pickett and Bera Sogut. Two employees."
+              "quote": "Orthogonal is a San Francisco startup founded in 2025 by Christian Pickett and Bera Sogut. Two employees.",
+              "source_content_hash": "2b9bc6b5e256f08e",
+              "quote_hash": "fe423e220a401f62cde68e0fe1da50d49f41df3f7c6df24332014c4c3a33f199"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-2536493387c26797",
-            "quote": "Orthogonal ( orthogonal.com ), a YC W26 startup building a unified API and payments layer for AI agents"
+            "quote": "Orthogonal ( orthogonal.com ), a YC W26 startup building a unified API and payments layer for AI agents",
+            "source_content_hash": "2d2ca8e2cdf1d254",
+            "quote_hash": "bb835308fa77351753ec509a9c70738765a16d79e6ee0ad4d0c975984295a01a"
           },
           {
             "source_id": "FISRC-92a39db011d9c07b",
-            "quote": "Orthogonal, a San Francisco, California-based developer of a discovery, orchestration, and payments layer for AI agents"
+            "quote": "Orthogonal, a San Francisco, California-based developer of a discovery, orchestration, and payments layer for AI agents",
+            "source_content_hash": "7dde759971f42064",
+            "quote_hash": "d11aa78f8d897c3fa9b1559f2d211ffc499c4ff535482e115b795db843588f45"
           }
         ]
       },
@@ -2659,11 +2841,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2536493387c26797",
-                "quote": "has raised $4.3M in seed funding from Pantera Capital"
+                "quote": "has raised $4.3M in seed funding from Pantera Capital",
+                "source_content_hash": "2d2ca8e2cdf1d254",
+                "quote_hash": "08cb76c8c521a92db86a58c5a280be878dbb1969635bbfac0eeaf174fe724d60"
               },
               {
                 "source_id": "FISRC-92a39db011d9c07b",
-                "quote": "The round was led by Pantera Capital"
+                "quote": "The round was led by Pantera Capital",
+                "source_content_hash": "7dde759971f42064",
+                "quote_hash": "06eca5cf4b07a5b3c9bab5fbbf029d4710e85253d7ab4c3a6154c879a69277f8"
               }
             ],
             "entity_id": null
@@ -2674,7 +2860,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-92a39db011d9c07b",
-                "quote": "The round was led by Pantera Capital, with participation from Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, and Surreal."
+                "quote": "The round was led by Pantera Capital, with participation from Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, and Surreal.",
+                "source_content_hash": "7dde759971f42064",
+                "quote_hash": "3cbc696d45d07368af49c06a6a4f9f562400ed122c1b29ed216fdd9374d90c20"
               }
             ],
             "entity_id": null
@@ -2683,11 +2871,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2536493387c26797",
-            "quote": "Orthogonal Raises $4.3M to Build the API Layer for AI Agents"
+            "quote": "Orthogonal Raises $4.3M to Build the API Layer for AI Agents",
+            "source_content_hash": "2d2ca8e2cdf1d254",
+            "quote_hash": "c1da47b0f4e20aca6dfe99cfaba593f22b7afd5e67ed1b0dead9a4e4f6d896f3"
           },
           {
             "source_id": "FISRC-92a39db011d9c07b",
-            "quote": "Orthogonal Raises $4.3M in Seed Funding"
+            "quote": "Orthogonal Raises $4.3M in Seed Funding",
+            "source_content_hash": "7dde759971f42064",
+            "quote_hash": "db865ef8b27d02a1db6f48a5feaf3a7895aa18610a4bb02069409229d476756b"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-34255348e97ca5fe",
+            "round_original": "种子轮",
+            "amount": "$4.3M",
+            "announced_at": "2026-06-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2536493387c26797",
+                "quote": "Orthogonal Raises $4.3M to Build the API Layer for AI Agents",
+                "source_content_hash": "2d2ca8e2cdf1d254",
+                "quote_hash": "c1da47b0f4e20aca6dfe99cfaba593f22b7afd5e67ed1b0dead9a4e4f6d896f3"
+              },
+              {
+                "source_id": "FISRC-92a39db011d9c07b",
+                "quote": "Orthogonal Raises $4.3M in Seed Funding",
+                "source_content_hash": "7dde759971f42064",
+                "quote_hash": "db865ef8b27d02a1db6f48a5feaf3a7895aa18610a4bb02069409229d476756b"
+              }
+            ]
           }
         ]
       },
@@ -2706,11 +2923,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2536493387c26797",
-              "quote": "Orthogonal acts as a single gateway that lets agents discover, access, and pay for hundreds of APIs without separate credentials or subscriptions."
+              "quote": "Orthogonal acts as a single gateway that lets agents discover, access, and pay for hundreds of APIs without separate credentials or subscriptions.",
+              "source_content_hash": "2d2ca8e2cdf1d254",
+              "quote_hash": "c59ff81a6384c9e6a4dcbf0a5a447356453e4a1540d0aa317868e39b1e299027"
             },
             {
               "source_id": "FISRC-862ff99ecf94c4dd",
-              "quote": "Orthogonal offers developers a unified SDK, API, MCP, and CLI that connects agents to internet services through a single integration."
+              "quote": "Orthogonal offers developers a unified SDK, API, MCP, and CLI that connects agents to internet services through a single integration.",
+              "source_content_hash": "42cec0283b159a1c",
+              "quote_hash": "12f07a1b662d32071ff1a3e8db0b7b32d16fdd04583c7de3fcd83fc2f9099c7d"
             }
           ],
           "entity_id": null
@@ -2724,9 +2945,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6212a447f2392519",
-              "quote": "Orthogonal APIs are now available as native tools inside Runtype, so any flow or agent can access 100+ APIs without managing keys, vendor accounts, or billing for each one."
+              "quote": "Orthogonal APIs are now available as native tools inside Runtype, so any flow or agent can access 100+ APIs without managing keys, vendor accounts, or billing for each one.",
+              "source_content_hash": "050b5fb05bab62b9",
+              "quote_hash": "8e6b4714110c7bcc0a28954fd2a129609e6cd34112d20e8126bc6c165da76328"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2740,13 +2964,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "Fetch.ai, now part of the ASI Alliance with SingularityNET and Ocean Protocol, already operates a live token economy centered on agent-to-agent interactions."
+              "quote": "Fetch.ai, now part of the ASI Alliance with SingularityNET and Ocean Protocol, already operates a live token economy centered on agent-to-agent interactions.",
+              "source_content_hash": "2b9bc6b5e256f08e",
+              "quote_hash": "9462f971018057639dcd76038f7d2f2554cf7c2c6fb8002faa928ae561aa7f1c"
             },
             {
               "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer - the merchant-of-record function for agent economies."
+              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer - the merchant-of-record function for agent economies.",
+              "source_content_hash": "2b9bc6b5e256f08e",
+              "quote_hash": "a48ea491fd7c448b4081d9cf2d69ff8692e11c633cfe0b935d934f3dfab27828"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Agent2Agent (Linux Foundation)",
@@ -2758,13 +2987,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "The Linux Foundation launched the Agent2Agent protocol in June 2025, providing an open-standard framework for agent communication."
+              "quote": "The Linux Foundation launched the Agent2Agent protocol in June 2025, providing an open-standard framework for agent communication.",
+              "source_content_hash": "2b9bc6b5e256f08e",
+              "quote_hash": "3c15d954df854526e4def69ed9c21d255d36f66e3924996ac0d42bd1ada23e68"
             },
             {
               "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer"
+              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer",
+              "source_content_hash": "2b9bc6b5e256f08e",
+              "quote_hash": "d43d6bea8269a5348b85c39263b75302429ef4ed5ab4ab6de6abc4f061d3bae5"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2775,7 +3009,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-862ff99ecf94c4dd",
-              "quote": "today supports 35+ APIs that power AI agents and automated workflows"
+              "quote": "today supports 35+ APIs that power AI agents and automated workflows",
+              "source_content_hash": "42cec0283b159a1c",
+              "quote_hash": "cad46ff2b38097be3187b58bc16ca2ded74b2923395b24239a496cb59136c5da"
             }
           ]
         },
@@ -2786,7 +3022,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2536493387c26797",
-              "quote": "The platform has 30+ named API partners already integrated, including Exa, CrustData, Apollo.io, and AgentMail."
+              "quote": "The platform has 30+ named API partners already integrated, including Exa, CrustData, Apollo.io, and AgentMail.",
+              "source_content_hash": "2d2ca8e2cdf1d254",
+              "quote_hash": "19c4b14537bdd59f1f5a0bd1aece07c92ac90e5960685b11c0123f4324b3beaf"
             }
           ]
         },
@@ -2797,7 +3035,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "Two employees."
+              "quote": "Two employees.",
+              "source_content_hash": "2b9bc6b5e256f08e",
+              "quote_hash": "68840169617aa66ce1edcbfb8b440dfc52f9f995d3e4ffa202e5ca30f461c46e"
             }
           ]
         }
@@ -2809,7 +3049,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2536493387c26797",
-              "quote": "Orthogonal is a perfect example of making something agents want. Agents won't want to sign up for 50 different APIs, managing accounts and keys and rate limits at each one. They'll want to use Orthogonal. So Orthogonal is agent-pilled, but it's also a marketplace and an abstraction layer over all the things agents may want to do on the internet. We were very excited to back these outlier founders."
+              "quote": "Orthogonal is a perfect example of making something agents want. Agents won't want to sign up for 50 different APIs, managing accounts and keys and rate limits at each one. They'll want to use Orthogonal. So Orthogonal is agent-pilled, but it's also a marketplace and an abstraction layer over all the things agents may want to do on the internet. We were very excited to back these outlier founders.",
+              "source_content_hash": "2d2ca8e2cdf1d254",
+              "quote_hash": "d20aa4e28fabb3506a3b96ecb2dbb0fb671b370feb75c7f148b64166aba9450b"
             }
           ]
         }
@@ -2829,7 +3071,22 @@
           "竞争格局并非空白：Fetch.ai 已运营代理间代币经济，Linux Foundation 的 Agent2Agent 协议提供了开放标准框架，大型平台可能在封闭生态内解决发现、路由和结算问题，削弱开放协议的市场空间。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 代理基础设施与支付"
+        "sector": "AI 代理基础设施与支付",
+        "investment_thesis": {
+          "statement": "本轮融资的核心押注变量是 AI 代理从辅助工具转向自主执行商业交易时，是否需要一套全新的、非人类原生的 API 发现与支付基础设施。Pantera 的领投并非基于当前收入或用户规模，而是直接执行其 2026 年 2 月发布的《代理商业的金融轨道》论文，该论文预测 AI 代理将在 2030 年中介 3 至 5 万亿美元的全球消费商业。Orthogonal 的估值信号尚未公开，但 430 万美元的种子轮规模与两人团队、无公开收入的状态相匹配，投资方的集中度（AI×加密专项基金）表明这是一次高度主题化的早期押注，而非基于广泛市场验证的分散投资。",
+          "evidence_signals": [
+            "产品已上线生产环境，支持 35 个以上 API 合作伙伴，包括 Apollo、People Data Labs、Coresignal 等",
+            "已与 Runtype 达成合作，将 Orthogonal API 作为原生工具集成到其 AI 产品平台中",
+            "创始团队具备 Coinbase 支付、Vercel 计费、Google reCAPTCHA 和 Maps API 以及 Amazon Robotics 的复合背景",
+            "已支持多种支付通道，包括传统法币、x402 和 MPP，并正与 Stripe 的 Privy 和 Tempo 团队合作"
+          ],
+          "risks": [
+            "自主代理商业仍处于预测阶段，而非可观测的经济活动流；Pantera 的 3 至 5 万亿美元预测指向 2030 年，距当前仍有四年，市场需求尚未被实际交易量验证。",
+            "团队仅两人，尚无公开收入，产品执行能力与规模化速度存在高度不确定性。",
+            "竞争格局并非空白：Fetch.ai 已运营代理间代币经济，Linux Foundation 的 Agent2Agent 协议提供了开放标准框架，大型平台可能在封闭生态内解决发现、路由和结算问题，削弱开放协议的市场空间。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2837,120 +3094,56 @@
           "target_kind": "product",
           "research_name": "Orthogonal API 网关与支付层",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2536493387c26797",
-              "quote": "Orthogonal acts as a single gateway that lets agents discover, access, and pay for hundreds of APIs without separate credentials or subscriptions."
-            },
-            {
-              "source_id": "FISRC-862ff99ecf94c4dd",
-              "quote": "Orthogonal offers developers a unified SDK, API, MCP, and CLI that connects agents to internet services through a single integration."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Christian Pickett",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2536493387c26797",
-              "quote": "The company was founded by Christian Pickett and Bera Sogut"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Bera Sogut",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2536493387c26797",
-              "quote": "The company was founded by Christian Pickett and Bera Sogut"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Pantera Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2536493387c26797",
-              "quote": "has raised $4.3M in seed funding from Pantera Capital"
-            },
-            {
-              "source_id": "FISRC-92a39db011d9c07b",
-              "quote": "The round was led by Pantera Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blast",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-92a39db011d9c07b",
-              "quote": "The round was led by Pantera Capital, with participation from Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, and Surreal."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Runtype",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6212a447f2392519",
-              "quote": "Orthogonal APIs are now available as native tools inside Runtype, so any flow or agent can access 100+ APIs without managing keys, vendor accounts, or billing for each one."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Fetch.ai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "Fetch.ai, now part of the ASI Alliance with SingularityNET and Ocean Protocol, already operates a live token economy centered on agent-to-agent interactions."
-            },
-            {
-              "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer - the merchant-of-record function for agent economies."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Agent2Agent (Linux Foundation)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "The Linux Foundation launched the Agent2Agent protocol in June 2025, providing an open-standard framework for agent communication."
-            },
-            {
-              "source_id": "FISRC-3da6960c55e1c71b",
-              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3036,10 +3229,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:53:23.139Z"
+      "published_at": "2026-07-26T14:53:23.139Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Orthogonal API 网关与支付层"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Bera Sogut",
+            "Christian Pickett"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-34255348e97ca5fe"
+      ],
+      "aggregation": {
+        "key": "EN-37a54e5c414654d8|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

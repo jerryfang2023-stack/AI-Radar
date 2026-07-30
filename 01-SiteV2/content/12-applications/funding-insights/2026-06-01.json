@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-01",
     "generated_at": "2026-07-26T15:09:21.046Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 2,
       "auto_published": 2,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9636fec345e018a2",
       "triggered_by_event_id": "EV-31df816db86db282",
       "as_of_date": "2026-06-01",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a98314ad7e652ee7",
-                "quote": "Dario Amodei, Anthropic CEO"
+                "quote": "Dario Amodei, Anthropic CEO",
+                "source_content_hash": "d046b2aa08e71bfe",
+                "quote_hash": "2a1952f89d5dea6666f84413264096c4e338e1e8fd28a8dc604f3f3ea67063eb"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a98314ad7e652ee7",
-                "quote": "Dario Amodei, Daniela Amodei and six former OpenAI researchers found Anthropic."
+                "quote": "Dario Amodei, Daniela Amodei and six former OpenAI researchers found Anthropic.",
+                "source_content_hash": "d046b2aa08e71bfe",
+                "quote_hash": "086c8199496da0d425ad2787d25485be22266116c006b3108fc2c29c8b0ec3fb"
               }
             ],
             "entity_id": null
@@ -58,23 +63,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "at ~1,500 employees"
+              "quote": "at ~1,500 employees",
+              "source_content_hash": "d046b2aa08e71bfe",
+              "quote_hash": "d8541ca521b76afd3ec1976cc775f6db5c7de7e330e84cf949dfe769b493ed5c"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-b58bb99dfec2e318",
-            "quote": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation"
+            "quote": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation",
+            "source_content_hash": "c231466686007dd5",
+            "quote_hash": "1e74f6534b7c95a53b378534ff98fc14ea265938b3c7f7e24f1b51e0ae0d62cf"
           },
           {
             "source_id": "FISRC-53cbedc93f5bbf90",
-            "quote": "Anthropic closed a $30 billion Series G at a $380 billion post-money valuation."
+            "quote": "Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.",
+            "source_content_hash": "ae4fbbe599a44ccd",
+            "quote_hash": "8e0dd2084cab24769a425a431a9714ff0b980be8fa095ddabae1fc97c5fc3e64"
           }
         ]
       },
       "financing": {
-        "round": "Series G",
+        "round": "G轮",
         "amount": "$30 billion",
         "total_raised": "",
         "announced_at": "2026-02-12",
@@ -85,7 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "led by GIC and Coatue"
+                "quote": "led by GIC and Coatue",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
               }
             ],
             "entity_id": null
@@ -96,7 +109,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "led by GIC and Coatue"
+                "quote": "led by GIC and Coatue",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
               }
             ],
             "entity_id": null
@@ -107,7 +122,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
+                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
               }
             ],
             "entity_id": null
@@ -118,7 +135,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
+                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
               }
             ],
             "entity_id": null
@@ -129,7 +148,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
+                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
               }
             ],
             "entity_id": null
@@ -140,7 +161,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
+                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
               }
             ],
             "entity_id": null
@@ -151,7 +174,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
+                "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
               }
             ],
             "entity_id": null
@@ -162,7 +187,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "Significant investors in this round include: Accel"
+                "quote": "Significant investors in this round include: Accel",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "dd496c105397ae49540d0bf46c349a8d17db2380b866ac8c46ba30a2552fb6dc"
               }
             ],
             "entity_id": null
@@ -173,7 +200,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA."
+                "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA.",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "635e438e7bd38921cfa2ae7869a8f79b29944b74f036ad7ced7b851de3e986af"
               }
             ],
             "entity_id": "EN-9fbf261b62c1d7c0"
@@ -184,7 +213,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b58bb99dfec2e318",
-                "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA."
+                "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA.",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "635e438e7bd38921cfa2ae7869a8f79b29944b74f036ad7ced7b851de3e986af"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -193,11 +224,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b58bb99dfec2e318",
-            "quote": "We have raised $30 billion in Series G funding led by GIC and Coatue, valuing Anthropic at $380 billion post-money."
+            "quote": "We have raised $30 billion in Series G funding led by GIC and Coatue, valuing Anthropic at $380 billion post-money.",
+            "source_content_hash": "c231466686007dd5",
+            "quote_hash": "589e97ab67cf933439d773783bdbe03e9ef452db90c72efac840572462a2a202"
           },
           {
             "source_id": "FISRC-53cbedc93f5bbf90",
-            "quote": "Anthropic closed a $30 billion Series G at a $380 billion post-money valuation."
+            "quote": "Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.",
+            "source_content_hash": "ae4fbbe599a44ccd",
+            "quote_hash": "8e0dd2084cab24769a425a431a9714ff0b980be8fa095ddabae1fc97c5fc3e64"
+          }
+        ],
+        "round_code": "series_g",
+        "round_original": "Series G",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-31df816db86db282",
+            "round_original": "Series G",
+            "amount": "$30 billion",
+            "announced_at": "2026-02-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b58bb99dfec2e318",
+                "quote": "We have raised $30 billion in Series G funding led by GIC and Coatue, valuing Anthropic at $380 billion post-money.",
+                "source_content_hash": "c231466686007dd5",
+                "quote_hash": "589e97ab67cf933439d773783bdbe03e9ef452db90c72efac840572462a2a202"
+              },
+              {
+                "source_id": "FISRC-53cbedc93f5bbf90",
+                "quote": "Anthropic closed a $30 billion Series G at a $380 billion post-money valuation.",
+                "source_content_hash": "ae4fbbe599a44ccd",
+                "quote_hash": "8e0dd2084cab24769a425a431a9714ff0b980be8fa095ddabae1fc97c5fc3e64"
+              }
+            ]
           }
         ]
       },
@@ -214,11 +274,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Claude remains the only frontier AI model available to customers on all three of the world's largest cloud platforms: Amazon Web Services (Bedrock), Google Cloud (Vertex AI), and Microsoft Azure (Foundry)."
+              "quote": "Claude remains the only frontier AI model available to customers on all three of the world's largest cloud platforms: Amazon Web Services (Bedrock), Google Cloud (Vertex AI), and Microsoft Azure (Foundry).",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "b465112b4423d49be65d9fa306ad47b67f36eae92fe2cb29962c4f5db0ac43d4"
             },
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Claude for Enterprise now available to organizations operating under HIPAA."
+              "quote": "Claude for Enterprise now available to organizations operating under HIPAA.",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "9b5f2d4e4d333298ee130cc6dea41b46d5d3149628484a8a4e0212945fb77672"
             }
           ],
           "entity_id": "EN-729324072d368379"
@@ -235,7 +299,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "A recent analysis estimated that 4% of all GitHub public commits worldwide were being authored by Claude Code"
+              "quote": "A recent analysis estimated that 4% of all GitHub public commits worldwide were being authored by Claude Code",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "875c18751177445cc8e6e4e13c1bdf0b33e8872e29072847a19d5d0b641803a3"
             }
           ],
           "entity_id": "EN-cb4754c48f8023d0"
@@ -249,13 +315,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4b918398df7c55ac",
-              "quote": "Customer wait times dropped from over 20 minutes to near-instant responses"
+              "quote": "Customer wait times dropped from over 20 minutes to near-instant responses",
+              "source_content_hash": "e3e9560cb07f357c",
+              "quote_hash": "27768f74c53aa400b411b3c6a8f2b3f7c5d110dcdfea524b8f664183420f2078"
             },
             {
               "source_id": "FISRC-4b918398df7c55ac",
-              "quote": "Optimized customer service operations to decrease costs by over 30% while improving response quality"
+              "quote": "Optimized customer service operations to decrease costs by over 30% while improving response quality",
+              "source_content_hash": "e3e9560cb07f357c",
+              "quote_hash": "07c9b31cfe4fa17bf02a9719178628b5b8cef0dccda6f9fac940b7fe220be7c3"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Tidio",
@@ -264,13 +335,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d153b61d796331f",
-              "quote": "Achieved 71% automation of Tidio's own customer support across live chat and email channels"
+              "quote": "Achieved 71% automation of Tidio's own customer support across live chat and email channels",
+              "source_content_hash": "7dac00a8c3a85068",
+              "quote_hash": "5726d187125773ea9f284d11d06876e7cef5e629722d682b65f0f311ac74717e"
             },
             {
               "source_id": "FISRC-2d153b61d796331f",
-              "quote": "Grew Lyro adoption by 700% in just one year"
+              "quote": "Grew Lyro adoption by 700% in just one year",
+              "source_content_hash": "7dac00a8c3a85068",
+              "quote_hash": "b5296c984079802dae49806aba9ed034451e80b2344321acf2bb56929f7c6ce8"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Advolve",
@@ -279,13 +355,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-38ce2475290d7b31",
-              "quote": "Reduce operational work time by 90%"
+              "quote": "Reduce operational work time by 90%",
+              "source_content_hash": "ce8d528cb395273c",
+              "quote_hash": "23a852d053994e3920df7eeb15f8c071adc2150bdd93f478e8da9473276115f7"
             },
             {
               "source_id": "FISRC-38ce2475290d7b31",
-              "quote": "Increase customer return on ad spend (ROAS) by 15%"
+              "quote": "Increase customer return on ad spend (ROAS) by 15%",
+              "source_content_hash": "ce8d528cb395273c",
+              "quote_hash": "3261ba0c1606f0b88b5da850ae0d40e8d060eac128b2fc6c4b5e0dd21a334923"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -299,9 +380,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4245aa738e2ad119",
-              "quote": "A company projecting a $14 billion loss for 2026 against roughly $18 billion in revenue is asking for a continued act of faith."
+              "quote": "A company projecting a $14 billion loss for 2026 against roughly $18 billion in revenue is asking for a continued act of faith.",
+              "source_content_hash": "37974606096fa3db",
+              "quote_hash": "d9b4a305e6a9134d6a80a6b8808f8fc4b8350c234639d3f29c09a745e4c1fef4"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "xAI",
@@ -313,13 +397,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "xAI (Series D, Apr 2026) $ 250 B"
+              "quote": "xAI (Series D, Apr 2026) $ 250 B",
+              "source_content_hash": "d046b2aa08e71bfe",
+              "quote_hash": "e61a52c7f91930cd8283415f3541d6197b05fbeb08d1bab932ecc25bde6f314a"
             },
             {
               "source_id": "FISRC-53cbedc93f5bbf90",
-              "quote": "xAI opened the year with a $20 billion Series E."
+              "quote": "xAI opened the year with a $20 billion Series E.",
+              "source_content_hash": "ae4fbbe599a44ccd",
+              "quote_hash": "30dc34aeee5ffa658065476a569e2cc6e43f1afd36bcca4b29a08c6269199f58"
             }
-          ]
+          ],
+          "entity_id": "EN-6fcba5d96a4fadfd"
         },
         {
           "name": "Mistral",
@@ -331,9 +420,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Mistral (Series D, Mar 2026) $ 65 B"
+              "quote": "Mistral (Series D, Mar 2026) $ 65 B",
+              "source_content_hash": "d046b2aa08e71bfe",
+              "quote_hash": "c00a11b47359d775a2748c1d9f0c9ed5e5e910b4882283d772333dbb6d1aeabc"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Perplexity",
@@ -345,9 +437,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Perplexity (Series D, Feb 2026) $ 32 B"
+              "quote": "Perplexity (Series D, Feb 2026) $ 32 B",
+              "source_content_hash": "d046b2aa08e71bfe",
+              "quote_hash": "9542a37f446c22b7961d8b70e70b1f81aed13aa4b1a8f82d7bc39f17aa12fad8"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cohere",
@@ -359,9 +454,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Cohere (Series E, Jan 2026) $ 18 B"
+              "quote": "Cohere (Series E, Jan 2026) $ 18 B",
+              "source_content_hash": "d046b2aa08e71bfe",
+              "quote_hash": "22f338f42e18b06e9e990be580aa2c6f3423afd62955a4a6108d5987db746b6e"
             }
-          ]
+          ],
+          "entity_id": "EN-72e8088a05b38ae3"
         }
       ],
       "metrics": [
@@ -372,7 +470,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Today, our run-rate revenue is $14 billion"
+              "quote": "Today, our run-rate revenue is $14 billion",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "10680610b255a47efb7f0302ab784ed1852a47709fb124d26bc4a8b0956ac266"
             }
           ]
         },
@@ -383,7 +483,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "this figure growing over 10x annually in each of those past three years"
+              "quote": "this figure growing over 10x annually in each of those past three years",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "b87b0f8579b8c6e827a8905c8ea694dbe30f2c0c82d33a8ca1177f8ef4adb181"
             }
           ]
         },
@@ -394,7 +496,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "The number of customers spending over $100,000 annually on Claude (as represented by run-rate revenue) has grown 7x in the past year."
+              "quote": "The number of customers spending over $100,000 annually on Claude (as represented by run-rate revenue) has grown 7x in the past year.",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "87969786c638c9c575b58f72630b427f46dc72d436ade373af005712af2a9c28"
             }
           ]
         },
@@ -405,7 +509,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Today that number exceeds 500."
+              "quote": "Today that number exceeds 500.",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "725781e7216ad1878e2c086172c07ebff96200e7c371bff317388796fa357348"
             }
           ]
         },
@@ -416,7 +522,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "4% of all GitHub public commits worldwide were being authored by Claude Code"
+              "quote": "4% of all GitHub public commits worldwide were being authored by Claude Code",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "49fd27586cd780245d442527ddfbb3da6ec8e02a8bdf1530ae5260c9d8e43402"
             }
           ]
         },
@@ -427,7 +535,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Eight of the Fortune 10 are now Claude customers."
+              "quote": "Eight of the Fortune 10 are now Claude customers.",
+              "source_content_hash": "c231466686007dd5",
+              "quote_hash": "baed38e60c6bf4a2a651b32a06248d47b57f37673f5f81ce8f2b5f2701ff1702"
             }
           ]
         },
@@ -438,7 +548,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "at ~1,500 employees, Anthropic generates roughly $9.3M revenue/employee"
+              "quote": "at ~1,500 employees, Anthropic generates roughly $9.3M revenue/employee",
+              "source_content_hash": "d046b2aa08e71bfe",
+              "quote_hash": "e85e99165ef9ead692a31f80079fc2b343d1ce6af07d8cd97b417f90128461e0"
             }
           ]
         }
@@ -460,7 +572,23 @@
           "尽管收入增长极快，公司尚未盈利，预计 2028-2029 年才能实现盈利，期间依赖持续的大规模融资支撑算力扩张。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "前沿 AI 模型与企业智能体"
+        "sector": "前沿 AI 模型与企业智能体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Anthropic 从模型层向应用层（尤其是智能体编码 Claude Code）的快速收入转化能力。本轮 3800 亿美元估值建立在 140 亿美元年化收入运行率、连续三年超 10 倍年增长、以及超过 500 家年消费超 100 万美元的企业客户之上。估值逻辑依赖收入增速而非盈利，但 Anthropic 已给出 2028-2029 年盈利的路径指引，且训练成本约为 OpenAI 的四分之一，这为估值提供了相对可验证的成本锚点。然而，该判断的证据边界受限于：收入数据来自公司官方披露，未经上市审计；估值在 14 周内从 3800 亿美元翻倍至 9000 亿美元的后续传闻表明市场定价波动极大；与国防部的诉讼可能影响数亿至数十亿美元收入。",
+          "evidence_signals": [
+            "年化收入运行率达 140 亿美元，连续三年超 10 倍增长",
+            "超过 500 家企业客户年消费超 100 万美元",
+            "Claude Code 年化收入超 25 亿美元，占 GitHub 全球公开提交量的 4%",
+            "财富 10 强中 8 家为 Claude 客户",
+            "企业收入占比约 80%，合同平均期限从 14 个月延长至 38 个月"
+          ],
+          "risks": [
+            "Anthropic 正在起诉美国国防部，后者于 2026 年 3 月将其指定为供应链风险，Anthropic 估计该争议使 2026 年数亿至数十亿美元收入面临风险。",
+            "估值在 14 周内从 3800 亿美元翻倍至 9000 亿美元的后续传闻表明市场定价波动极大，IPO 定价可能面临公开市场重估压力。",
+            "尽管收入增长极快，公司尚未盈利，预计 2028-2029 年才能实现盈利，期间依赖持续的大规模融资支撑算力扩张。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -468,306 +596,154 @@
           "target_kind": "product",
           "research_name": "Claude",
           "canonical_entity_id": "EN-729324072d368379",
-          "canonical_name": "Claude",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Claude remains the only frontier AI model available to customers on all three of the world's largest cloud platforms: Amazon Web Services (Bedrock), Google Cloud (Vertex AI), and Microsoft Azure (Foundry)."
-            },
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Claude for Enterprise now available to organizations operating under HIPAA."
-            }
-          ]
+          "canonical_name": "Claude"
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Claude Code",
           "canonical_entity_id": "EN-cb4754c48f8023d0",
-          "canonical_name": "Claude Code",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "A recent analysis estimated that 4% of all GitHub public commits worldwide were being authored by Claude Code"
-            }
-          ]
+          "canonical_name": "Claude Code"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dario Amodei",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Dario Amodei, Anthropic CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Daniela Amodei",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Dario Amodei, Daniela Amodei and six former OpenAI researchers found Anthropic."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GIC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "led by GIC and Coatue"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Coatue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "led by GIC and Coatue"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "D. E. Shaw Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Dragoneer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "ICONIQ",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MGX",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "Significant investors in this round include: Accel"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Microsoft",
           "canonical_entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA."
-            }
-          ]
+          "canonical_name": "Microsoft"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "NVIDIA",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b58bb99dfec2e318",
-              "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "StubHub",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4b918398df7c55ac",
-              "quote": "Customer wait times dropped from over 20 minutes to near-instant responses"
-            },
-            {
-              "source_id": "FISRC-4b918398df7c55ac",
-              "quote": "Optimized customer service operations to decrease costs by over 30% while improving response quality"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Tidio",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d153b61d796331f",
-              "quote": "Achieved 71% automation of Tidio's own customer support across live chat and email channels"
-            },
-            {
-              "source_id": "FISRC-2d153b61d796331f",
-              "quote": "Grew Lyro adoption by 700% in just one year"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Advolve",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-38ce2475290d7b31",
-              "quote": "Reduce operational work time by 90%"
-            },
-            {
-              "source_id": "FISRC-38ce2475290d7b31",
-              "quote": "Increase customer return on ad spend (ROAS) by 15%"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4245aa738e2ad119",
-              "quote": "A company projecting a $14 billion loss for 2026 against roughly $18 billion in revenue is asking for a continued act of faith."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "xAI",
           "canonical_entity_id": "EN-6fcba5d96a4fadfd",
-          "canonical_name": "xAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "xAI (Series D, Apr 2026) $ 250 B"
-            },
-            {
-              "source_id": "FISRC-53cbedc93f5bbf90",
-              "quote": "xAI opened the year with a $20 billion Series E."
-            }
-          ]
+          "canonical_name": "xAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Mistral",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Mistral (Series D, Mar 2026) $ 65 B"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Perplexity",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Perplexity (Series D, Feb 2026) $ 32 B"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cohere",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a98314ad7e652ee7",
-              "quote": "Cohere (Series E, Jan 2026) $ 18 B"
-            }
-          ]
+          "canonical_entity_id": "EN-72e8088a05b38ae3",
+          "canonical_name": "Cohere"
         }
       ],
       "funding_history": [
@@ -1059,13 +1035,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:09:20.993Z"
+      "published_at": "2026-07-26T15:09:20.993Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 2,
+          "total": 2,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Daniela Amodei",
+            "Dario Amodei"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-31df816db86db282"
+      ],
+      "aggregation": {
+        "key": "EN-c70eca6b0f88f44d|series_g",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-e2a0ce1fc3805eb7",
       "triggered_by_event_id": "EV-8eb0acb180b7ad9d",
       "as_of_date": "2026-06-01",
@@ -1083,7 +1087,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a863ff746887d87a",
-                "quote": "Replit is based in San Francisco and led by Chief Executive Amjad Masad, who founded the company with his wife, Haya Masad, Replit's Head of Design."
+                "quote": "Replit is based in San Francisco and led by Chief Executive Amjad Masad, who founded the company with his wife, Haya Masad, Replit's Head of Design.",
+                "source_content_hash": "74b53eda49179570",
+                "quote_hash": "730ede913af29b0305274c59beff86945e566f5908a77c4d2dbb230b49c6322e"
               }
             ],
             "entity_id": "EN-fd67ab47893c5a98"
@@ -1094,7 +1100,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a863ff746887d87a",
-                "quote": "Replit is based in San Francisco and led by Chief Executive Amjad Masad, who founded the company with his wife, Haya Masad, Replit's Head of Design."
+                "quote": "Replit is based in San Francisco and led by Chief Executive Amjad Masad, who founded the company with his wife, Haya Masad, Replit's Head of Design.",
+                "source_content_hash": "74b53eda49179570",
+                "quote_hash": "730ede913af29b0305274c59beff86945e566f5908a77c4d2dbb230b49c6322e"
               }
             ],
             "entity_id": null
@@ -1108,16 +1116,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-988da64a0fed3fd0",
-            "quote": "Replit – $9B Valuation (January 2026) Founded: 2016 Total Funding: $650M+ Latest Round: $400M (January 2026) Previous valuation: $3B (September 2025) What they do: Browser-based coding environment with AI Agent that generates full-stack applications from natural language, including frontend, backend, databases, and deployment."
+            "quote": "Replit – $9B Valuation (January 2026) Founded: 2016 Total Funding: $650M+ Latest Round: $400M (January 2026) Previous valuation: $3B (September 2025) What they do: Browser-based coding environment with AI Agent that generates full-stack applications from natural language, including frontend, backend, databases, and deployment.",
+            "source_content_hash": "ffcc891136474a1d",
+            "quote_hash": "e07d880f57aad7aa1d656c37a49251054eacfe89c91b3bfd678b21f367d0033d"
           },
           {
             "source_id": "FISRC-00ed3d8fd701898b",
-            "quote": "Masad launched Replit in 2016 as a browser-based coding workspace that allowed developers to write and run code together from anywhere. The platform started as a collaborative environment for programmers. It has evolved into an AI-driven development system that lets users build, test, and deploy applications from a single interface."
+            "quote": "Masad launched Replit in 2016 as a browser-based coding workspace that allowed developers to write and run code together from anywhere. The platform started as a collaborative environment for programmers. It has evolved into an AI-driven development system that lets users build, test, and deploy applications from a single interface.",
+            "source_content_hash": "c906371275e7a3ca",
+            "quote_hash": "507155f61ce773ce207b5a4ca601479429d2eda32fead82a9b8c0c4a35391067"
           }
         ]
       },
       "financing": {
-        "round": "Series D",
+        "round": "D轮",
         "amount": "$400M",
         "total_raised": "$650M+",
         "announced_at": "2026-03-11",
@@ -1128,7 +1140,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2220b0e7f33bfc10",
-                "quote": "Georgian, a growth-stage B2B investor that builds alongside portfolio companies to unlock value from AI through its in-house AI Lab, today announced it has led a $400 million Series D investment in Replit, valuing the company at $9 billion."
+                "quote": "Georgian, a growth-stage B2B investor that builds alongside portfolio companies to unlock value from AI through its in-house AI Lab, today announced it has led a $400 million Series D investment in Replit, valuing the company at $9 billion.",
+                "source_content_hash": "d97a108f575a9b98",
+                "quote_hash": "e347d23fe9ed9260e964427833a9010c6ab952a733e9191d54279e81ebed8ce8"
               }
             ],
             "entity_id": null
@@ -1139,7 +1153,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": null
@@ -1150,7 +1166,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": null
@@ -1161,7 +1179,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": null
@@ -1172,7 +1192,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -1183,7 +1205,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": null
@@ -1194,7 +1218,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": null
@@ -1205,7 +1231,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": null
@@ -1216,7 +1244,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
+                "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
               }
             ],
             "entity_id": null
@@ -1227,7 +1257,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
+                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
               }
             ],
             "entity_id": null
@@ -1238,7 +1270,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
+                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
               }
             ],
             "entity_id": null
@@ -1249,7 +1283,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
+                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
               }
             ],
             "entity_id": null
@@ -1260,18 +1296,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-00ed3d8fd701898b",
-                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Georgian",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2220b0e7f33bfc10",
-                "quote": "The investment represents a rapid follow-on for Georgian, which first invested in Replit's Series C late last year and is now doubling down as the company expands its position in AI-powered software creation."
+                "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
+                "source_content_hash": "c906371275e7a3ca",
+                "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
               }
             ],
             "entity_id": null
@@ -1280,7 +1307,48 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-988da64a0fed3fd0",
-            "quote": "Replit – $9B Valuation (January 2026) Founded: 2016 Total Funding: $650M+ Latest Round: $400M (January 2026)"
+            "quote": "Replit – $9B Valuation (January 2026) Founded: 2016 Total Funding: $650M+ Latest Round: $400M (January 2026)",
+            "source_content_hash": "ffcc891136474a1d",
+            "quote_hash": "ff120e3713a7acb3419c2ad0698a830506ff2250d0ae1fe8349b79e23b6b164d"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "other_round_investors": [
+          {
+            "name": "Georgian",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2220b0e7f33bfc10",
+                "quote": "The investment represents a rapid follow-on for Georgian, which first invested in Replit's Series C late last year and is now doubling down as the company expands its position in AI-powered software creation.",
+                "source_content_hash": "d97a108f575a9b98",
+                "quote_hash": "e7bcaf8915704ef04089d6a969c2255cc3b344a26b8f18c77d0a7df3ba2c945b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-8eb0acb180b7ad9d",
+            "round_original": "Series D",
+            "amount": "$400M",
+            "announced_at": "2026-03-11",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-988da64a0fed3fd0",
+                "quote": "Replit – $9B Valuation (January 2026) Founded: 2016 Total Funding: $650M+ Latest Round: $400M (January 2026)",
+                "source_content_hash": "ffcc891136474a1d",
+                "quote_hash": "ff120e3713a7acb3419c2ad0698a830506ff2250d0ae1fe8349b79e23b6b164d"
+              }
+            ]
           }
         ]
       },
@@ -1299,11 +1367,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-988da64a0fed3fd0",
-              "quote": "Browser-based coding environment with AI Agent that generates full-stack applications from natural language, including frontend, backend, databases, and deployment."
+              "quote": "Browser-based coding environment with AI Agent that generates full-stack applications from natural language, including frontend, backend, databases, and deployment.",
+              "source_content_hash": "ffcc891136474a1d",
+              "quote_hash": "1e9f25fc6c9908886951dd6e57a8379031da0ab393ef170b5d255b6bff0b47c7"
             },
             {
               "source_id": "FISRC-2220b0e7f33bfc10",
-              "quote": "Replit provides an AI-powered development platform designed to enable students, teachers, designers, small business owners and engineers to generate, deploy, and iterate on software applications within a single environment."
+              "quote": "Replit provides an AI-powered development platform designed to enable students, teachers, designers, small business owners and engineers to generate, deploy, and iterate on software applications within a single environment.",
+              "source_content_hash": "d97a108f575a9b98",
+              "quote_hash": "f02fb2360fe5cf435f188cddba66265400b84787bb12c0c58dcf81a526a40869"
             }
           ],
           "entity_id": null
@@ -1322,11 +1394,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Replit describes Agent 4 as a tool for creating and modifying app designs on a digital canvas. Users can adjust mock-ups, sketch features and collaborate in real time. Agent 4 also offers guided starting points that prompt users to choose what they want to build, including spreadsheets, data visualisations and games."
+              "quote": "Replit describes Agent 4 as a tool for creating and modifying app designs on a digital canvas. Users can adjust mock-ups, sketch features and collaborate in real time. Agent 4 also offers guided starting points that prompt users to choose what they want to build, including spreadsheets, data visualisations and games.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "ac8dc2ba0bbcdbe0235af7d2d87674f3566d36243c7b8551981e4b14583acab7"
             },
             {
               "source_id": "FISRC-82fef24b188919d1",
-              "quote": "Agent 4 enables users to add new elements to a design by sketching them. According to Replit, the software can turn simple drawings into relatively complex visual assets such as three-dimensional animations."
+              "quote": "Agent 4 enables users to add new elements to a design by sketching them. According to Replit, the software can turn simple drawings into relatively complex visual assets such as three-dimensional animations.",
+              "source_content_hash": "98868c50bb71d080",
+              "quote_hash": "30f761f9adcc6a0b44916e939549330089a80e00255034dc355c8b048e73d549"
             }
           ],
           "entity_id": null
@@ -1340,9 +1416,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Zillow has around 600 Replit seats, and employees created more than 7,000 apps over the past year, according to the company."
+              "quote": "Zillow has around 600 Replit seats, and employees created more than 7,000 apps over the past year, according to the company.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "f850b8725febb764c361d5548fbb9b9877a2440cec37f2978e7427d9ca1ee07c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Databricks",
@@ -1351,9 +1430,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "\"The majority of employees at Databricks actually aren't programmers that are extremely technical. So Replit is perfect for that whole segment,\" said Ali Ghodsi, Databricks' Chief Executive."
+              "quote": "\"The majority of employees at Databricks actually aren't programmers that are extremely technical. So Replit is perfect for that whole segment,\" said Ali Ghodsi, Databricks' Chief Executive.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "e13f608eb28287e0c0631a117b0754eb63615d23bee71bd03d872fed06718e1c"
             }
-          ]
+          ],
+          "entity_id": "EN-2dc010636b9dce91"
         },
         {
           "name": "Talkdesk",
@@ -1362,9 +1444,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "\"The process to build the app would have normally taken about two weeks, but instead took two days with Replit,\" said Shauna Geraghty, Talkdesk's SVP and Head of Global Talent."
+              "quote": "\"The process to build the app would have normally taken about two weeks, but instead took two days with Replit,\" said Shauna Geraghty, Talkdesk's SVP and Head of Global Talent.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "5bf984aaf12694c4242184978c2318a67d5ae85eb3895f5a2535341352d8be0b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Duolingo",
@@ -1373,9 +1458,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Zillow and Duolingo are among those testing the platform to enable internal teams to build tools without waiting on traditional engineering pipelines."
+              "quote": "Zillow and Duolingo are among those testing the platform to enable internal teams to build tools without waiting on traditional engineering pipelines.",
+              "source_content_hash": "c906371275e7a3ca",
+              "quote_hash": "636ae568ac206a204e2a3844813c91e49d061ae8dd5cfb41a3b3802f61c09f24"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1389,9 +1477,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Anthropic's Claude Code has emerged as a leading AI-assisted coding product and has expanded rapidly in recent months. OpenAI's Codex, Cursor, Cognition and Lovable are also competing for adoption. Replit is targeting users who want to prototype and deploy internal tools without specialist engineering skills."
+              "quote": "Anthropic's Claude Code has emerged as a leading AI-assisted coding product and has expanded rapidly in recent months. OpenAI's Codex, Cursor, Cognition and Lovable are also competing for adoption. Replit is targeting users who want to prototype and deploy internal tools without specialist engineering skills.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "2db8cfbece05f9264d55a075d1edc0b9fc745e547128ad517560032cec4268df"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "Anysphere",
@@ -1403,13 +1494,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-988da64a0fed3fd0",
-              "quote": "Anysphere (Cursor) – $29.3B valuation, $2.3B Series B, $500M ARR The AI-powered IDE for developers, directly competing with GitHub Copilot."
+              "quote": "Anysphere (Cursor) – $29.3B valuation, $2.3B Series B, $500M ARR The AI-powered IDE for developers, directly competing with GitHub Copilot.",
+              "source_content_hash": "ffcc891136474a1d",
+              "quote_hash": "8fd8c7e4bd4d497c3c0d0526b93e4212222aa681911ab90aa72e633e4366bc30"
             },
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Replit is targeting users who want to prototype and deploy internal tools without specialist engineering skills."
+              "quote": "Replit is targeting users who want to prototype and deploy internal tools without specialist engineering skills.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "50d6836f98b0f9858c44118de51cdaa8f31f9399534ddf150f36cb2789e76560"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Lovable",
@@ -1421,9 +1517,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-988da64a0fed3fd0",
-              "quote": "Lovable – $6.6B valuation, $200M ARR Vibe coding platform that turns text prompts into full applications."
+              "quote": "Lovable – $6.6B valuation, $200M ARR Vibe coding platform that turns text prompts into full applications.",
+              "source_content_hash": "ffcc891136474a1d",
+              "quote_hash": "b31f9ff782efbc1317847abe0d590657820da64ea0d7722a79141d59fdbe8568"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1434,7 +1533,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2220b0e7f33bfc10",
-              "quote": "Replit's platform is currently used by more than 50 million users, building a range of solutions from school projects to enterprise-grade internal systems."
+              "quote": "Replit's platform is currently used by more than 50 million users, building a range of solutions from school projects to enterprise-grade internal systems.",
+              "source_content_hash": "d97a108f575a9b98",
+              "quote_hash": "5c17a136eb8b6a6b2d87287bfd3521f7c254cd0da5330817d5694621af1aa763"
             }
           ]
         },
@@ -1445,7 +1546,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Annualized revenue climbed from $2.8 million to $150 million in about a year, according to company figures."
+              "quote": "Annualized revenue climbed from $2.8 million to $150 million in about a year, according to company figures.",
+              "source_content_hash": "c906371275e7a3ca",
+              "quote_hash": "4afc147246e9d3879b0bf9c9cfc69045a656cdd90be2f748f71c090ed668bae4"
             }
           ]
         },
@@ -1456,7 +1559,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Replit is now used at 85% of the Fortune 500."
+              "quote": "Replit is now used at 85% of the Fortune 500.",
+              "source_content_hash": "c906371275e7a3ca",
+              "quote_hash": "47232a0395d49d66ad783ca6e80565797bc47e5a6aecd95c2871c14d88921d28"
             }
           ]
         },
@@ -1467,7 +1572,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Replit did not disclose revenue, but said it is on track to reach annual recurring revenue of USD $1 billion by the end of the year."
+              "quote": "Replit did not disclose revenue, but said it is on track to reach annual recurring revenue of USD $1 billion by the end of the year.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "722c889c76479b173a78073e9eebee0b9527416ec2bc785f83c60d467e846092"
             }
           ]
         }
@@ -1479,7 +1586,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2220b0e7f33bfc10",
-              "quote": "\"This round reflects our conviction in both the scale of the market and Replit's momentum,\" said Margaret Wu, Lead Investor at Georgian. \"Software creation is expanding beyond traditional developers and Replit has built a platform that allows people to move from idea to production software in a single environment. We believe Replit is part of a class of companies shaping the new AI-driven technology economy.\""
+              "quote": "\"This round reflects our conviction in both the scale of the market and Replit's momentum,\" said Margaret Wu, Lead Investor at Georgian. \"Software creation is expanding beyond traditional developers and Replit has built a platform that allows people to move from idea to production software in a single environment. We believe Replit is part of a class of companies shaping the new AI-driven technology economy.\"",
+              "source_content_hash": "d97a108f575a9b98",
+              "quote_hash": "a45f0e1c1054a5f9ac365966b9ee65f904e77687b9a6d325d10c5c9da089c97a"
             }
           ]
         },
@@ -1489,7 +1598,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a863ff746887d87a",
-              "quote": "\"The majority of employees at Databricks actually aren't programmers that are extremely technical. So Replit is perfect for that whole segment,\" said Ali Ghodsi, Databricks' Chief Executive."
+              "quote": "\"The majority of employees at Databricks actually aren't programmers that are extremely technical. So Replit is perfect for that whole segment,\" said Ali Ghodsi, Databricks' Chief Executive.",
+              "source_content_hash": "74b53eda49179570",
+              "quote_hash": "e13f608eb28287e0c0631a117b0754eb63615d23bee71bd03d872fed06718e1c"
             }
           ]
         }
@@ -1505,7 +1616,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2220b0e7f33bfc10",
-                "quote": "\"This round reflects our conviction in both the scale of the market and Replit's momentum,\" said Margaret Wu, Lead Investor at Georgian. \"Software creation is expanding beyond traditional developers and Replit has built a platform that allows people to move from idea to production software in a single environment. We believe Replit is part of a class of companies shaping the new AI-driven technology economy.\""
+                "quote": "\"This round reflects our conviction in both the scale of the market and Replit's momentum,\" said Margaret Wu, Lead Investor at Georgian. \"Software creation is expanding beyond traditional developers and Replit has built a platform that allows people to move from idea to production software in a single environment. We believe Replit is part of a class of companies shaping the new AI-driven technology economy.\"",
+                "source_content_hash": "d97a108f575a9b98",
+                "quote_hash": "a45f0e1c1054a5f9ac365966b9ee65f904e77687b9a6d325d10c5c9da089c97a"
               }
             ]
           }
@@ -1523,7 +1636,22 @@
           "AI 智能体的可靠性风险：Replit Agent 曾错误删除客户代码库，虽已推出新防护措施，但 AI 驱动的开发工具在生产环境中达到 99% 以上准确率仍面临巨大挑战，边缘案例和上下文切换的复杂性可能限制企业级部署的深度。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 驱动的软件创建平台，属于 AI 智能体在开发者工具和低代码/无代码领域的应用"
+        "sector": "AI 驱动的软件创建平台，属于 AI 智能体在开发者工具和低代码/无代码领域的应用",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“软件创建民主化”——即非开发者群体通过自然语言构建生产级应用的能力。本轮 $400M 融资使估值在六个月内从 $3B 跃升至 $9B，依赖的已验证信号包括：年化收入从 $2.8M 飙升至 $150M、用户突破 5000 万、85% 财富 500 强渗透率，以及 Zillow、Databricks 等企业客户的实际部署数据。估值逻辑已从传统 SaaS 指标转向平台型 AI 公司的增长预期，但 $9B 估值对应约 60 倍当前 ARR（$150M），或 9 倍年底目标 ARR（$1B），反映的是对“提示到生产”范式的长期押注而非当前财务表现。证据边界：收入数据来自公司自述，未经独立审计；$1B ARR 目标为管理层预测，尚未实现。",
+          "evidence_signals": [
+            "年化收入在约一年内从 $2.8M 增长至 $150M",
+            "平台用户超过 5000 万",
+            "85% 的财富 500 强公司有员工在使用 Replit",
+            "Zillow 拥有约 600 个席位，员工创建了超过 7,000 个应用",
+            "Talkdesk 使用 Replit 将应用构建时间从两周缩短至两天",
+            "Ramp 数据显示 Replit 在 2026 年 3 月位列增长最快的软件平台之一"
+          ],
+          "risks": [
+            "AI 智能体的可靠性风险：Replit Agent 曾错误删除客户代码库，虽已推出新防护措施，但 AI 驱动的开发工具在生产环境中达到 99% 以上准确率仍面临巨大挑战，边缘案例和上下文切换的复杂性可能限制企业级部署的深度。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1531,337 +1659,175 @@
           "target_kind": "product",
           "research_name": "Replit Agent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-988da64a0fed3fd0",
-              "quote": "Browser-based coding environment with AI Agent that generates full-stack applications from natural language, including frontend, backend, databases, and deployment."
-            },
-            {
-              "source_id": "FISRC-2220b0e7f33bfc10",
-              "quote": "Replit provides an AI-powered development platform designed to enable students, teachers, designers, small business owners and engineers to generate, deploy, and iterate on software applications within a single environment."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Replit Agent 4",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Replit describes Agent 4 as a tool for creating and modifying app designs on a digital canvas. Users can adjust mock-ups, sketch features and collaborate in real time. Agent 4 also offers guided starting points that prompt users to choose what they want to build, including spreadsheets, data visualisations and games."
-            },
-            {
-              "source_id": "FISRC-82fef24b188919d1",
-              "quote": "Agent 4 enables users to add new elements to a design by sketching them. According to Replit, the software can turn simple drawings into relatively complex visual assets such as three-dimensional animations."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Amjad Masad",
           "canonical_entity_id": "EN-fd67ab47893c5a98",
-          "canonical_name": "Amjad Masad",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Replit is based in San Francisco and led by Chief Executive Amjad Masad, who founded the company with his wife, Haya Masad, Replit's Head of Design."
-            }
-          ]
+          "canonical_name": "Amjad Masad"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Haya Masad",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Replit is based in San Francisco and led by Chief Executive Amjad Masad, who founded the company with his wife, Haya Masad, Replit's Head of Design."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Georgian",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2220b0e7f33bfc10",
-              "quote": "Georgian, a growth-stage B2B investor that builds alongside portfolio companies to unlock value from AI through its in-house AI Lab, today announced it has led a $400 million Series D investment in Replit, valuing the company at $9 billion."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "G Squared",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Prysm Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "1789 Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Coatue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz (a16z)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Craft Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Qatar Investment Authority",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accenture Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Databricks Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Okta Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tether",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Georgian",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2220b0e7f33bfc10",
-              "quote": "The investment represents a rapid follow-on for Georgian, which first invested in Replit's Series C late last year and is now doubling down as the company expands its position in AI-powered software creation."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Zillow",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Zillow has around 600 Replit seats, and employees created more than 7,000 apps over the past year, according to the company."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Databricks",
           "canonical_entity_id": "EN-2dc010636b9dce91",
-          "canonical_name": "Databricks",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "\"The majority of employees at Databricks actually aren't programmers that are extremely technical. So Replit is perfect for that whole segment,\" said Ali Ghodsi, Databricks' Chief Executive."
-            }
-          ]
+          "canonical_name": "Databricks"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Talkdesk",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "\"The process to build the app would have normally taken about two weeks, but instead took two days with Replit,\" said Shauna Geraghty, Talkdesk's SVP and Head of Global Talent."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Duolingo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ed3d8fd701898b",
-              "quote": "Zillow and Duolingo are among those testing the platform to enable internal teams to build tools without waiting on traditional engineering pipelines."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Anthropic's Claude Code has emerged as a leading AI-assisted coding product and has expanded rapidly in recent months. OpenAI's Codex, Cursor, Cognition and Lovable are also competing for adoption. Replit is targeting users who want to prototype and deploy internal tools without specialist engineering skills."
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anysphere",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-988da64a0fed3fd0",
-              "quote": "Anysphere (Cursor) – $29.3B valuation, $2.3B Series B, $500M ARR The AI-powered IDE for developers, directly competing with GitHub Copilot."
-            },
-            {
-              "source_id": "FISRC-a863ff746887d87a",
-              "quote": "Replit is targeting users who want to prototype and deploy internal tools without specialist engineering skills."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Lovable",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-988da64a0fed3fd0",
-              "quote": "Lovable – $6.6B valuation, $200M ARR Vibe coding platform that turns text prompts into full applications."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1947,10 +1913,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:19:20.494Z"
+      "published_at": "2026-07-26T14:19:20.494Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Replit Agent",
+            "Replit Agent 4"
+          ]
+        },
+        "founders": {
+          "linked": 1,
+          "total": 2,
+          "unresolved_names": [
+            "Haya Masad"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-8eb0acb180b7ad9d"
+      ],
+      "aggregation": {
+        "key": "EN-53b69ef92c836777|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

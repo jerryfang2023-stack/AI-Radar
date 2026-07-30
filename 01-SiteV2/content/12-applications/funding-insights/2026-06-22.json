@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-22",
     "generated_at": "2026-07-26T15:14:57.594Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 3,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-a329e296c3d1ffea",
       "triggered_by_event_id": "EV-9486e14e99499e3b",
       "as_of_date": "2026-06-22",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5ed74dc6e2f61728",
-                "quote": "Tom Mueller, founder and CEO of Impulse Space"
+                "quote": "Tom Mueller, founder and CEO of Impulse Space",
+                "source_content_hash": "a0e7922a86bd6e46",
+                "quote_hash": "e8514692fc3a66bca7136d7f36da24bb467d7a93cac51569ab048540c94dd2c8"
               }
             ],
             "entity_id": null
@@ -47,19 +50,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c5bda50313e41f79",
-              "quote": "The company now numbers around 500 people."
+              "quote": "The company now numbers around 500 people.",
+              "source_content_hash": "a7da427446e80cf8",
+              "quote_hash": "6ea471e7b3f5a7d547a121526528f59295b54276a023a25a3d08a37172725c3d"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-5ed74dc6e2f61728",
-            "quote": "Impulse Space, the in-space mobility leader, is accelerating our future beyond Earth beginning with its fleet of cost-effective, high-performance space vehicles: Helios and Mira."
+            "quote": "Impulse Space, the in-space mobility leader, is accelerating our future beyond Earth beginning with its fleet of cost-effective, high-performance space vehicles: Helios and Mira.",
+            "source_content_hash": "a0e7922a86bd6e46",
+            "quote_hash": "1dd669260a82807092eef8168f12cfbf569dab3c00760cb0d0b5d773c001f5d7"
           }
         ]
       },
       "financing": {
-        "round": "Series D",
+        "round": "D轮",
         "amount": "$500 million",
         "total_raised": "超过10亿美元",
         "announced_at": "2026-06-02",
@@ -70,7 +77,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0f7352be7c17ce49",
-                "quote": "137 Ventures and Banner VC led the financing"
+                "quote": "137 Ventures and Banner VC led the financing",
+                "source_content_hash": "961454e4af933445",
+                "quote_hash": "f96ba2241b1765c8a93ce6ec73206319b7582187ddfb37c5480bce5c632411dd"
               }
             ],
             "entity_id": null
@@ -81,128 +90,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0f7352be7c17ce49",
-                "quote": "137 Ventures and Banner VC led the financing"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "DFJ Growth",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "the round also includes participation from new investor DFJ Growth"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Valor Equity Partners",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Founders Fund",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "RTX Ventures",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "DCVC",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Airbus Ventures",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Spring Tide",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "First Principles Group",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Balerion Space Ventures",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Tamarack Global",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Trousdale Ventures",
-            "role": "C轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-f6b16eaba393b2b3",
-                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
+                "quote": "137 Ventures and Banner VC led the financing",
+                "source_content_hash": "961454e4af933445",
+                "quote_hash": "f96ba2241b1765c8a93ce6ec73206319b7582187ddfb37c5480bce5c632411dd"
               }
             ],
             "entity_id": null
@@ -211,7 +101,238 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-0f7352be7c17ce49",
-            "quote": "Impulse Space, a developer of spacecraft and propulsion systems for transport, moving and orbital repositioning in space, raised $500 million in Series D funding."
+            "quote": "Impulse Space, a developer of spacecraft and propulsion systems for transport, moving and orbital repositioning in space, raised $500 million in Series D funding.",
+            "source_content_hash": "961454e4af933445",
+            "quote_hash": "11b434214a6e7549c49ca6d664284c2a2568380d1ce751e7fae127715083c8b9"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "other_round_investors": [
+          {
+            "name": "DFJ Growth",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "the round also includes participation from new investor DFJ Growth",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "cc1af66c011f0af524bc419dbeed61503368b8257cd26b82875683ff9afaa80b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Valor Equity Partners",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Founders Fund",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "RTX Ventures",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "DCVC",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Airbus Ventures",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Spring Tide",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "First Principles Group",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Balerion Space Ventures",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Tamarack Global",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Trousdale Ventures",
+            "role": "C轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6b16eaba393b2b3",
+                "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+                "source_content_hash": "6f44e8a8123b489d",
+                "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_c",
+              "label": "C轮",
+              "original": "C轮参投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-9486e14e99499e3b",
+            "round_original": "Series D",
+            "amount": "$500 million",
+            "announced_at": "2026-06-02",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0f7352be7c17ce49",
+                "quote": "Impulse Space, a developer of spacecraft and propulsion systems for transport, moving and orbital repositioning in space, raised $500 million in Series D funding.",
+                "source_content_hash": "961454e4af933445",
+                "quote_hash": "11b434214a6e7549c49ca6d664284c2a2568380d1ce751e7fae127715083c8b9"
+              }
+            ]
           }
         ]
       },
@@ -228,7 +349,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ed74dc6e2f61728",
-              "quote": "Helios, a high-energy kick stage scheduled for first flight in 2027, is designed to deliver payloads to distant orbits on dramatically shorter timelines and much more affordably than conventional approaches."
+              "quote": "Helios, a high-energy kick stage scheduled for first flight in 2027, is designed to deliver payloads to distant orbits on dramatically shorter timelines and much more affordably than conventional approaches.",
+              "source_content_hash": "a0e7922a86bd6e46",
+              "quote_hash": "7fc194cb82b6f83c329013c3dea352bba3c4ea63d94b1616ec8634a4ed748661"
             }
           ],
           "entity_id": "EN-45c52af0feb0f285"
@@ -242,9 +365,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "eight Saiph thrusters went to Vast for its Haven-1 commercial space station"
+              "quote": "eight Saiph thrusters went to Vast for its Haven-1 commercial space station",
+              "source_content_hash": "e234b4c1722957e9",
+              "quote_hash": "13a91b946411ca2a72deebc28bdc346ef8ba66d18834ee8ea52eb72e1e4860c5"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "SES",
@@ -253,9 +379,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "SES, the global satellite operator, has signed a multi-launch agreement starting 2027."
+              "quote": "SES, the global satellite operator, has signed a multi-launch agreement starting 2027.",
+              "source_content_hash": "e234b4c1722957e9",
+              "quote_hash": "4652f2f529bd967b14e18396232550dc33e780d589fce4b09b72192542270bf5"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "美国国家侦察局",
@@ -264,9 +393,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "The National Reconnaissance Office awarded classified BALISTA contracts in October 2024."
+              "quote": "The National Reconnaissance Office awarded classified BALISTA contracts in October 2024.",
+              "source_content_hash": "e234b4c1722957e9",
+              "quote_hash": "c1bb4ea2396b61f91b3c81fc87b6b8bbad2c7735dd5edaa9eadd83fa8e2cc9b1"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -280,9 +412,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "Rocket Lab, the publicly traded space logistics company, trades at 55-57x sales with $601.8 million in FY2025 revenue"
+              "quote": "Rocket Lab, the publicly traded space logistics company, trades at 55-57x sales with $601.8 million in FY2025 revenue",
+              "source_content_hash": "e234b4c1722957e9",
+              "quote_hash": "f6ab0120ec561feb57a4aa5d3847a9d7c5ca31bb532869bee6bbab87d99043ac"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -293,7 +428,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ed74dc6e2f61728",
-              "quote": "With three missions flown"
+              "quote": "With three missions flown",
+              "source_content_hash": "a0e7922a86bd6e46",
+              "quote_hash": "7940b0db30e58b3bdd2a9fce71d4208cd17a31bb93e21e39d059c8293deb1390"
             }
           ]
         },
@@ -304,7 +441,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ed74dc6e2f61728",
-              "quote": "hundreds of millions of dollars in customer contracts"
+              "quote": "hundreds of millions of dollars in customer contracts",
+              "source_content_hash": "a0e7922a86bd6e46",
+              "quote_hash": "ea350841b8d9b00808b163d42908634eded5e67e6d8e1972d18c65daa91d9e28"
             }
           ]
         },
@@ -315,7 +454,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "With over 30 signed contracts (totaling nearly $200 million in value)"
+              "quote": "With over 30 signed contracts (totaling nearly $200 million in value)",
+              "source_content_hash": "6f44e8a8123b489d",
+              "quote_hash": "b146d321743c9ed4b7464bdd8dc837970c016659e9ba37839dd08990a2a37c92"
             }
           ]
         },
@@ -326,7 +467,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5ed74dc6e2f61728",
-              "quote": "with over 200 open roles and more planned"
+              "quote": "with over 200 open roles and more planned",
+              "source_content_hash": "a0e7922a86bd6e46",
+              "quote_hash": "696bbe6e2215d37c06742eac6d38f55381e525e4e62d7fe9e239de5bcd0dbe6c"
             }
           ]
         },
@@ -337,7 +480,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "Revenue in 2024 was estimated at $34.5 million based on government contract awards."
+              "quote": "Revenue in 2024 was estimated at $34.5 million based on government contract awards.",
+              "source_content_hash": "e234b4c1722957e9",
+              "quote_hash": "618d0b86e45a196118499b3eb713dd0dc95b8b88681535e7d65d847ad1759842"
             }
           ]
         },
@@ -348,7 +493,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "Impulse Space raised $500M at a $4.26B valuation on June 2, 2026"
+              "quote": "Impulse Space raised $500M at a $4.26B valuation on June 2, 2026",
+              "source_content_hash": "e234b4c1722957e9",
+              "quote_hash": "bf96677d13f739ef227fb9451a24195560c38ed7e9c982fb74e4463431bc9417"
             }
           ]
         }
@@ -368,7 +515,21 @@
           "公司估值在13个月内从18亿美元跃升至42.6亿美元，若Helios首飞或Golden Dome项目出现延迟，高估值可能难以维持。"
         ],
         "related_direction_id": "",
-        "sector": "航天科技与国防"
+        "sector": "航天科技与国防",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“发射后在轨机动”作为独立基础设施层的成立。本轮融资的已验证信号包括：1）Mira航天器已完成三次飞行任务，证明了高推力化学推进在轨机动的可行性；2）公司手握超过30份、总价值近2亿美元的合同，需求真实存在；3）创始人Tom Mueller在SpaceX的推进系统开发经验提供了极高的技术执行力背书。估值从C轮的约18亿美元跃升至D轮的42.6亿美元，反映了市场对太空机动性赛道和公司执行能力的重新定价。判断的证据边界在于，Helios高能推进级的首次飞行（2027年）是验证其商业模型（快速、低成本GEO交付）的关键里程碑，目前该产品尚未经过飞行验证。",
+          "evidence_signals": [
+            "Mira航天器已完成三次在轨飞行任务，执行了创纪录的轨道机动和复杂的在轨操作。",
+            "公司拥有超过30份已签署合同，总价值近2亿美元，客户涵盖商业、民用和政府领域。",
+            "公司已获得美国太空军和国家侦察局的多项合同，包括价值3450万美元的战术响应太空任务。"
+          ],
+          "risks": [
+            "Helios使用的低温推进剂（液氧/甲烷）在太空中面临蒸发损失问题，可能限制其执行多日深空任务的能力。",
+            "SpaceX的Starship若实现低成本直接GEO插入，将削弱Helios作为高能轨道运输工具的核心价值主张。",
+            "公司估值在13个月内从18亿美元跃升至42.6亿美元，若Helios首飞或Golden Dome项目出现延迟，高估值可能难以维持。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -376,247 +537,133 @@
           "target_kind": "product",
           "research_name": "Helios",
           "canonical_entity_id": "EN-45c52af0feb0f285",
-          "canonical_name": "Helios",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5ed74dc6e2f61728",
-              "quote": "Helios, a high-energy kick stage scheduled for first flight in 2027, is designed to deliver payloads to distant orbits on dramatically shorter timelines and much more affordably than conventional approaches."
-            }
-          ]
+          "canonical_name": "Helios"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tom Mueller",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5ed74dc6e2f61728",
-              "quote": "Tom Mueller, founder and CEO of Impulse Space"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "137 Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0f7352be7c17ce49",
-              "quote": "137 Ventures and Banner VC led the financing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BANNER VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0f7352be7c17ce49",
-              "quote": "137 Ventures and Banner VC led the financing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "DFJ Growth",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "the round also includes participation from new investor DFJ Growth"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Valor Equity Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "RTX Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "DCVC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Airbus Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Spring Tide",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "First Principles Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Balerion Space Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Tamarack Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Trousdale Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f6b16eaba393b2b3",
-              "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Vast",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "eight Saiph thrusters went to Vast for its Haven-1 commercial space station"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "SES",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "SES, the global satellite operator, has signed a multi-launch agreement starting 2027."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "美国国家侦察局",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "The National Reconnaissance Office awarded classified BALISTA contracts in October 2024."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Rocket Lab",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5dc5039d7938fb96",
-              "quote": "Rocket Lab, the publicly traded space logistics company, trades at 55-57x sales with $601.8 million in FY2025 revenue"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -702,13 +749,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:14:57.519Z"
+      "published_at": "2026-07-26T15:14:57.519Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Tom Mueller"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9486e14e99499e3b"
+      ],
+      "aggregation": {
+        "key": "EN-05f6ecf01ac4ebec|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-2bc0875969d87844",
       "triggered_by_event_id": "EV-60f9204b84882857",
       "as_of_date": "2026-06-22",
@@ -726,7 +800,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f5bfe108363f324a",
-                "quote": "Hitoshi Murakami, the founder and CEO"
+                "quote": "Hitoshi Murakami, the founder and CEO",
+                "source_content_hash": "ea6fe3d2a3da193e",
+                "quote_hash": "b10a879684363a0df13faf5996f2afaa980c07cdac5da9de44e7614bbaeef1fb"
               }
             ],
             "entity_id": null
@@ -738,18 +814,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "dodoAI employs 34 people across offices in Tokyo, Ho Chi Minh City, and Hanoi."
+              "quote": "dodoAI employs 34 people across offices in Tokyo, Ho Chi Minh City, and Hanoi.",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "a347d22fa45520b341cea0ff3ccdc4a8546607d941c4a2ad503482ff9a10886e"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-93ed43eb62fcbfea",
-            "quote": "Tokyo-based dodoAI"
+            "quote": "Tokyo-based dodoAI",
+            "source_content_hash": "0543bc025e5f3589",
+            "quote_hash": "071c63e3fb406124258d7fc3a8e692a111ef25ed287ff7514b16aa9a65f21a60"
           },
           {
             "source_id": "FISRC-93ed43eb62fcbfea",
-            "quote": "dodoAI offers what it calls a “Sovereign Agentic OS,” a governance layer for AI agents performing corporate work."
+            "quote": "dodoAI offers what it calls a “Sovereign Agentic OS,” a governance layer for AI agents performing corporate work.",
+            "source_content_hash": "0543bc025e5f3589",
+            "quote_hash": "8bb92c70065d1613805868cf5fc8823c32ac0d53fa4073fbff5847ca057cef44"
           }
         ]
       },
@@ -765,7 +847,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-93ed43eb62fcbfea",
-                "quote": "has closed a ¥280 million seed round led by Genesia Ventures."
+                "quote": "has closed a ¥280 million seed round led by Genesia Ventures.",
+                "source_content_hash": "0543bc025e5f3589",
+                "quote_hash": "7a2480fdfe57d26234613962c5183918ddf505201b80a9cdb03587415175e162"
               }
             ],
             "entity_id": null
@@ -776,7 +860,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-93ed43eb62fcbfea",
-                "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka."
+                "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka.",
+                "source_content_hash": "0543bc025e5f3589",
+                "quote_hash": "62da8c66dda53abf2ba57c8cbbcf5742f4009ee5257be0daad0a6bdabaf7224b"
               }
             ],
             "entity_id": null
@@ -787,7 +873,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-93ed43eb62fcbfea",
-                "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka."
+                "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka.",
+                "source_content_hash": "0543bc025e5f3589",
+                "quote_hash": "62da8c66dda53abf2ba57c8cbbcf5742f4009ee5257be0daad0a6bdabaf7224b"
               }
             ],
             "entity_id": null
@@ -796,11 +884,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-93ed43eb62fcbfea",
-            "quote": "has closed a ¥280 million seed round led by Genesia Ventures."
+            "quote": "has closed a ¥280 million seed round led by Genesia Ventures.",
+            "source_content_hash": "0543bc025e5f3589",
+            "quote_hash": "7a2480fdfe57d26234613962c5183918ddf505201b80a9cdb03587415175e162"
           },
           {
             "source_id": "FISRC-93ed43eb62fcbfea",
-            "quote": "Total Funding: $1.74M"
+            "quote": "Total Funding: $1.74M",
+            "source_content_hash": "0543bc025e5f3589",
+            "quote_hash": "b94d76a245470a2b625dae6f813d7a08419a0391462d677a73c8ba46429cdf9c"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-60f9204b84882857",
+            "round_original": "种子轮",
+            "amount": "2.8亿日元",
+            "announced_at": "2026-06-18",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-93ed43eb62fcbfea",
+                "quote": "has closed a ¥280 million seed round led by Genesia Ventures.",
+                "source_content_hash": "0543bc025e5f3589",
+                "quote_hash": "7a2480fdfe57d26234613962c5183918ddf505201b80a9cdb03587415175e162"
+              },
+              {
+                "source_id": "FISRC-93ed43eb62fcbfea",
+                "quote": "Total Funding: $1.74M",
+                "source_content_hash": "0543bc025e5f3589",
+                "quote_hash": "b94d76a245470a2b625dae6f813d7a08419a0391462d677a73c8ba46429cdf9c"
+              }
+            ]
           }
         ]
       },
@@ -819,15 +936,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "dodoAI offers what it calls a “Sovereign Agentic OS,” a governance layer for AI agents performing corporate work. The platform monitors, verifies, and audits AI-generated outputs while requiring human approval before final actions are taken."
+              "quote": "dodoAI offers what it calls a “Sovereign Agentic OS,” a governance layer for AI agents performing corporate work. The platform monitors, verifies, and audits AI-generated outputs while requiring human approval before final actions are taken.",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "50c684fc07ea3907e02f5ea3ba09650a02f03708a47ddc8e0333a98528c40e8c"
             },
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "It is model-agnostic, supporting OpenAI, Anthropic’s Claude, and Google Gemini, and can be deployed in public cloud, on-premises, or air-gapped environments."
+              "quote": "It is model-agnostic, supporting OpenAI, Anthropic’s Claude, and Google Gemini, and can be deployed in public cloud, on-premises, or air-gapped environments.",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "a7702f14117f0b42ae0d5117cf43f9572a083166ae7c70e1cfaef0009a42f16e"
             },
             {
               "source_id": "FISRC-195d2d1565faf316",
-              "quote": "It further bundles a knowledge graph, retrieval-augmented generation, orchestration, and monitoring features"
+              "quote": "It further bundles a knowledge graph, retrieval-augmented generation, orchestration, and monitoring features",
+              "source_content_hash": "7fd51df8c770910a",
+              "quote_hash": "54990adb015784339857bba6bcf2887d3504876123312658ea20689cab719b8b"
             }
           ],
           "entity_id": null
@@ -841,9 +964,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "a pilot project with a large property and casualty insurer in which dodoAI applied AI-driven development to a single subsystem within a core platform consisting of roughly 300 subsystems. According to the company, the project reduced labor requirements by between 35% and 98% in the targeted areas while maintaining quality standards."
+              "quote": "a pilot project with a large property and casualty insurer in which dodoAI applied AI-driven development to a single subsystem within a core platform consisting of roughly 300 subsystems. According to the company, the project reduced labor requirements by between 35% and 98% in the targeted areas while maintaining quality standards.",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "0116b662f54d20a457bb040c14a38a012ba32a059da3fc1fd006e816d319f963"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -855,7 +981,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "has closed a ¥280 million seed round"
+              "quote": "has closed a ¥280 million seed round",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "d362a1a3db8203389d9c0e9bd96e89cb5c43120dae8750f406d52ff419fb2e39"
             }
           ]
         },
@@ -866,7 +994,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "Total Funding: $1.74M"
+              "quote": "Total Funding: $1.74M",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "b94d76a245470a2b625dae6f813d7a08419a0391462d677a73c8ba46429cdf9c"
             }
           ]
         },
@@ -877,7 +1007,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "dodoAI employs 34 people across offices in Tokyo, Ho Chi Minh City, and Hanoi."
+              "quote": "dodoAI employs 34 people across offices in Tokyo, Ho Chi Minh City, and Hanoi.",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "a347d22fa45520b341cea0ff3ccdc4a8546607d941c4a2ad503482ff9a10886e"
             }
           ]
         },
@@ -888,7 +1020,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "the project reduced labor requirements by between 35% and 98% in the targeted areas while maintaining quality standards."
+              "quote": "the project reduced labor requirements by between 35% and 98% in the targeted areas while maintaining quality standards.",
+              "source_content_hash": "0543bc025e5f3589",
+              "quote_hash": "539309f6a7e76299ba0977e2c0d859f4f7e4061cf6e397a29a906b1ee6134c2c"
             }
           ]
         }
@@ -900,7 +1034,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f5bfe108363f324a",
-              "quote": "We are delighted to lead this investment at Genesia Ventures. As enterprises increasingly adopt and build AI agents, we believe the Control Plane layer—the foundation that enables companies to use these agents safely and holistically—will become the most critical and underserved space in the years ahead."
+              "quote": "We are delighted to lead this investment at Genesia Ventures. As enterprises increasingly adopt and build AI agents, we believe the Control Plane layer—the foundation that enables companies to use these agents safely and holistically—will become the most critical and underserved space in the years ahead.",
+              "source_content_hash": "ea6fe3d2a3da193e",
+              "quote_hash": "d690890a253da480afad3320f7a2bc74c4747bb79138c83f621c957e7a21a448"
             }
           ]
         }
@@ -916,7 +1052,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f5bfe108363f324a",
-                "quote": "As enterprises increasingly adopt and build AI agents, we believe the Control Plane layer—the foundation that enables companies to use these agents safely and holistically—will become the most critical and underserved space in the years ahead. dodoAI’s approach of bundling implementation, verification, and observation as a higher-order concept above the capability layer directly confronts the structural challenges that large enterprises face in advancing AI transformation (AX), and we are truly excited to be part of this journey."
+                "quote": "As enterprises increasingly adopt and build AI agents, we believe the Control Plane layer—the foundation that enables companies to use these agents safely and holistically—will become the most critical and underserved space in the years ahead. dodoAI’s approach of bundling implementation, verification, and observation as a higher-order concept above the capability layer directly confronts the structural challenges that large enterprises face in advancing AI transformation (AX), and we are truly excited to be part of this journey.",
+                "source_content_hash": "ea6fe3d2a3da193e",
+                "quote_hash": "6143df9ffc82005486a9b6356669d5201423f4b0defaf4e97a4e9196c270d36a"
               }
             ]
           }
@@ -931,7 +1069,19 @@
           "试点仅覆盖单一子系统，尚未证明在完整核心平台或跨行业场景中的可复制性，劳动力削减幅度区间过宽（35%-98%），实际效果存在不确定性"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI治理"
+        "sector": "企业AI治理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：企业AI代理从辅助工具转向自主执行者时，治理、审计和可追溯性将成为大型受监管企业的刚性需求，而当前市场缺乏一个独立于具体模型和代理的控制平面层。本轮融资所依赖的已验证信号包括：已与一家大型财产险公司完成试点，在约300个子系统的核心平台中实现特定领域35%-98%的劳动力削减；产品已支持模型无关设计、气隙部署等企业级特性；团队在东京和越南拥有34人工程力量。但本轮金额较小（2.8亿日元），且试点仅覆盖单一子系统，尚未证明跨行业规模化部署能力。",
+          "evidence_signals": [
+            "与一家大型财产与意外险保险公司完成AI驱动开发试点，在约300个子系统的核心平台中实现特定领域35%-98%的劳动力削减",
+            "产品已实现模型无关设计，支持OpenAI、Anthropic Claude、Google Gemini，并可在公有云、本地和气隙环境中部署",
+            "团队在东京、胡志明市和河内拥有34名员工，具备跨国工程交付能力"
+          ],
+          "risks": [
+            "试点仅覆盖单一子系统，尚未证明在完整核心平台或跨行业场景中的可复制性，劳动力削减幅度区间过宽（35%-98%），实际效果存在不确定性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -939,86 +1089,42 @@
           "target_kind": "product",
           "research_name": "Sovereign Agentic OS",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "dodoAI offers what it calls a “Sovereign Agentic OS,” a governance layer for AI agents performing corporate work. The platform monitors, verifies, and audits AI-generated outputs while requiring human approval before final actions are taken."
-            },
-            {
-              "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "It is model-agnostic, supporting OpenAI, Anthropic’s Claude, and Google Gemini, and can be deployed in public cloud, on-premises, or air-gapped environments."
-            },
-            {
-              "source_id": "FISRC-195d2d1565faf316",
-              "quote": "It further bundles a knowledge graph, retrieval-augmented generation, orchestration, and monitoring features"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Hitoshi Murakami",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f5bfe108363f324a",
-              "quote": "Hitoshi Murakami, the founder and CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Genesia Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "has closed a ¥280 million seed round led by Genesia Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Quantum Leap Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hideki Otsuka",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "alongside Quantum Leap Ventures and Speee CEO Hideki Otsuka."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家大型财产与意外险保险公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-93ed43eb62fcbfea",
-              "quote": "a pilot project with a large property and casualty insurer in which dodoAI applied AI-driven development to a single subsystem within a core platform consisting of roughly 300 subsystems. According to the company, the project reduced labor requirements by between 35% and 98% in the targeted areas while maintaining quality standards."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1080,13 +1186,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:34:23.491Z"
+      "published_at": "2026-07-26T14:34:23.491Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sovereign Agentic OS"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Hitoshi Murakami"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-60f9204b84882857"
+      ],
+      "aggregation": {
+        "key": "EN-7bcfaaf82306c01d|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-8077351721f9c4e3",
       "triggered_by_event_id": "EV-14a666fc27d73a80",
       "as_of_date": "2026-06-22",
@@ -1104,7 +1239,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9eb5597be7955958",
-                "quote": "The company was founded by Michael Bajwa and Qian Zheng"
+                "quote": "The company was founded by Michael Bajwa and Qian Zheng",
+                "source_content_hash": "c239d614e6c725ab",
+                "quote_hash": "2958204917ae3ba0c043fbb7407246ada01e565d7526e906c4ccaa90bf1762ea"
               }
             ],
             "entity_id": null
@@ -1115,7 +1252,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9eb5597be7955958",
-                "quote": "The company was founded by Michael Bajwa and Qian Zheng"
+                "quote": "The company was founded by Michael Bajwa and Qian Zheng",
+                "source_content_hash": "c239d614e6c725ab",
+                "quote_hash": "2958204917ae3ba0c043fbb7407246ada01e565d7526e906c4ccaa90bf1762ea"
               }
             ],
             "entity_id": null
@@ -1127,23 +1266,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9eb5597be7955958",
-              "quote": "Zaro currently has eight employees"
+              "quote": "Zaro currently has eight employees",
+              "source_content_hash": "c239d614e6c725ab",
+              "quote_hash": "81eed158683bcddada2e9b136c1797dbc8a5b15516ce894927c2c201538a61b0"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-9eb5597be7955958",
-            "quote": "Zaro.ai, a London-based enterprise AI startup, has emerged from stealth with $5.1 million in pre-seed funding led by Cherry Ventures."
+            "quote": "Zaro.ai, a London-based enterprise AI startup, has emerged from stealth with $5.1 million in pre-seed funding led by Cherry Ventures.",
+            "source_content_hash": "c239d614e6c725ab",
+            "quote_hash": "884bb7d0fc9c163fbf89c5c58af935afba3b78b10fc600c81bc0320c3fa8a7ac"
           },
           {
             "source_id": "FISRC-11ff5247094b0fef",
-            "quote": "Work Nexus Labs Limited, trading as Zaro, a company incorporated in England and Wales with registered address at 3rd Floor 1 Ashley Road, Altrincham, Cheshire, United Kingdom, WA14 2DT"
+            "quote": "Work Nexus Labs Limited, trading as Zaro, a company incorporated in England and Wales with registered address at 3rd Floor 1 Ashley Road, Altrincham, Cheshire, United Kingdom, WA14 2DT",
+            "source_content_hash": "b3eb0d9b031ccdef",
+            "quote_hash": "88d6ea5dc68f6bc0e61c6d90625d9413b944524a21a5f6dc9320541d51e54171"
           }
         ]
       },
       "financing": {
-        "round": "Pre-seed",
+        "round": "预种子轮",
         "amount": "$5.1M",
         "total_raised": "$5.1M",
         "announced_at": "2026-06-19",
@@ -1154,7 +1299,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9eb5597be7955958",
-                "quote": "$5.1 million in pre-seed funding led by Cherry Ventures"
+                "quote": "$5.1 million in pre-seed funding led by Cherry Ventures",
+                "source_content_hash": "c239d614e6c725ab",
+                "quote_hash": "2eb85e8b4d6ff14c164a01fa0b2b05eae89ca6c091d1ba8856efa021fae46870"
               }
             ],
             "entity_id": null
@@ -1165,7 +1312,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9eb5597be7955958",
-                "quote": "Additional investors include Thomas Wolf of Hugging Face"
+                "quote": "Additional investors include Thomas Wolf of Hugging Face",
+                "source_content_hash": "c239d614e6c725ab",
+                "quote_hash": "425f5749c651c13805bd644f2cf82adb5a7eb7946a6d9f1d56bdc166e3f3ddcb"
               }
             ],
             "entity_id": null
@@ -1176,7 +1325,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6839d5a55af476d3",
-                "quote": "angel backers including Thomas Wolf, Thomas Dohmke, Mandeep Singh, and Marvin P."
+                "quote": "angel backers including Thomas Wolf, Thomas Dohmke, Mandeep Singh, and Marvin P.",
+                "source_content_hash": "105f51ab00f945df",
+                "quote_hash": "1822527d700697d418bdeaa66a6b6c28a6f068327c6be0e534f5907462d3ad05"
               }
             ],
             "entity_id": null
@@ -1185,11 +1336,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9eb5597be7955958",
-            "quote": "Zaro.ai, a London-based enterprise AI startup, has emerged from stealth with $5.1 million in pre-seed funding led by Cherry Ventures."
+            "quote": "Zaro.ai, a London-based enterprise AI startup, has emerged from stealth with $5.1 million in pre-seed funding led by Cherry Ventures.",
+            "source_content_hash": "c239d614e6c725ab",
+            "quote_hash": "884bb7d0fc9c163fbf89c5c58af935afba3b78b10fc600c81bc0320c3fa8a7ac"
           },
           {
             "source_id": "FISRC-6839d5a55af476d3",
-            "quote": "Zaro.ai has raised a $5.1m pre-seed led by Cherry Ventures!"
+            "quote": "Zaro.ai has raised a $5.1m pre-seed led by Cherry Ventures!",
+            "source_content_hash": "105f51ab00f945df",
+            "quote_hash": "332a812079e3f75444ebdd83842ccc4f9625db0ea06e1d8eee18b24a5f9e1f98"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-14a666fc27d73a80",
+            "round_original": "Pre-seed",
+            "amount": "$5.1M",
+            "announced_at": "2026-06-19",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9eb5597be7955958",
+                "quote": "Zaro.ai, a London-based enterprise AI startup, has emerged from stealth with $5.1 million in pre-seed funding led by Cherry Ventures.",
+                "source_content_hash": "c239d614e6c725ab",
+                "quote_hash": "884bb7d0fc9c163fbf89c5c58af935afba3b78b10fc600c81bc0320c3fa8a7ac"
+              },
+              {
+                "source_id": "FISRC-6839d5a55af476d3",
+                "quote": "Zaro.ai has raised a $5.1m pre-seed led by Cherry Ventures!",
+                "source_content_hash": "105f51ab00f945df",
+                "quote_hash": "332a812079e3f75444ebdd83842ccc4f9625db0ea06e1d8eee18b24a5f9e1f98"
+              }
+            ]
           }
         ]
       },
@@ -1208,11 +1388,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9eb5597be7955958",
-              "quote": "a single workspace where company data, AI agents, and custom applications operate within one unified context layer owned by the business rather than the software vendor."
+              "quote": "a single workspace where company data, AI agents, and custom applications operate within one unified context layer owned by the business rather than the software vendor.",
+              "source_content_hash": "c239d614e6c725ab",
+              "quote_hash": "5a8ce053951a24bc7d120dff277a01149d703c50f0e0b1777d6a0aeea3783197"
             },
             {
               "source_id": "FISRC-9eb5597be7955958",
-              "quote": "The platform is model-agnostic, routing simpler tasks to lower-cost AI models and reserving frontier models for more complex work, a approach Zaro claims can reduce costs by roughly ten times compared with frontier-only deployments."
+              "quote": "The platform is model-agnostic, routing simpler tasks to lower-cost AI models and reserving frontier models for more complex work, a approach Zaro claims can reduce costs by roughly ten times compared with frontier-only deployments.",
+              "source_content_hash": "c239d614e6c725ab",
+              "quote_hash": "f45ed493ad1b38914de8f13b507b2dd86d6c98ca469a4e73750f749380a2931a"
             }
           ],
           "entity_id": null
@@ -1231,11 +1415,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6d720b2f25e929f6",
-              "quote": "Each Zaro agent reads from your workspace and writes back to it, so the work compounds instead of resetting."
+              "quote": "Each Zaro agent reads from your workspace and writes back to it, so the work compounds instead of resetting.",
+              "source_content_hash": "f1598fbd9f83bb35",
+              "quote_hash": "984153c4848a091fbdcc57780e5f85193d6539cb3656ee98a36b976f21fbfcf8"
             },
             {
               "source_id": "FISRC-6d720b2f25e929f6",
-              "quote": "Any model, any framework. Proprietary routing picks cost-efficient models for routine work and frontier models when it counts, around 10x cheaper."
+              "quote": "Any model, any framework. Proprietary routing picks cost-efficient models for routine work and frontier models when it counts, around 10x cheaper.",
+              "source_content_hash": "f1598fbd9f83bb35",
+              "quote_hash": "79fd6e4e5dfec6834ffc2ff0f59d0b7d5138cccd7a2ee491eb87e5e75361affd"
             }
           ],
           "entity_id": null
@@ -1254,11 +1442,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fb1310c756a300c6",
-              "quote": "Every document, call, decision, and ticket in a single versioned workspace that is searchable, permissioned, and owned by you."
+              "quote": "Every document, call, decision, and ticket in a single versioned workspace that is searchable, permissioned, and owned by you.",
+              "source_content_hash": "d5db870fd4c9d0c1",
+              "quote_hash": "2700abc1ef33dfb80bd93a1b013e9bcdeb46b69304c5cf720ca2d6799c9f0037"
             },
             {
               "source_id": "FISRC-fb1310c756a300c6",
-              "quote": "Portable, versioned, and vendor-neutral. Your company's intelligence is yours to keep, move, and audit."
+              "quote": "Portable, versioned, and vendor-neutral. Your company's intelligence is yours to keep, move, and audit.",
+              "source_content_hash": "d5db870fd4c9d0c1",
+              "quote_hash": "cf0f325864e458b564b4a3a9d0c110fc6bcb86d759c705306fb030466f65d9c2"
             }
           ],
           "entity_id": null
@@ -1274,7 +1466,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9eb5597be7955958",
-              "quote": "Zaro currently has eight employees"
+              "quote": "Zaro currently has eight employees",
+              "source_content_hash": "c239d614e6c725ab",
+              "quote_hash": "81eed158683bcddada2e9b136c1797dbc8a5b15516ce894927c2c201538a61b0"
             }
           ]
         },
@@ -1285,7 +1479,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9eb5597be7955958",
-              "quote": "a approach Zaro claims can reduce costs by roughly ten times compared with frontier-only deployments"
+              "quote": "a approach Zaro claims can reduce costs by roughly ten times compared with frontier-only deployments",
+              "source_content_hash": "c239d614e6c725ab",
+              "quote_hash": "bbceb9c61a22b335993b741189d1507ecd85956dd48e44a75718beddf6481599"
             }
           ]
         }
@@ -1297,7 +1493,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9eb5597be7955958",
-              "quote": "Cherry Ventures partner Dinika Mahtani backed the company before the product was built, arguing that Zaro is the first platform where AI demonstrably gets smarter the longer it operates inside an organisation."
+              "quote": "Cherry Ventures partner Dinika Mahtani backed the company before the product was built, arguing that Zaro is the first platform where AI demonstrably gets smarter the longer it operates inside an organisation.",
+              "source_content_hash": "c239d614e6c725ab",
+              "quote_hash": "84bdbebeb43b95cc3a459da570da6a8920909dc4c013606faae6dc66891de047"
             }
           ]
         }
@@ -1313,7 +1511,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9eb5597be7955958",
-                "quote": "Cherry Ventures partner Dinika Mahtani backed the company before the product was built, arguing that Zaro is the first platform where AI demonstrably gets smarter the longer it operates inside an organisation."
+                "quote": "Cherry Ventures partner Dinika Mahtani backed the company before the product was built, arguing that Zaro is the first platform where AI demonstrably gets smarter the longer it operates inside an organisation.",
+                "source_content_hash": "c239d614e6c725ab",
+                "quote_hash": "84bdbebeb43b95cc3a459da570da6a8920909dc4c013606faae6dc66891de047"
               }
             ]
           }
@@ -1327,7 +1527,18 @@
           "公司仅有 8 名员工，且刚从隐身模式中浮出水面，缺乏公开的客户名单和商业牵引力证据，产品市场契合度尚未被大规模验证。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业 AI 基础设施"
+        "sector": "企业 AI 基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“企业 AI 上下文所有权”的范式转移。Zaro 的估值逻辑建立在两个已验证信号之上：一是创始团队来自被 Salesforce 收购的 Convergence，具备构建 AI 智能体产品的直接经验；二是其模型无关路由架构声称可将成本降低约十倍，这在企业 AI 部署成本敏感的环境中是关键差异化因素。领投方 Cherry Ventures 在产品构建前即投资，表明这是一笔高度依赖团队背景和愿景的早期押注，而非基于现有商业牵引力。",
+          "evidence_signals": [
+            "创始团队曾在 Convergence 构建 AI 智能体产品，该公司后被 Salesforce 收购，团队参与了 Agentforce 的开发。",
+            "平台采用模型无关路由，声称相比仅使用前沿模型可降低约十倍成本。"
+          ],
+          "risks": [
+            "公司仅有 8 名员工，且刚从隐身模式中浮出水面，缺乏公开的客户名单和商业牵引力证据，产品市场契合度尚未被大规模验证。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1335,116 +1546,56 @@
           "target_kind": "product",
           "research_name": "Zaro 统一上下文工作空间",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9eb5597be7955958",
-              "quote": "a single workspace where company data, AI agents, and custom applications operate within one unified context layer owned by the business rather than the software vendor."
-            },
-            {
-              "source_id": "FISRC-9eb5597be7955958",
-              "quote": "The platform is model-agnostic, routing simpler tasks to lower-cost AI models and reserving frontier models for more complex work, a approach Zaro claims can reduce costs by roughly ten times compared with frontier-only deployments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Zaro AI 智能体",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6d720b2f25e929f6",
-              "quote": "Each Zaro agent reads from your workspace and writes back to it, so the work compounds instead of resetting."
-            },
-            {
-              "source_id": "FISRC-6d720b2f25e929f6",
-              "quote": "Any model, any framework. Proprietary routing picks cost-efficient models for routine work and frontier models when it counts, around 10x cheaper."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Zaro 上下文与记忆",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fb1310c756a300c6",
-              "quote": "Every document, call, decision, and ticket in a single versioned workspace that is searchable, permissioned, and owned by you."
-            },
-            {
-              "source_id": "FISRC-fb1310c756a300c6",
-              "quote": "Portable, versioned, and vendor-neutral. Your company's intelligence is yours to keep, move, and audit."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Michael Bajwa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9eb5597be7955958",
-              "quote": "The company was founded by Michael Bajwa and Qian Zheng"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Qian Zheng",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9eb5597be7955958",
-              "quote": "The company was founded by Michael Bajwa and Qian Zheng"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cherry Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9eb5597be7955958",
-              "quote": "$5.1 million in pre-seed funding led by Cherry Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Thomas Wolf (Hugging Face)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9eb5597be7955958",
-              "quote": "Additional investors include Thomas Wolf of Hugging Face"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mandeep Singh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6839d5a55af476d3",
-              "quote": "angel backers including Thomas Wolf, Thomas Dohmke, Mandeep Singh, and Marvin P."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1530,10 +1681,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:34:14.130Z"
+      "published_at": "2026-07-26T14:34:14.130Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Zaro AI 智能体",
+            "Zaro 上下文与记忆",
+            "Zaro 统一上下文工作空间"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Michael Bajwa",
+            "Qian Zheng"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-14a666fc27d73a80"
+      ],
+      "aggregation": {
+        "key": "EN-4abc3bd0f9e75c63|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

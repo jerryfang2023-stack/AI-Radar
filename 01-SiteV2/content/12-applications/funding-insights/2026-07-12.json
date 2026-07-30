@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-12",
     "generated_at": "2026-07-26T15:19:09.154Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 1,
       "auto_published": 1,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-3630ce639ee99761",
       "triggered_by_event_id": "EV-236cbc2d64f0c455",
       "as_of_date": "2026-07-12",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "Barun Kar CEO of Upscale AI"
+                "quote": "Barun Kar CEO of Upscale AI",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "f47565e7cfce8a751c26dffb3d44606067ddb7a2e17df8107a5d578168b8c682"
               },
               {
                 "source_id": "FISRC-77f4599a4e868378",
-                "quote": "The startup was founded only in 2025 by Kar and Rajiv Khemani"
+                "quote": "The startup was founded only in 2025 by Kar and Rajiv Khemani",
+                "source_content_hash": "fdc040e719a0dd75",
+                "quote_hash": "ddddd5e534122796dbebe93b103101509dc4bb601217fc3e9b322dfb4c013ee6"
               }
             ],
             "entity_id": null
@@ -50,11 +55,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "Rajiv Khemani Executive Chairman of Upscale AI"
+                "quote": "Rajiv Khemani Executive Chairman of Upscale AI",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "6862ecd192dee57665f3a735664c70f22800753b11bfc5eea555350859208ec6"
               },
               {
                 "source_id": "FISRC-77f4599a4e868378",
-                "quote": "The startup was founded only in 2025 by Kar and Rajiv Khemani"
+                "quote": "The startup was founded only in 2025 by Kar and Rajiv Khemani",
+                "source_content_hash": "fdc040e719a0dd75",
+                "quote_hash": "ddddd5e534122796dbebe93b103101509dc4bb601217fc3e9b322dfb4c013ee6"
               }
             ],
             "entity_id": null
@@ -66,23 +75,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "has already grown to around 200 employees"
+              "quote": "has already grown to around 200 employees",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "36536a4c15fe721c52a485438cfb985f2b03bce58b7f0851975cd1a53be3b884"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-7dcdc22c0b1702bf",
-            "quote": "A pure-play AI networking infrastructure company"
+            "quote": "A pure-play AI networking infrastructure company",
+            "source_content_hash": "23145edb5fdd8d69",
+            "quote_hash": "7c24fb1e035854526b8e7b95c1f6ce7e07f858f448b3f88b87695d5a7ac72d6a"
           },
           {
             "source_id": "FISRC-77f4599a4e868378",
-            "quote": "a year-old startup building networking chips purpose-made for artificial intelligence data centers"
+            "quote": "a year-old startup building networking chips purpose-made for artificial intelligence data centers",
+            "source_content_hash": "fdc040e719a0dd75",
+            "quote_hash": "b8e7bd242cf6c5589216b74602cd647a5089edfd00e3b1d3247bcf70e19b1f2b"
           }
         ]
       },
       "financing": {
-        "round": "Series A-1 (A轮扩展)",
+        "round": "多轮融资",
         "amount": "$190 million",
         "total_raised": "$500 million",
         "announced_at": "2026-06-22",
@@ -93,7 +108,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "The Series A-1 round was led by Premji Invest"
+                "quote": "The Series A-1 round was led by Premji Invest",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "bc528b10ef7cf201e43a02dd127ae1d446150320a90391b10ae0ebc3b2330db3"
               }
             ],
             "entity_id": null
@@ -104,11 +121,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "included funding from new investors, NVIDIA"
+                "quote": "included funding from new investors, NVIDIA",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "01ca536806a619814a2882d803ca99c3289af1412793cb24a145a73dbbe4834d"
               },
               {
                 "source_id": "FISRC-77f4599a4e868378",
-                "quote": "Nvidia, whose chips Upscale's switches are built to serve, came in as a strategic investor."
+                "quote": "Nvidia, whose chips Upscale's switches are built to serve, came in as a strategic investor.",
+                "source_content_hash": "fdc040e719a0dd75",
+                "quote_hash": "5b530773d850b3582be107fc429727bdd0268163c8607d976cb4530c8245fdd3"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -119,7 +140,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
+                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
               }
             ],
             "entity_id": null
@@ -130,7 +153,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
+                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
               }
             ],
             "entity_id": null
@@ -141,7 +166,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
+                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
               }
             ],
             "entity_id": null
@@ -152,7 +179,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
+                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
               }
             ],
             "entity_id": null
@@ -163,7 +192,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
+                "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
               }
             ],
             "entity_id": null
@@ -172,7 +203,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7dcdc22c0b1702bf",
-            "quote": "Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding"
+            "quote": "Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding",
+            "source_content_hash": "23145edb5fdd8d69",
+            "quote_hash": "189aab2214ae9f901aa37c54b0732fa5534319cc96db7e764685c44014930a13"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "Series A-1 (A轮扩展)",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-236cbc2d64f0c455",
+            "round_original": "Series A-1 (A轮扩展)",
+            "amount": "$190 million",
+            "announced_at": "2026-06-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcdc22c0b1702bf",
+                "quote": "Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "189aab2214ae9f901aa37c54b0732fa5534319cc96db7e764685c44014930a13"
+              }
+            ]
           }
         ]
       },
@@ -189,7 +241,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "Upscale AI is reimagining networking for the AI era with a full-stack portfolio spanning silicon, systems, and software. Through a unified, open-standard AI fabric, the company connects accelerators, memory, and storage into a single high-performance AI engine purpose-built to eliminate network bottlenecks across large-scale, synchronized AI workloads, including training and inference of frontier models."
+              "quote": "Upscale AI is reimagining networking for the AI era with a full-stack portfolio spanning silicon, systems, and software. Through a unified, open-standard AI fabric, the company connects accelerators, memory, and storage into a single high-performance AI engine purpose-built to eliminate network bottlenecks across large-scale, synchronized AI workloads, including training and inference of frontier models.",
+              "source_content_hash": "23145edb5fdd8d69",
+              "quote_hash": "b6c770326b2dd8c62e475e9091de749cdfb17f3f68b1d7040b01bde5c846850e"
             }
           ],
           "entity_id": null
@@ -206,7 +260,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale says its scale-up line delivers what it calls deterministic latency, meaning data-movement speeds can be known in advance and unexpected stalls avoided. The capability runs on a custom chip the company calls SkyHammer, which supports open protocols built for this kind of traffic, including UALink, a standard that lets GPUs read one another's memory as if it were local, and ESUN, an AI-tuned flavor of Ethernet."
+              "quote": "Upscale says its scale-up line delivers what it calls deterministic latency, meaning data-movement speeds can be known in advance and unexpected stalls avoided. The capability runs on a custom chip the company calls SkyHammer, which supports open protocols built for this kind of traffic, including UALink, a standard that lets GPUs read one another's memory as if it were local, and ESUN, an AI-tuned flavor of Ethernet.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "fa9723b98da07eaaa22b2ad4b3b79e69a3bfb00ced6be049af3d47371441d1e2"
             }
           ],
           "entity_id": null
@@ -222,7 +278,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "On the scale-out side, Upscale is leaning directly on Nvidia. In March it previewed a switch line built around Nvidia's Spectrum-X silicon, paired with SONiC, an open-source network operating system Microsoft originally created for its own cloud. Upscale has built an AI-tuned version of SONiC meant to make the notoriously fiddly software easier to run."
+              "quote": "On the scale-out side, Upscale is leaning directly on Nvidia. In March it previewed a switch line built around Nvidia's Spectrum-X silicon, paired with SONiC, an open-source network operating system Microsoft originally created for its own cloud. Upscale has built an AI-tuned version of SONiC meant to make the notoriously fiddly software easier to run.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "106f837bd5ee559c610eb8569965dbb484fea87aee6dac403fd259d9207365b2"
             }
           ],
           "entity_id": null
@@ -236,9 +294,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "The company is actively engaged with multiple hyperscalers and leading neocloud infrastructure providers, with customer evaluations and deployments underway across scale-out and scale-up networking environments."
+              "quote": "The company is actively engaged with multiple hyperscalers and leading neocloud infrastructure providers, with customer evaluations and deployments underway across scale-out and scale-up networking environments.",
+              "source_content_hash": "23145edb5fdd8d69",
+              "quote_hash": "5c6de0c651332b38af7dd77f7f2f659ead691b9371e562e220df3eb37a156410"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "新云基础设施提供商（Neocloud运营商）",
@@ -247,9 +308,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "The company is actively engaged with multiple hyperscalers and leading neocloud infrastructure providers, with customer evaluations and deployments underway across scale-out and scale-up networking environments."
+              "quote": "The company is actively engaged with multiple hyperscalers and leading neocloud infrastructure providers, with customer evaluations and deployments underway across scale-out and scale-up networking environments.",
+              "source_content_hash": "23145edb5fdd8d69",
+              "quote_hash": "5c6de0c651332b38af7dd77f7f2f659ead691b9371e562e220df3eb37a156410"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -263,13 +327,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Nvidia sells its own Spectrum-X switches."
+              "quote": "Nvidia sells its own Spectrum-X switches.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "eaead5d84aab13105d07b6632676fede7daebb7abf87276b4afbf938fcfce216"
             },
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale is betting that an AI-only design built on open standards can win business from buyers wary of being locked into a single vendor."
+              "quote": "Upscale is betting that an AI-only design built on open standards can win business from buyers wary of being locked into a single vendor.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "25fa511dd814655c6fcf9b0551228997f0852df11e010a676cfd12f6317a2428"
             }
-          ]
+          ],
+          "entity_id": "EN-8d4321d936320802"
         },
         {
           "name": "Broadcom",
@@ -281,13 +350,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Broadcom and Arista Networks dominate the merchant switching market."
+              "quote": "Broadcom and Arista Networks dominate the merchant switching market.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "62549b60877531781509467bcdf9cd7687b7cd0509584af48bdc71b7c9cc215a"
             },
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in."
+              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "d4f60f972a5ed383d5fd274c788cfa1225d413321835fc906c0a73b8676f9422"
             }
-          ]
+          ],
+          "entity_id": "EN-373ac021a2c0bb2c"
         },
         {
           "name": "Arista Networks",
@@ -299,13 +373,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Broadcom and Arista Networks dominate the merchant switching market."
+              "quote": "Broadcom and Arista Networks dominate the merchant switching market.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "62549b60877531781509467bcdf9cd7687b7cd0509584af48bdc71b7c9cc215a"
             },
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in."
+              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "d4f60f972a5ed383d5fd274c788cfa1225d413321835fc906c0a73b8676f9422"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cisco",
@@ -317,13 +396,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Cisco, the company Upscale's investors openly compare it to, remains the incumbent giant of enterprise networking."
+              "quote": "Cisco, the company Upscale's investors openly compare it to, remains the incumbent giant of enterprise networking.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "99d248b6aa031666f3456c33bdb86c722abc1677e9c42f2528f89d18dd58c91f"
             },
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in."
+              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in.",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "d4f60f972a5ed383d5fd274c788cfa1225d413321835fc906c0a73b8676f9422"
             }
-          ]
+          ],
+          "entity_id": "EN-e73b79a0b10f8cdb"
         }
       ],
       "metrics": [
@@ -334,7 +418,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "raised $190 million in Series A-1 financing"
+              "quote": "raised $190 million in Series A-1 financing",
+              "source_content_hash": "23145edb5fdd8d69",
+              "quote_hash": "8232c19e13f88f8a8b29abea150a0f4d20887b55b60ed156ca35c2b6da91d9a4"
             }
           ]
         },
@@ -345,7 +431,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "its current valuation to $2 billion"
+              "quote": "its current valuation to $2 billion",
+              "source_content_hash": "23145edb5fdd8d69",
+              "quote_hash": "c35def1f474751188466e86d21a9512bb0770668250370be874de37ff98e3700"
             }
           ]
         },
@@ -356,7 +444,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "The startup was founded only in 2025"
+              "quote": "The startup was founded only in 2025",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "2e5aa7c56c7e833211a5095f36e1e1bbb8618d631f95c4cbc946bbf0c2b8294c"
             }
           ]
         },
@@ -367,7 +457,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "has already grown to around 200 employees"
+              "quote": "has already grown to around 200 employees",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "36536a4c15fe721c52a485438cfb985f2b03bce58b7f0851975cd1a53be3b884"
             }
           ]
         },
@@ -378,7 +470,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Spending on AI data center switches is forecast to top $100 billion a year by 2030, according to Dell'Oro Group"
+              "quote": "Spending on AI data center switches is forecast to top $100 billion a year by 2030, according to Dell'Oro Group",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "788aec014ebf31ab0cd2487ebcdb6a6dd122025c066fdfbdab452f5baeb277d0"
             }
           ]
         },
@@ -389,7 +483,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "a $200 million Series A the company closed in January"
+              "quote": "a $200 million Series A the company closed in January",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "956b5004e4e93a0b922b664f564c31533203e6b22a3238155b4738d861f27c5c"
             }
           ]
         },
@@ -400,7 +496,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale went from founding to a $2 billion valuation in roughly a year"
+              "quote": "Upscale went from founding to a $2 billion valuation in roughly a year",
+              "source_content_hash": "fdc040e719a0dd75",
+              "quote_hash": "6f3bacfa4ba8b935b54a380febce9ffd43322e8f4be38335b44b981ae086212d"
             }
           ]
         }
@@ -412,7 +510,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "AI infrastructure is being redefined at cluster scale, and networking is one of the most critical bottlenecks. Upscale AI is building a high-performance, open-standard AI fabric purpose-built for large-scale, synchronized workloads. This investment reinforces our vision and enables us to scale the business as we engage with leading neocloud and hyperscale infrastructure providers to meet growing demand for open, interoperable AI infrastructure."
+              "quote": "AI infrastructure is being redefined at cluster scale, and networking is one of the most critical bottlenecks. Upscale AI is building a high-performance, open-standard AI fabric purpose-built for large-scale, synchronized workloads. This investment reinforces our vision and enables us to scale the business as we engage with leading neocloud and hyperscale infrastructure providers to meet growing demand for open, interoperable AI infrastructure.",
+              "source_content_hash": "23145edb5fdd8d69",
+              "quote_hash": "22f65e727f8f461d67f0138830570d4e64daa710ec139f5eaa5a09043b952e82"
             }
           ]
         }
@@ -428,7 +528,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "Rajiv, Barun, and the Upscale AI team are tackling one of the most critical bottlenecks in AI infrastructure, and they're doing it with a world-class team and a differentiated architectural approach. The progress we've seen since our initial investment has only deepened our conviction, and we're thrilled to lead this round and double down on the company's vision."
+                "quote": "Rajiv, Barun, and the Upscale AI team are tackling one of the most critical bottlenecks in AI infrastructure, and they're doing it with a world-class team and a differentiated architectural approach. The progress we've seen since our initial investment has only deepened our conviction, and we're thrilled to lead this round and double down on the company's vision.",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "e2d226fedc75b829a8de59025b030e6526225bd990ef92ea7be903f7f0794a69"
               }
             ]
           },
@@ -441,7 +543,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7dcdc22c0b1702bf",
-                "quote": "The next leap in AI performance will be won in the networking that ties compute, memory, and storage together. What excites us is how Upscale AI is reimagining AI networking with an open-standard, full-stack approach that gets accelerators, memory, and storage operating in lockstep. At Mayfield, we invest in people first, and we're proud to partner with Barun and Rajiv as they build an enduring company powering the era of frontier AI."
+                "quote": "The next leap in AI performance will be won in the networking that ties compute, memory, and storage together. What excites us is how Upscale AI is reimagining AI networking with an open-standard, full-stack approach that gets accelerators, memory, and storage operating in lockstep. At Mayfield, we invest in people first, and we're proud to partner with Barun and Rajiv as they build an enduring company powering the era of frontier AI.",
+                "source_content_hash": "23145edb5fdd8d69",
+                "quote_hash": "e9b49a430236d37466362269cec3d04ff22f34befef5a650193aa055eefa6f0b"
               }
             ]
           }
@@ -459,7 +563,22 @@
           "面临NVIDIA自有Spectrum-X交换机、Broadcom、Arista和Cisco等既有巨头的激烈竞争，市场进入壁垒高"
         ],
         "related_direction_id": "",
-        "sector": "AI网络基础设施"
+        "sector": "AI网络基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI基础设施价值从计算层向网络层的迁移。Upscale AI在成立约一年内以$2B估值完成$500M总融资，估值建立在其创始团队深厚的网络芯片背景（来自Innovium、Cavium、Intel、Palo Alto Networks等）、NVIDIA作为战略投资者的背书、以及多家超大规模云服务商和新云提供商正在进行产品评估的早期商业验证之上。然而，公司尚未交付商业化产品，收入验证缺失，估值远超收入基础。",
+          "evidence_signals": [
+            "创始团队拥有多次网络芯片创业和退出的深厚行业背景",
+            "NVIDIA作为战略投资者参与本轮，且Upscale的scale-out交换机基于NVIDIA Spectrum-X硅构建",
+            "多家超大规模云服务商和新云基础设施提供商正在进行产品评估和部署",
+            "AI数据中心交换机市场预计到2030年超过$1000亿/年（Dell'Oro Group预测）",
+            "公司从成立到$2B估值仅用约一年时间，反映资本对AI基础设施层的强烈需求"
+          ],
+          "risks": [
+            "产品仍处于客户评估阶段，尚未实现商业化规模收入，估值远超当前业务基本面",
+            "面临NVIDIA自有Spectrum-X交换机、Broadcom、Arista和Cisco等既有巨头的激烈竞争，市场进入壁垒高"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -467,262 +586,126 @@
           "target_kind": "product",
           "research_name": "AI网络全栈组合（硅、系统、软件）",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "Upscale AI is reimagining networking for the AI era with a full-stack portfolio spanning silicon, systems, and software. Through a unified, open-standard AI fabric, the company connects accelerators, memory, and storage into a single high-performance AI engine purpose-built to eliminate network bottlenecks across large-scale, synchronized AI workloads, including training and inference of frontier models."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "SkyHammer芯片（Scale-up交换机）",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale says its scale-up line delivers what it calls deterministic latency, meaning data-movement speeds can be known in advance and unexpected stalls avoided. The capability runs on a custom chip the company calls SkyHammer, which supports open protocols built for this kind of traffic, including UALink, a standard that lets GPUs read one another's memory as if it were local, and ESUN, an AI-tuned flavor of Ethernet."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "基于NVIDIA Spectrum-X的Scale-out交换机",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "On the scale-out side, Upscale is leaning directly on Nvidia. In March it previewed a switch line built around Nvidia's Spectrum-X silicon, paired with SONiC, an open-source network operating system Microsoft originally created for its own cloud. Upscale has built an AI-tuned version of SONiC meant to make the notoriously fiddly software easier to run."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Barun Kar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "Barun Kar CEO of Upscale AI"
-            },
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "The startup was founded only in 2025 by Kar and Rajiv Khemani"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rajiv Khemani",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "Rajiv Khemani Executive Chairman of Upscale AI"
-            },
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "The startup was founded only in 2025 by Kar and Rajiv Khemani"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Premji Invest",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "The Series A-1 round was led by Premji Invest"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "NVIDIA",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "included funding from new investors, NVIDIA"
-            },
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Nvidia, whose chips Upscale's switches are built to serve, came in as a strategic investor."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Maverick Silicon",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mayfield",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Prosperity7 Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "StepStone Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tiger Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "多家超大规模云服务商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "The company is actively engaged with multiple hyperscalers and leading neocloud infrastructure providers, with customer evaluations and deployments underway across scale-out and scale-up networking environments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "新云基础设施提供商（Neocloud运营商）",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7dcdc22c0b1702bf",
-              "quote": "The company is actively engaged with multiple hyperscalers and leading neocloud infrastructure providers, with customer evaluations and deployments underway across scale-out and scale-up networking environments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "NVIDIA",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Nvidia sells its own Spectrum-X switches."
-            },
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale is betting that an AI-only design built on open standards can win business from buyers wary of being locked into a single vendor."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Broadcom",
           "canonical_entity_id": "EN-373ac021a2c0bb2c",
-          "canonical_name": "Broadcom",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Broadcom and Arista Networks dominate the merchant switching market."
-            },
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in."
-            }
-          ]
+          "canonical_name": "Broadcom"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Arista Networks",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Broadcom and Arista Networks dominate the merchant switching market."
-            },
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cisco",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Cisco, the company Upscale's investors openly compare it to, remains the incumbent giant of enterprise networking."
-            },
-            {
-              "source_id": "FISRC-77f4599a4e868378",
-              "quote": "Upscale's wager is that a clean-sheet design free of legacy baggage, built around open standards rather than a single vendor's proprietary stack, can win share as buyers look to avoid lock-in."
-            }
-          ]
+          "canonical_entity_id": "EN-e73b79a0b10f8cdb",
+          "canonical_name": "Cisco"
         }
       ],
       "funding_history": [
@@ -927,10 +910,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:52:04.523Z"
+      "published_at": "2026-07-26T14:52:04.523Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI网络全栈组合（硅、系统、软件）",
+            "SkyHammer芯片（Scale-up交换机）",
+            "基于NVIDIA Spectrum-X的Scale-out交换机"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Barun Kar",
+            "Rajiv Khemani"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-236cbc2d64f0c455"
+      ],
+      "aggregation": {
+        "key": "EN-8d4321d936320802|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

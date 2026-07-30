@@ -9,7 +9,7 @@ const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
 const expectedOpportunityEvidenceSiteVersion = "SITE-V4.2.0-entity-history";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.1.0-lane-independent";
 const expectedOpportunityMapColumnVersion = "OMAP-V2.0.0-v4-evidence";
-const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.0-auto-published-research";
+const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.1.0-card-integrity";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 

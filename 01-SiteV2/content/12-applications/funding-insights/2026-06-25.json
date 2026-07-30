@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-25",
     "generated_at": "2026-07-27T05:19:02.439Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 7,
       "auto_published": 5,
       "blocked": 2,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-364250d18b87c657",
       "triggered_by_event_id": "EV-dd3217aad32e6891",
       "as_of_date": "2026-06-25",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce3d5e20846f6f71",
-                "quote": "said Apurva Shrivastava, co-founder of Avoca."
+                "quote": "said Apurva Shrivastava, co-founder of Avoca.",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "9fe83261f2482b51b9e72a307750626923fbc0b8af9507d207be90d7fb4be890"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce3d5e20846f6f71",
-                "quote": "said Tyson Chen, co-founder of Avoca."
+                "quote": "said Tyson Chen, co-founder of Avoca.",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "e025c5650b301c704bed5bd6d8a03fcfccb980420a7fa70ee50242a6893468cf"
               }
             ],
             "entity_id": null
@@ -60,12 +65,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ce3d5e20846f6f71",
-            "quote": "Avoca is headquartered in New York City and has an office in Santa Barbara."
+            "quote": "Avoca is headquartered in New York City and has an office in Santa Barbara.",
+            "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+            "quote_hash": "530889789f227cee490f2eaec796ba4ccc96c7868d89322d94fcacd6e2275701"
           }
         ]
       },
       "financing": {
-        "round": "种子轮、A轮、B轮",
+        "round": "多轮融资",
         "amount": "超过1.25亿美元",
         "total_raised": "超过1.25亿美元",
         "announced_at": "2026-04-27",
@@ -76,7 +83,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce3d5e20846f6f71",
-                "quote": "The Series B funding was led by Meritech and General Catalyst"
+                "quote": "The Series B funding was led by Meritech and General Catalyst",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
               }
             ],
             "entity_id": null
@@ -87,7 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce3d5e20846f6f71",
-                "quote": "The Series B funding was led by Meritech and General Catalyst"
+                "quote": "The Series B funding was led by Meritech and General Catalyst",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
               }
             ],
             "entity_id": null
@@ -98,18 +109,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce3d5e20846f6f71",
-                "quote": "the Series A was led by Kleiner Perkins."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Amplify Partners",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce3d5e20846f6f71",
-                "quote": "Backed by Meritech, General Catalyst, Kleiner Perkins, Amplify Partners, and Y Combinator"
+                "quote": "the Series A was led by Kleiner Perkins.",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "2f574ef9612b406feae6c63775817023c30c37a96341bdddd75e62db1a523f33"
               }
             ],
             "entity_id": null
@@ -120,21 +122,12 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b7221d306ef28b7d",
-                "quote": "Y Combinator led the seed back in 2024."
+                "quote": "Y Combinator led the seed back in 2024.",
+                "source_content_hash": "01160789e3aa9ab9",
+                "quote_hash": "85d4aa39d2df47bbdec2749238651de85f47f5e3b2f4620587a0b95077090fc5"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
-          },
-          {
-            "name": "Nexus Venture Partners",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2315f11e10b4df0e",
-                "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator"
-              }
-            ],
-            "entity_id": null
           },
           {
             "name": "Capital 49",
@@ -142,117 +135,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Capital 49 is backing Avoca in their Series B raise."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Alt Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Jack Altman from Alt Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "BoxGroup",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Gregory R. from BoxGroup"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "TCP Venture Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "REMUS Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Krishna K. Gupta ( REMUS Capital )"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Latitude Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Ansaf Kareem ( Latitude Capital )"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Audacious Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Nakul Mandan ( Audacious Ventures )"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Formus Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Cem Garih and Burak Karahasan ( Formus Capital )"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Jefferies",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Todd Breeden ( Jefferies )"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Vicus Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Manraj Singh Sandhu ( Vicus Ventures )"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Pathlight Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b2454278fe6d93e",
-                "quote": "Charley Ma (Pathlight Ventures)"
+                "quote": "Capital 49 is backing Avoca in their Series B raise.",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "5b64093e0378fec94db7e6e3edb388a866bdd6e328088af13bc344fa73eb960c"
               }
             ],
             "entity_id": null
@@ -261,7 +146,257 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ce3d5e20846f6f71",
-            "quote": "announced it has raised more than $125 million across Seed, Series A, and Series B funding at a $1 billion valuation."
+            "quote": "announced it has raised more than $125 million across Seed, Series A, and Series B funding at a $1 billion valuation.",
+            "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+            "quote_hash": "879547cc3dcafcc9bb25ed28dbaaca5e44594a1be524a2e96ec67d1737ea54cd"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "种子轮、A轮、B轮",
+        "other_round_investors": [
+          {
+            "name": "Amplify Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce3d5e20846f6f71",
+                "quote": "Backed by Meritech, General Catalyst, Kleiner Perkins, Amplify Partners, and Y Combinator",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "fb53beeecba7914be33b58dd56bcbba747b5ebc2a3e35f0ab8e068cc39fc9f5c"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Nexus Venture Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2315f11e10b4df0e",
+                "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator",
+                "source_content_hash": "81473027d0be2429",
+                "quote_hash": "3b2ea162be295ee50d93b66c82bdf36dc8bcf135b660987a22e1b0e42e25919f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Alt Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Jack Altman from Alt Capital",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "1f13f0a69b692e3372352ab83e985e511cd3e001ca384a46f86604ee30ed95d0"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "BoxGroup",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Gregory R. from BoxGroup",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "e84b03f393c38dc09e6204f4be07c6323ea45791cffe4d24f999879fa1ed39c5"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "TCP Venture Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "c2f9a7919228c737dc53c5f5a9eeaec651a224ea2d638fa089a02518b9e2d69b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "REMUS Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Krishna K. Gupta ( REMUS Capital )",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "737769c5043514e34ea37fbabf08d2d5ae7ddfcff97bc03985b70cf500e1c6e2"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Latitude Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Ansaf Kareem ( Latitude Capital )",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "be68f9e93753a4be5c0203dcca35dbfc3d92c295bed273f7ac415bd023ac8cab"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Audacious Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Nakul Mandan ( Audacious Ventures )",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "f6c1a9b70f1cf1a94a2b90e3b669e5099467dd2f337479640ccf3cc7d062fb02"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Formus Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Cem Garih and Burak Karahasan ( Formus Capital )",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "b0f3413fde7c13e1f9221552b0818c9fd578ad47a78fb38433f4ae8f632816b5"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Jefferies",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Todd Breeden ( Jefferies )",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "8c7db12c96b68d50fdeea22cc20bb23b953bdb9421583ae9d3be923b20c6fadb"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Vicus Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Manraj Singh Sandhu ( Vicus Ventures )",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "689746bfb7528e3b1f6c993d47424a40b72a2c40adf425253511eaeaa8148a0e"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Pathlight Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b2454278fe6d93e",
+                "quote": "Charley Ma (Pathlight Ventures)",
+                "source_content_hash": "0eedb637d7c86cdc",
+                "quote_hash": "dcac59e0ad23f5b094ef125a979c5e162a790b8b22a9bf5e20d91290f97c82b9"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-dd3217aad32e6891",
+            "round_original": "种子轮、A轮、B轮",
+            "amount": "超过1.25亿美元",
+            "announced_at": "2026-04-27",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce3d5e20846f6f71",
+                "quote": "announced it has raised more than $125 million across Seed, Series A, and Series B funding at a $1 billion valuation.",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "879547cc3dcafcc9bb25ed28dbaaca5e44594a1be524a2e96ec67d1737ea54cd"
+              }
+            ]
           }
         ]
       },
@@ -279,7 +414,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "Avoca provides AI-powered voice and workflow automation that answers every inbound lead within a few seconds, books jobs directly into customer CRMs, relentlessly follows up on outstanding estimates, and dynamically drives new lead flow based on technician capacity."
+              "quote": "Avoca provides AI-powered voice and workflow automation that answers every inbound lead within a few seconds, books jobs directly into customer CRMs, relentlessly follows up on outstanding estimates, and dynamically drives new lead flow based on technician capacity.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "6bd202cd870bdf15c11848e0d539e3fdd8a7a39de8840a1d971f2006b869a003"
             }
           ],
           "entity_id": null
@@ -295,7 +432,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "Avoca's AI consistently follows up on outstanding estimates and identifies new job opportunities within the existing customer base, automatically generating demand."
+              "quote": "Avoca's AI consistently follows up on outstanding estimates and identifies new job opportunities within the existing customer base, automatically generating demand.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "d0a1d8f063de7606ef171edf3f2d317b0e6ae5414958f7bb377fdac6eeb78ce6"
             }
           ],
           "entity_id": null
@@ -311,7 +450,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Scoring Models listen to every call, human or AI, and grade it on things like how well the rep handled an objection, how much empathy they showed, and how many filler words they used."
+              "quote": "Scoring Models listen to every call, human or AI, and grade it on things like how well the rep handled an objection, how much empathy they showed, and how many filler words they used.",
+              "source_content_hash": "cf1d6c9943561115",
+              "quote_hash": "b3dc23c8c74ff4a4627451ed3db21f86d57239e62080a8e31d7c70ee455e185d"
             }
           ],
           "entity_id": null
@@ -325,9 +466,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl."
+              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "68b609a075b74dccac58814a8a0d61d5149792d61ac9ddb237f025cd71b8e383"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "1-800-GOT-JUNK?",
@@ -336,9 +480,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl."
+              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "68b609a075b74dccac58814a8a0d61d5149792d61ac9ddb237f025cd71b8e383"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Goettl",
@@ -347,9 +494,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl."
+              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "68b609a075b74dccac58814a8a0d61d5149792d61ac9ddb237f025cd71b8e383"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -363,9 +513,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3c76eb4665d58d2b",
-              "quote": "Rilla, Service Titan's AI add-ons, and a handful of newer entrants all target service businesses with various forms of AI automation."
+              "quote": "Rilla, Service Titan's AI add-ons, and a handful of newer entrants all target service businesses with various forms of AI automation.",
+              "source_content_hash": "22e107ccff31c8e8",
+              "quote_hash": "914485906f34e48c2902396069fbb6b98924b1a0248bccff0cbd3ecdf6e5199d"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Rilla",
@@ -377,9 +530,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Rilla (records and coaches field-sales)"
+              "quote": "Rilla (records and coaches field-sales)",
+              "source_content_hash": "cf1d6c9943561115",
+              "quote_hash": "a7461d11462de34669e7979fdfe47a93a37ac9a37d1ae169f7bde723de31bc37"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Sameday",
@@ -391,9 +547,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Sameday, AI virtual receptionist for ServiceTitan."
+              "quote": "Sameday, AI virtual receptionist for ServiceTitan.",
+              "source_content_hash": "cf1d6c9943561115",
+              "quote_hash": "b0bef5d8e33bb4c498bd7a75c1e5189ebb13ae77b7253800ad8bd4a8294b60a1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Hatch",
@@ -405,9 +564,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Hatch (automates texting)"
+              "quote": "Hatch (automates texting)",
+              "source_content_hash": "cf1d6c9943561115",
+              "quote_hash": "530f32eb3385f44a1af121b63dddca4e1d1dcf814871a0da34e88e423cd5680a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Netic",
@@ -419,9 +581,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Sameday, ServiceAgent.ai, Netic (also AI phone-answering for contractors)"
+              "quote": "Sameday, ServiceAgent.ai, Netic (also AI phone-answering for contractors)",
+              "source_content_hash": "cf1d6c9943561115",
+              "quote_hash": "939facd01c87ef45ec23ebf3cf7ff06783fd25d17bfcf698e6ecc00f42cf399f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -432,7 +597,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "In 2025, the company surpassed eight figures in annual recurring revenue"
+              "quote": "In 2025, the company surpassed eight figures in annual recurring revenue",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "e0fde64c396429a6247c689a69041bc602a2849962e78c74780c8703072c270b"
             }
           ]
         },
@@ -443,7 +610,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "This year alone, Avoca is on track to book $1 billion in jobs."
+              "quote": "This year alone, Avoca is on track to book $1 billion in jobs.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "af57e7c99e920779c05b778228f923a781a9dcf9e775a21b548ababec9cea461"
             }
           ]
         },
@@ -454,7 +623,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3c76eb4665d58d2b",
-              "quote": "The company says it's grown from its first 10 customers to more than 800 today"
+              "quote": "The company says it's grown from its first 10 customers to more than 800 today",
+              "source_content_hash": "22e107ccff31c8e8",
+              "quote_hash": "216f4579ab61734b4916613676db478835c56c1c88fd96534a6df77f28008d43"
             }
           ]
         },
@@ -465,7 +636,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "over $60M in jobs booked a month and counting!"
+              "quote": "over $60M in jobs booked a month and counting!",
+              "source_content_hash": "0eedb637d7c86cdc",
+              "quote_hash": "6c3970fdc84bfea76c565969be72389cfcf31c23c88b0bfd21797bc5aba79536"
             }
           ]
         },
@@ -476,7 +649,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "at a $1 billion valuation."
+              "quote": "at a $1 billion valuation.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "05f932a8010c4d877147b9734e7bea6478b038c4f5e2714d4612381548513295"
             }
           ]
         },
@@ -487,7 +662,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Our revenue has grown over 8x YoY for the past two years"
+              "quote": "Our revenue has grown over 8x YoY for the past two years",
+              "source_content_hash": "0eedb637d7c86cdc",
+              "quote_hash": "ea5a8bccf62bccf566580248aa9cd9eb3d8bb22b0ad60c9358f1b651623f843d"
             }
           ]
         }
@@ -499,7 +676,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "Since we started using Avoca, our booking rates have jumped dramatically, and we're capturing far more demand after hours and during peak storms. Additionally, our customers love speaking to the AI."
+              "quote": "Since we started using Avoca, our booking rates have jumped dramatically, and we're capturing far more demand after hours and during peak storms. Additionally, our customers love speaking to the AI.",
+              "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+              "quote_hash": "da2c3345377bcd24450af296c970cee4a7f9ab712c273d7f22b2739ed3a25625"
             }
           ]
         }
@@ -515,7 +694,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce3d5e20846f6f71",
-                "quote": "There's no shortage of software built for software companies. Avoca is building an AI workforce for the people who actually keep America running–millions of service businesses across the country."
+                "quote": "There's no shortage of software built for software companies. Avoca is building an AI workforce for the people who actually keep America running–millions of service businesses across the country.",
+                "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+                "quote_hash": "3acf1516dd417a58c2224fd45f3509bb8a3dcb1ef5d947332160f53412b4e183"
               }
             ]
           }
@@ -535,7 +716,24 @@
           "向屋顶、汽车服务、物业管理等邻近垂直领域的扩展面临不同工作流和客户需求，产品适配和销售效率存在不确定性。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "垂直AI应用/家庭服务自动化"
+        "sector": "垂直AI应用/家庭服务自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是垂直AI在高度碎片化、劳动密集型且数字化程度低的家庭服务行业的渗透速度。Avoca以10亿美元估值获得超过1.25亿美元融资，依赖于以下已验证信号：2025年ARR突破千万美元、收入连续两年同比增长超8倍、客户数从10家增长至800家以上、月度工单预订额超6000万美元、全年工单预订额有望达到10亿美元。这些指标表明Avoca已在该垂直领域建立了产品市场契合度和规模化增长势头。然而，当前判断的证据边界在于：该估值主要基于其在暖通空调和管道等初始垂直领域的成功，其向屋顶、汽车服务、物业管理等邻近垂直领域的扩展能力尚未得到大规模验证。",
+          "evidence_signals": [
+            "2025年年度经常性收入突破八位数（千万美元级别）",
+            "收入连续两年同比增长超过8倍",
+            "客户数量从10家增长至超过800家",
+            "月度工单预订额超过6000万美元",
+            "全年工单预订额有望达到10亿美元",
+            "客户预约率达到与顶级人工客服持平的水平",
+            "与ServiceTitan、Nexstar、Clover建立深度合作关系"
+          ],
+          "risks": [
+            "家庭服务行业数字化程度低，承包商对AI的接受度曾是早期进入障碍，大规模市场教育仍需时间。",
+            "向屋顶、汽车服务、物业管理等邻近垂直领域的扩展面临不同工作流和客户需求，产品适配和销售效率存在不确定性。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -543,390 +741,210 @@
           "target_kind": "product",
           "research_name": "AI CSR",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "Avoca provides AI-powered voice and workflow automation that answers every inbound lead within a few seconds, books jobs directly into customer CRMs, relentlessly follows up on outstanding estimates, and dynamically drives new lead flow based on technician capacity."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Outbound Campaigns",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "Avoca's AI consistently follows up on outstanding estimates and identifies new job opportunities within the existing customer base, automatically generating demand."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Coach",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Scoring Models listen to every call, human or AI, and grade it on things like how well the rep handled an objection, how much empathy they showed, and how many filler words they used."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Apurva Shrivastava",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "said Apurva Shrivastava, co-founder of Avoca."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tyson Chen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "said Tyson Chen, co-founder of Avoca."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Meritech Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "The Series B funding was led by Meritech and General Catalyst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "The Series B funding was led by Meritech and General Catalyst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kleiner Perkins",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "the Series A was led by Kleiner Perkins."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Amplify Partners",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "Backed by Meritech, General Catalyst, Kleiner Perkins, Amplify Partners, and Y Combinator"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b7221d306ef28b7d",
-              "quote": "Y Combinator led the seed back in 2024."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Nexus Venture Partners",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2315f11e10b4df0e",
-              "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Capital 49",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Capital 49 is backing Avoca in their Series B raise."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Amplify Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Nexus Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Alt Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Jack Altman from Alt Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "BoxGroup",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Gregory R. from BoxGroup"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "TCP Venture Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "REMUS Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Krishna K. Gupta ( REMUS Capital )"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Latitude Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Ansaf Kareem ( Latitude Capital )"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Audacious Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Nakul Mandan ( Audacious Ventures )"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Formus Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Cem Garih and Burak Karahasan ( Formus Capital )"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Jefferies",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Todd Breeden ( Jefferies )"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Vicus Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Manraj Singh Sandhu ( Vicus Ventures )"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Pathlight Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b2454278fe6d93e",
-              "quote": "Charley Ma (Pathlight Ventures)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Turnpoint",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "1-800-GOT-JUNK?",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Goettl",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce3d5e20846f6f71",
-              "quote": "its customers are some of the largest operators in the country, such as Turnpoint, 1-800-GOT-JUNK?, and Goettl."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ServiceTitan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3c76eb4665d58d2b",
-              "quote": "Rilla, Service Titan's AI add-ons, and a handful of newer entrants all target service businesses with various forms of AI automation."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Rilla",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Rilla (records and coaches field-sales)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Sameday",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Sameday, AI virtual receptionist for ServiceTitan."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Hatch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Hatch (automates texting)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Netic",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d2293ce6366c2572",
-              "quote": "Sameday, ServiceAgent.ai, Netic (also AI phone-answering for contractors)"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1024,13 +1042,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:39:54.562Z"
+      "published_at": "2026-07-26T14:39:54.562Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI CSR",
+            "Coach",
+            "Outbound Campaigns"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Apurva Shrivastava",
+            "Tyson Chen"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-dd3217aad32e6891"
+      ],
+      "aggregation": {
+        "key": "EN-2f88f41306209dd7|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-4041c7c8f29c57d1",
       "triggered_by_event_id": "EV-a7e14985b924b464",
       "as_of_date": "2026-06-25",
@@ -1048,11 +1098,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8fb1785a6254557c",
-                "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal, illumine is an AI SaaS platform purpose-built for childcare management."
+                "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal, illumine is an AI SaaS platform purpose-built for childcare management.",
+                "source_content_hash": "48fe302570287e31",
+                "quote_hash": "52b1d19f35578f819876021a51507cbf8196052fc0f746d3c42aff18ad43b571"
               },
               {
                 "source_id": "FISRC-16e0be8104cbcbf7",
-                "quote": "Navneet Rastogi, Co-founder and CEO, missed witnessing his son's first steps while the child was at daycare."
+                "quote": "Navneet Rastogi, Co-founder and CEO, missed witnessing his son's first steps while the child was at daycare.",
+                "source_content_hash": "571bdfa5b561f937",
+                "quote_hash": "907d18ff932f436db317b62f6db486a95d10fd85906dfc758a4c47dda0a35020"
               }
             ],
             "entity_id": null
@@ -1063,11 +1117,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8fb1785a6254557c",
-                "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal"
+                "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal",
+                "source_content_hash": "48fe302570287e31",
+                "quote_hash": "5e050a0f31d05ec80a1979df85edba42f8336f770bdac291b06c662f34187a91"
               },
               {
                 "source_id": "FISRC-16e0be8104cbcbf7",
-                "quote": "Co-founder and Chief Product Officer Purva Goyal added, \"Whether it's a standalone preschool or a chain of centres, our system adapts and scales based on real-world workflows.\""
+                "quote": "Co-founder and Chief Product Officer Purva Goyal added, \"Whether it's a standalone preschool or a chain of centres, our system adapts and scales based on real-world workflows.\"",
+                "source_content_hash": "571bdfa5b561f937",
+                "quote_hash": "237bacd1ee449c490b8fee833c107cfaf590574ef05a3ae0391258804ee2ee2d"
               }
             ],
             "entity_id": null
@@ -1078,11 +1136,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8fb1785a6254557c",
-                "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal"
+                "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal",
+                "source_content_hash": "48fe302570287e31",
+                "quote_hash": "5e050a0f31d05ec80a1979df85edba42f8336f770bdac291b06c662f34187a91"
               },
               {
                 "source_id": "FISRC-16e0be8104cbcbf7",
-                "quote": "Sourabh Agarwal, CTO of Illumine"
+                "quote": "Sourabh Agarwal, CTO of Illumine",
+                "source_content_hash": "571bdfa5b561f937",
+                "quote_hash": "12ad70102f2b2bf521a3b338d65cdfffb7e7f2cc529df1ca4da72c11391957f8"
               }
             ],
             "entity_id": null
@@ -1096,11 +1158,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-16e0be8104cbcbf7",
-            "quote": "Based in Bengaluru, Illumine wants to become the go-to platform for childcare centres around the world by combining smart automation with a strong focus on the needs of both teachers and parents."
+            "quote": "Based in Bengaluru, Illumine wants to become the go-to platform for childcare centres around the world by combining smart automation with a strong focus on the needs of both teachers and parents.",
+            "source_content_hash": "571bdfa5b561f937",
+            "quote_hash": "b89b3930e5183b61c6de2af1658fd921846df795000b746ebfe6364dcfbb6cca"
           },
           {
             "source_id": "FISRC-8fb1785a6254557c",
-            "quote": "illumine is an AI SaaS platform purpose-built for childcare management."
+            "quote": "illumine is an AI SaaS platform purpose-built for childcare management.",
+            "source_content_hash": "48fe302570287e31",
+            "quote_hash": "dd059f669619cc62b6e1a81dabc79555e65d7be55230ba71ec86002364b82b1a"
           }
         ]
       },
@@ -1116,11 +1182,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-16e0be8104cbcbf7",
-                "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners."
+                "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners.",
+                "source_content_hash": "571bdfa5b561f937",
+                "quote_hash": "ae082d50db1f97064e527ee247ea3778e7ffd3c8f5a61b01d1ce59e538292a1c"
               },
               {
                 "source_id": "FISRC-8fb1785a6254557c",
-                "quote": "illumine raises $2.5 million in seed funding led by Prime Venture Partners"
+                "quote": "illumine raises $2.5 million in seed funding led by Prime Venture Partners",
+                "source_content_hash": "48fe302570287e31",
+                "quote_hash": "2e5229522d0fa3404c3c10d355b55bee6860d7e6c49b0106b94d699b32205679"
               }
             ],
             "entity_id": null
@@ -1129,11 +1199,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-16e0be8104cbcbf7",
-            "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners."
+            "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners.",
+            "source_content_hash": "571bdfa5b561f937",
+            "quote_hash": "ae082d50db1f97064e527ee247ea3778e7ffd3c8f5a61b01d1ce59e538292a1c"
           },
           {
             "source_id": "FISRC-8fb1785a6254557c",
-            "quote": "illumine raises $2.5 million in seed funding led by Prime Venture Partners"
+            "quote": "illumine raises $2.5 million in seed funding led by Prime Venture Partners",
+            "source_content_hash": "48fe302570287e31",
+            "quote_hash": "2e5229522d0fa3404c3c10d355b55bee6860d7e6c49b0106b94d699b32205679"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-a7e14985b924b464",
+            "round_original": "种子轮",
+            "amount": "$2.5 million",
+            "announced_at": "2025-06-18",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-16e0be8104cbcbf7",
+                "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners.",
+                "source_content_hash": "571bdfa5b561f937",
+                "quote_hash": "ae082d50db1f97064e527ee247ea3778e7ffd3c8f5a61b01d1ce59e538292a1c"
+              },
+              {
+                "source_id": "FISRC-8fb1785a6254557c",
+                "quote": "illumine raises $2.5 million in seed funding led by Prime Venture Partners",
+                "source_content_hash": "48fe302570287e31",
+                "quote_hash": "2e5229522d0fa3404c3c10d355b55bee6860d7e6c49b0106b94d699b32205679"
+              }
+            ]
           }
         ]
       },
@@ -1154,11 +1253,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Illumine's platform helps with everything a preschool or childcare center needs—from planning lessons and tracking attendance to communicating with parents and meeting regulations."
+              "quote": "Illumine's platform helps with everything a preschool or childcare center needs—from planning lessons and tracking attendance to communicating with parents and meeting regulations.",
+              "source_content_hash": "571bdfa5b561f937",
+              "quote_hash": "b06bb167f90bca8ad3371e004d0e00a74de8bf6d211f20a1deead8d61e2da66d"
             },
             {
               "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "illumine combines enrollment, compliance, billing, parent engagement, curriculum design, and operational analytics."
+              "quote": "illumine combines enrollment, compliance, billing, parent engagement, curriculum design, and operational analytics.",
+              "source_content_hash": "48fe302570287e31",
+              "quote_hash": "9089f7de0b96004c7f827c63c040e117a23b9546fead31f6dd1a02c228d145e3"
             }
           ],
           "entity_id": null
@@ -1176,9 +1279,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3211791c51b288c5",
-              "quote": "Cloud-based software for K-12 education is provided."
+              "quote": "Cloud-based software for K-12 education is provided.",
+              "source_content_hash": "9aa981084a8da19a",
+              "quote_hash": "83a8e8d26f3aba88042c04f208b2054421560056e95009777fab8b708330a044"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Brightwheel",
@@ -1190,9 +1296,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3211791c51b288c5",
-              "quote": "Online platform for preschool management and parent updates is offered."
+              "quote": "Online platform for preschool management and parent updates is offered.",
+              "source_content_hash": "9aa981084a8da19a",
+              "quote_hash": "19a346f61ea55b86f0dffa53dd23b615704dd4af4f01e5a5e43513c3070fd22d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1203,7 +1312,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Illumine is already being used by over 3,000 childcare centres in 56 countries."
+              "quote": "Illumine is already being used by over 3,000 childcare centres in 56 countries.",
+              "source_content_hash": "571bdfa5b561f937",
+              "quote_hash": "84d68d181b5f9e5fd96fb80e4acaebf06bd8e549e341d9d6d12014d1d7972cfe"
             }
           ]
         },
@@ -1214,7 +1325,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Illumine is already being used by over 3,000 childcare centres in 56 countries."
+              "quote": "Illumine is already being used by over 3,000 childcare centres in 56 countries.",
+              "source_content_hash": "571bdfa5b561f937",
+              "quote_hash": "84d68d181b5f9e5fd96fb80e4acaebf06bd8e549e341d9d6d12014d1d7972cfe"
             }
           ]
         },
@@ -1225,7 +1338,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "The company claims nearly 200% year-over-year revenue growth and a churn rate below 1%."
+              "quote": "The company claims nearly 200% year-over-year revenue growth and a churn rate below 1%.",
+              "source_content_hash": "48fe302570287e31",
+              "quote_hash": "9d5d69fed2ffb3939bfcf7394c9a9da308d51065f593fc8ff8f6a6ac30e51fe5"
             }
           ]
         },
@@ -1236,7 +1351,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "The company claims nearly 200% year-over-year revenue growth and a churn rate below 1%."
+              "quote": "The company claims nearly 200% year-over-year revenue growth and a churn rate below 1%.",
+              "source_content_hash": "48fe302570287e31",
+              "quote_hash": "9d5d69fed2ffb3939bfcf7394c9a9da308d51065f593fc8ff8f6a6ac30e51fe5"
             }
           ]
         },
@@ -1247,7 +1364,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3211791c51b288c5",
-              "quote": "Annual revenue $84,488 Latest available"
+              "quote": "Annual revenue $84,488 Latest available",
+              "source_content_hash": "9aa981084a8da19a",
+              "quote_hash": "fb8e5ba0537355c928adfe318295ed754239b6f7d2235e7f6a9a363db4c73d58"
             }
           ]
         },
@@ -1258,7 +1377,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3211791c51b288c5",
-              "quote": "Total funding $3.3M 3 rounds"
+              "quote": "Total funding $3.3M 3 rounds",
+              "source_content_hash": "9aa981084a8da19a",
+              "quote_hash": "614ab9bd1652cb9ecec251f8a4523cd4b6e56d23b57ca6fd279bdf05b0a24fd0"
             }
           ]
         }
@@ -1270,7 +1391,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "\"I only found out weeks later. That's when I realised how broken communication in childcare is,\" Rastogi said."
+              "quote": "\"I only found out weeks later. That's when I realised how broken communication in childcare is,\" Rastogi said.",
+              "source_content_hash": "571bdfa5b561f937",
+              "quote_hash": "adf8f14f014098df26e42aa6737f8670cf9e26af2f3b0633d4ba3ea9c745761b"
             }
           ]
         },
@@ -1280,7 +1403,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "\"Parents spend thousands on early education each year, but the tools supporting these centres are shockingly outdated,\" said Shripati Acharya, Partner at Prime Venture Partners."
+              "quote": "\"Parents spend thousands on early education each year, but the tools supporting these centres are shockingly outdated,\" said Shripati Acharya, Partner at Prime Venture Partners.",
+              "source_content_hash": "571bdfa5b561f937",
+              "quote_hash": "9e538aaad3f21934283d0a0ad52549ac2f11bd83f278e7843ee135c6f3105f3c"
             }
           ]
         },
@@ -1290,7 +1415,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "\"Unlike horizontal tools that only scratch the surface, our platform is built ground-up for childcare,\" said Sourabh Agarwal, CTO of Illumine."
+              "quote": "\"Unlike horizontal tools that only scratch the surface, our platform is built ground-up for childcare,\" said Sourabh Agarwal, CTO of Illumine.",
+              "source_content_hash": "571bdfa5b561f937",
+              "quote_hash": "dc7962447a9783cadf7f780900de73fe8771a0c906cbf3ec566c803ac767bf22"
             }
           ]
         }
@@ -1308,7 +1435,20 @@
           "公司2022财年的年度营收仅为8.4万美元，尽管近期增长迅速，但其绝对收入规模仍然较小，未来能否持续高速增长并实现规模化盈利有待验证。"
         ],
         "related_direction_id": "",
-        "sector": "教育科技 (EdTech)"
+        "sector": "教育科技 (EdTech)",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Illumine在高度碎片化且数字化程度低的全球儿童保育市场中，作为垂直AI SaaS先行者的规模化能力。本轮融资的已验证信号包括：已覆盖56个国家超过3000家托儿中心，实现了近200%的年收入同比增长和低于1%的客户流失率，证明了其产品市场契合度和客户粘性。投资方Prime Venture Partners明确指出了行业“令人惊讶地缺乏现代技术服务”的痛点，并认可Illumine的“AI优先垂直解决方案”是抓住这一市场机遇的关键。",
+          "evidence_signals": [
+            "全球市场覆盖：已进入56个国家，服务超过3000家托儿中心。",
+            "高增长与强粘性：年收入同比增长近200%，客户流失率低于1%。",
+            "明确的客户痛点：解决了双职工家庭增加背景下，儿童保育行业沟通不畅和运营数字化不足的问题。"
+          ],
+          "risks": [
+            "来源中提及的竞争对手如PowerSchool、Brightwheel等已在教育科技领域占据一定市场，Illumine在向K-12领域扩展或与这些平台竞争时可能面临挑战。",
+            "公司2022财年的年度营收仅为8.4万美元，尽管近期增长迅速，但其绝对收入规模仍然较小，未来能否持续高速增长并实现规模化盈利有待验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1316,111 +1456,49 @@
           "target_kind": "product",
           "research_name": "Illumine AI-powered childcare management platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Illumine's platform helps with everything a preschool or childcare center needs—from planning lessons and tracking attendance to communicating with parents and meeting regulations."
-            },
-            {
-              "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "illumine combines enrollment, compliance, billing, parent engagement, curriculum design, and operational analytics."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Navneet Rastogi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal, illumine is an AI SaaS platform purpose-built for childcare management."
-            },
-            {
-              "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Navneet Rastogi, Co-founder and CEO, missed witnessing his son's first steps while the child was at daycare."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Purva Goyal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal"
-            },
-            {
-              "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Co-founder and Chief Product Officer Purva Goyal added, \"Whether it's a standalone preschool or a chain of centres, our system adapts and scales based on real-world workflows.\""
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sourabh Agarwal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "Founded in 2018 by Navneet Rastogi, Purva Goyal, and Sourabh Agarwal"
-            },
-            {
-              "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Sourabh Agarwal, CTO of Illumine"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Prime Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-16e0be8104cbcbf7",
-              "quote": "Illumine, a startup using AI to improve childcare has raised $2.5 million in seed funding from Prime Venture Partners."
-            },
-            {
-              "source_id": "FISRC-8fb1785a6254557c",
-              "quote": "illumine raises $2.5 million in seed funding led by Prime Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "PowerSchool",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3211791c51b288c5",
-              "quote": "Cloud-based software for K-12 education is provided."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Brightwheel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3211791c51b288c5",
-              "quote": "Online platform for preschool management and parent updates is offered."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1482,13 +1560,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:38:49.903Z"
+      "published_at": "2026-07-26T14:38:49.903Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Illumine AI-powered childcare management platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Navneet Rastogi",
+            "Purva Goyal",
+            "Sourabh Agarwal"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-a7e14985b924b464"
+      ],
+      "aggregation": {
+        "key": "EN-577d8adaee97497b|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-256d9398b7fed31d",
       "triggered_by_event_id": "EV-9fc8916c19c19f99",
       "as_of_date": "2026-06-25",
@@ -1506,7 +1615,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8857ed7cd124411a",
-                "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen"
+                "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen",
+                "source_content_hash": "4e1c1175bbda2d1a",
+                "quote_hash": "47f7d8d7edd268febbcb5ed3b19be8cc00fbe65116aa642db8dd67701866be7f"
               }
             ],
             "entity_id": null
@@ -1517,7 +1628,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8857ed7cd124411a",
-                "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen"
+                "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen",
+                "source_content_hash": "4e1c1175bbda2d1a",
+                "quote_hash": "47f7d8d7edd268febbcb5ed3b19be8cc00fbe65116aa642db8dd67701866be7f"
               }
             ],
             "entity_id": null
@@ -1528,7 +1641,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-296b4b7f240d1a02",
-                "quote": "said Finn zur Mühlen, Telli's CEO."
+                "quote": "said Finn zur Mühlen, Telli's CEO.",
+                "source_content_hash": "24793a1a1f2997ed",
+                "quote_hash": "00f89631da037183f004b34aebb310669284b4e5cf01167967477fbd4af9d390"
               }
             ],
             "entity_id": null
@@ -1540,19 +1655,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-296b4b7f240d1a02",
-              "quote": "all supported by a lean six-person team in Berlin."
+              "quote": "all supported by a lean six-person team in Berlin.",
+              "source_content_hash": "24793a1a1f2997ed",
+              "quote_hash": "f20387fb27c59728bdcfe1e1882b80b7ccc078259920a5c1c14ba8689d781f64"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-8857ed7cd124411a",
-            "quote": "Telli, a Berlin-based startup and Y Combinator alum"
+            "quote": "Telli, a Berlin-based startup and Y Combinator alum",
+            "source_content_hash": "4e1c1175bbda2d1a",
+            "quote_hash": "bd99e24f2ec090ba93a2998118efe1dc8572271f829216205ce6943547c19437"
           }
         ]
       },
       "financing": {
-        "round": "Pre-Seed",
+        "round": "预种子轮",
         "amount": "$3.6M",
         "total_raised": "$3.6M",
         "announced_at": "2025-04-15",
@@ -1563,7 +1682,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8857ed7cd124411a",
-                "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator"
+                "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator",
+                "source_content_hash": "4e1c1175bbda2d1a",
+                "quote_hash": "98e6f8730b388d572e3942e6fd8ffd53d7b336a37c0c76e4b18c9b93df67f25d"
               }
             ],
             "entity_id": null
@@ -1574,7 +1695,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8857ed7cd124411a",
-                "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator"
+                "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator",
+                "source_content_hash": "4e1c1175bbda2d1a",
+                "quote_hash": "98e6f8730b388d572e3942e6fd8ffd53d7b336a37c0c76e4b18c9b93df67f25d"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -1585,7 +1708,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a29da6c3c0b36acc",
-                "quote": "Special thanks also to our angels Andreas Durth, Matteo Maria Artero, Nina Kani, Peer Richelsen, Matthias Knoche, Louis Frach, Sebastien Goddijn, James Graham, Peter Gao"
+                "quote": "Special thanks also to our angels Andreas Durth, Matteo Maria Artero, Nina Kani, Peer Richelsen, Matthias Knoche, Louis Frach, Sebastien Goddijn, James Graham, Peter Gao",
+                "source_content_hash": "fea56f23e1b2d84f",
+                "quote_hash": "926f95056fbb159f7618cc098b2fd1d81584c49404d46a8d364d15fc5d8a9ac8"
               }
             ],
             "entity_id": null
@@ -1596,7 +1721,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a29da6c3c0b36acc",
-                "quote": "Special thanks also to our angels Andreas Durth, Matteo Maria Artero, Nina Kani, Peer Richelsen, Matthias Knoche, Louis Frach, Sebastien Goddijn, James Graham, Peter Gao"
+                "quote": "Special thanks also to our angels Andreas Durth, Matteo Maria Artero, Nina Kani, Peer Richelsen, Matthias Knoche, Louis Frach, Sebastien Goddijn, James Graham, Peter Gao",
+                "source_content_hash": "fea56f23e1b2d84f",
+                "quote_hash": "926f95056fbb159f7618cc098b2fd1d81584c49404d46a8d364d15fc5d8a9ac8"
               }
             ],
             "entity_id": null
@@ -1605,7 +1732,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-8857ed7cd124411a",
-            "quote": "has successfully raised $3.6 million in a pre-seed funding round led by Cherry Ventures and Y Combinator, with additional support from angel investors."
+            "quote": "has successfully raised $3.6 million in a pre-seed funding round led by Cherry Ventures and Y Combinator, with additional support from angel investors.",
+            "source_content_hash": "4e1c1175bbda2d1a",
+            "quote_hash": "cd8c67fcc5010a0fb23aa884d2233073123aa2f361fddaf95df8139b10dbd26b"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-9fc8916c19c19f99",
+            "round_original": "Pre-Seed",
+            "amount": "$3.6M",
+            "announced_at": "2025-04-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8857ed7cd124411a",
+                "quote": "has successfully raised $3.6 million in a pre-seed funding round led by Cherry Ventures and Y Combinator, with additional support from angel investors.",
+                "source_content_hash": "4e1c1175bbda2d1a",
+                "quote_hash": "cd8c67fcc5010a0fb23aa884d2233073123aa2f361fddaf95df8139b10dbd26b"
+              }
+            ]
           }
         ]
       },
@@ -1626,11 +1774,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "automating tasks such as appointment bookings, lead prequalification, and product suggestions."
+              "quote": "automating tasks such as appointment bookings, lead prequalification, and product suggestions.",
+              "source_content_hash": "4e1c1175bbda2d1a",
+              "quote_hash": "1125892593d396f676d16c192477ba4430b8de0cbccb0a32caa6917330c609c6"
             },
             {
               "source_id": "FISRC-296b4b7f240d1a02",
-              "quote": "Stateful AI agents that manage follow-ups and know when to trigger the next steps"
+              "quote": "Stateful AI agents that manage follow-ups and know when to trigger the next steps",
+              "source_content_hash": "24793a1a1f2997ed",
+              "quote_hash": "01d8b7e8f18173f46d83d0d8994807f016d52f432ceccafa984ef5b81629888a"
             }
           ],
           "entity_id": null
@@ -1644,9 +1796,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fb4093d83019f937",
-              "quote": "How Sky scaled proactive customer engagement with telli's Voice AI in under 3 weeks"
+              "quote": "How Sky scaled proactive customer engagement with telli's Voice AI in under 3 weeks",
+              "source_content_hash": "323c79185898f546",
+              "quote_hash": "051de41968ae19aa8f27a0318ae7c2dfc317a0a5847d06bb7b236f0916486f4b"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1660,9 +1815,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e1dfc6992083983a",
-              "quote": "Bland AI is a specialized, enterprise-grade AI platform for automating and scaling phone calls using hyper-realistic, human-like agents."
+              "quote": "Bland AI is a specialized, enterprise-grade AI platform for automating and scaling phone calls using hyper-realistic, human-like agents.",
+              "source_content_hash": "e184450065597e09",
+              "quote_hash": "c6b6039ea0826dacad7ce71aa20693aa8e2595a05e5de8dda35cd56f1753b0e5"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "ElevenLabs",
@@ -1674,9 +1832,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e1dfc6992083983a",
-              "quote": "ElevenLabs is a leading AI audio research company offering advanced text-to-speech, voice cloning, and dubbing software."
+              "quote": "ElevenLabs is a leading AI audio research company offering advanced text-to-speech, voice cloning, and dubbing software.",
+              "source_content_hash": "e184450065597e09",
+              "quote_hash": "1d916292c96fe087b2808f39de362d149869be712fef83180fec2093f9b1a838"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Synthflow",
@@ -1688,9 +1849,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e1dfc6992083983a",
-              "quote": "Synthflow is a no-code platform that enables teams to build and deploy AI voice agents quickly. It supports inbound and outbound use cases like scheduling, support, and lead qualification, with a visual builder and modular workflows."
+              "quote": "Synthflow is a no-code platform that enables teams to build and deploy AI voice agents quickly. It supports inbound and outbound use cases like scheduling, support, and lead qualification, with a visual builder and modular workflows.",
+              "source_content_hash": "e184450065597e09",
+              "quote_hash": "1ba364e5c6d24532713ecd111aba573ad9ff84bbad15864335f3acf450f0d5d5"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1701,7 +1865,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "The startup has reported over 50% monthly revenue growth"
+              "quote": "The startup has reported over 50% monthly revenue growth",
+              "source_content_hash": "4e1c1175bbda2d1a",
+              "quote_hash": "878d93b90b33b761d281af83b034e935381d5f2e0888209a634845c2425d6934"
             }
           ]
         },
@@ -1712,7 +1878,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "has processed nearly a million calls."
+              "quote": "has processed nearly a million calls.",
+              "source_content_hash": "4e1c1175bbda2d1a",
+              "quote_hash": "4e874294d50f03b02038861179487d9e1f2796dbb5bd27fe060792f05d25bbea"
             }
           ]
         },
@@ -1723,7 +1891,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-296b4b7f240d1a02",
-              "quote": "80% of customers acquired via inbound or referrals"
+              "quote": "80% of customers acquired via inbound or referrals",
+              "source_content_hash": "24793a1a1f2997ed",
+              "quote_hash": "f0ba54dfae947ab972dd1e0c87974157b90f10317124b1d13018d58ed34e0308"
             }
           ]
         }
@@ -1742,7 +1912,20 @@
           "AI 语音智能体市场竞争激烈，存在 Bland AI、Synthflow 等多个定位不同的竞争对手，telli 需持续强化其在“高吞吐量外呼”这一细分场景的差异化优势，避免陷入同质化竞争。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 语音智能体 / 呼叫运营自动化"
+        "sector": "AI 语音智能体 / 呼叫运营自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“AI 语音智能体在高通话量行业的运营落地能力”。telli 在五个月内以六人团队处理近百万通电话、实现连续三个月超过50%的月收入增长，且80%客户来自入站或推荐，这些信号验证了其产品市场契合度和商业效率。创始团队在 Enpal 的运营经验与斯坦福的技术背景结合，构成了一个难以复制的“行业 know-how + 技术落地”组合。此轮融资估值未披露，但投资逻辑明显依赖于其已证明的规模化处理能力和快速增长的客户需求，而非单纯的技术概念。",
+          "evidence_signals": [
+            "以6人团队在5个月内处理近100万通电话，证明平台具备规模化运营能力。",
+            "连续3个月实现超过50%的月收入增长，显示强劲的市场需求。",
+            "80%的客户通过入站或推荐获取，表明产品具有高满意度和病毒式传播潜力。",
+            "客户已覆盖德国、英国、拉美和美国等多个市场，验证了跨地域扩展能力。"
+          ],
+          "risks": [
+            "AI 语音智能体市场竞争激烈，存在 Bland AI、Synthflow 等多个定位不同的竞争对手，telli 需持续强化其在“高吞吐量外呼”这一细分场景的差异化优势，避免陷入同质化竞争。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1750,160 +1933,84 @@
           "target_kind": "product",
           "research_name": "telli AI 语音智能体平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "automating tasks such as appointment bookings, lead prequalification, and product suggestions."
-            },
-            {
-              "source_id": "FISRC-296b4b7f240d1a02",
-              "quote": "Stateful AI agents that manage follow-ups and know when to trigger the next steps"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Seb Hapte-Selassie",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Philipp Baumanns",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Finn zur Mühlen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-296b4b7f240d1a02",
-              "quote": "said Finn zur Mühlen, Telli's CEO."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cherry Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8857ed7cd124411a",
-              "quote": "pre-seed funding round led by Cherry Ventures and Y Combinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "James Graham",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a29da6c3c0b36acc",
-              "quote": "Special thanks also to our angels Andreas Durth, Matteo Maria Artero, Nina Kani, Peer Richelsen, Matthias Knoche, Louis Frach, Sebastien Goddijn, James Graham, Peter Gao"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Peter Gao",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a29da6c3c0b36acc",
-              "quote": "Special thanks also to our angels Andreas Durth, Matteo Maria Artero, Nina Kani, Peer Richelsen, Matthias Knoche, Louis Frach, Sebastien Goddijn, James Graham, Peter Gao"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Sky",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fb4093d83019f937",
-              "quote": "How Sky scaled proactive customer engagement with telli's Voice AI in under 3 weeks"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Bland AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e1dfc6992083983a",
-              "quote": "Bland AI is a specialized, enterprise-grade AI platform for automating and scaling phone calls using hyper-realistic, human-like agents."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ElevenLabs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e1dfc6992083983a",
-              "quote": "ElevenLabs is a leading AI audio research company offering advanced text-to-speech, voice cloning, and dubbing software."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Synthflow",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e1dfc6992083983a",
-              "quote": "Synthflow is a no-code platform that enables teams to build and deploy AI voice agents quickly. It supports inbound and outbound use cases like scheduling, support, and lead qualification, with a visual builder and modular workflows."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1989,13 +2096,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:38:05.416Z"
+      "published_at": "2026-07-26T14:38:05.416Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "telli AI 语音智能体平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Finn zur Mühlen",
+            "Philipp Baumanns",
+            "Seb Hapte-Selassie"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9fc8916c19c19f99"
+      ],
+      "aggregation": {
+        "key": "EN-f96246b78ef26d59|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-27fc384f20a37812",
       "triggered_by_event_id": "EV-f487788f3d44f288",
       "as_of_date": "2026-06-25",
@@ -2013,7 +2151,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-08afa07ec89dda4d",
-                "quote": "said Jon Wang, Founder and Co-CEO of Assort Health"
+                "quote": "said Jon Wang, Founder and Co-CEO of Assort Health",
+                "source_content_hash": "7c2003856d2cd4b5",
+                "quote_hash": "6894ba36bf5a98b003843e78ebccb0a38341044c6c88518404075cf9d1b2311c"
               }
             ],
             "entity_id": null
@@ -2024,7 +2164,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-08afa07ec89dda4d",
-                "quote": "said Jeffery Liu, Founder and Co-CEO of Assort Health"
+                "quote": "said Jeffery Liu, Founder and Co-CEO of Assort Health",
+                "source_content_hash": "7c2003856d2cd4b5",
+                "quote_hash": "85298049673f919893aaa85f4046a829f971da3c1a8b4ad2b65093b797cf4b0b"
               }
             ],
             "entity_id": null
@@ -2038,16 +2180,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-08afa07ec89dda4d",
-            "quote": "SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey"
+            "quote": "SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey",
+            "source_content_hash": "7c2003856d2cd4b5",
+            "quote_hash": "6ef50cf4a9952cf71276c8c0062b0ebefdee662e2ca56e2010011274671876b1"
           },
           {
             "source_id": "FISRC-08afa07ec89dda4d",
-            "quote": "Assort Health is the most-widely used AI agents platform for the patient journey, from scheduling and intake to referrals, forms, document processing, medication refills, and payments."
+            "quote": "Assort Health is the most-widely used AI agents platform for the patient journey, from scheduling and intake to referrals, forms, document processing, medication refills, and payments.",
+            "source_content_hash": "7c2003856d2cd4b5",
+            "quote_hash": "77544f4dad0177b5d2d58ff54cb8fe05c75a07f4c91b31e75343bfa1d2508d70"
           }
         ]
       },
       "financing": {
-        "round": "Series C",
+        "round": "C轮",
         "amount": "$120 million",
         "total_raised": "more than $222 million",
         "announced_at": "2026-06-24",
@@ -2058,7 +2204,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-08afa07ec89dda4d",
-                "quote": "a $120 million Series C led by Menlo Ventures"
+                "quote": "a $120 million Series C led by Menlo Ventures",
+                "source_content_hash": "7c2003856d2cd4b5",
+                "quote_hash": "ddee37b39c5770ec6168c0ac684b6e5be75bea040f02a8f935249e93865b8b24"
               }
             ],
             "entity_id": null
@@ -2069,7 +2217,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-08afa07ec89dda4d",
-                "quote": "investors participating in this latest round include Lightspeed Venture Partners"
+                "quote": "investors participating in this latest round include Lightspeed Venture Partners",
+                "source_content_hash": "7c2003856d2cd4b5",
+                "quote_hash": "234be3b27216b9737cfb6895021c326f0eb43367dfe5481b92da20a7600cda63"
               }
             ],
             "entity_id": null
@@ -2078,11 +2228,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-08afa07ec89dda4d",
-            "quote": "today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million"
+            "quote": "today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million",
+            "source_content_hash": "7c2003856d2cd4b5",
+            "quote_hash": "549c8acd4cbdcdb2018f0994910f0ba7ada43830278ea5097b140365406d439f"
           },
           {
             "source_id": "FISRC-00ec12f591897755",
-            "quote": "Assort Health picked up $120 million in series C funding, hitting unicorn status"
+            "quote": "Assort Health picked up $120 million in series C funding, hitting unicorn status",
+            "source_content_hash": "ee5339615f6badda",
+            "quote_hash": "31f878b58d0773536569f4acae193556670a1deab42761054752755fa763ef94"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f487788f3d44f288",
+            "round_original": "Series C",
+            "amount": "$120 million",
+            "announced_at": "2026-06-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08afa07ec89dda4d",
+                "quote": "today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million",
+                "source_content_hash": "7c2003856d2cd4b5",
+                "quote_hash": "549c8acd4cbdcdb2018f0994910f0ba7ada43830278ea5097b140365406d439f"
+              },
+              {
+                "source_id": "FISRC-00ec12f591897755",
+                "quote": "Assort Health picked up $120 million in series C funding, hitting unicorn status",
+                "source_content_hash": "ee5339615f6badda",
+                "quote_hash": "31f878b58d0773536569f4acae193556670a1deab42761054752755fa763ef94"
+              }
+            ]
           }
         ]
       },
@@ -2104,7 +2283,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Concierge : handles inbound calls, triage, lab requests, med refills, scheduling, insurance eligibility, and intake in any language"
+              "quote": "Concierge : handles inbound calls, triage, lab requests, med refills, scheduling, insurance eligibility, and intake in any language",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "1959d232650d7dcc3a2db2e6248ae7bb57aca82785ab8a331b8be07339942ef8"
             }
           ],
           "entity_id": null
@@ -2123,7 +2304,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Activate: reaches patients proactively to close referral loops, automatically act on detected care gaps (i.e. mammograms, colonoscopies, vaccines), recover no-shows, and resolve payments"
+              "quote": "Activate: reaches patients proactively to close referral loops, automatically act on detected care gaps (i.e. mammograms, colonoscopies, vaccines), recover no-shows, and resolve payments",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "1027abba79bf3c73bca93ef85a4c3a7e682d94b61a9d9908bffacdf5fe03c16f"
             }
           ],
           "entity_id": null
@@ -2142,7 +2325,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Orchestrate: runs the operational work behind each visit and writes every detail back to the EHR, including referrals, document processing, patient intake, and personalized pre-post visit forms"
+              "quote": "Orchestrate: runs the operational work behind each visit and writes every detail back to the EHR, including referrals, document processing, patient intake, and personalized pre-post visit forms",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "7aed72280074527a17ad8a6e399ed02022f8e77720d3bfa583885f77c4bd1432"
             }
           ],
           "entity_id": null
@@ -2156,9 +2341,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00ec12f591897755",
-              "quote": "MDCS Dermatology, a multi-location dermatology practice operating across New York and New Jersey, has been using Assort Health's AI solution for two years, starting with inbound AI agents for scheduling and triaging patient calls and expanding to outbound AI agents."
+              "quote": "MDCS Dermatology, a multi-location dermatology practice operating across New York and New Jersey, has been using Assort Health's AI solution for two years, starting with inbound AI agents for scheduling and triaging patient calls and expanding to outbound AI agents.",
+              "source_content_hash": "ee5339615f6badda",
+              "quote_hash": "e2f502e61f0b3b19fb4dbadff3b21c589b8e304821f07933b5a8849df0b9cd8c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "John Muir Health",
@@ -2167,9 +2355,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Several health systems, such as John Muir Health, are partnering with Assort as demand grows for platforms that can support increasingly complex ambulatory operations."
+              "quote": "Several health systems, such as John Muir Health, are partnering with Assort as demand grows for platforms that can support increasingly complex ambulatory operations.",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "4c58285fb07ac4ffe9eea9ba329f1d900bb04b34f07c4b480009bc7d40fe315f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2183,9 +2374,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00ec12f591897755",
-              "quote": "Health tech company Artera secured $65 million in December to fuel further expansion and build out AI agents for patient communications."
+              "quote": "Health tech company Artera secured $65 million in December to fuel further expansion and build out AI agents for patient communications.",
+              "source_content_hash": "ee5339615f6badda",
+              "quote_hash": "5e712592fce2dbd20e75880c70e92d8d5f26022d25b7793ef788eac7bf5f2f06"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "EliseAI",
@@ -2197,13 +2391,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00ec12f591897755",
-              "quote": "EliseAI, a company using AI to tackle administrative tasks, picked up $250 million in series E funding in August."
+              "quote": "EliseAI, a company using AI to tackle administrative tasks, picked up $250 million in series E funding in August.",
+              "source_content_hash": "ee5339615f6badda",
+              "quote_hash": "2c9d700685759c6073db55cefdb26357d6519df2f930f63f2439f6e8a7c91a34"
             },
             {
               "source_id": "FISRC-00ec12f591897755",
-              "quote": "The difference is memory. Everyone else automates one piece and forgets the rest. Assort remembers every patient across every interaction and connects it all into one conversation."
+              "quote": "The difference is memory. Everyone else automates one piece and forgets the rest. Assort remembers every patient across every interaction and connects it all into one conversation.",
+              "source_content_hash": "ee5339615f6badda",
+              "quote_hash": "794e3330f572974988bf79067fc430d70ce8fe7f72f73c57a2ae26b75a73ca96"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Tennr",
@@ -2215,13 +2414,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00ec12f591897755",
-              "quote": "Tennr, a company that uses AI to automate messy, document-heavy administrative workflows, raised $101 million last June."
+              "quote": "Tennr, a company that uses AI to automate messy, document-heavy administrative workflows, raised $101 million last June.",
+              "source_content_hash": "ee5339615f6badda",
+              "quote_hash": "be6850c086016328d74f44fd3a80029a420c5b49fe6e7131976bd73a281f30ff"
             },
             {
               "source_id": "FISRC-00ec12f591897755",
-              "quote": "What's defensible is really what's hard to get, and we believe what's hard to get is data. We have the most data, the most implementations under our belt."
+              "quote": "What's defensible is really what's hard to get, and we believe what's hard to get is data. We have the most data, the most implementations under our belt.",
+              "source_content_hash": "ee5339615f6badda",
+              "quote_hash": "4b08737fa991b41be55e3e3535fe7365c6d4563762f6e28c815b8576d08a0256"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2232,7 +2436,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "more than 190 million patient interactions"
+              "quote": "more than 190 million patient interactions",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "09f3964d5aa6307ef1a3bdc70a4af77e3f0616fb14dc0fd9046a44f620d69ad5"
             }
           ]
         },
@@ -2243,7 +2449,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "62,000 care protocols"
+              "quote": "62,000 care protocols",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "e87a3abd8fc9998f2426155efbb93fb7acedd1afe9e81310e46d3d5301a9b580"
             }
           ]
         },
@@ -2254,7 +2462,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "1.6 million decision pathways"
+              "quote": "1.6 million decision pathways",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "f7ebc7ff3e523c9f048fdff820c13d9a70df55b2500429873792a8eb90df5229"
             }
           ]
         },
@@ -2265,7 +2475,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "at a valuation of $1.2 billion"
+              "quote": "at a valuation of $1.2 billion",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "7645acab6d8ecc267c87a882163c1618296d8775604faed1d6197a6f5949d195"
             }
           ]
         },
@@ -2276,7 +2488,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "In the last 15 months, revenue has grown 20x."
+              "quote": "In the last 15 months, revenue has grown 20x.",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "3679c2daa6beb26b59be8d94596a4a5c6d0498ee9102efbefd8b361cfa197b6e"
             }
           ]
         },
@@ -2287,7 +2501,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Customers see a 5% lift in appointment volume"
+              "quote": "Customers see a 5% lift in appointment volume",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "1d6d253ed41507be5a48ce93c72d7c5f61554bd5c3e49b6430468746b4005b76"
             }
           ]
         },
@@ -2298,7 +2514,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "a 115% increase in labor capacity"
+              "quote": "a 115% increase in labor capacity",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "976afe1c378d5302dc9773194ed06ec1241da3c5c67b58afb424dca4eef8a062"
             }
           ]
         },
@@ -2309,7 +2527,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "a 4.3 out of 5 patient satisfaction score"
+              "quote": "a 4.3 out of 5 patient satisfaction score",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "89f34179c09a750c1a002d4bba317a2c5b86574ccdef62b8c03562bfde7519a4"
             }
           ]
         }
@@ -2321,7 +2541,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "This market is going to consolidate in the same way every other one has. Provider groups know it, and the smart ones aren't buying another point solution. They want one partner with the capital and the engineering depth to transform how they operate over the long run."
+              "quote": "This market is going to consolidate in the same way every other one has. Provider groups know it, and the smart ones aren't buying another point solution. They want one partner with the capital and the engineering depth to transform how they operate over the long run.",
+              "source_content_hash": "7c2003856d2cd4b5",
+              "quote_hash": "1987c079f214d3c6b62934dff3c4fb2570bbae14334bd73dac02c4ded5729bee"
             }
           ]
         }
@@ -2337,7 +2559,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-08afa07ec89dda4d",
-                "quote": "The value of Assort's platform compounds with every patient interaction. Each one surfaces a new edge case and a new way to improve care, and the platform gets better for the next patient, automatically. That is a structural advantage that grows with scale, and it lets Assort deliver outsized value for every customer in a way other platforms simply haven't matched."
+                "quote": "The value of Assort's platform compounds with every patient interaction. Each one surfaces a new edge case and a new way to improve care, and the platform gets better for the next patient, automatically. That is a structural advantage that grows with scale, and it lets Assort deliver outsized value for every customer in a way other platforms simply haven't matched.",
+                "source_content_hash": "7c2003856d2cd4b5",
+                "quote_hash": "608270ddfdcd4a4cb3947d08a8b58a8392c1b9ba396003f175c5bb6340f990d5"
               }
             ]
           }
@@ -2355,7 +2579,22 @@
           "语音 AI 初创市场竞争激烈，Artera、EliseAI、Tennr 等均已获得大额融资，可能挤压定价空间和客户获取成本"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "医疗健康 AI 智能体平台"
+        "sector": "医疗健康 AI 智能体平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Assort Health 通过 1.9 亿次患者交互积累的专有专科数据集和 Synapse 模型形成的复利飞轮——每次部署使平台更智能，每次患者交互使其更个性化，共同构成难以复制的结构性优势。本轮 12 亿美元估值对应 15 个月内 20 倍收入增长，验证了从专科诊所向医疗系统扩展的产品市场匹配。判断的证据边界限于已披露的运营指标和客户证言，尚未覆盖医疗系统大规模部署后的单位经济模型和长期留存数据。",
+          "evidence_signals": [
+            "15 个月内收入增长 20 倍，证明专科诊所市场的产品市场匹配",
+            "1.9 亿次患者交互、62,000 个护理协议和 160 万条决策路径构成医疗领域最大的专有专科数据集",
+            "客户实现 5% 预约量提升、115% 劳动力容量提升和 4.3/5 患者满意度评分",
+            "MDCS Dermatology 在评估市场上所有 AI 解决方案后选择 Assort 作为唯一真正的平台",
+            "已从专科诊所扩展到 John Muir Health 等医疗系统，验证了向上游市场延伸的能力"
+          ],
+          "risks": [
+            "医疗系统部署的复杂性和销售周期远超专科诊所，单位经济模型和长期留存率尚未在医疗系统层面得到验证",
+            "语音 AI 初创市场竞争激烈，Artera、EliseAI、Tennr 等均已获得大额融资，可能挤压定价空间和客户获取成本"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2363,164 +2602,84 @@
           "target_kind": "product",
           "research_name": "Concierge",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Concierge : handles inbound calls, triage, lab requests, med refills, scheduling, insurance eligibility, and intake in any language"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Activate",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Activate: reaches patients proactively to close referral loops, automatically act on detected care gaps (i.e. mammograms, colonoscopies, vaccines), recover no-shows, and resolve payments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Orchestrate",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Orchestrate: runs the operational work behind each visit and writes every detail back to the EHR, including referrals, document processing, patient intake, and personalized pre-post visit forms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jon Wang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "said Jon Wang, Founder and Co-CEO of Assort Health"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jeffery Liu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "said Jeffery Liu, Founder and Co-CEO of Assort Health"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "a $120 million Series C led by Menlo Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "investors participating in this latest round include Lightspeed Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "MDCS Dermatology",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ec12f591897755",
-              "quote": "MDCS Dermatology, a multi-location dermatology practice operating across New York and New Jersey, has been using Assort Health's AI solution for two years, starting with inbound AI agents for scheduling and triaging patient calls and expanding to outbound AI agents."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "John Muir Health",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-08afa07ec89dda4d",
-              "quote": "Several health systems, such as John Muir Health, are partnering with Assort as demand grows for platforms that can support increasingly complex ambulatory operations."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Artera",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ec12f591897755",
-              "quote": "Health tech company Artera secured $65 million in December to fuel further expansion and build out AI agents for patient communications."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "EliseAI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ec12f591897755",
-              "quote": "EliseAI, a company using AI to tackle administrative tasks, picked up $250 million in series E funding in August."
-            },
-            {
-              "source_id": "FISRC-00ec12f591897755",
-              "quote": "The difference is memory. Everyone else automates one piece and forgets the rest. Assort remembers every patient across every interaction and connects it all into one conversation."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Tennr",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00ec12f591897755",
-              "quote": "Tennr, a company that uses AI to automate messy, document-heavy administrative workflows, raised $101 million last June."
-            },
-            {
-              "source_id": "FISRC-00ec12f591897755",
-              "quote": "What's defensible is really what's hard to get, and we believe what's hard to get is data. We have the most data, the most implementations under our belt."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2570,13 +2729,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:37:52.124Z"
+      "published_at": "2026-07-26T14:37:52.124Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Activate",
+            "Concierge",
+            "Orchestrate"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Jeffery Liu",
+            "Jon Wang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f487788f3d44f288"
+      ],
+      "aggregation": {
+        "key": "EN-f3d05a0f6248941d|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9c3c3a2fb0eee6ff",
       "triggered_by_event_id": "EV-ad0589423b3aa1ce",
       "as_of_date": "2026-06-25",
@@ -2594,7 +2785,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a3d4ca3b6256c1a",
-                "quote": "Founded in Milan in 2024 by Edoardo Arbizzi and Edoardo Gava"
+                "quote": "Founded in Milan in 2024 by Edoardo Arbizzi and Edoardo Gava",
+                "source_content_hash": "62bd9dcf06a74ba6",
+                "quote_hash": "ca70c6808187bbb1be32c8b9b84a452bca93eb89a3c131ee2460cd6c38d97a37"
               }
             ],
             "entity_id": null
@@ -2605,7 +2798,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a3d4ca3b6256c1a",
-                "quote": "Founded in Milan in 2024 by Edoardo Arbizzi and Edoardo Gava"
+                "quote": "Founded in Milan in 2024 by Edoardo Arbizzi and Edoardo Gava",
+                "source_content_hash": "62bd9dcf06a74ba6",
+                "quote_hash": "ca70c6808187bbb1be32c8b9b84a452bca93eb89a3c131ee2460cd6c38d97a37"
               }
             ],
             "entity_id": null
@@ -2617,14 +2812,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "The team has grown to more than 30 people."
+              "quote": "The team has grown to more than 30 people.",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "e2c250751eeb32344cae347204183a9a6d1ba2d145fd2bbc4be3fb5f51926315"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-cf02c2eec77471e8",
-            "quote": "Compri is a business and productivity software company that provides an AI-driven procurement automation platform designed to streamline and accelerate operational activities for manufacturing companies."
+            "quote": "Compri is a business and productivity software company that provides an AI-driven procurement automation platform designed to streamline and accelerate operational activities for manufacturing companies.",
+            "source_content_hash": "53daccb1ee176a52",
+            "quote_hash": "01c9577ac6f380d02db5b731d76b28fe68292cb32763f6aafd5d99611814fe60"
           }
         ]
       },
@@ -2640,7 +2839,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a3d4ca3b6256c1a",
-                "quote": "has raised €3.2 million in a seed funding round led by Picus Capital"
+                "quote": "has raised €3.2 million in a seed funding round led by Picus Capital",
+                "source_content_hash": "62bd9dcf06a74ba6",
+                "quote_hash": "b9d15b38b5b4e857a6452aa24d17ee91017c1225408ccdc6fe17f3dfcc94d220"
               }
             ],
             "entity_id": null
@@ -2651,7 +2852,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a3d4ca3b6256c1a",
-                "quote": "The round also included participation from Shapers"
+                "quote": "The round also included participation from Shapers",
+                "source_content_hash": "62bd9dcf06a74ba6",
+                "quote_hash": "698cb3458a4a4cf74a4a8dcef6598e7497e473b3995ba5ca1e34d2b118d1b9b3"
               }
             ],
             "entity_id": null
@@ -2662,7 +2865,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a3d4ca3b6256c1a",
-                "quote": "and a group of private investors"
+                "quote": "and a group of private investors",
+                "source_content_hash": "62bd9dcf06a74ba6",
+                "quote_hash": "17b870cd81c7af1e8dc8047d2bbf8f1b7ca5b68fe2cf866a2aaba5b33e7a7d52"
               }
             ],
             "entity_id": null
@@ -2673,7 +2878,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-cf02c2eec77471e8",
-                "quote": "Koinos Capital SGR Pre Seed"
+                "quote": "Koinos Capital SGR Pre Seed",
+                "source_content_hash": "53daccb1ee176a52",
+                "quote_hash": "e88c31164062bf4fe5a79ac462efdd6bf3e8d7e058335daae1cfe010904a2c7b"
               }
             ],
             "entity_id": null
@@ -2682,7 +2889,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-df74572de4fa99e4",
-            "quote": "The Milan-based company today announced a €3.2 million seed round led by Picus Capital, bringing total funding to over €5 million."
+            "quote": "The Milan-based company today announced a €3.2 million seed round led by Picus Capital, bringing total funding to over €5 million.",
+            "source_content_hash": "a5054857a95e87e6",
+            "quote_hash": "7974d00dde49d45609dcbc40767658416af99c2cd49a9fc851eddbe349073f8c"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-ad0589423b3aa1ce",
+            "round_original": "种子轮",
+            "amount": "320万欧元",
+            "announced_at": "2026-06-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-df74572de4fa99e4",
+                "quote": "The Milan-based company today announced a €3.2 million seed round led by Picus Capital, bringing total funding to over €5 million.",
+                "source_content_hash": "a5054857a95e87e6",
+                "quote_hash": "7974d00dde49d45609dcbc40767658416af99c2cd49a9fc851eddbe349073f8c"
+              }
+            ]
           }
         ]
       },
@@ -2701,7 +2929,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "Its data engine centralizes data from ERP systems, email, Excel, PDFs, and external databases, then the agents run the operational cycle end to end, from supplier follow-ups and document collection to compliance monitoring and order-confirmation checks."
+              "quote": "Its data engine centralizes data from ERP systems, email, Excel, PDFs, and external databases, then the agents run the operational cycle end to end, from supplier follow-ups and document collection to compliance monitoring and order-confirmation checks.",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "d4dfa3ad4a3b262eaa42a34dd605c0d13a1c5475908e1568e27151496f0e15af"
             }
           ],
           "entity_id": null
@@ -2715,9 +2945,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "At Movinter, a global player in industrial metal fabrication, the platform delivered approximately €360,000 in savings and more than 2,000 hours saved per year."
+              "quote": "At Movinter, a global player in industrial metal fabrication, the platform delivered approximately €360,000 in savings and more than 2,000 hours saved per year.",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "76f2b724a510e2e0f09c136be5caee53e621140e723e42792017014b07479ef0"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "一家领先的包装公司",
@@ -2726,9 +2959,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "A leading packaging company improved On Time Delivery from 80% to 95% in six months."
+              "quote": "A leading packaging company improved On Time Delivery from 80% to 95% in six months.",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "97743ab0c4e704004c6939d77d3df1c4c7577f2c6caf34bc55c73c9f4afe8866"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -2740,7 +2976,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0a3d4ca3b6256c1a",
-              "quote": "The company says its platform is already used by more than 40 customers"
+              "quote": "The company says its platform is already used by more than 40 customers",
+              "source_content_hash": "62bd9dcf06a74ba6",
+              "quote_hash": "e62466857e045e17d2748688ea30f09868dce958700c493dc5b9b199edac9dd6"
             }
           ]
         },
@@ -2751,7 +2989,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "managing over €10 billion in spend for leading manufacturers"
+              "quote": "managing over €10 billion in spend for leading manufacturers",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "a418d0d7f7547874b2c238d2510bc7f14c774f837a9a3beca59b011505e6e3eb"
             }
           ]
         },
@@ -2762,7 +3002,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "Compri reports up to 80% less time spent on operational tasks"
+              "quote": "Compri reports up to 80% less time spent on operational tasks",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "b0cfb6cc7e9250ec776105eb25e492192d865f910f037019e335d3a571c33281"
             }
           ]
         },
@@ -2773,7 +3015,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "savings of more than 10% on managed spend"
+              "quote": "savings of more than 10% on managed spend",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "32fc6ccd0e65e8a1be49358dbe8fbbbba74f37711c86feadd9bcd70282723778"
             }
           ]
         },
@@ -2784,7 +3028,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "the platform delivered approximately €360,000 in savings"
+              "quote": "the platform delivered approximately €360,000 in savings",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "3a177712eb57f8501e5ad23b70e87953e4c1a10b3cd2beaf1542adf4fbdd06ae"
             }
           ]
         },
@@ -2795,7 +3041,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "more than 2,000 hours saved per year"
+              "quote": "more than 2,000 hours saved per year",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "c1a6ad2e39d5cf4e44980b8e850ef818d14fecbe0fb5d75db1ff9677480d5711"
             }
           ]
         },
@@ -2806,7 +3054,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "The company now operates across Italy and seven international markets"
+              "quote": "The company now operates across Italy and seven international markets",
+              "source_content_hash": "a5054857a95e87e6",
+              "quote_hash": "e149da2253b677ec9529abc1823c33ba4be70325eda9558ca9e5cde7fcd6e2c2"
             }
           ]
         },
@@ -2817,7 +3067,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-76a7c842e9d1b4f9",
-              "quote": "grew ARR close to sixfold"
+              "quote": "grew ARR close to sixfold",
+              "source_content_hash": "4f1c72903b1d6a00",
+              "quote_hash": "a786f0949bb159c964ae410216d895074f3eae818d8dcd360ad0f036797e3153"
             }
           ]
         }
@@ -2837,7 +3089,21 @@
           "采购流程深度依赖企业现有ERP和遗留系统，数据集成和标准化难度可能随着客户规模扩大而急剧增加，限制规模化速度。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业软件"
+        "sector": "企业软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI智能体在工业采购这一数字化洼地中的渗透速度与可量化的投资回报率。本轮融资建立在Compri已实现客户数一年内翻四倍、ARR增长近六倍、管理支出超100亿欧元等已验证的业务信号之上。投资方看重其产品直接嵌入现有工作流并带来高达10%的采购支出节省，这构成了制造商强烈的采用动力。然而，当前判断的证据边界仅限于40余家客户和早期案例，大规模推广的标准化程度和跨行业适应性尚未得到充分验证。",
+          "evidence_signals": [
+            "客户数从约10家增长至超过40家，一年内翻四倍",
+            "ARR增长接近六倍",
+            "平台管理支出总额超过100亿欧元",
+            "客户报告运营任务时间减少高达80%，管理支出节省超过10%",
+            "已进入包括美国在内的8个国家市场"
+          ],
+          "risks": [
+            "采购流程深度依赖企业现有ERP和遗留系统，数据集成和标准化难度可能随着客户规模扩大而急剧增加，限制规模化速度。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2845,117 +3111,63 @@
           "target_kind": "product",
           "research_name": "Compri AI采购平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "Its data engine centralizes data from ERP systems, email, Excel, PDFs, and external databases, then the agents run the operational cycle end to end, from supplier follow-ups and document collection to compliance monitoring and order-confirmation checks."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Edoardo Arbizzi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a3d4ca3b6256c1a",
-              "quote": "Founded in Milan in 2024 by Edoardo Arbizzi and Edoardo Gava"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Edoardo Gava",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a3d4ca3b6256c1a",
-              "quote": "Founded in Milan in 2024 by Edoardo Arbizzi and Edoardo Gava"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Picus Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a3d4ca3b6256c1a",
-              "quote": "has raised €3.2 million in a seed funding round led by Picus Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Shapers",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a3d4ca3b6256c1a",
-              "quote": "The round also included participation from Shapers"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Private Investors",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a3d4ca3b6256c1a",
-              "quote": "and a group of private investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Koinos Capital SGR",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf02c2eec77471e8",
-              "quote": "Koinos Capital SGR Pre Seed"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Movinter",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "At Movinter, a global player in industrial metal fabrication, the platform delivered approximately €360,000 in savings and more than 2,000 hours saved per year."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家领先的包装公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-df74572de4fa99e4",
-              "quote": "A leading packaging company improved On Time Delivery from 80% to 95% in six months."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3042,10 +3254,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:36:52.343Z"
+      "published_at": "2026-07-26T14:36:52.343Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Compri AI采购平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Edoardo Arbizzi",
+            "Edoardo Gava"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-ad0589423b3aa1ce"
+      ],
+      "aggregation": {
+        "key": "EN-ab447173a7f5af44|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-10",
     "generated_at": "2026-07-27T05:20:52.209Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 6,
       "auto_published": 3,
       "blocked": 3,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c5ffab91b210d4a8",
       "triggered_by_event_id": "EV-7abe829941f97b65",
       "as_of_date": "2026-07-10",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f1b764e21138a412",
-                "quote": "Its CTO co-founder, Roni El-Bahar, published his first blog post on Monday"
+                "quote": "Its CTO co-founder, Roni El-Bahar, published his first blog post on Monday",
+                "source_content_hash": "b3e02e458342a3fb",
+                "quote_hash": "0517a2a469e8a549c394c4fcf97bbcb1b953aa22b0efd15aad5f5bf454e688a2"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1ab982a6ca2b36eb",
-                "quote": "said Sachin Gandhi, Retym’s co-founder and CEO"
+                "quote": "said Sachin Gandhi, Retym’s co-founder and CEO",
+                "source_content_hash": "1e910f33d65209e1",
+                "quote_hash": "798edf586d23177f37cc5759f764032ddd385d4064508c09be4f03fe1374e8c3"
               }
             ],
             "entity_id": null
@@ -60,16 +65,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f1b764e21138a412",
-            "quote": "Retym, a U.S. chipmaker with Israeli roots"
+            "quote": "Retym, a U.S. chipmaker with Israeli roots",
+            "source_content_hash": "b3e02e458342a3fb",
+            "quote_hash": "4c9b1cb2481381ed42fedd0cb6ddf587ad0d57766cab4c250cc88d3686b5fe2c"
           },
           {
             "source_id": "FISRC-c6c5f9de68550ea4",
-            "quote": "Retym INC 10080 N Wolfe Road, Suite SW3-200, Cupertino, CA 95014"
+            "quote": "Retym INC 10080 N Wolfe Road, Suite SW3-200, Cupertino, CA 95014",
+            "source_content_hash": "ae72e81deb4532de",
+            "quote_hash": "cdb76a4b510930ecd73641cdf6f412ca1281e0b95c79a7d1ce73721872f455d8"
           }
         ]
       },
       "financing": {
-        "round": "Series D",
+        "round": "D轮",
         "amount": "$75 million",
         "total_raised": "$180 million",
         "announced_at": "2025-03-31",
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f1b764e21138a412",
-                "quote": "has raised a fresh $75 million series D led by James Kuklinski of Spark Capital"
+                "quote": "has raised a fresh $75 million series D led by James Kuklinski of Spark Capital",
+                "source_content_hash": "b3e02e458342a3fb",
+                "quote_hash": "53e2bd7c87ca8e0e9a8e8e0f4cbe7262792ba3560253ad1a76794588f3bf594d"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f1b764e21138a412",
-                "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
+                "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated",
+                "source_content_hash": "b3e02e458342a3fb",
+                "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f1b764e21138a412",
-                "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
+                "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated",
+                "source_content_hash": "b3e02e458342a3fb",
+                "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1ab982a6ca2b36eb",
-                "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round"
+                "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round",
+                "source_content_hash": "1e910f33d65209e1",
+                "quote_hash": "b2b8ad2c51cf0b632e237f394bf08ec6f30c2e818440badaa7f39a3bd09129d1"
               }
             ],
             "entity_id": null
@@ -122,11 +139,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f1b764e21138a412",
-            "quote": "Retym, a U.S. chipmaker with Israeli roots, has raised a fresh $75 million series D led by James Kuklinski of Spark Capital."
+            "quote": "Retym, a U.S. chipmaker with Israeli roots, has raised a fresh $75 million series D led by James Kuklinski of Spark Capital.",
+            "source_content_hash": "b3e02e458342a3fb",
+            "quote_hash": "d3e85558ce5296d234e653018494364db8fb3c74ade313fbee5a7b04c95661b7"
           },
           {
             "source_id": "FISRC-c6c5f9de68550ea4",
-            "quote": "the company secured $75 million in Series D funding, led by Spark Capital."
+            "quote": "the company secured $75 million in Series D funding, led by Spark Capital.",
+            "source_content_hash": "ae72e81deb4532de",
+            "quote_hash": "8ff7605787fef4aee4f8b988c6104fc291ce5ed4bb345fc5098d82471b8a088c"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7abe829941f97b65",
+            "round_original": "Series D",
+            "amount": "$75 million",
+            "announced_at": "2025-03-31",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f1b764e21138a412",
+                "quote": "Retym, a U.S. chipmaker with Israeli roots, has raised a fresh $75 million series D led by James Kuklinski of Spark Capital.",
+                "source_content_hash": "b3e02e458342a3fb",
+                "quote_hash": "d3e85558ce5296d234e653018494364db8fb3c74ade313fbee5a7b04c95661b7"
+              },
+              {
+                "source_id": "FISRC-c6c5f9de68550ea4",
+                "quote": "the company secured $75 million in Series D funding, led by Spark Capital.",
+                "source_content_hash": "ae72e81deb4532de",
+                "quote_hash": "8ff7605787fef4aee4f8b988c6104fc291ce5ed4bb345fc5098d82471b8a088c"
+              }
+            ]
           }
         ]
       },
@@ -143,11 +189,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f1b764e21138a412",
-              "quote": "It’s working on a new “programmable coherent digital signal processing DSP” chip that allows the innards of data centers to communicate faster both internally and with external sources."
+              "quote": "It’s working on a new “programmable coherent digital signal processing DSP” chip that allows the innards of data centers to communicate faster both internally and with external sources.",
+              "source_content_hash": "b3e02e458342a3fb",
+              "quote_hash": "5791c8a29d82a46aa148c2d4328df7aa2eede0d17235127c5cb1c20bd28cc896"
             },
             {
               "source_id": "FISRC-f1b764e21138a412",
-              "quote": "Retym — pronounced “re-time” — is using TSMC’s state-of-the-art 5 nanometer fab for its first chip"
+              "quote": "Retym — pronounced “re-time” — is using TSMC’s state-of-the-art 5 nanometer fab for its first chip",
+              "source_content_hash": "b3e02e458342a3fb",
+              "quote_hash": "26b3298aae6f2ff554ddf299430d0e02cd70468051c6a293991b626b4722055f"
             }
           ],
           "entity_id": null
@@ -165,13 +215,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f1b764e21138a412",
-              "quote": "He was largely referring to Marvell Technology, which currently dominates the DSP industry and has partnerships with Nvidia, Juniper Networks, and many others."
+              "quote": "He was largely referring to Marvell Technology, which currently dominates the DSP industry and has partnerships with Nvidia, Juniper Networks, and many others.",
+              "source_content_hash": "b3e02e458342a3fb",
+              "quote_hash": "a353faf76a7f5d699e06f9596320e82d45bfc2457406efd58d149d81afef1acb"
             },
             {
               "source_id": "FISRC-f1b764e21138a412",
-              "quote": "he founded the startup to bring competition to the DSP market that has historically been “controlled by a handful of large semiconductor companies.”"
+              "quote": "he founded the startup to bring competition to the DSP market that has historically been “controlled by a handful of large semiconductor companies.”",
+              "source_content_hash": "b3e02e458342a3fb",
+              "quote_hash": "b1f9fa8e11f6225f8ffcdfb0c77072a060bb24d900b14145f729c912ce7425fb"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -182,7 +237,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f1b764e21138a412",
-              "quote": "bringing its total raised to $180 million"
+              "quote": "bringing its total raised to $180 million",
+              "source_content_hash": "b3e02e458342a3fb",
+              "quote_hash": "0008295e0a7738e3282130bc444fabd9a2f44020f30832f8618beecb98b848eb"
             }
           ]
         },
@@ -193,7 +250,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f1b764e21138a412",
-              "quote": "has raised a fresh $75 million series D"
+              "quote": "has raised a fresh $75 million series D",
+              "source_content_hash": "b3e02e458342a3fb",
+              "quote_hash": "384d330f87bdbc3642b300d265e934075986f97bb6815e34dcc3f98d8409fc63"
             }
           ]
         },
@@ -204,7 +263,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1ab982a6ca2b36eb",
-              "quote": "According to Dell’Oro Group, global spending on datacenter compute and networking is expected to exceed $1 trillion annually within the next decade"
+              "quote": "According to Dell’Oro Group, global spending on datacenter compute and networking is expected to exceed $1 trillion annually within the next decade",
+              "source_content_hash": "1e910f33d65209e1",
+              "quote_hash": "f0e4853fc4f07a547df57b879152219c4c7886d3162fb2535c14d48381a05097"
             }
           ]
         }
@@ -224,7 +285,21 @@
           "首款芯片仍在测试阶段，尚未披露任何客户验证或量产订单，从测试到规模部署存在技术和商业化的不确定性。"
         ],
         "related_direction_id": "",
-        "sector": "半导体/AI基础设施"
+        "sector": "半导体/AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI数据中心对更高带宽和更低延迟的光互连需求的爆发式增长，以及相干DSP市场从少数巨头垄断走向竞争格局的窗口期。本轮7500万美元D轮融资使累计融资达1.8亿美元，估值未披露，但多家顶级风投的持续参与表明其技术路线和团队已获得深度验证。已验证信号包括：首款芯片已采用台积电5纳米工艺进入测试阶段，公司从隐身模式正式亮相并宣布多代产品路线图，以及Dell'Oro Group预测未来十年全球数据中心计算和网络年支出将超1万亿美元。然而，这些信号仍处于早期产品验证阶段，尚未披露任何客户合作或量产订单。",
+          "evidence_signals": [
+            "首款芯片采用台积电5纳米工艺，已进入测试阶段",
+            "公司从隐身模式正式亮相，宣布多代产品路线图",
+            "累计融资1.8亿美元，Spark Capital、Mayfield、Kleiner Perkins和Fidelity Investments持续投资",
+            "Dell'Oro Group预测未来十年全球数据中心计算和网络年支出将超1万亿美元，光网络和DSP需求强劲"
+          ],
+          "risks": [
+            "Marvell Technology在DSP市场占据主导地位，并与Nvidia、Juniper Networks等拥有深厚的合作关系，Retym作为新进入者面临巨大的市场准入壁垒和客户迁移成本。",
+            "首款芯片仍在测试阶段，尚未披露任何客户验证或量产订单，从测试到规模部署存在技术和商业化的不确定性。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -232,112 +307,56 @@
           "target_kind": "product",
           "research_name": "可编程相干DSP芯片",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "It’s working on a new “programmable coherent digital signal processing DSP” chip that allows the innards of data centers to communicate faster both internally and with external sources."
-            },
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "Retym — pronounced “re-time” — is using TSMC’s state-of-the-art 5 nanometer fab for its first chip"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Roni El-Bahar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "Its CTO co-founder, Roni El-Bahar, published his first blog post on Monday"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sachin Gandhi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1ab982a6ca2b36eb",
-              "quote": "said Sachin Gandhi, Retym’s co-founder and CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Spark Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "has raised a fresh $75 million series D led by James Kuklinski of Spark Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mayfield",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kleiner Perkins",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fidelity Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1ab982a6ca2b36eb",
-              "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Marvell Technology",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "He was largely referring to Marvell Technology, which currently dominates the DSP industry and has partnerships with Nvidia, Juniper Networks, and many others."
-            },
-            {
-              "source_id": "FISRC-f1b764e21138a412",
-              "quote": "he founded the startup to bring competition to the DSP market that has historically been “controlled by a handful of large semiconductor companies.”"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -399,13 +418,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:50:24.723Z"
+      "published_at": "2026-07-26T14:50:24.723Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "可编程相干DSP芯片"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Roni El-Bahar",
+            "Sachin Gandhi"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7abe829941f97b65"
+      ],
+      "aggregation": {
+        "key": "EN-70e7e370d5a50ea1|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-4156663529273d61",
       "triggered_by_event_id": "EV-6e516b6e68def9cf",
       "as_of_date": "2026-07-10",
@@ -423,7 +472,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e98aedbd2eaa6410",
-                "quote": "TensorWave Chief Executive Darrick Horton"
+                "quote": "TensorWave Chief Executive Darrick Horton",
+                "source_content_hash": "1d75cf39c1185f55",
+                "quote_hash": "311dea26d3bcbad21713e65da0af75bef9ec0fc9eee74db9633443cf02ce5e2e"
               }
             ],
             "entity_id": null
@@ -434,7 +485,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-40084e3eb176892e",
-                "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
+                "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik",
+                "source_content_hash": "8dcd63812a473831",
+                "quote_hash": "92115eab97e31f0cf8fbb44ffd88c6f7a98838add1010d348934d1d15d54c481"
               }
             ],
             "entity_id": null
@@ -445,7 +498,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-40084e3eb176892e",
-                "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
+                "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik",
+                "source_content_hash": "8dcd63812a473831",
+                "quote_hash": "92115eab97e31f0cf8fbb44ffd88c6f7a98838add1010d348934d1d15d54c481"
               }
             ],
             "entity_id": null
@@ -457,18 +512,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-40084e3eb176892e",
-              "quote": "TensorWave intends to double its workforce from 160 to between 300 and 400 employees over the coming year"
+              "quote": "TensorWave intends to double its workforce from 160 to between 300 and 400 employees over the coming year",
+              "source_content_hash": "8dcd63812a473831",
+              "quote_hash": "860b3bbe1dbd2da85aad95036a1a374f00c2262539efc6e76ab61d6d906dc260"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-e98aedbd2eaa6410",
-            "quote": "Cloud-based artificial intelligence infrastructure startup TensorWave Inc."
+            "quote": "Cloud-based artificial intelligence infrastructure startup TensorWave Inc.",
+            "source_content_hash": "1d75cf39c1185f55",
+            "quote_hash": "cd5b7717fa6c04f14bc0411a3b94612c9c44f05091335b9eaedd01d5d2793424"
           },
           {
             "source_id": "FISRC-e98aedbd2eaa6410",
-            "quote": "Las Vegas-based TensorWave was founded in 2023"
+            "quote": "Las Vegas-based TensorWave was founded in 2023",
+            "source_content_hash": "1d75cf39c1185f55",
+            "quote_hash": "8abc9c52834b9c16fda66ce348cc05a10a72307e402e9f0219381719efffe709"
           }
         ]
       },
@@ -484,7 +545,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e98aedbd2eaa6410",
-                "quote": "The round was co-led by Magnetar and AMD Ventures"
+                "quote": "The round was co-led by Magnetar and AMD Ventures",
+                "source_content_hash": "1d75cf39c1185f55",
+                "quote_hash": "eb9325c57080acd92f299e9e680f9b2150474061e7ee65a997d10cf79534552f"
               }
             ],
             "entity_id": null
@@ -495,7 +558,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e98aedbd2eaa6410",
-                "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc."
+                "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc.",
+                "source_content_hash": "1d75cf39c1185f55",
+                "quote_hash": "dd2543353f4695b34b5beac02a8a7e8144f8be797ce5e82b9d56fe409f2b4d4d"
               }
             ],
             "entity_id": null
@@ -506,7 +571,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e98aedbd2eaa6410",
-                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
+                "source_content_hash": "1d75cf39c1185f55",
+                "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
               }
             ],
             "entity_id": null
@@ -517,7 +584,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e98aedbd2eaa6410",
-                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
+                "source_content_hash": "1d75cf39c1185f55",
+                "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
               }
             ],
             "entity_id": null
@@ -528,7 +597,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e98aedbd2eaa6410",
-                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
+                "source_content_hash": "1d75cf39c1185f55",
+                "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
               }
             ],
             "entity_id": null
@@ -537,11 +608,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e98aedbd2eaa6410",
-            "quote": "it has closed on a bumper $350 million Series B funding round"
+            "quote": "it has closed on a bumper $350 million Series B funding round",
+            "source_content_hash": "1d75cf39c1185f55",
+            "quote_hash": "5aab43d618d71d499744251e7fbb55c5b88aba611086b9cbef5ff44753b4e3fd"
           },
           {
             "source_id": "FISRC-362c32d0dae07e89",
-            "quote": "IndexBox (citing Yahoo Finance) reports a prior roughly $100 million raise that valued the company at about $400 million"
+            "quote": "IndexBox (citing Yahoo Finance) reports a prior roughly $100 million raise that valued the company at about $400 million",
+            "source_content_hash": "754a72bcba75b7a9",
+            "quote_hash": "765afd0f6b072c3c1d204ceb8c8514dcf7a1c2d92946c90b51970136c6ae2e20"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-6e516b6e68def9cf",
+            "round_original": "B轮",
+            "amount": "3.5亿美元",
+            "announced_at": "2026-06-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e98aedbd2eaa6410",
+                "quote": "it has closed on a bumper $350 million Series B funding round",
+                "source_content_hash": "1d75cf39c1185f55",
+                "quote_hash": "5aab43d618d71d499744251e7fbb55c5b88aba611086b9cbef5ff44753b4e3fd"
+              },
+              {
+                "source_id": "FISRC-362c32d0dae07e89",
+                "quote": "IndexBox (citing Yahoo Finance) reports a prior roughly $100 million raise that valued the company at about $400 million",
+                "source_content_hash": "754a72bcba75b7a9",
+                "quote_hash": "765afd0f6b072c3c1d204ceb8c8514dcf7a1c2d92946c90b51970136c6ae2e20"
+              }
+            ]
           }
         ]
       },
@@ -559,7 +659,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "It provides access to specialized, high-performance cloud infrastructure such as AI accelerators, renting it to customers who need resources for both training and inference."
+              "quote": "It provides access to specialized, high-performance cloud infrastructure such as AI accelerators, renting it to customers who need resources for both training and inference.",
+              "source_content_hash": "1d75cf39c1185f55",
+              "quote_hash": "7fb26aff84b5d85b5c3815da931abc610073b053622640ef74bb23109cef51c4"
             }
           ],
           "entity_id": null
@@ -573,9 +675,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-956b89a1f3bd31b6",
-              "quote": "TensorWave powers Moreh's frontier LLM inference on MI355X & reduces model weight download time by ~75%"
+              "quote": "TensorWave powers Moreh's frontier LLM inference on MI355X & reduces model weight download time by ~75%",
+              "source_content_hash": "102175f3ef7f62a2",
+              "quote_hash": "6e3741af7d73b19640d180217a3b335e3c9795fbdb2e9bcd403cbc9a21ba3bd9"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -589,9 +694,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "Another major rival is Cerebras Systems Inc., which is known for its dinner plate-sized chips that also target inference. It went public last month."
+              "quote": "Another major rival is Cerebras Systems Inc., which is known for its dinner plate-sized chips that also target inference. It went public last month.",
+              "source_content_hash": "1d75cf39c1185f55",
+              "quote_hash": "d731f650d2cdb5d4943018c9933d088a02cd43ecd41e889b6d9eab0c80503300"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -602,7 +710,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "it currently has three operational data centers"
+              "quote": "it currently has three operational data centers",
+              "source_content_hash": "1d75cf39c1185f55",
+              "quote_hash": "542503583f603df954eeee2f2fa5f537c982164787f48e41bf74fccae2de8d6b"
             }
           ]
         },
@@ -613,7 +723,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "It has signed leases for 500 megawatts of capacity"
+              "quote": "It has signed leases for 500 megawatts of capacity",
+              "source_content_hash": "1d75cf39c1185f55",
+              "quote_hash": "6021a1e6d5fa1937fc31862eedd61809da9e335e29c5875d6e3caea2d5bf59df"
             }
           ]
         }
@@ -632,7 +744,20 @@
           "AMD的ROCm软件平台此前被抱怨比英伟达CUDA更难用且bug更多，虽然公司声称已改善至'即插即用'，但大规模客户迁移的意愿和实际性能对比仍未得到广泛验证。"
         ],
         "related_direction_id": "",
-        "sector": "AI基础设施"
+        "sector": "AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AMD AI基础设施能否成为英伟达的有效替代方案。本轮3.5亿美元融资将估值推至15.5亿美元，较一年前约4亿美元估值增长近四倍，验证了市场对摆脱单一供应商依赖的强烈需求。已验证信号包括：已运营三个配备AMD Instinct处理器的数据中心、签署500兆瓦电力租赁协议、运营北美最大液冷AMD GPU训练集群之一。但判断的证据边界受限于软件生态成熟度和客户大规模迁移意愿，目前仅公开了一个客户案例。",
+          "evidence_signals": [
+            "已运营三个数据中心，每个配备10,000个AMD Instinct处理器",
+            "已签署500兆瓦电力容量租赁协议",
+            "运营北美最大液冷AMD GPU训练集群之一，约8,000个MI325X加速器",
+            "估值一年内从约4亿美元增长至15.5亿美元"
+          ],
+          "risks": [
+            "AMD的ROCm软件平台此前被抱怨比英伟达CUDA更难用且bug更多，虽然公司声称已改善至'即插即用'，但大规模客户迁移的意愿和实际性能对比仍未得到广泛验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -640,143 +765,77 @@
           "target_kind": "product",
           "research_name": "AMD Instinct AI云服务",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "It provides access to specialized, high-performance cloud infrastructure such as AI accelerators, renting it to customers who need resources for both training and inference."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Darrick Horton",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "TensorWave Chief Executive Darrick Horton"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jeff Tatarchuk",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-40084e3eb176892e",
-              "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Piotr Tomasik",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-40084e3eb176892e",
-              "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Magnetar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "The round was co-led by Magnetar and AMD Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AMD Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Maverick Silicon",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nexus Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Western Frontier",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Moreh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-956b89a1f3bd31b6",
-              "quote": "TensorWave powers Moreh's frontier LLM inference on MI355X & reduces model weight download time by ~75%"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cerebras Systems",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e98aedbd2eaa6410",
-              "quote": "Another major rival is Cerebras Systems Inc., which is known for its dinner plate-sized chips that also target inference. It went public last month."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -850,13 +909,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:48:58.806Z"
+      "published_at": "2026-07-26T14:48:58.806Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AMD Instinct AI云服务"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Darrick Horton",
+            "Jeff Tatarchuk",
+            "Piotr Tomasik"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-6e516b6e68def9cf"
+      ],
+      "aggregation": {
+        "key": "EN-2e3e41eef734616d|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-1c92625ce15ebcac",
       "triggered_by_event_id": "EV-e41fc65eb014893f",
       "as_of_date": "2026-07-10",
@@ -874,7 +964,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Both Kyutai and Gradium were co-founded by Neil Zeghidour, a researcher who previously worked at Google Brain, DeepMind, and Facebook."
+                "quote": "Both Kyutai and Gradium were co-founded by Neil Zeghidour, a researcher who previously worked at Google Brain, DeepMind, and Facebook.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "926a574f0971804ac183f710687e5fae2fac34a1b80f9539eeac85466f41d7ed"
               }
             ],
             "entity_id": null
@@ -888,11 +980,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9af7e6a4d7b3d5e7",
-            "quote": "Gradium, a Paris-based startup that offers voice AI models"
+            "quote": "Gradium, a Paris-based startup that offers voice AI models",
+            "source_content_hash": "84b42b7082dca9a3",
+            "quote_hash": "8cc60d92efde03daa6f31ca9f6726966302860e189773a5f46acc1a94953bee7"
           },
           {
             "source_id": "FISRC-e48b46a7d8a544df",
-            "quote": "Gradium was spun out of Kyutai, the French AI research lab backed by telecom billionaire Xavier Niel."
+            "quote": "Gradium was spun out of Kyutai, the French AI research lab backed by telecom billionaire Xavier Niel.",
+            "source_content_hash": "13af7fc256332301",
+            "quote_hash": "2775768632a9bc4471a9b38455d8d4fad6ec6dd889afc11c5f3169a7b41a80c7"
           }
         ]
       },
@@ -908,7 +1004,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium, a Paris-based startup that offers voice AI models, reopened its seed round to new investors, including Nvidia, and has now raised $100 million total for the round"
+                "quote": "Gradium, a Paris-based startup that offers voice AI models, reopened its seed round to new investors, including Nvidia, and has now raised $100 million total for the round",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "88974e0ec721d570f03deedb200c82c245b210d6b47ad7b19dce3e08ebdb8337"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -919,7 +1017,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
               }
             ],
             "entity_id": null
@@ -930,7 +1030,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
               }
             ],
             "entity_id": null
@@ -941,7 +1043,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
               }
             ],
             "entity_id": null
@@ -952,7 +1056,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
               }
             ],
             "entity_id": null
@@ -963,7 +1069,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9af7e6a4d7b3d5e7",
-                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+                "source_content_hash": "84b42b7082dca9a3",
+                "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
               }
             ],
             "entity_id": null
@@ -972,7 +1080,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e48b46a7d8a544df",
-            "quote": "Gradium has expanded its seed round to $100 million after adding new investors including Nvidia"
+            "quote": "Gradium has expanded its seed round to $100 million after adding new investors including Nvidia",
+            "source_content_hash": "13af7fc256332301",
+            "quote_hash": "12f0c2c1f41606860ea32c91f5dfd6a3bd9de7a71af3cb9468a13dedc2295431"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e41fc65eb014893f",
+            "round_original": "种子轮",
+            "amount": "$100 million",
+            "announced_at": "2026-07-09",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e48b46a7d8a544df",
+                "quote": "Gradium has expanded its seed round to $100 million after adding new investors including Nvidia",
+                "source_content_hash": "13af7fc256332301",
+                "quote_hash": "12f0c2c1f41606860ea32c91f5dfd6a3bd9de7a71af3cb9468a13dedc2295431"
+              }
+            ]
           }
         ]
       },
@@ -989,11 +1118,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium is working on audio models that deliver voice at scale with ultra-low latency, meaning AI voices that respond almost instantly, without that awkward pause that often creeps into AI agent conversations."
+              "quote": "Gradium is working on audio models that deliver voice at scale with ultra-low latency, meaning AI voices that respond almost instantly, without that awkward pause that often creeps into AI agent conversations.",
+              "source_content_hash": "84b42b7082dca9a3",
+              "quote_hash": "54e6ef9f077b9e3a0d2960c4ae2e335dfd870b4c11b6c12ce786139453b94ec8"
             },
             {
               "source_id": "FISRC-e48b46a7d8a544df",
-              "quote": "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns"
+              "quote": "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns",
+              "source_content_hash": "13af7fc256332301",
+              "quote_hash": "fdf33cdff38a5bd683f2e8c1e731a9d497d9f1695071d0dd03b1ea209fa4f3ec"
             }
           ],
           "entity_id": null
@@ -1007,9 +1140,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e48b46a7d8a544df",
-              "quote": "Gradium says it has already signed customers including Renault, giving it an early commercial foothold in a crowded market."
+              "quote": "Gradium says it has already signed customers including Renault, giving it an early commercial foothold in a crowded market.",
+              "source_content_hash": "13af7fc256332301",
+              "quote_hash": "59837db7b0f1f8137c48eb92200da939c2b8fdb5522e20b2fa74f99704e30b64"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1023,9 +1159,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "The company has plenty of competition, though, from other voice AI startups like ElevenLabs, valued at $11 billion in February"
+              "quote": "The company has plenty of competition, though, from other voice AI startups like ElevenLabs, valued at $11 billion in February",
+              "source_content_hash": "84b42b7082dca9a3",
+              "quote_hash": "3177540c4d94e38e3dbeffc2daa61d50519485cdbc04967d19a859615a4dde1b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Google",
@@ -1037,9 +1176,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e48b46a7d8a544df",
-              "quote": "A voice model that responds quickly enough to feel natural can become an interface layer for agents, not just a text to speech feature."
+              "quote": "A voice model that responds quickly enough to feel natural can become an interface layer for agents, not just a text to speech feature.",
+              "source_content_hash": "13af7fc256332301",
+              "quote_hash": "afa8138901cb9b6f4c231268a4097fce3c2e184452dfb4441e99a8a6f70b6fab"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         }
       ],
       "metrics": [
@@ -1050,7 +1192,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "has now raised $100 million total for the round"
+              "quote": "has now raised $100 million total for the round",
+              "source_content_hash": "84b42b7082dca9a3",
+              "quote_hash": "3dc2d494bbb13dc0a9a7f94a165f4f1bd9888e23375c62caeac42ffda0d1683e"
             }
           ]
         },
@@ -1061,7 +1205,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors"
+              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors",
+              "source_content_hash": "84b42b7082dca9a3",
+              "quote_hash": "410c52387fa5d287171573ed5bebf4bce71cfc4ed88b34aa26c67125470fe846"
             }
           ]
         },
@@ -1072,7 +1218,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e48b46a7d8a544df",
-              "quote": "The latest extension adds roughly $30 million and brings the round to more than $100 million, according to Sifted."
+              "quote": "The latest extension adds roughly $30 million and brings the round to more than $100 million, according to Sifted.",
+              "source_content_hash": "13af7fc256332301",
+              "quote_hash": "bfd0c4a1f32f08c396f032d3ae48976a60e1b43ee5ca67d5ea96b9f3e0e0b078"
             }
           ]
         }
@@ -1091,7 +1239,20 @@
           "语音AI市场竞争激烈，面临ElevenLabs（估值110亿美元）和Google、OpenAI、Meta等大型模型制造商的竞争压力"
         ],
         "related_direction_id": "",
-        "sector": "AI语音/音频模型"
+        "sector": "AI语音/音频模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是语音成为AI智能体主要交互界面的趋势，以及超低延迟语音模型作为智能体接口层的商业价值。Gradium以1亿美元种子轮融资获得Nvidia参投，验证信号包括：已签约雷诺等大型企业客户，团队来自Google Brain、DeepMind等顶级AI研究机构，以及从Kyutai实验室分拆的技术背景。但判断的证据边界受限于来源未披露估值、收入数据或具体客户合同规模，且Nvidia未发表公开投资声明。",
+          "evidence_signals": [
+            "已签约法国汽车制造商雷诺作为客户",
+            "创始团队来自Google Brain、DeepMind、Facebook等顶级AI研究机构",
+            "从法国AI实验室Kyutai分拆，具备研究背景",
+            "Nvidia作为战略投资方参投"
+          ],
+          "risks": [
+            "语音AI市场竞争激烈，面临ElevenLabs（估值110亿美元）和Google、OpenAI、Meta等大型模型制造商的竞争压力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1099,147 +1260,77 @@
           "target_kind": "product",
           "research_name": "超低延迟语音AI模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium is working on audio models that deliver voice at scale with ultra-low latency, meaning AI voices that respond almost instantly, without that awkward pause that often creeps into AI agent conversations."
-            },
-            {
-              "source_id": "FISRC-e48b46a7d8a544df",
-              "quote": "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Neil Zeghidour",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Both Kyutai and Gradium were co-founded by Neil Zeghidour, a researcher who previously worked at Google Brain, DeepMind, and Facebook."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium, a Paris-based startup that offers voice AI models, reopened its seed round to new investors, including Nvidia, and has now raised $100 million total for the round"
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "FirstMark Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Eurazeo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "DST Global Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Eric Schmidt",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Xavier Niel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Renault",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e48b46a7d8a544df",
-              "quote": "Gradium says it has already signed customers including Renault, giving it an early commercial foothold in a crowded market."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ElevenLabs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9af7e6a4d7b3d5e7",
-              "quote": "The company has plenty of competition, though, from other voice AI startups like ElevenLabs, valued at $11 billion in February"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e48b46a7d8a544df",
-              "quote": "A voice model that responds quickly enough to feel natural can become an interface layer for agents, not just a text to speech feature."
-            }
-          ]
+          "canonical_name": "Google"
         }
       ],
       "funding_history": [
@@ -1444,10 +1535,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:48:47.183Z"
+      "published_at": "2026-07-26T14:48:47.183Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "超低延迟语音AI模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Neil Zeghidour"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e41fc65eb014893f"
+      ],
+      "aggregation": {
+        "key": "EN-8d4321d936320802|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

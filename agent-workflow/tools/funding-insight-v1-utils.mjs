@@ -3,12 +3,406 @@ import fs from "node:fs";
 import path from "node:path";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
-export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.0";
-export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.0";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.1";
+export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.1";
+export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.1";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.2";
+export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 
 export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
+}
+
+const FUNDING_ROUND_LABELS = {
+  pre_seed: "预种子轮",
+  seed: "种子轮",
+  angel: "天使轮",
+  early_stage: "早期融资",
+  first_external: "首次外部融资",
+  growth: "成长轮",
+  pre_ipo: "Pre-IPO",
+  ipo: "IPO",
+  follow_on: "后续发行",
+  strategic: "战略融资",
+  debt: "债务融资",
+  infrastructure: "基础设施融资",
+  government: "政府及产业融资",
+  undisclosed: "轮次未披露",
+  multi_round: "多轮融资",
+  other: "其他融资",
+};
+
+function roundSeriesToken(value = "") {
+  const text = clean(value).normalize("NFKC").toLowerCase();
+  const match = text.match(
+    /(?:(?:pre[-\s]*)?series\s*([a-g])(?:[-\s]?(\d+))?|(?:pre[-\s]*)?([a-g])(?:[-\s]?(\d+))?\s*轮)/iu,
+  );
+  if (!match) return null;
+  const letter = (match[1] || match[3]).toLowerCase();
+  const suffix = match[2] || match[4] || "";
+  const isPre = /\bpre[-\s]*(?:series\s*)?[a-g]\b|pre[-\s]*[a-g]轮/iu.test(text);
+  const isExtension = /extension|extend|扩展|延伸|追加|加注/iu.test(text);
+  return {
+    code: `${isPre ? "pre_" : ""}series_${letter}${suffix}${isExtension ? "_extension" : ""}`,
+    label: `${isPre ? "Pre-" : ""}${letter.toUpperCase()}${suffix}轮${isExtension ? "扩展" : ""}`,
+  };
+}
+
+export function normalizeFundingRound(value = "") {
+  const original = clean(value);
+  const text = original.normalize("NFKC").toLowerCase();
+  const compact = text.replace(/[\s_]+/gu, "").replace(/[－—–]/gu, "-");
+  const signals = new Set();
+  if (/pre[-\s]?seed|种子轮前|预种子/iu.test(text)) signals.add("pre_seed");
+  if (/(?:^|[^a-z])seed(?:[^a-z]|$)|种子轮|种子扩展/iu.test(text) && !signals.has("pre_seed")) signals.add("seed");
+  if (/天使/iu.test(text)) signals.add("angel");
+  const seriesMatches = [...text.matchAll(
+    /(?:(?:pre[-\s]*)?series\s*[a-g](?:[-\s]?\d+)?|(?:pre[-\s]*)?[a-g](?:[-\s]?\d+)?\s*轮)/giu,
+  )];
+  for (const match of seriesMatches) {
+    const token = roundSeriesToken(match[0]);
+    if (token) {
+      const code = seriesMatches.length === 1 && /extension|extend|扩展|延伸|追加|加注/iu.test(text)
+        ? `${token.code}_extension`
+        : token.code;
+      signals.add(code);
+    }
+  }
+  const materialRounds = [...signals].filter((code) => code !== "early_stage");
+  if (
+    materialRounds.length > 1
+    || /多轮|(?:seed|种子).{0,12}(?:and|\+|、|和|及).{0,12}(?:series|[a-g]\s*轮)/iu.test(text)
+  ) {
+    return { code: "multi_round", label: FUNDING_ROUND_LABELS.multi_round, original };
+  }
+  if (materialRounds.length === 1) {
+    const code = materialRounds[0];
+    const series = code.match(/^(pre_)?series_([a-g])(\d+)?(_extension)?$/u);
+    const label = series
+      ? `${series[1] ? "Pre-" : ""}${series[2].toUpperCase()}${series[3] || ""}轮${series[4] ? "扩展" : ""}`
+      : FUNDING_ROUND_LABELS[code];
+    return { code, label, original };
+  }
+  let code = "other";
+  if (/首次外部|首轮外部|firstexternal/iu.test(compact)) code = "first_external";
+  else if (/early[-\s]?stage|早期/iu.test(text)) code = "early_stage";
+  else if (/growth|成长/iu.test(text)) code = "growth";
+  else if (/pre[-\s]?ipo/iu.test(text)) code = "pre_ipo";
+  else if (/\bipo\b/iu.test(text)) code = "ipo";
+  else if (/follow[-\s]?on|后续发行/iu.test(text)) code = "follow_on";
+  else if (/战略/iu.test(text)) code = "strategic";
+  else if (/债务/iu.test(text)) code = "debt";
+  else if (/基础设施/iu.test(text)) code = "infrastructure";
+  else if (/政府资金|政府及企业|产业投资/iu.test(text)) code = "government";
+  else if (!original || /未披露|新一轮|latestfundinground|融资轮次/iu.test(compact)) code = "undisclosed";
+  return { code, label: FUNDING_ROUND_LABELS[code], original };
+}
+
+export function partitionRoundInvestors(investors = [], roundValue = "") {
+  const targetRound = typeof roundValue === "object" && roundValue?.code
+    ? roundValue
+    : normalizeFundingRound(roundValue);
+  const current = [];
+  const other = [];
+  for (const investor of Array.isArray(investors) ? investors : []) {
+    const role = clean(investor?.role);
+    const roleRound = normalizeFundingRound(role);
+    const explicitCurrent = /本轮|此轮|该轮|current\s+round|this\s+round/iu.test(role);
+    const genericCurrentRole = /领投|参投|联合投资|共同投资|co-?lead|led\s+the\s+round|participat/iu.test(role);
+    const explicitOther = /既有|原有|历史|此前|上一轮|previous|existing|prior/iu.test(role);
+    const specifiedRound = !["other", "undisclosed"].includes(roleRound.code);
+    const matchesTarget = specifiedRound && (
+      targetRound.code === "multi_round"
+      || roleRound.code === targetRound.code
+    );
+    if (
+      explicitCurrent
+      || matchesTarget
+      || (!explicitOther && !specifiedRound && genericCurrentRole)
+    ) {
+      current.push(investor);
+      continue;
+    }
+    other.push({
+      ...investor,
+      round_context: specifiedRound
+        ? roleRound
+        : { code: "undisclosed", label: FUNDING_ROUND_LABELS.undisclosed, original: role },
+      classification_reason: explicitOther
+        ? "historical_role"
+        : specifiedRound
+          ? "different_round"
+          : "round_unspecified",
+    });
+  }
+  return { current, other };
+}
+
+function entityCoverage(items = []) {
+  const unresolved = items.filter((item) => !item.entity_id).map((item) => clean(item.name)).filter(Boolean);
+  return {
+    linked: items.length - unresolved.length,
+    total: items.length,
+    unresolved_names: [...new Set(unresolved)].sort(),
+  };
+}
+
+function entityItemsById(entityIndex = {}) {
+  return new Map([
+    ...(entityIndex.companies || []),
+    ...(entityIndex.products || []),
+    ...(entityIndex.people || []),
+  ].map((entity) => [entity.id, entity]));
+}
+
+export function acceptedFundingEntityDecisions(entityIndex = {}, decisionFile = {}) {
+  const byId = entityItemsById(entityIndex);
+  const accepted = new Map();
+  for (const decision of decisionFile.decisions || []) {
+    if (decision.status !== "accepted") continue;
+    const entity = byId.get(decision.canonical_entity_id);
+    const expectedType = decision.candidate_kind === "product" ? "产品/服务" : "人物";
+    if (!entity || entity.type !== expectedType) continue;
+    accepted.set(`${decision.candidate_kind}|${normalizedName(decision.research_name)}`, entity);
+  }
+  return accepted;
+}
+
+function resolvedFundingEntity(name, kind, resolver, acceptedDecisions) {
+  const allowed = kind === "product" ? ["产品/服务"] : kind === "person" ? ["人物"] : ["公司/机构"];
+  return resolver(name, allowed)
+    || acceptedDecisions.get(`${kind}|${normalizedName(name)}`)
+    || null;
+}
+
+function resolvedResearchItem(item, kind, resolver, acceptedDecisions) {
+  const resolved = resolvedFundingEntity(item?.name, kind, resolver, acceptedDecisions);
+  return {
+    ...item,
+    entity_id: resolved?.id || null,
+  };
+}
+
+function fundingEntityLink(kind, relationType, item, resolver, acceptedDecisions) {
+  const resolved = resolvedFundingEntity(item?.name, kind, resolver, acceptedDecisions);
+  return {
+    relation_type: relationType,
+    target_kind: kind,
+    research_name: clean(item?.name),
+    canonical_entity_id: resolved?.id || null,
+    canonical_name: resolved?.name || "",
+  };
+}
+
+export function evidenceQuoteHash(quote = "") {
+  return crypto.createHash("sha256").update(clean(quote)).digest("hex");
+}
+
+export function attachFundingEvidenceProofs(inputCard = {}) {
+  const card = structuredClone(inputCard);
+  const sourceHashById = new Map((card.research_sources || [])
+    .map((source) => [source.source_id, clean(source.content_hash).toLowerCase()]));
+  const visit = (value) => {
+    if (!value || typeof value !== "object") return;
+    if (Array.isArray(value)) {
+      for (const item of value) visit(item);
+      return;
+    }
+    if (value.source_id && value.quote) {
+      value.source_content_hash = sourceHashById.get(value.source_id) || "";
+      value.quote_hash = evidenceQuoteHash(value.quote);
+    }
+    for (const item of Object.values(value)) visit(item);
+  };
+  visit(card);
+  return card;
+}
+
+export function fundingEvidenceProofProblems(card = {}) {
+  const problems = [];
+  const sourceHashById = new Map((card.research_sources || [])
+    .map((source) => [source.source_id, clean(source.content_hash).toLowerCase()]));
+  const visit = (value, location = "card") => {
+    if (!value || typeof value !== "object") return;
+    if (Array.isArray(value)) {
+      value.forEach((item, index) => visit(item, `${location}[${index}]`));
+      return;
+    }
+    if (value.source_id && value.quote) {
+      const expectedSourceHash = sourceHashById.get(value.source_id);
+      if (!expectedSourceHash) problems.push(`${location}:evidence_source_hash_missing`);
+      else if (clean(value.source_content_hash).toLowerCase() !== expectedSourceHash) {
+        problems.push(`${location}:evidence_source_hash_mismatch`);
+      }
+      if (clean(value.quote_hash).toLowerCase() !== evidenceQuoteHash(value.quote)) {
+        problems.push(`${location}:evidence_quote_hash_mismatch`);
+      }
+    }
+    for (const [key, item] of Object.entries(value)) visit(item, `${location}.${key}`);
+  };
+  visit(card);
+  return [...new Set(problems)];
+}
+
+export function normalizeFundingInsightCard(inputCard = {}, entityIndex = {}, decisionFile = {}) {
+  const card = structuredClone(inputCard);
+  const resolve = entityResolver(entityIndex);
+  const acceptedDecisions = acceptedFundingEntityDecisions(entityIndex, decisionFile);
+  const storedOriginalRound = clean(card.financing?.round_original);
+  const storedRound = clean(card.financing?.round);
+  const normalizedOriginalRound = normalizeFundingRound(storedOriginalRound);
+  const round = normalizeFundingRound(
+    storedOriginalRound && storedRound === normalizedOriginalRound.label
+      ? storedOriginalRound
+      : storedRound || storedOriginalRound,
+  );
+  const partitioned = partitionRoundInvestors(card.financing?.investors || [], round);
+  const founders = (card.company?.founders || []).map(
+    (item) => resolvedResearchItem(item, "person", resolve, acceptedDecisions),
+  );
+  const products = (card.products || []).map(
+    (item) => resolvedResearchItem(item, "product", resolve, acceptedDecisions),
+  );
+  const currentInvestors = partitioned.current.map(
+    (item) => resolvedResearchItem(item, "organization", resolve, acceptedDecisions),
+  );
+  const otherInvestors = [
+    ...(card.financing?.other_round_investors || []),
+    ...partitioned.other,
+  ].map((item) => resolvedResearchItem(item, "organization", resolve, acceptedDecisions));
+  const customers = (card.customers || []).map(
+    (item) => resolvedResearchItem(item, "organization", resolve, acceptedDecisions),
+  );
+  const comparisons = (card.comparisons || []).map(
+    (item) => resolvedResearchItem(item, "organization", resolve, acceptedDecisions),
+  );
+  const currentInvestorNames = new Set(currentInvestors.map((item) => normalizedName(item.name)));
+  const investmentRationale = (card.analysis?.investment_rationale || [])
+    .filter((item) => currentInvestorNames.has(normalizedName(item.institution)));
+  card.company = {
+    ...(card.company || {}),
+    founders,
+  };
+  card.financing = {
+    ...(card.financing || {}),
+    round: round.label,
+    round_code: round.code,
+    round_original: round.original,
+    investors: currentInvestors,
+    other_round_investors: otherInvestors,
+    disclosures: card.financing?.disclosures?.length
+      ? card.financing.disclosures
+      : [{
+          event_id: card.triggered_by_event_id,
+          round_original: round.original,
+          amount: card.financing?.amount || "",
+          announced_at: card.financing?.announced_at || "",
+          evidence_refs: card.financing?.evidence_refs || [],
+        }],
+  };
+  card.products = products;
+  card.customers = customers;
+  card.comparisons = comparisons;
+  card.customer_research = {
+    status: customers.length ? "verified_customers_found" : "no_verified_customer_found",
+    verified_customer_count: customers.length,
+    searched_source_count: (card.research_sources || []).length,
+  };
+  card.analysis = {
+    ...(card.analysis || {}),
+    investment_rationale: investmentRationale,
+    investment_thesis: {
+      statement: clean(card.analysis?.capital_judgment),
+      evidence_signals: card.analysis?.validated_signals || [],
+      risks: card.analysis?.risks || [],
+      institutional_rationale_status: investmentRationale.length ? "disclosed" : "not_disclosed",
+    },
+  };
+  card.entity_link_coverage = {
+    products: entityCoverage(products),
+    founders: entityCoverage(founders),
+  };
+  card.entity_links = [
+    ...products.map((item) => fundingEntityLink("product", "product_of", item, resolve, acceptedDecisions)),
+    ...founders.map((item) => fundingEntityLink("person", "founded_by", item, resolve, acceptedDecisions)),
+    ...currentInvestors.map((item) => fundingEntityLink("organization", "invested_in_round", item, resolve, acceptedDecisions)),
+    ...otherInvestors.map((item) => fundingEntityLink("organization", "invested_in_other_round", item, resolve, acceptedDecisions)),
+    ...customers.map((item) => fundingEntityLink("organization", "public_customer_case", item, resolve, acceptedDecisions)),
+    ...comparisons.map((item) => fundingEntityLink("organization", "compared_with", item, resolve, acceptedDecisions)),
+  ];
+  card.schema_version = FUNDING_INSIGHT_VERSION;
+  const existingSourceEventIds = card.source_event_ids || [];
+  card.source_event_ids = card.aggregation?.event_count > 1 || existingSourceEventIds.length > 1
+    ? [...new Set([card.triggered_by_event_id, ...existingSourceEventIds].filter(Boolean))]
+    : [card.triggered_by_event_id].filter(Boolean);
+  card.aggregation = card.aggregation || {
+    key: `${card.company?.entity_id || normalizedName(card.company?.name)}|${round.code}`,
+    event_count: card.source_event_ids.length,
+    strategy: "company_and_normalized_round",
+  };
+  card.auto_publish_gate = {
+    ...(card.auto_publish_gate || {}),
+    gate_version: FUNDING_INSIGHT_GATE_VERSION,
+  };
+  return attachFundingEvidenceProofs(card);
+}
+
+export function buildFundingEntityReviewQueue(cards = []) {
+  const candidates = new Map();
+  for (const card of cards) {
+    for (const [kind, items] of [
+      ["product", card.products || []],
+      ["person", card.company?.founders || []],
+    ]) {
+      for (const item of items) {
+        if (item.entity_id || !clean(item.name)) continue;
+        const key = `${kind}|${normalizedName(item.name)}`;
+        if (!candidates.has(key)) {
+          candidates.set(key, {
+            candidate_id: stableId("FIER", key),
+            candidate_kind: kind,
+            research_name: clean(item.name),
+            status: "pending_canonical_review",
+            reason: "canonical_exact_match_missing",
+            company_entity_ids: [],
+            funding_insight_ids: [],
+            source_event_ids: [],
+            evidence_refs: [],
+          });
+        }
+        const candidate = candidates.get(key);
+        candidate.company_entity_ids.push(card.company?.entity_id);
+        candidate.funding_insight_ids.push(card.funding_insight_id);
+        candidate.source_event_ids.push(...(card.source_event_ids || [card.triggered_by_event_id]));
+        candidate.evidence_refs.push(...(item.evidence_refs || []));
+      }
+    }
+  }
+  const rows = [...candidates.values()]
+    .map((candidate) => ({
+      ...candidate,
+      company_entity_ids: [...new Set(candidate.company_entity_ids.filter(Boolean))].sort(),
+      funding_insight_ids: [...new Set(candidate.funding_insight_ids.filter(Boolean))].sort(),
+      source_event_ids: [...new Set(candidate.source_event_ids.filter(Boolean))].sort(),
+      evidence_refs: [...new Map(candidate.evidence_refs.map((item) => [
+        `${item.source_id}|${item.quote}`,
+        item,
+      ])).values()].slice(0, 3),
+    }))
+    .sort((left, right) => (
+      left.candidate_kind.localeCompare(right.candidate_kind)
+      || left.research_name.localeCompare(right.research_name)
+    ));
+  return {
+    meta: {
+      schema_version: "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
+      funding_insight_version: FUNDING_INSIGHT_VERSION,
+      candidate_count: rows.length,
+      product_candidates: rows.filter((item) => item.candidate_kind === "product").length,
+      person_candidates: rows.filter((item) => item.candidate_kind === "person").length,
+      rule: "Application evidence never mutates canonical V4 entities automatically.",
+    },
+    candidates: rows,
+  };
 }
 
 export function stableId(prefix, value) {
@@ -62,7 +456,13 @@ export function loadDailyBundle(root, date) {
 }
 
 function normalizedName(value = "") {
-  return clean(value).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+  return clean(value)
+    .replace(/[®™]/gu, "")
+    .normalize("NFKC")
+    .replace(/\((?:co-?founder|founder|chief executive officer|ceo|cto|cpo|president)\)$/iu, "")
+    .replace(/（(?:联合创始人|创始人|首席执行官|首席技术官|CEO|CTO|CPO|总裁)）$/iu, "")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
 function containsChinese(value = "") {
@@ -221,6 +621,9 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
     sanitized.financing.investors = (sanitized.financing.investors || [])
       .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
       .filter((item) => clean(item.name) && item.evidence_refs.length);
+    sanitized.financing.other_round_investors = (sanitized.financing.other_round_investors || [])
+      .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+      .filter((item) => clean(item.name) && item.evidence_refs.length);
   }
   sanitized.products = (sanitized.products || [])
     .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
@@ -324,6 +727,20 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
       if (!clean(investor?.role) || !containsChinese(investor.role)) problems.push(`investor_${index + 1}_role_not_chinese`);
       problems.push(...evidenceProblems(investor?.evidence_refs, sourceById, `investor_${index + 1}_evidence`));
     }
+    if (!partitionRoundInvestors(payload.financing.investors, payload.financing.round).current.length) {
+      problems.push("current_round_investors_missing");
+    }
+  }
+  for (const [index, investor] of (payload?.financing?.other_round_investors || []).entries()) {
+    if (!clean(investor?.name)) problems.push(`other_round_investor_${index + 1}_name_missing`);
+    if (!clean(investor?.role) || !containsChinese(investor.role)) {
+      problems.push(`other_round_investor_${index + 1}_role_not_chinese`);
+    }
+    problems.push(...evidenceProblems(
+      investor?.evidence_refs,
+      sourceById,
+      `other_round_investor_${index + 1}_evidence`,
+    ));
   }
   if (!Array.isArray(payload?.products) || !payload.products.length) {
     problems.push("products_missing");
@@ -392,11 +809,20 @@ export function fundingInsightProblems(card = {}) {
   if (!card.company?.entity_id || !card.company?.name) problems.push("company_entity_missing");
   if (!containsChinese(card.company?.summary)) problems.push("company_summary_not_chinese");
   if (!card.financing?.round || !card.financing?.amount) problems.push("financing_incomplete");
+  const round = normalizeFundingRound(card.financing?.round_original || card.financing?.round);
+  if (card.financing?.round_code !== round.code || card.financing?.round !== round.label) {
+    problems.push("funding_round_not_normalized");
+  }
   if (!Array.isArray(card.financing?.investors) || !card.financing.investors.length) problems.push("investors_missing");
   if ((card.financing?.investors || []).some((investor) => !investor.name || !investor.evidence_refs?.length)) {
     problems.push("investor_detail_incomplete");
   }
   if ((card.financing?.investors || []).some((investor) => !containsChinese(investor.role))) problems.push("investor_role_not_chinese");
+  if (partitionRoundInvestors(card.financing?.investors || [], round).other.length) {
+    problems.push("historical_investor_in_current_round");
+  }
+  if (!Array.isArray(card.financing?.other_round_investors)) problems.push("other_round_investors_missing");
+  if (!Array.isArray(card.financing?.disclosures) || !card.financing.disclosures.length) problems.push("round_disclosures_missing");
   if (!Array.isArray(card.products) || !card.products.length) problems.push("products_missing");
   if ((card.products || []).some((product) => !product.name || !product.evidence_refs?.length)) problems.push("product_detail_incomplete");
   if ((card.products || []).some((product) => !containsChinese(product.description))) problems.push("product_description_not_chinese");
@@ -409,8 +835,36 @@ export function fundingInsightProblems(card = {}) {
   if ((card.analysis?.investment_rationale || []).some((item) => (
     !item.institution || !item.rationale || !item.quote || !item.evidence_refs?.length
   ))) problems.push("investment_rationale_incomplete");
+  if (
+    !card.analysis?.investment_thesis?.statement
+    || !Array.isArray(card.analysis?.investment_thesis?.evidence_signals)
+    || !Array.isArray(card.analysis?.investment_thesis?.risks)
+    || !["disclosed", "not_disclosed"].includes(card.analysis?.investment_thesis?.institutional_rationale_status)
+  ) problems.push("investment_thesis_incomplete");
+  const customerStatus = card.customers?.length ? "verified_customers_found" : "no_verified_customer_found";
+  if (
+    card.customer_research?.status !== customerStatus
+    || card.customer_research?.verified_customer_count !== (card.customers || []).length
+  ) problems.push("customer_research_status_invalid");
+  for (const key of ["products", "founders"]) {
+    const coverage = card.entity_link_coverage?.[key];
+    if (
+      !coverage
+      || !Number.isInteger(coverage.linked)
+      || !Number.isInteger(coverage.total)
+      || !Array.isArray(coverage.unresolved_names)
+    ) problems.push(`${key}_entity_link_coverage_invalid`);
+  }
+  if (!Array.isArray(card.source_event_ids) || !card.source_event_ids.includes(card.triggered_by_event_id)) {
+    problems.push("source_event_ids_invalid");
+  }
+  if (card.aggregation?.strategy !== "company_and_normalized_round") problems.push("aggregation_contract_invalid");
   if ((card.analysis?.risks || []).some((risk) => !containsChinese(risk))) problems.push("risks_not_chinese");
   if (card.publication_status !== "auto_published") problems.push("publication_status_invalid");
-  if (!card.auto_publish_gate?.passed || card.auto_publish_gate?.problems?.length) problems.push("auto_publish_gate_invalid");
+  if (
+    !card.auto_publish_gate?.passed
+    || card.auto_publish_gate?.problems?.length
+    || card.auto_publish_gate?.gate_version !== FUNDING_INSIGHT_GATE_VERSION
+  ) problems.push("auto_publish_gate_invalid");
   return [...new Set(problems)];
 }

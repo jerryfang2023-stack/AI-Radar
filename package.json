@@ -1,6 +1,6 @@
 {
   "name": "01-wavesight",
-  "version": "4.5.0",
+  "version": "4.5.1",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -71,7 +71,9 @@
     "generate:funding-insights": "node agent-workflow/tools/generate-funding-insights-deepseek.mjs",
     "inspect:funding-insights": "node agent-workflow/tools/inspect-funding-insight-work.mjs",
     "backfill:funding-insights": "node agent-workflow/tools/backfill-funding-insights-history.mjs",
+    "migrate:funding-insights-v1.1": "node agent-workflow/tools/migrate-funding-insights-v1-1.mjs",
     "assert:funding-insights": "node agent-workflow/tools/assert-funding-insights-v1.mjs",
+    "assert:funding-insights:full": "node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true",
     "build:funding-insights-site": "node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs",
     "build:trend-radar-site": "node 01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs",
     "assert:trend-radar": "node agent-workflow/tools/assert-trend-radar-v1.mjs",

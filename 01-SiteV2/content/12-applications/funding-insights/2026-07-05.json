@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-05",
     "generated_at": "2026-07-26T15:16:12.042Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 2,
       "auto_published": 2,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-34ad46762c245ae0",
       "triggered_by_event_id": "EV-78a11d309c3d4e97",
       "as_of_date": "2026-07-05",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-52917ea3c077fbf0",
-                "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown."
+                "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown.",
+                "source_content_hash": "574df0fdc225fe9e",
+                "quote_hash": "29a30ad49b2935d7e248ae343220413e005eeb9037fd252bbfb9e699b5d6d251"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8aac4802151d3b7d",
-                "quote": "Dario Amodei, Anthropic's CEO, and his sister, Daniela Amodei, its president, founded the company as a startup that would build AI with guardrails."
+                "quote": "Dario Amodei, Anthropic's CEO, and his sister, Daniela Amodei, its president, founded the company as a startup that would build AI with guardrails.",
+                "source_content_hash": "a1b8a77e1ffdaf42",
+                "quote_hash": "602f9f3b2fdecceb5bbc12dab54d50aa7cf4ace5bf15acc94e077fe199defda3"
               }
             ],
             "entity_id": null
@@ -60,16 +65,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-52917ea3c077fbf0",
-            "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown."
+            "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown.",
+            "source_content_hash": "574df0fdc225fe9e",
+            "quote_hash": "29a30ad49b2935d7e248ae343220413e005eeb9037fd252bbfb9e699b5d6d251"
           },
           {
             "source_id": "FISRC-e3ed6c4a27cf5860",
-            "quote": "Founded in 2021 by a team of seven with a shared vision for building AI that’s both safer and more capable"
+            "quote": "Founded in 2021 by a team of seven with a shared vision for building AI that’s both safer and more capable",
+            "source_content_hash": "ea5b244eff64d20a",
+            "quote_hash": "6e19744a7ff98052bb129a3ba5f2bc7e7ac8fbc247a38743fe9dafd865df2d67"
           }
         ]
       },
       "financing": {
-        "round": "Series E",
+        "round": "E轮",
         "amount": "$3.5B",
         "total_raised": "$14.8B",
         "announced_at": "2025-03-03",
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e3ed6c4a27cf5860",
-                "quote": "Lightspeed is deepening its commitment to this vision, by leading Anthropic’s $3.5 Billion Series E as the largest investor in the round."
+                "quote": "Lightspeed is deepening its commitment to this vision, by leading Anthropic’s $3.5 Billion Series E as the largest investor in the round.",
+                "source_content_hash": "ea5b244eff64d20a",
+                "quote_hash": "c01981bb233d77cee785e49b957dce1c7b7b34470f275d847b25dac55c993561"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ef9fd29dc050f7ca",
-                "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
+                "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers.",
+                "source_content_hash": "3484405d65f54368",
+                "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ef9fd29dc050f7ca",
-                "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
+                "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers.",
+                "source_content_hash": "3484405d65f54368",
+                "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-52917ea3c077fbf0",
-                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+                "source_content_hash": "574df0fdc225fe9e",
+                "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
               }
             ],
             "entity_id": null
@@ -124,7 +141,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-52917ea3c077fbf0",
-                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+                "source_content_hash": "574df0fdc225fe9e",
+                "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
               }
             ],
             "entity_id": null
@@ -135,7 +154,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-52917ea3c077fbf0",
-                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+                "source_content_hash": "574df0fdc225fe9e",
+                "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
               }
             ],
             "entity_id": null
@@ -146,7 +167,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-52917ea3c077fbf0",
-                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+                "source_content_hash": "574df0fdc225fe9e",
+                "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
               }
             ],
             "entity_id": null
@@ -157,7 +180,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8aac4802151d3b7d",
-                "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
+                "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures.",
+                "source_content_hash": "a1b8a77e1ffdaf42",
+                "quote_hash": "0f0cafc6048be35da181c53991be61aed515418d1800beb00e8ebb9925997b49"
               }
             ],
             "entity_id": null
@@ -168,21 +193,49 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8aac4802151d3b7d",
-                "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
+                "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures.",
+                "source_content_hash": "a1b8a77e1ffdaf42",
+                "quote_hash": "0f0cafc6048be35da181c53991be61aed515418d1800beb00e8ebb9925997b49"
               }
             ],
             "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ef9fd29dc050f7ca",
+            "quote": "Anthropic PBC today announced that it has closed a late-stage $3.5 billion funding round at a $61.5 billion valuation.",
+            "source_content_hash": "3484405d65f54368",
+            "quote_hash": "0dba30fbe657eb300598d33fe5c579465aa77491ff1ba2e020a0fd02a13f80a5"
           },
+          {
+            "source_id": "FISRC-8aac4802151d3b7d",
+            "quote": "Since its founding in 2021, Anthropic has raised more than $14.8 billion from venture firms like Menlo Ventures and tech giants like Amazon, Google and Salesforce.",
+            "source_content_hash": "a1b8a77e1ffdaf42",
+            "quote_hash": "160547d8828c8b9971518f023b2eeb5140070ce81ef08adff83f4927e85a8bad"
+          }
+        ],
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "other_round_investors": [
           {
             "name": "Amazon",
             "role": "既有投资方",
             "evidence_refs": [
               {
                 "source_id": "FISRC-52917ea3c077fbf0",
-                "quote": "Amazon has also doubled down on its bet, announcing a $4 billion investment in Anthropic in November, bringing its total funding commitment to $8 billion."
+                "quote": "Amazon has also doubled down on its bet, announcing a $4 billion investment in Anthropic in November, bringing its total funding commitment to $8 billion.",
+                "source_content_hash": "574df0fdc225fe9e",
+                "quote_hash": "d80cb5ad1b5c00ed6444a5e1e4d7454b23b4d0e906de4d9d8275f1be5ec53c62"
               }
             ],
-            "entity_id": "EN-cbc62794911ff31b"
+            "entity_id": "EN-cbc62794911ff31b",
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
           },
           {
             "name": "Google",
@@ -190,20 +243,40 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ef9fd29dc050f7ca",
-                "quote": "The Series E deal comes less than two months after the company raised $1 billion from Google LLC."
+                "quote": "The Series E deal comes less than two months after the company raised $1 billion from Google LLC.",
+                "source_content_hash": "3484405d65f54368",
+                "quote_hash": "1e13409ae0b41dc474d131020206f63c8afd4bc0e232d9ac8416b5cb48f25ee8"
               }
             ],
-            "entity_id": "EN-bbdefa2950f49882"
+            "entity_id": "EN-bbdefa2950f49882",
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
           }
         ],
-        "evidence_refs": [
+        "disclosures": [
           {
-            "source_id": "FISRC-ef9fd29dc050f7ca",
-            "quote": "Anthropic PBC today announced that it has closed a late-stage $3.5 billion funding round at a $61.5 billion valuation."
-          },
-          {
-            "source_id": "FISRC-8aac4802151d3b7d",
-            "quote": "Since its founding in 2021, Anthropic has raised more than $14.8 billion from venture firms like Menlo Ventures and tech giants like Amazon, Google and Salesforce."
+            "event_id": "EV-78a11d309c3d4e97",
+            "round_original": "Series E",
+            "amount": "$3.5B",
+            "announced_at": "2025-03-03",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ef9fd29dc050f7ca",
+                "quote": "Anthropic PBC today announced that it has closed a late-stage $3.5 billion funding round at a $61.5 billion valuation.",
+                "source_content_hash": "3484405d65f54368",
+                "quote_hash": "0dba30fbe657eb300598d33fe5c579465aa77491ff1ba2e020a0fd02a13f80a5"
+              },
+              {
+                "source_id": "FISRC-8aac4802151d3b7d",
+                "quote": "Since its founding in 2021, Anthropic has raised more than $14.8 billion from venture firms like Menlo Ventures and tech giants like Amazon, Google and Salesforce.",
+                "source_content_hash": "a1b8a77e1ffdaf42",
+                "quote_hash": "160547d8828c8b9971518f023b2eeb5140070ce81ef08adff83f4927e85a8bad"
+              }
+            ]
           }
         ]
       },
@@ -220,11 +293,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e3ed6c4a27cf5860",
-              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
+              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities.",
+              "source_content_hash": "ea5b244eff64d20a",
+              "quote_hash": "da9f70cfb3b79615c25a664efd0a601c714753fecd161c867838ee64cfa6538d"
             },
             {
               "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "One of Claude 3.7 Sonnet’s flagship features is that developers can customize the amount of time it spends on a task."
+              "quote": "One of Claude 3.7 Sonnet’s flagship features is that developers can customize the amount of time it spends on a task.",
+              "source_content_hash": "3484405d65f54368",
+              "quote_hash": "c6e36bfba091169e852ffa513192cdc5d6cc255f58438e792eabe8418cf8d748"
             }
           ],
           "entity_id": "EN-729324072d368379"
@@ -241,7 +318,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "Claude 3.7 Sonnet was introduced alongside a second new offering dubbed Claude Code. It’s described as an agentic coding tool. Anthropic says the software, which is embedded in a command line interface, can automate programming tasks that usually require more than 45 minutes of manual work."
+              "quote": "Claude 3.7 Sonnet was introduced alongside a second new offering dubbed Claude Code. It’s described as an agentic coding tool. Anthropic says the software, which is embedded in a command line interface, can automate programming tasks that usually require more than 45 minutes of manual work.",
+              "source_content_hash": "3484405d65f54368",
+              "quote_hash": "9038a671c1980fa5aa79a96c88be90efb7233961dbedaba0eeba454e94fd6321"
             }
           ],
           "entity_id": "EN-cb4754c48f8023d0"
@@ -259,13 +338,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8aac4802151d3b7d",
-              "quote": "OpenAI is set to complete a $40 billion fundraising deal that would value the company at $300 billion, nearly double its valuation from just five months ago."
+              "quote": "OpenAI is set to complete a $40 billion fundraising deal that would value the company at $300 billion, nearly double its valuation from just five months ago.",
+              "source_content_hash": "a1b8a77e1ffdaf42",
+              "quote_hash": "53ce679a708ba44f09e3817b3097cd11d8a86e94b075e144930973d8c2bc6e07"
             },
             {
               "source_id": "FISRC-e3ed6c4a27cf5860",
-              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
+              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities.",
+              "source_content_hash": "ea5b244eff64d20a",
+              "quote_hash": "da9f70cfb3b79615c25a664efd0a601c714753fecd161c867838ee64cfa6538d"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "Google",
@@ -277,13 +361,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e3ed6c4a27cf5860",
-              "quote": "Announced major strategic partnerships with Google and AWS that surface those capabilities to millions of businesses"
+              "quote": "Announced major strategic partnerships with Google and AWS that surface those capabilities to millions of businesses",
+              "source_content_hash": "ea5b244eff64d20a",
+              "quote_hash": "d48a084fd1449df2d5140212bcce6ada1b88475fa5af5a984632ae6b043080f6"
             },
             {
               "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "The artificial intelligence startup, backed heavily by Amazon, was founded by former OpenAI executives. Since launching Claude in March 2023, the company has gained traction alongside OpenAI’s ChatGPT and Google’s Gemini as businesses look for AI-driven solutions across sales, marketing, and customer service."
+              "quote": "The artificial intelligence startup, backed heavily by Amazon, was founded by former OpenAI executives. Since launching Claude in March 2023, the company has gained traction alongside OpenAI’s ChatGPT and Google’s Gemini as businesses look for AI-driven solutions across sales, marketing, and customer service.",
+              "source_content_hash": "574df0fdc225fe9e",
+              "quote_hash": "c4d7677dad5803c065ff5d75ab86274f583a08f141d6ed4eb22df3d207cd56c2"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         }
       ],
       "metrics": [
@@ -294,7 +383,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "Anthropic PBC today announced that it has closed a late-stage $3.5 billion funding round at a $61.5 billion valuation."
+              "quote": "Anthropic PBC today announced that it has closed a late-stage $3.5 billion funding round at a $61.5 billion valuation.",
+              "source_content_hash": "3484405d65f54368",
+              "quote_hash": "0dba30fbe657eb300598d33fe5c579465aa77491ff1ba2e020a0fd02a13f80a5"
             }
           ]
         },
@@ -305,7 +396,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "That number has reportedly grown by 30% in the past two months."
+              "quote": "That number has reportedly grown by 30% in the past two months.",
+              "source_content_hash": "3484405d65f54368",
+              "quote_hash": "17789beca8076796cb289491e276d0bd050b033418fdeb223e90d85c8656c8d2"
             }
           ]
         },
@@ -316,7 +409,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8aac4802151d3b7d",
-              "quote": "Since its founding in 2021, Anthropic has raised more than $14.8 billion from venture firms like Menlo Ventures and tech giants like Amazon, Google and Salesforce."
+              "quote": "Since its founding in 2021, Anthropic has raised more than $14.8 billion from venture firms like Menlo Ventures and tech giants like Amazon, Google and Salesforce.",
+              "source_content_hash": "a1b8a77e1ffdaf42",
+              "quote_hash": "160547d8828c8b9971518f023b2eeb5140070ce81ef08adff83f4927e85a8bad"
             }
           ]
         }
@@ -333,7 +428,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e3ed6c4a27cf5860",
-                "quote": "Enterprises need products and solutions — not just a model. With intelligence, what works — what can scale across business functions and throughout companies — is only what’s safe and reliable. The ultimate value to be unlocked with AI is rooted in the trust people have in the model."
+                "quote": "Enterprises need products and solutions — not just a model. With intelligence, what works — what can scale across business functions and throughout companies — is only what’s safe and reliable. The ultimate value to be unlocked with AI is rooted in the trust people have in the model.",
+                "source_content_hash": "ea5b244eff64d20a",
+                "quote_hash": "6fcfdb9c459f7c2caf758e91d16660f354618eef1da927d7ab854941e744a6f7"
               }
             ]
           }
@@ -350,7 +447,21 @@
           "公司尚未盈利，且依赖巨额资本支出以维持算力扩张和研发，对持续融资能力要求极高。"
         ],
         "related_direction_id": "",
-        "sector": "人工智能基础模型"
+        "sector": "人工智能基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“前沿模型的智能密度与安全性”能否成为企业大规模采用 AI 的信任基石。本轮融资以 615 亿美元估值完成，较一年前的约 160 亿美元估值增长近 3 倍，验证的信号包括：年化收入突破 10 亿美元且近期增长 30%，Claude 3.7 Sonnet 作为业界首个混合智能模型发布，以及获得 AWS 和 Google 等云巨头的深度绑定与分销渠道。判断的证据边界在于，Anthropic 尚未盈利，其高估值依赖于持续的技术领先性和企业客户对安全、可解释 AI 的付费意愿，而这一意愿的强度和持久性仍有待市场进一步检验。",
+          "evidence_signals": [
+            "年化经常性收入在 2024 年底突破 10 亿美元，并在过去两个月增长 30%。",
+            "发布了业界首个通用混合智能模型 Claude 3.7 Sonnet，具备扩展思考能力。",
+            "与 Google 和 AWS 建立了重大战略合作伙伴关系，将能力触达数百万企业。",
+            "企业客户包括 Zoom、Snowflake、Pfizer、Thomson Reuters 和 Novo Nordisk 等大型公司。"
+          ],
+          "risks": [
+            "AI 模型能力可能迅速商品化，若前沿创新速度放缓，Anthropic 的高估值将面临巨大压力。",
+            "公司尚未盈利，且依赖巨额资本支出以维持算力扩张和研发，对持续融资能力要求极高。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -358,233 +469,119 @@
           "target_kind": "product",
           "research_name": "Claude",
           "canonical_entity_id": "EN-729324072d368379",
-          "canonical_name": "Claude",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e3ed6c4a27cf5860",
-              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
-            },
-            {
-              "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "One of Claude 3.7 Sonnet’s flagship features is that developers can customize the amount of time it spends on a task."
-            }
-          ]
+          "canonical_name": "Claude"
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Claude Code",
           "canonical_entity_id": "EN-cb4754c48f8023d0",
-          "canonical_name": "Claude Code",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "Claude 3.7 Sonnet was introduced alongside a second new offering dubbed Claude Code. It’s described as an agentic coding tool. Anthropic says the software, which is embedded in a command line interface, can automate programming tasks that usually require more than 45 minutes of manual work."
-            }
-          ]
+          "canonical_name": "Claude Code"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dario Amodei",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Daniela Amodei",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8aac4802151d3b7d",
-              "quote": "Dario Amodei, Anthropic's CEO, and his sister, Daniela Amodei, its president, founded the company as a startup that would build AI with guardrails."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e3ed6c4a27cf5860",
-              "quote": "Lightspeed is deepening its commitment to this vision, by leading Anthropic’s $3.5 Billion Series E as the largest investor in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cisco Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Salesforce Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fidelity Management & Research Co.",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "D1 Capital Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jane Street",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8aac4802151d3b7d",
-              "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8aac4802151d3b7d",
-              "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Amazon",
           "canonical_entity_id": "EN-cbc62794911ff31b",
-          "canonical_name": "Amazon",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "Amazon has also doubled down on its bet, announcing a $4 billion investment in Anthropic in November, bringing its total funding commitment to $8 billion."
-            }
-          ]
+          "canonical_name": "Amazon"
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ef9fd29dc050f7ca",
-              "quote": "The Series E deal comes less than two months after the company raised $1 billion from Google LLC."
-            }
-          ]
+          "canonical_name": "Google"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8aac4802151d3b7d",
-              "quote": "OpenAI is set to complete a $40 billion fundraising deal that would value the company at $300 billion, nearly double its valuation from just five months ago."
-            },
-            {
-              "source_id": "FISRC-e3ed6c4a27cf5860",
-              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e3ed6c4a27cf5860",
-              "quote": "Announced major strategic partnerships with Google and AWS that surface those capabilities to millions of businesses"
-            },
-            {
-              "source_id": "FISRC-52917ea3c077fbf0",
-              "quote": "The artificial intelligence startup, backed heavily by Amazon, was founded by former OpenAI executives. Since launching Claude in March 2023, the company has gained traction alongside OpenAI’s ChatGPT and Google’s Gemini as businesses look for AI-driven solutions across sales, marketing, and customer service."
-            }
-          ]
+          "canonical_name": "Google"
         }
       ],
       "funding_history": [
@@ -840,13 +837,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:45:44.724Z"
+      "published_at": "2026-07-26T14:45:44.724Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 2,
+          "total": 2,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Daniela Amodei",
+            "Dario Amodei"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-78a11d309c3d4e97"
+      ],
+      "aggregation": {
+        "key": "EN-c70eca6b0f88f44d|series_e",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-062db0d45e38151a",
       "triggered_by_event_id": "EV-0ade039d36e077ae",
       "as_of_date": "2026-07-05",
@@ -864,7 +889,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7791f3b0abf7244c",
-                "quote": "said Bar Winkler, CEO and Co-founder of Wonderful"
+                "quote": "said Bar Winkler, CEO and Co-founder of Wonderful",
+                "source_content_hash": "46fc6345a45bdcf2",
+                "quote_hash": "9747fda3a01e47c89c9e7875c59ab62a671da5bd3202d92b526d5312eaa22e8c"
               }
             ],
             "entity_id": null
@@ -875,7 +902,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7791f3b0abf7244c",
-                "quote": "said Roey Lalazar, CTO and Co-founder"
+                "quote": "said Roey Lalazar, CTO and Co-founder",
+                "source_content_hash": "46fc6345a45bdcf2",
+                "quote_hash": "3c32a416cba058cd02d10eca7a7d6e47b671ac94b3585bf44c2ed0649259e844"
               }
             ],
             "entity_id": null
@@ -887,19 +916,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+              "quote": "scaling headcount from 350 to approximately 900 by year-end",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "09511a1b0d6f52fe541aaa56609a3d2ea5d8e90ca64a2f689b125d0b92c5b7ff"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-a9a14160ac96ad9a",
-            "quote": "Wonderful is an enterprise AI agent platform made for deploying agents in complex enterprise environments."
+            "quote": "Wonderful is an enterprise AI agent platform made for deploying agents in complex enterprise environments.",
+            "source_content_hash": "a1eb7c9802c59903",
+            "quote_hash": "1d49923f3daccb187511bfbff7b64dd4e1cef72f2112b0aa88b26d62e44cff70"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$150 million",
         "total_raised": "$286 million",
         "announced_at": "2026-03-12",
@@ -910,7 +943,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7791f3b0abf7244c",
-                "quote": "led by global software investor Insight Partners"
+                "quote": "led by global software investor Insight Partners",
+                "source_content_hash": "46fc6345a45bdcf2",
+                "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
               }
             ],
             "entity_id": null
@@ -921,7 +956,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7791f3b0abf7244c",
-                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+                "source_content_hash": "46fc6345a45bdcf2",
+                "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
               }
             ],
             "entity_id": null
@@ -932,7 +969,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7791f3b0abf7244c",
-                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+                "source_content_hash": "46fc6345a45bdcf2",
+                "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
               }
             ],
             "entity_id": null
@@ -943,7 +982,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7791f3b0abf7244c",
-                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+                "source_content_hash": "46fc6345a45bdcf2",
+                "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
               }
             ],
             "entity_id": null
@@ -952,7 +993,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-a9a14160ac96ad9a",
-            "quote": "The $150 million Series B round values the company at $2 billion, just eight months after it emerged from stealth, bringing total funds raised to $284 million."
+            "quote": "The $150 million Series B round values the company at $2 billion, just eight months after it emerged from stealth, bringing total funds raised to $284 million.",
+            "source_content_hash": "a1eb7c9802c59903",
+            "quote_hash": "2d5726261d813dd7c31be14712873c59c52aa8d382eeedca31f891413bd86b4f"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-0ade039d36e077ae",
+            "round_original": "Series B",
+            "amount": "$150 million",
+            "announced_at": "2026-03-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a9a14160ac96ad9a",
+                "quote": "The $150 million Series B round values the company at $2 billion, just eight months after it emerged from stealth, bringing total funds raised to $284 million.",
+                "source_content_hash": "a1eb7c9802c59903",
+                "quote_hash": "2d5726261d813dd7c31be14712873c59c52aa8d382eeedca31f891413bd86b4f"
+              }
+            ]
           }
         ]
       },
@@ -970,11 +1032,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves."
+              "quote": "The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves.",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "e517a885152c6ff7a3819997dbdc9620fbe60b1303b158b5c2ed04c18064fb3a"
             },
             {
               "source_id": "FISRC-9c080c9ce7a264b5",
-              "quote": "Wonderful pairs a model-agnostic agentic platform with locally embedded deployment teams that integrate directly into customer environments."
+              "quote": "Wonderful pairs a model-agnostic agentic platform with locally embedded deployment teams that integrate directly into customer environments.",
+              "source_content_hash": "8b4314a057a49499",
+              "quote_hash": "8277f4ee6a897f6e8df050a19e1e945751747ae803576b78dca9b3462462713c"
             }
           ],
           "entity_id": null
@@ -992,9 +1058,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-50c2031888fb4f47",
-              "quote": "Factory, a startup that builds AI agents to handle software development tasks like testing, documentation, and deployment, has raised $150M at a $1.5B valuation."
+              "quote": "Factory, a startup that builds AI agents to handle software development tasks like testing, documentation, and deployment, has raised $150M at a $1.5B valuation.",
+              "source_content_hash": "a7412533b1971f91",
+              "quote_hash": "c593d0d3b16981ca140b0cb7f1751e02adbe8a8239b54cec95218cfebd95516d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1005,7 +1074,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America"
+              "quote": "scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "21827584c9c763ed1032666228fd86b5574a3f43c2c690909380b7d26d910b91"
             }
           ]
         },
@@ -1016,7 +1087,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "reducing handling times by up to 60%"
+              "quote": "reducing handling times by up to 60%",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "567a8596527a1b6937d185509b910f1e58eea2a768ffeeb848ebaea7aff46018"
             }
           ]
         },
@@ -1027,7 +1100,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "achieving containment rates above 80%"
+              "quote": "achieving containment rates above 80%",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "2d9f1d21c618effa37a9e251f330db4adcf155125a07b8db2224d38387cc061e"
             }
           ]
         },
@@ -1038,7 +1113,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months"
+              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "ff35131cc27c974df3e144c4f19ee261df0539020135400a1661596eabad18ea"
             }
           ]
         },
@@ -1049,7 +1126,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a9a14160ac96ad9a",
-              "quote": "The $150 million Series B round values the company at $2 billion"
+              "quote": "The $150 million Series B round values the company at $2 billion",
+              "source_content_hash": "a1eb7c9802c59903",
+              "quote_hash": "ef65c8fb7310081cf9c1702d9831d283746978781d7b6704cbde75a491633375"
             }
           ]
         },
@@ -1060,7 +1139,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+              "quote": "scaling headcount from 350 to approximately 900 by year-end",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "09511a1b0d6f52fe541aaa56609a3d2ea5d8e90ca64a2f689b125d0b92c5b7ff"
             }
           ]
         }
@@ -1072,7 +1153,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment"
+              "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment",
+              "source_content_hash": "46fc6345a45bdcf2",
+              "quote_hash": "2dbd22ba260f19a6ce07ae2c22a1d391759fb324ef2726f7e418592ca71652d2"
             }
           ]
         }
@@ -1093,7 +1176,23 @@
           "模型无关架构虽然灵活，但依赖第三方基础模型提供商，若主要模型供应商改变定价或服务条款，可能影响平台成本结构"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI智能体平台"
+        "sector": "企业AI智能体平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是企业AI部署的“最后一公里”问题——即从技术能力到生产环境落地的鸿沟。Wonderful以2亿美元估值完成1.5亿美元B轮融资，所依赖的已验证信号包括：八个月内扩展至30多个国家、在电信、金融服务、制造和医疗四个受监管行业获得生产级部署、超过70%的企业在三个月内从单一用例扩展至额外工作流、智能体处理时间降低60%且自主解决率超过80%。这些信号表明其“模型无关平台+本地嵌入式团队”的运营模式具有跨行业可复制性。然而，当前判断的证据边界在于：公司尚未披露具体客户名称和收入规模，估值主要基于扩张速度和运营模式的可复制性，而非公开的财务指标。",
+          "evidence_signals": [
+            "八个月内从隐身模式扩展至30多个国家",
+            "在电信、金融服务、制造和医疗四个受监管行业获得生产级部署",
+            "超过70%的企业在三个月内从单一用例扩展至额外工作流",
+            "智能体处理时间降低60%，自主解决率超过80%",
+            "现有投资方Index Ventures、IVP、Bessemer和Vine Ventures全部跟投"
+          ],
+          "risks": [
+            "公司未披露具体客户名称和收入规模，估值可能更多基于扩张速度而非已验证的单位经济模型",
+            "从350人扩张至900人的激进招聘计划可能带来执行风险和文化稀释",
+            "模型无关架构虽然灵活，但依赖第三方基础模型提供商，若主要模型供应商改变定价或服务条款，可能影响平台成本结构"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1101,108 +1200,56 @@
           "target_kind": "product",
           "research_name": "Wonderful Enterprise AI Agent Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves."
-            },
-            {
-              "source_id": "FISRC-9c080c9ce7a264b5",
-              "quote": "Wonderful pairs a model-agnostic agentic platform with locally embedded deployment teams that integrate directly into customer environments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Bar Winkler",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "said Bar Winkler, CEO and Co-founder of Wonderful"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Roey Lalazar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "said Roey Lalazar, CTO and Co-founder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Insight Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "led by global software investor Insight Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "IVP",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vine Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7791f3b0abf7244c",
-              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Factory AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50c2031888fb4f47",
-              "quote": "Factory, a startup that builds AI agents to handle software development tasks like testing, documentation, and deployment, has raised $150M at a $1.5B valuation."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1276,10 +1323,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:45:10.814Z"
+      "published_at": "2026-07-26T14:45:10.814Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Wonderful Enterprise AI Agent Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Bar Winkler",
+            "Roey Lalazar"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-0ade039d36e077ae"
+      ],
+      "aggregation": {
+        "key": "EN-693b1c2b5c9e35f4|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

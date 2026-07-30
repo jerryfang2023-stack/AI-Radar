@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-05",
     "generated_at": "2026-07-26T15:09:21.522Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 1,
       "auto_published": 1,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-6c2faabba03d416d",
       "triggered_by_event_id": "EV-6ae3594aadfcd3d8",
       "as_of_date": "2026-06-05",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2226010f84adae92",
-                "quote": "Chief Executive Matvey Kukuy"
+                "quote": "Chief Executive Matvey Kukuy",
+                "source_content_hash": "37249690c82d8e0a",
+                "quote_hash": "9f95751bd276c97d79895d8d8a3993738d6e58a5e303bb7388fd04a760671bee"
               }
             ],
             "entity_id": null
@@ -47,22 +50,30 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-45598d3580e32e1c",
-              "quote": "The startup is a seven-person team"
+              "quote": "The startup is a seven-person team",
+              "source_content_hash": "02fa7c3ba3fdac10",
+              "quote_hash": "4603d00001074058f7e4785c37825556e2627ff73d23a04c186ba69c525aa0f0"
             },
             {
               "source_id": "FISRC-08f2020b7eca8380",
-              "quote": "The seven-strong team"
+              "quote": "The seven-strong team",
+              "source_content_hash": "077d0abf0984e38b",
+              "quote_hash": "1bd0c6cb2625350bae0c627e7fcc7185ca3f3498f2b8b9538e77833c9c9d5cfc"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-2226010f84adae92",
-            "quote": "Archestra Inc. , a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data"
+            "quote": "Archestra Inc. , a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data",
+            "source_content_hash": "37249690c82d8e0a",
+            "quote_hash": "1ad400d96312166622c8de9e52c51f4b839999c342a9da9e088506dd9c47ec49"
           },
           {
             "source_id": "FISRC-50130a45d72291a2",
-            "quote": "Archestra is a horizontal platform that lets in-house AI teams open up data access to business users without the usual nightmare scenarios."
+            "quote": "Archestra is a horizontal platform that lets in-house AI teams open up data access to business users without the usual nightmare scenarios.",
+            "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+            "quote_hash": "5277c58c8e010d2b29966663bb4aa5eb40228e35ae7fc3363377dfcae8798e5f"
           }
         ]
       },
@@ -78,11 +89,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2226010f84adae92",
-                "quote": "The seed round was led by 20VC"
+                "quote": "The seed round was led by 20VC",
+                "source_content_hash": "37249690c82d8e0a",
+                "quote_hash": "3eec14ff335cb9f157578628b83cb3f1c8ba2cc2d7eda983bbe0f09365cb0c6d"
               },
               {
                 "source_id": "FISRC-50130a45d72291a2",
-                "quote": "we've raised a $10 million Seed round, led by 20VC"
+                "quote": "we've raised a $10 million Seed round, led by 20VC",
+                "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+                "quote_hash": "7db49d2541be58708e5471ae36968e3ca07be5e9cefbaad9cfe6390586da5533"
               }
             ],
             "entity_id": null
@@ -93,51 +108,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2226010f84adae92",
-                "quote": "Other participants include 20 Product"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Concept Ventures",
-            "role": "既有投资方（种子前轮）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-50130a45d72291a2",
-                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Zero Prime Ventures",
-            "role": "既有投资方（种子前轮）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-50130a45d72291a2",
-                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Celero Ventures",
-            "role": "既有投资方（种子前轮）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-50130a45d72291a2",
-                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Aloniq",
-            "role": "既有投资方（种子前轮）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-50130a45d72291a2",
-                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+                "quote": "Other participants include 20 Product",
+                "source_content_hash": "37249690c82d8e0a",
+                "quote_hash": "56299bea3c0091f7b391602890569c616c77b33b038811e0680ac131ef765f1e"
               }
             ],
             "entity_id": null
@@ -146,7 +119,105 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2226010f84adae92",
-            "quote": "it has raised $10 million in new funding"
+            "quote": "it has raised $10 million in new funding",
+            "source_content_hash": "37249690c82d8e0a",
+            "quote_hash": "6fddb42e2088e33cc2476b0a4e51dc943121debd99c350a934332f67faac53da"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [
+          {
+            "name": "Concept Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
+                "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+                "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方（种子前轮）"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Zero Prime Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
+                "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+                "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方（种子前轮）"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Celero Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
+                "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+                "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方（种子前轮）"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Aloniq",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in.",
+                "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+                "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方（种子前轮）"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-6ae3594aadfcd3d8",
+            "round_original": "种子轮",
+            "amount": "1000万美元",
+            "announced_at": "2026-06-02",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2226010f84adae92",
+                "quote": "it has raised $10 million in new funding",
+                "source_content_hash": "37249690c82d8e0a",
+                "quote_hash": "6fddb42e2088e33cc2476b0a4e51dc943121debd99c350a934332f67faac53da"
+              }
+            ]
           }
         ]
       },
@@ -168,15 +239,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "Archestra acts as a middle layer between the agent and the data. The agent calls Archestra, which checks identity and policy, brokers the actual data access and logs the result."
+              "quote": "Archestra acts as a middle layer between the agent and the data. The agent calls Archestra, which checks identity and policy, brokers the actual data access and logs the result.",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "37ea88e4a37861498a5c98e876c1e45bb976f1ea0dfe54efd41a258fbb650299"
             },
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "The guardrails are pitched as protection against the combination of access to private data, exposure to untrusted content and the ability to communicate externally"
+              "quote": "The guardrails are pitched as protection against the combination of access to private data, exposure to untrusted content and the ability to communicate externally",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "6ff0774405427e7567a02fa4f2a4f49857f2590ab1791e60d7a93cb877f8472c"
             },
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "A cost-optimization layer tracks spending per team, agent or organization and can route simpler queries to cheaper models, which Archestra claims can cut inference bills by as much as 96%."
+              "quote": "A cost-optimization layer tracks spending per team, agent or organization and can route simpler queries to cheaper models, which Archestra claims can cut inference bills by as much as 96%.",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "802278d0e7f6849f523466abad091423597263fc4544d762aa8cc56581a0e237"
             }
           ],
           "entity_id": null
@@ -190,9 +267,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "The platform is in production at four Fortune 500 companies, where agents are working across legal, procurement, management and operations."
+              "quote": "The platform is in production at four Fortune 500 companies, where agents are working across legal, procurement, management and operations.",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "4d52c589503f831cbc1a89e9d70d5261519a5cef8b7bb3bbd279e56f24fac788"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -204,7 +284,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "The open-source core has drawn more than 3,700 stars"
+              "quote": "The open-source core has drawn more than 3,700 stars",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "bb514c859e9e9881d99b78469a49996a02c91298b13214066654d6d8b120816e"
             }
           ]
         },
@@ -215,7 +297,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "57 contributors on GitHub"
+              "quote": "57 contributors on GitHub",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "3721955cb43db015207a2cc196300358200d626fb6265252c0eb09115f688d97"
             }
           ]
         },
@@ -226,7 +310,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "The platform is in production at four Fortune 500 companies"
+              "quote": "The platform is in production at four Fortune 500 companies",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "3440c427a32d2fa9d551029728422d5824f83213ec75987ada69365b7e79ae3a"
             }
           ]
         },
@@ -237,7 +323,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "95th-percentile latency comes in at 45 milliseconds"
+              "quote": "95th-percentile latency comes in at 45 milliseconds",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "ca4fa846e6a4dd81629aea434fb04369f3fddd4e223a14ddafae2347a79a0ec3"
             }
           ]
         },
@@ -248,7 +336,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2226010f84adae92",
-              "quote": "a public catalog of more than 900 evaluated servers"
+              "quote": "a public catalog of more than 900 evaluated servers",
+              "source_content_hash": "37249690c82d8e0a",
+              "quote_hash": "a6b0065d946e0dbcffaf459adea6b3eb41dcc6fe544c899f5a692bcd7cebd2ac"
             }
           ]
         },
@@ -259,7 +349,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-50130a45d72291a2",
-              "quote": "1,000+ community members"
+              "quote": "1,000+ community members",
+              "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+              "quote_hash": "3149fb5ff896d44fe87c3c3a7f62d3d10b86c0d9d9f9bbc36ebca09ee0f7e9bb"
             }
           ]
         }
@@ -271,7 +363,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-50130a45d72291a2",
-              "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers."
+              "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers.",
+              "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+              "quote_hash": "84f10d25902368690e033792d29eb929164f1eaf6ed2fddbeef899867f282a66"
             }
           ]
         }
@@ -287,7 +381,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-50130a45d72291a2",
-                "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers."
+                "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers.",
+                "source_content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+                "quote_hash": "84f10d25902368690e033792d29eb929164f1eaf6ed2fddbeef899867f282a66"
               }
             ]
           }
@@ -303,7 +399,20 @@
           "财富 500 强客户数量有限，产品在大规模、多行业生产环境中的安全性和稳定性尚未得到广泛验证"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 智能体安全与治理基础设施"
+        "sector": "AI 智能体安全与治理基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：企业从 AI 智能体实验转向生产级部署时，对模型无关、独立于 LLM 提供商的治理与安全中间层的刚性需求。本轮融资所依赖的已验证信号包括：已有 4 家财富 500 强公司在生产环境中使用该平台，开源社区获得超过 3700 个 GitHub 星标和 57 名贡献者，以及种子前轮投资者全部跟投。这些信号表明早期企业客户和开发者社区对产品价值已形成初步验证，但判断的证据边界仍局限于早期采用者，尚未在大规模、多行业的严苛生产环境中得到广泛证实。",
+          "evidence_signals": [
+            "4 家财富 500 强公司已在生产环境中使用 Archestra 平台连接 AI 智能体与真实企业数据",
+            "开源核心在 GitHub 上获得超过 3700 个星标和 57 名贡献者",
+            "种子前轮投资者 Concept Ventures、Zero Prime Ventures、Celero Ventures 和 Aloniq 全部参与本轮跟投"
+          ],
+          "risks": [
+            "团队仅 7 人，在竞争激烈的企业软件市场中，同时推进工程、开源生态建设和市场拓展面临资源约束",
+            "财富 500 强客户数量有限，产品在大规模、多行业生产环境中的安全性和稳定性尚未得到广泛验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -311,129 +420,63 @@
           "target_kind": "product",
           "research_name": "Archestra 平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2226010f84adae92",
-              "quote": "Archestra acts as a middle layer between the agent and the data. The agent calls Archestra, which checks identity and policy, brokers the actual data access and logs the result."
-            },
-            {
-              "source_id": "FISRC-2226010f84adae92",
-              "quote": "The guardrails are pitched as protection against the combination of access to private data, exposure to untrusted content and the ability to communicate externally"
-            },
-            {
-              "source_id": "FISRC-2226010f84adae92",
-              "quote": "A cost-optimization layer tracks spending per team, agent or organization and can route simpler queries to cheaper models, which Archestra claims can cut inference bills by as much as 96%."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Matvey Kukuy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2226010f84adae92",
-              "quote": "Chief Executive Matvey Kukuy"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "20VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2226010f84adae92",
-              "quote": "The seed round was led by 20VC"
-            },
-            {
-              "source_id": "FISRC-50130a45d72291a2",
-              "quote": "we've raised a $10 million Seed round, led by 20VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "20 Product",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2226010f84adae92",
-              "quote": "Other participants include 20 Product"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Concept Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50130a45d72291a2",
-              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Zero Prime Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50130a45d72291a2",
-              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Celero Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50130a45d72291a2",
-              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Aloniq",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50130a45d72291a2",
-              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未披露",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2226010f84adae92",
-              "quote": "The platform is in production at four Fortune 500 companies, where agents are working across legal, procurement, management and operations."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -508,10 +551,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:24:18.974Z"
+      "published_at": "2026-07-26T14:24:18.974Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Archestra 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Matvey Kukuy"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-6ae3594aadfcd3d8"
+      ],
+      "aggregation": {
+        "key": "EN-58b507456c52c9b3|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

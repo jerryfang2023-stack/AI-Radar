@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-19",
     "generated_at": "2026-07-27T05:21:47.523Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 4,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c33df345b6621ada",
       "triggered_by_event_id": "EV-6aee7474fe69bb7d",
       "as_of_date": "2026-07-19",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e69c72aa4fb650f2",
-                "quote": "Runta’s founder, Guanlan Dai, is a father of two, and he sees AI agents a little like precocious children."
+                "quote": "Runta’s founder, Guanlan Dai, is a father of two, and he sees AI agents a little like precocious children.",
+                "source_content_hash": "35b7e6120fb1db28",
+                "quote_hash": "48af6b498c07df77155c539d752232c68f63d52e45f8d52b6d3d7a8fe9b03e62"
               },
               {
                 "source_id": "FISRC-16db7b4b9969aeaa",
-                "quote": "Founded by Guanlan Dai (ex-Cloudflare tech lead, founding engineer at Kong)"
+                "quote": "Founded by Guanlan Dai (ex-Cloudflare tech lead, founding engineer at Kong)",
+                "source_content_hash": "9777ef77c01c542e",
+                "quote_hash": "5bb1fabcb0700953bb0e3a3f0b8565a32b3ad6c6f9e75aa21a5defbaa44dedb4"
               }
             ],
             "entity_id": null
@@ -53,11 +58,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e69c72aa4fb650f2",
-            "quote": "A new startup called Runta has raised $20 million to keep those agents from doing damage."
+            "quote": "A new startup called Runta has raised $20 million to keep those agents from doing damage.",
+            "source_content_hash": "35b7e6120fb1db28",
+            "quote_hash": "54a4578c22b620d7d2efb563221f63daf4aee0c009be460ac649db98ea9fb74e"
           },
           {
             "source_id": "FISRC-16db7b4b9969aeaa",
-            "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)"
+            "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)",
+            "source_content_hash": "9777ef77c01c542e",
+            "quote_hash": "3ee7ac6fc75ee61fe253416549f8c159f61445bcc6400b50b927e5b5b8b58ba3"
           }
         ]
       },
@@ -73,11 +82,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e69c72aa4fb650f2",
-                "quote": "Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported."
+                "quote": "Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported.",
+                "source_content_hash": "35b7e6120fb1db28",
+                "quote_hash": "86d5316cbe2c76bc40e1c7dd3afd1a4a872146aee81f788d9ff708afd3737f9f"
               },
               {
                 "source_id": "FISRC-16db7b4b9969aeaa",
-                "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)"
+                "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)",
+                "source_content_hash": "9777ef77c01c542e",
+                "quote_hash": "3ee7ac6fc75ee61fe253416549f8c159f61445bcc6400b50b927e5b5b8b58ba3"
               }
             ],
             "entity_id": null
@@ -86,11 +99,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e69c72aa4fb650f2",
-            "quote": "A new startup called Runta has raised $20 million to keep those agents from doing damage. Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported."
+            "quote": "A new startup called Runta has raised $20 million to keep those agents from doing damage. Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported.",
+            "source_content_hash": "35b7e6120fb1db28",
+            "quote_hash": "0bd630f0890c3e3e97b2db8f18c0c7660f0975a6156cec4810e840efc30f7421"
           },
           {
             "source_id": "FISRC-16db7b4b9969aeaa",
-            "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)"
+            "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)",
+            "source_content_hash": "9777ef77c01c542e",
+            "quote_hash": "3ee7ac6fc75ee61fe253416549f8c159f61445bcc6400b50b927e5b5b8b58ba3"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-6aee7474fe69bb7d",
+            "round_original": "种子轮",
+            "amount": "2000万美元",
+            "announced_at": "2026-07-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e69c72aa4fb650f2",
+                "quote": "A new startup called Runta has raised $20 million to keep those agents from doing damage. Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported.",
+                "source_content_hash": "35b7e6120fb1db28",
+                "quote_hash": "0bd630f0890c3e3e97b2db8f18c0c7660f0975a6156cec4810e840efc30f7421"
+              },
+              {
+                "source_id": "FISRC-16db7b4b9969aeaa",
+                "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)",
+                "source_content_hash": "9777ef77c01c542e",
+                "quote_hash": "3ee7ac6fc75ee61fe253416549f8c159f61445bcc6400b50b927e5b5b8b58ba3"
+              }
+            ]
           }
         ]
       },
@@ -108,11 +150,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "It wraps them in isolated environments and guardrails, so a rogue agent cannot run up a bill or wreck a system."
+              "quote": "It wraps them in isolated environments and guardrails, so a rogue agent cannot run up a bill or wreck a system.",
+              "source_content_hash": "35b7e6120fb1db28",
+              "quote_hash": "ba8aa024e0c175f6dde6907178aeecdae6b8abb78a7a127e7b23212e5823933c"
             },
             {
               "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Building an agent execution layer : isolated sandboxes, access controls, spending caps, audit logs"
+              "quote": "Building an agent execution layer : isolated sandboxes, access controls, spending caps, audit logs",
+              "source_content_hash": "9777ef77c01c542e",
+              "quote_hash": "2532f0c1210c6b7c401ef7756938045a92fd5773d796fdf4ba1a263a2da0f90d"
             }
           ],
           "entity_id": null
@@ -130,13 +176,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Arcade.dev raised a $60M Series A for agent authorization"
+              "quote": "Arcade.dev raised a $60M Series A for agent authorization",
+              "source_content_hash": "9777ef77c01c542e",
+              "quote_hash": "16f030854f7cc43e3c5840b71e7133b10cb27124fb728a74ad503f6f8e0d146a"
             },
             {
               "source_id": "FISRC-ba50779724964a51",
-              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it."
+              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it.",
+              "source_content_hash": "17990ac241777331",
+              "quote_hash": "af38bec3958df2fdcc4aaaf0842a0cdc7a8a071fa1f03262102fadbc07db3332"
             }
-          ]
+          ],
+          "entity_id": "EN-d74c69db63e4763f"
         },
         {
           "name": "1Password (收购 Apono)",
@@ -148,13 +199,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "1Password acquired Apono for AI agent access governance"
+              "quote": "1Password acquired Apono for AI agent access governance",
+              "source_content_hash": "9777ef77c01c542e",
+              "quote_hash": "dcff60f069e87a03ec775ac49923dd6a3a19db5aa89927ab954861988b79a520"
             },
             {
               "source_id": "FISRC-ba50779724964a51",
-              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it."
+              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it.",
+              "source_content_hash": "17990ac241777331",
+              "quote_hash": "af38bec3958df2fdcc4aaaf0842a0cdc7a8a071fa1f03262102fadbc07db3332"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Atomicwork",
@@ -166,13 +222,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Atomicwork targets governed AI workforce oversight for enterprise IT"
+              "quote": "Atomicwork targets governed AI workforce oversight for enterprise IT",
+              "source_content_hash": "9777ef77c01c542e",
+              "quote_hash": "1927df908dd96010c993a655aa395d1845096c5c9b28d1b46bb448afed961f76"
             },
             {
               "source_id": "FISRC-ba50779724964a51",
-              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it."
+              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it.",
+              "source_content_hash": "17990ac241777331",
+              "quote_hash": "af38bec3958df2fdcc4aaaf0842a0cdc7a8a071fa1f03262102fadbc07db3332"
             }
-          ]
+          ],
+          "entity_id": "EN-61b6bf408b3b086e"
         }
       ],
       "metrics": [
@@ -183,7 +244,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "A new startup called Runta has raised $20 million to keep those agents from doing damage."
+              "quote": "A new startup called Runta has raised $20 million to keep those agents from doing damage.",
+              "source_content_hash": "35b7e6120fb1db28",
+              "quote_hash": "54a4578c22b620d7d2efb563221f63daf4aee0c009be460ac649db98ea9fb74e"
             }
           ]
         },
@@ -194,7 +257,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported."
+              "quote": "Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported.",
+              "source_content_hash": "35b7e6120fb1db28",
+              "quote_hash": "86d5316cbe2c76bc40e1c7dd3afd1a4a872146aee81f788d9ff708afd3737f9f"
             }
           ]
         }
@@ -206,7 +271,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "Parents childproof the house and keep the credit card out of reach. Developers, he argues, must limit which files an agent can touch and how much it can spend at once."
+              "quote": "Parents childproof the house and keep the credit card out of reach. Developers, he argues, must limit which files an agent can touch and how much it can spend at once.",
+              "source_content_hash": "35b7e6120fb1db28",
+              "quote_hash": "0744c1e63fe84c386c3467f67881a68c7a9242637d8c0535475e2d0c881ea8bd"
             }
           ]
         },
@@ -216,7 +283,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "In a16z’s post announcing the deal, partner Martin Casado said agents “just want a computer.”"
+              "quote": "In a16z’s post announcing the deal, partner Martin Casado said agents “just want a computer.”",
+              "source_content_hash": "35b7e6120fb1db28",
+              "quote_hash": "ebb14e7ce42aca565b1958b4a8241a0ba36a855a3e8244c65d6a1a0991233ea2"
             }
           ]
         },
@@ -226,7 +295,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "Casado calls the move from hosting software to hosting agents the biggest shift in computing yet."
+              "quote": "Casado calls the move from hosting software to hosting agents the biggest shift in computing yet.",
+              "source_content_hash": "35b7e6120fb1db28",
+              "quote_hash": "138f4a826d1ccbe6a8907aee576ba03cb67d8ac5d16406a00852562ddb01d155"
             }
           ]
         }
@@ -242,7 +313,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e69c72aa4fb650f2",
-                "quote": "Casado argues this is not “yet another sandbox cloud” but core systems software rebuilt for agents. He also flags an odd side effect of the agent boom. A CPU shortage now sits alongside the model-driven GPU crunch, because agents need a lot of ordinary compute."
+                "quote": "Casado argues this is not “yet another sandbox cloud” but core systems software rebuilt for agents. He also flags an odd side effect of the agent boom. A CPU shortage now sits alongside the model-driven GPU crunch, because agents need a lot of ordinary compute.",
+                "source_content_hash": "35b7e6120fb1db28",
+                "quote_hash": "6e2187e0847b2a3707bf8fd38f363d55a24d35ed7510bcb3e2dc8c17580f12c6"
               }
             ]
           }
@@ -258,7 +331,20 @@
           "早期风险投资需求尚未转化为可验证的持续性企业收入，生产部署和重复采购行为才是类别持久性的真正证明。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 智能体基础设施"
+        "sector": "AI 智能体基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI 智能体从“回答问题”转向“自主执行动作”后，运行时控制层将从可选的附加组件变为生产部署的前提条件。本轮融资以超过 1 亿美元的估值完成，依赖的已验证信号包括：创始人 Guanlan Dai 在 Cloudflare 和 Kong 的基础设施背景、a16z 合伙人 Martin Casado 明确提出的“智能体需要一台计算机”的系统软件叙事，以及企业市场对智能体授权、访问治理和监督的同步需求爆发。但证据边界仅限于早期风险投资信号和行业趋势判断，尚未包含可验证的企业收入或大规模生产部署数据。",
+          "evidence_signals": [
+            "创始人 Guanlan Dai 曾担任 Cloudflare 边缘团队技术负责人和 API 公司 Kong 的核心代理构建者，具备深厚的基础设施背景。",
+            "a16z 合伙人 Martin Casado 公开提出“智能体需要一台计算机”的系统软件叙事，并指出智能体繁荣正导致 CPU 短缺。",
+            "同一时期多家智能体基础设施初创公司（Arcade.dev、1Password/Apono、Atomicwork）获得融资或进行收购，表明企业市场对智能体控制层的需求正在集中爆发。"
+          ],
+          "risks": [
+            "Runta 的护栏产品可能成为昂贵的中间件，如果仅附着于现有工作流而非改变工作流本身，企业可能选择从已掌握工作流的平台采购更便宜或更集成的控制方案。",
+            "早期风险投资需求尚未转化为可验证的持续性企业收入，生产部署和重复采购行为才是类别持久性的真正证明。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -266,102 +352,42 @@
           "target_kind": "product",
           "research_name": "Runta 智能体执行层",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "It wraps them in isolated environments and guardrails, so a rogue agent cannot run up a bill or wreck a system."
-            },
-            {
-              "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Building an agent execution layer : isolated sandboxes, access controls, spending caps, audit logs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Guanlan Dai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "Runta’s founder, Guanlan Dai, is a father of two, and he sees AI agents a little like precocious children."
-            },
-            {
-              "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Founded by Guanlan Dai (ex-Cloudflare tech lead, founding engineer at Kong)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz (a16z)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e69c72aa4fb650f2",
-              "quote": "Andreessen Horowitz (a16z) led the round, which values Runta at more than $100 million, The Information reported."
-            },
-            {
-              "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Runta raised a $20M seed round led by a16z at a $100M+ valuation (July 16, 2026)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Arcade.dev",
           "canonical_entity_id": "EN-d74c69db63e4763f",
-          "canonical_name": "Arcade",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Arcade.dev raised a $60M Series A for agent authorization"
-            },
-            {
-              "source_id": "FISRC-ba50779724964a51",
-              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it."
-            }
-          ]
+          "canonical_name": "Arcade"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "1Password (收购 Apono)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "1Password acquired Apono for AI agent access governance"
-            },
-            {
-              "source_id": "FISRC-ba50779724964a51",
-              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Atomicwork",
           "canonical_entity_id": "EN-61b6bf408b3b086e",
-          "canonical_name": "Atomicwork",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-16db7b4b9969aeaa",
-              "quote": "Atomicwork targets governed AI workforce oversight for enterprise IT"
-            },
-            {
-              "source_id": "FISRC-ba50779724964a51",
-              "quote": "Runta’s execution layer focus is distinct from these governance and identity plays, targeting the compute substrate rather than the policy or permissions layer above it."
-            }
-          ]
+          "canonical_name": "Atomicwork"
         }
       ],
       "funding_history": [
@@ -423,13 +449,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:58:10.739Z"
+      "published_at": "2026-07-26T14:58:10.739Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Runta 智能体执行层"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Guanlan Dai"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-6aee7474fe69bb7d"
+      ],
+      "aggregation": {
+        "key": "EN-5437fc10a23832bb|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-bf37280962c170ed",
       "triggered_by_event_id": "EV-44cd5e03d30c85b3",
       "as_of_date": "2026-07-19",
@@ -447,7 +502,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-29eab14021052e06",
-                "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher"
+                "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher",
+                "source_content_hash": "fcbcd414744b916f",
+                "quote_hash": "7a7fc1a17eda97d90897e1d273d2255a5ce5afc2edd56099023b68d1880a3098"
               }
             ],
             "entity_id": null
@@ -459,14 +516,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "currently employing 13 people"
+              "quote": "currently employing 13 people",
+              "source_content_hash": "7b935e4006e94036",
+              "quote_hash": "ce2b9da402b3babeafb501db5b08536abc272dae43aba55ce1398c5775e13c1b"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-29eab14021052e06",
-            "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher"
+            "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher",
+            "source_content_hash": "fcbcd414744b916f",
+            "quote_hash": "7a7fc1a17eda97d90897e1d273d2255a5ce5afc2edd56099023b68d1880a3098"
           }
         ]
       },
@@ -482,7 +543,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-09d3aaaafa6cdabc",
-                "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean"
+                "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
+                "source_content_hash": "7b935e4006e94036",
+                "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
               }
             ],
             "entity_id": null
@@ -493,7 +556,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-09d3aaaafa6cdabc",
-                "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean"
+                "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
+                "source_content_hash": "7b935e4006e94036",
+                "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -504,7 +569,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-09d3aaaafa6cdabc",
-                "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean"
+                "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
+                "source_content_hash": "7b935e4006e94036",
+                "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
               }
             ],
             "entity_id": null
@@ -513,11 +580,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-29eab14021052e06",
-            "quote": "how his company raised a $55 million seed round at a $300 million valuation before generating revenue or releasing a product"
+            "quote": "how his company raised a $55 million seed round at a $300 million valuation before generating revenue or releasing a product",
+            "source_content_hash": "fcbcd414744b916f",
+            "quote_hash": "dfa476a2d6619ddc62db524c7decec67353499f6b4527bd840546eda1b688bff"
           },
           {
             "source_id": "FISRC-09d3aaaafa6cdabc",
-            "quote": "Alorian raised $55 million in a few months, achieving a valuation that even surprised the team"
+            "quote": "Alorian raised $55 million in a few months, achieving a valuation that even surprised the team",
+            "source_content_hash": "7b935e4006e94036",
+            "quote_hash": "b187d582fc958cf66734a3d3de5bb153c21241d0d78a5946dcfcabaa64c663b0"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-44cd5e03d30c85b3",
+            "round_original": "种子轮",
+            "amount": "$55 million",
+            "announced_at": "2026-07-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-29eab14021052e06",
+                "quote": "how his company raised a $55 million seed round at a $300 million valuation before generating revenue or releasing a product",
+                "source_content_hash": "fcbcd414744b916f",
+                "quote_hash": "dfa476a2d6619ddc62db524c7decec67353499f6b4527bd840546eda1b688bff"
+              },
+              {
+                "source_id": "FISRC-09d3aaaafa6cdabc",
+                "quote": "Alorian raised $55 million in a few months, achieving a valuation that even surprised the team",
+                "source_content_hash": "7b935e4006e94036",
+                "quote_hash": "b187d582fc958cf66734a3d3de5bb153c21241d0d78a5946dcfcabaa64c663b0"
+              }
+            ]
           }
         ]
       },
@@ -534,7 +630,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "The company focuses on developing visual AI models aimed at achieving visual artificial general intelligence (AGI)"
+              "quote": "The company focuses on developing visual AI models aimed at achieving visual artificial general intelligence (AGI)",
+              "source_content_hash": "7b935e4006e94036",
+              "quote_hash": "db5d295e7d6d77e567a332735a2442396bbd3241c10fab714b7d4cb2d7891da6"
             }
           ],
           "entity_id": null
@@ -552,9 +650,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude"
+              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude",
+              "source_content_hash": "7b935e4006e94036",
+              "quote_hash": "1e720bf7cfdb36be662201c35697ea29ca3f410300701f2b849a78982c378148"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "ChatGPT",
@@ -566,9 +667,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude"
+              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude",
+              "source_content_hash": "7b935e4006e94036",
+              "quote_hash": "1e720bf7cfdb36be662201c35697ea29ca3f410300701f2b849a78982c378148"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Claude",
@@ -580,9 +684,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude"
+              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude",
+              "source_content_hash": "7b935e4006e94036",
+              "quote_hash": "1e720bf7cfdb36be662201c35697ea29ca3f410300701f2b849a78982c378148"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -593,7 +700,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-29eab14021052e06",
-              "quote": "raised a $55 million seed round at a $300 million valuation"
+              "quote": "raised a $55 million seed round at a $300 million valuation",
+              "source_content_hash": "fcbcd414744b916f",
+              "quote_hash": "4c7390dce75989b4a15db34842536b2c8dd981c5add8a7b8e6e666be355f9e98"
             }
           ]
         },
@@ -604,7 +713,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-29eab14021052e06",
-              "quote": "raised a $55 million seed round at a $300 million valuation"
+              "quote": "raised a $55 million seed round at a $300 million valuation",
+              "source_content_hash": "fcbcd414744b916f",
+              "quote_hash": "4c7390dce75989b4a15db34842536b2c8dd981c5add8a7b8e6e666be355f9e98"
             }
           ]
         },
@@ -615,7 +726,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "currently employing 13 people"
+              "quote": "currently employing 13 people",
+              "source_content_hash": "7b935e4006e94036",
+              "quote_hash": "ce2b9da402b3babeafb501db5b08536abc272dae43aba55ce1398c5775e13c1b"
             }
           ]
         },
@@ -626,7 +739,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "generated 200 applicant submissions over a single weekend"
+              "quote": "generated 200 applicant submissions over a single weekend",
+              "source_content_hash": "7b935e4006e94036",
+              "quote_hash": "ecb67ae4958562f0e64f17498761363ce8b54b22581d8d6f8b08236aaa25dcef"
             }
           ]
         }
@@ -638,7 +753,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5bc20546e110fd64",
-              "quote": "You have models that excel at mathematics, explore complex physics, and are proficient at coding… But visual understanding and reasoning still have significant room for advancement."
+              "quote": "You have models that excel at mathematics, explore complex physics, and are proficient at coding… But visual understanding and reasoning still have significant room for advancement.",
+              "source_content_hash": "1e8ec18835a96c85",
+              "quote_hash": "0a6fb45721347b98572f5e351d61a46d22e3ce61dc0354dedf3ff1e147a4c806"
             }
           ]
         }
@@ -656,7 +773,20 @@
           "公司目前无产品、无收入，$300M的极高种子轮前估值带来了巨大的里程碑交付压力，可能影响后续融资。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "人工智能/视觉推理"
+        "sector": "人工智能/视觉推理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是视觉推理作为AI下一个前沿的巨大潜力，以及创始团队在Google DeepMind的深厚技术背景。本轮$300M估值并非基于收入或产品，而是依赖于投资者对视觉AGI长期愿景的认可、创始人的技术叙事能力，以及其资本效率更高的后训练策略。已验证的信号包括：创始人曾参与Gemini数据预训练、其2015年论文被OpenAI引用为ChatGPT的“配方”、以及公司已吸引到Nvidia和Jeff Dean等顶级技术投资者。",
+          "evidence_signals": [
+            "创始人Andrew Dai曾在Google DeepMind工作超过十年，并共同领导了Gemini的数据预训练。",
+            "Andrew Dai在2015年发表的论文后来被OpenAI引用为ChatGPT的“配方”。",
+            "公司已吸引到Nvidia、Jeff Dean等顶级技术投资者。",
+            "公司采用资本效率更高的后训练方法，仅需数百万美元即可启动开发并接触早期客户。"
+          ],
+          "risks": [
+            "公司目前无产品、无收入，$300M的极高种子轮前估值带来了巨大的里程碑交付压力，可能影响后续融资。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -664,104 +794,56 @@
           "target_kind": "product",
           "research_name": "视觉推理模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "The company focuses on developing visual AI models aimed at achieving visual artificial general intelligence (AGI)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Andrew Dai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-29eab14021052e06",
-              "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean"
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jeff Dean",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Gemini",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ChatGPT",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Claude",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-09d3aaaafa6cdabc",
-              "quote": "Alorien differentiates itself by focusing on specialized multimodal models, targeting a different user base than competitors like Gemini, ChatGPT, or Claude"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -832,13 +914,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:57:54.741Z"
+      "published_at": "2026-07-26T14:57:54.741Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "视觉推理模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Andrew Dai"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-44cd5e03d30c85b3"
+      ],
+      "aggregation": {
+        "key": "EN-e647c818ac38b6ca|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f795116ae4bec079",
       "triggered_by_event_id": "EV-b678e91bc60fb0f0",
       "as_of_date": "2026-07-19",
@@ -856,7 +967,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-adb92a0723de45a1",
-                "quote": "logcat.ai was founded by Varun Chitre and Tarun Vashisth, who worked together as founding engineers at Esper. Varun brings more than 13 years in device systems engineering"
+                "quote": "logcat.ai was founded by Varun Chitre and Tarun Vashisth, who worked together as founding engineers at Esper. Varun brings more than 13 years in device systems engineering",
+                "source_content_hash": "1dcd4855bd96a462",
+                "quote_hash": "f00fdf454a7c63383926bcc3de0c9a1dc83e597da423e0b5d4edaa7b5ee64b92"
               }
             ],
             "entity_id": null
@@ -867,7 +980,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-82d1823aa14d9f73",
-                "quote": "logcat.ai was co-founded by Varun Chitre, Founder and CEO, and Tarun Vashisth, CTO"
+                "quote": "logcat.ai was co-founded by Varun Chitre, Founder and CEO, and Tarun Vashisth, CTO",
+                "source_content_hash": "d0e91e41c67236a3",
+                "quote_hash": "d94f4c536ade8a89901a64a77ce2c4f7a5689c8c99326d18d0bd62e55daff2d5"
               }
             ],
             "entity_id": null
@@ -879,23 +994,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82d1823aa14d9f73",
-              "quote": "The company is currently just its two founders"
+              "quote": "The company is currently just its two founders",
+              "source_content_hash": "d0e91e41c67236a3",
+              "quote_hash": "bc1e2f2a876a98c29929501df638a24a6be98e1b7cb2984919bb760bb7975729"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-adb92a0723de45a1",
-            "quote": "logcat.ai is an AI-native platform for autonomous Android and Linux device systems engineering, from smartphones to vehicles, robots, network and telecom equipment, and embedded hardware"
+            "quote": "logcat.ai is an AI-native platform for autonomous Android and Linux device systems engineering, from smartphones to vehicles, robots, network and telecom equipment, and embedded hardware",
+            "source_content_hash": "1dcd4855bd96a462",
+            "quote_hash": "4beed59bc8f9577eb4566a9903e26ee4d9452fe1b0334362c949110ddcabf8db"
           },
           {
             "source_id": "FISRC-82d1823aa14d9f73",
-            "quote": "Founded in 2025 and based in Seattle and Bengaluru"
+            "quote": "Founded in 2025 and based in Seattle and Bengaluru",
+            "source_content_hash": "d0e91e41c67236a3",
+            "quote_hash": "0d707aeeac61c2e97d50288dffe45274258c133a0d0b57ab2e5e5572c1601694"
           }
         ]
       },
       "financing": {
-        "round": "pre-seed",
+        "round": "预种子轮",
         "amount": "$2.55M",
         "total_raised": "$2.55M",
         "announced_at": "2026-07-16",
@@ -906,7 +1027,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-adb92a0723de45a1",
-                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
+                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
+                "source_content_hash": "1dcd4855bd96a462",
+                "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
               }
             ],
             "entity_id": null
@@ -917,7 +1040,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-adb92a0723de45a1",
-                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
+                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
+                "source_content_hash": "1dcd4855bd96a462",
+                "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
               }
             ],
             "entity_id": null
@@ -928,7 +1053,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-adb92a0723de45a1",
-                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
+                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
+                "source_content_hash": "1dcd4855bd96a462",
+                "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
               }
             ],
             "entity_id": null
@@ -939,7 +1066,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-adb92a0723de45a1",
-                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
+                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
+                "source_content_hash": "1dcd4855bd96a462",
+                "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
               }
             ],
             "entity_id": null
@@ -950,7 +1079,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-adb92a0723de45a1",
-                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
+                "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
+                "source_content_hash": "1dcd4855bd96a462",
+                "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
               }
             ],
             "entity_id": null
@@ -959,11 +1090,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-adb92a0723de45a1",
-            "quote": "Today the company is announcing a $2.55M pre-seed round to bring autonomous engineering to the OS layer."
+            "quote": "Today the company is announcing a $2.55M pre-seed round to bring autonomous engineering to the OS layer.",
+            "source_content_hash": "1dcd4855bd96a462",
+            "quote_hash": "7fa3af54f72637eb6938cfb956e666413e089fe054f87762caa1ca9fbf881164"
           },
           {
             "source_id": "FISRC-82d1823aa14d9f73",
-            "quote": "today announced a $2.55 million pre-seed funding round"
+            "quote": "today announced a $2.55 million pre-seed funding round",
+            "source_content_hash": "d0e91e41c67236a3",
+            "quote_hash": "284db711fa2095445ffa5f0bec6dc4b5aa41ab3b79972bb81f9b225c6cf76a36"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b678e91bc60fb0f0",
+            "round_original": "pre-seed",
+            "amount": "$2.55M",
+            "announced_at": "2026-07-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adb92a0723de45a1",
+                "quote": "Today the company is announcing a $2.55M pre-seed round to bring autonomous engineering to the OS layer.",
+                "source_content_hash": "1dcd4855bd96a462",
+                "quote_hash": "7fa3af54f72637eb6938cfb956e666413e089fe054f87762caa1ca9fbf881164"
+              },
+              {
+                "source_id": "FISRC-82d1823aa14d9f73",
+                "quote": "today announced a $2.55 million pre-seed funding round",
+                "source_content_hash": "d0e91e41c67236a3",
+                "quote_hash": "284db711fa2095445ffa5f0bec6dc4b5aa41ab3b79972bb81f9b225c6cf76a36"
+              }
+            ]
           }
         ]
       },
@@ -981,7 +1141,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2db624a78aaf511b",
-              "quote": "Diagnose: autonomous investigation across the device stack. Upload a bugreport, logcat, dmesg, modem trace, CAN bus capture, or a bundle of them. Get a cited root-cause report back, in minutes."
+              "quote": "Diagnose: autonomous investigation across the device stack. Upload a bugreport, logcat, dmesg, modem trace, CAN bus capture, or a bundle of them. Get a cited root-cause report back, in minutes.",
+              "source_content_hash": "8ecf210e72543cfa",
+              "quote_hash": "03bf056ff568f9e8c2cf7aa80a8edfb89cdf99a0302ff76f1736ad6999ac267a"
             }
           ],
           "entity_id": null
@@ -999,7 +1161,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2db624a78aaf511b",
-              "quote": "Remediate: AI-proposed fixes, human-approved. Diagnose finds the root cause. Remediate proposes the patch: cross-layer, cited back to the investigation that produced it, gated by the engineer who has to merge it. AI never commits; the human always does."
+              "quote": "Remediate: AI-proposed fixes, human-approved. Diagnose finds the root cause. Remediate proposes the patch: cross-layer, cited back to the investigation that produced it, gated by the engineer who has to merge it. AI never commits; the human always does.",
+              "source_content_hash": "8ecf210e72543cfa",
+              "quote_hash": "da4bf087574b180a8a2592eeeefe66a26c54b926a8c0f4033c7dced1f147854f"
             }
           ],
           "entity_id": null
@@ -1013,9 +1177,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "Since launch, logcat.ai has served hundreds of engineering teams through its beta"
+              "quote": "Since launch, logcat.ai has served hundreds of engineering teams through its beta",
+              "source_content_hash": "1dcd4855bd96a462",
+              "quote_hash": "aeff9aa184cb13d4ebba7c5603cef5562cd8317a3aa6bd40e5b47ed15916ee42"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1027,7 +1194,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "analyzed over 10 billion lines of trace data"
+              "quote": "analyzed over 10 billion lines of trace data",
+              "source_content_hash": "1dcd4855bd96a462",
+              "quote_hash": "f161d1a55b58db09d2dc2076f586e7f88bfc2c6d462e795c4336461be036e8f4"
             }
           ]
         },
@@ -1038,7 +1207,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "run thousands of autonomous investigations"
+              "quote": "run thousands of autonomous investigations",
+              "source_content_hash": "1dcd4855bd96a462",
+              "quote_hash": "848d6227ef4226a5e70b20f348ccfff8f3c22824e9cb63a05e693c42d3864407"
             }
           ]
         },
@@ -1049,7 +1220,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "served hundreds of engineering teams through its beta"
+              "quote": "served hundreds of engineering teams through its beta",
+              "source_content_hash": "1dcd4855bd96a462",
+              "quote_hash": "9811279d0f6d96a819c9f575698f041820bb86cd5313bc1e2d2ffcfc7b12d252"
             }
           ]
         },
@@ -1060,7 +1233,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82d1823aa14d9f73",
-              "quote": "The company is currently just its two founders"
+              "quote": "The company is currently just its two founders",
+              "source_content_hash": "d0e91e41c67236a3",
+              "quote_hash": "bc1e2f2a876a98c29929501df638a24a6be98e1b7cb2984919bb760bb7975729"
             }
           ]
         },
@@ -1071,7 +1246,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-82d1823aa14d9f73",
-              "quote": "plans to grow by about 10 people over the next year as a distributed team"
+              "quote": "plans to grow by about 10 people over the next year as a distributed team",
+              "source_content_hash": "d0e91e41c67236a3",
+              "quote_hash": "c000962d1d3b41b8279572622968464204dbc389a29658c78df2f5145e558904"
             }
           ]
         }
@@ -1091,7 +1268,21 @@
           "操作系统层AI工具的市场教育成本高，目标客户（OEM、芯片制造商）决策周期长，商业化速度存在不确定性。"
         ],
         "related_direction_id": "",
-        "sector": "AI原生设备系统工程"
+        "sector": "AI原生设备系统工程",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是操作系统层工程工具的AI化替代。当前融资所依赖的已验证信号包括：beta阶段已服务数百个工程团队、分析超过100亿行追踪数据、运行数千次自主调查，并已从beta客户产生收入。这些信号表明产品在真实工程工作流中已获得初步验证，但判断的证据边界限于beta规模和早期收入，尚未披露付费客户数量或合同金额。",
+          "evidence_signals": [
+            "beta阶段已服务数百个工程团队",
+            "已分析超过100亿行追踪数据",
+            "已运行数千次自主调查",
+            "已从beta客户产生收入"
+          ],
+          "risks": [
+            "公司目前仅有2名创始人，团队规模极小，产品迭代和客户支持能力受限。",
+            "操作系统层AI工具的市场教育成本高，目标客户（OEM、芯片制造商）决策周期长，商业化速度存在不确定性。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1099,130 +1290,70 @@
           "target_kind": "product",
           "research_name": "Diagnose",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2db624a78aaf511b",
-              "quote": "Diagnose: autonomous investigation across the device stack. Upload a bugreport, logcat, dmesg, modem trace, CAN bus capture, or a bundle of them. Get a cited root-cause report back, in minutes."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Remediate",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2db624a78aaf511b",
-              "quote": "Remediate: AI-proposed fixes, human-approved. Diagnose finds the root cause. Remediate proposes the patch: cross-layer, cited back to the investigation that produced it, gated by the engineer who has to merge it. AI never commits; the human always does."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Varun Chitre",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "logcat.ai was founded by Varun Chitre and Tarun Vashisth, who worked together as founding engineers at Esper. Varun brings more than 13 years in device systems engineering"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tarun Vashisth",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-82d1823aa14d9f73",
-              "quote": "logcat.ai was co-founded by Varun Chitre, Founder and CEO, and Tarun Vashisth, CTO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Act One Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "TheFounderVC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Shorewind Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Clayoquot Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alumni Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未披露具体名称",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-adb92a0723de45a1",
-              "quote": "Since launch, logcat.ai has served hundreds of engineering teams through its beta"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1284,13 +1415,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:56:41.780Z"
+      "published_at": "2026-07-26T14:56:41.780Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Diagnose",
+            "Remediate"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Tarun Vashisth",
+            "Varun Chitre"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-b678e91bc60fb0f0"
+      ],
+      "aggregation": {
+        "key": "EN-9a1b3d418cbbdf96|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-98dcf9e3a13b56dc",
       "triggered_by_event_id": "EV-e3792591090281c6",
       "as_of_date": "2026-07-19",
@@ -1308,7 +1470,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2d967e0fdfd00a36",
-                "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison"
+                "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison",
+                "source_content_hash": "8156e6d44a881bfe",
+                "quote_hash": "48578a7b173eb46fcf2cc6a9202d817f7d3679be1484d804c23ef2a0f316f592"
               }
             ],
             "entity_id": null
@@ -1319,7 +1483,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2d967e0fdfd00a36",
-                "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison"
+                "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison",
+                "source_content_hash": "8156e6d44a881bfe",
+                "quote_hash": "48578a7b173eb46fcf2cc6a9202d817f7d3679be1484d804c23ef2a0f316f592"
               }
             ],
             "entity_id": null
@@ -1333,11 +1499,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-25feb2575e360881",
-            "quote": "Artificial intelligence infrastructure startup General Compute Inc."
+            "quote": "Artificial intelligence infrastructure startup General Compute Inc.",
+            "source_content_hash": "7667efc11f51baf0",
+            "quote_hash": "a4553a39796c5649d5c0a79b27a9a1fed4f08c200a6871625a99f02f792b22b0"
           },
           {
             "source_id": "FISRC-35865db680281565",
-            "quote": "San Francisco, United States"
+            "quote": "San Francisco, United States",
+            "source_content_hash": "1ddb9b8ebc340266",
+            "quote_hash": "2caab87b8a1f01a2e5adbce5579dd3d5a801d3c423769cac3d9edb6536faa324"
           }
         ]
       },
@@ -1353,11 +1523,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-25feb2575e360881",
-                "quote": "Upper90, the investment firm that is underwriting the round"
+                "quote": "Upper90, the investment firm that is underwriting the round",
+                "source_content_hash": "7667efc11f51baf0",
+                "quote_hash": "b91ede819d31f01029b1649fc603c4c6743902a1099506f1d4a76f9269a0f781"
               },
               {
                 "source_id": "FISRC-35865db680281565",
-                "quote": "underwritten by Upper90"
+                "quote": "underwritten by Upper90",
+                "source_content_hash": "1ddb9b8ebc340266",
+                "quote_hash": "ed1f26e779f9a568efc4aa8b05862ac96c6d407b99c05a71f091e00ab8933542"
               }
             ],
             "entity_id": null
@@ -1366,11 +1540,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-25feb2575e360881",
-            "quote": "General Compute Inc. today announced that it has secured $400 million in debt financing."
+            "quote": "General Compute Inc. today announced that it has secured $400 million in debt financing.",
+            "source_content_hash": "7667efc11f51baf0",
+            "quote_hash": "1092a6678084de85d5314733c4382ff2146b65bdbae4a68151a5be8b978736f3"
           },
           {
             "source_id": "FISRC-2d967e0fdfd00a36",
-            "quote": "General Compute raised a $15 million seed round in May"
+            "quote": "General Compute raised a $15 million seed round in May",
+            "source_content_hash": "8156e6d44a881bfe",
+            "quote_hash": "f54fdaed7acaa13fcd12400315dcef9d8ff3d722a4a5f1b092b15cdecfc5155a"
+          }
+        ],
+        "round_code": "debt",
+        "round_original": "债务融资",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e3792591090281c6",
+            "round_original": "债务融资",
+            "amount": "$400M",
+            "announced_at": "2026-07-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-25feb2575e360881",
+                "quote": "General Compute Inc. today announced that it has secured $400 million in debt financing.",
+                "source_content_hash": "7667efc11f51baf0",
+                "quote_hash": "1092a6678084de85d5314733c4382ff2146b65bdbae4a68151a5be8b978736f3"
+              },
+              {
+                "source_id": "FISRC-2d967e0fdfd00a36",
+                "quote": "General Compute raised a $15 million seed round in May",
+                "source_content_hash": "8156e6d44a881bfe",
+                "quote_hash": "f54fdaed7acaa13fcd12400315dcef9d8ff3d722a4a5f1b092b15cdecfc5155a"
+              }
+            ]
           }
         ]
       },
@@ -1386,7 +1589,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-25feb2575e360881",
-              "quote": "The first offers managed versions of open-source language models. Developers can access the models through an application programming interface modeled after the one used by OpenAI Group PBC"
+              "quote": "The first offers managed versions of open-source language models. Developers can access the models through an application programming interface modeled after the one used by OpenAI Group PBC",
+              "source_content_hash": "7667efc11f51baf0",
+              "quote_hash": "012c88b1e57cc9abfd84c23ad472ea014370d308ca052ad392fa09cfa7cdfff1"
             }
           ],
           "entity_id": null
@@ -1404,9 +1609,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a44f946fb36e8104",
-              "quote": "On GPT-OSS-120B, this stack delivers time-to-first-token 2.6x faster and end-to-end latency 4.6x faster than Together AI"
+              "quote": "On GPT-OSS-120B, this stack delivers time-to-first-token 2.6x faster and end-to-end latency 4.6x faster than Together AI",
+              "source_content_hash": "2fbaab1956f996dc",
+              "quote_hash": "47562f132363a34fa7cb39e3a09318e4dd6cc81cbd613b4d8dc1e06b936811e1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "TensorWave",
@@ -1418,9 +1626,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d967e0fdfd00a36",
-              "quote": "TensorWave, another AI infrastructure company, is making a similar bet on a partnership with AMD."
+              "quote": "TensorWave, another AI infrastructure company, is making a similar bet on a partnership with AMD.",
+              "source_content_hash": "8156e6d44a881bfe",
+              "quote_hash": "9dbc4ce92b05d9828b6138c22e2d557b21c6deadad08b3b91e148cbad98f5a4a"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1431,7 +1642,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-25feb2575e360881",
-              "quote": "secured $400 million in debt financing"
+              "quote": "secured $400 million in debt financing",
+              "source_content_hash": "7667efc11f51baf0",
+              "quote_hash": "0f593e3a0c92808566bc19e684aa532cb813ba1f46eb9e4f2d7a10839af2d03a"
             }
           ]
         },
@@ -1442,7 +1655,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-25feb2575e360881",
-              "quote": "will initially provide the company with $100 million"
+              "quote": "will initially provide the company with $100 million",
+              "source_content_hash": "7667efc11f51baf0",
+              "quote_hash": "546af436472089932aa5f959950bc6c26bd39530cd29a84e7d5b152eb50838de"
             }
           ]
         },
@@ -1453,7 +1668,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d967e0fdfd00a36",
-              "quote": "General Compute raised a $15 million seed round in May"
+              "quote": "General Compute raised a $15 million seed round in May",
+              "source_content_hash": "8156e6d44a881bfe",
+              "quote_hash": "f54fdaed7acaa13fcd12400315dcef9d8ff3d722a4a5f1b092b15cdecfc5155a"
             }
           ]
         },
@@ -1464,7 +1681,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b30ba00b07a63688",
-              "quote": "General Compute says it has more than $300 million of secured, price-protected supply of that silicon lined up."
+              "quote": "General Compute says it has more than $300 million of secured, price-protected supply of that silicon lined up.",
+              "source_content_hash": "b121386b77539543",
+              "quote_hash": "462952e283d5b9568b52fb4f6df867d44394a63e19e83284665bea5b44047278"
             }
           ]
         },
@@ -1475,7 +1694,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a44f946fb36e8104",
-              "quote": "end-to-end latency 4.6x faster than Together AI"
+              "quote": "end-to-end latency 4.6x faster than Together AI",
+              "source_content_hash": "2fbaab1956f996dc",
+              "quote_hash": "e6231d0b25d79b298c093608438cf8608ad306e20e36f415729ea43d761328aa"
             }
           ]
         },
@@ -1486,7 +1707,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a44f946fb36e8104",
-              "quote": "time-to-first-token 2.6x faster"
+              "quote": "time-to-first-token 2.6x faster",
+              "source_content_hash": "2fbaab1956f996dc",
+              "quote_hash": "8d33aa3fbe1ffcfb00dd2f439b3bb55d582df0718fea8ab0934f0085f7d1eac9"
             }
           ]
         },
@@ -1497,7 +1720,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a44f946fb36e8104",
-              "quote": "SN50 moves total rack throughput from roughly 800 tokens per second on SN40L to roughly 15,000 tokens per second, nearly a twenty-times improvement"
+              "quote": "SN50 moves total rack throughput from roughly 800 tokens per second on SN40L to roughly 15,000 tokens per second, nearly a twenty-times improvement",
+              "source_content_hash": "2fbaab1956f996dc",
+              "quote_hash": "94da15836753cba3c73fbce8c003aa571ddd75a2a42b672b46753fab664dd0a0"
             }
           ]
         }
@@ -1515,7 +1740,19 @@
           "专用推理芯片（如SambaNova SN40/SN50）缺乏成熟的二级市场，抵押品价值高度依赖芯片利用率和单一供应商的持续运营，在客户需求疲软时，芯片可能同时失去租户和转售价值。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施/推理云"
+        "sector": "AI基础设施/推理云",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI推理层从Nvidia GPU向专用推理芯片的碎片化迁移。本轮融资的已验证信号包括：1) 公司已获得超过3亿美元的SambaNova芯片供应协议；2) 已签约15兆瓦的风冷托管机架容量；3) 基于SN40L的堆栈在特定模型上实现了对GPU竞品4.6倍的端到端延迟优势。然而，这些性能数据来自供应商，未经独立基准测试验证，且专用推理芯片缺乏成熟的二级市场，其作为抵押品的价值高度依赖芯片利用率和SambaNova作为持续经营主体的稳定性。",
+          "evidence_signals": [
+            "已获得超过3亿美元、价格受保护的SambaNova芯片供应协议。",
+            "已签约15兆瓦风冷托管机架容量的购买选择权。",
+            "基于SambaNova SN40L的堆栈在GPT-OSS-120B模型上，端到端延迟比Together AI快4.6倍。"
+          ],
+          "risks": [
+            "专用推理芯片（如SambaNova SN40/SN50）缺乏成熟的二级市场，抵押品价值高度依赖芯片利用率和单一供应商的持续运营，在客户需求疲软时，芯片可能同时失去租户和转售价值。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1523,82 +1760,42 @@
           "target_kind": "product",
           "research_name": "托管开源模型API服务",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-25feb2575e360881",
-              "quote": "The first offers managed versions of open-source language models. Developers can access the models through an application programming interface modeled after the one used by OpenAI Group PBC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Finn Puklowski",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d967e0fdfd00a36",
-              "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jason Goodison",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d967e0fdfd00a36",
-              "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Upper90",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-25feb2575e360881",
-              "quote": "Upper90, the investment firm that is underwriting the round"
-            },
-            {
-              "source_id": "FISRC-35865db680281565",
-              "quote": "underwritten by Upper90"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Together AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a44f946fb36e8104",
-              "quote": "On GPT-OSS-120B, this stack delivers time-to-first-token 2.6x faster and end-to-end latency 4.6x faster than Together AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "TensorWave",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d967e0fdfd00a36",
-              "quote": "TensorWave, another AI infrastructure company, is making a similar bet on a partnership with AMD."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1684,10 +1881,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:56:19.570Z"
+      "published_at": "2026-07-26T14:56:19.570Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "托管开源模型API服务"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Finn Puklowski",
+            "Jason Goodison"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e3792591090281c6"
+      ],
+      "aggregation": {
+        "key": "EN-fdecfc27f301da9c|debt",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

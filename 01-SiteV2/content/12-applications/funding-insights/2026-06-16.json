@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-16",
     "generated_at": "2026-07-27T05:15:52.180Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 2,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-b97aa7ccb5e70984",
       "triggered_by_event_id": "EV-f3bb064250dba2b2",
       "as_of_date": "2026-06-16",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2caf93b29d914f26",
-                "quote": "Brian Elliott, co-founder and CEO of Blitzy"
+                "quote": "Brian Elliott, co-founder and CEO of Blitzy",
+                "source_content_hash": "9bcac210292cba82",
+                "quote_hash": "9deeacdb2a8aecb279fd48ffa2dc7900fa572823c2857cef85654e2e2f59b741"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2caf93b29d914f26",
-                "quote": "Sid Pardeshi (CTO)"
+                "quote": "Sid Pardeshi (CTO)",
+                "source_content_hash": "9bcac210292cba82",
+                "quote_hash": "e0a423d863d6399cc8bed740a9efcca04b1039af02ac6a4f4bb9e1aff30f52a6"
               }
             ],
             "entity_id": null
@@ -58,23 +63,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74a0b8b6b080cbc0",
-              "quote": "an 80-person startup in Kendall Square"
+              "quote": "an 80-person startup in Kendall Square",
+              "source_content_hash": "d183692947d2a822",
+              "quote_hash": "7a7d55b86620a301bc39ec836448dfb72ac11469266ecebd1f34adda69a206d0"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-2caf93b29d914f26",
-            "quote": "Cambridge, Massachusetts-based Blitzy"
+            "quote": "Cambridge, Massachusetts-based Blitzy",
+            "source_content_hash": "9bcac210292cba82",
+            "quote_hash": "2377718c912e8a31322c8ffa6eeaadb9b053babb9095a86e9e49e6e91972f1db"
           },
           {
             "source_id": "FISRC-5f759c18f78e8746",
-            "quote": "Blitzy, the autonomous software development platform"
+            "quote": "Blitzy, the autonomous software development platform",
+            "source_content_hash": "fae3a89cadff8d5b",
+            "quote_hash": "1720d479552d69a909061a6e763fa696b68352661b6ff4a95888130d703a0b27"
           }
         ]
       },
       "financing": {
-        "round": "Growth round",
+        "round": "成长轮",
         "amount": "$200 million",
         "total_raised": "more than $204.4 million",
         "announced_at": "2026-05-05",
@@ -85,40 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2caf93b29d914f26",
-                "quote": "Northzone led its latest financing."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "NFX",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2caf93b29d914f26",
-                "quote": "existing backers such as NFX, Link Ventures and Flybridge"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Link Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2caf93b29d914f26",
-                "quote": "existing backers such as NFX, Link Ventures and Flybridge"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Flybridge",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2caf93b29d914f26",
-                "quote": "existing backers such as NFX, Link Ventures and Flybridge"
+                "quote": "Northzone led its latest financing.",
+                "source_content_hash": "9bcac210292cba82",
+                "quote_hash": "c72a8536ec3b4a1a9e72882540b67f5fdaf9019ab4e406c1b3cba5d5ab1ac3bd"
               }
             ],
             "entity_id": null
@@ -127,7 +107,86 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5f759c18f78e8746",
-            "quote": "Blitzy, the autonomous software development platform, today announced a $200 million funding round at a $1.4 billion valuation."
+            "quote": "Blitzy, the autonomous software development platform, today announced a $200 million funding round at a $1.4 billion valuation.",
+            "source_content_hash": "fae3a89cadff8d5b",
+            "quote_hash": "05d199588e1f3096449e07238f4f8505fcbd828169928c848366511ea2a038e5"
+          }
+        ],
+        "round_code": "growth",
+        "round_original": "Growth round",
+        "other_round_investors": [
+          {
+            "name": "NFX",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "existing backers such as NFX, Link Ventures and Flybridge",
+                "source_content_hash": "9bcac210292cba82",
+                "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Link Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "existing backers such as NFX, Link Ventures and Flybridge",
+                "source_content_hash": "9bcac210292cba82",
+                "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Flybridge",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "existing backers such as NFX, Link Ventures and Flybridge",
+                "source_content_hash": "9bcac210292cba82",
+                "quote_hash": "51415ee32be915d0bf4a13b6c78560f1aaf6159a707bd04025eaa9b54d809504"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-f3bb064250dba2b2",
+            "round_original": "Growth round",
+            "amount": "$200 million",
+            "announced_at": "2026-05-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f759c18f78e8746",
+                "quote": "Blitzy, the autonomous software development platform, today announced a $200 million funding round at a $1.4 billion valuation.",
+                "source_content_hash": "fae3a89cadff8d5b",
+                "quote_hash": "05d199588e1f3096449e07238f4f8505fcbd828169928c848366511ea2a038e5"
+              }
+            ]
           }
         ]
       },
@@ -146,7 +205,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "its platform autonomously completes months of software development, including automated testing and quality validation."
+              "quote": "its platform autonomously completes months of software development, including automated testing and quality validation.",
+              "source_content_hash": "9bcac210292cba82",
+              "quote_hash": "53303cad137b5eab10fbf778f0bb20ba7ae4c0fffe00d87ff4426a4080a15a01"
             }
           ],
           "entity_id": null
@@ -160,9 +221,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "QAD compressed a 24-month iOS to Android migration into 6 months, unlocking a European market expansion 3x faster than their original plan"
+              "quote": "QAD compressed a 24-month iOS to Android migration into 6 months, unlocking a European market expansion 3x faster than their original plan",
+              "source_content_hash": "28071c7466ddb9bd",
+              "quote_hash": "b9f954aa59ef2a1a7963573431308a52385e9b82bc5c417e424d781a8d5642b3"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Builders FirstSource",
@@ -171,9 +235,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "Builders FirstSource, the largest supplier of structural building products in the United States and a member of the Global 2000, accelerated software development velocity by 3x in the first three months. 120 of their engineers now work in AI-native workflows on Blitzy."
+              "quote": "Builders FirstSource, the largest supplier of structural building products in the United States and a member of the Global 2000, accelerated software development velocity by 3x in the first three months. 120 of their engineers now work in AI-native workflows on Blitzy.",
+              "source_content_hash": "28071c7466ddb9bd",
+              "quote_hash": "0c6ac01c9a203c4a0733cd07ee42f3311175b238fdefa65cffe2c6a8b06e925d"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "一家财富100强客户",
@@ -182,9 +249,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "A Fortune 100 customer used Blitzy to reverse engineer, document, and ingest 33 million lines of mainframe code. The internal estimate for that work was 9 months and a dedicated team of engineers. Blitzy completed it in 3.5 days."
+              "quote": "A Fortune 100 customer used Blitzy to reverse engineer, document, and ingest 33 million lines of mainframe code. The internal estimate for that work was 9 months and a dedicated team of engineers. Blitzy completed it in 3.5 days.",
+              "source_content_hash": "28071c7466ddb9bd",
+              "quote_hash": "bbe2811383a95e6322f63487b1c663dc2df0083113084a0c6f21e2ebdba6a1d5"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -198,9 +268,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "Unlike rivals focused on coding assistants or single-agent tools, Blitzy autonomously understands entire enterprise codebases and executes large-scale software projects across thousands of coordinated agents."
+              "quote": "Unlike rivals focused on coding assistants or single-agent tools, Blitzy autonomously understands entire enterprise codebases and executes large-scale software projects across thousands of coordinated agents.",
+              "source_content_hash": "065f3fc939e0d0f0",
+              "quote_hash": "921fc8cda60147c32fedfb60ab6b13550a2efe505dbe4b01e91c1a7b1b237b93"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "GitHub",
@@ -212,9 +285,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "companies such as GitHub, through GitHub Copilot and Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
+              "quote": "companies such as GitHub, through GitHub Copilot and Cognition with its Devin coding agent, are pushing aggressively into enterprise automation.",
+              "source_content_hash": "065f3fc939e0d0f0",
+              "quote_hash": "353a40933f95d31b97987cf4be4348ad9e72360037ad44dba061f99cde352db5"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cognition",
@@ -226,9 +302,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
+              "quote": "Cognition with its Devin coding agent, are pushing aggressively into enterprise automation.",
+              "source_content_hash": "065f3fc939e0d0f0",
+              "quote_hash": "f1aee38ebcdb3b0936e7ac04212425618147930e13dd5761e7bb63eee61656b3"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -239,7 +318,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5f759c18f78e8746",
-              "quote": "the company achieved a record-breaking score of 66.5%, surpassing the latest releases from other major incumbents."
+              "quote": "the company achieved a record-breaking score of 66.5%, surpassing the latest releases from other major incumbents.",
+              "source_content_hash": "fae3a89cadff8d5b",
+              "quote_hash": "ba6ad6505579255fc8b65d4a0d81a9dd0b86cc9973d6ba21fc62d402844afa55"
             }
           ]
         },
@@ -250,7 +331,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "The platform has ingested and understood more than one billion lines of enterprise code since September 2025."
+              "quote": "The platform has ingested and understood more than one billion lines of enterprise code since September 2025.",
+              "source_content_hash": "28071c7466ddb9bd",
+              "quote_hash": "4a0a2390d005b54396f1d7a55c1e14ed519c27b20994a025f413f450d7ba09a8"
             }
           ]
         },
@@ -261,7 +344,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "more than 80% of development work can be completed autonomously before engineering teams finalise the remaining portions."
+              "quote": "more than 80% of development work can be completed autonomously before engineering teams finalise the remaining portions.",
+              "source_content_hash": "065f3fc939e0d0f0",
+              "quote_hash": "797983276a9ab3000fee1bb6b3bfb0e4889282f5f7fdca6c4df7533c9cc8cabc"
             }
           ]
         },
@@ -272,7 +357,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "Since January 2025, for every dollar we have burned, we have generated $2.91 in ARR."
+              "quote": "Since January 2025, for every dollar we have burned, we have generated $2.91 in ARR.",
+              "source_content_hash": "28071c7466ddb9bd",
+              "quote_hash": "6c852bb883485d9a398c4accec8572cf571306fc86072310685ca50fd60421cd"
             }
           ]
         },
@@ -283,7 +370,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5f759c18f78e8746",
-              "quote": "Having more than doubled its headcount in the past six months"
+              "quote": "Having more than doubled its headcount in the past six months",
+              "source_content_hash": "fae3a89cadff8d5b",
+              "quote_hash": "2549b759c6c1ef8f6e358cb2545b6909de741dcdebcd9219e761c6f73b12e61d"
             }
           ]
         },
@@ -294,7 +383,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74a0b8b6b080cbc0",
-              "quote": "anywhere from $500,000 to $10 million a year or more for coding projects"
+              "quote": "anywhere from $500,000 to $10 million a year or more for coding projects",
+              "source_content_hash": "d183692947d2a822",
+              "quote_hash": "7767bd6775449390a0c3e601883f565dc3f183797a90eecb6c05e9ec77c53b4f"
             }
           ]
         }
@@ -306,7 +397,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform."
+              "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform.",
+              "source_content_hash": "065f3fc939e0d0f0",
+              "quote_hash": "17ddd5ed72e3ac2e8406949cbd66d223a89f9eab4b73b7809e1ddd88774aabc9"
             }
           ]
         }
@@ -322,7 +415,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-de5c237e0f553a36",
-                "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform."
+                "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform.",
+                "source_content_hash": "065f3fc939e0d0f0",
+                "quote_hash": "17ddd5ed72e3ac2e8406949cbd66d223a89f9eab4b73b7809e1ddd88774aabc9"
               }
             ]
           }
@@ -342,7 +437,24 @@
           "GitHub Copilot、Devin、Cursor等竞品拥有更大的开发者生态和用户基数，可能在迭代中逐步增加企业级功能，侵蚀Blitzy的差异化优势。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI智能体与自主软件开发"
+        "sector": "AI智能体与自主软件开发",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：企业级自主软件开发的可行性取决于“深度环境理解+超大规模智能体编排”的融合，而非单一模型能力。Blitzy以14亿美元估值融资2亿美元，其估值支撑来自已验证的业务信号：平台已摄取超过10亿行企业代码，在SWE-Bench Pro上以66.5%的得分超越主要竞品，并被数十家Global 2000企业采用，客户年度合同价值高达1000万美元以上。资本效率指标（每消耗1美元产生2.91美元ARR）进一步表明其商业模式具备SaaS级别的毛利率，而非单纯的模型调用成本结构。然而，这些信号主要来自公司官方披露和有限客户案例，缺乏独立审计的营收数据，且企业软件销售周期长、合规门槛高，规模化速度存在不确定性。",
+          "evidence_signals": [
+            "平台已摄取并理解超过10亿行企业代码（自2025年9月以来）",
+            "SWE-Bench Pro得分66.5%，超越主要竞品最新版本",
+            "被数十家Global 2000企业采用，覆盖10个行业",
+            "客户年度合同价值范围：50万至1000万美元以上",
+            "资本效率：每消耗1美元产生2.91美元ARR（2025年1月以来）",
+            "Builders FirstSource在三个月内实现3倍开发速度提升，120名工程师采用AI原生工作流"
+          ],
+          "risks": [
+            "公司未披露硬性营收数据，所有财务指标均来自创始人自述，缺乏独立验证，实际商业化进展可能低于宣称水平。",
+            "企业级软件销售周期长、采购流程复杂，从试点到全企业部署的转化速度和客单价提升存在不确定性。",
+            "GitHub Copilot、Devin、Cursor等竞品拥有更大的开发者生态和用户基数，可能在迭代中逐步增加企业级功能，侵蚀Blitzy的差异化优势。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -350,169 +462,91 @@
           "target_kind": "product",
           "research_name": "Blitzy Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "its platform autonomously completes months of software development, including automated testing and quality validation."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Brian Elliott",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "Brian Elliott, co-founder and CEO of Blitzy"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sid Pardeshi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "Sid Pardeshi (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Northzone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "Northzone led its latest financing."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "NFX",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "existing backers such as NFX, Link Ventures and Flybridge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Link Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "existing backers such as NFX, Link Ventures and Flybridge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Flybridge",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2caf93b29d914f26",
-              "quote": "existing backers such as NFX, Link Ventures and Flybridge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "QAD",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "QAD compressed a 24-month iOS to Android migration into 6 months, unlocking a European market expansion 3x faster than their original plan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Builders FirstSource",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "Builders FirstSource, the largest supplier of structural building products in the United States and a member of the Global 2000, accelerated software development velocity by 3x in the first three months. 120 of their engineers now work in AI-native workflows on Blitzy."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家财富100强客户",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-149ad7eb8c964fbb",
-              "quote": "A Fortune 100 customer used Blitzy to reverse engineer, document, and ingest 33 million lines of mainframe code. The internal estimate for that work was 9 months and a dedicated team of engineers. Blitzy completed it in 3.5 days."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anysphere",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "Unlike rivals focused on coding assistants or single-agent tools, Blitzy autonomously understands entire enterprise codebases and executes large-scale software projects across thousands of coordinated agents."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "GitHub",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "companies such as GitHub, through GitHub Copilot and Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cognition",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-de5c237e0f553a36",
-              "quote": "Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -598,13 +632,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:12:43.254Z"
+      "published_at": "2026-07-26T15:12:43.254Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Blitzy Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Brian Elliott",
+            "Sid Pardeshi"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f3bb064250dba2b2"
+      ],
+      "aggregation": {
+        "key": "EN-15c785fe4bcb86f5|growth",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-6b09bb9cfd443696",
       "triggered_by_event_id": "EV-e3382d1c1d7db751",
       "as_of_date": "2026-06-16",
@@ -622,7 +686,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-eb156fd01909fe18",
-                "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
+                "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar",
+                "source_content_hash": "a56910704adc32b1",
+                "quote_hash": "45c0009d2d705fab4534c456090e92cc09c2837f3d144a5e3a28e56cc2a99666"
               }
             ],
             "entity_id": null
@@ -633,7 +699,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-eb156fd01909fe18",
-                "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
+                "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar",
+                "source_content_hash": "a56910704adc32b1",
+                "quote_hash": "45c0009d2d705fab4534c456090e92cc09c2837f3d144a5e3a28e56cc2a99666"
               }
             ],
             "entity_id": null
@@ -647,16 +715,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-eb156fd01909fe18",
-            "quote": "The Bengaluru-based company is now India’s newest AI unicorn"
+            "quote": "The Bengaluru-based company is now India’s newest AI unicorn",
+            "source_content_hash": "a56910704adc32b1",
+            "quote_hash": "6270b558f30b3635147bfe3967d8bd3a042f12840ff39202ea9f59b82b1c09cb"
           },
           {
             "source_id": "FISRC-4f01756aafea2905",
-            "quote": "Sarvam is India's full-stack sovereign AI company, building AI where the value loops of data, models, and agents remain within a country or company."
+            "quote": "Sarvam is India's full-stack sovereign AI company, building AI where the value loops of data, models, and agents remain within a country or company.",
+            "source_content_hash": "7b097b12ec8190cb",
+            "quote_hash": "6c4ecbb4cbdc0cae7eb07dc8743718cb7d36f3e5fd74f3d181fbb88db10e06d3"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$234 million",
         "total_raised": "$275 million",
         "announced_at": "2026-06-15",
@@ -667,7 +739,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-eb156fd01909fe18",
-                "quote": "$150 million of that money will come from HCLTech, the IT subsidiary of Indian conglomerate HCL Group and lead strategic investor in the round."
+                "quote": "$150 million of that money will come from HCLTech, the IT subsidiary of Indian conglomerate HCL Group and lead strategic investor in the round.",
+                "source_content_hash": "a56910704adc32b1",
+                "quote_hash": "d9fa889a610e88741beb4acec9196c072cf5ac15b527fa97c7502433224e6edf"
               }
             ],
             "entity_id": null
@@ -678,51 +752,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-eb156fd01909fe18",
-                "quote": "Bessemer Venture Partners also participated alongside existing backers Khosla Ventures and Peak XV Partners."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Khosla Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-eb156fd01909fe18",
-                "quote": "existing backers Khosla Ventures and Peak XV Partners"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Peak XV Partners",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-eb156fd01909fe18",
-                "quote": "existing backers Khosla Ventures and Peak XV Partners"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Lightspeed",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-53dc2175b7e46ad0",
-                "quote": "Sarvam was last valued at $110 million in 2023, when it raised capital from Peak XV, Khosla Ventures and Lightspeed."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Avvanti Advisors",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-8df989ade62ab0ef",
-                "quote": "Sarvam's previous valuation of about $196 million in 2025, when it raised $228,000 from Avvanti Advisors."
+                "quote": "Bessemer Venture Partners also participated alongside existing backers Khosla Ventures and Peak XV Partners.",
+                "source_content_hash": "a56910704adc32b1",
+                "quote_hash": "97bbf561124cac8485e12d3b50dfea0629c01b4bfe3050f5dfa7b67c74fd5504"
               }
             ],
             "entity_id": null
@@ -731,11 +763,117 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-eb156fd01909fe18",
-            "quote": "Sarvam has raised $234 million at a $1.5 billion valuation"
+            "quote": "Sarvam has raised $234 million at a $1.5 billion valuation",
+            "source_content_hash": "a56910704adc32b1",
+            "quote_hash": "c4c92e865ce44c4adc25603e59ef107515b8453776950f0214902631285ab87c"
           },
           {
             "source_id": "FISRC-53dc2175b7e46ad0",
-            "quote": "Sarvam AI has raised $234 million in an ongoing funding round led by HCLTech"
+            "quote": "Sarvam AI has raised $234 million in an ongoing funding round led by HCLTech",
+            "source_content_hash": "b5373ac2789f188b",
+            "quote_hash": "4eae9e83a14631bf67119a5a3e862e14ea04b791d1df9b9b2c56df0efd5b54ef"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "existing backers Khosla Ventures and Peak XV Partners",
+                "source_content_hash": "a56910704adc32b1",
+                "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Peak XV Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "existing backers Khosla Ventures and Peak XV Partners",
+                "source_content_hash": "a56910704adc32b1",
+                "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Lightspeed",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-53dc2175b7e46ad0",
+                "quote": "Sarvam was last valued at $110 million in 2023, when it raised capital from Peak XV, Khosla Ventures and Lightspeed.",
+                "source_content_hash": "b5373ac2789f188b",
+                "quote_hash": "a24d793e43b2086c14a8890d1ca24afe21b55c55b1ff2f1fa9e78bde2b4bd1ef"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Avvanti Advisors",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8df989ade62ab0ef",
+                "quote": "Sarvam's previous valuation of about $196 million in 2025, when it raised $228,000 from Avvanti Advisors.",
+                "source_content_hash": "5017fce99239d59d",
+                "quote_hash": "697ce55b02b0b6ebb917207b2f858fda7630298c09228362f66906640df251f0"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-e3382d1c1d7db751",
+            "round_original": "Series B",
+            "amount": "$234 million",
+            "announced_at": "2026-06-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "Sarvam has raised $234 million at a $1.5 billion valuation",
+                "source_content_hash": "a56910704adc32b1",
+                "quote_hash": "c4c92e865ce44c4adc25603e59ef107515b8453776950f0214902631285ab87c"
+              },
+              {
+                "source_id": "FISRC-53dc2175b7e46ad0",
+                "quote": "Sarvam AI has raised $234 million in an ongoing funding round led by HCLTech",
+                "source_content_hash": "b5373ac2789f188b",
+                "quote_hash": "4eae9e83a14631bf67119a5a3e862e14ea04b791d1df9b9b2c56df0efd5b54ef"
+              }
+            ]
           }
         ]
       },
@@ -751,11 +889,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f01756aafea2905",
-              "quote": "Sarvam 105B matches or outperforms larger reasoning models on knowledge, reasoning, and agentic benchmarks"
+              "quote": "Sarvam 105B matches or outperforms larger reasoning models on knowledge, reasoning, and agentic benchmarks",
+              "source_content_hash": "7b097b12ec8190cb",
+              "quote_hash": "ea749a5d7021833880f424c56f585ba5c7043659ce24635f9aa1699052ebbfc8"
             },
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
+              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "649298670df522fc5d29aeab0316a29857d9fb19c6b0deca8569353da26468ff"
             }
           ],
           "entity_id": null
@@ -771,11 +913,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f01756aafea2905",
-              "quote": "Sarvam 30B is optimised for the edge, running on consumer hardware."
+              "quote": "Sarvam 30B is optimised for the edge, running on consumer hardware.",
+              "source_content_hash": "7b097b12ec8190cb",
+              "quote_hash": "a86f0306f73d6a0c9f559f76cb3e20675d4262b39b4e0a9a27553b93104ffe87"
             },
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
+              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "649298670df522fc5d29aeab0316a29857d9fb19c6b0deca8569353da26468ff"
             }
           ],
           "entity_id": null
@@ -791,7 +937,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f01756aafea2905",
-              "quote": "Sarvam Vision, built for handwriting and Indian-language records, is being used to digitise over 35 million pages from insurance forms to legacy land records."
+              "quote": "Sarvam Vision, built for handwriting and Indian-language records, is being used to digitise over 35 million pages from insurance forms to legacy land records.",
+              "source_content_hash": "7b097b12ec8190cb",
+              "quote_hash": "337da8b6b2d82fc5b4139e64e5039b936dcffb8ae00f32e2dbf1f541af6dd117"
             }
           ],
           "entity_id": null
@@ -805,9 +953,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders."
+              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders.",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "3d8733dcdc4eac0aab245e53baa3e8452da59a1599c3b5eb41e30c04201f139c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "一家大型金融科技公司",
@@ -816,9 +967,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people."
+              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people.",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "512a4297a7b9a069f0c8b2be6a2b2804d1471ad1b5334ef99d25dc1d1f95a138"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "SBI Life",
@@ -827,9 +981,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
+              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "42f3855eabb74e6b18f17722a52daa96a81a4a447e13505bd3e205a47e5c0b0e"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "IDFC First Bank",
@@ -838,9 +995,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
+              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "42f3855eabb74e6b18f17722a52daa96a81a4a447e13505bd3e205a47e5c0b0e"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -854,9 +1014,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
+              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "20f0fc3531574793929ddcb1be4f4e059295e847fdb581551a1fde21cc23b418"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "Anthropic",
@@ -868,13 +1031,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "Anthropic disabled access to its latest models , Fable 5 and Mythos 5, after the U.S. government ordered the company to suspend their use by any foreign national, citing national security concerns."
+              "quote": "Anthropic disabled access to its latest models , Fable 5 and Mythos 5, after the U.S. government ordered the company to suspend their use by any foreign national, citing national security concerns.",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "87c95ae938251537c857dc23e861e28e2130cfadce413de54ed6b628ed85eab3"
             },
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
+              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "20f0fc3531574793929ddcb1be4f4e059295e847fdb581551a1fde21cc23b418"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "Krutrim",
@@ -886,9 +1054,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c0d48a8fc598fade",
-              "quote": "Sarvam joins Bhavish Aggarwal-founded Krutrim as only India's AI startups to achieve unicorn status."
+              "quote": "Sarvam joins Bhavish Aggarwal-founded Krutrim as only India's AI startups to achieve unicorn status.",
+              "source_content_hash": "8e38d6a8bb9694d5",
+              "quote_hash": "5c1236aebc77a644f65467037832cb7eb979e2b4ca62b475d5afb50828b087ba"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Neysa",
@@ -900,9 +1071,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam’s round is the second largest in India’s artificial intelligence space after cloud infrastructure company Neysa closed a $1.2 billion transaction led by US alternative asset manager Blackstone."
+              "quote": "Sarvam’s round is the second largest in India’s artificial intelligence space after cloud infrastructure company Neysa closed a $1.2 billion transaction led by US alternative asset manager Blackstone.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "a32ca153c77a834471a604b13dd54a14da40e0651959114af4932de2944d50e9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Emergent",
@@ -914,9 +1088,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Vibe-coding startup Emergent is also closing in on a $200-250 million funding round led by private equity firm Creaegis."
+              "quote": "Vibe-coding startup Emergent is also closing in on a $200-250 million funding round led by private equity firm Creaegis.",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "9d5219b4d59e3e53411fa082e911880c346220788cdf6733a0b0dafa21b3374e"
             }
-          ]
+          ],
+          "entity_id": "EN-026c3bd4be5b91f3"
         }
       ],
       "metrics": [
@@ -927,7 +1104,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "its conversational AI platform now handles more than 2 million interactions a day"
+              "quote": "its conversational AI platform now handles more than 2 million interactions a day",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "c301fdba09f3db397e0bcd05bb98317253094c440a17948c1d6e78628ad7de39"
             }
           ]
         },
@@ -938,7 +1117,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "its inference platform processes roughly 10 million API calls daily"
+              "quote": "its inference platform processes roughly 10 million API calls daily",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "d673cf4441e8efe858db9eec82c0f3e2b66d197770c0155dde3cb7a3f660fd46"
             }
           ]
         },
@@ -949,7 +1130,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "Its speech models transcribe more than 500,000 hours of audio each month"
+              "quote": "Its speech models transcribe more than 500,000 hours of audio each month",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "89a1917a241548badf10d4e4067a6c7ac92a81dc6e6e90368ae0dd5d916ab3a4"
             }
           ]
         },
@@ -960,7 +1143,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "its document AI systems are being used to digitize more than 35 million pages of records"
+              "quote": "its document AI systems are being used to digitize more than 35 million pages of records",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "89998faa48c592588b32dc9664339430bdea8fd5c2ddaaacd74c8ba786556e7b"
             }
           ]
         },
@@ -971,7 +1156,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "its multilingual voice agents have collected data from 17 million farmers"
+              "quote": "its multilingual voice agents have collected data from 17 million farmers",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "c05cfc8d4d25f176b855fc2978a3227ee9e02e1b9a6643464c1d5d5b13608c7c"
             }
           ]
         },
@@ -982,7 +1169,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders"
+              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "e76afbf13b395a2b89f78c3f27d0eb907b529abd39c2a109ce4265a28a9bc9a1"
             }
           ]
         },
@@ -993,7 +1182,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people"
+              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "a6497d8f98da3a7c4d3e4f6743d76b5ac3264783243352519dbbc7a4cb8b7ac2"
             }
           ]
         },
@@ -1004,7 +1195,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam recorded a revenue of Rs 45 crore during fiscal 2026"
+              "quote": "Sarvam recorded a revenue of Rs 45 crore during fiscal 2026",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "a32c782b3ca4f964fa4629ebc20a56cc86ddd3ab313e0462b0cccced0652bf37"
             }
           ]
         }
@@ -1016,7 +1209,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "Our ambition is to diffuse this technology widely in India, creating significant value across sectors for citizens, small businesses, enterprises, and state and central governments"
+              "quote": "Our ambition is to diffuse this technology widely in India, creating significant value across sectors for citizens, small businesses, enterprises, and state and central governments",
+              "source_content_hash": "a56910704adc32b1",
+              "quote_hash": "5ecd396c8e8d81f1ab06139eba1f5697fb0e57272fb0cbc81e11d3c3225cbbe6"
             }
           ]
         },
@@ -1026,7 +1221,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f01756aafea2905",
-              "quote": "We are clear that research-led innovation to create AI that works at India's scale is a very large opportunity. That means models that understand our voices, read our documents, and serve intelligence at a cost every enterprise and government can afford."
+              "quote": "We are clear that research-led innovation to create AI that works at India's scale is a very large opportunity. That means models that understand our voices, read our documents, and serve intelligence at a cost every enterprise and government can afford.",
+              "source_content_hash": "7b097b12ec8190cb",
+              "quote_hash": "cdb67b4db891efc4a104755413d7430a01d1f06f49150199638b96da0f62fa8e"
             }
           ]
         },
@@ -1036,7 +1233,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "If you want to be completely Atmanirbhar in AI, we need to play across all these layers. This funding enables us to accelerate across them and build the full stack needed to be self-reliant in AI"
+              "quote": "If you want to be completely Atmanirbhar in AI, we need to play across all these layers. This funding enables us to accelerate across them and build the full stack needed to be self-reliant in AI",
+              "source_content_hash": "b5373ac2789f188b",
+              "quote_hash": "ba7a29bd0269c948059096df9ef4a1f1fd95c281e57cdd227e7beeb6fb35849d"
             }
           ]
         }
@@ -1055,7 +1254,21 @@
           "2026财年收入仅45亿卢比，商业化仍处于早期阶段，大规模营收转化尚未验证"
         ],
         "related_direction_id": "",
-        "sector": "主权AI/基础模型"
+        "sector": "主权AI/基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是印度主权AI能力的自主可控需求，这一需求因美国对Anthropic模型的出口管制而急剧升温。本轮融资以15亿美元估值完成，验证的信号包括：Sarvam已发布从零训练的105B和30B参数模型，支持22种印度语言；对话平台日交互量超200万次，推理平台日API调用量约1000万次；已获得印度农业与农民福利部、大型保险公司和金融科技公司等政府和企业的规模化部署。HCLTech作为印度上市IT服务巨头以1.5亿美元领投并获取10.46%股权，表明产业资本正在将AI主权视为对冲其传统IT服务业务被智能体AI侵蚀的战略手段。但Sarvam的融资规模与OpenAI、Anthropic等全球竞争对手相比仍有数量级差距，其2026财年收入仅45亿卢比，商业化仍处于早期阶段。",
+          "evidence_signals": [
+            "已发布从零训练的105B和30B参数基础模型，支持22种印度语言",
+            "对话平台日交互量超200万次，推理平台日API调用量约1000万次",
+            "已获得印度农业与农民福利部（1700万农民数据收集）、大型保险公司（4500万保单续保）和金融科技公司（35万销售团队赋能）的规模化部署",
+            "美国对Anthropic模型的出口管制为主权AI创造了紧迫的政策窗口"
+          ],
+          "risks": [
+            "Sarvam的融资规模与OpenAI、Anthropic等全球竞争对手相比仍有数量级差距，在开发前沿能力方面面临资本约束",
+            "2026财年收入仅45亿卢比，商业化仍处于早期阶段，大规模营收转化尚未验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1063,272 +1276,140 @@
           "target_kind": "product",
           "research_name": "Sarvam-105B",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f01756aafea2905",
-              "quote": "Sarvam 105B matches or outperforms larger reasoning models on knowledge, reasoning, and agentic benchmarks"
-            },
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Sarvam-30B",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f01756aafea2905",
-              "quote": "Sarvam 30B is optimised for the edge, running on consumer hardware."
-            },
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Sarvam Vision",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f01756aafea2905",
-              "quote": "Sarvam Vision, built for handwriting and Indian-language records, is being used to digitise over 35 million pages from insurance forms to legacy land records."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Vivek Raghavan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Pratyush Kumar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "HCLTech",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "$150 million of that money will come from HCLTech, the IT subsidiary of Indian conglomerate HCL Group and lead strategic investor in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "Bessemer Venture Partners also participated alongside existing backers Khosla Ventures and Peak XV Partners."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Khosla Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "existing backers Khosla Ventures and Peak XV Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Peak XV Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "existing backers Khosla Ventures and Peak XV Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Lightspeed",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam was last valued at $110 million in 2023, when it raised capital from Peak XV, Khosla Ventures and Lightspeed."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Avvanti Advisors",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8df989ade62ab0ef",
-              "quote": "Sarvam's previous valuation of about $196 million in 2025, when it raised $228,000 from Avvanti Advisors."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家领先保险公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家大型金融科技公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "SBI Life",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "IDFC First Bank",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-eb156fd01909fe18",
-              "quote": "Anthropic disabled access to its latest models , Fable 5 and Mythos 5, after the U.S. government ordered the company to suspend their use by any foreign national, citing national security concerns."
-            },
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Krutrim",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c0d48a8fc598fade",
-              "quote": "Sarvam joins Bhavish Aggarwal-founded Krutrim as only India's AI startups to achieve unicorn status."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Neysa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Sarvam’s round is the second largest in India’s artificial intelligence space after cloud infrastructure company Neysa closed a $1.2 billion transaction led by US alternative asset manager Blackstone."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Emergent",
           "canonical_entity_id": "EN-026c3bd4be5b91f3",
-          "canonical_name": "Emergent",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53dc2175b7e46ad0",
-              "quote": "Vibe-coding startup Emergent is also closing in on a $200-250 million funding round led by private equity firm Creaegis."
-            }
-          ]
+          "canonical_name": "Emergent"
         }
       ],
       "funding_history": [
@@ -1414,10 +1495,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:32:34.271Z"
+      "published_at": "2026-07-26T14:32:34.271Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Sarvam Vision",
+            "Sarvam-105B",
+            "Sarvam-30B"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Pratyush Kumar",
+            "Vivek Raghavan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e3382d1c1d7db751"
+      ],
+      "aggregation": {
+        "key": "EN-ee1e31ffef7dbe64|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-29",
     "generated_at": "2026-07-29T14:31:05.460Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 6,
       "auto_published": 3,
       "blocked": 3,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-350ab8c2242d2052",
       "triggered_by_event_id": "EV-cded77b1de2db61a",
       "as_of_date": "2026-07-29",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "Advanced Machine Intelligence Labs (AMI Labs), founded by Turing Award winner Yann LeCun following his departure from Meta"
+                "quote": "Advanced Machine Intelligence Labs (AMI Labs), founded by Turing Award winner Yann LeCun following his departure from Meta",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "ac43f425940285e4862f28cd89dd7a0dad58cf857f896a7202a4a34d1bb8d69f"
               },
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Yann LeCun Executive Chairman"
+                "quote": "Yann LeCun Executive Chairman",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "0e4fb5ccefe2619187e64ed862c129866db9af762758a6bbdf82c9ffd5a980d7"
               }
             ],
             "entity_id": null
@@ -50,11 +55,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "Alexandre LeBrun as CEO"
+                "quote": "Alexandre LeBrun as CEO",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "5037fd4428c90e7a0c43baa7dcca6b643e490b2a6ce30bdedea431843df8a4c3"
               },
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Alexandre LeBrun CEO"
+                "quote": "Alexandre LeBrun CEO",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "ecfb2d984a16bbf7a31fe2196fda5e7c8771d66ef6f353f402531f347d4af9ab"
               }
             ],
             "entity_id": null
@@ -65,7 +74,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "Saining Xie as Chief Science Officer"
+                "quote": "Saining Xie as Chief Science Officer",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "9bf672042c930fe01c0f6defbea69240eb2b5a2912af71fbeff1d80b9f3f846d"
               }
             ],
             "entity_id": null
@@ -76,7 +87,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "Pascale Fung as Chief Research and Innovation Officer"
+                "quote": "Pascale Fung as Chief Research and Innovation Officer",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "4ebee47a61ecd5b7598e9317ef0dc8d298beae67ce4bd1d3c0a06031a5c0e974"
               }
             ],
             "entity_id": null
@@ -87,7 +100,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Laurent Solly COO"
+                "quote": "Laurent Solly COO",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "0aa70d8f9ca7eb25d2b71530c16f28481cd223c6605457788abf1bfabe5a51a1"
               }
             ],
             "entity_id": null
@@ -98,7 +113,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "Mike Rabbat as VP of World Models"
+                "quote": "Mike Rabbat as VP of World Models",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "0589c200bf32489eaa33211c3635222fed6274c3bfa30b567dcd70bdc8113239"
               }
             ],
             "entity_id": null
@@ -110,14 +127,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c35525e379488bf",
-              "quote": "a company with roughly a dozen employees"
+              "quote": "a company with roughly a dozen employees",
+              "source_content_hash": "adc0cc9ffe3c9dd0",
+              "quote_hash": "49c4bcb65c3eb690deb5fb20b23fe3a85025bf430f4ca8b740f4aa2392686185"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-6c35525e379488bf",
-            "quote": "Advanced Machine Intelligence Labs (AMI Labs), founded by Turing Award winner Yann LeCun following his departure from Meta"
+            "quote": "Advanced Machine Intelligence Labs (AMI Labs), founded by Turing Award winner Yann LeCun following his departure from Meta",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote_hash": "ac43f425940285e4862f28cd89dd7a0dad58cf857f896a7202a4a34d1bb8d69f"
           }
         ]
       },
@@ -133,7 +154,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
+                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
               }
             ],
             "entity_id": null
@@ -144,7 +167,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
+                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
               }
             ],
             "entity_id": null
@@ -155,7 +180,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
+                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
               }
             ],
             "entity_id": null
@@ -166,7 +193,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
+                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
               }
             ],
             "entity_id": null
@@ -177,7 +206,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
+                "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
               }
             ],
             "entity_id": null
@@ -188,7 +219,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
+                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -199,7 +232,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
+                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
               }
             ],
             "entity_id": null
@@ -210,7 +245,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
+                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
               }
             ],
             "entity_id": "EN-968e2d5b08687bf4"
@@ -221,7 +258,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
+                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
               }
             ],
             "entity_id": null
@@ -232,7 +271,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
+                "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
               }
             ],
             "entity_id": null
@@ -243,7 +284,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
+                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
               }
             ],
             "entity_id": null
@@ -254,7 +297,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
+                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
               }
             ],
             "entity_id": null
@@ -265,7 +310,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
+                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
               }
             ],
             "entity_id": null
@@ -276,7 +323,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6c35525e379488bf",
-                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
+                "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
               }
             ],
             "entity_id": null
@@ -287,7 +336,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Xavier Niel (French telecom billionaire)"
+                "quote": "Xavier Niel (French telecom billionaire)",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "48fa92243e0bbd99e5d9414d76af4d044753298ab7f7dc8932e21bf25eb6714b"
               }
             ],
             "entity_id": null
@@ -298,7 +349,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Jim Breyer (legendary VC, early Facebook investor)"
+                "quote": "Jim Breyer (legendary VC, early Facebook investor)",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "372bad8d3326e5352bbd89d2c4074cec711a77e64ea315deee09e3f0e4897f35"
               }
             ],
             "entity_id": null
@@ -309,7 +362,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Groupe Industriel Marcel Dassault (aerospace)"
+                "quote": "Groupe Industriel Marcel Dassault (aerospace)",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "8f0778f24f693c0c8ef2461df173bb6ffde5a0c31a30fde7a2b5c659d0e7b6a6"
               }
             ],
             "entity_id": null
@@ -320,7 +375,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Publicis Groupe (advertising)"
+                "quote": "Publicis Groupe (advertising)",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "57811a5f75cf8e3f4a9011be31f0177c32fdadfcaedd155c81e1556921f6a7ef"
               }
             ],
             "entity_id": null
@@ -331,7 +388,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Association Familiale Mulliez"
+                "quote": "Association Familiale Mulliez",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "c72c6288d5697b34df26ea55a46b11be1adcede8d151a8e7d83fb0877a8a9224"
               }
             ],
             "entity_id": null
@@ -342,7 +401,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcebf5ead5f70f46",
-                "quote": "Sea (Southeast Asian tech giant)"
+                "quote": "Sea (Southeast Asian tech giant)",
+                "source_content_hash": "5d530dab1f01bc4c",
+                "quote_hash": "fefcda8483f86b88c16b6c9f5de983ebededb411fadfa343302cca0b008ae44a"
               }
             ],
             "entity_id": null
@@ -353,7 +414,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f7589987753ab2c6",
-                "quote": "daphni"
+                "quote": "daphni",
+                "source_content_hash": "8a90e9cfb18401ae",
+                "quote_hash": "d5f086c488afe9db90b9bbb7761b3ac73005b45161865996f236e4a0b1468aff"
               }
             ],
             "entity_id": null
@@ -364,7 +427,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f7589987753ab2c6",
-                "quote": "AGLAÉ VENTURES"
+                "quote": "AGLAÉ VENTURES",
+                "source_content_hash": "8a90e9cfb18401ae",
+                "quote_hash": "b4deac3d88b72e767c0dbc5fada4a7f1c0d4611dfeaed450234621de2fcbd38e"
               }
             ],
             "entity_id": null
@@ -375,7 +440,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f7589987753ab2c6",
-                "quote": "Eurazeo"
+                "quote": "Eurazeo",
+                "source_content_hash": "8a90e9cfb18401ae",
+                "quote_hash": "78d4bb3c478998ce2a7f04eff26c422a2c6ae65919fdddf2c18a2d5fca1aeb4f"
               }
             ],
             "entity_id": null
@@ -386,7 +453,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-115626db07e52373",
-                "quote": "Founders Future"
+                "quote": "Founders Future",
+                "source_content_hash": "f7ae81bef24b26df",
+                "quote_hash": "a799bc6e9b8be7996b147cfd574c3c2a171c3032c8a813133c84cec15dc858d1"
               }
             ],
             "entity_id": null
@@ -397,7 +466,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-115626db07e52373",
-                "quote": "Alpha Intelligence Capital"
+                "quote": "Alpha Intelligence Capital",
+                "source_content_hash": "f7ae81bef24b26df",
+                "quote_hash": "1b41a8f53ba1a57b297b2cc3a4e6e6ef73e263c74af20154ccdf884069e038eb"
               }
             ],
             "entity_id": null
@@ -408,7 +479,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-115626db07e52373",
-                "quote": "20VC"
+                "quote": "20VC",
+                "source_content_hash": "f7ae81bef24b26df",
+                "quote_hash": "26883ee065fd9dbef1b111dc5d197215e08975d0f62d654b38636c60b0106eb2"
               }
             ],
             "entity_id": null
@@ -419,7 +492,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-115626db07e52373",
-                "quote": "Drysdale Ventures"
+                "quote": "Drysdale Ventures",
+                "source_content_hash": "f7ae81bef24b26df",
+                "quote_hash": "e119ae1833a094b390595194af7af230afd4ede61ecceb02b745d380f818869e"
               }
             ],
             "entity_id": null
@@ -430,7 +505,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-115626db07e52373",
-                "quote": "Kima Ventures"
+                "quote": "Kima Ventures",
+                "source_content_hash": "f7ae81bef24b26df",
+                "quote_hash": "801134e2d2519318a537bf7a29d9431cfac26cb0dcf7497e1534d42ca677e93b"
               }
             ],
             "entity_id": null
@@ -441,7 +518,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-115626db07e52373",
-                "quote": "Better Angle"
+                "quote": "Better Angle",
+                "source_content_hash": "f7ae81bef24b26df",
+                "quote_hash": "7f4614df7528b1e4625e6af7adfa980a2d129a34a918e2bd34a6b0ce6d3d411d"
               }
             ],
             "entity_id": null
@@ -450,7 +529,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6c35525e379488bf",
-            "quote": "has closed a $1.03 billion seed round at a $3.5 billion pre-money valuation"
+            "quote": "has closed a $1.03 billion seed round at a $3.5 billion pre-money valuation",
+            "source_content_hash": "adc0cc9ffe3c9dd0",
+            "quote_hash": "ac87e30914a180af0ccf2b979e46dd109dfbcc09c685ffd1333e5776704379e9"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cded77b1de2db61a",
+            "round_original": "种子轮",
+            "amount": "10.3亿美元",
+            "announced_at": "2026-03-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6c35525e379488bf",
+                "quote": "has closed a $1.03 billion seed round at a $3.5 billion pre-money valuation",
+                "source_content_hash": "adc0cc9ffe3c9dd0",
+                "quote_hash": "ac87e30914a180af0ccf2b979e46dd109dfbcc09c685ffd1333e5776704379e9"
+              }
+            ]
           }
         ]
       },
@@ -468,11 +568,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c35525e379488bf",
-              "quote": "building world models based on LeCun’s Joint Embedding Predictive Architecture (JEPA), targeting industrial, robotic, and healthcare applications"
+              "quote": "building world models based on LeCun’s Joint Embedding Predictive Architecture (JEPA), targeting industrial, robotic, and healthcare applications",
+              "source_content_hash": "adc0cc9ffe3c9dd0",
+              "quote_hash": "3b82ed3631077ecc9b4d7fb5c9171a7c28860b344b01fe27685b07bcd2ab0dff"
             },
             {
               "source_id": "FISRC-5b1596fef746a440",
-              "quote": "A world model is an internal representation of how an environment behaves. Instead of asking a model to predict the next word, you ask it to predict the next state."
+              "quote": "A world model is an internal representation of how an environment behaves. Instead of asking a model to predict the next word, you ask it to predict the next state.",
+              "source_content_hash": "40e70d65ce27a0f7",
+              "quote_hash": "7b986416bd3509d94d1ef5724fdb9cf92fe8f259ca2f983b6dd3a33fcf9b9efa"
             }
           ],
           "entity_id": null
@@ -486,9 +590,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ccd14d20f50d3f91",
-              "quote": "Nabla was announced as AMI Labs’ first strategic partner in December 2025, with early access to world model technologies currently in development."
+              "quote": "Nabla was announced as AMI Labs’ first strategic partner in December 2025, with early access to world model technologies currently in development.",
+              "source_content_hash": "36270a9193c296e6",
+              "quote_hash": "35e6d44fd8a7a695851c7eb7c58a4dba566961b01a62aecda8702ba8fa6689c6"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -502,9 +609,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Former OpenAI CTO Mira Murati’s Thinking Machines Lab was valued at $12 billion in its seed round."
+              "quote": "Former OpenAI CTO Mira Murati’s Thinking Machines Lab was valued at $12 billion in its seed round.",
+              "source_content_hash": "adc0cc9ffe3c9dd0",
+              "quote_hash": "53ead91c5b8022f8d0465de2c3a51f2407fac5177f74d814f138cbd4f3723289"
             }
-          ]
+          ],
+          "entity_id": "EN-8f71c4871a160172"
         }
       ],
       "metrics": [
@@ -515,7 +625,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c35525e379488bf",
-              "quote": "has closed a $1.03 billion seed round"
+              "quote": "has closed a $1.03 billion seed round",
+              "source_content_hash": "adc0cc9ffe3c9dd0",
+              "quote_hash": "503ba532b5092691b31d99c996ce12b412e25dbdb1a1ef0cf4f22e4744771f97"
             }
           ]
         },
@@ -526,7 +638,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c35525e379488bf",
-              "quote": "at a $3.5 billion pre-money valuation"
+              "quote": "at a $3.5 billion pre-money valuation",
+              "source_content_hash": "adc0cc9ffe3c9dd0",
+              "quote_hash": "7d8ba806a8592adffd36bcc488ce6d53320dba852b943c64430358c034299845"
             }
           ]
         },
@@ -537,7 +651,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Post-Money Valuation ~$4.5 billion"
+              "quote": "Post-Money Valuation ~$4.5 billion",
+              "source_content_hash": "5d530dab1f01bc4c",
+              "quote_hash": "06804d16af0fba954555699c82278f5a79cba37733313b672138d2a800ffc9f5"
             }
           ]
         },
@@ -548,7 +664,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Founded in late 2025 by Yann LeCun"
+              "quote": "Founded in late 2025 by Yann LeCun",
+              "source_content_hash": "adc0cc9ffe3c9dd0",
+              "quote_hash": "b8fc304c09a10981078a0189f492c6bf01d8c7d151f5a282181157e670b2e3cf"
             }
           ]
         },
@@ -559,7 +677,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c35525e379488bf",
-              "quote": "a company with roughly a dozen employees"
+              "quote": "a company with roughly a dozen employees",
+              "source_content_hash": "adc0cc9ffe3c9dd0",
+              "quote_hash": "49c4bcb65c3eb690deb5fb20b23fe3a85025bf430f4ca8b740f4aa2392686185"
             }
           ]
         }
@@ -571,7 +691,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "AMI Labs is a very ambitious project, because it starts with fundamental research. It’s not your typical applied AI startup that can release a product in three months, have revenue in six months, and make $10 million in ARR in 12 months."
+              "quote": "AMI Labs is a very ambitious project, because it starts with fundamental research. It’s not your typical applied AI startup that can release a product in three months, have revenue in six months, and make $10 million in ARR in 12 months.",
+              "source_content_hash": "5d530dab1f01bc4c",
+              "quote_hash": "08b81d66985a0094070bd41bf540f144ed60b20940756657648b644bc3af7638"
             }
           ]
         },
@@ -581,7 +703,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "We are one of the few frontier AI labs that are neither Chinese nor American."
+              "quote": "We are one of the few frontier AI labs that are neither Chinese nor American.",
+              "source_content_hash": "5d530dab1f01bc4c",
+              "quote_hash": "e2d5bec15243b0026708134bafe2be6eea09dbc98213830db7421e4732fcfff4"
             }
           ]
         },
@@ -591,7 +715,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "My prediction is that ‘world models’ will be the next buzzword. In six months, every company will call itself a world model to raise funding."
+              "quote": "My prediction is that ‘world models’ will be the next buzzword. In six months, every company will call itself a world model to raise funding.",
+              "source_content_hash": "5d530dab1f01bc4c",
+              "quote_hash": "15c4b0cd692572e14caf6ade880d080fa5155f34dbc99fe7f5dea13ebb2b4b39"
             }
           ]
         }
@@ -607,7 +733,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f7589987753ab2c6",
-                "quote": "For AI to move beyond screens and into the physical world, it needs to reason about how situations evolve — understanding the relationship between actions and outcomes rather than simply producing outputs. This is the direction behind world models, the next chapter of the AI revolution."
+                "quote": "For AI to move beyond screens and into the physical world, it needs to reason about how situations evolve — understanding the relationship between actions and outcomes rather than simply producing outputs. This is the direction behind world models, the next chapter of the AI revolution.",
+                "source_content_hash": "8a90e9cfb18401ae",
+                "quote_hash": "a1be79fdddcb4e4159cae7bda8ade86ba7cf8978e0c6cbf92e8aa3652a5f1d0d"
               }
             ]
           }
@@ -625,7 +753,22 @@
           "公司面临来自Google DeepMind、World Labs等已发布产品或拥有更成熟研究体系的竞争对手的巨大压力，其架构独特性窗口可能迅速收窄。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "基础模型与通用人工智能"
+        "sector": "基础模型与通用人工智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“世界模型能否成为超越大语言模型（LLM）的下一代AI范式”。本轮10.3亿美元种子轮融资和35亿美元投前估值，完全基于创始团队的科学信誉和长期期权价值，而非任何产品、收入或基准测试结果。已验证的信号包括：图灵奖得主Yann LeCun的学术权威性、来自FAIR和DeepMind的全明星创始团队、以及跨越三大洲的战略投资者阵容（NVIDIA、Toyota Ventures、Temasek等）。然而，这一判断的证据边界非常清晰：JEPA架构尚未在商业规模上得到验证，公司明确表示第一年将专注于研究，有意义的商业化产品需要数年时间。",
+          "evidence_signals": [
+            "创始人Yann LeCun是2018年图灵奖得主，其卷积神经网络研究是现代计算机视觉的基础。",
+            "创始团队核心成员来自Meta FAIR和Google DeepMind，具备顶级AI研究经验。",
+            "投资者阵容包括NVIDIA、Toyota Ventures、Samsung、Temasek等战略投资方，以及Jeff Bezos、Eric Schmidt等个人投资者。",
+            "公司已与Nabla建立医疗保健领域的首个战略合作伙伴关系。"
+          ],
+          "risks": [
+            "JEPA架构尚未在商业规模上得到验证，从实验室演示到可靠的现实世界部署（尤其是在医疗和机器人领域）的路径存在巨大的技术不确定性。",
+            "商业化时间线极长（3-5年），而LLM范式仍在快速迭代，可能在AMI Labs取得突破前就通过多模态和工具使用等能力覆盖其目标应用场景。",
+            "公司面临来自Google DeepMind、World Labs等已发布产品或拥有更成熟研究体系的竞争对手的巨大压力，其架构独特性窗口可能迅速收窄。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -633,506 +776,266 @@
           "target_kind": "product",
           "research_name": "基于JEPA的世界模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "building world models based on LeCun’s Joint Embedding Predictive Architecture (JEPA), targeting industrial, robotic, and healthcare applications"
-            },
-            {
-              "source_id": "FISRC-5b1596fef746a440",
-              "quote": "A world model is an internal representation of how an environment behaves. Instead of asking a model to predict the next word, you ask it to predict the next state."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yann LeCun",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Advanced Machine Intelligence Labs (AMI Labs), founded by Turing Award winner Yann LeCun following his departure from Meta"
-            },
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Yann LeCun Executive Chairman"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alexandre LeBrun",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Alexandre LeBrun as CEO"
-            },
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Alexandre LeBrun CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Saining Xie",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Saining Xie as Chief Science Officer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Pascale Fung",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Pascale Fung as Chief Research and Innovation Officer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Laurent Solly",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Laurent Solly COO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Michael Rabbat",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Mike Rabbat as VP of World Models"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cathay Innovation",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Greycroft",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hiro Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "HV Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bezos Expeditions",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "NVIDIA",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Temasek",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Samsung",
           "canonical_entity_id": "EN-968e2d5b08687bf4",
-          "canonical_name": "Samsung",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
-            }
-          ]
+          "canonical_name": "Samsung"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Toyota Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bpifrance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jeff Bezos",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mark Cuban",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Eric Schmidt",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tim Berners-Lee",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Xavier Niel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Xavier Niel (French telecom billionaire)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jim Breyer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Jim Breyer (legendary VC, early Facebook investor)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Groupe Industriel Marcel Dassault",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Groupe Industriel Marcel Dassault (aerospace)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Publicis Groupe",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Publicis Groupe (advertising)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Digital Venture Association Familiale Mulliez",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Association Familiale Mulliez"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sea",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcebf5ead5f70f46",
-              "quote": "Sea (Southeast Asian tech giant)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "daphni",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f7589987753ab2c6",
-              "quote": "daphni"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AGLAÉ VENTURES",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f7589987753ab2c6",
-              "quote": "AGLAÉ VENTURES"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Eurazeo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f7589987753ab2c6",
-              "quote": "Eurazeo"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Founders Future",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-115626db07e52373",
-              "quote": "Founders Future"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alpha Intelligence Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-115626db07e52373",
-              "quote": "Alpha Intelligence Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "20VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-115626db07e52373",
-              "quote": "20VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Drysdale Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-115626db07e52373",
-              "quote": "Drysdale Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kima Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-115626db07e52373",
-              "quote": "Kima Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Better Angle",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-115626db07e52373",
-              "quote": "Better Angle"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Nabla",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ccd14d20f50d3f91",
-              "quote": "Nabla was announced as AMI Labs’ first strategic partner in December 2025, with early access to world model technologies currently in development."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Thinking Machines Lab",
           "canonical_entity_id": "EN-8f71c4871a160172",
-          "canonical_name": "Thinking Machines Lab",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6c35525e379488bf",
-              "quote": "Former OpenAI CTO Mira Murati’s Thinking Machines Lab was valued at $12 billion in its seed round."
-            }
-          ]
+          "canonical_name": "Thinking Machines Lab"
         }
       ],
       "funding_history": [
@@ -1230,13 +1133,47 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-29T04:51:33.063Z"
+      "published_at": "2026-07-29T04:51:33.063Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "基于JEPA的世界模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 6,
+          "unresolved_names": [
+            "Alexandre LeBrun",
+            "Laurent Solly",
+            "Michael Rabbat",
+            "Pascale Fung",
+            "Saining Xie",
+            "Yann LeCun"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cded77b1de2db61a"
+      ],
+      "aggregation": {
+        "key": "EN-a83a3af1a4866fd5|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9812ec69e97e0357",
       "triggered_by_event_id": "EV-33b3cf34f8ff7bd8",
       "as_of_date": "2026-07-29",
@@ -1254,7 +1191,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa5aeddf845d651b",
-                "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
+                "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "92b9ef29e6b893ca973dd0e15f67a762caa945f3f0dde8fa1fc285f1875c541a"
               }
             ],
             "entity_id": null
@@ -1265,7 +1204,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa5aeddf845d651b",
-                "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
+                "quote": "co-founder and Chief Scientific Officer Dr. Román Orús",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "1134dfbcb838631e319dc7874e79ffec40f1c7c8e84a32dbd30b60e1ade5e6bd"
               }
             ],
             "entity_id": null
@@ -1279,16 +1220,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-fa5aeddf845d651b",
-            "quote": "Multiverse Computing, the global leader in efficient AI"
+            "quote": "Multiverse Computing, the global leader in efficient AI",
+            "source_content_hash": "070cd1b0f627dcdf",
+            "quote_hash": "72693365009887851798aac377d00c7b491bd7c8ea3dfb8070e2646e4c011f60"
           },
           {
             "source_id": "FISRC-ec66bd3ab9da8317",
-            "quote": "Multiverse Computing is the global leader in sovereign and efficient AI."
+            "quote": "Multiverse Computing is the global leader in sovereign and efficient AI.",
+            "source_content_hash": "331e50cc84dc1a65",
+            "quote_hash": "6c6a4dd7bf36c3d8365f2fba5e7260d21026f90fbc76cdcb8340355a028fae1d"
           }
         ]
       },
       "financing": {
-        "round": "Series C",
+        "round": "C轮",
         "amount": "$570 million (€500M)",
         "total_raised": "$800 million",
         "announced_at": "2026-07-27",
@@ -1299,7 +1244,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa5aeddf845d651b",
-                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
               }
             ],
             "entity_id": null
@@ -1310,7 +1257,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa5aeddf845d651b",
-                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
               }
             ],
             "entity_id": null
@@ -1321,7 +1270,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa5aeddf845d651b",
-                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
               }
             ],
             "entity_id": null
@@ -1332,7 +1283,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fa5aeddf845d651b",
-                "quote": "additional commitments to date from investors including Santander Alternative Investments"
+                "quote": "additional commitments to date from investors including Santander Alternative Investments",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "d979a5971f22925fe5221ecf7317ff452d4fb0b8d42a5ac627e4bd40b1a156d4"
               }
             ],
             "entity_id": null
@@ -1341,11 +1294,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-fa5aeddf845d651b",
-            "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation"
+            "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation",
+            "source_content_hash": "070cd1b0f627dcdf",
+            "quote_hash": "d67846c202e4b2d7891752b792953c6d646d3e6a85c96d9f726a36c1956f4462"
           },
           {
             "source_id": "FISRC-fa5aeddf845d651b",
-            "quote": "expected to bring total funding to $800 million, inclusive of prior rounds"
+            "quote": "expected to bring total funding to $800 million, inclusive of prior rounds",
+            "source_content_hash": "070cd1b0f627dcdf",
+            "quote_hash": "af2086551cbf2dfc3c6060331064d846a9f9335df80e5bddcc38c5b0eec024da"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-33b3cf34f8ff7bd8",
+            "round_original": "Series C",
+            "amount": "$570 million (€500M)",
+            "announced_at": "2026-07-27",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fa5aeddf845d651b",
+                "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "d67846c202e4b2d7891752b792953c6d646d3e6a85c96d9f726a36c1956f4462"
+              },
+              {
+                "source_id": "FISRC-fa5aeddf845d651b",
+                "quote": "expected to bring total funding to $800 million, inclusive of prior rounds",
+                "source_content_hash": "070cd1b0f627dcdf",
+                "quote_hash": "af2086551cbf2dfc3c6060331064d846a9f9335df80e5bddcc38c5b0eec024da"
+              }
+            ]
           }
         ]
       },
@@ -1364,15 +1346,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
+              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression.",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "0120e063627e899f0f4a0aee6f9d0a36906a36026138e23eb278d7ce23fb561e"
             },
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "8ebc74754a235aceaf6f5a3355270496224db5ab9bba2b56b66c9d5fe4db0163"
             },
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "compressed models optimized for cloud, on-premises, and on-device environments, orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud"
+              "quote": "compressed models optimized for cloud, on-premises, and on-device environments, orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "59a4b5fbe175ee32c676396a0bdb42ace25d96607218f9b92b108f9fd206111d"
             }
           ],
           "entity_id": null
@@ -1386,9 +1374,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
+              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "010588b0c21dd257bbfca4f46c5c2dab0bdab329633d2a2b801a2916f126ec0d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1400,7 +1391,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation"
+              "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "d67846c202e4b2d7891752b792953c6d646d3e6a85c96d9f726a36c1956f4462"
             }
           ]
         },
@@ -1411,7 +1404,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "a 5x step-up from its Series B"
+              "quote": "a 5x step-up from its Series B",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "ebc9096a576d031db28aa38341d8b2ff749e5efa10d09c4e60f8b4de82a672eb"
             }
           ]
         },
@@ -1422,7 +1417,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "Since closing its Series B in June 2025, Multiverse Computing has grown annualized revenue by more than 10x"
+              "quote": "Since closing its Series B in June 2025, Multiverse Computing has grown annualized revenue by more than 10x",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "c55950e6b52f6486d1ce07beadecf22c42615374d65001dbd65e5a7338210cba"
             }
           ]
         },
@@ -1433,7 +1430,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "with 96x year-over-year sales growth in Q1 of 2026"
+              "quote": "with 96x year-over-year sales growth in Q1 of 2026",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "d62dbe7f8832e9be085ecbc2cc6460bfc25a3d8a064afa80a4f67ee302f6b526"
             }
           ]
         },
@@ -1444,7 +1443,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "8ebc74754a235aceaf6f5a3355270496224db5ab9bba2b56b66c9d5fe4db0163"
             }
           ]
         },
@@ -1455,7 +1456,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "Multiverse serves more than 100 global customers"
+              "quote": "Multiverse serves more than 100 global customers",
+              "source_content_hash": "331e50cc84dc1a65",
+              "quote_hash": "8e70296e788699b0a47b938a86646efdd44bc21093e7b3bed99b57e129e6df65"
             }
           ]
         },
@@ -1466,7 +1469,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "Multiverse models are already being deployed across millions of devices and systems"
+              "quote": "Multiverse models are already being deployed across millions of devices and systems",
+              "source_content_hash": "070cd1b0f627dcdf",
+              "quote_hash": "cc25e2490785141564b7480f308f6e2d8d3a740d9d0fecaf42ef3f3d6dafc562"
             }
           ]
         }
@@ -1488,7 +1493,23 @@
           "模型压缩技术面临来自其他压缩方案和硬件效率提升的竞争，且客户可能通过直接使用更小模型绕过压缩层。"
         ],
         "related_direction_id": "",
-        "sector": "高效AI与模型压缩基础设施"
+        "sector": "高效AI与模型压缩基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI模型压缩技术能否成为基础设施层与应用层之间的关键效率平台。本轮融资以17亿美元pre-money估值完成，较B轮增长5倍，验证信号包括：年化收入自B轮以来增长超10倍、2026年Q1销售额同比增长96倍、模型已部署在数百万台设备上、客户涵盖Allianz、Bosch、Bank of Canada等100多家全球企业。投资方构成涵盖企业战略资本（HP、Orange、Scania）、主权基金（Qatar Development Bank、SETT）和传统VC，表明市场同时认可其商业牵引力和主权AI基础设施的战略价值。但判断的证据边界在于：来源仅披露收入增长倍数而未提供绝对收入基数，且融资轮次仍可能向额外战略投资者开放，最终关闭金额存在不确定性。",
+          "evidence_signals": [
+            "年化收入自2025年6月B轮结束以来增长超过10倍",
+            "2026年Q1销售额同比增长96倍",
+            "模型已部署在数百万台设备上，覆盖无人机、摄像头、卫星、车辆和电信基础设施",
+            "全球客户超过100家，包括Allianz、Bosch、Bank of Canada、Iberdrola、Telefónica等",
+            "C轮估值较B轮增长5倍，达到17亿美元pre-money"
+          ],
+          "risks": [
+            "来源仅披露收入增长倍数而未提供绝对收入基数，无法判断实际营收规模；高倍数增长可能来自低基数效应。",
+            "融资轮次尚未最终关闭，可能向额外战略投资者开放，最终金额和投资方构成存在变数。",
+            "模型压缩技术面临来自其他压缩方案和硬件效率提升的竞争，且客户可能通过直接使用更小模型绕过压缩层。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1496,112 +1517,56 @@
           "target_kind": "product",
           "research_name": "CompactifAI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
-            },
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
-            },
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "compressed models optimized for cloud, on-premises, and on-device environments, orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Enrique Lizaso",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dr. Román Orús",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Forgepoint Capital International",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BNPP SIVF",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bullhound Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Santander Alternative Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "additional commitments to date from investors including Santander Alternative Investments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Allianz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fa5aeddf845d651b",
-              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1651,13 +1616,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-29T04:47:17.227Z"
+      "published_at": "2026-07-29T04:47:17.227Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "CompactifAI"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Dr. Román Orús",
+            "Enrique Lizaso"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-33b3cf34f8ff7bd8"
+      ],
+      "aggregation": {
+        "key": "EN-0b01f10e87d13e75|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9f71fd64de900bbd",
       "triggered_by_event_id": "EV-5f3ccb941a2fe5d7",
       "as_of_date": "2026-07-29",
@@ -1675,7 +1670,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe66d902ece1db68",
-                "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
+                "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "b1b0c88f63c7be6ac0d9ad2ab668febc5689171404672dca87f26866496be2e0"
               }
             ],
             "entity_id": null
@@ -1686,7 +1683,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe66d902ece1db68",
-                "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
+                "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "b1b0c88f63c7be6ac0d9ad2ab668febc5689171404672dca87f26866496be2e0"
               }
             ],
             "entity_id": null
@@ -1698,14 +1697,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Harmony has 60 employees, with roughly two-thirds in Israel and the rest in New York."
+              "quote": "Harmony has 60 employees, with roughly two-thirds in Israel and the rest in New York.",
+              "source_content_hash": "dd2e48aec8384eca",
+              "quote_hash": "df9eccdda25539e601bd3be97a7412d00e37ef98cc8decda5ae8beeff553a6a7"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-fe66d902ece1db68",
-            "quote": "AI startup Harmony raises $34 million seed after founders' Cisco exit"
+            "quote": "AI startup Harmony raises $34 million seed after founders' Cisco exit",
+            "source_content_hash": "dd2e48aec8384eca",
+            "quote_hash": "e8b5e7d3f5e7e3690ecd0f079262788c413f22c1267c49b978ab606b386eac65"
           }
         ]
       },
@@ -1721,7 +1724,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe66d902ece1db68",
-                "quote": "Lightspeed led Harmony's $34 million round."
+                "quote": "Lightspeed led Harmony's $34 million round.",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "f671cb71f4ed6fe6aaab2126db1b194b8202cfc0638652175b79403a01fa681f"
               }
             ],
             "entity_id": null
@@ -1732,7 +1737,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe66d902ece1db68",
-                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round.",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
               }
             ],
             "entity_id": null
@@ -1743,7 +1750,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe66d902ece1db68",
-                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round.",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
               }
             ],
             "entity_id": null
@@ -1754,7 +1763,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe66d902ece1db68",
-                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round.",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
               }
             ],
             "entity_id": null
@@ -1765,29 +1776,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe66d902ece1db68",
-                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Assaf Rappaport (Wiz 创始团队成员)",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2a6970c8768c84ff",
-                "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ofir Ehrlich (Eon.io 联合创始人兼 CEO)",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2a6970c8768c84ff",
-                "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round.",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
               }
             ],
             "entity_id": null
@@ -1796,7 +1787,67 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-fe66d902ece1db68",
-            "quote": "Harmony raised a $34 million round led by Lightspeed."
+            "quote": "Harmony raised a $34 million round led by Lightspeed.",
+            "source_content_hash": "dd2e48aec8384eca",
+            "quote_hash": "dcde1eaec6cf610d87775964d3a8c282f65c72af5a1feadb653700be37c11b44"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [
+          {
+            "name": "Assaf Rappaport (Wiz 创始团队成员)",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2a6970c8768c84ff",
+                "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io",
+                "source_content_hash": "0b26337e0dc79c5e",
+                "quote_hash": "7f59260f697968fe60cac70e9d088db6d297bf26c685727446a8a7724311fc60"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Ofir Ehrlich (Eon.io 联合创始人兼 CEO)",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2a6970c8768c84ff",
+                "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io",
+                "source_content_hash": "0b26337e0dc79c5e",
+                "quote_hash": "7f59260f697968fe60cac70e9d088db6d297bf26c685727446a8a7724311fc60"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-5f3ccb941a2fe5d7",
+            "round_original": "种子轮",
+            "amount": "$34 million",
+            "announced_at": "2026-07-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "Harmony raised a $34 million round led by Lightspeed.",
+                "source_content_hash": "dd2e48aec8384eca",
+                "quote_hash": "dcde1eaec6cf610d87775964d3a8c282f65c72af5a1feadb653700be37c11b44"
+              }
+            ]
           }
         ]
       },
@@ -1815,11 +1866,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Harmony operates inside Slack and Microsoft Teams to handle tasks like onboarding, software access, and resetting passwords."
+              "quote": "Harmony operates inside Slack and Microsoft Teams to handle tasks like onboarding, software access, and resetting passwords.",
+              "source_content_hash": "dd2e48aec8384eca",
+              "quote_hash": "bf793c1d54f6909db4da43d0929b7c658d0097844c3171dc57e3af66f23234ba"
             },
             {
               "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Harmony works with more than 100 applications and can use an employee's role and permissions to tailor responses."
+              "quote": "Harmony works with more than 100 applications and can use an employee's role and permissions to tailor responses.",
+              "source_content_hash": "dd2e48aec8384eca",
+              "quote_hash": "57388000711b0d866346b45d5c5c3606163d9924df8fe635d23efef10d5478ce"
             }
           ],
           "entity_id": null
@@ -1833,9 +1888,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Customers include workflow automation company n8n"
+              "quote": "Customers include workflow automation company n8n",
+              "source_content_hash": "dd2e48aec8384eca",
+              "quote_hash": "e9a99119e8a719e5056977517ad57689230652df1fba7b8317fb2481c15d285d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1849,9 +1907,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-02ef8f0167178ccb",
-              "quote": "We focused on the computing environment, a market where companies like ServiceNow generate billions of dollars in revenue. We don't want to build another company that sells for hundreds of millions of dollars and move on. We want to build a company worth billions of dollars."
+              "quote": "We focused on the computing environment, a market where companies like ServiceNow generate billions of dollars in revenue. We don't want to build another company that sells for hundreds of millions of dollars and move on. We want to build a company worth billions of dollars.",
+              "source_content_hash": "44be587e7c003a7e",
+              "quote_hash": "2450431b3f4d7ec3908f76ab2d98cfad8eff2e1cb24e7a52b6637784690fe250"
             }
-          ]
+          ],
+          "entity_id": "EN-b5738c169b693bee"
         }
       ],
       "metrics": [
@@ -1862,7 +1923,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "Harmony deflected 48% of support requests within two weeks of deployment"
+              "quote": "Harmony deflected 48% of support requests within two weeks of deployment",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "6dadd1d2316664b37e69833167fe76a191f05bfe388ef3281687acdbfcef30f8"
             }
           ]
         },
@@ -1873,7 +1936,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "more than 75% within three months."
+              "quote": "more than 75% within three months.",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "168eda5dfd1b479abc1908aefbe6cb5bedc74a66597d1cd5f3cc32874d630470"
             }
           ]
         },
@@ -1884,7 +1949,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "deflection rates of up to 68% in HR"
+              "quote": "deflection rates of up to 68% in HR",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "2bd69644bbe760c789e72a102938982110a615949e40b5d5da23c6b12bc3f638"
             }
           ]
         },
@@ -1895,7 +1962,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "58% in procurement"
+              "quote": "58% in procurement",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "c192e9377476af167a1d9c49286728dbd63b6941b322129fee79a65ac4713bfc"
             }
           ]
         },
@@ -1906,7 +1975,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "employee adoption has exceeded 80% across the organization"
+              "quote": "employee adoption has exceeded 80% across the organization",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "a8afe44f874df3a320fbed95e2cd9de5dc5472b982e2c9381efe56326d1e35aa"
             }
           ]
         },
@@ -1917,7 +1988,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fb806bb82e9fff33",
-              "quote": "a 70% no-touch resolution rate"
+              "quote": "a 70% no-touch resolution rate",
+              "source_content_hash": "78e63b348f0c0579",
+              "quote_hash": "7ae933dd982bbb8702de8c63901a157d007c0f66c5b695dd6532abd1d2a7ce4c"
             }
           ]
         },
@@ -1928,7 +2001,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "With more than 100 prebuilt agents that deploy in days, not months"
+              "quote": "With more than 100 prebuilt agents that deploy in days, not months",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "a3302a77966f12915c7c94a39dff3e8a5518aa9aaa5e020cb3ce5d718fe20f4e"
             }
           ]
         },
@@ -1939,7 +2014,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "With employee support requests often taking up to 48 hours to resolve"
+              "quote": "With employee support requests often taking up to 48 hours to resolve",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "64b314fb0375fcd1dd56e3ad54cd7a28ae0bc2b1cd07ca6fb7398223d824fc49"
             }
           ]
         }
@@ -1951,7 +2028,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "Most organizations have accumulated hundreds of systems, workflows, and processes over the years, but every new layer of software creates more complexity for employees and more work for the teams supporting them"
+              "quote": "Most organizations have accumulated hundreds of systems, workflows, and processes over the years, but every new layer of software creates more complexity for employees and more work for the teams supporting them",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "3f1be7dfa8b7024630017197582b83756c1d97d32fe47cd845aa41b7089c5138"
             }
           ]
         },
@@ -1961,7 +2040,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "Harmony is driving a fundamental shift in how employee support is delivered, moving from a model built around tickets and queues to one powered by AI agents that resolve requests instantly and at scale"
+              "quote": "Harmony is driving a fundamental shift in how employee support is delivered, moving from a model built around tickets and queues to one powered by AI agents that resolve requests instantly and at scale",
+              "source_content_hash": "0b26337e0dc79c5e",
+              "quote_hash": "13e3d07d6735d92fa89b0363cb5e555ffa0afde27dbb98ea8723f5b2679fa8f2"
             }
           ]
         }
@@ -1979,7 +2060,20 @@
           "Harmony 的 AI 代理需要深度集成并访问企业内部的多个系统（IT、HR、财务等），这可能面临大型企业在数据安全、合规和权限管理方面的严格审查，从而延长销售周期。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业服务 / AI 驱动的员工体验平台"
+        "sector": "企业服务 / AI 驱动的员工体验平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是连续创业者的成功退出记录（以5亿美元将Epsagon卖给思科）与 Harmony 在早期客户中展现的快速部署和高请求偏转率（两周内48%，三个月内超75%）所验证的产品市场契合度。这笔远超常规种子轮的3400万美元融资，使公司能够跳过早期增长的资金限制，快速扩张工程、产品和销售团队，直接瞄准成为价值数十亿美元的企业服务平台。",
+          "evidence_signals": [
+            "创始团队曾以5亿美元将前公司 Epsagon 出售给思科，具备企业级产品构建和退出经验。",
+            "产品在部署两周内实现48%的支持请求偏转率，三个月内超过75%，显示出强大的自动化能力。",
+            "客户群已覆盖工作流自动化（n8n）、金融科技（eToro）、网络安全（Cyera）和零售（Kith）等多个行业。",
+            "员工采用率超过80%，解决了企业AI工具普遍面临的持续使用率低的问题。"
+          ],
+          "risks": [
+            "Harmony 的 AI 代理需要深度集成并访问企业内部的多个系统（IT、HR、财务等），这可能面临大型企业在数据安全、合规和权限管理方面的严格审查，从而延长销售周期。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1987,160 +2081,84 @@
           "target_kind": "product",
           "research_name": "Harmony AI 平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Harmony operates inside Slack and Microsoft Teams to handle tasks like onboarding, software access, and resetting passwords."
-            },
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Harmony works with more than 100 applications and can use an employee's role and permissions to tailor responses."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Nitzan Shapira",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ran Ribenzaft",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Lightspeed led Harmony's $34 million round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hitachi Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fin Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mercer Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Operator Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Assaf Rappaport (Wiz 创始团队成员)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ofir Ehrlich (Eon.io 联合创始人兼 CEO)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2a6970c8768c84ff",
-              "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "n8n",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fe66d902ece1db68",
-              "quote": "Customers include workflow automation company n8n"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ServiceNow",
           "canonical_entity_id": "EN-b5738c169b693bee",
-          "canonical_name": "ServiceNow",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-02ef8f0167178ccb",
-              "quote": "We focused on the computing environment, a market where companies like ServiceNow generate billions of dollars in revenue. We don't want to build another company that sells for hundreds of millions of dollars and move on. We want to build a company worth billions of dollars."
-            }
-          ]
+          "canonical_name": "ServiceNow"
         }
       ],
       "funding_history": [
@@ -2216,10 +2234,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-29T04:47:07.714Z"
+      "published_at": "2026-07-29T04:47:07.714Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Harmony AI 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Nitzan Shapira",
+            "Ran Ribenzaft"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-5f3ccb941a2fe5d7"
+      ],
+      "aggregation": {
+        "key": "EN-2be663431f007250|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

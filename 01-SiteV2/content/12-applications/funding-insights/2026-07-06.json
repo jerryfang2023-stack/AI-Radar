@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-06",
     "generated_at": "2026-07-26T15:16:12.288Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 3,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-58dc16e46e57a9e8",
       "triggered_by_event_id": "EV-81bd541510a530f0",
       "as_of_date": "2026-07-06",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fc28dcd89f638ce8",
-                "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela"
+                "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela",
+                "source_content_hash": "e2a3fa5711139700",
+                "quote_hash": "9335a498ca58d185ddf501dad8a88a74bdda9c0fdfd174dc471ffc1a9fb74d46"
               },
               {
                 "source_id": "FISRC-0b968f0e36c052bd",
-                "quote": "Co-founder and Chief Executive Gal Aga"
+                "quote": "Co-founder and Chief Executive Gal Aga",
+                "source_content_hash": "8f6a0edcb86372d0",
+                "quote_hash": "3fbe1514d4d6cee1cd94dc8541aa544ceb46b1d501bb0f2eb767deec11eb55c5"
               }
             ],
             "entity_id": null
@@ -50,11 +55,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fc28dcd89f638ce8",
-                "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela"
+                "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela",
+                "source_content_hash": "e2a3fa5711139700",
+                "quote_hash": "9335a498ca58d185ddf501dad8a88a74bdda9c0fdfd174dc471ffc1a9fb74d46"
               },
               {
                 "source_id": "FISRC-fc28dcd89f638ce8",
-                "quote": "Gal Deitsch, Co-founder and Chief Product Officer"
+                "quote": "Gal Deitsch, Co-founder and Chief Product Officer",
+                "source_content_hash": "e2a3fa5711139700",
+                "quote_hash": "5607b98d8f2a208e71c617c9f21b64bc361836381f460919fb464c930fc19d38"
               }
             ],
             "entity_id": null
@@ -65,7 +74,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fc28dcd89f638ce8",
-                "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela"
+                "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela",
+                "source_content_hash": "e2a3fa5711139700",
+                "quote_hash": "9335a498ca58d185ddf501dad8a88a74bdda9c0fdfd174dc471ffc1a9fb74d46"
               }
             ],
             "entity_id": null
@@ -77,18 +88,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b9ab754690cd0eac",
-              "quote": "Aligned has 40-50 employees (+40% YoY)"
+              "quote": "Aligned has 40-50 employees (+40% YoY)",
+              "source_content_hash": "c9f3a5032fae7c19",
+              "quote_hash": "ec735696819d875e01766a298e6008a4c839a8474aa43b20d7687d1610ed4fac"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-0b968f0e36c052bd",
-            "quote": "Team Aligned Inc. , a startup that uses artificial intelligence to streamline deal execution for corporate buyers and sellers"
+            "quote": "Team Aligned Inc. , a startup that uses artificial intelligence to streamline deal execution for corporate buyers and sellers",
+            "source_content_hash": "8f6a0edcb86372d0",
+            "quote_hash": "91498ab84232705fa205608fed70ebf477234f572d5332505c21e1f995a798ba"
           },
           {
             "source_id": "FISRC-fc28dcd89f638ce8",
-            "quote": "Headquartered in New York and Tel Aviv"
+            "quote": "Headquartered in New York and Tel Aviv",
+            "source_content_hash": "e2a3fa5711139700",
+            "quote_hash": "da4a8d12bd9dd8410ee9c5ec80bbc0ca80193b8c1ba73ff995c2815b5db9dd3e"
           }
         ]
       },
@@ -104,7 +121,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0b968f0e36c052bd",
-                "quote": "PeakSpan Capital led the Series B round"
+                "quote": "PeakSpan Capital led the Series B round",
+                "source_content_hash": "8f6a0edcb86372d0",
+                "quote_hash": "88d1521ea87be5556f39348971560b27ab2940e3ce2da154d30ac43dc287d27a"
               }
             ],
             "entity_id": null
@@ -115,7 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0b968f0e36c052bd",
-                "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX"
+                "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX",
+                "source_content_hash": "8f6a0edcb86372d0",
+                "quote_hash": "f60ed8ca301fb6f805759f31920ec4428ea810c18814ac1d21c646f0a9db972b"
               }
             ],
             "entity_id": null
@@ -126,7 +147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0b968f0e36c052bd",
-                "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX"
+                "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX",
+                "source_content_hash": "8f6a0edcb86372d0",
+                "quote_hash": "f60ed8ca301fb6f805759f31920ec4428ea810c18814ac1d21c646f0a9db972b"
               }
             ],
             "entity_id": null
@@ -137,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0b968f0e36c052bd",
-                "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX"
+                "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX",
+                "source_content_hash": "8f6a0edcb86372d0",
+                "quote_hash": "f60ed8ca301fb6f805759f31920ec4428ea810c18814ac1d21c646f0a9db972b"
               }
             ],
             "entity_id": null
@@ -146,7 +171,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-0b968f0e36c052bd",
-            "quote": "said today it has clinched $60 million in a new round of funding. PeakSpan Capital led the Series B round, which saw participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX, bringing its total amount raised to date to $73.8 million."
+            "quote": "said today it has clinched $60 million in a new round of funding. PeakSpan Capital led the Series B round, which saw participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX, bringing its total amount raised to date to $73.8 million.",
+            "source_content_hash": "8f6a0edcb86372d0",
+            "quote_hash": "5eed9ca08c0c109a5a3e34845145f0e3e24f69ae3c7c82a6291dcf76c7fba420"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-81bd541510a530f0",
+            "round_original": "B轮",
+            "amount": "6000万美元",
+            "announced_at": "2026-07-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0b968f0e36c052bd",
+                "quote": "said today it has clinched $60 million in a new round of funding. PeakSpan Capital led the Series B round, which saw participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX, bringing its total amount raised to date to $73.8 million.",
+                "source_content_hash": "8f6a0edcb86372d0",
+                "quote_hash": "5eed9ca08c0c109a5a3e34845145f0e3e24f69ae3c7c82a6291dcf76c7fba420"
+              }
+            ]
           }
         ]
       },
@@ -165,15 +211,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "it provides a unified AI Deal Workspace that sellers can share with prospective buyers following an initial meeting. The AI Deal Workspace is a kind of digital canvas, where buyers and AI agents can collaborate in real time, ensuring that all of the proposals, business use cases and feedback remains centralized."
+              "quote": "it provides a unified AI Deal Workspace that sellers can share with prospective buyers following an initial meeting. The AI Deal Workspace is a kind of digital canvas, where buyers and AI agents can collaborate in real time, ensuring that all of the proposals, business use cases and feedback remains centralized.",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "59c111c890aae48d5a0f6e81f8a541b6b0b53679a61828c1a82847b7159a71d6"
             },
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "AI Deal Brain, which is a proprietary engine that ingests deal context from CRMs, emails and calls. According to Aga, it enables the Workspace to capture 95% of the buyer’s journey activity"
+              "quote": "AI Deal Brain, which is a proprietary engine that ingests deal context from CRMs, emails and calls. According to Aga, it enables the Workspace to capture 95% of the buyer’s journey activity",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "0d56957fd1eb75c65fab25f692820f5005843706c4267c78db92225b8a971b43"
             },
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Aligned’s prebuilt agents include a Seller Agent that proactively surfaces risks and drafts timely followups, and a Buyer Agent that provides stakeholders with instant answers to their questions"
+              "quote": "Aligned’s prebuilt agents include a Seller Agent that proactively surfaces risks and drafts timely followups, and a Buyer Agent that provides stakeholders with instant answers to their questions",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "2b02038da143aac33f80637a4243d4cd7580a985590c1c9cc4a1836ba23909b2"
             }
           ],
           "entity_id": null
@@ -187,9 +239,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned"
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned",
+              "source_content_hash": "e2a3fa5711139700",
+              "quote_hash": "f37c82384084a36e0464000ed7ca51d347e4415074587ec7a5f8c1628ca623fb"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "SimilarWeb",
@@ -198,9 +253,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned"
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned",
+              "source_content_hash": "e2a3fa5711139700",
+              "quote_hash": "f37c82384084a36e0464000ed7ca51d347e4415074587ec7a5f8c1628ca623fb"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "WordPress",
@@ -209,9 +267,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned"
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned",
+              "source_content_hash": "e2a3fa5711139700",
+              "quote_hash": "f37c82384084a36e0464000ed7ca51d347e4415074587ec7a5f8c1628ca623fb"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -225,13 +286,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "the CRM is simply a system of record that logs events after they happen"
+              "quote": "the CRM is simply a system of record that logs events after they happen",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "701e7356326cb000bf20d58a351af42e2df24f5a4c54e9cfd7ac6ac7af9744b0"
             },
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "existing sales platforms such as Salesforce only do part of the job, recording and analyzing deals, but fail to help buyers decide and sales representatives to execute."
+              "quote": "existing sales platforms such as Salesforce only do part of the job, recording and analyzing deals, but fail to help buyers decide and sales representatives to execute.",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "0867248620859dd8889507b6a9c453a86b97ca23f927f9e0c0e39c90d696307b"
             }
-          ]
+          ],
+          "entity_id": "EN-3ccbd9105a45d8fc"
         },
         {
           "name": "Revenue Intelligence平台",
@@ -243,13 +309,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "revenue intelligence tools simply analyze if a deal succeeded or failed"
+              "quote": "revenue intelligence tools simply analyze if a deal succeeded or failed",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "7e43a46024044026f9b18c97ac1e2c0c97528410bb2620adf0fee567a04b7f2c"
             },
             {
               "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "The system of insight, led by Revenue Intelligence platforms, analyzes why"
+              "quote": "The system of insight, led by Revenue Intelligence platforms, analyzes why",
+              "source_content_hash": "e2a3fa5711139700",
+              "quote_hash": "895b248e1d8228ef3ce2f878bc24933ae6b93c73ac71f72e1337f4b58bc29ddf"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Figma",
@@ -261,13 +332,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Designers emailed files back and forth until Figma gave them one living canvas."
+              "quote": "Designers emailed files back and forth until Figma gave them one living canvas.",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "4bd44cb84cea952e0f6f05d79fdeba2cef6b9f8ad1dcab5f0eb46845135b19fb"
             },
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Every category-defining tool replaced chaos, not software"
+              "quote": "Every category-defining tool replaced chaos, not software",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "be25c872b717714e3b69325a9b4add69e523df0cb159e50865b68c826a995228"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Asana",
@@ -279,9 +355,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Project managers worked off spreadsheets until Asana gave them one living plan."
+              "quote": "Project managers worked off spreadsheets until Asana gave them one living plan.",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "0ce6bc18c2ee4624c3b88679f81875b98d0c16cf440554f3c612bbff5536518a"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -292,7 +371,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9081d4bb6367db04",
-              "quote": "The Israeli company’s platform is already used by 70,000 sellers and 1 million buyers to run deals every month."
+              "quote": "The Israeli company’s platform is already used by 70,000 sellers and 1 million buyers to run deals every month.",
+              "source_content_hash": "b2ee147638a390bd",
+              "quote_hash": "71c693095aed052a27e6c0aacc94401524ca39f340b2835e8e4e880cda15d8b9"
             }
           ]
         },
@@ -303,7 +384,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9081d4bb6367db04",
-              "quote": "The Israeli company’s platform is already used by 70,000 sellers and 1 million buyers to run deals every month."
+              "quote": "The Israeli company’s platform is already used by 70,000 sellers and 1 million buyers to run deals every month.",
+              "source_content_hash": "b2ee147638a390bd",
+              "quote_hash": "71c693095aed052a27e6c0aacc94401524ca39f340b2835e8e4e880cda15d8b9"
             }
           ]
         },
@@ -314,7 +397,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9081d4bb6367db04",
-              "quote": "says it has 1,000+ customers"
+              "quote": "says it has 1,000+ customers",
+              "source_content_hash": "b2ee147638a390bd",
+              "quote_hash": "8b5f3f2e993f10c1c5c47862d760f462ff9c02b333edbc28241b12242d10afd1"
             }
           ]
         },
@@ -325,7 +410,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "tripling ARR over the last 12 months"
+              "quote": "tripling ARR over the last 12 months",
+              "source_content_hash": "e2a3fa5711139700",
+              "quote_hash": "045b29c7f279dbcb3bdd82a31a32fcc35f52ee1b3a464645e9576dc3e3ebc9b0"
             }
           ]
         },
@@ -336,7 +423,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "report 30% faster sales cycles and 15% higher win rates"
+              "quote": "report 30% faster sales cycles and 15% higher win rates",
+              "source_content_hash": "e2a3fa5711139700",
+              "quote_hash": "c59869a3ad41fe49cbe10e32639aad0a7ae1557c5801c598b5b8b7afd7fa01cf"
             }
           ]
         },
@@ -347,7 +436,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "report 30% faster sales cycles and 15% higher win rates"
+              "quote": "report 30% faster sales cycles and 15% higher win rates",
+              "source_content_hash": "e2a3fa5711139700",
+              "quote_hash": "c59869a3ad41fe49cbe10e32639aad0a7ae1557c5801c598b5b8b7afd7fa01cf"
             }
           ]
         },
@@ -358,7 +449,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "it enables the Workspace to capture 95% of the buyer’s journey activity"
+              "quote": "it enables the Workspace to capture 95% of the buyer’s journey activity",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "254cb7c6f2fe561d581286f9007f21ba86884bd7dbb94ca71d559124e03255e7"
             }
           ]
         }
@@ -370,7 +463,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "We built the opposite – a single workspace that enables the buyer and equips sales reps with the tools to make buying easy"
+              "quote": "We built the opposite – a single workspace that enables the buyer and equips sales reps with the tools to make buying easy",
+              "source_content_hash": "8f6a0edcb86372d0",
+              "quote_hash": "7f2f2bd99229889f7e3a2cf518e71520c647fd4cfc967b7642b1f9ce36e969af"
             }
           ]
         }
@@ -392,7 +487,24 @@
           "向上市场扩张需要深度合规认证和企业级集成，可能面临长销售周期和复杂采购流程的挑战"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "销售技术/AI代理执行层"
+        "sector": "销售技术/AI代理执行层",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“系统行动层”作为销售技术栈新基础设施的品类定义权。Aligned通过拥有买卖双方交易的界面，生成CRM和收入智能工具无法获取的专有行为数据，形成数据护城河。本轮融资的已验证信号包括：ARR过去12个月增长两倍、7万卖家和100万买家月活、G2数字销售室类别三项排名第一、企业客户Deel/SimilarWeb/WordPress的采用，以及30%销售周期缩短和15%赢单率提升的量化效果。PeakSpan花费三年调研该品类后领投该类别迄今最大轮次，表明其判断Aligned具备成为GTM软件下一个十年主导者的潜力。",
+          "evidence_signals": [
+            "ARR过去12个月增长两倍",
+            "月活卖家7万、买家100万",
+            "G2数字销售室类别SMB、中端市场、客户门户均排名第一",
+            "企业客户包括Deel、SimilarWeb、WordPress",
+            "客户报告销售周期缩短30%、赢单率提升15%",
+            "AI Deal Brain捕获95%的买方旅程活动"
+          ],
+          "risks": [
+            "数字销售室品类竞争激烈，CRM巨头可能通过收购或自研进入系统行动层，挤压独立厂商空间",
+            "从AI辅助协作向完全代理化工作流过渡存在技术执行风险，代理自主执行交易的准确性和信任度尚未大规模验证",
+            "向上市场扩张需要深度合规认证和企业级集成，可能面临长销售周期和复杂采购流程的挑战"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -400,223 +512,105 @@
           "target_kind": "product",
           "research_name": "AI Deal Workspace",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "it provides a unified AI Deal Workspace that sellers can share with prospective buyers following an initial meeting. The AI Deal Workspace is a kind of digital canvas, where buyers and AI agents can collaborate in real time, ensuring that all of the proposals, business use cases and feedback remains centralized."
-            },
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "AI Deal Brain, which is a proprietary engine that ingests deal context from CRMs, emails and calls. According to Aga, it enables the Workspace to capture 95% of the buyer’s journey activity"
-            },
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Aligned’s prebuilt agents include a Seller Agent that proactively surfaces risks and drafts timely followups, and a Buyer Agent that provides stakeholders with instant answers to their questions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gal Aga",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela"
-            },
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Co-founder and Chief Executive Gal Aga"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gal Deitsch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela"
-            },
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Gal Deitsch, Co-founder and Chief Product Officer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yotam Sela",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "PeakSpan Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "PeakSpan Capital led the Series B round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hetz Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "JAL Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "NFX",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "participation from all of the company’s earlier backers, including Hetz Ventures, JAL Ventures and NFX"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Deel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "SimilarWeb",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "WordPress",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Salesforce",
           "canonical_entity_id": "EN-3ccbd9105a45d8fc",
-          "canonical_name": "Salesforce",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "the CRM is simply a system of record that logs events after they happen"
-            },
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "existing sales platforms such as Salesforce only do part of the job, recording and analyzing deals, but fail to help buyers decide and sales representatives to execute."
-            }
-          ]
+          "canonical_name": "Salesforce"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Revenue Intelligence平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "revenue intelligence tools simply analyze if a deal succeeded or failed"
-            },
-            {
-              "source_id": "FISRC-fc28dcd89f638ce8",
-              "quote": "The system of insight, led by Revenue Intelligence platforms, analyzes why"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Figma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Designers emailed files back and forth until Figma gave them one living canvas."
-            },
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Every category-defining tool replaced chaos, not software"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Asana",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b968f0e36c052bd",
-              "quote": "Project managers worked off spreadsheets until Asana gave them one living plan."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -690,13 +684,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:46:00.091Z"
+      "published_at": "2026-07-26T14:46:00.091Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI Deal Workspace"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Gal Aga",
+            "Gal Deitsch",
+            "Yotam Sela"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-81bd541510a530f0"
+      ],
+      "aggregation": {
+        "key": "EN-4ca9544527138c33|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-a5e14f4ba5d6d36e",
       "triggered_by_event_id": "EV-327ba605bd9e8307",
       "as_of_date": "2026-07-06",
@@ -714,7 +739,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-710d897cee27dcf0",
-                "quote": "Alex Saroyan, CEO and co-founder of Netris"
+                "quote": "Alex Saroyan, CEO and co-founder of Netris",
+                "source_content_hash": "621fb4fc31ac5977",
+                "quote_hash": "f6b260587d6f0dcdfa41e193be7659bb3333cd2d84a036ee11c49370fc8e121a"
               }
             ],
             "entity_id": null
@@ -725,7 +752,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-27ef026630fd3bb7",
-                "quote": "Tigran Martirosyan Co-Founder & VP Software Engineering"
+                "quote": "Tigran Martirosyan Co-Founder & VP Software Engineering",
+                "source_content_hash": "443c6fa8bedcb9dd",
+                "quote_hash": "e782538b645705a5ce776b409b8975af187b3720d70b15f4a44edc38d4dea901"
               }
             ],
             "entity_id": null
@@ -736,7 +765,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-27ef026630fd3bb7",
-                "quote": "Arsen Arakelyan Co-Founder & VP Customer Success"
+                "quote": "Arsen Arakelyan Co-Founder & VP Customer Success",
+                "source_content_hash": "443c6fa8bedcb9dd",
+                "quote_hash": "8c74e78f78c29b6b71fedec09167670a090c7188e0bc0abf218a02573005e8c7"
               }
             ],
             "entity_id": null
@@ -748,23 +779,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ca27f6fa06c4b156",
-              "quote": "Employees: 101–200"
+              "quote": "Employees: 101–200",
+              "source_content_hash": "52cda65a29695e1c",
+              "quote_hash": "ac28ec9cfb42f5b45a06a5628082da84673ad44cd53eedde701a5d01c11dec70"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-710d897cee27dcf0",
-            "quote": "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure"
+            "quote": "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure",
+            "source_content_hash": "621fb4fc31ac5977",
+            "quote_hash": "d65cda2e68ede68c1189fb9d46f7e0de0573076e1e33cc44beb62e88ae632542"
           },
           {
             "source_id": "FISRC-ca27f6fa06c4b156",
-            "quote": "Headquarters: Santa Clara, CA"
+            "quote": "Headquarters: Santa Clara, CA",
+            "source_content_hash": "52cda65a29695e1c",
+            "quote_hash": "a93fc83803aa3ddd1c7799f856471a122e80730899fc4922488235291346cbf7"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$15M",
         "total_raised": "$15M",
         "announced_at": "2026-06-25",
@@ -775,7 +812,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-710d897cee27dcf0",
-                "quote": "a $15M Series A round led by Andreessen Horowitz"
+                "quote": "a $15M Series A round led by Andreessen Horowitz",
+                "source_content_hash": "621fb4fc31ac5977",
+                "quote_hash": "9d9d3c4485f8eb0950ed56fbd975ed2b6f581c46fd1f60a5081b1e6cad8c7f65"
               }
             ],
             "entity_id": null
@@ -784,11 +823,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-710d897cee27dcf0",
-            "quote": "Netris raised a $15M Series A led by Andreessen Horowitz"
+            "quote": "Netris raised a $15M Series A led by Andreessen Horowitz",
+            "source_content_hash": "621fb4fc31ac5977",
+            "quote_hash": "d2bde33aab42c873e0c535291d19bad71b240cda428f1b29c7526a06a056c550"
           },
           {
             "source_id": "FISRC-ca27f6fa06c4b156",
-            "quote": "Netris raises $15M Series A led by Andreessen Horowitz"
+            "quote": "Netris raises $15M Series A led by Andreessen Horowitz",
+            "source_content_hash": "52cda65a29695e1c",
+            "quote_hash": "7736e955ddcfca7a22f207b155669f62b60913b62fbb2fc066fdac75e78ff236"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-327ba605bd9e8307",
+            "round_original": "Series A",
+            "amount": "$15M",
+            "announced_at": "2026-06-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-710d897cee27dcf0",
+                "quote": "Netris raised a $15M Series A led by Andreessen Horowitz",
+                "source_content_hash": "621fb4fc31ac5977",
+                "quote_hash": "d2bde33aab42c873e0c535291d19bad71b240cda428f1b29c7526a06a056c550"
+              },
+              {
+                "source_id": "FISRC-ca27f6fa06c4b156",
+                "quote": "Netris raises $15M Series A led by Andreessen Horowitz",
+                "source_content_hash": "52cda65a29695e1c",
+                "quote_hash": "7736e955ddcfca7a22f207b155669f62b60913b62fbb2fc066fdac75e78ff236"
+              }
+            ]
           }
         ]
       },
@@ -807,7 +875,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
+              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants.",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "f53f26664d517c36e2b90d76352062b507aad272e8926c433c983a5c383dc8b9"
             }
           ],
           "entity_id": null
@@ -821,9 +891,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI"
+              "quote": "high-growth neoclouds, including Lightning AI",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "9e7c2a38c6872463f0c7d7b732857664fe1aa7f684e2ed2aebac8f2a28b1ad36"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "TensorWave",
@@ -832,9 +905,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave"
+              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "05417e0b330bd968688a60013b6f43962b070a7f1e7567fdd0d316ba9cee26ae"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "TELUS",
@@ -843,9 +919,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA"
+              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "cde5951a88d5e1ce449578c00fc62f45aaad1289dab20536d0c8d45de8c10a5e"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "HPE",
@@ -854,9 +933,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government"
+              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "43a43a055b56d3a6104f3515c51fbabb69ba7332df4252297950fa4b9ad1941c"
             }
-          ]
+          ],
+          "entity_id": "EN-d7aba0f660c463d8"
         }
       ],
       "comparisons": [],
@@ -868,7 +950,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Netris experienced 800% ARR growth"
+              "quote": "Netris experienced 800% ARR growth",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "887ee9baca6bac9432cfa8eb995ebd27b4161ded2693e2072dc0c654035f37c7"
             }
           ]
         },
@@ -879,7 +963,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "35+ live deployments"
+              "quote": "35+ live deployments",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "419a30f76b3986cf984bff32b95e9ec89cf3ee448add9f76d4205fc152963992"
             }
           ]
         },
@@ -890,7 +976,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Founded in 2018"
+              "quote": "Founded in 2018",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "99a79cda63745e7e628010d66d661ee5a9f63d8d4c5273af3f0d39bf496835d7"
             }
           ]
         },
@@ -901,7 +989,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Netris operates teams across the US, UK, Taiwan, Australia, Armenia, and India, with Singapore opening in 2026"
+              "quote": "Netris operates teams across the US, UK, Taiwan, Australia, Armenia, and India, with Singapore opening in 2026",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "90eceae28dba55bf29e0495659b948913caf95f843d05fc906c2e96557cd5c7c"
             }
           ]
         }
@@ -913,7 +1003,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey."
+              "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey.",
+              "source_content_hash": "621fb4fc31ac5977",
+              "quote_hash": "0d3fca8671fc28dafb90aa7c98842c9e8c86d6a13aa0b53cc78c18cc912d6616"
             }
           ]
         }
@@ -929,7 +1021,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-710d897cee27dcf0",
-                "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey."
+                "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey.",
+                "source_content_hash": "621fb4fc31ac5977",
+                "quote_hash": "0d3fca8671fc28dafb90aa7c98842c9e8c86d6a13aa0b53cc78c18cc912d6616"
               }
             ]
           }
@@ -946,7 +1040,21 @@
           "来源未披露除 a16z 外的其他投资方，缺乏产业资本或战略投资者背书可能限制其在硬件生态中的深度绑定能力"
         ],
         "related_direction_id": "",
-        "sector": "AI 基础设施 / 网络自动化与多租户"
+        "sector": "AI 基础设施 / 网络自动化与多租户",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是 AI 基础设施从 GPU 采购向可运营云服务转化的瓶颈——网络自动化与多租户隔离。Netris 以 800% ARR 增长和 35+ 在线部署验证了其产品在 neocloud 和主权 AI 运营商中的生产级采用，且部署数量超过所有其他网络自动化供应商的总和。a16z 合伙人 Guido Appenzeller 加入董事会，进一步强化了机构对该公司作为 AI 网络控制层关键角色的判断。但证据边界在于：当前客户集中于 neocloud 和主权 AI 运营商，若该市场整合或需求回流至超大规模云厂商，Netris 的可寻址市场可能收窄；此外，来源未披露除 a16z 外的其他投资方，无法判断本轮是否有产业资本或战略投资者跟投。",
+          "evidence_signals": [
+            "过去12个月 ARR 增长 800%",
+            "35+ 在线部署，覆盖全球最大 neocloud、主权 AI 运营商和 AI 工厂",
+            "部署数量超过所有其他网络自动化供应商的总和",
+            "a16z 合伙人 Guido Appenzeller 领投并加入董事会"
+          ],
+          "risks": [
+            "neocloud 市场若出现整合或需求回流至 AWS/Azure/GCP 等超大规模云厂商，Netris 的客户基础可能收窄",
+            "来源未披露除 a16z 外的其他投资方，缺乏产业资本或战略投资者背书可能限制其在硬件生态中的深度绑定能力"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -954,117 +1062,63 @@
           "target_kind": "product",
           "research_name": "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alex Saroyan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "Alex Saroyan, CEO and co-founder of Netris"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tigran Martirosyan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-27ef026630fd3bb7",
-              "quote": "Tigran Martirosyan Co-Founder & VP Software Engineering"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Arsen Arakelyan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-27ef026630fd3bb7",
-              "quote": "Arsen Arakelyan Co-Founder & VP Customer Success"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "a $15M Series A round led by Andreessen Horowitz"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Lightning AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "TensorWave",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "TELUS",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "HPE",
           "canonical_entity_id": "EN-d7aba0f660c463d8",
-          "canonical_name": "HPE",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-710d897cee27dcf0",
-              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government"
-            }
-          ]
+          "canonical_name": "HPE"
         }
       ],
       "funding_history": [
@@ -1127,13 +1181,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:45:54.217Z"
+      "published_at": "2026-07-26T14:45:54.217Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy)"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Alex Saroyan",
+            "Arsen Arakelyan",
+            "Tigran Martirosyan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-327ba605bd9e8307"
+      ],
+      "aggregation": {
+        "key": "EN-d1a61df8d3146e48|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-65a8d1e29665fc99",
       "triggered_by_event_id": "EV-12a42b0aabee236f",
       "as_of_date": "2026-07-06",
@@ -1151,11 +1236,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-26c6cd205440128d",
-                "quote": "Richard Socher has been a major figure in AI for some time... Now he’s joining the current generation of research-focused AI startups with Recursive Superintelligence"
+                "quote": "Richard Socher has been a major figure in AI for some time... Now he’s joining the current generation of research-focused AI startups with Recursive Superintelligence",
+                "source_content_hash": "a8c616a06dddef2b",
+                "quote_hash": "9ccaab923c37dc35ef1cea20ed7eacd66a4901d8b0842ea1fe5f6a4e3db3d0fe"
               },
               {
                 "source_id": "FISRC-61b930049ee4e86e",
-                "quote": "The company was founded earlier this year by former Salesforce Inc. Chief Scientist Richard Socher."
+                "quote": "The company was founded earlier this year by former Salesforce Inc. Chief Scientist Richard Socher.",
+                "source_content_hash": "926edc21ca4613eb",
+                "quote_hash": "2e7080ddd722f3d7b9440344e68a18ca01ae76f1b6e41fbea868362535121e3e"
               }
             ],
             "entity_id": null
@@ -1166,7 +1255,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c828bea967b8a2c",
-                "quote": "Led by Richard Socher and co-founded by ex-Meta FAIR director Yuandong Tian"
+                "quote": "Led by Richard Socher and co-founded by ex-Meta FAIR director Yuandong Tian",
+                "source_content_hash": "c613eb514dcf00f3",
+                "quote_hash": "331f2573f973ff2375dee962c60e1085d286c28a4b51a25fa171c6d5dac01fce"
               }
             ],
             "entity_id": null
@@ -1177,7 +1268,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-26c6cd205440128d",
-                "quote": "Tim Rocktäschel, one of our co-founders, led the open-endedness and self-improvement teams at Google DeepMind"
+                "quote": "Tim Rocktäschel, one of our co-founders, led the open-endedness and self-improvement teams at Google DeepMind",
+                "source_content_hash": "a8c616a06dddef2b",
+                "quote_hash": "c75806228591dc21af77a1f3a1820626d621e33650539041628a8da89a57bfdf"
               }
             ],
             "entity_id": null
@@ -1188,7 +1281,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c828bea967b8a2c",
-                "quote": "Alexey Dosovitskiy, one of the authors of the Vision Transformer (ViT)"
+                "quote": "Alexey Dosovitskiy, one of the authors of the Vision Transformer (ViT)",
+                "source_content_hash": "c613eb514dcf00f3",
+                "quote_hash": "8a391c2c646062cd07d0bbdc431f1de1248c4879969529a9dc0fb05d3756f745"
               }
             ],
             "entity_id": null
@@ -1199,7 +1294,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c828bea967b8a2c",
-                "quote": "Josh Tobin, formerly of OpenAI"
+                "quote": "Josh Tobin, formerly of OpenAI",
+                "source_content_hash": "c613eb514dcf00f3",
+                "quote_hash": "af4a6ef13b5eb9ce018367e6b9b558deebdc6761e6ef2427df76056b2720a39b"
               }
             ],
             "entity_id": null
@@ -1210,7 +1307,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-26c6cd205440128d",
-                "quote": "Socher is joined in the new venture by a cohort of prominent AI researchers, including Peter Norvig and Cresta co-founder Tim Shi."
+                "quote": "Socher is joined in the new venture by a cohort of prominent AI researchers, including Peter Norvig and Cresta co-founder Tim Shi.",
+                "source_content_hash": "a8c616a06dddef2b",
+                "quote_hash": "bb2fa54963641ffd79b5f1a182e98fd4d21e23839d448eb3b95e295f71d7aeb7"
               }
             ],
             "entity_id": null
@@ -1221,7 +1320,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c828bea967b8a2c",
-                "quote": "Caiming Xiong"
+                "quote": "Caiming Xiong",
+                "source_content_hash": "c613eb514dcf00f3",
+                "quote_hash": "48d154079dd8322a69661f167709c9ee31eb29af39f0b0dfd1eecb02b0ff0cb3"
               }
             ],
             "entity_id": null
@@ -1232,7 +1333,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c828bea967b8a2c",
-                "quote": "Jeff Clune"
+                "quote": "Jeff Clune",
+                "source_content_hash": "c613eb514dcf00f3",
+                "quote_hash": "044e4eb9e2acc0e646a0bae4a139a40d522188bf4893ff4cec4070d73bd16437"
               }
             ],
             "entity_id": null
@@ -1244,23 +1347,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "The company now has more than 25 employees in San Francisco and London."
+              "quote": "The company now has more than 25 employees in San Francisco and London.",
+              "source_content_hash": "926edc21ca4613eb",
+              "quote_hash": "0e3278601b50361ae474bf8522a84559763c3f8f719343bb7ba54daf122c2a99"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-26c6cd205440128d",
-            "quote": "Recursive Superintelligence, a San Francisco-based startup that came out of stealth on Wednesday with $650 million in funding."
+            "quote": "Recursive Superintelligence, a San Francisco-based startup that came out of stealth on Wednesday with $650 million in funding.",
+            "source_content_hash": "a8c616a06dddef2b",
+            "quote_hash": "c5d886cf25a1015b2ce125741d00323be2653228b7770c5100faf5491167df02"
           },
           {
             "source_id": "FISRC-61b930049ee4e86e",
-            "quote": "Recursive Superintelligence Inc., a startup that hopes to develop self-improving artificial intelligence models, launched today with $650 million in funding."
+            "quote": "Recursive Superintelligence Inc., a startup that hopes to develop self-improving artificial intelligence models, launched today with $650 million in funding.",
+            "source_content_hash": "926edc21ca4613eb",
+            "quote_hash": "adf909e36a47d310f969389a67290b95f3523abc39c6ad7ecab7423efdcd666e"
           }
         ]
       },
       "financing": {
-        "round": "未披露轮次",
+        "round": "轮次未披露",
         "amount": "$650 million",
         "total_raised": "$650 million",
         "announced_at": "2026-05-13",
@@ -1271,7 +1380,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-61b930049ee4e86e",
-                "quote": "Alphabet Inc.’s GV fund and Greycroft led the round."
+                "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
+                "source_content_hash": "926edc21ca4613eb",
+                "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
               }
             ],
             "entity_id": null
@@ -1282,7 +1393,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-61b930049ee4e86e",
-                "quote": "Alphabet Inc.’s GV fund and Greycroft led the round."
+                "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
+                "source_content_hash": "926edc21ca4613eb",
+                "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
               }
             ],
             "entity_id": null
@@ -1293,7 +1406,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-61b930049ee4e86e",
-                "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm."
+                "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
+                "source_content_hash": "926edc21ca4613eb",
+                "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -1304,7 +1419,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-61b930049ee4e86e",
-                "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm."
+                "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
+                "source_content_hash": "926edc21ca4613eb",
+                "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
               }
             ],
             "entity_id": "EN-240389f4b730bad4"
@@ -1313,7 +1430,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-61b930049ee4e86e",
-            "quote": "Recursive Superintelligence Inc., a startup that hopes to develop self-improving artificial intelligence models, launched today with $650 million in funding."
+            "quote": "Recursive Superintelligence Inc., a startup that hopes to develop self-improving artificial intelligence models, launched today with $650 million in funding.",
+            "source_content_hash": "926edc21ca4613eb",
+            "quote_hash": "adf909e36a47d310f969389a67290b95f3523abc39c6ad7ecab7423efdcd666e"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-12a42b0aabee236f",
+            "round_original": "未披露轮次",
+            "amount": "$650 million",
+            "announced_at": "2026-05-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-61b930049ee4e86e",
+                "quote": "Recursive Superintelligence Inc., a startup that hopes to develop self-improving artificial intelligence models, launched today with $650 million in funding.",
+                "source_content_hash": "926edc21ca4613eb",
+                "quote_hash": "adf909e36a47d310f969389a67290b95f3523abc39c6ad7ecab7423efdcd666e"
+              }
+            ]
           }
         ]
       },
@@ -1331,11 +1469,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-26c6cd205440128d",
-              "quote": "Our main focus is to build truly recursive, self-improving superintelligence at scale, which means that the entire process of ideation, implementation, and validation of research ideas would be automatic."
+              "quote": "Our main focus is to build truly recursive, self-improving superintelligence at scale, which means that the entire process of ideation, implementation, and validation of research ideas would be automatic.",
+              "source_content_hash": "a8c616a06dddef2b",
+              "quote_hash": "1f7a20216a17510df98b4821f0b5b740a2472f605f936da6acc68ff124e5b0c7"
             },
             {
               "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "The company’s AI will search for ways to improve itself by carrying out simulations “in an open-ended process of automated scientific discovery.”"
+              "quote": "The company’s AI will search for ways to improve itself by carrying out simulations “in an open-ended process of automated scientific discovery.”",
+              "source_content_hash": "926edc21ca4613eb",
+              "quote_hash": "c75603aa1c072822f41b45dfc1cad73abc9ae7fab6db24799cf988394dc04892"
             }
           ],
           "entity_id": null
@@ -1353,9 +1495,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "OpenAI, Anthropic, and Google DeepMind all use AI to assist their research workflows, but their businesses are built around selling models and API access. Recursive is betting that the self-improvement loop itself is the product."
+              "quote": "OpenAI, Anthropic, and Google DeepMind all use AI to assist their research workflows, but their businesses are built around selling models and API access. Recursive is betting that the self-improvement loop itself is the product.",
+              "source_content_hash": "c613eb514dcf00f3",
+              "quote_hash": "c16665648cc0b4df3e16a3ec46acaf36b694c32f645149b32c259e695d956837"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "Anthropic",
@@ -1367,13 +1512,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Anthropic has said that the majority of its code is now written by Claude."
+              "quote": "Anthropic has said that the majority of its code is now written by Claude.",
+              "source_content_hash": "c613eb514dcf00f3",
+              "quote_hash": "e69a0fc21f4addddbaad4a187f0e840f45e8a6b98975774086b7490451f93a0d"
             },
             {
               "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "What distinguishes Recursive Superintelligence from these efforts is that none of the major laboratories has organised an entire company around recursive self-improvement as its core commercial thesis."
+              "quote": "What distinguishes Recursive Superintelligence from these efforts is that none of the major laboratories has organised an entire company around recursive self-improvement as its core commercial thesis.",
+              "source_content_hash": "c613eb514dcf00f3",
+              "quote_hash": "e0a7ddf3662b685cc99a6b2eeb08d1aa239d1ead3fc86f4c02aa8ee890cab6d6"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "Google DeepMind",
@@ -1385,13 +1535,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Google DeepMind has built AlphaEvolve, a coding agent designed for scientific and algorithmic discovery."
+              "quote": "Google DeepMind has built AlphaEvolve, a coding agent designed for scientific and algorithmic discovery.",
+              "source_content_hash": "c613eb514dcf00f3",
+              "quote_hash": "6f284db202b4ac96aa5d97e85a8bfa747cb990a5ce5aa482da26613ab9588173"
             },
             {
               "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "What distinguishes Recursive Superintelligence from these efforts is that none of the major laboratories has organised an entire company around recursive self-improvement as its core commercial thesis."
+              "quote": "What distinguishes Recursive Superintelligence from these efforts is that none of the major laboratories has organised an entire company around recursive self-improvement as its core commercial thesis.",
+              "source_content_hash": "c613eb514dcf00f3",
+              "quote_hash": "e0a7ddf3662b685cc99a6b2eeb08d1aa239d1ead3fc86f4c02aa8ee890cab6d6"
             }
-          ]
+          ],
+          "entity_id": "EN-2b6e51bec93e86c1"
         },
         {
           "name": "Ineffable Intelligence",
@@ -1403,9 +1558,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "Rival Ineffable Intelligence Ltd., which also hopes to develop models that can discover new knowledge, is using reinforcement learning."
+              "quote": "Rival Ineffable Intelligence Ltd., which also hopes to develop models that can discover new knowledge, is using reinforcement learning.",
+              "source_content_hash": "926edc21ca4613eb",
+              "quote_hash": "616680176567e40440681bb4e692a35585a5be1d58cb8f53009e52498b4c19ed"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1416,7 +1574,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "Recursive says the investment values it at $4.65 billion."
+              "quote": "Recursive says the investment values it at $4.65 billion.",
+              "source_content_hash": "926edc21ca4613eb",
+              "quote_hash": "a7b2ac42f5544dcf84150be006ae50fcdbfcece72a6c72731c9b1c2b7bb5a03a"
             }
           ]
         },
@@ -1427,7 +1587,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "The company now has more than 25 employees in San Francisco and London."
+              "quote": "The company now has more than 25 employees in San Francisco and London.",
+              "source_content_hash": "926edc21ca4613eb",
+              "quote_hash": "0e3278601b50361ae474bf8522a84559763c3f8f719343bb7ba54daf122c2a99"
             }
           ]
         },
@@ -1438,7 +1600,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Recursive Superintelligence is four months old, has fewer than 30 employees, and has not released a product."
+              "quote": "Recursive Superintelligence is four months old, has fewer than 30 employees, and has not released a product.",
+              "source_content_hash": "c613eb514dcf00f3",
+              "quote_hash": "0f68b7dc96ff0c23b96b2d572d6fa2e34a35492a4a6d91b281a1bd69e4dd6b54"
             }
           ]
         },
@@ -1449,7 +1613,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "GPT-5.5 developed a more efficient parallelization method that boosted token generation speeds by more than 20%."
+              "quote": "GPT-5.5 developed a more efficient parallelization method that boosted token generation speeds by more than 20%.",
+              "source_content_hash": "926edc21ca4613eb",
+              "quote_hash": "790037bbee643a2c72a89361eee7165a01bbff26918e633b33f925c7d9551e1a"
             }
           ]
         }
@@ -1461,7 +1627,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-26c6cd205440128d",
-              "quote": "Our unique approach is to use open-endedness to get to recursive self-improvement, which no one has yet achieved."
+              "quote": "Our unique approach is to use open-endedness to get to recursive self-improvement, which no one has yet achieved.",
+              "source_content_hash": "a8c616a06dddef2b",
+              "quote_hash": "e06295187cd340f2875324967e9877dcb787b2c42566b1046ee35aa2caaa7ca1"
             }
           ]
         },
@@ -1471,7 +1639,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-26c6cd205440128d",
-              "quote": "I want us to become a really viable company, to really have amazing products that people love to use, that have positive impact on humanity."
+              "quote": "I want us to become a really viable company, to really have amazing products that people love to use, that have positive impact on humanity.",
+              "source_content_hash": "a8c616a06dddef2b",
+              "quote_hash": "b122f8b9c529f042861231821e9abe799efdf22a76e0690fd3027e94b0830d14"
             }
           ]
         }
@@ -1487,7 +1657,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-99cbebc080dc91cf",
-                "quote": "GV's Tom Hulme captured it succinctly: \"AI is code, and now AI can code. When these two realities connect, the self-improvement loop can be closed.\""
+                "quote": "GV's Tom Hulme captured it succinctly: \"AI is code, and now AI can code. When these two realities connect, the self-improvement loop can be closed.\"",
+                "source_content_hash": "2eef923e3b3325bd",
+                "quote_hash": "3779561c2f35db3afd03f8cd85cd40e9cd46d0310f7a735073f455d153194604"
               }
             ]
           }
@@ -1503,7 +1675,20 @@
           "当前AI系统仍远未达到可以将人类从循环中移除的程度，严格定义的递归自我改进要求系统在没有人类指令的情况下自我改进，这在技术上尚未被验证可行。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "前沿AI研究与基础模型"
+        "sector": "前沿AI研究与基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是递归自我改进能否从理论变为工程现实。本轮融资以4.65亿美元估值完成，但公司成立仅4个月、员工不足30人、尚无产品，估值完全建立在团队履历和技术路线的可信度之上。已验证的信号包括：创始团队来自Meta FAIR、DeepMind、OpenAI等顶级实验室，且已吸引Nvidia和AMD作为战略投资方，表明硬件供应商将递归自我改进视为近期的算力需求驱动力。然而，判断的证据边界仅限于团队背景和投资方品牌，尚无任何产品原型、技术基准或客户验证来支撑这一估值。",
+          "evidence_signals": [
+            "创始团队包含来自Meta FAIR、Google DeepMind、OpenAI、Salesforce AI的前核心研究人员，具备顶级AI研究履历。",
+            "Nvidia和AMD作为战略投资方参与本轮，表明芯片制造商将递归自我改进视为近期算力需求增长的潜在驱动力。",
+            "融资轮次被描述为严重超额认购，反映投资者对前沿AI的强烈需求。"
+          ],
+          "risks": [
+            "递归自我改进可能收敛于递减回报，而非产生支持者所描述的失控加速，每个改进周期可能产生越来越小的收益。",
+            "当前AI系统仍远未达到可以将人类从循环中移除的程度，严格定义的递归自我改进要求系统在没有人类指令的情况下自我改进，这在技术上尚未被验证可行。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1511,237 +1696,119 @@
           "target_kind": "product",
           "research_name": "Recursive Self-Improving AI Model",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-26c6cd205440128d",
-              "quote": "Our main focus is to build truly recursive, self-improving superintelligence at scale, which means that the entire process of ideation, implementation, and validation of research ideas would be automatic."
-            },
-            {
-              "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "The company’s AI will search for ways to improve itself by carrying out simulations “in an open-ended process of automated scientific discovery.”"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Richard Socher",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-26c6cd205440128d",
-              "quote": "Richard Socher has been a major figure in AI for some time... Now he’s joining the current generation of research-focused AI startups with Recursive Superintelligence"
-            },
-            {
-              "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "The company was founded earlier this year by former Salesforce Inc. Chief Scientist Richard Socher."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yuandong Tian",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Led by Richard Socher and co-founded by ex-Meta FAIR director Yuandong Tian"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tim Rocktäschel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-26c6cd205440128d",
-              "quote": "Tim Rocktäschel, one of our co-founders, led the open-endedness and self-improvement teams at Google DeepMind"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alexey Dosovitskiy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Alexey Dosovitskiy, one of the authors of the Vision Transformer (ViT)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Josh Tobin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Josh Tobin, formerly of OpenAI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tim Shi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-26c6cd205440128d",
-              "quote": "Socher is joined in the new venture by a cohort of prominent AI researchers, including Peter Norvig and Cresta co-founder Tim Shi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Caiming Xiong",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Caiming Xiong"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jeff Clune",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Jeff Clune"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GV",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "Alphabet Inc.’s GV fund and Greycroft led the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Greycroft",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "Alphabet Inc.’s GV fund and Greycroft led the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AMD",
           "canonical_entity_id": "EN-240389f4b730bad4",
-          "canonical_name": "AMD",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm."
-            }
-          ]
+          "canonical_name": "AMD"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "OpenAI, Anthropic, and Google DeepMind all use AI to assist their research workflows, but their businesses are built around selling models and API access. Recursive is betting that the self-improvement loop itself is the product."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Anthropic has said that the majority of its code is now written by Claude."
-            },
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "What distinguishes Recursive Superintelligence from these efforts is that none of the major laboratories has organised an entire company around recursive self-improvement as its core commercial thesis."
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google DeepMind",
           "canonical_entity_id": "EN-2b6e51bec93e86c1",
-          "canonical_name": "Google DeepMind",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "Google DeepMind has built AlphaEvolve, a coding agent designed for scientific and algorithmic discovery."
-            },
-            {
-              "source_id": "FISRC-1c828bea967b8a2c",
-              "quote": "What distinguishes Recursive Superintelligence from these efforts is that none of the major laboratories has organised an entire company around recursive self-improvement as its core commercial thesis."
-            }
-          ]
+          "canonical_name": "Google DeepMind"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Ineffable Intelligence",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-61b930049ee4e86e",
-              "quote": "Rival Ineffable Intelligence Ltd., which also hopes to develop models that can discover new knowledge, is using reinforcement learning."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1815,10 +1882,46 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:45:45.474Z"
+      "published_at": "2026-07-26T14:45:45.474Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Recursive Self-Improving AI Model"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 8,
+          "unresolved_names": [
+            "Alexey Dosovitskiy",
+            "Caiming Xiong",
+            "Jeff Clune",
+            "Josh Tobin",
+            "Richard Socher",
+            "Tim Rocktäschel",
+            "Tim Shi",
+            "Yuandong Tian"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-12a42b0aabee236f"
+      ],
+      "aggregation": {
+        "key": "EN-b06631033a981321|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

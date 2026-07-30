@@ -189,6 +189,7 @@ jobs:
           set -euo pipefail
           node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
           npm run test:funding-insights
           node agent-workflow/tools/frontstage-regression-gate.mjs
 
@@ -203,6 +204,7 @@ jobs:
             agent-workflow/reports/${{ needs.resolve-date.outputs.date }}-github-funding-insights-retry.log
             agent-workflow/reports/frontstage-regression-gate-*.md
             01-SiteV2/content/12-applications/funding-insights/${{ needs.resolve-date.outputs.date }}.json
+            01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json
             01-SiteV2/site/data/funding-insights-v1.json
 
       - name: Commit accepted Funding Insights assets
@@ -217,6 +219,7 @@ jobs:
           git checkout -B "$branch"
           git add \
             "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json" \
+            "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json" \
             "01-SiteV2/site/data/funding-insights-v1.json"
           if git diff --cached --quiet; then
             echo "No Funding Insights changes to commit."

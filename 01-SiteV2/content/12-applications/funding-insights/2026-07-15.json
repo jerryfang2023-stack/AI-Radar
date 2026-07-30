@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-15",
     "generated_at": "2026-07-27T05:21:45.784Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 4,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-813b364f86679f0d",
       "triggered_by_event_id": "EV-df789745fb926bfd",
       "as_of_date": "2026-07-15",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c9fd5fac8536f13d",
-                "quote": "Hinge founder Justin McLeod announced an $18 million fundraise for his new dating company, Overtone."
+                "quote": "Hinge founder Justin McLeod announced an $18 million fundraise for his new dating company, Overtone.",
+                "source_content_hash": "9b45c0bc49d8089b",
+                "quote_hash": "68c8d13ad0696336b04ac0504d4016c509fd5d773e1e879fcdd40017e746e66f"
               },
               {
                 "source_id": "FISRC-7c47bda8586a9961",
-                "quote": "Justin McLeod, the creator of Hinge, founded the company."
+                "quote": "Justin McLeod, the creator of Hinge, founded the company.",
+                "source_content_hash": "bea75d41a180363b",
+                "quote_hash": "bbf6f919829b19f2d5626f2b5ee47a9fddcececaf6cbc4f48a3e50eb222b287e"
               }
             ],
             "entity_id": null
@@ -53,7 +58,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7c47bda8586a9961",
-            "quote": "Overtone, a modern matchmaking company based in New York"
+            "quote": "Overtone, a modern matchmaking company based in New York",
+            "source_content_hash": "bea75d41a180363b",
+            "quote_hash": "66220bcf86528192e173a31a3a33aa589316f40d3fc6f0711bd5a27dfeed4120"
           }
         ]
       },
@@ -69,7 +76,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c9fd5fac8536f13d",
-                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital.",
+                "source_content_hash": "9b45c0bc49d8089b",
+                "quote_hash": "79fb93d20fd81722bbd472bc9a791046309a35a1498dd6c857f6fda3416906ea"
               }
             ],
             "entity_id": null
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c9fd5fac8536f13d",
-                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital.",
+                "source_content_hash": "9b45c0bc49d8089b",
+                "quote_hash": "79fb93d20fd81722bbd472bc9a791046309a35a1498dd6c857f6fda3416906ea"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c9fd5fac8536f13d",
-                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital.",
+                "source_content_hash": "9b45c0bc49d8089b",
+                "quote_hash": "79fb93d20fd81722bbd472bc9a791046309a35a1498dd6c857f6fda3416906ea"
               }
             ],
             "entity_id": null
@@ -100,7 +113,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-c9fd5fac8536f13d",
-            "quote": "The founder of Hinge raised $18M to build a new AI dating service, Overtone"
+            "quote": "The founder of Hinge raised $18M to build a new AI dating service, Overtone",
+            "source_content_hash": "9b45c0bc49d8089b",
+            "quote_hash": "154d2685f91f77a480d383e7b319eb450c98e5517cbf5494e7edb69453aa0780"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-df789745fb926bfd",
+            "round_original": "种子轮",
+            "amount": "$18M",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c9fd5fac8536f13d",
+                "quote": "The founder of Hinge raised $18M to build a new AI dating service, Overtone",
+                "source_content_hash": "9b45c0bc49d8089b",
+                "quote_hash": "154d2685f91f77a480d383e7b319eb450c98e5517cbf5494e7edb69453aa0780"
+              }
+            ]
           }
         ]
       },
@@ -118,11 +152,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Overtone describes itself as “a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.”"
+              "quote": "Overtone describes itself as “a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.”",
+              "source_content_hash": "9b45c0bc49d8089b",
+              "quote_hash": "ed19a2f96bf554024eca94fec04a4c16bb08c4d02687d6b72cee38b341c41a61"
             },
             {
               "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "We transparently explain why we believe someone is a great match."
+              "quote": "We transparently explain why we believe someone is a great match.",
+              "source_content_hash": "9b45c0bc49d8089b",
+              "quote_hash": "a4aed655ff59024e7012bd5867334126a58f0aa34b04f711e1bd9e0288e27d3d"
             }
           ],
           "entity_id": null
@@ -140,9 +178,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
+              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another",
+              "source_content_hash": "9b45c0bc49d8089b",
+              "quote_hash": "fc24f3c42a82879c7e4272c43ce1ba265e45c63841b527f34ef5aa5230131e9b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Date Drop",
@@ -154,9 +195,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
+              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another",
+              "source_content_hash": "9b45c0bc49d8089b",
+              "quote_hash": "fc24f3c42a82879c7e4272c43ce1ba265e45c63841b527f34ef5aa5230131e9b"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -167,7 +211,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "A Forbes Health survey conducted in 2024 found that 78% of dating app users felt burnt out."
+              "quote": "A Forbes Health survey conducted in 2024 found that 78% of dating app users felt burnt out.",
+              "source_content_hash": "9b45c0bc49d8089b",
+              "quote_hash": "32775d24e8c394b4e39bb5efcd342c30aab35c635d7f198f2fe71dca7eda90c4"
             }
           ]
         }
@@ -186,7 +232,20 @@
           "市场已存在Ditto、Date Drop等多个类似方向的竞品，但均未突破主流市场，Overtone面临激烈的同质化竞争和用户获取挑战。"
         ],
         "related_direction_id": "",
-        "sector": "在线约会/人工智能"
+        "sector": "在线约会/人工智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是用户对现有“滑动匹配”模式的结构性倦怠，以及语音/音频优先的AI策划介绍能否成为下一代约会服务的突破口。本轮融资的已验证信号包括：创始人Justin McLeod曾成功创立并规模化运营Hinge，具备深厚的行业认知；Match Group作为行业巨头参与投资，表明其对现有商业模式面临结构性衰退的内部共识和风险对冲需求。但判断的证据边界在于，Overtone的产品尚未公开发布，其“关系科学”方法论缺乏具体框架和第三方验证，且市场已存在多个类似方向的竞品，尚未有突破主流市场的先例。",
+          "evidence_signals": [
+            "创始人Justin McLeod曾成功创立并规模化运营Hinge，具备深厚的行业认知和执行力。",
+            "行业巨头Match Group参与投资，表明其对现有滑动匹配模式面临结构性衰退的内部共识。",
+            "市场调研显示78%的约会应用用户感到倦怠，验证了反滑动模式的市场需求基础。"
+          ],
+          "risks": [
+            "产品尚未公开发布，其核心的“关系科学”方法论缺乏具体框架和第三方验证，存在技术落地和用户信任风险。",
+            "市场已存在Ditto、Date Drop等多个类似方向的竞品，但均未突破主流市场，Overtone面临激烈的同质化竞争和用户获取挑战。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -194,99 +253,49 @@
           "target_kind": "product",
           "research_name": "Overtone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Overtone describes itself as “a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.”"
-            },
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "We transparently explain why we believe someone is a great match."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Justin McLeod",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Hinge founder Justin McLeod announced an $18 million fundraise for his new dating company, Overtone."
-            },
-            {
-              "source_id": "FISRC-7c47bda8586a9961",
-              "quote": "Justin McLeod, the creator of Hinge, founded the company."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Match Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "FirstMark Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Pace Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Ditto",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Date Drop",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c9fd5fac8536f13d",
-              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -345,13 +354,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:54:21.201Z"
+      "published_at": "2026-07-26T14:54:21.201Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Overtone"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Justin McLeod"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-df789745fb926bfd"
+      ],
+      "aggregation": {
+        "key": "EN-7706c3c94d5f9b59|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-2330a54f10e6b143",
       "triggered_by_event_id": "EV-305ec93673f4f12e",
       "as_of_date": "2026-07-15",
@@ -369,11 +407,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "It was founded by the former international finance operator Max Buchan and ex-Palantir executive and U.S. Army officer Josh McLaughlin"
+                "quote": "It was founded by the former international finance operator Max Buchan and ex-Palantir executive and U.S. Army officer Josh McLaughlin",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "d66b0e03cc0c8fc9ad04e685625c6e6d8fe28f1852bcdd859ee5f3c71b1f6f1a"
               },
               {
                 "source_id": "FISRC-2b07f86358c31628",
-                "quote": "Max Buchan, CEO and Co-Founder of Valarian"
+                "quote": "Max Buchan, CEO and Co-Founder of Valarian",
+                "source_content_hash": "7bd6453900b66054",
+                "quote_hash": "625d3f7d48653bc0f1f1f30917a23bd25aa8c902f816532da02aaf80836622e1"
               }
             ],
             "entity_id": null
@@ -384,11 +426,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "ex-Palantir executive and U.S. Army officer Josh McLaughlin"
+                "quote": "ex-Palantir executive and U.S. Army officer Josh McLaughlin",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "a8ad7a7ee859f8e5964d5394b360e0a5087c51edd7efe5df34d278c1991f5e6c"
               },
               {
                 "source_id": "FISRC-c46043d6fe16fcd9",
-                "quote": "Valarian was founded by Chief Executive Officer Max Buchan, formerly of crypto company Coinshares, and Chief Operating Officer Josh McLaughlin."
+                "quote": "Valarian was founded by Chief Executive Officer Max Buchan, formerly of crypto company Coinshares, and Chief Operating Officer Josh McLaughlin.",
+                "source_content_hash": "27622bd801988270",
+                "quote_hash": "1fe276b49c3a77618420de557668e86e4481adc33f54f9de09a493aebb825c80"
               }
             ],
             "entity_id": null
@@ -400,18 +446,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Valarian has 31 employees and is headquartered in London."
+              "quote": "Valarian has 31 employees and is headquartered in London.",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "8472d88650c71356db4c0679749740eac46f30fc94a2d1e28564d6b52a7032ba"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-03aa198ddff34236",
-            "quote": "The defense-focused artificial intelligence systems infrastructure startup Valarian Technologies Ltd. said today it has closed on a hefty $50 million early-stage funding round"
+            "quote": "The defense-focused artificial intelligence systems infrastructure startup Valarian Technologies Ltd. said today it has closed on a hefty $50 million early-stage funding round",
+            "source_content_hash": "ab99df0f3d10a2c4",
+            "quote_hash": "7af5a2861eac18586c703ef6028d103ad2ff93cf735f7f41e7c85e7d089ba6a7"
           },
           {
             "source_id": "FISRC-2b07f86358c31628",
-            "quote": "British technology firm Valarian secures a $50 million Series A led by NEA to strengthen UK sovereign digital infrastructure across government, defence and enterprise."
+            "quote": "British technology firm Valarian secures a $50 million Series A led by NEA to strengthen UK sovereign digital infrastructure across government, defence and enterprise.",
+            "source_content_hash": "7bd6453900b66054",
+            "quote_hash": "07ab7a53f6a4e347cea06e92810670cab5a835fa87744fc19a302a797bd749ad"
           }
         ]
       },
@@ -427,11 +479,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "The Series A round was led by new investor New Enterprise Associates"
+                "quote": "The Series A round was led by new investor New Enterprise Associates",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "416eca9057a9af276343242333734ff9165696bc63336d0a0a83e3d977450d78"
               },
               {
                 "source_id": "FISRC-2b07f86358c31628",
-                "quote": "Valarian raises $50M Series A led by NEA"
+                "quote": "Valarian raises $50M Series A led by NEA",
+                "source_content_hash": "7bd6453900b66054",
+                "quote_hash": "ad9746f7fb042abfad76ff5cbe546652a7719a2706487495dbdcfb2340abcf1f"
               }
             ],
             "entity_id": null
@@ -442,7 +498,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "59082d2970c48e7a02826f97133fcac56c34d999aad32d2da218f17c22247c22"
               }
             ],
             "entity_id": null
@@ -453,7 +511,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "59082d2970c48e7a02826f97133fcac56c34d999aad32d2da218f17c22247c22"
               }
             ],
             "entity_id": null
@@ -464,7 +524,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "59082d2970c48e7a02826f97133fcac56c34d999aad32d2da218f17c22247c22"
               }
             ],
             "entity_id": null
@@ -475,7 +537,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "59082d2970c48e7a02826f97133fcac56c34d999aad32d2da218f17c22247c22"
               }
             ],
             "entity_id": null
@@ -486,7 +550,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
+                "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "06be14846bea8c7d29d28344d42059e660cf26d6efbaa98553a25899699479fb"
               }
             ],
             "entity_id": null
@@ -497,29 +563,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-03aa198ddff34236",
-                "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Artis Ventures",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-421464cceb98eeb4",
-                "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Scout Ventures",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-421464cceb98eeb4",
-                "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
+                "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "06be14846bea8c7d29d28344d42059e660cf26d6efbaa98553a25899699479fb"
               }
             ],
             "entity_id": null
@@ -528,11 +574,79 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-03aa198ddff34236",
-            "quote": "The Series A round was led by new investor New Enterprise Associates, which is making its first investment in a European defense startup. It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC, plus Gokul Rajaram and Nikesh Arora, who participated as angels."
+            "quote": "The Series A round was led by new investor New Enterprise Associates, which is making its first investment in a European defense startup. It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC, plus Gokul Rajaram and Nikesh Arora, who participated as angels.",
+            "source_content_hash": "ab99df0f3d10a2c4",
+            "quote_hash": "521ab5ceb34bc62cdf5fcff50b40db4e0ba41f39b43a7e58e97912d672a0249a"
           },
           {
             "source_id": "FISRC-2b07f86358c31628",
-            "quote": "Funding brings total investment to $70 million"
+            "quote": "Funding brings total investment to $70 million",
+            "source_content_hash": "7bd6453900b66054",
+            "quote_hash": "60b435e8886091b04eafc7438a76f1640ffe813acffbf3ba392524a26afe8b59"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "other_round_investors": [
+          {
+            "name": "Artis Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-421464cceb98eeb4",
+                "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025.",
+                "source_content_hash": "f0af5e2908fb80b5",
+                "quote_hash": "2b3a248fd8fdbbaf448f2fec1978b4c6d764272ce59f3c9703d7b0c44e7f7fbd"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮领投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Scout Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-421464cceb98eeb4",
+                "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025.",
+                "source_content_hash": "f0af5e2908fb80b5",
+                "quote_hash": "2b3a248fd8fdbbaf448f2fec1978b4c6d764272ce59f3c9703d7b0c44e7f7fbd"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮领投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-305ec93673f4f12e",
+            "round_original": "A轮",
+            "amount": "5000万美元",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "The Series A round was led by new investor New Enterprise Associates, which is making its first investment in a European defense startup. It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC, plus Gokul Rajaram and Nikesh Arora, who participated as angels.",
+                "source_content_hash": "ab99df0f3d10a2c4",
+                "quote_hash": "521ab5ceb34bc62cdf5fcff50b40db4e0ba41f39b43a7e58e97912d672a0249a"
+              },
+              {
+                "source_id": "FISRC-2b07f86358c31628",
+                "quote": "Funding brings total investment to $70 million",
+                "source_content_hash": "7bd6453900b66054",
+                "quote_hash": "60b435e8886091b04eafc7438a76f1640ffe813acffbf3ba392524a26afe8b59"
+              }
+            ]
           }
         ]
       },
@@ -549,11 +663,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-03aa198ddff34236",
-              "quote": "Valarian Enterprise, which is targeted at commercial operations that need to run AI and other workloads with rigorous control."
+              "quote": "Valarian Enterprise, which is targeted at commercial operations that need to run AI and other workloads with rigorous control.",
+              "source_content_hash": "ab99df0f3d10a2c4",
+              "quote_hash": "8cc396bb31b0c6225a1b2f9b741d18ab3e280f7169e8ac6690ca6d5d0021fd89"
             },
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Valarian Enterprise, serving banks, pharmaceutical companies, airlines, and other regulated organisations"
+              "quote": "Valarian Enterprise, serving banks, pharmaceutical companies, airlines, and other regulated organisations",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "fa60d1c4d345af6156c6cef1ba743b7c5d81ed3aeecf62247f24c899810acba9"
             }
           ],
           "entity_id": null
@@ -570,11 +688,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-03aa198ddff34236",
-              "quote": "Valerian Defense is specially geared toward national militaries and defense agencies, giving them to the tools they need to build computing environments that simply cannot take any chances."
+              "quote": "Valerian Defense is specially geared toward national militaries and defense agencies, giving them to the tools they need to build computing environments that simply cannot take any chances.",
+              "source_content_hash": "ab99df0f3d10a2c4",
+              "quote_hash": "40f94d4b78dabb431dcaeabf14cae16910da8a578e773507aa8afc4b30052821"
             },
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Valarian Defence, serving NATO member states and sovereign defence programmes."
+              "quote": "Valarian Defence, serving NATO member states and sovereign defence programmes.",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "8a03da81c1d0d40e5abc88f0595b492a4a6998b0349c63dd577b8574e215634a"
             }
           ],
           "entity_id": null
@@ -592,13 +714,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Where Palantir builds intelligence tools for governments, Valarian builds the infrastructure those tools run on."
+              "quote": "Where Palantir builds intelligence tools for governments, Valarian builds the infrastructure those tools run on.",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "9745b3013571b033e96f9656e3bc9546e00a4dc5bb510bd8f99da49abe7c593f"
             },
             {
               "source_id": "FISRC-da3ed5ba3fdd08ce",
-              "quote": "My co-founder spent 12 years at Palantir (McLaughlin was a managing director). He left in 2023 to join Valarian… What I would say is… the idea that there's only one provider that you can use just makes me nervous…"
+              "quote": "My co-founder spent 12 years at Palantir (McLaughlin was a managing director). He left in 2023 to join Valarian… What I would say is… the idea that there's only one provider that you can use just makes me nervous…",
+              "source_content_hash": "d3bc9e4fbc0cbaf9",
+              "quote_hash": "efe811dc3565f85566e94a47c05489a42ae3846ddf96e473bbd9602398f24421"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cosine",
@@ -610,9 +737,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Where Cosine builds the sovereign model, Valarian governs the environment it operates inside."
+              "quote": "Where Cosine builds the sovereign model, Valarian governs the environment it operates inside.",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "f0c02e8d96f350462231a589ad7e7494c67384f1d4ded43e7038678ce0a79243"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Augur",
@@ -624,9 +754,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Augur raised $15 million from Plural for sovereign AI perception across critical infrastructure."
+              "quote": "Augur raised $15 million from Plural for sovereign AI perception across critical infrastructure.",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "ccabe3c15f491868646401a5b1b7fe32c4f586a56837488339d1951032c98ad9"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -637,7 +770,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-03aa198ddff34236",
-              "quote": "Valarian Technologies Ltd. said today it has closed on a hefty $50 million early-stage funding round"
+              "quote": "Valarian Technologies Ltd. said today it has closed on a hefty $50 million early-stage funding round",
+              "source_content_hash": "ab99df0f3d10a2c4",
+              "quote_hash": "5037afdbd6e8d5d718890f164722527f46672eec961629eabcf443181bbc3684"
             }
           ]
         },
@@ -648,7 +783,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b07f86358c31628",
-              "quote": "Funding brings total investment to $70 million"
+              "quote": "Funding brings total investment to $70 million",
+              "source_content_hash": "7bd6453900b66054",
+              "quote_hash": "60b435e8886091b04eafc7438a76f1640ffe813acffbf3ba392524a26afe8b59"
             }
           ]
         },
@@ -659,7 +796,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
+              "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025.",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "2b3a248fd8fdbbaf448f2fec1978b4c6d764272ce59f3c9703d7b0c44e7f7fbd"
             }
           ]
         },
@@ -670,7 +809,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Valarian has 31 employees and is headquartered in London."
+              "quote": "Valarian has 31 employees and is headquartered in London.",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "8472d88650c71356db4c0679749740eac46f30fc94a2d1e28564d6b52a7032ba"
             }
           ]
         },
@@ -681,7 +822,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-03aa198ddff34236",
-              "quote": "In 2025, European defense spending reportedly topped €392 billion (around $447 billion)"
+              "quote": "In 2025, European defense spending reportedly topped €392 billion (around $447 billion)",
+              "source_content_hash": "ab99df0f3d10a2c4",
+              "quote_hash": "d4a33df52e156607bafd1468bc95d3410d07362bc35a460e48fd32aaa73cea0a"
             }
           ]
         },
@@ -692,7 +835,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-da3ed5ba3fdd08ce",
-              "quote": "Buchan said half of its business now comes from commercial customers in finance, healthcare and life sciences."
+              "quote": "Buchan said half of its business now comes from commercial customers in finance, healthcare and life sciences.",
+              "source_content_hash": "d3bc9e4fbc0cbaf9",
+              "quote_hash": "06e00218abc582df3191f956e339ba968ff1b8bf37288344497ec22e174f22a9"
             }
           ]
         },
@@ -703,7 +848,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-da3ed5ba3fdd08ce",
-              "quote": "we are deployed on four continents around the world"
+              "quote": "we are deployed on four continents around the world",
+              "source_content_hash": "d3bc9e4fbc0cbaf9",
+              "quote_hash": "2f5bbec90e944f667acf074a61c107e3aa4dbce4b157630acb93ab5eed2bfaf3"
             }
           ]
         }
@@ -715,7 +862,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b07f86358c31628",
-              "quote": "Today, AI is the defining currency of both hard and soft power. To shape our own destiny, in accordance with our values, it is imperative that we build Britain's sovereign AI capabilities."
+              "quote": "Today, AI is the defining currency of both hard and soft power. To shape our own destiny, in accordance with our values, it is imperative that we build Britain's sovereign AI capabilities.",
+              "source_content_hash": "7bd6453900b66054",
+              "quote_hash": "57992c409ca9c4c805862f200de863b5ab58275269ae4acafa32bd61aac84d08"
             }
           ]
         },
@@ -725,7 +874,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "The intelligence layer of Western institutions is consolidating: quietly, contract by contract, department by department, into systems those institutions do not control"
+              "quote": "The intelligence layer of Western institutions is consolidating: quietly, contract by contract, department by department, into systems those institutions do not control",
+              "source_content_hash": "f0af5e2908fb80b5",
+              "quote_hash": "0c66269094f9ee583fc2c1d6117ced81ae0539131ee8253ef768cc75c680d2d0"
             }
           ]
         },
@@ -735,7 +886,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b07f86358c31628",
-              "quote": "To strengthen our national security, we need more innovative British companies like Valarian building the technologies that will define our future."
+              "quote": "To strengthen our national security, we need more innovative British companies like Valarian building the technologies that will define our future.",
+              "source_content_hash": "7bd6453900b66054",
+              "quote_hash": "81a04f803e76844e62c45c758e1829540a17b446d787799e8ec1b3c6ee5a192c"
             }
           ]
         }
@@ -755,7 +908,22 @@
           "与Palantir等市值超3000亿美元的既有巨头竞争，后者已深度嵌入北约政府客户，Valarian的替代性定位可能面临采购惯性和锁定效应的阻力"
         ],
         "related_direction_id": "",
-        "sector": "主权AI基础设施"
+        "sector": "主权AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：随着AI成为操作关键，主权控制正从国防和受监管机构的专属需求变为普遍需求，而Valarian在基础设施层提供工作负载级治理的架构定位使其成为这一趋势的基础设施供应商。本轮5000万美元A轮融资在100%超额认购的情况下完成，累计融资达7000万美元，验证了市场对主权AI基础设施的迫切需求。NEA将其作为在欧洲的首个国防和两用投资，表明美国顶级VC认可欧洲主权AI基础设施赛道的独立价值。但判断的证据边界在于：客户身份未公开，收入规模和具体合同金额未知，商业化仍处于早期规模化阶段。",
+          "evidence_signals": [
+            "本轮融资100%超额认购，并扩大以纳入战略投资者",
+            "已在四大洲部署，客户包括国家安全、金融、医疗保健和生命科学领域",
+            "50%收入来自商业客户，证明两用模式有效",
+            "获得英国AI部长和国防部长的公开背书",
+            "NEA在欧洲的首个国防和两用投资，管理资产超350亿美元"
+          ],
+          "risks": [
+            "客户身份未公开，无法独立验证收入规模和合同质量，商业化进展缺乏可量化证据",
+            "与Palantir等市值超3000亿美元的既有巨头竞争，后者已深度嵌入北约政府客户，Valarian的替代性定位可能面临采购惯性和锁定效应的阻力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -763,232 +931,112 @@
           "target_kind": "product",
           "research_name": "Valarian Enterprise",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "Valarian Enterprise, which is targeted at commercial operations that need to run AI and other workloads with rigorous control."
-            },
-            {
-              "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Valarian Enterprise, serving banks, pharmaceutical companies, airlines, and other regulated organisations"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Valarian Defence",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "Valerian Defense is specially geared toward national militaries and defense agencies, giving them to the tools they need to build computing environments that simply cannot take any chances."
-            },
-            {
-              "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Valarian Defence, serving NATO member states and sovereign defence programmes."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Max Buchan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "It was founded by the former international finance operator Max Buchan and ex-Palantir executive and U.S. Army officer Josh McLaughlin"
-            },
-            {
-              "source_id": "FISRC-2b07f86358c31628",
-              "quote": "Max Buchan, CEO and Co-Founder of Valarian"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Josh McLaughlin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "ex-Palantir executive and U.S. Army officer Josh McLaughlin"
-            },
-            {
-              "source_id": "FISRC-c46043d6fe16fcd9",
-              "quote": "Valarian was founded by Chief Executive Officer Max Buchan, formerly of crypto company Coinshares, and Chief Operating Officer Josh McLaughlin."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "New Enterprise Associates",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "The Series A round was led by new investor New Enterprise Associates"
-            },
-            {
-              "source_id": "FISRC-2b07f86358c31628",
-              "quote": "Valarian raises $50M Series A led by NEA"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightbank",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "XTX Markets",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sequel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "LitVC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Gokul Rajaram",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nikesh Arora",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-03aa198ddff34236",
-              "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Artis Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Scout Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Palantir",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Where Palantir builds intelligence tools for governments, Valarian builds the infrastructure those tools run on."
-            },
-            {
-              "source_id": "FISRC-da3ed5ba3fdd08ce",
-              "quote": "My co-founder spent 12 years at Palantir (McLaughlin was a managing director). He left in 2023 to join Valarian… What I would say is… the idea that there's only one provider that you can use just makes me nervous…"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cosine",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Where Cosine builds the sovereign model, Valarian governs the environment it operates inside."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Augur",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-421464cceb98eeb4",
-              "quote": "Augur raised $15 million from Plural for sovereign AI perception across critical infrastructure."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1074,13 +1122,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:53:31.366Z"
+      "published_at": "2026-07-26T14:53:31.366Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Valarian Defence",
+            "Valarian Enterprise"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Josh McLaughlin",
+            "Max Buchan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-305ec93673f4f12e"
+      ],
+      "aggregation": {
+        "key": "EN-92dd63c8e5c77e8a|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-44ac76bc6d931f0d",
       "triggered_by_event_id": "EV-e31a6bf3c0a979f8",
       "as_of_date": "2026-07-15",
@@ -1098,11 +1177,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2fadf3981dda79b0",
-                "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
+                "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer",
+                "source_content_hash": "3ebf7695cbeb9231",
+                "quote_hash": "5e11626f97730b677e9ef0ebf5d155bd35b3b269e58448b1c884ec83ba462746"
               },
               {
                 "source_id": "FISRC-1da67785ba366c16",
-                "quote": "said Sunny Gupta, co-founder and Executive Chairman of Thira"
+                "quote": "said Sunny Gupta, co-founder and Executive Chairman of Thira",
+                "source_content_hash": "d455e42bd85876dd",
+                "quote_hash": "b7077e030f92d2da2a204bdf08983b816fb3effd99769b7ed7b5697a080fa64a"
               }
             ],
             "entity_id": null
@@ -1113,11 +1196,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2fadf3981dda79b0",
-                "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
+                "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer",
+                "source_content_hash": "3ebf7695cbeb9231",
+                "quote_hash": "5e11626f97730b677e9ef0ebf5d155bd35b3b269e58448b1c884ec83ba462746"
               },
               {
                 "source_id": "FISRC-cac0e54bdeba4e77",
-                "quote": "Sunny Gupta and Kurt Shintaffer, the co-founders of enterprise software company Apptio, have reunited to build Thira"
+                "quote": "Sunny Gupta and Kurt Shintaffer, the co-founders of enterprise software company Apptio, have reunited to build Thira",
+                "source_content_hash": "9c1e00c0b35e502c",
+                "quote_hash": "3d8c27e84d7e4a959dd7ea280ca60cdd0907fc92ee09d2b9d22ab8eeb082543d"
               }
             ],
             "entity_id": null
@@ -1131,7 +1218,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1da67785ba366c16",
-            "quote": "Thira is the creator of secure, self-learning, agentic execution for complex workflows that power the back-office."
+            "quote": "Thira is the creator of secure, self-learning, agentic execution for complex workflows that power the back-office.",
+            "source_content_hash": "d455e42bd85876dd",
+            "quote_hash": "786d29820b92b80e37d6445beecb8c9691c19460e476cba23853070cfd89b827"
           }
         ]
       },
@@ -1147,7 +1236,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1da67785ba366c16",
-                "quote": "a $21 million seed financing led by Madrona"
+                "quote": "a $21 million seed financing led by Madrona",
+                "source_content_hash": "d455e42bd85876dd",
+                "quote_hash": "aff8196052b206350aa87d9a95f764ee49bf1702482ed73c6ba02739b7cd3e90"
               }
             ],
             "entity_id": null
@@ -1158,7 +1249,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1da67785ba366c16",
-                "quote": "with participation from FUSE and a group of prominent global advisors and CIOs"
+                "quote": "with participation from FUSE and a group of prominent global advisors and CIOs",
+                "source_content_hash": "d455e42bd85876dd",
+                "quote_hash": "26976fadf32ed1c69c97b098b069a47ddb90b0ecba058d97220458fada6b5890"
               }
             ],
             "entity_id": null
@@ -1167,7 +1260,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1da67785ba366c16",
-            "quote": "today announced a $21 million seed financing led by Madrona, with participation from FUSE and a group of prominent global advisors and CIOs."
+            "quote": "today announced a $21 million seed financing led by Madrona, with participation from FUSE and a group of prominent global advisors and CIOs.",
+            "source_content_hash": "d455e42bd85876dd",
+            "quote_hash": "b07bf564a0015f88416bfe6646b9c97965b244509d317ca0d851c4ce9496900a"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e31a6bf3c0a979f8",
+            "round_original": "种子轮",
+            "amount": "$21 million",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1da67785ba366c16",
+                "quote": "today announced a $21 million seed financing led by Madrona, with participation from FUSE and a group of prominent global advisors and CIOs.",
+                "source_content_hash": "d455e42bd85876dd",
+                "quote_hash": "b07bf564a0015f88416bfe6646b9c97965b244509d317ca0d851c4ce9496900a"
+              }
+            ]
           }
         ]
       },
@@ -1186,7 +1300,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1da67785ba366c16",
-              "quote": "Thira securely executes complex operational processes using self-learning agents, world class security and governance, system connectivity and AI execution system powered by an enterprise knowledge graph."
+              "quote": "Thira securely executes complex operational processes using self-learning agents, world class security and governance, system connectivity and AI execution system powered by an enterprise knowledge graph.",
+              "source_content_hash": "d455e42bd85876dd",
+              "quote_hash": "227ee9b55b1efb57f215e6ffa6e7f46812fdecb651f715f9e750d1e6c2d4d2bc"
             }
           ],
           "entity_id": null
@@ -1200,9 +1316,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1da67785ba366c16",
-              "quote": "ten enterprise organizations are helping shape Thira as design partners ahead of its broader launch this fall."
+              "quote": "ten enterprise organizations are helping shape Thira as design partners ahead of its broader launch this fall.",
+              "source_content_hash": "d455e42bd85876dd",
+              "quote_hash": "7360101f6bc15ccd3c54c3f6149ac9a2e1482350d666c7fa4d5cc56baf90aae2"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1216,9 +1335,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cac0e54bdeba4e77",
-              "quote": "Enterprise buyers may want agents that work across several vendors instead of another tool tied to one platform."
+              "quote": "Enterprise buyers may want agents that work across several vendors instead of another tool tied to one platform.",
+              "source_content_hash": "9c1e00c0b35e502c",
+              "quote_hash": "a0eb5ba49b183d088fb66c3ff8ae58d9de192913236ec3c41fddb0f30ad1d11f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1229,7 +1351,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1da67785ba366c16",
-              "quote": "Global IT spending alone exceeds $6.3 trillion annually"
+              "quote": "Global IT spending alone exceeds $6.3 trillion annually",
+              "source_content_hash": "d455e42bd85876dd",
+              "quote_hash": "11782e9b4c8b1bc2998fa5f7aa7993b658806aecafec6040e3f38bc85a35b61f"
             }
           ]
         },
@@ -1240,7 +1364,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1da67785ba366c16",
-              "quote": "Thira's mission is to return $1 trillion of enterprise spending for reinvestment in innovation"
+              "quote": "Thira's mission is to return $1 trillion of enterprise spending for reinvestment in innovation",
+              "source_content_hash": "d455e42bd85876dd",
+              "quote_hash": "a3257751b8034d9b55bca25553a2936e450d3cee414910215ee4ffe91a76625d"
             }
           ]
         },
@@ -1251,7 +1377,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1da67785ba366c16",
-              "quote": "ten enterprise organizations are helping shape Thira as design partners"
+              "quote": "ten enterprise organizations are helping shape Thira as design partners",
+              "source_content_hash": "d455e42bd85876dd",
+              "quote_hash": "9a478c4d11d6e3ce0ba0257816b4a937adb820c94f51ea8e0e7a377554b480fc"
             }
           ]
         },
@@ -1262,7 +1390,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1da67785ba366c16",
-              "quote": "They founded the TBM Council, under Apptio (now part of IBM), which grew to more than 10,000 CIOs and senior IT leaders."
+              "quote": "They founded the TBM Council, under Apptio (now part of IBM), which grew to more than 10,000 CIOs and senior IT leaders.",
+              "source_content_hash": "d455e42bd85876dd",
+              "quote_hash": "84e5e6a11ee7bbaf24b8d233d7d6507c1651042581a59ba33e4e358481972b8f"
             }
           ]
         }
@@ -1282,7 +1412,21 @@
           "市场拥挤，ServiceNow 等大型厂商通过收购已具备自动化 IT 票证解决能力，且拥有内置的系统连接优势。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业 AI 代理执行平台"
+        "sector": "企业 AI 代理执行平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是创始人的“创始人-市场匹配”及其深厚的 CIO 关系网络。Thira 的估值或融资能力依赖于已验证信号：创始人曾成功创立并退出 Apptio（被 IBM 以 46 亿美元收购），建立了超过 10,000 名 CIO 的 TBM Council，并已获得 10 家企业设计合作伙伴。这些信号表明团队具备企业级产品构建能力和市场信任，但产品尚未公开发布，其跨系统代理执行的可靠性和实际采用率仍待验证。",
+          "evidence_signals": [
+            "创始人曾创立 Apptio 并成功退出（IBM 以 46 亿美元收购）",
+            "创始人建立了超过 10,000 名 CIO 和高级 IT 领导者的 TBM Council",
+            "已获得 10 家企业组织作为设计合作伙伴",
+            "领投方 Madrona 的 Matt McIlwain 与创始人 Sunny Gupta 有 25 年合作历史，这是第三次共同创业"
+          ],
+          "risks": [
+            "产品尚未公开发布，代理执行在实际企业环境中的可靠性和安全性未经验证。",
+            "市场拥挤，ServiceNow 等大型厂商通过收购已具备自动化 IT 票证解决能力，且拥有内置的系统连接优势。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1290,99 +1434,49 @@
           "target_kind": "product",
           "research_name": "Thira 自学习 AI 执行系统",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1da67785ba366c16",
-              "quote": "Thira securely executes complex operational processes using self-learning agents, world class security and governance, system connectivity and AI execution system powered by an enterprise knowledge graph."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sunny Gupta",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2fadf3981dda79b0",
-              "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
-            },
-            {
-              "source_id": "FISRC-1da67785ba366c16",
-              "quote": "said Sunny Gupta, co-founder and Executive Chairman of Thira"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Kurt Shintaffer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2fadf3981dda79b0",
-              "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
-            },
-            {
-              "source_id": "FISRC-cac0e54bdeba4e77",
-              "quote": "Sunny Gupta and Kurt Shintaffer, the co-founders of enterprise software company Apptio, have reunited to build Thira"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Madrona",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1da67785ba366c16",
-              "quote": "a $21 million seed financing led by Madrona"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "FUSE",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1da67785ba366c16",
-              "quote": "with participation from FUSE and a group of prominent global advisors and CIOs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "10 家设计合作伙伴企业",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1da67785ba366c16",
-              "quote": "ten enterprise organizations are helping shape Thira as design partners ahead of its broader launch this fall."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ServiceNow (通过收购 Moveworks)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cac0e54bdeba4e77",
-              "quote": "Enterprise buyers may want agents that work across several vendors instead of another tool tied to one platform."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1444,13 +1538,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:53:27.889Z"
+      "published_at": "2026-07-26T14:53:27.889Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Thira 自学习 AI 执行系统"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Kurt Shintaffer",
+            "Sunny Gupta"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e31a6bf3c0a979f8"
+      ],
+      "aggregation": {
+        "key": "EN-2dcd958b2064843f|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-a268ddc643dc983b",
       "triggered_by_event_id": "EV-2dff32c1b6f813e4",
       "as_of_date": "2026-07-15",
@@ -1468,7 +1592,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2be3945d96fe8e7c",
-                "quote": "Co-founder and Chief Executive Mohit Gupta"
+                "quote": "Co-founder and Chief Executive Mohit Gupta",
+                "source_content_hash": "4c33e3bd9eb86f2e",
+                "quote_hash": "24b760ea4f5ec8eb1495dfbd3029fe71cd56a9852f8dff4d0a210e4859c2e6b7"
               }
             ],
             "entity_id": null
@@ -1479,7 +1605,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-53020d8815703b5f",
-                "quote": "Sunil Bhardwaj Co-Founder & COO"
+                "quote": "Sunil Bhardwaj Co-Founder & COO",
+                "source_content_hash": "c20373430106d3b9",
+                "quote_hash": "dd26eec99a723b8f48fbf7fdba82231b32703649b008810789f1422d20884e8c"
               }
             ],
             "entity_id": null
@@ -1493,16 +1621,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2be3945d96fe8e7c",
-            "quote": "Artificial intelligence chiplet startup TYLsemi Inc. revealed itself to the world today"
+            "quote": "Artificial intelligence chiplet startup TYLsemi Inc. revealed itself to the world today",
+            "source_content_hash": "4c33e3bd9eb86f2e",
+            "quote_hash": "b4bad3d2342ce524fbf29c191408d9c907383fcba98bf8fbc244205e269e91b3"
           },
           {
             "source_id": "FISRC-4b585d907f1a939a",
-            "quote": "The San Jose-based semiconductor startup announced the oversubscribed early-stage round on July 14"
+            "quote": "The San Jose-based semiconductor startup announced the oversubscribed early-stage round on July 14",
+            "source_content_hash": "85b6affe1e12acfa",
+            "quote_hash": "618b67d2481298d141ac24fb236f79b8ce32f9679b6762372db0cd737eb9f872"
           }
         ]
       },
       "financing": {
-        "round": "早期融资（Early-stage）",
+        "round": "早期融资",
         "amount": "$43 million",
         "total_raised": "$43 million",
         "announced_at": "2026-07-14",
@@ -1513,7 +1645,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2be3945d96fe8e7c",
-                "quote": "saw participation from Viola Ventures"
+                "quote": "saw participation from Viola Ventures",
+                "source_content_hash": "4c33e3bd9eb86f2e",
+                "quote_hash": "4af5f2db8f8c2f102e3310461fccd83c54db0bab44c05a1628e4b942be3ae201"
               }
             ],
             "entity_id": null
@@ -1524,7 +1658,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2be3945d96fe8e7c",
-                "quote": "saw participation from Viola Ventures, GHOVC, Egisten and a number of strategic investors"
+                "quote": "saw participation from Viola Ventures, GHOVC, Egisten and a number of strategic investors",
+                "source_content_hash": "4c33e3bd9eb86f2e",
+                "quote_hash": "21ff1d9d7a44925f5beac895dcbe0b4f6914d8ba80d4e264912049f5d1142e61"
               }
             ],
             "entity_id": null
@@ -1535,7 +1671,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4b585d907f1a939a",
-                "quote": "Viola Ventures, GHOVC, Egis Technology, and a handful of strategic investors focused on semiconductor and AI infrastructure also participated."
+                "quote": "Viola Ventures, GHOVC, Egis Technology, and a handful of strategic investors focused on semiconductor and AI infrastructure also participated.",
+                "source_content_hash": "85b6affe1e12acfa",
+                "quote_hash": "8b460ace5c444f00c79f8b380904245a82a6150a67190a219896b9441a03ddad"
               }
             ],
             "entity_id": null
@@ -1544,11 +1682,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2be3945d96fe8e7c",
-            "quote": "announcing it has raised $43 million in early-stage funding"
+            "quote": "announcing it has raised $43 million in early-stage funding",
+            "source_content_hash": "4c33e3bd9eb86f2e",
+            "quote_hash": "92b208a80c1f3de8c0214ae09919cb8ba609c453b45b5a022ee258feea97469d"
           },
           {
             "source_id": "FISRC-53ce60e4bcfe8466",
-            "quote": "announced the closing of an oversubscribed $43 million early-stage funding round"
+            "quote": "announced the closing of an oversubscribed $43 million early-stage funding round",
+            "source_content_hash": "77f478a33ec57230",
+            "quote_hash": "dbc212aabe8c34fc61ce39c4884b534e914229d5786db7dd550e183ff0082f05"
+          }
+        ],
+        "round_code": "early_stage",
+        "round_original": "早期融资（Early-stage）",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2dff32c1b6f813e4",
+            "round_original": "早期融资（Early-stage）",
+            "amount": "$43 million",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2be3945d96fe8e7c",
+                "quote": "announcing it has raised $43 million in early-stage funding",
+                "source_content_hash": "4c33e3bd9eb86f2e",
+                "quote_hash": "92b208a80c1f3de8c0214ae09919cb8ba609c453b45b5a022ee258feea97469d"
+              },
+              {
+                "source_id": "FISRC-53ce60e4bcfe8466",
+                "quote": "announced the closing of an oversubscribed $43 million early-stage funding round",
+                "source_content_hash": "77f478a33ec57230",
+                "quote_hash": "dbc212aabe8c34fc61ce39c4884b534e914229d5786db7dd550e183ff0082f05"
+              }
+            ]
           }
         ]
       },
@@ -1564,7 +1731,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "TYL.Power, which is a packaged power delivery system that relies on an integrated voltage regulator chiplet to maximize energy efficiency."
+              "quote": "TYL.Power, which is a packaged power delivery system that relies on an integrated voltage regulator chiplet to maximize energy efficiency.",
+              "source_content_hash": "4c33e3bd9eb86f2e",
+              "quote_hash": "45328c8a78a9a0f3216ae821dcba0516efebc5496f28bc2c01c12a55fc9a4eae"
             }
           ],
           "entity_id": null
@@ -1582,9 +1751,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0357cefd6d11ffe1",
-              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
+              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip.",
+              "source_content_hash": "38ab794a1aa1d568",
+              "quote_hash": "2d139d85f933cfa9553d25074569518ff6e589ec128f7d51d13be834f48d44ec"
             }
-          ]
+          ],
+          "entity_id": "EN-373ac021a2c0bb2c"
         },
         {
           "name": "Marvell Technology",
@@ -1596,9 +1768,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0357cefd6d11ffe1",
-              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
+              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip.",
+              "source_content_hash": "38ab794a1aa1d568",
+              "quote_hash": "2d139d85f933cfa9553d25074569518ff6e589ec128f7d51d13be834f48d44ec"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1609,7 +1784,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "the market for AI accelerators is forecast to hit $604 billion annually by 2033"
+              "quote": "the market for AI accelerators is forecast to hit $604 billion annually by 2033",
+              "source_content_hash": "4c33e3bd9eb86f2e",
+              "quote_hash": "697722a37accb96f3f36e74cda9fcea8c3a187c9c1d83b746910afd83f3a571b"
             }
           ]
         },
@@ -1620,7 +1797,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "reduce the costs of custom AI silicon development by almost 50%"
+              "quote": "reduce the costs of custom AI silicon development by almost 50%",
+              "source_content_hash": "4c33e3bd9eb86f2e",
+              "quote_hash": "0fcc2619b0fde0b5071794b7f49365b033a160c9a1666b4bde32dc042c00a9fd"
             }
           ]
         },
@@ -1631,7 +1810,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "get it done in less than half the time"
+              "quote": "get it done in less than half the time",
+              "source_content_hash": "4c33e3bd9eb86f2e",
+              "quote_hash": "a4f95a4bad562cbd87d360c5f9aa326464c62dc58e891d50c7893c5722791838"
             }
           ]
         },
@@ -1642,7 +1823,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "provide samples of its TYL.IO and TYL.Power chiplets to qualified customers next year in partnership with Taiwan Semiconductor Manufacturing Co."
+              "quote": "provide samples of its TYL.IO and TYL.Power chiplets to qualified customers next year in partnership with Taiwan Semiconductor Manufacturing Co.",
+              "source_content_hash": "4c33e3bd9eb86f2e",
+              "quote_hash": "eee701dc547fd88cebf115cceb9e09f7b3be859b4ae15ad4ede851900ad52583"
             }
           ]
         }
@@ -1654,7 +1837,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "At that scale, chiplet-based design is no longer optional, yet there is no pure-play chiplet company serving this market with a full portfolio"
+              "quote": "At that scale, chiplet-based design is no longer optional, yet there is no pure-play chiplet company serving this market with a full portfolio",
+              "source_content_hash": "4c33e3bd9eb86f2e",
+              "quote_hash": "4f67358d37f8ec41bba24eaf14400bd90e762d91cf5a5a7acdc1a0aa92be3ad7"
             }
           ]
         }
@@ -1671,7 +1856,19 @@
           "公司尚未交付芯片粒样品（预计2027年），其宣称的50%成本和时间节省尚未被第三方量产验证，存在执行风险。"
         ],
         "related_direction_id": "",
-        "sector": "半导体与AI基础设施"
+        "sector": "半导体与AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“定制AI芯片设计的民主化”。当前估值或融资所依赖的已验证信号包括：1）已获得多家一级客户的合作承诺，验证了技术就绪度和市场机会；2）本轮融资超额认购，表明投资者需求超出预期；3）创始团队拥有来自Alphawave（被高通收购）、SiFive、Cadence等公司的深厚行业经验。判断的证据边界在于，公司尚未交付芯片粒样品（预计2027年），其宣称的50%成本和时间节省尚未被第三方量产验证。",
+          "evidence_signals": [
+            "已获得多家一级客户的合作承诺",
+            "本轮融资超额认购",
+            "创始团队拥有Alphawave（被高通以约24亿美元收购）、SiFive、Cadence等公司的行业经验"
+          ],
+          "risks": [
+            "公司尚未交付芯片粒样品（预计2027年），其宣称的50%成本和时间节省尚未被第三方量产验证，存在执行风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1679,104 +1876,56 @@
           "target_kind": "product",
           "research_name": "TYL.Power",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "TYL.Power, which is a packaged power delivery system that relies on an integrated voltage regulator chiplet to maximize energy efficiency."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mohit Gupta",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "Co-founder and Chief Executive Mohit Gupta"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sunil Bhardwaj",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53020d8815703b5f",
-              "quote": "Sunil Bhardwaj Co-Founder & COO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Viola Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "saw participation from Viola Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GHOVC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2be3945d96fe8e7c",
-              "quote": "saw participation from Viola Ventures, GHOVC, Egisten and a number of strategic investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Egis Technology",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4b585d907f1a939a",
-              "quote": "Viola Ventures, GHOVC, Egis Technology, and a handful of strategic investors focused on semiconductor and AI infrastructure also participated."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Broadcom",
           "canonical_entity_id": "EN-373ac021a2c0bb2c",
-          "canonical_name": "Broadcom",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0357cefd6d11ffe1",
-              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
-            }
-          ]
+          "canonical_name": "Broadcom"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Marvell Technology",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0357cefd6d11ffe1",
-              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1862,10 +2011,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:53:17.392Z"
+      "published_at": "2026-07-26T14:53:17.392Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "TYL.Power"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Mohit Gupta",
+            "Sunil Bhardwaj"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2dff32c1b6f813e4"
+      ],
+      "aggregation": {
+        "key": "EN-cf9488537f777c1a|early_stage",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

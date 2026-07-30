@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-05-23",
     "generated_at": "2026-07-27T05:14:25.802Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 8,
       "auto_published": 7,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-e3285dae836c1fb5",
       "triggered_by_event_id": "EV-1abf0d076d30ec6d",
       "as_of_date": "2026-05-23",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f5176e2201593c8e",
-                "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George"
+                "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George",
+                "source_content_hash": "415a2b10b75139c0",
+                "quote_hash": "763820f5aa2019e0c8b8bda7a1b648b3a5e9cb123bd4f11c108c69ca88af1762"
               },
               {
                 "source_id": "FISRC-6bfeb844c90907db",
-                "quote": "Featherless.ai co-founder and CEO Eugene Cheah is one of the creators of RWKV"
+                "quote": "Featherless.ai co-founder and CEO Eugene Cheah is one of the creators of RWKV",
+                "source_content_hash": "74386c769f34a6e8",
+                "quote_hash": "fa3eb6f2d73bb8add3d152395c016ce94b83e16cbf5ace50f18fe1f9b1723680"
               }
             ],
             "entity_id": null
@@ -50,7 +55,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f5176e2201593c8e",
-                "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George"
+                "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George",
+                "source_content_hash": "415a2b10b75139c0",
+                "quote_hash": "763820f5aa2019e0c8b8bda7a1b648b3a5e9cb123bd4f11c108c69ca88af1762"
               }
             ],
             "entity_id": null
@@ -61,7 +68,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f5176e2201593c8e",
-                "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George"
+                "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George",
+                "source_content_hash": "415a2b10b75139c0",
+                "quote_hash": "763820f5aa2019e0c8b8bda7a1b648b3a5e9cb123bd4f11c108c69ca88af1762"
               }
             ],
             "entity_id": null
@@ -75,7 +84,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6bfeb844c90907db",
-            "quote": "The company is Singapore co-founded and San Francisco-based, with a global team spanning Canada, Europe, Australia, and the US."
+            "quote": "The company is Singapore co-founded and San Francisco-based, with a global team spanning Canada, Europe, Australia, and the US.",
+            "source_content_hash": "74386c769f34a6e8",
+            "quote_hash": "4e031b37990baac45886d48dd1b4047183103f75983c8eee1cc08784b6454d08"
           }
         ]
       },
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f5176e2201593c8e",
-                "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures"
+                "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
+                "source_content_hash": "415a2b10b75139c0",
+                "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
               }
             ],
             "entity_id": null
@@ -102,11 +115,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f5176e2201593c8e",
-                "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures"
+                "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
+                "source_content_hash": "415a2b10b75139c0",
+                "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
               },
               {
                 "source_id": "FISRC-f5176e2201593c8e",
-                "quote": "Airbus, which backed the company at the seed stage"
+                "quote": "Airbus, which backed the company at the seed stage",
+                "source_content_hash": "415a2b10b75139c0",
+                "quote_hash": "350c9adae5c8817de95924f7281521db94373d15722c4bae472897ba21e85187"
               }
             ],
             "entity_id": null
@@ -117,7 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6bfeb844c90907db",
-                "quote": "Panache also participated in Featherless’s $5-million USD seed round in March 2025"
+                "quote": "Panache also participated in Featherless’s $5-million USD seed round in March 2025",
+                "source_content_hash": "74386c769f34a6e8",
+                "quote_hash": "70f003012c80310c3cb1e274f01931527485f6e74e5e6d0e5a8c52c50d01654d"
               }
             ],
             "entity_id": null
@@ -126,7 +145,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6bfeb844c90907db",
-            "quote": "Featherless.ai, a serverless inference platform specializing in open-source AI, announced it closed $20 million in Series A funding on April 30."
+            "quote": "Featherless.ai, a serverless inference platform specializing in open-source AI, announced it closed $20 million in Series A funding on April 30.",
+            "source_content_hash": "74386c769f34a6e8",
+            "quote_hash": "6b8152cbf0a0afc394dd0c78d8eb0283e77e12ba1d1d3fe1e12e061019841e66"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-1abf0d076d30ec6d",
+            "round_original": "A轮",
+            "amount": "2000万美元",
+            "announced_at": "2026-04-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6bfeb844c90907db",
+                "quote": "Featherless.ai, a serverless inference platform specializing in open-source AI, announced it closed $20 million in Series A funding on April 30.",
+                "source_content_hash": "74386c769f34a6e8",
+                "quote_hash": "6b8152cbf0a0afc394dd0c78d8eb0283e77e12ba1d1d3fe1e12e061019841e66"
+              }
+            ]
           }
         ]
       },
@@ -143,11 +183,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "The startup stands out with a hot-swapping technique that loads models into GPU memory on demand in under five seconds and releases them when idle. This enables a flat-rate pricing model, offering fixed monthly capacity instead of per-token billing."
+              "quote": "The startup stands out with a hot-swapping technique that loads models into GPU memory on demand in under five seconds and releases them when idle. This enables a flat-rate pricing model, offering fixed monthly capacity instead of per-token billing.",
+              "source_content_hash": "415a2b10b75139c0",
+              "quote_hash": "183cfe447b6bff642ab7e4d1b4f610889d2177c02c9d38a972c09029c768b4d9"
             },
             {
               "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "We have the entire catalogue of 30,000 models available online."
+              "quote": "We have the entire catalogue of 30,000 models available online.",
+              "source_content_hash": "415a2b10b75139c0",
+              "quote_hash": "a5364072e188b2290338e8c659e22d8a4546631bca9e0d080ba989fa52aebd8f"
             }
           ],
           "entity_id": null
@@ -163,7 +207,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "We have the entire catalogue of 30,000 models available online."
+              "quote": "We have the entire catalogue of 30,000 models available online.",
+              "source_content_hash": "415a2b10b75139c0",
+              "quote_hash": "a5364072e188b2290338e8c659e22d8a4546631bca9e0d080ba989fa52aebd8f"
             }
           ]
         },
@@ -174,7 +220,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "loads models into GPU memory on demand in under five seconds"
+              "quote": "loads models into GPU memory on demand in under five seconds",
+              "source_content_hash": "415a2b10b75139c0",
+              "quote_hash": "8f8b855be2f0850b409f836e967b6bf56c109119ddd86930a86a6d9ebcf7dde7"
             }
           ]
         },
@@ -185,7 +233,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6bfeb844c90907db",
-              "quote": "Panache also participated in Featherless’s $5-million USD seed round in March 2025"
+              "quote": "Panache also participated in Featherless’s $5-million USD seed round in March 2025",
+              "source_content_hash": "74386c769f34a6e8",
+              "quote_hash": "70f003012c80310c3cb1e274f01931527485f6e74e5e6d0e5a8c52c50d01654d"
             }
           ]
         }
@@ -197,7 +247,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "Typically, the models available from providers are only the most popular ones. Accessing models trained on more niche areas is very difficult. Making those available continuously online, at a price where you don’t have to rent thousands of dollars of compute to have a conversation with a chatbot that can speak your language — that’s the genesis of Featherless"
+              "quote": "Typically, the models available from providers are only the most popular ones. Accessing models trained on more niche areas is very difficult. Making those available continuously online, at a price where you don’t have to rent thousands of dollars of compute to have a conversation with a chatbot that can speak your language — that’s the genesis of Featherless",
+              "source_content_hash": "415a2b10b75139c0",
+              "quote_hash": "2b7319429f6f14a07d98a22c08aed0ee433a63b70ba891ce1d3b92dd8bdbf329"
             }
           ]
         },
@@ -207,7 +259,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "A year ago, there was still a question of whether open models would be intelligent enough to do productive work. Today, that’s no longer the case. The focus is now shifting to who controls the AI, especially in markets outside the US, where there is a big push to control your models, your infrastructure, and the freedom to take whatever you’ve built wherever you want"
+              "quote": "A year ago, there was still a question of whether open models would be intelligent enough to do productive work. Today, that’s no longer the case. The focus is now shifting to who controls the AI, especially in markets outside the US, where there is a big push to control your models, your infrastructure, and the freedom to take whatever you’ve built wherever you want",
+              "source_content_hash": "415a2b10b75139c0",
+              "quote_hash": "8c745f89fa8f2a8e6c6873a3633d864789ace5de6330dcc3178e73dc99c663f0"
             }
           ]
         }
@@ -223,7 +277,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6bfeb844c90907db",
-                "quote": "Sagi Paz, Head of AMD Ventures, stated: “Featherless.ai is at the forefront of a critical new phase in the development of the AI industry. By providing a strong foundation for open-source AI, it helps expand access and supports a more competitive and diverse ecosystem.”"
+                "quote": "Sagi Paz, Head of AMD Ventures, stated: “Featherless.ai is at the forefront of a critical new phase in the development of the AI industry. By providing a strong foundation for open-source AI, it helps expand access and supports a more competitive and diverse ecosystem.”",
+                "source_content_hash": "74386c769f34a6e8",
+                "quote_hash": "385fb17169190ef04d369f203a03add7860d9a274ed04e8e39ff5ae18e6c745a"
               }
             ]
           },
@@ -236,7 +292,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6bfeb844c90907db",
-                "quote": "Panache Ventures Managing Partner Prashant Matta warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development."
+                "quote": "Panache Ventures Managing Partner Prashant Matta warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development.",
+                "source_content_hash": "74386c769f34a6e8",
+                "quote_hash": "6568d678ae2c505b7b731d77dee307262ba1aaf378fe0f5359a1fa3a7ad8c1f5"
               }
             ]
           }
@@ -252,7 +310,20 @@
           "开源模型的优势依赖于模型本身的质量，如果闭源模型性能大幅领先，基础设施层的价值可能会被削弱。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施 / 开源模型推理"
+        "sector": "AI基础设施 / 开源模型推理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是开源模型推理的“中立基础设施层”。本轮融资验证的信号包括：1）企业市场对AI主权和数据控制的需求从“是否可行”转向“由谁控制”；2）通过热交换技术实现的全目录模型访问和固定费率定价，在技术上和商业上构成了对现有推理提供商的差异化壁垒。判断的证据边界在于，这些信号目前主要来自公司创始人的陈述和投资方的战略表态，尚未有公开的规模化客户数据或第三方性能基准测试来验证其成本优势和技术稳定性。",
+          "evidence_signals": [
+            "企业市场对AI主权和数据控制的需求明确，尤其在非美国市场。",
+            "热交换技术实现了对超过30,000个模型的快速访问，构成了技术差异化。",
+            "固定费率定价模式为使用小众和定制模型的企业提供了成本可预测性。"
+          ],
+          "risks": [
+            "无服务器架构在处理大规模并发请求时可能面临“冷启动”和延迟问题，其性能是否足以满足关键任务应用仍有待验证。",
+            "开源模型的优势依赖于模型本身的质量，如果闭源模型性能大幅领先，基础设施层的价值可能会被削弱。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -260,103 +331,49 @@
           "target_kind": "product",
           "research_name": "Featherless 无服务器推理平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "The startup stands out with a hot-swapping technique that loads models into GPU memory on demand in under five seconds and releases them when idle. This enables a flat-rate pricing model, offering fixed monthly capacity instead of per-token billing."
-            },
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "We have the entire catalogue of 30,000 models available online."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Eugene Cheah",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George"
-            },
-            {
-              "source_id": "FISRC-6bfeb844c90907db",
-              "quote": "Featherless.ai co-founder and CEO Eugene Cheah is one of the creators of RWKV"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Harrison Vanderbyl",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Wesley George",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AMD Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Airbus Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures"
-            },
-            {
-              "source_id": "FISRC-f5176e2201593c8e",
-              "quote": "Airbus, which backed the company at the seed stage"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Panache Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6bfeb844c90907db",
-              "quote": "Panache also participated in Featherless’s $5-million USD seed round in March 2025"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -416,13 +433,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:08:04.033Z"
+      "published_at": "2026-07-26T15:08:04.033Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Featherless 无服务器推理平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Eugene Cheah",
+            "Harrison Vanderbyl",
+            "Wesley George"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-1abf0d076d30ec6d"
+      ],
+      "aggregation": {
+        "key": "EN-240389f4b730bad4|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-27171340e5e0afae",
       "triggered_by_event_id": "EV-59f4561c5243eb98",
       "as_of_date": "2026-05-23",
@@ -440,11 +488,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af034b6014cc1e78",
-                "quote": "Founders Chin-Yi Cheng and Chiaowei Yu"
+                "quote": "Founders Chin-Yi Cheng and Chiaowei Yu",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "95bf5f69c4d62c0a398228a804358272c0a6dc66c79021db408b38b20e212708"
               },
               {
                 "source_id": "FISRC-0d1528dc8838b9e7",
-                "quote": "CEO Chin-Yi Cheng"
+                "quote": "CEO Chin-Yi Cheng",
+                "source_content_hash": "ec497281aa8a89c1",
+                "quote_hash": "6881f04b78e8c11476e181f2e302bc57ce98d466e1d94eeb608b55696451d1a6"
               }
             ],
             "entity_id": null
@@ -455,11 +507,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af034b6014cc1e78",
-                "quote": "Founders Chin-Yi Cheng and Chiaowei Yu"
+                "quote": "Founders Chin-Yi Cheng and Chiaowei Yu",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "95bf5f69c4d62c0a398228a804358272c0a6dc66c79021db408b38b20e212708"
               },
               {
                 "source_id": "FISRC-0d1528dc8838b9e7",
-                "quote": "COO Chiaowei Yu"
+                "quote": "COO Chiaowei Yu",
+                "source_content_hash": "ec497281aa8a89c1",
+                "quote_hash": "b004c865e589bc159e84a7230e86e5973c748540d3ee1f7a436335fd61f87ef4"
               }
             ],
             "entity_id": null
@@ -473,11 +529,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-af034b6014cc1e78",
-            "quote": "Illoca, an AI-native design engine that returns creative agency to the architect"
+            "quote": "Illoca, an AI-native design engine that returns creative agency to the architect",
+            "source_content_hash": "36707f31f2817c6d",
+            "quote_hash": "47d32fed26eb7748cfe0cdaee1455b4ca54d9e03ed670609ebdcf142d02103b5"
           },
           {
             "source_id": "FISRC-a77fa42e78a6c2fe",
-            "quote": "Illoca, a San Ramon, CA-based AI-native architectural design platform"
+            "quote": "Illoca, a San Ramon, CA-based AI-native architectural design platform",
+            "source_content_hash": "5cc72c3e1dc0e712",
+            "quote_hash": "6465cf067b1b84f85605229809e8f5144022893eeb0763a70fce23cb8c46ebca"
           }
         ]
       },
@@ -493,7 +553,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af034b6014cc1e78",
-                "quote": "closed $13 million in Seed financing led by Bessemer Venture Partners"
+                "quote": "closed $13 million in Seed financing led by Bessemer Venture Partners",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "c76bccaabb508e95a24877bdba0cd1c239bdba69058f1252f878c0caf5722236"
               }
             ],
             "entity_id": null
@@ -504,7 +566,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af034b6014cc1e78",
-                "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures"
+                "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "ce6d6d2d3b7e5b7ece49ab5debf7817f0ec5971a1e1edd48f5c37a7736e51298"
               }
             ],
             "entity_id": null
@@ -515,7 +579,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af034b6014cc1e78",
-                "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures"
+                "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "ce6d6d2d3b7e5b7ece49ab5debf7817f0ec5971a1e1edd48f5c37a7736e51298"
               }
             ],
             "entity_id": null
@@ -526,7 +592,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af034b6014cc1e78",
-                "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures"
+                "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "ce6d6d2d3b7e5b7ece49ab5debf7817f0ec5971a1e1edd48f5c37a7736e51298"
               }
             ],
             "entity_id": null
@@ -535,7 +603,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-af034b6014cc1e78",
-            "quote": "Illoca Raises $13 Million Seed Led by Bessemer Venture Partners to Launch the First Intelligent Interface for Architectural Design"
+            "quote": "Illoca Raises $13 Million Seed Led by Bessemer Venture Partners to Launch the First Intelligent Interface for Architectural Design",
+            "source_content_hash": "36707f31f2817c6d",
+            "quote_hash": "703e71632bb64ad60ed584cf4c9c85fd289f787d23081d2168007a7d4256c2fb"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-59f4561c5243eb98",
+            "round_original": "种子轮",
+            "amount": "$13 Million",
+            "announced_at": "2026-05-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-af034b6014cc1e78",
+                "quote": "Illoca Raises $13 Million Seed Led by Bessemer Venture Partners to Launch the First Intelligent Interface for Architectural Design",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "703e71632bb64ad60ed584cf4c9c85fd289f787d23081d2168007a7d4256c2fb"
+              }
+            ]
           }
         ]
       },
@@ -552,11 +641,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "Illoca’s first product, Illoca Tracing Paper™, replaces the traditional hundred-button toolset with a collaborative, intelligent canvas that mirrors the natural interactions of a design studio."
+              "quote": "Illoca’s first product, Illoca Tracing Paper™, replaces the traditional hundred-button toolset with a collaborative, intelligent canvas that mirrors the natural interactions of a design studio.",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "d3077660889be4dc9ace1beab1f2bd75da68de3090e2ce7c68170ac70f8b341c"
             },
             {
               "source_id": "FISRC-05dac4d3d870b892",
-              "quote": "Tracing Paper is an AI-native design engine built for the controllability required by professional practice. It bridges the gap between creative exploration and technical production"
+              "quote": "Tracing Paper is an AI-native design engine built for the controllability required by professional practice. It bridges the gap between creative exploration and technical production",
+              "source_content_hash": "99f04bbdea6a7994",
+              "quote_hash": "298301dbcde5c887e1dfb4608f562512eb07deefdc87587d434b572ae56e679e"
             }
           ],
           "entity_id": null
@@ -570,13 +663,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "For early partners such as Kajima Corporation, one of the world's largest design and construction firms, the shift is already redefining the project lifecycle."
+              "quote": "For early partners such as Kajima Corporation, one of the world's largest design and construction firms, the shift is already redefining the project lifecycle.",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "54abe76b1f7b711cda7c3a28366d59d62bad4918909f282e3c5cac1b24e4868a"
             },
             {
               "source_id": "FISRC-0d1528dc8838b9e7",
-              "quote": "Kajima Corporation, one of the world’s largest design-and-construction groups, has become Illoca’s partner."
+              "quote": "Kajima Corporation, one of the world’s largest design-and-construction groups, has become Illoca’s partner.",
+              "source_content_hash": "ec497281aa8a89c1",
+              "quote_hash": "593b5f94a40dc10361b9f86455c5955c0f5301341768a3ff311a990aa011f407"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -590,13 +688,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c3ccacb076e99b9",
-              "quote": "Tools like Midjourney produce beautiful visuals but lack the “groundedness” needed for code, compliance, and structural applications."
+              "quote": "Tools like Midjourney produce beautiful visuals but lack the “groundedness” needed for code, compliance, and structural applications.",
+              "source_content_hash": "53586412bc47a0cf",
+              "quote_hash": "236d735c4fafc4a021f1aa7362ab3606d8ce97274d99d31a9206d35514c8114b"
             },
             {
               "source_id": "FISRC-05dac4d3d870b892",
-              "quote": "Unlike generic tools that produce static pixels, Tracing Paper understands architectural intent. It generates structured, parametric 2D and 3D schematics that are design-ready."
+              "quote": "Unlike generic tools that produce static pixels, Tracing Paper understands architectural intent. It generates structured, parametric 2D and 3D schematics that are design-ready.",
+              "source_content_hash": "99f04bbdea6a7994",
+              "quote_hash": "a23a0455566917647f123859c49ee249a2a0ae0605098917c114cc1f32cc67de"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Autodesk Revit",
@@ -608,9 +711,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05dac4d3d870b892",
-              "quote": "While conventional CAD and BIM software often require manual, high-effort translation of ideas, Tracing Paper accepts natural inputs—sketches, redlines, and texts—to generate design documentation in real time. It is designed to be integrated into existing ecosystems like Autodesk Revit and Rhino"
+              "quote": "While conventional CAD and BIM software often require manual, high-effort translation of ideas, Tracing Paper accepts natural inputs—sketches, redlines, and texts—to generate design documentation in real time. It is designed to be integrated into existing ecosystems like Autodesk Revit and Rhino",
+              "source_content_hash": "99f04bbdea6a7994",
+              "quote_hash": "18985bb93a8cb9bb848bf484d2aefd4ccd641be41f68386c3d4824a90a892fd7"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -621,7 +727,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "Architects spend 60 percent of their workweek not designing, but producing, translating, reformatting, and rebuilding work that already exists elsewhere."
+              "quote": "Architects spend 60 percent of their workweek not designing, but producing, translating, reformatting, and rebuilding work that already exists elsewhere.",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "c564b3509a8ccd4b7c7175fd8571abe4e62de111f88dee1345ebfa3774b6fd28"
             }
           ]
         },
@@ -632,7 +740,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "That adds up to more than 1,300 hours lost per architect, per year"
+              "quote": "That adds up to more than 1,300 hours lost per architect, per year",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "6f9f5e74ca7b33186ead7a8890c689101013d319b6e397ddaf45ba7ace712cac"
             }
           ]
         },
@@ -643,7 +753,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "a $720 billion dollar “Production Tax.”"
+              "quote": "a $720 billion dollar “Production Tax.”",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "e402f9d6c5903a859c456e780e9ab9e4264b26905e975cec18af367ed697bdae"
             }
           ]
         },
@@ -654,7 +766,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "Architecture sits within a $12 trillion global construction industry"
+              "quote": "Architecture sits within a $12 trillion global construction industry",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "8ffdba8489a857060661fa0f473c0882e42c777ea2ea5362c5ab4a217c6a8b6f"
             }
           ]
         }
@@ -666,7 +780,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "“We don’t remove friction in the creative process by embedding agents into legacy tools,” says CEO Chin-Yi Cheng. “Our vision is to build a direct conduit for your intent and taste; an interface so seamless that architects can finally design freely without the sensation of using a tool."
+              "quote": "“We don’t remove friction in the creative process by embedding agents into legacy tools,” says CEO Chin-Yi Cheng. “Our vision is to build a direct conduit for your intent and taste; an interface so seamless that architects can finally design freely without the sensation of using a tool.",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "67777708eefa61083cf4d23f15b96b2751a0a0c41029abe9756ded9ffb747a4f"
             }
           ]
         },
@@ -676,7 +792,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "\"Early-stage design exploration is where creativity matters most, but it's also where traditional tools are the most limiting,\" says Yasuhiro Nakano, Chief Architect at Kajima. \"Illoca allows our team to iterate through multiple options with incredible speed while preserving the architectural intent behind every concept.\""
+              "quote": "\"Early-stage design exploration is where creativity matters most, but it's also where traditional tools are the most limiting,\" says Yasuhiro Nakano, Chief Architect at Kajima. \"Illoca allows our team to iterate through multiple options with incredible speed while preserving the architectural intent behind every concept.\"",
+              "source_content_hash": "36707f31f2817c6d",
+              "quote_hash": "3b473dd7c48785bc3245f62d07a8b35b0d646ae310b9be5098e06959179f052e"
             }
           ]
         }
@@ -692,7 +810,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-af034b6014cc1e78",
-                "quote": "“Architecture represents one of the most important disciplines shaping our world, yet designers are still forced into rigid, time-consuming workflows by legacy software,” says Maha Malik, Vice President at Bessemer Venture Partners. “Chin-Yi and Chiaowei are tackling this decades-old challenge with a rare combination of deep technical expertise and genuine empathy for how architects actually work. By bridging the gap between high-level intent and professional-grade execution, Illoca is building one of the most paradigm-shifting applications of AI in the built world.”"
+                "quote": "“Architecture represents one of the most important disciplines shaping our world, yet designers are still forced into rigid, time-consuming workflows by legacy software,” says Maha Malik, Vice President at Bessemer Venture Partners. “Chin-Yi and Chiaowei are tackling this decades-old challenge with a rare combination of deep technical expertise and genuine empathy for how architects actually work. By bridging the gap between high-level intent and professional-grade execution, Illoca is building one of the most paradigm-shifting applications of AI in the built world.”",
+                "source_content_hash": "36707f31f2817c6d",
+                "quote_hash": "23912fa9be2f3ff45b2a5f180764287405d4380d0998abfe596b38fc434ffa52"
               }
             ]
           }
@@ -707,7 +827,19 @@
           "产品仍处于早期访问阶段，其核心价值主张完全依赖于AI生成文档的可靠性和可信度。若输出结果无法达到100%准确，建筑师仍需逐行检查，则所承诺的时间节省将无法兑现，产品可能从效率工具变为额外负担。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI原生建筑设计软件"
+        "sector": "AI原生建筑设计软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“设计意图的直通管道”，即通过AI原生界面彻底消除建筑师在创意构思与专业文档生产之间的转换摩擦。本轮1300万美元的种子轮融资规模在行业中异常庞大，反映了投资者对创始团队背景（Google DeepMind和Tesla）的高度信心。已验证的信号包括：1）创始团队在生成式AI研究和专业BIM工作流方面拥有罕见的复合经验；2）产品已获得顶级客户Kajima Corporation的早期采用，验证了其在大型复杂项目中的操作可行性；3）产品定位清晰，直击建筑师60%工作时间被文档生产占据的明确痛点。",
+          "evidence_signals": [
+            "创始团队具备Google DeepMind生成式AI研究及Tesla BIM领导的复合背景",
+            "产品已获全球顶级设计与施工企业Kajima Corporation作为早期合作伙伴采用",
+            "产品定位直击建筑师60%工作时间耗费在非创意性文档生产的行业明确痛点"
+          ],
+          "risks": [
+            "产品仍处于早期访问阶段，其核心价值主张完全依赖于AI生成文档的可靠性和可信度。若输出结果无法达到100%准确，建筑师仍需逐行检查，则所承诺的时间节省将无法兑现，产品可能从效率工具变为额外负担。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -715,150 +847,70 @@
           "target_kind": "product",
           "research_name": "Illoca Tracing Paper™",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "Illoca’s first product, Illoca Tracing Paper™, replaces the traditional hundred-button toolset with a collaborative, intelligent canvas that mirrors the natural interactions of a design studio."
-            },
-            {
-              "source_id": "FISRC-05dac4d3d870b892",
-              "quote": "Tracing Paper is an AI-native design engine built for the controllability required by professional practice. It bridges the gap between creative exploration and technical production"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Chin-Yi Cheng",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "Founders Chin-Yi Cheng and Chiaowei Yu"
-            },
-            {
-              "source_id": "FISRC-0d1528dc8838b9e7",
-              "quote": "CEO Chin-Yi Cheng"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Chiaowei Yu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "Founders Chin-Yi Cheng and Chiaowei Yu"
-            },
-            {
-              "source_id": "FISRC-0d1528dc8838b9e7",
-              "quote": "COO Chiaowei Yu"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "closed $13 million in Seed financing led by Bessemer Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AIX Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Root Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alt Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "with participation from AIX Ventures, Root Ventures and Alt Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Kajima Corporation",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-af034b6014cc1e78",
-              "quote": "For early partners such as Kajima Corporation, one of the world's largest design and construction firms, the shift is already redefining the project lifecycle."
-            },
-            {
-              "source_id": "FISRC-0d1528dc8838b9e7",
-              "quote": "Kajima Corporation, one of the world’s largest design-and-construction groups, has become Illoca’s partner."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Midjourney",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c3ccacb076e99b9",
-              "quote": "Tools like Midjourney produce beautiful visuals but lack the “groundedness” needed for code, compliance, and structural applications."
-            },
-            {
-              "source_id": "FISRC-05dac4d3d870b892",
-              "quote": "Unlike generic tools that produce static pixels, Tracing Paper understands architectural intent. It generates structured, parametric 2D and 3D schematics that are design-ready."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Autodesk Revit",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05dac4d3d870b892",
-              "quote": "While conventional CAD and BIM software often require manual, high-effort translation of ideas, Tracing Paper accepts natural inputs—sketches, redlines, and texts—to generate design documentation in real time. It is designed to be integrated into existing ecosystems like Autodesk Revit and Rhino"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -944,13 +996,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:07:34.221Z"
+      "published_at": "2026-07-26T15:07:34.221Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Illoca Tracing Paper™"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Chiaowei Yu",
+            "Chin-Yi Cheng"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-59f4561c5243eb98"
+      ],
+      "aggregation": {
+        "key": "EN-8dfa7ee544d661eb|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-16d401014a37a9b4",
       "triggered_by_event_id": "EV-e0ecb5f81a273447",
       "as_of_date": "2026-05-23",
@@ -968,11 +1050,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "Andrea Zorzetto has lived a compressed version of the founder journey."
+                "quote": "Andrea Zorzetto has lived a compressed version of the founder journey.",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "9908f6bc13e9b3daf978ee1ede15ab02f6ff80810b7e5804728b41519a617f17"
               },
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "Andrea Zorzetto and Matteo Bossolini, co-founders of Cato"
+                "quote": "Andrea Zorzetto and Matteo Bossolini, co-founders of Cato",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "c61d0e811cae8f43af73bce6ff1dff0fcdd47fc0c4f00b9c89906df6e00f715a"
               }
             ],
             "entity_id": null
@@ -983,11 +1069,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "Andrea Zorzetto and Matteo Bossolini, co-founders of Cato"
+                "quote": "Andrea Zorzetto and Matteo Bossolini, co-founders of Cato",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "c61d0e811cae8f43af73bce6ff1dff0fcdd47fc0c4f00b9c89906df6e00f715a"
               },
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "And yet here he is, as CTO and co-founder of one of the more interesting AI bets in the Italian market right now."
+                "quote": "And yet here he is, as CTO and co-founder of one of the more interesting AI bets in the Italian market right now.",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "eb9d3923b74a397e81d1f047163cbcea8ae26ba49740baefa73cf1aff23d87c2"
               }
             ],
             "entity_id": null
@@ -999,19 +1089,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The Cato team is 12 people, all between 20 and 32 years old."
+              "quote": "The Cato team is 12 people, all between 20 and 32 years old.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "1f42be9e9e8fa972604ed2a58f605b23dc548e1c033664dd04c348cc98850d83"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-048a7851eadb0513",
-            "quote": "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration."
+            "quote": "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration.",
+            "source_content_hash": "4b45f40b77306fff",
+            "quote_hash": "0963d196f14d984555820a52e7874cf31542a835363177ad0bfa328338dce870"
           }
         ]
       },
       "financing": {
-        "round": "Pre-seed",
+        "round": "预种子轮",
         "amount": "€1.6 million",
         "total_raised": "€1.6 million",
         "announced_at": "2026-04-14",
@@ -1022,7 +1116,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
+                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
               }
             ],
             "entity_id": null
@@ -1033,7 +1129,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
+                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
               }
             ],
             "entity_id": null
@@ -1044,7 +1142,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
+                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
               }
             ],
             "entity_id": null
@@ -1055,7 +1155,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
+                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
               }
             ],
             "entity_id": null
@@ -1066,7 +1168,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
+                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
               }
             ],
             "entity_id": null
@@ -1077,7 +1181,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
+                "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
               }
             ],
             "entity_id": null
@@ -1088,7 +1194,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-048a7851eadb0513",
-                "quote": "and more than 20 angel investors — including several prominent Italian founders."
+                "quote": "and more than 20 angel investors — including several prominent Italian founders.",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "1122b125ba61a3a3d160b90ddb3ca20e1d75d3d1865d4ec15d943ad87e66ec6c"
               }
             ],
             "entity_id": null
@@ -1097,11 +1205,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-048a7851eadb0513",
-            "quote": "By December, they had closed a €1.6 million pre-seed round."
+            "quote": "By December, they had closed a €1.6 million pre-seed round.",
+            "source_content_hash": "4b45f40b77306fff",
+            "quote_hash": "2c1448699d0027c59444f2013d0e2d3175a532ec5b06300e80e9b285e3114313"
           },
           {
             "source_id": "FISRC-ebb48ad8f8485df1",
-            "quote": "By December: €1.6M raised."
+            "quote": "By December: €1.6M raised.",
+            "source_content_hash": "a51491aa386c4733",
+            "quote_hash": "0553f015ee16df3db8bde392352efd3c57152ddefa59b04ef8a07d53f56151da"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e0ecb5f81a273447",
+            "round_original": "Pre-seed",
+            "amount": "€1.6 million",
+            "announced_at": "2026-04-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-048a7851eadb0513",
+                "quote": "By December, they had closed a €1.6 million pre-seed round.",
+                "source_content_hash": "4b45f40b77306fff",
+                "quote_hash": "2c1448699d0027c59444f2013d0e2d3175a532ec5b06300e80e9b285e3114313"
+              },
+              {
+                "source_id": "FISRC-ebb48ad8f8485df1",
+                "quote": "By December: €1.6M raised.",
+                "source_content_hash": "a51491aa386c4733",
+                "quote_hash": "0553f015ee16df3db8bde392352efd3c57152ddefa59b04ef8a07d53f56151da"
+              }
+            ]
           }
         ]
       },
@@ -1119,7 +1256,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration."
+              "quote": "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "0963d196f14d984555820a52e7874cf31542a835363177ad0bfa328338dce870"
             }
           ],
           "entity_id": null
@@ -1135,7 +1274,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "By the end of Q1 2026, they had tripled their client base from 11 to over 35."
+              "quote": "By the end of Q1 2026, they had tripled their client base from 11 to over 35.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "5bc46d8cb38807e3d2cb7dfa4c8d6df005343025949dfed1d748ed51478ec939"
             }
           ]
         },
@@ -1146,7 +1287,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Every year, Italian public institutions — hospitals, schools, municipalities, national infrastructure bodies — spend roughly €500 billion buying goods and services."
+              "quote": "Every year, Italian public institutions — hospitals, schools, municipalities, national infrastructure bodies — spend roughly €500 billion buying goods and services.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "585ca9164056a74015dc469605697c27e1d508ca1e9b41d4473179bf0a62fbba"
             }
           ]
         },
@@ -1157,7 +1300,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "That is approximately 20% of Italian GDP, and it flows through a process called public procurement"
+              "quote": "That is approximately 20% of Italian GDP, and it flows through a process called public procurement",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "1651bc86bfdd4612ddb518a530d83b8e4b6d80312b60702c78611d00489b0ac9"
             }
           ]
         },
@@ -1168,7 +1313,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The Cato team is 12 people, all between 20 and 32 years old."
+              "quote": "The Cato team is 12 people, all between 20 and 32 years old.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "1f42be9e9e8fa972604ed2a58f605b23dc548e1c033664dd04c348cc98850d83"
             }
           ]
         },
@@ -1179,7 +1326,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "By December, they had closed a €1.6 million pre-seed round."
+              "quote": "By December, they had closed a €1.6 million pre-seed round.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "2c1448699d0027c59444f2013d0e2d3175a532ec5b06300e80e9b285e3114313"
             }
           ]
         },
@@ -1190,7 +1339,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "By December, they had closed a €1.6 million pre-seed round."
+              "quote": "By December, they had closed a €1.6 million pre-seed round.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "2c1448699d0027c59444f2013d0e2d3175a532ec5b06300e80e9b285e3114313"
             }
           ]
         },
@@ -1201,7 +1352,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Cato was incorporated on 26 September."
+              "quote": "Cato was incorporated on 26 September.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "4e9dd139160d7e93e9fa6ef8bd16e8eac23fe38ec6ecde1e891677f78d79d572"
             }
           ]
         },
@@ -1212,7 +1365,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Their first paying client came aboard in October."
+              "quote": "Their first paying client came aboard in October.",
+              "source_content_hash": "4b45f40b77306fff",
+              "quote_hash": "0676c47db3ab3adc60b136418e466ba764fdb117e719815905338bae93e2a01a"
             }
           ]
         }
@@ -1231,7 +1386,20 @@
           "意大利公共采购市场虽然庞大但高度碎片化，横跨数十个行业，各自拥有不同的规则和买家画像，快速扩张需要极其审慎的聚焦策略，否则可能因资源分散而无法在任何单一领域建立护城河。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "政府科技/人工智能"
+        "sector": "政府科技/人工智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是创始人Andrea Zorzetto在经历公开失败后的执行韧性，以及AI改造意大利5000亿欧元公共采购市场的巨大潜力。本轮融资的已验证信号包括：公司在成立后数周内即获得首笔付费客户，并在不到6个月内将客户从11家增长至超过35家，展示了初步的产品市场契合度。此外，Heartfelt、Vento、Moonstone和BHeroes四家机构在创始人前一家公司失败后仍选择再次投资，构成了对创始人个人能力的强烈信任信号。然而，这些判断的证据边界仅限于单一来源的叙述性报道，缺乏独立的财务审计或客户留存数据。",
+          "evidence_signals": [
+            "创始人在首次创业公开失败后，于三个月内组建新团队并获得term sheet",
+            "公司成立后一个月内获得首位付费客户",
+            "客户数量在不到6个月内从11家增长至超过35家",
+            "四家曾投资创始人前一家公司的机构在本轮再次投资"
+          ],
+          "risks": [
+            "意大利公共采购市场虽然庞大但高度碎片化，横跨数十个行业，各自拥有不同的规则和买家画像，快速扩张需要极其审慎的聚焦策略，否则可能因资源分散而无法在任何单一领域建立护城河。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1239,138 +1407,70 @@
           "target_kind": "product",
           "research_name": "Cato AI平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Cato is an AI-native platform that automates the full procurement cycle for companies selling to the Italian public administration."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Andrea Zorzetto",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Andrea Zorzetto has lived a compressed version of the founder journey."
-            },
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Andrea Zorzetto and Matteo Bossolini, co-founders of Cato"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Matteo Bossolini",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "Andrea Zorzetto and Matteo Bossolini, co-founders of Cato"
-            },
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "And yet here he is, as CTO and co-founder of one of the more interesting AI bets in the Italian market right now."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Heartfelt",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vento",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Moonstone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BHeroes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alecla7",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nova",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "The syndicate includes Heartfelt, Vento, Moonstone, BHeroes, Alecla7, Nova, and more than 20 angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "超过20位天使投资人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-048a7851eadb0513",
-              "quote": "and more than 20 angel investors — including several prominent Italian founders."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1420,13 +1520,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:06:26.080Z"
+      "published_at": "2026-07-26T15:06:26.080Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Cato AI平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Andrea Zorzetto",
+            "Matteo Bossolini"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e0ecb5f81a273447"
+      ],
+      "aggregation": {
+        "key": "EN-afff1ef2d34b618e|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-654a8a27484ca9cc",
       "triggered_by_event_id": "EV-3f8f6a578be79988",
       "as_of_date": "2026-05-23",
@@ -1444,7 +1574,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b5f73fd929efb7ea",
-                "quote": "Chief Executive Yoav Kolodner (pictured, center) served as a vice president of engineering at Salesforce for years"
+                "quote": "Chief Executive Yoav Kolodner (pictured, center) served as a vice president of engineering at Salesforce for years",
+                "source_content_hash": "8e7deeb48af023ce",
+                "quote_hash": "d90aef038b4adb1e77d2fb64ea60ce5ede4b6428e956d542653ca6f5a447e473"
               }
             ],
             "entity_id": null
@@ -1455,7 +1587,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b5f73fd929efb7ea",
-                "quote": "Chief Operating Officer Yakir Daniel (left) built two startups that were later acquired by NetApp Inc. and Huawei Technologies Co. Ltd."
+                "quote": "Chief Operating Officer Yakir Daniel (left) built two startups that were later acquired by NetApp Inc. and Huawei Technologies Co. Ltd.",
+                "source_content_hash": "8e7deeb48af023ce",
+                "quote_hash": "58825f9bfff706c370804e9ef2d4eeb31f04effb2ffd1d45bb0d8b997acc65ee"
               }
             ],
             "entity_id": null
@@ -1466,7 +1600,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b5f73fd929efb7ea",
-                "quote": "A third co-founder is Chief Technology Officer Lior Sidi (right), who led the AI teams at Wix.com Inc. and saw firsthand the importance of context for production workloads."
+                "quote": "A third co-founder is Chief Technology Officer Lior Sidi (right), who led the AI teams at Wix.com Inc. and saw firsthand the importance of context for production workloads.",
+                "source_content_hash": "8e7deeb48af023ce",
+                "quote_hash": "019064f4027a13da4b56250ff44ba9be7512dfab44e9ac944152a6b384b47c6b"
               }
             ],
             "entity_id": null
@@ -1480,11 +1616,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b5f73fd929efb7ea",
-            "quote": "a new startup called Tribal AI Inc."
+            "quote": "a new startup called Tribal AI Inc.",
+            "source_content_hash": "8e7deeb48af023ce",
+            "quote_hash": "98e686262d32fcbbee264bee5b69f69e98abaeb121c75217eb4205b90c01494c"
           },
           {
             "source_id": "FISRC-3f5f316e1bfe732d",
-            "quote": "Tribal, a NYC-based provider of an enterprise-native AI platform, raised $10M in Seed funding."
+            "quote": "Tribal, a NYC-based provider of an enterprise-native AI platform, raised $10M in Seed funding.",
+            "source_content_hash": "3fe769e3aa404e64",
+            "quote_hash": "ff02531414bf7a16411af19e7decad0e03df4dc3e7a8494f1744709923c1c34c"
           }
         ]
       },
@@ -1500,7 +1640,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b5f73fd929efb7ea",
-                "quote": "The seed funding round was led by Team8"
+                "quote": "The seed funding round was led by Team8",
+                "source_content_hash": "8e7deeb48af023ce",
+                "quote_hash": "1df284c79ca614c60c4a1b8e65ed1520bd918a1fcfcf4c2954e528688d217d4c"
               }
             ],
             "entity_id": null
@@ -1511,7 +1653,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b5f73fd929efb7ea",
-                "quote": "saw participation from DYDX Capital"
+                "quote": "saw participation from DYDX Capital",
+                "source_content_hash": "8e7deeb48af023ce",
+                "quote_hash": "8c4b83ac5004727fc9d8b02dffe787ac8ef9e2d5238d5f3828696c6058a8aca1"
               }
             ],
             "entity_id": null
@@ -1522,7 +1666,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b5f73fd929efb7ea",
-                "quote": "a group of unnamed enterprise software founders behind multiple exits in the Salesforce ecosystem, who participated as angels"
+                "quote": "a group of unnamed enterprise software founders behind multiple exits in the Salesforce ecosystem, who participated as angels",
+                "source_content_hash": "8e7deeb48af023ce",
+                "quote_hash": "310a5b882c7154f47623c581cfbcabd0469676ccb22222eb3a1a1f8cf356c55b"
               }
             ],
             "entity_id": null
@@ -1531,11 +1677,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b5f73fd929efb7ea",
-            "quote": "after raising $10 million in funding today. The seed funding round was led by Team8 and saw participation from DYDX Capital and a group of unnamed enterprise software founders"
+            "quote": "after raising $10 million in funding today. The seed funding round was led by Team8 and saw participation from DYDX Capital and a group of unnamed enterprise software founders",
+            "source_content_hash": "8e7deeb48af023ce",
+            "quote_hash": "90c5d3f8569697109229052b17f72536ed6dc2d2d04030b76634044c0a7d376b"
           },
           {
             "source_id": "FISRC-3f5f316e1bfe732d",
-            "quote": "Tribal announced a $10 million seed round"
+            "quote": "Tribal announced a $10 million seed round",
+            "source_content_hash": "3fe769e3aa404e64",
+            "quote_hash": "b9b641c8e32eb1059c8696a79eae16a5bd60631fa9de5e17ba664d83eb25b938"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3f8f6a578be79988",
+            "round_original": "种子轮",
+            "amount": "1000万美元",
+            "announced_at": "2026-05-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b5f73fd929efb7ea",
+                "quote": "after raising $10 million in funding today. The seed funding round was led by Team8 and saw participation from DYDX Capital and a group of unnamed enterprise software founders",
+                "source_content_hash": "8e7deeb48af023ce",
+                "quote_hash": "90c5d3f8569697109229052b17f72536ed6dc2d2d04030b76634044c0a7d376b"
+              },
+              {
+                "source_id": "FISRC-3f5f316e1bfe732d",
+                "quote": "Tribal announced a $10 million seed round",
+                "source_content_hash": "3fe769e3aa404e64",
+                "quote_hash": "b9b641c8e32eb1059c8696a79eae16a5bd60631fa9de5e17ba664d83eb25b938"
+              }
+            ]
           }
         ]
       },
@@ -1554,7 +1729,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "It gobbles up all of the important context around objects, automations, permissions, dependencies and business rules, and uses this knowledge as a foundation for automating business workflows and application development."
+              "quote": "It gobbles up all of the important context around objects, automations, permissions, dependencies and business rules, and uses this knowledge as a foundation for automating business workflows and application development.",
+              "source_content_hash": "8e7deeb48af023ce",
+              "quote_hash": "089ee6480ad5ef24e8845adfed9766477a08979d77154c8959c95f10170f0f0f"
             }
           ],
           "entity_id": null
@@ -1575,7 +1752,18 @@
           "产品仍处于构建阶段，尚未披露任何商业客户或规模化部署的实证，跨平台扩展至 ServiceNow、SAP 等系统的能力尚未得到验证。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业 AI 智能体"
+        "sector": "企业 AI 智能体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“组织上下文”作为企业 AI 从演示走向生产的关键缺失层。本轮融资所依赖的已验证信号包括：创始团队在 Salesforce 等企业平台的深厚工程与创业经验，以及其元数据结构框架在 Salesforce 生态中确保 Agentforce 安全运行的初步验证。判断的证据边界在于，产品仍处于构建阶段，尚未披露付费客户或规模化收入数据，其跨平台扩展能力有待证实。",
+          "evidence_signals": [
+            "创始团队具备 Salesforce 工程副总裁及多次成功退出的企业软件经验",
+            "平台最初设计用于确保 Salesforce Agentforce 在客户环境中安全运行，并已进行基于规则的输出测试"
+          ],
+          "risks": [
+            "产品仍处于构建阶段，尚未披露任何商业客户或规模化部署的实证，跨平台扩展至 ServiceNow、SAP 等系统的能力尚未得到验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1583,91 +1771,49 @@
           "target_kind": "product",
           "research_name": "元数据原生 AI 智能体平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "It gobbles up all of the important context around objects, automations, permissions, dependencies and business rules, and uses this knowledge as a foundation for automating business workflows and application development."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yoav Kolodner",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "Chief Executive Yoav Kolodner (pictured, center) served as a vice president of engineering at Salesforce for years"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yakir Daniel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "Chief Operating Officer Yakir Daniel (left) built two startups that were later acquired by NetApp Inc. and Huawei Technologies Co. Ltd."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Lior Sidi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "A third co-founder is Chief Technology Officer Lior Sidi (right), who led the AI teams at Wix.com Inc. and saw firsthand the importance of context for production workloads."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Team8",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "The seed funding round was led by Team8"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "DYDX Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "saw participation from DYDX Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "未具名企业软件创始人（天使投资人）",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b5f73fd929efb7ea",
-              "quote": "a group of unnamed enterprise software founders behind multiple exits in the Salesforce ecosystem, who participated as angels"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1717,13 +1863,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:19:28.436Z"
+      "published_at": "2026-07-26T14:19:28.436Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "元数据原生 AI 智能体平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Lior Sidi",
+            "Yakir Daniel",
+            "Yoav Kolodner"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3f8f6a578be79988"
+      ],
+      "aggregation": {
+        "key": "EN-c8a41fd9300cfe54|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-0f4bc7f1fb99cd67",
       "triggered_by_event_id": "EV-70a994b9339f92e7",
       "as_of_date": "2026-05-23",
@@ -1741,11 +1918,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bd0bb5e16dde4b65",
-                "quote": "Fractile was founded in 2022 by Dr. Walter Goodwin, a then PhD student at the University of Oxford’s Robotics Institute."
+                "quote": "Fractile was founded in 2022 by Dr. Walter Goodwin, a then PhD student at the University of Oxford’s Robotics Institute.",
+                "source_content_hash": "8eee5020dc2b24a0",
+                "quote_hash": "eff7b8a8f0bd4d98563ecbd942d78da4443fa9a73b97fa95877e2e470e605381"
               },
               {
                 "source_id": "FISRC-a09bc7e6d17a0b0f",
-                "quote": "Founded in 2022 by Oxford PhD Walter Goodwin (pictured)"
+                "quote": "Founded in 2022 by Oxford PhD Walter Goodwin (pictured)",
+                "source_content_hash": "918bf4246831a0d6",
+                "quote_hash": "cc63ae90614d4a85a68b699513370912f171f217d72ed5a46b938beff6e28980"
               }
             ],
             "entity_id": null
@@ -1756,7 +1937,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1b1bec002df54f6",
-                "quote": "Fractile was founded in 2022 by Walter Goodwin and Yuhang Song."
+                "quote": "Fractile was founded in 2022 by Walter Goodwin and Yuhang Song.",
+                "source_content_hash": "b1140c292d7a7291",
+                "quote_hash": "83a5e69999f97303377ae23efec9657ee56b812aedc7231b23d27b66675a0b0d"
               }
             ],
             "entity_id": null
@@ -1770,11 +1953,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-62071134d28f47b9",
-            "quote": "Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs."
+            "quote": "Fractile was founded in 2022 on the bet that, eventually, the world’s most capable AI systems would be limited in their impact by the amount of time they take to produce useful outputs.",
+            "source_content_hash": "49c881bff41c0376",
+            "quote_hash": "42dcbbff7ab4d6bb29b27fe27b6473be7676f2aed079fc20715048e38dd05e8b"
           },
           {
             "source_id": "FISRC-bd0bb5e16dde4b65",
-            "quote": "UK chip startup Fractile has raised $220 million in a Series B funding round."
+            "quote": "UK chip startup Fractile has raised $220 million in a Series B funding round.",
+            "source_content_hash": "8eee5020dc2b24a0",
+            "quote_hash": "1dc60386b4a1a48f1daa97bb646a49d22f91e90d6e7599aec36c2de0c441c6f7"
           }
         ]
       },
@@ -1790,7 +1977,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund"
+                "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
               }
             ],
             "entity_id": null
@@ -1801,7 +1990,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund"
+                "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
               }
             ],
             "entity_id": null
@@ -1812,7 +2003,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund"
+                "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "70d43a0dda6879daeefef7373eac8d92a1c46975d8c8284870ef7e5cc2e3112e"
               }
             ],
             "entity_id": null
@@ -1823,7 +2016,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
+                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
               }
             ],
             "entity_id": null
@@ -1834,7 +2029,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
+                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
               }
             ],
             "entity_id": null
@@ -1845,7 +2042,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
+                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
               }
             ],
             "entity_id": null
@@ -1856,7 +2055,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
+                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
               }
             ],
             "entity_id": null
@@ -1867,7 +2068,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
+                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
               }
             ],
             "entity_id": null
@@ -1878,29 +2081,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62071134d28f47b9",
-                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Kindred Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a09bc7e6d17a0b0f",
-                "quote": "In July 2024 Fractile raised $15m in seed funding, with investors including Kindred Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Pat Gelsinger",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a09bc7e6d17a0b0f",
-                "quote": "angel investors including Pat Gelsinger"
+                "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
               }
             ],
             "entity_id": null
@@ -1909,11 +2092,79 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-62071134d28f47b9",
-            "quote": "we have raised $220M to accelerate the path to getting our first chips and systems into customers’ hands, in a financing round led by Accel, Factorial Funds, and Founders Fund"
+            "quote": "we have raised $220M to accelerate the path to getting our first chips and systems into customers’ hands, in a financing round led by Accel, Factorial Funds, and Founders Fund",
+            "source_content_hash": "49c881bff41c0376",
+            "quote_hash": "7931d6dad323c8ac078981a5f96ee2018cbe915c4b6fc15707bd8433e9c3be5c"
           },
           {
             "source_id": "FISRC-bd0bb5e16dde4b65",
-            "quote": "Fractile has raised $220 million in a Series B funding round."
+            "quote": "Fractile has raised $220 million in a Series B funding round.",
+            "source_content_hash": "8eee5020dc2b24a0",
+            "quote_hash": "5d262e763afe2e222ea12cd3696113f711911d59f3f47f3df848297375a82a9f"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "other_round_investors": [
+          {
+            "name": "Kindred Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a09bc7e6d17a0b0f",
+                "quote": "In July 2024 Fractile raised $15m in seed funding, with investors including Kindred Capital",
+                "source_content_hash": "918bf4246831a0d6",
+                "quote_hash": "7a8e3206950f449ba3b8f7acae7e59a639091582f54b25078bdb1e160db0d83b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Pat Gelsinger",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a09bc7e6d17a0b0f",
+                "quote": "angel investors including Pat Gelsinger",
+                "source_content_hash": "918bf4246831a0d6",
+                "quote_hash": "af9dc27913bf11bb9edab6867f444ea303e1a1d6889fb1e67dc03883fb486a12"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-70a994b9339f92e7",
+            "round_original": "B轮",
+            "amount": "2.2亿美元",
+            "announced_at": "2026-05-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-62071134d28f47b9",
+                "quote": "we have raised $220M to accelerate the path to getting our first chips and systems into customers’ hands, in a financing round led by Accel, Factorial Funds, and Founders Fund",
+                "source_content_hash": "49c881bff41c0376",
+                "quote_hash": "7931d6dad323c8ac078981a5f96ee2018cbe915c4b6fc15707bd8433e9c3be5c"
+              },
+              {
+                "source_id": "FISRC-bd0bb5e16dde4b65",
+                "quote": "Fractile has raised $220 million in a Series B funding round.",
+                "source_content_hash": "8eee5020dc2b24a0",
+                "quote_hash": "5d262e763afe2e222ea12cd3696113f711911d59f3f47f3df848297375a82a9f"
+              }
+            ]
           }
         ]
       },
@@ -1931,15 +2182,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bd0bb5e16dde4b65",
-              "quote": "The company is developing chips that use in-memory compute, an approach that allows processors to run calculations directly in computer memory."
+              "quote": "The company is developing chips that use in-memory compute, an approach that allows processors to run calculations directly in computer memory.",
+              "source_content_hash": "8eee5020dc2b24a0",
+              "quote_hash": "0d67dae6c39525f5af914e222ba61d5b466ed768b74162f0a7c1007bc69835bf"
             },
             {
               "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "Fractile’s chips claim to be able to run LLMs up to 100-times faster than existing hardware while lowering operational costs by 90%."
+              "quote": "Fractile’s chips claim to be able to run LLMs up to 100-times faster than existing hardware while lowering operational costs by 90%.",
+              "source_content_hash": "918bf4246831a0d6",
+              "quote_hash": "9bf3cb8128bb118e8365e5f92d030999d5185cab41476e9fa29383ad58ad649a"
             },
             {
               "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "Fractile has licensed the Andes AX45MPV Risc-V vector processor, combined with ACE (Andes Automated Custom Extension) and Andes Domain Library, and plans to incorporate the vector processing unit into its first generation datacentre AI inference accelerator."
+              "quote": "Fractile has licensed the Andes AX45MPV Risc-V vector processor, combined with ACE (Andes Automated Custom Extension) and Andes Domain Library, and plans to incorporate the vector processing unit into its first generation datacentre AI inference accelerator.",
+              "source_content_hash": "918bf4246831a0d6",
+              "quote_hash": "2bdce80e8ccef703fabdf57614bd7271813e9a48523f16ab282b28c5a4a823e8"
             }
           ],
           "entity_id": null
@@ -1953,13 +2210,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bd0bb5e16dde4b65",
-              "quote": "a report from The Information claimed that generative AI company Anthropic had held discussions with Fractile regarding the purchase of the startup’s inference chips when the hardware becomes available in 2027."
+              "quote": "a report from The Information claimed that generative AI company Anthropic had held discussions with Fractile regarding the purchase of the startup’s inference chips when the hardware becomes available in 2027.",
+              "source_content_hash": "8eee5020dc2b24a0",
+              "quote_hash": "08a97d2fe14ce87a43fc7fa7541c840d5a5817ba5a13304c60d8425d162e260b"
             },
             {
               "source_id": "FISRC-d1b1bec002df54f6",
-              "quote": "Anthropic is reportedly in early talks to become a customer."
+              "quote": "Anthropic is reportedly in early talks to become a customer.",
+              "source_content_hash": "b1140c292d7a7291",
+              "quote_hash": "c9500139735497623720c6f29a975a333548525b94dd41dbabd586dd4e85cfca"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         }
       ],
       "comparisons": [],
@@ -1971,7 +2233,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "Fractile, the UK AI inference chip startup, has raised $220m at a valuation of around $1bn."
+              "quote": "Fractile, the UK AI inference chip startup, has raised $220m at a valuation of around $1bn.",
+              "source_content_hash": "918bf4246831a0d6",
+              "quote_hash": "f02c98a8fad37cf5e592464bbbfb02a1ba0c39156139219a861b163ed5370935"
             }
           ]
         },
@@ -1982,7 +2246,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "Fractile’s chips are not expected to be ready for datacentre deployment until 2027."
+              "quote": "Fractile’s chips are not expected to be ready for datacentre deployment until 2027.",
+              "source_content_hash": "918bf4246831a0d6",
+              "quote_hash": "a66282a9599047fef6fccf9c90b73c2ae42f4861ec641a5fd30b040e8ab63cd2"
             }
           ]
         },
@@ -1993,7 +2259,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bd0bb5e16dde4b65",
-              "quote": "the startup announced plans to invest £100 million ($135m) to bolster its UK operations over the next three years"
+              "quote": "the startup announced plans to invest £100 million ($135m) to bolster its UK operations over the next three years",
+              "source_content_hash": "8eee5020dc2b24a0",
+              "quote_hash": "9612be8ad90ca817e87f4f26f962eb388bc31982d8d837326164fe3f4df766fb"
             }
           ]
         }
@@ -2005,7 +2273,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62071134d28f47b9",
-              "quote": "We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on."
+              "quote": "We bet everything on the logical conclusion: that the only way to truly unlock this latent value, to make speed viable at scale, was to radically re-invent the hardware that we run our frontier AI models on.",
+              "source_content_hash": "49c881bff41c0376",
+              "quote_hash": "f04f30f5a654e470724deb33d8234b99eb3a77a7d54553c85fe6004fc2de3b38"
             }
           ]
         },
@@ -2015,7 +2285,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cd2cd5f60b7c7d67",
-              "quote": "A strong vote of confidence in British AI."
+              "quote": "A strong vote of confidence in British AI.",
+              "source_content_hash": "d2d65203fa3ae1fb",
+              "quote_hash": "51f86523205e91ac3ba302ab6afc6f409f057ee9e9b6e8be26494d34e5c2d9c7"
             }
           ]
         }
@@ -2035,7 +2307,22 @@
           "预计2027年芯片才能部署，届时Nvidia及其他推理芯片初创公司可能已推出新一代产品，市场窗口存在收窄风险"
         ],
         "related_direction_id": "",
-        "sector": "AI推理硬件/半导体"
+        "sector": "AI推理硬件/半导体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“内存墙”能否被内存内计算架构突破。当前估值约10亿美元，建立在芯片尚未量产、预计2027年才能部署的前提下，说明投资机构认可了Fractile从物理层面重构推理硬件的技术路径。已验证信号包括：创始团队来自牛津大学，拥有从AI研究到芯片微架构的全栈能力；已获得Pat Gelsinger、Hermann Hauser、Stan Boland等半导体行业标志性人物的个人投资背书；Anthropic已就芯片采购进行早期洽谈，表明潜在客户对技术方向的认可。但芯片尚未流片，所有性能声明均未经过第三方验证，技术风险极高。",
+          "evidence_signals": [
+            "创始团队具备从AI研究到芯片微架构的全栈技术能力",
+            "获得前Intel CEO Pat Gelsinger、Arm联合创始人Hermann Hauser、前Arm/Acorn高管Stan Boland等半导体行业资深人士的个人投资",
+            "Anthropic已就芯片采购进行早期洽谈，显示潜在客户对技术方向的兴趣",
+            "NATO创新基金参与投资，反映AI推理硬件已被视为国家安全议题"
+          ],
+          "risks": [
+            "芯片尚未流片，所有性能声明（100倍速度提升、90%成本降低）均未经过第三方验证，存在技术无法实现的风险",
+            "SRAM的单位比特成本远高于DRAM，能否在芯片上集成足够SRAM以承载前沿模型权重存在工程和经济上的双重不确定性",
+            "预计2027年芯片才能部署，届时Nvidia及其他推理芯片初创公司可能已推出新一代产品，市场窗口存在收窄风险"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2043,211 +2330,105 @@
           "target_kind": "product",
           "research_name": "AI推理芯片",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bd0bb5e16dde4b65",
-              "quote": "The company is developing chips that use in-memory compute, an approach that allows processors to run calculations directly in computer memory."
-            },
-            {
-              "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "Fractile’s chips claim to be able to run LLMs up to 100-times faster than existing hardware while lowering operational costs by 90%."
-            },
-            {
-              "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "Fractile has licensed the Andes AX45MPV Risc-V vector processor, combined with ACE (Andes Automated Custom Extension) and Andes Domain Library, and plans to incorporate the vector processing unit into its first generation datacentre AI inference accelerator."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Walter Goodwin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bd0bb5e16dde4b65",
-              "quote": "Fractile was founded in 2022 by Dr. Walter Goodwin, a then PhD student at the University of Oxford’s Robotics Institute."
-            },
-            {
-              "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "Founded in 2022 by Oxford PhD Walter Goodwin (pictured)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yuhang Song",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1b1bec002df54f6",
-              "quote": "Fractile was founded in 2022 by Walter Goodwin and Yuhang Song."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Factorial Funds",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "a financing round led by Accel, Factorial Funds, and Founders Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Conviction",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Gigascale",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "01A",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Felicis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Buckley Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "8VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62071134d28f47b9",
-              "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Kindred Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "In July 2024 Fractile raised $15m in seed funding, with investors including Kindred Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Pat Gelsinger",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a09bc7e6d17a0b0f",
-              "quote": "angel investors including Pat Gelsinger"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bd0bb5e16dde4b65",
-              "quote": "a report from The Information claimed that generative AI company Anthropic had held discussions with Fractile regarding the purchase of the startup’s inference chips when the hardware becomes available in 2027."
-            },
-            {
-              "source_id": "FISRC-d1b1bec002df54f6",
-              "quote": "Anthropic is reportedly in early talks to become a customer."
-            }
-          ]
+          "canonical_name": "Anthropic"
         }
       ],
       "funding_history": [
@@ -2333,13 +2514,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:18:40.971Z"
+      "published_at": "2026-07-26T14:18:40.971Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI推理芯片"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Walter Goodwin",
+            "Yuhang Song"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-70a994b9339f92e7"
+      ],
+      "aggregation": {
+        "key": "EN-8da5eafb322ee86e|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-86652acf758b770f",
       "triggered_by_event_id": "EV-c0921550f102695d",
       "as_of_date": "2026-05-23",
@@ -2357,7 +2568,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "Yiping Goh, Co-founder and CEO of FORMAS.AI"
+                "quote": "Yiping Goh, Co-founder and CEO of FORMAS.AI",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "c2acbac937ee31589aae7338a8fe53ed8c585aafdef8d0d0761afb7b4a6996e2"
               }
             ],
             "entity_id": null
@@ -2368,7 +2581,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "Professor Carlos Bañón, Co-founder, Chief Product & AI Officer of FORMAS.AI"
+                "quote": "Professor Carlos Bañón, Co-founder, Chief Product & AI Officer of FORMAS.AI",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "e823357180097e91bae1879c3e83e02b86a60e982769072d5fbc2d347da9e3b0"
               }
             ],
             "entity_id": null
@@ -2382,11 +2597,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-dc1378b0805f976c",
-            "quote": "FORMAS.AI is the AI-native creative and design workspace for architecture, engineering, and construction."
+            "quote": "FORMAS.AI is the AI-native creative and design workspace for architecture, engineering, and construction.",
+            "source_content_hash": "13b618d131a8d1bb",
+            "quote_hash": "ab9d82c7e0191c7c9dc841e98bdab6b309c60e91bddc3aa694c2339131a5c40c"
           },
           {
             "source_id": "FISRC-4a62d1f2f57f2002",
-            "quote": "FORMAS.AI is an AI-powered design platform built specifically for architects, interior designers, and real estate teams"
+            "quote": "FORMAS.AI is an AI-powered design platform built specifically for architects, interior designers, and real estate teams",
+            "source_content_hash": "e332f39f80ce13b3",
+            "quote_hash": "6be71ad8de758bc2662bec3e14dfd65e4df40265f59e39f07eef37af235a4dfb"
           }
         ]
       },
@@ -2402,7 +2621,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "led by Vertex Ventures Southeast Asia & India"
+                "quote": "led by Vertex Ventures Southeast Asia & India",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "69f8e713391b1d26d48b33dd8227cef58247fced37b2fe76dbafda5fd409253e"
               }
             ],
             "entity_id": null
@@ -2413,7 +2634,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "participation from UntroD Capital"
+                "quote": "participation from UntroD Capital",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "b929d272fe43660975d4d9bf4f314d0b9dee0c08580f6bb0ff88c187cbca3af0"
               }
             ],
             "entity_id": null
@@ -2424,7 +2647,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "angel investors including enterprise SaaS unicorn founder, Jeffrey Tiong, Co-founder of Patsnap"
+                "quote": "angel investors including enterprise SaaS unicorn founder, Jeffrey Tiong, Co-founder of Patsnap",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "45c4541c768d3092ec3a551c14c2c4004c9bc3ab9be2a0b77aec36605d090700"
               }
             ],
             "entity_id": null
@@ -2435,7 +2660,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "the founding team of Zopim (acquired by Zendesk)"
+                "quote": "the founding team of Zopim (acquired by Zendesk)",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "4d2c84e54b69330ca0b20a18ee9bb6876c70a40a2ce5408c1478a78ae6e8e1f3"
               }
             ],
             "entity_id": null
@@ -2446,7 +2673,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "Antonio Rami, Co-founder of Kantox (acquired by BNP Paribas)"
+                "quote": "Antonio Rami, Co-founder of Kantox (acquired by BNP Paribas)",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "f01cbbf795ecab619b766e9b720dd30d019767aea5dd32419420d3d35c85f8ea"
               }
             ],
             "entity_id": null
@@ -2457,7 +2686,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc1378b0805f976c",
-                "quote": "Bradley Tabone, Co-founder of Hammertech, a construction technology platform"
+                "quote": "Bradley Tabone, Co-founder of Hammertech, a construction technology platform",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "0c1a2a14cfe0ded3ac490b1db1bf760d927e4b680c80538f0cb8e85aef35e532"
               }
             ],
             "entity_id": null
@@ -2466,11 +2697,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-dc1378b0805f976c",
-            "quote": "has raised US$3.98 million in an oversubscribed pre-seed funding round, led by Vertex Ventures Southeast Asia & India."
+            "quote": "has raised US$3.98 million in an oversubscribed pre-seed funding round, led by Vertex Ventures Southeast Asia & India.",
+            "source_content_hash": "13b618d131a8d1bb",
+            "quote_hash": "6b8bad0b7c744b71ef5bf2e0dc7e524e34b6e6b7d8a6560b9ff0672dd8a0d72f"
           },
           {
             "source_id": "FISRC-1a9ebd241099d931",
-            "quote": "has raised US$3.98 million in an oversubscribed pre-seed funding round led by Vertex Ventures Southeast Asia & India."
+            "quote": "has raised US$3.98 million in an oversubscribed pre-seed funding round led by Vertex Ventures Southeast Asia & India.",
+            "source_content_hash": "2e03ba2f7ff65f40",
+            "quote_hash": "93971ed02a1566476371e64c214b0bd96bf1590be6ebe3863ce3eaec82d0de6e"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c0921550f102695d",
+            "round_original": "预种子轮",
+            "amount": "398万美元",
+            "announced_at": "2026-04-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dc1378b0805f976c",
+                "quote": "has raised US$3.98 million in an oversubscribed pre-seed funding round, led by Vertex Ventures Southeast Asia & India.",
+                "source_content_hash": "13b618d131a8d1bb",
+                "quote_hash": "6b8bad0b7c744b71ef5bf2e0dc7e524e34b6e6b7d8a6560b9ff0672dd8a0d72f"
+              },
+              {
+                "source_id": "FISRC-1a9ebd241099d931",
+                "quote": "has raised US$3.98 million in an oversubscribed pre-seed funding round led by Vertex Ventures Southeast Asia & India.",
+                "source_content_hash": "2e03ba2f7ff65f40",
+                "quote_hash": "93971ed02a1566476371e64c214b0bd96bf1590be6ebe3863ce3eaec82d0de6e"
+              }
+            ]
           }
         ]
       },
@@ -2493,15 +2753,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "an AI-native workspace where architects and designers can sketch, render, iterate, and present within a single intuitive environment"
+              "quote": "an AI-native workspace where architects and designers can sketch, render, iterate, and present within a single intuitive environment",
+              "source_content_hash": "13b618d131a8d1bb",
+              "quote_hash": "b1bbc64056abd697a4e333e4b17428911273e2c3b6273c8daab9f5eebd887fc0"
             },
             {
               "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "orchestrating more than 60 specialist AI models within one unified platform"
+              "quote": "orchestrating more than 60 specialist AI models within one unified platform",
+              "source_content_hash": "13b618d131a8d1bb",
+              "quote_hash": "a3f09a0c8c7d4afb353334fdb71b988e754577fb10e935c24102cbd81f8f60d9"
             },
             {
               "source_id": "FISRC-4a62d1f2f57f2002",
-              "quote": "Our platform orchestrates multiple frontier AI models across image, video, 3D, spatial ideation, and design workflows."
+              "quote": "Our platform orchestrates multiple frontier AI models across image, video, 3D, spatial ideation, and design workflows.",
+              "source_content_hash": "e332f39f80ce13b3",
+              "quote_hash": "d56b6c4351b5f5ccddc6a48828b6fb5674ab3f1102fcf76fc1ec612d8d63534b"
             }
           ],
           "entity_id": null
@@ -2515,9 +2781,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "Formas is a game changer for a small practice like ours, we're now saving so much time from concept to presentation ready pitches. Producing images with precision (not hallucination), exploring possibilities with our existing 3D models"
+              "quote": "Formas is a game changer for a small practice like ours, we're now saving so much time from concept to presentation ready pitches. Producing images with precision (not hallucination), exploring possibilities with our existing 3D models",
+              "source_content_hash": "ff78ad29937744bd",
+              "quote_hash": "89f33157bec37f131d83cfec5923c902887ddf12e6c7ba4769f259517554c167"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Subarquitectura",
@@ -2526,9 +2795,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "With FORMAS.AI, materials, textures, and intent land exactly where we need them, every time. This level of control allows us to build a clear visual identity, iterate with precision"
+              "quote": "With FORMAS.AI, materials, textures, and intent land exactly where we need them, every time. This level of control allows us to build a clear visual identity, iterate with precision",
+              "source_content_hash": "ff78ad29937744bd",
+              "quote_hash": "1dd3086f6c18ab5df6f9a012a98f9e410b84e2ef8a6942734328f0f18a01e54c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2542,9 +2814,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "Midjourney: pretty but zero control. DALL-E: decent, wrong angles. FORMAS: I set camera, materials, geometry AND it stays consistent."
+              "quote": "Midjourney: pretty but zero control. DALL-E: decent, wrong angles. FORMAS: I set camera, materials, geometry AND it stays consistent.",
+              "source_content_hash": "ff78ad29937744bd",
+              "quote_hash": "7ad44083b0c42ef4b38a69eb909cb5c5e91466f03c6286e479c4fd235e86977f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "DALL-E",
@@ -2556,9 +2831,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "Midjourney: pretty but zero control. DALL-E: decent, wrong angles. FORMAS: I set camera, materials, geometry AND it stays consistent."
+              "quote": "Midjourney: pretty but zero control. DALL-E: decent, wrong angles. FORMAS: I set camera, materials, geometry AND it stays consistent.",
+              "source_content_hash": "ff78ad29937744bd",
+              "quote_hash": "7ad44083b0c42ef4b38a69eb909cb5c5e91466f03c6286e479c4fd235e86977f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2569,7 +2847,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "FORMAS.AI users have generated over 500,000 designs across 135 countries"
+              "quote": "FORMAS.AI users have generated over 500,000 designs across 135 countries",
+              "source_content_hash": "13b618d131a8d1bb",
+              "quote_hash": "4936d76d1578c324e7d6a21813cac59e317f2d2c1886303ea88a468b7f6fa941"
             }
           ]
         },
@@ -2580,7 +2860,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "across 135 countries"
+              "quote": "across 135 countries",
+              "source_content_hash": "13b618d131a8d1bb",
+              "quote_hash": "f415acb582576a2f3b84801d1cc0dd5df0a7f7b6195699f1bb667ddc144fb9c4"
             }
           ]
         }
@@ -2598,7 +2880,19 @@
           "当前验证信号仅来自公测阶段的自然流量，尚未披露付费转化率或企业客户留存数据，商业化路径有待验证。"
         ],
         "related_direction_id": "",
-        "sector": "企业软件 / 垂直 SaaS / 建筑科技"
+        "sector": "企业软件 / 垂直 SaaS / 建筑科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AEC 行业从传统工具向 AI 原生集成平台的范式迁移。本轮融资所依赖的已验证信号包括：公测 5 个月内通过纯自然流量在 135 个国家产生超过 50 万次设计生成，验证了全球建筑师对 AI 原生工作空间的真实需求。判断的证据边界限于预种子轮阶段的产品牵引力数据，尚未涉及收入、留存率或企业级客户验证。",
+          "evidence_signals": [
+            "公测 5 个月内在 135 个国家产生超过 50 万次设计生成，全部来自自然 inbound 需求",
+            "AEC 软件市场预计到 2030 年将达到 130 亿至 150 亿美元规模"
+          ],
+          "risks": [
+            "AEC 行业历来技术采用速度较慢，AI 原生工作空间的市场教育成本可能高于预期。",
+            "当前验证信号仅来自公测阶段的自然流量，尚未披露付费转化率或企业客户留存数据，商业化路径有待验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2606,177 +2900,91 @@
           "target_kind": "product",
           "research_name": "FORMAS.AI 平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "an AI-native workspace where architects and designers can sketch, render, iterate, and present within a single intuitive environment"
-            },
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "orchestrating more than 60 specialist AI models within one unified platform"
-            },
-            {
-              "source_id": "FISRC-4a62d1f2f57f2002",
-              "quote": "Our platform orchestrates multiple frontier AI models across image, video, 3D, spatial ideation, and design workflows."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yiping Goh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "Yiping Goh, Co-founder and CEO of FORMAS.AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Carlos Bañón",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "Professor Carlos Bañón, Co-founder, Chief Product & AI Officer of FORMAS.AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vertex Ventures Southeast Asia & India",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "led by Vertex Ventures Southeast Asia & India"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "UntroD Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "participation from UntroD Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jeffrey Tiong",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "angel investors including enterprise SaaS unicorn founder, Jeffrey Tiong, Co-founder of Patsnap"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Zopim 创始团队",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "the founding team of Zopim (acquired by Zendesk)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Antonio Rami",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "Antonio Rami, Co-founder of Kantox (acquired by BNP Paribas)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bradley Tabone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc1378b0805f976c",
-              "quote": "Bradley Tabone, Co-founder of Hammertech, a construction technology platform"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Space Matters",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "Formas is a game changer for a small practice like ours, we're now saving so much time from concept to presentation ready pitches. Producing images with precision (not hallucination), exploring possibilities with our existing 3D models"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Subarquitectura",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "With FORMAS.AI, materials, textures, and intent land exactly where we need them, every time. This level of control allows us to build a clear visual identity, iterate with precision"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Midjourney",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "Midjourney: pretty but zero control. DALL-E: decent, wrong angles. FORMAS: I set camera, materials, geometry AND it stays consistent."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "DALL-E",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-165bb55df75f92dc",
-              "quote": "Midjourney: pretty but zero control. DALL-E: decent, wrong angles. FORMAS: I set camera, materials, geometry AND it stays consistent."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2851,13 +3059,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:17:29.991Z"
+      "published_at": "2026-07-26T14:17:29.991Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "FORMAS.AI 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Carlos Bañón",
+            "Yiping Goh"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c0921550f102695d"
+      ],
+      "aggregation": {
+        "key": "EN-749f7b0c42646853|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-049b90358b22474d",
       "triggered_by_event_id": "EV-4596181c26d7f672",
       "as_of_date": "2026-05-23",
@@ -2875,11 +3113,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "Founded by Mehdi Rais and Amine Chraibi"
+                "quote": "Founded by Mehdi Rais and Amine Chraibi",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "04f9862f8ae8e6dbe76db31da4579c12bdf13d309bbecfb85b023ade7f565a6d"
               },
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "Mehdi Rais Co Founder & CEO , Davis"
+                "quote": "Mehdi Rais Co Founder & CEO , Davis",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "33f31ac2ca0149a1a97ab7f08802418ce0a029bbb5992fd7ca875e0af62faea1"
               }
             ],
             "entity_id": null
@@ -2890,11 +3132,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "Founded by Mehdi Rais and Amine Chraibi"
+                "quote": "Founded by Mehdi Rais and Amine Chraibi",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "04f9862f8ae8e6dbe76db31da4579c12bdf13d309bbecfb85b023ade7f565a6d"
               },
               {
                 "source_id": "FISRC-6a88f57902f30c9d",
-                "quote": "Founded in 2025 by Mehdi Rais and Amine Chraibi, who met through Entrepreneurs First."
+                "quote": "Founded in 2025 by Mehdi Rais and Amine Chraibi, who met through Entrepreneurs First.",
+                "source_content_hash": "5ab4c5a48cc34f50",
+                "quote_hash": "4d43fc88da5f3982a61b968cfe7e9ab6336ef4289a3719727e59aab79651ed4e"
               }
             ],
             "entity_id": null
@@ -2908,16 +3154,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d5d5c858ca2bcd66",
-            "quote": "Davis, an AI-native real estate company accelerating early-stage development and architectural design"
+            "quote": "Davis, an AI-native real estate company accelerating early-stage development and architectural design",
+            "source_content_hash": "e0d1baa182929cff",
+            "quote_hash": "024c4ee35611cd5a52cbf16f7458b5b7cbaf34d0c33f150267740fae74461b93"
           },
           {
             "source_id": "FISRC-0ca5d0f32694eb52",
-            "quote": "Davis is an AI-native real estate company that combines proprietary AI systems with human expertise to deliver feasibility studies and architectural designs for early-stage real estate development faster than traditional workflows. Paris, France"
+            "quote": "Davis is an AI-native real estate company that combines proprietary AI systems with human expertise to deliver feasibility studies and architectural designs for early-stage real estate development faster than traditional workflows. Paris, France",
+            "source_content_hash": "ace991ccb63509bb",
+            "quote_hash": "2a216bf19f3289e5b7aacadf8526385c6475de7f2eb030c50d7604287ed6a7d8"
           }
         ]
       },
       "financing": {
-        "round": "pre-seed",
+        "round": "预种子轮",
         "amount": "$5.5 million",
         "total_raised": "$5.5 million",
         "announced_at": "2026-05-06",
@@ -2928,11 +3178,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "The round was led by Heartcore Capital and Balderton"
+                "quote": "The round was led by Heartcore Capital and Balderton",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "3da880c385cc289ecec6634df00ac0e1f2640d8450e8e2c64cbf936dc331c5be"
               },
               {
                 "source_id": "FISRC-6a88f57902f30c9d",
-                "quote": "Heartcore Capital and Balderton Capital led the fundraise"
+                "quote": "Heartcore Capital and Balderton Capital led the fundraise",
+                "source_content_hash": "5ab4c5a48cc34f50",
+                "quote_hash": "ca72b3fb65259fdd24ca6302900d504f46b9d80610badfd679ad53d00d748dc0"
               }
             ],
             "entity_id": null
@@ -2943,11 +3197,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "The round was led by Heartcore Capital and Balderton"
+                "quote": "The round was led by Heartcore Capital and Balderton",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "3da880c385cc289ecec6634df00ac0e1f2640d8450e8e2c64cbf936dc331c5be"
               },
               {
                 "source_id": "FISRC-6a88f57902f30c9d",
-                "quote": "Heartcore Capital and Balderton Capital led the fundraise"
+                "quote": "Heartcore Capital and Balderton Capital led the fundraise",
+                "source_content_hash": "5ab4c5a48cc34f50",
+                "quote_hash": "ca72b3fb65259fdd24ca6302900d504f46b9d80610badfd679ad53d00d748dc0"
               }
             ],
             "entity_id": null
@@ -2958,7 +3216,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "with participation from Yellow, Evantic and Entrepreneurs First"
+                "quote": "with participation from Yellow, Evantic and Entrepreneurs First",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "c935e5b3d87073d8b068adab229cced4f2d0b39685f471c2b175c6d6ff2d7993"
               }
             ],
             "entity_id": null
@@ -2969,7 +3229,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "with participation from Yellow, Evantic and Entrepreneurs First"
+                "quote": "with participation from Yellow, Evantic and Entrepreneurs First",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "c935e5b3d87073d8b068adab229cced4f2d0b39685f471c2b175c6d6ff2d7993"
               }
             ],
             "entity_id": null
@@ -2980,7 +3242,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "with participation from Yellow, Evantic and Entrepreneurs First"
+                "quote": "with participation from Yellow, Evantic and Entrepreneurs First",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "c935e5b3d87073d8b068adab229cced4f2d0b39685f471c2b175c6d6ff2d7993"
               }
             ],
             "entity_id": null
@@ -2991,7 +3255,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0ca5d0f32694eb52",
-                "quote": "with participation from Yellow, Evantic, Entrepreneur First, and P&P"
+                "quote": "with participation from Yellow, Evantic, Entrepreneur First, and P&P",
+                "source_content_hash": "ace991ccb63509bb",
+                "quote_hash": "524234771710d55d5405f1e81f7c072770c653f77da4fd9d2011e0b6c1f49406"
               }
             ],
             "entity_id": null
@@ -3000,11 +3266,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d5d5c858ca2bcd66",
-            "quote": "Davis, an AI-native real estate company accelerating early-stage development and architectural design, today announced a $5.5 million pre-seed round."
+            "quote": "Davis, an AI-native real estate company accelerating early-stage development and architectural design, today announced a $5.5 million pre-seed round.",
+            "source_content_hash": "e0d1baa182929cff",
+            "quote_hash": "173e340459e84d073e7b2b653d8e7a7be7e280e9a2c2d12e3c42e607cdb72311"
           },
           {
             "source_id": "FISRC-6a88f57902f30c9d",
-            "quote": "Davis, a French AI startup building tools for early-stage real estate development, has raised $5.5 million in a pre-seed round."
+            "quote": "Davis, a French AI startup building tools for early-stage real estate development, has raised $5.5 million in a pre-seed round.",
+            "source_content_hash": "5ab4c5a48cc34f50",
+            "quote_hash": "5c123c8390ac616d6a0d67124c86cbdbf344dff543619e907b029d7f7e6d2b24"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "pre-seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4596181c26d7f672",
+            "round_original": "pre-seed",
+            "amount": "$5.5 million",
+            "announced_at": "2026-05-06",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d5d5c858ca2bcd66",
+                "quote": "Davis, an AI-native real estate company accelerating early-stage development and architectural design, today announced a $5.5 million pre-seed round.",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "173e340459e84d073e7b2b653d8e7a7be7e280e9a2c2d12e3c42e607cdb72311"
+              },
+              {
+                "source_id": "FISRC-6a88f57902f30c9d",
+                "quote": "Davis, a French AI startup building tools for early-stage real estate development, has raised $5.5 million in a pre-seed round.",
+                "source_content_hash": "5ab4c5a48cc34f50",
+                "quote_hash": "5c123c8390ac616d6a0d67124c86cbdbf344dff543619e907b029d7f7e6d2b24"
+              }
+            ]
           }
         ]
       },
@@ -3020,11 +3315,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "the company is also introducing Gaudi-1, its first model for generating architectural designs under real-world constraints."
+              "quote": "the company is also introducing Gaudi-1, its first model for generating architectural designs under real-world constraints.",
+              "source_content_hash": "e0d1baa182929cff",
+              "quote_hash": "6023e1a409b34015354425bd1ebe76be356f90064fcb6744d0e65c629038ba09"
             },
             {
               "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "achieving state-of-the-art results on established floor-plan generation benchmarks, including RPLAN and MSD, across IoU, FID and KID metrics."
+              "quote": "achieving state-of-the-art results on established floor-plan generation benchmarks, including RPLAN and MSD, across IoU, FID and KID metrics.",
+              "source_content_hash": "e0d1baa182929cff",
+              "quote_hash": "2d3c583f64cac878e2d6013426e1e334cec61e11e326ecf7ca9d6d739eb12eb2"
             }
           ],
           "entity_id": null
@@ -3040,7 +3339,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "After just a few months, Mehdi and Amine have acquired dozens of clients on two continents"
+              "quote": "After just a few months, Mehdi and Amine have acquired dozens of clients on two continents",
+              "source_content_hash": "e0d1baa182929cff",
+              "quote_hash": "d30d52bb62746425a0adbd135f92511651e160db464f2437aee395eee7982d6b"
             }
           ]
         }
@@ -3057,7 +3358,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d5d5c858ca2bcd66",
-                "quote": "There are many AI companies which are fast to market and some which are building proprietary models, but very few are doing both. After just a few months, Mehdi and Amine have acquired dozens of clients on two continents and performed cutting-edge research in discrete diffusion."
+                "quote": "There are many AI companies which are fast to market and some which are building proprietary models, but very few are doing both. After just a few months, Mehdi and Amine have acquired dozens of clients on two continents and performed cutting-edge research in discrete diffusion.",
+                "source_content_hash": "e0d1baa182929cff",
+                "quote_hash": "e4b5e3c79231a109a12d44337d4b54ec2d79b13cc27c83e83aa6bed87cd63faa"
               }
             ]
           }
@@ -3072,7 +3375,19 @@
           "房地产行业采用新技术的速度极慢，现有工作流依赖数十年历史的软件和多方利益相关者，AI 原生服务模式可能面临较长的市场教育周期。"
         ],
         "related_direction_id": "",
-        "sector": "AI 原生房地产科技"
+        "sector": "AI 原生房地产科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Davis 能否将早期房地产开发从“软件工具”迁移至“AI 原生服务”，以服务模式直接交付可行性研究和建筑设计成品，从而在房地产这一全球最大资产类别中建立新的速度标准。本轮融资所依赖的已验证信号包括：成立数月即获得两大洲数十家客户、发布首个专有模型 Gaudi-1 并在平面图生成基准上取得最先进结果、以及创始团队兼具行业经验与前沿 AI 研究背景。但当前证据仅限于预种子轮披露，尚未提供收入、客户留存或项目交付量的量化数据，因此无法判断其商业验证的深度。",
+          "evidence_signals": [
+            "成立数月即获得两大洲数十家客户",
+            "发布首个专有模型 Gaudi-1，在 RPLAN 和 MSD 基准上取得最先进结果",
+            "创始团队兼具房地产行业经验与离散扩散前沿研究背景"
+          ],
+          "risks": [
+            "房地产行业采用新技术的速度极慢，现有工作流依赖数十年历史的软件和多方利益相关者，AI 原生服务模式可能面临较长的市场教育周期。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -3080,137 +3395,63 @@
           "target_kind": "product",
           "research_name": "Gaudi-1",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "the company is also introducing Gaudi-1, its first model for generating architectural designs under real-world constraints."
-            },
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "achieving state-of-the-art results on established floor-plan generation benchmarks, including RPLAN and MSD, across IoU, FID and KID metrics."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mehdi Rais",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "Founded by Mehdi Rais and Amine Chraibi"
-            },
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "Mehdi Rais Co Founder & CEO , Davis"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Amine Chraibi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "Founded by Mehdi Rais and Amine Chraibi"
-            },
-            {
-              "source_id": "FISRC-6a88f57902f30c9d",
-              "quote": "Founded in 2025 by Mehdi Rais and Amine Chraibi, who met through Entrepreneurs First."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Heartcore Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "The round was led by Heartcore Capital and Balderton"
-            },
-            {
-              "source_id": "FISRC-6a88f57902f30c9d",
-              "quote": "Heartcore Capital and Balderton Capital led the fundraise"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Balderton",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "The round was led by Heartcore Capital and Balderton"
-            },
-            {
-              "source_id": "FISRC-6a88f57902f30c9d",
-              "quote": "Heartcore Capital and Balderton Capital led the fundraise"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Yellow",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "with participation from Yellow, Evantic and Entrepreneurs First"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Evantic",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "with participation from Yellow, Evantic and Entrepreneurs First"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Entrepreneurs First",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d5d5c858ca2bcd66",
-              "quote": "with participation from Yellow, Evantic and Entrepreneurs First"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "P&P",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0ca5d0f32694eb52",
-              "quote": "with participation from Yellow, Evantic, Entrepreneur First, and P&P"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3273,10 +3514,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:16:34.691Z"
+      "published_at": "2026-07-26T14:16:34.691Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Gaudi-1"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Amine Chraibi",
+            "Mehdi Rais"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-4596181c26d7f672"
+      ],
+      "aggregation": {
+        "key": "EN-4458e908dd9a5440|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

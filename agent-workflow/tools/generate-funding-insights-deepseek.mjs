@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deepSeekJsonCompletion, deepSeekModels, sourceTextHash } from "./deepseek-translation-client.mjs";
 import {
+  FUNDING_INSIGHT_GATE_VERSION,
   FUNDING_INSIGHT_PROMPT_VERSION,
   FUNDING_INSIGHT_VERSION,
   clean,
@@ -12,6 +13,7 @@ import {
   fundingInsightProblems,
   latestDataDate,
   loadDailyBundle,
+  normalizeFundingInsightCard,
   readJson,
   referencedSourceIds,
   researchPayloadProblems,
@@ -331,8 +333,8 @@ function promptFor(event, company, sources, directions) {
     "任务：基于一个已验证融资事件，完成公司、产品、投资方、客户、关键数据、竞争比较和投资逻辑的结构化二次研究。投资方必须明确列出；无法从来源确认投资方时，返回空数组，系统会阻止发布。",
     "每个事实对象必须附evidence_refs。quote必须逐字复制SOURCE正文中的连续短片段，不得改写。缺失信息用空字符串或空数组，不得猜测。",
     "除公司、产品、人名、金额、轮次等专有名词外，summary、description、use_case、比较字段、sector、capital_judgment、risks等面向读者的内容必须使用简体中文。",
-    "financing.amount写round所覆盖轮次的金额；若round同时覆盖多轮，则写多轮合计。total_raised写截至本次披露的累计融资额，不得混用。每个投资方的role必须用中文并写清轮次语境，例如“本轮领投”“本轮参投”“种子轮领投”“天使投资人”或“既有投资方”。",
-    "必须列出来源中与本次披露及其所述历史轮次有关的全部投资方，不得选择性省略；同一机构只列一次，并在role中说明所属轮次。",
+    "financing.amount写round所覆盖轮次的金额；若round同时覆盖多轮，则写多轮合计。total_raised写截至本次披露的累计融资额，不得混用。",
+    "financing.investors只列本轮明确披露的投资方，role必须用中文标注“本轮领投”“本轮联合领投”或“本轮参投”。历史轮次、既有但未确认本轮继续参与、轮次语境不明的投资方不得混入investors，改放other_round_investors并保留原始轮次语境。无法确认任何本轮投资方时返回空investors，系统会阻止发布。",
     "comparisons是应用层比较集合，不代表事实关系。只收录来源明确支持具体产品或方案、应用场景、目标客户、融资信息或商业路径的竞品；如果来源只说“同类公司”或“起点不同”，不要输出该条。product写具体产品或方案，scenario写具体工作流，缺失融资金额时funding_summary留空；core_difference必须逐字段比较已经证实的差异，不得写“起点不同”“各有优势”等机械句式。",
     "analysis.investment_rationale只收录本轮投资机构或其投资人的公开原话。institution必须与financing.investors中的机构名一致；speaker和speaker_role写公开归属；rationale用中文概括机构为何投资；quote逐字复制机构或投资人原文。没有机构原话时返回空数组，不得用公司创始人、媒体或模型判断冒充。",
     "analysis.capital_judgment必须回答资本押注的核心变量、当前估值或融资所依赖的已验证信号，以及判断的证据边界；不得使用“知名机构参与表明看好”“商业化前景广阔”等空泛模板。validated_signals只写来源已验证的业务信号。risks至少一项，用于约束资本判断，不单独扩展成问题清单。",
@@ -356,6 +358,7 @@ function promptFor(event, company, sources, directions) {
         total_raised: "string",
         announced_at: "YYYY-MM-DD|string",
         investors: [{ name: "string", role: "lead|participant|string", evidence_refs: [{ source_id: "string", quote: "string" }] }],
+        other_round_investors: [{ name: "string", role: "string", evidence_refs: [{ source_id: "string", quote: "string" }] }],
         evidence_refs: [{ source_id: "string", quote: "string" }],
       },
       products: [{
@@ -472,7 +475,7 @@ function fundingHistory(companyId) {
   return history.sort((left, right) => right.date.localeCompare(left.date));
 }
 
-function buildCard(event, company, payload, sources, result, resolver) {
+function buildCard(event, company, payload, sources, result, resolver, entityIndex, entityDecisions) {
   const founders = (payload.company.founders || []).map((founder) => {
     const resolved = resolver(founder.name, ["人物"]);
     return { ...founder, entity_id: resolved?.id || null };
@@ -493,7 +496,7 @@ function buildCard(event, company, payload, sources, result, resolver) {
     ...(payload.comparisons || []).map((item) => linkObject("organization", "compared_with", item, resolver)),
   ];
   const publishedAt = result.generatedAt;
-  return {
+  return normalizeFundingInsightCard({
     schema_version: FUNDING_INSIGHT_VERSION,
     funding_insight_id: stableId("FI", event.event_id),
     triggered_by_event_id: event.event_id,
@@ -515,6 +518,7 @@ function buildCard(event, company, payload, sources, result, resolver) {
       total_raised: payload.financing.total_raised,
       announced_at: payload.financing.announced_at,
       investors,
+      other_round_investors: payload.financing.other_round_investors || [],
       evidence_refs: payload.financing.evidence_refs,
     },
     products,
@@ -536,14 +540,14 @@ function buildCard(event, company, payload, sources, result, resolver) {
     auto_publish_gate: {
       passed: true,
       problems: [],
-      gate_version: "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+      gate_version: FUNDING_INSIGHT_GATE_VERSION,
     },
     publication_status: "auto_published",
     published_at: publishedAt,
-  };
+  }, entityIndex, entityDecisions);
 }
 
-async function processEvent(bundle, event, entityIndex) {
+async function processEvent(bundle, event, entityIndex, entityDecisions) {
   const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims);
   if (!company) return { event_id: event.event_id, status: "blocked", problems: ["subject_company_unresolved"] };
   const research = await researchSources(bundle, event, company);
@@ -581,7 +585,16 @@ async function processEvent(bundle, event, entityIndex) {
       event_id: event.event_id,
       company_name: company.canonical_name,
       status: "auto_published",
-      card: buildCard(event, company, payload, research.sources, result, entityResolver(entityIndex)),
+      card: buildCard(
+        event,
+        company,
+        payload,
+        research.sources,
+        result,
+        entityResolver(entityIndex),
+        entityIndex,
+        entityDecisions,
+      ),
       queries: research.queries,
       attempts: research.attempts,
     };
@@ -619,8 +632,13 @@ async function main() {
   if (!date) throw new Error("funding_insight_date_missing");
   const bundle = loadDailyBundle(root, date);
   const entityIndex = readJson(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
+  const entityDecisions = readJson(
+    path.join(root, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
+    {},
+  );
   const existing = readJson(output, { cards: [], queue: [] });
   const existingByEvent = new Map((existing.cards || [])
+    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions))
     .filter((card) => fundingInsightProblems(card).length === 0)
     .map((card) => [card.triggered_by_event_id, card]));
   let eligibleEvents = bundle.events
@@ -665,7 +683,11 @@ async function main() {
     throw new Error("funding_insight_search_provider_missing");
   }
   const results = pending.length
-    ? await mapConcurrent(pending, (event) => processEvent(bundle, event, entityIndex), concurrency)
+    ? await mapConcurrent(
+      pending,
+      (event) => processEvent(bundle, event, entityIndex, entityDecisions),
+      concurrency,
+    )
     : [];
   for (const result of results) {
     if (result.card) existingByEvent.set(result.event_id, result.card);
@@ -706,7 +728,7 @@ async function main() {
       research_provider: "tavily+exa+deepseek",
       model,
       human_review_required: false,
-      auto_publish_gate: "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+      auto_publish_gate: FUNDING_INSIGHT_GATE_VERSION,
       counts: {
         funding_events: events.length,
         auto_published: cards.length,

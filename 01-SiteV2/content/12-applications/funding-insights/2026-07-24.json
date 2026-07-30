@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-24",
     "generated_at": "2026-07-26T15:23:43.975Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 4,
       "auto_published": 4,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-630989a4e13b10d0",
       "triggered_by_event_id": "EV-da1655ecfaf35feb",
       "as_of_date": "2026-07-24",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
+                "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "f8c4f72811687fda789b5d8a28eaaa96af7393c59cf2843a2330baffacbac189"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "co-founder and COO Robert Wachen"
+                "quote": "co-founder and COO Robert Wachen",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "83c18e2821b8787137a76115e94e49c8c14f62971a8d7fe4e339be7bebf54a56"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
+                "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "f8c4f72811687fda789b5d8a28eaaa96af7393c59cf2843a2330baffacbac189"
               }
             ],
             "entity_id": null
@@ -69,27 +76,35 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Today, there are 400 people bustling in an office"
+              "quote": "Today, there are 400 people bustling in an office",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "21e96a73f16526e6b365829945a1ff60c8998862586d1273eed9f339e44e418f"
             },
             {
               "source_id": "FISRC-b9dffc6a2431ff31",
-              "quote": "The company said it has about 400 employees, and is rapidly expanding."
+              "quote": "The company said it has about 400 employees, and is rapidly expanding.",
+              "source_content_hash": "490d145e48e31646",
+              "quote_hash": "f8628168ce674e36e9fa77d329170f5547420c19a10fe507e03552d02d33315b"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-2b073f5d2caeb82a",
-            "quote": "Etched, the AI chip startup founded by three Harvard dropouts in 2022"
+            "quote": "Etched, the AI chip startup founded by three Harvard dropouts in 2022",
+            "source_content_hash": "d49333849e09cee2",
+            "quote_hash": "be9e2fe6974f072b8531fe01b4f7a60825251625e68ba67d9baa6f0b91d2ae76"
           },
           {
             "source_id": "FISRC-51d5a146312ce5b6",
-            "quote": "Etched HQ 3155 Olsen Dr San Jose, CA 95117"
+            "quote": "Etched HQ 3155 Olsen Dr San Jose, CA 95117",
+            "source_content_hash": "888acda40563a8b2",
+            "quote_hash": "ef9f1e8d92f2d30822b020999e2fbb6e846df21da4704c2ea5a2d74719100d7f"
           }
         ]
       },
       "financing": {
-        "round": "Series C",
+        "round": "C轮",
         "amount": "$300 million",
         "total_raised": "超过$1.1 billion",
         "announced_at": "2026-07-23",
@@ -100,11 +115,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "The round was led by Sequoia"
+                "quote": "The round was led by Sequoia",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "3bf4e962fa2218b917b9501ed283b694eae6247125e6ea178c9255619806f55e"
               },
               {
                 "source_id": "FISRC-51d5a146312ce5b6",
-                "quote": "We’ve raised $300M at a $10.3B valuation, led by Sequoia Capital"
+                "quote": "We’ve raised $300M at a $10.3B valuation, led by Sequoia Capital",
+                "source_content_hash": "888acda40563a8b2",
+                "quote_hash": "02d3170f30e46da3e79862332d2af73b10801b68ba505519d41fd647dfb17263"
               }
             ],
             "entity_id": null
@@ -115,7 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "6a9db1dfed17088f678951d37eb6e0ee1ae7be9abc521472976b4e2889881ad4"
               }
             ],
             "entity_id": null
@@ -126,7 +147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "6a9db1dfed17088f678951d37eb6e0ee1ae7be9abc521472976b4e2889881ad4"
               }
             ],
             "entity_id": null
@@ -137,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "6a9db1dfed17088f678951d37eb6e0ee1ae7be9abc521472976b4e2889881ad4"
               }
             ],
             "entity_id": null
@@ -148,7 +173,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "6a9db1dfed17088f678951d37eb6e0ee1ae7be9abc521472976b4e2889881ad4"
               }
             ],
             "entity_id": null
@@ -159,172 +186,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-51d5a146312ce5b6",
-                "quote": "led by Sequoia Capital alongside Andreessen Horowitz, Jane Street, Diffusion, Argo, and SK Hynix"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Peter Thiel",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Andrej Karpathy",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "VentureTech Alliance",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-51d5a146312ce5b6",
-                "quote": "We’ve raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Copper Sky Capital",
-            "role": "A轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d31c563ee521526a",
-                "quote": "When the four-year-old VC firm invested in Etched’s $120 million Series A two years ago"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Stripes",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Hudson River Trading",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Two Sigma",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ribbit Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Geoffrey Hinton",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Fei-Fei Li",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Arthur Mensch",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Scott Wu",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Stanley Druckenmiller",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "The cap also includes billionaires Stanley Druckenmiller and Peter Thiel."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Dylan Field",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Amjad Masad",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
+                "quote": "led by Sequoia Capital alongside Andreessen Horowitz, Jane Street, Diffusion, Argo, and SK Hynix",
+                "source_content_hash": "888acda40563a8b2",
+                "quote_hash": "20f5a4d79d14498a28bf4a99a82cd946fad4921c789e2ab53e464b5adf307d6b"
               }
             ],
             "entity_id": null
@@ -333,11 +197,326 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2b073f5d2caeb82a",
-            "quote": "has closed a $300 million Series C funding round at a $10.3 billion valuation"
+            "quote": "has closed a $300 million Series C funding round at a $10.3 billion valuation",
+            "source_content_hash": "d49333849e09cee2",
+            "quote_hash": "bb3f112de638a431738459bf28abc96ef2305660825f3e30cdb8a0e49eb58d03"
           },
           {
             "source_id": "FISRC-ebe9b53f6375c99a",
-            "quote": "The round brings total capital raised past $1.1 billion, following a $500 million Series B."
+            "quote": "The round brings total capital raised past $1.1 billion, following a $500 million Series B.",
+            "source_content_hash": "609ac79493f0a8a6",
+            "quote_hash": "40b8bc8fe90148d5f451ba7b56380d930d758998da0ad1ddb6f62e3373f639e8"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "other_round_investors": [
+          {
+            "name": "Peter Thiel",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b073f5d2caeb82a",
+                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more.",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "4d3fc1c2cf63f64610feb6b3a03462ad7908124151671dde13efb2a12933f960"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Andrej Karpathy",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b073f5d2caeb82a",
+                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more.",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "4d3fc1c2cf63f64610feb6b3a03462ad7908124151671dde13efb2a12933f960"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "VentureTech Alliance",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-51d5a146312ce5b6",
+                "quote": "We’ve raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
+                "source_content_hash": "888acda40563a8b2",
+                "quote_hash": "a9345665141958e7832a26a4ff400e0f4a1e5bd7a26c8a3a9c14bd580f0564e6"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Copper Sky Capital",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d31c563ee521526a",
+                "quote": "When the four-year-old VC firm invested in Etched’s $120 million Series A two years ago",
+                "source_content_hash": "3844889648361182",
+                "quote_hash": "fcab9cfa20aeec9b375b5a49859761bccf22a8b08c8710b31ea3288cc2164511"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_a",
+              "label": "A轮",
+              "original": "A轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Stripes",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "b7a8217718219f16e0f375dceacfb485f98b3933431327669f6961c3fdb23a0d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮领投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Hudson River Trading",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "b7a8217718219f16e0f375dceacfb485f98b3933431327669f6961c3fdb23a0d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Two Sigma",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "b7a8217718219f16e0f375dceacfb485f98b3933431327669f6961c3fdb23a0d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Ribbit Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "b7a8217718219f16e0f375dceacfb485f98b3933431327669f6961c3fdb23a0d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Geoffrey Hinton",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "591043bb489c62b90dc6edb7c40f1d0343da02f76af8f6d09e40f32c03952e77"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Fei-Fei Li",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "591043bb489c62b90dc6edb7c40f1d0343da02f76af8f6d09e40f32c03952e77"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Arthur Mensch",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "591043bb489c62b90dc6edb7c40f1d0343da02f76af8f6d09e40f32c03952e77"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Scott Wu",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "591043bb489c62b90dc6edb7c40f1d0343da02f76af8f6d09e40f32c03952e77"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Stanley Druckenmiller",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e9f4ccdf9c4d73e0",
+                "quote": "The cap also includes billionaires Stanley Druckenmiller and Peter Thiel.",
+                "source_content_hash": "aaeadfd77d5e96e0",
+                "quote_hash": "4cbc033326d165e1a7f0605cf634973269f86ed20a6facece5e87f6284afda40"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Dylan Field",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b073f5d2caeb82a",
+                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more.",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "4d3fc1c2cf63f64610feb6b3a03462ad7908124151671dde13efb2a12933f960"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Amjad Masad",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b073f5d2caeb82a",
+                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more.",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "4d3fc1c2cf63f64610feb6b3a03462ad7908124151671dde13efb2a12933f960"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-da1655ecfaf35feb",
+            "round_original": "Series C",
+            "amount": "$300 million",
+            "announced_at": "2026-07-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2b073f5d2caeb82a",
+                "quote": "has closed a $300 million Series C funding round at a $10.3 billion valuation",
+                "source_content_hash": "d49333849e09cee2",
+                "quote_hash": "bb3f112de638a431738459bf28abc96ef2305660825f3e30cdb8a0e49eb58d03"
+              },
+              {
+                "source_id": "FISRC-ebe9b53f6375c99a",
+                "quote": "The round brings total capital raised past $1.1 billion, following a $500 million Series B.",
+                "source_content_hash": "609ac79493f0a8a6",
+                "quote_hash": "40b8bc8fe90148d5f451ba7b56380d930d758998da0ad1ddb6f62e3373f639e8"
+              }
+            ]
           }
         ]
       },
@@ -354,15 +533,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve designed a new architecture to run our chip’s math blocks at under half the voltage of most AI chips. This enables multiple times the FLOPs density of AI chips today. We can run trillion-parameter sparse MoEs at 80%+ Peak FLOPs without thermal throttling."
+              "quote": "We’ve designed a new architecture to run our chip’s math blocks at under half the voltage of most AI chips. This enables multiple times the FLOPs density of AI chips today. We can run trillion-parameter sparse MoEs at 80%+ Peak FLOPs without thermal throttling.",
+              "source_content_hash": "888acda40563a8b2",
+              "quote_hash": "08a6f6e29c3e86202d8cfae34563e0433808714c3cde899046ad1dfaa4666c3d"
             },
             {
               "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We created a much lower-latency shared memory pool across our scale-up domain. We use a proprietary ultra-low-latency, high-bandwidth interconnect to enable dramatically faster memory access across chips."
+              "quote": "We created a much lower-latency shared memory pool across our scale-up domain. We use a proprietary ultra-low-latency, high-bandwidth interconnect to enable dramatically faster memory access across chips.",
+              "source_content_hash": "888acda40563a8b2",
+              "quote_hash": "25b9f88650ae304748bbbe5ed76a98aac2a7e63eb3ff59f91348013d1709a15d"
             },
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "The systems can run any AI model, including Mixture of Experts models like DeepSeek and Qwen — an architecture that splits tasks across specialized sub-models rather than relying on one large model — as well as non-transformer designs like Mamba"
+              "quote": "The systems can run any AI model, including Mixture of Experts models like DeepSeek and Qwen — an architecture that splits tasks across specialized sub-models rather than relying on one large model — as well as non-transformer designs like Mamba",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "9fd0b9fe745b3c9167b155da4e81d65ca856e63d18de0ca7f097f01a2f9297f7"
             }
           ],
           "entity_id": null
@@ -379,11 +564,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We co-design chips, racks, software, and manufacturing methods so frontier models can run with best-in-class throughput, latency, cost, and power efficiency for both prefill and decode workloads."
+              "quote": "We co-design chips, racks, software, and manufacturing methods so frontier models can run with best-in-class throughput, latency, cost, and power efficiency for both prefill and decode workloads.",
+              "source_content_hash": "888acda40563a8b2",
+              "quote_hash": "cc7ac4fda80ff0f37c243c77a3d264d979fedd098477cac4639b4556090fd6ce"
             },
             {
               "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "Our first racks ship this summer, and we’ve kicked off production to fulfill over $1B in customer contracts."
+              "quote": "Our first racks ship this summer, and we’ve kicked off production to fulfill over $1B in customer contracts.",
+              "source_content_hash": "888acda40563a8b2",
+              "quote_hash": "714025fadea99810409b5ebaa305a9bf7b25ac1038bd9c48c9dc3b324ceccb98"
             }
           ],
           "entity_id": null
@@ -401,13 +590,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Etched claims this produces a 10 to 100 times efficiency improvement per watt compared to H100-class GPUs for inference workloads."
+              "quote": "Etched claims this produces a 10 to 100 times efficiency improvement per watt compared to H100-class GPUs for inference workloads.",
+              "source_content_hash": "609ac79493f0a8a6",
+              "quote_hash": "ac1d07bc4b7645c93ea7cf2ccc12368c323d22443fb24c511887dc720db1b35f"
             },
             {
               "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Unlike NVIDIA's H100, which is a general-purpose GPU designed to run essentially any workload you send it (training, inference, simulation, rendering), Sohu does exactly one thing. It runs transformer-architecture neural network inference."
+              "quote": "Unlike NVIDIA's H100, which is a general-purpose GPU designed to run essentially any workload you send it (training, inference, simulation, rendering), Sohu does exactly one thing. It runs transformer-architecture neural network inference.",
+              "source_content_hash": "609ac79493f0a8a6",
+              "quote_hash": "163eda0397b5b44d2de335d901ce8689e40f95ebd85257c3605e395a2b7cea7b"
             }
-          ]
+          ],
+          "entity_id": "EN-8d4321d936320802"
         },
         {
           "name": "Google",
@@ -419,13 +613,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Google's TPU program has been running inference ASICs at hyperscale for nearly a decade."
+              "quote": "Google's TPU program has been running inference ASICs at hyperscale for nearly a decade.",
+              "source_content_hash": "609ac79493f0a8a6",
+              "quote_hash": "175598fa81e90d6788d81f9992ffd13197b6645b5ae0106ae27f79810a97009f"
             },
             {
               "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Sohu wins decisively on inference efficiency for transformer workloads. It loses on flexibility, toolchain maturity, and the consequence of being wrong about architecture."
+              "quote": "Sohu wins decisively on inference efficiency for transformer workloads. It loses on flexibility, toolchain maturity, and the consequence of being wrong about architecture.",
+              "source_content_hash": "609ac79493f0a8a6",
+              "quote_hash": "0cd6fb5c54525192ae48d3fd588d3aeb2e2cb2bc21dca778009a6119a269be84"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "Cerebras",
@@ -437,13 +636,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras raised $2.7 billion and came close to dying entirely in its early years"
+              "quote": "Cerebras raised $2.7 billion and came close to dying entirely in its early years",
+              "source_content_hash": "c5f7711604038d11",
+              "quote_hash": "2f485ac54503c6a9c33d38fa2e8a4fa1d2a9c40d436cdf403fa06965bc33e750"
             },
             {
               "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras eventually found its footing and achieved a $60 billion market cap post-IPO"
+              "quote": "Cerebras eventually found its footing and achieved a $60 billion market cap post-IPO",
+              "source_content_hash": "c5f7711604038d11",
+              "quote_hash": "f83cd027d3770d865df61a79834338780d0adf9718413ad1126ba8e913d563c0"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Groq",
@@ -455,9 +659,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "while AI chipmaker Groq just raised $650 million."
+              "quote": "while AI chipmaker Groq just raised $650 million.",
+              "source_content_hash": "aaeadfd77d5e96e0",
+              "quote_hash": "d193097c40e2ed270236172cf08661beffa3c96f9e6f3b7c75ecae9c09d16156"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -468,7 +675,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "has closed a $300 million Series C funding round at a $10.3 billion valuation"
+              "quote": "has closed a $300 million Series C funding round at a $10.3 billion valuation",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "bb3f112de638a431738459bf28abc96ef2305660825f3e30cdb8a0e49eb58d03"
             }
           ]
         },
@@ -479,7 +688,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "it had already booked $1 billion worth of orders."
+              "quote": "it had already booked $1 billion worth of orders.",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "bf6c301936d546845d052a14cb38ec2b2f5e8d4c1f952bf453b2ef136820cb19"
             }
           ]
         },
@@ -490,7 +701,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Today, there are 400 people bustling in an office"
+              "quote": "Today, there are 400 people bustling in an office",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "21e96a73f16526e6b365829945a1ff60c8998862586d1273eed9f339e44e418f"
             }
           ]
         },
@@ -501,7 +714,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Etched was previously valued at $5 billion in December when it raised a $500 million round"
+              "quote": "Etched was previously valued at $5 billion in December when it raised a $500 million round",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "2a4ec86b13d9712fc15a926daefddf8d9262f3d7598ec8acd70b989c9f53a020"
             }
           ]
         },
@@ -512,7 +727,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "it just opened a new 80,000 square-foot, 10MW facility in Milpitas"
+              "quote": "it just opened a new 80,000 square-foot, 10MW facility in Milpitas",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "b51ac02350ec4eded77e10618af2110bc99d297799cfb43c1b1755653165bd5e"
             }
           ]
         },
@@ -523,7 +740,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "it just opened a new 80,000 square-foot, 10MW facility in Milpitas"
+              "quote": "it just opened a new 80,000 square-foot, 10MW facility in Milpitas",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "b51ac02350ec4eded77e10618af2110bc99d297799cfb43c1b1755653165bd5e"
             }
           ]
         },
@@ -534,7 +753,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "The round brings total capital raised past $1.1 billion, following a $500 million Series B."
+              "quote": "The round brings total capital raised past $1.1 billion, following a $500 million Series B.",
+              "source_content_hash": "609ac79493f0a8a6",
+              "quote_hash": "40b8bc8fe90148d5f451ba7b56380d930d758998da0ad1ddb6f62e3373f639e8"
             }
           ]
         },
@@ -545,7 +766,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "Earlier this year our A0 silicon came back from TSMC N4P"
+              "quote": "Earlier this year our A0 silicon came back from TSMC N4P",
+              "source_content_hash": "888acda40563a8b2",
+              "quote_hash": "9b7c2cefe5739bdaf3598358e658ef130101d80603ef7a5da1a7099fbbeb32f2"
             }
           ]
         }
@@ -557,7 +780,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "We call this low-voltage inference."
+              "quote": "We call this low-voltage inference.",
+              "source_content_hash": "d49333849e09cee2",
+              "quote_hash": "90649c747dfe31b1340591d8d27e5877985d2fe2719706a3bf5bee6cbc4c9d72"
             }
           ]
         }
@@ -573,7 +798,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ebe9b53f6375c99a",
-                "quote": "Sequoia's partnership post is titled \"Building the Inference Machine,\" a direct signal of their thesis. They are not betting on AI broadly. They are betting that inference, not training, becomes the dominant infrastructure cost for every AI company in the next five years."
+                "quote": "Sequoia's partnership post is titled \"Building the Inference Machine,\" a direct signal of their thesis. They are not betting on AI broadly. They are betting that inference, not training, becomes the dominant infrastructure cost for every AI company in the next five years.",
+                "source_content_hash": "609ac79493f0a8a6",
+                "quote_hash": "d3c953742b329d348be13fc2d915b8321e31b895494be131c2e565631d69ff2b"
               }
             ]
           }
@@ -591,7 +818,22 @@
           "供应链依赖：芯片制造依赖台积电产能，而台积电先进制程产能持续紧张，可能限制Etched的扩产速度。"
         ],
         "related_direction_id": "",
-        "sector": "AI芯片/半导体"
+        "sector": "AI芯片/半导体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Transformer架构在未来五到七年内仍将是AI推理的主导范式。本轮估值较七个月前翻倍至103亿美元，依据是已获得10亿美元客户订单这一已验证信号，以及芯片成功流片并开始客户测试的里程碑。然而，该判断的证据边界受限于：硬件尚未大规模量产交付，性能声明尚未在真实生产环境中得到广泛验证，且架构单一性风险无法通过现有订单完全消除。",
+          "evidence_signals": [
+            "Sohu芯片已在台积电N4P工艺上成功流片并回片。",
+            "首批完整系统正在由客户进行测试。",
+            "在C轮融资关闭前已获得10亿美元的客户预订订单。",
+            "已开设10MW新实验室用于持续部署和快速原型迭代。"
+          ],
+          "risks": [
+            "架构过时风险：Sohu芯片专为Transformer推理硬编码，若AI研究社区在未来几年转向非Transformer架构（如状态空间模型），芯片将失去核心价值，无法通过软件更新适配。",
+            "竞争风险：谷歌TPU、亚马逊Trainium/Inferentia、微软自研芯片等超大规模厂商已垂直整合硬件、软件和客户，Etched需在工具链成熟度和客户切换成本上证明其优势。",
+            "供应链依赖：芯片制造依赖台积电产能，而台积电先进制程产能持续紧张，可能限制Etched的扩产速度。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -599,418 +841,210 @@
           "target_kind": "product",
           "research_name": "Sohu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve designed a new architecture to run our chip’s math blocks at under half the voltage of most AI chips. This enables multiple times the FLOPs density of AI chips today. We can run trillion-parameter sparse MoEs at 80%+ Peak FLOPs without thermal throttling."
-            },
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We created a much lower-latency shared memory pool across our scale-up domain. We use a proprietary ultra-low-latency, high-bandwidth interconnect to enable dramatically faster memory access across chips."
-            },
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "The systems can run any AI model, including Mixture of Experts models like DeepSeek and Qwen — an architecture that splits tasks across specialized sub-models rather than relying on one large model — as well as non-transformer designs like Mamba"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Frontier Inference Clusters",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We co-design chips, racks, software, and manufacturing methods so frontier models can run with best-in-class throughput, latency, cost, and power efficiency for both prefill and decode workloads."
-            },
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "Our first racks ship this summer, and we’ve kicked off production to fulfill over $1B in customer contracts."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gavin Uberti",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Robert Wachen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "co-founder and COO Robert Wachen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Chris Zhu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sequoia Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "The round was led by Sequoia"
-            },
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve raised $300M at a $10.3B valuation, led by Sequoia Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SK Hynix",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jane Street",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Diffusion Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Argo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "led by Sequoia Capital alongside Andreessen Horowitz, Jane Street, Diffusion, Argo, and SK Hynix"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Peter Thiel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Andrej Karpathy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "VentureTech Alliance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Copper Sky Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d31c563ee521526a",
-              "quote": "When the four-year-old VC firm invested in Etched’s $120 million Series A two years ago"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Stripes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Hudson River Trading",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Two Sigma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ribbit Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Geoffrey Hinton",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Fei-Fei Li",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Arthur Mensch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Scott Wu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Stanley Druckenmiller",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "The cap also includes billionaires Stanley Druckenmiller and Peter Thiel."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Dylan Field",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Amjad Masad",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "NVIDIA",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Etched claims this produces a 10 to 100 times efficiency improvement per watt compared to H100-class GPUs for inference workloads."
-            },
-            {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Unlike NVIDIA's H100, which is a general-purpose GPU designed to run essentially any workload you send it (training, inference, simulation, rendering), Sohu does exactly one thing. It runs transformer-architecture neural network inference."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Google's TPU program has been running inference ASICs at hyperscale for nearly a decade."
-            },
-            {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Sohu wins decisively on inference efficiency for transformer workloads. It loses on flexibility, toolchain maturity, and the consequence of being wrong about architecture."
-            }
-          ]
+          "canonical_name": "Google"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Cerebras",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras raised $2.7 billion and came close to dying entirely in its early years"
-            },
-            {
-              "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras eventually found its footing and achieved a $60 billion market cap post-IPO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Groq",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "while AI chipmaker Groq just raised $650 million."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1129,13 +1163,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:23:43.896Z"
+      "published_at": "2026-07-26T15:23:43.896Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Frontier Inference Clusters",
+            "Sohu"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Chris Zhu",
+            "Gavin Uberti",
+            "Robert Wachen"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-da1655ecfaf35feb"
+      ],
+      "aggregation": {
+        "key": "EN-9cb45a27a2808c01|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-efb7c752e7a0f57f",
       "triggered_by_event_id": "EV-9b81b0dd09a046ab",
       "as_of_date": "2026-07-24",
@@ -1153,11 +1219,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a2e33bd2177a4c7",
-                "quote": "former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI"
+                "quote": "former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI",
+                "source_content_hash": "afc63d021b3c19fe",
+                "quote_hash": "c9444b56d5cecbe75183255327ec61d5214c0d38e9b7f4e88e5cfbb0da59c984"
               },
               {
                 "source_id": "FISRC-9d9726b9fa2281de",
-                "quote": "co-founder and CEO of AegisAI"
+                "quote": "co-founder and CEO of AegisAI",
+                "source_content_hash": "2454eeb868f40bf4",
+                "quote_hash": "168b0050edf7649c25ae3a318611c86a393d9c65b8bb2ecb0deca90e8124e36a"
               }
             ],
             "entity_id": null
@@ -1168,11 +1238,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a2e33bd2177a4c7",
-                "quote": "former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI"
+                "quote": "former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI",
+                "source_content_hash": "afc63d021b3c19fe",
+                "quote_hash": "c9444b56d5cecbe75183255327ec61d5214c0d38e9b7f4e88e5cfbb0da59c984"
               },
               {
                 "source_id": "FISRC-9d9726b9fa2281de",
-                "quote": "AegisAI was founded in 2025 by Khormaee and Ryan Luo, veterans of Google's core security group who helped build reCAPTCHA, Safe Browsing and Web Risk"
+                "quote": "AegisAI was founded in 2025 by Khormaee and Ryan Luo, veterans of Google's core security group who helped build reCAPTCHA, Safe Browsing and Web Risk",
+                "source_content_hash": "2454eeb868f40bf4",
+                "quote_hash": "d177fc2b3b03bd41bd2c40903d94e76344f163e7523a74f926250b46b09c13a1"
               }
             ],
             "entity_id": null
@@ -1186,16 +1260,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7a2e33bd2177a4c7",
-            "quote": "AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing"
+            "quote": "AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing",
+            "source_content_hash": "afc63d021b3c19fe",
+            "quote_hash": "20bf941da2f91dbd13207703a294af93b0fd469b7a05b4e108eb4d1150e4cff4"
           },
           {
             "source_id": "FISRC-9d9726b9fa2281de",
-            "quote": "AegisAI, the email security company building its own LLMs to defend the inbox, is headquartered in San Francisco."
+            "quote": "AegisAI, the email security company building its own LLMs to defend the inbox, is headquartered in San Francisco.",
+            "source_content_hash": "2454eeb868f40bf4",
+            "quote_hash": "35e3a1b14f4cd19e8c27de6639a63ecf6914ff94b483a2ae23c8523fd60f9074"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$36 million",
         "total_raised": "$49 million",
         "announced_at": "2026-07-23",
@@ -1206,11 +1284,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a2e33bd2177a4c7",
-                "quote": "a $36 million Series A led by Battery Ventures"
+                "quote": "a $36 million Series A led by Battery Ventures",
+                "source_content_hash": "afc63d021b3c19fe",
+                "quote_hash": "576c66fe9d8c3d53458c5337e3d5211e7f7c8f26d475491d35a915f1375c9055"
               },
               {
                 "source_id": "FISRC-4b3af8138bc7fb99",
-                "quote": "Battery Ventures led the round"
+                "quote": "Battery Ventures led the round",
+                "source_content_hash": "c1c81dabfa00282d",
+                "quote_hash": "ef3d5fb1aa8aa512aa1817004fb7b89a115c3ab65aa254173b3eb7913d459810"
               }
             ],
             "entity_id": null
@@ -1221,11 +1303,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a2e33bd2177a4c7",
-                "quote": "with participation from existing backers Accel and Foundation Capital"
+                "quote": "with participation from existing backers Accel and Foundation Capital",
+                "source_content_hash": "afc63d021b3c19fe",
+                "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
               },
               {
                 "source_id": "FISRC-4b3af8138bc7fb99",
-                "quote": "Accel Partners and Foundation Capital, both existing investors, also participating"
+                "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
+                "source_content_hash": "c1c81dabfa00282d",
+                "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
               }
             ],
             "entity_id": null
@@ -1236,11 +1322,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a2e33bd2177a4c7",
-                "quote": "with participation from existing backers Accel and Foundation Capital"
+                "quote": "with participation from existing backers Accel and Foundation Capital",
+                "source_content_hash": "afc63d021b3c19fe",
+                "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
               },
               {
                 "source_id": "FISRC-4b3af8138bc7fb99",
-                "quote": "Accel Partners and Foundation Capital, both existing investors, also participating"
+                "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
+                "source_content_hash": "c1c81dabfa00282d",
+                "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
               }
             ],
             "entity_id": null
@@ -1249,7 +1339,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-4b3af8138bc7fb99",
-            "quote": "AegisAI funding has reached $49 million after the San Francisco email security startup said it raised a $36 million Series A"
+            "quote": "AegisAI funding has reached $49 million after the San Francisco email security startup said it raised a $36 million Series A",
+            "source_content_hash": "c1c81dabfa00282d",
+            "quote_hash": "79a864ba2b20b2886c1d52af074f564c5569c41db8456685946493331bfbddd5"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-9b81b0dd09a046ab",
+            "round_original": "Series A",
+            "amount": "$36 million",
+            "announced_at": "2026-07-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b3af8138bc7fb99",
+                "quote": "AegisAI funding has reached $49 million after the San Francisco email security startup said it raised a $36 million Series A",
+                "source_content_hash": "c1c81dabfa00282d",
+                "quote_hash": "79a864ba2b20b2886c1d52af074f564c5569c41db8456685946493331bfbddd5"
+              }
+            ]
           }
         ]
       },
@@ -1268,11 +1379,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "AegisAI cuts through the noise with automated triaging that reduces false positives by up to 90% while blocking 22% more attacks."
+              "quote": "AegisAI cuts through the noise with automated triaging that reduces false positives by up to 90% while blocking 22% more attacks.",
+              "source_content_hash": "2ae66e475804bf6e",
+              "quote_hash": "a36663bb486edc0cfad93fa2d338061afb9759c06dc0dd22f9530f8e53ddc796"
             },
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "AegisAI deploys autonomous AI agents inside the inbox that interrogate the intent and identity behind every message, catching linguistically perfect attacks that pass every technical check"
+              "quote": "AegisAI deploys autonomous AI agents inside the inbox that interrogate the intent and identity behind every message, catching linguistically perfect attacks that pass every technical check",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "44a148e188e40e82040b25d23c98e66cf896bced0c3bba2f5b278336bdd65c3c"
             }
           ],
           "entity_id": null
@@ -1289,7 +1404,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "With Vanguard, announced in March, those agents now extend beyond the inbox. When a message is flagged, Vanguard follows suspicious links and attachments across the open web just as a user would – defeating adversarial CAPTCHAs, cloaked pages and weaponized documents – and returns a complete threat report in minutes."
+              "quote": "With Vanguard, announced in March, those agents now extend beyond the inbox. When a message is flagged, Vanguard follows suspicious links and attachments across the open web just as a user would – defeating adversarial CAPTCHAs, cloaked pages and weaponized documents – and returns a complete threat report in minutes.",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "c5db746943474351e53b5ae0c5d4e55f7719094e0a57f4f20c8c0006f7841c22"
             }
           ],
           "entity_id": null
@@ -1307,11 +1424,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e7715eaff612aa1c",
-              "quote": "An AI agent built the way attackers build them: autonomous OSINT, target-specific lures, real delivery, measured engagement. Probed your defenses, scoped and approved with your security team, so you see who clicks before a real attacker does."
+              "quote": "An AI agent built the way attackers build them: autonomous OSINT, target-specific lures, real delivery, measured engagement. Probed your defenses, scoped and approved with your security team, so you see who clicks before a real attacker does.",
+              "source_content_hash": "18a5353c8cd0e7a1",
+              "quote_hash": "8eb9819cead07d5531c91b608bf6e054fa1074006bda93b0b79a36eb22cbbc36"
             },
             {
               "source_id": "FISRC-e7715eaff612aa1c",
-              "quote": "The agent runs attacker-grade tradecraft against your own org, with your security team setting the scope and seeing every step."
+              "quote": "The agent runs attacker-grade tradecraft against your own org, with your security team setting the scope and seeing every step.",
+              "source_content_hash": "18a5353c8cd0e7a1",
+              "quote_hash": "f7b82de3a28b52074a36288412ac17f999875a913d54d7ced9c90828b5a155b8"
             }
           ],
           "entity_id": null
@@ -1325,13 +1446,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "crypto payments company Mesh"
+              "quote": "crypto payments company Mesh",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "9918811611caee8872e81e847cb07005120fb01c0965b21396042e75087edd0c"
             },
             {
               "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "Our dashboard shows everything from fuzzing attempts to AI-generated spear phishing and BEC, and Aegis catches them all—without my team wasting time managing rules."
+              "quote": "Our dashboard shows everything from fuzzing attempts to AI-generated spear phishing and BEC, and Aegis catches them all—without my team wasting time managing rules.",
+              "source_content_hash": "2ae66e475804bf6e",
+              "quote_hash": "539e8d56f861bdf6981f0dc15ca2449ae42eb6f67bfa3ccedd1532586a88af2f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "LangChain",
@@ -1340,13 +1466,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "AI startup LangChain"
+              "quote": "AI startup LangChain",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "d9a8908c636e3dbde08197599a4d6d22d65ca10096a1705e93810ddb9b35e6ec"
             },
             {
               "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "What impressed us about Aegis AI is that their agents actually adapt in real time—no rule-writing, no tuning, no chasing false positives. We deployed in minutes and saw threats we'd been missing effortlessly with the agent's reasoning for each email, no black box."
+              "quote": "What impressed us about Aegis AI is that their agents actually adapt in real time—no rule-writing, no tuning, no chasing false positives. We deployed in minutes and saw threats we'd been missing effortlessly with the agent's reasoning for each email, no black box.",
+              "source_content_hash": "2ae66e475804bf6e",
+              "quote_hash": "efdcd2ade7f0322beaccb74fa5da369e46027aef07d0ab75ca770739d0f364c1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Lokker",
@@ -1355,9 +1486,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "privacy compliance platform Lokker"
+              "quote": "privacy compliance platform Lokker",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "0a1ea3c23749379be8f6abd1aa8f438fdd7d613b241f7e1f1514f1729b1bf84f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1371,9 +1505,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security. However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company."
+              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security. However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company.",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "5e78b340c23c5b5032c75f10763f9d2f5043739b44266967393e8ec84864140b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Proofpoint",
@@ -1385,9 +1522,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security."
+              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security.",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "878f7b75858552f11a3ddb5cf294efac647379e077bf13133ab8ee3bda84bf33"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Mimecast",
@@ -1399,9 +1539,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security."
+              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security.",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "878f7b75858552f11a3ddb5cf294efac647379e077bf13133ab8ee3bda84bf33"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Abnormal Security",
@@ -1413,9 +1556,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "newer players like Abnormal Security. However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company."
+              "quote": "newer players like Abnormal Security. However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company.",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "2ac1dc45cd234c67571370ce014dce1d5c0639f29d3994ac7e103eba0eac345a"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1426,7 +1572,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "AI-generated spear phishing grew from 2.8% to 13.9% of all observed phishing in 2025."
+              "quote": "AI-generated spear phishing grew from 2.8% to 13.9% of all observed phishing in 2025.",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "877b11defe5c7c194cd0276084d11ab5793f567dddcbb136022c2b39efc826a7"
             }
           ]
         },
@@ -1437,7 +1585,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "AI-generated emails evade traditional filters at nearly double the rate of human-written attacks, reaching the inbox more than half the time."
+              "quote": "AI-generated emails evade traditional filters at nearly double the rate of human-written attacks, reaching the inbox more than half the time.",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "4e21fb09c83c5ca4663c8e839de421d1840978097f90182ca045ac180abdeea6"
             }
           ]
         },
@@ -1448,7 +1598,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "72.6% of successful AI attacks passed email authentication, sent from compromised legitimate accounts with established sending histories."
+              "quote": "72.6% of successful AI attacks passed email authentication, sent from compromised legitimate accounts with established sending histories.",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "ed252f50b23aa2a4b046fb283ade6b1a91b56f00eda561250798f2463233fa30"
             }
           ]
         },
@@ -1459,7 +1611,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "FBI-reported cybercrime losses hitting a record $20.8 billion"
+              "quote": "FBI-reported cybercrime losses hitting a record $20.8 billion",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "da32d08d7431157b34c06c6f484bcd292c00aa96abcdc1bade7acf7caa7d0748"
             }
           ]
         },
@@ -1470,7 +1624,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "Business email compromise, payload-less attacks that exploit identity rather than software, accounted for $11.64 billion in losses"
+              "quote": "Business email compromise, payload-less attacks that exploit identity rather than software, accounted for $11.64 billion in losses",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "9b4bdf914d0d5259e4b21c07e6d92a2b07e05821815bcfa54413782a23144f99"
             }
           ]
         },
@@ -1481,7 +1637,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "reduces false positives by up to 90%"
+              "quote": "reduces false positives by up to 90%",
+              "source_content_hash": "2ae66e475804bf6e",
+              "quote_hash": "c3e17a6eaa0243a509c6bfca5105721abe059d2f05a4345f6dd025977034f0be"
             }
           ]
         },
@@ -1492,7 +1650,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "blocking 22% more attacks"
+              "quote": "blocking 22% more attacks",
+              "source_content_hash": "2ae66e475804bf6e",
+              "quote_hash": "354fa16070f128892ad3205f2c7d6b2d13af0d832010131b2ab9eafeb5d951ce"
             }
           ]
         },
@@ -1503,7 +1663,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "5min Integration Time via API"
+              "quote": "5min Integration Time via API",
+              "source_content_hash": "2ae66e475804bf6e",
+              "quote_hash": "f1f6740c2b5b867f257491e4055be9391f99b93305a5fa90595b1a468673de21"
             }
           ]
         }
@@ -1515,7 +1677,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "The core idea of building customized, highly advanced agents that can do investigations is going to [determine] who becomes the next dominant security company"
+              "quote": "The core idea of building customized, highly advanced agents that can do investigations is going to [determine] who becomes the next dominant security company",
+              "source_content_hash": "afc63d021b3c19fe",
+              "quote_hash": "d414e430b37b0eff6fbfd6fa050377d48bd3918a49fe052f619cfe7411521504"
             }
           ]
         },
@@ -1525,7 +1689,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "You cannot patch human trust. If your security program still relies on template-based phishing tests and awareness training, you are training your people to spot last year's threat, not a capable agent crafting a novel lure just for them. When the attack is AI, the defense has to be AI."
+              "quote": "You cannot patch human trust. If your security program still relies on template-based phishing tests and awareness training, you are training your people to spot last year's threat, not a capable agent crafting a novel lure just for them. When the attack is AI, the defense has to be AI.",
+              "source_content_hash": "2454eeb868f40bf4",
+              "quote_hash": "dca9b74402fd5687ce84b79bccd84ca6602a90c885d7b5705541588e6f20c4d4"
             }
           ]
         }
@@ -1541,7 +1707,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9d9726b9fa2281de",
-                "quote": "Cy and Ryan spent a decade building exactly these systems at Google scale. They're the team we'd back to win this market."
+                "quote": "Cy and Ryan spent a decade building exactly these systems at Google scale. They're the team we'd back to win this market.",
+                "source_content_hash": "2454eeb868f40bf4",
+                "quote_hash": "7773666c33a2a352127e088c32a1444057804361b5cd736160fde6f8d6f978f4"
               }
             ]
           },
@@ -1554,7 +1722,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a2e33bd2177a4c7",
-                "quote": "When Dharmesh Thakker, general partner at Battery Ventures, noticed an increase in email attacks, he set out to invest in a startup that could defend against AI with AI, one aiming to replace legacy email security tools with agentic-driven defense."
+                "quote": "When Dharmesh Thakker, general partner at Battery Ventures, noticed an increase in email attacks, he set out to invest in a startup that could defend against AI with AI, one aiming to replace legacy email security tools with agentic-driven defense.",
+                "source_content_hash": "afc63d021b3c19fe",
+                "quote_hash": "fb9985a7c5fe52df8f47a68b9abe00d96a689462c783d2962f67939f7f7ccdcb"
               }
             ]
           }
@@ -1573,7 +1743,23 @@
           "邮件安全市场竞争激烈，既有厂商Proofpoint、Mimecast以及新玩家Abnormal Security、Ocean均在将AI智能体附加到现有产品上，AegisAI尚未证明其差异化优势能转化为市场份额。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "邮件安全/AI安全"
+        "sector": "邮件安全/AI安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“AI原生攻击使传统规则和签名防御失效”这一范式转变。AegisAI的融资建立在三个已验证信号之上：其一，AI生成鱼叉式钓鱼在2025年内增长5倍（从2.8%到13.9%），且绕过传统过滤器的效率是人工攻击的近两倍；其二，72.6%的成功AI攻击通过了邮件认证，来自被攻破的合法账户，表明基于信誉和签名的防御已失效；其三，创始团队来自谷歌核心安全团队（reCAPTCHA、Safe Browsing），具备在数十亿用户规模构建防御系统的经验。公司未披露估值和收入，但声称已签约数十家客户，包括Mesh、LangChain和Lokker。资本判断的证据边界限于公司自身在M3AAWG会议发布的研究数据、FBI网络犯罪报告的外部损失数据，以及投资方对团队背景的认可；缺乏独立基准测试结果和第三方验证的收入数据。",
+          "evidence_signals": [
+            "AI生成鱼叉式钓鱼在2025年内从2.8%增长至13.9%，增长约5倍",
+            "AI生成邮件绕过传统过滤器的效率是人工编写攻击的近两倍",
+            "72.6%的成功AI攻击通过了邮件认证，来自被攻破的合法账户",
+            "FBI报告2025年网络犯罪损失达208亿美元，BEC占116.4亿美元",
+            "创始团队来自谷歌核心安全团队，曾构建reCAPTCHA、Safe Browsing和Web Risk",
+            "已签约数十家金融科技和科技客户，包括Mesh、LangChain和Lokker"
+          ],
+          "risks": [
+            "公司未提供独立基准测试结果，其90%误报减少和22%额外拦截等性能声明均为自身数据，缺乏第三方验证。",
+            "邮件安全市场竞争激烈，既有厂商Proofpoint、Mimecast以及新玩家Abnormal Security、Ocean均在将AI智能体附加到现有产品上，AegisAI尚未证明其差异化优势能转化为市场份额。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1581,231 +1767,105 @@
           "target_kind": "product",
           "research_name": "Agentic Email Security",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "AegisAI cuts through the noise with automated triaging that reduces false positives by up to 90% while blocking 22% more attacks."
-            },
-            {
-              "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "AegisAI deploys autonomous AI agents inside the inbox that interrogate the intent and identity behind every message, catching linguistically perfect attacks that pass every technical check"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Vanguard",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "With Vanguard, announced in March, those agents now extend beyond the inbox. When a message is flagged, Vanguard follows suspicious links and attachments across the open web just as a user would – defeating adversarial CAPTCHAs, cloaked pages and weaponized documents – and returns a complete threat report in minutes."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AI Red Team Agent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e7715eaff612aa1c",
-              "quote": "An AI agent built the way attackers build them: autonomous OSINT, target-specific lures, real delivery, measured engagement. Probed your defenses, scoped and approved with your security team, so you see who clicks before a real attacker does."
-            },
-            {
-              "source_id": "FISRC-e7715eaff612aa1c",
-              "quote": "The agent runs attacker-grade tradecraft against your own org, with your security team setting the scope and seeing every step."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Cy Khormaee",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI"
-            },
-            {
-              "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "co-founder and CEO of AegisAI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ryan Luo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI"
-            },
-            {
-              "source_id": "FISRC-9d9726b9fa2281de",
-              "quote": "AegisAI was founded in 2025 by Khormaee and Ryan Luo, veterans of Google's core security group who helped build reCAPTCHA, Safe Browsing and Web Risk"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Battery Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "a $36 million Series A led by Battery Ventures"
-            },
-            {
-              "source_id": "FISRC-4b3af8138bc7fb99",
-              "quote": "Battery Ventures led the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "with participation from existing backers Accel and Foundation Capital"
-            },
-            {
-              "source_id": "FISRC-4b3af8138bc7fb99",
-              "quote": "Accel Partners and Foundation Capital, both existing investors, also participating"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Foundation Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "with participation from existing backers Accel and Foundation Capital"
-            },
-            {
-              "source_id": "FISRC-4b3af8138bc7fb99",
-              "quote": "Accel Partners and Foundation Capital, both existing investors, also participating"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Mesh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "crypto payments company Mesh"
-            },
-            {
-              "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "Our dashboard shows everything from fuzzing attempts to AI-generated spear phishing and BEC, and Aegis catches them all—without my team wasting time managing rules."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "LangChain",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "AI startup LangChain"
-            },
-            {
-              "source_id": "FISRC-4a3549c46ee12829",
-              "quote": "What impressed us about Aegis AI is that their agents actually adapt in real time—no rule-writing, no tuning, no chasing false positives. We deployed in minutes and saw threats we'd been missing effortlessly with the agent's reasoning for each email, no black box."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Lokker",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "privacy compliance platform Lokker"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Ocean",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security. However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Proofpoint",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Mimecast",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Abnormal Security",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a2e33bd2177a4c7",
-              "quote": "newer players like Abnormal Security. However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1891,13 +1951,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:03:02.571Z"
+      "published_at": "2026-07-26T15:03:02.571Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI Red Team Agent",
+            "Agentic Email Security",
+            "Vanguard"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Cy Khormaee",
+            "Ryan Luo"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9b81b0dd09a046ab"
+      ],
+      "aggregation": {
+        "key": "EN-57b8b5990c299db8|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-aceffe6f1021c1b1",
       "triggered_by_event_id": "EV-3d93d1da8cb64462",
       "as_of_date": "2026-07-24",
@@ -1915,7 +2007,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-199e9e6224efb819",
-                "quote": "said Jordan Liu, Founder and CEO of AIsa"
+                "quote": "said Jordan Liu, Founder and CEO of AIsa",
+                "source_content_hash": "bea7c0ab495b081d",
+                "quote_hash": "ca3980ae1c5e50a920cdfb007021e699043677f2721e307025c682eefbf8d50f"
               }
             ],
             "entity_id": null
@@ -1929,11 +2023,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-199e9e6224efb819",
-            "quote": "AIsa, the transaction network for the AI agent economy"
+            "quote": "AIsa, the transaction network for the AI agent economy",
+            "source_content_hash": "bea7c0ab495b081d",
+            "quote_hash": "29d5f50d17d5b25176d402b1c6d1a720b0c4ab5f319e676f277180f3c0b35afd"
           },
           {
             "source_id": "FISRC-9b294875f5316a91",
-            "quote": "AIsa , a San Francisco-based AI infrastructure startup founded in 2025 by Jordan Liu"
+            "quote": "AIsa , a San Francisco-based AI infrastructure startup founded in 2025 by Jordan Liu",
+            "source_content_hash": "d1f6dbf98f5d207a",
+            "quote_hash": "e184e7f747ddf00c5f847c764b9a9bbe8980bc962cfe359447edf28fc5900dfc"
           }
         ]
       },
@@ -1949,7 +2047,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-199e9e6224efb819",
-                "quote": "co-led by Alibaba and Tribe Capital"
+                "quote": "co-led by Alibaba and Tribe Capital",
+                "source_content_hash": "bea7c0ab495b081d",
+                "quote_hash": "a5880d880abafd8424ab9f4776b34b24620ee2e685cef88a96b23d75a879c367"
               }
             ],
             "entity_id": "EN-047364b9be67f665"
@@ -1960,7 +2060,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-199e9e6224efb819",
-                "quote": "co-led by Alibaba and Tribe Capital"
+                "quote": "co-led by Alibaba and Tribe Capital",
+                "source_content_hash": "bea7c0ab495b081d",
+                "quote_hash": "a5880d880abafd8424ab9f4776b34b24620ee2e685cef88a96b23d75a879c367"
               }
             ],
             "entity_id": null
@@ -1971,7 +2073,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-199e9e6224efb819",
-                "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors"
+                "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+                "source_content_hash": "bea7c0ab495b081d",
+                "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
               }
             ],
             "entity_id": null
@@ -1982,7 +2086,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-199e9e6224efb819",
-                "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors"
+                "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+                "source_content_hash": "bea7c0ab495b081d",
+                "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
               }
             ],
             "entity_id": null
@@ -1993,7 +2099,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-199e9e6224efb819",
-                "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors"
+                "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+                "source_content_hash": "bea7c0ab495b081d",
+                "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
               }
             ],
             "entity_id": null
@@ -2002,7 +2110,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-199e9e6224efb819",
-            "quote": "today announced it has raised US$6.5 million in total funding to date, including a new seed round, co-led by Alibaba and Tribe Capital, with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors"
+            "quote": "today announced it has raised US$6.5 million in total funding to date, including a new seed round, co-led by Alibaba and Tribe Capital, with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+            "source_content_hash": "bea7c0ab495b081d",
+            "quote_hash": "df198745a27b7147ec99fc3799dd405328697a7c36bb4c41cd09b807f941d3cf"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3d93d1da8cb64462",
+            "round_original": "种子轮",
+            "amount": "650万美元",
+            "announced_at": "2026-07-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-199e9e6224efb819",
+                "quote": "today announced it has raised US$6.5 million in total funding to date, including a new seed round, co-led by Alibaba and Tribe Capital, with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+                "source_content_hash": "bea7c0ab495b081d",
+                "quote_hash": "df198745a27b7147ec99fc3799dd405328697a7c36bb4c41cd09b807f941d3cf"
+              }
+            ]
           }
         ]
       },
@@ -2021,15 +2150,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "AIsa provides a unified transaction layer that allows AI agents and developers to discover, access and pay for digital resources through a single programmable interface."
+              "quote": "AIsa provides a unified transaction layer that allows AI agents and developers to discover, access and pay for digital resources through a single programmable interface.",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "ad77c0abb4802c6d100d7a57aa22416269646cb42db188b336849dee5de5b398"
             },
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "Resources available through the platform include AI models, APIs, real time data, search services, SaaS tools, compute resources and agent services, with usage based billing and settlement in fiat or stablecoins."
+              "quote": "Resources available through the platform include AI models, APIs, real time data, search services, SaaS tools, compute resources and agent services, with usage based billing and settlement in fiat or stablecoins.",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "6ad2cf2fa70b50c648cec6af76bb4d5ad93b2352d944eff7408c763a15018dc8"
             },
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "a resource gateway that connects agents to the digital resources they need, and an agentic payment layer that meters usage, enforces business-defined spending controls and settles transactions"
+              "quote": "a resource gateway that connects agents to the digital resources they need, and an agentic payment layer that meters usage, enforces business-defined spending controls and settles transactions",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "6c55539c1fed897df53650ac5711b2f8206fac86650223ec80a82aa7d566a0a7"
             }
           ],
           "entity_id": null
@@ -2046,11 +2181,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7749f6c278a590b4",
-              "quote": "Composable Skills for Every Task Extend any agent with plug-and-play capabilities — search, scrape, analyze, and automate across the tools your workflows already depend on."
+              "quote": "Composable Skills for Every Task Extend any agent with plug-and-play capabilities — search, scrape, analyze, and automate across the tools your workflows already depend on.",
+              "source_content_hash": "c2f936403c49e6ae",
+              "quote_hash": "92937700324b60ec186cf77261b9e2c9639a4f145e88c5c0ae516c866973c83d"
             },
             {
               "source_id": "FISRC-7749f6c278a590b4",
-              "quote": "42 skills available"
+              "quote": "42 skills available",
+              "source_content_hash": "c2f936403c49e6ae",
+              "quote_hash": "bbf1414646478e189e3e6244912b5aa3ad1b5828fea1acbfa7692fb230bd2af0"
             }
           ],
           "entity_id": null
@@ -2064,9 +2203,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "Customers such as Impossible Finance use AIsa to access AI models, data and APIs through a single programmable interface, paying only for actual usage instead of managing multiple vendor contracts and subscriptions."
+              "quote": "Customers such as Impossible Finance use AIsa to access AI models, data and APIs through a single programmable interface, paying only for actual usage instead of managing multiple vendor contracts and subscriptions.",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "474e5cde0b744ce1799106fd6520380810dad1ec2a9d8d57e6056db6a86ad4e8"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -2078,7 +2220,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "From February to June 2026, registered agent users on the platform grew 150x"
+              "quote": "From February to June 2026, registered agent users on the platform grew 150x",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "ed08d733737587f41e9e69dbaede1cd385a492db18de1ad1d9d198832e8b8883"
             }
           ]
         },
@@ -2089,7 +2233,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "aggregate API calls and transactions processed through the network grew 200x"
+              "quote": "aggregate API calls and transactions processed through the network grew 200x",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "b0d2dcd78cb3fee43ec1957e501c5cbc5ba93ef56cf5e10466a87b870e78fac1"
             }
           ]
         },
@@ -2100,7 +2246,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "The company has also onboarded more than 50,000 registered agents without paid marketing."
+              "quote": "The company has also onboarded more than 50,000 registered agents without paid marketing.",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "f33a147646f86bff8f63bc4441c0be60b60eaad77e21ea33818df26706261efe"
             }
           ]
         },
@@ -2111,7 +2259,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "According to x402's public leaderboard, AIsa has ranked as the top seller and top server in the x402 ecosystem"
+              "quote": "According to x402's public leaderboard, AIsa has ranked as the top seller and top server in the x402 ecosystem",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "3dfeea3ec44085507e9705bf27ce1635a8038671b5d635669be1217e82ad3fb5"
             }
           ]
         }
@@ -2123,7 +2273,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "Every major payment network won by sitting next to the resources its users actually wanted to buy. PayPal grew alongside eBay, and Stripe grew alongside internet commerce"
+              "quote": "Every major payment network won by sitting next to the resources its users actually wanted to buy. PayPal grew alongside eBay, and Stripe grew alongside internet commerce",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "1af9897195549bf27a8c58a8f3812f6fa67321b179200da598d75a575030b6c9"
             }
           ]
         },
@@ -2133,7 +2285,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "We believe AI agents will require a new transaction and commerce layer to interact with digital resources at global scale"
+              "quote": "We believe AI agents will require a new transaction and commerce layer to interact with digital resources at global scale",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "138f2d06c50fc6c5db44ea960ed8d41eaae708a7c0bd60149092f5dea4d6f0f8"
             }
           ]
         },
@@ -2143,7 +2297,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-199e9e6224efb819",
-              "quote": "As agents become first class citizens of the internet, we believe they will need to pay for APIs, data, compute, identity, permissions, and services in a more programmatic way than humans do."
+              "quote": "As agents become first class citizens of the internet, we believe they will need to pay for APIs, data, compute, identity, permissions, and services in a more programmatic way than humans do.",
+              "source_content_hash": "bea7c0ab495b081d",
+              "quote_hash": "803f8fc99715d79a0d59a7f98c9286c31e43e95fc50cd916e80026455f27fe35"
             }
           ]
         }
@@ -2162,7 +2318,21 @@
           "智能体自主交易的监管框架尚未建立，KYC/AML 合规要求如何适用于算法身份存在不确定性，可能限制企业级采用速度。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 基础设施、智能体经济、支付网络"
+        "sector": "AI 基础设施、智能体经济、支付网络",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是 AI 智能体从信息生成向自主执行经济行为迁移时产生的交易基础设施缺口。当前估值或融资所依赖的已验证信号包括：2026年2月至6月注册智能体用户增长150倍、API调用和交易总量增长200倍、零付费营销下积累超过5万个注册智能体、在 x402 生态中排名顶级卖家和服务器。这些指标表明开发者对降低跨 AI 工作流摩擦的基础设施存在真实需求，且按使用量计费的经济模型与智能体小额高频消费数字服务的行为模式相契合。但判断的证据边界限于公司自行披露的运营数据，缺乏独立第三方验证。",
+          "evidence_signals": [
+            "2026年2月至6月注册智能体用户增长150倍",
+            "同期 API 调用和交易总量增长200倍",
+            "零付费营销下积累超过50,000个注册智能体",
+            "在 x402 生态中排名顶级卖家和顶级服务器",
+            "已与 Circle、Visa 和 Stripe 的新兴智能体支付计划集成"
+          ],
+          "risks": [
+            "智能体自主交易的监管框架尚未建立，KYC/AML 合规要求如何适用于算法身份存在不确定性，可能限制企业级采用速度。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2170,129 +2340,63 @@
           "target_kind": "product",
           "research_name": "AIsa 统一交易层",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "AIsa provides a unified transaction layer that allows AI agents and developers to discover, access and pay for digital resources through a single programmable interface."
-            },
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "Resources available through the platform include AI models, APIs, real time data, search services, SaaS tools, compute resources and agent services, with usage based billing and settlement in fiat or stablecoins."
-            },
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "a resource gateway that connects agents to the digital resources they need, and an agentic payment layer that meters usage, enforces business-defined spending controls and settles transactions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AIsa Skills",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7749f6c278a590b4",
-              "quote": "Composable Skills for Every Task Extend any agent with plug-and-play capabilities — search, scrape, analyze, and automate across the tools your workflows already depend on."
-            },
-            {
-              "source_id": "FISRC-7749f6c278a590b4",
-              "quote": "42 skills available"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jordan Liu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "said Jordan Liu, Founder and CEO of AIsa"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alibaba",
           "canonical_entity_id": "EN-047364b9be67f665",
-          "canonical_name": "阿里巴巴",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "co-led by Alibaba and Tribe Capital"
-            }
-          ]
+          "canonical_name": "阿里巴巴"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tribe Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "co-led by Alibaba and Tribe Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Draper Associates",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sumitomo Corporation",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Saison Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Impossible Finance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-199e9e6224efb819",
-              "quote": "Customers such as Impossible Finance use AIsa to access AI models, data and APIs through a single programmable interface, paying only for actual usage instead of managing multiple vendor contracts and subscriptions."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2354,13 +2458,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:01:42.462Z"
+      "published_at": "2026-07-26T15:01:42.462Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AIsa Skills",
+            "AIsa 统一交易层"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Jordan Liu"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3d93d1da8cb64462"
+      ],
+      "aggregation": {
+        "key": "EN-14ce7672aaca7a68|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9e322d5bafc9c0c7",
       "triggered_by_event_id": "EV-a64fab2ce6bc6c4c",
       "as_of_date": "2026-07-24",
@@ -2378,7 +2512,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a25b58a6297cb344",
-                "quote": "Finn zur Muehlen , co-founder and CEO of telli"
+                "quote": "Finn zur Muehlen , co-founder and CEO of telli",
+                "source_content_hash": "25462d7ebaa5e35a",
+                "quote_hash": "c43190b99b432d0fdde3c8f53973fdf6bb28b30f122fb1761a5b1a4f7f7ec09f"
               }
             ],
             "entity_id": null
@@ -2389,7 +2525,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a25b58a6297cb344",
-                "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen"
+                "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen",
+                "source_content_hash": "25462d7ebaa5e35a",
+                "quote_hash": "b3036058cd8ae9ee11a8da8044d2f39246ab4079ab57e2d74cf70cdca7ef3a70"
               }
             ],
             "entity_id": null
@@ -2400,7 +2538,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a25b58a6297cb344",
-                "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen"
+                "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen",
+                "source_content_hash": "25462d7ebaa5e35a",
+                "quote_hash": "b3036058cd8ae9ee11a8da8044d2f39246ab4079ab57e2d74cf70cdca7ef3a70"
               }
             ],
             "entity_id": null
@@ -2412,19 +2552,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-97873de74686ec3c",
-              "quote": "16 employees"
+              "quote": "16 employees",
+              "source_content_hash": "5d802862bfa09b77",
+              "quote_hash": "5ca3cabd0d07fd3c8de4a36694b9e151d83f48bca37eeaecd46d9879499ee1ce"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-a25b58a6297cb344",
-            "quote": "telli , a Berlin-based startup building AI that runs customer-facing operations for B2C companies"
+            "quote": "telli , a Berlin-based startup building AI that runs customer-facing operations for B2C companies",
+            "source_content_hash": "25462d7ebaa5e35a",
+            "quote_hash": "366c8e01e174881f4f62efe2b955bbae99bc99535b81da45abbf9a839a96b968"
           }
         ]
       },
       "financing": {
-        "round": "Seed",
+        "round": "种子轮",
         "amount": "€13.1 million ($15 million)",
         "total_raised": "more than €16.1 million ($18.5 million)",
         "announced_at": "2026-07-23",
@@ -2435,7 +2579,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a25b58a6297cb344",
-                "quote": "The round was led by redalpine"
+                "quote": "The round was led by redalpine",
+                "source_content_hash": "25462d7ebaa5e35a",
+                "quote_hash": "fd5eb90c390e50bf085039c95bbecaf9b7a3029a6cc20063ec863f391c5f8b99"
               }
             ],
             "entity_id": null
@@ -2446,7 +2592,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b9bdf878150fb854",
-                "quote": "with participation from strategic investors, Mutschler Ventures AG and key angels"
+                "quote": "with participation from strategic investors, Mutschler Ventures AG and key angels",
+                "source_content_hash": "5b7a8a05c7311998",
+                "quote_hash": "5660af156bfec8dfa93471a29032ef5aa10d771b71bf043a9ff22b1788847a04"
               }
             ],
             "entity_id": null
@@ -2457,7 +2605,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a25b58a6297cb344",
-                "quote": "alongside existing backers Cherry Ventures and Y Combinator"
+                "quote": "alongside existing backers Cherry Ventures and Y Combinator",
+                "source_content_hash": "25462d7ebaa5e35a",
+                "quote_hash": "80f965381185bd1fb72fa3663e74aada5c73a8d22d76d207a4532cbbffde8c02"
               }
             ],
             "entity_id": null
@@ -2468,7 +2618,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a25b58a6297cb344",
-                "quote": "alongside existing backers Cherry Ventures and Y Combinator"
+                "quote": "alongside existing backers Cherry Ventures and Y Combinator",
+                "source_content_hash": "25462d7ebaa5e35a",
+                "quote_hash": "80f965381185bd1fb72fa3663e74aada5c73a8d22d76d207a4532cbbffde8c02"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -2477,7 +2629,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-a25b58a6297cb344",
-            "quote": "today announced a €13.1 million ($15 million) Seed round, bringing its total funding to more than €16.1 million ($18.5 million). The round was led by redalpine, with participation from strategic investors, Mutschler and key angels, alongside existing backers Cherry Ventures and Y Combinator."
+            "quote": "today announced a €13.1 million ($15 million) Seed round, bringing its total funding to more than €16.1 million ($18.5 million). The round was led by redalpine, with participation from strategic investors, Mutschler and key angels, alongside existing backers Cherry Ventures and Y Combinator.",
+            "source_content_hash": "25462d7ebaa5e35a",
+            "quote_hash": "e52e6837cbc0e8cced391e5c45a800db935b9a333e32c4e06e53705d622f57be"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-a64fab2ce6bc6c4c",
+            "round_original": "Seed",
+            "amount": "€13.1 million ($15 million)",
+            "announced_at": "2026-07-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a25b58a6297cb344",
+                "quote": "today announced a €13.1 million ($15 million) Seed round, bringing its total funding to more than €16.1 million ($18.5 million). The round was led by redalpine, with participation from strategic investors, Mutschler and key angels, alongside existing backers Cherry Ventures and Y Combinator.",
+                "source_content_hash": "25462d7ebaa5e35a",
+                "quote_hash": "e52e6837cbc0e8cced391e5c45a800db935b9a333e32c4e06e53705d622f57be"
+              }
+            ]
           }
         ]
       },
@@ -2499,11 +2672,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "The platform helps B2C companies run customer-facing operations end-to-end with AI. The startup notes that businesses can build and deploy AI agents across channels, manage conversations, review calls, improve performance, and automate the operational work behind sales, service, and support."
+              "quote": "The platform helps B2C companies run customer-facing operations end-to-end with AI. The startup notes that businesses can build and deploy AI agents across channels, manage conversations, review calls, improve performance, and automate the operational work behind sales, service, and support.",
+              "source_content_hash": "25462d7ebaa5e35a",
+              "quote_hash": "b245a3fc8ac49b89e0a36897e04fcd9093c8f21f7dbbe5d671e833f2c5bb9b33"
             },
             {
               "source_id": "FISRC-6e1c4f890d7e6c40",
-              "quote": "Deploy agents in 20+ languages with native fluency."
+              "quote": "Deploy agents in 20+ languages with native fluency.",
+              "source_content_hash": "6e038a83d6717e61",
+              "quote_hash": "50199176af38500e02a20820395aa6e6447ff49bded445d010c8415f3b6da259"
             }
           ],
           "entity_id": null
@@ -2517,13 +2694,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "They answer calls, qualify leads, book appointments, run follow-ups, and resolve customer requests for companies including Sky"
+              "quote": "They answer calls, qualify leads, book appointments, run follow-ups, and resolve customer requests for companies including Sky",
+              "source_content_hash": "25462d7ebaa5e35a",
+              "quote_hash": "370194f6aaf331ec15b4531eeeb90e3161143e0d407db26225a0da64471b2456"
             },
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "How Sky scaled proactive customer engagement with telli's Voice AI in under 3 weeks"
+              "quote": "How Sky scaled proactive customer engagement with telli's Voice AI in under 3 weeks",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "051de41968ae19aa8f27a0318ae7c2dfc317a0a5847d06bb7b236f0916486f4b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Enpal",
@@ -2532,13 +2714,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant"
+              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant",
+              "source_content_hash": "25462d7ebaa5e35a",
+              "quote_hash": "41ba33f0a345cc8118be718c66d3220f19668c47e79ae5d5dceb7f37304f6768"
             },
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "How Enpal boosts weekly service appointments by 30% with telli"
+              "quote": "How Enpal boosts weekly service appointments by 30% with telli",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "42dbda2f791f2586ed6385b2ca9ef99578ee97df6bcc6df8ac83532ff325e42f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "McMakler",
@@ -2547,9 +2734,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2adbb3e486e4a648",
-              "quote": "3x schnellere Reaktionszeiten bei Stoßzeiten ~45% Steigerung der Verbindungsrate 90% Reduzierung der Skalierungskosten"
+              "quote": "3x schnellere Reaktionszeiten bei Stoßzeiten ~45% Steigerung der Verbindungsrate 90% Reduzierung der Skalierungskosten",
+              "source_content_hash": "b1c6fa1ecc92cc6c",
+              "quote_hash": "51b560ace43da35c7a7501d64bcc4c720a40e487aa99b21c79e6b3cbae2f59d3"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Viessmann",
@@ -2558,13 +2748,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant"
+              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant",
+              "source_content_hash": "25462d7ebaa5e35a",
+              "quote_hash": "41ba33f0a345cc8118be718c66d3220f19668c47e79ae5d5dceb7f37304f6768"
             },
             {
               "source_id": "FISRC-6e1c4f890d7e6c40",
-              "quote": "Viessmann Follow-up for Customer Engagement"
+              "quote": "Viessmann Follow-up for Customer Engagement",
+              "source_content_hash": "6e038a83d6717e61",
+              "quote_hash": "b79ed36bf1d33ddd52fabcd380c6ba5e48267ee81b836b887880b6c247300b27"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Vaillant",
@@ -2573,9 +2768,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant"
+              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant",
+              "source_content_hash": "25462d7ebaa5e35a",
+              "quote_hash": "41ba33f0a345cc8118be718c66d3220f19668c47e79ae5d5dceb7f37304f6768"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2589,9 +2787,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow"
+              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "c1e91c6afcbc0d39a31660ec4896a2bea3294fbc70ee14686468ae212c4d2c03"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Retell",
@@ -2603,9 +2804,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow"
+              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "c1e91c6afcbc0d39a31660ec4896a2bea3294fbc70ee14686468ae212c4d2c03"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Synthflow",
@@ -2617,9 +2821,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow"
+              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "c1e91c6afcbc0d39a31660ec4896a2bea3294fbc70ee14686468ae212c4d2c03"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2630,7 +2837,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "its agents already handle millions of conversations for companies ranging from SMBs to large enterprises"
+              "quote": "its agents already handle millions of conversations for companies ranging from SMBs to large enterprises",
+              "source_content_hash": "25462d7ebaa5e35a",
+              "quote_hash": "37410dd4d473c97bf211360983ab1d571fea0bea9a153c3ce0e0e3b424b6e92c"
             }
           ]
         },
@@ -2641,7 +2850,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2adbb3e486e4a648",
-              "quote": "3x schnellere Reaktionszeiten bei Stoßzeiten"
+              "quote": "3x schnellere Reaktionszeiten bei Stoßzeiten",
+              "source_content_hash": "b1c6fa1ecc92cc6c",
+              "quote_hash": "5764de966d176a4317030ede2e8168b7cc3f7d3ac3b9945cad8ad54475f02df7"
             }
           ]
         },
@@ -2652,7 +2863,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2adbb3e486e4a648",
-              "quote": "~45% Steigerung der Verbindungsrate"
+              "quote": "~45% Steigerung der Verbindungsrate",
+              "source_content_hash": "b1c6fa1ecc92cc6c",
+              "quote_hash": "1481cfa398c84152732e1e8e9fbb2d923477377475f8a8746e8511954e63a981"
             }
           ]
         },
@@ -2663,7 +2876,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2adbb3e486e4a648",
-              "quote": "90% Reduzierung der Skalierungskosten"
+              "quote": "90% Reduzierung der Skalierungskosten",
+              "source_content_hash": "b1c6fa1ecc92cc6c",
+              "quote_hash": "7d47a2ffdc4d805a7df8ee61b34ebe91a633d39270b80b7e3d39179c2d9df750"
             }
           ]
         },
@@ -2674,7 +2889,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "How Enpal boosts weekly service appointments by 30% with telli"
+              "quote": "How Enpal boosts weekly service appointments by 30% with telli",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "42dbda2f791f2586ed6385b2ca9ef99578ee97df6bcc6df8ac83532ff325e42f"
             }
           ]
         },
@@ -2685,7 +2902,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "How Zenjob automates 90% of initial candidate calls with telli"
+              "quote": "How Zenjob automates 90% of initial candidate calls with telli",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "3d718cf445010eaaebf447a3e411817fe4f0d28a0694a4dc2724ec800499bac9"
             }
           ]
         },
@@ -2696,7 +2915,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "How Umzugspreisvergleich cut lead cancellations by 27% with telli"
+              "quote": "How Umzugspreisvergleich cut lead cancellations by 27% with telli",
+              "source_content_hash": "80b768a2b3cd190c",
+              "quote_hash": "ada5a386d8544745b79bc87cc7dac0374c0b665ef71336d338cc95e507bc74e9"
             }
           ]
         }
@@ -2717,7 +2938,22 @@
           "telli的差异化依赖欧洲B2C垂直深度和德语优先的市场策略，但美国竞争对手在模型能力和资本规模上具有优势"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI智能体/语音AI/客户运营自动化"
+        "sector": "AI智能体/语音AI/客户运营自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是B2C客户运营从软件工作流向AI运行工作流的范式迁移。telli以YC校友身份获得redalpine领投、既有投资方Cherry Ventures和Y Combinator跟投的种子轮，验证信号包括：已签约Sky、Enpal、Viessmann、Vaillant等知名B2C企业客户，智能体已处理数百万次对话，以及McMakler、Enpal等客户在响应速度、连接率、成本效率上的可量化业务成果。但本轮融资规模（€13.1M）和累计融资额（€16.1M+）在语音AI赛道仍属早期，判断的证据边界限于已披露的欧洲B2C客户案例和投资方背书，尚未看到大规模企业级部署的续约率或净收入留存数据。",
+          "evidence_signals": [
+            "已签约Sky、Viessmann、Enpal、Vaillant等知名B2C企业客户",
+            "智能体已处理数百万次对话，覆盖从中小企业到大型企业",
+            "McMakler实现3倍响应速度提升、45%连接率提升、90%扩展成本降低",
+            "Enpal每周服务预约量提升30%",
+            "YC校友身份，既有投资方Cherry Ventures和Y Combinator本轮跟投"
+          ],
+          "risks": [
+            "语音AI赛道极度拥挤，基础模型平台可能吸收通话层能力，在telli拥有工作流护城河之前构成替代风险",
+            "telli的差异化依赖欧洲B2C垂直深度和德语优先的市场策略，但美国竞争对手在模型能力和资本规模上具有优势"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2725,224 +2961,112 @@
           "target_kind": "product",
           "research_name": "telli AI Voice Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "The platform helps B2C companies run customer-facing operations end-to-end with AI. The startup notes that businesses can build and deploy AI agents across channels, manage conversations, review calls, improve performance, and automate the operational work behind sales, service, and support."
-            },
-            {
-              "source_id": "FISRC-6e1c4f890d7e6c40",
-              "quote": "Deploy agents in 20+ languages with native fluency."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Finn zur Muehlen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "Finn zur Muehlen , co-founder and CEO of telli"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Seb Hapte-Selassie",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Philipp Baumanns",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "redalpine",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "The round was led by redalpine"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mutschler Ventures AG",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b9bdf878150fb854",
-              "quote": "with participation from strategic investors, Mutschler Ventures AG and key angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cherry Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "alongside existing backers Cherry Ventures and Y Combinator"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "alongside existing backers Cherry Ventures and Y Combinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Sky",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "They answer calls, qualify leads, book appointments, run follow-ups, and resolve customer requests for companies including Sky"
-            },
-            {
-              "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "How Sky scaled proactive customer engagement with telli's Voice AI in under 3 weeks"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Enpal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant"
-            },
-            {
-              "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "How Enpal boosts weekly service appointments by 30% with telli"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "McMakler",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2adbb3e486e4a648",
-              "quote": "3x schnellere Reaktionszeiten bei Stoßzeiten ~45% Steigerung der Verbindungsrate 90% Reduzierung der Skalierungskosten"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Viessmann",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant"
-            },
-            {
-              "source_id": "FISRC-6e1c4f890d7e6c40",
-              "quote": "Viessmann Follow-up for Customer Engagement"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Vaillant",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a25b58a6297cb344",
-              "quote": "resolve customer requests for companies including Sky, Viessmann, Enpal, and Vaillant"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Parloa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Retell",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Synthflow",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf59b60edf57549f",
-              "quote": "We compare the best AI voice agents for customer service, including telli, Parloa, Retell, and Synthflow"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3040,10 +3164,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:01:18.334Z"
+      "published_at": "2026-07-26T15:01:18.334Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "telli AI Voice Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Finn zur Muehlen",
+            "Philipp Baumanns",
+            "Seb Hapte-Selassie"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-a64fab2ce6bc6c4c"
+      ],
+      "aggregation": {
+        "key": "EN-a56c2fbccb257dba|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

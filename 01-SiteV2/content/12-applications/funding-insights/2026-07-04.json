@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-04",
     "generated_at": "2026-07-27T05:20:00.769Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 2,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-bf6ce32a47c86def",
       "triggered_by_event_id": "EV-95341497f7ba9d83",
       "as_of_date": "2026-07-04",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f24d7ec13b7b4a3c",
-                "quote": "Rohil Khare Co-Founder & CEO"
+                "quote": "Rohil Khare Co-Founder & CEO",
+                "source_content_hash": "fc10752c0d23bf09",
+                "quote_hash": "b686b98a4b3fbbdf55b053a5de9ab2ab3438ff05ed6437230d815a9e32b106c9"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f24d7ec13b7b4a3c",
-                "quote": "Tamzid Razzaque Co-Founder & CTO"
+                "quote": "Tamzid Razzaque Co-Founder & CTO",
+                "source_content_hash": "fc10752c0d23bf09",
+                "quote_hash": "67bdf2b9c1ecb0478a0575f648f30ddd9fa094396251b4c85b5e41388b67c31a"
               }
             ],
             "entity_id": null
@@ -58,23 +63,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f894b9a2c7dde9a",
-              "quote": "Team Size: 2"
+              "quote": "Team Size: 2",
+              "source_content_hash": "bdf61d3038ab4c02",
+              "quote_hash": "ae9d2dd7ff7ffe0a4521c6b75e9e972ec137ed82fa4c39537d934ed1274ba7d7"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-f24d7ec13b7b4a3c",
-            "quote": "SigmanticAI - The AI Operating System for Semiconductor Engineering"
+            "quote": "SigmanticAI - The AI Operating System for Semiconductor Engineering",
+            "source_content_hash": "fc10752c0d23bf09",
+            "quote_hash": "345ac4fafc8736dc9555bb35b80e303644b5b6a2dc3b863f08eea592ad18b3e2"
           },
           {
             "source_id": "FISRC-7f894b9a2c7dde9a",
-            "quote": "SigmanticAI is building an AI-native hardware development assistant that automates the entire RTL design flow"
+            "quote": "SigmanticAI is building an AI-native hardware development assistant that automates the entire RTL design flow",
+            "source_content_hash": "bdf61d3038ab4c02",
+            "quote_hash": "ec030816695c642811baa33bc72efaf7503569f7a8894705e7c17306fc358d96"
           }
         ]
       },
       "financing": {
-        "round": "Seed",
+        "round": "种子轮",
         "amount": "$500K",
         "total_raised": "$500K",
         "announced_at": "2025-09-01",
@@ -85,7 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d06ceea5a84c2928",
-                "quote": "Y Combinator"
+                "quote": "Y Combinator",
+                "source_content_hash": "59186d894bcd5fb4",
+                "quote_hash": "fd002d99775a132851a7f6a24a6b57ca6e18601fdfd4ca6297bec772b9348969"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -96,7 +109,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d06ceea5a84c2928",
-                "quote": "Sahin Boydas"
+                "quote": "Sahin Boydas",
+                "source_content_hash": "59186d894bcd5fb4",
+                "quote_hash": "02b545ef9189f1335acf278f8a619296b464288388b1a444c77d95798ca2c704"
               }
             ],
             "entity_id": null
@@ -105,11 +120,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d06ceea5a84c2928",
-            "quote": "SigmanticAI has raised $500K across 1 funding round."
+            "quote": "SigmanticAI has raised $500K across 1 funding round.",
+            "source_content_hash": "59186d894bcd5fb4",
+            "quote_hash": "482ee8ebe0b38ad05ac39d58ab752febafb7b0325446e6b8fefeaa10fbdd1c78"
           },
           {
             "source_id": "FISRC-d06ceea5a84c2928",
-            "quote": "Sep 1, 2025 $500K Seed — Y Combinator , Sahin Boydas"
+            "quote": "Sep 1, 2025 $500K Seed — Y Combinator , Sahin Boydas",
+            "source_content_hash": "59186d894bcd5fb4",
+            "quote_hash": "8453dc3cfb1be79bfa43011d21dc6284ff2a7e4f8d3eb6a6cc383abf6e0191f9"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-95341497f7ba9d83",
+            "round_original": "Seed",
+            "amount": "$500K",
+            "announced_at": "2025-09-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d06ceea5a84c2928",
+                "quote": "SigmanticAI has raised $500K across 1 funding round.",
+                "source_content_hash": "59186d894bcd5fb4",
+                "quote_hash": "482ee8ebe0b38ad05ac39d58ab752febafb7b0325446e6b8fefeaa10fbdd1c78"
+              },
+              {
+                "source_id": "FISRC-d06ceea5a84c2928",
+                "quote": "Sep 1, 2025 $500K Seed — Y Combinator , Sahin Boydas",
+                "source_content_hash": "59186d894bcd5fb4",
+                "quote_hash": "8453dc3cfb1be79bfa43011d21dc6284ff2a7e4f8d3eb6a6cc383abf6e0191f9"
+              }
+            ]
           }
         ]
       },
@@ -128,15 +172,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "SigmanticAI gives semiconductor teams a hardware-native AI platform for high-coverage verification and RTL development"
+              "quote": "SigmanticAI gives semiconductor teams a hardware-native AI platform for high-coverage verification and RTL development",
+              "source_content_hash": "fc10752c0d23bf09",
+              "quote_hash": "7bd7b6c286c7031e71d99464b2da2edd4b9a5161d9341295589452dd14a27db1"
             },
             {
               "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "14+ Specialist Agents collaborating on your VIP & IP"
+              "quote": "14+ Specialist Agents collaborating on your VIP & IP",
+              "source_content_hash": "fc10752c0d23bf09",
+              "quote_hash": "4cb78d5c9fda7bb812526591ba0ec4c50b31fc7d3a7d038e7493ae6d6a989ff4"
             },
             {
               "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "Compile → simulate → fix loops run automatically against your real EDA stack until tests pass and coverage closes."
+              "quote": "Compile → simulate → fix loops run automatically against your real EDA stack until tests pass and coverage closes.",
+              "source_content_hash": "fc10752c0d23bf09",
+              "quote_hash": "509771385008a272cc4921411c20520b4bbec3f3051274451bbdfecf5d11cf52"
             }
           ],
           "entity_id": null
@@ -152,7 +202,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7f894b9a2c7dde9a",
-              "quote": "getting 90%+ accuracy on the VerilogEval benchmark (NVIDIA framework)"
+              "quote": "getting 90%+ accuracy on the VerilogEval benchmark (NVIDIA framework)",
+              "source_content_hash": "bdf61d3038ab4c02",
+              "quote_hash": "52745dbe6000efadcdf9f7da494ed9568dcd4c18ee74d6db5eaf698d0ea2c076"
             }
           ]
         },
@@ -163,7 +215,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "50x Faster faster than manual VIP & IP development"
+              "quote": "50x Faster faster than manual VIP & IP development",
+              "source_content_hash": "fc10752c0d23bf09",
+              "quote_hash": "717b71aa52e2987c644689514e2a5164eec5b9d0130eeaf73b07fdf38edf86f0"
             }
           ]
         },
@@ -174,7 +228,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "14+ specialist agents run compile → simulate → fix loops until tests pass and coverage hits 90%+."
+              "quote": "14+ specialist agents run compile → simulate → fix loops until tests pass and coverage hits 90%+.",
+              "source_content_hash": "fc10752c0d23bf09",
+              "quote_hash": "f7f30bbf593e5ef4820a6b8b6d16e1e15af4428bd3a9efbdd53de6802a17e381"
             }
           ]
         }
@@ -192,7 +248,19 @@
           "所有关键业务信号均来自创始人自述，缺乏独立第三方验证或公开客户案例，存在过度承诺的风险。"
         ],
         "related_direction_id": "",
-        "sector": "半导体 EDA / AI 辅助硬件设计"
+        "sector": "半导体 EDA / AI 辅助硬件设计",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是半导体设计工具链的 AI 原生替代方案。SigmanticAI 以 Y Combinator 的种子轮融资为起点，其估值或融资依赖的已验证信号包括：在 NVIDIA VerilogEval 基准上达到 90%+ 准确率、完成从零到一的 RISC-V CPU 设计、以及获得首个付费客户。这些信号表明其技术具备初步的产品市场契合度，但证据边界仅限于创始人自述和基准测试结果，缺乏独立第三方验证或规模化商业部署的公开数据。",
+          "evidence_signals": [
+            "在 NVIDIA VerilogEval 基准测试中达到 90%+ 准确率",
+            "已使用该平台完成一个 RISC-V CPU 的端到端设计",
+            "已获得首个付费客户"
+          ],
+          "risks": [
+            "所有关键业务信号均来自创始人自述，缺乏独立第三方验证或公开客户案例，存在过度承诺的风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -200,73 +268,35 @@
           "target_kind": "product",
           "research_name": "SigmanticAI 硬件设计智能体平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "SigmanticAI gives semiconductor teams a hardware-native AI platform for high-coverage verification and RTL development"
-            },
-            {
-              "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "14+ Specialist Agents collaborating on your VIP & IP"
-            },
-            {
-              "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "Compile → simulate → fix loops run automatically against your real EDA stack until tests pass and coverage closes."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rohil Khare",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "Rohil Khare Co-Founder & CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tamzid Razzaque",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f24d7ec13b7b4a3c",
-              "quote": "Tamzid Razzaque Co-Founder & CTO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d06ceea5a84c2928",
-              "quote": "Y Combinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sahin Boydas",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d06ceea5a84c2928",
-              "quote": "Sahin Boydas"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -328,13 +358,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:44:33.324Z"
+      "published_at": "2026-07-26T14:44:33.324Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "SigmanticAI 硬件设计智能体平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Rohil Khare",
+            "Tamzid Razzaque"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-95341497f7ba9d83"
+      ],
+      "aggregation": {
+        "key": "EN-d387c8c96239d383|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-33f80150e4d9723b",
       "triggered_by_event_id": "EV-f0fee44c1dfdcb09",
       "as_of_date": "2026-07-04",
@@ -352,7 +412,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f36f0a9a7099248a",
-                "quote": "The company is led by Dr. Vishal Sikka, Co-founder and CEO, formerly CEO of Infosys and Executive Board Member at SAP in charge of all products and technology."
+                "quote": "The company is led by Dr. Vishal Sikka, Co-founder and CEO, formerly CEO of Infosys and Executive Board Member at SAP in charge of all products and technology.",
+                "source_content_hash": "2f3ab64f96763d7b",
+                "quote_hash": "ba4d67f11717962d6583f10a1b163d8ae9d5528dd3b9832a9f62801f429d75dc"
               }
             ],
             "entity_id": null
@@ -366,11 +428,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f36f0a9a7099248a",
-            "quote": "Hang Ten Systems, an enterprise AI services company, has raised $32 million in seed funding."
+            "quote": "Hang Ten Systems, an enterprise AI services company, has raised $32 million in seed funding.",
+            "source_content_hash": "2f3ab64f96763d7b",
+            "quote_hash": "3857e8ddfc7a00563e635468a8a0b0138b7915392300c27dab3ba78d43b170b4"
           },
           {
             "source_id": "FISRC-78e463a1a9f32f61",
-            "quote": "Hang Ten Systems, a Palo Alto, CA-based enterprise AI services company, raised $32M in Seed funding."
+            "quote": "Hang Ten Systems, a Palo Alto, CA-based enterprise AI services company, raised $32M in Seed funding.",
+            "source_content_hash": "78dc1368c2289711",
+            "quote_hash": "3f65587b1069742a31150ac6c1674cf265f75741144a9f9933e3f923d0d72297"
           }
         ]
       },
@@ -386,7 +452,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f36f0a9a7099248a",
-                "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors."
+                "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors.",
+                "source_content_hash": "2f3ab64f96763d7b",
+                "quote_hash": "ec217dcca5a56df09c6244e4cadf319d6bfd3fe9b0a4e6f5c1eea899d4be1702"
               }
             ],
             "entity_id": null
@@ -397,7 +465,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f36f0a9a7099248a",
-                "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors."
+                "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors.",
+                "source_content_hash": "2f3ab64f96763d7b",
+                "quote_hash": "ec217dcca5a56df09c6244e4cadf319d6bfd3fe9b0a4e6f5c1eea899d4be1702"
               }
             ],
             "entity_id": null
@@ -408,7 +478,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f36f0a9a7099248a",
-                "quote": "participation from a group of angel investors."
+                "quote": "participation from a group of angel investors.",
+                "source_content_hash": "2f3ab64f96763d7b",
+                "quote_hash": "38bab4645a670bf6b55622df9e9fa5188b9c2df7893642bd30a4769bdbe4944d"
               }
             ],
             "entity_id": null
@@ -417,7 +489,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-78e463a1a9f32f61",
-            "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors."
+            "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors.",
+            "source_content_hash": "78dc1368c2289711",
+            "quote_hash": "ec217dcca5a56df09c6244e4cadf319d6bfd3fe9b0a4e6f5c1eea899d4be1702"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f0fee44c1dfdcb09",
+            "round_original": "种子轮",
+            "amount": "$32 million",
+            "announced_at": "2026-06-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-78e463a1a9f32f61",
+                "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors.",
+                "source_content_hash": "78dc1368c2289711",
+                "quote_hash": "ec217dcca5a56df09c6244e4cadf319d6bfd3fe9b0a4e6f5c1eea899d4be1702"
+              }
+            ]
           }
         ]
       },
@@ -436,7 +529,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "Hang Ten offers a different operating model — software built, changed, and run at a fraction of the cost and time, on a continuous basis — with specialized capabilities in enterprise transformations, finance, HR, and new product development, supported by an expert FDE Bench, re-usable skills library, and agentic code generation."
+              "quote": "Hang Ten offers a different operating model — software built, changed, and run at a fraction of the cost and time, on a continuous basis — with specialized capabilities in enterprise transformations, finance, HR, and new product development, supported by an expert FDE Bench, re-usable skills library, and agentic code generation.",
+              "source_content_hash": "2f3ab64f96763d7b",
+              "quote_hash": "862d5803098010221d5e4669b6f89cec55a2c290628cee0e2962b4d7e5dd3059"
             }
           ],
           "entity_id": null
@@ -450,13 +545,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "Hang Ten is working with marquee customers across several industries, including Siemens Gamesa Renewable Energy and Fresenius on AI-native project delivery."
+              "quote": "Hang Ten is working with marquee customers across several industries, including Siemens Gamesa Renewable Energy and Fresenius on AI-native project delivery.",
+              "source_content_hash": "2f3ab64f96763d7b",
+              "quote_hash": "03cf13f3fa94606d9cc47b915c13c71ed3281a79af0509717d5030df83a05c28"
             },
             {
               "source_id": "FISRC-6a99f1ddf2078d59",
-              "quote": "We at SGRE are delighted to work with Hang Ten on several strategic initiatives."
+              "quote": "We at SGRE are delighted to work with Hang Ten on several strategic initiatives.",
+              "source_content_hash": "d3e8ce7671830cd2",
+              "quote_hash": "c690740ee0c5ddfbc848d8daa59b617b75b73b1dec72d4b8e813ba31ec39314b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Fresenius",
@@ -465,9 +565,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "Hang Ten is working with marquee customers across several industries, including Siemens Gamesa Renewable Energy and Fresenius on AI-native project delivery."
+              "quote": "Hang Ten is working with marquee customers across several industries, including Siemens Gamesa Renewable Energy and Fresenius on AI-native project delivery.",
+              "source_content_hash": "2f3ab64f96763d7b",
+              "quote_hash": "03cf13f3fa94606d9cc47b915c13c71ed3281a79af0509717d5030df83a05c28"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -481,9 +584,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-863f35cfa9fcd969",
-              "quote": "VianAI focused on enterprise AI applications and analytics tools to help businesses use AI in decision-making. Hang Ten Systems is targeting AI-native project delivery itself."
+              "quote": "VianAI focused on enterprise AI applications and analytics tools to help businesses use AI in decision-making. Hang Ten Systems is targeting AI-native project delivery itself.",
+              "source_content_hash": "d93dbac79c826bc3",
+              "quote_hash": "ae98b64ee0f175026c2c4f60cd7b942910b4acf6a62ce52fcd2cae398f8efd89"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -494,7 +600,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "Hang Ten Systems, an enterprise AI services company, has raised $32 million in seed funding."
+              "quote": "Hang Ten Systems, an enterprise AI services company, has raised $32 million in seed funding.",
+              "source_content_hash": "2f3ab64f96763d7b",
+              "quote_hash": "3857e8ddfc7a00563e635468a8a0b0138b7915392300c27dab3ba78d43b170b4"
             }
           ]
         }
@@ -513,7 +621,20 @@
           "传统IT服务巨头（如Infosys）正在通过与Anthropic和OpenAI等公司合作适应AI时代，它们拥有现有的企业关系和成熟的交付运营体系，Hang Ten缺乏全球服务巨头的客户基础"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI服务"
+        "sector": "企业AI服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI能否吃掉传统IT服务公司赖以盈利的软件定制化、集成和维护工作。Hang Ten Systems的估值依赖于一个已验证信号——公司在成立仅一个月后已拥有付费客户（Siemens Gamesa Renewable Energy和Fresenius），且创始人Vishal Sikka在SAP和Infosys的履历降低了'能否进入大企业采购名单'的门槛。Mayfield明确表示该公司的AI原生模式通过项目积累的杠杆效应而非人头增长来扩展，这意味着投资者期望其服务经济学更像软件而非传统人力外包。然而，目前来源未披露合同规模、部署范围、收入、利润率或项目持续时间，无法判断这些是试点项目还是规模化合作。",
+          "evidence_signals": [
+            "公司成立仅一个月即拥有付费客户，包括Siemens Gamesa Renewable Energy和Fresenius",
+            "创始人Vishal Sikka曾任Infosys CEO和SAP执行董事会成员，具备企业软件和服务领域的深厚背景",
+            "Yahoo联合创始人Jerry Yang加入董事会，增强了公司在企业界的可信度"
+          ],
+          "risks": [
+            "来源未披露合同规模、部署范围、收入、利润率或项目持续时间，无法判断现有客户是试点项目还是规模化合作，这决定了公司是真正的服务挑战者还是创始人主导的实验",
+            "传统IT服务巨头（如Infosys）正在通过与Anthropic和OpenAI等公司合作适应AI时代，它们拥有现有的企业关系和成熟的交付运营体系，Hang Ten缺乏全球服务巨头的客户基础"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -521,108 +642,56 @@
           "target_kind": "product",
           "research_name": "AI原生企业服务",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "Hang Ten offers a different operating model — software built, changed, and run at a fraction of the cost and time, on a continuous basis — with specialized capabilities in enterprise transformations, finance, HR, and new product development, supported by an expert FDE Bench, re-usable skills library, and agentic code generation."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dr. Vishal Sikka",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "The company is led by Dr. Vishal Sikka, Co-founder and CEO, formerly CEO of Infosys and Executive Board Member at SAP in charge of all products and technology."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mayfield",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Aramco Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "一组天使投资人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "participation from a group of angel investors."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Siemens Gamesa Renewable Energy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "Hang Ten is working with marquee customers across several industries, including Siemens Gamesa Renewable Energy and Fresenius on AI-native project delivery."
-            },
-            {
-              "source_id": "FISRC-6a99f1ddf2078d59",
-              "quote": "We at SGRE are delighted to work with Hang Ten on several strategic initiatives."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Fresenius",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f36f0a9a7099248a",
-              "quote": "Hang Ten is working with marquee customers across several industries, including Siemens Gamesa Renewable Energy and Fresenius on AI-native project delivery."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Vianai Systems",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-863f35cfa9fcd969",
-              "quote": "VianAI focused on enterprise AI applications and analytics tools to help businesses use AI in decision-making. Hang Ten Systems is targeting AI-native project delivery itself."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -696,10 +765,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:44:17.698Z"
+      "published_at": "2026-07-26T14:44:17.698Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI原生企业服务"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Dr. Vishal Sikka"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f0fee44c1dfdcb09"
+      ],
+      "aggregation": {
+        "key": "EN-0cc3af265406c202|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

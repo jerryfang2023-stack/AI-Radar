@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-06",
     "generated_at": "2026-07-27T05:15:26.385Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 8,
       "auto_published": 5,
       "blocked": 3,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-dcf52fdf41da5d16",
       "triggered_by_event_id": "EV-618e5729145025e4",
       "as_of_date": "2026-06-06",
@@ -35,10 +36,12 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "Former GitHub CEO Thomas Dohmke today announced the launch of Entire"
+                "quote": "Former GitHub CEO Thomas Dohmke today announced the launch of Entire",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "42618b86beb6fbbcf2a79c2d587eb66f97087473e2d69e3d3a489588d07cec6d"
               }
             ],
-            "entity_id": null
+            "entity_id": "EN-45cbca5f78f1ef44"
           }
         ],
         "team_size": {
@@ -47,18 +50,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "Entire is a remote-first globally distributed organization with 15 employees"
+              "quote": "Entire is a remote-first globally distributed organization with 15 employees",
+              "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+              "quote_hash": "3086c4ed6d6e12d5b7d434971b47bbcaa4d9cb2738dd421b600c017dc699e2ac"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-62dc6d17f09030c0",
-            "quote": "Former GitHub CEO Thomas Dohmke today announced the launch of Entire , a new developer platform designed for human-agent collaboration"
+            "quote": "Former GitHub CEO Thomas Dohmke today announced the launch of Entire , a new developer platform designed for human-agent collaboration",
+            "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+            "quote_hash": "797a4e0eae5c79c6ecd9f0e13aafa70823a8924f21c8dfe530e5bd21afa44c1b"
           },
           {
             "source_id": "FISRC-248d12182a4372e0",
-            "quote": "Entire has 15 employees and operates as a fully remote company, with team members who previously built developer tools at GitHub and Atlassian."
+            "quote": "Entire has 15 employees and operates as a fully remote company, with team members who previously built developer tools at GitHub and Atlassian.",
+            "source_content_hash": "f8ddf93838bfe232",
+            "quote_hash": "e1d65b07a6482f0e6251bca59ac63378c974140799656ae06b3005c9fe7fb02c"
           }
         ]
       },
@@ -74,7 +83,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "The round was led by Felicis"
+                "quote": "The round was led by Felicis",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "318662464e573012c5a21939d03e2b0430b8aa6f9c675f058ba7f4fde12777b0"
               }
             ],
             "entity_id": null
@@ -85,7 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
+                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
               }
             ],
             "entity_id": null
@@ -96,7 +109,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
+                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
               }
             ],
             "entity_id": null
@@ -107,7 +122,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
+                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
               }
             ],
             "entity_id": null
@@ -118,7 +135,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
+                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
               }
             ],
             "entity_id": null
@@ -129,7 +148,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
+                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
               }
             ],
             "entity_id": null
@@ -140,7 +161,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
+                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
               }
             ],
             "entity_id": null
@@ -151,29 +174,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Gergely Orosz",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-62dc6d17f09030c0",
-                "quote": "Entire is further backed by a slate of international investors, including Gergely Orosz (The Pragmatic Engineer)"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Harry Stebbings",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-b0c409eacf9721ff",
-                "quote": "Other investors in the seed round include Madrona, M12, Basis Set, Harry Stebbings, Jerry Yang, and Datadog founder and CEO Olivier Pomel."
+                "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
               }
             ],
             "entity_id": null
@@ -182,11 +185,79 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-62dc6d17f09030c0",
-            "quote": "backed by a landmark $60 million seed round at $300 million valuation"
+            "quote": "backed by a landmark $60 million seed round at $300 million valuation",
+            "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+            "quote_hash": "96830d3f7af30abe427a08ec16913c5d6a15e1e43d4c2fc632d7aa9770976bf1"
           },
           {
             "source_id": "FISRC-b0c409eacf9721ff",
-            "quote": "The startup, Entire , has raised $60 million at a $300 million valuation."
+            "quote": "The startup, Entire , has raised $60 million at a $300 million valuation.",
+            "source_content_hash": "083c4b70ba17946b",
+            "quote_hash": "97916addf9c7f40912cfa6ff1a0227c79fbe220c93d716749779b84d9f12db7f"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [
+          {
+            "name": "Gergely Orosz",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-62dc6d17f09030c0",
+                "quote": "Entire is further backed by a slate of international investors, including Gergely Orosz (The Pragmatic Engineer)",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "e1bb6bf6a1fb99395cbed7f3c6d9716506e83e6d47e4b6a3934e2998ce202c4c"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Harry Stebbings",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b0c409eacf9721ff",
+                "quote": "Other investors in the seed round include Madrona, M12, Basis Set, Harry Stebbings, Jerry Yang, and Datadog founder and CEO Olivier Pomel.",
+                "source_content_hash": "083c4b70ba17946b",
+                "quote_hash": "e3f9243096e640917f2490e1aaf350579dd7749d53aecea42e5e080bd4b02dac"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-618e5729145025e4",
+            "round_original": "种子轮",
+            "amount": "6000万美元",
+            "announced_at": "2026-02-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-62dc6d17f09030c0",
+                "quote": "backed by a landmark $60 million seed round at $300 million valuation",
+                "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+                "quote_hash": "96830d3f7af30abe427a08ec16913c5d6a15e1e43d4c2fc632d7aa9770976bf1"
+              },
+              {
+                "source_id": "FISRC-b0c409eacf9721ff",
+                "quote": "The startup, Entire , has raised $60 million at a $300 million valuation.",
+                "source_content_hash": "083c4b70ba17946b",
+                "quote_hash": "97916addf9c7f40912cfa6ff1a0227c79fbe220c93d716749779b84d9f12db7f"
+              }
+            ]
           }
         ]
       },
@@ -203,11 +274,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "Entire is releasing its first open-source product today: Checkpoints , a new CLI tool that automatically captures AI agent context*— reasoning, prompts, and decisions —*on every Git commit."
+              "quote": "Entire is releasing its first open-source product today: Checkpoints , a new CLI tool that automatically captures AI agent context*— reasoning, prompts, and decisions —*on every Git commit.",
+              "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+              "quote_hash": "239741442e3cec1892bae50903a3b74fbdb17b8f100acae0195ece7a9015df09"
             },
             {
               "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "With Checkpoints , every agent-generated commit is paired with a structured checkpoint that records the full session context, including transcripts, prompts, developers can review history, navigate agent context, and search the record of code produced by agents through an AI contribution graph."
+              "quote": "With Checkpoints , every agent-generated commit is paired with a structured checkpoint that records the full session context, including transcripts, prompts, developers can review history, navigate agent context, and search the record of code produced by agents through an AI contribution graph.",
+              "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+              "quote_hash": "f9fbfb714b1467836511bd2b2238a97fe1df369e406efa70f2bb5f8b435728c1"
             }
           ],
           "entity_id": null
@@ -223,7 +298,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "at $300 million valuation"
+              "quote": "at $300 million valuation",
+              "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+              "quote_hash": "58cf7818d26c0ef9cd37a9db4dead6061337c2559a92b167f3d648c0078f3991"
             }
           ]
         },
@@ -234,7 +311,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "Entire is a remote-first globally distributed organization with 15 employees"
+              "quote": "Entire is a remote-first globally distributed organization with 15 employees",
+              "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+              "quote_hash": "3086c4ed6d6e12d5b7d434971b47bbcaa4d9cb2738dd421b600c017dc699e2ac"
             }
           ]
         },
@@ -245,7 +324,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "The company plans to expand rapidly over the coming months as it grows to over 30 engineers and hundreds of agents."
+              "quote": "The company plans to expand rapidly over the coming months as it grows to over 30 engineers and hundreds of agents.",
+              "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+              "quote_hash": "9808d156228297444d7e6697e247ef865d1833162b504002ae2e85b2ace9e74c"
             }
           ]
         }
@@ -257,7 +338,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "Just like when automotive companies replaced the traditional, craft-based production system with the moving assembly line, we must now reimagine the software development lifecycle for a world where machines are the primary producers of code. This is the purpose of Entire: to build the world's next developer platform, where agents and humans collaborate, learn and ship together."
+              "quote": "Just like when automotive companies replaced the traditional, craft-based production system with the moving assembly line, we must now reimagine the software development lifecycle for a world where machines are the primary producers of code. This is the purpose of Entire: to build the world's next developer platform, where agents and humans collaborate, learn and ship together.",
+              "source_content_hash": "63a0cf1a1327e669ba26e2def048000ee108a7fbef118fc3d84ae0d1de76e052",
+              "quote_hash": "c54c55661a980b1c8b6e22743c8f6a592d211f3d4a105d2cc4a4639a791e3af2"
             }
           ]
         }
@@ -274,7 +357,19 @@
           "Entire 目前仅发布了一个开源 CLI 工具，其核心的 git 兼容数据库、通用语义推理层和 AI 原生用户界面等平台组件尚未交付，产品愿景与当前可交付成果之间存在巨大差距。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "开发者工具"
+        "sector": "开发者工具",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是软件开发生命周期从“人类手动编写”向“人类编排 AI 智能体舰队”的范式转移。本轮 6000 万美元种子轮融资及 3 亿美元估值，高度依赖创始人 Thomas Dohmke 在 GitHub 领导 Copilot 并将其扩展至超过 1.8 亿开发者的已验证履历，以及 Felicis 所称的“开发者工具史上最大种子轮”的稀缺性信号。判断的证据边界在于：目前仅发布了首个开源 CLI 工具 Checkpoints，支持 Claude Code 和 Gemini CLI，更广泛的平台尚未推出，产品市场匹配仍待验证。",
+          "evidence_signals": [
+            "创始人 Thomas Dohmke 曾担任 GitHub CEO，领导 Copilot 成长为数十亿美元业务，并将平台扩展至超过 1.8 亿开发者。",
+            "已发布首个开源产品 Checkpoints，支持 Anthropic 的 Claude Code 和 Google 的 Gemini CLI。",
+            "种子轮融资 6000 万美元，估值 3 亿美元，被 Felicis 称为开发者工具史上最大种子轮。"
+          ],
+          "risks": [
+            "Entire 目前仅发布了一个开源 CLI 工具，其核心的 git 兼容数据库、通用语义推理层和 AI 原生用户界面等平台组件尚未交付，产品愿景与当前可交付成果之间存在巨大差距。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -282,160 +377,84 @@
           "target_kind": "product",
           "research_name": "Checkpoints",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "Entire is releasing its first open-source product today: Checkpoints , a new CLI tool that automatically captures AI agent context*— reasoning, prompts, and decisions —*on every Git commit."
-            },
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "With Checkpoints , every agent-generated commit is paired with a structured checkpoint that records the full session context, including transcripts, prompts, developers can review history, navigate agent context, and search the record of code produced by agents through an AI contribution graph."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Thomas Dohmke",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "Former GitHub CEO Thomas Dohmke today announced the launch of Entire"
-            }
-          ]
+          "canonical_entity_id": "EN-45cbca5f78f1ef44",
+          "canonical_name": "Thomas Dohmke"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Felicis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "The round was led by Felicis"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Madrona",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "M12",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Basis Set",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "20VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cherry Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Picus Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Global Founders Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Gergely Orosz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62dc6d17f09030c0",
-              "quote": "Entire is further backed by a slate of international investors, including Gergely Orosz (The Pragmatic Engineer)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Harry Stebbings",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b0c409eacf9721ff",
-              "quote": "Other investors in the seed round include Madrona, M12, Basis Set, Harry Stebbings, Jerry Yang, and Datadog founder and CEO Olivier Pomel."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -497,13 +516,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:27:16.321Z"
+      "published_at": "2026-07-26T14:27:16.321Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Checkpoints"
+          ]
+        },
+        "founders": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-618e5729145025e4"
+      ],
+      "aggregation": {
+        "key": "EN-b4a139ced5659a4e|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-8ecbb1a794fc8870",
       "triggered_by_event_id": "EV-386c205c8bbf537d",
       "as_of_date": "2026-06-06",
@@ -521,11 +567,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7eda828d4238815a",
-                "quote": "Hugging Face was founded in 2016 by French entrepreneurs Clément Delangue, Julien Chaumond, and Thomas Wolf"
+                "quote": "Hugging Face was founded in 2016 by French entrepreneurs Clément Delangue, Julien Chaumond, and Thomas Wolf",
+                "source_content_hash": "7b9abba5d20c0d6e",
+                "quote_hash": "dc063bc811d868879b945d00aca83218afd4bc21bf3c58f044f32d2de8df32d5"
               },
               {
                 "source_id": "FISRC-7eda828d4238815a",
-                "quote": "Delangue serves as the company’s CEO"
+                "quote": "Delangue serves as the company’s CEO",
+                "source_content_hash": "7b9abba5d20c0d6e",
+                "quote_hash": "05a8943c767b4ae45a586682897dc12fa505766424ba6984ad2992df7ca17289"
               }
             ],
             "entity_id": null
@@ -536,7 +586,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7eda828d4238815a",
-                "quote": "Chaumond is the chief technology officer"
+                "quote": "Chaumond is the chief technology officer",
+                "source_content_hash": "7b9abba5d20c0d6e",
+                "quote_hash": "64ed34b61fe2cdce4353a9593aadd8ab429e2d4650d332518344cc775d7fc79f"
               }
             ],
             "entity_id": null
@@ -547,7 +599,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7eda828d4238815a",
-                "quote": "Wolf leads the company’s open-source and science teams"
+                "quote": "Wolf leads the company’s open-source and science teams",
+                "source_content_hash": "7b9abba5d20c0d6e",
+                "quote_hash": "7aecfb4b21a1a3c625778daa88e0e2aba98e41413ae0192b2424bd0eb32cecdf"
               }
             ],
             "entity_id": null
@@ -559,23 +613,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7eda828d4238815a",
-              "quote": "Hugging Face currently has 170 employees"
+              "quote": "Hugging Face currently has 170 employees",
+              "source_content_hash": "7b9abba5d20c0d6e",
+              "quote_hash": "f464b69081c8045fcdc5921735f154265342a9555bbaf06eefaa14e685a3b074"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-4d10beb43688e130",
-            "quote": "Hugging Face operates a collaborative AI development platform hosting over 2 million models and 550,000 datasets"
+            "quote": "Hugging Face operates a collaborative AI development platform hosting over 2 million models and 550,000 datasets",
+            "source_content_hash": "373c87b41ddb8126",
+            "quote_hash": "c334e5baa8ed79c72af3648115ec1dba602726fdf4698623ce8699cc5ee63488"
           },
           {
             "source_id": "FISRC-7eda828d4238815a",
-            "quote": "a New York-based company providing open-source A.I. developer platforms"
+            "quote": "a New York-based company providing open-source A.I. developer platforms",
+            "source_content_hash": "7b9abba5d20c0d6e",
+            "quote_hash": "01bdf59fa25e66de8ccdd97d4c348c180ba22844cea5124cf30613c746b3a761"
           }
         ]
       },
       "financing": {
-        "round": "Series D",
+        "round": "D轮",
         "amount": "$235 million",
         "total_raised": "$400 million",
         "announced_at": "2023-08-24",
@@ -586,18 +646,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7eda828d4238815a",
-                "quote": "a series D funding round led by Salesforce"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Betaworks Ventures",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3765d5d1c13d4da7",
-                "quote": "Hugging Face has raised a total of $395.2 million to date, with its first ever check coming from Betaworks Ventures"
+                "quote": "a series D funding round led by Salesforce",
+                "source_content_hash": "7b9abba5d20c0d6e",
+                "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
               }
             ],
             "entity_id": null
@@ -606,7 +657,48 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-4d10beb43688e130",
-            "quote": "Hugging Face closed a $235 million Series D in August 2023, bringing total funding to approximately $400 million and establishing a $4.5 billion valuation"
+            "quote": "Hugging Face closed a $235 million Series D in August 2023, bringing total funding to approximately $400 million and establishing a $4.5 billion valuation",
+            "source_content_hash": "373c87b41ddb8126",
+            "quote_hash": "9fa4b63235595b2f7f34a544d8ef9828ca215a3d34568ae9ff91165f163fb8b6"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "other_round_investors": [
+          {
+            "name": "Betaworks Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3765d5d1c13d4da7",
+                "quote": "Hugging Face has raised a total of $395.2 million to date, with its first ever check coming from Betaworks Ventures",
+                "source_content_hash": "b09503dc9505b74d",
+                "quote_hash": "ccd7c25814dea7367afa9a462998fdc3d29e555f64a75f5ab7e72dafe194eb74"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮领投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-386c205c8bbf537d",
+            "round_original": "Series D",
+            "amount": "$235 million",
+            "announced_at": "2023-08-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4d10beb43688e130",
+                "quote": "Hugging Face closed a $235 million Series D in August 2023, bringing total funding to approximately $400 million and establishing a $4.5 billion valuation",
+                "source_content_hash": "373c87b41ddb8126",
+                "quote_hash": "9fa4b63235595b2f7f34a544d8ef9828ca215a3d34568ae9ff91165f163fb8b6"
+              }
+            ]
           }
         ]
       },
@@ -623,7 +715,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The Model Hub hosts approximately 2 million AI models spanning text, image, video, and audio—all compatible with PyTorch, TensorFlow, and JAX."
+              "quote": "The Model Hub hosts approximately 2 million AI models spanning text, image, video, and audio—all compatible with PyTorch, TensorFlow, and JAX.",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "123e236d9bc15624f2cafd68ae4cb1b29fa90edb726d9a4eeeed9704763ce855"
             }
           ],
           "entity_id": null
@@ -641,7 +735,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The Enterprise Hub adds private repositories with granular access controls, single sign-on (SSO) integration, team analytics dashboards, and significantly higher storage and bandwidth limits."
+              "quote": "The Enterprise Hub adds private repositories with granular access controls, single sign-on (SSO) integration, team analytics dashboards, and significantly higher storage and bandwidth limits.",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "2e0e5cb0426a864eba54addadd12f6aaf7222c4a95a92e61163d8375f5afccf3"
             }
           ],
           "entity_id": null
@@ -659,7 +755,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "AutoTrain removes the coding barrier for model training. Users upload datasets and AutoTrain handles preprocessing, model selection, hyperparameter tuning, and deployment"
+              "quote": "AutoTrain removes the coding barrier for model training. Users upload datasets and AutoTrain handles preprocessing, model selection, hyperparameter tuning, and deployment",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "e04977114f627454c3e159a1cace6eb84a8632d8173c01f08855aef21df2a861"
             }
           ],
           "entity_id": null
@@ -673,9 +771,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
+              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "a1f8dbcc336fede9f411e898de3e258624c4446ed12d69546549546ec3aca891"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         },
         {
           "name": "Meta",
@@ -684,9 +785,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
+              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "a1f8dbcc336fede9f411e898de3e258624c4446ed12d69546549546ec3aca891"
             }
-          ]
+          ],
+          "entity_id": "EN-ea3bd73e2b506e00"
         },
         {
           "name": "Microsoft",
@@ -695,9 +799,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
+              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "a1f8dbcc336fede9f411e898de3e258624c4446ed12d69546549546ec3aca891"
             }
-          ]
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
         },
         {
           "name": "Salesforce",
@@ -706,9 +813,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
+              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "a1f8dbcc336fede9f411e898de3e258624c4446ed12d69546549546ec3aca891"
             }
-          ]
+          ],
+          "entity_id": "EN-3ccbd9105a45d8fc"
         },
         {
           "name": "Kustomer",
@@ -717,9 +827,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The Kustomer case study demonstrates the platform's production capabilities. Kustomer deployed AI models for customer service automation, achieving accelerated implementation from prototype to production"
+              "quote": "The Kustomer case study demonstrates the platform's production capabilities. Kustomer deployed AI models for customer service automation, achieving accelerated implementation from prototype to production",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "aa9693c7779228b7ffa2957579e567670f457442d9177bdd67cc17445e58a897"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -733,9 +846,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3765d5d1c13d4da7",
-              "quote": "Those ahead of it are OpenAI ($11.3 billion), Anthropic ($1.6 billion)"
+              "quote": "Those ahead of it are OpenAI ($11.3 billion), Anthropic ($1.6 billion)",
+              "source_content_hash": "b09503dc9505b74d",
+              "quote_hash": "c96f20d4aa4328860b6446990fdd8b766cc8b26f6dadb57474545a581f339538"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "Stability AI",
@@ -747,9 +863,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7eda828d4238815a",
-              "quote": "The colossal valuation puts Hugging Face among the highest-valued A.I. startups in the market along with Anthropic and Stability AI"
+              "quote": "The colossal valuation puts Hugging Face among the highest-valued A.I. startups in the market along with Anthropic and Stability AI",
+              "source_content_hash": "7b9abba5d20c0d6e",
+              "quote_hash": "c3eb66d2ca2320209c69a5a3a3ce53fe2c0521891600d13ccdc4f9ffe93d074c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -760,7 +879,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "hosting over 2 million models"
+              "quote": "hosting over 2 million models",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "a3512a467d1c9023861016ba30ab84578eb03c691cf3e966419c0410864765fc"
             }
           ]
         },
@@ -771,7 +892,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "550,000 datasets"
+              "quote": "550,000 datasets",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "214e205abc82a241094e1396b30466bcb429890cd5d9cf301a211da615dc36d1"
             }
           ]
         },
@@ -782,7 +905,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7eda828d4238815a",
-              "quote": "its platform now hosts more than 50,000 organizations"
+              "quote": "its platform now hosts more than 50,000 organizations",
+              "source_content_hash": "7b9abba5d20c0d6e",
+              "quote_hash": "cccdde1229bec543f520ef2d34a95fc29854ec03b48c07fa8f1db8dc7408797b"
             }
           ]
         },
@@ -793,7 +918,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-303936a1ea90bed8",
-              "quote": "We're on track to 5x our revenue this year with over 10,000 customers today."
+              "quote": "We're on track to 5x our revenue this year with over 10,000 customers today.",
+              "source_content_hash": "510c592bd9924ed7",
+              "quote_hash": "947b0418afdb551ea172e399c04ea3289bea0c7b73d6b2541068b68cb342f2f4"
             }
           ]
         },
@@ -804,7 +931,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7eda828d4238815a",
-              "quote": "Hugging Face currently has 170 employees"
+              "quote": "Hugging Face currently has 170 employees",
+              "source_content_hash": "7b9abba5d20c0d6e",
+              "quote_hash": "f464b69081c8045fcdc5921735f154265342a9555bbaf06eefaa14e685a3b074"
             }
           ]
         },
@@ -815,7 +944,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The company's valuation jumped from $2 billion in 2022 to $4.5 billion in 2023—a 2.25x increase in just one year."
+              "quote": "The company's valuation jumped from $2 billion in 2022 to $4.5 billion in 2023—a 2.25x increase in just one year.",
+              "source_content_hash": "373c87b41ddb8126",
+              "quote_hash": "4f09c722593eb8e4564fc5ecba48ec93ecb7a54877531f087f4af9c3894c8a77"
             }
           ]
         },
@@ -826,7 +957,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-303936a1ea90bed8",
-              "quote": "We're on track to 5x our revenue this year"
+              "quote": "We're on track to 5x our revenue this year",
+              "source_content_hash": "510c592bd9924ed7",
+              "quote_hash": "56c5fb79ee3ee606054c1c11608cae7b141a6756426f7a3e5b16ec9f9ec2acfe"
             }
           ]
         }
@@ -838,7 +971,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3765d5d1c13d4da7",
-              "quote": "Hugging Face intends to be the open platform that empowers this paradigm shift."
+              "quote": "Hugging Face intends to be the open platform that empowers this paradigm shift.",
+              "source_content_hash": "b09503dc9505b74d",
+              "quote_hash": "267ff68a5225f4814b469d9c0b6a674c70eba5820a116bca7c063ab1c083071e"
             }
           ]
         },
@@ -848,7 +983,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-303936a1ea90bed8",
-              "quote": "We're going to use this money to really double down on the team, hire more great people, and really double down on our investment in open source AI and the collaboration features of our platform."
+              "quote": "We're going to use this money to really double down on the team, hire more great people, and really double down on our investment in open source AI and the collaboration features of our platform.",
+              "source_content_hash": "510c592bd9924ed7",
+              "quote_hash": "19175db2dfb1662223611b05dadbbf4936a954ea32da9f6f6beed6ad81bdd34b"
             }
           ]
         },
@@ -858,7 +995,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7eda828d4238815a",
-              "quote": "My priority for the next month? Hiring, hiring, hiring with a big focus on diversity!"
+              "quote": "My priority for the next month? Hiring, hiring, hiring with a big focus on diversity!",
+              "source_content_hash": "7b9abba5d20c0d6e",
+              "quote_hash": "8fd798ba298e0212ab38d871629283ad339cf8102224ed805215b8b776757a7e"
             }
           ]
         },
@@ -868,7 +1007,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-303936a1ea90bed8",
-              "quote": "We're on track to 5x our revenue this year with over 10,000 customers today."
+              "quote": "We're on track to 5x our revenue this year with over 10,000 customers today.",
+              "source_content_hash": "510c592bd9924ed7",
+              "quote_hash": "947b0418afdb551ea172e399c04ea3289bea0c7b73d6b2541068b68cb342f2f4"
             }
           ]
         }
@@ -889,7 +1030,23 @@
           "平台托管社区贡献模型存在恶意代码执行的安全风险，可能影响企业客户信任"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施与MLOps平台"
+        "sector": "AI基础设施与MLOps平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Hugging Face作为开源AI基础设施层的“平台化”地位——它正在成为AI模型分发的默认渠道。本轮估值较上年增长2.25倍至45亿美元，依据是平台已托管超过200万个模型、拥有超过1万家客户且收入年增速达5倍。所有参投方（Google、Amazon、Nvidia等）均为平台用户，验证了其作为行业基础设施的不可替代性。但估值超过年化收入的100倍，且公司未公开披露经审计的财务数据，存在估值泡沫风险。",
+          "evidence_signals": [
+            "平台托管超过200万个模型和55万个数据集，形成强大的网络效应",
+            "超过50,000个组织和10,000家客户使用平台",
+            "收入年增速达5倍",
+            "所有Series D投资方均为平台活跃用户，已共享超过1,000个开放模型",
+            "估值从2022年20亿美元跃升至2023年45亿美元"
+          ],
+          "risks": [
+            "估值超过年化收入的100倍，在缺乏公开财务数据的情况下存在估值泡沫风险",
+            "开源模型的商业化变现路径尚未完全验证，企业付费转化率不透明",
+            "平台托管社区贡献模型存在恶意代码执行的安全风险，可能影响企业客户信任"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -897,199 +1054,105 @@
           "target_kind": "product",
           "research_name": "Model Hub",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The Model Hub hosts approximately 2 million AI models spanning text, image, video, and audio—all compatible with PyTorch, TensorFlow, and JAX."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Enterprise Hub",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The Enterprise Hub adds private repositories with granular access controls, single sign-on (SSO) integration, team analytics dashboards, and significantly higher storage and bandwidth limits."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AutoTrain",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "AutoTrain removes the coding barrier for model training. Users upload datasets and AutoTrain handles preprocessing, model selection, hyperparameter tuning, and deployment"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Clément Delangue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7eda828d4238815a",
-              "quote": "Hugging Face was founded in 2016 by French entrepreneurs Clément Delangue, Julien Chaumond, and Thomas Wolf"
-            },
-            {
-              "source_id": "FISRC-7eda828d4238815a",
-              "quote": "Delangue serves as the company’s CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Julien Chaumond",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7eda828d4238815a",
-              "quote": "Chaumond is the chief technology officer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Thomas Wolf",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7eda828d4238815a",
-              "quote": "Wolf leads the company’s open-source and science teams"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Salesforce Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7eda828d4238815a",
-              "quote": "a series D funding round led by Salesforce"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Betaworks Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3765d5d1c13d4da7",
-              "quote": "Hugging Face has raised a total of $395.2 million to date, with its first ever check coming from Betaworks Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
-            }
-          ]
+          "canonical_name": "Google"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Meta",
           "canonical_entity_id": "EN-ea3bd73e2b506e00",
-          "canonical_name": "Meta",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
-            }
-          ]
+          "canonical_name": "Meta"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Microsoft",
           "canonical_entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
-            }
-          ]
+          "canonical_name": "Microsoft"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Salesforce",
           "canonical_entity_id": "EN-3ccbd9105a45d8fc",
-          "canonical_name": "Salesforce",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The platform serves enterprise customers—including Google, Meta, Microsoft, and Salesforce"
-            }
-          ]
+          "canonical_name": "Salesforce"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Kustomer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4d10beb43688e130",
-              "quote": "The Kustomer case study demonstrates the platform's production capabilities. Kustomer deployed AI models for customer service automation, achieving accelerated implementation from prototype to production"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3765d5d1c13d4da7",
-              "quote": "Those ahead of it are OpenAI ($11.3 billion), Anthropic ($1.6 billion)"
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Stability AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7eda828d4238815a",
-              "quote": "The colossal valuation puts Hugging Face among the highest-valued A.I. startups in the market along with Anthropic and Stability AI"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1163,13 +1226,46 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:26:23.702Z"
+      "published_at": "2026-07-26T14:26:23.702Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AutoTrain",
+            "Enterprise Hub",
+            "Model Hub"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Clément Delangue",
+            "Julien Chaumond",
+            "Thomas Wolf"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-386c205c8bbf537d"
+      ],
+      "aggregation": {
+        "key": "EN-e3ce9cc5efa9354c|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-21706f7253ef0a36",
       "triggered_by_event_id": "EV-e579af588ad8cf64",
       "as_of_date": "2026-06-06",
@@ -1187,7 +1283,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e329a4acc969b305",
-                "quote": "“Our mission is to make Earth data universally accessible and actionable through AI,” stated Nathaniel Manning, CEO and cofounder of LGND."
+                "quote": "“Our mission is to make Earth data universally accessible and actionable through AI,” stated Nathaniel Manning, CEO and cofounder of LGND.",
+                "source_content_hash": "210e490bb765e87a",
+                "quote_hash": "9fb1717bd337aa5721c8461d436acf27e8a9be4f2448a34565868e8f17f5d1ef"
               }
             ],
             "entity_id": null
@@ -1198,7 +1296,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e329a4acc969b305",
-                "quote": "Bruno Sánchez–Andrade Nuño, LGND's Chief Science Officer and cofounder"
+                "quote": "Bruno Sánchez–Andrade Nuño, LGND's Chief Science Officer and cofounder",
+                "source_content_hash": "210e490bb765e87a",
+                "quote_hash": "13dddeafd3cf5d3d9ffe25ada253f3449fb469c03a163568ef49a624ff4856f0"
               }
             ],
             "entity_id": null
@@ -1209,7 +1309,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-49be44458fbd1acd",
-                "quote": "Dan Hammer is the Co-founder and chief product officer at LGND."
+                "quote": "Dan Hammer is the Co-founder and chief product officer at LGND.",
+                "source_content_hash": "ac72613135aa83d6",
+                "quote_hash": "d74aabf0ef9061b5cfb1a3825ebf6de96617215fd23b37efc1255ab43d5058ab"
               }
             ],
             "entity_id": null
@@ -1223,11 +1325,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e329a4acc969b305",
-            "quote": "LGND AI, a groundbreaking company dedicated to innovating the interaction between humans, AI, and Earth's data"
+            "quote": "LGND AI, a groundbreaking company dedicated to innovating the interaction between humans, AI, and Earth's data",
+            "source_content_hash": "210e490bb765e87a",
+            "quote_hash": "a7948102d1d09852396d01015ed12d19cb618926a29e30b3056e1a6a3c61af0a"
           },
           {
             "source_id": "FISRC-49be44458fbd1acd",
-            "quote": "LGND is building the infrastructure that makes Earth data usable at scale."
+            "quote": "LGND is building the infrastructure that makes Earth data usable at scale.",
+            "source_content_hash": "ac72613135aa83d6",
+            "quote_hash": "7d91433cf4a444ebbc9c870a891d0c049ef7d2f782d132688f27bbabb4eabd0e"
           }
         ]
       },
@@ -1243,11 +1349,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e329a4acc969b305",
-                "quote": "This financing round, primarily spearheaded by Javelin Venture Partners"
+                "quote": "This financing round, primarily spearheaded by Javelin Venture Partners",
+                "source_content_hash": "210e490bb765e87a",
+                "quote_hash": "6b4190812be670b048c5bf400c61b10da89037300282a9578a16c81749eef67a"
               },
               {
                 "source_id": "FISRC-3ac522c61ae63836",
-                "quote": "backed by a $9M seed round led by Javelin Venture Partners"
+                "quote": "backed by a $9M seed round led by Javelin Venture Partners",
+                "source_content_hash": "fe7a80cd1e0ecf32",
+                "quote_hash": "23164901a8f8e1d14bab16c9f2bd02fa3a579a07f1902827f4dee31829a25f1e"
               }
             ],
             "entity_id": null
@@ -1258,7 +1368,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-295efcf234fa6b4b",
-                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
+                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+                "source_content_hash": "1af3a3688c6f556f",
+                "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
               }
             ],
             "entity_id": null
@@ -1269,7 +1381,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-295efcf234fa6b4b",
-                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
+                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+                "source_content_hash": "1af3a3688c6f556f",
+                "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
               }
             ],
             "entity_id": null
@@ -1280,7 +1394,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-295efcf234fa6b4b",
-                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
+                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+                "source_content_hash": "1af3a3688c6f556f",
+                "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
               }
             ],
             "entity_id": null
@@ -1291,7 +1407,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-295efcf234fa6b4b",
-                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
+                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+                "source_content_hash": "1af3a3688c6f556f",
+                "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
               }
             ],
             "entity_id": null
@@ -1302,7 +1420,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-295efcf234fa6b4b",
-                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
+                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+                "source_content_hash": "1af3a3688c6f556f",
+                "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
               }
             ],
             "entity_id": null
@@ -1313,7 +1433,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-295efcf234fa6b4b",
-                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
+                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+                "source_content_hash": "1af3a3688c6f556f",
+                "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
               }
             ],
             "entity_id": null
@@ -1324,7 +1446,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-295efcf234fa6b4b",
-                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
+                "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others.",
+                "source_content_hash": "1af3a3688c6f556f",
+                "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
               }
             ],
             "entity_id": null
@@ -1335,7 +1459,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-11a5fc221a4f667a",
-                "quote": "We're thrilled to have backed them at pre-seed from day 1 last year as they now announce their newest round of funding, a $9M seed round"
+                "quote": "We're thrilled to have backed them at pre-seed from day 1 last year as they now announce their newest round of funding, a $9M seed round",
+                "source_content_hash": "9ae6ebfe3e9548fa",
+                "quote_hash": "7e93bb27189a5a9078e0eb546d0826262bd5e136ff03534bd41a078692039a00"
               }
             ],
             "entity_id": null
@@ -1344,7 +1470,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-e329a4acc969b305",
-            "quote": "LGND AI, a groundbreaking company dedicated to innovating the interaction between humans, AI, and Earth's data, has successfully raised $9 million in new funding."
+            "quote": "LGND AI, a groundbreaking company dedicated to innovating the interaction between humans, AI, and Earth's data, has successfully raised $9 million in new funding.",
+            "source_content_hash": "210e490bb765e87a",
+            "quote_hash": "1ed35e04f2c7ebfa99c5cdfca3bbaaba5660634773b74cce776aa77b80b3715d"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e579af588ad8cf64",
+            "round_original": "种子轮",
+            "amount": "$9M",
+            "announced_at": "2025-07-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e329a4acc969b305",
+                "quote": "LGND AI, a groundbreaking company dedicated to innovating the interaction between humans, AI, and Earth's data, has successfully raised $9 million in new funding.",
+                "source_content_hash": "210e490bb765e87a",
+                "quote_hash": "1ed35e04f2c7ebfa99c5cdfca3bbaaba5660634773b74cce776aa77b80b3715d"
+              }
+            ]
           }
         ]
       },
@@ -1361,11 +1508,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "The API's three core capabilities — creating embeddings with geo-foundation models like Clay, running similarity search against a global embedding database, and fetching source imagery"
+              "quote": "The API's three core capabilities — creating embeddings with geo-foundation models like Clay, running similarity search against a global embedding database, and fetching source imagery",
+              "source_content_hash": "fe7a80cd1e0ecf32",
+              "quote_hash": "bbb1a190fa1fe7c24c84c649fab621636ca631316c3da0a180c0e1b264a52972"
             },
             {
               "source_id": "FISRC-f2bad00fabc90869",
-              "quote": "using the LGND API's three primitives: embedding generation, search, and retrieval."
+              "quote": "using the LGND API's three primitives: embedding generation, search, and retrieval.",
+              "source_content_hash": "4ede698bfb32ca8a",
+              "quote_hash": "72bc456322fae165f5766c42fe4e3a49df5f58afcf99cff595eb4494412d50fb"
             }
           ],
           "entity_id": null
@@ -1381,11 +1532,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2bad00fabc90869",
-              "quote": "LGND Studio - the agentic workflow product - is now available!"
+              "quote": "LGND Studio - the agentic workflow product - is now available!",
+              "source_content_hash": "4ede698bfb32ca8a",
+              "quote_hash": "8fc0bfcd12b9478ac14673810eaca05971c9c48e47f67501cb17eb22b663d432"
             },
             {
               "source_id": "FISRC-f2bad00fabc90869",
-              "quote": "For analysts creating and validating geospatial datasets."
+              "quote": "For analysts creating and validating geospatial datasets.",
+              "source_content_hash": "4ede698bfb32ca8a",
+              "quote_hash": "827bbac900a902728aa2609449579aa761638489f284e6d13eefd8ef4f5c42b1"
             }
           ],
           "entity_id": null
@@ -1401,7 +1556,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "We scaled from single-node experiments to 160 GPUs across 40 nodes without changing a line of workflow code."
+              "quote": "We scaled from single-node experiments to 160 GPUs across 40 nodes without changing a line of workflow code.",
+              "source_content_hash": "fe7a80cd1e0ecf32",
+              "quote_hash": "286b44a98396d5eed7c7c6b1bf0247b7c5227c93f7948b7aca2d2027e5d57fd3"
             }
           ]
         },
@@ -1412,7 +1569,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "Compute usage grew 111.5%"
+              "quote": "Compute usage grew 111.5%",
+              "source_content_hash": "fe7a80cd1e0ecf32",
+              "quote_hash": "240870503256d68fe292b272976b0a1c47e20f54588a2e7e534624b2ddaf78ff"
             }
           ]
         },
@@ -1423,7 +1582,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "workflow executions grew 63.6%"
+              "quote": "workflow executions grew 63.6%",
+              "source_content_hash": "fe7a80cd1e0ecf32",
+              "quote_hash": "7e733c58030ff8253518eb40578d78e3400db4cecdffedbb296cb4abd23b2ddc"
             }
           ]
         },
@@ -1434,7 +1595,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "earning a 5/5 support satisfaction score"
+              "quote": "earning a 5/5 support satisfaction score",
+              "source_content_hash": "fe7a80cd1e0ecf32",
+              "quote_hash": "ecb3c4129ad8ce3d3aee6c4f965714f4f0714b4e52681f22d2ce8a4665523cb5"
             }
           ]
         }
@@ -1446,7 +1609,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e329a4acc969b305",
-              "quote": "“Our mission is to make Earth data universally accessible and actionable through AI,” stated Nathaniel Manning, CEO and cofounder of LGND."
+              "quote": "“Our mission is to make Earth data universally accessible and actionable through AI,” stated Nathaniel Manning, CEO and cofounder of LGND.",
+              "source_content_hash": "210e490bb765e87a",
+              "quote_hash": "9fb1717bd337aa5721c8461d436acf27e8a9be4f2448a34565868e8f17f5d1ef"
             }
           ]
         },
@@ -1456,7 +1621,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e329a4acc969b305",
-              "quote": "“This is not just a small improvement; it is a revolutionary change in how we engage with Earth observation data,” stated Bruno Sánchez–Andrade Nuño, LGND's Chief Science Officer and cofounder. “By eliminating traditional compute-related barriers, geographic embeddings open new ways for us to manage and process Earth data.”"
+              "quote": "“This is not just a small improvement; it is a revolutionary change in how we engage with Earth observation data,” stated Bruno Sánchez–Andrade Nuño, LGND's Chief Science Officer and cofounder. “By eliminating traditional compute-related barriers, geographic embeddings open new ways for us to manage and process Earth data.”",
+              "source_content_hash": "210e490bb765e87a",
+              "quote_hash": "42b121219244f2c94a516418f894679eb5928f1bf38c653a0757d809c856cc61"
             }
           ]
         },
@@ -1466,7 +1633,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "“We scaled from single-node experiments to 160 GPUs across 40 nodes without changing a line of workflow code. Union.ai handled the provisioning and our data volume with ease.” Nate Appelson Principal Engineer, LGND"
+              "quote": "“We scaled from single-node experiments to 160 GPUs across 40 nodes without changing a line of workflow code. Union.ai handled the provisioning and our data volume with ease.” Nate Appelson Principal Engineer, LGND",
+              "source_content_hash": "fe7a80cd1e0ecf32",
+              "quote_hash": "df461e8b30c98d8e5ca7905a8d5200df5f29e6e551112c30fa51ac9656fd82be"
             }
           ]
         }
@@ -1482,7 +1651,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-49be44458fbd1acd",
-                "quote": "MCJ bets on founders with a proven track record in building and scaling companies, and the folks behind LGND are no different."
+                "quote": "MCJ bets on founders with a proven track record in building and scaling companies, and the folks behind LGND are no different.",
+                "source_content_hash": "ac72613135aa83d6",
+                "quote_hash": "4b9b6d4c29ce6433f237c885d33eb4fb9c0c71fd2cd3cba3dbcfba2127df0914"
               }
             ]
           },
@@ -1495,7 +1666,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-49be44458fbd1acd",
-                "quote": "we see LGND as a critical enabler of infrastructure resilience, giving decision-makers the tools to anticipate and adapt to accelerating climate risk."
+                "quote": "we see LGND as a critical enabler of infrastructure resilience, giving decision-makers the tools to anticipate and adapt to accelerating climate risk.",
+                "source_content_hash": "ac72613135aa83d6",
+                "quote_hash": "92772b8e510193aabddb20a4fc2fa60ccfdab129272f741b9e36a199addccb0b"
               }
             ]
           }
@@ -1512,7 +1685,21 @@
           "来源未披露任何营收或付费客户数据，商业化验证仍处于早期阶段。"
         ],
         "related_direction_id": "",
-        "sector": "地理空间 AI 基础设施"
+        "sector": "地理空间 AI 基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“地球数据的可查询化”——将非结构化的卫星影像转化为 AI 可用的嵌入，从而将地理空间分析从定制化项目变为可扩展的实时工作流。本轮融资所依赖的已验证信号包括：已构建起地理嵌入工厂、API 进入公开测试、在保险和物流等行业获得早期试点客户，以及创始团队在 NASA、Google、Mapbox 和世界银行等机构的深厚背景。但来源未披露估值、营收或客户数量等量化指标，判断的证据边界限于已公开的产品进展和团队资历。",
+          "evidence_signals": [
+            "LGND API 已于 2026 年 3 月进入公开测试，提供嵌入生成、相似性搜索和源影像获取三项核心能力。",
+            "早期应用包括为保险公司建模野火风险和监测非法采矿活动。",
+            "创始团队来自 NASA、Google、Mapbox 和世界银行等机构，CEO Nathaniel Manning 曾入选 TIME100 AI 最具影响力人物。",
+            "在 Union.ai 上已实现从单节点实验到 160 块 GPU 的分布式训练扩展，计算使用量增长 111.5%。"
+          ],
+          "risks": [
+            "地理空间 AI 基础设施赛道已有 Clay 等开源项目，LGND 需证明其商业产品能提供足够的差异化价值以驱动付费转化。",
+            "来源未披露任何营收或付费客户数据，商业化验证仍处于早期阶段。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1520,194 +1707,98 @@
           "target_kind": "product",
           "research_name": "LGND API",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "The API's three core capabilities — creating embeddings with geo-foundation models like Clay, running similarity search against a global embedding database, and fetching source imagery"
-            },
-            {
-              "source_id": "FISRC-f2bad00fabc90869",
-              "quote": "using the LGND API's three primitives: embedding generation, search, and retrieval."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "LGND Studio",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2bad00fabc90869",
-              "quote": "LGND Studio - the agentic workflow product - is now available!"
-            },
-            {
-              "source_id": "FISRC-f2bad00fabc90869",
-              "quote": "For analysts creating and validating geospatial datasets."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Nathaniel Manning",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e329a4acc969b305",
-              "quote": "“Our mission is to make Earth data universally accessible and actionable through AI,” stated Nathaniel Manning, CEO and cofounder of LGND."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Bruno Sánchez-Andrade Nuño",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e329a4acc969b305",
-              "quote": "Bruno Sánchez–Andrade Nuño, LGND's Chief Science Officer and cofounder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dan Hammer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-49be44458fbd1acd",
-              "quote": "Dan Hammer is the Co-founder and chief product officer at LGND."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Javelin Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e329a4acc969b305",
-              "quote": "This financing round, primarily spearheaded by Javelin Venture Partners"
-            },
-            {
-              "source_id": "FISRC-3ac522c61ae63836",
-              "quote": "backed by a $9M seed round led by Javelin Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "AENU",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-295efcf234fa6b4b",
-              "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Space Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-295efcf234fa6b4b",
-              "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Overture Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-295efcf234fa6b4b",
-              "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Ridgeline",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-295efcf234fa6b4b",
-              "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MCJ",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-295efcf234fa6b4b",
-              "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Coalition",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-295efcf234fa6b4b",
-              "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Clocktower Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-295efcf234fa6b4b",
-              "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture Ventures, Ridgeline, MCJ, Coalition, Clocktower Ventures, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cerulean Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-11a5fc221a4f667a",
-              "quote": "We're thrilled to have backed them at pre-seed from day 1 last year as they now announce their newest round of funding, a $9M seed round"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1805,13 +1896,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:26:06.137Z"
+      "published_at": "2026-07-26T14:26:06.137Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "LGND API",
+            "LGND Studio"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Bruno Sánchez-Andrade Nuño",
+            "Dan Hammer",
+            "Nathaniel Manning"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e579af588ad8cf64"
+      ],
+      "aggregation": {
+        "key": "EN-2b81d85809794782|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-5d6f8b305204eb55",
       "triggered_by_event_id": "EV-29eea3f4a8fcd6f5",
       "as_of_date": "2026-06-06",
@@ -1829,7 +1952,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-749f0b2ef927fc99",
-                "quote": "Inference.ai was founded by CEO John Yue and CTO Michael Yu"
+                "quote": "Inference.ai was founded by CEO John Yue and CTO Michael Yu",
+                "source_content_hash": "a32d70ed5af516b9",
+                "quote_hash": "f44971dc71137dcb2ab2bf309619ecefbf7f07765cfc58a6e687b57cace23426"
               }
             ],
             "entity_id": null
@@ -1840,7 +1965,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-749f0b2ef927fc99",
-                "quote": "Inference.ai was founded by CEO John Yue and CTO Michael Yu"
+                "quote": "Inference.ai was founded by CEO John Yue and CTO Michael Yu",
+                "source_content_hash": "a32d70ed5af516b9",
+                "quote_hash": "f44971dc71137dcb2ab2bf309619ecefbf7f07765cfc58a6e687b57cace23426"
               }
             ],
             "entity_id": null
@@ -1854,11 +1981,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-177fc20098275686",
-            "quote": "Yue and Yu are the co-founders of Inference.ai"
+            "quote": "Yue and Yu are the co-founders of Inference.ai",
+            "source_content_hash": "4a4c9dbf4b8867c2",
+            "quote_hash": "b356a4b2b02148e89ac2b13fead9a77b6de1bcc436f45b21f4f1e92e8faceb56"
           },
           {
             "source_id": "FISRC-749f0b2ef927fc99",
-            "quote": "The Palo Alto, California-based startup, founded in 2023"
+            "quote": "The Palo Alto, California-based startup, founded in 2023",
+            "source_content_hash": "a32d70ed5af516b9",
+            "quote_hash": "11cf82cee9f94412d390d242d17281d9fb5738022b651d3387802545fa211b1d"
           }
         ]
       },
@@ -1874,7 +2005,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-177fc20098275686",
-                "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund"
+                "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund",
+                "source_content_hash": "4a4c9dbf4b8867c2",
+                "quote_hash": "18fad78b8a29f968ad4cba21dcd780cde05d2eb49d7e2aa06f955c1d307a2dce"
               }
             ],
             "entity_id": null
@@ -1885,7 +2018,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-177fc20098275686",
-                "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund"
+                "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund",
+                "source_content_hash": "4a4c9dbf4b8867c2",
+                "quote_hash": "18fad78b8a29f968ad4cba21dcd780cde05d2eb49d7e2aa06f955c1d307a2dce"
               }
             ],
             "entity_id": null
@@ -1894,7 +2029,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-177fc20098275686",
-            "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund"
+            "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund",
+            "source_content_hash": "4a4c9dbf4b8867c2",
+            "quote_hash": "18fad78b8a29f968ad4cba21dcd780cde05d2eb49d7e2aa06f955c1d307a2dce"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-29eea3f4a8fcd6f5",
+            "round_original": "种子轮",
+            "amount": "$4 million",
+            "announced_at": "2024-01-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-177fc20098275686",
+                "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund",
+                "source_content_hash": "4a4c9dbf4b8867c2",
+                "quote_hash": "18fad78b8a29f968ad4cba21dcd780cde05d2eb49d7e2aa06f955c1d307a2dce"
+              }
+            ]
           }
         ]
       },
@@ -1912,11 +2068,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-177fc20098275686",
-              "quote": "Inference essentially provides customers a GPU instance in the cloud, along with 5TB of object storage."
+              "quote": "Inference essentially provides customers a GPU instance in the cloud, along with 5TB of object storage.",
+              "source_content_hash": "4a4c9dbf4b8867c2",
+              "quote_hash": "684283cd190ccf6581598c3e3583740dc3d259710991a6f397830ce1c7006142"
             },
             {
               "source_id": "FISRC-177fc20098275686",
-              "quote": "it can offer dramatically cheaper GPU compute with better availability than major public cloud providers."
+              "quote": "it can offer dramatically cheaper GPU compute with better availability than major public cloud providers.",
+              "source_content_hash": "4a4c9dbf4b8867c2",
+              "quote_hash": "51ec430eb36dec392556b21331017bf3caae0679f808534b52b1a1413e5f36c5"
             }
           ],
           "entity_id": null
@@ -1933,11 +2093,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f8224eccd6fa9d23",
-              "quote": "GHOST Where your agents live. Persistent VM SSH from any device Pre-installed tools"
+              "quote": "GHOST Where your agents live. Persistent VM SSH from any device Pre-installed tools",
+              "source_content_hash": "f6639966df686cb3",
+              "quote_hash": "d80c57f3f71c4733335ab90884424b940cf0fd5a56ab0edc246403efe3154e98"
             },
             {
               "source_id": "FISRC-f8224eccd6fa9d23",
-              "quote": "Claude Code, Hermes, OpenClaw pre-installed. One-click deploy to Discord, Telegram, Gmail, Lark, WhatsApp."
+              "quote": "Claude Code, Hermes, OpenClaw pre-installed. One-click deploy to Discord, Telegram, Gmail, Lark, WhatsApp.",
+              "source_content_hash": "f6639966df686cb3",
+              "quote_hash": "1526503c0ee208fa5c51c50f4a5ca3cbf4a73a4ff1e0e37769c9c3398e64bdc7"
             }
           ],
           "entity_id": null
@@ -1955,9 +2119,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-177fc20098275686",
-              "quote": "CoreWeave, a crypto mining operation-turned-GPU provider, which is reportedly expected to rake in around $1.5 billion in revenue by 2024."
+              "quote": "CoreWeave, a crypto mining operation-turned-GPU provider, which is reportedly expected to rake in around $1.5 billion in revenue by 2024.",
+              "source_content_hash": "4a4c9dbf4b8867c2",
+              "quote_hash": "0b6c84605d12950bd0dbcaf800985b0140882418ee43ea2391a93a686f837056"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Lambda Labs",
@@ -1969,9 +2136,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-177fc20098275686",
-              "quote": "Its close competitor, Lambda Labs, secured $300 million in venture capital last October."
+              "quote": "Its close competitor, Lambda Labs, secured $300 million in venture capital last October.",
+              "source_content_hash": "4a4c9dbf4b8867c2",
+              "quote_hash": "c96c204ad323da262fd930a85b6555895cb02e67696781273eff853f5235190b"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1982,7 +2152,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87c3b7d762a4df6",
-              "quote": "Users can save up to 82% on their overall costs by renting GPUs from Inference.ai compared to engaging the services of big companies like Google, AWS, or Microsoft."
+              "quote": "Users can save up to 82% on their overall costs by renting GPUs from Inference.ai compared to engaging the services of big companies like Google, AWS, or Microsoft.",
+              "source_content_hash": "93f0ce500ec7aa6f",
+              "quote_hash": "a02e3548bca8fc1454dc66fe5236732fae6e0a74a176dfea94d4fe58606619fa"
             }
           ]
         },
@@ -1993,7 +2165,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87c3b7d762a4df6",
-              "quote": "users can rent NVIDIA H100 chips for as little as US$1.99 per hour"
+              "quote": "users can rent NVIDIA H100 chips for as little as US$1.99 per hour",
+              "source_content_hash": "93f0ce500ec7aa6f",
+              "quote_hash": "b4ac7fcba243476e7b2d2e8e401e69a9f43881a3cae0175219739ca3517ba8f5"
             }
           ]
         },
@@ -2004,7 +2178,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87c3b7d762a4df6",
-              "quote": "If you go to a public cloud provider for GPUs, you often have to wait one to two quarters"
+              "quote": "If you go to a public cloud provider for GPUs, you often have to wait one to two quarters",
+              "source_content_hash": "93f0ce500ec7aa6f",
+              "quote_hash": "ba83f963f8951ea81a5898232f45b709a4f2f41f2357a2703c15028af4ab42e1"
             }
           ]
         }
@@ -2022,7 +2198,19 @@
           "GPU 匹配市场的竞争激烈，CoreWeave、Lambda Labs 等对手已获得更大规模融资并建立先发优势，Inference.ai 的 400 万美元种子轮资金在算力采购和基础设施建设上可能捉襟见肘。"
         ],
         "related_direction_id": "",
-        "sector": "AI 基础设施 / GPU 算力服务"
+        "sector": "AI 基础设施 / GPU 算力服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是全球 GPU 短缺背景下，通过算法匹配闲置算力资源的商业模式能否规模化。本轮 400 万美元种子轮融资规模较小，表明投资方在早期阶段进行试探性布局，而非重注。已验证的信号包括：创始团队在分布式基础设施领域有近十年经验，且已建立与第三方数据中心的合作关系以获取 GPU 供应。但公司尚未披露收入、客户数量或 GPU 匹配量的具体数据，商业验证仍处于极早期阶段。",
+          "evidence_signals": [
+            "创始团队在硬件、制造和基础设施领域拥有近十年经验",
+            "公司已与第三方数据中心建立合作关系以获取 GPU 资源",
+            "全球 GPU 短缺为 GPU 算力匹配服务创造了明确的市场需求窗口"
+          ],
+          "risks": [
+            "GPU 匹配市场的竞争激烈，CoreWeave、Lambda Labs 等对手已获得更大规模融资并建立先发优势，Inference.ai 的 400 万美元种子轮资金在算力采购和基础设施建设上可能捉襟见肘。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2030,112 +2218,56 @@
           "target_kind": "product",
           "research_name": "GPU 算力匹配平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-177fc20098275686",
-              "quote": "Inference essentially provides customers a GPU instance in the cloud, along with 5TB of object storage."
-            },
-            {
-              "source_id": "FISRC-177fc20098275686",
-              "quote": "it can offer dramatically cheaper GPU compute with better availability than major public cloud providers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Ghost",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f8224eccd6fa9d23",
-              "quote": "GHOST Where your agents live. Persistent VM SSH from any device Pre-installed tools"
-            },
-            {
-              "source_id": "FISRC-f8224eccd6fa9d23",
-              "quote": "Claude Code, Hermes, OpenClaw pre-installed. One-click deploy to Discord, Telegram, Gmail, Lark, WhatsApp."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "John Yue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-749f0b2ef927fc99",
-              "quote": "Inference.ai was founded by CEO John Yue and CTO Michael Yu"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Michael Yu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-749f0b2ef927fc99",
-              "quote": "Inference.ai was founded by CEO John Yue and CTO Michael Yu"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cherubic Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-177fc20098275686",
-              "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fusion Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-177fc20098275686",
-              "quote": "The startup recently closed a $4 million round from Cherubic Ventures, Maple VC and Fusion Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "CoreWeave",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-177fc20098275686",
-              "quote": "CoreWeave, a crypto mining operation-turned-GPU provider, which is reportedly expected to rake in around $1.5 billion in revenue by 2024."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Lambda Labs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-177fc20098275686",
-              "quote": "Its close competitor, Lambda Labs, secured $300 million in venture capital last October."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2209,13 +2341,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:25:11.302Z"
+      "published_at": "2026-07-26T14:25:11.302Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "GPU 算力匹配平台",
+            "Ghost"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "John Yue",
+            "Michael Yu"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-29eea3f4a8fcd6f5"
+      ],
+      "aggregation": {
+        "key": "EN-07c370b082ffd370|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f96d2a4594d9329f",
       "triggered_by_event_id": "EV-9e678b626c2a5c83",
       "as_of_date": "2026-06-06",
@@ -2233,7 +2396,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1913db3e18347025",
-                "quote": "Nick Gospodinov, Bulgarian founder and CEO"
+                "quote": "Nick Gospodinov, Bulgarian founder and CEO",
+                "source_content_hash": "62f48a67236f5d86",
+                "quote_hash": "2d9f0ba6ba3b6272072925fbf23a364c080b990fc2648605743f70ac3f226564"
               }
             ],
             "entity_id": null
@@ -2247,11 +2412,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1913db3e18347025",
-            "quote": "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains."
+            "quote": "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains.",
+            "source_content_hash": "62f48a67236f5d86",
+            "quote_hash": "96b054be11213dc94a5e563af52438950e2b69663e6346887455d7eaee2e3f06"
           },
           {
             "source_id": "FISRC-9b2a2ad9988522ce",
-            "quote": "Mandel AI has developed an AI supply chain coordinator that automates procurement by managing supplier communications and detecting disruptions."
+            "quote": "Mandel AI has developed an AI supply chain coordinator that automates procurement by managing supplier communications and detecting disruptions.",
+            "source_content_hash": "7612552d0ff52bb9",
+            "quote_hash": "225e7525c34765c0fd74fc92c1453107b0e55884da6dcd7145130609c74ff2ca"
           }
         ]
       },
@@ -2267,7 +2436,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1913db3e18347025",
-                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
+                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+                "source_content_hash": "62f48a67236f5d86",
+                "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -2278,7 +2449,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1913db3e18347025",
-                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
+                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+                "source_content_hash": "62f48a67236f5d86",
+                "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
               }
             ],
             "entity_id": null
@@ -2289,7 +2462,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1913db3e18347025",
-                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
+                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+                "source_content_hash": "62f48a67236f5d86",
+                "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
               }
             ],
             "entity_id": null
@@ -2300,7 +2475,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1913db3e18347025",
-                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
+                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+                "source_content_hash": "62f48a67236f5d86",
+                "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
               }
             ],
             "entity_id": null
@@ -2309,11 +2486,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1913db3e18347025",
-            "quote": "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains."
+            "quote": "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains.",
+            "source_content_hash": "62f48a67236f5d86",
+            "quote_hash": "96b054be11213dc94a5e563af52438950e2b69663e6346887455d7eaee2e3f06"
           },
           {
             "source_id": "FISRC-1913db3e18347025",
-            "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
+            "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+            "source_content_hash": "62f48a67236f5d86",
+            "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-9e678b626c2a5c83",
+            "round_original": "种子轮",
+            "amount": "$3.9M",
+            "announced_at": "2026-03-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1913db3e18347025",
+                "quote": "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains.",
+                "source_content_hash": "62f48a67236f5d86",
+                "quote_hash": "96b054be11213dc94a5e563af52438950e2b69663e6346887455d7eaee2e3f06"
+              },
+              {
+                "source_id": "FISRC-1913db3e18347025",
+                "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+                "source_content_hash": "62f48a67236f5d86",
+                "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+              }
+            ]
           }
         ]
       },
@@ -2331,11 +2537,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1913db3e18347025",
-              "quote": "The platform sits on top of existing email and ERP systems, using purpose-built AI agents to read supplier communications, extract critical data, reconcile documents such as PO confirmations and invoices, and act autonomously—following up with suppliers, flagging discrepancies, and escalating issues in accordance with company-defined rules."
+              "quote": "The platform sits on top of existing email and ERP systems, using purpose-built AI agents to read supplier communications, extract critical data, reconcile documents such as PO confirmations and invoices, and act autonomously—following up with suppliers, flagging discrepancies, and escalating issues in accordance with company-defined rules.",
+              "source_content_hash": "62f48a67236f5d86",
+              "quote_hash": "7c11788be03a8fa8f790fd7d6028d364a755ff317b99d839f27db210b3d89c70"
             },
             {
               "source_id": "FISRC-1913db3e18347025",
-              "quote": "One procurement manager with Mandel agents can now coordinate what used to take an entire team: reading, reconciling, and acting on hundreds of supplier emails per day, 24/7."
+              "quote": "One procurement manager with Mandel agents can now coordinate what used to take an entire team: reading, reconciling, and acting on hundreds of supplier emails per day, 24/7.",
+              "source_content_hash": "62f48a67236f5d86",
+              "quote_hash": "9b3f1c4bff7c6ecbd6e10193a1fef961c0c3131a765e372638c095a4344d40c3"
             }
           ],
           "entity_id": null
@@ -2353,9 +2563,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a8dc30622bb92fbe",
-              "quote": "Digit is changing that with an AI-native operating system that unifies inventory management, MES, MRP, and WMS into a single platform designed to guide action, not just store data."
+              "quote": "Digit is changing that with an AI-native operating system that unifies inventory management, MES, MRP, and WMS into a single platform designed to guide action, not just store data.",
+              "source_content_hash": "fa5e9b04eed7355f",
+              "quote_hash": "1c3d864033dafd3e247645b9d45f8200a15c5588ddb78c90815360ec5ab4031e"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Vectrix",
@@ -2367,9 +2580,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a8dc30622bb92fbe",
-              "quote": "Antwerp-based Vectrix has raised €1.15 million in seed funding led by RDY Ventures to expand its AI-powered order entry platform across Europe."
+              "quote": "Antwerp-based Vectrix has raised €1.15 million in seed funding led by RDY Ventures to expand its AI-powered order entry platform across Europe.",
+              "source_content_hash": "fa5e9b04eed7355f",
+              "quote_hash": "b8acd02ab0c74326cdaba424a778cbb18bc3f9853257c526c49972a868c145a8"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "anchr",
@@ -2381,9 +2597,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1913db3e18347025",
-              "quote": "Mandel has already processed $1B+ in material spend for clients in aerospace, pharma, industrials, and similar complex manufacturing industries."
+              "quote": "Mandel has already processed $1B+ in material spend for clients in aerospace, pharma, industrials, and similar complex manufacturing industries.",
+              "source_content_hash": "62f48a67236f5d86",
+              "quote_hash": "b53554ae538c3add28c58897e2ae78edbdf8b3f6e3709c3c53f469e4bf301d46"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2394,7 +2613,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1913db3e18347025",
-              "quote": "Mandel has already processed $1B+ in material spend for clients in aerospace, pharma, industrials, and similar complex manufacturing industries."
+              "quote": "Mandel has already processed $1B+ in material spend for clients in aerospace, pharma, industrials, and similar complex manufacturing industries.",
+              "source_content_hash": "62f48a67236f5d86",
+              "quote_hash": "b53554ae538c3add28c58897e2ae78edbdf8b3f6e3709c3c53f469e4bf301d46"
             }
           ]
         },
@@ -2405,7 +2626,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1913db3e18347025",
-              "quote": "62 per cent of manufacturers say unstructured data remains their number one barrier to AI adoption."
+              "quote": "62 per cent of manufacturers say unstructured data remains their number one barrier to AI adoption.",
+              "source_content_hash": "62f48a67236f5d86",
+              "quote_hash": "1ab751d649bea4a79c2cba0909993aa0787f9cb99decc8b170d2c7587a63e062"
             }
           ]
         }
@@ -2424,7 +2647,20 @@
           "平台依赖现有电子邮件和 ERP 系统，若企业升级或更换底层系统可能影响集成稳定性"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "供应链 AI"
+        "sector": "供应链 AI",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：在关税和地缘政治波动迫使制造商快速多元化供应商网络的背景下，传统电子邮件和电子表格协调方式已无法应对从管理 20 个供应商到 60 个供应商的规模跃迁。Mandel AI 的 AI 代理能够读取、核对并自主执行供应商通信，将原本需要整个团队完成的工作压缩到一名采购经理。已验证信号包括：已处理超过 $1B 物料支出，客户覆盖航空航天、制药和工业等复杂制造行业。但来源未披露估值、收入或客户数量，且投资方未提供公开投资逻辑，判断的证据边界仅限于已披露的运营数据和行业背景。",
+          "evidence_signals": [
+            "已为航空航天、制药、工业等复杂制造行业客户处理超过 $1B 物料支出",
+            "平台位于现有电子邮件和 ERP 系统之上，无需替换现有基础设施",
+            "一名采购经理可协调原本需要整个团队的工作，24/7 全天候处理数百封供应商邮件"
+          ],
+          "risks": [
+            "来源未披露收入、客户数量或留存率等关键商业指标，无法验证产品市场匹配的深度",
+            "平台依赖现有电子邮件和 ERP 系统，若企业升级或更换底层系统可能影响集成稳定性"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2432,121 +2668,63 @@
           "target_kind": "product",
           "research_name": "AI 供应链协调器",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "The platform sits on top of existing email and ERP systems, using purpose-built AI agents to read supplier communications, extract critical data, reconcile documents such as PO confirmations and invoices, and act autonomously—following up with suppliers, flagging discrepancies, and escalating issues in accordance with company-defined rules."
-            },
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "One procurement manager with Mandel agents can now coordinate what used to take an entire team: reading, reconciling, and acting on hundreds of supplier emails per day, 24/7."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Nick Gospodinov",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "Nick Gospodinov, Bulgarian founder and CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Category Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Ritual Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "e2vc",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Digit",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a8dc30622bb92fbe",
-              "quote": "Digit is changing that with an AI-native operating system that unifies inventory management, MES, MRP, and WMS into a single platform designed to guide action, not just store data."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Vectrix",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a8dc30622bb92fbe",
-              "quote": "Antwerp-based Vectrix has raised €1.15 million in seed funding led by RDY Ventures to expand its AI-powered order entry platform across Europe."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "anchr",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1913db3e18347025",
-              "quote": "Mandel has already processed $1B+ in material spend for clients in aerospace, pharma, industrials, and similar complex manufacturing industries."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2608,10 +2786,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:24:41.589Z"
+      "published_at": "2026-07-26T14:24:41.589Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI 供应链协调器"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Nick Gospodinov"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9e678b626c2a5c83"
+      ],
+      "aggregation": {
+        "key": "EN-5c178682f5573d29|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

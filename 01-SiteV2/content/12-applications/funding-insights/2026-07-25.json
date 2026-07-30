@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-25",
     "generated_at": "2026-07-27T10:26:48.053Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 4,
       "auto_published": 4,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-4960bd099ebc8b70",
       "triggered_by_event_id": "EV-136b2edc9b9f3be8",
       "as_of_date": "2026-07-25",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Paper founder and CEO Stephen Haney"
+                "quote": "Paper founder and CEO Stephen Haney",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "0d8be91cd2d608c080825785d5cc9ade653255cacd945f8bd4686b938ccd3a1e"
               }
             ],
             "entity_id": null
@@ -49,16 +52,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-545ac2658d68b038",
-            "quote": "Paper , which calls itself a design platform for the agentic era"
+            "quote": "Paper , which calls itself a design platform for the agentic era",
+            "source_content_hash": "a9da415791e9a9f4",
+            "quote_hash": "cca741bd29de6a094466fb906af66a3bff624eb69c47bca063f147d86f4e3cc2"
           },
           {
             "source_id": "FISRC-34abfc7a017c54f3",
-            "quote": "Paper, a San Francisco , California company building a design platform for the AI era"
+            "quote": "Paper, a San Francisco , California company building a design platform for the AI era",
+            "source_content_hash": "54e8872766d0f8dc",
+            "quote_hash": "6a3aa559ddb8d127feb76ad2396e34515606b80f895002e9abb6a6d0ba3f37e1"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$34 million",
         "total_raised": "$38.5M",
         "announced_at": "2026-07-23",
@@ -69,7 +76,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+                "quote": "a $34 million Series A funding round led by Accel and Iconiq",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "1486521b8e2f0af70ebf985d63f06bf270fb6b9ddc5375694a9265d88cd46d26"
               }
             ],
             "entity_id": null
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+                "quote": "a $34 million Series A funding round led by Accel and Iconiq",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "1486521b8e2f0af70ebf985d63f06bf270fb6b9ddc5375694a9265d88cd46d26"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Other participating investors included Designer Fund"
+                "quote": "Other participating investors included Designer Fund",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "f8a14f476c162de0c226ed8385f37261a375e2bc0180e69b097ed469baba62d7"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Michael Grinich of WorkOS"
+                "quote": "Michael Grinich of WorkOS",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "06d37cff58cae8dfba7d4a86134b8a599d7d5558bcef8463419b907a16fb18bf"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Anton Osika of Lovable"
+                "quote": "Anton Osika of Lovable",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "28af74302477978ce6360fdb5739c374800766057205a33d572477586d4637cb"
               }
             ],
             "entity_id": null
@@ -124,7 +141,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "engineers and designers from Anthropic and OpenAI"
+                "quote": "engineers and designers from Anthropic and OpenAI",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "2d28c6389c542f299c0628c884dad88d925f02aa2a88a225611236c2ce9bc067"
               }
             ],
             "entity_id": null
@@ -135,40 +154,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-545ac2658d68b038",
-                "quote": "engineers and designers from Anthropic and OpenAI"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Basecase",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-23493910baa1c861",
-                "quote": "renewed support from Basecase"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "David Hoang",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-23493910baa1c861",
-                "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Guillermo Rauch",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-23493910baa1c861",
-                "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
+                "quote": "engineers and designers from Anthropic and OpenAI",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "2d28c6389c542f299c0628c884dad88d925f02aa2a88a225611236c2ce9bc067"
               }
             ],
             "entity_id": null
@@ -177,11 +165,98 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-545ac2658d68b038",
-            "quote": "announced the closing of a $34 million Series A funding round led by Accel and Iconiq"
+            "quote": "announced the closing of a $34 million Series A funding round led by Accel and Iconiq",
+            "source_content_hash": "a9da415791e9a9f4",
+            "quote_hash": "2a13a49ed6fa2ce7e1c2726e71ae5ce72479e57c8843843b09053ec73ebce834"
           },
           {
             "source_id": "FISRC-23493910baa1c861",
-            "quote": "This brings Paper ’s total funding to $38.5M."
+            "quote": "This brings Paper ’s total funding to $38.5M.",
+            "source_content_hash": "6bc97de07bc79d43",
+            "quote_hash": "3a4b20d344e198ed8284a4ecf29bac61e7d1bdb6468fe539a1dcbbbe63ec1e88"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Basecase",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "renewed support from Basecase",
+                "source_content_hash": "6bc97de07bc79d43",
+                "quote_hash": "fff2daeb836f6098a5072b0e36bc2721c63b39ba7474dabbb1fe152a0447fc9d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "David Hoang",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
+                "source_content_hash": "6bc97de07bc79d43",
+                "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Guillermo Rauch",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
+                "source_content_hash": "6bc97de07bc79d43",
+                "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-136b2edc9b9f3be8",
+            "round_original": "Series A",
+            "amount": "$34 million",
+            "announced_at": "2026-07-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "announced the closing of a $34 million Series A funding round led by Accel and Iconiq",
+                "source_content_hash": "a9da415791e9a9f4",
+                "quote_hash": "2a13a49ed6fa2ce7e1c2726e71ae5ce72479e57c8843843b09053ec73ebce834"
+              },
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "This brings Paper ’s total funding to $38.5M.",
+                "source_content_hash": "6bc97de07bc79d43",
+                "quote_hash": "3a4b20d344e198ed8284a4ecf29bac61e7d1bdb6468fe539a1dcbbbe63ec1e88"
+              }
+            ]
           }
         ]
       },
@@ -198,11 +273,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
+              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time.",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "a08d8d6919725a65c6ec7a004872a1a88544b83eebb988bfafaa973a1e3ec03f"
             },
             {
               "source_id": "FISRC-4c0b752256edc3ff",
-              "quote": "Paper renders using HTML and CSS, allowing designs to connect directly with production code and the AI agents increasingly responsible for writing it."
+              "quote": "Paper renders using HTML and CSS, allowing designs to connect directly with production code and the AI agents increasingly responsible for writing it.",
+              "source_content_hash": "8d9bcde152036162",
+              "quote_hash": "e906b47ec99f710f7d8a9a9f11700e60d88c8dfb8aee8bc1a41fe0fc8279fa2f"
             }
           ],
           "entity_id": null
@@ -218,11 +297,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-23493910baa1c861",
-              "quote": "We saw designers moving en masse to Claude Code, so we followed them to the desktop with Paper Desktop and MCP ."
+              "quote": "We saw designers moving en masse to Claude Code, so we followed them to the desktop with Paper Desktop and MCP .",
+              "source_content_hash": "6bc97de07bc79d43",
+              "quote_hash": "a4c0429f1522b93f89c6d7ffb7891885d76ea3c5f3a64c83b3a924c585dc7dba"
             },
             {
               "source_id": "FISRC-fdcc2ce9d2bfd5c8",
-              "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building."
+              "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building.",
+              "source_content_hash": "c1aacae38fbdada2",
+              "quote_hash": "5f219f9aadb68803f7b0613d93ffc1f2d05aa4a578f7a81133d2a7e7ed2f0965"
             }
           ],
           "entity_id": null
@@ -236,13 +319,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp"
+              "quote": "Its customers include Ramp",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "fd198c57b365fda74687be45f976071a21c707c7e2c573f10a14f0b11e992b3b"
             },
             {
               "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
+              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp",
+              "source_content_hash": "6bc97de07bc79d43",
+              "quote_hash": "75eab3bfa4b1016a6383c696b373a84c7384d2dbaaf682d9b10010e4f121733d"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Lovable",
@@ -251,13 +339,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable"
+              "quote": "Its customers include Ramp, Lovable",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "395ce7bbf92357a234bcb003ff56cf9e37780bfb9ae1e6983cda6dc287475be9"
             },
             {
               "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
+              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable",
+              "source_content_hash": "6bc97de07bc79d43",
+              "quote_hash": "bb29035239c4666082e0afd586727b74f9d9b3473322a3d3b2baca4809f0bfd2"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Vercel",
@@ -266,9 +359,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable, Vercel"
+              "quote": "Its customers include Ramp, Lovable, Vercel",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "64ddbca47dc85af5aeb5bfcaa8d533f21307ef897320833793f34ca488825644"
             }
-          ]
+          ],
+          "entity_id": "EN-9d3508a8484ee252"
         },
         {
           "name": "PostHog",
@@ -277,9 +373,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog"
+              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "00f0ed4bb62c6cc453eca5f66d8417373c6950a6361eda26e26f33f5766bc887"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Quartr",
@@ -288,9 +387,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog, Quartr"
+              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog, Quartr",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "2b95070f9d48b561db577241792bdbcace8e2d205883d1c644d406a530b35e2f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -304,13 +406,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4c0b752256edc3ff",
-              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders using HTML and CSS, allowing designs to connect directly with production code"
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders using HTML and CSS, allowing designs to connect directly with production code",
+              "source_content_hash": "8d9bcde152036162",
+              "quote_hash": "f1a5c8fd016fe6f654e03860bef352fb25c7365b8c4d3c7e4ab179c10153afeb"
             },
             {
               "source_id": "FISRC-23493910baa1c861",
-              "quote": "Compare Paper vs Figma"
+              "quote": "Compare Paper vs Figma",
+              "source_content_hash": "6bc97de07bc79d43",
+              "quote_hash": "a5b6b36eada7a147968b116d95be896e8f98f7b415b9bf305990116a3c9811c9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Canva",
@@ -322,13 +429,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
+              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions.",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "c8622bd8b4cba1a5e3808346a23d85d14b3ac4a9d2ab0d5c1dd0db081594f274"
             },
             {
               "source_id": "FISRC-fdcc2ce9d2bfd5c8",
-              "quote": "They serve professional designers and have been clear about that since their founding. This is a big difference from other tools that believe they can replace designers"
+              "quote": "They serve professional designers and have been clear about that since their founding. This is a big difference from other tools that believe they can replace designers",
+              "source_content_hash": "c1aacae38fbdada2",
+              "quote_hash": "476db9538abd2b8cd28adcea10ea0b81d32c30285e4e377ae9709870d3c23b3d"
             }
-          ]
+          ],
+          "entity_id": "EN-3db1f560db626918"
         },
         {
           "name": "Vercel v0",
@@ -340,9 +452,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
+              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions.",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "c8622bd8b4cba1a5e3808346a23d85d14b3ac4a9d2ab0d5c1dd0db081594f274"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -353,7 +468,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper says it has grown annualized recurring revenue (ARR) 25x since launch"
+              "quote": "Paper says it has grown annualized recurring revenue (ARR) 25x since launch",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "7efeefefaa91ef4599f2c6ff2236fe2609a1f9ddca728072dbd1b01dc858a957"
             }
           ]
         },
@@ -364,7 +481,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "appearing on Ramp’s Fastest Growing Companies list for four consecutive months"
+              "quote": "appearing on Ramp’s Fastest Growing Companies list for four consecutive months",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "34f4e3ddd22f49f38032bf0814f286702c8291721ce6223d648cdda211f9258c"
             }
           ]
         },
@@ -375,7 +494,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-23493910baa1c861",
-              "quote": "This brings Paper ’s total funding to $38.5M."
+              "quote": "This brings Paper ’s total funding to $38.5M.",
+              "source_content_hash": "6bc97de07bc79d43",
+              "quote_hash": "3a4b20d344e198ed8284a4ecf29bac61e7d1bdb6468fe539a1dcbbbe63ec1e88"
             }
           ]
         }
@@ -387,7 +508,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper"
+              "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "07ba2a401f057e6e4c3928e42f19ba8754fa3a212269ace0a43ed727c40cc479"
             }
           ]
         },
@@ -397,7 +520,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Designers are being asked to move faster than ever, yet they’re still working with tools built for a different time. We believe there is a massive opportunity for a new generation of tools that help designers do their best work while working seamlessly with…coding agents like Claude Code and Codex."
+              "quote": "Designers are being asked to move faster than ever, yet they’re still working with tools built for a different time. We believe there is a massive opportunity for a new generation of tools that help designers do their best work while working seamlessly with…coding agents like Claude Code and Codex.",
+              "source_content_hash": "a9da415791e9a9f4",
+              "quote_hash": "c9728d6b8693e96c3894ec4cee316ba98a8ad8342718097c542611023afa2123"
             }
           ]
         },
@@ -407,7 +532,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4c0b752256edc3ff",
-              "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions."
+              "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions.",
+              "source_content_hash": "8d9bcde152036162",
+              "quote_hash": "65914ed19363e21076af730c825d39f205e8a8bf6e9a5adb977ec122f6893807"
             }
           ]
         }
@@ -423,7 +550,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4c0b752256edc3ff",
-                "quote": "Paper is defining a new category with a fundamentally new approach to design software. Most design tools were built for a world where humans did all the work. Paper is built for a world where humans and AI create together, and is already seeing strong adoption among some of the world’s most influential technology companies."
+                "quote": "Paper is defining a new category with a fundamentally new approach to design software. Most design tools were built for a world where humans did all the work. Paper is built for a world where humans and AI create together, and is already seeing strong adoption among some of the world’s most influential technology companies.",
+                "source_content_hash": "8d9bcde152036162",
+                "quote_hash": "4a40815da84fc6353a7db16680985b5716aac9c9c21eb4dbef96ce46c47e28e4"
               }
             ]
           },
@@ -436,7 +565,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5ee1d4324588b6e4",
-                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare."
+                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare.",
+                "source_content_hash": "e9164b97cb878f6a",
+                "quote_hash": "37219fb2e5eb080a117e976bf48e7e8318d178dd5b600bef5603e5efc1006fe3"
               }
             ]
           },
@@ -449,7 +580,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fdcc2ce9d2bfd5c8",
-                "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth."
+                "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth.",
+                "source_content_hash": "c1aacae38fbdada2",
+                "quote_hash": "3f4adf888931e4db2bcfc588b842d3442936a5a4eef3658c6fdad546d2718cc9"
               }
             ]
           }
@@ -466,7 +599,21 @@
           "HTML/CSS渲染引擎的差异化优势可能被现有竞品通过功能更新追赶，技术护城河的持久性有待验证。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "设计工具/AI协作平台"
+        "sector": "设计工具/AI协作平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：在AI智能体日益参与软件开发的趋势下，设计工具需要从“人类独享的画布”转变为“人类与AI共享的协作空间”。Paper以HTML/CSS为原生渲染引擎，使设计直接连接生产代码，消除了设计到工程的交接摩擦，这一架构选择使其成为智能体时代的基础设施。本轮融资的已验证信号包括：ARR自发布以来增长25倍，连续四个月登上Ramp最快增长公司榜单，以及Ramp、Lovable、Vercel等头部科技公司的采用。这些信号表明产品-市场契合度正在形成，但证据边界仍限于早期采用者群体，尚未证明其在大规模企业市场中的渗透能力。",
+          "evidence_signals": [
+            "ARR自发布以来增长25倍",
+            "连续四个月登上Ramp最快增长公司榜单",
+            "客户包括Ramp、Lovable、Vercel、PostHog、Quartr、Y Combinator等头部科技公司",
+            "获得Accel和ICONIQ联合领投的3400万美元A轮融资"
+          ],
+          "risks": [
+            "Paper的客户群体目前集中在AI原生和开发者工具公司，尚未证明其能在传统企业设计团队中替代Figma等成熟工具。",
+            "HTML/CSS渲染引擎的差异化优势可能被现有竞品通过功能更新追赶，技术护城河的持久性有待验证。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -474,297 +621,147 @@
           "target_kind": "product",
           "research_name": "Paper Desktop",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
-            },
-            {
-              "source_id": "FISRC-4c0b752256edc3ff",
-              "quote": "Paper renders using HTML and CSS, allowing designs to connect directly with production code and the AI agents increasingly responsible for writing it."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Paper MCP",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "We saw designers moving en masse to Claude Code, so we followed them to the desktop with Paper Desktop and MCP ."
-            },
-            {
-              "source_id": "FISRC-fdcc2ce9d2bfd5c8",
-              "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Stephen Haney",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper founder and CEO Stephen Haney"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "ICONIQ",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Designer Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Other participating investors included Designer Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Michael Grinich (WorkOS)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Michael Grinich of WorkOS"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Anton Osika (Lovable)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Anton Osika of Lovable"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Anthropic (工程师和设计师个人)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "engineers and designers from Anthropic and OpenAI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "OpenAI (工程师和设计师个人)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "engineers and designers from Anthropic and OpenAI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Basecase",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "renewed support from Basecase"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "David Hoang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Guillermo Rauch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Ramp",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp"
-            },
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Lovable",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable"
-            },
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Vercel",
           "canonical_entity_id": "EN-9d3508a8484ee252",
-          "canonical_name": "Vercel",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable, Vercel"
-            }
-          ]
+          "canonical_name": "Vercel"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "PostHog",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Quartr",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog, Quartr"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Figma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c0b752256edc3ff",
-              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders using HTML and CSS, allowing designs to connect directly with production code"
-            },
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "Compare Paper vs Figma"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Canva",
           "canonical_entity_id": "EN-3db1f560db626918",
-          "canonical_name": "Canva",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
-            },
-            {
-              "source_id": "FISRC-fdcc2ce9d2bfd5c8",
-              "quote": "They serve professional designers and have been clear about that since their founding. This is a big difference from other tools that believe they can replace designers"
-            }
-          ]
+          "canonical_name": "Canva"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Vercel v0",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -872,13 +869,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-27T10:26:47.980Z"
+      "published_at": "2026-07-27T10:26:47.980Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Paper Desktop",
+            "Paper MCP"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Stephen Haney"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-136b2edc9b9f3be8"
+      ],
+      "aggregation": {
+        "key": "EN-382635c9325bf327|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f3044a2b4363e0fd",
       "triggered_by_event_id": "EV-acdeebead5324344",
       "as_of_date": "2026-07-25",
@@ -896,7 +923,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-27590be22b8eef44",
-                "quote": "Qodo was founded in 2022 by Itamar Friedman, with Dedy Kredo as co-founder and chief product officer."
+                "quote": "Qodo was founded in 2022 by Itamar Friedman, with Dedy Kredo as co-founder and chief product officer.",
+                "source_content_hash": "3ee20fc80197fea4",
+                "quote_hash": "f4dd1a469cb8623d88ebfbbb2666708aa275e1262f0791735c4cc26997bcc04a"
               }
             ],
             "entity_id": null
@@ -907,7 +936,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-912413eb423bb183",
-                "quote": "Qodo was founded in 2018 by CEO Itamar Friedman and CPO Dedy Kredo."
+                "quote": "Qodo was founded in 2018 by CEO Itamar Friedman and CPO Dedy Kredo.",
+                "source_content_hash": "643f1383daf3527e",
+                "quote_hash": "fe8a6f2d616409ead253279abebc6376e5a55c8989364c5feca1b41014ad1968"
               }
             ],
             "entity_id": null
@@ -921,12 +952,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f001682a294672d5",
-            "quote": "The New York-headquartered startup has raised a $70 million Series B round"
+            "quote": "The New York-headquartered startup has raised a $70 million Series B round",
+            "source_content_hash": "043dbfa14e6bef8c",
+            "quote_hash": "22b256bc100741372b42bf1a27b4451fb30fcd5aa66abc873bf35da73214d533"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$70 million",
         "total_raised": "$120 million",
         "announced_at": "2026-03-30",
@@ -937,7 +970,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "a $70 million Series B round led by Qumra Capital"
+                "quote": "a $70 million Series B round led by Qumra Capital",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "3e82aa71f693635b2bd0e6364f60001938827eed0b90971a598e94d38261b40e"
               }
             ],
             "entity_id": null
@@ -948,7 +983,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
               }
             ],
             "entity_id": null
@@ -959,7 +996,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-912413eb423bb183",
-                "quote": "The round was led by Qumra Capital, with participation from Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welender, and Clara Shih."
+                "quote": "The round was led by Qumra Capital, with participation from Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welender, and Clara Shih.",
+                "source_content_hash": "643f1383daf3527e",
+                "quote_hash": "5169a5492d4d75211f56d2b21708cf6f2e5e256779e4ced1b3a261180f5128f0"
               }
             ],
             "entity_id": null
@@ -970,7 +1009,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
               }
             ],
             "entity_id": null
@@ -981,7 +1022,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
               }
             ],
             "entity_id": null
@@ -992,7 +1035,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
               }
             ],
             "entity_id": null
@@ -1003,7 +1048,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
               }
             ],
             "entity_id": null
@@ -1014,7 +1061,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
               }
             ],
             "entity_id": null
@@ -1025,7 +1074,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "8289c1808e0026857041e47dfeb94545f74d2ebfe9a2e13ff06705bb2a5a71b6"
               }
             ],
             "entity_id": null
@@ -1036,7 +1087,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f001682a294672d5",
-                "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+                "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "8289c1808e0026857041e47dfeb94545f74d2ebfe9a2e13ff06705bb2a5a71b6"
               }
             ],
             "entity_id": null
@@ -1045,7 +1098,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f001682a294672d5",
-            "quote": "The New York-headquartered startup has raised a $70 million Series B round led by Qumra Capital, bringing its total funding to $120 million."
+            "quote": "The New York-headquartered startup has raised a $70 million Series B round led by Qumra Capital, bringing its total funding to $120 million.",
+            "source_content_hash": "043dbfa14e6bef8c",
+            "quote_hash": "12c9aae933cb2977f7e155c4b5baee089a259ebb12f582452e4ca698d0e95b76"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-acdeebead5324344",
+            "round_original": "Series B",
+            "amount": "$70 million",
+            "announced_at": "2026-03-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "The New York-headquartered startup has raised a $70 million Series B round led by Qumra Capital, bringing its total funding to $120 million.",
+                "source_content_hash": "043dbfa14e6bef8c",
+                "quote_hash": "12c9aae933cb2977f7e155c4b5baee089a259ebb12f582452e4ca698d0e95b76"
+              }
+            ]
           }
         ]
       },
@@ -1064,7 +1138,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5bea4d1073dfc950",
-              "quote": "The platform's core value proposition is not just reviewing what changed in a pull request, but evaluating what that change affects across the full codebase, including its history and the organization's own engineering standards."
+              "quote": "The platform's core value proposition is not just reviewing what changed in a pull request, but evaluating what that change affects across the full codebase, including its history and the organization's own engineering standards.",
+              "source_content_hash": "91ea41d0b8a22e15",
+              "quote_hash": "5862c6c27510305ac22649cae641666e415fd08381cdeaa06a1c649edccfc607"
             }
           ],
           "entity_id": null
@@ -1078,9 +1154,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments",
+              "source_content_hash": "043dbfa14e6bef8c",
+              "quote_hash": "1790ca07bcaa0b90785ac338934c7e2d5aee7a0ae0439e82088f9138eb3cc75a"
             }
-          ]
+          ],
+          "entity_id": "EN-8d4321d936320802"
         },
         {
           "name": "Walmart",
@@ -1089,9 +1168,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments",
+              "source_content_hash": "043dbfa14e6bef8c",
+              "quote_hash": "1790ca07bcaa0b90785ac338934c7e2d5aee7a0ae0439e82088f9138eb3cc75a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Red Hat",
@@ -1100,9 +1182,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments",
+              "source_content_hash": "043dbfa14e6bef8c",
+              "quote_hash": "1790ca07bcaa0b90785ac338934c7e2d5aee7a0ae0439e82088f9138eb3cc75a"
             }
-          ]
+          ],
+          "entity_id": "EN-6ae697ad2d668653"
         },
         {
           "name": "Intuit",
@@ -1111,9 +1196,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments",
+              "source_content_hash": "043dbfa14e6bef8c",
+              "quote_hash": "1790ca07bcaa0b90785ac338934c7e2d5aee7a0ae0439e82088f9138eb3cc75a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Monday.com",
@@ -1122,9 +1210,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6a9f123ca0d3f165",
-              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month while saving monday.com developers approximately one hour per pull request."
+              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month while saving monday.com developers approximately one hour per pull request.",
+              "source_content_hash": "686dbcfe08a03dbe",
+              "quote_hash": "05e595a03add44418c9e28665ccf37ad5679a71830ab167c966ca554ad779b16"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1136,7 +1227,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9be3c470afa96211",
-              "quote": "Our growth over the past year, including increasing our enterprise footprint by 11x"
+              "quote": "Our growth over the past year, including increasing our enterprise footprint by 11x",
+              "source_content_hash": "0a9a6badfa8f461b",
+              "quote_hash": "03d92a24bb016ce93a06022bbf7efba8ccc7284af8ec771bf674e652ff8a51d1"
             }
           ]
         },
@@ -1147,7 +1240,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9be3c470afa96211",
-              "quote": "890.5K"
+              "quote": "890.5K",
+              "source_content_hash": "0a9a6badfa8f461b",
+              "quote_hash": "ca20a9dfbac59de016bab0bad71c144dbdf417bb4b75531ea6ce1e6991cc6de0"
             }
           ]
         },
@@ -1158,7 +1253,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9be3c470afa96211",
-              "quote": "642.1K"
+              "quote": "642.1K",
+              "source_content_hash": "0a9a6badfa8f461b",
+              "quote_hash": "20a7ae90154c4d3a33c85e53cb1caf1c370f91e1bba67fab3c7ec5a6c0784dcd"
             }
           ]
         },
@@ -1169,7 +1266,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6a9f123ca0d3f165",
-              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month"
+              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month",
+              "source_content_hash": "686dbcfe08a03dbe",
+              "quote_hash": "e0ce32971320d83768f9ccb0db770dc40aeeaee7475f1642cab6a7284d89dc92"
             }
           ]
         },
@@ -1180,7 +1279,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b7250191c87c90bc",
-              "quote": "The pilot demonstrated that developers saved ~50 hours per month per user."
+              "quote": "The pilot demonstrated that developers saved ~50 hours per month per user.",
+              "source_content_hash": "c7e3e4a1a0aeb1a2",
+              "quote_hash": "a8688a4ac6b380d9dd5a74f7610daf7079aed0c4191e1cea68597293e58c21ad"
             }
           ]
         },
@@ -1191,7 +1292,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b7250191c87c90bc",
-              "quote": "Within six months, the retailer recorded over 12,000 monthly active users (MAUs)"
+              "quote": "Within six months, the retailer recorded over 12,000 monthly active users (MAUs)",
+              "source_content_hash": "c7e3e4a1a0aeb1a2",
+              "quote_hash": "c007c4c593fc60d06916a4265376e835610e0567b0fe9f67f053ea2ad048ee91"
             }
           ]
         }
@@ -1212,7 +1315,22 @@
           "企业采用独立审查平台需要额外集成成本，而内置审查功能的AI编码工具可提供更低摩擦的体验"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI代码审查与治理"
+        "sector": "AI代码审查与治理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI代码生成商品化后，代码验证与治理将成为新的稀缺层。Qodo以7000万美元B轮融资、累计1.2亿美元总融资，验证了以下信号：企业客户包括Nvidia、Walmart、Red Hat等；Martian基准测试排名第一（64.3%）；企业足迹年增长11倍；VS Code和JetBrains插件合计超150万安装量。投资逻辑建立在“生成与验证需要根本不同的系统”这一判断上，而非简单的AI编码工具延伸。",
+          "evidence_signals": [
+            "Martian's Code Review Bench排名第一，得分64.3%，领先第二名超10个百分点",
+            "企业足迹年增长11倍",
+            "客户包括Nvidia、Walmart、Red Hat、Intuit、Texas Instruments、Monday.com等大型企业",
+            "VS Code插件安装量890.5K，JetBrains插件安装量642.1K",
+            "95%的开发者不完全信任AI生成代码，但仅48%持续审查，验证了市场需求"
+          ],
+          "risks": [
+            "代码生成巨头（如GitHub Copilot、Cursor、Claude Code）正将审查功能作为附加特性集成，可能削弱独立审查层的价值主张",
+            "企业采用独立审查平台需要额外集成成本，而内置审查功能的AI编码工具可提供更低摩擦的体验"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1220,234 +1338,126 @@
           "target_kind": "product",
           "research_name": "Qodo AI Code Review and Governance Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5bea4d1073dfc950",
-              "quote": "The platform's core value proposition is not just reviewing what changed in a pull request, but evaluating what that change affects across the full codebase, including its history and the organization's own engineering standards."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Itamar Friedman",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-27590be22b8eef44",
-              "quote": "Qodo was founded in 2022 by Itamar Friedman, with Dedy Kredo as co-founder and chief product officer."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dedy Kredo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-912413eb423bb183",
-              "quote": "Qodo was founded in 2018 by CEO Itamar Friedman and CPO Dedy Kredo."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Qumra Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "a $70 million Series B round led by Qumra Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Maor Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Phoenix Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-912413eb423bb183",
-              "quote": "The round was led by Qumra Capital, with participation from Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welender, and Clara Shih."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "S Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Square Peg",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Susa Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "TLV Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vine Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Peter Welinder (OpenAI)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Clara Shih (Meta)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Walmart",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Red Hat",
           "canonical_entity_id": "EN-6ae697ad2d668653",
-          "canonical_name": "Red Hat",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
-            }
-          ]
+          "canonical_name": "Red Hat"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Intuit",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f001682a294672d5",
-              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Monday.com",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6a9f123ca0d3f165",
-              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month while saving monday.com developers approximately one hour per pull request."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1557,13 +1567,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:03:24.649Z"
+      "published_at": "2026-07-26T15:03:24.649Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 7
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Qodo AI Code Review and Governance Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Dedy Kredo",
+            "Itamar Friedman"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-acdeebead5324344"
+      ],
+      "aggregation": {
+        "key": "EN-5b3767eb23d5e4ed|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-19d2c5144ad69c90",
       "triggered_by_event_id": "EV-d10684a6f16afe10",
       "as_of_date": "2026-07-25",
@@ -1581,7 +1621,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "All Hands AI co-founder and CEO Robert Brennan"
+                "quote": "All Hands AI co-founder and CEO Robert Brennan",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "8516abd7a317e1b4f5a6a8d47f484eca1b00425a8cae9df08de44134ccbd9df8"
               }
             ],
             "entity_id": null
@@ -1592,7 +1634,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "Xingyao Wang (chief AI officer)"
+                "quote": "Xingyao Wang (chief AI officer)",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "ae88529c87c08b5b0943bf6b8af8dc50188cf41e32645786d14b97b3a153b7e1"
               }
             ],
             "entity_id": null
@@ -1603,7 +1647,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "Graham Neubig (chief scientist)"
+                "quote": "Graham Neubig (chief scientist)",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "198bedbe06c65c938dae6f51e3108ada288b6f7de327a2c6467d7a16b97169a2"
               }
             ],
             "entity_id": null
@@ -1617,11 +1663,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9dd8630200082b4c",
-            "quote": "All Hands AI, which announced a $5 million seed funding round led by Menlo Ventures on Thursday, aims to build model-agnostic open source AI agents"
+            "quote": "All Hands AI, which announced a $5 million seed funding round led by Menlo Ventures on Thursday, aims to build model-agnostic open source AI agents",
+            "source_content_hash": "98fe8fb23998f253",
+            "quote_hash": "42dab98bbc1edc66e6dcf8c9fe5fd9e86567bd76e41e980c62ee50565820ba13"
           },
           {
             "source_id": "FISRC-ec35fc2e19c07bab",
-            "quote": "All Hands AI is focused on developing open source AI agents that help developers by automating routine tasks such as writing unit tests and managing documentation."
+            "quote": "All Hands AI is focused on developing open source AI agents that help developers by automating routine tasks such as writing unit tests and managing documentation.",
+            "source_content_hash": "f9c923a8f3a3f9aa",
+            "quote_hash": "a2e98cf327813a7e1f8e6e718c94fe88f2007cd08135ae0c4d5130e8c5c403f8"
           }
         ]
       },
@@ -1637,7 +1687,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "a $5 million seed funding round led by Menlo Ventures"
+                "quote": "a $5 million seed funding round led by Menlo Ventures",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "cf3397055174326401e342d004b986f90abf710e29e694a66f9fb4d3a5d131b9"
               }
             ],
             "entity_id": null
@@ -1648,7 +1700,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "Pillar VC, Betaworks and Rebellion also participated"
+                "quote": "Pillar VC, Betaworks and Rebellion also participated",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "509f9a56c7d4ae5e9b5da3ea43ab9db546d3708f1403925303c62b2dc7dd9fbe"
               }
             ],
             "entity_id": null
@@ -1659,7 +1713,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "Pillar VC, Betaworks and Rebellion also participated"
+                "quote": "Pillar VC, Betaworks and Rebellion also participated",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "509f9a56c7d4ae5e9b5da3ea43ab9db546d3708f1403925303c62b2dc7dd9fbe"
               }
             ],
             "entity_id": null
@@ -1670,7 +1726,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "Pillar VC, Betaworks and Rebellion also participated"
+                "quote": "Pillar VC, Betaworks and Rebellion also participated",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "509f9a56c7d4ae5e9b5da3ea43ab9db546d3708f1403925303c62b2dc7dd9fbe"
               }
             ],
             "entity_id": null
@@ -1681,7 +1739,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "The company also brought on a number of angels, including Hugging Face co-founder Thom Wolf"
+                "quote": "The company also brought on a number of angels, including Hugging Face co-founder Thom Wolf",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "29169775ff06f1fab5a81a968ccc113cd5c8dfe5f41e7310a2cf0df3a336f540"
               }
             ],
             "entity_id": null
@@ -1692,7 +1752,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "Cloudera co-founder Jeff Hammerbacher"
+                "quote": "Cloudera co-founder Jeff Hammerbacher",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "c75c91ca5b8d003b7bc3247958b876a62fd1ad3b68ba7cbc6d6726a6e2557114"
               }
             ],
             "entity_id": null
@@ -1703,7 +1765,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9dd8630200082b4c",
-                "quote": "PyTorch creator and Meta VP Soumith Chintala"
+                "quote": "PyTorch creator and Meta VP Soumith Chintala",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "af96c9b1d07b0dc39776de5cc000d6a8869b670b5a7c266648edea3a5433670f"
               }
             ],
             "entity_id": null
@@ -1712,11 +1776,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9dd8630200082b4c",
-            "quote": "All Hands AI, which announced a $5 million seed funding round led by Menlo Ventures on Thursday"
+            "quote": "All Hands AI, which announced a $5 million seed funding round led by Menlo Ventures on Thursday",
+            "source_content_hash": "98fe8fb23998f253",
+            "quote_hash": "fc0e2e4c5f177016e12ce753373ca389f49c36a8837e65e1cdfd2125d5df2c73"
           },
           {
             "source_id": "FISRC-ec35fc2e19c07bab",
-            "quote": "All Hands AI raised $5M in a seed funding round led by Menlo Ventures"
+            "quote": "All Hands AI raised $5M in a seed funding round led by Menlo Ventures",
+            "source_content_hash": "f9c923a8f3a3f9aa",
+            "quote_hash": "818028a62a7b31458407d4d55d395c67e3efe52b5177312a4832d6f6f00dcdee"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d10684a6f16afe10",
+            "round_original": "种子轮",
+            "amount": "500万美元",
+            "announced_at": "2024-09-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "All Hands AI, which announced a $5 million seed funding round led by Menlo Ventures on Thursday",
+                "source_content_hash": "98fe8fb23998f253",
+                "quote_hash": "fc0e2e4c5f177016e12ce753373ca389f49c36a8837e65e1cdfd2125d5df2c73"
+              },
+              {
+                "source_id": "FISRC-ec35fc2e19c07bab",
+                "quote": "All Hands AI raised $5M in a seed funding round led by Menlo Ventures",
+                "source_content_hash": "f9c923a8f3a3f9aa",
+                "quote_hash": "818028a62a7b31458407d4d55d395c67e3efe52b5177312a4832d6f6f00dcdee"
+              }
+            ]
           }
         ]
       },
@@ -1737,11 +1830,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "aims to build model-agnostic open source AI agents that can handle most of this toil"
+              "quote": "aims to build model-agnostic open source AI agents that can handle most of this toil",
+              "source_content_hash": "98fe8fb23998f253",
+              "quote_hash": "6cdfeebaad7a40716f81defefec07ab4c5563b9df1a1d7d22488461d73701b42"
             },
             {
               "source_id": "FISRC-72fd58093ec7e2ba",
-              "quote": "OpenHands can write code, run commands, browse the web, and even solve GitHub issues end-to-end."
+              "quote": "OpenHands can write code, run commands, browse the web, and even solve GitHub issues end-to-end.",
+              "source_content_hash": "f7d0d1ac165783ce",
+              "quote_hash": "cadc847cf8a7166c24ac4cb3511f119bb14441997333f40c01e56a867c36710b"
             }
           ],
           "entity_id": null
@@ -1757,7 +1854,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "now has over 30,000 stars"
+              "quote": "now has over 30,000 stars",
+              "source_content_hash": "98fe8fb23998f253",
+              "quote_hash": "050529a3369be237109cf65716b2797c9f172351d74daad20303add2e61c3010"
             }
           ]
         },
@@ -1768,7 +1867,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "more than 150 contributors"
+              "quote": "more than 150 contributors",
+              "source_content_hash": "98fe8fb23998f253",
+              "quote_hash": "bbd03e306a468af89ae94dff8bfc16de8ee3f1f897e9663b8aae0a2366057a09"
             }
           ]
         }
@@ -1786,7 +1887,19 @@
           "产品仍处于早期阶段，尚未与 VS Code 等主流开发环境深度集成，用户体验存在未解决问题，且完整的“智能体编码循环”目标仍属愿景阶段。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "人工智能基础设施与开发者工具"
+        "sector": "人工智能基础设施与开发者工具",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是开源 AI 编码智能体能否通过社区驱动的开发模式，在开发者工具市场中建立与闭源方案（如 Devin）的差异化优势。本轮融资所依赖的已验证信号包括：OpenHands 项目在 GitHub 上已获得超过 30,000 星标和超过 150 名贡献者，显示出较强的社区牵引力；创始团队在自然语言处理和智能体构建方面拥有深厚背景。但判断的证据边界仅限于早期社区指标和团队资历，尚未有商业客户验证或收入数据。",
+          "evidence_signals": [
+            "OpenHands 项目在 GitHub 上获得超过 30,000 星标",
+            "OpenHands 项目拥有超过 150 名贡献者",
+            "创始团队在自然语言处理和智能体构建方面拥有丰富经验"
+          ],
+          "risks": [
+            "产品仍处于早期阶段，尚未与 VS Code 等主流开发环境深度集成，用户体验存在未解决问题，且完整的“智能体编码循环”目标仍属愿景阶段。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1794,147 +1907,77 @@
           "target_kind": "product",
           "research_name": "OpenHands",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "aims to build model-agnostic open source AI agents that can handle most of this toil"
-            },
-            {
-              "source_id": "FISRC-72fd58093ec7e2ba",
-              "quote": "OpenHands can write code, run commands, browse the web, and even solve GitHub issues end-to-end."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Robert Brennan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "All Hands AI co-founder and CEO Robert Brennan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Xingyao Wang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "Xingyao Wang (chief AI officer)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Graham Neubig",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "Graham Neubig (chief scientist)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "a $5 million seed funding round led by Menlo Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Pillar VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "Pillar VC, Betaworks and Rebellion also participated"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Betaworks",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "Pillar VC, Betaworks and Rebellion also participated"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Rebellion",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "Pillar VC, Betaworks and Rebellion also participated"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Thom Wolf",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "The company also brought on a number of angels, including Hugging Face co-founder Thom Wolf"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jeff Hammerbacher",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "Cloudera co-founder Jeff Hammerbacher"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Soumith Chintala",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dd8630200082b4c",
-              "quote": "PyTorch creator and Meta VP Soumith Chintala"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1996,13 +2039,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:02:34.061Z"
+      "published_at": "2026-07-26T15:02:34.061Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "OpenHands"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Graham Neubig",
+            "Robert Brennan",
+            "Xingyao Wang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d10684a6f16afe10"
+      ],
+      "aggregation": {
+        "key": "EN-df30a48992da7fe8|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-3c01d00486bca8e1",
       "triggered_by_event_id": "EV-bffc68e7bb4d598b",
       "as_of_date": "2026-07-25",
@@ -2020,7 +2094,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70c3e89375309295",
-                "quote": "Thomas Stewart, Co-founder and CEO of Hadrius"
+                "quote": "Thomas Stewart, Co-founder and CEO of Hadrius",
+                "source_content_hash": "4f89d06d00dc11fa",
+                "quote_hash": "b8294e1832a43751ed0303e9174d84dac6b78977dbc14f395883d002e2ffcbcb"
               }
             ],
             "entity_id": null
@@ -2031,7 +2107,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-851e6aa6d4487d48",
-                "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
+                "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood",
+                "source_content_hash": "5c826ef0200c35f6",
+                "quote_hash": "99153ccfbc171b58a24024a3b94e04836b6d4221d4b8934a0ba6f40aaacc503c"
               }
             ],
             "entity_id": null
@@ -2042,7 +2120,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-851e6aa6d4487d48",
-                "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
+                "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood",
+                "source_content_hash": "5c826ef0200c35f6",
+                "quote_hash": "99153ccfbc171b58a24024a3b94e04836b6d4221d4b8934a0ba6f40aaacc503c"
               }
             ],
             "entity_id": null
@@ -2054,23 +2134,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "80 employees"
+              "quote": "80 employees",
+              "source_content_hash": "5c826ef0200c35f6",
+              "quote_hash": "f98c6d4c57ec7591376cf939f0b2d20338ca8572f47c0abba18190ac5ec3c7d2"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-70c3e89375309295",
-            "quote": "Hadrius, an agentic compliance infrastructure provider for financial services firms"
+            "quote": "Hadrius, an agentic compliance infrastructure provider for financial services firms",
+            "source_content_hash": "4f89d06d00dc11fa",
+            "quote_hash": "dc28c0493b638805e5f71eb596eb59e6cf582c624ee3ae3a95d2bc250cbf0948"
           },
           {
             "source_id": "FISRC-851e6aa6d4487d48",
-            "quote": "New York, United States"
+            "quote": "New York, United States",
+            "source_content_hash": "5c826ef0200c35f6",
+            "quote_hash": "b7fa922ffc51f2cd27a25c0bbeec9fe6075ee65b2b72d1a1130aefde825c6e60"
           }
         ]
       },
       "financing": {
-        "round": "种子轮和A轮",
+        "round": "多轮融资",
         "amount": "$27 million",
         "total_raised": "$29 million",
         "announced_at": "2026-07-14",
@@ -2081,7 +2167,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70c3e89375309295",
-                "quote": "led by CRV"
+                "quote": "led by CRV",
+                "source_content_hash": "4f89d06d00dc11fa",
+                "quote_hash": "a5a1708cd1d6ae7b5d07884e132d09dc33415caed2c2eb989ba224b97199a2bf"
               }
             ],
             "entity_id": null
@@ -2092,7 +2180,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70c3e89375309295",
-                "quote": "with participation from Y Combinator"
+                "quote": "with participation from Y Combinator",
+                "source_content_hash": "4f89d06d00dc11fa",
+                "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -2103,7 +2193,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70c3e89375309295",
-                "quote": "and founders of Altruist, Jump AI, and FINNY"
+                "quote": "and founders of Altruist, Jump AI, and FINNY",
+                "source_content_hash": "4f89d06d00dc11fa",
+                "quote_hash": "6a44a9ca48ad36547b6457fae59c7ec266c2d78a20498c27a13b2ade5fea9498"
               }
             ],
             "entity_id": null
@@ -2114,7 +2206,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70c3e89375309295",
-                "quote": "and founders of Altruist, Jump AI, and FINNY"
+                "quote": "and founders of Altruist, Jump AI, and FINNY",
+                "source_content_hash": "4f89d06d00dc11fa",
+                "quote_hash": "6a44a9ca48ad36547b6457fae59c7ec266c2d78a20498c27a13b2ade5fea9498"
               }
             ],
             "entity_id": null
@@ -2125,7 +2219,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70c3e89375309295",
-                "quote": "and founders of Altruist, Jump AI, and FINNY"
+                "quote": "and founders of Altruist, Jump AI, and FINNY",
+                "source_content_hash": "4f89d06d00dc11fa",
+                "quote_hash": "6a44a9ca48ad36547b6457fae59c7ec266c2d78a20498c27a13b2ade5fea9498"
               }
             ],
             "entity_id": null
@@ -2134,7 +2230,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-851e6aa6d4487d48",
-            "quote": "29.0M USD total raised"
+            "quote": "29.0M USD total raised",
+            "source_content_hash": "5c826ef0200c35f6",
+            "quote_hash": "7872ba8887604508eabd9147aee39412cbc79d5e4d58ca86df071e09e22cfc53"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-bffc68e7bb4d598b",
+            "round_original": "种子轮和A轮",
+            "amount": "$27 million",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-851e6aa6d4487d48",
+                "quote": "29.0M USD total raised",
+                "source_content_hash": "5c826ef0200c35f6",
+                "quote_hash": "7872ba8887604508eabd9147aee39412cbc79d5e4d58ca86df071e09e22cfc53"
+              }
+            ]
           }
         ]
       },
@@ -2154,7 +2271,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "consolidate compliance into a single AI-native workflow"
+              "quote": "consolidate compliance into a single AI-native workflow",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "54a8cf63e46743058b47ef3e48fdfe9cd1823c78f2bd4e811110f1863fac14b3"
             }
           ],
           "entity_id": null
@@ -2168,9 +2287,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-81c9231781459280",
-              "quote": "including BBVA"
+              "quote": "including BBVA",
+              "source_content_hash": "d4ac732eeea2d48c",
+              "quote_hash": "ad3757c4fcbb02be4da81a7f42dfbb841cb2850e512964eceae8d736ce766c2b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Csenge Advisory Group",
@@ -2179,9 +2301,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "Michael Schmidtke, Chief Compliance Officer of Csenge Advisory Group"
+              "quote": "Michael Schmidtke, Chief Compliance Officer of Csenge Advisory Group",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "2869bc19e27c64129b7bf87be0d57104c893cd3da3240e3ea679d111e62ebe46"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2195,13 +2320,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace",
+              "source_content_hash": "5c826ef0200c35f6",
+              "quote_hash": "3a73f158d5eb0205e5f5242a4490f8dc9ef9ca5e406f606d08f72221780c010c"
             },
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "recruited the former Head of Product at ACA Group"
+              "quote": "recruited the former Head of Product at ACA Group",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "3591933a953a613eca1f4c25f14eb4200cdebf3c4e82e9133045f2e8c9b161fc"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "StarCompliance",
@@ -2213,13 +2343,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace",
+              "source_content_hash": "5c826ef0200c35f6",
+              "quote_hash": "3a73f158d5eb0205e5f5242a4490f8dc9ef9ca5e406f606d08f72221780c010c"
             },
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "senior go-to-market leaders from StarCompliance"
+              "quote": "senior go-to-market leaders from StarCompliance",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "dc319593e69af04168ba2383ad180cc085c84a06b22674877c81f30d2c1cbc89"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Smarsh",
@@ -2231,9 +2366,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace",
+              "source_content_hash": "5c826ef0200c35f6",
+              "quote_hash": "3a73f158d5eb0205e5f5242a4490f8dc9ef9ca5e406f606d08f72221780c010c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2244,7 +2382,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "already serves more than 500 financial institutions and investment firms"
+              "quote": "already serves more than 500 financial institutions and investment firms",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "e35e5b9b84efa58d7c1bf7607d7d395c49bda25b8edfa08b97647b61978d0c82"
             }
           ]
         },
@@ -2255,7 +2395,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "reducing false positives by 95%"
+              "quote": "reducing false positives by 95%",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "0162425613b0c08115883ad1d7c14e7bdfc89c5511fdb52177fc84bc0d7a12dc"
             }
           ]
         },
@@ -2266,7 +2408,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "manual compliance work by 70%"
+              "quote": "manual compliance work by 70%",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "b26caa114319d7b76bbc9f9d3a90c95ede88c2884fe65817bc226c0372a9b053"
             }
           ]
         },
@@ -2277,7 +2421,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "saving over 20 hours per week"
+              "quote": "saving over 20 hours per week",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "a0f17618578357ef62e8929ca68946a8d98e05402e6ba5111512e6d0b3c18828"
             }
           ]
         },
@@ -2288,7 +2434,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fd29ec2a7e14f56f",
-              "quote": "Two-thirds of our customers use three or more modules."
+              "quote": "Two-thirds of our customers use three or more modules.",
+              "source_content_hash": "972602c652bea99d",
+              "quote_hash": "c8804d721ac9fc77d78e7bd7eaa8278b77238ffbd3892270ff83b7f69323fbd2"
             }
           ]
         }
@@ -2300,7 +2448,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "If AI is generating the communications, the marketing, and the trades, only AI can review them at the same scale"
+              "quote": "If AI is generating the communications, the marketing, and the trades, only AI can review them at the same scale",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "675ffa56396c13c763245261fcc8aeb984fec480cc8aedad45fb5be68bb8cc5f"
             }
           ]
         },
@@ -2310,7 +2460,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70c3e89375309295",
-              "quote": "Compliance is one of the largest and least automated labor markets in financial services. It represents a $9.4 billion technology opportunity sitting next to tens of billions in labor spend"
+              "quote": "Compliance is one of the largest and least automated labor markets in financial services. It represents a $9.4 billion technology opportunity sitting next to tens of billions in labor spend",
+              "source_content_hash": "4f89d06d00dc11fa",
+              "quote_hash": "06370150fc1f94393d4712992bbb6a80f8dcb09756faa636f7d992df3e15d75a"
             }
           ]
         }
@@ -2328,7 +2480,20 @@
           "现有合规巨头（如ACA Group、Smarsh）正在其客户已使用的记录系统中添加AI功能，Hadrius面临在达到记录系统地位之前，被现有厂商的“足够好”的AI功能所挤压的风险。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "金融科技"
+        "sector": "金融科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是，在AI生成内容激增导致合规审查量远超人工处理能力的背景下，Hadrius能否凭借其AI原生架构，将分散的合规支出整合为单一记录系统，从而打破合规成本与员工人数之间的线性关系。当前融资所依赖的已验证信号包括：已服务超过500家客户，并声称能减少95%的误报和70%的人工工作。判断的证据边界在于，这些效率数据来自公司单方面声明，且其客户基础部分建立在YC网络声誉之上，尚未经历现有巨头在其已有记录系统中添加AI功能后的全面竞争考验。",
+          "evidence_signals": [
+            "已服务超过500家金融机构和投资公司",
+            "客户声称减少了95%的误报和70%的人工合规工作，每周节省超过20小时",
+            "三分之二的客户使用了三个或更多产品模块，表明平台粘性",
+            "从ACA Group、StarCompliance、Smarsh等现有巨头招募高级人才，将领域信誉直接转化为分销能力"
+          ],
+          "risks": [
+            "现有合规巨头（如ACA Group、Smarsh）正在其客户已使用的记录系统中添加AI功能，Hadrius面临在达到记录系统地位之前，被现有厂商的“足够好”的AI功能所挤压的风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2336,190 +2501,98 @@
           "target_kind": "product",
           "research_name": "Hadrius 智能体合规平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "consolidate compliance into a single AI-native workflow"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Thomas Stewart",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "Thomas Stewart, Co-founder and CEO of Hadrius"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Som Mohapatra",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Allen Calderwood",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "CRV",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "led by CRV"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "with participation from Y Combinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Altruist 创始人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "and founders of Altruist, Jump AI, and FINNY"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jump AI 创始人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "and founders of Altruist, Jump AI, and FINNY"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "FINNY 创始人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "and founders of Altruist, Jump AI, and FINNY"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "BBVA",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-81c9231781459280",
-              "quote": "including BBVA"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Csenge Advisory Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "Michael Schmidtke, Chief Compliance Officer of Csenge Advisory Group"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "ACA Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
-            },
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "recruited the former Head of Product at ACA Group"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "StarCompliance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
-            },
-            {
-              "source_id": "FISRC-70c3e89375309295",
-              "quote": "senior go-to-market leaders from StarCompliance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Smarsh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-851e6aa6d4487d48",
-              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2593,10 +2666,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:02:20.968Z"
+      "published_at": "2026-07-26T15:02:20.968Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Hadrius 智能体合规平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Allen Calderwood",
+            "Som Mohapatra",
+            "Thomas Stewart"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-bffc68e7bb4d598b"
+      ],
+      "aggregation": {
+        "key": "EN-7f67f2f8692510cf|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

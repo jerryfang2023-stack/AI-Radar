@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-12",
     "generated_at": "2026-07-27T05:15:26.711Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 4,
       "auto_published": 2,
       "blocked": 2,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c02dacf223b15c73",
       "triggered_by_event_id": "EV-c0d19b8641a7a36c",
       "as_of_date": "2026-06-12",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5f2474a76a35b205",
-                "quote": "Rafael Broshi CEO and Co-Founder of Notch"
+                "quote": "Rafael Broshi CEO and Co-Founder of Notch",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "2c6b405ce93743e26c22620515c05915a2d29e42b0c4287fb905cdbe31950a1e"
               },
               {
                 "source_id": "FISRC-b978e27c112a5c5b",
-                "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)"
+                "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)",
+                "source_content_hash": "8bf0991d4328bf59",
+                "quote_hash": "5c7d6933a9155cbfaafdfba5b1ee6c393246d82ed203d19a2cfa2742cd58e67f"
               }
             ],
             "entity_id": null
@@ -50,7 +55,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b978e27c112a5c5b",
-                "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)"
+                "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)",
+                "source_content_hash": "8bf0991d4328bf59",
+                "quote_hash": "5c7d6933a9155cbfaafdfba5b1ee6c393246d82ed203d19a2cfa2742cd58e67f"
               }
             ],
             "entity_id": null
@@ -61,7 +68,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b978e27c112a5c5b",
-                "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)"
+                "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)",
+                "source_content_hash": "8bf0991d4328bf59",
+                "quote_hash": "5c7d6933a9155cbfaafdfba5b1ee6c393246d82ed203d19a2cfa2742cd58e67f"
               }
             ],
             "entity_id": null
@@ -73,23 +82,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "currently employs 50 people across development centers in Israel and the United States"
+              "quote": "currently employs 50 people across development centers in Israel and the United States",
+              "source_content_hash": "8bf0991d4328bf59",
+              "quote_hash": "6c76d232da52037792a9eda8722698160acc195e1bb97b12670acfb31f5ae967"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-5f2474a76a35b205",
-            "quote": "We Raised $30 Million to Build the AI Operating System for Regulated Industries"
+            "quote": "We Raised $30 Million to Build the AI Operating System for Regulated Industries",
+            "source_content_hash": "57df1deff02351ac",
+            "quote_hash": "3698bb4cc3143ff09315692763026d4ffbf10c9bec1b7b7ce9c2ce25b391d0f0"
           },
           {
             "source_id": "FISRC-b978e27c112a5c5b",
-            "quote": "Notch lands $30 million Series A to automate customer experience with AI agents"
+            "quote": "Notch lands $30 million Series A to automate customer experience with AI agents",
+            "source_content_hash": "8bf0991d4328bf59",
+            "quote_hash": "1331b8ce60637fe69c756dd3604e21324d420704871304ba237fe5a9f76dd489"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$30 million",
         "total_raised": "$45 million",
         "announced_at": "2026-03-25",
@@ -100,11 +115,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5f2474a76a35b205",
-                "quote": "The round was led by Headline"
+                "quote": "The round was led by Headline",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "726c030eeec49ee11c980b07b53aa5b40da1d0712da29a086635e428b9a44292"
               },
               {
                 "source_id": "FISRC-b978e27c112a5c5b",
-                "quote": "a Series A round led by Headline"
+                "quote": "a Series A round led by Headline",
+                "source_content_hash": "8bf0991d4328bf59",
+                "quote_hash": "2df4193ea5e96ac5e993dff44014eb4d3556da5692fe5f470e952ed85fd86ffe"
               }
             ],
             "entity_id": null
@@ -115,7 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5f2474a76a35b205",
-                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
+                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
               }
             ],
             "entity_id": null
@@ -126,7 +147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5f2474a76a35b205",
-                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
+                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
               }
             ],
             "entity_id": null
@@ -137,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5f2474a76a35b205",
-                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
+                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
               }
             ],
             "entity_id": null
@@ -148,7 +173,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5f2474a76a35b205",
-                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
+                "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
               }
             ],
             "entity_id": null
@@ -157,11 +184,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5f2474a76a35b205",
-            "quote": "Notch has raised $30 million in a Series A funding round, bringing total funding to $45 million."
+            "quote": "Notch has raised $30 million in a Series A funding round, bringing total funding to $45 million.",
+            "source_content_hash": "57df1deff02351ac",
+            "quote_hash": "858d12271215e45cb4a89cbe36084cb3e3c4a39db2356ec4d474f51456d3cd97"
           },
           {
             "source_id": "FISRC-b978e27c112a5c5b",
-            "quote": "has raised $30 million in a Series A round led by Headline"
+            "quote": "has raised $30 million in a Series A round led by Headline",
+            "source_content_hash": "8bf0991d4328bf59",
+            "quote_hash": "5cff40eea12a69d55dc4c053a28aa5781380823d4cecdf9aa2dc112a2208ac51"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c0d19b8641a7a36c",
+            "round_original": "Series A",
+            "amount": "$30 million",
+            "announced_at": "2026-03-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5f2474a76a35b205",
+                "quote": "Notch has raised $30 million in a Series A funding round, bringing total funding to $45 million.",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "858d12271215e45cb4a89cbe36084cb3e3c4a39db2356ec4d474f51456d3cd97"
+              },
+              {
+                "source_id": "FISRC-b978e27c112a5c5b",
+                "quote": "has raised $30 million in a Series A round led by Headline",
+                "source_content_hash": "8bf0991d4328bf59",
+                "quote_hash": "5cff40eea12a69d55dc4c053a28aa5781380823d4cecdf9aa2dc112a2208ac51"
+              }
+            ]
           }
         ]
       },
@@ -184,11 +240,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "Notch deploys AI agents that resolve issues end-to-end."
+              "quote": "Notch deploys AI agents that resolve issues end-to-end.",
+              "source_content_hash": "57df1deff02351ac",
+              "quote_hash": "ba32f294654c6cf9754f6d032d402ed542573eb01f42b34c0269d0dade2252ed"
             },
             {
               "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "conversation safety checks, defenses against adversarial misuse, hard access rules tied to identity and verification, business limits with deterministic thresholds, and jurisdiction-aware rules that adapt to local regulatory requirements."
+              "quote": "conversation safety checks, defenses against adversarial misuse, hard access rules tied to identity and verification, business limits with deterministic thresholds, and jurisdiction-aware rules that adapt to local regulatory requirements.",
+              "source_content_hash": "57df1deff02351ac",
+              "quote_hash": "e3d5615b7e052d2561197f5e0201cdb748c9c679081f265297a97e436f230130"
             }
           ],
           "entity_id": null
@@ -202,9 +262,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "In Israel, we also work with companies like Phoenix, which is also an investor."
+              "quote": "In Israel, we also work with companies like Phoenix, which is also an investor.",
+              "source_content_hash": "8bf0991d4328bf59",
+              "quote_hash": "b70d50d40e137a03895a569db9725a5e2fdaadb438bac6c943b6d213c96cec81"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -216,7 +279,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "Over the last 12 months, our ARR grew 12x."
+              "quote": "Over the last 12 months, our ARR grew 12x.",
+              "source_content_hash": "57df1deff02351ac",
+              "quote_hash": "72b1d99af3fb13479d77cc4d34f472736fc40cc3c9ab066fae673960aef446fc"
             }
           ]
         },
@@ -227,7 +292,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "bringing total funding to $45 million"
+              "quote": "bringing total funding to $45 million",
+              "source_content_hash": "57df1deff02351ac",
+              "quote_hash": "23b14480d94e140621ca3e6de20d10d79e8906b43bf13f4bf15fd277fc6e47f3"
             }
           ]
         },
@@ -238,7 +305,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "currently employs 50 people across development centers in Israel and the United States"
+              "quote": "currently employs 50 people across development centers in Israel and the United States",
+              "source_content_hash": "8bf0991d4328bf59",
+              "quote_hash": "6c76d232da52037792a9eda8722698160acc195e1bb97b12670acfb31f5ae967"
             }
           ]
         }
@@ -250,7 +319,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6721167db1ed111e",
-              "quote": "The insurance industry is beginning to understand the full potential of agentic AI. However, much of the market today is focused on point solutions that automate individual tasks, resulting in fragmented systems and mounting technical debt. The bigger opportunity is connecting broker and policyholder interactions directly to governed, compliant operational execution across the insurer's core workflows. That's where AI moves from incremental efficiency to a real end-to-end competitive advantage."
+              "quote": "The insurance industry is beginning to understand the full potential of agentic AI. However, much of the market today is focused on point solutions that automate individual tasks, resulting in fragmented systems and mounting technical debt. The bigger opportunity is connecting broker and policyholder interactions directly to governed, compliant operational execution across the insurer's core workflows. That's where AI moves from incremental efficiency to a real end-to-end competitive advantage.",
+              "source_content_hash": "71f5ba52faf1f922",
+              "quote_hash": "60b319ed13229ac688d982e0170e2b9f884e96435185a40226f45407beda0084"
             }
           ]
         },
@@ -260,7 +331,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "The hard part is building systems that meet governance and reliability requirements while also improving the customer experience. You need to be able to explain every decision it makes, keep it under control, and trust that it is consistently accurate. Notch has created a system that does just that."
+              "quote": "The hard part is building systems that meet governance and reliability requirements while also improving the customer experience. You need to be able to explain every decision it makes, keep it under control, and trust that it is consistently accurate. Notch has created a system that does just that.",
+              "source_content_hash": "57df1deff02351ac",
+              "quote_hash": "4cb4542fc66ba27a7360f966b10a1bf13b82b07e48e6f3d57da4c44174a0ac04"
             }
           ]
         }
@@ -276,7 +349,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5f2474a76a35b205",
-                "quote": "The hard part is building systems that meet governance and reliability requirements while also improving the customer experience. You need to be able to explain every decision it makes, keep it under control, and trust that it is consistently accurate. Notch has created a system that does just that."
+                "quote": "The hard part is building systems that meet governance and reliability requirements while also improving the customer experience. You need to be able to explain every decision it makes, keep it under control, and trust that it is consistently accurate. Notch has created a system that does just that.",
+                "source_content_hash": "57df1deff02351ac",
+                "quote_hash": "4cb4542fc66ba27a7360f966b10a1bf13b82b07e48e6f3d57da4c44174a0ac04"
               }
             ]
           }
@@ -293,7 +368,21 @@
           "受监管行业的销售周期长、采购流程复杂，从试点到全企业部署的转化速度和客单价提升存在不确定性。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "保险科技、金融科技、企业软件、人工智能"
+        "sector": "保险科技、金融科技、企业软件、人工智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是受监管行业（保险、金融）从 AI 试点到生产级部署的鸿沟，Notch 通过内置治理、审计和确定性控制的“AI 操作系统”来填补这一鸿沟。已验证的信号包括：过去 12 个月 ARR 增长 12 倍，已获得全球领先保险公司和金融机构的采用，以及 Phoenix Insurance 作为客户兼战略投资方的双重背书。当前估值未披露，但累计 4500 万美元融资和 12 倍 ARR 增速表明其产品在严苛的合规环境中已找到产品市场契合点。判断的证据边界限于已披露的融资公告和投资方博客，缺乏独立的第三方收入验证或客户数量数据。",
+          "evidence_signals": [
+            "过去 12 个月 ARR 增长 12 倍",
+            "已部署于全球领先保险公司和金融服务公司",
+            "获得 Phoenix Insurance 作为客户和战略投资方的双重背书",
+            "累计融资额达 4500 万美元"
+          ],
+          "risks": [
+            "来源仅披露了 ARR 增长倍数，未提供绝对收入基数，高增长可能来自低基数效应，实际业务规模尚不明确。",
+            "受监管行业的销售周期长、采购流程复杂，从试点到全企业部署的转化速度和客单价提升存在不确定性。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -301,142 +390,70 @@
           "target_kind": "product",
           "research_name": "Notch AI Operating System",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "Notch deploys AI agents that resolve issues end-to-end."
-            },
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "conversation safety checks, defenses against adversarial misuse, hard access rules tied to identity and verification, business limits with deterministic thresholds, and jurisdiction-aware rules that adapt to local regulatory requirements."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rafael Broshi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "Rafael Broshi CEO and Co-Founder of Notch"
-            },
-            {
-              "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Elool Jacoby",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yuval Peled",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "Notch was founded in 2021 by Rafael Broshi (CEO), Elool Jacoby (CPO), and Yuval Peled (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Headline",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "The round was led by Headline"
-            },
-            {
-              "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "a Series A round led by Headline"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jibe Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Illuminate Financial",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Phoenix Insurance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5f2474a76a35b205",
-              "quote": "with participation from Lightspeed Venture Partners, Jibe Ventures, Illuminate Financial, and Phoenix Insurance"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Phoenix Insurance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b978e27c112a5c5b",
-              "quote": "In Israel, we also work with companies like Phoenix, which is also an investor."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -498,13 +515,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:28:43.777Z"
+      "published_at": "2026-07-26T14:28:43.777Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Notch AI Operating System"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Elool Jacoby",
+            "Rafael Broshi",
+            "Yuval Peled"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c0d19b8641a7a36c"
+      ],
+      "aggregation": {
+        "key": "EN-a972bc1b3220493e|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c01440c843ca9eff",
       "triggered_by_event_id": "EV-a42e51959c627554",
       "as_of_date": "2026-06-12",
@@ -522,7 +570,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4809466fb52d4e17",
-                "quote": "said Markie Wagner, CEO and Founder of Poetic."
+                "quote": "said Markie Wagner, CEO and Founder of Poetic.",
+                "source_content_hash": "aca74d4271c80894",
+                "quote_hash": "4f17ec4825dfc8b385130086ede7bec26595d911c817ffadfcb34d7412b3dc74"
               }
             ],
             "entity_id": null
@@ -534,18 +584,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "The company reached an eight-figure run rate in 2025 with just four employees."
+              "quote": "The company reached an eight-figure run rate in 2025 with just four employees.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "9b2ea4f73c34d2a632d6eaeca00b8d0ef3652b0537ac9ff130e45682f88b4fb9"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-4809466fb52d4e17",
-            "quote": "Poetic (formerly known as Forge), the company building a new class of software that learns like AI but runs like code"
+            "quote": "Poetic (formerly known as Forge), the company building a new class of software that learns like AI but runs like code",
+            "source_content_hash": "aca74d4271c80894",
+            "quote_hash": "e027c3a57f9d37eb186dcbda73365d69b8fd63603e7010c5272b594bb7a9aabd"
           },
           {
             "source_id": "FISRC-de837b8619af7383",
-            "quote": "Poetic (fka Forge), a San Francisco, CA-based company building a new class of software that learns like AI but runs like code"
+            "quote": "Poetic (fka Forge), a San Francisco, CA-based company building a new class of software that learns like AI but runs like code",
+            "source_content_hash": "e31f5c9c8f4b3bf6",
+            "quote_hash": "1b2965a53140f6c873ee4fe2a8fcc1fc3bd1d7e6dfadbe2f329bf22c262e9c1b"
           }
         ]
       },
@@ -561,7 +617,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4809466fb52d4e17",
-                "quote": "raised a $50M Series A at a $500M valuation led by Kleiner Perkins."
+                "quote": "raised a $50M Series A at a $500M valuation led by Kleiner Perkins.",
+                "source_content_hash": "aca74d4271c80894",
+                "quote_hash": "62b0797a4fb689b8fbd9e58c155b3245443cceab9d0560911c421d1f849dc22c"
               }
             ],
             "entity_id": null
@@ -572,7 +630,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4809466fb52d4e17",
-                "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round."
+                "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round.",
+                "source_content_hash": "aca74d4271c80894",
+                "quote_hash": "9f176c38da4c7dc1716927c2a73cb52717cd884c69a81b3d025136acefdc395b"
               }
             ],
             "entity_id": null
@@ -583,7 +643,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4809466fb52d4e17",
-                "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round."
+                "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round.",
+                "source_content_hash": "aca74d4271c80894",
+                "quote_hash": "9f176c38da4c7dc1716927c2a73cb52717cd884c69a81b3d025136acefdc395b"
               }
             ],
             "entity_id": null
@@ -594,7 +656,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4809466fb52d4e17",
-                "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round."
+                "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round.",
+                "source_content_hash": "aca74d4271c80894",
+                "quote_hash": "9f176c38da4c7dc1716927c2a73cb52717cd884c69a81b3d025136acefdc395b"
               }
             ],
             "entity_id": "EN-7d3194f79e645c42"
@@ -603,7 +667,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-4809466fb52d4e17",
-            "quote": "announced that it has raised a $50M Series A at a $500M valuation led by Kleiner Perkins. Founders Fund, First Harmonic and OpenAI also participated in the round."
+            "quote": "announced that it has raised a $50M Series A at a $500M valuation led by Kleiner Perkins. Founders Fund, First Harmonic and OpenAI also participated in the round.",
+            "source_content_hash": "aca74d4271c80894",
+            "quote_hash": "01e9f98a4ec843a7e203c39c3a3efcb3ba719edd371ad09ab45c4ed7644382cb"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-a42e51959c627554",
+            "round_original": "A轮",
+            "amount": "$50M",
+            "announced_at": "2026-06-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4809466fb52d4e17",
+                "quote": "announced that it has raised a $50M Series A at a $500M valuation led by Kleiner Perkins. Founders Fund, First Harmonic and OpenAI also participated in the round.",
+                "source_content_hash": "aca74d4271c80894",
+                "quote_hash": "01e9f98a4ec843a7e203c39c3a3efcb3ba719edd371ad09ab45c4ed7644382cb"
+              }
+            ]
           }
         ]
       },
@@ -621,11 +706,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Poetic's purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution. The result: 99% accuracy on processes companies have failed to automate for decades"
+              "quote": "Poetic's purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution. The result: 99% accuracy on processes companies have failed to automate for decades",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "4b195a19adcdca1ac8255ece652db4e01a6df9e1ad55e3fe7621bda6613fa4c9"
             },
             {
               "source_id": "FISRC-27ef70a2104e8a9a",
-              "quote": "Recover when systems change. AI maintains the automations, self-healing as enterprise applications and data evolve."
+              "quote": "Recover when systems change. AI maintains the automations, self-healing as enterprise applications and data evolve.",
+              "source_content_hash": "c5c5d306c7d33d31",
+              "quote_hash": "977495cddfa48f0bc9a8402b548a2b66285ff2e69b27e3357403747ba11ba115"
             }
           ],
           "entity_id": null
@@ -639,9 +728,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "At SoFi, the public US bank, Poetic reached 99%+ quality executing fraud investigations end-to-end in just five weeks."
+              "quote": "At SoFi, the public US bank, Poetic reached 99%+ quality executing fraud investigations end-to-end in just five weeks.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "be45d496cbe5f7b9fec7f2e93fd7bf70d0e487a769db67686ab4dd17255741e2"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "AIG",
@@ -650,9 +742,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "At AIG, one of the largest insurance companies, Poetic similarly reached 99%+ accuracy on a complex, multi-hour process that previously required significant manual effort."
+              "quote": "At AIG, one of the largest insurance companies, Poetic similarly reached 99%+ accuracy on a complex, multi-hour process that previously required significant manual effort.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "65b478ac5aa1006628151fbc8798029bdfe35b224808cd57c3a4edbf1d1e2c22"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Chime",
@@ -661,9 +756,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-39b6a9ef5993d24e",
-              "quote": "Current clients include SoFi, AIG, and Chime."
+              "quote": "Current clients include SoFi, AIG, and Chime.",
+              "source_content_hash": "046867b4e32d36dc",
+              "quote_hash": "0cf4427449d33f3421eed45c1275ec37334e9ac30946c7127c9cc03384a15151"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -677,9 +775,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Rather than relying on autonomous \"agents\" that can be difficult to control, Poetic's purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution. The result: 99% accuracy on processes companies have failed to automate for decades, at a fraction of the cost of traditional AI agents."
+              "quote": "Rather than relying on autonomous \"agents\" that can be difficult to control, Poetic's purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution. The result: 99% accuracy on processes companies have failed to automate for decades, at a fraction of the cost of traditional AI agents.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "3229f88f14c710398cafb9d67860fead0987bc373b07ba8c8ea629d4400cde36"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -690,7 +791,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "raised a $50M Series A at a $500M valuation"
+              "quote": "raised a $50M Series A at a $500M valuation",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "47cb2595fd355ffa8ad6d9e8b125f07f8b8fad22011e595ff8f7c4abec9c60d8"
             }
           ]
         },
@@ -701,7 +804,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "The company reached an eight-figure run rate in 2025 with just four employees."
+              "quote": "The company reached an eight-figure run rate in 2025 with just four employees.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "9b2ea4f73c34d2a632d6eaeca00b8d0ef3652b0537ac9ff130e45682f88b4fb9"
             }
           ]
         },
@@ -712,7 +817,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "The result: 99% accuracy on processes companies have failed to automate for decades"
+              "quote": "The result: 99% accuracy on processes companies have failed to automate for decades",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "0a53ffd217dd1a99d0bae69500f7b9b363615020bdbf1ac6b0813ee306f5289a"
             }
           ]
         },
@@ -723,7 +830,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "we've had a 100% pilot to production conversion rate."
+              "quote": "we've had a 100% pilot to production conversion rate.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "ef2ebe98950dfc4c6822cb5736b78f8fd7fe524707ecb12c8bcbdc1999cf09dc"
             }
           ]
         },
@@ -734,7 +843,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Poetic reached 99%+ quality executing fraud investigations end-to-end in just five weeks."
+              "quote": "Poetic reached 99%+ quality executing fraud investigations end-to-end in just five weeks.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "79b51f26c082a7a7eee3afb53113824af945b71cda86434e0d98b20735d3a753"
             }
           ]
         },
@@ -745,7 +856,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "having driven double-digit millions in savings for Fortune 500 companies"
+              "quote": "having driven double-digit millions in savings for Fortune 500 companies",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "8b8bd9d26eae776727c2afde9ecea3c2a08f5720e6bcdc4ff931369c4989ce2a"
             }
           ]
         }
@@ -757,7 +870,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "In just weeks, Poetic was able to execute many of our fraud processes end-to-end, all while improving quality metrics and the member experience. With auto-decisioning, members get access restored right away, instead of days. As we've scaled across the business, we've seen 100% process adherence, even in our most complex compliance investigations."
+              "quote": "In just weeks, Poetic was able to execute many of our fraud processes end-to-end, all while improving quality metrics and the member experience. With auto-decisioning, members get access restored right away, instead of days. As we've scaled across the business, we've seen 100% process adherence, even in our most complex compliance investigations.",
+              "source_content_hash": "aca74d4271c80894",
+              "quote_hash": "216a6214d700d0da1dc518081303befc24d12653105cbd55560bcf4b2d5bd3cd"
             }
           ]
         }
@@ -773,7 +888,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4809466fb52d4e17",
-                "quote": "What Poetic has built is genuinely different - a platform that can execute the complex, high-stakes processes that large enterprises actually run, with accuracy that exceeds what human teams can deliver. The fact that they were able to automate at the largest companies with the highest requirements is a reflection of how deeply the product works. And they've done so with one of the strongest teams - leaders from Palantir, UiPath, Ramp, Scale, Retool, and many more."
+                "quote": "What Poetic has built is genuinely different - a platform that can execute the complex, high-stakes processes that large enterprises actually run, with accuracy that exceeds what human teams can deliver. The fact that they were able to automate at the largest companies with the highest requirements is a reflection of how deeply the product works. And they've done so with one of the strongest teams - leaders from Palantir, UiPath, Ramp, Scale, Retool, and many more.",
+                "source_content_hash": "aca74d4271c80894",
+                "quote_hash": "4f3ddf66abe053929722c33c398470c48df4f9e594e850c4b9354fdd453a08b0"
               }
             ]
           }
@@ -791,7 +908,22 @@
           "企业AI自动化赛道竞争激烈，众多初创公司和现有巨头均在争夺同一市场，Poetic的差异化优势能否持续尚不确定。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI自动化"
+        "sector": "企业AI自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“确定性AI执行”在企业关键流程中替代传统软件和不可控AI智能体的能力。本轮5000万美元A轮融资对应5亿美元估值，其支撑信号是已验证的极强商业效率：公司在仅有4名员工时即达到八位数年营收运行率，并在SoFi、AIG等头部客户中实现了99%以上的流程自动化准确率和100%的试点转生产成功率。这些信号表明其产品在高合规要求的场景中具备深度价值，而非停留在概念验证阶段。然而，判断的证据边界仅限于已披露的少数客户案例和公司单方面宣称的数据，缺乏更广泛的第三方验证或详细的财务审计信息。",
+          "evidence_signals": [
+            "2025年以4名员工达到八位数年营收运行率，人效极高",
+            "在SoFi和AIG等大型企业实现99%以上的流程自动化准确率",
+            "100%的试点到生产转化率，表明产品具备快速落地和客户粘性",
+            "为财富500强公司节省了数千万美元，证明了明确的投资回报率"
+          ],
+          "risks": [
+            "公司技术细节和具体实现方式披露有限，其“像代码一样运行”的确定性承诺在更广泛、多变的真实生产负载下能否保持，有待更多客户和场景的验证。",
+            "5亿美元的高早期估值压缩了容错空间，若后续增长无法匹配估值，将面临巨大的下行压力。",
+            "企业AI自动化赛道竞争激烈，众多初创公司和现有巨头均在争夺同一市场，Poetic的差异化优势能否持续尚不确定。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -799,134 +931,70 @@
           "target_kind": "product",
           "research_name": "Poetic Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Poetic's purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution. The result: 99% accuracy on processes companies have failed to automate for decades"
-            },
-            {
-              "source_id": "FISRC-27ef70a2104e8a9a",
-              "quote": "Recover when systems change. AI maintains the automations, self-healing as enterprise applications and data evolve."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Markie Wagner",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "said Markie Wagner, CEO and Founder of Poetic."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kleiner Perkins",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "raised a $50M Series A at a $500M valuation led by Kleiner Perkins."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "First Harmonic",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Founders Fund, First Harmonic and OpenAI also participated in the round."
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "SoFi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "At SoFi, the public US bank, Poetic reached 99%+ quality executing fraud investigations end-to-end in just five weeks."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "AIG",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "At AIG, one of the largest insurance companies, Poetic similarly reached 99%+ accuracy on a complex, multi-hour process that previously required significant manual effort."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Chime",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-39b6a9ef5993d24e",
-              "quote": "Current clients include SoFi, AIG, and Chime."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "传统AI智能体",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4809466fb52d4e17",
-              "quote": "Rather than relying on autonomous \"agents\" that can be difficult to control, Poetic's purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution. The result: 99% accuracy on processes companies have failed to automate for decades, at a fraction of the cost of traditional AI agents."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1009,10 +1077,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:28:21.918Z"
+      "published_at": "2026-07-26T14:28:21.918Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Poetic Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Markie Wagner"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-a42e51959c627554"
+      ],
+      "aggregation": {
+        "key": "EN-b314f58f5f506fd2|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

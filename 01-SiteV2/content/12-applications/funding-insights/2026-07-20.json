@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-20",
     "generated_at": "2026-07-26T15:19:37.170Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 5,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-413e2eb33855c065",
       "triggered_by_event_id": "EV-acf1bcb321414706",
       "as_of_date": "2026-07-20",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Alex Yaseen, Parabola’s founder and CEO"
+                "quote": "Alex Yaseen, Parabola’s founder and CEO",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "f1d4155ba7cdf45a124f014ab0d99c442e5b4fc6afb04c73da03e07c1f3f7ef6"
               },
               {
                 "source_id": "FISRC-a935a92343f71467",
-                "quote": "Parabola was founded in 2017 by CEO Alex Yaseen and Mike Lang"
+                "quote": "Parabola was founded in 2017 by CEO Alex Yaseen and Mike Lang",
+                "source_content_hash": "cbb996eb7f2c68af",
+                "quote_hash": "2f4fe37825e73d602586eed79a3f5551b3a1dd2136e4d41743bbde72bdd4fe28"
               }
             ],
             "entity_id": null
@@ -50,7 +55,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a935a92343f71467",
-                "quote": "Parabola was founded in 2017 by CEO Alex Yaseen and Mike Lang"
+                "quote": "Parabola was founded in 2017 by CEO Alex Yaseen and Mike Lang",
+                "source_content_hash": "cbb996eb7f2c68af",
+                "quote_hash": "2f4fe37825e73d602586eed79a3f5551b3a1dd2136e4d41743bbde72bdd4fe28"
               }
             ],
             "entity_id": null
@@ -62,19 +69,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "The 30-employee startup"
+              "quote": "The 30-employee startup",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "fc5375d6e291a28bd835350c8aea4b38cfd93803778db1b96b4fe1cefab44625"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-20776ee2d93a4e99",
-            "quote": "Parabola , a San Francisco-based startup that uses AI to help expedite back-office processes, particularly in the logistics and e-commerce sectors"
+            "quote": "Parabola , a San Francisco-based startup that uses AI to help expedite back-office processes, particularly in the logistics and e-commerce sectors",
+            "source_content_hash": "3674f7931a74432f",
+            "quote_hash": "a5be591feb0776528bca590829929e9edc65d7671043b9e0155040a2caa6eb7b"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$24 million",
         "total_raised": "$34.2 million",
         "announced_at": "2023-06-28",
@@ -85,7 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Series B funding round led by OpenView"
+                "quote": "Series B funding round led by OpenView",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "a0a31f1a5cac74ec5c5592083888078cf74a5a405d481285e1c03735975772e4"
               }
             ],
             "entity_id": null
@@ -96,7 +109,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "with participation from strategic investor Flexport"
+                "quote": "with participation from strategic investor Flexport",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "321e27289e0b1f72217930dfbf62538677e42459fa39c9e92fb0d95a608f6ff8"
               }
             ],
             "entity_id": null
@@ -107,11 +122,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "alongside Matrix"
+                "quote": "alongside Matrix",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "72a780fb34a1fb45e16c2c672c089ca3dcf227933cae79b6051f281545d1789d"
               },
               {
                 "source_id": "FISRC-a935a92343f71467",
-                "quote": "Series A funding led by Matrix Partners"
+                "quote": "Series A funding led by Matrix Partners",
+                "source_content_hash": "cbb996eb7f2c68af",
+                "quote_hash": "2318dec0d7eeadb8934a8be2df97822282e3d7f6b7a4ebe551d11c0014d295a6"
               }
             ],
             "entity_id": null
@@ -122,11 +141,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Thrive"
+                "quote": "Thrive",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "547ec866b74fc8d07002d6005cd0c83d836c47624d3d0bc4b3eeb0ebae732bc3"
               },
               {
                 "source_id": "FISRC-a935a92343f71467",
-                "quote": "with backing from Thrive Capital"
+                "quote": "with backing from Thrive Capital",
+                "source_content_hash": "cbb996eb7f2c68af",
+                "quote_hash": "f92578d3b2b3e8cd6f1c101694a4dcd5683fa3b4f806c20eed058c7d9bc30b94"
               }
             ],
             "entity_id": null
@@ -137,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Good Friends"
+                "quote": "Good Friends",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "b59d199b1863f9edf34e0c764ab609794e671ef9e0c62a20393d8c84192ef502"
               }
             ],
             "entity_id": null
@@ -148,7 +173,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Webflow"
+                "quote": "Webflow",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "e4459b69f687af779ac10496c811667a574cf8901a29afce6db9368032cc56e7"
               }
             ],
             "entity_id": null
@@ -159,7 +186,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Otherwise Fund"
+                "quote": "Otherwise Fund",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "ba4678e2c789b897f041fe53687155d8361e5a6375f512bee89a0f091ba7907e"
               }
             ],
             "entity_id": null
@@ -170,7 +199,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Abstract Ventures"
+                "quote": "Abstract Ventures",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "8c5f16a0ffaec07812843823b0bb8b9211e639f8438ed0889288eeec2fde1386"
               }
             ],
             "entity_id": null
@@ -181,18 +212,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-20776ee2d93a4e99",
-                "quote": "Merus Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Elad Gil",
-            "role": "种子轮参投（天使投资人）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a935a92343f71467",
-                "quote": "with backing from Thrive Capital, Elad Gil, and additional angels"
+                "quote": "Merus Capital",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "d168ad4e3d4eb25bb1660d7d015bce27f892fb0f1c8e8db4619f0e6dfa63521f"
               }
             ],
             "entity_id": null
@@ -201,11 +223,60 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-20776ee2d93a4e99",
-            "quote": "today announced that it raised $24 million in a Series B funding round led by OpenView, with participation from strategic investor Flexport alongside Matrix, Thrive, Good Friends, Webflow, Otherwise Fund, Abstract Ventures and Merus Capital."
+            "quote": "today announced that it raised $24 million in a Series B funding round led by OpenView, with participation from strategic investor Flexport alongside Matrix, Thrive, Good Friends, Webflow, Otherwise Fund, Abstract Ventures and Merus Capital.",
+            "source_content_hash": "3674f7931a74432f",
+            "quote_hash": "8f381685916631920abbe9684a80074f33c2c2392aa006fc25424a5284488547"
           },
           {
             "source_id": "FISRC-20776ee2d93a4e99",
-            "quote": "To date, the company’s raised $34.2 million — inclusive of the latest tranche."
+            "quote": "To date, the company’s raised $34.2 million — inclusive of the latest tranche.",
+            "source_content_hash": "3674f7931a74432f",
+            "quote_hash": "fa6d803791f81981180de96563aa7c72f8c29c4eb73e43420fc711e670f96c59"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [
+          {
+            "name": "Elad Gil",
+            "role": "种子轮参投（天使投资人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a935a92343f71467",
+                "quote": "with backing from Thrive Capital, Elad Gil, and additional angels",
+                "source_content_hash": "cbb996eb7f2c68af",
+                "quote_hash": "93cc0372f2da422a52d4eb3254b54b92dfabaf341546ea8a7a8aa0e7890dd73f"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "multi_round",
+              "label": "多轮融资",
+              "original": "种子轮参投（天使投资人）"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-acf1bcb321414706",
+            "round_original": "Series B",
+            "amount": "$24 million",
+            "announced_at": "2023-06-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-20776ee2d93a4e99",
+                "quote": "today announced that it raised $24 million in a Series B funding round led by OpenView, with participation from strategic investor Flexport alongside Matrix, Thrive, Good Friends, Webflow, Otherwise Fund, Abstract Ventures and Merus Capital.",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "8f381685916631920abbe9684a80074f33c2c2392aa006fc25424a5284488547"
+              },
+              {
+                "source_id": "FISRC-20776ee2d93a4e99",
+                "quote": "To date, the company’s raised $34.2 million — inclusive of the latest tranche.",
+                "source_content_hash": "3674f7931a74432f",
+                "quote_hash": "fa6d803791f81981180de96563aa7c72f8c29c4eb73e43420fc711e670f96c59"
+              }
+            ]
           }
         ]
       },
@@ -225,11 +296,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "the platform applies AI to automate various workflows. Using Parabola, customers can take documents like PDFs, text message logs, images and emails and have Parabola standardize, enrich or categorize them."
+              "quote": "the platform applies AI to automate various workflows. Using Parabola, customers can take documents like PDFs, text message logs, images and emails and have Parabola standardize, enrich or categorize them.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "b7e7a7a9651df3635342e1b0e7378206ae4ef2fc6b1c41511cd74d3412d411e6"
             },
             {
               "source_id": "FISRC-a935a92343f71467",
-              "quote": "The platform offers a user-friendly drag-and-drop interface, eliminating the need for tedious manual work."
+              "quote": "The platform offers a user-friendly drag-and-drop interface, eliminating the need for tedious manual work.",
+              "source_content_hash": "cbb996eb7f2c68af",
+              "quote_hash": "5cbc4132d022c9e75edb7ac9b2a917e6551e2787da5e56339f75e1e203e2e7c3"
             }
           ],
           "entity_id": null
@@ -243,9 +318,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a935a92343f71467",
-              "quote": "Parabola also announced new partners including Flexport, who Yaseen described as one of the company’s favorite customers."
+              "quote": "Parabola also announced new partners including Flexport, who Yaseen described as one of the company’s favorite customers.",
+              "source_content_hash": "cbb996eb7f2c68af",
+              "quote_hash": "8123883dafd966bc916a947196324ef262a50953374d42e598107da71242e8f0"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Uber Freight",
@@ -254,9 +332,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fd5f26c968e6e5e9",
-              "quote": "Uber Freight tracks thousands of shipments in real time"
+              "quote": "Uber Freight tracks thousands of shipments in real time",
+              "source_content_hash": "868396beabfec9eb",
+              "quote_hash": "adf1d81a2d475de288b97ed1963ff859cbe5dfd4c55d120e2c5c3554b20ac9bd"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Caraway",
@@ -265,9 +346,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fd5f26c968e6e5e9",
-              "quote": "Caraway saved 150 hours per month on operations"
+              "quote": "Caraway saved 150 hours per month on operations",
+              "source_content_hash": "868396beabfec9eb",
+              "quote_hash": "0eb303d63b72a6cf0bb6637b50f503fd8cc3bf40e5b75b4d3a88faa86f9ab998"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Mockingbird",
@@ -276,9 +360,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a1b0274041762813",
-              "quote": "Mockingbird saves tens of thousands of dollars—and their supply chain team’s sanity."
+              "quote": "Mockingbird saves tens of thousands of dollars—and their supply chain team’s sanity.",
+              "source_content_hash": "7a371d17abf7b457",
+              "quote_hash": "7a5a26524b0f0aeec7b9c5a5aa442bce3f3e49a4c1359ba116802fdc18e2f6e1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Ruggable",
@@ -287,9 +374,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fd5f26c968e6e5e9",
-              "quote": "Ruggable cut KPI reporting by 65%"
+              "quote": "Ruggable cut KPI reporting by 65%",
+              "source_content_hash": "868396beabfec9eb",
+              "quote_hash": "9d929c73f2dba27dc6d43219e96e17220b1d141066426527b0927b04475072c5"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -303,9 +393,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
+              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "e58a8f2f1a77c149429117103359bf8d358c18d282b7c16e5a94b0d523fc9804"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Workato",
@@ -317,9 +410,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
+              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "e58a8f2f1a77c149429117103359bf8d358c18d282b7c16e5a94b0d523fc9804"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Tray",
@@ -331,9 +427,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
+              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "e58a8f2f1a77c149429117103359bf8d358c18d282b7c16e5a94b0d523fc9804"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "MuleSoft",
@@ -345,9 +444,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
+              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "e58a8f2f1a77c149429117103359bf8d358c18d282b7c16e5a94b0d523fc9804"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Retool",
@@ -359,13 +461,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Retool has done particularly well for itself lately, raising $45 million at a $3.2 billion valuation last July."
+              "quote": "Retool has done particularly well for itself lately, raising $45 million at a $3.2 billion valuation last July.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "8db39ee81091e9284cb54cd0c11a026063d814a0e261cf24bba5f4798b4c9c23"
             },
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
+              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "e58a8f2f1a77c149429117103359bf8d358c18d282b7c16e5a94b0d523fc9804"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -376,7 +483,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "current customer base stands at just over 500 brands"
+              "quote": "current customer base stands at just over 500 brands",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "48e16866d550620cf21e6f7e17c92ebcbe28b7c51355e9d90541ee6cb9479d5c"
             }
           ]
         },
@@ -387,7 +496,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "The 30-employee startup"
+              "quote": "The 30-employee startup",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "fc5375d6e291a28bd835350c8aea4b38cfd93803778db1b96b4fe1cefab44625"
             }
           ]
         },
@@ -398,7 +509,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "plan is to expand Parabola’s headcount to 60 people by the end of the year"
+              "quote": "plan is to expand Parabola’s headcount to 60 people by the end of the year",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "494ed001aad05375ed10cc7ef27a53bc9b753e21d00493c1ef3cab35cec1b79a"
             }
           ]
         },
@@ -409,7 +522,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "To date, the company’s raised $34.2 million — inclusive of the latest tranche."
+              "quote": "To date, the company’s raised $34.2 million — inclusive of the latest tranche.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "fa6d803791f81981180de96563aa7c72f8c29c4eb73e43420fc711e670f96c59"
             }
           ]
         },
@@ -420,7 +535,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a935a92343f71467",
-              "quote": "the startup raised $8 million in Series A funding"
+              "quote": "the startup raised $8 million in Series A funding",
+              "source_content_hash": "cbb996eb7f2c68af",
+              "quote_hash": "d9c61b5755446e8a124645d0995b38efcd2e792692b1e557c446f095c019a743"
             }
           ]
         }
@@ -432,7 +549,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "2023 is the year of the operator, and Parabola is the go-to platform to empower them."
+              "quote": "2023 is the year of the operator, and Parabola is the go-to platform to empower them.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "aaf8f0061b9a275fa8014b3e95001939821fd5e7a67f35d20d315fbbe38262bd"
             }
           ]
         },
@@ -442,7 +561,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Our core differentiator is our ability to be owned directly by an operations team to build solutions to their own problems without getting bottlenecked on data and IT."
+              "quote": "Our core differentiator is our ability to be owned directly by an operations team to build solutions to their own problems without getting bottlenecked on data and IT.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "ebb8d2bd6f4c46eb8c5b6bff92a0eb96cf77077bafdade33d13a8d8260345579"
             }
           ]
         },
@@ -452,7 +573,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "This enables them to automate workflows that otherwise are too fast-changing for engineers to write code on their behalf."
+              "quote": "This enables them to automate workflows that otherwise are too fast-changing for engineers to write code on their behalf.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "48ace47e979f14998a20a90a86c1f87622426df5ad955d40f061cddfc117c721"
             }
           ]
         },
@@ -462,7 +585,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "We’ve built a suite of collaboration features that turn the ‘individual use-case’ into a ‘company use-case,’ allowing operations teams to align on best practices and ultimately build off one another’s work."
+              "quote": "We’ve built a suite of collaboration features that turn the ‘individual use-case’ into a ‘company use-case,’ allowing operations teams to align on best practices and ultimately build off one another’s work.",
+              "source_content_hash": "3674f7931a74432f",
+              "quote_hash": "5806d98375d13daef9a3a4550d28870ec71dfcd1be37eca0896095b69ed4726c"
             }
           ]
         }
@@ -479,7 +604,19 @@
           "来源中缺乏投资方对估值、收入或增长率的直接评论，无法判断融资是否基于健康的单位经济模型，还是仅依赖市场趋势叙事。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业工作流自动化"
+        "sector": "企业工作流自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“运营者自主权”——即让非技术运营团队无需依赖工程资源即可构建和拥有自动化流程。本轮融资验证的信号包括：超过500个品牌客户基础、在物流和电商等复杂后台流程中的实际应用案例，以及创始人强调的“2023是运营者之年”的市场趋势判断。然而，来源中缺乏本轮领投方OpenView或任何参投方对投资逻辑的直接公开声明，因此无法从机构视角确认其具体投资理由。",
+          "evidence_signals": [
+            "客户基础超过500个品牌，覆盖电商、零售、消费品、航运和物流等多个行业",
+            "产品已被Flexport、Uber Freight等知名物流企业采用",
+            "创始人明确将2023年定位为“运营者之年”，强调非技术用户自助式自动化的市场需求"
+          ],
+          "risks": [
+            "来源中缺乏投资方对估值、收入或增长率的直接评论，无法判断融资是否基于健康的单位经济模型，还是仅依赖市场趋势叙事。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -487,319 +624,161 @@
           "target_kind": "product",
           "research_name": "Parabola 工作流自动化平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "the platform applies AI to automate various workflows. Using Parabola, customers can take documents like PDFs, text message logs, images and emails and have Parabola standardize, enrich or categorize them."
-            },
-            {
-              "source_id": "FISRC-a935a92343f71467",
-              "quote": "The platform offers a user-friendly drag-and-drop interface, eliminating the need for tedious manual work."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alex Yaseen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Alex Yaseen, Parabola’s founder and CEO"
-            },
-            {
-              "source_id": "FISRC-a935a92343f71467",
-              "quote": "Parabola was founded in 2017 by CEO Alex Yaseen and Mike Lang"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mike Lang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a935a92343f71467",
-              "quote": "Parabola was founded in 2017 by CEO Alex Yaseen and Mike Lang"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "OpenView",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Series B funding round led by OpenView"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Flexport",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "with participation from strategic investor Flexport"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Matrix",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "alongside Matrix"
-            },
-            {
-              "source_id": "FISRC-a935a92343f71467",
-              "quote": "Series A funding led by Matrix Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Thrive Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Thrive"
-            },
-            {
-              "source_id": "FISRC-a935a92343f71467",
-              "quote": "with backing from Thrive Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Good Friends",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Good Friends"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Webflow",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Webflow"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Otherwise Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Otherwise Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Abstract Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Abstract Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Merus Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Merus Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Elad Gil",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a935a92343f71467",
-              "quote": "with backing from Thrive Capital, Elad Gil, and additional angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Flexport",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a935a92343f71467",
-              "quote": "Parabola also announced new partners including Flexport, who Yaseen described as one of the company’s favorite customers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Uber Freight",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fd5f26c968e6e5e9",
-              "quote": "Uber Freight tracks thousands of shipments in real time"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Caraway",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fd5f26c968e6e5e9",
-              "quote": "Caraway saved 150 hours per month on operations"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Mockingbird",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a1b0274041762813",
-              "quote": "Mockingbird saves tens of thousands of dollars—and their supply chain team’s sanity."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Ruggable",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fd5f26c968e6e5e9",
-              "quote": "Ruggable cut KPI reporting by 65%"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Zapier",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Workato",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Tray",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "MuleSoft",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Retool",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Retool has done particularly well for itself lately, raising $45 million at a $3.2 billion valuation last July."
-            },
-            {
-              "source_id": "FISRC-20776ee2d93a4e99",
-              "quote": "Yaseen makes the case that Parabola’s rivals, though — even the well-funded ones — focus less on building logic and more on transferring data between different systems, plus require extensive technical resources to boot."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -873,13 +852,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:58:44.722Z"
+      "published_at": "2026-07-26T14:58:44.722Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Parabola 工作流自动化平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Alex Yaseen",
+            "Mike Lang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-acf1bcb321414706"
+      ],
+      "aggregation": {
+        "key": "EN-b1d07f1a647ba7fb|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-2cd25b403c424ea4",
       "triggered_by_event_id": "EV-b29878fdf79f2ac5",
       "as_of_date": "2026-07-20",
@@ -897,11 +906,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b6c1fe80a4b09131",
-                "quote": "InstaLILY, founded in New York in 2023 by Amit Shah and Sumantro Das"
+                "quote": "InstaLILY, founded in New York in 2023 by Amit Shah and Sumantro Das",
+                "source_content_hash": "5cfacab2e15c6feb",
+                "quote_hash": "f50af185d87fbf6dba9029a3e16b592b9ef815c28bf6f83f2bbf06b8e55c6a3c"
               },
               {
                 "source_id": "FISRC-c8150575e9fc83bc",
-                "quote": "said Amit Shah, Founder and CEO of InstaLILY"
+                "quote": "said Amit Shah, Founder and CEO of InstaLILY",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "a432c19a221c0bc814d94735702a6637312b7de5722ba0d0239b7d1010219e5f"
               }
             ],
             "entity_id": null
@@ -912,7 +925,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b6c1fe80a4b09131",
-                "quote": "founded in New York in 2023 by Amit Shah and Sumantro Das"
+                "quote": "founded in New York in 2023 by Amit Shah and Sumantro Das",
+                "source_content_hash": "5cfacab2e15c6feb",
+                "quote_hash": "f1792906ca20fa0a2504419e16012d6c3dfa85ce52a779afe674722bbe48f157"
               }
             ],
             "entity_id": null
@@ -926,16 +941,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b6c1fe80a4b09131",
-            "quote": "InstaLILY, founded in New York in 2023 by Amit Shah and Sumantro Das"
+            "quote": "InstaLILY, founded in New York in 2023 by Amit Shah and Sumantro Das",
+            "source_content_hash": "5cfacab2e15c6feb",
+            "quote_hash": "f50af185d87fbf6dba9029a3e16b592b9ef815c28bf6f83f2bbf06b8e55c6a3c"
           },
           {
             "source_id": "FISRC-c8150575e9fc83bc",
-            "quote": "Headquartered in New York, with offices in San Francisco, London, and Toronto"
+            "quote": "Headquartered in New York, with offices in San Francisco, London, and Toronto",
+            "source_content_hash": "3a191e9f00bd3318",
+            "quote_hash": "f18b8b2001ecca9b43d727dde9cd8c8a8e233de8a581b94e6c052274031c9bff"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$60 million",
         "total_raised": "nearly $100 million",
         "announced_at": "2026-07-14",
@@ -946,11 +965,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b6c1fe80a4b09131",
-                "quote": "Energize Capital led a $60 million Series B"
+                "quote": "Energize Capital led a $60 million Series B",
+                "source_content_hash": "5cfacab2e15c6feb",
+                "quote_hash": "c292eb0dd7ee43fc3b58539002c20705b8a47e612de05100ae5c368987e15843"
               },
               {
                 "source_id": "FISRC-c8150575e9fc83bc",
-                "quote": "a $60 million Series B round led by Energize Capital"
+                "quote": "a $60 million Series B round led by Energize Capital",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "4fa8bf459f9a88cb76bd11a042496012b67a5b7ba09f7e9016179743492e5de2"
               }
             ],
             "entity_id": null
@@ -961,11 +984,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b6c1fe80a4b09131",
-                "quote": "Insight Partners increased its existing stake"
+                "quote": "Insight Partners increased its existing stake",
+                "source_content_hash": "5cfacab2e15c6feb",
+                "quote_hash": "f2633b02cb21a919072fbd9a71744a55ff79ab82cc784fe73b16f84cf5a45a8c"
               },
               {
                 "source_id": "FISRC-c8150575e9fc83bc",
-                "quote": "with participation from Insight Partners who has increased its investment"
+                "quote": "with participation from Insight Partners who has increased its investment",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "7588b36ed010544e044b5bf53636c54ebb118d38c2c61022260e89a7e91d816c"
               }
             ],
             "entity_id": null
@@ -976,11 +1003,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b6c1fe80a4b09131",
-                "quote": "Home Depot Ventures and United Rentals joining as strategic investors"
+                "quote": "Home Depot Ventures and United Rentals joining as strategic investors",
+                "source_content_hash": "5cfacab2e15c6feb",
+                "quote_hash": "0fcd10cdf12adcc61ac0cbd9fada15598312b5a48b464880655b3d71068bb158"
               },
               {
                 "source_id": "FISRC-c8150575e9fc83bc",
-                "quote": "new strategic investors including Home Depot Ventures and United Rentals"
+                "quote": "new strategic investors including Home Depot Ventures and United Rentals",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "2c80518acf1a3c8a823f5b9cff448d1897f05cd2f571173328c9136733a80d98"
               }
             ],
             "entity_id": null
@@ -991,11 +1022,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b6c1fe80a4b09131",
-                "quote": "Home Depot Ventures and United Rentals joining as strategic investors"
+                "quote": "Home Depot Ventures and United Rentals joining as strategic investors",
+                "source_content_hash": "5cfacab2e15c6feb",
+                "quote_hash": "0fcd10cdf12adcc61ac0cbd9fada15598312b5a48b464880655b3d71068bb158"
               },
               {
                 "source_id": "FISRC-c8150575e9fc83bc",
-                "quote": "new strategic investors including Home Depot Ventures and United Rentals"
+                "quote": "new strategic investors including Home Depot Ventures and United Rentals",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "2c80518acf1a3c8a823f5b9cff448d1897f05cd2f571173328c9136733a80d98"
               }
             ],
             "entity_id": null
@@ -1004,11 +1039,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b6c1fe80a4b09131",
-            "quote": "InstaLILY closed a $60 million Series B led by Energize Capital"
+            "quote": "InstaLILY closed a $60 million Series B led by Energize Capital",
+            "source_content_hash": "5cfacab2e15c6feb",
+            "quote_hash": "f71d7704c9fd9b409dd1591af786af22f8f341de77e01b4544dd796d1d15e1c6"
           },
           {
             "source_id": "FISRC-c8150575e9fc83bc",
-            "quote": "The round brings the company's total raised to nearly $100 million"
+            "quote": "The round brings the company's total raised to nearly $100 million",
+            "source_content_hash": "3a191e9f00bd3318",
+            "quote_hash": "5518bc382937a84518718160f2210fa43f19f0797d49164d04bef2b9f7a6617c"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b29878fdf79f2ac5",
+            "round_original": "Series B",
+            "amount": "$60 million",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6c1fe80a4b09131",
+                "quote": "InstaLILY closed a $60 million Series B led by Energize Capital",
+                "source_content_hash": "5cfacab2e15c6feb",
+                "quote_hash": "f71d7704c9fd9b409dd1591af786af22f8f341de77e01b4544dd796d1d15e1c6"
+              },
+              {
+                "source_id": "FISRC-c8150575e9fc83bc",
+                "quote": "The round brings the company's total raised to nearly $100 million",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "5518bc382937a84518718160f2210fa43f19f0797d49164d04bef2b9f7a6617c"
+              }
+            ]
           }
         ]
       },
@@ -1027,11 +1091,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Lily™ goes into a business, learns how it works, builds what the work needs, and gets it running by finding revenue, pricing quotes, planning routes, and diagnosing equipment in the field."
+              "quote": "Lily™ goes into a business, learns how it works, builds what the work needs, and gets it running by finding revenue, pricing quotes, planning routes, and diagnosing equipment in the field.",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "e0466a71b45d352603f0a255dc3186fa8680c63452d93539bdc6c950132c3d68"
             },
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Lily remains deployed and keeps deploying as the business changes, so the software keeps pace rather than falling behind"
+              "quote": "Lily remains deployed and keeps deploying as the business changes, so the software keeps pace rather than falling behind",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "0931208a5028bec1fde51abcdeecace5f8f6fc949974778f62f62983187c2fd9"
             }
           ],
           "entity_id": null
@@ -1045,13 +1113,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "SRS Distribution, part of the Home Depot family"
+              "quote": "SRS Distribution, part of the Home Depot family",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "8307b77707794fb4a26cca1ae820ec445f57d7bf328fd9b2b462e97b6fcdac9b"
             },
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Lily has helped us build the software our teams need while working within the enterprise platforms, governance, and processes we've already established."
+              "quote": "Lily has helped us build the software our teams need while working within the enterprise platforms, governance, and processes we've already established.",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "08d3d58235a10c3d720fae8e263c2bef573a2677445dcff763c040006b86b556"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "United Rentals",
@@ -1060,13 +1133,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "United Rentals runs a fleet of rental equipment"
+              "quote": "United Rentals runs a fleet of rental equipment",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "e454fa907b089cc9c7dcc398e792cdab080bfc69c6a98f9a6ea7301c7a557ea4"
             },
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "United Rentals is focused on innovative solutions to help our customers and employees be more productive"
+              "quote": "United Rentals is focused on innovative solutions to help our customers and employees be more productive",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "1510b488fc0bbea1e961a4a89e62ebbf75d19373990b1c4d129a202da5a591f7"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "ShipStation Global",
@@ -1075,9 +1153,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "ShipStation Global"
+              "quote": "ShipStation Global",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "2e83c33e03be84d19844a897fbd3c20db0036fa9cb64037035741e08499c7488"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "PartsTown",
@@ -1086,9 +1167,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "PartsTown sells replacement parts"
+              "quote": "PartsTown sells replacement parts",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "8e07348d27a178d186dc50d129fe72cf4aeca3e5f88b5481d52ffc08bcade250"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Radwell International",
@@ -1097,9 +1181,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Radwell International"
+              "quote": "Radwell International",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "a3b2456cfcbf9b2e96f045e9d6c8a22543f179490eba16d4dab6e3b6dcd89cf2"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1113,9 +1200,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Most AI assists a person, such as a coding agent for a developer or a copilot for an analyst. Lily builds and runs the software that does the work."
+              "quote": "Most AI assists a person, such as a coding agent for a developer or a copilot for an analyst. Lily builds and runs the software that does the work.",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "61b9c6b7453254c0dabb8964c4f366cf8e9b7900982ab682ad711d497d8f1a43"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "传统咨询顾问或承包商",
@@ -1127,13 +1217,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Unlike a consultant or contractor who ships a project and leaves, Lily keeps adjusting the software as the business changes"
+              "quote": "Unlike a consultant or contractor who ships a project and leaves, Lily keeps adjusting the software as the business changes",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "e7472ac91e48ad62890db26f2b1642d32bd5d0a67e55d52d0d98d798332b40ef"
             },
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "People in this role work in bursts. They embed, build, and move on, and what they built starts drifting the day they leave. Lily remains deployed and keeps deploying as the business changes"
+              "quote": "People in this role work in bursts. They embed, build, and move on, and what they built starts drifting the day they leave. Lily remains deployed and keeps deploying as the business changes",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "b63c597ffb6cf5ce093f7934e7c21c4955fd658b20f46a6e69b5998a5ca09232"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1144,11 +1239,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "A national industrial distributor added more than $200 million in new annual sales"
+              "quote": "A national industrial distributor added more than $200 million in new annual sales",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "d8e55545b963475157ae1fb81141945f439afd13f7b287f3b45588f5c38b0c06"
             },
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "generating more than $200 million in new annual sales"
+              "quote": "generating more than $200 million in new annual sales",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "bd2ee523efd4f739e4fb81081306603bfd05377c9b8d45f8c772c6864782d71e"
             }
           ]
         },
@@ -1159,11 +1258,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "revenue grew five times over the past year"
+              "quote": "revenue grew five times over the past year",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "7b6cdb458d29e75729d8cbac466a15ffd4662a69b6065f5e967e2c758455f812"
             },
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "revenue grew 5x over the past year"
+              "quote": "revenue grew 5x over the past year",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "88d63aab7fb0a0d75612b2140560e01bf4b2008e9d5551d407321eea6c8cc664"
             }
           ]
         },
@@ -1174,7 +1277,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "giving the commercial team hundreds of thousands of hours back per year"
+              "quote": "giving the commercial team hundreds of thousands of hours back per year",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "f1b71db38ef85db0d5a31eb5cdec6395b80037331705915d0ad5e3a9359ce696"
             }
           ]
         },
@@ -1185,7 +1290,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "a technician spent 15 minutes diagnosing each problem; now it takes under 10 seconds"
+              "quote": "a technician spent 15 minutes diagnosing each problem; now it takes under 10 seconds",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "5c505ddfcad3eca434af8fce4a53eba9b48caea59304eaf5880a3efb5584b6f7"
             }
           ]
         },
@@ -1196,7 +1303,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "the cost to serve a call dropped 98 percent"
+              "quote": "the cost to serve a call dropped 98 percent",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "d968b168e79963f44af28949e199d07f805e12bc5e5e04eb4794d5189894643a"
             }
           ]
         },
@@ -1207,7 +1316,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "A logistics operator that planned routes in 15 minutes now does it in 3"
+              "quote": "A logistics operator that planned routes in 15 minutes now does it in 3",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "d82b280b8d78bf1aa11160e3749a39a64141851bb67abd762e8746f53083fcfe"
             }
           ]
         },
@@ -1218,7 +1329,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "A services company cut the time to train a new field rep by more than 60 percent"
+              "quote": "A services company cut the time to train a new field rep by more than 60 percent",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "1051cbc2d74257d0ddd88a45c891b62d472a4915bbe56e7c26c275a56be8f6b1"
             }
           ]
         },
@@ -1229,11 +1342,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "total funding to nearly $100 million"
+              "quote": "total funding to nearly $100 million",
+              "source_content_hash": "5cfacab2e15c6feb",
+              "quote_hash": "339bfac328b3628d8bc50dbdc9d39df640c012252880f2530181cf5aad6d37f3"
             },
             {
               "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "total raised to nearly $100 million"
+              "quote": "total raised to nearly $100 million",
+              "source_content_hash": "3a191e9f00bd3318",
+              "quote_hash": "a9f31c49ba1a36917196cf98fae90908bc13b21c3593c5235339a088f35b43f7"
             }
           ]
         }
@@ -1250,7 +1367,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c8150575e9fc83bc",
-                "quote": "By addressing the industry's biggest constraints for AI implementation-cost, energy, latency, reliability, and speed of deployment-InstaLILY creates immediate value for customers and scales with them."
+                "quote": "By addressing the industry's biggest constraints for AI implementation-cost, energy, latency, reliability, and speed of deployment-InstaLILY creates immediate value for customers and scales with them.",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "83b3907dc44058128f8945ec0a910c98e14da5c782d5b157a3bedaa913a7b99b"
               }
             ]
           },
@@ -1263,7 +1382,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c8150575e9fc83bc",
-                "quote": "For decades, enterprise software recorded the business. Lily changes how the business runs. And the more of a business it runs, the harder it is to replace. That is why we believe Lily becomes the way these companies run on AI."
+                "quote": "For decades, enterprise software recorded the business. Lily changes how the business runs. And the more of a business it runs, the harder it is to replace. That is why we believe Lily becomes the way these companies run on AI.",
+                "source_content_hash": "3a191e9f00bd3318",
+                "quote_hash": "1577daea4e9cb011c599eb485e8638a4e9262bbdbc2d72bd701347085bd954f3"
               }
             ]
           }
@@ -1280,7 +1401,21 @@
           "早期部署的成功案例可能难以在客户数量倍增后保持同等质量，历史上企业软件在规模化时常出现管理复杂度急剧上升的问题。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI智能体/垂直行业AI（建筑、工业分销、物流、医疗）"
+        "sector": "企业AI智能体/垂直行业AI（建筑、工业分销、物流、医疗）",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI智能体能否在遗留系统密集、流程高度定制化的实体产业中产生可量化的收入或运营改善。本轮融资所依赖的已验证信号包括：一家全国性工业分销商部署后新增超过2亿美元年销售额；收入在过去一年增长5倍；Home Depot Ventures和United Rentals作为已在自身运营中使用该产品的战略客户转为投资方，表明技术已在真实供应链中经受检验。但所有收入与增长数据均为公司自行披露，未经独立审计；早期部署的成功案例能否在客户规模扩大后保持可管理性仍是未经验证的假设。",
+          "evidence_signals": [
+            "一家全国性工业分销商部署Lily后新增超过2亿美元年销售额",
+            "过去一年收入增长5倍（公司披露）",
+            "Home Depot Ventures和United Rentals作为已在内部使用该产品的战略客户转为投资方",
+            "已上线SRS Distribution、United Rentals、ShipStation Global、PartsTown、Radwell International、Henry Schein、PartsSource、Kedrion Biopharma等大型客户"
+          ],
+          "risks": [
+            "所有收入与增长数据均为公司自行披露，未经独立审计，实际业绩可能低于宣称数字。",
+            "早期部署的成功案例可能难以在客户数量倍增后保持同等质量，历史上企业软件在规模化时常出现管理复杂度急剧上升的问题。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1288,218 +1423,98 @@
           "target_kind": "product",
           "research_name": "Lily",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Lily™ goes into a business, learns how it works, builds what the work needs, and gets it running by finding revenue, pricing quotes, planning routes, and diagnosing equipment in the field."
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Lily remains deployed and keeps deploying as the business changes, so the software keeps pace rather than falling behind"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Amit Shah",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "InstaLILY, founded in New York in 2023 by Amit Shah and Sumantro Das"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "said Amit Shah, Founder and CEO of InstaLILY"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sumantro Das",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "founded in New York in 2023 by Amit Shah and Sumantro Das"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Energize Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Energize Capital led a $60 million Series B"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "a $60 million Series B round led by Energize Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Insight Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Insight Partners increased its existing stake"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "with participation from Insight Partners who has increased its investment"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Home Depot Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Home Depot Ventures and United Rentals joining as strategic investors"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "new strategic investors including Home Depot Ventures and United Rentals"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "United Rentals",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Home Depot Ventures and United Rentals joining as strategic investors"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "new strategic investors including Home Depot Ventures and United Rentals"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "SRS Distribution (隶属于The Home Depot家族)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "SRS Distribution, part of the Home Depot family"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Lily has helped us build the software our teams need while working within the enterprise platforms, governance, and processes we've already established."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "United Rentals",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "United Rentals runs a fleet of rental equipment"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "United Rentals is focused on innovative solutions to help our customers and employees be more productive"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "ShipStation Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "ShipStation Global"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "PartsTown",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "PartsTown sells replacement parts"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Radwell International",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Radwell International"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "通用AI编程助手/聊天机器人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "Most AI assists a person, such as a coding agent for a developer or a copilot for an analyst. Lily builds and runs the software that does the work."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "传统咨询顾问或承包商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b6c1fe80a4b09131",
-              "quote": "Unlike a consultant or contractor who ships a project and leaves, Lily keeps adjusting the software as the business changes"
-            },
-            {
-              "source_id": "FISRC-c8150575e9fc83bc",
-              "quote": "People in this role work in bursts. They embed, build, and move on, and what they built starts drifting the day they leave. Lily remains deployed and keeps deploying as the business changes"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1549,13 +1564,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:58:43.197Z"
+      "published_at": "2026-07-26T14:58:43.197Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Lily"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Amit Shah",
+            "Sumantro Das"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-b29878fdf79f2ac5"
+      ],
+      "aggregation": {
+        "key": "EN-b0bc23fa8e20c543|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-91476e600f6a369f",
       "triggered_by_event_id": "EV-c64e6836b9cd2b17",
       "as_of_date": "2026-07-20",
@@ -1573,11 +1618,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8c22d95f569f927e",
-                "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi"
+                "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi",
+                "source_content_hash": "a8e29aa71b711e6e",
+                "quote_hash": "80ad3749fd84babd7cd505e4b2f4316743b0bee5bf5ab89f09af915191b0b8cb"
               },
               {
                 "source_id": "FISRC-8c22d95f569f927e",
-                "quote": "Tom Reno, cofounder and CEO of Agave"
+                "quote": "Tom Reno, cofounder and CEO of Agave",
+                "source_content_hash": "a8e29aa71b711e6e",
+                "quote_hash": "2af8d2e319637fb2389df1f13b8dc07767302eaf5d174ec69894bc87905c3219"
               }
             ],
             "entity_id": null
@@ -1588,7 +1637,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8c22d95f569f927e",
-                "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi"
+                "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi",
+                "source_content_hash": "a8e29aa71b711e6e",
+                "quote_hash": "80ad3749fd84babd7cd505e4b2f4316743b0bee5bf5ab89f09af915191b0b8cb"
               }
             ],
             "entity_id": null
@@ -1599,7 +1650,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8c22d95f569f927e",
-                "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi"
+                "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi",
+                "source_content_hash": "a8e29aa71b711e6e",
+                "quote_hash": "80ad3749fd84babd7cd505e4b2f4316743b0bee5bf5ab89f09af915191b0b8cb"
               }
             ],
             "entity_id": null
@@ -1613,16 +1666,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-8c22d95f569f927e",
-            "quote": "Agave, the AI platform for construction financials"
+            "quote": "Agave, the AI platform for construction financials",
+            "source_content_hash": "a8e29aa71b711e6e",
+            "quote_hash": "e713d72cfd1d37fe87b87d1ebdc1d42a8efea752f14bc21acd80ffc74ac6c290"
           },
           {
             "source_id": "FISRC-5a8f27e8b98eb42b",
-            "quote": "Agave, a San Francisco, CA-based provider of an AI platform for construction financials"
+            "quote": "Agave, a San Francisco, CA-based provider of an AI platform for construction financials",
+            "source_content_hash": "83a2efa40f7f93c7",
+            "quote_hash": "d3a825b320dbd279663aa0c0b9a2412cc3804b6e5721c407339207325859137a"
           }
         ]
       },
       "financing": {
-        "round": "A 轮",
+        "round": "A轮",
         "amount": "$15M",
         "total_raised": "超过 $20 million",
         "announced_at": "2026-07-16",
@@ -1633,7 +1690,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8c22d95f569f927e",
-                "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round"
+                "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round",
+                "source_content_hash": "a8e29aa71b711e6e",
+                "quote_hash": "88974bce0aab07cf03d56a71b75754c7a57ab8b1dec8e5b7027c8f6f7a43b261"
               }
             ],
             "entity_id": null
@@ -1644,7 +1703,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8c22d95f569f927e",
-                "quote": "with continued participation from YCombinator"
+                "quote": "with continued participation from YCombinator",
+                "source_content_hash": "a8e29aa71b711e6e",
+                "quote_hash": "94ac678dabab71c3bc142c1fa854dee0a24df8c7e05324e1ebf3c7eaed5608ed"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -1653,7 +1714,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-8c22d95f569f927e",
-            "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round, with continued participation from YCombinator. The round brings Agave’s total funding to over $20 million"
+            "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round, with continued participation from YCombinator. The round brings Agave’s total funding to over $20 million",
+            "source_content_hash": "a8e29aa71b711e6e",
+            "quote_hash": "c9101e74b47564eaf2ac0698bd246a01e13c4c76dfda90bfefdcbae5f8a3932c"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c64e6836b9cd2b17",
+            "round_original": "A 轮",
+            "amount": "$15M",
+            "announced_at": "2026-07-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8c22d95f569f927e",
+                "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round, with continued participation from YCombinator. The round brings Agave’s total funding to over $20 million",
+                "source_content_hash": "a8e29aa71b711e6e",
+                "quote_hash": "c9101e74b47564eaf2ac0698bd246a01e13c4c76dfda90bfefdcbae5f8a3932c"
+              }
+            ]
           }
         ]
       },
@@ -1669,7 +1751,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "give construction field teams real-time financial data from ERPs inside project management systems like Procore and Autodesk Forma Build"
+              "quote": "give construction field teams real-time financial data from ERPs inside project management systems like Procore and Autodesk Forma Build",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "75710f7b3f3abcd83d06da35a22081499f1b6ea855858140a416fe9260087b30"
             }
           ],
           "entity_id": null
@@ -1686,7 +1770,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "automatically code, reconcile, and import invoices and credit-card transactions to ERPs"
+              "quote": "automatically code, reconcile, and import invoices and credit-card transactions to ERPs",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "f2c0a56084c8909ce19edd85b0dcb12a4a5d505ca6ba09fbc95205e78f582b54"
             }
           ],
           "entity_id": null
@@ -1702,7 +1788,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Users can also build their own AI agents, automating business-specific workflows that pre-built tools can’t support."
+              "quote": "Users can also build their own AI agents, automating business-specific workflows that pre-built tools can’t support.",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "e4f9135fe7671f1cd6ac50273d5ca80745b680a65dd798c51811c0e4f6a71cce"
             }
           ],
           "entity_id": null
@@ -1716,9 +1804,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
+              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "12ff28db5d9839b6429cffd879dccd828057636c9f941bf2c2d95e715c966218"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Stacy Witbeck",
@@ -1727,9 +1818,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
+              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "12ff28db5d9839b6429cffd879dccd828057636c9f941bf2c2d95e715c966218"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Brinkman Construction",
@@ -1738,13 +1832,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
+              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "12ff28db5d9839b6429cffd879dccd828057636c9f941bf2c2d95e715c966218"
             },
             {
               "source_id": "FISRC-222372d628301211",
-              "quote": "Brinkman Construction Cut Forecasting Time in Half and Transformed Change Order Management with Agave"
+              "quote": "Brinkman Construction Cut Forecasting Time in Half and Transformed Change Order Management with Agave",
+              "source_content_hash": "3c966e300fbb3ab9",
+              "quote_hash": "b9992a40794db13bbc4db0e4c9f16a1889354cb07517b73b9a50ce24904790d0"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Satterfield & Pontikes",
@@ -1753,9 +1852,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
+              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "12ff28db5d9839b6429cffd879dccd828057636c9f941bf2c2d95e715c966218"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "RW Dake",
@@ -1764,9 +1866,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
+              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "12ff28db5d9839b6429cffd879dccd828057636c9f941bf2c2d95e715c966218"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1778,7 +1883,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "works with more than 500 general and specialty contractors"
+              "quote": "works with more than 500 general and specialty contractors",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "68b96abc069cd869a2d1a856e3244526756e84dfe85ee61327069cffa7e8a44a"
             }
           ]
         },
@@ -1789,7 +1896,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "used across more than 80,000 construction projects"
+              "quote": "used across more than 80,000 construction projects",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "ff13a9dd1dad6d28e244bccba6cbb9ea90ebea8b46f422a7c7b9d359922b66fd"
             }
           ]
         },
@@ -1800,7 +1909,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "representing more than $100 billion in project volume"
+              "quote": "representing more than $100 billion in project volume",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "1658c6047ed6f520b2b9be340d49241229c635d90f236e3b5c1e0916df1a829e"
             }
           ]
         },
@@ -1811,7 +1922,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "saving more than 60 hours per month on tasks like data entry, financial reporting and cost reconciliation"
+              "quote": "saving more than 60 hours per month on tasks like data entry, financial reporting and cost reconciliation",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "6a4bae435c5fbb02e1f6790a2dedb82d96d2d5c4c56213313232a1c49e2b7faa"
             }
           ]
         },
@@ -1822,7 +1935,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Customers report over 80% reduction in time spent across thousands of tasks per month."
+              "quote": "Customers report over 80% reduction in time spent across thousands of tasks per month.",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "fec4fb0056458f2f245b7389a5fdbe19b12ec1283c4ffb968b74e222449f5437"
             }
           ]
         },
@@ -1833,7 +1948,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "tripled its revenue year-over-year"
+              "quote": "tripled its revenue year-over-year",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "536599f8b959ae28396c5ede64d1c2eadb9376677f4b6be7312209f78492023f"
             }
           ]
         },
@@ -1844,7 +1961,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "profitable for over two years"
+              "quote": "profitable for over two years",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "9fd98f981756689728b721880d972f92ff0ada597ef1e02b5683a1cc71e71371"
             }
           ]
         },
@@ -1855,7 +1974,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "connections with more than 14 ERP and project management systems"
+              "quote": "connections with more than 14 ERP and project management systems",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "10cd40bca52d359f989201f9c4f1984bc4160384fedaf53bcc7fa27b9a57fda7"
             }
           ]
         }
@@ -1867,7 +1988,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "AI adoption in construction won’t come from replacing existing systems, but from enabling AI to work seamlessly with them"
+              "quote": "AI adoption in construction won’t come from replacing existing systems, but from enabling AI to work seamlessly with them",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "ebf7be5eced5db0e32961c04a0f051ebf6674db7b2a89234de20d8808a318c2f"
             }
           ]
         },
@@ -1877,7 +2000,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Most energy in AI goes into building new software. The bigger opportunity is deploying AI to operate on systems companies already depend on, helping enterprises get more out of what they have today"
+              "quote": "Most energy in AI goes into building new software. The bigger opportunity is deploying AI to operate on systems companies already depend on, helping enterprises get more out of what they have today",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "0cf38653cc70e25e2bd423ed25d080563c495929b9ed8e8feec2f08d53854c69"
             }
           ]
         },
@@ -1887,7 +2012,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "We’ve more than doubled in size over the past few years, and Agave’s been a big reason my team can keep up without adding headcount"
+              "quote": "We’ve more than doubled in size over the past few years, and Agave’s been a big reason my team can keep up without adding headcount",
+              "source_content_hash": "a8e29aa71b711e6e",
+              "quote_hash": "bafa8db734d0b5b0e8bfeca7a7f7ec74fc3f5a8b37c74be8563a493007d6c8de"
             }
           ]
         }
@@ -1906,7 +2033,21 @@
           "建筑行业 ERP 系统老旧、缺乏现代 API，深度集成的技术壁垒虽高，但维护和扩展成本巨大，可能拖慢新产品迭代速度。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "建筑科技 (Construction Tech) / AI 财务自动化"
+        "sector": "建筑科技 (Construction Tech) / AI 财务自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Agave 在建筑这一垂直行业中，通过深度集成老旧、复杂的 ERP 系统，实现 AI 驱动的后台工作流自动化，从而解决因劳动力退休潮带来的行业知识断层和效率瓶颈。本轮融资并非生存所需，而是为了抓住需求爆发的窗口期，加速产品扩张。已验证的信号包括：公司已实现超过两年的盈利、收入同比增长三倍、服务超过 500 家承包商且客户节省了大量时间，这些证明了其产品市场契合度和商业模式的可持续性。",
+          "evidence_signals": [
+            "已盈利超过两年",
+            "收入同比增长三倍",
+            "服务超过 500 家承包商",
+            "客户每月节省超过 60 小时",
+            "覆盖超过 80,000 个项目，总价值超 1000 亿美元"
+          ],
+          "risks": [
+            "建筑行业 ERP 系统老旧、缺乏现代 API，深度集成的技术壁垒虽高，但维护和扩展成本巨大，可能拖慢新产品迭代速度。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1914,177 +2055,91 @@
           "target_kind": "product",
           "research_name": "ERP Sync",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "give construction field teams real-time financial data from ERPs inside project management systems like Procore and Autodesk Forma Build"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AP Invoice Automation",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "automatically code, reconcile, and import invoices and credit-card transactions to ERPs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AI Agent 构建器",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Users can also build their own AI agents, automating business-specific workflows that pre-built tools can’t support."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tom Reno",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi"
-            },
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Tom Reno, cofounder and CEO of Agave"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "John Zucchi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Pooria Azimi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "Founded by Tom Reno, John Zucchi, and Pooria Azimi"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "raised a $15M Series A funding round from Accel, who led Agave’s Seed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "with continued participation from YCombinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Evans General Contractors",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Stacy Witbeck",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Brinkman Construction",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
-            },
-            {
-              "source_id": "FISRC-222372d628301211",
-              "quote": "Brinkman Construction Cut Forecasting Time in Half and Transformed Change Order Management with Agave"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Satterfield & Pontikes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "RW Dake",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8c22d95f569f927e",
-              "quote": "like Evans General Contractors, Stacy Witbeck, Brinkman Construction, Satterfield & Pontikes, and RW Dake"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2146,13 +2201,46 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:57:32.060Z"
+      "published_at": "2026-07-26T14:57:32.060Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI Agent 构建器",
+            "AP Invoice Automation",
+            "ERP Sync"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "John Zucchi",
+            "Pooria Azimi",
+            "Tom Reno"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c64e6836b9cd2b17"
+      ],
+      "aggregation": {
+        "key": "EN-95fb1fa9a88b393c|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-a068b8f09b73607c",
       "triggered_by_event_id": "EV-d5aa723446feebbb",
       "as_of_date": "2026-07-20",
@@ -2170,7 +2258,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-68a8dc57ec8eec7f",
-                "quote": "Kadiyala, who is the company’s CEO, told TechCrunch."
+                "quote": "Kadiyala, who is the company’s CEO, told TechCrunch.",
+                "source_content_hash": "1066cbe242af0e32",
+                "quote_hash": "fb22515c04529be9dec6909f3967bf56dfc128d429bb94943653087ae4cf571e"
               }
             ],
             "entity_id": null
@@ -2181,7 +2271,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-68a8dc57ec8eec7f",
-                "quote": "Aryee, SRE.ai’s CTO, said they noticed the divide between the infrastructure tooling they had access to versus what others who didn’t work at Google had to use."
+                "quote": "Aryee, SRE.ai’s CTO, said they noticed the divide between the infrastructure tooling they had access to versus what others who didn’t work at Google had to use.",
+                "source_content_hash": "1066cbe242af0e32",
+                "quote_hash": "8c7459d8215117235e5c3b05d965a982fd9d10e9437a0a113783807a5bfe2bd0"
               }
             ],
             "entity_id": null
@@ -2193,18 +2285,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-721b674d98b6b1e4",
-              "quote": "Team Size: 15"
+              "quote": "Team Size: 15",
+              "source_content_hash": "b49b0d55abf3d752",
+              "quote_hash": "4fdf084fa59d21a08e9ff2884878de77664e9134c54cc251f2b02db3cde79608"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-68a8dc57ec8eec7f",
-            "quote": "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing."
+            "quote": "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing.",
+            "source_content_hash": "1066cbe242af0e32",
+            "quote_hash": "512ad1084754d8cc6f2a1eddaa85667d750b3d848f1a35fed3f9330a84f72abc"
           },
           {
             "source_id": "FISRC-721b674d98b6b1e4",
-            "quote": "Location: San Francisco"
+            "quote": "Location: San Francisco",
+            "source_content_hash": "b49b0d55abf3d752",
+            "quote_hash": "efed225dea9c6a0b8f51457d3fc760b030cd6fcc70b7149096cfa83f8f56d09a"
           }
         ]
       },
@@ -2220,7 +2318,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-68a8dc57ec8eec7f",
-                "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners."
+                "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+                "source_content_hash": "1066cbe242af0e32",
+                "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
               }
             ],
             "entity_id": null
@@ -2231,27 +2331,59 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-68a8dc57ec8eec7f",
-                "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners."
+                "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+                "source_content_hash": "1066cbe242af0e32",
+                "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
               }
             ],
             "entity_id": null
-          },
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-68a8dc57ec8eec7f",
+            "quote": "The company officially came out of stealth on Wednesday and announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+            "source_content_hash": "1066cbe242af0e32",
+            "quote_hash": "409aebdda4850ec927c3bcda99ad34340e03fac1371984371cf5fdcec369b264"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [
           {
             "name": "Y Combinator",
             "role": "既有投资方",
             "evidence_refs": [
               {
                 "source_id": "FISRC-8ef8a57bdcb3befe",
-                "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors"
+                "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors",
+                "source_content_hash": "5177c94ed465e18a",
+                "quote_hash": "497f229ff4bc7fb60a981e1cafb2cc72fcaa39fab80f0b6857086b53cb08b293"
               }
             ],
-            "entity_id": "EN-275b0f4a4023d91c"
+            "entity_id": "EN-275b0f4a4023d91c",
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
           }
         ],
-        "evidence_refs": [
+        "disclosures": [
           {
-            "source_id": "FISRC-68a8dc57ec8eec7f",
-            "quote": "The company officially came out of stealth on Wednesday and announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners."
+            "event_id": "EV-d5aa723446feebbb",
+            "round_original": "种子轮",
+            "amount": "$7.2 million",
+            "announced_at": "2025-08-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-68a8dc57ec8eec7f",
+                "quote": "The company officially came out of stealth on Wednesday and announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners.",
+                "source_content_hash": "1066cbe242af0e32",
+                "quote_hash": "409aebdda4850ec927c3bcda99ad34340e03fac1371984371cf5fdcec369b264"
+              }
+            ]
           }
         ]
       },
@@ -2270,15 +2402,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing."
+              "quote": "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing.",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "512ad1084754d8cc6f2a1eddaa85667d750b3d848f1a35fed3f9330a84f72abc"
             },
             {
               "source_id": "FISRC-8ef8a57bdcb3befe",
-              "quote": "we provide an AI-native control plane that: Detects and prevents risky changes before they break production Orchestrates release cycles across teams and business units Answers plain-language questions"
+              "quote": "we provide an AI-native control plane that: Detects and prevents risky changes before they break production Orchestrates release cycles across teams and business units Answers plain-language questions",
+              "source_content_hash": "5177c94ed465e18a",
+              "quote_hash": "2d6a5350e156984b3431a5490aa7fa1f036a33b1051c14ccece57a6761aa0012"
             },
             {
               "source_id": "FISRC-721b674d98b6b1e4",
-              "quote": "We built AI agents to automate Salesforce DevOps, allowing organizations to create customized executable workflows, including: CI/CD and testing Merge conflict resolution Environment spin-up/down Simulations and impact reports"
+              "quote": "We built AI agents to automate Salesforce DevOps, allowing organizations to create customized executable workflows, including: CI/CD and testing Merge conflict resolution Environment spin-up/down Simulations and impact reports",
+              "source_content_hash": "b49b0d55abf3d752",
+              "quote_hash": "bba41900f3a56a3c808ad2931b259407263344a15ab97cf1bf80d7df5ef2bd2c"
             }
           ],
           "entity_id": null
@@ -2296,9 +2434,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow."
+              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow.",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "649e44ec3d853b83c51d947daed7b4f50fc84eac4ad9844154a9fb4dc0a27709"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Gearset",
@@ -2310,9 +2451,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow."
+              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow.",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "649e44ec3d853b83c51d947daed7b4f50fc84eac4ad9844154a9fb4dc0a27709"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Flosum",
@@ -2324,9 +2468,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow."
+              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow.",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "649e44ec3d853b83c51d947daed7b4f50fc84eac4ad9844154a9fb4dc0a27709"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2337,7 +2484,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "So they founded SRE.ai in 2024"
+              "quote": "So they founded SRE.ai in 2024",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "08f473bfe8a27a03b9b206f56d1c27f4c67ab840e2fedbea4b866c5976658228"
             }
           ]
         },
@@ -2348,7 +2497,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "The company partook in YC’s Fall ’24 cohort"
+              "quote": "The company partook in YC’s Fall ’24 cohort",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "3eae84953ed3288fd137e78207a3ef43ce373c3d65902c46dec97de65fdb1f06"
             }
           ]
         }
@@ -2360,7 +2511,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "“Instead of stitching together different low-code tools for enterprise applications like Salesforce, compared to products built on AWS, GCP, or Azure, teams can now move faster with context-driven, chat-like experiences that work across all of them,” Kadiyala, who is the company’s CEO, told TechCrunch."
+              "quote": "“Instead of stitching together different low-code tools for enterprise applications like Salesforce, compared to products built on AWS, GCP, or Azure, teams can now move faster with context-driven, chat-like experiences that work across all of them,” Kadiyala, who is the company’s CEO, told TechCrunch.",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "79168fb2ac6b37f57e597f6a5acba6adc3f58a7241821fa476fc4b3a787cadc4"
             }
           ]
         },
@@ -2370,7 +2523,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "“It gnawed at us,” Aryee said."
+              "quote": "“It gnawed at us,” Aryee said.",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "61f31681f6e0ec67538cd9cda4882d1528fbb7153455c0ad629c44280ddbf8e2"
             }
           ]
         },
@@ -2380,7 +2535,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "He and Kadiyala realized: “The next generation of DevOps experiences needed to be created.”"
+              "quote": "He and Kadiyala realized: “The next generation of DevOps experiences needed to be created.”",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "b0bd3755e917f82384cca38c63890e1f2a5aa334350ddaaa077e7cdb7c9f2cbb"
             }
           ]
         },
@@ -2390,7 +2547,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "“We’re seeing a lot of early traction; we’re excited about building out our team to support new customers and extend the platform with new features,” he said."
+              "quote": "“We’re seeing a lot of early traction; we’re excited about building out our team to support new customers and extend the platform with new features,” he said.",
+              "source_content_hash": "1066cbe242af0e32",
+              "quote_hash": "a0c19052681786b55a7c316941a1f25e1c9381f92f9f401d3a1bf22246f6a556"
             }
           ]
         }
@@ -2408,7 +2567,20 @@
           "来源仅提及“早期牵引力”，但未提供任何客户数量、收入或使用量等量化指标，商业化验证程度不明确。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业级DevOps AI智能体"
+        "sector": "企业级DevOps AI智能体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“跨平台的企业级DevOps AI智能体”这一产品定位。SRE.ai 的创始团队来自Google Research和DeepMind，具备构建高可靠性AI系统的经验，这构成了团队背景上的已验证信号。此外，公司参与了Y Combinator的Fall '24批次，并获得了Salesforce Ventures和Crane Venture Partners的领投，且融资轮次被超额认购，表明其产品方向和早期市场验证获得了机构认可。然而，来源未提供具体的客户数量、收入数据或详细的增长指标，因此判断的证据边界仅限于创始团队背景、产品定位、投资者品牌和“早期牵引力”的定性描述。",
+          "evidence_signals": [
+            "创始团队来自Google Research和DeepMind，具备构建高可靠性AI系统的经验。",
+            "产品定位为跨平台（AWS到ServiceNow）的DevOps AI智能体，与竞品形成差异化。",
+            "种子轮融资由Salesforce Ventures和Crane Venture Partners领投，且轮次被超额认购。",
+            "公司参与了Y Combinator Fall '24批次。"
+          ],
+          "risks": [
+            "来源仅提及“早期牵引力”，但未提供任何客户数量、收入或使用量等量化指标，商业化验证程度不明确。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2416,125 +2588,63 @@
           "target_kind": "product",
           "research_name": "SRE.ai Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "The company is offering natural language AI agents that can perform complex enterprise DevOps workflows like continuous integration and testing."
-            },
-            {
-              "source_id": "FISRC-8ef8a57bdcb3befe",
-              "quote": "we provide an AI-native control plane that: Detects and prevents risky changes before they break production Orchestrates release cycles across teams and business units Answers plain-language questions"
-            },
-            {
-              "source_id": "FISRC-721b674d98b6b1e4",
-              "quote": "We built AI agents to automate Salesforce DevOps, allowing organizations to create customized executable workflows, including: CI/CD and testing Merge conflict resolution Environment spin-up/down Simulations and impact reports"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Raj Kadiyala",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Kadiyala, who is the company’s CEO, told TechCrunch."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Edward Aryee",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Aryee, SRE.ai’s CTO, said they noticed the divide between the infrastructure tooling they had access to versus what others who didn’t work at Google had to use."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Salesforce Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Crane Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "announced a $7.2 million seed round led by Salesforce Ventures and Crane Venture Partners."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8ef8a57bdcb3befe",
-              "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Copado",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Gearset",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Flosum",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-68a8dc57ec8eec7f",
-              "quote": "Other competing players include Copado, Gearset, and Flosum. But Kadiyala said SRE.ai is different in that it works across multiple platforms spanning from AWS to ServiceNow."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2596,13 +2706,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:57:30.198Z"
+      "published_at": "2026-07-26T14:57:30.198Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "SRE.ai Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Edward Aryee",
+            "Raj Kadiyala"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d5aa723446feebbb"
+      ],
+      "aggregation": {
+        "key": "EN-c08f86842ff2c908|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-58baa4c841e866a2",
       "triggered_by_event_id": "EV-34a077ec20c91cea",
       "as_of_date": "2026-07-20",
@@ -2620,7 +2760,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f2cf5fffe908f689",
-                "quote": "Peter Dun, co-founder and CEO of Feathery"
+                "quote": "Peter Dun, co-founder and CEO of Feathery",
+                "source_content_hash": "3eea4eb49517b036",
+                "quote_hash": "78017c61d31314c8b1c7b8474805561b39bc02a60971d34ae66cc6c4216f4d7f"
               }
             ],
             "entity_id": null
@@ -2631,7 +2773,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f2cf5fffe908f689",
-                "quote": "Zack Khan, co-founder of Feathery"
+                "quote": "Zack Khan, co-founder of Feathery",
+                "source_content_hash": "3eea4eb49517b036",
+                "quote_hash": "819ae52bb1498d0d46db27dd3796126cab9d14c92b073a0931e20dc6478ce55b"
               }
             ],
             "entity_id": null
@@ -2645,12 +2789,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f2cf5fffe908f689",
-            "quote": "Feathery is an AI operating and decisioning system purpose-built for financial services enterprises. Insurance and wealth management firms use Feathery to automate data collection, document processing, onboarding experiences, and operational workflows while integrating seamlessly with existing systems."
+            "quote": "Feathery is an AI operating and decisioning system purpose-built for financial services enterprises. Insurance and wealth management firms use Feathery to automate data collection, document processing, onboarding experiences, and operational workflows while integrating seamlessly with existing systems.",
+            "source_content_hash": "3eea4eb49517b036",
+            "quote_hash": "e97f0f2c0f264f47000f1794194209caabbcd6aeb62639163fc339fad6ff174c"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$30M",
         "total_raised": "$30M",
         "announced_at": "2026-07-14",
@@ -2661,7 +2807,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-862aca17e7215abd",
-                "quote": "led by Portage Ventures"
+                "quote": "led by Portage Ventures",
+                "source_content_hash": "e211a53bd5f29c09",
+                "quote_hash": "259c5b7349e6625b0d4c857781df46b7c958edd5d9060707e2dd1daf2eb7f861"
               }
             ],
             "entity_id": null
@@ -2670,7 +2818,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-862aca17e7215abd",
-            "quote": "it raised a $4.5 million seed round in 2021"
+            "quote": "it raised a $4.5 million seed round in 2021",
+            "source_content_hash": "e211a53bd5f29c09",
+            "quote_hash": "038f8393fe1ebdbcc5f82a4aa329a85a059a11c5a33cf1a79f52765d2304cb20"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-34a077ec20c91cea",
+            "round_original": "Series A",
+            "amount": "$30M",
+            "announced_at": "2026-07-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-862aca17e7215abd",
+                "quote": "it raised a $4.5 million seed round in 2021",
+                "source_content_hash": "e211a53bd5f29c09",
+                "quote_hash": "038f8393fe1ebdbcc5f82a4aa329a85a059a11c5a33cf1a79f52765d2304cb20"
+              }
+            ]
           }
         ]
       },
@@ -2687,7 +2856,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Its AI Decisioning System analyzes business data flowing through the platform, surfaces strategic insights and recommendations, and continuously feeds those learnings back into workflows to drive greater automation and efficiency."
+              "quote": "Its AI Decisioning System analyzes business data flowing through the platform, surfaces strategic insights and recommendations, and continuously feeds those learnings back into workflows to drive greater automation and efficiency.",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "282c6ee0dbae235294de1906ebe14833d8d25d10ccdcc36a816c52b3f4cc5c19"
             }
           ],
           "entity_id": null
@@ -2704,7 +2875,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Carriers throw away most of what's in a submission. Our new product reads all of it and shows you exactly which risk characteristics are driving your quote and bind rates."
+              "quote": "Carriers throw away most of what's in a submission. Our new product reads all of it and shows you exactly which risk characteristics are driving your quote and bind rates.",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "9b0e5aeaec036d55fe436b6bfe67b24fd0b3bd74313398df53ff3bc50ceb68d1"
             }
           ],
           "entity_id": null
@@ -2718,9 +2891,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth"
+              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "d37d98939ffe58aeb1208ad663e15f943d13d89b23c24916d118c70ba98ef740"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Allworth Financial",
@@ -2729,9 +2905,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth"
+              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "d37d98939ffe58aeb1208ad663e15f943d13d89b23c24916d118c70ba98ef740"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Mission Wealth",
@@ -2740,9 +2919,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth"
+              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "d37d98939ffe58aeb1208ad663e15f943d13d89b23c24916d118c70ba98ef740"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Tokio Marine",
@@ -2751,9 +2933,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Insurance carriers: Tokio Marine, Hiscox, Banner Life"
+              "quote": "Insurance carriers: Tokio Marine, Hiscox, Banner Life",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "d716f4ba9136742c48486354f8c1020e4f86e4fac758e49b03fed8882f6ab446"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Hiscox",
@@ -2762,9 +2947,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Insurance carriers: Tokio Marine, Hiscox, Banner Life"
+              "quote": "Insurance carriers: Tokio Marine, Hiscox, Banner Life",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "d716f4ba9136742c48486354f8c1020e4f86e4fac758e49b03fed8882f6ab446"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2778,9 +2966,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "The market today is full of point solutions that automate a single narrow task and general-purpose AI tools that struggle with the complexities of financial service regulations and scale. Enterprises need a platform flexible and specialized enough to power the entire client and policy lifecycle while fitting seamlessly into the systems they already rely on."
+              "quote": "The market today is full of point solutions that automate a single narrow task and general-purpose AI tools that struggle with the complexities of financial service regulations and scale. Enterprises need a platform flexible and specialized enough to power the entire client and policy lifecycle while fitting seamlessly into the systems they already rely on.",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "bed20d6bbc208361cbe799fd0898f06679ebc17d9d4b5ab31b614869b94a9290"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "通用 AI 工具",
@@ -2792,9 +2983,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "general-purpose AI tools that struggle with the complexities of financial service regulations and scale."
+              "quote": "general-purpose AI tools that struggle with the complexities of financial service regulations and scale.",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "41529372efb6afb3e360c45687f079619aa87bd5e5902c96b214c2e25ca345e5"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2805,7 +2999,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "serving more than 300 firms across insurance and wealth management"
+              "quote": "serving more than 300 firms across insurance and wealth management",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "3f41aa17e0cc2af74b5847e851ac1668bc7dcec5fa43d2eb59c3080af18a81af"
             }
           ]
         },
@@ -2816,7 +3012,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Feathery processes tens of millions of monthly submissions"
+              "quote": "Feathery processes tens of millions of monthly submissions",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "178b99d6e176f92afb7adb52536ce2390efda56102b3e1c97b545f523f1c067e"
             }
           ]
         },
@@ -2827,7 +3025,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-56864e1bcc8e6205",
-              "quote": "Feathery connects to 100+ data sources to enrich risk assessments"
+              "quote": "Feathery connects to 100+ data sources to enrich risk assessments",
+              "source_content_hash": "05b94b539bb3380c",
+              "quote_hash": "8d15ddc11a05977408d280a1dbea333a7e736aace09fe044345c51915546da29"
             }
           ]
         },
@@ -2838,7 +3038,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-56864e1bcc8e6205",
-              "quote": "Pull structured document data with 98%+ accuracy."
+              "quote": "Pull structured document data with 98%+ accuracy.",
+              "source_content_hash": "05b94b539bb3380c",
+              "quote_hash": "2f0224a3d9e063ce87bfc9e46d3d545a60f6bea51ce3afcdab123de66141c542"
             }
           ]
         },
@@ -2849,7 +3051,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-862aca17e7215abd",
-              "quote": "it raised a $4.5 million seed round in 2021"
+              "quote": "it raised a $4.5 million seed round in 2021",
+              "source_content_hash": "e211a53bd5f29c09",
+              "quote_hash": "038f8393fe1ebdbcc5f82a4aa329a85a059a11c5a33cf1a79f52765d2304cb20"
             }
           ]
         },
@@ -2860,7 +3064,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-56864e1bcc8e6205",
-              "quote": "just underwriters alone spend up to 40% of their time on non-core administrative tasks"
+              "quote": "just underwriters alone spend up to 40% of their time on non-core administrative tasks",
+              "source_content_hash": "05b94b539bb3380c",
+              "quote_hash": "dc67baa866cc331aff7a7d136425ca7adc8dc680940fffbb59ccb14ebd278225"
             }
           ]
         },
@@ -2871,7 +3077,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-56864e1bcc8e6205",
-              "quote": "translating to an annual efficiency loss of over $30 billion"
+              "quote": "translating to an annual efficiency loss of over $30 billion",
+              "source_content_hash": "05b94b539bb3380c",
+              "quote_hash": "58989e7cac7a7e1c8de2419f0c24f30ea975fd321b41002e6a248f0b2633c7f8"
             }
           ]
         }
@@ -2883,7 +3091,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Feathery has earned the trust of enterprises by solving the real operational and regulatory complexity that defines financial services,\" said Stephanie Choo, General Partner and Co-Head of Portage Ventures. \"Every workflow Feathery powers generates data that sharpens decision-making and automates more of the business, creating a compounding advantage that deepens over time. We're proud to back the Feathery team as they define this category."
+              "quote": "Feathery has earned the trust of enterprises by solving the real operational and regulatory complexity that defines financial services,\" said Stephanie Choo, General Partner and Co-Head of Portage Ventures. \"Every workflow Feathery powers generates data that sharpens decision-making and automates more of the business, creating a compounding advantage that deepens over time. We're proud to back the Feathery team as they define this category.",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "397aabf3aee527429e52cc3f7a46e400b5fe5ec795686f4969e9616414971bf4"
             }
           ]
         },
@@ -2893,7 +3103,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "With this funding, we're doubling down on products that tap our data network across clients to help firms make faster, more accurate decisions and move data seamlessly across their workflows,\" said Zack Khan, co-founder of Feathery."
+              "quote": "With this funding, we're doubling down on products that tap our data network across clients to help firms make faster, more accurate decisions and move data seamlessly across their workflows,\" said Zack Khan, co-founder of Feathery.",
+              "source_content_hash": "3eea4eb49517b036",
+              "quote_hash": "cb3305085f4f9d4475bece314284192be310aeaba79f8b24d9f6d4699c212e13"
             }
           ]
         }
@@ -2913,7 +3125,22 @@
           "市场同时存在点解决方案和通用 AI 工具的竞争，Feathery 需要在垂直深度和平台广度之间持续证明差异化价值。"
         ],
         "related_direction_id": "",
-        "sector": "金融服务 AI 平台"
+        "sector": "金融服务 AI 平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Feathery 能否在金融服务领域构建一个“数据飞轮”——每个工作流产生的数据持续反哺决策和自动化，形成随时间加深的复合优势。当前融资所依赖的已验证信号包括：服务超过 300 家企业、月度处理数千万次提交、2024 年以来收入增长 10 倍，以及来自保险和财富管理头部客户的采用。判断的证据边界限于已披露的运营指标和客户列表，尚未包含利润率、续约率或单位经济数据。",
+          "evidence_signals": [
+            "服务超过 300 家保险和财富管理企业",
+            "月度处理数千万次提交",
+            "2024 年以来收入增长 10 倍",
+            "客户包括 Tokio Marine、Hiscox、Sequoia Financial 等行业头部企业"
+          ],
+          "risks": [
+            "来源未披露利润率、客户留存率或净收入留存率，无法验证收入增长的质量和可持续性。",
+            "金融服务监管环境复杂，AI 决策系统在合规性和可解释性方面可能面临监管阻力。",
+            "市场同时存在点解决方案和通用 AI 工具的竞争，Feathery 需要在垂直深度和平台广度之间持续证明差异化价值。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2921,156 +3148,84 @@
           "target_kind": "product",
           "research_name": "AI Decisioning System",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Its AI Decisioning System analyzes business data flowing through the platform, surfaces strategic insights and recommendations, and continuously feeds those learnings back into workflows to drive greater automation and efficiency."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AI Portfolio Submission Analytics",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Carriers throw away most of what's in a submission. Our new product reads all of it and shows you exactly which risk characteristics are driving your quote and bind rates."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Peter Dun",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Peter Dun, co-founder and CEO of Feathery"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Zack Khan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Zack Khan, co-founder of Feathery"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Portage Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-862aca17e7215abd",
-              "quote": "led by Portage Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Sequoia Financial",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Allworth Financial",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Mission Wealth",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "RIAs and broker-dealers: Sequoia Financial, Allworth Financial, Mission Wealth"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Tokio Marine",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Insurance carriers: Tokio Marine, Hiscox, Banner Life"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Hiscox",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "Insurance carriers: Tokio Marine, Hiscox, Banner Life"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "点解决方案",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "The market today is full of point solutions that automate a single narrow task and general-purpose AI tools that struggle with the complexities of financial service regulations and scale. Enterprises need a platform flexible and specialized enough to power the entire client and policy lifecycle while fitting seamlessly into the systems they already rely on."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "通用 AI 工具",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f2cf5fffe908f689",
-              "quote": "general-purpose AI tools that struggle with the complexities of financial service regulations and scale."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3132,10 +3287,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:57:25.431Z"
+      "published_at": "2026-07-26T14:57:25.431Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI Decisioning System",
+            "AI Portfolio Submission Analytics"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Peter Dun",
+            "Zack Khan"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-34a077ec20c91cea"
+      ],
+      "aggregation": {
+        "key": "EN-e5dcb6b25180d1d6|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

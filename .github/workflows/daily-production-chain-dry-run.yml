@@ -241,6 +241,7 @@ jobs:
           node agent-workflow/tools/generate-funding-insights-deepseek.mjs --date="${RUN_DATE}" --write=true
           node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          node agent-workflow/tools/assert-funding-insights-v1.mjs --all=true --frontstage=true
           npm run test:funding-insights
 
       - name: Build operations data after V4 materialization
@@ -297,6 +298,7 @@ jobs:
             01-SiteV2/site/data/opportunity-evidence-v2.json
             01-SiteV2/site/data/trend-radar-v1.json
             01-SiteV2/site/data/funding-insights-v1.json
+            01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
 

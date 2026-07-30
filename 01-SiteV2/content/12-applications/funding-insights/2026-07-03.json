@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-03",
     "generated_at": "2026-07-27T05:19:04.155Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 2,
       "auto_published": 1,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-27f66cc32481ad8e",
       "triggered_by_event_id": "EV-9300044a58395552",
       "as_of_date": "2026-07-03",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-392b2fac8b63845f",
-                "quote": "Palihapitiya founded 8090 Labs in January 2024 to offer an AI coding agent specifically for corporate programming teams."
+                "quote": "Palihapitiya founded 8090 Labs in January 2024 to offer an AI coding agent specifically for corporate programming teams.",
+                "source_content_hash": "3d3c1a68251829f0",
+                "quote_hash": "21bd8d9c5581a3dfa9d1dcdf6e8a488ed194e1ff6c83d2cedccc4da67d29c536"
               },
               {
                 "source_id": "FISRC-392b2fac8b63845f",
-                "quote": "he will lead the startup as CEO, rather than just serving as a board member."
+                "quote": "he will lead the startup as CEO, rather than just serving as a board member.",
+                "source_content_hash": "3d3c1a68251829f0",
+                "quote_hash": "034d4fa59615dba9f65f86bb843d2388e6e23076e5050abc363ecc35a96ae868"
               }
             ],
             "entity_id": null
@@ -53,16 +58,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-392b2fac8b63845f",
-            "quote": "The company, 8090 Labs, closed a $135 million round"
+            "quote": "The company, 8090 Labs, closed a $135 million round",
+            "source_content_hash": "3d3c1a68251829f0",
+            "quote_hash": "170739c2dad2852e0d1ba2b741560e0a6a42d06a0a3af1bf55966bc2b2f3a7c6"
           },
           {
             "source_id": "FISRC-053be5c994e5ae8c",
-            "quote": "8090 Labs, closed a $135 million round led by Salesforce Ventures"
+            "quote": "8090 Labs, closed a $135 million round led by Salesforce Ventures",
+            "source_content_hash": "7b9cfa8d1d82de9c",
+            "quote_hash": "de8fe06afa262720745537548ee0ae09246a77e5b1a0eb27e92e4a3c7d54ea9f"
           }
         ]
       },
       "financing": {
-        "round": "A 轮",
+        "round": "A轮",
         "amount": "1.35 亿美元",
         "total_raised": "1.35 亿美元",
         "announced_at": "2026-06-29",
@@ -73,7 +82,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-392b2fac8b63845f",
-                "quote": "closed a $135 million round led by Salesforce Ventures"
+                "quote": "closed a $135 million round led by Salesforce Ventures",
+                "source_content_hash": "3d3c1a68251829f0",
+                "quote_hash": "d8be535192c1fb579d86e7084893c47a2c84be4b6fedec8c4141d9ce2a7693c3"
               }
             ],
             "entity_id": null
@@ -84,7 +95,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-392b2fac8b63845f",
-                "quote": "David Friedberg (The Production Board)"
+                "quote": "David Friedberg (The Production Board)",
+                "source_content_hash": "3d3c1a68251829f0",
+                "quote_hash": "287ea8b5a161296405de34342060366fad9cb3af2c43c679eaed0e043eef7fa5"
               }
             ],
             "entity_id": null
@@ -95,18 +108,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-392b2fac8b63845f",
-                "quote": "Jason Calacanis (Launch)"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Nikesh Arora",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-392b2fac8b63845f",
-                "quote": "angel investors like Palo Alto Networks CEO Nikesh Arora"
+                "quote": "Jason Calacanis (Launch)",
+                "source_content_hash": "3d3c1a68251829f0",
+                "quote_hash": "98892325b5d8e8c9b8343b84455fcc941c404f4d22dbdf06bcd3b1002628a3a1"
               }
             ],
             "entity_id": null
@@ -115,7 +119,48 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-392b2fac8b63845f",
-            "quote": "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role"
+            "quote": "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role",
+            "source_content_hash": "3d3c1a68251829f0",
+            "quote_hash": "c58005ea87997c1beaa43c5e503e5cb8b9b8df5099cf931ae0ebc7dc90550561"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A 轮",
+        "other_round_investors": [
+          {
+            "name": "Nikesh Arora",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "angel investors like Palo Alto Networks CEO Nikesh Arora",
+                "source_content_hash": "3d3c1a68251829f0",
+                "quote_hash": "6f21f7350b7c988d67bd02fc400a7fd78c5dca8ff5d7f181a74f444026b448f0"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-9300044a58395552",
+            "round_original": "A 轮",
+            "amount": "1.35 亿美元",
+            "announced_at": "2026-06-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role",
+                "source_content_hash": "3d3c1a68251829f0",
+                "quote_hash": "c58005ea87997c1beaa43c5e503e5cb8b9b8df5099cf931ae0ebc7dc90550561"
+              }
+            ]
           }
         ]
       },
@@ -134,11 +179,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails"
+              "quote": "Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails",
+              "source_content_hash": "3d3c1a68251829f0",
+              "quote_hash": "034e773bb21e78c78189ba2ec2cb00fe3e78fd8a1da1e82c8c32d8154149d51b"
             },
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "Software Factory brings people and AI agents into a single collaborative environment, connecting business intent, requirements, architecture, work orders, code, testing, and production maintenance."
+              "quote": "Software Factory brings people and AI agents into a single collaborative environment, connecting business intent, requirements, architecture, work orders, code, testing, and production maintenance.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "678ec668bb4ae6654edc2790c1efa84790761e732cf5862e554437f3a3c3431f"
             }
           ],
           "entity_id": null
@@ -152,9 +201,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "A publicly traded health insurer turned its payable-claims rules into a deterministic pre-filter, routing more than 80% fewer claims to a pay-per-catch vendor and avoiding more than $20 million over four years."
+              "quote": "A publicly traded health insurer turned its payable-claims rules into a deterministic pre-filter, routing more than 80% fewer claims to a pay-per-catch vendor and avoiding more than $20 million over four years.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "c7d27be90712523be43a2eeb753738d7e5b36f61a6e9ca47d60aa6bda7855061"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "一家生命科学客户",
@@ -163,9 +215,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D."
+              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "c7ce13d8e481b545638192fd14d06318e771316834b9008e2e2236402ad2fefa"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "一家制造商",
@@ -174,9 +229,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "a manufacturer brought more than 10,000 parts under real-time validation, with automatic approvals reaching more than 1,000 users."
+              "quote": "a manufacturer brought more than 10,000 parts under real-time validation, with automatic approvals reaching more than 1,000 users.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "e0893b20237facca1e0766be839a6b9bd7f03eba3675a23a95065b2ad4fed82f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -190,9 +248,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1e9f47e2c5f47c5b",
-              "quote": "Anthropic, whose Claude Code product has driven much of its commercial traction, closed a $65 billion Series H round in May that valued the company at $965 billion."
+              "quote": "Anthropic, whose Claude Code product has driven much of its commercial traction, closed a $65 billion Series H round in May that valued the company at $965 billion.",
+              "source_content_hash": "7e96cbed361c465c",
+              "quote_hash": "a148dad530bd638ffc5b925e34c1400df319b6b02d0d61869cf25370572ddfda"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         }
       ],
       "metrics": [
@@ -203,7 +264,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "8090 reverse-engineered more than 18 million lines of COBOL and Assembly behind a healthcare billing engine into more than 300,000 plain-English rules in 40 days."
+              "quote": "8090 reverse-engineered more than 18 million lines of COBOL and Assembly behind a healthcare billing engine into more than 300,000 plain-English rules in 40 days.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "762429edb181242ab2d3228ae5459cfe1086362589c69073ed340650d4912508"
             }
           ]
         },
@@ -214,7 +277,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "more than 300,000 plain-English rules in 40 days."
+              "quote": "more than 300,000 plain-English rules in 40 days.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "48ec9d8eceeb332a589bf72aa8c75593eb6f791ffda52953032bc662ac658911"
             }
           ]
         },
@@ -225,7 +290,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "routing more than 80% fewer claims to a pay-per-catch vendor"
+              "quote": "routing more than 80% fewer claims to a pay-per-catch vendor",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "1ed87bf80fc8e8da6392d07560c9bfe70a67a0a10d3af2315877d68195aef18f"
             }
           ]
         },
@@ -236,7 +303,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "avoiding more than $20 million over four years."
+              "quote": "avoiding more than $20 million over four years.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "96561291aedf08230fce2ad95434ee5c31a2df1ded1d5d09be92b89c01bb2f4d"
             }
           ]
         },
@@ -247,7 +316,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D."
+              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "c7ce13d8e481b545638192fd14d06318e771316834b9008e2e2236402ad2fefa"
             }
           ]
         },
@@ -258,7 +329,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "a manufacturer brought more than 10,000 parts under real-time validation"
+              "quote": "a manufacturer brought more than 10,000 parts under real-time validation",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "56dc3b545186494d67ddddee0c634a3633f915439eba384b8b0a6528c4fc4c17"
             }
           ]
         },
@@ -269,7 +342,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "automatic approvals reaching more than 1,000 users."
+              "quote": "automatic approvals reaching more than 1,000 users.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "5d30c9a967f7a6e924693aecca7ef3e04424dae184db3cb705dee917bd709c04"
             }
           ]
         }
@@ -281,7 +356,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "The best companies in the world build custom software that captures what makes them unique. We built Software Factory on the belief that every organization should be able to do the same thing."
+              "quote": "The best companies in the world build custom software that captures what makes them unique. We built Software Factory on the belief that every organization should be able to do the same thing.",
+              "source_content_hash": "240b42a82b36187d",
+              "quote_hash": "669a1f249904f181d0e933b4e75e72eb23ad8ef0d6bc51b088d8056941385671"
             }
           ]
         }
@@ -300,7 +377,21 @@
           "Salesforce 自身正在推进 Agentforce AI 智能体，其与 8090 的关系可能从互补演变为竞争，分销渠道的稳定性存在不确定性。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业 AI 编码与软件交付"
+        "sector": "企业 AI 编码与软件交付",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是“企业 AI 编码从原型走向生产级合规交付”的范式转换。1.35 亿美元 A 轮融资的规模远超常规，其依赖的已验证信号包括：8090 已在医疗、制造、生命科学等受监管行业交付了可量化的客户成果（如理赔过滤减少 80% 以上、研发周期缩短一年），且 Salesforce Ventures 领投意味着其可能获得全球最大企业 SaaS 分销渠道的入口。然而，这些信号均来自公司官方新闻稿，尚未经独立审计或客户公开背书验证，因此资本判断的证据边界限于公司自述的客户指标与投资方战略协同的推断。",
+          "evidence_signals": [
+            "在受监管行业（医疗、制造、生命科学）已有可量化的客户交付成果，包括理赔过滤率、研发周期缩短、零部件实时验证等具体指标。",
+            "Salesforce Ventures 领投，暗示其可能接入 Salesforce 的企业销售渠道，为进入财富 500 强 IT 采购流程提供分销杠杆。",
+            "创始人 Chamath Palihapitiya 从投资人转为全职 CEO，表明其对这一机会的个人承诺与运营投入。"
+          ],
+          "risks": [
+            "所有客户成果与产品能力均来自公司官方发布，缺乏独立第三方验证或客户公开背书，存在夸大或选择性披露的风险。",
+            "企业 AI 编码市场竞争激烈，Anthropic 与 OpenAI 等对手已占据开发者心智与预算，8090 能否在安全审查而非产品演示中持续赢得企业合同尚未证实。",
+            "Salesforce 自身正在推进 Agentforce AI 智能体，其与 8090 的关系可能从互补演变为竞争，分销渠道的稳定性存在不确定性。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -308,138 +399,70 @@
           "target_kind": "product",
           "research_name": "Software Factory",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails"
-            },
-            {
-              "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "Software Factory brings people and AI agents into a single collaborative environment, connecting business intent, requirements, architecture, work orders, code, testing, and production maintenance."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Chamath Palihapitiya",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "Palihapitiya founded 8090 Labs in January 2024 to offer an AI coding agent specifically for corporate programming teams."
-            },
-            {
-              "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "he will lead the startup as CEO, rather than just serving as a board member."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Salesforce Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "closed a $135 million round led by Salesforce Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "The Production Board",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "David Friedberg (The Production Board)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Launch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "Jason Calacanis (Launch)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Nikesh Arora",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-392b2fac8b63845f",
-              "quote": "angel investors like Palo Alto Networks CEO Nikesh Arora"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家上市健康保险公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "A publicly traded health insurer turned its payable-claims rules into a deterministic pre-filter, routing more than 80% fewer claims to a pay-per-catch vendor and avoiding more than $20 million over four years."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家生命科学客户",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家制造商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-21a379c91a90bee1",
-              "quote": "a manufacturer brought more than 10,000 parts under real-time validation, with automatic approvals reaching more than 1,000 users."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e9f47e2c5f47c5b",
-              "quote": "Anthropic, whose Claude Code product has driven much of its commercial traction, closed a $65 billion Series H round in May that valued the company at $965 billion."
-            }
-          ]
+          "canonical_name": "Anthropic"
         }
       ],
       "funding_history": [
@@ -513,10 +536,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:44:10.588Z"
+      "published_at": "2026-07-26T14:44:10.588Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Software Factory"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Chamath Palihapitiya"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-9300044a58395552"
+      ],
+      "aggregation": {
+        "key": "EN-7106dbc04a08ce3a|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

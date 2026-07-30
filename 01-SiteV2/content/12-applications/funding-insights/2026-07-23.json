@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-23",
     "generated_at": "2026-07-27T05:24:04.760Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 8,
       "auto_published": 5,
       "blocked": 3,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-46ef94d914cd2bbb",
       "triggered_by_event_id": "EV-c7ba7b093a1a3b94",
       "as_of_date": "2026-07-23",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-990ec5e1d34ab9a7",
-                "quote": "Noetra 是一家由日本政府支持、专注于开发面向物理人工智能（Physical AI）和机器人基础模型的公司。该公司首席执行官丹波弘伸（Hironobu Tamba）近日在接受采访时表示"
+                "quote": "Noetra 是一家由日本政府支持、专注于开发面向物理人工智能（Physical AI）和机器人基础模型的公司。该公司首席执行官丹波弘伸（Hironobu Tamba）近日在接受采访时表示",
+                "source_content_hash": "e0b3521ac8210157",
+                "quote_hash": "77a8b12078a872bd756ea84c1e2b447b9a022ca1c03c10d0451a78501d8efecd"
               }
             ],
             "entity_id": null
@@ -49,16 +52,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-990ec5e1d34ab9a7",
-            "quote": "Noetra 是一家由日本政府支持、专注于开发面向物理人工智能（Physical AI）和机器人基础模型的公司。"
+            "quote": "Noetra 是一家由日本政府支持、专注于开发面向物理人工智能（Physical AI）和机器人基础模型的公司。",
+            "source_content_hash": "e0b3521ac8210157",
+            "quote_hash": "3391ecda2f58e6089da36a8fd6a7bccdd23a40e41a949ad1ab9fd1ca81546d9b"
           },
           {
             "source_id": "FISRC-e2099306a92fc69f",
-            "quote": "Noetra Corp., along with its core member companies and investors—Sony Group Corporation, SoftBank Corp., NEC Corporation, and Honda Motor Co., Ltd.—launched full-scale R&D for a Japan-developed multimodal foundation model that will serve as the foundation for AI-enabled robots and physical AI"
+            "quote": "Noetra Corp., along with its core member companies and investors—Sony Group Corporation, SoftBank Corp., NEC Corporation, and Honda Motor Co., Ltd.—launched full-scale R&D for a Japan-developed multimodal foundation model that will serve as the foundation for AI-enabled robots and physical AI",
+            "source_content_hash": "36d62b636988f260",
+            "quote_hash": "b2cab51beceba41150d8f02865e1866e849772b59a5577430e7176bb95e691df"
           }
         ]
       },
       "financing": {
-        "round": "政府资金及企业投资",
+        "round": "政府及产业融资",
         "amount": "超过3800亿日元",
         "total_raised": "超过3800亿日元",
         "announced_at": "2026-07-22",
@@ -69,7 +76,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-990ec5e1d34ab9a7",
-                "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持"
+                "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持",
+                "source_content_hash": "e0b3521ac8210157",
+                "quote_hash": "354d9f9d9cd62f53d89b4d5561ba42188daac524b053f2f8db56ea0345a244b3"
               }
             ],
             "entity_id": null
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-990ec5e1d34ab9a7",
-                "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。"
+                "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。",
+                "source_content_hash": "e0b3521ac8210157",
+                "quote_hash": "c683f4356fe03853973a47ec6e6d76dff0a7f36e81c6f3f3f2f2718013497185"
               }
             ],
             "entity_id": "EN-80d387ccb3289295"
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-990ec5e1d34ab9a7",
-                "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。"
+                "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。",
+                "source_content_hash": "e0b3521ac8210157",
+                "quote_hash": "c683f4356fe03853973a47ec6e6d76dff0a7f36e81c6f3f3f2f2718013497185"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-990ec5e1d34ab9a7",
-                "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。"
+                "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。",
+                "source_content_hash": "e0b3521ac8210157",
+                "quote_hash": "c683f4356fe03853973a47ec6e6d76dff0a7f36e81c6f3f3f2f2718013497185"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e2099306a92fc69f",
-                "quote": "Noetra Corp., along with its core member companies and investors—Sony Group Corporation, SoftBank Corp., NEC Corporation, and Honda Motor Co., Ltd."
+                "quote": "Noetra Corp., along with its core member companies and investors—Sony Group Corporation, SoftBank Corp., NEC Corporation, and Honda Motor Co., Ltd.",
+                "source_content_hash": "36d62b636988f260",
+                "quote_hash": "00cd2853e8b64bcad71d006817efe71475f8134f982d9944dcce31f2b0f07520"
               }
             ],
             "entity_id": null
@@ -124,7 +141,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e2099306a92fc69f",
-                "quote": "Major participating companies (in alphabetical order) Asahi Kasei Corporation"
+                "quote": "Major participating companies (in alphabetical order) Asahi Kasei Corporation",
+                "source_content_hash": "36d62b636988f260",
+                "quote_hash": "50432b4b1ac1df365b838ac0dfc27c6ce644826690320231aafe0d6c986561b7"
               }
             ],
             "entity_id": null
@@ -133,11 +152,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-990ec5e1d34ab9a7",
-            "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持，同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。"
+            "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持，同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。",
+            "source_content_hash": "e0b3521ac8210157",
+            "quote_hash": "334af17a5adf6cbdfd95529db34b1d3664361b3b0b61ddaa0b6dfeeacae515d7"
           },
           {
             "source_id": "FISRC-e2099306a92fc69f",
-            "quote": "Noetra has received investments from a total of 44 companies and organizations"
+            "quote": "Noetra has received investments from a total of 44 companies and organizations",
+            "source_content_hash": "36d62b636988f260",
+            "quote_hash": "99d270add0e198bd136f76c4db5acc5637087c82972de8adddd04c922a171ae5"
+          }
+        ],
+        "round_code": "government",
+        "round_original": "政府资金及企业投资",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c7ba7b093a1a3b94",
+            "round_original": "政府资金及企业投资",
+            "amount": "超过3800亿日元",
+            "announced_at": "2026-07-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-990ec5e1d34ab9a7",
+                "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持，同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。",
+                "source_content_hash": "e0b3521ac8210157",
+                "quote_hash": "334af17a5adf6cbdfd95529db34b1d3664361b3b0b61ddaa0b6dfeeacae515d7"
+              },
+              {
+                "source_id": "FISRC-e2099306a92fc69f",
+                "quote": "Noetra has received investments from a total of 44 companies and organizations",
+                "source_content_hash": "36d62b636988f260",
+                "quote_hash": "99d270add0e198bd136f76c4db5acc5637087c82972de8adddd04c922a171ae5"
+              }
+            ]
           }
         ]
       },
@@ -156,19 +204,27 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "launched full-scale R&D for a Japan-developed multimodal foundation model that will serve as the foundation for AI-enabled robots and physical AI"
+              "quote": "launched full-scale R&D for a Japan-developed multimodal foundation model that will serve as the foundation for AI-enabled robots and physical AI",
+              "source_content_hash": "36d62b636988f260",
+              "quote_hash": "a5f006811eb8c0114f9ae5cc4b85fc31c9520249611c2223aab325d0a88014ca"
             },
             {
               "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "Noetra aims to build a reasoning foundation model that will serve as the core of AI agents and natural language processing, equipped with foundational capabilities such as advanced Japanese language understanding, logical reasoning, and instruction following."
+              "quote": "Noetra aims to build a reasoning foundation model that will serve as the core of AI agents and natural language processing, equipped with foundational capabilities such as advanced Japanese language understanding, logical reasoning, and instruction following.",
+              "source_content_hash": "36d62b636988f260",
+              "quote_hash": "842e2f61ae40e0921ccbb146e6e2a2898be819fcb99ece5440713a4f2d4c53a6"
             },
             {
               "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "By fiscal 2028, Noetra plans to develop an omni-modal foundation model capable of seamlessly processing text, images, video and audio"
+              "quote": "By fiscal 2028, Noetra plans to develop an omni-modal foundation model capable of seamlessly processing text, images, video and audio",
+              "source_content_hash": "36d62b636988f260",
+              "quote_hash": "d41a9373de5e640928292c8026d36464936bcf865fc0585ad83a71a7611af988"
             },
             {
               "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "Noetra will pursue the realization of “Real-world Native AI” capable of understanding physical properties such as spatial awareness and designed for deployment in real-world environments."
+              "quote": "Noetra will pursue the realization of “Real-world Native AI” capable of understanding physical properties such as spatial awareness and designed for deployment in real-world environments.",
+              "source_content_hash": "36d62b636988f260",
+              "quote_hash": "847ae6f967cc69a28af0c38ec622db462b88dd79d1e43d804809af2abbfffa65"
             }
           ],
           "entity_id": null
@@ -184,7 +240,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持"
+              "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "354d9f9d9cd62f53d89b4d5561ba42188daac524b053f2f8db56ea0345a244b3"
             }
           ]
         },
@@ -195,7 +253,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "Noetra has received investments from a total of 44 companies and organizations"
+              "quote": "Noetra has received investments from a total of 44 companies and organizations",
+              "source_content_hash": "36d62b636988f260",
+              "quote_hash": "99d270add0e198bd136f76c4db5acc5637087c82972de8adddd04c922a171ae5"
             }
           ]
         },
@@ -206,7 +266,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "公司目前正在采购 2.75 万颗英伟达 Rubin AI 芯片"
+              "quote": "公司目前正在采购 2.75 万颗英伟达 Rubin AI 芯片",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "29b2b7f83b3acf8f0af56c72afcfaf6efe20923bd977aaeb42d6f12b9ae6db68"
             }
           ]
         },
@@ -217,7 +279,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "计划于 2027 年 4 月启动 AI 基础设施建设"
+              "quote": "计划于 2027 年 4 月启动 AI 基础设施建设",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "61aca9f8b16037726a17c0bdb061784570a6f08a35237995bb9f5399d8ade4de"
             }
           ]
         },
@@ -228,7 +292,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "预计于 2028 年 6 月正式投入运营。"
+              "quote": "预计于 2028 年 6 月正式投入运营。",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "d73cd77aaee8bd28121748c9dd33917b00e72aee6d219b713f0d2143bc9f2553"
             }
           ]
         },
@@ -239,7 +305,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "日本政府还提出，到 2040 年将在制造业、造船业、护理等多个领域部署 1000 万台具备人工智能能力的机器人"
+              "quote": "日本政府还提出，到 2040 年将在制造业、造船业、护理等多个领域部署 1000 万台具备人工智能能力的机器人",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "1c874f7c5ac5081cf93453671e51d6a30aa96bdc4872632debe1b1fc3775900a"
             }
           ]
         }
@@ -251,7 +319,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "对于希望提升关键技术自主供应能力的日本来说，Noetra 是日本的“最后机会”。"
+              "quote": "对于希望提升关键技术自主供应能力的日本来说，Noetra 是日本的“最后机会”。",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "752202f0213cfae3cd5054ba379820c0ec98249dd84f91e53e2e7c6de9d0f2ce"
             }
           ]
         },
@@ -261,7 +331,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "我们成功聚集了日本一直从事 AI 研究和开发的人才。"
+              "quote": "我们成功聚集了日本一直从事 AI 研究和开发的人才。",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "f7634e5a4a0b60a762b7291e130f5f218875e3345663937944dec9194ba0ba53"
             }
           ]
         },
@@ -271,7 +343,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "Noetra 将为日本企业提供一个可靠、安全的基础模型平台，企业能够自行管理数据，从而更放心地开展 AI 应用开发。"
+              "quote": "Noetra 将为日本企业提供一个可靠、安全的基础模型平台，企业能够自行管理数据，从而更放心地开展 AI 应用开发。",
+              "source_content_hash": "e0b3521ac8210157",
+              "quote_hash": "ca38cf09442189f06afae5387febdb332f717e03b53a5f24e8fd98c482c0d6c3"
             }
           ]
         }
@@ -287,7 +361,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-e2099306a92fc69f",
-                "quote": "NEC is one of the few companies in Japan capable of providing end-to-end AI development—from building foundation models entirely from scratch to system implementation and operation. Leveraging our expertise and technologies, NEC will contribute to the development of Noetra's domestically produced multimodal foundation models. Building upon this foundation, we will accelerate the development and real-world deployment of specialized AI models that power advanced services, including those for physical AI. As AI is increasingly utilized across every facet of society, developing unique Japanese models and expanding options through collaboration among various companies is critical, particularly from the perspective of economic security."
+                "quote": "NEC is one of the few companies in Japan capable of providing end-to-end AI development—from building foundation models entirely from scratch to system implementation and operation. Leveraging our expertise and technologies, NEC will contribute to the development of Noetra's domestically produced multimodal foundation models. Building upon this foundation, we will accelerate the development and real-world deployment of specialized AI models that power advanced services, including those for physical AI. As AI is increasingly utilized across every facet of society, developing unique Japanese models and expanding options through collaboration among various companies is critical, particularly from the perspective of economic security.",
+                "source_content_hash": "36d62b636988f260",
+                "quote_hash": "5c1f6e2c1d7fb56888f0c6ac19ae523aca5183b69f9f92079411b4abec6467fa"
               }
             ]
           }
@@ -305,7 +381,22 @@
           "过度依赖政府与国内财团：资金来源和产业生态高度集中于日本国内，缺乏国际资本和全球科技巨头的深度参与，可能限制其全球竞争力和技术开放性。"
         ],
         "related_direction_id": "",
-        "sector": "物理人工智能与机器人基础模型"
+        "sector": "物理人工智能与机器人基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是日本在物理AI和机器人领域的“主权AI”能力建设。本轮融资的已验证信号包括：获得超过3800亿日元政府资金，以及44家涵盖制造业、金融、科技等关键行业的头部企业集体参与，形成了国家级产业联盟。这标志着日本正以举国体制模式，试图在中美AI竞争中建立自主可控的基础模型和算力基础设施。判断的证据边界在于，目前所有信息均来自融资公告和CEO访谈，尚未有独立第三方验证其技术进展或商业成果。",
+          "evidence_signals": [
+            "获得超过3800亿日元政府资金支持",
+            "44家日本头部企业参与投资与合作",
+            "计划采购2.75万颗英伟达Rubin AI芯片",
+            "核心成员包括软银、索尼、本田、NEC等日本代表性企业",
+            "已启动日本国产多模态基础模型的全面研发"
+          ],
+          "risks": [
+            "技术落地风险：模型研发仍处于早期阶段，推理基础模型计划2026财年推出，全模态模型和“真实世界原生AI”分别要到2028和2030财年，技术路径长且存在不确定性。",
+            "过度依赖政府与国内财团：资金来源和产业生态高度集中于日本国内，缺乏国际资本和全球科技巨头的深度参与，可能限制其全球竞争力和技术开放性。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -313,116 +404,56 @@
           "target_kind": "product",
           "research_name": "日本国产多模态基础模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "launched full-scale R&D for a Japan-developed multimodal foundation model that will serve as the foundation for AI-enabled robots and physical AI"
-            },
-            {
-              "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "Noetra aims to build a reasoning foundation model that will serve as the core of AI agents and natural language processing, equipped with foundational capabilities such as advanced Japanese language understanding, logical reasoning, and instruction following."
-            },
-            {
-              "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "By fiscal 2028, Noetra plans to develop an omni-modal foundation model capable of seamlessly processing text, images, video and audio"
-            },
-            {
-              "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "Noetra will pursue the realization of “Real-world Native AI” capable of understanding physical properties such as spatial awareness and designed for deployment in real-world environments."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "丹波弘伸",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "Noetra 是一家由日本政府支持、专注于开发面向物理人工智能（Physical AI）和机器人基础模型的公司。该公司首席执行官丹波弘伸（Hironobu Tamba）近日在接受采访时表示"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "日本政府",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "软银",
           "canonical_entity_id": "EN-80d387ccb3289295",
-          "canonical_name": "SoftBank",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。"
-            }
-          ]
+          "canonical_name": "SoftBank"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "本田",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "索尼",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-990ec5e1d34ab9a7",
-              "quote": "同时还获得了包括软银、本田和索尼在内的 44 家企业的参与和支持。"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "NEC Corporation",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "Noetra Corp., along with its core member companies and investors—Sony Group Corporation, SoftBank Corp., NEC Corporation, and Honda Motor Co., Ltd."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Asahi Kasei Corporation",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e2099306a92fc69f",
-              "quote": "Major participating companies (in alphabetical order) Asahi Kasei Corporation"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -472,13 +503,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:05:14.387Z"
+      "published_at": "2026-07-26T15:05:14.387Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "日本国产多模态基础模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "丹波弘伸"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c7ba7b093a1a3b94"
+      ],
+      "aggregation": {
+        "key": "EN-0f3360879e746531|government",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-3f06ebd6979e8366",
       "triggered_by_event_id": "EV-901155ab700a7e8e",
       "as_of_date": "2026-07-23",
@@ -496,7 +556,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Kahlil Lalji, CEO and Co-founder of Natural"
+                "quote": "Kahlil Lalji, CEO and Co-founder of Natural",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "a241af60c65e4488e04d1939228b9c783803cbb277b2238ac2abd26b3d5bf732"
               }
             ],
             "entity_id": null
@@ -507,7 +569,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Natural was started by Lalji and co-founders Eric Wang and Walt Leung"
+                "quote": "Natural was started by Lalji and co-founders Eric Wang and Walt Leung",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "81f33a37d4fffa40b952c2d74652ee2c25db8159fca03cb8cf38605b76c760ce"
               }
             ],
             "entity_id": null
@@ -518,7 +582,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Natural was started by Lalji and co-founders Eric Wang and Walt Leung"
+                "quote": "Natural was started by Lalji and co-founders Eric Wang and Walt Leung",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "81f33a37d4fffa40b952c2d74652ee2c25db8159fca03cb8cf38605b76c760ce"
               }
             ],
             "entity_id": null
@@ -530,23 +596,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "The company now has a team of 17"
+              "quote": "The company now has a team of 17",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "2b1a4c034036b495055a47aac0580d76040c882848ed46e6e1c16c0d480616e3"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-a46916de19256c2b",
-            "quote": "Natural is building the foundational payments stack for AI agents."
+            "quote": "Natural is building the foundational payments stack for AI agents.",
+            "source_content_hash": "5c2034f30e766406",
+            "quote_hash": "e888b07b5bad09d45964d1f9dbfaac4850a9222038f0bb7392aef4846157ab8a"
           },
           {
             "source_id": "FISRC-fe79ce8933a500c0",
-            "quote": "Natural powers agentic payments. Wallets. Payments. Cards. Processing. Billing. Voice. All the primitives your agent needs"
+            "quote": "Natural powers agentic payments. Wallets. Payments. Cards. Processing. Billing. Voice. All the primitives your agent needs",
+            "source_content_hash": "9102dd3a8a0fdad6",
+            "quote_hash": "25c5093cdad291df93ccff7e90eb4bdc8ff4546ffc1623f59f94afcbaa0214d0"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$30 million",
         "total_raised": "more than $40 million",
         "announced_at": "2026-07-20",
@@ -557,7 +629,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "a $30 million Series A led by Kirsten Green at Forerunner"
+                "quote": "a $30 million Series A led by Kirsten Green at Forerunner",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "68eb03069b69b081e949f38b0429a9beb29d9459c1cef8b96692547ed9ccd4da"
               }
             ],
             "entity_id": null
@@ -568,7 +642,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "The round was supported by Aarmaan Ali and Baris Akis, Founders of Human Capital"
+                "quote": "The round was supported by Aarmaan Ali and Baris Akis, Founders of Human Capital",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "18004e3ad54fe2e970e318a79b82214b5196f15ae1ff118eef913ef772b37c1f"
               }
             ],
             "entity_id": null
@@ -579,7 +655,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Ramtin Naimi, Founder of Abstract"
+                "quote": "Ramtin Naimi, Founder of Abstract",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "6bbfbcf63d1e867be4899eaa32c0277f96d6125312abecf91d59e3fae172510a"
               }
             ],
             "entity_id": null
@@ -590,7 +668,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Nichole Wischoff, Founder of Wischoff Ventures"
+                "quote": "Nichole Wischoff, Founder of Wischoff Ventures",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "8b1fcf36bb9e236bd1270d396785b874add03a76bc5f4041880483ac37efdf6e"
               }
             ],
             "entity_id": null
@@ -601,7 +681,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Darragh Buckley, CEO of Increase"
+                "quote": "Darragh Buckley, CEO of Increase",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "2f305af4944e9bbe92185066c11a2f0d02e332d12d4f89d565e165784f8ba876"
               }
             ],
             "entity_id": null
@@ -612,7 +694,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Pablo Palafox, CEO of HappyRobot"
+                "quote": "Pablo Palafox, CEO of HappyRobot",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "e11748ced62a02806c78ed7934c7c86da6a51f3577d48ffa693cca3a11a540f5"
               }
             ],
             "entity_id": null
@@ -623,7 +707,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Paul Klein IV, CEO of Browserbase"
+                "quote": "Paul Klein IV, CEO of Browserbase",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "59bda67019dbdbbfa386400c98056022ac37e27c95ec4417b3086ff1a81f1a24"
               }
             ],
             "entity_id": null
@@ -634,7 +720,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Akshay Kothari, Co-founder of Notion"
+                "quote": "Akshay Kothari, Co-founder of Notion",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "810887c2e76cda66e8fa505a64d60b1472629866e3f4dd24e9f12c8bf48b5e26"
               }
             ],
             "entity_id": null
@@ -645,7 +733,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Henri Stern and Max Segall, CEO and COO of Privy"
+                "quote": "Henri Stern and Max Segall, CEO and COO of Privy",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "d10f59f23e4ed7adc629906c0b79fb83e8e624b028663bfcc46cd7b8df42dcd4"
               }
             ],
             "entity_id": null
@@ -656,7 +746,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Pete Koomen, GP of Y Combinator"
+                "quote": "Pete Koomen, GP of Y Combinator",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "1e261e5c893584e8c56bd69bb26fe67c753790301fb8c52cf12aa0e76cf74cc7"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -667,7 +759,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Dylan Babbs, CTO of Profound"
+                "quote": "Dylan Babbs, CTO of Profound",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "fec1c7c97e404cbf7a256bfb757e49566ae09312c86aa685429c7f4db395f74a"
               }
             ],
             "entity_id": null
@@ -678,7 +772,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Art Levy, CBO of Brex"
+                "quote": "Art Levy, CBO of Brex",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "c07078a694ec233b093f8775a684f18f9767efad222ad0708959f12261f2bef6"
               }
             ],
             "entity_id": null
@@ -689,51 +785,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a46916de19256c2b",
-                "quote": "Jake and Logan Paul, GPs of Antifund"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Genius Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d9c64e6b116df7b5",
-                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Torch Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d9c64e6b116df7b5",
-                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Restive",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d9c64e6b116df7b5",
-                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "SV Angel",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d9c64e6b116df7b5",
-                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
+                "quote": "Jake and Logan Paul, GPs of Antifund",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "6204c0211a08447b0bdbc454bab101ef5bf9f63e318376e5a1741b887d5b6948"
               }
             ],
             "entity_id": null
@@ -742,7 +796,105 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-a46916de19256c2b",
-            "quote": "Natural today announced that it has raised a $30 million Series A led by Kirsten Green at Forerunner, with continued participation from all major investors. The round was raised when the company was 193 days old and brings Natural's total funding to more than $40 million."
+            "quote": "Natural today announced that it has raised a $30 million Series A led by Kirsten Green at Forerunner, with continued participation from all major investors. The round was raised when the company was 193 days old and brings Natural's total funding to more than $40 million.",
+            "source_content_hash": "5c2034f30e766406",
+            "quote_hash": "e0ad16731d6623d884f6a97d7e03032a524a5f5d7a25395dd41bb65bedc6b034"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Genius Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d9c64e6b116df7b5",
+                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers.",
+                "source_content_hash": "2fb7bc5aaa426772",
+                "quote_hash": "35082e0864e0bc9123d72c66ec324f3de7c17b5e01f2e7087fee45720cf4fdd1"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Torch Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d9c64e6b116df7b5",
+                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers.",
+                "source_content_hash": "2fb7bc5aaa426772",
+                "quote_hash": "35082e0864e0bc9123d72c66ec324f3de7c17b5e01f2e7087fee45720cf4fdd1"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Restive",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d9c64e6b116df7b5",
+                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers.",
+                "source_content_hash": "2fb7bc5aaa426772",
+                "quote_hash": "35082e0864e0bc9123d72c66ec324f3de7c17b5e01f2e7087fee45720cf4fdd1"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "SV Angel",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d9c64e6b116df7b5",
+                "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers.",
+                "source_content_hash": "2fb7bc5aaa426772",
+                "quote_hash": "35082e0864e0bc9123d72c66ec324f3de7c17b5e01f2e7087fee45720cf4fdd1"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-901155ab700a7e8e",
+            "round_original": "Series A",
+            "amount": "$30 million",
+            "announced_at": "2026-07-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a46916de19256c2b",
+                "quote": "Natural today announced that it has raised a $30 million Series A led by Kirsten Green at Forerunner, with continued participation from all major investors. The round was raised when the company was 193 days old and brings Natural's total funding to more than $40 million.",
+                "source_content_hash": "5c2034f30e766406",
+                "quote_hash": "e0ad16731d6623d884f6a97d7e03032a524a5f5d7a25395dd41bb65bedc6b034"
+              }
+            ]
           }
         ]
       },
@@ -758,11 +910,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Wallets — FDIC-insured wallets for agents"
+              "quote": "Wallets — FDIC-insured wallets for agents",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "a2b134936f0130fd1a124d8294c5bd9457ea77de060955baac81fbc465aee182"
             },
             {
               "source_id": "FISRC-fe79ce8933a500c0",
-              "quote": "Open FDIC-insured¹ accounts agents can hold, receive, & send funds from."
+              "quote": "Open FDIC-insured¹ accounts agents can hold, receive, & send funds from.",
+              "source_content_hash": "9102dd3a8a0fdad6",
+              "quote_hash": "9461ee152d4ef5e18770e488bd06a751f3cfc492b689bca8f3fe38fd362459e1"
             }
           ],
           "entity_id": null
@@ -778,7 +934,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Vaults — One-way accounts. Agents move money in, never out"
+              "quote": "Vaults — One-way accounts. Agents move money in, never out",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "fde57125ec4e40db2bf77893b464342200620c9ac04f709273a31156795738be"
             }
           ],
           "entity_id": null
@@ -793,7 +951,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Pay — Send money to an agent, business, or consumer"
+              "quote": "Pay — Send money to an agent, business, or consumer",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "36c26b4594f54dd39efbd8400df21102fc891ec1cae606bf3c4c4825a975d456"
             }
           ],
           "entity_id": null
@@ -811,9 +971,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "In October 2025, Stripe said it had worked with OpenAI on the Agentic Commerce Protocol, which powered Instant Checkout in ChatGPT for US Etsy sellers and was expected to expand to Shopify merchants. In March 2026, Stripe said its Shared Payment Tokens would support Mastercard Agent Pay, Visa Intelligent Commerce, Affirm and Klarna."
+              "quote": "In October 2025, Stripe said it had worked with OpenAI on the Agentic Commerce Protocol, which powered Instant Checkout in ChatGPT for US Etsy sellers and was expected to expand to Shopify merchants. In March 2026, Stripe said its Shared Payment Tokens would support Mastercard Agent Pay, Visa Intelligent Commerce, Affirm and Klarna.",
+              "source_content_hash": "2fb7bc5aaa426772",
+              "quote_hash": "8a5428dfc1dd030fe2742884d344613f3dc473c227ca8502050b899a29727554"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Skyfire Systems",
@@ -825,13 +988,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf3c8dfd6c45ed29",
-              "quote": "several other startups, including DCVC-backed Skyfire Systems, are trying to reinvent the payments backbone for AI agents using USD-backed stablecoins."
+              "quote": "several other startups, including DCVC-backed Skyfire Systems, are trying to reinvent the payments backbone for AI agents using USD-backed stablecoins.",
+              "source_content_hash": "2a6fd3a00918b42a",
+              "quote_hash": "99c3eaabf71329f778eac7a17281c80e9d6d1ff5a0b100067ca1ed4502cc869e"
             },
             {
               "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "Skyfire has been building identity and payment infrastructure for AI agents, with support for debit cards, credit cards, ACH, wire transfers and USDC funding, according to its product documentation. DCVC lists Skyfire as a portfolio company and describes the startup as infrastructure for agentic AI commerce."
+              "quote": "Skyfire has been building identity and payment infrastructure for AI agents, with support for debit cards, credit cards, ACH, wire transfers and USDC funding, according to its product documentation. DCVC lists Skyfire as a portfolio company and describes the startup as infrastructure for agentic AI commerce.",
+              "source_content_hash": "2fb7bc5aaa426772",
+              "quote_hash": "0feb7c0ae0af2d28eb7f5fef6446e8dc22c1836fab6253dd9ab69fec71e2554e"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -842,7 +1010,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "The round was raised when the company was 193 days old"
+              "quote": "The round was raised when the company was 193 days old",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "8bb8f1f6925f3daa810402c539466a9dea4663dd185a709d7681e6d5ebe5402b"
             }
           ]
         },
@@ -853,7 +1023,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "brings Natural's total funding to more than $40 million"
+              "quote": "brings Natural's total funding to more than $40 million",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "ffee829d3736b2d5fd8b587f13a8ffbcdda5578291afd1fc9e8cd6ee4b19f778"
             }
           ]
         },
@@ -864,7 +1036,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9ef13fbf0db2a284",
-              "quote": "values it at a reported $150 million post-money"
+              "quote": "values it at a reported $150 million post-money",
+              "source_content_hash": "e1cbb3741129c931",
+              "quote_hash": "1fee6219ecf0221c740cbcf74dac64d670b08b81bb4ccc3622850d7ca543598c"
             }
           ]
         },
@@ -875,7 +1049,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "The company now has a team of 17"
+              "quote": "The company now has a team of 17",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "2b1a4c034036b495055a47aac0580d76040c882848ed46e6e1c16c0d480616e3"
             }
           ]
         },
@@ -886,7 +1062,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Natural is building 13 products. Today, six hit general availability."
+              "quote": "Natural is building 13 products. Today, six hit general availability.",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "85f9277fc4a38ea273abdb86146cd649f7dfee8f9c1ea291bbbdb0c9196a9403"
             }
           ]
         },
@@ -897,7 +1075,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Natural is building 13 products."
+              "quote": "Natural is building 13 products.",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "21f73dc7495a6c0380cd3f14483e66edc857672bfdfeef9410d7e6bf0993ec7f"
             }
           ]
         },
@@ -908,7 +1088,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9ef13fbf0db2a284",
-              "quote": "The company, founded just 342 days ago"
+              "quote": "The company, founded just 342 days ago",
+              "source_content_hash": "e1cbb3741129c931",
+              "quote_hash": "4ef50eaec0e053fc9f9759f514bdeabfcbf0caba0489c4bcb958908959c66efa"
             }
           ]
         }
@@ -920,7 +1102,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a46916de19256c2b",
-              "quote": "The question is not whether agents will move money. The question is who builds the infrastructure that makes agentic payments safe, reliable, compliant, and useful at scale. That is what we are building at Natural."
+              "quote": "The question is not whether agents will move money. The question is who builds the infrastructure that makes agentic payments safe, reliable, compliant, and useful at scale. That is what we are building at Natural.",
+              "source_content_hash": "5c2034f30e766406",
+              "quote_hash": "e7a4fdf9bf08ffe8cfa297133ff89573f74551b1cb28476e9336b39356afbff1"
             }
           ]
         }
@@ -936,7 +1120,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe79ce8933a500c0",
-                "quote": "After knowing the team for more than five years we had no doubt on their level of ambition. We are excited to work closely with them to build the payments stack for agents."
+                "quote": "After knowing the team for more than five years we had no doubt on their level of ambition. We are excited to work closely with them to build the payments stack for agents.",
+                "source_content_hash": "9102dd3a8a0fdad6",
+                "quote_hash": "b08457fec61540e77b5161d7ed0abe87da3c0da688f63e3008bdc97c1d50d7bf"
               }
             ]
           },
@@ -949,7 +1135,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fe79ce8933a500c0",
-                "quote": "As AI moves from demos to production, agents need money that moves at the speed of compute... Natural has rebuilt the full stack to enable intelligent systems to work in production."
+                "quote": "As AI moves from demos to production, agents need money that moves at the speed of compute... Natural has rebuilt the full stack to enable intelligent systems to work in production.",
+                "source_content_hash": "9102dd3a8a0fdad6",
+                "quote_hash": "ff8c8dff3cccac73b2f20f48649cb78d7c1de564cc5a449d13ef6f59479430c6"
               }
             ]
           }
@@ -965,7 +1153,20 @@
           "Stripe 已与 OpenAI 合作推出 Agentic Commerce Protocol，并联合 Mastercard 和 Visa 推动智能体支付标准，Natural 面临来自拥有庞大商户网络和开发者生态的巨头的直接竞争，其先发优势窗口可能很窄。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "金融科技、AI 基础设施、智能体支付"
+        "sector": "金融科技、AI 基础设施、智能体支付",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 智能体从辅助工具演变为自主经济行为者所带来的支付基础设施代际替换机会。Natural 在成立仅 193 天时以 1.5 亿美元投后估值完成 3000 万美元 A 轮融资，这一估值依赖于三个已验证信号：一是团队在不到一年内构建了 13 个支付原语中的 6 个并推向市场，展示了极强的执行速度；二是吸引了来自 Stripe、Ramp、Square 等金融科技巨头的资深员工加入，验证了技术方向的行业认可度；三是获得了 Forerunner、Human Capital、Abstract 等机构以及 Notion、Vercel、Brex 等科技公司高管的集体背书，表明智能体支付缺位已成为建设者社区的共识性痛点。但当前判断的证据边界清晰：公司尚未披露任何商业客户或交易量数据，所有产品刚刚进入 GA 阶段，收入验证为零。1500 万美元的估值完全建立在团队执行力、市场时机和架构决策的前瞻性之上，而非商业牵引力。",
+          "evidence_signals": [
+            "在成立不到一年内构建了 13 个支付原语中的 6 个并上线 GA，展示了极强的产品执行速度",
+            "吸引了来自 Stripe、Ramp、Square 等金融科技巨头的资深员工加入",
+            "获得了 Forerunner 领投以及 Notion、Vercel、Brex、Privy 等科技公司高管的集体参投，表明智能体支付缺位是建设者社区的共识性痛点",
+            "选择与 Column N.A. 合作，在受监管的银行基础上构建 FDIC 保险钱包，为合规和企业信任奠定架构基础"
+          ],
+          "risks": [
+            "Stripe 已与 OpenAI 合作推出 Agentic Commerce Protocol，并联合 Mastercard 和 Visa 推动智能体支付标准，Natural 面临来自拥有庞大商户网络和开发者生态的巨头的直接竞争，其先发优势窗口可能很窄。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -973,333 +1174,175 @@
           "target_kind": "product",
           "research_name": "Wallets",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Wallets — FDIC-insured wallets for agents"
-            },
-            {
-              "source_id": "FISRC-fe79ce8933a500c0",
-              "quote": "Open FDIC-insured¹ accounts agents can hold, receive, & send funds from."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Vaults",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Vaults — One-way accounts. Agents move money in, never out"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Pay",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Pay — Send money to an agent, business, or consumer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Kahlil Lalji",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Kahlil Lalji, CEO and Co-founder of Natural"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Eric Wang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Natural was started by Lalji and co-founders Eric Wang and Walt Leung"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Walt Leung",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Natural was started by Lalji and co-founders Eric Wang and Walt Leung"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Forerunner",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "a $30 million Series A led by Kirsten Green at Forerunner"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Human Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "The round was supported by Aarmaan Ali and Baris Akis, Founders of Human Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Abstract",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Ramtin Naimi, Founder of Abstract"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Wischoff Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Nichole Wischoff, Founder of Wischoff Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Increase",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Darragh Buckley, CEO of Increase"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "HappyRobot",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Pablo Palafox, CEO of HappyRobot"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Browserbase",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Paul Klein IV, CEO of Browserbase"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Notion",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Akshay Kothari, Co-founder of Notion"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Privy",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Henri Stern and Max Segall, CEO and COO of Privy"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Pete Koomen, GP of Y Combinator"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Profound",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Dylan Babbs, CTO of Profound"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Brex",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Art Levy, CBO of Brex"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Antifund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a46916de19256c2b",
-              "quote": "Jake and Logan Paul, GPs of Antifund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Genius Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Torch Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Restive",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "SV Angel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "Natural's announcement lists Human Capital, Abstract, Genius Ventures, Torch Capital, Restive, SV Angel and a long group of operators as backers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Stripe",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "In October 2025, Stripe said it had worked with OpenAI on the Agentic Commerce Protocol, which powered Instant Checkout in ChatGPT for US Etsy sellers and was expected to expand to Shopify merchants. In March 2026, Stripe said its Shared Payment Tokens would support Mastercard Agent Pay, Visa Intelligent Commerce, Affirm and Klarna."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Skyfire Systems",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf3c8dfd6c45ed29",
-              "quote": "several other startups, including DCVC-backed Skyfire Systems, are trying to reinvent the payments backbone for AI agents using USD-backed stablecoins."
-            },
-            {
-              "source_id": "FISRC-d9c64e6b116df7b5",
-              "quote": "Skyfire has been building identity and payment infrastructure for AI agents, with support for debit cards, credit cards, ACH, wire transfers and USDC funding, according to its product documentation. DCVC lists Skyfire as a portfolio company and describes the startup as infrastructure for agentic AI commerce."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1385,13 +1428,46 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:03:17.032Z"
+      "published_at": "2026-07-26T15:03:17.032Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Pay",
+            "Vaults",
+            "Wallets"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Eric Wang",
+            "Kahlil Lalji",
+            "Walt Leung"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-901155ab700a7e8e"
+      ],
+      "aggregation": {
+        "key": "EN-12765295db4f1e79|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f281c9debf3bb41c",
       "triggered_by_event_id": "EV-eb4858e820bf9435",
       "as_of_date": "2026-07-23",
@@ -1409,7 +1485,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-527124e65e7f6539",
-                "quote": "Founded by Nick Donahue, Drafted has raised a $16 million seed round"
+                "quote": "Founded by Nick Donahue, Drafted has raised a $16 million seed round",
+                "source_content_hash": "b58c2bdf8d70a397",
+                "quote_hash": "89c2df145c82c3334b627b3bf17e7068ed0b88912806a798edbd0285242e3894"
               }
             ],
             "entity_id": null
@@ -1423,11 +1501,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-527124e65e7f6539",
-            "quote": "Drafted, a nine-month-old startup that uses AI to turn home-design ideas into floor plans and 3D layouts."
+            "quote": "Drafted, a nine-month-old startup that uses AI to turn home-design ideas into floor plans and 3D layouts.",
+            "source_content_hash": "b58c2bdf8d70a397",
+            "quote_hash": "57352501a57ef9090c656c1a8c91ce933a1889f7dfa0b04f1f6b09a94b9ed9da"
           },
           {
             "source_id": "FISRC-4cd17533a0d4aef5",
-            "quote": "Drafted, a San Francisco, CA-based startup that uses artificial intelligence to generate floor plans and 3D home layouts"
+            "quote": "Drafted, a San Francisco, CA-based startup that uses artificial intelligence to generate floor plans and 3D home layouts",
+            "source_content_hash": "343e7b26580601a2",
+            "quote_hash": "510e31a490728095262cb28c2050884a42cc2e9120ccd9022862052349a256fc"
           }
         ]
       },
@@ -1443,29 +1525,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-39ff7cccde6aa69c",
-                "quote": "Drafted has raised a $16 million Seed round led by Buckley Ventures."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Patrick Collison",
-            "role": "种子轮前领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-527124e65e7f6539",
-                "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Jack Altman",
-            "role": "种子轮前参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-527124e65e7f6539",
-                "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman."
+                "quote": "Drafted has raised a $16 million Seed round led by Buckley Ventures.",
+                "source_content_hash": "c15f5510e4ba163c",
+                "quote_hash": "3d5766a8e0ed9b836d45cc02e7ac2cd5efb38e5c5bf1bea097983698528455fb"
               }
             ],
             "entity_id": null
@@ -1474,7 +1536,67 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-527124e65e7f6539",
-            "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman."
+            "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman.",
+            "source_content_hash": "b58c2bdf8d70a397",
+            "quote_hash": "b9c1da215b84e19e8dd694350edc1a06dc800a892edbb2e7c0583fd2e42fd6c0"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [
+          {
+            "name": "Patrick Collison",
+            "role": "种子轮前领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-527124e65e7f6539",
+                "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman.",
+                "source_content_hash": "b58c2bdf8d70a397",
+                "quote_hash": "b9c1da215b84e19e8dd694350edc1a06dc800a892edbb2e7c0583fd2e42fd6c0"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "pre_seed",
+              "label": "预种子轮",
+              "original": "种子轮前领投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Jack Altman",
+            "role": "种子轮前参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-527124e65e7f6539",
+                "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman.",
+                "source_content_hash": "b58c2bdf8d70a397",
+                "quote_hash": "b9c1da215b84e19e8dd694350edc1a06dc800a892edbb2e7c0583fd2e42fd6c0"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "pre_seed",
+              "label": "预种子轮",
+              "original": "种子轮前参投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-eb4858e820bf9435",
+            "round_original": "种子轮",
+            "amount": "$16 million",
+            "announced_at": "2026-05-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-527124e65e7f6539",
+                "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman.",
+                "source_content_hash": "b58c2bdf8d70a397",
+                "quote_hash": "b9c1da215b84e19e8dd694350edc1a06dc800a892edbb2e7c0583fd2e42fd6c0"
+              }
+            ]
           }
         ]
       },
@@ -1492,11 +1614,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "users can enter details such as lot size, home size, and room count. Then, they can describe the type of house they want and instantly generate floor plans and 3D renderings. They can tinker with the design and get updated plans in seconds."
+              "quote": "users can enter details such as lot size, home size, and room count. Then, they can describe the type of house they want and instantly generate floor plans and 3D renderings. They can tinker with the design and get updated plans in seconds.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "f73a308b6da8e89113abd961f3d328b2b1ef22ec9c2f8a66923bf0846dbb45ca"
             },
             {
               "source_id": "FISRC-59145ca0c7138f71",
-              "quote": "Generate floor plans, 3D models, renders, and professional CAD/BIM exports."
+              "quote": "Generate floor plans, 3D models, renders, and professional CAD/BIM exports.",
+              "source_content_hash": "7e46d55c98f0e904",
+              "quote_hash": "69364b4b23eb802b04fa1c8a81932746f433d3c764cc5037bb58489ea0372f7f"
             }
           ],
           "entity_id": null
@@ -1510,9 +1636,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "more than a third of website visitors are homebuyers."
+              "quote": "more than a third of website visitors are homebuyers.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "6b321570423b7c7325929422dc6f86d3d587cb934ef32ecff2af66704ed054d7"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "建筑师",
@@ -1521,9 +1650,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Other users include architects, builders, and developers."
+              "quote": "Other users include architects, builders, and developers.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "a792b41c1ee3828a532dffae3cb4553d6f318348381eaef670d7015c01b676a3"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "建筑商",
@@ -1532,9 +1664,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Other users include architects, builders, and developers."
+              "quote": "Other users include architects, builders, and developers.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "a792b41c1ee3828a532dffae3cb4553d6f318348381eaef670d7015c01b676a3"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "开发商",
@@ -1543,9 +1678,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Other users include architects, builders, and developers."
+              "quote": "Other users include architects, builders, and developers.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "a792b41c1ee3828a532dffae3cb4553d6f318348381eaef670d7015c01b676a3"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1559,9 +1697,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work."
+              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "d15def3f441e04789eeb032b5dd0140bc211dfe8b5469070ce9d48aafa4ebecb"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Planner 5D",
@@ -1573,9 +1714,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work."
+              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "d15def3f441e04789eeb032b5dd0140bc211dfe8b5469070ce9d48aafa4ebecb"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Homestyler",
@@ -1587,9 +1731,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work."
+              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "d15def3f441e04789eeb032b5dd0140bc211dfe8b5469070ce9d48aafa4ebecb"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1600,7 +1747,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Since launching five months ago, 250,000 people have visited Drafted's website"
+              "quote": "Since launching five months ago, 250,000 people have visited Drafted's website",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "5ac176899181f89d4a3fd12ffeb0f0aa7dcae645a064cacda8c9570fdfead05e"
             }
           ]
         },
@@ -1611,7 +1760,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "in the past month, users have generated over 300,000 floor plans."
+              "quote": "in the past month, users have generated over 300,000 floor plans.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "3a39ada895fa04490781b99924540c1ad7176e685e30e20c47076fac1a7018d9"
             }
           ]
         },
@@ -1622,7 +1773,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e78c61482bebb207",
-              "quote": "Over the last month, 120,000 people generated 325,000+ home designs with http://Drafted.ai"
+              "quote": "Over the last month, 120,000 people generated 325,000+ home designs with http://Drafted.ai",
+              "source_content_hash": "f0aaa9625a163855",
+              "quote_hash": "f024988fd3853d053679acfba920403b18216c96e9184a48b399206cd05ee059"
             }
           ]
         },
@@ -1633,7 +1786,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e78c61482bebb207",
-              "quote": "Over the last month, 120,000 people generated 325,000+ home designs with http://Drafted.ai"
+              "quote": "Over the last month, 120,000 people generated 325,000+ home designs with http://Drafted.ai",
+              "source_content_hash": "f0aaa9625a163855",
+              "quote_hash": "f024988fd3853d053679acfba920403b18216c96e9184a48b399206cd05ee059"
             }
           ]
         },
@@ -1644,7 +1799,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "more than a third of website visitors are homebuyers."
+              "quote": "more than a third of website visitors are homebuyers.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "6b321570423b7c7325929422dc6f86d3d587cb934ef32ecff2af66704ed054d7"
             }
           ]
         },
@@ -1655,7 +1812,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "basic plan sets expected to cost around $1,000."
+              "quote": "basic plan sets expected to cost around $1,000.",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "168460bd9736cade0eef5f1dd95744e3ebe8db7a0e8296157f83c7f306c2c1f8"
             }
           ]
         },
@@ -1666,7 +1825,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Drafted previously raised $1.65 million at a $35 million valuation"
+              "quote": "Drafted previously raised $1.65 million at a $35 million valuation",
+              "source_content_hash": "b58c2bdf8d70a397",
+              "quote_hash": "467f5ad32a7303619e2e7c7928c14aa0d82605c98b227db0a1b4978e239028aa"
             }
           ]
         }
@@ -1685,7 +1846,20 @@
           "创始人过往创业项目因高利率等宏观因素关闭，当前项目同样面临房地产市场波动的风险。"
         ],
         "related_direction_id": "",
-        "sector": "AI 家居设计"
+        "sector": "AI 家居设计",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 能否将住宅设计从昂贵、缓慢的专业服务或僵化的库存方案，转变为一种可快速迭代、低成本、高定制化的软件式体验。本轮融资主要依赖的已验证信号是强劲的早期用户增长：上线 5 个月吸引 25 万网站访问者，过去一个月有 12 万用户生成了超过 32.5 万套家居设计。这表明市场对 AI 驱动的设计探索工具有真实且迫切的需求。然而，判断的证据边界在于，当前的增长主要由免费使用驱动，公司尚未开始对核心产品收费，其商业模式的可行性和用户付费意愿尚未得到验证。",
+          "evidence_signals": [
+            "上线5个月网站访问者达25万",
+            "过去一个月12万用户生成超32.5万套家居设计",
+            "超过三分之一的访问者为购房者，表明核心目标用户群体明确"
+          ],
+          "risks": [
+            "商业化路径未经验证：公司计划在未来3-6个月内才开始对基础方案集收费，当前所有增长均基于免费模式，用户付费意愿和转化率未知。",
+            "创始人过往创业项目因高利率等宏观因素关闭，当前项目同样面临房地产市场波动的风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1693,160 +1867,84 @@
           "target_kind": "product",
           "research_name": "Drafted AI 家居设计平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "users can enter details such as lot size, home size, and room count. Then, they can describe the type of house they want and instantly generate floor plans and 3D renderings. They can tinker with the design and get updated plans in seconds."
-            },
-            {
-              "source_id": "FISRC-59145ca0c7138f71",
-              "quote": "Generate floor plans, 3D models, renders, and professional CAD/BIM exports."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Nick Donahue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Founded by Nick Donahue, Drafted has raised a $16 million seed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Buckley Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-39ff7cccde6aa69c",
-              "quote": "Drafted has raised a $16 million Seed round led by Buckley Ventures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Patrick Collison",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Jack Altman",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Drafted previously raised $1.65 million at a $35 million valuation from investors including Patrick Collison and Jack Altman."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "购房者群体",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "more than a third of website visitors are homebuyers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "建筑师",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Other users include architects, builders, and developers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "建筑商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Other users include architects, builders, and developers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "开发商",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Other users include architects, builders, and developers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Autodesk",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Planner 5D",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Homestyler",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-527124e65e7f6539",
-              "quote": "Architects and builders already use tools like Autodesk, Planner 5D, and Homestyler. Donahue is betting Drafted can offer a simpler starting point for both consumers and architects, before a project moves into more formal design work."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1932,13 +2030,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:02:28.192Z"
+      "published_at": "2026-07-26T15:02:28.192Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Drafted AI 家居设计平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Nick Donahue"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-eb4858e820bf9435"
+      ],
+      "aggregation": {
+        "key": "EN-094b7ade939cad4d|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-d0ba841c66fa21b6",
       "triggered_by_event_id": "EV-0b6cfbf67ba2da31",
       "as_of_date": "2026-07-23",
@@ -1956,7 +2083,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "Sudhir Bhojwani, co-founder and CEO of Oro Labs"
+                "quote": "Sudhir Bhojwani, co-founder and CEO of Oro Labs",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "aef40850a412e9a4bec1c88267ca53c2bf62498adc25e90f1cde05aaa44fb51b"
               }
             ],
             "entity_id": null
@@ -1967,7 +2096,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "Lalitha Rajagopalan, a cofounder of Oro Labs who currently leads strategy and operations for the company"
+                "quote": "Lalitha Rajagopalan, a cofounder of Oro Labs who currently leads strategy and operations for the company",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "ba88be17cf375b5b279721e8b34b1e7b389e168fb8527b549cebb16562b1f0b7"
               }
             ],
             "entity_id": null
@@ -1978,7 +2109,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "Oro Labs' cofounders (from left): Sudhir Bhojwani, Lalitha Rajagopalan, and Yuan Tung."
+                "quote": "Oro Labs' cofounders (from left): Sudhir Bhojwani, Lalitha Rajagopalan, and Yuan Tung.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "54a8c02a0453502c0c7f10df3aa80a08be00f2078795126aadfa9805f01370ab"
               }
             ],
             "entity_id": null
@@ -1992,16 +2125,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1347e63f3abd5d34",
-            "quote": "Oro Labs , a Silicon Valley startup that uses artificial intelligence to automate companies’ procurement processes"
+            "quote": "Oro Labs , a Silicon Valley startup that uses artificial intelligence to automate companies’ procurement processes",
+            "source_content_hash": "903d49978d88c371",
+            "quote_hash": "907563caa746e63bb2f06060a28ce4f133169bb56dbbdfa832871a6dfd3c04f8"
           },
           {
             "source_id": "FISRC-1347e63f3abd5d34",
-            "quote": "what it calls a “procurement orchestration platform”—a layer of AI-powered software that sits on top of a company’s existing enterprise resource planning and procurement systems."
+            "quote": "what it calls a “procurement orchestration platform”—a layer of AI-powered software that sits on top of a company’s existing enterprise resource planning and procurement systems.",
+            "source_content_hash": "903d49978d88c371",
+            "quote_hash": "685cb93423a3327ecc820c3026c307cb8e498ae80183a80052aafd03e1bfa21b"
           }
         ]
       },
       "financing": {
-        "round": "Series C",
+        "round": "C轮",
         "amount": "$100 million",
         "total_raised": "$160 million",
         "announced_at": "2026-03-12",
@@ -2012,7 +2149,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital."
+                "quote": "The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "e47704b1a9ba8d2709ed19de2422a8c2ce98b2b3fde7686d5697e31b7e17f3cb"
               }
             ],
             "entity_id": null
@@ -2023,7 +2162,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital."
+                "quote": "The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "e47704b1a9ba8d2709ed19de2422a8c2ce98b2b3fde7686d5697e31b7e17f3cb"
               }
             ],
             "entity_id": null
@@ -2034,7 +2175,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
+                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
               }
             ],
             "entity_id": null
@@ -2045,7 +2188,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
+                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
               }
             ],
             "entity_id": null
@@ -2056,7 +2201,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
+                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
               }
             ],
             "entity_id": null
@@ -2067,7 +2214,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1347e63f3abd5d34",
-                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
+                "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
               }
             ],
             "entity_id": null
@@ -2076,11 +2225,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1347e63f3abd5d34",
-            "quote": "has raised $100 million in new venture capital funding."
+            "quote": "has raised $100 million in new venture capital funding.",
+            "source_content_hash": "903d49978d88c371",
+            "quote_hash": "f6b48f3523b6c422e09ff886d7377397db09ff6518eee4b4a9bb5d2ccd10c049"
           },
           {
             "source_id": "FISRC-1347e63f3abd5d34",
-            "quote": "The new capital raise brings the total amount of money the startup has raised to date to $160 million."
+            "quote": "The new capital raise brings the total amount of money the startup has raised to date to $160 million.",
+            "source_content_hash": "903d49978d88c371",
+            "quote_hash": "fb314359e33fc8ae760a7f4b9e5f3a57151f16b605c638d752e82c647d3080c8"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-0b6cfbf67ba2da31",
+            "round_original": "Series C",
+            "amount": "$100 million",
+            "announced_at": "2026-03-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1347e63f3abd5d34",
+                "quote": "has raised $100 million in new venture capital funding.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "f6b48f3523b6c422e09ff886d7377397db09ff6518eee4b4a9bb5d2ccd10c049"
+              },
+              {
+                "source_id": "FISRC-1347e63f3abd5d34",
+                "quote": "The new capital raise brings the total amount of money the startup has raised to date to $160 million.",
+                "source_content_hash": "903d49978d88c371",
+                "quote_hash": "fb314359e33fc8ae760a7f4b9e5f3a57151f16b605c638d752e82c647d3080c8"
+              }
+            ]
           }
         ]
       },
@@ -2100,15 +2278,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "what it calls a “procurement orchestration platform”—a layer of AI-powered software that sits on top of a company’s existing enterprise resource planning and procurement systems."
+              "quote": "what it calls a “procurement orchestration platform”—a layer of AI-powered software that sits on top of a company’s existing enterprise resource planning and procurement systems.",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "685cb93423a3327ecc820c3026c307cb8e498ae80183a80052aafd03e1bfa21b"
             },
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "using AI agents to route requests, check compliance, and automate manual processes."
+              "quote": "using AI agents to route requests, check compliance, and automate manual processes.",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "f8e8c76f0f72c72fda8003a5584ad5f0669c1baeb980c4a2177fd0dc40eff389"
             },
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "it charges based on transaction volume"
+              "quote": "it charges based on transaction volume",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "d3cc5ac4df23b1fa9e8d17f6f2862c0cb20655235b93b93dd8f5d4bdcbe92db2"
             }
           ],
           "entity_id": null
@@ -2122,9 +2306,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Oro’s customers include a number of Fortune 500 companies, including Coca-Cola"
+              "quote": "Oro’s customers include a number of Fortune 500 companies, including Coca-Cola",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "8471e52837f33bde91792c8233d1e7229a093d9d3e5466b6d05172de3beafd8f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -2136,7 +2323,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "the five-year-old company said it achieved 300% revenue growth."
+              "quote": "the five-year-old company said it achieved 300% revenue growth.",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "a8cebad7eab0ef619951ba932cea47b061a232349e8aba0aa2984410b1480a8e"
             }
           ]
         },
@@ -2147,7 +2336,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "it is currently seeing a 150% “revenue retention rate,”"
+              "quote": "it is currently seeing a 150% “revenue retention rate,”",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "54dbe0d660327f674e370c5b347a8904fa24ceb4e0f0e4440935296006322c9e"
             }
           ]
         },
@@ -2158,7 +2349,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "the AI system’s accuracy has reached 90%."
+              "quote": "the AI system’s accuracy has reached 90%.",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "c2c8e4823fb10a92b4d8a915c4f171a6a9562cd2cf4b03e986b89a6a0b1d1593"
             }
           ]
         },
@@ -2169,7 +2362,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "bring the time it takes to onboard a new supplier from more than 30 days to under 10 days"
+              "quote": "bring the time it takes to onboard a new supplier from more than 30 days to under 10 days",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "107a2a64aa08f260125ba282ef6a02277d0e4525c5223090bcec07cfca948548"
             }
           ]
         },
@@ -2180,7 +2375,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "manual compliance checks on purchase orders that previously took 36 hours now take six minutes"
+              "quote": "manual compliance checks on purchase orders that previously took 36 hours now take six minutes",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "3a541c0d2f29220a85f540199013df65c11d9b6123193f94e633d02722416030"
             }
           ]
         },
@@ -2191,7 +2388,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-94919ea27421e7cd",
-              "quote": "the ORO platform is deployed across 100+ countries"
+              "quote": "the ORO platform is deployed across 100+ countries",
+              "source_content_hash": "6127eadd62fc06a1",
+              "quote_hash": "7fc208ba80e23e57752b1daeafadb856a84e017c954c0cc6c8934cbcb889c58c"
             }
           ]
         },
@@ -2202,7 +2401,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "it now works with 15 of the top 25 life sciences companies"
+              "quote": "it now works with 15 of the top 25 life sciences companies",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "86af134da3dc9f8c856546d07ff52c0f14ed436e822511748d1291306e6f8977"
             }
           ]
         },
@@ -2213,7 +2414,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "had a procurement process that involved 20 million human touchpoints per year"
+              "quote": "had a procurement process that involved 20 million human touchpoints per year",
+              "source_content_hash": "903d49978d88c371",
+              "quote_hash": "dcc7135d97d11fe5e3eed083b0bc26352aac8e6b0ffd75e785835d46dec4b185"
             }
           ]
         }
@@ -2230,7 +2433,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-94919ea27421e7cd",
-                "quote": "ORO is pioneering the modernization of procurement, leveraging next-gen AI to deliver intelligent automation and tangible ROI while preserving the context, controls, and standards that large global enterprises depend on. We believe ORO’s co-founders, Sudhir, Lalitha, and Yuan, as well as the rest of the ORO team, are uniquely positioned to lead this shift, bringing unmatched domain expertise and strategic innovation to legacy operations."
+                "quote": "ORO is pioneering the modernization of procurement, leveraging next-gen AI to deliver intelligent automation and tangible ROI while preserving the context, controls, and standards that large global enterprises depend on. We believe ORO’s co-founders, Sudhir, Lalitha, and Yuan, as well as the rest of the ORO team, are uniquely positioned to lead this shift, bringing unmatched domain expertise and strategic innovation to legacy operations.",
+                "source_content_hash": "6127eadd62fc06a1",
+                "quote_hash": "3efbe446ff7095a7b1e95a01a0de6250fcc2caccc0bfb250af7440bf4d2c3293"
               }
             ]
           },
@@ -2243,7 +2448,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-94919ea27421e7cd",
-                "quote": "We are thrilled to partner with ORO Labs as they pioneer the future of procurement. ORO is moving the world’s largest enterprises beyond legacy systems, orchestrating intelligent automation and seamless workflows to operations that desperately need them. ORO’s team exemplifies the kind of visionary innovation we back at Brighton Park Capital — leveraging next-generation AI to solve massive, longstanding business challenges."
+                "quote": "We are thrilled to partner with ORO Labs as they pioneer the future of procurement. ORO is moving the world’s largest enterprises beyond legacy systems, orchestrating intelligent automation and seamless workflows to operations that desperately need them. ORO’s team exemplifies the kind of visionary innovation we back at Brighton Park Capital — leveraging next-generation AI to solve massive, longstanding business challenges.",
+                "source_content_hash": "6127eadd62fc06a1",
+                "quote_hash": "882bc21be50020c7d1fd9d7d63a965c2dc09395d6e2783199c7f9a15789a92d8"
               }
             ]
           },
@@ -2256,7 +2463,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-94919ea27421e7cd",
-                "quote": "They’ve built an AI-first platform that can handle the scale, complexity, and compliance requirements that Fortune 500 companies demand. ORO is rapidly becoming the new standard for enterprise procurement."
+                "quote": "They’ve built an AI-first platform that can handle the scale, complexity, and compliance requirements that Fortune 500 companies demand. ORO is rapidly becoming the new standard for enterprise procurement.",
+                "source_content_hash": "6127eadd62fc06a1",
+                "quote_hash": "67cbd1261bec0eefaa1b32bbfd19194036b43f98c32bc4be0ca9caf56aa4fbc2"
               }
             ]
           },
@@ -2269,7 +2478,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-94919ea27421e7cd",
-                "quote": "Today's enterprises need intelligent, connected workflows that strengthen governance and control across every step, from intake management to supplier onboarding and risk compliance. ORO is defining this category with an AI-native platform that unifies people, systems, and data into a seamless, secure experience that drives measurable results."
+                "quote": "Today's enterprises need intelligent, connected workflows that strengthen governance and control across every step, from intake management to supplier onboarding and risk compliance. ORO is defining this category with an AI-native platform that unifies people, systems, and data into a seamless, secure experience that drives measurable results.",
+                "source_content_hash": "6127eadd62fc06a1",
+                "quote_hash": "dc387466bd49142fa5d598a9dc511e11e7e3dd45ebe2fc87148edf59c71a40b6"
               }
             ]
           },
@@ -2282,7 +2493,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-94919ea27421e7cd",
-                "quote": "From the beginning, what stood out about Sudhir, Lalitha, and Yuan was their firsthand understanding of the procurement challenges they’re solving for at ORO. As an investor, finding leaders with that founder-market fit is incredibly valuable because they’ve lived the problem and are uniquely qualified to build the solution."
+                "quote": "From the beginning, what stood out about Sudhir, Lalitha, and Yuan was their firsthand understanding of the procurement challenges they’re solving for at ORO. As an investor, finding leaders with that founder-market fit is incredibly valuable because they’ve lived the problem and are uniquely qualified to build the solution.",
+                "source_content_hash": "6127eadd62fc06a1",
+                "quote_hash": "abdc88cf522844774bb31d3b092d9c0ed5b2ac143486d1177925704b046a13ec"
               }
             ]
           }
@@ -2300,7 +2513,22 @@
           "公司未披露本轮融资估值，缺乏公开市场对其商业化和增长潜力的独立定价信号。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业服务，采购科技，AI智能体"
+        "sector": "企业服务，采购科技，AI智能体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“采购编排”这一新兴品类，即通过AI智能体在现有遗留系统之上实现端到端工作流自动化，而非替换旧系统。本轮融资验证的信号包括：300%的年收入增长、150%的收入留存率、以及包括可口可乐、辉瑞、诺华在内的财富500强客户群。这些指标表明产品已在高合规要求的复杂企业环境中证明了其价值，并实现了强劲的客户扩展。然而，公司未披露本轮估值，且其AI决策准确率为90%，意味着在关键采购决策中仍有10%的错误率，这在高风险企业环境中可能成为规模化部署的阻碍。",
+          "evidence_signals": [
+            "年收入增长300%",
+            "收入留存率达到150%",
+            "已签约多家财富500强客户，覆盖生命科学、金融、消费品等行业",
+            "平台在100多个国家部署",
+            "AI自动化决策准确率达到90%"
+          ],
+          "risks": [
+            "AI决策准确率为90%，在涉及重大金额或合规风险的采购决策中，10%的错误率可能带来显著的财务和合规风险，限制全自动化部署。",
+            "公司未披露本轮融资估值，缺乏公开市场对其商业化和增长潜力的独立定价信号。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2308,151 +2536,77 @@
           "target_kind": "product",
           "research_name": "Procurement Orchestration Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "what it calls a “procurement orchestration platform”—a layer of AI-powered software that sits on top of a company’s existing enterprise resource planning and procurement systems."
-            },
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "using AI agents to route requests, check compliance, and automate manual processes."
-            },
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "it charges based on transaction volume"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sudhir Bhojwani",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Sudhir Bhojwani, co-founder and CEO of Oro Labs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Lalitha Rajagopalan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Lalitha Rajagopalan, a cofounder of Oro Labs who currently leads strategy and operations for the company"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yuan Tung",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Oro Labs' cofounders (from left): Sudhir Bhojwani, Lalitha Rajagopalan, and Yuan Tung."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Goldman Sachs Growth Equity",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Brighton Park Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Norwest Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "B Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "XYZ Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Felicis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Coca-Cola",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1347e63f3abd5d34",
-              "quote": "Oro’s customers include a number of Fortune 500 companies, including Coca-Cola"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2502,13 +2656,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:02:26.509Z"
+      "published_at": "2026-07-26T15:02:26.509Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Procurement Orchestration Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Lalitha Rajagopalan",
+            "Sudhir Bhojwani",
+            "Yuan Tung"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-0b6cfbf67ba2da31"
+      ],
+      "aggregation": {
+        "key": "EN-80f681ea74fb8ccc|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-33720a6e75d508b6",
       "triggered_by_event_id": "EV-754e83c2d19005fe",
       "as_of_date": "2026-07-23",
@@ -2526,7 +2711,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "CEO Rafael Quintanilla, a former vice president at Accel, co-founded Arrakis in January 2026"
+                "quote": "CEO Rafael Quintanilla, a former vice president at Accel, co-founded Arrakis in January 2026",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "d73cac3fa69000ed16ddd32594cc4e9f9ce5c14ad73bdbf026e720fe574678a0"
               }
             ],
             "entity_id": null
@@ -2537,7 +2724,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero"
+                "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "3d8383ef8de29f7988db2aab511b00d220bdbf52286f582787293bc56e018e0b"
               }
             ],
             "entity_id": null
@@ -2548,7 +2737,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero"
+                "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "3d8383ef8de29f7988db2aab511b00d220bdbf52286f582787293bc56e018e0b"
               }
             ],
             "entity_id": null
@@ -2559,7 +2750,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero"
+                "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "3d8383ef8de29f7988db2aab511b00d220bdbf52286f582787293bc56e018e0b"
               }
             ],
             "entity_id": null
@@ -2571,19 +2764,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The company plans to triple its headcount from about 15 employees"
+              "quote": "The company plans to triple its headcount from about 15 employees",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "75689a202a3d8ab233d0ee563018652b3d63d4113287770dffc0303f9e8b6eb5"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-1c7a4135c04a6da5",
-            "quote": "Arrakis, a London and Paris startup building what it calls an AI operating system for industrial companies, has emerged from stealth with $38 million in total funding"
+            "quote": "Arrakis, a London and Paris startup building what it calls an AI operating system for industrial companies, has emerged from stealth with $38 million in total funding",
+            "source_content_hash": "0330bda7fe4047e0",
+            "quote_hash": "b5dff5845ba635c13071e2e40ab26b71c35d58dd19cabf50e7ca6cc2cc919908"
           }
         ]
       },
       "financing": {
-        "round": "种子轮和A轮",
+        "round": "多轮融资",
         "amount": "3800万美元",
         "total_raised": "3800万美元",
         "announced_at": "2026-07-22",
@@ -2594,7 +2791,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "The company raised a $30 million Series A led by Blossom Capital"
+                "quote": "The company raised a $30 million Series A led by Blossom Capital",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "2eb17ba77457d0fd2b429acec41ea5a093731d45037fab495ad6091904a3545b"
               }
             ],
             "entity_id": null
@@ -2605,11 +2804,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "a seven and a half million dollar seed round led by Accel that closed in March"
+                "quote": "a seven and a half million dollar seed round led by Accel that closed in March",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "e81e42043f1f5d7943f4214edbbdea4661c1c9c5f369944b41f57f115e8b1282"
               },
               {
                 "source_id": "FISRC-a7f7f9dc89ee59ba",
-                "quote": "The company's latest funding is a $30 million Series A led by Blossom Capital, with participation from venture capital firms Accel, GFC, MainObject, and Rerail."
+                "quote": "The company's latest funding is a $30 million Series A led by Blossom Capital, with participation from venture capital firms Accel, GFC, MainObject, and Rerail.",
+                "source_content_hash": "1afc729d67c02bf4",
+                "quote_hash": "4bde8cf270d2dbb8692f36e06bfd38289b856b2f1370176bd2964ebedddf18e0"
               }
             ],
             "entity_id": null
@@ -2620,7 +2823,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7f7f9dc89ee59ba",
-                "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail"
+                "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail",
+                "source_content_hash": "1afc729d67c02bf4",
+                "quote_hash": "16508fa0695f2be1b7120864ed96d45ead601266321782cae6aeb11cf6d6f63f"
               }
             ],
             "entity_id": null
@@ -2631,7 +2836,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7f7f9dc89ee59ba",
-                "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail"
+                "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail",
+                "source_content_hash": "1afc729d67c02bf4",
+                "quote_hash": "16508fa0695f2be1b7120864ed96d45ead601266321782cae6aeb11cf6d6f63f"
               }
             ],
             "entity_id": null
@@ -2642,7 +2849,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7f7f9dc89ee59ba",
-                "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail"
+                "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail",
+                "source_content_hash": "1afc729d67c02bf4",
+                "quote_hash": "16508fa0695f2be1b7120864ed96d45ead601266321782cae6aeb11cf6d6f63f"
               }
             ],
             "entity_id": null
@@ -2653,7 +2862,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round."
+                "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round.",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "26ce089b8c2cec8065c5dd40334723ccb9dc5194fc7c7f9641174ac33fe18107"
               }
             ],
             "entity_id": null
@@ -2664,7 +2875,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round."
+                "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round.",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "26ce089b8c2cec8065c5dd40334723ccb9dc5194fc7c7f9641174ac33fe18107"
               }
             ],
             "entity_id": null
@@ -2675,7 +2888,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c7a4135c04a6da5",
-                "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round."
+                "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round.",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "26ce089b8c2cec8065c5dd40334723ccb9dc5194fc7c7f9641174ac33fe18107"
               }
             ],
             "entity_id": null
@@ -2684,7 +2899,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1c7a4135c04a6da5",
-            "quote": "Arrakis emerges from stealth with $38 million to bring AI to factories and supply chains"
+            "quote": "Arrakis emerges from stealth with $38 million to bring AI to factories and supply chains",
+            "source_content_hash": "0330bda7fe4047e0",
+            "quote_hash": "4e91eca84ff7047a139a60da78cee908b914daca07cffdb879b61c01ad1def01"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-754e83c2d19005fe",
+            "round_original": "种子轮和A轮",
+            "amount": "3800万美元",
+            "announced_at": "2026-07-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c7a4135c04a6da5",
+                "quote": "Arrakis emerges from stealth with $38 million to bring AI to factories and supply chains",
+                "source_content_hash": "0330bda7fe4047e0",
+                "quote_hash": "4e91eca84ff7047a139a60da78cee908b914daca07cffdb879b61c01ad1def01"
+              }
+            ]
           }
         ]
       },
@@ -2702,23 +2938,33 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Arrakis, a London and Paris startup building what it calls an AI operating system for industrial companies"
+              "quote": "Arrakis, a London and Paris startup building what it calls an AI operating system for industrial companies",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "3b57f3836a8be4cb1888ed2167ca34af82f0e241f2fdade1938eb4983da8ba9f"
             },
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Rather than locking customers into a single model provider, Arrakis takes a model-agnostic approach, starting with commercial models from OpenAI and Anthropic before shifting workloads to open-source alternatives from vendors like Mistral"
+              "quote": "Rather than locking customers into a single model provider, Arrakis takes a model-agnostic approach, starting with commercial models from OpenAI and Anthropic before shifting workloads to open-source alternatives from vendors like Mistral",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "b1b0603d926075f8b6b86655ff7faa1cb004e874650649daf2df6d3243593670"
             },
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The startup deploys what it describes as forward-deployed AI engineers who embed directly at customer sites"
+              "quote": "The startup deploys what it describes as forward-deployed AI engineers who embed directly at customer sites",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "4b6dcb78f1fdc35974c6bda16ba947995a6fcd4248a7386a2ce6a48457f498b1"
             },
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The company ties roughly half its fees to performance targets"
+              "quote": "The company ties roughly half its fees to performance targets",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "8ab08e0e08d91c04ec0dc18e4c66907d4944b81622ab0170677acb369dfb493a"
             },
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "this flexibility delivers a two-to-four-fold improvement in output quality while cutting token costs by roughly 70 percent"
+              "quote": "this flexibility delivers a two-to-four-fold improvement in output quality while cutting token costs by roughly 70 percent",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "d40b05c2183c189574f8b8f70a5207a64db4cb23892e0a49d3fde51fc7ffbb82"
             }
           ],
           "entity_id": null
@@ -2732,9 +2978,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "For one New York-listed shipping company—which he said he could not name due to non-disclosure agreements—the goal was to improve cash-flow visibility from monthly to daily."
+              "quote": "For one New York-listed shipping company—which he said he could not name due to non-disclosure agreements—the goal was to improve cash-flow visibility from monthly to daily.",
+              "source_content_hash": "1afc729d67c02bf4",
+              "quote_hash": "c41105d75927fa26dec15e552405c15d9037a17769115ea386d38f6b61587481"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "未具名客户",
@@ -2743,9 +2992,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "one client cut procurement cycle times by 90 percent using its platform"
+              "quote": "one client cut procurement cycle times by 90 percent using its platform",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "00b1087e990eb0477d230a89f464235ac8cfc13599620aeb94a0209924719402"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2759,13 +3011,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Arrakis positions itself as a faster, more flexible alternative to Palantir’s entrenched government and enterprise contracts"
+              "quote": "Arrakis positions itself as a faster, more flexible alternative to Palantir’s entrenched government and enterprise contracts",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "918017a9339fa65c96ed70474ad787b66e2b0331125f6b734a866dd655c8307a"
             },
             {
               "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "Palantir is a 20-year-old company that has a very hefty price point, that has a technology that is starting to become legacy."
+              "quote": "Palantir is a 20-year-old company that has a very hefty price point, that has a technology that is starting to become legacy.",
+              "source_content_hash": "1afc729d67c02bf4",
+              "quote_hash": "635168cccc4aafe7e688206cbaae45d54bd8c1d5a1705c59afa0aaeaa60674d5"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "PhysicsX",
@@ -2777,13 +3034,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "PhysicsX raised $300 million at nearly two and a half billion dollars in valuation in June for AI-powered engineering simulation"
+              "quote": "PhysicsX raised $300 million at nearly two and a half billion dollars in valuation in June for AI-powered engineering simulation",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "c97e528f5f00bb371f0bde3be04809dd962046761f1ac87615127c8398b44280"
             },
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The difference, Quintanilla argues, is speed, Arrakis can deploy within weeks rather than the months or years that legacy vendors require."
+              "quote": "The difference, Quintanilla argues, is speed, Arrakis can deploy within weeks rather than the months or years that legacy vendors require.",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "275e9f8a1de68982da2fbbaeeffd6498391254190d399fa1f648d652413c87c8"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -2794,7 +3056,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The Series A values Arrakis at $140 million post-money"
+              "quote": "The Series A values Arrakis at $140 million post-money",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "7294568fdb0fe2dcddc97a8201e36daaf64bf82bb6f6f1179c9a8a13edc95180"
             }
           ]
         },
@@ -2805,7 +3069,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Arrakis says it already has five paying customers"
+              "quote": "Arrakis says it already has five paying customers",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "e2392675aaea09b7d62de604c62983fe94ff6506c5158a974cfa49f10ec619d8"
             }
           ]
         },
@@ -2816,7 +3082,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "this flexibility delivers a two-to-four-fold improvement in output quality"
+              "quote": "this flexibility delivers a two-to-four-fold improvement in output quality",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "9a1c5573196429e72a98c46632827b7fe3fa83ca0a4e947b339e5a2a7b032e82"
             }
           ]
         },
@@ -2827,7 +3095,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "cutting token costs by roughly 70 percent"
+              "quote": "cutting token costs by roughly 70 percent",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "342b01b85afbadcc36908e8a65b9fda87aa3cb7dc21f58de4daf73f2673a3740"
             }
           ]
         },
@@ -2838,7 +3108,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "one client cut procurement cycle times by 90 percent using its platform"
+              "quote": "one client cut procurement cycle times by 90 percent using its platform",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "00b1087e990eb0477d230a89f464235ac8cfc13599620aeb94a0209924719402"
             }
           ]
         },
@@ -2849,7 +3121,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The company plans to triple its headcount from about 15 employees"
+              "quote": "The company plans to triple its headcount from about 15 employees",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "75689a202a3d8ab233d0ee563018652b3d63d4113287770dffc0303f9e8b6eb5"
             }
           ]
         },
@@ -2860,7 +3134,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "co-founded Arrakis in January 2026"
+              "quote": "co-founded Arrakis in January 2026",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "1cabc8b4f269a23b2919a0980f8a5ce32fd60dcafba769b50777411facb703a5"
             }
           ]
         },
@@ -2871,7 +3147,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The company ties roughly half its fees to performance targets"
+              "quote": "The company ties roughly half its fees to performance targets",
+              "source_content_hash": "0330bda7fe4047e0",
+              "quote_hash": "8ab08e0e08d91c04ec0dc18e4c66907d4944b81622ab0170677acb369dfb493a"
             }
           ]
         }
@@ -2883,7 +3161,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations."
+              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations.",
+              "source_content_hash": "2522b5c4c402c8e8",
+              "quote_hash": "d94f6cf98612fde036bc909f2752c85a104f21b37866072ed32c5af625ab1799"
             }
           ]
         }
@@ -2899,7 +3179,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b000b5cd09445eff",
-                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes."
+                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes.",
+                "source_content_hash": "2522b5c4c402c8e8",
+                "quote_hash": "6217351f8b8d841618e7a5fa15dca3196b337db2c93e4147b78fc1ce5f119972"
               }
             ]
           }
@@ -2918,7 +3200,23 @@
           "保守的欧洲工业企业在AI采用上决策缓慢，目前最佳客户来自家族控制企业，市场拓展存在结构性阻力"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "工业AI"
+        "sector": "工业AI",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是工业AI从实验到规模化部署的鸿沟能否被前向部署的模型无关架构弥合。已验证信号包括：成立6个月内获得5家付费客户（含纽交所上市企业），一家客户采购周期缩短90%，以及约一半费用与绩效挂钩的定价模式被客户接受。A轮1.4亿美元投后估值建立在种子轮后仅4个月的早期牵引力之上，估值依据主要来自创始团队的Palantir背景和Accel的内部验证，而非大规模收入数据。",
+          "evidence_signals": [
+            "成立6个月内获得5家付费客户，包括纽交所上市企业",
+            "一家客户采购周期时间缩短90%",
+            "约一半费用与绩效目标挂钩的定价模式",
+            "模型无关方法实现输出质量提升2-4倍，代币成本降低约70%",
+            "创始团队包括前Palantir采购和供应链团队负责人"
+          ],
+          "risks": [
+            "前向部署模式在客户数量扩大时可能导致成本膨胀，能否在首批客户之外规模化仍是核心考验",
+            "工业AI市场竞争激烈，PhysicsX、Prometheus等已获巨额融资，Palantir和咨询巨头也在加速布局",
+            "保守的欧洲工业企业在AI采用上决策缓慢，目前最佳客户来自家族控制企业，市场拓展存在结构性阻力"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2926,249 +3224,119 @@
           "target_kind": "product",
           "research_name": "AI操作系统",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Arrakis, a London and Paris startup building what it calls an AI operating system for industrial companies"
-            },
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Rather than locking customers into a single model provider, Arrakis takes a model-agnostic approach, starting with commercial models from OpenAI and Anthropic before shifting workloads to open-source alternatives from vendors like Mistral"
-            },
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The startup deploys what it describes as forward-deployed AI engineers who embed directly at customer sites"
-            },
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The company ties roughly half its fees to performance targets"
-            },
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "this flexibility delivers a two-to-four-fold improvement in output quality while cutting token costs by roughly 70 percent"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rafael Quintanilla",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "CEO Rafael Quintanilla, a former vice president at Accel, co-founded Arrakis in January 2026"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Haroun Beltaifa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Romain Fouilland",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mikhail Galkov",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blossom Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The company raised a $30 million Series A led by Blossom Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "a seven and a half million dollar seed round led by Accel that closed in March"
-            },
-            {
-              "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "The company's latest funding is a $30 million Series A led by Blossom Capital, with participation from venture capital firms Accel, GFC, MainObject, and Rerail."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GFC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MainObject",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Rerail",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "with participation from venture capital firms Accel, GFC, MainObject, and Rerail"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Olivier Pomel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Olivier Godement",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Junaid Hussein",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Datadog CEO Olivier Pomel, OpenAI head of business products Olivier Godement, and Junaid Hussein, founder of Cambridge Aerospace, all participated in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未具名纽约证券交易所上市企业",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "For one New York-listed shipping company—which he said he could not name due to non-disclosure agreements—the goal was to improve cash-flow visibility from monthly to daily."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未具名客户",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "one client cut procurement cycle times by 90 percent using its platform"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Palantir",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "Arrakis positions itself as a faster, more flexible alternative to Palantir’s entrenched government and enterprise contracts"
-            },
-            {
-              "source_id": "FISRC-a7f7f9dc89ee59ba",
-              "quote": "Palantir is a 20-year-old company that has a very hefty price point, that has a technology that is starting to become legacy."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "PhysicsX",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "PhysicsX raised $300 million at nearly two and a half billion dollars in valuation in June for AI-powered engineering simulation"
-            },
-            {
-              "source_id": "FISRC-1c7a4135c04a6da5",
-              "quote": "The difference, Quintanilla argues, is speed, Arrakis can deploy within weeks rather than the months or years that legacy vendors require."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3232,10 +3400,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:01:06.100Z"
+      "published_at": "2026-07-26T15:01:06.100Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI操作系统"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Haroun Beltaifa",
+            "Mikhail Galkov",
+            "Rafael Quintanilla",
+            "Romain Fouilland"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-754e83c2d19005fe"
+      ],
+      "aggregation": {
+        "key": "EN-834cc12fc35adde7|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

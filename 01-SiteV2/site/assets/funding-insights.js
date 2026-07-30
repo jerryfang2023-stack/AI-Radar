@@ -127,6 +127,7 @@
       card.analysis?.related_direction ? entityLink(card.links?.direction, `相关方向：${card.analysis.related_direction.title}`) : "",
     ].filter(Boolean).join("");
     const investorItems = card.financing?.investors || [];
+    const historicalInvestorItems = card.financing?.other_round_investors || [];
     const leadInvestors = investorItems.filter((item) => /领投/u.test(item.role || ""));
     const otherInvestors = investorItems.filter((item) => !/领投/u.test(item.role || ""));
     const investorNames = (items) => items.map((item) => linkedResearchName(card, item.name)).join("、") || "未披露";
@@ -148,6 +149,7 @@
     `).join("");
     const targets = targetCustomers.map((target) => `<p>${escapeHtml(target)}</p>`).join("")
       || '<div class="fi-field-empty">当前来源未披露目标客户</div>';
+    const customerResearch = card.customer_research || {};
     const customers = (card.customers || []).map((item) => `
       <article class="fi-customer">
         <div class="fi-customer-head">
@@ -156,7 +158,12 @@
         </div>
         <p>${escapeHtml(item.use_case || "公开使用场景未披露")}</p>
       </article>
-    `).join("") || '<div class="fi-field-empty">当前来源未确认可公开点名的客户案例</div>';
+    `).join("") || `
+      <div class="fi-field-empty">
+        已检查 ${escapeHtml(customerResearch.searched_source_count || card.research_sources?.length || 0)}
+        个抓取来源，暂未发现可核验并公开点名的客户案例。
+      </div>
+    `;
     const metrics = (card.metrics || []).map((item) => `
       <article class="fi-metric">
         <span>${escapeHtml(item.label)}</span>
@@ -183,6 +190,7 @@
     `).join("");
     const primaryProduct = card.products?.[0];
     const primaryScenario = (primaryProduct?.features || []).slice(0, 2).join("；") || primaryProduct?.description || "未披露";
+    const investmentThesis = card.analysis?.investment_thesis || {};
     const rationale = (card.analysis?.investment_rationale || []).map((item) => {
       const sourceId = item.evidence_refs?.[0]?.source_id;
       const source = (card.research_sources || []).find((candidate) => candidate.source_id === sourceId);
@@ -205,9 +213,9 @@
         当前已抓取来源未发现投资机构公开原话，因此不以模型推断替代机构判断。
       </div>
     `;
-    const signals = (card.analysis?.validated_signals || []).map((signal) => `<li>${escapeHtml(signal)}</li>`).join("")
+    const signals = (investmentThesis.evidence_signals || []).map((signal) => `<li>${escapeHtml(signal)}</li>`).join("")
       || "<li>当前来源未形成可独立验证的业务信号。</li>";
-    const risks = (card.analysis?.risks || []).map((risk) => `<li>${escapeHtml(risk)}</li>`).join("");
+    const risks = (investmentThesis.risks || []).map((risk) => `<li>${escapeHtml(risk)}</li>`).join("");
     const sources = (card.research_sources || []).map((source) => `
       <div class="fi-source">
         <a href="${escapeHtml(safeUrl(source.source_url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.title || source.publisher)}</a>
@@ -252,9 +260,16 @@
               <strong>${investorNames(leadInvestors)}</strong>
             </div>
             <div class="fi-investor-group">
-              <span>其他投资方</span>
+              <span>本轮其他投资方</span>
               <strong>${investorNames(otherInvestors)}</strong>
             </div>
+            ${historicalInvestorItems.length ? `
+              <div class="fi-investor-group">
+                <span>历史或轮次未明</span>
+                <strong>${investorNames(historicalInvestorItems)}</strong>
+                <small>不计入本轮</small>
+              </div>
+            ` : ""}
           </aside>
         </header>
         <div class="fi-company-strip">
@@ -270,14 +285,14 @@
           <div class="fi-thesis-layout">
             <div class="fi-thesis-main">
               <span class="fi-subhead">观澜判断</span>
-              <p class="fi-judgment">${escapeHtml(card.analysis?.capital_judgment)}</p>
+              <p class="fi-judgment">${escapeHtml(investmentThesis.statement)}</p>
               <span class="fi-subhead">已验证信号</span>
               <ul class="fi-signal-list">${signals}</ul>
               ${risks ? `<div class="fi-risk-boundary"><span>风险边界</span><ul>${risks}</ul></div>` : ""}
             </div>
             <aside class="fi-institution-panel">
               <span class="fi-subhead">机构公开理由</span>
-              <div class="fi-institution-list">${rationale}</div>
+              <div class="fi-institution-list" data-rationale-status="${escapeHtml(investmentThesis.institutional_rationale_status)}">${rationale}</div>
             </aside>
           </div>
         </section>

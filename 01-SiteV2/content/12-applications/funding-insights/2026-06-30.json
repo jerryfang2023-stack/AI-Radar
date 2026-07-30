@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-30",
     "generated_at": "2026-07-26T15:14:58.368Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 2,
       "auto_published": 2,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-98468ca82a2ccdd4",
       "triggered_by_event_id": "EV-d4e44892226be468",
       "as_of_date": "2026-06-30",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The company that started as a scrappy nonprofit in 2015"
+                "quote": "The company that started as a scrappy nonprofit in 2015",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "d11575bca5cc185890401753116b2f95758ba00f69f4e3880804b854058d8c43"
               }
             ],
             "entity_id": "EN-3ed55c0c72931e4b"
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "Elon Musk - an OpenAI co-founder who left the board in 2018"
+                "quote": "Elon Musk - an OpenAI co-founder who left the board in 2018",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "f2c56f50b40380aa52aa23e44a3b93ba248dad42d34a95e2d2bfd184fe78bd05"
               }
             ],
             "entity_id": null
@@ -58,23 +63,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e38cca1b8c07fccd",
-              "quote": "OpenAI employs approximately 4,500 people currently and is hiring aggressively toward 8,000."
+              "quote": "OpenAI employs approximately 4,500 people currently and is hiring aggressively toward 8,000.",
+              "source_content_hash": "e6bee4377f522396",
+              "quote_hash": "4e679e79504f28ff443e7082f79a034ca6ef4f635cfb659ef71fe08fa6b98ffd"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-1e2b3bad243bd066",
-            "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation."
+            "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+            "source_content_hash": "494969b64dc816f3",
+            "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
           },
           {
             "source_id": "FISRC-b86e0fbe62dfd3dc",
-            "quote": "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025."
+            "quote": "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025.",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote_hash": "335bcfeb5b2e1c70c4e1d1fee2b9f99beb501b590ea2acbc58e1233fc253295e"
           }
         ]
       },
       "financing": {
-        "round": "Series F",
+        "round": "F轮",
         "amount": "$1220亿",
         "total_raised": "超过$1900亿",
         "announced_at": "2026-03-31",
@@ -85,7 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b86e0fbe62dfd3dc",
-                "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft."
+                "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
               }
             ],
             "entity_id": "EN-cbc62794911ff31b"
@@ -96,11 +109,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "Nvidia ($30 billion)"
+                "quote": "Nvidia ($30 billion)",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "16e389a54221d6db4d9015cc5bf31ea68b4d8505958c7f03d81a147fb6406b7f"
               },
               {
                 "source_id": "FISRC-b86e0fbe62dfd3dc",
-                "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft."
+                "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "7c6f47d89b7c9809561c9ea57516ce95ce2adcdcf24a1ce406d190ac388ce680"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -111,11 +128,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "SoftBank ($30 billion)"
+                "quote": "SoftBank ($30 billion)",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
               },
               {
                 "source_id": "FISRC-b86e0fbe62dfd3dc",
-                "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates."
+                "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
               }
             ],
             "entity_id": "EN-80d387ccb3289295"
@@ -126,7 +147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "with continued participation from longtime backer Microsoft."
+                "quote": "with continued participation from longtime backer Microsoft.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "16f52e5c38a620a58015f9f93fa4100020dd6bca3b5dbeb8386c03a059deedeb"
               }
             ],
             "entity_id": "EN-9fbf261b62c1d7c0"
@@ -137,7 +160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "Co-leads included Andreessen Horowitz (a16z)"
+                "quote": "Co-leads included Andreessen Horowitz (a16z)",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "5720c1d3a3f101ef50c68b7a3713255fbb89e9a0332c1c20783887ee5eab145a"
               }
             ],
             "entity_id": null
@@ -148,7 +173,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -159,7 +186,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -170,7 +199,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -181,7 +212,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -192,7 +225,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -203,7 +238,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -214,7 +251,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -225,7 +264,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -236,7 +277,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
+                "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
               }
             ],
             "entity_id": null
@@ -247,7 +290,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b86e0fbe62dfd3dc",
-                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round."
+                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
               }
             ],
             "entity_id": null
@@ -258,7 +303,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b86e0fbe62dfd3dc",
-                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round."
+                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
               }
             ],
             "entity_id": null
@@ -269,18 +316,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b86e0fbe62dfd3dc",
-                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Thrive Capital",
-            "role": "既有投资方（2024年10月Series E领投）",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "OCT 2024 SERIES E $6.6B led by Thrive Capital at a $157 billion valuation"
+                "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "f0097151bde761f5e4659ebb163169c9db44274e9eb7a22cc2eab9333678a322"
               }
             ],
             "entity_id": null
@@ -291,7 +329,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1e2b3bad243bd066",
-                "quote": "MAR 2025 SERIES F - RECORD SMASHED $40B led by SoftBank."
+                "quote": "MAR 2025 SERIES F - RECORD SMASHED $40B led by SoftBank.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "5745f0800797dae5c963ddc44665a326964053cf3c963e4b60c3bb5420075feb"
               }
             ],
             "entity_id": "EN-80d387ccb3289295"
@@ -300,11 +340,60 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1e2b3bad243bd066",
-            "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation."
+            "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+            "source_content_hash": "494969b64dc816f3",
+            "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
           },
           {
             "source_id": "FISRC-b86e0fbe62dfd3dc",
-            "quote": "OpenAI has closed a landmark funding round with $122 billion in committed capital, pushing its post-money valuation to $852 billion."
+            "quote": "OpenAI has closed a landmark funding round with $122 billion in committed capital, pushing its post-money valuation to $852 billion.",
+            "source_content_hash": "4e51c91e5fc7160c",
+            "quote_hash": "9dec8e57dda11bd4325510579c0716800b8b2092a80429549ad1587cfdcef558"
+          }
+        ],
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "other_round_investors": [
+          {
+            "name": "Thrive Capital",
+            "role": "既有投资方（2024年10月Series E领投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "OCT 2024 SERIES E $6.6B led by Thrive Capital at a $157 billion valuation",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "578e151de3a113a8d51ec5bf7890be441369cb7f152e6ef1c5313bbf624d5d92"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "series_e",
+              "label": "E轮",
+              "original": "既有投资方（2024年10月Series E领投）"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-d4e44892226be468",
+            "round_original": "Series F",
+            "amount": "$1220亿",
+            "announced_at": "2026-03-31",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1e2b3bad243bd066",
+                "quote": "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+                "source_content_hash": "494969b64dc816f3",
+                "quote_hash": "a261bfcea586e272d5a5e36e574dd948e5a0fdba5865c4dab6f7b660291422b6"
+              },
+              {
+                "source_id": "FISRC-b86e0fbe62dfd3dc",
+                "quote": "OpenAI has closed a landmark funding round with $122 billion in committed capital, pushing its post-money valuation to $852 billion.",
+                "source_content_hash": "4e51c91e5fc7160c",
+                "quote_hash": "9dec8e57dda11bd4325510579c0716800b8b2092a80429549ad1587cfdcef558"
+              }
+            ]
           }
         ]
       },
@@ -321,11 +410,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers."
+              "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "0a7e0d44042f34fdc7a2fbc9d5d975bf946e15351132355973f29e9f2612e6df"
             },
             {
               "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
+              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT.",
+              "source_content_hash": "ad6be5938fd0850e",
+              "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
             }
           ],
           "entity_id": "EN-d1ad14d4ad57d207"
@@ -341,7 +434,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent."
+              "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent.",
+              "source_content_hash": "ad6be5938fd0850e",
+              "quote_hash": "77c1e6f52a5fcdd730c1c2e2c48eb55e4ea093403d5078af2150851508b5cddd"
             }
           ],
           "entity_id": "EN-1ecf93c539fcffca"
@@ -355,9 +450,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
+              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT.",
+              "source_content_hash": "ad6be5938fd0850e",
+              "quote_hash": "8e2bc731ba9d88c83c57a7ea918a0ffb64ab9861995298b9448a6e52684e39ed"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Snowflake",
@@ -366,9 +464,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Snowflake signed a $200 million multi-year partnership putting OpenAI's models directly inside enterprise data warehouses."
+              "quote": "Snowflake signed a $200 million multi-year partnership putting OpenAI's models directly inside enterprise data warehouses.",
+              "source_content_hash": "ad6be5938fd0850e",
+              "quote_hash": "56c90ad4767370a21ad1ee8094a8f3738998b609eb793f3adfc380110b9214e6"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Accenture",
@@ -377,9 +478,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Accenture is handling enterprise implementation and delivery."
+              "quote": "Accenture is handling enterprise implementation and delivery.",
+              "source_content_hash": "ad6be5938fd0850e",
+              "quote_hash": "38ff7764bc5d867593819b2b24b406e6fd2e3a28daa5739451b84434ecb25124"
             }
-          ]
+          ],
+          "entity_id": "EN-4d748ebd71af03a7"
         }
       ],
       "comparisons": [
@@ -393,9 +497,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-81ee7e9a986be8b0",
-              "quote": "Anthropic raised a $30b Series G"
+              "quote": "Anthropic raised a $30b Series G",
+              "source_content_hash": "f14710d7c7fa3bb3",
+              "quote_hash": "6ea029152c1176d794e2c847f7cbe8050922387ebaf9fed2dd6684171af8775b"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "Google (Gemini)",
@@ -407,9 +514,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Google is retrofitting Gemini into an existing conglomerate."
+              "quote": "Google is retrofitting Gemini into an existing conglomerate.",
+              "source_content_hash": "ad6be5938fd0850e",
+              "quote_hash": "a2fafbe83632148c5cc9f9eab201760bb8ab798dce63236a90a8e7982ce3d08a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "xAI",
@@ -421,9 +531,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "xAI has one distribution surface, which is X."
+              "quote": "xAI has one distribution surface, which is X.",
+              "source_content_hash": "ad6be5938fd0850e",
+              "quote_hash": "3d13ff918ffb8ce8b37597a0e7f2b07cdcf0da55ace2d5b47d7966093002a7b3"
             }
-          ]
+          ],
+          "entity_id": "EN-6fcba5d96a4fadfd"
         }
       ],
       "metrics": [
@@ -434,7 +547,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "900M Weekly ChatGPT Users"
+              "quote": "900M Weekly ChatGPT Users",
+              "source_content_hash": "494969b64dc816f3",
+              "quote_hash": "3d51475f9e1d1047e531cad95f596fa1bbd59cf9d79424acf2b7d1f48bab3e13"
             }
           ]
         },
@@ -445,7 +560,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers."
+              "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "0a7e0d44042f34fdc7a2fbc9d5d975bf946e15351132355973f29e9f2612e6df"
             }
           ]
         },
@@ -456,7 +573,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "Enterprise revenue now accounts for more than 40% of total revenue."
+              "quote": "Enterprise revenue now accounts for more than 40% of total revenue.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "429397c481ddfb2a24d0dbd0adbda364077d1057a23421211cae23bf6c395850"
             }
           ]
         },
@@ -467,7 +586,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "Its APIs currently process more than 15 billion tokens per minute."
+              "quote": "Its APIs currently process more than 15 billion tokens per minute.",
+              "source_content_hash": "4e51c91e5fc7160c",
+              "quote_hash": "b0c2c934a0b75ea7e29e5e4182679c5747c6eafb67e213f53993efc154863a1d"
             }
           ]
         },
@@ -478,7 +599,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e38cca1b8c07fccd",
-              "quote": "2025 (full year) $13.1 billion"
+              "quote": "2025 (full year) $13.1 billion",
+              "source_content_hash": "e6bee4377f522396",
+              "quote_hash": "b52279f4ace996e8d222c12c577e0f7b4b6bf60e45068661f6a42780f2d0972f"
             }
           ]
         },
@@ -489,7 +612,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e38cca1b8c07fccd",
-              "quote": "OpenAI announced it expects to spend $115 billion over the next four years."
+              "quote": "OpenAI announced it expects to spend $115 billion over the next four years.",
+              "source_content_hash": "e6bee4377f522396",
+              "quote_hash": "5d9f2c13ea27ce7c881a8f0b68478cd901ed5d38edec06d04dc95d7666a5fb57"
             }
           ]
         }
@@ -501,7 +626,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "Moments like this do not come often. Capital markets helped build electricity, highways, the internet. This is that kind of moment again."
+              "quote": "Moments like this do not come often. Capital markets helped build electricity, highways, the internet. This is that kind of moment again.",
+              "source_content_hash": "494969b64dc816f3",
+              "quote_hash": "f16069ca7bf39cbc681ffacfbc5409c2b4e41f4ffbeba199157292a85079da3a"
             }
           ]
         },
@@ -511,7 +638,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-81ee7e9a986be8b0",
-              "quote": "Every founder now sprinkles AI as a powder over their company to enter into AI investment thesis and gain valuation premium"
+              "quote": "Every founder now sprinkles AI as a powder over their company to enter into AI investment thesis and gain valuation premium",
+              "source_content_hash": "f14710d7c7fa3bb3",
+              "quote_hash": "970e25d708ae87851b47d7ae83def8482fed2d6f4274896818bfd0cf4bed4857"
             }
           ]
         }
@@ -530,7 +659,21 @@
           "高达$8520亿的估值对应约35倍的远期市销率，远高于微软、谷歌等成熟科技巨头，存在估值泡沫风险，其定价基于“尚未存在的垄断结果”。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "人工智能基础模型与全栈平台"
+        "sector": "人工智能基础模型与全栈平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是OpenAI能否在AI基础设施层建立“赢家通吃”的垄断地位。本轮$8520亿估值基于约35倍的远期市销率，这一定价隐含了OpenAI将主导通用AI智能体工作流的预期。已验证的信号包括：收入年化增长率达336%、企业收入占比超40%且正快速追赶消费者收入、以及Codex等产品周活用户5倍增长所展现的平台粘性。然而，这一判断的证据边界在于，公司目前仍严重亏损，且其超级应用战略能否成功整合碎片化的产品线并抵御Anthropic等对手的深度竞争尚未得到验证。",
+          "evidence_signals": [
+            "收入从2024年的$37亿飙升至2025年的$131亿，年增长率达254%。",
+            "ChatGPT周活跃用户达9亿，付费用户超5000万，形成强大的用户基础。",
+            "企业收入占比超40%，并有望在2026年底与消费者收入持平，证明了B端市场的付费意愿。",
+            "Codex周活跃用户3个月内增长5倍，月环比增长超70%，显示了在开发者生态中的强劲渗透力。"
+          ],
+          "risks": [
+            "尽管收入增长迅猛，但公司仍处于严重亏损状态，年化现金消耗高达$150亿以上，且预计2028年前无法实现现金流为正。",
+            "高达$8520亿的估值对应约35倍的远期市销率，远高于微软、谷歌等成熟科技巨头，存在估值泡沫风险，其定价基于“尚未存在的垄断结果”。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -538,389 +681,203 @@
           "target_kind": "product",
           "research_name": "ChatGPT",
           "canonical_entity_id": "EN-d1ad14d4ad57d207",
-          "canonical_name": "ChatGPT",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers."
-            },
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
-            }
-          ]
+          "canonical_name": "ChatGPT"
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Codex",
           "canonical_entity_id": "EN-1ecf93c539fcffca",
-          "canonical_name": "Codex",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent."
-            }
-          ]
+          "canonical_name": "Codex"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sam Altman",
           "canonical_entity_id": "EN-3ed55c0c72931e4b",
-          "canonical_name": "Sam Altman",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The company that started as a scrappy nonprofit in 2015"
-            }
-          ]
+          "canonical_name": "Sam Altman"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Elon Musk",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "Elon Musk - an OpenAI co-founder who left the board in 2018"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Amazon",
           "canonical_entity_id": "EN-cbc62794911ff31b",
-          "canonical_name": "Amazon",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft."
-            }
-          ]
+          "canonical_name": "Amazon"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "Nvidia ($30 billion)"
-            },
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "The funding round was anchored by Amazon, NVIDIA, SoftBank, and Microsoft."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SoftBank",
           "canonical_entity_id": "EN-80d387ccb3289295",
-          "canonical_name": "SoftBank",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "SoftBank ($30 billion)"
-            },
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates."
-            }
-          ]
+          "canonical_name": "SoftBank"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Microsoft",
           "canonical_entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "with continued participation from longtime backer Microsoft."
-            }
-          ]
+          "canonical_name": "Microsoft"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz (a16z)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "Co-leads included Andreessen Horowitz (a16z)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BlackRock",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blackstone",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sequoia Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fidelity",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "ARK Invest",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Temasek",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Coatue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Thrive Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "UC Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Altimeter",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Dragoneer",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Insight Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b86e0fbe62dfd3dc",
-              "quote": "Altimeter, Coatue, Dragoneer, Insight Partners, and UC Investments also joined the round."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Thrive Capital",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "OCT 2024 SERIES E $6.6B led by Thrive Capital at a $157 billion valuation"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SoftBank",
           "canonical_entity_id": "EN-80d387ccb3289295",
-          "canonical_name": "SoftBank",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1e2b3bad243bd066",
-              "quote": "MAR 2025 SERIES F - RECORD SMASHED $40B led by SoftBank."
-            }
-          ]
+          "canonical_name": "SoftBank"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Thrive Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Walmart",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Snowflake",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Snowflake signed a $200 million multi-year partnership putting OpenAI's models directly inside enterprise data warehouses."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Accenture",
           "canonical_entity_id": "EN-4d748ebd71af03a7",
-          "canonical_name": "Accenture",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Accenture is handling enterprise implementation and delivery."
-            }
-          ]
+          "canonical_name": "Accenture"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-81ee7e9a986be8b0",
-              "quote": "Anthropic raised a $30b Series G"
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google (Gemini)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "Google is retrofitting Gemini into an existing conglomerate."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "xAI",
           "canonical_entity_id": "EN-6fcba5d96a4fadfd",
-          "canonical_name": "xAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2d81715dfb797c30",
-              "quote": "xAI has one distribution surface, which is X."
-            }
-          ]
+          "canonical_name": "xAI"
         }
       ],
       "funding_history": [
@@ -1006,13 +963,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:41:34.532Z"
+      "published_at": "2026-07-26T14:41:34.532Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 2,
+          "total": 2,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 1,
+          "total": 2,
+          "unresolved_names": [
+            "Elon Musk"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d4e44892226be468"
+      ],
+      "aggregation": {
+        "key": "EN-8044aae1f86875d9|series_f",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-535f1ec650916aca",
       "triggered_by_event_id": "EV-aa33ca051f3a7f78",
       "as_of_date": "2026-06-30",
@@ -1030,7 +1014,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-59ea24bc99badd98",
-                "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)"
+                "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)",
+                "source_content_hash": "e7b35cb3be58da57",
+                "quote_hash": "322e9a8d29083031cdd15195e8898e50b4d55861a989aac22833c8e3eadda805"
               }
             ],
             "entity_id": null
@@ -1041,7 +1027,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-59ea24bc99badd98",
-                "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)"
+                "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)",
+                "source_content_hash": "e7b35cb3be58da57",
+                "quote_hash": "322e9a8d29083031cdd15195e8898e50b4d55861a989aac22833c8e3eadda805"
               }
             ],
             "entity_id": null
@@ -1053,18 +1041,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c29f00f067579660",
-              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+              "quote": "scaling headcount from 350 to approximately 900 by year-end",
+              "source_content_hash": "67f409ee5b146b1d",
+              "quote_hash": "09511a1b0d6f52fe541aaa56609a3d2ea5d8e90ca64a2f689b125d0b92c5b7ff"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-6a4bb4cad791b042",
-            "quote": "Wonderful , the Amsterdam-based enterprise AI agent platform"
+            "quote": "Wonderful , the Amsterdam-based enterprise AI agent platform",
+            "source_content_hash": "a2543ec8ae26ad06",
+            "quote_hash": "c17d9fe974489fe7c81243bea3f07cb9867cbaae3cd0650fdcfcae4c897c9147"
           },
           {
             "source_id": "FISRC-c29f00f067579660",
-            "quote": "Wonderful combines a powerful AI platform with best-in-class local deployment to deliver enterprise-grade AI agents to every market and every language."
+            "quote": "Wonderful combines a powerful AI platform with best-in-class local deployment to deliver enterprise-grade AI agents to every market and every language.",
+            "source_content_hash": "67f409ee5b146b1d",
+            "quote_hash": "66ba0d82738051663729b000e5043d46e42d41e2f71c81989b4f8a8f9d07daf5"
           }
         ]
       },
@@ -1080,7 +1074,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6a4bb4cad791b042",
-                "quote": "closed a $150 million Series B led by Insight Partners on March 12, 2026"
+                "quote": "closed a $150 million Series B led by Insight Partners on March 12, 2026",
+                "source_content_hash": "a2543ec8ae26ad06",
+                "quote_hash": "acc5fd3847edb30239134d973d407426452fe61ba1fe5b73927988ab98b0eefe"
               }
             ],
             "entity_id": null
@@ -1091,7 +1087,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a9a14160ac96ad9a",
-                "quote": "we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round"
+                "quote": "we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+                "source_content_hash": "a1eb7c9802c59903",
+                "quote_hash": "aa952549ab564c9e041744d8e198e467c95ceb2cedb1c2364bef572e26ad027a"
               }
             ],
             "entity_id": null
@@ -1102,7 +1100,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6a4bb4cad791b042",
-                "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+                "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+                "source_content_hash": "a2543ec8ae26ad06",
+                "quote_hash": "5b14adf64de70479631f9d9fd8333daf412bb275f04929fef4afeecc7d78a3ae"
               }
             ],
             "entity_id": null
@@ -1113,7 +1113,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6a4bb4cad791b042",
-                "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+                "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+                "source_content_hash": "a2543ec8ae26ad06",
+                "quote_hash": "5b14adf64de70479631f9d9fd8333daf412bb275f04929fef4afeecc7d78a3ae"
               }
             ],
             "entity_id": null
@@ -1124,7 +1126,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6a4bb4cad791b042",
-                "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+                "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
+                "source_content_hash": "a2543ec8ae26ad06",
+                "quote_hash": "5b14adf64de70479631f9d9fd8333daf412bb275f04929fef4afeecc7d78a3ae"
               }
             ],
             "entity_id": null
@@ -1133,11 +1137,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6a4bb4cad791b042",
-            "quote": "Wonderful , the Amsterdam-based enterprise AI agent platform, closed a $150 million Series B led by Insight Partners on March 12, 2026"
+            "quote": "Wonderful , the Amsterdam-based enterprise AI agent platform, closed a $150 million Series B led by Insight Partners on March 12, 2026",
+            "source_content_hash": "a2543ec8ae26ad06",
+            "quote_hash": "0d7635ea5bb6f6fc55658b3255ab89459bef6d4c0b54481f09dbbcc38e62b1d6"
           },
           {
             "source_id": "FISRC-54d5efb9221d2b89",
-            "quote": "Wonderful has raised $150 million in a Series B round led by Insight Partners, valuing the company at $2 billion — just 13 months after it was founded. The round, which closed in March 2026, brings the company’s total funding to $286 million"
+            "quote": "Wonderful has raised $150 million in a Series B round led by Insight Partners, valuing the company at $2 billion — just 13 months after it was founded. The round, which closed in March 2026, brings the company’s total funding to $286 million",
+            "source_content_hash": "13e42a9153b93318",
+            "quote_hash": "08b9f0482f9f5a380b5aea9ea1a964a671ae67223f434a5d4ee0ad8c502cc62c"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-aa33ca051f3a7f78",
+            "round_original": "B轮",
+            "amount": "1.5亿美元",
+            "announced_at": "2026-03-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6a4bb4cad791b042",
+                "quote": "Wonderful , the Amsterdam-based enterprise AI agent platform, closed a $150 million Series B led by Insight Partners on March 12, 2026",
+                "source_content_hash": "a2543ec8ae26ad06",
+                "quote_hash": "0d7635ea5bb6f6fc55658b3255ab89459bef6d4c0b54481f09dbbcc38e62b1d6"
+              },
+              {
+                "source_id": "FISRC-54d5efb9221d2b89",
+                "quote": "Wonderful has raised $150 million in a Series B round led by Insight Partners, valuing the company at $2 billion — just 13 months after it was founded. The round, which closed in March 2026, brings the company’s total funding to $286 million",
+                "source_content_hash": "13e42a9153b93318",
+                "quote_hash": "08b9f0482f9f5a380b5aea9ea1a964a671ae67223f434a5d4ee0ad8c502cc62c"
+              }
+            ]
           }
         ]
       },
@@ -1155,11 +1188,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "Wonderful's platform is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case."
+              "quote": "Wonderful's platform is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case.",
+              "source_content_hash": "a2543ec8ae26ad06",
+              "quote_hash": "25ef6a691e523db6e9ccaa1f35c7677c948211386769402ab971909641942e5b"
             },
             {
               "source_id": "FISRC-c29f00f067579660",
-              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions."
+              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions.",
+              "source_content_hash": "67f409ee5b146b1d",
+              "quote_hash": "7fa6187c1642a51477220921067d4e83dcba4fe41e0aa2fa668c12520c6050b3"
             }
           ],
           "entity_id": null
@@ -1177,9 +1214,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "While tech giants like ServiceNow , Salesforce , and Workday are embedding agentic capabilities into their existing platform suites, they face the inherent friction of retrofitting AI into systems built for a pre-AI world. Wonderful, as a purpose-built agentic platform, carries none of that architectural legacy."
+              "quote": "While tech giants like ServiceNow , Salesforce , and Workday are embedding agentic capabilities into their existing platform suites, they face the inherent friction of retrofitting AI into systems built for a pre-AI world. Wonderful, as a purpose-built agentic platform, carries none of that architectural legacy.",
+              "source_content_hash": "e7b35cb3be58da57",
+              "quote_hash": "3ea55eed7b0bf4f07c2c77702e279893c75083f1383d032c1b12032e843005ac"
             }
-          ]
+          ],
+          "entity_id": "EN-3ccbd9105a45d8fc"
         },
         {
           "name": "UiPath",
@@ -1191,9 +1231,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "Traditional RPA (robotic process automation) bots follow rigid, rules-based scripts that break whenever processes change. AI agents, by contrast, understand context, adapt to variation, and make decisions based on reasoning rather than pre-defined rules."
+              "quote": "Traditional RPA (robotic process automation) bots follow rigid, rules-based scripts that break whenever processes change. AI agents, by contrast, understand context, adapt to variation, and make decisions based on reasoning rather than pre-defined rules.",
+              "source_content_hash": "e7b35cb3be58da57",
+              "quote_hash": "9113855b8d8d55072aa3d3b8d0a26123cb7099ba005996a1190b5bba0e8f0bb5"
             }
-          ]
+          ],
+          "entity_id": "EN-f19600b9e18f7f27"
         },
         {
           "name": "Automation Anywhere",
@@ -1205,9 +1248,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "Legacy automation vendors such as Blue Prism, Automation Anywhere, and UiPath now face meaningful competitive pressure from AI-native alternatives that offer higher containment rates without the brittle, rules-based architecture of traditional RPA."
+              "quote": "Legacy automation vendors such as Blue Prism, Automation Anywhere, and UiPath now face meaningful competitive pressure from AI-native alternatives that offer higher containment rates without the brittle, rules-based architecture of traditional RPA.",
+              "source_content_hash": "e7b35cb3be58da57",
+              "quote_hash": "604a785b5c251fa33a7bdacd1c572ce47c232f245dc770274b37769cbb25320b"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1218,7 +1264,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-54d5efb9221d2b89",
-              "quote": "valuing the company at $2 billion"
+              "quote": "valuing the company at $2 billion",
+              "source_content_hash": "13e42a9153b93318",
+              "quote_hash": "f61073f5a57a35489465c3253700cd6441a049a314f35b9f876227047a40bfec"
             }
           ]
         },
@@ -1229,7 +1277,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "scaling across 30 global markets"
+              "quote": "scaling across 30 global markets",
+              "source_content_hash": "a2543ec8ae26ad06",
+              "quote_hash": "068452d987035e39ac8a68d308800217895f534ab980fa85d7be2f6ce923aaf8"
             }
           ]
         },
@@ -1240,7 +1290,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "Wonderful agents have reduced average handling times by up to 60%"
+              "quote": "Wonderful agents have reduced average handling times by up to 60%",
+              "source_content_hash": "e7b35cb3be58da57",
+              "quote_hash": "92850d8f7deb3883833566dd334dc6ee50ba15c0e47a13f4298f8602f3ed3f92"
             }
           ]
         },
@@ -1251,7 +1303,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "achieved containment rates above 80%"
+              "quote": "achieved containment rates above 80%",
+              "source_content_hash": "e7b35cb3be58da57",
+              "quote_hash": "c014f7b81728045646314989865d09878981f4ca0966d2fd25f52a43f83d7fec"
             }
           ]
         },
@@ -1262,7 +1316,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c29f00f067579660",
-              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months"
+              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months",
+              "source_content_hash": "67f409ee5b146b1d",
+              "quote_hash": "ff35131cc27c974df3e144c4f19ee261df0539020135400a1661596eabad18ea"
             }
           ]
         },
@@ -1273,7 +1329,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "tripling headcount to 900"
+              "quote": "tripling headcount to 900",
+              "source_content_hash": "a2543ec8ae26ad06",
+              "quote_hash": "00ceadba96f87cec514005c99623cc085d6fd34a3b6777f95e0fb8b34f8a441e"
             }
           ]
         }
@@ -1285,7 +1343,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "\"In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment,\" said Bar Winkler, CEO and co-founder of Wonderful"
+              "quote": "\"In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment,\" said Bar Winkler, CEO and co-founder of Wonderful",
+              "source_content_hash": "a2543ec8ae26ad06",
+              "quote_hash": "25c12b100dc73e8a68ac3d690706fbffa2cf1189bada015850aebcc5acaaccb6"
             }
           ]
         }
@@ -1301,7 +1361,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a9a14160ac96ad9a",
-                "quote": "It’s not often that we make three investments in a company within a year. But it’s also a rarity for a company to scale across more than 30 countries and reach a $2 billion valuation in just eight months since emerging from stealth."
+                "quote": "It’s not often that we make three investments in a company within a year. But it’s also a rarity for a company to scale across more than 30 countries and reach a $2 billion valuation in just eight months since emerging from stealth.",
+                "source_content_hash": "a1eb7c9802c59903",
+                "quote_hash": "f53517e2cee81bf11048a8d466f4c13766f6b8a1697ba79f5d7b985ba07c8e37"
               }
             ]
           }
@@ -1317,7 +1379,20 @@
           "巨头竞争风险：Salesforce、微软等拥有庞大客户基础和分销渠道的软件巨头正在将AI智能体功能嵌入其现有平台，可能对Wonderful构成挤压。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业级AI智能体部署平台"
+        "sector": "企业级AI智能体部署平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“部署速度”而非“模型智能”。Wonderful的1.5亿美元B轮融资及其20亿美元估值，验证了一个信号：企业客户愿意为能够将AI智能体快速、可靠地集成到复杂遗留系统并实现生产级运行的基础设施支付溢价。其模型无关架构和本地化嵌入式团队模式，构建了比单纯模型层更高的转换成本和更深的护城河。判断的证据边界在于，其已披露的生产指标（处理时间减少60%，自主处理率超80%）和客户扩展数据（70%客户在3个月内扩展）证明了其模式的初步商业成功，但该模式的重资产、高人力成本特性是其长期盈利能力的核心风险。",
+          "evidence_signals": [
+            "在8个月内将业务扩展到30多个国家，证明了其“平台+本地团队”部署模式的可复制性。",
+            "超过70%的企业客户在部署首个用例后的三个月内扩展到额外的工作流，表明平台具有高粘性和扩展收入潜力。",
+            "生产环境中实现处理时间减少高达60%和自主处理率超过80%，验证了其AI智能体的实际商业价值。"
+          ],
+          "risks": [
+            "高人力成本模式风险：公司计划将员工从350人扩增至900人，其重度的本地化嵌入式团队模式可能导致高昂的运营成本，若无法通过平台自动化逐步降低边际服务成本，可能长期侵蚀软件业务的利润率。",
+            "巨头竞争风险：Salesforce、微软等拥有庞大客户基础和分销渠道的软件巨头正在将AI智能体功能嵌入其现有平台，可能对Wonderful构成挤压。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1325,147 +1400,77 @@
           "target_kind": "product",
           "research_name": "Wonderful企业AI智能体平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "Wonderful's platform is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case."
-            },
-            {
-              "source_id": "FISRC-c29f00f067579660",
-              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Bar Winkler",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Roey Lalazar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Insight Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "closed a $150 million Series B led by Insight Partners on March 12, 2026"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Index Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a9a14160ac96ad9a",
-              "quote": "we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "IVP",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vine Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6a4bb4cad791b042",
-              "quote": "The round included participation from Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Salesforce",
           "canonical_entity_id": "EN-3ccbd9105a45d8fc",
-          "canonical_name": "Salesforce",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "While tech giants like ServiceNow , Salesforce , and Workday are embedding agentic capabilities into their existing platform suites, they face the inherent friction of retrofitting AI into systems built for a pre-AI world. Wonderful, as a purpose-built agentic platform, carries none of that architectural legacy."
-            }
-          ]
+          "canonical_name": "Salesforce"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "UiPath",
           "canonical_entity_id": "EN-f19600b9e18f7f27",
-          "canonical_name": "UiPath",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "Traditional RPA (robotic process automation) bots follow rigid, rules-based scripts that break whenever processes change. AI agents, by contrast, understand context, adapt to variation, and make decisions based on reasoning rather than pre-defined rules."
-            }
-          ]
+          "canonical_name": "UiPath"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Automation Anywhere",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-59ea24bc99badd98",
-              "quote": "Legacy automation vendors such as Blue Prism, Automation Anywhere, and UiPath now face meaningful competitive pressure from AI-native alternatives that offer higher containment rates without the brittle, rules-based architecture of traditional RPA."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1551,10 +1556,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:41:09.137Z"
+      "published_at": "2026-07-26T14:41:09.137Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Wonderful企业AI智能体平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Bar Winkler",
+            "Roey Lalazar"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-aa33ca051f3a7f78"
+      ],
+      "aggregation": {
+        "key": "EN-1bd14cd1a58c5708|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

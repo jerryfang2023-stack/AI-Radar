@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-05-24",
     "generated_at": "2026-07-26T15:07:46.757Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 6,
       "auto_published": 6,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-1126ce996b25f212",
       "triggered_by_event_id": "EV-cbc0b7a7d21a29e2",
       "as_of_date": "2026-05-24",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "Apurv Bansal, CEO and Co-Founder of Zenskar"
+                "quote": "Apurv Bansal, CEO and Co-Founder of Zenskar",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "5063486d97adf4401d694f30cc5ba824e7c4ea2da414486ddcbe18b85d85c37c"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-747835e67310f65e",
-                "quote": "Founded in 2022, by Apurv Bansal and Saurabh Agrawal"
+                "quote": "Founded in 2022, by Apurv Bansal and Saurabh Agrawal",
+                "source_content_hash": "3802ece951a415f1",
+                "quote_hash": "b9c2ea96dc5123835594735b55e597a76134190e0ed1cda93f2fe5d0f80b1eb1"
               }
             ],
             "entity_id": null
@@ -60,16 +65,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d87b08783c0a062f",
-            "quote": "Zenskar, the AI-native billing and revenue automation platform powering Zero-Touch Finance for real-world complexity"
+            "quote": "Zenskar, the AI-native billing and revenue automation platform powering Zero-Touch Finance for real-world complexity",
+            "source_content_hash": "295fb65a11a09075",
+            "quote_hash": "2e4d8c831734678c44df75bb44d1db2663dfcdedd4a3917a534a37f33edeec4b"
           },
           {
             "source_id": "FISRC-747835e67310f65e",
-            "quote": "Founded in 2022, by Apurv Bansal and Saurabh Agrawal, Zenskar is an AI-based billing and revenue platform designed for modern B2B complexity."
+            "quote": "Founded in 2022, by Apurv Bansal and Saurabh Agrawal, Zenskar is an AI-based billing and revenue platform designed for modern B2B complexity.",
+            "source_content_hash": "3802ece951a415f1",
+            "quote_hash": "81785147e772e9a66f82def0ccd3bb019d48388207565750b9e30dcd3715b87a"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$15 million",
         "total_raised": "$15 million",
         "announced_at": "2026-04-17",
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "$15 million Series A led by Susquehanna Venture Capital"
+                "quote": "$15 million Series A led by Susquehanna Venture Capital",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "52e32d0a079f35a8c6e1e93148a1c64d56fc49e5d00474343a2d58f96bb5b7c6"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho"
+                "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho"
+                "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho"
+                "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
               }
             ],
             "entity_id": null
@@ -124,7 +141,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
+                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
               }
             ],
             "entity_id": null
@@ -135,7 +154,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
+                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
               }
             ],
             "entity_id": null
@@ -146,7 +167,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
+                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
               }
             ],
             "entity_id": null
@@ -157,7 +180,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
+                "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
               }
             ],
             "entity_id": null
@@ -166,7 +191,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-d87b08783c0a062f",
-            "quote": "today announced a $15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho, with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
+            "quote": "today announced a $15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho, with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+            "source_content_hash": "295fb65a11a09075",
+            "quote_hash": "45c7aa13efd453fdda470568e964d202782e3e1fcc309e4b5e42ef2b5fde5a7a"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cbc0b7a7d21a29e2",
+            "round_original": "Series A",
+            "amount": "$15 million",
+            "announced_at": "2026-04-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d87b08783c0a062f",
+                "quote": "today announced a $15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho, with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "45c7aa13efd453fdda470568e964d202782e3e1fcc309e4b5e42ef2b5fde5a7a"
+              }
+            ]
           }
         ]
       },
@@ -185,15 +231,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Zenskar is the AI-native billing and revenue automation platform built for the complexity of modern B2B."
+              "quote": "Zenskar is the AI-native billing and revenue automation platform built for the complexity of modern B2B.",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "268cfbe1d33cffe17c051be0dd8db41bf4e6279c4e6394b649cabce77732e0f5"
             },
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Agents Marketplace — a growing library of agents that finance teams can create, customize, chain, and deploy across the full order-to-cash cycle without engineering involvement."
+              "quote": "Agents Marketplace — a growing library of agents that finance teams can create, customize, chain, and deploy across the full order-to-cash cycle without engineering involvement.",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "e5bb2b8f2517c003f080b0f492c0d5a9eb8a236e3a9211a0f186c05adee30d42"
             },
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Zenskar models contract data as objects on a graph — covering every amendment, every usage model, every edge case."
+              "quote": "Zenskar models contract data as objects on a graph — covering every amendment, every usage model, every edge case.",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "5876e487a2a2e2d24cc88957f5ead6fcf4b6ccb6acc6fd1b4f5608fbfe192750"
             }
           ],
           "entity_id": null
@@ -207,9 +259,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Posh is scaling their business without increasing head count."
+              "quote": "Posh is scaling their business without increasing head count.",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "7c8dced1079ebf4dafd1a548b027e4d02aec69046c1668b5755f939b4e9b7024"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Pontera",
@@ -218,9 +273,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Pontera bills its clients in a single click"
+              "quote": "Pontera bills its clients in a single click",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "74db15930ac2bae258c766caf42813d370f07cb6be87fa2379cb6d8cb4a9f791"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Yembo",
@@ -229,9 +287,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Yembo collects 50% of revenue a full month earlier with zero revenue leakage"
+              "quote": "Yembo collects 50% of revenue a full month earlier with zero revenue leakage",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "76989937870a4eb9c55a9d357cc98dbe63d34350359bc7a5dbde73e716ee405a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Vertice",
@@ -240,9 +301,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Vertice closes books 70% faster"
+              "quote": "Vertice closes books 70% faster",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "9a6332f6d5513763c1de5be61a9cb9f29c39bde0dd1c3d3ee17a9e15382a883c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -256,9 +320,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Sardine did exactly that – four years of managing in-house infrastructure for their high-volume, usage-based pricing – before discovering Zenskar could handle it."
+              "quote": "Sardine did exactly that – four years of managing in-house infrastructure for their high-volume, usage-based pricing – before discovering Zenskar could handle it.",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "5fe6f05bc6945393f06a6bdb7885a37612cb007c4a65dc445311f8c123b14029"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "SquadStack",
@@ -270,13 +337,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00be6ccdc77c0391",
-              "quote": "SquadStack started their journey with an in-house billing system. However, as their business grew and their requirements evolved, the limitations of the approach became evident."
+              "quote": "SquadStack started their journey with an in-house billing system. However, as their business grew and their requirements evolved, the limitations of the approach became evident.",
+              "source_content_hash": "0c2e1f1f7d004510",
+              "quote_hash": "3bb554556b5dd314989b0635cb0437f050ea6022f98d947360d520807b7cc66d"
             },
             {
               "source_id": "FISRC-00be6ccdc77c0391",
-              "quote": "The invoices were calculated automatically on Zensakr based on usage data."
+              "quote": "The invoices were calculated automatically on Zensakr based on usage data.",
+              "source_content_hash": "0c2e1f1f7d004510",
+              "quote_hash": "19f981f25a884c3244f9e12d0bde7c80511610c308a55912b7fe2b3503bddd43"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -287,7 +359,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Zenskar has seen 5x revenue growth in the past year"
+              "quote": "Zenskar has seen 5x revenue growth in the past year",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "2116266c80863327f18f8af93a2f859bf41f0ae1bced6e3612c28c694aa8406e"
             }
           ]
         },
@@ -298,7 +372,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Yembo collects 50% of revenue a full month earlier with zero revenue leakage"
+              "quote": "Yembo collects 50% of revenue a full month earlier with zero revenue leakage",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "76989937870a4eb9c55a9d357cc98dbe63d34350359bc7a5dbde73e716ee405a"
             }
           ]
         },
@@ -309,7 +385,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Vertice closes books 70% faster"
+              "quote": "Vertice closes books 70% faster",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "9a6332f6d5513763c1de5be61a9cb9f29c39bde0dd1c3d3ee17a9e15382a883c"
             }
           ]
         },
@@ -320,7 +398,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00be6ccdc77c0391",
-              "quote": "Shalini estimates this saved the engineering team 80 hours/quarter if not more."
+              "quote": "Shalini estimates this saved the engineering team 80 hours/quarter if not more.",
+              "source_content_hash": "0c2e1f1f7d004510",
+              "quote_hash": "2f1dba2fbf0da38da230ba831e281cb034c4b265eb381eafba87494aad47c821"
             }
           ]
         },
@@ -331,7 +411,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00be6ccdc77c0391",
-              "quote": "This saved the teams about 180 hours every month that went into manual billing."
+              "quote": "This saved the teams about 180 hours every month that went into manual billing.",
+              "source_content_hash": "0c2e1f1f7d004510",
+              "quote_hash": "e30667dd55ba41607c23a5edc7ffbc1772b2bfb04f932678243e3a1698b4f2a6"
             }
           ]
         },
@@ -342,7 +424,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-00be6ccdc77c0391",
-              "quote": "This led to a 4% increase in SquadStack's monthly revenue."
+              "quote": "This led to a 4% increase in SquadStack's monthly revenue.",
+              "source_content_hash": "0c2e1f1f7d004510",
+              "quote_hash": "6eefeaa537d8e3035284a57b9e1bc71cfb33016d3ae1f5f92b639e8f66626141"
             }
           ]
         }
@@ -354,7 +438,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Finance teams have lagged in AI adoption because accuracy, auditability, and compliance are non-negotiable. Legacy systems treat complexity as an exception, not the norm — forcing teams into costly, error-prone workarounds and making any AI built on top of them unreliable. Zenskar's flexible foundation is what lets AI deliver on its promise."
+              "quote": "Finance teams have lagged in AI adoption because accuracy, auditability, and compliance are non-negotiable. Legacy systems treat complexity as an exception, not the norm — forcing teams into costly, error-prone workarounds and making any AI built on top of them unreliable. Zenskar's flexible foundation is what lets AI deliver on its promise.",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "da0a5a34e69f4dede41aa9be28266fe5f68b67809ed967a02d2c333addfe3811"
             }
           ]
         },
@@ -364,7 +450,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "The problems that break finance teams aren't the obvious ones, but the complex ones like bespoke pricing structures that are dynamic, AI token consumption that changes each time a new model drops, or ASC 606-compliant revenue recognition that needs to be closed in a day. What makes Zenskar different is that their AI-native, agentic architecture was built exactly for this and to make sure a developer is not required anytime something changes. We're excited to partner with the team as they make zero-touch finance a reality."
+              "quote": "The problems that break finance teams aren't the obvious ones, but the complex ones like bespoke pricing structures that are dynamic, AI token consumption that changes each time a new model drops, or ASC 606-compliant revenue recognition that needs to be closed in a day. What makes Zenskar different is that their AI-native, agentic architecture was built exactly for this and to make sure a developer is not required anytime something changes. We're excited to partner with the team as they make zero-touch finance a reality.",
+              "source_content_hash": "295fb65a11a09075",
+              "quote_hash": "2fe47a3bc6179d2029e0ae5817c238cc3555ceebb8bff6b2158c5254d743beb0"
             }
           ]
         }
@@ -380,7 +468,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "Finance teams have lagged in AI adoption because accuracy, auditability, and compliance are non-negotiable. Legacy systems treat complexity as an exception, not the norm — forcing teams into costly, error-prone workarounds and making any AI built on top of them unreliable. Zenskar's flexible foundation is what lets AI deliver on its promise."
+                "quote": "Finance teams have lagged in AI adoption because accuracy, auditability, and compliance are non-negotiable. Legacy systems treat complexity as an exception, not the norm — forcing teams into costly, error-prone workarounds and making any AI built on top of them unreliable. Zenskar's flexible foundation is what lets AI deliver on its promise.",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "da0a5a34e69f4dede41aa9be28266fe5f68b67809ed967a02d2c333addfe3811"
               }
             ]
           },
@@ -393,7 +483,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d87b08783c0a062f",
-                "quote": "The problems that break finance teams aren't the obvious ones, but the complex ones like bespoke pricing structures that are dynamic, AI token consumption that changes each time a new model drops, or ASC 606-compliant revenue recognition that needs to be closed in a day. What makes Zenskar different is that their AI-native, agentic architecture was built exactly for this and to make sure a developer is not required anytime something changes. We're excited to partner with the team as they make zero-touch finance a reality."
+                "quote": "The problems that break finance teams aren't the obvious ones, but the complex ones like bespoke pricing structures that are dynamic, AI token consumption that changes each time a new model drops, or ASC 606-compliant revenue recognition that needs to be closed in a day. What makes Zenskar different is that their AI-native, agentic architecture was built exactly for this and to make sure a developer is not required anytime something changes. We're excited to partner with the team as they make zero-touch finance a reality.",
+                "source_content_hash": "295fb65a11a09075",
+                "quote_hash": "2fe47a3bc6179d2029e0ae5817c238cc3555ceebb8bff6b2158c5254d743beb0"
               }
             ]
           }
@@ -410,7 +502,21 @@
           "计费与收入自动化市场竞争激烈，存在Zuora、Chargebee、Maxio等成熟替代方案，Zenskar的差异化需持续验证"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业服务/AI原生计费与收入自动化"
+        "sector": "企业服务/AI原生计费与收入自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：现代B2B计费复杂性（基于用量、多实体、多币种、动态定价）已超出传统系统能力，而将AI外挂到这些破碎基础上不可靠。Zenskar以AI原生架构从零重建计费基础设施，将合同数据建模为图对象，实现规则驱动计算与AI代理的结合。已验证信号包括：过去一年5倍收入增长、多个客户实现显著运营效率提升（如Yembo提前一个月收回50%收入、Vertice结账速度提升70%）、SquadStack从自建系统迁移后工程团队每季度节省80+小时且财务团队每月节省180小时。但当前证据仅限于客户效率提升和收入增长数据，未披露绝对收入规模、毛利率、净收入留存率或单位经济指标，估值合理性无法独立判断。",
+          "evidence_signals": [
+            "过去一年实现5倍收入增长",
+            "多个客户验证显著效率提升：Yembo提前一个月收回50%收入且零收入泄漏，Vertice结账速度提升70%",
+            "SquadStack案例验证复杂定价场景的自动化能力：工程团队每季度节省80+小时，财务团队每月节省180小时，月度收入增长4%",
+            "Sardine从自建四年内部系统转向Zenskar，验证平台可替代自建方案"
+          ],
+          "risks": [
+            "来源仅披露相对增长倍数和客户效率提升，未披露绝对收入规模、毛利率或净收入留存率，无法评估增长质量和商业模式的可持续性",
+            "计费与收入自动化市场竞争激烈，存在Zuora、Chargebee、Maxio等成熟替代方案，Zenskar的差异化需持续验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -418,233 +524,119 @@
           "target_kind": "product",
           "research_name": "Zenskar AI-Native Revenue Automation Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Zenskar is the AI-native billing and revenue automation platform built for the complexity of modern B2B."
-            },
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Agents Marketplace — a growing library of agents that finance teams can create, customize, chain, and deploy across the full order-to-cash cycle without engineering involvement."
-            },
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Zenskar models contract data as objects on a graph — covering every amendment, every usage model, every edge case."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Apurv Bansal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Apurv Bansal, CEO and Co-Founder of Zenskar"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Saurabh Agrawal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-747835e67310f65e",
-              "quote": "Founded in 2022, by Apurv Bansal and Saurabh Agrawal"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Susquehanna Venture Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "$15 million Series A led by Susquehanna Venture Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Shine Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Rho",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "$15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Rocketship",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "J-Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Future Back Ventures by Bain & Company",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Converge",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Posh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Posh is scaling their business without increasing head count."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Pontera",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Pontera bills its clients in a single click"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Yembo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Yembo collects 50% of revenue a full month earlier with zero revenue leakage"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Vertice",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Vertice closes books 70% faster"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Sardine",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d87b08783c0a062f",
-              "quote": "Sardine did exactly that – four years of managing in-house infrastructure for their high-volume, usage-based pricing – before discovering Zenskar could handle it."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "SquadStack",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-00be6ccdc77c0391",
-              "quote": "SquadStack started their journey with an in-house billing system. However, as their business grew and their requirements evolved, the limitations of the approach became evident."
-            },
-            {
-              "source_id": "FISRC-00be6ccdc77c0391",
-              "quote": "The invoices were calculated automatically on Zensakr based on usage data."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -706,13 +698,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:07:46.683Z"
+      "published_at": "2026-07-26T15:07:46.683Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Zenskar AI-Native Revenue Automation Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Apurv Bansal",
+            "Saurabh Agrawal"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cbc0b7a7d21a29e2"
+      ],
+      "aggregation": {
+        "key": "EN-08ff6997681fad41|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-7899b9025c1d198d",
       "triggered_by_event_id": "EV-cfbd2bed57ba4644",
       "as_of_date": "2026-05-24",
@@ -730,7 +752,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-37925b95fc58982a",
-                "quote": "Caitlin Leksana (CEO), a former BCG consultant and mechanical engineer"
+                "quote": "Caitlin Leksana (CEO), a former BCG consultant and mechanical engineer",
+                "source_content_hash": "9fc07709e89b11cc",
+                "quote_hash": "9fde7b88e8fc0246ed6608284edaa270f23e5801d3108b031d520b0e7e26e5fa"
               }
             ],
             "entity_id": null
@@ -741,7 +765,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-37925b95fc58982a",
-                "quote": "Timmy Galvin (CTO), an MIT -trained nuclear submarine officer"
+                "quote": "Timmy Galvin (CTO), an MIT -trained nuclear submarine officer",
+                "source_content_hash": "9fc07709e89b11cc",
+                "quote_hash": "9250b2a8512c596424b45810c098ac39ba62fb41d172bf67ab0da22f0a64e0da"
               }
             ],
             "entity_id": null
@@ -755,16 +781,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-37925b95fc58982a",
-            "quote": "Fazeshift , a startup that uses AI agents to automate accounts receivable"
+            "quote": "Fazeshift , a startup that uses AI agents to automate accounts receivable",
+            "source_content_hash": "9fc07709e89b11cc",
+            "quote_hash": "8c611928c3a26291298f4c35d0a8187c2b2c28f127a657b55cf7f51f09ae5faa"
           },
           {
             "source_id": "FISRC-37925b95fc58982a",
-            "quote": "The San Francisco company"
+            "quote": "The San Francisco company",
+            "source_content_hash": "9fc07709e89b11cc",
+            "quote_hash": "1becf91a187f44234bb55cf38273c179a37893f6aa560c1242f6651337421c8b"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$17 million",
         "total_raised": "$22 million",
         "announced_at": "2026-05-07",
@@ -775,7 +805,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-37925b95fc58982a",
-                "quote": "F-Prime Capital led the financing"
+                "quote": "F-Prime Capital led the financing",
+                "source_content_hash": "9fc07709e89b11cc",
+                "quote_hash": "cc7e2367c2c9f1491737795ad8550088ac401bec459ad2b263aea7203fba5584"
               }
             ],
             "entity_id": null
@@ -786,7 +818,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-37925b95fc58982a",
-                "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)"
+                "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)",
+                "source_content_hash": "9fc07709e89b11cc",
+                "quote_hash": "1ca9ecd413f62c5d03f1e0bcdd445f4d51a04c94de14d3d1ccbd86fcfaac42e6"
               }
             ],
             "entity_id": null
@@ -795,11 +829,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-37925b95fc58982a",
-            "quote": "has raised $17 million in a Series A round of funding"
+            "quote": "has raised $17 million in a Series A round of funding",
+            "source_content_hash": "9fc07709e89b11cc",
+            "quote_hash": "5914dca476a747fd5b9c55c7990cb087473677885c4804e690d6c783170ea07c"
           },
           {
             "source_id": "FISRC-37925b95fc58982a",
-            "quote": "The raise brings Fazeshift’s total raised to $22 million since its 2023 inception."
+            "quote": "The raise brings Fazeshift’s total raised to $22 million since its 2023 inception.",
+            "source_content_hash": "9fc07709e89b11cc",
+            "quote_hash": "979a5ba83896d43d6ccf9e7bdd80276319e5f8ab6c38b2166eaf60c6b85155b1"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cfbd2bed57ba4644",
+            "round_original": "Series A",
+            "amount": "$17 million",
+            "announced_at": "2026-05-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-37925b95fc58982a",
+                "quote": "has raised $17 million in a Series A round of funding",
+                "source_content_hash": "9fc07709e89b11cc",
+                "quote_hash": "5914dca476a747fd5b9c55c7990cb087473677885c4804e690d6c783170ea07c"
+              },
+              {
+                "source_id": "FISRC-37925b95fc58982a",
+                "quote": "The raise brings Fazeshift’s total raised to $22 million since its 2023 inception.",
+                "source_content_hash": "9fc07709e89b11cc",
+                "quote_hash": "979a5ba83896d43d6ccf9e7bdd80276319e5f8ab6c38b2166eaf60c6b85155b1"
+              }
+            ]
           }
         ]
       },
@@ -817,7 +880,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6788a5fde08ce14b",
-              "quote": "Match incoming customer payments to open invoices even for some of the most complex use cases, such as parent-child hierarchies, partial payments, and single payments for multiple invoices."
+              "quote": "Match incoming customer payments to open invoices even for some of the most complex use cases, such as parent-child hierarchies, partial payments, and single payments for multiple invoices.",
+              "source_content_hash": "052a51a080897a0f",
+              "quote_hash": "a370fb27754aa0c20f139c256c29437ce5b3310c78e1299b0f21b3c15cb828cc"
             }
           ],
           "entity_id": null
@@ -835,7 +900,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6788a5fde08ce14b",
-              "quote": "Send professional, yet personalized payment reminders and dunning letters that are aligned with your brand voice, a customer’s past payment behaviors, and their relationship with your organization. Automate internal notification and escalation workflows, too."
+              "quote": "Send professional, yet personalized payment reminders and dunning letters that are aligned with your brand voice, a customer’s past payment behaviors, and their relationship with your organization. Automate internal notification and escalation workflows, too.",
+              "source_content_hash": "052a51a080897a0f",
+              "quote_hash": "f276c8ee4cb57b3c68b006d72de1b82b6eb3a538b12e069c6b6d80da9c85c9ba"
             }
           ],
           "entity_id": null
@@ -851,7 +918,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6788a5fde08ce14b",
-              "quote": "Turn sales contracts into subscriptions or invoices within your billing systems, including Stripe, NetSuite, and Sage Intacct."
+              "quote": "Turn sales contracts into subscriptions or invoices within your billing systems, including Stripe, NetSuite, and Sage Intacct.",
+              "source_content_hash": "052a51a080897a0f",
+              "quote_hash": "e0704f3f6f18fbdfc93bd9dddbe84b43a510058124d599dbeda41150fd45537e"
             }
           ],
           "entity_id": null
@@ -865,9 +934,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "Customers include Sigma Computing"
+              "quote": "Customers include Sigma Computing",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "072fe4ad6176f20292af4479631b5640e29a86eb4de93971fee4d72ebdc21f09"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -881,13 +953,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "HighRadius, the most dominant of the prior generation, processes $10.3 trillion in transactions annually for 1,100+ global clients including 200+ Fortune 1000 firms"
+              "quote": "HighRadius, the most dominant of the prior generation, processes $10.3 trillion in transactions annually for 1,100+ global clients including 200+ Fortune 1000 firms",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "7770197eb8ec11c0de25ef49699db3e3583999b5bb5a251a84a7b8c94f470232"
             },
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "the weakness is implementation cycles measured in quarters, not weeks"
+              "quote": "the weakness is implementation cycles measured in quarters, not weeks",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "266b8bf7b7375d3ec702a3720225461b698761da27a946711a8ed35d4e7233e5"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Tesorio",
@@ -899,13 +976,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "Tesorio leads with cash-flow forecasting and AI-driven collection scoring."
+              "quote": "Tesorio leads with cash-flow forecasting and AI-driven collection scoring.",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "86a0961b7dab83e90f5731089ccb82cfc05e0429630ee2791c5aed4f4e00a36a"
             },
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "neither has fully crossed into agent-native execution"
+              "quote": "neither has fully crossed into agent-native execution",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "04cffc5835499a00dd70686b96c57508930e095f08dcdbe75cba7db55f910228"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Versapay",
@@ -917,13 +999,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "Versapay pioneered the collaborative AR pattern — a customer-facing portal where buyers and sellers communicate in-thread instead of by phone and email."
+              "quote": "Versapay pioneered the collaborative AR pattern — a customer-facing portal where buyers and sellers communicate in-thread instead of by phone and email.",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "c721d5e0cb158cc1dc87e299c79610b3ce41e3d5e40b3f2af159dfccffc11ea8"
             },
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "neither has fully crossed into agent-native execution"
+              "quote": "neither has fully crossed into agent-native execution",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "04cffc5835499a00dd70686b96c57508930e095f08dcdbe75cba7db55f910228"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -934,7 +1021,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "Fazeshift claims that it can automate more than 90% of manual AR tasks"
+              "quote": "Fazeshift claims that it can automate more than 90% of manual AR tasks",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "3ddf384abbd2a68ac5d672e873ad7a13e7b2162e505212609b395dfe08e95439"
             }
           ]
         },
@@ -945,7 +1034,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "Fazeshift has seen its revenue grow 12x in a single year"
+              "quote": "Fazeshift has seen its revenue grow 12x in a single year",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "e0e380894b74c4b9affc60f1f7f2f4ce24386f5e0c7c5845d9069a18c3d08e5c"
             }
           ]
         },
@@ -956,7 +1047,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "9,000+ customer communications executed daily by AI agents"
+              "quote": "9,000+ customer communications executed daily by AI agents",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "088a1e97fa893ad2ba5eaf5b635c73efbcd426b542414087d07b2af20fad9501"
             }
           ]
         },
@@ -967,7 +1060,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "$7.4 million collected within weeks of one customer's go-live"
+              "quote": "$7.4 million collected within weeks of one customer's go-live",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "b4826ced666fe2c16231ba99875fba27e90c8cbebb366e1f1ad1986282d47f1c"
             }
           ]
         },
@@ -978,7 +1073,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "attracting dozens of enterprise customers"
+              "quote": "attracting dozens of enterprise customers",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "3c904d1606e43d84cfd38e35a547f999f07977f3b47dbc4975e1d6f77d62bb91"
             }
           ]
         },
@@ -989,7 +1086,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "including eight unicorns"
+              "quote": "including eight unicorns",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "748355328483121078a06f8e5b1ddb8bce85faf16b255e5d5c77b60274b7e46d"
             }
           ]
         },
@@ -1000,7 +1099,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "there are more than a million accounts receivable (AR) clerks in the U.S. alone"
+              "quote": "there are more than a million accounts receivable (AR) clerks in the U.S. alone",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "38722c1e097a3c7c695af4a499a2dd683cbb5b5d814b01f7dc843bf2ba595bf2"
             }
           ]
         },
@@ -1011,7 +1112,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "The AR-automation-software market alone is forecast to hit $3.79 billion in 2026"
+              "quote": "The AR-automation-software market alone is forecast to hit $3.79 billion in 2026",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "a850506057cfdfae69cb42fd0963bf82072e46ceab586bcf61c37913a2438c67"
             }
           ]
         }
@@ -1023,7 +1126,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f029868b15dc306f",
-              "quote": "Finance teams are still spending days reconciling a single payment across hundreds of invoices, or logging into portals over and over just to check if something has been posted. This is critical work that remains largely unsolved by software."
+              "quote": "Finance teams are still spending days reconciling a single payment across hundreds of invoices, or logging into portals over and over just to check if something has been posted. This is critical work that remains largely unsolved by software.",
+              "source_content_hash": "6ed982946a0669ab",
+              "quote_hash": "823fd1f57a3ce9859883eea5bf5e58f94d1f610af0ee5124846fe6a8e6571761"
             }
           ]
         },
@@ -1033,7 +1138,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "What sets us apart is our ability to handle complex workflows that other tools fail to solve – especially in industries like wholesale, construction, staffing, and HVAC, where AR processes are highly fragmented and manual"
+              "quote": "What sets us apart is our ability to handle complex workflows that other tools fail to solve – especially in industries like wholesale, construction, staffing, and HVAC, where AR processes are highly fragmented and manual",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "b6ff201eb27cdc1ca5ecce7d6a03196593c2a5d60e01e03aa5284debe6a849e2"
             }
           ]
         },
@@ -1043,7 +1150,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37925b95fc58982a",
-              "quote": "Fazeshift is bringing us closer to an autonomous future for finance"
+              "quote": "Fazeshift is bringing us closer to an autonomous future for finance",
+              "source_content_hash": "9fc07709e89b11cc",
+              "quote_hash": "3ec86c9096863c52cb0f772990b50f8b4adc1b2243969d7ee499d841ec9f961e"
             }
           ]
         }
@@ -1059,7 +1168,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-37925b95fc58982a",
-                "quote": "the market is at an inflection point where AI is moving from co-pilot to co-worker, and human teams are shifting from doing the work to reviewing and managing AI agents."
+                "quote": "the market is at an inflection point where AI is moving from co-pilot to co-worker, and human teams are shifting from doing the work to reviewing and managing AI agents.",
+                "source_content_hash": "9fc07709e89b11cc",
+                "quote_hash": "58e385cd370df56054377878b8ac5e4fdb7f745338373735c752e2f3ff01b793"
               }
             ]
           }
@@ -1076,7 +1187,21 @@
           "应收账款涉及SOX合规、收入确认和客户支付数据，AI智能体直接写入总账的治理和审计能力尚未经过监管机构或大规模审计检验"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "金融科技"
+        "sector": "金融科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI智能体能否将应收账款自动化率从行业上限40%提升至90%以上，从而将AR从劳动力密集型成本中心转变为营运资本释放引擎。本轮融资所依赖的已验证信号包括：12倍年收入增长、8家独角兽客户和首家上市公司客户、单客户上线数周内收回740万美元、以及AI智能体每日执行超过9000次客户沟通。这些信号表明产品已在高标准企业客户中实现部署和可量化价值交付。然而，当前证据仅限于公司自述和单一投资方观点，缺乏独立第三方审计数据或公开财务文件验证。",
+          "evidence_signals": [
+            "年收入12倍增长，吸引数十家企业客户，包括8家独角兽和首家上市公司",
+            "手动AR任务自动化率超过90%，AI智能体每日执行超过9000次客户沟通",
+            "单客户上线数周内通过AI智能体收回740万美元",
+            "YC Summer 2024批次毕业，由F-Prime Capital领投，Gradient Ventures参投"
+          ],
+          "risks": [
+            "上一代AR软件自动化率上限40%的行业基准来自F-Prime Capital自身论述，缺乏独立第三方验证，90%自动化率的实际可推广性有待更多客户证据支撑",
+            "应收账款涉及SOX合规、收入确认和客户支付数据，AI智能体直接写入总账的治理和审计能力尚未经过监管机构或大规模审计检验"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1084,155 +1209,77 @@
           "target_kind": "product",
           "research_name": "Cash Application Agent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6788a5fde08ce14b",
-              "quote": "Match incoming customer payments to open invoices even for some of the most complex use cases, such as parent-child hierarchies, partial payments, and single payments for multiple invoices."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Collections Agent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6788a5fde08ce14b",
-              "quote": "Send professional, yet personalized payment reminders and dunning letters that are aligned with your brand voice, a customer’s past payment behaviors, and their relationship with your organization. Automate internal notification and escalation workflows, too."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Billing Agent",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6788a5fde08ce14b",
-              "quote": "Turn sales contracts into subscriptions or invoices within your billing systems, including Stripe, NetSuite, and Sage Intacct."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Caitlin Leksana",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-37925b95fc58982a",
-              "quote": "Caitlin Leksana (CEO), a former BCG consultant and mechanical engineer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Timmy Galvin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-37925b95fc58982a",
-              "quote": "Timmy Galvin (CTO), an MIT -trained nuclear submarine officer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "F-Prime Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-37925b95fc58982a",
-              "quote": "F-Prime Capital led the financing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Gradient Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-37925b95fc58982a",
-              "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Sigma Computing",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-37925b95fc58982a",
-              "quote": "Customers include Sigma Computing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "HighRadius",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f029868b15dc306f",
-              "quote": "HighRadius, the most dominant of the prior generation, processes $10.3 trillion in transactions annually for 1,100+ global clients including 200+ Fortune 1000 firms"
-            },
-            {
-              "source_id": "FISRC-f029868b15dc306f",
-              "quote": "the weakness is implementation cycles measured in quarters, not weeks"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Tesorio",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f029868b15dc306f",
-              "quote": "Tesorio leads with cash-flow forecasting and AI-driven collection scoring."
-            },
-            {
-              "source_id": "FISRC-f029868b15dc306f",
-              "quote": "neither has fully crossed into agent-native execution"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Versapay",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f029868b15dc306f",
-              "quote": "Versapay pioneered the collaborative AR pattern — a customer-facing portal where buyers and sellers communicate in-thread instead of by phone and email."
-            },
-            {
-              "source_id": "FISRC-f029868b15dc306f",
-              "quote": "neither has fully crossed into agent-native execution"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1294,13 +1341,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:07:35.564Z"
+      "published_at": "2026-07-26T15:07:35.564Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Billing Agent",
+            "Cash Application Agent",
+            "Collections Agent"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Caitlin Leksana",
+            "Timmy Galvin"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cfbd2bed57ba4644"
+      ],
+      "aggregation": {
+        "key": "EN-8dab79468baaa8b0|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-7061bf1fb99b60ef",
       "triggered_by_event_id": "EV-474d5a8ffca11ed9",
       "as_of_date": "2026-05-24",
@@ -1318,11 +1397,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland."
+                "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "c2654f4251defa5a5f31c55f38a5f6e2f1a6d1eadcfa0271dda0973addd2fce9"
               },
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "Realm CEO Mikko Mäntylä believes revenue work is next to undergo the agentic revolution that has already transformed software development."
+                "quote": "Realm CEO Mikko Mäntylä believes revenue work is next to undergo the agentic revolution that has already transformed software development.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "e1166ad92300dcef4775b04f04ad93642c7d3103a00ea6bca78f0077f0c11eb0"
               }
             ],
             "entity_id": null
@@ -1333,7 +1416,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland."
+                "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "c2654f4251defa5a5f31c55f38a5f6e2f1a6d1eadcfa0271dda0973addd2fce9"
               }
             ],
             "entity_id": null
@@ -1344,7 +1429,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland."
+                "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "c2654f4251defa5a5f31c55f38a5f6e2f1a6d1eadcfa0271dda0973addd2fce9"
               }
             ],
             "entity_id": null
@@ -1358,16 +1445,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-a7e59a61493f0ad8",
-            "quote": "Realm builds a structured understanding of a company's go-to-market and turns it into execution."
+            "quote": "Realm builds a structured understanding of a company's go-to-market and turns it into execution.",
+            "source_content_hash": "4a8f131fc27d204e",
+            "quote_hash": "5a814593edda1ef995d1ae80d543d9aeed170b4b27cfac78b91acbd1f6e6d506"
           },
           {
             "source_id": "FISRC-7adc28a1053229b5",
-            "quote": "Helsinki-based Realm has raised $4.5 million in seed funding"
+            "quote": "Helsinki-based Realm has raised $4.5 million in seed funding",
+            "source_content_hash": "ddad0640d351207c",
+            "quote_hash": "4590401d99ac539a170cbd293f2ead47499d7496cc4e7b02033c04767f0170be"
           }
         ]
       },
       "financing": {
-        "round": "Seed",
+        "round": "种子轮",
         "amount": "$4.5 million",
         "total_raised": "$4.5 million",
         "announced_at": "2026-04-22",
@@ -1378,7 +1469,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
+                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "909dfefa1a6a5441803aca1b318c3a6e999a94b92a513140467d892f67c2dc1e"
               }
             ],
             "entity_id": null
@@ -1389,7 +1482,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
+                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "909dfefa1a6a5441803aca1b318c3a6e999a94b92a513140467d892f67c2dc1e"
               }
             ],
             "entity_id": null
@@ -1400,7 +1495,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7adc28a1053229b5",
-                "quote": "Helsinki-based Realm has raised $4.5 million in seed funding, in a round led by Frontline Ventures, with participation from HubSpot Ventures, Lifeline Ventures, Slack Co-founder Cal Henderson and Alex Bouaziz."
+                "quote": "Helsinki-based Realm has raised $4.5 million in seed funding, in a round led by Frontline Ventures, with participation from HubSpot Ventures, Lifeline Ventures, Slack Co-founder Cal Henderson and Alex Bouaziz.",
+                "source_content_hash": "ddad0640d351207c",
+                "quote_hash": "33cc6a304637a0aa8ca54242d62a898ca033046f9ebf1a4f85f17c5ed5d580cb"
               }
             ],
             "entity_id": null
@@ -1411,7 +1508,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
+                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "909dfefa1a6a5441803aca1b318c3a6e999a94b92a513140467d892f67c2dc1e"
               }
             ],
             "entity_id": null
@@ -1422,7 +1521,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a7e59a61493f0ad8",
-                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
+                "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "909dfefa1a6a5441803aca1b318c3a6e999a94b92a513140467d892f67c2dc1e"
               }
             ],
             "entity_id": null
@@ -1431,11 +1532,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-a7e59a61493f0ad8",
-            "quote": "Realm has raised a $4.5 million Seed round to speed up enterprise sales cycles."
+            "quote": "Realm has raised a $4.5 million Seed round to speed up enterprise sales cycles.",
+            "source_content_hash": "4a8f131fc27d204e",
+            "quote_hash": "b793a055796912304bfc6d1b8504b75d07c4e7c18a15f2f8316cec8ff834c997"
           },
           {
             "source_id": "FISRC-7adc28a1053229b5",
-            "quote": "Helsinki-based Realm has raised $4.5 million in seed funding"
+            "quote": "Helsinki-based Realm has raised $4.5 million in seed funding",
+            "source_content_hash": "ddad0640d351207c",
+            "quote_hash": "4590401d99ac539a170cbd293f2ead47499d7496cc4e7b02033c04767f0170be"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-474d5a8ffca11ed9",
+            "round_original": "Seed",
+            "amount": "$4.5 million",
+            "announced_at": "2026-04-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7e59a61493f0ad8",
+                "quote": "Realm has raised a $4.5 million Seed round to speed up enterprise sales cycles.",
+                "source_content_hash": "4a8f131fc27d204e",
+                "quote_hash": "b793a055796912304bfc6d1b8504b75d07c4e7c18a15f2f8316cec8ff834c997"
+              },
+              {
+                "source_id": "FISRC-7adc28a1053229b5",
+                "quote": "Helsinki-based Realm has raised $4.5 million in seed funding",
+                "source_content_hash": "ddad0640d351207c",
+                "quote_hash": "4590401d99ac539a170cbd293f2ead47499d7496cc4e7b02033c04767f0170be"
+              }
+            ]
           }
         ]
       },
@@ -1457,19 +1587,27 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Its platform gives AI the structured context needed to automate deal-defining materials like RFP responses."
+              "quote": "Its platform gives AI the structured context needed to automate deal-defining materials like RFP responses.",
+              "source_content_hash": "4a8f131fc27d204e",
+              "quote_hash": "01d0fd781ae040b4e203eb9d34de33af4a8a3c731ba8300dce039712773e6460"
             },
             {
               "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm solves this by turning raw information into a structured representation of a company's market, products, pipeline, and strategies."
+              "quote": "Realm solves this by turning raw information into a structured representation of a company's market, products, pipeline, and strategies.",
+              "source_content_hash": "4a8f131fc27d204e",
+              "quote_hash": "818efe342d7a5e9e9c46dd34aaf445aeebc3703b1933645a534f2b806221d4dc"
             },
             {
               "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "The platform integrates with Slack, CRMs, and AI assistants like Claude and ChatGPT, allowing teams to leverage Realm's context and agents wherever they already work."
+              "quote": "The platform integrates with Slack, CRMs, and AI assistants like Claude and ChatGPT, allowing teams to leverage Realm's context and agents wherever they already work.",
+              "source_content_hash": "4a8f131fc27d204e",
+              "quote_hash": "4c3b9bd7436e1de4b1a263eeaa8752dde68e743fa299618b0bf653d46a346687"
             },
             {
               "source_id": "FISRC-39dc23c98e17fbfd",
-              "quote": "Product RFP automation Agents Assistant More Features Documents Research Data Analysis View all Connectors Salesforce Gong Google Drive View all Agent templates RFP Qualification MEDDPICC Completion Support Ticket Resolution"
+              "quote": "Product RFP automation Agents Assistant More Features Documents Research Data Analysis View all Connectors Salesforce Gong Google Drive View all Agent templates RFP Qualification MEDDPICC Completion Support Ticket Resolution",
+              "source_content_hash": "3ee5fc766c18860d",
+              "quote_hash": "d403c4b3f61c12427deefe9e032456ef3de2de2f958f78c82946311f2317d756"
             }
           ],
           "entity_id": null
@@ -1483,9 +1621,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm's customers include Visma, Aiven, and Hostaway."
+              "quote": "Realm's customers include Visma, Aiven, and Hostaway.",
+              "source_content_hash": "4a8f131fc27d204e",
+              "quote_hash": "7534a17acbaa00b65f68aedaa707337ad16521ad1ba983f6521b1569e89688da"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Aiven",
@@ -1494,9 +1635,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm's customers include Visma, Aiven, and Hostaway."
+              "quote": "Realm's customers include Visma, Aiven, and Hostaway.",
+              "source_content_hash": "4a8f131fc27d204e",
+              "quote_hash": "7534a17acbaa00b65f68aedaa707337ad16521ad1ba983f6521b1569e89688da"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Hostaway",
@@ -1505,9 +1649,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm's customers include Visma, Aiven, and Hostaway."
+              "quote": "Realm's customers include Visma, Aiven, and Hostaway.",
+              "source_content_hash": "4a8f131fc27d204e",
+              "quote_hash": "7534a17acbaa00b65f68aedaa707337ad16521ad1ba983f6521b1569e89688da"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "LeadDesk",
@@ -1516,17 +1663,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-730bf57f2e437eef",
-              "quote": "LeadDesk: “Realm automates 70-80% of RFPs and other questionnaires”"
+              "quote": "LeadDesk: “Realm automates 70-80% of RFPs and other questionnaires”",
+              "source_content_hash": "251f8c65ba2c0f5f",
+              "quote_hash": "1880e430a16a8065d8665f5f175891b29fb358fa8133266145881bafd88e2944"
             },
             {
               "source_id": "FISRC-730bf57f2e437eef",
-              "quote": "LeadDesk is a publicly traded technology company that provides cloud-based contact center software for customer service and sales outreach, used by more than 1,000 customers worldwide."
+              "quote": "LeadDesk is a publicly traded technology company that provides cloud-based contact center software for customer service and sales outreach, used by more than 1,000 customers worldwide.",
+              "source_content_hash": "251f8c65ba2c0f5f",
+              "quote_hash": "8acd788d54033f220f35f6929d172a39b0c5e35bc33aef4a0755b2696d45c73a"
             },
             {
               "source_id": "FISRC-730bf57f2e437eef",
-              "quote": "If a 10-page document used to take a week to write from scratch, including coordinating input from multiple stakeholders, now I can handle it alone in a few hours."
+              "quote": "If a 10-page document used to take a week to write from scratch, including coordinating input from multiple stakeholders, now I can handle it alone in a few hours.",
+              "source_content_hash": "251f8c65ba2c0f5f",
+              "quote_hash": "23a3b32c7b72adf6482512d8e952bcaaaeb24b3a4c2ac00eea823f4f11662b0a"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1538,7 +1692,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Typically, 70-80% of Realm's work is approved as-is."
+              "quote": "Typically, 70-80% of Realm's work is approved as-is.",
+              "source_content_hash": "4a8f131fc27d204e",
+              "quote_hash": "9d096c5285b76157d831e3beaf451a52c254e830939a4e1dc341c62c066789ac"
             }
           ]
         }
@@ -1556,7 +1712,19 @@
           "企业销售材料的自动化对上下文准确性要求极高，任何事实性错误都可能导致投标失败或合规风险，产品从 70-80% 的通过率提升至完全可信赖仍需大量工程和领域适配工作。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业销售 AI 自动化"
+        "sector": "企业销售 AI 自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“AI 智能体从辅助写作转向自主执行”这一范式在收入团队中的迁移。Realm 通过构建 GTM 上下文图谱，解决了企业销售中因数据碎片化和非结构化导致的 AI 无法有效执行任务的瓶颈。本轮融资的已验证信号包括：产品已获得 Visma、Aiven、Hostaway 等付费客户，且 AI 生成内容的一次性通过率达到 70-80%，表明产品已具备直接交付工作成果的能力，而非仅停留在辅助记录层面。投资方 HubSpot Ventures 的参与也暗示了与现有 CRM 生态的潜在协同。但当前判断的证据边界仅限于种子轮融资公告和官方披露的客户案例，缺乏独立的第三方验证、具体的收入数据或更广泛的客户留存指标。",
+          "evidence_signals": [
+            "已签约 Visma、Aiven、Hostaway、LeadDesk 等付费客户",
+            "AI 生成内容的一次性通过率达 70-80%，表明产品已能直接交付工作成果",
+            "客户 LeadDesk 将复杂文档周转时间从一周缩短至几小时，并扩大了投标处理能力"
+          ],
+          "risks": [
+            "企业销售材料的自动化对上下文准确性要求极高，任何事实性错误都可能导致投标失败或合规风险，产品从 70-80% 的通过率提升至完全可信赖仍需大量工程和领域适配工作。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1564,193 +1732,91 @@
           "target_kind": "product",
           "research_name": "Realm Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Its platform gives AI the structured context needed to automate deal-defining materials like RFP responses."
-            },
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm solves this by turning raw information into a structured representation of a company's market, products, pipeline, and strategies."
-            },
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "The platform integrates with Slack, CRMs, and AI assistants like Claude and ChatGPT, allowing teams to leverage Realm's context and agents wherever they already work."
-            },
-            {
-              "source_id": "FISRC-39dc23c98e17fbfd",
-              "quote": "Product RFP automation Agents Assistant More Features Documents Research Data Analysis View all Connectors Salesforce Gong Google Drive View all Agent templates RFP Qualification MEDDPICC Completion Support Ticket Resolution"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mikko Mäntylä",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland."
-            },
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm CEO Mikko Mäntylä believes revenue work is next to undergo the agentic revolution that has already transformed software development."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Miika Huttunen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Johan Jern",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Founded in 2023 by former Slush leaders Mikko Mäntylä and Miika Huttunen alongside Johan Jern, Realm is headquartered in Helsinki, Finland."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Frontline Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "HubSpot Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lifeline Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7adc28a1053229b5",
-              "quote": "Helsinki-based Realm has raised $4.5 million in seed funding, in a round led by Frontline Ventures, with participation from HubSpot Ventures, Lifeline Ventures, Slack Co-founder Cal Henderson and Alex Bouaziz."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cal Henderson",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alex Bouaziz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Visma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm's customers include Visma, Aiven, and Hostaway."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Aiven",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm's customers include Visma, Aiven, and Hostaway."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Hostaway",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a7e59a61493f0ad8",
-              "quote": "Realm's customers include Visma, Aiven, and Hostaway."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "LeadDesk",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-730bf57f2e437eef",
-              "quote": "LeadDesk: “Realm automates 70-80% of RFPs and other questionnaires”"
-            },
-            {
-              "source_id": "FISRC-730bf57f2e437eef",
-              "quote": "LeadDesk is a publicly traded technology company that provides cloud-based contact center software for customer service and sales outreach, used by more than 1,000 customers worldwide."
-            },
-            {
-              "source_id": "FISRC-730bf57f2e437eef",
-              "quote": "If a 10-page document used to take a week to write from scratch, including coordinating input from multiple stakeholders, now I can handle it alone in a few hours."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1824,13 +1890,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:19:13.113Z"
+      "published_at": "2026-07-26T14:19:13.113Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Realm Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Johan Jern",
+            "Miika Huttunen",
+            "Mikko Mäntylä"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-474d5a8ffca11ed9"
+      ],
+      "aggregation": {
+        "key": "EN-7d4e02d31a7eb0f8|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-756ef43f08c8f540",
       "triggered_by_event_id": "EV-61546e58c0e669e7",
       "as_of_date": "2026-05-24",
@@ -1848,7 +1945,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2513b5897a02dd3c",
-                "quote": "Rez Havaei, CEO of General Analysis"
+                "quote": "Rez Havaei, CEO of General Analysis",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "39b4e2efc3e58e0b068e9d6badaa90e5c61e3f78bad55ebecdae194213aecf56"
               }
             ],
             "entity_id": null
@@ -1859,7 +1958,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2513b5897a02dd3c",
-                "quote": "Maximilian Li, co-founder of General Analysis"
+                "quote": "Maximilian Li, co-founder of General Analysis",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "247ca202a4e9247512400862a20fcecfd1ba4c4a0c4396c662f1bba2b89c059f"
               }
             ],
             "entity_id": null
@@ -1870,7 +1971,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2513b5897a02dd3c",
-                "quote": "Rex Liu, co-founder of General Analysis"
+                "quote": "Rex Liu, co-founder of General Analysis",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "51657d220dc68956924f300d6de2e30179825851fd30a2fc62f95f21b75e1ea4"
               }
             ],
             "entity_id": null
@@ -1884,7 +1987,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-b776a7ca7de1ed97",
-            "quote": "General Analysis is building the one-stop enterprise platform to make AI agents reliable and secure."
+            "quote": "General Analysis is building the one-stop enterprise platform to make AI agents reliable and secure.",
+            "source_content_hash": "c0736a6763432622",
+            "quote_hash": "d51a47d93fae84b09ad34ff38dcb47103ce6c61c11165ac092b50206ac9b8ade"
           }
         ]
       },
@@ -1900,7 +2005,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2513b5897a02dd3c",
-                "quote": "$10 million in seed funding led by Altos Ventures"
+                "quote": "$10 million in seed funding led by Altos Ventures",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "42575a297e8fc11dc51eb20bd4b690d0867dceebb328592f47c9fa9bddc1df2e"
               }
             ],
             "entity_id": null
@@ -1911,7 +2018,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2513b5897a02dd3c",
-                "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels"
+                "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
               }
             ],
             "entity_id": null
@@ -1922,7 +2031,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2513b5897a02dd3c",
-                "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels"
+                "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
               }
             ],
             "entity_id": null
@@ -1933,7 +2044,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2513b5897a02dd3c",
-                "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels"
+                "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -1942,7 +2055,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2513b5897a02dd3c",
-            "quote": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI"
+            "quote": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI",
+            "source_content_hash": "fc9f406ab2427abb",
+            "quote_hash": "04aed4f85e69635a94b3359a3fc82195fa8789431c76dead13ae684c208fe499"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-61546e58c0e669e7",
+            "round_original": "种子轮",
+            "amount": "$10 million",
+            "announced_at": "2026-04-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2513b5897a02dd3c",
+                "quote": "General Analysis Raises $10M in Seed Funding to Secure Agentic AI",
+                "source_content_hash": "fc9f406ab2427abb",
+                "quote_hash": "04aed4f85e69635a94b3359a3fc82195fa8789431c76dead13ae684c208fe499"
+              }
+            ]
           }
         ]
       },
@@ -1960,11 +2094,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37c9d6b85eb42f86",
-              "quote": "General Analysis delivers context-aware red-teaming and vulnerability forecasting for enterprise AI agents, distilling attack findings into practical runtime controls such as custom guardrails."
+              "quote": "General Analysis delivers context-aware red-teaming and vulnerability forecasting for enterprise AI agents, distilling attack findings into practical runtime controls such as custom guardrails.",
+              "source_content_hash": "e385afe6ce6569e0",
+              "quote_hash": "be074c101ddf7f04b472a92779361a9c066e355369ab00ca9db81c4eebac266b"
             },
             {
               "source_id": "FISRC-37c9d6b85eb42f86",
-              "quote": "Platform Automated AI Red Teaming AI Detection and Response Runtime Guardrails & Observability AI Security Asset Management"
+              "quote": "Platform Automated AI Red Teaming AI Detection and Response Runtime Guardrails & Observability AI Security Asset Management",
+              "source_content_hash": "e385afe6ce6569e0",
+              "quote_hash": "ce053f105dc65cabce192cfa5744a839d8e17a6088e2bd2a6dbfdd7070004b3f"
             }
           ],
           "entity_id": null
@@ -1978,9 +2116,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users."
+              "quote": "General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users.",
+              "source_content_hash": "fc9f406ab2427abb",
+              "quote_hash": "d3a416201b18df96d3095025891c8dd7a4ab588faf7f4365bc69391b95354add"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1998,7 +2139,19 @@
           "公司仍处于极早期，产品市场匹配的广度、企业客户付费意愿的规模以及对抗性攻击技术的持续演进，都是尚未被验证的假设。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI安全"
+        "sector": "AI安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：企业从辅助性 AI 转向自主执行智能体时，传统网络安全方法失效，必须出现一个以实证对抗性测试为核心的新安全层。本轮融资验证的信号包括：创始团队来自 NVIDIA、Cohere、DeepMind 等顶级 AI 研究机构；已拥有支持和金融领域的付费企业客户，其产品和工作流服务数亿用户；在真实环境中展示了对抗性智能体可在约三分钟内攻破 50 个客服 AI 智能体，证明了需求的紧迫性和技术的有效性。但公司仍处于极早期，产品市场匹配的广度、企业客户付费意愿的规模以及对抗性攻击技术的持续演进，都是尚未被验证的假设。",
+          "evidence_signals": [
+            "创始团队来自 NVIDIA、Cohere、DeepMind 等顶级 AI 研究机构",
+            "已拥有支持和金融领域的付费企业客户，其产品和工作流服务数亿用户",
+            "在真实环境中展示了对抗性智能体可在约三分钟内攻破 50 个客服 AI 智能体，证明了需求的紧迫性和技术的有效性"
+          ],
+          "risks": [
+            "公司仍处于极早期，产品市场匹配的广度、企业客户付费意愿的规模以及对抗性攻击技术的持续演进，都是尚未被验证的假设。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2006,121 +2159,63 @@
           "target_kind": "product",
           "research_name": "General Analysis Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-37c9d6b85eb42f86",
-              "quote": "General Analysis delivers context-aware red-teaming and vulnerability forecasting for enterprise AI agents, distilling attack findings into practical runtime controls such as custom guardrails."
-            },
-            {
-              "source_id": "FISRC-37c9d6b85eb42f86",
-              "quote": "Platform Automated AI Red Teaming AI Detection and Response Runtime Guardrails & Observability AI Security Asset Management"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rez Havaei",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "Rez Havaei, CEO of General Analysis"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Maximilian Li",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "Maximilian Li, co-founder of General Analysis"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rex Liu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "Rex Liu, co-founder of General Analysis"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Altos Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "$10 million in seed funding led by Altos Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "645 Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "with participation from 645 Ventures, Menlo Ventures, Y Combinator, and additional strategic investors and angels"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未具名企业客户",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2513b5897a02dd3c",
-              "quote": "General Analysis is already working with enterprise customers in support and finance whose products and workflows are used by hundreds of millions of users."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2182,13 +2277,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:18:36.463Z"
+      "published_at": "2026-07-26T14:18:36.463Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "General Analysis Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Maximilian Li",
+            "Rex Liu",
+            "Rez Havaei"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-61546e58c0e669e7"
+      ],
+      "aggregation": {
+        "key": "EN-1050efc9e13624b2|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c41c916238fdf7ac",
       "triggered_by_event_id": "EV-44a4e92c03a31ab1",
       "as_of_date": "2026-05-24",
@@ -2206,7 +2332,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Fryderyk Wiatrowski , CEO and co-founder of Viktor"
+                "quote": "Fryderyk Wiatrowski , CEO and co-founder of Viktor",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "080b72e48a24e6aec1f35163d2d8fa8d379da3660a0b99312bc75b62b70894b9"
               }
             ],
             "entity_id": null
@@ -2217,7 +2345,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-280d48fa0ecf6e91",
-                "quote": "Peter Albert, co-founder and CTO of Viktor"
+                "quote": "Peter Albert, co-founder and CTO of Viktor",
+                "source_content_hash": "8106494431a15a16",
+                "quote_hash": "84b0868feb7fe2caae30b893842cc87f326cfc3b660c7085325cf4776a3d22a0"
               }
             ],
             "entity_id": null
@@ -2231,12 +2361,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ce83b857608dabeb",
-            "quote": "Viktor , a Warsaw and Munich-based AI startup that develops an AI coworker that lives in Slack and Microsoft Teams and works across the tools companies already use"
+            "quote": "Viktor , a Warsaw and Munich-based AI startup that develops an AI coworker that lives in Slack and Microsoft Teams and works across the tools companies already use",
+            "source_content_hash": "bc6dd70ea1b6ac85",
+            "quote_hash": "329c8f8ca5897d174ce18bdc838815adfacc03334935c7e8b7267c8bea082d8a"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "€64.7 million ($75 million)",
         "total_raised": "",
         "announced_at": "2026-05-20",
@@ -2247,7 +2379,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "The round was led by Accel"
+                "quote": "The round was led by Accel",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "bf9241086ed667323e16eea3f9177dd3efb6ca565d9672531890057c9a74743e"
               }
             ],
             "entity_id": null
@@ -2258,7 +2392,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "with participation from Bek Ventures"
+                "quote": "with participation from Bek Ventures",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "c2ab11526d7c8fb7f371528c4b6a1045dc8928a0014227deef5dc5ca2a146f2e"
               }
             ],
             "entity_id": null
@@ -2269,7 +2405,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "with participation from Bek Ventures, Kaya VC"
+                "quote": "with participation from Bek Ventures, Kaya VC",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "53368ad6bc0901835a1a09c706cb0b7122b133272092c3545b0852207a55555b"
               }
             ],
             "entity_id": null
@@ -2280,7 +2418,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC"
+                "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "f5de779db2cc2c3ad24812238d84b075789ac7c2f2a275ee8a8252dba74f6fa8"
               }
             ],
             "entity_id": null
@@ -2291,7 +2431,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital"
+                "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "6752f5a8c3985f31ec1fa15bf73da45d97784fec886f5e9c584f7f85a880fab6"
               }
             ],
             "entity_id": null
@@ -2302,7 +2444,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Angel investors, including Stewart Butterfield and Cal Henderson, co-founders of Slack"
+                "quote": "Angel investors, including Stewart Butterfield and Cal Henderson, co-founders of Slack",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "1979b0dcc0a0dd729f138e6683fc5434f2016357a868a33bcb8c3894f56e2563"
               }
             ],
             "entity_id": null
@@ -2313,7 +2457,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Angel investors, including Stewart Butterfield and Cal Henderson, co-founders of Slack"
+                "quote": "Angel investors, including Stewart Butterfield and Cal Henderson, co-founders of Slack",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "1979b0dcc0a0dd729f138e6683fc5434f2016357a868a33bcb8c3894f56e2563"
               }
             ],
             "entity_id": null
@@ -2324,7 +2470,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Guillermo Rauch, founder and CEO of Vercel"
+                "quote": "Guillermo Rauch, founder and CEO of Vercel",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "6b965a8613678fcfe409fce17923820138ced0bd91dcf84eb0de87c55a4df31c"
               }
             ],
             "entity_id": null
@@ -2335,7 +2483,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Victor Riparbelli, co-founder and CEO of Synthesia"
+                "quote": "Victor Riparbelli, co-founder and CEO of Synthesia",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "67a2d8f7cc806d87817028bea636ea98e906cd8a58820bf1029013e9919109b3"
               }
             ],
             "entity_id": null
@@ -2346,7 +2496,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer"
+                "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "f667c7df09fbcc9020f9ab5ce5510f82535c18f2bebc7af1ef14f1eab13bb834"
               }
             ],
             "entity_id": null
@@ -2357,7 +2509,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer"
+                "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "f667c7df09fbcc9020f9ab5ce5510f82535c18f2bebc7af1ef14f1eab13bb834"
               }
             ],
             "entity_id": null
@@ -2368,7 +2522,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Alex Bouaziz, co-founder and CEO of Deel"
+                "quote": "Alex Bouaziz, co-founder and CEO of Deel",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "19ae57d9c0b00e44f174a833465cea91017f19bd4274e5f768c19c5139df5e3f"
               }
             ],
             "entity_id": null
@@ -2379,7 +2535,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "as well as Lenny Rachitsky and Harry Stebbings, participated in the round"
+                "quote": "as well as Lenny Rachitsky and Harry Stebbings, participated in the round",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "4b6c44dadfb8e98e5699808bd0883d8e16aa8767b3c809cddbc6bda23f3a1bff"
               }
             ],
             "entity_id": null
@@ -2390,84 +2548,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "as well as Lenny Rachitsky and Harry Stebbings, participated in the round"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Leonis Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "They join existing investors, including Leonis Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Oxford Seed Fund",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "They join existing investors, including Leonis Capital, Oxford Seed Fund"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Nat Friedman",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Nat Friedman (former GitHub CEO)"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Daniel Gross",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Daniel Gross (former Head of AI at Y Combinator/Apple)"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Charlie Songhurst",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Charlie Songhurst"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Nico Rosberg",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Nico Rosberg"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Mati Staniszewski",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Mati Staniszewski (co-founder of ElevenLabs)"
+                "quote": "as well as Lenny Rachitsky and Harry Stebbings, participated in the round",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "4b6c44dadfb8e98e5699808bd0883d8e16aa8767b3c809cddbc6bda23f3a1bff"
               }
             ],
             "entity_id": null
@@ -2476,7 +2559,162 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ce83b857608dabeb",
-            "quote": "has raised €64.7 million ($75 million) in Series A funding. The round was led by Accel, with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital."
+            "quote": "has raised €64.7 million ($75 million) in Series A funding. The round was led by Accel, with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital.",
+            "source_content_hash": "bc6dd70ea1b6ac85",
+            "quote_hash": "d7601ccaab735a0e4fd89e531733be19db0f7a4cf9cd773f5c5ba9aecc6ab7e7"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Leonis Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "They join existing investors, including Leonis Capital",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "01293235bfcea5e8c9c70f95ce618c6790d48d3628af8ce9e23528c290a0dbb9"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Oxford Seed Fund",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "They join existing investors, including Leonis Capital, Oxford Seed Fund",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "46dc75eeaddcb790723d52c33bb886cffc86d102d0b5b5aa20b0c809f8f355b1"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Nat Friedman",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "Nat Friedman (former GitHub CEO)",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "710bfbc81f5d7f8f037ec0be6fa40a1ecde8dc3b51ac59f3491bc92bbc5ad40e"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Daniel Gross",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "Daniel Gross (former Head of AI at Y Combinator/Apple)",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "7943cec2d5e9d7c123b32e44f2ec6b48e8d2637141106ae3b7062aeb54fa4869"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Charlie Songhurst",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "Charlie Songhurst",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "7622a27adea8208c75f3124304c90c36d25b963950a2d79df11f56f2fa3c23ae"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Nico Rosberg",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "Nico Rosberg",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "3950e0c69dad1c61f50f1e657036d21accc0e3957876ba53032c028f8ca1ff8d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Mati Staniszewski",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "Mati Staniszewski (co-founder of ElevenLabs)",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "fd440534f8180a432dafb9bcd4f40b134382369ed5b7fcad50509e0e574e582b"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-44a4e92c03a31ab1",
+            "round_original": "Series A",
+            "amount": "€64.7 million ($75 million)",
+            "announced_at": "2026-05-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ce83b857608dabeb",
+                "quote": "has raised €64.7 million ($75 million) in Series A funding. The round was led by Accel, with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital.",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "d7601ccaab735a0e4fd89e531733be19db0f7a4cf9cd773f5c5ba9aecc6ab7e7"
+              }
+            ]
           }
         ]
       },
@@ -2496,11 +2734,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Viktor is one of the first agents capable of operating autonomously for weeks rather than minutes, maintaining context across thousands of emails, documents, and tools during its work."
+              "quote": "Viktor is one of the first agents capable of operating autonomously for weeks rather than minutes, maintaining context across thousands of emails, documents, and tools during its work.",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "415646289f8297a6bcca76bd075556dbd6f72c309dbac8adf215f623889f4d76"
             },
             {
               "source_id": "FISRC-dfd448b0e31a1958",
-              "quote": "It connects to more than 3,000 workplace tools, including Google Drive, Meta Ads, Airtable, and Notion"
+              "quote": "It connects to more than 3,000 workplace tools, including Google Drive, Meta Ads, Airtable, and Notion",
+              "source_content_hash": "965651a52bc8977c",
+              "quote_hash": "f1c4030c8ae1a44cdada930aff5f1dfc79d593fc23260ceb6c15180e08795e9f"
             }
           ],
           "entity_id": null
@@ -2514,9 +2756,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Viktor helped a health and lifestyle group cut €3.8 million ($4.5 million) from a construction project budget"
+              "quote": "Viktor helped a health and lifestyle group cut €3.8 million ($4.5 million) from a construction project budget",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "2b17c9b3537640faff7e71b61f507a156297154357096bd73b64231d4a3f5a37"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "a founder",
@@ -2525,9 +2770,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "a founder set up the infrastructure for a €862k-per-year ($1 million-per-year) content agency with no staff in just nine days"
+              "quote": "a founder set up the infrastructure for a €862k-per-year ($1 million-per-year) content agency with no staff in just nine days",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "32f178678e2e10be431cba5cce22a97b6d1d651ed91c61becdace652beab32a3"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "a landscaping business",
@@ -2536,9 +2784,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "a landscaping business implemented 63 automations across operations, HR, collections, and email management within two weeks"
+              "quote": "a landscaping business implemented 63 automations across operations, HR, collections, and email management within two weeks",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "ad28d193b571c06c21e501eb451d1ba4ee5f3e0241c4a60eac6352973ab16128"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -2552,13 +2803,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-280d48fa0ecf6e91",
-              "quote": "Microsoft has been weaving Copilot into both Teams and the broader Office suite. Those companies also have the advantage that they can bundle AI assistants into existing enterprise contracts and ship them as the default choice."
+              "quote": "Microsoft has been weaving Copilot into both Teams and the broader Office suite. Those companies also have the advantage that they can bundle AI assistants into existing enterprise contracts and ship them as the default choice.",
+              "source_content_hash": "8106494431a15a16",
+              "quote_hash": "f6bb96ead343c4df87c4a0cc7514a3772700dacab51936ea7ec226a2fdd8ce2d"
             },
             {
               "source_id": "FISRC-280d48fa0ecf6e91",
-              "quote": "Wiatrowski says Viktor's specific edge is that it plugs into far more of a company's tools and is designed from the start to work across a whole team."
+              "quote": "Wiatrowski says Viktor's specific edge is that it plugs into far more of a company's tools and is designed from the start to work across a whole team.",
+              "source_content_hash": "8106494431a15a16",
+              "quote_hash": "b66b3d0adfd88663b7df25cc9a0c4cade9a4b3c6dd3b340248ff4892e4e7ddda"
             }
-          ]
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
         },
         {
           "name": "Salesforce",
@@ -2570,9 +2826,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-280d48fa0ecf6e91",
-              "quote": "Slack's parent company already has its own Agentforce product aimed at letting companies build and deploy AI agents on top of Salesforce data and which can work inside Slack"
+              "quote": "Slack's parent company already has its own Agentforce product aimed at letting companies build and deploy AI agents on top of Salesforce data and which can work inside Slack",
+              "source_content_hash": "8106494431a15a16",
+              "quote_hash": "52f088eaf3953bc7c0e9c82e6e4d834291b2231fc3c70e162ce91d19e0791a3d"
             }
-          ]
+          ],
+          "entity_id": "EN-3ccbd9105a45d8fc"
         }
       ],
       "metrics": [
@@ -2583,7 +2842,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "it has reached a €12.9 million ($15 million) revenue run rate within just 10 weeks"
+              "quote": "it has reached a €12.9 million ($15 million) revenue run rate within just 10 weeks",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "767954bb0028005bfd61fcd1d932224c69ea93a14390efa6f4f505160441a04e"
             }
           ]
         },
@@ -2594,7 +2855,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "currently used by over 2,000 organisations globally"
+              "quote": "currently used by over 2,000 organisations globally",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "3c1e179effd3740dd7529ba6a0531ff3bdeed48b06e1767ba43222a2b181d6b9"
             }
           ]
         },
@@ -2605,7 +2868,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Most organisations using Viktor integrate over 30 applications into the platform"
+              "quote": "Most organisations using Viktor integrate over 30 applications into the platform",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "471c65e58ccadf9a9594fed81b03d159896fd68f94e7307d2834f3b9442ac958"
             }
           ]
         }
@@ -2617,7 +2882,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Viktor finally merges the worlds of collaboration and AI that have previously remained separate. We see an opportunity for Viktor to remove the barriers of AI adoption in the enterprise by being embedded where teams already work and connected with all the tools employees have access to."
+              "quote": "Viktor finally merges the worlds of collaboration and AI that have previously remained separate. We see an opportunity for Viktor to remove the barriers of AI adoption in the enterprise by being embedded where teams already work and connected with all the tools employees have access to.",
+              "source_content_hash": "bc6dd70ea1b6ac85",
+              "quote_hash": "ecb3bfd682567e5519bfd2d79dc4c10d68202931052522b4e292e8a2744981f5"
             }
           ]
         }
@@ -2633,7 +2900,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ce83b857608dabeb",
-                "quote": "Viktor finally merges the worlds of collaboration and AI that have previously remained separate. We see an opportunity for Viktor to remove the barriers of AI adoption in the enterprise by being embedded where teams already work and connected with all the tools employees have access to."
+                "quote": "Viktor finally merges the worlds of collaboration and AI that have previously remained separate. We see an opportunity for Viktor to remove the barriers of AI adoption in the enterprise by being embedded where teams already work and connected with all the tools employees have access to.",
+                "source_content_hash": "bc6dd70ea1b6ac85",
+                "quote_hash": "ecb3bfd682567e5519bfd2d79dc4c10d68202931052522b4e292e8a2744981f5"
               }
             ]
           }
@@ -2651,7 +2920,22 @@
           "部分团队在 Viktor 上的花费已超过一名初级员工，若 AI 代理未能持续交付与成本匹配的产出，客户可能重新评估订阅价值"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 同事 / 企业协作自动化"
+        "sector": "AI 同事 / 企业协作自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 价值单元从“个人副驾驶”向“团队级代理”的迁移，以及将 AI 嵌入 Slack/Teams 这一现有工作流所实现的零摩擦分发优势。Viktor 在公开推出后 10 周内达到 1290 万欧元营收运行率，这一速度被投资者描述为“比 Slack 市场生态系统中任何可比的近期企业软件分发数据点都要快”，构成了本轮融资最关键的已验证信号。Accel 合伙人明确表示该市场可能产生“数百亿美元的收入”，且 Viktor 的架构选择——作为跨工具的中立操作层而非单一供应商的附属品——使其在 Microsoft Copilot 和 Salesforce Agentforce 的夹击下仍具备结构性差异。但判断的证据边界受限于：营收运行率仅基于 10 周数据，尚未经历完整年度的续约和扩展验证；产品仍可能产生意外行为；部分团队在 Viktor 上的花费已超过一名初级员工，定价与价值的长期平衡有待观察。",
+          "evidence_signals": [
+            "公开推出后 10 周内达到 1290 万欧元营收运行率",
+            "超过 2000 个组织使用，覆盖小型企业到科技初创公司",
+            "Slack 联合创始人 Stewart Butterfield 和 Cal Henderson 以天使投资人身份参与本轮",
+            "大多数客户集成超过 30 个应用，表明产品已深度嵌入工作流"
+          ],
+          "risks": [
+            "Microsoft 和 Salesforce 等大型平台可将 AI 助手捆绑进现有企业合同并作为默认选项分发，Viktor 面临被替代的风险",
+            "产品仍可能以非预期方式行动，例如在一次内部裁员公告中用骷髅表情符号回应，企业级可靠性有待验证",
+            "部分团队在 Viktor 上的花费已超过一名初级员工，若 AI 代理未能持续交付与成本匹配的产出，客户可能重新评估订阅价值"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2659,385 +2943,203 @@
           "target_kind": "product",
           "research_name": "Viktor",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Viktor is one of the first agents capable of operating autonomously for weeks rather than minutes, maintaining context across thousands of emails, documents, and tools during its work."
-            },
-            {
-              "source_id": "FISRC-dfd448b0e31a1958",
-              "quote": "It connects to more than 3,000 workplace tools, including Google Drive, Meta Ads, Airtable, and Notion"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Fryderyk Wiatrowski",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Fryderyk Wiatrowski , CEO and co-founder of Viktor"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Peter Albert",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-280d48fa0ecf6e91",
-              "quote": "Peter Albert, co-founder and CTO of Viktor"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "The round was led by Accel"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bek Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "with participation from Bek Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kaya VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "with participation from Bek Ventures, Kaya VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Inovo VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tenacity Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Stewart Butterfield",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Angel investors, including Stewart Butterfield and Cal Henderson, co-founders of Slack"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Cal Henderson",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Angel investors, including Stewart Butterfield and Cal Henderson, co-founders of Slack"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Guillermo Rauch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Guillermo Rauch, founder and CEO of Vercel"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Victor Riparbelli",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Victor Riparbelli, co-founder and CEO of Synthesia"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Koen Bok",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jorn van Dijk",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alex Bouaziz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Alex Bouaziz, co-founder and CEO of Deel"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lenny Rachitsky",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "as well as Lenny Rachitsky and Harry Stebbings, participated in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Harry Stebbings",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "as well as Lenny Rachitsky and Harry Stebbings, participated in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Leonis Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "They join existing investors, including Leonis Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Oxford Seed Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "They join existing investors, including Leonis Capital, Oxford Seed Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Nat Friedman",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Nat Friedman (former GitHub CEO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Daniel Gross",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Daniel Gross (former Head of AI at Y Combinator/Apple)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Charlie Songhurst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Nico Rosberg",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Nico Rosberg"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Mati Staniszewski",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Mati Staniszewski (co-founder of ElevenLabs)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "a health and lifestyle group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "Viktor helped a health and lifestyle group cut €3.8 million ($4.5 million) from a construction project budget"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "a founder",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "a founder set up the infrastructure for a €862k-per-year ($1 million-per-year) content agency with no staff in just nine days"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "a landscaping business",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ce83b857608dabeb",
-              "quote": "a landscaping business implemented 63 automations across operations, HR, collections, and email management within two weeks"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Microsoft",
           "canonical_entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-280d48fa0ecf6e91",
-              "quote": "Microsoft has been weaving Copilot into both Teams and the broader Office suite. Those companies also have the advantage that they can bundle AI assistants into existing enterprise contracts and ship them as the default choice."
-            },
-            {
-              "source_id": "FISRC-280d48fa0ecf6e91",
-              "quote": "Wiatrowski says Viktor's specific edge is that it plugs into far more of a company's tools and is designed from the start to work across a whole team."
-            }
-          ]
+          "canonical_name": "Microsoft"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Salesforce",
           "canonical_entity_id": "EN-3ccbd9105a45d8fc",
-          "canonical_name": "Salesforce",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-280d48fa0ecf6e91",
-              "quote": "Slack's parent company already has its own Agentforce product aimed at letting companies build and deploy AI agents on top of Salesforce data and which can work inside Slack"
-            }
-          ]
+          "canonical_name": "Salesforce"
         }
       ],
       "funding_history": [
@@ -3099,13 +3201,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:18:34.009Z"
+      "published_at": "2026-07-26T14:18:34.009Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Viktor"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Fryderyk Wiatrowski",
+            "Peter Albert"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-44a4e92c03a31ab1"
+      ],
+      "aggregation": {
+        "key": "EN-ce65fa41b16c33ff|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-8478addb443b9e38",
       "triggered_by_event_id": "EV-7add33b4c74dbf1a",
       "as_of_date": "2026-05-24",
@@ -3123,7 +3255,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "Sri Viswanath, a former Coatue investor. He left the full-time VC role in the fall to launch Sycamore, where he is CEO."
+                "quote": "Sri Viswanath, a former Coatue investor. He left the full-time VC role in the fall to launch Sycamore, where he is CEO.",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "9bc313864c14ab7b6c296b06d5c24fa08ce55ab41cbaca5da4977615a25fd82b"
               }
             ],
             "entity_id": null
@@ -3137,11 +3271,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-afa7f3db79250046",
-            "quote": "Sycamore on Monday announced a $65 million seed"
+            "quote": "Sycamore on Monday announced a $65 million seed",
+            "source_content_hash": "30d66410e025bf44",
+            "quote_hash": "e55a730b7c2b378a6629c92ae046748785681772eeb4a7b1cda9346c0a794f0e"
           },
           {
             "source_id": "FISRC-5ac274cd2a11b051",
-            "quote": "Sycamore Labs is a Palo Alto-based startup"
+            "quote": "Sycamore Labs is a Palo Alto-based startup",
+            "source_content_hash": "9d64f91709ec3170",
+            "quote_hash": "b5a580c6c9b18c133bad753fff46725ba8cdfea4d18dd81a123d68719defea7c"
           }
         ]
       },
@@ -3157,7 +3295,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "a $65 million seed led by Coatue and Lightspeed"
+                "quote": "a $65 million seed led by Coatue and Lightspeed",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "7eb0b969a7de389ce7f7de17ec3e8461d68fb6ed807daf11961f22cd5412053f"
               }
             ],
             "entity_id": null
@@ -3168,7 +3308,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "a $65 million seed led by Coatue and Lightspeed"
+                "quote": "a $65 million seed led by Coatue and Lightspeed",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "7eb0b969a7de389ce7f7de17ec3e8461d68fb6ed807daf11961f22cd5412053f"
               }
             ],
             "entity_id": null
@@ -3179,7 +3321,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others."
+                "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others.",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "094332c446066edecca1b7b6a7b3b71cde5d19f56591285ce5895bd45753465e"
               }
             ],
             "entity_id": null
@@ -3190,7 +3334,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others."
+                "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others.",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "094332c446066edecca1b7b6a7b3b71cde5d19f56591285ce5895bd45753465e"
               }
             ],
             "entity_id": null
@@ -3201,7 +3347,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others."
+                "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others.",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "094332c446066edecca1b7b6a7b3b71cde5d19f56591285ce5895bd45753465e"
               }
             ],
             "entity_id": null
@@ -3212,7 +3360,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop."
+                "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop.",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "2aa3038b19a9c39342ba978f213aea5f5228ccb3eb4d63b7112c843b3fc0f92c"
               }
             ],
             "entity_id": null
@@ -3223,7 +3373,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop."
+                "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop.",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "2aa3038b19a9c39342ba978f213aea5f5228ccb3eb4d63b7112c843b3fc0f92c"
               }
             ],
             "entity_id": null
@@ -3234,7 +3386,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afa7f3db79250046",
-                "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop."
+                "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop.",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "2aa3038b19a9c39342ba978f213aea5f5228ccb3eb4d63b7112c843b3fc0f92c"
               }
             ],
             "entity_id": null
@@ -3243,11 +3397,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-afa7f3db79250046",
-            "quote": "Sycamore on Monday announced a $65 million seed led by Coatue and Lightspeed"
+            "quote": "Sycamore on Monday announced a $65 million seed led by Coatue and Lightspeed",
+            "source_content_hash": "30d66410e025bf44",
+            "quote_hash": "cbbe4da80ff38c588e453640851e7d77e0358e59c520a6c014494fd98df1cd8b"
           },
           {
             "source_id": "FISRC-16fa200d05a6a4d6",
-            "quote": "Sycamore, an enterprise AI startup founded by a former Coatue partner, has raised $65 million in seed funding."
+            "quote": "Sycamore, an enterprise AI startup founded by a former Coatue partner, has raised $65 million in seed funding.",
+            "source_content_hash": "1bc21f71382a7a8c",
+            "quote_hash": "45c51f38bd545c0e0ab1dad9130c95231389acc49cc4d41b9138b7dee7d58b42"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-7add33b4c74dbf1a",
+            "round_original": "种子轮",
+            "amount": "$65M",
+            "announced_at": "2026-03-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-afa7f3db79250046",
+                "quote": "Sycamore on Monday announced a $65 million seed led by Coatue and Lightspeed",
+                "source_content_hash": "30d66410e025bf44",
+                "quote_hash": "cbbe4da80ff38c588e453640851e7d77e0358e59c520a6c014494fd98df1cd8b"
+              },
+              {
+                "source_id": "FISRC-16fa200d05a6a4d6",
+                "quote": "Sycamore, an enterprise AI startup founded by a former Coatue partner, has raised $65 million in seed funding.",
+                "source_content_hash": "1bc21f71382a7a8c",
+                "quote_hash": "45c51f38bd545c0e0ab1dad9130c95231389acc49cc4d41b9138b7dee7d58b42"
+              }
+            ]
           }
         ]
       },
@@ -3268,11 +3451,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "attempting to build the whole agentic orchestration layer that handles everything from coding to back-end infrastructure, stepping in wherever needed."
+              "quote": "attempting to build the whole agentic orchestration layer that handles everything from coding to back-end infrastructure, stepping in wherever needed.",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "284964d28174ea23ab868173d13e535eda314595e3ca2e41ccaabba06f5e2824"
             },
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "starts with the problem itself and then designs and builds the right solution from scratch, whether that involves agents, back-end systems, front ends, or data integrations"
+              "quote": "starts with the problem itself and then designs and builds the right solution from scratch, whether that involves agents, back-end systems, front ends, or data integrations",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "d1fecb0635231cbedbfaf52f8077fa7be8d559552dd49da0d00b637cbd461ffd"
             }
           ],
           "entity_id": null
@@ -3290,9 +3477,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Port, which announced a $100 million round in December"
+              "quote": "Port, which announced a $100 million round in December",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "1461fc0f4627945d0ac744386a8955a410a3a3736d47a939b1b98147f1d21d3f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "OpenAI Frontier",
@@ -3304,9 +3494,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "The top model makers also want to own the enterprise agent platform, among them OpenAI with Frontier"
+              "quote": "The top model makers also want to own the enterprise agent platform, among them OpenAI with Frontier",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "d1fea69d4e309a9784cda0450f8ca1b59e68cae03f85b8294923885ac11d72f9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Anthropic Cowork",
@@ -3318,9 +3511,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Anthropic with its ever-expanding Cowork"
+              "quote": "Anthropic with its ever-expanding Cowork",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "f7a0ee8586e790c87c3b1eb6c70a8b47ac7adb4f955a0c60f5c5fc29b6466bb5"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Microsoft Azure Foundry",
@@ -3332,9 +3528,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "the big AI cloud providers like Microsoft Azure with Foundry"
+              "quote": "the big AI cloud providers like Microsoft Azure with Foundry",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "242d30a1caaa345da84e1ccfe5494e8c536c42e652a407757dad5d302b6586dd"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "AWS Amazon Bedrock AgentCore",
@@ -3346,9 +3545,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "AWS with Amazon Bedrock AgentCore want it, too"
+              "quote": "AWS with Amazon Bedrock AgentCore want it, too",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "599b597d7538780c003a20f4243aaec22fbcfb8a563c4e5d47beeef9ee8fb0eb"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -3359,7 +3561,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "as CTO of Atlassian, where I led the cloud transformation and scaled the engineering org to 7,000+"
+              "quote": "as CTO of Atlassian, where I led the cloud transformation and scaled the engineering org to 7,000+",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "a1b470cba07f18651b104f93b75c4657dfb2e75d46dd302450db4d1df9606991"
             }
           ]
         }
@@ -3371,7 +3575,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "The round came together through long-standing relationships."
+              "quote": "The round came together through long-standing relationships.",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "c9dbfbb5b8c7ff51cfad0f7875ccdcbc298d1d6e328790d1eeccb2220e7e60c6"
             }
           ]
         },
@@ -3381,7 +3587,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Most tools take existing workflows and layer agents on top"
+              "quote": "Most tools take existing workflows and layer agents on top",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "b64264393e9d8cc17e15605734e72110b68c57cf78a26ed5b16755313371ef36"
             }
           ]
         },
@@ -3391,7 +3599,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-afa7f3db79250046",
-              "quote": "starts with the problem itself and then designs and builds the right solution from scratch, whether that involves agents, back-end systems, front ends, or data integrations"
+              "quote": "starts with the problem itself and then designs and builds the right solution from scratch, whether that involves agents, back-end systems, front ends, or data integrations",
+              "source_content_hash": "30d66410e025bf44",
+              "quote_hash": "d1fecb0635231cbedbfaf52f8077fa7be8d559552dd49da0d00b637cbd461ffd"
             }
           ]
         }
@@ -3409,7 +3619,20 @@
           "Sycamore进入的是一个竞争极度激烈的市场，面临从小型初创公司到OpenAI、Anthropic等顶级模型制造商，以及微软Azure、AWS等云巨头的全方位竞争，市场尚未实现但被广泛预期为巨大。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI智能体编排"
+        "sector": "企业AI智能体编排",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是创始人Sri Viswanath的深厚企业背景与长期行业关系。Viswanath拥有超过20年在Sun Microsystems、VMware、Groupon和Atlassian担任CTO的企业平台构建经验，曾领导Atlassian云转型并将工程团队扩展至7000人以上。本轮融资通过其长期关系网络完成，投资方包括其前雇主Coatue以及Lightspeed等顶级VC，以及OpenAI前首席科学家Bob McGrew、Intel CEO Lip-Bu Tan、Databricks CEO Ali Ghodsi等重量级天使投资人。6500万美元的种子轮规模远超行业常规水平（通常种子轮在100万至500万美元之间），表明投资者在创始人尚未披露具体客户名称和财务数据的情况下，已基于其个人履历和行业网络给予了极高估值溢价。",
+          "evidence_signals": [
+            "创始人拥有超过20年企业平台构建经验，曾在Atlassian担任CTO并管理7000+人工程团队",
+            "创始人曾任Coatue投资合伙人，具备投资视角与企业需求的双重洞察",
+            "融资通过创始人的长期关系网络完成",
+            "Sycamore已获得一些大型企业客户的初步关注（创始人声称已有traction但拒绝透露名称）"
+          ],
+          "risks": [
+            "Sycamore进入的是一个竞争极度激烈的市场，面临从小型初创公司到OpenAI、Anthropic等顶级模型制造商，以及微软Azure、AWS等云巨头的全方位竞争，市场尚未实现但被广泛预期为巨大。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -3417,199 +3640,105 @@
           "target_kind": "product",
           "research_name": "Sycamore平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "attempting to build the whole agentic orchestration layer that handles everything from coding to back-end infrastructure, stepping in wherever needed."
-            },
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "starts with the problem itself and then designs and builds the right solution from scratch, whether that involves agents, back-end systems, front ends, or data integrations"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sri Viswanath",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Sri Viswanath, a former Coatue investor. He left the full-time VC role in the fall to launch Sycamore, where he is CEO."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Coatue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "a $65 million seed led by Coatue and Lightspeed"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "a $65 million seed led by Coatue and Lightspeed"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bob McGrew",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lip-Bu Tan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Ali Ghodsi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Frederic Kerrest",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Soham Mazumdar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mike Knoop",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Other notable angels include Okta co-founder Frederic Kerrest, Rubrik and Wisdom AI co-founder Soham Mazumdar, and Zapier and Ndea co-founder Mike Knoop."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Port",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Port, which announced a $100 million round in December"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI Frontier",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "The top model makers also want to own the enterprise agent platform, among them OpenAI with Frontier"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic Cowork",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "Anthropic with its ever-expanding Cowork"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Microsoft Azure Foundry",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "the big AI cloud providers like Microsoft Azure with Foundry"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "AWS Amazon Bedrock AgentCore",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afa7f3db79250046",
-              "quote": "AWS with Amazon Bedrock AgentCore want it, too"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -3671,10 +3800,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:17:23.694Z"
+      "published_at": "2026-07-26T14:17:23.694Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sycamore平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sri Viswanath"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7add33b4c74dbf1a"
+      ],
+      "aggregation": {
+        "key": "EN-3e665817a41133c2|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-19",
     "generated_at": "2026-07-26T15:12:25.005Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 4,
       "auto_published": 4,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-3401bf6e360a5213",
       "triggered_by_event_id": "EV-c85011ca6a0389bf",
       "as_of_date": "2026-06-19",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)"
+                "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "775a38ac7f41771e3c4e71815d589f32a6c703306c1f12f844543e5e49ad5075"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)"
+                "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "775a38ac7f41771e3c4e71815d589f32a6c703306c1f12f844543e5e49ad5075"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)"
+                "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "775a38ac7f41771e3c4e71815d589f32a6c703306c1f12f844543e5e49ad5075"
               }
             ],
             "entity_id": null
@@ -71,7 +78,9 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7d857555e491c329",
-            "quote": "NeuralTrust is the leading platform for securing and scaling AI agents. From offices in Barcelona and London, it helps enterprises identify, secure, and govern every AI agent running across their organization"
+            "quote": "NeuralTrust is the leading platform for securing and scaling AI agents. From offices in Barcelona and London, it helps enterprises identify, secure, and govern every AI agent running across their organization",
+            "source_content_hash": "37679c7551d9d29a",
+            "quote_hash": "31ed4b7a14b617ab491619bc7e60d61051aee56773f9ffe82f5efaa5c02090e9"
           }
         ]
       },
@@ -87,7 +96,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "The round was led by Alstin Capital"
+                "quote": "The round was led by Alstin Capital",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "03382ccc1da206b412bc52ae73b589536674279bf9f3ccebc0a240532adb91d0"
               }
             ],
             "entity_id": null
@@ -98,7 +109,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
+                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
               }
             ],
             "entity_id": null
@@ -109,7 +122,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
+                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
               }
             ],
             "entity_id": null
@@ -120,7 +135,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
+                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
               }
             ],
             "entity_id": null
@@ -131,7 +148,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
+                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
               }
             ],
             "entity_id": null
@@ -142,7 +161,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
+                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
               }
             ],
             "entity_id": null
@@ -153,7 +174,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-7a0d2741d3dddcef",
-                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves, the venture capital fund of IESE Business School"
+                "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves, the venture capital fund of IESE Business School",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "dca11ab868424ee1c0ff1f55ca217b2f805736f2e190b9c75d8a4b983e41efbb"
               }
             ],
             "entity_id": null
@@ -162,11 +185,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-7a0d2741d3dddcef",
-            "quote": "today announced a €17.2 million ($20 million) Seed round"
+            "quote": "today announced a €17.2 million ($20 million) Seed round",
+            "source_content_hash": "7a4bd12b025049d2",
+            "quote_hash": "585ef384b8928819a9679a9ca91e45c36f114860bad4e94049cf7ffea3e31d7d"
           },
           {
             "source_id": "FISRC-7d857555e491c329",
-            "quote": "today announced a $20 million seed round, the largest cybersecurity seed financing raised by an EU company to date."
+            "quote": "today announced a $20 million seed round, the largest cybersecurity seed financing raised by an EU company to date.",
+            "source_content_hash": "37679c7551d9d29a",
+            "quote_hash": "155d74116c95d18a9d1fd2b5ca8a7b5e5e69e5f37ec8ec49c85d3af185f801e5"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c85011ca6a0389bf",
+            "round_original": "种子轮",
+            "amount": "€17.2 million ($20 million)",
+            "announced_at": "2026-06-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7a0d2741d3dddcef",
+                "quote": "today announced a €17.2 million ($20 million) Seed round",
+                "source_content_hash": "7a4bd12b025049d2",
+                "quote_hash": "585ef384b8928819a9679a9ca91e45c36f114860bad4e94049cf7ffea3e31d7d"
+              },
+              {
+                "source_id": "FISRC-7d857555e491c329",
+                "quote": "today announced a $20 million seed round, the largest cybersecurity seed financing raised by an EU company to date.",
+                "source_content_hash": "37679c7551d9d29a",
+                "quote_hash": "155d74116c95d18a9d1fd2b5ca8a7b5e5e69e5f37ec8ec49c85d3af185f801e5"
+              }
+            ]
           }
         ]
       },
@@ -182,7 +234,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "TrustGate is an agent gateway that brokers every LLM, MCP, and tool call, becoming the single enforcement point through which all agent traffic flows."
+              "quote": "TrustGate is an agent gateway that brokers every LLM, MCP, and tool call, becoming the single enforcement point through which all agent traffic flows.",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "9aded033a44d2d2ea6b236380176d1548c7fc385eac43d4c5fc98fde97ac2dab"
             }
           ],
           "entity_id": null
@@ -198,7 +252,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "TrustGuard is a runtime security engine that detects and stops threats across every platform and endpoint where agents operate, regardless of how they were built or deployed."
+              "quote": "TrustGuard is a runtime security engine that detects and stops threats across every platform and endpoint where agents operate, regardless of how they were built or deployed.",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "c6a359f7d86fc8fd1bb7a1ea07099fe665e6014a93d39e002436cb8ba1d62a00"
             }
           ],
           "entity_id": null
@@ -214,7 +270,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "TrustLens is a posture management layer that identifies every agent in the enterprise and tracks how it behaves inside and outside the security perimeter."
+              "quote": "TrustLens is a posture management layer that identifies every agent in the enterprise and tracks how it behaves inside and outside the security perimeter.",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "0665387ef4671b421c8121821e4f0a4e9b8991f325069ab5e9b164bc10db33df"
             }
           ],
           "entity_id": null
@@ -230,7 +288,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "The company inspects millions of agent interactions every day."
+              "quote": "The company inspects millions of agent interactions every day.",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "3e8f238e7a52053bbac9279e94139ff0c6997c4c1499e6d487b95e275f79d1ca"
             }
           ]
         },
@@ -241,7 +301,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "Around 1.2% are malicious and need intervention"
+              "quote": "Around 1.2% are malicious and need intervention",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "df160d685fc6a221b6955aeca3fb765caa737c5d4c4c952f4645ba538ec18751"
             }
           ]
         },
@@ -252,7 +314,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "92% of customers have annual revenues above €862.1 million ($1 billion)"
+              "quote": "92% of customers have annual revenues above €862.1 million ($1 billion)",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "7fb9de5ca7de14bc3f2d93bd53d6c4b7d423af2dd0fc153d51bc79ff86c40fcc"
             }
           ]
         },
@@ -263,7 +327,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "with 80% based in Europe and 20% international"
+              "quote": "with 80% based in Europe and 20% international",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "73e7631062895d829146d5b66ccd1cad60917bdbe5a68c1a7540727c5a55c777"
             }
           ]
         },
@@ -274,7 +340,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "in the first quarter of 2026, NeuralTrust doubled its full-year 2025 ARR."
+              "quote": "in the first quarter of 2026, NeuralTrust doubled its full-year 2025 ARR.",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "2cb3f13acbc9787625aad6139f913491160dd101d8570a50ca44a202febdd2ce"
             }
           ]
         }
@@ -286,7 +354,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "AI agents are now part of enterprise operations, but the controls protecting them are still catching up. This round allows us to keep building the infrastructure layer that makes AI adoption measurable, governable, and safe. Our mission has not changed since day one: turn AI security into a strategic advantage for the enterprises that will define the next decade"
+              "quote": "AI agents are now part of enterprise operations, but the controls protecting them are still catching up. This round allows us to keep building the infrastructure layer that makes AI adoption measurable, governable, and safe. Our mission has not changed since day one: turn AI security into a strategic advantage for the enterprises that will define the next decade",
+              "source_content_hash": "7a4bd12b025049d2",
+              "quote_hash": "2cc5bc778d48fa7cb324ecc2660b67001b4bf37fe4fe36efec0772cd93f84f99"
             }
           ]
         }
@@ -304,7 +374,20 @@
           "客户集中度风险：目前披露的具名客户仅四家，且 80% 客户位于欧洲，全球市场拓展尚未得到验证。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 安全与治理"
+        "sector": "AI 安全与治理",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 智能体从实验走向核心基础设施时产生的治理与安全真空。本轮融资的已验证信号包括：公司已获得 AirEuropa、Abanca、Iberia 和 Banc Sabadell 等大型企业客户，92% 的客户年收入超过 10 亿美元；2026 年 Q1 的 ARR 较 2025 年全年翻倍；每日检查数百万次智能体交互，其中约 1.2% 为恶意行为并被实时阻止。这些信号表明其产品已在高价值生产环境中得到验证，且市场需求正在快速增长。但判断的证据边界在于，目前披露的客户数量有限，且 80% 集中在欧洲，其国际扩张能力和更广泛的市场渗透率尚未得到充分证明。",
+          "evidence_signals": [
+            "已签约 AirEuropa、Abanca、Iberia、Banc Sabadell 等大型企业客户，92% 客户年收入超 10 亿美元",
+            "2026 年 Q1 ARR 较 2025 年全年翻倍，显示强劲增长势头",
+            "每日检查数百万次智能体交互，约 1.2% 为恶意行为并被实时阻止，产品在生产环境中持续运行",
+            "被 Gartner、KuppingerCole 和 MarketsandMarkets 认定为品类领导者"
+          ],
+          "risks": [
+            "客户集中度风险：目前披露的具名客户仅四家，且 80% 客户位于欧洲，全球市场拓展尚未得到验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -312,169 +395,91 @@
           "target_kind": "product",
           "research_name": "TrustGate",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "TrustGate is an agent gateway that brokers every LLM, MCP, and tool call, becoming the single enforcement point through which all agent traffic flows."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "TrustGuard",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "TrustGuard is a runtime security engine that detects and stops threats across every platform and endpoint where agents operate, regardless of how they were built or deployed."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "TrustLens",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "TrustLens is a posture management layer that identifies every agent in the enterprise and tracks how it behaves inside and outside the security perimeter."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Joan Vendrell",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Victor Garcia",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alejandro Domingo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Alstin Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "The round was led by Alstin Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "VentureFriends",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Seaya",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kibo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Banc Sabadell",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "EA Ventures Plug and Play Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Finaves",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7a0d2741d3dddcef",
-              "quote": "with participation from VentureFriends, Seaya, Kibo Ventures, Banc Sabadell, EA Ventures Plug and Play Fund, and Finaves, the venture capital fund of IESE Business School"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -524,13 +529,46 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:34:43.751Z"
+      "published_at": "2026-07-26T14:34:43.751Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "TrustGate",
+            "TrustGuard",
+            "TrustLens"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Alejandro Domingo",
+            "Joan Vendrell",
+            "Victor Garcia"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c85011ca6a0389bf"
+      ],
+      "aggregation": {
+        "key": "EN-c0cd6e83b6dd78a5|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9cbc09818a9be1c5",
       "triggered_by_event_id": "EV-39717cdbada984d7",
       "as_of_date": "2026-06-19",
@@ -548,7 +586,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0e863445463ffc16",
-                "quote": "The company was founded in 2024 by Chief Executive Officer Alex Salazar and Chief Technology Officer Sam Partee"
+                "quote": "The company was founded in 2024 by Chief Executive Officer Alex Salazar and Chief Technology Officer Sam Partee",
+                "source_content_hash": "025cb3fd28e66b8a",
+                "quote_hash": "0d409745e998a4461d0c2e22a9532968fda5cc2462a401167ad5fffbd9488dd3"
               }
             ],
             "entity_id": null
@@ -559,7 +599,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0e863445463ffc16",
-                "quote": "The company was founded in 2024 by Chief Executive Officer Alex Salazar and Chief Technology Officer Sam Partee"
+                "quote": "The company was founded in 2024 by Chief Executive Officer Alex Salazar and Chief Technology Officer Sam Partee",
+                "source_content_hash": "025cb3fd28e66b8a",
+                "quote_hash": "0d409745e998a4461d0c2e22a9532968fda5cc2462a401167ad5fffbd9488dd3"
               }
             ],
             "entity_id": null
@@ -573,16 +615,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-0e863445463ffc16",
-            "quote": "Arcade AI Inc., the developer of an authorization platform for artificial intelligence agents"
+            "quote": "Arcade AI Inc., the developer of an authorization platform for artificial intelligence agents",
+            "source_content_hash": "025cb3fd28e66b8a",
+            "quote_hash": "a42f718d9784a3f4b2b6b822fc5a6fb6eccf1e61651a472417bc59c0e091d725"
           },
           {
             "source_id": "FISRC-5dee0c478e11be3d",
-            "quote": "San Francisco-based Arcade"
+            "quote": "San Francisco-based Arcade",
+            "source_content_hash": "6a0b2b80d2172d9c",
+            "quote_hash": "82c6b99afc854aa8930b1ea32bd99c3f5ee52008f2603a4eecbcbb84d2c1bf8a"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$60 million",
         "total_raised": "$72 million",
         "announced_at": "2026-06-15",
@@ -593,7 +639,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0e863445463ffc16",
-                "quote": "SYN Ventures led the Series A round."
+                "quote": "SYN Ventures led the Series A round.",
+                "source_content_hash": "025cb3fd28e66b8a",
+                "quote_hash": "af0401b8d1bd3adb3e1e9d2c064aeb7258fe1e2d812334aa013db48d6e233bf7"
               }
             ],
             "entity_id": null
@@ -604,7 +652,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0e863445463ffc16",
-                "quote": "It was joined by Morgan Stanley and Wipro Ltd."
+                "quote": "It was joined by Morgan Stanley and Wipro Ltd.",
+                "source_content_hash": "025cb3fd28e66b8a",
+                "quote_hash": "ca5141ddac45bfd3148f0b2dcfb637af3f6eeea13387c1e15499af443be1d5f7"
               }
             ],
             "entity_id": null
@@ -615,7 +665,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0e863445463ffc16",
-                "quote": "It was joined by Morgan Stanley and Wipro Ltd."
+                "quote": "It was joined by Morgan Stanley and Wipro Ltd.",
+                "source_content_hash": "025cb3fd28e66b8a",
+                "quote_hash": "ca5141ddac45bfd3148f0b2dcfb637af3f6eeea13387c1e15499af443be1d5f7"
               }
             ],
             "entity_id": null
@@ -624,7 +676,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-4f5e6bfdd6f43fec",
-            "quote": "Combined with our seed, that brings our total financing to $72 million."
+            "quote": "Combined with our seed, that brings our total financing to $72 million.",
+            "source_content_hash": "aaed6d15195423ff3fc794779415737677e64dacc8a609001e119b6e8152a52f",
+            "quote_hash": "dcab503e304af600499249bdff061d3575210396a31056d87c6bc7f336e0cdeb"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-39717cdbada984d7",
+            "round_original": "Series A",
+            "amount": "$60 million",
+            "announced_at": "2026-06-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4f5e6bfdd6f43fec",
+                "quote": "Combined with our seed, that brings our total financing to $72 million.",
+                "source_content_hash": "aaed6d15195423ff3fc794779415737677e64dacc8a609001e119b6e8152a52f",
+                "quote_hash": "dcab503e304af600499249bdff061d3575210396a31056d87c6bc7f336e0cdeb"
+              }
+            ]
           }
         ]
       },
@@ -644,11 +717,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f5e6bfdd6f43fec",
-              "quote": "We do three things on every agent action: enforce, execute, govern. We collapse all three into one layer."
+              "quote": "We do three things on every agent action: enforce, execute, govern. We collapse all three into one layer.",
+              "source_content_hash": "aaed6d15195423ff3fc794779415737677e64dacc8a609001e119b6e8152a52f",
+              "quote_hash": "3f9ecb4ac6ec1507750d881d1a687dc533d7c41b01415bb9ecdb441924a7eff6"
             },
             {
               "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "Authorization. Agents get the access the user has, only for the action they're taking. No standing permissions, no overprivileged service accounts"
+              "quote": "Authorization. Agents get the access the user has, only for the action they're taking. No standing permissions, no overprivileged service accounts",
+              "source_content_hash": "74d61bca666dbd31",
+              "quote_hash": "3c72fbd97dba750226a5fa86384d3d80e0879e8fb54e130686307a3bad978865"
             }
           ],
           "entity_id": null
@@ -662,9 +739,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain"
+              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain",
+              "source_content_hash": "74d61bca666dbd31",
+              "quote_hash": "2fd3b830ab448021c7975956ea44e5812f85a6e8df476bcad6a7280f48f6704a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Prosus",
@@ -673,9 +753,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain"
+              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain",
+              "source_content_hash": "74d61bca666dbd31",
+              "quote_hash": "2fd3b830ab448021c7975956ea44e5812f85a6e8df476bcad6a7280f48f6704a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "LangChain",
@@ -684,9 +767,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain"
+              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain",
+              "source_content_hash": "74d61bca666dbd31",
+              "quote_hash": "2fd3b830ab448021c7975956ea44e5812f85a6e8df476bcad6a7280f48f6704a"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -698,7 +784,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4f5e6bfdd6f43fec",
-              "quote": "Tool call volume on Arcade is up 25x in the last six months."
+              "quote": "Tool call volume on Arcade is up 25x in the last six months.",
+              "source_content_hash": "aaed6d15195423ff3fc794779415737677e64dacc8a609001e119b6e8152a52f",
+              "quote_hash": "14012aeb43270b2a15d9ad4c5bda8416367bbdc05184dee3fbf115443789bfcf"
             }
           ]
         },
@@ -709,7 +797,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0e863445463ffc16",
-              "quote": "it provides access to more than 8,000 MCP tools"
+              "quote": "it provides access to more than 8,000 MCP tools",
+              "source_content_hash": "025cb3fd28e66b8a",
+              "quote_hash": "28537d1bc9250c2cba834add0d70bf3adcf585006e2aa892557a2f01d88395f1"
             }
           ]
         }
@@ -729,7 +819,21 @@
           "API 网关厂商和身份厂商等既有基础设施巨头可能通过收购或自研进入同一市场，利用现有客户关系形成挤压"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 智能体安全与治理基础设施"
+        "sector": "AI 智能体安全与治理基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI 智能体从试点走向生产的过程中，授权与治理将从模型层的附属功能独立为必需的基础设施层。Arcade 以 MCP 授权规范制定者的身份和已在顶级银行、Prosus、LangChain 等生产环境中运行的先发优势，成为这一新兴品类的定义者。本轮 6000 万美元 A 轮融资的估值逻辑建立在三个已验证信号之上：工具调用量六个月增长 25 倍，表明客户使用深度在快速提升；平台已发布超过 8000 个面向委托用户授权的工具，超过生态中其他参与者之和，构成供给侧壁垒；MCP 授权规范被 Anthropic 采纳，赋予其事实上的标准制定者地位。但当前证据仅覆盖少数具名客户，尚未披露收入规模、客户总数或续约率，无法判断商业化的可复制性。",
+          "evidence_signals": [
+            "工具调用量在过去六个月内增长 25 倍，表明已有生产环境中的深度使用",
+            "平台已发布超过 8000 个面向委托用户授权的 MCP 工具，超过生态中其他参与者之和",
+            "MCP 授权规范被 Anthropic 采纳，成为行业标准的一部分",
+            "已在全球最大银行、Prosus 和 LangChain 的生产环境中运行"
+          ],
+          "risks": [
+            "来源未披露收入、客户总数或净收入留存率等商业化指标，无法评估从标杆客户向规模化收入的转化效率",
+            "API 网关厂商和身份厂商等既有基础设施巨头可能通过收购或自研进入同一市场，利用现有客户关系形成挤压"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -737,121 +841,63 @@
           "target_kind": "product",
           "research_name": "Arcade 安全行动层平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4f5e6bfdd6f43fec",
-              "quote": "We do three things on every agent action: enforce, execute, govern. We collapse all three into one layer."
-            },
-            {
-              "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "Authorization. Agents get the access the user has, only for the action they're taking. No standing permissions, no overprivileged service accounts"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Alex Salazar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0e863445463ffc16",
-              "quote": "The company was founded in 2024 by Chief Executive Officer Alex Salazar and Chief Technology Officer Sam Partee"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sam Partee",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0e863445463ffc16",
-              "quote": "The company was founded in 2024 by Chief Executive Officer Alex Salazar and Chief Technology Officer Sam Partee"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SYN Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0e863445463ffc16",
-              "quote": "SYN Ventures led the Series A round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Morgan Stanley",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0e863445463ffc16",
-              "quote": "It was joined by Morgan Stanley and Wipro Ltd."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Wipro",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0e863445463ffc16",
-              "quote": "It was joined by Morgan Stanley and Wipro Ltd."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家美国顶级银行",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Prosus",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "LangChain",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-31a5e35f792b1cc9",
-              "quote": "the only one running in production at the world's largest banks and global enterprises, including a top US bank, Prosus, and LangChain"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -926,13 +972,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:33:56.718Z"
+      "published_at": "2026-07-26T14:33:56.718Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Arcade 安全行动层平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Alex Salazar",
+            "Sam Partee"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-39717cdbada984d7"
+      ],
+      "aggregation": {
+        "key": "EN-d74c69db63e4763f|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-11044f281187f580",
       "triggered_by_event_id": "EV-2083b9eda52a3f76",
       "as_of_date": "2026-06-19",
@@ -950,7 +1026,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62082ad8f88f3c29",
-                "quote": "Vladimir Keil, the company’s co-founder and CEO"
+                "quote": "Vladimir Keil, the company’s co-founder and CEO",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "af9b4d036719650ca28722d94c77eca3efc5ff99f0d4681b7a95a6560d4970aa"
               }
             ],
             "entity_id": null
@@ -961,7 +1039,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62082ad8f88f3c29",
-                "quote": "He teamed up with friends Lukas Heinzmann and Till Wagner and in 2023, the trio launched Lio"
+                "quote": "He teamed up with friends Lukas Heinzmann and Till Wagner and in 2023, the trio launched Lio",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "a08b7fc0d7d14ead2c09762fa5bd73c38c5bce806e53878972b938340e3ff950"
               }
             ],
             "entity_id": null
@@ -972,7 +1052,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62082ad8f88f3c29",
-                "quote": "He teamed up with friends Lukas Heinzmann and Till Wagner and in 2023, the trio launched Lio"
+                "quote": "He teamed up with friends Lukas Heinzmann and Till Wagner and in 2023, the trio launched Lio",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "a08b7fc0d7d14ead2c09762fa5bd73c38c5bce806e53878972b938340e3ff950"
               }
             ],
             "entity_id": null
@@ -986,16 +1068,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-62082ad8f88f3c29",
-            "quote": "Lio’s co-founders know firsthand that procurement — the process enterprises use to purchase services from vendors — is often a bottleneck."
+            "quote": "Lio’s co-founders know firsthand that procurement — the process enterprises use to purchase services from vendors — is often a bottleneck.",
+            "source_content_hash": "67222c768b378194",
+            "quote_hash": "ba5efe472f94f65458cb2a3a5bd54fdcee62066b3502d5fa4ddc4f5d67ed0511"
           },
           {
             "source_id": "FISRC-05956935e1d4419f",
-            "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement"
+            "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement",
+            "source_content_hash": "86de37b74484f02a",
+            "quote_hash": "46db82635791f486b7ce6d4925a57715e98d3449c1e07ee87926e5151ddd6d8f"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$30 million",
         "total_raised": "$33 million",
         "announced_at": "2026-03-05",
@@ -1006,7 +1092,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62082ad8f88f3c29",
-                "quote": "Lio announced a $30 million Series A in a round led by Andreessen Horowitz."
+                "quote": "Lio announced a $30 million Series A in a round led by Andreessen Horowitz.",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "3def5e79c57d58d9d1416ca04bef03303297d78ccd12ab547f0ded9e8ee88a16"
               }
             ],
             "entity_id": null
@@ -1017,7 +1105,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62082ad8f88f3c29",
-                "quote": "SV Angels, Harry Stebbings, and YC also partook in the round"
+                "quote": "SV Angels, Harry Stebbings, and YC also partook in the round",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "ed9c932b1e017c7f9a3ae7834129ac0deac63c0e3215c2c71757b384db7c514d"
               }
             ],
             "entity_id": null
@@ -1028,7 +1118,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62082ad8f88f3c29",
-                "quote": "SV Angels, Harry Stebbings, and YC also partook in the round"
+                "quote": "SV Angels, Harry Stebbings, and YC also partook in the round",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "ed9c932b1e017c7f9a3ae7834129ac0deac63c0e3215c2c71757b384db7c514d"
               }
             ],
             "entity_id": null
@@ -1039,31 +1131,71 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-62082ad8f88f3c29",
-                "quote": "SV Angels, Harry Stebbings, and YC also partook in the round (Lio was part of the Spring ’23 batch)."
+                "quote": "SV Angels, Harry Stebbings, and YC also partook in the round (Lio was part of the Spring ’23 batch).",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "fdd13cc4cad434bbf56c0b62db98b038597fb511cdc45799c3479461757cbf59"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-62082ad8f88f3c29",
+            "quote": "Lio announced a $30 million Series A in a round led by Andreessen Horowitz. SV Angels, Harry Stebbings, and YC also partook in the round",
+            "source_content_hash": "67222c768b378194",
+            "quote_hash": "985c09be75ca570563cd175f9a677a920369b8e518c0815a04f4670e708d1344"
           },
+          {
+            "source_id": "FISRC-05956935e1d4419f",
+            "quote": "The new capital brings Lio’s total funding to $33 million",
+            "source_content_hash": "86de37b74484f02a",
+            "quote_hash": "6b0eb3853f116fd0c1ca6db464a7d7ac5fa8ffd6ce1c99613f970f3e741fd63d"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
           {
             "name": "Heliad",
             "role": "既有投资方",
             "evidence_refs": [
               {
                 "source_id": "FISRC-17700741cf145aa3",
-                "quote": "We’re proud to have been the first European institutional investor to have joined the ride just months after inception."
+                "quote": "We’re proud to have been the first European institutional investor to have joined the ride just months after inception.",
+                "source_content_hash": "52f291c4d53f8a92",
+                "quote_hash": "b384bd522a926cc690e120e468c2c8180d479f56346e7083adce9f8146fb865b"
               }
             ],
-            "entity_id": null
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
           }
         ],
-        "evidence_refs": [
+        "disclosures": [
           {
-            "source_id": "FISRC-62082ad8f88f3c29",
-            "quote": "Lio announced a $30 million Series A in a round led by Andreessen Horowitz. SV Angels, Harry Stebbings, and YC also partook in the round"
-          },
-          {
-            "source_id": "FISRC-05956935e1d4419f",
-            "quote": "The new capital brings Lio’s total funding to $33 million"
+            "event_id": "EV-2083b9eda52a3f76",
+            "round_original": "Series A",
+            "amount": "$30 million",
+            "announced_at": "2026-03-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-62082ad8f88f3c29",
+                "quote": "Lio announced a $30 million Series A in a round led by Andreessen Horowitz. SV Angels, Harry Stebbings, and YC also partook in the round",
+                "source_content_hash": "67222c768b378194",
+                "quote_hash": "985c09be75ca570563cd175f9a677a920369b8e518c0815a04f4670e708d1344"
+              },
+              {
+                "source_id": "FISRC-05956935e1d4419f",
+                "quote": "The new capital brings Lio’s total funding to $33 million",
+                "source_content_hash": "86de37b74484f02a",
+                "quote_hash": "6b0eb3853f116fd0c1ca6db464a7d7ac5fa8ffd6ce1c99613f970f3e741fd63d"
+              }
+            ]
           }
         ]
       },
@@ -1081,11 +1213,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Lio operates an AI-native platform with agentic infrastructure that completes the entire procurement process."
+              "quote": "Lio operates an AI-native platform with agentic infrastructure that completes the entire procurement process.",
+              "source_content_hash": "67222c768b378194",
+              "quote_hash": "2c3d7dd2b6342d7fd387b35d2c305a497f87acb0b8613c780deb8bc81a8a26bf"
             },
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement"
+              "quote": "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "dd11f4e56d07ff07ec8eed0438ddc691a68092c0c655ecc5fc4de5c2a5787e26"
             }
           ],
           "entity_id": null
@@ -1099,9 +1235,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Customers include Munich Re, the world’s largest reinsurer"
+              "quote": "Customers include Munich Re, the world’s largest reinsurer",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "e8bab53b0a4c9594c0c547f659819e88e5caa570e1502a0f96c98228a0515277"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Brose",
@@ -1110,9 +1249,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Brose, among the largest family-owned automotive suppliers globally"
+              "quote": "Brose, among the largest family-owned automotive suppliers globally",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "e4c552a152dd180257c95d9ff4ad7d326fbb8e579ff6da01706ab84b31a99e12"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Novozymes",
@@ -1121,9 +1263,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Novozymes, a global leader in biological solutions"
+              "quote": "Novozymes, a global leader in biological solutions",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "65b2b35d978e63ad817baba63b1eab7fcf0b919c9f3947ed7474071b3bf4e2a4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Schaeffler",
@@ -1132,9 +1277,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler."
+              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler.",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "b8c61e0867ade7c9138dc5233fb5e44910c383bbe376a3237b80e5790f37e742"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Walmart",
@@ -1143,9 +1291,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart."
+              "quote": "said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart.",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "91346f97d19f09d16331d3c41c92474079f713dcbe15a6fc34929ea8105bd8fb"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1159,13 +1310,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Keil considers Lio’s competitors to be legacy procurement software vendors (such as SAP Ariba and Oracle)"
+              "quote": "Keil considers Lio’s competitors to be legacy procurement software vendors (such as SAP Ariba and Oracle)",
+              "source_content_hash": "67222c768b378194",
+              "quote_hash": "12f7efb04a23554b751313a0425c5de038d11a096ccb4f6c77459b025e71be8e"
             },
             {
               "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Every previous generation of procurement technology was built on the same assumption, that humans will do the work and technology will help them do it faster"
+              "quote": "Every previous generation of procurement technology was built on the same assumption, that humans will do the work and technology will help them do it faster",
+              "source_content_hash": "67222c768b378194",
+              "quote_hash": "af3f60fd33d3b814ff5a23e3bfef11d4ffff1fc0ae44a21b740b244b64cf90fd"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Oracle",
@@ -1177,13 +1333,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Keil considers Lio’s competitors to be legacy procurement software vendors (such as SAP Ariba and Oracle)"
+              "quote": "Keil considers Lio’s competitors to be legacy procurement software vendors (such as SAP Ariba and Oracle)",
+              "source_content_hash": "67222c768b378194",
+              "quote_hash": "12f7efb04a23554b751313a0425c5de038d11a096ccb4f6c77459b025e71be8e"
             },
             {
               "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Every previous generation of procurement technology was built on the same assumption, that humans will do the work and technology will help them do it faster"
+              "quote": "Every previous generation of procurement technology was built on the same assumption, that humans will do the work and technology will help them do it faster",
+              "source_content_hash": "67222c768b378194",
+              "quote_hash": "af3f60fd33d3b814ff5a23e3bfef11d4ffff1fc0ae44a21b740b244b64cf90fd"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Business Process Outsourcing (BPO) providers",
@@ -1195,9 +1356,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "forcing teams to scale headcount or outsource work, often at up to 20x the cost of software"
+              "quote": "forcing teams to scale headcount or outsource work, often at up to 20x the cost of software",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "7c8f89f0d3b9fd785f886aadfba0041e387bee47fd82d5bfb450b346d089bda7"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1208,7 +1372,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Over 95% adoption rates"
+              "quote": "Over 95% adoption rates",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "cbc9146b10c92294d37ad1ebec3a87c1a8403bc200a858b1455bdc638d8f9b32"
             }
           ]
         },
@@ -1219,7 +1385,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "85% less manual work"
+              "quote": "85% less manual work",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "094e771a97e0ffc1edbf9ce1dfb4d5581fcf3ebf1255b4b7cc45155f7332e67a"
             }
           ]
         },
@@ -1230,7 +1398,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "10% incremental savings"
+              "quote": "10% incremental savings",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "d2f7fc3403ea9228819243039e5ee8d26d652be191fff534410c91dd01e93a34"
             }
           ]
         },
@@ -1241,7 +1411,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "100% customer retention"
+              "quote": "100% customer retention",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "382055fecaeb65743595eb80ef0e8d2264598862532b40c59f3bfd5a0c8c6ecf"
             }
           ]
         },
@@ -1252,7 +1424,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Lio’s agents have managed billions of dollars in enterprise spend"
+              "quote": "Lio’s agents have managed billions of dollars in enterprise spend",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "a46b9e5c466c476fe5c2d758c6b7001cceaf7dd3fed58b79c4e852bcb07d9f2f"
             }
           ]
         },
@@ -1263,7 +1437,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "a global tier-1 industrial manufacturer automated 75% of previously outsourced procurement work in six months"
+              "quote": "a global tier-1 industrial manufacturer automated 75% of previously outsourced procurement work in six months",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "c9aa75da41932998e88ff5817699e9f49ebb4ff1c17fc2f7afef493694261040"
             }
           ]
         },
@@ -1274,7 +1450,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Enterprises spend over $180 billion annually on procurement talent"
+              "quote": "Enterprises spend over $180 billion annually on procurement talent",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "cd4b67f61336b46c4ad18d46b95c523ccccb29a5ac63ca78507ab0fc789aac51"
             }
           ]
         },
@@ -1285,7 +1463,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "compared to roughly $10 billion on procurement software"
+              "quote": "compared to roughly $10 billion on procurement software",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "bdd4f2710267a4b459f387c75093a92bf49e3b1109474e9757cd2f5174a4b3e5"
             }
           ]
         }
@@ -1297,7 +1477,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Leading organizations are transitioning to AI augmented procurement operating models, and they are doing so quickly. Agentic AI systems for procurement, such as Lio, will be pivotal in that shift. What sets Lio apart is the level of innovation and creativity its founder has applied to solving one of the hardest challenges in this space: serving the enterprise customer."
+              "quote": "Leading organizations are transitioning to AI augmented procurement operating models, and they are doing so quickly. Agentic AI systems for procurement, such as Lio, will be pivotal in that shift. What sets Lio apart is the level of innovation and creativity its founder has applied to solving one of the hardest challenges in this space: serving the enterprise customer.",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "b82f33d1fcf6f1b0c337836fc060a06286788ed9f9d65f56e44f17d97abdf15d"
             }
           ]
         },
@@ -1307,7 +1489,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05956935e1d4419f",
-              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler. The rapid progress and measurable outcomes underscore the transformative potential of agentic AI."
+              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler. The rapid progress and measurable outcomes underscore the transformative potential of agentic AI.",
+              "source_content_hash": "86de37b74484f02a",
+              "quote_hash": "5e2c43925cdf9d31f3a072ccf6c151794e4b9c9ff4362484ad7486737fbf0bbb"
             }
           ]
         }
@@ -1328,7 +1512,23 @@
           "采购流程涉及大量非结构化数据和例外情况，AI智能体在处理边缘案例时的可靠性尚未在大规模、多行业场景中得到充分验证，可能限制其从当前数十家客户向更广泛市场扩展的速度。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业服务"
+        "sector": "企业服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“AI智能体自主执行复杂企业工作流”这一范式转变在采购领域的落地能力。本轮融资的估值支撑来自已验证的业务信号：Lio已管理数十亿美元企业支出，客户包括慕尼黑再保险、博泽、诺维信等全球2000强企业，并报告了超过95%的采用率、85%的手动工作减少和100%的客户留存率。这些指标表明产品已找到PMF，且客户粘性极强。投资判断的证据边界限于已披露的客户数量和运营指标，尚未涉及具体收入规模或利润率。",
+          "evidence_signals": [
+            "已管理数十亿美元企业支出",
+            "客户包括慕尼黑再保险、博泽、诺维信等全球2000强和财富500强企业",
+            "客户采用率超过95%",
+            "客户留存率100%",
+            "减少85%手动工作",
+            "实现10%增量成本节约",
+            "某全球一级工业制造商6个月内自动化75%外包采购工作"
+          ],
+          "risks": [
+            "采购流程涉及大量非结构化数据和例外情况，AI智能体在处理边缘案例时的可靠性尚未在大规模、多行业场景中得到充分验证，可能限制其从当前数十家客户向更广泛市场扩展的速度。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1336,233 +1536,119 @@
           "target_kind": "product",
           "research_name": "Lio AI Procurement Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Lio operates an AI-native platform with agentic infrastructure that completes the entire procurement process."
-            },
-            {
-              "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Vladimir Keil",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Vladimir Keil, the company’s co-founder and CEO"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Lukas Heinzmann",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "He teamed up with friends Lukas Heinzmann and Till Wagner and in 2023, the trio launched Lio"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Till Wagner",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "He teamed up with friends Lukas Heinzmann and Till Wagner and in 2023, the trio launched Lio"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Lio announced a $30 million Series A in a round led by Andreessen Horowitz."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SV Angels",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "SV Angels, Harry Stebbings, and YC also partook in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Harry Stebbings",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "SV Angels, Harry Stebbings, and YC also partook in the round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "SV Angels, Harry Stebbings, and YC also partook in the round (Lio was part of the Spring ’23 batch)."
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Heliad",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-17700741cf145aa3",
-              "quote": "We’re proud to have been the first European institutional investor to have joined the ride just months after inception."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Munich Re",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Customers include Munich Re, the world’s largest reinsurer"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Brose",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Brose, among the largest family-owned automotive suppliers globally"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Novozymes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05956935e1d4419f",
-              "quote": "Novozymes, a global leader in biological solutions"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Schaeffler",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05956935e1d4419f",
-              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Walmart",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05956935e1d4419f",
-              "quote": "said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "SAP Ariba",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Keil considers Lio’s competitors to be legacy procurement software vendors (such as SAP Ariba and Oracle)"
-            },
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Every previous generation of procurement technology was built on the same assumption, that humans will do the work and technology will help them do it faster"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Oracle",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Keil considers Lio’s competitors to be legacy procurement software vendors (such as SAP Ariba and Oracle)"
-            },
-            {
-              "source_id": "FISRC-62082ad8f88f3c29",
-              "quote": "Every previous generation of procurement technology was built on the same assumption, that humans will do the work and technology will help them do it faster"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Business Process Outsourcing (BPO) providers",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05956935e1d4419f",
-              "quote": "forcing teams to scale headcount or outsource work, often at up to 20x the cost of software"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1624,13 +1710,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:33:34.742Z"
+      "published_at": "2026-07-26T14:33:34.742Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Lio AI Procurement Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Lukas Heinzmann",
+            "Till Wagner",
+            "Vladimir Keil"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2083b9eda52a3f76"
+      ],
+      "aggregation": {
+        "key": "EN-ef2bee7868007cd4|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-97486ca269f0dadf",
       "triggered_by_event_id": "EV-917a390341b9fce6",
       "as_of_date": "2026-06-19",
@@ -1648,7 +1765,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-be2cfb1d0da46098",
-                "quote": "said Dos Baha, Founder and CEO of Nace.AI"
+                "quote": "said Dos Baha, Founder and CEO of Nace.AI",
+                "source_content_hash": "0d0424e2d2d31b08",
+                "quote_hash": "175dc5d8fd30001eb986776c9402765b976255c20b0b076784c6283b85145705"
               }
             ],
             "entity_id": null
@@ -1659,7 +1778,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-586e2bfe4b307698",
-                "quote": "said CTO Zhanibek Datbayev"
+                "quote": "said CTO Zhanibek Datbayev",
+                "source_content_hash": "d88c084445528e85",
+                "quote_hash": "079230abfb22446d18f2ea7b1e0d9a766529bbe4810f10b6382b1097c4e0c5cd"
               }
             ],
             "entity_id": null
@@ -1670,7 +1791,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a9f1e4797cadc994",
-                "quote": "Dos Baha, Zhanibek Datbayev, Sudha Valluru"
+                "quote": "Dos Baha, Zhanibek Datbayev, Sudha Valluru",
+                "source_content_hash": "4a2effa07de9aaa4",
+                "quote_hash": "52f0302ed6c4ee53318a711ce1cfc0161a13e09c015796b4fc92235035fc8c01"
               }
             ],
             "entity_id": null
@@ -1684,11 +1807,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-be2cfb1d0da46098",
-            "quote": "Nace.AI is an applied AI company building a specialized intelligence powered by Metamodel designed to run companies. Starting with finance, audit, and compliance, its systems automate complex knowledge work by turning massive datasets into precise, explainable outputs."
+            "quote": "Nace.AI is an applied AI company building a specialized intelligence powered by Metamodel designed to run companies. Starting with finance, audit, and compliance, its systems automate complex knowledge work by turning massive datasets into precise, explainable outputs.",
+            "source_content_hash": "0d0424e2d2d31b08",
+            "quote_hash": "1739e1b410fd912a73a9665a8828f55642f32f7a8e3e765325ba83a7a1375971"
           },
           {
             "source_id": "FISRC-f1739fb26c8fef2d",
-            "quote": "Nace.AI a Palo Alto, CA-based provider of a metamodel that autonomously improves enterprise workflows"
+            "quote": "Nace.AI a Palo Alto, CA-based provider of a metamodel that autonomously improves enterprise workflows",
+            "source_content_hash": "9e86d0665c07fb19",
+            "quote_hash": "8b3bfc9a73c498f39444af35530064826edc9c93e7d00aecd6e63b57a84991d3"
           }
         ]
       },
@@ -1704,7 +1831,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-be2cfb1d0da46098",
-                "quote": "led by Walden Catalyst with participation from General Catalyst and a group of leading institutional and angel investors"
+                "quote": "led by Walden Catalyst with participation from General Catalyst and a group of leading institutional and angel investors",
+                "source_content_hash": "0d0424e2d2d31b08",
+                "quote_hash": "4a47dab39b27c3e6e5452ac9dd4576cdc93f3c35e387601d73a2f1be1aa3e08b"
               }
             ],
             "entity_id": null
@@ -1715,7 +1844,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-be2cfb1d0da46098",
-                "quote": "with participation from General Catalyst"
+                "quote": "with participation from General Catalyst",
+                "source_content_hash": "0d0424e2d2d31b08",
+                "quote_hash": "87bf9a8cee415ae8aa119075ce53dc29890588ef9e8c4f58553ba01180d40993"
               }
             ],
             "entity_id": null
@@ -1724,7 +1855,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-be2cfb1d0da46098",
-            "quote": "Nace.AI today announced it has raised $21.5 million in seed funding, led by Walden Catalyst with participation from General Catalyst and a group of leading institutional and angel investors."
+            "quote": "Nace.AI today announced it has raised $21.5 million in seed funding, led by Walden Catalyst with participation from General Catalyst and a group of leading institutional and angel investors.",
+            "source_content_hash": "0d0424e2d2d31b08",
+            "quote_hash": "d112c7216399402f9254d82b1dbb0400e7721cccfba8ae2423554ef6d450cbc7"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-917a390341b9fce6",
+            "round_original": "种子轮",
+            "amount": "$21.5 million",
+            "announced_at": "2026-05-05",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-be2cfb1d0da46098",
+                "quote": "Nace.AI today announced it has raised $21.5 million in seed funding, led by Walden Catalyst with participation from General Catalyst and a group of leading institutional and angel investors.",
+                "source_content_hash": "0d0424e2d2d31b08",
+                "quote_hash": "d112c7216399402f9254d82b1dbb0400e7721cccfba8ae2423554ef6d450cbc7"
+              }
+            ]
           }
         ]
       },
@@ -1743,11 +1895,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a9f1e4797cadc994",
-              "quote": "NAVI (Nace Verification Intelligence), an AI agent solution for audit and compliance"
+              "quote": "NAVI (Nace Verification Intelligence), an AI agent solution for audit and compliance",
+              "source_content_hash": "4a2effa07de9aaa4",
+              "quote_hash": "d58ec7d7a79089eefbc535ef89bc93c45d715f43a230951ce219400f5a1d7f0f"
             },
             {
               "source_id": "FISRC-a9f1e4797cadc994",
-              "quote": "NAVI's small models process financial data, transactions, loan applications, billing, and workflows in real time—spotting risks, ensuring policy adherence, and providing clear, actionable insights."
+              "quote": "NAVI's small models process financial data, transactions, loan applications, billing, and workflows in real time—spotting risks, ensuring policy adherence, and providing clear, actionable insights.",
+              "source_content_hash": "4a2effa07de9aaa4",
+              "quote_hash": "ba868bb123991849c886a43d559eda71809913d34d7c73cfe9edc14ab422cadd"
             }
           ],
           "entity_id": null
@@ -1765,11 +1921,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-53e2493b475f98d7",
-              "quote": "Deploy specialized AI macros to automate SOX compliance, enforce contract governance, and eliminate manual audit fatigue."
+              "quote": "Deploy specialized AI macros to automate SOX compliance, enforce contract governance, and eliminate manual audit fatigue.",
+              "source_content_hash": "8c87850f40660016",
+              "quote_hash": "e0b072ada8fdeed2ed4ab339bc8caf38597a7443ad128f079839c876a527b390"
             },
             {
               "source_id": "FISRC-53e2493b475f98d7",
-              "quote": "these agentic macros connect to ERPs and databases to audit 100% of SOX data in minutes"
+              "quote": "these agentic macros connect to ERPs and databases to audit 100% of SOX data in minutes",
+              "source_content_hash": "8c87850f40660016",
+              "quote_hash": "4169862003f5f5f0ed3639cf6266cc7fa47d4cfc297d487f5b0eaa1bf88c93f5"
             }
           ],
           "entity_id": null
@@ -1785,7 +1945,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a9f1e4797cadc994",
-              "quote": "Metamodel 1 achieved a score of 0.8709, outperforming GPT-4o (0.7758), DeepSeek-V3 (0.5413), and o3-mini (0.6110)."
+              "quote": "Metamodel 1 achieved a score of 0.8709, outperforming GPT-4o (0.7758), DeepSeek-V3 (0.5413), and o3-mini (0.6110).",
+              "source_content_hash": "4a2effa07de9aaa4",
+              "quote_hash": "04287031b0c28034c0c62029e8ae6d264f426c1982dede6439045f38f1c4c42a"
             }
           ]
         },
@@ -1796,7 +1958,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-37c96dbde20ab189",
-              "quote": "NEMA CPA agent (ours) 90.20"
+              "quote": "NEMA CPA agent (ours) 90.20",
+              "source_content_hash": "f96edf622d831e9b",
+              "quote_hash": "f071d2a885f675815cb6f93d80eac3d023a98a065900bce03b5994d6f72a786e"
             }
           ]
         },
@@ -1807,7 +1971,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-586e2bfe4b307698",
-              "quote": "using the solution can reduce task completion time by up to 20 times"
+              "quote": "using the solution can reduce task completion time by up to 20 times",
+              "source_content_hash": "d88c084445528e85",
+              "quote_hash": "f6b6b11b694b5afc1bd1b14c9c01e30a757d0a830c672f0e7fcdb76b8779ef0c"
             }
           ]
         }
@@ -1827,7 +1993,21 @@
           "产品仍处于研究预览阶段，尚无公开的付费客户数量或经常性收入数据，商业化验证不足"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业AI、审计与合规自动化"
+        "sector": "企业AI、审计与合规自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“专业小型模型+人类最终验证”能否重构高价值知识工作的经济模型。Nace.AI的MetaModel架构通过将企业政策与流程转化为任务专用的小型语言模型，在审计、合规等高风险场景中提供可解释的精确输出，并以“90%自主执行+10%专家验证”的模式替代传统的按小时计费模式。已验证信号包括：MetaModel 1在指令遵循任务上以0.8709分超越GPT-4o等大模型；NEMA生成的CPA代理准确率达90.20%，接近OpenAI o1；产品宣称可将任务完成时间缩短最多20倍。但当前判断的证据边界明显：所有性能数据均来自公司自身研究发布，缺乏独立第三方基准测试或客户大规模部署的实证；产品仍处于研究预览阶段，尚未披露付费客户数量或经常性收入。",
+          "evidence_signals": [
+            "MetaModel 1在指令遵循基准测试中得分0.8709，超越GPT-4o、DeepSeek-V3和o3-mini",
+            "NEMA元代理生成的CPA考试代理准确率达90.20%，接近OpenAI o1的91.08%",
+            "产品宣称可将审计等任务完成时间缩短最多20倍",
+            "获得Walden Catalyst和General Catalyst等机构投资"
+          ],
+          "risks": [
+            "所有性能基准测试均来自公司自身研究发布，缺乏独立第三方验证，存在自报偏差风险",
+            "产品仍处于研究预览阶段，尚无公开的付费客户数量或经常性收入数据，商业化验证不足"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1835,99 +2015,49 @@
           "target_kind": "product",
           "research_name": "NAVI (Nace Verification Intelligence)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a9f1e4797cadc994",
-              "quote": "NAVI (Nace Verification Intelligence), an AI agent solution for audit and compliance"
-            },
-            {
-              "source_id": "FISRC-a9f1e4797cadc994",
-              "quote": "NAVI's small models process financial data, transactions, loan applications, billing, and workflows in real time—spotting risks, ensuring policy adherence, and providing clear, actionable insights."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Agentic SOX Controls Testing",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-53e2493b475f98d7",
-              "quote": "Deploy specialized AI macros to automate SOX compliance, enforce contract governance, and eliminate manual audit fatigue."
-            },
-            {
-              "source_id": "FISRC-53e2493b475f98d7",
-              "quote": "these agentic macros connect to ERPs and databases to audit 100% of SOX data in minutes"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dos Baha",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-be2cfb1d0da46098",
-              "quote": "said Dos Baha, Founder and CEO of Nace.AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Zhanibek Datbayev",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-586e2bfe4b307698",
-              "quote": "said CTO Zhanibek Datbayev"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sudha Valluru",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a9f1e4797cadc994",
-              "quote": "Dos Baha, Zhanibek Datbayev, Sudha Valluru"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Walden Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-be2cfb1d0da46098",
-              "quote": "led by Walden Catalyst with participation from General Catalyst and a group of leading institutional and angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-be2cfb1d0da46098",
-              "quote": "with participation from General Catalyst"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2025,10 +2155,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:33:13.107Z"
+      "published_at": "2026-07-26T14:33:13.107Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Agentic SOX Controls Testing",
+            "NAVI (Nace Verification Intelligence)"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Dos Baha",
+            "Sudha Valluru",
+            "Zhanibek Datbayev"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-917a390341b9fce6"
+      ],
+      "aggregation": {
+        "key": "EN-e781481ff5ffe530|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

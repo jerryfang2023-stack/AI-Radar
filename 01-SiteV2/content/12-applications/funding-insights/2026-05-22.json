@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-05-22",
     "generated_at": "2026-07-26T15:07:33.332Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 5,
       "auto_published": 5,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f4b4741489974d88",
       "triggered_by_event_id": "EV-59882383f82f215d",
       "as_of_date": "2026-05-22",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3a68637da007d3e2",
-                "quote": "said Fabrizio Del Maffeo, CEO and co-founder of Axelera AI"
+                "quote": "said Fabrizio Del Maffeo, CEO and co-founder of Axelera AI",
+                "source_content_hash": "3611daa7e730f6a044f6222d6cc03f608c607044301408f32e0c276cfaaddf1c",
+                "quote_hash": "5e5a6fe75df1d8cd947afd81c30f44c95fcc5b7943b7e2d757e23b44c94c21a4"
               }
             ],
             "entity_id": null
@@ -49,16 +52,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-3a68637da007d3e2",
-            "quote": "Axelera AI, the European leader in AI acceleration hardware"
+            "quote": "Axelera AI, the European leader in AI acceleration hardware",
+            "source_content_hash": "3611daa7e730f6a044f6222d6cc03f608c607044301408f32e0c276cfaaddf1c",
+            "quote_hash": "00ab88c25b78c10ad040ec69eea04598c68d69b4521ae87cbf8f832f11a932de"
           },
           {
             "source_id": "FISRC-6f1272d694246329",
-            "quote": "Axelera, based in Eindhoven in the Netherlands, is one of the few companies in Europe that make specialised computer chips for AI applications."
+            "quote": "Axelera, based in Eindhoven in the Netherlands, is one of the few companies in Europe that make specialised computer chips for AI applications.",
+            "source_content_hash": "d1a88dde81a4f0d1",
+            "quote_hash": "4fc75e78b39b2bb8547993b414799c5512364169d6c3ef12d676bb690716c548"
           }
         ]
       },
       "financing": {
-        "round": "latest funding round",
+        "round": "轮次未披露",
         "amount": "$250 million",
         "total_raised": "more than $450 million",
         "announced_at": "2026-02-24",
@@ -69,7 +76,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f1272d694246329",
-                "quote": "funding round led by Innovation Industries"
+                "quote": "funding round led by Innovation Industries",
+                "source_content_hash": "d1a88dde81a4f0d1",
+                "quote_hash": "c123597dbdaf1d4d19e9dd4ce9d8cbee89fb1a9eea6a544695ba7e516c063989"
               }
             ],
             "entity_id": null
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f1272d694246329",
-                "quote": "included BlackRock and SiteGround Capital as new investors"
+                "quote": "included BlackRock and SiteGround Capital as new investors",
+                "source_content_hash": "d1a88dde81a4f0d1",
+                "quote_hash": "caad02846f5d4ef4217968d470717a75acd8fb1c69ef69cab662153622955a93"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f1272d694246329",
-                "quote": "included BlackRock and SiteGround Capital as new investors"
+                "quote": "included BlackRock and SiteGround Capital as new investors",
+                "source_content_hash": "d1a88dde81a4f0d1",
+                "quote_hash": "caad02846f5d4ef4217968d470717a75acd8fb1c69ef69cab662153622955a93"
               }
             ],
             "entity_id": null
@@ -100,11 +113,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6f1272d694246329",
-            "quote": "Axelera AI has secured $250 million in a funding round led by Innovation Industries"
+            "quote": "Axelera AI has secured $250 million in a funding round led by Innovation Industries",
+            "source_content_hash": "d1a88dde81a4f0d1",
+            "quote_hash": "8229ae556c5ca56b77310817ee2bf1eed0cc5c78c7d52fa17056c8482a5d2e76"
           },
           {
             "source_id": "FISRC-3a68637da007d3e2",
-            "quote": "Axelera AI has attracted over $450 million in equity, grants and venture debt since incorporating in July 2021."
+            "quote": "Axelera AI has attracted over $450 million in equity, grants and venture debt since incorporating in July 2021.",
+            "source_content_hash": "3611daa7e730f6a044f6222d6cc03f608c607044301408f32e0c276cfaaddf1c",
+            "quote_hash": "2694c666b9088ba3631131ae3f9e932cd073e2d0d1fbfaa7436df09874e6deb6"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "latest funding round",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-59882383f82f215d",
+            "round_original": "latest funding round",
+            "amount": "$250 million",
+            "announced_at": "2026-02-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f1272d694246329",
+                "quote": "Axelera AI has secured $250 million in a funding round led by Innovation Industries",
+                "source_content_hash": "d1a88dde81a4f0d1",
+                "quote_hash": "8229ae556c5ca56b77310817ee2bf1eed0cc5c78c7d52fa17056c8482a5d2e76"
+              },
+              {
+                "source_id": "FISRC-3a68637da007d3e2",
+                "quote": "Axelera AI has attracted over $450 million in equity, grants and venture debt since incorporating in July 2021.",
+                "source_content_hash": "3611daa7e730f6a044f6222d6cc03f608c607044301408f32e0c276cfaaddf1c",
+                "quote_hash": "2694c666b9088ba3631131ae3f9e932cd073e2d0d1fbfaa7436df09874e6deb6"
+              }
+            ]
           }
         ]
       },
@@ -119,11 +161,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f1272d694246329",
-              "quote": "expand manufacturing of its \"Europa\" chip, which it plans to launch before June"
+              "quote": "expand manufacturing of its \"Europa\" chip, which it plans to launch before June",
+              "source_content_hash": "d1a88dde81a4f0d1",
+              "quote_hash": "4c433959e557bcd49c6168b85fc07e764795b486e36cfc46be24a1e05422e38f"
             },
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "Europa® at 629 TOPs"
+              "quote": "Europa® at 629 TOPs",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "f7f3f8e188ec6f4e5900c15b91d401749af28715b9c7dd61953c49ca4c83eed9"
             }
           ],
           "entity_id": null
@@ -140,11 +186,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "With Metis® AIPUs starting at 214 TOPs"
+              "quote": "With Metis® AIPUs starting at 214 TOPs",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "626ae95b25e9f65a7f202e4bfb4308a96bda349994cb5e0f3bd6d6071be18f68"
             },
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
+              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost.",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "3f36ba01d66ab6e709619ea1c598c6c1435b936ac7989b171fb52a15e955c344"
             }
           ],
           "entity_id": null
@@ -157,7 +207,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f1272d694246329",
-              "quote": "develop an advanced chip dubbed \"Titania\" for use in supercomputing centres - also referred to as AI factories. That chip is expected in 2027."
+              "quote": "develop an advanced chip dubbed \"Titania\" for use in supercomputing centres - also referred to as AI factories. That chip is expected in 2027.",
+              "source_content_hash": "d1a88dde81a4f0d1",
+              "quote_hash": "bce3ef253e44d05c7eaad553f2b93528aad85c09d43d0c24178f1d60697596df"
             }
           ],
           "entity_id": null
@@ -171,9 +223,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "By combining Axelera AI’s cutting-edge neural processing technology with Advantech’s system design expertise and global deployment capabilities, we are enabling customers to deploy cutting-edge AI solutions with greater speed and scalability."
+              "quote": "By combining Axelera AI’s cutting-edge neural processing technology with Advantech’s system design expertise and global deployment capabilities, we are enabling customers to deploy cutting-edge AI solutions with greater speed and scalability.",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "6b0a307c511f0bc7c58c49a06324e41f5f12b3503e14c8dd7e762f12050384ba"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "European Space Agency (ESA)",
@@ -182,9 +237,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "We chose Axelera AI because of its sovereign technology and long-term availability, bringing fantastic capabilities to the ESA missions."
+              "quote": "We chose Axelera AI because of its sovereign technology and long-term availability, bringing fantastic capabilities to the ESA missions.",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "8b6f4823592e769e382c8bf94965eda042f2a2af1ff7aeed117e29395a5196f6"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Telefonica",
@@ -193,9 +251,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "Advancing energy-efficient, inference-focused AI technologies developed in Europe is essential to meeting the rapidly growing demand for high-performance, sustainable and resilient AI deployments. These innovations will permit Telefonica to enable best-in-class AI solutions that integrate seamlessly with our partners’ platforms from around the globe."
+              "quote": "Advancing energy-efficient, inference-focused AI technologies developed in Europe is essential to meeting the rapidly growing demand for high-performance, sustainable and resilient AI deployments. These innovations will permit Telefonica to enable best-in-class AI solutions that integrate seamlessly with our partners’ platforms from around the globe.",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "145f333214b9e1f244fdcf28004ee58e0e48dc797d933311247633277f6da702"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "2CRSI",
@@ -204,9 +265,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "Ensuring a sovereign, predictable and Europe-based AI supply chain is essential for building resilient edge to HPC systems. Our collaboration with Axelera strengthens our ability to secure long-term availability across our portfolio, from embedded platforms to large-scale datacenter and HPC deployments"
+              "quote": "Ensuring a sovereign, predictable and Europe-based AI supply chain is essential for building resilient edge to HPC systems. Our collaboration with Axelera strengthens our ability to secure long-term availability across our portfolio, from embedded platforms to large-scale datacenter and HPC deployments",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "111c5047f8b0bb7dd7d6878a788097e497308b879303239c46339edf94d30388"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "DroneStar AI",
@@ -215,9 +279,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "How DroneStar AI Scaled One Operator into a Whole Pack"
+              "quote": "How DroneStar AI Scaled One Operator into a Whole Pack",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "74b555666783e07272b60f29703298db793442c00e857f88f4d421e1a6d44836"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -229,7 +296,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f1272d694246329",
-              "quote": "Since its founding in 2021, it has raised more than $450 million."
+              "quote": "Since its founding in 2021, it has raised more than $450 million.",
+              "source_content_hash": "d1a88dde81a4f0d1",
+              "quote_hash": "05417b578d4e52722052ea1c044740bbe14a686b7a81c7d314d6d899152ffa5c"
             }
           ]
         },
@@ -240,7 +309,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f1272d694246329",
-              "quote": "Axelera AI has secured $250 million in a funding round"
+              "quote": "Axelera AI has secured $250 million in a funding round",
+              "source_content_hash": "d1a88dde81a4f0d1",
+              "quote_hash": "f872932c6464b66e9d6b6becc578b500b96b3644da8e75c4f85a13b553dd0f3e"
             }
           ]
         },
@@ -251,7 +322,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f1272d694246329",
-              "quote": "Axelera received a $66 million grant in March 2025"
+              "quote": "Axelera received a $66 million grant in March 2025",
+              "source_content_hash": "d1a88dde81a4f0d1",
+              "quote_hash": "58b0a442faf904f2e15a6e64ce8c61af98faff4ebf663baa219efb8e484f9e74"
             }
           ]
         },
@@ -262,7 +335,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
+              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost.",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "3f36ba01d66ab6e709619ea1c598c6c1435b936ac7989b171fb52a15e955c344"
             }
           ]
         },
@@ -273,7 +348,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "99.9% Relative Accuracy"
+              "quote": "99.9% Relative Accuracy",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "a246a287986c9bb790169813dcab3a0545784ae2652a21680cfb4c357c92bc64"
             }
           ]
         },
@@ -284,7 +361,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "Europa® at 629 TOPs"
+              "quote": "Europa® at 629 TOPs",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "f7f3f8e188ec6f4e5900c15b91d401749af28715b9c7dd61953c49ca4c83eed9"
             }
           ]
         },
@@ -295,7 +374,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-243259df980d4bea",
-              "quote": "With Metis® AIPUs starting at 214 TOPs"
+              "quote": "With Metis® AIPUs starting at 214 TOPs",
+              "source_content_hash": "0a2a1388b6859e05",
+              "quote_hash": "626ae95b25e9f65a7f202e4bfb4308a96bda349994cb5e0f3bd6d6071be18f68"
             }
           ]
         }
@@ -312,7 +393,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3a68637da007d3e2",
-                "quote": "Axelera’s approach to AI acceleration—bringing inference to the edge where data is created—directly addresses two of the most pressing challenges facing the AI industry: the unsustainable energy demands of centralized data centers and growing privacy concerns."
+                "quote": "Axelera’s approach to AI acceleration—bringing inference to the edge where data is created—directly addresses two of the most pressing challenges facing the AI industry: the unsustainable energy demands of centralized data centers and growing privacy concerns.",
+                "source_content_hash": "3611daa7e730f6a044f6222d6cc03f608c607044301408f32e0c276cfaaddf1c",
+                "quote_hash": "917da8c226edcea522f70d18a85d2666f081b11f19efcb9f60e6335f2aa4bed0"
               }
             ]
           }
@@ -329,7 +412,21 @@
           "Europa芯片计划于2026年6月前推出，Titania芯片预计2027年推出，产品路线图的按时交付是维持增长势头的关键。"
         ],
         "related_direction_id": "",
-        "sector": "AI半导体/边缘AI推理芯片"
+        "sector": "AI半导体/边缘AI推理芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI推理从云端向边缘迁移的确定性趋势，以及由此带来的对高能效、低成本专用推理芯片的刚性需求。本轮2.5亿美元融资及累计超4.5亿美元的融资额，验证了Axelera在边缘AI推理芯片领域的技术路线（边缘优先架构）和商业执行力（超500家全球客户）已获得产业资本和金融资本的共同认可。BlackRock的参与标志着金融市场已将解决AI基础设施的能耗和散热限制视为AI持续增长的关键前提。",
+          "evidence_signals": [
+            "已出货至全球超过500家客户，覆盖国防、公共安全、工业制造、零售、农业科技、机器人和安防等行业。",
+            "与台积电和三星建立规模化制造合作伙伴关系。",
+            "获得欧盟6600万美元资助，用于开发面向超级计算中心的Titania芯片。",
+            "拥有包括Advantech、ESA、Telefonica、2CRSI在内的标杆客户和合作伙伴。"
+          ],
+          "risks": [
+            "边缘AI半导体市场在过去三年吸引了超600亿美元风险投资，市场碎片化严重，竞争激烈，Axelera需持续证明其差异化优势。",
+            "Europa芯片计划于2026年6月前推出，Titania芯片预计2027年推出，产品路线图的按时交付是维持增长势头的关键。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -337,164 +434,84 @@
           "target_kind": "product",
           "research_name": "Europa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f1272d694246329",
-              "quote": "expand manufacturing of its \"Europa\" chip, which it plans to launch before June"
-            },
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "Europa® at 629 TOPs"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Metis",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "With Metis® AIPUs starting at 214 TOPs"
-            },
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Titania",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f1272d694246329",
-              "quote": "develop an advanced chip dubbed \"Titania\" for use in supercomputing centres - also referred to as AI factories. That chip is expected in 2027."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Fabrizio Del Maffeo",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3a68637da007d3e2",
-              "quote": "said Fabrizio Del Maffeo, CEO and co-founder of Axelera AI"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Innovation Industries",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f1272d694246329",
-              "quote": "funding round led by Innovation Industries"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BlackRock",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f1272d694246329",
-              "quote": "included BlackRock and SiteGround Capital as new investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SiteGround Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f1272d694246329",
-              "quote": "included BlackRock and SiteGround Capital as new investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Advantech",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "By combining Axelera AI’s cutting-edge neural processing technology with Advantech’s system design expertise and global deployment capabilities, we are enabling customers to deploy cutting-edge AI solutions with greater speed and scalability."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "European Space Agency (ESA)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "We chose Axelera AI because of its sovereign technology and long-term availability, bringing fantastic capabilities to the ESA missions."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Telefonica",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "Advancing energy-efficient, inference-focused AI technologies developed in Europe is essential to meeting the rapidly growing demand for high-performance, sustainable and resilient AI deployments. These innovations will permit Telefonica to enable best-in-class AI solutions that integrate seamlessly with our partners’ platforms from around the globe."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "2CRSI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "Ensuring a sovereign, predictable and Europe-based AI supply chain is essential for building resilient edge to HPC systems. Our collaboration with Axelera strengthens our ability to secure long-term availability across our portfolio, from embedded platforms to large-scale datacenter and HPC deployments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "DroneStar AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-243259df980d4bea",
-              "quote": "How DroneStar AI Scaled One Operator into a Whole Pack"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -557,13 +574,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:07:33.248Z"
+      "published_at": "2026-07-26T15:07:33.248Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Europa",
+            "Metis",
+            "Titania"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Fabrizio Del Maffeo"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-59882383f82f215d"
+      ],
+      "aggregation": {
+        "key": "EN-883be863cc6562bb|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-66cbf5e15d2306ff",
       "triggered_by_event_id": "EV-c5643983538c6513",
       "as_of_date": "2026-05-22",
@@ -581,7 +629,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "Sri Viswanath, Founder and CEO of Sycamore"
+                "quote": "Sri Viswanath, Founder and CEO of Sycamore",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "bc8ea2c2e35c1243b921081c2bb65d377a0d8b7c4b558038393bd8ed4b30972a"
               }
             ],
             "entity_id": null
@@ -595,11 +645,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-c33fa31a6f27d4e6",
-            "quote": "Sycamore is headquartered in Palo Alto, California"
+            "quote": "Sycamore is headquartered in Palo Alto, California",
+            "source_content_hash": "55c14769a2ec5e77",
+            "quote_hash": "890c8928bd833390347ea33169d394982b2fd9ded1156ae70f41951b4c448155"
           },
           {
             "source_id": "FISRC-2cf361e0ef2b97bf",
-            "quote": "Sycamore, a Palo Alto, CA–based company building an operating system for autonomous enterprise AI"
+            "quote": "Sycamore, a Palo Alto, CA–based company building an operating system for autonomous enterprise AI",
+            "source_content_hash": "c746ca70f49c836a",
+            "quote_hash": "a2ad22190128d687f2a348d4120840469f9c0276a3bda792e414932be409bd4e"
           }
         ]
       },
@@ -615,7 +669,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "The round was led by Coatue and Lightspeed Venture Partners"
+                "quote": "The round was led by Coatue and Lightspeed Venture Partners",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "a82aa83a04c0ba6ee32dd4282665ad9712ef094f993092c5a716868ae9f13db4"
               }
             ],
             "entity_id": null
@@ -626,7 +682,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "The round was led by Coatue and Lightspeed Venture Partners"
+                "quote": "The round was led by Coatue and Lightspeed Venture Partners",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "a82aa83a04c0ba6ee32dd4282665ad9712ef094f993092c5a716868ae9f13db4"
               }
             ],
             "entity_id": null
@@ -637,7 +695,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
               }
             ],
             "entity_id": null
@@ -648,7 +708,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
               }
             ],
             "entity_id": null
@@ -659,7 +721,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
               }
             ],
             "entity_id": null
@@ -670,7 +734,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
               }
             ],
             "entity_id": null
@@ -681,7 +747,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
               }
             ],
             "entity_id": null
@@ -692,7 +760,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-c33fa31a6f27d4e6",
-                "quote": "Notable angel investors include: Lip-Bu Tan (CEO of Intel)"
+                "quote": "Notable angel investors include: Lip-Bu Tan (CEO of Intel)",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "9ce6d4b950f4bcb98fef32729531eed60a911f5747baf18d9a5c6fb037106478"
               }
             ],
             "entity_id": null
@@ -701,11 +771,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-c33fa31a6f27d4e6",
-            "quote": "Sycamore today announced a $65 million seed round"
+            "quote": "Sycamore today announced a $65 million seed round",
+            "source_content_hash": "55c14769a2ec5e77",
+            "quote_hash": "73c1ce5e4d9679309c745c45b4a6d7c1804c5a5cfb7ca39afecfcb7366c81763"
           },
           {
             "source_id": "FISRC-40c1517d51eab3b6",
-            "quote": "Sycamore Labs has announced a $65 million seed funding round"
+            "quote": "Sycamore Labs has announced a $65 million seed funding round",
+            "source_content_hash": "4f41919dc3540c2a",
+            "quote_hash": "3dd0af959065dda28c2b22c56c7dff7eff669da2c1255f884181bbf05f948fe9"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c5643983538c6513",
+            "round_original": "种子轮",
+            "amount": "$65,000,000",
+            "announced_at": "2026-03-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c33fa31a6f27d4e6",
+                "quote": "Sycamore today announced a $65 million seed round",
+                "source_content_hash": "55c14769a2ec5e77",
+                "quote_hash": "73c1ce5e4d9679309c745c45b4a6d7c1804c5a5cfb7ca39afecfcb7366c81763"
+              },
+              {
+                "source_id": "FISRC-40c1517d51eab3b6",
+                "quote": "Sycamore Labs has announced a $65 million seed funding round",
+                "source_content_hash": "4f41919dc3540c2a",
+                "quote_hash": "3dd0af959065dda28c2b22c56c7dff7eff669da2c1255f884181bbf05f948fe9"
+              }
+            ]
           }
         ]
       },
@@ -723,15 +822,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Sycamore provides a full lifecycle platform for enterprise AI: discover, build, deploy, observe, and evolve."
+              "quote": "Sycamore provides a full lifecycle platform for enterprise AI: discover, build, deploy, observe, and evolve.",
+              "source_content_hash": "55c14769a2ec5e77",
+              "quote_hash": "aa88b7b104e9577a64470128b34ef296e520ecf229a9db2c276a90c477a11efb"
             },
             {
               "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Agents earn autonomy through demonstrated reliability, progressing from observation to action. Every operation is isolated, auditable, and governed from the start."
+              "quote": "Agents earn autonomy through demonstrated reliability, progressing from observation to action. Every operation is isolated, auditable, and governed from the start.",
+              "source_content_hash": "55c14769a2ec5e77",
+              "quote_hash": "f2d79432d007cc6281099673538bc022907d4115505b0cbdb6a60a2d7999a2a6"
             },
             {
               "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Users describe intent in natural language. Sycamore generates production-ready systems, including applications, integrations, and agents, tailored to the enterprise environment."
+              "quote": "Users describe intent in natural language. Sycamore generates production-ready systems, including applications, integrations, and agents, tailored to the enterprise environment.",
+              "source_content_hash": "55c14769a2ec5e77",
+              "quote_hash": "c1864a8aff681626dcd54fcf9de83e7c7560a02848be93c1dc0b69c416cbac27"
             }
           ],
           "entity_id": null
@@ -745,9 +850,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Sycamore is working with Fortune 500 companies to deploy autonomous AI agents."
+              "quote": "Sycamore is working with Fortune 500 companies to deploy autonomous AI agents.",
+              "source_content_hash": "55c14769a2ec5e77",
+              "quote_hash": "f7860440c191d7cc407edb04bebe917ee0fdd86301d284653ac6fe475dcbc253"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -761,9 +869,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-54f49fba866ac721",
-              "quote": "nascent startups raising even bigger rounds, like OpenAI-backed Isara, which raised $94 million"
+              "quote": "nascent startups raising even bigger rounds, like OpenAI-backed Isara, which raised $94 million",
+              "source_content_hash": "63376f8baf3c8192",
+              "quote_hash": "9b936a67edb35d2e23f14dd604bc5ac1a01fded987b5db69659b858a2a248151"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Airia",
@@ -775,9 +886,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-54f49fba866ac721",
-              "quote": "those in growth mode like Airia, which announced a $100 million raise in September"
+              "quote": "those in growth mode like Airia, which announced a $100 million raise in September",
+              "source_content_hash": "63376f8baf3c8192",
+              "quote_hash": "1da35e234a162b522d75059716137ebc2fff0e47c40655cf54f8508f2e501190"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Port",
@@ -789,9 +903,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-54f49fba866ac721",
-              "quote": "Port, which announced a $100 million round in December"
+              "quote": "Port, which announced a $100 million round in December",
+              "source_content_hash": "63376f8baf3c8192",
+              "quote_hash": "1461fc0f4627945d0ac744386a8955a410a3a3736d47a939b1b98147f1d21d3f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Maisa AI",
@@ -803,9 +920,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-54f49fba866ac721",
-              "quote": "ranging from the very small (like Maisa AI)"
+              "quote": "ranging from the very small (like Maisa AI)",
+              "source_content_hash": "63376f8baf3c8192",
+              "quote_hash": "2e99e7ecbce5046e1df9dfa587f27dc619618b8798e3683ee33244795ecfcbe2"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -816,7 +936,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Sycamore today announced a $65 million seed round"
+              "quote": "Sycamore today announced a $65 million seed round",
+              "source_content_hash": "55c14769a2ec5e77",
+              "quote_hash": "73c1ce5e4d9679309c745c45b4a6d7c1804c5a5cfb7ca39afecfcb7366c81763"
             }
           ]
         }
@@ -834,7 +956,19 @@
           "市场竞争激烈，面临从初创公司到 OpenAI、Anthropic 等模型厂商以及微软、AWS 等云提供商的全面竞争，Sycamore 需要在巨头环伺中证明其独立平台的价值。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业 AI 智能体基础设施"
+        "sector": "企业 AI 智能体基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“企业 AI 智能体的信任与治理基础设施层”。6500 万美元的种子轮融资规模反映了投资者对创始人 Sri Viswanath 过往在 Atlassian 等企业构建大规模平台经验的极高溢价，以及对“自主 AI 操作系统”这一品类定义机会的抢先布局。当前估值所依赖的已验证信号包括：创始人连续成功创业和技术领导背景、已与财富 500 强企业合作部署智能体、以及来自 Coatue 和 Lightspeed 等顶级机构的领投。但判断的证据边界在于，公司尚未披露具体客户名称、营收数据或智能体部署规模，产品仍处于从研发走向生产验证的阶段。",
+          "evidence_signals": [
+            "创始人 Sri Viswanath 曾担任 Atlassian CTO 并领导云转型，拥有超过 20 年企业平台构建经验",
+            "已与财富 500 强企业合作部署自主 AI 智能体",
+            "获得 Coatue 和 Lightspeed 联合领投，以及众多硅谷顶级天使投资人参与"
+          ],
+          "risks": [
+            "市场竞争激烈，面临从初创公司到 OpenAI、Anthropic 等模型厂商以及微软、AWS 等云提供商的全面竞争，Sycamore 需要在巨头环伺中证明其独立平台的价值。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -842,203 +976,105 @@
           "target_kind": "product",
           "research_name": "Sycamore Agent Operating System",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Sycamore provides a full lifecycle platform for enterprise AI: discover, build, deploy, observe, and evolve."
-            },
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Agents earn autonomy through demonstrated reliability, progressing from observation to action. Every operation is isolated, auditable, and governed from the start."
-            },
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Users describe intent in natural language. Sycamore generates production-ready systems, including applications, integrations, and agents, tailored to the enterprise environment."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Sri Viswanath",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Sri Viswanath, Founder and CEO of Sycamore"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Coatue",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "The round was led by Coatue and Lightspeed Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "The round was led by Coatue and Lightspeed Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Abstract Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Dell Technologies Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "8VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Fellows Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "E14 Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lip-Bu Tan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Notable angel investors include: Lip-Bu Tan (CEO of Intel)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未具名财富 500 强公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c33fa31a6f27d4e6",
-              "quote": "Sycamore is working with Fortune 500 companies to deploy autonomous AI agents."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Isara",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-54f49fba866ac721",
-              "quote": "nascent startups raising even bigger rounds, like OpenAI-backed Isara, which raised $94 million"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Airia",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-54f49fba866ac721",
-              "quote": "those in growth mode like Airia, which announced a $100 million raise in September"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Port",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-54f49fba866ac721",
-              "quote": "Port, which announced a $100 million round in December"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Maisa AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-54f49fba866ac721",
-              "quote": "ranging from the very small (like Maisa AI)"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1112,13 +1148,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:12:35.591Z"
+      "published_at": "2026-07-26T14:12:35.591Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sycamore Agent Operating System"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sri Viswanath"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c5643983538c6513"
+      ],
+      "aggregation": {
+        "key": "EN-da41c71b4dbc3956|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f963f997b1209180",
       "triggered_by_event_id": "EV-3b40ec144e5db22c",
       "as_of_date": "2026-05-22",
@@ -1136,7 +1201,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "said Samar Abbas , CEO and co-founder of Temporal"
+                "quote": "said Samar Abbas , CEO and co-founder of Temporal",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "ccf75e136901642c4af04cd51d50ffa5588320c497d817b41b283b94921df58c"
               }
             ],
             "entity_id": null
@@ -1147,7 +1214,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-49e65299f5cb68d9",
-                "quote": "Founders: Samar Abbas (CEO), Maxim Fateev (CTO)"
+                "quote": "Founders: Samar Abbas (CEO), Maxim Fateev (CTO)",
+                "source_content_hash": "430d3452cedd4b41",
+                "quote_hash": "e56feff4befe19a4d6bebc402474ca6f30afd6cd26a54a3c37681535e335b2dc"
               }
             ],
             "entity_id": null
@@ -1159,27 +1228,35 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-95c36901c7ac4ba4",
-              "quote": "With over 380 personnel members"
+              "quote": "With over 380 personnel members",
+              "source_content_hash": "d54ef1ea6f33ac6a",
+              "quote_hash": "07da485b3e902fdde2bffb6c3c8b2a58fa455a96a725059dc258c8e43d599457"
             },
             {
               "source_id": "FISRC-ecf89bd1daccaf39",
-              "quote": "The company employs more than 380 people"
+              "quote": "The company employs more than 380 people",
+              "source_content_hash": "c17b523fcba76462",
+              "quote_hash": "d44133ad92ede16dcaf5f647caccbb42e8fa3fb6728a8508276aca2122f525aa"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-1f69885afd5fc439",
-            "quote": "Temporal, the open-source platform powering the world’s most reliable agentic applications"
+            "quote": "Temporal, the open-source platform powering the world’s most reliable agentic applications",
+            "source_content_hash": "74cb86598e6c9021",
+            "quote_hash": "4a858922c5cbe2b24c39db058e804c7d0eb371b4c4df58a35572e873dfb46431"
           },
           {
             "source_id": "FISRC-ecf89bd1daccaf39",
-            "quote": "Founded in 2019, Temporal builds open-source software and a managed cloud platform"
+            "quote": "Founded in 2019, Temporal builds open-source software and a managed cloud platform",
+            "source_content_hash": "c17b523fcba76462",
+            "quote_hash": "7f65a467a91b7d9fb846c7c053854516172dce549106cdaced192c2392a6ff5f"
           }
         ]
       },
       "financing": {
-        "round": "Series D",
+        "round": "D轮",
         "amount": "$300 million",
         "total_raised": "$650 million",
         "announced_at": "2026-02-17",
@@ -1190,7 +1267,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "The round was led by Andreessen Horowitz (a16z)"
+                "quote": "The round was led by Andreessen Horowitz (a16z)",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "369470790d9f5035a6236d33cb1227b6958d325b0ba0994f3367465dc7831bbf"
               }
             ],
             "entity_id": null
@@ -1201,7 +1280,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures"
+                "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "f8895a4709c47713dd1fc7e34361c9667b799054daba0bdb9f754386e07608f7"
               }
             ],
             "entity_id": null
@@ -1212,7 +1293,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures"
+                "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "f8895a4709c47713dd1fc7e34361c9667b799054daba0bdb9f754386e07608f7"
               }
             ],
             "entity_id": null
@@ -1223,7 +1306,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
+                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
               }
             ],
             "entity_id": null
@@ -1234,7 +1319,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
+                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
               }
             ],
             "entity_id": null
@@ -1245,7 +1332,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
+                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
               }
             ],
             "entity_id": null
@@ -1256,11 +1345,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
+                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
               },
               {
                 "source_id": "FISRC-ecf89bd1daccaf39",
-                "quote": "the $2.5 billion mark Temporal reached in October following a secondary transaction led by GIC, Singapore’s sovereign wealth fund"
+                "quote": "the $2.5 billion mark Temporal reached in October following a secondary transaction led by GIC, Singapore’s sovereign wealth fund",
+                "source_content_hash": "c17b523fcba76462",
+                "quote_hash": "029f05217f6a44225ee8f4a993fa2a0b518f21d763b4b22ae421775bf6ce23c8"
               }
             ],
             "entity_id": null
@@ -1271,7 +1364,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
+                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
               }
             ],
             "entity_id": null
@@ -1282,7 +1377,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1f69885afd5fc439",
-                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
+                "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
               }
             ],
             "entity_id": null
@@ -1291,11 +1388,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1f69885afd5fc439",
-            "quote": "today announced a $300 million Series D financing at a $5 billion valuation"
+            "quote": "today announced a $300 million Series D financing at a $5 billion valuation",
+            "source_content_hash": "74cb86598e6c9021",
+            "quote_hash": "6d86f7b8275e87edfaf2a69323efdd455b38280d05f10aee20e858ab0d6bd526"
           },
           {
             "source_id": "FISRC-49e65299f5cb68d9",
-            "quote": "Total raised: $650M to date"
+            "quote": "Total raised: $650M to date",
+            "source_content_hash": "430d3452cedd4b41",
+            "quote_hash": "ab23e1e942edc908b4a777c93d72889f00f68fbf577a1a497eda4b5fbf1ac937"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3b40ec144e5db22c",
+            "round_original": "Series D",
+            "amount": "$300 million",
+            "announced_at": "2026-02-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1f69885afd5fc439",
+                "quote": "today announced a $300 million Series D financing at a $5 billion valuation",
+                "source_content_hash": "74cb86598e6c9021",
+                "quote_hash": "6d86f7b8275e87edfaf2a69323efdd455b38280d05f10aee20e858ab0d6bd526"
+              },
+              {
+                "source_id": "FISRC-49e65299f5cb68d9",
+                "quote": "Total raised: $650M to date",
+                "source_content_hash": "430d3452cedd4b41",
+                "quote_hash": "ab23e1e942edc908b4a777c93d72889f00f68fbf577a1a497eda4b5fbf1ac937"
+              }
+            ]
           }
         ]
       },
@@ -1313,11 +1439,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "By providing a durable execution layer for long-running, stateful AI systems, Temporal enables companies across every sector to turn agentic AI from a promising idea into a production reality"
+              "quote": "By providing a durable execution layer for long-running, stateful AI systems, Temporal enables companies across every sector to turn agentic AI from a promising idea into a production reality",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "41ebf474b4f5a0a2e8b659fd8e499c74d20129de8723421a5e378b81323b2de9"
             },
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Run agents that execute for days or weeks without losing state, because they safely recover from failures"
+              "quote": "Run agents that execute for days or weeks without losing state, because they safely recover from failures",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "b47d3b5ff9c4f4cf3b0736e8a0fa3ec1f2147fd7f94e56079c0e5186cf149a2a"
             }
           ],
           "entity_id": null
@@ -1334,11 +1464,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ecf89bd1daccaf39",
-              "quote": "Revenue comes from Temporal Cloud, a multi-tenant managed service that charges customers based on usage."
+              "quote": "Revenue comes from Temporal Cloud, a multi-tenant managed service that charges customers based on usage.",
+              "source_content_hash": "c17b523fcba76462",
+              "quote_hash": "d06f865045f6be94146f49e67fa1b432340da8c53540abe0e7ceee1d30ee6d8b"
             },
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "customers relying on Temporal’s high-availability architecture continued operating through major cloud outages without data loss or manual intervention"
+              "quote": "customers relying on Temporal’s high-availability architecture continued operating through major cloud outages without data loss or manual intervention",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "d84e5d844ac16f7b7a74909db73ce317afca76d51fd7dc1e95bd4ec992aecf7b"
             }
           ],
           "entity_id": null
@@ -1352,9 +1486,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "OpenAI, Replit, and Lovable build reliable agents at mass scale"
+              "quote": "OpenAI, Replit, and Lovable build reliable agents at mass scale",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "1702b2f6e8e2a051415522324042895574203dfb525b7118efab547031183b91"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "ADP",
@@ -1363,9 +1500,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "ADP powers human-in-the-loop agentic processes to improve HR practices"
+              "quote": "ADP powers human-in-the-loop agentic processes to improve HR practices",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "5c29747c5c48e9a3e768d5949f4b774aeac839fc9bcd2ef02e96354ba3e9b23d"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Yum! Brands (Taco Bell, KFC)",
@@ -1374,9 +1514,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Building with Temporal’s programming model dramatically increases our dev’s productivity and the Cloud platform ensures our systems are running reliably at scale."
+              "quote": "Building with Temporal’s programming model dramatically increases our dev’s productivity and the Cloud platform ensures our systems are running reliably at scale.",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "884baa5e882d4a1581994ee928a1de8f4a60c1846be30aac65b23f0d8bc36806"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Block",
@@ -1385,9 +1528,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Financial Services companies like Block create agentic frameworks that accelerate developer productivity"
+              "quote": "Financial Services companies like Block create agentic frameworks that accelerate developer productivity",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "937a85d9fa7eba9492c4348b696d013c8eb0ef9b39f934861867bde3d2892d6b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Netflix",
@@ -1396,9 +1542,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-95c36901c7ac4ba4",
-              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase"
+              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase",
+              "source_content_hash": "d54ef1ea6f33ac6a",
+              "quote_hash": "b87ec82adac9eb2ef3986e69324010abde3a269fd30dd55de033e278b342dabe"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Snap",
@@ -1407,9 +1556,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-95c36901c7ac4ba4",
-              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase"
+              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase",
+              "source_content_hash": "d54ef1ea6f33ac6a",
+              "quote_hash": "b87ec82adac9eb2ef3986e69324010abde3a269fd30dd55de033e278b342dabe"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "JPMorgan Chase",
@@ -1418,9 +1570,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-95c36901c7ac4ba4",
-              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase"
+              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase",
+              "source_content_hash": "d54ef1ea6f33ac6a",
+              "quote_hash": "b87ec82adac9eb2ef3986e69324010abde3a269fd30dd55de033e278b342dabe"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1432,7 +1587,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "a $5 billion valuation"
+              "quote": "a $5 billion valuation",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "37f09dad93bd2ec8f9482b7559937db39673359ca874b8fc1bf40ac44bcb6801"
             }
           ]
         },
@@ -1443,7 +1600,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": ">380% year-over-year revenue growth"
+              "quote": ">380% year-over-year revenue growth",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "923944066b133dc318dc3c45d81359f211be79a2ae07bb0391143b4099ae5390"
             }
           ]
         },
@@ -1454,7 +1613,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "a 350% increase in weekly active usage"
+              "quote": "a 350% increase in weekly active usage",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "c7c7e4cde48a2c3dd1642ac9d516a7833462197f0f712035738cadfaa35ca206"
             }
           ]
         },
@@ -1465,7 +1626,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "a 500% increase in installations, now exceeding 20 million installs per month"
+              "quote": "a 500% increase in installations, now exceeding 20 million installs per month",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "69b35c0b576b81993a5c2af7cbdb80918a7295c9b6b409982bfe986d6f35abbc"
             }
           ]
         },
@@ -1476,7 +1639,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "9.1 trillion lifetime action executions on their Cloud product alone"
+              "quote": "9.1 trillion lifetime action executions on their Cloud product alone",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "882839af0e23220075ac54cb6c6fe22e93eca174f65ed97ce3d025c883d4536e"
             }
           ]
         },
@@ -1487,7 +1652,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "1.86 trillion for AI-native companies"
+              "quote": "1.86 trillion for AI-native companies",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "cabc16b893feb48a0d7e39c2400b5afc671a806a3406e7be9c70f21da384009b"
             }
           ]
         },
@@ -1498,7 +1665,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Temporal handled sudden traffic spikes exceeding 150,000 actions per second with no advance notice"
+              "quote": "Temporal handled sudden traffic spikes exceeding 150,000 actions per second with no advance notice",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "497575a0238ebee943596136cfe610538c49b2b1fe34669c2cd27ba5d03298c2"
             }
           ]
         }
@@ -1510,7 +1679,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Durable Execution is a core requirement for modern AI systems, and Temporal offers a compelling platform to help build it in from the start."
+              "quote": "Durable Execution is a core requirement for modern AI systems, and Temporal offers a compelling platform to help build it in from the start.",
+              "source_content_hash": "74cb86598e6c9021",
+              "quote_hash": "483e6cdb9a396148846d6d7949f788079c5496c61a7e8ff421b90e57587ade81"
             }
           ]
         }
@@ -1529,7 +1700,21 @@
           "公司尚未实现盈利，当前高估值依赖于 AI 基础设施需求持续高速增长的预期，若企业 AI 采用速度放缓，估值可能承压。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 基础设施 / 持久化执行层"
+        "sector": "AI 基础设施 / 持久化执行层",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：当 AI 从生成答案转向执行真实世界任务时，可靠性将从可选的优化项变为系统能否上线的门控条件。Temporal 的 $50 亿估值建立在以下已验证信号之上：年同比收入增长超过 380%、月安装量超过 2000 万次、Cloud 产品累计操作执行次数达 9.1 万亿次，以及 OpenAI、Netflix、JPMorgan Chase 等头部企业客户已在生产环境中使用。这些信号表明持久化执行层正在成为智能体 AI 基础设施的必备组件，而非可选的附加层。然而，这一判断的证据边界在于：公司尚未实现盈利，且当前估值较 2025 年 10 月的 $25 亿翻倍，隐含了市场对 AI 基础设施需求将持续高速增长的预期。",
+          "evidence_signals": [
+            "年同比收入增长超过380%",
+            "月安装量超过2000万次，安装量增长500%",
+            "Temporal Cloud 累计操作执行次数达9.1万亿次",
+            "客户包括 OpenAI、Netflix、Snap、JPMorgan Chase 等头部企业",
+            "平台能处理每秒超过15万次操作的突发流量峰值"
+          ],
+          "risks": [
+            "公司尚未实现盈利，当前高估值依赖于 AI 基础设施需求持续高速增长的预期，若企业 AI 采用速度放缓，估值可能承压。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1537,272 +1722,140 @@
           "target_kind": "product",
           "research_name": "Temporal 开源平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "By providing a durable execution layer for long-running, stateful AI systems, Temporal enables companies across every sector to turn agentic AI from a promising idea into a production reality"
-            },
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Run agents that execute for days or weeks without losing state, because they safely recover from failures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Temporal Cloud",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ecf89bd1daccaf39",
-              "quote": "Revenue comes from Temporal Cloud, a multi-tenant managed service that charges customers based on usage."
-            },
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "customers relying on Temporal’s high-availability architecture continued operating through major cloud outages without data loss or manual intervention"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Samar Abbas",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "said Samar Abbas , CEO and co-founder of Temporal"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Maxim Fateev",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-49e65299f5cb68d9",
-              "quote": "Founders: Samar Abbas (CEO), Maxim Fateev (CTO)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz (a16z)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "The round was led by Andreessen Horowitz (a16z)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sapphire Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "joined by Lightspeed Venture Partners and Sapphire Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Sequoia Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Index Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tiger Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GIC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
-            },
-            {
-              "source_id": "FISRC-ecf89bd1daccaf39",
-              "quote": "the $2.5 billion mark Temporal reached in October following a secondary transaction led by GIC, Singapore’s sovereign wealth fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Madrona Venture Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Amplify Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "OpenAI, Replit, and Lovable build reliable agents at mass scale"
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "ADP",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "ADP powers human-in-the-loop agentic processes to improve HR practices"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Yum! Brands (Taco Bell, KFC)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Building with Temporal’s programming model dramatically increases our dev’s productivity and the Cloud platform ensures our systems are running reliably at scale."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Block",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1f69885afd5fc439",
-              "quote": "Financial Services companies like Block create agentic frameworks that accelerate developer productivity"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Netflix",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-95c36901c7ac4ba4",
-              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Snap",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-95c36901c7ac4ba4",
-              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "JPMorgan Chase",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-95c36901c7ac4ba4",
-              "quote": "premium clients, such as OpenAI, Snap, Netflix, and JPMorgan Chase"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1876,13 +1929,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:10:55.314Z"
+      "published_at": "2026-07-26T14:10:55.314Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 7,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Temporal Cloud",
+            "Temporal 开源平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Maxim Fateev",
+            "Samar Abbas"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3b40ec144e5db22c"
+      ],
+      "aggregation": {
+        "key": "EN-e4540a7c8404b1be|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-bd3ea9a7f8f67164",
       "triggered_by_event_id": "EV-c46e427fedbf518d",
       "as_of_date": "2026-05-22",
@@ -1900,7 +1984,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "Trace CEO Tim Cherkasov"
+                "quote": "Trace CEO Tim Cherkasov",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "d7e7087b274c8981f38666a3deb7994303c88b643013873cd1b47c6c359d54f1"
               }
             ],
             "entity_id": null
@@ -1911,7 +1997,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "CTO Artur Romanov"
+                "quote": "CTO Artur Romanov",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "3d7c8ed79a04f8a01a415371d72fb693d471cb9d614471238b5388b7f4837866"
               }
             ],
             "entity_id": null
@@ -1925,11 +2013,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ea2a22594e77fd6a",
-            "quote": "Trace is a workflow orchestration startup"
+            "quote": "Trace is a workflow orchestration startup",
+            "source_content_hash": "601ebbbabea8fa71",
+            "quote_hash": "5a02b9f16310a4853f200dee3a99beba3272a01f6927a9a693eba6b84df5d4e9"
           },
           {
             "source_id": "FISRC-ea2a22594e77fd6a",
-            "quote": "the London-based company"
+            "quote": "the London-based company",
+            "source_content_hash": "601ebbbabea8fa71",
+            "quote_hash": "be8b9eadda238890754c5f4a8bbded3b516eece16c5cfbf5653d398711a8eba4"
           }
         ]
       },
@@ -1945,7 +2037,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
+                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
               }
             ],
             "entity_id": "EN-275b0f4a4023d91c"
@@ -1956,7 +2050,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
+                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
               }
             ],
             "entity_id": null
@@ -1967,7 +2063,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
+                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
               }
             ],
             "entity_id": null
@@ -1978,7 +2076,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
+                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
               }
             ],
             "entity_id": null
@@ -1989,7 +2089,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
+                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
               }
             ],
             "entity_id": null
@@ -2000,29 +2102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Benjamin Bryant",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Kevin Moore",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ea2a22594e77fd6a",
-                "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested."
+                "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
               }
             ],
             "entity_id": null
@@ -2031,11 +2113,79 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ea2a22594e77fd6a",
-            "quote": "the London-based company said it had raised $3 million in seed funding"
+            "quote": "the London-based company said it had raised $3 million in seed funding",
+            "source_content_hash": "601ebbbabea8fa71",
+            "quote_hash": "dea8a82d91f1da76ec8036f895d2f33ec1aee32a64b0a121cbfbfe003f37f109"
           },
           {
             "source_id": "FISRC-41cf7bf8d528835e",
-            "quote": "Total investments received (USD): 3.5m"
+            "quote": "Total investments received (USD): 3.5m",
+            "source_content_hash": "43b9a622d43f791c",
+            "quote_hash": "b0d31e48b7c859884378d137c521e16193d395ad0c06fa653c5e896316ee3d57"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [
+          {
+            "name": "Benjamin Bryant",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ea2a22594e77fd6a",
+                "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested.",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0c40fe449ee1dfd133617e98cd5e302659dcb50b8855ac9c6abe207412d88537"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Kevin Moore",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ea2a22594e77fd6a",
+                "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested.",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "0c40fe449ee1dfd133617e98cd5e302659dcb50b8855ac9c6abe207412d88537"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-c46e427fedbf518d",
+            "round_original": "种子轮",
+            "amount": "$3 million",
+            "announced_at": "2026-02-26",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ea2a22594e77fd6a",
+                "quote": "the London-based company said it had raised $3 million in seed funding",
+                "source_content_hash": "601ebbbabea8fa71",
+                "quote_hash": "dea8a82d91f1da76ec8036f895d2f33ec1aee32a64b0a121cbfbfe003f37f109"
+              },
+              {
+                "source_id": "FISRC-41cf7bf8d528835e",
+                "quote": "Total investments received (USD): 3.5m",
+                "source_content_hash": "43b9a622d43f791c",
+                "quote_hash": "b0d31e48b7c859884378d137c521e16193d395ad0c06fa653c5e896316ee3d57"
+              }
+            ]
           }
         ]
       },
@@ -2053,18 +2203,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "Trace’s system starts by building a knowledge graph from a company’s existing tools — systems like email, Slack, and Airtable"
+              "quote": "Trace’s system starts by building a knowledge graph from a company’s existing tools — systems like email, Slack, and Airtable",
+              "source_content_hash": "601ebbbabea8fa71",
+              "quote_hash": "c8253cc19539e74aa60062d6209ff91d5f0326237fdcd817229b0b470176df99"
             },
             {
               "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "users can prompt the system with a high-level task — like “We need to design a new microsite” or “Let’s develop our 2027 sales plan” — and Trace will come back with a step-by-step workflow, delegating some tasks to AI agents and assigning others to human workers."
+              "quote": "users can prompt the system with a high-level task — like “We need to design a new microsite” or “Let’s develop our 2027 sales plan” — and Trace will come back with a step-by-step workflow, delegating some tasks to AI agents and assigning others to human workers.",
+              "source_content_hash": "601ebbbabea8fa71",
+              "quote_hash": "5887a766ce52fc50adebe60a84bb144667f01036aca131448c5ea418d9766b25"
             },
             {
               "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "When the system does invoke an AI agent, it will prompt it with the specific data needed to complete its sub-task."
+              "quote": "When the system does invoke an AI agent, it will prompt it with the specific data needed to complete its sub-task.",
+              "source_content_hash": "601ebbbabea8fa71",
+              "quote_hash": "9ab391542bc8a4020cd4e845faa0244c91eadeb07a4cf65737e8604dcf1af673"
             }
           ],
-          "entity_id": null
+          "entity_id": "EN-8775f30318a77aea"
         }
       ],
       "customers": [],
@@ -2079,9 +2235,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "Earlier this week , Anthropic launched its own take on enterprise agents, focused on pre-built plug-ins for specific departmental functions."
+              "quote": "Earlier this week , Anthropic launched its own take on enterprise agents, focused on pre-built plug-ins for specific departmental functions.",
+              "source_content_hash": "601ebbbabea8fa71",
+              "quote_hash": "ab0dbd57acd83b1ef80e5acc0455eb718d1177b1429e46513e4cec9437575233"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "Atlassian",
@@ -2093,9 +2252,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "many of the workplace productivity services Trace will be drawing from, like Atlassian’s Jira , are launching their own agents, which will potentially compete with the startup’s system."
+              "quote": "many of the workplace productivity services Trace will be drawing from, like Atlassian’s Jira , are launching their own agents, which will potentially compete with the startup’s system.",
+              "source_content_hash": "601ebbbabea8fa71",
+              "quote_hash": "4e117094c3f02ec6fa1b52cf4d0f96003ca6bf41381d50884645b8dc3050487d"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [],
@@ -2106,7 +2268,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "“OpenAI and Anthropic are building these brilliant interns that can be leveraged within the company,” says Trace CEO Tim Cherkasov, referring to the AI labs’ tools. “We’re building the manager that knows where to put them.”"
+              "quote": "“OpenAI and Anthropic are building these brilliant interns that can be leveraged within the company,” says Trace CEO Tim Cherkasov, referring to the AI labs’ tools. “We’re building the manager that knows where to put them.”",
+              "source_content_hash": "601ebbbabea8fa71",
+              "quote_hash": "d92e1a9a4f2b9a34c109ad299ecb655eebedf1e9a7d07b3ac3740d54eea447e0"
             }
           ]
         },
@@ -2116,7 +2280,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "“2024 and 2025 was still about prompt engineering. Now we’ve moved from prompt engineering to context engineering,” says CTO Artur Romanov. “Whoever provides the best context at the right time is going to be the infrastructure on top of which the AI-first companies will be built. And we hope to be that infrastructure.”"
+              "quote": "“2024 and 2025 was still about prompt engineering. Now we’ve moved from prompt engineering to context engineering,” says CTO Artur Romanov. “Whoever provides the best context at the right time is going to be the infrastructure on top of which the AI-first companies will be built. And we hope to be that infrastructure.”",
+              "source_content_hash": "601ebbbabea8fa71",
+              "quote_hash": "bd4cf21c9e840356351d6fcaf0084ae89c6f58a77aaf2a6f3fd29164b0468696"
             }
           ]
         }
@@ -2133,185 +2299,111 @@
           "Atlassian 等 Trace 所依赖的工作场所生产力服务商正在推出自有智能体，可能形成竞争替代"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 智能体工作流编排与上下文工程"
+        "sector": "AI 智能体工作流编排与上下文工程",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“上下文工程”能否成为企业 AI 智能体规模化部署的缺失层。Trace 的融资依赖于一个已验证信号：企业 AI 智能体采用缓慢，瓶颈不在于模型能力，而在于智能体缺乏对企业实际运作方式的理解。Trace 通过从现有工具中自动构建知识图谱，为智能体提供结构化上下文，试图成为 AI 原生企业的底层基础设施。判断的证据边界限于本轮种子融资的披露信息，尚无客户案例或收入数据支撑。",
+          "evidence_signals": [
+            "企业 AI 智能体采用缓慢，瓶颈在于缺乏对企业环境的上下文理解",
+            "Trace 通过构建知识图谱为智能体提供上下文，定位为上下文工程基础设施"
+          ],
+          "risks": [
+            "300 万美元种子资金对于企业级销售周期（通常超过 12 个月）而言跑道不足",
+            "Atlassian 等 Trace 所依赖的工作场所生产力服务商正在推出自有智能体，可能形成竞争替代"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Trace 工作流编排平台",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "Trace’s system starts by building a knowledge graph from a company’s existing tools — systems like email, Slack, and Airtable"
-            },
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "users can prompt the system with a high-level task — like “We need to design a new microsite” or “Let’s develop our 2027 sales plan” — and Trace will come back with a step-by-step workflow, delegating some tasks to AI agents and assigning others to human workers."
-            },
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "When the system does invoke an AI agent, it will prompt it with the specific data needed to complete its sub-task."
-            }
-          ]
+          "canonical_entity_id": "EN-8775f30318a77aea",
+          "canonical_name": "TRACE"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tim Cherkasov",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "Trace CEO Tim Cherkasov"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Artur Romanov",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "CTO Artur Romanov"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Y Combinator",
           "canonical_entity_id": "EN-275b0f4a4023d91c",
-          "canonical_name": "Y Combinator",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
-            }
-          ]
+          "canonical_name": "Y Combinator"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Zeno Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Transpose Platform Management",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Goodwater Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Formosa Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "WeFunder",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Benjamin Bryant",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Kevin Moore",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "Angel investors Benjamin Bryant and Kevin Moore also invested."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "Earlier this week , Anthropic launched its own take on enterprise agents, focused on pre-built plug-ins for specific departmental functions."
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Atlassian",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ea2a22594e77fd6a",
-              "quote": "many of the workplace productivity services Trace will be drawing from, like Atlassian’s Jira , are launching their own agents, which will potentially compete with the startup’s system."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2361,13 +2453,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:10:16.719Z"
+      "published_at": "2026-07-26T14:10:16.719Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Artur Romanov",
+            "Tim Cherkasov"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c46e427fedbf518d"
+      ],
+      "aggregation": {
+        "key": "EN-eafe895eb8119e6e|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-cbfbc5f84ea80cb4",
       "triggered_by_event_id": "EV-a84ec4216d3ded6d",
       "as_of_date": "2026-05-22",
@@ -2385,7 +2505,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-96bd7daa0eaefe28",
-                "quote": "Bar Winkler, CEO and Co-founder of Wonderful"
+                "quote": "Bar Winkler, CEO and Co-founder of Wonderful",
+                "source_content_hash": "f8c0e2e899057d76",
+                "quote_hash": "f68149f50cc8286c2f9e27b6640a422108144766b2abbaea59b68900b74681d0"
               }
             ],
             "entity_id": null
@@ -2396,7 +2518,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-96bd7daa0eaefe28",
-                "quote": "Roey Lalazar, CTO and Co-founder"
+                "quote": "Roey Lalazar, CTO and Co-founder",
+                "source_content_hash": "f8c0e2e899057d76",
+                "quote_hash": "fccee186836a56899676ef11948785f04b24e91458da0dc95aead27e8b87c0db"
               }
             ],
             "entity_id": null
@@ -2408,23 +2532,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+              "quote": "scaling headcount from 350 to approximately 900 by year-end",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "09511a1b0d6f52fe541aaa56609a3d2ea5d8e90ca64a2f689b125d0b92c5b7ff"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-96bd7daa0eaefe28",
-            "quote": "Wonderful , the enterprise AI agent platform"
+            "quote": "Wonderful , the enterprise AI agent platform",
+            "source_content_hash": "f8c0e2e899057d76",
+            "quote_hash": "3166d454daf2a36c5d83000157f757c7822bbe644347423478dc528e4ebef179"
           },
           {
             "source_id": "FISRC-1445a0beee9b313b",
-            "quote": "Wonderful, an Amsterdam, Netherlands–based enterprise AI agent platform"
+            "quote": "Wonderful, an Amsterdam, Netherlands–based enterprise AI agent platform",
+            "source_content_hash": "d022c2829703bff1",
+            "quote_hash": "922a969c09b76e5730cf9d3f880701b8ba0f29d2384308e8f3caedf27acb0a51"
           }
         ]
       },
       "financing": {
-        "round": "Series B",
+        "round": "B轮",
         "amount": "$150 million",
         "total_raised": "$286 million",
         "announced_at": "2026-03-12",
@@ -2435,7 +2565,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-96bd7daa0eaefe28",
-                "quote": "led by global software investor Insight Partners"
+                "quote": "led by global software investor Insight Partners",
+                "source_content_hash": "f8c0e2e899057d76",
+                "quote_hash": "01808c66215b589399519b4efd96640f961e742ba2321c13d5dc8ae1326368b9"
               }
             ],
             "entity_id": null
@@ -2446,11 +2578,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-96bd7daa0eaefe28",
-                "quote": "with participation from existing investors Index Ventures"
+                "quote": "with participation from existing investors Index Ventures",
+                "source_content_hash": "f8c0e2e899057d76",
+                "quote_hash": "f9df6ce3c333b3a29b75592999defba0ce7b7874503b88893223b1b7f4837109"
               },
               {
                 "source_id": "FISRC-a9a14160ac96ad9a",
-                "quote": "participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round"
+                "quote": "participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round",
+                "source_content_hash": "a1eb7c9802c59903",
+                "quote_hash": "50a0ba99e6e21a6938dd27607084f829897074fab5c92f35962c32662ea24ec9"
               }
             ],
             "entity_id": null
@@ -2459,11 +2595,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-96bd7daa0eaefe28",
-            "quote": "raised $150 million in a Series B funding round"
+            "quote": "raised $150 million in a Series B funding round",
+            "source_content_hash": "f8c0e2e899057d76",
+            "quote_hash": "1de2039a165638d51e82681f659905b8e2ef5c2d9aa9426802508b938ffd36dd"
           },
           {
             "source_id": "FISRC-a9a14160ac96ad9a",
-            "quote": "bringing total funds raised to $284 million"
+            "quote": "bringing total funds raised to $284 million",
+            "source_content_hash": "a1eb7c9802c59903",
+            "quote_hash": "3bf6f353d03b27c1ae5c2b1055c510989cacca51b3f7b8923cd704752decd870"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-a84ec4216d3ded6d",
+            "round_original": "Series B",
+            "amount": "$150 million",
+            "announced_at": "2026-03-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-96bd7daa0eaefe28",
+                "quote": "raised $150 million in a Series B funding round",
+                "source_content_hash": "f8c0e2e899057d76",
+                "quote_hash": "1de2039a165638d51e82681f659905b8e2ef5c2d9aa9426802508b938ffd36dd"
+              },
+              {
+                "source_id": "FISRC-a9a14160ac96ad9a",
+                "quote": "bringing total funds raised to $284 million",
+                "source_content_hash": "a1eb7c9802c59903",
+                "quote_hash": "3bf6f353d03b27c1ae5c2b1055c510989cacca51b3f7b8923cd704752decd870"
+              }
+            ]
           }
         ]
       },
@@ -2481,7 +2646,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production."
+              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production.",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "e4535050bad19d7918e901213cd8c83cf8bf79572fa6c29fce9073e527593498"
             }
           ],
           "entity_id": null
@@ -2497,7 +2664,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "reducing handling times by up to 60%"
+              "quote": "reducing handling times by up to 60%",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "567a8596527a1b6937d185509b910f1e58eea2a768ffeeb848ebaea7aff46018"
             }
           ]
         },
@@ -2508,7 +2677,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "achieving containment rates above 80%"
+              "quote": "achieving containment rates above 80%",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "2d9f1d21c618effa37a9e251f330db4adcf155125a07b8db2224d38387cc061e"
             }
           ]
         },
@@ -2519,7 +2690,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months"
+              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "ff35131cc27c974df3e144c4f19ee261df0539020135400a1661596eabad18ea"
             }
           ]
         },
@@ -2530,7 +2703,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America"
+              "quote": "scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "21827584c9c763ed1032666228fd86b5574a3f43c2c690909380b7d26d910b91"
             }
           ]
         }
@@ -2542,7 +2717,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment"
+              "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "2dbd22ba260f19a6ce07ae2c22a1d391759fb324ef2726f7e418592ca71652d2"
             }
           ]
         },
@@ -2552,7 +2729,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "Wonderful is establishing trust and deep partnerships inside complex enterprises at a critical moment for the market"
+              "quote": "Wonderful is establishing trust and deep partnerships inside complex enterprises at a critical moment for the market",
+              "source_content_hash": "f8c0e2e899057d76",
+              "quote_hash": "fb5236a32d866acd171624fd52d7e7d58d7807c9b18ceaaf4368e3aa3cebd260"
             }
           ]
         }
@@ -2570,7 +2749,20 @@
           "高度依赖本地化部署团队的模式可能导致规模化边际成本居高不下，与SaaS模式追求的边际成本递减逻辑相悖，在人员从350人扩张至900人的过程中，管理复杂度和人力成本将急剧上升。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业级AI智能体平台"
+        "sector": "企业级AI智能体平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“平台+本地嵌入式团队”的混合运营模式能否解决企业AI落地的最后一公里问题。本轮融资估值达20亿美元，依赖的已验证信号包括：8个月内将业务扩展至30多个国家，客户涵盖电信、金融、制造和医疗等受监管行业；超过70%的客户在三个月内从单一用例扩展到多个工作流；智能体在生产环境中实现了高达60%的处理时间缩减和超过80%的自主解决率。这些信号表明其模式在复杂企业环境中具有可重复性和快速的价值实现能力。然而，判断的证据边界在于，这些数据均来自公司单方面披露，缺乏独立第三方验证或具体客户名单佐证。",
+          "evidence_signals": [
+            "8个月内业务扩展至超过30个国家",
+            "客户涵盖电信、金融服务、制造业和医疗保健等受监管行业",
+            "超过70%的企业在三个月内从单一用例扩展到多个工作流",
+            "智能体在生产环境中实现高达60%的处理时间缩减和超过80%的自主解决率"
+          ],
+          "risks": [
+            "高度依赖本地化部署团队的模式可能导致规模化边际成本居高不下，与SaaS模式追求的边际成本递减逻辑相悖，在人员从350人扩张至900人的过程中，管理复杂度和人力成本将急剧上升。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2578,69 +2770,35 @@
           "target_kind": "product",
           "research_name": "Wonderful Enterprise AI Agent Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Bar Winkler",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "Bar Winkler, CEO and Co-founder of Wonderful"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Roey Lalazar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "Roey Lalazar, CTO and Co-founder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Insight Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "led by global software investor Insight Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Index Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-96bd7daa0eaefe28",
-              "quote": "with participation from existing investors Index Ventures"
-            },
-            {
-              "source_id": "FISRC-a9a14160ac96ad9a",
-              "quote": "participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2702,10 +2860,40 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:09:48.837Z"
+      "published_at": "2026-07-26T14:09:48.837Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Wonderful Enterprise AI Agent Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Bar Winkler",
+            "Roey Lalazar"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-a84ec4216d3ded6d"
+      ],
+      "aggregation": {
+        "key": "EN-ee04228c5c6d8b08|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

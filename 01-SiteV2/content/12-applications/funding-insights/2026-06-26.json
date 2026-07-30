@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-26",
     "generated_at": "2026-07-27T05:17:13.725Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 6,
       "auto_published": 5,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-a20fd9d5406fb9b6",
       "triggered_by_event_id": "EV-cab0d2efad362cf7",
       "as_of_date": "2026-06-26",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ffc3120355648a6",
-                "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma"
+                "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma",
+                "source_content_hash": "e4f80829e32e1e06",
+                "quote_hash": "c34e7ad0a8e8a617c1430676cefbe18a78da9b6abfb662c30822286c04b54fb4"
               },
               {
                 "source_id": "FISRC-6dc0f17f054b74fc",
-                "quote": "Aman Arora, CEO and Co-founder of Heizen"
+                "quote": "Aman Arora, CEO and Co-founder of Heizen",
+                "source_content_hash": "3e0a22b2735ce5e4",
+                "quote_hash": "8041a0c1ba19d2ac95650111d64a5c19a88ab5e664515e4ce9220b0c05221866"
               }
             ],
             "entity_id": null
@@ -50,11 +55,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ffc3120355648a6",
-                "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma"
+                "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma",
+                "source_content_hash": "e4f80829e32e1e06",
+                "quote_hash": "c34e7ad0a8e8a617c1430676cefbe18a78da9b6abfb662c30822286c04b54fb4"
               },
               {
                 "source_id": "FISRC-6dc0f17f054b74fc",
-                "quote": "co-founded Heizen with Abhilasha Singh, an ex-Microsoft engineering lead with a master's in Machine Learning from TU Munich"
+                "quote": "co-founded Heizen with Abhilasha Singh, an ex-Microsoft engineering lead with a master's in Machine Learning from TU Munich",
+                "source_content_hash": "3e0a22b2735ce5e4",
+                "quote_hash": "abd38f0737f980903a86ec7b80eb7e5b9a9599053d3a4cdf47475afb16cf4a25"
               }
             ],
             "entity_id": null
@@ -65,11 +74,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2ffc3120355648a6",
-                "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma"
+                "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma",
+                "source_content_hash": "e4f80829e32e1e06",
+                "quote_hash": "c34e7ad0a8e8a617c1430676cefbe18a78da9b6abfb662c30822286c04b54fb4"
               },
               {
                 "source_id": "FISRC-6dc0f17f054b74fc",
-                "quote": "Nijansh Verma, a GTM leader based in San Francisco"
+                "quote": "Nijansh Verma, a GTM leader based in San Francisco",
+                "source_content_hash": "3e0a22b2735ce5e4",
+                "quote_hash": "cdcda6b6e3391dcbf74b463509de5df62aae8982f61ce4946b701ef026e3f722"
               }
             ],
             "entity_id": null
@@ -81,23 +94,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "Heizen employs 59 people (+154.2% YoY, +37 people)"
+              "quote": "Heizen employs 59 people (+154.2% YoY, +37 people)",
+              "source_content_hash": "02c538699d96412f",
+              "quote_hash": "686708184bf63034a7fa3f03b7e519d77cb273b6256930813e16deba72d60b8f"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-3916f9c102f08152",
-            "quote": "Heizen, an AI-native software delivery startup, has raised $500,000 in a pre-seed funding round led by Titan Capital"
+            "quote": "Heizen, an AI-native software delivery startup, has raised $500,000 in a pre-seed funding round led by Titan Capital",
+            "source_content_hash": "ad6ef54a62ae9742",
+            "quote_hash": "bcd7041216b0e455f4e8ad421d5dcd7de5264be317e7c4734e4ba8d5d35c16a3"
           },
           {
             "source_id": "FISRC-78e470e9a94b8e8a",
-            "quote": "Heizen is a Technology, Information and Internet company."
+            "quote": "Heizen is a Technology, Information and Internet company.",
+            "source_content_hash": "02c538699d96412f",
+            "quote_hash": "4aea4904d81e06ae01d45c87893586c2fb6abc0aded2f645acb342e266e0536e"
           }
         ]
       },
       "financing": {
-        "round": "Pre-Seed",
+        "round": "预种子轮",
         "amount": "$500,000",
         "total_raised": "$500,000",
         "announced_at": "2025-07-30",
@@ -108,7 +127,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3916f9c102f08152",
-                "quote": "pre-seed funding round led by Titan Capital"
+                "quote": "pre-seed funding round led by Titan Capital",
+                "source_content_hash": "ad6ef54a62ae9742",
+                "quote_hash": "a66af8b3b780e7cadc01711b872d268899bd4b82167fdeffcddadc10ecd368f6"
               }
             ],
             "entity_id": null
@@ -119,7 +140,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3916f9c102f08152",
-                "quote": "participation from prominent angel investors including Varun Alagh (co-founder, Mamaearth)"
+                "quote": "participation from prominent angel investors including Varun Alagh (co-founder, Mamaearth)",
+                "source_content_hash": "ad6ef54a62ae9742",
+                "quote_hash": "7c8201db695c966c292914360b390a5d8740e8a0f24b5ebb06e650962fdef5ce"
               }
             ],
             "entity_id": null
@@ -130,7 +153,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3916f9c102f08152",
-                "quote": "Abhishek Goyal (co-founder, Tracxn)"
+                "quote": "Abhishek Goyal (co-founder, Tracxn)",
+                "source_content_hash": "ad6ef54a62ae9742",
+                "quote_hash": "d183b3d2a328f01bbd1684ddb3d24f5a8af4f19c40f1ae2f784742e9f140307c"
               }
             ],
             "entity_id": null
@@ -139,7 +164,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-3916f9c102f08152",
-            "quote": "Heizen, an AI-native software delivery startup, has raised $500,000 in a pre-seed funding round led by Titan Capital, with participation from prominent angel investors including Varun Alagh (co-founder, Mamaearth) and Abhishek Goyal (co-founder, Tracxn)."
+            "quote": "Heizen, an AI-native software delivery startup, has raised $500,000 in a pre-seed funding round led by Titan Capital, with participation from prominent angel investors including Varun Alagh (co-founder, Mamaearth) and Abhishek Goyal (co-founder, Tracxn).",
+            "source_content_hash": "ad6ef54a62ae9742",
+            "quote_hash": "cf4c4f822baa4b0211eaa9bf241f334f1b414202fbda9b0b39498440de853850"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-cab0d2efad362cf7",
+            "round_original": "Pre-Seed",
+            "amount": "$500,000",
+            "announced_at": "2025-07-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3916f9c102f08152",
+                "quote": "Heizen, an AI-native software delivery startup, has raised $500,000 in a pre-seed funding round led by Titan Capital, with participation from prominent angel investors including Varun Alagh (co-founder, Mamaearth) and Abhishek Goyal (co-founder, Tracxn).",
+                "source_content_hash": "ad6ef54a62ae9742",
+                "quote_hash": "cf4c4f822baa4b0211eaa9bf241f334f1b414202fbda9b0b39498440de853850"
+              }
+            ]
           }
         ]
       },
@@ -156,15 +202,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3916f9c102f08152",
-              "quote": "accelerate development of its proprietary multi-agent software delivery platform"
+              "quote": "accelerate development of its proprietary multi-agent software delivery platform",
+              "source_content_hash": "ad6ef54a62ae9742",
+              "quote_hash": "61b44fe96dadf6d01b5d16650ab6d97d48f315a1006e7ff0449baf2b0b29d8b6"
             },
             {
               "source_id": "FISRC-2ffc3120355648a6",
-              "quote": "The platform blends LLM-powered AI agents with human engineers to accelerate the design, development, and deployment of custom AI products, internal tools, and MVPs."
+              "quote": "The platform blends LLM-powered AI agents with human engineers to accelerate the design, development, and deployment of custom AI products, internal tools, and MVPs.",
+              "source_content_hash": "e4f80829e32e1e06",
+              "quote_hash": "4afafe668711d336dddc9a451c3f54a584874c1ec853339920f6a61fdf3735cc"
             },
             {
               "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "Rather than hourly billing or tracking engineers, the company bills based on results."
+              "quote": "Rather than hourly billing or tracking engineers, the company bills based on results.",
+              "source_content_hash": "3e0a22b2735ce5e4",
+              "quote_hash": "9a5881d9989b1703a3e7026afab4ef7f1f24f1da156a3631a8811031b6ba8eae"
             }
           ],
           "entity_id": null
@@ -181,7 +233,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software. Deploying in focused sprints, priced on results, not seats, hours or retainers."
+              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software. Deploying in focused sprints, priced on results, not seats, hours or retainers.",
+              "source_content_hash": "02c538699d96412f",
+              "quote_hash": "307f982c68ef5e56a1a41e93f9386d1209dff0795599aef222a755a3574e02df"
             }
           ],
           "entity_id": null
@@ -195,9 +249,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software."
+              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software.",
+              "source_content_hash": "02c538699d96412f",
+              "quote_hash": "48cd5c878de69cd164ad54b5692c4363dccf2104b9d30e61bd44c4bf3971395c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "ITC",
@@ -206,9 +263,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software."
+              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software.",
+              "source_content_hash": "02c538699d96412f",
+              "quote_hash": "48cd5c878de69cd164ad54b5692c4363dccf2104b9d30e61bd44c4bf3971395c"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "DHL",
@@ -217,9 +277,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software."
+              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software.",
+              "source_content_hash": "02c538699d96412f",
+              "quote_hash": "48cd5c878de69cd164ad54b5692c4363dccf2104b9d30e61bd44c4bf3971395c"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -231,7 +294,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3916f9c102f08152",
-              "quote": "Heizen claims to have onboarded over 50 clients across the U.S. and India"
+              "quote": "Heizen claims to have onboarded over 50 clients across the U.S. and India",
+              "source_content_hash": "ad6ef54a62ae9742",
+              "quote_hash": "6600b411245939b121dd4bbce5735a894efd29e6ba06256a815428225cd47944"
             }
           ]
         },
@@ -242,7 +307,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3916f9c102f08152",
-              "quote": "reports 20% month-over-month growth"
+              "quote": "reports 20% month-over-month growth",
+              "source_content_hash": "ad6ef54a62ae9742",
+              "quote_hash": "18d3e62d7269d1c21fa0afcf419b6b82fed4a21fe89485b8ada78c6dcee1a1e7"
             }
           ]
         },
@@ -253,7 +320,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3916f9c102f08152",
-              "quote": "With an 83% first-month client retention rate"
+              "quote": "With an 83% first-month client retention rate",
+              "source_content_hash": "ad6ef54a62ae9742",
+              "quote_hash": "64565509563d38d4644e291803f51c1f42714b1d5bb3daa88a55cbebc176bfc8"
             }
           ]
         },
@@ -264,7 +333,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3916f9c102f08152",
-              "quote": "the global $4.6 trillion IT services market"
+              "quote": "the global $4.6 trillion IT services market",
+              "source_content_hash": "ad6ef54a62ae9742",
+              "quote_hash": "362886363493e0babe0a19fa2998d07b792a1925074f0c7b487603efbffdc4d2"
             }
           ]
         },
@@ -275,7 +346,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "Heizen says it is already clocking over 100 sprints a month"
+              "quote": "Heizen says it is already clocking over 100 sprints a month",
+              "source_content_hash": "3e0a22b2735ce5e4",
+              "quote_hash": "9537ec55ce9b6677e82e29a8ccf71db01b7405684490326eea767c6757e90b17"
             }
           ]
         },
@@ -286,7 +359,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "They anticipate reaching $10 million ARR in the next 12-18 months"
+              "quote": "They anticipate reaching $10 million ARR in the next 12-18 months",
+              "source_content_hash": "3e0a22b2735ce5e4",
+              "quote_hash": "74fea228717f122e7fd389bf9a18a9d7cc2422e197ef1ba31c2a631adfc88116"
             }
           ]
         }
@@ -298,7 +373,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2ffc3120355648a6",
-              "quote": "Heizen is our attempt to rebuild Infosys for the AI age. We believe velocity, not headcount, should be the core metric."
+              "quote": "Heizen is our attempt to rebuild Infosys for the AI age. We believe velocity, not headcount, should be the core metric.",
+              "source_content_hash": "e4f80829e32e1e06",
+              "quote_hash": "ec91efbaf16dc4c319c06eac75b24c0948229e1fa4caf134929ba29e7326ce02"
             }
           ]
         },
@@ -308,7 +385,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "AI agents working alongside elite engineers unlock a 10x improvement in how software gets built"
+              "quote": "AI agents working alongside elite engineers unlock a 10x improvement in how software gets built",
+              "source_content_hash": "3e0a22b2735ce5e4",
+              "quote_hash": "3bd0fbe2a6b16c82a69b40f80185e72333d1149b9006ac8f11d2c23483a5f413"
             }
           ]
         }
@@ -324,7 +403,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6dc0f17f054b74fc",
-                "quote": "Their understanding of how artificial intelligence can be embedded meaningfully into the software development process is both practical and forward-looking. What stood out to us was their focus on delivering real value through a combination of strong engineering practices and thoughtful product design."
+                "quote": "Their understanding of how artificial intelligence can be embedded meaningfully into the software development process is both practical and forward-looking. What stood out to us was their focus on delivering real value through a combination of strong engineering practices and thoughtful product design.",
+                "source_content_hash": "3e0a22b2735ce5e4",
+                "quote_hash": "4dfd186c4a61fce6d92feb48400eaaed766872411eaf55a6991a4354313f5bd2"
               }
             ]
           }
@@ -341,7 +422,21 @@
           "AI 智能体在复杂企业环境中的可靠性尚未被大规模验证，其宣称的“10 倍效率提升”在应对高度定制化、遗留系统集成和严格安全要求时可能显著打折。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 原生软件交付与 IT 服务"
+        "sector": "AI 原生软件交付与 IT 服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“AI 智能体+精英工程师”这一混合交付模式对传统 IT 服务巨头（如 Infosys、TCS）的颠覆潜力。当前融资所依赖的已验证信号包括：已获得超过 50 家客户、20% 的月环比增长、83% 的首月留存率，以及 AI 智能体已承担 30-40% 交付周期的实际运营数据。这些信号表明其“速度优于人头数”的价值主张在早期市场得到了初步验证。然而，判断的证据边界在于，这些数据主要来自初创公司和中小型团队，其在大型企业客户中的可复制性和长期盈利能力尚未得到充分证明。",
+          "evidence_signals": [
+            "已服务超过 50 家客户，覆盖美国和印度市场",
+            "实现 20% 的月环比增长和 83% 的首月客户留存率",
+            "AI 智能体已承担 30-40% 的交付周期，且比例逐月上升",
+            "已获得联合利华、ITC、DHL 等知名企业品牌作为供应链软件客户"
+          ],
+          "risks": [
+            "企业级市场的销售周期长且决策复杂，从服务初创公司向服务大型企业的 GTM 转型可能面临销售效率和客户获取成本的挑战。",
+            "AI 智能体在复杂企业环境中的可靠性尚未被大规模验证，其宣称的“10 倍效率提升”在应对高度定制化、遗留系统集成和严格安全要求时可能显著打折。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -349,163 +444,77 @@
           "target_kind": "product",
           "research_name": "AI-Native Software Delivery Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3916f9c102f08152",
-              "quote": "accelerate development of its proprietary multi-agent software delivery platform"
-            },
-            {
-              "source_id": "FISRC-2ffc3120355648a6",
-              "quote": "The platform blends LLM-powered AI agents with human engineers to accelerate the design, development, and deployment of custom AI products, internal tools, and MVPs."
-            },
-            {
-              "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "Rather than hourly billing or tracking engineers, the company bills based on results."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Custom Supply Chain Software",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software. Deploying in focused sprints, priced on results, not seats, hours or retainers."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Aman Arora",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ffc3120355648a6",
-              "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma"
-            },
-            {
-              "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "Aman Arora, CEO and Co-founder of Heizen"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Abhilasha Singh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ffc3120355648a6",
-              "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma"
-            },
-            {
-              "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "co-founded Heizen with Abhilasha Singh, an ex-Microsoft engineering lead with a master's in Machine Learning from TU Munich"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Nijansh Verma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2ffc3120355648a6",
-              "quote": "Founded in April 2024 by Aman Arora, Abhilasha Singh, and Nijansh Verma"
-            },
-            {
-              "source_id": "FISRC-6dc0f17f054b74fc",
-              "quote": "Nijansh Verma, a GTM leader based in San Francisco"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Titan Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3916f9c102f08152",
-              "quote": "pre-seed funding round led by Titan Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Varun Alagh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3916f9c102f08152",
-              "quote": "participation from prominent angel investors including Varun Alagh (co-founder, Mamaearth)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Abhishek Goyal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3916f9c102f08152",
-              "quote": "Abhishek Goyal (co-founder, Tracxn)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Unilever",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "ITC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "DHL",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-78e470e9a94b8e8a",
-              "quote": "We work with enterprise brands like Unilever, ITC, and DHL to build custom supply chain software."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -579,13 +588,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:39:24.542Z"
+      "published_at": "2026-07-26T14:39:24.542Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI-Native Software Delivery Platform",
+            "Custom Supply Chain Software"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Abhilasha Singh",
+            "Aman Arora",
+            "Nijansh Verma"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-cab0d2efad362cf7"
+      ],
+      "aggregation": {
+        "key": "EN-81755fe5ba7860e7|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c77b134f91a370a2",
       "triggered_by_event_id": "EV-7951af05be21dc7c",
       "as_of_date": "2026-06-26",
@@ -603,7 +644,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1aab27ca4f1059fd",
-                "quote": "Ayush Shrivastava, CEO and founder of Quash"
+                "quote": "Ayush Shrivastava, CEO and founder of Quash",
+                "source_content_hash": "afdd3283685290c1",
+                "quote_hash": "367766840bd9f06a1eb524df73ca5362c5af56a577933b5ad37e081fadabfcf8"
               }
             ],
             "entity_id": null
@@ -614,7 +657,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-25bd68c6d56fa4eb",
-                "quote": "founded in 2023 by Ayush Shrivastava, Ameer Hamza, and Prakhar Shakya"
+                "quote": "founded in 2023 by Ayush Shrivastava, Ameer Hamza, and Prakhar Shakya",
+                "source_content_hash": "a2c06c31c6580402",
+                "quote_hash": "a6f08b1bbabffc3b90ced57f84a2a35d2919a108e83c0eb416414fc652371218"
               }
             ],
             "entity_id": null
@@ -625,7 +670,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-25bd68c6d56fa4eb",
-                "quote": "founded in 2023 by Ayush Shrivastava, Ameer Hamza, and Prakhar Shakya"
+                "quote": "founded in 2023 by Ayush Shrivastava, Ameer Hamza, and Prakhar Shakya",
+                "source_content_hash": "a2c06c31c6580402",
+                "quote_hash": "a6f08b1bbabffc3b90ced57f84a2a35d2919a108e83c0eb416414fc652371218"
               }
             ],
             "entity_id": null
@@ -637,23 +684,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-25bd68c6d56fa4eb",
-              "quote": "Employees 1 as on 19 Mar, 2024"
+              "quote": "Employees 1 as on 19 Mar, 2024",
+              "source_content_hash": "a2c06c31c6580402",
+              "quote_hash": "918775167991961922759c694ad5e2270556c7946f91b84ac6a1d5c0ff249a6e"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-70b20379e494fa2f",
-            "quote": "Quash, an AI startup based in Bengaluru"
+            "quote": "Quash, an AI startup based in Bengaluru",
+            "source_content_hash": "1d7bff75e7129429",
+            "quote_hash": "8ae4c67162a1452f3f5f84e3bdbf0aa29c3d7627724adec44bfe65ec8a7f9371"
           },
           {
             "source_id": "FISRC-70b20379e494fa2f",
-            "quote": "By using autonomous QA agents that automate the whole testing process—from finding bugs to fixing them—Quash is transforming the testing of mobile apps and doing away with the need for human testers."
+            "quote": "By using autonomous QA agents that automate the whole testing process—from finding bugs to fixing them—Quash is transforming the testing of mobile apps and doing away with the need for human testers.",
+            "source_content_hash": "1d7bff75e7129429",
+            "quote_hash": "0524fdcebfffdc4ee8f4723e10e741f0d0f8bd947131ca8d037f16fa5e9c2f78"
           }
         ]
       },
       "financing": {
-        "round": "Pre-seed",
+        "round": "预种子轮",
         "amount": "$635,000",
         "total_raised": "$635,000",
         "announced_at": "2024-08-20",
@@ -664,7 +717,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70b20379e494fa2f",
-                "quote": "raised $635,000 in pre-seed funding led by Arali Ventures"
+                "quote": "raised $635,000 in pre-seed funding led by Arali Ventures",
+                "source_content_hash": "1d7bff75e7129429",
+                "quote_hash": "a0c0c5c5432cacaba7d7f5b28669c1f81746b20dfba5b10f0d11542cb302c83b"
               }
             ],
             "entity_id": null
@@ -675,7 +730,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70b20379e494fa2f",
-                "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed."
+                "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
+                "source_content_hash": "1d7bff75e7129429",
+                "quote_hash": "ae7745b4f0a7a1897fc71656c3393b61a2f21aa032a63360425876c54e7bb68d"
               }
             ],
             "entity_id": null
@@ -686,7 +743,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70b20379e494fa2f",
-                "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed."
+                "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
+                "source_content_hash": "1d7bff75e7129429",
+                "quote_hash": "ae7745b4f0a7a1897fc71656c3393b61a2f21aa032a63360425876c54e7bb68d"
               }
             ],
             "entity_id": null
@@ -697,7 +756,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70b20379e494fa2f",
-                "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed."
+                "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
+                "source_content_hash": "1d7bff75e7129429",
+                "quote_hash": "ae7745b4f0a7a1897fc71656c3393b61a2f21aa032a63360425876c54e7bb68d"
               }
             ],
             "entity_id": null
@@ -708,29 +769,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-70b20379e494fa2f",
-                "quote": "Abhishek Goyal, a co-founder of Tracxn, have also contributed."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "C² Ventures",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-25bd68c6d56fa4eb",
-                "quote": "C² Ventures Venture capital fund focused on early-stage tech startups"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Z47",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-25bd68c6d56fa4eb",
-                "quote": "Z47 Venture capital investment firm"
+                "quote": "Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
+                "source_content_hash": "1d7bff75e7129429",
+                "quote_hash": "d427d45ab2395b9dc8245a626f5417341df4042e5e309f6c485424b6b668e14e"
               }
             ],
             "entity_id": null
@@ -739,11 +780,79 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-70b20379e494fa2f",
-            "quote": "Agentic AI startup Quash raised $635K Pre-seed funding from Arali Ventures"
+            "quote": "Agentic AI startup Quash raised $635K Pre-seed funding from Arali Ventures",
+            "source_content_hash": "1d7bff75e7129429",
+            "quote_hash": "673f4d7910c63cfe6158c03f0777577f504d5e4b1b2176f604bb15723049dfb3"
           },
           {
             "source_id": "FISRC-25bd68c6d56fa4eb",
-            "quote": "Latest Funding Round $635 K (USD), Seed Aug 20, 2024"
+            "quote": "Latest Funding Round $635 K (USD), Seed Aug 20, 2024",
+            "source_content_hash": "a2c06c31c6580402",
+            "quote_hash": "a07815f6e36bea3f6dc2055ffef59e2fb2965ac4a4fa6e1bb0c880f2df969f3a"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-seed",
+        "other_round_investors": [
+          {
+            "name": "C² Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-25bd68c6d56fa4eb",
+                "quote": "C² Ventures Venture capital fund focused on early-stage tech startups",
+                "source_content_hash": "a2c06c31c6580402",
+                "quote_hash": "b8565bd0c683cfd1b0ab67a2c792fc59d966c8cffe03104f0862bbd365a54a93"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          },
+          {
+            "name": "Z47",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-25bd68c6d56fa4eb",
+                "quote": "Z47 Venture capital investment firm",
+                "source_content_hash": "a2c06c31c6580402",
+                "quote_hash": "d18d007125b649c1c83aadf03f49162bcad48bc7e4daf5e6d3b54edfa8b2b4c7"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-7951af05be21dc7c",
+            "round_original": "Pre-seed",
+            "amount": "$635,000",
+            "announced_at": "2024-08-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-70b20379e494fa2f",
+                "quote": "Agentic AI startup Quash raised $635K Pre-seed funding from Arali Ventures",
+                "source_content_hash": "1d7bff75e7129429",
+                "quote_hash": "673f4d7910c63cfe6158c03f0777577f504d5e4b1b2176f604bb15723049dfb3"
+              },
+              {
+                "source_id": "FISRC-25bd68c6d56fa4eb",
+                "quote": "Latest Funding Round $635 K (USD), Seed Aug 20, 2024",
+                "source_content_hash": "a2c06c31c6580402",
+                "quote_hash": "a07815f6e36bea3f6dc2055ffef59e2fb2965ac4a4fa6e1bb0c880f2df969f3a"
+              }
+            ]
           }
         ]
       },
@@ -759,7 +868,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ca21c92b131d4205",
-              "quote": "Quash Automate, an AI-driven agent that oversees end-to-end testing, ensuring both speed and accuracy in software releases."
+              "quote": "Quash Automate, an AI-driven agent that oversees end-to-end testing, ensuring both speed and accuracy in software releases.",
+              "source_content_hash": "28da2af2d04e80a8",
+              "quote_hash": "a9532233719512d44f3c0c43af64255ad803345268b2faa8466641310024eee8"
             }
           ],
           "entity_id": null
@@ -775,7 +886,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Quash Report, an open-source bug reporting tool that is currently being used by hundreds of developers and more than 11 companies."
+              "quote": "Quash Report, an open-source bug reporting tool that is currently being used by hundreds of developers and more than 11 companies.",
+              "source_content_hash": "1d7bff75e7129429",
+              "quote_hash": "b2ab6b10c2a4b34e99fbcf6d876e7cd9762affeb63a9af983405df846924aa73"
             }
           ],
           "entity_id": null
@@ -790,11 +903,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Quash has introduced Appstronauts, a community for mobile developers"
+              "quote": "Quash has introduced Appstronauts, a community for mobile developers",
+              "source_content_hash": "1d7bff75e7129429",
+              "quote_hash": "3b257e4e2d5f67fa382a5d8e2796a199395d8ee9fabff585bc324c14ff7fb28c"
             },
             {
               "source_id": "FISRC-ca21c92b131d4205",
-              "quote": "its Appstronauts community offers a dedicated platform for mobile developers seeking faster, more accurate testing solutions."
+              "quote": "its Appstronauts community offers a dedicated platform for mobile developers seeking faster, more accurate testing solutions.",
+              "source_content_hash": "28da2af2d04e80a8",
+              "quote_hash": "9cb4614b5b3358413af07ef9ddfbb69ec034a52c8be82d8cae6f8e0221e3cef9"
             }
           ],
           "entity_id": null
@@ -810,7 +927,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Quash Report, an open-source bug reporting tool that is currently being used by hundreds of developers and more than 11 companies."
+              "quote": "Quash Report, an open-source bug reporting tool that is currently being used by hundreds of developers and more than 11 companies.",
+              "source_content_hash": "1d7bff75e7129429",
+              "quote_hash": "b2ab6b10c2a4b34e99fbcf6d876e7cd9762affeb63a9af983405df846924aa73"
             }
           ]
         },
@@ -821,7 +940,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "currently being used by hundreds of developers and more than 11 companies."
+              "quote": "currently being used by hundreds of developers and more than 11 companies.",
+              "source_content_hash": "1d7bff75e7129429",
+              "quote_hash": "fe11a768f1986aeb162316f923b9b4aa1deb988cd04e56335b954cf95bf83b89"
             }
           ]
         },
@@ -832,7 +953,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-25bd68c6d56fa4eb",
-              "quote": "The valuation of Quash is $2.45M as of Aug 2024."
+              "quote": "The valuation of Quash is $2.45M as of Aug 2024.",
+              "source_content_hash": "a2c06c31c6580402",
+              "quote_hash": "25b1753f30c3dadf2ad899fcf9ee477d083ef87f297a00371b300dee37456745"
             }
           ]
         },
@@ -843,7 +966,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e14a459c1f1dcbe5",
-              "quote": "87% Increase in test coverage"
+              "quote": "87% Increase in test coverage",
+              "source_content_hash": "434b19308baddf76",
+              "quote_hash": "39e13f51882474d2d1e0256717943aef8217afa7e35449f221605213341fd43c"
             }
           ]
         },
@@ -854,7 +979,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e14a459c1f1dcbe5",
-              "quote": "4X More edge cases caught"
+              "quote": "4X More edge cases caught",
+              "source_content_hash": "434b19308baddf76",
+              "quote_hash": "f381b403be1a33024cba17050b6b61e1a7af196fc405bc9318e3b413daf0d3fe"
             }
           ]
         },
@@ -865,7 +992,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e14a459c1f1dcbe5",
-              "quote": "25X Faster test suite creation"
+              "quote": "25X Faster test suite creation",
+              "source_content_hash": "434b19308baddf76",
+              "quote_hash": "216ba59e027cc75a6a4f02bedf9cf4517592fc3bc4c37cc37a26128fca5f431d"
             }
           ]
         },
@@ -876,7 +1005,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e14a459c1f1dcbe5",
-              "quote": "85% Less manual testing effort"
+              "quote": "85% Less manual testing effort",
+              "source_content_hash": "434b19308baddf76",
+              "quote_hash": "c28b15654e0e6dcd39ae64a71a45cb7cd77bb9bd654be83530f4c37c329ac98c"
             }
           ]
         }
@@ -888,7 +1019,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1aab27ca4f1059fd",
-              "quote": "At Quash, we are not just improving testing workflows; we are eliminating the need for them to be manual. Our vision is to make QA so easy and efficient that developers can focus entirely on innovation, knowing their software meets the highest standards of quality."
+              "quote": "At Quash, we are not just improving testing workflows; we are eliminating the need for them to be manual. Our vision is to make QA so easy and efficient that developers can focus entirely on innovation, knowing their software meets the highest standards of quality.",
+              "source_content_hash": "afdd3283685290c1",
+              "quote_hash": "d7bfbd3809588442fb1220e50fdacdaf0442e9c7fdfff97805621f3ef010c1c2"
             }
           ]
         },
@@ -898,7 +1031,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1aab27ca4f1059fd",
-              "quote": "What excites us about Quash is their novel approach of building AI agents to solve for the entire QA process for mobile teams. Ayush, Prakhar and Hamza bring a very first principles approach to product and company building and we are excited to partner with them as they build a transformative AI company."
+              "quote": "What excites us about Quash is their novel approach of building AI agents to solve for the entire QA process for mobile teams. Ayush, Prakhar and Hamza bring a very first principles approach to product and company building and we are excited to partner with them as they build a transformative AI company.",
+              "source_content_hash": "afdd3283685290c1",
+              "quote_hash": "f5f36679a084fac0f5757f3212f1ff4de6702079de725ae39e097d5782ed7f40"
             }
           ]
         }
@@ -914,7 +1049,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1aab27ca4f1059fd",
-                "quote": "Arali Ventures principal Harshal Gupta said, “What excites us about Quash is their novel approach of building AI agents to solve for the entire QA process for mobile teams. Ayush, Prakhar and Hamza bring a very first principles approach to product and company building and we are excited to partner with them as they build a transformative AI company.”"
+                "quote": "Arali Ventures principal Harshal Gupta said, “What excites us about Quash is their novel approach of building AI agents to solve for the entire QA process for mobile teams. Ayush, Prakhar and Hamza bring a very first principles approach to product and company building and we are excited to partner with them as they build a transformative AI company.”",
+                "source_content_hash": "afdd3283685290c1",
+                "quote_hash": "97d117e617d1e4c9183a3f88bcc34456712fae0fcf47b1155f3dbf28c4ead16d"
               }
             ]
           }
@@ -929,7 +1066,19 @@
           "公司截至2024年3月仅1名员工，团队规模和执行能力尚未得到验证，产品开发和市场推广面临资源约束。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI驱动的软件测试与质量保障自动化"
+        "sector": "AI驱动的软件测试与质量保障自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI驱动的端到端QA自动化能否替代人工测试，从而改变移动应用发布流程。本轮融资规模较小（63.5万美元），估值约245万美元，处于极早期验证阶段。已验证信号包括：开源工具Quash Report已被超过11家公司和数百名开发者采用，初步证明产品具备开发者社区吸引力；但公司截至2024年3月仅1名员工，商业化落地和团队扩张尚未开始。投资判断高度依赖创始团队的第一性原理产品思维和AI智能体在QA场景的技术可行性，而非规模化商业指标。",
+          "evidence_signals": [
+            "开源Bug报告工具Quash Report已被超过11家公司和数百名开发者采用",
+            "已推出面向移动开发者的社区Appstronauts",
+            "创始团队具备第一性原理的产品构建方法"
+          ],
+          "risks": [
+            "公司截至2024年3月仅1名员工，团队规模和执行能力尚未得到验证，产品开发和市场推广面临资源约束。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -937,173 +1086,91 @@
           "target_kind": "product",
           "research_name": "Quash Automate",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ca21c92b131d4205",
-              "quote": "Quash Automate, an AI-driven agent that oversees end-to-end testing, ensuring both speed and accuracy in software releases."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Quash Report",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Quash Report, an open-source bug reporting tool that is currently being used by hundreds of developers and more than 11 companies."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Appstronauts",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Quash has introduced Appstronauts, a community for mobile developers"
-            },
-            {
-              "source_id": "FISRC-ca21c92b131d4205",
-              "quote": "its Appstronauts community offers a dedicated platform for mobile developers seeking faster, more accurate testing solutions."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ayush Shrivastava",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1aab27ca4f1059fd",
-              "quote": "Ayush Shrivastava, CEO and founder of Quash"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ameer Hamza",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-25bd68c6d56fa4eb",
-              "quote": "founded in 2023 by Ayush Shrivastava, Ameer Hamza, and Prakhar Shakya"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Prakhar Shakya",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-25bd68c6d56fa4eb",
-              "quote": "founded in 2023 by Ayush Shrivastava, Ameer Hamza, and Prakhar Shakya"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Arali Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "raised $635,000 in pre-seed funding led by Arali Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Java Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "PeerCheque",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "DeVC by Matrix Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Abhishek Goyal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-70b20379e494fa2f",
-              "quote": "Abhishek Goyal, a co-founder of Tracxn, have also contributed."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "C² Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-25bd68c6d56fa4eb",
-              "quote": "C² Ventures Venture capital fund focused on early-stage tech startups"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Z47",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-25bd68c6d56fa4eb",
-              "quote": "Z47 Venture capital investment firm"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1189,13 +1256,46 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:38:30.766Z"
+      "published_at": "2026-07-26T14:38:30.766Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Appstronauts",
+            "Quash Automate",
+            "Quash Report"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Ameer Hamza",
+            "Ayush Shrivastava",
+            "Prakhar Shakya"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7951af05be21dc7c"
+      ],
+      "aggregation": {
+        "key": "EN-44355566aea5df6f|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-dec627e13347a261",
       "triggered_by_event_id": "EV-6484904c176aa016",
       "as_of_date": "2026-06-26",
@@ -1215,16 +1315,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-bcc816239b773128",
-            "quote": "Luna.ai , a 2022 beginning, is a leader in AI sales technology thanks to its extensive B2B platform."
+            "quote": "Luna.ai , a 2022 beginning, is a leader in AI sales technology thanks to its extensive B2B platform.",
+            "source_content_hash": "51aa50ac5c508ca4",
+            "quote_hash": "9b7fbe7e683476d2fb48eaf3057a4f76d6bc0a8f0a3711ba4f94261419c7dec4"
           },
           {
             "source_id": "FISRC-85fea16ec42d3b86",
-            "quote": "Founded in 2022, Luna.ai leads the AI sales technology sector with its comprehensive B2B platform."
+            "quote": "Founded in 2022, Luna.ai leads the AI sales technology sector with its comprehensive B2B platform.",
+            "source_content_hash": "fd390ce20d18f93f",
+            "quote_hash": "ddcdee149252efb138a3cf35a24550513932b7f6848f6b3b248c61d1a97382e4"
           }
         ]
       },
       "financing": {
-        "round": "Pre-Seed",
+        "round": "预种子轮",
         "amount": "$2.5M",
         "total_raised": "$2.5M",
         "announced_at": "2023-11-02",
@@ -1235,7 +1339,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-bcc816239b773128",
-                "quote": "CapitalT, an Amsterdam-based seed-stage venture capital fund that funds tech startups, led the oversubscribed investment."
+                "quote": "CapitalT, an Amsterdam-based seed-stage venture capital fund that funds tech startups, led the oversubscribed investment.",
+                "source_content_hash": "51aa50ac5c508ca4",
+                "quote_hash": "c48cca783fa89c4596beb83ebf42c8c70a12cbb1abc88ebf711e9380b84b4128"
               }
             ],
             "entity_id": null
@@ -1244,11 +1350,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-bcc816239b773128",
-            "quote": "Eindhoven-based Luna.ai raises $2.5M in a pre-seed funding."
+            "quote": "Eindhoven-based Luna.ai raises $2.5M in a pre-seed funding.",
+            "source_content_hash": "51aa50ac5c508ca4",
+            "quote_hash": "99654351d1e888c215bf618fab8b27107e93a5c71407d3797eb93a2612d62f36"
           },
           {
             "source_id": "FISRC-85fea16ec42d3b86",
-            "quote": "it secured $2.5M (approximately €2.34M) in a pre-seed round of funding."
+            "quote": "it secured $2.5M (approximately €2.34M) in a pre-seed round of funding.",
+            "source_content_hash": "fd390ce20d18f93f",
+            "quote_hash": "784e798db446ec85e549989b42c0a6df1f61692a0bbc262688c3c87aae95cee4"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-6484904c176aa016",
+            "round_original": "Pre-Seed",
+            "amount": "$2.5M",
+            "announced_at": "2023-11-02",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcc816239b773128",
+                "quote": "Eindhoven-based Luna.ai raises $2.5M in a pre-seed funding.",
+                "source_content_hash": "51aa50ac5c508ca4",
+                "quote_hash": "99654351d1e888c215bf618fab8b27107e93a5c71407d3797eb93a2612d62f36"
+              },
+              {
+                "source_id": "FISRC-85fea16ec42d3b86",
+                "quote": "it secured $2.5M (approximately €2.34M) in a pre-seed round of funding.",
+                "source_content_hash": "fd390ce20d18f93f",
+                "quote_hash": "784e798db446ec85e549989b42c0a6df1f61692a0bbc262688c3c87aae95cee4"
+              }
+            ]
           }
         ]
       },
@@ -1267,11 +1402,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcc816239b773128",
-              "quote": "The software uses artificial intelligence (AI) to find perfect leads, compile relevant web data, and create persuasive sales emails."
+              "quote": "The software uses artificial intelligence (AI) to find perfect leads, compile relevant web data, and create persuasive sales emails.",
+              "source_content_hash": "51aa50ac5c508ca4",
+              "quote_hash": "78da8c8a79e204635b5f54d8c9911e0a465b141683a5fadc08519f1cb6b4fe84"
             },
             {
               "source_id": "FISRC-85fea16ec42d3b86",
-              "quote": "Using AI, the platform identifies ideal leads, gathers relevant information online, and crafts effective sales emails."
+              "quote": "Using AI, the platform identifies ideal leads, gathers relevant information online, and crafts effective sales emails.",
+              "source_content_hash": "fd390ce20d18f93f",
+              "quote_hash": "5fec5b781b0c2b5ae146426c88fc5691c2ca08bd144f626e99a55b6e5f1f8791"
             }
           ],
           "entity_id": null
@@ -1287,7 +1426,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcc816239b773128",
-              "quote": "The recently released Command Centre, allowing sales directors to \"easily\" manage and scale their team of human and AI salespeople, was seen as a crucial step by the startup."
+              "quote": "The recently released Command Centre, allowing sales directors to \"easily\" manage and scale their team of human and AI salespeople, was seen as a crucial step by the startup.",
+              "source_content_hash": "51aa50ac5c508ca4",
+              "quote_hash": "53eb0aa2a06c1a705d33424b29c0f722eaf17926f95ce2440b32029a5ec11ea9"
             }
           ],
           "entity_id": null
@@ -1303,7 +1444,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcc816239b773128",
-              "quote": "Eindhoven-based Luna.ai raises $2.5M in a pre-seed funding."
+              "quote": "Eindhoven-based Luna.ai raises $2.5M in a pre-seed funding.",
+              "source_content_hash": "51aa50ac5c508ca4",
+              "quote_hash": "99654351d1e888c215bf618fab8b27107e93a5c71407d3797eb93a2612d62f36"
             }
           ]
         },
@@ -1314,7 +1457,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-bcc816239b773128",
-              "quote": "Luna.ai , a 2022 beginning"
+              "quote": "Luna.ai , a 2022 beginning",
+              "source_content_hash": "51aa50ac5c508ca4",
+              "quote_hash": "b2d51835a8bc4ed2bfad2667969f3bb5d9d20ce995924c1f7655ab2cbe69b4ae"
             }
           ]
         },
@@ -1325,7 +1470,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-81348646e3947340",
-              "quote": "Fluent in an impressive 152 languages."
+              "quote": "Fluent in an impressive 152 languages.",
+              "source_content_hash": "6f8072ceb060df57",
+              "quote_hash": "5bf7f26040ccc5a9da34727698691f15c765c9d2f3d515f007cc05b4446865e2"
             }
           ]
         },
@@ -1336,7 +1483,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-85fea16ec42d3b86",
-              "quote": "its onboarding process takes six minutes."
+              "quote": "its onboarding process takes six minutes.",
+              "source_content_hash": "fd390ce20d18f93f",
+              "quote_hash": "393af897e87a372fc019dd308353823612188df10314e73ddc7d844ce5b7b7af"
             }
           ]
         }
@@ -1354,7 +1503,19 @@
           "来源未披露任何营收、客户数量、留存率或付费转化等量化业务指标，Pre-Seed阶段产品市场匹配度尚未被规模化验证"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI销售技术 / B2B SaaS"
+        "sector": "AI销售技术 / B2B SaaS",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是“用AI代理重构传统销售漏斗”这一范式转换。投资方（尤其是领投方CapitalT）明确将Luna.ai定位为销售方式的变革者而非工具改良者，其判断依据是：1）公司已发布Command Center，实现了人类与AI销售人员的统一管理，产品从单点SDR功能向团队级指挥控制平台演进；2）投资方阵容包含前Salesforce EVP、前Zoom CMO等拥有大规模销售团队管理经验及竞品使用经验的个人天使，其参与本身构成对产品方向的产业验证。但当前所有信号均来自创始人和投资方的定性表述，缺乏ARR、客户数、留存率等量化业务指标，资本判断的证据边界仅限于产品概念验证和团队背景背书。",
+          "evidence_signals": [
+            "平台已发布Command Center，支持销售领导者管理并扩展人类与AI销售团队",
+            "投资方包含前Salesforce EVP和前Zoom CMO，具备大规模销售团队管理与竞品使用经验",
+            "平台入驻流程仅需6分钟，降低了企业试用门槛"
+          ],
+          "risks": [
+            "来源未披露任何营收、客户数量、留存率或付费转化等量化业务指标，Pre-Seed阶段产品市场匹配度尚未被规模化验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1362,43 +1523,21 @@
           "target_kind": "product",
           "research_name": "Luna.ai B2B Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcc816239b773128",
-              "quote": "The software uses artificial intelligence (AI) to find perfect leads, compile relevant web data, and create persuasive sales emails."
-            },
-            {
-              "source_id": "FISRC-85fea16ec42d3b86",
-              "quote": "Using AI, the platform identifies ideal leads, gathers relevant information online, and crafts effective sales emails."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Command Center",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcc816239b773128",
-              "quote": "The recently released Command Centre, allowing sales directors to \"easily\" manage and scale their team of human and AI salespeople, was seen as a crucial step by the startup."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "CapitalT",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-bcc816239b773128",
-              "quote": "CapitalT, an Amsterdam-based seed-stage venture capital fund that funds tech startups, led the oversubscribed investment."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1460,13 +1599,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:38:13.368Z"
+      "published_at": "2026-07-26T14:38:13.368Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Command Center",
+            "Luna.ai B2B Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-6484904c176aa016"
+      ],
+      "aggregation": {
+        "key": "EN-72badbbdbf521cec|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-adb73b37b79b4dc7",
       "triggered_by_event_id": "EV-7283de3f3a76d22b",
       "as_of_date": "2026-06-26",
@@ -1484,7 +1651,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "the company’s 31-year-old co-founder and CEO Pim de Witte"
+                "quote": "the company’s 31-year-old co-founder and CEO Pim de Witte",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "210e98a83614176a0ba716f7a43c7763dbd190010c712a950ffb8a9b72952cff"
               }
             ],
             "entity_id": null
@@ -1495,7 +1664,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli"
+                "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "4dde263552a4c4fb9af79c68c7e367fb7a8b53a1da1bf475dfdabda10d7aa867"
               }
             ],
             "entity_id": null
@@ -1506,7 +1677,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli"
+                "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "4dde263552a4c4fb9af79c68c7e367fb7a8b53a1da1bf475dfdabda10d7aa867"
               }
             ],
             "entity_id": null
@@ -1517,7 +1690,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli"
+                "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "4dde263552a4c4fb9af79c68c7e367fb7a8b53a1da1bf475dfdabda10d7aa867"
               }
             ],
             "entity_id": null
@@ -1529,19 +1704,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4636abec463123a9",
-              "quote": "even with a team as small as 25 people"
+              "quote": "even with a team as small as 25 people",
+              "source_content_hash": "6babe5630ef3dbfd",
+              "quote_hash": "6a96ba63751e0be2e01f1027b5048e9bcb1dbac2b4977e555d7f0dc76a82a9d7"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-1fcc20a8b95a7aec",
-            "quote": "As soon as I entered General Intuition’s R&D floor at its New York office"
+            "quote": "As soon as I entered General Intuition’s R&D floor at its New York office",
+            "source_content_hash": "01b9cc29b285066d",
+            "quote_hash": "164d878619da3384722059de9b2d2a74f52485d6dfdbc6b78a30a9b46c2b9d3c"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$320 million",
         "total_raised": "$454 million",
         "announced_at": "2026-06-25",
@@ -1552,7 +1731,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "General Intuition’s latest round was led by Khosla Ventures"
+                "quote": "General Intuition’s latest round was led by Khosla Ventures",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "37d13e53f6d6bcb3bc154fc5961feb072db93692a7dbdc17369ee369c4bcc4ca"
               }
             ],
             "entity_id": null
@@ -1563,7 +1744,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "with participation from General Catalyst"
+                "quote": "with participation from General Catalyst",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "87bf9a8cee415ae8aa119075ce53dc29890588ef9e8c4f58553ba01180d40993"
               }
             ],
             "entity_id": null
@@ -1574,7 +1757,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4636abec463123a9",
-                "quote": "Others investors include General Catalyst, Hedosophia, Jeff Bezos, Eric Schmidt and Nico Rosberg."
+                "quote": "Others investors include General Catalyst, Hedosophia, Jeff Bezos, Eric Schmidt and Nico Rosberg.",
+                "source_content_hash": "6babe5630ef3dbfd",
+                "quote_hash": "6b3050dd8661320fbb8ffced70a7cb014cc88c29a30bcf6d163e33337e1e4286"
               }
             ],
             "entity_id": null
@@ -1585,7 +1770,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fb702d5abe54d323",
-                "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg."
+                "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
+                "source_content_hash": "fd28378604fe6512",
+                "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
               }
             ],
             "entity_id": null
@@ -1596,7 +1783,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fb702d5abe54d323",
-                "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg."
+                "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg.",
+                "source_content_hash": "fd28378604fe6512",
+                "quote_hash": "994ced7253c5833b999940bc6771bc4a6d4bcd7f0e246daaa3cbad655e0e3365"
               }
             ],
             "entity_id": null
@@ -1607,7 +1796,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "and researchers at Google DeepMind and MIT."
+                "quote": "and researchers at Google DeepMind and MIT.",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "6ad6dc40a30f0261cc825f970b0c4ef7fc576eacc50e91ee3c68867bffe67b07"
               }
             ],
             "entity_id": null
@@ -1618,18 +1809,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "and researchers at Google DeepMind and MIT."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Khosla Ventures",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-4636abec463123a9",
-                "quote": "Khosla Ventures led the latest January round of $320 million, just as it had with the $133.7 million round."
+                "quote": "and researchers at Google DeepMind and MIT.",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "6ad6dc40a30f0261cc825f970b0c4ef7fc576eacc50e91ee3c68867bffe67b07"
               }
             ],
             "entity_id": null
@@ -1638,11 +1820,60 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1fcc20a8b95a7aec",
-            "quote": "General Intuition said it raised $320 million at a $2.3 billion valuation"
+            "quote": "General Intuition said it raised $320 million at a $2.3 billion valuation",
+            "source_content_hash": "01b9cc29b285066d",
+            "quote_hash": "41ba9cae208a6238aa35ec15e031702b9cdffe260cc251e9f0fdaf11c762de10"
           },
           {
             "source_id": "FISRC-1fcc20a8b95a7aec",
-            "quote": "The round brings General Intuition’s total disclosed funding to $454 million, after the $134 million round it raised at launch last October."
+            "quote": "The round brings General Intuition’s total disclosed funding to $454 million, after the $134 million round it raised at launch last October.",
+            "source_content_hash": "01b9cc29b285066d",
+            "quote_hash": "6abbd1b3faed6df383cce7629a66d4b1d94a040b5c130e89dffe1a2fd80cce04"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4636abec463123a9",
+                "quote": "Khosla Ventures led the latest January round of $320 million, just as it had with the $133.7 million round.",
+                "source_content_hash": "6babe5630ef3dbfd",
+                "quote_hash": "f44bf9f23030414c340d3165435f5e473e199c271ea913d717f48b75b02fe10d"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮领投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-7283de3f3a76d22b",
+            "round_original": "Series A",
+            "amount": "$320 million",
+            "announced_at": "2026-06-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1fcc20a8b95a7aec",
+                "quote": "General Intuition said it raised $320 million at a $2.3 billion valuation",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "41ba9cae208a6238aa35ec15e031702b9cdffe260cc251e9f0fdaf11c762de10"
+              },
+              {
+                "source_id": "FISRC-1fcc20a8b95a7aec",
+                "quote": "The round brings General Intuition’s total disclosed funding to $454 million, after the $134 million round it raised at launch last October.",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "6abbd1b3faed6df383cce7629a66d4b1d94a040b5c130e89dffe1a2fd80cce04"
+              }
+            ]
           }
         ]
       },
@@ -1659,11 +1890,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "We have a single model that can respond to Fortnite information on the screen and take action, but also to real-world dynamics in a way that an LLM could never."
+              "quote": "We have a single model that can respond to Fortnite information on the screen and take action, but also to real-world dynamics in a way that an LLM could never.",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "74ac61062ae08966c8699bdb3c10ad96b440dd489210b6e84a6b8e239a59045b"
             },
             {
               "source_id": "FISRC-4636abec463123a9",
-              "quote": "General Intuition is the frontier lab for acting in space and time. This spans virtual environments like video games and the physical world."
+              "quote": "General Intuition is the frontier lab for acting in space and time. This spans virtual environments like video games and the physical world.",
+              "source_content_hash": "6babe5630ef3dbfd",
+              "quote_hash": "9833ae438f2a8006ea832ec1ad21ac9d56c62d7dc1e45ceba1e0dbda7d18e08c"
             }
           ],
           "entity_id": null
@@ -1679,11 +1914,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "de Witte set me up with a laptop running General Intuition’s world model, a simulated environment generated frame-by-frame rather than rendered by a traditional game engine."
+              "quote": "de Witte set me up with a laptop running General Intuition’s world model, a simulated environment generated frame-by-frame rather than rendered by a traditional game engine.",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "f9ef66d11a748e1852f2267cd2175c9c6c4ec5a2e420ac7d2417ddbe03c40e19"
             },
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "For General Intuition, this world model isn’t the product; it’s the training environment (referred to as “the gym” internally)."
+              "quote": "For General Intuition, this world model isn’t the product; it’s the training environment (referred to as “the gym” internally).",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "631040e6ec0109d1173fd89b68e5cdf7422db9feca7f9bafe0b7a6ffdfa1c306"
             }
           ],
           "entity_id": null
@@ -1699,11 +1938,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "General Intuition recently launched a platform called Nerve, a jobs marketplace that lets gamers earn money using their existing setups."
+              "quote": "General Intuition recently launched a platform called Nerve, a jobs marketplace that lets gamers earn money using their existing setups.",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "4533d3ef02c504c849bab23707f7d4c7245e9d1047fc5a27d241bd7b3a35900f"
             },
             {
               "source_id": "FISRC-4636abec463123a9",
-              "quote": "the company has launched Nerve, its own data collection and jobs platform."
+              "quote": "the company has launched Nerve, its own data collection and jobs platform.",
+              "source_content_hash": "6babe5630ef3dbfd",
+              "quote_hash": "9be2cda88f6681736aeca76eab8905778180c171d1ceaedbd77c09f959bff561"
             }
           ],
           "entity_id": null
@@ -1717,13 +1960,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "Today, the startup has a handful of customers in gaming, simulation, and robotics."
+              "quote": "Today, the startup has a handful of customers in gaming, simulation, and robotics.",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "7400b3a07843c1b248ad45c1f11d1e6c6c4df8e9403ea67d6c19c894b14fe2e3"
             },
             {
               "source_id": "FISRC-4636abec463123a9",
-              "quote": "it has also onboarded its first partners across games, simulation, and robotics to its commercial API"
+              "quote": "it has also onboarded its first partners across games, simulation, and robotics to its commercial API",
+              "source_content_hash": "6babe5630ef3dbfd",
+              "quote_hash": "72370d066e56c2afb1387a9d81af1025cf66670515c893af96aa976ac2ceb0d3"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1737,9 +1985,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b1bc6d26ec74a93e",
-              "quote": "World Labs raised $1 billion in February"
+              "quote": "World Labs raised $1 billion in February",
+              "source_content_hash": "2822a2b9923b38bc",
+              "quote_hash": "8e20620ad866063f9beee6c89fc7de8bdf786072a330305af3e899a565735e2f"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Decart",
@@ -1751,9 +2002,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b1bc6d26ec74a93e",
-              "quote": "Decart secured $300 million in May"
+              "quote": "Decart secured $300 million in May",
+              "source_content_hash": "2822a2b9923b38bc",
+              "quote_hash": "78882b5e6b23bf8cb67272559ce9bb18a2d2a7dd875a70ea785a96fcc61be589"
             }
-          ]
+          ],
+          "entity_id": "EN-5e1fcba4c9f1cf69"
         },
         {
           "name": "Odyssey",
@@ -1765,9 +2019,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b1bc6d26ec74a93e",
-              "quote": "Odyssey closed a $310 million round in June, with Amazon and AMD participating."
+              "quote": "Odyssey closed a $310 million round in June, with Amazon and AMD participating.",
+              "source_content_hash": "2822a2b9923b38bc",
+              "quote_hash": "7403aafc755927168200bb776afdc76f3d362b5dd4c99d1c64eddad831b50a34"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1778,7 +2035,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-4636abec463123a9",
-              "quote": "Medal’s 17-million-plus monthly active video game players"
+              "quote": "Medal’s 17-million-plus monthly active video game players",
+              "source_content_hash": "6babe5630ef3dbfd",
+              "quote_hash": "b058995cf49294376479ebe7f2d452445f467a2559fce4fb03c1093812146d94"
             }
           ]
         },
@@ -1789,7 +2048,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "Our agent has been playing for 100 hours straight"
+              "quote": "Our agent has been playing for 100 hours straight",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "9c59d16a27aeae3e22b0638077b77c14fba19648bf364fec16aea8e9117ce218"
             }
           ]
         },
@@ -1800,7 +2061,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "it took just eight minutes of real-world robotics data to fine-tune an AI model for the quadruped"
+              "quote": "it took just eight minutes of real-world robotics data to fine-tune an AI model for the quadruped",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "b5feadb6b9f28d708d284a6653a4b8e1fe92368553228769bb81b4ec8da2bb62"
             }
           ]
         },
@@ -1811,7 +2074,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "General Intuition said it raised $320 million at a $2.3 billion valuation"
+              "quote": "General Intuition said it raised $320 million at a $2.3 billion valuation",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "41ba9cae208a6238aa35ec15e031702b9cdffe260cc251e9f0fdaf11c762de10"
             }
           ]
         },
@@ -1822,7 +2087,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "The round brings General Intuition’s total disclosed funding to $454 million"
+              "quote": "The round brings General Intuition’s total disclosed funding to $454 million",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "5ef9a6bc15233009f96335df1b7af51d655a636d155a527eb19f435a87670897"
             }
           ]
         },
@@ -1833,7 +2100,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "a gamer who made $1.5 million by building and hosting a private RuneScape server in his teens"
+              "quote": "a gamer who made $1.5 million by building and hosting a private RuneScape server in his teens",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "dba6a4d203538288bf03d7fc2e9c4137212234635a4bda132d4aebc23d551c6b"
             }
           ]
         }
@@ -1845,7 +2114,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "We have a single model that can respond to Fortnite information on the screen and take action, but also to real-world dynamics in a way that an LLM could never."
+              "quote": "We have a single model that can respond to Fortnite information on the screen and take action, but also to real-world dynamics in a way that an LLM could never.",
+              "source_content_hash": "01b9cc29b285066d",
+              "quote_hash": "74ac61062ae08966c8699bdb3c10ad96b440dd489210b6e84a6b8e239a59045b"
             }
           ]
         }
@@ -1861,7 +2132,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1fcc20a8b95a7aec",
-                "quote": "The amount and quality of proprietary data General Intuition has via Medal is one of the reasons Khosla is convinced the startup is a generational bet, not an M&A target; that it could become the backbone for generalized agents and world models in simulation and the real world."
+                "quote": "The amount and quality of proprietary data General Intuition has via Medal is one of the reasons Khosla is convinced the startup is a generational bet, not an M&A target; that it could become the backbone for generalized agents and world models in simulation and the real world.",
+                "source_content_hash": "01b9cc29b285066d",
+                "quote_hash": "dd3e349a1ebad0784077d820e8fbc6b177ddfc86f8092d7cc153e7578c2d5742"
               }
             ]
           }
@@ -1876,7 +2149,19 @@
           "从模拟到现实的迁移能否在复杂工业场景、多变光照和地面条件下大规模成立，仍是一个未被回答的开放性问题，缺乏公开基准测试验证。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI基础模型、具身智能、世界模型"
+        "sector": "AI基础模型、具身智能、世界模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“游戏数据作为训练物理世界AI的捷径”这一假设能否成立。本轮融资基于的已验证信号是：1）公司已展示出单一模型从游戏到真实机器人泛化的初步能力（如仅需8分钟真实数据微调）；2）其通过Medal平台拥有一个庞大、独特且持续增长的带动作标签的游戏数据库，构成了数据护城河。当前23亿美元的估值依赖于这一技术路径从演示到规模化商业应用的跨越。",
+          "evidence_signals": [
+            "单一AI模型同时控制游戏角色和真实四足机器人，展示了跨虚拟和物理环境的泛化能力。",
+            "仅需8分钟真实世界机器人数据即可微调模型，使其在陌生室内环境导航。",
+            "拥有来自Medal平台1700万月活用户的数十亿条带动作标签的游戏片段，构成独特的数据资产。"
+          ],
+          "risks": [
+            "从模拟到现实的迁移能否在复杂工业场景、多变光照和地面条件下大规模成立，仍是一个未被回答的开放性问题，缺乏公开基准测试验证。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1884,263 +2169,133 @@
           "target_kind": "product",
           "research_name": "大型行动基础模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "We have a single model that can respond to Fortnite information on the screen and take action, but also to real-world dynamics in a way that an LLM could never."
-            },
-            {
-              "source_id": "FISRC-4636abec463123a9",
-              "quote": "General Intuition is the frontier lab for acting in space and time. This spans virtual environments like video games and the physical world."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "世界模型 (内部称为“the gym”)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "de Witte set me up with a laptop running General Intuition’s world model, a simulated environment generated frame-by-frame rather than rendered by a traditional game engine."
-            },
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "For General Intuition, this world model isn’t the product; it’s the training environment (referred to as “the gym” internally)."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Nerve",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "General Intuition recently launched a platform called Nerve, a jobs marketplace that lets gamers earn money using their existing setups."
-            },
-            {
-              "source_id": "FISRC-4636abec463123a9",
-              "quote": "the company has launched Nerve, its own data collection and jobs platform."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Pim de Witte",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "the company’s 31-year-old co-founder and CEO Pim de Witte"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Eloi Alonso",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Adam Jelley",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Vincent Micheli",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "De Witte and his co-founders, Eloi Alonso, Adam Jelley, and Vincent Micheli"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Khosla Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "General Intuition’s latest round was led by Khosla Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "General Catalyst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "with participation from General Catalyst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Hedosophia",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4636abec463123a9",
-              "quote": "Others investors include General Catalyst, Hedosophia, Jeff Bezos, Eric Schmidt and Nico Rosberg."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bezos Expeditions",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fb702d5abe54d323",
-              "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Innovation Endeavors",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fb702d5abe54d323",
-              "quote": "joined by General Catalyst, Hedosophia, Bezos Expeditions, Innovation Endeavors, and Nico Rosberg."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Google DeepMind researchers",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "and researchers at Google DeepMind and MIT."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MIT researchers",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "and researchers at Google DeepMind and MIT."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Khosla Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4636abec463123a9",
-              "quote": "Khosla Ventures led the latest January round of $320 million, just as it had with the $133.7 million round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未具名的游戏、模拟和机器人领域合作伙伴",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1fcc20a8b95a7aec",
-              "quote": "Today, the startup has a handful of customers in gaming, simulation, and robotics."
-            },
-            {
-              "source_id": "FISRC-4636abec463123a9",
-              "quote": "it has also onboarded its first partners across games, simulation, and robotics to its commercial API"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "World Labs",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b1bc6d26ec74a93e",
-              "quote": "World Labs raised $1 billion in February"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Decart",
           "canonical_entity_id": "EN-5e1fcba4c9f1cf69",
-          "canonical_name": "Decart",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b1bc6d26ec74a93e",
-              "quote": "Decart secured $300 million in May"
-            }
-          ]
+          "canonical_name": "Decart"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Odyssey",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b1bc6d26ec74a93e",
-              "quote": "Odyssey closed a $310 million round in June, with Amazon and AMD participating."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2214,13 +2369,47 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:37:48.126Z"
+      "published_at": "2026-07-26T14:37:48.126Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Nerve",
+            "世界模型 (内部称为“the gym”)",
+            "大型行动基础模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Adam Jelley",
+            "Eloi Alonso",
+            "Pim de Witte",
+            "Vincent Micheli"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7283de3f3a76d22b"
+      ],
+      "aggregation": {
+        "key": "EN-dc8a5a5bf80909de|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-c4f144aa04022fea",
       "triggered_by_event_id": "EV-ceb23160ad25e497",
       "as_of_date": "2026-06-26",
@@ -2238,7 +2427,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2cad155f5fe9f7ab",
-                "quote": "Founded in 2023 by Abdulrhman Alsuliman, Newera.ai builds generative and agentic AI systems for enterprises."
+                "quote": "Founded in 2023 by Abdulrhman Alsuliman, Newera.ai builds generative and agentic AI systems for enterprises.",
+                "source_content_hash": "a95a7d1fc4df8c55",
+                "quote_hash": "c536e694f2795572805528a017a0447f256343fb8b3595e469cdc3905ee9be42"
               }
             ],
             "entity_id": null
@@ -2252,16 +2443,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2cad155f5fe9f7ab",
-            "quote": "Saudi Arabia-based AI startup Newera.ai has raised $2.1 million, or SAR 8 million, in a pre-seed funding round led by Embark, with participation from angel investors."
+            "quote": "Saudi Arabia-based AI startup Newera.ai has raised $2.1 million, or SAR 8 million, in a pre-seed funding round led by Embark, with participation from angel investors.",
+            "source_content_hash": "a95a7d1fc4df8c55",
+            "quote_hash": "4bc9876be9d99e24b5cbc5b50925713a04e220cb0e6035ba3097e7ab03207993"
           },
           {
             "source_id": "FISRC-d91345c6dc489b14",
-            "quote": "Newera.ai helps government and enterprise teams move from PoCs to production."
+            "quote": "Newera.ai helps government and enterprise teams move from PoCs to production.",
+            "source_content_hash": "73335df95aea950a",
+            "quote_hash": "f7617351dc317db7a32b3fe17e16591e56358ad8827d95c5f920e75adbfa0be1"
           }
         ]
       },
       "financing": {
-        "round": "Pre-Seed",
+        "round": "预种子轮",
         "amount": "$2.1 million",
         "total_raised": "$2.1 million",
         "announced_at": "2025-12-29",
@@ -2272,7 +2467,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2cad155f5fe9f7ab",
-                "quote": "a pre-seed funding round led by Embark"
+                "quote": "a pre-seed funding round led by Embark",
+                "source_content_hash": "a95a7d1fc4df8c55",
+                "quote_hash": "b885e4070256bd025d064d47b12b3d3cb7683774db8f206b478fdcd4a8f1a4a3"
               }
             ],
             "entity_id": null
@@ -2283,7 +2480,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2cad155f5fe9f7ab",
-                "quote": "with participation from angel investors"
+                "quote": "with participation from angel investors",
+                "source_content_hash": "a95a7d1fc4df8c55",
+                "quote_hash": "f126784cf4669d0f11401261a3c5a84c069fe5f978b1c88f102e0fbe45322aea"
               }
             ],
             "entity_id": null
@@ -2292,7 +2491,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-2cad155f5fe9f7ab",
-            "quote": "Saudi Arabia-based AI startup Newera.ai has raised $2.1 million, or SAR 8 million, in a pre-seed funding round led by Embark, with participation from angel investors."
+            "quote": "Saudi Arabia-based AI startup Newera.ai has raised $2.1 million, or SAR 8 million, in a pre-seed funding round led by Embark, with participation from angel investors.",
+            "source_content_hash": "a95a7d1fc4df8c55",
+            "quote_hash": "4bc9876be9d99e24b5cbc5b50925713a04e220cb0e6035ba3097e7ab03207993"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-ceb23160ad25e497",
+            "round_original": "Pre-Seed",
+            "amount": "$2.1 million",
+            "announced_at": "2025-12-29",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2cad155f5fe9f7ab",
+                "quote": "Saudi Arabia-based AI startup Newera.ai has raised $2.1 million, or SAR 8 million, in a pre-seed funding round led by Embark, with participation from angel investors.",
+                "source_content_hash": "a95a7d1fc4df8c55",
+                "quote_hash": "4bc9876be9d99e24b5cbc5b50925713a04e220cb0e6035ba3097e7ab03207993"
+              }
+            ]
           }
         ]
       },
@@ -2310,19 +2530,27 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "MVPs delivered in 1–4 weeks"
+              "quote": "MVPs delivered in 1–4 weeks",
+              "source_content_hash": "73335df95aea950a",
+              "quote_hash": "8f568d33e20cda7c0d9829bdc6ba251c5bf5797bb0290e1ee523f7e5f5627f7a"
             },
             {
               "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Trained on your real data and context"
+              "quote": "Trained on your real data and context",
+              "source_content_hash": "73335df95aea950a",
+              "quote_hash": "b544d46f683a1ba8a5efdf2b8b64332c129e5ed51d006cdaa98bef5a84f00769"
             },
             {
               "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Deployed in secure, private environments"
+              "quote": "Deployed in secure, private environments",
+              "source_content_hash": "73335df95aea950a",
+              "quote_hash": "412421793bb71309cec07e009854fa30fd160e9c195c8ad717bdf6c8583f251a"
             },
             {
               "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Our systems process Arabic and English natively"
+              "quote": "Our systems process Arabic and English natively",
+              "source_content_hash": "73335df95aea950a",
+              "quote_hash": "fb22cd9e69ae7ca8e82ae12e3a90aad77c6c151a3e1218c2dac008017d2214a2"
             }
           ],
           "entity_id": null
@@ -2335,7 +2563,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Agentic AI Platform"
+              "quote": "Agentic AI Platform",
+              "source_content_hash": "73335df95aea950a",
+              "quote_hash": "8906b94876252dc9417116ee9a499ba1256996db745b958af45aa87f88adca25"
             }
           ],
           "entity_id": null
@@ -2348,7 +2578,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "AskEnterprise"
+              "quote": "AskEnterprise",
+              "source_content_hash": "73335df95aea950a",
+              "quote_hash": "40c675dc468bd57bbd2944afd4ab94f612bb41b10d7e932e682030136450dd4c"
             }
           ],
           "entity_id": null
@@ -2364,7 +2596,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2cad155f5fe9f7ab",
-              "quote": "Newera.ai Raises $2.1M Pre-Seed Round"
+              "quote": "Newera.ai Raises $2.1M Pre-Seed Round",
+              "source_content_hash": "a95a7d1fc4df8c55",
+              "quote_hash": "135b336de1d5094f22c0fa47895f79d0072833e3c7ca4b040cda6a66655b3382"
             }
           ]
         },
@@ -2375,7 +2609,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2cad155f5fe9f7ab",
-              "quote": "SAR 8 million"
+              "quote": "SAR 8 million",
+              "source_content_hash": "a95a7d1fc4df8c55",
+              "quote_hash": "09fd4ad2bab073df1cc8e24bb8afc046d08f2506d3ba5b600857634001f54bbd"
             }
           ]
         },
@@ -2386,7 +2622,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2cad155f5fe9f7ab",
-              "quote": "Founded in 2023"
+              "quote": "Founded in 2023",
+              "source_content_hash": "a95a7d1fc4df8c55",
+              "quote_hash": "8f0e222b121c1b134003792f104ef783a9f0f8b1af61fba98fbfe3e5c824f7b9"
             }
           ]
         },
@@ -2397,7 +2635,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "MVPs delivered in 1–4 weeks"
+              "quote": "MVPs delivered in 1–4 weeks",
+              "source_content_hash": "73335df95aea950a",
+              "quote_hash": "8f568d33e20cda7c0d9829bdc6ba251c5bf5797bb0290e1ee523f7e5f5627f7a"
             }
           ]
         }
@@ -2409,7 +2649,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2cad155f5fe9f7ab",
-              "quote": "Alsuliman said the funding will support deeper integration with enterprise systems and accelerate product rollout as companies move forward with digital transformation plans."
+              "quote": "Alsuliman said the funding will support deeper integration with enterprise systems and accelerate product rollout as companies move forward with digital transformation plans.",
+              "source_content_hash": "a95a7d1fc4df8c55",
+              "quote_hash": "246d681520badb7002324403293ce390f5a2735a015ef12ca9d28a21c2dc1f9f"
             }
           ]
         }
@@ -2425,7 +2667,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-2cad155f5fe9f7ab",
-                "quote": "Embark said the investment aligns with growing demand for enterprise AI solutions in the Kingdom."
+                "quote": "Embark said the investment aligns with growing demand for enterprise AI solutions in the Kingdom.",
+                "source_content_hash": "a95a7d1fc4df8c55",
+                "quote_hash": "848e60afd03040ae0fe11711bd4bcb149c68ca23c3d085db2f550c84b924cb30"
               }
             ]
           }
@@ -2442,7 +2686,21 @@
           "数据本地化虽是合规优势，但也可能限制跨区域扩展的灵活性"
         ],
         "related_direction_id": "",
-        "sector": "企业级AI解决方案"
+        "sector": "企业级AI解决方案",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是沙特阿拉伯在“愿景2030”推动下产生的企业级AI部署需求，尤其是对数据本地化合规和生产级系统（而非实验性试点）的偏好。本轮融资所依赖的已验证信号包括：公司已明确聚焦金融、物流、运营等具体行业场景，并将数据本地化作为核心策略以满足监管要求。判断的证据边界限于Pre-Seed轮次，尚无客户名单、收入数据或规模化部署的公开验证。",
+          "evidence_signals": [
+            "公司成立于2023年，已构建生成式与智能体AI系统",
+            "明确聚焦企业用例而非消费者应用",
+            "将数据本地化作为核心策略，在沙特境内存储和处理数据以满足监管要求",
+            "目标行业为金融、物流和运营等寻求自动化与AI辅助决策的领域"
+          ],
+          "risks": [
+            "Pre-Seed阶段尚无公开客户案例或收入验证，产品市场匹配度未得到第三方证实",
+            "数据本地化虽是合规优势，但也可能限制跨区域扩展的灵活性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2450,90 +2708,42 @@
           "target_kind": "product",
           "research_name": "Custom AI Development",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "MVPs delivered in 1–4 weeks"
-            },
-            {
-              "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Trained on your real data and context"
-            },
-            {
-              "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Deployed in secure, private environments"
-            },
-            {
-              "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Our systems process Arabic and English natively"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Agentic AI Platform",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "Agentic AI Platform"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AskEnterprise",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d91345c6dc489b14",
-              "quote": "AskEnterprise"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Abdulrhman Alsuliman",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2cad155f5fe9f7ab",
-              "quote": "Founded in 2023 by Abdulrhman Alsuliman, Newera.ai builds generative and agentic AI systems for enterprises."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Embark",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2cad155f5fe9f7ab",
-              "quote": "a pre-seed funding round led by Embark"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "天使投资人",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2cad155f5fe9f7ab",
-              "quote": "with participation from angel investors"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2583,10 +2793,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:37:19.215Z"
+      "published_at": "2026-07-26T14:37:19.215Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Agentic AI Platform",
+            "AskEnterprise",
+            "Custom AI Development"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Abdulrhman Alsuliman"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-ceb23160ad25e497"
+      ],
+      "aggregation": {
+        "key": "EN-6ea730515425a60f|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

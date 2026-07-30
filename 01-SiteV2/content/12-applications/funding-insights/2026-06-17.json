@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-06-17",
     "generated_at": "2026-07-27T05:15:52.434Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 2,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-e614718b230885fb",
       "triggered_by_event_id": "EV-f8c3a83d883c9b22",
       "as_of_date": "2026-06-17",
@@ -35,11 +36,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4595161c40aec2c1",
-                "quote": "Investors had to put their money into a limited partnership managed by CEO Liang Wenfeng"
+                "quote": "Investors had to put their money into a limited partnership managed by CEO Liang Wenfeng",
+                "source_content_hash": "6faaa988514157f8",
+                "quote_hash": "da58c540f08965f81e420b9c2fc31db84cb5ddfd037109a73e92b3247612661e"
               },
               {
                 "source_id": "FISRC-6f84e84fa4821cb0",
-                "quote": "DeepSeek had funded itself through its founder Liang Wenfeng and High-Flyer, the quantitative hedge fund behind the AI lab, since it was founded in July 2023."
+                "quote": "DeepSeek had funded itself through its founder Liang Wenfeng and High-Flyer, the quantitative hedge fund behind the AI lab, since it was founded in July 2023.",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "2b7dc7d53394fe1598c33b5d9f4ce17b75053f5bfc3b81c22ca0b80a065de057"
               }
             ],
             "entity_id": null
@@ -53,16 +58,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-4595161c40aec2c1",
-            "quote": "Chinese AI startup DeepSeek has raised more than 50 billion yuan - about $7.4 billion - in its first external funding round."
+            "quote": "Chinese AI startup DeepSeek has raised more than 50 billion yuan - about $7.4 billion - in its first external funding round.",
+            "source_content_hash": "6faaa988514157f8",
+            "quote_hash": "10ae670607a24f295f15bf32c6c3483d4356b6866d98e06c844c8805e67eac3b"
           },
           {
             "source_id": "FISRC-6f84e84fa4821cb0",
-            "quote": "DeepSeek had funded itself through its founder Liang Wenfeng and High-Flyer, the quantitative hedge fund behind the AI lab, since it was founded in July 2023."
+            "quote": "DeepSeek had funded itself through its founder Liang Wenfeng and High-Flyer, the quantitative hedge fund behind the AI lab, since it was founded in July 2023.",
+            "source_content_hash": "4f78964f26b92981",
+            "quote_hash": "2b7dc7d53394fe1598c33b5d9f4ce17b75053f5bfc3b81c22ca0b80a065de057"
           }
         ]
       },
       "financing": {
-        "round": "首轮外部融资",
+        "round": "首次外部融资",
         "amount": "约500亿元人民币（约74亿美元）",
         "total_raised": "约500亿元人民币（约74亿美元）",
         "announced_at": "2026-06-16",
@@ -73,7 +82,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f84e84fa4821cb0",
-                "quote": "Liang himself contributed 20 billion yuan."
+                "quote": "Liang himself contributed 20 billion yuan.",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "fe4c2e6089973df16ffe911c9defea1eafb39f69cd01c905b9566e4779b5c91b"
               }
             ],
             "entity_id": null
@@ -84,11 +95,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4595161c40aec2c1",
-                "quote": "Tencent and battery maker CATL are among the biggest outside backers."
+                "quote": "Tencent and battery maker CATL are among the biggest outside backers.",
+                "source_content_hash": "6faaa988514157f8",
+                "quote_hash": "4804116ce822c095b4517ca999ab7b6c182a396db91b251591199df242eed60d"
               },
               {
                 "source_id": "FISRC-6f84e84fa4821cb0",
-                "quote": "The investor group includes Tencent, which contributed 10 billion yuan"
+                "quote": "The investor group includes Tencent, which contributed 10 billion yuan",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "963adcb5fcfc2c94b94fbcd5a1bd80a5c0e94a4714e420661e04196d57f245b3"
               }
             ],
             "entity_id": null
@@ -99,11 +114,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4595161c40aec2c1",
-                "quote": "Tencent and battery maker CATL are among the biggest outside backers."
+                "quote": "Tencent and battery maker CATL are among the biggest outside backers.",
+                "source_content_hash": "6faaa988514157f8",
+                "quote_hash": "4804116ce822c095b4517ca999ab7b6c182a396db91b251591199df242eed60d"
               },
               {
                 "source_id": "FISRC-6f84e84fa4821cb0",
-                "quote": "battery maker CATL, which invested 5 billion yuan."
+                "quote": "battery maker CATL, which invested 5 billion yuan.",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "54d9f83d4b316fb8e93876d2d2a6e78d33248875cd806edb542a09af8bd60950"
               }
             ],
             "entity_id": null
@@ -114,7 +133,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4595161c40aec2c1",
-                "quote": "The only exception is China's state-backed AI investment fund, which invested directly and keeps its voting rights."
+                "quote": "The only exception is China's state-backed AI investment fund, which invested directly and keeps its voting rights.",
+                "source_content_hash": "6faaa988514157f8",
+                "quote_hash": "e5aa4e136aa21e8aea9df8641df4dac523eaca2a5b6421b6f09ddfa2b70e13c1"
               }
             ],
             "entity_id": null
@@ -125,7 +146,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f84e84fa4821cb0",
-                "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan"
+                "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
               }
             ],
             "entity_id": null
@@ -136,7 +159,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f84e84fa4821cb0",
-                "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan"
+                "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
               }
             ],
             "entity_id": null
@@ -147,7 +172,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6f84e84fa4821cb0",
-                "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan"
+                "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "a1f9c8e473298805311c145b991d7554c6260e6997163768b55052a58304aabf"
               }
             ],
             "entity_id": null
@@ -156,11 +183,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-4595161c40aec2c1",
-            "quote": "Chinese AI startup DeepSeek has raised more than 50 billion yuan - about $7.4 billion - in its first external funding round. The company's valuation now tops $50 billion"
+            "quote": "Chinese AI startup DeepSeek has raised more than 50 billion yuan - about $7.4 billion - in its first external funding round. The company's valuation now tops $50 billion",
+            "source_content_hash": "6faaa988514157f8",
+            "quote_hash": "bd5a28289b01adc7e5d745ec51c90609deac769735c1698feb65a666029e4d4a"
           },
           {
             "source_id": "FISRC-6f84e84fa4821cb0",
-            "quote": "DeepSeek has raised about 50 billion yuan, or roughly $7.4bn (£5.8bn), in its first external funding round, giving the Chinese AI startup a post-money valuation of more than 350 billion yuan — approximately $52bn (£41bn) — according to a regulatory filing."
+            "quote": "DeepSeek has raised about 50 billion yuan, or roughly $7.4bn (£5.8bn), in its first external funding round, giving the Chinese AI startup a post-money valuation of more than 350 billion yuan — approximately $52bn (£41bn) — according to a regulatory filing.",
+            "source_content_hash": "4f78964f26b92981",
+            "quote_hash": "98a8736d8c646528f4fe16e5d4a7e733679f1ae43db37dd13afecf60650e9f7b"
+          }
+        ],
+        "round_code": "first_external",
+        "round_original": "首轮外部融资",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-f8c3a83d883c9b22",
+            "round_original": "首轮外部融资",
+            "amount": "约500亿元人民币（约74亿美元）",
+            "announced_at": "2026-06-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4595161c40aec2c1",
+                "quote": "Chinese AI startup DeepSeek has raised more than 50 billion yuan - about $7.4 billion - in its first external funding round. The company's valuation now tops $50 billion",
+                "source_content_hash": "6faaa988514157f8",
+                "quote_hash": "bd5a28289b01adc7e5d745ec51c90609deac769735c1698feb65a666029e4d4a"
+              },
+              {
+                "source_id": "FISRC-6f84e84fa4821cb0",
+                "quote": "DeepSeek has raised about 50 billion yuan, or roughly $7.4bn (£5.8bn), in its first external funding round, giving the Chinese AI startup a post-money valuation of more than 350 billion yuan — approximately $52bn (£41bn) — according to a regulatory filing.",
+                "source_content_hash": "4f78964f26b92981",
+                "quote_hash": "98a8736d8c646528f4fe16e5d4a7e733679f1ae43db37dd13afecf60650e9f7b"
+              }
+            ]
           }
         ]
       },
@@ -177,7 +233,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "DeepSeek estimated that V3 cost about $6m to train, far below the hundreds of millions or billions of dollars associated with some Western frontier-model efforts."
+              "quote": "DeepSeek estimated that V3 cost about $6m to train, far below the hundreds of millions or billions of dollars associated with some Western frontier-model efforts.",
+              "source_content_hash": "4f78964f26b92981",
+              "quote_hash": "e219759e55b727e5638933a3d263ed6708d31251d22212f0d562bd727762ff7c"
             }
           ],
           "entity_id": null
@@ -195,9 +253,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-747c957073ba3853",
-              "quote": "OpenAI raised $122 billion in March 2026."
+              "quote": "OpenAI raised $122 billion in March 2026.",
+              "source_content_hash": "e9b2324e29dbb97a",
+              "quote_hash": "e2f1e0bc4b316c6578fbf87d4981b469fcd379cd85452790d66ab5743ea5ab90"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         }
       ],
       "metrics": [
@@ -208,7 +269,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "DeepSeek has raised about 50 billion yuan, or roughly $7.4bn (£5.8bn), in its first external funding round, giving the Chinese AI startup a post-money valuation of more than 350 billion yuan — approximately $52bn (£41bn)"
+              "quote": "DeepSeek has raised about 50 billion yuan, or roughly $7.4bn (£5.8bn), in its first external funding round, giving the Chinese AI startup a post-money valuation of more than 350 billion yuan — approximately $52bn (£41bn)",
+              "source_content_hash": "4f78964f26b92981",
+              "quote_hash": "b78cd876d700e78c82765ad53e1dd9b14040a07ff8f9e04ddd7798963e7a5aba"
             }
           ]
         },
@@ -219,7 +282,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2b1667b3a58b725",
-              "quote": "DeepSeek reached 127 million monthly active users by March 2026"
+              "quote": "DeepSeek reached 127 million monthly active users by March 2026",
+              "source_content_hash": "7f9608acbd621908",
+              "quote_hash": "4ce7c28f9956a6ad85df074536783dd43bc008f6eafb3ae3f78a17c9576d56c3"
             }
           ]
         },
@@ -230,7 +295,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2b1667b3a58b725",
-              "quote": "generated an estimated $470 million in net profit during 2025, representing a 28% to 32% net profit margin."
+              "quote": "generated an estimated $470 million in net profit during 2025, representing a 28% to 32% net profit margin.",
+              "source_content_hash": "7f9608acbd621908",
+              "quote_hash": "9c4c526e68f0831a233760304ed1a63fde7b6ede4f571047e645696c4742479e"
             }
           ]
         },
@@ -241,7 +308,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2b1667b3a58b725",
-              "quote": "DeepSeek V4 Pro, released in April 2026, scores 90.1% on GPQA Diamond (graduate-level reasoning), compared to 93.6% for GPT-5.5."
+              "quote": "DeepSeek V4 Pro, released in April 2026, scores 90.1% on GPQA Diamond (graduate-level reasoning), compared to 93.6% for GPT-5.5.",
+              "source_content_hash": "7f9608acbd621908",
+              "quote_hash": "e925a83e917255d14cc88be182c0172c23c005dbd66ba32a14142c9820d26ea3"
             }
           ]
         },
@@ -252,7 +321,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-d2b1667b3a58b725",
-              "quote": "On SWE-bench Pro (real-world GitHub issue resolution), V4 Pro hits 55.4% versus 58.6% for GPT-5.5."
+              "quote": "On SWE-bench Pro (real-world GitHub issue resolution), V4 Pro hits 55.4% versus 58.6% for GPT-5.5.",
+              "source_content_hash": "7f9608acbd621908",
+              "quote_hash": "20faf823bdffc2c30c96d0b9a5c8e4664ae12dbd2a034da947712f01c5d3972b"
             }
           ]
         }
@@ -264,7 +335,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-747c957073ba3853",
-              "quote": "“Money has never been the problem for us. Bans on shipments of advanced chips are the problem.”"
+              "quote": "“Money has never been the problem for us. Bans on shipments of advanced chips are the problem.”",
+              "source_content_hash": "e9b2324e29dbb97a",
+              "quote_hash": "cf6b2b900866dd93bf5d5a22dfb674ffd7c883465096e1bdb8a40a14dda1984c"
             }
           ]
         }
@@ -280,7 +353,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4595161c40aec2c1",
-                "quote": "Liang had told investors ahead of the round that he prioritizes foundational AI research and AGI development over short-term profits and plans to keep building open-source models."
+                "quote": "Liang had told investors ahead of the round that he prioritizes foundational AI research and AGI development over short-term profits and plans to keep building open-source models.",
+                "source_content_hash": "6faaa988514157f8",
+                "quote_hash": "59068e57eb5009919f523e5a36eebc3d703dade815a5c5366ef5e69d9ac7608a"
               }
             ]
           }
@@ -297,7 +372,21 @@
           "资本支出差距：尽管DeepSeek以高效著称，但其约74亿美元的融资额与OpenAI（1220亿美元）、Anthropic（估值9650亿美元）等西方对手的资本体量相比仍有数量级差距，可能在未来需要大规模算力的智能体、多模态等前沿领域处于劣势。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "人工智能基础模型"
+        "sector": "人工智能基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是DeepSeek能否在受美国芯片出口限制的约束下，通过极致的算法效率和开源策略，持续缩小与西方前沿模型在性能上的差距，并维持其颠覆性的成本优势。本轮约520亿美元的估值，依赖于其已验证的信号：V4模型以GPT-5.5约1/11的输入成本和1/35的输出成本，在多项基准测试中取得了接近最先进水平的成绩（如GPQA Diamond得分90.1% vs 93.6%），并已实现1.27亿月活用户和约4.7亿美元的年净利润。然而，这一判断的证据边界在于，这些基准测试成绩和财务数据均来自公司自身或媒体报道，且其成本优势部分源于被迫使用较旧硬件的“效率优先”策略，当西方实验室以十倍以上的资本支出（OpenAI融资1220亿美元，Anthropic估值9650亿美元）推动算力规模时，这种效率优势能否在下一阶段的智能体（Agentic AI）和基础设施竞赛中持续，仍是未经验证的假设。",
+          "evidence_signals": [
+            "V4 Pro模型在GPQA Diamond基准测试中得分90.1%，接近GPT-5.5的93.6%。",
+            "V4 Pro的API输入价格约为GPT-5.5的1/11，输出价格约为1/35。",
+            "截至2026年3月，月活跃用户数达到1.27亿。",
+            "2025年实现约4.7亿美元净利润，净利润率28%-32%。"
+          ],
+          "risks": [
+            "地缘政治风险：国家AI基金的直接持股和投票权，强化了DeepSeek作为中国战略资产的属性，可能加速西方市场的禁令，限制其全球扩张。",
+            "资本支出差距：尽管DeepSeek以高效著称，但其约74亿美元的融资额与OpenAI（1220亿美元）、Anthropic（估值9650亿美元）等西方对手的资本体量相比仍有数量级差距，可能在未来需要大规模算力的智能体、多模态等前沿领域处于劣势。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -305,142 +394,70 @@
           "target_kind": "product",
           "research_name": "DeepSeek V3",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "DeepSeek estimated that V3 cost about $6m to train, far below the hundreds of millions or billions of dollars associated with some Western frontier-model efforts."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "梁文峰 (Liang Wenfeng)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4595161c40aec2c1",
-              "quote": "Investors had to put their money into a limited partnership managed by CEO Liang Wenfeng"
-            },
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "DeepSeek had funded itself through its founder Liang Wenfeng and High-Flyer, the quantitative hedge fund behind the AI lab, since it was founded in July 2023."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "梁文峰 (Liang Wenfeng)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "Liang himself contributed 20 billion yuan."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "腾讯 (Tencent)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4595161c40aec2c1",
-              "quote": "Tencent and battery maker CATL are among the biggest outside backers."
-            },
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "The investor group includes Tencent, which contributed 10 billion yuan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "宁德时代 (CATL)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4595161c40aec2c1",
-              "quote": "Tencent and battery maker CATL are among the biggest outside backers."
-            },
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "battery maker CATL, which invested 5 billion yuan."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "国家人工智能产业投资基金 (National AI Industry Investment Fund)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4595161c40aec2c1",
-              "quote": "The only exception is China's state-backed AI investment fund, which invested directly and keeps its voting rights."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "京东 (JD.com)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "网易 (NetEase)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "IDG资本 (IDG Capital)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6f84e84fa4821cb0",
-              "quote": "JD.com, NetEase and venture firm IDG Capital each contributed 3 billion yuan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-747c957073ba3853",
-              "quote": "OpenAI raised $122 billion in March 2026."
-            }
-          ]
+          "canonical_name": "OpenAI"
         }
       ],
       "funding_history": [
@@ -541,13 +558,42 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:32:02.979Z"
+      "published_at": "2026-07-26T14:32:02.979Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "DeepSeek V3"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "梁文峰 (Liang Wenfeng)"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-f8c3a83d883c9b22"
+      ],
+      "aggregation": {
+        "key": "EN-6f7ac1823da81d2e|first_external",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-caa2f70f983b633c",
       "triggered_by_event_id": "EV-c4c8976ab5b629a3",
       "as_of_date": "2026-06-17",
@@ -565,7 +611,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-50297b143ebc343f",
-                "quote": "As founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user"
+                "quote": "As founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user",
+                "source_content_hash": "5158bf9d2c2f18a0",
+                "quote_hash": "90699a11ed052b0630ecafe30a523c94fb20c1d5dd3daacbd30bc1bdaf0c17eb"
               }
             ],
             "entity_id": null
@@ -577,18 +625,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "The company lists itself at 2-10 employees"
+              "quote": "The company lists itself at 2-10 employees",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "54091f80712da857cd4a6bab979c4bd0f8313a20bb661776991070fcaf2b65f7"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-50297b143ebc343f",
-            "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors."
+            "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.",
+            "source_content_hash": "5158bf9d2c2f18a0",
+            "quote_hash": "ce50f750db0c3dd950147ac324448488c44d8d628b6b1a28ae92eeca7dffa03f"
           },
           {
             "source_id": "FISRC-6abd0681de6e07fa",
-            "quote": "Probably is developing AI infrastructure aimed at improving the reliability of AI systems."
+            "quote": "Probably is developing AI infrastructure aimed at improving the reliability of AI systems.",
+            "source_content_hash": "a16374502f4b3e1e",
+            "quote_hash": "b3c99f198e4a470d96e6c222ba8dceed330d50d0f7a50548fe63d0fb6314b610"
           }
         ]
       },
@@ -604,11 +658,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-50297b143ebc343f",
-                "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz"
+                "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz",
+                "source_content_hash": "5158bf9d2c2f18a0",
+                "quote_hash": "1665083b041875b1abdc50c5b98935310d14717da3cf3837b6671f9a00cc4c99"
               },
               {
                 "source_id": "FISRC-6abd0681de6e07fa",
-                "quote": "Andreessen Horowitz (Lead)"
+                "quote": "Andreessen Horowitz (Lead)",
+                "source_content_hash": "a16374502f4b3e1e",
+                "quote_hash": "7d2f14aa29b80a188862ffe118b1a76e9520ee9948674cd5e1d4a805422dd026"
               }
             ],
             "entity_id": null
@@ -617,7 +675,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-50297b143ebc343f",
-            "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz"
+            "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz",
+            "source_content_hash": "5158bf9d2c2f18a0",
+            "quote_hash": "1665083b041875b1abdc50c5b98935310d14717da3cf3837b6671f9a00cc4c99"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c4c8976ab5b629a3",
+            "round_original": "种子轮",
+            "amount": "$9 million",
+            "announced_at": "2026-06-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50297b143ebc343f",
+                "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz",
+                "source_content_hash": "5158bf9d2c2f18a0",
+                "quote_hash": "1665083b041875b1abdc50c5b98935310d14717da3cf3837b6671f9a00cc4c99"
+              }
+            ]
           }
         ]
       },
@@ -637,11 +716,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-50297b143ebc343f",
-              "quote": "Probably’s first product is a data science tool, built to produce quick answers from complex datasets. Each result comes with a citation and an audit trail for how it was developed"
+              "quote": "Probably’s first product is a data science tool, built to produce quick answers from complex datasets. Each result comes with a citation and an audit trail for how it was developed",
+              "source_content_hash": "5158bf9d2c2f18a0",
+              "quote_hash": "859d6dd13f9e1775b0d3474a0f8598a487918f509bade9ac47aff9f9325178fc"
             },
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably AI is a secure desktop app for data analysis that lets a user ask questions in plain English, connect a file or warehouse, and get back a report tied to the underlying data rather than a model’s confidence."
+              "quote": "Probably AI is a secure desktop app for data analysis that lets a user ask questions in plain English, connect a file or warehouse, and get back a report tied to the underlying data rather than a model’s confidence.",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "0ba141bcb270eade92669077f3b062338bc0fd84e9e9b22b9d7f0a50ca38c5ea"
             }
           ],
           "entity_id": null
@@ -659,13 +742,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "Patronus AI focuses on automated evaluation and hallucination detection. It also works on broader failure prevention for production AI systems."
+              "quote": "Patronus AI focuses on automated evaluation and hallucination detection. It also works on broader failure prevention for production AI systems.",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "ee2b3b771ea554894117fb9aac77ac436544e663ef184b70be985441496e8a45"
             },
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact."
+              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact.",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "72ae3cc0f7146b43748b8d81c1e3f1a93eb9f3eb2f21a21ba925d799fb3196f6"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Giskard",
@@ -677,13 +765,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "Giskard leans into testing and continuous red-teaming. It also offers enterprise controls for LLM agents."
+              "quote": "Giskard leans into testing and continuous red-teaming. It also offers enterprise controls for LLM agents.",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "dfc142ff5d78ea104f6750e3de4ac5e5fefd659ddc355b30ca5de6d862a7b3d7"
             },
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact."
+              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact.",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "72ae3cc0f7146b43748b8d81c1e3f1a93eb9f3eb2f21a21ba925d799fb3196f6"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Arize Phoenix",
@@ -695,13 +788,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "Arize Phoenix is the open-source favorite for observability and evaluation. It’s also used for debugging once LLM apps are already in motion."
+              "quote": "Arize Phoenix is the open-source favorite for observability and evaluation. It’s also used for debugging once LLM apps are already in motion.",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "6595930702f8f5669ed79147ce83f1caddffd2e31d57b3c735c3f1d0ba037c0c"
             },
             {
               "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact."
+              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact.",
+              "source_content_hash": "fbb050ad7dc9f32c",
+              "quote_hash": "72ae3cc0f7146b43748b8d81c1e3f1a93eb9f3eb2f21a21ba925d799fb3196f6"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -712,7 +810,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-50297b143ebc343f",
-              "quote": "achieve the kind of 99.99% accuracy that’s common in deterministic systems but much more difficult to reach with AI"
+              "quote": "achieve the kind of 99.99% accuracy that’s common in deterministic systems but much more difficult to reach with AI",
+              "source_content_hash": "5158bf9d2c2f18a0",
+              "quote_hash": "2910f144b831facbd3adad9b5fecdf03f4feb672ec206867a0532b488d923aad"
             }
           ]
         },
@@ -723,7 +823,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e42686b1995b655b",
-              "quote": "The company previously reported that running its infrastructure through DigitalOcean reduced its hardware costs by about 25% compared with a larger cloud provider."
+              "quote": "The company previously reported that running its infrastructure through DigitalOcean reduced its hardware costs by about 25% compared with a larger cloud provider.",
+              "source_content_hash": "9ecfbc109a8f7f28",
+              "quote_hash": "3659061c662d671ba31f81ec01e953bb874c82b680b1c03413e83d0fc6f9d43b"
             }
           ]
         },
@@ -734,7 +836,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6abd0681de6e07fa",
-              "quote": "Last Valuation $60M"
+              "quote": "Last Valuation $60M",
+              "source_content_hash": "a16374502f4b3e1e",
+              "quote_hash": "9bab79ce1c393c775c21f91cb49c798b345d737601fccd4198b7817e18626943"
             }
           ]
         }
@@ -752,7 +856,19 @@
           "确定性验证器架构仅在底层领域可被确定性检查时有效（如数据集查询、计算），在缺乏明确真值的开放式推理任务中难以适用，向会计和医疗领域的扩展面临不同的工程挑战。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI 基础设施与可靠性"
+        "sector": "AI 基础设施与可靠性",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：AI 可靠性的瓶颈不在于模型能力，而在于系统架构层面的约束与验证。Probably 的估值（6000 万美元）建立在已验证的信号之上：其产品已发布 Beta 0.1，可在本地硬件上运行比前沿模型弱四个等级的模型，同时将基础设施成本降低约 25%。这一信号表明，通过确定性验证器架构，企业可以在不依赖昂贵的大模型 API 的情况下实现高精度输出，从而在推理成本上升的背景下提供一条成本可控的 AI 采用路径。然而，该判断的证据边界仅限于数据分析这一单一场景，其在会计、医疗等更广泛领域的可扩展性尚未得到验证。",
+          "evidence_signals": [
+            "产品已发布 Beta 0.1，支持本地文件与多种数据库连接",
+            "当前系统运行在比前沿模型弱四个等级的模型上，可在桌面硬件上运行",
+            "通过 DigitalOcean 运行基础设施，硬件成本降低约 25%"
+          ],
+          "risks": [
+            "确定性验证器架构仅在底层领域可被确定性检查时有效（如数据集查询、计算），在缺乏明确真值的开放式推理任务中难以适用，向会计和医疗领域的扩展面临不同的工程挑战。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -760,98 +876,42 @@
           "target_kind": "product",
           "research_name": "数据科学工具",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50297b143ebc343f",
-              "quote": "Probably’s first product is a data science tool, built to produce quick answers from complex datasets. Each result comes with a citation and an audit trail for how it was developed"
-            },
-            {
-              "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably AI is a secure desktop app for data analysis that lets a user ask questions in plain English, connect a file or warehouse, and get back a report tied to the underlying data rather than a model’s confidence."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Peter Elias",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50297b143ebc343f",
-              "quote": "As founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-50297b143ebc343f",
-              "quote": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz"
-            },
-            {
-              "source_id": "FISRC-6abd0681de6e07fa",
-              "quote": "Andreessen Horowitz (Lead)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Patronus AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51796f1d63445449",
-              "quote": "Patronus AI focuses on automated evaluation and hallucination detection. It also works on broader failure prevention for production AI systems."
-            },
-            {
-              "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Giskard",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51796f1d63445449",
-              "quote": "Giskard leans into testing and continuous red-teaming. It also offers enterprise controls for LLM agents."
-            },
-            {
-              "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Arize Phoenix",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51796f1d63445449",
-              "quote": "Arize Phoenix is the open-source favorite for observability and evaluation. It’s also used for debugging once LLM apps are already in motion."
-            },
-            {
-              "source_id": "FISRC-51796f1d63445449",
-              "quote": "Probably is taking a different swing. It starts with an end-user data agent, not a toolkit for ML teams and emphasizes local execution and deterministic validation. It also uses weaker models instead of monitoring bigger ones after the fact."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -925,10 +985,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:31:45.783Z"
+      "published_at": "2026-07-26T14:31:45.783Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "数据科学工具"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Peter Elias"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c4c8976ab5b629a3"
+      ],
+      "aggregation": {
+        "key": "EN-a8ef01283d653e46|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

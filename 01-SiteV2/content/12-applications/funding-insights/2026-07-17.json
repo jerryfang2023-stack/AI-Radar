@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-17",
     "generated_at": "2026-07-26T15:19:20.287Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 3,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-36f291122b857b51",
       "triggered_by_event_id": "EV-02882e6f5e1902c6",
       "as_of_date": "2026-07-17",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "Founded in 2025 by former Ultrahuman VP-hardware Apoorv Shankar"
+                "quote": "Founded in 2025 by former Ultrahuman VP-hardware Apoorv Shankar",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "b1cc2f18c83360262098b9645fec65888250afc9f230be671850b437fc5df398"
               }
             ],
             "entity_id": null
@@ -47,14 +50,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Aina currently has about 35 employees across Bengaluru and San Francisco"
+              "quote": "Aina currently has about 35 employees across Bengaluru and San Francisco",
+              "source_content_hash": "495ca48cb14fa6d7",
+              "quote_hash": "d31a1534aaebc6f2a3fed4b7096ce272dedb7f7177dc32ea4079f79392c800a8"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-9e755507b523ddb2",
-            "quote": "Aina is an AI hardware startup building context-aware interfaces for the AI era."
+            "quote": "Aina is an AI hardware startup building context-aware interfaces for the AI era.",
+            "source_content_hash": "495ca48cb14fa6d7",
+            "quote_hash": "68b8e783b76a80eafc968601a73a417159fd60891ac7d1b4f473988f688ba3b2"
           }
         ]
       },
@@ -70,7 +77,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset."
+                "quote": "co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset.",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "8b2ad6a4b7dbc612aa5263beacf5668c03926cae03f08c0b80c1223a7dfdecda"
               }
             ],
             "entity_id": null
@@ -81,7 +90,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset."
+                "quote": "co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset.",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "8b2ad6a4b7dbc612aa5263beacf5668c03926cae03f08c0b80c1223a7dfdecda"
               }
             ],
             "entity_id": null
@@ -92,7 +103,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund."
+                "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund.",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
               }
             ],
             "entity_id": null
@@ -103,7 +116,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund."
+                "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund.",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
               }
             ],
             "entity_id": null
@@ -114,7 +129,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund."
+                "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund.",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
               }
             ],
             "entity_id": null
@@ -125,7 +142,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "Angel investors included WhatsApp head Kunal Shah"
+                "quote": "Angel investors included WhatsApp head Kunal Shah",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
               }
             ],
             "entity_id": null
@@ -136,7 +155,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "Scribd cofounder Tikhon Bernstam"
+                "quote": "Scribd cofounder Tikhon Bernstam",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "cd134fe7a8f2d2a0f03749199cb507b069d3f3d8062ee9332b575c7caeff9dfe"
               }
             ],
             "entity_id": null
@@ -147,7 +168,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "Razorpay cofounders Harshil Mathur and Shashank Kumar"
+                "quote": "Razorpay cofounders Harshil Mathur and Shashank Kumar",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "cbb90101787681174c537c49fab8b931af921e68e513a732441c8e25052b37b7"
               }
             ],
             "entity_id": null
@@ -158,7 +181,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "Razorpay cofounders Harshil Mathur and Shashank Kumar"
+                "quote": "Razorpay cofounders Harshil Mathur and Shashank Kumar",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "cbb90101787681174c537c49fab8b931af921e68e513a732441c8e25052b37b7"
               }
             ],
             "entity_id": null
@@ -169,7 +194,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9e755507b523ddb2",
-                "quote": "Better Capital founder Vaibhav Domkundwar, among others, also participated in the round."
+                "quote": "Better Capital founder Vaibhav Domkundwar, among others, also participated in the round.",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "3350e36888488d97d6159578cf4a59e23295e0a3c0b9af80aa027257fc6687a7"
               }
             ],
             "entity_id": null
@@ -178,11 +205,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9e755507b523ddb2",
-            "quote": "Aina has emerged from stealth with a $5.5 Mn seed round"
+            "quote": "Aina has emerged from stealth with a $5.5 Mn seed round",
+            "source_content_hash": "495ca48cb14fa6d7",
+            "quote_hash": "9225305260e80384bb816b275d5c715acc18adfae857fb1bdf6ff00e66903dff"
           },
           {
             "source_id": "FISRC-0de55c7e99fa4130",
-            "quote": "The company announced today that it has raised $5.5 million in a round led by Redstart Labs (Info Edge India) and 360 ONE"
+            "quote": "The company announced today that it has raised $5.5 million in a round led by Redstart Labs (Info Edge India) and 360 ONE",
+            "source_content_hash": "b857bbc55ce3951c",
+            "quote_hash": "faabd2f7cddff59ae4785a176417bdd87299402ba5554e8c768df840c75144fc"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-02882e6f5e1902c6",
+            "round_original": "种子轮",
+            "amount": "550万美元",
+            "announced_at": "2026-07-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9e755507b523ddb2",
+                "quote": "Aina has emerged from stealth with a $5.5 Mn seed round",
+                "source_content_hash": "495ca48cb14fa6d7",
+                "quote_hash": "9225305260e80384bb816b275d5c715acc18adfae857fb1bdf6ff00e66903dff"
+              },
+              {
+                "source_id": "FISRC-0de55c7e99fa4130",
+                "quote": "The company announced today that it has raised $5.5 million in a round led by Redstart Labs (Info Edge India) and 360 ONE",
+                "source_content_hash": "b857bbc55ce3951c",
+                "quote_hash": "faabd2f7cddff59ae4785a176417bdd87299402ba5554e8c768df840c75144fc"
+              }
+            ]
           }
         ]
       },
@@ -201,7 +257,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Dune, a programmable three-key keypad for Mac that changed its functions based on the application being used. The device, along with a natural language AI workflow builder, served as an early experiment in context-aware computing."
+              "quote": "Dune, a programmable three-key keypad for Mac that changed its functions based on the application being used. The device, along with a natural language AI workflow builder, served as an early experiment in context-aware computing.",
+              "source_content_hash": "495ca48cb14fa6d7",
+              "quote_hash": "e19fc9878de6fd314512c9caba10b30fc2fca29b81a048a1e980b731b873bcfc"
             }
           ],
           "entity_id": null
@@ -221,7 +279,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Radiance, a tabletop remote for video calls with a dial for volume and buttons for mic, camera, AI notetaker, voice modulation, and joining the meeting"
+              "quote": "Radiance, a tabletop remote for video calls with a dial for volume and buttons for mic, camera, AI notetaker, voice modulation, and joining the meeting",
+              "source_content_hash": "b857bbc55ce3951c",
+              "quote_hash": "b98cb828f9691ef33b4c8a62ef490cd7c41b1b0dbfa9ec20ab9f07117528d125"
             }
           ],
           "entity_id": null
@@ -239,13 +299,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Devices like Rabbit and Humane Pin had launched, and I had my own disappointments with them."
+              "quote": "Devices like Rabbit and Humane Pin had launched, and I had my own disappointments with them.",
+              "source_content_hash": "b857bbc55ce3951c",
+              "quote_hash": "d8eae1b470a08074bcac2ca1a8613841019ff437a3bfdf14e206a2da885d1d74"
             },
             {
               "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Rabbit R1 has positioned itself as another device for invoking AI agents."
+              "quote": "Rabbit R1 has positioned itself as another device for invoking AI agents.",
+              "source_content_hash": "b857bbc55ce3951c",
+              "quote_hash": "5c00ec3f8dc2a65c95bae7de5b31a564873531226436f2b369ef38d4014f4eef"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Humane",
@@ -257,9 +322,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Devices like Rabbit and Humane Pin had launched, and I had my own disappointments with them."
+              "quote": "Devices like Rabbit and Humane Pin had launched, and I had my own disappointments with them.",
+              "source_content_hash": "b857bbc55ce3951c",
+              "quote_hash": "d8eae1b470a08074bcac2ca1a8613841019ff437a3bfdf14e206a2da885d1d74"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "OpenAI",
@@ -271,9 +339,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Just this week, OpenAI released a custom keypad for Codex made with Work Louder."
+              "quote": "Just this week, OpenAI released a custom keypad for Codex made with Work Louder.",
+              "source_content_hash": "b857bbc55ce3951c",
+              "quote_hash": "7bf8314d0849e6aca1a184f1094468e31a1da5fa287a421b60dd677ebcf8c535"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         }
       ],
       "metrics": [
@@ -284,7 +355,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "It claims to have shipped hundreds of units"
+              "quote": "It claims to have shipped hundreds of units",
+              "source_content_hash": "495ca48cb14fa6d7",
+              "quote_hash": "2dd0fdf5ee79a2e2d029fa60c6b32b1480f4c0973bdc5c9b5c18b06da628ad53"
             }
           ]
         },
@@ -295,7 +368,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "forecast to reach $19.1 Bn by 2033"
+              "quote": "forecast to reach $19.1 Bn by 2033",
+              "source_content_hash": "495ca48cb14fa6d7",
+              "quote_hash": "dca0dce65d37b119f831a35dda31d7ee85ffa04ce845b4382b10db33459fa277"
             }
           ]
         }
@@ -312,7 +387,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-908c71ef348fe9e4",
-                "quote": "Vibhore Sharma of Redstart Labs noted that AI is fundamentally altering the relationship between users and software, paving the way for entirely new categories of interfaces."
+                "quote": "Vibhore Sharma of Redstart Labs noted that AI is fundamentally altering the relationship between users and software, paving the way for entirely new categories of interfaces.",
+                "source_content_hash": "cfd891dbf96efec6",
+                "quote_hash": "cacbc91089c0656f7c5cf4ddf733d85019712ceddb5c86c5829409878abf280f"
               }
             ]
           }
@@ -328,7 +405,20 @@
           "旗舰产品细节尚未公布，目前仅依赖 Dune 这一实验性产品的有限反馈，产品市场匹配度存在高度不确定性。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 硬件"
+        "sector": "AI 硬件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“AI 时代的人机交互界面形态”。当前融资所依赖的已验证信号包括：创始人 Apoorv Shankar 在 Ultrahuman 的消费硬件与制造经验，以及早期产品 Dune 已出货数百台并获得用户反馈，验证了上下文感知宏键盘的需求。判断的证据边界在于：Aina 的旗舰产品尚未发布，目前仅基于 Dune 这一实验性产品的早期市场反馈，且 AI 硬件领域尚无明确胜出的形态，风险较高。",
+          "evidence_signals": [
+            "创始人 Apoorv Shankar 拥有 Ultrahuman 硬件 VP 及 LazyCo 创业经验，具备消费硬件和制造能力。",
+            "早期产品 Dune 已出货数百台，并从中获取用户反馈以训练旗舰 AI 硬件界面。",
+            "在 CES 2026 上展示了三款 AI 界面原型，Dune 在早期测试中最受欢迎。"
+          ],
+          "risks": [
+            "AI 硬件形态尚无明确赢家，戒指、胸针、眼镜、键盘、音箱等多种形态并存，Aina 的最终产品形态可能无法获得市场广泛认可。",
+            "旗舰产品细节尚未公布，目前仅依赖 Dune 这一实验性产品的有限反馈，产品市场匹配度存在高度不确定性。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -336,212 +426,112 @@
           "target_kind": "product",
           "research_name": "Dune",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Dune, a programmable three-key keypad for Mac that changed its functions based on the application being used. The device, along with a natural language AI workflow builder, served as an early experiment in context-aware computing."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Radiance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Radiance, a tabletop remote for video calls with a dial for volume and buttons for mic, camera, AI notetaker, voice modulation, and joining the meeting"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Apoorv Shankar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Founded in 2025 by former Ultrahuman VP-hardware Apoorv Shankar"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Redstart Labs (Info Edge Ventures)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "360 ONE Asset",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MIXI Global Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Antler",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blume Founders Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Kunal Shah",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Angel investors included WhatsApp head Kunal Shah"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Tikhon Bernstam",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Scribd cofounder Tikhon Bernstam"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Harshil Mathur",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Razorpay cofounders Harshil Mathur and Shashank Kumar"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Shashank Kumar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Razorpay cofounders Harshil Mathur and Shashank Kumar"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Vaibhav Domkundwar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e755507b523ddb2",
-              "quote": "Better Capital founder Vaibhav Domkundwar, among others, also participated in the round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Rabbit",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Devices like Rabbit and Humane Pin had launched, and I had my own disappointments with them."
-            },
-            {
-              "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Rabbit R1 has positioned itself as another device for invoking AI agents."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Humane",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Devices like Rabbit and Humane Pin had launched, and I had my own disappointments with them."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0de55c7e99fa4130",
-              "quote": "Just this week, OpenAI released a custom keypad for Codex made with Work Louder."
-            }
-          ]
+          "canonical_name": "OpenAI"
         }
       ],
       "funding_history": [
@@ -622,13 +612,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:55:58.056Z"
+      "published_at": "2026-07-26T14:55:58.056Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Dune",
+            "Radiance"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Apoorv Shankar"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-02882e6f5e1902c6"
+      ],
+      "aggregation": {
+        "key": "EN-2a920347dfcf07a7|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-4fe22455c813c207",
       "triggered_by_event_id": "EV-6f092cfc7a064d64",
       "as_of_date": "2026-07-17",
@@ -646,11 +666,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1c40aad62f3bb1a3",
-                "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher"
+                "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher",
+                "source_content_hash": "123ae92608b50da6",
+                "quote_hash": "7a7fc1a17eda97d90897e1d273d2255a5ce5afc2edd56099023b68d1880a3098"
               },
               {
                 "source_id": "FISRC-0a52165fbfc8575b",
-                "quote": "Co-founders Andrew Dai (14 years at Google DeepMind) and Yinfei Yang (Apple multimodal systems)"
+                "quote": "Co-founders Andrew Dai (14 years at Google DeepMind) and Yinfei Yang (Apple multimodal systems)",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "7a2672dfc1269524b19dd501a198ac7341fa61ce4f269947b2dfea0859c3f4bf"
               }
             ],
             "entity_id": null
@@ -661,7 +685,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a52165fbfc8575b",
-                "quote": "Yinfei Yang, who built multimodal AI systems at Apple"
+                "quote": "Yinfei Yang, who built multimodal AI systems at Apple",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "d58a9229090667b9ba2f5ab0b498f80b9416bb4b90f68131caefcd358c95b308"
               }
             ],
             "entity_id": null
@@ -675,11 +701,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-0a52165fbfc8575b",
-            "quote": "Elorian, a Palo Alto-based startup building visual-reasoning AI"
+            "quote": "Elorian, a Palo Alto-based startup building visual-reasoning AI",
+            "source_content_hash": "ae17cd699a04f8e6",
+            "quote_hash": "3fa49d62d9edf4784632db1ebb1f3f670f8f13ac206ac8d781b7c8bc1b9ec970"
           },
           {
             "source_id": "FISRC-1c40aad62f3bb1a3",
-            "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher"
+            "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher",
+            "source_content_hash": "123ae92608b50da6",
+            "quote_hash": "7a7fc1a17eda97d90897e1d273d2255a5ce5afc2edd56099023b68d1880a3098"
           }
         ]
       },
@@ -695,7 +725,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a52165fbfc8575b",
-                "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital"
+                "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
               }
             ],
             "entity_id": null
@@ -706,11 +738,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a52165fbfc8575b",
-                "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital"
+                "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
               },
               {
                 "source_id": "FISRC-1c40aad62f3bb1a3",
-                "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures over even higher valuation offers"
+                "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures over even higher valuation offers",
+                "source_content_hash": "123ae92608b50da6",
+                "quote_hash": "a84fddf630c74c7c1ba460e3abe4c6abdcf727c721006cbfa7b4d00f33c5cbb2"
               }
             ],
             "entity_id": null
@@ -721,7 +757,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a52165fbfc8575b",
-                "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital"
+                "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
               }
             ],
             "entity_id": null
@@ -732,11 +770,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a52165fbfc8575b",
-                "quote": "with strategic backing from Nvidia"
+                "quote": "with strategic backing from Nvidia",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "78466cd846a34d989680d277ce53f4b62533494daf260e1278a883ee7570e994"
               },
               {
                 "source_id": "FISRC-1c40aad62f3bb1a3",
-                "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures"
+                "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures",
+                "source_content_hash": "123ae92608b50da6",
+                "quote_hash": "3d0f04f1a750ae582fffb267db65cd04477c8a303f78a4bb73d5d01e7dbc6cd9"
               }
             ],
             "entity_id": "EN-8d4321d936320802"
@@ -747,7 +789,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0a52165fbfc8575b",
-                "quote": "angel investment from Google SVP Jeff Dean"
+                "quote": "angel investment from Google SVP Jeff Dean",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "203c17999b1234ae949971f9a5ea71fa3abfbe76982d0381beb1fd7260c8c8de"
               }
             ],
             "entity_id": null
@@ -756,11 +800,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-0a52165fbfc8575b",
-            "quote": "Elorian raised a $55M seed round at a $300M post-money valuation"
+            "quote": "Elorian raised a $55M seed round at a $300M post-money valuation",
+            "source_content_hash": "ae17cd699a04f8e6",
+            "quote_hash": "07d2c3b4fa16285b6475936ad7a92014ca545bf07b4773c90fec9218d3db4232"
           },
           {
             "source_id": "FISRC-1c40aad62f3bb1a3",
-            "quote": "his company raised a $55 million seed round at a $300 million valuation just months after leaving Google"
+            "quote": "his company raised a $55 million seed round at a $300 million valuation just months after leaving Google",
+            "source_content_hash": "123ae92608b50da6",
+            "quote_hash": "a72a756dcb4fe8ba6cda949af8f08027edf3bdce54bd60c2e0ef95189638fa46"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-6f092cfc7a064d64",
+            "round_original": "种子轮",
+            "amount": "$55 million",
+            "announced_at": "2026-04",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0a52165fbfc8575b",
+                "quote": "Elorian raised a $55M seed round at a $300M post-money valuation",
+                "source_content_hash": "ae17cd699a04f8e6",
+                "quote_hash": "07d2c3b4fa16285b6475936ad7a92014ca545bf07b4773c90fec9218d3db4232"
+              },
+              {
+                "source_id": "FISRC-1c40aad62f3bb1a3",
+                "quote": "his company raised a $55 million seed round at a $300 million valuation just months after leaving Google",
+                "source_content_hash": "123ae92608b50da6",
+                "quote_hash": "a72a756dcb4fe8ba6cda949af8f08027edf3bdce54bd60c2e0ef95189638fa46"
+              }
+            ]
           }
         ]
       },
@@ -777,15 +850,21 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-05d9ea1894cf6d8f",
-              "quote": "At Elorian, we believe building systems that natively understand and reason through the visual medium the way humans do is the most important work in AI today."
+              "quote": "At Elorian, we believe building systems that natively understand and reason through the visual medium the way humans do is the most important work in AI today.",
+              "source_content_hash": "e2d25549c3e707eb",
+              "quote_hash": "7a72ab5c32fb12f07c0e7194672245a2b3220507df853923407c911bdc86a311"
             },
             {
               "source_id": "FISRC-05d9ea1894cf6d8f",
-              "quote": "Rather than treating images as static inputs, we train models to directly interact with and manipulate visual representations: interpreting structure, relationships, and constraints."
+              "quote": "Rather than treating images as static inputs, we train models to directly interact with and manipulate visual representations: interpreting structure, relationships, and constraints.",
+              "source_content_hash": "e2d25549c3e707eb",
+              "quote_hash": "bb8121cd50d993344bc07a290706138472fc239b2e5b47dfa46e7cde0ccb6bfd"
             },
             {
               "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Potential commercial applications span architecture, automotive, robotics, and manufacturing"
+              "quote": "Potential commercial applications span architecture, automotive, robotics, and manufacturing",
+              "source_content_hash": "ae17cd699a04f8e6",
+              "quote_hash": "137ef64b499281e1908dafc6b18bc504d8dd540c91e3c39eecc1df576bc8a22a"
             }
           ],
           "entity_id": null
@@ -803,9 +882,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Thinking Machines recently closed a seed round at a $12 billion valuation, though Elorian achieved a more aggressive valuation-to-capital ratio"
+              "quote": "Thinking Machines recently closed a seed round at a $12 billion valuation, though Elorian achieved a more aggressive valuation-to-capital ratio",
+              "source_content_hash": "ae17cd699a04f8e6",
+              "quote_hash": "9e07e324d0d99845921e5acb8916326fd74f6a57651845a2662ecb73f6e2de45"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -816,7 +898,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Elorian raised a $55M seed round"
+              "quote": "Elorian raised a $55M seed round",
+              "source_content_hash": "ae17cd699a04f8e6",
+              "quote_hash": "7e3f9ce3dae99a28ab2e4b762294d7e92bc4fd8469341ac68e44d9c394594421"
             }
           ]
         },
@@ -827,7 +911,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "at a $300M post-money valuation"
+              "quote": "at a $300M post-money valuation",
+              "source_content_hash": "ae17cd699a04f8e6",
+              "quote_hash": "4cd8c3fdecf4dda54eda829506a21c32fe7ccc4c95c691f7fb10fdfc4df6c11c"
             }
           ]
         },
@@ -838,7 +924,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "roughly 20 to 60 times the typical pre-seed range of $5 million to $15 million"
+              "quote": "roughly 20 to 60 times the typical pre-seed range of $5 million to $15 million",
+              "source_content_hash": "ae17cd699a04f8e6",
+              "quote_hash": "b28b20749471a49e76d6d2f2c5798ec9526895a9a05355953d9da66c5f1b6aa9"
             }
           ]
         },
@@ -849,7 +937,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Andrew Dai, a 14-year veteran of Google DeepMind"
+              "quote": "Andrew Dai, a 14-year veteran of Google DeepMind",
+              "source_content_hash": "ae17cd699a04f8e6",
+              "quote_hash": "23187e458c810ce97854fe59be4ea9c6a691c1583f59f9ba1ad89329627486c9"
             }
           ]
         }
@@ -861,7 +951,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c40aad62f3bb1a3",
-              "quote": "You have models that are doing really great at math, really great at new physics ideas, and of course coding is very popular now … But one area where progress has been extremely uneven is visual understanding and visual reasoning"
+              "quote": "You have models that are doing really great at math, really great at new physics ideas, and of course coding is very popular now … But one area where progress has been extremely uneven is visual understanding and visual reasoning",
+              "source_content_hash": "123ae92608b50da6",
+              "quote_hash": "b8de057b229ecc05565c7f9867a0c7497b9081a699c6f84fc4173542d8d863e3"
             }
           ]
         },
@@ -871,7 +963,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1c40aad62f3bb1a3",
-              "quote": "At Elorian, we want to build models that will advance us toward visual AGI."
+              "quote": "At Elorian, we want to build models that will advance us toward visual AGI.",
+              "source_content_hash": "123ae92608b50da6",
+              "quote_hash": "4140d62c08b56cd2f633575f0163c01ce925733db70eed5e7de0c8e677e2c893"
             }
           ]
         },
@@ -881,7 +975,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-16a98f99b82b03fd",
-              "quote": "for us it was really important to have the the right people on our cap table, the right investors who can who understand this journey of an AI company which could be, you know, revenue free for some period of time."
+              "quote": "for us it was really important to have the the right people on our cap table, the right investors who can who understand this journey of an AI company which could be, you know, revenue free for some period of time.",
+              "source_content_hash": "e023af69e22d2eb5",
+              "quote_hash": "74ea9cf59e11d61fb3c85e61583dd56673c2819b0a8ba533989a4ed653502df8"
             }
           ]
         }
@@ -901,7 +997,22 @@
           "视觉推理领域的前沿实验室（如DeepMind、OpenAI等）正在快速推进，Elorian离开大厂后可能面临技术进度落后的风险"
         ],
         "related_direction_id": "",
-        "sector": "视觉推理AI/前沿AI模型"
+        "sector": "视觉推理AI/前沿AI模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是创始团队在顶级AI实验室（Google DeepMind、Apple）积累的深厚前沿研究资历，以及视觉推理作为AI下一个主要前沿领域的巨大潜力。3亿美元估值所依赖的已验证信号包括：Andrew Dai在DeepMind期间参与了对ChatGPT发展有影响的基础研究；联合创始人Yinfei Yang在Apple构建多模态系统的经验；团队从全球顶级AI实验室招募了预训练、数据和多模态领域的负责人；Nvidia作为战略投资方和Jeff Dean作为天使投资人的背书。然而，这些信号均基于团队背景和战略愿景，而非产品验证或商业牵引力——公司在融资时尚未发布任何产品、未产生收入。",
+          "evidence_signals": [
+            "创始人Andrew Dai在Google DeepMind有14年前沿AI研究经验，其2015年论文被OpenAI引用为ChatGPT的配方",
+            "联合创始人Yinfei Yang在Apple从事多模态AI系统开发",
+            "团队从全球顶级AI实验室招募了预训练、数据和多模态领域的负责人",
+            "Nvidia作为战略投资方参与本轮融资",
+            "Google AI研究负责人Jeff Dean以个人天使投资人身份参与"
+          ],
+          "risks": [
+            "公司在融资时尚未发布任何产品、未产生任何收入，所有估值完全基于团队背景和技术愿景，存在极高的执行风险",
+            "视觉推理领域的前沿实验室（如DeepMind、OpenAI等）正在快速推进，Elorian离开大厂后可能面临技术进度落后的风险"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -909,137 +1020,63 @@
           "target_kind": "product",
           "research_name": "视觉推理模型",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-05d9ea1894cf6d8f",
-              "quote": "At Elorian, we believe building systems that natively understand and reason through the visual medium the way humans do is the most important work in AI today."
-            },
-            {
-              "source_id": "FISRC-05d9ea1894cf6d8f",
-              "quote": "Rather than treating images as static inputs, we train models to directly interact with and manipulate visual representations: interpreting structure, relationships, and constraints."
-            },
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Potential commercial applications span architecture, automotive, robotics, and manufacturing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Andrew Dai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1c40aad62f3bb1a3",
-              "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher"
-            },
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Co-founders Andrew Dai (14 years at Google DeepMind) and Yinfei Yang (Apple multimodal systems)"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yinfei Yang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Yinfei Yang, who built multimodal AI systems at Apple"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Striker Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital"
-            },
-            {
-              "source_id": "FISRC-1c40aad62f3bb1a3",
-              "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures over even higher valuation offers"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Altimeter Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "with strategic backing from Nvidia"
-            },
-            {
-              "source_id": "FISRC-1c40aad62f3bb1a3",
-              "quote": "he prioritized strategic partners like Nvidia and Menlo Ventures"
-            }
-          ]
+          "canonical_name": "NVIDIA"
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jeff Dean",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "angel investment from Google SVP Jeff Dean"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Thinking Machines",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0a52165fbfc8575b",
-              "quote": "Thinking Machines recently closed a seed round at a $12 billion valuation, though Elorian achieved a more aggressive valuation-to-capital ratio"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1122,13 +1159,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:55:45.024Z"
+      "published_at": "2026-07-26T14:55:45.024Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "视觉推理模型"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Andrew Dai",
+            "Yinfei Yang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-6f092cfc7a064d64"
+      ],
+      "aggregation": {
+        "key": "EN-e647c818ac38b6ca|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-4e6e70433b57ddcf",
       "triggered_by_event_id": "EV-4eaf3aabecae6016",
       "as_of_date": "2026-07-17",
@@ -1146,7 +1213,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0d89e0712245c55b",
-                "quote": "co-founder and Chief Executive Officer Lin Qiao"
+                "quote": "co-founder and Chief Executive Officer Lin Qiao",
+                "source_content_hash": "82ccac3b5ede24d2",
+                "quote_hash": "d80863064ff44f4fcda4f01afb0516a6708e8610e6a8d1776bb13a0a9569616a"
               }
             ],
             "entity_id": null
@@ -1158,23 +1227,29 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "The plan is to grow from 200 to 600 employees by year-end."
+              "quote": "The plan is to grow from 200 to 600 employees by year-end.",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote_hash": "e42920be52572b951f2be8a72ae3aa3241ea5a911ffe165ac2097d807d4379a3"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-0d89e0712245c55b",
-            "quote": "Fireworks AI Inc., a startup that helps developers train and run artificial intelligence models"
+            "quote": "Fireworks AI Inc., a startup that helps developers train and run artificial intelligence models",
+            "source_content_hash": "82ccac3b5ede24d2",
+            "quote_hash": "b2fdf62cebdf762cb6b045489d7fd878aed2dfd75ddfe5e73911876e97334e9e"
           },
           {
             "source_id": "FISRC-dc600442a39828d4",
-            "quote": "The company gives enterprises the tools to ditch generic, one-size-fits-all systems from the likes of OpenAI or Google. Instead, businesses can build and run specialized AI models trained on their own private data."
+            "quote": "The company gives enterprises the tools to ditch generic, one-size-fits-all systems from the likes of OpenAI or Google. Instead, businesses can build and run specialized AI models trained on their own private data.",
+            "source_content_hash": "88980901b6103a22",
+            "quote_hash": "fef2456cebe87900375e2e11af4571008b1364b6bb1434d149528099bbfaa5da"
           }
         ]
       },
       "financing": {
-        "round": "Series D",
+        "round": "D轮",
         "amount": "$1.505 billion",
         "total_raised": "超过 $2 billion",
         "announced_at": "2026-07-16",
@@ -1185,7 +1260,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0d89e0712245c55b",
-                "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round."
+                "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+                "source_content_hash": "82ccac3b5ede24d2",
+                "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
               }
             ],
             "entity_id": null
@@ -1196,7 +1273,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0d89e0712245c55b",
-                "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round."
+                "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+                "source_content_hash": "82ccac3b5ede24d2",
+                "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
               }
             ],
             "entity_id": null
@@ -1207,7 +1286,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0d89e0712245c55b",
-                "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round."
+                "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
+                "source_content_hash": "82ccac3b5ede24d2",
+                "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
               }
             ],
             "entity_id": null
@@ -1218,11 +1299,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-0d89e0712245c55b",
-                "quote": "they were joined by more than a half-dozen other backers, including Nvidia Corp."
+                "quote": "they were joined by more than a half-dozen other backers, including Nvidia Corp.",
+                "source_content_hash": "82ccac3b5ede24d2",
+                "quote_hash": "349e1d2de32bfca75897fb71f2ae9e309579714cee9cf6e5d66274d1f7cc4c43"
               },
               {
                 "source_id": "FISRC-dc600442a39828d4",
-                "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in."
+                "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+                "source_content_hash": "88980901b6103a22",
+                "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
               }
             ],
             "entity_id": null
@@ -1233,11 +1318,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc600442a39828d4",
-                "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in."
+                "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+                "source_content_hash": "88980901b6103a22",
+                "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
               },
               {
                 "source_id": "FISRC-243f05d139793fc0",
-                "quote": "Since our first investment in their 2025 Series C, Fireworks has reached $1B in annual revenue"
+                "quote": "Since our first investment in their 2025 Series C, Fireworks has reached $1B in annual revenue",
+                "source_content_hash": "3bce6125918d1d23",
+                "quote_hash": "955909c0ef6c69c5516e1ed2f2a0ebcb8a6969e618b05f98846956e20c3433ff"
               }
             ],
             "entity_id": null
@@ -1248,7 +1337,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-dc600442a39828d4",
-                "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in."
+                "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in.",
+                "source_content_hash": "88980901b6103a22",
+                "quote_hash": "433795f53b6056423c050ab452165227ab4efeb1062489173a4a6a6bb0cf4ec9"
               }
             ],
             "entity_id": null
@@ -1259,7 +1350,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-80d6b020dd75ac09",
-                "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated."
+                "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+                "source_content_hash": "2ac54d2d554e9655",
+                "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
               }
             ],
             "entity_id": null
@@ -1270,7 +1363,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1237a4476f41ad9",
-                "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, and 20VC participating."
+                "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, and 20VC participating.",
+                "source_content_hash": "bbcd4459be4aa17d",
+                "quote_hash": "634e72e688b462c8f5b9f6f69243e65eb4e0d54fa5711f832e4352e9ebf2d1fa"
               }
             ],
             "entity_id": null
@@ -1281,7 +1376,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-d1237a4476f41ad9",
-                "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, 20VC, Evantic Capital"
+                "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, 20VC, Evantic Capital",
+                "source_content_hash": "bbcd4459be4aa17d",
+                "quote_hash": "486ed133733508192d99c9442cc28609416f8dbcf16f73dc2a3db403590b0e3f"
               }
             ],
             "entity_id": null
@@ -1292,7 +1389,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-80d6b020dd75ac09",
-                "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated."
+                "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+                "source_content_hash": "2ac54d2d554e9655",
+                "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
               }
             ],
             "entity_id": null
@@ -1303,7 +1402,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-80d6b020dd75ac09",
-                "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated."
+                "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+                "source_content_hash": "2ac54d2d554e9655",
+                "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
               }
             ],
             "entity_id": null
@@ -1312,7 +1413,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-cf8736b57678264a",
-            "quote": "Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV"
+            "quote": "Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV",
+            "source_content_hash": "e00535ede1af055c",
+            "quote_hash": "75f2fab5369eefe0a99dcb0e7b85c2376dc43756be94c8601b271116de1e32f8"
+          }
+        ],
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4eaf3aabecae6016",
+            "round_original": "Series D",
+            "amount": "$1.505 billion",
+            "announced_at": "2026-07-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cf8736b57678264a",
+                "quote": "Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV",
+                "source_content_hash": "e00535ede1af055c",
+                "quote_hash": "75f2fab5369eefe0a99dcb0e7b85c2376dc43756be94c8601b271116de1e32f8"
+              }
+            ]
           }
         ]
       },
@@ -1333,7 +1455,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "Fireworks operates a cloud platform that developers can use to fine-tune, or customize, open-source AI models. It provides access to managed graphics card clusters under a usage-based pricing model."
+              "quote": "Fireworks operates a cloud platform that developers can use to fine-tune, or customize, open-source AI models. It provides access to managed graphics card clusters under a usage-based pricing model.",
+              "source_content_hash": "82ccac3b5ede24d2",
+              "quote_hash": "c8cda5f0ae4c154c4aa32b2bece3661be51a3e5a5ebc09fbd6e14f050f4dd288"
             }
           ],
           "entity_id": null
@@ -1347,9 +1471,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Customers include Uber, Shopify, GitLab, MongoDB, Harvey and Cursor"
+              "quote": "Customers include Uber, Shopify, GitLab, MongoDB, Harvey and Cursor",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote_hash": "91be6eae831cc44b087d0f280b3d214fdc767b4fd7020c0756d0dcdf13ec1ab9"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Cursor",
@@ -1358,9 +1485,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf8736b57678264a",
-              "quote": "From Cursor's coding models to Harvey's legal AI, companies across industries are building specialized intelligence with Fireworks."
+              "quote": "From Cursor's coding models to Harvey's legal AI, companies across industries are building specialized intelligence with Fireworks.",
+              "source_content_hash": "e00535ede1af055c",
+              "quote_hash": "6e749d146570033bbe2c0d7c616424978e96aa27b0b3fae37fe1ac77361d9c9b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Harvey",
@@ -1369,9 +1499,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf8736b57678264a",
-              "quote": "From Cursor's coding models to Harvey's legal AI, companies across industries are building specialized intelligence with Fireworks."
+              "quote": "From Cursor's coding models to Harvey's legal AI, companies across industries are building specialized intelligence with Fireworks.",
+              "source_content_hash": "e00535ede1af055c",
+              "quote_hash": "6e749d146570033bbe2c0d7c616424978e96aa27b0b3fae37fe1ac77361d9c9b"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1385,13 +1518,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Fireworks now sits well above Together AI and Baseten on valuation, and it is pushing beyond inference into training"
+              "quote": "Fireworks now sits well above Together AI and Baseten on valuation, and it is pushing beyond inference into training",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote_hash": "5f9e3d98855b1691fca16bfa193b9094207dbf8c1e435d0b64583c50f8c86ce3"
             },
             {
               "source_id": "FISRC-5f67f5d54147b10e",
-              "quote": "Together AI, which sells a comparable model-agnostic inference platform, closed an $800 million round around the start of July at a reported $8.3 billion valuation"
+              "quote": "Together AI, which sells a comparable model-agnostic inference platform, closed an $800 million round around the start of July at a reported $8.3 billion valuation",
+              "source_content_hash": "2dd666b370c9cea5",
+              "quote_hash": "49c8870575cf5a5ba5e7399d38c4dbb55dcfd39d91f5fbc2d271cbd0aa5313e1"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Baseten",
@@ -1403,9 +1541,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Fireworks now sits well above Together AI and Baseten on valuation, and it is pushing beyond inference into training"
+              "quote": "Fireworks now sits well above Together AI and Baseten on valuation, and it is pushing beyond inference into training",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote_hash": "5f9e3d98855b1691fca16bfa193b9094207dbf8c1e435d0b64583c50f8c86ce3"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1416,7 +1557,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "its annualized revenue past the $1 billion mark"
+              "quote": "its annualized revenue past the $1 billion mark",
+              "source_content_hash": "82ccac3b5ede24d2",
+              "quote_hash": "b546a1a3ae38341fbe7d3593e3529909d61d82f5d633102cd67bbbabca1447fa"
             }
           ]
         },
@@ -1427,7 +1570,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "Fireworks says that it processes more than 40 trillion tokens per day for its users."
+              "quote": "Fireworks says that it processes more than 40 trillion tokens per day for its users.",
+              "source_content_hash": "82ccac3b5ede24d2",
+              "quote_hash": "edd5d6782b9f54e1ec4731dbe9b52a7a61905ddb2a4233a1c0678dac474d5aa6"
             }
           ]
         },
@@ -1438,7 +1583,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cf8736b57678264a",
-              "quote": "More than 95% of those tokens come from models specialized on customers' proprietary data and optimized for specific jobs."
+              "quote": "More than 95% of those tokens come from models specialized on customers' proprietary data and optimized for specific jobs.",
+              "source_content_hash": "e00535ede1af055c",
+              "quote_hash": "21e225a1d74ad6c5fe0705bb0bbafeb5f075a11aa81b2adfbb7f120f9441ebda"
             }
           ]
         },
@@ -1449,7 +1596,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "The company is now worth $17.5 billion."
+              "quote": "The company is now worth $17.5 billion.",
+              "source_content_hash": "82ccac3b5ede24d2",
+              "quote_hash": "c96baaab9f4a96df0397730d08a48e9b92072b6f12a66faa5f39b12321b1b149"
             }
           ]
         },
@@ -1460,7 +1609,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "more than 200 models across text, image and multimodal formats"
+              "quote": "more than 200 models across text, image and multimodal formats",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote_hash": "21041d657516be497537f6c2ceb9cb31da4d791fed15c1820b09351fd7a0ad65"
             }
           ]
         },
@@ -1471,7 +1622,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Fireworks was worth $4 billion nine months ago."
+              "quote": "Fireworks was worth $4 billion nine months ago.",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote_hash": "c63afafa6c45227ae17ad6a2fa9bcb1cdda775cb92778402cb7d4846992867c6"
             }
           ]
         },
@@ -1482,7 +1635,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "The plan is to grow from 200 to 600 employees by year-end."
+              "quote": "The plan is to grow from 200 to 600 employees by year-end.",
+              "source_content_hash": "2ac54d2d554e9655",
+              "quote_hash": "e42920be52572b951f2be8a72ae3aa3241ea5a911ffe165ac2097d807d4379a3"
             }
           ]
         }
@@ -1494,7 +1649,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-927f7f893f929ef8",
-              "quote": "I believe that every Anthropic and OpenAI customer today will be a Fireworks customer tomorrow."
+              "quote": "I believe that every Anthropic and OpenAI customer today will be a Fireworks customer tomorrow.",
+              "source_content_hash": "2a3d06ba3bdc1abf",
+              "quote_hash": "37f852b5c23547e853d29fd4c608ce1040207cdae412bfe0c4d4dee953fbd0eb"
             }
           ]
         },
@@ -1504,7 +1661,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-927f7f893f929ef8",
-              "quote": "Specialized intelligence can surpass the general intelligence of frontier models while delivering up to 90%+ cost savings."
+              "quote": "Specialized intelligence can surpass the general intelligence of frontier models while delivering up to 90%+ cost savings.",
+              "source_content_hash": "2a3d06ba3bdc1abf",
+              "quote_hash": "f234fd702e6b64ff8f0b013506709b74f323844165e883324140cc987b22fc9d"
             }
           ]
         }
@@ -1526,7 +1685,24 @@
           "硬件循环风险：Nvidia同时作为芯片供应商和投资方，可能放大需求信号，真实需求需待独立审计数据验证"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施 / 模型推理与微调平台"
+        "sector": "AI基础设施 / 模型推理与微调平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI市场从“租用通用大模型”向“企业自建专业化模型”的范式转移。本轮175亿美元估值（较9个月前4亿美元估值增长4.4倍）所依赖的已验证信号包括：年化收入突破10亿美元（同比增长约5倍）、每日处理超过40万亿token、且其中超过95%来自客户定制化模型而非通用模型。这些数据表明专业化智能的需求并非预测，而是已在平台上大规模发生。然而，该判断的证据边界受限于：所有数据均为公司自行披露的未经审计数据，且Nvidia同时作为供应商和投资方的双重角色可能放大需求信号。",
+          "evidence_signals": [
+            "年化收入运行率突破10亿美元，同比增长约5倍",
+            "每日处理超过40万亿token，较上一轮融资时的15万亿增长近3倍",
+            "超过95%的token来自客户定制化、专业化模型，而非通用开源模型",
+            "客户包括Uber、Shopify、GitLab、MongoDB、Harvey、Cursor等跨行业知名企业",
+            "估值在9个月内从40亿美元增长至175亿美元，增长4.4倍"
+          ],
+          "risks": [
+            "客户集中度风险：Cursor曾贡献约一半收入，单一客户流失可能对估值造成重大冲击",
+            "闭源模型反击风险：若前沿实验室大幅降价并将低门槛微调整合进自有平台，将削弱Fireworks的成本优势",
+            "自托管曲线加速风险：量化技术改进、更便宜的内存和更强大的小模型可能缩小托管服务的溢价空间",
+            "硬件循环风险：Nvidia同时作为芯片供应商和投资方，可能放大需求信号，真实需求需待独立审计数据验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1534,246 +1710,126 @@
           "target_kind": "product",
           "research_name": "Fireworks 云平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "Fireworks operates a cloud platform that developers can use to fine-tune, or customize, open-source AI models. It provides access to managed graphics card clusters under a usage-based pricing model."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Lin Qiao",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "co-founder and Chief Executive Officer Lin Qiao"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Atreides Management",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Index Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "TCV",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia Corp.",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0d89e0712245c55b",
-              "quote": "they were joined by more than a half-dozen other backers, including Nvidia Corp."
-            },
-            {
-              "source_id": "FISRC-dc600442a39828d4",
-              "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lightspeed Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc600442a39828d4",
-              "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in."
-            },
-            {
-              "source_id": "FISRC-243f05d139793fc0",
-              "quote": "Since our first investment in their 2025 Series C, Fireworks has reached $1B in annual revenue"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-dc600442a39828d4",
-              "quote": "existing backers like Nvidia, Lightspeed Venture Partners, and Bessemer Venture Partners also chipped in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Menlo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "20VC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1237a4476f41ad9",
-              "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, and 20VC participating."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Evantic Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d1237a4476f41ad9",
-              "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, 20VC, Evantic Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Insight Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Ontario Teachers' Pension Plan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Shopify",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Customers include Uber, Shopify, GitLab, MongoDB, Harvey and Cursor"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Cursor",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf8736b57678264a",
-              "quote": "From Cursor's coding models to Harvey's legal AI, companies across industries are building specialized intelligence with Fireworks."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Harvey",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-cf8736b57678264a",
-              "quote": "From Cursor's coding models to Harvey's legal AI, companies across industries are building specialized intelligence with Fireworks."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Together AI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Fireworks now sits well above Together AI and Baseten on valuation, and it is pushing beyond inference into training"
-            },
-            {
-              "source_id": "FISRC-5f67f5d54147b10e",
-              "quote": "Together AI, which sells a comparable model-agnostic inference platform, closed an $800 million round around the start of July at a reported $8.3 billion valuation"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Baseten",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-80d6b020dd75ac09",
-              "quote": "Fireworks now sits well above Together AI and Baseten on valuation, and it is pushing beyond inference into training"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1895,10 +1951,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:55:34.655Z"
+      "published_at": "2026-07-26T14:55:34.655Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 8
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Fireworks 云平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Lin Qiao"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-4eaf3aabecae6016"
+      ],
+      "aggregation": {
+        "key": "EN-0caee180da9d0f3f|series_d",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

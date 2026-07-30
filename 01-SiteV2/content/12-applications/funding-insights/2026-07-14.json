@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-14",
     "generated_at": "2026-07-27T05:24:41.418Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 8,
       "auto_published": 5,
       "blocked": 3,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-a3b0e6ba9c45f3fc",
       "triggered_by_event_id": "EV-7a85e21802efd8b2",
       "as_of_date": "2026-07-14",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74000160f5a289fa",
-                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74000160f5a289fa",
-                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74000160f5a289fa",
-                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
               }
             ],
             "entity_id": null
@@ -68,7 +75,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74000160f5a289fa",
-                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
               }
             ],
             "entity_id": null
@@ -82,16 +91,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-74000160f5a289fa",
-            "quote": "Nous Research, the startup behind the open-source Hermes agent, is finalizing a new round of funding"
+            "quote": "Nous Research, the startup behind the open-source Hermes agent, is finalizing a new round of funding",
+            "source_content_hash": "78c1fee941fb6b34",
+            "quote_hash": "1b1b552fa7bb66487b33bf97fe04d8a502347d78f43a101fea9bc19eb69c8892"
           },
           {
             "source_id": "FISRC-640d2a53bd0ab084",
-            "quote": "Nous Research, an open-source AI startup behind the Hermes agent, is finalising a new funding round"
+            "quote": "Nous Research, an open-source AI startup behind the Hermes agent, is finalising a new funding round",
+            "source_content_hash": "310e4168e4f519d8",
+            "quote_hash": "545ea7afce8ccc2b4ba8e7d098beaf8408787095c7a2961621e1bcae533547de"
           }
         ]
       },
       "financing": {
-        "round": "B 轮",
+        "round": "B轮",
         "amount": "至少 7500 万美元",
         "total_raised": "约 1.45 亿美元",
         "announced_at": "2026-07-13",
@@ -102,11 +115,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74000160f5a289fa",
-                "quote": "is finalizing a new round of funding led by Robot Ventures"
+                "quote": "is finalizing a new round of funding led by Robot Ventures",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "adee280c7ad79a35a46d5ab27edac8771129a74a57498f1b115e901220049ac4"
               },
               {
                 "source_id": "FISRC-74000160f5a289fa",
-                "quote": "it had raised a total of $70 million in funding from investors including Paradigm, Robot Ventures, North Island Ventures, OSS Capital, and Balaji Srinivasan"
+                "quote": "it had raised a total of $70 million in funding from investors including Paradigm, Robot Ventures, North Island Ventures, OSS Capital, and Balaji Srinivasan",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "3aa5d589230018bee199756a26887a66d0e2fe1d99794e9ab6952aed60042871"
               }
             ],
             "entity_id": null
@@ -117,18 +134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-74000160f5a289fa",
-                "quote": "with significant participation from USV"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Paradigm",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-74000160f5a289fa",
-                "quote": "it had raised a total of $70 million in funding from investors including Paradigm"
+                "quote": "with significant participation from USV",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "edfa21cfb1d10cbc61dc6a166d7b5e48684fbe7bff17b85ac95ed04e272e5238"
               }
             ],
             "entity_id": null
@@ -137,11 +145,60 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-74000160f5a289fa",
-            "quote": "is finalizing a new round of funding led by Robot Ventures, with significant participation from USV and other prominent investors at a $1.5 billion valuation"
+            "quote": "is finalizing a new round of funding led by Robot Ventures, with significant participation from USV and other prominent investors at a $1.5 billion valuation",
+            "source_content_hash": "78c1fee941fb6b34",
+            "quote_hash": "ae0e0b6bbeb6c586e8720866bc8c85a9c6a36ee7273dd3711747321d6e279f30"
           },
           {
             "source_id": "FISRC-74000160f5a289fa",
-            "quote": "The company is raising at least $75 million"
+            "quote": "The company is raising at least $75 million",
+            "source_content_hash": "78c1fee941fb6b34",
+            "quote_hash": "41ae57e170bc2f90739c3a40a250467990d72c6186ef7a9ad2e08370ba64a713"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B 轮",
+        "other_round_investors": [
+          {
+            "name": "Paradigm",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "it had raised a total of $70 million in funding from investors including Paradigm",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "56b0916e4da4d0b647a139ea8ac6f43533e567d139e6a82b0c97bf019f2d317a"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-7a85e21802efd8b2",
+            "round_original": "B 轮",
+            "amount": "至少 7500 万美元",
+            "announced_at": "2026-07-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "is finalizing a new round of funding led by Robot Ventures, with significant participation from USV and other prominent investors at a $1.5 billion valuation",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "ae0e0b6bbeb6c586e8720866bc8c85a9c6a36ee7273dd3711747321d6e279f30"
+              },
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "The company is raising at least $75 million",
+                "source_content_hash": "78c1fee941fb6b34",
+                "quote_hash": "41ae57e170bc2f90739c3a40a250467990d72c6186ef7a9ad2e08370ba64a713"
+              }
+            ]
           }
         ]
       },
@@ -160,11 +217,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
+              "quote": "Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention.",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "9b234921fbc82f424ceed16f9116fe3665ab55c794d9f1b2c01d3a7b4ad664a6"
             },
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "users can automate tasks with Hermes and chat with these agents or receive messages from them in apps like Telegram and Discord."
+              "quote": "users can automate tasks with Hermes and chat with these agents or receive messages from them in apps like Telegram and Discord.",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "13b00169b05bc71ec6f9d72a91d0f062523aa51c69b0cc7fb7ef5c3df4ddabb7"
             }
           ],
           "entity_id": "EN-0db2d631b42da133"
@@ -182,9 +243,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "OpenClaw is an agent that runs locally on a PC and can perform tasks on behalf of the user. One key difference is that Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
+              "quote": "OpenClaw is an agent that runs locally on a PC and can perform tasks on behalf of the user. One key difference is that Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention.",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "39554cefa9e007511a77c43db057f12ce07409ea04a79eae3fd231e89f8e7cd2"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -195,7 +259,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "boasting roughly 214,000 stars"
+              "quote": "boasting roughly 214,000 stars",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "03e6bcf51f360c3d182037027680306d8b15f63cf7e1356ace2b4f0035a8e048"
             }
           ]
         },
@@ -206,7 +272,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "nearly 40,000 forks"
+              "quote": "nearly 40,000 forks",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "2dafa0777fb83b4ec42b501d57907b8376d5324a7fc37f9ed4c93db8e2b3445c"
             }
           ]
         },
@@ -217,7 +285,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "The hosted version is available via various paid tiers ranging from $20-$200 a month."
+              "quote": "The hosted version is available via various paid tiers ranging from $20-$200 a month.",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "1be47a21a04cdd3f43a4af7e99138014a4667e820c56b9b5664cbdd5b2c8b609"
             }
           ]
         },
@@ -228,7 +298,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "at a $1.5 billion valuation"
+              "quote": "at a $1.5 billion valuation",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "0e6b8dc3da75fd2a9328fea9ccabe540fb81e11e21877201bbb3a8935e13bde2"
             }
           ]
         },
@@ -239,7 +311,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-74000160f5a289fa",
-              "quote": "Before this round, it had raised a total of $70 million"
+              "quote": "Before this round, it had raised a total of $70 million",
+              "source_content_hash": "78c1fee941fb6b34",
+              "quote_hash": "040f1f6c32b38e0ec3bc9b999082e861ea61e2a96ea1111aa90d7dfe596a0c1d"
             }
           ]
         }
@@ -257,7 +331,19 @@
           "来源未披露任何收入、付费客户数或企业合同数据，商业化验证仍处于早期阶段，高估值缺乏营收支撑"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "开源 AI 智能体基础设施"
+        "sector": "开源 AI 智能体基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是开源智能体基础设施的快速采用和社区规模。已验证信号包括：Hermes 在 GitHub 上获得约 214,000 星标和近 40,000 复刻，表明开发者社区的高度认可；公司从 A 轮（5000 万美元）到 B 轮（至少 7500 万美元）仅间隔不到三个月，且估值达到 15 亿美元，显示融资节奏极快。但判断的证据边界在于：来源未披露收入、付费客户数或企业合同等商业指标，估值主要基于社区牵引力和投资者兴趣，而非已验证的商业化规模。",
+          "evidence_signals": [
+            "Hermes 在 GitHub 上获得约 214,000 星标和近 40,000 复刻，显示大规模开发者采用",
+            "从 A 轮（5000 万美元）到 B 轮（至少 7500 万美元）仅间隔不到三个月，融资节奏极快",
+            "云托管版本已推出 20 至 200 美元的付费层级，初步验证付费意愿"
+          ],
+          "risks": [
+            "来源未披露任何收入、付费客户数或企业合同数据，商业化验证仍处于早期阶段，高估值缺乏营收支撑"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -265,125 +351,63 @@
           "target_kind": "product",
           "research_name": "Hermes",
           "canonical_entity_id": "EN-0db2d631b42da133",
-          "canonical_name": "Hermes Agent",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
-            },
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "users can automate tasks with Hermes and chat with these agents or receive messages from them in apps like Telegram and Discord."
-            }
-          ]
+          "canonical_name": "Hermes Agent"
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Jeffrey Quesnelle",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Karan Malhotra",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ryan Teknium",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Shivani Mitra",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Robot Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "is finalizing a new round of funding led by Robot Ventures"
-            },
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "it had raised a total of $70 million in funding from investors including Paradigm, Robot Ventures, North Island Ventures, OSS Capital, and Balaji Srinivasan"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Union Square Ventures (USV)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "with significant participation from USV"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Paradigm",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "it had raised a total of $70 million in funding from investors including Paradigm"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenClaw",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-74000160f5a289fa",
-              "quote": "OpenClaw is an agent that runs locally on a PC and can perform tasks on behalf of the user. One key difference is that Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [],
@@ -423,13 +447,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-27T05:22:52.695Z"
+      "published_at": "2026-07-27T05:22:52.695Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Jeffrey Quesnelle",
+            "Karan Malhotra",
+            "Ryan Teknium",
+            "Shivani Mitra"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7a85e21802efd8b2"
+      ],
+      "aggregation": {
+        "key": "EN-3eee4f30151db45a|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-90716f36aa32be3e",
       "triggered_by_event_id": "EV-23ae55daa341be06",
       "as_of_date": "2026-07-14",
@@ -447,7 +501,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ac436d049634bc2",
-                "quote": "The startup’s founder, Dr. Robert Yang, a former faculty member at MIT"
+                "quote": "The startup’s founder, Dr. Robert Yang, a former faculty member at MIT",
+                "source_content_hash": "7ac40477f31de3c2",
+                "quote_hash": "9fb8a57080f6cedcc0eaf166f01052e991226994034709cf039e81edc270334a"
               }
             ],
             "entity_id": null
@@ -461,16 +517,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-3ac436d049634bc2",
-            "quote": "Applied AI research company Fundamental Research Labs (formerly known as Altera)"
+            "quote": "Applied AI research company Fundamental Research Labs (formerly known as Altera)",
+            "source_content_hash": "7ac40477f31de3c2",
+            "quote_hash": "67a5c9fa4eec36a7c9afd371603495dc12f1b42461087edd86c4d0f9425ee436"
           },
           {
             "source_id": "FISRC-17f60957cc37e574",
-            "quote": "Fundamental Research Labs is on a mission to build digital human beings — autonomous, collaborative, and socially intelligent agents."
+            "quote": "Fundamental Research Labs is on a mission to build digital human beings — autonomous, collaborative, and socially intelligent agents.",
+            "source_content_hash": "46ae7c0756a043d9",
+            "quote_hash": "12240c4a3315eed4d7382060f0fa1b052d844584cd5613b5262ae746d291f39b"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$33 million",
         "total_raised": "over $40 million",
         "announced_at": "2025-08-01",
@@ -481,7 +541,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ac436d049634bc2",
-                "quote": "raised $33 million in Series A funding led by Prosus"
+                "quote": "raised $33 million in Series A funding led by Prosus",
+                "source_content_hash": "7ac40477f31de3c2",
+                "quote_hash": "9948eebe86e488649534d5f4aee973dab81ef39738b33049a7d00a4c6bedb722"
               }
             ],
             "entity_id": null
@@ -492,29 +554,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3ac436d049634bc2",
-                "quote": "with participation from Stripe co-founder and CEO Patrick Collison"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "a16z Speedrun",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3ac436d049634bc2",
-                "quote": "with participation from a16z Speedrun and Eric Schmidt"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Eric Schmidt",
-            "role": "种子轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3ac436d049634bc2",
-                "quote": "with participation from a16z Speedrun and Eric Schmidt"
+                "quote": "with participation from Stripe co-founder and CEO Patrick Collison",
+                "source_content_hash": "7ac40477f31de3c2",
+                "quote_hash": "2f12333033b677f3ad7db890062f4ab333fdf0f732ae469a0da781de89822387"
               }
             ],
             "entity_id": null
@@ -523,11 +565,79 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-3ac436d049634bc2",
-            "quote": "has raised $33 million in Series A funding led by Prosus with participation from Stripe co-founder and CEO Patrick Collison"
+            "quote": "has raised $33 million in Series A funding led by Prosus with participation from Stripe co-founder and CEO Patrick Collison",
+            "source_content_hash": "7ac40477f31de3c2",
+            "quote_hash": "b3aa8dbc144e3c964eccb479c5ef7fb3cbab16443c13d2c34ddeff804e304d78"
           },
           {
             "source_id": "FISRC-3ac436d049634bc2",
-            "quote": "The startup has raised over $40 million in funding to date."
+            "quote": "The startup has raised over $40 million in funding to date.",
+            "source_content_hash": "7ac40477f31de3c2",
+            "quote_hash": "4810a6ffccee6a3f6034c51a5bf59f91b0440a6d94393a1476168bf3d162f8af"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "a16z Speedrun",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3ac436d049634bc2",
+                "quote": "with participation from a16z Speedrun and Eric Schmidt",
+                "source_content_hash": "7ac40477f31de3c2",
+                "quote_hash": "e9a47343212197afc2f14cc7884d6536820ef9694080c8de5d1edeb520f0fdb0"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Eric Schmidt",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3ac436d049634bc2",
+                "quote": "with participation from a16z Speedrun and Eric Schmidt",
+                "source_content_hash": "7ac40477f31de3c2",
+                "quote_hash": "e9a47343212197afc2f14cc7884d6536820ef9694080c8de5d1edeb520f0fdb0"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "seed",
+              "label": "种子轮",
+              "original": "种子轮参投"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-23ae55daa341be06",
+            "round_original": "Series A",
+            "amount": "$33 million",
+            "announced_at": "2025-08-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3ac436d049634bc2",
+                "quote": "has raised $33 million in Series A funding led by Prosus with participation from Stripe co-founder and CEO Patrick Collison",
+                "source_content_hash": "7ac40477f31de3c2",
+                "quote_hash": "b3aa8dbc144e3c964eccb479c5ef7fb3cbab16443c13d2c34ddeff804e304d78"
+              },
+              {
+                "source_id": "FISRC-3ac436d049634bc2",
+                "quote": "The startup has raised over $40 million in funding to date.",
+                "source_content_hash": "7ac40477f31de3c2",
+                "quote_hash": "4810a6ffccee6a3f6034c51a5bf59f91b0440a6d94393a1476168bf3d162f8af"
+              }
+            ]
           }
         ]
       },
@@ -544,7 +654,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "this agent works like a junior analyst and can do work autonomously. The company has made it look like Excel and has tried to retain a lot of functionality for power users."
+              "quote": "this agent works like a junior analyst and can do work autonomously. The company has made it look like Excel and has tried to retain a lot of functionality for power users.",
+              "source_content_hash": "7ac40477f31de3c2",
+              "quote_hash": "b789ae7408876eff4df4c25d4e75eb036e19662a86abd4bb2e7da1555f7d749e"
             }
           ],
           "entity_id": null
@@ -561,7 +673,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "The app can schedule workflows for you to repeatedly execute some tasks."
+              "quote": "The app can schedule workflows for you to repeatedly execute some tasks.",
+              "source_content_hash": "7ac40477f31de3c2",
+              "quote_hash": "5969a435c1ce89e047ddfa851a88772a2ec4fbbb9f2802c66dd3a4de4b66b80b"
             }
           ],
           "entity_id": null
@@ -577,7 +691,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "Shortcut beats first year analysts from McKinsey/Goldman head-to-head 89.1% (220:27) when blindly judged by their managers. We even gave humans 10x more time."
+              "quote": "Shortcut beats first year analysts from McKinsey/Goldman head-to-head 89.1% (220:27) when blindly judged by their managers. We even gave humans 10x more time.",
+              "source_content_hash": "7ac40477f31de3c2",
+              "quote_hash": "d3cdd42b056314e6f4ed7bd457b01efa619da577026955391c155b600783d2b3"
             }
           ]
         },
@@ -588,7 +704,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "The company raised $9 million in a seed round last year"
+              "quote": "The company raised $9 million in a seed round last year",
+              "source_content_hash": "7ac40477f31de3c2",
+              "quote_hash": "65808acecda7211bf72f08b934b51485a1658d039b6ac67ec674208e9f00a2a9"
             }
           ]
         },
@@ -599,7 +717,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "The startup has raised over $40 million in funding to date."
+              "quote": "The startup has raised over $40 million in funding to date.",
+              "source_content_hash": "7ac40477f31de3c2",
+              "quote_hash": "4810a6ffccee6a3f6034c51a5bf59f91b0440a6d94393a1476168bf3d162f8af"
             }
           ]
         }
@@ -618,7 +738,20 @@
           "AI智能体在生成公式时可能产生幻觉，即使小错误也可能在财务模型中级联放大，导致重大错误"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI智能体与生产力工具"
+        "sector": "AI智能体与生产力工具",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI智能体从游戏场景向生产力工具的商业化迁移能力。本轮融资的已验证信号包括：Shortcut在内部测试中以89.1%胜率击败麦肯锡/高盛第一年分析师，且公司已通过7天试用后收费模式产生收入。但需注意，这些性能数据为公司自报，缺乏独立第三方验证；产品从演示到企业级可靠性仍存在显著差距。",
+          "evidence_signals": [
+            "Shortcut在盲评中以89.1%胜率击败麦肯锡/高盛第一年分析师，且人类被给予10倍时间",
+            "公司已通过7天试用后收费模式产生收入",
+            "团队来自MIT EECS、Stanford NLP Group、Google X和Citadel等顶尖机构"
+          ],
+          "risks": [
+            "Shortcut的性能数据为公司自报，缺乏独立第三方基准测试或公开竞赛验证，实际准确性和可靠性尚未被外部证实",
+            "AI智能体在生成公式时可能产生幻觉，即使小错误也可能在财务模型中级联放大，导致重大错误"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -626,91 +759,49 @@
           "target_kind": "product",
           "research_name": "Shortcut",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "this agent works like a junior analyst and can do work autonomously. The company has made it look like Excel and has tried to retain a lot of functionality for power users."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Fairies",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "The app can schedule workflows for you to repeatedly execute some tasks."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dr. Robert Yang",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "The startup’s founder, Dr. Robert Yang, a former faculty member at MIT"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Prosus",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "raised $33 million in Series A funding led by Prosus"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Patrick Collison",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "with participation from Stripe co-founder and CEO Patrick Collison"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "a16z Speedrun",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "with participation from a16z Speedrun and Eric Schmidt"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Eric Schmidt",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3ac436d049634bc2",
-              "quote": "with participation from a16z Speedrun and Eric Schmidt"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -760,13 +851,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:22:14.801Z"
+      "published_at": "2026-07-26T15:22:14.801Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Fairies",
+            "Shortcut"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Dr. Robert Yang"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-23ae55daa341be06"
+      ],
+      "aggregation": {
+        "key": "EN-50e2a4156631df49|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-045337bcade573a4",
       "triggered_by_event_id": "EV-fab81bddb815267b",
       "as_of_date": "2026-07-14",
@@ -784,7 +905,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal"
+                "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "514d40148eece1ad0f9b5acbfc10884b515ace24f9094a8adca3438cfb8ca770"
               }
             ],
             "entity_id": null
@@ -795,7 +918,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal"
+                "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "514d40148eece1ad0f9b5acbfc10884b515ace24f9094a8adca3438cfb8ca770"
               }
             ],
             "entity_id": null
@@ -806,7 +931,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal"
+                "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "514d40148eece1ad0f9b5acbfc10884b515ace24f9094a8adca3438cfb8ca770"
               }
             ],
             "entity_id": null
@@ -818,18 +945,24 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-be70084ec2761692",
-              "quote": "Employees 30 employees"
+              "quote": "Employees 30 employees",
+              "source_content_hash": "72c3d178206ab018",
+              "quote_hash": "732a36d639c07a9cb14929a85d8080ce3b320bab5acc1c59ae7a6815268fda52"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-907e4297862ddd8c",
-            "quote": "Monogram, an AI startup focused on visual interfaces"
+            "quote": "Monogram, an AI startup focused on visual interfaces",
+            "source_content_hash": "3a584a627e1535ff",
+            "quote_hash": "e096137d89b20a2ccd76d72bd369689a0391bbc6d91fbf43378f536fe6a1d2ca"
           },
           {
             "source_id": "FISRC-be70084ec2761692",
-            "quote": "a San Francisco startup focused on creating a more intuitive and human-centric interface for artificial intelligence"
+            "quote": "a San Francisco startup focused on creating a more intuitive and human-centric interface for artificial intelligence",
+            "source_content_hash": "72c3d178206ab018",
+            "quote_hash": "85acf8a1976033a09fba663b649a354f2140f2befaf12458bfe1e2a3175cfb79"
           }
         ]
       },
@@ -845,7 +978,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Lead Investor: DST Global Partners, Lux Capital"
+                "quote": "Lead Investor: DST Global Partners, Lux Capital",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "053aeeea12d3bda7368d7295a461e8f83de4eaec6cd15826b6e8166587ea3bb2"
               }
             ],
             "entity_id": null
@@ -856,7 +991,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Lead Investor: DST Global Partners, Lux Capital"
+                "quote": "Lead Investor: DST Global Partners, Lux Capital",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "053aeeea12d3bda7368d7295a461e8f83de4eaec6cd15826b6e8166587ea3bb2"
               }
             ],
             "entity_id": null
@@ -867,7 +1004,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
+                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
               }
             ],
             "entity_id": null
@@ -878,7 +1017,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
+                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
               }
             ],
             "entity_id": null
@@ -889,7 +1030,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
+                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
               }
             ],
             "entity_id": null
@@ -900,7 +1043,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
+                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
               }
             ],
             "entity_id": null
@@ -911,7 +1056,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
+                "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
               }
             ],
             "entity_id": null
@@ -922,7 +1069,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -933,7 +1082,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -944,7 +1095,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -955,7 +1108,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -966,7 +1121,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -977,7 +1134,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -988,7 +1147,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -999,7 +1160,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -1010,7 +1173,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-907e4297862ddd8c",
-                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
+                "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
               }
             ],
             "entity_id": null
@@ -1019,7 +1184,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-907e4297862ddd8c",
-            "quote": "Monogram Raises $40M Seed"
+            "quote": "Monogram Raises $40M Seed",
+            "source_content_hash": "3a584a627e1535ff",
+            "quote_hash": "16575da5a1547c8af99dc74738caec8000701ac42ac7b3dbd8081afc1886b676"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-fab81bddb815267b",
+            "round_original": "种子轮",
+            "amount": "$40M",
+            "announced_at": "2026-06-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-907e4297862ddd8c",
+                "quote": "Monogram Raises $40M Seed",
+                "source_content_hash": "3a584a627e1535ff",
+                "quote_hash": "16575da5a1547c8af99dc74738caec8000701ac42ac7b3dbd8081afc1886b676"
+              }
+            ]
           }
         ]
       },
@@ -1035,11 +1221,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2751a0063dcb88e8",
-              "quote": "a general-purpose AI application that reimagines how we interact with AI"
+              "quote": "a general-purpose AI application that reimagines how we interact with AI",
+              "source_content_hash": "f8a9687149b5f8bd",
+              "quote_hash": "2d28ccbae7f3d48618f8617c648214116b665817046947a4eb82cb6edf22641d"
             },
             {
               "source_id": "FISRC-988b8219acdf251d",
-              "quote": "The product generates an entire interactive interface -- a map, a menu, a dynamic dashboard -- in response to a query"
+              "quote": "The product generates an entire interactive interface -- a map, a menu, a dynamic dashboard -- in response to a query",
+              "source_content_hash": "d3ce9567c88e925e",
+              "quote_hash": "04248fd47c13eb54e5c98547cec9b38572aa7baa7eb952603bc8f061768bc6f6"
             }
           ],
           "entity_id": null
@@ -1057,13 +1247,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-988b8219acdf251d",
-              "quote": "rather than returning a block of text like a typical chatbot"
+              "quote": "rather than returning a block of text like a typical chatbot",
+              "source_content_hash": "d3ce9567c88e925e",
+              "quote_hash": "fc5dbc11aec01bc365d8267edecfaf6e27774879dbd120fa4a36feebe1bb03e7"
             },
             {
               "source_id": "FISRC-988b8219acdf251d",
-              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023"
+              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023",
+              "source_content_hash": "d3ce9567c88e925e",
+              "quote_hash": "3053734b40053c593302d3de8233b12abc08c8c7e8ead5b701927e7572b33b41"
             }
-          ]
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
         },
         {
           "name": "Anthropic",
@@ -1075,9 +1270,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-988b8219acdf251d",
-              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023"
+              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023",
+              "source_content_hash": "d3ce9567c88e925e",
+              "quote_hash": "3053734b40053c593302d3de8233b12abc08c8c7e8ead5b701927e7572b33b41"
             }
-          ]
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
         },
         {
           "name": "Google",
@@ -1089,9 +1287,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-988b8219acdf251d",
-              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023"
+              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023",
+              "source_content_hash": "d3ce9567c88e925e",
+              "quote_hash": "3053734b40053c593302d3de8233b12abc08c8c7e8ead5b701927e7572b33b41"
             }
-          ]
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
         }
       ],
       "metrics": [
@@ -1102,7 +1303,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Raised: $40M"
+              "quote": "Raised: $40M",
+              "source_content_hash": "3a584a627e1535ff",
+              "quote_hash": "6ffec507a1dc3eeaeb8aff70e00efa0a5f0d53e82e553c7b406df668dc56f921"
             }
           ]
         },
@@ -1113,7 +1316,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-be70084ec2761692",
-              "quote": "Employees 30 employees"
+              "quote": "Employees 30 employees",
+              "source_content_hash": "72c3d178206ab018",
+              "quote_hash": "732a36d639c07a9cb14929a85d8080ce3b320bab5acc1c59ae7a6815268fda52"
             }
           ]
         }
@@ -1125,7 +1330,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2751a0063dcb88e8",
-              "quote": "We believe AI deserves a better interface than chat: one that is visual, interactive, and more intuitive."
+              "quote": "We believe AI deserves a better interface than chat: one that is visual, interactive, and more intuitive.",
+              "source_content_hash": "f8a9687149b5f8bd",
+              "quote_hash": "15fe39127ac406308ab4ecdda62c534b533f58103b778932ae023c8e911b8051"
             }
           ]
         },
@@ -1135,7 +1342,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2751a0063dcb88e8",
-              "quote": "Just as the transition from the command line to graphical user interfaces transformed personal computing, we believe making AI easier to use will help it benefit more people."
+              "quote": "Just as the transition from the command line to graphical user interfaces transformed personal computing, we believe making AI easier to use will help it benefit more people.",
+              "source_content_hash": "f8a9687149b5f8bd",
+              "quote_hash": "b750a89d78e9345d2d731c72cf742576b13cf8e11962dcd6e249cc82e36b3d1f"
             }
           ]
         }
@@ -1151,7 +1360,18 @@
           "OpenAI、Anthropic和Google等基础模型实验室可能在12-18个月内将生成式UI作为一项功能推出，从而挤压Monogram的独立生存空间。"
         ],
         "related_direction_id": "",
-        "sector": "人工智能"
+        "sector": "人工智能",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“视觉优先”的交互界面能否成为消费级AI应用的下一个差异化层，而非底层模型本身。DST Global和Lux Capital联合领投4000万美元种子轮，表明机构认为在文本聊天范式已被OpenAI、Anthropic和Google标准化的市场中，交互层的创新是一个真实的市场切入点。但这一判断的证据边界仅限于创始团队的背景和产品发布时的初始愿景，尚未有用户规模、留存率或收入等业务信号验证。",
+          "evidence_signals": [
+            "由Coursera联合创始人Eren Bali创立，具备连续创业经验",
+            "产品已发布iOS应用，并展示了从查询到生成交互界面的技术能力"
+          ],
+          "risks": [
+            "OpenAI、Anthropic和Google等基础模型实验室可能在12-18个月内将生成式UI作为一项功能推出，从而挤压Monogram的独立生存空间。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1159,307 +1379,161 @@
           "target_kind": "product",
           "research_name": "Monogram iOS App",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2751a0063dcb88e8",
-              "quote": "a general-purpose AI application that reimagines how we interact with AI"
-            },
-            {
-              "source_id": "FISRC-988b8219acdf251d",
-              "quote": "The product generates an entire interactive interface -- a map, a menu, a dynamic dashboard -- in response to a query"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Eren Bali",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Edouard Tabet",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Murat Akbal",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Founded in 2026 by Eren Bali with Edouard Tabet and Murat Akbal"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "DST Global Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Lead Investor: DST Global Partners, Lux Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lux Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Lead Investor: DST Global Partners, Lux Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Conviction",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "SOMA Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Gradient Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "e2vc",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Maxitech",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Arthur Mensch",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Logan Green",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Karim Atiyeh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Garry Tan",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Pete Flint",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mario Schlosser",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Othman Laraki",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Lenny Rachitsky",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Charlie Songhurst",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-907e4297862ddd8c",
-              "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "OpenAI",
           "canonical_entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-988b8219acdf251d",
-              "quote": "rather than returning a block of text like a typical chatbot"
-            },
-            {
-              "source_id": "FISRC-988b8219acdf251d",
-              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023"
-            }
-          ]
+          "canonical_name": "OpenAI"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Anthropic",
           "canonical_entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-988b8219acdf251d",
-              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023"
-            }
-          ]
+          "canonical_name": "Anthropic"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Google",
           "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-988b8219acdf251d",
-              "quote": "a direct break from the text-box paradigm that OpenAI's ChatGPT, Anthropic's Claude and Google's Gemini have all standardized around since 2023"
-            }
-          ]
+          "canonical_name": "Google"
         }
       ],
       "funding_history": [
@@ -1533,13 +1607,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:54:47.905Z"
+      "published_at": "2026-07-26T14:54:47.905Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Monogram iOS App"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Edouard Tabet",
+            "Eren Bali",
+            "Murat Akbal"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-fab81bddb815267b"
+      ],
+      "aggregation": {
+        "key": "EN-ee00b93bf0631b3e|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-79011763f8506d71",
       "triggered_by_event_id": "EV-869c9ea96c58873d",
       "as_of_date": "2026-07-14",
@@ -1557,7 +1662,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5667d54cc3421916",
-                "quote": "CEO Puru Rastogi previously built autonomous helicopters and studied at Carnegie Mellon."
+                "quote": "CEO Puru Rastogi previously built autonomous helicopters and studied at Carnegie Mellon.",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "5fc89c9b3cc5d4d6155e4f7b148c49ec660146cb681e7e7387cee9a84a8127f3"
               }
             ],
             "entity_id": null
@@ -1568,7 +1675,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5667d54cc3421916",
-                "quote": "CTO Safar is a graduate of IIT Madras."
+                "quote": "CTO Safar is a graduate of IIT Madras.",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "2acacd48add6e409b35c0336802e6329c4f9882e1b7e4a95d04c41814aed5e23"
               }
             ],
             "entity_id": null
@@ -1579,7 +1688,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5667d54cc3421916",
-                "quote": "CBO Aditya is a three-time founder."
+                "quote": "CBO Aditya is a three-time founder.",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "0a425e1af205ebe26a3a5b80beae9e887c1f3003a677b3d9c49af76140a80728"
               }
             ],
             "entity_id": null
@@ -1593,16 +1704,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5667d54cc3421916",
-            "quote": "Mowito is building Physical AI models for robot arms that flip this script."
+            "quote": "Mowito is building Physical AI models for robot arms that flip this script.",
+            "source_content_hash": "66a29d7fc8fabd22",
+            "quote_hash": "361f2cd19307f7181aebdc31d5374343ab54050d5ab4f0206d3f189d3724b605"
           },
           {
             "source_id": "FISRC-57e8c56b0ca083e9",
-            "quote": "Founded in 2024, Mowito operates from Bengaluru and Detroit, with a leadership team including Puru Rastogi (CEO), Adityanag Nagesh, and Safar V."
+            "quote": "Founded in 2024, Mowito operates from Bengaluru and Detroit, with a leadership team including Puru Rastogi (CEO), Adityanag Nagesh, and Safar V.",
+            "source_content_hash": "2f04a15ff27a6048",
+            "quote_hash": "110020de1a88456f1b80f354c604fe4dd0c3dfc8e76c6c303a014a7fd5f65db9"
           }
         ]
       },
       "financing": {
-        "round": "Pre-Seed",
+        "round": "预种子轮",
         "amount": "$3M",
         "total_raised": "$3M",
         "announced_at": "2026-07-07",
@@ -1613,7 +1728,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5667d54cc3421916",
-                "quote": "Mowito has raised a $3M pre-seed round, led by Version One Ventures"
+                "quote": "Mowito has raised a $3M pre-seed round, led by Version One Ventures",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "5e3fddb2479206d9932c06f4dd61cf5405a53cb0c1e18d73030bfe63a91032e1"
               }
             ],
             "entity_id": null
@@ -1624,7 +1741,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5667d54cc3421916",
-                "quote": "with participation from All In Capital, Unisol, and iSeed"
+                "quote": "with participation from All In Capital, Unisol, and iSeed",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "f6222b2558dc4dc10922a0085dfea19336a0031f805ccf41ce0fd09e8a6f4e7e"
               }
             ],
             "entity_id": null
@@ -1635,7 +1754,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5667d54cc3421916",
-                "quote": "with participation from All In Capital, Unisol, and iSeed"
+                "quote": "with participation from All In Capital, Unisol, and iSeed",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "f6222b2558dc4dc10922a0085dfea19336a0031f805ccf41ce0fd09e8a6f4e7e"
               }
             ],
             "entity_id": null
@@ -1646,51 +1767,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5667d54cc3421916",
-                "quote": "with participation from All In Capital, Unisol, and iSeed"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Soumith Chintala",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5667d54cc3421916",
-                "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI)."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Adarsh Kulkarni",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5667d54cc3421916",
-                "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI)."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ashish Kulkarni",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5667d54cc3421916",
-                "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI)."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Vaibhav Domkundwar",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-a357ef46b52de45f",
-                "quote": "Angel backers include Thinking Machines Lab CTO Soumith Chintala, Foundry Robotics founder and CEO Adarsh Kulkarni, Coformer.ai cofounder and CEO Ashish Kulkarni, and Better Capital founder and CEO Vaibhav Domkundwar."
+                "quote": "with participation from All In Capital, Unisol, and iSeed",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "f6222b2558dc4dc10922a0085dfea19336a0031f805ccf41ce0fd09e8a6f4e7e"
               }
             ],
             "entity_id": null
@@ -1699,7 +1778,105 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5667d54cc3421916",
-            "quote": "Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI)."
+            "quote": "Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
+            "source_content_hash": "66a29d7fc8fabd22",
+            "quote_hash": "353a3d97aff773682e2de87482656e7482fbd200e8abb9b8e134d08add703538"
+          }
+        ],
+        "round_code": "pre_seed",
+        "round_original": "Pre-Seed",
+        "other_round_investors": [
+          {
+            "name": "Soumith Chintala",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5667d54cc3421916",
+                "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "e4135e332d37b9d3537f7d0afd52be9eed631285c4a2a1e7fc8ef9d278fc8fd4"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Adarsh Kulkarni",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5667d54cc3421916",
+                "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "e4135e332d37b9d3537f7d0afd52be9eed631285c4a2a1e7fc8ef9d278fc8fd4"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Ashish Kulkarni",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5667d54cc3421916",
+                "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "e4135e332d37b9d3537f7d0afd52be9eed631285c4a2a1e7fc8ef9d278fc8fd4"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          },
+          {
+            "name": "Vaibhav Domkundwar",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a357ef46b52de45f",
+                "quote": "Angel backers include Thinking Machines Lab CTO Soumith Chintala, Foundry Robotics founder and CEO Adarsh Kulkarni, Coformer.ai cofounder and CEO Ashish Kulkarni, and Better Capital founder and CEO Vaibhav Domkundwar.",
+                "source_content_hash": "aee7b0df3309885d",
+                "quote_hash": "0f75776be243b345cea4172241d646fa108827772e03b325cdd8fe8ec28e46c2"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "angel",
+              "label": "天使轮",
+              "original": "天使投资人"
+            },
+            "classification_reason": "different_round"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-869c9ea96c58873d",
+            "round_original": "Pre-Seed",
+            "amount": "$3M",
+            "announced_at": "2026-07-07",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5667d54cc3421916",
+                "quote": "Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
+                "source_content_hash": "66a29d7fc8fabd22",
+                "quote_hash": "353a3d97aff773682e2de87482656e7482fbd200e8abb9b8e134d08add703538"
+              }
+            ]
           }
         ]
       },
@@ -1718,7 +1895,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a357ef46b52de45f",
-              "quote": "NeuralPick combines computer vision and force sensing. This lets robot arms see, feel, and handle parts without relying on fixed jigs or rigid fixtures."
+              "quote": "NeuralPick combines computer vision and force sensing. This lets robot arms see, feel, and handle parts without relying on fixed jigs or rigid fixtures.",
+              "source_content_hash": "aee7b0df3309885d",
+              "quote_hash": "447d6d71cc6c2e6476cbd00f6f6e93367158ac403f6d9b9d1cdf2b922c0944f3"
             }
           ],
           "entity_id": null
@@ -1732,9 +1911,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5667d54cc3421916",
-              "quote": "Mowito-powered robots are already running production lines at a Fortune 500 automotive company, building a critical component for cars"
+              "quote": "Mowito-powered robots are already running production lines at a Fortune 500 automotive company, building a critical component for cars",
+              "source_content_hash": "66a29d7fc8fabd22",
+              "quote_hash": "b86474e05c14b6021975af73c2282f0e6d2a0eb946314cfe3dcb0e5e55f052a7"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1746,7 +1928,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a357ef46b52de45f",
-              "quote": "In one automotive case study, Mowito says a robot with one arm-mounted camera replaced eight fixed cameras and reduced inspection costs by more than 60%."
+              "quote": "In one automotive case study, Mowito says a robot with one arm-mounted camera replaced eight fixed cameras and reduced inspection costs by more than 60%.",
+              "source_content_hash": "aee7b0df3309885d",
+              "quote_hash": "56b936edeaa001072e50c1eea90076fb0c6db18fa44d2ed64c754f18e11bcc7a"
             }
           ]
         },
@@ -1757,7 +1941,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a357ef46b52de45f",
-              "quote": "In another case study, Mowito says its software helped a partner achieve sub-100 micron accuracy on a live smartphone assembly line in India."
+              "quote": "In another case study, Mowito says its software helped a partner achieve sub-100 micron accuracy on a live smartphone assembly line in India.",
+              "source_content_hash": "aee7b0df3309885d",
+              "quote_hash": "e537ca33c87ed43c393f6e03200f2f8416aefa46b4e5b7c7ba444a8ea9545696"
             }
           ]
         },
@@ -1768,7 +1954,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a357ef46b52de45f",
-              "quote": "Mowito says its system can achieve ±200 micron accuracy for inspection and assembly."
+              "quote": "Mowito says its system can achieve ±200 micron accuracy for inspection and assembly.",
+              "source_content_hash": "aee7b0df3309885d",
+              "quote_hash": "d5fdfafdc35020d9a04292798f7cb49587e4d76a9e2ae3155f1b1b2565daffde"
             }
           ]
         }
@@ -1780,7 +1968,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-57e8c56b0ca083e9",
-              "quote": "Factory robots shouldn't need to be reprogrammed every time production changes. We believe robots should learn the same way people do: by observing and repeating."
+              "quote": "Factory robots shouldn't need to be reprogrammed every time production changes. We believe robots should learn the same way people do: by observing and repeating.",
+              "source_content_hash": "2f04a15ff27a6048",
+              "quote_hash": "0b436419dad6819192edeb88ac63c5b74817910753c53e458685917cc0c32dd4"
             }
           ]
         },
@@ -1790,7 +1980,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-57e8c56b0ca083e9",
-              "quote": "Mowito is building foundational technology that removes one of the biggest barriers to industrial automation — the complexity of robot programming."
+              "quote": "Mowito is building foundational technology that removes one of the biggest barriers to industrial automation — the complexity of robot programming.",
+              "source_content_hash": "2f04a15ff27a6048",
+              "quote_hash": "f57a04506f3c4756024337b7a615b3c49fe63e7fbb10857b2a3856ecbf70e469"
             }
           ]
         }
@@ -1806,7 +1998,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-57e8c56b0ca083e9",
-                "quote": "Kushal Bhagia, Partner at All In Capital, framed it succinctly: 'Mowito is building foundational technology that removes one of the biggest barriers to industrial automation — the complexity of robot programming.'"
+                "quote": "Kushal Bhagia, Partner at All In Capital, framed it succinctly: 'Mowito is building foundational technology that removes one of the biggest barriers to industrial automation — the complexity of robot programming.'",
+                "source_content_hash": "2f04a15ff27a6048",
+                "quote_hash": "0e4251a6cc3a41f4640c0db074b37101f310ab5484175c5f00b57ffedbd8613b"
               }
             ]
           }
@@ -1822,7 +2016,20 @@
           "从少数几条试点产线扩展到数千个异构工厂，需要解决边缘案例、安全认证以及与发那科、ABB、库卡等不同品牌硬件的集成问题，并克服制造商的风险规避心理。"
         ],
         "related_direction_id": "",
-        "sector": "Physical AI、机器人技术、工业自动化软件"
+        "sector": "Physical AI、机器人技术、工业自动化软件",
+        "investment_thesis": {
+          "statement": "本轮资本押注的核心变量是“软件定义机器人”在工业自动化中的价值迁移。随着机械臂硬件商品化，价值正从硬件转向使其更易用、更灵活的操作系统和AI模型层。Mowito 的估值逻辑建立在已验证信号之上：其软件已在财富500强汽车公司和全球顶级电子代工厂的真实产线上运行，实现了超过60%的成本削减和亚毫米级精度，证明了其技术的鲁棒性和商业可行性。这轮融资旨在加速其在美国市场的扩张，以抓住汽车和电子制造领域对柔性自动化日益增长的需求。",
+          "evidence_signals": [
+            "产品已在财富500强汽车公司的生产线上运行，用于关键汽车零部件的制造。",
+            "产品已在全球最大的电子代工制造商之一的生产线上运行。",
+            "在汽车检测案例中，用一个机械臂摄像头替换了8个固定摄像头，降低了超过60%的检测成本。",
+            "在智能手机装配案例中，实现了低于100微米的装配精度。"
+          ],
+          "risks": [
+            "从少数几条试点产线扩展到数千个异构工厂，需要解决边缘案例、安全认证以及与发那科、ABB、库卡等不同品牌硬件的集成问题，并克服制造商的风险规避心理。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1830,169 +2037,91 @@
           "target_kind": "product",
           "research_name": "NeuralPick",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a357ef46b52de45f",
-              "quote": "NeuralPick combines computer vision and force sensing. This lets robot arms see, feel, and handle parts without relying on fixed jigs or rigid fixtures."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Puru Rastogi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "CEO Puru Rastogi previously built autonomous helicopters and studied at Carnegie Mellon."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Safar V.",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "CTO Safar is a graduate of IIT Madras."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Adityanag Nagesh",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "CBO Aditya is a three-time founder."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Version One Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "Mowito has raised a $3M pre-seed round, led by Version One Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "All In Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "with participation from All In Capital, Unisol, and iSeed"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Unisol",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "with participation from All In Capital, Unisol, and iSeed"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "iSeed",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "with participation from All In Capital, Unisol, and iSeed"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Soumith Chintala",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI)."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Adarsh Kulkarni",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI)."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Ashish Kulkarni",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI)."
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "Vaibhav Domkundwar",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a357ef46b52de45f",
-              "quote": "Angel backers include Thinking Machines Lab CTO Soumith Chintala, Foundry Robotics founder and CEO Adarsh Kulkarni, Coformer.ai cofounder and CEO Ashish Kulkarni, and Better Capital founder and CEO Vaibhav Domkundwar."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家财富500强汽车公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5667d54cc3421916",
-              "quote": "Mowito-powered robots are already running production lines at a Fortune 500 automotive company, building a critical component for cars"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2054,13 +2183,44 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:53:45.860Z"
+      "published_at": "2026-07-26T14:53:45.860Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "NeuralPick"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Adityanag Nagesh",
+            "Puru Rastogi",
+            "Safar V."
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-869c9ea96c58873d"
+      ],
+      "aggregation": {
+        "key": "EN-4e0a97cb956fb1c6|pre_seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-941760709039dd07",
       "triggered_by_event_id": "EV-80e54c9a390da293",
       "as_of_date": "2026-07-14",
@@ -2078,7 +2238,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-a8fae2a1815abd78",
-                "quote": "Etched chief executive Gavin Uberti told Bloomberg Technology"
+                "quote": "Etched chief executive Gavin Uberti told Bloomberg Technology",
+                "source_content_hash": "b301b5a3c5ce7cd9",
+                "quote_hash": "4c8e7012e11a193654aeb71f922234af7d0a3c94be471b59bd2408da6ba30cb2"
               }
             ],
             "entity_id": null
@@ -2092,12 +2254,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-            "quote": "An AI chip startup that spent four years building in near-total silence came out of stealth Tuesday"
+            "quote": "An AI chip startup that spent four years building in near-total silence came out of stealth Tuesday",
+            "source_content_hash": "62358e027589c8c5",
+            "quote_hash": "e447471e8251410356c773f41a936e259fd8f26d6876715b37df43b90d63d0f1"
           }
         ]
       },
       "financing": {
-        "round": "多轮融资（含2025年12月完成的5亿美元轮次）",
+        "round": "多轮融资",
         "amount": "$800 million",
         "total_raised": "$800 million",
         "announced_at": "2026-06-30",
@@ -2108,7 +2272,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-                "quote": "The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation and was led by Stripes."
+                "quote": "The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation and was led by Stripes.",
+                "source_content_hash": "62358e027589c8c5",
+                "quote_hash": "934542c199edb9397b07159395237ded9ce8f6cd8b7d5ae9f9b5b6fc29c49dbc"
               }
             ],
             "entity_id": null
@@ -2119,7 +2285,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-                "quote": "Jane Street led a previously unannounced round and has invested more than $100 million in Etched in total, according to Bloomberg."
+                "quote": "Jane Street led a previously unannounced round and has invested more than $100 million in Etched in total, according to Bloomberg.",
+                "source_content_hash": "62358e027589c8c5",
+                "quote_hash": "1afc9069c43b418b9ff147e885e84ee0da9b10ff0164622e4958be9977c53b06"
               }
             ],
             "entity_id": null
@@ -2128,11 +2296,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-            "quote": "Etched has raised $800 million across multiple financing rounds. The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation"
+            "quote": "Etched has raised $800 million across multiple financing rounds. The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation",
+            "source_content_hash": "62358e027589c8c5",
+            "quote_hash": "cfd7089367d0e63cb62bfd02cbe5a27b2e5de92d7fc2565833e4d8ac2d5fa88e"
           },
           {
             "source_id": "FISRC-a8fae2a1815abd78",
-            "quote": "Etched has raised $800 million in total funding at a latest post-money valuation of $5 billion."
+            "quote": "Etched has raised $800 million in total funding at a latest post-money valuation of $5 billion.",
+            "source_content_hash": "b301b5a3c5ce7cd9",
+            "quote_hash": "686c636ba97e2afda3fdf7839c127b6187b1944f5d81a694846b34ec10e10820"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资（含2025年12月完成的5亿美元轮次）",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-80e54c9a390da293",
+            "round_original": "多轮融资（含2025年12月完成的5亿美元轮次）",
+            "amount": "$800 million",
+            "announced_at": "2026-06-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b1fe7cfe0f0cbb5",
+                "quote": "Etched has raised $800 million across multiple financing rounds. The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation",
+                "source_content_hash": "62358e027589c8c5",
+                "quote_hash": "cfd7089367d0e63cb62bfd02cbe5a27b2e5de92d7fc2565833e4d8ac2d5fa88e"
+              },
+              {
+                "source_id": "FISRC-a8fae2a1815abd78",
+                "quote": "Etched has raised $800 million in total funding at a latest post-money valuation of $5 billion.",
+                "source_content_hash": "b301b5a3c5ce7cd9",
+                "quote_hash": "686c636ba97e2afda3fdf7839c127b6187b1944f5d81a694846b34ec10e10820"
+              }
+            ]
           }
         ]
       },
@@ -2150,11 +2347,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The first, which the company calls Low Voltage Inference, runs the chip's math blocks at under half the voltage of conventional AI chips."
+              "quote": "The first, which the company calls Low Voltage Inference, runs the chip's math blocks at under half the voltage of conventional AI chips.",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "8e3a51ba6fa35b3846a56cc50fde9a0e4028334bd047423eb8dcffa4c9c8020f"
             },
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The second innovation, Cluster Scale Memory, creates a shared, low-latency memory pool across chips in the scale-up domain using a proprietary high-bandwidth interconnect."
+              "quote": "The second innovation, Cluster Scale Memory, creates a shared, low-latency memory pool across chips in the scale-up domain using a proprietary high-bandwidth interconnect.",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "217803a98b4798463c65b870beb432a10412f4ca8271c09dcad2427d086b3e40"
             }
           ],
           "entity_id": null
@@ -2172,13 +2373,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "For pure throughput on dense transformer models, Etched says one eight-chip server can process more than 500,000 tokens per second running Llama 70B, against roughly 23,000 tokens per second for an equivalent eight-GPU H100 server and roughly 43,000 to 45,000 for a B200 server."
+              "quote": "For pure throughput on dense transformer models, Etched says one eight-chip server can process more than 500,000 tokens per second running Llama 70B, against roughly 23,000 tokens per second for an equivalent eight-GPU H100 server and roughly 43,000 to 45,000 for a B200 server.",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "91cbb887d029ed1e0f6cf24349472e4ef4fa14b4a71ae2e56057a0b538a31dc5"
             },
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The result is that GPUs typically achieve 30 to 40 percent of their theoretical FLOP capacity on transformer inference workloads. The remaining compute sits idle."
+              "quote": "The result is that GPUs typically achieve 30 to 40 percent of their theoretical FLOP capacity on transformer inference workloads. The remaining compute sits idle.",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "ba1b912ec92095680ebfaa9a67a5e0b5c9c1c8e4d464f7b2c23d74a60d912bd6"
             }
-          ]
+          ],
+          "entity_id": "EN-8d4321d936320802"
         }
       ],
       "metrics": [
@@ -2189,7 +2395,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "$800 million raised"
+              "quote": "$800 million raised",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "4ef642f4ae9a629f74435e8023f68d4a9019709a106b174998c8fc931a97a10a"
             }
           ]
         },
@@ -2200,7 +2408,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation"
+              "quote": "The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "2cca0b44187d8a7e269c36635e75052f0d9facddab46519d454e95718a6aa057"
             }
           ]
         },
@@ -2211,7 +2421,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "more than $1 billion in signed customer contracts"
+              "quote": "more than $1 billion in signed customer contracts",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "d83ec7e74bba5d38587c290e1f367a257e886358ab65697064a9f92597494194"
             }
           ]
         },
@@ -2222,7 +2434,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "pairs the compute die with 144 gigabytes of HBM3E memory"
+              "quote": "pairs the compute die with 144 gigabytes of HBM3E memory",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "e5f2b1dc96825025ec70512e12bc597ba7af6abb395729e1fc092dc4ad456283"
             }
           ]
         },
@@ -2233,7 +2447,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "Etched says one eight-chip server can process more than 500,000 tokens per second running Llama 70B"
+              "quote": "Etched says one eight-chip server can process more than 500,000 tokens per second running Llama 70B",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "5ce6ac2c4459efa95232c046c36ccd11b8b21005f72bf2fd84209409f97f6d3c"
             }
           ]
         },
@@ -2244,7 +2460,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "against roughly 23,000 tokens per second for an equivalent eight-GPU H100 server"
+              "quote": "against roughly 23,000 tokens per second for an equivalent eight-GPU H100 server",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "0b7290f5ae21ba0655f5934dcfdb69b7ccd0f83255e5c5811449f99c10987c40"
             }
           ]
         },
@@ -2255,7 +2473,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "at over 80 percent of peak FLOP throughput, a utilization level that general-purpose GPU clusters cannot sustain"
+              "quote": "at over 80 percent of peak FLOP throughput, a utilization level that general-purpose GPU clusters cannot sustain",
+              "source_content_hash": "62358e027589c8c5",
+              "quote_hash": "74cfd9d4e30c4e70b38754c901476f172d822635ec42703731d7fe6dc735ae64"
             }
           ]
         }
@@ -2267,7 +2487,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a8fae2a1815abd78",
-              "quote": "We want to be able to use the same HBM and the same SRAM to run way, way more tokens for more users."
+              "quote": "We want to be able to use the same HBM and the same SRAM to run way, way more tokens for more users.",
+              "source_content_hash": "b301b5a3c5ce7cd9",
+              "quote_hash": "a2eb2bbd250d0128f14ee54d2fd66383069212dd8bc15e6de14064faa01f70bf"
             }
           ]
         },
@@ -2277,7 +2499,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-a8fae2a1815abd78",
-              "quote": "To make a big difference you have to build a lot of these products."
+              "quote": "To make a big difference you have to build a lot of these products.",
+              "source_content_hash": "b301b5a3c5ce7cd9",
+              "quote_hash": "73f909f7704280793086180074d3e7b78107aa80b2018d9ecfc99bf141d6ad3b"
             }
           ]
         }
@@ -2298,7 +2522,23 @@
           "切换成本极高：迁移至Sohu需使用Etched专有编译器重建生产推理栈，完全不兼容CUDA、vLLM或TensorRT-LLM生态。"
         ],
         "related_direction_id": "",
-        "sector": "AI推理硬件/半导体"
+        "sector": "AI推理硬件/半导体",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Transformer架构能否在AI推理领域长期保持主导地位。若Transformer持续作为主流模型架构，Etched的专用ASIC路径将因远高于通用GPU的吞吐量和能效比而获得巨大经济优势；若模型架构快速演进至混合或新型架构，固定功能硅片的灵活性风险将暴露。当前$5B估值和$800M融资所依赖的已验证信号包括：芯片已流片并进入客户验证阶段、获得超$1B的签署合同（表明有严肃买家完成了计算并认为风险可接受）、以及来自Jane Street等量化交易机构和Hinton等深度学习先驱的投资背书。但所有性能声明均为公司自报，尚无独立第三方在生产条件下对物理Sohu硬件进行基准测试，这是判断证据边界的关键约束。",
+          "evidence_signals": [
+            "A0硅片已从台积电N4P工艺返回，进入客户验证阶段。",
+            "已签署超过$1B的客户采购合同（承诺订单，非已部署系统或确认收入）。",
+            "投资方包括Jane Street、Hudson River Trading、Jump Trading等以严谨著称的量化交易机构，以及Geoffrey Hinton、Fei-Fei Li等深度学习先驱。",
+            "台积电关联基金VentureTech Alliance的战略投资暗示其制造关系超出标准客户协议，可能包含N4P产能优先权。",
+            "公司已在台湾开设工厂和数据中心以支持产能爬坡。"
+          ],
+          "risks": [
+            "架构风险：若前沿模型持续向混合架构（结合Transformer注意力与状态空间模型等）演进，固定功能硅片能否在不进行硬件修订的情况下适应这些变化是真正的开放问题。",
+            "性能声明未经独立验证：所有吞吐量、利用率等性能数据均为公司自报，无第三方在生产条件下对物理硬件进行基准测试。",
+            "切换成本极高：迁移至Sohu需使用Etched专有编译器重建生产推理栈，完全不兼容CUDA、vLLM或TensorRT-LLM生态。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2306,73 +2546,35 @@
           "target_kind": "product",
           "research_name": "Sohu",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The first, which the company calls Low Voltage Inference, runs the chip's math blocks at under half the voltage of conventional AI chips."
-            },
-            {
-              "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The second innovation, Cluster Scale Memory, creates a shared, low-latency memory pool across chips in the scale-up domain using a proprietary high-bandwidth interconnect."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gavin Uberti",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-a8fae2a1815abd78",
-              "quote": "Etched chief executive Gavin Uberti told Bloomberg Technology"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Stripes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The latest, a $500 million round that closed in December 2025, set a $5 billion post-money valuation and was led by Stripes."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Jane Street",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "Jane Street led a previously unannounced round and has invested more than $100 million in Etched in total, according to Bloomberg."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Nvidia",
           "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "For pure throughput on dense transformer models, Etched says one eight-chip server can process more than 500,000 tokens per second running Llama 70B, against roughly 23,000 tokens per second for an equivalent eight-GPU H100 server and roughly 43,000 to 45,000 for a B200 server."
-            },
-            {
-              "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-              "quote": "The result is that GPUs typically achieve 30 to 40 percent of their theoretical FLOP capacity on transformer inference workloads. The remaining compute sits idle."
-            }
-          ]
+          "canonical_name": "NVIDIA"
         }
       ],
       "funding_history": [
@@ -2577,10 +2779,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:52:04.193Z"
+      "published_at": "2026-07-26T14:52:04.193Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sohu"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Gavin Uberti"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-80e54c9a390da293"
+      ],
+      "aggregation": {
+        "key": "EN-8d4321d936320802|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

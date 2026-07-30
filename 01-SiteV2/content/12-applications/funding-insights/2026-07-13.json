@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-13",
     "generated_at": "2026-07-27T05:21:04.215Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 2,
       "auto_published": 1,
       "blocked": 1,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9166696739d69d1c",
       "triggered_by_event_id": "EV-18304fc17b31148e",
       "as_of_date": "2026-07-13",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "Stav Levi-Neumark, CEO and Co-founder of Alta"
+                "quote": "Stav Levi-Neumark, CEO and Co-founder of Alta",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "6b24c1d489de5fdce50f85a576ae9d1a2eeab87cc6a6f70bbca8453d7b1821c8"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
+                "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "5e301e20ea90d39895d780f7fb87251ada66310f8963c28b382e15bfc779546f"
               }
             ],
             "entity_id": null
@@ -57,7 +62,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
+                "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "5e301e20ea90d39895d780f7fb87251ada66310f8963c28b382e15bfc779546f"
               }
             ],
             "entity_id": null
@@ -69,14 +76,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5d43345a21f12bb8",
-              "quote": "Alta currently employs 55 people, split evenly between Israel and the United States"
+              "quote": "Alta currently employs 55 people, split evenly between Israel and the United States",
+              "source_content_hash": "98fbdec62372cf8b",
+              "quote_hash": "ecfb4c48afdac1173751a4600fc8a0dd7ec32d1db3babad5ede973543aee1bfb"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-5d43345a21f12bb8",
-            "quote": "Israeli startup Alta, which develops an AI agent platform for marketing, sales, and business development teams"
+            "quote": "Israeli startup Alta, which develops an AI agent platform for marketing, sales, and business development teams",
+            "source_content_hash": "98fbdec62372cf8b",
+            "quote_hash": "5ead99abc691e9879cd084b4bef6d1a1aec1d45e561941dc66a91b25a0110924"
           }
         ]
       },
@@ -92,7 +103,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "The round was led by IN Venture"
+                "quote": "The round was led by IN Venture",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "a00a631b882b0821b3dceb35b6c930973b9fa657114015975169def2203f7394"
               }
             ],
             "entity_id": null
@@ -103,7 +116,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
               }
             ],
             "entity_id": null
@@ -114,7 +129,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
               }
             ],
             "entity_id": null
@@ -125,7 +142,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
               }
             ],
             "entity_id": null
@@ -136,11 +155,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "3af70b602f3d35cf01c5c706a09643a02dddd8bb2b7320fe3b02946c90acd955"
               },
               {
                 "source_id": "FISRC-5d43345a21f12bb8",
-                "quote": "Avi Eyal, managing partner at Entrée Capital, which invested in Alta from its early stages"
+                "quote": "Avi Eyal, managing partner at Entrée Capital, which invested in Alta from its early stages",
+                "source_content_hash": "98fbdec62372cf8b",
+                "quote_hash": "bd79336b5269c301ad57a37f16577cdc12b5daa7314ae2f8e844e693e20c5dac"
               }
             ],
             "entity_id": null
@@ -151,7 +174,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "3af70b602f3d35cf01c5c706a09643a02dddd8bb2b7320fe3b02946c90acd955"
               }
             ],
             "entity_id": null
@@ -162,7 +187,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9661f69b0104e76e",
-                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "3af70b602f3d35cf01c5c706a09643a02dddd8bb2b7320fe3b02946c90acd955"
               }
             ],
             "entity_id": null
@@ -171,7 +198,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9661f69b0104e76e",
-            "quote": "TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding. The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures, along with prominent angel investors and scout funds."
+            "quote": "TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding. The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures, along with prominent angel investors and scout funds.",
+            "source_content_hash": "36ef58eefd2bf0d4",
+            "quote_hash": "6abd469f44c414f5c712ff564479bbc261c5f838720b6dbc2be50685d1e1664e"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-18304fc17b31148e",
+            "round_original": "A轮",
+            "amount": "2500万美元",
+            "announced_at": "2026-07-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding. The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures, along with prominent angel investors and scout funds.",
+                "source_content_hash": "36ef58eefd2bf0d4",
+                "quote_hash": "6abd469f44c414f5c712ff564479bbc261c5f838720b6dbc2be50685d1e1664e"
+              }
+            ]
           }
         ]
       },
@@ -194,19 +242,27 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Alta handles prospecting, research, multi-channel outbound, inbound qualification, AI calling, and continuous optimization."
+              "quote": "Alta handles prospecting, research, multi-channel outbound, inbound qualification, AI calling, and continuous optimization.",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "a54c062f9ff1c2c90b1fb05349fa8187be0f4dbbe850a621b75e4c97dd9ac35a"
             },
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Alta tackles the challenge of deploying AI agents by first building a \"Company Brain\" that serves as a centralized intelligence layer that maps exactly how a business's GTM engine works."
+              "quote": "Alta tackles the challenge of deploying AI agents by first building a \"Company Brain\" that serves as a centralized intelligence layer that maps exactly how a business's GTM engine works.",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "23cb54b3dc7ab79a647c911041d58af13048def43303e38f8dfe55ea684bc1b2"
             },
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "fueled by more than 50 data sources and hundreds of buying signals"
+              "quote": "fueled by more than 50 data sources and hundreds of buying signals",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "117fb231fdd93095b163f10368c4e0e2a78e223c5f56be4caf14010dd9c6c722"
             },
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "connects to 60+ GTM tools, including Attio and Clay"
+              "quote": "connects to 60+ GTM tools, including Attio and Clay",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "4920d15a265c72c64e27a7fe87c97d838b73a6601f787e5de30671127699d956"
             }
           ],
           "entity_id": null
@@ -220,9 +276,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "d5294704b033cdf739d0ee44a049dbc55d731315ca0056dc0edced0305bb19a4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Deel",
@@ -231,9 +290,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "d5294704b033cdf739d0ee44a049dbc55d731315ca0056dc0edced0305bb19a4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Atlassian",
@@ -242,9 +304,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "d5294704b033cdf739d0ee44a049dbc55d731315ca0056dc0edced0305bb19a4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Atoms",
@@ -253,9 +318,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "d5294704b033cdf739d0ee44a049dbc55d731315ca0056dc0edced0305bb19a4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Sabio Group",
@@ -264,9 +332,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its customers include revenue teams at Snowflake, Deel, Atlassian, Atoms, Riverside, and Sabio Group."
+              "quote": "Its customers include revenue teams at Snowflake, Deel, Atlassian, Atoms, Riverside, and Sabio Group.",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "b7eb3f3d051fa5d0c5d1de2b3ab1cb2fe4d9a74c00961c7b62d02c5b3f1943f0"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -280,9 +351,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
+              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "87b1cad665bc36bf258d30a4ccdb13607617c3c42da50f0ebcd24446d94b398f"
             }
-          ]
+          ],
+          "entity_id": "EN-3ccbd9105a45d8fc"
         },
         {
           "name": "HubSpot",
@@ -294,9 +368,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
+              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "87b1cad665bc36bf258d30a4ccdb13607617c3c42da50f0ebcd24446d94b398f"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -307,7 +384,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "today announced $25 million in Series A funding"
+              "quote": "today announced $25 million in Series A funding",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "2d5b74a9f2c0c1ec59e9b9124aed7b6d2a0c5aea7e1a15455972147d0686dc1d"
             }
           ]
         },
@@ -318,7 +397,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "on track for 800% revenue growth this year"
+              "quote": "on track for 800% revenue growth this year",
+              "source_content_hash": "36ef58eefd2bf0d4",
+              "quote_hash": "e5c8c99f9aba1f811cf1154b6e61868c1963d0fd5dc0c7bba6d93d6540db4198"
             }
           ]
         },
@@ -329,7 +410,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5d43345a21f12bb8",
-              "quote": "reached $15 million in new revenue run rate"
+              "quote": "reached $15 million in new revenue run rate",
+              "source_content_hash": "98fbdec62372cf8b",
+              "quote_hash": "5686a3aa9cc455b4078dd5c20dea5a6722a8323b4c47a1cf353f941ade66c990"
             }
           ]
         },
@@ -340,7 +423,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5d43345a21f12bb8",
-              "quote": "The company expects new revenue run rate of approximately $30 million by the end of 2026."
+              "quote": "The company expects new revenue run rate of approximately $30 million by the end of 2026.",
+              "source_content_hash": "98fbdec62372cf8b",
+              "quote_hash": "d14098c372187be3e77fb259720ddb5c12cf115242b962ee95259fe0189ed922"
             }
           ]
         },
@@ -351,7 +436,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5d43345a21f12bb8",
-              "quote": "Alta currently works with more than 300 customers"
+              "quote": "Alta currently works with more than 300 customers",
+              "source_content_hash": "98fbdec62372cf8b",
+              "quote_hash": "fb2555a9e7b8946495825ff5d5e25f0cd88c4ffffcec30c71dd1315c8cb88050"
             }
           ]
         },
@@ -362,7 +449,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5d43345a21f12bb8",
-              "quote": "adding approximately $1.5 million in new business each month"
+              "quote": "adding approximately $1.5 million in new business each month",
+              "source_content_hash": "98fbdec62372cf8b",
+              "quote_hash": "6e17146485e54074eae47b1347b34b9668f822efac90707b23c3ab40652e1b78"
             }
           ]
         },
@@ -373,7 +462,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-5d43345a21f12bb8",
-              "quote": "a traditional account manager can typically oversee around 20 customers, while at Alta each account manager can manage approximately 80 accounts"
+              "quote": "a traditional account manager can typically oversee around 20 customers, while at Alta each account manager can manage approximately 80 accounts",
+              "source_content_hash": "98fbdec62372cf8b",
+              "quote_hash": "feeebf18eade338ca287d7d17a4c8507b0bf2e6d60d5958fda697adc345fef72"
             }
           ]
         }
@@ -397,7 +488,25 @@
           "从 SaaS 向“产品型服务公司”转型的商业模式尚未被大规模验证，服务交付的规模化可能面临边际成本上升的风险。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 驱动的销售与营销自动化"
+        "sector": "AI 驱动的销售与营销自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“从系统记录到系统行动”的 GTM 架构范式迁移。Alta 以“公司大脑”作为中央智能层，协调 AI 智能体网络取代碎片化工具栈，其估值逻辑建立在已验证的极高运营效率之上：每位客户经理管理约80个账户（传统模式约20个），以55人团队支撑超过300家客户和1500万美元新增收入运行率，并实现800%年收入增长。投资方 IN Venture 明确表示 Alta 不是在现有品类竞争，而是在定义新品类，并计划借助住友商事全球网络推动其进入日本和东南亚市场。",
+          "evidence_signals": [
+            "商业化数月内达到100万美元收入",
+            "年度收入增长率800%",
+            "新增收入运行率达1500万美元，预计2026年底达约3000万美元",
+            "客户超过300家，包括 Snowflake、Deel、Atlassian 等知名企业",
+            "每月新增业务约150万美元",
+            "每位客户经理管理约80个账户，效率为传统模式的4倍",
+            "以55人团队支撑快速增长，计划2026年底仅增至80人",
+            "集成50多个数据源和60多个 GTM 工具"
+          ],
+          "risks": [
+            "Alta 宣称“定义新品类”，但 GTM 工具市场竞争激烈，Salesforce 和 HubSpot 等巨头正在其庞大现有客户基础上添加 AI 智能体赋能层，可能挤压 Alta 的市场空间。",
+            "从 SaaS 向“产品型服务公司”转型的商业模式尚未被大规模验证，服务交付的规模化可能面临边际成本上升的风险。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -405,250 +514,126 @@
           "target_kind": "product",
           "research_name": "Alta AI System of Actions",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Alta handles prospecting, research, multi-channel outbound, inbound qualification, AI calling, and continuous optimization."
-            },
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Alta tackles the challenge of deploying AI agents by first building a \"Company Brain\" that serves as a centralized intelligence layer that maps exactly how a business's GTM engine works."
-            },
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "fueled by more than 50 data sources and hundreds of buying signals"
-            },
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "connects to 60+ GTM tools, including Attio and Clay"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Stav Levi-Neumark",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Stav Levi-Neumark, CEO and Co-founder of Alta"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tom Hoffen",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mor Shabtai",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "IN Venture",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "The round was led by IN Venture"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Mindset Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Skywell Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "LeumiTech77",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Entrée Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
-            },
-            {
-              "source_id": "FISRC-5d43345a21f12bb8",
-              "quote": "Avi Eyal, managing partner at Entrée Capital, which invested in Alta from its early stages"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Target Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Verissimo Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Snowflake",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Deel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Atlassian",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Atoms",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Sabio Group",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Its customers include revenue teams at Snowflake, Deel, Atlassian, Atoms, Riverside, and Sabio Group."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Salesforce",
           "canonical_entity_id": "EN-3ccbd9105a45d8fc",
-          "canonical_name": "Salesforce",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
-            }
-          ]
+          "canonical_name": "Salesforce"
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "HubSpot",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9661f69b0104e76e",
-              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -708,10 +693,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:52:06.576Z"
+      "published_at": "2026-07-26T14:52:06.576Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Alta AI System of Actions"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Mor Shabtai",
+            "Stav Levi-Neumark",
+            "Tom Hoffen"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-18304fc17b31148e"
+      ],
+      "aggregation": {
+        "key": "EN-478cc1059b738832|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

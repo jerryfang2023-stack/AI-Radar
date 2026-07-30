@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-28",
     "generated_at": "2026-07-28T09:28:04.764Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 6,
       "auto_published": 4,
       "blocked": 2,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-8753b7f23092e468",
       "triggered_by_event_id": "EV-986ac3a819d23388",
       "as_of_date": "2026-07-28",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5827527c9c624d25",
-                "quote": "Ian Levinsky CEO & Co-Founder"
+                "quote": "Ian Levinsky CEO & Co-Founder",
+                "source_content_hash": "2145b8707d982803",
+                "quote_hash": "24f2fdc0377ff394ce357d47f7f219caad558e67dec531d88e1da858536495e8"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-5827527c9c624d25",
-                "quote": "Blake Butterworth CTO & Co-Founder"
+                "quote": "Blake Butterworth CTO & Co-Founder",
+                "source_content_hash": "2145b8707d982803",
+                "quote_hash": "c33f69e5696ba5197c0179a6c41dfb43712259a2752f26168cf990cfc8c1c71b"
               }
             ],
             "entity_id": null
@@ -60,11 +65,15 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1bd630ac44028d8a",
-            "quote": "Pathwork is the AI platform purpose-built for the distribution side of life & health insurance, transforming how policies are sold, placed, and retained."
+            "quote": "Pathwork is the AI platform purpose-built for the distribution side of life & health insurance, transforming how policies are sold, placed, and retained.",
+            "source_content_hash": "e75d7d220f4a2887",
+            "quote_hash": "027a2ba29523a71cb710f30c916f57a9388ddf411918400a91093b7c170f6c15"
           },
           {
             "source_id": "FISRC-5827527c9c624d25",
-            "quote": "An AI-native platform that brings clarity, speed, and confidence to the people powering insurance—so they can spend less time chasing answers and more time driving impact."
+            "quote": "An AI-native platform that brings clarity, speed, and confidence to the people powering insurance—so they can spend less time chasing answers and more time driving impact.",
+            "source_content_hash": "2145b8707d982803",
+            "quote_hash": "ae536da66940186697f0f6c90bd54e1208f29ce74d0c3cd6fb3058dc821f5d16"
           }
         ]
       },
@@ -80,7 +89,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1bd630ac44028d8a",
-                "quote": "our $3.5M seed investment round led by Costanoa Ventures"
+                "quote": "our $3.5M seed investment round led by Costanoa Ventures",
+                "source_content_hash": "e75d7d220f4a2887",
+                "quote_hash": "68f7c4d03d1d24835006e70e711a75729c5633a52e978d0c6a047cb69ea057e7"
               }
             ],
             "entity_id": null
@@ -91,7 +102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1bd630ac44028d8a",
-                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors",
+                "source_content_hash": "e75d7d220f4a2887",
+                "quote_hash": "1328b321bc2d43405b2d09f90ebdb2f6317c15ee519cc8a19d18d3f414a1d5fd"
               }
             ],
             "entity_id": null
@@ -102,7 +115,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1bd630ac44028d8a",
-                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors",
+                "source_content_hash": "e75d7d220f4a2887",
+                "quote_hash": "1328b321bc2d43405b2d09f90ebdb2f6317c15ee519cc8a19d18d3f414a1d5fd"
               }
             ],
             "entity_id": null
@@ -113,7 +128,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-1bd630ac44028d8a",
-                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors",
+                "source_content_hash": "e75d7d220f4a2887",
+                "quote_hash": "1328b321bc2d43405b2d09f90ebdb2f6317c15ee519cc8a19d18d3f414a1d5fd"
               }
             ],
             "entity_id": null
@@ -122,7 +139,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-1bd630ac44028d8a",
-            "quote": "Today, Blake and I are thrilled to announce our $3.5M seed investment round led by Costanoa Ventures and joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors."
+            "quote": "Today, Blake and I are thrilled to announce our $3.5M seed investment round led by Costanoa Ventures and joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors.",
+            "source_content_hash": "e75d7d220f4a2887",
+            "quote_hash": "cf0191fa6d3c9c3e08b839d32647909d4f6712d1aeec39ae3efcae3167e012dc"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-986ac3a819d23388",
+            "round_original": "种子轮",
+            "amount": "$3.5M",
+            "announced_at": "2025-09-09",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bd630ac44028d8a",
+                "quote": "Today, Blake and I are thrilled to announce our $3.5M seed investment round led by Costanoa Ventures and joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors.",
+                "source_content_hash": "e75d7d220f4a2887",
+                "quote_hash": "cf0191fa6d3c9c3e08b839d32647909d4f6712d1aeec39ae3efcae3167e012dc"
+              }
+            ]
           }
         ]
       },
@@ -139,7 +177,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "APS files are uploaded into Pathwork Summaries are generated in minutes – even for large files Underwriters validate key findings by clicking directly into source pages Chat-with-files enables targeted searches across thousands of pages"
+              "quote": "APS files are uploaded into Pathwork Summaries are generated in minutes – even for large files Underwriters validate key findings by clicking directly into source pages Chat-with-files enables targeted searches across thousands of pages",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "d47ef8cc904db7d6253cae955965cadec38128771e61acb3721306c9c421dafa"
             }
           ],
           "entity_id": null
@@ -155,7 +195,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork and NGL Insurance Company (NGL), in partnership with LifeCare Assurance Company, announced the launch of PreQual Manager, an AI-powered inbox that enables underwriting teams to respond to broker inquiries faster and more consistently."
+              "quote": "Pathwork and NGL Insurance Company (NGL), in partnership with LifeCare Assurance Company, announced the launch of PreQual Manager, an AI-powered inbox that enables underwriting teams to respond to broker inquiries faster and more consistently.",
+              "source_content_hash": "8a94e278f0e13520",
+              "quote_hash": "072f47db9205be4bdfb30ec58ae6703c378a7237d164734ab7c940a29d78428e"
             }
           ],
           "entity_id": null
@@ -171,7 +213,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork launched a first-of-its-kind offering that gives life insurance brokers on-demand access to the prescription and medical claims data used in modern underwriting."
+              "quote": "Pathwork launched a first-of-its-kind offering that gives life insurance brokers on-demand access to the prescription and medical claims data used in modern underwriting.",
+              "source_content_hash": "8a94e278f0e13520",
+              "quote_hash": "a8fff397c3af301775b190daad1b43c79b106085a0f27ee3889f69d2fdb12d71"
             }
           ],
           "entity_id": null
@@ -185,9 +229,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "Customer: Highland Capital Brokerage Industry: Life, Disability, Long-Term Care & Annuity Distribution Primary Use Case: APS summarization, underwriting support, case validation Impact: 3 years of underwriting capacity reclaimed"
+              "quote": "Customer: Highland Capital Brokerage Industry: Life, Disability, Long-Term Care & Annuity Distribution Primary Use Case: APS summarization, underwriting support, case validation Impact: 3 years of underwriting capacity reclaimed",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "86da0c41019fc77599ccd61ece1f407cbfa7e014fa7fbbb5b5c6e53b98a39fbc"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "NFP (LTCI Partners)",
@@ -196,9 +243,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork helps LTCI Partners, a division of NFP, an Aon company, simplify the complexities of long-term care sales by thinking like an underwriter, shaving days off response times"
+              "quote": "Pathwork helps LTCI Partners, a division of NFP, an Aon company, simplify the complexities of long-term care sales by thinking like an underwriter, shaving days off response times",
+              "source_content_hash": "8a94e278f0e13520",
+              "quote_hash": "31d757b0a5184bf87b842e5e0f9295fbb1a5d4f161620f0f9375bf62626e0b23"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Brokers Central",
@@ -207,9 +257,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "For Brokers Central, Pathwork removes the busywork and delivers a complete, underwriter-ready story in minutes—helping agents move faster, communicate better, and deliver higher placement rates."
+              "quote": "For Brokers Central, Pathwork removes the busywork and delivers a complete, underwriter-ready story in minutes—helping agents move faster, communicate better, and deliver higher placement rates.",
+              "source_content_hash": "8a94e278f0e13520",
+              "quote_hash": "5a79c83977b562ab55a170d20088a30512b8c346fbef0a79b6375e7b3fee7fcd"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "MERIT Insurance",
@@ -218,9 +271,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork’s AI Underwriter has allowed MERIT to grow revenue by taking on more cases, even the most difficult"
+              "quote": "Pathwork’s AI Underwriter has allowed MERIT to grow revenue by taking on more cases, even the most difficult",
+              "source_content_hash": "8a94e278f0e13520",
+              "quote_hash": "fad46436e4bbadecefecc5b805175500aa138aa05e4282b6d915b8e51b9d2020"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Life Quotes",
@@ -229,9 +285,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Using Pathwork’s AI Underwriter, Life Quotes has removed “Let me research that for you” from agent vocabulary, helping them submit applications during the first phone call."
+              "quote": "Using Pathwork’s AI Underwriter, Life Quotes has removed “Let me research that for you” from agent vocabulary, helping them submit applications during the first phone call.",
+              "source_content_hash": "8a94e278f0e13520",
+              "quote_hash": "1674e78f7352c8230e45d8565d21293faa9e77979ad1531eb3902639153c09e8"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -243,7 +302,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "Today, we are proud to count more than 65 brokerages as trusted partners"
+              "quote": "Today, we are proud to count more than 65 brokerages as trusted partners",
+              "source_content_hash": "e75d7d220f4a2887",
+              "quote_hash": "46b8345bb0b71a4f4b1afbd4cb561609428c0310e638acd74095425df2b3c0e6"
             }
           ]
         },
@@ -254,7 +315,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "we’ve generated an estimated 1,400 days of productivity savings (nearly 4 years!)"
+              "quote": "we’ve generated an estimated 1,400 days of productivity savings (nearly 4 years!)",
+              "source_content_hash": "e75d7d220f4a2887",
+              "quote_hash": "5b336c7624f36465588eaa49d15e0c9c5a9e60dc528c1f8f07fe34f3ac560063"
             }
           ]
         },
@@ -265,7 +328,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "early studies with customers show profitability increases of 8-12%"
+              "quote": "early studies with customers show profitability increases of 8-12%",
+              "source_content_hash": "e75d7d220f4a2887",
+              "quote_hash": "7c48d7732138bb4b692c3640dad0881dd7bea5f5218ad4bcd8d557ec83ebea1e"
             }
           ]
         },
@@ -276,7 +341,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "Distribution represents more than $160B in spend in the U.S. alone"
+              "quote": "Distribution represents more than $160B in spend in the U.S. alone",
+              "source_content_hash": "e75d7d220f4a2887",
+              "quote_hash": "b5849036fc1ca0fc631b65cae958a0a8431de751131e42487fb8e5f1bce92a68"
             }
           ]
         },
@@ -287,7 +354,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "Highland processes approximately 182,000 APS pages per year through Pathwork."
+              "quote": "Highland processes approximately 182,000 APS pages per year through Pathwork.",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "9889d449d6b8df547e1c5837775fa4ed3ac9f79a3797215dd753369c150c5e6a"
             }
           ]
         },
@@ -298,7 +367,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "that translates to 758 workdays, or nearly three full years of underwriting capacity reclaimed."
+              "quote": "that translates to 758 workdays, or nearly three full years of underwriting capacity reclaimed.",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "e208909035aa719398881942ff55d39f1dd25f7bbb4f7c789a2a6c5e263cd388"
             }
           ]
         }
@@ -310,7 +381,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "If you had a 1,500-page APS, that could take days. Even when it came back summarized, you still had to double-check everything. It slowed the entire process."
+              "quote": "If you had a 1,500-page APS, that could take days. Even when it came back summarized, you still had to double-check everything. It slowed the entire process.",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "a6657419919275c8fc26610ce5acf4c5f564d3a9b30bbf64cb5f291f9388b1f2"
             }
           ]
         },
@@ -320,7 +393,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "It shocks me how many times I find myself in front of vendors who don’t really know what they’re delivering to market."
+              "quote": "It shocks me how many times I find myself in front of vendors who don’t really know what they’re delivering to market.",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "293d30283d0e80bc5dd7b61b4d8f617da5947975033fe6a3f88fc64e540186ad"
             }
           ]
         },
@@ -330,7 +405,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "Chat with files is where I find the gold. I can pull every page that mentions a specific impairment in seconds. That used to take hours."
+              "quote": "Chat with files is where I find the gold. I can pull every page that mentions a specific impairment in seconds. That used to take hours.",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "333b9f8a95ac0f6a59e8e0bd8d81f3d305e6f8440d0ace7c24b419b7c069d1c3"
             }
           ]
         },
@@ -340,7 +417,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "Pathwork gives me the time to focus on strategy and custom analysis, allowing me to deliver far more value and influence on each case than I ever could the old way."
+              "quote": "Pathwork gives me the time to focus on strategy and custom analysis, allowing me to deliver far more value and influence on each case than I ever could the old way.",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "a09904623d6926b7f1b9c57d8f93d85baefda994018bbf0e5ed110f6ebe68515"
             }
           ]
         },
@@ -350,7 +429,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "For us, this was about putting the right infrastructure in place early, so we’re not rebuilding processes every time the business grows."
+              "quote": "For us, this was about putting the right infrastructure in place early, so we’re not rebuilding processes every time the business grows.",
+              "source_content_hash": "9c2d23ccdd8620e3",
+              "quote_hash": "aa9850161894464650f7e353838c596d204dca20d3e73056be3181a80f429687"
             }
           ]
         }
@@ -366,7 +447,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-4efe7c4a106a5862",
-                "quote": "American Family Ventures is excited to announce our seed investment into Pathwork, an AI-native platform purpose-built to modernize life and health insurance distribution for brokers and carriers!"
+                "quote": "American Family Ventures is excited to announce our seed investment into Pathwork, an AI-native platform purpose-built to modernize life and health insurance distribution for brokers and carriers!",
+                "source_content_hash": "f85052fe97ebf182",
+                "quote_hash": "be4c15082141358aeee1c4641b69e5c12cbd0b121b5d229d01b5c52dc83164bd"
               }
             ]
           }
@@ -383,7 +466,21 @@
           "种子轮融资额仅350万美元，团队规模和工程资源有限，在面向承运人的下一阶段扩展中可能面临产品化和集成挑战。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "保险科技（Insurtech）"
+        "sector": "保险科技（Insurtech）",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI能否在高度依赖人工判断的保险核保与分销工作流中实现可量化的效率提升。本轮融资的已验证信号包括：Pathwork已签约超过65家经纪商，为客户创造了约1,400天的生产力节约和8-12%的盈利能力提升，并在头部客户Highland Capital Brokerage处实现了近三年核保产能的回收。这些数据表明产品已嵌入核心工作流并产生可衡量的ROI，而非停留在试点阶段。但判断的证据边界在于：这些指标均来自公司官方披露和单一深度案例，缺乏独立第三方验证；且融资额仅为350万美元种子轮，尚未证明其模式在大规模多承运人生态中的可复制性。",
+          "evidence_signals": [
+            "已签约超过65家经纪商，包括Highland Capital Brokerage、NFP、Hilb等全国性平台",
+            "为客户创造约1,400天生产力节约，早期研究显示客户盈利能力提升8-12%",
+            "在Highland Capital Brokerage实现近三年核保产能回收，年度处理约182,000页APS",
+            "产品已嵌入客户日常工作流，从APS上传到生成摘要仅需数分钟"
+          ],
+          "risks": [
+            "所有效能数据均来自公司官方披露和单一深度案例，缺乏独立第三方审计或跨客户统计验证，实际ROI可能因客户规模和案件复杂度而异。",
+            "种子轮融资额仅350万美元，团队规模和工程资源有限，在面向承运人的下一阶段扩展中可能面临产品化和集成挑战。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -391,182 +488,98 @@
           "target_kind": "product",
           "research_name": "Case Underwriter",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "APS files are uploaded into Pathwork Summaries are generated in minutes – even for large files Underwriters validate key findings by clicking directly into source pages Chat-with-files enables targeted searches across thousands of pages"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "PreQual Manager",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork and NGL Insurance Company (NGL), in partnership with LifeCare Assurance Company, announced the launch of PreQual Manager, an AI-powered inbox that enables underwriting teams to respond to broker inquiries faster and more consistently."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Medical Data on Demand",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork launched a first-of-its-kind offering that gives life insurance brokers on-demand access to the prescription and medical claims data used in modern underwriting."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Ian Levinsky",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5827527c9c624d25",
-              "quote": "Ian Levinsky CEO & Co-Founder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Blake Butterworth",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5827527c9c624d25",
-              "quote": "Blake Butterworth CTO & Co-Founder"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Costanoa Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "our $3.5M seed investment round led by Costanoa Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Logos Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "American Family Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Meridian Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1bd630ac44028d8a",
-              "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Highland Capital Brokerage",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9dbdb1b3246dfc3a",
-              "quote": "Customer: Highland Capital Brokerage Industry: Life, Disability, Long-Term Care & Annuity Distribution Primary Use Case: APS summarization, underwriting support, case validation Impact: 3 years of underwriting capacity reclaimed"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "NFP (LTCI Partners)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork helps LTCI Partners, a division of NFP, an Aon company, simplify the complexities of long-term care sales by thinking like an underwriter, shaving days off response times"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Brokers Central",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "For Brokers Central, Pathwork removes the busywork and delivers a complete, underwriter-ready story in minutes—helping agents move faster, communicate better, and deliver higher placement rates."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "MERIT Insurance",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Pathwork’s AI Underwriter has allowed MERIT to grow revenue by taking on more cases, even the most difficult"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Life Quotes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0bdf3a9f2f593f6d",
-              "quote": "Using Pathwork’s AI Underwriter, Life Quotes has removed “Let me research that for you” from agent vocabulary, helping them submit applications during the first phone call."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -652,13 +665,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-28T09:28:04.674Z"
+      "published_at": "2026-07-28T09:28:04.674Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Case Underwriter",
+            "Medical Data on Demand",
+            "PreQual Manager"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Blake Butterworth",
+            "Ian Levinsky"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-986ac3a819d23388"
+      ],
+      "aggregation": {
+        "key": "EN-c71496986d06e3f2|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-33720a6e75d508b6",
       "triggered_by_event_id": "EV-754e83c2d19005fe",
       "as_of_date": "2026-07-28",
@@ -676,11 +721,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "Founded in January 2026 by former Accel investor Rafael Quintanilla, together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+                "quote": "Founded in January 2026 by former Accel investor Rafael Quintanilla, together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "f316afeb2948664f52aac6035df8cbf1e7fb565f02957363481b7aee9cc185e6"
               },
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "Rafael Quintanilla, co-founder and CEO of Arrakis"
+                "quote": "Rafael Quintanilla, co-founder and CEO of Arrakis",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "69e398147b764e9a6e612660bf888396316fa2112a65ccbe33389498d6cd50cf"
               }
             ],
             "entity_id": null
@@ -691,7 +740,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "1b368b152da7553b88b7dbd06b466f85d6557f12fa7c7794fd11b8aed5fa6bdd"
               }
             ],
             "entity_id": null
@@ -702,7 +753,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "1b368b152da7553b88b7dbd06b466f85d6557f12fa7c7794fd11b8aed5fa6bdd"
               }
             ],
             "entity_id": null
@@ -713,7 +766,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "1b368b152da7553b88b7dbd06b466f85d6557f12fa7c7794fd11b8aed5fa6bdd"
               }
             ],
             "entity_id": null
@@ -725,19 +780,23 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cc4a5fb5f0c65e73",
-              "quote": "Arrakis currently has five customers and plans to triple its headcount from roughly 15"
+              "quote": "Arrakis currently has five customers and plans to triple its headcount from roughly 15",
+              "source_content_hash": "c8500cdec29dbb19",
+              "quote_hash": "3689de552bb241dd7483c152a8df0f156d4fbe984698bfe99b9e70ea38e571d6"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-ac4fd601f33650ff",
-            "quote": "Arrakis is an AI software company helping industrial organisations deploy AI agents into mission-critical operational workflows."
+            "quote": "Arrakis is an AI software company helping industrial organisations deploy AI agents into mission-critical operational workflows.",
+            "source_content_hash": "4d42f1ad7c55a3e3",
+            "quote_hash": "c9fc7e4340d50bc1fbe57db46cba1cd2ef141e55bdad5b41dfa5ad1fa58f81ef"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$30 million",
         "total_raised": "约$38 million",
         "announced_at": "2026-07-22",
@@ -748,7 +807,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "a $30 million Series A led by Blossom Capital"
+                "quote": "a $30 million Series A led by Blossom Capital",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "0032fc03c758699a4a66af3c8bb1a51b712d26e09681c325bddd327665fb0009"
               }
             ],
             "entity_id": null
@@ -759,7 +820,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
+                "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "db7efc87bd0312c1bd55c8774f4fa31b7a39a02fd9ba35210c7b6874ae5e4f3e"
               }
             ],
             "entity_id": null
@@ -770,7 +833,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "30f26b7969f6acad7ca71f25be63138d54b9fac10153e9a22764e1b023419d53"
               }
             ],
             "entity_id": null
@@ -781,7 +846,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "30f26b7969f6acad7ca71f25be63138d54b9fac10153e9a22764e1b023419d53"
               }
             ],
             "entity_id": null
@@ -792,7 +859,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "30f26b7969f6acad7ca71f25be63138d54b9fac10153e9a22764e1b023419d53"
               }
             ],
             "entity_id": null
@@ -803,7 +872,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog"
+                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "23c11afd491ee076f76e385d788cd78cc1467fe8fbd0d8fe7eadcb74ca978f75"
               }
             ],
             "entity_id": null
@@ -814,7 +885,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products"
+                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "31b35d92a4b8a42a9b1fba4d971e7ac3d8bbcc7ef89ffc4a0fe61c7e641b9764"
               }
             ],
             "entity_id": null
@@ -825,7 +898,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products and Junaid Hussein, founder of Cambridge Aerospace"
+                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products and Junaid Hussein, founder of Cambridge Aerospace",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "c8d7316720027967286bdbc2bcc8ea4ebb8cee5bb697f4bf2407294720eb3038"
               }
             ],
             "entity_id": null
@@ -834,11 +909,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ac4fd601f33650ff",
-            "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million"
+            "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million",
+            "source_content_hash": "4d42f1ad7c55a3e3",
+            "quote_hash": "7571312f44940cb7629917662962eb775974fe48e359ef9eabf08fe12fa95457"
           },
           {
             "source_id": "FISRC-cc4a5fb5f0c65e73",
-            "quote": "The latest round values the company at $140 million post-money, cofounder and CEO Rafael Quintanilla told Fortune."
+            "quote": "The latest round values the company at $140 million post-money, cofounder and CEO Rafael Quintanilla told Fortune.",
+            "source_content_hash": "c8500cdec29dbb19",
+            "quote_hash": "7694cf697633a19e48aff08984a4e2a15403ead8347f2bf28c6a268fc73a21da"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-754e83c2d19005fe",
+            "round_original": "Series A",
+            "amount": "$30 million",
+            "announced_at": "2026-07-22",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "7571312f44940cb7629917662962eb775974fe48e359ef9eabf08fe12fa95457"
+              },
+              {
+                "source_id": "FISRC-cc4a5fb5f0c65e73",
+                "quote": "The latest round values the company at $140 million post-money, cofounder and CEO Rafael Quintanilla told Fortune.",
+                "source_content_hash": "c8500cdec29dbb19",
+                "quote_hash": "7694cf697633a19e48aff08984a4e2a15403ead8347f2bf28c6a268fc73a21da"
+              }
+            ]
           }
         ]
       },
@@ -857,23 +961,33 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Arrakis combines elite forward-deployed AI engineers with a model-agnostic enterprise AI platform and applied AI research tuned to industrial operations, letting companies leverage their data to train, deploy, and scale custom AI agents in weeks, not quarters."
+              "quote": "Arrakis combines elite forward-deployed AI engineers with a model-agnostic enterprise AI platform and applied AI research tuned to industrial operations, letting companies leverage their data to train, deploy, and scale custom AI agents in weeks, not quarters.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "21006ff2b44c094a8bf98dc9812910e1b96112fd586dc7774878283d8df3c9cf"
             },
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Rather than replacing existing technology stacks, Arrakis deploys AI agents into existing systems, improving operational throughput without multi-year migrations."
+              "quote": "Rather than replacing existing technology stacks, Arrakis deploys AI agents into existing systems, improving operational throughput without multi-year migrations.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "d713ca600d0671490b5d31e1c34ff9363cbf08a4c1b6701db30364c586ac2c1e"
             },
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Arrakis operates to the strictest data and security standards: customer data and IP remain theirs, and the company never uses them for third-party model training."
+              "quote": "Arrakis operates to the strictest data and security standards: customer data and IP remain theirs, and the company never uses them for third-party model training.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "b3e08a1d8713da7b031df59b20e9d319968b0c160bb122ded499586deb8bbaf9"
             },
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "The company ties a significant proportion of its fees directly to customer outcomes, aligning its commercial model with the value delivered."
+              "quote": "The company ties a significant proportion of its fees directly to customer outcomes, aligning its commercial model with the value delivered.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "0bad3251efc5510f515cc6fa79ece660c978419a00d5a76e5cd762b5498101d2"
             },
             {
               "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Arrakis holds SOC 2, ISO 27001, and GDPR certifications."
+              "quote": "Arrakis holds SOC 2, ISO 27001, and GDPR certifications.",
+              "source_content_hash": "252ed5d6accd948e",
+              "quote_hash": "999905b26447efc7549f18a10effeaa53802b8c8cbfb07ebfdd6a2dff6903f68"
             }
           ],
           "entity_id": null
@@ -887,9 +1001,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Within six months of launch, Arrakis has secured enterprise customers, including NYSE-listed enterprises across the energy, logistics, and industrial sectors. Arrakis customers are seeing measurable returns within weeks, including reducing procurement cycle times by 90% and real-time visibility into previously manual operational and financial processes."
+              "quote": "Within six months of launch, Arrakis has secured enterprise customers, including NYSE-listed enterprises across the energy, logistics, and industrial sectors. Arrakis customers are seeing measurable returns within weeks, including reducing procurement cycle times by 90% and real-time visibility into previously manual operational and financial processes.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "91810f2354ea56f752276825f1e740023f4435c21d73fab31b259091af6881c1"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -901,7 +1018,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "reducing procurement cycle times by 90%"
+              "quote": "reducing procurement cycle times by 90%",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "703811ae8b41d3618bb3999133d7dd418317be43f0ab76da308ca7c21e4d949e"
             }
           ]
         },
@@ -912,7 +1031,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-cc4a5fb5f0c65e73",
-              "quote": "The latest round values the company at $140 million post-money"
+              "quote": "The latest round values the company at $140 million post-money",
+              "source_content_hash": "c8500cdec29dbb19",
+              "quote_hash": "379eec4666934654910260ffd19bba326423640da5336d68f611c8ea3d3bdf0c"
             }
           ]
         }
@@ -924,7 +1045,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Most AI investment to date has targeted the 30% of workers behind a desk. The real ROI lies in the 70% running industrial operations. We're building from Europe for the world, with the ambition to build the Operating System our industrial champions need to win."
+              "quote": "Most AI investment to date has targeted the 30% of workers behind a desk. The real ROI lies in the 70% running industrial operations. We're building from Europe for the world, with the ambition to build the Operating System our industrial champions need to win.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "67ed7dd67b8d89e1a50f1aada50dd7d0a76c1f708267e11833d91fefd3ebe1e5"
             }
           ]
         },
@@ -934,7 +1057,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations."
+              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "d94f6cf98612fde036bc909f2752c85a104f21b37866072ed32c5af625ab1799"
             }
           ]
         },
@@ -944,7 +1069,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company."
+              "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company.",
+              "source_content_hash": "4d42f1ad7c55a3e3",
+              "quote_hash": "0cef37383b583134d1b8a228aa294277b193488daaa412e4e99d548974911689"
             }
           ]
         }
@@ -960,7 +1087,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes."
+                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes.",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "6217351f8b8d841618e7a5fa15dca3196b337db2c93e4147b78fc1ce5f119972"
               }
             ]
           },
@@ -973,7 +1102,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ac4fd601f33650ff",
-                "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand. We're excited to continue supporting Arrakis as it scales globally."
+                "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand. We're excited to continue supporting Arrakis as it scales globally.",
+                "source_content_hash": "4d42f1ad7c55a3e3",
+                "quote_hash": "987d6f2e79b6a2f1bd3b0a1f12593cc880e5c79785985a294ab51520af3cfe12"
               }
             ]
           }
@@ -989,7 +1120,20 @@
           "客户集中度高且数量极少（仅5家），单一客户流失将对业务产生重大影响；同时，工业客户销售周期长、决策保守，规模化速度可能慢于预期。"
         ],
         "related_direction_id": "DIR-20260725-01",
-        "sector": "工业AI/企业软件"
+        "sector": "工业AI/企业软件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“工业AI落地的最后一公里”——即跨越AI实验与生产级部署之间鸿沟的能力。本轮$1400万投后估值所依赖的已验证信号包括：成立6个月内即获得5家企业客户（含纽交所上市公司），并实现采购周期缩短90%等可量化成果；创始团队兼具Accel投资背景与Palantir、Datadog、ASML等工业与基础设施领域顶级公司的运营经验。但判断的证据边界受限于客户数量少、收入规模未披露，且客户名单受保密协议限制无法独立验证。",
+          "evidence_signals": [
+            "成立6个月内获得5家企业客户，包括纽交所上市公司",
+            "客户在数周内实现采购周期时间缩短90%",
+            "创始团队来自Accel、Palantir、Datadog、ASML等顶级机构",
+            "已签署首个美国客户，需求横跨航空航天、能源和物流市场"
+          ],
+          "risks": [
+            "客户集中度高且数量极少（仅5家），单一客户流失将对业务产生重大影响；同时，工业客户销售周期长、决策保守，规模化速度可能慢于预期。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -997,202 +1141,98 @@
           "target_kind": "product",
           "research_name": "Arrakis AI部署平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Arrakis combines elite forward-deployed AI engineers with a model-agnostic enterprise AI platform and applied AI research tuned to industrial operations, letting companies leverage their data to train, deploy, and scale custom AI agents in weeks, not quarters."
-            },
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Rather than replacing existing technology stacks, Arrakis deploys AI agents into existing systems, improving operational throughput without multi-year migrations."
-            },
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Arrakis operates to the strictest data and security standards: customer data and IP remain theirs, and the company never uses them for third-party model training."
-            },
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "The company ties a significant proportion of its fees directly to customer outcomes, aligning its commercial model with the value delivered."
-            },
-            {
-              "source_id": "FISRC-b000b5cd09445eff",
-              "quote": "Arrakis holds SOC 2, ISO 27001, and GDPR certifications."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Rafael Quintanilla",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Founded in January 2026 by former Accel investor Rafael Quintanilla, together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
-            },
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Rafael Quintanilla, co-founder and CEO of Arrakis"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Haroun Beltaifa",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Romain Fouilland",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mikhail Galkov",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Blossom Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "a $30 million Series A led by Blossom Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "GFC",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "MainObject",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Rerail",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Olivier Pomel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Olivier Godement",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Junaid Hussein",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products and Junaid Hussein, founder of Cambridge Aerospace"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "未具名纽约证券交易所上市企业",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ac4fd601f33650ff",
-              "quote": "Within six months of launch, Arrakis has secured enterprise customers, including NYSE-listed enterprises across the energy, logistics, and industrial sectors. Arrakis customers are seeing measurable returns within weeks, including reducing procurement cycle times by 90% and real-time visibility into previously manual operational and financial processes."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1256,13 +1296,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-28T05:45:53.127Z"
+      "published_at": "2026-07-28T05:45:53.127Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Arrakis AI部署平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 4,
+          "unresolved_names": [
+            "Haroun Beltaifa",
+            "Mikhail Galkov",
+            "Rafael Quintanilla",
+            "Romain Fouilland"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-754e83c2d19005fe"
+      ],
+      "aggregation": {
+        "key": "EN-834cc12fc35adde7|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-9812ec69e97e0357",
       "triggered_by_event_id": "EV-33b3cf34f8ff7bd8",
       "as_of_date": "2026-07-28",
@@ -1280,7 +1352,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ec66bd3ab9da8317",
-                "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
+                "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "92b9ef29e6b893ca973dd0e15f67a762caa945f3f0dde8fa1fc285f1875c541a"
               }
             ],
             "entity_id": null
@@ -1291,7 +1365,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ec66bd3ab9da8317",
-                "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
+                "quote": "co-founder and Chief Scientific Officer Dr. Román Orús",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "1134dfbcb838631e319dc7874e79ffec40f1c7c8e84a32dbd30b60e1ade5e6bd"
               }
             ],
             "entity_id": null
@@ -1305,16 +1381,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ec66bd3ab9da8317",
-            "quote": "Multiverse Computing is the global leader in sovereign and efficient AI."
+            "quote": "Multiverse Computing is the global leader in sovereign and efficient AI.",
+            "source_content_hash": "c6efbd1a58ae661a",
+            "quote_hash": "6c6a4dd7bf36c3d8365f2fba5e7260d21026f90fbc76cdcb8340355a028fae1d"
           },
           {
             "source_id": "FISRC-ec66bd3ab9da8317",
-            "quote": "Headquartered in Donostia, Spain"
+            "quote": "Headquartered in Donostia, Spain",
+            "source_content_hash": "c6efbd1a58ae661a",
+            "quote_hash": "aa4d6f8cd4f3fcf942ee1cc912de2ec75f21910505a7bd2f8c22e0ca3fe6d1a6"
           }
         ]
       },
       "financing": {
-        "round": "Series C",
+        "round": "C轮",
         "amount": "$570 million (€500M)",
         "total_raised": "$800 million",
         "announced_at": "2026-07-27",
@@ -1325,7 +1405,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ec66bd3ab9da8317",
-                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
               }
             ],
             "entity_id": null
@@ -1336,7 +1418,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ec66bd3ab9da8317",
-                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
               }
             ],
             "entity_id": null
@@ -1347,11 +1431,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ec66bd3ab9da8317",
-                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
               },
               {
                 "source_id": "FISRC-0a07bce6fc40cc12",
-                "quote": "In June 2025, Multiverse Computing announced a €189 million Series B funding round led by Bullhound Capital."
+                "quote": "In June 2025, Multiverse Computing announced a €189 million Series B funding round led by Bullhound Capital.",
+                "source_content_hash": "33629c1d4d0fd084",
+                "quote_hash": "50c56c8db0a4ae727cfe21448f527e248f0fb37c9254872f488da81529d15ae1"
               }
             ],
             "entity_id": null
@@ -1362,7 +1450,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-ec66bd3ab9da8317",
-                "quote": "additional commitments to date from investors including Santander Alternative Investments"
+                "quote": "additional commitments to date from investors including Santander Alternative Investments",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "d979a5971f22925fe5221ecf7317ff452d4fb0b8d42a5ac627e4bd40b1a156d4"
               }
             ],
             "entity_id": null
@@ -1371,11 +1461,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-ec66bd3ab9da8317",
-            "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation"
+            "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation",
+            "source_content_hash": "c6efbd1a58ae661a",
+            "quote_hash": "d67846c202e4b2d7891752b792953c6d646d3e6a85c96d9f726a36c1956f4462"
           },
           {
             "source_id": "FISRC-ec66bd3ab9da8317",
-            "quote": "expected to bring total funding to $800 million, inclusive of prior rounds"
+            "quote": "expected to bring total funding to $800 million, inclusive of prior rounds",
+            "source_content_hash": "c6efbd1a58ae661a",
+            "quote_hash": "af2086551cbf2dfc3c6060331064d846a9f9335df80e5bddcc38c5b0eec024da"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-33b3cf34f8ff7bd8",
+            "round_original": "Series C",
+            "amount": "$570 million (€500M)",
+            "announced_at": "2026-07-27",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "d67846c202e4b2d7891752b792953c6d646d3e6a85c96d9f726a36c1956f4462"
+              },
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "expected to bring total funding to $800 million, inclusive of prior rounds",
+                "source_content_hash": "c6efbd1a58ae661a",
+                "quote_hash": "af2086551cbf2dfc3c6060331064d846a9f9335df80e5bddcc38c5b0eec024da"
+              }
+            ]
           }
         ]
       },
@@ -1393,11 +1512,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
+              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression.",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "0120e063627e899f0f4a0aee6f9d0a36906a36026138e23eb278d7ce23fb561e"
             },
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss."
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss.",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "a3128877d225ac6d3f31e9bf7d4ac7af5481ba6aea8c79433dceac4ac1bf736f"
             }
           ],
           "entity_id": null
@@ -1413,7 +1536,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud."
+              "quote": "orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud.",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "e1f28760a331b50b776ec4c8280a44556075fae9b1667059840f504b3a042572"
             }
           ],
           "entity_id": null
@@ -1431,7 +1556,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "an end-to-end software layer for next-generation AI factories and data centers that brings model compression, GPU orchestration, AI services, and sovereign-grade controls into a unified platform."
+              "quote": "an end-to-end software layer for next-generation AI factories and data centers that brings model compression, GPU orchestration, AI services, and sovereign-grade controls into a unified platform.",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "0c8cf62736173fab8c383960b99816d432973a991505620c82f5ee2f66d00582"
             }
           ],
           "entity_id": null
@@ -1445,9 +1572,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
+              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "010588b0c21dd257bbfca4f46c5c2dab0bdab329633d2a2b801a2916f126ec0d"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Telefónica",
@@ -1456,9 +1586,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f56b3890c53aeb9c",
-              "quote": "The AI model compression process also significantly reduces storage and computing needs, with cuts of up to 80%, and lowers energy consumption by up to 75%."
+              "quote": "The AI model compression process also significantly reduces storage and computing needs, with cuts of up to 80%, and lowers energy consumption by up to 75%.",
+              "source_content_hash": "d0ae05f8928c6034",
+              "quote_hash": "11c62034dbb4981b30e587a1a0444e1b1cd34533b0614fabef2d08ad872c3d43"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -1470,7 +1603,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "a $570 million (€500M) Series C funding round"
+              "quote": "a $570 million (€500M) Series C funding round",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "b708cb1cf6c33642be1d5570023cec05ef6ecf6905324403e2533054aa483d1e"
             }
           ]
         },
@@ -1481,7 +1616,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "at a $1.7 billion (€1.5B) pre-money valuation"
+              "quote": "at a $1.7 billion (€1.5B) pre-money valuation",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "0e44964c3db4cd48cbdd77b0622ac38761dd11b6edc5281256f06c984c0d539f"
             }
           ]
         },
@@ -1492,7 +1629,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "expected to bring total funding to $800 million, inclusive of prior rounds"
+              "quote": "expected to bring total funding to $800 million, inclusive of prior rounds",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "af2086551cbf2dfc3c6060331064d846a9f9335df80e5bddcc38c5b0eec024da"
             }
           ]
         },
@@ -1503,7 +1642,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "Since closing its Series B in June 2025, Multiverse Computing has grown annualized revenue by more than 10x"
+              "quote": "Since closing its Series B in June 2025, Multiverse Computing has grown annualized revenue by more than 10x",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "c55950e6b52f6486d1ce07beadecf22c42615374d65001dbd65e5a7338210cba"
             }
           ]
         },
@@ -1514,7 +1655,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "with 96x year-over-year sales growth in Q1 of 2026"
+              "quote": "with 96x year-over-year sales growth in Q1 of 2026",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "d62dbe7f8832e9be085ecbc2cc6460bfc25a3d8a064afa80a4f67ee302f6b526"
             }
           ]
         },
@@ -1525,7 +1668,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "8ebc74754a235aceaf6f5a3355270496224db5ab9bba2b56b66c9d5fe4db0163"
             }
           ]
         },
@@ -1536,7 +1681,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "Multiverse serves more than 100 global customers"
+              "quote": "Multiverse serves more than 100 global customers",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "8e70296e788699b0a47b938a86646efdd44bc21093e7b3bed99b57e129e6df65"
             }
           ]
         },
@@ -1547,7 +1694,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "a 5x step-up from its Series B"
+              "quote": "a 5x step-up from its Series B",
+              "source_content_hash": "c6efbd1a58ae661a",
+              "quote_hash": "ebc9096a576d031db28aa38341d8b2ff749e5efa10d09c4e60f8b4de82a672eb"
             }
           ]
         }
@@ -1567,7 +1716,21 @@
           "本轮融资尚未关闭，仍对额外战略投资者开放，最终金额和投资方结构存在不确定性。"
         ],
         "related_direction_id": "",
-        "sector": "高效 AI 与模型压缩基础设施"
+        "sector": "高效 AI 与模型压缩基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 AI 模型压缩技术能否成为基础设施层与应用层之间的关键效率平台。本轮 5 倍估值跃升和 17 亿美元投前估值，依赖于两个已验证信号：一是 B 轮后年化收入增长超 10 倍、2026 年 Q1 销售额同比增长 96 倍的商业牵引力；二是 CompactifAI 已在数百万设备上部署并获得 Allianz、Bosch、Telefónica 等标杆客户的采用。投资方的判断边界在于，Multiverse 从下游压缩工具向完整 AI 代工厂和操作系统的演进是否能在主权 AI 和边缘 AI 两个方向上同时兑现。",
+          "evidence_signals": [
+            "B 轮后年化收入增长超 10 倍，2026 年 Q1 销售额同比增长 96 倍",
+            "CompactifAI 模型已在数百万设备上部署，覆盖无人机、摄像头、卫星、车辆和电信基础设施",
+            "拥有超过 100 家全球客户，包括 Allianz、Bank of Canada、Bosch、Iberdrola、Telefónica 等",
+            "与 Telefónica 合作压缩客服 LLM，实现 75% 能耗降低和 80% 存储与计算需求削减"
+          ],
+          "risks": [
+            "来源未披露绝对收入基数，仅提供增长倍数，无法判断实际营收规模是否支撑 17 亿美元估值。",
+            "本轮融资尚未关闭，仍对额外战略投资者开放，最终金额和投资方结构存在不确定性。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1575,151 +1738,77 @@
           "target_kind": "product",
           "research_name": "CompactifAI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
-            },
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "CompactifAI Router",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "AI 工厂与数据中心端到端软件层",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "an end-to-end software layer for next-generation AI factories and data centers that brings model compression, GPU orchestration, AI services, and sovereign-grade controls into a unified platform."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Enrique Lizaso",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Dr. Román Orús",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Forgepoint Capital International",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "BNPP SIVF",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bullhound Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-            },
-            {
-              "source_id": "FISRC-0a07bce6fc40cc12",
-              "quote": "In June 2025, Multiverse Computing announced a €189 million Series B funding round led by Bullhound Capital."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Santander Alternative Investments",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "additional commitments to date from investors including Santander Alternative Investments"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Allianz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Telefónica",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f56b3890c53aeb9c",
-              "quote": "The AI model compression process also significantly reduces storage and computing needs, with cuts of up to 80%, and lowers energy consumption by up to 75%."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1781,13 +1870,45 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-28T05:45:01.499Z"
+      "published_at": "2026-07-28T05:45:01.499Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI 工厂与数据中心端到端软件层",
+            "CompactifAI",
+            "CompactifAI Router"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Dr. Román Orús",
+            "Enrique Lizaso"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-33b3cf34f8ff7bd8"
+      ],
+      "aggregation": {
+        "key": "EN-0b01f10e87d13e75|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-01fcf93131eb921c",
       "triggered_by_event_id": "EV-3fb827f44ea109de",
       "as_of_date": "2026-07-28",
@@ -1805,7 +1926,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6be00539e7d0e25e",
-                "quote": "Paper was founded by CEO Stephen Haney"
+                "quote": "Paper was founded by CEO Stephen Haney",
+                "source_content_hash": "e33f25fc65f5596d",
+                "quote_hash": "6ef1b82df6c8b0b1900fc9be31f3f7d017f1ddab4dcecf25412058be31e9273c"
               }
             ],
             "entity_id": null
@@ -1819,16 +1942,20 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6be00539e7d0e25e",
-            "quote": "San Francisco startup Paper raised $34 million from Accel and ICONIQ on July 23, 2026, building a design platform where every element is real HTML and CSS rather than a proprietary format."
+            "quote": "San Francisco startup Paper raised $34 million from Accel and ICONIQ on July 23, 2026, building a design platform where every element is real HTML and CSS rather than a proprietary format.",
+            "source_content_hash": "e33f25fc65f5596d",
+            "quote_hash": "f5992056340c2839e0eca90e18db893016ab2e5028eb0aaabae1ee180110e17d"
           },
           {
             "source_id": "FISRC-fa985513def1ff4e",
-            "quote": "Paper is building a new foundation for design that enables designers and engineers to collaborate through a shared language, while incorporating AI and agents directly into the creative process."
+            "quote": "Paper is building a new foundation for design that enables designers and engineers to collaborate through a shared language, while incorporating AI and agents directly into the creative process.",
+            "source_content_hash": "1c3457623d51a9d2",
+            "quote_hash": "bd68737f9edd29a1d3822ec72f8955bf5ec921903c0dd4820898a61cac2c76bf"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$34M",
         "total_raised": "$38.5M",
         "announced_at": "2026-07-23",
@@ -1839,7 +1966,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6be00539e7d0e25e",
-                "quote": "The round was led by Accel and ICONIQ"
+                "quote": "The round was led by Accel and ICONIQ",
+                "source_content_hash": "e33f25fc65f5596d",
+                "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
               }
             ],
             "entity_id": null
@@ -1850,7 +1979,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6be00539e7d0e25e",
-                "quote": "The round was led by Accel and ICONIQ"
+                "quote": "The round was led by Accel and ICONIQ",
+                "source_content_hash": "e33f25fc65f5596d",
+                "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
               }
             ],
             "entity_id": null
@@ -1861,7 +1992,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-6be00539e7d0e25e",
-                "quote": "with participation from Designer Fund"
+                "quote": "with participation from Designer Fund",
+                "source_content_hash": "e33f25fc65f5596d",
+                "quote_hash": "872db1abd958652e90b9cbf22eecb40679d5d7d04961209b9cd782d331057563"
               }
             ],
             "entity_id": null
@@ -1872,7 +2005,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-23493910baa1c861",
-                "quote": "alongside renewed support from Basecase"
+                "quote": "alongside renewed support from Basecase",
+                "source_content_hash": "6bc97de07bc79d43",
+                "quote_hash": "d7ce497118d62c8a9e01a89cce25dfe0ee287393e82f6b6c7236cc3d79df89d1"
               }
             ],
             "entity_id": null
@@ -1881,7 +2016,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-6be00539e7d0e25e",
-            "quote": "San Francisco startup Paper closed a $34 million Series A on July 23"
+            "quote": "San Francisco startup Paper closed a $34 million Series A on July 23",
+            "source_content_hash": "e33f25fc65f5596d",
+            "quote_hash": "13136c3fe0a67e4f143d5b2b93ffc6c0be15d0cc968f52c6d2cf97b6a4d1efd7"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3fb827f44ea109de",
+            "round_original": "Series A",
+            "amount": "$34M",
+            "announced_at": "2026-07-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6be00539e7d0e25e",
+                "quote": "San Francisco startup Paper closed a $34 million Series A on July 23",
+                "source_content_hash": "e33f25fc65f5596d",
+                "quote_hash": "13136c3fe0a67e4f143d5b2b93ffc6c0be15d0cc968f52c6d2cf97b6a4d1efd7"
+              }
+            ]
           }
         ]
       },
@@ -1898,11 +2054,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production."
+              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production.",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "bf173babaf7311b19ce5388f79f92ddbf42f21c517b61cfe5fba0ae1eff9cd68"
             },
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas: creating artboards, updating styles, syncing design tokens, pulling JSX or Tailwind output from any node."
+              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas: creating artboards, updating styles, syncing design tokens, pulling JSX or Tailwind output from any node.",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "83b8ba29d3ef52e859bb7ba7c810f13bfe3959bb2968744f6df9f2213b26639c"
             }
           ],
           "entity_id": null
@@ -1916,13 +2076,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Customers include Ramp"
+              "quote": "Customers include Ramp",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "2fe6bbb5b9787c1b9424fc5c877060ff76caaf55f14ffe601031c6ff5a38f96d"
             },
             {
               "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
+              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp",
+              "source_content_hash": "6bc97de07bc79d43",
+              "quote_hash": "75eab3bfa4b1016a6383c696b373a84c7384d2dbaaf682d9b10010e4f121733d"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Lovable",
@@ -1931,9 +2096,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
+              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable",
+              "source_content_hash": "6bc97de07bc79d43",
+              "quote_hash": "bb29035239c4666082e0afd586727b74f9d9b3473322a3d3b2baca4809f0bfd2"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -1947,9 +2115,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production. There's no handoff document, no Zeplin annotation layer, no developer spending a Tuesday afternoon re-implementing what the designer built in a proprietary format."
+              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production. There's no handoff document, no Zeplin annotation layer, no developer spending a Tuesday afternoon re-implementing what the designer built in a proprietary format.",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "d056faf021ccfbb1481234deec2aa0c0212864c1372e89456c5a3ecfb3e5f8d0"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Claude Design (Anthropic)",
@@ -1961,13 +2132,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Anthropic launching Claude Design in April 2026, a tool that generates interactive prototypes and marketing materials from natural language prompts."
+              "quote": "Anthropic launching Claude Design in April 2026, a tool that generates interactive prototypes and marketing materials from natural language prompts.",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "edbe9a83476b149ad1289dff05455e87f82cd0461858ba7361db4d3471011f77"
             },
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas"
+              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "f2b701014da7f16cf2e92a350d55e5e9592ebbd930726620f63c1a00821600ed"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1978,7 +2154,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "its ARR has grown 25 times since launch"
+              "quote": "its ARR has grown 25 times since launch",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "0842f413a99f5b5a97273f79303b0d8c803ab1d5304cfbc984b9fe3b657eb9d9"
             }
           ]
         },
@@ -1989,7 +2167,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "For four consecutive months, Ramp's Fastest Growing Companies list has included it."
+              "quote": "For four consecutive months, Ramp's Fastest Growing Companies list has included it.",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "48649afe824dae09a928eb35bab3346969df7d35646f57e062ae6172bed6cce6"
             }
           ]
         },
@@ -2000,7 +2180,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper has a bidirectional MCP server with 24 tools"
+              "quote": "Paper has a bidirectional MCP server with 24 tools",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "e33735fa19c19ff6994e5a461294221ce268df62f9abf3403dda24a2dbe651a1"
             }
           ]
         },
@@ -2011,7 +2193,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Figma's stock has lost 52% in 2026"
+              "quote": "Figma's stock has lost 52% in 2026",
+              "source_content_hash": "e33f25fc65f5596d",
+              "quote_hash": "7f6fc35f6e2415e87ae47f816730802d3212a647947ed791ab576efab9e3f81d"
             }
           ]
         }
@@ -2030,7 +2214,20 @@
           "ARR 的25倍增长基于一个未披露的早期基数，其绝对收入规模和长期增长可持续性尚未得到验证。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 原生设计工具"
+        "sector": "AI 原生设计工具",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“AI智能体原生”的设计架构能否成为下一代软件团队的工作流标准。Paper 获得融资的已验证信号包括：ARR 在发布后增长25倍、连续四个月位列 Ramp 增长最快公司榜单、以及 Ramp、Vercel、PostHog 等知名科技公司的采用。这些信号表明，市场对能够消除设计与生产代码之间“翻译”鸿沟的工具存在真实且迫切的需求。然而，这些增长数据基于一个较小的早期基数，且面临 Figma 等拥有庞大企业客户关系和设计师品牌忠诚度的现有巨头的竞争。",
+          "evidence_signals": [
+            "ARR 自发布以来增长25倍，表明产品市场契合度正在快速提升。",
+            "连续四个月位列 Ramp 增长最快公司榜单，验证了其收入的持续增长势头。",
+            "获得 Ramp、Vercel、PostHog、Y Combinator 等知名科技公司采用，验证了其在要求严苛的工程团队中的价值。"
+          ],
+          "risks": [
+            "Figma 拥有庞大的企业客户关系和深厚的设计师品牌忠诚度，Paper 作为初创公司难以在分销渠道上与之匹敌。",
+            "ARR 的25倍增长基于一个未披露的早期基数，其绝对收入规模和长期增长可持续性尚未得到验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -2038,142 +2235,70 @@
           "target_kind": "product",
           "research_name": "Paper Desktop",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production."
-            },
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas: creating artboards, updating styles, syncing design tokens, pulling JSX or Tailwind output from any node."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Stephen Haney",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper was founded by CEO Stephen Haney"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Accel",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "The round was led by Accel and ICONIQ"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "ICONIQ",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "The round was led by Accel and ICONIQ"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Designer Fund",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "with participation from Designer Fund"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Basecase",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "alongside renewed support from Basecase"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Ramp",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Customers include Ramp"
-            },
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Lovable",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-23493910baa1c861",
-              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Figma",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production. There's no handoff document, no Zeplin annotation layer, no developer spending a Tuesday afternoon re-implementing what the designer built in a proprietary format."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Claude Design (Anthropic)",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Anthropic launching Claude Design in April 2026, a tool that generates interactive prototypes and marketing materials from natural language prompts."
-            },
-            {
-              "source_id": "FISRC-6be00539e7d0e25e",
-              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas"
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -2245,10 +2370,39 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-28T05:44:51.884Z"
+      "published_at": "2026-07-28T05:44:51.884Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Paper Desktop"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Stephen Haney"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3fb827f44ea109de"
+      ],
+      "aggregation": {
+        "key": "EN-382635c9325bf327|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

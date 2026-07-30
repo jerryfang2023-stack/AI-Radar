@@ -1,23 +1,24 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "schema_version": "FUNDING-INSIGHT-V1.1",
     "date": "2026-07-22",
     "generated_at": "2026-07-26T15:21:46.140Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
-    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 3,
       "auto_published": 3,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "normalization_contract": "company_and_normalized_round"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-8a5c369cf132da9b",
       "triggered_by_event_id": "EV-4eb0556b8c72d410",
       "as_of_date": "2026-07-22",
@@ -35,7 +36,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f154528a83a385f1",
-                "quote": "Maisa CEO David Villalón told TechCrunch."
+                "quote": "Maisa CEO David Villalón told TechCrunch.",
+                "source_content_hash": "8c799b616e20ea1d",
+                "quote_hash": "20a23cc40ba767fb25f156ac403c433b0b5f43956bc8d5e81b0f0648df8522c7"
               }
             ],
             "entity_id": null
@@ -46,7 +49,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f154528a83a385f1",
-                "quote": "Maisa's co-founder and chief scientific officer, Manuel Romero"
+                "quote": "Maisa's co-founder and chief scientific officer, Manuel Romero",
+                "source_content_hash": "8c799b616e20ea1d",
+                "quote_hash": "993e94ab7ad6f52dd8cc4f2e4c1e977cbbf7c70dae0693d62370002f5614db43"
               }
             ],
             "entity_id": null
@@ -58,14 +63,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f154528a83a385f1",
-              "quote": "Maisa plans to use its funding to grow from 35 to as many as 65 people by the first quarter of 2026"
+              "quote": "Maisa plans to use its funding to grow from 35 to as many as 65 people by the first quarter of 2026",
+              "source_content_hash": "8c799b616e20ea1d",
+              "quote_hash": "3560f380e2879b909a046be804cfc1e9085d43522ffd6cf185f4db3f1fa109ce"
             }
           ]
         },
         "evidence_refs": [
           {
             "source_id": "FISRC-f154528a83a385f1",
-            "quote": "The year-old startup has built its entire approach around the premise that enterprise automation requires accountable AI agents, not opaque black boxes."
+            "quote": "The year-old startup has built its entire approach around the premise that enterprise automation requires accountable AI agents, not opaque black boxes.",
+            "source_content_hash": "8c799b616e20ea1d",
+            "quote_hash": "da40c3674cc8323e38ba3c5254261768719344367b9ee9cc233c528427f74c7a"
           }
         ]
       },
@@ -81,7 +90,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f154528a83a385f1",
-                "quote": "a new, $25 million seed round led by European VC firm Creandum"
+                "quote": "a new, $25 million seed round led by European VC firm Creandum",
+                "source_content_hash": "8c799b616e20ea1d",
+                "quote_hash": "0896f789168d0d998cf127f1803833931810c95ad9246dd6322088bfd9d3890d"
               }
             ],
             "entity_id": null
@@ -92,7 +103,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f154528a83a385f1",
-                "quote": "U.S. firm Forgepoint Capital International participated in this new round via its European joint venture with Spanish bank Banco Santander"
+                "quote": "U.S. firm Forgepoint Capital International participated in this new round via its European joint venture with Spanish bank Banco Santander",
+                "source_content_hash": "8c799b616e20ea1d",
+                "quote_hash": "3359bd74f01ce8dc52dc2c32c41ba97e63e26e75448bfd6ba9d255bb9dc5e6a5"
               }
             ],
             "entity_id": null
@@ -103,7 +116,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f154528a83a385f1",
-                "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+                "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
+                "source_content_hash": "8c799b616e20ea1d",
+                "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
               }
             ],
             "entity_id": null
@@ -114,7 +129,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-f154528a83a385f1",
-                "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+                "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
+                "source_content_hash": "8c799b616e20ea1d",
+                "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
               }
             ],
             "entity_id": null
@@ -123,7 +140,28 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-f154528a83a385f1",
-            "quote": "With a new, $25 million seed round led by European VC firm Creandum, it has now launched Maisa Studio"
+            "quote": "With a new, $25 million seed round led by European VC firm Creandum, it has now launched Maisa Studio",
+            "source_content_hash": "8c799b616e20ea1d",
+            "quote_hash": "0623ecd886b81398fda6c97b88efe0ef9dca75bbd23737b0684137ff53731479"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4eb0556b8c72d410",
+            "round_original": "种子轮",
+            "amount": "$25 million",
+            "announced_at": "2025-08-27",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f154528a83a385f1",
+                "quote": "With a new, $25 million seed round led by European VC firm Creandum, it has now launched Maisa Studio",
+                "source_content_hash": "8c799b616e20ea1d",
+                "quote_hash": "0623ecd886b81398fda6c97b88efe0ef9dca75bbd23737b0684137ff53731479"
+              }
+            ]
           }
         ]
       },
@@ -143,7 +181,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b570debc734e6186",
-              "quote": "The platform is being piloted at scale inside global banks, car manufacturers and energy companies, among others, to run multi-step, complex and compliance-sensitive workflows with full traceability and reliability."
+              "quote": "The platform is being piloted at scale inside global banks, car manufacturers and energy companies, among others, to run multi-step, complex and compliance-sensitive workflows with full traceability and reliability.",
+              "source_content_hash": "1874e1c9659c0611",
+              "quote_hash": "5bd3ed545cae284461c52df0d147cf75b5c76c7ed7737cb43fff71b4faf58a80"
             }
           ],
           "entity_id": null
@@ -157,9 +197,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b570debc734e6186",
-              "quote": "A global investment bank has replaced its manual media screening process with Maisa digital workers, which extract relevant facts from news articles, assess reputational risk and produce audit-ready summaries in minutes, at scale."
+              "quote": "A global investment bank has replaced its manual media screening process with Maisa digital workers, which extract relevant facts from news articles, assess reputational risk and produce audit-ready summaries in minutes, at scale.",
+              "source_content_hash": "1874e1c9659c0611",
+              "quote_hash": "a59ef03f1b89417b774c2f085776bb9d4688015f50764a8842cbd1c913d61ebb"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "一家大型金融服务公司",
@@ -168,9 +211,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b570debc734e6186",
-              "quote": "A large financial services firm has automated transaction checking and reconciliation using Studio, enabling it to filter out 99% of false positives and see a 10x improvement in productivity per person."
+              "quote": "A large financial services firm has automated transaction checking and reconciliation using Studio, enabling it to filter out 99% of false positives and see a 10x improvement in productivity per person.",
+              "source_content_hash": "1874e1c9659c0611",
+              "quote_hash": "c902e47639a306cb5ca76e267cc9ac515b2ec901e6231963a5bc5d51643b7d20"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [
@@ -184,9 +230,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f154528a83a385f1",
-              "quote": "Focusing on complex use cases demanding accountability from nontechnical users could be a differentiator for Maisa, whose competitors include CrewAI and many other AI-powered, business-focused workflow automation products."
+              "quote": "Focusing on complex use cases demanding accountability from nontechnical users could be a differentiator for Maisa, whose competitors include CrewAI and many other AI-powered, business-focused workflow automation products.",
+              "source_content_hash": "8c799b616e20ea1d",
+              "quote_hash": "e172fdac7f03e5b471d77f66c641bf0559e66cb0c43a3c97a1f15873be668cba"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -197,7 +246,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f154528a83a385f1",
-              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
+              "source_content_hash": "8c799b616e20ea1d",
+              "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
             }
           ]
         },
@@ -208,7 +259,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f154528a83a385f1",
-              "quote": "Maisa plans to use its funding to grow from 35 to as many as 65 people by the first quarter of 2026"
+              "quote": "Maisa plans to use its funding to grow from 35 to as many as 65 people by the first quarter of 2026",
+              "source_content_hash": "8c799b616e20ea1d",
+              "quote_hash": "3560f380e2879b909a046be804cfc1e9085d43522ffd6cf185f4db3f1fa109ce"
             }
           ]
         },
@@ -219,7 +272,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b570debc734e6186",
-              "quote": "enabling it to filter out 99% of false positives"
+              "quote": "enabling it to filter out 99% of false positives",
+              "source_content_hash": "1874e1c9659c0611",
+              "quote_hash": "dbe4755fb24dcf02db56061819f0acd1c51bf4fafc5abcc965f3cd53f1e972cb"
             }
           ]
         },
@@ -230,7 +285,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b570debc734e6186",
-              "quote": "see a 10x improvement in productivity per person."
+              "quote": "see a 10x improvement in productivity per person.",
+              "source_content_hash": "1874e1c9659c0611",
+              "quote_hash": "da1722ca47ba8d0c5d6ec6bf02b98bb7f4524f37b075163530b6e8daf757a683"
             }
           ]
         },
@@ -241,7 +298,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d66c1382c923cf9",
-              "quote": "Automating Power of Attorney verification freed forty thousand hours annually"
+              "quote": "Automating Power of Attorney verification freed forty thousand hours annually",
+              "source_content_hash": "6d802eded160568b",
+              "quote_hash": "6d033144759e32877ed8d482e1aca1a452ee6a475583df7842da1d9814f5dd42"
             }
           ]
         },
@@ -252,7 +311,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-2d66c1382c923cf9",
-              "quote": "Deploying the solution in a single region generated 1.2 million euros in savings"
+              "quote": "Deploying the solution in a single region generated 1.2 million euros in savings",
+              "source_content_hash": "6d802eded160568b",
+              "quote_hash": "b261491aa27dbba8867fd5ef448b79c071665ef30c7fe94aaeb29bfa09bda9e4"
             }
           ]
         }
@@ -264,7 +325,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-f154528a83a385f1",
-              "quote": "Instead of using AI to build the responses, we use AI to build the process that needs to be executed to get to the response — what we call ‘chain-of-work,’"
+              "quote": "Instead of using AI to build the responses, we use AI to build the process that needs to be executed to get to the response — what we call ‘chain-of-work,’",
+              "source_content_hash": "8c799b616e20ea1d",
+              "quote_hash": "42bc816e764469bab45a0bcb7e8826f223aae30c92ee462052b3d16877eb2d75"
             }
           ]
         },
@@ -274,7 +337,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-b570debc734e6186",
-              "quote": "This investment is validation that AI in business must be built on trust. Our platform gives teams the power to use AI workers which not only perform with incredible accuracy and intelligence, but also explain and prove their logic, and document every step in the work process."
+              "quote": "This investment is validation that AI in business must be built on trust. Our platform gives teams the power to use AI workers which not only perform with incredible accuracy and intelligence, but also explain and prove their logic, and document every step in the work process.",
+              "source_content_hash": "1874e1c9659c0611",
+              "quote_hash": "6aa5d47c099e31cf20807e91d573c4354977999178028756e6a8ad2c11c09b85"
             }
           ]
         }
@@ -290,7 +355,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-b570debc734e6186",
-                "quote": "Maisa is solving one of the toughest challenges in AI: making it reliable and safe to use in mission-critical business operations. With a string of top global companies already using the technology and massive demand, we are extremely confident of seeing significant growth at scale."
+                "quote": "Maisa is solving one of the toughest challenges in AI: making it reliable and safe to use in mission-critical business operations. With a string of top global companies already using the technology and massive demand, we are extremely confident of seeing significant growth at scale.",
+                "source_content_hash": "1874e1c9659c0611",
+                "quote_hash": "d2045e5b6d3e264ad6b975b6cef0a95af40fb2e3b1d3a8edb97b61242d749de0"
               }
             ]
           }
@@ -306,7 +373,20 @@
           "客户基础极小，与拥有数百万用户的免费增值平台相比，其企业优先策略可能导致市场扩张速度较慢，面临被更大平台挤压的风险。"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "企业级AI智能体与流程自动化"
+        "sector": "企业级AI智能体与流程自动化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“可审计的可靠性”能否成为企业AI从试点走向生产环境的决定性因素。当前融资和估值依赖于已验证的信号：Maisa的解决方案已在全球银行、汽车制造和能源等受监管行业的生产环境中部署，并产生了可量化的成果（如过滤99%误报、10倍生产力提升、年节省120万欧元）。这些信号表明其“工作链”和KPU技术路线在要求高合规性的复杂场景中找到了产品-市场契合点，而非仅停留在概念验证阶段。",
+          "evidence_signals": [
+            "产品已在全球银行、汽车制造商和能源公司的生产环境中运行，而非实验或原型。",
+            "在金融服务客户中实现了99%的误报过滤和10倍的人均生产力提升。",
+            "在单个区域的授权书验证自动化部署中，每年节省120万欧元并释放4万小时工作时间。",
+            "被Gartner评为与Google、Amazon并列的顶级AI代理供应商。"
+          ],
+          "risks": [
+            "客户基础极小，与拥有数百万用户的免费增值平台相比，其企业优先策略可能导致市场扩张速度较慢，面临被更大平台挤压的风险。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
       },
       "entity_links": [
         {
@@ -314,130 +394,70 @@
           "target_kind": "product",
           "research_name": "Maisa Studio",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b570debc734e6186",
-              "quote": "The platform is being piloted at scale inside global banks, car manufacturers and energy companies, among others, to run multi-step, complex and compliance-sensitive workflows with full traceability and reliability."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "David Villalón",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "quote": "Maisa CEO David Villalón told TechCrunch."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Manuel Romero",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "quote": "Maisa's co-founder and chief scientific officer, Manuel Romero"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Creandum",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "quote": "a new, $25 million seed round led by European VC firm Creandum"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Forgepoint Capital International",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "quote": "U.S. firm Forgepoint Capital International participated in this new round via its European joint venture with Spanish bank Banco Santander"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "NFX",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Village Global",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家全球投资银行",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b570debc734e6186",
-              "quote": "A global investment bank has replaced its manual media screening process with Maisa digital workers, which extract relevant facts from news articles, assess reputational risk and produce audit-ready summaries in minutes, at scale."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "一家大型金融服务公司",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-b570debc734e6186",
-              "quote": "A large financial services firm has automated transaction checking and reconciliation using Studio, enabling it to filter out 99% of false positives and see a 10x improvement in productivity per person."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "CrewAI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f154528a83a385f1",
-              "quote": "Focusing on complex use cases demanding accountability from nontechnical users could be a differentiator for Maisa, whose competitors include CrewAI and many other AI-powered, business-focused workflow automation products."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -499,13 +519,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:21:46.071Z"
+      "published_at": "2026-07-26T15:21:46.071Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Maisa Studio"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "David Villalón",
+            "Manuel Romero"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-4eb0556b8c72d410"
+      ],
+      "aggregation": {
+        "key": "EN-098a40b4499d7512|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-f00b5824a2f30956",
       "triggered_by_event_id": "EV-463cb26b5e03c7f7",
       "as_of_date": "2026-07-22",
@@ -523,11 +573,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8d68719d4ab934b9",
-                "quote": "Vincent Weisser, co-founder and CEO"
+                "quote": "Vincent Weisser, co-founder and CEO",
+                "source_content_hash": "cf35ba42863e2830",
+                "quote_hash": "b53bd122dcd42262d5593dda90e81a5eb05c36e93bde2b96331d1b60333f060d"
               },
               {
                 "source_id": "FISRC-3b1f1aee6b1a3091",
-                "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
+                "quote": "Co-founders Vincent Weisser and Johannes Hagemann",
+                "source_content_hash": "91deffc98c827626",
+                "quote_hash": "0d587cac4c153e63f0ab21cc45c5ec9db2a906b66f668a278a357616faad3a7b"
               }
             ],
             "entity_id": null
@@ -538,11 +592,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-3b1f1aee6b1a3091",
-                "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
+                "quote": "Co-founders Vincent Weisser and Johannes Hagemann",
+                "source_content_hash": "91deffc98c827626",
+                "quote_hash": "0d587cac4c153e63f0ab21cc45c5ec9db2a906b66f668a278a357616faad3a7b"
               },
               {
                 "source_id": "FISRC-9e20328431888381",
-                "quote": "Co-founder and CTO Johannes Hagemann built large-scale LLM training frameworks at Aleph Alpha."
+                "quote": "Co-founder and CTO Johannes Hagemann built large-scale LLM training frameworks at Aleph Alpha.",
+                "source_content_hash": "13090ff8894a6511",
+                "quote_hash": "3b51e1932093399f1b224d7f0c47c8e236925db70e1f29cc427e411bc50fd1c9"
               }
             ],
             "entity_id": null
@@ -556,12 +614,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-afe2544836558c64",
-            "quote": "Prime Intellect, a startup that provides computing power and specialized software tools that help companies build AI agents, has raised a $130 million Series A at a $1 billion valuation."
+            "quote": "Prime Intellect, a startup that provides computing power and specialized software tools that help companies build AI agents, has raised a $130 million Series A at a $1 billion valuation.",
+            "source_content_hash": "596e7c850e10c828",
+            "quote_hash": "beda7a2f980b12000c14f05f02081d3e4bbd130caaf0264d7e6946af44016783"
           }
         ]
       },
       "financing": {
-        "round": "Series A",
+        "round": "A轮",
         "amount": "$130 million",
         "total_raised": "超过 $150 million",
         "announced_at": "2026-07-08",
@@ -572,7 +632,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afe2544836558c64",
-                "quote": "The massive round was led by Radical Ventures"
+                "quote": "The massive round was led by Radical Ventures",
+                "source_content_hash": "596e7c850e10c828",
+                "quote_hash": "827fbb592dd2015a5bfabac93569964f0a7f214ec7344200be7427b7510351fd"
               }
             ],
             "entity_id": null
@@ -583,11 +645,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-8d68719d4ab934b9",
-                "quote": "Nvidia joined as a strategic investor."
+                "quote": "Nvidia joined as a strategic investor.",
+                "source_content_hash": "cf35ba42863e2830",
+                "quote_hash": "6cadd13ad58cd623c298b1db1a269c602071602f902a1de9ba8a352773ecc8a1"
               },
               {
                 "source_id": "FISRC-fbda7a24ef3d8ef8",
-                "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
+                "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
+                "source_content_hash": "56b4a47eeb530513",
+                "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
               }
             ],
             "entity_id": null
@@ -598,7 +664,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-fbda7a24ef3d8ef8",
-                "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
+                "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
+                "source_content_hash": "56b4a47eeb530513",
+                "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
               }
             ],
             "entity_id": null
@@ -609,11 +677,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afe2544836558c64",
-                "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
+                "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
+                "source_content_hash": "596e7c850e10c828",
+                "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
               },
               {
                 "source_id": "FISRC-3b1f1aee6b1a3091",
-                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
+                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors.",
+                "source_content_hash": "91deffc98c827626",
+                "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
               }
             ],
             "entity_id": null
@@ -624,26 +696,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-afe2544836558c64",
-                "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
+                "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
+                "source_content_hash": "596e7c850e10c828",
+                "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
               },
               {
                 "source_id": "FISRC-9e20328431888381",
-                "quote": "joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "既有投资方",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3b1f1aee6b1a3091",
-                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
-              },
-              {
-                "source_id": "FISRC-13f8e60149bac60c",
-                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and our existing investors."
+                "quote": "joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ",
+                "source_content_hash": "13090ff8894a6511",
+                "quote_hash": "afbb1e05a4c50f5ca5fccb52cdf2d9a9c74ffd74b2445d88e54af6e9a3587138"
               }
             ],
             "entity_id": null
@@ -652,7 +713,54 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-13f8e60149bac60c",
-            "quote": "Bringing our total funding to over $150M to build the open superintelligence stack."
+            "quote": "Bringing our total funding to over $150M to build the open superintelligence stack.",
+            "source_content_hash": "3b2f53fa6d0decdc",
+            "quote_hash": "af45223307e2ec7b41d49092d2fc9a1ccede8688b583cc98a9611e84171247d6"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "other_round_investors": [
+          {
+            "name": "既有投资方",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b1f1aee6b1a3091",
+                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors.",
+                "source_content_hash": "91deffc98c827626",
+                "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
+              },
+              {
+                "source_id": "FISRC-13f8e60149bac60c",
+                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and our existing investors.",
+                "source_content_hash": "3b2f53fa6d0decdc",
+                "quote_hash": "c33942d53433b463250111fe5e4f0ead7d355ce3aa39e9033c3dda0729c6c47c"
+              }
+            ],
+            "entity_id": null,
+            "round_context": {
+              "code": "undisclosed",
+              "label": "轮次未披露",
+              "original": "既有投资方"
+            },
+            "classification_reason": "historical_role"
+          }
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-463cb26b5e03c7f7",
+            "round_original": "Series A",
+            "amount": "$130 million",
+            "announced_at": "2026-07-08",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-13f8e60149bac60c",
+                "quote": "Bringing our total funding to over $150M to build the open superintelligence stack.",
+                "source_content_hash": "3b2f53fa6d0decdc",
+                "quote_hash": "af45223307e2ec7b41d49092d2fc9a1ccede8688b583cc98a9611e84171247d6"
+              }
+            ]
           }
         ]
       },
@@ -672,7 +780,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8d68719d4ab934b9",
-              "quote": "The pitch is a full-stack platform for training, deploying, and continuously improving AI models"
+              "quote": "The pitch is a full-stack platform for training, deploying, and continuously improving AI models",
+              "source_content_hash": "cf35ba42863e2830",
+              "quote_hash": "414fd2cb3b8b72a9a977c87b66d4ed754623efc94d60bf416b4e72e98be87bc5"
             }
           ],
           "entity_id": null
@@ -686,9 +796,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-13f8e60149bac60c",
-              "quote": "Ramp trained a 35B model on Lab that beat Opus at spreadsheet search, running 27% faster and far cheaper than Haiku."
+              "quote": "Ramp trained a 35B model on Lab that beat Opus at spreadsheet search, running 27% faster and far cheaper than Haiku.",
+              "source_content_hash": "3b2f53fa6d0decdc",
+              "quote_hash": "b8e11abfe61182fa34fb8978020312a4ebf1c197aeb55724acacd942cf6d0d61"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Zapier",
@@ -697,13 +810,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-fbda7a24ef3d8ef8",
-              "quote": "Their annualized run rate sits at $100 million, fueled by partnerships with companies like Ramp and Zapier."
+              "quote": "Their annualized run rate sits at $100 million, fueled by partnerships with companies like Ramp and Zapier.",
+              "source_content_hash": "56b4a47eeb530513",
+              "quote_hash": "0811d8fbae68924a793bb5279d5ddacc2748b6e8d4d1c1cbe0c64a503093dfd8"
             },
             {
               "source_id": "FISRC-9e20328431888381",
-              "quote": "including enterprise customers like Zapier"
+              "quote": "including enterprise customers like Zapier",
+              "source_content_hash": "13090ff8894a6511",
+              "quote_hash": "61daa3813e241caa9ab06dc268d95e902b3f4fff3a183626dfa58702a0f6554b"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Flapping Airplanes",
@@ -712,9 +830,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9e20328431888381",
-              "quote": "including enterprise customers like Zapier, Character.AI, Arcee, Browserbase, and Flapping Airplanes."
+              "quote": "including enterprise customers like Zapier, Character.AI, Arcee, Browserbase, and Flapping Airplanes.",
+              "source_content_hash": "13090ff8894a6511",
+              "quote_hash": "ee06818f7d4815341bd67e2b41346fe6554d600681cd56e66aef8865e348ffe4"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "comparisons": [],
@@ -726,7 +847,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8d68719d4ab934b9",
-              "quote": "reaching north of $100M ARR on less than $20 million in prior funding"
+              "quote": "reaching north of $100M ARR on less than $20 million in prior funding",
+              "source_content_hash": "cf35ba42863e2830",
+              "quote_hash": "7d53bbcf5f24ad38098ece1ca90691dee9dbd40f5d105e806e810f85d0bbe74d"
             }
           ]
         },
@@ -737,7 +860,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8d68719d4ab934b9",
-              "quote": "Right now, we run like 15,000 GPUs and scaling to like over 30,000."
+              "quote": "Right now, we run like 15,000 GPUs and scaling to like over 30,000.",
+              "source_content_hash": "cf35ba42863e2830",
+              "quote_hash": "f4ebb95ae37de5315e9fd1fd701ac30c3dceb8db1b2e715b79bd63b80528d38a"
             }
           ]
         },
@@ -748,7 +873,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-13f8e60149bac60c",
-              "quote": "We are grateful to over 6k customers working with us"
+              "quote": "We are grateful to over 6k customers working with us",
+              "source_content_hash": "3b2f53fa6d0decdc",
+              "quote_hash": "317e8a73c76ff625a5622cbdda8e4f9fed8e7d3646d66c240c00eccbd7c4d87f"
             }
           ]
         },
@@ -759,11 +886,15 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-8d68719d4ab934b9",
-              "quote": "at a fraction of the cost of running Haiku and 30% faster"
+              "quote": "at a fraction of the cost of running Haiku and 30% faster",
+              "source_content_hash": "cf35ba42863e2830",
+              "quote_hash": "5fa7af1e73083797fa0932e0c79468a5e85815bb0b97d59abf8166a2e40623d3"
             },
             {
               "source_id": "FISRC-13f8e60149bac60c",
-              "quote": "running 27% faster and far cheaper than Haiku."
+              "quote": "running 27% faster and far cheaper than Haiku.",
+              "source_content_hash": "3b2f53fa6d0decdc",
+              "quote_hash": "2ca15a3956ed7b4b8238ad74c96cb15154df80d8a9a81e1139be1816e38c6ec5"
             }
           ]
         }
@@ -781,7 +912,19 @@
           "企业级客户的全面采用可能慢于预期，因为采购决策、安全合规和与现有系统的集成复杂度高，可能导致平台仅被用作项目工具而非核心控制层。"
         ],
         "related_direction_id": "",
-        "sector": "AI 基础设施与开发工具"
+        "sector": "AI 基础设施与开发工具",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“企业自主拥有模型优化循环”这一范式的兴起。本轮融资的估值（10亿美元）和规模（1.3亿美元）主要依赖于已验证的业务信号：公司用不到2000万美元的前期资金撬动了超过1亿美元的ARR，证明了其产品市场契合度极高，且客户（如Ramp）已通过其平台在特定任务上实现了对前沿闭源模型的超越。判断的证据边界在于，当前的成功案例仍集中在AI原生公司，传统大型企业的采购周期和全面采用情况尚待验证。",
+          "evidence_signals": [
+            "ARR 超过 1 亿美元，且前期总融资额不到 2000 万美元，展示了极高的资本效率。",
+            "客户 Ramp 使用其平台训练的模型在特定任务上超越了 Claude Opus，验证了平台的技术有效性和商业价值。",
+            "运营约 15,000 个 GPU，并计划扩展至 30,000 个以上，表明其基础设施规模和客户需求正在快速增长。"
+          ],
+          "risks": [
+            "企业级客户的全面采用可能慢于预期，因为采购决策、安全合规和与现有系统的集成复杂度高，可能导致平台仅被用作项目工具而非核心控制层。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -789,184 +932,84 @@
           "target_kind": "product",
           "research_name": "全栈 AI 智能体开发平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8d68719d4ab934b9",
-              "quote": "The pitch is a full-stack platform for training, deploying, and continuously improving AI models"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Vincent Weisser",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8d68719d4ab934b9",
-              "quote": "Vincent Weisser, co-founder and CEO"
-            },
-            {
-              "source_id": "FISRC-3b1f1aee6b1a3091",
-              "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Johannes Hagemann",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b1f1aee6b1a3091",
-              "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
-            },
-            {
-              "source_id": "FISRC-9e20328431888381",
-              "quote": "Co-founder and CTO Johannes Hagemann built large-scale LLM training frameworks at Aleph Alpha."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Radical Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afe2544836558c64",
-              "quote": "The massive round was led by Radical Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Nvidia Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8d68719d4ab934b9",
-              "quote": "Nvidia joined as a strategic investor."
-            },
-            {
-              "source_id": "FISRC-fbda7a24ef3d8ef8",
-              "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Intel Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fbda7a24ef3d8ef8",
-              "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Dell Technologies Capital",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afe2544836558c64",
-              "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
-            },
-            {
-              "source_id": "FISRC-3b1f1aee6b1a3091",
-              "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Iconiq",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-afe2544836558c64",
-              "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
-            },
-            {
-              "source_id": "FISRC-9e20328431888381",
-              "quote": "joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ"
-            }
-          ]
+          "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "invested_in_other_round",
           "target_kind": "organization",
           "research_name": "既有投资方",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3b1f1aee6b1a3091",
-              "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
-            },
-            {
-              "source_id": "FISRC-13f8e60149bac60c",
-              "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and our existing investors."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Ramp",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-13f8e60149bac60c",
-              "quote": "Ramp trained a 35B model on Lab that beat Opus at spreadsheet search, running 27% faster and far cheaper than Haiku."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Zapier",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-fbda7a24ef3d8ef8",
-              "quote": "Their annualized run rate sits at $100 million, fueled by partnerships with companies like Ramp and Zapier."
-            },
-            {
-              "source_id": "FISRC-9e20328431888381",
-              "quote": "including enterprise customers like Zapier"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "Flapping Airplanes",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9e20328431888381",
-              "quote": "including enterprise customers like Zapier, Character.AI, Arcee, Browserbase, and Flapping Airplanes."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1064,13 +1107,43 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:01:05.850Z"
+      "published_at": "2026-07-26T15:01:05.850Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "全栈 AI 智能体开发平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Johannes Hagemann",
+            "Vincent Weisser"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-463cb26b5e03c7f7"
+      ],
+      "aggregation": {
+        "key": "EN-fa373257792c6b9b|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-bc962e05b6cfb149",
       "triggered_by_event_id": "EV-2069f6a931b8c9d6",
       "as_of_date": "2026-07-22",
@@ -1088,7 +1161,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9a07ea732902851d",
-                "quote": "Nick Warner, CEO and Co-Founder of Neo"
+                "quote": "Nick Warner, CEO and Co-Founder of Neo",
+                "source_content_hash": "9889ba96b2e121cd",
+                "quote_hash": "4f1733a1e510acf6208e39bd1f984ce3caf6ebad1800090c96f9999488ac0173"
               }
             ],
             "entity_id": null
@@ -1099,7 +1174,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-40dacc7619402f63",
-                "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
+                "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi.",
+                "source_content_hash": "7db9e3b1dae054c9",
+                "quote_hash": "6ee967724241ad7643e95bcdc2efd3db9416389aaa36020e2512850c31aadf13"
               }
             ],
             "entity_id": null
@@ -1110,7 +1187,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-40dacc7619402f63",
-                "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
+                "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi.",
+                "source_content_hash": "7db9e3b1dae054c9",
+                "quote_hash": "6ee967724241ad7643e95bcdc2efd3db9416389aaa36020e2512850c31aadf13"
               }
             ],
             "entity_id": null
@@ -1124,12 +1203,14 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9a07ea732902851d",
-            "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding"
+            "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding",
+            "source_content_hash": "9889ba96b2e121cd",
+            "quote_hash": "e31689d8100c83801e5cab7226a7d69e38589fce8238d71718437a53ce8014ca"
           }
         ]
       },
       "financing": {
-        "round": "种子轮和A轮",
+        "round": "多轮融资",
         "amount": "1亿美元",
         "total_raised": "1亿美元",
         "announced_at": "2026-07-20",
@@ -1140,11 +1221,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9a07ea732902851d",
-                "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
+                "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners",
+                "source_content_hash": "9889ba96b2e121cd",
+                "quote_hash": "1f48717b8c31e31b0a9a5ef403b33a9fbf16022f694d20ea1fb895a1e29952fe"
               },
               {
                 "source_id": "FISRC-821c38da3feae3b4",
-                "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
+                "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners",
+                "source_content_hash": "d59787388c7f4ee6",
+                "quote_hash": "d583437ee8f5bac71fe2fa829ceeeded1151f5b94fd52942991d6a267ade3cce"
               }
             ],
             "entity_id": null
@@ -1155,11 +1240,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9a07ea732902851d",
-                "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
+                "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners",
+                "source_content_hash": "9889ba96b2e121cd",
+                "quote_hash": "1f48717b8c31e31b0a9a5ef403b33a9fbf16022f694d20ea1fb895a1e29952fe"
               },
               {
                 "source_id": "FISRC-821c38da3feae3b4",
-                "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
+                "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners",
+                "source_content_hash": "d59787388c7f4ee6",
+                "quote_hash": "d583437ee8f5bac71fe2fa829ceeeded1151f5b94fd52942991d6a267ade3cce"
               }
             ],
             "entity_id": null
@@ -1170,7 +1259,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9a07ea732902851d",
-                "quote": "with participation from Craft Ventures and Merlin Ventures"
+                "quote": "with participation from Craft Ventures and Merlin Ventures",
+                "source_content_hash": "9889ba96b2e121cd",
+                "quote_hash": "8fbed03d25acbe7db9df7c9848a9d085d6e3c865962177733d5ffa03083f7fd2"
               }
             ],
             "entity_id": null
@@ -1181,11 +1272,15 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-9a07ea732902851d",
-                "quote": "with participation from Craft Ventures and Merlin Ventures"
+                "quote": "with participation from Craft Ventures and Merlin Ventures",
+                "source_content_hash": "9889ba96b2e121cd",
+                "quote_hash": "8fbed03d25acbe7db9df7c9848a9d085d6e3c865962177733d5ffa03083f7fd2"
               },
               {
                 "source_id": "FISRC-7490da5364b4f477",
-                "quote": "backed by Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Tysons, Va.-based Merlin Ventures"
+                "quote": "backed by Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Tysons, Va.-based Merlin Ventures",
+                "source_content_hash": "2f173c1b3f38903d",
+                "quote_hash": "df06e69243a39164e8528caa007419909973f14b062c9f87e5f6bef33d7a838b"
               }
             ],
             "entity_id": null
@@ -1194,11 +1289,40 @@
         "evidence_refs": [
           {
             "source_id": "FISRC-9a07ea732902851d",
-            "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures."
+            "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures.",
+            "source_content_hash": "9889ba96b2e121cd",
+            "quote_hash": "911cf4df5366e02ae4d399ad2c5e38492d7c6fb796cc0ac3d65de6490f328445"
           },
           {
             "source_id": "FISRC-821c38da3feae3b4",
-            "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds"
+            "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds",
+            "source_content_hash": "d59787388c7f4ee6",
+            "quote_hash": "224c9414ea9acd21541e8a149cec60570e34e1c9403d74db050eab4ce95132d4"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "种子轮和A轮",
+        "other_round_investors": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2069f6a931b8c9d6",
+            "round_original": "种子轮和A轮",
+            "amount": "1亿美元",
+            "announced_at": "2026-07-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9a07ea732902851d",
+                "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures.",
+                "source_content_hash": "9889ba96b2e121cd",
+                "quote_hash": "911cf4df5366e02ae4d399ad2c5e38492d7c6fb796cc0ac3d65de6490f328445"
+              },
+              {
+                "source_id": "FISRC-821c38da3feae3b4",
+                "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds",
+                "source_content_hash": "d59787388c7f4ee6",
+                "quote_hash": "224c9414ea9acd21541e8a149cec60570e34e1c9403d74db050eab4ce95132d4"
+              }
+            ]
           }
         ]
       },
@@ -1217,7 +1341,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9a07ea732902851d",
-              "quote": "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities."
+              "quote": "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities.",
+              "source_content_hash": "9889ba96b2e121cd",
+              "quote_hash": "b8684d05b12b4c3ac72b4fad78eca9d16fa92871948594a03e8c8c7c000223ec"
             }
           ],
           "entity_id": null
@@ -1235,13 +1361,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Oasis Security has focused specifically on non-human identity governance — securing the credentials and access tokens that agents and service accounts use, rather than the agents' behavior itself."
+              "quote": "Oasis Security has focused specifically on non-human identity governance — securing the credentials and access tokens that agents and service accounts use, rather than the agents' behavior itself.",
+              "source_content_hash": "d59787388c7f4ee6",
+              "quote_hash": "f032ed330209b5500bc18de3996573060b2e3b68c52abb6bbcbf64cbb50f3ecd"
             },
             {
               "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Neo is attempting to unify inventory, posture assessment, attribution and real-time enforcement into a single control layer spanning agents, applications, browsers and traditional software alike."
+              "quote": "Neo is attempting to unify inventory, posture assessment, attribution and real-time enforcement into a single control layer spanning agents, applications, browsers and traditional software alike.",
+              "source_content_hash": "d59787388c7f4ee6",
+              "quote_hash": "8023ff5dc8dca157ce74c52d715a7d5d050f8fba20b98bef903020d304d100e4"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "WitnessAI",
@@ -1253,13 +1384,18 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "WitnessAI has positioned itself around AI usage governance and policy enforcement for generative AI tools broadly, with an emphasis on data loss prevention and compliance."
+              "quote": "WitnessAI has positioned itself around AI usage governance and policy enforcement for generative AI tools broadly, with an emphasis on data loss prevention and compliance.",
+              "source_content_hash": "d59787388c7f4ee6",
+              "quote_hash": "1faff9745d75e56ae8a2052f48324fc7b4f10e0fec2d47ecf96156e32165bc9d"
             },
             {
               "source_id": "FISRC-9a07ea732902851d",
-              "quote": "Neo enforces controls natively, enabling organizations to block risky activity, malicious models, and redirect out-of-bound prompts without handing enforcement off to another tool."
+              "quote": "Neo enforces controls natively, enabling organizations to block risky activity, malicious models, and redirect out-of-bound prompts without handing enforcement off to another tool.",
+              "source_content_hash": "9889ba96b2e121cd",
+              "quote_hash": "148e04614306f2f89b1dc78b65a4e97e9b7de7bff4b0d3ae9eb9959e09a4b76a"
             }
-          ]
+          ],
+          "entity_id": null
         },
         {
           "name": "Armadin",
@@ -1271,9 +1407,12 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Armadin, founded by Mandiant's creator, is leaning heavily on incident-response and threat-intelligence pedigree to build trust with security operations teams evaluating agentic risk."
+              "quote": "Armadin, founded by Mandiant's creator, is leaning heavily on incident-response and threat-intelligence pedigree to build trust with security operations teams evaluating agentic risk.",
+              "source_content_hash": "d59787388c7f4ee6",
+              "quote_hash": "60e1fec4f5bb94b7c66a680389b3606aee75d3f80d729e926e8fa35cb57074d0"
             }
-          ]
+          ],
+          "entity_id": null
         }
       ],
       "metrics": [
@@ -1284,7 +1423,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9a07ea732902851d",
-              "quote": "only 5% of enterprise applications featured agentic capabilities in 2025"
+              "quote": "only 5% of enterprise applications featured agentic capabilities in 2025",
+              "source_content_hash": "9889ba96b2e121cd",
+              "quote_hash": "380cfdb788d49b4bc085bdd44ab263c9117226f2bd93035d6d0629df136eda84"
             }
           ]
         },
@@ -1295,7 +1436,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-9a07ea732902851d",
-              "quote": "40% will by the end of 2026"
+              "quote": "40% will by the end of 2026",
+              "source_content_hash": "9889ba96b2e121cd",
+              "quote_hash": "e4734452bf81aaa36fe7a0ae7e07bb10f0d62912ffd7f39cbc0ff1d365edce17"
             }
           ]
         },
@@ -1306,7 +1449,9 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-6c70cf5c6a0d1996",
-              "quote": "covering over 1.2 million skills, binaries, MCP packages, and third-party AI models"
+              "quote": "covering over 1.2 million skills, binaries, MCP packages, and third-party AI models",
+              "source_content_hash": "b515861abd84685c",
+              "quote_hash": "6ff38653653b623eaaa554c91b4d5cb7024c6269321ba7725e865bb9686f8725"
             }
           ]
         }
@@ -1327,7 +1472,22 @@
           "Neo 的原生执行能力要求企业授予其自主阻断或重定向生产工作流的权限，企业对此类授权的谨慎态度可能导致部署深度停留在可观测性层面而非执行层面"
         ],
         "related_direction_id": "DIR-20260725-02",
-        "sector": "智能体安全"
+        "sector": "智能体安全",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“智能体软件控制层”能否成为企业安全基础设施的独立品类。本轮1亿美元融资（种子轮和A轮合计）的估值基础并非来自已证实的规模化收入或产品成熟度，而是基于三个已验证信号：1）创始团队具备构建和规模化企业级安全平台的实战记录（SentinelOne 从100万美元到5亿美元 ARR 并完成 IPO）；2）企业应用智能体化的速度远超安全团队适应能力（Gartner 预测具备智能体能力的企业应用比例将从2025年的5%跃升至2026年底的40%）；3）现有安全架构无法覆盖智能体软件的非确定性行为，市场存在结构性空白。投资机构明确将 Neo 的创始团队背景作为品类定义能力的代理指标，而非依赖传统的产品市场匹配数据。",
+          "evidence_signals": [
+            "创始团队曾将 SentinelOne 从100万美元 ARR 扩展至5亿美元并完成 IPO，具备构建和规模化企业级安全平台的实战记录",
+            "Gartner 数据显示具备智能体能力的企业应用比例预计从2025年的5%跃升至2026年底的40%，表明市场窗口正在快速打开",
+            "Neo 已开发出可在数分钟内生成组织完整智能体软件清单的扫描器，并建立了覆盖超过120万项技能、二进制文件、MCP 包和第三方 AI 模型的 Neoverse 知识库",
+            "Neo 的技术已在金融服务、交通运输和能源等受监管行业进行测试"
+          ],
+          "risks": [
+            "智能体 AI 治理市场尚无行业共识，Neo 及其竞争对手和客户仍在共同定义该品类的完整产品形态，存在品类定义失败或偏离预期的风险",
+            "平台型安全厂商（如 CrowdStrike、Microsoft、Okta）可能将现有平台扩展至智能体治理领域，压缩独立厂商的生存窗口",
+            "Neo 的原生执行能力要求企业授予其自主阻断或重定向生产工作流的权限，企业对此类授权的谨慎态度可能导致部署深度停留在可观测性层面而非执行层面"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
       },
       "entity_links": [
         {
@@ -1335,163 +1495,77 @@
           "target_kind": "product",
           "research_name": "Neo 平台",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9a07ea732902851d",
-              "quote": "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Nick Warner",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9a07ea732902851d",
-              "quote": "Nick Warner, CEO and Co-Founder of Neo"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Shlomi Salem",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-40dacc7619402f63",
-              "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Eran Shirazi",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-40dacc7619402f63",
-              "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Andreessen Horowitz",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9a07ea732902851d",
-              "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
-            },
-            {
-              "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Bessemer Venture Partners",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9a07ea732902851d",
-              "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
-            },
-            {
-              "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Craft Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9a07ea732902851d",
-              "quote": "with participation from Craft Ventures and Merlin Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "Merlin Ventures",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-9a07ea732902851d",
-              "quote": "with participation from Craft Ventures and Merlin Ventures"
-            },
-            {
-              "source_id": "FISRC-7490da5364b4f477",
-              "quote": "backed by Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Tysons, Va.-based Merlin Ventures"
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Oasis Security",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Oasis Security has focused specifically on non-human identity governance — securing the credentials and access tokens that agents and service accounts use, rather than the agents' behavior itself."
-            },
-            {
-              "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Neo is attempting to unify inventory, posture assessment, attribution and real-time enforcement into a single control layer spanning agents, applications, browsers and traditional software alike."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "WitnessAI",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "WitnessAI has positioned itself around AI usage governance and policy enforcement for generative AI tools broadly, with an emphasis on data loss prevention and compliance."
-            },
-            {
-              "source_id": "FISRC-9a07ea732902851d",
-              "quote": "Neo enforces controls natively, enabling organizations to block risky activity, malicious models, and redirect out-of-bound prompts without handing enforcement off to another tool."
-            }
-          ]
+          "canonical_name": ""
         },
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
           "research_name": "Armadin",
           "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-821c38da3feae3b4",
-              "quote": "Armadin, founded by Mandiant's creator, is leaning heavily on incident-response and threat-intelligence pedigree to build trust with security operations teams evaluating agentic risk."
-            }
-          ]
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -1577,10 +1651,41 @@
       "auto_publish_gate": {
         "passed": true,
         "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:00:45.004Z"
+      "published_at": "2026-07-26T15:00:45.004Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Neo 平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Eran Shirazi",
+            "Nick Warner",
+            "Shlomi Salem"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2069f6a931b8c9d6"
+      ],
+      "aggregation": {
+        "key": "EN-73ef176d9f12809e|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
     }
   ],
   "queue": [

@@ -5,11 +5,13 @@ import { fileURLToPath } from "node:url";
 import {
   FUNDING_INSIGHT_FRONTSTAGE_VERSION,
   FUNDING_INSIGHT_VERSION,
+  buildFundingEntityReviewQueue,
   fundingInsightProblems,
+  normalizeFundingInsightCard,
+  normalizeFundingRound,
   readJson,
   writeJson,
 } from "../../../agent-workflow/tools/funding-insight-v1-utils.mjs";
-import { extractMoneyAmounts } from "../../../agent-workflow/tools/source-title-translation-generator.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
@@ -58,49 +60,102 @@ function productFormNames(projectRoot) {
     .map((value) => [value.id, value.name]));
 }
 
-function fundingRoundKey(value = "") {
-  const text = String(value || "").toLowerCase().replace(/[\s_-]+/gu, "");
-  if (/preseed|种子前/u.test(text)) return "pre_seed";
-  if (/seed|种子|天使/u.test(text)) return "seed";
-  if (/growth|成长/u.test(text)) return "growth";
-  if (/preipo/u.test(text)) return "pre_ipo";
-  if (/\bipo\b/u.test(text)) return "ipo";
-  const series = text.match(/^(?:series)?([a-f])(\d+)?(?:round|轮)?/iu);
-  if (series) return `series_${series[1].toLowerCase()}${series[2] || ""}`;
-  return text;
+function normalizedListKey(value = "") {
+  return String(value || "").normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
-function fundingAmountKey(value = "") {
-  const amount = extractMoneyAmounts(value)[0];
-  return amount ? `${amount.currency || "UNKNOWN"}:${amount.value}` : "";
+function uniqueObjects(items = [], keyFor = (item) => JSON.stringify(item)) {
+  const seen = new Set();
+  const output = [];
+  for (const item of items.filter(Boolean)) {
+    const key = keyFor(item);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    output.push(item);
+  }
+  return output;
+}
+
+function aggregationKey(card) {
+  const companyKey = card.company?.entity_id || normalizedListKey(card.company?.name);
+  const round = normalizeFundingRound(card.financing?.round_original || card.financing?.round);
+  return `${companyKey}|${round.code}`;
+}
+
+function mergeFundingCardGroup(group, entityIndex, entityDecisions) {
+  const base = structuredClone(group[0]);
+  const sourceEventIds = uniqueObjects(
+    group.flatMap((card) => card.source_event_ids || [card.triggered_by_event_id]),
+    (value) => value,
+  );
+  const named = (items) => uniqueObjects(items, (item) => normalizedListKey(item?.name));
+  base.company.founders = named(group.flatMap((card) => card.company?.founders || []));
+  base.financing.investors = named(group.flatMap((card) => card.financing?.investors || []));
+  base.financing.other_round_investors = named(
+    group.flatMap((card) => card.financing?.other_round_investors || []),
+  );
+  base.financing.disclosures = uniqueObjects(group.map((card) => ({
+    event_id: card.triggered_by_event_id,
+    round_original: card.financing?.round_original || card.financing?.round || "",
+    amount: card.financing?.amount || "",
+    announced_at: card.financing?.announced_at || "",
+    evidence_refs: card.financing?.evidence_refs || [],
+  })), (item) => item.event_id);
+  base.products = named(group.flatMap((card) => card.products || []));
+  base.customers = named(group.flatMap((card) => card.customers || []));
+  base.comparisons = named(group.flatMap((card) => card.comparisons || []));
+  base.metrics = uniqueObjects(
+    group.flatMap((card) => card.metrics || []),
+    (item) => `${normalizedListKey(item?.label)}|${normalizedListKey(item?.value)}`,
+  );
+  base.quotes = uniqueObjects(
+    group.flatMap((card) => card.quotes || []),
+    (item) => `${normalizedListKey(item?.speaker)}|${normalizedListKey(item?.quote)}`,
+  );
+  base.analysis.investment_rationale = uniqueObjects(
+    group.flatMap((card) => card.analysis?.investment_rationale || []),
+    (item) => `${normalizedListKey(item?.institution)}|${normalizedListKey(item?.quote)}`,
+  );
+  base.analysis.validated_signals = uniqueObjects(
+    group.flatMap((card) => card.analysis?.validated_signals || []),
+    (item) => normalizedListKey(item),
+  );
+  base.analysis.risks = uniqueObjects(
+    group.flatMap((card) => card.analysis?.risks || []),
+    (item) => normalizedListKey(item),
+  );
+  base.funding_history = uniqueObjects(
+    group.flatMap((card) => card.funding_history || []),
+    (item) => item?.event_id,
+  );
+  base.research_sources = uniqueObjects(
+    group.flatMap((card) => card.research_sources || []),
+    (item) => item?.source_id,
+  );
+  base.source_event_ids = sourceEventIds;
+  base.aggregation = {
+    key: aggregationKey(base),
+    event_count: sourceEventIds.length,
+    strategy: "company_and_normalized_round",
+  };
+  return normalizeFundingInsightCard(base, entityIndex, entityDecisions);
+}
+
+export function aggregateFundingRoundCards(inputCards = [], entityIndex = {}, entityDecisions = {}) {
+  const groups = new Map();
+  const cards = [...inputCards]
+    .sort((left, right) => String(right.published_at || "").localeCompare(String(left.published_at || "")))
+    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions));
+  for (const card of cards) {
+    const key = aggregationKey(card);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(card);
+  }
+  return [...groups.values()].map((group) => mergeFundingCardGroup(group, entityIndex, entityDecisions));
 }
 
 export function dedupeFundingRounds(inputCards = []) {
-  const cards = [...inputCards].sort((left, right) => (
-    String(right.published_at || "").localeCompare(String(left.published_at || ""))
-  ));
-  const accepted = [];
-  for (const card of cards) {
-    const companyKey = card.company?.entity_id || String(card.company?.name || "").trim().toLowerCase();
-    const roundKey = fundingRoundKey(card.financing?.round);
-    const amountKey = fundingAmountKey(card.financing?.amount);
-    const announcedAt = Date.parse(card.financing?.announced_at || "");
-    const duplicate = accepted.some((current) => {
-      const currentCompanyKey = current.company?.entity_id || String(current.company?.name || "").trim().toLowerCase();
-      const currentAnnouncedAt = Date.parse(current.financing?.announced_at || "");
-      return companyKey
-        && companyKey === currentCompanyKey
-        && roundKey
-        && roundKey === fundingRoundKey(current.financing?.round)
-        && amountKey
-        && amountKey === fundingAmountKey(current.financing?.amount)
-        && Number.isFinite(announcedAt)
-        && Number.isFinite(currentAnnouncedAt)
-        && Math.abs(announcedAt - currentAnnouncedAt) <= 7 * 24 * 60 * 60 * 1000;
-    });
-    if (!duplicate) accepted.push(card);
-  }
-  return accepted;
+  return aggregateFundingRoundCards(inputCards);
 }
 
 export function buildFundingInsightsFrontstage(projectRoot = root) {
@@ -108,6 +163,10 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
   const directions = directionById(projectRoot);
   const productForms = productFormNames(projectRoot);
   const entityIndex = readJson(path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
+  const entityDecisions = readJson(
+    path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
+    {},
+  );
   const relationshipEntityIds = new Set([
     ...(entityIndex.companies || []),
     ...(entityIndex.products || []),
@@ -121,7 +180,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       if (!current || card.published_at > current.published_at) cardByEvent.set(card.triggered_by_event_id, card);
     }
   }
-  const cards = dedupeFundingRounds([...cardByEvent.values()])
+  const cards = aggregateFundingRoundCards([...cardByEvent.values()], entityIndex, entityDecisions)
     .sort((left, right) => {
       return String(right.as_of_date || "").localeCompare(String(left.as_of_date || ""))
         || String(right.financing?.announced_at || "").localeCompare(String(left.financing?.announced_at || ""))
@@ -166,7 +225,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
       funding_insight_version: FUNDING_INSIGHT_VERSION,
       site_version: "SITE-V4.3.0-compatibility-retired",
-      column_version: "FUNDING-INSIGHT-V1.0-auto-published-research",
+      column_version: "FUNDING-INSIGHT-V1.1.0-card-integrity",
       latest_date: latestDate,
       generated_at: generatedAt,
       card_count: cards.length,
@@ -188,11 +247,28 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
 export function writeFundingInsightsFrontstage(projectRoot = root) {
   const data = buildFundingInsightsFrontstage(projectRoot);
   const output = path.join(projectRoot, "01-SiteV2/site/data/funding-insights-v1.json");
+  const entityIndex = readJson(
+    path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"),
+    {},
+  );
+  const entityDecisions = readJson(
+    path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
+    {},
+  );
+  const entityReviewQueue = buildFundingEntityReviewQueue(listBundles(projectRoot)
+    .flatMap((bundle) => bundle.cards || [])
+    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions)));
+  const entityReviewOutput = path.join(
+    projectRoot,
+    "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json",
+  );
   writeJson(output, data);
+  writeJson(entityReviewOutput, entityReviewQueue);
   console.log(JSON.stringify({
     ok: true,
     output: path.relative(projectRoot, output).replace(/\\/gu, "/"),
     cards: data.cards.length,
+    entity_review_candidates: entityReviewQueue.meta.candidate_count,
     latest_date: data.meta.latest_date,
   }, null, 2));
   return data;

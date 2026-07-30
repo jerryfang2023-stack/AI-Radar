@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is on the `V4.5.0-private-evidence-source` repository release. The public website remains on the `SITE-V4.3.0-compatibility-retired` shell and data-service baseline.
+WaveSight AI is on the `V4.5.1-funding-card-integrity` repository release. The public website remains on the `SITE-V4.3.0-compatibility-retired` shell and data-service baseline.
 
 ## Current Positioning
 
@@ -21,7 +21,7 @@ WaveSight AI is on the `V4.5.0-private-evidence-source` repository release. The 
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
-- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.0-auto-published-research`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
+- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.1.0-card-integrity`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
 - Current data versions: `SOURCE-INTAKE-V1.1`, `RAW-V4.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
@@ -96,7 +96,7 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, 
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Trend Radar, Funding Insights, Opportunity Map and Industry Reports as downstream V4 applications and Dashboard as an independent backend; do not write their derived structures or judgments into V4 canonical data.
    - Trend Radar rebuilds after the V4 frontstage bundle, uses accepted `dataDate` facts only, exposes collection coverage, and links every structure back to events, entities, Claims, SourceArtifacts, and original sources.
-   - Funding Insights runs after verified daily funding events. Secondary source capture and DeepSeek V4 Pro may enrich the application card, but every company, financing, investor, product, customer, comparison, and metric fact must quote a captured source exactly. Cards publish automatically only when the deterministic gate passes; missing investors block the card, while entity linking is exact-match only and never mutates V4 canonical registries.
+   - Funding Insights runs after verified daily funding events. Secondary source capture and DeepSeek V4 Pro may enrich the application card, but every company, financing, investor, product, customer, comparison, and metric fact must quote a captured source exactly. `FUNDING-INSIGHT-V1.1` normalizes round labels, separates current-round investors from historical/ambiguous investors, aggregates repeated company-and-confident-round disclosures, and records structured investment-thesis and customer-research status on every card. Missing current-round investors block the card. Entity linking remains exact-match only; unresolved products and founders enter an evidence-backed review queue without mutating V4 canonical registries.
    - Opportunity Map updates from `opportunity-evidence-v2.json`, generated only from accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, and FacetAssertions, and publishes under `OMAP-V2.0.0-v4-evidence`; downstream application assertions bind accepted Claims and never enter V4 canonical tables. DeepSeek V4 Pro writes evidence-bounded Direction Card candidates, but only human-reviewed candidates may enter the public direction configuration.
    - Weekly report generation is lane-independent under `REPORTS-V1.1.0-lane-independent`: Opportunity Map or direction-candidate failure is recorded as a warning and cannot block report content acceptance or page publication.
    - Reports Center publishes under `REPORTS-V1.1.0-lane-independent`. Weekly and monthly accepted report Markdown comes from `01-SiteV2/content/12-applications/industry-reports/`; the external Guanlan AI Vault receives a readable copy after local sync.
