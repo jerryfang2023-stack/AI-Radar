@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import {
   isCollectionTelemetryReady,
   isV4ManifestReady,
@@ -66,6 +67,21 @@ function latestTime(files) {
   return files.reduce((max, file) => Math.max(max, mtime(file)), 0);
 }
 
+function hasRelevantWorktreeChanges(paths) {
+  const result = spawnSync("git", [
+    "status",
+    "--porcelain",
+    "--untracked-files=all",
+    "--",
+    ...paths.map(rel),
+  ], {
+    cwd: root,
+    encoding: "utf8",
+    windowsHide: true,
+  });
+  return result.status !== 0 || Boolean(result.stdout.trim());
+}
+
 function markdownList(items) {
   return items.length ? items.map((item) => `- ${item}`).join("\n") : "- none";
 }
@@ -116,7 +132,13 @@ const downstreamGroups = {
   operations: [telemetryFile].filter(exists),
 };
 const upstreamMtime = latestTime(upstreamFiles);
-const staleGroups = Object.entries(downstreamGroups)
+const stalenessPaths = [
+  intakeFile,
+  rawOriginals,
+  ...Object.values(downstreamGroups).flat(),
+].filter(Boolean);
+const relevantWorktreeChanged = hasRelevantWorktreeChanges(stalenessPaths);
+const staleGroups = (relevantWorktreeChanged ? Object.entries(downstreamGroups) : [])
   .map(([name, files]) => ({ name, files, stale: upstreamMtime > 0 && files.length > 0 && latestTime(files) < upstreamMtime }))
   .filter((group) => group.stale);
 const blockedStaleGroups = blockStale ? staleGroups : [];
@@ -153,6 +175,7 @@ const report = [
   `- v4_manifest_status: ${manifestReady ? "ready" : "not_ready"}`,
   `- collection_telemetry_status: ${telemetryReady ? "ready" : "not_ready"}`,
   `- downstream_assets_stale: ${staleGroups.length ? "true" : "false"}`,
+  `- relevant_worktree_changed: ${relevantWorktreeChanged ? "true" : "false"}`,
   `- block_stale: ${blockStale ? "true" : "false"}`,
   "",
   "## Stale Groups",
