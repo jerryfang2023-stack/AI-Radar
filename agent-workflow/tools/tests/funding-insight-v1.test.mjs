@@ -20,6 +20,7 @@ import {
   subjectCompanyForEvent,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
+import { collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import {
   aggregateFundingRoundCards,
@@ -33,6 +34,30 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.
 function evidence(sourceId = "SRC-1", quote = "Acme raised $20 million led by Northstar Ventures.") {
   return [{ source_id: sourceId, quote }];
 }
+
+test("founder profile candidates require explicit founder evidence and complete source locators", () => {
+  const candidates = collectFundingFounderCandidates([{
+    funding_insight_id: "FI-FOUNDER",
+    triggered_by_event_id: "EV-FOUNDER",
+    as_of_date: "2026-07-30",
+    company: {
+      entity_id: "EN-COMPANY",
+      name: "Acme",
+      founders: [
+        { name: "Ada Founder", role: "Co-founder and CEO", evidence_refs: [{ source_id: "SRC-FOUNDER", quote: "Ada Founder, co-founder and CEO of Acme.", source_content_hash: "source-hash", quote_hash: "quote-hash" }] },
+        { name: "Team Member", role: "Chief Scientist", evidence_refs: [{ source_id: "SRC-MEMBER", quote: "Team Member is Chief Scientist.", source_content_hash: "member-source", quote_hash: "member-quote" }] }
+      ]
+    },
+    research_sources: [
+      { source_id: "SRC-FOUNDER", source_url: "https://example.com/founder" },
+      { source_id: "SRC-MEMBER", source_url: "https://example.com/member" }
+    ]
+  }]);
+
+  assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].name, "Ada Founder");
+  assert.equal(candidates[0].profiles[0].evidence_refs[0].source_url, "https://example.com/founder");
+});
 
 function validCard() {
   return normalizeFundingInsightCard({

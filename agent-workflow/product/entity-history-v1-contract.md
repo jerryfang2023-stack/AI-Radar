@@ -7,7 +7,7 @@ Relationship version: `RELATION-V2.1`
 
 ## Purpose
 
-Entity History is a rebuildable serving projection over accepted Data Center V4 facts and the independent First-Line Viewpoints dataset. It gives stable, cross-day entrances for organizations, products, and people without replacing CanonicalEvent, Claim, SourceArtifact, TAG-V4, or FacetAssertions as sources of truth.
+Entity History is a rebuildable serving projection over accepted Data Center V4 facts, the independent First-Line Viewpoints dataset, and explicitly reviewed application-level founder identities. It gives stable, cross-day entrances for organizations, products, and people without replacing CanonicalEvent, Claim, SourceArtifact, TAG-V4, or FacetAssertions as sources of truth.
 
 ## Object boundary
 
@@ -15,6 +15,7 @@ Entity History is a rebuildable serving projection over accepted Data Center V4 
 - AI technology uses TAG-V4 technology nodes.
 - Use cases and industries use TAG-V4 facet nodes.
 - Viewpoint-only people remain scoped to `viewpoints`; their remarks cannot become CanonicalEvents or business-event evidence.
+- Funding-only founders remain scoped to `funding_insights`; their accepted profile stores funding-card, company, source URL, source hash, and exact-quote locators. Application evidence cannot independently create CanonicalEvents or `RELATION-V2.1`.
 - Historical V4 bundles remain immutable. The entity service aggregates them and records first/last seen dates.
 
 ## Relationship boundary
@@ -47,6 +48,7 @@ Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `depl
 - Entity pages lead with dated event timelines and factual related-data groups.
 - Missing facts stay absent or disclosed as missing. Pages do not add overview prose, recommendations, rankings, opportunity scores, or inferred ownership.
 - Default list routes load compact per-column indexes. Entity and taxonomy details load their own files on demand.
+- Reviewed founder details may link to accepted Funding Insights cards and display bounded source excerpts. Unreviewed founder candidates are never public.
 
 ## History boundary
 

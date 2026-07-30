@@ -1,6 +1,6 @@
 {
   "name": "01-wavesight",
-  "version": "4.5.1",
+  "version": "4.5.2",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -61,6 +61,8 @@
     "assert:entity-history": "node agent-workflow/tools/assert-entity-history-v1.mjs",
     "review:entity-catalog": "node agent-workflow/tools/finalize-current-entity-catalog-review.mjs --write=true",
     "review:person-accounts": "node agent-workflow/tools/build-person-account-review.mjs --write=true",
+    "review:funding-founders": "node agent-workflow/tools/build-funding-founder-review.mjs --write=true",
+    "assert:funding-founders": "node agent-workflow/tools/build-funding-founder-review.mjs",
     "assert:entity-catalog-review": "node agent-workflow/tools/assert-entity-catalog-review.mjs",
     "build:targeted-backfill": "node agent-workflow/tools/build-targeted-backfill-queue.mjs",
     "manage:targeted-backfill": "node agent-workflow/tools/manage-targeted-backfill-queue.mjs",
@@ -130,7 +132,7 @@
     "register:guanlan-vault": "node agent-workflow/tools/register-guanlan-vault.mjs",
     "assert:data-lake-v4": "node agent-workflow/tools/assert-data-lake-v4.mjs",
     "sync:data-lake": "node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true && npm run assert:data-lake-v4",
-    "sync:data-center": "node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip && node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip && npm run build:data-center-site && npm run materialize:entity-history && npm run assert:entity-history && npm run build:trend-radar-site && npm run assert:trend-radar && npm run build:funding-insights-site && npm run assert:funding-insights && npm run build:opportunity-map-site && npm run assert:compatibility-retirement",
+    "sync:data-center": "node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip && node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip && npm run assert:funding-founders && npm run build:data-center-site && npm run materialize:entity-history && npm run assert:entity-history && npm run build:trend-radar-site && npm run assert:trend-radar && npm run build:funding-insights-site && npm run assert:funding-insights && npm run build:opportunity-map-site && npm run assert:compatibility-retirement",
     "sync:data-lake:local": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/sync-data-lake.ps1",
     "install:daily-automation-tasks": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-daily-automation-controller-tasks.ps1",
     "install:windows-automation": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-windows-automation-tasks.ps1",

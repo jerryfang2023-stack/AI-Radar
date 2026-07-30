@@ -44,7 +44,9 @@ function evaluate(data) {
   if (!unique(nodes.map((item) => item.id))) problems.push("taxonomy node ids are not unique");
   if (!unique(relationships.map((item) => item.relationship_id))) problems.push("relationship ids are not unique");
   if ((data.products || []).some((item) => !/^EN-[a-f0-9]{16}$/u.test(item.id))) problems.push("frontstage products are not using persisted EN ids");
-  if ((data.people || []).some((item) => !item.viewpointIds?.length && !item.eventIds?.length)) problems.push("public people contain no event or viewpoint lineage");
+  if ((data.people || []).some((item) => !item.viewpointIds?.length && !item.eventIds?.length && !item.fundingInsightIds?.length)) {
+    problems.push("public people contain no event, viewpoint, or reviewed funding lineage");
+  }
   if (nodes.some((item) => !["technology", "use_case", "industry"].includes(item.nodeType))) problems.push("taxonomy index contains a non-approved dimension");
 
   for (const profile of profiles) {
@@ -75,7 +77,17 @@ function evaluate(data) {
   const affiliatedPeople = publicPeople.filter((person) => (person.organizationNames || []).length);
   if (affiliatedPeople.length < 18) problems.push(`fewer than 18 reviewed people have structured affiliations (${affiliatedPeople.length})`);
   for (const person of affiliatedPeople) {
-    if (!(person.affiliationEvidence || []).length && !(person.relationIds || []).length) problems.push(`person affiliation lacks evidence lineage ${person.id}`);
+    if (!(person.affiliationEvidence || []).length && !(person.relationIds || []).length && !(person.founderEvidence || []).length) {
+      problems.push(`person affiliation lacks evidence lineage ${person.id}`);
+    }
+  }
+  const fundingFounders = publicPeople.filter((person) => person.fundingInsightIds?.length);
+  if (fundingFounders.length !== 30) problems.push(`reviewed funding founder profile count must be 30 (${fundingFounders.length})`);
+  for (const person of fundingFounders) {
+    if (!(person.founderCompanies || []).length) problems.push(`funding founder has no company locator ${person.id}`);
+    if (!(person.founderEvidence || []).every((evidence) =>
+      evidence.sourceId && evidence.sourceUrl && evidence.quote && evidence.sourceContentHash && evidence.quoteHash
+    )) problems.push(`funding founder evidence is incomplete ${person.id}`);
   }
 
   const ajv = new Ajv2020({ allErrors: true, strict: false });

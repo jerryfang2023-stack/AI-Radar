@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T11:10:50.961Z",
+    "generatedAt": "2026-07-30T13:39:34.106Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
     "eventCount": 1717,
@@ -12,7 +12,7 @@
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-07-30T11:10:50.911Z",
+      "generatedAt": "2026-07-30T13:39:34.033Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2027-09-30",
@@ -24,16 +24,16 @@
         }
       },
       "counts": {
-        "entities": 1445,
+        "entities": 1475,
         "organizations": 983,
         "products": 431,
-        "people": 31,
+        "people": 61,
         "taxonomyNodes": 43,
         "relationships": 356
       },
       "review": {
-        "reviewed": 912,
-        "confirmed": 388,
+        "reviewed": 942,
+        "confirmed": 418,
         "corrected": 175,
         "merged": 107,
         "quarantined": 242
@@ -16551,7 +16551,10 @@
         "2063649508681224367",
         "2063320673217609936",
         "2063055332545540096"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-743d4ac3b9f15131",
@@ -16588,7 +16591,10 @@
         "2070621064271688021",
         "2066915803610370098",
         "2065155724850942050"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-533f53e43380451e",
@@ -16622,6 +16628,70 @@
         "2065493229760565758",
         "2064467657483829441",
         "2064394410004304003"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-873d66fac95248ac",
+      "name": "Alex Saroyan",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-06-27",
+      "lastSeen": "2026-07-06",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO & Co-Founder",
+      "organization": "Andreessen Horowitz Leads Netris",
+      "organizationNames": [
+        "Andreessen Horowitz Leads Netris",
+        "Netris"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-a5e14f4ba5d6d36e",
+        "FI-6ecaf4b54919ed4f"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-d1a61df8d3146e48",
+          "name": "Andreessen Horowitz Leads Netris",
+          "role": "CEO & Co-Founder"
+        },
+        {
+          "entityId": "EN-34bdfa9bfd563edb",
+          "name": "Netris",
+          "role": "CEO and co-founder"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-710d897cee27dcf0",
+          "sourceUrl": "https://netris.io/blog/andreessen-horowitz-leads-netris-series-a-to-accelerate-adoption-of-gpu-network-automation-and-multi-tenancy-across-ai-cloud-operators-worldwide/",
+          "quote": "Alex Saroyan, CEO and co-founder of Netris",
+          "sourceContentHash": "621fb4fc31ac5977",
+          "quoteHash": "f6b260587d6f0dcdfa41e193be7659bb3333cd2d84a036ee11c49370fc8e121a",
+          "fundingInsightId": "FI-a5e14f4ba5d6d36e",
+          "sourceEventId": "EV-327ba605bd9e8307",
+          "asOfDate": "2026-07-06"
+        },
+        {
+          "sourceId": "FISRC-710d897cee27dcf0",
+          "sourceUrl": "https://netris.io/blog/andreessen-horowitz-leads-netris-series-a-to-accelerate-adoption-of-gpu-network-automation-and-multi-tenancy-across-ai-cloud-operators-worldwide/",
+          "quote": "Alex Saroyan, CEO and co-founder of Netris",
+          "sourceContentHash": "232b472dc703660c",
+          "quoteHash": "f6b260587d6f0dcdfa41e193be7659bb3333cd2d84a036ee11c49370fc8e121a",
+          "fundingInsightId": "FI-6ecaf4b54919ed4f",
+          "sourceEventId": "EV-cc90f1eb2b0817e7",
+          "asOfDate": "2026-06-27"
+        }
       ]
     },
     {
@@ -16652,7 +16722,10 @@
       ],
       "viewpointIds": [
         "2064223861512847456"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-fd67ab47893c5a98",
@@ -16708,7 +16781,10 @@
         "2064864439275536495",
         "2064806473352540643",
         "2063744208587125142"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-752ced3f98f1640f",
@@ -16730,6 +16806,218 @@
       "affiliationEvidence": [],
       "viewpointIds": [
         "2064409694761054332"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-6e969808616d4ad9",
+      "name": "Andrew Dai",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-17",
+      "lastSeen": "2026-07-19",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "创始人兼CEO",
+      "organization": "Elorian",
+      "organizationNames": [
+        "Elorian"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-bf37280962c170ed",
+        "FI-4fe22455c813c207"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-e647c818ac38b6ca",
+          "name": "Elorian",
+          "role": "创始人兼CEO"
+        },
+        {
+          "entityId": "EN-e647c818ac38b6ca",
+          "name": "Elorian",
+          "role": "联合创始人兼CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-29eab14021052e06",
+          "sourceUrl": "https://techcrunch.com/podcast/how-elorian-ai-pulled-off-a-300m-pre-seed-valuation/",
+          "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher",
+          "sourceContentHash": "fcbcd414744b916f",
+          "quoteHash": "7a7fc1a17eda97d90897e1d273d2255a5ce5afc2edd56099023b68d1880a3098",
+          "fundingInsightId": "FI-bf37280962c170ed",
+          "sourceEventId": "EV-44cd5e03d30c85b3",
+          "asOfDate": "2026-07-19"
+        },
+        {
+          "sourceId": "FISRC-1c40aad62f3bb1a3",
+          "sourceUrl": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+          "quote": "Andrew Dai, founder and CEO of Elorian and former Google DeepMind researcher",
+          "sourceContentHash": "123ae92608b50da6",
+          "quoteHash": "7a7fc1a17eda97d90897e1d273d2255a5ce5afc2edd56099023b68d1880a3098",
+          "fundingInsightId": "FI-4fe22455c813c207",
+          "sourceEventId": "EV-6f092cfc7a064d64",
+          "asOfDate": "2026-07-17"
+        },
+        {
+          "sourceId": "FISRC-0a52165fbfc8575b",
+          "sourceUrl": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
+          "quote": "Co-founders Andrew Dai (14 years at Google DeepMind) and Yinfei Yang (Apple multimodal systems)",
+          "sourceContentHash": "ae17cd699a04f8e6",
+          "quoteHash": "7a2672dfc1269524b19dd501a198ac7341fa61ce4f269947b2dfea0859c3f4bf",
+          "fundingInsightId": "FI-4fe22455c813c207",
+          "sourceEventId": "EV-6f092cfc7a064d64",
+          "asOfDate": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "id": "EN-b3432ea548a173af",
+      "name": "Antonio Mallia",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-06-27",
+      "lastSeen": "2026-07-02",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "首席执行官",
+      "organization": "Agentic infrastructure startup Seltz",
+      "organizationNames": [
+        "Agentic infrastructure startup Seltz",
+        "Seltz"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-0429a6418b0774c6",
+        "FI-ee45ffa2ccc64a4c"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-cfd62617fdedfdf4",
+          "name": "Agentic infrastructure startup Seltz",
+          "role": "首席执行官"
+        },
+        {
+          "entityId": "EN-e23228440ca5340f",
+          "name": "Seltz",
+          "role": "创始人兼CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-05007e2b6b43ffda",
+          "sourceUrl": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+          "quote": "The startup was founded by Chief Executive Officer Antonio Mallia",
+          "sourceContentHash": "4affcb58ccdfce57",
+          "quoteHash": "8914f6414150a05c06a31a909bd6e7ca630196f830163d0789d05d48c5000180",
+          "fundingInsightId": "FI-0429a6418b0774c6",
+          "sourceEventId": "EV-2bb63a3015195f9b",
+          "asOfDate": "2026-07-02"
+        },
+        {
+          "sourceId": "FISRC-2f4507e8abd3a500",
+          "sourceUrl": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "quote": "Seltz founder and CEO Antonio Mallia",
+          "sourceContentHash": "2159da855c1c45fd",
+          "quoteHash": "d4efa49462b50750e4f5701136072000a7e1ef1ac88fed1e0d09985c8b859bab",
+          "fundingInsightId": "FI-ee45ffa2ccc64a4c",
+          "sourceEventId": "EV-f54ec32c67e9447c",
+          "asOfDate": "2026-06-27"
+        }
+      ]
+    },
+    {
+      "id": "EN-cabb5efbf699c657",
+      "name": "Bar Winkler",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-06-30",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO兼联合创始人",
+      "organization": "Enterprise AI Agent",
+      "organizationNames": [
+        "Enterprise AI Agent",
+        "Enterprise AI",
+        "Wonderful"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-535f1ec650916aca",
+        "FI-062db0d45e38151a",
+        "FI-cbfbc5f84ea80cb4"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-1bd14cd1a58c5708",
+          "name": "Enterprise AI Agent",
+          "role": "CEO兼联合创始人"
+        },
+        {
+          "entityId": "EN-693b1c2b5c9e35f4",
+          "name": "Enterprise AI",
+          "role": "CEO and Co-founder"
+        },
+        {
+          "entityId": "EN-ee04228c5c6d8b08",
+          "name": "Wonderful",
+          "role": "CEO and Co-founder"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-59ea24bc99badd98",
+          "sourceUrl": "https://goodmunity.com/ai-tech/wonderful-raises-150m-series-b-at-2b-valuation-to-scale-enterprise-ai-agents-globally-in-2026/",
+          "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)",
+          "sourceContentHash": "e7b35cb3be58da57",
+          "quoteHash": "322e9a8d29083031cdd15195e8898e50b4d55861a989aac22833c8e3eadda805",
+          "fundingInsightId": "FI-535f1ec650916aca",
+          "sourceEventId": "EV-aa33ca051f3a7f78",
+          "asOfDate": "2026-06-30"
+        },
+        {
+          "sourceId": "FISRC-c29f00f067579660",
+          "sourceUrl": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+          "quote": "said Bar Winkler, CEO and Co-founder of Wonderful",
+          "sourceContentHash": "67f409ee5b146b1d",
+          "quoteHash": "9747fda3a01e47c89c9e7875c59ab62a671da5bd3202d92b526d5312eaa22e8c",
+          "fundingInsightId": "FI-062db0d45e38151a",
+          "sourceEventId": "EV-0ade039d36e077ae",
+          "asOfDate": "2026-06-13"
+        },
+        {
+          "sourceId": "FISRC-96bd7daa0eaefe28",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html",
+          "quote": "Bar Winkler, CEO and Co-founder of Wonderful",
+          "sourceContentHash": "f8c0e2e899057d76",
+          "quoteHash": "f68149f50cc8286c2f9e27b6640a422108144766b2abbaea59b68900b74681d0",
+          "fundingInsightId": "FI-cbfbc5f84ea80cb4",
+          "sourceEventId": "EV-a84ec4216d3ded6d",
+          "asOfDate": "2026-05-22"
+        }
       ]
     },
     {
@@ -16776,7 +17064,10 @@
         "2063792263067754658",
         "2063028956211867837",
         "2063028954546733462"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-e9ea0665d1a026eb",
@@ -16817,6 +17108,94 @@
         "2069484330938998993",
         "2069473118742331608",
         "2067674836726694200"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-cbaaeaa6c6fe1032",
+      "name": "Chris Zhu",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-27",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人兼 CTO",
+      "organization": "Etched",
+      "organizationNames": [
+        "Etched"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-630989a4e13b10d0",
+        "FI-b13dae52ea8e6715"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "联合创始人兼 CTO"
+        },
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "联合创始人"
+        },
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "Co-founder"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-98b7c0b3b5f71805",
+          "sourceUrl": "https://startupfortune.com/etched-raises-300m-at-a-103b-valuation-on-a-bet-that-transformer-only-chips-will-displace-nvidia-at-the-inference-layer/",
+          "quote": "Uberti dropped out of Harvard alongside co-founders Chris Zhu and Robert Wachen",
+          "sourceContentHash": "b3842344845b7e31",
+          "quoteHash": "820fc1eae3f94b6fa11dd60e3214d6ec6fd2167ae348e299f3e4db3ed40233ea",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-27"
+        },
+        {
+          "sourceId": "FISRC-ac975c8b74c8714c",
+          "sourceUrl": "https://thenextweb.com/news/etched-300m-series-c-10-3b-valuation-sequoia-sk-hynix",
+          "quote": "They are chief executive Gavin Uberti, president Rob Wachen, and chief technology officer Chris Zhu.",
+          "sourceContentHash": "10f4e2ac549825bd",
+          "quoteHash": "ef79cd09181ee6be2147a9dc9ddf7429eb200d364c9f3bb30bf03157c290dddd",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-27"
+        },
+        {
+          "sourceId": "FISRC-2b073f5d2caeb82a",
+          "sourceUrl": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+          "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu",
+          "sourceContentHash": "d49333849e09cee2",
+          "quoteHash": "f8c4f72811687fda789b5d8a28eaaa96af7393c59cf2843a2330baffacbac189",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-24"
+        },
+        {
+          "sourceId": "FISRC-93ad55204895a7ae",
+          "sourceUrl": "https://techfundingnews.com/nvidia-rival-ai-chip-maker-etched-founded-by-harvard-dropouts-lands-500m-at-5b-valuation/",
+          "quote": "Etched was founded in 2022 by Chris Zhu , Gavin Uberti , and Robert Wachen",
+          "sourceContentHash": "ea6962ff49d28cc4",
+          "quoteHash": "81bc9377268cfde65c9a825bc26a94aac4c3b7178ae239a3b9075ce2001c5003",
+          "fundingInsightId": "FI-b13dae52ea8e6715",
+          "sourceEventId": "EV-ad75efcb12a07793",
+          "asOfDate": "2026-07-01"
+        }
       ]
     },
     {
@@ -16847,7 +17226,10 @@
         "Anthropic"
       ],
       "affiliationEvidence": [],
-      "viewpointIds": []
+      "viewpointIds": [],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-1d82ae06a3fa99ce",
@@ -16901,6 +17283,461 @@
         "2064395458777108707",
         "2064395167658860859",
         "2062930113390354641"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-d17e509d9e3fe2ea",
+      "name": "Daniela Amodei",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-05",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "President",
+      "organization": "Anthropic",
+      "organizationNames": [
+        "Anthropic"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-34ad46762c245ae0",
+        "FI-9636fec345e018a2"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic",
+          "role": "President"
+        },
+        {
+          "entityId": "EN-c70eca6b0f88f44d",
+          "name": "Anthropic",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-8aac4802151d3b7d",
+          "sourceUrl": "https://theoutpost.ai/news-story/anthropic-secures-3-5-billion-in-funding-reaching-61-5-billion-valuation-12772/",
+          "quote": "Dario Amodei, Anthropic's CEO, and his sister, Daniela Amodei, its president, founded the company as a startup that would build AI with guardrails.",
+          "sourceContentHash": "a1b8a77e1ffdaf42",
+          "quoteHash": "602f9f3b2fdecceb5bbc12dab54d50aa7cf4ace5bf15acc94e077fe199defda3",
+          "fundingInsightId": "FI-34ad46762c245ae0",
+          "sourceEventId": "EV-78a11d309c3d4e97",
+          "asOfDate": "2026-07-05"
+        },
+        {
+          "sourceId": "FISRC-a98314ad7e652ee7",
+          "sourceUrl": "https://zestlab.io/en/trends/anthropic-30b-funding-2026",
+          "quote": "Dario Amodei, Daniela Amodei and six former OpenAI researchers found Anthropic.",
+          "sourceContentHash": "d046b2aa08e71bfe",
+          "quoteHash": "086c8199496da0d425ad2787d25485be22266116c006b3108fc2c29c8b0ec3fb",
+          "fundingInsightId": "FI-9636fec345e018a2",
+          "sourceEventId": "EV-31df816db86db282",
+          "asOfDate": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "id": "EN-c6204f5c76edb6b8",
+      "name": "Dr. Román Orús",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-29",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "co-founder and Chief Scientific Officer",
+      "organization": "Multiverse Computing",
+      "organizationNames": [
+        "Multiverse Computing"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-9812ec69e97e0357"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-0b01f10e87d13e75",
+          "name": "Multiverse Computing",
+          "role": "co-founder and Chief Scientific Officer"
+        },
+        {
+          "entityId": "EN-0b01f10e87d13e75",
+          "name": "Multiverse Computing",
+          "role": "联合创始人兼首席科学官"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-fa5aeddf845d651b",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
+          "quote": "co-founder and Chief Scientific Officer Dr. Román Orús",
+          "sourceContentHash": "070cd1b0f627dcdf",
+          "quoteHash": "1134dfbcb838631e319dc7874e79ffec40f1c7c8e84a32dbd30b60e1ade5e6bd",
+          "fundingInsightId": "FI-9812ec69e97e0357",
+          "sourceEventId": "EV-33b3cf34f8ff7bd8",
+          "asOfDate": "2026-07-29"
+        },
+        {
+          "sourceId": "FISRC-ec66bd3ab9da8317",
+          "sourceUrl": "https://multiversecomputing.com/resources/multiverse-computing-announces-series-c-fundraising-targeting-up-to-usd570m-eur500m-to-power",
+          "quote": "co-founder and Chief Scientific Officer Dr. Román Orús",
+          "sourceContentHash": "c6efbd1a58ae661a",
+          "quoteHash": "1134dfbcb838631e319dc7874e79ffec40f1c7c8e84a32dbd30b60e1ade5e6bd",
+          "fundingInsightId": "FI-9812ec69e97e0357",
+          "sourceEventId": "EV-33b3cf34f8ff7bd8",
+          "asOfDate": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "id": "EN-d5eb207c2cb7aa14",
+      "name": "Enrique Lizaso",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-29",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "co-founder and CEO",
+      "organization": "Multiverse Computing",
+      "organizationNames": [
+        "Multiverse Computing"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-9812ec69e97e0357"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-0b01f10e87d13e75",
+          "name": "Multiverse Computing",
+          "role": "co-founder and CEO"
+        },
+        {
+          "entityId": "EN-0b01f10e87d13e75",
+          "name": "Multiverse Computing",
+          "role": "联合创始人兼 CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-fa5aeddf845d651b",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
+          "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing",
+          "sourceContentHash": "070cd1b0f627dcdf",
+          "quoteHash": "92b9ef29e6b893ca973dd0e15f67a762caa945f3f0dde8fa1fc285f1875c541a",
+          "fundingInsightId": "FI-9812ec69e97e0357",
+          "sourceEventId": "EV-33b3cf34f8ff7bd8",
+          "asOfDate": "2026-07-29"
+        },
+        {
+          "sourceId": "FISRC-ec66bd3ab9da8317",
+          "sourceUrl": "https://multiversecomputing.com/resources/multiverse-computing-announces-series-c-fundraising-targeting-up-to-usd570m-eur500m-to-power",
+          "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing",
+          "sourceContentHash": "c6efbd1a58ae661a",
+          "quoteHash": "92b9ef29e6b893ca973dd0e15f67a762caa945f3f0dde8fa1fc285f1875c541a",
+          "fundingInsightId": "FI-9812ec69e97e0357",
+          "sourceEventId": "EV-33b3cf34f8ff7bd8",
+          "asOfDate": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "id": "EN-6e1641eb6cc4e98f",
+      "name": "Eugene Cheah",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-06-15",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO and co-founder",
+      "organization": "Featherless.ai",
+      "organizationNames": [
+        "Featherless.ai",
+        "AMD"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-2292727d2e0b8d81",
+        "FI-e3285dae836c1fb5"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-8e3070c2f39507a8",
+          "name": "Featherless.ai",
+          "role": "CEO and co-founder"
+        },
+        {
+          "entityId": "EN-240389f4b730bad4",
+          "name": "AMD",
+          "role": "联合创始人兼CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-2abdb8003508dda6",
+          "sourceUrl": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
+          "quote": "Eugene Cheah, CEO and co-founder of Featherless.ai",
+          "sourceContentHash": "7b38f6d68d7f8881",
+          "quoteHash": "2c10f523a1693718662a5550754d3d27e70c83decab1d0796b543ecd3e7c83de",
+          "fundingInsightId": "FI-2292727d2e0b8d81",
+          "sourceEventId": "EV-6011ab83ebd290bd",
+          "asOfDate": "2026-06-15"
+        },
+        {
+          "sourceId": "FISRC-f5176e2201593c8e",
+          "sourceUrl": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
+          "quote": "Featherless.ai, a serverless inference platform founded in 2023 by Eugene Cheah, Harrison Vanderbyl, and Wesley George",
+          "sourceContentHash": "415a2b10b75139c0",
+          "quoteHash": "763820f5aa2019e0c8b8bda7a1b648b3a5e9cb123bd4f11c108c69ca88af1762",
+          "fundingInsightId": "FI-e3285dae836c1fb5",
+          "sourceEventId": "EV-1abf0d076d30ec6d",
+          "asOfDate": "2026-05-23"
+        },
+        {
+          "sourceId": "FISRC-6bfeb844c90907db",
+          "sourceUrl": "https://entrepreneurloop.com/featherless-ai-funding-20m-series-a-amd-airbus-ventures/",
+          "quote": "Featherless.ai co-founder and CEO Eugene Cheah is one of the creators of RWKV",
+          "sourceContentHash": "74386c769f34a6e8",
+          "quoteHash": "fa3eb6f2d73bb8add3d152395c016ce94b83e16cbf5ace50f18fe1f9b1723680",
+          "fundingInsightId": "FI-e3285dae836c1fb5",
+          "sourceEventId": "EV-1abf0d076d30ec6d",
+          "asOfDate": "2026-05-23"
+        }
+      ]
+    },
+    {
+      "id": "EN-d3431e547d8937bb",
+      "name": "Finn Puklowski",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-19",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO",
+      "organization": "Inference cloud operator General Compute",
+      "organizationNames": [
+        "Inference cloud operator General Compute",
+        "General Compute"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-98dcf9e3a13b56dc",
+        "FI-78bae511ba291add"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-fdecfc27f301da9c",
+          "name": "Inference cloud operator General Compute",
+          "role": "CEO"
+        },
+        {
+          "entityId": "EN-18b4bbfd60f4137e",
+          "name": "General Compute",
+          "role": "CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-2d967e0fdfd00a36",
+          "sourceUrl": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+          "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison",
+          "sourceContentHash": "8156e6d44a881bfe",
+          "quoteHash": "48578a7b173eb46fcf2cc6a9202d817f7d3679be1484d804c23ef2a0f316f592",
+          "fundingInsightId": "FI-98dcf9e3a13b56dc",
+          "sourceEventId": "EV-e3792591090281c6",
+          "asOfDate": "2026-07-19"
+        },
+        {
+          "sourceId": "FISRC-7f85c191231c7c71",
+          "sourceUrl": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
+          "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison",
+          "sourceContentHash": "e665c69377d47ba3",
+          "quoteHash": "c7f29573c7276febd42ab62b18c9d0920c3c5c386dbf38e3155680bf5f45bca4",
+          "fundingInsightId": "FI-78bae511ba291add",
+          "sourceEventId": "EV-53acea531ac371d6",
+          "asOfDate": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "id": "EN-9aaffcf69b89ca7c",
+      "name": "Gal Aga",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-07-21",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO 兼联合创始人",
+      "organization": "Aligned",
+      "organizationNames": [
+        "Aligned",
+        "Team Aligned Inc."
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-e248db193daff590",
+        "FI-58dc16e46e57a9e8"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-b0a914ead94a88da",
+          "name": "Aligned",
+          "role": "CEO 兼联合创始人"
+        },
+        {
+          "entityId": "EN-4ca9544527138c33",
+          "name": "Team Aligned Inc.",
+          "role": "联合创始人兼首席执行官"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-e028af0b28407f13",
+          "sourceUrl": "https://www.wortins.com/blog/aligned-funding",
+          "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)",
+          "sourceContentHash": "3a4a6d2094fda356",
+          "quoteHash": "0e521132c54c01b1e8f2548ed0e92a7e85a6e7cc1afdf05ad60e0ef51f65d0e9",
+          "fundingInsightId": "FI-e248db193daff590",
+          "sourceEventId": "EV-439ba8d5f2f575c4",
+          "asOfDate": "2026-07-21"
+        },
+        {
+          "sourceId": "FISRC-fc28dcd89f638ce8",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/01/3320495/0/en/aligned-closes-60m-series-b-to-solidify-leadership-position-as-the-system-of-action-for-b2b-sales.html",
+          "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela",
+          "sourceContentHash": "e2a3fa5711139700",
+          "quoteHash": "9335a498ca58d185ddf501dad8a88a74bdda9c0fdfd174dc471ffc1a9fb74d46",
+          "fundingInsightId": "FI-58dc16e46e57a9e8",
+          "sourceEventId": "EV-81bd541510a530f0",
+          "asOfDate": "2026-07-06"
+        },
+        {
+          "sourceId": "FISRC-0b968f0e36c052bd",
+          "sourceUrl": "https://siliconangle.com/2026/07/01/aligned-bags-60m-funding-build-ai-native-sales-execution-layer-enterprise-deals/",
+          "quote": "Co-founder and Chief Executive Gal Aga",
+          "sourceContentHash": "8f6a0edcb86372d0",
+          "quoteHash": "3fbe1514d4d6cee1cd94dc8541aa544ceb46b1d501bb0f2eb767deec11eb55c5",
+          "fundingInsightId": "FI-58dc16e46e57a9e8",
+          "sourceEventId": "EV-81bd541510a530f0",
+          "asOfDate": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "id": "EN-2c83883942957c8d",
+      "name": "Gal Deitsch",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-07-21",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CPO 兼联合创始人",
+      "organization": "Aligned",
+      "organizationNames": [
+        "Aligned",
+        "Team Aligned Inc."
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-e248db193daff590",
+        "FI-58dc16e46e57a9e8"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-b0a914ead94a88da",
+          "name": "Aligned",
+          "role": "CPO 兼联合创始人"
+        },
+        {
+          "entityId": "EN-4ca9544527138c33",
+          "name": "Team Aligned Inc.",
+          "role": "联合创始人兼首席产品官"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-e028af0b28407f13",
+          "sourceUrl": "https://www.wortins.com/blog/aligned-funding",
+          "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)",
+          "sourceContentHash": "3a4a6d2094fda356",
+          "quoteHash": "0e521132c54c01b1e8f2548ed0e92a7e85a6e7cc1afdf05ad60e0ef51f65d0e9",
+          "fundingInsightId": "FI-e248db193daff590",
+          "sourceEventId": "EV-439ba8d5f2f575c4",
+          "asOfDate": "2026-07-21"
+        },
+        {
+          "sourceId": "FISRC-fc28dcd89f638ce8",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/01/3320495/0/en/aligned-closes-60m-series-b-to-solidify-leadership-position-as-the-system-of-action-for-b2b-sales.html",
+          "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela",
+          "sourceContentHash": "e2a3fa5711139700",
+          "quoteHash": "9335a498ca58d185ddf501dad8a88a74bdda9c0fdfd174dc471ffc1a9fb74d46",
+          "fundingInsightId": "FI-58dc16e46e57a9e8",
+          "sourceEventId": "EV-81bd541510a530f0",
+          "asOfDate": "2026-07-06"
+        },
+        {
+          "sourceId": "FISRC-fc28dcd89f638ce8",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/01/3320495/0/en/aligned-closes-60m-series-b-to-solidify-leadership-position-as-the-system-of-action-for-b2b-sales.html",
+          "quote": "Gal Deitsch, Co-founder and Chief Product Officer",
+          "sourceContentHash": "e2a3fa5711139700",
+          "quoteHash": "5607b98d8f2a208e71c617c9f21b64bc361836381f460919fb464c930fc19d38",
+          "fundingInsightId": "FI-58dc16e46e57a9e8",
+          "sourceEventId": "EV-81bd541510a530f0",
+          "asOfDate": "2026-07-06"
+        }
       ]
     },
     {
@@ -16952,6 +17789,116 @@
         "2063418130714800487",
         "2063157328753594505",
         "2063146456106795457"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-b3ff373fa6b68aa7",
+      "name": "Gavin Uberti",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-27",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人兼 CEO",
+      "organization": "Etched",
+      "organizationNames": [
+        "Etched",
+        "Nvidia rival Etched"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-630989a4e13b10d0",
+        "FI-006c1c557192873c",
+        "FI-b13dae52ea8e6715"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "联合创始人兼 CEO"
+        },
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "CEO"
+        },
+        {
+          "entityId": "EN-dc758ebb8ad248f8",
+          "name": "Nvidia rival Etched",
+          "role": "CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-98b7c0b3b5f71805",
+          "sourceUrl": "https://startupfortune.com/etched-raises-300m-at-a-103b-valuation-on-a-bet-that-transformer-only-chips-will-displace-nvidia-at-the-inference-layer/",
+          "quote": "Co-founder and CEO Gavin Uberti",
+          "sourceContentHash": "b3842344845b7e31",
+          "quoteHash": "dc4a04302b5f24bd83132d9b36a4c762ad4e22dbbd228e6c66cdb515e0fbded4",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-27"
+        },
+        {
+          "sourceId": "FISRC-0164bd71853acd7e",
+          "sourceUrl": "https://www.hpcwire.com/off-the-wire/etched-raises-300m-to-scale-production-of-frontier-scale-inference-hardware/",
+          "quote": "Gavin Uberti, co-founder and CEO of Etched",
+          "sourceContentHash": "acbb892603033145",
+          "quoteHash": "2cbcc3da8730ec088f801dfb16242832a5353f537757ad3774bec8cd639f347e",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-27"
+        },
+        {
+          "sourceId": "FISRC-2b073f5d2caeb82a",
+          "sourceUrl": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+          "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu",
+          "sourceContentHash": "d49333849e09cee2",
+          "quoteHash": "f8c4f72811687fda789b5d8a28eaaa96af7393c59cf2843a2330baffacbac189",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-24"
+        },
+        {
+          "sourceId": "FISRC-ec090e2bf0f8f6e9",
+          "sourceUrl": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+          "quote": "Founded in 2022 by Harvard dropouts Gavin Uberti and Robert Wachen",
+          "sourceContentHash": "fa74de6f9a9e3ef8",
+          "quoteHash": "69e5b00e221613c73364ef60e592fac1c8169b8e6e10e8d87227a1c63dd6254a",
+          "fundingInsightId": "FI-006c1c557192873c",
+          "sourceEventId": "EV-040fc355bc12a750",
+          "asOfDate": "2026-07-07"
+        },
+        {
+          "sourceId": "FISRC-46feb61e20bda927",
+          "sourceUrl": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
+          "quote": "co-founders -- CEO Gavin Uberti and president Robert Wachen",
+          "sourceContentHash": "ac17ee5ecc4171d0",
+          "quoteHash": "882dc4457de19c8fd853f1bc6780f88a572c94930d60867fa8a50836c20e64e1",
+          "fundingInsightId": "FI-006c1c557192873c",
+          "sourceEventId": "EV-040fc355bc12a750",
+          "asOfDate": "2026-07-07"
+        },
+        {
+          "sourceId": "FISRC-b750a2ea9e7c7b76",
+          "sourceUrl": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+          "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen",
+          "sourceContentHash": "ae0a2fdbd54bc340",
+          "quoteHash": "79401a983ddc7934834cfac75b65dabe5f1dcf2f922ed5e11ca930d397edc26f",
+          "fundingInsightId": "FI-b13dae52ea8e6715",
+          "sourceEventId": "EV-ad75efcb12a07793",
+          "asOfDate": "2026-07-01"
+        }
       ]
     },
     {
@@ -17026,6 +17973,73 @@
         "2063714700618334260",
         "2063009510503932181",
         "2062951924677128455"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-f1bbdf1d4efc51b3",
+      "name": "Haroun Beltaifa",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-28",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人",
+      "organization": "Arrakis",
+      "organizationNames": [
+        "Arrakis"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-33720a6e75d508b6"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-834cc12fc35adde7",
+          "name": "Arrakis",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-ac4fd601f33650ff",
+          "sourceUrl": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+          "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+          "sourceContentHash": "4d42f1ad7c55a3e3",
+          "quoteHash": "1b368b152da7553b88b7dbd06b466f85d6557f12fa7c7794fd11b8aed5fa6bdd",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-28"
+        },
+        {
+          "sourceId": "FISRC-b000b5cd09445eff",
+          "sourceUrl": "https://justainews.com/companies/funding-news/arrakis-raises-38m-to-bring-ai-agents-into-industrial-operations/",
+          "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+          "sourceContentHash": "2522b5c4c402c8e8",
+          "quoteHash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-26"
+        },
+        {
+          "sourceId": "FISRC-1c7a4135c04a6da5",
+          "sourceUrl": "https://thenextweb.com/news/arrakis-ai-startup-38-million-stealth-industrial",
+          "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero",
+          "sourceContentHash": "0330bda7fe4047e0",
+          "quoteHash": "3d8383ef8de29f7988db2aab511b00d220bdbf52286f582787293bc56e018e0b",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-23"
+        }
       ]
     },
     {
@@ -17051,6 +18065,201 @@
       "viewpointIds": [
         "https://importai.substack.com/p/import-ai-460-reward-hacking-society",
         "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-41eb97c1f8ab9283",
+      "name": "Jan Oberhauser",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO 兼创始人",
+      "organization": "n8n",
+      "organizationNames": [
+        "n8n"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-0570f1a18b43a607",
+        "FI-0ea755ee2b4b5fb6"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-636396f02b6571e4",
+          "name": "n8n",
+          "role": "CEO 兼创始人"
+        },
+        {
+          "entityId": "EN-636396f02b6571e4",
+          "name": "n8n",
+          "role": "创始人兼CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-d9093a8f62959034",
+          "sourceUrl": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
+          "quote": "Jan Oberhauser, CEO and founder of n8n",
+          "sourceContentHash": "5fc63df17f42d743",
+          "quoteHash": "840f93455f207a5acfeb61b5d7a88370f3b79f816edfdea2438eb6074105ffcb",
+          "fundingInsightId": "FI-0570f1a18b43a607",
+          "sourceEventId": "EV-286846e21412f3c7",
+          "asOfDate": "2026-07-18"
+        },
+        {
+          "sourceId": "FISRC-895779fb10e31192",
+          "sourceUrl": "https://techcrunch.com/2025/03/24/fair-code-pioneer-n8n-raises-60m-for-ai-powered-workflow-automation/",
+          "quote": "Jan Oberhauser, the founder and CEO of n8n, came up with the idea and runs a site dedicated to fair code.",
+          "sourceContentHash": "27fac1d61d267f2c",
+          "quoteHash": "ba5d882d3a1b4d6d70798b27c76d23d769792b32d7e494a8ff84f2a2dbfd212d",
+          "fundingInsightId": "FI-0ea755ee2b4b5fb6",
+          "sourceEventId": "EV-12ca2aae7bfcd080",
+          "asOfDate": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "EN-7e04dd3eb1c6955e",
+      "name": "Jason Goodison",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-19",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CTO",
+      "organization": "Inference cloud operator General Compute",
+      "organizationNames": [
+        "Inference cloud operator General Compute",
+        "General Compute"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-98dcf9e3a13b56dc",
+        "FI-78bae511ba291add"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-fdecfc27f301da9c",
+          "name": "Inference cloud operator General Compute",
+          "role": "CTO"
+        },
+        {
+          "entityId": "EN-18b4bbfd60f4137e",
+          "name": "General Compute",
+          "role": "CTO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-2d967e0fdfd00a36",
+          "sourceUrl": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+          "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison",
+          "sourceContentHash": "8156e6d44a881bfe",
+          "quoteHash": "48578a7b173eb46fcf2cc6a9202d817f7d3679be1484d804c23ef2a0f316f592",
+          "fundingInsightId": "FI-98dcf9e3a13b56dc",
+          "sourceEventId": "EV-e3792591090281c6",
+          "asOfDate": "2026-07-19"
+        },
+        {
+          "sourceId": "FISRC-7f85c191231c7c71",
+          "sourceUrl": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
+          "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison",
+          "sourceContentHash": "e665c69377d47ba3",
+          "quoteHash": "c7f29573c7276febd42ab62b18c9d0920c3c5c386dbf38e3155680bf5f45bca4",
+          "fundingInsightId": "FI-78bae511ba291add",
+          "sourceEventId": "EV-53acea531ac371d6",
+          "asOfDate": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "id": "EN-0915e361e83ee8f5",
+      "name": "John Nay",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-09",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人兼首席执行官",
+      "organization": "Norm Ai",
+      "organizationNames": [
+        "Norm Ai",
+        "Norm"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-c5472acd7427b7e0",
+        "FI-3e83e4d417d38136"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-712dffae168fe622",
+          "name": "Norm Ai",
+          "role": "联合创始人兼首席执行官"
+        },
+        {
+          "entityId": "EN-733859c1fc6b9331",
+          "name": "Norm",
+          "role": "创始人兼 CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-1b05d1dc5cb45a7b",
+          "sourceUrl": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
+          "quote": "co-founder and Chief Executive John Nay",
+          "sourceContentHash": "bdcf73e00730d3c9",
+          "quoteHash": "ae4d93de4be0e26712e042123d03da4b1f22da5a88721b68a10095bf60203ff0",
+          "fundingInsightId": "FI-c5472acd7427b7e0",
+          "sourceEventId": "EV-d9cc588fb41a7e67",
+          "asOfDate": "2026-07-09"
+        },
+        {
+          "sourceId": "FISRC-f58149f5a78da9a4",
+          "sourceUrl": "https://www.law.com/legaltechnews/2026/07/07/norm-ai-announces-120m-series-c-including-investment-from-fenwick-ex-kirkland-chair-/",
+          "quote": "Norm Ai founder and CEO John Nay",
+          "sourceContentHash": "419d5bb223a9cb2e",
+          "quoteHash": "7bcc212df86f842024d633d2e41b79e2e77035aa42293d26ca8d802971c30bf4",
+          "fundingInsightId": "FI-3e83e4d417d38136",
+          "sourceEventId": "EV-0f520c9e5b1ea1d2",
+          "asOfDate": "2026-07-08"
+        },
+        {
+          "sourceId": "FISRC-afaa91a6569d1f7a",
+          "sourceUrl": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+          "quote": "Founded in July 2023 by John Nay",
+          "sourceContentHash": "afe0afef4cf0ce8c",
+          "quoteHash": "503f5b7120b480a3aff7c40b215a878f125d064e446e0a5dd43c291bda91618a",
+          "fundingInsightId": "FI-3e83e4d417d38136",
+          "sourceEventId": "EV-0f520c9e5b1ea1d2",
+          "asOfDate": "2026-07-08"
+        }
       ]
     },
     {
@@ -17086,7 +18295,10 @@
         "2066664862671921259",
         "2064762269674918013",
         "2064509357216428171"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-0fc990954c0aea17",
@@ -17114,7 +18326,10 @@
       "organization": "",
       "organizationNames": [],
       "affiliationEvidence": [],
-      "viewpointIds": []
+      "viewpointIds": [],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-972fbd396c3dd087",
@@ -17138,7 +18353,10 @@
       "affiliationEvidence": [],
       "viewpointIds": [
         "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-3c67e51edcaf55f3",
@@ -17184,7 +18402,10 @@
         "2065541200971759669",
         "2064794601320481150",
         "2063704354910347520"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-676aad90b3894e45",
@@ -17220,6 +18441,128 @@
         "2073972907491865062",
         "2070972014945243622",
         "2064806681612362113"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-f6de5bbd88061ea1",
+      "name": "Mikhail Galkov",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-28",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人",
+      "organization": "Arrakis",
+      "organizationNames": [
+        "Arrakis"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-33720a6e75d508b6"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-834cc12fc35adde7",
+          "name": "Arrakis",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-ac4fd601f33650ff",
+          "sourceUrl": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+          "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+          "sourceContentHash": "4d42f1ad7c55a3e3",
+          "quoteHash": "1b368b152da7553b88b7dbd06b466f85d6557f12fa7c7794fd11b8aed5fa6bdd",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-28"
+        },
+        {
+          "sourceId": "FISRC-b000b5cd09445eff",
+          "sourceUrl": "https://justainews.com/companies/funding-news/arrakis-raises-38m-to-bring-ai-agents-into-industrial-operations/",
+          "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+          "sourceContentHash": "2522b5c4c402c8e8",
+          "quoteHash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-26"
+        },
+        {
+          "sourceId": "FISRC-1c7a4135c04a6da5",
+          "sourceUrl": "https://thenextweb.com/news/arrakis-ai-startup-38-million-stealth-industrial",
+          "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero",
+          "sourceContentHash": "0330bda7fe4047e0",
+          "quoteHash": "3d8383ef8de29f7988db2aab511b00d220bdbf52286f582787293bc56e018e0b",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-23"
+        }
+      ]
+    },
+    {
+      "id": "EN-ee7792a4a73ee4f9",
+      "name": "Mor Shabtai",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-13",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人",
+      "organization": "Alta",
+      "organizationNames": [
+        "Alta"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-9166696739d69d1c",
+        "FI-72e9c40754b39a75"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-478cc1059b738832",
+          "name": "Alta",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-9661f69b0104e76e",
+          "sourceUrl": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai",
+          "sourceContentHash": "36ef58eefd2bf0d4",
+          "quoteHash": "5e301e20ea90d39895d780f7fb87251ada66310f8963c28b382e15bfc779546f",
+          "fundingInsightId": "FI-9166696739d69d1c",
+          "sourceEventId": "EV-18304fc17b31148e",
+          "asOfDate": "2026-07-13"
+        },
+        {
+          "sourceId": "FISRC-67b00f4c8b0bb30c",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "quote": "and serial entrepreneur Mor Shabtai",
+          "sourceContentHash": "8d38b63f5f50099c0359c1e3ec5294b24b594d6dd7894486af6b7ef730eb6bea",
+          "quoteHash": "002440b7d0a50859014ec106b39c23d386182f8e7d600998df95f6ec326da837",
+          "fundingInsightId": "FI-72e9c40754b39a75",
+          "sourceEventId": "EV-d642ec7a9ca5eb0f",
+          "asOfDate": "2026-07-09"
+        }
       ]
     },
     {
@@ -17260,7 +18603,10 @@
         "2068396602973143274",
         "2067703108344369306",
         "2065953400395555255"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-a8646a9a88322548",
@@ -17289,7 +18635,10 @@
         "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
         "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
         "https://www.interconnects.ai/p/open-and-closed-models-are-on-different"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-49d19fe95c451ea1",
@@ -17337,7 +18686,10 @@
         "2064508462034501997",
         "2063630238123483195",
         "2063263389238087745"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-f8f429ddacf2ce3d",
@@ -17386,7 +18738,10 @@
         "2065176989359808636",
         "2064999763397980286",
         "2063697162748260627"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-e2d7cabe3bc550db",
@@ -17460,6 +18815,508 @@
         "2063475353335869922",
         "2062959766314582064",
         "2062899832965255443"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-40facf47b56d0a79",
+      "name": "Philipp Baumanns",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-06-25",
+      "lastSeen": "2026-07-24",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "co-founder",
+      "organization": "YC-backed telli",
+      "organizationNames": [
+        "YC-backed telli",
+        "Telli"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-9e322d5bafc9c0c7",
+        "FI-256d9398b7fed31d"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-a56c2fbccb257dba",
+          "name": "YC-backed telli",
+          "role": "co-founder"
+        },
+        {
+          "entityId": "EN-f96246b78ef26d59",
+          "name": "Telli",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-a25b58a6297cb344",
+          "sourceUrl": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
+          "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen",
+          "sourceContentHash": "25462d7ebaa5e35a",
+          "quoteHash": "b3036058cd8ae9ee11a8da8044d2f39246ab4079ab57e2d74cf70cdca7ef3a70",
+          "fundingInsightId": "FI-9e322d5bafc9c0c7",
+          "sourceEventId": "EV-a64fab2ce6bc6c4c",
+          "asOfDate": "2026-07-24"
+        },
+        {
+          "sourceId": "FISRC-8857ed7cd124411a",
+          "sourceUrl": "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding",
+          "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen",
+          "sourceContentHash": "4e1c1175bbda2d1a",
+          "quoteHash": "47f7d8d7edd268febbcb5ed3b19be8cc00fbe65116aa642db8dd67701866be7f",
+          "fundingInsightId": "FI-256d9398b7fed31d",
+          "sourceEventId": "EV-9fc8916c19c19f99",
+          "asOfDate": "2026-06-25"
+        }
+      ]
+    },
+    {
+      "id": "EN-0858846330f54148",
+      "name": "Rafael Quintanilla",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-28",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人兼CEO",
+      "organization": "Arrakis",
+      "organizationNames": [
+        "Arrakis"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-33720a6e75d508b6"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-834cc12fc35adde7",
+          "name": "Arrakis",
+          "role": "联合创始人兼CEO"
+        },
+        {
+          "entityId": "EN-834cc12fc35adde7",
+          "name": "Arrakis",
+          "role": "联合创始人兼 CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-ac4fd601f33650ff",
+          "sourceUrl": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+          "quote": "Founded in January 2026 by former Accel investor Rafael Quintanilla, together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+          "sourceContentHash": "4d42f1ad7c55a3e3",
+          "quoteHash": "f316afeb2948664f52aac6035df8cbf1e7fb565f02957363481b7aee9cc185e6",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-28"
+        },
+        {
+          "sourceId": "FISRC-ac4fd601f33650ff",
+          "sourceUrl": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+          "quote": "Rafael Quintanilla, co-founder and CEO of Arrakis",
+          "sourceContentHash": "4d42f1ad7c55a3e3",
+          "quoteHash": "69e398147b764e9a6e612660bf888396316fa2112a65ccbe33389498d6cd50cf",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-28"
+        },
+        {
+          "sourceId": "FISRC-579585d1555750a8",
+          "sourceUrl": "https://www.theconveyor.co/p/arrakis-38m-industrial-ai-ops",
+          "quote": "CEO Rafael Quintanilla is a former Accel VP.",
+          "sourceContentHash": "a18cf74b2ab09093",
+          "quoteHash": "1da33c8b83888efa8ae69052e8482199f2dffbd48fd89c88c2f2cafa626ed81e",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-26"
+        },
+        {
+          "sourceId": "FISRC-b000b5cd09445eff",
+          "sourceUrl": "https://justainews.com/companies/funding-news/arrakis-raises-38m-to-bring-ai-agents-into-industrial-operations/",
+          "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+          "sourceContentHash": "2522b5c4c402c8e8",
+          "quoteHash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-26"
+        },
+        {
+          "sourceId": "FISRC-1c7a4135c04a6da5",
+          "sourceUrl": "https://thenextweb.com/news/arrakis-ai-startup-38-million-stealth-industrial",
+          "quote": "CEO Rafael Quintanilla, a former vice president at Accel, co-founded Arrakis in January 2026",
+          "sourceContentHash": "0330bda7fe4047e0",
+          "quoteHash": "d73cac3fa69000ed16ddd32594cc4e9f9ce5c14ad73bdbf026e720fe574678a0",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-23"
+        }
+      ]
+    },
+    {
+      "id": "EN-80cbf15237339a0e",
+      "name": "Raja Koduri",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-07",
+      "lastSeen": "2026-07-11",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "Founder and CEO",
+      "organization": "OXMIQ Labs Inc.",
+      "organizationNames": [
+        "OXMIQ Labs Inc.",
+        "OXMIQ",
+        "Raja Koduri's Oxmiq Labs",
+        "Raja Koduri’s Oxmiq"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-3e3f0d8d35770bc8",
+        "FI-700dd2a2e57eb021",
+        "FI-00eb68c429786f43",
+        "FI-f9e179dddb3ef04f"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-d3d151f3f8e7f9ed",
+          "name": "OXMIQ Labs Inc.",
+          "role": "Founder and CEO"
+        },
+        {
+          "entityId": "EN-7a814849bc288dc0",
+          "name": "OXMIQ",
+          "role": "Founder & CEO"
+        },
+        {
+          "entityId": "EN-a736e4d4ef0af078",
+          "name": "Raja Koduri's Oxmiq Labs",
+          "role": "Founder & CEO"
+        },
+        {
+          "entityId": "EN-86c49cd0980883a3",
+          "name": "Raja Koduri’s Oxmiq",
+          "role": "创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-b7d7449114c23ca5",
+          "sourceUrl": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
+          "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri",
+          "sourceContentHash": "7277428ab4a1fd81",
+          "quoteHash": "53e07de7c88e9a171f8924a6dc81cb172889ab7fd53baa17a43eec6943ce87a1",
+          "fundingInsightId": "FI-3e3f0d8d35770bc8",
+          "sourceEventId": "EV-415b083fdaa8077f",
+          "asOfDate": "2026-07-11"
+        },
+        {
+          "sourceId": "FISRC-2ac2183ceab4ddd7",
+          "sourceUrl": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+          "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri",
+          "sourceContentHash": "ff3cf9be2d5d6563",
+          "quoteHash": "53e07de7c88e9a171f8924a6dc81cb172889ab7fd53baa17a43eec6943ce87a1",
+          "fundingInsightId": "FI-700dd2a2e57eb021",
+          "sourceEventId": "EV-48075ca70a5458ec",
+          "asOfDate": "2026-07-08"
+        },
+        {
+          "sourceId": "FISRC-71dda6eced30e5a0",
+          "sourceUrl": "https://siliconangle.com/2026/07/01/raja-koduris-oxmiq-labs-raises-35m-lower-design-cost-custom-ai-silicon/",
+          "quote": "Oxmiq is founded and led by the respected graphics processing unit architect Raja Koduri",
+          "sourceContentHash": "17a78ee6f62868b8",
+          "quoteHash": "b3298871bf3a58f457b869870b2a77c9b0079930f38c4d28334f24dccab6c50d",
+          "fundingInsightId": "FI-00eb68c429786f43",
+          "sourceEventId": "EV-b3c7c4bff17063d8",
+          "asOfDate": "2026-07-07"
+        },
+        {
+          "sourceId": "FISRC-b7543ce87aeb9664",
+          "sourceUrl": "https://thenextweb.com/news/oxmiq-35-million-oxcore-chip-architecture",
+          "quote": "Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company's total capital raised to $60m since its founding by veteran chip architect Raja Koduri.",
+          "sourceContentHash": "f114b3c991a5c6c6",
+          "quoteHash": "58f5991b27c583c6e5ee923626dbf19777f84200e042831c82657e67d3119884",
+          "fundingInsightId": "FI-f9e179dddb3ef04f",
+          "sourceEventId": "EV-63dee9f748531f08",
+          "asOfDate": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "EN-48edf025e5522297",
+      "name": "Robert Wachen",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-27",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人兼总裁 / COO",
+      "organization": "Etched",
+      "organizationNames": [
+        "Etched",
+        "Nvidia rival Etched"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-630989a4e13b10d0",
+        "FI-006c1c557192873c",
+        "FI-b13dae52ea8e6715"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "联合创始人兼总裁 / COO"
+        },
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "COO"
+        },
+        {
+          "entityId": "EN-dc758ebb8ad248f8",
+          "name": "Nvidia rival Etched",
+          "role": "President"
+        },
+        {
+          "entityId": "EN-9cb45a27a2808c01",
+          "name": "Etched",
+          "role": "President"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-f34324e392a333c0",
+          "sourceUrl": "https://www.datacenterdynamics.com/en/news/ai-chip-startup-etched-closes-300m-funding-round-doubles-its-valuation-to-103bn/",
+          "quote": "the startup's COO Robert Wachen",
+          "sourceContentHash": "fbd60dfb1abe4670",
+          "quoteHash": "e31528b1c7135e6f3efae93f97701004674829f6acfdfe14b1a3331e7506d55d",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-27"
+        },
+        {
+          "sourceId": "FISRC-0164bd71853acd7e",
+          "sourceUrl": "https://www.hpcwire.com/off-the-wire/etched-raises-300m-to-scale-production-of-frontier-scale-inference-hardware/",
+          "quote": "Rob Wachen, co-founder and President of Etched",
+          "sourceContentHash": "acbb892603033145",
+          "quoteHash": "670098d78c11430a4ba24f7b1df5e0599024ebfbdc10434cb2496b81efad9eb0",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-27"
+        },
+        {
+          "sourceId": "FISRC-2b073f5d2caeb82a",
+          "sourceUrl": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+          "quote": "co-founder and COO Robert Wachen",
+          "sourceContentHash": "d49333849e09cee2",
+          "quoteHash": "83c18e2821b8787137a76115e94e49c8c14f62971a8d7fe4e339be7bebf54a56",
+          "fundingInsightId": "FI-630989a4e13b10d0",
+          "sourceEventId": "EV-da1655ecfaf35feb",
+          "asOfDate": "2026-07-24"
+        },
+        {
+          "sourceId": "FISRC-ec090e2bf0f8f6e9",
+          "sourceUrl": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+          "quote": "Founded in 2022 by Harvard dropouts Gavin Uberti and Robert Wachen",
+          "sourceContentHash": "fa74de6f9a9e3ef8",
+          "quoteHash": "69e5b00e221613c73364ef60e592fac1c8169b8e6e10e8d87227a1c63dd6254a",
+          "fundingInsightId": "FI-006c1c557192873c",
+          "sourceEventId": "EV-040fc355bc12a750",
+          "asOfDate": "2026-07-07"
+        },
+        {
+          "sourceId": "FISRC-46feb61e20bda927",
+          "sourceUrl": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
+          "quote": "co-founders -- CEO Gavin Uberti and president Robert Wachen",
+          "sourceContentHash": "ac17ee5ecc4171d0",
+          "quoteHash": "882dc4457de19c8fd853f1bc6780f88a572c94930d60867fa8a50836c20e64e1",
+          "fundingInsightId": "FI-006c1c557192873c",
+          "sourceEventId": "EV-040fc355bc12a750",
+          "asOfDate": "2026-07-07"
+        },
+        {
+          "sourceId": "FISRC-b750a2ea9e7c7b76",
+          "sourceUrl": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
+          "quote": "co-founders — CEO Gavin Uberti (pictured above) and president Robert Wachen",
+          "sourceContentHash": "ae0a2fdbd54bc340",
+          "quoteHash": "79401a983ddc7934834cfac75b65dabe5f1dcf2f922ed5e11ca930d397edc26f",
+          "fundingInsightId": "FI-b13dae52ea8e6715",
+          "sourceEventId": "EV-ad75efcb12a07793",
+          "asOfDate": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "id": "EN-2cdc203d66adb6a8",
+      "name": "Roey Lalazar",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-06-30",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CTO兼联合创始人",
+      "organization": "Enterprise AI Agent",
+      "organizationNames": [
+        "Enterprise AI Agent",
+        "Enterprise AI",
+        "Wonderful"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-535f1ec650916aca",
+        "FI-062db0d45e38151a",
+        "FI-cbfbc5f84ea80cb4"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-1bd14cd1a58c5708",
+          "name": "Enterprise AI Agent",
+          "role": "CTO兼联合创始人"
+        },
+        {
+          "entityId": "EN-693b1c2b5c9e35f4",
+          "name": "Enterprise AI",
+          "role": "CTO and Co-founder"
+        },
+        {
+          "entityId": "EN-ee04228c5c6d8b08",
+          "name": "Wonderful",
+          "role": "CTO and Co-founder"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-59ea24bc99badd98",
+          "sourceUrl": "https://goodmunity.com/ai-tech/wonderful-raises-150m-series-b-at-2b-valuation-to-scale-enterprise-ai-agents-globally-in-2026/",
+          "quote": "Founded in 2025 by Bar Winkler (CEO) and Roey Lalazar (CTO)",
+          "sourceContentHash": "e7b35cb3be58da57",
+          "quoteHash": "322e9a8d29083031cdd15195e8898e50b4d55861a989aac22833c8e3eadda805",
+          "fundingInsightId": "FI-535f1ec650916aca",
+          "sourceEventId": "EV-aa33ca051f3a7f78",
+          "asOfDate": "2026-06-30"
+        },
+        {
+          "sourceId": "FISRC-c29f00f067579660",
+          "sourceUrl": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+          "quote": "said Roey Lalazar, CTO and Co-founder",
+          "sourceContentHash": "67f409ee5b146b1d",
+          "quoteHash": "3c32a416cba058cd02d10eca7a7d6e47b671ac94b3585bf44c2ed0649259e844",
+          "fundingInsightId": "FI-062db0d45e38151a",
+          "sourceEventId": "EV-0ade039d36e077ae",
+          "asOfDate": "2026-06-13"
+        },
+        {
+          "sourceId": "FISRC-96bd7daa0eaefe28",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html",
+          "quote": "Roey Lalazar, CTO and Co-founder",
+          "sourceContentHash": "f8c0e2e899057d76",
+          "quoteHash": "fccee186836a56899676ef11948785f04b24e91458da0dc95aead27e8b87c0db",
+          "fundingInsightId": "FI-cbfbc5f84ea80cb4",
+          "sourceEventId": "EV-a84ec4216d3ded6d",
+          "asOfDate": "2026-05-22"
+        }
+      ]
+    },
+    {
+      "id": "EN-69fe4302f6316540",
+      "name": "Romain Fouilland",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-28",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人",
+      "organization": "Arrakis",
+      "organizationNames": [
+        "Arrakis"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-33720a6e75d508b6"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-834cc12fc35adde7",
+          "name": "Arrakis",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-ac4fd601f33650ff",
+          "sourceUrl": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+          "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov",
+          "sourceContentHash": "4d42f1ad7c55a3e3",
+          "quoteHash": "1b368b152da7553b88b7dbd06b466f85d6557f12fa7c7794fd11b8aed5fa6bdd",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-28"
+        },
+        {
+          "sourceId": "FISRC-b000b5cd09445eff",
+          "sourceUrl": "https://justainews.com/companies/funding-news/arrakis-raises-38m-to-bring-ai-agents-into-industrial-operations/",
+          "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov.",
+          "sourceContentHash": "2522b5c4c402c8e8",
+          "quoteHash": "b5e17c01ef75c8d48ccb91cdc9c316a8c32b4352a8bb31cdaf43c1d1803b363a",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-26"
+        },
+        {
+          "sourceId": "FISRC-1c7a4135c04a6da5",
+          "sourceUrl": "https://thenextweb.com/news/arrakis-ai-startup-38-million-stealth-industrial",
+          "quote": "co-founded Arrakis in January 2026 with Haroun Beltaifa and Romain Fouilland, both formerly of Palantir, and Mikhail Galkov, previously of Delivery Hero",
+          "sourceContentHash": "0330bda7fe4047e0",
+          "quoteHash": "3d8383ef8de29f7988db2aab511b00d220bdbf52286f582787293bc56e018e0b",
+          "fundingInsightId": "FI-33720a6e75d508b6",
+          "sourceEventId": "EV-754e83c2d19005fe",
+          "asOfDate": "2026-07-23"
+        }
       ]
     },
     {
@@ -17499,7 +19356,10 @@
         "2067124871226929526",
         "2066902677905461579",
         "2063038983408615435"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-3ed55c0c72931e4b",
@@ -17537,6 +19397,70 @@
         "2069121360744550796",
         "2067427678529974740",
         "2064088940932641225"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-19193109efd83699",
+      "name": "Seb Hapte-Selassie",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-06-25",
+      "lastSeen": "2026-07-24",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "co-founder",
+      "organization": "YC-backed telli",
+      "organizationNames": [
+        "YC-backed telli",
+        "Telli"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-9e322d5bafc9c0c7",
+        "FI-256d9398b7fed31d"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-a56c2fbccb257dba",
+          "name": "YC-backed telli",
+          "role": "co-founder"
+        },
+        {
+          "entityId": "EN-f96246b78ef26d59",
+          "name": "Telli",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-a25b58a6297cb344",
+          "sourceUrl": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
+          "quote": "Founded in 2024 by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Muehlen",
+          "sourceContentHash": "25462d7ebaa5e35a",
+          "quoteHash": "b3036058cd8ae9ee11a8da8044d2f39246ab4079ab57e2d74cf70cdca7ef3a70",
+          "fundingInsightId": "FI-9e322d5bafc9c0c7",
+          "sourceEventId": "EV-a64fab2ce6bc6c4c",
+          "asOfDate": "2026-07-24"
+        },
+        {
+          "sourceId": "FISRC-8857ed7cd124411a",
+          "sourceUrl": "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding",
+          "quote": "Founded by Seb Hapte-Selassie, Philipp Baumanns, and Finn zur Mühlen",
+          "sourceContentHash": "4e1c1175bbda2d1a",
+          "quoteHash": "47f7d8d7edd268febbcb5ed3b19be8cc00fbe65116aa642db8dd67701866be7f",
+          "fundingInsightId": "FI-256d9398b7fed31d",
+          "sourceEventId": "EV-9fc8916c19c19f99",
+          "asOfDate": "2026-06-25"
+        }
       ]
     },
     {
@@ -17614,6 +19538,139 @@
         "https://simonwillison.net/2026/Jun/2/microsofts-new-models/#atom-everything",
         "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
         "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything"
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-4186d1a72f7f8eca",
+      "name": "Stav Levi-Neumark",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-13",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO 兼联合创始人",
+      "organization": "Alta",
+      "organizationNames": [
+        "Alta"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-9166696739d69d1c",
+        "FI-72e9c40754b39a75"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-478cc1059b738832",
+          "name": "Alta",
+          "role": "CEO 兼联合创始人"
+        },
+        {
+          "entityId": "EN-478cc1059b738832",
+          "name": "Alta",
+          "role": "首席执行官兼联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-9661f69b0104e76e",
+          "sourceUrl": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "quote": "Stav Levi-Neumark, CEO and Co-founder of Alta",
+          "sourceContentHash": "36ef58eefd2bf0d4",
+          "quoteHash": "6b24c1d489de5fdce50f85a576ae9d1a2eeab87cc6a6f70bbca8453d7b1821c8",
+          "fundingInsightId": "FI-9166696739d69d1c",
+          "sourceEventId": "EV-18304fc17b31148e",
+          "asOfDate": "2026-07-13"
+        },
+        {
+          "sourceId": "FISRC-5824955e96dd97db",
+          "sourceUrl": "https://siliconangle.com/2026/07/08/25m-funding-alta-ai-aims-accelerate-go-market-automation/",
+          "quote": "Co-founder and Chief Executive Stav Levi-Neumark",
+          "sourceContentHash": "f6524a7152f1902f",
+          "quoteHash": "a3af804c4a6e68eeea94ba306abb9376c579d0147aa53ae70c6b5b73b2f977f2",
+          "fundingInsightId": "FI-72e9c40754b39a75",
+          "sourceEventId": "EV-d642ec7a9ca5eb0f",
+          "asOfDate": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "EN-00733e652b20162b",
+      "name": "Stephen Haney",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-25",
+      "lastSeen": "2026-07-28",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CEO",
+      "organization": "Paper",
+      "organizationNames": [
+        "Paper"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-01fcf93131eb921c",
+        "FI-4960bd099ebc8b70"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-382635c9325bf327",
+          "name": "Paper",
+          "role": "CEO"
+        },
+        {
+          "entityId": "EN-382635c9325bf327",
+          "name": "Paper",
+          "role": "Founder and CEO"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-6be00539e7d0e25e",
+          "sourceUrl": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
+          "quote": "Paper was founded by CEO Stephen Haney",
+          "sourceContentHash": "e33f25fc65f5596d",
+          "quoteHash": "6ef1b82df6c8b0b1900fc9be31f3f7d017f1ddab4dcecf25412058be31e9273c",
+          "fundingInsightId": "FI-01fcf93131eb921c",
+          "sourceEventId": "EV-3fb827f44ea109de",
+          "asOfDate": "2026-07-28"
+        },
+        {
+          "sourceId": "FISRC-1c3047d162f9931f",
+          "sourceUrl": "https://valueaddvc.com/pulse/paper-34m-series-a-ai-design-platform-2026",
+          "quote": "Founder and CEO Stephen Haney built Paper around agent-native workflows",
+          "sourceContentHash": "527b8f798f6a48e3",
+          "quoteHash": "643766ac2b4d7b303511d05ec5dce62fbf7c59d5cec433472c68e6db060cb75e",
+          "fundingInsightId": "FI-01fcf93131eb921c",
+          "sourceEventId": "EV-3fb827f44ea109de",
+          "asOfDate": "2026-07-26"
+        },
+        {
+          "sourceId": "FISRC-545ac2658d68b038",
+          "sourceUrl": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
+          "quote": "Paper founder and CEO Stephen Haney",
+          "sourceContentHash": "a9da415791e9a9f4",
+          "quoteHash": "0d8be91cd2d608c080825785d5cc9ade653255cacd945f8bd4686b938ccd3a1e",
+          "fundingInsightId": "FI-4960bd099ebc8b70",
+          "sourceEventId": "EV-136b2edc9b9f3be8",
+          "asOfDate": "2026-07-25"
+        }
       ]
     },
     {
@@ -17661,7 +19718,10 @@
         "2064415059003248694",
         "2063082950317486133",
         "2063029941202239645"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-fc3f9c93082da9e8",
@@ -17711,7 +19771,10 @@
         "2064826394589442448",
         "2064521202622960058",
         "2064437561930682672"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-f97e56489ceee4ba",
@@ -17787,7 +19850,10 @@
         "2064224790672769307",
         "2062997768470474765",
         "2062966625733861752"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     },
     {
       "id": "EN-45cbca5f78f1ef44",
@@ -17819,7 +19885,126 @@
         "Entire"
       ],
       "affiliationEvidence": [],
-      "viewpointIds": []
+      "viewpointIds": [],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
+    },
+    {
+      "id": "EN-c4acf3ded407a3c1",
+      "name": "Tom Hoffen",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-13",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "联合创始人",
+      "organization": "Alta",
+      "organizationNames": [
+        "Alta"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-9166696739d69d1c",
+        "FI-72e9c40754b39a75"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-478cc1059b738832",
+          "name": "Alta",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-9661f69b0104e76e",
+          "sourceUrl": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai",
+          "sourceContentHash": "36ef58eefd2bf0d4",
+          "quoteHash": "5e301e20ea90d39895d780f7fb87251ada66310f8963c28b382e15bfc779546f",
+          "fundingInsightId": "FI-9166696739d69d1c",
+          "sourceEventId": "EV-18304fc17b31148e",
+          "asOfDate": "2026-07-13"
+        },
+        {
+          "sourceId": "FISRC-67b00f4c8b0bb30c",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com",
+          "sourceContentHash": "8d38b63f5f50099c0359c1e3ec5294b24b594d6dd7894486af6b7ef730eb6bea",
+          "quoteHash": "24bba160154102d19ac21e7ca8e6da7c2ed1d305d04ab0d160b0a2bde82efde6",
+          "fundingInsightId": "FI-72e9c40754b39a75",
+          "sourceEventId": "EV-d642ec7a9ca5eb0f",
+          "asOfDate": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "id": "EN-2afa12a9be12366c",
+      "name": "Yotam Sela",
+      "sourceType": "person_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [],
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-07-21",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "CTO 兼联合创始人",
+      "organization": "Aligned",
+      "organizationNames": [
+        "Aligned",
+        "Team Aligned Inc."
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": [],
+      "fundingInsightIds": [
+        "FI-e248db193daff590",
+        "FI-58dc16e46e57a9e8"
+      ],
+      "founderCompanies": [
+        {
+          "entityId": "EN-b0a914ead94a88da",
+          "name": "Aligned",
+          "role": "CTO 兼联合创始人"
+        },
+        {
+          "entityId": "EN-4ca9544527138c33",
+          "name": "Team Aligned Inc.",
+          "role": "联合创始人"
+        }
+      ],
+      "founderEvidence": [
+        {
+          "sourceId": "FISRC-e028af0b28407f13",
+          "sourceUrl": "https://www.wortins.com/blog/aligned-funding",
+          "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)",
+          "sourceContentHash": "3a4a6d2094fda356",
+          "quoteHash": "0e521132c54c01b1e8f2548ed0e92a7e85a6e7cc1afdf05ad60e0ef51f65d0e9",
+          "fundingInsightId": "FI-e248db193daff590",
+          "sourceEventId": "EV-439ba8d5f2f575c4",
+          "asOfDate": "2026-07-21"
+        },
+        {
+          "sourceId": "FISRC-fc28dcd89f638ce8",
+          "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/01/3320495/0/en/aligned-closes-60m-series-b-to-solidify-leadership-position-as-the-system-of-action-for-b2b-sales.html",
+          "quote": "Founded by Gal Aga, Gal Deitsch and Yotam Sela",
+          "sourceContentHash": "e2a3fa5711139700",
+          "quoteHash": "9335a498ca58d185ddf501dad8a88a74bdda9c0fdfd174dc471ffc1a9fb74d46",
+          "fundingInsightId": "FI-58dc16e46e57a9e8",
+          "sourceEventId": "EV-81bd541510a530f0",
+          "asOfDate": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "EN-f41223b7e1ce4931",
@@ -17872,7 +20057,10 @@
         "2064486120386379950",
         "2063638307586662539",
         "2063391758189572266"
-      ]
+      ],
+      "fundingInsightIds": [],
+      "founderCompanies": [],
+      "founderEvidence": []
     }
   ],
   "taxonomyNodes": [

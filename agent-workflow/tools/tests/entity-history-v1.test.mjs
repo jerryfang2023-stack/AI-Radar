@@ -153,6 +153,57 @@ test("reviewed people expose structured affiliations and directionally exact org
   assert.equal(service.relationships.some((item) => item.predicate === "joins" && item.object_ref === "EN-1111111111111111"), false);
 });
 
+test("reviewed funding founders become evidence-backed profiles without creating formal relationships", () => {
+  const service = buildEntityHistoryService({
+    reviewDecisions: {
+      decisions: [{
+        entity_id: "EN-4444444444444444",
+        current: { name: "Ada Founder", catalog_type: "person", company_names: ["Acme"] },
+        action: "confirm",
+        canonical: {
+          name: "Ada Founder",
+          catalog_type: "person",
+          aliases: [],
+          organization_names: ["Acme"],
+          role_title: "Co-founder and CEO",
+          funding_profiles: [{
+            funding_insight_id: "FI-FOUNDER",
+            company_entity_id: "EN-1111111111111111",
+            company_name: "Acme",
+            role: "Co-founder and CEO",
+            as_of_date: "2026-07-30",
+            source_event_id: "EV-FUNDING",
+            evidence_refs: [{
+              source_id: "FISRC-FOUNDER",
+              source_url: "https://example.com/founder",
+              quote: "Ada Founder, co-founder and CEO of Acme.",
+              source_content_hash: "0123456789abcdef",
+              quote_hash: "abcdef0123456789"
+            }]
+          }]
+        },
+        evidence: { claim_refs: [], secondary_sources: [] },
+        review_status: "accepted",
+        reviewer: "funding-founder-review"
+      }]
+    }
+  });
+  const person = service.profiles.find((item) => item.id === "EN-4444444444444444");
+
+  assert.equal(person?.verificationStatus, "verified");
+  assert.deepEqual(person?.datasetScopes, ["funding_insights"]);
+  assert.deepEqual(person?.fundingInsightIds, ["FI-FOUNDER"]);
+  assert.deepEqual(person?.founderCompanies, [{
+    entityId: "EN-1111111111111111",
+    name: "Acme",
+    role: "Co-founder and CEO"
+  }]);
+  assert.equal(person?.founderEvidence[0]?.sourceUrl, "https://example.com/founder");
+  assert.equal(person?.firstSeen, "2026-07-30");
+  assert.equal(person?.lastSeen, "2026-07-30");
+  assert.deepEqual(service.relationships, []);
+});
+
 test("RELATION-V2 rows require event, Claim, source, and stable endpoints", () => {
   const service = buildEntityHistoryService({
     entityRows: [

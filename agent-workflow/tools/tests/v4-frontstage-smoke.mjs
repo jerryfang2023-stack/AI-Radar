@@ -13,6 +13,7 @@ const baseUrl = `http://127.0.0.1:${port}`;
 const screenshotDir = path.join(os.tmpdir(), "wavesight-v4-smoke");
 const entityIndex = JSON.parse(fs.readFileSync(path.join(siteDir, "data/data-center-v4/indexes/entities.json"), "utf8"));
 const smokeEntity = entityIndex.companies?.[0] || entityIndex.products?.[0] || entityIndex.people?.[0];
+const smokeFounder = entityIndex.people?.find((person) => person.fundingInsightIds?.length);
 const smokeTaxonomy = entityIndex.taxonomyNodes?.[0];
 const cases = [
   ["data-center.html?view=events", "data-center.html?view=events"],
@@ -23,6 +24,7 @@ const cases = [
   ["data-center.html?view=index", "data-center.html?view=index"],
   ["data-center.html?view=relations", "data-center.html?view=relations"],
   [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeEntity.id)}`, "data-center.html?view=index"],
+  [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeFounder.id)}`, "data-center.html?view=index"],
   [`data-center.html?view=index&detail=taxonomy&id=${encodeURIComponent(smokeTaxonomy.id)}`, "data-center.html?view=index"],
   ["intelligence-map.html", "intelligence-map.html"],
   ["funding-insights.html", "funding-insights.html"],
@@ -90,6 +92,7 @@ async function main() {
         await page.waitForTimeout(250);
         let fundingDialog = null;
         let fundingProductFormFilter = null;
+        let founderProfile = null;
         if (route === "funding-insights.html") {
           const productFormSelect = page.locator('select[name="product_form"]');
           const productFormOptions = await productFormSelect.locator("option").evaluateAll((options) => options
@@ -142,6 +145,12 @@ async function main() {
             fundingDialog = false;
           }
         }
+        if (route.includes(`id=${encodeURIComponent(smokeFounder.id)}`)) {
+          const text = await page.locator("main").innerText();
+          founderProfile = ["创始关联", "融资档案", "创始人证据"].every((token) => text.includes(token))
+            && await page.locator('a[href^="funding-insights.html?id="]').count() > 0
+            && await page.locator('a[target="_blank"][rel*="noopener"]').count() > 0;
+        }
         const metrics = await page.evaluate(() => ({
           title: document.title,
           width: document.documentElement.clientWidth,
@@ -193,6 +202,7 @@ async function main() {
           && (!metrics.reportFeatureAlignment || (metrics.reportFeatureAlignment.cardBottomDelta <= 1 && metrics.reportFeatureAlignment.linkBottomDelta <= 1))
           && fundingDialog !== false
           && fundingProductFormFilter !== false
+          && founderProfile !== false
           && errors.length === 0;
         results.push({
           viewport: viewport.name,
@@ -202,6 +212,7 @@ async function main() {
           ...metrics,
           fundingDialog,
           fundingProductFormFilter,
+          founderProfile,
           errors,
           ok,
         });

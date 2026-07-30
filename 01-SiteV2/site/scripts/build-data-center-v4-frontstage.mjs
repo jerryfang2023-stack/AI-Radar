@@ -601,7 +601,9 @@ export function buildEntityCollections(service, eventsById) {
       };
     });
   const people = service.profiles
-    .filter((profile) => profile.entityType === "person_candidate" && profile.verificationStatus === "verified" && (profile.eventIds.length || profile.viewpointIds.length))
+    .filter((profile) => profile.entityType === "person_candidate"
+      && profile.verificationStatus === "verified"
+      && (profile.eventIds.length || profile.viewpointIds.length || profile.fundingInsightIds?.length))
     .map((profile) => ({
       ...common(profile),
       type: "人物",
@@ -611,7 +613,10 @@ export function buildEntityCollections(service, eventsById) {
       organization: profile.organization || "",
       organizationNames: profile.organizationNames || [],
       affiliationEvidence: profile.affiliationEvidence || [],
-      viewpointIds: profile.viewpointIds || []
+      viewpointIds: profile.viewpointIds || [],
+      fundingInsightIds: profile.fundingInsightIds || [],
+      founderCompanies: profile.founderCompanies || [],
+      founderEvidence: profile.founderEvidence || []
     }));
   return { companies, products, people };
 }
@@ -659,7 +664,8 @@ export function buildFrontstageData(root = defaultRoot) {
   const viewpointData = readJson(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), { meta: {}, builders: [], remarks: [] });
   const reviewDecisions = mergeEntityReviewDecisionSets(
     readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json"), { decisions: [] }),
-    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json"), { decisions: [] })
+    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json"), { decisions: [] }),
+    readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json"), { decisions: [] })
   );
   const entityHistory = buildEntityHistoryService({
     entityRows,

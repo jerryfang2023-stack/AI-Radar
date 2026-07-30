@@ -35,17 +35,17 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  release: "V4.5.1-funding-card-integrity",
-  packageVersion: "4.5.1",
+  release: "V4.5.2-founder-profiles",
+  packageVersion: "4.5.2",
   productVersion: "V4.5",
-  gitTag: "v4.5.1-funding-card-integrity",
+  gitTag: "v4.5.2-founder-profiles",
   site: "SITE-V4.3.0-compatibility-retired",
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.1.0-lane-independent",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   fundingInsights: "FUNDING-INSIGHT-V1.1.0-card-integrity",
-  person: "PERSON-REVIEW-V1.0",
+  person: "PERSON-REVIEW-V1.1",
   skillStore: "v1.8.0 V4 retirement governance",
   vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",
   dataLake: "DATA-LAKE-V4.0-23-table",
@@ -152,9 +152,14 @@ if (fundingInsights.meta?.site_version !== expected.site) {
 }
 
 const personReview = readJson("01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json");
-if (personReview.review_version !== expected.person) fail("person review version does not match ledger");
+if (personReview.review_version !== "PERSON-REVIEW-V1.0") fail("base person/account review must remain PERSON-REVIEW-V1.0");
 if (personReview.summary?.candidates !== 37 || personReview.summary?.expected_public_natural_people !== 31 || personReview.summary?.quarantined !== 6) {
   fail("person review summary must remain 37 candidates / 31 public natural people / 6 quarantined accounts");
+}
+const founderReview = readJson("01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json");
+if (founderReview.review_version !== expected.person) fail("funding founder review version does not match ledger");
+if (founderReview.summary?.accepted_founder_profiles !== 30 || founderReview.decisions?.length !== 30) {
+  fail("funding founder review must publish exactly 30 accepted profiles");
 }
 
 const skillVersions = [

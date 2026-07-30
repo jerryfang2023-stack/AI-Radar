@@ -6,7 +6,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current release: WaveSight `V4.5.1-funding-card-integrity`; the public shell remains `SITE-V4.3.0-compatibility-retired`.
+- Current release: WaveSight `V4.5.2-founder-profiles`; the public shell remains `SITE-V4.3.0-compatibility-retired`.
 - Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 23-table `DATA-LAKE-V4.0` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
@@ -26,7 +26,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current structured source-intake contract: SOURCE-INTAKE-V1.1.
 - Current canonical event contract: EVENT-V1.1.
 - Current entity history contract: ENTITY-V1.0.
-- Current person-account review contract: PERSON-REVIEW-V1.0.
+- Current person review contract: PERSON-REVIEW-V1.1.
 - Current factual relationship contract: RELATION-V2.1.
 - Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.0.

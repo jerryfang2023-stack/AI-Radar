@@ -552,6 +552,46 @@ function enrichReviewedPeople(registry, reviewDecisions = {}) {
         quote: source.quote
       }));
     }
+    const fundingProfiles = Array.isArray(decision?.canonical?.funding_profiles)
+      ? decision.canonical.funding_profiles
+      : [];
+    if (fundingProfiles.length) {
+      entity.datasetScopes = unique([
+        ...entity.datasetScopes.filter((scope) => scope !== "canonical" || entity.eventIds.length),
+        "funding_insights"
+      ]);
+      entity.fundingInsightIds = unique(fundingProfiles.map((profile) => clean(profile.funding_insight_id)));
+      const founderCompanies = new Map();
+      for (const profile of fundingProfiles) {
+        const entityId = clean(profile.company_entity_id);
+        const name = clean(profile.company_name);
+        if (!entityId || !name) continue;
+        const companyKey = `${entityId}|${key(profile.role)}`;
+        if (!founderCompanies.has(companyKey)) {
+          founderCompanies.set(companyKey, {
+            entityId,
+            name,
+            role: clean(profile.role)
+          });
+        }
+      }
+      entity.founderCompanies = [...founderCompanies.values()];
+      entity.founderEvidence = fundingProfiles.flatMap((profile) =>
+        (profile.evidence_refs || []).map((source) => ({
+          sourceId: source.source_id,
+          sourceUrl: source.source_url,
+          quote: source.quote,
+          sourceContentHash: source.source_content_hash,
+          quoteHash: source.quote_hash,
+          fundingInsightId: profile.funding_insight_id,
+          sourceEventId: profile.source_event_id,
+          asOfDate: dateOnly(profile.as_of_date)
+        }))
+      );
+      const fundingDates = fundingProfiles.map((profile) => dateOnly(profile.as_of_date)).filter(Boolean);
+      entity.firstSeen = minDate([entity.firstSeen, ...fundingDates]);
+      entity.lastSeen = maxDate([entity.lastSeen, ...fundingDates]);
+    }
   }
 }
 

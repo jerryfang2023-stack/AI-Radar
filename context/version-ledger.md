@@ -18,11 +18,11 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.5.1-funding-card-integrity |
-| Version name | WaveSight V4 Funding Card Integrity |
+| Current version | V4.5.2-founder-profiles |
+| Version name | WaveSight V4 Reviewed Founder Profiles |
 | Version layer | Patch |
 | Release date | 2026-07-30 |
-| Last modified at | 2026-07-30T20:34:59+08:00 |
+| Last modified at | 2026-07-30T21:37:20+08:00 |
 | Product version | V4.5 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.3.0-compatibility-retired |
@@ -45,7 +45,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
 | Canonical event contract | EVENT-V1.1 |
 | Entity history contract | ENTITY-V1.0 |
-| Person-account review contract | PERSON-REVIEW-V1.0 |
+| Person-account review contract | PERSON-REVIEW-V1.1 |
 | Factual relationship contract | RELATION-V2.1 |
 | Targeted historical collection contract | BACKFILL-V1.0 |
 | Local Obsidian knowledge base | GUANLAN-VAULT-V1.2-private-evidence-linked (external) |
@@ -73,7 +73,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.8.0 V4 retirement governance |
-| Git tag | `v4.5.1-funding-card-integrity` |
+| Git tag | `v4.5.2-founder-profiles` |
 | Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -83,7 +83,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
 - SITE-V4.3.0 is the current public and data-service release. It preserves the V4 entity-history frontstage after removing all V3 compatibility writers, interfaces, payloads, and active documentation routes.
 - ENTITY-V1.0 formalizes companies/organizations, products/models/services, and people with stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
-- PERSON-REVIEW-V1.0 reviews all 37 unified person/account candidates, publishes 31 accepted natural people, quarantines 6 non-natural accounts from the person index, and preserves every source viewpoint record.
+- PERSON-REVIEW-V1.1 preserves the original 37 person/account decisions (31 public natural people and 6 quarantined non-natural accounts) and adds 30 manually reviewed funding-founder profiles. Every added profile resolves to accepted funding cards plus source URL, content-hash, and exact-quote locators; application evidence cannot create a canonical event or formal relationship.
 - RELATION-V2.1 accepts only verified typed endpoints with an accepted event, Claim references, and SourceArtifact references; it adds explicit join, leave, and founding edges for people, and no Tag co-occurrence edges are allowed.
 - `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are compatibility redirects into V4.
 - The retired Raw / Pool / Signal Card chain, V3 desk, graph, legacy mappings, and `compatibility_cards` interface are absent from the working tree. Git history is the only explicit recovery route; current production cannot discover them.
@@ -141,7 +141,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Operations Backend / 运营大后台 | `OPS-V2.0.0-v4-telemetry` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Reads `collection-telemetry-v1` and the V4 manifest/gate to separate collection, fact build, application projection, and publication. V3 assets are retired archive state and never health inputs. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
 | Commercial Events production | `SITE-V4.3.0-compatibility-retired` | V4-native structured intake, canonical facts, application projections, and OPS; V3 interfaces and payloads are absent | `SOURCE-INTAKE-V1`, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, external Guanlan Vault person timelines |
-| Person-account review | `PERSON-REVIEW-V1.0` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates plus First-Line authors and accepted review evidence | 31 public natural-person profiles, 6 quarantined non-natural accounts, preserved viewpoint records |
+| Person review | `PERSON-REVIEW-V1.1` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates, First-Line authors, accepted person/account decisions, and accepted funding-founder decisions | 61 public natural-person profiles (31 existing plus 30 reviewed founders), 6 quarantined non-natural accounts, preserved viewpoint and funding-card lineage |
 | Reports Center / 行业报告 | `REPORTS-V1.1.0-lane-independent` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation independently from Opportunity Map. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `01-SiteV2/content/12-applications/industry-reports/` |
 | Opportunity Map / 机会地图 | `OMAP-V2.0.0-v4-evidence` | Published as the second Application Center entry. Owns the dedicated downstream V4 evidence projection, two Claim-bound matrices, DeepSeek V4 Pro-drafted and human-reviewed Direction Cards, and evidence modal. | `opportunity-evidence-v2.json` + accepted CanonicalEvents / Claims / SourceArtifacts / Entities / FacetAssertions + DeepSeek candidate file + reviewed direction definitions | `opportunity-map.html`, `opportunity-evidence-v2.mjs`, `opportunity-direction-card-candidates.json`, `opportunity-direction-cards.json`, `build-industry-reports-frontstage.mjs`, opportunity radar updater Skill |
 
@@ -200,6 +200,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.5.2-founder-profiles` | Entity History people index / founder details / Funding Insights entity links / person review gate | 2026-07-30 | 2026-07-30T21:37:20+08:00 | V4.5.2-founder-profiles / PERSON-REVIEW-V1.1 / ENTITY-V1.0 / RELATION-V2.1 | unreviewed funding people entering the public index; application evidence creating canonical events or formal relationships; founder profiles without card and source locators; source cards retaining null IDs after review | founder review provenance gate + entity-history schema/integrity gate + full funding gate + V4 tests + code/rule audit + responsive smoke + GitHub Pages deploy |
 | `v4.5.1-funding-card-integrity` | Funding Insights schema / historical application bundles / frontstage aggregation / generator Skill | 2026-07-30 | 2026-07-30T20:34:59+08:00 | V4.5.1-funding-card-integrity / FUNDING-INSIGHT-V1.1.0-card-integrity / guanlan-funding-insight-generator v1.1.0 | free-text round variants; historical investors shown as current-round investors; duplicate company-and-round cards; unstructured investment theses; silent customer or entity-link gaps | 63-bundle schema and evidence gate + normalized-round gate + current-investor separation + company-round aggregation + entity-review queue completeness + funding tests + frontstage regression + responsive smoke + GitHub Pages deploy |
 | `v4.5.0-private-evidence-source` | Private evidence store / RAW-V4 public bundles / Guanlan Vault / GitHub production workflows / V4 data lake | 2026-07-30 | 2026-07-30T23:55:00+08:00 | V4.5.0-private-evidence-source / RAW-V4.0 / PRIVATE-EVIDENCE-STORE-V2.0 / GUANLAN-VAULT-V1.2-private-evidence-linked | complete original bodies in the public repository, data lake, Vault, website, workflow artifacts, or public automation commits; repository snapshots treated as authoritative | private-store integrity + public evidence boundary + all-date V4 integrity + Vault evidence contract + 23-table data-lake gate + code/rule audit + GitHub Pages deploy |
 | `v4.4.0-operations-converged` | Repository rules / Guanlan Vault / private evidence backup / V4 data lake / Windows automation / Hermes control plane | 2026-07-30 | 2026-07-30T18:18:14+08:00 | V4.4.0-operations-converged / GUANLAN-VAULT-V1.1-evidence-linked / DATA-LAKE-V4.0-23-table / WINDOWS-AUTOMATION-V1.0-seven-task | repository-local Vault; retired Vault registration; migration-proof notes; compatibility tasks; independent data-lake timer; separate Hermes heartbeat task; stale or non-V4 serving tables | two-axis code/rule review + 23-table JSONL/DuckDB gate + Vault/evidence assertions + seven-task audit + full V4/frontstage tests + GitHub Pages deploy |

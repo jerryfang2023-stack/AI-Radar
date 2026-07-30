@@ -1910,6 +1910,19 @@
     const fundingInsightLink = entity.entityType === "organization_candidate"
       ? `<a href="funding-insights.html?company=${encodeURIComponent(entity.id)}">融资透视</a>`
       : "";
+    const founderCompanies = (entity.founderCompanies || []).map((company) =>
+      `<a href="${escapeHtml(detailLink("index", "entity", company.entityId))}">${escapeHtml(company.name)}${company.role ? ` · ${escapeHtml(company.role)}` : ""}</a>`
+    );
+    const founderCards = (entity.fundingInsightIds || []).map((id) =>
+      `<a href="funding-insights.html?id=${encodeURIComponent(id)}">${escapeHtml(id)}</a>`
+    );
+    const founderEvidence = (entity.founderEvidence || []).slice(0, 8).map((evidence) => {
+      const href = safeExternalUrl(evidence.sourceUrl);
+      const quote = escapeHtml(evidence.quote || "");
+      return href
+        ? `<li><a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${quote}</a></li>`
+        : `<li>${quote}</li>`;
+    });
     return `
       ${breadcrumb("index", entity.name)}
       <header class="dc-detail-head dc-entity-head">
@@ -1935,12 +1948,15 @@
             ${entity.roleTitle ? fact("结构化角色", entity.roleTitle) : entity.role ? fact("公开角色", entity.role) : ""}
             ${(entity.organizationNames || []).length ? fact("机构归属", entity.organizationNames) : entity.organization ? fact("公开机构", entity.organization) : ""}
           </dl></section>
+          ${founderCompanies.length ? `<section class="dc-side-block"><h2>创始关联</h2><div class="dc-side-list">${founderCompanies.join("")}</div></section>` : ""}
+          ${founderCards.length ? `<section class="dc-side-block"><h2>融资档案</h2><div class="dc-side-list">${founderCards.join("")}</div></section>` : ""}
           ${relationRows.length ? `<section class="dc-side-block"><h2>事实关系</h2><ul class="dc-entity-relations">${relationRows.join("")}</ul></section>` : ""}
           ${(payload.taxonomyNodes || []).length ? `<section class="dc-side-block"><h2>关联分类</h2><div class="dc-side-list">${payload.taxonomyNodes.map((node) => `<a href="${escapeHtml(detailLink("index", "taxonomy", node.id))}">${escapeHtml(node.name)}</a>`).join("")}</div></section>` : ""}
         </aside>
       </div>
       ${(payload.fdeDossiers || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fdeDossiers, "fde")}</section>` : ""}
       ${(payload.hardwareCatalog || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardwareCatalog, "hardware")}</section>` : ""}
+      ${founderEvidence.length ? `<section class="dc-related-section"><h2>创始人证据</h2><ul class="dc-entity-relations">${founderEvidence.join("")}</ul></section>` : ""}
       ${viewpoints.length ? `<section class="dc-related-section dc-entity-viewpoints"><h2>一线观点</h2><div class="dc-list">${viewpoints.map((item) => `<div class="dc-list-row"><span class="dc-row-kind">${escapeHtml(item.date)}</span><span class="dc-row-title">${escapeHtml(item.title)}</span></div>`).join("")}</div></section>` : ""}
     `;
   }

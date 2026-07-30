@@ -63,6 +63,21 @@ test("person index contains reviewed natural people while preserving all viewpoi
   assert.ok(data.viewpoints.some((item) => item.person === "Import AI (Jack Clark)" && item.personEntityId === peopleByName.get("Jack Clark")?.id));
 });
 
+test("person index publishes exactly the reviewed founder batch with funding and source lineage", () => {
+  const data = buildFrontstageData(root);
+  const review = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json"), "utf8"));
+  const fundingFounders = data.people.filter((person) => person.fundingInsightIds?.length);
+  const reviewedIds = new Set(review.decisions.map((decision) => decision.entity_id));
+
+  assert.equal(fundingFounders.length, 30);
+  assert.ok(fundingFounders.every((person) => reviewedIds.has(person.id)));
+  assert.ok(fundingFounders.every((person) => person.founderCompanies.length > 0));
+  assert.ok(fundingFounders.every((person) => person.founderEvidence.every((evidence) =>
+    evidence.sourceUrl && evidence.sourceContentHash && evidence.quoteHash
+  )));
+  assert.ok(fundingFounders.every((person) => person.relationIds.length === 0 || person.eventIds.length > 0));
+});
+
 test("current commercial event titles are complete and evidence-specific", () => {
   const data = buildFrontstageData(root);
   const currentEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);

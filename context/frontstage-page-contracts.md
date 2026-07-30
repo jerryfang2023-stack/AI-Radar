@@ -45,7 +45,7 @@ The legacy Business Signals Card set and `compatibility_cards` projection are re
 | Opportunity Map column | `OMAP-V2.0.0-v4-evidence` | Owns the dedicated V4 evidence projection, two source-backed matrices, and human-reviewed Direction Cards with click-to-open Event, Claim, and Source evidence. |
 | Trend Radar column | `TRADAR-V1.0.0-factual-change-explorer` | Owns the accepted-event daily/weekly/monthly change projection, period controls, coverage disclosure, and evidence links without report prose or judgment. |
 | Funding Insights column | `FUNDING-INSIGHT-V1.1.0-card-integrity` | Owns normalized funding rounds, current-round investor separation, company-and-round aggregation, structured investment theses, explicit customer research status, evidence-bounded application judgments, automatic fail-closed publication, and governed entity-review candidates without mutating canonical facts. |
-| Person-account review | `PERSON-REVIEW-V1.0` | Admits only reviewed natural people to the Entity Index while preserving viewpoints from quarantined non-natural accounts without a person entity link. |
+| Person review | `PERSON-REVIEW-V1.1` | Admits reviewed natural people from canonical events, First-Line Viewpoints, or the accepted funding-founder ledger. Funding-only profiles expose funding cards and exact source locators but cannot create `RELATION-V2.1`; quarantined accounts and unreviewed funding candidates remain outside the public person index. |
 
 ## Navigation
 

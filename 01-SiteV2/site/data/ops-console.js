@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-07-30T07:42:27.411Z",
+    "generatedAt": "2026-07-30T13:38:31.793Z",
     "date": "2026-07-30",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -46,9 +46,9 @@ window.WaveSightOpsConsole = {
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
-      "total": 2,
+      "total": 4,
       "daily": 0,
-      "open": 0,
+      "open": 2,
       "resolved": 2,
       "urgent": 0
     },
@@ -57,19 +57,69 @@ window.WaveSightOpsConsole = {
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 2,
-      "open": 0,
+      "total": 4,
+      "open": 2,
       "resolved": 2,
       "byLane": {
-        "community_intelligence": 1,
-        "skill_ops": 1
+        "community_intelligence": 2,
+        "skill_ops": 1,
+        "business_signals": 1
       },
       "byCategory": {
-        "recurring_automation_issue": 1,
+        "recurring_automation_issue": 3,
         "weekly_learning_loop": 1
       },
-      "recurring": [],
+      "recurring": [
+        {
+          "category": "recurring_automation_issue",
+          "count": 3
+        }
+      ],
       "latest": [
+        {
+          "id": "2026-07-30-business-signals-recurring-fef63b1d095e1eec",
+          "date": "2026-07-30",
+          "title": "Recurring warning: business_signals",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-27-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-30T08:45:26.579Z",
+          "updatedAt": "",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
+        },
+        {
+          "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
+          "date": "2026-07-30",
+          "title": "Recurring warning: community_intelligence",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-30T08:45:26.578Z",
+          "updatedAt": "",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md"
+        },
         {
           "id": "2026-07-26-skill_ops-weekly-learning-loop",
           "date": "2026-07-26",
@@ -118,19 +168,69 @@ window.WaveSightOpsConsole = {
     },
     "monthly": {
       "windowDays": 30,
-      "total": 2,
-      "open": 0,
+      "total": 4,
+      "open": 2,
       "resolved": 2,
       "byLane": {
-        "community_intelligence": 1,
-        "skill_ops": 1
+        "community_intelligence": 2,
+        "skill_ops": 1,
+        "business_signals": 1
       },
       "byCategory": {
-        "recurring_automation_issue": 1,
+        "recurring_automation_issue": 3,
         "weekly_learning_loop": 1
       },
-      "recurring": [],
+      "recurring": [
+        {
+          "category": "recurring_automation_issue",
+          "count": 3
+        }
+      ],
       "latest": [
+        {
+          "id": "2026-07-30-business-signals-recurring-fef63b1d095e1eec",
+          "date": "2026-07-30",
+          "title": "Recurring warning: business_signals",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-27-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-30T08:45:26.579Z",
+          "updatedAt": "",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
+        },
+        {
+          "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
+          "date": "2026-07-30",
+          "title": "Recurring warning: community_intelligence",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-30T08:45:26.578Z",
+          "updatedAt": "",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md"
+        },
         {
           "id": "2026-07-26-skill_ops-weekly-learning-loop",
           "date": "2026-07-26",
@@ -179,7 +279,52 @@ window.WaveSightOpsConsole = {
     }
   },
   "inbox": {
-    "open": [],
+    "open": [
+      {
+        "id": "2026-07-30-business-signals-recurring-fef63b1d095e1eec",
+        "date": "2026-07-30",
+        "title": "Recurring warning: business_signals",
+        "status": "open",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "agent-workflow/reports/2026-07-27-daily-supervision-report.json",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-07-30T08:45:26.579Z",
+        "updatedAt": "",
+        "resolvedAt": "",
+        "resolver": "",
+        "fixCommit": "",
+        "validation": "",
+        "prevention": "",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md"
+      },
+      {
+        "id": "2026-07-30-community-intelligence-recurring-73a400f41c5af405",
+        "date": "2026-07-30",
+        "title": "Recurring warning: community_intelligence",
+        "status": "open",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "community_intelligence",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-07-30T08:45:26.578Z",
+        "updatedAt": "",
+        "resolvedAt": "",
+        "resolver": "",
+        "fixCommit": "",
+        "validation": "",
+        "prevention": "",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md"
+      }
+    ],
     "resolved": [
       {
         "id": "2026-07-26-skill_ops-weekly-learning-loop",
@@ -252,7 +397,7 @@ window.WaveSightOpsConsole = {
         "evidence": [
           {
             "label": "Items",
-            "value": 67
+            "value": 69
           }
         ]
       },
@@ -296,7 +441,7 @@ window.WaveSightOpsConsole = {
         "evidence": [
           {
             "label": "Items",
-            "value": 41
+            "value": 36
           }
         ]
       },
@@ -312,7 +457,7 @@ window.WaveSightOpsConsole = {
         "evidence": [
           {
             "label": "Items",
-            "value": 23
+            "value": 34
           }
         ]
       }
@@ -393,12 +538,12 @@ window.WaveSightOpsConsole = {
       {
         "label": "GitHub Pages",
         "status": "passed",
-        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30454379764"
+        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30526606863"
       },
       {
         "label": "Business Signals PR",
         "status": "passed",
-        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/pull/448"
+        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/pull/477"
       },
       {
         "label": "本地观澜 Vault 同步准备度",
@@ -413,7 +558,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Daily Supervision",
         "status": "passed",
-        "detail": "2026-07-29T13:33:06.722Z"
+        "detail": "2026-07-30T08:45:26.339Z"
       }
     ]
   },
@@ -701,7 +846,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "RAW",
         "label": "Data Center Raw contract",
-        "value": "RAW-V3.0"
+        "value": "RAW-V4.0"
       },
       {
         "key": "EVENT",
@@ -716,7 +861,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "PERSON",
         "label": "Person-account review contract",
-        "value": "PERSON-REVIEW-V1.0"
+        "value": "PERSON-REVIEW-V1.1"
       },
       {
         "key": "RELATION",
