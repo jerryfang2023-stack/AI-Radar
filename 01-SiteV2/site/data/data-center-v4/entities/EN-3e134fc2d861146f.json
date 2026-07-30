@@ -102,5 +102,106 @@
         "EN-3e134fc2d861146f"
       ]
     }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-cf18afecf1eecd7f",
+      "snapshotKey": "cf18afecf1eecd7f",
+      "snapshotId": "HWS-76ba0a1b22539032",
+      "eventId": "EV-0a4e9b2eca953036",
+      "eventIds": [
+        "EV-0a4e9b2eca953036"
+      ],
+      "dataDate": "2026-07-30",
+      "date": "2026-07-30",
+      "title": "SEi13 AI / SEi14 AI",
+      "subject": "零刻",
+      "productNames": [
+        "SEi13 AI",
+        "SEi14 AI"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "160",
+          "unit": "TOPS",
+          "fact_ref": "HWF-149a6872c305ef4c"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-30",
+          "hardware_fact_id": "HWF-69c596fdd02f9a50",
+          "fact_type": "product",
+          "observed_at": "2026-07-29T10:32:11.000Z",
+          "subject_entity_id": "EN-36b1dbc8da066a19",
+          "subject_name": "零刻",
+          "product_entity_ids": [
+            "EN-7a03939835d5eee2",
+            "EN-3e134fc2d861146f"
+          ],
+          "product_names": [
+            "SEi13 AI",
+            "SEi14 AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "160",
+          "unit": "TOPS",
+          "source_quote": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：搭载最高 160TOPS 算力独立 NPU，11895 元起 - IT之家",
+          "event_refs": [
+            "EV-0a4e9b2eca953036"
+          ],
+          "claim_ref": "CL-5c9b1f72fc185015",
+          "source_refs": [
+            "SA-7341cf49c95d3ef7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-30",
+          "hardware_fact_id": "HWF-149a6872c305ef4c",
+          "fact_type": "product",
+          "observed_at": "2026-07-29T10:32:11.000Z",
+          "subject_entity_id": "EN-36b1dbc8da066a19",
+          "subject_name": "零刻",
+          "product_entity_ids": [
+            "EN-7a03939835d5eee2",
+            "EN-3e134fc2d861146f"
+          ],
+          "product_names": [
+            "SEi13 AI",
+            "SEi14 AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "160",
+          "unit": "TOPS",
+          "source_quote": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：搭载最高 160TOPS 算力独立 NPU，11895 元起",
+          "event_refs": [
+            "EV-0a4e9b2eca953036"
+          ],
+          "claim_ref": "CL-d6d1216893640b3c",
+          "source_refs": [
+            "SA-7341cf49c95d3ef7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/263.htm",
+      "entityIds": [
+        "EN-36b1dbc8da066a19",
+        "EN-7a03939835d5eee2",
+        "EN-3e134fc2d861146f"
+      ]
+    }
   ]
 }

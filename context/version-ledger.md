@@ -32,7 +32,11 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
 | Enterprise AI / FDE data contract | FDE-V2.0 |
 | Enterprise AI / FDE projection version | FDE-V2.0 |
+| Enterprise AI / FDE observation contract | FDE-OBSERVATION-V1.0 |
 | AI Hardware data version | HARDWARE-V1.0 |
+| AI Hardware fact contract | HARDWARE-FACT-V1.0 |
+| AI Hardware snapshot contract | HARDWARE-SNAPSHOT-V1.0 |
+| Lens monitoring funnel | LENS-FUNNEL-V1.0 |
 | Reports Center column version | REPORTS-V1.1.0-lane-independent |
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
@@ -56,7 +60,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Follow-builders support Skill | follow-builders v1.0.1 |
 | Weekly business-change content Skill | guanlan-weekly-business-change-radar v1.2.0 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.3.0 |
-| Daily source monitor Skill | guanlan-daily-monitor v1.2.0 |
+| Daily source monitor Skill | guanlan-daily-monitor v1.2.1 |
 | Source-intake quality gate Skill | guanlan-monitor-quality-gate v1.2.0 |
 | Source-intake QC Skill | guanlan-daily-monitor-qc v1.2.0 |
 | Skill governance editor | guanlan-skill-editor v1.0.2 |

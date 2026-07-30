@@ -144,8 +144,9 @@ test("hardware projection exposes its real source artifact", () => {
   assert.ok(data.hardware.every((item) => item.sourceName && item.sourceUrl));
   assert.ok(data.hardware.every((item) => !/\b(?:search|anysearch|gdelt)\b|关键词搜索/iu.test(item.sourceName)));
   assert.ok(data.hardware.every((item) => /^https?:\/\//u.test(item.sourceUrl)));
-  assert.match(script, /sub: `来源：\$\{item\.sourceName/u);
-  assert.match(script, /item\.sourceName \|\| "打开原始来源"/u);
+  assert.ok(data.hardwareCatalog.every((item) => item.sourceUrl && item.factCount > 0));
+  assert.match(script, /dataKey: "hardwareCatalog"/u);
+  assert.match(script, /产品规格目录、产能供应面板与变化时间线/u);
 });
 
 test("frontstage output excludes judgment and recommendation fields", () => {
@@ -360,12 +361,30 @@ test("FDE and hardware projections prioritize newly collected records", () => {
   }
 });
 
-test("FDE and hardware list rows distinguish collection and event dates", () => {
+test("FDE and hardware list rows expose dossier and snapshot state", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
 
-  assert.match(script, /date: `采集 \$\{item\.dataDate\}`/u);
-  assert.match(script, /secondaryDate: `事件 \$\{item\.date\}`/u);
+  assert.match(script, /date: `更新 \$\{item\.dataDate\}`/u);
+  assert.match(script, /secondaryDate: `\$\{item\.observationCount\} 条观察 · 完整度 \$\{item\.completenessPercent\}%`/u);
+  assert.match(script, /date: `快照 \$\{item\.dataDate\}`/u);
+  assert.match(script, /secondaryDate: `\$\{item\.factCount\} 条事实 · \$\{item\.snapshotCount\} 个快照`/u);
   assert.match(script, /row\.secondaryDate/u);
+});
+
+test("FDE dossiers, hardware catalog, and monitoring funnel are materialized", () => {
+  const data = buildFrontstageData(root);
+  const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
+
+  assert.ok(data.fdeDossiers.length > 0);
+  assert.ok(data.fdeDossiers.every((item) => item.observationCount > 0 && item.completeness >= 0 && item.completeness <= 1));
+  assert.ok(data.hardwareCatalog.length > 0);
+  assert.ok(data.hardwareCatalog.every((item) => item.snapshotCount > 0 && item.factCount > 0));
+  assert.deepEqual(data.monitoringFunnel.map((item) => item.lens).sort(), ["fde", "hardware"]);
+  assert.match(script, /function renderLensOverview/u);
+  assert.match(script, /原始来源率/u);
+  assert.match(script, /有效 Claim 率/u);
+  assert.match(script, /观察记录率/u);
+  assert.match(script, /事件转化率/u);
 });
 
 test("FDE and hardware default to the current month while commercial events remain daily", () => {

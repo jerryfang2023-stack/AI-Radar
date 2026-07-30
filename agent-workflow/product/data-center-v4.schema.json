@@ -3,7 +3,7 @@
   "$id": "https://wavesight.local/schemas/data-center-v4.schema.json",
   "title": "WaveSight Data Center V4",
   "type": "object",
-  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "entity_mentions", "canonical_events", "event_sources", "event_claims", "event_conflicts", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records", "qa_queue"],
+  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "entity_mentions", "canonical_events", "event_sources", "event_claims", "event_conflicts", "relationships", "tag_assertions", "facet_assertions", "fde_records", "fde_observations", "hardware_records", "hardware_facts", "hardware_snapshots", "monitoring_funnel", "qa_queue"],
   "properties": {
     "manifest": { "$ref": "#/$defs/manifest" },
     "source_artifacts": { "type": "array", "items": { "$ref": "#/$defs/sourceArtifact" } },
@@ -19,7 +19,11 @@
     "tag_assertions": { "type": "array", "items": { "$ref": "#/$defs/tagAssertion" } },
     "facet_assertions": { "type": "array", "items": { "$ref": "#/$defs/facetAssertion" } },
     "fde_records": { "type": "array", "items": { "$ref": "#/$defs/fdeRecord" } },
+    "fde_observations": { "type": "array", "items": { "$ref": "#/$defs/fdeObservation" } },
     "hardware_records": { "type": "array", "items": { "$ref": "#/$defs/hardwareRecord" } },
+    "hardware_facts": { "type": "array", "items": { "$ref": "#/$defs/hardwareFact" } },
+    "hardware_snapshots": { "type": "array", "items": { "$ref": "#/$defs/hardwareSnapshot" } },
+    "monitoring_funnel": { "type": "array", "items": { "$ref": "#/$defs/monitoringFunnel" } },
     "qa_queue": { "type": "array", "items": { "$ref": "#/$defs/qaItem" } }
   },
   "additionalProperties": false,
@@ -36,13 +40,17 @@
     },
     "manifest": {
       "type": "object",
-      "required": ["product_version", "raw_version", "event_version", "fde_version", "hardware_version", "tag_version", "date", "generated_at", "counts"],
+      "required": ["product_version", "raw_version", "event_version", "fde_version", "fde_observation_version", "hardware_version", "hardware_fact_version", "hardware_snapshot_version", "monitoring_funnel_version", "tag_version", "date", "generated_at", "counts"],
       "properties": {
         "product_version": { "const": "SITE-V4.0-data-center" },
         "raw_version": { "const": "RAW-V3.0" },
         "event_version": { "const": "EVENT-V1.1" },
         "fde_version": { "const": "FDE-V2.0" },
+        "fde_observation_version": { "const": "FDE-OBSERVATION-V1.0" },
         "hardware_version": { "const": "HARDWARE-V1.0" },
+        "hardware_fact_version": { "const": "HARDWARE-FACT-V1.0" },
+        "hardware_snapshot_version": { "const": "HARDWARE-SNAPSHOT-V1.0" },
+        "monitoring_funnel_version": { "const": "LENS-FUNNEL-V1.0" },
         "tag_version": { "const": "TAG-V4.0" },
         "date": { "type": "string", "format": "date" },
         "generated_at": { "type": "string" },
@@ -274,6 +282,39 @@
       },
       "additionalProperties": false
     },
+    "fdeObservation": {
+      "type": "object",
+      "required": ["observation_id", "implementation_key", "observation_type", "observed_at", "customer", "vendor", "industry", "use_case", "workflow", "systems_integrated", "lifecycle_stage", "reported_outcomes", "event_refs", "claim_refs", "source_refs", "completeness"],
+      "properties": {
+        "observation_id": { "type": "string", "minLength": 1 },
+        "implementation_key": { "type": "string", "minLength": 1 },
+        "observation_type": { "enum": ["customer_case", "procurement", "contract_award", "earnings_disclosure", "production_rollout", "implementation_update"] },
+        "observed_at": { "type": "string" },
+        "customer": { "type": "string" },
+        "vendor": { "type": "string" },
+        "industry": { "type": "string" },
+        "use_case": { "type": "string" },
+        "workflow": { "type": "string" },
+        "systems_integrated": { "type": "array" },
+        "lifecycle_stage": { "type": "string" },
+        "reported_outcomes": { "type": "array" },
+        "event_refs": { "type": "array", "items": { "type": "string" } },
+        "claim_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "completeness": {
+          "type": "object",
+          "required": ["resolved_fields", "total_fields", "ratio", "missing_fields"],
+          "properties": {
+            "resolved_fields": { "type": "integer", "minimum": 0 },
+            "total_fields": { "type": "integer", "minimum": 1 },
+            "ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+            "missing_fields": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "hardwareRecord": {
       "type": "object",
       "required": ["hardware_record_id", "event_id", "hardware_event_type", "component_type", "compute_layer", "manufacturing_stage", "process_node", "capacity", "capacity_unit", "supplier", "customer", "deployment_site", "region", "contract_value", "shipment_date", "claim_refs", "source_refs"],
@@ -295,6 +336,77 @@
         "shipment_date": { "type": "string" },
         "claim_refs": { "type": "array", "minItems": 1 },
         "source_refs": { "type": "array", "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "hardwareFact": {
+      "type": "object",
+      "required": ["hardware_fact_id", "fact_type", "observed_at", "subject_entity_id", "subject_name", "product_entity_ids", "product_names", "component_type", "metric_value", "unit", "source_quote", "event_refs", "claim_ref", "source_refs"],
+      "properties": {
+        "hardware_fact_id": { "type": "string", "minLength": 1 },
+        "fact_type": { "enum": ["product", "specification", "oem_odm", "capacity", "supply", "shipment_deployment", "capex"] },
+        "observed_at": { "type": "string" },
+        "subject_entity_id": { "type": "string" },
+        "subject_name": { "type": "string", "minLength": 1 },
+        "product_entity_ids": { "type": "array", "items": { "type": "string" } },
+        "product_names": { "type": "array", "items": { "type": "string" } },
+        "component_type": { "type": "string", "minLength": 1 },
+        "metric_value": { "type": "string" },
+        "unit": { "type": "string" },
+        "source_quote": { "type": "string", "minLength": 1 },
+        "event_refs": { "type": "array", "items": { "type": "string" } },
+        "claim_ref": { "type": "string", "minLength": 1 },
+        "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "hardwareSnapshot": {
+      "type": "object",
+      "required": ["hardware_snapshot_id", "snapshot_key", "as_of", "subject_entity_id", "subject_name", "product_entity_ids", "product_names", "component_types", "latest_values", "fact_refs", "claim_refs", "source_refs", "event_refs", "previous_snapshot_ref", "change_status"],
+      "properties": {
+        "hardware_snapshot_id": { "type": "string", "minLength": 1 },
+        "snapshot_key": { "type": "string", "minLength": 1 },
+        "as_of": { "type": "string", "format": "date" },
+        "subject_entity_id": { "type": "string" },
+        "subject_name": { "type": "string", "minLength": 1 },
+        "product_entity_ids": { "type": "array", "items": { "type": "string" } },
+        "product_names": { "type": "array", "items": { "type": "string" } },
+        "component_types": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "latest_values": { "type": "object" },
+        "fact_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "claim_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "event_refs": { "type": "array", "items": { "type": "string" } },
+        "previous_snapshot_ref": { "type": "string" },
+        "change_status": { "enum": ["initial", "unchanged", "changed"] }
+      },
+      "additionalProperties": false
+    },
+    "monitoringFunnel": {
+      "type": "object",
+      "required": ["funnel_id", "lens", "date", "monitoring_paths", "raw_documents", "original_sources", "valid_claims", "observations", "canonical_events", "blocker_counts", "rates"],
+      "properties": {
+        "funnel_id": { "type": "string", "minLength": 1 },
+        "lens": { "enum": ["fde", "hardware"] },
+        "date": { "type": "string", "format": "date" },
+        "monitoring_paths": { "type": "array", "items": { "type": "string" } },
+        "raw_documents": { "type": "integer", "minimum": 0 },
+        "original_sources": { "type": "integer", "minimum": 0 },
+        "valid_claims": { "type": "integer", "minimum": 0 },
+        "observations": { "type": "integer", "minimum": 0 },
+        "canonical_events": { "type": "integer", "minimum": 0 },
+        "blocker_counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+        "rates": {
+          "type": "object",
+          "required": ["original_source_rate", "valid_claim_rate", "observation_rate", "event_conversion_rate"],
+          "properties": {
+            "original_source_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+            "valid_claim_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+            "observation_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+            "event_conversion_rate": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "additionalProperties": false
+        }
       },
       "additionalProperties": false
     },

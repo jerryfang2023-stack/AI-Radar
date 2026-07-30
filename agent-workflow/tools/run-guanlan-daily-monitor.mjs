@@ -3374,12 +3374,15 @@ async function searchBing(query, limit = 5, priorError) {
 
 function inferSearchIntent(query = "") {
   const text = String(query || "").toLowerCase();
+  if (/earnings|annual report|quarterly report|10-k|10-q|财报|业绩会|年报|季报/iu.test(text)) return "find_customer_disclosure";
+  if (/capex|capital expenditure|capital spending|fab|factory|capacity|wafer|资本开支|资本支出|产能|晶圆厂/iu.test(text)) return "find_capacity_capex";
+  if (/oem|odm|supply agreement|supply contract|shipment|delivery|供应协议|供应合同|出货|交付/iu.test(text)) return "find_hardware_supply";
   if (/official|launch|release|changelog|api|sdk|pricing|product|docs|发布|更新|定价|文档/iu.test(text)) return "find_original_source";
   if (/startup|seed|pre-seed|angel|yc|funding|raises|融资|种子轮|天使轮/iu.test(text)) return "find_startups";
   if (/customer|case|deployment|adoption|pilot|客户|案例|部署|试点/iu.test(text)) return "find_customer_case";
+  if (/tender|procurement|marketplace|app store|采购|招投标|市场/iu.test(text)) return "find_procurement_signal";
   if (/workflow|process|operation|procurement|sales|support|finance|legal|流程|岗位|采购|销售|客服|法务|财务/iu.test(text)) return "find_workflow_change";
   if (/github|npm|pypi|huggingface|sdk|framework|open source|developer|开源|开发者/iu.test(text)) return "find_developer_adoption";
-  if (/tender|procurement|marketplace|app store|采购|招投标|市场/iu.test(text)) return "find_procurement_signal";
   if (/reddit|hacker news|hn|feedback|comment|issue|用户反馈|讨论/iu.test(text)) return "find_user_feedback";
   if (/market|trend|regulation|media|行业|趋势|监管/iu.test(text)) return "find_market_trend";
   return "verify_company_action";
@@ -3415,18 +3418,94 @@ const keywordSearchPaths = [
     querySuffix: "(official customer story OR case study OR production deployment OR procurement contract OR workflow rollout OR adoption)",
   },
   {
-    id: "fde_implementation",
-    label: "Enterprise AI / FDE implementation path",
-    role: "find FDE, applied AI, customer engineering, pilot, production rollout, procurement and vertical workflow deployment evidence",
+    id: "fde_customer_case",
+    label: "FDE customer-case path",
+    lens: "fde",
+    role: "find named customer cases and implemented workflow evidence",
     method: "ddg",
-    querySuffix: "(FDE OR \"forward deployed\" OR \"applied AI\" OR \"customer engineering\" OR \"technical scoping\" OR \"production rollout\" OR \"pilot customer\" OR \"customer story\" OR \"case study\") (official OR newsroom OR press release OR company blog)",
+    selectionPattern: /customer|case study|customer story|workflow|implementation/iu,
+    querySuffix: "(\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)",
   },
   {
-    id: "ai_hardware_original",
-    label: "AI hardware original-source path",
-    role: "find AI hardware investment, scenario deployment and compute-infrastructure innovation from original or high-signal sources",
+    id: "fde_procurement_contract",
+    label: "FDE procurement and contract path",
+    lens: "fde",
+    role: "find procurement notices, tenders, contract awards and named suppliers",
     method: "ddg",
-    querySuffix: "(AI hardware OR AI chip OR accelerator OR GPU cluster OR AI server OR AI data center OR edge AI device OR robotics hardware OR semiconductor OR HBM OR launch OR funding OR customer OR deployment OR procurement)",
+    selectionPattern: /procurement|tender|contract award|purchasing agreement|selected provider/iu,
+    querySuffix: "(AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)",
+  },
+  {
+    id: "fde_earnings_disclosure",
+    label: "FDE customer earnings path",
+    lens: "fde",
+    role: "find customer earnings disclosures about AI implementation and operational use",
+    method: "ddg",
+    selectionPattern: /earnings|annual report|quarterly report|10-k|10-q|operations/iu,
+    querySuffix: "(AI implementation OR AI deployment OR AI operations) (earnings OR \"annual report\" OR \"quarterly report\" OR 10-K OR 10-Q)",
+  },
+  {
+    id: "fde_production_rollout",
+    label: "FDE production-rollout path",
+    lens: "fde",
+    role: "find pilots, go-live milestones, production rollouts and expansion evidence",
+    method: "ddg",
+    selectionPattern: /production rollout|go live|pilot|deployment|rollout|in production/iu,
+    querySuffix: "(\"production rollout\" OR \"go live\" OR \"in production\" OR pilot OR deployment) (AI OR agent) (official OR newsroom OR customer)",
+  },
+  {
+    id: "hardware_product_specs",
+    label: "AI hardware product and specification path",
+    lens: "hardware",
+    role: "find official product launches, model specifications and benchmark-neutral technical facts",
+    method: "ddg",
+    selectionPattern: /product launch|specification|specs|chip|accelerator|server|npu|gpu/iu,
+    querySuffix: "(AI chip OR accelerator OR GPU OR NPU OR AI server) (launch OR specifications OR datasheet) (official OR newsroom OR product page)",
+  },
+  {
+    id: "hardware_oem_odm",
+    label: "AI hardware OEM and ODM path",
+    lens: "hardware",
+    role: "find OEM, ODM and contract-manufacturing relationships",
+    method: "ddg",
+    selectionPattern: /oem|odm|contract manufacturer|manufacturing partner/iu,
+    querySuffix: "(AI server OR AI hardware) (OEM OR ODM OR \"contract manufacturer\" OR \"manufacturing partner\") (official OR newsroom)",
+  },
+  {
+    id: "hardware_capacity_fab",
+    label: "AI hardware capacity and fab path",
+    lens: "hardware",
+    role: "find fab, packaging, HBM and system-production capacity disclosures",
+    method: "ddg",
+    selectionPattern: /capacity|fab|factory|foundry|wafer|packaging|hbm/iu,
+    querySuffix: "(AI chip OR HBM OR AI server) (capacity OR fab OR factory OR foundry OR wafer OR packaging) (official OR earnings OR newsroom)",
+  },
+  {
+    id: "hardware_supply_agreement",
+    label: "AI hardware supply-agreement path",
+    lens: "hardware",
+    role: "find named supply agreements and supplier-customer commitments",
+    method: "ddg",
+    selectionPattern: /supply agreement|supply contract|supplier|purchasing agreement/iu,
+    querySuffix: "(GPU OR accelerator OR HBM OR AI server) (\"supply agreement\" OR \"supply contract\" OR supplier OR \"purchasing agreement\") (official OR newsroom)",
+  },
+  {
+    id: "hardware_shipment_deployment",
+    label: "AI hardware shipment and deployment path",
+    lens: "hardware",
+    role: "find shipments, installations, clusters and named deployment sites",
+    method: "ddg",
+    selectionPattern: /shipment|ships|deliver|install|deployment|cluster|data center/iu,
+    querySuffix: "(GPU OR accelerator OR AI server OR cluster) (shipment OR ships OR delivery OR install OR deployment) (customer OR site OR official)",
+  },
+  {
+    id: "hardware_capex",
+    label: "AI hardware capex path",
+    lens: "hardware",
+    role: "find capital expenditure for data centers, fabs, factories and compute infrastructure",
+    method: "ddg",
+    selectionPattern: /capex|capital expenditure|capital spending|data center investment|fab investment/iu,
+    querySuffix: "(AI infrastructure OR data center OR fab) (capex OR \"capital expenditure\" OR \"capital spending\" OR investment) (earnings OR official)",
   },
   {
     id: "procurement_marketplace",
@@ -3468,8 +3547,8 @@ function selectQueriesForPath(allQueries, pathConfig) {
     const verticalQueries = allQueries.filter((query) => /vertical|industry|workflow|customer|adoption|finance|insurance|healthcare|legal|manufacturing|supply chain|public sector/iu.test(query.query || ""));
     if (verticalQueries.length) return verticalQueries.slice(0, limit);
   }
-  if (pathConfig.id === "fde_implementation") {
-    const fdeQueries = allQueries.filter((query) => /FDE|forward deployed|applied AI|customer engineering|technical scoping|production rollout|pilot customer|design partner|implementation|deployment|customer story|case study|workflow rollout|procurement pilot/iu.test(query.query || ""));
+  if (pathConfig.lens === "fde") {
+    const fdeQueries = allQueries.filter((query) => pathConfig.selectionPattern.test(query.query || ""));
     const dedicated = fdeQueries.filter((query) => query.query_theme === "enterprise-ai-implementation-signal");
     const fallback = fdeQueries.filter((query) => query.query_theme !== "enterprise-ai-implementation-signal");
     if (fdeQueries.length) return [...dedicated, ...fallback].slice(0, limit);
@@ -3478,8 +3557,8 @@ function selectQueriesForPath(allQueries, pathConfig) {
     const procurementQueries = allQueries.filter((query) => /procurement|tender|contract award|purchasing agreement|public sector|production deployment/iu.test(query.query || ""));
     if (procurementQueries.length) return procurementQueries.slice(0, limit);
   }
-  if (pathConfig.id === "ai_hardware_original") {
-    const hardwareQueries = allQueries.filter((query) => /AI hardware|AI chip|AI accelerator|inference chip|GPU cluster|AI server|AI data center|AI factory|semiconductor|HBM|edge AI|on-device AI hardware|robotics hardware|humanoid robot/iu.test(query.query || ""));
+  if (pathConfig.lens === "hardware") {
+    const hardwareQueries = allQueries.filter((query) => pathConfig.selectionPattern.test(query.query || ""));
     const dedicated = hardwareQueries.filter((query) => /ai-hardware-/iu.test(query.query_theme || ""));
     const fallback = hardwareQueries.filter((query) => !/ai-hardware-/iu.test(query.query_theme || ""));
     if (hardwareQueries.length) {
@@ -3528,10 +3607,8 @@ function queryRecencyHintForPath(pathConfig) {
     "official_original",
     "capital_startup",
     "industry_landing",
-    "fde_implementation",
-    "ai_hardware_original",
     "procurement_marketplace",
-  ]).has(pathConfig.id)) return "";
+  ]).has(pathConfig.id) && !["fde", "hardware"].includes(pathConfig.lens)) return "";
   const [year, monthValue] = date.split("-");
   const month = [
     "January", "February", "March", "April", "May", "June",
@@ -3567,24 +3644,15 @@ async function runQuerySelectionRegressionFixtures() {
   if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(recencyHint)) {
     throw new Error(`capital startup path omitted the production-month recency hint: ${recencyHint}`);
   }
-  const selectedHardware = selectQueriesForPath(queries, pathConfigById("ai_hardware_original"));
-  if (new Set(selectedHardware.map((query) => query.query_theme)).size !== 3) {
-    throw new Error(`AI hardware path did not preserve investment, deployment and product-launch query diversity: ${JSON.stringify(selectedHardware)}`);
-  }
+  const selectedHardware = selectQueriesForPath(queries, pathConfigById("hardware_product_specs"));
   if (!selectedHardware.some((query) => /AI server product launch/iu.test(query.query))) {
-    throw new Error(`AI hardware path omitted the commercial product-launch query: ${JSON.stringify(selectedHardware)}`);
+    throw new Error(`AI hardware product/spec path omitted the commercial product-launch query: ${JSON.stringify(selectedHardware)}`);
   }
-  if (!selectedHardware.some((query) => /site:supermicro\.com\/en\/pressreleases.*Supermicro Simplifies Edge AI Deployments/iu.test(query.query))) {
-    throw new Error(`AI hardware path omitted the official-source product-launch query: ${JSON.stringify(selectedHardware)}`);
-  }
-  if (selectedHardware.length !== 4) {
-    throw new Error(`AI hardware path did not use the configured query slots after preserving theme diversity: ${JSON.stringify(selectedHardware)}`);
-  }
-  const hardwareRecencyHint = queryRecencyHintForPath(pathConfigById("ai_hardware_original"));
+  const hardwareRecencyHint = queryRecencyHintForPath(pathConfigById("hardware_product_specs"));
   if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(hardwareRecencyHint)) {
     throw new Error(`AI hardware path omitted the production-month recency hint: ${hardwareRecencyHint}`);
   }
-  const selectedFde = selectQueriesForPath(queries, pathConfigById("fde_implementation"));
+  const selectedFde = selectQueriesForPath(queries, pathConfigById("fde_customer_case"));
   if (!selectedFde.some((query) => query.query_theme === "enterprise-ai-implementation-signal")) {
     throw new Error(`FDE path omitted its dedicated implementation query: ${JSON.stringify(selectedFde)}`);
   }

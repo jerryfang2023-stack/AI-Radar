@@ -1077,10 +1077,47 @@ test("generated bundle passes the V4 integrity gate", () => {
     tag_assertions: bundle.tag_assertions,
     facet_assertions: bundle.facet_assertions,
     fde_records: bundle.fde_records,
+    fde_observations: bundle.fde_observations,
     hardware_records: bundle.hardware_records,
+    hardware_facts: bundle.hardware_facts,
+    hardware_snapshots: bundle.hardware_snapshots,
+    monitoring_funnel: bundle.monitoring_funnel,
     qa_queue: bundle.qa_queue
   }, taxonomy);
   assert.deepEqual(result.failures, []);
+});
+
+test("Claim-native FDE observations aggregate implementation facts without using the event as the admission key", () => {
+  const bundle = buildBundle([
+    entry(
+      "fde-observation",
+      "Hospital deploys Acme AI workflow",
+      "Hospital deployed Acme AI workflow in production. The system integrated with the hospital workflow and reduced review time by 20%."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.fde_observations.length, 1);
+  assert.ok(bundle.fde_observations[0].claim_refs.every((id) => bundle.claims.some((claim) => claim.claim_id === id)));
+  assert.ok(bundle.fde_observations[0].source_refs.length > 0);
+  assert.ok(bundle.fde_observations[0].implementation_key);
+  assert.equal(bundle.fde_observations[0].completeness.total_fields, 8);
+});
+
+test("hardware Claims produce facts, dated snapshots, and monitored funnel rows", () => {
+  const bundle = buildBundle([
+    entry(
+      "hardware-fact",
+      "Acme launches AI accelerator server",
+      "Acme launched an AI accelerator server delivering 160 TOPS for enterprise customers. The server ships in July."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.ok(bundle.hardware_facts.length > 0);
+  assert.ok(bundle.hardware_facts.every((fact) => bundle.claims.some((claim) => claim.claim_id === fact.claim_ref && claim.source_quote === fact.source_quote)));
+  assert.ok(bundle.hardware_snapshots.length > 0);
+  assert.ok(bundle.hardware_snapshots.every((snapshot) => snapshot.as_of === date && snapshot.fact_refs.length > 0));
+  assert.deepEqual(bundle.monitoring_funnel.map((item) => item.lens).sort(), ["fde", "hardware"]);
+  assert.ok(bundle.monitoring_funnel.every((item) => Object.values(item.rates).every((value) => value >= 0 && value <= 1)));
 });
 
 test("SourceArtifact always retains the ingested Raw JSON as a snapshot", (t) => {
