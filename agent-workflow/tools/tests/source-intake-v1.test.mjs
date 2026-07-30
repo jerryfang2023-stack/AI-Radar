@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import {
   buildSourceIntake,
+  hasActiveHistoricalDuplicate,
   loadSourceIntakeEntries,
   readSourceIntake,
   SOURCE_INTAKE_VERSION,
@@ -72,6 +73,17 @@ test("SOURCE-INTAKE-V1 rejects body references outside the repository", () => {
     raw_documents: [{ raw_id: "RAW-1", body_ref: path.join(outside, "source.json") }],
   });
   assert.throws(() => loadSourceIntakeEntries(root, date), /does not resolve inside the repository/u);
+});
+
+test("historical duplicate gate ignores provider hits already merged before Raw selection", () => {
+  assert.equal(hasActiveHistoricalDuplicate({
+    duplicate_status: "merged_provider_duplicates",
+    duplicate_of: "merged 3 duplicate provider hit(s) before Raw selection",
+  }), false);
+  assert.equal(hasActiveHistoricalDuplicate({
+    duplicate_status: "duplicate",
+    duplicate_of: "01-SiteV2/content/01-raw/originals/2026-07-29/source.json",
+  }), true);
 });
 
 test("source snapshots are reused immutably and content changes get a stable versioned path", () => {
