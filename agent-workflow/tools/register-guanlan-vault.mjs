@@ -8,6 +8,12 @@ import { resolveGuanlanVaultRoot } from "./guanlan-vault-paths.mjs";
 const root = process.cwd();
 const vaultRoot = resolveGuanlanVaultRoot(root);
 const appData = String(process.env.APPDATA || "").trim();
+const explicitlyRetiredVaultRoots = process.argv
+  .slice(2)
+  .filter((argument) => argument.startsWith("--retire-vault="))
+  .map((argument) => argument.slice("--retire-vault=".length).trim())
+  .filter(Boolean)
+  .map((value) => path.resolve(value));
 
 if (!appData) {
   throw new Error("APPDATA is unavailable; cannot locate the Obsidian desktop registry.");
@@ -19,17 +25,17 @@ const registry = fs.existsSync(registryPath)
   : { vaults: {} };
 
 registry.vaults ||= {};
-const oldVaultRoot = path.resolve(root, "vault");
-const oldAiHotspotRoot = path.dirname(path.resolve(root));
+const retiredVaultRoots = new Set([
+  path.resolve(root),
+  path.resolve(root, "vault"),
+  ...explicitlyRetiredVaultRoots,
+].map((value) => value.toLowerCase()));
 let retired = 0;
 let vaultId = "";
 
 for (const [id, entry] of Object.entries(registry.vaults)) {
   const candidate = path.resolve(String(entry?.path || ""));
-  if (
-    candidate.toLowerCase() === oldVaultRoot.toLowerCase()
-    || candidate.toLowerCase() === oldAiHotspotRoot.toLowerCase()
-  ) {
+  if (retiredVaultRoots.has(candidate.toLowerCase())) {
     delete registry.vaults[id];
     retired += 1;
   }
@@ -55,5 +61,5 @@ console.log(JSON.stringify({
   ok: true,
   vaultId,
   vaultName: path.basename(vaultRoot),
-  retiredOldKnowledgeVaultEntries: retired,
+  retiredVaultEntries: retired,
 }, null, 2));

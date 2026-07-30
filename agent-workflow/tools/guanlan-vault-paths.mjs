@@ -67,9 +67,9 @@ export function resolveGuanlanVaultRoot(root, options = {}) {
   }
 
   const resolved = path.resolve(configured);
-  const oldAiHotspotRoot = path.dirname(path.resolve(root));
-  if (isInside(oldAiHotspotRoot, resolved)) {
-    throw new Error(`Guanlan Vault must be outside the original AI热点 tree: ${resolved}`);
+  const repositoryRoot = path.resolve(root);
+  if (isInside(repositoryRoot, resolved) || isInside(resolved, repositoryRoot)) {
+    throw new Error(`Guanlan Vault and the WaveSight repository must be physically independent: ${resolved}`);
   }
   return resolved;
 }

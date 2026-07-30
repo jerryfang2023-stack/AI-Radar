@@ -9,9 +9,9 @@ scope: vault-migration-v4-runtime-deployment
 
 ## Outcome
 
-- The active Obsidian knowledge base is the external `观澜AI` Vault, outside the original `AI热点` tree.
+- The active Obsidian knowledge base is the external `观澜AI` Vault, physically independent from the WaveSight engineering repository.
 - The old repository-local `vault/` is absent.
-- The parent `AI热点` Obsidian knowledge folders and client registration are removed; only the active Git repository remains in that parent directory.
+- The WaveSight engineering repository has moved to `Fang/repos/WaveSight`; the retired parent `AI热点` directory is removed.
 - Obsidian Desktop registers the new Guanlan AI Vault and no longer registers `AI热点` or the removed repository Vault.
 - GitHub Actions and site builds no longer read or write a machine-local Vault.
 - Accepted weekly and monthly Markdown is repository-owned under `01-SiteV2/content/12-applications/industry-reports/`.
