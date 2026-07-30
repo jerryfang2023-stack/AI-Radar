@@ -7,19 +7,26 @@ import {
   sourceTitleNeedsChineseTranslation,
   titleTranslationLooksUsable,
 } from "./source-title-translation-generator.mjs";
-import { sourceSnapshotRefsByRawId } from "./lib/source-snapshot-ref-v1.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
+const sourceIndexFile = path.join(root, "01-SiteV2", "content", "01-raw", "source-index.jsonl");
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
 }
 
-const rawPathById = new Map();
+const rawById = new Map();
 const rawBySourceArtifact = new Map();
+const locatorsByContentHash = new Map();
 const eventTargetRawIds = new Set();
 const eventChecks = [];
+for (const line of fs.readFileSync(sourceIndexFile, "utf8").split(/\r?\n/u).filter(Boolean)) {
+  const locator = JSON.parse(line);
+  const contentHash = String(locator.content_hash || "").trim().toLowerCase();
+  if (!locatorsByContentHash.has(contentHash)) locatorsByContentHash.set(contentHash, []);
+  locatorsByContentHash.get(contentHash).push(locator);
+}
 const dates = fs.readdirSync(bundleRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
   .map((entry) => entry.name)
@@ -28,14 +35,13 @@ const dates = fs.readdirSync(bundleRoot, { withFileTypes: true })
 for (const date of dates) {
   const dir = path.join(bundleRoot, date);
   const raws = readJson(path.join(dir, "raw-documents.json"));
-  const sourceArtifacts = readJson(path.join(dir, "source-artifacts.json"));
   const events = readJson(path.join(dir, "canonical-events.json"));
   const dateRawByArtifact = new Map();
   for (const raw of raws) {
+    rawById.set(raw.raw_id, raw);
     rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
     dateRawByArtifact.set(raw.source_artifact_id, raw);
   }
-  for (const [rawId, snapshotRef] of sourceSnapshotRefsByRawId(sourceArtifacts, raws)) rawPathById.set(rawId, snapshotRef);
   for (const event of events) {
     const sources = (event.source_refs || []).map((ref) => dateRawByArtifact.get(ref)).filter(Boolean);
     for (const ref of event.source_refs || []) {
@@ -51,20 +57,30 @@ const targetRawIds = new Set(eventTargetRawIds);
 
 const violations = [];
 for (const rawId of targetRawIds) {
-  const relativePath = rawPathById.get(rawId);
-  if (!relativePath || !fs.existsSync(path.join(root, relativePath))) {
-    violations.push({ type: "raw_path_missing", raw_id: rawId, path: relativePath || "" });
+  const raw = rawById.get(rawId);
+  if (!raw) {
+    violations.push({ type: "raw_document_missing", raw_id: rawId });
     continue;
   }
-  const raw = readJson(path.join(root, relativePath));
   const original = String(raw.title || raw.title_original || "").trim();
   const chinese = String(raw.title_zh || "").trim();
-  const method = String(raw.title_translation_method || "").trim();
+  const rawUrl = String(raw.canonical_url || raw.source_url || "").replace(/\/+$/u, "");
+  const locatorCandidates = locatorsByContentHash.get(String(raw.content_hash || "").toLowerCase()) || [];
+  const locator = locatorCandidates.find((entry) => (
+    String(entry.source_url || "").replace(/\/+$/u, "") === rawUrl
+  )) || locatorCandidates.find((entry) => entry.title_translation_method) || locatorCandidates[0] || {};
+  const method = String(raw.title_translation_method || locator.title_translation_method || "").trim();
   const translationLooksUsable = ["manual_reviewed_source_title_translation", "source_title_translation_db"].includes(method)
     ? titleTranslationLooksUsable(original, chinese)
     : generatedTitleTranslationLooksUsable(original, chinese);
   if (sourceTitleNeedsChineseTranslation(original) && !translationLooksUsable) {
-    violations.push({ type: "raw_title_invalid", raw_id: rawId, path: relativePath, original, title_zh: chinese });
+    violations.push({
+      type: "raw_title_invalid",
+      raw_id: rawId,
+      evidence_ref: raw.body_ref || "",
+      original,
+      title_zh: chinese,
+    });
   }
 }
 

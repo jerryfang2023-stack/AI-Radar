@@ -320,6 +320,10 @@ function supplementalClaimEntities(claimsById) {
     /Google Cloud/iu,
     /\b(?:launch(?:es|ed|ing)?|announc(?:e|ed|es)|partnership|collaboration)\b/iu
   ]).slice(0, 6);
+  const homeDepotClaimRefs = matchingClaimRefs(claimsById, [
+    /\b(?:The )?Home Depot\b/iu,
+    /\b(?:launch(?:es|ed|ing)?|deploy(?:s|ed|ing)?|announc(?:e|ed|es)|invest(?:s|ed|ing)?)\b/iu
+  ]).slice(0, 6);
   const rows = [
     {
       entity_id: "EN-ade7ba309eb7a3bf",
@@ -343,6 +347,14 @@ function supplementalClaimEntities(claimsById) {
       company_names: [],
       claim_refs: googleCloudClaimRefs,
       rationale: "accepted Claims 精确写明 Google Cloud 是商业合作与产品发布主体，补齐当前批次产生的机构候选复核。"
+    },
+    {
+      entity_id: "EN-1bf93b12e68cac56",
+      name: "The Home Depot",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: homeDepotClaimRefs,
+      rationale: "多条 accepted Claims 明确将 The Home Depot 作为部署、产品发布与投资行为主体，确认其为公司实体。"
     },
     {
       entity_id: "EN-50ba7ff15827787b",

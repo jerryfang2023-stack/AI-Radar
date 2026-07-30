@@ -1,7 +1,7 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-07-27T06:22:00.000Z",
-  "reviewer": "codex-global-audit-repair",
+  "generated_at": "2026-07-30T11:45:00.000Z",
+  "reviewer": "codex-current-entity-review",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
     "agent-workflow/reports/entity-catalog-secondary-search.json",
@@ -9,11 +9,11 @@
   ],
   "summary": {
     "current_catalog_reviewed": 534,
-    "supplemental_claim_entities": 8,
+    "supplemental_claim_entities": 9,
     "historical_decisions_retained": 342,
-    "reviewed": 877,
+    "reviewed": 878,
     "confirmed": 364,
-    "corrected": 170,
+    "corrected": 171,
     "merged": 107,
     "quarantined": 236
   },
@@ -2847,6 +2847,41 @@
       ]
     },
     {
+      "entity_id": "EN-1706429cbf67f1c9",
+      "current": {
+        "name": "European Union",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "European Union",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "欧盟"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-62975bc1cadbad52",
+          "CL-f6c8e024716e721d",
+          "CL-079815561bc2cfe5",
+          "CL-d9f6efe2ccf4020b"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_claim_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "标题与 exact Claims 明确记录欧盟《人工智能法案》第 50 条 AI 透明度准则生效及其对聊天机器人和 AI 生成内容的要求，支持 European Union 作为政策监管事件的组织主体；欧盟为其中文别名。",
+      "review_status": "accepted",
+      "reviewer": "codex-ci-deploy-repair",
+      "reviewed_at": "2026-07-27T06:22:00.000Z",
+      "error_patterns": []
+    },
+    {
       "entity_id": "EN-3d59f7548e1af215",
       "current": {
         "name": "Facebook",
@@ -5576,6 +5611,42 @@
       "reviewer": "codex-global-audit-repair",
       "reviewed_at": "2026-07-26T16:23:11.511Z",
       "error_patterns": []
+    },
+    {
+      "entity_id": "EN-1bf93b12e68cac56",
+      "current": {
+        "name": "The Home Depot",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "The Home Depot",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-1fa4ef0f27151433",
+          "CL-30494164288ccb46",
+          "CL-6ffa953da2d8fbdc",
+          "CL-73fd50d47efc06c2",
+          "CL-7a420af6eefcd3e0",
+          "CL-9e426a27544ca591"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_claim_backfill",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "多条 accepted Claims 明确将 The Home Depot 作为部署、产品发布与投资行为主体，确认其为公司实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-30T11:45:00.000Z",
+      "error_patterns": [
+        "legacy_correction_retained"
+      ]
     },
     {
       "entity_id": "EN-8f71c4871a160172",
@@ -29618,41 +29689,6 @@
       "review_status": "accepted",
       "reviewer": "codex-global-audit-repair",
       "reviewed_at": "2026-07-26T16:23:11.511Z",
-      "error_patterns": []
-    },
-    {
-      "entity_id": "EN-1706429cbf67f1c9",
-      "current": {
-        "name": "European Union",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "confirm",
-      "merge_into_entity_id": "",
-      "canonical": {
-        "name": "European Union",
-        "catalog_type": "company",
-        "company_names": [],
-        "aliases": [
-          "欧盟"
-        ]
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-62975bc1cadbad52",
-          "CL-f6c8e024716e721d",
-          "CL-079815561bc2cfe5",
-          "CL-d9f6efe2ccf4020b"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "codex_explicit_claim_review",
-      "advisory_decision": "explicit_review",
-      "confidence": 1,
-      "rationale": "标题与 exact Claims 明确记录欧盟《人工智能法案》第 50 条 AI 透明度准则生效及其对聊天机器人和 AI 生成内容的要求，支持 European Union 作为政策监管事件的组织主体；欧盟为其中文别名。",
-      "review_status": "accepted",
-      "reviewer": "codex-ci-deploy-repair",
-      "reviewed_at": "2026-07-27T06:22:00.000Z",
       "error_patterns": []
     }
   ]

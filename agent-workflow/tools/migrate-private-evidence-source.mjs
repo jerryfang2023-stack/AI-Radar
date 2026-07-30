@@ -50,6 +50,9 @@ function publicIndex(store) {
       data_date: entry.data_date,
       title_original: String(metadata.title || metadata.title_zh || "").trim(),
       title_zh: String(metadata.title_zh || "").trim(),
+      title_translation_status: String(metadata.title_translation_status || "").trim(),
+      title_translation_method: String(metadata.title_translation_method || "").trim(),
+      title_translation_model: String(metadata.title_translation_model || "").trim(),
       source_url: String(
         metadata.canonical_url
         || metadata.original_url

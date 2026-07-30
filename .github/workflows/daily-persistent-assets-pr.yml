@@ -42,7 +42,7 @@ jobs:
       DEEPSEEK_PRO_MODEL: deepseek-v4-pro
       FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
       FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
-      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ runner.temp }}/WaveSight-private-evidence
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ github.workspace }}/../WaveSight-private-evidence
 
     steps:
       - name: Check out repository
