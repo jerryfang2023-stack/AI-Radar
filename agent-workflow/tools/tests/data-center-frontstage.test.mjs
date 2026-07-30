@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
@@ -76,6 +77,21 @@ test("person index publishes exactly the reviewed founder batch with funding and
     evidence.sourceUrl && evidence.sourceContentHash && evidence.quoteHash
   )));
   assert.ok(fundingFounders.every((person) => person.relationIds.length === 0 || person.eventIds.length > 0));
+});
+
+test("entity catalog deployment gate accepts the composite reviewed-person service", () => {
+  const result = spawnSync(process.execPath, [
+    path.join(root, "agent-workflow/tools/assert-entity-catalog-review.mjs")
+  ], {
+    cwd: root,
+    encoding: "utf8",
+    windowsHide: true
+  });
+
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  const output = JSON.parse(result.stdout);
+  assert.equal(output.public_natural_people, 61);
+  assert.equal(output.funding_founder_profiles, 30);
 });
 
 test("current commercial event titles are complete and evidence-specific", () => {

@@ -3,10 +3,15 @@ import fs from "node:fs";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import { ENTITY_REVIEW_ERROR_PATTERNS } from "../product/entity-review-error-patterns.mjs";
+import {
+  assertFundingFounderReview,
+  FOUNDER_REVIEW_SCHEMA_VERSION
+} from "./build-funding-founder-review.mjs";
 
 const root = process.cwd();
 const ledgerPath = path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json");
 const personLedgerPath = path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json");
+const fundingFounderLedgerPath = path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json");
 const currentAuditPath = path.join(root, "agent-workflow/reports/entity-catalog-deepseek-audit-current.json");
 const claimsPath = path.join(root, "data-lake/tables/claims.jsonl");
 const entitiesPath = path.join(root, "data-lake/tables/entities.jsonl");
@@ -38,11 +43,13 @@ function fail(problems) {
 function main() {
   const ledger = readJson(ledgerPath);
   const personLedger = readJson(personLedgerPath);
+  const fundingFounderLedger = readJson(fundingFounderLedgerPath);
   const currentAudit = readJson(currentAuditPath);
   const claimIds = new Set(readJsonl(claimsPath).map((claim) => claim.claim_id));
   const entityIds = new Set(readJsonl(entitiesPath).map((entity) => entity.entity_id));
   const decisions = ledger.decisions || [];
   const personDecisions = personLedger.decisions || [];
+  const fundingFounderDecisions = fundingFounderLedger.decisions || [];
   const problems = [];
   const allowedActions = new Set(["confirm", "correct", "merge", "quarantine"]);
   const allowedTypes = new Set(["company", "product", "person", "other"]);
@@ -57,6 +64,8 @@ function main() {
   if (personLedger.schema_version !== "ENTITY-PERSON-ACCOUNT-REVIEW-V1") problems.push("person review schema_version must be ENTITY-PERSON-ACCOUNT-REVIEW-V1");
   if (personLedger.summary?.candidates !== 37 || personLedger.summary?.inherited_catalog_decisions !== 3) problems.push("person review must cover 37 candidates with 3 inherited catalog decisions");
   if (personDecisions.length !== 34 || personDecisionIds.size !== 34) problems.push("person review ledger must contain 34 unique new decisions");
+  if (fundingFounderLedger.schema_version !== FOUNDER_REVIEW_SCHEMA_VERSION) problems.push(`funding founder review schema_version must be ${FOUNDER_REVIEW_SCHEMA_VERSION}`);
+  for (const problem of assertFundingFounderReview(fundingFounderLedger)) problems.push(`funding founder review ${problem}`);
   for (const entityId of currentAuditIds) if (!decisionIds.has(entityId)) problems.push(`missing current-catalog decision: ${entityId}`);
   const byId = new Map(decisions.map((decision) => [decision.entity_id, decision]));
   for (const decision of decisions) {
@@ -97,6 +106,10 @@ function main() {
   const allPersonDecisions = [...inheritedPersonDecisions, ...personDecisions];
   if (allPersonDecisions.length !== 37 || new Set(allPersonDecisions.map((decision) => decision.entity_id)).size !== 37) problems.push("combined person review coverage must be 37/37");
   if (allPersonDecisions.filter((decision) => decision.action === "quarantine").length !== 6) problems.push("person review must quarantine 6 non-natural accounts");
+  const allReviewedPersonDecisions = [...allPersonDecisions, ...fundingFounderDecisions];
+  if (new Set(allReviewedPersonDecisions.map((decision) => decision.entity_id)).size !== allReviewedPersonDecisions.length) {
+    problems.push("composite person review contains duplicate entity ids");
+  }
   const summaryCount = ["confirm", "correct", "merge", "quarantine"].reduce((sum, action) => sum + decisions.filter((item) => item.action === action).length, 0);
   if (summaryCount !== decisions.length) problems.push(`action totals do not close to ${decisions.length}`);
   if (fs.existsSync(frontstagePath)) {
@@ -172,9 +185,14 @@ function main() {
       if (!product || !company || !(product.companyIds || []).includes(company.id)) problems.push(`required ownership missing: ${productName}:${companyName}`);
     }
     if (!peopleByName.has("Clive Chan") || productsByName.has("Clive Chan")) problems.push("Clive Chan type correction missing");
-    const combinedPersonById = new Map(allPersonDecisions.map((decision) => [decision.entity_id, decision]));
+    const combinedPersonById = new Map(allReviewedPersonDecisions.map((decision) => [decision.entity_id, decision]));
+    const expectedPublicPeople = allReviewedPersonDecisions.filter((decision) =>
+      ["confirm", "correct"].includes(decision.action) && decision.canonical?.catalog_type === "person"
+    );
     const publicPeople = frontstage.people || [];
-    if (publicPeople.length !== 31) problems.push(`public natural-person count must be 31, found ${publicPeople.length}`);
+    if (publicPeople.length !== expectedPublicPeople.length) {
+      problems.push(`public natural-person count must be ${expectedPublicPeople.length}, found ${publicPeople.length}`);
+    }
     for (const person of publicPeople) {
       const decision = combinedPersonById.get(person.id);
       if (!decision || !["confirm", "correct"].includes(decision.action) || decision.canonical?.catalog_type !== "person") problems.push(`public person lacks accepted natural-person review: ${person.id}`);
@@ -184,6 +202,13 @@ function main() {
       const profile = profilesById.get(decision.entity_id);
       if (decision.action === "quarantine" && profile) problems.push(`non-natural account remains in entity projection: ${decision.entity_id}`);
       if (["confirm", "correct"].includes(decision.action) && !profile) problems.push(`reviewed natural person missing from entity projection: ${decision.entity_id}`);
+    }
+    for (const decision of fundingFounderDecisions) {
+      const profile = profilesById.get(decision.entity_id);
+      if (!profile) problems.push(`reviewed funding founder missing from entity projection: ${decision.entity_id}`);
+      else if (!(profile.fundingInsightIds || []).length || !(profile.founderEvidence || []).length) {
+        problems.push(`reviewed funding founder lacks funding lineage: ${decision.entity_id}`);
+      }
     }
     const forbiddenAccountNames = ["Ben's Bites AI Newsletter", "Claude", "Dataiku Blog", "Google Labs", "Tigera Blog (Calico / AI Security)", "TLDR AI Newsletter"];
     for (const name of forbiddenAccountNames) if (peopleByName.has(name)) problems.push(`non-natural account remains public: ${name}`);
@@ -202,9 +227,12 @@ function main() {
   fail(problems);
   console.log(JSON.stringify({
     ok: true,
-    reviewed: decisions.length + personDecisions.length,
+    reviewed: decisions.length + personDecisions.length + fundingFounderDecisions.length,
     person_candidates_reviewed: 37,
-    public_natural_people: 31,
+    public_natural_people: allReviewedPersonDecisions.filter((decision) =>
+      ["confirm", "correct"].includes(decision.action) && decision.canonical?.catalog_type === "person"
+    ).length,
+    funding_founder_profiles: fundingFounderDecisions.length,
     actions: Object.fromEntries(["confirm", "correct", "merge", "quarantine"].map((action) => [action, decisions.filter((item) => item.action === action).length])),
     person_actions: Object.fromEntries(["confirm", "correct", "quarantine"].map((action) => [action, personDecisions.filter((item) => item.action === action).length])),
     claim_refs: new Set(decisions.flatMap((decision) => decision.evidence?.claim_refs || [])).size,
