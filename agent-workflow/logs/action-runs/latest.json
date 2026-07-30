@@ -1,28 +1,27 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T02:36:01.037Z",
+  "generated_at": "2026-07-30T02:56:02.483Z",
   "date": "2026-07-30",
-  "action": "Repair Data Center duplicate-state gate",
+  "action": "Repair Data Center pre-commit contract checks",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Distinguish merged provider duplicates from active historical duplicates so valid SOURCE-INTAKE-V1 batches can proceed",
+  "summary": "Validate the canonical manifest and COLLECTION-TELEMETRY-V1.0 at their current schema locations",
   "contexts": [],
   "changed_files": [],
   "outputs": [],
   "checks": [
-    "source-intake-v1 test; exact post-monitor gate against run 30505143823 artifact"
+    "test:data-center 148 passed; exact pre-commit replay against run 30508987152 artifact passed"
   ],
   "issues": [
-    "2026-07-30 production blocked after intake despite 32 records already marked merged_provider_duplicates"
+    "2026-07-30 production built 31 accepted events and all application projections but pre-commit checked obsolete manifest.status and telemetry.schema_version fields"
   ],
   "risks": [
-    "True duplicate_status=duplicate remains release-blocking"
+    "Stale dates and failed V4 telemetry gates remain release-blocking"
   ],
   "lessons": [
-    "Gate duplicate semantics by explicit status",
-    "not by explanatory duplicate_of text"
+    "Release gates must read versioned contract fields rather than deprecated top-level status aliases"
   ],
   "reusable_rules": [],
   "retired_flags": [],
