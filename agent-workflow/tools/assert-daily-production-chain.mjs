@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import {
+  isCollectionTelemetryReady,
+  isV4ManifestReady,
+} from "./lib/daily-production-chain-state.mjs";
 import { hasActiveHistoricalDuplicate, readSourceIntake } from "./lib/source-intake-v1.mjs";
 
 const root = process.cwd();
@@ -79,6 +83,8 @@ const gateText = read(qualityGate);
 const finalQcText = read(finalQc);
 const manifest = readJson(manifestFile, {});
 const telemetry = readJson(telemetryFile, {});
+const manifestReady = isV4ManifestReady(manifest, date);
+const telemetryReady = isCollectionTelemetryReady(telemetry, date);
 const rawDocuments = intake?.payload?.raw_documents || [];
 const rawCount = rawDocuments.length;
 const poolCount = rawDocuments.filter((item) => item.intake_diagnostics?.pooled).length;
@@ -124,8 +130,8 @@ if (loggedPoolCount !== null && loggedPoolCount !== poolCount) problems.push(`lo
 if (activeDuplicateCount) problems.push(`structured intake contains ${activeDuplicateCount} active historical duplicate marker(s)`);
 if (gateText && qualityStatus && qualityStatus !== "passed") problems.push(`monitor quality gate status is ${qualityStatus}`);
 if (stage !== "post-monitor" && finalQcText && /^block/u.test(finalQcDecision)) problems.push(`final monitor QC decision is ${finalQcDecision}`);
-if (stage === "pre-commit" && manifest?.status !== "passed") problems.push(`V4 manifest status is ${manifest?.status || "missing"}`);
-if (stage === "pre-commit" && telemetry?.schema_version !== "COLLECTION-TELEMETRY-V1.0") problems.push("collection telemetry is missing or invalid");
+if (stage === "pre-commit" && !manifestReady) problems.push("V4 manifest is missing, stale, or invalid");
+if (stage === "pre-commit" && !telemetryReady) problems.push("collection telemetry is missing, stale, or invalid");
 if (blockedStaleGroups.length) problems.push(`downstream assets are stale: ${blockedStaleGroups.map((group) => group.name).join(", ")}`);
 
 fs.mkdirSync(reportsDir, { recursive: true });
@@ -144,8 +150,8 @@ const report = [
   `- logged_pool_count: ${loggedPoolCount ?? "missing"}`,
   `- active_historical_duplicate_count: ${activeDuplicateCount}`,
   `- monitor_quality_gate_status: ${qualityStatus || "missing"}`,
-  `- v4_manifest_status: ${manifest?.status || "not_required"}`,
-  `- collection_telemetry_status: ${telemetry?.schema_version === "COLLECTION-TELEMETRY-V1.0" ? "ready" : "not_required"}`,
+  `- v4_manifest_status: ${manifestReady ? "ready" : "not_ready"}`,
+  `- collection_telemetry_status: ${telemetryReady ? "ready" : "not_ready"}`,
   `- downstream_assets_stale: ${staleGroups.length ? "true" : "false"}`,
   `- block_stale: ${blockStale ? "true" : "false"}`,
   "",
@@ -173,7 +179,8 @@ console.log(JSON.stringify({
   logged_pool_count: loggedPoolCount,
   active_historical_duplicate_count: activeDuplicateCount,
   monitor_quality_gate_status: qualityStatus || null,
-  v4_manifest_status: manifest?.status || null,
+  v4_manifest_status: manifestReady ? "ready" : null,
+  collection_telemetry_status: telemetryReady ? "ready" : null,
   downstream_assets_stale: staleGroups.length > 0,
   stale_groups: staleGroups.map((group) => group.name),
   blocked_stale_groups: blockedStaleGroups.map((group) => group.name),
