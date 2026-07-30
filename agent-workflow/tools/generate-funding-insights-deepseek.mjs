@@ -544,7 +544,7 @@ function buildCard(event, company, payload, sources, result, resolver) {
 }
 
 async function processEvent(bundle, event, entityIndex) {
-  const company = subjectCompanyForEvent(event, bundle.entities, entityIndex);
+  const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims);
   if (!company) return { event_id: event.event_id, status: "blocked", problems: ["subject_company_unresolved"] };
   const research = await researchSources(bundle, event, company);
   if (research.sources.length < 2) {

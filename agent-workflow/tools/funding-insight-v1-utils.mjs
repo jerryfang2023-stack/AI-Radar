@@ -141,11 +141,19 @@ function subjectCandidate(entity, index, eventText) {
   };
 }
 
-export function subjectCompanyForEvent(event, entities, entityIndex = {}) {
+export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims = []) {
   const byId = new Map(entities.map((entity) => [entity.entity_id, entity]));
+  const claimById = new Map(claims.map((claim) => [claim.claim_id, claim]));
+  const eventClaims = (event.claim_refs || []).map((id) => claimById.get(id)).filter(Boolean);
+  const eventParts = [
+    event.display_title_zh,
+    event.action,
+    event.object,
+    ...eventClaims.flatMap((claim) => [claim.subject, claim.source_quote]),
+  ].filter(Boolean);
   const eventText = {
-    raw: clean([event.display_title_zh, event.action, event.object].filter(Boolean).join(" | ")),
-    normalized: normalizedName([event.display_title_zh, event.action, event.object].filter(Boolean).join(" ")),
+    raw: clean(eventParts.join(" | ")),
+    normalized: normalizedName(eventParts.join(" ")),
   };
   const rejectedNames = new Set(["new", "weve", "whywe", "backedbyanthropic"]);
   const daily = (event.entities || [])

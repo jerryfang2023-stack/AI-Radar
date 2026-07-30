@@ -131,3 +131,25 @@ test("融资透视 Obsidian 同步只清理自身生成的过期笔记", () => {
     fs.rmSync(root, { recursive: true, force: true });
   }
 });
+
+test("融资透视 Obsidian 链接不受父目录 .obsidian 配置影响", () => {
+  const parent = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-parent-vault-"));
+  const root = path.join(parent, "01-WaveSight");
+  try {
+    fs.mkdirSync(path.join(parent, ".obsidian"));
+    fs.mkdirSync(root);
+    const input = path.join(root, "funding-insights-v1.json");
+    const output = path.join(root, "knowledge", "04-Funding-Insights");
+    fs.writeFileSync(input, JSON.stringify({
+      meta: { generated_at: "2026-07-27T00:00:00.000Z" },
+      cards: [card({ id: "FI-1", eventId: "EV-1", date: "2026-07-27", company: "Acme" })],
+    }));
+
+    syncFundingInsightsToObsidian({ root, input, output });
+    const index = fs.readFileSync(path.join(output, "Funding Insights Index.md"), "utf8");
+    assert.match(index, /\[\[knowledge\/04-Funding-Insights\/cards\/2026-07\/2026-07\|2026-07\]\]/u);
+    assert.doesNotMatch(index, /\[\[01-WaveSight\//u);
+  } finally {
+    fs.rmSync(parent, { recursive: true, force: true });
+  }
+});

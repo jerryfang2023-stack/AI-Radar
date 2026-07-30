@@ -266,6 +266,29 @@ test("融资主体可按事件标题精确链接稳定公司实体", () => {
   assert.equal(subjectCompanyForEvent(event, [], entityIndex)?.entity_id, "EN-RUNLAYER");
 });
 
+test("融资主体可从事件 Claim 证据解析，避免在二次搜索前误阻塞", () => {
+  const entities = [{
+    entity_id: "EN-P1",
+    entity_type: "organization_candidate",
+    canonical_name: "P-1 AI, Inc.",
+  }];
+  const claims = [{
+    claim_id: "CL-P1",
+    subject: "P-1 AI, Inc.",
+    source_quote: "P-1 AI, Inc. announced the initial closing of its $50 million Series A financing round.",
+  }];
+  const event = {
+    display_title_zh: "智能体 AI 能否让美国制造业回归？",
+    action: "funding",
+    object: "$50 million Series A financing round",
+    metrics: ["$50 million"],
+    entities: ["EN-P1"],
+    claim_refs: ["CL-P1"],
+  };
+
+  assert.equal(subjectCompanyForEvent(event, entities, {}, claims)?.entity_id, "EN-P1");
+});
+
 test("融资主体可从带英文描述前缀的规范实体名中恢复公司名", () => {
   const entities = [{
     entity_id: "EN-PATHWORK",

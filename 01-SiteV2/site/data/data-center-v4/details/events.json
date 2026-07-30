@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "generatedAt": "2026-07-30T03:53:16.459Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1731,
+    "eventCount": 1732,
     "quarantinedEventCount": 13
   },
   "events": [
@@ -71,7 +71,87 @@
       "sourceExcerpt": "New York-based AI detection startup Pangram is on a mission to combat the AI slop infestation spreading across the internet, and it just raised $9 million"
     },
     {
-      "id": "EV-8aa51e324eca8fc2",
+      "id": "EV-39b075c62ba4e927",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "智能体AI能否让美国制造业回归？",
+      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
+      "subject": "P-1 AI, Inc.",
+      "action": "funding",
+      "object": "$50 million Series A financing round",
+      "metrics": [
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-f9075cc99990820a"
+      ],
+      "entityNames": [
+        "P-1 AI, Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fd851e83627a98a0",
+          "subject": "P-1 AI, Inc.",
+          "object": "$50 million Series A financing round",
+          "quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a0add4bf85cb8a64",
+          "publisher": "tech.yahoo.com",
+          "url": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html"
+        }
+      ],
+      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
+      "publisher": "tech.yahoo.com",
+      "sourceExcerpt": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
+    },
+    {
+      "id": "EV-57cf8e14d6994c1b",
       "dataDate": "2026-07-30",
       "date": "2026-07-29",
       "updatedDate": "2026-07-30",
@@ -91,9 +171,7 @@
         "$30 million"
       ],
       "locations": [],
-      "missingFields": [
-        "entities"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [
         {
@@ -164,8 +242,12 @@
           "name": "企业用户"
         }
       ],
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-556c337c4f0b031e"
+      ],
+      "entityNames": [
+        "Encore AI"
+      ],
       "productName": "",
       "products": [],
       "claims": [
@@ -198,84 +280,6 @@
       "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
       "publisher": "TechCrunch：AI（RSS）",
       "sourceExcerpt": "Encore AI raises $30M to build AI agents that learn from customer calls"
-    },
-    {
-      "id": "EV-9f847fced6da7c4c",
-      "dataDate": "2026-07-30",
-      "date": "2026-07-29",
-      "updatedDate": "2026-07-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "智能体AI能否让美国制造业回归？",
-      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
-      "subject": "P-1 AI, Inc.",
-      "action": "funding",
-      "object": "$50 million Series A financing round",
-      "metrics": [
-        "$50 million"
-      ],
-      "locations": [],
-      "missingFields": [
-        "entities"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-fd851e83627a98a0",
-          "subject": "P-1 AI, Inc.",
-          "object": "$50 million Series A financing round",
-          "quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-a0add4bf85cb8a64",
-          "publisher": "tech.yahoo.com",
-          "url": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html"
-        }
-      ],
-      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-      "publisher": "tech.yahoo.com",
-      "sourceExcerpt": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
     },
     {
       "id": "EV-f1553722b4ce43af",
@@ -16075,6 +16079,116 @@
       "sourceUrl": "https://startuprise.org/fire-ai-secures-pre-seed-funding-from-venture-catalysts",
       "publisher": "startuprise.org",
       "sourceExcerpt": "# Fire AI Secures Pre-Seed Funding from Venture Catalysts. Jul 16, 2025 | By Yan li. Fire AI, a startup that helps businesses with automation and data analysis through conversation-based tools, has raised money in a pre-seed funding round. The round was led by Venture Catalysts and included support from key investors like Gaurav Khatri (Co-founder and CEO of Noise) and Amit Kumar Singh (former MD of Central Warehousing Corporation). Founded by Vipul Prakash, a former product and growth leader at Zomato, Delhivery, and BharatPe, Fire AI is building a unified platform that integrates descriptive, diagnostic, predictive, and prescriptive analytics to help businesses derive insights from data in…"
+    },
+    {
+      "id": "EV-8aa51e324eca8fc2",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-25",
+      "updatedDate": "2026-06-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元",
+      "originalTitle": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune",
+      "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+      "action": "raised",
+      "object": "$30 million | Fortune",
+      "metrics": [
+        "$30 million",
+        "$42 million",
+        "$11 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-608fabcffd3158a7",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "Exclusive: Vinod Khosla wanted ‘every available dollar’ of Runlayer’s funding round. It just raised $30 million to govern the agent workforce"
+        },
+        {
+          "id": "CL-5f698fc55c752013",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "Runlayer raised a $30 million Series A led by Felicis , with Khosla Ventures participating, Fortune learned exclusively. Felicis preempted the round which brought Runlayer’s total capital raised to $42 million."
+        },
+        {
+          "id": "CL-3a8f3cebc775c977",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "When longtime tech investor Vinod Khosla heard that Runlayer—the startup trying to become the default infrastructure layer governing how every corporate employee interacts with AI agents—was raising a new round, his response was unambiguous: he wanted “to buy every available dollar of the round.” Now, that conviction is official."
+        },
+        {
+          "id": "CL-d619f647981a0bf6",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "The startup, which launched out of stealth just seven months ago with an $11 million seed from the same two investors, is tackling one of enterprise tech’s most pressing problems. Companies are deploying AI agents everywhere, but no one has a reliable way to see what those agents are doing , control what they access, or stop them from going rogue. Last year, one of Runlayer’s customers discovered that an agent had blown through its entire annual AI-compute budget in a single weekend, running in a loop."
+        },
+        {
+          "id": "CL-e407c14141c8071b",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune ... # Exclusive: Vinod Khosla wanted ‘every available dollar’ of Runlayer’s funding round. It just raised $30 million to govern the agent workforce ... Andrew Berman, a three-time founder, previousl... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-54df3798734d572f",
+          "publisher": "fortune.com",
+          "url": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai"
+        },
+        {
+          "id": "SA-154b2b3c6c20227a",
+          "publisher": "fortune.com",
+          "url": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai"
+        }
+      ],
+      "sourceUrl": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai",
+      "publisher": "fortune.com",
+      "sourceExcerpt": "Exclusive: Vinod Khosla wanted ‘every available dollar’ of Runlayer’s funding round. It just raised $30 million to govern the agent workforce"
     },
     {
       "id": "EV-9fa9822969d3c3fd",
@@ -62019,12 +62133,10 @@
       "displayTags": [],
       "entityIds": [
         "EN-8652f6cd9088f1fa",
-        "EN-819101e7958d70f8",
         "EN-c04bd5ebd10ab696"
       ],
       "entityNames": [
         "Stellantis",
-        "Mistral AI Expand Their",
         "Mistral AI"
       ],
       "productName": "",
@@ -62539,6 +62651,7 @@
       "action": "发布",
       "object": "MIX-Q870A1 主板：AI 算力最高 36 TOPS，配双网口",
       "metrics": [
+        "36 TOPS",
         "6 Gb"
       ],
       "locations": [],
@@ -62970,6 +63083,7 @@
       "action": "推出 SEi13 AI / SEi14 AI 迷你主机：独立 NPU",
       "object": "最高 160TOPS，11895 元起",
       "metrics": [
+        "160TOPS",
         "1TB"
       ],
       "locations": [],

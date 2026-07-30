@@ -104,12 +104,6 @@
           "verification_status": "verified"
         },
         {
-          "entity_id": "EN-819101e7958d70f8",
-          "canonical_name": "Mistral AI Expand Their",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
           "entity_id": "EN-c04bd5ebd10ab696",
           "canonical_name": "Mistral AI",
           "entity_type": "organization_candidate",
@@ -218,8 +212,90 @@
       }
     },
     {
-      "id": "EV-8aa51e324eca8fc2",
-      "event_id": "EV-8aa51e324eca8fc2",
+      "id": "EV-39b075c62ba4e927",
+      "event_id": "EV-39b075c62ba4e927",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "智能体AI能否让美国制造业回归？",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-07-30",
+      "event_time": "2026-07-29T12:30:00.000Z",
+      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "P-1 AI, Inc.",
+      "sourceExcerpt": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-f9075cc99990820a",
+          "canonical_name": "P-1 AI, Inc.",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-fd851e83627a98a0"
+      ],
+      "source_refs": [
+        "SA-a0add4bf85cb8a64"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-fd851e83627a98a0",
+            "source_refs": [
+              "SA-a0add4bf85cb8a64"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-fd851e83627a98a0",
+            "source_refs": [
+              "SA-a0add4bf85cb8a64"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-fd851e83627a98a0",
+            "source_refs": [
+              "SA-a0add4bf85cb8a64"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-57cf8e14d6994c1b",
+      "event_id": "EV-57cf8e14d6994c1b",
       "event_type": "funding",
       "publication_status": "verified",
       "title": "Encore AI 获 3000 万美元 A 轮融资，用客户通话训练 AI 语音智能体",
@@ -229,9 +305,16 @@
       "event_time": "2026-07-29T00:00:00.000Z",
       "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
       "sourceName": "TechCrunch：AI（RSS）",
-      "subject": "TechCrunch：AI（RSS）",
+      "subject": "Encore AI",
       "sourceExcerpt": "Encore AI raises $30M to build AI agents that learn from customer calls",
-      "entity_refs": [],
+      "entity_refs": [
+        {
+          "entity_id": "EN-556c337c4f0b031e",
+          "canonical_name": "Encore AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
       "claim_refs": [
         "CL-66aa1fde77eced8c",
         "CL-0b5e0d88706f4ad7",
@@ -323,81 +406,6 @@
           "specific_task": [
             "customer_ticket_triage"
           ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-9f847fced6da7c4c",
-      "event_id": "EV-9f847fced6da7c4c",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "智能体AI能否让美国制造业回归？",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-07-30",
-      "event_time": "2026-07-29T12:30:00.000Z",
-      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "keyword search / Anysearch",
-      "sourceExcerpt": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round.",
-      "entity_refs": [],
-      "claim_refs": [
-        "CL-fd851e83627a98a0"
-      ],
-      "source_refs": [
-        "SA-a0add4bf85cb8a64"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "engineering_team",
-            "claim_ref": "CL-fd851e83627a98a0",
-            "source_refs": [
-              "SA-a0add4bf85cb8a64"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "engineering",
-            "claim_ref": "CL-fd851e83627a98a0",
-            "source_refs": [
-              "SA-a0add4bf85cb8a64"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-fd851e83627a98a0",
-            "source_refs": [
-              "SA-a0add4bf85cb8a64"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "engineering_team"
-          ],
-          "team_or_function": [
-            "engineering"
-          ],
-          "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],

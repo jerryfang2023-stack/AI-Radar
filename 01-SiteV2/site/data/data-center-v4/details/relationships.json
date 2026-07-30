@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "generatedAt": "2026-07-30T03:53:16.459Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1731,
+    "eventCount": 1732,
     "quarantinedEventCount": 13
   },
   "relationships": [
@@ -142,6 +142,76 @@
         "date": "2026-07-30",
         "dataDate": "2026-07-30",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-9c0ac2940324ff78",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c04bd5ebd10ab696",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-8652f6cd9088f1fa",
+      "object_type": "entity",
+      "event_id": "EV-c8f3db31cb266b64",
+      "claim_refs": [
+        "CL-c0efbf2fe9d9f1e2",
+        "CL-e93909cf86da757a",
+        "CL-e80bd9d99c74aec9",
+        "CL-baaed277998933ae"
+      ],
+      "source_refs": [
+        "SA-1b35ce83e38353eb"
+      ],
+      "data_date": "2026-07-30",
+      "status": "verified",
+      "subjectName": "Mistral AI",
+      "objectName": "Stellantis",
+      "predicateLabel": "服务",
+      "title": "Mistral AI 服务 Stellantis",
+      "eventTitle": "Stellantis 与 Mistral AI 扩大合作，加速企业级 AI 应用",
+      "eventDate": "2025-10-01",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-c0efbf2fe9d9f1e2",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
+        },
+        {
+          "id": "CL-e93909cf86da757a",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
+        },
+        {
+          "id": "CL-e80bd9d99c74aec9",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI Expand Their Collaboration"
+        },
+        {
+          "id": "CL-baaed277998933ae",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI elevate their partnership from pilots to company-wide AI deployment, embedding generative AI across operations."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1b35ce83e38353eb",
+          "publisher": "markets.ft.com",
+          "url": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH"
+        }
+      ],
+      "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption",
+      "event": {
+        "id": "EV-c8f3db31cb266b64",
+        "title": "Stellantis 与 Mistral AI 扩大合作，加速企业级 AI 应用",
+        "originalTitle": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+        "date": "2025-10-01",
+        "dataDate": "2026-07-30",
+        "eventTypeLabel": "合作"
       }
     },
     {
