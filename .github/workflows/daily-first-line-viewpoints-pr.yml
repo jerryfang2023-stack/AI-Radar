@@ -69,41 +69,22 @@ jobs:
           reason="not_applicable"
           data_file="01-SiteV2/site/data/follow-builders-daily.json"
           data_date=""
-          obsidian_count="0"
-          obsidian_pending="unknown"
 
           if [ -f "$data_file" ]; then
             data_date="$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));const value=data.meta?.date||data.meta?.generatedAt||data.meta?.generatedDate||data.generatedDate||data.generatedAt||'';const date=value ? new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)) : ''; process.stdout.write(date);" "$data_file")"
           fi
 
-          if [ -d "vault/10-Data-Center/04-First-Line-Viewpoints/people" ]; then
-            obsidian_count="$( { grep -R "^### ${RUN_DATE}\b" vault/10-Data-Center/04-First-Line-Viewpoints/people --include='*.md' 2>/dev/null || true; } | wc -l | tr -d ' ')"
-          fi
-
-          if [ "$data_date" = "$RUN_DATE" ]; then
-            sync_from="$(date -d "${RUN_DATE} - 4 days" +%F)"
-            if sync_json="$(node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from="${sync_from}" --to="${RUN_DATE}" --dry-run=true 2>/tmp/first-line-sync-check.err)"; then
-              obsidian_pending="$(node -e "const data=JSON.parse(process.argv[1]||'{}'); process.stdout.write(String(data.added ?? 'unknown'));" "$sync_json")"
-            else
-              cat /tmp/first-line-sync-check.err >&2 || true
-            fi
-          fi
-
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ] && [ "$obsidian_pending" = "0" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ]; then
             skip=true
-            reason="same-date first-line viewpoints data exists and Obsidian sync dry-run is idempotent on main"
+            reason="same-date first-line viewpoints data already exists on main"
           fi
 
           echo "skip=$skip" >> "$GITHUB_OUTPUT"
           echo "reason=$reason" >> "$GITHUB_OUTPUT"
           echo "data_date=$data_date" >> "$GITHUB_OUTPUT"
-          echo "obsidian_count=$obsidian_count" >> "$GITHUB_OUTPUT"
-          echo "obsidian_pending=$obsidian_pending" >> "$GITHUB_OUTPUT"
           echo "skip_first_line_viewpoints=$skip"
           echo "first_line_skip_reason=$reason"
           echo "existing_first_line_data_date=$data_date"
-          echo "existing_first_line_obsidian_count=$obsidian_count"
-          echo "existing_first_line_obsidian_pending=$obsidian_pending"
 
       - name: Syntax checks
         shell: bash
@@ -114,7 +95,6 @@ jobs:
           node --check agent-workflow/tools/deepseek-translation-client.mjs
           node --check agent-workflow/tools/opinion-translation-utils.mjs
           node --check agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs
-          node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs
           node --check agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs
           node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node --check 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs
@@ -187,19 +167,6 @@ jobs:
           node agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-adapter.log"
 
-      - name: Sync first-line viewpoints to Obsidian timelines
-        id: obsidian-sync
-        if: always() && steps.builders-gate.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          sync_from="$(date -d "${RUN_DATE} - 4 days" +%F)"
-          node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs \
-            --from="${sync_from}" \
-            --to="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-obsidian-sync.log"
-
       - name: Write first-line manifest
         if: always()
         shell: bash
@@ -225,13 +192,12 @@ jobs:
           - builders_data: ${{ steps.builders-data.outcome }}
           - builders_gate: ${{ steps.builders-gate.outcome }}
           - viewpoint_adapter: ${{ steps.viewpoint-adapter.outcome }}
-          - obsidian_sync: ${{ steps.obsidian-sync.outcome }}
           - deepseek_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)
           - deepseek_flash_model: ${DEEPSEEK_FLASH_MODEL}
           - deepseek_pro_model: ${DEEPSEEK_PRO_MODEL}
           - data_file: ${state}
 
-          This lane updates only First-Line Viewpoints and its Obsidian viewpoint timelines. It must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
+          This lane updates only First-Line Viewpoints production data. The external Guanlan Vault is refreshed locally after main is synchronized.
           EOF
 
       - name: Upload first-line artifacts
@@ -248,13 +214,12 @@ jobs:
             01-SiteV2/site/data/follow-builders-daily.json
             01-SiteV2/site/data/first-line-viewpoints-v4.json
             01-SiteV2/site/data/data-center-v4-frontstage.json
-            vault/10-Data-Center/04-First-Line-Viewpoints/**
             01-SiteV2/content/11-databases/builder-blog-feed.json
             01-SiteV2/content/11-databases/builder-podcast-feed.json
 
       - name: Commit first-line viewpoints to automation branch
         id: commit
-        if: always() && steps.builders-gate.outcome == 'success' && steps.viewpoint-adapter.outcome == 'success' && steps.obsidian-sync.outcome == 'success'
+        if: always() && steps.builders-gate.outcome == 'success' && steps.viewpoint-adapter.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -275,7 +240,6 @@ jobs:
           stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
           stage_if_exists "01-SiteV2/site/data/first-line-viewpoints-v4.json"
           stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
-          stage_if_exists "vault/10-Data-Center/04-First-Line-Viewpoints"
           stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
           stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"
 
@@ -309,7 +273,7 @@ jobs:
           - rebuilt \`follow-builders-daily.json\`;
           - passed \`assert-follow-builders-data.mjs\`;
           - refreshed the Data Center viewpoint adapter used by the factual catalog gate;
-          - synced same-day Builder viewpoints into \`vault/10-Data-Center/04-First-Line-Viewpoints/\`;
+          - left the external Guanlan Vault to the local one-way projection task;
           - no business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
 
           GitHub Pages deploys after this PR updates main.
@@ -406,8 +370,6 @@ jobs:
           require_success "Build first-line viewpoints data" "${{ steps.builders-data.outcome }}"
           require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
           require_success "Data Center viewpoint adapter" "${{ steps.viewpoint-adapter.outcome }}"
-          require_success "Obsidian viewpoint timeline sync" "${{ steps.obsidian-sync.outcome }}"
-
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
             require_success "Open or update PR" "${{ steps.pr.outcome }}"
             if [ "${{ steps.pr.outputs.status }}" != "manual_required" ]; then

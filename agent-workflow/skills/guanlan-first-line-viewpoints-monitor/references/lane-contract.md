@@ -7,7 +7,7 @@ The First-Line Viewpoints lane owns:
 - the merged V4 projection in `first-line-viewpoints-v4.json`;
 - complete Chinese primary viewpoint text;
 - original URLs, author identity, timestamps, and formal tags;
-- Obsidian person/date timeline files;
+- downstream external Guanlan Vault person timelines after accepted data reaches local `main`;
 - first-line automation PR boundary.
 
 ## Input And Publication Boundary

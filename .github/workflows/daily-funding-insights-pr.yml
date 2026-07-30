@@ -178,7 +178,7 @@ jobs:
             --write=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-funding-insights-retry.log"
 
-      - name: Gate, project, and sync Funding Insights
+      - name: Gate and project Funding Insights
         id: publish
         if: >-
           always()
@@ -189,7 +189,6 @@ jobs:
           set -euo pipefail
           node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
-          node agent-workflow/tools/sync-funding-insights-to-obsidian.mjs
           npm run test:funding-insights
           node agent-workflow/tools/frontstage-regression-gate.mjs
 
@@ -219,7 +218,6 @@ jobs:
           git add \
             "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json" \
             "01-SiteV2/site/data/funding-insights-v1.json"
-          git add -A -- "vault/20-Application-Center/02-Funding-Insights"
           if git diff --cached --quiet; then
             echo "No Funding Insights changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -246,7 +244,7 @@ jobs:
           - Triggered only after the verified Data Center V4 event bundle reached \`main\`.
           - Retried verified funding events that do not yet own a valid published card.
           - Used captured-source secondary research plus DeepSeek V4 Pro.
-          - Passed explicit-investor, exact-quote, schema, publication, projection, Obsidian-sync, and frontstage gates.
+          - Passed explicit-investor, exact-quote, schema, publication, projection, and frontstage gates.
           - Did not mutate CanonicalEvents, Claims, entities, or factual relationships.
 
           GitHub Pages deploys after this PR updates \`main\`.
@@ -375,7 +373,7 @@ jobs:
             exit 1
           fi
           if [ "${{ steps.publish.outcome }}" != "success" ]; then
-            echo "Funding Insights publication gate or Obsidian sync failed." >&2
+            echo "Funding Insights publication gate failed." >&2
             exit 1
           fi
           if [ "${{ steps.commit.outcome }}" != "success" ]; then
@@ -394,4 +392,4 @@ jobs:
             echo "Funding Insights GitHub Pages deployment did not pass." >&2
             exit 1
           fi
-          echo "Funding Insights downstream publication and Obsidian sync completed for ${RUN_DATE}."
+          echo "Funding Insights downstream publication completed for ${RUN_DATE}; the external Guanlan Vault refreshes after local main sync."

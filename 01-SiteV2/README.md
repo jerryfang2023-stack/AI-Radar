@@ -17,7 +17,8 @@ This directory owns the SITE-V4.3 website, canonical source/data files, downstre
 | Immutable raw snapshots | `content/01-raw/originals/` |
 | Canonical V4 bundles | `content/11-databases/data-center-v4/` |
 | Downstream application data | `content/12-applications/` and `site/data/` |
-| Independent Obsidian knowledge base | `../vault/` |
+| Accepted industry report Markdown | `content/12-applications/industry-reports/` |
+| Independent local knowledge base | External Guanlan AI Vault configured by `GUANLAN_VAULT_ROOT` |
 
 RawDocument stores source material, Claim stores exact verifiable spans, and CanonicalEvent stores accepted V4 commercial facts. Reports, trends, opportunities, funding research, viewpoints, and community material are downstream application or independent-column outputs and must not flow back into canonical V4 fact tables.
 

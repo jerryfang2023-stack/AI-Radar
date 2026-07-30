@@ -104,6 +104,14 @@ function severityToPriority(severity) {
   return "normal";
 }
 
+function currentSchedule(value) {
+  return String(value || "")
+    .replace(
+      "08:30 local RSS collection + page build + Obsidian sync",
+      "08:30 local RSS collection + page build",
+    );
+}
+
 function buildSupervisionIssues(supervision) {
   const date = supervision.date || "";
   return (supervision.lanes || []).flatMap((lane) => {
@@ -120,7 +128,7 @@ function buildSupervisionIssues(supervision) {
       source: "daily-supervision",
       reportPath: "agent-workflow/reports/daily-supervision-report-latest.json",
       neededAction: (lane.actions || [])[0] || "",
-      evidence: lane.schedule || "",
+      evidence: currentSchedule(lane.schedule),
     }));
     const warnings = (lane.warnings || []).map((warning, index) => ({
       id: `supervision-${date}-${lane.id}-warning-${index}`,
@@ -135,7 +143,7 @@ function buildSupervisionIssues(supervision) {
       source: "daily-supervision",
       reportPath: "agent-workflow/reports/daily-supervision-report-latest.json",
       neededAction: (lane.actions || [])[0] || "",
-      evidence: lane.schedule || "",
+      evidence: currentSchedule(lane.schedule),
     }));
     return [...problems, ...warnings];
   });
@@ -194,7 +202,7 @@ function laneToTask(lane, telemetry = {}) {
   return {
     id: lane.id,
     label: lane.label || lane.id,
-    schedule: lane.schedule || "",
+    schedule: currentSchedule(lane.schedule),
     status: lane.status || "unknown",
     statusText: statusText(lane.status),
     problemCount: (lane.problems || []).length,
@@ -264,7 +272,7 @@ function buildSyncStatus(supervision, pipeline) {
       detail: publication.businessPrUrl || "当前监督报告显示未合并或等待中",
     },
     {
-      label: "本地 Obsidian 同步",
+      label: "本地观澜 Vault 同步准备度",
       status: localSync.clean ? "passed" : "manual_required",
       detail: localSync.clean ? "工作区干净" : `${localSync.dirtyFiles ?? 0} 个本地变更阻塞自动判断`,
     },

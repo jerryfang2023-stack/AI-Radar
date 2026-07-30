@@ -68,7 +68,6 @@ jobs:
           skip_commit=false
           reason="not_applicable"
           data_file="01-SiteV2/site/data/community-intelligence.json"
-          archive_file="vault/10-Data-Center/05-Community-Intelligence/daily/${RUN_DATE} Community Intelligence.md"
           data_date=""
           items=0
           links=0
@@ -96,14 +95,9 @@ jobs:
             )
           fi
 
-          archive_state="missing"
-          if [ -f "$archive_file" ]; then
-            archive_state="present"
-          fi
-
-          if [ "$data_date" = "$RUN_DATE" ] && [ "$items" -ge 12 ] && [ "$links" -ge 3 ] && [ "$errors" = "0" ] && [ "$archive_state" = "present" ]; then
+          if [ "$data_date" = "$RUN_DATE" ] && [ "$items" -ge 12 ] && [ "$links" -ge 3 ] && [ "$errors" = "0" ]; then
             skip_commit=true
-            reason="same-date community data and Obsidian archive already exist on main"
+            reason="same-date community data already exists on main"
           fi
 
           echo "skip_commit=$skip_commit" >> "$GITHUB_OUTPUT"
@@ -112,7 +106,6 @@ jobs:
           echo "items=$items" >> "$GITHUB_OUTPUT"
           echo "links=$links" >> "$GITHUB_OUTPUT"
           echo "errors=$errors" >> "$GITHUB_OUTPUT"
-          echo "archive_state=$archive_state" >> "$GITHUB_OUTPUT"
           echo "community_existing_skip_commit=$skip_commit"
           echo "community_existing_reason=$reason"
 
@@ -126,7 +119,6 @@ jobs:
         shell: bash
         run: |
           npm run translate:community-intelligence -- --date="${RUN_DATE}"
-          npm run archive:community-intelligence
 
       - name: Run community intelligence gate
         id: community-gate
@@ -146,8 +138,6 @@ jobs:
 
           data_file="01-SiteV2/site/data/community-intelligence.json"
           daily_file="01-SiteV2/site/data/community-intelligence-daily/${RUN_DATE}.json"
-          archive_file="vault/10-Data-Center/05-Community-Intelligence/daily/${RUN_DATE} Community Intelligence.md"
-
           state_for() {
             local path="$1"
             if [ -e "$path" ]; then
@@ -168,9 +158,7 @@ jobs:
           - existing_data_date: ${{ steps.existing-community.outputs.data_date }}
           - data_file: $(state_for "$data_file")
           - daily_snapshot: $(state_for "$daily_file")
-          - obsidian_daily_archive: $(state_for "$archive_file")
-
-          This lane publishes only Community Intelligence data and archive files already produced by the local collector. It does not run the local Chrome collector because that step requires a local browser profile and logged-in session.
+          This lane publishes only Community Intelligence production data already produced by the local collector. It does not run the local Chrome collector because that step requires a local browser profile and logged-in session. The external Guanlan Vault is refreshed locally after main is synchronized.
 
           GitHub Pages deploys after this PR updates main.
           EOF
@@ -189,10 +177,6 @@ jobs:
             01-SiteV2/site/data/community-intelligence.json
             01-SiteV2/site/data/community-intelligence-daily/index.json
             01-SiteV2/site/data/community-intelligence-daily/${{ steps.run-date.outputs.date }}.json
-            vault/10-Data-Center/05-Community-Intelligence/Community Intelligence Index.md
-            vault/10-Data-Center/05-Community-Intelligence/README.md
-            vault/10-Data-Center/05-Community-Intelligence/daily/${{ steps.run-date.outputs.date }} Community Intelligence.md
-            vault/10-Data-Center/05-Community-Intelligence/views/*.md
 
       - name: Commit community intelligence to automation branch
         id: commit
@@ -212,23 +196,11 @@ jobs:
             fi
           }
 
-          stage_find() {
-            local dir="$1"
-            local pattern="$2"
-            if [ -d "$dir" ]; then
-              find "$dir" -maxdepth 1 -type f -name "$pattern" -print0 | xargs -0 -r git add -f
-            fi
-          }
-
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-community-intelligence-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-community-intelligence-gate.md"
           stage_if_exists "01-SiteV2/site/data/community-intelligence.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/index.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/${RUN_DATE}.json"
-          stage_if_exists "vault/10-Data-Center/05-Community-Intelligence/Community Intelligence Index.md"
-          stage_if_exists "vault/10-Data-Center/05-Community-Intelligence/README.md"
-          stage_if_exists "vault/10-Data-Center/05-Community-Intelligence/daily/${RUN_DATE} Community Intelligence.md"
-          stage_find "vault/10-Data-Center/05-Community-Intelligence/views" "*.md"
 
           if git diff --cached --quiet; then
             echo "No community intelligence changes to commit."
@@ -257,7 +229,7 @@ jobs:
 
           This PR contains only the independent Community Intelligence lane:
           - validated \`community-intelligence.json\`;
-          - included the daily snapshot and Obsidian archive files;
+          - included the daily production snapshot;
           - passed \`assert-community-intelligence-data.mjs\`;
           - no business-signal Cards, relationship graph data, trend candidates, or first-line viewpoint data.
 

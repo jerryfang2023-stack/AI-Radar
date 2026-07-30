@@ -24,7 +24,7 @@ WaveSight AI is now on the `SITE-V4.3.0-compatibility-retired` public website an
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.0-auto-published-research`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
 - Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
-- Current local knowledge-base version: `VAULT-V1.0`. The independent Obsidian root is `vault/`; repository code, raw snapshots, canonical JSON, site data, and run reports stay outside the vault.
+- Current local knowledge-base version: `GUANLAN-VAULT-V1.0`. The independent Guanlan AI Vault is configured outside the original `AI热点` tree; repository code, raw snapshots, canonical JSON, site data, and run reports stay in the repository and outside the Vault.
 
 ## Current Entries
 
@@ -55,10 +55,10 @@ External sources
 -> downstream application projections, including Trend Radar and Industry Reports
 -> GitHub PR / merge
 -> GitHub Pages
--> local Obsidian sync
+-> local Guanlan AI Vault refresh
 ```
 
-First-line viewpoints use two independent builders monitoring lanes: the morning RSS/X lane produces translated, gated public remarks, while the afternoon follow-builders Skill lane preserves separate discovery intake and syncs person/date timelines to Obsidian. Accepted historical morning snapshots are materialized in `01-SiteV2/site/data/first-line-viewpoints-history.json`; V4 merges current and historical morning data plus the afternoon lane by original URL into `01-SiteV2/site/data/first-line-viewpoints-v4.json`. Historical or afternoon-only intake remains outside the public feed until it passes the same approved-Chinese-translation provenance, source, formal-tag, and AI-relevance gates. Viewpoints are not evidence for Claims, CanonicalEvents, or RELATION-V2.1. Their daily data build is independent from the commercial-event chain.
+First-line viewpoints use two independent builders monitoring lanes: the morning RSS/X lane produces translated, gated public remarks, while the afternoon follow-builders Skill lane preserves separate discovery intake. Accepted historical morning snapshots are materialized in `01-SiteV2/site/data/first-line-viewpoints-history.json`; V4 merges current and historical morning data plus the afternoon lane by original URL into `01-SiteV2/site/data/first-line-viewpoints-v4.json`. The external Guanlan AI Vault projects a deduplicated person timeline after local `main` sync. Historical or afternoon-only intake remains outside the public feed until it passes the same approved-Chinese-translation provenance, source, formal-tag, and AI-relevance gates. Viewpoints are not evidence for Claims, CanonicalEvents, or RELATION-V2.1. Their daily data build is independent from the commercial-event chain.
 
 Community Intelligence uses the logged-in scys.com / aipoju.com collection route as a separate frontstage column. Its materials are community-sourced leads and must not be treated as facts unless the original source is separately captured, exact-span Claims are accepted, and the responsible V4 event gate passes.
 
@@ -96,9 +96,9 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, 
    - Funding Insights runs after verified daily funding events. Secondary source capture and DeepSeek V4 Pro may enrich the application card, but every company, financing, investor, product, customer, comparison, and metric fact must quote a captured source exactly. Cards publish automatically only when the deterministic gate passes; missing investors block the card, while entity linking is exact-match only and never mutates V4 canonical registries.
    - Opportunity Map updates from `opportunity-evidence-v2.json`, generated only from accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, and FacetAssertions, and publishes under `OMAP-V2.0.0-v4-evidence`; downstream application assertions bind accepted Claims and never enter V4 canonical tables. DeepSeek V4 Pro writes evidence-bounded Direction Card candidates, but only human-reviewed candidates may enter the public direction configuration.
    - Weekly report generation is lane-independent under `REPORTS-V1.1.0-lane-independent`: Opportunity Map or direction-candidate failure is recorded as a warning and cannot block report content acceptance or page publication.
-   - Reports Center publishes under `REPORTS-V1.1.0-lane-independent`. Weekly report content comes from `vault/20-Application-Center/01-Industry-Reports/`; monthly report content comes from `vault/20-Application-Center/01-Industry-Reports/monthly/`.
+   - Reports Center publishes under `REPORTS-V1.1.0-lane-independent`. Weekly and monthly accepted report Markdown comes from `01-SiteV2/content/12-applications/industry-reports/`; the external Guanlan AI Vault receives a readable copy after local sync.
    - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek Pro for report Markdown and, on weekly runs, separate Direction Card candidates. Report content passes its acceptance gate; Direction Card candidates remain review-only. HTML/navigation/version writing stays deterministic.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
-7. Sync only the human-readable projections into the independent local `vault/` when the local machine is online; do not expose the repository root as an Obsidian vault.
+7. Refresh human-readable projections into the independent Guanlan AI Vault when the local machine is online; do not expose the repository root or the parent `AI热点` tree as an Obsidian Vault.
 8. Materialize V4 JSONL tables in GitHub and rebuild DuckDB locally for queries, cross-day statistics, contamination audits, and source-linkage checks.

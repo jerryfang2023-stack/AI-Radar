@@ -3,7 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
-import { OBSIDIAN_PATHS } from "../obsidian-vault-paths.mjs";
+import { REPOSITORY_CONTENT_PATHS } from "../guanlan-vault-paths.mjs";
 import { periodicReportTitleProblems } from "../periodic-report-title.mjs";
 import {
   buildEvidenceSourceIndex,
@@ -29,7 +29,7 @@ test("periodic report titles carry tension and a business consequence", () => {
 });
 
 test("June monthly title records DeepSeek title provenance", () => {
-  const source = fs.readFileSync(path.join(process.cwd(), OBSIDIAN_PATHS.reportsRoot, "monthly", "2026-06-30--monthly-report--ai-business-structure-and-opportunity.md"), "utf8");
+  const source = fs.readFileSync(path.join(process.cwd(), REPOSITORY_CONTENT_PATHS.industryReportsRoot, "monthly", "2026-06-30--monthly-report--ai-business-structure-and-opportunity.md"), "utf8");
   const metadata = parseFrontmatter(source).values;
   assert.equal(metadata.title, "企业真正采购的不是模型能力，而是流程结果与交付责任");
   assert.equal(metadata.title_generation_skill, "guanlan-monthly-business-structure-report@0.2.1");
@@ -88,7 +88,7 @@ test("periodic renderer escapes model-supplied HTML", () => {
 
 test("recent weekly reports render as editorial modules with evidence last", () => {
   for (const date of ["2026-07-13", "2026-07-20"]) {
-    const source = fs.readFileSync(path.join(process.cwd(), OBSIDIAN_PATHS.reportsRoot, `${date}--weekly-report--ai-business-change-radar.md`), "utf8");
+    const source = fs.readFileSync(path.join(process.cwd(), REPOSITORY_CONTENT_PATHS.industryReportsRoot, `${date}--weekly-report--ai-business-change-radar.md`), "utf8");
     const html = renderBody(parseFrontmatter(source).body);
     for (const moduleClass of [
       "weekly-trend-stack",

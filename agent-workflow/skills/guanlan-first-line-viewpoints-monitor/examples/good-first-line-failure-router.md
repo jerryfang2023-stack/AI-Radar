@@ -5,7 +5,7 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
 ## Correct Behavior
 
 1. Decide which path is failing:
-   - morning RSS page-data and Obsidian sync;
+   - morning RSS page-data and data gate;
    - GitHub RSS fallback publication;
    - afternoon local follow-builders skill archive;
    - supervision visibility only.
@@ -17,9 +17,7 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
    - remarks count greater than `0`;
    - builders count at least `6`;
    - `assert-follow-builders-data.mjs --date=<date>` passes;
-   - same-date person/date timeline files exist;
-   - second sync or dry run adds `0` entries.
-4. For GitHub fallback publication, repair only commit/PR/merge/Pages if build, gate, and sync passed.
+4. For GitHub fallback publication, repair only commit/PR/merge/Pages if build and gate passed.
 5. For afternoon skill publish, verify:
    - output file exists;
    - output frontmatter `builder_items_count > 0`;
@@ -29,7 +27,8 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
    - report has no unresolved `Publish Failure` section;
    - automation branch was pushed, PR merged to `main`, and Pages succeeded when the local task used `-Merge`.
 6. If afternoon feed/archive generation is healthy but push, PR, merge, or Pages failed, classify it as `afternoon_publication_failure`. Repair the publication path only.
-7. Close Hermes only after validation and a prevention artifact are recorded.
+7. After accepted data reaches local `main`, refresh the external Guanlan AI Vault and require `assert:guanlan-vault` to pass.
+8. Close the production incident only after validation and a prevention artifact are recorded.
 
 ## Incorrect Behavior
 
@@ -39,5 +38,5 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
 - Treating a zero-count publish report as success because the report file exists.
 - Treating a healthy builders feed/archive report as full success when push / PR / merge / Pages failed.
 - Re-running or blaming the builders feed when the real error is a stale remote branch ref causing `force-with-lease` rejection after an earlier same-day PR deleted the remote automation branch.
-- Using old `YYYY-MM.md` month timeline files as proof of current person/date sync.
+- Using removed repository-Vault timeline files as proof of current publication health.
 - Replacing missing morning RSS page-data with the afternoon all-builders archive.

@@ -3,7 +3,7 @@
 ## Pass Cases
 
 1. Source discipline
-   - Pass when the page is generated from a file under `vault/20-Application-Center/01-Industry-Reports/`.
+   - Pass when the page is generated from a file under `01-SiteV2/content/12-applications/industry-reports/`.
    - Pass when the operational archive under `agent-workflow/reports/` is not the only source.
 
 2. Reports Center placement

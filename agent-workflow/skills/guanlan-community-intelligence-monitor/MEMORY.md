@@ -11,7 +11,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 
 ## 2026-06-30 Publication Waiting
 
-- Same-date Community Intelligence data, daily snapshot, Obsidian archive, selected keywords, links, and gate passing mean collection is healthy. If publication is still an open PR or queued / in-progress workflow, report Waiting rather than Problem.
+- Same-date Community Intelligence data, daily snapshot, selected keywords, links, and gate passing mean collection is healthy. The external Guanlan Vault is a downstream local projection and is not a publication gate. If publication is still an open PR or queued / in-progress workflow, report Waiting rather than Problem.
 - Waiting-only publication state must not create a production incident or ask Codex to rerun the logged-in browser collector.
 - PR #176 confirmed the expected closure path: validate local data, publish only community-owned files, merge PR, then wait for GitHub Pages.
 

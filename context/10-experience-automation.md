@@ -160,7 +160,7 @@ Weekly health classifies repeated incidents into categories such as:
 - `frontstage_title_translation`;
 - `frontstage_detail_content`;
 - `monitor_or_gate_failure`;
-- `obsidian_sync`;
+- `guanlan_vault_projection`;
 - `skill_ops`.
 
 When a category repeats, fix the system path that allowed it to recur.

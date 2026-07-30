@@ -53,7 +53,7 @@ try {
     -Action $action `
     -Trigger @($logonTrigger, $intervalTrigger) `
     -Settings $settings `
-    -Description "Sync WaveSight local Obsidian workspace from GitHub main after PR auto-merge." `
+    -Description "Fast-forward WaveSight main and refresh the external Guanlan AI Vault after PR auto-merge." `
     -Force | Out-Null
 
   Write-Host "Installed local sync scheduled task: $TaskName"

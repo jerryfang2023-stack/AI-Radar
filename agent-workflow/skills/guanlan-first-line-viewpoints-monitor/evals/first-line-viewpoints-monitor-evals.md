@@ -19,11 +19,11 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
 5. `formal_tag_gate`
    - Pass when every remark has at least one `opinion`, one `track`, and one `source` formal tag.
 
-6. `obsidian_person_date_sync`
-   - Pass when the run's gated viewpoints are written under `vault/10-Data-Center/04-First-Line-Viewpoints/people/<person>/<original-date>.md`.
+6. `guanlan_vault_person_projection`
+   - Pass when accepted merged viewpoints are projected into `60-知识资产/一线人物/` by the local Guanlan Vault refresh.
    - Pass when a same-day run has no same-day heading because all source items have earlier original dates, as long as the sync dry-run is idempotent.
 
-7. `obsidian_sync_idempotent`
+7. `guanlan_vault_projection_valid`
    - Pass when a second same-date sync or dry run reports `added: 0`.
    - Fail when a workflow reruns only because it counted zero `### <run-date>` headings, without checking sync dry-run idempotency.
 
@@ -36,14 +36,14 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Fail when the lane waits until the old 10:30 supervision check or uses Hermes recovery / early handoff instead of a problem report and Codex inbox path.
 
 10. `afternoon_follow_builders_skill_lane`
-    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, syncs the generated skill viewpoints into `vault/10-Data-Center/04-First-Line-Viewpoints/`, and records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` with its own publication and sync status.
+    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md` and records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` with its own publication status.
     - Pass when the local task running with merge enabled also pushes the automation branch, merges the PR to `main`, and waits for GitHub Pages publication or writes an explicit publish failure.
-    - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, when Obsidian sync counts are missing from the report, or when feed/archive generation success is treated as full publication success without branch / PR / Pages closure.
+    - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, or when feed generation success is treated as full publication success without branch / PR / Pages closure.
 
 11. `first_line_failure_router`
-    - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `history_backfill_failure`, `v4_projection_failure`, `obsidian_sync_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, `afternoon_count_mismatch`, or `afternoon_publication_failure`.
+    - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `history_backfill_failure`, `v4_projection_failure`, `guanlan_vault_projection_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, `afternoon_count_mismatch`, or `afternoon_publication_failure`.
     - Pass when the repair targets the earliest category and reruns the smallest relevant validation.
-    - Fail when RSS collection, Obsidian sync, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
+    - Fail when RSS collection, local Vault projection, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
 
 12. `morning_rss_problem_window`
     - Pass when supervision waits until the 09:50 consolidated closure before declaring First-Line RSS missing, after the 08:30 local Codex run and the single 09:15 conditional fallback.
@@ -51,19 +51,19 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when Daily Problem Watchdog creates a First-Line RSS repair inbox before the 09:50 consolidated closure while recovery may still be active.
 
 13. `afternoon_skill_count_consistency`
-    - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, both counts match, and the report includes Obsidian sync counts.
-    - Fail when the report exists but records `builder_items_count: 0`, when the output count is `0`, when report and output counts disagree, or when Obsidian sync is not recorded.
+    - Pass when `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` frontmatter `builder_items_count` is greater than `0`, the local publish report count is greater than `0`, and both counts match.
+    - Fail when the report exists but records `builder_items_count: 0`, when the output count is `0`, or when report and output counts disagree.
 
 14. `report_existence_not_success`
     - Pass when First-Line success checks inspect the content and count inside gate/manifest/publish reports, not only the presence of the files.
     - Fail when a report-only success hides stale data, missing timelines, or a zero-count afternoon publish.
 
 15. `afternoon_publication_closure`
-    - Pass when the afternoon local task distinguishes feed/archive success from publication success: `builder_items_count > 0`, Obsidian sync counts are present, no `Publish Failure` section remains unresolved, the automation branch was pushed, the PR merged to `main`, and GitHub Pages succeeded when the task ran with `-Merge`.
+    - Pass when the afternoon local task distinguishes feed success from publication success: `builder_items_count > 0`, no `Publish Failure` section remains unresolved, the automation branch was pushed, the PR merged to `main`, and GitHub Pages succeeded when the task ran with `-Merge`.
     - Pass when same-day reruns prune stale remote branch refs before `git push --force-with-lease`, so a previous merged PR deleting `automation/follow-builders-skill-<date>` does not cause a false feed failure.
     - Fail when a `stale info` / `force-with-lease` rejection after a deleted remote automation branch is classified as feed failure.
     - Fail when the publish report says the feed/archive output is healthy but also contains `publish_status: failed`, and lane supervision or Codex still reports the afternoon lane as fully complete.
-    - Fail when lane supervision ignores `publish_status: failed`, `publish_error`, or missing `obsidian_sync_*` counts in `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
+    - Fail when lane supervision ignores `publish_status: failed` or `publish_error` in `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
 
 16. `local_data_precedence_in_supervision`
     - Pass when daily supervision treats same-date `follow-builders-daily.json`, remarks / builders floors, and a passed follow-builders data gate as sufficient public-lane health.

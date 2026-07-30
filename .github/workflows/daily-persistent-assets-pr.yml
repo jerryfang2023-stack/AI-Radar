@@ -170,7 +170,7 @@ jobs:
           node --check agent-workflow/tools/build-data-center-v4.mjs
           node --check agent-workflow/tools/backfill-data-center-v4.mjs
           node --check agent-workflow/tools/assert-data-center-v4.mjs
-          node --check agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
+          node --check agent-workflow/tools/build-guanlan-vault.mjs
           node --check agent-workflow/tools/assert-tag-taxonomy-v4.mjs
           node --check agent-workflow/tools/event-public-title.mjs
           node --check agent-workflow/tools/sync-light-data-lake.mjs
@@ -431,16 +431,6 @@ jobs:
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
           npm run test:funding-insights
 
-      - name: Sync FDE and AI hardware Obsidian archives
-        id: business-lenses-obsidian-sync
-        if: always() && steps.data-center-v4-materialize.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/sync-business-lenses-to-obsidian.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-lenses-obsidian-sync.log"
-
       - name: Sync operations data after V4 production
         id: operations-data
         if: always() && steps.data-center-v4-materialize.outcome == 'success'
@@ -453,7 +443,7 @@ jobs:
             --opportunity="${{ steps.opportunity-map-v4.outcome }}" \
             --trend="${{ steps.trend-radar-projection.outcome }}" \
             --funding="${{ steps.funding-insights.outcome }}" \
-            --lenses="${{ steps.business-lenses-obsidian-sync.outcome }}" \
+            --lenses=local_projection \
             --publication=waiting \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-collection-telemetry.log"
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs \
@@ -698,7 +688,7 @@ jobs:
           - Opportunity Map, Trend Radar, and Funding Insights generated from V4 evidence.
           - Operations dashboard data included after V4 materialization.
           - Retired compatibility writers remain disabled; archived compatibility assets are not staged or deployed.
-          - Persistent asset manifest for local Obsidian recovery.
+          - Persistent asset manifest for production recovery.
           - Artifacts uploaded for review.
 
           Guardrails:
@@ -710,7 +700,7 @@ jobs:
           Automation result:
           - This PR is expected to auto-merge after gates pass.
           - After merge, GitHub Pages deploys from main automatically.
-          - Pull main locally or let the WaveSight local Obsidian sync task fast-forward main after merge.
+          - Pull main locally or let the WaveSight local sync task fast-forward main and refresh the external Guanlan AI Vault after merge.
           BODY
 
           pr_number="$(gh pr list \

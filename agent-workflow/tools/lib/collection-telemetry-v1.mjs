@@ -101,7 +101,7 @@ export function buildCollectionTelemetry({
     opportunity_map: normalizedOutcome(outcomes.opportunity || persistentManifest?.outcomes?.opportunity_map_v4),
     trend_radar: normalizedOutcome(outcomes.trend || persistentManifest?.outcomes?.trend_radar_projection),
     funding_insights: normalizedOutcome(outcomes.funding || persistentManifest?.outcomes?.funding_insights),
-    fde_hardware_sync: normalizedOutcome(outcomes.lenses || persistentManifest?.outcomes?.business_lenses_obsidian_sync),
+    fde_hardware_sync: normalizedOutcome(outcomes.lenses),
   };
   const knownProjectionStates = Object.values(projectionOutcomes).filter((value) => value !== "unknown");
   const projectionStatus = knownProjectionStates.includes("failed")

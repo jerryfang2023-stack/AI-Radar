@@ -1,6 +1,6 @@
 # Good Timeline Entry Example
 
-Use this pattern when checking First-Line Viewpoints Obsidian sync.
+Use this pattern when checking the post-merge First-Line Viewpoints projection in the external Guanlan AI Vault.
 
 ```yaml
 ---
@@ -28,7 +28,7 @@ why_it_matters: "What this viewpoint helps operators understand; not a Business 
 
 Pass criteria:
 
-- Same-date person/date file exists under the current timeline structure.
+- The builder has one deduplicated person timeline under `60-知识资产/一线人物/`.
 - Original URL, author, and timestamp are present.
 - Primary frontstage text is translated or rewritten for Chinese readers.
-- The entry is clearly a viewpoint, not evidence for Signal Cards or trend candidates.
+- The entry is clearly a viewpoint, not evidence for Claims, CanonicalEvents, relations, or trend candidates.

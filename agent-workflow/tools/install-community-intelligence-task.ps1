@@ -54,7 +54,7 @@ Register-ScheduledTask `
   -Action $action `
   -Trigger $dailyTrigger `
   -Settings $settings `
-  -Description "Run WaveSight community intelligence collection and local Obsidian archive every day." `
+  -Description "Run WaveSight community intelligence collection and validation every day." `
   -Force | Out-Null
 
 Write-Host "Installed community intelligence scheduled task: $TaskName"

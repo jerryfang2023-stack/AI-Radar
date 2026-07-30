@@ -196,8 +196,8 @@ const productionTools = [
   "agent-workflow/tools/write-automation-readiness-report.mjs",
   "agent-workflow/tools/record-action-run.mjs",
   "agent-workflow/tools/write-weekly-health-report.mjs",
-  "agent-workflow/tools/sync-obsidian-vault.mjs",
-  "agent-workflow/tools/build-data-center-v4-obsidian-index.mjs",
+  "agent-workflow/tools/sync-guanlan-vault.mjs",
+  "agent-workflow/tools/build-guanlan-vault.mjs",
   "agent-workflow/tools/backfill-source-title-translations.mjs",
 ];
 for (const relative of productionTools) {

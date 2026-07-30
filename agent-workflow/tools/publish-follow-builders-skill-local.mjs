@@ -142,12 +142,6 @@ function sameDatePublishAlreadyHealthy() {
   } catch {
     return false;
   }
-  const obsidianSyncRecorded = [
-    fields.obsidian_sync_added,
-    fields.obsidian_sync_groups,
-    fields.obsidian_sync_files,
-  ].every((value) => value !== undefined && Number.isFinite(Number(value)));
-
   return Boolean(fields.publish_status)
     && fields.publish_status !== "failed"
     && fields.publish_error !== undefined
@@ -155,8 +149,7 @@ function sameDatePublishAlreadyHealthy() {
     && outputCount > 0
     && reportCount === outputCount
     && v4Afternoon.date === date
-    && Number(v4Afternoon.declaredCount) === outputCount
-    && obsidianSyncRecorded;
+    && Number(v4Afternoon.declaredCount) === outputCount;
 }
 
 function writeReport(lines) {
@@ -177,7 +170,7 @@ function openOrUpdatePr() {
     "This PR was created by the local afternoon skill task after the skill digest and file checks passed.",
     "",
     "- generated `01-SiteV2/content/07-points/${date}-builders-viewpoints.md` from the local follow-builders skill;",
-    "- synced the generated skill viewpoints into `vault/10-Data-Center/04-First-Line-Viewpoints/`;",
+    "- left the external Guanlan Vault to the local one-way projection task;",
     "- recorded the run in `agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`;",
     "- auto-publishes through a branch and PR so Hermes can record the run from a durable report path.",
   ].join("\n"), "utf8");
@@ -276,7 +269,7 @@ function main() {
       ok: true,
       changed: false,
       skipped: true,
-      reason: "same-date follow-builders skill publish report, output, and Obsidian sync counts are already healthy",
+      reason: "same-date follow-builders skill publish report, output, and V4 afternoon projection are already healthy",
       branch,
       report: rel(reportFile),
       output: rel(outputFile),
@@ -299,21 +292,6 @@ function main() {
     throw new Error(`Builders viewpoints output has no items: ${outputFile}`);
   }
 
-  run("node", ["--check", "agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs"]);
-  const obsidianSyncRaw = run("node", [
-    "agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs",
-    `--points-file=${rel(outputFile)}`,
-  ]);
-  let obsidianSync = {};
-  try {
-    obsidianSync = JSON.parse(obsidianSyncRaw);
-  } catch {
-    throw new Error(`Unable to parse Obsidian sync output:\n${obsidianSyncRaw}`);
-  }
-  if (!obsidianSync.ok) {
-    throw new Error(`Obsidian sync did not report ok:\n${obsidianSyncRaw}`);
-  }
-
   writeReport([
     `# ${date} Follow-Builders Skill Local Publish`,
     "",
@@ -325,9 +303,7 @@ function main() {
     `- skill_script: ${rel(skillScript)}`,
     `- output_file: ${rel(outputFile)}`,
     `- builder_items_count: ${itemCount}`,
-    `- obsidian_sync_added: ${obsidianSync.added ?? 0}`,
-    `- obsidian_sync_groups: ${obsidianSync.groups ?? 0}`,
-    `- obsidian_sync_files: ${Array.isArray(obsidianSync.files) ? obsidianSync.files.length : 0}`,
+    "- guanlan_vault_projection: local_after_main_sync",
     "- publish_status: generated",
     '- publish_error: ""',
     `- hermes_record: ${rel(reportFile)}`,
@@ -348,8 +324,6 @@ function main() {
     stageIfExists(`agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`, gitEnv);
     stageIfExists(`01-SiteV2/content/07-points/${date}-builders-viewpoints.md`, gitEnv);
     stageIfExists("01-SiteV2/site/data/first-line-viewpoints-v4.json", gitEnv);
-    stageIfExists("vault/10-Data-Center/04-First-Line-Viewpoints", gitEnv);
-
     const staged = run("git", ["diff", "--cached", "--name-only"], { env: gitEnv });
     if (!staged) {
       console.log(JSON.stringify({

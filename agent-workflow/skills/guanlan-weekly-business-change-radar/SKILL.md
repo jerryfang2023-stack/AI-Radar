@@ -26,7 +26,7 @@ This is a downstream judgment report. It cannot write Data Center V4 canonical f
 2. `context/00-current-state.md`
 3. `context/12-data-center-v4.md`
 4. `context/08-automation.md`
-5. `vault/20-Application-Center/01-Industry-Reports/`
+5. `01-SiteV2/content/12-applications/industry-reports/`
 6. `agent-workflow/tools/generate-periodic-report-deepseek.mjs`
 7. `agent-workflow/tools/assert-periodic-report-content.mjs`
 
@@ -83,7 +83,7 @@ Use one evidence-bounded judgment with a concrete consequence for budget, procur
 
 ```text
 agent-workflow/reports/YYYY-MM-DD-weekly-ai-business-change-radar.md
-vault/20-Application-Center/01-Industry-Reports/YYYY-MM-DD--weekly-report--ai-business-change-radar.md
+01-SiteV2/content/12-applications/industry-reports/YYYY-MM-DD--weekly-report--ai-business-change-radar.md
 ```
 
 Both files carry `status: draft` until the deterministic content gate passes.

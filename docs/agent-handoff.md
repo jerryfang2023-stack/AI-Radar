@@ -16,7 +16,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public frontstage: Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports.
 - Current backend: Dashboard / operations console.
-- Current human-readable knowledge base: independent `vault/` (`VAULT-V1.0`), split into Data Center and Application Center.
+- Current human-readable knowledge base: the independent Guanlan AI Vault (`GUANLAN-VAULT-V1.0`) outside the original `AI热点` tree, split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
 ## Current Entries
@@ -45,7 +45,7 @@ External sources
 -> operations data
 -> GitHub PR / merge
 -> GitHub Pages
--> projection-only sync into independent `vault/`
+-> projection-only local refresh into the independent Guanlan AI Vault
 ```
 
 V4 canonical tables contain factual evidence only. Trend, opportunity, funding-insight, report, recommendation, and value-judgment objects are downstream applications. V3 Card interfaces are removed. First-Line Viewpoints and Community Intelligence are independent columns and cannot become business-signal facts without separate original-source capture through the V4 evidence chain.
@@ -58,7 +58,7 @@ V4 canonical tables contain factual evidence only. Trend, opportunity, funding-i
 - Business brief / internal reference as required output.
 - Trend report prose as required output.
 - Netlify deployment.
-- Parent `AI热点` or repository-root Obsidian indexing.
+- Parent `AI热点`, repository-root, or removed repository `vault/` Obsidian indexing.
 
 ## Recovery
 

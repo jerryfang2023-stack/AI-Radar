@@ -4,7 +4,6 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -89,16 +88,6 @@ function stageIfExists(file) {
   }
 }
 
-function stageViewFiles() {
-  const dir = path.join(root, OBSIDIAN_PATHS.communityRoot, "views");
-  if (!fs.existsSync(dir)) return;
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (entry.isFile() && entry.name.endsWith(".md")) {
-      stageIfExists(`${OBSIDIAN_PATHS.communityRoot}/views/${entry.name}`);
-    }
-  }
-}
-
 function ghJson(commandArgs, fallback = null) {
   const result = tryRun("gh", commandArgs);
   if (!result.ok) return fallback;
@@ -114,10 +103,10 @@ function openOrUpdatePr() {
   fs.writeFileSync(bodyFile, [
     `Community Intelligence update for ${date}.`,
     "",
-    "This PR was created by the local collector after data and Obsidian archive gates passed.",
+    "This PR was created by the local collector after production data gates passed.",
     "",
     "- validated `community-intelligence.json`;",
-    "- included the daily snapshot and Obsidian archive files;",
+    "- included the daily production snapshot;",
     "- passed `assert-community-intelligence-data.mjs`;",
     "- no business-signal Cards, relationship graph data, trend candidates, or first-line viewpoint data.",
   ].join("\n"), "utf8");
@@ -294,11 +283,6 @@ function main() {
   stageIfExists("01-SiteV2/site/data/community-intelligence.json");
   stageIfExists("01-SiteV2/site/data/community-intelligence-daily/index.json");
   stageIfExists(`01-SiteV2/site/data/community-intelligence-daily/${date}.json`);
-  stageIfExists("vault/10-Data-Center/05-Community-Intelligence/Community Intelligence Index.md");
-  stageIfExists("vault/10-Data-Center/05-Community-Intelligence/README.md");
-  stageIfExists(`vault/10-Data-Center/05-Community-Intelligence/daily/${date} Community Intelligence.md`);
-  stageViewFiles();
-
   const staged = run("git", ["diff", "--cached", "--name-only"]);
   if (!staged) {
     console.log(JSON.stringify({
