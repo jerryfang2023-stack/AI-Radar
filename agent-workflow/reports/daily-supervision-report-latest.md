@@ -1,7 +1,7 @@
 # WaveSight Daily Supervision - 2026-07-30
 
-- generated_at: 2026-07-30T08:17:32.495Z
-- status: warning
+- generated_at: 2026-07-30T08:22:57.072Z
+- status: passed
 - github_mode: auto
 - scheduled_task_mode: auto
 
@@ -9,7 +9,7 @@
 |---|---|---|---:|---:|---:|
 | Skill Ops Governance | daily supervision preflight | passed | 0 | 0 | 0 |
 | Community Intelligence | 08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure | passed | 0 | 0 | 0 |
-| Data Center V4 / Business Signals Operations | 08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback | warning | 0 | 0 | 1 |
+| Data Center V4 / Business Signals Operations | 08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback | passed | 0 | 0 | 0 |
 | First-Line Viewpoints | 08:30 local RSS collection + page build; 09:15 conditional fallback; 09:50 consolidated closure | passed | 0 | 0 | 0 |
 | First-Line Viewpoints Skill | 16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45 | passed | 0 | 0 | 0 |
 
@@ -67,7 +67,7 @@ none
 ```
 ## Data Center V4 / Business Signals Operations
 
-- status: warning
+- status: passed
 - schedule: 08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback
 
 ### Problems
@@ -80,7 +80,7 @@ none
 
 ### Warnings
 
-- local main sync and Guanlan Vault refresh may be blocked by 4 dirty file(s)
+- none
 
 ### Actions
 

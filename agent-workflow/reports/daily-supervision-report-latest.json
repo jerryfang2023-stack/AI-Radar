@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "status": "warning",
+  "status": "passed",
   "date": "2026-07-30",
-  "generated_at": "2026-07-30T08:17:32.495Z",
+  "generated_at": "2026-07-30T08:22:57.072Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
@@ -104,7 +104,7 @@
       "id": "business_signals",
       "label": "Data Center V4 / Business Signals Operations",
       "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
-      "status": "warning",
+      "status": "passed",
       "evidence": {
         "titleTranslations": {
           "missingSourceTitles": []
@@ -165,10 +165,10 @@
           "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30525933174",
           "localSync": {
             "available": true,
-            "clean": false,
-            "dirtyFiles": 4,
-            "ignoredReportFiles": 4,
-            "head": "3562ce439630bf5f80aee47e8de7c271cfd07101",
+            "clean": true,
+            "dirtyFiles": 0,
+            "ignoredReportFiles": 0,
+            "head": "db4e00b2a8c570ab04b56a08cf2e0af0a3521cab",
             "originMain": "e0ec45b7d12bb4ba14bf95e6c90c9e585087d339",
             "fastForwarded": false,
             "warning": ""
@@ -186,9 +186,9 @@
           "healthy": true
         },
         "diagnosis": {
-          "category": "local_sync",
-          "reason": "same-date data is healthy; remaining issue is publication/local sync closure",
-          "neededAction": "repair publication/local sync closure only; do not rerun Raw/Pool/Card generation",
+          "category": "passed",
+          "reason": "same-date Data Center V4 canonical data, integrity gate, and materialization are healthy",
+          "neededAction": "none",
           "preRerunChecklist": {
             "dataCenterDate": "2026-07-30",
             "materializedEventCount": 1732,
@@ -199,16 +199,14 @@
             "missingSourceTitleTranslations": [],
             "businessPrMerged": true,
             "pagesState": "success",
-            "localDirtyFiles": 4,
+            "localDirtyFiles": 0,
             "localFastForwarded": false
           }
         }
       },
       "problems": [],
       "waiting": [],
-      "warnings": [
-        "local main sync and Guanlan Vault refresh may be blocked by 4 dirty file(s)"
-      ],
+      "warnings": [],
       "actions": []
     },
     {
