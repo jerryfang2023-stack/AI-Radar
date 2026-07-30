@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-2dc010636b9dce91",
@@ -29,6 +29,7 @@
       "EV-57944eebac69d510",
       "EV-5b1bdc06406424b4",
       "EV-6272444f30281858",
+      "EV-4e01d849a23a07d9",
       "EV-226a363f84676808",
       "EV-9ae9aa86e51e64a2",
       "EV-6ce6b9c9780b97d9"
@@ -47,7 +48,7 @@
       "EN-a42d5d95234db6c4"
     ],
     "firstSeen": "2026-05-20",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-07-30",
     "relationIds": [
       "REL2-61089e71e75b311e"
     ],
@@ -67,6 +68,7 @@
         "EV-6272444f30281858"
       ],
       "productsServices": [
+        "EV-4e01d849a23a07d9",
         "EV-226a363f84676808",
         "EV-9ae9aa86e51e64a2",
         "EV-6ce6b9c9780b97d9"
@@ -76,6 +78,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4e01d849a23a07d9",
+        "dataDate": "2026-07-30",
+        "date": "2026-07-30",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Databricks 推出生产线 AI 智能体：实时可信决策",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2dc010636b9dce91"
+        ]
+      },
       {
         "id": "EV-57944eebac69d510",
         "dataDate": "2026-07-29",
@@ -459,8 +476,11 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-8aa51e324eca8fc2",
+        "EV-9f847fced6da7c4c",
         "EV-5f3ccb941a2fe5d7",
         "EV-9490bae84e7b4707",
+        "EV-cc65a81f48e10ceb",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
@@ -504,7 +524,6 @@
         "EV-921c843ad32c993c",
         "EV-010946e35d35bb43",
         "EV-2bea8d8046a9b325",
-        "EV-8aa51e324eca8fc2",
         "EV-9fa9822969d3c3fd",
         "EV-da064f736e880e30",
         "EV-f487788f3d44f288",
@@ -630,6 +649,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-16bb9d0c6a2a7115",
+        "EV-a4fe78df6ccd63c8",
+        "EV-fd9d6fae44ff4a15",
         "EV-7a4d1e871dcd3b1f",
         "EV-7c934b299d048348",
         "EV-bfa090c78227abf8",
@@ -847,6 +869,8 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-20b82e2a2cb33a0e",
+        "EV-3a0596df367df665",
         "EV-70fd0c4e482a646e",
         "EV-86537be17d50ff20",
         "EV-618e2e96fac28f06",
@@ -866,9 +890,9 @@
         "EN-fb42d760d80a6314",
         "EN-9fbf261b62c1d7c0",
         "EN-2be663431f007250",
+        "EN-7d3194f79e645c42",
         "EN-ab9b29074a980e4b",
         "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
         "EN-382635c9325bf327",
         "EN-3db1f560db626918",
         "EN-8f71c4871a160172",
@@ -1044,6 +1068,7 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
         "EN-bac9509d0efda159",
@@ -1290,6 +1315,8 @@
         "EN-b7bea343b08cce2c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
+        "EN-16478186eeecf696",
+        "EN-18bb438ae33bc120",
         "EN-96045bee6a2d2527",
         "EN-7f871cbf905f6e0c",
         "EN-c608c4787821de1b",
@@ -1443,6 +1470,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-a4fe78df6ccd63c8",
         "EV-3eb44a239ebef4b0",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -1502,6 +1530,7 @@
         "EN-ea87a2bd84296f73",
         "EN-4094a2b7125c7564",
         "EN-cbc62794911ff31b",
+        "EN-30397d0cfc1b0e29",
         "EN-0d4bbb73ac4c7513",
         "EN-2b6e51bec93e86c1",
         "EN-e73b79a0b10f8cdb",
@@ -1541,7 +1570,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -1714,6 +1743,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-c0ab1ca89a7c09d4",
         "EV-0f0b2013927ce156",
         "EV-7f92b7e410ed08f1",
         "EV-6b51b1b6fe22c540",
@@ -1765,6 +1795,8 @@
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
         "EN-bab9670e68265ab1",
+        "EN-4906a49adc5c472b",
+        "EN-3fceca3ace01c874",
         "EN-cc70f504af53013a",
         "EN-e3b1bf3dab957ffe",
         "EN-a93bc1dfeb147c54",
@@ -1793,7 +1825,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-industry-retail_ecommerce",

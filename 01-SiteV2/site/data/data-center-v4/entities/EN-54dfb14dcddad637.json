@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-54dfb14dcddad637",
@@ -21,16 +21,18 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-faf8db3567f108e2",
       "EV-b53c30df8b86da5b"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-22",
-    "lastSeen": "2026-07-23",
+    "lastSeen": "2026-07-29",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-faf8db3567f108e2",
         "EV-b53c30df8b86da5b"
       ],
       "deployments": [],
@@ -41,6 +43,28 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-faf8db3567f108e2",
+        "dataDate": "2026-07-29",
+        "date": "2026-07-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "entityIds": [
+          "EN-54dfb14dcddad637"
+        ]
+      },
       {
         "id": "EV-b53c30df8b86da5b",
         "dataDate": "2026-07-23",

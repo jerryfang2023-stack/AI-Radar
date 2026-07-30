@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-c04bd5ebd10ab696",
@@ -27,6 +27,7 @@
       "EV-85506f9f86779a6d",
       "EV-dc442b91a69fcc5a",
       "EV-d292329c0ec64c8f",
+      "EV-c8f3db31cb266b64",
       "EV-3a67edc87806b5f1",
       "EV-dbc47d61f3e94306",
       "EV-eb2584a4801eb1e6",
@@ -37,12 +38,14 @@
       "TX-industry-automotive_transportation"
     ],
     "relatedEntityIds": [
+      "EN-8652f6cd9088f1fa",
       "EN-0d4ab5f8db6e89bc",
       "EN-2c2a76216a876127"
     ],
-    "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-23",
+    "firstSeen": "2025-10-01",
+    "lastSeen": "2026-07-30",
     "relationIds": [
+      "REL2-229f4051d4ed3200",
       "REL2-8ece73de065422cf",
       "REL2-8d7f8c3e4ca24dcb",
       "REL2-3ea72ee73bfd8b44",
@@ -58,7 +61,9 @@
         "EV-dc442b91a69fcc5a"
       ],
       "deployments": [],
-      "partnerships": [],
+      "partnerships": [
+        "EV-c8f3db31cb266b64"
+      ],
       "productsServices": [
         "EV-3a67edc87806b5f1",
         "EV-dbc47d61f3e94306",
@@ -70,6 +75,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c8f3db31cb266b64",
+        "dataDate": "2026-07-30",
+        "date": "2025-10-01",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Stellantis 与 Mistral AI 扩大合作，加速企业级 AI 应用",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8652f6cd9088f1fa",
+          "EN-819101e7958d70f8",
+          "EN-c04bd5ebd10ab696"
+        ]
+      },
       {
         "id": "EV-a89bf7c0c4203ce2",
         "dataDate": "2026-07-23",
@@ -253,6 +275,33 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-8652f6cd9088f1fa",
+      "name": "Stellantis",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9dab7fa55702e561",
+        "EV-bd508dbe4205774f",
+        "EV-c8f3db31cb266b64"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-industry-automotive_transportation"
+      ],
+      "relatedEntityIds": [
+        "EN-c04bd5ebd10ab696",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2025-10-01",
+      "lastSeen": "2026-07-30"
+    },
+    {
       "id": "EN-0d4ab5f8db6e89bc",
       "name": "Leanstral 1.5",
       "entityType": "product_candidate",
@@ -298,6 +347,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-229f4051d4ed3200",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-8652f6cd9088f1fa",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c04bd5ebd10ab696",
+      "object_type": "entity",
+      "event_id": "EV-c8f3db31cb266b64",
+      "claim_refs": [
+        "CL-c0efbf2fe9d9f1e2",
+        "CL-e93909cf86da757a",
+        "CL-e80bd9d99c74aec9",
+        "CL-baaed277998933ae"
+      ],
+      "source_refs": [
+        "SA-1b35ce83e38353eb"
+      ],
+      "data_date": "2026-07-30",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-8ece73de065422cf",
       "relationship_version": "RELATION-V2.1",
@@ -416,6 +486,43 @@
       "lastSeen": "2026-07-18"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-810578301bae6f25",
+      "eventId": "EV-c8f3db31cb266b64",
+      "dataDate": "2026-07-30",
+      "date": "2025-10-01",
+      "title": "Stellantis 与 Mistral AI 扩大合作，加速企业级 AI 应用",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Stellantis",
+      "vendor": "Mistral AI Expand Their",
+      "industry": "未披露",
+      "useCase": "Accelerate Enterprise-Wide AI Adoption",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Stellantis and Mistral AI elevate their partnership from pilots to company-wide AI deployment, embedding generative AI across operations."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH",
+      "entityIds": [
+        "EN-8652f6cd9088f1fa",
+        "EN-819101e7958d70f8",
+        "EN-c04bd5ebd10ab696"
+      ]
+    }
+  ],
   "hardware": []
 }

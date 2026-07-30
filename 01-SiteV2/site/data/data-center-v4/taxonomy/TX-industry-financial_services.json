@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-industry-financial_services",
@@ -43,6 +43,7 @@
       "EV-bad301e14b034fbd",
       "EV-9cd1cb31e2adf5dc",
       "EV-5caf7f83664b1a2c",
+      "EV-3a0596df367df665",
       "EV-4b44f5eafecf4922",
       "EV-f7aa6d43b75238fb",
       "EV-889f518dcce85a8f"
@@ -87,6 +88,7 @@
       "EN-26a060957221fd5d",
       "EN-4e721fae5963494d",
       "EN-a4eee620f5a081bd",
+      "EN-18bb438ae33bc120",
       "EN-18b4bbfd60f4137e",
       "EN-6eedfb906b1652fb",
       "EN-32e83e92d45d71f6"
@@ -103,7 +105,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2025-09-10",
-    "lastSeen": "2026-07-28"
+    "lastSeen": "2026-07-30"
   },
   "events": [
     {
@@ -2665,6 +2667,108 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-3a0596df367df665",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "HANDBOOK.md 基准测试：长政策文档无法可靠约束AI智能体行为",
+      "originalTitle": "",
+      "subject": "HANDBOOK.md 基准测试：长",
+      "action": "政策",
+      "object": "文档无法可靠约束AI智能体行为",
+      "metrics": [
+        "36.2%",
+        "25%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-18bb438ae33bc120"
+      ],
+      "entityNames": [
+        "HANDBOOK.md 基准测试"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arxiv.org/abs/2607.25398",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
       "id": "EV-4b44f5eafecf4922",
       "dataDate": "2026-07-18",
       "date": "2026-07-17",
@@ -3063,8 +3167,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -3177,6 +3281,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-cc65a81f48e10ceb",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -3250,6 +3355,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1068d4195842b580",
+        "EV-8803f626b5df5ab0",
+        "EV-014ca842352f6b49",
+        "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
         "EV-7c934b299d048348",
         "EV-96cfe78a2dee2182",
@@ -3384,9 +3493,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-741728825db1f14e",
+        "EV-bce258f8f915ff5f",
+        "EV-eed7fb721dc2f9de",
+        "EV-20b82e2a2cb33a0e",
+        "EV-a89354fc03158eaa",
         "EV-e86fcdb67a637c4c",
         "EV-0eef30387327e73f",
-        "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
         "EV-d709599eddf5db04",
@@ -3432,9 +3545,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -3462,11 +3575,11 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
-        "EN-d1ad14d4ad57d207",
         "EN-74692028630429c7",
         "EN-c70eca6b0f88f44d",
         "EN-52fc33ae4d101a5d",
@@ -3486,7 +3599,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-11507a0e2f5e69d5",
@@ -3723,8 +3836,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
@@ -3751,8 +3864,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
@@ -3896,7 +4009,10 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
+        "EV-1068d4195842b580",
+        "EV-6f433ccff3dce657",
+        "EV-c181194902a43422",
+        "EV-dc429e4943ed80de",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
         "EV-ab93c7a2f4178e93",
@@ -3909,6 +4025,7 @@
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
+        "EV-ec76f0db15b1781a",
         "EV-32fb6014149bafdd",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
@@ -4052,6 +4169,9 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-741728825db1f14e",
+        "EV-abb190c09b08067c",
+        "EV-d46aa5935d9bb672",
         "EV-a61345459e796a19",
         "EV-0eef30387327e73f",
         "EV-ae9142b65fa86975",
@@ -4095,9 +4215,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
@@ -4150,7 +4270,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-5e757c7fc575c41e",
@@ -4314,6 +4434,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-16bb9d0c6a2a7115",
+        "EV-fd9d6fae44ff4a15",
         "EV-7a4d1e871dcd3b1f",
         "EV-3eb44a239ebef4b0",
         "EV-272aea63d4e50349",
@@ -4370,12 +4492,13 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
-        "EV-bce258f8f915ff5f",
+        "EV-741728825db1f14e",
         "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
         "EV-3da14e3743571e92",
         "EV-d9a78a839d6c628f",
+        "EV-fd8754ce93db36a7",
         "EV-1587a760d81451be",
         "EV-33e7429a7bc94840",
         "EV-022d1f3160d94048",
@@ -4384,9 +4507,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -4424,7 +4547,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -4508,7 +4631,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4545,6 +4670,10 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-1068d4195842b580",
+        "EV-3ebf23c149dde19d",
+        "EV-b78644de93b5a96d",
+        "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
         "EV-33e98b8bbd0a11b1",
@@ -4663,8 +4792,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -4687,21 +4816,23 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-use_case-content_creation",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -4709,7 +4840,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -4867,6 +4998,29 @@
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-16"
+    },
+    {
+      "id": "EN-18bb438ae33bc120",
+      "name": "HANDBOOK.md 基准测试",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3a0596df367df665"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-technology-model_context_protocol"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-18b4bbfd60f4137e",

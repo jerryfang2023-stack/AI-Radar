@@ -1,0 +1,1234 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-30",
+    "generated_at": "2026-07-30T03:19:06.887Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 5,
+      "auto_published": 2,
+      "blocked": 3,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-fe9a9306d574c1ba",
+      "triggered_by_event_id": "EV-2dff88f85e3bce86",
+      "as_of_date": "2026-07-30",
+      "company": {
+        "entity_id": "EN-770ef1d2b6e24172",
+        "name": "Pangram",
+        "full_name": "Pangram Labs",
+        "website": "pangram.com",
+        "summary": "Pangram 是一家总部位于纽约的 AI 检测初创公司，致力于开发区分人类生成内容与 AI 生成内容的工具，以应对互联网上泛滥的 AI 生成信息。",
+        "headquarters": "Brooklyn, New York, United States",
+        "founders": [
+          {
+            "name": "Max Spero",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d8e4be597a9ace83",
+                "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
+              },
+              {
+                "source_id": "FISRC-9b39ac49a347d5c1",
+                "quote": "Max Spero Cofounder & Ceo"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bradley Emi",
+            "role": "联合创始人兼 CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d8e4be597a9ace83",
+                "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
+              },
+              {
+                "source_id": "FISRC-9b39ac49a347d5c1",
+                "quote": "Bradley Emi Co-Founder And Cto"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "11-20",
+          "observed_at": "2026-07-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b39ac49a347d5c1",
+              "quote": "Employees 11-20"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d8e4be597a9ace83",
+            "quote": "New York-based AI detection startup Pangram"
+          },
+          {
+            "source_id": "FISRC-9b39ac49a347d5c1",
+            "quote": "Headquarters Brooklyn, New York, United States"
+          }
+        ]
+      },
+      "financing": {
+        "round": "未披露",
+        "amount": "$9,000,000",
+        "total_raised": "$2,700,000",
+        "announced_at": "2026-07-29",
+        "investors": [
+          {
+            "name": "Haystack",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d8e4be597a9ace83",
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ScOp",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d8e4be597a9ace83",
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Script Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d8e4be597a9ace83",
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cadenza",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d8e4be597a9ace83",
+                "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d8e4be597a9ace83",
+            "quote": "Pangram raises $9M to detect it"
+          },
+          {
+            "source_id": "FISRC-9b39ac49a347d5c1",
+            "quote": "Total funding $2,700,000"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Pangram 4",
+          "description": "下一代 AI 文本检测模型，能够识别 AI 辅助写作和混合人机内容，准确率超过 99%，并能检测 AI 人性化程序。",
+          "target_customers": "出版商、学校、大学、招聘人员、内容平台",
+          "features": [
+            "检测 AI 辅助写作和混合人机内容",
+            "检测 AI 人性化程序",
+            "准确率超过 99%"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content, plus it can more easily detect AI humanizer programs."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Pangram Image",
+          "description": "AI 图像检测模型，通过分析像素级分布来识别 AI 生成的图像，目前处于研究预览阶段。",
+          "target_customers": "艺术家、创作者、内容审核团队",
+          "features": [
+            "检测多种 AI 图像生成器的输出",
+            "提供热力图显示 AI 生成区域",
+            "检测真实照片中的 AI 图像"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "an AI image detection model, Pangram Image"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Pangram Image is a model for detecting AI-generated images."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Chrome 扩展程序",
+          "description": "浏览器扩展，可实时标记 X、LinkedIn、Substack、Reddit 和 Medium 等平台上的帖子，并提供信息流健康度评分。",
+          "target_customers": "个人用户",
+          "features": [
+            "实时标记社交媒体帖子",
+            "提供信息流健康度评分"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "download the Chrome extension, which automatically labels posts in real time on X, LinkedIn, Substack, Reddit, and Medium. It also provides a feed health score with a percentage breakdown of human versus AI content on your screen."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Quora",
+          "industry": "社交问答平台",
+          "use_case": "使用 Pangram 识别和标记 AI 生成的回答，以维护平台内容质量。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora"
+            },
+            {
+              "source_id": "FISRC-ffa924dedeedbea6",
+              "quote": "Pangram Labs partnered with Quora to help them take on spammers using ChatGPT to respond to posts with inauthentic, AI-generated answers."
+            }
+          ]
+        },
+        {
+          "name": "学校和大学",
+          "industry": "教育",
+          "use_case": "通过 API 使用 Pangram 检测学术作品中的 AI 生成内容。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+            }
+          ]
+        },
+        {
+          "name": "出版商和代理商",
+          "industry": "出版",
+          "use_case": "通过 API 使用 Pangram 检测投稿中的 AI 生成内容。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+            }
+          ]
+        },
+        {
+          "name": "招聘人员",
+          "industry": "人力资源",
+          "use_case": "通过 API 使用 Pangram 检测求职材料中的 AI 生成内容。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Winston AI",
+          "product": "AI 检测工具",
+          "scenario": "检测文本是否为 AI 生成",
+          "target_customer": "教育机构、内容创作者",
+          "funding_summary": "",
+          "core_difference": "Pangram 4 文本检测模型准确率超过 99%，而 Winston AI 在内部基准测试中准确率为 94.27%（干净数据）和 95.83%（增强数据）。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Winston AI 94.27%"
+            }
+          ]
+        },
+        {
+          "name": "Originality.ai",
+          "product": "AI 检测工具",
+          "scenario": "检测文本是否为 AI 生成",
+          "target_customer": "内容营销人员、出版商",
+          "funding_summary": "",
+          "core_difference": "Pangram 4 文本检测模型准确率超过 99%，而 Originality.ai 在内部基准测试中准确率为 87.67%（干净数据）和 84.17%（增强数据）。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "AI or Not 87.67%"
+            }
+          ]
+        },
+        {
+          "name": "Copyleaks",
+          "product": "AI 检测工具",
+          "scenario": "检测文本是否为 AI 生成",
+          "target_customer": "教育机构、企业",
+          "funding_summary": "",
+          "core_difference": "Pangram 4 文本检测模型准确率超过 99%，而 Copyleaks 在内部基准测试中准确率为 98.35%（干净数据）和 90.68%（增强数据）。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Resemble AI 98.35%"
+            }
+          ]
+        },
+        {
+          "name": "GPTZero",
+          "product": "AI 检测工具",
+          "scenario": "检测文本是否为 AI 生成",
+          "target_customer": "教育机构",
+          "funding_summary": "",
+          "core_difference": "Pangram 4 文本检测模型准确率超过 99%，而 GPTZero 在内部基准测试中准确率为 99.13%（干净数据）和 97.57%（增强数据）。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "SightEngine 99.13%"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Pangram 4 文本检测准确率",
+          "value": "超过 99%",
+          "observed_at": "2026-07-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content"
+            }
+          ]
+        },
+        {
+          "label": "Pangram Image 内部基准测试准确率",
+          "value": "99.5%",
+          "observed_at": "2026-07-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Pangram Image achieves 99.5% accuracy, compared to the next closest competitor at 98%."
+            }
+          ]
+        },
+        {
+          "label": "Pangram Image 在 ReLAION 数据集上的误报率",
+          "value": "0.16%",
+          "observed_at": "2026-07-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Pangram Image demonstrates a false positive rate of 0.16%, approximately 1 in 625."
+            }
+          ]
+        },
+        {
+          "label": "Quora 识别出的 AI 生成帖子数量",
+          "value": "超过 100 万",
+          "observed_at": "2024-09-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ffa924dedeedbea6",
+              "quote": "Quora has identified more than 1 million AI-generated posts"
+            }
+          ]
+        },
+        {
+          "label": "月度订阅费用",
+          "value": "$20",
+          "observed_at": "2026-07-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Users can access Pangram via a $20-per-month subscription on the web"
+            }
+          ]
+        },
+        {
+          "label": "估计年收入",
+          "value": "$1,026,660",
+          "observed_at": "2026-07-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b39ac49a347d5c1",
+              "quote": "Annual revenue $1,026,660"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Max Spero",
+          "quote": "Our model is learning the stylistic differences and the choices that AI makes consistently and is able to use that to learn what makes something AI-generated with high confidence.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Our model is learning the stylistic differences and the choices that AI makes consistently and is able to use that to learn what makes something AI-generated with high confidence"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 生成内容泛滥所催生的检测需求。Pangram 的融资依赖于已验证的技术信号：其文本检测模型准确率超过 99%，误报率仅为万分之一；图像检测模型在内部基准测试中达到 99.5% 的准确率。此外，Substack 和 Quora 等平台已集成其技术，验证了商业落地能力。但判断的证据边界在于，这些指标均来自公司内部测试或有限的外部基准，且公司估计估值仅为 330 万美元，与 900 万美元融资额形成反差，可能表明估值存在不确定性或数据滞后。",
+        "validated_signals": [
+          "Pangram 4 文本检测模型准确率超过 99%，误报率约万分之一。",
+          "Pangram Image 在内部基准测试中准确率达 99.5%，在 ReLAION 数据集上误报率为 0.16%。",
+          "Substack 和 Quora 等平台已集成 Pangram 技术，Quora 已识别超过 100 万篇 AI 生成帖子。"
+        ],
+        "risks": [
+          "AI 检测技术存在固有局限性，模型在测试中仍会将人类撰写的句子误标为 AI 生成，尤其在枯燥或公式化的写作风格下。",
+          "随着生成式 AI 模型的快速迭代，检测模型需要持续更新以保持有效性，这可能带来高昂的研发成本。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 内容检测"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Pangram 4",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Pangram says the new text detection model is over 99% accurate at finding AI-assisted writing and mixed human-AI content, plus it can more easily detect AI humanizer programs."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Pangram Image",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "an AI image detection model, Pangram Image"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Pangram Image is a model for detecting AI-generated images."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Chrome 扩展程序",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "download the Chrome extension, which automatically labels posts in real time on X, LinkedIn, Substack, Reddit, and Medium. It also provides a feed health score with a percentage breakdown of human versus AI content on your screen."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Max Spero",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
+            },
+            {
+              "source_id": "FISRC-9b39ac49a347d5c1",
+              "quote": "Max Spero Cofounder & Ceo"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Bradley Emi",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Stanford AI and machine learning grads Max Spero and Bradley Emi launched Pangram about two years ago"
+            },
+            {
+              "source_id": "FISRC-9b39ac49a347d5c1",
+              "quote": "Bradley Emi Co-Founder And Cto"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Haystack",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ScOp",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Script Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cadenza",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "with participation from Haystack, ScOp, Script Capital, and Cadenza"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Quora",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora"
+            },
+            {
+              "source_id": "FISRC-ffa924dedeedbea6",
+              "quote": "Pangram Labs partnered with Quora to help them take on spammers using ChatGPT to respond to posts with inauthentic, AI-generated answers."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "学校和大学",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "出版商和代理商",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "招聘人员",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Other API customers include Quora, schools and universities, publishers and agents, and recruiters"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Winston AI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Winston AI 94.27%"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Originality.ai",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "AI or Not 87.67%"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Copyleaks",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "Resemble AI 98.35%"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "GPTZero",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d8e4be597a9ace83",
+              "quote": "Competitors like Winston AI, Originality.ai, Copyleaks, and GPTZero are chasing the same demand"
+            },
+            {
+              "source_id": "FISRC-1a2a0a8dfddaae12",
+              "quote": "SightEngine 99.13%"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2dff88f85e3bce86",
+          "date": "2026-07-29",
+          "title": "Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型",
+          "amount": "$9 million",
+          "source_refs": [
+            "SA-ba6bfaafaf0f85be"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d8e4be597a9ace83",
+          "source_url": "https://techcrunch.com/2026/07/29/as-ai-content-floods-the-internet-pangram-raises-9m-to-detect-it",
+          "title": "Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-30T03:08:38.856Z",
+          "content_hash": "ec0790da5452a390",
+          "source_artifact_id": "SA-ba6bfaafaf0f85be",
+          "raw_id": "RAW-2778aad184c84624"
+        },
+        {
+          "source_id": "FISRC-9b39ac49a347d5c1",
+          "source_url": "https://prospeo.io/c/pangram-labs-revenue",
+          "title": "Pangram Labs Revenue, Funding & Valuation",
+          "publisher": "prospeo.io",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-30T03:18:09.628Z",
+          "content_hash": "bd730742ae25a8c1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1a2a0a8dfddaae12",
+          "source_url": "https://www.pangram.com/blog/introducing-pangram-image-detection",
+          "title": "Introducing Pangram Image Detection (Research Preview) | Pangram Labs",
+          "publisher": "pangram.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-30T03:18:11.733Z",
+          "content_hash": "3585aba58c9f8490",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ffa924dedeedbea6",
+          "source_url": "https://www.pangram.com/blog/quora-case-study",
+          "title": "How Quora uses Pangram to handle AI-written answers | Pangram Labs",
+          "publisher": "pangram.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-30T03:18:12.704Z",
+          "content_hash": "766b45196cc4ab7e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-30T03:19:06.866Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-30T03:19:06.866Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-d77c00123bd7daac",
+      "triggered_by_event_id": "EV-f1553722b4ce43af",
+      "as_of_date": "2026-07-30",
+      "company": {
+        "entity_id": "EN-b80e0af617d0f8ff",
+        "name": "Hint",
+        "full_name": "Hint",
+        "website": "https://hinthome.com/",
+        "summary": "Hint 是一家由 Martha Stewart 联合创办的 AI 家居管理初创公司，通过 AI 助手帮助房主管理维护、能源、保险和文件等事务。",
+        "headquarters": "New York",
+        "founders": [
+          {
+            "name": "Martha Stewart",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7fb90907dc18444a",
+                "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kyle Rush",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7fb90907dc18444a",
+                "quote": "Co-founder and CTO at Hint, New York-based Kyle Rush"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Yih-Han Ma",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7fb90907dc18444a",
+                "quote": "Yih-Han Ma , co-founder and CEO, based out of Charlotte, North Carolina"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7fb90907dc18444a",
+            "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint"
+          },
+          {
+            "source_id": "FISRC-c3980470a5917efd",
+            "quote": "Martha Stewart, home services executive Yih-Han Ma, and AI entrepreneur Kyle Rush announced the launch of Hint"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$10 million",
+        "total_raised": "$10 million",
+        "announced_at": "2026-07-29",
+        "investors": [
+          {
+            "name": "Slow Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c3980470a5917efd",
+                "quote": "a $10 million seed financing round led by Slow Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c3980470a5917efd",
+            "quote": "a $10 million seed financing round led by Slow Ventures, with participation from Montauk Capital, Tusk Venture Partners, Amplo, Energy Impact Partners, Hannah Grey VC, and Brian Kelly."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Hint App",
+          "description": "一款 AI 原生的家居管理平台，通过单一数字界面帮助房主主动管理维护、能源、保险和文件，提供个性化建议和实时监测。",
+          "target_customers": "房主",
+          "features": [
+            "个性化维护排程与主动推送通知",
+            "基于公共数据和上传文件的家庭档案构建",
+            "家电照片识别与维护指导",
+            "家庭评分",
+            "AI 聊天助手查询家庭相关文件与问题",
+            "能源管理与脱碳激励导航",
+            "土壤与空气质量分析",
+            "保险理赔评估与指导"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7fb90907dc18444a",
+              "quote": "an app that leverages AI technology to manage the tasks surrounding home maintenance and management"
+            },
+            {
+              "source_id": "FISRC-c3980470a5917efd",
+              "quote": "an always-on, AI-native home management platform designed to help homeowners proactively manage their homes through a single digital interface"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [],
+      "quotes": [
+        {
+          "speaker": "Martha Stewart",
+          "quote": "I have always been passionate about showing people how to care for and beautify their homes. Hint brings that philosophy to more people, making the knowledge and expertise behind thoughtful homeownership accessible to everyone.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c3980470a5917efd",
+              "quote": "I have always been passionate about showing people how to care for and beautify their homes. Hint brings that philosophy to more people, making the knowledge and expertise behind thoughtful homeownership accessible to everyone."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Martha Stewart 的个人品牌与领域知识能否将家居管理从被动维修转变为主动的 AI 驱动决策平台。本轮 1000 万美元种子轮融资的估值未披露，但投资逻辑依赖于已验证信号：Martha Stewart 作为联合创始人的深度参与（非挂名），以及团队在 AI 应用和家居服务领域的复合经验。证据边界限于创始团队的背景和产品愿景，尚未有用户规模或收入数据支撑。",
+        "validated_signals": [
+          "Martha Stewart 作为联合创始人深度参与产品打磨，每周两次与团队审查应用",
+          "创始团队具备 AI 工程（Kyle Rush 曾领导 Casper 工程团队）和家居服务（Yih-Han Ma 曾在 Red Ventures 建立家居服务品牌）的复合背景",
+          "产品已从脱碳激励工具转向更广泛的 AI 家居管理平台，显示出市场适应性"
+        ],
+        "risks": [
+          "产品尚未公开上线，缺乏用户规模、留存率和付费转化等关键商业指标，当前投资完全基于创始团队和愿景"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 家居管理"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hint App",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7fb90907dc18444a",
+              "quote": "an app that leverages AI technology to manage the tasks surrounding home maintenance and management"
+            },
+            {
+              "source_id": "FISRC-c3980470a5917efd",
+              "quote": "an always-on, AI-native home management platform designed to help homeowners proactively manage their homes through a single digital interface"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Martha Stewart",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7fb90907dc18444a",
+              "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Kyle Rush",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7fb90907dc18444a",
+              "quote": "Co-founder and CTO at Hint, New York-based Kyle Rush"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yih-Han Ma",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7fb90907dc18444a",
+              "quote": "Yih-Han Ma , co-founder and CEO, based out of Charlotte, North Carolina"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Slow Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c3980470a5917efd",
+              "quote": "a $10 million seed financing round led by Slow Ventures"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f1553722b4ce43af",
+          "date": "2026-07-29",
+          "title": "Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手",
+          "amount": "$10 million",
+          "source_refs": [
+            "SA-3b86eb3cdec6569d"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7fb90907dc18444a",
+          "source_url": "https://techcrunch.com/2026/07/29/hint-a-new-ai-startup-co-founded-by-martha-stewart-offers-an-ai-assistant-for-homeowners",
+          "title": "Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-30T03:08:07.768Z",
+          "content_hash": "6c8f13ea3672da72",
+          "source_artifact_id": "SA-3b86eb3cdec6569d",
+          "raw_id": "RAW-d5d1c53a92e0c2cc"
+        },
+        {
+          "source_id": "FISRC-c3980470a5917efd",
+          "source_url": "https://pulse2.com/hint-10-million-seed-round-raised-to-launch-ai-powered-home-management-platform/",
+          "title": "Hint: $10 Million Seed Round Raised To Launch AI-Powered Home Management Platform",
+          "publisher": "pulse2.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-30T03:18:14.223Z",
+          "content_hash": "8bc83e9e655d383b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-30T03:18:53.555Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-30T03:18:53.555Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-f1553722b4ce43af",
+      "company_name": "Hint",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手\" funding company investors product",
+        "\"Hint\" \"$10 million\" funding investors round",
+        "\"Hint\" product customers case study",
+        "\"Hint\" \"Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手\" competitors product use case",
+        "\"Hint\" \"$10 million\" investor quote why invested",
+        "\"Hint\" \"$10 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hint\" \"$10 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hint\" \"$10 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hint\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hint\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hint\" \"Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hint\" \"Martha Stewart 联合创办 AI 初创公司 Hint，为房主提供家居管理 AI 助手\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hint\" \"$10 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hint\" \"$10 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hint\" \"$10 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hint\" \"$10 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-30T03:19:06.879Z"
+    },
+    {
+      "event_id": "EV-9f847fced6da7c4c",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-30T03:19:06.879Z"
+    },
+    {
+      "event_id": "EV-8aa51e324eca8fc2",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-30T03:19:06.879Z"
+    },
+    {
+      "event_id": "EV-2dff88f85e3bce86",
+      "company_name": "Pangram",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型\" funding company investors product",
+        "\"Pangram\" \"$9 million\" funding investors round",
+        "\"Pangram\" product customers case study",
+        "\"Pangram\" \"Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型\" competitors product use case",
+        "\"Pangram\" \"$9 million\" investor quote why invested",
+        "\"Pangram\" \"$9 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pangram\" \"$9 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pangram\" \"$9 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pangram\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pangram\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pangram\" \"Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pangram\" \"Pangram 完成 900 万美元融资，推出 AI 文本与图像检测模型\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pangram\" \"$9 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pangram\" \"$9 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pangram\" \"$9 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pangram\" \"$9 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-30T03:19:06.879Z"
+    },
+    {
+      "event_id": "EV-a3ba586cbc57b5fd",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-30T03:19:06.879Z"
+    }
+  ]
+}

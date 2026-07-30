@@ -1,10 +1,10 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-07-29T13:33:07.873Z",
+    "generatedAt": "2026-07-30T03:19:10.553Z",
     "dateRange": {
-      "start": "2026-07-23",
-      "end": "2026-07-29"
+      "start": "2026-07-24",
+      "end": "2026-07-30"
     },
     "source": "Data Center V4 manifest + collection-telemetry-v1",
     "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
@@ -13,16 +13,16 @@ window.WaveSightPipelineDashboard = {
     {
       "id": "collection",
       "label": "采集",
-      "status": "passed",
+      "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 159,
-        "capture_failed": 0,
-        "raw_documents": 159
+        "capture_succeeded": 179,
+        "capture_failed": 1,
+        "raw_documents": 179
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/manifest.json",
-        "agent-workflow/reports/2026-07-29-guanlan-daily-monitor-log.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/manifest.json",
+        "agent-workflow/reports/2026-07-30-guanlan-daily-monitor-log.md"
       ]
     },
     {
@@ -30,20 +30,20 @@ window.WaveSightPipelineDashboard = {
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 159,
+        "accepted_claims": 98,
         "rejected_claims": 0,
-        "accepted": 159,
+        "accepted": 98,
         "rejected": 0,
-        "pending_claims": 0,
-        "canonical_events": 43,
-        "entities": 70,
-        "relationships": 159,
+        "pending_claims": 8,
+        "canonical_events": 38,
+        "entities": 47,
+        "relationships": 106,
         "conflicts": 0,
-        "qa_queue": 111
+        "qa_queue": 141
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/manifest.json",
-        "agent-workflow/reports/2026-07-29-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/manifest.json",
+        "agent-workflow/reports/2026-07-30-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -57,7 +57,7 @@ window.WaveSightPipelineDashboard = {
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-07-29-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-07-30-persistent-asset-manifest.json"
       ]
     },
     {
@@ -68,43 +68,43 @@ window.WaveSightPipelineDashboard = {
         "v4_bundle_ready": true
       },
       "evidence": [
-        "agent-workflow/reports/2026-07-29-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-07-30-persistent-asset-manifest.json"
       ]
     }
   ],
   "latest": {
-    "date": "2026-07-29",
-    "label": "2026.07.29",
-    "shortLabel": "07.29",
-    "discovered": 159,
-    "captured": 159,
-    "claims": 159,
-    "events": 43,
-    "entities": 70,
-    "relationships": 159,
+    "date": "2026-07-30",
+    "label": "2026.07.30",
+    "shortLabel": "07.30",
+    "discovered": 179,
+    "captured": 179,
+    "claims": 106,
+    "events": 38,
+    "entities": 47,
+    "relationships": 106,
     "conflicts": 0,
-    "qaQueue": 111,
-    "telemetryDate": "2026-07-29",
+    "qaQueue": 141,
+    "telemetryDate": "2026-07-30",
     "collection": {
       "discovered": 290,
-      "capture_succeeded": 159,
-      "capture_failed": 0,
-      "raw_documents": 159
+      "capture_succeeded": 179,
+      "capture_failed": 1,
+      "raw_documents": 179
     },
     "factBuild": {
-      "accepted_claims": 159,
+      "accepted_claims": 98,
       "rejected_claims": 0,
-      "accepted": 159,
+      "accepted": 98,
       "rejected": 0,
-      "pending_claims": 0,
-      "canonical_events": 43,
-      "entities": 70,
-      "relationships": 159,
+      "pending_claims": 8,
+      "canonical_events": 38,
+      "entities": 47,
+      "relationships": 106,
       "conflicts": 0,
-      "qa_queue": 111,
+      "qa_queue": 141,
       "qa_by_status": {
-        "review_optional": 86,
-        "open": 25
+        "review_optional": 120,
+        "open": 21
       }
     },
     "applicationProjection": {
@@ -119,6 +119,19 @@ window.WaveSightPipelineDashboard = {
   },
   "days": [
     {
+      "date": "2026-07-30",
+      "label": "2026.07.30",
+      "shortLabel": "07.30",
+      "discovered": 179,
+      "captured": 179,
+      "claims": 106,
+      "events": 38,
+      "entities": 47,
+      "relationships": 106,
+      "conflicts": 0,
+      "qaQueue": 141
+    },
+    {
       "date": "2026-07-29",
       "label": "2026.07.29",
       "shortLabel": "07.29",
@@ -129,7 +142,7 @@ window.WaveSightPipelineDashboard = {
       "entities": 70,
       "relationships": 159,
       "conflicts": 0,
-      "qaQueue": 111
+      "qaQueue": 110
     },
     {
       "date": "2026-07-28",
@@ -195,37 +208,26 @@ window.WaveSightPipelineDashboard = {
       "relationships": 180,
       "conflicts": 0,
       "qaQueue": 109
-    },
-    {
-      "date": "2026-07-23",
-      "label": "2026.07.23",
-      "shortLabel": "07.23",
-      "discovered": 163,
-      "captured": 163,
-      "claims": 193,
-      "events": 59,
-      "entities": 86,
-      "relationships": 193,
-      "conflicts": 0,
-      "qaQueue": 102
     }
   ],
   "totals": {
-    "discovered": 1001,
-    "captured": 1001,
-    "claims": 1065,
-    "events": 307,
-    "entities": 466,
-    "relationships": 1065,
+    "discovered": 1017,
+    "captured": 1017,
+    "claims": 978,
+    "events": 286,
+    "entities": 427,
+    "relationships": 978,
     "conflicts": 0,
-    "qaQueue": 675
+    "qaQueue": 713
   },
   "v4Gate": {
     "status": "passed",
-    "manifest_date": "2026-07-29",
-    "gate_date": "2026-07-29",
+    "manifest_date": "2026-07-30",
+    "gate_date": "2026-07-30",
     "failures": [],
-    "warnings": []
+    "warnings": [
+      "No source-bounded hardware projection was produced."
+    ]
   },
   "compatibility": {
     "status": "retired_archive",

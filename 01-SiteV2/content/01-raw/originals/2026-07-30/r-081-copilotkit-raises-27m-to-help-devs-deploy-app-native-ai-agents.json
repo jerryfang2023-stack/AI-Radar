@@ -1,0 +1,284 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-081",
+  "title": "CopilotKit raises $27M to help devs deploy app-native AI agents ...",
+  "title_zh": "CopilotKit 融资 2700 万美元，助力开发者部署应用原生 AI 智能体",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://techcrunch.com/2026/05/05/copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents/",
+  "canonical_url": "https://techcrunch.com/2026/05/05/copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "news",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_market_trend",
+  "search_path": "a_media_gdelt",
+  "search_path_label": "A 级媒体 / GDELT 路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-05-05T00:00:00.000Z",
+  "collected_at": "2026-07-30T03:09:00.448Z",
+  "language": "mixed",
+  "full_text": "Image Credits: Copilotkit\nAI\nCopilotKit raises $27M to help devs deploy app-native AI agents\nRam Iyer\n7:07 AM PDT · May 5, 2026\nMany companies today provide AI simply as a chatbot inside their apps: You type in (or dictate) what you want it to do, and the AI bot goes and tries to do it. Still, the experience tends to feel clunky. A text-based UI doesn’t always translate to a smooth experience; for example, if you want to use a travel app to book an entire itinerary but have to scan through reams of text.\nAccording to the founders of CopilotKit , that approach doesn’t make the most of what AI agents and LLMs can do. The company’s co-founders, Atai Barkai (pictured above, right) and Uli Barkai (pictured above, left), believe the way forward is to enable agents to live inside applications, understand what users are doing, take actions, and show useful interfaces instead of just returning long blocks of text.\nThe company’s popular AG-UI protocol is aimed at the first part of that solution. The widely adopted, open source protocol standardizes how AI agents connect to and communicate with user interfaces (like a web browser or an app), providing features such as streaming chat, front-end tool calls, and state sharing to enable human-in-the-loop functionality. Essentially, AG-UI gives devs the framework and tools needed to deploy AI agents within their apps.\nCopilotKit is also building an enterprise toolkit on top of AG-UI, adding support, self-hosted deployment features, and other must-have offerings for businesses thinking of building agents into their product. To bring that toolkit to market, the Seattle-based startup has raised $27 million in a Series A round led by Glilot Capital, NFX, and SignalFire, TechCrunch has exclusively learned.\nThe flexible user interface is a particular selling point. CEO Atai Barkai told TechCrunch developers can use the startup’s framework to provide the specifications and building blocks for dynamic user interfaces, which an AI agent can then use to generate UIs to fit the context.\n“The agent can reply to you, not just with blocks of text, but with interactive UIs that are defined by your own company,” Atai explained. “If, for example, a user asks for breakdown of revenue by category, instead of getting this kind of big, impenetrable paragraph, you get a pie chart, and it’s your own design of the pie chart that the user can interact with […] So all of your agents can, very trivially, speak to a UI and use these catalog of components and show that to users.”\nAtai also noted that CopilotKit’s toolkit gives developers full control over how much their AI agent can change the UI, to the point where they can choose to have the interface be “pixel-perfect” or just provide broad building blocks that the AI can put together as required.\nThe funding follows a period of strong adoption both for AG-UI and CopilotKit. The protocol, which works alongside the widely adopted Model Context Protocol (MCP) and Agent2Agent (A2A) protocol , is today supported by major AI infrastructure providers like Google , Microsoft , Amazon , and Oracle , as well as popular frameworks like LangChain , Mastra , PydanticAI , and Agno .\nAtai said CopilotKit and AG-UI (the company’s strongest claim to ecosystem relevance) see millions of installs per week, and that a large portion of Fortune 500 companies are using the protocol and the startup’s tools in production. Meanwhile, CopilotKit counts enterprise bigwigs like Deutsche Telekom, Docusign, Cisco, and S&P Global as enterprise customers.\nTo tap that growing interest, the company is also launching CopilotKit Enterprise Intelligence, a self-hostable offering that bundles a number of infrastructure features to fully deploy agents within apps.\nCopilotKit faces heated competition in the market for enterprise agents tools. Cloud platform Vercel’s open source AI SDK helps developers build AI applications with similar capabilities, and assistant-ui offers components for building AI chat interfaces. Meanwhile, OpenAI’s Apps SDK is also an option for building richer interfaces, though only inside ChatGPT.\nAtai argues that CopilotKit is different from those offerings because it takes a horizontal, enterprise-friendly approach rather than a vertically integrated one. Instead of offering a full-stack AI platform, CopilotKit aims to support whatever agent framework, cloud provider, or back end an enterprise already uses.\n“If there are two things we hear in almost every single enterprise conversation, enterprises want optionality and they want self-hosting,” he said. “Maybe they’re already using the Google, Amazon, Oracle, Microsoft, LangChain, Mastra stacks. They want optionality, and they want self-hosting, and these are two things that they don’t really get in the Vercel stack.”\nThat open positioning will be important to maintain. Companies that build on top of their own open source infrastructure often face a tension, which is that they want their technology to stay a neutral standard, but they also need to build a business on top of it. But Atai said that AG-UI is a fully open protocol, and that CopilotKit’s commercial product is meant to harden the open source stack for enterprises, not replace it.\n“They’re very much complementary. Our strategy is to be the default choice in the ecosystem, and then to monetize the top enterprises,” Uli, the startup’s head of growth, added. “So it’s very much in our interest that the open source is the best out there, and the 95% of users can just go build and get started without paying anyone or talking to anyone.”\nThe company currently has about 25 employees and plans to use the new funding to grow its team.\nTopics\nAG-UI , AI , AI agents , copilotkit , generative ui , open source software\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nLibrarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech\nAmanda Silberling\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nPrentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M\nMarina Temkin\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nOpenAI makes ChatGPT Health available to all US users\nIvan Mehta\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nLoading the next article\nError loading the next article",
+  "clean_text": "Image Credits: Copilotkit\nAI\nCopilotKit raises $27M to help devs deploy app-native AI agents\nRam Iyer\n7:07 AM PDT · May 5, 2026\nMany companies today provide AI simply as a chatbot inside their apps: You type in (or dictate) what you want it to do, and the AI bot goes and tries to do it. Still, the experience tends to feel clunky. A text-based UI doesn’t always translate to a smooth experience; for example, if you want to use a travel app to book an entire itinerary but have to scan through reams of text.\nAccording to the founders of CopilotKit , that approach doesn’t make the most of what AI agents and LLMs can do. The company’s co-founders, Atai Barkai (pictured above, right) and Uli Barkai (pictured above, left), believe the way forward is to enable agents to live inside applications, understand what users are doing, take actions, and show useful interfaces instead of just returning long blocks of text.\nThe company’s popular AG-UI protocol is aimed at the first part of that solution. The widely adopted, open source protocol standardizes how AI agents connect to and communicate with user interfaces (like a web browser or an app), providing features such as streaming chat, front-end tool calls, and state sharing to enable human-in-the-loop functionality. Essentially, AG-UI gives devs the framework and tools needed to deploy AI agents within their apps.\nCopilotKit is also building an enterprise toolkit on top of AG-UI, adding support, self-hosted deployment features, and other must-have offerings for businesses thinking of building agents into their product. To bring that toolkit to market, the Seattle-based startup has raised $27 million in a Series A round led by Glilot Capital, NFX, and SignalFire, TechCrunch has exclusively learned.\nThe flexible user interface is a particular selling point. CEO Atai Barkai told TechCrunch developers can use the startup’s framework to provide the specifications and building blocks for dynamic user interfaces, which an AI agent can then use to generate UIs to fit the context.\n“The agent can reply to you, not just with blocks of text, but with interactive UIs that are defined by your own company,” Atai explained. “If, for example, a user asks for breakdown of revenue by category, instead of getting this kind of big, impenetrable paragraph, you get a pie chart, and it’s your own design of the pie chart that the user can interact with […] So all of your agents can, very trivially, speak to a UI and use these catalog of components and show that to users.”\nAtai also noted that CopilotKit’s toolkit gives developers full control over how much their AI agent can change the UI, to the point where they can choose to have the interface be “pixel-perfect” or just provide broad building blocks that the AI can put together as required.\nThe funding follows a period of strong adoption both for AG-UI and CopilotKit. The protocol, which works alongside the widely adopted Model Context Protocol (MCP) and Agent2Agent (A2A) protocol , is today supported by major AI infrastructure providers like Google , Microsoft , Amazon , and Oracle , as well as popular frameworks like LangChain , Mastra , PydanticAI , and Agno .\nAtai said CopilotKit and AG-UI (the company’s strongest claim to ecosystem relevance) see millions of installs per week, and that a large portion of Fortune 500 companies are using the protocol and the startup’s tools in production. Meanwhile, CopilotKit counts enterprise bigwigs like Deutsche Telekom, Docusign, Cisco, and S&P Global as enterprise customers.\nTo tap that growing interest, the company is also launching CopilotKit Enterprise Intelligence, a self-hostable offering that bundles a number of infrastructure features to fully deploy agents within apps.\nCopilotKit faces heated competition in the market for enterprise agents tools. Cloud platform Vercel’s open source AI SDK helps developers build AI applications with similar capabilities, and assistant-ui offers components for building AI chat interfaces. Meanwhile, OpenAI’s Apps SDK is also an option for building richer interfaces, though only inside ChatGPT.\nAtai argues that CopilotKit is different from those offerings because it takes a horizontal, enterprise-friendly approach rather than a vertically integrated one. Instead of offering a full-stack AI platform, CopilotKit aims to support whatever agent framework, cloud provider, or back end an enterprise already uses.\n“If there are two things we hear in almost every single enterprise conversation, enterprises want optionality and they want self-hosting,” he said. “Maybe they’re already using the Google, Amazon, Oracle, Microsoft, LangChain, Mastra stacks. They want optionality, and they want self-hosting, and these are two things that they don’t really get in the Vercel stack.”\nThat open positioning will be important to maintain. Companies that build on top of their own open source infrastructure often face a tension, which is that they want their technology to stay a neutral standard, but they also need to build a business on top of it. But Atai said that AG-UI is a fully open protocol, and that CopilotKit’s commercial product is meant to harden the open source stack for enterprises, not replace it.\n“They’re very much complementary. Our strategy is to be the default choice in the ecosystem, and then to monetize the top enterprises,” Uli, the startup’s head of growth, added. “So it’s very much in our interest that the open source is the best out there, and the 95% of users can just go build and get started without paying anyone or talking to anyone.”\nThe company currently has about 25 employees and plans to use the new funding to grow its team.\nTopics\nAG-UI , AI , AI agents , copilotkit , generative ui , open source software\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nLibrarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech\nAmanda Silberling\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nPrentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M\nMarina Temkin\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nOpenAI makes ChatGPT Health available to all US users\nIvan Mehta\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nLoading the next article\nError loading the next article",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-081-copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-081-copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7113,
+    "paragraph_count": 34,
+    "sentence_count": 42,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0003,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 7113,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "97a7776c49cb7781",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "1712bc03ba6fdf07",
+  "content_hash": "97a7776c49cb7781",
+  "full_text_hash": "97a7776c49cb7781",
+  "semantic_hash": "1f0c189ea492d336",
+  "duplicate_of": "",
+  "first_seen_at": "2026-05-05T00:00:00.000Z",
+  "last_seen_at": "2026-07-30T03:09:00.448Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "The widely adopted, open source protocol standardizes how AI agents connect to and communicate with user interfaces (like a web browser or an app), providing features such as streaming chat, front-end tool calls, and state sharing to enable human-in-the-loop functionality. Essentially, AG-UI gives d... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "funding",
+      "text": "Image Credits: Copilotkit AI CopilotKit raises $27M to help devs deploy app-native AI agents Ram Iyer 7:07 AM PDT · May 5, 2026 Many companies today provide AI simply as a chatbot inside their apps: You type in (or dictate) what you want it to do, and the AI bot goes and tries to do it.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Still, the experience tends to feel clunky.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "A text-based UI doesn’t always translate to a smooth experience; for example, if you want to use a travel app to book an entire itinerary but have to scan through reams of text.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "According to the founders of CopilotKit , that approach doesn’t make the most of what AI agents and LLMs can do.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "The company’s co-founders, Atai Barkai (pictured above, right) and Uli Barkai (pictured above, left), believe the way forward is to enable agents to live inside applications, understand what users are doing, take actions, and show useful interfaces instead of just returning long blocks of text.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-30T03:09:00.448Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Google",
+      "Microsoft",
+      "GitHub",
+      "Amazon"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "MCP",
+      "ChatGPT"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "$27M",
+      "7",
+      "07",
+      "5",
+      "2026\nM",
+      "$27 million",
+      "2",
+      "500"
+    ],
+    "quotes": [
+      "The agent can reply to you, not just with blocks of text, but with interactive UIs that are defined by your own company,",
+      "pixel-perfect",
+      "If there are two things we hear in almost every single enterprise conversation, enterprises want optionality and they want self-hosting,",
+      "They’re very much complementary. Our strategy is to be the default choice in the ecosystem, and then to monetize the top enterprises,"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The widely adopted, open source protocol standardizes how AI agents connect to and communicate with user interfaces (like a web browser or an app), providing features such as streaming chat, front-end tool calls, and state sharing to enable human-in-the-loop functionality. Essentially, AG-UI gives d... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt",
+      "Image Credits: Copilotkit AI CopilotKit raises $27M to help devs deploy app-native AI agents Ram Iyer 7:07 AM PDT · May 5, 2026 Many companies today provide AI simply as a chatbot inside their apps: You type in (or dictate) what you want it to do, and the AI bot goes and tries to do it.",
+      "Still, the experience tends to feel clunky."
+    ],
+    "case_details": [
+      "According to the founders of CopilotKit , that approach doesn’t make the most of what AI agents and LLMs can do."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_funding",
+    "importance_score": 5,
+    "importance_reason": "funding or investment event; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# CopilotKit raises $27M to help devs deploy app-native AI agents ...\n\n- raw_id: R-081\n- title_zh: CopilotKit 融资 2700 万美元，助力开发者部署应用原生 AI 智能体\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://techcrunch.com/2026/05/05/copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-30T03:09:00.448Z\n\n## clean_text\n\nImage Credits: Copilotkit\nAI\nCopilotKit raises $27M to help devs deploy app-native AI agents\nRam Iyer\n7:07 AM PDT · May 5, 2026\nMany companies today provide AI simply as a chatbot inside their apps: You type in (or dictate) what you want it to do, and the AI bot goes and tries to do it. Still, the experience tends to feel clunky. A text-based UI doesn’t always translate to a smooth experience; for example, if you want to use a travel app to book an entire itinerary but have to scan through reams of text.\nAccording to the founders of CopilotKit , that approach doesn’t make the most of what AI agents and LLMs can do. The company’s co-founders, Atai Barkai (pictured above, right) and Uli Barkai (pictured above, left), believe the way forward is to enable agents to live inside applications, understand what users are doing, take actions, and show useful interfaces instead of just returning long blocks of text.\nThe company’s popular AG-UI protocol is aimed at the first part of that solution. The widely adopted, open source protocol standardizes how AI agents connect to and communicate with user interfaces (like a web browser or an app), providing features such as streaming chat, front-end tool calls, and state sharing to enable human-in-the-loop functionality. Essentially, AG-UI gives devs the framework and tools needed to deploy AI agents within their apps.\nCopilotKit is also building an enterprise toolkit on top of AG-UI, adding support, self-hosted deployment features, and other must-have offerings for businesses thinking of building agents into their product. To bring that toolkit to market, the Seattle-based startup has raised $27 million in a Series A round led by Glilot Capital, NFX, and SignalFire, TechCrunch has exclusively learned.\nThe flexible user interface is a particular selling point. CEO Atai Barkai told TechCrunch developers can use the startup’s framework to provide the specifications and building blocks for dynamic user interfaces, which an AI agent can then use to generate UIs to fit the context.\n“The agent can reply to you, not just with blocks of text, but with interactive UIs that are defined by your own company,” Atai explained. “If, for example, a user asks for breakdown of revenue by category, instead of getting this kind of big, impenetrable paragraph, you get a pie chart, and it’s your own design of the pie chart that the user can interact with […] So all of your agents can, very trivially, speak to a UI and use these catalog of components and show that to users.”\nAtai also noted that CopilotKit’s toolkit gives developers full control over how much their AI agent can change the UI, to the point where they can choose to have the interface be “pixel-perfect” or just provide broad building blocks that the AI can put together as required.\nThe funding follows a period of strong adoption both for AG-UI and CopilotKit. The protocol, which works alongside the widely adopted Model Context Protocol (MCP) and Agent2Agent (A2A) protocol , is today supported by major AI infrastructure providers like Google , Microsoft , Amazon , and Oracle , as well as popular frameworks like LangChain , Mastra , PydanticAI , and Agno .\nAtai said CopilotKit and AG-UI (the company’s strongest claim to ecosystem relevance) see millions of installs per week, and that a large portion of Fortune 500 companies are using the protocol and the startup’s tools in production. Meanwhile, CopilotKit counts enterprise bigwigs like Deutsche Telekom, Docusign, Cisco, and S&P Global as enterprise customers.\nTo tap that growing interest, the company is also launching CopilotKit Enterprise Intelligence, a self-hostable offering that bundles a number of infrastructure features to fully deploy agents within apps.\nCopilotKit faces heated competition in the market for enterprise agents tools. Cloud platform Vercel’s open source AI SDK helps developers build AI applications with similar capabilities, and assistant-ui offers components for building AI chat interfaces. Meanwhile, OpenAI’s Apps SDK is also an option for building richer interfaces, though only inside ChatGPT.\nAtai argues that CopilotKit is different from those offerings because it takes a horizontal, enterprise-friendly approach rather than a vertically integrated one. Instead of offering a full-stack AI platform, CopilotKit aims to support whatever agent framework, cloud provider, or back end an enterprise already uses.\n“If there are two things we hear in almost every single enterprise conversation, enterprises want optionality and they want self-hosting,” he said. “Maybe they’re already using the Google, Amazon, Oracle, Microsoft, LangChain, Mastra stacks. They want optionality, and they want self-hosting, and these are two things that they don’t really get in the Vercel stack.”\nThat open positioning will be important to maintain. Companies that build on top of their own open source infrastructure often face a tension, which is that they want their technology to stay a neutral standard, but they also need to build a business on top of it. But Atai said that AG-UI is a fully open protocol, and that CopilotKit’s commercial product is meant to harden the open source stack for enterprises, not replace it.\n“They’re very much complementary. Our strategy is to be the default choice in the ecosystem, and then to monetize the top enterprises,” Uli, the startup’s head of growth, added. “So it’s very much in our interest that the open source is the best out there, and the 95% of users can just go build and get started without paying anyone or talking to anyone.”\nThe company currently has about 25 employees and plans to use the new funding to grow its team.\nTopics\nAG-UI , AI , AI agents , copilotkit , generative ui , open source software\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nLibrarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech\nAmanda Silberling\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nPrentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M\nMarina Temkin\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nOpenAI makes ChatGPT Health available to all US users\nIvan Mehta\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nLoading the next article\nError loading the next article\n\n## full_text\n\nImage Credits: Copilotkit\nAI\nCopilotKit raises $27M to help devs deploy app-native AI agents\nRam Iyer\n7:07 AM PDT · May 5, 2026\nMany companies today provide AI simply as a chatbot inside their apps: You type in (or dictate) what you want it to do, and the AI bot goes and tries to do it. Still, the experience tends to feel clunky. A text-based UI doesn’t always translate to a smooth experience; for example, if you want to use a travel app to book an entire itinerary but have to scan through reams of text.\nAccording to the founders of CopilotKit , that approach doesn’t make the most of what AI agents and LLMs can do. The company’s co-founders, Atai Barkai (pictured above, right) and Uli Barkai (pictured above, left), believe the way forward is to enable agents to live inside applications, understand what users are doing, take actions, and show useful interfaces instead of just returning long blocks of text.\nThe company’s popular AG-UI protocol is aimed at the first part of that solution. The widely adopted, open source protocol standardizes how AI agents connect to and communicate with user interfaces (like a web browser or an app), providing features such as streaming chat, front-end tool calls, and state sharing to enable human-in-the-loop functionality. Essentially, AG-UI gives devs the framework and tools needed to deploy AI agents within their apps.\nCopilotKit is also building an enterprise toolkit on top of AG-UI, adding support, self-hosted deployment features, and other must-have offerings for businesses thinking of building agents into their product. To bring that toolkit to market, the Seattle-based startup has raised $27 million in a Series A round led by Glilot Capital, NFX, and SignalFire, TechCrunch has exclusively learned.\nThe flexible user interface is a particular selling point. CEO Atai Barkai told TechCrunch developers can use the startup’s framework to provide the specifications and building blocks for dynamic user interfaces, which an AI agent can then use to generate UIs to fit the context.\n“The agent can reply to you, not just with blocks of text, but with interactive UIs that are defined by your own company,” Atai explained. “If, for example, a user asks for breakdown of revenue by category, instead of getting this kind of big, impenetrable paragraph, you get a pie chart, and it’s your own design of the pie chart that the user can interact with […] So all of your agents can, very trivially, speak to a UI and use these catalog of components and show that to users.”\nAtai also noted that CopilotKit’s toolkit gives developers full control over how much their AI agent can change the UI, to the point where they can choose to have the interface be “pixel-perfect” or just provide broad building blocks that the AI can put together as required.\nThe funding follows a period of strong adoption both for AG-UI and CopilotKit. The protocol, which works alongside the widely adopted Model Context Protocol (MCP) and Agent2Agent (A2A) protocol , is today supported by major AI infrastructure providers like Google , Microsoft , Amazon , and Oracle , as well as popular frameworks like LangChain , Mastra , PydanticAI , and Agno .\nAtai said CopilotKit and AG-UI (the company’s strongest claim to ecosystem relevance) see millions of installs per week, and that a large portion of Fortune 500 companies are using the protocol and the startup’s tools in production. Meanwhile, CopilotKit counts enterprise bigwigs like Deutsche Telekom, Docusign, Cisco, and S&P Global as enterprise customers.\nTo tap that growing interest, the company is also launching CopilotKit Enterprise Intelligence, a self-hostable offering that bundles a number of infrastructure features to fully deploy agents within apps.\nCopilotKit faces heated competition in the market for enterprise agents tools. Cloud platform Vercel’s open source AI SDK helps developers build AI applications with similar capabilities, and assistant-ui offers components for building AI chat interfaces. Meanwhile, OpenAI’s Apps SDK is also an option for building richer interfaces, though only inside ChatGPT.\nAtai argues that CopilotKit is different from those offerings because it takes a horizontal, enterprise-friendly approach rather than a vertically integrated one. Instead of offering a full-stack AI platform, CopilotKit aims to support whatever agent framework, cloud provider, or back end an enterprise already uses.\n“If there are two things we hear in almost every single enterprise conversation, enterprises want optionality and they want self-hosting,” he said. “Maybe they’re already using the Google, Amazon, Oracle, Microsoft, LangChain, Mastra stacks. They want optionality, and they want self-hosting, and these are two things that they don’t really get in the Vercel stack.”\nThat open positioning will be important to maintain. Companies that build on top of their own open source infrastructure often face a tension, which is that they want their technology to stay a neutral standard, but they also need to build a business on top of it. But Atai said that AG-UI is a fully open protocol, and that CopilotKit’s commercial product is meant to harden the open source stack for enterprises, not replace it.\n“They’re very much complementary. Our strategy is to be the default choice in the ecosystem, and then to monetize the top enterprises,” Uli, the startup’s head of growth, added. “So it’s very much in our interest that the open source is the best out there, and the 95% of users can just go build and get started without paying anyone or talking to anyone.”\nThe company currently has about 25 employees and plans to use the new funding to grow its team.\nTopics\nAG-UI , AI , AI agents , copilotkit , generative ui , open source software\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nLibrarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech\nAmanda Silberling\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nPrentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M\nMarina Temkin\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nOpenAI makes ChatGPT Health available to all US users\nIvan Mehta\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nLoading the next article\nError loading the next article\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The widely adopted, open source protocol standardizes how AI agents connect to and communicate with user interfaces (like a web browser or an app), providing features such as streaming chat, front-end tool calls, and state sharing to enable human-in-the-loop functionality. Essentially, AG-UI gives d... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt\n2. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] Image Credits: Copilotkit AI CopilotKit raises $27M to help devs deploy app-native AI agents Ram Iyer 7:07 AM PDT · May 5, 2026 Many companies today provide AI simply as a chatbot inside their apps: You type in (or dictate) what you want it to do, and the AI bot goes and tries to do it.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Still, the experience tends to feel clunky.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] A text-based UI doesn’t always translate to a smooth experience; for example, if you want to use a travel app to book an entire itinerary but have to scan through reams of text.\n5. [case_detail / signal_card_candidate, relationship_graph_input, case / high] According to the founders of CopilotKit , that approach doesn’t make the most of what AI agents and LLMs can do.\n6. [opinion / signal_card_candidate, relationship_graph_input, viewpoint / medium] The company’s co-founders, Atai Barkai (pictured above, right) and Uli Barkai (pictured above, left), believe the way forward is to enable agents to live inside applications, understand what users are doing, take actions, and show useful interfaces instead of just returning long blocks of text.\n"
+}

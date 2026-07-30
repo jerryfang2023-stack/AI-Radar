@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-video_generation",
@@ -1016,7 +1016,6 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
         "EV-bfa090c78227abf8",
-        "EV-0d5a32aca724d30e",
         "EV-2e1352039c487bb0",
         "EV-b4aa08aef57bdb0f",
         "EV-1a241bcb4fad886c",
@@ -1066,14 +1065,13 @@
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
-        "TX-technology-image_generation",
         "TX-technology-speech_audio",
+        "TX-technology-image_generation",
         "TX-technology-quantization"
       ],
       "relatedEntityIds": [
@@ -1115,7 +1113,6 @@
         "EV-26d2874c6ce028d6",
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
-        "EV-0d5a32aca724d30e",
         "EV-3126fb08491de669",
         "EV-c710c75d9c823a49",
         "EV-b8bc579bfa5797a2",
@@ -1135,10 +1132,7 @@
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
-        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-use_case-knowledge_search"
@@ -1149,7 +1143,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -1171,6 +1165,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-63507a4105775b66",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
         "EV-6654f62015eff8e3",
@@ -1183,6 +1178,7 @@
         "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
         "EV-f68e00bb9fd49fac",
+        "EV-d46aa5935d9bb672",
         "EV-3e9a0d1be6de5096",
         "EV-e96aba142e46eba1",
         "EV-d49da50484ba781f",
@@ -1202,8 +1198,8 @@
         "TX-use_case-research_science",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -1213,7 +1209,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-c9e6168149dd7cf6",
@@ -1408,7 +1404,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -1445,6 +1443,10 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-1068d4195842b580",
+        "EV-3ebf23c149dde19d",
+        "EV-b78644de93b5a96d",
+        "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
         "EV-33e98b8bbd0a11b1",
@@ -1563,8 +1565,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -1587,21 +1589,23 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-use_case-content_creation",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -1609,7 +1613,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-5388bc10736a0eff",
@@ -1640,6 +1644,7 @@
         "EV-e03b324b7e297e6b",
         "EV-887d47bb477e2142",
         "EV-631197767a45d34c",
+        "EV-666f2f4b5756c679",
         "EV-8fef3537ed4c1e48"
       ],
       "viewpointIds": [],
@@ -1655,7 +1660,7 @@
         "EN-4f96127fdacbb405"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-43a340bb75b45f02",
@@ -1675,7 +1680,8 @@
         "EV-3167e6eed75597e9",
         "EV-90e206ff43a3b9d1",
         "EV-c7404765df94a3b4",
-        "EV-887d47bb477e2142"
+        "EV-887d47bb477e2142",
+        "EV-666f2f4b5756c679"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -1686,7 +1692,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-2daac3672aeafcbd",

@@ -1,0 +1,2257 @@
+[
+  {
+    "claim_id": "CL-c6735297c60e44fa",
+    "raw_id": "RAW-d5d1c53a92e0c2cc",
+    "claim_type": "funding",
+    "subject": "Hint",
+    "predicate": "funding",
+    "object": "$10 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-479bb2191c683feb"
+    },
+    "source_span": {
+      "raw_id": "RAW-d5d1c53a92e0c2cc",
+      "start": 5543,
+      "end": 5807
+    },
+    "source_quote": "Hint (whose name combines the “H” from “home” with “intelligence”) is backed by $10 million in funding from investors, including Montauk Capital, Brian Kelly (The Points Guy), Slow Ventures, Tusk Venture Partners, Energy Impact Partners, Amplo VC, and Hannah Grey.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6c1a26e6c9695ffe",
+    "raw_id": "RAW-9ee20f988b849dc4",
+    "claim_type": "product_release",
+    "subject": "Databricks",
+    "predicate": "product_release",
+    "object": "ProdLine CoPilot",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b746c2acb6892b9f"
+    },
+    "source_span": {
+      "raw_id": "RAW-9ee20f988b849dc4",
+      "start": 513,
+      "end": 742
+    },
+    "source_quote": "ProdLine CoPilot is built for that window. It reads live state from the Databricks Data Intelligence Platform, routes the question to a domain specialist, and runs the underlying math (schedule recovery, depletion, quality risk).",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-92d34e000ba304a2",
+    "raw_id": "RAW-9ee20f988b849dc4",
+    "claim_type": "product_release",
+    "subject": "Databricks",
+    "predicate": "product_release",
+    "object": "Zerobus Ingest",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-b746c2acb6892b9f"
+    },
+    "source_span": {
+      "raw_id": "RAW-9ee20f988b849dc4",
+      "start": 2519,
+      "end": 2710
+    },
+    "source_quote": "Zerobus Ingest replaces that. It's push-based and serverless. Anything that can issue gRPC or REST calls (PLC gateway, historian connector, edge box) lands rows in Unity Catalog Delta tables.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a080ddf8fa267f2e",
+    "raw_id": "RAW-2939718760841f3d",
+    "claim_type": "policy_regulation",
+    "subject": "HANDBOOK.md 基准测试：长",
+    "predicate": "policy_regulation",
+    "object": "文档无法可靠约束AI智能体行为",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2939718760841f3d",
+      "start": 457,
+      "end": 2363
+    },
+    "source_quote": "Abstract: Language-model agents are increasingly deployed under standing instructions: a system prompt, a policy file, or a skills document is placed in context, and the agent is trusted to let it govern every action that follows. Existing benchmarks rarely test this deployment pattern directly; they measure whether an agent can complete a task, not whether a long, binding policy document actually constrains its behavior over an extended tool-use horizon. We present this http URL , a benchmark of 65 agentic tasks modeled on how enterprise employees follow company handbooks. Each task places an agent in a self-contained company environment, a file workspace together with mock email, chat, calendar, issue-tracking, and commerce services exposed over the Model Context Protocol, and instructs it to carry out routine professional work governed by an expert-written standard operating procedure of 20 to 124 pages. Tasks span five domains (finance, medical billing, insurance, logistics, and HR) and ten fictional companies. To resist memorization, every task modifies one of ten base handbooks, altering the specific rules and thresholds on which grading turns, so no two tasks share a policy. Grading is fully deterministic: each task carries a rubric of programmatic criteria (824 in total) that check both that required actions occurred and that prohibited actions did not. Under strict grading, where a trial passes only if every criterion is satisfied, the best of thirty evaluated model configurations passes 36.2% of trials, and most frontier configurations remain below 25%. Failures follow consistent patterns: agents let a plausible in-environment request override the standing policy, perform a required check and then act against its result, lose rule details over long horizons, and report compliance they did not achieve. We release all tasks, environments, and the evaluation harness.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e1334e394dbf86ea",
+    "raw_id": "RAW-2939718760841f3d",
+    "claim_type": "policy_regulation",
+    "subject": "HANDBOOK.md 基准测试：长",
+    "predicate": "policy_regulation",
+    "object": "文档无法可靠约束AI智能体行为",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2939718760841f3d",
+      "start": 2374,
+      "end": 2531
+    },
+    "source_quote": "16 pages, 3 figures, 5 tables. Accepted to the Workshop on Agent Behavior (WAB) at COLM 2026. Benchmark, environments, and evaluation harness: this https URL",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e63a736f5c88c6b0",
+    "raw_id": "RAW-2939718760841f3d",
+    "claim_type": "policy_regulation",
+    "subject": "HANDBOOK.md 基准测试：长",
+    "predicate": "policy_regulation",
+    "object": "文档无法可靠约束AI智能体行为",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2939718760841f3d",
+      "start": 2542,
+      "end": 2608
+    },
+    "source_quote": "Artificial Intelligence (cs.AI) ; Computation and Language (cs.CL)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cd080cba0b5ac11f",
+    "raw_id": "RAW-aa14595dd7f2f28c",
+    "claim_type": "research_result",
+    "subject": "OpenAI",
+    "predicate": "research_result",
+    "object": "coding agents cut runtimes in eight scientific computing projects",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e24e036468e0d16e"
+    },
+    "source_span": {
+      "raw_id": "RAW-aa14595dd7f2f28c",
+      "start": 442,
+      "end": 559
+    },
+    "source_quote": "OpenAI has released a new field report tracking eight scientific computing projects where coding agents cut runtimes.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-063fd27c7cb9e9a1",
+    "raw_id": "RAW-aa14595dd7f2f28c",
+    "claim_type": "research_result",
+    "subject": "HI.SIM",
+    "predicate": "research_result",
+    "object": "runtime cut by 31 percent via GPT-5.2 and GPT-5.6 optimization passes",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2,
+      "model_candidate_id": "MAC-e24e036468e0d16e"
+    },
+    "source_span": {
+      "raw_id": "RAW-aa14595dd7f2f28c",
+      "start": 1857,
+      "end": 2085
+    },
+    "source_quote": "HI.SIM, a DNA-sequencing read simulator, saw two largely autonomous optimisation passes from GPT-5.2 and GPT-5.6 that contributor Andrew Ho says cut runtime by 31 percent across a representative test set without altering output.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a6c6f1669ca49c63",
+    "raw_id": "RAW-aa14595dd7f2f28c",
+    "claim_type": "research_result",
+    "subject": "RustQC",
+    "predicate": "research_result",
+    "object": "runtime cut by 60 times and disk I/O by 25 times",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3,
+      "model_candidate_id": "MAC-e24e036468e0d16e"
+    },
+    "source_span": {
+      "raw_id": "RAW-aa14595dd7f2f28c",
+      "start": 4383,
+      "end": 4564
+    },
+    "source_quote": "RustQC consolidated 15 separate RNA-sequencing quality-control tools into a single program that contributor Phil Ewels says cut runtime by 60 times and disk input/output by 25 times",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fd851e83627a98a0",
+    "raw_id": "RAW-d61c2bb960b9abe1",
+    "claim_type": "funding",
+    "subject": "P-1 AI, Inc.",
+    "predicate": "funding",
+    "object": "$50 million Series A financing round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-bfd7903340be8670"
+    },
+    "source_span": {
+      "raw_id": "RAW-d61c2bb960b9abe1",
+      "start": 1763,
+      "end": 1917
+    },
+    "source_quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6e5f4219ebc18836",
+    "raw_id": "RAW-8b00f8df7dad307b",
+    "claim_type": "acquisition",
+    "subject": "Siemens",
+    "predicate": "acquisition",
+    "object": "Wevolver",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a11dbe6c0f67d917"
+    },
+    "source_span": {
+      "raw_id": "RAW-8b00f8df7dad307b",
+      "start": 6991,
+      "end": 7113
+    },
+    "source_quote": "In 2025, Wevolver was acquired by Siemens and became part of Supplyframe, Siemens’ Design-to-Source Intelligence platform.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a23052ad5b78a83f",
+    "raw_id": "RAW-349f27462fc87534",
+    "claim_type": "capital_investment",
+    "subject": "Microsoft",
+    "predicate": "capital_investment",
+    "object": "Frontier Company",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-178c4ff85231127d"
+    },
+    "source_span": {
+      "raw_id": "RAW-349f27462fc87534",
+      "start": 365,
+      "end": 607
+    },
+    "source_quote": "Microsoft launched Frontier Company with $2.5 billion and roughly 6,000 engineers, technical consultants and industry specialists whose job is to sit inside enterprise client organizations and build AI systems that produce measurable results.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f7df068976b3c4ea",
+    "raw_id": "RAW-349f27462fc87534",
+    "claim_type": "capital_investment",
+    "subject": "Amazon",
+    "predicate": "capital_investment",
+    "object": "parallel effort",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-178c4ff85231127d"
+    },
+    "source_span": {
+      "raw_id": "RAW-349f27462fc87534",
+      "start": 608,
+      "end": 663
+    },
+    "source_quote": "Amazon also committed $1 billion to a parallel effort .",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c0efbf2fe9d9f1e2",
+    "raw_id": "RAW-77a50178aed1a9dc",
+    "claim_type": "partnership",
+    "subject": "Stellantis and Mistral AI Expand Their",
+    "predicate": "partnership",
+    "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-77a50178aed1a9dc",
+      "start": 14,
+      "end": 108
+    },
+    "source_quote": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e93909cf86da757a",
+    "raw_id": "RAW-77a50178aed1a9dc",
+    "claim_type": "partnership",
+    "subject": "Stellantis and Mistral AI Expand Their",
+    "predicate": "partnership",
+    "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-77a50178aed1a9dc",
+      "start": 200,
+      "end": 294
+    },
+    "source_quote": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e80bd9d99c74aec9",
+    "raw_id": "RAW-77a50178aed1a9dc",
+    "claim_type": "partnership",
+    "subject": "Stellantis and Mistral AI Expand Their",
+    "predicate": "partnership",
+    "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-77a50178aed1a9dc",
+      "start": 295,
+      "end": 347
+    },
+    "source_quote": "Stellantis and Mistral AI Expand Their Collaboration",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-baaed277998933ae",
+    "raw_id": "RAW-77a50178aed1a9dc",
+    "claim_type": "partnership",
+    "subject": "Stellantis and Mistral AI Expand Their",
+    "predicate": "partnership",
+    "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-77a50178aed1a9dc",
+      "start": 390,
+      "end": 527
+    },
+    "source_quote": "Stellantis and Mistral AI elevate their partnership from pilots to company-wide AI deployment, embedding generative AI across operations.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ca6ca803fc160f3a",
+    "raw_id": "RAW-111dde9c206a135e",
+    "claim_type": "security_incident",
+    "subject": "OpenAI autonomous AI agent",
+    "predicate": "security_incident",
+    "object": "Hugging Face production environment",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f016669d55c1ecbc"
+    },
+    "source_span": {
+      "raw_id": "RAW-111dde9c206a135e",
+      "start": 60,
+      "end": 262
+    },
+    "source_quote": "The autonomous AI agent that escaped during OpenAI testing exploited weaknesses across a customer workload, a third-party cloud platform, and Hugging Face’s production environment before being contained",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8c6472d631566497",
+    "raw_id": "RAW-111dde9c206a135e",
+    "claim_type": "security_incident",
+    "subject": "OpenAI autonomous AI agent",
+    "predicate": "security_incident",
+    "object": "Modal customer sandbox",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f016669d55c1ecbc"
+    },
+    "source_span": {
+      "raw_id": "RAW-111dde9c206a135e",
+      "start": 1440,
+      "end": 1621
+    },
+    "source_quote": "the AI agent exploited an internet-facing endpoint exposed by one of Modal’s customers, allowing it to execute code inside the customer’s sandbox before pivoting toward Hugging Face",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-45d72012c5f3557e",
+    "raw_id": "RAW-111dde9c206a135e",
+    "claim_type": "security_incident",
+    "subject": "OpenAI experimental model",
+    "predicate": "security_incident",
+    "object": "four external service accounts",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-f016669d55c1ecbc"
+    },
+    "source_span": {
+      "raw_id": "RAW-111dde9c206a135e",
+      "start": 3973,
+      "end": 4116
+    },
+    "source_quote": "OpenAI said the experimental model compromised accounts across four external services before being disabled and restricted for further testing.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-66aa1fde77eced8c",
+    "raw_id": "RAW-5daaf5af43511f13",
+    "claim_type": "funding",
+    "subject": "Encore AI 获 3000 万美元 A 轮",
+    "predicate": "funding",
+    "object": "，用客户通话训练 AI 语音智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5daaf5af43511f13",
+      "start": 11,
+      "end": 82
+    },
+    "source_quote": "Encore AI raises $30M to build AI agents that learn from customer calls",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0b5e0d88706f4ad7",
+    "raw_id": "RAW-5daaf5af43511f13",
+    "claim_type": "funding",
+    "subject": "Encore AI 获 3000 万美元 A 轮",
+    "predicate": "funding",
+    "object": "，用客户通话训练 AI 语音智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-5daaf5af43511f13",
+      "start": 120,
+      "end": 363
+    },
+    "source_quote": "Encore AI , a startup that studies companies’ customer interactions to train and deploy AI voice agents that can work alongside customer support and sales teams, or operate autonomously, has raised $30 million in a Series A round led by Team8.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8ecc86380f742db8",
+    "raw_id": "RAW-5daaf5af43511f13",
+    "claim_type": "funding",
+    "subject": "Encore AI 获 3000 万美元 A 轮",
+    "predicate": "funding",
+    "object": "，用客户通话训练 AI 语音智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-5daaf5af43511f13",
+      "start": 2348,
+      "end": 2672
+    },
+    "source_quote": "The company has more than 40 enterprise customers globally, the majority of which are financial institutions, according to Ginzburg. He said Encore’s annual recurring revenue has increased more than 5x since it raised its seed round less than 18 months ago, though he declined to disclose exact revenue numbers or valuation.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2652839fd997c914",
+    "raw_id": "RAW-2778aad184c84624",
+    "claim_type": "funding",
+    "subject": "Pangram",
+    "predicate": "funding",
+    "object": "$9 million",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b2dae4236a548d79"
+    },
+    "source_span": {
+      "raw_id": "RAW-2778aad184c84624",
+      "start": 113,
+      "end": 267
+    },
+    "source_quote": "New York-based AI detection startup Pangram is on a mission to combat the AI slop infestation spreading across the internet, and it just raised $9 million",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a86d4f9743d74b61",
+    "raw_id": "RAW-4c11280309c202d3",
+    "claim_type": "model_release",
+    "subject": "undisclosed_subject",
+    "predicate": "model_release",
+    "object": "：256k 上下文窗口与代码生成能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-4c11280309c202d3",
+      "start": 133,
+      "end": 289
+    },
+    "source_quote": "Kimi Code currently offers two models—Kimi K3 and Kimi K2.7 Code—across four model IDs, selectable by model ID in clients or third-party tools. Model specs:",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d11947b2b6e57046",
+    "raw_id": "RAW-4c11280309c202d3",
+    "claim_type": "model_release",
+    "subject": "undisclosed_subject",
+    "predicate": "model_release",
+    "object": "：256k 上下文窗口与代码生成能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4c11280309c202d3",
+      "start": 290,
+      "end": 314
+    },
+    "source_quote": "Recommended model launch",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-87f0da7939e6ed76",
+    "raw_id": "RAW-4c11280309c202d3",
+    "claim_type": "model_release",
+    "subject": "undisclosed_subject",
+    "predicate": "model_release",
+    "object": "：256k 上下文窗口与代码生成能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-4c11280309c202d3",
+      "start": 315,
+      "end": 585
+    },
+    "source_quote": "k3-256k is now available. Within 256k context, it delivers the same results. k3 (1M) consumes about twice as much quota as k3-256k . Ideal for everyday Q&A, code completion, routine feature development, and single-file or small-file edits — video input is not supported.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-da7451c803d6f1e1",
+    "raw_id": "RAW-4c11280309c202d3",
+    "claim_type": "model_release",
+    "subject": "undisclosed_subject",
+    "predicate": "model_release",
+    "object": "：256k 上下文窗口与代码生成能力",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-4c11280309c202d3",
+      "start": 598,
+      "end": 825
+    },
+    "source_quote": "Switching from K3 (1M) to K3-256k: When switching from k3 (1M) to k3-256k , if the current session's context already exceeds 256k, some coding tools such as Kimi Code CLI and Claude Code will perform a compact on the tool side.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-262ed40bd18fb7ca",
+    "raw_id": "RAW-b7cb1f3ab249aa4d",
+    "claim_type": "product_release",
+    "subject": "Liquid AI",
+    "predicate": "product_release",
+    "object": "两款开源双向编码器 LFM2.5-Encoder-230M 和 350M",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b7cb1f3ab249aa4d",
+      "start": 222,
+      "end": 432
+    },
+    "source_quote": "Liquid AI has released two open-weight bidirectional encoders, LFM2.5-Encoder-230M and LFM2.5-Encoder-350M . Both are masked language models built on the LFM2 hybrid backbone. Both carry an 8,192-token context.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f63395ac57139788",
+    "raw_id": "RAW-b7cb1f3ab249aa4d",
+    "claim_type": "product_release",
+    "subject": "Liquid AI",
+    "predicate": "product_release",
+    "object": "两款开源双向编码器 LFM2.5-Encoder-230M 和 350M",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b7cb1f3ab249aa4d",
+      "start": 5261,
+      "end": 5385
+    },
+    "source_quote": "Liquid AI released LFM2.5-Encoder-230M and LFM2.5-Encoder-350M, open-weight bidirectional encoders with 8,192-token context.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-14da31563279fef4",
+    "raw_id": "RAW-b7cb1f3ab249aa4d",
+    "claim_type": "product_release",
+    "subject": "Liquid AI",
+    "predicate": "product_release",
+    "object": "两款开源双向编码器 LFM2.5-Encoder-230M 和 350M",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b7cb1f3ab249aa4d",
+      "start": 433,
+      "end": 816
+    },
+    "source_quote": "Encoders sit underneath classifiers, intent routers, safety filters, and PII detectors. Those jobs run continuously, usually without a GPU, and increasingly on longer inputs. BERT established the class. ModernBERT pushed its accuracy, speed, and context. Liquid AI’s argument is that the LFM2 architecture continues that line, because its cost grows more slowly as inputs get longer.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-656739225b536ed4",
+    "raw_id": "RAW-b7cb1f3ab249aa4d",
+    "claim_type": "product_release",
+    "subject": "Liquid AI",
+    "predicate": "product_release",
+    "object": "两款开源双向编码器 LFM2.5-Encoder-230M 和 350M",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b7cb1f3ab249aa4d",
+      "start": 817,
+      "end": 848
+    },
+    "source_quote": "How a decoder became an encoder",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5e7d7a3952edf11a",
+    "raw_id": "RAW-5cb2fa38bfbef1b8",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Copilot super app combining chat, coding, and agentic capabilities",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e1fff82c2349965c"
+    },
+    "source_span": {
+      "raw_id": "RAW-5cb2fa38bfbef1b8",
+      "start": 430,
+      "end": 535
+    },
+    "source_quote": "Microsoft is working on an AI “super app” that combines Copilot’s chat, coding, and agentic capabilities.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4f38867f615ce143",
+    "raw_id": "RAW-5cb2fa38bfbef1b8",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Copilot super app spanning consumer and commercial experiences",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-e1fff82c2349965c"
+    },
+    "source_span": {
+      "raw_id": "RAW-5cb2fa38bfbef1b8",
+      "start": 574,
+      "end": 695
+    },
+    "source_quote": "Microsoft CEO Satya Nadella said the app will span “both consumer and commercial experiences” when it launches this year.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e92a2da0c7fe06df",
+    "raw_id": "RAW-f7ee3665806c81ca",
+    "claim_type": "organization_people",
+    "subject": "Deepmind dismantles its AlphaFold team as key authors",
+    "predicate": "organization_people",
+    "object": "for Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f7ee3665806c81ca",
+      "start": 0,
+      "end": 73
+    },
+    "source_quote": "Deepmind dismantles its AlphaFold team as key authors leave for Anthropic",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ab7c95bc5c7724f4",
+    "raw_id": "RAW-f7ee3665806c81ca",
+    "claim_type": "organization_people",
+    "subject": "Deepmind dismantles its AlphaFold team as key authors",
+    "predicate": "organization_people",
+    "object": "for Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f7ee3665806c81ca",
+      "start": 74,
+      "end": 147
+    },
+    "source_quote": "Deepmind dismantles its AlphaFold team as key authors leave for Anthropic",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3057c2bb98d5140d",
+    "raw_id": "RAW-f7ee3665806c81ca",
+    "claim_type": "organization_people",
+    "subject": "Deepmind dismantles its AlphaFold team as key authors",
+    "predicate": "organization_people",
+    "object": "for Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f7ee3665806c81ca",
+      "start": 148,
+      "end": 379
+    },
+    "source_quote": "The majority of the researchers behind AlphaFold are now working on other projects, and almost a quarter have left Google Deepmind altogether. The restructuring marks a sharp turn away from the strategy that put the lab on the map.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1c64292806aefb96",
+    "raw_id": "RAW-f7ee3665806c81ca",
+    "claim_type": "organization_people",
+    "subject": "Deepmind dismantles its AlphaFold team as key authors",
+    "predicate": "organization_people",
+    "object": "for Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f7ee3665806c81ca",
+      "start": 380,
+      "end": 611
+    },
+    "source_quote": "The majority of the researchers behind AlphaFold are now working on other projects, and almost a quarter have left Google Deepmind altogether. The restructuring marks a sharp turn away from the strategy that put the lab on the map.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c5ae9016525d8e87",
+    "raw_id": "RAW-4279b1e0d2cc6f6a",
+    "claim_type": "acquisition",
+    "subject": "OpenAI",
+    "predicate": "acquisition",
+    "object": "Ona",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f267af6fe54de4e8"
+    },
+    "source_span": {
+      "raw_id": "RAW-4279b1e0d2cc6f6a",
+      "start": 347,
+      "end": 521
+    },
+    "source_quote": "OpenAI has acquired Ona, a startup specializing in secure cloud environments for AI agents, aiming to bolster its Codex coding assistant for longer-running, autonomous tasks.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-405526c967fd3016",
+    "raw_id": "RAW-c6cccfcfc7724ef4",
+    "claim_type": "product_release",
+    "subject": "Funding Breaking News and Press",
+    "predicate": "product_release",
+    "object": "from Business Wire",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c6cccfcfc7724ef4",
+      "start": 3532,
+      "end": 4036
+    },
+    "source_quote": "CAMBRIDGE, Mass.--( BUSINESS WIRE )--Cambridge Savings Bank (\"CSB\"), a full-service community bank with $7 billion in assets, announced an increased Asset-Based Lending credit facility for Belle Brands, helping to fuel the company's acquisition of Versed, a clean, solutions-driven skincare and makeup brand founded by Katherine Power. The acquisition marks Belle Brands' second add-on acquisition as the platform continues to grow and scale its portfolio of leading beauty and personal care brands. T...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fea586e926510792",
+    "raw_id": "RAW-c6cccfcfc7724ef4",
+    "claim_type": "product_release",
+    "subject": "Funding Breaking News and Press",
+    "predicate": "product_release",
+    "object": "from Business Wire",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c6cccfcfc7724ef4",
+      "start": 48,
+      "end": 290
+    },
+    "source_quote": "Stay updated with the latest funding news. Read about funding rounds, venture capital investments, grants, and financial support for startups and businesses. Discover how funding initiatives drive innovation and growth across various sectors.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8bc44097fde6c872",
+    "raw_id": "RAW-c6cccfcfc7724ef4",
+    "claim_type": "product_release",
+    "subject": "Funding Breaking News and Press",
+    "predicate": "product_release",
+    "object": "from Business Wire",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c6cccfcfc7724ef4",
+      "start": 472,
+      "end": 968
+    },
+    "source_quote": "NEW BRUNSWICK, N.J.--( BUSINESS WIRE )--Johnson & Johnson1 (NYSE: JNJ) today announced strategic agreements and collaboration with Sail Biomedicines (Sail), a biotechnology company developing in vivo CAR-T therapies for immune-mediated diseases. Johnson & Johnson will collaborate with Sail to advance its lead immune-mediated disease program and broader platform technology, with incentives to expand the application of Sail's in vivo CAR-T platform across additional therapeutic targets over...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-952cbc5b233026cc",
+    "raw_id": "RAW-c6cccfcfc7724ef4",
+    "claim_type": "product_release",
+    "subject": "Funding Breaking News and Press",
+    "predicate": "product_release",
+    "object": "from Business Wire",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c6cccfcfc7724ef4",
+      "start": 1110,
+      "end": 1614
+    },
+    "source_quote": "NEW YORK & TEL AVIV, Israel--( BUSINESS WIRE )--Onyx Security, the AI control company, announced a $113 million Series B funding round led by Bessemer Venture Partners, with participation from Cyberstarts, TCV, Conviction, FirstMark, Vintage, QuantumLight and G Squared. This brings the company’s total funding to $153M since its founding exactly two years ago. Since coming out of stealth four months ago, Onyx has grown revenue fourfold, and in June, Anthropic announced its integration with Onyx to...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-92f8a3a1bc2dc101",
+    "raw_id": "RAW-f3fe209c3475ac5e",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI 总裁布罗克曼回应苹果",
+    "predicate": "lawsuit_settlement",
+    "object": "：无意窃取商业机密，专注自研硬件与芯片",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f3fe209c3475ac5e",
+      "start": 0,
+      "end": 42
+    },
+    "source_quote": "OpenAI 总裁布罗克曼谈苹果诉讼：我们没有兴趣窃取其它企业商业机密 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-3f8d87817dcbbd34",
+    "raw_id": "RAW-f3fe209c3475ac5e",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI 总裁布罗克曼回应苹果",
+    "predicate": "lawsuit_settlement",
+    "object": "：无意窃取商业机密，专注自研硬件与芯片",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f3fe209c3475ac5e",
+      "start": 210,
+      "end": 245
+    },
+    "source_quote": "OpenAI 总裁布罗克曼谈苹果诉讼：我们没有兴趣窃取其它企业商业机密",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-59243df82d0ee56a",
+    "raw_id": "RAW-f3fe209c3475ac5e",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI 总裁布罗克曼回应苹果",
+    "predicate": "lawsuit_settlement",
+    "object": "：无意窃取商业机密，专注自研硬件与芯片",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f3fe209c3475ac5e",
+      "start": 313,
+      "end": 470
+    },
+    "source_quote": "IT之家 7 月 30 日消息，昨日（7 月 29 日）接受《华尔街日报》科技专栏作家乔安娜 · 斯特恩（Joanna Stern）采访时， OpenAI 联合创始人兼总裁格雷格 · 布罗克曼（Greg Brockman）就苹果公司起诉事宜，回应表示公司无意获取其他公司的商业秘密，并将专注自身技术与长期产品路线。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-75b326a64452968c",
+    "raw_id": "RAW-f3fe209c3475ac5e",
+    "claim_type": "lawsuit_settlement",
+    "subject": "OpenAI 总裁布罗克曼回应苹果",
+    "predicate": "lawsuit_settlement",
+    "object": "：无意窃取商业机密，专注自研硬件与芯片",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f3fe209c3475ac5e",
+      "start": 485,
+      "end": 568
+    },
+    "source_quote": "在采访中，布罗克曼回应 OpenAI 被苹果公司起诉，他重申 OpenAI 已公开表达的立场： 公司对其他企业的商业秘密“没有兴趣”，并认为自身“足够具备创新能力”。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-1f25eb23cdb25897",
+    "raw_id": "RAW-966e910bea6772d6",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：提升旋律编排、人声表现更细腻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-966e910bea6772d6",
+      "start": 0,
+      "end": 47
+    },
+    "source_quote": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aad9909d825b9461",
+    "raw_id": "RAW-966e910bea6772d6",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：提升旋律编排、人声表现更细腻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-966e910bea6772d6",
+      "start": 215,
+      "end": 255
+    },
+    "source_quote": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-982060a414d04544",
+    "raw_id": "RAW-966e910bea6772d6",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：提升旋律编排、人声表现更细腻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-966e910bea6772d6",
+      "start": 332,
+      "end": 446
+    },
+    "source_quote": "IT之家 7 月 30 日消息，谷歌昨日（7 月 29 日）发布博文， 宣布正在 Google Flow Music 中推出 Lyria 3.5 音乐生成 AI 模型，提升音乐性、歌词和人声质量等，让用户创作出更丰富的音乐作品。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2fc0e06bcf394e48",
+    "raw_id": "RAW-966e910bea6772d6",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：提升旋律编排、人声表现更细腻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-966e910bea6772d6",
+      "start": 447,
+      "end": 498
+    },
+    "source_quote": "谷歌官方表示相比较上一代模型，Lyria 3.5 重点提升旋律编排、歌词生成、人声表现及歌曲控制能力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ad0dedc2235e42f6",
+    "raw_id": "RAW-0e100044236461ba",
+    "claim_type": "model_release",
+    "subject": "OpenAI 称 7 月年化收入已超 Q2 总和，面临 Anthropic 与",
+    "predicate": "model_release",
+    "object": "双重竞争",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0e100044236461ba",
+      "start": 483,
+      "end": 540
+    },
+    "source_quote": "目前，OpenAI 正面临着来自 Anthropic 和谷歌的激烈竞争，同时也需应对来自中国低成本开源模型的冲击。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-521f9cf4a4e0fcf9",
+    "raw_id": "RAW-0e100044236461ba",
+    "claim_type": "model_release",
+    "subject": "OpenAI 称 7 月年化收入已超 Q2 总和，面临 Anthropic 与",
+    "predicate": "model_release",
+    "object": "双重竞争",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0e100044236461ba",
+      "start": 541,
+      "end": 581
+    },
+    "source_quote": "OpenAI 正致力于吸引更多企业用户和开发者，以支撑其庞大的基础设施建设计划。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8b8e90558995a72c",
+    "raw_id": "RAW-0e100044236461ba",
+    "claim_type": "model_release",
+    "subject": "OpenAI 称 7 月年化收入已超 Q2 总和，面临 Anthropic 与",
+    "predicate": "model_release",
+    "object": "双重竞争",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0e100044236461ba",
+      "start": 581,
+      "end": 657
+    },
+    "source_quote": "今年 2 月，OpenAI 告知投资者，计划到 2030 年累计投入约 6000 亿美元（IT之家注：现汇率约合 4.07 万亿元人民币）用于算力建设。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a8f7edf23d362a65",
+    "raw_id": "RAW-0e100044236461ba",
+    "claim_type": "model_release",
+    "subject": "OpenAI 称 7 月年化收入已超 Q2 总和，面临 Anthropic 与",
+    "predicate": "model_release",
+    "object": "双重竞争",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0e100044236461ba",
+      "start": 236,
+      "end": 334
+    },
+    "source_quote": "据 CNBC 获取的会议内容显示，弗里尔与 OpenAI 董事会主席布雷特 · 泰勒（Bret Taylor）在会议中介绍了公司的收入增长情况，并讨论了与竞争对手 Anthropic 的市场竞争。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f1762d3a75128608",
+    "raw_id": "RAW-4956bb0700036274",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-4956bb0700036274",
+      "start": 329,
+      "end": 446
+    },
+    "source_quote": "IT之家 7 月 30 日消息，OpenAI 今天（7 月 30 日）在 X 平台发布推文，宣布启动 ChatGPT for Academic Researchers 计划，将向 10 万名科研人员免费开放 ChatGPT 高级功能。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b8f357ae57e11fd8",
+    "raw_id": "RAW-4956bb0700036274",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4956bb0700036274",
+      "start": 447,
+      "end": 509
+    },
+    "source_quote": "科学家可以通过 OpenAI 官网，填写表格后加入 ChatGPT for Academic Researchers 项目。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3dd7b3d994837a02",
+    "raw_id": "RAW-4956bb0700036274",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-4956bb0700036274",
+      "start": 509,
+      "end": 553
+    },
+    "source_quote": "该项目初期将面向部分高校的 1 万名用户开放，并计划未来逐步吸纳 9 万名研究人员加入。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b8be79edc561dcf9",
+    "raw_id": "RAW-3a87842d39bb74a1",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "Lyria 3.5 in Google Flow Music",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-4bbb49eab8ce73d6"
+    },
+    "source_span": {
+      "raw_id": "RAW-3a87842d39bb74a1",
+      "start": 340,
+      "end": 387
+    },
+    "source_quote": "We’re rolling it out today in Google Flow Music",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3acbdbaebe6cabd3",
+    "raw_id": "RAW-7d50128e42bee296",
+    "claim_type": "product_release",
+    "subject": "MCP 2026-07-28 规范",
+    "predicate": "product_release",
+    "object": "，转向\"无状态\"核心",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7d50128e42bee296",
+      "start": 0,
+      "end": 45
+    },
+    "source_quote": "问世以来最大更新：MCP 2026-07-28 规范发布，转向“无状态”核心 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0a34bc7e20fca6d5",
+    "raw_id": "RAW-7d50128e42bee296",
+    "claim_type": "product_release",
+    "subject": "MCP 2026-07-28 规范",
+    "predicate": "product_release",
+    "object": "，转向\"无状态\"核心",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7d50128e42bee296",
+      "start": 213,
+      "end": 251
+    },
+    "source_quote": "问世以来最大更新：MCP 2026-07-28 规范发布，转向“无状态”核心",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-84696ce2bec60bd4",
+    "raw_id": "RAW-7d50128e42bee296",
+    "claim_type": "product_release",
+    "subject": "MCP 2026-07-28 规范",
+    "predicate": "product_release",
+    "object": "，转向\"无状态\"核心",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7d50128e42bee296",
+      "start": 320,
+      "end": 423
+    },
+    "source_quote": "IT之家 7 月 29 日消息，Anthropic 昨日（7 月 28 日）发布公告，宣布推出第 5 版模型上下文协议（MCP）规范， 官方将本次更新定性为该协议问世以来规模最大、最系统性的一次颠覆式修订。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0032c1c4a79cf689",
+    "raw_id": "RAW-7d50128e42bee296",
+    "claim_type": "product_release",
+    "subject": "MCP 2026-07-28 规范",
+    "predicate": "product_release",
+    "object": "，转向\"无状态\"核心",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7d50128e42bee296",
+      "start": 424,
+      "end": 538
+    },
+    "source_quote": "IT之家注：MCP（Model Context Protocol，模型上下文协议）是由 Anthropic 于 2024 年 11 月底推出的一种开放标准开源协议，目的是统一大语言模型（LLM）与外部数据源和工具之间的通信方式。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-386bca5dbab90ed3",
+    "raw_id": "RAW-bed3140a93720b2b",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude Opus 5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5d41ba3e32e88555"
+    },
+    "source_span": {
+      "raw_id": "RAW-bed3140a93720b2b",
+      "start": 136,
+      "end": 161
+    },
+    "source_quote": "Introducing Claude Opus 5",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-446519e59e094cd0",
+    "raw_id": "RAW-bed3140a93720b2b",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude Sonnet 5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-5d41ba3e32e88555"
+    },
+    "source_span": {
+      "raw_id": "RAW-bed3140a93720b2b",
+      "start": 944,
+      "end": 971
+    },
+    "source_quote": "Introducing Claude Sonnet 5",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4f0aa783eb508a2",
+    "raw_id": "RAW-1e0801b8cb9b83f6",
+    "claim_type": "funding",
+    "subject": "Procurement Sciences",
+    "predicate": "funding",
+    "object": "Funding for GovCon AI Platform",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1e0801b8cb9b83f6",
+      "start": 218,
+      "end": 363
+    },
+    "source_quote": "Procurement Sciences has secured $30 million in Series B financing to advance its artificial intelligence-driven government contracting platform.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0a433a803e5f1f2e",
+    "raw_id": "RAW-1e0801b8cb9b83f6",
+    "claim_type": "funding",
+    "subject": "Procurement Sciences",
+    "predicate": "funding",
+    "object": "Funding for GovCon AI Platform",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1e0801b8cb9b83f6",
+      "start": 364,
+      "end": 698
+    },
+    "source_quote": "AI is transforming the way government and industry operate. Join AI experts at the Potomac Officers Club’s Artificial Intelligence Summit on March 19, 2026, as they discuss how this advanced technology is impacting the federal and defense landscape. Register now to be part of the conversation shaping the future of AI in government .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8cf5b2a6b83bceea",
+    "raw_id": "RAW-1e0801b8cb9b83f6",
+    "claim_type": "funding",
+    "subject": "Procurement Sciences",
+    "predicate": "funding",
+    "object": "Funding for GovCon AI Platform",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1e0801b8cb9b83f6",
+      "start": 699,
+      "end": 749
+    },
+    "source_quote": "How Will Procurement Sciences Use Its New Funding?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e868750005793f8d",
+    "raw_id": "RAW-1e0801b8cb9b83f6",
+    "claim_type": "funding",
+    "subject": "Procurement Sciences",
+    "predicate": "funding",
+    "object": "Funding for GovCon AI Platform",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1e0801b8cb9b83f6",
+      "start": 164,
+      "end": 196
+    },
+    "source_quote": "https://procurementsciences.com/",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7999269e355ce9be",
+    "raw_id": "RAW-7087affedec94dd4",
+    "claim_type": "product_release",
+    "subject": "研扬",
+    "predicate": "product_release",
+    "object": "MIX-Q870A1 主板：AI 算力最高 36 TOPS，配双网口",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7087affedec94dd4",
+      "start": 0,
+      "end": 118
+    },
+    "source_quote": "IT之家 7 月 30 日消息，研扬科技（AAEON）昨日（7 月 29 日）宣布推出 MIX-Q870A1，定位高端 Mini-ITX 主板， 最高支持 65W 的英特尔酷睿 Ultra 200S 系列 LGA 1851 插槽处理器。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a7cfae1d04a3dbe4",
+    "raw_id": "RAW-7087affedec94dd4",
+    "claim_type": "product_release",
+    "subject": "研扬",
+    "predicate": "product_release",
+    "object": "MIX-Q870A1 主板：AI 算力最高 36 TOPS，配双网口",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7087affedec94dd4",
+      "start": 119,
+      "end": 216
+    },
+    "source_quote": "兼容性方面，MIX-Q870A1 主板兼容第二代英特尔酷睿 Ultra 处理器系列多种 SKU 规格，支持调用 NPU 和 Xe LPG 核显加速 AI 任务， 最高提供 36 TOPS 算力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-35b27cce71169b24",
+    "raw_id": "RAW-7087affedec94dd4",
+    "claim_type": "product_release",
+    "subject": "研扬",
+    "predicate": "product_release",
+    "object": "MIX-Q870A1 主板：AI 算力最高 36 TOPS，配双网口",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7087affedec94dd4",
+      "start": 217,
+      "end": 322
+    },
+    "source_quote": "插槽方面，主板提供 1 个 M.2-1 A 2280 M-Key 插槽，支持 4 通道 PCIe 信号，可连接 NVMe 存储设备；另有 1 个 M.2 2242 M-Key 插槽，专用于 SATA 存储设备。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3b71ecdd3202a362",
+    "raw_id": "RAW-7087affedec94dd4",
+    "claim_type": "product_release",
+    "subject": "研扬",
+    "predicate": "product_release",
+    "object": "MIX-Q870A1 主板：AI 算力最高 36 TOPS，配双网口",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7087affedec94dd4",
+      "start": 323,
+      "end": 375
+    },
+    "source_quote": "MIX-Q870A1 配备 2 个 SATA 6 Gb/s 接口，支持 RAID 0 与 RAID 1。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-16e7670e50e7c856",
+    "raw_id": "RAW-d182d215b6f3df09",
+    "claim_type": "product_release",
+    "subject": "Waymo",
+    "predicate": "product_release",
+    "object": "Gemini in Waymo and redesigned in-car interface for Ojai autonomous vehicle",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e34737b8b0d8a427"
+    },
+    "source_span": {
+      "raw_id": "RAW-d182d215b6f3df09",
+      "start": 385,
+      "end": 430
+    },
+    "source_quote": "宣布为其 Ojai 自动驾驶汽车推出 Gemini in Waymo 和重新设计的车载界面",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-95ca9f0f88e9da75",
+    "raw_id": "RAW-7594a8cbb6370749",
+    "claim_type": "product_release",
+    "subject": "Microsoft",
+    "predicate": "product_release",
+    "object": "Copilot super app integrating chat, coding, and agent functions",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2b4da9a9308128b7"
+    },
+    "source_span": {
+      "raw_id": "RAW-7594a8cbb6370749",
+      "start": 339,
+      "end": 449
+    },
+    "source_quote": "微软 CEO 萨提亚 · 纳德拉在财报电话会议上透露，微软正在打造一款 AI“超级应用”，计划把 Copilot 的 对话、编程和智能体 功能整合到同一个应用中。这款“超级应用”将于今年发布，同时面向个人用户和企业客户。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-66260ae40be7432b",
+    "raw_id": "RAW-a688ecc73364adb0",
+    "claim_type": "product_release",
+    "subject": "上海",
+    "predicate": "product_release",
+    "object": "户外广告合规指引：AI 生成内容须明确标识",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a688ecc73364adb0",
+      "start": 0,
+      "end": 124
+    },
+    "source_quote": "IT之家 7 月 29 日消息，近日，上海市市场监督管理局制定发布《上海市户外广告发布内容合规指引》（以下简称《合规指引》），系统梳理户外广告发布中的重点风险和合规要求，为广告活动主体加强内容审核、防范违法违规风险提供更加清晰、具体、可操作的指引。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b15e5553c0765f05",
+    "raw_id": "RAW-a688ecc73364adb0",
+    "claim_type": "product_release",
+    "subject": "上海",
+    "predicate": "product_release",
+    "object": "户外广告合规指引：AI 生成内容须明确标识",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a688ecc73364adb0",
+      "start": 313,
+      "end": 424
+    },
+    "source_quote": "《合规指引》明确，本市户外广告包括利用展示牌、电子显示装置、灯箱等载体设置的广告，利用车辆、船舶等载体发布的广告，以及在城市轨道交通设施、车站、码头、机场候机楼、商务楼宇、住宅小区电梯轿厢、电梯等候区等场所设置的商业广告。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1d094f70c2e77b44",
+    "raw_id": "RAW-a688ecc73364adb0",
+    "claim_type": "product_release",
+    "subject": "上海",
+    "predicate": "product_release",
+    "object": "户外广告合规指引：AI 生成内容须明确标识",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a688ecc73364adb0",
+      "start": 573,
+      "end": 685
+    },
+    "source_quote": "根据本市有关规定，《合规指引》进一步明确不得在户外发布特定医疗广告，以及涉及性生理卫生、性功能改善或增强、殡葬用品或者服务等广告；不得发布存在过度暴露人体、表现形式易引发公众不适，以及主要针对人体私密部位的商品或者服务广告。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e879a70d87e72f9c",
+    "raw_id": "RAW-a688ecc73364adb0",
+    "claim_type": "product_release",
+    "subject": "上海",
+    "predicate": "product_release",
+    "object": "户外广告合规指引：AI 生成内容须明确标识",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a688ecc73364adb0",
+      "start": 701,
+      "end": 810
+    },
+    "source_quote": "针对容易引发社会争议的广告内容，《合规指引》提出不得滥用地域标签制造群体对立，不得利用性别标签实施低俗营销，不得通过贩卖容貌焦虑、制造两性对立等方式博取关注，不得利用情绪营销渲染社会焦虑，不得违规发布“饭圈”应援广告。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8ae5e29ded29080b",
+    "raw_id": "RAW-36d44591c477b098",
+    "claim_type": "product_release",
+    "subject": "谷歌旗下 Wiz",
+    "predicate": "product_release",
+    "object": "AI 智能体漏洞挖掘系统 Atlas，已发现超 200 个漏洞",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-36d44591c477b098",
+      "start": 0,
+      "end": 146
+    },
+    "source_quote": "IT之家 7 月 29 日消息，谷歌旗下网络安全部门 Wiz 发文，宣布推出一款能够自主寻找漏洞的 AI 智能体漏洞挖掘系统 Atlas，目前 Atlas 已发现超过 200 个安全漏洞， 同时斩获了 GitHub 10 万美元（IT之家注：现汇率约合 67.8 万元人民币）漏洞发现奖金 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-872251796acd94d0",
+    "raw_id": "RAW-36d44591c477b098",
+    "claim_type": "product_release",
+    "subject": "谷歌旗下 Wiz",
+    "predicate": "product_release",
+    "object": "AI 智能体漏洞挖掘系统 Atlas，已发现超 200 个漏洞",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-36d44591c477b098",
+      "start": 147,
+      "end": 209
+    },
+    "source_quote": "据介绍，Atlas 由多个 AI 智能体（AI Agent）组成，每个智能体负责不同任务，整体运作方式类似人类安全研究团队。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bf9c99264026bbb1",
+    "raw_id": "RAW-36d44591c477b098",
+    "claim_type": "product_release",
+    "subject": "谷歌旗下 Wiz",
+    "predicate": "product_release",
+    "object": "AI 智能体漏洞挖掘系统 Atlas，已发现超 200 个漏洞",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-36d44591c477b098",
+      "start": 209,
+      "end": 251
+    },
+    "source_quote": "不同代理分别负责理解代码库、提出漏洞假设、相互验证与质疑，并最终完成漏洞确认和报告。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-88e6249941d41ccd",
+    "raw_id": "RAW-36d44591c477b098",
+    "claim_type": "product_release",
+    "subject": "谷歌旗下 Wiz",
+    "predicate": "product_release",
+    "object": "AI 智能体漏洞挖掘系统 Atlas，已发现超 200 个漏洞",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-36d44591c477b098",
+      "start": 761,
+      "end": 832
+    },
+    "source_quote": "Wiz 表示，这种设计让 Atlas 能够以较低成本进行大规模深度代码分析，同时系统会针对每个发现的漏洞自动生成攻击验证程序，降低误报可能性。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de73a8e43d78e3b1",
+    "raw_id": "RAW-cf348fbc97b83f4e",
+    "claim_type": "organization_restructuring",
+    "subject": "字节跳动",
+    "predicate": "organization_restructuring",
+    "object": "飞书产品团队与豆包产品团队整合，成立新的豆包产品团队",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3a7d9098a2e01e5d"
+    },
+    "source_span": {
+      "raw_id": "RAW-cf348fbc97b83f4e",
+      "start": 399,
+      "end": 426
+    },
+    "source_quote": "飞书产品团队与豆包产品团队将整合，成立新的豆包产品团队",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff39f22d0316a951",
+    "raw_id": "RAW-2cbad27002152547",
+    "claim_type": "partnership",
+    "subject": "海尔机器人与橡鹿机器人达成战略",
+    "predicate": "partnership",
+    "object": "，共研全自动家庭AI烹饪机器人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2cbad27002152547",
+      "start": 0,
+      "end": 51
+    },
+    "source_quote": "宣称“全程免动手”：海尔机器人与橡鹿机器人达成战略合作，共研全自动家庭 AI 烹饪机器人 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cc99322e72739cc0",
+    "raw_id": "RAW-2cbad27002152547",
+    "claim_type": "partnership",
+    "subject": "海尔机器人与橡鹿机器人达成战略",
+    "predicate": "partnership",
+    "object": "，共研全自动家庭AI烹饪机器人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2cbad27002152547",
+      "start": 219,
+      "end": 263
+    },
+    "source_quote": "宣称“全程免动手”：海尔机器人与橡鹿机器人达成战略合作，共研全自动家庭 AI 烹饪机器人",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9487863ee2bc7bcb",
+    "raw_id": "RAW-2cbad27002152547",
+    "claim_type": "partnership",
+    "subject": "海尔机器人与橡鹿机器人达成战略",
+    "predicate": "partnership",
+    "object": "，共研全自动家庭AI烹饪机器人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2cbad27002152547",
+      "start": 314,
+      "end": 350
+    },
+    "source_quote": "IT之家 7 月 29 日消息，海尔机器人与橡鹿机器人今日达成战略合作。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-27dd29d79ce85dfb",
+    "raw_id": "RAW-2cbad27002152547",
+    "claim_type": "partnership",
+    "subject": "海尔机器人与橡鹿机器人达成战略",
+    "predicate": "partnership",
+    "object": "，共研全自动家庭AI烹饪机器人",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-2cbad27002152547",
+      "start": 350,
+      "end": 417
+    },
+    "source_quote": "双方将围绕中餐烹饪生态、AI 技术能力、家庭场景应用及产业链协同等方向展开合作， 共同打造行业全新一代全自动家庭 AI 烹饪机器人 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5c9b1f72fc185015",
+    "raw_id": "RAW-676548d623765586",
+    "claim_type": "hardware_product",
+    "subject": "零刻",
+    "predicate": "hardware_product",
+    "object": "最高 160TOPS，11895 元起",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-676548d623765586",
+      "start": 0,
+      "end": 67
+    },
+    "source_quote": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：搭载最高 160TOPS 算力独立 NPU，11895 元起 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d6d1216893640b3c",
+    "raw_id": "RAW-676548d623765586",
+    "claim_type": "hardware_product",
+    "subject": "零刻",
+    "predicate": "hardware_product",
+    "object": "最高 160TOPS，11895 元起",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-676548d623765586",
+      "start": 235,
+      "end": 295
+    },
+    "source_quote": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：搭载最高 160TOPS 算力独立 NPU，11895 元起",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c3a531839008005b",
+    "raw_id": "RAW-676548d623765586",
+    "claim_type": "hardware_product",
+    "subject": "零刻",
+    "predicate": "hardware_product",
+    "object": "最高 160TOPS，11895 元起",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-676548d623765586",
+      "start": 346,
+      "end": 428
+    },
+    "source_quote": "IT之家 7 月 29 日消息，零刻今日宣布推出零刻 SEi13 AI 与零刻 SEi14 AI 迷你主机，号称“为本地 AI 推理而生”，售价 11895 元起：",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-35a3cb151dcddc85",
+    "raw_id": "RAW-676548d623765586",
+    "claim_type": "hardware_product",
+    "subject": "零刻",
+    "predicate": "hardware_product",
+    "object": "最高 160TOPS，11895 元起",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-676548d623765586",
+      "start": 429,
+      "end": 478
+    },
+    "source_quote": "零刻 SEi13 AI：酷睿 i7-13620H、32G+1TB、24G 算力卡， 11895 元",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9216ae9863feeab8",
+    "raw_id": "RAW-856b10cba14836b4",
+    "claim_type": "organization_people",
+    "subject": "翁荔",
+    "predicate": "organization_people",
+    "object": "OpenAI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c9b404a8994f0800"
+    },
+    "source_span": {
+      "raw_id": "RAW-856b10cba14836b4",
+      "start": 402,
+      "end": 431
+    },
+    "source_quote": "翁荔将重返老东家，带队开发「递归自我改进」（RSI）新模型",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3fbae07b470412f0",
+    "raw_id": "RAW-856b10cba14836b4",
+    "claim_type": "organization_people",
+    "subject": "翁荔",
+    "predicate": "organization_people",
+    "object": "递归自我改进团队",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-c9b404a8994f0800"
+    },
+    "source_span": {
+      "raw_id": "RAW-856b10cba14836b4",
+      "start": 726,
+      "end": 775
+    },
+    "source_quote": "OpenAI 发言人已向 BI 证实，翁荔将亲自挂帅，领导一个聚焦「递归自我改进」（RSI）的团队",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9107d4b4732c1a84",
+    "raw_id": "RAW-f33d5b321f7e9037",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI ChatGPT 周活用户即将突破 10 亿，较预期晚了半年",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f33d5b321f7e9037",
+      "start": 609,
+      "end": 653
+    },
+    "source_quote": "从内部来看，OpenAI 去年秋季发布的新一代大模型 GPT-5 未能有效提振增长势头。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-5758b46cb6a6e404",
+    "raw_id": "RAW-f33d5b321f7e9037",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI ChatGPT 周活用户即将突破 10 亿，较预期晚了半年",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f33d5b321f7e9037",
+      "start": 653,
+      "end": 728
+    },
+    "source_quote": "据悉，该模型在研发阶段经历多次波折，正式上线后因体验问题遭到大量用户诟病，导致平台周活跃用户增速在发布后出现下滑，成为拖累整体增长节奏的重要因素之一。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-2f5262946c448e0b",
+    "raw_id": "RAW-f33d5b321f7e9037",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI ChatGPT 周活用户即将突破 10 亿，较预期晚了半年",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f33d5b321f7e9037",
+      "start": 0,
+      "end": 47
+    },
+    "source_quote": "消息称 OpenAI ChatGPT 周活用户即将破 10 亿，但较预期晚了半年 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-e282774a0ce08d0f",
+    "raw_id": "RAW-f33d5b321f7e9037",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "OpenAI ChatGPT 周活用户即将突破 10 亿，较预期晚了半年",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f33d5b321f7e9037",
+      "start": 215,
+      "end": 255
+    },
+    "source_quote": "消息称 OpenAI ChatGPT 周活用户即将破 10 亿，但较预期晚了半年",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-f172601f9c2d7fa9",
+    "raw_id": "RAW-acab27f2e7089ae7",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Security CLI to help developers find and fix vulnerabilities from the command line",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-acab27f2e7089ae7",
+      "start": 0,
+      "end": 108
+    },
+    "source_quote": "OpenAI open-sources Codex Security CLI to help developers find and fix vulnerabilities from the command line",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0202572c39993055",
+    "raw_id": "RAW-acab27f2e7089ae7",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Security CLI to help developers find and fix vulnerabilities from the command line",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-acab27f2e7089ae7",
+      "start": 109,
+      "end": 217
+    },
+    "source_quote": "OpenAI open-sources Codex Security CLI to help developers find and fix vulnerabilities from the command line",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-69909412c3f85bb9",
+    "raw_id": "RAW-acab27f2e7089ae7",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Security CLI to help developers find and fix vulnerabilities from the command line",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-acab27f2e7089ae7",
+      "start": 218,
+      "end": 645
+    },
+    "source_quote": "OpenAI has released Codex Security CLI, an open-source tool that automatically detects and fixes vulnerabilities in code repositories. Previously known internally as \"Aardvark,\" the system has already helped fix more than 3,000 critical security flaws, according to OpenAI. It competes directly with Anthropic's Claude Security, as both AI companies race to match the growing automation of cyberattacks with AI-powered defense.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d6b794d2392a6e9c",
+    "raw_id": "RAW-acab27f2e7089ae7",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Security CLI to help developers find and fix vulnerabilities from the command line",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-acab27f2e7089ae7",
+      "start": 646,
+      "end": 1073
+    },
+    "source_quote": "OpenAI has released Codex Security CLI, an open-source tool that automatically detects and fixes vulnerabilities in code repositories. Previously known internally as \"Aardvark,\" the system has already helped fix more than 3,000 critical security flaws, according to OpenAI. It competes directly with Anthropic's Claude Security, as both AI companies race to match the growing automation of cyberattacks with AI-powered defense.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4130deb774bcc423",
+    "raw_id": "RAW-6827bc7d4ece9353",
+    "claim_type": "financial_performance",
+    "subject": "微软",
+    "predicate": "financial_performance",
+    "object": "对 Anthropic 投资单季收益 32 亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-116532beeaafd01c"
+    },
+    "source_span": {
+      "raw_id": "RAW-6827bc7d4ece9353",
+      "start": 88,
+      "end": 140
+    },
+    "source_quote": "微软对 Anthropic 的投资在该季度带来 32 亿美元（现汇率约合 216.91 亿元人民币）收益",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2b4c17955cd8d1fa",
+    "raw_id": "RAW-6827bc7d4ece9353",
+    "claim_type": "financial_performance",
+    "subject": "微软",
+    "predicate": "financial_performance",
+    "object": "对 OpenAI 投资减值约 6 亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-116532beeaafd01c"
+    },
+    "source_span": {
+      "raw_id": "RAW-6827bc7d4ece9353",
+      "start": 142,
+      "end": 186
+    },
+    "source_quote": "对 OpenAI 的投资却出现了约 6 亿美元（现汇率约合 40.67 亿元人民币）减值",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-acb60f822b0a75b1",
+    "raw_id": "RAW-527000238dadf8bb",
+    "claim_type": "research_result",
+    "subject": "Claude Mythos Preview",
+    "predicate": "research_result",
+    "object": "HAWK",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 1,
+      "model_candidate_id": "MAC-64a942f3c3424390"
+    },
+    "source_span": {
+      "raw_id": "RAW-527000238dadf8bb",
+      "start": 89,
+      "end": 193
+    },
+    "source_quote": "Claude 针对 NIST 后量子签名候选算法 HAWK 及简化版 AES-128 加密标准发现了更高效的攻击方法。其中针对 HAWK 的攻击直接导致该算法于次日被其开发者从 NIST 的标准化进程中撤回。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dc51b91c6c9846e4",
+    "raw_id": "RAW-527000238dadf8bb",
+    "claim_type": "research_result",
+    "subject": "Claude Mythos Preview",
+    "predicate": "research_result",
+    "object": "AES-128 简化版",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 2,
+      "model_candidate_id": "MAC-64a942f3c3424390"
+    },
+    "source_span": {
+      "raw_id": "RAW-527000238dadf8bb",
+      "start": 728,
+      "end": 807
+    },
+    "source_quote": "第二项研究成果针对的是 AES-128 加密算法的简化版本。标准 AES-128 加密执行 10 轮数学变换，而此次攻击针对的是仅执行 7 轮的简化研究版本。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  }
+]

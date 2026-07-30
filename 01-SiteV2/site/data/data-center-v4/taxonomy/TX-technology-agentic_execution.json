@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-agentic_execution",
@@ -17,8 +17,11 @@
     "typeLabel": "技术",
     "valueId": "agentic_execution",
     "eventIds": [
+      "EV-8aa51e324eca8fc2",
+      "EV-9f847fced6da7c4c",
       "EV-5f3ccb941a2fe5d7",
       "EV-9490bae84e7b4707",
+      "EV-cc65a81f48e10ceb",
       "EV-136b2edc9b9f3be8",
       "EV-3fb827f44ea109de",
       "EV-bffc68e7bb4d598b",
@@ -62,7 +65,6 @@
       "EV-921c843ad32c993c",
       "EV-010946e35d35bb43",
       "EV-2bea8d8046a9b325",
-      "EV-8aa51e324eca8fc2",
       "EV-9fa9822969d3c3fd",
       "EV-da064f736e880e30",
       "EV-f487788f3d44f288",
@@ -188,6 +190,9 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-16bb9d0c6a2a7115",
+      "EV-a4fe78df6ccd63c8",
+      "EV-fd9d6fae44ff4a15",
       "EV-7a4d1e871dcd3b1f",
       "EV-7c934b299d048348",
       "EV-bfa090c78227abf8",
@@ -405,6 +410,8 @@
       "EV-8cb5b0ed18c7cdd8",
       "EV-6566d065f5500a85",
       "EV-34929bdd016dc8d6",
+      "EV-20b82e2a2cb33a0e",
+      "EV-3a0596df367df665",
       "EV-70fd0c4e482a646e",
       "EV-86537be17d50ff20",
       "EV-618e2e96fac28f06",
@@ -424,9 +431,9 @@
       "EN-fb42d760d80a6314",
       "EN-9fbf261b62c1d7c0",
       "EN-2be663431f007250",
+      "EN-7d3194f79e645c42",
       "EN-ab9b29074a980e4b",
       "EN-c70eca6b0f88f44d",
-      "EN-7d3194f79e645c42",
       "EN-382635c9325bf327",
       "EN-3db1f560db626918",
       "EN-8f71c4871a160172",
@@ -602,6 +609,7 @@
       "EN-de5a1adf4fedcce1",
       "EN-19e41212c0556603",
       "EN-dca6ec9510fc0176",
+      "EN-30397d0cfc1b0e29",
       "EN-6fcba5d96a4fadfd",
       "EN-449a66e865c071ec",
       "EN-bac9509d0efda159",
@@ -848,6 +856,8 @@
       "EN-b7bea343b08cce2c",
       "EN-4a639cb888a15d75",
       "EN-65b3aa2f527deeef",
+      "EN-16478186eeecf696",
+      "EN-18bb438ae33bc120",
       "EN-96045bee6a2d2527",
       "EN-7f871cbf905f6e0c",
       "EN-c608c4787821de1b",
@@ -909,6 +919,169 @@
     "lastSeen": "2027-09-30"
   },
   "events": [
+    {
+      "id": "EV-8aa51e324eca8fc2",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Encore AI 获 3000 万美元 A 轮融资，用客户通话训练 AI 语音智能体",
+      "originalTitle": "",
+      "subject": "Encore AI 获 3000 万美元 A 轮",
+      "action": "融资",
+      "object": "，用客户通话训练 AI 语音智能体",
+      "metrics": [
+        "$30M",
+        "$30 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-9f847fced6da7c4c",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "智能体AI能否让美国制造业回归？",
+      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
+      "subject": "P-1 AI, Inc.",
+      "action": "funding",
+      "object": "$50 million Series A financing round",
+      "metrics": [
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
+      "publisher": "tech.yahoo.com"
+    },
     {
       "id": "EV-5f3ccb941a2fe5d7",
       "dataDate": "2026-07-29",
@@ -1100,6 +1273,68 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-cc65a81f48e10ceb",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-30",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "企业AI新闻",
+      "originalTitle": "Enterprise AI News | AI Agents Directory",
+      "subject": "OpenAI",
+      "action": "acquisition",
+      "object": "Ona",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aiagentsdirectory.com/news/topic/enterprise-ai",
+      "publisher": "aiagentsdirectory.com"
     },
     {
       "id": "EV-136b2edc9b9f3be8",
@@ -4583,71 +4818,6 @@
       "products": [],
       "sourceUrl": "https://tekst.com/blogs/why-we-raised-13-5m-to-define-process-intelligence-for-the-agentic-era",
       "publisher": "tekst.com"
-    },
-    {
-      "id": "EV-8aa51e324eca8fc2",
-      "dataDate": "2026-06-25",
-      "date": "2026-06-25",
-      "updatedDate": "2026-06-25",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元",
-      "originalTitle": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune",
-      "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
-      "action": "raised",
-      "object": "$30 million | Fortune",
-      "metrics": [
-        "$30 million",
-        "$42 million",
-        "$11 million"
-      ],
-      "locations": [],
-      "missingFields": [
-        "entities",
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai",
-      "publisher": "fortune.com"
     },
     {
       "id": "EV-9fa9822969d3c3fd",
@@ -14786,6 +14956,253 @@
       "products": [],
       "sourceUrl": "https://sierra.ai/customers/singtel",
       "publisher": "sierra.ai"
+    },
+    {
+      "id": "EV-16bb9d0c6a2a7115",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-30",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软确认 Copilot\"超级应用\"年内问世，整合智能体、AI 编程与聊天",
+      "originalTitle": "",
+      "subject": "Microsoft",
+      "action": "product_release",
+      "object": "微软确认 Copilot\"超级应用\"年内问世，整合智能体、AI 编程与聊天",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "consumer",
+            "dimensionName": "目标用户",
+            "name": "个人用户"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "consumer",
+          "dimensionName": "目标用户",
+          "name": "个人用户"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "consumer",
+          "dimensionName": "目标用户",
+          "name": "个人用户"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/367.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a4fe78df6ccd63c8",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌旗下 Wiz 推出 AI 智能体漏洞挖掘系统 Atlas，已发现超 200 个漏洞",
+      "originalTitle": "",
+      "subject": "谷歌旗下 Wiz",
+      "action": "推出",
+      "object": "AI 智能体漏洞挖掘系统 Atlas，已发现超 200 个漏洞",
+      "metrics": [
+        "10 万",
+        "67.8 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-30397d0cfc1b0e29",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "谷歌旗下 Wiz",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/319.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fd9d6fae44ff4a15",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软确认Copilot“超级应用”将于今年推出",
+      "originalTitle": "Microsoft confirms Copilot ‘super app’ coming this year",
+      "subject": "Microsoft",
+      "action": "product_release",
+      "object": "Copilot super app combining chat, coding, and agentic capabilities",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+      "publisher": "The Verge AI"
     },
     {
       "id": "EV-7a4d1e871dcd3b1f",
@@ -34388,6 +34805,172 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-20b82e2a2cb33a0e",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 失控 AI 智能体的攻击范围已超出 Hugging Face",
+      "originalTitle": "OpenAI rogue AI agent’s attack expanded beyond Hugging Face",
+      "subject": "OpenAI autonomous AI agent",
+      "action": "security_incident",
+      "object": "Hugging Face production environment",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-16478186eeecf696",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI autonomous AI agent",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://csoonline.com/article/4202852/openai-rogue-ai-agents-attack-expanded-beyond-hugging-face.html",
+      "publisher": "csoonline.com"
+    },
+    {
+      "id": "EV-3a0596df367df665",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "HANDBOOK.md 基准测试：长政策文档无法可靠约束AI智能体行为",
+      "originalTitle": "",
+      "subject": "HANDBOOK.md 基准测试：长",
+      "action": "政策",
+      "object": "文档无法可靠约束AI智能体行为",
+      "metrics": [
+        "36.2%",
+        "25%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-18bb438ae33bc120"
+      ],
+      "entityNames": [
+        "HANDBOOK.md 基准测试"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arxiv.org/abs/2607.25398",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
       "id": "EV-70fd0c4e482a646e",
       "dataDate": "2026-07-16",
       "date": "2026-07-15",
@@ -35431,8 +36014,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop",
         "TX-use_case-enterprise_operations"
       ],
       "relatedEntityIds": [],
@@ -35488,6 +36071,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-16bb9d0c6a2a7115",
+        "EV-fd9d6fae44ff4a15",
         "EV-7a4d1e871dcd3b1f",
         "EV-3eb44a239ebef4b0",
         "EV-272aea63d4e50349",
@@ -35544,12 +36129,13 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
-        "EV-bce258f8f915ff5f",
+        "EV-741728825db1f14e",
         "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
         "EV-3da14e3743571e92",
         "EV-d9a78a839d6c628f",
+        "EV-fd8754ce93db36a7",
         "EV-1587a760d81451be",
         "EV-33e7429a7bc94840",
         "EV-022d1f3160d94048",
@@ -35558,9 +36144,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -35598,7 +36184,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-2be663431f007250",
@@ -35615,13 +36201,344 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop",
         "TX-use_case-enterprise_operations"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-28",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-7d3194f79e645c42",
+      "name": "OpenAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cc65a81f48e10ceb",
+        "EV-97854226b6f43a95",
+        "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de",
+        "EV-14cc7f194f3e5af8",
+        "EV-d7a7244d620a2142",
+        "EV-4da1a7c4d527eb69",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-7abd8ec418f1e7f3",
+        "EV-fb817fb0a5e63323",
+        "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
+        "EV-20d762872664fddb",
+        "EV-aa33ca051f3a7f78",
+        "EV-d4e44892226be468",
+        "EV-edcb66d0401cfb8f",
+        "EV-336cd248842004a5",
+        "EV-a42e51959c627554",
+        "EV-ee0662b75588987e",
+        "EV-b1138bccf5ccd86c",
+        "EV-201b25d4f3cf696a",
+        "EV-d9270ae7b862212b",
+        "EV-5762fe51987bc5ff",
+        "EV-7954fd5a6b8b76d0",
+        "EV-7add33b4c74dbf1a",
+        "EV-1abf0d076d30ec6d",
+        "EV-3b40ec144e5db22c",
+        "EV-467d1a701d21327d",
+        "EV-c5643983538c6513",
+        "EV-1f55bab475db2c30",
+        "EV-acdeebead5324344",
+        "EV-dda9429d76897a3d",
+        "EV-2a101d792d92fb1f",
+        "EV-b78d7fc420117d68",
+        "EV-a4f5d59c1b4ddce1",
+        "EV-d4c9326c53dd927a",
+        "EV-c3f617e75d303f59",
+        "EV-6fa2c58973ea61b4",
+        "EV-e7e2dfbc41a639d2",
+        "EV-e15ae1112294d59e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-62901df23f471eea",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-a5d127e62d102ad6",
+        "EV-d1e2a7c6d314612c",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-83b2e8f7fe679bc3",
+        "EV-8abf5adc3e72fbb8",
+        "EV-3a704c40204ecfd9",
+        "EV-777eb5b7783b71fb",
+        "EV-6cea35f065f0ee9e",
+        "EV-92be9fa58b1ee19f",
+        "EV-dc56b5ae3009f6f5",
+        "EV-f55d16df5b5fecb2",
+        "EV-286574206caa37ab",
+        "EV-eec1e6857f0e0b2b",
+        "EV-fdf6128ae36e1f5e",
+        "EV-7f2811d2272cf4a3",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-48015ed51ec9be9f",
+        "EV-8ab833e13ecaa916",
+        "EV-9793aeed336b1357",
+        "EV-41ffecb51e643397",
+        "EV-5f199c45a41b8555",
+        "EV-26183a56cf9ed63c",
+        "EV-3fbfb89a10efd42f",
+        "EV-1c6adfef6f405319",
+        "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
+        "EV-1068d4195842b580",
+        "EV-8803f626b5df5ab0",
+        "EV-014ca842352f6b49",
+        "EV-6f433ccff3dce657",
+        "EV-2aa470d66b93391d",
+        "EV-7c934b299d048348",
+        "EV-96cfe78a2dee2182",
+        "EV-272aea63d4e50349",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-c9216f0145c3ef2b",
+        "EV-2ee06634c0ce9f30",
+        "EV-395884a4c090103c",
+        "EV-56626f2604aa1e30",
+        "EV-a9b7129f547eef64",
+        "EV-272c5c798bc95d9d",
+        "EV-33e98b8bbd0a11b1",
+        "EV-c9aba59ba04c9fc8",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-b0dec1e885a601fe",
+        "EV-243e73016576fa43",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-fe519605ebb69aaf",
+        "EV-1ba939d8baf43207",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
+        "EV-133a92cb6cb25a0c",
+        "EV-7c836c34e7cf36ee",
+        "EV-071c72225b8aaf80",
+        "EV-ae1e2769aff82965",
+        "EV-4f36e494d9281522",
+        "EV-bc41a3060f11ca2d",
+        "EV-83a8ac8a2554b60c",
+        "EV-a68475d82ec939b5",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-7963d8c78531f12d",
+        "EV-70e3f88cb06a856c",
+        "EV-7c899d5decafc42f",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
+        "EV-74dfbd82b47dc626",
+        "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
+        "EV-712473b23a2a11a0",
+        "EV-b9296439f7c34c89",
+        "EV-cf5b2a0aff3914bd",
+        "EV-025778b83c1b2ca9",
+        "EV-34198b3eaa701a00",
+        "EV-969ed3078d10f0c9",
+        "EV-d7d8fcd0694a590f",
+        "EV-6e7b632ee0b3410d",
+        "EV-efee7c1ac4dc336f",
+        "EV-2ffbe4560e69992a",
+        "EV-f1befee642551db7",
+        "EV-0dbc7b904378f713",
+        "EV-10eb16192d83dbf7",
+        "EV-ae736eb124d7163a",
+        "EV-cf317dd1579a01bb",
+        "EV-d07f7a8d4d20a034",
+        "EV-f023e94a239f22f2",
+        "EV-107725f2bdece882",
+        "EV-3ab2de2a340e0a23",
+        "EV-6af1e74358025628",
+        "EV-ee9a1c99fe7054d6",
+        "EV-225ad0a94611daf3",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-caec65aef89d3b4a",
+        "EV-d07906b648eec63f",
+        "EV-70efbfcaadcdb259",
+        "EV-ad2e4fe6a149d95d",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-2059f42c7b2aff44",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-9ca7db66f8f10b63",
+        "EV-9c4b862020202f6c",
+        "EV-5012364af7480121",
+        "EV-918fc324de3117bd",
+        "EV-8a91e14f37d32b4d",
+        "EV-31782f0824ae1db1",
+        "EV-860b90c017deaa59",
+        "EV-ae5333aeb2be6316",
+        "EV-888b9eb73582e21c",
+        "EV-13f0b515194f3245",
+        "EV-abf0990dcaceb1ce",
+        "EV-b8bfab77707274b7",
+        "EV-6364cfadff0d1d30",
+        "EV-6eb9a23be3117421",
+        "EV-a0d3853dd41c8ef6",
+        "EV-37cdd2fae39aaa2e",
+        "EV-3d1c01d3d1b0bba4",
+        "EV-644337db309a1c82",
+        "EV-be69ef6fcae83890",
+        "EV-482df8a8ef264238",
+        "EV-9110f23a7e60173e",
+        "EV-9e04edd969c977a1",
+        "EV-e792252690f98a22",
+        "EV-2aca9a810ea65555",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-bac5824e594f1831",
+        "EV-0c06df62702d26ab",
+        "EV-f01d28aac73c3f9c",
+        "EV-574998b1638a3f4f",
+        "EV-0b6992ae74184d13",
+        "EV-7f979d0a01e6dffa",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-ab3586268ebfab38",
+        "EV-d6ba9ef3ff65940c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-b73c7096546b82e8",
+        "EV-f89ba2b487d4abf1",
+        "EV-59016292a76a2c19",
+        "EV-ad1444d8653b37ae",
+        "EV-8f167245603f8ebc",
+        "EV-fbdfb5888ad19663",
+        "EV-cac9d9f31ef675ce",
+        "EV-4a727d54055d6d0e",
+        "EV-e295f808713644c7",
+        "EV-3474febbec499f3c",
+        "EV-519537a36355d82e",
+        "EV-631197767a45d34c",
+        "EV-657837763764c869",
+        "EV-ce291577f61b8543",
+        "EV-a4f052325d0ef230",
+        "EV-3550e9863266ea96",
+        "EV-ca420d07e12369f1",
+        "EV-773ffcc6e1df56fa",
+        "EV-cfce55156a2ed7d2",
+        "EV-02b19ffbe883ee2e",
+        "EV-cf496e0f8a56ca97",
+        "EV-00834dd71037c7cc",
+        "EV-741728825db1f14e",
+        "EV-bce258f8f915ff5f",
+        "EV-eed7fb721dc2f9de",
+        "EV-20b82e2a2cb33a0e",
+        "EV-a89354fc03158eaa",
+        "EV-e86fcdb67a637c4c",
+        "EV-0eef30387327e73f",
+        "EV-a0ec365561b53cd4",
+        "EV-d40d5c9625f296db",
+        "EV-d709599eddf5db04",
+        "EV-b30dcacd355fe5f5",
+        "EV-2f7e6d3a68bbf08f",
+        "EV-5cd10de5c12916f0",
+        "EV-067f57f6e6ffa6ce",
+        "EV-da6678e4e865e00e",
+        "EV-14b44a40808340f5",
+        "EV-2d56dec8dfeb2b56",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-917966af8545a380",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-e1fa30136e2e12f1",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-35d1cc31d1351d4c",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475",
+        "EV-62df953d81def866",
+        "EV-6b7917bd7edd4bde",
+        "EV-e1ebf7d63e058a39",
+        "EV-933294dfb2d19a67",
+        "EV-b52af7bb03c98eb0",
+        "EV-9705a8de3c2e9653",
+        "EV-07454824d51125ca",
+        "EV-6950bb00a0913038",
+        "EV-d29997d350e7c947",
+        "EV-6defe295e6fbe61c",
+        "EV-4beb890f0879aeaf",
+        "EV-a46db68211837fec",
+        "EV-0a0b6604250a82b8",
+        "EV-a381531dd3abef18",
+        "EV-d8be3852cb83a361",
+        "EV-8973f8148205ed35",
+        "EV-65a4b47d1cca0a7a",
+        "EV-e8e47f4bb528e107"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
+        "TX-technology-human_in_loop",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-professional_services",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-data_analysis",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-fine_tuning",
+        "TX-use_case-research_science",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
+        "EN-968e2d5b08687bf4",
+        "EN-f65bb77682b83476",
+        "EN-3850792f618f534b",
+        "EN-7839fb10a8f14c70",
+        "EN-74692028630429c7",
+        "EN-c70eca6b0f88f44d",
+        "EN-52fc33ae4d101a5d",
+        "EN-6a50fbf0b970c03a",
+        "EN-9fbf261b62c1d7c0",
+        "EN-4d748ebd71af03a7",
+        "EN-65ef4539bbcbe9fc",
+        "EN-3673c8b4dba7409e",
+        "EN-373ac021a2c0bb2c",
+        "EN-af53dbc3e443f7a9",
+        "EN-3c534d54dae48cbb",
+        "EN-b269456229397ef3",
+        "EN-da20c5952dba19d8",
+        "EN-fc0586e76f80f181",
+        "EN-1ecf93c539fcffca",
+        "EN-9de030d092759897",
+        "EN-b9db1ff13ae8496e"
+      ],
+      "firstSeen": "2022-10-01",
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-ab9b29074a980e4b",
@@ -35718,7 +36635,10 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
+        "EV-1068d4195842b580",
+        "EV-6f433ccff3dce657",
+        "EV-c181194902a43422",
+        "EV-dc429e4943ed80de",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
         "EV-ab93c7a2f4178e93",
@@ -35731,6 +36651,7 @@
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
+        "EV-ec76f0db15b1781a",
         "EV-32fb6014149bafdd",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
@@ -35874,6 +36795,9 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-741728825db1f14e",
+        "EV-abb190c09b08067c",
+        "EV-d46aa5935d9bb672",
         "EV-a61345459e796a19",
         "EV-0eef30387327e73f",
         "EV-ae9142b65fa86975",
@@ -35917,9 +36841,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
@@ -35972,329 +36896,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-29"
-    },
-    {
-      "id": "EN-7d3194f79e645c42",
-      "name": "OpenAI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-97854226b6f43a95",
-        "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
-        "EV-14cc7f194f3e5af8",
-        "EV-d7a7244d620a2142",
-        "EV-4da1a7c4d527eb69",
-        "EV-e41fc65eb014893f",
-        "EV-974a6b7d0e0efef2",
-        "EV-7abd8ec418f1e7f3",
-        "EV-fb817fb0a5e63323",
-        "EV-dfddbb260b3d1c77",
-        "EV-78a11d309c3d4e97",
-        "EV-20d762872664fddb",
-        "EV-aa33ca051f3a7f78",
-        "EV-d4e44892226be468",
-        "EV-edcb66d0401cfb8f",
-        "EV-336cd248842004a5",
-        "EV-a42e51959c627554",
-        "EV-ee0662b75588987e",
-        "EV-b1138bccf5ccd86c",
-        "EV-201b25d4f3cf696a",
-        "EV-d9270ae7b862212b",
-        "EV-5762fe51987bc5ff",
-        "EV-7954fd5a6b8b76d0",
-        "EV-7add33b4c74dbf1a",
-        "EV-1abf0d076d30ec6d",
-        "EV-3b40ec144e5db22c",
-        "EV-467d1a701d21327d",
-        "EV-c5643983538c6513",
-        "EV-1f55bab475db2c30",
-        "EV-acdeebead5324344",
-        "EV-dda9429d76897a3d",
-        "EV-2a101d792d92fb1f",
-        "EV-b78d7fc420117d68",
-        "EV-a4f5d59c1b4ddce1",
-        "EV-d4c9326c53dd927a",
-        "EV-c3f617e75d303f59",
-        "EV-6fa2c58973ea61b4",
-        "EV-e7e2dfbc41a639d2",
-        "EV-e15ae1112294d59e",
-        "EV-36d484148fbd3424",
-        "EV-47a16db069ed320e",
-        "EV-62901df23f471eea",
-        "EV-538adc98d1da8fda",
-        "EV-d209a6acecba4285",
-        "EV-a5d127e62d102ad6",
-        "EV-d1e2a7c6d314612c",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-83b2e8f7fe679bc3",
-        "EV-8abf5adc3e72fbb8",
-        "EV-3a704c40204ecfd9",
-        "EV-777eb5b7783b71fb",
-        "EV-6cea35f065f0ee9e",
-        "EV-92be9fa58b1ee19f",
-        "EV-dc56b5ae3009f6f5",
-        "EV-f55d16df5b5fecb2",
-        "EV-286574206caa37ab",
-        "EV-eec1e6857f0e0b2b",
-        "EV-fdf6128ae36e1f5e",
-        "EV-7f2811d2272cf4a3",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b833b29d904b39ac",
-        "EV-48015ed51ec9be9f",
-        "EV-8ab833e13ecaa916",
-        "EV-9793aeed336b1357",
-        "EV-41ffecb51e643397",
-        "EV-5f199c45a41b8555",
-        "EV-26183a56cf9ed63c",
-        "EV-3fbfb89a10efd42f",
-        "EV-1c6adfef6f405319",
-        "EV-66df35d14361a6cb",
-        "EV-3c4d6d70ac763885",
-        "EV-2aa470d66b93391d",
-        "EV-7c934b299d048348",
-        "EV-96cfe78a2dee2182",
-        "EV-272aea63d4e50349",
-        "EV-5f2acbfb8f54fd59",
-        "EV-6aae550a6523a8fd",
-        "EV-c9216f0145c3ef2b",
-        "EV-2ee06634c0ce9f30",
-        "EV-395884a4c090103c",
-        "EV-56626f2604aa1e30",
-        "EV-a9b7129f547eef64",
-        "EV-272c5c798bc95d9d",
-        "EV-33e98b8bbd0a11b1",
-        "EV-c9aba59ba04c9fc8",
-        "EV-5ec22cf9a1fb59d4",
-        "EV-b0dec1e885a601fe",
-        "EV-243e73016576fa43",
-        "EV-2634b786bde9fb8e",
-        "EV-3b7b9040dd2c2a89",
-        "EV-fe519605ebb69aaf",
-        "EV-1ba939d8baf43207",
-        "EV-5b193a038ab4ea22",
-        "EV-969923b0b978a660",
-        "EV-133a92cb6cb25a0c",
-        "EV-7c836c34e7cf36ee",
-        "EV-071c72225b8aaf80",
-        "EV-ae1e2769aff82965",
-        "EV-4f36e494d9281522",
-        "EV-bc41a3060f11ca2d",
-        "EV-83a8ac8a2554b60c",
-        "EV-a68475d82ec939b5",
-        "EV-c237f5dc53f0a923",
-        "EV-3a74e4995b590507",
-        "EV-7963d8c78531f12d",
-        "EV-70e3f88cb06a856c",
-        "EV-7c899d5decafc42f",
-        "EV-a4a61babc902931a",
-        "EV-1c2723ad61d192bd",
-        "EV-74dfbd82b47dc626",
-        "EV-167f50a6f3134bd5",
-        "EV-30749250196dd507",
-        "EV-712473b23a2a11a0",
-        "EV-b9296439f7c34c89",
-        "EV-cf5b2a0aff3914bd",
-        "EV-025778b83c1b2ca9",
-        "EV-34198b3eaa701a00",
-        "EV-969ed3078d10f0c9",
-        "EV-d7d8fcd0694a590f",
-        "EV-6e7b632ee0b3410d",
-        "EV-efee7c1ac4dc336f",
-        "EV-2ffbe4560e69992a",
-        "EV-f1befee642551db7",
-        "EV-0dbc7b904378f713",
-        "EV-10eb16192d83dbf7",
-        "EV-ae736eb124d7163a",
-        "EV-cf317dd1579a01bb",
-        "EV-d07f7a8d4d20a034",
-        "EV-f023e94a239f22f2",
-        "EV-107725f2bdece882",
-        "EV-3ab2de2a340e0a23",
-        "EV-6af1e74358025628",
-        "EV-ee9a1c99fe7054d6",
-        "EV-225ad0a94611daf3",
-        "EV-cadcc94249dea81d",
-        "EV-dae42c1daf8ba2f8",
-        "EV-caec65aef89d3b4a",
-        "EV-d07906b648eec63f",
-        "EV-70efbfcaadcdb259",
-        "EV-ad2e4fe6a149d95d",
-        "EV-51aed98773a9fca1",
-        "EV-cc3b92fe233953cf",
-        "EV-2059f42c7b2aff44",
-        "EV-578a9db1fe952d0a",
-        "EV-b93b5cc15823e9c3",
-        "EV-20ffa968bcbc4729",
-        "EV-77662aa9bef9efbe",
-        "EV-9ca7db66f8f10b63",
-        "EV-9c4b862020202f6c",
-        "EV-5012364af7480121",
-        "EV-918fc324de3117bd",
-        "EV-8a91e14f37d32b4d",
-        "EV-31782f0824ae1db1",
-        "EV-860b90c017deaa59",
-        "EV-ae5333aeb2be6316",
-        "EV-888b9eb73582e21c",
-        "EV-13f0b515194f3245",
-        "EV-abf0990dcaceb1ce",
-        "EV-b8bfab77707274b7",
-        "EV-6364cfadff0d1d30",
-        "EV-6eb9a23be3117421",
-        "EV-a0d3853dd41c8ef6",
-        "EV-37cdd2fae39aaa2e",
-        "EV-3d1c01d3d1b0bba4",
-        "EV-644337db309a1c82",
-        "EV-be69ef6fcae83890",
-        "EV-482df8a8ef264238",
-        "EV-9110f23a7e60173e",
-        "EV-9e04edd969c977a1",
-        "EV-e792252690f98a22",
-        "EV-2aca9a810ea65555",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-bac5824e594f1831",
-        "EV-0c06df62702d26ab",
-        "EV-f01d28aac73c3f9c",
-        "EV-574998b1638a3f4f",
-        "EV-0b6992ae74184d13",
-        "EV-7f979d0a01e6dffa",
-        "EV-f3e11eadfb7c6a4b",
-        "EV-ab3586268ebfab38",
-        "EV-d6ba9ef3ff65940c",
-        "EV-3f8ba5855b64dd1a",
-        "EV-b73c7096546b82e8",
-        "EV-f89ba2b487d4abf1",
-        "EV-59016292a76a2c19",
-        "EV-ad1444d8653b37ae",
-        "EV-8f167245603f8ebc",
-        "EV-fbdfb5888ad19663",
-        "EV-cac9d9f31ef675ce",
-        "EV-4a727d54055d6d0e",
-        "EV-e295f808713644c7",
-        "EV-3474febbec499f3c",
-        "EV-519537a36355d82e",
-        "EV-631197767a45d34c",
-        "EV-657837763764c869",
-        "EV-ce291577f61b8543",
-        "EV-a4f052325d0ef230",
-        "EV-3550e9863266ea96",
-        "EV-ca420d07e12369f1",
-        "EV-773ffcc6e1df56fa",
-        "EV-cfce55156a2ed7d2",
-        "EV-02b19ffbe883ee2e",
-        "EV-cf496e0f8a56ca97",
-        "EV-00834dd71037c7cc",
-        "EV-e86fcdb67a637c4c",
-        "EV-0eef30387327e73f",
-        "EV-bce258f8f915ff5f",
-        "EV-a0ec365561b53cd4",
-        "EV-d40d5c9625f296db",
-        "EV-d709599eddf5db04",
-        "EV-b30dcacd355fe5f5",
-        "EV-2f7e6d3a68bbf08f",
-        "EV-5cd10de5c12916f0",
-        "EV-067f57f6e6ffa6ce",
-        "EV-da6678e4e865e00e",
-        "EV-14b44a40808340f5",
-        "EV-2d56dec8dfeb2b56",
-        "EV-8cb2374f76202ecc",
-        "EV-946569cccbd9222f",
-        "EV-917966af8545a380",
-        "EV-b4203b10d6592bf2",
-        "EV-5eb23cdd9c14c6ea",
-        "EV-e1fa30136e2e12f1",
-        "EV-10e841ab47d2b1f1",
-        "EV-f2d29ca7b05c3dd9",
-        "EV-35d1cc31d1351d4c",
-        "EV-ea2b6ce4acd46366",
-        "EV-2821d0cef61b3c6a",
-        "EV-6f7c5f0abad3d4da",
-        "EV-8f497488d129fee5",
-        "EV-a8f1204b54ae6475",
-        "EV-62df953d81def866",
-        "EV-6b7917bd7edd4bde",
-        "EV-e1ebf7d63e058a39",
-        "EV-933294dfb2d19a67",
-        "EV-b52af7bb03c98eb0",
-        "EV-9705a8de3c2e9653",
-        "EV-07454824d51125ca",
-        "EV-6950bb00a0913038",
-        "EV-d29997d350e7c947",
-        "EV-6defe295e6fbe61c",
-        "EV-4beb890f0879aeaf",
-        "EV-a46db68211837fec",
-        "EV-0a0b6604250a82b8",
-        "EV-a381531dd3abef18",
-        "EV-d8be3852cb83a361",
-        "EV-8973f8148205ed35",
-        "EV-65a4b47d1cca0a7a",
-        "EV-e8e47f4bb528e107"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-industry-technology",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-professional_services",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
-        "TX-technology-open_weights",
-        "TX-technology-model_context_protocol",
-        "TX-technology-guardrails_safety",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning"
-      ],
-      "relatedEntityIds": [
-        "EN-968e2d5b08687bf4",
-        "EN-f65bb77682b83476",
-        "EN-3850792f618f534b",
-        "EN-7839fb10a8f14c70",
-        "EN-d1ad14d4ad57d207",
-        "EN-74692028630429c7",
-        "EN-c70eca6b0f88f44d",
-        "EN-52fc33ae4d101a5d",
-        "EN-6a50fbf0b970c03a",
-        "EN-9fbf261b62c1d7c0",
-        "EN-4d748ebd71af03a7",
-        "EN-65ef4539bbcbe9fc",
-        "EN-3673c8b4dba7409e",
-        "EN-373ac021a2c0bb2c",
-        "EN-af53dbc3e443f7a9",
-        "EN-3c534d54dae48cbb",
-        "EN-b269456229397ef3",
-        "EN-da20c5952dba19d8",
-        "EN-fc0586e76f80f181",
-        "EN-1ecf93c539fcffca",
-        "EN-9de030d092759897",
-        "EN-b9db1ff13ae8496e"
-      ],
-      "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-382635c9325bf327",
@@ -36626,8 +37228,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -36961,8 +37563,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -36985,9 +37587,9 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-speech_audio",
         "TX-technology-distillation",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
@@ -37565,7 +38167,6 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
         "EV-bfa090c78227abf8",
-        "EV-0d5a32aca724d30e",
         "EV-2e1352039c487bb0",
         "EV-b4aa08aef57bdb0f",
         "EV-1a241bcb4fad886c",
@@ -37615,14 +38216,13 @@
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
-        "TX-technology-image_generation",
         "TX-technology-speech_audio",
+        "TX-technology-image_generation",
         "TX-technology-quantization"
       ],
       "relatedEntityIds": [
@@ -37799,7 +38399,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -37836,6 +38438,10 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-1068d4195842b580",
+        "EV-3ebf23c149dde19d",
+        "EV-b78644de93b5a96d",
+        "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
         "EV-33e98b8bbd0a11b1",
@@ -37954,8 +38560,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -37978,21 +38584,23 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-use_case-content_creation",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -38000,7 +38608,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-4dd5b6e2bf3bfd4f",
@@ -38428,8 +39036,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
@@ -38668,8 +39276,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-robotics_automation",
         "TX-industry-manufacturing",
         "TX-technology-embodied_ai",
@@ -39126,6 +39734,7 @@
         "EV-57944eebac69d510",
         "EV-5b1bdc06406424b4",
         "EV-6272444f30281858",
+        "EV-4e01d849a23a07d9",
         "EV-226a363f84676808",
         "EV-9ae9aa86e51e64a2",
         "EV-6ce6b9c9780b97d9"
@@ -39144,7 +39753,7 @@
         "EN-a42d5d95234db6c4"
       ],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-864e7f949b17c9b1",
@@ -39593,8 +40202,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
@@ -39623,7 +40232,6 @@
         "EV-26d2874c6ce028d6",
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
-        "EV-0d5a32aca724d30e",
         "EV-3126fb08491de669",
         "EV-c710c75d9c823a49",
         "EV-b8bc579bfa5797a2",
@@ -39643,10 +40251,7 @@
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
-        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-use_case-knowledge_search"
@@ -39657,7 +40262,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -39726,6 +40331,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-eed7fb721dc2f9de",
         "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
@@ -39776,7 +40382,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-30e363d3e8c59f2c",
@@ -39789,6 +40395,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-96b14084d95d72f9",
         "EV-4e5c6267b3237dac"
       ],
       "viewpointIds": [],
@@ -39796,8 +40403,8 @@
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-09",
-      "lastSeen": "2026-07-09"
+      "firstSeen": "2026-04-04",
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-cbc62794911ff31b",
@@ -39841,12 +40448,13 @@
         "EV-8993e021ac17df4a",
         "EV-67a69ab5b20da3c1",
         "EV-1b92b6c835ce240c",
+        "EV-fd8754ce93db36a7",
         "EV-933294dfb2d19a67"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-industry-manufacturing",
@@ -39855,7 +40463,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-3474e24464fc25a7",
@@ -39873,8 +40481,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-23",
@@ -40222,6 +40830,7 @@
         "EV-e03b324b7e297e6b",
         "EV-887d47bb477e2142",
         "EV-631197767a45d34c",
+        "EV-666f2f4b5756c679",
         "EV-8fef3537ed4c1e48"
       ],
       "viewpointIds": [],
@@ -40237,7 +40846,7 @@
         "EN-4f96127fdacbb405"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-e759968ca9278b8d",
@@ -40326,8 +40935,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-industry-technology",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -40573,8 +41182,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
@@ -40953,7 +41562,6 @@
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
-        "EV-0d5a32aca724d30e",
         "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
         "EV-56626f2604aa1e30",
@@ -40975,7 +41583,6 @@
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-open_weights"
       ],
@@ -41046,8 +41653,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [],
@@ -41340,8 +41947,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-04",
@@ -41366,13 +41973,35 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-technology-on_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-04",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-30397d0cfc1b0e29",
+      "name": "谷歌旗下 Wiz",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a4fe78df6ccd63c8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -41509,15 +42138,17 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c181194902a43422",
         "EV-1807c7ebedd81f8c"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-model_context_protocol"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-28",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-6f694e8e6591f059",
@@ -41601,15 +42232,12 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-0d5a32aca724d30e",
         "EV-653cbce2ccc79f8b"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-open_weights"
+        "TX-technology-long_context"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-28",
@@ -41786,7 +42414,8 @@
         "EV-3167e6eed75597e9",
         "EV-90e206ff43a3b9d1",
         "EV-c7404765df94a3b4",
-        "EV-887d47bb477e2142"
+        "EV-887d47bb477e2142",
+        "EV-666f2f4b5756c679"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -41797,7 +42426,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-d2997fd4735a8795",
@@ -41840,6 +42469,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-63507a4105775b66",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
         "EV-6654f62015eff8e3",
@@ -41852,6 +42482,7 @@
         "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
         "EV-f68e00bb9fd49fac",
+        "EV-d46aa5935d9bb672",
         "EV-3e9a0d1be6de5096",
         "EV-e96aba142e46eba1",
         "EV-d49da50484ba781f",
@@ -41871,8 +42502,8 @@
         "TX-use_case-research_science",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -41882,7 +42513,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-c857d09db23e6822",
@@ -42250,8 +42881,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop",
         "TX-use_case-robotics_automation",
         "TX-industry-manufacturing",
         "TX-industry-technology",
@@ -42288,8 +42919,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -42317,8 +42948,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-240389f4b730bad4"
@@ -43563,6 +44194,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-dc429e4943ed80de",
         "EV-c0d8138d8cab5135"
       ],
       "viewpointIds": [],
@@ -43571,7 +44203,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-5f6367300dabc238",
@@ -44291,8 +44923,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-04",
@@ -44335,8 +44967,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
@@ -45230,8 +45862,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
@@ -45580,8 +46212,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-technology-model_context_protocol"
       ],
       "relatedEntityIds": [
@@ -46231,8 +46863,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-12",
@@ -47368,6 +48000,50 @@
       "relatedEntityIds": [],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-13"
+    },
+    {
+      "id": "EN-16478186eeecf696",
+      "name": "OpenAI autonomous AI agent",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-20b82e2a2cb33a0e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-07-30"
+    },
+    {
+      "id": "EN-18bb438ae33bc120",
+      "name": "HANDBOOK.md 基准测试",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3a0596df367df665"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-technology-model_context_protocol"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-96045bee6a2d2527",

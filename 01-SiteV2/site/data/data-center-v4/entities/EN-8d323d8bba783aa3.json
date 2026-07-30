@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-8d323d8bba783aa3",
@@ -516,8 +516,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -556,7 +556,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -593,6 +595,10 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-1068d4195842b580",
+        "EV-3ebf23c149dde19d",
+        "EV-b78644de93b5a96d",
+        "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
         "EV-33e98b8bbd0a11b1",
@@ -711,8 +717,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-customer_service",
         "TX-technology-agentic_execution",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -735,21 +741,23 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-use_case-content_creation",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -757,7 +765,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -911,8 +919,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -935,9 +943,9 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-speech_audio",
         "TX-technology-distillation",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
@@ -1064,8 +1072,11 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-8aa51e324eca8fc2",
+        "EV-9f847fced6da7c4c",
         "EV-5f3ccb941a2fe5d7",
         "EV-9490bae84e7b4707",
+        "EV-cc65a81f48e10ceb",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
@@ -1109,7 +1120,6 @@
         "EV-921c843ad32c993c",
         "EV-010946e35d35bb43",
         "EV-2bea8d8046a9b325",
-        "EV-8aa51e324eca8fc2",
         "EV-9fa9822969d3c3fd",
         "EV-da064f736e880e30",
         "EV-f487788f3d44f288",
@@ -1235,6 +1245,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-16bb9d0c6a2a7115",
+        "EV-a4fe78df6ccd63c8",
+        "EV-fd9d6fae44ff4a15",
         "EV-7a4d1e871dcd3b1f",
         "EV-7c934b299d048348",
         "EV-bfa090c78227abf8",
@@ -1452,6 +1465,8 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-20b82e2a2cb33a0e",
+        "EV-3a0596df367df665",
         "EV-70fd0c4e482a646e",
         "EV-86537be17d50ff20",
         "EV-618e2e96fac28f06",
@@ -1471,9 +1486,9 @@
         "EN-fb42d760d80a6314",
         "EN-9fbf261b62c1d7c0",
         "EN-2be663431f007250",
+        "EN-7d3194f79e645c42",
         "EN-ab9b29074a980e4b",
         "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
         "EN-382635c9325bf327",
         "EN-3db1f560db626918",
         "EN-8f71c4871a160172",
@@ -1649,6 +1664,7 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
         "EN-bac9509d0efda159",
@@ -1895,6 +1911,8 @@
         "EN-b7bea343b08cce2c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
+        "EN-16478186eeecf696",
+        "EN-18bb438ae33bc120",
         "EN-96045bee6a2d2527",
         "EN-7f871cbf905f6e0c",
         "EN-c608c4787821de1b",
