@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now on the `SITE-V4.3.0-compatibility-retired` public website and data-service baseline.
+WaveSight AI is on the `V4.4.0-operations-converged` repository release. The public website remains on the `SITE-V4.3.0-compatibility-retired` shell and data-service baseline.
 
 ## Current Positioning
 
@@ -24,7 +24,10 @@ WaveSight AI is now on the `SITE-V4.3.0-compatibility-retired` public website an
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.0-auto-published-research`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
 - Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
-- Current local knowledge-base version: `GUANLAN-VAULT-V1.0`. The independent Guanlan AI Vault is configured outside the original `AI热点` tree; repository code, raw snapshots, canonical JSON, site data, and run reports stay in the repository and outside the Vault.
+- Current local knowledge-base version: `GUANLAN-VAULT-V1.1-evidence-linked`. The Guanlan AI Vault is physically independent from the repository; repository code, raw snapshots, canonical JSON, site data, and run reports stay outside the Vault.
+- Current data-lake contract: `DATA-LAKE-V4.0-23-table`; JSONL and DuckDB must expose exactly the same 23-table V4 allowlist.
+- Current private evidence backup: `PRIVATE-EVIDENCE-BACKUP-V1.0`; it deduplicates original bodies by `content_hash` outside the repository and Vault. Repository raw snapshots remain the current production input, while the Vault stores only evidence locators and links.
+- Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task.
 
 ## Current Entries
 
@@ -100,5 +103,5 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, 
    - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek Pro for report Markdown and, on weekly runs, separate Direction Card candidates. Report content passes its acceptance gate; Direction Card candidates remain review-only. HTML/navigation/version writing stays deterministic.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
-7. Refresh human-readable projections into the independent Guanlan AI Vault when the local machine is online; do not expose the repository root or the parent `AI热点` tree as an Obsidian Vault.
+7. Refresh human-readable projections into the independent Guanlan AI Vault when the local machine is online; do not expose the repository root as an Obsidian Vault.
 8. Materialize V4 JSONL tables in GitHub and rebuild DuckDB locally for queries, cross-day statistics, contamination audits, and source-linkage checks.

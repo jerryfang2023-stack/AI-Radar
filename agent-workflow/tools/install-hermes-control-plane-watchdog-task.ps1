@@ -2,6 +2,7 @@ param(
   [string]$RepoPath = "",
   [string]$TaskName = "WaveSight Hermes Control Plane Watchdog",
   [string]$At = "10:20",
+  [string]$GitHubRepository = "jerryfang2023-stack/AI-Radar",
   [switch]$RunOnceNow
 )
 
@@ -29,12 +30,13 @@ function Resolve-NodeExecutable {
 }
 
 $repo = Resolve-RepoPath -InputPath $RepoPath
-$runner = Join-Path $repo "agent-workflow\tools\run-hermes-control-plane-watchdog.mjs"
-if (-not (Test-Path -LiteralPath $runner)) { throw "Hermes watchdog runner not found: $runner" }
+$runner = Join-Path $repo "agent-workflow\tools\run-hermes-control-plane-cycle.mjs"
+if (-not (Test-Path -LiteralPath $runner)) { throw "Hermes control-plane cycle runner not found: $runner" }
 $nodeExecutable = Resolve-NodeExecutable
+$ghExecutable = (Get-Command gh.exe -ErrorAction Stop).Source
 
 $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::InvariantCulture)
-$argument = '"' + $runner + '"'
+$argument = '"' + $runner + '" "--repo=' + $GitHubRepository + '" "--gh-executable=' + $ghExecutable + '"'
 $action = New-ScheduledTaskAction -Execute $nodeExecutable -Argument $argument -WorkingDirectory $repo
 $trigger = New-ScheduledTaskTrigger -Daily -At $time
 $settings = New-ScheduledTaskSettingsSet `
@@ -48,12 +50,22 @@ Register-ScheduledTask `
   -Action $action `
   -Trigger $trigger `
   -Settings $settings `
-  -Description "Check WaveSight controller liveness only; Hermes does not evaluate lane data or dispatch recovery." `
+  -Description "Check WaveSight controller liveness and always publish the sanitized heartbeat, including manual_required results." `
   -Force | Out-Null
 
-Write-Host "Installed Hermes control-plane watchdog: $TaskName"
+$retiredPublisher = "WaveSight Control Plane Heartbeat Publisher"
+if ($retiredPublisher -ne $TaskName) {
+  $publisherTask = Get-ScheduledTask -TaskName $retiredPublisher -ErrorAction SilentlyContinue
+  if ($publisherTask) {
+    Unregister-ScheduledTask -TaskName $retiredPublisher -Confirm:$false
+    Write-Host "Removed retired separate heartbeat task: $retiredPublisher"
+  }
+}
+
+Write-Host "Installed Hermes watchdog + heartbeat cycle: $TaskName"
 Write-Host "Repository: $repo"
 Write-Host "Schedule: daily at $At"
+Write-Host "GitHub repository: $GitHubRepository"
 Write-Host "Node executable: $nodeExecutable"
 
 if ($RunOnceNow) {

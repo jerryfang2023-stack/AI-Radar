@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-07-30 16:17:00",
+    "generatedAt": "2026-07-30 18:25:00",
     "generatedDate": "2026-07-30",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -40,17 +40,17 @@ window.WaveSightLocalSkillStore = {
       "syncIssues": 0,
       "dormant": 128,
       "retired": 0,
-      "cleanupQueue": 128,
+      "cleanupQueue": 129,
       "cleanupActions": {
-        "keep": 36,
-        "cleanup": 127
+        "keep": 35,
+        "cleanup": 128
       },
       "evalCoverage": 100,
       "exampleCoverage": 100,
       "discovery": {
-        "discovered": 230,
+        "discovered": 231,
         "configuredDisabled": 183,
-        "enabled": 47,
+        "enabled": 48,
         "invalidManifests": 0,
         "enabledDuplicateNames": 0
       }
@@ -1057,6 +1057,23 @@ window.WaveSightLocalSkillStore = {
       "replacement_skill": "",
       "installedAt": "2026-05-20 10:14:08",
       "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "guanlan-monthly-business-structure-report",
+      "lifecycle": "candidate",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-06-30 16:23:51",
+      "cleanup_observation_start": "2026-06-30 16:23:51",
       "usage_count": 0,
       "last_used": ""
     },
@@ -3291,17 +3308,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-30 16:23:51",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {

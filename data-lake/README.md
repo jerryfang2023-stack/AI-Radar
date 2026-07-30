@@ -8,7 +8,7 @@ It does not replace the Git-tracked daily V4 bundles under `01-SiteV2/content/11
 
 | Layer | Role |
 |---|---|
-| Obsidian / Markdown | Human reading, judgment, review, and knowledge memory |
+| Guanlan AI Vault / Markdown | One-way human-readable projection for reading, judgment, review, and knowledge memory; it never reads or modifies DuckDB |
 | Git-tracked JSON / Markdown | Auditable source snapshots and production history |
 | DuckDB data lake | SQL query, monitoring, quality audit, cross-day statistics, and incident diagnosis |
 | Frontstage JSON | Website rendering payloads |
@@ -19,6 +19,7 @@ It does not replace the Git-tracked daily V4 bundles under `01-SiteV2/content/11
 The following files are generated locally and ignored by Git:
 
 - `data-lake/wavesight.duckdb`
+- `data-lake/manifest.json`
 - `data-lake/tables/*.jsonl`
 - `data-lake/reports/*`
 
@@ -28,21 +29,18 @@ Regenerate them with:
 npm run sync:data-lake
 ```
 
-To materialize only V4 JSONL tables without rebuilding DuckDB:
+Validate the strict V4 contract:
 
 ```powershell
-npm run sync:data-center
+npm run assert:data-lake-v4
 ```
 
-Install the local daily sync task with:
+The 16:45 `WaveSight Daily Final Closure` task owns the local refresh. There is
+no independent data-lake scheduled task or Startup loop.
 
-```powershell
-npm run install:data-lake-sync-task -- -At 11:10 -RunOnceNow
-```
-
-The scheduled task is named `WaveSight Data Lake Sync`. It runs daily at 11:10 Asia/Shanghai local machine time and at Windows logon. It only writes ignored generated files.
-
-If Windows blocks scheduled-task registration, the installer writes a Startup fallback command instead. The fallback starts a hidden sync loop at Windows logon and checks every 60 minutes.
+Before every sync, JSONL files outside the 23-table V4 allowlist are deleted.
+The manifest records the contract version, generation time, Git commit, table
+names, row counts, removed stale tables, and DuckDB state.
 
 ## Current Tables
 
@@ -60,8 +58,17 @@ V4 canonical serving tables:
 | `tag_assertions` | TAG-V4 evidence-backed technical semantic assertions |
 | `facet_assertions` | TAG-V4 evidence-backed product, scenario, industry, deployment, and target-user classifications |
 | `fde_records` | FDE-V2 source-bounded implementation projections |
+| `fde_observations` | Claim-native FDE observations |
 | `hardware_records` | HARDWARE-V1 source-bounded hardware projections |
+| `hardware_facts`, `hardware_snapshots` | Claim-native hardware facts and factual snapshots |
+| `monitoring_funnel` | FDE and hardware observation-to-publication funnel |
+| `entity_registry`, `entity_profiles` | Stable entity registry and factual entity profiles |
+| `taxonomy_nodes` | TAG-V4 classification nodes |
+| `entity_relationships` | Materialized factual relationship service |
 | `qa_queue` | Quarantined, partial, or no-event review records |
+
+The table set must be exactly 23. `card`, `pool`, `compatibility`, and legacy
+mapping tables are forbidden.
 
 ## Example Queries
 

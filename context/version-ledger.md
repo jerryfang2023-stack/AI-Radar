@@ -18,12 +18,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.3.0-compatibility-retired |
-| Version name | WaveSight V4 Compatibility Retired |
+| Current version | V4.4.0-operations-converged |
+| Version name | WaveSight V4 Operations Converged |
 | Version layer | Minor |
-| Release date | 2026-07-29 |
-| Last modified at | 2026-07-30T00:00:00+08:00 |
-| Product version | V4.3 |
+| Release date | 2026-07-30 |
+| Last modified at | 2026-07-30T18:18:14+08:00 |
+| Product version | V4.4 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.3.0-compatibility-retired |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
@@ -47,7 +47,10 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Person-account review contract | PERSON-REVIEW-V1.0 |
 | Factual relationship contract | RELATION-V2.1 |
 | Targeted historical collection contract | BACKFILL-V1.0 |
-| Local Obsidian knowledge base | GUANLAN-VAULT-V1.0 (external) |
+| Local Obsidian knowledge base | GUANLAN-VAULT-V1.1-evidence-linked (external) |
+| Data lake contract | DATA-LAKE-V4.0-23-table |
+| Private evidence backup | PRIVATE-EVIDENCE-BACKUP-V1.0 |
+| Local Windows automation | WINDOWS-AUTOMATION-V1.0-seven-task |
 | Weekly Report content source | `01-SiteV2/content/12-applications/industry-reports/` |
 | Monthly Report content source | `01-SiteV2/content/12-applications/industry-reports/monthly/` |
 | Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.2 |
@@ -69,12 +72,13 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.8.0 V4 retirement governance |
-| Git tag | `v4.3.0-compatibility-retired` |
+| Git tag | `v4.4.0-operations-converged` |
 | Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
 
-- WaveSight AI is now an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
+- WaveSight AI V4.4 converges the local operating system around one independent evidence-linked Vault, one strict 23-table V4 data lake, seven Windows tasks, and one Hermes control-plane cycle. The public frontstage remains SITE-V4.3.0.
+- WaveSight AI is an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
 - SITE-V4.3.0 is the current public and data-service release. It preserves the V4 entity-history frontstage after removing all V3 compatibility writers, interfaces, payloads, and active documentation routes.
 - ENTITY-V1.0 formalizes companies/organizations, products/models/services, and people with stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
@@ -195,6 +199,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.4.0-operations-converged` | Repository rules / Guanlan Vault / private evidence backup / V4 data lake / Windows automation / Hermes control plane | 2026-07-30 | 2026-07-30T18:18:14+08:00 | V4.4.0-operations-converged / GUANLAN-VAULT-V1.1-evidence-linked / DATA-LAKE-V4.0-23-table / WINDOWS-AUTOMATION-V1.0-seven-task | repository-local Vault; retired Vault registration; migration-proof notes; compatibility tasks; independent data-lake timer; separate Hermes heartbeat task; stale or non-V4 serving tables | two-axis code/rule review + 23-table JSONL/DuckDB gate + Vault/evidence assertions + seven-task audit + full V4/frontstage tests + GitHub Pages deploy |
 | `guanlan-vault-v1.0-independent` | External Guanlan AI System State / Data Center / Application Center / Operations / Contracts / Knowledge Assets / Workspace | 2026-07-30 | 2026-07-30T23:30:00+08:00 | GUANLAN-VAULT-V1.0 | repository-local `vault/`; parent `AI热点` indexing; AI Startup Radar; V1/V2/V3 migration material; QC/repair/diff archives; generated site or canonical data written by Vault sync | external-root isolation + directory/link/retired-content assertion; projection-only local refresh; full V4/site/OPS tests |
 | `v4.3.0-compatibility-retired` | V4 production / schema / data lake / Obsidian index / quality gates | 2026-07-29 | 2026-07-29T22:00:00+08:00 | SITE-V4.3.0-compatibility-retired | V3 payload archives in the working tree; compatibility_cards schema or output; dormant V3 producers or quality gates; Pages V3 exclusions | final no-active-V3 gate + pipeline policy + V4 schema/build/integrity tests + full frontstage/OPS tests |
 | `v4.3.0-compatibility-write-disabled` | Structured source intake / V4 production / application projections / OPS / V3 archive | 2026-07-29 | 2026-07-29T00:00:00+08:00 | SITE-V4.3.0-compatibility-write-disabled | daily Raw/Pool candidate Markdown; Signal Card, V3 desk, old graph, or legacy mapping writes; V3 health or publication blockers; archive discovery; required `compatibility_cards` | structured-intake tests + no-active-V3 gate + pipeline policy + compatibility retirement contract + full V4/site/OPS tests + no-V3 production rehearsal + Pages verification |

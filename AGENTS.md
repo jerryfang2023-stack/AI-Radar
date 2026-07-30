@@ -6,8 +6,10 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V4.3.0 compatibility retired; the unified V4 shell, stable entities, factual timelines, and evidence-backed relations remain first-class data services. V3 Card/desk/graph interfaces and payloads are absent from the working tree and recoverable only through explicit Git history.
-- Current local knowledge base: the independent Guanlan AI Vault configured outside the original `AI热点` tree (`GUANLAN-VAULT-V1.0`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
+- Current release: WaveSight `V4.4.0-operations-converged`; the public shell remains `SITE-V4.3.0-compatibility-retired`.
+- Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.1-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
+- Current local automation: exactly seven Windows tasks; Final Closure owns the strict 23-table `DATA-LAKE-V4.0` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
+- Current evidence archive: `PRIVATE-EVIDENCE-BACKUP-V1.0` is a content-addressed private backup outside the repository and Vault. Repository raw snapshots remain the current V4 production source; the Vault stores locators and links, never original bodies.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.

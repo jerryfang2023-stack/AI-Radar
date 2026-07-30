@@ -167,8 +167,7 @@ write("README.md", `${yaml("观澜 AI Vault", "WaveSight V4 current-state projec
 
 这是一个从 WaveSight V4 当前事实、产品与运行状态重新生成的独立知识库。
 
-- 它不在原始“AI热点” Vault 中。
-- 它不继承旧 Vault 的目录或历史垃圾。
+- 它只包含当前 V4 运营所需的知识入口与可读投影。
 - WaveSight 仓库是事实与运行源；本 Vault 是只读现状投影。
 - 个人记录统一写入 [[90-工作区/README|工作区]]，不会反向覆盖生产数据。
 
@@ -550,6 +549,12 @@ ${bullets(analysis.risks)}
 
 ${text(analysis.capital_judgment)}
 
+## 研究来源
+
+${bullets(card.research_sources, (source) => source?.source_url
+    ? `[${text(source.title || source.publisher || source.source_id)}](${source.source_url})`
+    : text(source?.source_id))}
+
 ${company.website ? `[公司网站](${company.website})` : ""}`);
   return relativePath;
 });
@@ -613,33 +618,6 @@ write(GUANLAN_VAULT_PATHS.knowledgeAssets, `${yaml("知识资产总览")}# 知�
 | 社群历史资料 | ${communityAssetFiles.length} | 按数据日期聚合 |
 
 未迁移：V1/V2/V3 规则、迁移过程、旧 Prompt、QC/repair/diff 报告、重复卡片、缓存和临时文件。`);
-
-write(GUANLAN_VAULT_PATHS.migrationAudit, `${yaml("AI热点迁移审计")}# AI热点迁移审计
-
-## 已迁入
-
-| 必要资料 | 数量 | 新位置 |
-|---|---:|---|
-| 正式周报与月报 | ${reportFiles.length} | \`30-应用中心/行业报告档案/\` |
-| 企业 AI / FDE 案例 | ${fdeAssetFiles.length} | \`60-知识资产/企业 AI 案例/\` |
-| AI 硬件资料 | ${hardwareAssetFiles.length} | \`60-知识资产/AI 硬件资料/\` |
-| 融资研究 | ${fundingAssetFiles.length} | \`60-知识资产/融资研究/\` |
-| 一线人物时间线 | ${viewpointAssetFiles.length} | \`60-知识资产/一线人物/\` |
-| 社群资料日档 | ${communityAssetFiles.length} | \`60-知识资产/社群资料/\` |
-| 当前系统、数据、应用、运营与契约入口 | 由生成清单管理 | \`00-总览/\` 至 \`50-规则与契约/\` |
-
-## 明确不迁入
-
-- V1/V2/V3 规则、Card/Pool/desk/graph、迁移过程和兼容证明。
-- AI Startup Radar（未上线应用）；它不是机会地图。
-- 旧机会评分、创业雷达方法和依赖 V3 数据源的技能卡。
-- 通用 Claude Code、n8n、MCP、浏览器工具课程与教程 PDF。
-- 旧 Prompt、模板实验、QC/repair/diff 报告、浏览器配置、缓存和临时文件。
-- 重复的日 Markdown；可读知识资产已从当前 V4 JSON 去重生成。
-
-## 恢复边界
-
-旧仓库 Vault 与历史资料不在当前知识库中保留。网站仓库的历史文件只能通过明确 Git ref 在隔离工作树中恢复；新 Vault 不提供 V3 生产恢复入口。`);
 
 write(GUANLAN_VAULT_PATHS.workspace, `${yaml("工作区", "human-maintained")}# 工作区
 

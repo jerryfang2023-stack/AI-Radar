@@ -4,15 +4,18 @@ import fs from "fs";
 import path from "path";
 import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
+import {
+  DATA_LAKE_MANIFEST_VERSION,
+  DATA_LAKE_V4_CONTRACT_VERSION,
+  DATA_LAKE_V4_TABLES,
+} from "./lib/data-lake-v4-contract.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, "../..");
-const lakeDir = path.join(root, "data-lake");
+const lakeDir = path.resolve(root, arg("lake-dir", "data-lake"));
 const tablesDir = path.join(lakeDir, "tables");
 const dbPath = path.join(lakeDir, "wavesight.duckdb");
-
-const mojibakePattern = /(?:锛|鈥|鎴|鏄|涓|瀹|绾|鐨|鍙|闇|€|\ufffd)/gu;
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
@@ -63,78 +66,6 @@ function safeString(value) {
   return String(value);
 }
 
-function safeNumber(value) {
-  const n = Number(value);
-  return Number.isFinite(n) ? n : null;
-}
-
-function safeBool(value) {
-  if (typeof value === "boolean") return value;
-  if (value === "true") return true;
-  if (value === "false") return false;
-  return null;
-}
-
-function contaminationScore(...values) {
-  const text = values.map(safeString).join("\n");
-  return (text.match(mojibakePattern) || []).length;
-}
-
-function parseFrontmatter(text) {
-  const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---/u);
-  if (!match) return {};
-  const data = {};
-  const lines = match[1].split(/\r?\n/u);
-  let lastKey = "";
-  for (const line of lines) {
-    if (!line.trim() || line.trimStart().startsWith("#")) continue;
-    const top = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/u);
-    if (top) {
-      lastKey = top[1];
-      data[lastKey] = parseScalar(top[2]);
-      continue;
-    }
-    const nested = line.match(/^\s+([A-Za-z0-9_-]+):\s*(.*)$/u);
-    if (nested && lastKey) {
-      if (!data[lastKey] || typeof data[lastKey] !== "object" || Array.isArray(data[lastKey])) {
-        data[lastKey] = {};
-      }
-      data[lastKey][nested[1]] = parseScalar(nested[2]);
-    }
-  }
-  return data;
-}
-
-function parseScalar(value) {
-  const trimmed = value.trim();
-  if (!trimmed) return "";
-  if ((trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith("'") && trimmed.endsWith("'"))) {
-    return trimmed.slice(1, -1);
-  }
-  if (trimmed === "true") return true;
-  if (trimmed === "false") return false;
-  if (trimmed === "null") return null;
-  if (/^-?\d+(?:\.\d+)?$/u.test(trimmed)) return Number(trimmed);
-  if (trimmed.startsWith("[") && trimmed.endsWith("]")) {
-    try {
-      return JSON.parse(trimmed.replace(/'/gu, '"'));
-    } catch {
-      return trimmed;
-    }
-  }
-  return trimmed;
-}
-
-function extractDateFromPath(file) {
-  return rel(file).match(/\d{4}-\d{2}-\d{2}/u)?.[0] || "";
-}
-
-function headingCount(text, level = 2) {
-  const marker = "#".repeat(level);
-  const re = new RegExp(`^${marker} `, "gmu");
-  return (text.match(re) || []).length;
-}
-
 function writeJsonl(name, rows) {
   ensureDir(tablesDir);
   const file = path.join(tablesDir, `${name}.jsonl`);
@@ -142,116 +73,53 @@ function writeJsonl(name, rows) {
   return file;
 }
 
-function collectRawItems() {
-  const rawRoot = path.join(root, "01-SiteV2/content/01-raw/originals");
-  return listFiles(rawRoot, (file) => file.endsWith(".json")).map((file) => {
-    let item = {};
-    try {
-      item = readJson(file);
-    } catch (error) {
-      return {
-        date: extractDateFromPath(file),
-        raw_id: "",
-        title: "",
-        original_url: "",
-        source_name: "",
-        source_type: "",
-        source_level: "",
-        acquisition_channel: "",
-        evidence_object_type: "",
-        extraction_quality: "",
-        fetch_status: "json_parse_failed",
-        raw_qc_decision: "",
-        raw_status: "",
-        pool_routes: "",
-        score: null,
-        readability_score: null,
-        content_length: null,
-        has_full_text: null,
-        mojibake_score: 1,
-        path: rel(file),
-        error: error.message
-      };
-    }
-    const score = item.guanlan_scores?.emerging_signal_score ?? item.guanlan_scores?.importance_score ?? item.score;
-    return {
-      date: extractDateFromPath(file),
-      raw_id: safeString(item.raw_id),
-      title: safeString(item.title),
-      original_url: safeString(item.original_url || item.canonical_url),
-      source_name: safeString(item.source_name),
-      source_type: safeString(item.source_type),
-      source_level: safeString(item.source_level),
-      acquisition_channel: safeString(item.acquisition_channel),
-      evidence_object_type: safeString(item.evidence_object_type),
-      extraction_quality: safeString(item.extraction_quality),
-      fetch_status: safeString(item.fetch_status),
-      raw_qc_decision: safeString(item.raw_qc_decision),
-      raw_status: safeString(item.raw_status),
-      pool_routes: safeString(item.pool_routes),
-      score: safeNumber(score),
-      readability_score: safeNumber(item.readability_score),
-      content_length: safeNumber(item.content_length || item.clean_text?.length || item.full_text?.length),
-      has_full_text: safeBool(item.has_full_text),
-      mojibake_score: contaminationScore(item.title, item.search_path_label, item.visible_range, item.clean_text, item.full_text),
-      path: rel(file),
-      error: ""
-    };
-  });
+function cleanStaleJsonl() {
+  ensureDir(tablesDir);
+  const expected = new Set(DATA_LAKE_V4_TABLES);
+  const removed = [];
+  for (const entry of fs.readdirSync(tablesDir, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith(".jsonl")) continue;
+    const table = entry.name.slice(0, -".jsonl".length);
+    if (expected.has(table)) continue;
+    fs.rmSync(path.join(tablesDir, entry.name), { force: true });
+    removed.push(table);
+  }
+  return removed.sort();
 }
 
-function collectPoolDaily() {
-  const poolRoot = path.join(root, "01-SiteV2/content/02-pool");
-  return listFiles(poolRoot, (file) => file.endsWith(".md")).map((file) => {
-    const text = readText(file);
-    const fm = parseFrontmatter(text);
-    return {
-      date: safeString(fm.date || extractDateFromPath(file)),
-      status: safeString(fm.status),
-      pool_count: safeNumber(fm.pool_count),
-      pool_target: safeNumber(fm.pool_target),
-      routed_pool_target: safeNumber(fm.routed_pool_target),
-      core_pool_target: safeNumber(fm.core_pool_target),
-      candidate_headings: headingCount(text, 2),
-      mojibake_score: contaminationScore(text.slice(0, 20000)),
-      path: rel(file)
-    };
+function currentGitCommit() {
+  const result = spawnSync("git", ["rev-parse", "HEAD"], {
+    cwd: root,
+    encoding: "utf8",
+    windowsHide: true,
   });
+  if (result.status !== 0) {
+    throw new Error(`Unable to resolve Git commit for data-lake manifest: ${(result.stderr || result.stdout || "").trim()}`);
+  }
+  return result.stdout.trim();
 }
 
-function collectBuildersDaily() {
-  const pointsRoot = path.join(root, "01-SiteV2/content/07-points");
-  return listFiles(pointsRoot, (file) => file.endsWith(".md")).map((file) => {
-    const text = readText(file);
-    const fm = parseFrontmatter(text);
-    return {
-      date: safeString(fm.date || extractDateFromPath(file)),
-      status: safeString(fm.status),
-      builder_items_count: safeNumber(fm.builder_items_count),
-      generated_at: safeString(fm.generated_at),
-      item_headings: headingCount(text, 2),
-      mojibake_score: contaminationScore(text.slice(0, 20000)),
-      path: rel(file)
-    };
-  });
-}
-
-function collectCommunityItems() {
-  const file = path.join(root, "01-SiteV2/site/data/community-intelligence.json");
-  if (!exists(file)) return [];
-  const data = readJson(file);
-  const date = safeString(data.meta?.date || data.date || "");
-  return (data.items || []).map((item, index) => ({
-    date,
-    id: safeString(item.id || item.stable_id || `community-${index + 1}`),
-    title: safeString(item.title),
-    source_name: safeString(item.source_name || item.sourceName || item.source),
-    source_url: safeString(item.source_url || item.url || item.link),
-    category: safeString(item.category || item.group || item.type),
-    score: safeNumber(item.score || item.heat || item.importance),
-    mojibake_score: contaminationScore(item.title, item.summary, item.description),
-    path: rel(file)
-  }));
+function writeManifest(tables, { removedStaleTables, duckdbStatus, duckdbTables = [] }) {
+  const manifest = {
+    schema_version: DATA_LAKE_MANIFEST_VERSION,
+    contract_version: DATA_LAKE_V4_CONTRACT_VERSION,
+    generated_at: new Date().toISOString(),
+    git_commit: currentGitCommit(),
+    table_count: DATA_LAKE_V4_TABLES.length,
+    tables: DATA_LAKE_V4_TABLES.map((name) => ({
+      name,
+      row_count: tables[name].length,
+      jsonl: rel(path.join(tablesDir, `${name}.jsonl`)),
+    })),
+    removed_stale_tables: removedStaleTables,
+    database: {
+      path: rel(dbPath),
+      status: duckdbStatus,
+      tables: duckdbTables,
+    },
+  };
+  fs.writeFileSync(path.join(lakeDir, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  return manifest;
 }
 
 function collectEntityHistoryRows(field) {
@@ -334,6 +202,17 @@ function querySummary(duckdb, tableNames) {
   return result.status === 0 ? result.stdout.trim() : "";
 }
 
+function queryDuckDbTables(duckdb) {
+  const sql = "select table_name from information_schema.tables where table_schema='main' order by table_name;";
+  const result = spawnSync(duckdb, [dbPath, "-json", "-c", sql], { cwd: root, encoding: "utf8", shell: false });
+  if (result.status !== 0) return [];
+  try {
+    return JSON.parse(result.stdout || "[]").map((item) => item.table_name).sort();
+  } catch {
+    return [];
+  }
+}
+
 function main() {
   ensureDir(lakeDir);
   ensureDir(tablesDir);
@@ -363,26 +242,73 @@ function main() {
     qa_queue: collectDataCenterRows("qa-queue", "qa_id")
   };
   const tables = v4Tables;
+  const tableNames = Object.keys(tables);
+  if (tableNames.length !== DATA_LAKE_V4_TABLES.length
+    || tableNames.some((name, index) => name !== DATA_LAKE_V4_TABLES[index])) {
+    throw new Error(`V4 data-lake table contract mismatch: ${tableNames.join(", ")}`);
+  }
+  const removedStaleTables = cleanStaleJsonl();
   for (const [name, rows] of Object.entries(tables)) writeJsonl(name, rows);
   if (arg("duckdb", "required") === "skip") {
-    console.log(JSON.stringify({ ok: true, duckdb: "skipped", database: rel(dbPath), generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])) }, null, 2));
+    const manifest = writeManifest(tables, {
+      removedStaleTables,
+      duckdbStatus: "skipped",
+    });
+    console.log(JSON.stringify({
+      ok: true,
+      contract_version: DATA_LAKE_V4_CONTRACT_VERSION,
+      duckdb: "skipped",
+      database: rel(dbPath),
+      manifest: rel(path.join(lakeDir, "manifest.json")),
+      removed_stale_tables: removedStaleTables,
+      generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])),
+      table_count: manifest.table_count,
+    }, null, 2));
     return;
   }
   const build = rebuildDuckDb(tables);
   if (!build.ok) {
     if (arg("duckdb", "required") === "optional") {
-      console.log(JSON.stringify({ ok: true, duckdb: "skipped", database: rel(dbPath), generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])), warning: build.error }, null, 2));
+      const manifest = writeManifest(tables, {
+        removedStaleTables,
+        duckdbStatus: "unavailable",
+      });
+      console.log(JSON.stringify({
+        ok: true,
+        contract_version: DATA_LAKE_V4_CONTRACT_VERSION,
+        duckdb: "skipped",
+        database: rel(dbPath),
+        manifest: rel(path.join(lakeDir, "manifest.json")),
+        removed_stale_tables: removedStaleTables,
+        generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])),
+        table_count: manifest.table_count,
+        warning: build.error,
+      }, null, 2));
       return;
     }
     console.error(JSON.stringify({ ok: false, generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])), error: build.error }, null, 2));
     process.exit(1);
   }
+  const duckdbTables = queryDuckDbTables(build.duckdb);
+  if (duckdbTables.length !== DATA_LAKE_V4_TABLES.length
+    || duckdbTables.some((name, index) => name !== [...DATA_LAKE_V4_TABLES].sort()[index])) {
+    throw new Error(`DuckDB table contract mismatch after rebuild: ${duckdbTables.join(", ")}`);
+  }
+  const manifest = writeManifest(tables, {
+    removedStaleTables,
+    duckdbStatus: "rebuilt",
+    duckdbTables,
+  });
   const summary = querySummary(build.duckdb, Object.keys(tables));
   console.log(JSON.stringify({
     ok: true,
+    contract_version: DATA_LAKE_V4_CONTRACT_VERSION,
     duckdb: build.duckdb,
     database: rel(dbPath),
+    manifest: rel(path.join(lakeDir, "manifest.json")),
+    removed_stale_tables: removedStaleTables,
     generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])),
+    table_count: manifest.table_count,
     summary: summary ? JSON.parse(summary) : []
   }, null, 2));
 }

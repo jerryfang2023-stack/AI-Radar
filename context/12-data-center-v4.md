@@ -91,6 +91,22 @@ npm run sync:data-center
 npm run assert:entity-history
 ```
 
+## V4 data-lake contract
+
+`data-lake/tables/` is a rebuildable machine-serving projection with exactly
+23 JSONL tables. `npm run sync:data-lake` deletes JSONL files outside the V4
+allowlist, rebuilds DuckDB from zero, writes `data-lake/manifest.json`, and runs
+`npm run assert:data-lake-v4`.
+
+The gate requires the JSONL and DuckDB table sets to match exactly and forbids
+Card, Pool, compatibility, and legacy-mapping tables. The manifest records the
+contract version, generation time, Git commit, table names, and row counts.
+The Guanlan AI Vault remains a one-way readable projection and never reads or
+modifies JSONL or DuckDB.
+
+The local refresh runs inside the existing 16:45 Final Closure. No independent
+data-lake scheduled task or Startup loop is supported.
+
 The daily GitHub workflow first captures immutable source snapshots and writes `SOURCE-INTAKE-V1`, then runs these V4 steps. No legacy Card, desk, graph, or mapping writer follows them.
 
 For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.

@@ -28,6 +28,7 @@ registry.vaults ||= {};
 const retiredVaultRoots = new Set([
   path.resolve(root),
   path.resolve(root, "vault"),
+  path.resolve(path.dirname(vaultRoot), "AI热点"),
   ...explicitlyRetiredVaultRoots,
 ].map((value) => value.toLowerCase()));
 let retired = 0;

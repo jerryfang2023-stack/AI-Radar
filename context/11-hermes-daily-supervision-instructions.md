@@ -26,7 +26,7 @@ Data quality, lane recovery, publication repair, and Codex handoff are owned by 
 Run once at 10:20 Asia/Shanghai, after the 09:50 Closure timeout window:
 
 ```powershell
-npm run hermes:watchdog
+npm run hermes:control-plane
 ```
 
 Expected controller reports:
@@ -47,13 +47,17 @@ The watchdog writes:
 - `agent-workflow/reports/<date>-hermes-control-plane-watchdog.md`
 - one incident under `agent-workflow/inbox/production-incidents/` only when a controller report is missing or invalid.
 
-At 10:25 Asia/Shanghai, the separate Windows task `WaveSight Control Plane Heartbeat Publisher` runs:
+The same Windows task continues to the heartbeat publisher after the watchdog
+writes its report. A `manual_required` watchdog exits non-zero by design, but
+the wrapper still publishes that sanitized status to GitHub. The scheduled
+task fails only when the watchdog report cannot be generated or the heartbeat
+cannot be published.
 
-```powershell
-npm run hermes:publish-heartbeat
-```
-
-It reads the local watchdog and controller reports, removes local paths, commands, stdout, report bodies, and production data, then dispatches the GitHub workflow `.github/workflows/hermes-control-plane-heartbeat.yml`. The public GitHub Actions run is the only supported GitHub-only liveness surface. Raw controller reports remain local.
+The publisher removes local paths, commands, stdout, report bodies, and
+production data, then dispatches the GitHub workflow
+`.github/workflows/hermes-control-plane-heartbeat.yml`. The public GitHub
+Actions run is the only supported GitHub-only liveness surface. Raw controller
+reports remain local. There is no separate heartbeat Windows task.
 
 External GitHub-only Hermes checks the latest `WaveSight Control Plane Heartbeat` workflow run for the current Asia/Shanghai date. A successful run means all three controllers were observable. A failed `manual_required` run means at least one controller or the watchdog was missing or invalid. Absence of a current run after 10:30 is `github_visibility_unavailable`; it is a heartbeat-publication failure, not proof that production data or a controller failed.
 
@@ -79,7 +83,9 @@ Hermes must not:
 - dispatch GitHub workflows, recollect sources, rerun production, edit data, change gates, invoke Codex, push branches, merge PRs, or deploy;
 - interpret a downstream failure as a control-plane failure when the controller report exists.
 
-The separate heartbeat publisher may dispatch only `wavesight_control_plane_heartbeat`. Hermes itself may not dispatch that event or any production workflow.
+The heartbeat stage of the combined task may dispatch only
+`wavesight_control_plane_heartbeat`. The watchdog stage itself may not dispatch
+that event or any production workflow.
 
 ## Incident boundary
 

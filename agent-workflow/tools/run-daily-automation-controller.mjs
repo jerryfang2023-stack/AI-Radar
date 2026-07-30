@@ -188,6 +188,13 @@ function closure() {
 }
 
 function finalClosure() {
+  const dataLake = run("Refresh V4 data lake", process.execPath, [
+    "agent-workflow/tools/sync-light-data-lake.mjs",
+    "--v4-only=true",
+  ], 600_000);
+  const dataLakeGate = run("Assert V4 data lake", process.execPath, [
+    "agent-workflow/tools/assert-data-lake-v4.mjs",
+  ], 180_000);
   const supervision = run("Final daily supervision", process.execPath, [
     "agent-workflow/tools/write-daily-supervision-report.mjs",
     `--date=${date}`,
@@ -221,7 +228,7 @@ function finalClosure() {
     ok: supervisionReported,
     health_status: supervisionPayload?.status || "report_missing",
   };
-  const executionOk = supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
+  const executionOk = dataLake.ok && dataLakeGate.ok && supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
   return {
     ok: executionOk,
     healthOk: Boolean(supervisionPayload?.ok),
@@ -229,9 +236,10 @@ function finalClosure() {
       ? supervisionPayload?.status === "passed" ? "closed" : "closed_with_lane_findings"
       : "closure_execution_failed",
     lanes: supervisionPayload?.lanes || [],
-    actions: [supervisionAction, evidenceSupply, recurringIncidents],
+    actions: [dataLake, dataLakeGate, supervisionAction, evidenceSupply, recurringIncidents],
     notes: [
       "This is the final closure after the 16:10 First-Line Viewpoints window.",
+      "The local V4 JSONL and DuckDB serving layer is rebuilt here; no independent data-lake task is supported.",
       "Lane findings remain isolated; the report records them without suppressing other lane results.",
     ],
   };

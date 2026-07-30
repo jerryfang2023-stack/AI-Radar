@@ -4,7 +4,8 @@ param(
   [string]$RecoveryAt = "09:15",
   [string]$ClosureAt = "09:50",
   [string]$FinalClosureAt = "16:45",
-  [bool]$DisableLegacyTasks = $true,
+  [Alias("DisableLegacyTasks")]
+  [bool]$RemoveLegacyTasks = $true,
   [switch]$RunMorningNow
 )
 
@@ -71,7 +72,7 @@ Register-ControllerTask -Name "WaveSight Daily Recovery Controller" -At $Recover
 Register-ControllerTask -Name "WaveSight Daily Automation Closure" -At $ClosureAt -Phase "closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
 Register-ControllerTask -Name "WaveSight Daily Final Closure" -At $FinalClosureAt -Phase "final-closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
 
-if ($DisableLegacyTasks) {
+if ($RemoveLegacyTasks) {
   @(
     "WaveSight Daily Self Repair",
     "WaveSight Codex Self Repair Handoff",
@@ -79,8 +80,8 @@ if ($DisableLegacyTasks) {
   ) | ForEach-Object {
     $task = Get-ScheduledTask -TaskName $_ -ErrorAction SilentlyContinue
     if ($task) {
-      Disable-ScheduledTask -TaskName $_ | Out-Null
-      Write-Host "Disabled legacy task: $_"
+      Unregister-ScheduledTask -TaskName $_ -Confirm:$false
+      Write-Host "Removed replaced task: $_"
     }
   }
 }

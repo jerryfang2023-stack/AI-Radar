@@ -46,6 +46,34 @@ Health dispatch reads the V4 manifest and `COLLECTION-TELEMETRY-V1.0`. An
 accepted V4 batch must not trigger source recollection because an archived V3
 asset is absent.
 
+## Local Windows schedule
+
+The supported local schedule contains exactly seven tasks:
+
+| Time | Task |
+|---|---|
+| 08:10 | WaveSight Morning Production Dispatch |
+| 08:30 | WaveSight Community Intelligence Daily |
+| 09:15 | WaveSight Daily Recovery Controller |
+| 09:50 | WaveSight Daily Automation Closure |
+| 10:20 | WaveSight Hermes Control Plane Watchdog |
+| 16:10 | WaveSight Follow-Builders Skill Daily |
+| 16:45 | WaveSight Daily Final Closure |
+
+The 10:20 task runs the watchdog and then publishes the sanitized heartbeat
+even when the watchdog reports `manual_required`. Daily self-repair, Codex
+self-repair handoff, the expired agent-review trial, the separate heartbeat
+publisher, and the three local periodic duplicates must be absent. GitHub
+Actions owns weekly and monthly schedules.
+
+Final Closure also rebuilds and gates the local V4 JSONL/DuckDB serving layer.
+This refresh is part of the existing task and must not be installed as a
+separate scheduled task or Startup loop.
+
+Install or repair the complete local contract with
+`npm run install:windows-automation`. Audit it without changing task state with
+`npm run assert:windows-automation`.
+
 ## Archive and Pages
 
 V3 payload archives and `compatibility_cards` are absent from the working tree.

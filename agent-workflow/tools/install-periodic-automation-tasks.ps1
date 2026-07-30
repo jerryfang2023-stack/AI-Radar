@@ -62,10 +62,13 @@ if (-not $InstallLocalRecovery) {
     "WaveSight Monthly Report and Maintenance"
   ) | ForEach-Object {
     $task = Get-ScheduledTask -TaskName $_ -ErrorAction SilentlyContinue
-    if ($task) { Disable-ScheduledTask -TaskName $_ | Out-Null; Write-Host "Disabled local duplicate: $_" }
+    if ($task) {
+      Unregister-ScheduledTask -TaskName $_ -Confirm:$false
+      Write-Host "Removed GitHub-owned local duplicate: $_"
+    }
   }
-  Write-Host "GitHub Actions owns periodic schedules. Use -InstallLocalRecovery only for an explicit local recovery lane."
-  exit 0
+  Write-Host "GitHub Actions owns periodic schedules. Local duplicate tasks are absent; use -InstallLocalRecovery only for an explicit emergency recovery lane."
+  return
 }
 
 Register-PeriodicTask -Name "WaveSight Weekly Report and Opportunity Map" -At $WeeklyReportAt -Phase "weekly-report" -Schedule "Monday" -Runner $runner -WorkingDirectory $repo

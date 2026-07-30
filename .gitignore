@@ -10,6 +10,7 @@ build/
 .env.*
 !.env.example
 .guanlan-vault.json
+.evidence-backup.json
 external/
 09-ai-news-radar/
 
@@ -58,5 +59,6 @@ agent-workflow/reports/quality-gates-*-latest.md
 data-lake/*.duckdb
 data-lake/*.duckdb.wal
 data-lake/*.db
+data-lake/manifest.json
 data-lake/tables/
 data-lake/reports/

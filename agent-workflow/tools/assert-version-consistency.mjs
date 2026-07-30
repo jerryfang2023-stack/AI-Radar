@@ -35,6 +35,10 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
+  release: "V4.4.0-operations-converged",
+  packageVersion: "4.4.0",
+  productVersion: "V4.4",
+  gitTag: "v4.4.0-operations-converged",
   site: "SITE-V4.3.0-compatibility-retired",
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.1.0-lane-independent",
@@ -42,9 +46,15 @@ const expected = {
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
   skillStore: "v1.8.0 V4 retirement governance",
+  vault: "GUANLAN-VAULT-V1.1-evidence-linked (external)",
+  dataLake: "DATA-LAKE-V4.0-23-table",
+  privateEvidence: "PRIVATE-EVIDENCE-BACKUP-V1.0",
+  windowsAutomation: "WINDOWS-AUTOMATION-V1.0-seven-task",
 };
 
 const ledgerChecks = [
+  ["Current version", expected.release],
+  ["Product version", expected.productVersion],
   ["Main website version", expected.site],
   ["Operations backend version", expected.ops],
   ["Reports Center column version", expected.reports],
@@ -68,11 +78,19 @@ const ledgerChecks = [
   ["Skill governance editor", "guanlan-skill-editor v1.0.2"],
   ["Code and rule auditor", "guanlan-code-rule-auditor v1.1.0"],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.3.0-compatibility-retired"],
+  ["Local Obsidian knowledge base", expected.vault],
+  ["Data lake contract", expected.dataLake],
+  ["Private evidence backup", expected.privateEvidence],
+  ["Local Windows automation", expected.windowsAutomation],
+  ["Git tag", expected.gitTag],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
 }
+const packageVersion = readJson("package.json").version;
+const packageLockVersion = readJson("package-lock.json").version;
+if (packageVersion !== expected.packageVersion) fail(`package.json expected ${expected.packageVersion}, found ${packageVersion || "missing"}`);
+if (packageLockVersion !== expected.packageVersion) fail(`package-lock.json expected ${expected.packageVersion}, found ${packageLockVersion || "missing"}`);
 
 const sitePages = [
   "01-SiteV2/site/data-center.html",
@@ -177,6 +195,9 @@ if (problems.length) {
 
 console.log(JSON.stringify({
   ok: true,
+  release_version: expected.release,
+  package_version: expected.packageVersion,
+  git_tag: expected.gitTag,
   site_version: expected.site,
   operations_version: expected.ops,
   reports_version: expected.reports,

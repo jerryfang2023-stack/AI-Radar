@@ -19,11 +19,34 @@ if (!fs.existsSync(reportSource)) problems.push(`industry report source is missi
 
 const vaultRoot = resolveGuanlanVaultRoot(root, { required: !contractOnly });
 if (vaultRoot) {
+  const retiredVaultRoot = path.resolve(path.dirname(vaultRoot), "AI热点");
+  if (!contractOnly && fs.existsSync(retiredVaultRoot)) {
+    problems.push(`retired AI hotspot Vault root still exists: ${retiredVaultRoot}`);
+  }
+  if (!contractOnly && process.platform === "win32" && process.env.APPDATA) {
+    const registryPath = path.join(process.env.APPDATA, "obsidian", "obsidian.json");
+    if (fs.existsSync(registryPath)) {
+      try {
+        const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
+        const retired = Object.values(registry?.vaults || {}).filter((entry) => (
+          path.resolve(String(entry?.path || "")).toLowerCase() === retiredVaultRoot.toLowerCase()
+        ));
+        if (retired.length) problems.push("retired AI hotspot Vault is still registered in Obsidian");
+      } catch (error) {
+        problems.push(`invalid Obsidian Vault registry: ${error.message}`);
+      }
+    }
+  }
+  if (fs.existsSync(path.join(vaultRoot, "60-知识资产/AI热点迁移审计.md"))) {
+    problems.push("retired AI hotspot migration audit still exists in Guanlan Vault");
+  }
   const required = [
     ".obsidian/app.json",
     "README.md",
     ...Object.values(GUANLAN_VAULT_PATHS),
     ".guanlan-generated.json",
+    ".guanlan-evidence.json",
+    "60-知识资产/证据关系索引.md",
   ];
   for (const relativePath of required) {
     if (!fs.existsSync(path.join(vaultRoot, relativePath))) problems.push(`missing Guanlan Vault asset: ${relativePath}`);
@@ -45,6 +68,34 @@ if (vaultRoot) {
 
   for (const file of markdown) {
     const content = fs.readFileSync(file, "utf8");
+    const relativePath = path.relative(vaultRoot, file).replaceAll("\\", "/");
+    const isPublishedKnowledgeAsset = (
+      relativePath.startsWith("30-应用中心/行业报告档案/")
+      || (
+        relativePath.startsWith("60-知识资产/")
+        && relativePath.split("/").length >= 3
+        && !relativePath.startsWith("60-知识资产/来源引用/")
+      )
+    );
+    if (isPublishedKnowledgeAsset) {
+      for (const field of [
+        "evidence_status",
+        "evidence_source_refs",
+        "evidence_claim_refs",
+        "evidence_event_refs",
+        "evidence_entity_refs",
+        "evidence_report_refs",
+        "evidence_source_urls",
+        "original_body_storage",
+      ]) {
+        if (!new RegExp(`^${field}:`, "mu").test(content)) {
+          problems.push(`${relativePath} is missing evidence field: ${field}`);
+        }
+      }
+      if (!content.includes("<!-- guanlan-evidence:start -->")) {
+        problems.push(`${relativePath} is missing the managed evidence section`);
+      }
+    }
     if (/AI热点[\\/]|01-WaveSight[\\/]vault|vault\/(?:10-Data-Center|20-Application-Center)/u.test(content)) {
       problems.push(`${path.relative(vaultRoot, file)} references the retired Vault tree`);
     }
@@ -79,6 +130,21 @@ if (vaultRoot) {
     problems.push(`invalid .guanlan-generated.json: ${error.message}`);
   }
 
+  try {
+    const evidence = JSON.parse(fs.readFileSync(path.join(vaultRoot, ".guanlan-evidence.json"), "utf8"));
+    if (evidence.originalBodyStorage !== "repository_snapshot_plus_private_backup") {
+      problems.push("Guanlan evidence projection must disclose repository snapshots and the private backup");
+    }
+    if (!Number.isInteger(evidence.assets?.total) || evidence.assets.total < 1) {
+      problems.push("Guanlan evidence projection has no knowledge assets");
+    }
+    if (!Number.isInteger(evidence.citationCards) || evidence.citationCards < 1) {
+      problems.push("Guanlan evidence projection has no source citation cards");
+    }
+  } catch (error) {
+    problems.push(`invalid .guanlan-evidence.json: ${error.message}`);
+  }
+
   for (const file of markdown) {
     const relativePath = path.relative(vaultRoot, file).replaceAll("\\", "/");
     if (!relativePath.startsWith("90-工作区/") && !generatedManifestFiles.has(relativePath)) {
@@ -87,6 +153,24 @@ if (vaultRoot) {
   }
 
   if (markdown.length > 650) problems.push(`Guanlan curated Vault is unexpectedly large: ${markdown.length} Markdown files`);
+}
+
+const publicSiteRoot = path.join(root, "01-SiteV2", "site");
+if (fs.existsSync(publicSiteRoot)) {
+  const stack = [publicSiteRoot];
+  while (stack.length) {
+    const current = stack.pop();
+    for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+      const file = path.join(current, entry.name);
+      if (entry.isDirectory()) stack.push(file);
+      else if (entry.isFile() && path.extname(entry.name).toLowerCase() === ".json") {
+        const content = fs.readFileSync(file, "utf8");
+        if (/"(?:body_original|clean_text|full_text)"\s*:/u.test(content)) {
+          problems.push(`${path.relative(root, file)} exposes an original body field`);
+        }
+      }
+    }
+  }
 }
 
 console.log(JSON.stringify({

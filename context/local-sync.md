@@ -3,7 +3,7 @@
 ## Boundary
 
 - GitHub `main` remains the source for code, V4 facts, application data, accepted report Markdown, tests and deployment.
-- The independent Guanlan AI Vault is configured outside the original `AI热点` tree through `GUANLAN_VAULT_ROOT` or `.guanlan-vault.json`.
+- The independent Guanlan AI Vault is configured outside the repository through `GUANLAN_VAULT_ROOT` or `.guanlan-vault.json`.
 - The repository-local `vault/` path is retired and must remain absent.
 - GitHub Actions never read or write the external Vault.
 
@@ -28,6 +28,17 @@ The generated directory map is:
 
 The refresh reconstructs current readable projections and curated knowledge assets from repository sources. It does not rebuild or overwrite frontstage JSON, raw snapshots, canonical bundles, code or tests. Files under `90-工作区/` are not production inputs.
 
+The refresh also writes managed evidence fields to every published knowledge
+asset, generates high-value source citation cards, and maintains the
+SourceArtifact → Claim → event → entity → report relation index. Full original
+bodies are never copied into the Vault.
+
+When `.evidence-backup.json` or `GUANLAN_EVIDENCE_BACKUP_ROOT` is configured,
+the same command refreshes and audits a physically separate private evidence
+backup. The backup keeps one body per `content_hash` and isolates
+non-production historical sources in its own migration manifest outside V4
+automatic discovery.
+
 ## Automation
 
 | Tool | Role |
@@ -36,6 +47,10 @@ The refresh reconstructs current readable projections and curated knowledge asse
 | `agent-workflow/tools/install-local-sync-task.ps1` | Register the Windows logon / interval sync task. |
 | `agent-workflow/tools/uninstall-local-sync-task.ps1` | Remove the Windows sync task. |
 | `agent-workflow/tools/build-guanlan-vault.mjs` | Build current pages and curated knowledge projections. |
+| `agent-workflow/tools/sync-guanlan-evidence.mjs` | Add evidence fields, source cards and bidirectional evidence links without copying originals. |
+| `agent-workflow/tools/backup-private-evidence.mjs` | Build the external content-addressed original-body backup and historical migration manifest. |
+| `agent-workflow/tools/assert-private-evidence-backup.mjs` | Audit backup counts, objects, isolation and migration-manifest integrity. |
+| `agent-workflow/tools/publish-private-evidence-backup.mjs` | Commit and push a configured backup only after GitHub confirms its remote is private. |
 | `agent-workflow/tools/assert-guanlan-vault.mjs` | Validate isolation, directory contract, links and retired content boundaries. |
 | `agent-workflow/tools/register-guanlan-vault.mjs` | Register the new Vault and retire the old repository Vault entry in Obsidian Desktop. |
 

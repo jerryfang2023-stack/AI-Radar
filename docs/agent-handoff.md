@@ -12,11 +12,14 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current stage: `SITE-V4.3.0-compatibility-retired` public website and data-service baseline.
+- Current release: `V4.4.0-operations-converged`; public website and data-service shell `SITE-V4.3.0-compatibility-retired`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public frontstage: Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports.
 - Current backend: Dashboard / operations console.
-- Current human-readable knowledge base: the independent Guanlan AI Vault (`GUANLAN-VAULT-V1.0`) outside the original `AI热点` tree, split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
+- Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.1-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
+- Current machine-serving projection: `DATA-LAKE-V4.0-23-table`, rebuilt and gated by Final Closure.
+- Current private evidence backup: `PRIVATE-EVIDENCE-BACKUP-V1.0`, content-addressed and outside the repository/Vault. Repository raw snapshots remain production inputs; the Vault stores evidence locators, not original bodies.
+- Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
 ## Current Entries
@@ -58,7 +61,7 @@ V4 canonical tables contain factual evidence only. Trend, opportunity, funding-i
 - Business brief / internal reference as required output.
 - Trend report prose as required output.
 - Netlify deployment.
-- Parent `AI热点`, repository-root, or removed repository `vault/` Obsidian indexing.
+- Repository-root or removed repository `vault/` Obsidian indexing.
 
 ## Recovery
 

@@ -1,9 +1,7 @@
 {
   "ok": true,
-  "status": "passed",
-  "date": "2026-07-30",
-  "generated_at": "2026-07-30T08:45:26.339Z",
-  "timezone": "Asia/Shanghai",
+  "healthOk": true,
+  "status": "closed",
   "lanes": [
     {
       "id": "skill_ops",
@@ -281,5 +279,46 @@
       "warnings": [],
       "actions": []
     }
-  ]
+  ],
+  "actions": [
+    {
+      "label": "Final daily supervision",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-30T08:45:02.221Z",
+      "finished_at": "2026-07-30T08:45:26.361Z",
+      "command": "node agent-workflow/tools/write-daily-supervision-report.mjs --date=2026-07-30 --hermes=off --force-afternoon-window=true",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"report\": \"agent-workflow/reports/2026-07-30-daily-supervision-report.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-30-daily-supervision-report.md\"\n}",
+      "stderr": "",
+      "health_status": "passed"
+    },
+    {
+      "label": "Evidence supply health",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-30T08:45:26.361Z",
+      "finished_at": "2026-07-30T08:45:26.479Z",
+      "command": "node agent-workflow/tools/write-evidence-supply-health-report.mjs --date=2026-07-30",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"review\",\n  \"report\": \"agent-workflow/reports/2026-07-30-evidence-supply-health.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-30-evidence-supply-health.md\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Recurring issue repair tasks",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-30T08:45:26.479Z",
+      "finished_at": "2026-07-30T08:45:26.592Z",
+      "command": "node agent-workflow/tools/write-recurring-production-incidents.mjs --date=2026-07-30 --days=7 --threshold=2",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-07-30\",\n  \"window_days\": 7,\n  \"threshold\": 2,\n  \"recurring_issues\": 2,\n  \"created\": [\n    \"agent-workflow/inbox/production-incidents/2026-07-30-community-intelligence-recurring-73a400f41c5af405.md\",\n    \"agent-workflow/inbox/production-incidents/2026-07-30-business-signals-recurring-fef63b1d095e1eec.md\"\n  ],\n  \"existing\": []\n}",
+      "stderr": ""
+    }
+  ],
+  "notes": [
+    "This is the final closure after the 16:10 First-Line Viewpoints window.",
+    "Lane findings remain isolated; the report records them without suppressing other lane results."
+  ],
+  "phase": "final-closure",
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T08:45:26.593Z",
+  "dry_run": false
 }

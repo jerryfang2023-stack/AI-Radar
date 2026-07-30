@@ -31,7 +31,6 @@ export const GUANLAN_VAULT_PATHS = Object.freeze({
   dataBoundary: "50-规则与契约/事实数据边界.md",
   contracts: "50-规则与契约/当前契约.md",
   knowledgeAssets: "60-知识资产/知识资产总览.md",
-  migrationAudit: "60-知识资产/AI热点迁移审计.md",
   fdeArchive: "60-知识资产/企业 AI 案例",
   hardwareArchive: "60-知识资产/AI 硬件资料",
   fundingArchive: "60-知识资产/融资研究",
