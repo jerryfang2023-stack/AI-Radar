@@ -1,37 +1,33 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T03:06:08.077Z",
+  "generated_at": "2026-07-30T03:14:06.964Z",
   "date": "2026-07-30",
-  "action": "Prevent repeated collection after downstream failure",
+  "action": "Repair Business Signals artifact restore collision",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Restore a validated same-date workflow artifact and resume from V4 build when collection and source-intake handoff already passed",
+  "summary": "Extract the validated resume artifact into an isolated temporary directory before copying it over the checkout",
   "contexts": [],
   "changed_files": [
     ".github/workflows/daily-persistent-assets-pr.yml",
-    "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
     "agent-workflow/tools/tests/data-center-v4.test.mjs"
   ],
   "outputs": [],
   "checks": [
     "test:data-center 149 passed",
-    "business-signals health policy fixtures passed",
     "git diff --check"
   ],
   "issues": [
-    "Downstream release failures caused health recovery to repeat external source collection"
+    "Direct artifact extraction collided with the workflow report created earlier in the same job"
   ],
   "risks": [
-    "Recollection remains allowed only when collection or V4 handoff did not pass or the artifact is missing or expired"
+    "Temporary directory is scoped to the job and removed on exit"
   ],
   "lessons": [
-    "Recovery must be stage-aware and artifact-backed"
+    "Artifact resume must tolerate checkout files that share artifact paths"
   ],
-  "reusable_rules": [
-    "Do not repeat collection for non-collection failures when a validated same-date intake artifact exists"
-  ],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }
