@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:53:16.459Z",
+    "generatedAt": "2026-07-30T09:01:27.367Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1732,
+    "eventCount": 1722,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -17,7 +17,7 @@
     "typeLabel": "应用场景",
     "valueId": "content_creation",
     "eventIds": [
-      "EV-b78644de93b5a96d",
+      "EV-6b0106ef4a79df05",
       "EV-1de38866b4b92754",
       "EV-99e5df844a1bd670",
       "EV-0933cc40b4fe5f21",
@@ -27,6 +27,8 @@
     "entityIds": [
       "EN-bbdefa2950f49882",
       "EN-7ad34701224a4d2d",
+      "EN-2b6e51bec93e86c1",
+      "EN-ba8a9b6ce159cd8c",
       "EN-e93e29634540a290",
       "EN-3a7bd3e2360a3d29",
       "EN-e0bab6f6c58bfe4e",
@@ -42,7 +44,7 @@
   },
   "events": [
     {
-      "id": "EV-b78644de93b5a96d",
+      "id": "EV-6b0106ef4a79df05",
       "dataDate": "2026-07-30",
       "date": "2026-07-30",
       "updatedDate": "2026-07-30",
@@ -113,16 +115,36 @@
       ],
       "entityIds": [
         "EN-bbdefa2950f49882",
-        "EN-7ad34701224a4d2d"
+        "EN-7ad34701224a4d2d",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-ba8a9b6ce159cd8c"
       ],
       "entityNames": [
         "Google",
-        "Lyria 3.5"
+        "Lyria 3.5",
+        "Google DeepMind",
+        "DeepMind",
+        "Flow Music"
       ],
       "productName": "Lyria 3.5",
       "products": [
         {
           "name": "Lyria 3.5",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Flow Music",
           "type": "模型",
           "ownerNames": [
             "Google"
@@ -650,9 +672,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-1068d4195842b580",
         "EV-3ebf23c149dde19d",
-        "EV-b78644de93b5a96d",
+        "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
         "EV-395884a4c090103c",
         "EV-6f26809c0ae960a8",
@@ -833,8 +854,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-b78644de93b5a96d",
-        "EV-63507a4105775b66"
+        "EV-6b0106ef4a79df05"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -842,7 +862,96 @@
         "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-29",
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-30"
+    },
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-19ebde6e2de35fc9",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-6b0106ef4a79df05",
+        "EV-5f2acbfb8f54fd59",
+        "EV-59229486408edb05",
+        "EV-6654f62015eff8e3",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-011eeba13ebcc9a8",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-d46aa5935d9bb672",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-d49da50484ba781f",
+        "EV-81e297ea6f8fde3b",
+        "EV-68edd592c36dccd3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-vision_language",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-30"
+    },
+    {
+      "id": "EN-ba8a9b6ce159cd8c",
+      "name": "Flow Music",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6b0106ef4a79df05"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-30",
       "lastSeen": "2026-07-30"
     },
     {
@@ -935,7 +1044,6 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
-        "EV-eed7fb721dc2f9de",
         "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
@@ -986,7 +1094,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-e0bab6f6c58bfe4e",

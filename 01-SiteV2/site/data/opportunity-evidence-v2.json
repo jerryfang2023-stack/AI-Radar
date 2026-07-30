@@ -8,7 +8,7 @@
     "activeDate": "2026-07-30",
     "generatedAt": "2026-07-30T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 876,
+    "evidenceCount": 871,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -201,88 +201,6 @@
         "labels": {
           "buyer_or_user": [],
           "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-39b075c62ba4e927",
-      "event_id": "EV-39b075c62ba4e927",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "智能体AI能否让美国制造业回归？",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-07-30",
-      "event_time": "2026-07-29T12:30:00.000Z",
-      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "P-1 AI, Inc.",
-      "sourceExcerpt": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-f9075cc99990820a",
-          "canonical_name": "P-1 AI, Inc.",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-fd851e83627a98a0"
-      ],
-      "source_refs": [
-        "SA-a0add4bf85cb8a64"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "engineering_team",
-            "claim_ref": "CL-fd851e83627a98a0",
-            "source_refs": [
-              "SA-a0add4bf85cb8a64"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "engineering",
-            "claim_ref": "CL-fd851e83627a98a0",
-            "source_refs": [
-              "SA-a0add4bf85cb8a64"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-fd851e83627a98a0",
-            "source_refs": [
-              "SA-a0add4bf85cb8a64"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "engineering_team"
-          ],
-          "team_or_function": [
-            "engineering"
-          ],
           "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
@@ -539,73 +457,6 @@
       }
     },
     {
-      "id": "EV-fd8754ce93db36a7",
-      "event_id": "EV-fd8754ce93db36a7",
-      "event_type": "capital_investment",
-      "publication_status": "verified",
-      "title": "AI巨头斥资数十亿美元布局企业部署",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-07-30",
-      "event_time": "2026-07-06T00:00:00.000Z",
-      "sourceUrl": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-giants-spend-8-billion-dollars-fix-enterprise-adoption/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Microsoft",
-      "sourceExcerpt": "Microsoft launched Frontier Company with $2.5 billion and roughly 6,000 engineers, technical consultants and industry specialists whose job is to sit inside enterprise client organizations and build AI systems that produce measurable results.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-cbc62794911ff31b",
-          "canonical_name": "Amazon",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-a23052ad5b78a83f",
-        "CL-f7df068976b3c4ea"
-      ],
-      "source_refs": [
-        "SA-e902f172b2e34aec"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-a23052ad5b78a83f",
-            "source_refs": [
-              "SA-e902f172b2e34aec"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-0a4e9b2eca953036",
       "event_id": "EV-0a4e9b2eca953036",
       "event_type": "hardware_product",
@@ -772,227 +623,6 @@
       }
     },
     {
-      "id": "EV-1068d4195842b580",
-      "event_id": "EV-1068d4195842b580",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "OpenAI 称 7 月年化收入已超 Q2 总和，面临 Anthropic 与开源模型双重竞争",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-30",
-      "event_time": "2026-07-29T23:46:27.000Z",
-      "sourceUrl": "https://www.ithome.com/0/983/378.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "OpenAI",
-      "sourceExcerpt": "目前，OpenAI 正面临着来自 Anthropic 和谷歌的激烈竞争，同时也需应对来自中国低成本开源模型的冲击。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-ad0dedc2235e42f6",
-        "CL-521f9cf4a4e0fcf9",
-        "CL-8b8e90558995a72c",
-        "CL-a8f7edf23d362a65"
-      ],
-      "source_refs": [
-        "SA-e49e793212abf4ab"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "enterprise_ai_owner",
-            "claim_ref": "CL-521f9cf4a4e0fcf9",
-            "source_refs": [
-              "SA-e49e793212abf4ab"
-            ],
-            "provenance": "v4_facet_projection"
-          },
-          {
-            "value_id": "engineering_team",
-            "claim_ref": "CL-521f9cf4a4e0fcf9",
-            "source_refs": [
-              "SA-e49e793212abf4ab"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "engineering",
-            "claim_ref": "CL-521f9cf4a4e0fcf9",
-            "source_refs": [
-              "SA-e49e793212abf4ab"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "specific_task": [
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-ad0dedc2235e42f6",
-            "source_refs": [
-              "SA-e49e793212abf4ab"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-ad0dedc2235e42f6",
-            "source_refs": [
-              "SA-e49e793212abf4ab"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [
-          {
-            "value_id": "open_source_commercial",
-            "claim_ref": "CL-ad0dedc2235e42f6",
-            "source_refs": [
-              "SA-e49e793212abf4ab"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-ad0dedc2235e42f6",
-            "source_refs": [
-              "SA-e49e793212abf4ab"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "enterprise_ai_owner",
-            "engineering_team"
-          ],
-          "team_or_function": [
-            "engineering"
-          ],
-          "specific_task": [
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "api_cost_spike"
-          ],
-          "product_form": [],
-          "delivery_model": [
-            "open_source_commercial"
-          ],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-16bb9d0c6a2a7115",
-      "event_id": "EV-16bb9d0c6a2a7115",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "微软确认 Copilot\"超级应用\"年内问世，整合智能体、AI 编程与聊天",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-30",
-      "event_time": "2026-07-29T23:08:03.000Z",
-      "sourceUrl": "https://www.ithome.com/0/983/367.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "Microsoft",
-      "sourceExcerpt": "微软 CEO 萨提亚 · 纳德拉在财报电话会议上透露，微软正在打造一款 AI“超级应用”，计划把 Copilot 的 对话、编程和智能体 功能整合到同一个应用中。这款“超级应用”将于今年发布，同时面向个人用户和企业客户。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-95ca9f0f88e9da75"
-      ],
-      "source_refs": [
-        "SA-6f5dc3c64d3e3307"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "enterprise_ai_owner",
-            "claim_ref": "CL-95ca9f0f88e9da75",
-            "source_refs": [
-              "SA-6f5dc3c64d3e3307"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-95ca9f0f88e9da75",
-            "source_refs": [
-              "SA-6f5dc3c64d3e3307"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-95ca9f0f88e9da75",
-            "source_refs": [
-              "SA-6f5dc3c64d3e3307"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "enterprise_ai_owner"
-          ],
-          "team_or_function": [],
-          "specific_task": [
-            "internal_tool_building"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-20b82e2a2cb33a0e",
       "event_id": "EV-20b82e2a2cb33a0e",
       "event_type": "security_incident",
@@ -1083,6 +713,69 @@
       }
     },
     {
+      "id": "EV-2cc379df19a83062",
+      "event_id": "EV-2cc379df19a83062",
+      "event_type": "standard_specification",
+      "publication_status": "verified",
+      "title": "MCP 2026-07-28 规范发布，转向\"无状态\"核心",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-07-30",
+      "event_time": "2026-07-29T07:25:46.000Z",
+      "sourceUrl": "https://www.ithome.com/0/983/102.htm",
+      "sourceName": "IT之家（RSS）",
+      "subject": "Anthropic",
+      "sourceExcerpt": "问世以来最大更新：MCP 2026-07-28 规范发布，转向“无状态”核心 - IT之家",
+      "entity_refs": [
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-3acbdbaebe6cabd3",
+        "CL-0a34bc7e20fca6d5",
+        "CL-84696ce2bec60bd4",
+        "CL-3df345acc7d67a10"
+      ],
+      "source_refs": [
+        "SA-9b510aa6959d2a23"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "governance_requirement",
+            "claim_ref": "CL-3acbdbaebe6cabd3",
+            "source_refs": [
+              "SA-9b510aa6959d2a23"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "governance_requirement"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-3ebf23c149dde19d",
       "event_id": "EV-3ebf23c149dde19d",
       "event_type": "product_release",
@@ -1145,6 +838,91 @@
           "buyer_or_user": [],
           "team_or_function": [],
           "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-4c949b6aac6d26e7",
+      "event_id": "EV-4c949b6aac6d26e7",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "微软确认Copilot“超级应用”将于今年推出",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-07-30",
+      "event_time": "2026-07-29T00:00:00.000Z",
+      "sourceUrl": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+      "sourceName": "The Verge AI",
+      "subject": "Microsoft",
+      "sourceExcerpt": "Microsoft is working on an AI “super app” that combines Copilot’s chat, coding, and agentic capabilities.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-5e7d7a3952edf11a",
+        "CL-4f38867f615ce143",
+        "CL-95ca9f0f88e9da75"
+      ],
+      "source_refs": [
+        "SA-7623d0b0397e6355",
+        "SA-6f5dc3c64d3e3307"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "enterprise_ai_owner",
+            "claim_ref": "CL-95ca9f0f88e9da75",
+            "source_refs": [
+              "SA-6f5dc3c64d3e3307"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-5e7d7a3952edf11a",
+            "source_refs": [
+              "SA-7623d0b0397e6355"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-5e7d7a3952edf11a",
+            "source_refs": [
+              "SA-7623d0b0397e6355"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "enterprise_ai_owner"
+          ],
+          "team_or_function": [],
+          "specific_task": [
+            "internal_tool_building"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
@@ -1296,23 +1074,23 @@
       }
     },
     {
-      "id": "EV-63507a4105775b66",
-      "event_id": "EV-63507a4105775b66",
-      "event_type": "product_release",
+      "id": "EV-6b0106ef4a79df05",
+      "event_id": "EV-6b0106ef4a79df05",
+      "event_type": "model_release",
       "publication_status": "verified",
-      "title": "Google DeepMind 在 Flow Music 中推出 Lyria 3.5，提升音乐性、歌词、人声与创作控制",
+      "title": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻",
       "category": "product-service",
       "categoryLabel": "产品",
       "date": "2026-07-30",
-      "event_time": "2026-07-29T00:00:00.000Z",
-      "sourceUrl": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control",
-      "sourceName": "Google DeepMind：Blog（RSS）",
-      "subject": "Google DeepMind",
-      "sourceExcerpt": "We’re rolling it out today in Google Flow Music",
+      "event_time": "2026-07-30T01:42:00.000Z",
+      "sourceUrl": "https://www.ithome.com/0/983/412.htm",
+      "sourceName": "IT之家（RSS）",
+      "subject": "Google",
+      "sourceExcerpt": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻 - IT之家",
       "entity_refs": [
         {
-          "entity_id": "EN-2b6e51bec93e86c1",
-          "canonical_name": "Google DeepMind",
+          "entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
           "entity_type": "organization_candidate",
           "verification_status": "verified"
         },
@@ -1321,6 +1099,12 @@
           "canonical_name": "Lyria 3.5",
           "entity_type": "product_candidate",
           "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-2b6e51bec93e86c1",
+          "canonical_name": "Google DeepMind",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-4d09c69c19f5f67b",
@@ -1336,24 +1120,56 @@
         }
       ],
       "claim_refs": [
+        "CL-1f25eb23cdb25897",
+        "CL-aad9909d825b9461",
+        "CL-982060a414d04544",
+        "CL-2fc0e06bcf394e48",
         "CL-b8be79edc561dcf9"
       ],
       "source_refs": [
+        "SA-8f10c0d82c3ed920",
         "SA-adfbb584d61ea48c"
       ],
       "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
+        "buyer_or_user": [
+          {
+            "value_id": "content_team",
+            "claim_ref": "CL-1f25eb23cdb25897",
+            "source_refs": [
+              "SA-8f10c0d82c3ed920"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "marketing_content",
+            "claim_ref": "CL-1f25eb23cdb25897",
+            "source_refs": [
+              "SA-8f10c0d82c3ed920"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "specific_task": [
+          {
+            "value_id": "content_workflow",
+            "claim_ref": "CL-1f25eb23cdb25897",
+            "source_refs": [
+              "SA-8f10c0d82c3ed920"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
         "pain_or_constraint": [],
         "product_form": [],
         "delivery_model": [],
         "business_action": [
           {
             "value_id": "product_launch",
-            "claim_ref": "CL-b8be79edc561dcf9",
+            "claim_ref": "CL-1f25eb23cdb25897",
             "source_refs": [
-              "SA-adfbb584d61ea48c"
+              "SA-8f10c0d82c3ed920"
             ],
             "provenance": "event_type_rule"
           }
@@ -1361,9 +1177,15 @@
       },
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
+          "buyer_or_user": [
+            "content_team"
+          ],
+          "team_or_function": [
+            "marketing_content"
+          ],
+          "specific_task": [
+            "content_workflow"
+          ],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
@@ -1598,6 +1420,100 @@
       }
     },
     {
+      "id": "EV-8b36007d0b5f377f",
+      "event_id": "EV-8b36007d0b5f377f",
+      "event_type": "research_result",
+      "publication_status": "verified",
+      "title": "HANDBOOK.md 基准测试：长政策文档无法可靠约束AI智能体行为",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-07-30",
+      "event_time": "2026-07-29T15:05:22.976Z",
+      "sourceUrl": "https://arxiv.org/abs/2607.25398",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "subject": "HANDBOOK.md",
+      "sourceExcerpt": "Title: HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following",
+      "entity_refs": [
+        {
+          "entity_id": "EN-f90aec90acf3dc85",
+          "canonical_name": "HANDBOOK.md",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-5332d9e00a6234ff",
+        "CL-44a055c2bd3ec0c6",
+        "CL-a080ddf8fa267f2e",
+        "CL-9343d8f31ba15a43"
+      ],
+      "source_refs": [
+        "SA-52fa9c877babc787"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-5332d9e00a6234ff",
+            "source_refs": [
+              "SA-52fa9c877babc787"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "evaluation_gap",
+            "claim_ref": "CL-5332d9e00a6234ff",
+            "source_refs": [
+              "SA-52fa9c877babc787"
+            ],
+            "provenance": "exact_claim_rule"
+          },
+          {
+            "value_id": "security_compliance",
+            "claim_ref": "CL-a080ddf8fa267f2e",
+            "source_refs": [
+              "SA-52fa9c877babc787"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "research_benchmark",
+            "claim_ref": "CL-5332d9e00a6234ff",
+            "source_refs": [
+              "SA-52fa9c877babc787"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "knowledge_base_qa"
+          ],
+          "pain_or_constraint": [
+            "evaluation_gap",
+            "security_compliance"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "research_benchmark"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-a4fe78df6ccd63c8",
       "event_id": "EV-a4fe78df6ccd63c8",
       "event_type": "product_release",
@@ -1820,6 +1736,106 @@
       }
     },
     {
+      "id": "EV-abb190c09b08067c",
+      "event_id": "EV-abb190c09b08067c",
+      "event_type": "research_result",
+      "publication_status": "verified",
+      "title": "Anthropic：Claude 发现 HAWK 致命缺陷，仅用 60 小时攻破 NIST 后量子签名候选算法",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-07-30",
+      "event_time": "2026-07-30T01:03:11.000Z",
+      "sourceUrl": "https://www.ithome.com/0/983/396.htm",
+      "sourceName": "IT之家（RSS）",
+      "subject": "Claude Mythos Preview",
+      "sourceExcerpt": "Claude 针对 NIST 后量子签名候选算法 HAWK 及简化版 AES-128 加密标准发现了更高效的攻击方法。其中针对 HAWK 的攻击直接导致该算法于次日被其开发者从 NIST 的标准化进程中撤回。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-c4941bfc97ac7c2d",
+          "canonical_name": "Claude Mythos Preview",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-acb60f822b0a75b1",
+        "CL-dc51b91c6c9846e4"
+      ],
+      "source_refs": [
+        "SA-13a6757eecb63d72"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-acb60f822b0a75b1",
+            "source_refs": [
+              "SA-13a6757eecb63d72"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-acb60f822b0a75b1",
+            "source_refs": [
+              "SA-13a6757eecb63d72"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [
+          {
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-acb60f822b0a75b1",
+            "source_refs": [
+              "SA-13a6757eecb63d72"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "research_benchmark",
+            "claim_ref": "CL-acb60f822b0a75b1",
+            "source_refs": [
+              "SA-13a6757eecb63d72"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [
+            "knowledge_base_qa"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "research_benchmark"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-acf3df526813ed37",
       "event_id": "EV-acf3df526813ed37",
       "event_type": "product_release",
@@ -1944,430 +1960,6 @@
           "delivery_model": [
             "open_source_commercial"
           ],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-b78644de93b5a96d",
-      "event_id": "EV-b78644de93b5a96d",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-30",
-      "event_time": "2026-07-30T01:42:00.000Z",
-      "sourceUrl": "https://www.ithome.com/0/983/412.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "Google",
-      "sourceExcerpt": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻 - IT之家",
-      "entity_refs": [
-        {
-          "entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-7ad34701224a4d2d",
-          "canonical_name": "Lyria 3.5",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-1f25eb23cdb25897",
-        "CL-aad9909d825b9461",
-        "CL-982060a414d04544",
-        "CL-2fc0e06bcf394e48"
-      ],
-      "source_refs": [
-        "SA-8f10c0d82c3ed920"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "content_team",
-            "claim_ref": "CL-1f25eb23cdb25897",
-            "source_refs": [
-              "SA-8f10c0d82c3ed920"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "marketing_content",
-            "claim_ref": "CL-1f25eb23cdb25897",
-            "source_refs": [
-              "SA-8f10c0d82c3ed920"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "specific_task": [
-          {
-            "value_id": "content_workflow",
-            "claim_ref": "CL-1f25eb23cdb25897",
-            "source_refs": [
-              "SA-8f10c0d82c3ed920"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-1f25eb23cdb25897",
-            "source_refs": [
-              "SA-8f10c0d82c3ed920"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "content_team"
-          ],
-          "team_or_function": [
-            "marketing_content"
-          ],
-          "specific_task": [
-            "content_workflow"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-c0ab1ca89a7c09d4",
-      "event_id": "EV-c0ab1ca89a7c09d4",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "上海发布户外广告合规指引：AI 生成内容须明确标识",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-30",
-      "event_time": "2026-07-29T14:22:55.000Z",
-      "sourceUrl": "https://www.ithome.com/0/983/333.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "上海",
-      "sourceExcerpt": "IT之家 7 月 29 日消息，近日，上海市市场监督管理局制定发布《上海市户外广告发布内容合规指引》（以下简称《合规指引》），系统梳理户外广告发布中的重点风险和合规要求，为广告活动主体加强内容审核、防范违法违规风险提供更加清晰、具体、可操作的指引。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-4906a49adc5c472b",
-          "canonical_name": "上海",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-3fceca3ace01c874",
-          "canonical_name": "上海市户外广告发布内容合规指引",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-66260ae40be7432b",
-        "CL-b15e5553c0765f05",
-        "CL-1d094f70c2e77b44",
-        "CL-e879a70d87e72f9c"
-      ],
-      "source_refs": [
-        "SA-fca9221f48faf67b"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-66260ae40be7432b",
-            "source_refs": [
-              "SA-fca9221f48faf67b"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-66260ae40be7432b",
-            "source_refs": [
-              "SA-fca9221f48faf67b"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-dc429e4943ed80de",
-      "event_id": "EV-dc429e4943ed80de",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "商业新闻融资快讯与新闻稿",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-30",
-      "event_time": "2026-07-29T00:00:00.000Z",
-      "sourceUrl": "https://www.businesswire.com/newsroom/subject/funding",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Funding Breaking News",
-      "sourceExcerpt": "CAMBRIDGE, Mass.--( BUSINESS WIRE )--Cambridge Savings Bank (\"CSB\"), a full-service community bank with $7 billion in assets, announced an increased Asset-Based Lending credit facility for Belle Brands, helping to fuel the company's acquisition of Versed, a clean, solutions-driven skincare and makeup brand founded by Katherine Power. The acquisition marks Belle Brands' second add-on acquisition as the platform continues to grow and scale its portfolio of leading beauty and personal care brands. T...",
-      "entity_refs": [
-        {
-          "entity_id": "EN-6e16c75be6de5bd7",
-          "canonical_name": "Funding Breaking News",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-842fcb5e60989a03",
-          "canonical_name": "Press",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-f089235163692bcd",
-          "canonical_name": "Business Wire",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-405526c967fd3016",
-        "CL-fea586e926510792",
-        "CL-8bc44097fde6c872",
-        "CL-952cbc5b233026cc"
-      ],
-      "source_refs": [
-        "SA-5329d8aefdd87f6d"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-952cbc5b233026cc",
-            "source_refs": [
-              "SA-5329d8aefdd87f6d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-952cbc5b233026cc",
-            "source_refs": [
-              "SA-5329d8aefdd87f6d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-405526c967fd3016",
-            "source_refs": [
-              "SA-5329d8aefdd87f6d"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-ec76f0db15b1781a",
-      "event_id": "EV-ec76f0db15b1781a",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "新闻室 \\ Anthropic",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-30",
-      "event_time": "2026-07-24T00:00:00.000Z",
-      "sourceUrl": "https://www.anthropic.com/news",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Anthropic",
-      "sourceExcerpt": "Introducing Claude Opus 5",
-      "entity_refs": [
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-bf8951127ecb940e",
-          "canonical_name": "Claude Opus 5",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-386bca5dbab90ed3",
-        "CL-446519e59e094cd0"
-      ],
-      "source_refs": [
-        "SA-60a4bbd9de2d972b"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-386bca5dbab90ed3",
-            "source_refs": [
-              "SA-60a4bbd9de2d972b"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-fd9d6fae44ff4a15",
-      "event_id": "EV-fd9d6fae44ff4a15",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "微软确认Copilot“超级应用”将于今年推出",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-30",
-      "event_time": "2026-07-29T00:00:00.000Z",
-      "sourceUrl": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
-      "sourceName": "The Verge AI",
-      "subject": "Microsoft",
-      "sourceExcerpt": "Microsoft is working on an AI “super app” that combines Copilot’s chat, coding, and agentic capabilities.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-5e7d7a3952edf11a",
-        "CL-4f38867f615ce143"
-      ],
-      "source_refs": [
-        "SA-7623d0b0397e6355"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-5e7d7a3952edf11a",
-            "source_refs": [
-              "SA-7623d0b0397e6355"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-5e7d7a3952edf11a",
-            "source_refs": [
-              "SA-7623d0b0397e6355"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "internal_tool_building"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
           "business_action": [
             "product_launch"
           ]

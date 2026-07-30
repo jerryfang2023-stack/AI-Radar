@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, findEventRule, normalizeEventTitle, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
@@ -718,6 +718,73 @@ test("superseded roundups and secondary event sources remain outside canonical e
   }
 });
 
+test("index pages, question headlines, roundups, and reaction articles cannot become commercial events", () => {
+  const cases = [
+    ["新闻室 \\ Anthropic", "index_or_listing_page_not_event_source"],
+    ["企业AI新闻", "index_or_listing_page_not_event_source"],
+    ["商业新闻融资快讯与新闻稿", "index_or_listing_page_not_event_source"],
+    ["Funding Breaking News and Press Releases from Business Wire", "index_or_listing_page_not_event_source"],
+    ["智能体AI能否让美国制造业回归？", "question_headline_not_event_specific"],
+    ["AI巨头斥资数十亿美元布局企业部署", "multi_event_roundup_not_single_event_source"],
+    ["OpenAI 总裁布罗克曼回应苹果诉讼：无意窃取商业机密", "reaction_or_commentary_not_new_event"],
+  ];
+
+  for (const [title, reason] of cases) {
+    assert.equal(publicEventSourceTitleIssue(title), reason, title);
+    assert.equal(eventSourceEligibility(
+      { clean_text: "Source text with a candidate event.", raw_qc_decision: "pass" },
+      { source_url: "https://example.com/source" },
+      title,
+    ).reason, reason, title);
+  }
+});
+
+test("research and report containers cannot promote incidental historical events", () => {
+  assert.deepEqual(modelAssistedEventEligibility(
+    { source_type: "web" },
+    "边缘AI技术报告2026 - 合作伙伴",
+    "acquisition",
+  ), {
+    accepted: false,
+    reason: "research_or_report_container_not_event_source",
+  });
+  assert.equal(modelAssistedEventEligibility(
+    { source_type: "research" },
+    "HANDBOOK.md 基准测试：长政策文档无法可靠约束AI智能体行为",
+    "research_result",
+  ).accepted, true);
+});
+
+test("secondary rumor wording in the source lead requires primary confirmation", () => {
+  const result = eventSourceEligibility(
+    {
+      clean_text: "消息称 OpenAI ChatGPT 周活用户即将破 10 亿。据 The Information 报道，OpenAI 内部披露的信息显示其周活跃用户接近该数字。",
+      source_level: "B",
+      raw_qc_decision: "pass",
+    },
+    { source_url: "https://example.com/secondary-usage-rumor" },
+    "OpenAI ChatGPT 周活用户即将突破 10 亿，较预期晚了半年",
+  );
+
+  assert.equal(result.reason, "rumor_requires_primary_confirmation");
+});
+
+test("specific research, policy, standard, and financial facts outrank generic release words", () => {
+  const cases = [
+    ["HANDBOOK.md 基准测试：长政策文档无法可靠约束AI智能体行为", "research_result"],
+    ["上海发布户外广告合规指引：AI 生成内容须明确标识", "policy_regulation"],
+    ["MCP 2026-07-28 规范发布，转向“无状态”核心", "standard_specification"],
+    ["OpenAI 称 7 月年化收入已超 Q2 总和，面临 Anthropic 与开源模型双重竞争", "financial_performance"],
+  ];
+
+  for (const [title, eventType] of cases) assert.equal(findEventRule(title)?.eventType, eventType, title);
+  assert.equal(eventStatus(
+    "MCP 2026-07-28 规范发布，转向“无状态”核心",
+    "新规范取消握手并移除了会话 ID。",
+    "standard_specification",
+  ), "completed");
+});
+
 test("an attributed completed financing is not downgraded to rumor", () => {
   const result = eventSourceEligibility(
     {
@@ -895,11 +962,17 @@ test("same named release clusters across source wording", () => {
     }),
     entry("inkling-b", "Thinking Machines Lab launches Inkling with 975B parameters", "Thinking Machines Lab launched Inkling, a 975B parameter multimodal AI model.", {
       title_zh: "Thinking Machines Lab 发布 975B 参数的 Inkling 多模态 AI 模型"
+    }),
+    entry("copilot-super-app-a", "Microsoft launches Copilot AI super app this year", "Microsoft launched the Copilot AI super app to combine chat, coding, and agentic capabilities.", {
+      title_zh: "微软确认 Copilot 超级应用将于今年推出"
+    }),
+    entry("copilot-super-app-b", "Microsoft releases Copilot AI 超级应用 for consumers and companies", "Microsoft released the Copilot AI 超级应用 for consumer and commercial experiences.", {
+      title_zh: "微软确认 Copilot 超级应用年内问世"
     })
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
 
-  assert.equal(bundle.canonical_events.length, 1);
-  assert.equal(bundle.canonical_events[0].source_refs.length, 2);
+  assert.equal(bundle.canonical_events.length, 2);
+  assert.ok(bundle.canonical_events.every((event) => event.source_refs.length === 2));
 });
 
 test("hardware capacity excludes price metrics and keeps price as contract value", () => {

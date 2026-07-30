@@ -35,7 +35,7 @@ const EVENT_RULES = [
   ["funding", /\b(?:raises?|raised|closes?|closed|nabs?|landed)\b(?=.{0,80}(?:[$€£¥]\s?\d|\b(?:funding|financing|investment|series|seed|round)\b))|\b(?:funding round|financing round|series [a-z])\b|\blaunch(?:es|ed)? with [$€£¥]\s?\d|\b(?:secures?|secured)\b(?=.{0,60}\b(?:funding|financing|investment|series|seed|round)\b|.{0,60}[$€£¥]\s?\d)|融资|获投|募资|完成.*轮/iu],
   ["ipo_listing", /\b(?:files?|filed|filing|plans?|planned)?\s*(?:for\s+)?(?:an?\s+)?(?:ipo|initial public offering)\b|\b(?:public listing|stock market listing)\b|首次公开募股|递交.{0,30}(?:IPO|上市申请)|上市聆讯|公开发行股票/iu],
   ["capital_investment", /\b(?:invests?|invested|investment|capital expenditure|capex)\b.{0,100}\b(?:data cent(?:er|re)|ai infrastructure|compute infrastructure|fab|factory|campus|capacity)\b|资本开支|投资.{0,80}(?:数据中心|AI基础设施|人工智能基础设施|算力基础设施|晶圆厂|工厂|园区|产能)/iu],
-  ["financial_performance", /\b(?:reports?|reported|reaches?|reached|grew|increases?|increased)\b.{0,80}\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b|\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b.{0,50}\b(?:grew|growth|reaches?|reached|increases?|increased)\b|(?:营收|收入|利润|销售额|年度经常性收入).{0,50}(?:增长|达到|同比|环比|报告|披露)/iu],
+  ["financial_performance", /\b(?:reports?|reported|reaches?|reached|grew|increases?|increased)\b.{0,80}\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b|\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b.{0,50}\b(?:grew|growth|reaches?|reached|increases?|increased|exceeds?|surpasses?)\b|(?:营收|收入|利润|销售额|年度经常性收入).{0,50}(?:增长|达到|超(?:过|越)?|突破|同比|环比|报告|披露|减值)/iu],
   ["partnership", /\b(?:partners? with|partnership|collaborat(?:es?|ion)|alliance|integrat(?:es?|ion)\s+with)\b|合作|伙伴关系|结盟|接入/iu],
   ["procurement_contract", /\b(?:procurement agreement|signs? .{0,50}contract|enters? (?:into )?.{0,50}contract|tender|awarded? .{0,50}contract|selected .{0,50}provider)\b|采购|招标|中标|签署.{0,30}合同|达成.{0,30}合同/iu],
   ["market_expansion", /\b(?:opens?|opened)\b.{0,50}\b(?:office|hub|headquarters)\b|\b(?:expands?|expanded|enters?|entered)\b.{0,50}\b(?:market|region|country)\b|市场扩张|进入.{0,30}(?:市场|地区)|开设.{0,30}(?:办公室|中心|总部)/iu],
@@ -47,7 +47,7 @@ const EVENT_RULES = [
   ["hardware_deployment", /\b(?:deploys?|deployed|installs?|installed)\b.{0,80}\b(?:gpu|accelerator|server|cluster|data cent(?:er|re))\b|部署.{0,40}(?:GPU|芯片|服务器|集群|数据中心)/iu],
   ["pricing_change", /\b(?:price|pricing|subscription|billing)\b.{0,40}\b(?:changes?|changed|increases?|decreases?|cuts?|launches?)\b|调价|定价|计费变化|降价|涨价/iu],
   ["policy_regulation", /\b(?:regulator|regulation|policy|executive order|approved by|banned by|European Commission.{0,100}(?:announced|requires?|orders?|binding|DMA measures)|(?:commission|authority|regulator).{0,80}(?:requires?|orders?|rules?))\b|监管|法规|政策|行政令|批准|禁令|(?:欧盟|网信|监管|政府|有关部门).{0,50}(?:备案|公告|公布|要求|裁定)|(?:人工智能法案|AI\s*法案|AI\s*透明度准则).{0,50}(?:生效|实施|要求)|备案信息/iu],
-  ["standard_specification", /\b(?:publishes?|published|releases?|released|adopts?|adopted)\b.{0,70}\b(?:(?:open )?technical specification|open specification|industry standard|technical standard|protocol)\b|发布.{0,40}(?:技术规范|开放规范|行业标准|技术标准|协议)|制定.{0,40}(?:行业标准|技术标准|技术规范)/iu],
+  ["standard_specification", /\b(?:publishes?|published|releases?|released|adopts?|adopted)\b.{0,70}\b(?:(?:open )?technical specification|open specification|industry standard|technical standard|protocol)\b|发布.{0,40}(?:技术规范|开放规范|行业标准|技术标准|协议)|制定.{0,40}(?:行业标准|技术标准|技术规范)|(?:技术)?规范.{0,24}(?:发布|更新|生效)/iu],
   ["deployment", /\b(?:deploy(?:s|ed|ing)?|rolls? out|rolled out|implement(?:s|ed|ing)?|goes? live|pilots?|piloted)\b|部署|上线|落地|试点|实施/iu],
   ["research_result", /\b(?:study|research|benchmark|paper|report)\b.{0,70}\b(?:finds?|shows?|reports?|achieves?|usage|gap)\b|(?:研究(?!员)|论文|基准|报告).{0,50}(?:显示|表明|达到|结果|差距|用量|增长|下降|登顶|占比)/iu],
   ["organization_people", /\b(?:appoints?|appointed|hires?|hired|joins?|joined|resigns?|leaves?|depart(?:s|ed)?)\b|任命|加入|离职|辞任|聘任/iu],
@@ -80,6 +80,13 @@ const LEAD_EVENT_RULES = [
   ["product_release", /\b(?:a new (?:ios|android|web )?app|the app['’]s launch|a new product|a new service)\b|一款新(?:应用|产品|服务)/iu]
 ];
 
+const HIGH_SPECIFICITY_EVENT_RULES = [
+  ["research_result", /\b(?:benchmark|strict grading|failures?)\b|(?:基准测试|评测研究)/iu],
+  ["standard_specification", /(?:技术)?规范.{0,24}(?:发布|更新|生效)|(?:发布|更新).{0,30}(?:技术规范|开放规范|行业标准|技术标准|协议)/iu],
+  ["policy_regulation", /(?:发布|制定).{0,40}(?:合规指引|监管指引)|(?:AI|人工智能|生成合成内容).{0,40}(?:须|必须|应当).{0,30}(?:标识|披露)/iu],
+  ["financial_performance", /(?:营收|收入|利润|销售额|年度经常性收入).{0,50}(?:增长|达到|超(?:过|越)?|突破|同比|环比|报告|披露|减值)|\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b.{0,50}\b(?:grew|growth|reaches?|reached|increases?|increased|exceeds?|surpasses?)\b/iu]
+];
+
 const OPINION_ONLY = /\b(?:says?|warns?|predicts?|criticizes?|argues?|believes?|interview)\b|表示|认为|警告|预测|直言|批评|访谈/iu;
 const PROPOSAL_ONLY = /\b(?:predicts?|proposes?|suggests?|calls? for)\b|预言|提议|建议设立|呼吁设立/iu;
 const NEGATED_OR_SPECULATIVE_EVENT = /(?:合作|收购|并购|融资).{0,20}(?:可能性较低|可能性不大|尚无计划|不会|不太可能)|\b(?:unlikely|not expected|no plans?)\b.{0,50}\b(?:partner|acquir|merge|rais)/iu;
@@ -96,6 +103,11 @@ const INFORMATIONAL_TITLE = /^(?:how\b|what\b|why\b|when\b|where\b|guide\b|cost\
 const TRUNCATED_OR_NON_EVENT_TITLE = /(?:…|\.\.\.)|^(?:show hn:|ask hn:|launch hn:|open[- ]source\b|github\b|youtube\b|ep\s+\d+\b|hype\b|you need\b|frontier ai labs\b|if you\b)|\b(?:roadmap|playbook|handbook)\b.*\b(?:engineer|engineering|deployment)\b/iu;
 const COMMUNITY_DISCOVERY_URL = /^https?:\/\/(?:www\.)?(?:facebook\.com\/groups\/|reddit\.com\/|news\.ycombinator\.com\/|linkedin\.com\/|youtube\.com\/|youtu\.be\/|podcasters\.spotify\.com\/|x\.com\/)/iu;
 const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|\b(?:role explained|job opening|careers page|marketplace listing|case studies index)\b/iu;
+const QUESTION_HEADLINE = /^(?:(?:can|could|will|would|is|are|do|does|did|should|has|have)\b|.{0,40}(?:能否|是否|会不会|可否)).*[?？]$/iu;
+const GENERIC_INDEX_TITLE = /^(?:newsroom|enterprise ai news)(?:\s*(?:[\\|｜:—-])\s*.*)?$|^funding breaking news and press releases(?:\s+from\s+.*)?$|^(?:新闻室(?:\s*[\\|｜:—-]\s*.*)?|企业\s*AI\s*新闻|商业新闻融资快讯与新闻稿)$/iu;
+const GENERIC_ROUNDUP_TITLE = /^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
+const REACTION_ONLY_TITLE = /(?:回应|谈及|评论).{0,60}(?:诉讼|传闻|争议)|(?:诉讼|传闻|争议).{0,60}(?:回应|表态)|\b(?:responds? to|comments? on)\b.{0,80}\b(?:lawsuit|rumou?r|controversy|dispute)\b/iu;
+const RESEARCH_CONTAINER_TITLE = /\b(?:technology|industry|market|technical)?\s*report\b|\b(?:benchmark|research paper|whitepaper)\b|(?:技术|行业|市场|研究)?报告|基准测试|研究论文|白皮书/iu;
 const EXPLICIT_AI_EVIDENCE = /\b(?:ai|artificial intelligence|generative ai|genai|ai[- ](?:native|powered|generated|coding|assistant|assistants|agent|agents|model|models|system|systems|service|services|platform|platforms|tool|tools|chip|chips|hardware|infrastructure|workload|workloads|research|video)|agentic(?:\s+ai)?|large language models?|foundation models?|coding models?|vision[- ]language(?:[- ]action)? models?|multimodal(?:\s+moe)?|machine learning|deep learning|neural (?:network|networks|processing)|llms?|chatbots?|model inference|model training|open[- ]weight|npus?|edge ai|physical ai|embodied ai|computer vision|natural language processing)\b|人工智能|生成式\s*(?:人工智能|AI)|AI\s*(?:智能体|模型|系统|平台|服务|产品|工具|编程|助手|芯片|硬件|基础设施|应用|研究|视频|办公|手机|短剧|生产力|推理|训练)|智能体|大模型|基础模型|编码模型|多模态|机器学习|深度学习|神经网络|生成模型|推理模型|世界模型|具身(?:智能|模型)|端侧生成式人工智能|模型服务|模型券|算力(?:集群|基础设施)/iu;
 const NAMED_AI_EVIDENCE = /\b(?:OpenAI|Anthropic|ChatGPT|Claude|Gemini|DeepMind|DeepSeek|Qwen|Grok|xAI|Mistral(?: AI)?|Llama|Hugging Face|OpenRouter|Codex|Bedrock AgentCore|Thinking Machines Lab|FuriosaAI|InstaLILY|C3 AI|MiniMax|Moonshot AI|Arcade\.dev)\b|豆包|混元|千问|月之暗面|Kimi|灵犀专业版|WPS Comate/iu;
 const GENERIC_VERTICAL_AI_PUBLICITY = /(?:我国|国内|全球)(?:首个|首款|首套).{0,80}(?:智慧|智能).{0,30}(?:大模型|系统)|(?:水风光|流域|气象|水文).{0,60}(?:智慧运营|大模型)/iu;
@@ -132,6 +144,8 @@ function eventSourceEligibility(raw, artifact, title) {
   if (NON_AI_MERCHANDISE.test(title)) {
     return { accepted: false, reason: "non_ai_merchandise_not_industry_event" };
   }
+  const titleIssue = publicEventSourceTitleIssue(title);
+  if (titleIssue) return { accepted: false, reason: titleIssue };
   const sourceLead = cleanString(raw.clean_text || raw.full_text).slice(0, 1400);
   if (/🤖.{0,120}💰.{0,120}(?:🎵|ElevenLabs)/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
@@ -157,7 +171,7 @@ function eventSourceEligibility(raw, artifact, title) {
   }
   const attributedCompletedFinancing = /据.{0,20}(?:官微|官方|公司|财务顾问).{0,12}消息.{0,100}(?:已完成|完成).{0,40}融资/iu.test(sourceLead);
   if (!attributedCompletedFinancing && (RUMOR.test(title)
-      || (RUMOR.test(sourceLead) && /官方公告为准|尚未对外开放|has not (?:been )?confirmed|not confirmed|或计划|据.{0,20}消息/iu.test(sourceLead)))) {
+      || (RUMOR.test(sourceLead) && /官方公告为准|尚未对外开放|has not (?:been )?confirmed|not confirmed|或计划|据.{0,20}消息|内部披露的信息/iu.test(sourceLead)))) {
     return { accepted: false, reason: "rumor_requires_primary_confirmation" };
   }
   try {
@@ -187,6 +201,24 @@ function eventSourceEligibility(raw, artifact, title) {
       || /(?:复现.{0,40}界面|界面.{0,40}复现).{0,40}开源项目/iu.test(title)
       || genericForwardDeployedPage) {
     return { accepted: false, reason: "non_event_or_index_title" };
+  }
+  return { accepted: true, reason: "" };
+}
+
+function publicEventSourceTitleIssue(title) {
+  const value = cleanString(title);
+  if (QUESTION_HEADLINE.test(value)) return "question_headline_not_event_specific";
+  if (GENERIC_INDEX_TITLE.test(value)) return "index_or_listing_page_not_event_source";
+  if (GENERIC_ROUNDUP_TITLE.test(value)) return "multi_event_roundup_not_single_event_source";
+  if (REACTION_ONLY_TITLE.test(value)) return "reaction_or_commentary_not_new_event";
+  return "";
+}
+
+function modelAssistedEventEligibility(raw, title, eventType) {
+  const sourceType = cleanString(raw.source_type).toLocaleLowerCase();
+  if ((RESEARCH_CONTAINER_TITLE.test(title) || sourceType === "research")
+      && !["research_result", "standard_specification"].includes(eventType)) {
+    return { accepted: false, reason: "research_or_report_container_not_event_source" };
   }
   return { accepted: true, reason: "" };
 }
@@ -412,6 +444,9 @@ function findEventRule(title, lead = "") {
   if (/\bBristol Myers Squibb\b.{0,120}\bAI Factory\b.{0,120}\bVera Rubin\b/iu.test(title)) {
     return { eventType: "hardware_deployment", pattern: /\b(?:Building|DGX|deploy|Vera Rubin)\b/iu };
   }
+  for (const [eventType, pattern] of HIGH_SPECIFICITY_EVENT_RULES) {
+    if (pattern.test(title)) return { eventType, pattern };
+  }
   if (/\bArchestra(?:\.AI)?\b.{0,60}\bAnnounces?\b.{0,30}\$\s*10M\b.{0,20}\bSeed\b/iu.test(title)) {
     return { eventType: "funding", pattern: /\bAnnounces?\b/iu };
   }
@@ -447,7 +482,7 @@ function findEventRule(title, lead = "") {
 
 function eventStatus(title, lead, eventType = "") {
   const text = `${title}\n${lead}`;
-  if (WITHDRAWN.test(text)) return "withdrawn";
+  if (WITHDRAWN.test(title)) return "withdrawn";
   const attributedCompletedFinancing = /据.{0,20}(?:官微|官方|公司|财务顾问).{0,12}消息.{0,100}(?:已完成|完成).{0,40}融资/iu.test(text);
   if (RUMOR.test(text) && !(eventType === "funding" && attributedCompletedFinancing)) return "rumored";
   if (DISPUTE.test(title) || (eventType === "funding" && DISPUTE.test(lead))) return "disputed";
@@ -521,6 +556,7 @@ function cleanOrganizationCandidate(value) {
   if (/^(?:\d+|数十|多名|员工|出版商|作者|研究员|私募巨头|我国首个|一图看懂|澳大利亚|中国|美国|日本|印度|欧洲)/u.test(candidate)) return "";
   if (/(?:发布|推出|上线|融资|获投|起诉|诉讼|回应|呼吁|提议|加入|离职|成立|中标|增长|模型|手表|平台|工作台|方案|服务|指南|报告)/u.test(candidate)) return "";
   if (/\b(?:employees?|researchers?|publishers?|authors?|founder|guide|model|platform|service|report|cost|forward|didn['’]t)\b/iu.test(candidate)) return "";
+  if (/\.(?:md|json|ya?ml|toml|txt|csv|js|mjs|ts|py)\b/iu.test(candidate)) return "";
   if (/[$€£¥]|\b\d+(?:\.\d+)?(?:m|b|million|billion)?\b/iu.test(candidate)) return "";
   if (containsChinese(candidate) ? candidate.length > 16 : candidate.split(/\s+/u).length > 5) return "";
   return candidate;
@@ -1224,6 +1260,8 @@ function namedReleaseIdentity(value = "") {
     ["roblox-build", /\bRoblox\b.{0,60}\bBuild\b|\bBuild\b.{0,60}\bRoblox\b/iu],
     ["roblox-build", /(?:game[- ]creation|游戏创作|游戏创建).{0,40}\bBuild\b|\bBuild\b.{0,40}(?:game[- ]creation|游戏创作|游戏创建)/iu],
     ["kimi-k3", /\bKimi\b.{0,40}\bK3\b|\bK3\b.{0,40}\bKimi\b/iu],
+    ["lyria-3-5", /\bLyria\s*3[.]5\b/iu],
+    ["copilot-super-app", /\bCopilot\b.{0,60}(?:super app|超级应用)|(?:super app|超级应用).{0,60}\bCopilot\b/iu],
     ["onepassword-claude", /\b1Password\b.{0,80}\bClaude\b|\bClaude\b.{0,80}\b1Password\b/iu],
     ["japan-noetra-ai-infrastructure", /\bnational AI infrastructure\b|\bNoetra\b|\bRubin\b.{0,80}\brobots?\b|\brobots?\b.{0,80}\bRubin\b|27,500.{0,30}\bRubin\b|国家级\s*(?:人工智能|AI)\s*基础设施/iu]
   ];
@@ -1231,8 +1269,8 @@ function namedReleaseIdentity(value = "") {
 }
 
 function canonicalNamedReleaseType(identity, fallback) {
-  if (["grok-build", "lm-studio-bionic", "roblox-build", "onepassword-claude"].includes(identity)) return "product_release";
-  if (["inkling", "kimi-k3"].includes(identity)) return "model_release";
+  if (["grok-build", "lm-studio-bionic", "roblox-build", "copilot-super-app", "onepassword-claude"].includes(identity)) return "product_release";
+  if (["inkling", "kimi-k3", "lyria-3-5"].includes(identity)) return "model_release";
   if (identity === "japan-noetra-ai-infrastructure") return "hardware_deployment";
   return fallback;
 }
@@ -1370,7 +1408,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const deterministicRule = sourceEligibility.accepted ? findEventRule(title, bodyClean.slice(0, 1200)) : null;
     const modelClaimCandidate = (acceptedAssistByRaw.get(rawId) || []).find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
     const proposedModelClaim = modelClaimCandidate?.proposal?.claims?.find((claim) => EVENT_RULES.some(([eventType]) => eventType === claim.event_type));
-    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim ? { eventType: proposedModelClaim.event_type, pattern: /$^/u } : null);
+    const proposedModelEligibility = proposedModelClaim
+      ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type)
+      : { accepted: true, reason: "" };
+    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted
+      ? { eventType: proposedModelClaim.event_type, pattern: /$^/u }
+      : null);
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
     const extractionStatus = !artifact.source_url || bodyClean.length < 20 || /\ufffd/gu.test(bodyClean) ? "quarantined" : bodyClean.length < 300 ? "partial" : "accepted";
     const doc = {
@@ -1408,7 +1451,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         ? sourceEligibility.reason
         : opinionOnly
           ? "opinion_without_source_bounded_event"
-          : "no_source_bounded_event";
+          : proposedModelEligibility.reason || "no_source_bounded_event";
       qaQueue.push({ qa_id: `QA-${hash(`${rawId}|no-event`)}`, asset_id: rawId, reason, status: "review_optional", source_ref: artifact.source_artifact_id });
     } else {
       const parsed = deterministicRule
@@ -1857,4 +1900,16 @@ if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
   }
 }
 
-export { VERSION, JUDGMENT_KEYS, trimBoilerplate, normalizeEventTitle, findEventRule, eventStatus, eventSourceEligibility, forbiddenKeys, sourceArtifact };
+export {
+  VERSION,
+  JUDGMENT_KEYS,
+  trimBoilerplate,
+  normalizeEventTitle,
+  findEventRule,
+  eventStatus,
+  eventSourceEligibility,
+  publicEventSourceTitleIssue,
+  modelAssistedEventEligibility,
+  forbiddenKeys,
+  sourceArtifact
+};

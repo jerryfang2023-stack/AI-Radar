@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:53:16.459Z",
+    "generatedAt": "2026-07-30T09:01:27.367Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1732,
+    "eventCount": 1722,
     "quarantinedEventCount": 13
   },
   "hardware": [
@@ -2062,19 +2062,20 @@
       ],
       "raw_documents": 11,
       "original_sources": 10,
-      "valid_claims": 13,
+      "valid_claims": 12,
       "observations": 4,
-      "canonical_events": 4,
+      "canonical_events": 3,
       "blocker_counts": {
         "no_source_bounded_event": 5,
         "non_event_or_index_title": 1,
+        "research_or_report_container_not_event_source": 1,
         "raw_document_not_auditable": 1
       },
       "rates": {
         "original_source_rate": 0.9090909090909091,
         "valid_claim_rate": 1,
-        "observation_rate": 0.3076923076923077,
-        "event_conversion_rate": 0.3076923076923077
+        "observation_rate": 0.3333333333333333,
+        "event_conversion_rate": 0.25
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/monitoring-funnel.json"
     }

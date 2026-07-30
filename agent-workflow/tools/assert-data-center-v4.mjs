@@ -5,7 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
-import { eventAiRelevanceEvidence, forbiddenKeys } from "./build-data-center-v4.mjs";
+import { eventAiRelevanceEvidence, forbiddenKeys, publicEventSourceTitleIssue } from "./build-data-center-v4.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -199,6 +199,8 @@ export function evaluateBundle(bundle, taxonomy) {
       failures.push(`${event.event_id}: display_title_zh is not an exact source-title translation`);
     }
     const sourceRaw = rawBySourceId.get(event.source_refs[0]);
+    const titleIssue = publicEventSourceTitleIssue(sourceRaw?.title_original || sourceRaw?.title_zh || event.display_title_zh);
+    if (titleIssue) failures.push(`${event.event_id}: canonical event uses an ineligible source title (${titleIssue})`);
     const relevance = eventAiRelevanceEvidence({
       title: sourceRaw?.title_zh || sourceRaw?.title_original || event.object,
       claims: event.claim_refs.map((id) => claimById.get(id)).filter(Boolean),

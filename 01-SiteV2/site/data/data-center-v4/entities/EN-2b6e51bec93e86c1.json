@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:53:16.459Z",
+    "generatedAt": "2026-07-30T09:01:27.367Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1732,
+    "eventCount": 1722,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -30,7 +30,7 @@
       "EV-67ef7accd26a07a0",
       "EV-a7e1ecd212474e00",
       "EV-d961d3ad02f6ae14",
-      "EV-63507a4105775b66",
+      "EV-6b0106ef4a79df05",
       "EV-5f2acbfb8f54fd59",
       "EV-59229486408edb05",
       "EV-6654f62015eff8e3",
@@ -64,6 +64,7 @@
       "TX-technology-video_generation",
       "TX-industry-media_entertainment",
       "TX-technology-speech_audio",
+      "TX-use_case-content_creation",
       "TX-technology-image_generation"
     ],
     "relatedEntityIds": [
@@ -96,7 +97,7 @@
         "EV-d961d3ad02f6ae14"
       ],
       "productsServices": [
-        "EV-63507a4105775b66",
+        "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
         "EV-6654f62015eff8e3",
@@ -123,19 +124,33 @@
     },
     "timeline": [
       {
-        "id": "EV-63507a4105775b66",
+        "id": "EV-6b0106ef4a79df05",
         "dataDate": "2026-07-30",
-        "date": "2026-07-29",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
+        "date": "2026-07-30",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
         "eventGroup": "模型、产品与服务",
         "status": "completed",
         "statusLabel": "已完成",
-        "title": "Google DeepMind 在 Flow Music 中推出 Lyria 3.5，提升音乐性、歌词、人声与创作控制",
-        "displayTags": [],
+        "title": "谷歌推出 Lyria 3.5 音乐生成 AI 模型：提升旋律编排、人声表现更细腻",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "speech_audio",
+            "name": "语音与音频"
+          }
+        ],
         "entityIds": [
-          "EN-2b6e51bec93e86c1",
+          "EN-bbdefa2950f49882",
           "EN-7ad34701224a4d2d",
+          "EN-2b6e51bec93e86c1",
           "EN-ba8a9b6ce159cd8c"
         ]
       },
@@ -951,11 +966,9 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-39b075c62ba4e927",
         "EV-57cf8e14d6994c1b",
         "EV-5f3ccb941a2fe5d7",
         "EV-9490bae84e7b4707",
-        "EV-cc65a81f48e10ceb",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
@@ -1125,9 +1138,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-16bb9d0c6a2a7115",
+        "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
-        "EV-fd9d6fae44ff4a15",
         "EV-7a4d1e871dcd3b1f",
         "EV-7c934b299d048348",
         "EV-bfa090c78227abf8",
@@ -1346,7 +1358,7 @@
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-20b82e2a2cb33a0e",
-        "EV-3a0596df367df665",
+        "EV-8b36007d0b5f377f",
         "EV-70fd0c4e482a646e",
         "EV-86537be17d50ff20",
         "EV-618e2e96fac28f06",
@@ -1363,14 +1375,13 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
-        "EN-f9075cc99990820a",
         "EN-556c337c4f0b031e",
         "EN-fb42d760d80a6314",
         "EN-9fbf261b62c1d7c0",
         "EN-2be663431f007250",
-        "EN-7d3194f79e645c42",
         "EN-ab9b29074a980e4b",
         "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
         "EN-382635c9325bf327",
         "EN-3db1f560db626918",
         "EN-8f71c4871a160172",
@@ -1794,7 +1805,7 @@
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
         "EN-16478186eeecf696",
-        "EN-18bb438ae33bc120",
+        "EN-f90aec90acf3dc85",
         "EN-96045bee6a2d2527",
         "EN-7f871cbf905f6e0c",
         "EN-c608c4787821de1b",
@@ -2606,7 +2617,7 @@
       "typeLabel": "技术",
       "valueId": "speech_audio",
       "eventIds": [
-        "EV-b78644de93b5a96d",
+        "EV-6b0106ef4a79df05",
         "EV-9fb08b68f301eb88",
         "EV-94ad4a217508e6e0",
         "EV-f388f7ae2debeae8",
@@ -2621,6 +2632,8 @@
       "entityIds": [
         "EN-bbdefa2950f49882",
         "EN-7ad34701224a4d2d",
+        "EN-2b6e51bec93e86c1",
+        "EN-ba8a9b6ce159cd8c",
         "EN-916a98f0fa2a39af",
         "EN-047364b9be67f665",
         "EN-ec1c8f558ff61e34",
@@ -2634,7 +2647,6 @@
         "EN-8d4321d936320802",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
-        "EN-2b6e51bec93e86c1",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-2c348893efb2316e",
@@ -2645,6 +2657,38 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-30"
+    },
+    {
+      "id": "TX-use_case-content_creation",
+      "name": "内容创作",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "content_creation",
+      "eventIds": [
+        "EV-6b0106ef4a79df05",
+        "EV-1de38866b4b92754",
+        "EV-99e5df844a1bd670",
+        "EV-0933cc40b4fe5f21",
+        "EV-3bd84e75aa7f18b3",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-7ad34701224a4d2d",
+        "EN-2b6e51bec93e86c1",
+        "EN-ba8a9b6ce159cd8c",
+        "EN-e93e29634540a290",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-8104520f6e69796d",
+        "EN-f8bebacc033880dd",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-30"
     },
     {
