@@ -132,8 +132,8 @@ if (vaultRoot) {
 
   try {
     const evidence = JSON.parse(fs.readFileSync(path.join(vaultRoot, ".guanlan-evidence.json"), "utf8"));
-    if (evidence.originalBodyStorage !== "repository_snapshot_plus_private_backup") {
-      problems.push("Guanlan evidence projection must disclose repository snapshots and the private backup");
+    if (evidence.originalBodyStorage !== "private_evidence_store_only") {
+      problems.push("Guanlan evidence projection must disclose the private evidence store as the only original-body location");
     }
     if (!Number.isInteger(evidence.assets?.total) || evidence.assets.total < 1) {
       problems.push("Guanlan evidence projection has no knowledge assets");

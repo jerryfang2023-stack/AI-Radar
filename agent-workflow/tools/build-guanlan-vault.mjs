@@ -212,7 +212,7 @@ write(GUANLAN_VAULT_PATHS.currentVersion, `${yaml("当前版本")}# 当前版本
 | 数据中心 | ${text(manifest.dataVersion)} |
 | 实体 | ${text(manifest.entityVersion)} |
 | 关系 | ${text(manifest.relationshipVersion)} |
-| Raw | RAW-V3.0 |
+| Raw | RAW-V4.0 |
 | Event | EVENT-V1.1 |
 | Tags | TAG-V4.0 |
 | Opportunity Map | ${text(opportunity.meta?.applicationVersion)} |
@@ -445,7 +445,7 @@ write(GUANLAN_VAULT_PATHS.contracts, `${yaml("当前契约")}# 当前契约
 
 | 契约 | 版本 |
 |---|---|
-| Raw | RAW-V3.0 |
+| Raw | RAW-V4.0 |
 | Event | EVENT-V1.1 |
 | Entity | ENTITY-V1.0 |
 | Relation | RELATION-V2.1 |

@@ -36,16 +36,17 @@ AI Startup Radar 已退役且不迁移，不能与应用中心的机会地图混
 npm run sync:guanlan-vault
 npm run assert:guanlan-vault
 npm run assert:private-evidence-backup
+npm run assert:public-evidence-boundary
 npm run register:guanlan-vault
 ```
 
-同步会为全部已发布知识资产写入证据字段，并生成“来源—Claim—事件—公司／实体—报告”关系索引和高价值来源引用卡。Vault 只保存原文定位信息。当前生产原始快照留在仓库；配置 `.evidence-backup.json` 后，原文会按 `content_hash` 另行去重备份到仓库与 Vault 之外的私有证据仓。
+同步会为全部已发布知识资产写入证据字段，并生成“来源—Claim—事件—公司／实体—报告”关系索引和高价值来源引用卡。Vault 只保存原文定位信息。完整原文仅保存在仓库与 Vault 之外的 `PRIVATE-EVIDENCE-STORE-V2.0` 私有证据仓；公开工程仓只保留哈希、来源元数据、Claim、必要摘录和定位符。
 
 `local-sync-from-main.ps1` 在本地 `main` 快进后自动刷新新 Vault。GitHub Actions 不访问本机 Vault。
 
 ## Production Boundary
 
-- Canonical JSON、JSONL、DuckDB、原始快照、代码、测试、工作流和运行报告留在仓库。
+- Canonical JSON、JSONL、DuckDB、代码、测试、工作流和运行报告留在公开工程仓；完整原文只留在私有证据仓。
 - 正式行业报告的仓库源位于 `01-SiteV2/content/12-applications/industry-reports/`；网站生成器只读该路径。
 - 新 Vault 是仓库当前事实和应用资产的单向本地投影，是日常运营入口，但不是 Git 或生产数据源。
 - 已退役知识库只从明确的 Git ref 在隔离工作树中恢复，不得重新写入当前生产路径。

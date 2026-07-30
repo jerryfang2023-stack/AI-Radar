@@ -1,0 +1,56 @@
+[
+  {
+    "funnel_id": "LF-6e8dc08b48aacd78",
+    "lens": "fde",
+    "date": "2026-07-11",
+    "monitoring_paths": [
+      "fde_implementation"
+    ],
+    "raw_documents": 28,
+    "original_sources": 24,
+    "valid_claims": 6,
+    "observations": 0,
+    "canonical_events": 2,
+    "blocker_counts": {
+      "no_source_bounded_claim": 1,
+      "no_source_bounded_event": 13,
+      "event_not_ai_relevant": 2,
+      "repository_page_requires_release_source": 3,
+      "non_event_or_index_title": 1,
+      "directory_page_not_event_source": 1,
+      "community_source_requires_original_event_source": 1,
+      "raw_source_quality_block": 4
+    },
+    "rates": {
+      "original_source_rate": 0.8571428571428571,
+      "valid_claim_rate": 0.21428571428571427,
+      "observation_rate": 0,
+      "event_conversion_rate": 0.3333333333333333
+    }
+  },
+  {
+    "funnel_id": "LF-be2dd6c098711401",
+    "lens": "hardware",
+    "date": "2026-07-11",
+    "monitoring_paths": [
+      "ai_hardware_original"
+    ],
+    "raw_documents": 8,
+    "original_sources": 5,
+    "valid_claims": 1,
+    "observations": 2,
+    "canonical_events": 1,
+    "blocker_counts": {
+      "question_headline_not_event_specific": 1,
+      "no_source_bounded_event": 2,
+      "raw_document_not_auditable": 2,
+      "raw_source_quality_block": 1
+    },
+    "rates": {
+      "original_source_rate": 0.625,
+      "valid_claim_rate": 0.125,
+      "observation_rate": 1,
+      "event_conversion_rate": 1
+    }
+  }
+]

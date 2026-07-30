@@ -33,10 +33,25 @@ jobs:
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
       DEEPSEEK_PRO_MODEL: deepseek-v4-pro
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ runner.temp }}/WaveSight-private-evidence
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Check out authoritative private evidence store
+        env:
+          PRIVATE_EVIDENCE_SSH_KEY: ${{ secrets.PRIVATE_EVIDENCE_SSH_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$PRIVATE_EVIDENCE_SSH_KEY"
+          mkdir -p "$HOME/.ssh"
+          printf '%s\n' "$PRIVATE_EVIDENCE_SSH_KEY" > "$HOME/.ssh/wavesight_private_evidence"
+          chmod 600 "$HOME/.ssh/wavesight_private_evidence"
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/wavesight_private_evidence -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+          git clone --depth=1 git@github.com:jerryfang2023-stack/WaveSight-private-evidence.git "$GUANLAN_EVIDENCE_BACKUP_ROOT"
+          echo "GIT_SSH_COMMAND=$GIT_SSH_COMMAND" >> "$GITHUB_ENV"
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
@@ -46,6 +61,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Assert private evidence remote boundary
+        run: npm run assert:private-evidence-remote
 
       - name: Resolve run date
         id: run-date
@@ -139,9 +157,21 @@ jobs:
             --stage=post-monitor \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-post-monitor-gate.log"
 
+      - name: Copy originals to the private store and enforce the public boundary
+        id: evidence-boundary
+        if: steps.monitor.outcome == 'success' && steps.production-chain-post-monitor.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run assert:private-evidence-remote
+          npm run backup:private-evidence
+          npm run migrate:private-evidence
+          npm run assert:private-evidence-backup
+          npm run assert:public-evidence-boundary
+
       - name: Build Data Center V4 factual bundle
         id: data-center-v4
-        if: steps.monitor.outcome == 'success' && steps.production-chain-post-monitor.outcome == 'success'
+        if: steps.monitor.outcome == 'success' && steps.production-chain-post-monitor.outcome == 'success' && steps.evidence-boundary.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -259,7 +289,7 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-downstream-assets-stale.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.json
-            01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
+            01-SiteV2/content/01-raw/source-index.jsonl
             01-SiteV2/content/11-databases/data-center-v4/intake-v1/${{ steps.run-date.outputs.date }}.json
             01-SiteV2/content/11-databases/data-center-v4/${{ steps.run-date.outputs.date }}/**
             data-lake/manifest.json

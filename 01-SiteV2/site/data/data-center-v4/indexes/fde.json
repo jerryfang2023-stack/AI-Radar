@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "fde": [
@@ -195,7 +195,7 @@
       "title": "Sheba Medical Center 与 OpenAI 合作，首次在国际部署医疗版 ChatGPT",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "Sheba Medical Center",
+      "customer": "OpenAI",
       "vendor": "Sheba Medical Center",
       "industry": "Healthcare",
       "useCase": "OpenAI in First International ChatGPT for Healthcare Deployment",
@@ -1267,8 +1267,8 @@
       "title": "Lyft 与 Drive.ai 合作在湾区开展自动驾驶网约车试点",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "Lyft",
-      "vendor": "Drive.ai",
+      "customer": "未披露",
+      "vendor": "Lyft",
       "industry": "Ride-hailing",
       "useCase": "Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot",
       "reportedNeed": "未披露",
@@ -1276,6 +1276,7 @@
       "outcomes": [],
       "metrics": [],
       "undisclosedFields": [
+        "customer",
         "workflow_before",
         "workflow_after",
         "delivery_model",
@@ -1715,8 +1716,7 @@
       "entityIds": [
         "EN-f4bec299df3f4f27",
         "EN-373ac021a2c0bb2c",
-        "EN-c13e2f4a44bb01ed",
-        "EN-2a920347dfcf07a7"
+        "EN-c13e2f4a44bb01ed"
       ]
     },
     {
@@ -4282,6 +4282,384 @@
       "entityIds": [
         "EN-8652f6cd9088f1fa",
         "EN-c04bd5ebd10ab696"
+      ]
+    },
+    {
+      "id": "FDED-dab7d48af097ebe1",
+      "implementationKey": "dab7d48af097ebe1",
+      "eventId": "EV-57944eebac69d510",
+      "eventIds": [
+        "EV-57944eebac69d510"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Databricks × Databricks：Engineering Practice",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Databricks",
+      "vendor": "Databricks",
+      "industry": "未披露",
+      "useCase": "Engineering Practice",
+      "workflow": "未披露",
+      "systems": [
+        "Google Cloud"
+      ],
+      "outcomes": [
+        "Bengaluru/ San Jose, July 27 &mdash; Tredence, the world's leading data & AI services company, today announced the launch of its Forward Deployed Engineering (FDE) practice, committing to build a dedicated pool of 200 FDEs over the next 12-18 months. Through this practice, the company intends to build the most domain-native engineering capability in the market, helping clients move faster from problem to impact.",
+        "Enterprise AI often struggles at the last mile, where data, systems, and business decisions must come together to create measurable value. Tredence's Forward Deployed Engineers combine speed, powered by deep AI, data, and engineering expertise, with depth, built through years of domain experience, to turn AI into business outcomes faster."
+      ],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "industry",
+        "workflow"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-953a6d4a9fe98116",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-07-29",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-57944eebac69d510",
+          "eventTitle": "Tredence 推出前向部署工程实践",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://tredence.com/news/tredence-launches-domain-native-forward-deployed-engineering-to-close-the-last-mile-of-enterprise-ai",
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
+    {
+      "id": "FDED-207e5baf3b35bb0b",
+      "implementationKey": "207e5baf3b35bb0b",
+      "eventId": "EV-6cea35f065f0ee9e",
+      "eventIds": [
+        "EV-6cea35f065f0ee9e"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "title": "OpenAI × Sheba Medical Center：OpenAI in First International ChatGPT for Healthcare Deployment",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "OpenAI",
+      "vendor": "Sheba Medical Center",
+      "industry": "Healthcare",
+      "useCase": "OpenAI in First International ChatGPT for Healthcare Deployment",
+      "workflow": "To solve workflow fragmentation and build the operational infrastructure for a fully AI-powered hospital, Sheba Medical Center has announced a collaboration with OpenAI . Driven by the ARC (Accelerate, Redesign, Collaborate) innovation arm , the agreement marks OpenAI’s first international deployment of ChatGPT for Healthcare across a complete hospital network.",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.875,
+      "completenessPercent": 88,
+      "missingFields": [
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-b90a97f0aa7674d9",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-07-28",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-6cea35f065f0ee9e",
+          "eventTitle": "Sheba Medical Center 与 OpenAI 合作，首次在国际部署医疗版 ChatGPT",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://hitconsultant.net/2026/07/28/sheba-medical-center-openai-chatgpt-for-healthcare-deployment",
+      "entityIds": [
+        "EN-2f4f5c040cf915b8",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDED-94d1eb9e8c638b41",
+      "implementationKey": "94d1eb9e8c638b41",
+      "eventId": "EV-dda9429d76897a3d",
+      "eventIds": [
+        "EV-dda9429d76897a3d"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "title": "未披露 × PrismML：1-Bit Bonsai-27B 模型",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "PrismML",
+      "industry": "未披露",
+      "useCase": "1-Bit Bonsai-27B 模型",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-42489994df326f36",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-07-28",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-dda9429d76897a3d",
+          "eventTitle": "使用 PrismML llama.cpp 部署 1-Bit Bonsai-27B 模型",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/28/deploying-a-1-bit-bonsai-27b-model-with-prismml-llama-cpp-and-openai-compatible-local-inference-workflows",
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "FDED-95ce4f60536fed3b",
+      "implementationKey": "95ce4f60536fed3b",
+      "eventId": "EV-ad8e1754463695fd",
+      "eventIds": [
+        "EV-ad8e1754463695fd"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "title": "未披露 × AMD：锁定最高 2.5GW AI 数据中心算力资源",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "AMD",
+      "industry": "未披露",
+      "useCase": "锁定最高 2.5GW AI 数据中心算力资源",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-7c1f2c701cdf9e2e",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-07-28",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-ad8e1754463695fd",
+          "eventTitle": "AMD 与 Core Scientific 达成合作，锁定最高 2.5GW AI 数据中心算力资源",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/982/773.htm",
+      "entityIds": [
+        "EN-240389f4b730bad4"
+      ]
+    },
+    {
+      "id": "FDED-2bf316a01ded8f42",
+      "implementationKey": "2bf316a01ded8f42",
+      "eventId": "EV-6048ddbf55f372ea",
+      "eventIds": [
+        "EV-6048ddbf55f372ea"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-27",
+      "title": "未披露 × 未披露：Engineering to Close the Last Mile of Enterprise AI",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Engineering to Close the Last Mile of Enterprise AI",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [
+        "BENGALURU, India and SAN JOSE, Calif., July 27, 2026 /PRNewswire/ -- Tredence, the world's leading data & AI services company, today announced the launch of its Forward Deployed Engineering (FDE) practice, committing to build a dedicated pool of 200 FDEs over the next 12-18 months. Through this practice, the company intends to build the most domain-native engineering capability in the market, helping clients move faster from problem to impact.",
+        "Enterprise AI often struggles at the last mile, where data, systems, and business decisions must come together to create measurable value. Tredence's Forward Deployed Engineers combine speed, powered by deep AI, data, and engineering expertise, with depth, built through years of domain experience, to turn AI into business outcomes faster."
+      ],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0afb12c4ad4f291a",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-07-27",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-6048ddbf55f372ea",
+          "eventTitle": "Tredence 推出领域原生前向部署工程，弥合企业AI的最后一公里",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://au.finance.yahoo.com/news/tredence-launches-domain-native-forward-063000125.html",
+      "entityIds": []
+    },
+    {
+      "id": "FDED-a8205a9fb725cadf",
+      "implementationKey": "a8205a9fb725cadf",
+      "eventId": "EV-8fcb52bb6ec980af",
+      "eventIds": [
+        "EV-8fcb52bb6ec980af"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-05-27",
+      "title": "未披露 × FuriosaAI：Broadcom to build next-generation inference platform for the Agentic Era",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "未披露",
+      "vendor": "FuriosaAI",
+      "industry": "未披露",
+      "useCase": "Broadcom to build next-generation inference platform for the Agentic Era",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-1b63eefb4faaf66e",
+          "type": "production_rollout",
+          "stage": "production",
+          "date": "2026-05-27",
+          "dataDate": "2026-07-15",
+          "eventId": "EV-8fcb52bb6ec980af",
+          "eventTitle": "FuriosaAI与博通合作，为代理时代构建下一代推理平台",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://furiosa.ai/blog/furiosaai-partners-with-broadcom-to-build-next-generation-inference-platform-for-the-agentic-era",
+      "entityIds": [
+        "EN-f4bec299df3f4f27",
+        "EN-373ac021a2c0bb2c",
+        "EN-c13e2f4a44bb01ed"
+      ]
+    },
+    {
+      "id": "FDED-904a6930c6ab0898",
+      "implementationKey": "904a6930c6ab0898",
+      "eventId": "EV-01df8e489a34893b",
+      "eventIds": [
+        "EV-01df8e489a34893b"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-05-06",
+      "title": "ServiceNow × 未披露：engineering program to scale agentic AI across the enterprise",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "ServiceNow",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "engineering program to scale agentic AI across the enterprise",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0ebc6ee2b900b46e",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-05-06",
+          "dataDate": "2026-07-15",
+          "eventId": "EV-01df8e489a34893b",
+          "eventTitle": "ServiceNow 与埃森哲推出前沿部署工程计划，规模化企业级 AI 智能体应用",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202605061300BIZWIRE_USPRX____20260506_BW338822-1",
+      "entityIds": [
+        "EN-b5738c169b693bee",
+        "EN-4d748ebd71af03a7"
       ]
     }
   ],

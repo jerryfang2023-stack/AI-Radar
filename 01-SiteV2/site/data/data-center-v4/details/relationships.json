@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "relationships": [
@@ -4436,69 +4436,6 @@
       }
     },
     {
-      "relationship_id": "REL2-da73f00159d1a794",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-ca95aeb01df069e5",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-b076867237fbeb34",
-      "object_type": "entity",
-      "event_id": "EV-b20bf10af759bd43",
-      "claim_refs": [
-        "CL-b3d90d07f2887208",
-        "CL-28867b44009cc25a",
-        "CL-448a762071f9b2e5"
-      ],
-      "source_refs": [
-        "SA-251416540fd3f08b"
-      ],
-      "data_date": "2026-07-20",
-      "status": "verified",
-      "subjectName": "OpenBMB",
-      "objectName": "MiniCPM5-1B",
-      "predicateLabel": "发布",
-      "title": "OpenBMB 发布 MiniCPM5-1B",
-      "eventTitle": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，推出 657MB 本地推理模型",
-      "eventDate": "2026-07-20",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-b3d90d07f2887208",
-          "subject": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，",
-          "object": "The model is built on openbmb/MiniCPM5-1B . That base is a real, documented release from OpenBMB . It is a dense 1.08B-parameter model using a standard LlamaForCausalLM architecture. It has 24 layers, grouped-query attention, and a 131,072-token context length. OpenBMB reports 1B-class open-source SOTA within its own comparison set.",
-          "quote": "The model is built on openbmb/MiniCPM5-1B . That base is a real, documented release from OpenBMB . It is a dense 1.08B-parameter model using a standard LlamaForCausalLM architecture. It has 24 layers, grouped-query attention, and a 131,072-token context length. OpenBMB reports 1B-class open-source SOTA within its own comparison set."
-        },
-        {
-          "id": "CL-28867b44009cc25a",
-          "subject": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，",
-          "object": "The base already ships a native thinking template. Reasoning is toggled through enable_thinking , giving both a Think and a No Think mode. The derivative model keeps that template and MiniCPM5’s tool-call format.",
-          "quote": "The base already ships a native thinking template. Reasoning is toggled through enable_thinking , giving both a Think and a No Think mode. The derivative model keeps that template and MiniCPM5’s tool-call format."
-        },
-        {
-          "id": "CL-448a762071f9b2e5",
-          "subject": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，",
-          "object": "A community developer, GnLOLot , has published a 1B model that runs fully on local hardware. The model is MiniCPM5-1B-Claude-Opus-Fable5-Thinking , with GGUF builds for llama.cpp-compatible runtimes. It needs no API key and makes no cloud calls.",
-          "quote": "A community developer, GnLOLot , has published a 1B model that runs fully on local hardware. The model is MiniCPM5-1B-Claude-Opus-Fable5-Thinking , with GGUF builds for llama.cpp-compatible runtimes. It needs no API key and makes no cloud calls."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-251416540fd3f08b",
-          "publisher": "MarkTechPost（RSS）",
-          "url": "https://marktechpost.com/2026/07/19/someone-fine-tuned-openbmbs-minicpm5-1b-on-claude-fable-5-traces-to-ship-a-657mb-local-thinking-model"
-        }
-      ],
-      "sourceExcerpt": "The model is built on openbmb/MiniCPM5-1B . That base is a real, documented release from OpenBMB . It is a dense 1.08B-parameter model using a standard LlamaForCausalLM architecture. It has 24 layers, grouped-query attention, and a 131,072-token context length. OpenBMB reports 1B-class open-source SOTA within its own comparison set.",
-      "event": {
-        "id": "EV-b20bf10af759bd43",
-        "title": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，推出 657MB 本地推理模型",
-        "originalTitle": "",
-        "date": "2026-07-20",
-        "dataDate": "2026-07-20",
-        "eventTypeLabel": "模型发布"
-      }
-    },
-    {
       "relationship_id": "REL2-f54ed840f69a1dcb",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-b81c8201acfc7639",
@@ -4559,6 +4496,69 @@
         "date": "2026-07-20",
         "dataDate": "2026-07-20",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-fcb80c4c942a3a29",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-ca95aeb01df069e5",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-b076867237fbeb34",
+      "object_type": "entity",
+      "event_id": "EV-124845780a32bc40",
+      "claim_refs": [
+        "CL-b3d90d07f2887208",
+        "CL-28867b44009cc25a",
+        "CL-448a762071f9b2e5"
+      ],
+      "source_refs": [
+        "SA-251416540fd3f08b"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified",
+      "subjectName": "OpenBMB",
+      "objectName": "MiniCPM5-1B",
+      "predicateLabel": "发布",
+      "title": "OpenBMB 发布 MiniCPM5-1B",
+      "eventTitle": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，推出 657MB 本地推理模型",
+      "eventDate": "2026-07-20",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b3d90d07f2887208",
+          "subject": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，",
+          "object": "The model is built on openbmb/MiniCPM5-1B . That base is a real, documented release from OpenBMB . It is a dense 1.08B-parameter model using a standard LlamaForCausalLM architecture. It has 24 layers, grouped-query attention, and a 131,072-token context length. OpenBMB reports 1B-class open-source SOTA within its own comparison set.",
+          "quote": "The model is built on openbmb/MiniCPM5-1B . That base is a real, documented release from OpenBMB . It is a dense 1.08B-parameter model using a standard LlamaForCausalLM architecture. It has 24 layers, grouped-query attention, and a 131,072-token context length. OpenBMB reports 1B-class open-source SOTA within its own comparison set."
+        },
+        {
+          "id": "CL-28867b44009cc25a",
+          "subject": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，",
+          "object": "The base already ships a native thinking template. Reasoning is toggled through enable_thinking , giving both a Think and a No Think mode. The derivative model keeps that template and MiniCPM5’s tool-call format.",
+          "quote": "The base already ships a native thinking template. Reasoning is toggled through enable_thinking , giving both a Think and a No Think mode. The derivative model keeps that template and MiniCPM5’s tool-call format."
+        },
+        {
+          "id": "CL-448a762071f9b2e5",
+          "subject": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，",
+          "object": "A community developer, GnLOLot , has published a 1B model that runs fully on local hardware. The model is MiniCPM5-1B-Claude-Opus-Fable5-Thinking , with GGUF builds for llama.cpp-compatible runtimes. It needs no API key and makes no cloud calls.",
+          "quote": "A community developer, GnLOLot , has published a 1B model that runs fully on local hardware. The model is MiniCPM5-1B-Claude-Opus-Fable5-Thinking , with GGUF builds for llama.cpp-compatible runtimes. It needs no API key and makes no cloud calls."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-251416540fd3f08b",
+          "publisher": "MarkTechPost（RSS）",
+          "url": "https://marktechpost.com/2026/07/19/someone-fine-tuned-openbmbs-minicpm5-1b-on-claude-fable-5-traces-to-ship-a-657mb-local-thinking-model"
+        }
+      ],
+      "sourceExcerpt": "The model is built on openbmb/MiniCPM5-1B . That base is a real, documented release from OpenBMB . It is a dense 1.08B-parameter model using a standard LlamaForCausalLM architecture. It has 24 layers, grouped-query attention, and a 131,072-token context length. OpenBMB reports 1B-class open-source SOTA within its own comparison set.",
+      "event": {
+        "id": "EV-124845780a32bc40",
+        "title": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，推出 657MB 本地推理模型",
+        "originalTitle": "",
+        "date": "2026-07-20",
+        "dataDate": "2026-07-20",
+        "eventTypeLabel": "模型发布"
       }
     },
     {

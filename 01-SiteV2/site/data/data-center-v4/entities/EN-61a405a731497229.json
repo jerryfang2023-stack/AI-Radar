@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -186,7 +186,6 @@
         "EN-4b078b39d2fcacc7",
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
-        "EN-047364b9be67f665",
         "EN-1d79127e9d90e89b",
         "EN-bc77259c5d2eb341",
         "EN-52fc33ae4d101a5d",
@@ -284,5 +283,120 @@
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-dd5f617ef36258ae",
+      "snapshotKey": "dd5f617ef36258ae",
+      "snapshotId": "HWS-d31e74740359648b",
+      "eventId": "EV-a5efa57f3f744425",
+      "eventIds": [
+        "EV-a5efa57f3f744425"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "MiniCPM5-2B",
+      "subject": "面壁智能",
+      "productNames": [
+        "MiniCPM5-2B"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-59b4016918d24007"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a12c65a0b4a2e547"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-a12c65a0b4a2e547",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-19T13:40:52.000Z",
+          "subject_entity_id": "EN-3309b3b14807f39a",
+          "subject_name": "面壁智能",
+          "product_entity_ids": [
+            "EN-61a405a731497229"
+          ],
+          "product_names": [
+            "MiniCPM5-2B"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "官方表示， 在不久的将来，MiniCPM5-2B 将正式开源 ，开发者可通过 Hugging Face、魔搭等平台获取模型权重，同时可获取针对各芯片平台的适配镜像与部署指南。",
+          "event_refs": [
+            "EV-a5efa57f3f744425"
+          ],
+          "claim_ref": "CL-0ed1fe63ba15c030",
+          "source_refs": [
+            "SA-7d10310c2b856ddd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-59b4016918d24007",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T13:40:52.000Z",
+          "subject_entity_id": "EN-3309b3b14807f39a",
+          "subject_name": "面壁智能",
+          "product_entity_ids": [
+            "EN-61a405a731497229"
+          ],
+          "product_names": [
+            "MiniCPM5-2B"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，面壁智能今日联合 OpenBMB 在 2026 世界人工智能大会上发布了最新端侧模型 MiniCPM5-2B ，并完成多款芯片适配。",
+          "event_refs": [
+            "EV-a5efa57f3f744425"
+          ],
+          "claim_ref": "CL-f2fa513ae091829e",
+          "source_refs": [
+            "SA-7d10310c2b856ddd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/796.htm",
+      "entityIds": [
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229"
+      ]
+    }
+  ]
 }

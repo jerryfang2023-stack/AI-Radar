@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { readSourceIntake } from "./lib/source-intake-v1.mjs";
+import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -157,12 +158,18 @@ function structuredIntakeItems(intake = null) {
   return intake.payload.raw_documents.map((document) => {
     const diagnostics = document.intake_diagnostics || {};
     const bodyFile = path.resolve(root, document.body_ref || "");
-    const rawRecord = bodyFile.startsWith(`${path.resolve(root)}${path.sep}`)
+    const privateEvidence = loadPrivateEvidenceRecord(
+      root,
+      document.body_ref,
+      document.content_hash,
+      { required: false },
+    );
+    const rawRecord = bodyFile.startsWith(`${path.resolve(root)}${path.sep}`) && fs.existsSync(bodyFile)
       ? readJson(bodyFile, {})
-      : {};
+      : privateEvidence?.raw || {};
     return {
       title: document.title_original || document.title_zh || "",
-      routes: Array.isArray(diagnostics.pool_routes) ? diagnostics.pool_routes : [],
+      routes: Array.isArray(rawRecord.pool_routes) ? rawRecord.pool_routes : [],
       sourceName: document.publisher || "",
       sourceUrl: document.source_url || "",
       acquisitionChannel: diagnostics.acquisition_channel || "",
@@ -366,7 +373,7 @@ export function runGuanlanMonitorQualityGate({
   const logBullets = parseBulletMap(logText);
 
   const rawCount = Number(structuredIntake?.payload?.counts?.raw_documents || 0);
-  const poolCount = Number(structuredIntake?.payload?.counts?.pooled_documents || 0);
+  const poolCount = Number(structuredIntake?.payload?.counts?.eligible_documents || 0);
 
   const intakeItems = structuredIntakeItems(structuredIntake);
   const rawTitles = intakeItems.map((item) => item.title).filter(Boolean);

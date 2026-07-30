@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -59,7 +59,8 @@
         "entityIds": [
           "EN-8d4321d936320802",
           "EN-7d3194f79e645c42",
-          "EN-683d8d597da71192"
+          "EN-683d8d597da71192",
+          "EN-65131db63b4f633f"
         ]
       }
     ],
@@ -219,8 +220,6 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -229,6 +228,7 @@
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -242,6 +242,7 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
         "TX-technology-speech_audio",
         "TX-technology-distillation",
         "TX-technology-image_generation",
@@ -330,7 +331,85 @@
         "EN-7d3194f79e645c42",
         "EN-683d8d597da71192",
         "EN-9e72fd4472222231",
-        "EN-1e71d9c1a5c4de16"
+        "EN-65131db63b4f633f"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-0bb3993ac44d251b",
+      "snapshotKey": "0bb3993ac44d251b",
+      "snapshotId": "HWS-cb17241ee6299aeb",
+      "eventId": "EV-02b19ffbe883ee2e",
+      "eventIds": [
+        "EV-02b19ffbe883ee2e"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "AI Processing Chip / Set / It Plans",
+      "subject": "NVIDIA",
+      "productNames": [
+        "AI Processing Chip",
+        "Set",
+        "It Plans"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8ae99c92df5c7778"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-8ae99c92df5c7778",
+          "fact_type": "product",
+          "observed_at": "2026-03-13T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-683d8d597da71192",
+            "EN-9e72fd4472222231",
+            "EN-65131db63b4f633f"
+          ],
+          "product_names": [
+            "AI Processing Chip",
+            "Set",
+            "It Plans"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia Set to Enter Next Phase as It Plans to Launch New AI Processing Chip, WSJ Reports",
+          "event_refs": [
+            "EV-02b19ffbe883ee2e"
+          ],
+          "claim_ref": "CL-f255de03bcf06a3c",
+          "source_refs": [
+            "SA-7474f2d741d25276"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
+        "EN-65131db63b4f633f"
       ]
     }
   ]

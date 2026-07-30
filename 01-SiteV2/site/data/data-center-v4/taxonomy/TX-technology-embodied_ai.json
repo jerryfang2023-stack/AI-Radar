@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -1117,7 +1117,10 @@
       "subject": "爱芯元智",
       "action": "发布",
       "object": "元曦系列大算力产品，A 系列AI推理卡算力超1000TOPS",
-      "metrics": [],
+      "metrics": [
+        "1000TOPS",
+        "1500TOPS"
+      ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -3002,7 +3005,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -3013,6 +3015,7 @@
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3203,8 +3206,6 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -3213,6 +3214,7 @@
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -3226,6 +3228,7 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
         "TX-technology-speech_audio",
         "TX-technology-distillation",
         "TX-technology-image_generation",
@@ -3392,13 +3395,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-human_in_loop",
         "TX-use_case-robotics_automation",
         "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-embodied_ai",
-        "TX-technology-open_weights"
+        "TX-technology-open_weights",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-45c52af0feb0f285",
@@ -3531,7 +3534,6 @@
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
         "EV-4f36e494d9281522",
-        "EV-b20bf10af759bd43",
         "EV-83a8ac8a2554b60c",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
@@ -3542,9 +3544,7 @@
         "EV-d9da7dea91725a1c",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
-        "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
-        "EV-5cd7eaa56c1fbb83",
         "EV-712473b23a2a11a0",
         "EV-2bd337245c920bc8",
         "EV-302018f2e960a8bf",
@@ -3552,7 +3552,6 @@
         "EV-969ed3078d10f0c9",
         "EV-b920999c64aa9ef6",
         "EV-730a2f95a698a96d",
-        "EV-d39b53ca7b84b9ca",
         "EV-cf317dd1579a01bb",
         "EV-fcbd97e1f30c95e3",
         "EV-ee9a1c99fe7054d6",
@@ -3709,8 +3708,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
@@ -3719,6 +3716,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -3732,6 +3730,7 @@
         "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-industry-education"
       ],
@@ -3867,8 +3866,6 @@
         "EV-02882e6f5e1902c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
-        "EV-2dff32c1b6f813e4",
-        "EV-305ec93673f4f12e",
         "EV-640c5ea9f4fa2780",
         "EV-6e516b6e68def9cf",
         "EV-86ca5af11ee4d275",
@@ -3947,8 +3944,6 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
-        "EV-30749250196dd507",
-        "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
         "EV-57565fc2e7502c59",
@@ -3961,7 +3956,6 @@
         "EV-3a7128e2d7ff149e",
         "EV-40390136762c64d3",
         "EV-53f881da31630a04",
-        "EV-b84035029a63e52e",
         "EV-dfbc2f02003c7595",
         "EV-0edb0a592ca1fd67",
         "EV-578a9db1fe952d0a",
@@ -3994,9 +3988,6 @@
         "EV-34929bdd016dc8d6",
         "EV-0fd8bb718db1118c",
         "EV-067f57f6e6ffa6ce",
-        "EV-02b07069713d9a1c",
-        "EV-8cb2374f76202ecc",
-        "EV-946569cccbd9222f",
         "EV-edb1ddb3a091ada4",
         "EV-022d1f3160d94048",
         "EV-9705a8de3c2e9653",
@@ -4009,7 +4000,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -4020,6 +4010,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
         "TX-industry-professional_services",
@@ -4027,7 +4018,6 @@
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
@@ -4448,8 +4438,6 @@
         "EV-fd8ecce5de2f667d",
         "EV-f6ac2938949f74ec",
         "EV-363fe72da52bdb86",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-8b9e4428074bde60",
         "EV-83c841a4c42cfdea",
         "EV-3167e6eed75597e9",
         "EV-ad2e4fe6a149d95d",
@@ -4478,15 +4466,13 @@
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
-        "TX-technology-long_context",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-speech_audio",
-        "TX-technology-image_generation",
-        "TX-technology-quantization"
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
@@ -4874,14 +4860,11 @@
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
         "EV-d709599eddf5db04",
-        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
-        "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
-        "EV-8cb2374f76202ecc",
         "EV-946569cccbd9222f",
         "EV-917966af8545a380",
         "EV-b4203b10d6592bf2",
@@ -4918,8 +4901,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -4931,6 +4912,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -4943,7 +4925,8 @@
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-reasoning"
+        "TX-technology-reasoning",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-d1ad14d4ad57d207",
@@ -5281,6 +5264,82 @@
       "entityIds": [
         "EN-89e3f0711b76932c",
         "EN-e9830c30bc572802"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-dacb904da83c2957",
+      "snapshotKey": "dacb904da83c2957",
+      "snapshotId": "HWS-af6ccbe6deb3d227",
+      "eventId": "EV-4cb7e4c371fb252e",
+      "eventIds": [
+        "EV-4cb7e4c371fb252e"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "NIO",
+      "subject": "NIO",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-65e3e1febac062a4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-65e3e1febac062a4",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:02:55.000Z",
+          "subject_entity_id": "EN-e9b67bdfb6ae6a2e",
+          "subject_name": "NIO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "除了展出「神玑 NX9031」芯片和车载域控外，还在会展期间推出「睿动」具身智能开发平台、分布式智能体平台等 AI 新产品。",
+          "event_refs": [
+            "EV-4cb7e4c371fb252e"
+          ],
+          "claim_ref": "CL-0751adbc583d1d7d",
+          "source_refs": [
+            "SA-bf77e94665fe01e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/703.htm",
+      "entityIds": [
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9"
       ]
     }
   ]

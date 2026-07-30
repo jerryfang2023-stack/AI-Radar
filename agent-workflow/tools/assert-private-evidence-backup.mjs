@@ -27,11 +27,14 @@ if (isInside(root, backupRoot) || isInside(vaultRoot, backupRoot)) {
 let manifest = {};
 try {
   manifest = JSON.parse(fs.readFileSync(path.join(backupRoot, "manifest.json"), "utf8"));
-  if (manifest.schemaVersion !== "PRIVATE-EVIDENCE-BACKUP-V1.0") {
-    problems.push("private evidence backup schema version is invalid");
+  if (manifest.schemaVersion !== "PRIVATE-EVIDENCE-STORE-V2.0") {
+    problems.push("private evidence store schema version is invalid");
   }
-  if (manifest.discoveryPolicy !== "backup_is_outside_repository_and_v4_discovery") {
-    problems.push("private evidence backup discovery policy is invalid");
+  if (manifest.sourcePolicy !== "private_store_is_authoritative") {
+    problems.push("private evidence store is not authoritative");
+  }
+  if (manifest.discoveryPolicy !== "private_store_is_outside_public_repository_and_v4_discovery") {
+    problems.push("private evidence store discovery policy is invalid");
   }
 } catch (error) {
   problems.push(`invalid private evidence backup manifest: ${error.message}`);
@@ -58,11 +61,6 @@ if (fs.existsSync(originalRoot)) {
 if (catalog.length !== manifest.snapshots) {
   problems.push(`catalog snapshot count mismatch: expected ${manifest.snapshots}, got ${catalog.length}`);
 }
-if (originalJsonFiles.length !== manifest.snapshots) {
-  problems.push(
-    `backup is stale: private store has ${originalJsonFiles.length} JSON snapshots, backup has ${manifest.snapshots}`,
-  );
-}
 if (historical.length !== manifest.nonProductionHistoricalSources) {
   problems.push(
     `historical migration count mismatch: expected ${manifest.nonProductionHistoricalSources}, got ${historical.length}`,
@@ -70,18 +68,26 @@ if (historical.length !== manifest.nonProductionHistoricalSources) {
 }
 
 const objectRefs = new Set();
+const recordRefs = new Set();
 const snapshotRefs = new Set();
 for (const line of catalog) {
   try {
     const entry = JSON.parse(line);
-    if (!entry.object_ref || !entry.content_hash) {
-      problems.push("private evidence catalog contains an entry without content_hash/object_ref");
+    if (!entry.object_ref || !entry.record_ref || !entry.content_hash || !entry.evidence_ref) {
+      problems.push("private evidence catalog contains an entry without content_hash/evidence_ref/object_ref/record_ref");
       continue;
     }
     objectRefs.add(entry.object_ref);
+    recordRefs.add(entry.record_ref);
     snapshotRefs.add(entry.snapshot_ref);
     if (entry.body_available && !fs.existsSync(path.join(backupRoot, entry.object_ref))) {
       problems.push(`private evidence object is missing: ${entry.object_ref}`);
+    }
+    const recordFile = path.join(backupRoot, entry.record_ref);
+    if (!fs.existsSync(recordFile)) {
+      problems.push(`private evidence metadata record is missing: ${entry.record_ref}`);
+    } else if (/"(?:body_clean|body_original|clean_text|full_text|markdown_snapshot)"\s*:/u.test(fs.readFileSync(recordFile, "utf8"))) {
+      problems.push(`private evidence metadata record embeds a full body: ${entry.record_ref}`);
     }
   } catch (error) {
     problems.push(`invalid private evidence catalog line: ${error.message}`);
@@ -93,6 +99,9 @@ if (snapshotRefs.size !== catalog.length) {
 if (objectRefs.size !== manifest.uniqueContents) {
   problems.push(`unique content count mismatch: expected ${manifest.uniqueContents}, got ${objectRefs.size}`);
 }
+if (recordRefs.size !== catalog.length) {
+  problems.push("private evidence catalog contains duplicate metadata record refs");
+}
 if (manifest.missingBodies !== 0) {
   problems.push(`private evidence backup has ${manifest.missingBodies} snapshot(s) without a body`);
 }
@@ -102,6 +111,7 @@ console.log(JSON.stringify({
   backupRoot,
   manifest,
   catalogEntries: catalog.length,
+  repositorySnapshotsWaitingForIngest: originalJsonFiles.length,
   historicalEntries: historical.length,
   problems,
 }, null, 2));

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -315,5 +315,120 @@
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-a69a19ffe8796885",
+      "snapshotKey": "a69a19ffe8796885",
+      "snapshotId": "HWS-4f9ce8922bd11dc4",
+      "eventId": "EV-f7b60c0c63403f8c",
+      "eventIds": [
+        "EV-f7b60c0c63403f8c"
+      ],
+      "dataDate": "2026-07-11",
+      "date": "2026-07-11",
+      "title": "Booster T2",
+      "subject": "加速进化",
+      "productNames": [
+        "Booster T2"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "fact_ref": "HWF-77eabea35e1e8f34"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-11",
+          "hardware_fact_id": "HWF-90ddff6f76b8199a",
+          "fact_type": "product",
+          "observed_at": "2026-07-10T12:49:35.000Z",
+          "subject_entity_id": "EN-de6b71bf77ff4299",
+          "subject_name": "加速进化",
+          "product_entity_ids": [
+            "EN-c4ef31845ea79710"
+          ],
+          "product_names": [
+            "Booster T2"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "source_quote": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力 - IT之家",
+          "event_refs": [
+            "EV-f7b60c0c63403f8c"
+          ],
+          "claim_ref": "CL-7044c3e5ee3cf9e0",
+          "source_refs": [
+            "SA-c09c2ef108e2cf71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-11",
+          "hardware_fact_id": "HWF-77eabea35e1e8f34",
+          "fact_type": "product",
+          "observed_at": "2026-07-10T12:49:35.000Z",
+          "subject_entity_id": "EN-de6b71bf77ff4299",
+          "subject_name": "加速进化",
+          "product_entity_ids": [
+            "EN-c4ef31845ea79710"
+          ],
+          "product_names": [
+            "Booster T2"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "source_quote": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+          "event_refs": [
+            "EV-f7b60c0c63403f8c"
+          ],
+          "claim_ref": "CL-f2bc8db4d7c0babc",
+          "source_refs": [
+            "SA-c09c2ef108e2cf71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-11/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "entityIds": [
+        "EN-de6b71bf77ff4299",
+        "EN-8d4321d936320802",
+        "EN-c4ef31845ea79710"
+      ]
+    }
+  ]
 }

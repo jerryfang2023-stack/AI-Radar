@@ -7,6 +7,7 @@ import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { eventAiRelevanceEvidence, forbiddenKeys, publicEventSourceTitleIssue } from "./build-data-center-v4.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
+import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -119,7 +120,7 @@ export function readBundle(date) {
   }));
 }
 
-export function evaluateBundle(bundle, taxonomy) {
+export function evaluateBundle(bundle, taxonomy, options = {}) {
   const failures = [];
   const warnings = [];
   failures.push(...validateSchema(bundle));
@@ -130,8 +131,10 @@ export function evaluateBundle(bundle, taxonomy) {
   failures.push(...duplicateIds(bundle.entity_mentions, "mention_id", "entity_mentions"));
   failures.push(...duplicateIds(bundle.canonical_events, "event_id", "canonical_events"));
   const sourceIds = new Set(bundle.source_artifacts.map((item) => item.source_artifact_id));
-  const rawById = new Map(bundle.raw_documents.map((item) => [item.raw_id, item]));
-  const rawBySourceId = new Map(bundle.raw_documents.map((item) => [item.source_artifact_id, item]));
+  const hydratedRawDocuments = options.hydratedRawDocuments
+    || bundle.raw_documents.map((item) => hydrateRawDocument(root, item, { required: false }));
+  const rawById = new Map(hydratedRawDocuments.map((item) => [item.raw_id, item]));
+  const rawBySourceId = new Map(hydratedRawDocuments.map((item) => [item.source_artifact_id, item]));
   const claimById = new Map(bundle.claims.map((item) => [item.claim_id, item]));
   const entityById = new Map(bundle.entities.map((item) => [item.entity_id, item]));
   const eventById = new Map(bundle.canonical_events.map((item) => [item.event_id, item]));
@@ -144,7 +147,7 @@ export function evaluateBundle(bundle, taxonomy) {
   failures.push(...taxonomyResult.failures.map((failure) => `taxonomy: ${failure}`));
 
   if (bundle.manifest.product_version !== "SITE-V4.0-data-center") failures.push("manifest product_version mismatch");
-  if (bundle.manifest.raw_version !== "RAW-V3.0") failures.push("manifest raw_version mismatch");
+  if (bundle.manifest.raw_version !== "RAW-V4.0") failures.push("manifest raw_version mismatch");
   if (bundle.manifest.event_version !== "EVENT-V1.1") failures.push("manifest event_version mismatch");
   if (bundle.manifest.fde_version !== "FDE-V2.0") failures.push("manifest fde_version mismatch");
   if (bundle.manifest.fde_observation_version !== "FDE-OBSERVATION-V1.0") failures.push("manifest fde_observation_version mismatch");
@@ -157,10 +160,12 @@ export function evaluateBundle(bundle, taxonomy) {
   const forbidden = forbiddenKeys(Object.fromEntries(Object.entries(bundle).filter(([name]) => name !== "manifest")));
   if (forbidden.length) failures.push(`forbidden judgment fields: ${forbidden.slice(0, 20).join(", ")}`);
 
-  for (const raw of bundle.raw_documents) {
+  for (const raw of hydratedRawDocuments) {
     if (!sourceIds.has(raw.source_artifact_id)) failures.push(`${raw.raw_id}: source_artifact_id does not resolve`);
     if (!raw.source_url && raw.extraction_status !== "quarantined") failures.push(`${raw.raw_id}: source_url missing`);
-    if (raw.extraction_status === "accepted" && raw.body_clean.length < 80) failures.push(`${raw.raw_id}: accepted body_clean too short`);
+    if (raw.extraction_status === "accepted" && String(raw.body_clean || "").length < 80) {
+      failures.push(`${raw.raw_id}: accepted private body is unavailable or too short`);
+    }
     for (const claimId of raw.claim_ids) if (!claimById.has(claimId)) failures.push(`${raw.raw_id}: claim ${claimId} does not resolve`);
   }
 
@@ -171,11 +176,12 @@ export function evaluateBundle(bundle, taxonomy) {
       continue;
     }
     const { start, end } = claim.source_span || {};
-    if (!Number.isInteger(start) || !Number.isInteger(end) || start < 0 || end <= start || end > raw.body_clean.length) {
+    const bodyClean = String(raw.body_clean || "");
+    if (!Number.isInteger(start) || !Number.isInteger(end) || start < 0 || end <= start || end > bodyClean.length) {
       failures.push(`${claim.claim_id}: invalid source span`);
       continue;
     }
-    if (normalize(raw.body_clean.slice(start, end)) !== normalize(claim.source_quote)) failures.push(`${claim.claim_id}: quote does not match body_clean span`);
+    if (normalize(bodyClean.slice(start, end)) !== normalize(claim.source_quote)) failures.push(`${claim.claim_id}: quote does not match private body span`);
     if (BOILERPLATE.test(claim.source_quote)) failures.push(`${claim.claim_id}: boilerplate entered a claim`);
     if (!claim.subject || !claim.predicate || !claim.object) failures.push(`${claim.claim_id}: subject/predicate/object incomplete`);
   }
@@ -335,6 +341,11 @@ export function evaluateBundleFiles(bundle, options = {}) {
   const workspaceRoot = path.resolve(options.workspaceRoot || root);
   const date = normalize(options.date || bundle?.manifest?.date);
   const rawRoot = path.join(workspaceRoot, "01-SiteV2/content/01-raw/originals", date);
+  const sourceIndexFile = path.join(workspaceRoot, "01-SiteV2/content/01-raw/source-index.jsonl");
+  const sourceIndex = fs.existsSync(sourceIndexFile)
+    ? fs.readFileSync(sourceIndexFile, "utf8").split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line))
+    : [];
+  const indexedEvidenceRefs = new Set(sourceIndex.map((entry) => normalize(entry.evidence_ref)).filter(Boolean));
   const failures = [];
   const warnings = [];
   const sourceUrls = new Set();
@@ -345,6 +356,13 @@ export function evaluateBundleFiles(bundle, options = {}) {
     const refs = Array.isArray(artifact.snapshot_refs) ? artifact.snapshot_refs.filter((value) => normalize(value)) : [];
     if (!refs.length) failures.push(`${artifact.source_artifact_id}: snapshot_refs missing`);
     for (const ref of refs) {
+      if (String(ref).startsWith("evidence://")) {
+        snapshotRefs.add(ref);
+        if (!indexedEvidenceRefs.has(normalize(ref))) {
+          failures.push(`${artifact.source_artifact_id}: private evidence locator is absent from the public index: ${ref}`);
+        }
+        continue;
+      }
       const resolved = resolveWorkspaceRef(workspaceRoot, ref);
       if (!resolved.ok) {
         failures.push(`${artifact.source_artifact_id}: snapshot_ref ${ref} is ${resolved.reason}`);
@@ -373,8 +391,6 @@ export function evaluateBundleFiles(bundle, options = {}) {
   const rawFiles = fs.existsSync(rawRoot)
     ? fs.readdirSync(rawRoot, { withFileTypes: true }).filter((entry) => entry.isFile() && entry.name.endsWith(".json")).map((entry) => path.join(rawRoot, entry.name)).sort()
     : [];
-  if (!fs.existsSync(rawRoot)) failures.push(`Raw snapshot directory does not exist: ${relativeWorkspacePath(workspaceRoot, rawRoot)}`);
-
   let representedRawSnapshots = 0;
   for (const file of rawFiles) {
     const relative = relativeWorkspacePath(workspaceRoot, file);
@@ -398,16 +414,26 @@ export function evaluateBundleFiles(bundle, options = {}) {
     failures.push(`${relative}: current Raw snapshot is not represented in the V4 bundle`);
   }
 
-  if (!rawFiles.length) warnings.push(`No Raw JSON snapshots found for ${date}.`);
+  if (!rawFiles.length) {
+    for (const raw of bundle.raw_documents || []) {
+      if (indexedEvidenceRefs.has(normalize(raw.body_ref))) representedRawSnapshots += 1;
+      else failures.push(`${raw.raw_id}: private body_ref is absent from the public evidence index`);
+    }
+  }
+  const effectiveRawCount = rawFiles.length || (bundle.raw_documents || []).length;
   return {
     ok: failures.length === 0,
     failures,
     warnings,
     metrics: {
-      current_raw_snapshot_count: rawFiles.length,
+      current_raw_snapshot_count: effectiveRawCount,
       represented_raw_snapshot_count: representedRawSnapshots,
-      current_raw_snapshot_coverage: rawFiles.length ? representedRawSnapshots / rawFiles.length : 1,
-      existing_snapshot_ref_count: [...snapshotRefs].filter((ref) => fs.existsSync(path.join(workspaceRoot, ref.replace(/\//gu, path.sep)))).length
+      current_raw_snapshot_coverage: effectiveRawCount ? representedRawSnapshots / effectiveRawCount : 1,
+      existing_snapshot_ref_count: [...snapshotRefs].filter((ref) => (
+        ref.startsWith("evidence://")
+          ? indexedEvidenceRefs.has(ref)
+          : fs.existsSync(path.join(workspaceRoot, ref.replace(/\//gu, path.sep)))
+      )).length
     }
   };
 }

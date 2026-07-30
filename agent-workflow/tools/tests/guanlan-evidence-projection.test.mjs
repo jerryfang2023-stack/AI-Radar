@@ -99,7 +99,7 @@ test("Guanlan evidence projection links assets to V4 evidence without copying or
   assert.match(asset, /evidence_claim_refs: \["CL-example"\]/u);
   assert.match(asset, /evidence_event_refs: \["EV-example"\]/u);
   assert.match(asset, /evidence_entity_refs: \["EN-example"\]/u);
-  assert.match(asset, /original_body_storage: repository_snapshot_plus_private_backup/u);
+  assert.match(asset, /original_body_storage: private_evidence_store_only/u);
   assert.match(asset, /\[\[60-知识资产\/来源引用\/SA-example--/u);
 
   const citationDir = path.join(vaultRoot, "60-知识资产/来源引用");

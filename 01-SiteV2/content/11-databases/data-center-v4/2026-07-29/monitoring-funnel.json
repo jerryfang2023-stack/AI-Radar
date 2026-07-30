@@ -1,0 +1,52 @@
+[
+  {
+    "funnel_id": "LF-5b4669d8d57f8766",
+    "lens": "fde",
+    "date": "2026-07-29",
+    "monitoring_paths": [
+      "fde_implementation"
+    ],
+    "raw_documents": 51,
+    "original_sources": 50,
+    "valid_claims": 48,
+    "observations": 5,
+    "canonical_events": 16,
+    "blocker_counts": {
+      "no_source_bounded_claim": 7,
+      "no_source_bounded_event": 15,
+      "event_not_ai_relevant": 1,
+      "multi_event_roundup_not_single_event_source": 1,
+      "non_event_or_index_title": 7,
+      "opinion_without_source_bounded_event": 2,
+      "raw_source_quality_block": 1
+    },
+    "rates": {
+      "original_source_rate": 0.9803921568627451,
+      "valid_claim_rate": 0.9411764705882353,
+      "observation_rate": 0.10416666666666667,
+      "event_conversion_rate": 0.3333333333333333
+    }
+  },
+  {
+    "funnel_id": "LF-568ecaf1cce3f31f",
+    "lens": "hardware",
+    "date": "2026-07-29",
+    "monitoring_paths": [
+      "ai_hardware_original"
+    ],
+    "raw_documents": 4,
+    "original_sources": 4,
+    "valid_claims": 4,
+    "observations": 4,
+    "canonical_events": 1,
+    "blocker_counts": {
+      "no_source_bounded_event": 3
+    },
+    "rates": {
+      "original_source_rate": 1,
+      "valid_claim_rate": 1,
+      "observation_rate": 1,
+      "event_conversion_rate": 0.25
+    }
+  }
+]

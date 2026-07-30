@@ -13,6 +13,7 @@ import {
   upsertSourceTitleTranslations,
 } from "./source-title-translation-generator.mjs";
 import { sourceSnapshotRefsByRawId } from "./lib/source-snapshot-ref-v1.mjs";
+import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
@@ -111,9 +112,10 @@ async function main() {
     if (selectedRawIds.size && !selectedRawIds.has(rawId)) continue;
     const relativePath = rawPathById.get(rawId);
     if (!relativePath) continue;
-    const file = path.join(root, relativePath);
+    const privateEvidence = loadPrivateEvidenceRecord(root, relativePath, "", { required: false });
+    const file = privateEvidence?.file || path.join(root, relativePath);
     if (!fs.existsSync(file)) continue;
-    const payload = readJson(file);
+    const payload = privateEvidence?.metadata || readJson(file);
     const storedSourceTitle = String(payload.title || payload.title_original || "").trim();
     const sourceTitle = sourceTitleFromCapturedPayload(payload);
     if (!sourceTitle) continue;
@@ -250,7 +252,7 @@ async function main() {
       writeJson(job.file, job.payload);
       rawJsonUpdated += 1;
     }
-    const markdownPath = job.payload.markdown_snapshot_path ? path.join(root, job.payload.markdown_snapshot_path) : "";
+    const markdownPath = "";
     if (updateRawMarkdown(markdownPath, result, job.sourceTitleRepaired ? job.sourceTitle : "")) rawMarkdownUpdated += 1;
   }
 

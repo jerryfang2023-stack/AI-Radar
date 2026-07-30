@@ -11,6 +11,7 @@ import {
   withGateResult,
   writeJson,
 } from "./model-assist-v1.mjs";
+import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
@@ -58,7 +59,8 @@ function candidateJobKey(date, candidate) {
 }
 
 function buildJobs(date) {
-  const raws = bundle(date, "raw-documents");
+  const raws = bundle(date, "raw-documents")
+    .map((raw) => hydrateRawDocument(root, raw, { required: false }));
   const claims = bundle(date, "claims");
   const events = bundle(date, "canonical-events");
   const fde = bundle(date, "fde-records");

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -21,7 +21,7 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-b20bf10af759bd43"
+      "EV-124845780a32bc40"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -31,14 +31,14 @@
     "firstSeen": "2026-07-20",
     "lastSeen": "2026-07-20",
     "relationIds": [
-      "REL2-da73f00159d1a794"
+      "REL2-fcb80c4c942a3a29"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-b20bf10af759bd43"
+        "EV-124845780a32bc40"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -46,7 +46,7 @@
     },
     "timeline": [
       {
-        "id": "EV-b20bf10af759bd43",
+        "id": "EV-124845780a32bc40",
         "dataDate": "2026-07-20",
         "date": "2026-07-20",
         "eventType": "model_release",
@@ -57,7 +57,6 @@
         "title": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，推出 657MB 本地推理模型",
         "displayTags": [],
         "entityIds": [
-          "EN-c70eca6b0f88f44d",
           "EN-ca95aeb01df069e5",
           "EN-b076867237fbeb34",
           "EN-3a13916345b60fad"
@@ -78,7 +77,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-b20bf10af759bd43"
+        "EV-124845780a32bc40"
       ],
       "viewpointIds": [],
       "classificationRefs": [],
@@ -91,14 +90,14 @@
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-da73f00159d1a794",
+      "relationship_id": "REL2-fcb80c4c942a3a29",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ca95aeb01df069e5",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-b076867237fbeb34",
       "object_type": "entity",
-      "event_id": "EV-b20bf10af759bd43",
+      "event_id": "EV-124845780a32bc40",
       "claim_refs": [
         "CL-b3d90d07f2887208",
         "CL-28867b44009cc25a",

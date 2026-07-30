@@ -3,7 +3,7 @@
 - generated_at: 2026-07-30T03:19:10.717Z
 - stage: pre-commit
 - status: passed
-- source_intake_version: SOURCE-INTAKE-V1.0
+- source_intake_version: SOURCE-INTAKE-V1.1
 - source_artifact_count: 179
 - raw_document_count: 179
 - pooled_document_count: 165

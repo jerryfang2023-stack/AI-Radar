@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is on the `V4.4.0-operations-converged` repository release. The public website remains on the `SITE-V4.3.0-compatibility-retired` shell and data-service baseline.
+WaveSight AI is on the `V4.5.0-private-evidence-source` repository release. The public website remains on the `SITE-V4.3.0-compatibility-retired` shell and data-service baseline.
 
 ## Current Positioning
 
@@ -20,13 +20,13 @@ WaveSight AI is on the `V4.4.0-operations-converged` repository release. The pub
 - The public frontstage uses the V4 Data Center / Application Center shell. V3 page routes are redirects only.
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
-- The current collection lane writes immutable source snapshots and `SOURCE-INTAKE-V1`. Card, trend, opportunity, and report objects are downstream application or frozen historical assets, not V4 truth assets.
+- The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.0-auto-published-research`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
-- Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
-- Current local knowledge-base version: `GUANLAN-VAULT-V1.1-evidence-linked`. The Guanlan AI Vault is physically independent from the repository; repository code, raw snapshots, canonical JSON, site data, and run reports stay outside the Vault.
+- Current data versions: `SOURCE-INTAKE-V1.1`, `RAW-V4.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
+- Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
 - Current data-lake contract: `DATA-LAKE-V4.0-23-table`; JSONL and DuckDB must expose exactly the same 23-table V4 allowlist.
-- Current private evidence backup: `PRIVATE-EVIDENCE-BACKUP-V1.0`; it deduplicates original bodies by `content_hash` outside the repository and Vault. Repository raw snapshots remain the current production input, while the Vault stores only evidence locators and links.
+- Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task.
 
 ## Current Entries

@@ -4,7 +4,7 @@
 版本：`SITE-V4.2.0-entity-history-prd-v1.3`
 日期：2026-07-16  
 适用范围：观澜内部只读网站的数据中心与应用中心  
-上游事实标准：`SITE-V4.0-data-center`、`RAW-V3.0`、`EVENT-V1.1`、`FDE-V2.0`、`HARDWARE-V1.0`、`TAG-V4.0`
+上游事实标准：`SITE-V4.0-data-center`、`RAW-V4.0`、`EVENT-V1.1`、`FDE-V2.0`、`HARDWARE-V1.0`、`TAG-V4.0`
 
 ## 1. Problem Statement
 

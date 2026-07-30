@@ -29,7 +29,7 @@
     "predicate": "ipo_listing",
     "object": "最快今年提交申请，梁文锋身价 360 亿美元成 AI 新首富",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -40,7 +40,7 @@
     "source_quote": "长鑫科技科创板 IPO 发行价定为 8.66 元 / 股，预计募集资金总额约 579 亿元，将成为科创板史上第二大 IPO。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-cfff5b0af0324115",
@@ -50,7 +50,7 @@
     "predicate": "ipo_listing",
     "object": "最快今年提交申请，梁文锋身价 360 亿美元成 AI 新首富",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -61,7 +61,7 @@
     "source_quote": "6、消息称 DeepSeek 筹备 IPO，最快今年内提交上市申请",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-e4379b5b36cc2d49",
@@ -71,7 +71,7 @@
     "predicate": "ipo_listing",
     "object": "最快今年提交申请，梁文锋身价 360 亿美元成 AI 新首富",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -82,7 +82,7 @@
     "source_quote": "据彭博社报道，DeepSeek 已开始筹备 IPO，计划最快今年内提交上市申请，目标在中国内地上市。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-ee2fa884b6ce60e8",
@@ -92,7 +92,7 @@
     "predicate": "ipo_listing",
     "object": "最快今年提交申请，梁文锋身价 360 亿美元成 AI 新首富",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -103,91 +103,7 @@
     "source_quote": "2、DeepSeek 梁文锋身价飙升至 360 亿美元，成 AI 公司新首富",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-7fec5dfea474c619",
-    "raw_id": "RAW-da1f23be43b1faf9",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 回应苹果商业秘密",
-    "predicate": "lawsuit_settlement",
-    "object": "：指控\"缺乏依据\"",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-da1f23be43b1faf9",
-      "start": 3,
-      "end": 51
-    },
-    "source_quote": "OpenAI pushes back on Apple trade secret lawsuit",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-b62ba30565a72485",
-    "raw_id": "RAW-da1f23be43b1faf9",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 回应苹果商业秘密",
-    "predicate": "lawsuit_settlement",
-    "object": "：指控\"缺乏依据\"",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-da1f23be43b1faf9",
-      "start": 96,
-      "end": 222
-    },
-    "source_quote": "OpenAI pushed back Tuesday against allegations made by Apple in a trade secret lawsuit , suggesting the complaint lacks merit.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-efb68aa64bc00203",
-    "raw_id": "RAW-da1f23be43b1faf9",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 回应苹果商业秘密",
-    "predicate": "lawsuit_settlement",
-    "object": "：指控\"缺乏依据\"",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-da1f23be43b1faf9",
-      "start": 590,
-      "end": 1225
-    },
-    "source_quote": "The statement comes several days after Apple filed a lawsuit against the AI lab, alleging that OpenAI employees, who previously worked at the iPhone maker, engaged in a coordinated effort to obtain confidential information and intellectual property. The 41-page complaint, filed Friday in the U.S. District Court for the Northern District of California, contains a string of allegations against OpenAI leadership, including Chief Hardware Officer Tang Tan. Before joining OpenAI, Tan was a veteran at Apple, where he worked for 24 years and held top positions, including vice president of product design for the iPhone and Apple Watch.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-452f5b3b59eb25ad",
-    "raw_id": "RAW-da1f23be43b1faf9",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 回应苹果商业秘密",
-    "predicate": "lawsuit_settlement",
-    "object": "：指控\"缺乏依据\"",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-da1f23be43b1faf9",
-      "start": 1226,
-      "end": 1586
-    },
-    "source_quote": "This is the first time OpenAI commented on the case itself. In its initial statement hours after Apple filed its lawsuit, it proclaimed a lack of interest in technology developed by other companies, telling TechCrunch: “We have no interest in other companies’ trade secrets. We remain focused on building innovative technology that empowers people everywhere.”",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-bc0a770fe2046aed",
@@ -1125,7 +1041,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -1136,7 +1052,7 @@
     "source_quote": "Sovereign AI infrastructure startup Valarian raises $50M to help nations secure their defense systems",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-faf3cae637d7aba5",
@@ -1146,7 +1062,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -1157,7 +1073,7 @@
     "source_quote": "The defense-focused artificial intelligence systems infrastructure startup Valarian Technologies Ltd. said today it has closed on a hefty $50 million early-stage funding round as it looks to position itself as a critical player in the emerging “sovereign AI” market.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-71ac2d8d11c631e7",
@@ -1167,7 +1083,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -1178,7 +1094,7 @@
     "source_quote": "The Series A round was led by new investor New Enterprise Associates, which is making its first investment in a European defense startup. It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC, plus Gokul Rajaram and Nikesh Arora, who participated as angels.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-9bf95780708c3f3b",
@@ -1188,7 +1104,7 @@
     "predicate": "funding",
     "object": "$50M to help nations secure their defense systems - SiliconANGLE",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -1199,7 +1115,7 @@
     "source_quote": "Historically, defense organizations and regulated institutions have always snubbed public cloud infrastructure in favor of bespoke, on-premises environments that enable sovereign-level control. As AI becomes a critical component of modern computer systems, there’s a pressing need for a similar level of control over that technology, too.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-386d7b7a143e6b3e",
@@ -1997,90 +1913,6 @@
       "end": 555
     },
     "source_quote": "Maxwell Lu, formerly a product engineer at Salesforce and the head of revenue operations at a previous startup, found himself frustrated by the task of re-listening to sales calls to write up notes and fill out entries in customer relationship management (CRM) software. Searching for a better way, he decided to build tech that could analyze sales calls automatically — powered by AI — and transfer that information directly into a CRM database.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-220aceb0df32d7c0",
-    "raw_id": "RAW-924223510b3e7220",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 首度回应苹果",
-    "predicate": "lawsuit_settlement",
-    "object": "：相信公平竞争，未发现任何证据",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-924223510b3e7220",
-      "start": 0,
-      "end": 37
-    },
-    "source_quote": "OpenAI 首度回应苹果诉讼：相信公平竞争，未发现任何证据 - IT之家",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-730174e1c00e91bc",
-    "raw_id": "RAW-924223510b3e7220",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 首度回应苹果",
-    "predicate": "lawsuit_settlement",
-    "object": "：相信公平竞争，未发现任何证据",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 2
-    },
-    "source_span": {
-      "raw_id": "RAW-924223510b3e7220",
-      "start": 203,
-      "end": 233
-    },
-    "source_quote": "OpenAI 首度回应苹果诉讼：相信公平竞争，未发现任何证据",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-3a5e265721e192f9",
-    "raw_id": "RAW-924223510b3e7220",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 首度回应苹果",
-    "predicate": "lawsuit_settlement",
-    "object": "：相信公平竞争，未发现任何证据",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-924223510b3e7220",
-      "start": 309,
-      "end": 395
-    },
-    "source_quote": "IT之家 7 月 15 日消息，今日，OpenAI 就苹果公司提起的商业秘密侵权诉讼作出正式回应，称公司“严肃对待这些指控，但目前未发现任何证据可证明该申诉具备合理依据”。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2d35e53f498bf1e9",
-    "raw_id": "RAW-924223510b3e7220",
-    "claim_type": "lawsuit_settlement",
-    "subject": "OpenAI 首度回应苹果",
-    "predicate": "lawsuit_settlement",
-    "object": "：相信公平竞争，未发现任何证据",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-924223510b3e7220",
-      "start": 704,
-      "end": 807
-    },
-    "source_quote": "此次诉讼的核心人物之一 Tang Tan 曾在苹果任职长达 24 年，离职前担任产品设计副总裁，深度参与了 iPhone 、Apple Watch、AirPods 及 iPod 等多款标志性产品的开发工作。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

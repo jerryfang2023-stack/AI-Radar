@@ -1,0 +1,52 @@
+[
+  {
+    "funnel_id": "LF-370d8e9ee12ffbcb",
+    "lens": "fde",
+    "date": "2026-07-20",
+    "monitoring_paths": [
+      "fde_implementation"
+    ],
+    "raw_documents": 37,
+    "original_sources": 32,
+    "valid_claims": 33,
+    "observations": 0,
+    "canonical_events": 11,
+    "blocker_counts": {
+      "non_event_or_index_title": 4,
+      "repository_page_requires_release_source": 4,
+      "no_source_bounded_event": 9,
+      "listing_or_career_page_not_event_source": 3,
+      "community_source_requires_original_event_source": 1,
+      "raw_source_quality_block": 5
+    },
+    "rates": {
+      "original_source_rate": 0.8648648648648649,
+      "valid_claim_rate": 0.8918918918918919,
+      "observation_rate": 0,
+      "event_conversion_rate": 0.3333333333333333
+    }
+  },
+  {
+    "funnel_id": "LF-d7113667dbf56614",
+    "lens": "hardware",
+    "date": "2026-07-20",
+    "monitoring_paths": [],
+    "raw_documents": 10,
+    "original_sources": 9,
+    "valid_claims": 15,
+    "observations": 18,
+    "canonical_events": 5,
+    "blocker_counts": {
+      "no_source_bounded_event": 1,
+      "non_event_or_index_title": 2,
+      "community_source_requires_original_event_source": 1,
+      "raw_source_quality_block": 1
+    },
+    "rates": {
+      "original_source_rate": 0.9,
+      "valid_claim_rate": 1,
+      "observation_rate": 1,
+      "event_conversion_rate": 0.3333333333333333
+    }
+  }
+]

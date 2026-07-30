@@ -1,9 +1,10 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import { loadPrivateEvidenceRecord } from "./private-evidence-store.mjs";
 
-export const SOURCE_INTAKE_VERSION = "SOURCE-INTAKE-V1.0";
-export const RAW_VERSION = "RAW-V3.0";
+export const SOURCE_INTAKE_VERSION = "SOURCE-INTAKE-V1.1";
+export const RAW_VERSION = "RAW-V4.0";
 
 export function hasActiveHistoricalDuplicate(record = {}) {
   return clean(record.duplicate_status) === "duplicate";
@@ -34,6 +35,17 @@ function extractionStatus(record = {}) {
   const body = clean(record.clean_text || record.full_text);
   if (!clean(record.original_url || record.canonical_url) || body.length < 20 || /\ufffd/gu.test(body)) return "quarantined";
   return body.length < 300 ? "partial" : "accepted";
+}
+
+function sourceBoundedExcerpts(record = {}) {
+  if (!Array.isArray(record.key_excerpts)) return [];
+  return record.key_excerpts
+    .map((excerpt) => ({
+      type: clean(excerpt?.type),
+      text: clean(excerpt?.text),
+      confidence: clean(excerpt?.confidence),
+    }))
+    .filter((excerpt) => excerpt.text);
 }
 
 export function buildSourceIntake({ root, date, entries, generatedAt = new Date().toISOString() }) {
@@ -107,9 +119,8 @@ export function buildSourceIntake({ root, date, entries, generatedAt = new Date(
         readability_score: Number(record.readability_score || 0),
         has_full_text: Boolean(record.has_full_text),
         origin_fetch_status: clean(record.origin_fetch_status),
-        pool_routes: Array.isArray(record.pool_routes) ? record.pool_routes : [],
-        key_excerpts: Array.isArray(record.key_excerpts) ? record.key_excerpts : [],
-        pooled: Boolean(entry.pooled),
+        key_excerpts: sourceBoundedExcerpts(record),
+        eligible_for_v4_extraction: Boolean(entry.pooled),
       },
     });
     seenRawIds.add(rawId);
@@ -124,7 +135,8 @@ export function buildSourceIntake({ root, date, entries, generatedAt = new Date(
     counts: {
       source_artifacts: sourceArtifacts.length,
       raw_documents: rawDocuments.length,
-      pooled_documents: rawDocuments.filter((item) => item.intake_diagnostics.pooled).length,
+      eligible_documents: rawDocuments
+        .filter((item) => item.intake_diagnostics.eligible_for_v4_extraction).length,
     },
   };
 }
@@ -147,12 +159,26 @@ export function loadSourceIntakeEntries(root, date) {
   const intake = readSourceIntake(root, date);
   if (!intake) return null;
   const entries = intake.payload.raw_documents.map((document) => {
-    const file = path.resolve(root, document.body_ref || "");
-    if (!file.startsWith(`${path.resolve(root)}${path.sep}`) || !fs.existsSync(file)) {
-      throw new Error(`${document.raw_id}: source intake body_ref does not resolve inside the repository`);
+    const bodyRef = clean(document.body_ref);
+    if (!bodyRef.startsWith("evidence://")) {
+      const file = path.resolve(root, bodyRef);
+      if (!file.startsWith(`${path.resolve(root)}${path.sep}`)) {
+        throw new Error(`${document.raw_id}: source intake body_ref does not resolve inside the repository`);
+      }
+      if (fs.existsSync(file)) {
+        const raw = JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
+        return { raw, file, intake_document: document };
+      }
     }
-    const raw = JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
-    return { raw, file, intake_document: document };
+    const privateEvidence = loadPrivateEvidenceRecord(root, bodyRef, document.content_hash, {
+      sourceUrl: document.canonical_url || document.source_url,
+    });
+    return {
+      raw: privateEvidence.raw,
+      file: privateEvidence.logicalFile,
+      evidence_entry: privateEvidence.entry,
+      intake_document: document,
+    };
   });
   return { ...intake, entries };
 }

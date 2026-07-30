@@ -30,11 +30,14 @@ SourceArtifact
 -> downstream applications
 ```
 
-Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is the normalized fact layer. FDE and hardware are source-bounded projections. `qa_queue` is the only current review queue. Signal Card and V3 Pool interfaces are retired and absent.
+Private evidence objects and exact Claim spans are the evidence layer. Public RawDocuments carry body-free metadata plus `evidence://<content_hash>` locators. CanonicalEvent is the normalized fact layer. FDE and hardware are source-bounded projections. `qa_queue` is the only current review queue. Signal Card and V3 Pool interfaces are retired and absent.
 
 ## Versions and contracts
 
-- Raw: `RAW-V3.0`
+- Structured source intake: `SOURCE-INTAKE-V1.1`
+- Raw: `RAW-V4.0`
+- Private evidence: `PRIVATE-EVIDENCE-STORE-V2.0`
+- Public evidence locator: `PUBLIC-EVIDENCE-LOCATOR-V1.0`
 - Event: `EVENT-V1.1`
 - Entity history: `ENTITY-V1.0`
 - Factual relationships: `RELATION-V2.1`
@@ -56,7 +59,7 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 
 ## Rules
 
-- Every Claim quotes an exact `body_clean` span.
+- Every Claim quotes an exact span of the normalized body loaded from its private `evidence://<content_hash>` object.
 - Every formal event has resolvable Claim and SourceArtifact references.
 - Every CanonicalEvent must pass the AI-industry scope gate: the source title or accepted Claims must show AI as the event's direct technology, product, capability, organization, policy, transaction, deployment, hardware, or research subject.
 - Publisher names, feeds, discovery channels, search queries, navigation labels, and incidental mentions of AI do not establish event eligibility.
@@ -107,7 +110,7 @@ modifies JSONL or DuckDB.
 The local refresh runs inside the existing 16:45 Final Closure. No independent
 data-lake scheduled task or Startup loop is supported.
 
-The daily GitHub workflow first captures immutable source snapshots and writes `SOURCE-INTAKE-V1`, then runs these V4 steps. No legacy Card, desk, graph, or mapping writer follows them.
+The daily GitHub workflow captures ephemeral snapshots, writes `SOURCE-INTAKE-V1`, persists and pushes complete bodies to the private evidence repository, removes public body copies, and passes the public evidence boundary gate before these V4 steps. No legacy Card, desk, graph, or mapping writer follows them.
 
 For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.
 

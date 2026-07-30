@@ -68,7 +68,8 @@ Legacy page data remains isolated from the canonical flow. Page JSON cannot be u
 
 ## Asset Boundaries
 
-- `01-SiteV2/content/01-raw/originals/`: immutable original source snapshots.
+- `01-SiteV2/content/01-raw/source-index.jsonl`: public body-free source metadata and `evidence://<content_hash>` locators.
+- Configured private `WaveSight-private-evidence`: the only complete-original store; never published to the website or Vault.
 - `01-SiteV2/content/11-databases/data-center-v4/intake-v1/`: structured SourceArtifact / RawDocument intake.
 - `01-SiteV2/content/11-databases/data-center-v4/`: daily canonical V4 bundles.
 - `01-SiteV2/content/11-databases/targeted-backfill-v1/`: internal backfill queue and immutable discovery-run records; never a factual source.

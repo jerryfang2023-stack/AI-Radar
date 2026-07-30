@@ -14,13 +14,14 @@ This directory owns the SITE-V4.3 website, canonical source/data files, downstre
 | Layer | Location |
 |---|---|
 | Public site | `site/` |
-| Immutable raw snapshots | `content/01-raw/originals/` |
+| Public body-free evidence locators | `content/01-raw/source-index.jsonl` |
+| Complete original bodies | External private `WaveSight-private-evidence` repository only |
 | Canonical V4 bundles | `content/11-databases/data-center-v4/` |
 | Downstream application data | `content/12-applications/` and `site/data/` |
 | Accepted industry report Markdown | `content/12-applications/industry-reports/` |
 | Independent local knowledge base | External Guanlan AI Vault configured by `GUANLAN_VAULT_ROOT` |
 
-RawDocument stores source material, Claim stores exact verifiable spans, and CanonicalEvent stores accepted V4 commercial facts. Reports, trends, opportunities, funding research, viewpoints, and community material are downstream application or independent-column outputs and must not flow back into canonical V4 fact tables.
+RawDocument stores body-free metadata and a private `evidence://<content_hash>` locator, Claim stores exact verifiable spans, and CanonicalEvent stores accepted V4 commercial facts. Reports, trends, opportunities, funding research, viewpoints, and community material are downstream application or independent-column outputs and must not flow back into canonical V4 fact tables.
 
 V1/V2/V3 page plans, candidate Markdown, Signal Cards, desks, old graphs, legacy mappings, and `compatibility_cards` are absent from the current working tree and recoverable through Git history only.
 

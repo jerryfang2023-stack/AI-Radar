@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -50,6 +50,7 @@
       "EN-e5cc9e38970eacb5",
       "EN-cbc62794911ff31b",
       "EN-b1d07f1a647ba7fb",
+      "EN-f9329ad6e0070082",
       "EN-2dc010636b9dce91",
       "EN-bbdefa2950f49882",
       "EN-9fbf261b62c1d7c0",
@@ -61,7 +62,6 @@
       "EN-fb54e9062429a937",
       "EN-7d3194f79e645c42",
       "EN-88e2cce43eeadb36",
-      "EN-276a8bc458036a1a",
       "EN-5239a379b6326549",
       "EN-8147e6fed86d42c1",
       "EN-e274048227f164dc",
@@ -525,10 +525,12 @@
         }
       ],
       "entityIds": [
-        "EN-b1d07f1a647ba7fb"
+        "EN-b1d07f1a647ba7fb",
+        "EN-f9329ad6e0070082"
       ],
       "entityNames": [
-        "Workflow automation startup Parabola"
+        "Workflow automation startup Parabola",
+        "Alex Yaseen"
       ],
       "productName": "",
       "products": [],
@@ -1195,13 +1197,11 @@
       ],
       "entityIds": [
         "EN-88e2cce43eeadb36",
-        "EN-276a8bc458036a1a",
         "EN-5239a379b6326549",
         "EN-8147e6fed86d42c1"
       ],
       "entityNames": [
         "Alipay",
-        "支付宝",
         "OPPO达成智能体跨端互联",
         "OPPO"
       ],
@@ -1671,21 +1671,21 @@
           "name": "How-to",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "The Home Depot"
           ]
         },
         {
           "name": "Agentic AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "The Home Depot"
           ]
         },
         {
           "name": "Help Customers",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "The Home Depot"
           ]
         }
       ],
@@ -2506,9 +2506,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation"
       ],
@@ -2532,8 +2532,6 @@
         "EV-02882e6f5e1902c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
-        "EV-2dff32c1b6f813e4",
-        "EV-305ec93673f4f12e",
         "EV-640c5ea9f4fa2780",
         "EV-6e516b6e68def9cf",
         "EV-86ca5af11ee4d275",
@@ -2612,8 +2610,6 @@
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
         "EV-d4ddee1b39cced77",
-        "EV-30749250196dd507",
-        "EV-e7b7df43970f7e2c",
         "EV-025778b83c1b2ca9",
         "EV-dce5de62b2e4b752",
         "EV-57565fc2e7502c59",
@@ -2626,7 +2622,6 @@
         "EV-3a7128e2d7ff149e",
         "EV-40390136762c64d3",
         "EV-53f881da31630a04",
-        "EV-b84035029a63e52e",
         "EV-dfbc2f02003c7595",
         "EV-0edb0a592ca1fd67",
         "EV-578a9db1fe952d0a",
@@ -2659,9 +2654,6 @@
         "EV-34929bdd016dc8d6",
         "EV-0fd8bb718db1118c",
         "EV-067f57f6e6ffa6ce",
-        "EV-02b07069713d9a1c",
-        "EV-8cb2374f76202ecc",
-        "EV-946569cccbd9222f",
         "EV-edb1ddb3a091ada4",
         "EV-022d1f3160d94048",
         "EV-9705a8de3c2e9653",
@@ -2674,7 +2666,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -2685,6 +2676,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
         "TX-industry-professional_services",
@@ -2692,7 +2684,6 @@
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
@@ -2829,7 +2820,6 @@
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
         "EV-4f36e494d9281522",
-        "EV-b20bf10af759bd43",
         "EV-83a8ac8a2554b60c",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
@@ -2840,9 +2830,7 @@
         "EV-d9da7dea91725a1c",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
-        "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
-        "EV-5cd7eaa56c1fbb83",
         "EV-712473b23a2a11a0",
         "EV-2bd337245c920bc8",
         "EV-302018f2e960a8bf",
@@ -2850,7 +2838,6 @@
         "EV-969ed3078d10f0c9",
         "EV-b920999c64aa9ef6",
         "EV-730a2f95a698a96d",
-        "EV-d39b53ca7b84b9ca",
         "EV-cf317dd1579a01bb",
         "EV-fcbd97e1f30c95e3",
         "EV-ee9a1c99fe7054d6",
@@ -3007,8 +2994,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
@@ -3017,6 +3002,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -3030,6 +3016,7 @@
         "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-industry-education"
       ],
@@ -3165,6 +3152,28 @@
       "lastSeen": "2026-07-20"
     },
     {
+      "id": "EN-f9329ad6e0070082",
+      "name": "Alex Yaseen",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-acf1bcb321414706"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2023-06-28",
+      "lastSeen": "2026-07-20"
+    },
+    {
       "id": "EN-2dc010636b9dce91",
       "name": "Databricks",
       "entityType": "organization_candidate",
@@ -3191,10 +3200,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications"
       ],
@@ -3371,7 +3380,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -3382,6 +3390,7 @@
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3432,7 +3441,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-5f3ccb941a2fe5d7",
+        "EV-2a78dd5feb40a78a",
         "EV-97854226b6f43a95",
         "EV-86ca5af11ee4d275",
         "EV-52115fee0e716170",
@@ -3541,8 +3550,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -3552,6 +3559,7 @@
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
@@ -3562,6 +3570,7 @@
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-technology-image_generation"
       ],
@@ -3959,14 +3968,11 @@
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
         "EV-d709599eddf5db04",
-        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
-        "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
-        "EV-8cb2374f76202ecc",
         "EV-946569cccbd9222f",
         "EV-917966af8545a380",
         "EV-b4203b10d6592bf2",
@@ -4003,8 +4009,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -4016,6 +4020,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -4028,7 +4033,8 @@
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-reasoning"
+        "TX-technology-reasoning",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-d1ad14d4ad57d207",
@@ -4088,29 +4094,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
       "lastSeen": "2026-07-26"
-    },
-    {
-      "id": "EN-276a8bc458036a1a",
-      "name": "支付宝",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-584212d254d882bc",
-        "EV-02686922dd82c4aa"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-5239a379b6326549",
@@ -4330,12 +4313,15 @@
       "name": "The Home Depot",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
+      "aliases": [
+        "Home Depot"
+      ],
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-b29878fdf79f2ac5",
         "EV-051d1924db7ba65d",
         "EV-d12aa40eff40c97e"
       ],
@@ -4347,7 +4333,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-8d323d8bba783aa3",
@@ -4464,7 +4450,6 @@
         "EV-6c361125c3f50bb6",
         "EV-d1d36268ff74be0e",
         "EV-8734f7217e78c861",
-        "EV-3b1d1dd87442e7f1",
         "EV-ee363e679d12329c",
         "EV-ad2e4fe6a149d95d",
         "EV-76aa77f5a2e7c661",
@@ -4643,15 +4628,12 @@
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
         "EV-d40d5c9625f296db",
-        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-8692dfde7c3ef5b5",
         "EV-5613946bdd578a26",
         "EV-dd902b603e2e3dbc",
-        "EV-da6678e4e865e00e",
-        "EV-8cb2374f76202ecc",
         "EV-946569cccbd9222f",
         "EV-b4203b10d6592bf2",
         "EV-5eb23cdd9c14c6ea",
@@ -4827,7 +4809,6 @@
         "EV-3902d8bd5da40a20",
         "EV-01b003fbae67ae91",
         "EV-2f9a87bd46248fe8",
-        "EV-8fcb52bb6ec980af",
         "EV-860b90c017deaa59",
         "EV-6ce6b9c9780b97d9",
         "EV-ad269fada2269f35"
@@ -5108,5 +5089,66 @@
       "entityIds": []
     }
   ],
-  "hardware": []
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-dab7d48af097ebe1",
+      "implementationKey": "dab7d48af097ebe1",
+      "eventId": "EV-57944eebac69d510",
+      "eventIds": [
+        "EV-57944eebac69d510"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Databricks × Databricks：Engineering Practice",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Databricks",
+      "vendor": "Databricks",
+      "industry": "未披露",
+      "useCase": "Engineering Practice",
+      "workflow": "未披露",
+      "systems": [
+        "Google Cloud"
+      ],
+      "outcomes": [
+        "Bengaluru/ San Jose, July 27 &mdash; Tredence, the world's leading data & AI services company, today announced the launch of its Forward Deployed Engineering (FDE) practice, committing to build a dedicated pool of 200 FDEs over the next 12-18 months. Through this practice, the company intends to build the most domain-native engineering capability in the market, helping clients move faster from problem to impact.",
+        "Enterprise AI often struggles at the last mile, where data, systems, and business decisions must come together to create measurable value. Tredence's Forward Deployed Engineers combine speed, powered by deep AI, data, and engineering expertise, with depth, built through years of domain experience, to turn AI into business outcomes faster."
+      ],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "industry",
+        "workflow"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-953a6d4a9fe98116",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-07-29",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-57944eebac69d510",
+          "eventTitle": "Tredence 推出前向部署工程实践",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://tredence.com/news/tredence-launches-domain-native-forward-deployed-engineering-to-close-the-last-mile-of-enterprise-ai",
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    }
+  ]
 }

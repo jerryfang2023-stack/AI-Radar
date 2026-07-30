@@ -7,7 +7,7 @@
     "predicate": "funding",
     "object": "265 亿美元，创史上最大外国公司上市纪录",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -18,7 +18,7 @@
     "source_quote": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-273d892f50d0c904",
@@ -28,7 +28,7 @@
     "predicate": "funding",
     "object": "265 亿美元，创史上最大外国公司上市纪录",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -39,7 +39,7 @@
     "source_quote": "The AI chip boom just produced its biggest Wall Street moment yet. SK Hynix, a South Korean memory chip giant, said Friday it has raised $26.5 billion (KRW 40 trillion) in its U.S. market debut.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-f7f0b9774f2fb13f",
@@ -49,7 +49,7 @@
     "predicate": "funding",
     "object": "265 亿美元，创史上最大外国公司上市纪录",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -60,7 +60,7 @@
     "source_quote": "10:17 AM PDT · July 10, 2026",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-ae2554656695a66f",
@@ -70,7 +70,7 @@
     "predicate": "funding",
     "object": "265 亿美元，创史上最大外国公司上市纪录",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -81,7 +81,7 @@
     "source_quote": "SK Hynix sold 177.9 million American depositary shares (ADRs) at $149 each, structured so U.S. investors can buy in at roughly a tenth of what a full share costs in Seoul. This deal, the largest-ever U.S. debut by a non-American company, topped Alibaba’s $25 billion IPO in 2014.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-e7779bde6d5d2ccc",
@@ -588,28 +588,6 @@
     "source_quote": "OpenAI’s first hardware product is expected to arrive next year. In the lawsuit, Apple casts doubt on OpenAI’s ability to ship — at least without relying on Apple’s work. “OpenAI’s nascent hardware business now rests on the shakiest of foundations,” the lawsuit says, “rotten to its core by its illegal reliance on misappropriated trade secrets.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-d1d989bce9395796",
-    "raw_id": "RAW-725775c0b7cb82ed",
-    "claim_type": "deployment",
-    "subject": "Sunrun",
-    "predicate": "deployment",
-    "object": "distributed AI compute pilot program",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-9e751c1ffe340fe1"
-    },
-    "source_span": {
-      "raw_id": "RAW-725775c0b7cb82ed",
-      "start": 760,
-      "end": 944
-    },
-    "source_quote": "Sunrun is launching a pilot program for a new “distributed AI compute” program that will “place numerous compute nodes in homes equipped with Sunrun solar and battery storage systems.”",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

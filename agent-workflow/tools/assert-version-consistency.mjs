@@ -35,10 +35,10 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  release: "V4.4.0-operations-converged",
-  packageVersion: "4.4.0",
-  productVersion: "V4.4",
-  gitTag: "v4.4.0-operations-converged",
+  release: "V4.5.0-private-evidence-source",
+  packageVersion: "4.5.0",
+  productVersion: "V4.5",
+  gitTag: "v4.5.0-private-evidence-source",
   site: "SITE-V4.3.0-compatibility-retired",
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.1.0-lane-independent",
@@ -46,9 +46,9 @@ const expected = {
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
   skillStore: "v1.8.0 V4 retirement governance",
-  vault: "GUANLAN-VAULT-V1.1-evidence-linked (external)",
+  vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",
   dataLake: "DATA-LAKE-V4.0-23-table",
-  privateEvidence: "PRIVATE-EVIDENCE-BACKUP-V1.0",
+  privateEvidence: "PRIVATE-EVIDENCE-STORE-V2.0",
   windowsAutomation: "WINDOWS-AUTOMATION-V1.0-seven-task",
 };
 
@@ -80,7 +80,7 @@ const ledgerChecks = [
   ["Skill Store version", expected.skillStore],
   ["Local Obsidian knowledge base", expected.vault],
   ["Data lake contract", expected.dataLake],
-  ["Private evidence backup", expected.privateEvidence],
+  ["Private evidence store", expected.privateEvidence],
   ["Local Windows automation", expected.windowsAutomation],
   ["Git tag", expected.gitTag],
 ];

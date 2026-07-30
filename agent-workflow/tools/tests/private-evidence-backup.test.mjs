@@ -3,7 +3,10 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
-import { buildPrivateEvidenceBackup } from "../lib/private-evidence-backup.mjs";
+import {
+  buildPrivateEvidenceBackup,
+  ingestPrivateEvidenceRecords,
+} from "../lib/private-evidence-backup.mjs";
 
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -72,6 +75,12 @@ test("private evidence backup deduplicates bodies by content_hash and isolates h
     .split(/\r?\n/u);
   assert.equal(catalogLines.length, 2);
   assert.equal(new Set(catalogLines.map((line) => JSON.parse(line).object_ref)).size, 1);
+  const firstCatalog = JSON.parse(catalogLines[0]);
+  const privateMetadata = fs.readFileSync(path.join(backupRoot, firstCatalog.record_ref), "utf8");
+  assert.doesNotMatch(
+    privateMetadata,
+    /"(?:body_clean|body_original|clean_text|full_text|markdown_snapshot)"\s*:/u,
+  );
 
   const firstManifest = fs.readFileSync(path.join(backupRoot, "manifest.json"), "utf8");
   const repeated = buildPrivateEvidenceBackup({
@@ -80,8 +89,49 @@ test("private evidence backup deduplicates bodies by content_hash and isolates h
     generatedAt: "2026-07-30T04:00:00.000Z",
   });
   assert.equal(repeated.generatedAt, "2026-07-30T03:00:00.000Z");
+  assert.equal(repeated.schemaVersion, "PRIVATE-EVIDENCE-STORE-V2.0");
   assert.equal(
     fs.readFileSync(path.join(backupRoot, "manifest.json"), "utf8"),
     firstManifest,
+  );
+});
+
+test("private evidence backup ingests research bodies without embedding them in metadata", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-research-root-"));
+  const backupRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-research-backup-"));
+  const body = "A captured research source body that remains private.";
+
+  const result = ingestPrivateEvidenceRecords({
+    root,
+    backupRoot,
+    generatedAt: "2026-07-30T05:00:00.000Z",
+    records: [{
+      body,
+      contentHash: "research-content-hash",
+      snapshotRef: "research/entity-catalog/SRC-1-research-content-hash.json",
+      sourceUrl: "https://example.test/research",
+      collectedAt: "2026-07-30T04:30:00.000Z",
+      dataDate: "2026-07-30",
+      metadata: {
+        source_id: "SRC-1",
+        source_url: "https://example.test/research",
+        body_clean: body,
+      },
+    }],
+  });
+
+  assert.equal(result.ingested, 1);
+  assert.equal(result.snapshots, 1);
+  assert.equal(result.uniqueContents, 1);
+  assert.equal(result.missingBodies, 0);
+  const [catalogLine] = fs.readFileSync(path.join(backupRoot, "catalog.jsonl"), "utf8")
+    .trim()
+    .split(/\r?\n/u);
+  const entry = JSON.parse(catalogLine);
+  assert.equal(fs.readFileSync(path.join(backupRoot, entry.object_ref), "utf8"), body);
+  const metadata = fs.readFileSync(path.join(backupRoot, entry.record_ref), "utf8");
+  assert.doesNotMatch(
+    metadata,
+    /"(?:body_clean|body_original|clean_text|full_text|markdown_snapshot)"\s*:/u,
   );
 });

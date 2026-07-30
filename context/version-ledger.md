@@ -18,12 +18,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.4.0-operations-converged |
-| Version name | WaveSight V4 Operations Converged |
+| Current version | V4.5.0-private-evidence-source |
+| Version name | WaveSight V4 Private Evidence Source |
 | Version layer | Minor |
 | Release date | 2026-07-30 |
 | Last modified at | 2026-07-30T18:18:14+08:00 |
-| Product version | V4.4 |
+| Product version | V4.5 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.3.0-compatibility-retired |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
@@ -41,15 +41,16 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
 | Funding Insights column version | FUNDING-INSIGHT-V1.0-auto-published-research |
-| Data Center Raw contract | RAW-V3.0 |
+| Data Center Raw contract | RAW-V4.0 |
+| Data Center structured source intake | SOURCE-INTAKE-V1.1 |
 | Canonical event contract | EVENT-V1.1 |
 | Entity history contract | ENTITY-V1.0 |
 | Person-account review contract | PERSON-REVIEW-V1.0 |
 | Factual relationship contract | RELATION-V2.1 |
 | Targeted historical collection contract | BACKFILL-V1.0 |
-| Local Obsidian knowledge base | GUANLAN-VAULT-V1.1-evidence-linked (external) |
+| Local Obsidian knowledge base | GUANLAN-VAULT-V1.2-private-evidence-linked (external) |
 | Data lake contract | DATA-LAKE-V4.0-23-table |
-| Private evidence backup | PRIVATE-EVIDENCE-BACKUP-V1.0 |
+| Private evidence store | PRIVATE-EVIDENCE-STORE-V2.0 |
 | Local Windows automation | WINDOWS-AUTOMATION-V1.0-seven-task |
 | Weekly Report content source | `01-SiteV2/content/12-applications/industry-reports/` |
 | Monthly Report content source | `01-SiteV2/content/12-applications/industry-reports/monthly/` |
@@ -72,12 +73,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.8.0 V4 retirement governance |
-| Git tag | `v4.4.0-operations-converged` |
+| Git tag | `v4.5.0-private-evidence-source` |
 | Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
 
-- WaveSight AI V4.4 converges the local operating system around one independent evidence-linked Vault, one strict 23-table V4 data lake, seven Windows tasks, and one Hermes control-plane cycle. The public frontstage remains SITE-V4.3.0.
+- WaveSight AI V4.5 makes the private evidence repository the sole complete-original store. Public RAW-V4 bundles, the 23-table data lake, the independent evidence-linked Vault, and the website contain only body-free metadata, exact Claims or selected excerpts, and traceable locators. The public frontstage remains SITE-V4.3.0.
 - WaveSight AI is an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
 - SITE-V4.3.0 is the current public and data-service release. It preserves the V4 entity-history frontstage after removing all V3 compatibility writers, interfaces, payloads, and active documentation routes.
@@ -199,6 +200,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.5.0-private-evidence-source` | Private evidence store / RAW-V4 public bundles / Guanlan Vault / GitHub production workflows / V4 data lake | 2026-07-30 | 2026-07-30T23:55:00+08:00 | V4.5.0-private-evidence-source / RAW-V4.0 / PRIVATE-EVIDENCE-STORE-V2.0 / GUANLAN-VAULT-V1.2-private-evidence-linked | complete original bodies in the public repository, data lake, Vault, website, workflow artifacts, or public automation commits; repository snapshots treated as authoritative | private-store integrity + public evidence boundary + all-date V4 integrity + Vault evidence contract + 23-table data-lake gate + code/rule audit + GitHub Pages deploy |
 | `v4.4.0-operations-converged` | Repository rules / Guanlan Vault / private evidence backup / V4 data lake / Windows automation / Hermes control plane | 2026-07-30 | 2026-07-30T18:18:14+08:00 | V4.4.0-operations-converged / GUANLAN-VAULT-V1.1-evidence-linked / DATA-LAKE-V4.0-23-table / WINDOWS-AUTOMATION-V1.0-seven-task | repository-local Vault; retired Vault registration; migration-proof notes; compatibility tasks; independent data-lake timer; separate Hermes heartbeat task; stale or non-V4 serving tables | two-axis code/rule review + 23-table JSONL/DuckDB gate + Vault/evidence assertions + seven-task audit + full V4/frontstage tests + GitHub Pages deploy |
 | `guanlan-vault-v1.0-independent` | External Guanlan AI System State / Data Center / Application Center / Operations / Contracts / Knowledge Assets / Workspace | 2026-07-30 | 2026-07-30T23:30:00+08:00 | GUANLAN-VAULT-V1.0 | repository-local `vault/`; parent `AI热点` indexing; AI Startup Radar; V1/V2/V3 migration material; QC/repair/diff archives; generated site or canonical data written by Vault sync | external-root isolation + directory/link/retired-content assertion; projection-only local refresh; full V4/site/OPS tests |
 | `v4.3.0-compatibility-retired` | V4 production / schema / data lake / Obsidian index / quality gates | 2026-07-29 | 2026-07-29T22:00:00+08:00 | SITE-V4.3.0-compatibility-retired | V3 payload archives in the working tree; compatibility_cards schema or output; dormant V3 producers or quality gates; Pages V3 exclusions | final no-active-V3 gate + pipeline policy + V4 schema/build/integrity tests + full frontstage/OPS tests |

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -80,7 +80,7 @@
       "valueId": "healthcare_life_sciences",
       "eventIds": [
         "EV-6be89ebfbf8de6be",
-        "EV-2dff32c1b6f813e4",
+        "EV-b2d94511e4b4dfc8",
         "EV-6e06cfa28f76a76f",
         "EV-aa33ca051f3a7f78",
         "EV-cfd791871e347aa6",
@@ -119,8 +119,8 @@
       ],
       "entityIds": [
         "EN-522656609ff15589",
+        "EN-4c3788aad4bebf2f",
         "EN-cf9488537f777c1a",
-        "EN-96eebba49dbbf422",
         "EN-caaa8e02be54cfc9",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
@@ -133,6 +133,7 @@
         "EN-a83a3af1a4866fd5",
         "EN-ea3bd73e2b506e00",
         "EN-e5cc9e38970eacb5",
+        "EN-96eebba49dbbf422",
         "EN-cbc62794911ff31b",
         "EN-023e881577ad3ab1",
         "EN-8d4321d936320802",
@@ -196,7 +197,7 @@
       "title": "Sheba Medical Center 与 OpenAI 合作，首次在国际部署医疗版 ChatGPT",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "Sheba Medical Center",
+      "customer": "OpenAI",
       "vendor": "Sheba Medical Center",
       "industry": "Healthcare",
       "useCase": "OpenAI in First International ChatGPT for Healthcare Deployment",
@@ -221,5 +222,54 @@
       ]
     }
   ],
-  "hardware": []
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-207e5baf3b35bb0b",
+      "implementationKey": "207e5baf3b35bb0b",
+      "eventId": "EV-6cea35f065f0ee9e",
+      "eventIds": [
+        "EV-6cea35f065f0ee9e"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "title": "OpenAI × Sheba Medical Center：OpenAI in First International ChatGPT for Healthcare Deployment",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "OpenAI",
+      "vendor": "Sheba Medical Center",
+      "industry": "Healthcare",
+      "useCase": "OpenAI in First International ChatGPT for Healthcare Deployment",
+      "workflow": "To solve workflow fragmentation and build the operational infrastructure for a fully AI-powered hospital, Sheba Medical Center has announced a collaboration with OpenAI . Driven by the ARC (Accelerate, Redesign, Collaborate) innovation arm , the agreement marks OpenAI’s first international deployment of ChatGPT for Healthcare across a complete hospital network.",
+      "systems": [
+        "ChatGPT"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.875,
+      "completenessPercent": 88,
+      "missingFields": [
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-b90a97f0aa7674d9",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-07-28",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-6cea35f065f0ee9e",
+          "eventTitle": "Sheba Medical Center 与 OpenAI 合作，首次在国际部署医疗版 ChatGPT",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://hitconsultant.net/2026/07/28/sheba-medical-center-openai-chatgpt-for-healthcare-deployment",
+      "entityIds": [
+        "EN-2f4f5c040cf915b8",
+        "EN-7d3194f79e645c42"
+      ]
+    }
+  ]
 }

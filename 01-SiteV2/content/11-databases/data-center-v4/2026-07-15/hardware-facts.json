@@ -1,0 +1,98 @@
+[
+  {
+    "hardware_fact_id": "HWF-e754c7bb57e403f6",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-07-14T00:00:00.000Z",
+    "subject_entity_id": "EN-34083473c73ff542",
+    "subject_name": "LMSYS 与 SGLang",
+    "product_entity_ids": [
+      "EN-64c4e740f32911e8"
+    ],
+    "product_names": [
+      "GLM-5.2 NVFP4"
+    ],
+    "component_type": "gpu",
+    "metric_value": "34",
+    "unit": "%",
+    "source_quote": "Three things stand out. First, GLM-5.2 is a substantially more efficient architecture than GLM-5.1. On the same SGLang release, GLM-5.2 delivers a ~1.4x and ~1.3x improvement in single-user interactivity per-GPU throughput, respectively, on both 4×GB300 and 8×B300. This gain comes from applying IndexShare to the DSA layers and from the improved MTP head, which reuses IndexShare and KVShare. Second, single-user interactivity has improved 18-34% since day-0. At batch size 1, our optimizations sharply cut per-token overhead, letting us reach 500+ TPS on 8xB300. Third, we made no compromise on high-concurrency throughput, peak throughput at batch size 8 also improved by 6–11%.",
+    "event_refs": [
+      "EV-4e54b77583b0a83e"
+    ],
+    "claim_ref": "CL-fe19ca104837cb24",
+    "source_refs": [
+      "SA-3b5d365f11350356"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-225d009a303071f9",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-07-14T00:00:00.000Z",
+    "subject_entity_id": "EN-cf9488537f777c1a",
+    "subject_name": "TYLsemi",
+    "product_entity_ids": [
+      "EN-38f4d27a18084522",
+      "EN-74beb25bdfe7bdd1",
+      "EN-94c93b5ab886f2d9"
+    ],
+    "product_names": [
+      "Full-Stack Chiplet",
+      "AI Silicon",
+      "First Full-Stack Chiplet"
+    ],
+    "component_type": "data_center",
+    "metric_value": "43",
+    "unit": "$million",
+    "source_quote": "San Jose, California, July 14, 2026 – Today, TYLsemi™ emerged from stealth and announced the closing of an oversubscribed $43 million early-stage funding round to accelerate the development of AI infrastructure. TYLsemi is the first chiplet platform company to deliver a full portfolio across IO, power delivery, and memory paired with a chiplet-based custom silicon design, integration and supply-chain ownership. This standards-based, production-ready portfolio will provide AI infrastructure customers with a faster, lower-risk path for developing AI silicon from architecture to deployment.",
+    "event_refs": [
+      "EV-5f718c76c285ac9b"
+    ],
+    "claim_ref": "CL-8b941b4cf3279dc5",
+    "source_refs": [
+      "SA-8368bad4f79b26ba"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-ba1de9b8ede4ff7e",
+    "fact_type": "product",
+    "observed_at": "2026-07-14T00:00:00.000Z",
+    "subject_entity_id": "EN-4c3788aad4bebf2f",
+    "subject_name": "Custom AI chip design startup TYLsemi",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "semiconductor",
+    "metric_value": "43",
+    "unit": "$M",
+    "source_quote": "Custom AI chip design startup TYLsemi launches with $43M in early-stage funding",
+    "event_refs": [
+      "EV-b2d94511e4b4dfc8"
+    ],
+    "claim_ref": "CL-0f7de1f289c977b6",
+    "source_refs": [
+      "SA-903d243c7a19a7c1"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-bce681efcca393bb",
+    "fact_type": "product",
+    "observed_at": "2026-07-14T09:08:37.000Z",
+    "subject_entity_id": "EN-c13e2f4a44bb01ed",
+    "subject_name": "Samsung SDS",
+    "product_entity_ids": [
+      "EN-e69e1d0e7ad091fc"
+    ],
+    "product_names": [
+      "Generative AI"
+    ],
+    "component_type": "ai_accelerator",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "Samsung SDS announced that it will officially launch NPU (NPUaaS) as a service based on Samsung Cloud Platform (SCP) on the 16th.",
+    "event_refs": [
+      "EV-770cea9de2337d0e"
+    ],
+    "claim_ref": "CL-014ede19bf865478",
+    "source_refs": [
+      "SA-d2f235b1fe53f9c2"
+    ]
+  }
+]

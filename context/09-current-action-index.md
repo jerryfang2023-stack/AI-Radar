@@ -11,8 +11,8 @@ priority: current
 
 | Action | Owner / contract |
 |---|---|
-| Immutable source capture and structured intake | `SOURCE-INTAKE-V1` |
-| Claim/Event normalization and canonical build | `RAW-V3.0`, `EVENT-V1.1` |
+| Immutable source capture and structured intake | `SOURCE-INTAKE-V1.1` |
+| Claim/Event normalization and canonical build | `RAW-V4.0`, `EVENT-V1.1` |
 | Entity history and factual relations | `ENTITY-V1.0`, `RELATION-V2.1` |
 | Taxonomy/facets | `TAG-V4.0` |
 | Enterprise implementation projection | `FDE-V2.0` |

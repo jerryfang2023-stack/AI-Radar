@@ -2,6 +2,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { deepSeekJsonCompletion, deepSeekModels, sourceTextHash } from "./deepseek-translation-client.mjs";
+import { resolvePrivateEvidenceBackupRoot } from "./private-evidence-backup-paths.mjs";
+import { ingestPrivateEvidenceRecords } from "./lib/private-evidence-backup.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -48,6 +50,43 @@ function writeJson(file, value) {
 
 function clean(value = "") {
   return redactSensitiveText(value).replace(/\s+/gu, " ").trim();
+}
+
+function privateizeReviews(reviews = []) {
+  const backupRoot = resolvePrivateEvidenceBackupRoot(root);
+  const records = [];
+  for (const review of reviews) {
+    for (const source of review.sources || []) {
+      if (!clean(source.body_clean)) continue;
+      const contentHash = clean(source.content_hash || sourceTextHash(source.body_clean));
+      records.push({
+        body: source.body_clean,
+        contentHash,
+        snapshotRef: `research/entity-catalog/${source.source_id}-${contentHash}.json`,
+        sourceUrl: source.source_url,
+        collectedAt: source.captured_at,
+        dataDate: clean(source.captured_at).slice(0, 10),
+        metadata: {
+          ...source,
+          body_clean: undefined,
+          content_hash: contentHash,
+          evidence_purpose: "entity_catalog_secondary_review",
+        },
+      });
+    }
+  }
+  if (records.length) {
+    ingestPrivateEvidenceRecords({ root, backupRoot, records });
+  }
+  return reviews.map((review) => ({
+    ...review,
+    sources: (review.sources || []).map(({ body_clean, ...source }) => ({
+      ...source,
+      evidence_ref: `evidence://${clean(source.content_hash)}`,
+      body_storage: "private_evidence_store",
+      body_length: String(body_clean || "").length || Number(source.body_length || 0),
+    })),
+  }));
 }
 
 function decodeHtml(value = "") {
@@ -350,10 +389,24 @@ function reportFor(input, reviews, failures) {
 }
 
 async function main() {
+  if (args.get("privateize-existing") === "true") {
+    const existingReport = readJson(outputPath);
+    if (!existingReport?.reviews) throw new Error("secondary_search_report_missing");
+    existingReport.reviews = privateizeReviews(existingReport.reviews);
+    writeJson(outputPath, existingReport);
+    console.log(JSON.stringify({
+      ok: true,
+      mode: "privateize-existing",
+      output: path.relative(root, outputPath).replace(/\\/gu, "/"),
+      reviews: existingReport.reviews.length,
+    }, null, 2));
+    return;
+  }
   const input = readJson(inputPath);
   if (!input?.reviews) throw new Error("phase2_audit_missing");
   const existing = reuseExisting ? readJson(outputPath, { reviews: [] }) : { reviews: [] };
-  const reviewById = new Map((existing.reviews || []).map((review) => [review.entity_id, review]));
+  const reviewById = new Map(privateizeReviews(existing.reviews || [])
+    .map((review) => [review.entity_id, review]));
   let selected = input.reviews.filter((review) => selectedDecisions.has(review.decision)
     || (review.decision === "correction_candidate" && correctionConfidenceBelow > 0 && review.confidence < correctionConfidenceBelow));
   if (limit) selected = selected.slice(0, limit);
@@ -366,7 +419,12 @@ async function main() {
   let completed = 0;
   await mapConcurrent(pending, reviewItem, concurrency, async (result) => {
     completed += 1;
-    if (result.error) failures.push(result); else reviewById.set(result.entity_id, result);
+    if (result.error) {
+      failures.push(result);
+    } else {
+      const [privateResult] = privateizeReviews([result]);
+      reviewById.set(privateResult.entity_id, privateResult);
+    }
     const report = reportFor(input, [...reviewById.values()], failures);
     writeJson(outputPath, report);
     console.log(JSON.stringify({ progress: `${completed}/${pending.length}`, completed: report.summary.completed, failures: report.summary.failures }));

@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { evaluateModelAssistCandidate, readJson, writeJson } from "./model-assist-v1.mjs";
+import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const assistRoot = path.join(root, "01-SiteV2", "content", "11-databases", "model-assist-v1");
@@ -21,7 +22,10 @@ function verifiedNames(date) {
 
 function rawBodies(date) {
   const raws = readJson(path.join(bundleRoot, date, "raw-documents.json"), []);
-  return new Map(raws.map((raw) => [raw.raw_id, String(raw.body_clean || "")]));
+  return new Map(raws.map((raw) => {
+    const hydrated = hydrateRawDocument(root, raw, { required: false });
+    return [raw.raw_id, String(hydrated.body_clean || "")];
+  }));
 }
 
 function disposition(candidate, names, body) {

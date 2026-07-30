@@ -14,7 +14,7 @@ encoding: UTF-8
 
 | 目录 | 用途 | 状态 |
 |---|---|---|
-| `01-raw/originals/` | 每日来源快照 | V4 输入 |
+| `01-raw/source-index.jsonl` | 来源元数据、哈希与 `evidence://` 定位符 | V4 公开输入 |
 | `09-fde/` | V4 FDERecord 的 Obsidian 事实投影 | 当前 |
 | `10-ai-hardware/` | V4 HardwareRecord 的 Obsidian 事实投影 | 当前 |
 | `11-databases/data-center-v4/` | V4 SourceArtifact、RawDocument、Claim、Entity、CanonicalEvent 与 QA | 当前事实库 |
@@ -33,7 +33,7 @@ encoding: UTF-8
 ## V4 事实链
 
 ```text
-Raw snapshot
+Private evidence object
   → SourceArtifact / RawDocument
   → exact-span Claim
   → Entity / CanonicalEvent

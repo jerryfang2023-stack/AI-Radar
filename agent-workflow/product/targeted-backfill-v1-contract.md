@@ -21,7 +21,7 @@ Gap detection rebuilds its input from the Git-tracked canonical daily bundles an
 
 Search queries, result snippets, discovery summaries, publisher names, legacy Cards, and frontstage copy are discovery metadata only. They cannot complete a fact-gap task or create an Entity, CanonicalEvent, FDE record, relationship, TagAssertion, or FacetAssertion.
 
-A candidate can enter the V4 chain only after the original page is captured as a SourceArtifact and RAW-V3 document. Any factual update requires an exact-span Claim and the normal responsible build and integrity gate.
+A candidate can enter the V4 chain only after the original page is persisted in the private evidence store and represented by a SourceArtifact and body-free RAW-V4 document. Any factual update requires an exact-span Claim and the normal responsible build and integrity gate.
 
 ## Task types
 

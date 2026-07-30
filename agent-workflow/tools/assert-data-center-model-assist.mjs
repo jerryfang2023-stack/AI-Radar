@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { evaluateModelAssistCandidate, readJson } from "./model-assist-v1.mjs";
+import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 const require = createRequire(import.meta.url);
 const Ajv = require("ajv/dist/2020");
@@ -31,7 +32,10 @@ function main() {
     const store = readJson(path.join(assistRoot, name));
     if (!validate(store)) problems.push(`${name}:schema:${ajv.errorsText(validate.errors)}`);
     const raws = readJson(path.join(bundleRoot, store?.data_date || "", "raw-documents.json"), []);
-    const rawById = new Map(raws.map((raw) => [raw.raw_id, raw]));
+    const rawById = new Map(raws.map((raw) => [
+      raw.raw_id,
+      hydrateRawDocument(root, raw, { required: false }),
+    ]));
     for (const candidate of store?.candidates || []) {
       candidates += 1;
       statuses[candidate.status] = (statuses[candidate.status] || 0) + 1;

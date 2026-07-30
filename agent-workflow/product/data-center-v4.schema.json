@@ -43,7 +43,7 @@
       "required": ["product_version", "raw_version", "event_version", "fde_version", "fde_observation_version", "hardware_version", "hardware_fact_version", "hardware_snapshot_version", "monitoring_funnel_version", "tag_version", "date", "generated_at", "counts"],
       "properties": {
         "product_version": { "const": "SITE-V4.0-data-center" },
-        "raw_version": { "const": "RAW-V3.0" },
+        "raw_version": { "const": "RAW-V4.0" },
         "event_version": { "const": "EVENT-V1.1" },
         "fde_version": { "const": "FDE-V2.0" },
         "fde_observation_version": { "const": "FDE-OBSERVATION-V1.0" },
@@ -78,9 +78,9 @@
     },
     "rawDocument": {
       "type": "object",
-      "required": ["schema_version", "raw_id", "source_artifact_id", "source_url", "captured_at", "title_original", "body_original", "body_clean", "content_hash", "extraction_status", "claim_ids", "entity_mention_ids", "event_candidate_ids"],
+      "required": ["schema_version", "raw_id", "source_artifact_id", "source_url", "captured_at", "title_original", "body_ref", "body_length", "body_storage", "content_hash", "extraction_status", "claim_ids", "entity_mention_ids", "event_candidate_ids"],
       "properties": {
-        "schema_version": { "const": "RAW-V3.0" },
+        "schema_version": { "const": "RAW-V4.0" },
         "raw_id": { "type": "string", "minLength": 1 },
         "source_artifact_id": { "type": "string", "minLength": 1 },
         "source_url": { "type": "string" },
@@ -94,8 +94,8 @@
         "document_type": { "type": "string" },
         "title_original": { "type": "string" },
         "title_zh": { "type": "string" },
-        "body_original": { "type": "string" },
-        "body_clean": { "type": "string" },
+        "body_length": { "type": "integer", "minimum": 0 },
+        "body_storage": { "const": "private_evidence_store" },
         "content_hash": { "type": "string" },
         "capture_method": { "type": "string" },
         "extraction_status": { "enum": ["accepted", "partial", "quarantined"] },
@@ -103,7 +103,7 @@
         "claim_ids": { "type": "array", "items": { "type": "string" } },
         "entity_mention_ids": { "type": "array", "items": { "type": "string" } },
         "event_candidate_ids": { "type": "array", "items": { "type": "string" } },
-        "body_ref": { "type": "string", "minLength": 1 }
+        "body_ref": { "type": "string", "pattern": "^evidence://" }
       },
       "additionalProperties": false
     },

@@ -9,7 +9,8 @@ It does not replace the Git-tracked daily V4 bundles under `01-SiteV2/content/11
 | Layer | Role |
 |---|---|
 | Guanlan AI Vault / Markdown | One-way human-readable projection for reading, judgment, review, and knowledge memory; it never reads or modifies DuckDB |
-| Git-tracked JSON / Markdown | Auditable source snapshots and production history |
+| Private evidence repository | Sole complete-original store, content-addressed by `content_hash` |
+| Git-tracked JSON / Markdown | Auditable body-free evidence locators and production history |
 | DuckDB data lake | SQL query, monitoring, quality audit, cross-day statistics, and incident diagnosis |
 | Frontstage JSON | Website rendering payloads |
 | Data Center V4 bundles | Canonical normalized facts and evidence links |
@@ -49,7 +50,7 @@ V4 canonical serving tables:
 | Table | Purpose |
 |---|---|
 | `source_artifacts` | Source provenance and snapshot references |
-| `raw_documents` | RAW-V3 normalized documents with original and cleaned text |
+| `raw_documents` | RAW-V4 body-free metadata with private `evidence://<content_hash>` locators |
 | `claims` | Exact-span factual claims |
 | `entities`, `entity_mentions` | Candidate entity registry and mentions |
 | `canonical_events` | EVENT-V1 normalized events, status, conflicts and revisions |

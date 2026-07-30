@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -70,5 +70,111 @@
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-b02eaec1de1f1502",
+      "snapshotKey": "b02eaec1de1f1502",
+      "snapshotId": "HWS-e0ceedb7d5a18a83",
+      "eventId": "EV-40979daeedded907",
+      "eventIds": [
+        "EV-40979daeedded907"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "天数智芯",
+      "subject": "天数智芯",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-416e3d06c78aa533"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-05511bdb372ff67d",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T12:11:01.000Z",
+          "subject_entity_id": "EN-509f226edbb9f410",
+          "subject_name": "天数智芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "天数智芯发布新一代通用 GPU 旗舰产品天垓 300，具备规模化应用条件 - IT之家",
+          "event_refs": [
+            "EV-40979daeedded907"
+          ],
+          "claim_ref": "CL-6deb57745de17f90",
+          "source_refs": [
+            "SA-f7ac43225d7cf9fe"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-1ee4cd772eb5175a",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T12:11:01.000Z",
+          "subject_entity_id": "EN-509f226edbb9f410",
+          "subject_name": "天数智芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "天数智芯发布新一代通用 GPU 旗舰产品天垓 300，具备规模化应用条件",
+          "event_refs": [
+            "EV-40979daeedded907"
+          ],
+          "claim_ref": "CL-0d6d1c5dd6da9a34",
+          "source_refs": [
+            "SA-f7ac43225d7cf9fe"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-416e3d06c78aa533",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T12:11:01.000Z",
+          "subject_entity_id": "EN-509f226edbb9f410",
+          "subject_name": "天数智芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，2026 世界人工智能大会正在举行，天数智芯今日发布新一代通用 GPU 旗舰产品天垓 300， 基于 SIMT 通用计算架构 ，可支持标量、矢量和张量等多种计算类型，并围绕 Attention、MoE、AF 分离、PD 分离及大规模系统扩展等技术进行优化。",
+          "event_refs": [
+            "EV-40979daeedded907"
+          ],
+          "claim_ref": "CL-b7c25b3465e0dd74",
+          "source_refs": [
+            "SA-f7ac43225d7cf9fe"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/781.htm",
+      "entityIds": [
+        "EN-509f226edbb9f410"
+      ]
+    }
+  ]
 }

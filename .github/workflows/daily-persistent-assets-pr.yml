@@ -42,12 +42,27 @@ jobs:
       DEEPSEEK_PRO_MODEL: deepseek-v4-pro
       FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
       FEISHU_WEBHOOK_SECRET: ${{ secrets.FEISHU_WEBHOOK_SECRET }}
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ runner.temp }}/WaveSight-private-evidence
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+
+      - name: Check out authoritative private evidence store
+        env:
+          PRIVATE_EVIDENCE_SSH_KEY: ${{ secrets.PRIVATE_EVIDENCE_SSH_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$PRIVATE_EVIDENCE_SSH_KEY"
+          mkdir -p "$HOME/.ssh"
+          printf '%s\n' "$PRIVATE_EVIDENCE_SSH_KEY" > "$HOME/.ssh/wavesight_private_evidence"
+          chmod 600 "$HOME/.ssh/wavesight_private_evidence"
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/wavesight_private_evidence -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+          git clone --depth=1 git@github.com:jerryfang2023-stack/WaveSight-private-evidence.git "$GUANLAN_EVIDENCE_BACKUP_ROOT"
+          echo "GIT_SSH_COMMAND=$GIT_SSH_COMMAND" >> "$GITHUB_ENV"
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
@@ -57,6 +72,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Assert private evidence remote boundary
+        run: npm run assert:private-evidence-remote
 
       - name: Resolve run date
         id: run-date
@@ -135,7 +153,7 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- deepseek_v4_title_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)"
             echo
-            echo "This V4 workflow commits structured intake, immutable source snapshots, the factual bundle, application projections, and operations data to an automation branch."
+            echo "This V4 workflow stores complete originals only in the private evidence repository and commits body-free locators, the factual bundle, application projections, and operations data to an automation branch."
             echo "The source collector writes SourceArtifact / RawDocument intake directly; legacy compatibility writers are disabled."
             echo "AI HOT, keyword, GDELT, and RSS are collected as independent source artifacts before V4 normalization."
             echo "First-line viewpoints are produced by .github/workflows/daily-first-line-viewpoints-pr.yml and are not part of this business-signal PR."
@@ -332,9 +350,30 @@ jobs:
             --stage=post-monitor \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-post-monitor-gate.log"
 
+      - name: Persist originals privately and enforce the public boundary
+        id: evidence-boundary
+        if: always() && steps.existing-assets.outputs.skip != 'true' && steps.persistent-assets-post-monitor.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run assert:private-evidence-remote
+          npm run backup:private-evidence
+          npm run migrate:private-evidence
+          npm run assert:private-evidence-backup
+          npm run assert:public-evidence-boundary
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name "github-actions[bot]"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" add -A
+          if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "Persist private evidence for ${RUN_DATE}"
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
+            npm run assert:private-evidence-remote
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
+          fi
+
       - name: Build Data Center V4 factual bundle
         id: data-center-v4
-        if: (steps.monitor.outcome == 'success' || steps.resume-artifact.outputs.used == 'true') && steps.persistent-assets-post-monitor.outcome == 'success'
+        if: (steps.monitor.outcome == 'success' || steps.resume-artifact.outputs.used == 'true') && steps.persistent-assets-post-monitor.outcome == 'success' && steps.evidence-boundary.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -506,7 +545,7 @@ jobs:
           |---|---|
           | Structured SourceArtifact / RawDocument intake | $(state_for "01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json") |
           | Source raw artifacts | $(state_for "agent-workflow/reports/source-runs/${RUN_DATE}") |
-          | Immutable source snapshots | $(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}") |
+          | Public evidence locator index | $(state_for "01-SiteV2/content/01-raw/source-index.jsonl") |
           | Data Center V4 bundle | $(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json") |
           | Funding Insights application bundle | $(state_for "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json") |
           | Funding Insights frontstage | $(state_for "01-SiteV2/site/data/funding-insights-v1.json") |
@@ -516,7 +555,7 @@ jobs:
           ## Persistence Rule
 
           The Data Center V4 bundle must be committed only after its integrity gate passes.
-          Structured intake and immutable source snapshots replace new candidate-index Markdown.
+          Structured intake and private evidence objects replace new candidate-index Markdown; the public repository retains only body-free locators.
           Accepted V4 facts persist after the V4 integrity/materialization gate.
           Compatibility writers are disabled; frozen compatibility output remains read-only in the archive.
           First-line viewpoints data is produced by the independent first-line workflow.
@@ -543,7 +582,7 @@ jobs:
             "assets": {
               "structured_intake": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json")",
               "source_intake_artifacts": "$(state_for "agent-workflow/reports/source-runs/${RUN_DATE}")",
-              "source_snapshots": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
+              "public_evidence_locators": "$(state_for "01-SiteV2/content/01-raw/source-index.jsonl")",
               "data_center_v4_bundle": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json")",
               "trend_radar_frontstage": "$(state_for "01-SiteV2/site/data/trend-radar-v1.json")",
               "funding_insights_frontstage": "$(state_for "01-SiteV2/site/data/funding-insights-v1.json")",
@@ -571,7 +610,7 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.json
             agent-workflow/reports/frontstage-regression-gate-*.md
-            01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
+            01-SiteV2/content/01-raw/source-index.jsonl
             01-SiteV2/content/11-databases/source-title-translations.json
             01-SiteV2/content/11-databases/data-center-v4/intake-v1/${{ steps.run-date.outputs.date }}.json
             01-SiteV2/content/11-databases/data-center-v4/${{ steps.run-date.outputs.date }}/**
@@ -618,7 +657,7 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-monitor-quality-gate.md"
 
           if [ "${{ steps.data-center-v4-materialize.outcome }}" = "success" ]; then
-            stage_if_exists "01-SiteV2/content/01-raw/originals/${RUN_DATE}"
+            stage_if_exists "01-SiteV2/content/01-raw/source-index.jsonl"
             stage_if_exists "01-SiteV2/content/11-databases/source-title-translations.json"
             stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json"
             stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}"
@@ -675,7 +714,7 @@ jobs:
           Data Center V4 update for ${RUN_DATE}.
 
           What this PR contains:
-          - Structured SourceArtifact / RawDocument intake and immutable source snapshots.
+          - Structured SourceArtifact / RawDocument intake and body-free evidence locators; complete originals are committed only to the private evidence repository.
           - Data Center V4 factual bundle generated, gated, and materialized before application projections.
           - Opportunity Map, Trend Radar, and Funding Insights generated from V4 evidence.
           - Operations dashboard data included after V4 materialization.

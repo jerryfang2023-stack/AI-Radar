@@ -1,0 +1,96 @@
+[
+  {
+    "hardware_fact_id": "HWF-a32f96bee4c60808",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-07-28T07:53:48.000Z",
+    "subject_entity_id": "EN-95b0632f1b292fa7",
+    "subject_name": "PrismML",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "gpu",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "In this tutorial, we deploy the 1-bit Bonsai-27B language model using the PrismML fork of llama.cpp, which provides the specialized CUDA kernels required to decode the model’s Q1_0_g128 GGUF quantization format. We begin by validating the GPU runtime, installing the required Python dependencies, compiling the CUDA-enabled inference binaries, and downloading the compressed model weights from Hugging Face. We then test the model through llama-cli, launch an OpenAI-compatible local inference server, and interact with it through a reusable Python client that supports standard completions, streamed responses, multi-turn conversations, and code generation. We also examine optional configurations for throughput benchmarking, quantized key-value caching, long-context inference, speculative decoding, and multimodal extensions.",
+    "event_refs": [
+      "EV-dda9429d76897a3d"
+    ],
+    "claim_ref": "CL-e6f482eef3443024",
+    "source_refs": [
+      "SA-388a9d6d464b7551"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-cd64ac65d739081f",
+    "fact_type": "product",
+    "observed_at": "2026-07-23T00:00:00.000Z",
+    "subject_entity_id": "EN-240389f4b730bad4",
+    "subject_name": "AMD",
+    "product_entity_ids": [
+      "EN-8c9ab5b09bf138fc",
+      "EN-f53212e480f217e1"
+    ],
+    "product_names": [
+      "EPYC CPUs",
+      "AAI 2026"
+    ],
+    "component_type": "gpu",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "At Advancing AI 2026, AMD launches 6th Gen AMD EPYC™ CPUs, AMD Instinct™ MI400 Series GPUs, AMD Helios™ AI rackscale solutions, AMD Ryzen™ AI Embedded X100 processors and the AMD Kria™ AI SOM and Robotics Developer Platform.",
+    "event_refs": [
+      "EV-2bbbe9f38c3d66f0"
+    ],
+    "claim_ref": "CL-d0beb7087776b36e",
+    "source_refs": [
+      "SA-fc1e3b53d6e38ecd"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-c7adc3698adf892a",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-07-28T14:22:39.000Z",
+    "subject_entity_id": "EN-240389f4b730bad4",
+    "subject_name": "AMD",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "data_center",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "此次合作将使 AMD 自 2027 年起获得 Core Scientific 超过 500 兆瓦的 AI 数据中心容量，其客户可利用这些设施部署人工智能系统。",
+    "event_refs": [
+      "EV-ad8e1754463695fd"
+    ],
+    "claim_ref": "CL-0bb8dac394ffa195",
+    "source_refs": [
+      "SA-146a6bdbb07f4909"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-35eaca87a98d223b",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-07-28T08:38:20.000Z",
+    "subject_entity_id": "EN-aabd1a8a869c34a4",
+    "subject_name": "Kimi K3",
+    "product_entity_ids": [
+      "EN-607964040e4b62e0"
+    ],
+    "product_names": [
+      "Kimi K3"
+    ],
+    "component_type": "compute_cluster",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
+    "event_refs": [
+      "EV-0d5a32aca724d30e"
+    ],
+    "claim_ref": "CL-2c626d78e65c2afc",
+    "source_refs": [
+      "SA-d37a791cf113478a",
+      "SA-4fedd07f0df44eb4",
+      "SA-8cff4a3f890c6d93",
+      "SA-89ca130f6dc317fe",
+      "SA-8cbf1980971c0828"
+    ]
+  }
+]

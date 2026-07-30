@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1717,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-e0f4f767ac88a930",
+    "name": "Today",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-343f568b0e02c478"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-14",
+    "lastSeen": "2026-07-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-343f568b0e02c478"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-343f568b0e02c478",
+        "dataDate": "2026-07-15",
+        "date": "2026-07-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "宣布完成2200万美元A轮融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b064957978b06ed4",
+          "EN-e0f4f767ac88a930",
+          "EN-4e351837ac6c8c97",
+          "EN-5dc0870c281bf132"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

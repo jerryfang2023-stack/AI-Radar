@@ -7,6 +7,12 @@ import { fileURLToPath } from "url";
 import { extractExplicitProductNames } from "../product/product-entity-normalizer.mjs";
 import { buildEventDisplayTitle, isCompletePublicEventTitle } from "./event-public-title.mjs";
 import { loadSourceIntakeEntries } from "./lib/source-intake-v1.mjs";
+import {
+  availablePrivateEvidenceDates,
+  evidenceRef,
+  loadPrivateEvidenceEntries,
+} from "./lib/private-evidence-store.mjs";
+import { normalizeEvidenceBody } from "./lib/evidence-body-normalizer.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,7 +24,7 @@ const taxonomyPath = path.join(root, "agent-workflow/product/tag-taxonomy-v4.jso
 
 const VERSION = Object.freeze({
   product: "SITE-V4.0-data-center",
-  raw: "RAW-V3.0",
+  raw: "RAW-V4.0",
   event: "EVENT-V1.1",
   fde: "FDE-V2.0",
   fdeObservation: "FDE-OBSERVATION-V1.0",
@@ -380,31 +386,19 @@ function availableDates() {
   const intakeDates = !fs.existsSync(intakeRoot) ? [] : fs.readdirSync(intakeRoot)
     .filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(name))
     .map((name) => name.replace(/\.json$/u, ""));
-  return [...new Set([...snapshotDates, ...intakeDates])].sort();
+  const privateDates = availablePrivateEvidenceDates(root);
+  return [...new Set([...snapshotDates, ...intakeDates, ...privateDates])].sort();
 }
 
 function trimBoilerplate(text) {
-  const normalized = cleanString(text).replace(/\r\n?/gu, "\n");
-  const lines = normalized.split("\n");
-  const kept = [];
-  for (const line of lines) {
-    const trimmed = line.trim();
-    if (kept.join("\n").length > 20 && BOILERPLATE_LINE.test(trimmed)) break;
-    if (/^(?:image credits?|photo credits?):/iu.test(trimmed)) continue;
-    kept.push(line.trimEnd());
-  }
-  return kept.join("\n").replace(/\n{3,}/gu, "\n\n").trim();
+  return normalizeEvidenceBody(text);
 }
 
 function sourceArtifact(raw, file) {
   const sourceUrl = cleanString(raw.original_url || raw.canonical_url || raw.source_url || raw.url || raw.link || raw.discovery_record?.origin_url);
   const contentHash = cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text));
   const sourceIdentity = sourceUrl || rel(file);
-  const snapshotRefs = [raw.markdown_snapshot_path, raw.json_snapshot_path, raw.html_snapshot_path, raw.screenshot_path, file]
-    .map(cleanString)
-    .map((ref) => ref ? path.resolve(path.isAbsolute(ref) ? ref : path.join(root, ref)) : "")
-    .filter((resolved) => resolved && (resolved === root || resolved.startsWith(`${root}${path.sep}`)) && fs.existsSync(resolved))
-    .map(rel);
+  const snapshotRefs = [evidenceRef(contentHash)];
   return {
     source_artifact_id: `SA-${hash(`${sourceIdentity}|${contentHash}`)}`,
     source_url: sourceUrl,
@@ -1440,7 +1434,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       claim_ids: [],
       entity_mention_ids: [],
       event_candidate_ids: [],
-      body_ref: rel(file)
+      body_ref: evidenceRef(artifact.content_hash)
     };
     sourceArtifacts.push(artifact);
 
@@ -1721,6 +1715,13 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     claim_ref: claim.claim_id,
     source_refs: event.source_refs
   })));
+  for (const raw of rawDocuments) {
+    raw.body_length = raw.body_clean.length;
+    raw.body_storage = "private_evidence_store";
+    delete raw.body_original;
+    delete raw.body_clean;
+  }
+
   const files = {
     source_artifacts: sourceArtifacts,
     raw_documents: rawDocuments,
@@ -1867,11 +1868,15 @@ function loadRawEntries(date) {
     return intake.entries;
   }
   const dir = path.join(rawRoot, date);
-  if (!fs.existsSync(dir)) throw new Error(`Raw originals directory not found: ${rel(dir)}`);
-  return fs.readdirSync(dir).filter((name) => name.endsWith(".json")).sort().map((name) => {
-    const file = path.join(dir, name);
-    return { raw: readJson(file), file };
-  });
+  if (fs.existsSync(dir)) {
+    return fs.readdirSync(dir).filter((name) => name.endsWith(".json")).sort().map((name) => {
+      const file = path.join(dir, name);
+      return { raw: readJson(file), file };
+    });
+  }
+  const privateEntries = loadPrivateEvidenceEntries(root, date);
+  if (!privateEntries.length) throw new Error(`No private Raw evidence is available for ${date}.`);
+  return privateEntries;
 }
 
 function main() {

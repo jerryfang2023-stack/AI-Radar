@@ -2,7 +2,7 @@
 
 - status: passed
 - canonical_events: 28
-- claims: 87
+- claims: 88
 - tag_assertions: 19
 - facet_assertions: 17
 - fde_records: 1

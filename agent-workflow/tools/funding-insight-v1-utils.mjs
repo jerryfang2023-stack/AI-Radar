@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.0";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.0";
@@ -54,7 +55,8 @@ export function loadDailyBundle(root, date) {
     events: readJson(path.join(dir, "canonical-events.json"), []),
     claims: readJson(path.join(dir, "claims.json"), []),
     entities: readJson(path.join(dir, "entities.json"), []),
-    rawDocuments: readJson(path.join(dir, "raw-documents.json"), []),
+    rawDocuments: readJson(path.join(dir, "raw-documents.json"), [])
+      .map((raw) => hydrateRawDocument(root, raw, { required: false })),
     sourceArtifacts: readJson(path.join(dir, "source-artifacts.json"), []),
   };
 }

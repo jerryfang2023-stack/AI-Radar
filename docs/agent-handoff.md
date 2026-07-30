@@ -12,13 +12,13 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current release: `V4.4.0-operations-converged`; public website and data-service shell `SITE-V4.3.0-compatibility-retired`.
+- Current release: `V4.5.0-private-evidence-source`; public website and data-service shell `SITE-V4.3.0-compatibility-retired`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public frontstage: Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports.
 - Current backend: Dashboard / operations console.
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.1-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.0-23-table`, rebuilt and gated by Final Closure.
-- Current private evidence backup: `PRIVATE-EVIDENCE-BACKUP-V1.0`, content-addressed and outside the repository/Vault. Repository raw snapshots remain production inputs; the Vault stores evidence locators, not original bodies.
+- Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 

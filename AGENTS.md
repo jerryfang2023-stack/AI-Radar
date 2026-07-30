@@ -6,10 +6,10 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current release: WaveSight `V4.4.0-operations-converged`; the public shell remains `SITE-V4.3.0-compatibility-retired`.
-- Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.1-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
+- Current release: WaveSight `V4.5.0-private-evidence-source`; the public shell remains `SITE-V4.3.0-compatibility-retired`.
+- Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 23-table `DATA-LAKE-V4.0` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
-- Current evidence archive: `PRIVATE-EVIDENCE-BACKUP-V1.0` is a content-addressed private backup outside the repository and Vault. Repository raw snapshots remain the current V4 production source; the Vault stores locators and links, never original bodies.
+- Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
@@ -22,7 +22,8 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Reports Center column version: REPORTS-V1.1.0-lane-independent.
 - Current Opportunity Map column version: OMAP-V2.0.0-v4-evidence.
 - Current Trend Radar column version: TRADAR-V1.0.0-factual-change-explorer.
-- Current Raw contract: RAW-V3.0.
+- Current Raw contract: RAW-V4.0. Full original bodies live only in the configured private evidence repository; public bundles retain `evidence://<content_hash>` locators and body-free metadata.
+- Current structured source-intake contract: SOURCE-INTAKE-V1.1.
 - Current canonical event contract: EVENT-V1.1.
 - Current entity history contract: ENTITY-V1.0.
 - Current person-account review contract: PERSON-REVIEW-V1.0.

@@ -12,7 +12,7 @@ validation.
 
 ## Production order
 
-1. Capture immutable source snapshots and write `SOURCE-INTAKE-V1`.
+1. Capture ephemeral source snapshots, write `SOURCE-INTAKE-V1`, persist complete bodies in the private evidence store, and remove public body copies.
 2. Build SourceArtifact, RawDocument, exact-span Claim, Entity, CanonicalEvent,
    relationship, FDE, hardware, tag, and facet tables.
 3. Pass V4 integrity and materialization gates.

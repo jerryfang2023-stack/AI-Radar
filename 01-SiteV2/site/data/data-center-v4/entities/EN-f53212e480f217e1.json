@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -295,5 +295,78 @@
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-cbb88a8475dff60b",
+      "snapshotKey": "cbb88a8475dff60b",
+      "snapshotId": "HWS-92cdee16d6162f7f",
+      "eventId": "EV-2bbbe9f38c3d66f0",
+      "eventIds": [
+        "EV-2bbbe9f38c3d66f0"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "EPYC CPUs / AAI 2026",
+      "subject": "AMD",
+      "productNames": [
+        "EPYC CPUs",
+        "AAI 2026"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-cd64ac65d739081f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-cd64ac65d739081f",
+          "fact_type": "product",
+          "observed_at": "2026-07-23T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-8c9ab5b09bf138fc",
+            "EN-f53212e480f217e1"
+          ],
+          "product_names": [
+            "EPYC CPUs",
+            "AAI 2026"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "At Advancing AI 2026, AMD launches 6th Gen AMD EPYC™ CPUs, AMD Instinct™ MI400 Series GPUs, AMD Helios™ AI rackscale solutions, AMD Ryzen™ AI Embedded X100 processors and the AMD Kria™ AI SOM and Robotics Developer Platform.",
+          "event_refs": [
+            "EV-2bbbe9f38c3d66f0"
+          ],
+          "claim_ref": "CL-d0beb7087776b36e",
+          "source_refs": [
+            "SA-fc1e3b53d6e38ecd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/23/3332491/0/en/AAI-2026-AMD-Delivers-Full-Stack-Compute-for-the-Agentic-AI-Era.html",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-8c9ab5b09bf138fc",
+        "EN-f53212e480f217e1"
+      ]
+    }
+  ]
 }

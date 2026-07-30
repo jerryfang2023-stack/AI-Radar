@@ -6,7 +6,7 @@
     "eventVersion": "EVENT-V1.1",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:40.186Z",
+    "generatedAt": "2026-07-30T11:11:01.427Z",
     "latestDataDate": "2026-07-30",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -30,8 +30,8 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 1668,
-      "entities": 562,
+      "events": 1660,
+      "entities": 563,
       "relationships": 351
     }
   },
@@ -135,8 +135,8 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-f1553722b4ce43af"
     },
-    "EV-506f1936ecfb350f": {
-      "id": "EV-506f1936ecfb350f",
+    "EV-2315aada5ad36397": {
+      "id": "EV-2315aada5ad36397",
       "dataDate": "2026-07-29",
       "occurrenceDate": "2026-07-28",
       "eventType": "funding",
@@ -145,7 +145,9 @@
       "category": "financing",
       "title": "Fish Audio 获 5000 万美元种子轮融资，为创作者和企业构建 AI 语音模型",
       "entityIds": [],
-      "entityNames": [],
+      "entityNames": [
+        "Fish Audio"
+      ],
       "productNames": [],
       "classifications": [
         {
@@ -167,44 +169,32 @@
       "sourceUrl": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
       "publisher": "TechCrunch：AI（RSS）",
       "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-506f1936ecfb350f"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-2315aada5ad36397"
     },
-    "EV-5f3ccb941a2fe5d7": {
-      "id": "EV-5f3ccb941a2fe5d7",
+    "EV-2a78dd5feb40a78a": {
+      "id": "EV-2a78dd5feb40a78a",
       "dataDate": "2026-07-29",
       "occurrenceDate": "2026-07-28",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "publicationStatus": "verified",
       "category": "financing",
-      "title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
+      "title": "Harmony 获 3400 万美元融资，以 AI 重塑员工体验",
       "entityIds": [
         "EN-9fbf261b62c1d7c0"
       ],
       "entityNames": [
-        "AI Startup Harmony",
-        "Microsoft",
-        "Harmony"
+        "NEW YORK CITY",
+        "Harmony",
+        "Microsoft"
       ],
       "productNames": [],
       "classifications": [
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "human_in_loop",
-          "name": "人在回路"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "enterprise_operations",
-          "dimensionName": "应用场景",
-          "name": "企业运营自动化"
         },
         {
           "dimensionId": "product_form",
@@ -214,10 +204,6 @@
         }
       ],
       "claimIds": [
-        "CL-bbbcee89945f7061",
-        "CL-8ba8111fd66039f0",
-        "CL-9634e455445f513a",
-        "CL-f7e5051ea9a7c649",
         "CL-b3aa52eecfc1a549",
         "CL-a73931cbf1763697",
         "CL-e8cc0443155d324c",
@@ -225,14 +211,13 @@
         "CL-ac14817bd8b912a0"
       ],
       "sourceIds": [
-        "SA-407e1806d4af2005",
         "SA-4179346bb8aa6324",
         "SA-6e01a4e9e174ac13"
       ],
-      "sourceUrl": "https://businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
-      "publisher": "businessinsider.com",
+      "sourceUrl": "https://accessnewswire.com/newsroom/en/computers-technology-and-internet/harmony-raises-34-million-to-reinvent-employee-experience-powered-1193998",
+      "publisher": "accessnewswire.com",
       "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5f3ccb941a2fe5d7"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-2a78dd5feb40a78a"
     },
     "EV-9490bae84e7b4707": {
       "id": "EV-9490bae84e7b4707",
@@ -268,6 +253,43 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-9490bae84e7b4707"
     },
+    "EV-976c03b6664d3a3b": {
+      "id": "EV-976c03b6664d3a3b",
+      "dataDate": "2026-07-29",
+      "occurrenceDate": "2026-07-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "机器人检测初创公司 Spur 获 Insight Partners 2 亿美元融资",
+      "entityIds": [],
+      "entityNames": [
+        "Spur",
+        "Spur Intelligence"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "claimIds": [
+        "CL-39dd650e9c9f8bfe",
+        "CL-a6c64382a504974e",
+        "CL-091cbec8468b246b",
+        "CL-7bd28d8cef0672cd"
+      ],
+      "sourceIds": [
+        "SA-4baa9d94ac1d0aa5"
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/28/bot-detection-startup-spur-nabs-200m-from-insight",
+      "publisher": "TechCrunch：AI（RSS）",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-976c03b6664d3a3b"
+    },
     "EV-a9a8f673cb666d49": {
       "id": "EV-a9a8f673cb666d49",
       "dataDate": "2026-07-29",
@@ -296,40 +318,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-a9a8f673cb666d49"
     },
-    "EV-e2e51316d0075b44": {
-      "id": "EV-e2e51316d0075b44",
-      "dataDate": "2026-07-29",
-      "occurrenceDate": "2026-07-28",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "机器人检测初创公司 Spur 获 Insight Partners 2 亿美元融资",
-      "entityIds": [],
-      "entityNames": [],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "claimIds": [
-        "CL-39dd650e9c9f8bfe",
-        "CL-a6c64382a504974e",
-        "CL-091cbec8468b246b",
-        "CL-7bd28d8cef0672cd"
-      ],
-      "sourceIds": [
-        "SA-4baa9d94ac1d0aa5"
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/07/28/bot-detection-startup-spur-nabs-200m-from-insight",
-      "publisher": "TechCrunch：AI（RSS）",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-e2e51316d0075b44"
-    },
     "EV-33b3cf34f8ff7bd8": {
       "id": "EV-33b3cf34f8ff7bd8",
       "dataDate": "2026-07-29",
@@ -341,7 +329,8 @@
       "title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
       "entityIds": [],
       "entityNames": [
-        "Multiverse Computing"
+        "Multiverse Computing",
+        "SAN SEBASTIAN"
       ],
       "productNames": [],
       "classifications": [],
@@ -1436,10 +1425,12 @@
       "category": "financing",
       "title": "InstaLILY 融资 6000 万美元，将 AI 智能体引入建筑和物流企业",
       "entityIds": [
-        "EN-b0bc23fa8e20c543"
+        "EN-b0bc23fa8e20c543",
+        "EN-1bf93b12e68cac56"
       ],
       "entityNames": [
-        "InstaLILY"
+        "InstaLILY",
+        "The Home Depot"
       ],
       "productNames": [],
       "classifications": [
@@ -2079,7 +2070,8 @@
         "EN-2dcd958b2064843f"
       ],
       "entityNames": [
-        "Thira"
+        "Thira",
+        "Madrona"
       ],
       "productNames": [],
       "classifications": [],
@@ -2128,91 +2120,37 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-4da1a7c4d527eb69"
     },
-    "EV-2dff32c1b6f813e4": {
-      "id": "EV-2dff32c1b6f813e4",
+    "EV-343f568b0e02c478": {
+      "id": "EV-343f568b0e02c478",
       "dataDate": "2026-07-15",
       "occurrenceDate": "2026-07-14",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "publicationStatus": "verified",
       "category": "financing",
-      "title": "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE",
-      "entityIds": [
-        "EN-cf9488537f777c1a",
-        "EN-96eebba49dbbf422"
-      ],
+      "title": "宣布完成2200万美元A轮融资",
+      "entityIds": [],
       "entityNames": [
-        "TYLsemi",
-        "Intel"
+        "Announcing our $22 Million",
+        "Today",
+        "Thomas Stewart",
+        "In 2026"
       ],
       "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "healthcare_life_sciences",
-          "dimensionName": "行业",
-          "name": "医疗与生命科学"
-        }
-      ],
+      "classifications": [],
       "claimIds": [
-        "CL-0f7de1f289c977b6",
-        "CL-5192ba89fe6ed0e1",
-        "CL-fcb2de937150ec2c",
-        "CL-09b924ea73ded312"
+        "CL-dcb7eeb6d6a3065d",
+        "CL-3372209a15f0cc21",
+        "CL-fab3c3d58e127030",
+        "CL-ae6f22e3e93e6ad7"
       ],
       "sourceIds": [
-        "SA-903d243c7a19a7c1"
+        "SA-8da4900888d68499"
       ],
-      "sourceUrl": "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding",
-      "publisher": "siliconangle.com",
+      "sourceUrl": "https://hadrius.com/insights/series-a",
+      "publisher": "hadrius.com",
       "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-2dff32c1b6f813e4"
-    },
-    "EV-305ec93673f4f12e": {
-      "id": "EV-305ec93673f4f12e",
-      "dataDate": "2026-07-15",
-      "occurrenceDate": "2026-07-14",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
-      "entityIds": [
-        "EN-92dd63c8e5c77e8a",
-        "EN-96eebba49dbbf422"
-      ],
-      "entityNames": [
-        "Valarian",
-        "Intel"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        }
-      ],
-      "claimIds": [
-        "CL-7458655a99f1861f",
-        "CL-faf3cae637d7aba5",
-        "CL-71ac2d8d11c631e7",
-        "CL-9bf95780708c3f3b"
-      ],
-      "sourceIds": [
-        "SA-f8f254133ecf50ed"
-      ],
-      "sourceUrl": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems",
-      "publisher": "siliconangle.com",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-305ec93673f4f12e"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-343f568b0e02c478"
     },
     "EV-87432dbb99cd6033": {
       "id": "EV-87432dbb99cd6033",
@@ -2251,8 +2189,53 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-87432dbb99cd6033"
     },
-    "EV-df789745fb926bfd": {
-      "id": "EV-df789745fb926bfd",
+    "EV-b2d94511e4b4dfc8": {
+      "id": "EV-b2d94511e4b4dfc8",
+      "dataDate": "2026-07-15",
+      "occurrenceDate": "2026-07-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE",
+      "entityIds": [
+        "EN-cf9488537f777c1a"
+      ],
+      "entityNames": [
+        "Custom AI chip design startup TYLsemi",
+        "TYLsemi"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "claimIds": [
+        "CL-0f7de1f289c977b6",
+        "CL-5192ba89fe6ed0e1",
+        "CL-fcb2de937150ec2c",
+        "CL-09b924ea73ded312"
+      ],
+      "sourceIds": [
+        "SA-903d243c7a19a7c1"
+      ],
+      "sourceUrl": "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding",
+      "publisher": "siliconangle.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-b2d94511e4b4dfc8"
+    },
+    "EV-ecc12e5ec883b7e7": {
+      "id": "EV-ecc12e5ec883b7e7",
       "dataDate": "2026-07-15",
       "occurrenceDate": "2026-07-14",
       "eventType": "funding",
@@ -2264,6 +2247,7 @@
         "EN-7706c3c94d5f9b59"
       ],
       "entityNames": [
+        "The founder of Hinge",
         "Hinge"
       ],
       "productNames": [],
@@ -2280,34 +2264,7 @@
       "sourceUrl": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone",
       "publisher": "TechCrunch AI",
       "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-df789745fb926bfd"
-    },
-    "EV-f61a61d1287e2ca9": {
-      "id": "EV-f61a61d1287e2ca9",
-      "dataDate": "2026-07-15",
-      "occurrenceDate": "2026-07-14",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "宣布完成2200万美元A轮融资",
-      "entityIds": [],
-      "entityNames": [],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-dcb7eeb6d6a3065d",
-        "CL-3372209a15f0cc21",
-        "CL-fab3c3d58e127030",
-        "CL-ae6f22e3e93e6ad7"
-      ],
-      "sourceIds": [
-        "SA-8da4900888d68499"
-      ],
-      "sourceUrl": "https://hadrius.com/insights/series-a",
-      "publisher": "hadrius.com",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-f61a61d1287e2ca9"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-ecc12e5ec883b7e7"
     },
     "EV-7a85e21802efd8b2": {
       "id": "EV-7a85e21802efd8b2",
@@ -2476,45 +2433,6 @@
       "publisher": "The Decoder：AI News（RSS）",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-427081ec574b43bb"
-    },
-    "EV-43b7f45e9bd7ec9b": {
-      "id": "EV-43b7f45e9bd7ec9b",
-      "dataDate": "2026-07-11",
-      "occurrenceDate": "2026-07-11",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录",
-      "entityIds": [
-        "EN-047364b9be67f665"
-      ],
-      "entityNames": [
-        "SK Hynix 美国 IPO",
-        "Alibaba"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        }
-      ],
-      "claimIds": [
-        "CL-2d201e79b5367646",
-        "CL-273d892f50d0c904",
-        "CL-f7f0b9774f2fb13f",
-        "CL-ae2554656695a66f"
-      ],
-      "sourceIds": [
-        "SA-f7d06e5d1dda0155"
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs",
-      "publisher": "TechCrunch：AI（RSS）",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-43b7f45e9bd7ec9b"
     },
     "EV-095e1a90f14ccdb9": {
       "id": "EV-095e1a90f14ccdb9",
@@ -11999,7 +11917,8 @@
       "title": "工作流自动化初创公司 Parabola 获 2400 万美元融资",
       "entityIds": [],
       "entityNames": [
-        "Workflow automation startup Parabola"
+        "Workflow automation startup Parabola",
+        "Alex Yaseen"
       ],
       "productNames": [],
       "classifications": [
@@ -15036,34 +14955,6 @@
       "publisher": "chinadaily.com.cn",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-b4eb99a878be9bb2"
-    },
-    "EV-09964ee52fa77b9a": {
-      "id": "EV-09964ee52fa77b9a",
-      "dataDate": "2026-07-11",
-      "occurrenceDate": "2026-07-10",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "publicationStatus": "verified",
-      "category": "deployment",
-      "title": "你愿意在家托管部分AI数据中心吗？",
-      "entityIds": [
-        "EN-1477cddb70657ceb"
-      ],
-      "entityNames": [
-        "Sunrun"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-d1d989bce9395796"
-      ],
-      "sourceIds": [
-        "SA-97c4cc7def67489b"
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
-      "publisher": "The Verge AI",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-09964ee52fa77b9a"
     },
     "EV-38232fed5e0cfdd6": {
       "id": "EV-38232fed5e0cfdd6",
@@ -18277,6 +18168,7 @@
       "category": "deployment",
       "title": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
       "entityIds": [
+        "EN-1bf93b12e68cac56",
         "EN-bbdefa2950f49882"
       ],
       "entityNames": [
@@ -20694,7 +20586,6 @@
       ],
       "entityNames": [
         "Alipay",
-        "支付宝",
         "OPPO达成智能体跨端互联",
         "OPPO"
       ],
@@ -20742,8 +20633,7 @@
       ],
       "entityNames": [
         "NVIDIA",
-        "Mitsubishi Heavy Industries",
-        "三菱重工"
+        "Mitsubishi Heavy Industries"
       ],
       "productNames": [],
       "classifications": [
@@ -23386,14 +23276,12 @@
       "entityIds": [
         "EN-f4bec299df3f4f27",
         "EN-373ac021a2c0bb2c",
-        "EN-c13e2f4a44bb01ed",
-        "EN-2a920347dfcf07a7"
+        "EN-c13e2f4a44bb01ed"
       ],
       "entityNames": [
         "FuriosaAI",
         "Broadcom",
-        "Samsung SDS",
-        "Aina"
+        "Samsung SDS"
       ],
       "productNames": [],
       "classifications": [
@@ -24504,54 +24392,6 @@
       "publisher": "Hugging Face：Blog（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-1013855c203f8014"
-    },
-    "EV-1807c7ebedd81f8c": {
-      "id": "EV-1807c7ebedd81f8c",
-      "dataDate": "2026-07-29",
-      "occurrenceDate": "2026-07-28",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "MCP 2026-07-28 规范发布：传输转为无状态",
-      "entityIds": [],
-      "entityNames": [
-        "MCP 2026",
-        "MCP continued"
-      ],
-      "productNames": [
-        {
-          "name": "MCP 2026",
-          "type": "产品/服务",
-          "ownerNames": []
-        },
-        {
-          "name": "MCP continued",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "claimIds": [
-        "CL-f1a329578c626aa5",
-        "CL-4dad68b3f6f23b19",
-        "CL-d780bca53ac542b3",
-        "CL-4efb909f3976b137"
-      ],
-      "sourceIds": [
-        "SA-0eef2bbfac7ba908"
-      ],
-      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/2026-07-28",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-1807c7ebedd81f8c"
     },
     "EV-1a49599f6efcee6d": {
       "id": "EV-1a49599f6efcee6d",
@@ -31769,6 +31609,57 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-fe4eeb733d1682ed"
     },
+    "EV-124845780a32bc40": {
+      "id": "EV-124845780a32bc40",
+      "dataDate": "2026-07-20",
+      "occurrenceDate": "2026-07-20",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，推出 657MB 本地推理模型",
+      "entityIds": [
+        "EN-ca95aeb01df069e5",
+        "EN-b076867237fbeb34",
+        "EN-3a13916345b60fad"
+      ],
+      "entityNames": [
+        "OpenBMB",
+        "MiniCPM5-1B",
+        "Claude Fable 5"
+      ],
+      "productNames": [
+        {
+          "name": "OpenBMB",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "MiniCPM5-1B",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "Claude Fable 5",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-b3d90d07f2887208",
+        "CL-28867b44009cc25a",
+        "CL-8e43f82ce9aaa486",
+        "CL-448a762071f9b2e5"
+      ],
+      "sourceIds": [
+        "SA-251416540fd3f08b"
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/19/someone-fine-tuned-openbmbs-minicpm5-1b-on-claude-fable-5-traces-to-ship-a-657mb-local-thinking-model",
+      "publisher": "MarkTechPost（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-124845780a32bc40"
+    },
     "EV-3fedea3a77dc26ed": {
       "id": "EV-3fedea3a77dc26ed",
       "dataDate": "2026-07-20",
@@ -31943,65 +31834,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-9d5363657f3541e7"
     },
-    "EV-b20bf10af759bd43": {
-      "id": "EV-b20bf10af759bd43",
-      "dataDate": "2026-07-20",
-      "occurrenceDate": "2026-07-20",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "开发者用 Claude Fable 5 轨迹微调 OpenBMB 的 MiniCPM5-1B，推出 657MB 本地推理模型",
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-ca95aeb01df069e5",
-        "EN-b076867237fbeb34",
-        "EN-3a13916345b60fad"
-      ],
-      "entityNames": [
-        "Anthropic",
-        "OpenBMB",
-        "MiniCPM5-1B",
-        "Claude Fable 5"
-      ],
-      "productNames": [
-        {
-          "name": "OpenBMB",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        },
-        {
-          "name": "MiniCPM5-1B",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        },
-        {
-          "name": "Claude Fable 5",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        }
-      ],
-      "classifications": [],
-      "claimIds": [
-        "CL-b3d90d07f2887208",
-        "CL-28867b44009cc25a",
-        "CL-8e43f82ce9aaa486",
-        "CL-448a762071f9b2e5"
-      ],
-      "sourceIds": [
-        "SA-251416540fd3f08b"
-      ],
-      "sourceUrl": "https://marktechpost.com/2026/07/19/someone-fine-tuned-openbmbs-minicpm5-1b-on-claude-fable-5-traces-to-ship-a-657mb-local-thinking-model",
-      "publisher": "MarkTechPost（RSS）",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-b20bf10af759bd43"
-    },
     "EV-b580e33cabfea980": {
       "id": "EV-b580e33cabfea980",
       "dataDate": "2026-07-20",
@@ -32034,7 +31866,7 @@
       ],
       "sourceUrl": "https://ithome.com/0/978/841.htm",
       "publisher": "IT之家（RSS）",
-      "metricDisclosed": false,
+      "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-b580e33cabfea980"
     },
     "EV-b8bc579bfa5797a2": {
@@ -36424,6 +36256,50 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-167f50a6f3134bd5"
     },
+    "EV-3433ad1746695875": {
+      "id": "EV-3433ad1746695875",
+      "dataDate": "2026-07-15",
+      "occurrenceDate": "2026-07-15",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "Claude Code v2.1.210 发布",
+      "entityIds": [
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Claude Code"
+      ],
+      "productNames": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "claimIds": [
+        "CL-4bea714ea47fc24f",
+        "CL-bc61708ff5b5493d",
+        "CL-35805c61d35f6a55",
+        "CL-d9d66c08731165a1"
+      ],
+      "sourceIds": [
+        "SA-8d8371357696159d"
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
+      "publisher": "Claude Code：GitHub Releases（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-3433ad1746695875"
+    },
     "EV-363fe72da52bdb86": {
       "id": "EV-363fe72da52bdb86",
       "dataDate": "2026-07-15",
@@ -36479,27 +36355,11 @@
       "entityNames": [
         "Samsung SDS",
         "FuriosaAI",
-        "FuriosaAI-Powered AI",
-        "July 16",
-        "Launch FuriosaAI-Powered AI"
+        "FuriosaAI-Powered AI"
       ],
       "productNames": [
         {
           "name": "FuriosaAI-Powered AI",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Samsung SDS"
-          ]
-        },
-        {
-          "name": "July 16",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Samsung SDS"
-          ]
-        },
-        {
-          "name": "Launch FuriosaAI-Powered AI",
           "type": "产品/服务",
           "ownerNames": [
             "Samsung SDS"
@@ -36529,14 +36389,12 @@
       "title": "Bonsai 27B 模型登场，12GB 内存 iPhone 17 Pro 可原生运行",
       "entityIds": [
         "EN-95b0632f1b292fa7",
-        "EN-047364b9be67f665",
         "EN-6f7ac1823da81d2e",
         "EN-3a7bd3e2360a3d29"
       ],
       "entityNames": [
         "Bonsai",
         "PrismML",
-        "Alibaba",
         "DeepSeek",
         "Apple"
       ],
@@ -36687,13 +36545,11 @@
       "entityIds": [
         "EN-3a7bd3e2360a3d29",
         "EN-95b0632f1b292fa7",
-        "EN-047364b9be67f665",
         "EN-03e2a9d18916f7c5"
       ],
       "entityNames": [
         "Apple",
         "PrismML",
-        "Alibaba",
         "Bonsai 27"
       ],
       "productNames": [
@@ -36726,53 +36582,6 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-8b9e4428074bde60"
-    },
-    "EV-8bf42c1816e772ba": {
-      "id": "EV-8bf42c1816e772ba",
-      "dataDate": "2026-07-15",
-      "occurrenceDate": "2026-07-15",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "Claude Code v2.1.210 发布",
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic",
-        "Claude Code v2.1.210"
-      ],
-      "productNames": [
-        {
-          "name": "Claude Code v2.1.210",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        }
-      ],
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "tool_use",
-          "name": "工具调用"
-        }
-      ],
-      "claimIds": [
-        "CL-4bea714ea47fc24f",
-        "CL-bc61708ff5b5493d",
-        "CL-35805c61d35f6a55",
-        "CL-d9d66c08731165a1"
-      ],
-      "sourceIds": [
-        "SA-8d8371357696159d"
-      ],
-      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
-      "publisher": "Claude Code：GitHub Releases（RSS）",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-8bf42c1816e772ba"
     },
     "EV-8c88edd0ad8ff029": {
       "id": "EV-8c88edd0ad8ff029",
@@ -36877,8 +36686,8 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-a442b55d0bac5651"
     },
-    "EV-e4f5a28a1c8396b6": {
-      "id": "EV-e4f5a28a1c8396b6",
+    "EV-bee1d02b343a89dd": {
+      "id": "EV-bee1d02b343a89dd",
       "dataDate": "2026-07-15",
       "occurrenceDate": "2026-07-15",
       "eventType": "product_release",
@@ -36888,15 +36697,9 @@
       "title": "Launch YC: Nitrode - 推动AI在游戏开发中的应用",
       "entityIds": [],
       "entityNames": [
-        "Launch YC",
         "YC"
       ],
       "productNames": [
-        {
-          "name": "Launch YC",
-          "type": "产品/服务",
-          "ownerNames": []
-        },
         {
           "name": "YC",
           "type": "产品/服务",
@@ -36916,7 +36719,7 @@
       "sourceUrl": "https://ycombinator.com/launches/RIH-nitrode-advancing-ai-for-game-development",
       "publisher": "ycombinator.com",
       "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-e4f5a28a1c8396b6"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-bee1d02b343a89dd"
     },
     "EV-9cd1cb31e2adf5dc": {
       "id": "EV-9cd1cb31e2adf5dc",
@@ -36991,13 +36794,11 @@
       "entityIds": [
         "EN-7d3194f79e645c42",
         "EN-cbc62794911ff31b",
-        "EN-96eebba49dbbf422",
         "EN-7839fb10a8f14c70"
       ],
       "entityNames": [
         "OpenAI",
         "Amazon",
-        "Intel",
         "GPT-5.6 Sol"
       ],
       "productNames": [
@@ -37198,38 +36999,31 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-49d9029bdcf87db4"
     },
-    "EV-5cd7eaa56c1fbb83": {
-      "id": "EV-5cd7eaa56c1fbb83",
+    "EV-4e54b77583b0a83e": {
+      "id": "EV-4e54b77583b0a83e",
       "dataDate": "2026-07-15",
       "occurrenceDate": "2026-07-14",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "publicationStatus": "verified",
       "category": "product",
-      "title": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+      "title": "LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS",
       "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-b644c0a9d493976a",
-        "EN-cb4754c48f8023d0"
+        "EN-6f7ac1823da81d2e"
       ],
       "entityNames": [
-        "Anthropic",
-        "OpenCode",
-        "Claude Code"
+        "LMSYS 与 SGLang",
+        "LMSYS",
+        "SGLang",
+        "DeepSeek",
+        "GLM-5.2 NVFP4"
       ],
       "productNames": [
         {
-          "name": "OpenCode",
+          "name": "GLM-5.2 NVFP4",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
-          ]
-        },
-        {
-          "name": "Claude Code",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
+            "SGLang"
           ]
         }
       ],
@@ -37239,21 +37033,27 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
         }
       ],
       "claimIds": [
-        "CL-972909f107eb213a",
-        "CL-98568a4769d6cba5",
-        "CL-0d31b12e78daafe8",
-        "CL-176a954d9d2dec69"
+        "CL-9565270c2ee6db60",
+        "CL-5f21324ca48bdbb5",
+        "CL-fe19ca104837cb24",
+        "CL-28348c4fe65170b5"
       ],
       "sourceIds": [
-        "SA-300616a6b04b8070"
+        "SA-3b5d365f11350356"
       ],
-      "sourceUrl": "https://ithome.com/0/976/510.htm",
-      "publisher": "IT之家（RSS）",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5cd7eaa56c1fbb83"
+      "sourceUrl": "https://lmsys.org/blog/2026-07-13-glm52-optimization",
+      "publisher": "LMSYS：Blog（Chatbot Arena 团队）",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-4e54b77583b0a83e"
     },
     "EV-5f718c76c285ac9b": {
       "id": "EV-5f718c76c285ac9b",
@@ -37401,6 +37201,57 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-770cea9de2337d0e"
     },
+    "EV-79e295585f997372": {
+      "id": "EV-79e295585f997372",
+      "dataDate": "2026-07-15",
+      "occurrenceDate": "2026-07-14",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "报告称 Claude Code 处理用户请求前消耗 Tokens 量约为 OpenCode 的 4.7 倍",
+      "entityIds": [
+        "EN-cb4754c48f8023d0",
+        "EN-b644c0a9d493976a"
+      ],
+      "entityNames": [
+        "Claude Code",
+        "OpenCode"
+      ],
+      "productNames": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "OpenCode",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "claimIds": [
+        "CL-972909f107eb213a",
+        "CL-98568a4769d6cba5",
+        "CL-0d31b12e78daafe8",
+        "CL-176a954d9d2dec69"
+      ],
+      "sourceIds": [
+        "SA-300616a6b04b8070"
+      ],
+      "sourceUrl": "https://ithome.com/0/976/510.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-79e295585f997372"
+    },
     "EV-83c841a4c42cfdea": {
       "id": "EV-83c841a4c42cfdea",
       "dataDate": "2026-07-15",
@@ -37417,7 +37268,6 @@
       ],
       "entityNames": [
         "Gaode",
-        "高德",
         "Alibaba",
         "ABot-WorldStudio"
       ],
@@ -37495,8 +37345,8 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-c2d784ef0a5376f8"
     },
-    "EV-de54542fd7e2282c": {
-      "id": "EV-de54542fd7e2282c",
+    "EV-e193a3848673e3ba": {
+      "id": "EV-e193a3848673e3ba",
       "dataDate": "2026-07-15",
       "occurrenceDate": "2026-07-14",
       "eventType": "model_release",
@@ -37508,8 +37358,8 @@
         "EN-9c8ae69b84f21a2e"
       ],
       "entityNames": [
-        "Tencent",
-        "腾讯混元"
+        "腾讯混元",
+        "Tencent"
       ],
       "productNames": [],
       "classifications": [],
@@ -37525,7 +37375,7 @@
       "sourceUrl": "https://ithome.com/0/976/642.htm",
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-de54542fd7e2282c"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-e193a3848673e3ba"
     },
     "EV-e7b7df43970f7e2c": {
       "id": "EV-e7b7df43970f7e2c",
@@ -37538,14 +37388,11 @@
       "title": "xAI 上传代码库 👨‍💻，Prime Intellect 验证器 🧠，Sakana 智能积木 🧱",
       "entityIds": [
         "EN-6fcba5d96a4fadfd",
-        "EN-fa373257792c6b9b",
-        "EN-96eebba49dbbf422"
+        "EN-fa373257792c6b9b"
       ],
       "entityNames": [
         "xAI",
-        "Prime Intellect",
-        "Rime",
-        "Intel"
+        "Prime Intellect"
       ],
       "productNames": [],
       "classifications": [],
@@ -37603,61 +37450,6 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-f8ba1728de6a4899"
-    },
-    "EV-fe2b0d74944d6128": {
-      "id": "EV-fe2b0d74944d6128",
-      "dataDate": "2026-07-15",
-      "occurrenceDate": "2026-07-14",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS",
-      "entityIds": [
-        "EN-6f7ac1823da81d2e"
-      ],
-      "entityNames": [
-        "LMSYS",
-        "SGLang",
-        "DeepSeek",
-        "GLM-5.2 NVFP4"
-      ],
-      "productNames": [
-        {
-          "name": "GLM-5.2 NVFP4",
-          "type": "产品/服务",
-          "ownerNames": [
-            "SGLang"
-          ]
-        }
-      ],
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        }
-      ],
-      "claimIds": [
-        "CL-9565270c2ee6db60",
-        "CL-5f21324ca48bdbb5",
-        "CL-fe19ca104837cb24",
-        "CL-28348c4fe65170b5"
-      ],
-      "sourceIds": [
-        "SA-3b5d365f11350356"
-      ],
-      "sourceUrl": "https://lmsys.org/blog/2026-07-13-glm52-optimization",
-      "publisher": "LMSYS：Blog（Chatbot Arena 团队）",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-fe2b0d74944d6128"
     },
     "EV-2bd337245c920bc8": {
       "id": "EV-2bd337245c920bc8",
@@ -39347,8 +39139,8 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-b3a050d576cea2f2"
     },
-    "EV-d39b53ca7b84b9ca": {
-      "id": "EV-d39b53ca7b84b9ca",
+    "EV-ccfb713e9a03a348": {
+      "id": "EV-ccfb713e9a03a348",
       "dataDate": "2026-07-11",
       "occurrenceDate": "2026-07-11",
       "eventType": "product_release",
@@ -39357,19 +39149,16 @@
       "category": "product",
       "title": "Claude Code v2.1.207 发布",
       "entityIds": [
-        "EN-c70eca6b0f88f44d"
+        "EN-cb4754c48f8023d0"
       ],
       "entityNames": [
-        "Anthropic",
-        "Claude Code v2.1.207"
+        "Claude Code"
       ],
       "productNames": [
         {
-          "name": "Claude Code v2.1.207",
+          "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -39383,7 +39172,7 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
       "publisher": "Claude Code：GitHub Releases（RSS）",
       "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-d39b53ca7b84b9ca"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-ccfb713e9a03a348"
     },
     "EV-f05783f745bc7c2c": {
       "id": "EV-f05783f745bc7c2c",
@@ -40145,6 +39934,7 @@
       "category": "product",
       "title": "家得宝与谷歌云推出智能体AI工具，助力顾客与员工将项目从“如何做”推进到“完成”",
       "entityIds": [
+        "EN-1bf93b12e68cac56",
         "EN-bbdefa2950f49882"
       ],
       "entityNames": [
@@ -40160,21 +39950,21 @@
           "name": "How-to",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "The Home Depot"
           ]
         },
         {
           "name": "Agentic AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "The Home Depot"
           ]
         },
         {
           "name": "Help Customers",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "The Home Depot"
           ]
         }
       ],
@@ -41837,18 +41627,14 @@
       "title": "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程",
       "entityIds": [
         "EN-d41ebd9f02722fc8",
-        "EN-96eebba49dbbf422",
         "EN-10556ee2cee94c72",
-        "EN-f8c237773fe24a98",
-        "EN-2b5e92d1908d42f6"
+        "EN-f8c237773fe24a98"
       ],
       "entityNames": [
         "Crusoe",
-        "Rime",
-        "Intel",
         "Fine-Tuning",
         "Self-Serve Inference Deployments",
-        "Launches Serverless Fine-Tuning"
+        "Serverless Fine-Tuning and Self-Serve Inference Deployments"
       ],
       "productNames": [
         {
@@ -41866,7 +41652,7 @@
           ]
         },
         {
-          "name": "Launches Serverless Fine-Tuning",
+          "name": "Serverless Fine-Tuning and Self-Serve Inference Deployments",
           "type": "模型",
           "ownerNames": [
             "Crusoe"
@@ -62184,7 +61970,7 @@
         "OpenAI",
         "AI Processing Chip",
         "Set",
-        "Enter Next Phase"
+        "It Plans"
       ],
       "productNames": [
         {
@@ -62202,7 +61988,7 @@
           ]
         },
         {
-          "name": "Enter Next Phase",
+          "name": "It Plans",
           "type": "AI 硬件",
           "ownerNames": [
             "NVIDIA"
@@ -64352,40 +64138,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-362c778a3303e486"
     },
-    "EV-b30dcacd355fe5f5": {
-      "id": "EV-b30dcacd355fe5f5",
-      "dataDate": "2026-07-20",
-      "occurrenceDate": "2026-07-19",
-      "eventType": "lawsuit_settlement",
-      "eventTypeLabel": "诉讼与和解",
-      "publicationStatus": "verified",
-      "category": "other",
-      "title": "苹果诉讼会阻碍OpenAI的硬件计划吗？",
-      "entityIds": [
-        "EN-3a7bd3e2360a3d29",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "Can an Apple",
-        "Apple",
-        "OpenAI"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-e4fbff0ce034d578",
-        "CL-39383b81b1d8ba18",
-        "CL-80bc916f124e00db",
-        "CL-3424d878668fcd56"
-      ],
-      "sourceIds": [
-        "SA-a9f7196df6ad9c09"
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans",
-      "publisher": "TechCrunch AI",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-b30dcacd355fe5f5"
-    },
     "EV-c98f744fbeb9c9fc": {
       "id": "EV-c98f744fbeb9c9fc",
       "dataDate": "2026-07-20",
@@ -65411,12 +65163,10 @@
       "category": "other",
       "title": "诉讼称Meta裁员决定由AI而非人类做出",
       "entityIds": [
-        "EN-ea3bd73e2b506e00",
-        "EN-96eebba49dbbf422"
+        "EN-ea3bd73e2b506e00"
       ],
       "entityNames": [
-        "Meta",
-        "Intel"
+        "Meta"
       ],
       "productNames": [],
       "classifications": [],
@@ -65470,71 +65220,6 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-322796d9761a0824"
-    },
-    "EV-b6970cb396a7b1ed": {
-      "id": "EV-b6970cb396a7b1ed",
-      "dataDate": "2026-07-15",
-      "occurrenceDate": "2026-07-15",
-      "eventType": "ipo_listing",
-      "eventTypeLabel": "IPO 与上市",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "DeepSeek 筹备 IPO 最快今年提交申请，梁文锋身价 360 亿美元成 AI 新首富",
-      "entityIds": [
-        "EN-6f7ac1823da81d2e"
-      ],
-      "entityNames": [
-        "DeepSeek 筹备",
-        "DeepSeek"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-a36b78a0a0e1d4f4",
-        "CL-cfff5b0af0324115",
-        "CL-e4379b5b36cc2d49",
-        "CL-ee2fa884b6ce60e8"
-      ],
-      "sourceIds": [
-        "SA-78cd937ead26f97e"
-      ],
-      "sourceUrl": "https://ithome.com/0/976/779.htm",
-      "publisher": "IT之家（RSS）",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-b6970cb396a7b1ed"
-    },
-    "EV-da6678e4e865e00e": {
-      "id": "EV-da6678e4e865e00e",
-      "dataDate": "2026-07-15",
-      "occurrenceDate": "2026-07-15",
-      "eventType": "lawsuit_settlement",
-      "eventTypeLabel": "诉讼与和解",
-      "publicationStatus": "verified",
-      "category": "other",
-      "title": "OpenAI 首度回应苹果诉讼：相信公平竞争，未发现任何证据",
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "entityNames": [
-        "OpenAI",
-        "Apple"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-220aceb0df32d7c0",
-        "CL-730174e1c00e91bc",
-        "CL-3a5e265721e192f9",
-        "CL-2d35e53f498bf1e9"
-      ],
-      "sourceIds": [
-        "SA-9eca8e2c82044639"
-      ],
-      "sourceUrl": "https://ithome.com/0/976/767.htm",
-      "publisher": "IT之家（RSS）",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-da6678e4e865e00e"
     },
     "EV-caf5d85e980c86fd": {
       "id": "EV-caf5d85e980c86fd",
@@ -65762,41 +65447,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-618e2e96fac28f06"
     },
-    "EV-8cb2374f76202ecc": {
-      "id": "EV-8cb2374f76202ecc",
-      "dataDate": "2026-07-15",
-      "occurrenceDate": "2026-07-14",
-      "eventType": "lawsuit_settlement",
-      "eventTypeLabel": "诉讼与和解",
-      "publicationStatus": "verified",
-      "category": "other",
-      "title": "OpenAI 回应苹果商业秘密诉讼：指控\"缺乏依据\"",
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-3a7bd3e2360a3d29",
-        "EN-96eebba49dbbf422"
-      ],
-      "entityNames": [
-        "OpenAI",
-        "Apple",
-        "Intel"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-7fec5dfea474c619",
-        "CL-b62ba30565a72485",
-        "CL-efb68aa64bc00203",
-        "CL-452f5b3b59eb25ad"
-      ],
-      "sourceIds": [
-        "SA-60733f337760150d"
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit",
-      "publisher": "TechCrunch：AI（RSS）",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-8cb2374f76202ecc"
-    },
     "EV-946569cccbd9222f": {
       "id": "EV-946569cccbd9222f",
       "dataDate": "2026-07-15",
@@ -65808,13 +65458,11 @@
       "title": "Sam Altman 无需再添诉讼",
       "entityIds": [
         "EN-7d3194f79e645c42",
-        "EN-3a7bd3e2360a3d29",
-        "EN-96eebba49dbbf422"
+        "EN-3a7bd3e2360a3d29"
       ],
       "entityNames": [
         "OpenAI",
-        "Apple",
-        "Intel"
+        "Apple"
       ],
       "productNames": [],
       "classifications": [
@@ -66235,7 +65883,6 @@
       ],
       "entityNames": [
         "Apple",
-        "苹果",
         "OpenAI"
       ],
       "productNames": [],
@@ -73527,6 +73174,14 @@
       "typeLabel": "人物",
       "detailUrl": "data-center.html?view=index&detail=entity&id=EN-fc3f9c93082da9e8"
     },
+    "EN-1bf93b12e68cac56": {
+      "id": "EN-1bf93b12e68cac56",
+      "name": "The Home Depot",
+      "entityType": "organization",
+      "sourceEntityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "detailUrl": "data-center.html?view=index&detail=entity&id=EN-1bf93b12e68cac56"
+    },
     "EN-f97e56489ceee4ba": {
       "id": "EN-f97e56489ceee4ba",
       "name": "Thibault Sottiaux",
@@ -74088,23 +73743,22 @@
             "financing": 8,
             "deployment": 6,
             "partnership": 5,
-            "product": 18,
+            "product": 17,
             "hardware": 1
           },
           "eventIds": [
             "EV-1013855c203f8014",
-            "EV-1807c7ebedd81f8c",
             "EV-1a49599f6efcee6d",
+            "EV-2315aada5ad36397",
+            "EV-2a78dd5feb40a78a",
             "EV-2aa470d66b93391d",
             "EV-2bbbe9f38c3d66f0",
             "EV-2d9fde7bc0cd7a22",
             "EV-33b3cf34f8ff7bd8",
             "EV-37b18c0341c66c08",
             "EV-3eb44a239ebef4b0",
-            "EV-506f1936ecfb350f",
             "EV-57944eebac69d510",
             "EV-5b1bdc06406424b4",
-            "EV-5f3ccb941a2fe5d7",
             "EV-6048ddbf55f372ea",
             "EV-653cbce2ccc79f8b",
             "EV-6cea35f065f0ee9e",
@@ -74117,6 +73771,7 @@
             "EV-9490bae84e7b4707",
             "EV-96ac5185b17601f0",
             "EV-96cfe78a2dee2182",
+            "EV-976c03b6664d3a3b",
             "EV-a9a8f673cb666d49",
             "EV-ad8e1754463695fd",
             "EV-bfa090c78227abf8",
@@ -74127,12 +73782,11 @@
             "EV-d1d36268ff74be0e",
             "EV-d86b79f7663f35e7",
             "EV-dda9429d76897a3d",
-            "EV-e2e51316d0075b44",
             "EV-e34e2d79df7412a7",
             "EV-faf8db3567f108e2"
           ],
           "otherCount": 3,
-          "totalAccepted": 41,
+          "totalAccepted": 40,
           "coverage": "数据中心于 2026-07-29 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-28": {
@@ -74554,6 +74208,7 @@
           },
           "eventIds": [
             "EV-02b19ffbe883ee2e",
+            "EV-124845780a32bc40",
             "EV-218c2f6ecf3c369f",
             "EV-2a833330267cb2df",
             "EV-30749250196dd507",
@@ -74572,7 +74227,6 @@
             "EV-a354af52772334fd",
             "EV-a5efa57f3f744425",
             "EV-acf1bcb321414706",
-            "EV-b20bf10af759bd43",
             "EV-b29878fdf79f2ac5",
             "EV-b580e33cabfea980",
             "EV-b8bc579bfa5797a2",
@@ -74589,8 +74243,8 @@
             "EV-f5483fed83363fa1",
             "EV-f6e7a4fe77d7f5c9"
           ],
-          "otherCount": 4,
-          "totalAccepted": 39,
+          "otherCount": 3,
+          "totalAccepted": 38,
           "coverage": "数据中心于 2026-07-20 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-19": {
@@ -74791,7 +74445,7 @@
         "2026-07-15": {
           "key": "2026-07-15",
           "counts": {
-            "financing": 6,
+            "financing": 4,
             "deployment": 5,
             "partnership": 4,
             "product": 26,
@@ -74804,45 +74458,43 @@
             "EV-167f50a6f3134bd5",
             "EV-20dea13a4e6100ea",
             "EV-2d6d2dc0ead4be10",
-            "EV-2dff32c1b6f813e4",
-            "EV-305ec93673f4f12e",
             "EV-30d7f1c5dc8ea464",
+            "EV-3433ad1746695875",
+            "EV-343f568b0e02c478",
             "EV-363fe72da52bdb86",
             "EV-37b8aab7efececce",
             "EV-49d9029bdcf87db4",
+            "EV-4e54b77583b0a83e",
             "EV-5b16886442234f81",
-            "EV-5cd7eaa56c1fbb83",
             "EV-5f718c76c285ac9b",
             "EV-6ebcbb2660ec7ad9",
             "EV-70cbf25f7ec2cc3a",
             "EV-712473b23a2a11a0",
             "EV-770cea9de2337d0e",
+            "EV-79e295585f997372",
             "EV-7c6a9f4ee4829976",
             "EV-83c841a4c42cfdea",
             "EV-84226288807f817b",
             "EV-87432dbb99cd6033",
             "EV-8b9e4428074bde60",
-            "EV-8bf42c1816e772ba",
             "EV-8c88edd0ad8ff029",
             "EV-8fcb52bb6ec980af",
             "EV-9f45aa7b5312420d",
             "EV-a442b55d0bac5651",
             "EV-a45262f89b272703",
-            "EV-b6970cb396a7b1ed",
+            "EV-b2d94511e4b4dfc8",
             "EV-b84035029a63e52e",
+            "EV-bee1d02b343a89dd",
             "EV-c2d784ef0a5376f8",
-            "EV-de54542fd7e2282c",
-            "EV-df789745fb926bfd",
-            "EV-e4f5a28a1c8396b6",
+            "EV-e193a3848673e3ba",
             "EV-e7b7df43970f7e2c",
-            "EV-f61a61d1287e2ca9",
+            "EV-ecc12e5ec883b7e7",
             "EV-f8b341a82c9b617d",
             "EV-f8ba1728de6a4899",
-            "EV-fd693f4b2195b20e",
-            "EV-fe2b0d74944d6128"
+            "EV-fd693f4b2195b20e"
           ],
-          "otherCount": 10,
-          "totalAccepted": 52,
+          "otherCount": 8,
+          "totalAccepted": 48,
           "coverage": "数据中心于 2026-07-15 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-14": {
@@ -74964,25 +74616,23 @@
         "2026-07-11": {
           "key": "2026-07-11",
           "counts": {
-            "financing": 3,
-            "deployment": 1,
+            "financing": 2,
+            "deployment": 0,
             "partnership": 0,
             "product": 5,
             "hardware": 0
           },
           "eventIds": [
-            "EV-09964ee52fa77b9a",
             "EV-415b083fdaa8077f",
             "EV-427081ec574b43bb",
-            "EV-43b7f45e9bd7ec9b",
             "EV-b3a050d576cea2f2",
-            "EV-d39b53ca7b84b9ca",
+            "EV-ccfb713e9a03a348",
             "EV-f05783f745bc7c2c",
             "EV-f1befee642551db7",
             "EV-f7b60c0c63403f8c"
           ],
           "otherCount": 6,
-          "totalAccepted": 15,
+          "totalAccepted": 13,
           "coverage": "数据中心于 2026-07-11 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-10": {
@@ -76605,11 +76255,11 @@
             "financing": 24,
             "deployment": 11,
             "partnership": 26,
-            "product": 58,
+            "product": 57,
             "hardware": 2
           },
-          "totalAccepted": 143,
-          "trackedCount": 121,
+          "totalAccepted": 142,
+          "trackedCount": 120,
           "otherCount": 22,
           "activeEntities": [
             {
@@ -76644,9 +76294,9 @@
               "entityId": "EN-9fbf261b62c1d7c0",
               "eventIds": [
                 "EV-4c949b6aac6d26e7",
+                "EV-2a78dd5feb40a78a",
                 "EV-3eb44a239ebef4b0",
                 "EV-57944eebac69d510",
-                "EV-5f3ccb941a2fe5d7",
                 "EV-7a4d1e871dcd3b1f",
                 "EV-005a017a310d1fdd",
                 "EV-272aea63d4e50349",
@@ -77165,9 +76815,9 @@
             "product": 143,
             "hardware": 24
           },
-          "totalAccepted": 283,
+          "totalAccepted": 282,
           "trackedCount": 257,
-          "otherCount": 26,
+          "otherCount": 25,
           "activeEntities": [
             {
               "entityId": "EN-c70eca6b0f88f44d",
@@ -77208,8 +76858,7 @@
                 "EV-3e55e1cd1d54f6ef",
                 "EV-4f36e494d9281522",
                 "EV-d7a7244d620a2142",
-                "EV-e7e2dfbc41a639d2",
-                "EV-b20bf10af759bd43"
+                "EV-e7e2dfbc41a639d2"
               ],
               "categoryCount": 5
             },
@@ -77415,8 +77064,7 @@
                 "EV-02882e6f5e1902c6",
                 "EV-2069f6a931b8c9d6",
                 "EV-463cb26b5e03c7f7",
-                "EV-941ba9ebdc43f20c",
-                "EV-30749250196dd507"
+                "EV-941ba9ebdc43f20c"
               ],
               "categoryCount": 3
             },
@@ -79383,43 +79031,16 @@
             "2026-07-19"
           ],
           "counts": {
-            "financing": 44,
+            "financing": 42,
             "deployment": 19,
             "partnership": 22,
             "product": 133,
             "hardware": 16
           },
-          "totalAccepted": 273,
-          "trackedCount": 234,
-          "otherCount": 39,
+          "totalAccepted": 269,
+          "trackedCount": 232,
+          "otherCount": 37,
           "activeEntities": [
-            {
-              "entityId": "EN-c70eca6b0f88f44d",
-              "eventIds": [
-                "EV-0990915063eb75a0",
-                "EV-debecca007e547d2",
-                "EV-51645a3b1e730105",
-                "EV-7c899d5decafc42f",
-                "EV-94e0afb44c320c99",
-                "EV-a8a8f26c5128d894",
-                "EV-c2800c1c5a3f568f",
-                "EV-1c2723ad61d192bd",
-                "EV-7f2811d2272cf4a3",
-                "EV-fbb105be35c21eb4",
-                "EV-0347414d81e7f02e",
-                "EV-5cd7eaa56c1fbb83",
-                "EV-712473b23a2a11a0",
-                "EV-84226288807f817b",
-                "EV-8bf42c1816e772ba",
-                "EV-2bd337245c920bc8",
-                "EV-302018f2e960a8bf",
-                "EV-80e54c9a390da293",
-                "EV-025778b83c1b2ca9",
-                "EV-83a8ac8a2554b60c",
-                "EV-b920999c64aa9ef6"
-              ],
-              "categoryCount": 4
-            },
             {
               "entityId": "EN-7d3194f79e645c42",
               "eventIds": [
@@ -79473,28 +79094,29 @@
               "categoryCount": 4
             },
             {
-              "entityId": "EN-96eebba49dbbf422",
+              "entityId": "EN-c70eca6b0f88f44d",
               "eventIds": [
-                "EV-b4b5d141dac164c2",
-                "EV-d4ddee1b39cced77",
-                "EV-f6a72cddbda748b3",
-                "EV-36a9e4e908249381",
-                "EV-4eaf3aabecae6016",
-                "EV-92d28aef0c4b0a8a",
+                "EV-0990915063eb75a0",
+                "EV-debecca007e547d2",
+                "EV-51645a3b1e730105",
+                "EV-7c899d5decafc42f",
+                "EV-94e0afb44c320c99",
+                "EV-a8a8f26c5128d894",
                 "EV-c2800c1c5a3f568f",
-                "EV-4b545e310ded2baa",
-                "EV-2dff32c1b6f813e4",
-                "EV-305ec93673f4f12e",
-                "EV-b84035029a63e52e",
-                "EV-e7b7df43970f7e2c",
-                "EV-dd62847548bb6ae3",
+                "EV-1c2723ad61d192bd",
+                "EV-7f2811d2272cf4a3",
+                "EV-fbb105be35c21eb4",
+                "EV-0347414d81e7f02e",
+                "EV-712473b23a2a11a0",
+                "EV-84226288807f817b",
+                "EV-2bd337245c920bc8",
+                "EV-302018f2e960a8bf",
+                "EV-80e54c9a390da293",
                 "EV-025778b83c1b2ca9",
-                "EV-2ffbe4560e69992a",
-                "EV-34929bdd016dc8d6",
-                "EV-b4eb99a878be9bb2",
-                "EV-dce5de62b2e4b752"
+                "EV-83a8ac8a2554b60c",
+                "EV-b920999c64aa9ef6"
               ],
-              "categoryCount": 5
+              "categoryCount": 4
             },
             {
               "entityId": "EN-bbdefa2950f49882",
@@ -79517,6 +79139,26 @@
                 "EV-967239f907803753"
               ],
               "categoryCount": 3
+            },
+            {
+              "entityId": "EN-96eebba49dbbf422",
+              "eventIds": [
+                "EV-b4b5d141dac164c2",
+                "EV-d4ddee1b39cced77",
+                "EV-f6a72cddbda748b3",
+                "EV-36a9e4e908249381",
+                "EV-4eaf3aabecae6016",
+                "EV-92d28aef0c4b0a8a",
+                "EV-c2800c1c5a3f568f",
+                "EV-4b545e310ded2baa",
+                "EV-dd62847548bb6ae3",
+                "EV-025778b83c1b2ca9",
+                "EV-2ffbe4560e69992a",
+                "EV-34929bdd016dc8d6",
+                "EV-b4eb99a878be9bb2",
+                "EV-dce5de62b2e4b752"
+              ],
+              "categoryCount": 5
             },
             {
               "entityId": "EN-3a7bd3e2360a3d29",
@@ -79572,24 +79214,12 @@
               "categoryCount": 4
             },
             {
-              "entityId": "EN-6f7ac1823da81d2e",
-              "eventIds": [
-                "EV-848bdd13f319c516",
-                "EV-70cbf25f7ec2cc3a",
-                "EV-87432dbb99cd6033",
-                "EV-b6970cb396a7b1ed",
-                "EV-f8ba1728de6a4899",
-                "EV-fe2b0d74944d6128"
-              ],
-              "categoryCount": 2
-            },
-            {
               "entityId": "EN-9c8ae69b84f21a2e",
               "eventIds": [
                 "EV-da9bb2c98c1ce8cd",
                 "EV-c5a59cb4cc9d7e8e",
                 "EV-87432dbb99cd6033",
-                "EV-de54542fd7e2282c",
+                "EV-e193a3848673e3ba",
                 "EV-3167e6eed75597e9"
               ],
               "categoryCount": 3
@@ -79602,6 +79232,17 @@
                 "EV-3edf153477310ffc",
                 "EV-6824e76c4aa69a71",
                 "EV-ee363e679d12329c"
+              ],
+              "categoryCount": 2
+            },
+            {
+              "entityId": "EN-6f7ac1823da81d2e",
+              "eventIds": [
+                "EV-848bdd13f319c516",
+                "EV-4e54b77583b0a83e",
+                "EV-70cbf25f7ec2cc3a",
+                "EV-87432dbb99cd6033",
+                "EV-f8ba1728de6a4899"
               ],
               "categoryCount": 2
             },
@@ -79678,8 +79319,8 @@
               "entityId": "EN-cf9488537f777c1a",
               "eventIds": [
                 "EV-bca0d9aca07bcb4a",
-                "EV-2dff32c1b6f813e4",
-                "EV-5f718c76c285ac9b"
+                "EV-5f718c76c285ac9b",
+                "EV-b2d94511e4b4dfc8"
               ],
               "categoryCount": 3
             },
@@ -80338,37 +79979,15 @@
               "eventId": "EV-2d6d2dc0ead4be10"
             },
             {
-              "entityId": "EN-cf9488537f777c1a",
+              "entityId": "EN-cb4754c48f8023d0",
               "classification": {
-                "dimensionId": "product_form",
-                "id": "chip_accelerator",
-                "dimensionName": "产品形态",
-                "name": "芯片与加速器"
+                "dimensionId": "technology",
+                "dimensionName": "技术",
+                "id": "tool_use",
+                "name": "工具调用"
               },
               "dataDate": "2026-07-15",
-              "eventId": "EV-2dff32c1b6f813e4"
-            },
-            {
-              "entityId": "EN-cf9488537f777c1a",
-              "classification": {
-                "dimensionId": "industry",
-                "id": "healthcare_life_sciences",
-                "dimensionName": "行业",
-                "name": "医疗与生命科学"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-2dff32c1b6f813e4"
-            },
-            {
-              "entityId": "EN-92dd63c8e5c77e8a",
-              "classification": {
-                "dimensionId": "product_form",
-                "id": "data_infrastructure",
-                "dimensionName": "产品形态",
-                "name": "数据与模型基础设施"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-305ec93673f4f12e"
+              "eventId": "EV-3433ad1746695875"
             },
             {
               "entityId": "EN-956b7280912ef1cc",
@@ -80391,17 +80010,6 @@
               },
               "dataDate": "2026-07-15",
               "eventId": "EV-5b16886442234f81"
-            },
-            {
-              "entityId": "EN-b644c0a9d493976a",
-              "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "agentic_execution",
-                "name": "智能体"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-5cd7eaa56c1fbb83"
             },
             {
               "entityId": "EN-cf9488537f777c1a",
@@ -80525,17 +80133,6 @@
               "eventId": "EV-70cbf25f7ec2cc3a"
             },
             {
-              "entityId": "EN-047364b9be67f665",
-              "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "long_context",
-                "name": "长上下文"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-70cbf25f7ec2cc3a"
-            },
-            {
               "entityId": "EN-6f7ac1823da81d2e",
               "classification": {
                 "dimensionId": "technology",
@@ -80548,17 +80145,6 @@
             },
             {
               "entityId": "EN-95b0632f1b292fa7",
-              "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "quantization",
-                "name": "模型量化"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-70cbf25f7ec2cc3a"
-            },
-            {
-              "entityId": "EN-047364b9be67f665",
               "classification": {
                 "dimensionId": "technology",
                 "dimensionName": "技术",
@@ -80600,6 +80186,17 @@
               },
               "dataDate": "2026-07-15",
               "eventId": "EV-770cea9de2337d0e"
+            },
+            {
+              "entityId": "EN-b644c0a9d493976a",
+              "classification": {
+                "dimensionId": "technology",
+                "dimensionName": "技术",
+                "id": "agentic_execution",
+                "name": "智能体"
+              },
+              "dataDate": "2026-07-15",
+              "eventId": "EV-79e295585f997372"
             },
             {
               "entityId": "EN-c70eca6b0f88f44d",
@@ -80723,17 +80320,6 @@
               "eventId": "EV-8fcb52bb6ec980af"
             },
             {
-              "entityId": "EN-2a920347dfcf07a7",
-              "classification": {
-                "dimensionId": "product_form",
-                "id": "chip_accelerator",
-                "dimensionName": "产品形态",
-                "name": "芯片与加速器"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-8fcb52bb6ec980af"
-            },
-            {
               "entityId": "EN-bbdefa2950f49882",
               "classification": {
                 "dimensionId": "technology",
@@ -80767,18 +80353,29 @@
               "eventId": "EV-a442b55d0bac5651"
             },
             {
-              "entityId": "EN-d41ebd9f02722fc8",
+              "entityId": "EN-cf9488537f777c1a",
               "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "open_weights",
-                "name": "开放权重"
+                "dimensionId": "product_form",
+                "id": "chip_accelerator",
+                "dimensionName": "产品形态",
+                "name": "芯片与加速器"
               },
               "dataDate": "2026-07-15",
-              "eventId": "EV-b84035029a63e52e"
+              "eventId": "EV-b2d94511e4b4dfc8"
             },
             {
-              "entityId": "EN-96eebba49dbbf422",
+              "entityId": "EN-cf9488537f777c1a",
+              "classification": {
+                "dimensionId": "industry",
+                "id": "healthcare_life_sciences",
+                "dimensionName": "行业",
+                "name": "医疗与生命科学"
+              },
+              "dataDate": "2026-07-15",
+              "eventId": "EV-b2d94511e4b4dfc8"
+            },
+            {
+              "entityId": "EN-d41ebd9f02722fc8",
               "classification": {
                 "dimensionId": "technology",
                 "dimensionName": "技术",
@@ -80811,17 +80408,6 @@
               "eventId": "EV-b84035029a63e52e"
             },
             {
-              "entityId": "EN-2b5e92d1908d42f6",
-              "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "open_weights",
-                "name": "开放权重"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-b84035029a63e52e"
-            },
-            {
               "entityId": "EN-d41ebd9f02722fc8",
               "classification": {
                 "dimensionId": "technology",
@@ -80845,17 +80431,6 @@
             },
             {
               "entityId": "EN-f8c237773fe24a98",
-              "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "fine_tuning",
-                "name": "模型微调"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-b84035029a63e52e"
-            },
-            {
-              "entityId": "EN-2b5e92d1908d42f6",
               "classification": {
                 "dimensionId": "technology",
                 "dimensionName": "技术",
@@ -80889,17 +80464,6 @@
             },
             {
               "entityId": "EN-f8c237773fe24a98",
-              "classification": {
-                "dimensionId": "product_form",
-                "id": "data_infrastructure",
-                "dimensionName": "产品形态",
-                "name": "数据与模型基础设施"
-              },
-              "dataDate": "2026-07-15",
-              "eventId": "EV-b84035029a63e52e"
-            },
-            {
-              "entityId": "EN-2b5e92d1908d42f6",
               "classification": {
                 "dimensionId": "product_form",
                 "id": "data_infrastructure",
@@ -82697,14 +82261,14 @@
             "2026-07-12"
           ],
           "counts": {
-            "financing": 49,
-            "deployment": 13,
+            "financing": 48,
+            "deployment": 12,
             "partnership": 20,
             "product": 72,
             "hardware": 7
           },
-          "totalAccepted": 184,
-          "trackedCount": 161,
+          "totalAccepted": 182,
+          "trackedCount": 159,
           "otherCount": 23,
           "activeEntities": [
             {
@@ -82778,7 +82342,6 @@
               "eventIds": [
                 "EV-730a2f95a698a96d",
                 "EV-ecfc552af7344d65",
-                "EV-d39b53ca7b84b9ca",
                 "EV-6415a58637893b34",
                 "EV-cf317dd1579a01bb",
                 "EV-e41fc65eb014893f",
@@ -82915,15 +82478,6 @@
               "categoryCount": 2
             },
             {
-              "entityId": "EN-047364b9be67f665",
-              "eventIds": [
-                "EV-43b7f45e9bd7ec9b",
-                "EV-ad2e4fe6a149d95d",
-                "EV-76aa77f5a2e7c661"
-              ],
-              "categoryCount": 2
-            },
-            {
               "entityId": "EN-916a98f0fa2a39af",
               "eventIds": [
                 "EV-32d7c52f89d74e88",
@@ -82971,7 +82525,6 @@
           "deploymentEventIds": [
             "EV-77bf2bb5f1ebf3bb",
             "EV-e15ae1112294d59e",
-            "EV-09964ee52fa77b9a",
             "EV-38232fed5e0cfdd6",
             "EV-778ae7684a4d782e",
             "EV-4e5c6267b3237dac",
@@ -83788,6 +83341,28 @@
               },
               "dataDate": "2026-07-10",
               "eventId": "EV-d07f7a8d4d20a034"
+            },
+            {
+              "entityId": "EN-1bf93b12e68cac56",
+              "classification": {
+                "dimensionId": "technology",
+                "dimensionName": "技术",
+                "id": "agentic_execution",
+                "name": "智能体"
+              },
+              "dataDate": "2026-07-10",
+              "eventId": "EV-d12aa40eff40c97e"
+            },
+            {
+              "entityId": "EN-1bf93b12e68cac56",
+              "classification": {
+                "dimensionId": "industry",
+                "id": "retail_ecommerce",
+                "dimensionName": "行业",
+                "name": "零售与电商"
+              },
+              "dataDate": "2026-07-10",
+              "eventId": "EV-d12aa40eff40c97e"
             },
             {
               "entityId": "EN-4094a2b7125c7564",
@@ -91812,6 +91387,17 @@
               "eventId": "EV-e295f808713644c7"
             },
             {
+              "entityId": "EN-1bf93b12e68cac56",
+              "classification": {
+                "dimensionId": "use_case",
+                "id": "customer_service",
+                "dimensionName": "应用场景",
+                "name": "客户服务"
+              },
+              "dataDate": "2026-06-04",
+              "eventId": "EV-051d1924db7ba65d"
+            },
+            {
               "entityId": "EN-bbdefa2950f49882",
               "classification": {
                 "dimensionId": "use_case",
@@ -93881,10 +93467,10 @@
             "2026-07-30"
           ],
           "counts": {
-            "financing": 173,
-            "deployment": 82,
+            "financing": 170,
+            "deployment": 81,
             "partnership": 102,
-            "product": 484,
+            "product": 483,
             "hardware": 50
           },
           "previousMonth": "2026-06",
@@ -93932,15 +93518,15 @@
             "hardware": 17
           },
           "deltas": {
-            "financing": 19,
-            "deployment": 31,
+            "financing": 16,
+            "deployment": 30,
             "partnership": 62,
-            "product": 185,
+            "product": 184,
             "hardware": 33
           },
-          "totalAccepted": 1009,
-          "trackedCount": 891,
-          "otherCount": 118,
+          "totalAccepted": 1001,
+          "trackedCount": 886,
+          "otherCount": 115,
           "newCompanies": [
             {
               "entityId": "EN-cd6362472aea60ef",
@@ -94063,12 +93649,6 @@
               ]
             },
             {
-              "entityId": "EN-1477cddb70657ceb",
-              "eventIds": [
-                "EV-09964ee52fa77b9a"
-              ]
-            },
-            {
               "entityId": "EN-8afd897b5b887b06",
               "eventIds": [
                 "EV-57565fc2e7502c59"
@@ -94148,22 +93728,16 @@
               ]
             },
             {
-              "entityId": "EN-cf9488537f777c1a",
-              "eventIds": [
-                "EV-2dff32c1b6f813e4",
-                "EV-5f718c76c285ac9b"
-              ]
-            },
-            {
-              "entityId": "EN-92dd63c8e5c77e8a",
-              "eventIds": [
-                "EV-305ec93673f4f12e"
-              ]
-            },
-            {
               "entityId": "EN-956b7280912ef1cc",
               "eventIds": [
                 "EV-5b16886442234f81"
+              ]
+            },
+            {
+              "entityId": "EN-cf9488537f777c1a",
+              "eventIds": [
+                "EV-5f718c76c285ac9b",
+                "EV-b2d94511e4b4dfc8"
               ]
             },
             {
@@ -94179,6 +93753,12 @@
               "eventIds": [
                 "EV-70cbf25f7ec2cc3a",
                 "EV-8b9e4428074bde60"
+              ]
+            },
+            {
+              "entityId": "EN-1477cddb70657ceb",
+              "eventIds": [
+                "EV-9f45aa7b5312420d"
               ]
             },
             {
@@ -94348,6 +93928,12 @@
               ]
             },
             {
+              "entityId": "EN-ca95aeb01df069e5",
+              "eventIds": [
+                "EV-124845780a32bc40"
+              ]
+            },
+            {
               "entityId": "EN-d7aba0f660c463d8",
               "eventIds": [
                 "EV-625904809a9b14b8"
@@ -94357,12 +93943,6 @@
               "entityId": "EN-3309b3b14807f39a",
               "eventIds": [
                 "EV-a5efa57f3f744425"
-              ]
-            },
-            {
-              "entityId": "EN-ca95aeb01df069e5",
-              "eventIds": [
-                "EV-b20bf10af759bd43"
               ]
             },
             {
@@ -94908,12 +94488,6 @@
               ]
             },
             {
-              "entityId": "EN-b644c0a9d493976a",
-              "eventIds": [
-                "EV-5cd7eaa56c1fbb83"
-              ]
-            },
-            {
               "entityId": "EN-38f4d27a18084522",
               "eventIds": [
                 "EV-5f718c76c285ac9b"
@@ -94923,6 +94497,12 @@
               "entityId": "EN-94c93b5ab886f2d9",
               "eventIds": [
                 "EV-5f718c76c285ac9b"
+              ]
+            },
+            {
+              "entityId": "EN-b644c0a9d493976a",
+              "eventIds": [
+                "EV-79e295585f997372"
               ]
             },
             {
@@ -94952,12 +94532,6 @@
             },
             {
               "entityId": "EN-f8c237773fe24a98",
-              "eventIds": [
-                "EV-b84035029a63e52e"
-              ]
-            },
-            {
-              "entityId": "EN-2b5e92d1908d42f6",
               "eventIds": [
                 "EV-b84035029a63e52e"
               ]
@@ -95198,6 +94772,12 @@
               ]
             },
             {
+              "entityId": "EN-b076867237fbeb34",
+              "eventIds": [
+                "EV-124845780a32bc40"
+              ]
+            },
+            {
               "entityId": "EN-0b706b4b95ba647c",
               "eventIds": [
                 "EV-218c2f6ecf3c369f"
@@ -95213,12 +94793,6 @@
               "entityId": "EN-61a405a731497229",
               "eventIds": [
                 "EV-a5efa57f3f744425"
-              ]
-            },
-            {
-              "entityId": "EN-b076867237fbeb34",
-              "eventIds": [
-                "EV-b20bf10af759bd43"
               ]
             },
             {
@@ -95609,13 +95183,13 @@
               "EV-57cf8e14d6994c1b",
               "EV-a3ba586cbc57b5fd",
               "EV-f1553722b4ce43af",
+              "EV-2315aada5ad36397",
+              "EV-2a78dd5feb40a78a",
               "EV-33b3cf34f8ff7bd8",
-              "EV-506f1936ecfb350f",
-              "EV-5f3ccb941a2fe5d7",
               "EV-9490bae84e7b4707",
+              "EV-976c03b6664d3a3b",
               "EV-a9a8f673cb666d49",
               "EV-cded77b1de2db61a",
-              "EV-e2e51316d0075b44",
               "EV-faf8db3567f108e2",
               "EV-1196b80b537957f2",
               "EV-3fb827f44ea109de",
@@ -95692,12 +95266,10 @@
               "EV-848bdd13f319c516",
               "EV-9046a75f19913ca5",
               "EV-fbb105be35c21eb4",
-              "EV-2dff32c1b6f813e4",
-              "EV-305ec93673f4f12e",
+              "EV-343f568b0e02c478",
               "EV-87432dbb99cd6033",
-              "EV-b6970cb396a7b1ed",
-              "EV-df789745fb926bfd",
-              "EV-f61a61d1287e2ca9",
+              "EV-b2d94511e4b4dfc8",
+              "EV-ecc12e5ec883b7e7",
               "EV-1349fd0441b75da0",
               "EV-23ae55daa341be06",
               "EV-38cce1b72977ff2b",
@@ -95714,7 +95286,6 @@
               "EV-ecfc552af7344d65",
               "EV-415b083fdaa8077f",
               "EV-427081ec574b43bb",
-              "EV-43b7f45e9bd7ec9b",
               "EV-15cc72d7c78cad3d",
               "EV-32d7c52f89d74e88",
               "EV-640c5ea9f4fa2780",
@@ -95779,7 +95350,7 @@
               "EV-b91f6a01f119155c",
               "EV-ee7ba401d0af0d94"
             ],
-            "disclosedMetricCount": 155
+            "disclosedMetricCount": 152
           },
           "distributions": {
             "technology": [
@@ -95790,11 +95361,10 @@
                   "EV-4c949b6aac6d26e7",
                   "EV-57cf8e14d6994c1b",
                   "EV-a4fe78df6ccd63c8",
-                  "EV-1807c7ebedd81f8c",
+                  "EV-2a78dd5feb40a78a",
                   "EV-2d9fde7bc0cd7a22",
                   "EV-3eb44a239ebef4b0",
                   "EV-57944eebac69d510",
-                  "EV-5f3ccb941a2fe5d7",
                   "EV-653cbce2ccc79f8b",
                   "EV-7a4d1e871dcd3b1f",
                   "EV-7c934b299d048348",
@@ -95919,10 +95489,10 @@
                   "EV-d2c1c077a2102f35",
                   "EV-01df8e489a34893b",
                   "EV-02686922dd82c4aa",
-                  "EV-5cd7eaa56c1fbb83",
+                  "EV-4e54b77583b0a83e",
                   "EV-70cbf25f7ec2cc3a",
+                  "EV-79e295585f997372",
                   "EV-8fcb52bb6ec980af",
-                  "EV-fe2b0d74944d6128",
                   "EV-1349fd0441b75da0",
                   "EV-23ae55daa341be06",
                   "EV-2c1fc2143d7d4a6a",
@@ -96009,7 +95579,7 @@
                   "EV-9efcf6480f6c6f48",
                   "EV-bc99fb915c25ace4"
                 ],
-                "count": 221
+                "count": 220
               },
               {
                 "id": "multimodal",
@@ -96127,7 +95697,7 @@
                   "EV-29e069ac093f0e34",
                   "EV-a8a8f26c5128d894",
                   "EV-d53cd33e8f541a65",
-                  "EV-8bf42c1816e772ba",
+                  "EV-3433ad1746695875",
                   "EV-2ffbe4560e69992a",
                   "EV-9496f90f3e808992",
                   "EV-9c4b862020202f6c"
@@ -96255,17 +95825,6 @@
                 "count": 5
               },
               {
-                "id": "human_in_loop",
-                "name": "人在回路",
-                "eventIds": [
-                  "EV-5f3ccb941a2fe5d7",
-                  "EV-fe63a869fe4cee45",
-                  "EV-243e73016576fa43",
-                  "EV-36883997905d34d8"
-                ],
-                "count": 4
-              },
-              {
                 "id": "vision_language",
                 "name": "视觉语言",
                 "eventIds": [
@@ -96305,6 +95864,16 @@
                   "EV-97854226b6f43a95",
                   "EV-e42e55d1e11a2ba2",
                   "EV-333851b077b606c8"
+                ],
+                "count": 3
+              },
+              {
+                "id": "human_in_loop",
+                "name": "人在回路",
+                "eventIds": [
+                  "EV-fe63a869fe4cee45",
+                  "EV-243e73016576fa43",
+                  "EV-36883997905d34d8"
                 ],
                 "count": 3
               },
@@ -96382,7 +95951,7 @@
                 "eventIds": [
                   "EV-a4fe78df6ccd63c8",
                   "EV-3eb44a239ebef4b0",
-                  "EV-e2e51316d0075b44",
+                  "EV-976c03b6664d3a3b",
                   "EV-395884a4c090103c",
                   "EV-5f2acbfb8f54fd59",
                   "EV-6272444f30281858",
@@ -96441,7 +96010,7 @@
                 "name": "客户服务",
                 "eventIds": [
                   "EV-57cf8e14d6994c1b",
-                  "EV-506f1936ecfb350f",
+                  "EV-2315aada5ad36397",
                   "EV-1196b80b537957f2",
                   "EV-eb61ddca7f36f55c",
                   "EV-2a71353a862e56b3",
@@ -96460,7 +96029,6 @@
                 "name": "企业运营自动化",
                 "eventIds": [
                   "EV-57944eebac69d510",
-                  "EV-5f3ccb941a2fe5d7",
                   "EV-5b193a038ab4ea22",
                   "EV-acf1bcb321414706",
                   "EV-12ca2aae7bfcd080",
@@ -96471,7 +96039,7 @@
                   "EV-dfddbb260b3d1c77",
                   "EV-89351585b44f8e9c"
                 ],
-                "count": 11
+                "count": 10
               },
               {
                 "id": "data_analysis",
@@ -96586,7 +96154,7 @@
                   "EV-9563aa162529aab0",
                   "EV-cafe435ddd007821",
                   "EV-6b51b1b6fe22c540",
-                  "EV-2dff32c1b6f813e4",
+                  "EV-b2d94511e4b4dfc8",
                   "EV-dd62847548bb6ae3",
                   "EV-2c87c8ea47cbd1b6",
                   "EV-6e06cfa28f76a76f",
@@ -96775,7 +96343,6 @@
             "EV-b726a9cda7beae64",
             "EV-77bf2bb5f1ebf3bb",
             "EV-e15ae1112294d59e",
-            "EV-09964ee52fa77b9a",
             "EV-38232fed5e0cfdd6",
             "EV-778ae7684a4d782e",
             "EV-4e5c6267b3237dac",
@@ -96921,6 +96488,12 @@
               "entityId": "EN-e78bdebae031095b",
               "eventIds": [
                 "EV-8973f8148205ed35"
+              ]
+            },
+            {
+              "entityId": "EN-1bf93b12e68cac56",
+              "eventIds": [
+                "EV-051d1924db7ba65d"
               ]
             },
             {

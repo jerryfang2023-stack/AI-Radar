@@ -36,10 +36,25 @@ jobs:
       DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
       DEEPSEEK_PRO_MODEL: deepseek-v4-pro
       GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ runner.temp }}/WaveSight-private-evidence
     steps:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+
+      - name: Check out authoritative private evidence store
+        env:
+          PRIVATE_EVIDENCE_SSH_KEY: ${{ secrets.PRIVATE_EVIDENCE_SSH_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$PRIVATE_EVIDENCE_SSH_KEY"
+          mkdir -p "$HOME/.ssh"
+          printf '%s\n' "$PRIVATE_EVIDENCE_SSH_KEY" > "$HOME/.ssh/wavesight_private_evidence"
+          chmod 600 "$HOME/.ssh/wavesight_private_evidence"
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/wavesight_private_evidence -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+          git clone --depth=1 git@github.com:jerryfang2023-stack/WaveSight-private-evidence.git "$GUANLAN_EVIDENCE_BACKUP_ROOT"
+          echo "GIT_SSH_COMMAND=$GIT_SSH_COMMAND" >> "$GITHUB_ENV"
 
       - uses: actions/setup-node@v6
         with:
@@ -47,6 +62,9 @@ jobs:
           cache: npm
 
       - run: npm ci
+
+      - name: Assert private evidence remote boundary
+        run: npm run assert:private-evidence-remote
 
       - name: Resolve range
         shell: bash
@@ -89,8 +107,19 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          npm run assert:private-evidence-remote
           npm run assert:no-active-v3
-          git add 01-SiteV2/content/11-databases/model-assist-v1 01-SiteV2/content/11-databases/source-title-translations.json 01-SiteV2/content/01-raw/originals agent-workflow/reports/source-title-translation-backfill-write.json
+          npm run assert:public-evidence-boundary
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name "github-actions[bot]"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" add -A
+          if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "Update private evidence metadata ${FROM_DATE} to ${TO_DATE}"
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
+            npm run assert:private-evidence-remote
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
+          fi
+          git add 01-SiteV2/content/11-databases/model-assist-v1 01-SiteV2/content/11-databases/source-title-translations.json agent-workflow/reports/source-title-translation-backfill-write.json
           if ! git diff --cached --quiet; then
             git commit -m "Checkpoint model-assist backfill ${FROM_DATE} to ${TO_DATE}"
           fi
@@ -119,7 +148,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add 01-SiteV2/content/11-databases/model-assist-v1 01-SiteV2/content/11-databases/data-center-v4 01-SiteV2/content/11-databases/source-title-translations.json 01-SiteV2/content/01-raw/originals 01-SiteV2/site/data/data-center-v4 01-SiteV2/site/data/data-center-v4-frontstage.json agent-workflow/reports/source-title-translation-backfill-write.json
+          git add 01-SiteV2/content/11-databases/model-assist-v1 01-SiteV2/content/11-databases/data-center-v4 01-SiteV2/content/11-databases/source-title-translations.json 01-SiteV2/content/01-raw/source-index.jsonl 01-SiteV2/site/data/data-center-v4 01-SiteV2/site/data/data-center-v4-frontstage.json agent-workflow/reports/source-title-translation-backfill-write.json
           if ! git diff --cached --quiet; then
             git commit -m "Materialize model-assist backfill ${FROM_DATE} to ${TO_DATE}"
           fi

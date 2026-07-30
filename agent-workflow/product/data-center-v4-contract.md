@@ -2,7 +2,7 @@
 
 Status: current  
 Product version: `SITE-V4.0-data-center`  
-Data versions: `RAW-V3.0`, `EVENT-V1.1`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`
+Data versions: `SOURCE-INTAKE-V1.1`, `RAW-V4.0`, `EVENT-V1.1`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`
 
 ## Boundary
 
@@ -31,11 +31,13 @@ Daily canonical bundles are written to:
 
 Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, FDE observations, hardware records, hardware facts, hardware snapshots, monitoring-funnel rows, a QA queue, and a manifest. V3 Cards, legacy mappings, and `compatibility_cards` are not part of the V4 interface.
 
+Complete original bodies are stored only in the configured `PRIVATE-EVIDENCE-STORE-V2.0` repository. Public RawDocuments contain body-free metadata, body length, and an `evidence://<content_hash>` locator. The public source index, Guanlan AI Vault, data lake, and website must not contain complete source bodies.
+
 The public interface is defined by `data-center-v4.schema.json`. Stable identifiers are `source_artifact_id`, `raw_id`, `claim_id`, `entity_id`, `event_id`, and `tag_id`.
 
 ## Truth and evidence rules
 
-- A Claim must quote an exact span of `RawDocument.body_clean`.
+- A Claim must quote an exact span of the normalized private evidence body resolved through `RawDocument.body_ref`.
 - A CanonicalEvent must reference at least one Claim and one SourceArtifact.
 - `CanonicalEvent.display_title_zh` must be the exact `RawDocument.title_zh` associated with one of the event's sources, or the unchanged `title_original` when that source title is already Chinese. Event-field summaries and generated editorial headlines are not valid title fallbacks.
 - CanonicalEvent eligibility requires source-bounded evidence that AI is the direct subject of the event. AI-themed publishers, feeds, discovery labels, queries, navigation text, and incidental page mentions do not qualify a record.

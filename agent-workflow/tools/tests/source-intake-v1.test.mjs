@@ -31,6 +31,14 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
     clean_text: "Example released a dated AI product for enterprise users with source-bounded facts.",
     content_hash: "content-hash-1",
     collected_at: "2026-07-29T01:00:00.000Z",
+    pool_routes: ["core_pool"],
+    key_excerpts: [{
+      type: "product_update",
+      text: "Example released a dated AI product.",
+      supports: ["signal_card_candidate", "trend_candidate_context"],
+      importance: "high",
+      confidence: "high",
+    }],
   };
   writeJson(jsonPath, record);
   fs.writeFileSync(markdownPath, record.clean_text, "utf8");
@@ -47,11 +55,18 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
   assert.equal(intake.schema_version, SOURCE_INTAKE_VERSION);
   assert.equal(intake.counts.source_artifacts, 1);
   assert.equal(intake.counts.raw_documents, 1);
-  assert.equal(intake.counts.pooled_documents, 1);
+  assert.equal(intake.counts.eligible_documents, 1);
   assert.match(intake.source_artifacts[0].source_artifact_id, /^SA-[a-f0-9]{16}$/u);
   assert.match(intake.raw_documents[0].raw_id, /^RAW-[a-f0-9]{16}$/u);
   assert.equal(intake.raw_documents[0].source_artifact_id, intake.source_artifacts[0].source_artifact_id);
   assert.equal(intake.raw_documents[0].body_ref, path.relative(root, jsonPath).replace(/\\/gu, "/"));
+  assert.equal(intake.raw_documents[0].intake_diagnostics.eligible_for_v4_extraction, true);
+  assert.deepEqual(intake.raw_documents[0].intake_diagnostics.key_excerpts, [{
+    type: "product_update",
+    text: "Example released a dated AI product.",
+    confidence: "high",
+  }]);
+  assert.equal("pool_routes" in intake.raw_documents[0].intake_diagnostics, false);
 
   writeJson(sourceIntakePath(root, date), intake);
   assert.equal(readSourceIntake(root, date).payload.data_date, date);

@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -23,7 +23,7 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-2dff32c1b6f813e4",
+      "EV-b2d94511e4b4dfc8",
       "EV-5f718c76c285ac9b",
       "EV-bca0d9aca07bcb4a"
     ],
@@ -44,7 +44,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
-        "EV-2dff32c1b6f813e4"
+        "EV-b2d94511e4b4dfc8"
       ],
       "deployments": [],
       "partnerships": [],
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "id": "EV-2dff32c1b6f813e4",
+        "id": "EV-b2d94511e4b4dfc8",
         "dataDate": "2026-07-15",
         "date": "2026-07-14",
         "eventType": "funding",
@@ -105,8 +105,8 @@
           }
         ],
         "entityIds": [
-          "EN-cf9488537f777c1a",
-          "EN-96eebba49dbbf422"
+          "EN-4c3788aad4bebf2f",
+          "EN-cf9488537f777c1a"
         ]
       },
       {
@@ -326,7 +326,6 @@
         "EN-43664b1263361b29",
         "EN-bb74959cf87dec17",
         "EN-956b7280912ef1cc",
-        "EN-18ada5002dd89e01",
         "EN-222f930b87524636",
         "EN-72138e570e5103e2",
         "EN-068af4e2e49e9b57",
@@ -380,7 +379,7 @@
       "valueId": "healthcare_life_sciences",
       "eventIds": [
         "EV-6be89ebfbf8de6be",
-        "EV-2dff32c1b6f813e4",
+        "EV-b2d94511e4b4dfc8",
         "EV-6e06cfa28f76a76f",
         "EV-aa33ca051f3a7f78",
         "EV-cfd791871e347aa6",
@@ -419,8 +418,8 @@
       ],
       "entityIds": [
         "EN-522656609ff15589",
+        "EN-4c3788aad4bebf2f",
         "EN-cf9488537f777c1a",
-        "EN-96eebba49dbbf422",
         "EN-caaa8e02be54cfc9",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
@@ -433,6 +432,7 @@
         "EN-a83a3af1a4866fd5",
         "EN-ea3bd73e2b506e00",
         "EN-e5cc9e38970eacb5",
+        "EN-96eebba49dbbf422",
         "EN-cbc62794911ff31b",
         "EN-023e881577ad3ab1",
         "EN-8d4321d936320802",
@@ -514,6 +514,144 @@
       "sourceDate": "2026-07-16",
       "entityIds": [
         "EN-cf9488537f777c1a"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-d6982a4042c8bbef",
+      "snapshotKey": "d6982a4042c8bbef",
+      "snapshotId": "HWS-bce27423b2fdf1f0",
+      "eventId": "EV-b2d94511e4b4dfc8",
+      "eventIds": [
+        "EV-b2d94511e4b4dfc8"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-07-15",
+      "title": "Custom AI chip design startup TYLsemi",
+      "subject": "Custom AI chip design startup TYLsemi",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "43",
+          "unit": "$M",
+          "fact_ref": "HWF-ba1de9b8ede4ff7e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-15",
+          "hardware_fact_id": "HWF-ba1de9b8ede4ff7e",
+          "fact_type": "product",
+          "observed_at": "2026-07-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4c3788aad4bebf2f",
+          "subject_name": "Custom AI chip design startup TYLsemi",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "43",
+          "unit": "$M",
+          "source_quote": "Custom AI chip design startup TYLsemi launches with $43M in early-stage funding",
+          "event_refs": [
+            "EV-b2d94511e4b4dfc8"
+          ],
+          "claim_ref": "CL-0f7de1f289c977b6",
+          "source_refs": [
+            "SA-903d243c7a19a7c1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding",
+      "entityIds": [
+        "EN-4c3788aad4bebf2f",
+        "EN-cf9488537f777c1a"
+      ]
+    },
+    {
+      "id": "HWC-c32abfcca87f583a",
+      "snapshotKey": "c32abfcca87f583a",
+      "snapshotId": "HWS-217fc79f77b03d70",
+      "eventId": "EV-5f718c76c285ac9b",
+      "eventIds": [
+        "EV-5f718c76c285ac9b"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-07-15",
+      "title": "Full-Stack Chiplet / AI Silicon / First Full-Stack Chiplet",
+      "subject": "TYLsemi",
+      "productNames": [
+        "Full-Stack Chiplet",
+        "AI Silicon",
+        "First Full-Stack Chiplet"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "43",
+          "unit": "$million",
+          "fact_ref": "HWF-225d009a303071f9"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-15",
+          "hardware_fact_id": "HWF-225d009a303071f9",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-14T00:00:00.000Z",
+          "subject_entity_id": "EN-cf9488537f777c1a",
+          "subject_name": "TYLsemi",
+          "product_entity_ids": [
+            "EN-38f4d27a18084522",
+            "EN-74beb25bdfe7bdd1",
+            "EN-94c93b5ab886f2d9"
+          ],
+          "product_names": [
+            "Full-Stack Chiplet",
+            "AI Silicon",
+            "First Full-Stack Chiplet"
+          ],
+          "component_type": "data_center",
+          "metric_value": "43",
+          "unit": "$million",
+          "source_quote": "San Jose, California, July 14, 2026 – Today, TYLsemi™ emerged from stealth and announced the closing of an oversubscribed $43 million early-stage funding round to accelerate the development of AI infrastructure. TYLsemi is the first chiplet platform company to deliver a full portfolio across IO, power delivery, and memory paired with a chiplet-based custom silicon design, integration and supply-chain ownership. This standards-based, production-ready portfolio will provide AI infrastructure customers with a faster, lower-risk path for developing AI silicon from architecture to deployment.",
+          "event_refs": [
+            "EV-5f718c76c285ac9b"
+          ],
+          "claim_ref": "CL-8b941b4cf3279dc5",
+          "source_refs": [
+            "SA-8368bad4f79b26ba"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-15/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon",
+      "entityIds": [
+        "EN-cf9488537f777c1a",
+        "EN-38f4d27a18084522",
+        "EN-74beb25bdfe7bdd1",
+        "EN-94c93b5ab886f2d9"
       ]
     }
   ]

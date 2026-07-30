@@ -115,7 +115,7 @@ function withEvidenceFields(content, evidence) {
     `evidence_entity_refs: ${yamlArray(evidence.entityRefs)}`,
     `evidence_report_refs: ${yamlArray(evidence.reportRefs)}`,
     `evidence_source_urls: ${yamlArray(evidence.urls)}`,
-    "original_body_storage: repository_snapshot_plus_private_backup",
+    "original_body_storage: private_evidence_store_only",
   ];
   let body = content;
   if (frontmatter) {
@@ -372,7 +372,7 @@ evidence_claim_refs: ${yamlArray(item.relation.claimRefs)}
 evidence_event_refs: ${yamlArray(item.relation.eventRefs)}
 evidence_entity_refs: ${yamlArray(item.relation.entityRefs)}
 evidence_report_refs: ${yamlArray(reportAssets.map((asset) => asset.relativePath))}
-original_body_storage: repository_snapshot_plus_private_backup
+original_body_storage: private_evidence_store_only
 ---
 # ${item.sourceRef} · ${sourceLabel(source)}
 
@@ -443,7 +443,7 @@ title: 证据关系索引
 asset_type: evidence-relation-index
 status: current
 updated: ${generatedAt.slice(0, 10)}
-original_body_storage: repository_snapshot_plus_private_backup
+original_body_storage: private_evidence_store_only
 ---
 # 证据关系索引
 
@@ -476,7 +476,7 @@ ${relationLines.join("\n")}
   writeManaged(vaultRoot, EVIDENCE_MANIFEST, JSON.stringify({
     schemaVersion: "GUANLAN-EVIDENCE-PROJECTION-V1.0",
     generatedAt,
-    originalBodyStorage: "repository_snapshot_plus_private_backup",
+    originalBodyStorage: "private_evidence_store_only",
     assets: {
       total: assetLinks.length,
       linked: assetLinks.filter((asset) => asset.status === "linked").length,

@@ -7,6 +7,7 @@ import {
   isV4ManifestReady,
 } from "./lib/daily-production-chain-state.mjs";
 import { hasActiveHistoricalDuplicate, readSourceIntake } from "./lib/source-intake-v1.mjs";
+import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -114,13 +115,17 @@ const finalQcDecision = (
 ).toLowerCase();
 
 const activeDuplicateCount = rawDocuments.filter((document) => {
-  const raw = readJson(path.resolve(root, document.body_ref || ""), {});
+  const bodyRef = String(document.body_ref || "");
+  const file = path.resolve(root, bodyRef);
+  const privateEvidence = loadPrivateEvidenceRecord(root, bodyRef, document.content_hash, { required: false });
+  const raw = fs.existsSync(file) ? readJson(file, {}) : privateEvidence?.metadata || {};
   return hasActiveHistoricalDuplicate(raw);
 }).length;
 
 const upstreamFiles = [
   intakeFile,
   ...listFiles(rawOriginals, (file) => file.endsWith(".json")),
+  path.join(root, "01-SiteV2", "content", "01-raw", "source-index.jsonl"),
 ].filter(Boolean);
 const downstreamGroups = {
   v4_materialization: [manifestFile].filter(exists),
@@ -135,6 +140,7 @@ const upstreamMtime = latestTime(upstreamFiles);
 const stalenessPaths = [
   intakeFile,
   rawOriginals,
+  path.join(root, "01-SiteV2", "content", "01-raw", "source-index.jsonl"),
   ...Object.values(downstreamGroups).flat(),
 ].filter(Boolean);
 const relevantWorktreeChanged = hasRelevantWorktreeChanges(stalenessPaths);
@@ -145,7 +151,12 @@ const blockedStaleGroups = blockStale ? staleGroups : [];
 
 const problems = [];
 if (!intake) problems.push(`missing structured source intake for ${date}`);
-if (!exists(rawOriginals)) problems.push(`missing immutable source snapshots: ${rel(rawOriginals)}`);
+if (
+  !exists(rawOriginals)
+  && !exists(path.join(root, "01-SiteV2", "content", "01-raw", "source-index.jsonl"))
+) {
+  problems.push("missing both ephemeral source snapshots and the public evidence locator index");
+}
 if (!rawCount) problems.push("structured source intake has no RawDocuments");
 if (loggedRawCount !== null && loggedRawCount !== rawCount) problems.push(`logged raw_count ${loggedRawCount} does not match structured intake ${rawCount}`);
 if (loggedPoolCount !== null && loggedPoolCount !== poolCount) problems.push(`logged pool_count ${loggedPoolCount} does not match structured intake ${poolCount}`);

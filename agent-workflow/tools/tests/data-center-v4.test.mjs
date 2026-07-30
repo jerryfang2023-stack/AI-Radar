@@ -1127,15 +1127,17 @@ test("AI relevance evaluator distinguishes industry facts from generic AI wordin
 });
 
 test("generated bundle passes the V4 integrity gate", () => {
-  const bundle = buildBundle([
+  const entries = [
     entry("deployment", "Hospital deploys Acme AI workflow", "Hospital deployed Acme AI workflow in production. The system reduced review time by 20%."),
     entry("model", "Example releases multimodal open weights model", "Example released a multimodal model with open weights for on-device use.")
-  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  ];
+  const bundle = buildBundle(entries, taxonomy, date, "2026-07-16T00:00:00.000Z");
+  const bodyByHash = new Map(entries.map((item) => [item.raw.content_hash, trimBoilerplate(item.raw.clean_text)]));
   assert.equal(bundle.manifest.compatibility_state, "retired");
   assert.equal("compatibility_cards" in bundle, false);
   assert.equal("legacy_asset_mappings" in bundle, false);
   assert.ok(bundle.raw_documents.every((raw) => raw.body_ref));
-  const result = evaluateBundle({
+  const bodyFreeBundle = {
     manifest: bundle.manifest,
     source_artifacts: bundle.source_artifacts,
     raw_documents: bundle.raw_documents,
@@ -1156,7 +1158,13 @@ test("generated bundle passes the V4 integrity gate", () => {
     hardware_snapshots: bundle.hardware_snapshots,
     monitoring_funnel: bundle.monitoring_funnel,
     qa_queue: bundle.qa_queue
-  }, taxonomy);
+  };
+  const result = evaluateBundle(bodyFreeBundle, taxonomy, {
+    hydratedRawDocuments: bundle.raw_documents.map((raw) => ({
+      ...raw,
+      body_clean: bodyByHash.get(raw.content_hash) || "",
+    })),
+  });
   assert.deepEqual(result.failures, []);
 });
 
@@ -1193,7 +1201,7 @@ test("hardware Claims produce facts, dated snapshots, and monitored funnel rows"
   assert.ok(bundle.monitoring_funnel.every((item) => Object.values(item.rates).every((value) => value >= 0 && value <= 1)));
 });
 
-test("SourceArtifact always retains the ingested Raw JSON as a snapshot", (t) => {
+test("SourceArtifact retains a content-addressed private evidence locator", (t) => {
   const tempDir = fs.mkdtempSync(path.join(root, ".data-center-v4-test-"));
   t.after(() => fs.rmSync(tempDir, { recursive: true, force: true }));
   const rawEntry = entry(
@@ -1205,9 +1213,7 @@ test("SourceArtifact always retains the ingested Raw JSON as a snapshot", (t) =>
   rawEntry.file = path.join(tempDir, "raw.json");
   fs.writeFileSync(rawEntry.file, JSON.stringify(rawEntry.raw), "utf8");
   const bundle = buildBundle([rawEntry], taxonomy, date, "2026-07-16T00:00:00.000Z");
-  assert.ok(bundle.source_artifacts[0].snapshot_refs.includes(
-    path.relative(root, rawEntry.file).replace(/\\/gu, "/"),
-  ));
+  assert.deepEqual(bundle.source_artifacts[0].snapshot_refs, [`evidence://${rawEntry.raw.content_hash}`]);
   assert.ok(!bundle.source_artifacts[0].snapshot_refs.includes("fixtures/deleted-snapshot.md"));
 });
 

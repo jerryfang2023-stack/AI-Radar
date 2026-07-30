@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildBundle, writeBundle } from "./build-data-center-v4.mjs";
 import { evaluateBundle, readBundle } from "./assert-data-center-v4.mjs";
+import { availablePrivateEvidenceDates, loadPrivateEvidenceEntries } from "./lib/private-evidence-store.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,14 +25,16 @@ function readJson(file) {
 }
 
 function availableDates() {
-  return fs.readdirSync(rawRoot, { withFileTypes: true })
+  const repositoryDates = fs.existsSync(rawRoot) ? fs.readdirSync(rawRoot, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
     .map((entry) => entry.name)
-    .sort();
+    : [];
+  return [...new Set([...repositoryDates, ...availablePrivateEvidenceDates(root)])].sort();
 }
 
 function rawEntries(date) {
   const dir = path.join(rawRoot, date);
+  if (!fs.existsSync(dir)) return loadPrivateEvidenceEntries(root, date);
   return fs.readdirSync(dir)
     .filter((name) => name.endsWith(".json"))
     .sort()

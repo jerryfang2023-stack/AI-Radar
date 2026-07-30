@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "node": {
@@ -3753,7 +3753,6 @@
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
         "EV-4f36e494d9281522",
-        "EV-b20bf10af759bd43",
         "EV-83a8ac8a2554b60c",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
@@ -3764,9 +3763,7 @@
         "EV-d9da7dea91725a1c",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
-        "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
-        "EV-5cd7eaa56c1fbb83",
         "EV-712473b23a2a11a0",
         "EV-2bd337245c920bc8",
         "EV-302018f2e960a8bf",
@@ -3774,7 +3771,6 @@
         "EV-969ed3078d10f0c9",
         "EV-b920999c64aa9ef6",
         "EV-730a2f95a698a96d",
-        "EV-d39b53ca7b84b9ca",
         "EV-cf317dd1579a01bb",
         "EV-fcbd97e1f30c95e3",
         "EV-ee9a1c99fe7054d6",
@@ -3931,8 +3927,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
@@ -3941,6 +3935,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -3954,6 +3949,7 @@
         "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-industry-education"
       ],
@@ -4216,14 +4212,11 @@
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
         "EV-d709599eddf5db04",
-        "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
         "EV-067f57f6e6ffa6ce",
-        "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
-        "EV-8cb2374f76202ecc",
         "EV-946569cccbd9222f",
         "EV-917966af8545a380",
         "EV-b4203b10d6592bf2",
@@ -4260,8 +4253,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -4273,6 +4264,7 @@
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -4285,7 +4277,8 @@
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-reasoning"
+        "TX-technology-reasoning",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-d1ad14d4ad57d207",
@@ -4505,12 +4498,12 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
-        "TX-industry-financial_services"
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
@@ -4786,7 +4779,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -4797,6 +4789,7 @@
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -4956,7 +4949,6 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
@@ -4965,6 +4957,7 @@
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-technology-open_weights",
         "TX-technology-guardrails_safety",
         "TX-industry-media_entertainment",
@@ -5076,13 +5069,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-human_in_loop",
         "TX-use_case-robotics_automation",
         "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-embodied_ai",
-        "TX-technology-open_weights"
+        "TX-technology-open_weights",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-45c52af0feb0f285",
@@ -5289,7 +5282,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-5f3ccb941a2fe5d7",
+        "EV-2a78dd5feb40a78a",
         "EV-97854226b6f43a95",
         "EV-86ca5af11ee4d275",
         "EV-52115fee0e716170",
@@ -5398,8 +5391,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
-        "TX-technology-human_in_loop",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
@@ -5409,6 +5400,7 @@
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
@@ -5419,6 +5411,7 @@
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-technology-image_generation"
       ],
@@ -5507,8 +5500,6 @@
         "EV-fd8ecce5de2f667d",
         "EV-f6ac2938949f74ec",
         "EV-363fe72da52bdb86",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-8b9e4428074bde60",
         "EV-83c841a4c42cfdea",
         "EV-3167e6eed75597e9",
         "EV-ad2e4fe6a149d95d",
@@ -5537,15 +5528,13 @@
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
-        "TX-technology-long_context",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-speech_audio",
-        "TX-technology-image_generation",
-        "TX-technology-quantization"
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
@@ -5603,7 +5592,7 @@
         "EV-0f440082086c02df",
         "EV-7bc2e6744a92c81f",
         "EV-1b173bce1d43fb3d",
-        "EV-e4f5a28a1c8396b6",
+        "EV-bee1d02b343a89dd",
         "EV-d7a7b17b72aec7bf",
         "EV-155a9fb4982cbf22"
       ],
@@ -5893,9 +5882,7 @@
         "Claude Code v2.1.193",
         "Claude Code v2.1.198",
         "Claude Code v2.1.202",
-        "Claude Code v2.1.207",
         "Claude Code v2.1.208",
-        "Claude Code v2.1.210",
         "Claude Code v2.1.212"
       ],
       "verificationStatus": "verified",
@@ -5913,10 +5900,10 @@
         "EV-debecca007e547d2",
         "EV-a8a8f26c5128d894",
         "EV-22927691d2e0f0d6",
-        "EV-8bf42c1816e772ba",
-        "EV-5cd7eaa56c1fbb83",
+        "EV-3433ad1746695875",
+        "EV-79e295585f997372",
         "EV-2bd337245c920bc8",
-        "EV-d39b53ca7b84b9ca",
+        "EV-ccfb713e9a03a348",
         "EV-2637d0865239cb1a",
         "EV-e130583e34ab9d4c",
         "EV-598888cce208de5c",
@@ -6176,8 +6163,8 @@
         "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
+        "EV-4e54b77583b0a83e",
         "EV-f8ba1728de6a4899",
-        "EV-fe2b0d74944d6128",
         "EV-caec65aef89d3b4a",
         "EV-57e6392fe3bb69cd",
         "EV-eddb4330fed15762",
@@ -6199,11 +6186,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-enterprise_operations",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-enterprise_operations",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -6454,11 +6441,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
+        "TX-use_case-enterprise_operations",
         "TX-technology-long_context",
         "TX-technology-tool_use"
       ],
@@ -6790,6 +6777,146 @@
       "entityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-6d57b22ebbd2bd90"
+      ]
+    }
+  ],
+  "fdeDossiers": [
+    {
+      "id": "FDED-94d1eb9e8c638b41",
+      "implementationKey": "94d1eb9e8c638b41",
+      "eventId": "EV-dda9429d76897a3d",
+      "eventIds": [
+        "EV-dda9429d76897a3d"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "title": "未披露 × PrismML：1-Bit Bonsai-27B 模型",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "PrismML",
+      "industry": "未披露",
+      "useCase": "1-Bit Bonsai-27B 模型",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-42489994df326f36",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-07-28",
+          "dataDate": "2026-07-29",
+          "eventId": "EV-dda9429d76897a3d",
+          "eventTitle": "使用 PrismML llama.cpp 部署 1-Bit Bonsai-27B 模型",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/28/deploying-a-1-bit-bonsai-27b-model-with-prismml-llama-cpp-and-openai-compatible-local-inference-workflows",
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-7d3194f79e645c42"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-bf5c25cc614ae3f3",
+      "snapshotKey": "bf5c25cc614ae3f3",
+      "snapshotId": "HWS-49fa82bb0952212d",
+      "eventId": "EV-dda9429d76897a3d",
+      "eventIds": [
+        "EV-dda9429d76897a3d"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "PrismML",
+      "subject": "PrismML",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a32f96bee4c60808"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-a32f96bee4c60808",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T07:53:48.000Z",
+          "subject_entity_id": "EN-95b0632f1b292fa7",
+          "subject_name": "PrismML",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "In this tutorial, we deploy the 1-bit Bonsai-27B language model using the PrismML fork of llama.cpp, which provides the specialized CUDA kernels required to decode the model’s Q1_0_g128 GGUF quantization format. We begin by validating the GPU runtime, installing the required Python dependencies, compiling the CUDA-enabled inference binaries, and downloading the compressed model weights from Hugging Face. We then test the model through llama-cli, launch an OpenAI-compatible local inference server, and interact with it through a reusable Python client that supports standard completions, streamed responses, multi-turn conversations, and code generation. We also examine optional configurations for throughput benchmarking, quantized key-value caching, long-context inference, speculative decoding, and multimodal extensions.",
+          "event_refs": [
+            "EV-dda9429d76897a3d"
+          ],
+          "claim_ref": "CL-e6f482eef3443024",
+          "source_refs": [
+            "SA-388a9d6d464b7551"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/28/deploying-a-1-bit-bonsai-27b-model-with-prismml-llama-cpp-and-openai-compatible-local-inference-workflows",
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-7d3194f79e645c42"
       ]
     }
   ]

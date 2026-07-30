@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -111,5 +111,126 @@
   ],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5857ac9dedd51364",
+      "snapshotKey": "5857ac9dedd51364",
+      "snapshotId": "HWS-add91904ada7d6d6",
+      "eventId": "EV-f5483fed83363fa1",
+      "eventIds": [
+        "EV-f5483fed83363fa1"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "NPO",
+      "subject": "壁仞科技",
+      "productNames": [
+        "NPO"
+      ],
+      "hardwareType": "networking",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c27f79ebb3dbdc45"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-c22ed075a44f19e3",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:11:07.000Z",
+          "subject_entity_id": "EN-721eb3fd31f8e1f6",
+          "subject_name": "壁仞科技",
+          "product_entity_ids": [
+            "EN-581b48f2032c9621"
+          ],
+          "product_names": [
+            "NPO"
+          ],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案 - IT之家",
+          "event_refs": [
+            "EV-f5483fed83363fa1"
+          ],
+          "claim_ref": "CL-4803481bd6c46420",
+          "source_refs": [
+            "SA-fbb91e6c03b2774c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-f732564821fc8afc",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:11:07.000Z",
+          "subject_entity_id": "EN-721eb3fd31f8e1f6",
+          "subject_name": "壁仞科技",
+          "product_entity_ids": [
+            "EN-581b48f2032c9621"
+          ],
+          "product_names": [
+            "NPO"
+          ],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+          "event_refs": [
+            "EV-f5483fed83363fa1"
+          ],
+          "claim_ref": "CL-940b75befd32b922",
+          "source_refs": [
+            "SA-fbb91e6c03b2774c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-c27f79ebb3dbdc45",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:11:07.000Z",
+          "subject_entity_id": "EN-721eb3fd31f8e1f6",
+          "subject_name": "壁仞科技",
+          "product_entity_ids": [
+            "EN-581b48f2032c9621"
+          ],
+          "product_names": [
+            "NPO"
+          ],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，在 2026 世界人工智能大会上，壁仞科技推出下一代 NPO 光互连、分布式解耦架构超节点方案，支持单个超节点 1024 卡 Scale-up 扩展。",
+          "event_refs": [
+            "EV-f5483fed83363fa1"
+          ],
+          "claim_ref": "CL-136ba5c1ac1faec3",
+          "source_refs": [
+            "SA-fbb91e6c03b2774c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/705.htm",
+      "entityIds": [
+        "EN-721eb3fd31f8e1f6",
+        "EN-581b48f2032c9621"
+      ]
+    }
+  ]
 }

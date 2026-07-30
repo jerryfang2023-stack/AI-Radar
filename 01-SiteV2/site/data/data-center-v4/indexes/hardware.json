@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T09:01:27.367Z",
+    "generatedAt": "2026-07-30T11:10:50.961Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1722,
+    "eventCount": 1717,
     "quarantinedEventCount": 13
   },
   "hardware": [
@@ -695,7 +695,7 @@
         "EN-7d3194f79e645c42",
         "EN-683d8d597da71192",
         "EN-9e72fd4472222231",
-        "EN-1e71d9c1a5c4de16"
+        "EN-65131db63b4f633f"
       ]
     },
     {
@@ -2048,6 +2048,1485 @@
         "EN-36b1dbc8da066a19",
         "EN-7a03939835d5eee2",
         "EN-3e134fc2d861146f"
+      ]
+    },
+    {
+      "id": "HWC-5011ab43f9121e5e",
+      "snapshotKey": "5011ab43f9121e5e",
+      "snapshotId": "HWS-2714600fb19a2dfd",
+      "eventId": "EV-ad8e1754463695fd",
+      "eventIds": [
+        "EV-ad8e1754463695fd"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "AMD",
+      "subject": "AMD",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c7adc3698adf892a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-c7adc3698adf892a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T14:22:39.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此次合作将使 AMD 自 2027 年起获得 Core Scientific 超过 500 兆瓦的 AI 数据中心容量，其客户可利用这些设施部署人工智能系统。",
+          "event_refs": [
+            "EV-ad8e1754463695fd"
+          ],
+          "claim_ref": "CL-0bb8dac394ffa195",
+          "source_refs": [
+            "SA-146a6bdbb07f4909"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/982/773.htm",
+      "entityIds": [
+        "EN-240389f4b730bad4"
+      ]
+    },
+    {
+      "id": "HWC-cbb88a8475dff60b",
+      "snapshotKey": "cbb88a8475dff60b",
+      "snapshotId": "HWS-92cdee16d6162f7f",
+      "eventId": "EV-2bbbe9f38c3d66f0",
+      "eventIds": [
+        "EV-2bbbe9f38c3d66f0"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "EPYC CPUs / AAI 2026",
+      "subject": "AMD",
+      "productNames": [
+        "EPYC CPUs",
+        "AAI 2026"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-cd64ac65d739081f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-cd64ac65d739081f",
+          "fact_type": "product",
+          "observed_at": "2026-07-23T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-8c9ab5b09bf138fc",
+            "EN-f53212e480f217e1"
+          ],
+          "product_names": [
+            "EPYC CPUs",
+            "AAI 2026"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "At Advancing AI 2026, AMD launches 6th Gen AMD EPYC™ CPUs, AMD Instinct™ MI400 Series GPUs, AMD Helios™ AI rackscale solutions, AMD Ryzen™ AI Embedded X100 processors and the AMD Kria™ AI SOM and Robotics Developer Platform.",
+          "event_refs": [
+            "EV-2bbbe9f38c3d66f0"
+          ],
+          "claim_ref": "CL-d0beb7087776b36e",
+          "source_refs": [
+            "SA-fc1e3b53d6e38ecd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/23/3332491/0/en/AAI-2026-AMD-Delivers-Full-Stack-Compute-for-the-Agentic-AI-Era.html",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-8c9ab5b09bf138fc",
+        "EN-f53212e480f217e1"
+      ]
+    },
+    {
+      "id": "HWC-1e2465488c5a5d77",
+      "snapshotKey": "1e2465488c5a5d77",
+      "snapshotId": "HWS-97daa94104979156",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Kimi K3",
+      "subject": "Kimi K3",
+      "productNames": [
+        "Kimi K3"
+      ],
+      "hardwareType": "compute_cluster",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-35eaca87a98d223b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-35eaca87a98d223b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T08:38:20.000Z",
+          "subject_entity_id": "EN-aabd1a8a869c34a4",
+          "subject_name": "Kimi K3",
+          "product_entity_ids": [
+            "EN-607964040e4b62e0"
+          ],
+          "product_names": [
+            "Kimi K3"
+          ],
+          "component_type": "compute_cluster",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-2c626d78e65c2afc",
+          "source_refs": [
+            "SA-d37a791cf113478a",
+            "SA-4fedd07f0df44eb4",
+            "SA-8cff4a3f890c6d93",
+            "SA-89ca130f6dc317fe",
+            "SA-8cbf1980971c0828"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
+      "entityIds": [
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf"
+      ]
+    },
+    {
+      "id": "HWC-bf5c25cc614ae3f3",
+      "snapshotKey": "bf5c25cc614ae3f3",
+      "snapshotId": "HWS-49fa82bb0952212d",
+      "eventId": "EV-dda9429d76897a3d",
+      "eventIds": [
+        "EV-dda9429d76897a3d"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "PrismML",
+      "subject": "PrismML",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a32f96bee4c60808"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-a32f96bee4c60808",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T07:53:48.000Z",
+          "subject_entity_id": "EN-95b0632f1b292fa7",
+          "subject_name": "PrismML",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "In this tutorial, we deploy the 1-bit Bonsai-27B language model using the PrismML fork of llama.cpp, which provides the specialized CUDA kernels required to decode the model’s Q1_0_g128 GGUF quantization format. We begin by validating the GPU runtime, installing the required Python dependencies, compiling the CUDA-enabled inference binaries, and downloading the compressed model weights from Hugging Face. We then test the model through llama-cli, launch an OpenAI-compatible local inference server, and interact with it through a reusable Python client that supports standard completions, streamed responses, multi-turn conversations, and code generation. We also examine optional configurations for throughput benchmarking, quantized key-value caching, long-context inference, speculative decoding, and multimodal extensions.",
+          "event_refs": [
+            "EV-dda9429d76897a3d"
+          ],
+          "claim_ref": "CL-e6f482eef3443024",
+          "source_refs": [
+            "SA-388a9d6d464b7551"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/28/deploying-a-1-bit-bonsai-27b-model-with-prismml-llama-cpp-and-openai-compatible-local-inference-workflows",
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
+    {
+      "id": "HWC-b163cd2b6d2f9872",
+      "snapshotKey": "b163cd2b6d2f9872",
+      "snapshotId": "HWS-6641c9cc9cc9eed4",
+      "eventId": "EV-6833305504174bb1",
+      "eventIds": [
+        "EV-6833305504174bb1"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "全球首款半人马机器人在上海问世",
+      "subject": "全球首款半人马机器人在上海问世",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1ef45299dfad87b0"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-1ef45299dfad87b0",
+          "fact_type": "product",
+          "observed_at": "2026-07-20T00:54:37.000Z",
+          "subject_entity_id": "EN-a96df57737b74def",
+          "subject_name": "全球首款半人马机器人在上海问世",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 20 日消息，在上周末的 2026 世界人工智能大会（WAIC）现场，润科具能发布了 全球首款半人马机器人 。",
+          "event_refs": [
+            "EV-6833305504174bb1"
+          ],
+          "claim_ref": "CL-626409f8a9284b0e",
+          "source_refs": [
+            "SA-681dd7eff049e5ba"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/833.htm",
+      "entityIds": [
+        "EN-a96df57737b74def"
+      ]
+    },
+    {
+      "id": "HWC-b02eaec1de1f1502",
+      "snapshotKey": "b02eaec1de1f1502",
+      "snapshotId": "HWS-e0ceedb7d5a18a83",
+      "eventId": "EV-40979daeedded907",
+      "eventIds": [
+        "EV-40979daeedded907"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "天数智芯",
+      "subject": "天数智芯",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-416e3d06c78aa533"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-05511bdb372ff67d",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T12:11:01.000Z",
+          "subject_entity_id": "EN-509f226edbb9f410",
+          "subject_name": "天数智芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "天数智芯发布新一代通用 GPU 旗舰产品天垓 300，具备规模化应用条件 - IT之家",
+          "event_refs": [
+            "EV-40979daeedded907"
+          ],
+          "claim_ref": "CL-6deb57745de17f90",
+          "source_refs": [
+            "SA-f7ac43225d7cf9fe"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-1ee4cd772eb5175a",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T12:11:01.000Z",
+          "subject_entity_id": "EN-509f226edbb9f410",
+          "subject_name": "天数智芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "天数智芯发布新一代通用 GPU 旗舰产品天垓 300，具备规模化应用条件",
+          "event_refs": [
+            "EV-40979daeedded907"
+          ],
+          "claim_ref": "CL-0d6d1c5dd6da9a34",
+          "source_refs": [
+            "SA-f7ac43225d7cf9fe"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-416e3d06c78aa533",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T12:11:01.000Z",
+          "subject_entity_id": "EN-509f226edbb9f410",
+          "subject_name": "天数智芯",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，2026 世界人工智能大会正在举行，天数智芯今日发布新一代通用 GPU 旗舰产品天垓 300， 基于 SIMT 通用计算架构 ，可支持标量、矢量和张量等多种计算类型，并围绕 Attention、MoE、AF 分离、PD 分离及大规模系统扩展等技术进行优化。",
+          "event_refs": [
+            "EV-40979daeedded907"
+          ],
+          "claim_ref": "CL-b7c25b3465e0dd74",
+          "source_refs": [
+            "SA-f7ac43225d7cf9fe"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/781.htm",
+      "entityIds": [
+        "EN-509f226edbb9f410"
+      ]
+    },
+    {
+      "id": "HWC-0bb3993ac44d251b",
+      "snapshotKey": "0bb3993ac44d251b",
+      "snapshotId": "HWS-cb17241ee6299aeb",
+      "eventId": "EV-02b19ffbe883ee2e",
+      "eventIds": [
+        "EV-02b19ffbe883ee2e"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "AI Processing Chip / Set / It Plans",
+      "subject": "NVIDIA",
+      "productNames": [
+        "AI Processing Chip",
+        "Set",
+        "It Plans"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8ae99c92df5c7778"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-8ae99c92df5c7778",
+          "fact_type": "product",
+          "observed_at": "2026-03-13T00:00:00.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-683d8d597da71192",
+            "EN-9e72fd4472222231",
+            "EN-65131db63b4f633f"
+          ],
+          "product_names": [
+            "AI Processing Chip",
+            "Set",
+            "It Plans"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Nvidia Set to Enter Next Phase as It Plans to Launch New AI Processing Chip, WSJ Reports",
+          "event_refs": [
+            "EV-02b19ffbe883ee2e"
+          ],
+          "claim_ref": "CL-f255de03bcf06a3c",
+          "source_refs": [
+            "SA-7474f2d741d25276"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://finance.yahoo.com/news/nvidia-set-enter-next-phase-054624576.html",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-683d8d597da71192",
+        "EN-9e72fd4472222231",
+        "EN-65131db63b4f633f"
+      ]
+    },
+    {
+      "id": "HWC-3b0e2fdf7867be2b",
+      "snapshotKey": "3b0e2fdf7867be2b",
+      "snapshotId": "HWS-f77ccc963227a678",
+      "eventId": "EV-9d5363657f3541e7",
+      "eventIds": [
+        "EV-9d5363657f3541e7"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "Baidu",
+      "subject": "Baidu",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6ec402608a445236"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-3bded5be1e3d432b",
+          "fact_type": "product",
+          "observed_at": "2026-07-20T03:21:18.000Z",
+          "subject_entity_id": "EN-a89151ba4b5ac0f2",
+          "subject_name": "Baidu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "据介绍，M100 芯片是昆仑芯科技今年推出的第四代 AI 芯片产品， 延续自研 XPU 架构理念 ，面向大模型推理时代需求进行了针对性优化， 主打通用 、 高效和经济产品力 ，为 AI 计算提供全新选择。",
+          "event_refs": [
+            "EV-9d5363657f3541e7"
+          ],
+          "claim_ref": "CL-632f79932f097f22",
+          "source_refs": [
+            "SA-ac64a49a3f0dba35"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-9388f236ee31aba4",
+          "fact_type": "product",
+          "observed_at": "2026-07-20T03:21:18.000Z",
+          "subject_entity_id": "EN-a89151ba4b5ac0f2",
+          "subject_name": "Baidu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "据IT之家此前报道 ，昆仑芯 M100、M300 芯片于 2025 年 11 月发布，前者针对大规模推理场景优化设计，主打“极致性价比”；后者面向超大规模多模态模型的训练和推理需求，主打“极致性能”。",
+          "event_refs": [
+            "EV-9d5363657f3541e7"
+          ],
+          "claim_ref": "CL-10f43920b8f5cec4",
+          "source_refs": [
+            "SA-ac64a49a3f0dba35"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-6ec402608a445236",
+          "fact_type": "product",
+          "observed_at": "2026-07-20T03:21:18.000Z",
+          "subject_entity_id": "EN-a89151ba4b5ac0f2",
+          "subject_name": "Baidu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "同时，昆仑芯还在 WAIC 2026 展示了芯片、加速卡、整机和超节点等产品矩阵。",
+          "event_refs": [
+            "EV-9d5363657f3541e7"
+          ],
+          "claim_ref": "CL-3522bc6dc2f91fd1",
+          "source_refs": [
+            "SA-ac64a49a3f0dba35"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/920.htm",
+      "entityIds": [
+        "EN-a89151ba4b5ac0f2"
+      ]
+    },
+    {
+      "id": "HWC-49de2a0bbb5cae30",
+      "snapshotKey": "49de2a0bbb5cae30",
+      "snapshotId": "HWS-b91531e0c0102146",
+      "eventId": "EV-218c2f6ecf3c369f",
+      "eventIds": [
+        "EV-218c2f6ecf3c369f"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "ESL64-O",
+      "subject": "燧原科技联合中兴通讯",
+      "productNames": [
+        "ESL64-O"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-7a57d316331276fe"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-4575868084df1e1f",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:37:52.000Z",
+          "subject_entity_id": "EN-e95cf508b2bef361",
+          "subject_name": "燧原科技联合中兴通讯",
+          "product_entity_ids": [
+            "EN-0b706b4b95ba647c"
+          ],
+          "product_names": [
+            "ESL64-O"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与架构创新降低互联成本 - IT之家",
+          "event_refs": [
+            "EV-218c2f6ecf3c369f"
+          ],
+          "claim_ref": "CL-bef992849f6c8110",
+          "source_refs": [
+            "SA-0729ccc28efa48d9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-530ac0e140ca2957",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:37:52.000Z",
+          "subject_entity_id": "EN-e95cf508b2bef361",
+          "subject_name": "燧原科技联合中兴通讯",
+          "product_entity_ids": [
+            "EN-0b706b4b95ba647c"
+          ],
+          "product_names": [
+            "ESL64-O"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与架构创新降低互联成本",
+          "event_refs": [
+            "EV-218c2f6ecf3c369f"
+          ],
+          "claim_ref": "CL-4acaacad906c6cc7",
+          "source_refs": [
+            "SA-0729ccc28efa48d9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-5fb255cbe822c2a5",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:37:52.000Z",
+          "subject_entity_id": "EN-e95cf508b2bef361",
+          "subject_name": "燧原科技联合中兴通讯",
+          "product_entity_ids": [
+            "EN-0b706b4b95ba647c"
+          ],
+          "product_names": [
+            "ESL64-O"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，7 月 18 日下午，在 2026 世界人工智能大会期间，燧原科技正式发布云燧 ESL64-O 超节点、CoPoS+AI 芯片、天基算力应用场景三项成果。",
+          "event_refs": [
+            "EV-218c2f6ecf3c369f"
+          ],
+          "claim_ref": "CL-23db5f68b34959d3",
+          "source_refs": [
+            "SA-0729ccc28efa48d9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-7a57d316331276fe",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:37:52.000Z",
+          "subject_entity_id": "EN-e95cf508b2bef361",
+          "subject_name": "燧原科技联合中兴通讯",
+          "product_entity_ids": [
+            "EN-0b706b4b95ba647c"
+          ],
+          "product_names": [
+            "ESL64-O"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "燧原科技携手先封科技，联合发布适配 AI 算力芯片的 CoPoS（Chip-on-Panel-on-Substrate）面板级 先进封装 样品。",
+          "event_refs": [
+            "EV-218c2f6ecf3c369f"
+          ],
+          "claim_ref": "CL-043447d9bafb0170",
+          "source_refs": [
+            "SA-0729ccc28efa48d9"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/716.htm",
+      "entityIds": [
+        "EN-e95cf508b2bef361",
+        "EN-4dbe391b8fcf977a",
+        "EN-0b706b4b95ba647c"
+      ]
+    },
+    {
+      "id": "HWC-dd5f617ef36258ae",
+      "snapshotKey": "dd5f617ef36258ae",
+      "snapshotId": "HWS-d31e74740359648b",
+      "eventId": "EV-a5efa57f3f744425",
+      "eventIds": [
+        "EV-a5efa57f3f744425"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "MiniCPM5-2B",
+      "subject": "面壁智能",
+      "productNames": [
+        "MiniCPM5-2B"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-59b4016918d24007"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a12c65a0b4a2e547"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-a12c65a0b4a2e547",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-19T13:40:52.000Z",
+          "subject_entity_id": "EN-3309b3b14807f39a",
+          "subject_name": "面壁智能",
+          "product_entity_ids": [
+            "EN-61a405a731497229"
+          ],
+          "product_names": [
+            "MiniCPM5-2B"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "官方表示， 在不久的将来，MiniCPM5-2B 将正式开源 ，开发者可通过 Hugging Face、魔搭等平台获取模型权重，同时可获取针对各芯片平台的适配镜像与部署指南。",
+          "event_refs": [
+            "EV-a5efa57f3f744425"
+          ],
+          "claim_ref": "CL-0ed1fe63ba15c030",
+          "source_refs": [
+            "SA-7d10310c2b856ddd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-59b4016918d24007",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T13:40:52.000Z",
+          "subject_entity_id": "EN-3309b3b14807f39a",
+          "subject_name": "面壁智能",
+          "product_entity_ids": [
+            "EN-61a405a731497229"
+          ],
+          "product_names": [
+            "MiniCPM5-2B"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，面壁智能今日联合 OpenBMB 在 2026 世界人工智能大会上发布了最新端侧模型 MiniCPM5-2B ，并完成多款芯片适配。",
+          "event_refs": [
+            "EV-a5efa57f3f744425"
+          ],
+          "claim_ref": "CL-f2fa513ae091829e",
+          "source_refs": [
+            "SA-7d10310c2b856ddd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/796.htm",
+      "entityIds": [
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229"
+      ]
+    },
+    {
+      "id": "HWC-dacb904da83c2957",
+      "snapshotKey": "dacb904da83c2957",
+      "snapshotId": "HWS-af6ccbe6deb3d227",
+      "eventId": "EV-4cb7e4c371fb252e",
+      "eventIds": [
+        "EV-4cb7e4c371fb252e"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "NIO",
+      "subject": "NIO",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-65e3e1febac062a4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-65e3e1febac062a4",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:02:55.000Z",
+          "subject_entity_id": "EN-e9b67bdfb6ae6a2e",
+          "subject_name": "NIO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "除了展出「神玑 NX9031」芯片和车载域控外，还在会展期间推出「睿动」具身智能开发平台、分布式智能体平台等 AI 新产品。",
+          "event_refs": [
+            "EV-4cb7e4c371fb252e"
+          ],
+          "claim_ref": "CL-0751adbc583d1d7d",
+          "source_refs": [
+            "SA-bf77e94665fe01e3"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/703.htm",
+      "entityIds": [
+        "EN-e9b67bdfb6ae6a2e",
+        "EN-985e1a7c957148f9"
+      ]
+    },
+    {
+      "id": "HWC-5857ac9dedd51364",
+      "snapshotKey": "5857ac9dedd51364",
+      "snapshotId": "HWS-add91904ada7d6d6",
+      "eventId": "EV-f5483fed83363fa1",
+      "eventIds": [
+        "EV-f5483fed83363fa1"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "NPO",
+      "subject": "壁仞科技",
+      "productNames": [
+        "NPO"
+      ],
+      "hardwareType": "networking",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c27f79ebb3dbdc45"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-c22ed075a44f19e3",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:11:07.000Z",
+          "subject_entity_id": "EN-721eb3fd31f8e1f6",
+          "subject_name": "壁仞科技",
+          "product_entity_ids": [
+            "EN-581b48f2032c9621"
+          ],
+          "product_names": [
+            "NPO"
+          ],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案 - IT之家",
+          "event_refs": [
+            "EV-f5483fed83363fa1"
+          ],
+          "claim_ref": "CL-4803481bd6c46420",
+          "source_refs": [
+            "SA-fbb91e6c03b2774c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-f732564821fc8afc",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:11:07.000Z",
+          "subject_entity_id": "EN-721eb3fd31f8e1f6",
+          "subject_name": "壁仞科技",
+          "product_entity_ids": [
+            "EN-581b48f2032c9621"
+          ],
+          "product_names": [
+            "NPO"
+          ],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+          "event_refs": [
+            "EV-f5483fed83363fa1"
+          ],
+          "claim_ref": "CL-940b75befd32b922",
+          "source_refs": [
+            "SA-fbb91e6c03b2774c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-c27f79ebb3dbdc45",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T07:11:07.000Z",
+          "subject_entity_id": "EN-721eb3fd31f8e1f6",
+          "subject_name": "壁仞科技",
+          "product_entity_ids": [
+            "EN-581b48f2032c9621"
+          ],
+          "product_names": [
+            "NPO"
+          ],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，在 2026 世界人工智能大会上，壁仞科技推出下一代 NPO 光互连、分布式解耦架构超节点方案，支持单个超节点 1024 卡 Scale-up 扩展。",
+          "event_refs": [
+            "EV-f5483fed83363fa1"
+          ],
+          "claim_ref": "CL-136ba5c1ac1faec3",
+          "source_refs": [
+            "SA-fbb91e6c03b2774c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/705.htm",
+      "entityIds": [
+        "EN-721eb3fd31f8e1f6",
+        "EN-581b48f2032c9621"
+      ]
+    },
+    {
+      "id": "HWC-d6982a4042c8bbef",
+      "snapshotKey": "d6982a4042c8bbef",
+      "snapshotId": "HWS-bce27423b2fdf1f0",
+      "eventId": "EV-b2d94511e4b4dfc8",
+      "eventIds": [
+        "EV-b2d94511e4b4dfc8"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-07-15",
+      "title": "Custom AI chip design startup TYLsemi",
+      "subject": "Custom AI chip design startup TYLsemi",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "43",
+          "unit": "$M",
+          "fact_ref": "HWF-ba1de9b8ede4ff7e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-15",
+          "hardware_fact_id": "HWF-ba1de9b8ede4ff7e",
+          "fact_type": "product",
+          "observed_at": "2026-07-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4c3788aad4bebf2f",
+          "subject_name": "Custom AI chip design startup TYLsemi",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "43",
+          "unit": "$M",
+          "source_quote": "Custom AI chip design startup TYLsemi launches with $43M in early-stage funding",
+          "event_refs": [
+            "EV-b2d94511e4b4dfc8"
+          ],
+          "claim_ref": "CL-0f7de1f289c977b6",
+          "source_refs": [
+            "SA-903d243c7a19a7c1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding",
+      "entityIds": [
+        "EN-4c3788aad4bebf2f",
+        "EN-cf9488537f777c1a"
+      ]
+    },
+    {
+      "id": "HWC-c32abfcca87f583a",
+      "snapshotKey": "c32abfcca87f583a",
+      "snapshotId": "HWS-217fc79f77b03d70",
+      "eventId": "EV-5f718c76c285ac9b",
+      "eventIds": [
+        "EV-5f718c76c285ac9b"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-07-15",
+      "title": "Full-Stack Chiplet / AI Silicon / First Full-Stack Chiplet",
+      "subject": "TYLsemi",
+      "productNames": [
+        "Full-Stack Chiplet",
+        "AI Silicon",
+        "First Full-Stack Chiplet"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "43",
+          "unit": "$million",
+          "fact_ref": "HWF-225d009a303071f9"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-15",
+          "hardware_fact_id": "HWF-225d009a303071f9",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-14T00:00:00.000Z",
+          "subject_entity_id": "EN-cf9488537f777c1a",
+          "subject_name": "TYLsemi",
+          "product_entity_ids": [
+            "EN-38f4d27a18084522",
+            "EN-74beb25bdfe7bdd1",
+            "EN-94c93b5ab886f2d9"
+          ],
+          "product_names": [
+            "Full-Stack Chiplet",
+            "AI Silicon",
+            "First Full-Stack Chiplet"
+          ],
+          "component_type": "data_center",
+          "metric_value": "43",
+          "unit": "$million",
+          "source_quote": "San Jose, California, July 14, 2026 – Today, TYLsemi™ emerged from stealth and announced the closing of an oversubscribed $43 million early-stage funding round to accelerate the development of AI infrastructure. TYLsemi is the first chiplet platform company to deliver a full portfolio across IO, power delivery, and memory paired with a chiplet-based custom silicon design, integration and supply-chain ownership. This standards-based, production-ready portfolio will provide AI infrastructure customers with a faster, lower-risk path for developing AI silicon from architecture to deployment.",
+          "event_refs": [
+            "EV-5f718c76c285ac9b"
+          ],
+          "claim_ref": "CL-8b941b4cf3279dc5",
+          "source_refs": [
+            "SA-8368bad4f79b26ba"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-15/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon",
+      "entityIds": [
+        "EN-cf9488537f777c1a",
+        "EN-38f4d27a18084522",
+        "EN-74beb25bdfe7bdd1",
+        "EN-94c93b5ab886f2d9"
+      ]
+    },
+    {
+      "id": "HWC-9a1527ebf069a84d",
+      "snapshotKey": "9a1527ebf069a84d",
+      "snapshotId": "HWS-4374d9f0be191db0",
+      "eventId": "EV-770cea9de2337d0e",
+      "eventIds": [
+        "EV-770cea9de2337d0e"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-07-15",
+      "title": "Generative AI",
+      "subject": "Samsung SDS",
+      "productNames": [
+        "Generative AI"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-bce681efcca393bb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-15",
+          "hardware_fact_id": "HWF-bce681efcca393bb",
+          "fact_type": "product",
+          "observed_at": "2026-07-14T09:08:37.000Z",
+          "subject_entity_id": "EN-c13e2f4a44bb01ed",
+          "subject_name": "Samsung SDS",
+          "product_entity_ids": [
+            "EN-e69e1d0e7ad091fc"
+          ],
+          "product_names": [
+            "Generative AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Samsung SDS announced that it will officially launch NPU (NPUaaS) as a service based on Samsung Cloud Platform (SCP) on the 16th.",
+          "event_refs": [
+            "EV-770cea9de2337d0e"
+          ],
+          "claim_ref": "CL-014ede19bf865478",
+          "source_refs": [
+            "SA-d2f235b1fe53f9c2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://mk.co.kr/en/it/12098590",
+      "entityIds": [
+        "EN-c13e2f4a44bb01ed",
+        "EN-e69e1d0e7ad091fc"
+      ]
+    },
+    {
+      "id": "HWC-a9264795464705fa",
+      "snapshotKey": "a9264795464705fa",
+      "snapshotId": "HWS-ccc322b3ac990588",
+      "eventId": "EV-4e54b77583b0a83e",
+      "eventIds": [
+        "EV-4e54b77583b0a83e"
+      ],
+      "dataDate": "2026-07-15",
+      "date": "2026-07-15",
+      "title": "GLM-5.2 NVFP4",
+      "subject": "LMSYS 与 SGLang",
+      "productNames": [
+        "GLM-5.2 NVFP4"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "34",
+          "unit": "%",
+          "fact_ref": "HWF-e754c7bb57e403f6"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-15",
+          "hardware_fact_id": "HWF-e754c7bb57e403f6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-14T00:00:00.000Z",
+          "subject_entity_id": "EN-34083473c73ff542",
+          "subject_name": "LMSYS 与 SGLang",
+          "product_entity_ids": [
+            "EN-64c4e740f32911e8"
+          ],
+          "product_names": [
+            "GLM-5.2 NVFP4"
+          ],
+          "component_type": "gpu",
+          "metric_value": "34",
+          "unit": "%",
+          "source_quote": "Three things stand out. First, GLM-5.2 is a substantially more efficient architecture than GLM-5.1. On the same SGLang release, GLM-5.2 delivers a ~1.4x and ~1.3x improvement in single-user interactivity per-GPU throughput, respectively, on both 4×GB300 and 8×B300. This gain comes from applying IndexShare to the DSA layers and from the improved MTP head, which reuses IndexShare and KVShare. Second, single-user interactivity has improved 18-34% since day-0. At batch size 1, our optimizations sharply cut per-token overhead, letting us reach 500+ TPS on 8xB300. Third, we made no compromise on high-concurrency throughput, peak throughput at batch size 8 also improved by 6–11%.",
+          "event_refs": [
+            "EV-4e54b77583b0a83e"
+          ],
+          "claim_ref": "CL-fe19ca104837cb24",
+          "source_refs": [
+            "SA-3b5d365f11350356"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-15/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://lmsys.org/blog/2026-07-13-glm52-optimization",
+      "entityIds": [
+        "EN-34083473c73ff542",
+        "EN-636fa9664f878a4d",
+        "EN-6c87e5496f592f3c",
+        "EN-6f7ac1823da81d2e",
+        "EN-64c4e740f32911e8"
+      ]
+    },
+    {
+      "id": "HWC-a69a19ffe8796885",
+      "snapshotKey": "a69a19ffe8796885",
+      "snapshotId": "HWS-4f9ce8922bd11dc4",
+      "eventId": "EV-f7b60c0c63403f8c",
+      "eventIds": [
+        "EV-f7b60c0c63403f8c"
+      ],
+      "dataDate": "2026-07-11",
+      "date": "2026-07-11",
+      "title": "Booster T2",
+      "subject": "加速进化",
+      "productNames": [
+        "Booster T2"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "fact_ref": "HWF-77eabea35e1e8f34"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-11",
+          "hardware_fact_id": "HWF-90ddff6f76b8199a",
+          "fact_type": "product",
+          "observed_at": "2026-07-10T12:49:35.000Z",
+          "subject_entity_id": "EN-de6b71bf77ff4299",
+          "subject_name": "加速进化",
+          "product_entity_ids": [
+            "EN-c4ef31845ea79710"
+          ],
+          "product_names": [
+            "Booster T2"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "source_quote": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力 - IT之家",
+          "event_refs": [
+            "EV-f7b60c0c63403f8c"
+          ],
+          "claim_ref": "CL-7044c3e5ee3cf9e0",
+          "source_refs": [
+            "SA-c09c2ef108e2cf71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-11",
+          "hardware_fact_id": "HWF-77eabea35e1e8f34",
+          "fact_type": "product",
+          "observed_at": "2026-07-10T12:49:35.000Z",
+          "subject_entity_id": "EN-de6b71bf77ff4299",
+          "subject_name": "加速进化",
+          "product_entity_ids": [
+            "EN-c4ef31845ea79710"
+          ],
+          "product_names": [
+            "Booster T2"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "source_quote": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+          "event_refs": [
+            "EV-f7b60c0c63403f8c"
+          ],
+          "claim_ref": "CL-f2bc8db4d7c0babc",
+          "source_refs": [
+            "SA-c09c2ef108e2cf71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-11/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "entityIds": [
+        "EN-de6b71bf77ff4299",
+        "EN-8d4321d936320802",
+        "EN-c4ef31845ea79710"
       ]
     }
   ],
