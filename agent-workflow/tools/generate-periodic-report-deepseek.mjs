@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deepSeekJsonCompletion, deepSeekModels } from "./deepseek-translation-client.mjs";
+import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 import { periodicReportTitleProblems, periodicReportTitlePromptRules } from "./periodic-report-title.mjs";
 
 const root = process.cwd();
@@ -150,8 +151,8 @@ async function main() {
   const counts = `Signals: ${manifest.counts.Signals} | Opinions: ${manifest.counts.Opinions} | Community: ${manifest.counts.Community}`;
   const body = `${frontmatter.join("\n")}\n\n${counts}\n\n${result.payload.sections.map((section) => `## ${section.number}. ${section.title}\n\n${section.content}`).join("\n\n")}\n`;
   const contentFile = kind === "weekly"
-    ? path.join(root, "01-SiteV2", "content", "08-report", `${date}--weekly-report--ai-business-change-radar.md`)
-    : path.join(root, "01-SiteV2", "content", "08-report", "monthly", `${date}--monthly-report--ai-business-structure-and-opportunity.md`);
+    ? path.join(root, OBSIDIAN_PATHS.reportsRoot, `${date}--weekly-report--ai-business-change-radar.md`)
+    : path.join(root, OBSIDIAN_PATHS.reportsRoot, "monthly", `${date}--monthly-report--ai-business-structure-and-opportunity.md`);
   write(contentFile, body);
   if (kind === "weekly") write(path.join(root, "agent-workflow", "reports", `${date}-weekly-ai-business-change-radar.md`), body);
   const provenance = { schema_version: "PERIODIC-REPORT-MODEL-V1.0", kind, date, window: { start: windowStart, end: windowEnd }, provider: result.provider, model: result.model, generated_at: result.generatedAt, counts: manifest.counts, evidence_ids: [...allowedIds] };

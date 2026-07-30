@@ -2,10 +2,12 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { OBSIDIAN_PATHS, resolveObsidianPath } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
-const outputRoot = path.join(root, "01-SiteV2/content/09-fde");
+const outputRoot = resolveObsidianPath(root, OBSIDIAN_PATHS.fdeRoot);
+const repositoryDataBase = "https://github.com/jerryfang2023-stack/AI-Radar/blob/main/01-SiteV2/content/11-databases/data-center-v4";
 const args = new Map(process.argv.slice(2).map((value) => {
   const [key, ...rest] = value.replace(/^--/u, "").split("=");
   return [key, rest.join("=") || "true"];
@@ -74,7 +76,7 @@ const daily = [
   "",
   "> 本页直接投影自 Data Center V4 的 FDERecord。它是企业实施事实视图，不是第四类 Signal Card。",
   "",
-  `- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/${date}/canonical-events.json)`,
+  `- [当日 V4 CanonicalEvent](${repositoryDataBase}/${date}/canonical-events.json)`,
   "",
   ...items.flatMap(({ record, event, source }, index) => [
     `## ${index + 1}. ${event.display_title_zh || event.object || record.use_case || record.fde_id}`,
@@ -110,9 +112,9 @@ const index = [
   "",
   "# Enterprise AI / FDE Index",
   "",
-  "> Data Center V4 的企业实施事实索引。旧 Business Signals 仅为兼容资产，不再作为本目录的数据源。",
+  "> Data Center V4 的企业实施事实索引。应用层卡片与历史接口不作为本目录的数据源。",
   "",
-  "- [[../11-databases/data-center-v4/Data Center V4 Index|Data Center V4 Index]]",
+  "- [[../01-Commercial-Events/Data Center V4 Index|Data Center V4 Index]]",
   "",
   "## Daily Views",
   "",

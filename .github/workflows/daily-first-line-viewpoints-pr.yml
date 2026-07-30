@@ -76,8 +76,8 @@ jobs:
             data_date="$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));const value=data.meta?.date||data.meta?.generatedAt||data.meta?.generatedDate||data.generatedDate||data.generatedAt||'';const date=value ? new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)) : ''; process.stdout.write(date);" "$data_file")"
           fi
 
-          if [ -d "01-SiteV2/knowledge/02-Opinion-Timelines/people" ]; then
-            obsidian_count="$( { grep -R "^### ${RUN_DATE}\b" 01-SiteV2/knowledge/02-Opinion-Timelines/people --include='*.md' 2>/dev/null || true; } | wc -l | tr -d ' ')"
+          if [ -d "vault/10-Data-Center/04-First-Line-Viewpoints/people" ]; then
+            obsidian_count="$( { grep -R "^### ${RUN_DATE}\b" vault/10-Data-Center/04-First-Line-Viewpoints/people --include='*.md' 2>/dev/null || true; } | wc -l | tr -d ' ')"
           fi
 
           if [ "$data_date" = "$RUN_DATE" ]; then
@@ -248,7 +248,7 @@ jobs:
             01-SiteV2/site/data/follow-builders-daily.json
             01-SiteV2/site/data/first-line-viewpoints-v4.json
             01-SiteV2/site/data/data-center-v4-frontstage.json
-            01-SiteV2/knowledge/02-Opinion-Timelines/**
+            vault/10-Data-Center/04-First-Line-Viewpoints/**
             01-SiteV2/content/11-databases/builder-blog-feed.json
             01-SiteV2/content/11-databases/builder-podcast-feed.json
 
@@ -275,7 +275,7 @@ jobs:
           stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
           stage_if_exists "01-SiteV2/site/data/first-line-viewpoints-v4.json"
           stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
-          stage_if_exists "01-SiteV2/knowledge/02-Opinion-Timelines"
+          stage_if_exists "vault/10-Data-Center/04-First-Line-Viewpoints"
           stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
           stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"
 
@@ -309,7 +309,7 @@ jobs:
           - rebuilt \`follow-builders-daily.json\`;
           - passed \`assert-follow-builders-data.mjs\`;
           - refreshed the Data Center viewpoint adapter used by the factual catalog gate;
-          - synced same-day Builder viewpoints into \`01-SiteV2/knowledge/02-Opinion-Timelines/\`;
+          - synced same-day Builder viewpoints into \`vault/10-Data-Center/04-First-Line-Viewpoints/\`;
           - no business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
 
           GitHub Pages deploys after this PR updates main.

@@ -69,7 +69,7 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 3. Build or inspect current `follow-builders-daily.json`; run `assert-follow-builders-data.mjs` for the active date.
 4. Inspect `first-line-viewpoints-history.json`. Rebuild it from committed morning snapshots only when a backfill or history repair is requested; do not translate historical records during routine supervision.
 5. Build `first-line-viewpoints-v4.json`, then run `assert-first-line-viewpoints-v4-data.mjs` and verify current/historical counts, date range, lane coverage, and original-URL dedupe.
-6. Sync gated run data into `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<original-date>.md`, then confirm a same-date dry run reports `added: 0`.
+6. Sync gated run data into `vault/10-Data-Center/04-First-Line-Viewpoints/people/<person>/<original-date>.md`, then confirm a same-date dry run reports `added: 0`.
 7. Publish the afternoon follow-builders skill output through its independent branch / PR route and verify the local publish report.
 8. Stage / publish only first-line owned files through the automation PR route.
 9. Add or tighten evals before adding long prose when a failure recurs.
@@ -137,7 +137,7 @@ Success after 16:30 requires:
 
 - `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md` exists;
 - the output frontmatter `builder_items_count` is greater than `0`;
-- generated skill viewpoints are synced into `01-SiteV2/knowledge/02-Opinion-Timelines/`;
+- generated skill viewpoints are synced into `vault/10-Data-Center/04-First-Line-Viewpoints/`;
 - `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` exists;
 - the report `builder_items_count` is greater than `0`;
 - the report count matches the output count.

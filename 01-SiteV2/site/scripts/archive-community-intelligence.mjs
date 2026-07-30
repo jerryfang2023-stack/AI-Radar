@@ -2,12 +2,13 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { OBSIDIAN_PATHS, resolveObsidianPath } from "../../../agent-workflow/tools/obsidian-vault-paths.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const siteRoot = path.resolve(__dirname, "..");
 const projectRoot = path.resolve(siteRoot, "..", "..");
 const inputPath = path.join(siteRoot, "data", "community-intelligence.json");
-const archiveRoot = path.join(projectRoot, "01-SiteV2", "content", "07-community-intelligence");
+const archiveRoot = resolveObsidianPath(projectRoot, OBSIDIAN_PATHS.communityRoot);
 
 const typeConfig = {
   industry_case: {

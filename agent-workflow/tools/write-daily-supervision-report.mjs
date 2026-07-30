@@ -7,7 +7,6 @@ import { sourceTitleNeedsChineseTranslation } from "./source-title-translation-g
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const inboxDir = path.join(root, "agent-workflow", "inbox", "hermes-to-codex");
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -19,7 +18,6 @@ const args = new Map(
 const date = args.get("date") || shanghaiDate();
 const githubMode = args.get("github") || "auto";
 const taskMode = args.get("scheduled-task") || "auto";
-const hermesMode = args.get("hermes") || args.get("write-hermes") || "off";
 const forceAfternoonWindow = args.get("force-afternoon-window") === "true";
 
 function shanghaiDate(value = new Date()) {
@@ -219,64 +217,6 @@ function addWaiting(list, message) {
   list.push({ message, severity: "waiting" });
 }
 
-function slug(value = "") {
-  const text = String(value)
-    .toLowerCase()
-    .replace(/[^a-z0-9\u4e00-\u9fa5]+/gu, "-")
-    .replace(/^-+|-+$/gu, "")
-    .slice(0, 80);
-  return text || "repair";
-}
-
-function shanghaiTimestamp(value = new Date()) {
-  const dateValue = value instanceof Date ? value : new Date(value);
-  if (Number.isNaN(dateValue.getTime())) return "";
-  const parts = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Asia/Shanghai",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: false,
-  }).formatToParts(dateValue);
-  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
-  return `${values.year}-${values.month}-${values.day}T${values.hour}:${values.minute}:${values.second}+08:00`;
-}
-
-function incidentCategories(lane) {
-  if (lane.id === "business_signals" && lane.evidence?.diagnosis?.category) {
-    const categories = [lane.evidence.diagnosis.category];
-    if (lane.evidence.diagnosis.category !== "monitor_or_gate_failure" && lane.problems.some((item) => /quality gate|workflow|gate failed/iu.test(item.message))) {
-      categories.push("monitor_or_gate_failure");
-    }
-    return [...new Set(categories)];
-  }
-
-  const haystack = [
-    lane.id,
-    lane.status,
-    ...lane.problems.map((item) => item.message || item),
-    ...lane.warnings.map((item) => item.message || item),
-    ...lane.actions,
-  ].join("\n").toLowerCase();
-  const categories = new Set();
-
-  if (/public card|frontstage\s*selected|selected count|frontstage card/iu.test(haystack)) categories.add("business_signals_frontstage_cards_missing");
-  if (/source[_ -]?first|source_first|frontstage gate/iu.test(haystack)) categories.add("source_first_frontstage_gate");
-  if (/title|标题|mojibake|乱码|untranslated|未翻译|translation/iu.test(haystack)) categories.add("raw_card_ingestion_title_fact");
-  if (/detail|详情|visible fragment|source-backed|内容不对|wrong content/iu.test(haystack)) categories.add("frontstage_detail_content");
-  if (/quality gate|monitor|监测|workflow conclusion|failed|gate failed|manual dispatch|same-date .*run/iu.test(haystack)) categories.add("monitor_or_gate_failure");
-  if (/obsidian|timeline|sync/iu.test(haystack)) categories.add("obsidian_sync");
-  if (/community/iu.test(haystack)) categories.add("community_intelligence");
-  if (/first-line|builders|follow-builders/iu.test(haystack)) categories.add("first_line_viewpoints");
-  if (/skill[_ -]?ops|skill registry|skill-store|\.skill-store|guanlan skill|evals|examples/iu.test(haystack)) categories.add("skill_ops");
-
-  if (!categories.size) categories.add(slug(lane.problems[0]?.message || lane.actions[0] || lane.id));
-  return [...categories];
-}
-
 function repairDataGenerated(lane) {
   if (lane.id === "skill_ops") return "not_applicable";
   if (lane.id === "follow_builders_skill") {
@@ -316,10 +256,6 @@ function markdownList(items) {
 
 function isTodayOrPast(targetDate) {
   return targetDate <= shanghaiDate();
-}
-
-function shouldWriteHermesInbox() {
-  return false;
 }
 
 function hasWindowPassed(targetDate, hhmm) {
@@ -1199,78 +1135,6 @@ function repairRequest(lane) {
   ].join("\n");
 }
 
-function existingOpenIncident(file) {
-  if (!fs.existsSync(file)) return false;
-  const fields = parseFields(readText(file));
-  return !["resolved", "manual_archive"].includes(fields.status || "open");
-}
-
-function uniqueInboxFile(baseFile) {
-  if (!fs.existsSync(baseFile) || existingOpenIncident(baseFile)) return baseFile;
-  const parsed = path.parse(baseFile);
-  let index = 2;
-  while (true) {
-    const candidate = path.join(parsed.dir, `${parsed.name}-${index}${parsed.ext}`);
-    if (!fs.existsSync(candidate) || existingOpenIncident(candidate)) return candidate;
-    index += 1;
-  }
-}
-
-function writeHermesInbox(payload, mdPath) {
-  fs.mkdirSync(inboxDir, { recursive: true });
-  const created = [];
-
-  for (const lane of payload.lanes) {
-    if (!lane.problems.length) continue;
-    const categories = incidentCategories(lane);
-    const primaryCategory = categories[0] || "repair";
-    const baseFile = path.join(inboxDir, `${date}-${lane.id}-${slug(primaryCategory)}.md`);
-    const file = uniqueInboxFile(baseFile);
-    const priority = lane.status === "failed" ? "urgent" : "normal";
-    const fields = fs.existsSync(file) && existingOpenIncident(file) ? parseFields(readText(file)) : {};
-    const createdAt = fields.created_at || shanghaiTimestamp();
-    const content = [
-      "status: open",
-      `priority: ${priority}`,
-      `lane: ${lane.id}`,
-      `category: ${primaryCategory}`,
-      `failed_gate: ${repairGate(lane)}`,
-      `report_path: ${rel(mdPath)}`,
-      `data_generated: ${repairDataGenerated(lane)}`,
-      `needed_action: ${repairNeededAction(lane)}`,
-      `created_at: ${createdAt}`,
-      `updated_at: ${shanghaiTimestamp()}`,
-      "source: hermes-auto",
-      "",
-      `# Hermes Repair Request: ${lane.label}`,
-      "",
-      "## Evidence",
-      "",
-      ...lane.problems.map((item) => `- problem: ${item.message || item}`),
-      ...lane.warnings.map((item) => `- warning: ${item.message || item}`),
-      `- supervision_report: \`${rel(mdPath)}\``,
-      `- categories: ${categories.join(", ")}`,
-      "",
-      "## Expected Codex Action",
-      "",
-      ...lane.actions.map((item) => `- ${item}`),
-      "- Repair the smallest script, rule, gate, eval, or memory path needed to prevent recurrence.",
-      "- Rerun the failed gate or the smallest relevant validation.",
-      "- Record the repair with `npm run record:action`.",
-      "",
-      "## User Escalation Needed",
-      "",
-      "- no, unless Codex needs GitHub permission, login state, or business judgment.",
-      "",
-    ].join("\n");
-
-    fs.writeFileSync(file, content, "utf8");
-    created.push(rel(file));
-  }
-
-  return created;
-}
-
 function writeReports(payload) {
   fs.mkdirSync(reportsDir, { recursive: true });
   const jsonPath = path.join(reportsDir, `${date}-daily-supervision-report.json`);
@@ -1317,7 +1181,6 @@ function writeReports(payload) {
     `- status: ${payload.status}`,
     `- github_mode: ${githubMode}`,
     `- scheduled_task_mode: ${taskMode}`,
-    `- hermes_write: ${payload.hermes_write}`,
     "",
     "| Lane | Timeline | Status | Problems | Waiting | Warnings |",
     "|---|---|---|---:|---:|---:|",
@@ -1331,8 +1194,7 @@ function writeReports(payload) {
   fs.writeFileSync(mdPath, md, "utf8");
   fs.writeFileSync(latestJsonPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(latestMdPath, md, "utf8");
-  const inboxFiles = payload.hermes_write === "enabled" ? writeHermesInbox(payload, mdPath) : [];
-  return { jsonPath, mdPath, inboxFiles };
+  return { jsonPath, mdPath };
 }
 
 function main() {
@@ -1353,17 +1215,14 @@ function main() {
     date,
     generated_at: new Date().toISOString(),
     timezone: "Asia/Shanghai",
-    hermes_mode: hermesMode,
-    hermes_write: shouldWriteHermesInbox() ? "enabled" : "disabled",
     lanes,
   };
-  const { jsonPath, mdPath, inboxFiles } = writeReports(payload);
+  const { jsonPath, mdPath } = writeReports(payload);
   console.log(JSON.stringify({
     ok: payload.ok,
     status,
     report: rel(jsonPath),
     markdown: rel(mdPath),
-    hermes_inbox: inboxFiles,
   }, null, 2));
   if (status === "failed") process.exit(1);
 }

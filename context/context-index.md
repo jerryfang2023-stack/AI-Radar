@@ -1,7 +1,7 @@
 ---
 status: current
 scope: context-index
-last_updated: 2026-07-29
+last_updated: 2026-07-30
 use_when:
   - decide what to read
   - dispatch task
@@ -38,7 +38,6 @@ This file is the reading router. Do not use old closeout files as current truth.
 | Path | Purpose |
 |---|---|
 | `agent-workflow/inbox/production-incidents/` | Current neutral production and control-plane incident registry |
-| `agent-workflow/inbox/hermes-to-codex/` | Legacy Hermes repair-request history; current readers retain compatibility |
 
 ## Current Skills
 

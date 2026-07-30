@@ -215,7 +215,7 @@ try {
         throw "Generated data date is $generatedDate, expected $today."
       }
 
-      $dailyArchive = Join-Path $repo ("01-SiteV2\content\07-community-intelligence\daily\" + $today + " Community Intelligence.md")
+      $dailyArchive = Join-Path $repo ("vault\10-Data-Center\05-Community-Intelligence\daily\" + $today + " Community Intelligence.md")
       if (-not (Test-Path -LiteralPath $dailyArchive)) {
         throw "Daily Obsidian archive was not generated: $dailyArchive"
       }

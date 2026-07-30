@@ -1,96 +1,65 @@
 ---
 status: current
 scope: local-sync
-last_updated: 2026-07-29
+last_updated: 2026-07-30
 ---
 
-# Local GitHub Sync
+# Local GitHub and Obsidian Sync
 
-Purpose: after GitHub daily automation merges a PR into `main`, this local Windows task can pull the updated assets into the Obsidian workspace when the computer is on.
+The repository and the Obsidian knowledge base are deliberately separate.
 
-## What Syncs Into Obsidian
+- Repository root: code, source snapshots, canonical V4 data, site data, tests, workflows, and operational reports.
+- Obsidian root: `vault/`, containing only current human-readable Data Center, Application Center, Operations, and Reference material.
 
-The local workspace is the Obsidian vault. After a fast-forward sync from `origin/main`, the following updated assets become visible locally:
+The old parent `AI热点` vault must not be used for WaveSight. It indexes unrelated repositories and generated files.
 
-- V4 SourceArtifact / RawDocument snapshots and canonical bundles under `01-SiteV2/content/01-raw/originals/` and `01-SiteV2/content/11-databases/data-center-v4/`
-- V4 entity, relationship, application-projection, and operations data under `01-SiteV2/site/data/`
-- first-line viewpoint data under `01-SiteV2/site/data/follow-builders-daily.json`
-- first-line viewpoint Obsidian timelines under `01-SiteV2/knowledge/02-Opinion-Timelines/`
-- frontstage and dashboard data under `01-SiteV2/site/data/`
+## Vault Refresh
 
-V4 factual data and First-Line Viewpoints are synced as separate data streams. Builders content stays in the builders route and must not be treated as factual evidence.
+Run from the repository root:
 
-## Scripts
+```powershell
+npm run sync:obsidian-vault
+npm run assert:obsidian-vault
+```
+
+The refresh is projection-only. It reads existing accepted V4 and application data and writes:
+
+- `vault/10-Data-Center/01-Commercial-Events/`
+- `vault/10-Data-Center/02-Enterprise-AI-FDE/`
+- `vault/10-Data-Center/03-AI-Hardware/`
+- `vault/10-Data-Center/04-First-Line-Viewpoints/`
+- `vault/10-Data-Center/05-Community-Intelligence/`
+- `vault/20-Application-Center/01-Industry-Reports/`
+- `vault/20-Application-Center/02-Funding-Insights/`
+
+It does not rebuild or overwrite frontstage JSON, pipeline dashboards, raw snapshots, or canonical bundles.
+
+## GitHub Sync
 
 | Script | Purpose |
 |---|---|
-| `agent-workflow/tools/local-sync-from-main.ps1` | Safely sync local `main` from GitHub. |
-| `agent-workflow/tools/local-sync-loop.ps1` | Repeat safe sync while Windows is logged in. |
+| `agent-workflow/tools/local-sync-from-main.ps1` | Safely fast-forward local `main` from GitHub. |
+| `agent-workflow/tools/local-sync-loop.ps1` | Repeat the safe sync while Windows is logged in. |
 | `agent-workflow/tools/install-local-sync-task.ps1` | Register the Windows logon / interval sync task. |
 | `agent-workflow/tools/uninstall-local-sync-task.ps1` | Remove the Windows sync task. |
-| `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` | Generate Obsidian person / date timelines from gated First-Line Viewpoints data. |
+| `agent-workflow/tools/sync-obsidian-vault.mjs` | Refresh current human-readable Vault projections. |
 
-## Safety Rules
+The Git sync only runs on local `main`. It fetches `origin/main`, pauses on local changes or divergence, and uses `git pull --ff-only`. It never force-pulls, resets, cleans, merges, or overwrites local edits.
 
-- The sync only runs on local `main`.
-- It fetches `origin/main` first.
-- If local uncommitted changes exist, it pauses and writes a log.
-- If local commits are ahead or divergent, it pauses.
-- It only fast-forwards with `git pull --ff-only`.
-- It does not force pull, reset, clean, merge, or overwrite local edits.
-
-## Install
-
-Run once from the repository root:
+Install the local task once:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File agent-workflow/tools/install-local-sync-task.ps1
 ```
 
-If Windows blocks Task Scheduler registration, the installer falls back to a Startup-folder sync loop that runs after login.
-
-Optional immediate test:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File agent-workflow/tools/install-local-sync-task.ps1 -RunOnceNow
-```
-
-## Manual Sync
+Manual fast-forward:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File agent-workflow/tools/local-sync-from-main.ps1
 ```
 
-If you need to refresh the local workspace immediately after a merge, run the manual sync command above. It only fast-forwards local `main`; it does not regenerate assets.
+After the merge is present locally, refresh and validate `vault/` with the two npm commands above.
 
-## If New Data Sources Were Added
+## Recovery
 
-When online monitoring adds or changes source pools, the local sync path still remains the same:
-
-1. The online automation ingests the new source.
-2. It generates or updates the corresponding `content/`, `knowledge/`, or `site/data/` assets.
-3. The merge lands on `main`.
-4. Local sync pulls the updated files into Obsidian.
-
-For the current SITE-V4.3 routes:
-
-- commercial sources enter structured intake, then SourceArtifact / RawDocument / Claim / CanonicalEvent bundles and V4 application projections
-- builders sources are expected to land in the independent follow-builders chain and then into `01-SiteV2/site/data/follow-builders-daily.json` and `01-SiteV2/knowledge/02-Opinion-Timelines/`
-
-If you need to refresh First-Line Viewpoints locally before merge, run:
-
-```powershell
-node 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
-node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
-node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD>
-```
-
-Then sync the merged `main` state afterward.
-
-## Logs
-
-Logs are written to:
-
-```text
-agent-workflow/reports/local-sync/
-```
+Retired V1/V2/V3 material, old Hermes handoffs, and dated run reports are not copied into `vault/` or kept in current production paths. Recover them from an explicit Git ref in an isolated worktree when historical investigation is required.

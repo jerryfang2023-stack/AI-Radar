@@ -98,7 +98,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add agent-workflow/reports agent-workflow/product/opportunity-direction-card-candidates.json 01-SiteV2/content/08-report 01-SiteV2/site/intelligence-map.html 01-SiteV2/site/weekly-ai-business-change-radar*.html 01-SiteV2/site/monthly-business-structure-*.html 01-SiteV2/site/data/opportunity-evidence-v2.json agent-workflow/inbox/production-incidents || true
+          git add agent-workflow/reports agent-workflow/product/opportunity-direction-card-candidates.json vault/20-Application-Center/01-Industry-Reports 01-SiteV2/site/intelligence-map.html 01-SiteV2/site/weekly-ai-business-change-radar*.html 01-SiteV2/site/monthly-business-structure-*.html 01-SiteV2/site/data/opportunity-evidence-v2.json agent-workflow/inbox/production-incidents || true
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0

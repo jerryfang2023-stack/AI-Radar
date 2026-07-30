@@ -177,7 +177,7 @@ function openOrUpdatePr() {
     "This PR was created by the local afternoon skill task after the skill digest and file checks passed.",
     "",
     "- generated `01-SiteV2/content/07-points/${date}-builders-viewpoints.md` from the local follow-builders skill;",
-    "- synced the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`;",
+    "- synced the generated skill viewpoints into `vault/10-Data-Center/04-First-Line-Viewpoints/`;",
     "- recorded the run in `agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`;",
     "- auto-publishes through a branch and PR so Hermes can record the run from a durable report path.",
   ].join("\n"), "utf8");
@@ -348,7 +348,7 @@ function main() {
     stageIfExists(`agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`, gitEnv);
     stageIfExists(`01-SiteV2/content/07-points/${date}-builders-viewpoints.md`, gitEnv);
     stageIfExists("01-SiteV2/site/data/first-line-viewpoints-v4.json", gitEnv);
-    stageIfExists("01-SiteV2/knowledge/02-Opinion-Timelines", gitEnv);
+    stageIfExists("vault/10-Data-Center/04-First-Line-Viewpoints", gitEnv);
 
     const staged = run("git", ["diff", "--cached", "--name-only"], { env: gitEnv });
     if (!staged) {

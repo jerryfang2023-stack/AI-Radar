@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-07-29
+last_updated: 2026-07-30
 use_when:
   - project startup
   - agent handoff
@@ -21,7 +21,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Dashboard / Operations Console is a backend-facing operations surface, not a public content column.
 - Business Signals is the V4 SourceArtifact / RawDocument / Claim / CanonicalEvent factual production chain. Retired Raw / Pool / Card assets are absent from the working tree and recoverable only from explicit Git history; they have no active production, page, relationship, or operations consumer.
 - First-Line Viewpoints and Community Intelligence are independent data lanes projected into the V4 Data Center shell.
-- The local DuckDB data lake is an analytical index layer for machine queries; Obsidian remains the human-readable knowledge base.
+- The local DuckDB data lake is an analytical index layer for machine queries; `vault/` is the only human-readable Obsidian knowledge base. Repository code, raw snapshots, canonical JSON, site data, and operational reports remain outside it.
 
 ## Non-Negotiable Rules
 
@@ -49,7 +49,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Business Signals can regress when immutable source capture is incomplete, source titles remain untranslated before V4 event publication, or duplicate discovery candidates reduce accepted factual coverage.
 - First-Line Viewpoints must keep morning RSS collection and afternoon follow-builders skill publishing separate.
 - Community Intelligence depends on local logged-in collection; GitHub can publish already collected data but cannot replace the logged-in local collector.
-- Weekly report content should be sourced from `01-SiteV2/content/08-report/` before site generation.
+- Weekly report content should be sourced from `vault/20-Application-Center/01-Industry-Reports/` before site generation.
+- Obsidian sync writes only to the `VAULT-V1.0` directory map. Retired `01-SiteV2/content/*` and `01-SiteV2/knowledge/*` Obsidian targets must not be recreated.
 - Generated DuckDB files and JSONL tables must be rebuilt from source files and must not become production truth or Git-tracked content.
 
 ## Memory Boundaries

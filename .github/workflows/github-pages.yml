@@ -8,7 +8,6 @@ on:
     paths:
       - "01-SiteV2/site/**"
       - "01-SiteV2/content/**"
-      - "01-SiteV2/knowledge/**"
       - "agent-workflow/tools/**"
       - "agent-workflow/product/**"
       - "context/version-ledger.md"
@@ -157,6 +156,7 @@ jobs:
           GUANLAN_SKILL_STORE: ${{ github.workspace }}/agent-workflow/skills
         run: |
           node agent-workflow/tools/assert-current-rule-hygiene.mjs
+          npm run assert:obsidian-vault
           node agent-workflow/tools/sync-repo-skills.mjs
           node agent-workflow/tools/validate-guanlan-skills.mjs
           node agent-workflow/tools/assert-skill-store-dashboard.mjs

@@ -1,7 +1,7 @@
 # Community Intelligence Data Gate - 2026-07-30
 
 - status: passed
-- generated_at: 2026-07-30T00:33:02.670Z
+- generated_at: 2026-07-30T06:42:43.381Z
 - data_file: 01-SiteV2/site/data/community-intelligence.json
 - items: 69
 - links: 115
@@ -18,10 +18,10 @@
 - passed: selected keyword rotation is recorded - 8
 - passed: collector recorded no blocking errors
 - passed: English community content is translated with current-source DeepSeek provenance
-- passed: daily Obsidian archive exists - 01-SiteV2/content/07-community-intelligence/daily/2026-07-30 Community Intelligence.md
-- passed: community intelligence index exists - 01-SiteV2/content/07-community-intelligence/Community Intelligence Index.md
-- passed: archive view exists: Industry Cases.md - 01-SiteV2/content/07-community-intelligence/views/Industry Cases.md
-- passed: archive view exists: Tool Tips.md - 01-SiteV2/content/07-community-intelligence/views/Tool Tips.md
-- passed: archive view exists: Opportunities.md - 01-SiteV2/content/07-community-intelligence/views/Opportunities.md
-- passed: archive view exists: Resource Links.md - 01-SiteV2/content/07-community-intelligence/views/Resource Links.md
+- passed: daily Obsidian archive exists - vault/10-Data-Center/05-Community-Intelligence/daily/2026-07-30 Community Intelligence.md
+- passed: community intelligence index exists - vault/10-Data-Center/05-Community-Intelligence/Community Intelligence Index.md
+- passed: archive view exists: Industry Cases.md - vault/10-Data-Center/05-Community-Intelligence/views/Industry Cases.md
+- passed: archive view exists: Tool Tips.md - vault/10-Data-Center/05-Community-Intelligence/views/Tool Tips.md
+- passed: archive view exists: Opportunities.md - vault/10-Data-Center/05-Community-Intelligence/views/Opportunities.md
+- passed: archive view exists: Resource Links.md - vault/10-Data-Center/05-Community-Intelligence/views/Resource Links.md
 

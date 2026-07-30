@@ -68,7 +68,7 @@ jobs:
           skip_commit=false
           reason="not_applicable"
           data_file="01-SiteV2/site/data/community-intelligence.json"
-          archive_file="01-SiteV2/content/07-community-intelligence/daily/${RUN_DATE} Community Intelligence.md"
+          archive_file="vault/10-Data-Center/05-Community-Intelligence/daily/${RUN_DATE} Community Intelligence.md"
           data_date=""
           items=0
           links=0
@@ -146,7 +146,7 @@ jobs:
 
           data_file="01-SiteV2/site/data/community-intelligence.json"
           daily_file="01-SiteV2/site/data/community-intelligence-daily/${RUN_DATE}.json"
-          archive_file="01-SiteV2/content/07-community-intelligence/daily/${RUN_DATE} Community Intelligence.md"
+          archive_file="vault/10-Data-Center/05-Community-Intelligence/daily/${RUN_DATE} Community Intelligence.md"
 
           state_for() {
             local path="$1"
@@ -189,10 +189,10 @@ jobs:
             01-SiteV2/site/data/community-intelligence.json
             01-SiteV2/site/data/community-intelligence-daily/index.json
             01-SiteV2/site/data/community-intelligence-daily/${{ steps.run-date.outputs.date }}.json
-            01-SiteV2/content/07-community-intelligence/Community Intelligence Index.md
-            01-SiteV2/content/07-community-intelligence/README.md
-            01-SiteV2/content/07-community-intelligence/daily/${{ steps.run-date.outputs.date }} Community Intelligence.md
-            01-SiteV2/content/07-community-intelligence/views/*.md
+            vault/10-Data-Center/05-Community-Intelligence/Community Intelligence Index.md
+            vault/10-Data-Center/05-Community-Intelligence/README.md
+            vault/10-Data-Center/05-Community-Intelligence/daily/${{ steps.run-date.outputs.date }} Community Intelligence.md
+            vault/10-Data-Center/05-Community-Intelligence/views/*.md
 
       - name: Commit community intelligence to automation branch
         id: commit
@@ -225,10 +225,10 @@ jobs:
           stage_if_exists "01-SiteV2/site/data/community-intelligence.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/index.json"
           stage_if_exists "01-SiteV2/site/data/community-intelligence-daily/${RUN_DATE}.json"
-          stage_if_exists "01-SiteV2/content/07-community-intelligence/Community Intelligence Index.md"
-          stage_if_exists "01-SiteV2/content/07-community-intelligence/README.md"
-          stage_if_exists "01-SiteV2/content/07-community-intelligence/daily/${RUN_DATE} Community Intelligence.md"
-          stage_find "01-SiteV2/content/07-community-intelligence/views" "*.md"
+          stage_if_exists "vault/10-Data-Center/05-Community-Intelligence/Community Intelligence Index.md"
+          stage_if_exists "vault/10-Data-Center/05-Community-Intelligence/README.md"
+          stage_if_exists "vault/10-Data-Center/05-Community-Intelligence/daily/${RUN_DATE} Community Intelligence.md"
+          stage_find "vault/10-Data-Center/05-Community-Intelligence/views" "*.md"
 
           if git diff --cached --quiet; then
             echo "No community intelligence changes to commit."

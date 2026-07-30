@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-07-29
+last_updated: 2026-07-30
 use_when:
   - large task startup
   - dispatch planning
@@ -24,6 +24,7 @@ WaveSight AI is now on the `SITE-V4.3.0-compatibility-retired` public website an
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.0-auto-published-research`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
 - Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
+- Current local knowledge-base version: `VAULT-V1.0`. The independent Obsidian root is `vault/`; repository code, raw snapshots, canonical JSON, site data, and run reports stay outside the vault.
 
 ## Current Entries
 
@@ -95,9 +96,9 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, 
    - Funding Insights runs after verified daily funding events. Secondary source capture and DeepSeek V4 Pro may enrich the application card, but every company, financing, investor, product, customer, comparison, and metric fact must quote a captured source exactly. Cards publish automatically only when the deterministic gate passes; missing investors block the card, while entity linking is exact-match only and never mutates V4 canonical registries.
    - Opportunity Map updates from `opportunity-evidence-v2.json`, generated only from accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, and FacetAssertions, and publishes under `OMAP-V2.0.0-v4-evidence`; downstream application assertions bind accepted Claims and never enter V4 canonical tables. DeepSeek V4 Pro writes evidence-bounded Direction Card candidates, but only human-reviewed candidates may enter the public direction configuration.
    - Weekly report generation is lane-independent under `REPORTS-V1.1.0-lane-independent`: Opportunity Map or direction-candidate failure is recorded as a warning and cannot block report content acceptance or page publication.
-   - Reports Center publishes under `REPORTS-V1.1.0-lane-independent`. Weekly report content comes from `01-SiteV2/content/08-report/`; monthly report content comes from `01-SiteV2/content/08-report/monthly/`.
+   - Reports Center publishes under `REPORTS-V1.1.0-lane-independent`. Weekly report content comes from `vault/20-Application-Center/01-Industry-Reports/`; monthly report content comes from `vault/20-Application-Center/01-Industry-Reports/monthly/`.
    - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek Pro for report Markdown and, on weekly runs, separate Direction Card candidates. Report content passes its acceptance gate; Direction Card candidates remain review-only. HTML/navigation/version writing stays deterministic.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
-7. Sync merged assets to local Obsidian when the local machine is online.
+7. Sync only the human-readable projections into the independent local `vault/` when the local machine is online; do not expose the repository root as an Obsidian vault.
 8. Materialize V4 JSONL tables in GitHub and rebuild DuckDB locally for queries, cross-day statistics, contamination audits, and source-linkage checks.

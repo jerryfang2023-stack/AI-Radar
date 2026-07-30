@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-07-29
+last_updated: 2026-07-30
 use_when:
   - task startup
   - page change
@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight V4 Compatibility Retired |
 | Version layer | Minor |
 | Release date | 2026-07-29 |
-| Last modified at | 2026-07-29T23:20:00+08:00 |
+| Last modified at | 2026-07-30T00:00:00+08:00 |
 | Product version | V4.3 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.3.0-compatibility-retired |
@@ -47,8 +47,9 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Person-account review contract | PERSON-REVIEW-V1.0 |
 | Factual relationship contract | RELATION-V2.1 |
 | Targeted historical collection contract | BACKFILL-V1.0 |
-| Weekly Report content source | `01-SiteV2/content/08-report/` |
-| Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
+| Local Obsidian knowledge base | VAULT-V1.0 |
+| Weekly Report content source | `vault/20-Application-Center/01-Industry-Reports/` |
+| Monthly Report content source | `vault/20-Application-Center/01-Industry-Reports/monthly/` |
 | Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.2 |
 | Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
 | Data Center supervisor Skill | guanlan-data-center-supervisor v1.2.2 |
@@ -90,7 +91,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Builders content must not enter CanonicalEvent, Claim, RELATION-V2.1, or factual Trend Radar evidence.
 - Dashboard keeps the operations backend at `operations-console.html`, but it is now a Data Observation governance loop rather than a content-production workspace. It is not exposed in the public frontstage navigation for this release.
 - Daily automation is split by production lane: Business Signals, First-Line Viewpoints, and Community Intelligence each have independent monitoring / gate / persistence / PR publication boundaries.
-- First-Line Viewpoints persists local Obsidian timelines as person / date files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
+- First-Line Viewpoints persists local Obsidian timelines as person / date files under `vault/10-Data-Center/04-First-Line-Viewpoints/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
 - V4 event normalization blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, commentary, generic role/service pages, old evergreen posts, and search snippets from canonical facts unless accepted original-source evidence proves a concrete dated event.
 - Hermes no longer performs daily production supervision. `HERMES-V4.0-control-plane-watchdog` runs once at 10:20, after the Closure timeout window, and checks only whether the morning, recovery, and closure controllers left readable reports. Routine failures use the neutral production incident registry and are owned by Closure/Codex.
 - Production failures must be repaired from the earliest failed gate or report. If same-date artifacts are sufficient, use targeted repair and publication instead of restarting the lane.
@@ -105,7 +106,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - No internal V3 compatibility data remains. Opportunity Map, historical analytics, Obsidian indexing, and operations read V4-native data only.
 - Current V4 lane skills must encode recurring failures in gates or evals.
-- Daily supervision and Codex handoff are routed through the consolidated Closure controller. The legacy Hermes inbox remains readable history only.
+- Daily supervision and Codex handoff are routed through the consolidated Closure controller. Retired Hermes inbox items and dated May/June run reports are recoverable through Git history only.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
 - Skill Store governance is versioned separately as `v1.8.0`. Current Skill metadata, evals, registry entries, mirrors, and dashboard enforce the V4 retirement boundary while preserving Data Center V4 and independent application lanes.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
@@ -136,14 +137,14 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Commercial Events production | `SITE-V4.3.0-compatibility-retired` | V4-native structured intake, canonical facts, application projections, and OPS; V3 interfaces and payloads are absent | `SOURCE-INTAKE-V1`, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, Obsidian opinion timelines |
 | Person-account review | `PERSON-REVIEW-V1.0` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates plus First-Line authors and accepted review evidence | 31 public natural-person profiles, 6 quarantined non-natural accounts, preserved viewpoint records |
-| Reports Center / 行业报告 | `REPORTS-V1.1.0-lane-independent` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation independently from Opportunity Map. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `01-SiteV2/content/08-report/` |
+| Reports Center / 行业报告 | `REPORTS-V1.1.0-lane-independent` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation independently from Opportunity Map. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `vault/20-Application-Center/01-Industry-Reports/` |
 | Opportunity Map / 机会地图 | `OMAP-V2.0.0-v4-evidence` | Published as the second Application Center entry. Owns the dedicated downstream V4 evidence projection, two Claim-bound matrices, DeepSeek V4 Pro-drafted and human-reviewed Direction Cards, and evidence modal. | `opportunity-evidence-v2.json` + accepted CanonicalEvents / Claims / SourceArtifacts / Entities / FacetAssertions + DeepSeek candidate file + reviewed direction definitions | `opportunity-map.html`, `opportunity-evidence-v2.mjs`, `opportunity-direction-card-candidates.json`, `opportunity-direction-cards.json`, `build-industry-reports-frontstage.mjs`, opportunity radar updater Skill |
 
 ## Current Enterprise AI / FDE Version
 
 | Scope | Version | Boundary | Outputs |
 |---|---|---|---|
-| Enterprise AI / FDE lens | `FDE-V2.0` | V4 SourceArtifact, RawDocument, accepted Claims, and FDE projection own title/fact evidence; public FDE items require concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis. | V4 `fde-records`, frontstage FDE detail service, Obsidian `content/09-fde`, FDE skill/evals/memory |
+| Enterprise AI / FDE lens | `FDE-V2.0` | V4 SourceArtifact, RawDocument, accepted Claims, and FDE projection own title/fact evidence; public FDE items require concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis. | V4 `fde-records`, frontstage FDE detail service, Obsidian `vault/10-Data-Center/02-Enterprise-AI-FDE`, FDE skill/evals/memory |
 
 ## Current Sources Of Truth
 
@@ -186,6 +187,7 @@ node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
 npm run assert:no-active-v3
 npm run assert:pipeline-policy
 npm run assert:compatibility-retirement
+npm run assert:obsidian-vault
 node agent-workflow/tools/frontstage-regression-gate.mjs
 ```
 
@@ -193,6 +195,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `vault-v1.0-independent-knowledge-base` | Independent Obsidian Data Center / Application Center / Operations / Reference | 2026-07-30 | 2026-07-30T14:32:00+08:00 | VAULT-V1.0 | parent `AI热点` vault indexing the repository; Obsidian targets under `01-SiteV2/content` or `01-SiteV2/knowledge`; AI Startup Radar; retired Hermes handoff interfaces; generated site or canonical data written by Vault sync | Vault structure + Wiki-link + retired-path assertion; projection-only sync; full V4/site/OPS tests |
 | `v4.3.0-compatibility-retired` | V4 production / schema / data lake / Obsidian index / quality gates | 2026-07-29 | 2026-07-29T22:00:00+08:00 | SITE-V4.3.0-compatibility-retired | V3 payload archives in the working tree; compatibility_cards schema or output; dormant V3 producers or quality gates; Pages V3 exclusions | final no-active-V3 gate + pipeline policy + V4 schema/build/integrity tests + full frontstage/OPS tests |
 | `v4.3.0-compatibility-write-disabled` | Structured source intake / V4 production / application projections / OPS / V3 archive | 2026-07-29 | 2026-07-29T00:00:00+08:00 | SITE-V4.3.0-compatibility-write-disabled | daily Raw/Pool candidate Markdown; Signal Card, V3 desk, old graph, or legacy mapping writes; V3 health or publication blockers; archive discovery; required `compatibility_cards` | structured-intake tests + no-active-V3 gate + pipeline policy + compatibility retirement contract + full V4/site/OPS tests + no-V3 production rehearsal + Pages verification |
 | `v4.2.7-funding-insights-history` | Funding Insights historical application bundles / combined frontstage / generator Skill | 2026-07-26 | 2026-07-26T23:24:49+08:00 | FUNDING-INSIGHT-V1.0-auto-published-research / Skill Store v1.7.0 / guanlan-funding-insight-generator v1.0.0 | duplicate event research; search snippets as evidence; unnamed investors; missing exact quotes; blocked cards entering the public projection; application analysis mutating canonical facts | 59 bundle schema gates + unique-event coverage report + funding tests + Skill validation/sync/audit + frontstage regression + desktop/mobile smoke + GitHub Pages deploy |

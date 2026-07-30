@@ -1,10 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { sourceTextHash } from "./deepseek-translation-client.mjs";
+import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
-const archiveRoot = path.join(root, "01-SiteV2", "content", "07-community-intelligence");
+const archiveRoot = path.join(root, OBSIDIAN_PATHS.communityRoot);
 const reportsDir = path.join(root, "agent-workflow", "reports");
 
 function argValue(name, fallback = "") {

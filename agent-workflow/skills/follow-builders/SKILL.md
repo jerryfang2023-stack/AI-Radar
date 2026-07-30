@@ -39,7 +39,7 @@ When using this skill inside WaveSight AI work, run the checks in `evals/wavesig
 When this skill is used inside the WaveSight repository, the daily Builders / First-Line Viewpoints flow has two required local assets:
 
 1. Frontstage data: `01-SiteV2/site/data/follow-builders-daily.json`.
-2. Obsidian reading view: `01-SiteV2/knowledge/02-Opinion-Timelines/`.
+2. Obsidian reading view: `vault/10-Data-Center/04-First-Line-Viewpoints/`.
 
 After building and gating `follow-builders-daily.json`, sync the same production date into the Obsidian viewpoint timelines:
 
@@ -52,7 +52,7 @@ The sync must:
 - use original remark dates for timeline placement;
 - dedupe by original URL / id;
 - update person date files and person README indexes;
-- update `01-SiteV2/knowledge/02-Opinion-Timelines/README.md`;
+- update `vault/10-Data-Center/04-First-Line-Viewpoints/README.md`;
 - keep Builder viewpoints out of Claims, CanonicalEvents, and RELATION-V2.1 evidence.
 
 For backfill, run the same command with a date range, for example:
