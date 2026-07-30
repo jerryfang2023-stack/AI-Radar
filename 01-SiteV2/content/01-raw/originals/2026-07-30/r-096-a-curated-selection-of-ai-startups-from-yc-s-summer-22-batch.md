@@ -1,0 +1,330 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-096
+title: "A curated selection of AI startups from YC's Summer '22 batch"
+title_zh: "YC 2022年夏季批次AI初创公司精选"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2022/09/08/7-ai-startups-that-stood-out-in-ycs-summer-22-batch/"
+canonical_url: "https://techcrunch.com/2022/09/08/7-ai-startups-that-stood-out-in-ycs-summer-22-batch"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: "2022-09-08T00:00:00.000Z"
+collected_at: 2026-07-30T03:09:05.841Z
+language: mixed
+full_text_hash: 9537bbae768f05fd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-30/r-096-a-curated-selection-of-ai-startups-from-yc-s-summer-22-batch.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-30/r-096-a-curated-selection-of-ai-startups-from-yc-s-summer-22-batch.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":8190,"paragraph_count":41,"sentence_count":53,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 8190
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9537bbae768f05fd","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a92b5a05f7dbf1ff
+content_hash: 9537bbae768f05fd
+semantic_hash: 179a42cb4e08ff27
+duplicate_of: ""
+first_seen_at: "2022-09-08T00:00:00.000Z"
+last_seen_at: 2026-07-30T03:09:05.841Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Google","Microsoft","GitHub","Salesforce"],"products":["Copilot"],"people":[],"industries":["医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":[],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["22 b","55%","$37 billion","7","00","8","2022","35"],"quotes":["co-pilot for product development","software as a service","instantly"]}
+evidence_seed: {"company_actions":["Image Credits: Getty Images Apps 7 AI startups that stood out in YC’s Summer ’22 batch Kyle Wiggers 7:00 AM PDT · September 8, 2022 It’s that time of year again.","This morning, Y Combinator (YC) hosted a demo day for its 2022 Summer Cohort — the 35th demo day in the incubator’s history.","Featuring founders from 30 countries and startups across sectors including developer tools, fintech and healthcare, the day saw no shortage of compelling pitches."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"Considering that 55% of developers struggle to find the time to build internal apps in the first place, according to one recent survey, VCs certainly see an opportunity: they invested $37 billion last year into startups creating dev tools. Monterey AI tackles a decidedly different part of the produc... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Getty Images Apps 7 AI startups that stood out in YC’s Summer ’22 batch Kyle Wiggers 7:00 AM PDT · September 8, 2022 It’s that time of year again.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This morning, Y Combinator (YC) hosted a demo day for its 2022 Summer Cohort — the 35th demo day in the incubator’s history.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Featuring founders from 30 countries and startups across sectors including developer tools, fintech and healthcare, the day saw no shortage of compelling pitches.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"The competition was fiercer than usual, owing to YC’s decision in early August to cut the batch size by 40% to around 250 companies in light of economic headwinds.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But a particular category of startup stood out: those applying AI and machine learning to solve problems, especially for business-to-business clients.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-30T03:09:05.841Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# A curated selection of AI startups from YC's Summer '22 batch
+
+## clean_text
+
+Image Credits: Getty Images
+Apps
+7 AI startups that stood out in YC’s Summer ’22 batch
+Kyle Wiggers
+7:00 AM PDT · September 8, 2022
+It’s that time of year again. This morning, Y Combinator (YC) hosted a demo day for its 2022 Summer Cohort — the 35th demo day in the incubator’s history. Featuring founders from 30 countries and startups across sectors including developer tools, fintech and healthcare, the day saw no shortage of compelling pitches.
+The competition was fiercer than usual, owing to YC’s decision in early August to cut the batch size by 40% to around 250 companies in light of economic headwinds. But a particular category of startup stood out: those applying AI and machine learning to solve problems, especially for business-to-business clients.
+This year had only 14 such startups compared to 20 last year, which makes sense as the overall cohort is also smaller. But the batches share a unifying theme: sales. Their products largely target hurdles in sales and marketing at a time when businesses are up against recessionary pressures.
+Economic challenges aside, the large addressable market makes sales an attractive problem for startups to tackle. Grand View Research pegged the sales force automation software market alone at $7.29 billion in 2019.
+Pilot AI
+Pilot AI is developing a tool for sales reps that automatically translates call recordings into structured data that then directly updates a customer relationship management (CRM) system. The idea is to save reps time, and to assure their managers that the pipeline data is up to date.
+It’s worth noting that other platforms like Fireflies.ai and Microsoft’s Viva Sales also do this. But Pilot AI founder Max Lu, previously a software engineer at Salesforce, says his product is more thorough than most, and can generate a summary of each call as well as data points that map to CRM fields and questions asked by reps, in addition to key parts of the recipient’s answer.
+Image Credits: Pilot AI
+Typewise
+Typewise is also in the sales space, but it focuses on text prediction across web apps via a browser extension and server-side API. Initially developed as a smartphone app, Typewise — which claims to have Fortune 500 customers in the e-commerce and logistics industries — can autocomplete sentences, insert smart snippets, automatically reply to messages and check for style and grammar consistency.
+It sounds a little like TextExpander and Magical . But founder David Eberle says that Typewise is compatible with any CRM system and can be customized to a company’s data, with an analytics component that suggests which words and phrases to use.
+YC Summer 2022 AI startups that didn’t fall within the sales and marketing tech category tended to focus on dev tools, another lucrative avenue to growth. Considering that 55% of developers struggle to find the time to build internal apps in the first place, according to one recent survey , VCs certainly see an opportunity: they invested $37 billion last year into startups creating dev tools.
+Monterey AI
+Monterey AI tackles a decidedly different part of the product lifecycle: Development. Founder Chun Jiang pitches it as a “co-pilot for product development” that replaces documents with workflows that automatically generate product specs, including feature ideas, metrics, designs and launch plans.
+Using Monterey, customers pick a product template based on their use case (e.g. “software as a service”) and configure the inputs, checking dependencies to solve conflicts. Jiang says the platform can uncover cross-team conflicts and dependencies while providing a bird’s-eye view of the portfolio to align features.
+Image Credits: Monterey AI
+Dev Tools AI
+Dev Tools AI could perhaps be used in tandem with Monterey AI.
+Dev Tools AI offers a library designed to make it easier to write tests for web apps in existing dev environments by simply drawing a box over a screenshot. Applying computer vision, it finds elements on webpages like search boxes and buttons, and can even see controls within web games. It can also test for crawl errors on pages, including broken links, 404s and console errors.
+As founder Chris Navrides points out, writing end-to-end web tests is a traditionally time-consuming process, requiring one to dig around in the page code multiple times as the tested app evolves. Assuming Dev Tools AI works as intended, it could be a valuable addition to quality assurance testing teams’ arsenals.
+Maya Labs
+Maya Labs is creating a platform for translating natural language into code. Similar to GitHub’s Copilot, Maya incrementally generates programs and shows results in response to steps in English.
+One of Maya’s founders, Sibesh Kar, says that the service builds apps by using a combination of conditional logic, AI-powered search and classification, fine-tuned language models and template generation. Currently, Maya can query and plot data from an external source like Google Sheets, Notion or Airtable, and perform actions on that data, like sending an email, uploading a file or updating a database entry.
+The long-term goal is to extend Maya to tasks like web navigation, connecting APIs and workflow automation, which — given the current state of AI text-to-language systems — seems within the realm of possibility.
+Hello
+For those who prefer a hands-on approach to programming, Hello claims to use AI to “instantly” answer developers’ technical questions with explanations and relevant code snippets from the web. The platform is powered by large language models (think GPT-3) that reference several sources to find the most likely answers, according to co-founder Michael Royzen.
+When Hello users submit a query, the service pulls and re-ranks raw site data from Bing, and then extracts understanding using the aforementioned models. A different set of models translates the results into human-readable answers.
+Image Credits: Hello
+NuMind
+Another startup with language models at its core is NuMind , which provides data scientists, data analysts and software engineers a tool for creating custom natural language processing models. Leveraging large language models similar to GPT-3, NuMind can be used to, for example, find which job offers the best match a given resume on a recruitment platform.
+NuMind founders Etienne Bernard (the former head of machine learning at Wolfram Research) and Make.org co-founder Samuel Bernard claim that interest in the company is quite high, with its paying customer base growing to nine in the span of a month.
+Topics
+AI , AI , Apps , Artificial Intelligence (AI) , B2B , CRM , David Eberle , dev tools , developer tools , e-commerce , Enterprise , Enterprise , GitHub , machine learning , natural language processing , Startups , Startups , Venture , web apps , wolfram research , Y Combinator , yc , YC Demo Day , yc demo day summer 2022
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Kyle Wiggers
+AI Editor
+Kyle Wiggers was TechCrunch’s AI Editor until June 2025. His writing has appeared in VentureBeat and Digital Trends, as well as a range of gadget blogs including Android Police, Android Authority, Droid-Life, and XDA-Developers. He lives in Manhattan with his partner, a music therapist.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+Sam Altman is ready to decelerate
+Tim Fernholz
+Kalshi demands Netflix take down trailer for ‘Prediction Games’ documentary
+Anthony Ha
+Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+Amanda Silberling
+SpaceX launches new V3 Starlink satellites but suffers another booster failure
+Sean O'Kane
+Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M
+Marina Temkin
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Getty Images
+Apps
+7 AI startups that stood out in YC’s Summer ’22 batch
+Kyle Wiggers
+7:00 AM PDT · September 8, 2022
+It’s that time of year again. This morning, Y Combinator (YC) hosted a demo day for its 2022 Summer Cohort — the 35th demo day in the incubator’s history. Featuring founders from 30 countries and startups across sectors including developer tools, fintech and healthcare, the day saw no shortage of compelling pitches.
+The competition was fiercer than usual, owing to YC’s decision in early August to cut the batch size by 40% to around 250 companies in light of economic headwinds. But a particular category of startup stood out: those applying AI and machine learning to solve problems, especially for business-to-business clients.
+This year had only 14 such startups compared to 20 last year, which makes sense as the overall cohort is also smaller. But the batches share a unifying theme: sales. Their products largely target hurdles in sales and marketing at a time when businesses are up against recessionary pressures.
+Economic challenges aside, the large addressable market makes sales an attractive problem for startups to tackle. Grand View Research pegged the sales force automation software market alone at $7.29 billion in 2019.
+Pilot AI
+Pilot AI is developing a tool for sales reps that automatically translates call recordings into structured data that then directly updates a customer relationship management (CRM) system. The idea is to save reps time, and to assure their managers that the pipeline data is up to date.
+It’s worth noting that other platforms like Fireflies.ai and Microsoft’s Viva Sales also do this. But Pilot AI founder Max Lu, previously a software engineer at Salesforce, says his product is more thorough than most, and can generate a summary of each call as well as data points that map to CRM fields and questions asked by reps, in addition to key parts of the recipient’s answer.
+Image Credits: Pilot AI
+Typewise
+Typewise is also in the sales space, but it focuses on text prediction across web apps via a browser extension and server-side API. Initially developed as a smartphone app, Typewise — which claims to have Fortune 500 customers in the e-commerce and logistics industries — can autocomplete sentences, insert smart snippets, automatically reply to messages and check for style and grammar consistency.
+It sounds a little like TextExpander and Magical . But founder David Eberle says that Typewise is compatible with any CRM system and can be customized to a company’s data, with an analytics component that suggests which words and phrases to use.
+YC Summer 2022 AI startups that didn’t fall within the sales and marketing tech category tended to focus on dev tools, another lucrative avenue to growth. Considering that 55% of developers struggle to find the time to build internal apps in the first place, according to one recent survey , VCs certainly see an opportunity: they invested $37 billion last year into startups creating dev tools.
+Monterey AI
+Monterey AI tackles a decidedly different part of the product lifecycle: Development. Founder Chun Jiang pitches it as a “co-pilot for product development” that replaces documents with workflows that automatically generate product specs, including feature ideas, metrics, designs and launch plans.
+Using Monterey, customers pick a product template based on their use case (e.g. “software as a service”) and configure the inputs, checking dependencies to solve conflicts. Jiang says the platform can uncover cross-team conflicts and dependencies while providing a bird’s-eye view of the portfolio to align features.
+Image Credits: Monterey AI
+Dev Tools AI
+Dev Tools AI could perhaps be used in tandem with Monterey AI.
+Dev Tools AI offers a library designed to make it easier to write tests for web apps in existing dev environments by simply drawing a box over a screenshot. Applying computer vision, it finds elements on webpages like search boxes and buttons, and can even see controls within web games. It can also test for crawl errors on pages, including broken links, 404s and console errors.
+As founder Chris Navrides points out, writing end-to-end web tests is a traditionally time-consuming process, requiring one to dig around in the page code multiple times as the tested app evolves. Assuming Dev Tools AI works as intended, it could be a valuable addition to quality assurance testing teams’ arsenals.
+Maya Labs
+Maya Labs is creating a platform for translating natural language into code. Similar to GitHub’s Copilot, Maya incrementally generates programs and shows results in response to steps in English.
+One of Maya’s founders, Sibesh Kar, says that the service builds apps by using a combination of conditional logic, AI-powered search and classification, fine-tuned language models and template generation. Currently, Maya can query and plot data from an external source like Google Sheets, Notion or Airtable, and perform actions on that data, like sending an email, uploading a file or updating a database entry.
+The long-term goal is to extend Maya to tasks like web navigation, connecting APIs and workflow automation, which — given the current state of AI text-to-language systems — seems within the realm of possibility.
+Hello
+For those who prefer a hands-on approach to programming, Hello claims to use AI to “instantly” answer developers’ technical questions with explanations and relevant code snippets from the web. The platform is powered by large language models (think GPT-3) that reference several sources to find the most likely answers, according to co-founder Michael Royzen.
+When Hello users submit a query, the service pulls and re-ranks raw site data from Bing, and then extracts understanding using the aforementioned models. A different set of models translates the results into human-readable answers.
+Image Credits: Hello
+NuMind
+Another startup with language models at its core is NuMind , which provides data scientists, data analysts and software engineers a tool for creating custom natural language processing models. Leveraging large language models similar to GPT-3, NuMind can be used to, for example, find which job offers the best match a given resume on a recruitment platform.
+NuMind founders Etienne Bernard (the former head of machine learning at Wolfram Research) and Make.org co-founder Samuel Bernard claim that interest in the company is quite high, with its paying customer base growing to nine in the span of a month.
+Topics
+AI , AI , Apps , Artificial Intelligence (AI) , B2B , CRM , David Eberle , dev tools , developer tools , e-commerce , Enterprise , Enterprise , GitHub , machine learning , natural language processing , Startups , Startups , Venture , web apps , wolfram research , Y Combinator , yc , YC Demo Day , yc demo day summer 2022
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Kyle Wiggers
+AI Editor
+Kyle Wiggers was TechCrunch’s AI Editor until June 2025. His writing has appeared in VentureBeat and Digital Trends, as well as a range of gadget blogs including Android Police, Android Authority, Droid-Life, and XDA-Developers. He lives in Manhattan with his partner, a music therapist.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+Sam Altman is ready to decelerate
+Tim Fernholz
+Kalshi demands Netflix take down trailer for ‘Prediction Games’ documentary
+Anthony Ha
+Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+Amanda Silberling
+SpaceX launches new V3 Starlink satellites but suffers another booster failure
+Sean O'Kane
+Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M
+Marina Temkin
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 94
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":8190,"paragraph_count":41,"sentence_count":53,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Considering that 55% of developers struggle to find the time to build internal apps in the first place, according to one recent survey, VCs certainly see an opportunity: they invested $37 billion last year into startups creating dev tools. Monterey AI tackles a decidedly different part of the produc... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Image Credits: Getty Images Apps 7 AI startups that stood out in YC’s Summer ’22 batch Kyle Wiggers 7:00 AM PDT · September 8, 2022 It’s that time of year again.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   This morning, Y Combinator (YC) hosted a demo day for its 2022 Summer Cohort — the 35th demo day in the incubator’s history.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Featuring founders from 30 countries and startups across sectors including developer tools, fintech and healthcare, the day saw no shortage of compelling pitches.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   The competition was fiercer than usual, owing to YC’s decision in early August to cut the batch size by 40% to around 250 companies in light of economic headwinds.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   But a particular category of startup stood out: those applying AI and machine learning to solve problems, especially for business-to-business clients.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google, Microsoft, GitHub, Salesforce
+- products: Copilot
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 22 b, 55%, $37 billion, 7, 00, 8, 2022, 35
+- quotes: co-pilot for product development / software as a service / instantly
+
+## evidence_seed
+
+- company_actions: Image Credits: Getty Images Apps 7 AI startups that stood out in YC’s Summer ’22 batch Kyle Wiggers 7:00 AM PDT · September 8, 2022 It’s that time of year again. / This morning, Y Combinator (YC) hosted a demo day for its 2022 Summer Cohort — the 35th demo day in the incubator’s history. / Featuring founders from 30 countries and startups across sectors including developer tools, fintech and healthcare, the day saw no shortage of compelling pitches.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Considering that 55% of developers struggle to find the time to build internal apps in the first place, according to one recent survey, VCs certainly see an opportunity: they invested $37 billion last year into startups creating dev tools. Monterey AI tackles a decidedly different part of the produc... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

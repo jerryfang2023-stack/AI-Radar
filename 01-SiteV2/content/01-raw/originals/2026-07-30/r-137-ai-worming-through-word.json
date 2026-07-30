@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-137",
+  "title": "AI Worming through Word",
+  "title_zh": "AI 蠕虫通过 Word 传播",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
+  "canonical_url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word",
+  "source_name": "Simon Willison's Blog",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-29T18:43:03.000Z",
+  "collected_at": "2026-07-30T03:09:29.895Z",
+  "language": "mixed",
+  "full_text": "AI Worming through Word\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026 - Link Blog\nAI Worming through Word ( via ) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:\nAn attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited. Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier. If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present.\nWe've seen plenty of hidden white-on-white text before - the kids are using it in their job applications now - but this is the first one I've seen that deliberately copies instructions to self-replicate itself.\nIt was responsibly disclosed to Microsoft who then had 144 days to work on a fix, but so far (unsurprisingly) there's no mitigation that covers the full class of attack.\nPosted 29th July 2026 at 6:43 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 29th July 2026 .\nmicrosoft\n133\nsecurity\n620\nai\n2,150\nprompt-injection\n158\ngenerative-ai\n1,902\nllms\n1,869\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "clean_text": "AI Worming through Word\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026 - Link Blog\nAI Worming through Word ( via ) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:\nAn attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited. Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier. If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present.\nWe've seen plenty of hidden white-on-white text before - the kids are using it in their job applications now - but this is the first one I've seen that deliberately copies instructions to self-replicate itself.\nIt was responsibly disclosed to Microsoft who then had 144 days to work on a fix, but so far (unsurprisingly) there's no mitigation that covers the full class of attack.\nPosted 29th July 2026 at 6:43 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 29th July 2026 .\nmicrosoft\n133\nsecurity\n620\nai\n2,150\nprompt-injection\n158\ngenerative-ai\n1,902\nllms\n1,869\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-137-ai-worming-through-word.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-137-ai-worming-through-word.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "medium",
+  "extraction_method": "body-visible-text",
+  "readability_score": 58,
+  "extractor_diagnostics": {
+    "readability_score": 58,
+    "text_length": 2171,
+    "paragraph_count": 15,
+    "sentence_count": 10,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 2171,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3d86772feab57b06",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "3000631c4580bfce",
+  "content_hash": "3d86772feab57b06",
+  "full_text_hash": "3d86772feab57b06",
+  "semantic_hash": "6935aa96a5e51047",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-29T18:43:03.000Z",
+  "last_seen_at": "2026-07-30T03:09:29.895Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "&lt;p&gt;&lt;strong&gt;&lt;a href=\"https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/\"&gt;AI Worming through Word&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;An attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may inter",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "AI Worming through Word Simon Willison’s Weblog Subscribe Sponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "Try Cursor & get 50% off your first month 29th July 2026 - Link Blog AI Worming through Word ( via ) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms: An attacker places hidden instructions in a document that is later used as source material in Copilot for Word.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-30T03:09:29.895Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison's Blog",
+      "OpenAI",
+      "Microsoft",
+      "Cursor"
+    ],
+    "products": [
+      "Copilot",
+      "Cursor",
+      "Agents",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3",
+      "50%",
+      "29",
+      "2026",
+      "144",
+      "6",
+      "43",
+      "22"
+    ],
+    "quotes": [
+      "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "AI Worming through Word Simon Willison’s Weblog Subscribe Sponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed."
+    ],
+    "case_details": [
+      "Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited.",
+      "Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier.",
+      "If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# AI Worming through Word\n\n- raw_id: R-137\n- title_zh: AI 蠕虫通过 Word 传播\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything\n- source_name: Simon Willison's Blog\n- collected_at: 2026-07-30T03:09:29.895Z\n\n## clean_text\n\nAI Worming through Word\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026 - Link Blog\nAI Worming through Word ( via ) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:\nAn attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited. Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier. If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present.\nWe've seen plenty of hidden white-on-white text before - the kids are using it in their job applications now - but this is the first one I've seen that deliberately copies instructions to self-replicate itself.\nIt was responsibly disclosed to Microsoft who then had 144 days to work on a fix, but so far (unsurprisingly) there's no mitigation that covers the full class of attack.\nPosted 29th July 2026 at 6:43 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 29th July 2026 .\nmicrosoft\n133\nsecurity\n620\nai\n2,150\nprompt-injection\n158\ngenerative-ai\n1,902\nllms\n1,869\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## full_text\n\nAI Worming through Word\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026 - Link Blog\nAI Worming through Word ( via ) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:\nAn attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited. Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier. If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present.\nWe've seen plenty of hidden white-on-white text before - the kids are using it in their job applications now - but this is the first one I've seen that deliberately copies instructions to self-replicate itself.\nIt was responsibly disclosed to Microsoft who then had 144 days to work on a fix, but so far (unsurprisingly) there's no mitigation that covers the full class of attack.\nPosted 29th July 2026 at 6:43 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 29th July 2026 .\nmicrosoft\n133\nsecurity\n620\nai\n2,150\nprompt-injection\n158\ngenerative-ai\n1,902\nllms\n1,869\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 58\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] &lt;p&gt;&lt;strong&gt;&lt;a href=\"https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/\"&gt;AI Worming through Word&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;An attacker places hidden instructions in a document that is later used as source material in Copilot for Word. Copilot may inter\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] AI Worming through Word Simon Willison’s Weblog Subscribe Sponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed.\n3. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Try Cursor & get 50% off your first month 29th July 2026 - Link Blog AI Worming through Word ( via ) Neat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms: An attacker places hidden instructions in a document that is later used as source material in Copilot for Word.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Copilot may interpret those instructions as part of the user’s request, causing it to manipulate the document being drafted or edited.\n5. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Copilot may then also copy the hidden instructions into the resulting document, turning that document into a new carrier.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] If the carrier is subsequently used in another Copilot-assisted workflow, the instructions can trigger again and propagate into further documents, even without the attacker’s original document being present.\n"
+}

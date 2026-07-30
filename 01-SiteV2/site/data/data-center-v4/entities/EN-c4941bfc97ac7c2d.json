@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-c4941bfc97ac7c2d",
@@ -21,7 +21,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-cc3b92fe233953cf"
+      "EV-cc3b92fe233953cf",
+      "EV-abb190c09b08067c"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -29,7 +30,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-04",
-    "lastSeen": "2026-07-05",
+    "lastSeen": "2026-07-30",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -40,9 +41,27 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-abb190c09b08067c"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-abb190c09b08067c",
+        "dataDate": "2026-07-30",
+        "date": "2026-07-30",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "withdrawn",
+        "statusLabel": "已撤回",
+        "title": "Anthropic：Claude 发现 HAWK 致命缺陷，仅用 60 小时攻破 NIST 后量子签名候选算法",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c4941bfc97ac7c2d",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-cc3b92fe233953cf",
         "dataDate": "2026-07-05",
@@ -98,6 +117,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-a4fe78df6ccd63c8",
         "EV-3eb44a239ebef4b0",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -157,6 +177,7 @@
         "EN-ea87a2bd84296f73",
         "EN-4094a2b7125c7564",
         "EN-cbc62794911ff31b",
+        "EN-30397d0cfc1b0e29",
         "EN-0d4bbb73ac4c7513",
         "EN-2b6e51bec93e86c1",
         "EN-e73b79a0b10f8cdb",
@@ -196,7 +217,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     }
   ],
   "fde": [],

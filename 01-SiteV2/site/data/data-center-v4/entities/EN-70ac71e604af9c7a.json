@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-70ac71e604af9c7a",
@@ -21,19 +21,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-6f433ccff3dce657",
       "EV-96cfe78a2dee2182"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-29",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-07-30",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-6f433ccff3dce657",
         "EV-96cfe78a2dee2182"
       ],
       "hardware": [],
@@ -41,6 +43,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6f433ccff3dce657",
+        "dataDate": "2026-07-30",
+        "date": "2026-07-29",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 开源 Codex Security CLI，帮助开发者通过命令行发现并修复漏洞",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-70ac71e604af9c7a"
+        ]
+      },
       {
         "id": "EV-96cfe78a2dee2182",
         "dataDate": "2026-07-29",

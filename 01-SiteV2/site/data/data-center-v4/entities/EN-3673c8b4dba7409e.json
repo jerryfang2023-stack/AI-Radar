@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-3673c8b4dba7409e",
@@ -96,6 +96,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-cc65a81f48e10ceb",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -169,6 +170,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1068d4195842b580",
+        "EV-8803f626b5df5ab0",
+        "EV-014ca842352f6b49",
+        "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
         "EV-7c934b299d048348",
         "EV-96cfe78a2dee2182",
@@ -303,9 +308,13 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-741728825db1f14e",
+        "EV-bce258f8f915ff5f",
+        "EV-eed7fb721dc2f9de",
+        "EV-20b82e2a2cb33a0e",
+        "EV-a89354fc03158eaa",
         "EV-e86fcdb67a637c4c",
         "EV-0eef30387327e73f",
-        "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
         "EV-d709599eddf5db04",
@@ -351,9 +360,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-technology-human_in_loop",
-        "TX-technology-agentic_execution",
         "TX-use_case-enterprise_operations",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
@@ -381,11 +390,11 @@
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
+        "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
-        "EN-d1ad14d4ad57d207",
         "EN-74692028630429c7",
         "EN-c70eca6b0f88f44d",
         "EN-52fc33ae4d101a5d",
@@ -405,7 +414,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     }
   ],
   "relationships": [
@@ -438,6 +447,7 @@
       "typeLabel": "应用场景",
       "valueId": "customer_service",
       "eventIds": [
+        "EV-8aa51e324eca8fc2",
         "EV-506f1936ecfb350f",
         "EV-64fb6d791e19d10a",
         "EV-f020dd198aa2f952",
@@ -503,7 +513,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-use_case-enterprise_operations",

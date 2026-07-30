@@ -1,0 +1,272 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-122",
+  "title": "Adding a custom MCP server to Claude and ChatGPT",
+  "title_zh": "为 Claude 和 ChatGPT 添加自定义 MCP 服务器",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
+  "canonical_url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt",
+  "source_name": "Simon Willison's Blog",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-29T00:13:18.000Z",
+  "collected_at": "2026-07-30T03:09:15.879Z",
+  "language": "mixed",
+  "full_text": "TIL: Adding a custom MCP server to Claude and ChatGPT\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026\nTIL\nAdding a custom MCP server to Claude and ChatGPT\n&mdash; I've started exploring [MCP](https://modelcontextprotocol.io/) in more detail. The web chat UIs for both Claude and ChatGPT can access MCP servers but it's not obvious how to set them up. Here's what I figured out.\nConnecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps.\nPosted 29th July 2026 at 12:13 am\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a beat by Simon Willison, posted on 29th July 2026 .\nai\n2,150\ngenerative-ai\n1,902\nchatgpt\n198\nllms\n1,869\nclaude\n297\nmodel-context-protocol\n29\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "clean_text": "TIL: Adding a custom MCP server to Claude and ChatGPT\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026\nTIL\nAdding a custom MCP server to Claude and ChatGPT\n&mdash; I've started exploring [MCP](https://modelcontextprotocol.io/) in more detail. The web chat UIs for both Claude and ChatGPT can access MCP servers but it's not obvious how to set them up. Here's what I figured out.\nConnecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps.\nPosted 29th July 2026 at 12:13 am\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a beat by Simon Willison, posted on 29th July 2026 .\nai\n2,150\ngenerative-ai\n1,902\nchatgpt\n198\nllms\n1,869\nclaude\n297\nmodel-context-protocol\n29\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-122-adding-a-custom-mcp-server-to-claude-and-chatgpt.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-122-adding-a-custom-mcp-server-to-claude-and-chatgpt.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "medium",
+  "extraction_method": "body-visible-text",
+  "readability_score": 48,
+  "extractor_diagnostics": {
+    "readability_score": 48,
+    "text_length": 1440,
+    "paragraph_count": 14,
+    "sentence_count": 8,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0014,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 1440,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "9d7f7f92de418dea",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "8ed697aafabe2929",
+  "content_hash": "9d7f7f92de418dea",
+  "full_text_hash": "9d7f7f92de418dea",
+  "semantic_hash": "5a1e92a921f7cfae",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-29T00:13:18.000Z",
+  "last_seen_at": "2026-07-30T03:09:15.879Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "&lt;p&gt;&lt;strong&gt;TIL:&lt;/strong&gt; &lt;a href=\"https://til.simonwillison.net/llms/mcp-in-claude-and-chatgpt\"&gt;Adding a custom MCP server to Claude and ChatGPT&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Connecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps.&lt;/p&gt; &lt;p&gt;Tags: &lt;a href=\"https://simonwillison.net/tags/ai\"&gt;ai&lt;/a&gt;, &lt;a href=\"https://simonwillison.net/tags/generative-ai\"&gt;g",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "TIL: Adding a custom MCP server to Claude and ChatGPT Simon Willison’s Weblog Subscribe Sponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "Try Cursor & get 50% off your first month 29th July 2026 TIL Adding a custom MCP server to Claude and ChatGPT &mdash; I've started exploring [MCP](https://modelcontextprotocol.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "io/) in more detail.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "The web chat UIs for both Claude and ChatGPT can access MCP servers but it's not obvious how to set them up.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Here's what I figured out.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-30T03:09:15.879Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison's Blog",
+      "OpenAI",
+      "Cursor"
+    ],
+    "products": [
+      "MCP",
+      "Claude",
+      "ChatGPT",
+      "mcp",
+      "claude",
+      "chatgpt",
+      "Cursor",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "50%",
+      "29",
+      "2026",
+      "12",
+      "13",
+      "22",
+      "21",
+      "3"
+    ],
+    "quotes": [
+      "https://til.simonwillison.net/llms/mcp-in-claude-and-chatgpt",
+      "https://simonwillison.net/tags/ai",
+      "https://simonwillison.net/tags/generative-ai"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "TIL: Adding a custom MCP server to Claude and ChatGPT Simon Willison’s Weblog Subscribe Sponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed.",
+      "io/) in more detail.",
+      "The web chat UIs for both Claude and ChatGPT can access MCP servers but it's not obvious how to set them up."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Adding a custom MCP server to Claude and ChatGPT\n\n- raw_id: R-122\n- title_zh: 为 Claude 和 ChatGPT 添加自定义 MCP 服务器\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything\n- source_name: Simon Willison's Blog\n- collected_at: 2026-07-30T03:09:15.879Z\n\n## clean_text\n\nTIL: Adding a custom MCP server to Claude and ChatGPT\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026\nTIL\nAdding a custom MCP server to Claude and ChatGPT\n&mdash; I've started exploring [MCP](https://modelcontextprotocol.io/) in more detail. The web chat UIs for both Claude and ChatGPT can access MCP servers but it's not obvious how to set them up. Here's what I figured out.\nConnecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps.\nPosted 29th July 2026 at 12:13 am\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a beat by Simon Willison, posted on 29th July 2026 .\nai\n2,150\ngenerative-ai\n1,902\nchatgpt\n198\nllms\n1,869\nclaude\n297\nmodel-context-protocol\n29\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## full_text\n\nTIL: Adding a custom MCP server to Claude and ChatGPT\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed. Try Cursor & get 50% off your first month\n29th July 2026\nTIL\nAdding a custom MCP server to Claude and ChatGPT\n&mdash; I've started exploring [MCP](https://modelcontextprotocol.io/) in more detail. The web chat UIs for both Claude and ChatGPT can access MCP servers but it's not obvious how to set them up. Here's what I figured out.\nConnecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps.\nPosted 29th July 2026 at 12:13 am\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a beat by Simon Willison, posted on 29th July 2026 .\nai\n2,150\ngenerative-ai\n1,902\nchatgpt\n198\nllms\n1,869\nclaude\n297\nmodel-context-protocol\n29\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 48\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] &lt;p&gt;&lt;strong&gt;TIL:&lt;/strong&gt; &lt;a href=\"https://til.simonwillison.net/llms/mcp-in-claude-and-chatgpt\"&gt;Adding a custom MCP server to Claude and ChatGPT&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Connecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps.&lt;/p&gt; &lt;p&gt;Tags: &lt;a href=\"https://simonwillison.net/tags/ai\"&gt;ai&lt;/a&gt;, &lt;a href=\"https://simonwillison.net/tags/generative-ai\"&gt;g\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] TIL: Adding a custom MCP server to Claude and ChatGPT Simon Willison’s Weblog Subscribe Sponsored by: Cursor &mdash; Delegate engineering tasks to Cursor Cloud Agents—even while your laptop is closed.\n3. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Try Cursor & get 50% off your first month 29th July 2026 TIL Adding a custom MCP server to Claude and ChatGPT &mdash; I've started exploring [MCP](https://modelcontextprotocol.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] io/) in more detail.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The web chat UIs for both Claude and ChatGPT can access MCP servers but it's not obvious how to set them up.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Here's what I figured out.\n"
+}

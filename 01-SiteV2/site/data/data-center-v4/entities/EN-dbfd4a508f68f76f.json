@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-dbfd4a508f68f76f",
@@ -25,15 +25,15 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
+      "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
+      "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
+      "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
       "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
       "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
       "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+      "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
       "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
-      "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
-      "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
-      "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
-      "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
-      "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
       "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
@@ -83,7 +83,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-07-28",
+    "lastSeen": "2026-07-30",
     "handle": "simonwillison.net",
     "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
     "organization": "",
@@ -94,11 +94,11 @@
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
+      "AI 基础设施",
+      "模型基础设施观点",
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
-      "AI 基础设施",
-      "模型基础设施观点",
       "企业工作流",
       "Builder 观点"
     ],
@@ -115,6 +115,30 @@
     "timeline": [],
     "viewpoints": [
       {
+        "id": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
+        "date": "2026-07-30",
+        "title": "AI蠕虫通过Word传播",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
+        "date": "2026-07-29",
+        "title": "将自定义MCP服务器添加到Claude和ChatGPT中",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
+        "date": "2026-07-29",
+        "title": "使用Claude发现加密弱点",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
+        "date": "2026-07-29",
+        "title": "2026年7月事件技术时间线：前沿实验室代理入侵剖析",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything"
+      },
+      {
         "id": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
         "date": "2026-07-28",
         "title": "一份关于使用哪款AI完成任务的个人见解指南",
@@ -123,50 +147,26 @@
       {
         "id": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
         "date": "2026-07-27",
-        "title": "深入解析支撑代币转售与欺诈的Relay市场内幕",
+        "title": "深入解析支撑代币转售与欺诈的继电器市场内幕",
         "sourceUrl": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
         "date": "2026-07-25",
-        "title": "引用鲍里斯·切尔尼的话",
+        "title": "引用鲍里斯·切尔尼",
         "sourceUrl": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything"
+      },
+      {
+        "id": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything",
+        "date": "2026-07-25",
+        "title": "隆重推出 Claude Opus 5",
+        "sourceUrl": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
         "date": "2026-07-24",
         "title": "首个已知的失控AI智能体——还是一场极其糟糕的营销噱头？",
         "sourceUrl": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
-        "date": "2026-07-23",
-        "title": "引用托马斯·普塔塞克",
-        "sourceUrl": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
-        "date": "2026-07-23",
-        "title": "OpenAI对Hugging Face的意外网络攻击，是科幻照进现实。",
-        "sourceUrl": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
-        "date": "2026-07-23",
-        "title": "AI实验室是在“鹈鹕最大化”吗？",
-        "sourceUrl": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
-        "date": "2026-07-21",
-        "title": "Nativ：在Mac上本地运行AI模型",
-        "sourceUrl": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything",
-        "date": "2026-07-21",
-        "title": "与Claude Code团队的Cat和Thariq围炉夜话",
-        "sourceUrl": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/#atom-everything"
       },
       {
         "id": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",

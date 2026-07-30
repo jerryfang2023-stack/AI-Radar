@@ -1,0 +1,299 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-059
+title: "Workhelix taps years of research to help enterprises figure out ..."
+title_zh: "Workhelix 借助多年研究帮助企业厘清..."
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2025/02/27/workhelix-taps-years-of-research-to-help-enterprises-figure-out-where-to-apply-ai/"
+canonical_url: "https://techcrunch.com/2025/02/27/workhelix-taps-years-of-research-to-help-enterprises-figure-out-where-to-apply-ai"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2025-02-27T00:00:00.000Z"
+collected_at: 2026-07-30T03:08:39.942Z
+language: mixed
+full_text_hash: 068f42402e9ae21f
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-30/r-059-workhelix-taps-years-of-research-to-help-enterprises-figure-out.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-30/r-059-workhelix-taps-years-of-research-to-help-enterprises-figure-out.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6541,"paragraph_count":34,"sentence_count":43,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6541
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"068f42402e9ae21f","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 09e0e15b8963a882
+content_hash: 068f42402e9ae21f
+semantic_hash: 150052cf052f2148
+duplicate_of: ""
+first_seen_at: "2025-02-27T00:00:00.000Z"
+last_seen_at: 2026-07-30T03:08:39.942Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Google"],"products":[],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["9","00","27","2025","2022","2024","$15 million","500"],"quotes":["That’s not a systematic, rigorous way to adopt generative AI and is part of the reason people are frequently so disappointed,","In the case of a lot of our work, there’s this long tale of tasks that the machines actually don’t help that much with,","This is something that they’re really hungry for,","Erik, Andy, and Daniel have amazing access to the Fortune 500 C-suite and access to customers,","It’s extreme founder-market fit and their approach is extreme founder-product fit. That caused us to want to dive in."]}
+evidence_seed: {"company_actions":["It can be hard for enterprises to figure out which AI applications help their business and which are just hype.","Workhelix wants to solve that problem.","Workhelix is a tech-enabled service startup that works with enterprises to better understand and monitor AI automation at their companies."],"case_details":[],"workflow_changes":["AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow. It can be hard for enterprises to figure out which AI applications help their business and which are just hype.","Image Credits: Workhelix Enterprise Workhelix taps years of research to help enterprises figure out where to apply AI Rebecca Szkutak 9:00 AM PST · February 27, 2025 AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow."],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"workflow_change","text":"AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow. It can be hard for enterprises to figure out which AI applications help their business and which are just hype.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Image Credits: Workhelix Enterprise Workhelix taps years of research to help enterprises figure out where to apply AI Rebecca Szkutak 9:00 AM PST · February 27, 2025 AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It can be hard for enterprises to figure out which AI applications help their business and which are just hype.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Workhelix wants to solve that problem.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Workhelix is a tech-enabled service startup that works with enterprises to better understand and monitor AI automation at their companies.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Workhelix breaks down a company’s employee positions into specific job functions and tasks and scores each task for its suitability for AI adoption.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-30T03:08:39.942Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Workhelix taps years of research to help enterprises figure out ...
+
+## clean_text
+
+Image Credits: Workhelix
+Enterprise
+Workhelix taps years of research to help enterprises figure out where to apply AI
+Rebecca Szkutak
+9:00 AM PST · February 27, 2025
+AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow. It can be hard for enterprises to figure out which AI applications help their business and which are just hype. Workhelix wants to solve that problem.
+Workhelix is a tech-enabled service startup that works with enterprises to better understand and monitor AI automation at their companies. Workhelix breaks down a company’s employee positions into specific job functions and tasks and scores each task for its suitability for AI adoption. This helps companies build roadmaps for how and where to adopt AI and gives enterprises a way to monitor if the AI they adopted is working.
+Co-founder and CEO James Milin told TechCrunch that many companies are getting AI adoption wrong because they are looking to apply AI to whole divisions of their business, which is too broad to find value.
+“That’s not a systematic, rigorous way to adopt generative AI and is part of the reason people are frequently so disappointed,” Milin said. “But if you look at all the jobs in an organization and break them down into bundles of tasks, and then score each task for its suitability to be accelerated by generative AI, now you can come up with a really quantitative rigorous way to adopt it.”
+Workhelix’s methodology of breaking down roles into tasks is based on years of research into the relationship between technology and productivity by Erik Brynjolfsson (pictured above), the director of Stanford’s Digital Economy Lab and one of Workhelix’s co-founders.
+“In the case of a lot of our work, there’s this long tale of tasks that the machines actually don’t help that much with,” Brynjolfsson said. “You need humans to be involved. And then there’s other tasks where the machines are very helpful. And almost every project that we look at, there’s some of each of those.”
+Brynjolfsson told TechCrunch that he’s been researching this divide between technology and productivity for well over a decade. Prior to Workhelix, Brynjolfsson was sharing this research and methodology through published papers or through speaker gigs in board rooms, but he realized that if they added a software element, they could reach more companies.
+Brynjolfsson, also the co-chairman of Workhelix, paired up with Andrew McAfee, the co-director of the MIT initiative on the digital economy, and one of Brynjolfsson’s co-authors; Daniel Rock, a Wharton professor; and Milin to launch Workhelix in 2022.
+The company launched its product in April 2024 and has seen strong demand from enterprise customers, including Accenture, Wayfair, and Coursera, among others. Workhelix’s first dozen enterprise customers came through the door with zero paid advertising, Milin said.
+“This is something that they’re really hungry for,” Brynjolfsson said. “They haven’t seen anything like it before. There are consultants out there, but they don’t have these kinds of tools. We’re filling a huge gap. I think the biggest gap there is in the market.”
+The company recently raised a $15 million Series A round led by AIX Ventures with participation from Andrew Ng’s AI Fund, Accenture Ventures, and Bloomberg Beta, among other VCs. It also received funding from a number of angel investors, including LinkedIn co-founder Reid Hoffman, OpenAI co-founder Mira Murati, and Jeff Dean, the chief scientist at Google DeepMind and Google Research, among others.
+Shaun Johnson, a founding partner at AIX Ventures, told TechCrunch that he was introduced to the company through Brynjolfsson’s work at Stanford; one of AIX Ventures’ investing partners, Christopher Manning, is the director of Stanford’s artificial intelligence laboratory. Johnson said he understood the pain point Workhelix was trying to solve right away.
+“Erik, Andy, and Daniel have amazing access to the Fortune 500 C-suite and access to customers,” Johnson said. “It’s extreme founder-market fit and their approach is extreme founder-product fit. That caused us to want to dive in.”
+Workhelix plans to put its recently raised capital toward expanding the number of tasks and KPIs its software tracks. It will also keep building up the internal tools for the data scientists that directly help enterprise customers alongside Workhelix’s product.
+In today’s market that’s obsessed with moving fast and automation, it’s interesting that Workhelix’s business model isn’t just software but also includes a human element, too. The company stands by this approach, although this does make it harder for it to scale. That’s because the company wouldn’t be as effective if it were just another software platform, Milin said.
+“I think there’s a trillion-dollar opportunity here to create value,” Brynjolfsson said. “Not that we’re going to capture all, or even most of that, but we want to unlock that. As James said earlier, this is the biggest technological revolution that’s ever happened and very few people are thinking about unlocking the business side of it.”
+Topics
+AI , artificial intelligence , Enterprise , Exclusive , Fundraising , Mira Murati , OpenAI , Startups , United States
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Szkutak
+Senior Reporter, Venture
+Becca was a senior writer at TechCrunch that covered venture capital trends and startups. She previously covered the same beat for Forbes and the Venture Capital Journal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+Sam Altman is ready to decelerate
+Tim Fernholz
+Kalshi demands Netflix take down trailer for ‘Prediction Games’ documentary
+Anthony Ha
+Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+Amanda Silberling
+SpaceX launches new V3 Starlink satellites but suffers another booster failure
+Sean O'Kane
+Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M
+Marina Temkin
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Workhelix
+Enterprise
+Workhelix taps years of research to help enterprises figure out where to apply AI
+Rebecca Szkutak
+9:00 AM PST · February 27, 2025
+AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow. It can be hard for enterprises to figure out which AI applications help their business and which are just hype. Workhelix wants to solve that problem.
+Workhelix is a tech-enabled service startup that works with enterprises to better understand and monitor AI automation at their companies. Workhelix breaks down a company’s employee positions into specific job functions and tasks and scores each task for its suitability for AI adoption. This helps companies build roadmaps for how and where to adopt AI and gives enterprises a way to monitor if the AI they adopted is working.
+Co-founder and CEO James Milin told TechCrunch that many companies are getting AI adoption wrong because they are looking to apply AI to whole divisions of their business, which is too broad to find value.
+“That’s not a systematic, rigorous way to adopt generative AI and is part of the reason people are frequently so disappointed,” Milin said. “But if you look at all the jobs in an organization and break them down into bundles of tasks, and then score each task for its suitability to be accelerated by generative AI, now you can come up with a really quantitative rigorous way to adopt it.”
+Workhelix’s methodology of breaking down roles into tasks is based on years of research into the relationship between technology and productivity by Erik Brynjolfsson (pictured above), the director of Stanford’s Digital Economy Lab and one of Workhelix’s co-founders.
+“In the case of a lot of our work, there’s this long tale of tasks that the machines actually don’t help that much with,” Brynjolfsson said. “You need humans to be involved. And then there’s other tasks where the machines are very helpful. And almost every project that we look at, there’s some of each of those.”
+Brynjolfsson told TechCrunch that he’s been researching this divide between technology and productivity for well over a decade. Prior to Workhelix, Brynjolfsson was sharing this research and methodology through published papers or through speaker gigs in board rooms, but he realized that if they added a software element, they could reach more companies.
+Brynjolfsson, also the co-chairman of Workhelix, paired up with Andrew McAfee, the co-director of the MIT initiative on the digital economy, and one of Brynjolfsson’s co-authors; Daniel Rock, a Wharton professor; and Milin to launch Workhelix in 2022.
+The company launched its product in April 2024 and has seen strong demand from enterprise customers, including Accenture, Wayfair, and Coursera, among others. Workhelix’s first dozen enterprise customers came through the door with zero paid advertising, Milin said.
+“This is something that they’re really hungry for,” Brynjolfsson said. “They haven’t seen anything like it before. There are consultants out there, but they don’t have these kinds of tools. We’re filling a huge gap. I think the biggest gap there is in the market.”
+The company recently raised a $15 million Series A round led by AIX Ventures with participation from Andrew Ng’s AI Fund, Accenture Ventures, and Bloomberg Beta, among other VCs. It also received funding from a number of angel investors, including LinkedIn co-founder Reid Hoffman, OpenAI co-founder Mira Murati, and Jeff Dean, the chief scientist at Google DeepMind and Google Research, among others.
+Shaun Johnson, a founding partner at AIX Ventures, told TechCrunch that he was introduced to the company through Brynjolfsson’s work at Stanford; one of AIX Ventures’ investing partners, Christopher Manning, is the director of Stanford’s artificial intelligence laboratory. Johnson said he understood the pain point Workhelix was trying to solve right away.
+“Erik, Andy, and Daniel have amazing access to the Fortune 500 C-suite and access to customers,” Johnson said. “It’s extreme founder-market fit and their approach is extreme founder-product fit. That caused us to want to dive in.”
+Workhelix plans to put its recently raised capital toward expanding the number of tasks and KPIs its software tracks. It will also keep building up the internal tools for the data scientists that directly help enterprise customers alongside Workhelix’s product.
+In today’s market that’s obsessed with moving fast and automation, it’s interesting that Workhelix’s business model isn’t just software but also includes a human element, too. The company stands by this approach, although this does make it harder for it to scale. That’s because the company wouldn’t be as effective if it were just another software platform, Milin said.
+“I think there’s a trillion-dollar opportunity here to create value,” Brynjolfsson said. “Not that we’re going to capture all, or even most of that, but we want to unlock that. As James said earlier, this is the biggest technological revolution that’s ever happened and very few people are thinking about unlocking the business side of it.”
+Topics
+AI , artificial intelligence , Enterprise , Exclusive , Fundraising , Mira Murati , OpenAI , Startups , United States
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Szkutak
+Senior Reporter, Venture
+Becca was a senior writer at TechCrunch that covered venture capital trends and startups. She previously covered the same beat for Forbes and the Venture Capital Journal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+Sam Altman is ready to decelerate
+Tim Fernholz
+Kalshi demands Netflix take down trailer for ‘Prediction Games’ documentary
+Anthony Ha
+Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+Amanda Silberling
+SpaceX launches new V3 Starlink satellites but suffers another booster failure
+Sean O'Kane
+Prentis, new AI lab co-founded by Reid Hoffman, Mark Pincus in talks to raise $100M
+Marina Temkin
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6541,"paragraph_count":34,"sentence_count":43,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow. It can be hard for enterprises to figure out which AI applications help their business and which are just hype.
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Workhelix Enterprise Workhelix taps years of research to help enterprises figure out where to apply AI Rebecca Szkutak 9:00 AM PST · February 27, 2025 AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   It can be hard for enterprises to figure out which AI applications help their business and which are just hype.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Workhelix wants to solve that problem.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Workhelix is a tech-enabled service startup that works with enterprises to better understand and monitor AI automation at their companies.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Workhelix breaks down a company’s employee positions into specific job functions and tasks and scores each task for its suitability for AI adoption.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Google
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 9, 00, 27, 2025, 2022, 2024, $15 million, 500
+- quotes: That’s not a systematic, rigorous way to adopt generative AI and is part of the reason people are frequently so disappointed, / In the case of a lot of our work, there’s this long tale of tasks that the machines actually don’t help that much with, / This is something that they’re really hungry for, / Erik, Andy, and Daniel have amazing access to the Fortune 500 C-suite and access to customers, / It’s extreme founder-market fit and their approach is extreme founder-product fit. That caused us to want to dive in.
+
+## evidence_seed
+
+- company_actions: It can be hard for enterprises to figure out which AI applications help their business and which are just hype. / Workhelix wants to solve that problem. / Workhelix is a tech-enabled service startup that works with enterprises to better understand and monitor AI automation at their companies.
+- case_details: 暂无公开信息
+- workflow_changes: AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow. It can be hard for enterprises to figure out which AI applications help their business and which are just hype. / Image Credits: Workhelix Enterprise Workhelix taps years of research to help enterprises figure out where to apply AI Rebecca Szkutak 9:00 AM PST · February 27, 2025 AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow.
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AI has the power to transform how people work, but getting tangible value out of AI isn’t as easy as throwing any AI application at any workflow. It can be hard for enterprises to figure out which AI applications help their business and which are just hype.
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

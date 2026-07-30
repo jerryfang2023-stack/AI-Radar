@@ -4,13 +4,146 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-29T04:46:12.968Z",
-    "latestDataDate": "2026-07-29",
-    "currentDate": "2026-07-29",
-    "eventCount": 1695,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "latestDataDate": "2026-07-30",
+    "currentDate": "2026-07-30",
+    "eventCount": 1731,
+    "quarantinedEventCount": 13
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-229f4051d4ed3200",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-8652f6cd9088f1fa",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c04bd5ebd10ab696",
+      "object_type": "entity",
+      "event_id": "EV-c8f3db31cb266b64",
+      "claim_refs": [
+        "CL-c0efbf2fe9d9f1e2",
+        "CL-e93909cf86da757a",
+        "CL-e80bd9d99c74aec9",
+        "CL-baaed277998933ae"
+      ],
+      "source_refs": [
+        "SA-1b35ce83e38353eb"
+      ],
+      "data_date": "2026-07-30",
+      "status": "verified",
+      "subjectName": "Stellantis",
+      "objectName": "Mistral AI",
+      "predicateLabel": "合作",
+      "title": "Stellantis 合作 Mistral AI",
+      "eventTitle": "Stellantis 与 Mistral AI 扩大合作，加速企业级 AI 应用",
+      "eventDate": "2025-10-01",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-c0efbf2fe9d9f1e2",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
+        },
+        {
+          "id": "CL-e93909cf86da757a",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
+        },
+        {
+          "id": "CL-e80bd9d99c74aec9",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI Expand Their Collaboration"
+        },
+        {
+          "id": "CL-baaed277998933ae",
+          "subject": "Stellantis and Mistral AI Expand Their",
+          "object": "to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+          "quote": "Stellantis and Mistral AI elevate their partnership from pilots to company-wide AI deployment, embedding generative AI across operations."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1b35ce83e38353eb",
+          "publisher": "markets.ft.com",
+          "url": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH"
+        }
+      ],
+      "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption",
+      "event": {
+        "id": "EV-c8f3db31cb266b64",
+        "title": "Stellantis 与 Mistral AI 扩大合作，加速企业级 AI 应用",
+        "originalTitle": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption – Company Announcement - FT.com",
+        "date": "2025-10-01",
+        "dataDate": "2026-07-30",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-251475ee05e2516c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-8803f626b5df5ab0",
+      "claim_refs": [
+        "CL-f1762d3a75128608",
+        "CL-b8f357ae57e11fd8",
+        "CL-3dd7b3d994837a02"
+      ],
+      "source_refs": [
+        "SA-6238f11d9c8b4c95"
+      ],
+      "data_date": "2026-07-30",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT",
+      "eventTitle": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+      "eventDate": "2026-07-30",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-f1762d3a75128608",
+          "subject": "OpenAI",
+          "object": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+          "quote": "IT之家 7 月 30 日消息，OpenAI 今天（7 月 30 日）在 X 平台发布推文，宣布启动 ChatGPT for Academic Researchers 计划，将向 10 万名科研人员免费开放 ChatGPT 高级功能。"
+        },
+        {
+          "id": "CL-b8f357ae57e11fd8",
+          "subject": "OpenAI",
+          "object": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+          "quote": "科学家可以通过 OpenAI 官网，填写表格后加入 ChatGPT for Academic Researchers 项目。"
+        },
+        {
+          "id": "CL-3dd7b3d994837a02",
+          "subject": "OpenAI",
+          "object": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+          "quote": "该项目初期将面向部分高校的 1 万名用户开放，并计划未来逐步吸纳 9 万名研究人员加入。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-6238f11d9c8b4c95",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/983/376.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 7 月 30 日消息，OpenAI 今天（7 月 30 日）在 X 平台发布推文，宣布启动 ChatGPT for Academic Researchers 计划，将向 10 万名科研人员免费开放 ChatGPT 高级功能。",
+      "event": {
+        "id": "EV-8803f626b5df5ab0",
+        "title": "OpenAI 启动 ChatGPT for Academic Researchers 计划，向10万科研人员免费开放高级功能",
+        "originalTitle": "",
+        "date": "2026-07-30",
+        "dataDate": "2026-07-30",
+        "eventTypeLabel": "产品发布"
+      }
+    },
     {
       "relationship_id": "REL2-6c33e8063218608e",
       "relationship_version": "RELATION-V2.1",
@@ -3225,6 +3358,76 @@
       }
     },
     {
+      "relationship_id": "REL2-9ad2c97e765910d9",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-18f0900d6c487f59",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-bcf6cc5593de2a0f",
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.6 Flash",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.6 Flash",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-bcf6cc5593de2a0f",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家"
+        },
+        {
+          "id": "CL-1407e158e3017631",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber"
+        },
+        {
+          "id": "CL-bcccc3f03d4b38a9",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "IT之家 7 月 21 日消息，谷歌今日发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
+        },
+        {
+          "id": "CL-910d21a1f5ab0b3c",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "今年以来，这两家 AI 公司相继推出了能够发现软件安全漏洞的先进模型，在网络安全领域占据了领先地位。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a3cf2c06935ba536",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/979/795.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家",
+      "event": {
+        "id": "EV-597b8257a97b3d02",
+        "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+        "originalTitle": "",
+        "date": "2026-07-21",
+        "dataDate": "2026-07-22",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-a2a2d52284004533",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ac123e56b0168ec2",
@@ -3397,6 +3600,69 @@
         "date": "2026-07-21",
         "dataDate": "2026-07-22",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-ddbd67ee39ac2096",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-31055a8d9856fce4",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Flash Cyber",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Flash Cyber",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-1407e158e3017631",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber"
+        },
+        {
+          "id": "CL-bcccc3f03d4b38a9",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "IT之家 7 月 21 日消息，谷歌今日发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
+        },
+        {
+          "id": "CL-910d21a1f5ab0b3c",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "今年以来，这两家 AI 公司相继推出了能够发现软件安全漏洞的先进模型，在网络安全领域占据了领先地位。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a3cf2c06935ba536",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/979/795.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家",
+      "event": {
+        "id": "EV-597b8257a97b3d02",
+        "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+        "originalTitle": "",
+        "date": "2026-07-21",
+        "dataDate": "2026-07-22",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -6617,6 +6883,76 @@
         "date": "2026-07-15",
         "dataDate": "2026-07-16",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-f92ee2f782a8185b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0e008e2c06144ec8",
+      "object_type": "entity",
+      "event_id": "EV-6359c9f6c2609a38",
+      "claim_refs": [
+        "CL-3c3d4af5e069787d",
+        "CL-714aa682873fac8b",
+        "CL-b606f6b126922962",
+        "CL-4a7039df083c3152"
+      ],
+      "source_refs": [
+        "SA-b894cd4477812b65"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana",
+      "eventTitle": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+      "eventDate": "2026-07-15",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-3c3d4af5e069787d",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家"
+        },
+        {
+          "id": "CL-714aa682873fac8b",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能"
+        },
+        {
+          "id": "CL-b606f6b126922962",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "IT之家 7 月 15 日消息，谷歌昨日（7 月 14 日）发布博文，宣布庆祝谷歌图片（Google Image）功能上线 25 周年，并推出新功能： 用户在 AI 概览中，可以直接调用 Nano Banana 模型自定义生成图片。"
+        },
+        {
+          "id": "CL-4a7039df083c3152",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌为庆祝谷歌图片服务上线 25 周年，在 AI 概览中新增生图功能，谷歌表示："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b894cd4477812b65",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/976/980.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家",
+      "event": {
+        "id": "EV-6359c9f6c2609a38",
+        "title": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+        "originalTitle": "",
+        "date": "2026-07-15",
+        "dataDate": "2026-07-16",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -11303,6 +11639,76 @@
       }
     },
     {
+      "relationship_id": "REL2-638b55900181fbf2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-01f1074bb52ff605",
+      "object_type": "entity",
+      "event_id": "EV-d8c69ed782b73a34",
+      "claim_refs": [
+        "CL-b5bc8b4e766de0ef",
+        "CL-dbee760c0db43fab",
+        "CL-72f47e56c761bde4",
+        "CL-9fdeb9adf922c9da"
+      ],
+      "source_refs": [
+        "SA-cb3a20fe357ba722"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana 2 Lite",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana 2 Lite",
+      "eventTitle": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+      "eventDate": "2026-07-01",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b5bc8b4e766de0ef",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家"
+        },
+        {
+          "id": "CL-dbee760c0db43fab",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜"
+        },
+        {
+          "id": "CL-72f47e56c761bde4",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "IT之家 7 月 1 日消息，当地时间周二，谷歌发布了新款自研 AI 图像与视频生成模型 Nano Banana 2 Lite，宣称 相比上一代速度更快、使用成本更低 。"
+        },
+        {
+          "id": "CL-9fdeb9adf922c9da",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "Nano Banana 2 Lite 可在 4 秒内生成一张图像 ，延迟较此前明显下降，适合需要快速反复修改方案，或在短时间内批量生成大量图像的工作，每生成 1000 张图像 仅收费 0.034 美元 （IT之家注：现汇率约合 0.23 元人民币）。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cb3a20fe357ba722",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/970/812.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家",
+      "event": {
+        "id": "EV-d8c69ed782b73a34",
+        "title": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+        "originalTitle": "",
+        "date": "2026-07-01",
+        "dataDate": "2026-07-01",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-65389a75e3085862",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -13976,6 +14382,69 @@
         "date": "2026-06-23",
         "dataDate": "2026-06-23",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-7a95bce5aecaba79",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2ab6d53e717a0e0d",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-d1a3f5c8045e548d",
+      "claim_refs": [
+        "CL-5758242d40096958",
+        "CL-108011dcac3f51c9",
+        "CL-6816c5ea4abdfa87"
+      ],
+      "source_refs": [
+        "SA-572f0e8d4b983d74"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "诺基亚",
+      "objectName": "Google",
+      "predicateLabel": "合作",
+      "title": "诺基亚 合作 Google",
+      "eventTitle": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+      "eventDate": "2026-06-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-5758242d40096958",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家"
+        },
+        {
+          "id": "CL-108011dcac3f51c9",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台"
+        },
+        {
+          "id": "CL-6816c5ea4abdfa87",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "IT之家 6 月 22 日消息，谷歌云与诺基亚当地时间 6 月 22 日宣布扩展合作关系，将谷歌 Gemini 模型整合至诺基亚网络软件套件 Nokia Assurance Center。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-572f0e8d4b983d74",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/967/200.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家",
+      "event": {
+        "id": "EV-d1a3f5c8045e548d",
+        "title": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+        "originalTitle": "",
+        "date": "2026-06-22",
+        "dataDate": "2026-06-23",
+        "eventTypeLabel": "合作"
       }
     },
     {
@@ -17072,6 +17541,76 @@
       }
     },
     {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "DiffusionGemma",
+      "predicateLabel": "发布",
+      "title": "Google 发布 DiffusionGemma",
+      "eventTitle": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+      "eventDate": "2026-06-11",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0ffd4a87d0bf9a23",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家"
+        },
+        {
+          "id": "CL-9a3abffb4df3b677",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍"
+        },
+        {
+          "id": "CL-53bc4ba62a2c55fb",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "IT之家 6 月 11 日消息，谷歌今天（6 月 11 日）发布公告，宣布推出 DiffusionGemma，是基于文本扩散机制的开放 AI 模型， 相比较自回归模型在本地推理速度上提升了 4 倍。"
+        },
+        {
+          "id": "CL-c0d954c60d8247d3",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "开源方面，该模型能力与其他 Gemma 4 模型相当，但推理效率显著更高。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-30fb0e04917bc0f3",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/696.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家",
+      "event": {
+        "id": "EV-22b8d155ce027905",
+        "title": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+        "originalTitle": "",
+        "date": "2026-06-11",
+        "dataDate": "2026-06-11",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-48cdf6bd8d397fed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -18007,6 +18546,76 @@
         "date": "2026-06-10",
         "dataDate": "2026-06-10",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-4aa175c42153e014",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4baef0e41cbd7ae2",
+      "object_type": "entity",
+      "event_id": "EV-4a3cb762183581cd",
+      "claim_refs": [
+        "CL-b487cc8855f09bf4",
+        "CL-5b9c208e3329948f",
+        "CL-a0bae28c89384d4f",
+        "CL-c2d89368f69456e3"
+      ],
+      "source_refs": [
+        "SA-b6f2cdfb3b2eff0e"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Live Translate",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Live Translate",
+      "eventTitle": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b487cc8855f09bf4",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。"
+        },
+        {
+          "id": "CL-5b9c208e3329948f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 可自动识别 70 多种语言，并生成流畅、自然的翻译语音，同时保留说话者的语调、语速和音高 。"
+        },
+        {
+          "id": "CL-a0bae28c89384d4f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "根据介绍，传统轮流式系统通常要等说话者说完后才开始翻译，Gemini 3.5 Live Translate 则会连续生成语音，在“等待更多上下文以提升翻译质量”和“即时翻译以跟上说话者节奏”之间取得平衡。"
+        },
+        {
+          "id": "CL-c2d89368f69456e3",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 今起陆续登陆谷歌产品："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b6f2cdfb3b2eff0e",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/143.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。",
+      "event": {
+        "id": "EV-4a3cb762183581cd",
+        "title": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-10",
+        "eventTypeLabel": "模型发布"
       }
     },
     {

@@ -1,0 +1,294 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-084",
+  "title": "Prompt Engineering vs Loop Engineering vs Graph Engineering：三层控制单元的区别",
+  "title_zh": "Prompt Engineering vs Loop Engineering vs Graph Engineering：三层控制单元的区别",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.marktechpost.com/2026/07/29/prompt-engineering-vs-loop-engineering-vs-graph-engineering-what-changes-at-each-layer",
+  "canonical_url": "https://marktechpost.com/2026/07/29/prompt-engineering-vs-loop-engineering-vs-graph-engineering-what-changes-at-each-layer",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "research_or_report",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-29T19:30:35.000Z",
+  "collected_at": "2026-07-30T03:09:03.133Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nContext Engineering\nGenerative AI\nLanguage Model\nMachine Learning\nSoftware Engineering\nStaff\nUncategorized\nThree terms now compete for the same line in AI engineering job descriptions. Prompt engineering is the established one. Loop engineering entered the AI vocabulary in late 2025 and dominated developer discussion through June 2026. Graph engineering followed roughly six weeks later.\nThey get used interchangeably. Should they be?\nThe three are not competing techniques. They are three different units of control , stacked. A prompt controls one model response. A loop controls one agent’s behavior cycle. A graph controls the organization of many agents. Each layer preserves the layer beneath it. A prompt does not disappear once a loop is built around it. it stops being the thing typed by hand.\nThis article separates the three: what gets designed at each layer, what the published claim says about when the higher layers pay for themselves, and where the skepticism is warranted.\nThe stack, in order\nEach step in the progression was named in practice before it appeared in vendor documentation.\nPrompt engineering covers writing and structuring the instruction for a single call. Anthropic’s guidance is to separate a system prompt into labeled sections — background information, instructions, tool guidance, output description — delineated with XML tags or Markdown headers. The recommendation is to supply the minimal set of information that fully specifies the expected behavior. Minimal does not mean short.\nContext engineering came next. Anthropic describes it as the natural progression of prompt engineering. The question moves from finding the right words to deciding what configuration of tokens belongs in the window at all. Context is a finite resource, and the engineering problem is optimizing the utility of those tokens against model constraints.\nHarness engineering covers the environment a single agent runs inside: files, tools, memory, feedback.\nLoop engineering sits one floor above the harness. A June 2026 arXiv paper on agentic AI in building engineering, Buildrix , sets out the same four-step progression explicitly — prompt, then context, then harness, then loop — with the final layer defining how a system repeatedly observes, acts, verifies and recovers.\nGraph engineering is the newest label and the least settled. One enterprise writeup notes that the term’s provenance is unresolved and that it collides with an older knowledge-graph usage of the same word. The underlying practice, graph-based orchestration, has a documented lineage in multi-agent systems research.\nLayer 1: Prompt Engineering\nThe defining assumption is that a human is present at every iteration. A prompt is written, the model responds, the output is judged, the prompt is revised.\nThat assumption is what breaks. High volume. Multi-step tasks. No human available to grade the output. Results that feed the next step automatically. Any one of these, and the prompt alone stops being sufficient.\nNothing about the prompt got worse. The surrounding conditions changed.\nPrompt engineering also does not vanish inside the higher layers. Anthropic’s multi-agent research writeup reports that prompt engineering was the primary lever for fixing coordination failures. Early versions spawned 50 subagents for simple queries, and the fix was prompting rather than topology.\nLayer 2: loop engineering\nThe framing is that a coding agent is a brute-force tool for finding solutions. The craft is designing the goal, the tools and the loop and not only the prompt.\nThe term reached mainstream developer discussion in June 2026, after a widely shared post argued that engineers should stop prompting coding agents and start designing the loops that prompt them. The Claude Code team at Anthropic described the same shift on stage that week.\nThe most detailed public breakdown identifies five primitives, plus a sixth element that holds them together:\nAutomations : a schedule or event that performs discovery and triage without supervision\nWorktrees : isolation so parallel agents cannot edit the same files\nSkills : project knowledge written down once in a SKILL.md , rather than re-explained every session\nPlugins and connectors : MCP-based access to the issue tracker, database or staging API\nSub-agents : a maker/checker split, since the model that wrote the code grades it too generously\nState : a markdown file or board outside the conversation, because the model forgets between runs\nTwo in-session features are very important. /loop re-runs on a cadence. /goal runs until a written condition is actually true, with a separate small model checking after each turn — so the agent that wrote the code is not the agent grading it. Both Claude Code and the Codex app ship equivalents.\nThe cycle is not the hard part. The stop condition is. A loop that cannot mechanically distinguish done from stuck does not fail loudly. It keeps spending tokens.\nLayer 3: graph engineering\nIn July 2026 the discussion moved from loops to graphs. Loops made agent behavior programmable. Graphs make agent organizations programmable.\nThe structural point most often missed is that production multi-agent systems run two graphs at once .\nThe org graph is stable. Long-lived agents hold named roles, own a zone, and accumulate context over time. It changes on redeploy.\nThe work graph is ephemeral. Task nodes exist only while the work does. Edges split for parallel paths, merge on convergence, and disappear when evidence makes a branch unnecessary.\nThe org graph answers who . The work graph answers what, right now .\nThe skepticism around the label is fair. Sub-agents with a defined purpose already form a graph, and the technology preceded the vocabulary. LangGraph shipped its graph API long before the term existed. Anthropic’s five workflow patterns from December 2024 — prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer — are graph topologies described in prose. What is new is a shared name for decisions those frameworks always forced: what are the nodes, what are the edges, what is in the state.\nThe concrete artifact is worth knowing. In LangGraph a StateGraph is declared over a state schema. Nodes register with add_node . Edges wire up with add_edge and add_conditional_edges . START and END are marked, then the graph compiles. Nodes are plain functions that receive state and return partial updates. Context does not cross a node boundary unless an edge carries it. That last part describes the entire failure mode.\nHow to choose the layer\nWork through the questions in order. The first “no” is usually the answer.\nDoes a person read every output before anything acts on it? If yes, the prompt layer is sufficient. A loop buys unsupervised execution, not autonomy.\nCan “done” be checked by something other than a human? Tests, a schema, a rubric, a second model. If not, there is no stop condition — only a budget.\nDoes the task fit inside one agent’s context and one domain? If yes, build the loop. A single reasoning trace is the cheapest way to keep assumptions consistent.\nDo independent branches need to run at the same time? If yes, this is a graph problem: declare the nodes, the edges, the shared state and the failure routes. If no, extend the loop’s tools before adding agents.\nA July 2026 arXiv paper on coding-agent loops states the relationship correctly. A loop is a prompt repeated with scaffolding around it, and loop engineering is complementary to prompt engineering rather than its replacement. The same holds one floor up. Graphs are built from loops, and loops are built from prompts.\nThe final caution is about the operator rather than the architecture. Two engineers can build an identical loop and get opposite outcomes. One moves faster on work they understand deeply. The other avoids understanding the work at all. The system cannot tell the difference. That is what makes the higher layers harder to design than prompts, not easier.\nKey Takeaways\nThree units of control, not three competing methods: a prompt controls one response, a loop controls one agent’s cycle, a graph controls the organization of many agents.\nA loop is only as good as its stop condition — without a mechanical check for “done,” an unattended run terminates on token budget rather than correctness.\nTwo graphs run simultaneously in production: a stable org graph answering who owns what , and a per-task work graph that splits, merges and cancels as evidence arrives.\nPublished numbers set the price: +90.2% on an internal research eval, but roughly 15× the tokens of a chat, with token spend alone explaining 80% of the variance.\nMost tasks never reach the top of the stack : the counter-case stands for writing-heavy work, where dispersed decisions produce conflicting assumptions.\nSources\nanthropic.com/engineering — Effective context engineering for AI agents\nanthropic.com/engineering — Building effective agents (Dec 2024)\nanthropic.com/engineering — How we built our multi-agent research system (13 Jun 2025)\nsimonwillison.net — Designing agentic loops (30 Sep 2025)\naddyosmani.com — Loop Engineering (7 Jun 2026)\nfirecrawl.dev — Loop Engineering\nexplainx.ai — Graph Engineering (18 Jul 2026)\ntruefoundry.com — Graph Engineering for Multi-Agent Systems\naibuilderclub.com — Graph Engineering Guide 2026\ncognition.com — Don’t Build Multi-Agents (Jun 2025)\nlangchain.com — How and when to build multi-agent systems\ndocs.langchain.com — LangGraph Graph API\narXiv — Buildrix · Stop Hand-Holding Your Coding Agent\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nLiquid AI Releases LFM2.5-Encoder-230M and LFM2.5-Encoder-350M: Bidirectional Encoders That Stay Fast at 8K Context on CPU\nAsif Razzaq\nMicrosoft AI Releases MAI-Cyber-1-Flash: A 5B-Active-Parameter Cyber Model That Pushes MDASH to 95.95% on CyberGym\nAsif Razzaq\nKimi AI and kvcache-ai Open Sources ‘AgentENV’: A Distributed System that Powers Agentic Reinforcement Learning (RL) Training for Kimi K3\nAsif Razzaq\nSakana AI Releases Fugu-Cyber: An Orchestration Model Reporting 86.9% on CyberGym and 72.1% on CTI-REALM",
+  "clean_text": "Editors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nContext Engineering\nGenerative AI\nLanguage Model\nMachine Learning\nSoftware Engineering\nStaff\nUncategorized\nThree terms now compete for the same line in AI engineering job descriptions. Prompt engineering is the established one. Loop engineering entered the AI vocabulary in late 2025 and dominated developer discussion through June 2026. Graph engineering followed roughly six weeks later.\nThey get used interchangeably. Should they be?\nThe three are not competing techniques. They are three different units of control , stacked. A prompt controls one model response. A loop controls one agent’s behavior cycle. A graph controls the organization of many agents. Each layer preserves the layer beneath it. A prompt does not disappear once a loop is built around it. it stops being the thing typed by hand.\nThis article separates the three: what gets designed at each layer, what the published claim says about when the higher layers pay for themselves, and where the skepticism is warranted.\nThe stack, in order\nEach step in the progression was named in practice before it appeared in vendor documentation.\nPrompt engineering covers writing and structuring the instruction for a single call. Anthropic’s guidance is to separate a system prompt into labeled sections — background information, instructions, tool guidance, output description — delineated with XML tags or Markdown headers. The recommendation is to supply the minimal set of information that fully specifies the expected behavior. Minimal does not mean short.\nContext engineering came next. Anthropic describes it as the natural progression of prompt engineering. The question moves from finding the right words to deciding what configuration of tokens belongs in the window at all. Context is a finite resource, and the engineering problem is optimizing the utility of those tokens against model constraints.\nHarness engineering covers the environment a single agent runs inside: files, tools, memory, feedback.\nLoop engineering sits one floor above the harness. A June 2026 arXiv paper on agentic AI in building engineering, Buildrix , sets out the same four-step progression explicitly — prompt, then context, then harness, then loop — with the final layer defining how a system repeatedly observes, acts, verifies and recovers.\nGraph engineering is the newest label and the least settled. One enterprise writeup notes that the term’s provenance is unresolved and that it collides with an older knowledge-graph usage of the same word. The underlying practice, graph-based orchestration, has a documented lineage in multi-agent systems research.\nLayer 1: Prompt Engineering\nThe defining assumption is that a human is present at every iteration. A prompt is written, the model responds, the output is judged, the prompt is revised.\nThat assumption is what breaks. High volume. Multi-step tasks. No human available to grade the output. Results that feed the next step automatically. Any one of these, and the prompt alone stops being sufficient.\nNothing about the prompt got worse. The surrounding conditions changed.\nPrompt engineering also does not vanish inside the higher layers. Anthropic’s multi-agent research writeup reports that prompt engineering was the primary lever for fixing coordination failures. Early versions spawned 50 subagents for simple queries, and the fix was prompting rather than topology.\nLayer 2: loop engineering\nThe framing is that a coding agent is a brute-force tool for finding solutions. The craft is designing the goal, the tools and the loop and not only the prompt.\nThe term reached mainstream developer discussion in June 2026, after a widely shared post argued that engineers should stop prompting coding agents and start designing the loops that prompt them. The Claude Code team at Anthropic described the same shift on stage that week.\nThe most detailed public breakdown identifies five primitives, plus a sixth element that holds them together:\nAutomations : a schedule or event that performs discovery and triage without supervision\nWorktrees : isolation so parallel agents cannot edit the same files\nSkills : project knowledge written down once in a SKILL.md , rather than re-explained every session\nPlugins and connectors : MCP-based access to the issue tracker, database or staging API\nSub-agents : a maker/checker split, since the model that wrote the code grades it too generously\nState : a markdown file or board outside the conversation, because the model forgets between runs\nTwo in-session features are very important. /loop re-runs on a cadence. /goal runs until a written condition is actually true, with a separate small model checking after each turn — so the agent that wrote the code is not the agent grading it. Both Claude Code and the Codex app ship equivalents.\nThe cycle is not the hard part. The stop condition is. A loop that cannot mechanically distinguish done from stuck does not fail loudly. It keeps spending tokens.\nLayer 3: graph engineering\nIn July 2026 the discussion moved from loops to graphs. Loops made agent behavior programmable. Graphs make agent organizations programmable.\nThe structural point most often missed is that production multi-agent systems run two graphs at once .\nThe org graph is stable. Long-lived agents hold named roles, own a zone, and accumulate context over time. It changes on redeploy.\nThe work graph is ephemeral. Task nodes exist only while the work does. Edges split for parallel paths, merge on convergence, and disappear when evidence makes a branch unnecessary.\nThe org graph answers who . The work graph answers what, right now .\nThe skepticism around the label is fair. Sub-agents with a defined purpose already form a graph, and the technology preceded the vocabulary. LangGraph shipped its graph API long before the term existed. Anthropic’s five workflow patterns from December 2024 — prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer — are graph topologies described in prose. What is new is a shared name for decisions those frameworks always forced: what are the nodes, what are the edges, what is in the state.\nThe concrete artifact is worth knowing. In LangGraph a StateGraph is declared over a state schema. Nodes register with add_node . Edges wire up with add_edge and add_conditional_edges . START and END are marked, then the graph compiles. Nodes are plain functions that receive state and return partial updates. Context does not cross a node boundary unless an edge carries it. That last part describes the entire failure mode.\nHow to choose the layer\nWork through the questions in order. The first “no” is usually the answer.\nDoes a person read every output before anything acts on it? If yes, the prompt layer is sufficient. A loop buys unsupervised execution, not autonomy.\nCan “done” be checked by something other than a human? Tests, a schema, a rubric, a second model. If not, there is no stop condition — only a budget.\nDoes the task fit inside one agent’s context and one domain? If yes, build the loop. A single reasoning trace is the cheapest way to keep assumptions consistent.\nDo independent branches need to run at the same time? If yes, this is a graph problem: declare the nodes, the edges, the shared state and the failure routes. If no, extend the loop’s tools before adding agents.\nA July 2026 arXiv paper on coding-agent loops states the relationship correctly. A loop is a prompt repeated with scaffolding around it, and loop engineering is complementary to prompt engineering rather than its replacement. The same holds one floor up. Graphs are built from loops, and loops are built from prompts.\nThe final caution is about the operator rather than the architecture. Two engineers can build an identical loop and get opposite outcomes. One moves faster on work they understand deeply. The other avoids understanding the work at all. The system cannot tell the difference. That is what makes the higher layers harder to design than prompts, not easier.\nKey Takeaways\nThree units of control, not three competing methods: a prompt controls one response, a loop controls one agent’s cycle, a graph controls the organization of many agents.\nA loop is only as good as its stop condition — without a mechanical check for “done,” an unattended run terminates on token budget rather than correctness.\nTwo graphs run simultaneously in production: a stable org graph answering who owns what , and a per-task work graph that splits, merges and cancels as evidence arrives.\nPublished numbers set the price: +90.2% on an internal research eval, but roughly 15× the tokens of a chat, with token spend alone explaining 80% of the variance.\nMost tasks never reach the top of the stack : the counter-case stands for writing-heavy work, where dispersed decisions produce conflicting assumptions.\nSources\nanthropic.com/engineering — Effective context engineering for AI agents\nanthropic.com/engineering — Building effective agents (Dec 2024)\nanthropic.com/engineering — How we built our multi-agent research system (13 Jun 2025)\nsimonwillison.net — Designing agentic loops (30 Sep 2025)\naddyosmani.com — Loop Engineering (7 Jun 2026)\nfirecrawl.dev — Loop Engineering\nexplainx.ai — Graph Engineering (18 Jul 2026)\ntruefoundry.com — Graph Engineering for Multi-Agent Systems\naibuilderclub.com — Graph Engineering Guide 2026\ncognition.com — Don’t Build Multi-Agents (Jun 2025)\nlangchain.com — How and when to build multi-agent systems\ndocs.langchain.com — LangGraph Graph API\narXiv — Buildrix · Stop Hand-Holding Your Coding Agent\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nLiquid AI Releases LFM2.5-Encoder-230M and LFM2.5-Encoder-350M: Bidirectional Encoders That Stay Fast at 8K Context on CPU\nAsif Razzaq\nMicrosoft AI Releases MAI-Cyber-1-Flash: A 5B-Active-Parameter Cyber Model That Pushes MDASH to 95.95% on CyberGym\nAsif Razzaq\nKimi AI and kvcache-ai Open Sources ‘AgentENV’: A Distributed System that Powers Agentic Reinforcement Learning (RL) Training for Kimi K3\nAsif Razzaq\nSakana AI Releases Fugu-Cyber: An Orchestration Model Reporting 86.9% on CyberGym and 72.1% on CTI-REALM",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-084-prompt-engineering-vs-loop-engineering-vs-graph-engineering-三层控制单元的区别.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-084-prompt-engineering-vs-loop-engineering-vs-graph-engineering-三层控制单元的区别.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 10754,
+    "paragraph_count": 69,
+    "sentence_count": 113,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0005,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 10754,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "39460bf9ecc962f0",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Prompt Engineering vs Loop Engineering vs Graph Engineering：三层控制单元的区别",
+    "discovery_summary": "Prompt engineering、loop engineering 和 graph engineering 是三个不同层级的控制单元，分别控制单次模型响应、单个智能体行为循环和多个智能体组织。高层级在跨领域并行分支、可机器验证的重复任务中才体现价值，而 prompt engineering 在协调失败时仍是主要修复手段。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/29/prompt-engineering-vs-loop-engineering-vs-graph-engineering-what-changes-at-each-layer",
+    "discovered_at": "2026-07-30T02:58:16.855Z",
+    "rank_on_page": 133,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "af1aa632b90176a9",
+  "content_hash": "39460bf9ecc962f0",
+  "full_text_hash": "39460bf9ecc962f0",
+  "semantic_hash": "5972ce7bbced0ae3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-29T19:30:35.000Z",
+  "last_seen_at": "2026-07-30T03:09:03.133Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Prompt engineering、loop engineering 和 graph engineering 是三个不同层级的控制单元，分别控制单次模型响应、单个智能体行为循环和多个智能体组织。高层级在跨领域并行分支、可机器验证的重复任务中才体现价值，而 prompt engineering 在协调失败时仍是主要修复手段。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications Context Engineering Generative AI Language Model Machine Learning Software Engineering Staff Uncategorized Three terms now compete for the same line in AI engineering job descriptions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Prompt engineering is the established one.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Loop engineering entered the AI vocabulary in late 2025 and dominated developer discussion through June 2026.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Graph engineering followed roughly six weeks later.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "They get used interchangeably.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-30T03:09:03.133Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "Anthropic",
+      "Microsoft"
+    ],
+    "products": [
+      "Agents",
+      "agent",
+      "agents",
+      "Claude",
+      "MCP",
+      "Codex",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2025",
+      "2026",
+      "1",
+      "50",
+      "2",
+      "3",
+      "2024",
+      "90.2%"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Prompt engineering、loop engineering 和 graph engineering 是三个不同层级的控制单元，分别控制单次模型响应、单个智能体行为循环和多个智能体组织。高层级在跨领域并行分支、可机器验证的重复任务中才体现价值，而 prompt engineering 在协调失败时仍是主要修复手段。",
+      "Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications Context Engineering Generative AI Language Model Machine Learning Software Engineering Staff Uncategorized Three terms now compete for the same line in AI engineering job descriptions.",
+      "Prompt engineering is the established one."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Prompt Engineering vs Loop Engineering vs Graph Engineering：三层控制单元的区别\n\n- raw_id: R-084\n- title_zh: Prompt Engineering vs Loop Engineering vs Graph Engineering：三层控制单元的区别\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/29/prompt-engineering-vs-loop-engineering-vs-graph-engineering-what-changes-at-each-layer\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-30T03:09:03.133Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nContext Engineering\nGenerative AI\nLanguage Model\nMachine Learning\nSoftware Engineering\nStaff\nUncategorized\nThree terms now compete for the same line in AI engineering job descriptions. Prompt engineering is the established one. Loop engineering entered the AI vocabulary in late 2025 and dominated developer discussion through June 2026. Graph engineering followed roughly six weeks later.\nThey get used interchangeably. Should they be?\nThe three are not competing techniques. They are three different units of control , stacked. A prompt controls one model response. A loop controls one agent’s behavior cycle. A graph controls the organization of many agents. Each layer preserves the layer beneath it. A prompt does not disappear once a loop is built around it. it stops being the thing typed by hand.\nThis article separates the three: what gets designed at each layer, what the published claim says about when the higher layers pay for themselves, and where the skepticism is warranted.\nThe stack, in order\nEach step in the progression was named in practice before it appeared in vendor documentation.\nPrompt engineering covers writing and structuring the instruction for a single call. Anthropic’s guidance is to separate a system prompt into labeled sections — background information, instructions, tool guidance, output description — delineated with XML tags or Markdown headers. The recommendation is to supply the minimal set of information that fully specifies the expected behavior. Minimal does not mean short.\nContext engineering came next. Anthropic describes it as the natural progression of prompt engineering. The question moves from finding the right words to deciding what configuration of tokens belongs in the window at all. Context is a finite resource, and the engineering problem is optimizing the utility of those tokens against model constraints.\nHarness engineering covers the environment a single agent runs inside: files, tools, memory, feedback.\nLoop engineering sits one floor above the harness. A June 2026 arXiv paper on agentic AI in building engineering, Buildrix , sets out the same four-step progression explicitly — prompt, then context, then harness, then loop — with the final layer defining how a system repeatedly observes, acts, verifies and recovers.\nGraph engineering is the newest label and the least settled. One enterprise writeup notes that the term’s provenance is unresolved and that it collides with an older knowledge-graph usage of the same word. The underlying practice, graph-based orchestration, has a documented lineage in multi-agent systems research.\nLayer 1: Prompt Engineering\nThe defining assumption is that a human is present at every iteration. A prompt is written, the model responds, the output is judged, the prompt is revised.\nThat assumption is what breaks. High volume. Multi-step tasks. No human available to grade the output. Results that feed the next step automatically. Any one of these, and the prompt alone stops being sufficient.\nNothing about the prompt got worse. The surrounding conditions changed.\nPrompt engineering also does not vanish inside the higher layers. Anthropic’s multi-agent research writeup reports that prompt engineering was the primary lever for fixing coordination failures. Early versions spawned 50 subagents for simple queries, and the fix was prompting rather than topology.\nLayer 2: loop engineering\nThe framing is that a coding agent is a brute-force tool for finding solutions. The craft is designing the goal, the tools and the loop and not only the prompt.\nThe term reached mainstream developer discussion in June 2026, after a widely shared post argued that engineers should stop prompting coding agents and start designing the loops that prompt them. The Claude Code team at Anthropic described the same shift on stage that week.\nThe most detailed public breakdown identifies five primitives, plus a sixth element that holds them together:\nAutomations : a schedule or event that performs discovery and triage without supervision\nWorktrees : isolation so parallel agents cannot edit the same files\nSkills : project knowledge written down once in a SKILL.md , rather than re-explained every session\nPlugins and connectors : MCP-based access to the issue tracker, database or staging API\nSub-agents : a maker/checker split, since the model that wrote the code grades it too generously\nState : a markdown file or board outside the conversation, because the model forgets between runs\nTwo in-session features are very important. /loop re-runs on a cadence. /goal runs until a written condition is actually true, with a separate small model checking after each turn — so the agent that wrote the code is not the agent grading it. Both Claude Code and the Codex app ship equivalents.\nThe cycle is not the hard part. The stop condition is. A loop that cannot mechanically distinguish done from stuck does not fail loudly. It keeps spending tokens.\nLayer 3: graph engineering\nIn July 2026 the discussion moved from loops to graphs. Loops made agent behavior programmable. Graphs make agent organizations programmable.\nThe structural point most often missed is that production multi-agent systems run two graphs at once .\nThe org graph is stable. Long-lived agents hold named roles, own a zone, and accumulate context over time. It changes on redeploy.\nThe work graph is ephemeral. Task nodes exist only while the work does. Edges split for parallel paths, merge on convergence, and disappear when evidence makes a branch unnecessary.\nThe org graph answers who . The work graph answers what, right now .\nThe skepticism around the label is fair. Sub-agents with a defined purpose already form a graph, and the technology preceded the vocabulary. LangGraph shipped its graph API long before the term existed. Anthropic’s five workflow patterns from December 2024 — prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer — are graph topologies described in prose. What is new is a shared name for decisions those frameworks always forced: what are the nodes, what are the edges, what is in the state.\nThe concrete artifact is worth knowing. In LangGraph a StateGraph is declared over a state schema. Nodes register with add_node . Edges wire up with add_edge and add_conditional_edges . START and END are marked, then the graph compiles. Nodes are plain functions that receive state and return partial updates. Context does not cross a node boundary unless an edge carries it. That last part describes the entire failure mode.\nHow to choose the layer\nWork through the questions in order. The first “no” is usually the answer.\nDoes a person read every output before anything acts on it? If yes, the prompt layer is sufficient. A loop buys unsupervised execution, not autonomy.\nCan “done” be checked by something other than a human? Tests, a schema, a rubric, a second model. If not, there is no stop condition — only a budget.\nDoes the task fit inside one agent’s context and one domain? If yes, build the loop. A single reasoning trace is the cheapest way to keep assumptions consistent.\nDo independent branches need to run at the same time? If yes, this is a graph problem: declare the nodes, the edges, the shared state and the failure routes. If no, extend the loop’s tools before adding agents.\nA July 2026 arXiv paper on coding-agent loops states the relationship correctly. A loop is a prompt repeated with scaffolding around it, and loop engineering is complementary to prompt engineering rather than its replacement. The same holds one floor up. Graphs are built from loops, and loops are built from prompts.\nThe final caution is about the operator rather than the architecture. Two engineers can build an identical loop and get opposite outcomes. One moves faster on work they understand deeply. The other avoids understanding the work at all. The system cannot tell the difference. That is what makes the higher layers harder to design than prompts, not easier.\nKey Takeaways\nThree units of control, not three competing methods: a prompt controls one response, a loop controls one agent’s cycle, a graph controls the organization of many agents.\nA loop is only as good as its stop condition — without a mechanical check for “done,” an unattended run terminates on token budget rather than correctness.\nTwo graphs run simultaneously in production: a stable org graph answering who owns what , and a per-task work graph that splits, merges and cancels as evidence arrives.\nPublished numbers set the price: +90.2% on an internal research eval, but roughly 15× the tokens of a chat, with token spend alone explaining 80% of the variance.\nMost tasks never reach the top of the stack : the counter-case stands for writing-heavy work, where dispersed decisions produce conflicting assumptions.\nSources\nanthropic.com/engineering — Effective context engineering for AI agents\nanthropic.com/engineering — Building effective agents (Dec 2024)\nanthropic.com/engineering — How we built our multi-agent research system (13 Jun 2025)\nsimonwillison.net — Designing agentic loops (30 Sep 2025)\naddyosmani.com — Loop Engineering (7 Jun 2026)\nfirecrawl.dev — Loop Engineering\nexplainx.ai — Graph Engineering (18 Jul 2026)\ntruefoundry.com — Graph Engineering for Multi-Agent Systems\naibuilderclub.com — Graph Engineering Guide 2026\ncognition.com — Don’t Build Multi-Agents (Jun 2025)\nlangchain.com — How and when to build multi-agent systems\ndocs.langchain.com — LangGraph Graph API\narXiv — Buildrix · Stop Hand-Holding Your Coding Agent\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nLiquid AI Releases LFM2.5-Encoder-230M and LFM2.5-Encoder-350M: Bidirectional Encoders That Stay Fast at 8K Context on CPU\nAsif Razzaq\nMicrosoft AI Releases MAI-Cyber-1-Flash: A 5B-Active-Parameter Cyber Model That Pushes MDASH to 95.95% on CyberGym\nAsif Razzaq\nKimi AI and kvcache-ai Open Sources ‘AgentENV’: A Distributed System that Powers Agentic Reinforcement Learning (RL) Training for Kimi K3\nAsif Razzaq\nSakana AI Releases Fugu-Cyber: An Orchestration Model Reporting 86.9% on CyberGym and 72.1% on CTI-REALM\n\n## full_text\n\nEditors Pick\nAgentic AI\nAI Agents\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nContext Engineering\nGenerative AI\nLanguage Model\nMachine Learning\nSoftware Engineering\nStaff\nUncategorized\nThree terms now compete for the same line in AI engineering job descriptions. Prompt engineering is the established one. Loop engineering entered the AI vocabulary in late 2025 and dominated developer discussion through June 2026. Graph engineering followed roughly six weeks later.\nThey get used interchangeably. Should they be?\nThe three are not competing techniques. They are three different units of control , stacked. A prompt controls one model response. A loop controls one agent’s behavior cycle. A graph controls the organization of many agents. Each layer preserves the layer beneath it. A prompt does not disappear once a loop is built around it. it stops being the thing typed by hand.\nThis article separates the three: what gets designed at each layer, what the published claim says about when the higher layers pay for themselves, and where the skepticism is warranted.\nThe stack, in order\nEach step in the progression was named in practice before it appeared in vendor documentation.\nPrompt engineering covers writing and structuring the instruction for a single call. Anthropic’s guidance is to separate a system prompt into labeled sections — background information, instructions, tool guidance, output description — delineated with XML tags or Markdown headers. The recommendation is to supply the minimal set of information that fully specifies the expected behavior. Minimal does not mean short.\nContext engineering came next. Anthropic describes it as the natural progression of prompt engineering. The question moves from finding the right words to deciding what configuration of tokens belongs in the window at all. Context is a finite resource, and the engineering problem is optimizing the utility of those tokens against model constraints.\nHarness engineering covers the environment a single agent runs inside: files, tools, memory, feedback.\nLoop engineering sits one floor above the harness. A June 2026 arXiv paper on agentic AI in building engineering, Buildrix , sets out the same four-step progression explicitly — prompt, then context, then harness, then loop — with the final layer defining how a system repeatedly observes, acts, verifies and recovers.\nGraph engineering is the newest label and the least settled. One enterprise writeup notes that the term’s provenance is unresolved and that it collides with an older knowledge-graph usage of the same word. The underlying practice, graph-based orchestration, has a documented lineage in multi-agent systems research.\nLayer 1: Prompt Engineering\nThe defining assumption is that a human is present at every iteration. A prompt is written, the model responds, the output is judged, the prompt is revised.\nThat assumption is what breaks. High volume. Multi-step tasks. No human available to grade the output. Results that feed the next step automatically. Any one of these, and the prompt alone stops being sufficient.\nNothing about the prompt got worse. The surrounding conditions changed.\nPrompt engineering also does not vanish inside the higher layers. Anthropic’s multi-agent research writeup reports that prompt engineering was the primary lever for fixing coordination failures. Early versions spawned 50 subagents for simple queries, and the fix was prompting rather than topology.\nLayer 2: loop engineering\nThe framing is that a coding agent is a brute-force tool for finding solutions. The craft is designing the goal, the tools and the loop and not only the prompt.\nThe term reached mainstream developer discussion in June 2026, after a widely shared post argued that engineers should stop prompting coding agents and start designing the loops that prompt them. The Claude Code team at Anthropic described the same shift on stage that week.\nThe most detailed public breakdown identifies five primitives, plus a sixth element that holds them together:\nAutomations : a schedule or event that performs discovery and triage without supervision\nWorktrees : isolation so parallel agents cannot edit the same files\nSkills : project knowledge written down once in a SKILL.md , rather than re-explained every session\nPlugins and connectors : MCP-based access to the issue tracker, database or staging API\nSub-agents : a maker/checker split, since the model that wrote the code grades it too generously\nState : a markdown file or board outside the conversation, because the model forgets between runs\nTwo in-session features are very important. /loop re-runs on a cadence. /goal runs until a written condition is actually true, with a separate small model checking after each turn — so the agent that wrote the code is not the agent grading it. Both Claude Code and the Codex app ship equivalents.\nThe cycle is not the hard part. The stop condition is. A loop that cannot mechanically distinguish done from stuck does not fail loudly. It keeps spending tokens.\nLayer 3: graph engineering\nIn July 2026 the discussion moved from loops to graphs. Loops made agent behavior programmable. Graphs make agent organizations programmable.\nThe structural point most often missed is that production multi-agent systems run two graphs at once .\nThe org graph is stable. Long-lived agents hold named roles, own a zone, and accumulate context over time. It changes on redeploy.\nThe work graph is ephemeral. Task nodes exist only while the work does. Edges split for parallel paths, merge on convergence, and disappear when evidence makes a branch unnecessary.\nThe org graph answers who . The work graph answers what, right now .\nThe skepticism around the label is fair. Sub-agents with a defined purpose already form a graph, and the technology preceded the vocabulary. LangGraph shipped its graph API long before the term existed. Anthropic’s five workflow patterns from December 2024 — prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer — are graph topologies described in prose. What is new is a shared name for decisions those frameworks always forced: what are the nodes, what are the edges, what is in the state.\nThe concrete artifact is worth knowing. In LangGraph a StateGraph is declared over a state schema. Nodes register with add_node . Edges wire up with add_edge and add_conditional_edges . START and END are marked, then the graph compiles. Nodes are plain functions that receive state and return partial updates. Context does not cross a node boundary unless an edge carries it. That last part describes the entire failure mode.\nHow to choose the layer\nWork through the questions in order. The first “no” is usually the answer.\nDoes a person read every output before anything acts on it? If yes, the prompt layer is sufficient. A loop buys unsupervised execution, not autonomy.\nCan “done” be checked by something other than a human? Tests, a schema, a rubric, a second model. If not, there is no stop condition — only a budget.\nDoes the task fit inside one agent’s context and one domain? If yes, build the loop. A single reasoning trace is the cheapest way to keep assumptions consistent.\nDo independent branches need to run at the same time? If yes, this is a graph problem: declare the nodes, the edges, the shared state and the failure routes. If no, extend the loop’s tools before adding agents.\nA July 2026 arXiv paper on coding-agent loops states the relationship correctly. A loop is a prompt repeated with scaffolding around it, and loop engineering is complementary to prompt engineering rather than its replacement. The same holds one floor up. Graphs are built from loops, and loops are built from prompts.\nThe final caution is about the operator rather than the architecture. Two engineers can build an identical loop and get opposite outcomes. One moves faster on work they understand deeply. The other avoids understanding the work at all. The system cannot tell the difference. That is what makes the higher layers harder to design than prompts, not easier.\nKey Takeaways\nThree units of control, not three competing methods: a prompt controls one response, a loop controls one agent’s cycle, a graph controls the organization of many agents.\nA loop is only as good as its stop condition — without a mechanical check for “done,” an unattended run terminates on token budget rather than correctness.\nTwo graphs run simultaneously in production: a stable org graph answering who owns what , and a per-task work graph that splits, merges and cancels as evidence arrives.\nPublished numbers set the price: +90.2% on an internal research eval, but roughly 15× the tokens of a chat, with token spend alone explaining 80% of the variance.\nMost tasks never reach the top of the stack : the counter-case stands for writing-heavy work, where dispersed decisions produce conflicting assumptions.\nSources\nanthropic.com/engineering — Effective context engineering for AI agents\nanthropic.com/engineering — Building effective agents (Dec 2024)\nanthropic.com/engineering — How we built our multi-agent research system (13 Jun 2025)\nsimonwillison.net — Designing agentic loops (30 Sep 2025)\naddyosmani.com — Loop Engineering (7 Jun 2026)\nfirecrawl.dev — Loop Engineering\nexplainx.ai — Graph Engineering (18 Jul 2026)\ntruefoundry.com — Graph Engineering for Multi-Agent Systems\naibuilderclub.com — Graph Engineering Guide 2026\ncognition.com — Don’t Build Multi-Agents (Jun 2025)\nlangchain.com — How and when to build multi-agent systems\ndocs.langchain.com — LangGraph Graph API\narXiv — Buildrix · Stop Hand-Holding Your Coding Agent\nAsif Razzaq\nWebsite | + posts Bio\nAsif Razzaq is the CEO of Marktechpost Media Inc.. As a visionary entrepreneur and engineer, Asif is committed to harnessing the potential of Artificial Intelligence for social good. His most recent endeavor is the launch of an Artificial Intelligence Media Platform, Marktechpost, which stands out for its in-depth coverage of machine learning and deep learning news that is both technically sound and easily understandable by a wide audience. The platform boasts of over 2 million monthly views, illustrating its popularity among audiences.\nAsif Razzaq\nLiquid AI Releases LFM2.5-Encoder-230M and LFM2.5-Encoder-350M: Bidirectional Encoders That Stay Fast at 8K Context on CPU\nAsif Razzaq\nMicrosoft AI Releases MAI-Cyber-1-Flash: A 5B-Active-Parameter Cyber Model That Pushes MDASH to 95.95% on CyberGym\nAsif Razzaq\nKimi AI and kvcache-ai Open Sources ‘AgentENV’: A Distributed System that Powers Agentic Reinforcement Learning (RL) Training for Kimi K3\nAsif Razzaq\nSakana AI Releases Fugu-Cyber: An Orchestration Model Reporting 86.9% on CyberGym and 72.1% on CTI-REALM\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Prompt engineering、loop engineering 和 graph engineering 是三个不同层级的控制单元，分别控制单次模型响应、单个智能体行为循环和多个智能体组织。高层级在跨领域并行分支、可机器验证的重复任务中才体现价值，而 prompt engineering 在协调失败时仍是主要修复手段。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications Context Engineering Generative AI Language Model Machine Learning Software Engineering Staff Uncategorized Three terms now compete for the same line in AI engineering job descriptions.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Prompt engineering is the established one.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Loop engineering entered the AI vocabulary in late 2025 and dominated developer discussion through June 2026.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Graph engineering followed roughly six weeks later.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] They get used interchangeably.\n"
+}

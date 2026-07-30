@@ -1,0 +1,290 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-079",
+  "title": "What FDE training should teach after the prompt works",
+  "title_zh": "提示词有效后，FDE 培训应教授的内容",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://techbullion.com/what-fde-training-should-teach-after-the-prompt-works/",
+  "canonical_url": "https://techbullion.com/what-fde-training-should-teach-after-the-prompt-works",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "fde_implementation",
+  "search_path_label": "Enterprise AI / FDE implementation path",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "production_rollout",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "2026-07-13T04:51:24.000Z",
+  "collected_at": "2026-07-30T03:08:58.733Z",
+  "language": "mixed",
+  "full_text": "TechBullion\nShare\nShare\nShare\nShare\nEmail\nAn AI prototype can look convincing long before a customer team can use it safely. That gap is where an AI FDE has to do real work. The role sits close to product, implementation, and the people who own the day-to-day process. A model response is only one part of the job. Someone still has to ask what the customer is trying to change, what data is available, who will review the result, and what happens when the answer is wrong.\nThe public AI FDE learning and assessment pages are structured around delivery work rather than a catalogue of model names. They cover discovery, scoping, architecture, prototype work, evaluation, production, rollout, and lessons that can be reused later. That sequence matches the uncomfortable middle of applied AI work, where a pilot either becomes part of a working process or quietly disappears.\nStart with the work, not the model\nThe homepage frames the learning path as a delivery loop. That is a sensible starting point. A field engineer can begin with a model only after the team has made a few earlier decisions: which workflow matters, whose work will change, where the boundary cases live, and what a useful result looks like.\nConsider a support team that wants help sorting incoming cases. A fast prototype can label a sample queue and produce tidy summaries. The harder questions arrive next. Does the system need to recommend a reply, route a case, or simply surface missing information? Can it use the ticket history? Who sees sensitive customer details? What should the team do when the confidence is low? Those choices alter the evaluation plan and the deployment design.\nThis is why a good training path should make room for scoping and handoff work. It should ask learners to explain trade-offs rather than simply produce a working prompt. The public AI FDE materials keep returning to that delivery rhythm. The wording is direct: move from the field problem through a prototype, test the output, then turn a successful approach into something a team can run and improve.\nThere is also a communication skill hiding inside that sequence. A customer may ask for “an AI agent” when what they need is a smaller, more reliable change to a familiar process. The engineer has to turn a broad request into a decision the team can inspect. A useful scoping note names the input, the expected output, the person who checks it, and the point at which the system should hand the work back. It is less exciting than a demo, but it makes later conversations much easier.\nTraining should give learners repeated chances to write those notes. They can compare two possible scopes, explain why one has a cleaner evaluation path, and identify what evidence would make them change their mind. That is a habit worth building. It helps a team avoid building a large interface around a question that has not been settled.\nThere is a limit worth keeping in view. A course can provide practice, vocabulary, and a shared way to talk about decisions. It cannot reproduce the pressure of a customer escalation or the responsibility of owning a production workflow. Learners still need supervised work and feedback from people who know the domain.\nUse scenarios to test judgment\nThe public exam page shows L1, L2, and L3 scenario assessments, with an 8/10 topic pass line. It also describes an AI mentor that can explain the reasoning behind an answer. That is more useful than a trivia-first format for this subject. A fde engineer often has to choose a next step while the available facts are incomplete.\nScenario questions can expose the difference between knowing a term and using it. In the support example, a learner might have to decide whether to test a classifier on historical cases, how to handle uncertain results, or when to keep a human reviewer in the loop. None of those questions has a magical answer. The quality comes from making assumptions visible and showing how the choice will be checked.\nThe level structure also gives a learner a way to separate basic understanding from operating-model work. The public page positions the later material around architecture, evaluation, adoption, and reusable practice. That is a better progression than treating every AI project as a prompt-writing exercise. A prototype can be useful, but a prototype with no evaluation plan has not earned trust yet.\nThe AI mentor is a useful addition if it explains why an answer fits the scenario. It should be treated as a study aid, though. A learner still needs to question the explanation, compare it with the case details, and recognise that a real customer environment may add constraints the question did not include.\nOne practical way to use this material is to pause before reading the explanation. Write down the decision, the evidence that would support it, and the consequence of being wrong. Then compare that note with the mentor’s explanation. The difference is often more useful than the score. It shows whether the learner missed a constraint, chose an evaluation method that cannot answer the question, or made an assumption without stating it.\nThat kind of review also teaches a healthy response to model output. An AI mentor can present a tidy explanation, but tidy language is not proof. The learner has to connect the answer back to a workflow and a test. The same discipline carries into customer work, where a plausible prototype can still fail the moment an unusual case enters the queue.\nMake completion easy to verify\nThe certificate page adds a public certificate-ID lookup, published L1, L2, and L3 standards, and a sample credential. That is practical for a learning programme. It gives a hiring manager, team lead, or learner a way to check that a record exists without relying on a screenshot of a badge.\nVerification does not prove that someone will succeed in every deployment. It does something narrower: it confirms a record and shows the level framework behind it. That distinction matters. The site describes its credential as an independent community credential, rather than an official certification from an AI lab or employer. The boundary is clear on the public pages and should remain clear when the credential is shared.\nFor people moving into applied AI delivery, the strongest evidence will usually combine several things: scenario work, project outcomes, references from the teams involved, and a record that another person can verify. AI FDE covers the scenario and verification parts of that picture. The rest still comes from the work itself.\nThat is a reasonable place to set expectations. A learner can use the programme to practise how delivery choices fit together and to earn a record that others can look up. A team evaluating a candidate should still ask for examples of problem framing, evaluation, and communication with the people affected by the change. The combination is more informative than any single score or credential.\nRelated Items: FDE training , prompt works\nShare\nShare\nShare\nShare\nEmail\nComments\nTrending Stories\n1.4K\nBusiness news\nBuy Bitcoin with USDT: A Smart Crypto Trading Guide\nBitcoin remains the world’s most recognized cryptocurrency, attracting investors, traders, and institutions alike. One...\n1.1K\nTech News\nBest SEO Agencies in Sydney for B2B Brands\nSydney’s B2B search environment is shaped by the concentration of financial services, professional services,...\n953\nBusiness news\nWhy Cash Flow Planning Is the First Place Business Owners Need Financial Guidance\nRunning a business is a lot like driving a car at night with the...\n953\nTech News\nHow Smart Technology Is Changing the Future of Basement Waterproofing\nFor most of its history, basement waterproofing has been a reactive trade. A homeowner...\n748\nTechnology\nHow Field Service and Compliance Software Solve Operational Problems\nEvery business with people working outside a central office, technicians, inspectors, auditors, maintenance crews,...\n673\nBusiness news\nUnderstanding Product Pricing and Subscription Costs\nWhen it comes to buying goods and services, customers have more choices than ever...\n531\nCryptocurrency\nTen Crypto Voices Shaping the Conversation on X in 2026: From Protocol Founders\nNEW YORK, NY, July 17, 2026 /Doginal Dogs/ As digital assets continue their move...\n434\nBusiness news\nQuiet Luxury Without the High Price Tag: COOFANDY’s Knit Shirt × Linen Pants Deliver Understated Elegance\nAs summer transitions into autumn in August, Quiet Luxury continues to lead U.S. men’s...\n337\nLatest News\nBig Horn Outdoor: The Ultimate Guide to Outdoor Cooking Equipment, Grills and Pizza Ovens\nOutdoor cooking has become much more than a seasonal hobby. It is now a...\n302\nLatest News\nTwoTrees: Complete Guide to CNC Routers, Laser Engravers & Desktop Manufacturing\nThe world of digital fabrication has transformed how individuals, hobbyists, educators, and businesses create...\nFollow On Facebook\nLatest Interview\nBlockchain\nExclusive Interview: Maksym Sakharov on Building WeFi and Leading Innovation\nAs financial services continue to embrace blockchain technology, the focus is shifting from speculation to practical solutions that make digital finance more...\n470\nArtificial intelligence\nHow AI Voice Agents Are Transforming Patient Appointment Booking and Healthcare Access: Interview with Dr. Michael Dent\nHealthcare providers continue to face growing administrative pressures, while patients often struggle with long waiting times and complex appointment booking processes. As...\nPress Release\nPress Release\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTampa, United States, 29th July 2026, TechnologyWire\nPress Release\nSweet Security Brings Autonomous Protection to the AI Enterprise with New Blocking Capabilities\nLas Vegas, USA, 29th July 2026, CyberNewswire\nUsing a VPN With a Crypto Exchange: What Gets Your Account Flagged\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTo Top\nPin It on Pinterest\nShare This\nFacebook\nTwitter\nLinkedIn\nPinterest\nGmail\nPrint Friendly",
+  "clean_text": "TechBullion\nShare\nShare\nShare\nShare\nEmail\nAn AI prototype can look convincing long before a customer team can use it safely. That gap is where an AI FDE has to do real work. The role sits close to product, implementation, and the people who own the day-to-day process. A model response is only one part of the job. Someone still has to ask what the customer is trying to change, what data is available, who will review the result, and what happens when the answer is wrong.\nThe public AI FDE learning and assessment pages are structured around delivery work rather than a catalogue of model names. They cover discovery, scoping, architecture, prototype work, evaluation, production, rollout, and lessons that can be reused later. That sequence matches the uncomfortable middle of applied AI work, where a pilot either becomes part of a working process or quietly disappears.\nStart with the work, not the model\nThe homepage frames the learning path as a delivery loop. That is a sensible starting point. A field engineer can begin with a model only after the team has made a few earlier decisions: which workflow matters, whose work will change, where the boundary cases live, and what a useful result looks like.\nConsider a support team that wants help sorting incoming cases. A fast prototype can label a sample queue and produce tidy summaries. The harder questions arrive next. Does the system need to recommend a reply, route a case, or simply surface missing information? Can it use the ticket history? Who sees sensitive customer details? What should the team do when the confidence is low? Those choices alter the evaluation plan and the deployment design.\nThis is why a good training path should make room for scoping and handoff work. It should ask learners to explain trade-offs rather than simply produce a working prompt. The public AI FDE materials keep returning to that delivery rhythm. The wording is direct: move from the field problem through a prototype, test the output, then turn a successful approach into something a team can run and improve.\nThere is also a communication skill hiding inside that sequence. A customer may ask for “an AI agent” when what they need is a smaller, more reliable change to a familiar process. The engineer has to turn a broad request into a decision the team can inspect. A useful scoping note names the input, the expected output, the person who checks it, and the point at which the system should hand the work back. It is less exciting than a demo, but it makes later conversations much easier.\nTraining should give learners repeated chances to write those notes. They can compare two possible scopes, explain why one has a cleaner evaluation path, and identify what evidence would make them change their mind. That is a habit worth building. It helps a team avoid building a large interface around a question that has not been settled.\nThere is a limit worth keeping in view. A course can provide practice, vocabulary, and a shared way to talk about decisions. It cannot reproduce the pressure of a customer escalation or the responsibility of owning a production workflow. Learners still need supervised work and feedback from people who know the domain.\nUse scenarios to test judgment\nThe public exam page shows L1, L2, and L3 scenario assessments, with an 8/10 topic pass line. It also describes an AI mentor that can explain the reasoning behind an answer. That is more useful than a trivia-first format for this subject. A fde engineer often has to choose a next step while the available facts are incomplete.\nScenario questions can expose the difference between knowing a term and using it. In the support example, a learner might have to decide whether to test a classifier on historical cases, how to handle uncertain results, or when to keep a human reviewer in the loop. None of those questions has a magical answer. The quality comes from making assumptions visible and showing how the choice will be checked.\nThe level structure also gives a learner a way to separate basic understanding from operating-model work. The public page positions the later material around architecture, evaluation, adoption, and reusable practice. That is a better progression than treating every AI project as a prompt-writing exercise. A prototype can be useful, but a prototype with no evaluation plan has not earned trust yet.\nThe AI mentor is a useful addition if it explains why an answer fits the scenario. It should be treated as a study aid, though. A learner still needs to question the explanation, compare it with the case details, and recognise that a real customer environment may add constraints the question did not include.\nOne practical way to use this material is to pause before reading the explanation. Write down the decision, the evidence that would support it, and the consequence of being wrong. Then compare that note with the mentor’s explanation. The difference is often more useful than the score. It shows whether the learner missed a constraint, chose an evaluation method that cannot answer the question, or made an assumption without stating it.\nThat kind of review also teaches a healthy response to model output. An AI mentor can present a tidy explanation, but tidy language is not proof. The learner has to connect the answer back to a workflow and a test. The same discipline carries into customer work, where a plausible prototype can still fail the moment an unusual case enters the queue.\nMake completion easy to verify\nThe certificate page adds a public certificate-ID lookup, published L1, L2, and L3 standards, and a sample credential. That is practical for a learning programme. It gives a hiring manager, team lead, or learner a way to check that a record exists without relying on a screenshot of a badge.\nVerification does not prove that someone will succeed in every deployment. It does something narrower: it confirms a record and shows the level framework behind it. That distinction matters. The site describes its credential as an independent community credential, rather than an official certification from an AI lab or employer. The boundary is clear on the public pages and should remain clear when the credential is shared.\nFor people moving into applied AI delivery, the strongest evidence will usually combine several things: scenario work, project outcomes, references from the teams involved, and a record that another person can verify. AI FDE covers the scenario and verification parts of that picture. The rest still comes from the work itself.\nThat is a reasonable place to set expectations. A learner can use the programme to practise how delivery choices fit together and to earn a record that others can look up. A team evaluating a candidate should still ask for examples of problem framing, evaluation, and communication with the people affected by the change. The combination is more informative than any single score or credential.\nRelated Items: FDE training , prompt works\nShare\nShare\nShare\nShare\nEmail\nComments\nTrending Stories\n1.4K\nBusiness news\nBuy Bitcoin with USDT: A Smart Crypto Trading Guide\nBitcoin remains the world’s most recognized cryptocurrency, attracting investors, traders, and institutions alike. One...\n1.1K\nTech News\nBest SEO Agencies in Sydney for B2B Brands\nSydney’s B2B search environment is shaped by the concentration of financial services, professional services,...\n953\nBusiness news\nWhy Cash Flow Planning Is the First Place Business Owners Need Financial Guidance\nRunning a business is a lot like driving a car at night with the...\n953\nTech News\nHow Smart Technology Is Changing the Future of Basement Waterproofing\nFor most of its history, basement waterproofing has been a reactive trade. A homeowner...\n748\nTechnology\nHow Field Service and Compliance Software Solve Operational Problems\nEvery business with people working outside a central office, technicians, inspectors, auditors, maintenance crews,...\n673\nBusiness news\nUnderstanding Product Pricing and Subscription Costs\nWhen it comes to buying goods and services, customers have more choices than ever...\n531\nCryptocurrency\nTen Crypto Voices Shaping the Conversation on X in 2026: From Protocol Founders\nNEW YORK, NY, July 17, 2026 /Doginal Dogs/ As digital assets continue their move...\n434\nBusiness news\nQuiet Luxury Without the High Price Tag: COOFANDY’s Knit Shirt × Linen Pants Deliver Understated Elegance\nAs summer transitions into autumn in August, Quiet Luxury continues to lead U.S. men’s...\n337\nLatest News\nBig Horn Outdoor: The Ultimate Guide to Outdoor Cooking Equipment, Grills and Pizza Ovens\nOutdoor cooking has become much more than a seasonal hobby. It is now a...\n302\nLatest News\nTwoTrees: Complete Guide to CNC Routers, Laser Engravers & Desktop Manufacturing\nThe world of digital fabrication has transformed how individuals, hobbyists, educators, and businesses create...\nFollow On Facebook\nLatest Interview\nBlockchain\nExclusive Interview: Maksym Sakharov on Building WeFi and Leading Innovation\nAs financial services continue to embrace blockchain technology, the focus is shifting from speculation to practical solutions that make digital finance more...\n470\nArtificial intelligence\nHow AI Voice Agents Are Transforming Patient Appointment Booking and Healthcare Access: Interview with Dr. Michael Dent\nHealthcare providers continue to face growing administrative pressures, while patients often struggle with long waiting times and complex appointment booking processes. As...\nPress Release\nPress Release\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTampa, United States, 29th July 2026, TechnologyWire\nPress Release\nSweet Security Brings Autonomous Protection to the AI Enterprise with New Blocking Capabilities\nLas Vegas, USA, 29th July 2026, CyberNewswire\nUsing a VPN With a Crypto Exchange: What Gets Your Account Flagged\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTo Top\nPin It on Pinterest\nShare This\nFacebook\nTwitter\nLinkedIn\nPinterest\nGmail\nPrint Friendly",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-079-what-fde-training-should-teach-after-the-prompt-works.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-30/r-079-what-fde-training-should-teach-after-the-prompt-works.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 10085,
+    "paragraph_count": 53,
+    "sentence_count": 93,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 10085,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a8fd74d6dd26feb1",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9cf2889482f0112c",
+  "content_hash": "a8fd74d6dd26feb1",
+  "full_text_hash": "a8fd74d6dd26feb1",
+  "semantic_hash": "62a3f1efb3549733",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-13T04:51:24.000Z",
+  "last_seen_at": "2026-07-30T03:08:58.733Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "The AI mentor is a useful addition if it explains why an answer fits the scenario. It should be treated as a study aid, though. / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "TechBullion Share Share Share Share Email An AI prototype can look convincing long before a customer team can use it safely.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "That gap is where an AI FDE has to do real work.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "The role sits close to product, implementation, and the people who own the day-to-day process.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "A model response is only one part of the job.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Someone still has to ask what the customer is trying to change, what data is available, who will review the result, and what happens when the answer is wrong.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-30T03:08:58.733Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch"
+    ],
+    "products": [
+      "agent",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险",
+      "医疗",
+      "制造 / 工业",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1",
+      "2",
+      "3",
+      "8",
+      "10",
+      "1.4",
+      "1.1",
+      "2B"
+    ],
+    "quotes": [
+      "an AI agent"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The AI mentor is a useful addition if it explains why an answer fits the scenario. It should be treated as a study aid, though. / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation",
+      "That gap is where an AI FDE has to do real work.",
+      "A model response is only one part of the job."
+    ],
+    "case_details": [
+      "TechBullion Share Share Share Share Email An AI prototype can look convincing long before a customer team can use it safely.",
+      "Someone still has to ask what the customer is trying to change, what data is available, who will review the result, and what happens when the answer is wrong."
+    ],
+    "workflow_changes": [
+      "The role sits close to product, implementation, and the people who own the day-to-day process."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# What FDE training should teach after the prompt works\n\n- raw_id: R-079\n- title_zh: 提示词有效后，FDE 培训应教授的内容\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://techbullion.com/what-fde-training-should-teach-after-the-prompt-works/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-30T03:08:58.733Z\n\n## clean_text\n\nTechBullion\nShare\nShare\nShare\nShare\nEmail\nAn AI prototype can look convincing long before a customer team can use it safely. That gap is where an AI FDE has to do real work. The role sits close to product, implementation, and the people who own the day-to-day process. A model response is only one part of the job. Someone still has to ask what the customer is trying to change, what data is available, who will review the result, and what happens when the answer is wrong.\nThe public AI FDE learning and assessment pages are structured around delivery work rather than a catalogue of model names. They cover discovery, scoping, architecture, prototype work, evaluation, production, rollout, and lessons that can be reused later. That sequence matches the uncomfortable middle of applied AI work, where a pilot either becomes part of a working process or quietly disappears.\nStart with the work, not the model\nThe homepage frames the learning path as a delivery loop. That is a sensible starting point. A field engineer can begin with a model only after the team has made a few earlier decisions: which workflow matters, whose work will change, where the boundary cases live, and what a useful result looks like.\nConsider a support team that wants help sorting incoming cases. A fast prototype can label a sample queue and produce tidy summaries. The harder questions arrive next. Does the system need to recommend a reply, route a case, or simply surface missing information? Can it use the ticket history? Who sees sensitive customer details? What should the team do when the confidence is low? Those choices alter the evaluation plan and the deployment design.\nThis is why a good training path should make room for scoping and handoff work. It should ask learners to explain trade-offs rather than simply produce a working prompt. The public AI FDE materials keep returning to that delivery rhythm. The wording is direct: move from the field problem through a prototype, test the output, then turn a successful approach into something a team can run and improve.\nThere is also a communication skill hiding inside that sequence. A customer may ask for “an AI agent” when what they need is a smaller, more reliable change to a familiar process. The engineer has to turn a broad request into a decision the team can inspect. A useful scoping note names the input, the expected output, the person who checks it, and the point at which the system should hand the work back. It is less exciting than a demo, but it makes later conversations much easier.\nTraining should give learners repeated chances to write those notes. They can compare two possible scopes, explain why one has a cleaner evaluation path, and identify what evidence would make them change their mind. That is a habit worth building. It helps a team avoid building a large interface around a question that has not been settled.\nThere is a limit worth keeping in view. A course can provide practice, vocabulary, and a shared way to talk about decisions. It cannot reproduce the pressure of a customer escalation or the responsibility of owning a production workflow. Learners still need supervised work and feedback from people who know the domain.\nUse scenarios to test judgment\nThe public exam page shows L1, L2, and L3 scenario assessments, with an 8/10 topic pass line. It also describes an AI mentor that can explain the reasoning behind an answer. That is more useful than a trivia-first format for this subject. A fde engineer often has to choose a next step while the available facts are incomplete.\nScenario questions can expose the difference between knowing a term and using it. In the support example, a learner might have to decide whether to test a classifier on historical cases, how to handle uncertain results, or when to keep a human reviewer in the loop. None of those questions has a magical answer. The quality comes from making assumptions visible and showing how the choice will be checked.\nThe level structure also gives a learner a way to separate basic understanding from operating-model work. The public page positions the later material around architecture, evaluation, adoption, and reusable practice. That is a better progression than treating every AI project as a prompt-writing exercise. A prototype can be useful, but a prototype with no evaluation plan has not earned trust yet.\nThe AI mentor is a useful addition if it explains why an answer fits the scenario. It should be treated as a study aid, though. A learner still needs to question the explanation, compare it with the case details, and recognise that a real customer environment may add constraints the question did not include.\nOne practical way to use this material is to pause before reading the explanation. Write down the decision, the evidence that would support it, and the consequence of being wrong. Then compare that note with the mentor’s explanation. The difference is often more useful than the score. It shows whether the learner missed a constraint, chose an evaluation method that cannot answer the question, or made an assumption without stating it.\nThat kind of review also teaches a healthy response to model output. An AI mentor can present a tidy explanation, but tidy language is not proof. The learner has to connect the answer back to a workflow and a test. The same discipline carries into customer work, where a plausible prototype can still fail the moment an unusual case enters the queue.\nMake completion easy to verify\nThe certificate page adds a public certificate-ID lookup, published L1, L2, and L3 standards, and a sample credential. That is practical for a learning programme. It gives a hiring manager, team lead, or learner a way to check that a record exists without relying on a screenshot of a badge.\nVerification does not prove that someone will succeed in every deployment. It does something narrower: it confirms a record and shows the level framework behind it. That distinction matters. The site describes its credential as an independent community credential, rather than an official certification from an AI lab or employer. The boundary is clear on the public pages and should remain clear when the credential is shared.\nFor people moving into applied AI delivery, the strongest evidence will usually combine several things: scenario work, project outcomes, references from the teams involved, and a record that another person can verify. AI FDE covers the scenario and verification parts of that picture. The rest still comes from the work itself.\nThat is a reasonable place to set expectations. A learner can use the programme to practise how delivery choices fit together and to earn a record that others can look up. A team evaluating a candidate should still ask for examples of problem framing, evaluation, and communication with the people affected by the change. The combination is more informative than any single score or credential.\nRelated Items: FDE training , prompt works\nShare\nShare\nShare\nShare\nEmail\nComments\nTrending Stories\n1.4K\nBusiness news\nBuy Bitcoin with USDT: A Smart Crypto Trading Guide\nBitcoin remains the world’s most recognized cryptocurrency, attracting investors, traders, and institutions alike. One...\n1.1K\nTech News\nBest SEO Agencies in Sydney for B2B Brands\nSydney’s B2B search environment is shaped by the concentration of financial services, professional services,...\n953\nBusiness news\nWhy Cash Flow Planning Is the First Place Business Owners Need Financial Guidance\nRunning a business is a lot like driving a car at night with the...\n953\nTech News\nHow Smart Technology Is Changing the Future of Basement Waterproofing\nFor most of its history, basement waterproofing has been a reactive trade. A homeowner...\n748\nTechnology\nHow Field Service and Compliance Software Solve Operational Problems\nEvery business with people working outside a central office, technicians, inspectors, auditors, maintenance crews,...\n673\nBusiness news\nUnderstanding Product Pricing and Subscription Costs\nWhen it comes to buying goods and services, customers have more choices than ever...\n531\nCryptocurrency\nTen Crypto Voices Shaping the Conversation on X in 2026: From Protocol Founders\nNEW YORK, NY, July 17, 2026 /Doginal Dogs/ As digital assets continue their move...\n434\nBusiness news\nQuiet Luxury Without the High Price Tag: COOFANDY’s Knit Shirt × Linen Pants Deliver Understated Elegance\nAs summer transitions into autumn in August, Quiet Luxury continues to lead U.S. men’s...\n337\nLatest News\nBig Horn Outdoor: The Ultimate Guide to Outdoor Cooking Equipment, Grills and Pizza Ovens\nOutdoor cooking has become much more than a seasonal hobby. It is now a...\n302\nLatest News\nTwoTrees: Complete Guide to CNC Routers, Laser Engravers & Desktop Manufacturing\nThe world of digital fabrication has transformed how individuals, hobbyists, educators, and businesses create...\nFollow On Facebook\nLatest Interview\nBlockchain\nExclusive Interview: Maksym Sakharov on Building WeFi and Leading Innovation\nAs financial services continue to embrace blockchain technology, the focus is shifting from speculation to practical solutions that make digital finance more...\n470\nArtificial intelligence\nHow AI Voice Agents Are Transforming Patient Appointment Booking and Healthcare Access: Interview with Dr. Michael Dent\nHealthcare providers continue to face growing administrative pressures, while patients often struggle with long waiting times and complex appointment booking processes. As...\nPress Release\nPress Release\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTampa, United States, 29th July 2026, TechnologyWire\nPress Release\nSweet Security Brings Autonomous Protection to the AI Enterprise with New Blocking Capabilities\nLas Vegas, USA, 29th July 2026, CyberNewswire\nUsing a VPN With a Crypto Exchange: What Gets Your Account Flagged\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTo Top\nPin It on Pinterest\nShare This\nFacebook\nTwitter\nLinkedIn\nPinterest\nGmail\nPrint Friendly\n\n## full_text\n\nTechBullion\nShare\nShare\nShare\nShare\nEmail\nAn AI prototype can look convincing long before a customer team can use it safely. That gap is where an AI FDE has to do real work. The role sits close to product, implementation, and the people who own the day-to-day process. A model response is only one part of the job. Someone still has to ask what the customer is trying to change, what data is available, who will review the result, and what happens when the answer is wrong.\nThe public AI FDE learning and assessment pages are structured around delivery work rather than a catalogue of model names. They cover discovery, scoping, architecture, prototype work, evaluation, production, rollout, and lessons that can be reused later. That sequence matches the uncomfortable middle of applied AI work, where a pilot either becomes part of a working process or quietly disappears.\nStart with the work, not the model\nThe homepage frames the learning path as a delivery loop. That is a sensible starting point. A field engineer can begin with a model only after the team has made a few earlier decisions: which workflow matters, whose work will change, where the boundary cases live, and what a useful result looks like.\nConsider a support team that wants help sorting incoming cases. A fast prototype can label a sample queue and produce tidy summaries. The harder questions arrive next. Does the system need to recommend a reply, route a case, or simply surface missing information? Can it use the ticket history? Who sees sensitive customer details? What should the team do when the confidence is low? Those choices alter the evaluation plan and the deployment design.\nThis is why a good training path should make room for scoping and handoff work. It should ask learners to explain trade-offs rather than simply produce a working prompt. The public AI FDE materials keep returning to that delivery rhythm. The wording is direct: move from the field problem through a prototype, test the output, then turn a successful approach into something a team can run and improve.\nThere is also a communication skill hiding inside that sequence. A customer may ask for “an AI agent” when what they need is a smaller, more reliable change to a familiar process. The engineer has to turn a broad request into a decision the team can inspect. A useful scoping note names the input, the expected output, the person who checks it, and the point at which the system should hand the work back. It is less exciting than a demo, but it makes later conversations much easier.\nTraining should give learners repeated chances to write those notes. They can compare two possible scopes, explain why one has a cleaner evaluation path, and identify what evidence would make them change their mind. That is a habit worth building. It helps a team avoid building a large interface around a question that has not been settled.\nThere is a limit worth keeping in view. A course can provide practice, vocabulary, and a shared way to talk about decisions. It cannot reproduce the pressure of a customer escalation or the responsibility of owning a production workflow. Learners still need supervised work and feedback from people who know the domain.\nUse scenarios to test judgment\nThe public exam page shows L1, L2, and L3 scenario assessments, with an 8/10 topic pass line. It also describes an AI mentor that can explain the reasoning behind an answer. That is more useful than a trivia-first format for this subject. A fde engineer often has to choose a next step while the available facts are incomplete.\nScenario questions can expose the difference between knowing a term and using it. In the support example, a learner might have to decide whether to test a classifier on historical cases, how to handle uncertain results, or when to keep a human reviewer in the loop. None of those questions has a magical answer. The quality comes from making assumptions visible and showing how the choice will be checked.\nThe level structure also gives a learner a way to separate basic understanding from operating-model work. The public page positions the later material around architecture, evaluation, adoption, and reusable practice. That is a better progression than treating every AI project as a prompt-writing exercise. A prototype can be useful, but a prototype with no evaluation plan has not earned trust yet.\nThe AI mentor is a useful addition if it explains why an answer fits the scenario. It should be treated as a study aid, though. A learner still needs to question the explanation, compare it with the case details, and recognise that a real customer environment may add constraints the question did not include.\nOne practical way to use this material is to pause before reading the explanation. Write down the decision, the evidence that would support it, and the consequence of being wrong. Then compare that note with the mentor’s explanation. The difference is often more useful than the score. It shows whether the learner missed a constraint, chose an evaluation method that cannot answer the question, or made an assumption without stating it.\nThat kind of review also teaches a healthy response to model output. An AI mentor can present a tidy explanation, but tidy language is not proof. The learner has to connect the answer back to a workflow and a test. The same discipline carries into customer work, where a plausible prototype can still fail the moment an unusual case enters the queue.\nMake completion easy to verify\nThe certificate page adds a public certificate-ID lookup, published L1, L2, and L3 standards, and a sample credential. That is practical for a learning programme. It gives a hiring manager, team lead, or learner a way to check that a record exists without relying on a screenshot of a badge.\nVerification does not prove that someone will succeed in every deployment. It does something narrower: it confirms a record and shows the level framework behind it. That distinction matters. The site describes its credential as an independent community credential, rather than an official certification from an AI lab or employer. The boundary is clear on the public pages and should remain clear when the credential is shared.\nFor people moving into applied AI delivery, the strongest evidence will usually combine several things: scenario work, project outcomes, references from the teams involved, and a record that another person can verify. AI FDE covers the scenario and verification parts of that picture. The rest still comes from the work itself.\nThat is a reasonable place to set expectations. A learner can use the programme to practise how delivery choices fit together and to earn a record that others can look up. A team evaluating a candidate should still ask for examples of problem framing, evaluation, and communication with the people affected by the change. The combination is more informative than any single score or credential.\nRelated Items: FDE training , prompt works\nShare\nShare\nShare\nShare\nEmail\nComments\nTrending Stories\n1.4K\nBusiness news\nBuy Bitcoin with USDT: A Smart Crypto Trading Guide\nBitcoin remains the world’s most recognized cryptocurrency, attracting investors, traders, and institutions alike. One...\n1.1K\nTech News\nBest SEO Agencies in Sydney for B2B Brands\nSydney’s B2B search environment is shaped by the concentration of financial services, professional services,...\n953\nBusiness news\nWhy Cash Flow Planning Is the First Place Business Owners Need Financial Guidance\nRunning a business is a lot like driving a car at night with the...\n953\nTech News\nHow Smart Technology Is Changing the Future of Basement Waterproofing\nFor most of its history, basement waterproofing has been a reactive trade. A homeowner...\n748\nTechnology\nHow Field Service and Compliance Software Solve Operational Problems\nEvery business with people working outside a central office, technicians, inspectors, auditors, maintenance crews,...\n673\nBusiness news\nUnderstanding Product Pricing and Subscription Costs\nWhen it comes to buying goods and services, customers have more choices than ever...\n531\nCryptocurrency\nTen Crypto Voices Shaping the Conversation on X in 2026: From Protocol Founders\nNEW YORK, NY, July 17, 2026 /Doginal Dogs/ As digital assets continue their move...\n434\nBusiness news\nQuiet Luxury Without the High Price Tag: COOFANDY’s Knit Shirt × Linen Pants Deliver Understated Elegance\nAs summer transitions into autumn in August, Quiet Luxury continues to lead U.S. men’s...\n337\nLatest News\nBig Horn Outdoor: The Ultimate Guide to Outdoor Cooking Equipment, Grills and Pizza Ovens\nOutdoor cooking has become much more than a seasonal hobby. It is now a...\n302\nLatest News\nTwoTrees: Complete Guide to CNC Routers, Laser Engravers & Desktop Manufacturing\nThe world of digital fabrication has transformed how individuals, hobbyists, educators, and businesses create...\nFollow On Facebook\nLatest Interview\nBlockchain\nExclusive Interview: Maksym Sakharov on Building WeFi and Leading Innovation\nAs financial services continue to embrace blockchain technology, the focus is shifting from speculation to practical solutions that make digital finance more...\n470\nArtificial intelligence\nHow AI Voice Agents Are Transforming Patient Appointment Booking and Healthcare Access: Interview with Dr. Michael Dent\nHealthcare providers continue to face growing administrative pressures, while patients often struggle with long waiting times and complex appointment booking processes. As...\nPress Release\nPress Release\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTampa, United States, 29th July 2026, TechnologyWire\nPress Release\nSweet Security Brings Autonomous Protection to the AI Enterprise with New Blocking Capabilities\nLas Vegas, USA, 29th July 2026, CyberNewswire\nUsing a VPN With a Crypto Exchange: What Gets Your Account Flagged\nFewer Clicks, More Answers: MileMark Is Preparing Law Firms for the New Search Landscape\nTo Top\nPin It on Pinterest\nShare This\nFacebook\nTwitter\nLinkedIn\nPinterest\nGmail\nPrint Friendly\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The AI mentor is a useful addition if it explains why an answer fits the scenario. It should be treated as a study aid, though. / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] TechBullion Share Share Share Share Email An AI prototype can look convincing long before a customer team can use it safely.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] That gap is where an AI FDE has to do real work.\n4. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The role sits close to product, implementation, and the people who own the day-to-day process.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] A model response is only one part of the job.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Someone still has to ask what the customer is trying to change, what data is available, who will review the result, and what happens when the answer is wrong.\n"
+}
