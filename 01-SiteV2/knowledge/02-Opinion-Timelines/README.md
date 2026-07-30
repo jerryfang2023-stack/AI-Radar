@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1864
-generated_at: 2026-07-29T08:10:18.596Z
+opinion_count: 1872
+generated_at: 2026-07-30T02:40:56.850Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -17,6 +17,8 @@ generated_at: 2026-07-29T08:10:18.596Z
 - [Dan Shipper](people/dan-shipper/README.md) - 92 条 - 最新 2026-07-29
 - [Peter Steinberger](people/peter-steinberger/README.md) - 80 条 - 最新 2026-07-29
 - [Amjad Masad](people/amjad-masad/README.md) - 79 条 - 最新 2026-07-29
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 65 条 - 最新 2026-07-29
+- [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 21 条 - 最新 2026-07-29
 - [Garry Tan](people/garry-tan/README.md) - 127 条 - 最新 2026-07-28
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 102 条 - 最新 2026-07-28
 - [Zara Zhang](people/zara-zhang/README.md) - 94 条 - 最新 2026-07-28
@@ -24,11 +26,9 @@ generated_at: 2026-07-29T08:10:18.596Z
 - [Nan Yu](people/nan-yu/README.md) - 48 条 - 最新 2026-07-28
 - [Aditya Agarwal](people/aditya-agarwal/README.md) - 45 条 - 最新 2026-07-28
 - [Madhu Guru](people/madhu-guru/README.md) - 33 条 - 最新 2026-07-28
-- [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 20 条 - 最新 2026-07-28
 - [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 8 条 - 最新 2026-07-28
 - [Guillermo Rauch](people/guillermo-rauch/README.md) - 113 条 - 最新 2026-07-27
 - [Matt Turck](people/matt-turck/README.md) - 69 条 - 最新 2026-07-27
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 58 条 - 最新 2026-07-27
 - [Sam Altman](people/sam-altman/README.md) - 48 条 - 最新 2026-07-27
 - [Claude](people/claude/README.md) - 57 条 - 最新 2026-07-24
 - [Thariq](people/thariq/README.md) - 54 条 - 最新 2026-07-24

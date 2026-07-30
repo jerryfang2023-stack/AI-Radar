@@ -1,12 +1,10 @@
 {
-  "generatedAt": "2026-07-28T16:32:57.686Z",
+  "generatedAt": "2026-07-30T02:38:56.469Z",
   "stats": {
-    "blogsBuilt": 4,
-    "totalItems": 21,
+    "blogsBuilt": 3,
+    "totalItems": 23,
     "sourceCount": 6,
-    "errors": [
-      "lilian-weng-blog: fetch failed"
-    ]
+    "errors": []
   },
   "blogs": [
     {
@@ -14,6 +12,86 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything",
+          "text": "Quoting D. Richard Hipp",
+          "summary": "<blockquote cite=\"https://www.youtube.com/watch?v=R57nUGzo7CA&amp;t=848s\"><p>Years ago, we didn’t have SQL. There were people whose job was to generate software that would query large data sets. Their job title was COBOL programmer.</p>\n<p>Then SQL comes along—I’m simplifying this only a little bit—",
+          "createdAt": "2026-07-29T21:15:21+00:00",
+          "url": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
+          "text": "AI Worming through Word",
+          "summary": "<p><strong><a href=\"https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/\">AI Worming through Word</a></strong></p>\nNeat new prompt injection variant by Håkon Måløy, who found a way to upgrade prompt injection attacks against Microsoft Word to full self-replicating worms:</p>",
+          "createdAt": "2026-07-29T18:43:03+00:00",
+          "url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything",
+          "text": "Quoting Matthew Green",
+          "summary": "<blockquote cite=\"https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/\"><p>Right now we’re in the midst of a historic transition from traditional public-key algorithms based on EC-based cryptography and RSA, moving over to new <em>post-quantum</em> algorithms ",
+          "createdAt": "2026-07-29T18:18:15+00:00",
+          "url": "https://simonwillison.net/2026/Jul/29/matthew-green/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
+          "text": "Adding a custom MCP server to Claude and ChatGPT",
+          "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/llms/mcp-in-claude-and-chatgpt\">Adding a custom MCP server to Claude and ChatGPT</a></p>\n        <p>Connecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps.</p>\n    \n  ",
+          "createdAt": "2026-07-29T00:13:18+00:00",
+          "url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
+          "text": "Discovering cryptographic weaknesses with Claude",
+          "summary": "<p><strong><a href=\"https://www.anthropic.com/research/discovering-cryptographic-weaknesses\">Discovering cryptographic weaknesses with Claude</a></strong></p>\nThe best part of this article (here's <a href=\"https://github.com/anthropics/cryptography-research-demo\">the repo</a>) about how Anthropic re",
+          "createdAt": "2026-07-28T22:45:37+00:00",
+          "url": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
+          "text": "Quoting Akshat Bubna",
+          "summary": "<blockquote cite=\"https://www.reuters.com/business/openais-rogue-agent-compromised-an-account-second-tech-firm-sources-say-2026-07-28/\"><p>We’re aware a Modal customer published an unauthenticated endpoint that allowed ​anyone on the internet to use ​their ⁠sandboxes for code execution. This was use",
+          "createdAt": "2026-07-28T22:05:55+00:00",
+          "url": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/28/uv/#atom-everything",
+          "text": "uv 0.12.0",
+          "summary": "<p><strong><a href=\"https://github.com/astral-sh/uv/releases/tag/0.12.0\">uv 0.12.0</a></strong></p>\nSome interesting breaking changes in this release of <code>uv</code>, in particular to the default project produced by the <code>uv init</code> command.</p>\n<p><a href=\"https://docs.astral.sh/uv/conce",
+          "createdAt": "2026-07-28T21:51:38+00:00",
+          "url": "https://simonwillison.net/2026/Jul/28/uv/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
+          "text": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+          "summary": "<p><strong><a href=\"https://huggingface.co/blog/agent-intrusion-technical-timeline\">Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident</a></strong></p>\nHugging Face just released this extremely detailed technical description of <a href=\"https://simonwillison.ne",
+          "createdAt": "2026-07-28T21:28:54+00:00",
+          "url": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
           "text": "moonshotai/Kimi-K3",
@@ -40,6 +118,16 @@
           "summary": "<p><strong><a href=\"https://vectoral.com/blog/token-relay-market\">An Inside Look at the Relay Market Powering Token Resellers and Fraud</a></strong></p>\nFascinating investigation by Matt Lenhard into the market that has grown up around reselling LLM tokens at a discount by pooling API keys from vari",
           "createdAt": "2026-07-26T19:30:54+00:00",
           "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/26/sqlite-utils/#atom-everything",
+          "text": "sqlite-utils 3.39.1",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/sqlite-utils/releases/tag/3.39.1\">sqlite-utils 3.39.1</a></p>\n        <p>I back-ported <a href=\"https://github.com/simonw/sqlite-utils/issues/815\">a fix</a> for <code>table.delete_where()</code> that shipped in version 4.</p>\n    \n    \n",
+          "createdAt": "2026-07-26T04:38:46+00:00",
+          "url": "https://simonwillison.net/2026/Jul/26/sqlite-utils/#atom-everything",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -93,73 +181,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
-          "text": "Quoting Thomas Ptacek",
-          "summary": "<blockquote cite=\"https://twitter.com/tqbf/status/2080045032162173329\"><p>I genuinely believe that if you took an open weights model from 2025 and built a pentest harness for it, it could do this kind of sandbox escape and scan/hack in most networks. This is only surprising because you assume OpenAI",
-          "createdAt": "2026-07-22T23:59:01+00:00",
-          "url": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
-          "text": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
-          "summary": "<p>This story is wild. The short version: OpenAI were running a cybersecurity test against an unreleased model, with the model's guardrail features turned off. Rather than solve the test, the model broke its way out of OpenAI's sandbox, then found exploits to break <em>in</em> to Hugging Face, all s",
-          "createdAt": "2026-07-22T23:51:33+00:00",
-          "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
-          "text": "Are AI labs pelicanmaxxing?",
-          "summary": "<p><strong><a href=\"https://dylancastillo.co/posts/pelicanmaxxing.html\">Are AI labs pelicanmaxxing?</a></strong></p>\nExcellent piece of work by Dylan Castillo, who took a deep-dive into the frequently pondered question of whether the AI labs have been deliberately training models to draw pelicans ri",
-          "createdAt": "2026-07-22T23:01:00+00:00",
-          "url": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/#atom-everything",
-          "text": "Orchestrions",
-          "summary": "<p>San Francisco tip: it only costs around $15 ($10 in quarters plus a $5 bill for the self-playing violin) to activate every single Orchestrion in <a href=\"https://en.wikipedia.org/wiki/Musée_Mécanique\">Musée Mécanique</a>.</p>\n<p>And because most people are bad at allocating their funds you may we",
-          "createdAt": "2026-07-22T14:48:52+00:00",
-          "url": "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/21/sighting-383713864/#atom-everything",
-          "text": "California Sea Lion",
-          "summary": "<p><img src=\"https://static.inaturalist.org/photos/702321069/large.jpg\" alt=\"California Sea Lion\"></p><p><img src=\"https://static.inaturalist.org/photos/702321114/large.jpg\" alt=\"California Sea Lion\"></p><p>California Sea Lion, in San Francisco County, US, CA</p><p>We took some visiting family to Pi",
-          "createdAt": "2026-07-21T19:51:03+00:00",
-          "url": "https://simonwillison.net/2026/Jul/21/sighting-383713864/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Interconnects (Nathan Lambert)",
-      "handle": "interconnects.ai",
-      "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
-      "tweets": [
-        {
-          "id": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-          "text": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-          "summary": "A podcast with Florian Brand.",
-          "createdAt": "Wed, 22 Jul 2026 14:09:04 GMT",
-          "url": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -196,6 +217,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-07-29",
+          "text": "AI slowdown pact ⏸️, Personal superintelligence access 🌍, Grok Build Mode 🛠️",
+          "summary": "",
+          "createdAt": "Wed, 29 Jul 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-07-29",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-07-28",
           "text": "Anthropic on open weights 🔓, Kimi releases K3 weights 🤖, MAI Cyber model 🔐",
           "summary": "",
@@ -221,26 +252,6 @@
           "summary": "",
           "createdAt": "Fri, 24 Jul 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-07-24",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-07-23",
-          "text": "Cursor Router 🔀, OpenAI Presence 🤖, AMD + Anthropic deal 🤝🏻",
-          "summary": "",
-          "createdAt": "Thu, 23 Jul 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-07-23",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-07-22",
-          "text": "Gemini 3.6 Flash ✨, OpenAI security escape 🚨, Devin Outposts 🛰️",
-          "summary": "",
-          "createdAt": "Wed, 22 Jul 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-07-22",
           "likes": 0,
           "retweets": 0,
           "replies": 0

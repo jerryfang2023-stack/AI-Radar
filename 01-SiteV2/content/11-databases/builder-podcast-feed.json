@@ -1,48 +1,76 @@
 {
-  "generatedAt": "2026-07-28T16:33:23.131Z",
+  "generatedAt": "2026-07-30T02:38:57.078Z",
   "stats": {
-    "podcastsBuilt": 3,
-    "totalEpisodes": 4,
-    "errors": [
-      "Latent Space: fetch failed",
-      "The MAD Podcast (Matt Turck): fetch failed",
-      "AI & I by Every: fetch failed"
-    ],
+    "podcastsBuilt": 6,
+    "totalEpisodes": 19,
+    "errors": [],
     "fallbackUsed": false,
     "fallbackReason": ""
   },
   "podcasts": [
     {
-      "title": "Factory's Matan Grinberg: The Coming ‘Dark Factory’ Where Software Builds Itself",
+      "title": "Best of the Pod: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success",
+      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Wireds-Kevin-Kelly-on-Why-AI-Is-a-50-year-Overnight-Success-e3mm33f",
+      "publishedAt": "Wed, 29 Jul 2026 15:00:00 GMT",
+      "excerpt": "Kevin Kelly has spent over 30 years experiencing the edge of new technology: from the earliest days of the internet to the first years of Burning Man. But he’s always treated the frontier as a place to visit, not somewhere to live. It’s partially how he’s been able to stay grounded through tech’s various hype cycles.As founding executive editor of Wired and author of The Inevitable, Kelly spends as much time analyzing the latest in AI as he does reading about significant moments in history. It’s a discipline he traces back to his work with the Long Now Foundation, which he cofounded to encourage long-term thinking, reaching from the last 10,000 years to the next. On this week’s AI & I, Dan Shipper revisits his conversation with Kelly. They get into why historians can be the best futurists, and how our bid to understand what intelligence is has parallels with early scientists' atte…",
+      "source": "podcast",
+      "name": "AI & I by Every"
+    },
+    {
+      "title": "Building the Automated AGI Lab: Core Automation's Jerry Tworek and Rohan Anil",
       "url": "https://feeds.megaphone.fm/trainingdata",
-      "publishedAt": "Tue, 21 Jul 2026 09:00:00 -0000",
-      "excerpt": "Factory started building fully autonomous coding agents in April 2023, two years before enterprises were ready. Matan Grinberg now says this is indistinguishable from being wrong. The Factory co-founder and CEO explains how the company survived its \"journey in the desert,\" including the decision to hand nearly all of its revenue back to customers when the product wasn't making developers obsessed. Matan makes the contrarian technical case that a model-agnostic harness beats the model-and-harness co-design that labs like OpenAI and Anthropic favor, because exposing a harness to many models keeps it from overfitting to any single one. He argues open-weight models like GLM will capture the majority of tokens by staying one generation behind the frontier at a fraction of the cost, and that CIOs will soon justify every incremental token the way they justify headcount. Looking ahead, he predicts 90% of coding to…",
+      "publishedAt": "Wed, 29 Jul 2026 09:00:00 -0000",
+      "excerpt": "Jerry Tworek led reasoning at OpenAI, convinced that scaling reinforcement learning was the path to AGI. Rohan Anil co-led Gemini pre-training and built the Shampoo optimizer. Now they've teamed up at Core Automation on a contrarian premise: the transformer has carried us as far as it can, and the bottleneck to smarter systems is no longer scale — it's the architecture itself. The missing capability is continual learning, models that adapt at test time, which transformers can't do. In-context learning taps out fast (Codex needs compacting after ~20 minutes) and fine-tuning invites catastrophic forgetting. Rohan argues pre-training and RL should be optimized end-to-end, and that transformers spend computation inefficiently. They lay out why the largest labs won't chase alternatives while locked in the coding-agent race, and why building the world's most automated lab starts with automating kernel generation…",
       "source": "podcast",
       "name": "Training Data (Sequoia)"
     },
     {
-      "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today-yero2ugh",
-      "publishedAt": "Thu, 9 Jul 2026 13:00:00 +0000",
-      "excerpt": "Dr. Jürgen Schmidhuber, a renowned scientist and AI researcher widely regarded as one of the pioneers in the field, originated key ideas behind today's transformers, LSTMs, and recursive self-improvement through his lab's work. He argues that true AGI remains bottlenecked by physical hardware, that today's AI data center investments are headed for a correction as open-source keeps pace with closed labs, and that the path to general intelligence runs through artificial curiosity and self-generated experimentation rather than internet data. He closes by reconsidering mainstream AI safety arguments and offers a sweeping vision of self-replicating robot societies eventually colonizing the solar system.   (0:00) Intro (1:24) How Close Is Superhuman AI? (2:27) Why ChatGPT Didn't Surprise Him (3:21) The Path to Recursive Self-Improvement (9:01) Will AI Takeoff…",
+      "title": "How Every's Team Used AI to Ship Its Biggest Launch Ever",
+      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Everys-Team-Used-AI-to-Ship-Its-Biggest-Launch-Ever-e3mdd4k",
+      "publishedAt": "Wed, 22 Jul 2026 15:09:01 GMT",
+      "excerpt": "Yash Poojary, a growth engineer at Every, dropped an idea for a campaign in Slack at 7 p.m. Instead of building it himself, Every’s head of growth Austin Tedesco took a screenshot of the Slack thread, dropped it into Codex, typed \"Can you do this?\", and went to the gym.By the time he got back, Codex had built four audience segments, drafted emails for each one, and pulled a social image that had worked before. It took Austin 10 minutes to make some tweaks and schedule the whole thing to send the next morning. Within a few hours, it generated more than $25,000 in revenue. That story came out of the launch week for All Access, Every’s new $625-a-year membership built around the Builder Pack. It includes $7,000 in credits and free usage from ten of the AI products Every uses every day, including Claude Max, Codex, Cursor Pro+, PostHog, Notion, Framer, Render, and Flora.<…",
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)"
+      "name": "AI & I by Every"
     },
     {
-      "title": "Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang",
-      "url": "https://feeds.megaphone.fm/nopriors",
-      "publishedAt": "Thu, 23 Jul 2026 10:00:00 -0000",
-      "excerpt": "DoorDash is not just a delivery company. From its inception, co-founders Andy Fang and Stanley Tang operated it as a robotics and autonomy company. Andy and Stanley join Sarah Guo to explain how autonomous tech and AI are reshaping consumer habits, commerce, and delivery. Andy and Stanley talk about the rollout of Ask DoorDash, a natural-language interface that’s driving both restaurant discovery and larger grocery orders. They also discuss Dot, their in-house autonomous delivery robot that has operated in Phoenix for over two years, and how it highlights the operational and hardware challenges they have faced and solved in autonomous tech. Andy and Stanley also speak about the “first and last 100 feet problem” in autonomous delivery, why multimodal strategies are the key to success, scaling autonomy and operations, and why they believe that more Dashers, not fewer, are the future of DoorDash.&nbsp; Sign u…",
+      "title": "The Founder of a $1.5B AI Company on What Comes After the First Wave of AI Apps",
+      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-Founder-of-a-1-5B-AI-Company-on-What-Comes-After-the-First-Wave-of-AI-Apps-e3m47gg",
+      "publishedAt": "Wed, 15 Jul 2026 15:08:19 GMT",
+      "excerpt": "“Running a startup is a knife fight whether things are going well or not,” says Chris Pedregal, cofounder and CEO of Granola. Granola recently raised a $125 million series C round at a $1.5 billion valuation on the strength of its AI meeting notetaker.That valuation hasn’t made Pedregal complacent. Granola built its name as the first to make good AI meeting notes, but Notion, OpenAI, and Zoom have all since released their own versions. Pedregal isn’t rattled—he never thought meeting notes were the real prize. The bigger fight, he says, is over “what interface we use for work, and what work looks like in an AI-native world.”That’s why Granola is betting on owning the entire meeting workflow: preparing people for a call, helping them act on it afterward, and making that context available to whatever agent—Claude, Codex, or anything else—people bring to the table. Over the…",
       "source": "podcast",
-      "name": "No Priors"
+      "name": "AI & I by Every"
     },
     {
-      "title": "Ep 91: Top AI Analyst Unpacks Today&apos;s AI Hype Cycle",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-91-top-ai-analyst-unpacks-todays-ai-hype-cycle-oNqJgjlL",
-      "publishedAt": "Thu, 16 Jul 2026 12:48:06 +0000",
-      "excerpt": "Benedict Evans, one of tech's most widely-read analysts, joins Jacob Effron. The conversation centers on Benedict's core thesis that comparing AI's scale to past platform shifts (the internet, mobile, PCs) is analytically useless, and that the more productive move is studying how those previous technologies actually evolved economically to reason about where AI's value will accrue. He argues the one genuine difference this time is that we don't know AI's physical or scientific limits, unlike past shifts where the boundaries were at least knowable, and that this uncertainty is what fuels both AGI hype and doomerism without resolving anything. Benedict unpacks why capabilities remain jagged, meaning usage is jagged too, why coding became the first real enterprise use case thanks to scalable verification, and why most consumer and enterprise use cases still have to be invented by entrepreneurs rat…",
+      "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
+      "url": "https://www.latent.space/p/modal2026",
+      "publishedAt": "Wed, 08 Jul 2026 22:55:07 GMT",
+      "excerpt": "We’ve been running a bit of an Agent Cloud series surveying all the top inference/compute/cloud providers, from Databricks to Daytona to Railway and, even further back, E2B, but we’re excited to conclude this series returning to Modal, which has just raised a monster $355M Series C.The cloud was built for developers. But agents are now changing that.The old infra stack was designed for a human who could read docs, reason through YAML, and understand dashboards to figure out what they need when something broke. While this w…",
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)"
+      "name": "Latent Space"
+    },
+    {
+      "title": "How a Writer Uses AI Without Losing His Voice",
+      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-a-Writer-Uses-AI-Without-Losing-His-Voice-e3lpt38",
+      "publishedAt": "Wed, 08 Jul 2026 14:49:06 GMT",
+      "excerpt": "Craig Mod used to pay Campaign Monitor roughly $7,000 a year to send his newsletters. After rebuilding the tool himself with AI, his bill is closer to $150. It’s the kind of thing that convinces him we’re about to enter a “golden age of tool building”—one where anyone can build tools specifically suited to their needs, instead of settling for software from incumbents that are slow to innovate.Mod is the writer and photographer behind the newsletters Roden and Ridgeline and books like Things Become Other Things and Kissa by Kissa—as well as a lifelong technologist. He’s rebuilt the tax software Quicken, created a private alternative for Twitter for his members which he calls The Good Place, and used AI to build an archive for his pop-up newsletters. But while Mod is an advocate of using AI to build, he draws the line at using it to write.Mod talks to Dan Shipper about us…",
+      "source": "podcast",
+      "name": "AI & I by Every"
+    },
+    {
+      "title": "The AI Workflows Behind Every's Consulting Team",
+      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Workflows-Behind-Everys-Consulting-Team-e3lh60h",
+      "publishedAt": "Wed, 01 Jul 2026 15:57:56 GMT",
+      "excerpt": "Natalia Quintero joined Every as head of consulting with a mandate to bring AI into the workflows of executives at hedge funds, private equity firms, and tech companies. She is also a recent Codex convert—someone who spent months resisting the tool before Dan Shipper’s daily pestering finally got her to try it.Natalia encountered Codex as a non-technical builder who had learned to navigate file systems and folder structures in Claude Code through sheer effort. She’s now used Codex to do everything from automate her CRM setup to build a portal to manage her father’s medical care.Dan talked with Natalia for AI & I about what it looks like to go from non-technical to building software with Codex, why Every still uses software-as-a-service products from Attio and Asana instead of vibe coding their own tools, and where she thinks AI agents like Every’s internal Claudie employee require…",
+      "source": "podcast",
+      "name": "AI & I by Every"
+    },
+    {
+      "title": "🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI",
+      "url": "https://www.latent.space/p/the-coolest-diffusion-research-isnt",
+      "publishedAt": "Wed, 01 Jul 2026 14:42:39 GMT",
+      "excerpt": "This episode has a fun personal twist: There’s a counterfactual world where I was employee #1 at Genesis Molecular AI, the company behind today’s episode. A certain introduction happened a few weeks too late and I had already happily signed at Atomwise, another ML-for-drug-discovery startup. Same problem, different company. I was certain ML was going to transform small molecule drug discovery. Early results were underwhelming. Useful at times, but nowhere near revolutionary. In the last year I’ve seen signs that ML is finally ready to deliver on my convictions from a decade ago. Genesis is one of the places that might have finally cracked this problem. I was super excited to come full circle and catch up with co-founder Evan Feinberg and CTO <a target=\"_blank\" href=\"https://www.li…",
+      "source": "podcast",
+      "name": "Latent Space"
     }
   ]
 }
