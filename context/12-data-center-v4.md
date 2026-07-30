@@ -22,9 +22,10 @@ DeepSeek is the sole production model provider. Model assistance is restricted t
 SourceArtifact
 -> RawDocument
 -> Claim / Entity
--> CanonicalEvent
--> Entity Registry / Entity Profile / RELATION-V2
--> FDE / Hardware projections
+-> CanonicalEvent -> Entity Registry / Entity Profile / RELATION-V2
+-> Claim-native FDEObservation / HardwareFact
+-> event-backed FDERecord / HardwareRecord publication views
+-> HardwareSnapshot and factual change timeline
 -> JSON / JSONL / DuckDB
 -> downstream applications
 ```
@@ -39,7 +40,11 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 - Factual relationships: `RELATION-V2.1`
 - Targeted historical collection: `BACKFILL-V1.0`
 - FDE: `FDE-V2.0`
+- FDE observation: `FDE-OBSERVATION-V1.0`
 - Hardware: `HARDWARE-V1.0`
+- Hardware fact: `HARDWARE-FACT-V1.0`
+- Hardware snapshot: `HARDWARE-SNAPSHOT-V1.0`
+- Lens monitoring funnel: `LENS-FUNNEL-V1.0`
 - Tags and facets: `TAG-V4.0`
 - Contract: `agent-workflow/product/data-center-v4-contract.md`
 - JSON Schema: `agent-workflow/product/data-center-v4.schema.json`
@@ -66,7 +71,9 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 - Organizations, products/models/services, and people use stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
 - Every RELATION-V2 row resolves typed endpoints and an accepted CanonicalEvent, Claim references, and SourceArtifact references. Candidate or quarantined entity endpoints cannot enter a formal relationship.
 - Entity timelines may aggregate accepted events across data batches, but retain each event's factual date and source lineage. No daily completeness is implied.
-- FDE and hardware records cannot be created directly from source artifacts or page caches.
+- FDERecord and HardwareRecord remain event-backed publication projections.
+- FDEObservation and HardwareFact require accepted exact-span Claims and resolvable SourceArtifacts; they cannot be created from source artifacts, search snippets, or page caches alone.
+- HardwareSnapshot may aggregate accepted facts and expose cross-day differences, but a state difference cannot become a CanonicalEvent without a new accepted Claim.
 - Importance, opportunity, trend maturity, business meaning, why-watch, recommendations, and advice are forbidden in V4 canonical outputs.
 
 ## Historical migration boundary

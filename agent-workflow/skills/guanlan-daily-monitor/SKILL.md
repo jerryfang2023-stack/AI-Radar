@@ -3,7 +3,7 @@ name: guanlan-daily-monitor
 description: Use when running or repairing the daily source-capture implementation that writes immutable snapshots and SOURCE-INTAKE-V1 for Data Center V4. It does not own Claims, CanonicalEvents, tags, projections, pages, judgment, or recommendations, and it must not create V3 Raw/Pool Markdown or Signal Cards.
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.2.1"
     lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 40
@@ -11,7 +11,7 @@ metadata:
     upstream: "external monitoring sources"
     downstream: "immutable snapshots, SOURCE-INTAKE-V1, and evidence-supply diagnostics"
     gates: "source capture, provenance integrity, minimum structured evidence supply"
-    recent_learning: "After post-fetch hash dedupe, expand only within the already collected candidate set; do not recollect providers or pad intake with weak evidence."
+    recent_learning: "FDE and hardware discovery use explicit source paths; downstream Claim, observation, snapshot, page, or publication defects must not trigger recollection."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -53,6 +53,8 @@ The production policy permits one monitor attempt and at most one targeted refil
 ## Rules
 
 - Resolve discovery results to original sources before factual use.
+- Split FDE discovery across customer cases, procurement/contracts, customer earnings disclosures, and production rollouts.
+- Split hardware discovery across products/specifications, OEM/ODM, capacity/fabs, supply agreements, shipments/deployments, and capex.
 - Preserve original URL, readable text or fallback boundary, extraction diagnostics, content hash, excerpts, and missing information.
 - Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO, and navigation pages discovery-only unless they contain a dated concrete event.
 - Normalize publication dates and filter stale archives.

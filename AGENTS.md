@@ -13,7 +13,9 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE data version: FDE-V2.0.
+- Current Enterprise AI / FDE observation version: FDE-OBSERVATION-V1.0.
 - Current AI Hardware data version: HARDWARE-V1.0.
+- Current AI Hardware fact/snapshot versions: HARDWARE-FACT-V1.0 / HARDWARE-SNAPSHOT-V1.0.
 - Current Reports Center column version: REPORTS-V1.1.0-lane-independent.
 - Current Opportunity Map column version: OMAP-V2.0.0-v4-evidence.
 - Current Trend Radar column version: TRADAR-V1.0.0-factual-change-explorer.

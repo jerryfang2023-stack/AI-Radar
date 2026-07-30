@@ -53,6 +53,10 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
   const events = Array.isArray(bundle.canonical_events) ? bundle.canonical_events : [];
   const fde = Array.isArray(bundle.fde_records) ? bundle.fde_records : [];
   const hardware = Array.isArray(bundle.hardware_records) ? bundle.hardware_records : [];
+  const fdeObservations = Array.isArray(bundle.fde_observations) ? bundle.fde_observations : [];
+  const hardwareFacts = Array.isArray(bundle.hardware_facts) ? bundle.hardware_facts : [];
+  const hardwareSnapshots = Array.isArray(bundle.hardware_snapshots) ? bundle.hardware_snapshots : [];
+  const monitoringFunnel = Array.isArray(bundle.monitoring_funnel) ? bundle.monitoring_funnel : [];
   const entityIds = new Set(entities.map((item) => item.entity_id).filter(Boolean));
   const mentionedEntityIds = new Set(mentions.map((item) => item.entity_id).filter(Boolean));
   const acceptedEvents = events.filter((item) => ["verified", "partial"].includes(item.publication_status));
@@ -96,6 +100,9 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
   const productNames = new Set((frontstage.products || []).map((item) => normalizeName(item.name)).filter(Boolean));
   const frontstageFde = new Map((frontstage.fde || []).map((item) => [item.id, item]));
   const frontstageHardware = new Map((frontstage.hardware || []).map((item) => [item.id, item]));
+  const frontstageFdeDossiers = new Map((frontstage.fdeDossiers || []).map((item) => [item.implementationKey, item]));
+  const frontstageHardwareCatalog = new Map((frontstage.hardwareCatalog || []).map((item) => [item.snapshotKey, item]));
+  const frontstageFunnel = new Map((frontstage.monitoringFunnel || []).map((item) => [item.lens, item]));
   const frontstageDate = frontstage.meta?.currentDate || frontstage.meta?.latestDataDate || "";
 
   if (frontstageDate !== expectedDate) failures.push(`frontstage projection date is ${frontstageDate || "missing"}; expected ${expectedDate}`);
@@ -123,13 +130,32 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
     const projected = frontstageHardware.get(item.hardware_record_id);
     return !projected || projected.dataDate !== expectedDate;
   });
+  const missingFdeObservations = fdeObservations.filter((item) => {
+    const projected = frontstageFdeDossiers.get(item.implementation_key);
+    return !projected || projected.dataDate !== expectedDate;
+  });
+  const missingHardwareSnapshots = hardwareSnapshots.filter((item) => {
+    const projected = frontstageHardwareCatalog.get(item.snapshot_key);
+    return !projected || projected.dataDate !== expectedDate;
+  });
+  const projectedHardwareFactCount = [...frontstageHardwareCatalog.values()]
+    .reduce((total, item) => total + Number(item.factCount || 0), 0);
+  const missingFunnelLenses = monitoringFunnel
+    .filter((item) => item.date === expectedDate)
+    .filter((item) => frontstageFunnel.get(item.lens)?.date !== expectedDate);
 
   if (missingCompanies.length) failures.push(`Entity Index is missing ${missingCompanies.length} verified organization(s): ${missingCompanies.slice(0, 8).map((item) => item.canonical_name).join(", ")}`);
   if (missingProducts.length) failures.push(`Entity Index is missing ${missingProducts.length} verified product(s): ${missingProducts.slice(0, 8).map((item) => item.canonical_name).join(", ")}`);
   if (missingFde.length) failures.push(`frontstage FDE projection is missing ${missingFde.length} current-batch record(s)`);
   if (missingHardware.length) failures.push(`frontstage hardware projection is missing ${missingHardware.length} current-batch record(s)`);
+  if (missingFdeObservations.length) failures.push(`frontstage FDE dossier projection is missing ${missingFdeObservations.length} current-batch observation(s)`);
+  if (missingHardwareSnapshots.length) failures.push(`frontstage hardware catalog is missing ${missingHardwareSnapshots.length} current-batch snapshot(s)`);
+  if (projectedHardwareFactCount < hardwareFacts.length) failures.push(`frontstage hardware catalog represents ${projectedHardwareFactCount}/${hardwareFacts.length} current-batch fact(s)`);
+  if (missingFunnelLenses.length) failures.push(`frontstage monitoring funnel is missing lens(es): ${missingFunnelLenses.map((item) => item.lens).join(", ")}`);
   if (!fde.length) warnings.push("No source-bounded FDE record was produced for the daily batch.");
   if (!hardware.length) warnings.push("No source-bounded hardware record was produced for the daily batch.");
+  if (!fdeObservations.length) warnings.push("No Claim-native FDE observation was produced for the daily batch.");
+  if (!hardwareFacts.length) warnings.push("No Claim-native hardware fact was produced for the daily batch.");
 
   const mentionedEntities = entities.filter((item) => mentionedEntityIds.has(item.entity_id)).length;
   const acceptedEventsWithEntities = acceptedEvents.filter((item) => (item.entities || []).length > 0).length;
@@ -137,6 +163,10 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
   const projectedProducts = participatingVerifiedProducts.length - missingProducts.length;
   const projectedFde = fde.length - missingFde.length;
   const projectedHardware = hardware.length - missingHardware.length;
+  const projectedFdeObservations = fdeObservations.length - missingFdeObservations.length;
+  const projectedHardwareSnapshots = hardwareSnapshots.length - missingHardwareSnapshots.length;
+  const projectedFunnelLenses = monitoringFunnel.filter((item) => item.date === expectedDate).length - missingFunnelLenses.length;
+  const currentFunnelLenses = monitoringFunnel.filter((item) => item.date === expectedDate).length;
 
   return {
     ok: failures.length === 0,
@@ -150,6 +180,10 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
       verified_event_products: participatingVerifiedProducts.length,
       fde_records: fde.length,
       hardware_records: hardware.length,
+      fde_observations: fdeObservations.length,
+      hardware_facts: hardwareFacts.length,
+      hardware_snapshots: hardwareSnapshots.length,
+      monitoring_funnel_lenses: currentFunnelLenses,
     },
     metrics: {
       entity_mention_coverage: ratio(mentionedEntities, entities.length),
@@ -158,13 +192,28 @@ export function evaluateProjectionCoverage(bundle, frontstage, expectedDate, rev
       entity_index_product_coverage: ratio(projectedProducts, participatingVerifiedProducts.length),
       fde_frontstage_coverage: ratio(projectedFde, fde.length),
       hardware_frontstage_coverage: ratio(projectedHardware, hardware.length),
+      fde_observation_frontstage_coverage: ratio(projectedFdeObservations, fdeObservations.length),
+      hardware_fact_frontstage_coverage: ratio(Math.min(projectedHardwareFactCount, hardwareFacts.length), hardwareFacts.length),
+      hardware_snapshot_frontstage_coverage: ratio(projectedHardwareSnapshots, hardwareSnapshots.length),
+      monitoring_funnel_frontstage_coverage: ratio(projectedFunnelLenses, currentFunnelLenses),
     },
   };
 }
 
 function loadBundle() {
   const dir = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4", date);
-  const names = ["manifest", "entities", "entity-mentions", "canonical-events", "fde-records", "hardware-records"];
+  const names = [
+    "manifest",
+    "entities",
+    "entity-mentions",
+    "canonical-events",
+    "fde-records",
+    "hardware-records",
+    "fde-observations",
+    "hardware-facts",
+    "hardware-snapshots",
+    "monitoring-funnel",
+  ];
   const loaded = Object.fromEntries(names.map((name) => [name.replace(/-/gu, "_"), readJson(path.join(dir, `${name}.json`), null)]));
   if (names.some((name) => loaded[name.replace(/-/gu, "_")] === null)) return null;
   return loaded;
@@ -212,12 +261,19 @@ function runFixtures() {
     canonical_events: [{ event_id: "EV-1", entities: ["EN-1"], publication_status: "verified" }],
     fde_records: [{ fde_id: "FDE-1" }],
     hardware_records: [{ hardware_record_id: "HW-1" }],
+    fde_observations: [{ observation_id: "FDEO-1", implementation_key: "implementation-1" }],
+    hardware_facts: [{ hardware_fact_id: "HWF-1" }],
+    hardware_snapshots: [{ hardware_snapshot_id: "HWS-1", snapshot_key: "snapshot-1" }],
+    monitoring_funnel: [{ funnel_id: "LF-1", lens: "fde", date: "2026-07-17" }],
   };
   const frontstage = {
     meta: { currentDate: "2026-07-17" },
     companies: [{ id: "EN-1" }], products: [],
     fde: [{ id: "FDE-1", dataDate: "2026-07-17" }],
     hardware: [{ id: "HW-1", dataDate: "2026-07-17" }],
+    fdeDossiers: [{ id: "FDED-1", implementationKey: "implementation-1", dataDate: "2026-07-17" }],
+    hardwareCatalog: [{ id: "HWC-1", snapshotKey: "snapshot-1", dataDate: "2026-07-17", factCount: 1 }],
+    monitoringFunnel: [{ funnel_id: "LF-1", lens: "fde", date: "2026-07-17" }],
   };
   const passed = evaluateProjectionCoverage(bundle, frontstage, "2026-07-17");
   const failed = evaluateProjectionCoverage(bundle, { ...frontstage, companies: [] }, "2026-07-17");

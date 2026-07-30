@@ -14,7 +14,11 @@ const requiredTables = [
   "tag_assertions.jsonl",
   "facet_assertions.jsonl",
   "fde_records.jsonl",
+  "fde_observations.jsonl",
   "hardware_records.jsonl",
+  "hardware_facts.jsonl",
+  "hardware_snapshots.jsonl",
+  "monitoring_funnel.jsonl",
 ];
 
 const missing = requiredTables.filter((name) => !fs.existsSync(path.join(tablesDir, name)));

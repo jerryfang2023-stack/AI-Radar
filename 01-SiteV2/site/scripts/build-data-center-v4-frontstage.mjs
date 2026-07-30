@@ -76,6 +76,18 @@ function readJsonl(file) {
     .map((line) => JSON.parse(line));
 }
 
+function writeUtf8(file, content) {
+  for (let attempt = 0; attempt < 25; attempt += 1) {
+    try {
+      fs.writeFileSync(file, content, "utf8");
+      return;
+    } catch (error) {
+      if (!["UNKNOWN", "EBUSY", "EPERM"].includes(error.code) || attempt === 24) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100);
+    }
+  }
+}
+
 function requireMaterializedTables(tables) {
   const required = [
     "canonical_events.jsonl",
@@ -86,7 +98,11 @@ function requireMaterializedTables(tables) {
     "tag_assertions.jsonl",
     "facet_assertions.jsonl",
     "fde_records.jsonl",
+    "fde_observations.jsonl",
     "hardware_records.jsonl",
+    "hardware_facts.jsonl",
+    "hardware_snapshots.jsonl",
+    "monitoring_funnel.jsonl",
   ];
   const missing = required.filter((name) => !fs.existsSync(path.join(tables, name)));
   const canonicalEvents = path.join(tables, "canonical_events.jsonl");
@@ -369,6 +385,125 @@ function buildHardwareRecords(rows, eventsById) {
   }).sort((a, b) => b.dataDate.localeCompare(a.dataDate) || b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 }
 
+function buildFdeDossiers(rows, eventsById) {
+  const groups = new Map();
+  for (const row of rows) {
+    if (!groups.has(row.implementation_key)) groups.set(row.implementation_key, []);
+    groups.get(row.implementation_key).push(row);
+  }
+  return [...groups.entries()].map(([implementationKey, observations]) => {
+    const sorted = [...observations].sort((a, b) => (
+      String(b.observed_at || b.data_date).localeCompare(String(a.observed_at || a.data_date))
+      || String(b.data_date).localeCompare(String(a.data_date))
+    ));
+    const latest = sorted[0];
+    const eventIds = unique(sorted.flatMap((item) => item.event_refs || []));
+    const events = eventIds.map((id) => eventsById.get(id)).filter(Boolean);
+    const customer = sorted.find((item) => item.customer)?.customer || "未披露";
+    const vendor = sorted.find((item) => item.vendor)?.vendor || "未披露";
+    const useCase = sorted.find((item) => item.use_case)?.use_case || "实施场景未披露";
+    const stage = sorted.find((item) => item.lifecycle_stage)?.lifecycle_stage || "";
+    const missingFields = unique(sorted.flatMap((item) => item.completeness?.missing_fields || []));
+    const completeness = sorted.reduce((best, item) => Math.max(best, Number(item.completeness?.ratio || 0)), 0);
+    return {
+      id: `FDED-${implementationKey}`,
+      implementationKey,
+      eventId: eventIds[0] || "",
+      eventIds,
+      dataDate: sorted.map((item) => item.data_date).filter(Boolean).sort().at(-1) || "",
+      date: dateOnly(latest.observed_at || latest.data_date),
+      title: compactText(`${customer} × ${vendor}：${useCase}`, 160),
+      stage,
+      stageLabel: stageLabels[stage] || stage || "未披露",
+      customer,
+      vendor,
+      industry: sorted.find((item) => item.industry)?.industry || "未披露",
+      useCase,
+      workflow: sorted.find((item) => item.workflow)?.workflow || "未披露",
+      systems: unique(sorted.flatMap((item) => item.systems_integrated || [])),
+      outcomes: unique(sorted.flatMap((item) => item.reported_outcomes || [])),
+      observationCount: sorted.length,
+      completeness,
+      completenessPercent: Math.round(completeness * 100),
+      missingFields,
+      timeline: sorted.map((item) => {
+        const eventId = item.event_refs?.[0] || "";
+        const event = eventsById.get(eventId);
+        return {
+          observationId: item.observation_id,
+          type: item.observation_type,
+          stage: item.lifecycle_stage,
+          date: dateOnly(item.observed_at || item.data_date),
+          dataDate: item.data_date,
+          eventId,
+          eventTitle: event?.title || "",
+          claimCount: item.claim_refs?.length || 0,
+          sourceCount: item.source_refs?.length || 0
+        };
+      }),
+      tags: unique(events.flatMap((event) => event.tags || [])),
+      sourceUrl: events.find((event) => event.sourceUrl)?.sourceUrl || "",
+      entityIds: unique(events.flatMap((event) => event.entityIds || []))
+    };
+  }).sort((a, b) => b.dataDate.localeCompare(a.dataDate) || b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+}
+
+function buildHardwareCatalog(snapshotRows, factRows, eventsById) {
+  const factsById = new Map(factRows.map((item) => [item.hardware_fact_id, item]));
+  const groups = new Map();
+  for (const snapshot of snapshotRows) {
+    if (!groups.has(snapshot.snapshot_key)) groups.set(snapshot.snapshot_key, []);
+    groups.get(snapshot.snapshot_key).push(snapshot);
+  }
+  return [...groups.entries()].map(([snapshotKey, snapshots]) => {
+    const sorted = [...snapshots].sort((a, b) => String(b.as_of || b.data_date).localeCompare(String(a.as_of || a.data_date)));
+    const latest = sorted[0];
+    const latestFacts = (latest.fact_refs || []).map((id) => factsById.get(id)).filter(Boolean);
+    const eventIds = unique(sorted.flatMap((item) => item.event_refs || []));
+    const events = eventIds.map((id) => eventsById.get(id)).filter(Boolean);
+    const productNames = unique(sorted.flatMap((item) => item.product_names || []));
+    const factTypes = unique(sorted.flatMap((item) => (item.fact_refs || []).map((id) => factsById.get(id)?.fact_type).filter(Boolean)));
+    const changes = [];
+    for (let index = 0; index < sorted.length - 1; index += 1) {
+      const current = sorted[index];
+      const previous = sorted[index + 1];
+      if (JSON.stringify(current.latest_values) === JSON.stringify(previous.latest_values)) continue;
+      changes.push({
+        date: current.as_of || current.data_date,
+        previousDate: previous.as_of || previous.data_date,
+        snapshotId: current.hardware_snapshot_id,
+        previousSnapshotId: previous.hardware_snapshot_id,
+        changedFacts: Object.keys(current.latest_values || {}).filter((key) => JSON.stringify(current.latest_values?.[key]) !== JSON.stringify(previous.latest_values?.[key]))
+      });
+    }
+    return {
+      id: `HWC-${snapshotKey}`,
+      snapshotKey,
+      snapshotId: latest.hardware_snapshot_id,
+      eventId: eventIds[0] || "",
+      eventIds,
+      dataDate: latest.as_of || latest.data_date || "",
+      date: latest.as_of || latest.data_date || "",
+      title: productNames.join(" / ") || latest.subject_name || latest.component_types?.join(" / ") || "AI 硬件",
+      subject: latest.subject_name,
+      productNames,
+      hardwareType: latest.component_types?.join(" / ") || "未披露",
+      factTypes,
+      latestValues: latest.latest_values || {},
+      factCount: latestFacts.length,
+      snapshotCount: sorted.length,
+      changes,
+      capacityFacts: latestFacts.filter((item) => item.fact_type === "capacity"),
+      supplyFacts: latestFacts.filter((item) => ["supply", "oem_odm", "shipment_deployment"].includes(item.fact_type)),
+      specificationFacts: latestFacts.filter((item) => ["product", "specification"].includes(item.fact_type)),
+      capexFacts: latestFacts.filter((item) => item.fact_type === "capex"),
+      tags: unique(events.flatMap((event) => event.tags || [])),
+      sourceUrl: events.find((event) => event.sourceUrl)?.sourceUrl || "",
+      entityIds: unique(events.flatMap((event) => event.entityIds || []))
+    };
+  }).sort((a, b) => b.dataDate.localeCompare(a.dataDate) || a.title.localeCompare(b.title, "zh-CN"));
+}
+
 function buildCommunity(root) {
   const file = path.join(root, "01-SiteV2/site/data/community-intelligence.json");
   const data = readJson(file, { meta: {}, items: [] });
@@ -515,7 +650,12 @@ export function buildFrontstageData(root = defaultRoot) {
   const entityRows = readJsonl(path.join(tables, "entities.jsonl"));
   const eventsById = new Map(eventRecords.map((item) => [item.id, item]));
   const fde = buildFdeRecords(readJsonl(path.join(tables, "fde_records.jsonl")), eventsById);
+  const fdeDossiers = buildFdeDossiers(readJsonl(path.join(tables, "fde_observations.jsonl")), eventsById);
   const hardware = buildHardwareRecords(readJsonl(path.join(tables, "hardware_records.jsonl")), eventsById);
+  const hardwareFacts = readJsonl(path.join(tables, "hardware_facts.jsonl"));
+  const hardwareCatalog = buildHardwareCatalog(readJsonl(path.join(tables, "hardware_snapshots.jsonl")), hardwareFacts, eventsById);
+  const monitoringFunnel = readJsonl(path.join(tables, "monitoring_funnel.jsonl"))
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)));
   const viewpointData = readJson(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), { meta: {}, builders: [], remarks: [] });
   const reviewDecisions = mergeEntityReviewDecisionSets(
     readJson(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json"), { decisions: [] }),
@@ -555,7 +695,10 @@ export function buildFrontstageData(root = defaultRoot) {
     entityRelationships: entityHistory.relationships,
     entityHistoryManifest: entityHistory.manifest,
     fde,
+    fdeDossiers,
     hardware,
+    hardwareCatalog,
+    monitoringFunnel: monitoringFunnel.filter((item) => item.date === currentDate),
     community: buildCommunity(root),
     viewpoints
   };
@@ -565,7 +708,7 @@ export function writeFrontstageData(root = defaultRoot) {
   const data = buildFrontstageData(root);
   const output = path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json");
   fs.mkdirSync(path.dirname(output), { recursive: true });
-  fs.writeFileSync(output, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  writeUtf8(output, `${JSON.stringify(data, null, 2)}\n`);
   const splitRoot = path.join(root, "01-SiteV2/site/data/data-center-v4");
   const indexesDir = path.join(splitRoot, "indexes");
   const detailsDir = path.join(splitRoot, "details");
@@ -573,7 +716,7 @@ export function writeFrontstageData(root = defaultRoot) {
   const taxonomyDir = path.join(splitRoot, "taxonomy");
   fs.rmSync(splitRoot, { recursive: true, force: true });
   for (const dir of [splitRoot, indexesDir, detailsDir, entitiesDir, taxonomyDir]) fs.mkdirSync(dir, { recursive: true });
-  const writeJson = (file, value) => fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  const writeJson = (file, value) => writeUtf8(file, `${JSON.stringify(value, null, 2)}\n`);
   const compactEvents = data.events.map(({ claims, sources, sourceExcerpt, ...event }) => event);
   writeJson(path.join(indexesDir, "events.json"), { meta: data.meta, eventTypes: data.eventTypes, events: compactEvents });
   writeJson(path.join(indexesDir, "entities.json"), {
@@ -631,12 +774,22 @@ export function writeFrontstageData(root = defaultRoot) {
       } : null
     };
   });
-  writeJson(path.join(indexesDir, "fde.json"), { meta: data.meta, fde: data.fde });
-  writeJson(path.join(indexesDir, "hardware.json"), { meta: data.meta, hardware: data.hardware });
+  writeJson(path.join(indexesDir, "fde.json"), {
+    meta: data.meta,
+    fde: data.fde,
+    fdeDossiers: data.fdeDossiers,
+    monitoringFunnel: data.monitoringFunnel.filter((item) => item.lens === "fde")
+  });
+  writeJson(path.join(indexesDir, "hardware.json"), {
+    meta: data.meta,
+    hardware: data.hardware,
+    hardwareCatalog: data.hardwareCatalog,
+    monitoringFunnel: data.monitoringFunnel.filter((item) => item.lens === "hardware")
+  });
   writeJson(path.join(detailsDir, "events.json"), { meta: data.meta, events: data.events });
   writeJson(path.join(detailsDir, "relationships.json"), { meta: data.meta, relationships: relationshipDetails });
-  writeJson(path.join(detailsDir, "fde.json"), { meta: data.meta, fde: data.fde, events: compactEvents });
-  writeJson(path.join(detailsDir, "hardware.json"), { meta: data.meta, hardware: data.hardware, events: compactEvents });
+  writeJson(path.join(detailsDir, "fde.json"), { meta: data.meta, fde: data.fde, fdeDossiers: data.fdeDossiers, events: compactEvents });
+  writeJson(path.join(detailsDir, "hardware.json"), { meta: data.meta, hardware: data.hardware, hardwareCatalog: data.hardwareCatalog, events: compactEvents });
 
   const profileById = new Map(data.entityProfiles.map((profile) => [profile.id, profile]));
   const nodeById = new Map(data.taxonomyNodes.map((node) => [node.id, node]));
@@ -654,17 +807,26 @@ export function writeFrontstageData(root = defaultRoot) {
       fde: data.fde.filter((item) => item.entityIds.includes(profile.id)),
       hardware: data.hardware.filter((item) => item.entityIds.includes(profile.id))
     };
+    const fdeDossiers = data.fdeDossiers.filter((item) => item.entityIds.includes(profile.id));
+    const hardwareCatalog = data.hardwareCatalog.filter((item) => item.entityIds.includes(profile.id));
+    if (fdeDossiers.length) payload.fdeDossiers = fdeDossiers;
+    if (hardwareCatalog.length) payload.hardwareCatalog = hardwareCatalog;
     writeJson(path.join(entitiesDir, `${profile.id}.json`), payload);
   }
   for (const node of data.taxonomyNodes) {
-    writeJson(path.join(taxonomyDir, `${node.id}.json`), {
+    const payload = {
       meta: data.meta,
       node,
       events: node.eventIds.map((id) => compactEvents.find((event) => event.id === id)).filter(Boolean),
       entities: node.entityIds.map((id) => profileById.get(id)).filter(Boolean).map(({ timeline, viewpoints, groupedEventIds, relationIds, ...item }) => item),
       fde: data.fde.filter((item) => node.fdeIds.includes(item.id)),
       hardware: data.hardware.filter((item) => node.hardwareIds.includes(item.id))
-    });
+    };
+    const fdeDossiers = data.fdeDossiers.filter((item) => item.eventIds.some((id) => node.eventIds.includes(id)));
+    const hardwareCatalog = data.hardwareCatalog.filter((item) => item.eventIds.some((id) => node.eventIds.includes(id)));
+    if (fdeDossiers.length) payload.fdeDossiers = fdeDossiers;
+    if (hardwareCatalog.length) payload.hardwareCatalog = hardwareCatalog;
+    writeJson(path.join(taxonomyDir, `${node.id}.json`), payload);
   }
   const manifest = {
     productVersion: data.meta.productVersion,
@@ -682,7 +844,9 @@ export function writeFrontstageData(root = defaultRoot) {
       taxonomyNodes: data.taxonomyNodes.length,
       relationships: data.entityRelationships.length,
       fde: data.fde.length,
-      hardware: data.hardware.length
+      fdeDossiers: data.fdeDossiers.length,
+      hardware: data.hardware.length,
+      hardwareCatalog: data.hardwareCatalog.length
     },
     paths: {
       eventsIndex: "data/data-center-v4/indexes/events.json",
@@ -713,7 +877,9 @@ function main() {
       companies: data.companies.length,
       products: data.products.length,
       fde: data.fde.length,
+      fdeDossiers: data.fdeDossiers.length,
       hardware: data.hardware.length,
+      hardwareCatalog: data.hardwareCatalog.length,
       community: data.community.length,
       viewpoints: data.viewpoints.length
     }

@@ -109,7 +109,8 @@ export function readBundle(date) {
   const names = [
     "manifest", "source-artifacts", "raw-documents", "claims", "entities", "entity-mentions",
     "canonical-events", "event-sources", "event-claims", "event-conflicts", "relationships", "tag-assertions",
-    "facet-assertions", "fde-records", "hardware-records", "qa-queue", "legacy-asset-mappings"
+    "facet-assertions", "fde-records", "fde-observations", "hardware-records", "hardware-facts",
+    "hardware-snapshots", "monitoring-funnel", "qa-queue", "legacy-asset-mappings"
   ];
   return Object.fromEntries(names.flatMap((name) => {
     const file = path.join(dir, `${name}.json`);
@@ -146,7 +147,11 @@ export function evaluateBundle(bundle, taxonomy) {
   if (bundle.manifest.raw_version !== "RAW-V3.0") failures.push("manifest raw_version mismatch");
   if (bundle.manifest.event_version !== "EVENT-V1.1") failures.push("manifest event_version mismatch");
   if (bundle.manifest.fde_version !== "FDE-V2.0") failures.push("manifest fde_version mismatch");
+  if (bundle.manifest.fde_observation_version !== "FDE-OBSERVATION-V1.0") failures.push("manifest fde_observation_version mismatch");
   if (bundle.manifest.hardware_version !== "HARDWARE-V1.0") failures.push("manifest hardware_version mismatch");
+  if (bundle.manifest.hardware_fact_version !== "HARDWARE-FACT-V1.0") failures.push("manifest hardware_fact_version mismatch");
+  if (bundle.manifest.hardware_snapshot_version !== "HARDWARE-SNAPSHOT-V1.0") failures.push("manifest hardware_snapshot_version mismatch");
+  if (bundle.manifest.monitoring_funnel_version !== "LENS-FUNNEL-V1.0") failures.push("manifest monitoring_funnel_version mismatch");
   if (bundle.manifest.tag_version !== "TAG-V4.0") failures.push("manifest tag_version mismatch");
 
   const forbidden = forbiddenKeys(Object.fromEntries(Object.entries(bundle).filter(([name]) => name !== "manifest")));
@@ -256,6 +261,16 @@ export function evaluateBundle(bundle, taxonomy) {
     if (record.source_refs.some((id) => !sourceIds.has(id) || !event?.source_refs.includes(id))) failures.push(`${record.fde_id}: FDE source_refs invalid`);
   }
 
+  failures.push(...duplicateIds(bundle.fde_observations, "observation_id", "fde_observations"));
+  for (const observation of bundle.fde_observations) {
+    if (!observation.claim_refs.length || observation.claim_refs.some((id) => !claimById.has(id))) failures.push(`${observation.observation_id}: FDE observation claim_refs invalid`);
+    if (!observation.source_refs.length || observation.source_refs.some((id) => !sourceIds.has(id))) failures.push(`${observation.observation_id}: FDE observation source_refs invalid`);
+    if (observation.event_refs.some((id) => !eventById.has(id))) failures.push(`${observation.observation_id}: FDE observation event_refs invalid`);
+    if (observation.completeness.resolved_fields + observation.completeness.missing_fields.length !== observation.completeness.total_fields) {
+      failures.push(`${observation.observation_id}: FDE observation completeness counts inconsistent`);
+    }
+  }
+
   for (const record of bundle.hardware_records) {
     const event = eventById.get(record.event_id);
     if (!event) failures.push(`${record.hardware_record_id}: event_id does not resolve`);
@@ -264,6 +279,32 @@ export function evaluateBundle(bundle, taxonomy) {
     if (!record.claim_refs.length || !record.source_refs.length) failures.push(`${record.hardware_record_id}: evidence refs missing`);
     if (record.claim_refs.some((id) => !claimById.has(id) || !event?.claim_refs.includes(id))) failures.push(`${record.hardware_record_id}: hardware claim_refs invalid`);
     if (record.source_refs.some((id) => !sourceIds.has(id) || !event?.source_refs.includes(id))) failures.push(`${record.hardware_record_id}: hardware source_refs invalid`);
+  }
+
+  failures.push(...duplicateIds(bundle.hardware_facts, "hardware_fact_id", "hardware_facts"));
+  const hardwareFactIds = new Set(bundle.hardware_facts.map((item) => item.hardware_fact_id));
+  for (const fact of bundle.hardware_facts) {
+    if (!claimById.has(fact.claim_ref)) failures.push(`${fact.hardware_fact_id}: hardware fact claim_ref invalid`);
+    if (!fact.source_refs.length || fact.source_refs.some((id) => !sourceIds.has(id))) failures.push(`${fact.hardware_fact_id}: hardware fact source_refs invalid`);
+    if (fact.event_refs.some((id) => !eventById.has(id))) failures.push(`${fact.hardware_fact_id}: hardware fact event_refs invalid`);
+    const claim = claimById.get(fact.claim_ref);
+    if (claim && normalize(claim.source_quote) !== normalize(fact.source_quote)) failures.push(`${fact.hardware_fact_id}: hardware fact quote differs from Claim`);
+  }
+
+  failures.push(...duplicateIds(bundle.hardware_snapshots, "hardware_snapshot_id", "hardware_snapshots"));
+  for (const snapshot of bundle.hardware_snapshots) {
+    if (snapshot.fact_refs.some((id) => !hardwareFactIds.has(id))) failures.push(`${snapshot.hardware_snapshot_id}: snapshot fact_refs invalid`);
+    if (snapshot.claim_refs.some((id) => !claimById.has(id))) failures.push(`${snapshot.hardware_snapshot_id}: snapshot claim_refs invalid`);
+    if (snapshot.source_refs.some((id) => !sourceIds.has(id))) failures.push(`${snapshot.hardware_snapshot_id}: snapshot source_refs invalid`);
+    if (snapshot.event_refs.some((id) => !eventById.has(id))) failures.push(`${snapshot.hardware_snapshot_id}: snapshot event_refs invalid`);
+  }
+
+  failures.push(...duplicateIds(bundle.monitoring_funnel, "funnel_id", "monitoring_funnel"));
+  for (const funnel of bundle.monitoring_funnel) {
+    if (funnel.original_sources > funnel.raw_documents) failures.push(`${funnel.funnel_id}: original_sources exceeds raw_documents`);
+    for (const [name, value] of Object.entries(funnel.rates)) {
+      if (!Number.isFinite(value) || value < 0 || value > 1) failures.push(`${funnel.funnel_id}: invalid ${name}`);
+    }
   }
 
   if (!bundle.canonical_events.length) warnings.push("No canonical event was produced; Raw data remains available and the day requires coverage review.");
@@ -281,6 +322,9 @@ export function evaluateBundle(bundle, taxonomy) {
       ai_industry_scope_coverage: bundle.canonical_events.length ? aiIndustryEventCount / bundle.canonical_events.length : 1,
       tag_evidence_coverage: bundle.tag_assertions.length ? bundle.tag_assertions.filter((item) => item.evidence_ref && item.source_span).length / bundle.tag_assertions.length : 1,
       facet_evidence_coverage: bundle.facet_assertions.length ? bundle.facet_assertions.filter((item) => item.evidence_ref && item.source_span).length / bundle.facet_assertions.length : 1
+      ,
+      fde_observation_traceability: bundle.fde_observations.length ? bundle.fde_observations.filter((item) => item.claim_refs.length && item.source_refs.length).length / bundle.fde_observations.length : 1,
+      hardware_fact_traceability: bundle.hardware_facts.length ? bundle.hardware_facts.filter((item) => item.claim_ref && item.source_refs.length).length / bundle.hardware_facts.length : 1
     }
   };
 }
@@ -376,12 +420,17 @@ function markdownReport(date, result) {
     `- tag_assertions: ${result.counts.tag_assertions}`,
     `- facet_assertions: ${result.counts.facet_assertions}`,
     `- fde_records: ${result.counts.fde_records}`,
+    `- fde_observations: ${result.counts.fde_observations}`,
     `- hardware_records: ${result.counts.hardware_records}`,
+    `- hardware_facts: ${result.counts.hardware_facts}`,
+    `- hardware_snapshots: ${result.counts.hardware_snapshots}`,
     `- event_source_traceability: ${(result.metrics.canonical_event_source_traceability * 100).toFixed(1)}%`,
     `- event_claim_traceability: ${(result.metrics.canonical_event_claim_traceability * 100).toFixed(1)}%`,
     `- ai_industry_scope_coverage: ${(result.metrics.ai_industry_scope_coverage * 100).toFixed(1)}%`,
     `- tag_evidence_coverage: ${(result.metrics.tag_evidence_coverage * 100).toFixed(1)}%`,
     `- facet_evidence_coverage: ${(result.metrics.facet_evidence_coverage * 100).toFixed(1)}%`,
+    `- fde_observation_traceability: ${(result.metrics.fde_observation_traceability * 100).toFixed(1)}%`,
+    `- hardware_fact_traceability: ${(result.metrics.hardware_fact_traceability * 100).toFixed(1)}%`,
     `- current_raw_snapshot_coverage: ${((result.metrics.current_raw_snapshot_coverage ?? 1) * 100).toFixed(1)}%`,
     `- current_raw_snapshots: ${result.metrics.current_raw_snapshot_count ?? "not checked"}`,
     "",

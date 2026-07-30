@@ -1850,5 +1850,233 @@
         "EN-6fcba5d96a4fadfd"
       ]
     }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-3683dc7749e573b7",
+      "snapshotKey": "3683dc7749e573b7",
+      "snapshotId": "HWS-2745b9f64d003dc6",
+      "eventId": "EV-5772d3b77ffa73e2",
+      "eventIds": [
+        "EV-5772d3b77ffa73e2"
+      ],
+      "dataDate": "2026-07-30",
+      "date": "2026-07-30",
+      "title": "MIX-Q870A1",
+      "subject": "研扬",
+      "productNames": [
+        "MIX-Q870A1"
+      ],
+      "hardwareType": "semiconductor / ai_accelerator",
+      "factTypes": [
+        "product",
+        "specification"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-3941ad53fe8cf1c0"
+        },
+        "specification": {
+          "metric_value": "36",
+          "unit": "TOPS",
+          "fact_ref": "HWF-4868512407055c84"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-30",
+          "hardware_fact_id": "HWF-3941ad53fe8cf1c0",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T00:32:59.000Z",
+          "subject_entity_id": "EN-0281afdb2d56c1e6",
+          "subject_name": "研扬",
+          "product_entity_ids": [
+            "EN-1aea1d505ca03758"
+          ],
+          "product_names": [
+            "MIX-Q870A1"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 30 日消息，研扬科技（AAEON）昨日（7 月 29 日）宣布推出 MIX-Q870A1，定位高端 Mini-ITX 主板， 最高支持 65W 的英特尔酷睿 Ultra 200S 系列 LGA 1851 插槽处理器。",
+          "event_refs": [
+            "EV-5772d3b77ffa73e2"
+          ],
+          "claim_ref": "CL-7999269e355ce9be",
+          "source_refs": [
+            "SA-e1cdf904b0adbd1b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-30",
+          "hardware_fact_id": "HWF-4868512407055c84",
+          "fact_type": "specification",
+          "observed_at": "2026-07-30T00:32:59.000Z",
+          "subject_entity_id": "EN-0281afdb2d56c1e6",
+          "subject_name": "研扬",
+          "product_entity_ids": [
+            "EN-1aea1d505ca03758"
+          ],
+          "product_names": [
+            "MIX-Q870A1"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "36",
+          "unit": "TOPS",
+          "source_quote": "兼容性方面，MIX-Q870A1 主板兼容第二代英特尔酷睿 Ultra 处理器系列多种 SKU 规格，支持调用 NPU 和 Xe LPG 核显加速 AI 任务， 最高提供 36 TOPS 算力。",
+          "event_refs": [
+            "EV-5772d3b77ffa73e2"
+          ],
+          "claim_ref": "CL-a7cfae1d04a3dbe4",
+          "source_refs": [
+            "SA-e1cdf904b0adbd1b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/389.htm",
+      "entityIds": [
+        "EN-0281afdb2d56c1e6",
+        "EN-1aea1d505ca03758"
+      ]
+    },
+    {
+      "id": "HWC-cf18afecf1eecd7f",
+      "snapshotKey": "cf18afecf1eecd7f",
+      "snapshotId": "HWS-76ba0a1b22539032",
+      "eventId": "EV-0a4e9b2eca953036",
+      "eventIds": [
+        "EV-0a4e9b2eca953036"
+      ],
+      "dataDate": "2026-07-30",
+      "date": "2026-07-30",
+      "title": "SEi13 AI / SEi14 AI",
+      "subject": "零刻",
+      "productNames": [
+        "SEi13 AI",
+        "SEi14 AI"
+      ],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "160",
+          "unit": "TOPS",
+          "fact_ref": "HWF-149a6872c305ef4c"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-30",
+          "hardware_fact_id": "HWF-69c596fdd02f9a50",
+          "fact_type": "product",
+          "observed_at": "2026-07-29T10:32:11.000Z",
+          "subject_entity_id": "EN-36b1dbc8da066a19",
+          "subject_name": "零刻",
+          "product_entity_ids": [
+            "EN-7a03939835d5eee2",
+            "EN-3e134fc2d861146f"
+          ],
+          "product_names": [
+            "SEi13 AI",
+            "SEi14 AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "160",
+          "unit": "TOPS",
+          "source_quote": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：搭载最高 160TOPS 算力独立 NPU，11895 元起 - IT之家",
+          "event_refs": [
+            "EV-0a4e9b2eca953036"
+          ],
+          "claim_ref": "CL-5c9b1f72fc185015",
+          "source_refs": [
+            "SA-7341cf49c95d3ef7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-30",
+          "hardware_fact_id": "HWF-149a6872c305ef4c",
+          "fact_type": "product",
+          "observed_at": "2026-07-29T10:32:11.000Z",
+          "subject_entity_id": "EN-36b1dbc8da066a19",
+          "subject_name": "零刻",
+          "product_entity_ids": [
+            "EN-7a03939835d5eee2",
+            "EN-3e134fc2d861146f"
+          ],
+          "product_names": [
+            "SEi13 AI",
+            "SEi14 AI"
+          ],
+          "component_type": "ai_accelerator",
+          "metric_value": "160",
+          "unit": "TOPS",
+          "source_quote": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：搭载最高 160TOPS 算力独立 NPU，11895 元起",
+          "event_refs": [
+            "EV-0a4e9b2eca953036"
+          ],
+          "claim_ref": "CL-d6d1216893640b3c",
+          "source_refs": [
+            "SA-7341cf49c95d3ef7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/263.htm",
+      "entityIds": [
+        "EN-36b1dbc8da066a19",
+        "EN-7a03939835d5eee2",
+        "EN-3e134fc2d861146f"
+      ]
+    }
+  ],
+  "monitoringFunnel": [
+    {
+      "data_date": "2026-07-30",
+      "funnel_id": "LF-1752bf7b55128e49",
+      "lens": "hardware",
+      "date": "2026-07-30",
+      "monitoring_paths": [
+        "ai_hardware_original"
+      ],
+      "raw_documents": 11,
+      "original_sources": 10,
+      "valid_claims": 13,
+      "observations": 4,
+      "canonical_events": 4,
+      "blocker_counts": {
+        "no_source_bounded_event": 5,
+        "non_event_or_index_title": 1,
+        "raw_document_not_auditable": 1
+      },
+      "rates": {
+        "original_source_rate": 0.9090909090909091,
+        "valid_claim_rate": 1,
+        "observation_rate": 0.3076923076923077,
+        "event_conversion_rate": 0.3076923076923077
+      },
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-30/monitoring-funnel.json"
+    }
   ]
 }

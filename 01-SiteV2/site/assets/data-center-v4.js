@@ -36,8 +36,8 @@
     events: { title: "商业事件", description: "AI 行业商业事件数据库", detail: "event", dataKey: "events", placeholder: "搜索商业事件标题、公司、产品或关键词" },
     index: { title: "产业档案", description: "公司机构、产品模型与人物的证据化历史档案", placeholder: "搜索公司、产品、模型、人物或别名" },
     relations: { title: "关系图谱", description: "选择一个实体，查看由事件、原文 Claim 和来源共同验证的一跳商业关系", dataKey: "relationships", placeholder: "搜索公司、产品、模型或人物" },
-    fde: { title: "FDE 实施", description: "企业 AI 实施记录", detail: "fde", dataKey: "fde", placeholder: "搜索客户、服务商、行业或场景" },
-    hardware: { title: "AI 硬件", description: "硬件产品、供应与部署记录", detail: "hardware", dataKey: "hardware", placeholder: "搜索硬件、供应方或客户" },
+    fde: { title: "FDE 实施", description: "实施档案、生命周期与事实完整度", detail: "fde", dataKey: "fdeDossiers", placeholder: "搜索客户、服务商、工作流、系统或场景" },
+    hardware: { title: "AI 硬件", description: "产品规格目录、产能供应面板与变化时间线", detail: "hardware", dataKey: "hardwareCatalog", placeholder: "搜索产品、规格、产能、供应方或部署" },
     community: { title: "社群情报", description: "社群来源的一线材料", detail: "community", dataKey: "community", placeholder: "搜索标题、正文关键词或作者" },
     viewpoints: { title: "一线观点", description: "建设者与从业者公开观点", detail: "viewpoint", dataKey: "viewpoints", placeholder: "搜索观点、人物或机构" }
   };
@@ -321,7 +321,7 @@
     } else if (targetView === "fde") {
       if (monthlyProjectionMode(targetView)) items = items.filter((item) => item.dataDate.startsWith(`${currentDataMonth(data)}-`));
       items = items.filter((item) => (
-        matchesQuery(item, ["title", "customer", "vendor", "industry", "useCase", "reportedNeed"], query)
+        matchesQuery(item, ["title", "customer", "vendor", "industry", "useCase", "workflow", "systems", "outcomes"], query)
         && (!stage || item.stage === stage)
         && (!industry || item.industry === industry)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
@@ -331,7 +331,7 @@
     } else if (targetView === "hardware") {
       if (monthlyProjectionMode(targetView)) items = items.filter((item) => item.dataDate.startsWith(`${currentDataMonth(data)}-`));
       items = items.filter((item) => (
-        matchesQuery(item, ["title", "hardwareType", "supplier", "customer", "region"], query)
+        matchesQuery(item, ["title", "subject", "productNames", "hardwareType", "factTypes", "latestValues"], query)
         && (!type || item.hardwareType === type)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
         && (!from || item.dataDate >= from)
@@ -469,6 +469,36 @@
     `;
   }
 
+  function renderLensOverview(data, targetView, items) {
+    if (!["fde", "hardware"].includes(targetView)) return "";
+    const funnel = (data.monitoringFunnel || data.meta.monitoringFunnel || []).find((item) => item.lens === targetView);
+    const metrics = funnel ? [
+      ["原始来源率", `${Math.round(funnel.rates.original_source_rate * 100)}%`],
+      ["有效 Claim 率", `${Math.round(funnel.rates.valid_claim_rate * 100)}%`],
+      ["观察记录率", `${Math.round(funnel.rates.observation_rate * 100)}%`],
+      ["事件转化率", `${Math.round(funnel.rates.event_conversion_rate * 100)}%`]
+    ] : [];
+    const primary = targetView === "fde"
+      ? [
+          ["实施档案", items.length],
+          ["观察记录", items.reduce((sum, item) => sum + Number(item.observationCount || 0), 0)],
+          ["平均完整度", items.length ? `${Math.round(items.reduce((sum, item) => sum + Number(item.completeness || 0), 0) / items.length * 100)}%` : "0%"]
+        ]
+      : [
+          ["产品 / 实体", items.length],
+          ["事实记录", items.reduce((sum, item) => sum + Number(item.factCount || 0), 0)],
+          ["状态快照", items.reduce((sum, item) => sum + Number(item.snapshotCount || 0), 0)],
+          ["已识别变化", items.reduce((sum, item) => sum + Number(item.changes?.length || 0), 0)]
+        ];
+    const blockers = Object.entries(funnel?.blocker_counts || {}).sort((a, b) => b[1] - a[1]).slice(0, 4);
+    return `
+      <section class="dc-lens-overview" aria-label="${targetView === "fde" ? "FDE 实施档案概览" : "AI 硬件事实概览"}">
+        <div class="dc-lens-metrics">${[...primary, ...metrics].map(([label, value]) => `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join("")}</div>
+        ${blockers.length ? `<p class="dc-lens-blockers"><strong>当前阻塞：</strong>${blockers.map(([reason, count]) => `${escapeHtml(reason)} ${count}`).join(" · ")}</p>` : ""}
+      </section>
+    `;
+  }
+
   function rowData(item, targetView, showDate) {
     if (targetView === "events") {
       return {
@@ -496,10 +526,10 @@
     if (targetView === "fde") {
       return {
         kind: item.stageLabel,
-        date: `采集 ${item.dataDate}`,
-        secondaryDate: `事件 ${item.date}`,
+        date: `更新 ${item.dataDate}`,
+        secondaryDate: `${item.observationCount} 条观察 · 完整度 ${item.completenessPercent}%`,
         title: item.title,
-        sub: "",
+        sub: item.workflow === "未披露" ? "" : item.workflow,
         tags: item.tags,
         href: detailLink("fde", "fde", item.id)
       };
@@ -507,10 +537,10 @@
     if (targetView === "hardware") {
       return {
         kind: item.hardwareType,
-        date: `采集 ${item.dataDate}`,
-        secondaryDate: `事件 ${item.date}`,
+        date: `快照 ${item.dataDate}`,
+        secondaryDate: `${item.factCount} 条事实 · ${item.snapshotCount} 个快照`,
         title: item.title,
-        sub: `来源：${item.sourceName || "来源未披露"}`,
+        sub: item.factTypes.join(" · "),
         tags: item.tags,
         href: detailLink("hardware", "hardware", item.id)
       };
@@ -885,6 +915,7 @@
     const items = allItems.slice((current - 1) * pageSize, current * pageSize);
     root.innerHTML = `
       ${pageHead(data, targetView, allItems.length)}
+      ${renderLensOverview(data, targetView, allItems)}
       ${renderToolbar(data, targetView)}
       ${targetView === "index" ? renderIndexSwitch(data) : ""}
       ${renderRows(items, targetView, !isCurrentEventBatch)}
@@ -1753,8 +1784,8 @@
   function eventDetail(data, event) {
     const companies = data.companies.filter((item) => event.entityIds.includes(item.id));
     const products = data.products.filter((item) => item.eventIds.includes(event.id));
-    const fde = data.fde.filter((item) => item.eventId === event.id);
-    const hardware = data.hardware.filter((item) => item.eventId === event.id);
+    const fde = data.fdeDossiers.filter((item) => item.eventIds.includes(event.id));
+    const hardware = data.hardwareCatalog.filter((item) => item.eventIds.includes(event.id));
     const eventTagNames = normalizeTags(event.tags).map((tag) => tag.name);
     const community = data.community.filter((item) => item.tags.some((tag) => eventTagNames.includes(tag))).slice(0, 3);
     const viewpoints = data.viewpoints.filter((item) => item.tags.some((tag) => eventTagNames.includes(tag))).slice(0, 3);
@@ -1807,8 +1838,8 @@
   function companyDetail(data, company) {
     const events = data.events.filter((item) => company.eventIds.includes(item.id));
     const products = data.products.filter((item) => company.productIds.includes(item.id));
-    const fde = data.fde.filter((item) => item.entityIds.includes(company.id));
-    const hardware = data.hardware.filter((item) => item.entityIds.includes(company.id));
+    const fde = data.fdeDossiers.filter((item) => item.entityIds.includes(company.id));
+    const hardware = data.hardwareCatalog.filter((item) => item.entityIds.includes(company.id));
     return `
       ${breadcrumb("index", company.name)}
       <header class="dc-detail-head">
@@ -1830,7 +1861,7 @@
   function productDetail(data, product) {
     const events = data.events.filter((item) => product.eventIds.includes(item.id));
     const companies = data.companies.filter((item) => product.companyIds.includes(item.id));
-    const fde = data.fde.filter((item) => item.eventId && product.eventIds.includes(item.eventId));
+    const fde = data.fdeDossiers.filter((item) => item.eventIds.some((id) => product.eventIds.includes(id)));
     return `
       ${breadcrumb("index", product.name)}
       <header class="dc-detail-head">
@@ -1908,8 +1939,8 @@
           ${(payload.taxonomyNodes || []).length ? `<section class="dc-side-block"><h2>关联分类</h2><div class="dc-side-list">${payload.taxonomyNodes.map((node) => `<a href="${escapeHtml(detailLink("index", "taxonomy", node.id))}">${escapeHtml(node.name)}</a>`).join("")}</div></section>` : ""}
         </aside>
       </div>
-      ${(payload.fde || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fde, "fde")}</section>` : ""}
-      ${(payload.hardware || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardware, "hardware")}</section>` : ""}
+      ${(payload.fdeDossiers || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fdeDossiers, "fde")}</section>` : ""}
+      ${(payload.hardwareCatalog || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardwareCatalog, "hardware")}</section>` : ""}
       ${viewpoints.length ? `<section class="dc-related-section dc-entity-viewpoints"><h2>一线观点</h2><div class="dc-list">${viewpoints.map((item) => `<div class="dc-list-row"><span class="dc-row-kind">${escapeHtml(item.date)}</span><span class="dc-row-title">${escapeHtml(item.title)}</span></div>`).join("")}</div></section>` : ""}
     `;
   }
@@ -1929,8 +1960,8 @@
           ${entities.length ? `<section class="dc-side-block"><h2>相关实体</h2><div class="dc-side-list">${entities.slice(0, 30).map((item) => `<a href="${escapeHtml(detailLink("index", "entity", item.id))}">${escapeHtml(item.name)}</a>`).join("")}</div></section>` : ""}
         </aside>
       </div>
-      ${(payload.fde || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fde, "fde")}</section>` : ""}
-      ${(payload.hardware || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardware, "hardware")}</section>` : ""}
+      ${(payload.fdeDossiers || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fdeDossiers, "fde")}</section>` : ""}
+      ${(payload.hardwareCatalog || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardwareCatalog, "hardware")}</section>` : ""}
     `;
   }
 
@@ -1953,11 +1984,14 @@
       <header class="dc-detail-head"><h1>${escapeHtml(item.title)}</h1><div class="dc-detail-meta"><span>${escapeHtml(item.date)}</span><span>${escapeHtml(item.stageLabel)}</span>${renderTags(item.tags, 5)}</div></header>
       <div class="dc-detail-grid">
         <article class="dc-detail-main">
-          <section class="dc-detail-section"><h2>实施事实</h2><dl class="dc-facts">
+          <section class="dc-detail-section"><h2>实施档案</h2><dl class="dc-facts">
             ${fact("客户", item.customer)}${fact("服务商", item.vendor)}${fact("行业", item.industry)}${fact("使用场景", item.useCase)}
-            ${fact("已披露需求", item.reportedNeed)}${fact("交付组成", item.deliveryComponents)}${fact("已披露结果", item.outcomes)}
-            ${fact("披露指标", item.metrics)}
+            ${fact("工作流", item.workflow)}${fact("集成系统", item.systems)}${fact("已披露结果", item.outcomes)}
+            ${fact("生命周期阶段", item.stageLabel)}${fact("事实完整度", `${item.completenessPercent}%`)}${fact("未披露字段", item.missingFields)}
           </dl></section>
+          <section class="dc-detail-section"><h2>实施生命周期</h2>
+            <div class="dc-lifecycle">${item.timeline.map((entry) => `<div><time>${escapeHtml(entry.date || entry.dataDate)}</time><strong>${escapeHtml(entry.stage || entry.type)}</strong><span>${escapeHtml(entry.eventTitle || `${entry.claimCount} 条 Claim`)}</span></div>`).join("")}</div>
+          </section>
           ${sourceUrl ? `<section class="dc-detail-section"><h2>原始来源</h2><a class="dc-source-link" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">打开原始来源</a></section>` : ""}
         </article>
         <aside class="dc-detail-side">${event ? `<section class="dc-side-block"><h2>原始事件</h2><div class="dc-side-list"><a href="${escapeHtml(detailLink("events", "event", event.id))}">${escapeHtml(event.title)}</a></div></section>` : ""}</aside>
@@ -1970,14 +2004,21 @@
     const sourceUrl = safeExternalUrl(item.sourceUrl);
     return `
       ${breadcrumb("hardware", item.title)}
-      <header class="dc-detail-head"><h1>${escapeHtml(item.title)}</h1><div class="dc-detail-meta"><span>${escapeHtml(item.date)}</span><span>${escapeHtml(item.eventTypeLabel)}</span>${renderTags(item.tags, 5)}</div></header>
+      <header class="dc-detail-head"><h1>${escapeHtml(item.title)}</h1><div class="dc-detail-meta"><span>${escapeHtml(item.date)}</span><span>${escapeHtml(item.hardwareType)}</span>${renderTags(item.tags, 5)}</div></header>
       <div class="dc-detail-grid">
         <article class="dc-detail-main">
-          <section class="dc-detail-section"><h2>硬件事实</h2><dl class="dc-facts">
-            ${fact("部件", item.hardwareType)}${fact("算力层级", item.computeLayer)}${fact("供应方", item.supplier)}${fact("客户", item.customer)}
-            ${fact("制程", item.processNode)}${fact("容量", item.capacity === "未披露" ? item.capacity : `${item.capacity} ${item.capacityUnit}`.trim())}
-            ${fact("地点", item.site)}${fact("区域", item.region)}${fact("金额", item.contractValue)}${fact("出货日期", item.shipmentDate)}
+          <section class="dc-detail-section"><h2>产品与规格目录</h2><dl class="dc-facts">
+            ${fact("主体", item.subject)}${fact("产品 / 型号", item.productNames)}${fact("部件", item.hardwareType)}
+            ${fact("事实类型", item.factTypes)}${fact("最新状态", Object.entries(item.latestValues).map(([key, state]) => `${key}: ${state.metric_value || "已披露"} ${state.unit || ""}`.trim()))}
           </dl></section>
+          <section class="dc-detail-section"><h2>产能与供应</h2><dl class="dc-facts">
+            ${fact("产能事实", item.capacityFacts.map((entry) => entry.source_quote))}
+            ${fact("供应 / 出货 / 部署", item.supplyFacts.map((entry) => entry.source_quote))}
+            ${fact("资本开支", item.capexFacts.map((entry) => entry.source_quote))}
+          </dl></section>
+          <section class="dc-detail-section"><h2>变化时间线</h2>
+            ${item.changes.length ? `<div class="dc-lifecycle">${item.changes.map((change) => `<div><time>${escapeHtml(change.date)}</time><strong>${escapeHtml(change.changedFacts.join(" / "))}</strong><span>相较 ${escapeHtml(change.previousDate)} 的状态快照发生变化</span></div>`).join("")}</div>` : '<p class="dc-prose">当前为首个状态快照；后续事实更新将自动形成差异记录。</p>'}
+          </section>
           <section class="dc-detail-section">
             <h2>原始来源</h2>
             ${sourceUrl
@@ -2025,8 +2066,8 @@
       event: ["events", eventDetail],
       company: ["companies", companyDetail],
       product: ["products", productDetail],
-      fde: ["fde", fdeDetail],
-      hardware: ["hardware", hardwareDetail],
+      fde: ["fdeDossiers", fdeDetail],
+      hardware: ["hardwareCatalog", hardwareDetail],
       community: ["community", (_data, item) => communityDetail(item)],
       viewpoint: ["viewpoints", (_data, item) => viewpointDetail(item)]
     };

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: product-map
-last_updated: 2026-07-29
+last_updated: 2026-07-30
 use_when:
   - product planning
   - page or navigation decisions
@@ -19,8 +19,8 @@ priority: current
 | Event Database | Normalized factual events with status, evidence, conflicts and revisions | Active data layer |
 | Entity Registry | Stable company/organization, product/model/service, and person IDs with aliases and verification state | Active data layer |
 | Entity Profiles | Cross-day factual timelines and grouped event histories for stable entities | Active serving layer |
-| FDE Database | Source-bounded enterprise implementation projections | Active domain projection |
-| AI Hardware Database | Source-bounded hardware product, capacity, supply and deployment projections | Active domain projection |
+| FDE Database | Claim-native implementation observations aggregated into multi-source dossiers and lifecycle timelines | Active domain projection |
+| AI Hardware Database | Claim-native hardware facts aggregated into dated product, capacity, supply and deployment snapshots | Active domain projection |
 | Business Signals | Structured intake, accepted V4 commercial events, and downstream evidence projections | Active V4-native production |
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
 | Relationship data | RELATION-V2 typed endpoints backed by event, Claim, and source references only | Active factual data layer |
@@ -55,9 +55,9 @@ Daily monitor / BACKFILL-V1 targeted discovery
 -> SourceArtifact
 -> RawDocument
 -> Claim / Entity
--> CanonicalEvent
--> Entity Registry / Entity Profiles / RELATION-V2
--> FDE / Hardware projection
+|-> CanonicalEvent -> Entity Registry / Entity Profiles / RELATION-V2
+|-> FDEObservation -> implementation dossier / lifecycle
+`-> HardwareFact -> dated snapshot -> factual change timeline
 -> JSON / JSONL / DuckDB
 -> Trend Radar / Funding Insights / Opportunity Map / Reports
 -> downstream AIP / insight / decision-support applications

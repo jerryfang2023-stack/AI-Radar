@@ -2,7 +2,7 @@
 
 Status: current  
 Product version: `SITE-V4.0-data-center`  
-Data versions: `RAW-V3.0`, `EVENT-V1.1`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`
+Data versions: `RAW-V3.0`, `EVENT-V1.1`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`
 
 ## Boundary
 
@@ -13,8 +13,10 @@ Allowed operations are capture, cleaning, translation with the original preserve
 The V4 fact chain is:
 
 ```text
-SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent
-               -> FDE / Hardware projections -> database / exports
+SourceArtifact -> RawDocument -> Claim / Entity
+               -> CanonicalEvent -> FDERecord / HardwareRecord publication projections
+               -> FDEObservation / HardwareFact -> HardwareSnapshot
+               -> database / exports
 ```
 
 Signal Cards, V3 page JSON, legacy mappings, and compatibility interfaces are absent from the working tree. Historical recovery is possible only from an explicit Git ref in an isolated worktree; recovered assets cannot enter current production or Pages.
@@ -27,7 +29,7 @@ Daily canonical bundles are written to:
 01-SiteV2/content/11-databases/data-center-v4/<YYYY-MM-DD>/
 ```
 
-Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, hardware records, a QA queue, and a manifest. V3 Cards, legacy mappings, and `compatibility_cards` are not part of the V4 interface.
+Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, FDE observations, hardware records, hardware facts, hardware snapshots, monitoring-funnel rows, a QA queue, and a manifest. V3 Cards, legacy mappings, and `compatibility_cards` are not part of the V4 interface.
 
 The public interface is defined by `data-center-v4.schema.json`. Stable identifiers are `source_artifact_id`, `raw_id`, `claim_id`, `entity_id`, `event_id`, and `tag_id`.
 
@@ -41,7 +43,10 @@ The public interface is defined by `data-center-v4.schema.json`. Stable identifi
 - Administrative support notices centered on 模型券、算力券、数据券、补贴申领或兑付平台 are routed to QA unless the source separately discloses a concrete AI product transaction, procurement contract, financing, or customer deployment event.
 - Missing source fields remain empty and are listed under `missing_fields`; they are not inferred.
 - Conflicting sources remain attached as conflicts. The data center does not select the more commercially useful version.
-- FDE and hardware records are projections from accepted CanonicalEvents only.
+- FDERecord and HardwareRecord remain publication projections from accepted CanonicalEvents only.
+- FDEObservation and HardwareFact are Claim-native factual records. Their optional event references add a timeline link but do not determine admission.
+- HardwareSnapshot aggregates accepted HardwareFacts for one subject/product state on one data date. Cross-day state differences create a factual change timeline; they do not create a CanonicalEvent without a new accepted Claim.
+- Lens monitoring funnels expose original-source, valid-Claim, observation and event-conversion rates plus blocker counts. These are operational diagnostics, not value scores.
 - A TagAssertion must reference a Claim and its exact source span.
 - Technical Tags describe cross-cutting AI technology semantics only. Product form, use case, industry, deployment model, and target user are stored as evidence-backed FacetAssertions.
 - A FacetAssertion must reference the same accepted Claim and exact source span that supports the structured value.

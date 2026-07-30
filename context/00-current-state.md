@@ -23,7 +23,7 @@ WaveSight AI is now on the `SITE-V4.3.0-compatibility-retired` public website an
 - The current collection lane writes immutable source snapshots and `SOURCE-INTAKE-V1`. Card, trend, opportunity, and report objects are downstream application or frozen historical assets, not V4 truth assets.
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.0-auto-published-research`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
-- Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
+- Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
 
 ## Current Entries
 
@@ -47,7 +47,8 @@ External sources
 -> Claim / Entity
 -> CanonicalEvent
 -> ENTITY-V1.0 registry / profiles / RELATION-V2.1
--> FDE / Hardware projections
+-> event-backed FDERecord / HardwareRecord publication projections
+-> Claim-native FDEObservation / HardwareFact and HardwareSnapshot
 -> JSON / JSONL / DuckDB data service
 -> downstream applications
 -> downstream application projections, including Trend Radar and Industry Reports

@@ -21,7 +21,11 @@ const VERSION = Object.freeze({
   raw: "RAW-V3.0",
   event: "EVENT-V1.1",
   fde: "FDE-V2.0",
+  fdeObservation: "FDE-OBSERVATION-V1.0",
   hardware: "HARDWARE-V1.0",
+  hardwareFact: "HARDWARE-FACT-V1.0",
+  hardwareSnapshot: "HARDWARE-SNAPSHOT-V1.0",
+  monitoringFunnel: "LENS-FUNNEL-V1.0",
   tag: "TAG-V4.0"
 });
 
@@ -966,6 +970,227 @@ function fdeProjection(event, claims, entities) {
   return record;
 }
 
+function explicitFdeStage(text) {
+  if (/\b(?:go(?:es|ne)? live|in production|production rollout|rolled out|deployed|implemented)\b|生产上线|正式上线|投入生产|已部署|已实施/iu.test(text)) return "production";
+  if (/\b(?:pilot|proof of concept|poc|trial)\b|试点|概念验证|试运行/iu.test(text)) return "pilot";
+  if (/\b(?:procurement|tender|contract award|selected as (?:the )?provider)\b|采购|招标|中标|合同授予/iu.test(text)) return "procurement";
+  if (/\b(?:technical scoping|design partner|discovery phase)\b|技术评估|需求梳理/iu.test(text)) return "discovery";
+  return "";
+}
+
+function fdeObservationType(text) {
+  if (/\b(?:earnings call|annual report|quarterly report|10-k|10-q)\b|财报|业绩会|年报|季报/iu.test(text)) return "earnings_disclosure";
+  if (/\b(?:contract award|awarded .{0,50} contract|tender award)\b|中标|合同授予/iu.test(text)) return "contract_award";
+  if (/\b(?:procurement|purchasing agreement|selected .{0,50} provider)\b|采购|采购协议/iu.test(text)) return "procurement";
+  if (/\b(?:go(?:es|ne)? live|production rollout|in production|rolled out)\b|生产上线|正式上线|投入生产/iu.test(text)) return "production_rollout";
+  if (/\b(?:customer story|case study|customer case)\b|客户案例|案例研究/iu.test(text)) return "customer_case";
+  return "implementation_update";
+}
+
+function fdeObservationProjection(event, claims, entities, projectedRecord = null, sourceArtifactId = "") {
+  const acceptedClaims = claims.filter((claim) => ["accepted", "partial"].includes(claim.verification_status));
+  if (!acceptedClaims.length) return null;
+  const text = acceptedClaims.map((claim) => claim.source_quote).join(" ");
+  const implementationEvidence = /\b(?:deploy|implement|rollout|go live|in production|pilot|workflow|integrat|procurement|contract award)\w*\b|\bintelligent automation\b|部署|落地|上线|试点|工作流|集成|采购|中标/iu.test(text);
+  const enterpriseContext = /\b(?:enterprise|customer|client|employees?|workforce|organization|business|production|hospital|bank|manufacturer|retailer|government|agency|university)\b|企业|客户|员工|组织|业务|生产|医院|银行|制造商|零售商|政府|高校/iu.test(text);
+  if (!implementationEvidence || !enterpriseContext) return null;
+  const organizations = entities.filter((entity) => entity?.entity_type === "organization_candidate");
+  const organizationNames = organizations.map((entity) => entity.canonical_name);
+  const customer = projectedRecord?.customer || organizations.find((entity) => {
+    const escaped = entity.canonical_name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+    return new RegExp(`${escaped}.{0,180}(?:deploy|implement|rollout|employees?|workforce|operations?|customer)|(?:customer|enterprise|client).{0,60}${escaped}`, "iu").test(text);
+  })?.canonical_name || "";
+  const observationType = fdeObservationType(text);
+  const explicitStage = explicitFdeStage(text);
+  const claimNativeEventTypes = new Set(["deployment", "procurement_contract", "partnership", "financial_performance"]);
+  if (!projectedRecord && ((event && !claimNativeEventTypes.has(event.event_type)) || !customer || observationType === "implementation_update")) {
+    return null;
+  }
+  const vendor = projectedRecord?.vendor || organizationNames.find((name) => name !== customer && new RegExp(
+    `${name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&")}.{0,100}(?:platform|model|service|infrastructure)|(?:powered by|provided by|from)\\s+${name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&")}`,
+    "iu"
+  ).test(text)) || "";
+  const systems = projectedRecord?.systems_integrated?.length
+    ? projectedRecord.systems_integrated
+    : ["Gemini Enterprise", "Google Cloud", "Claude", "ChatGPT", "Microsoft Copilot", "WPS Comate"]
+      .filter((name) => new RegExp(name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "iu").test(text));
+  const outcomes = projectedRecord?.reported_outcomes?.length
+    ? projectedRecord.reported_outcomes
+    : acceptedClaims.filter((claim) => /\b(?:reduced|increased|improved|saved|achieved|fewer|faster|down)\b|降低|提升|节省|达到/iu.test(claim.source_quote)).map((claim) => claim.source_quote);
+  const workflow = acceptedClaims.find((claim) => /\bworkflow\b|工作流|流程/iu.test(claim.source_quote))?.source_quote || "";
+  const stage = explicitStage || projectedRecord?.deployment_stage || "";
+  const useCase = projectedRecord?.use_case || event?.object || "";
+  const fields = {
+    customer,
+    vendor,
+    industry: projectedRecord?.industry || "",
+    use_case: useCase,
+    workflow,
+    systems_integrated: systems,
+    lifecycle_stage: stage,
+    reported_outcomes: outcomes
+  };
+  const missingFields = Object.entries(fields).filter(([, value]) => Array.isArray(value) ? !value.length : !value).map(([key]) => key);
+  const resolvedFields = Object.keys(fields).length - missingFields.length;
+  const sourceRefs = [...new Set([...(event?.source_refs || []), sourceArtifactId].filter(Boolean))];
+  return {
+    observation_id: `FDEO-${hash(`${customer}|${vendor}|${useCase}|${acceptedClaims.map((claim) => claim.claim_id).join("|")}`)}`,
+    implementation_key: hash(`${customer || "unknown"}|${vendor || "unknown"}|${useCase || acceptedClaims[0].subject}`),
+    observation_type: observationType,
+    observed_at: event?.event_time || event?.disclosed_at || "",
+    customer,
+    vendor,
+    industry: fields.industry,
+    use_case: useCase,
+    workflow,
+    systems_integrated: systems,
+    lifecycle_stage: stage,
+    reported_outcomes: outcomes,
+    event_refs: event?.event_id ? [event.event_id] : [],
+    claim_refs: acceptedClaims.map((claim) => claim.claim_id),
+    source_refs: sourceRefs,
+    completeness: {
+      resolved_fields: resolvedFields,
+      total_fields: Object.keys(fields).length,
+      ratio: resolvedFields / Object.keys(fields).length,
+      missing_fields: missingFields
+    }
+  };
+}
+
+function hardwareFactType(text, component) {
+  if (/\b(?:capex|capital expenditure|capital spending)\b|资本开支|资本支出/iu.test(text)) return "capex";
+  if (/\b(?:oem|odm|contract manufacturer|original design manufacturer)\b|代工|原始设计制造/iu.test(text)) return "oem_odm";
+  if (/\b(?:fab capacity|manufacturing capacity|production capacity|wafer capacity)\b|晶圆产能|制造产能|扩产/iu.test(text)) return "capacity";
+  if (/\b(?:supply agreement|supply contract|supplier|supplies?)\b|供应协议|供应合同|供应商/iu.test(text)) return "supply";
+  if (/\b(?:ships?|shipment|deliver(?:s|ed|y)|installs?|deploys?|deployment)\b|出货|交付|安装|部署/iu.test(text)) return "shipment_deployment";
+  if (/\b(?:nm|tops?|tflops?|flops?|hbm|gb|tb|memory bandwidth|power consumption|tdp)\b|制程|带宽|功耗|显存/iu.test(text)) return "specification";
+  if (component && /\b(?:launch(?:es|ed)?|release[sd]?|introduc(?:es|ed)|unveil(?:s|ed)|product)\b|发布|推出|亮相|产品/iu.test(text)) return "product";
+  return "";
+}
+
+function hardwareFactProjection(claim, event, entities, sourceArtifactId = "") {
+  if (!["accepted", "partial"].includes(claim.verification_status)) return null;
+  const text = claim.source_quote;
+  const component = componentType(text);
+  const factType = hardwareFactType(text, component);
+  if (!component || !factType) return null;
+  const organizations = entities.filter((entity) => entity?.entity_type === "organization_candidate");
+  const products = entities.filter((entity) => entity?.entity_type === "product_candidate");
+  const metric = hardwareCapacityMetric(text) || metricValues(text)[0] || "";
+  const metricValue = metric.match(/\d[\d,.]*/u)?.[0]?.replace(/,/gu, "") || "";
+  const metricUnit = metric.replace(/[\d.,\s]/gu, "");
+  return {
+    hardware_fact_id: `HWF-${hash(`${claim.claim_id}|${factType}|${component}`)}`,
+    fact_type: factType,
+    observed_at: event?.event_time || event?.disclosed_at || "",
+    subject_entity_id: organizations[0]?.entity_id || "",
+    subject_name: organizations[0]?.canonical_name || claim.subject,
+    product_entity_ids: products.map((entity) => entity.entity_id),
+    product_names: products.map((entity) => entity.canonical_name),
+    component_type: component,
+    metric_value: metricValue,
+    unit: metricUnit,
+    source_quote: claim.source_quote,
+    event_refs: event?.event_id ? [event.event_id] : [],
+    claim_ref: claim.claim_id,
+    source_refs: [...new Set([...(event?.source_refs || []), sourceArtifactId].filter(Boolean))]
+  };
+}
+
+function hardwareSnapshotsForDate(facts, date) {
+  const groups = new Map();
+  for (const fact of facts) {
+    const key = `${fact.subject_entity_id || fact.subject_name}|${fact.product_entity_ids[0] || fact.product_names[0] || fact.component_type}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(fact);
+  }
+  return [...groups.entries()].map(([key, rows]) => {
+    const latestValues = {};
+    for (const row of rows) {
+      latestValues[row.fact_type] = {
+        metric_value: row.metric_value,
+        unit: row.unit,
+        fact_ref: row.hardware_fact_id
+      };
+    }
+    return {
+      hardware_snapshot_id: `HWS-${hash(`${date}|${key}`)}`,
+      snapshot_key: hash(key),
+      as_of: date,
+      subject_entity_id: rows[0].subject_entity_id,
+      subject_name: rows[0].subject_name,
+      product_entity_ids: [...new Set(rows.flatMap((row) => row.product_entity_ids))],
+      product_names: [...new Set(rows.flatMap((row) => row.product_names))],
+      component_types: [...new Set(rows.map((row) => row.component_type))],
+      latest_values: latestValues,
+      fact_refs: rows.map((row) => row.hardware_fact_id),
+      claim_refs: [...new Set(rows.map((row) => row.claim_ref))],
+      source_refs: [...new Set(rows.flatMap((row) => row.source_refs))],
+      event_refs: [...new Set(rows.flatMap((row) => row.event_refs))],
+      previous_snapshot_ref: "",
+      change_status: "initial"
+    };
+  });
+}
+
+function monitoringFunnelRows({ date, rawDocuments, rawInputsById, claims, canonicalEvents, fdeObservations, hardwareFacts, qaQueue }) {
+  const lenses = [
+    {
+      id: "fde",
+      pathPattern: /^fde_/u,
+      rawMatch: (raw, text) => raw.enterprise_ai_transformation_lens === true || /\b(?:FDE|forward deployed|customer story|case study|production rollout|pilot customer|procurement contract)\b|客户案例|生产上线|采购合同/iu.test(text),
+      outputCount: fdeObservations.length
+    },
+    {
+      id: "hardware",
+      pathPattern: /^hardware_|^ai_hardware_/u,
+      rawMatch: (raw, text) => raw.ai_hardware_lens === true || /\b(?:AI hardware|AI chip|accelerator|GPU cluster|AI server|AI data cent(?:er|re)|semiconductor|HBM|NPU)\b|AI硬件|AI芯片|加速器|服务器|半导体/iu.test(text),
+      outputCount: hardwareFacts.length
+    }
+  ];
+  const eventsByClaim = new Map();
+  for (const event of canonicalEvents) for (const claimRef of event.claim_refs) eventsByClaim.set(claimRef, event.event_id);
+  return lenses.map((lens) => {
+    const matchingRawIds = new Set();
+    const paths = new Set();
+    let originalSources = 0;
+    for (const document of rawDocuments) {
+      const raw = rawInputsById.get(document.raw_id) || {};
+      const text = `${document.title_original} ${document.body_clean.slice(0, 1600)} ${raw.search_path || ""}`;
+      if (!lens.rawMatch(raw, text)) continue;
+      matchingRawIds.add(document.raw_id);
+      if (raw.search_path && lens.pathPattern.test(raw.search_path)) paths.add(raw.search_path);
+      if (/original|official|primary|resolved_original/iu.test(String(raw.source_role || ""))) originalSources += 1;
+    }
+    const lensClaims = claims.filter((claim) => matchingRawIds.has(claim.raw_id) && ["accepted", "partial"].includes(claim.verification_status));
+    const eventCount = new Set(lensClaims.map((claim) => eventsByClaim.get(claim.claim_id)).filter(Boolean)).size;
+    const blockerCounts = {};
+    for (const item of qaQueue.filter((qa) => matchingRawIds.has(qa.asset_id))) {
+      blockerCounts[item.reason] = (blockerCounts[item.reason] || 0) + 1;
+    }
+    const rawCount = matchingRawIds.size;
+    return {
+      funnel_id: `LF-${hash(`${date}|${lens.id}`)}`,
+      lens: lens.id,
+      date,
+      monitoring_paths: [...paths].sort(),
+      raw_documents: rawCount,
+      original_sources: originalSources,
+      valid_claims: lensClaims.length,
+      observations: lens.outputCount,
+      canonical_events: eventCount,
+      blocker_counts: blockerCounts,
+      rates: {
+        original_source_rate: rawCount ? originalSources / rawCount : 1,
+        valid_claim_rate: rawCount ? Math.min(lensClaims.length / rawCount, 1) : 1,
+        observation_rate: lensClaims.length ? Math.min(lens.outputCount / lensClaims.length, 1) : lens.outputCount ? 0 : 1,
+        event_conversion_rate: lensClaims.length ? Math.min(eventCount / lensClaims.length, 1) : eventCount ? 0 : 1
+      }
+    };
+  });
+}
+
 function applyProjectionAssist(record, taskType, candidates, eventClaims) {
   if (!record) return record;
   const candidate = candidates.find((item) => item.task_type === taskType && item.asset_id === (record.fde_id || record.hardware_record_id));
@@ -1101,6 +1326,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   const tagAssertions = [];
   const facetAssertions = [];
   const qaQueue = [];
+  const rawInputsById = new Map();
   const matchers = taxonomyMatchers(taxonomy);
   const structuredMatchers = facetMatchers(taxonomy);
   const modelAssist = readJson(path.join(modelAssistRoot, `${date}.json`), { candidates: [] });
@@ -1135,6 +1361,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
 
   for (const { raw, file, artifact } of uniqueEntries.values()) {
     const rawId = `RAW-${hash(`${date}|${artifact.source_artifact_id}`)}`;
+    rawInputsById.set(rawId, raw);
     const bodyOriginal = cleanString(raw.clean_text || raw.full_text);
     const bodyClean = trimBoilerplate(bodyOriginal);
     const titleOriginal = cleanString(raw.title || raw.title_zh);
@@ -1367,6 +1594,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   const clustered = clusterEvents(eventCandidates);
   const entityRows = [...entities.values()];
   const claimsById = new Map(claims.map((claim) => [claim.claim_id, claim]));
+  const rawById = new Map(rawDocuments.map((document) => [document.raw_id, document]));
   const entitiesById = new Map(entityRows.map((entity) => [entity.entity_id, entity]));
   const rawBySource = new Map(rawDocuments.map((document) => [document.source_artifact_id, document]));
   for (const event of clustered.canonicalEvents) {
@@ -1391,7 +1619,13 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   const acceptedEventIds = new Set(canonicalEvents.map((event) => event.event_id));
   const fdeRecords = [];
   const hardwareRecords = [];
+  const fdeObservations = [];
+  const hardwareFacts = [];
   const acceptedAssist = [...acceptedAssistByRaw.values()].flat();
+  const eventByClaimId = new Map();
+  for (const event of canonicalEvents) {
+    for (const claimRef of event.claim_refs) eventByClaimId.set(claimRef, event);
+  }
   for (const event of canonicalEvents) {
     const eventClaims = event.claim_refs.map((id) => claimsById.get(id)).filter(Boolean);
     const eventEntities = event.entities.map((id) => entitiesById.get(id)).filter(Boolean);
@@ -1399,7 +1633,39 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const hardware = applyProjectionAssist(hardwareProjection(event, eventClaims, eventEntities), "hardware_enrichment", acceptedAssist, eventClaims);
     if (fde) fdeRecords.push(fde);
     if (hardware) hardwareRecords.push(hardware);
+    const sourceArtifactId = rawById.get(eventClaims[0]?.raw_id)?.source_artifact_id || "";
+    const observation = fdeObservationProjection(event, eventClaims, eventEntities, fde, sourceArtifactId);
+    if (observation) fdeObservations.push(observation);
   }
+  const claimIdsWithEvents = new Set(eventByClaimId.keys());
+  const orphanClaimsByRaw = new Map();
+  for (const claim of claims.filter((item) => !claimIdsWithEvents.has(item.claim_id))) {
+    if (!orphanClaimsByRaw.has(claim.raw_id)) orphanClaimsByRaw.set(claim.raw_id, []);
+    orphanClaimsByRaw.get(claim.raw_id).push(claim);
+  }
+  for (const [rawId, orphanClaims] of orphanClaimsByRaw) {
+    const entityIds = entityMentions.filter((mention) => mention.raw_id === rawId).map((mention) => mention.entity_id);
+    const claimEntities = [...new Set(entityIds)].map((id) => entitiesById.get(id)).filter(Boolean);
+    const observation = fdeObservationProjection(null, orphanClaims, claimEntities, null, rawById.get(rawId)?.source_artifact_id || "");
+    if (observation) fdeObservations.push(observation);
+  }
+  for (const claim of claims) {
+    const event = eventByClaimId.get(claim.claim_id);
+    const eventEntities = (event?.entities || []).map((id) => entitiesById.get(id)).filter(Boolean);
+    const fact = hardwareFactProjection(claim, event, eventEntities, rawById.get(claim.raw_id)?.source_artifact_id || "");
+    if (fact) hardwareFacts.push(fact);
+  }
+  const hardwareSnapshots = hardwareSnapshotsForDate(hardwareFacts, date);
+  const monitoringFunnel = monitoringFunnelRows({
+    date,
+    rawDocuments,
+    rawInputsById,
+    claims,
+    canonicalEvents,
+    fdeObservations,
+    hardwareFacts,
+    qaQueue
+  });
 
   const eventSources = canonicalEvents.flatMap((event) => event.source_refs.map((sourceRef) => ({ event_id: event.event_id, source_artifact_id: sourceRef })));
   const eventClaims = canonicalEvents.flatMap((event) => event.claim_refs.map((claimRef) => ({ event_id: event.event_id, claim_id: claimRef })));
@@ -1426,7 +1692,11 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     tag_assertions: tagAssertions,
     facet_assertions: facetAssertions,
     fde_records: fdeRecords,
+    fde_observations: fdeObservations,
     hardware_records: hardwareRecords,
+    hardware_facts: hardwareFacts,
+    hardware_snapshots: hardwareSnapshots,
+    monitoring_funnel: monitoringFunnel,
     qa_queue: qaQueue
   };
   const manifest = {
@@ -1434,7 +1704,11 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     raw_version: VERSION.raw,
     event_version: VERSION.event,
     fde_version: VERSION.fde,
+    fde_observation_version: VERSION.fdeObservation,
     hardware_version: VERSION.hardware,
+    hardware_fact_version: VERSION.hardwareFact,
+    hardware_snapshot_version: VERSION.hardwareSnapshot,
+    monitoring_funnel_version: VERSION.monitoringFunnel,
     tag_version: VERSION.tag,
     date,
     generated_at: generatedAt,
