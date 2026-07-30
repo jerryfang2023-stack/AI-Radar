@@ -12,7 +12,7 @@ follow_builders_script: ../../../../.skill-store/follow-builders/scripts/prepare
 说明：本文件直接调用本地 follow-builders skill，收录 Builder 观点/实践线索（discovery 级），作为一线观点 intake 资产沉淀。
 注意：社媒/X 观点为观点线索，不作为事实主证据；进入商业信号、变化候选、趋势候选或当前前台链路的事实结论仍需补足 S/A/B 原始来源。
 
-## BP-20260730-01｜Swyx｜today i tried to sign up for @docusign and was presented a captcha that i could not solve 
+## BP-20260730-01｜Swyx｜today i tried to sign up for @docusign and was presented a captcha that i could not solve
 
 - stable_id: `BP-20260730-01`
 - source_path: `follow-builders`
@@ -76,7 +76,7 @@ Codex & ChatGPT @OpenAI
 
 likes=6926; retweets=456; replies=534
 
-## BP-20260730-05｜Peter Yang｜AI has been great for my productivity, but I’m starting to recognize three dark patterns: 
+## BP-20260730-05｜Peter Yang｜AI has been great for my productivity, but I’m starting to recognize three dark patterns:
 
 - stable_id: `BP-20260730-05`
 - source_path: `follow-builders`
@@ -284,7 +284,7 @@ Design @Cursor_ai. Early @NotionHQ, @Stripe, built startups. I make a world wher
 
 likes=371; retweets=9; replies=14
 
-## BP-20260730-18｜Garry Tan｜The AI Datacenter Degrowthers are winning and it is actually a psy-op happening under our 
+## BP-20260730-18｜Garry Tan｜The AI Datacenter Degrowthers are winning and it is actually a psy-op happening under our
 
 - stable_id: `BP-20260730-18`
 - source_path: `follow-builders`
@@ -547,4 +547,3 @@ likes=2817; retweets=79; replies=171
 - kind: podcast
 
 原始观点/摘要：Speaker 1 | 00:00 - 00:28 What I've learned with the future is that it's easy to make predictions and hard to make predictions that are true. Gerard Lanier showed me VR in '87. I was completely blown away and I thought, oh my gosh, this is the future. The VR that we had back then is not that much different than the VR you get now. The difference was that was multimillion dollars and it's a $100. Speaker 1 | 00:28 - 00:36 I've been very, very surprised about how slow that has been. You could say VR is still waiting for its LLM moment. AI's fifty year overnight success. Speaker 2 | 00:50 - 00:52 Kevin, welcome to the show. Speaker 1 | 00:52 - 00:54 It's a pleasure to be here. I'm glad to be seen. Speaker 2 | 00:55 - 01:15 I am very excited to have you. In addition to being a personal hero of mine, I am a longtime Wired reader. I had, like, a gigantic shelf of magazines growing up, so it's sort of crazy to get to chat with you. There's a lot of things I wanna talk to you about, but I wanna start with we have a mutual love of Annie Dillard. Speaker 1 | 01:15 - 01:16 Mhmm. We do. Speaker 2 | 01:16 - 01:24 She's my favorite writer, and I know she's your favorite writer as well. Tell me why you like her. Speaker 1 | 01:27 - 02:15 For for the for those who aren't familiar with Annie, she burst onto the scene with a meteorite of a book called Pilgrim at Tinker Creek that, for some reason, it's account of her spending some year on musing kinda like a Henry David Thoreau intimate investigation of a creek in Virginia or West Virginia. I don't remember. And so it was just the writing and the style and the ideas and her blazing brilliance in being able to capture this into a few words. It was almost like poetry. There was prose. Speaker 1 | 02:16 - 02:59 It somehow just worked on my brain. And I don't know enough about literature to describe her in relation to other writers and why it doesn't work for me as much, But there was something about her spirit as well as her writing, which was very expansive, cosmic, enthusiastic, questioning. She talked about feeling as if, at one point in the story that she was a bell that someone else had rung. And I felt exactly the same in resp
-

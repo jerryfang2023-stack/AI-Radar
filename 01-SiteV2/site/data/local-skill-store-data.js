@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-07-30 15:44:39",
+    "generatedAt": "2026-07-30 16:17:00",
     "generatedDate": "2026-07-30",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -48,9 +48,9 @@ window.WaveSightLocalSkillStore = {
       "evalCoverage": 100,
       "exampleCoverage": 100,
       "discovery": {
-        "discovered": 231,
+        "discovered": 230,
         "configuredDisabled": 183,
-        "enabled": 48,
+        "enabled": 47,
         "invalidManifests": 0,
         "enabledDuplicateNames": 0
       }
