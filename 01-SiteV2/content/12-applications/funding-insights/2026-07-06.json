@@ -47,7 +47,7 @@
                 "quote_hash": "3fbe1514d4d6cee1cd94dc8541aa544ceb46b1d501bb0f2eb767deec11eb55c5"
               }
             ],
-            "entity_id": "EN-9aaffcf69b89ca7c"
+            "entity_id": null
           },
           {
             "name": "Gal Deitsch",
@@ -66,7 +66,7 @@
                 "quote_hash": "5607b98d8f2a208e71c617c9f21b64bc361836381f460919fb464c930fc19d38"
               }
             ],
-            "entity_id": "EN-2c83883942957c8d"
+            "entity_id": null
           },
           {
             "name": "Yotam Sela",
@@ -79,7 +79,7 @@
                 "quote_hash": "9335a498ca58d185ddf501dad8a88a74bdda9c0fdfd174dc471ffc1a9fb74d46"
               }
             ],
-            "entity_id": "EN-2afa12a9be12366c"
+            "entity_id": null
           }
         ],
         "team_size": {
@@ -518,22 +518,22 @@
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gal Aga",
-          "canonical_entity_id": "EN-9aaffcf69b89ca7c",
-          "canonical_name": "Gal Aga"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Gal Deitsch",
-          "canonical_entity_id": "EN-2c83883942957c8d",
-          "canonical_name": "Gal Deitsch"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Yotam Sela",
-          "canonical_entity_id": "EN-2afa12a9be12366c",
-          "canonical_name": "Yotam Sela"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
@@ -702,9 +702,13 @@
           ]
         },
         "founders": {
-          "linked": 3,
+          "linked": 0,
           "total": 3,
-          "unresolved_names": []
+          "unresolved_names": [
+            "Gal Aga",
+            "Gal Deitsch",
+            "Yotam Sela"
+          ]
         }
       },
       "source_event_ids": [

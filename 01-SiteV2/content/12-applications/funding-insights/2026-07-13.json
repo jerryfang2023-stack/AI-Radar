@@ -54,7 +54,7 @@
                 "quote_hash": "5e301e20ea90d39895d780f7fb87251ada66310f8963c28b382e15bfc779546f"
               }
             ],
-            "entity_id": "EN-c4acf3ded407a3c1"
+            "entity_id": null
           },
           {
             "name": "Mor Shabtai",
@@ -67,7 +67,7 @@
                 "quote_hash": "5e301e20ea90d39895d780f7fb87251ada66310f8963c28b382e15bfc779546f"
               }
             ],
-            "entity_id": "EN-ee7792a4a73ee4f9"
+            "entity_id": null
           }
         ],
         "team_size": {
@@ -527,15 +527,15 @@
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tom Hoffen",
-          "canonical_entity_id": "EN-c4acf3ded407a3c1",
-          "canonical_name": "Tom Hoffen"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mor Shabtai",
-          "canonical_entity_id": "EN-ee7792a4a73ee4f9",
-          "canonical_name": "Mor Shabtai"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
@@ -711,9 +711,12 @@
           ]
         },
         "founders": {
-          "linked": 3,
+          "linked": 1,
           "total": 3,
-          "unresolved_names": []
+          "unresolved_names": [
+            "Mor Shabtai",
+            "Tom Hoffen"
+          ]
         }
       },
       "source_event_ids": [

@@ -20,7 +20,7 @@ import {
   subjectCompanyForEvent,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
-import { collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
+import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import {
   aggregateFundingRoundCards,
@@ -35,7 +35,7 @@ function evidence(sourceId = "SRC-1", quote = "Acme raised $20 million led by No
   return [{ source_id: sourceId, quote }];
 }
 
-test("founder profile candidates require explicit founder evidence and complete source locators", () => {
+test("founder profile candidates require explicit founder evidence, company support, and complete source locators", () => {
   const candidates = collectFundingFounderCandidates([{
     funding_insight_id: "FI-FOUNDER",
     triggered_by_event_id: "EV-FOUNDER",
@@ -52,11 +52,40 @@ test("founder profile candidates require explicit founder evidence and complete 
       { source_id: "SRC-FOUNDER", source_url: "https://example.com/founder" },
       { source_id: "SRC-MEMBER", source_url: "https://example.com/member" }
     ]
+  }, {
+    funding_insight_id: "FI-MISLINKED",
+    triggered_by_event_id: "EV-MISLINKED",
+    as_of_date: "2026-07-30",
+    company: {
+      entity_id: "EN-AMD",
+      name: "AMD",
+      full_name: "Featherless.ai",
+      founders: [{
+        name: "Mislinked Founder",
+        role: "Co-founder",
+        evidence_refs: [{ source_id: "SRC-MISLINKED", quote: "Mislinked Founder, co-founder of Featherless.ai.", source_content_hash: "mislinked-source", quote_hash: "mislinked-quote" }]
+      }]
+    },
+    research_sources: [{ source_id: "SRC-MISLINKED", source_url: "https://example.com/mislinked" }]
   }]);
 
   assert.equal(candidates.length, 1);
   assert.equal(candidates[0].name, "Ada Founder");
   assert.equal(candidates[0].profiles[0].evidence_refs[0].source_url, "https://example.com/founder");
+});
+
+test("stored founder review cannot replace an approved name while preserving the accepted count", () => {
+  const review = JSON.parse(fs.readFileSync(
+    path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/funding-founder-review-decisions.json"),
+    "utf8"
+  ));
+  const tampered = structuredClone(review);
+  tampered.decisions[0].canonical.name = "Unreviewed Founder";
+  const mislinked = structuredClone(review);
+  mislinked.decisions[0].canonical.funding_profiles[0].company_name = "Unrelated Company";
+
+  assert.ok(assertFundingFounderReview(tampered).includes("reviewed_name_allowlist_mismatch"));
+  assert.ok(assertFundingFounderReview(mislinked).some((problem) => problem.endsWith(":profile_company_evidence_mismatch")));
 });
 
 function validCard() {

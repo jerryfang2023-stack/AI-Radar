@@ -47,7 +47,7 @@
                 "quote_hash": "503f5b7120b480a3aff7c40b215a878f125d064e446e0a5dd43c291bda91618a"
               }
             ],
-            "entity_id": "EN-0915e361e83ee8f5"
+            "entity_id": null
           }
         ],
         "team_size": {
@@ -481,8 +481,8 @@
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "John Nay",
-          "canonical_entity_id": "EN-0915e361e83ee8f5",
-          "canonical_name": "John Nay"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
@@ -673,9 +673,11 @@
           ]
         },
         "founders": {
-          "linked": 1,
+          "linked": 0,
           "total": 1,
-          "unresolved_names": []
+          "unresolved_names": [
+            "John Nay"
+          ]
         }
       },
       "source_event_ids": [

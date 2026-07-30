@@ -2568,7 +2568,7 @@
                 "quote_hash": "24bba160154102d19ac21e7ca8e6da7c2ed1d305d04ab0d160b0a2bde82efde6"
               }
             ],
-            "entity_id": "EN-c4acf3ded407a3c1"
+            "entity_id": null
           },
           {
             "name": "Mor Shabtai",
@@ -2581,7 +2581,7 @@
                 "quote_hash": "002440b7d0a50859014ec106b39c23d386182f8e7d600998df95f6ec326da837"
               }
             ],
-            "entity_id": "EN-ee7792a4a73ee4f9"
+            "entity_id": null
           }
         ],
         "team_size": {
@@ -3033,15 +3033,15 @@
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Tom Hoffen",
-          "canonical_entity_id": "EN-c4acf3ded407a3c1",
-          "canonical_name": "Tom Hoffen"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Mor Shabtai",
-          "canonical_entity_id": "EN-ee7792a4a73ee4f9",
-          "canonical_name": "Mor Shabtai"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
@@ -3229,9 +3229,12 @@
           ]
         },
         "founders": {
-          "linked": 3,
+          "linked": 1,
           "total": 3,
-          "unresolved_names": []
+          "unresolved_names": [
+            "Mor Shabtai",
+            "Tom Hoffen"
+          ]
         }
       },
       "source_event_ids": [
@@ -3267,7 +3270,7 @@
                 "quote_hash": "ae4d93de4be0e26712e042123d03da4b1f22da5a88721b68a10095bf60203ff0"
               }
             ],
-            "entity_id": "EN-0915e361e83ee8f5"
+            "entity_id": null
           }
         ],
         "team_size": {
@@ -3908,8 +3911,8 @@
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "John Nay",
-          "canonical_entity_id": "EN-0915e361e83ee8f5",
-          "canonical_name": "John Nay"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
@@ -4206,9 +4209,11 @@
           ]
         },
         "founders": {
-          "linked": 1,
+          "linked": 0,
           "total": 1,
-          "unresolved_names": []
+          "unresolved_names": [
+            "John Nay"
+          ]
         }
       },
       "source_event_ids": [

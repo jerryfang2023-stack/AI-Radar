@@ -54,7 +54,7 @@
                 "quote_hash": "3c32a416cba058cd02d10eca7a7d6e47b671ac94b3585bf44c2ed0649259e844"
               }
             ],
-            "entity_id": "EN-2cdc203d66adb6a8"
+            "entity_id": null
           }
         ],
         "team_size": {
@@ -414,8 +414,8 @@
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Roey Lalazar",
-          "canonical_entity_id": "EN-2cdc203d66adb6a8",
-          "canonical_name": "Roey Lalazar"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
@@ -544,9 +544,11 @@
           ]
         },
         "founders": {
-          "linked": 2,
+          "linked": 1,
           "total": 2,
-          "unresolved_names": []
+          "unresolved_names": [
+            "Roey Lalazar"
+          ]
         }
       },
       "source_event_ids": [

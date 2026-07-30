@@ -2526,7 +2526,7 @@
                 "quote_hash": "b3036058cd8ae9ee11a8da8044d2f39246ab4079ab57e2d74cf70cdca7ef3a70"
               }
             ],
-            "entity_id": "EN-19193109efd83699"
+            "entity_id": null
           },
           {
             "name": "Philipp Baumanns",
@@ -2539,7 +2539,7 @@
                 "quote_hash": "b3036058cd8ae9ee11a8da8044d2f39246ab4079ab57e2d74cf70cdca7ef3a70"
               }
             ],
-            "entity_id": "EN-40facf47b56d0a79"
+            "entity_id": null
           }
         ],
         "team_size": {
@@ -2970,15 +2970,15 @@
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Seb Hapte-Selassie",
-          "canonical_entity_id": "EN-19193109efd83699",
-          "canonical_name": "Seb Hapte-Selassie"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "founded_by",
           "target_kind": "person",
           "research_name": "Philipp Baumanns",
-          "canonical_entity_id": "EN-40facf47b56d0a79",
-          "canonical_name": "Philipp Baumanns"
+          "canonical_entity_id": null,
+          "canonical_name": ""
         },
         {
           "relation_type": "invested_in_round",
@@ -3178,10 +3178,12 @@
           ]
         },
         "founders": {
-          "linked": 2,
+          "linked": 0,
           "total": 3,
           "unresolved_names": [
-            "Finn zur Muehlen"
+            "Finn zur Muehlen",
+            "Philipp Baumanns",
+            "Seb Hapte-Selassie"
           ]
         }
       },

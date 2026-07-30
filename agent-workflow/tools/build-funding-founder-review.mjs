@@ -14,32 +14,32 @@ const REVIEWED_FOUNDER_NAMES = [
   "Robert Wachen",
   "Raja Koduri",
   "Bar Winkler",
-  "Roey Lalazar",
+  "Vishal Dugar",
   "Haroun Beltaifa",
   "Mikhail Galkov",
   "Rafael Quintanilla",
   "Romain Fouilland",
   "Stephen Haney",
   "Chris Zhu",
-  "Dr. Román Orús",
   "Enrique Lizaso",
-  "Philipp Baumanns",
-  "Seb Hapte-Selassie",
-  "Gal Aga",
-  "Gal Deitsch",
-  "Yotam Sela",
   "Andrew Dai",
   "Finn Puklowski",
   "Jason Goodison",
   "Jan Oberhauser",
-  "Mor Shabtai",
   "Stav Levi-Neumark",
-  "Tom Hoffen",
-  "John Nay",
   "Alex Saroyan",
   "Daniela Amodei",
   "Antonio Mallia",
-  "Eugene Cheah"
+  "Eugene Cheah",
+  "Christian Ferreira",
+  "Dr. Dvir Ginzburg",
+  "Kyle Rush",
+  "Martha Stewart",
+  "Paul Eremenko",
+  "Faris Masad",
+  "Haya Odeh",
+  "Alex Dimakis",
+  "Mahesh Sathiamoorthy"
 ];
 
 function clean(value = "") {
@@ -59,6 +59,12 @@ function stablePersonId(name) {
   return `EN-${digest}`;
 }
 
+function companyEvidenceKey(value = "") {
+  return key(value)
+    .replace(/\b(?:incorporated|corporation|company|limited|inc|corp|ltd|llc|plc)\b/giu, "")
+    .replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
 function isExplicitFounderEvidence(person = {}) {
   return /(?:\bfound(?:er|ers|ed|ing)?\b|\bco-?found(?:er|ers|ed|ing)?\b|创始|联合创)/iu.test(
     `${clean(person.role)} ${(person.evidence_refs || []).map((item) => clean(item.quote)).join(" ")}`
@@ -72,10 +78,17 @@ export function collectFundingFounderCandidates(cards = []) {
     for (const person of card.company?.founders || []) {
       const name = clean(person.name);
       if (!name || !isExplicitFounderEvidence(person)) continue;
+      const companyName = clean(card.company?.name);
+      const companyFullName = clean(card.company?.full_name);
+      if (companyFullName && companyEvidenceKey(companyName) !== companyEvidenceKey(companyFullName)) continue;
+      const companyKey = companyEvidenceKey(companyName);
+      const evidenceSupportsCompany = companyKey.length >= 3 && (person.evidence_refs || [])
+        .some((reference) => companyEvidenceKey(reference.quote).includes(companyKey));
+      if (!evidenceSupportsCompany) continue;
       const profile = {
         funding_insight_id: clean(card.funding_insight_id),
         company_entity_id: clean(card.company?.entity_id),
-        company_name: clean(card.company?.name),
+        company_name: companyName,
         role: clean(person.role),
         as_of_date: clean(card.as_of_date),
         source_event_id: clean(card.triggered_by_event_id),
@@ -171,7 +184,7 @@ export function buildFundingFounderReview({ cards = [], pendingPersonCount = 0 }
       pending_person_candidates: pendingPersonCount,
       explicit_founder_candidates: candidates.length,
       accepted_founder_profiles: decisions.length,
-      deferred_candidates: Math.max(0, pendingPersonCount - decisions.length)
+      deferred_candidates: pendingPersonCount
     },
     decisions
   };
@@ -194,6 +207,10 @@ export function assertFundingFounderReview(review = {}) {
   const problems = [];
   if (review.review_version !== PERSON_REVIEW_VERSION) problems.push("review_version_mismatch");
   if (review.decisions?.length !== REVIEWED_FOUNDER_NAMES.length) problems.push("accepted_count_mismatch");
+  const expectedNames = [...REVIEWED_FOUNDER_NAMES].map(key).sort();
+  const reviewedNames = (review.decisions || []).map((decision) => key(decision.canonical?.name)).sort();
+  if (new Set(reviewedNames).size !== reviewedNames.length) problems.push("reviewed_name_duplicate");
+  if (JSON.stringify(reviewedNames) !== JSON.stringify(expectedNames)) problems.push("reviewed_name_allowlist_mismatch");
   const ids = new Set();
   for (const decision of review.decisions || []) {
     if (decision.review_status !== "accepted" || !decision.reviewer) problems.push(`${decision.entity_id}:not_accepted`);
@@ -205,6 +222,11 @@ export function assertFundingFounderReview(review = {}) {
     for (const profile of decision.canonical?.funding_profiles || []) {
       if (!profile.funding_insight_id || !profile.company_entity_id || !profile.as_of_date) problems.push(`${decision.entity_id}:profile_identity_incomplete`);
       if (!(profile.evidence_refs || []).length) problems.push(`${decision.entity_id}:profile_evidence_missing`);
+      const profileCompanyKey = companyEvidenceKey(profile.company_name);
+      if (profileCompanyKey.length < 3 || !(profile.evidence_refs || [])
+        .some((evidence) => companyEvidenceKey(evidence.quote).includes(profileCompanyKey))) {
+        problems.push(`${decision.entity_id}:profile_company_evidence_mismatch`);
+      }
       for (const evidence of profile.evidence_refs || []) {
         if (!evidence.source_id || !evidence.source_url || !evidence.quote || !evidence.source_content_hash || !evidence.quote_hash) {
           problems.push(`${decision.entity_id}:evidence_incomplete`);
