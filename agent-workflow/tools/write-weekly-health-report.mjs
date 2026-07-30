@@ -142,8 +142,8 @@ function incidentCategories(text = "", fields = {}) {
   if (/monitor|监测|quality gate|raw_count_min|pool_count_min|gate failure|failed_gate/iu.test(haystack)) {
     categories.add("monitor_or_gate_failure");
   }
-  if (/obsidian|timeline/iu.test(haystack) && /fail|missing|stale|blocked|sync/iu.test(haystack)) {
-    categories.add("obsidian_sync");
+  if (/guanlan vault|timeline/iu.test(haystack) && /fail|missing|stale|blocked|sync/iu.test(haystack)) {
+    categories.add("guanlan_vault_projection");
   }
 
   if (!categories.size && fields.failed_gate) categories.add(normalizeCategory(fields.failed_gate));

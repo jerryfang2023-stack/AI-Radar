@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
+import { REPOSITORY_CONTENT_PATHS } from "./guanlan-vault-paths.mjs";
 import { periodicReportTitleProblems } from "./periodic-report-title.mjs";
 
 const root = process.cwd();
@@ -101,12 +101,12 @@ export function evaluatePeriodicContent(input) {
 function pathsForInput() {
   if (kind === "weekly") {
     return {
-      content: path.join(root, OBSIDIAN_PATHS.reportsRoot, `${date}--weekly-report--ai-business-change-radar.md`),
+      content: path.join(root, REPOSITORY_CONTENT_PATHS.industryReportsRoot, `${date}--weekly-report--ai-business-change-radar.md`),
       archive: path.join(root, "agent-workflow", "reports", `${date}-weekly-ai-business-change-radar.md`),
     };
   }
   return {
-    content: path.join(root, OBSIDIAN_PATHS.reportsRoot, "monthly", `${date}--monthly-report--ai-business-structure-and-opportunity.md`),
+    content: path.join(root, REPOSITORY_CONTENT_PATHS.industryReportsRoot, "monthly", `${date}--monthly-report--ai-business-structure-and-opportunity.md`),
     archive: "",
   };
 }

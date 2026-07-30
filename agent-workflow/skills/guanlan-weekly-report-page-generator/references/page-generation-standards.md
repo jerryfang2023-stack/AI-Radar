@@ -2,7 +2,7 @@
 
 ## Source Contract
 
-- Source weekly report content from `vault/20-Application-Center/01-Industry-Reports/`.
+- Source weekly report content from `01-SiteV2/content/12-applications/industry-reports/`.
 - Each issue should have frontmatter:
   - `title`
   - `date`

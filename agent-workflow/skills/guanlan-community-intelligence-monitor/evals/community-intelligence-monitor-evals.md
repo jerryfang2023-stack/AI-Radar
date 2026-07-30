@@ -13,8 +13,8 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 3. `community_gate`
    - Pass when `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>` passes before publication.
 
-4. `archive_outputs`
-   - Pass when daily snapshots, Obsidian archive files, and gate reports exist for the production date.
+4. `snapshot_outputs`
+   - Pass when daily repository snapshots and gate reports exist for the production date.
 
 5. `publication_complete`
    - Pass when validated community data reaches automation branch -> PR -> `main` -> GitHub Pages when publication is required.
@@ -47,7 +47,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 
 13. `publication_evidence_precedence`
    - Pass when supervision checks same-date community data and gate health before treating Windows scheduled task `LastTaskResult` as blocking.
-   - Pass when non-zero `LastTaskResult` is only a warning if same-date data, archive outputs, and gate are healthy.
+   - Pass when non-zero `LastTaskResult` is only a warning if same-date data, snapshot outputs, and gate are healthy.
    - Pass when a merged same-date community PR is accepted as publication evidence even if the latest `daily-community-intelligence-pr.yml` run is red.
    - Pass when a red publish workflow after healthy local data is routed to publish workflow / PR repair only.
    - Fail when GitHub publish failure causes browser recollection, or when stale daily supervision reports remain open after a later same-date gate passes.
@@ -81,4 +81,4 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 
 ## Repair Loop
 
-When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.
+When a check fails, repair the local collection, snapshot, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required. Refresh the external Guanlan Vault only after accepted data reaches local `main`.

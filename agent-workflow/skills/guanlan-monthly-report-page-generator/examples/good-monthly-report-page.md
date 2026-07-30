@@ -2,7 +2,7 @@
 
 A good monthly report page:
 
-- uses `vault/20-Application-Center/01-Industry-Reports/monthly/YYYY-MM-DD--monthly-report--...md` as the content source;
+- uses `01-SiteV2/content/12-applications/industry-reports/monthly/YYYY-MM-DD--monthly-report--...md` as the content source;
 - shows the full monthly argument, not just a teaser;
 - places the core monthly judgment in the hero;
 - moves data/method boundary notes to a final appendix;

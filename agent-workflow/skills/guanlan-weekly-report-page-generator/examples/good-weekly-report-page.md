@@ -1,6 +1,6 @@
 # Good Weekly Report Page Pattern
 
-User asks: “根据 `vault/20-Application-Center/01-Industry-Reports/2026-06-15--weekly-report--ai-business-change-radar.md` 生成本周周报页面。”
+User asks: “根据 `01-SiteV2/content/12-applications/industry-reports/2026-06-15--weekly-report--ai-business-change-radar.md` 生成本周周报页面。”
 
 Good output:
 
@@ -21,6 +21,6 @@ Good output:
   - categorized watchlist cards;
   - data scope appendix.
 - The detail page has no raw `<table>` elements.
-- `meta[name="weekly-report-source"]` points to `vault/20-Application-Center/01-Industry-Reports/`.
+- `meta[name="weekly-report-source"]` points to `01-SiteV2/content/12-applications/industry-reports/`.
 
 Why it passes: it converts the weekly report into a frontstage reading experience while preserving source path, version metadata, and Guanlan visual language.

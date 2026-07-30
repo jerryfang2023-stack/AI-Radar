@@ -220,7 +220,8 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   assert.match(workflow, /workflow_run:[\s\S]*WaveSight Business Signals PR/u);
   assert.match(workflow, /inspect-funding-insight-work\.mjs/u);
   assert.match(workflow, /TAVILY_DISABLED: "false"/u);
-  assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs[\s\S]*sync-funding-insights-to-obsidian\.mjs/u);
+  assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs/u);
+  assert.doesNotMatch(workflow, /sync-funding-insights-to-obsidian\.mjs|vault\/20-Application-Center/u);
   assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
   assert.match(workflow, /push:[\s\S]*canonical-events\.json/u);
   assert.match(workflow, /startsWith\(github\.event\.head_commit\.message, 'Persist business signals for '\)/u);

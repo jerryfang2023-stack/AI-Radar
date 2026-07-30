@@ -35,9 +35,7 @@ function writeHealthyFixture(root, date) {
     `# ${date} Follow-Builders Skill Local Publish`,
     "",
     "- builder_items_count: 2",
-    "- obsidian_sync_added: 2",
-    "- obsidian_sync_groups: 2",
-    "- obsidian_sync_files: 2",
+    "- guanlan_vault_projection: local_after_main_sync",
     "- publish_status: generated",
     '- publish_error: ""',
     "",
@@ -70,7 +68,7 @@ test("forced afternoon supervision fails missing artifacts and passes count-cons
     assert.equal(healthy.status, "passed");
     assert.equal(healthy.evidence.itemCount, 2);
     assert.equal(healthy.evidence.reportCount, 2);
-    assert.deepEqual(healthy.evidence.obsidianSync, { added: 2, groups: 2, files: 2 });
+    assert.equal(healthy.evidence.guanlanVaultProjection, "local_after_main_sync");
   } finally {
     process.chdir(originalCwd);
     process.argv = originalArgv;
@@ -159,7 +157,6 @@ test("historical morning health uses its exact-date gate and manifest", async ()
       "",
       "- builders_data: success",
       "- builders_gate: success",
-      "- obsidian_sync: success",
       "",
     ].join("\n"), "utf8");
 

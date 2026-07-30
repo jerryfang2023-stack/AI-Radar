@@ -120,7 +120,7 @@ const activeRoots = [
   "context",
   "01-SiteV2/README.md",
   "01-SiteV2/content/README.md",
-  "vault/README.md",
+  "docs/obsidian-vault.md",
   ".github/workflows",
   "agent-workflow/tools",
   "01-SiteV2/site/scripts",

@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-07-30T06:32:13.931Z",
+    "generatedAt": "2026-07-30T07:42:27.411Z",
     "date": "2026-07-30",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -287,7 +287,7 @@ window.WaveSightOpsConsole = {
       {
         "id": "first_line_viewpoints",
         "label": "First-Line Viewpoints",
-        "schedule": "08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure",
+        "schedule": "08:30 local RSS collection + page build; 09:15 conditional fallback; 09:50 consolidated closure",
         "status": "passed",
         "statusText": "已通过",
         "problemCount": 0,
@@ -401,7 +401,7 @@ window.WaveSightOpsConsole = {
         "detail": "https://github.com/jerryfang2023-stack/AI-Radar/pull/448"
       },
       {
-        "label": "本地 Obsidian 同步",
+        "label": "本地观澜 Vault 同步准备度",
         "status": "passed",
         "detail": "工作区干净"
       },

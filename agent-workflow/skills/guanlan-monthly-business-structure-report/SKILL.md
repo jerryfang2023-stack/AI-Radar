@@ -26,7 +26,7 @@ This downstream report cannot modify V4 canonical data.
 2. `context/00-current-state.md`
 3. `context/12-data-center-v4.md`
 4. accepted daily V4 bundles for the previous complete calendar month
-5. current weekly reports under `vault/20-Application-Center/01-Industry-Reports/`
+5. current weekly reports under `01-SiteV2/content/12-applications/industry-reports/`
 6. the bounded E/O/C manifest produced by `generate-periodic-report-deepseek.mjs`
 7. `references/monthly-report-template.md`
 
@@ -55,7 +55,7 @@ Do not create a trend from one article, one opinion, one funding event, or one d
 ## Output
 
 ```text
-vault/20-Application-Center/01-Industry-Reports/monthly/YYYY-MM-DD--monthly-report--ai-business-structure-and-opportunity.md
+01-SiteV2/content/12-applications/industry-reports/monthly/YYYY-MM-DD--monthly-report--ai-business-structure-and-opportunity.md
 ```
 
 Use `status: draft` until `assert-periodic-report-content.mjs` passes. DeepSeek writes Markdown only; deterministic tooling owns HTML and navigation.

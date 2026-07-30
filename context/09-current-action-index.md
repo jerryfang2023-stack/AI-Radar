@@ -45,6 +45,6 @@ an isolated worktree. Current tools cannot discover them.
 - `O`, `C`, and `OPS` cannot create Events, Claims, or RELATION-V2.1 rows.
 - Application projections cannot write judgment fields back to canonical V4.
 - Report content generation is independent from Opportunity Map direction work.
-- FDE/Hardware sync follows V4 materialization.
+- FDE/Hardware projection follows V4 materialization; the external Guanlan Vault refresh is local and downstream of `main`.
 - `assert:no-active-v3` is release-blocking.
 - `compatibility_cards` is deleted; its return is release-blocking.

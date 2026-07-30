@@ -197,7 +197,6 @@ try {
       Invoke-NpmStep -Name "collect" -Arguments @("run", "collect:community-intelligence")
       $today = Get-BeijingDate
       Invoke-NpmStep -Name "translate" -Arguments @("run", "translate:community-intelligence", "--", "--date=$today")
-      Invoke-NpmStep -Name "archive" -Arguments @("run", "archive:community-intelligence")
       Invoke-NpmStep -Name "assert" -Arguments @("run", "assert:community-intelligence", "--", "--date=$today")
 
       $dataPath = Join-Path $repo "01-SiteV2\site\data\community-intelligence.json"
@@ -215,14 +214,9 @@ try {
         throw "Generated data date is $generatedDate, expected $today."
       }
 
-      $dailyArchive = Join-Path $repo ("vault\10-Data-Center\05-Community-Intelligence\daily\" + $today + " Community Intelligence.md")
-      if (-not (Test-Path -LiteralPath $dailyArchive)) {
-        throw "Daily Obsidian archive was not generated: $dailyArchive"
-      }
-
       Write-LogLine ("Validation ok. GeneratedAt: " + $payload.meta.generatedAt)
       Write-LogLine ("Items: " + $payload.items.Count)
-      Write-LogLine ("Daily archive: " + $dailyArchive)
+      Write-LogLine "Guanlan Vault projection will refresh after accepted data reaches local main."
 
       if ($PublishAfterSuccess) {
         Invoke-NodeStep -Name "publish" -Arguments @("agent-workflow/tools/publish-community-intelligence-local.mjs", "--date=$today")

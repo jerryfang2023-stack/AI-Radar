@@ -51,7 +51,7 @@ Audit these outputs independently when they are in scope:
 - V4 factual tables and lineage;
 - FDE, hardware, entity history, and RELATION-V2.1 projections;
 - Opportunity Map, Trend Radar, Funding Insights, and Reports;
-- collection telemetry, supervision, Pages, and Obsidian synchronization.
+- collection telemetry, supervision, Pages, and the external Guanlan Vault projection boundary.
 
 First-Line Viewpoints and Community Intelligence remain independent namespaces. They cannot create Claims, CanonicalEvents, or RELATION-V2.1 rows.
 

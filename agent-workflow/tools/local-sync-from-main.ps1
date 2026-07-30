@@ -30,6 +30,18 @@ function Resolve-RepoPath {
   return (Resolve-Path -LiteralPath (Join-Path $scriptPath "..\..")).Path
 }
 
+function Sync-GuanlanVault {
+  if ($DryRun) {
+    Write-LogLine "[dry-run] npm run sync:guanlan-vault"
+    return
+  }
+  Write-LogLine "Refreshing the external Guanlan AI Vault..."
+  npm run sync:guanlan-vault 2>&1 | ForEach-Object { Write-LogLine $_ }
+  if ($LASTEXITCODE -ne 0) {
+    throw "Guanlan Vault refresh failed with exit code $LASTEXITCODE"
+  }
+}
+
 $repo = Resolve-RepoPath -InputPath $RepoPath
 $logDir = Join-Path $repo "agent-workflow\reports\local-sync"
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null
@@ -59,7 +71,7 @@ try {
 
   $status = git status --porcelain
   if ($status -and -not $AllowDirty) {
-    Write-LogLine "Local changes detected. Sync paused to avoid overwriting local Obsidian/workspace edits."
+    Write-LogLine "Local repository changes detected. Sync paused to avoid overwriting production work."
     Write-LogLine "Commit, stash, or clean local changes, then run sync again."
     git status --short | ForEach-Object { Write-LogLine $_ }
     exit 10
@@ -70,6 +82,7 @@ try {
 
   if ($localHead -eq $remoteHead) {
     Write-LogLine "Already up to date."
+    Sync-GuanlanVault
     exit 0
   }
 
@@ -87,6 +100,7 @@ try {
     git pull --ff-only $Remote $Branch | ForEach-Object { Write-LogLine $_ }
   }
 
+  Sync-GuanlanVault
   Write-LogLine "Local sync completed."
 }
 catch {

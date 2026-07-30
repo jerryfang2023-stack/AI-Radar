@@ -4,7 +4,8 @@ The Community Intelligence lane owns:
 
 - local logged-in community collection;
 - community frontstage data;
-- daily snapshots and Obsidian archive outputs;
+- daily repository snapshots;
+- downstream Guanlan Vault projection after accepted data reaches local `main`;
 - community data gate reports;
 - community automation PR publication.
 

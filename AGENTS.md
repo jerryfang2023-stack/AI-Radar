@@ -7,7 +7,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 ## Current Version
 
 - Current stage: SITE-V4.3.0 compatibility retired; the unified V4 shell, stable entities, factual timelines, and evidence-backed relations remain first-class data services. V3 Card/desk/graph interfaces and payloads are absent from the working tree and recoverable only through explicit Git history.
-- Current local knowledge base: `vault/` (`VAULT-V1.0`), opened as an independent Obsidian vault. Only current human-readable Data Center, Application Center, Operations, and Reference assets belong there.
+- Current local knowledge base: the independent Guanlan AI Vault configured outside the original `AI热点` tree (`GUANLAN-VAULT-V1.0`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
@@ -82,7 +82,7 @@ If an old page rule conflicts with SITE-V4.3.0, delete or rebuild it instead of 
 | `context/05-daily-monitoring.md` | retired V3 monitoring archive notice |
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | retired V3 archive notice |
-| `context/08-automation.md` | SITE-V4.3 GitHub / site / Obsidian sync automation loop |
+| `context/08-automation.md` | SITE-V4.3 GitHub / site / Guanlan Vault sync automation loop |
 | `context/09-current-action-index.md` | current V4 action registry |
 | `context/10-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane liveness watchdog |
@@ -148,7 +148,7 @@ Read:
 1. `agent-workflow/skills/guanlan-fde-data-projection/SKILL.md`
 2. `context/12-data-center-v4.md`
 3. current V4 FDE generator and integrity gate
-4. `agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs`
+4. `agent-workflow/tools/build-guanlan-vault.mjs`
 
 Rules:
 
@@ -157,7 +157,7 @@ Rules:
 - FDE follows the V4 evidence boundary: English title translation and source-backed fact extraction resolve through SourceArtifact, RawDocument, accepted Claims, and the FDE projection.
 - Missing FDE title/fact fields are repaired in V4 intake/extraction/projection, not through archived Cards.
 - If the source does not disclose implementation results, state that explicitly instead of inventing ROI or production outcome.
-- FDE detail openability and `vault/10-Data-Center/02-Enterprise-AI-FDE` sync are owned by the FDE skill, not by generic Business Signals Card repair.
+- FDE detail openability is owned by the FDE skill. Its readable knowledge projection is rebuilt into `60-知识资产/企业 AI 案例` by the Guanlan Vault builder, not by generic Business Signals Card repair.
 
 ### UI / Page Work
 

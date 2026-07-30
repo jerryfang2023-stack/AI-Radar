@@ -1,15 +1,15 @@
 ---
 name: guanlan-first-line-viewpoints-monitor
-description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Obsidian person/date timelines, publication closure, and production-incident repair. Do not use to create Claims, CanonicalEvents, RELATION-V2.1 facts, or Community Intelligence.
+description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Guanlan Vault person timelines, publication closure, and production-incident repair. Do not use to create Claims, CanonicalEvents, RELATION-V2.1 facts, or Community Intelligence.
 metadata:
   guanlan:
     version: "1.1.3"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
-    responsibility: "Own First-Line Viewpoints current and historical supervision: source-backed builders data, V4 projection, Chinese translation, formal tags, and Obsidian person/date timelines."
+    responsibility: "Own First-Line Viewpoints current and historical supervision: source-backed builders data, V4 projection, Chinese translation, formal tags, and the local Guanlan Vault projection."
     upstream: "current follow-builders data, committed morning snapshots, afternoon follow-builders archive, production incident registry"
-    downstream: "follow-builders-daily.json, first-line-viewpoints-history.json, first-line-viewpoints-v4.json, Obsidian opinion timelines, PR publication"
+    downstream: "follow-builders-daily.json, first-line-viewpoints-history.json, first-line-viewpoints-v4.json, external Guanlan Vault person timelines, PR publication"
     gates: "current builders assertion, historical provenance, translation/source-hash, AI relevance, opinion tags, original-URL dedupe, V4 projection, sync idempotency"
     recent_learning: "Historical morning snapshots may extend the public timeline only through the same source, translation, AI-relevance, opinion-tag, and original-URL gates as current records; afternoon intake cannot bypass them."
     mirrored_in_skill_store: true
@@ -18,7 +18,7 @@ metadata:
 
 # Guanlan First-Line Viewpoints Monitor
 
-This skill owns the First-Line Viewpoints lane. It supervises current and historical builders data, the V4 frontstage projection, translation quality, formal tags, fallback behavior, Obsidian person/date timeline sync, and lane repair.
+This skill owns the First-Line Viewpoints lane. It supervises current and historical builders data, the V4 frontstage projection, translation quality, formal tags, fallback behavior, the post-merge Guanlan Vault person projection, and lane repair.
 
 The lane has three inputs with two independent production routes:
 
@@ -69,7 +69,7 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 3. Build or inspect current `follow-builders-daily.json`; run `assert-follow-builders-data.mjs` for the active date.
 4. Inspect `first-line-viewpoints-history.json`. Rebuild it from committed morning snapshots only when a backfill or history repair is requested; do not translate historical records during routine supervision.
 5. Build `first-line-viewpoints-v4.json`, then run `assert-first-line-viewpoints-v4-data.mjs` and verify current/historical counts, date range, lane coverage, and original-URL dedupe.
-6. Sync gated run data into `vault/10-Data-Center/04-First-Line-Viewpoints/people/<person>/<original-date>.md`, then confirm a same-date dry run reports `added: 0`.
+6. After accepted data reaches local `main`, run `npm run sync:guanlan-vault` and verify deduplicated person timelines under `60-知识资产/一线人物/`.
 7. Publish the afternoon follow-builders skill output through its independent branch / PR route and verify the local publish report.
 8. Stage / publish only first-line owned files through the automation PR route.
 9. Add or tighten evals before adding long prose when a failure recurs.
@@ -102,11 +102,11 @@ Classify a failure before rerunning anything:
 - `data_gate_failure`: `assert-follow-builders-data.mjs` failed on freshness, count, translation, URL/id, dedupe, or formal tags.
 - `history_backfill_failure`: committed snapshot discovery, historical provenance, translation/source-hash, AI relevance, opinion tags, or original-URL dedupe failed.
 - `v4_projection_failure`: current, history, and afternoon inputs exist but `first-line-viewpoints-v4.json` counts, date range, lane coverage, or release gate are inconsistent.
-- `obsidian_sync_failure`: original-date person/date timeline files are missing or sync is not idempotent.
+- `guanlan_vault_projection_failure`: the post-merge person projection is missing, stale, or fails `assert:guanlan-vault`.
 - `prewindow_false_alarm`: lane supervision checked before the 09:50 consolidated closure for RSS or before the afternoon publisher finished.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
 - `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
-- `afternoon_publication_failure`: the afternoon feed/archive output, report, and Obsidian sync are healthy, but branch push, PR creation, PR merge, or Pages publication failed. If same-day reruns fail with `stale info` or `force-with-lease` rejection after a previous PR deleted the remote automation branch, prune stale remote refs and rerun the publication path rather than reclassifying the feed as failed.
+- `afternoon_publication_failure`: the afternoon feed and report are healthy, but branch push, PR creation, PR merge, or Pages publication failed. If same-day reruns fail with `stale info` or `force-with-lease` rejection after a previous PR deleted the remote automation branch, prune stale remote refs and rerun the publication path rather than reclassifying the feed as failed.
 
 Repair the earliest category and rerun the smallest validation. Do not substitute the afternoon skill route for missing morning RSS page data.
 
@@ -114,7 +114,7 @@ Repair the earliest category and rerun the smallest validation. Do not substitut
 
 Use this path for the public First-Line Viewpoints page:
 
-1. At 08:30, local Codex `builder-observation-daily-sync` runs blog RSS fetch, podcast RSS fetch, page-data build, data gate, and Obsidian sync.
+1. At 08:30, local Codex `builder-observation-daily-sync` runs blog RSS fetch, podcast RSS fetch, page-data build, and the data gate.
 2. At 09:15, the consolidated recovery controller may dispatch the same RSS page-data path when same-date data / timelines are missing and no run exists.
 3. At 09:50, closure checks after the local attempt and the single fallback. If it failed, same-date data is still unhealthy, and no run is active, record a targeted repair task instead of dispatching another workflow.
 4. Success means:
@@ -123,8 +123,8 @@ Use this path for the public First-Line Viewpoints page:
    - `assert-follow-builders-data.mjs --date=<date>` passes;
    - accepted `first-line-viewpoints-history.json` remains available with source-snapshot provenance;
    - rebuilt `first-line-viewpoints-v4.json` passes `assert-first-line-viewpoints-v4-data.mjs` and reports current plus historical published counts consistently;
-   - gated records are present in person/date Obsidian timeline files keyed by original source date;
-   - a second sync or dry run adds `0` entries;
+   - gated records are present in the external Guanlan Vault person projection after local `main` sync;
+   - `npm run assert:guanlan-vault` passes;
    - frontstage data does not contain the generic tag `Builder viewpoint`.
 5. Do not treat zero `### <run-date>` headings as missing sync by itself. A run can be healthy when all source items have earlier original dates and dry-run sync reports `added: 0`.
 6. If the 08:30 local run misses but GitHub fallback produces healthy same-date data, classify the local miss as an automation reliability issue, not a data-quality failure.
@@ -137,17 +137,16 @@ Success after 16:30 requires:
 
 - `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md` exists;
 - the output frontmatter `builder_items_count` is greater than `0`;
-- generated skill viewpoints are synced into `vault/10-Data-Center/04-First-Line-Viewpoints/`;
+- generated skill viewpoints are present in repository production data and are projected into `60-知识资产/一线人物/` after local `main` sync;
 - `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` exists;
 - the report `builder_items_count` is greater than `0`;
 - the report count matches the output count.
-- the report includes Obsidian sync counts.
 - the report does not contain `publish_status: failed` or a `Publish Failure` section;
-- lane supervision can parse `publish_status`, `publish_error`, and `obsidian_sync_*` counts from the report;
+- lane supervision can parse `publish_status` and `publish_error` from the report;
 - the automation branch was pushed, the PR was merged to `main`, and GitHub Pages completed when the local task runs with `-Merge`.
 
 Before creating `afternoon_skill_runner`, refresh `origin/main` and check the exact-date report/output pair there. Do not infer afternoon failure from a Business Signals workflow run or the morning First-Line RSS workflow; neither owns the local afternoon artifacts.
-If the report exists but records `0` while the output contains items, or if the report lacks Obsidian sync counts, repair or regenerate the report before closing the production incident.
+If the report exists but records `0` while the output contains items, repair or regenerate the report before closing the production incident.
 If the report shows healthy feed/archive counts but a publish failure, repair the publication path only. Do not rerun or blame the upstream builders feed unless the output file itself is stale, missing, or zero-count.
 
 ## Lane Boundaries
@@ -158,7 +157,7 @@ If the report shows healthy feed/archive counts but a publish failure, repair th
 - Do not treat old `YYYY-MM.md` month files as current sync success.
 - Do not allow untranslated English as primary Chinese frontstage text.
 - Do not treat a report file's existence as publish success when its item count is zero or mismatched.
-- Do not let the afternoon skill lane block the morning public page when the RSS page-data gate and Obsidian sync are healthy.
+- Do not let the afternoon skill lane block the morning public page when the RSS page-data gate is healthy.
 - Do not let historical snapshots bypass current translation, source, AI-relevance, opinion-tag, or original-URL gates.
 - Do not treat the afternoon archive as a substitute source for missing committed morning history.
 
@@ -171,7 +170,7 @@ When finishing, report:
 - history date range, published/pending counts, current/historical split, and source snapshot count;
 - data gate result;
 - V4 projection gate result and morning/afternoon overlap counts;
-- Obsidian sync result and idempotency result;
+- Guanlan Vault projection assertion result when the local post-merge refresh is in scope;
 - files changed;
 - prevention artifact added or not needed;
 - production incident status;

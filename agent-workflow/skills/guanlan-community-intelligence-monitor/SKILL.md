@@ -18,7 +18,7 @@ metadata:
 
 # Guanlan Community Intelligence Monitor
 
-This skill owns the Community Intelligence lane. It supervises local logged-in collection, community frontstage data, Obsidian archive output, community data gate, and publication through the community PR workflow.
+This skill owns the Community Intelligence lane. It supervises local logged-in collection, community frontstage data, the community data gate, and publication through the community PR workflow. The external Guanlan AI Vault receives a local readable projection only after accepted data reaches `main`.
 
 ## Current Timing
 
@@ -46,7 +46,7 @@ For implementation detail, read:
 - `agent-workflow/tools/publish-community-intelligence-local.mjs`
 - `agent-workflow/tools/assert-community-intelligence-data.mjs`
 - `01-SiteV2/site/scripts/collect-community-intelligence.mjs`
-- `01-SiteV2/site/scripts/archive-community-intelligence.mjs`
+- `agent-workflow/tools/build-guanlan-vault.mjs`
 
 For regression prevention, read `evals/community-intelligence-monitor-evals.md`. When repairing lead handling or cross-lane promotion boundaries, also read `examples/good-community-lead.md` and `examples/bad-unverified-fact-promotion.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 
@@ -101,7 +101,7 @@ The preferred before-10:00 path is:
 
 ## 2026-06-30 Publication Waiting Rule
 
-- Same-date local data, daily snapshot, Obsidian archive, selected keywords, links, and `assert:community-intelligence` passing are enough to mark collection healthy.
+- Same-date local data, daily snapshot, selected keywords, links, and `assert:community-intelligence` passing are enough to mark collection healthy.
 - An open same-date Community Intelligence PR or queued / in-progress publish workflow after healthy local data is a Waiting state, not a Problem.
 - Waiting-only publication state must not create production incidents.
 - If a later same-date PR merges and Pages succeeds, resolve stale production incidents without recollecting.

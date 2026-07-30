@@ -1,6 +1,6 @@
 ---
 name: guanlan-monthly-report-page-generator
-description: Use when creating, updating, or repairing WaveSight AI monthly report frontstage pages from `vault/20-Application-Center/01-Industry-Reports/monthly/`. Applies to monthly report detail pages, Industry Reports monthly entries and wiring, Guanlan VI page styling, longform report layout, charts/tables/visual modules, and responsive local validation. Do not use for writing the monthly report judgment itself; use `guanlan-monthly-business-structure-report` first.
+description: Use when creating, updating, or repairing WaveSight AI monthly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/monthly/`. Applies to monthly report detail pages, Industry Reports monthly entries and wiring, Guanlan VI page styling, longform report layout, charts/tables/visual modules, and responsive local validation. Do not use for writing the monthly report judgment itself; use `guanlan-monthly-business-structure-report` first.
 metadata:
   guanlan:
     version: "1.1.0"
@@ -34,7 +34,7 @@ Read only what the task needs:
 1. `context/version-ledger.md`
 2. `context/frontstage-page-contracts.md`
 3. `context/02-vi-style.md`
-4. Source report under `vault/20-Application-Center/01-Industry-Reports/monthly/`
+4. Source report under `01-SiteV2/content/12-applications/industry-reports/monthly/`
 5. Target files:
    - `01-SiteV2/site/intelligence-map.html`
    - `01-SiteV2/site/monthly-*.html`
@@ -51,7 +51,7 @@ For detailed rules, load:
 ## Workflow
 
 1. Confirm source.
-   - Use the monthly report Markdown under `vault/20-Application-Center/01-Industry-Reports/monthly/`.
+   - Use the monthly report Markdown under `01-SiteV2/content/12-applications/industry-reports/monthly/`.
    - If no accepted monthly report exists, stop and use `guanlan-monthly-business-structure-report` first.
 
 2. Extract page fields.

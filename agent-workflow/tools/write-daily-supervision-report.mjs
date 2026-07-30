@@ -567,7 +567,7 @@ export function buildBusinessSignalsLane() {
       warnings.push("09:50 publication closure found no same-date GitHub Pages run");
     }
     if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
-      warnings.push(`local Obsidian sync may be blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`);
+      warnings.push(`local main sync and Guanlan Vault refresh may be blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`);
     }
   }
 
@@ -618,9 +618,9 @@ export function buildBusinessSignalsLane() {
     }
   } else if (
     waiting.some((item) => /workflow is queued|workflow is in_progress|Pages workflow is/iu.test(item.message))
-    || warnings.some((item) => /workflow conclusion|Pages|publication|manifest|Obsidian|dirty/iu.test(item))
+    || warnings.some((item) => /workflow conclusion|Pages|publication|manifest|Guanlan Vault|dirty/iu.test(item))
   ) {
-    evidence.diagnosis.category = warnings.some((item) => /Obsidian|dirty/iu.test(item)) ? "local_sync" : "publication";
+    evidence.diagnosis.category = warnings.some((item) => /Guanlan Vault|dirty/iu.test(item)) ? "local_sync" : "publication";
     evidence.diagnosis.reason = "same-date data is healthy; remaining issue is publication/local sync closure";
     evidence.diagnosis.neededAction = "repair publication/local sync closure only; do not rerun Raw/Pool/Card generation";
   }
@@ -668,7 +668,6 @@ export function buildFirstLineLane() {
   const manifestHealthy = [
     manifestFields.builders_data,
     manifestFields.builders_gate,
-    manifestFields.obsidian_sync,
   ].every((value) => value === "success");
   const historicalEvidenceHealthy = date < shanghaiDate() && manifestHealthy && statusFromGateText(gateText) === "passed";
   const gh = githubWorkflowState("daily-first-line-viewpoints-pr.yml", `automation/first-line-viewpoints-${date}`);
@@ -737,7 +736,7 @@ export function buildFirstLineLane() {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure",
+    schedule: "08:30 local RSS collection + page build; 09:15 conditional fallback; 09:50 consolidated closure",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
@@ -774,12 +773,6 @@ export function buildFollowBuildersSkillLane() {
   } catch {
     publishError = String(publishError || "").replace(/^["']|["']$/gu, "");
   }
-  const obsidianSync = {
-    added: Number(reportFields.obsidian_sync_added ?? Number.NaN),
-    groups: Number(reportFields.obsidian_sync_groups ?? Number.NaN),
-    files: Number(reportFields.obsidian_sync_files ?? Number.NaN),
-  };
-  const obsidianSyncRecorded = Object.values(obsidianSync).every(Number.isFinite);
 
   evidence.outputFile = localOutputText
     ? rel(outputFile)
@@ -795,7 +788,7 @@ export function buildFollowBuildersSkillLane() {
   evidence.reportCount = reportCount;
   evidence.publishStatus = publishStatus || (reportExists ? "not_recorded" : "missing");
   evidence.publishError = publishError;
-  evidence.obsidianSync = obsidianSyncRecorded ? obsidianSync : "missing";
+  evidence.guanlanVaultProjection = reportFields.guanlan_vault_projection || "local_after_main_sync";
 
   if (windowPassed) {
     if (!outputExists) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
@@ -808,9 +801,6 @@ export function buildFollowBuildersSkillLane() {
     }
     if (reportExists && reportCount > 0 && itemCount > 0 && reportCount !== itemCount) {
       addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
-    }
-    if (reportExists && !obsidianSyncRecorded) {
-      addProblem(problems, "follow-builders skill report is missing Obsidian sync counts");
     }
     if (reportExists && publishStatus === "failed") {
       const category = /prepare-digest|generate-builders|terminated|skill script|feed/iu.test(publishError)
@@ -849,7 +839,7 @@ export function buildFollowBuildersSkillLane() {
           ? "afternoon_publication_failure"
           : "afternoon_count_mismatch",
         reason: problems[0]?.message || "follow-builders skill lane failed",
-        neededAction: "inspect the afternoon publish report, output count, and Obsidian sync counts",
+        neededAction: "inspect the afternoon publish report, output count, and publication status",
       };
     }
     actions.push("send Codex a follow_builders_skill repair request with publish report path");

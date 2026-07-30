@@ -188,7 +188,7 @@ test("historical weekly HTML remains outside the V4.3 version rewrite", () => {
 test("V4 production no longer depends on active legacy mappings or a public V3 pipeline page", () => {
   for (const file of [
     "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/build-data-center-v4-obsidian-index.mjs",
+    "agent-workflow/tools/build-guanlan-vault.mjs",
     "agent-workflow/tools/assert-source-title-integrity.mjs",
     "agent-workflow/tools/backfill-source-title-translations.mjs",
   ]) {

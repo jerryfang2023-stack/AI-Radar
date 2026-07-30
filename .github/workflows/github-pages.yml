@@ -156,7 +156,7 @@ jobs:
           GUANLAN_SKILL_STORE: ${{ github.workspace }}/agent-workflow/skills
         run: |
           node agent-workflow/tools/assert-current-rule-hygiene.mjs
-          npm run assert:obsidian-vault
+          npm run assert:guanlan-vault -- --contract-only
           node agent-workflow/tools/sync-repo-skills.mjs
           node agent-workflow/tools/validate-guanlan-skills.mjs
           node agent-workflow/tools/assert-skill-store-dashboard.mjs

@@ -1,6 +1,6 @@
 ---
 name: guanlan-weekly-report-page-generator
-description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `vault/20-Application-Center/01-Industry-Reports/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
+description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
     version: "1.1.2"
@@ -34,7 +34,7 @@ Read only what the task needs:
 1. `context/version-ledger.md`
 2. `context/frontstage-page-contracts.md`
 3. `context/02-vi-style.md`
-4. Source report in `vault/20-Application-Center/01-Industry-Reports/`
+4. Source report in `01-SiteV2/content/12-applications/industry-reports/`
 5. Target files:
    - `01-SiteV2/site/intelligence-map.html`
    - `01-SiteV2/site/weekly-ai-business-change-radar.html` or the new weekly detail page
@@ -51,7 +51,7 @@ For detailed rules, load:
 ## Workflow
 
 1. Confirm source.
-   - Use `vault/20-Application-Center/01-Industry-Reports/` as the weekly report content source.
+   - Use `01-SiteV2/content/12-applications/industry-reports/` as the weekly report content source.
    - Do not generate future pages directly from `agent-workflow/reports/` unless also writing the content copy into `content/08-report/`.
 
 2. Extract page fields.

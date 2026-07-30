@@ -92,12 +92,10 @@ test("application projection is not passed while any projection outcome is unkno
   assert.equal(result.stages.find((item) => item.id === "application_projection").status, "partial");
 });
 
-test("daily workflow keeps lens sync and OPS telemetry independent from the V3 frontstage gate", () => {
+test("daily workflow keeps OPS telemetry independent and does not write a local Vault in GitHub Actions", () => {
   const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const lensBlock = workflow.match(/- name: Sync FDE and AI hardware Obsidian archives[\s\S]*?(?=\n\s+- name:)/u)?.[0] || "";
   const opsBlock = workflow.match(/- name: Sync operations data after V4 production[\s\S]*?(?=\n\s+- name:)/u)?.[0] || "";
-  assert.match(lensBlock, /if: always\(\) && steps\.data-center-v4-materialize\.outcome == 'success'/u);
-  assert.doesNotMatch(lensBlock, /business-frontstage-gate/u);
+  assert.doesNotMatch(workflow, /Sync FDE and AI hardware Obsidian archives|sync-(?:enterprise-ai-fde|ai-hardware)-to-obsidian/u);
   assert.match(opsBlock, /build-collection-telemetry-v1\.mjs/u);
   assert.match(opsBlock, /steps\.data-center-v4-materialize\.outcome == 'success'/u);
   assert.doesNotMatch(opsBlock, /if:.*business-frontstage-gate/u);

@@ -2,7 +2,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
@@ -139,8 +138,7 @@ function communityPublishReady(targetDate) {
   const items = Array.isArray(data.items) ? data.items.length : 0;
   const links = Array.isArray(data.links) ? data.links.length : 0;
   const errors = Array.isArray(data?.meta?.errors) ? data.meta.errors.length : 0;
-  const archive = path.join(root, OBSIDIAN_PATHS.communityRoot, "daily", `${targetDate} Community Intelligence.md`);
-  const ready = generatedDate === targetDate && items >= 12 && links >= 3 && errors === 0 && fs.existsSync(archive);
+  const ready = generatedDate === targetDate && items >= 12 && links >= 3 && errors === 0;
   return {
     ready,
     reason: ready

@@ -27,7 +27,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/05-daily-monitoring.md` | Retired V3 daily-monitoring notice | Historical V3 audit only |
 | `context/06-execution-harness.md` | High-risk execution harness | V4 source intake, fact build, application projections, page changes |
 | `context/07-v3-intelligence-generation-rules.md` | V3 retirement notice and explicit Git-history recovery boundary | Historical V3 audit only |
-| `context/08-automation.md` | SITE-V4.3 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
+| `context/08-automation.md` | SITE-V4.3 GitHub / site / external Guanlan Vault automation loop | GitHub Actions, data sync, local sync |
 | `context/09-current-action-index.md` | Current V4 action registry | Action dispatch and automation recovery |
 | `context/10-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane watchdog instructions | Controller liveness only; no lane supervision or repair |

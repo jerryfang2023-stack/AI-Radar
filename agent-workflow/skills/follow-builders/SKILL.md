@@ -34,14 +34,14 @@ For WaveSight AI, this skill owns only the independent First-Line Viewpoints col
 
 When using this skill inside WaveSight AI work, run the checks in `evals/wavesight-boundary-evals.md`.
 
-## WaveSight Local Obsidian Sync
+## WaveSight Local Guanlan Vault Projection
 
-When this skill is used inside the WaveSight repository, the daily Builders / First-Line Viewpoints flow has two required local assets:
+When this skill is used inside the WaveSight repository, the daily Builders / First-Line Viewpoints flow has one production asset and one generated local reading view:
 
 1. Frontstage data: `01-SiteV2/site/data/follow-builders-daily.json`.
-2. Obsidian reading view: `vault/10-Data-Center/04-First-Line-Viewpoints/`.
+2. Guanlan Vault reading view: `60-知识资产/一线人物/`.
 
-After building and gating `follow-builders-daily.json`, sync the same production date into the Obsidian viewpoint timelines:
+After building and gating `follow-builders-daily.json`, publish repository-owned production files through the lane PR. The external Guanlan AI Vault is refreshed locally from merged V4 data:
 
 ```powershell
 node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=<YYYY-MM-DD> --to=<YYYY-MM-DD>
@@ -52,7 +52,8 @@ The sync must:
 - use original remark dates for timeline placement;
 - dedupe by original URL / id;
 - update person date files and person README indexes;
-- update `vault/10-Data-Center/04-First-Line-Viewpoints/README.md`;
+- run `npm run sync:guanlan-vault` after local `main` contains the accepted data;
+- verify the deduplicated person timelines under `60-知识资产/一线人物/`;
 - keep Builder viewpoints out of Claims, CanonicalEvents, and RELATION-V2.1 evidence.
 
 For backfill, run the same command with a date range, for example:

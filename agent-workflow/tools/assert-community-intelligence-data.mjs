@@ -1,11 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { sourceTextHash } from "./deepseek-translation-client.mjs";
-import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
-const archiveRoot = path.join(root, OBSIDIAN_PATHS.communityRoot);
 const reportsDir = path.join(root, "agent-workflow", "reports");
 
 function argValue(name, fallback = "") {
@@ -127,21 +125,6 @@ function main() {
   add(errors.length === 0, "collector recorded no blocking errors", errorDetails);
   const translationErrors = translationProblems(items);
   add(translationErrors.length === 0, "English community content is translated with current-source DeepSeek provenance", translationErrors.slice(0, 10).join("; "));
-
-  const dailyArchive = path.join(archiveRoot, "daily", `${date} Community Intelligence.md`);
-  const indexFile = path.join(archiveRoot, "Community Intelligence Index.md");
-  const viewFiles = [
-    "Industry Cases.md",
-    "Tool Tips.md",
-    "Opportunities.md",
-    "Resource Links.md",
-  ].map((file) => path.join(archiveRoot, "views", file));
-
-  add(exists(dailyArchive), "daily Obsidian archive exists", path.relative(root, dailyArchive).replace(/\\/g, "/"));
-  add(exists(indexFile), "community intelligence index exists", path.relative(root, indexFile).replace(/\\/g, "/"));
-  for (const file of viewFiles) {
-    add(exists(file), `archive view exists: ${path.basename(file)}`, path.relative(root, file).replace(/\\/g, "/"));
-  }
 
   const failed = checks.filter((check) => !check.ok);
   const status = failed.length ? "failed" : "passed";
