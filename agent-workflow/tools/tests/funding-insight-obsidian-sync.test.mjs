@@ -3,6 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { OBSIDIAN_PATHS } from "../obsidian-vault-paths.mjs";
 import { syncFundingInsightsToObsidian } from "../sync-funding-insights-to-obsidian.mjs";
 
 function card({
@@ -71,7 +72,7 @@ test("融资透视 Obsidian 同步只写入已发布卡片，并保持幂等", (
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-obsidian-"));
   try {
     const input = path.join(root, "funding-insights-v1.json");
-    const output = path.join(root, "knowledge", "04-Funding-Insights");
+    const output = path.join(root, "vault", "20-Application-Center", "02-Funding-Insights");
     fs.writeFileSync(input, JSON.stringify({
       meta: { generated_at: "2026-07-27T00:00:00.000Z" },
       cards: [
@@ -110,7 +111,7 @@ test("融资透视 Obsidian 同步只清理自身生成的过期笔记", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-obsidian-cleanup-"));
   try {
     const input = path.join(root, "funding-insights-v1.json");
-    const output = path.join(root, "knowledge", "04-Funding-Insights");
+    const output = path.join(root, OBSIDIAN_PATHS.fundingInsightsRoot);
     fs.writeFileSync(input, JSON.stringify({
       meta: { generated_at: "2026-07-27T00:00:00.000Z" },
       cards: [card({ id: "FI-1", eventId: "EV-1", date: "2026-07-27", company: "Acme" })],
@@ -139,7 +140,7 @@ test("融资透视 Obsidian 链接不受父目录 .obsidian 配置影响", () =>
     fs.mkdirSync(path.join(parent, ".obsidian"));
     fs.mkdirSync(root);
     const input = path.join(root, "funding-insights-v1.json");
-    const output = path.join(root, "knowledge", "04-Funding-Insights");
+    const output = path.join(root, OBSIDIAN_PATHS.fundingInsightsRoot);
     fs.writeFileSync(input, JSON.stringify({
       meta: { generated_at: "2026-07-27T00:00:00.000Z" },
       cards: [card({ id: "FI-1", eventId: "EV-1", date: "2026-07-27", company: "Acme" })],
@@ -147,8 +148,8 @@ test("融资透视 Obsidian 链接不受父目录 .obsidian 配置影响", () =>
 
     syncFundingInsightsToObsidian({ root, input, output });
     const index = fs.readFileSync(path.join(output, "Funding Insights Index.md"), "utf8");
-    assert.match(index, /\[\[knowledge\/04-Funding-Insights\/cards\/2026-07\/2026-07\|2026-07\]\]/u);
-    assert.doesNotMatch(index, /\[\[01-WaveSight\//u);
+    assert.match(index, /\[\[20-Application-Center\/02-Funding-Insights\/cards\/2026-07\/2026-07\|2026-07\]\]/u);
+    assert.doesNotMatch(index, /\[\[(?:01-WaveSight|vault)\//u);
   } finally {
     fs.rmSync(parent, { recursive: true, force: true });
   }

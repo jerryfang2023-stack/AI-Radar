@@ -3,7 +3,7 @@
 ## Pass Cases
 
 1. Source discipline
-   - Pass when the page is generated from a monthly Markdown file under `01-SiteV2/content/08-report/monthly/`.
+   - Pass when the page is generated from a monthly Markdown file under `vault/20-Application-Center/01-Industry-Reports/monthly/`.
    - Pass when the monthly content-writing skill remains responsible for report judgment.
 
 2. Full report rendering

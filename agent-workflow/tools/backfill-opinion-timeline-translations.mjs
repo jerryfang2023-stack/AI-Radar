@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 import {
   completeOpinionTranslation,
   cleanOpinionSource,
@@ -13,7 +14,7 @@ import {
 } from "./opinion-translation-utils.mjs";
 
 const root = process.cwd();
-const timelineRoot = path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Timelines", "people");
+const timelineRoot = path.join(root, OBSIDIAN_PATHS.viewpointsRoot, "people");
 const write = process.argv.includes("--write=true");
 const concurrency = Math.max(1, Math.min(4, Number(process.argv.find((arg) => arg.startsWith("--concurrency="))?.split("=")[1] || 2)));
 

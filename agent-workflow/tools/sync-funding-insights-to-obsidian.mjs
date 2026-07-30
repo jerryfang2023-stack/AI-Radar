@@ -3,10 +3,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { OBSIDIAN_PATHS, OBSIDIAN_VAULT_ROOT } from "./obsidian-vault-paths.mjs";
 
 const SYNC_OWNER = "guanlan-funding-insight-obsidian-sync";
 const DEFAULT_INPUT = "01-SiteV2/site/data/funding-insights-v1.json";
-const DEFAULT_OUTPUT = "01-SiteV2/knowledge/04-Funding-Insights";
+const DEFAULT_OUTPUT = OBSIDIAN_PATHS.fundingInsightsRoot;
 const SITE_BASE = "https://jerryfang2023-stack.github.io/AI-Radar";
 
 function clean(value = "") {
@@ -388,7 +389,10 @@ export function syncFundingInsightsToObsidian({
   const outputRoot = path.resolve(root, output);
   // Keep generated links stable in local Obsidian vaults and GitHub Actions.
   // A parent `.obsidian` directory is an environment detail, not repository data.
-  const vaultRoot = path.resolve(root);
+  const configuredVaultRoot = path.resolve(root, OBSIDIAN_VAULT_ROOT);
+  const vaultRoot = outputRoot === configuredVaultRoot || outputRoot.startsWith(`${configuredVaultRoot}${path.sep}`)
+    ? configuredVaultRoot
+    : path.resolve(root);
   const vaultOutputPath = path.relative(vaultRoot, outputRoot).replace(/\\/gu, "/");
   const sourcePath = path.relative(root, inputFile).replace(/\\/gu, "/");
   const data = JSON.parse(fs.readFileSync(inputFile, "utf8").replace(/^\uFEFF/u, ""));

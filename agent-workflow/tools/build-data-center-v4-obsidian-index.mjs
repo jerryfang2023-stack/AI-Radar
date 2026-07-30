@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { OBSIDIAN_PATHS, resolveObsidianPath } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const dataRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
-const output = path.join(dataRoot, "Data Center V4 Index.md");
+const output = resolveObsidianPath(root, OBSIDIAN_PATHS.dataCenterIndex);
+const repositoryDataBase = "https://github.com/jerryfang2023-stack/AI-Radar/blob/main/01-SiteV2/content/11-databases/data-center-v4";
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
 const dates = () => fs.readdirSync(dataRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
@@ -45,7 +47,7 @@ function main() {
     "",
     "## Current snapshot",
     "",
-    `- current bundle: [[${current.date}/manifest.json]]`,
+    `- current bundle: [manifest.json](${repositoryDataBase}/${current.date}/manifest.json)`,
     `- SourceArtifact: ${uniqueCount(all("sources"), "source_artifact_id")}`,
     `- RawDocument: ${uniqueCount(all("raws"), "raw_id")}`,
     `- Claim: ${uniqueCount(all("claims"), "claim_id")}`,
@@ -54,8 +56,8 @@ function main() {
     "",
     "## Navigation",
     "",
-    "- [[../../09-fde/Enterprise AI FDE Index|Enterprise AI / FDE Index]]",
-    "- [[../../10-ai-hardware/AI Hardware Index|AI Hardware Index]]",
+    "- [[../02-Enterprise-AI-FDE/Enterprise AI FDE Index|Enterprise AI / FDE Index]]",
+    "- [[../03-AI-Hardware/AI Hardware Index|AI Hardware Index]]",
     "",
     "## Daily bundles",
     "",
@@ -63,7 +65,7 @@ function main() {
     "|---|---:|---:|---:|---:|---|",
     ...days.slice().reverse().map((day) => {
       const counts = day.manifest.counts;
-      return `| ${day.date} | ${counts.raw_documents} | ${counts.claims} | ${counts.canonical_events} | ${counts.qa_queue} | [[${day.date}/raw-documents.json|Raw]] · [[${day.date}/canonical-events.json|Events]] · [[${day.date}/qa-queue.json|QA]] |`;
+      return `| ${day.date} | ${counts.raw_documents} | ${counts.claims} | ${counts.canonical_events} | ${counts.qa_queue} | [Raw](${repositoryDataBase}/${day.date}/raw-documents.json) · [Events](${repositoryDataBase}/${day.date}/canonical-events.json) · [QA](${repositoryDataBase}/${day.date}/qa-queue.json) |`;
     }),
     "",
     "## Object boundaries",

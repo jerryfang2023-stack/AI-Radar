@@ -219,7 +219,7 @@ jobs:
           git add \
             "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json" \
             "01-SiteV2/site/data/funding-insights-v1.json"
-          git add -A -- "01-SiteV2/knowledge/04-Funding-Insights"
+          git add -A -- "vault/20-Application-Center/02-Funding-Insights"
           if git diff --cached --quiet; then
             echo "No Funding Insights changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"

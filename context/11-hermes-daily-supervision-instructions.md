@@ -89,7 +89,7 @@ The current incident registry is:
 agent-workflow/inbox/production-incidents/
 ```
 
-`agent-workflow/inbox/hermes-to-codex/` is legacy history. New routine supervision records must not be written there.
+Retired Hermes-to-Codex handoff records are recoverable from Git history only. Current incidents are read and written exclusively through `agent-workflow/inbox/production-incidents/`.
 
 The only incident category Hermes may create is:
 

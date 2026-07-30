@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -89,11 +90,11 @@ function stageIfExists(file) {
 }
 
 function stageViewFiles() {
-  const dir = path.join(root, "01-SiteV2", "content", "07-community-intelligence", "views");
+  const dir = path.join(root, OBSIDIAN_PATHS.communityRoot, "views");
   if (!fs.existsSync(dir)) return;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (entry.isFile() && entry.name.endsWith(".md")) {
-      stageIfExists(`01-SiteV2/content/07-community-intelligence/views/${entry.name}`);
+      stageIfExists(`${OBSIDIAN_PATHS.communityRoot}/views/${entry.name}`);
     }
   }
 }
@@ -293,9 +294,9 @@ function main() {
   stageIfExists("01-SiteV2/site/data/community-intelligence.json");
   stageIfExists("01-SiteV2/site/data/community-intelligence-daily/index.json");
   stageIfExists(`01-SiteV2/site/data/community-intelligence-daily/${date}.json`);
-  stageIfExists("01-SiteV2/content/07-community-intelligence/Community Intelligence Index.md");
-  stageIfExists("01-SiteV2/content/07-community-intelligence/README.md");
-  stageIfExists(`01-SiteV2/content/07-community-intelligence/daily/${date} Community Intelligence.md`);
+  stageIfExists("vault/10-Data-Center/05-Community-Intelligence/Community Intelligence Index.md");
+  stageIfExists("vault/10-Data-Center/05-Community-Intelligence/README.md");
+  stageIfExists(`vault/10-Data-Center/05-Community-Intelligence/daily/${date} Community Intelligence.md`);
   stageViewFiles();
 
   const staged = run("git", ["diff", "--cached", "--name-only"]);

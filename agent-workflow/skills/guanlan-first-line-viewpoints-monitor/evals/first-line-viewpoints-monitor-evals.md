@@ -20,7 +20,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Pass when every remark has at least one `opinion`, one `track`, and one `source` formal tag.
 
 6. `obsidian_person_date_sync`
-   - Pass when the run's gated viewpoints are written under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<original-date>.md`.
+   - Pass when the run's gated viewpoints are written under `vault/10-Data-Center/04-First-Line-Viewpoints/people/<person>/<original-date>.md`.
    - Pass when a same-day run has no same-day heading because all source items have earlier original dates, as long as the sync dry-run is idempotent.
 
 7. `obsidian_sync_idempotent`
@@ -36,7 +36,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Fail when the lane waits until the old 10:30 supervision check or uses Hermes recovery / early handoff instead of a problem report and Codex inbox path.
 
 10. `afternoon_follow_builders_skill_lane`
-    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, syncs the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`, and records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` with its own publication and sync status.
+    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, syncs the generated skill viewpoints into `vault/10-Data-Center/04-First-Line-Viewpoints/`, and records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` with its own publication and sync status.
     - Pass when the local task running with merge enabled also pushes the automation branch, merges the PR to `main`, and waits for GitHub Pages publication or writes an explicit publish failure.
     - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, when Obsidian sync counts are missing from the report, or when feed/archive generation success is treated as full publication success without branch / PR / Pages closure.
 

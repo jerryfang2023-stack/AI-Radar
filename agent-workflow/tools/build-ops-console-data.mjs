@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { isHermesInboxRecordFilename } from "./hermes-inbox-utils.mjs";
+import { isProductionIncidentFilename } from "./incident-filename-utils.mjs";
 
 const root = process.cwd();
 const VERSION = "OPS-V2.0.0-v4-telemetry";
@@ -44,15 +44,12 @@ function parseInboxFields(markdown) {
 }
 
 function parseIncidentInbox() {
-  const dirs = [
-    ["agent-workflow", "inbox", "production-incidents"],
-    ["agent-workflow", "inbox", "hermes-to-codex"],
-  ];
+  const dirs = [["agent-workflow", "inbox", "production-incidents"]];
   return dirs.flatMap((parts) => {
     const dir = abs(...parts);
     if (!fs.existsSync(dir)) return [];
     return fs.readdirSync(dir)
-      .filter(isHermesInboxRecordFilename)
+      .filter(isProductionIncidentFilename)
       .sort()
       .map((name) => {
       const markdown = fs.readFileSync(path.join(dir, name), "utf8");
@@ -304,7 +301,7 @@ const data = {
     version: VERSION,
     generatedAt: new Date().toISOString(),
     date: dailyDate,
-    sources: [supervisionFile, pipelineFile, telemetryFile, ledgerFile, "agent-workflow/inbox/production-incidents/*.md", "agent-workflow/inbox/hermes-to-codex/*.md"],
+    sources: [supervisionFile, pipelineFile, telemetryFile, ledgerFile, "agent-workflow/inbox/production-incidents/*.md"],
   },
   navigation: [
     { id: "overview", label: "总览" },

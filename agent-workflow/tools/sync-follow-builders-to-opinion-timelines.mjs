@@ -2,10 +2,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
+import { OBSIDIAN_PATHS, resolveObsidianPath } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const sourceFile = "01-SiteV2/site/data/follow-builders-daily.json";
-const timelineRoot = path.join(root, "01-SiteV2", "knowledge", "02-Opinion-Timelines");
+const timelineRoot = resolveObsidianPath(root, OBSIDIAN_PATHS.viewpointsRoot);
 const peopleRoot = path.join(timelineRoot, "people");
 
 const args = new Map(

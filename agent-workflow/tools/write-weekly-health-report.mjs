@@ -6,10 +6,7 @@ import { spawnSync } from "node:child_process";
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const actionLogDir = path.join(root, "agent-workflow", "logs", "action-runs");
-const incidentInboxDirs = [
-  path.join(root, "agent-workflow", "inbox", "production-incidents"),
-  path.join(root, "agent-workflow", "inbox", "hermes-to-codex"),
-];
+const incidentInboxDirs = [path.join(root, "agent-workflow", "inbox", "production-incidents")];
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {

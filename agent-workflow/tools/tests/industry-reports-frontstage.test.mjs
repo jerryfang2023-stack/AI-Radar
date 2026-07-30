@@ -174,11 +174,11 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
 });
 
 test("the two latest weekly issues have independent editorial pages", () => {
-  const weeklySources = fs.readdirSync(path.join(root, "01-SiteV2/content/08-report"))
+  const weeklySources = fs.readdirSync(path.join(root, "vault/20-Application-Center/01-Industry-Reports"))
     .filter((file) => /^\d{4}-\d{2}-\d{2}--weekly-report--ai-business-change-radar\.md$/u.test(file))
     .map((file) => ({
       file,
-      markdown: fs.readFileSync(path.join(root, "01-SiteV2/content/08-report", file), "utf8"),
+      markdown: fs.readFileSync(path.join(root, "vault/20-Application-Center/01-Industry-Reports", file), "utf8"),
     }))
     .filter(({ markdown }) => /^status:\s*published$/mu.test(markdown))
     .map(({ file, markdown }) => ({

@@ -4,7 +4,7 @@ This is the current neutral incident queue for WaveSight automation and producti
 
 Routine lane quality findings are owned by their gates, Daily Closure, and Codex self-repair. Hermes may write here only when the daily automation controllers are missing or unobservable.
 
-Legacy records under `agent-workflow/inbox/hermes-to-codex/` remain readable history and must not receive new routine supervision items.
+Retired Hermes handoff records are available through Git history only. Current readers and writers use this registry exclusively.
 
 ## Record path
 

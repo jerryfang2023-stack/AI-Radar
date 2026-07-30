@@ -7,6 +7,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 ## Current Version
 
 - Current stage: SITE-V4.3.0 compatibility retired; the unified V4 shell, stable entities, factual timelines, and evidence-backed relations remain first-class data services. V3 Card/desk/graph interfaces and payloads are absent from the working tree and recoverable only through explicit Git history.
+- Current local knowledge base: `vault/` (`VAULT-V1.0`), opened as an independent Obsidian vault. Only current human-readable Data Center, Application Center, Operations, and Reference assets belong there.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
@@ -156,7 +157,7 @@ Rules:
 - FDE follows the V4 evidence boundary: English title translation and source-backed fact extraction resolve through SourceArtifact, RawDocument, accepted Claims, and the FDE projection.
 - Missing FDE title/fact fields are repaired in V4 intake/extraction/projection, not through archived Cards.
 - If the source does not disclose implementation results, state that explicitly instead of inventing ROI or production outcome.
-- FDE detail openability and `content/09-fde` sync are owned by the FDE skill, not by generic Business Signals Card repair.
+- FDE detail openability and `vault/10-Data-Center/02-Enterprise-AI-FDE` sync are owned by the FDE skill, not by generic Business Signals Card repair.
 
 ### UI / Page Work
 
@@ -185,7 +186,7 @@ Read:
 
 Rules:
 
-- Treat production incident items as the active repair queue for repeated monitoring, publishing, and data-quality failures. Legacy Hermes inbox items remain readable history.
+- Treat production incident items as the active repair queue for repeated monitoring, publishing, and data-quality failures. Retired Hermes inbox items and old run reports are recovered from Git history only.
 - Repair the smallest script, rule, gate, eval, memory, or data build path that caused the incident.
 - Do not close a recurring issue by only editing same-day data.
 - Do not mark a production incident resolved until validation and a prevention artifact are recorded.

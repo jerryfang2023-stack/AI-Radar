@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { OBSIDIAN_PATHS } from "./obsidian-vault-paths.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -155,8 +156,8 @@ export function parseFrontmatter(text) {
 
 function reportSourceDirectory(rootDir, reportKind) {
   return reportKind === "weekly"
-    ? path.join(rootDir, "01-SiteV2", "content", "08-report")
-    : path.join(rootDir, "01-SiteV2", "content", "08-report", "monthly");
+    ? path.join(rootDir, OBSIDIAN_PATHS.reportsRoot)
+    : path.join(rootDir, OBSIDIAN_PATHS.reportsRoot, "monthly");
 }
 
 function reportSourcePattern(reportKind) {
@@ -530,8 +531,8 @@ function main() {
   }
   if (!new Set(["weekly", "monthly"]).has(kind) || !date) throw new Error("kind and date are required");
   const contentFile = kind === "weekly"
-    ? path.join(root, "01-SiteV2", "content", "08-report", `${date}--weekly-report--ai-business-change-radar.md`)
-    : path.join(root, "01-SiteV2", "content", "08-report", "monthly", `${date}--monthly-report--ai-business-structure-and-opportunity.md`);
+    ? path.join(root, OBSIDIAN_PATHS.reportsRoot, `${date}--weekly-report--ai-business-change-radar.md`)
+    : path.join(root, OBSIDIAN_PATHS.reportsRoot, "monthly", `${date}--monthly-report--ai-business-structure-and-opportunity.md`);
   let markdown = fs.readFileSync(contentFile, "utf8");
   const parsed = parseFrontmatter(markdown);
   const rebuildPublished = args.get("rebuild-published") === "true";

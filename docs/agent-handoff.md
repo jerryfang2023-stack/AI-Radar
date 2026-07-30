@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-07-29
+date: 2026-07-30
 status: current
 encoding: UTF-8
 ---
@@ -16,6 +16,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public frontstage: Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports.
 - Current backend: Dashboard / operations console.
+- Current human-readable knowledge base: independent `vault/` (`VAULT-V1.0`), split into Data Center and Application Center.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
 ## Current Entries
@@ -44,7 +45,7 @@ External sources
 -> operations data
 -> GitHub PR / merge
 -> GitHub Pages
--> local Obsidian sync
+-> projection-only sync into independent `vault/`
 ```
 
 V4 canonical tables contain factual evidence only. Trend, opportunity, funding-insight, report, recommendation, and value-judgment objects are downstream applications. V3 Card interfaces are removed. First-Line Viewpoints and Community Intelligence are independent columns and cannot become business-signal facts without separate original-source capture through the V4 evidence chain.
@@ -57,6 +58,7 @@ V4 canonical tables contain factual evidence only. Trend, opportunity, funding-i
 - Business brief / internal reference as required output.
 - Trend report prose as required output.
 - Netlify deployment.
+- Parent `AI热点` or repository-root Obsidian indexing.
 
 ## Recovery
 
@@ -68,3 +70,5 @@ New windows should read:
 4. `context/12-data-center-v4.md` for V4 work; historical V3 recovery requires an explicit Git ref and isolated worktree
 5. The current task dispatch or closeout
 6. One to three directly relevant task files or skills
+
+For Obsidian work, read `docs/obsidian-vault.md`. V1/V2/V3 files, old Hermes handoffs, and dated May/June run reports are recovered from Git history rather than current production directories.
