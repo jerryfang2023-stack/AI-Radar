@@ -868,3 +868,22 @@ export function fundingInsightProblems(card = {}) {
   ) problems.push("auto_publish_gate_invalid");
   return [...new Set(problems)];
 }
+
+export function verifiedFundingEventCardCoverageProblems(events = [], cards = []) {
+  const coveredEventIds = new Set(
+    cards
+      .filter((card) => fundingInsightProblems(card).length === 0)
+      .flatMap((card) => card.source_event_ids || [card.triggered_by_event_id])
+      .filter(Boolean),
+  );
+  return [...new Set(
+    events
+      .filter((event) => event.event_type === "funding")
+      .filter((event) => event.publication_status === "verified")
+      .filter((event) => event.display_title_zh)
+      .map((event) => event.event_id)
+      .filter(Boolean),
+  )]
+    .filter((eventId) => !coveredEventIds.has(eventId))
+    .map((eventId) => `${eventId}:verified_funding_event_without_valid_card`);
+}

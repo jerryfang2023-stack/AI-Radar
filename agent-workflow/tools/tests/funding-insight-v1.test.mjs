@@ -18,6 +18,7 @@ import {
   researchPayloadProblems,
   sanitizeResearchPayload,
   subjectCompanyForEvent,
+  verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
@@ -336,6 +337,59 @@ test("融资卡工作检查器只调度尚未发布的已验证融资事件", ()
   }
 });
 
+test("每个已验证融资商业事件都必须被一张有效融资卡覆盖", () => {
+  const verified = {
+    event_id: "EV-1",
+    event_type: "funding",
+    publication_status: "verified",
+    display_title_zh: "Acme 完成 A 轮融资",
+  };
+  const disputed = {
+    event_id: "EV-DISPUTED",
+    event_type: "funding",
+    publication_status: "disputed",
+    display_title_zh: "待核验融资事件",
+  };
+  assert.deepEqual(
+    verifiedFundingEventCardCoverageProblems([verified, disputed], []),
+    ["EV-1:verified_funding_event_without_valid_card"],
+  );
+  assert.deepEqual(
+    verifiedFundingEventCardCoverageProblems([verified, disputed], [validCard()]),
+    [],
+  );
+  const invalid = validCard();
+  invalid.financing.investors = [];
+  assert.deepEqual(
+    verifiedFundingEventCardCoverageProblems([verified], [invalid]),
+    ["EV-1:verified_funding_event_without_valid_card"],
+  );
+});
+
+test("融资卡聚合的全部来源事件都视为已完成，不重复调度", () => {
+  const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-aggregate-work-"));
+  try {
+    writeDailyFundingFixture(projectRoot, [
+      { event_id: "EV-1", event_type: "funding", publication_status: "verified", display_title_zh: "Acme 完成 A 轮融资" },
+      { event_id: "EV-2", event_type: "funding", publication_status: "verified", display_title_zh: "Acme A 轮融资补充披露" },
+    ]);
+    const output = path.join(
+      projectRoot,
+      "01-SiteV2/content/12-applications/funding-insights/2026-07-26.json",
+    );
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    const aggregated = validCard();
+    aggregated.source_event_ids = ["EV-1", "EV-2"];
+    fs.writeFileSync(output, `${JSON.stringify({ cards: [aggregated], queue: [] })}\n`, "utf8");
+
+    const result = inspectFundingInsightWork(projectRoot, "2026-07-26");
+    assert.equal(result.needs_generation, false);
+    assert.deepEqual(result.pending_event_ids, []);
+  } finally {
+    fs.rmSync(projectRoot, { recursive: true, force: true });
+  }
+});
+
 test("单事件增量生成不会删除同日已经发布的其他融资卡", () => {
   const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-selected-"));
   try {
@@ -435,6 +489,11 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
     fullGate,
     /function validateFrontstage\(\)[\s\S]*fundingEvidenceProofProblems\(card\)/u,
     "the full gate must reject evidence-proof drift in the persisted frontstage projection",
+  );
+  assert.match(
+    fullGate,
+    /verifiedFundingEventCardCoverageProblems/u,
+    "the publication gate must reject a verified funding event without a valid funding card",
   );
   const fundingJob = workflow.slice(workflow.indexOf("  funding-insights-pr:"));
   assert.doesNotMatch(fundingJob, /steps\.run-date\.outputs\.date/u);

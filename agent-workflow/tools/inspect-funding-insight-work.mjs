@@ -28,7 +28,10 @@ export function inspectFundingInsightWork(projectRoot = root, requestedDate = ""
     for (const file of fs.readdirSync(applicationRoot).filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(name))) {
       const application = readJson(path.join(applicationRoot, file), { cards: [] });
       for (const card of application.cards || []) {
-        if (fundingInsightProblems(card).length === 0) acceptedEventIds.add(card.triggered_by_event_id);
+        if (fundingInsightProblems(card).length !== 0) continue;
+        for (const eventId of card.source_event_ids || [card.triggered_by_event_id]) {
+          if (eventId) acceptedEventIds.add(eventId);
+        }
       }
     }
   }

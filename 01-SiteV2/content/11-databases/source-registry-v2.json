@@ -524,6 +524,30 @@
       "risk_note": "Investor perspective has incentives; use as thesis or funding support, not standalone company-fact evidence. No RSS feed available; discovered via GDELT/search."
     },
     {
+      "source_id": "ai-funding-tracker-insights",
+      "name": "AI Funding Tracker Insights",
+      "source_level": "B",
+      "source_type": "funding",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://aifundingtracker.com/feed/",
+      "auth_required": false,
+      "rate_limit_note": "public WordPress RSS feed; fetch once per daily monitoring run",
+      "query_scope": "AI funding rounds, startup financing, investors, valuations, ownership and capital-market changes.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "author",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to https://aifundingtracker.com/ai-funding-insights/ or the public sitemap.",
+      "evidence_role": "fact-support",
+      "enabled_default": true,
+      "risk_note": "Funding analysis and roundups can combine multiple underlying announcements; preserve the original article title and verify each event against event-level evidence before publication."
+    },
+    {
       "source_id": "sequoia-ai-posts",
       "name": "Sequoia AI posts",
       "source_level": "B",
