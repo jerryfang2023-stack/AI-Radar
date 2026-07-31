@@ -1430,6 +1430,14 @@ test("production-chain staleness ignores clean-checkout filesystem timestamp ord
   assert.match(gate, /relevantWorktreeChanged \? Object\.entries\(downstreamGroups\) : \[\]/u);
 });
 
+test("production-chain handoff uses V4 eligible document counts instead of retired Pool markers", () => {
+  const gate = fs.readFileSync(path.join(root, "agent-workflow/tools/assert-daily-production-chain.mjs"), "utf8");
+
+  assert.match(gate, /counts\?\.eligible_documents/u);
+  assert.match(gate, /eligible_for_v4_extraction/u);
+  assert.doesNotMatch(gate, /intake_diagnostics\?\.pooled/u);
+});
+
 test("Chinese related-article tails never enter accepted claims", () => {
   const bundle = buildBundle([
     entry(
