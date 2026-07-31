@@ -170,6 +170,26 @@ async function main() {
               linkBottomDelta: Math.abs(linkBottoms[0] - linkBottoms[1]),
             };
           })(),
+          eventMobileFilters: (() => {
+            if (window.innerWidth > 780 || document.body.dataset.dcView !== "events") return null;
+            const button = document.querySelector(".dc-toolbar > .dc-button");
+            const theme = document.querySelector('.dc-toolbar > .dc-select[name="theme"]');
+            const type = document.querySelector('.dc-toolbar > .dc-select[name="type"]');
+            const tag = document.querySelector('.dc-toolbar > .dc-select[name="tag"]');
+            const more = document.querySelector(".dc-toolbar > .dc-more");
+            const widths = Object.fromEntries(Object.entries({ button, theme, type, tag, more })
+              .map(([key, element]) => [key, Math.round(element?.getBoundingClientRect().width || 0)]));
+            return {
+              ...widths,
+              buttonWhiteSpace: button ? getComputedStyle(button).whiteSpace : "",
+              ok: widths.button >= 104
+                && widths.theme >= 200
+                && widths.type >= 330
+                && widths.tag >= 330
+                && widths.more >= 104
+                && getComputedStyle(button).whiteSpace === "nowrap",
+            };
+          })(),
           overflowers: [...document.querySelectorAll("body *")]
             .map((element) => {
               const rect = element.getBoundingClientRect();
@@ -202,6 +222,7 @@ async function main() {
           && page.url().includes(expected)
           && metrics.scrollWidth <= metrics.width + 1
           && (!metrics.reportFeatureAlignment || (metrics.reportFeatureAlignment.cardBottomDelta <= 1 && metrics.reportFeatureAlignment.linkBottomDelta <= 1))
+          && metrics.eventMobileFilters?.ok !== false
           && fundingDialog !== false
           && fundingProductFormFilter !== false
           && founderProfile !== false
@@ -243,6 +264,22 @@ async function main() {
         }
         if (viewport.name === "mobile" && route === "funding-insights.html") {
           await page.screenshot({ path: path.join(screenshotDir, "funding-insights-mobile.png"), fullPage: false });
+        }
+        if (viewport.name === "mobile" && route === "data-center.html?view=events") {
+          await page.screenshot({ path: path.join(screenshotDir, "event-library-mobile.png"), fullPage: false });
+        }
+        const mobileAuditScreenshots = new Map([
+          ["data-center.html?view=community", "community-intelligence-mobile.png"],
+          ["data-center.html?view=viewpoints", "first-line-viewpoints-mobile.png"],
+          ["data-center.html?view=index", "entity-library-mobile.png"],
+          ["trend-radar.html", "trend-radar-mobile.png"],
+          ["intelligence-map.html", "guanlan-research-mobile.png"],
+        ]);
+        if (viewport.name === "mobile" && mobileAuditScreenshots.has(route)) {
+          await page.screenshot({
+            path: path.join(screenshotDir, mobileAuditScreenshots.get(route)),
+            fullPage: false,
+          });
         }
         await page.close();
       }

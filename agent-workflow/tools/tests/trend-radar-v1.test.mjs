@@ -86,6 +86,7 @@ test("page is a V4 application page with factual period controls", () => {
   assert.match(page, /data-period="month"/);
   assert.match(page, /href="trend-radar\.html" aria-current="page"/);
   assert.match(page, /<header class="dc-header">/);
+  assert.match(page, /data-nav-toggle>栏目<\/button>/u);
   assert.match(page, /<div class="dc-layout">/);
   assert.doesNotMatch(page, /dc-brandbar|class="dc-shell"/);
   assert.match(sharedStyles, /\.dc-skip-link:focus-visible/);
