@@ -1389,6 +1389,7 @@ test("daily workflow stages only V4-native outputs after the pre-commit gate suc
 test("daily workflow resumes downstream failures without repeating accepted collection", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
   const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
+  const agentRules = fs.readFileSync(path.join(root, "AGENTS.md"), "utf8");
 
   assert.match(workflow, /resume_run_id:/u);
   assert.match(workflow, /Restore accepted source intake from failed run/u);
@@ -1397,9 +1398,12 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(workflow, /cp -a "\$resume_dir\/\." \./u);
   assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
   assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
-  assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?conclusion !== "success"/u);
-  assert.match(workflow, /const requiredSteps = \[[\s\S]*?Persist originals privately and enforce the public boundary/u);
-  assert.match(dispatcher, /const requiredSteps = \[[\s\S]*?Persist originals privately and enforce the public boundary/u);
+  assert.match(workflow, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
+  assert.match(dispatcher, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
+  assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
+  assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?steps\.persistent-assets-post-monitor\.outcome == 'success'/u);
+  assert.match(agentRules, /Same-date accepted collection is immutable reusable input/u);
+  assert.match(agentRules, /must restore that artifact and must not recollect/u);
 });
 
 test("source-intake gate replays V4 evidence eligibility without private Raw routing fields", () => {

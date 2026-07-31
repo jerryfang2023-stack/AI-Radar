@@ -112,6 +112,8 @@ Rules:
 - Importance, value, opportunity, trend maturity, recommendation, advice, `why_watch`, and `business_meaning` are forbidden in V4 canonical outputs.
 - The V4 sidebar and Data Center / Application Center page plan are the only current public page contract.
 - Targeted company, product, funding, and deployment backfill is an operational discovery queue. Search results remain leads until original-source capture, exact-span Claim extraction, and the responsible V4 gate pass.
+- Same-date accepted collection is immutable reusable input: when source collection and the monitor quality gate have succeeded, any downstream retry must restore that artifact and must not recollect.
+- Recollection is allowed only when the accepted artifact is missing or expired, the monitor quality gate did not pass, or the user explicitly requests recollection. The workflow/report must record the applicable reason.
 
 ### Historical V3 Recovery
 

@@ -225,11 +225,11 @@ jobs:
           run_json="$(gh run view "$resume_run_id" --json workflowName,conclusion,jobs)"
           RUN_JSON="$run_json" node --input-type=module <<'NODE'
           const run = JSON.parse(process.env.RUN_JSON || "{}");
+          // Reuse only a collection whose monitor quality gate passed. The
+          // post-monitor handoff and private evidence boundary rerun below.
           const requiredSteps = [
             "Collect source raw artifacts",
             "Run Daily Monitor with QC",
-            "Confirm V4 source-intake handoff and dedupe state",
-            "Persist originals privately and enforce the public boundary",
           ];
           if (run.workflowName !== "WaveSight Business Signals PR" || run.conclusion !== "failure") {
             throw new Error("Resume source must be a failed WaveSight Business Signals PR run.");
