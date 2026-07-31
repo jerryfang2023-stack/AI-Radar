@@ -32,6 +32,11 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
     clean_text: "Example released a dated AI product for enterprise users with source-bounded facts.",
     content_hash: "content-hash-1",
     collected_at: "2026-07-29T01:00:00.000Z",
+    source_registry_id: "cn-example-official",
+    source_region: "CN",
+    market_region: "CN",
+    china_market_match: true,
+    china_market_match_basis: "china_entity:Example",
     pool_routes: ["core_pool"],
     key_excerpts: [{
       type: "product_update",
@@ -62,6 +67,13 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
   assert.equal(intake.raw_documents[0].source_artifact_id, intake.source_artifacts[0].source_artifact_id);
   assert.equal(intake.raw_documents[0].body_ref, path.relative(root, jsonPath).replace(/\\/gu, "/"));
   assert.equal(intake.raw_documents[0].intake_diagnostics.eligible_for_v4_extraction, true);
+  assert.deepEqual(intake.raw_documents[0].market_scope, {
+    source_registry_id: "cn-example-official",
+    source_region: "CN",
+    market_region: "CN",
+    china_market_match: true,
+    china_market_match_basis: "china_entity:Example",
+  });
   assert.deepEqual(intake.raw_documents[0].intake_diagnostics.key_excerpts, [{
     type: "product_update",
     text: "Example released a dated AI product.",

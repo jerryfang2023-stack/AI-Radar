@@ -112,6 +112,13 @@ data-lake scheduled task or Startup loop is supported.
 
 The daily GitHub workflow captures ephemeral snapshots, writes `SOURCE-INTAKE-V1`, persists and pushes complete bodies to the private evidence repository, removes public body copies, and passes the public evidence boundary gate before these V4 steps. No legacy Card, desk, graph, or mapping writer follows them.
 
+China-market collection remains part of this same daily intake and scheduler.
+Each RawDocument may persist a `market_scope` object containing source-registry
+identity, source region, content market region, and the explicit China-match
+basis. `assert:china-market -- --date=<YYYY-MM-DD>` reads only the CN
+source/content subset from the unified intake; it does not treat the entire
+daily batch as China-specific and applies no source weights or ranking bonuses.
+
 For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.
 
 ## Targeted historical collection

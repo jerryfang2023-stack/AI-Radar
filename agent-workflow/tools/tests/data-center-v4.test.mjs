@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
-import { isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
+import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -124,6 +124,44 @@ test("a version-only developer package release does not become a commercial or h
             event_type: "product_release",
             subject: "llm-chat-completions-server",
             object: "0.1a0",
+            evidence_index: 0,
+          }], [{
+            start: 0,
+            end: quote.length,
+            quote,
+          }]),
+        ],
+      },
+    },
+  );
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.equal(bundle.hardware_facts.length, 0);
+  assert.ok(bundle.qa_queue.some(
+    (item) => item.reason === "versioned_developer_package_not_commercial_event",
+  ));
+});
+
+test("stable developer package releases do not become commercial or hardware events", () => {
+  const quote = "发布：mcp-server-kit v2.1.0";
+  const source = entry(
+    "stable-developer-package",
+    "mcp-server-kit v2.1.0 发布",
+    `${quote}\nThis is a developer package release for a software protocol server, not a company product launch or a physical server release.`,
+    { source_type: "builder" },
+  );
+  const bundle = buildBundle(
+    [source],
+    taxonomy,
+    date,
+    "2026-07-16T00:00:00.000Z",
+    {
+      modelAssist: {
+        candidates: [
+          acceptedModelCandidate(source, [{
+            event_type: "product_release",
+            subject: "mcp-server-kit",
+            object: "v2.1.0",
             evidence_index: 0,
           }], [{
             start: 0,
@@ -1641,6 +1679,26 @@ test("source-intake gate replays V4 evidence eligibility without private Raw rou
   assert.equal(isUsableCoreEvidenceItem({ ...accepted, evidenceObjectType: "official_index_or_directory" }), false);
   assert.equal(isCoreV4EvidenceItem({ ...accepted, rawQcDecision: "allow_with_degradation" }), false);
   assert.equal(isUsableCoreEvidenceItem({ ...accepted, rawQcDecision: "allow_with_degradation" }), false);
+});
+
+test("Core Raw QC metrics count blocked or degraded records before the decision filter", () => {
+  const candidate = {
+    eligibleForV4Extraction: true,
+    evidenceObjectUsable: true,
+    evidenceStrength: "source_backed_event",
+    rawQcDownstreamUse: "eligible_after_qc",
+    hasFullText: true,
+    originFetchStatus: "success",
+  };
+  assert.deepEqual(coreRawQcViolationCounts([
+    { ...candidate, rawQcDecision: "allow" },
+    { ...candidate, rawQcDecision: "block" },
+    { ...candidate, rawQcDecision: "allow_with_degradation" },
+    { ...candidate, rawQcDecision: "block", rawQcDownstreamUse: "not_allowed" },
+  ]), {
+    blocked: 1,
+    degraded: 1,
+  });
 });
 
 test("production-chain staleness ignores clean-checkout filesystem timestamp order", () => {

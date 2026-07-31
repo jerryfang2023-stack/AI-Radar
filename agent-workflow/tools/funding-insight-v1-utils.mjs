@@ -872,7 +872,10 @@ export function fundingInsightProblems(card = {}) {
 export function verifiedFundingEventCardCoverageProblems(events = [], cards = []) {
   const coveredEventIds = new Set(
     cards
-      .filter((card) => fundingInsightProblems(card).length === 0)
+      .filter((card) => (
+        fundingInsightProblems(card).length === 0
+        && fundingEvidenceProofProblems(card).length === 0
+      ))
       .flatMap((card) => card.source_event_ids || [card.triggered_by_event_id])
       .filter(Boolean),
   );
