@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "eventTypes": {
     "model_release": {
@@ -176,6 +176,53 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-81a37a2365624b42",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+      "originalTitle": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+      "subject": "Citadel",
+      "action": "acquisition",
+      "object": "Situational Awareness public stock portfolio",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [
+        "CF-81a37a2365624b42"
+      ],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c737e8142a927072",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Citadel",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-e90bee514412d2ad",
@@ -2197,22 +2244,21 @@
     },
     {
       "id": "EV-901155ab700a7e8e",
-      "dataDate": "2026-07-31",
+      "dataDate": "2026-07-23",
       "date": "2026-07-20",
-      "updatedDate": "2026-07-31",
+      "updatedDate": "2026-07-23",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
-      "originalTitle": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe | TechCrunch",
+      "title": "Natural 完成 3000 万美元 A 轮融资，为 AI 智能体构建支付基础设施",
+      "originalTitle": "Natural Raises $30M Series A to Build Payments Infrastructure for AI Agents",
       "subject": "Natural",
-      "action": "raises",
-      "object": "$30M to reinvent payments for AI agents — and take on Stripe",
+      "action": "Raises",
+      "object": "$30M Series A to Build Payments Infrastructure for AI Agents",
       "metrics": [
-        "$30M",
         "$30 million",
         "$40 million"
       ],
@@ -2258,8 +2304,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
-      "publisher": "techcrunch.com"
+      "sourceUrl": "https://prnewswire.com/news-releases/natural-raises-30m-series-a-to-build-payments-infrastructure-for-ai-agents-302829855.html",
+      "publisher": "prnewswire.com"
     },
     {
       "id": "EV-2069f6a931b8c9d6",
@@ -36495,9 +36541,9 @@
     },
     {
       "id": "EV-16cfe946bbf69aa3",
-      "dataDate": "2026-07-31",
+      "dataDate": "2026-07-26",
       "date": "2026-07-22",
-      "updatedDate": "2026-07-31",
+      "updatedDate": "2026-07-26",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -43047,68 +43093,6 @@
       "publisher": "markets.ft.com"
     },
     {
-      "id": "EV-2ef56a158898ae73",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-      "originalTitle": "",
-      "subject": "undisclosed_subject",
-      "action": "product_release",
-      "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/983/947.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
       "id": "EV-385966c864fcda19",
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
@@ -43150,53 +43134,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/984/181.htm",
       "publisher": "IT之家"
-    },
-    {
-      "id": "EV-4c750d338325c55f",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "pricing_change",
-      "eventTypeLabel": "定价变更",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "以GPT‑5.6推进性价比前沿",
-      "originalTitle": "Advancing the price-performance frontier with GPT‑5.6",
-      "subject": "GPT-5.6 Terra",
-      "action": "pricing_change",
-      "object": "20% price reduction",
-      "metrics": [
-        "20%",
-        "80%",
-        "$0.20",
-        "$1.20",
-        "$1.50"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "entityNames": [
-        "Google"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://simonwillison.net/2026/Jul/30/luna-price-drop",
-      "publisher": "Simon Willison's Blog"
     },
     {
       "id": "EV-7a0f201debe99f2b",
@@ -43318,106 +43255,6 @@
       "publisher": "MarkTechPost（RSS）"
     },
     {
-      "id": "EV-8887fb45a0398590",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "谷歌 DeepMind 推出 Gemini Robotics ER 2，最强具身推理模型支持连续视频理解与多机器人协作",
-      "originalTitle": "",
-      "subject": "谷歌 DeepMind",
-      "action": "推出 Gemini Robotics ER 2，最强具身推理模型",
-      "object": "支持连续视频理解与多机器人协作",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        }
-      ],
-      "entityIds": [
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-364df82f85761d58"
-      ],
-      "entityNames": [
-        "Google DeepMind",
-        "DeepMind",
-        "Gemini Robotics ER 2"
-      ],
-      "productName": "DeepMind",
-      "products": [
-        {
-          "name": "DeepMind",
-          "type": "模型",
-          "ownerNames": [
-            "Google DeepMind"
-          ]
-        },
-        {
-          "name": "Gemini Robotics ER 2",
-          "type": "模型",
-          "ownerNames": [
-            "Google DeepMind"
-          ]
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/983/915.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
       "id": "EV-a89a5b511c643be8",
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
@@ -43467,109 +43304,45 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-fafc300c25e9b0a7",
+      "id": "EV-023fd03c675d940d",
       "dataDate": "2026-07-31",
-      "date": "2026-07-31",
+      "date": "2026-07-30",
       "updatedDate": "2026-07-31",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
-      "status": "planned",
-      "statusLabel": "计划中",
-      "publicationStatus": "partial",
-      "title": "国家发改委：将加快《人工智能法》立法进程",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "llm-chat-completions-server 0.1a0",
       "originalTitle": "",
-      "subject": "undisclosed_subject",
+      "subject": "llm-chat-completions-server",
       "action": "product_release",
-      "object": "国家发改委：将加快《人工智能法》立法进程",
-      "metrics": [
-        "100 亿"
-      ],
-      "locations": [
-        "中国"
-      ],
+      "object": "0.1a0",
+      "metrics": [],
+      "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        }
-      ],
+      "tags": [],
       "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          }
-        ],
+        "product_form": [],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
         "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
-        "EN-6f7ac1823da81d2e",
-        "EN-b5251b35f15bedc4"
+        "EN-b161cee9ae7eba20"
       ],
       "entityNames": [
-        "DeepSeek",
-        "Moonshot AI"
+        "llm-chat-completions-server"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://ithome.com/0/983/974.htm",
-      "publisher": "IT之家（RSS）"
+      "sourceUrl": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
+      "publisher": "Simon Willison's Blog"
     },
     {
       "id": "EV-0707f3c487a36e55",
@@ -43676,7 +43449,145 @@
       "publisher": "The Verge AI"
     },
     {
-      "id": "EV-1fe7328d2c69693f",
+      "id": "EV-60110525440fac47",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "Gemini Robotics ER 2",
+      "object": "：用视频理解、任务编排与多机器人协作赋能机器人",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b"
+      ],
+      "entityNames": [
+        "Google",
+        "Gemini Robotics ER 2",
+        "Google DeepMind",
+        "DeepMind"
+      ],
+      "productName": "Gemini Robotics ER 2",
+      "products": [
+        {
+          "name": "Gemini Robotics ER 2",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+      "publisher": "Google DeepMind：Blog（RSS）"
+    },
+    {
+      "id": "EV-ebd76d18d3f0ee7b",
       "dataDate": "2026-07-31",
       "date": "2026-07-30",
       "updatedDate": "2026-07-31",
@@ -43686,7 +43597,7 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
+      "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
       "originalTitle": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
       "subject": "OpenAI goes full China",
       "action": "pricing mode with an 80 percent cut",
@@ -43695,7 +43606,12 @@
         "$0.20 ",
         "$1.20 ",
         "$2 ",
-        "$12. "
+        "$12. ",
+        "20%",
+        "80%",
+        "$0.20",
+        "$1.20",
+        "$1.50"
       ],
       "locations": [
         "China"
@@ -43736,12 +43652,14 @@
       "entityIds": [
         "EN-2ee49ef51a776e2c",
         "EN-7d3194f79e645c42",
-        "EN-52fc33ae4d101a5d"
+        "EN-52fc33ae4d101a5d",
+        "EN-bbdefa2950f49882"
       ],
       "entityNames": [
         "OpenAI goes full China",
         "OpenAI",
-        "GPT-5.6"
+        "GPT-5.6",
+        "Google"
       ],
       "productName": "GPT-5.6",
       "products": [
@@ -43755,78 +43673,6 @@
       ],
       "sourceUrl": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model",
       "publisher": "The Decoder AI News"
-    },
-    {
-      "id": "EV-876cfe17574eb2c1",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-31",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
-      "originalTitle": "",
-      "subject": "Google",
-      "action": "model_release",
-      "object": "Gemini Robotics ER 2",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "entityIds": [
-        "EN-bbdefa2950f49882",
-        "EN-364df82f85761d58"
-      ],
-      "entityNames": [
-        "Google",
-        "Gemini Robotics ER 2"
-      ],
-      "productName": "Gemini Robotics ER 2",
-      "products": [
-        {
-          "name": "Gemini Robotics ER 2",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        }
-      ],
-      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
-      "publisher": "Google DeepMind：Blog（RSS）"
     },
     {
       "id": "EV-f13c302dc067850b",
@@ -43880,6 +43726,76 @@
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/tencent-open-sources-angelspec-a-unified-training-framework-for-mtp-and-block-parallel-speculative-decoding-on-hy3-models",
       "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-30",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "Kimi K3-256k 发布",
+      "object": "：256k 上下文窗口与代码生成能力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf"
+      ],
+      "entityNames": [
+        "Kimi K3-256k",
+        "K3-256k"
+      ],
+      "productName": "K3-256k",
+      "products": [
+        {
+          "name": "K3-256k",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-3ebf23c149dde19d",
@@ -52171,52 +52087,6 @@
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
       "publisher": "Claude Code：GitHub Releases（RSS）"
-    },
-    {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-22",
-      "updatedDate": "2026-07-31",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
-      "originalTitle": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-      "subject": "Open",
-      "action": "models recap: more on Kimi K3",
-      "object": ", Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-      "metrics": [],
-      "locations": [
-        "US",
-        "China"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-2348f99874421257",
-        "EN-cbc62794911ff31b"
-      ],
-      "entityNames": [
-        "Open",
-        "Amazon"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-      "publisher": "Interconnects (Nathan Lambert)"
     },
     {
       "id": "EV-02015794e4c719d0",
@@ -107043,26 +106913,25 @@
       "publisher": "Simon Willison 博客"
     },
     {
-      "id": "EV-c195952efffa9a60",
+      "id": "EV-1b74a6307ba10bb1",
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
       "updatedDate": "2026-07-31",
-      "eventType": "financial_performance",
-      "eventTypeLabel": "财务表现",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "情境感知的缺失",
-      "originalTitle": "The loss of Situational Awareness",
-      "subject": "Situational Awareness",
-      "action": "financial_performance",
-      "object": "public stock portfolio sold to Citadel",
-      "metrics": [
-        "$45 billion",
-        "$10 billion"
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "国家发改委：将加快《人工智能法》立法进程",
+      "originalTitle": "",
+      "subject": "国家发改委：将",
+      "action": "加快《人工智能法",
+      "object": "》立法进程",
+      "metrics": [],
+      "locations": [
+        "中国"
       ],
-      "locations": [],
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -107076,17 +106945,79 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-11740cc8809aec7a",
-        "EN-7d3194f79e645c42"
+        "EN-0a1aa4685006602d"
       ],
       "entityNames": [
-        "Situational Awareness",
-        "OpenAI"
+        "国家发改委"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
-      "publisher": "The Verge AI"
+      "sourceUrl": "https://ithome.com/0/983/974.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-94cb16144a8fcfdb",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "originalTitle": "",
+      "subject": "Anthropic：第三方评估环境配置失误，导致三起真实",
+      "action": "网络安全事件",
+      "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/947.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-3ec034d25ba6a710",
@@ -107155,51 +107086,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/983/814.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-fc13165fbd0ef3de",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-31",
-      "eventType": "capital_investment",
-      "eventTypeLabel": "资本性投资",
-      "eventGroup": "融资与并购",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
-      "originalTitle": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
-      "subject": "Situational Awareness",
-      "action": "capital_investment",
-      "object": "Anthropic shares",
-      "metrics": [
-        "$5 billion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-11740cc8809aec7a",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Situational Awareness",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
-      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-56b36a56d729c20d",
@@ -107423,52 +107309,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/983/393.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-d7cba8d4a454aa93",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-29",
-      "updatedDate": "2026-07-31",
-      "eventType": "capital_investment",
-      "eventTypeLabel": "资本性投资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 工厂供应链：WTAI 2026年7月再平衡的真正含义",
-      "originalTitle": "The AI Factory Supply Chain: What WTAI's July 2026 Rebalance Is Really Saying | WisdomTree",
-      "subject": "WisdomTree Artificial Intelligence and Innovation Fund",
-      "action": "capital_investment",
-      "object": "semiconductor capital equipment",
-      "metrics": [
-        "1.50%",
-        "1.00%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-77d06a98251d0272",
-        "EN-6aa383344bedc00c"
-      ],
-      "entityNames": [
-        "WisdomTree Artificial Intelligence",
-        "Innovation Fund"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://wisdomtree.com/us/insights/blog/the-ai-factory-supply-chain-what-wtai-s-july-2026-rebalance-is-really-saying",
-      "publisher": "wisdomtree.com"
     },
     {
       "id": "EV-20b82e2a2cb33a0e",

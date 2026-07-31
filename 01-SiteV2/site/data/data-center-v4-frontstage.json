@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "eventTypes": {
     "model_release": {
@@ -210,6 +210,80 @@
       "sourceUrl": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m",
       "publisher": "TechCrunch：AI（RSS）",
       "sourceExcerpt": "Okta on Thursday agreed to acquire AI identity security startup Permiso Security , betting that demand for protecting AI agents and other machine identities will grow as enterprises deploy autonomous software across their operations."
+    },
+    {
+      "id": "EV-81a37a2365624b42",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+      "originalTitle": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+      "subject": "Citadel",
+      "action": "acquisition",
+      "object": "Situational Awareness public stock portfolio",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [
+        "CF-81a37a2365624b42"
+      ],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c737e8142a927072",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Citadel",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-11ec5b4696b4f02d",
+          "subject": "Citadel",
+          "object": "Situational Awareness public stock portfolio",
+          "quote": "Situational Awareness, a hedge fund formed by former OpenAI researcher Leopold Aschenbrenner, has sold the majority of its public stock portfolio to Ken Griffin’s Citadel"
+        },
+        {
+          "id": "CL-7c1521a791c9c38a",
+          "subject": "Citadel",
+          "object": "Situational Awareness public stock portfolio",
+          "quote": "Situational Awareness, the hedge fund started by a 24-year-old former OpenAI employee that focuses on artificial intelligence bets, has sold most or all, depending on who’s reporting, of its entire public stock portfolio to Ken Griffin’s Citadel after several bad weeks for AI stocks"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-eed064267b4b4017",
+          "publisher": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares"
+        },
+        {
+          "id": "SA-1c64b7fd7a109d47",
+          "publisher": "The Verge AI",
+          "url": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+      "publisher": "TechCrunch AI",
+      "sourceExcerpt": "Situational Awareness, a hedge fund formed by former OpenAI researcher Leopold Aschenbrenner, has sold the majority of its public stock portfolio to Ken Griffin’s Citadel"
     },
     {
       "id": "EV-e90bee514412d2ad",
@@ -3185,22 +3259,21 @@
     },
     {
       "id": "EV-901155ab700a7e8e",
-      "dataDate": "2026-07-31",
+      "dataDate": "2026-07-23",
       "date": "2026-07-20",
-      "updatedDate": "2026-07-31",
+      "updatedDate": "2026-07-23",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
-      "originalTitle": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe | TechCrunch",
+      "title": "Natural 完成 3000 万美元 A 轮融资，为 AI 智能体构建支付基础设施",
+      "originalTitle": "Natural Raises $30M Series A to Build Payments Infrastructure for AI Agents",
       "subject": "Natural",
-      "action": "raises",
-      "object": "$30M to reinvent payments for AI agents — and take on Stripe",
+      "action": "Raises",
+      "object": "$30M Series A to Build Payments Infrastructure for AI Agents",
       "metrics": [
-        "$30M",
         "$30 million",
         "$40 million"
       ],
@@ -3248,40 +3321,40 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-3149f752d5e7671c",
+          "id": "CL-b84d7eb1591994b1",
           "subject": "Natural",
-          "object": "$30M to reinvent payments for AI agents — and take on Stripe",
-          "quote": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe"
+          "object": "$30M Series A to Build Payments Infrastructure for AI Agents",
+          "quote": "SAN FRANCISCO , July 20, 2026 /PRNewswire/ -- Natural today announced that it has raised a $30 million Series A led by Kirsten Green at Forerunner, with continued participation from all major investors. The round was raised when the company was 193 days old and brings Natural's total funding to more than $40 million."
         },
         {
-          "id": "CL-23c1ac13b6980333",
+          "id": "CL-f49eb249bad5695a",
           "subject": "Natural",
-          "object": "$30M to reinvent payments for AI agents — and take on Stripe",
-          "quote": "Natural got the attention of Kirsten Green, founder and managing partner at VC firm Forerunner. Green, whose firm focuses on consumer experiences and the future of commerce, led its $30 million Series A round in the company, bringing the company’s total funding to $40 million."
+          "object": "$30M Series A to Build Payments Infrastructure for AI Agents",
+          "quote": "About Natural Natural ( www.natural.com ) is building payments infrastructure for AI agents. The company has raised more than $40 million from investors including Forerunner, Human Capital, Abstract, Bridge, Brex, Mercury, Privy, Vercel, Notion, Increase, Unit, Figure, and so many others."
         },
         {
-          "id": "CL-25a837efe3a5630a",
+          "id": "CL-bdced9b11fdb453d",
           "subject": "Natural",
-          "object": "$30M to reinvent payments for AI agents — and take on Stripe",
-          "quote": "12:11 PM PDT · July 20, 2026"
+          "object": "$30M Series A to Build Payments Infrastructure for AI Agents",
+          "quote": "Natural's team in their San Francisco office."
         },
         {
-          "id": "CL-926a00360bf00b41",
+          "id": "CL-26c1cddabfd73725",
           "subject": "Natural",
-          "object": "$30M to reinvent payments for AI agents — and take on Stripe",
-          "quote": "AI agents are starting to execute more sophisticated tasks, such as identifying vendors that can deliver freight, comparing prices, and messaging the vendor to organizing a delivery. But when it comes to making a payment for the shipment, they still need to involve a human."
+          "object": "$30M Series A to Build Payments Infrastructure for AI Agents",
+          "quote": "The round was supported by Aarmaan Ali and Baris Akis, Founders of Human Capital; Ramtin Naimi, Founder of Abstract; Nichole Wischoff, Founder of Wischoff Ventures; Darragh Buckley, CEO of Increase; Pablo Palafox, CEO of HappyRobot; Paul Klein IV, CEO of Browserbase; Akshay Kothari, Co-founder of Notion; Henri Stern and Max Segall, CEO and COO of Privy; Pete Koomen, GP of Y Combinator; Dylan Babbs, CTO of Profound; Art Levy, CBO of Brex; Jake and Logan Paul, GPs of Antifund; and others."
         }
       ],
       "sources": [
         {
-          "id": "SA-879ede03ac329afc",
-          "publisher": "techcrunch.com",
-          "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe"
+          "id": "SA-8f07476544e86768",
+          "publisher": "prnewswire.com",
+          "url": "https://prnewswire.com/news-releases/natural-raises-30m-series-a-to-build-payments-infrastructure-for-ai-agents-302829855.html"
         }
       ],
-      "sourceUrl": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
-      "publisher": "techcrunch.com",
-      "sourceExcerpt": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe"
+      "sourceUrl": "https://prnewswire.com/news-releases/natural-raises-30m-series-a-to-build-payments-infrastructure-for-ai-agents-302829855.html",
+      "publisher": "prnewswire.com",
+      "sourceExcerpt": "SAN FRANCISCO , July 20, 2026 /PRNewswire/ -- Natural today announced that it has raised a $30 million Series A led by Kirsten Green at Forerunner, with continued participation from all major investors. The round was raised when the company was 193 days old and brings Natural's total funding to more than $40 million."
     },
     {
       "id": "EV-2069f6a931b8c9d6",
@@ -53098,9 +53171,9 @@
     },
     {
       "id": "EV-16cfe946bbf69aa3",
-      "dataDate": "2026-07-31",
+      "dataDate": "2026-07-26",
       "date": "2026-07-22",
-      "updatedDate": "2026-07-31",
+      "updatedDate": "2026-07-26",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -53181,25 +53254,25 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-12d65540caf6004c",
+          "id": "CL-f2a3e165daca6569",
           "subject": "Manulife Expands",
           "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
           "quote": "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continue…"
         },
         {
-          "id": "CL-f2f54d330b3616da",
+          "id": "CL-81712acab9aa5dbe",
           "subject": "Manulife Expands",
           "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
           "quote": "\"Our partnership with Microsoft is a critical enabler of Manulife's continued evolution into a truly AI-driven organization,\" said Shamus Weiland, Chief Technology & Operations Officer, Manulife. \"Adopting the Microsoft Frontier Suite represents the next phase of that transformation, giving us the trusted foundation to advance AI across our global operations with confidence. It also provides the scale, security, stability and intelligence we need to accelerate innovation and embed AI responsibly across the franchise.\""
         },
         {
-          "id": "CL-21bfa555af66ee9f",
+          "id": "CL-8906cc4c053fff2f",
           "subject": "Manulife Expands",
           "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
           "quote": "\"Our longstanding partnership with Manulife has always been grounded in trust, innovation and a shared commitment to responsible transformation,\" said Matt Milton, President, Microsoft Canada. \"We are proud to be Manulife's trusted partner in the agentic era, helping empower employees with Microsoft 365 Copilot and scale AI responsibly with the governance and security of Microsoft Agent 365. We look forward to continuing our work together as Manulife turns AI into practical value and better outcomes for customers around the world.\""
         },
         {
-          "id": "CL-aa8d7349a27fd9ca",
+          "id": "CL-8e42ac3f00a0b995",
           "subject": "Manulife Expands",
           "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
           "quote": "The partnership expansion reinforces Manulife's position as an industry leader in AI innovation and underscores its commitment to becoming an AI‑driven organization. For two consecutive years, Manulife was recognized as the number one life insurance company in North America and Europe for AI maturity in the Evident AI Insurance Index . Continued collaboration with Microsoft helps to ensure Manulife can sustain this leadership by leveraging the latest advancements in cloud, AI technologies and enterprise AI governance capabilities."
@@ -53207,7 +53280,7 @@
       ],
       "sources": [
         {
-          "id": "SA-e741e99b4c7179cf",
+          "id": "SA-b008ee16fb3d8f73",
           "publisher": "prnewswire.com",
           "url": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html"
         }
@@ -62389,102 +62462,6 @@
       "sourceExcerpt": "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption"
     },
     {
-      "id": "EV-2ef56a158898ae73",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-      "originalTitle": "",
-      "subject": "undisclosed_subject",
-      "action": "product_release",
-      "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-bcdbaf0bb978c829",
-          "subject": "undisclosed_subject",
-          "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-          "quote": "Anthropic 表示，所有涉事模型均未部署正式发布时使用的标准安全措施，但都经过了特定的安全训练。"
-        },
-        {
-          "id": "CL-33c2fad230baea4d",
-          "subject": "undisclosed_subject",
-          "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-          "quote": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件 - IT之家"
-        },
-        {
-          "id": "CL-e9d2567e291ccd1b",
-          "subject": "undisclosed_subject",
-          "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-          "quote": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件"
-        },
-        {
-          "id": "CL-57c43e210b454751",
-          "subject": "undisclosed_subject",
-          "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-          "quote": "IT之家 7 月 31 日消息，人工智能企业 Anthropic 当地时间 30 日发布公告，表示在对自家 Claude 的网络安全评估审查中发现了三起不应发生的真实网络安全事件，背后的直接原因是第三方评估环境配置失误。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-72c18127f23bf91a",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/983/947.htm"
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/983/947.htm",
-      "publisher": "IT之家（RSS）",
-      "sourceExcerpt": "Anthropic 表示，所有涉事模型均未部署正式发布时使用的标准安全措施，但都经过了特定的安全训练。"
-    },
-    {
       "id": "EV-385966c864fcda19",
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
@@ -62554,81 +62531,6 @@
       "sourceUrl": "https://ithome.com/0/984/181.htm",
       "publisher": "IT之家",
       "sourceExcerpt": "昆仑万维：AI 挂件、AI 戒指等 Skywork 整套智能硬件将陆续登场 - IT之家"
-    },
-    {
-      "id": "EV-4c750d338325c55f",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "pricing_change",
-      "eventTypeLabel": "定价变更",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "以GPT‑5.6推进性价比前沿",
-      "originalTitle": "Advancing the price-performance frontier with GPT‑5.6",
-      "subject": "GPT-5.6 Terra",
-      "action": "pricing_change",
-      "object": "20% price reduction",
-      "metrics": [
-        "20%",
-        "80%",
-        "$0.20",
-        "$1.20",
-        "$1.50"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "entityNames": [
-        "Google"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-52ca670292cf3907",
-          "subject": "GPT-5.6 Terra",
-          "object": "20% price reduction",
-          "quote": "GPT-5.6 Terra got a 20% reduction"
-        },
-        {
-          "id": "CL-f6e15871d56fe83a",
-          "subject": "GPT-5.6 Luna",
-          "object": "80% price reduction",
-          "quote": "GPT-5.6 Luna got a massive 80% drop"
-        },
-        {
-          "id": "CL-6289b57fcf622e82",
-          "subject": "GPT-5.6 Luna",
-          "object": "$0.20/million tokens input, $1.20/million tokens output",
-          "quote": "At $0.20/million tokens for input and $1.20/million for output Luna is now cheaper than Google's Gemini 3.1 Flash-Lite ($.025/$1.50)."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-4417e838b9699852",
-          "publisher": "Simon Willison's Blog",
-          "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop"
-        }
-      ],
-      "sourceUrl": "https://simonwillison.net/2026/Jul/30/luna-price-drop",
-      "publisher": "Simon Willison's Blog",
-      "sourceExcerpt": "GPT-5.6 Terra got a 20% reduction"
     },
     {
       "id": "EV-7a0f201debe99f2b",
@@ -62778,140 +62680,6 @@
       "sourceExcerpt": "Google DeepMind has released Gemini Robotics 2 , the intelligence layer for its next generation of robots."
     },
     {
-      "id": "EV-8887fb45a0398590",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "谷歌 DeepMind 推出 Gemini Robotics ER 2，最强具身推理模型支持连续视频理解与多机器人协作",
-      "originalTitle": "",
-      "subject": "谷歌 DeepMind",
-      "action": "推出 Gemini Robotics ER 2，最强具身推理模型",
-      "object": "支持连续视频理解与多机器人协作",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        }
-      ],
-      "entityIds": [
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-364df82f85761d58"
-      ],
-      "entityNames": [
-        "Google DeepMind",
-        "DeepMind",
-        "Gemini Robotics ER 2"
-      ],
-      "productName": "DeepMind",
-      "products": [
-        {
-          "name": "DeepMind",
-          "type": "模型",
-          "ownerNames": [
-            "Google DeepMind"
-          ]
-        },
-        {
-          "name": "Gemini Robotics ER 2",
-          "type": "模型",
-          "ownerNames": [
-            "Google DeepMind"
-          ]
-        }
-      ],
-      "claims": [
-        {
-          "id": "CL-01047086f6bfac89",
-          "subject": "谷歌 DeepMind",
-          "object": "支持连续视频理解与多机器人协作",
-          "quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。"
-        },
-        {
-          "id": "CL-3ee5e45b69f0ece1",
-          "subject": "谷歌 DeepMind",
-          "object": "支持连续视频理解与多机器人协作",
-          "quote": "定位方面，该模型可视为机器人的“高级大脑”，协调处理与人类交流、理解物理世界并规划多步骤任务等。"
-        },
-        {
-          "id": "CL-9438ab5914909eff",
-          "subject": "谷歌 DeepMind",
-          "object": "支持连续视频理解与多机器人协作",
-          "quote": "该模型后续会向更低层级的视觉-语言-动作 (VLA) 模型分派任务，管控其完成各项任务。"
-        },
-        {
-          "id": "CL-ee762d7e5a860953",
-          "subject": "谷歌 DeepMind",
-          "object": "支持连续视频理解与多机器人协作",
-          "quote": "谷歌最强具身推理模型：Gemini Robotics ER 2 登场，支持连续视频理解与多机器人协作 - IT之家"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-c04e7cbf1504a155",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/983/915.htm"
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/983/915.htm",
-      "publisher": "IT之家（RSS）",
-      "sourceExcerpt": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。"
-    },
-    {
       "id": "EV-a89a5b511c643be8",
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
@@ -62995,143 +62763,61 @@
       "sourceExcerpt": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺 - IT之家"
     },
     {
-      "id": "EV-fafc300c25e9b0a7",
+      "id": "EV-023fd03c675d940d",
       "dataDate": "2026-07-31",
-      "date": "2026-07-31",
+      "date": "2026-07-30",
       "updatedDate": "2026-07-31",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
-      "status": "planned",
-      "statusLabel": "计划中",
-      "publicationStatus": "partial",
-      "title": "国家发改委：将加快《人工智能法》立法进程",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "llm-chat-completions-server 0.1a0",
       "originalTitle": "",
-      "subject": "undisclosed_subject",
+      "subject": "llm-chat-completions-server",
       "action": "product_release",
-      "object": "国家发改委：将加快《人工智能法》立法进程",
-      "metrics": [
-        "100 亿"
-      ],
-      "locations": [
-        "中国"
-      ],
+      "object": "0.1a0",
+      "metrics": [],
+      "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        }
-      ],
+      "tags": [],
       "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          }
-        ],
+        "product_form": [],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
         "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
-        "EN-6f7ac1823da81d2e",
-        "EN-b5251b35f15bedc4"
+        "EN-b161cee9ae7eba20"
       ],
       "entityNames": [
-        "DeepSeek",
-        "Moonshot AI"
+        "llm-chat-completions-server"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-51c18824647efd0d",
-          "subject": "undisclosed_subject",
-          "object": "国家发改委：将加快《人工智能法》立法进程",
-          "quote": "深度求索、月之暗面等本土企业先后发布参数规模达到“万亿”级别的开源大模型，国产大模型全球下载量突破 100 亿次。"
-        },
-        {
-          "id": "CL-6b887ab3e50ea3cb",
-          "subject": "undisclosed_subject",
-          "object": "国家发改委：将加快《人工智能法》立法进程",
-          "quote": "蒋毅指出，下一步，国家发展改革委将统筹高质量发展和高水平安全，让人工智能这匹“千里马” 既跑得快又跑得稳 。"
-        },
-        {
-          "id": "CL-bc14941ffa5ea7e8",
-          "subject": "undisclosed_subject",
-          "object": "国家发改委：将加快《人工智能法》立法进程",
-          "quote": "一是加快自主创新，聚焦大模型的基础理论、训练、推理效率、多模态、智能体等前沿方向，加强基础研究和技术创新；"
-        },
-        {
-          "id": "CL-4af1cad11e9245ed",
-          "subject": "undisclosed_subject",
-          "object": "国家发改委：将加快《人工智能法》立法进程",
-          "quote": "三是深化生态系统，大力培育智能衍生企业，重点把握好发展和安全的动态平衡， 将加快《人工智能法》的立法进程 ，统筹发展与安全、国内与国际、宏观与微观、当前与长远，力争提供一份体现中国特色、具有中国智慧的人工智能治理方案。"
+          "id": "CL-dbc7e23dba27fc95",
+          "subject": "llm-chat-completions-server",
+          "object": "0.1a0",
+          "quote": "Release: llm-chat-completions-server 0.1a0"
         }
       ],
       "sources": [
         {
-          "id": "SA-811e93287fde93aa",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/983/974.htm"
+          "id": "SA-289ebd91873e4362",
+          "publisher": "Simon Willison's Blog",
+          "url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server"
         }
       ],
-      "sourceUrl": "https://ithome.com/0/983/974.htm",
-      "publisher": "IT之家（RSS）",
-      "sourceExcerpt": "深度求索、月之暗面等本土企业先后发布参数规模达到“万亿”级别的开源大模型，国产大模型全球下载量突破 100 亿次。"
+      "sourceUrl": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
+      "publisher": "Simon Willison's Blog",
+      "sourceExcerpt": "Release: llm-chat-completions-server 0.1a0"
     },
     {
       "id": "EV-0707f3c487a36e55",
@@ -63306,7 +62992,208 @@
       "sourceExcerpt": "Friend re-launches its AI pendant with a speaker that talks to you, for twice the price"
     },
     {
-      "id": "EV-1fe7328d2c69693f",
+      "id": "EV-60110525440fac47",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "Gemini Robotics ER 2",
+      "object": "：用视频理解、任务编排与多机器人协作赋能机器人",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b"
+      ],
+      "entityNames": [
+        "Google",
+        "Gemini Robotics ER 2",
+        "Google DeepMind",
+        "DeepMind"
+      ],
+      "productName": "Gemini Robotics ER 2",
+      "products": [
+        {
+          "name": "Gemini Robotics ER 2",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-14b57fbba0504c8a",
+          "subject": "undisclosed_subject",
+          "object": "：用视频理解、任务编排与多机器人协作赋能机器人",
+          "quote": "Gemini Robotics ER 2"
+        },
+        {
+          "id": "CL-0d999506ade603ba",
+          "subject": "undisclosed_subject",
+          "object": "：用视频理解、任务编排与多机器人协作赋能机器人",
+          "quote": "Introducing Gemini Robotics ER 2"
+        },
+        {
+          "id": "CL-7d1f3beb53e43800",
+          "subject": "undisclosed_subject",
+          "object": "：用视频理解、任务编排与多机器人协作赋能机器人",
+          "quote": "Gemini Robotics ER 2 represents a step change in powering robots with video understanding, task orchestration, and multi-robot collaboration — making it possible for robots to be more helpful in the physical world."
+        },
+        {
+          "id": "CL-739d9308b67bd186",
+          "subject": "undisclosed_subject",
+          "object": "：用视频理解、任务编排与多机器人协作赋能机器人",
+          "quote": "We are launching Gemini Robotics ER 2, a new model designed to act as a high-level brain for robots. It enables real-time spatial reasoning, multi-step task planning, and collaboration between different robots. You can access the model now via the Gemini API, Google AI Studio, or the Gemini Enterprise Agent Platform to start building your own physical AI agents."
+        },
+        {
+          "id": "CL-ee762d7e5a860953",
+          "subject": "谷歌 DeepMind 推出",
+          "object": "，最强具身推理模型支持连续视频理解与多机器人协作",
+          "quote": "谷歌最强具身推理模型：Gemini Robotics ER 2 登场，支持连续视频理解与多机器人协作 - IT之家"
+        },
+        {
+          "id": "CL-a5a34bfaa5942382",
+          "subject": "谷歌 DeepMind 推出",
+          "object": "，最强具身推理模型支持连续视频理解与多机器人协作",
+          "quote": "谷歌最强具身推理模型：Gemini Robotics ER 2 登场，支持连续视频理解与多机器人协作"
+        },
+        {
+          "id": "CL-01047086f6bfac89",
+          "subject": "谷歌 DeepMind 推出",
+          "object": "，最强具身推理模型支持连续视频理解与多机器人协作",
+          "quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。"
+        },
+        {
+          "id": "CL-15d28d35a4c35f99",
+          "subject": "谷歌 DeepMind 推出",
+          "object": "，最强具身推理模型支持连续视频理解与多机器人协作",
+          "quote": "在功能方面，相比较此前 1.6 版本，Gemini Robotics ER 2 模型通过持续观看视频，机器人现在可以追踪自身的运行进度，在出现问题时进行调整，并准确把握进入下一步的时机。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-048a2e73225d3122",
+          "publisher": "Google DeepMind：Blog（RSS）",
+          "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration"
+        },
+        {
+          "id": "SA-c04e7cbf1504a155",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/983/915.htm"
+        }
+      ],
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+      "publisher": "Google DeepMind：Blog（RSS）",
+      "sourceExcerpt": "Gemini Robotics ER 2"
+    },
+    {
+      "id": "EV-ebd76d18d3f0ee7b",
       "dataDate": "2026-07-31",
       "date": "2026-07-30",
       "updatedDate": "2026-07-31",
@@ -63316,7 +63203,7 @@
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
+      "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
       "originalTitle": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
       "subject": "OpenAI goes full China",
       "action": "pricing mode with an 80 percent cut",
@@ -63325,7 +63212,12 @@
         "$0.20 ",
         "$1.20 ",
         "$2 ",
-        "$12. "
+        "$12. ",
+        "20%",
+        "80%",
+        "$0.20",
+        "$1.20",
+        "$1.50"
       ],
       "locations": [
         "China"
@@ -63366,12 +63258,14 @@
       "entityIds": [
         "EN-2ee49ef51a776e2c",
         "EN-7d3194f79e645c42",
-        "EN-52fc33ae4d101a5d"
+        "EN-52fc33ae4d101a5d",
+        "EN-bbdefa2950f49882"
       ],
       "entityNames": [
         "OpenAI goes full China",
         "OpenAI",
-        "GPT-5.6"
+        "GPT-5.6",
+        "Google"
       ],
       "productName": "GPT-5.6",
       "products": [
@@ -63407,6 +63301,24 @@
           "subject": "OpenAI goes full China",
           "object": "to its most affordable GPT-5.6 model",
           "quote": "OpenAI's smallest AI model, Luna, aims to dominate competitors on price-to-performance. | Image: OpenAI"
+        },
+        {
+          "id": "CL-52ca670292cf3907",
+          "subject": "GPT-5.6 Terra",
+          "object": "20% price reduction",
+          "quote": "GPT-5.6 Terra got a 20% reduction"
+        },
+        {
+          "id": "CL-f6e15871d56fe83a",
+          "subject": "GPT-5.6 Luna",
+          "object": "80% price reduction",
+          "quote": "GPT-5.6 Luna got a massive 80% drop"
+        },
+        {
+          "id": "CL-6289b57fcf622e82",
+          "subject": "GPT-5.6 Luna",
+          "object": "$0.20/million tokens input, $1.20/million tokens output",
+          "quote": "At $0.20/million tokens for input and $1.20/million for output Luna is now cheaper than Google's Gemini 3.1 Flash-Lite ($.025/$1.50)."
         }
       ],
       "sources": [
@@ -63414,99 +63326,16 @@
           "id": "SA-cd8f078f25e22723",
           "publisher": "The Decoder AI News",
           "url": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model"
+        },
+        {
+          "id": "SA-4417e838b9699852",
+          "publisher": "Simon Willison's Blog",
+          "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop"
         }
       ],
       "sourceUrl": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model",
       "publisher": "The Decoder AI News",
       "sourceExcerpt": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model"
-    },
-    {
-      "id": "EV-876cfe17574eb2c1",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-31",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
-      "originalTitle": "",
-      "subject": "Google",
-      "action": "model_release",
-      "object": "Gemini Robotics ER 2",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "entityIds": [
-        "EN-bbdefa2950f49882",
-        "EN-364df82f85761d58"
-      ],
-      "entityNames": [
-        "Google",
-        "Gemini Robotics ER 2"
-      ],
-      "productName": "Gemini Robotics ER 2",
-      "products": [
-        {
-          "name": "Gemini Robotics ER 2",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        }
-      ],
-      "claims": [
-        {
-          "id": "CL-3059dd725fa8bc8b",
-          "subject": "Google",
-          "object": "Gemini Robotics ER 2",
-          "quote": "We are launching Gemini Robotics ER 2, a new model designed to act as a high-level brain for robots."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-048a2e73225d3122",
-          "publisher": "Google DeepMind：Blog（RSS）",
-          "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration"
-        }
-      ],
-      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
-      "publisher": "Google DeepMind：Blog（RSS）",
-      "sourceExcerpt": "We are launching Gemini Robotics ER 2, a new model designed to act as a high-level brain for robots."
     },
     {
       "id": "EV-f13c302dc067850b",
@@ -63582,6 +63411,110 @@
       "sourceUrl": "https://marktechpost.com/2026/07/30/tencent-open-sources-angelspec-a-unified-training-framework-for-mtp-and-block-parallel-speculative-decoding-on-hy3-models",
       "publisher": "MarkTechPost（RSS）",
       "sourceExcerpt": "Tencent has released AngelSpec , an open-source, torch-native training framework for speculative-decoding draft models."
+    },
+    {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-30",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "Kimi K3-256k 发布",
+      "object": "：256k 上下文窗口与代码生成能力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf"
+      ],
+      "entityNames": [
+        "Kimi K3-256k",
+        "K3-256k"
+      ],
+      "productName": "K3-256k",
+      "products": [
+        {
+          "name": "K3-256k",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-a86d4f9743d74b61",
+          "subject": "undisclosed_subject",
+          "object": "：256k 上下文窗口与代码生成能力",
+          "quote": "Kimi Code currently offers two models—Kimi K3 and Kimi K2.7 Code—across four model IDs, selectable by model ID in clients or third-party tools. Model specs:"
+        },
+        {
+          "id": "CL-d11947b2b6e57046",
+          "subject": "undisclosed_subject",
+          "object": "：256k 上下文窗口与代码生成能力",
+          "quote": "Recommended model launch"
+        },
+        {
+          "id": "CL-87f0da7939e6ed76",
+          "subject": "undisclosed_subject",
+          "object": "：256k 上下文窗口与代码生成能力",
+          "quote": "k3-256k is now available. Within 256k context, it delivers the same results. k3 (1M) consumes about twice as much quota as k3-256k . Ideal for everyday Q&A, code completion, routine feature development, and single-file or small-file edits — video input is not supported."
+        },
+        {
+          "id": "CL-da7451c803d6f1e1",
+          "subject": "undisclosed_subject",
+          "object": "：256k 上下文窗口与代码生成能力",
+          "quote": "Switching from K3 (1M) to K3-256k: When switching from k3 (1M) to k3-256k , if the current session's context already exceeds 256k, some coding tools such as Kimi Code CLI and Claude Code will perform a compact on the tool side."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8aeb607b684a4390",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://kimi.com/code/docs/en/kimi-code/models"
+        }
+      ],
+      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceExcerpt": "Kimi Code currently offers two models—Kimi K3 and Kimi K2.7 Code—across four model IDs, selectable by model ID in clients or third-party tools. Model specs:"
     },
     {
       "id": "EV-3ebf23c149dde19d",
@@ -75339,86 +75272,6 @@
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
       "publisher": "Claude Code：GitHub Releases（RSS）",
       "sourceExcerpt": "Added screen-reader announcements of deleted text for word and line deletions ( Option+Delete , Ctrl+W , Cmd+Backspace , Ctrl+U , Ctrl+K ) in --ax-screen-reader mode"
-    },
-    {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-22",
-      "updatedDate": "2026-07-31",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
-      "originalTitle": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-      "subject": "Open",
-      "action": "models recap: more on Kimi K3",
-      "object": ", Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-      "metrics": [],
-      "locations": [
-        "US",
-        "China"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-2348f99874421257",
-        "EN-cbc62794911ff31b"
-      ],
-      "entityNames": [
-        "Open",
-        "Amazon"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-1c7f0d16c69eabf2",
-          "subject": "Open",
-          "object": ", Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-          "quote": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next"
-        },
-        {
-          "id": "CL-44ea7d9d1afb7002",
-          "subject": "Open",
-          "object": ", Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-          "quote": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next"
-        },
-        {
-          "id": "CL-0745b402236ddd8b",
-          "subject": "Open",
-          "object": ", Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-          "quote": "My book trying to share post-training knowledge with the world is done and shipping soon. Order on Manning or Amazon . Thanks for the support. It’s currently the #1 AI book on Amazon :). Nathan and Florian sit down to discuss everything happening with open models. Following the Kimi K3 release last week, it feels like everything is accelerating — geopolitics of US v China, economics of open vs. closed models, security at the frontier of AI, and so on."
-        },
-        {
-          "id": "CL-cfed864aad877156",
-          "subject": "Open",
-          "object": ", Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-          "quote": "00:00:06 Nathan Lambert: Okay, welcome back to Interconnects. We’re doing our quarterly open model roundup, which is mostly us just making fun of or explaining, not making fun, why so many distillation takes are bad and understanding the state of where things stand. I think last Thursday was when Kimi K3 was released. I think we will see much much more in the near future. It seems pretty inevitable. Like over the weekend, Xi gave his speech where he directly committed to openness and open source as a strategy. It wasn’t a detailed layout state of affairs."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-86a0bb3fbd4edf9c",
-          "publisher": "Interconnects (Nathan Lambert)",
-          "url": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3"
-        }
-      ],
-      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-      "publisher": "Interconnects (Nathan Lambert)",
-      "sourceExcerpt": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next"
     },
     {
       "id": "EV-02015794e4c719d0",
@@ -152456,26 +152309,25 @@
       "sourceExcerpt": "one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that."
     },
     {
-      "id": "EV-c195952efffa9a60",
+      "id": "EV-1b74a6307ba10bb1",
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
       "updatedDate": "2026-07-31",
-      "eventType": "financial_performance",
-      "eventTypeLabel": "财务表现",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "情境感知的缺失",
-      "originalTitle": "The loss of Situational Awareness",
-      "subject": "Situational Awareness",
-      "action": "financial_performance",
-      "object": "public stock portfolio sold to Citadel",
-      "metrics": [
-        "$45 billion",
-        "$10 billion"
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "国家发改委：将加快《人工智能法》立法进程",
+      "originalTitle": "",
+      "subject": "国家发改委：将",
+      "action": "加快《人工智能法",
+      "object": "》立法进程",
+      "metrics": [],
+      "locations": [
+        "中国"
       ],
-      "locations": [],
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -152489,39 +152341,135 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-11740cc8809aec7a",
-        "EN-7d3194f79e645c42"
+        "EN-0a1aa4685006602d"
       ],
       "entityNames": [
-        "Situational Awareness",
-        "OpenAI"
+        "国家发改委"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-7c1521a791c9c38a",
-          "subject": "Situational Awareness",
-          "object": "public stock portfolio sold to Citadel",
-          "quote": "Situational Awareness, the hedge fund started by a 24-year-old former OpenAI employee that focuses on artificial intelligence bets, has sold most or all, depending on who’s reporting, of its entire public stock portfolio to Ken Griffin’s Citadel after several bad weeks for AI stocks"
+          "id": "CL-4af1cad11e9245ed",
+          "subject": "国家发改委：将",
+          "object": "》立法进程",
+          "quote": "三是深化生态系统，大力培育智能衍生企业，重点把握好发展和安全的动态平衡， 将加快《人工智能法》的立法进程 ，统筹发展与安全、国内与国际、宏观与微观、当前与长远，力争提供一份体现中国特色、具有中国智慧的人工智能治理方案。"
         },
         {
-          "id": "CL-0879725a7ffe1d0e",
-          "subject": "Situational Awareness",
-          "object": "fund value decline from $45 billion to $10 billion",
-          "quote": "according to CNBC, the fund was worth $45 billion at the start of July. It is now worth $10 billion, after the sale of assets to Griffin."
+          "id": "CL-883a6bb6a1e04e9e",
+          "subject": "国家发改委：将",
+          "object": "》立法进程",
+          "quote": "IT之家从新闻发布会获悉，蒋毅指出，要强化人工智能风险监测防控，建立健全技术监测、风险预警、应急响应体系，坚持人工智能的发展 由人主导、为人所用、与人为善 ，积极应对人工智能对经济运行、就业分配等方面的影响冲击。"
+        },
+        {
+          "id": "CL-e343b3b91580b0e5",
+          "subject": "国家发改委：将",
+          "object": "》立法进程",
+          "quote": "广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。"
         }
       ],
       "sources": [
         {
-          "id": "SA-1c64b7fd7a109d47",
-          "publisher": "The Verge AI",
-          "url": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks"
+          "id": "SA-811e93287fde93aa",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/983/974.htm"
         }
       ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
-      "publisher": "The Verge AI",
-      "sourceExcerpt": "Situational Awareness, the hedge fund started by a 24-year-old former OpenAI employee that focuses on artificial intelligence bets, has sold most or all, depending on who’s reporting, of its entire public stock portfolio to Ken Griffin’s Citadel after several bad weeks for AI stocks"
+      "sourceUrl": "https://ithome.com/0/983/974.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "三是深化生态系统，大力培育智能衍生企业，重点把握好发展和安全的动态平衡， 将加快《人工智能法》的立法进程 ，统筹发展与安全、国内与国际、宏观与微观、当前与长远，力争提供一份体现中国特色、具有中国智慧的人工智能治理方案。"
+    },
+    {
+      "id": "EV-94cb16144a8fcfdb",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "originalTitle": "",
+      "subject": "Anthropic：第三方评估环境配置失误，导致三起真实",
+      "action": "网络安全事件",
+      "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-33c2fad230baea4d",
+          "subject": "Anthropic：第三方评估环境配置失误，导致三起真实",
+          "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件 - IT之家",
+          "quote": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件 - IT之家"
+        },
+        {
+          "id": "CL-e9d2567e291ccd1b",
+          "subject": "Anthropic：第三方评估环境配置失误，导致三起真实",
+          "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+          "quote": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件"
+        },
+        {
+          "id": "CL-57c43e210b454751",
+          "subject": "Anthropic：第三方评估环境配置失误，导致三起真实",
+          "object": "IT之家 7 月 31 日消息，人工智能企业 Anthropic 当地时间 30 日发布公告，表示在对自家 Claude 的网络安全评估审查中发现了三起不应发生的真实网络安全事件，背后的直接原因是第三方评估环境配置失误。",
+          "quote": "IT之家 7 月 31 日消息，人工智能企业 Anthropic 当地时间 30 日发布公告，表示在对自家 Claude 的网络安全评估审查中发现了三起不应发生的真实网络安全事件，背后的直接原因是第三方评估环境配置失误。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-72c18127f23bf91a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/983/947.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/983/947.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件 - IT之家"
     },
     {
       "id": "EV-3ec034d25ba6a710",
@@ -152624,67 +152572,6 @@
       "sourceUrl": "https://ithome.com/0/983/814.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "欧盟计划投资 100 亿欧元建设 7 座 AI 超级工厂，发力追赶中美 - IT之家"
-    },
-    {
-      "id": "EV-fc13165fbd0ef3de",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-31",
-      "eventType": "capital_investment",
-      "eventTypeLabel": "资本性投资",
-      "eventGroup": "融资与并购",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
-      "originalTitle": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
-      "subject": "Situational Awareness",
-      "action": "capital_investment",
-      "object": "Anthropic shares",
-      "metrics": [
-        "$5 billion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-11740cc8809aec7a",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Situational Awareness",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-c13a40a99f781d2c",
-          "subject": "Situational Awareness",
-          "object": "Anthropic shares",
-          "quote": "Situational Awareness did not, however, sell its investments in private companies, according to multiple reports. Most notably, it continues to hold a stake in Anthropic that’s right now valued at $5 billion"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-eed064267b4b4017",
-          "publisher": "TechCrunch AI",
-          "url": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares"
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
-      "publisher": "TechCrunch AI",
-      "sourceExcerpt": "Situational Awareness did not, however, sell its investments in private companies, according to multiple reports. Most notably, it continues to hold a stake in Anthropic that’s right now valued at $5 billion"
     },
     {
       "id": "EV-56b36a56d729c20d",
@@ -153024,80 +152911,6 @@
       "sourceUrl": "https://ithome.com/0/983/393.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "翁荔将重返老东家，带队开发「递归自我改进」（RSI）新模型"
-    },
-    {
-      "id": "EV-d7cba8d4a454aa93",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-29",
-      "updatedDate": "2026-07-31",
-      "eventType": "capital_investment",
-      "eventTypeLabel": "资本性投资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 工厂供应链：WTAI 2026年7月再平衡的真正含义",
-      "originalTitle": "The AI Factory Supply Chain: What WTAI's July 2026 Rebalance Is Really Saying | WisdomTree",
-      "subject": "WisdomTree Artificial Intelligence and Innovation Fund",
-      "action": "capital_investment",
-      "object": "semiconductor capital equipment",
-      "metrics": [
-        "1.50%",
-        "1.00%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-77d06a98251d0272",
-        "EN-6aa383344bedc00c"
-      ],
-      "entityNames": [
-        "WisdomTree Artificial Intelligence",
-        "Innovation Fund"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-ea59aa1d8fde4bcd",
-          "subject": "WisdomTree Artificial Intelligence and Innovation Fund",
-          "object": "semiconductor capital equipment",
-          "quote": "The single largest allocation move in WisdomTree Artificial Intelligence and Innovation Fund’s (WTAI) July 2026 rebalance is not into a new chip designer or a hot AI software name, but rather, it is into semiconductor capital equipment, the machines that manufacture chips."
-        },
-        {
-          "id": "CL-e2ba14102e81a504",
-          "subject": "WisdomTree Artificial Intelligence and Innovation Fund",
-          "object": "Tokyo Electron",
-          "quote": "That is why Tokyo Electron joins the portfolio at 1.50%, completing a full wafer fab equipment (WFE) stack alongside ASML, Applied Materials, Lam Research, KLA, and Advantest."
-        },
-        {
-          "id": "CL-1442634bac1cddba",
-          "subject": "WisdomTree Artificial Intelligence and Innovation Fund",
-          "object": "Wiwynn",
-          "quote": "Wiwynn (1.00%) is the other addition."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-022f568013c7a2bc",
-          "publisher": "wisdomtree.com",
-          "url": "https://wisdomtree.com/us/insights/blog/the-ai-factory-supply-chain-what-wtai-s-july-2026-rebalance-is-really-saying"
-        }
-      ],
-      "sourceUrl": "https://wisdomtree.com/us/insights/blog/the-ai-factory-supply-chain-what-wtai-s-july-2026-rebalance-is-really-saying",
-      "publisher": "wisdomtree.com",
-      "sourceExcerpt": "The single largest allocation move in WisdomTree Artificial Intelligence and Innovation Fund’s (WTAI) July 2026 rebalance is not into a new chip designer or a hot AI software name, but rather, it is into semiconductor capital equipment, the machines that manufacture chips."
     },
     {
       "id": "EV-20b82e2a2cb33a0e",
@@ -170873,7 +170686,6 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -170896,7 +170708,7 @@
         "EV-933294dfb2d19a67"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-29",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -170982,6 +170794,7 @@
         "制造业"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
@@ -171043,7 +170856,6 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -171196,7 +171008,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
-        "EV-fc13165fbd0ef3de",
+        "EV-94cb16144a8fcfdb",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -172122,9 +171934,7 @@
       "id": "EN-6f7ac1823da81d2e",
       "name": "DeepSeek",
       "sourceType": "organization_candidate",
-      "aliases": [
-        "深度求索"
-      ],
+      "aliases": [],
       "tags": [
         "智能体",
         "代码生成",
@@ -172137,7 +171947,6 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
-        "EV-fafc300c25e9b0a7",
         "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
@@ -172162,7 +171971,7 @@
         "EV-b6970cb396a7b1ed"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-25",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -172483,8 +172292,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-4c750d338325c55f",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
+        "EV-ebd76d18d3f0ee7b",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -172739,7 +172548,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
+        "EV-60110525440fac47",
         "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
@@ -173478,7 +173287,9 @@
       "id": "EN-9fbf261b62c1d7c0",
       "name": "Microsoft",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "tags": [
         "智能体",
         "客户服务",
@@ -173593,31 +173404,46 @@
         "EV-7580a050ca19a8ae"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-30",
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "relationIds": [
+        "REL2-62f415d53b9e1307",
+        "REL2-dceee7ada64357c1",
+        "REL2-899fe78a63eda569",
         "REL2-4410cf5eef104c6e",
+        "REL2-a2d037d3ca0eff3e",
         "REL2-8dc67631418aa4d4",
         "REL2-9fd72463ce6686f3",
         "REL2-c2250eeea2122198",
         "REL2-fdbf7b1aedf4d9ef",
         "REL2-9f6eb62bdd6f6a31",
         "REL2-10ba411040225060",
-        "REL2-e9ef6e697ef06f93"
+        "REL2-e9ef6e697ef06f93",
+        "REL2-9795f8e6814470a6"
       ],
       "type": "公司/机构",
       "productIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-d2f4e09cb01afa3c"
+        "EN-d2f4e09cb01afa3c",
+        "EN-10fce287b4b1464c"
       ]
     },
     {
@@ -173766,7 +173592,6 @@
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
-        "EV-fafc300c25e9b0a7",
         "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
         "EV-56626f2604aa1e30",
@@ -173781,7 +173606,7 @@
         "EV-74b965de27bc0515"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-29",
       "relatedEntityIds": [
         "EN-eb732565c71e6b85",
         "EN-2cfed21b7a971267",
@@ -174109,6 +173934,7 @@
         "代码生成"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -174183,7 +174009,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -174321,7 +174147,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -179172,13 +178997,21 @@
       ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-899fe78a63eda569"
+      ],
       "legacyIds": [
         "PD-9b794bcc23cd8b"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "产品/服务"
     },
     {
@@ -179927,13 +179760,21 @@
       ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-05-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-9795f8e6814470a6"
+      ],
       "legacyIds": [
         "PD-5445e4d3df5873"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "模型"
     },
     {
@@ -180813,7 +180654,7 @@
         "工具调用"
       ],
       "eventIds": [
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-2ffbe4560e69992a",
         "EV-ae736eb124d7163a",
         "EV-ee9a1c99fe7054d6",
@@ -182337,13 +182178,21 @@
       ],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-24",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-dceee7ada64357c1"
+      ],
       "legacyIds": [
         "PD-e7515051f4d2d8"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "模型"
     },
     {
@@ -182402,13 +182251,21 @@
       ],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-24",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-62f415d53b9e1307"
+      ],
       "legacyIds": [
         "PD-fe5dceb7529446"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "模型"
     },
     {
@@ -185594,13 +185451,21 @@
       ],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "relationIds": [
+        "REL2-a2d037d3ca0eff3e"
+      ],
       "legacyIds": [
         "PD-ef192d6c2286e4"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "companyNames": [
+        "Microsoft"
+      ],
       "type": "产品/服务"
     },
     {
@@ -188991,6 +188856,7 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-0d5a32aca724d30e",
         "EV-bfa090c78227abf8",
         "EV-0f440082086c02df",
         "EV-2634b786bde9fb8e",
@@ -189042,6 +188908,8 @@
         "EN-86ca9936019f1039",
         "EN-4094a2b7125c7564",
         "EN-8f71c4871a160172",
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf",
         "EN-76a9a8a6e2f1a47b",
         "EN-7ad3f3203e5d717e",
         "EN-275b0f4a4023d91c",
@@ -189093,7 +188961,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-industry-telecommunications",
@@ -189231,7 +189099,6 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
-        "EV-fafc300c25e9b0a7",
         "EV-d1d36268ff74be0e",
         "EV-58457ebde013a438",
         "EV-6bac0bf442887889",
@@ -189280,7 +189147,6 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
-        "EN-6f7ac1823da81d2e",
         "EN-43a340bb75b45f02",
         "EN-5388bc10736a0eff",
         "EN-febedfcafee9d610",
@@ -189297,6 +189163,7 @@
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
+        "EN-6f7ac1823da81d2e",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
         "EN-96eebba49dbbf422",
@@ -189333,7 +189200,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "TX-technology-tool_use",
@@ -189462,8 +189329,7 @@
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
         "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-f79713437230562f",
@@ -189734,7 +189600,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-09-10",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -189751,6 +189617,7 @@
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-60110525440fac47",
         "EV-c4f8ef356373ab24",
         "EV-7f92b7e410ed08f1",
         "EV-b580e33cabfea980",
@@ -189783,6 +189650,8 @@
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
         "EN-b47de584b4515427",
         "EN-149ae7e9819a17a0",
         "EN-985e1a7c957148f9",
@@ -189819,7 +189688,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-technology-open_weights",
@@ -190765,7 +190634,7 @@
       "valueId": "reasoning",
       "eventIds": [
         "EV-b95539d17772a4ce",
-        "EV-8887fb45a0398590",
+        "EV-60110525440fac47",
         "EV-6f1729f6968b72c9",
         "EV-314b1d80bc4aa50d",
         "EV-9496f90f3e808992",
@@ -190782,8 +190651,8 @@
         "EN-4d748ebd71af03a7",
         "EN-bbdefa2950f49882",
         "EN-916a98f0fa2a39af",
-        "EN-2b6e51bec93e86c1",
         "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
         "EN-d30e5ffc0ba9150b",
         "EN-8989aada6eb4a4c3",
         "EN-a8100d425f663eac",
@@ -190848,7 +190717,6 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
-        "EV-2ef56a158898ae73",
         "EV-a4fe78df6ccd63c8",
         "EV-3eb44a239ebef4b0",
         "EV-5f2acbfb8f54fd59",
@@ -190883,6 +190751,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-94cb16144a8fcfdb",
         "EV-dbda21182e61923b"
       ],
       "entityIds": [
@@ -191557,7 +191426,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-fafc300c25e9b0a7",
+        "EV-60110525440fac47",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
         "EV-7a4d1e871dcd3b1f",
@@ -191977,7 +191846,8 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-6f7ac1823da81d2e",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
         "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
@@ -191995,7 +191865,6 @@
         "EN-24f5eb8d2e667579",
         "EN-43a340bb75b45f02",
         "EN-d2997fd4735a8795",
-        "EN-2b6e51bec93e86c1",
         "EN-c857d09db23e6822",
         "EN-5a4c2be958c0af72",
         "EN-ec99ce30dc2316d9",
@@ -192018,6 +191887,7 @@
         "EN-ba728f8ca730921f",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
+        "EN-6f7ac1823da81d2e",
         "EN-f65bb77682b83476",
         "EN-7c094d35e3b700c8",
         "EN-9a266f40d42cf217",
@@ -197790,6 +197660,55 @@
           ],
           "entityIds": [
             "EN-eaaf22a384c26014"
+          ]
+        }
+      ],
+      "viewpoints": []
+    },
+    {
+      "id": "EN-0a1aa4685006602d",
+      "name": "国家发改委",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1b74a6307ba10bb1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-31",
+      "lastSeen": "2026-07-31",
+      "relationIds": [],
+      "groupedEventIds": {
+        "fundingAcquisition": [],
+        "deployments": [],
+        "partnerships": [],
+        "productsServices": [],
+        "hardware": [],
+        "organizationPeople": [],
+        "other": [
+          "EV-1b74a6307ba10bb1"
+        ]
+      },
+      "timeline": [
+        {
+          "id": "EV-1b74a6307ba10bb1",
+          "dataDate": "2026-07-31",
+          "date": "2026-07-31",
+          "eventType": "policy_regulation",
+          "eventTypeLabel": "政策监管",
+          "eventGroup": "组织、政策与法律",
+          "status": "planned",
+          "statusLabel": "计划中",
+          "title": "国家发改委：将加快《人工智能法》立法进程",
+          "displayTags": [],
+          "entityIds": [
+            "EN-0a1aa4685006602d"
           ]
         }
       ],
@@ -219931,7 +219850,6 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -219965,7 +219883,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-29",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [
@@ -219988,7 +219906,6 @@
           "EV-c0a65877001ed413"
         ],
         "productsServices": [
-          "EV-0d5a32aca724d30e",
           "EV-30749250196dd507",
           "EV-8993e021ac17df4a",
           "EV-b93b5cc15823e9c3",
@@ -220016,22 +219933,6 @@
         "other": []
       },
       "timeline": [
-        {
-          "id": "EV-0d5a32aca724d30e",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-22",
-          "eventType": "model_release",
-          "eventTypeLabel": "模型发布",
-          "eventGroup": "模型、产品与服务",
-          "status": "completed",
-          "statusLabel": "已完成",
-          "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
-          "displayTags": [],
-          "entityIds": [
-            "EN-2348f99874421257",
-            "EN-cbc62794911ff31b"
-          ]
-        },
         {
           "id": "EV-84697d26f813b122",
           "dataDate": "2026-07-29",
@@ -222661,6 +222562,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
@@ -222722,7 +222624,6 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -222875,7 +222776,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
-        "EV-fc13165fbd0ef3de",
+        "EV-94cb16144a8fcfdb",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -223038,6 +222939,7 @@
       ],
       "groupedEventIds": {
         "fundingAcquisition": [
+          "EV-81a37a2365624b42",
           "EV-420a9ad09680d2dc",
           "EV-56b36a56d729c20d",
           "EV-741728825db1f14e",
@@ -223075,7 +222977,6 @@
           "EV-ed8260ee9a7a80af"
         ],
         "deployments": [
-          "EV-fc13165fbd0ef3de",
           "EV-b150af93042566a6",
           "EV-ae9142b65fa86975",
           "EV-d709599eddf5db04",
@@ -223121,7 +223022,7 @@
           "EV-c0a65877001ed413"
         ],
         "productsServices": [
-          "EV-2ef56a158898ae73",
+          "EV-94cb16144a8fcfdb",
           "EV-6f433ccff3dce657",
           "EV-2cc379df19a83062",
           "EV-5f2acbfb8f54fd59",
@@ -223315,6 +223216,23 @@
       },
       "timeline": [
         {
+          "id": "EV-81a37a2365624b42",
+          "dataDate": "2026-07-31",
+          "date": "2026-07-30",
+          "eventType": "acquisition",
+          "eventTypeLabel": "并购",
+          "eventGroup": "融资与并购",
+          "status": "rumored",
+          "statusLabel": "rumored",
+          "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+          "displayTags": [],
+          "entityIds": [
+            "EN-c737e8142a927072",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ]
+        },
+        {
           "id": "EV-5d185ac33faedb68",
           "dataDate": "2026-07-31",
           "date": "2026-07-27",
@@ -223331,12 +223249,12 @@
           ]
         },
         {
-          "id": "EV-2ef56a158898ae73",
+          "id": "EV-94cb16144a8fcfdb",
           "dataDate": "2026-07-31",
           "date": "2026-07-31",
-          "eventType": "product_release",
-          "eventTypeLabel": "产品发布",
-          "eventGroup": "模型、产品与服务",
+          "eventType": "security_incident",
+          "eventTypeLabel": "安全事件",
+          "eventGroup": "组织、政策与法律",
           "status": "announced",
           "statusLabel": "已公布",
           "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
@@ -223349,22 +223267,6 @@
             }
           ],
           "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ]
-        },
-        {
-          "id": "EV-fc13165fbd0ef3de",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-30",
-          "eventType": "capital_investment",
-          "eventTypeLabel": "资本性投资",
-          "eventGroup": "融资与并购",
-          "status": "rumored",
-          "statusLabel": "rumored",
-          "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
-          "displayTags": [],
-          "entityIds": [
-            "EN-11740cc8809aec7a",
             "EN-c70eca6b0f88f44d"
           ]
         },
@@ -240411,6 +240313,57 @@
       "viewpoints": []
     },
     {
+      "id": "EN-c737e8142a927072",
+      "name": "Citadel",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-81a37a2365624b42"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-31",
+      "relationIds": [],
+      "groupedEventIds": {
+        "fundingAcquisition": [
+          "EV-81a37a2365624b42"
+        ],
+        "deployments": [],
+        "partnerships": [],
+        "productsServices": [],
+        "hardware": [],
+        "organizationPeople": [],
+        "other": []
+      },
+      "timeline": [
+        {
+          "id": "EV-81a37a2365624b42",
+          "dataDate": "2026-07-31",
+          "date": "2026-07-30",
+          "eventType": "acquisition",
+          "eventTypeLabel": "并购",
+          "eventGroup": "融资与并购",
+          "status": "rumored",
+          "statusLabel": "rumored",
+          "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+          "displayTags": [],
+          "entityIds": [
+            "EN-c737e8142a927072",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ]
+        }
+      ],
+      "viewpoints": []
+    },
+    {
       "id": "EN-7814459b3f23f455",
       "name": "Clara",
       "entityType": "organization_candidate",
@@ -245291,10 +245244,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-23",
-      "relationIds": [],
+      "relationIds": [
+        "REL2-899fe78a63eda569"
+      ],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
@@ -248078,9 +248035,7 @@
       "name": "DeepSeek",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "深度求索"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -248090,7 +248045,6 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
-        "EV-fafc300c25e9b0a7",
         "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
@@ -248131,7 +248085,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-25",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [
@@ -248145,7 +248099,6 @@
         "deployments": [],
         "partnerships": [],
         "productsServices": [
-          "EV-fafc300c25e9b0a7",
           "EV-5b193a038ab4ea22",
           "EV-2fea1664807824ce",
           "EV-70cbf25f7ec2cc3a",
@@ -248173,41 +248126,6 @@
         ]
       },
       "timeline": [
-        {
-          "id": "EV-fafc300c25e9b0a7",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-31",
-          "eventType": "product_release",
-          "eventTypeLabel": "产品发布",
-          "eventGroup": "模型、产品与服务",
-          "status": "planned",
-          "statusLabel": "计划中",
-          "title": "国家发改委：将加快《人工智能法》立法进程",
-          "displayTags": [
-            {
-              "dimensionId": "product_form",
-              "id": "model",
-              "dimensionName": "产品形态",
-              "name": "模型"
-            },
-            {
-              "dimensionId": "technology",
-              "dimensionName": "技术",
-              "id": "agentic_execution",
-              "name": "智能体"
-            },
-            {
-              "dimensionId": "technology",
-              "dimensionName": "技术",
-              "id": "multimodal",
-              "name": "多模态"
-            }
-          ],
-          "entityIds": [
-            "EN-6f7ac1823da81d2e",
-            "EN-b5251b35f15bedc4"
-          ]
-        },
         {
           "id": "EV-3aefbdfa5df2fd6a",
           "dataDate": "2026-07-25",
@@ -253586,10 +253504,14 @@
         "TX-technology-agentic_execution",
         "TX-technology-computer_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-05-23",
-      "relationIds": [],
+      "relationIds": [
+        "REL2-9795f8e6814470a6"
+      ],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
@@ -257801,12 +257723,13 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-8887fb45a0398590",
-        "EV-876cfe17574eb2c1"
+        "EV-60110525440fac47"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
@@ -257818,8 +257741,7 @@
         "deployments": [],
         "partnerships": [],
         "productsServices": [
-          "EV-8887fb45a0398590",
-          "EV-876cfe17574eb2c1"
+          "EV-60110525440fac47"
         ],
         "hardware": [],
         "organizationPeople": [],
@@ -257827,36 +257749,7 @@
       },
       "timeline": [
         {
-          "id": "EV-8887fb45a0398590",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-31",
-          "eventType": "model_release",
-          "eventTypeLabel": "模型发布",
-          "eventGroup": "模型、产品与服务",
-          "status": "completed",
-          "statusLabel": "已完成",
-          "title": "谷歌 DeepMind 推出 Gemini Robotics ER 2，最强具身推理模型支持连续视频理解与多机器人协作",
-          "displayTags": [
-            {
-              "dimensionId": "use_case",
-              "id": "robotics_automation",
-              "dimensionName": "应用场景",
-              "name": "机器人与物理自动化"
-            },
-            {
-              "dimensionId": "technology",
-              "dimensionName": "技术",
-              "id": "reasoning",
-              "name": "推理能力"
-            }
-          ],
-          "entityIds": [
-            "EN-2b6e51bec93e86c1",
-            "EN-364df82f85761d58"
-          ]
-        },
-        {
-          "id": "EV-876cfe17574eb2c1",
+          "id": "EV-60110525440fac47",
           "dataDate": "2026-07-31",
           "date": "2026-07-30",
           "eventType": "model_release",
@@ -257871,11 +257764,30 @@
               "id": "robotics_automation",
               "dimensionName": "应用场景",
               "name": "机器人与物理自动化"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "agentic_execution",
+              "name": "智能体"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "embodied_ai",
+              "name": "具身智能"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "reasoning",
+              "name": "推理能力"
             }
           ],
           "entityIds": [
             "EN-bbdefa2950f49882",
-            "EN-364df82f85761d58"
+            "EN-364df82f85761d58",
+            "EN-2b6e51bec93e86c1"
           ]
         }
       ],
@@ -259578,8 +259490,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-4c750d338325c55f",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
+        "EV-ebd76d18d3f0ee7b",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -259817,8 +259729,8 @@
           "EV-c0a65877001ed413"
         ],
         "productsServices": [
-          "EV-4c750d338325c55f",
-          "EV-876cfe17574eb2c1",
+          "EV-60110525440fac47",
+          "EV-ebd76d18d3f0ee7b",
           "EV-3ebf23c149dde19d",
           "EV-6b0106ef4a79df05",
           "EV-a4fe78df6ccd63c8",
@@ -259969,22 +259881,7 @@
           ]
         },
         {
-          "id": "EV-4c750d338325c55f",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-31",
-          "eventType": "pricing_change",
-          "eventTypeLabel": "定价变更",
-          "eventGroup": "模型、产品与服务",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "以GPT‑5.6推进性价比前沿",
-          "displayTags": [],
-          "entityIds": [
-            "EN-bbdefa2950f49882"
-          ]
-        },
-        {
-          "id": "EV-876cfe17574eb2c1",
+          "id": "EV-60110525440fac47",
           "dataDate": "2026-07-31",
           "date": "2026-07-30",
           "eventType": "model_release",
@@ -259999,11 +259896,55 @@
               "id": "robotics_automation",
               "dimensionName": "应用场景",
               "name": "机器人与物理自动化"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "agentic_execution",
+              "name": "智能体"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "embodied_ai",
+              "name": "具身智能"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "reasoning",
+              "name": "推理能力"
             }
           ],
           "entityIds": [
             "EN-bbdefa2950f49882",
-            "EN-364df82f85761d58"
+            "EN-364df82f85761d58",
+            "EN-2b6e51bec93e86c1"
+          ]
+        },
+        {
+          "id": "EV-ebd76d18d3f0ee7b",
+          "dataDate": "2026-07-31",
+          "date": "2026-07-30",
+          "eventType": "pricing_change",
+          "eventTypeLabel": "定价变更",
+          "eventGroup": "模型、产品与服务",
+          "status": "announced",
+          "statusLabel": "已公布",
+          "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
+          "displayTags": [
+            {
+              "dimensionId": "product_form",
+              "id": "model",
+              "dimensionName": "产品形态",
+              "name": "模型"
+            }
+          ],
+          "entityIds": [
+            "EN-2ee49ef51a776e2c",
+            "EN-7d3194f79e645c42",
+            "EN-52fc33ae4d101a5d",
+            "EN-bbdefa2950f49882"
           ]
         },
         {
@@ -264117,7 +264058,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
+        "EV-60110525440fac47",
         "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
@@ -264146,6 +264087,7 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -264189,7 +264131,7 @@
         ],
         "productsServices": [
           "EV-7a0f201debe99f2b",
-          "EV-8887fb45a0398590",
+          "EV-60110525440fac47",
           "EV-6b0106ef4a79df05",
           "EV-5f2acbfb8f54fd59",
           "EV-59229486408edb05",
@@ -264252,15 +264194,15 @@
           ]
         },
         {
-          "id": "EV-8887fb45a0398590",
+          "id": "EV-60110525440fac47",
           "dataDate": "2026-07-31",
-          "date": "2026-07-31",
+          "date": "2026-07-30",
           "eventType": "model_release",
           "eventTypeLabel": "模型发布",
           "eventGroup": "模型、产品与服务",
-          "status": "completed",
-          "statusLabel": "已完成",
-          "title": "谷歌 DeepMind 推出 Gemini Robotics ER 2，最强具身推理模型支持连续视频理解与多机器人协作",
+          "status": "announced",
+          "statusLabel": "已公布",
+          "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
           "displayTags": [
             {
               "dimensionId": "use_case",
@@ -264271,13 +264213,26 @@
             {
               "dimensionId": "technology",
               "dimensionName": "技术",
+              "id": "agentic_execution",
+              "name": "智能体"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "embodied_ai",
+              "name": "具身智能"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
               "id": "reasoning",
               "name": "推理能力"
             }
           ],
           "entityIds": [
-            "EN-2b6e51bec93e86c1",
-            "EN-364df82f85761d58"
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58",
+            "EN-2b6e51bec93e86c1"
           ]
         },
         {
@@ -265473,7 +265428,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-2ffbe4560e69992a",
         "EV-ae736eb124d7163a",
         "EV-ee9a1c99fe7054d6",
@@ -265507,7 +265462,7 @@
         "deployments": [],
         "partnerships": [],
         "productsServices": [
-          "EV-1fe7328d2c69693f",
+          "EV-ebd76d18d3f0ee7b",
           "EV-2ffbe4560e69992a",
           "EV-ae736eb124d7163a",
           "EV-ee9a1c99fe7054d6",
@@ -265521,7 +265476,7 @@
       },
       "timeline": [
         {
-          "id": "EV-1fe7328d2c69693f",
+          "id": "EV-ebd76d18d3f0ee7b",
           "dataDate": "2026-07-31",
           "date": "2026-07-30",
           "eventType": "pricing_change",
@@ -265529,7 +265484,7 @@
           "eventGroup": "模型、产品与服务",
           "status": "announced",
           "statusLabel": "已公布",
-          "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
+          "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
           "displayTags": [
             {
               "dimensionId": "product_form",
@@ -265541,7 +265496,8 @@
           "entityIds": [
             "EN-2ee49ef51a776e2c",
             "EN-7d3194f79e645c42",
-            "EN-52fc33ae4d101a5d"
+            "EN-52fc33ae4d101a5d",
+            "EN-bbdefa2950f49882"
           ]
         },
         {
@@ -266584,35 +266540,6 @@
           ]
         }
       ],
-      "viewpoints": []
-    },
-    {
-      "id": "EN-2caedd902ff4ed81",
-      "name": "GSA",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [],
-      "firstSeen": "",
-      "lastSeen": "",
-      "relationIds": [],
-      "groupedEventIds": {
-        "fundingAcquisition": [],
-        "deployments": [],
-        "partnerships": [],
-        "productsServices": [],
-        "hardware": [],
-        "organizationPeople": [],
-        "other": []
-      },
-      "timeline": [],
       "viewpoints": []
     },
     {
@@ -271713,56 +271640,6 @@
             "EN-8f71c4871a160172",
             "EN-78624f0a98e78301",
             "EN-4b078b39d2fcacc7"
-          ]
-        }
-      ],
-      "viewpoints": []
-    },
-    {
-      "id": "EN-6aa383344bedc00c",
-      "name": "Innovation Fund",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d7cba8d4a454aa93"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-29",
-      "lastSeen": "2026-07-31",
-      "relationIds": [],
-      "groupedEventIds": {
-        "fundingAcquisition": [],
-        "deployments": [
-          "EV-d7cba8d4a454aa93"
-        ],
-        "partnerships": [],
-        "productsServices": [],
-        "hardware": [],
-        "organizationPeople": [],
-        "other": []
-      },
-      "timeline": [
-        {
-          "id": "EV-d7cba8d4a454aa93",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-29",
-          "eventType": "capital_investment",
-          "eventTypeLabel": "资本性投资",
-          "eventGroup": "融资与并购",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "AI 工厂供应链：WTAI 2026年7月再平衡的真正含义",
-          "displayTags": [],
-          "entityIds": [
-            "EN-77d06a98251d0272",
-            "EN-6aa383344bedc00c"
           ]
         }
       ],
@@ -277658,23 +277535,53 @@
       "datasetScopes": [
         "canonical"
       ],
-      "eventIds": [],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
       "viewpointIds": [],
-      "classificationRefs": [],
+      "classificationRefs": [
+        "TX-technology-code_generation"
+      ],
       "relatedEntityIds": [],
-      "firstSeen": "",
-      "lastSeen": "",
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-30",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
         "partnerships": [],
-        "productsServices": [],
+        "productsServices": [
+          "EV-0d5a32aca724d30e"
+        ],
         "hardware": [],
         "organizationPeople": [],
         "other": []
       },
-      "timeline": [],
+      "timeline": [
+        {
+          "id": "EV-0d5a32aca724d30e",
+          "dataDate": "2026-07-30",
+          "date": "2026-07-30",
+          "eventType": "model_release",
+          "eventTypeLabel": "模型发布",
+          "eventGroup": "模型、产品与服务",
+          "status": "completed",
+          "statusLabel": "已完成",
+          "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
+          "displayTags": [
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "code_generation",
+              "name": "代码生成"
+            }
+          ],
+          "entityIds": [
+            "EN-436364a46513cdf3",
+            "EN-e5904fa438fcd5bf"
+          ]
+        }
+      ],
       "viewpoints": []
     },
     {
@@ -278430,23 +278337,53 @@
       "datasetScopes": [
         "canonical"
       ],
-      "eventIds": [],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
       "viewpointIds": [],
-      "classificationRefs": [],
+      "classificationRefs": [
+        "TX-technology-code_generation"
+      ],
       "relatedEntityIds": [],
-      "firstSeen": "",
-      "lastSeen": "",
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-30",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
         "partnerships": [],
-        "productsServices": [],
+        "productsServices": [
+          "EV-0d5a32aca724d30e"
+        ],
         "hardware": [],
         "organizationPeople": [],
         "other": []
       },
-      "timeline": [],
+      "timeline": [
+        {
+          "id": "EV-0d5a32aca724d30e",
+          "dataDate": "2026-07-30",
+          "date": "2026-07-30",
+          "eventType": "model_release",
+          "eventTypeLabel": "模型发布",
+          "eventGroup": "模型、产品与服务",
+          "status": "completed",
+          "statusLabel": "已完成",
+          "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
+          "displayTags": [
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "code_generation",
+              "name": "代码生成"
+            }
+          ],
+          "entityIds": [
+            "EN-436364a46513cdf3",
+            "EN-e5904fa438fcd5bf"
+          ]
+        }
+      ],
       "viewpoints": []
     },
     {
@@ -280880,23 +280817,43 @@
       "datasetScopes": [
         "canonical"
       ],
-      "eventIds": [],
+      "eventIds": [
+        "EV-023fd03c675d940d"
+      ],
       "viewpointIds": [],
       "classificationRefs": [],
       "relatedEntityIds": [],
-      "firstSeen": "",
-      "lastSeen": "",
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-31",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
         "partnerships": [],
-        "productsServices": [],
+        "productsServices": [
+          "EV-023fd03c675d940d"
+        ],
         "hardware": [],
         "organizationPeople": [],
         "other": []
       },
-      "timeline": [],
+      "timeline": [
+        {
+          "id": "EV-023fd03c675d940d",
+          "dataDate": "2026-07-31",
+          "date": "2026-07-30",
+          "eventType": "product_release",
+          "eventTypeLabel": "产品发布",
+          "eventGroup": "模型、产品与服务",
+          "status": "announced",
+          "statusLabel": "已公布",
+          "title": "llm-chat-completions-server 0.1a0",
+          "displayTags": [],
+          "entityIds": [
+            "EN-b161cee9ae7eba20"
+          ]
+        }
+      ],
       "viewpoints": []
     },
     {
@@ -282565,10 +282522,14 @@
         "TX-technology-distillation",
         "TX-technology-image_generation"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-24",
-      "relationIds": [],
+      "relationIds": [
+        "REL2-dceee7ada64357c1"
+      ],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
@@ -282743,10 +282704,14 @@
         "TX-technology-distillation",
         "TX-technology-image_generation"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-24",
-      "relationIds": [],
+      "relationIds": [
+        "REL2-62f415d53b9e1307"
+      ],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
@@ -283030,7 +282995,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-26",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [],
@@ -283046,7 +283011,7 @@
       "timeline": [
         {
           "id": "EV-16cfe946bbf69aa3",
-          "dataDate": "2026-07-31",
+          "dataDate": "2026-07-26",
           "date": "2026-07-22",
           "eventType": "partnership",
           "eventTypeLabel": "合作",
@@ -285940,7 +285905,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -286080,24 +286047,34 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-30",
       "relationIds": [
+        "REL2-62f415d53b9e1307",
+        "REL2-dceee7ada64357c1",
+        "REL2-899fe78a63eda569",
         "REL2-4410cf5eef104c6e",
+        "REL2-a2d037d3ca0eff3e",
         "REL2-8dc67631418aa4d4",
         "REL2-9fd72463ce6686f3",
         "REL2-c2250eeea2122198",
         "REL2-fdbf7b1aedf4d9ef",
         "REL2-9f6eb62bdd6f6a31",
         "REL2-10ba411040225060",
-        "REL2-e9ef6e697ef06f93"
+        "REL2-e9ef6e697ef06f93",
+        "REL2-9795f8e6814470a6"
       ],
       "groupedEventIds": {
         "fundingAcquisition": [
@@ -286130,9 +286107,9 @@
           "EV-8abf5adc3e72fbb8"
         ],
         "partnerships": [
-          "EV-16cfe946bbf69aa3",
           "EV-6272444f30281858",
           "EV-f55d16df5b5fecb2",
+          "EV-16cfe946bbf69aa3",
           "EV-eec1e6857f0e0b2b",
           "EV-6acfb15c012ddf6d",
           "EV-bd508dbe4205774f",
@@ -286220,35 +286197,6 @@
         ]
       },
       "timeline": [
-        {
-          "id": "EV-16cfe946bbf69aa3",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-22",
-          "eventType": "partnership",
-          "eventTypeLabel": "合作",
-          "eventGroup": "商业合作",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "宏利扩大与微软合作，加速企业AI治理与创新",
-          "displayTags": [
-            {
-              "dimensionId": "technology",
-              "dimensionName": "技术",
-              "id": "agentic_execution",
-              "name": "智能体"
-            },
-            {
-              "dimensionId": "industry",
-              "id": "financial_services",
-              "dimensionName": "行业",
-              "name": "金融服务"
-            }
-          ],
-          "entityIds": [
-            "EN-b3f5e31ec86a08a9",
-            "EN-9fbf261b62c1d7c0"
-          ]
-        },
         {
           "id": "EV-4c949b6aac6d26e7",
           "dataDate": "2026-07-30",
@@ -286713,6 +286661,35 @@
             "EN-3711098f35d71cb9",
             "EN-9fbf261b62c1d7c0",
             "EN-8d4321d936320802"
+          ]
+        },
+        {
+          "id": "EV-16cfe946bbf69aa3",
+          "dataDate": "2026-07-26",
+          "date": "2026-07-22",
+          "eventType": "partnership",
+          "eventTypeLabel": "合作",
+          "eventGroup": "商业合作",
+          "status": "announced",
+          "statusLabel": "已公布",
+          "title": "宏利扩大与微软合作，加速企业AI治理与创新",
+          "displayTags": [
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "agentic_execution",
+              "name": "智能体"
+            },
+            {
+              "dimensionId": "industry",
+              "id": "financial_services",
+              "dimensionName": "行业",
+              "name": "金融服务"
+            }
+          ],
+          "entityIds": [
+            "EN-b3f5e31ec86a08a9",
+            "EN-9fbf261b62c1d7c0"
           ]
         },
         {
@@ -290683,7 +290660,6 @@
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
-        "EV-fafc300c25e9b0a7",
         "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
         "EV-56626f2604aa1e30",
@@ -290715,7 +290691,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-29",
       "relationIds": [
         "REL2-043910685537ede7",
         "REL2-6099c03394d4a343",
@@ -290736,7 +290712,6 @@
           "EV-fd21441fb6e143c3"
         ],
         "productsServices": [
-          "EV-fafc300c25e9b0a7",
           "EV-653cbce2ccc79f8b",
           "EV-deaa5d80d1166e9f",
           "EV-56626f2604aa1e30",
@@ -290756,41 +290731,6 @@
         ]
       },
       "timeline": [
-        {
-          "id": "EV-fafc300c25e9b0a7",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-31",
-          "eventType": "product_release",
-          "eventTypeLabel": "产品发布",
-          "eventGroup": "模型、产品与服务",
-          "status": "planned",
-          "statusLabel": "计划中",
-          "title": "国家发改委：将加快《人工智能法》立法进程",
-          "displayTags": [
-            {
-              "dimensionId": "product_form",
-              "id": "model",
-              "dimensionName": "产品形态",
-              "name": "模型"
-            },
-            {
-              "dimensionId": "technology",
-              "dimensionName": "技术",
-              "id": "agentic_execution",
-              "name": "智能体"
-            },
-            {
-              "dimensionId": "technology",
-              "dimensionName": "技术",
-              "id": "multimodal",
-              "name": "多模态"
-            }
-          ],
-          "entityIds": [
-            "EN-6f7ac1823da81d2e",
-            "EN-b5251b35f15bedc4"
-          ]
-        },
         {
           "id": "EV-653cbce2ccc79f8b",
           "dataDate": "2026-07-29",
@@ -293065,7 +293005,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-31",
+      "lastSeen": "2026-07-23",
       "relationIds": [],
       "groupedEventIds": {
         "fundingAcquisition": [
@@ -293081,14 +293021,14 @@
       "timeline": [
         {
           "id": "EV-901155ab700a7e8e",
-          "dataDate": "2026-07-31",
+          "dataDate": "2026-07-23",
           "date": "2026-07-20",
           "eventType": "funding",
           "eventTypeLabel": "融资",
           "eventGroup": "融资与并购",
           "status": "completed",
           "statusLabel": "已完成",
-          "title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
+          "title": "Natural 完成 3000 万美元 A 轮融资，为 AI 智能体构建支付基础设施",
           "displayTags": [
             {
               "dimensionId": "technology",
@@ -301219,56 +301159,6 @@
       "viewpoints": []
     },
     {
-      "id": "EN-2348f99874421257",
-      "name": "Open",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-0d5a32aca724d30e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-31",
-      "relationIds": [],
-      "groupedEventIds": {
-        "fundingAcquisition": [],
-        "deployments": [],
-        "partnerships": [],
-        "productsServices": [
-          "EV-0d5a32aca724d30e"
-        ],
-        "hardware": [],
-        "organizationPeople": [],
-        "other": []
-      },
-      "timeline": [
-        {
-          "id": "EV-0d5a32aca724d30e",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-22",
-          "eventType": "model_release",
-          "eventTypeLabel": "模型发布",
-          "eventGroup": "模型、产品与服务",
-          "status": "completed",
-          "statusLabel": "已完成",
-          "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
-          "displayTags": [],
-          "entityIds": [
-            "EN-2348f99874421257",
-            "EN-cbc62794911ff31b"
-          ]
-        }
-      ],
-      "viewpoints": []
-    },
-    {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
       "entityType": "organization_candidate",
@@ -301279,6 +301169,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -301353,7 +301244,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -301491,7 +301382,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -301640,7 +301530,7 @@
       ],
       "groupedEventIds": {
         "fundingAcquisition": [
-          "EV-c195952efffa9a60",
+          "EV-81a37a2365624b42",
           "EV-56b36a56d729c20d",
           "EV-741728825db1f14e",
           "EV-3fb827f44ea109de",
@@ -301732,7 +301622,7 @@
           "EV-66df35d14361a6cb"
         ],
         "productsServices": [
-          "EV-1fe7328d2c69693f",
+          "EV-ebd76d18d3f0ee7b",
           "EV-c7a6bf51c3723b39",
           "EV-8803f626b5df5ab0",
           "EV-6f433ccff3dce657",
@@ -301915,6 +301805,23 @@
       },
       "timeline": [
         {
+          "id": "EV-81a37a2365624b42",
+          "dataDate": "2026-07-31",
+          "date": "2026-07-30",
+          "eventType": "acquisition",
+          "eventTypeLabel": "并购",
+          "eventGroup": "融资与并购",
+          "status": "rumored",
+          "statusLabel": "rumored",
+          "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+          "displayTags": [],
+          "entityIds": [
+            "EN-c737e8142a927072",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ]
+        },
+        {
           "id": "EV-492029b381c06283",
           "dataDate": "2026-07-31",
           "date": "2026-07-30",
@@ -301937,7 +301844,7 @@
           ]
         },
         {
-          "id": "EV-1fe7328d2c69693f",
+          "id": "EV-ebd76d18d3f0ee7b",
           "dataDate": "2026-07-31",
           "date": "2026-07-30",
           "eventType": "pricing_change",
@@ -301945,7 +301852,7 @@
           "eventGroup": "模型、产品与服务",
           "status": "announced",
           "statusLabel": "已公布",
-          "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
+          "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
           "displayTags": [
             {
               "dimensionId": "product_form",
@@ -301957,7 +301864,8 @@
           "entityIds": [
             "EN-2ee49ef51a776e2c",
             "EN-7d3194f79e645c42",
-            "EN-52fc33ae4d101a5d"
+            "EN-52fc33ae4d101a5d",
+            "EN-bbdefa2950f49882"
           ]
         },
         {
@@ -301974,22 +301882,6 @@
           "entityIds": [
             "EN-7d3194f79e645c42",
             "EN-f65bb77682b83476"
-          ]
-        },
-        {
-          "id": "EV-c195952efffa9a60",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-31",
-          "eventType": "financial_performance",
-          "eventTypeLabel": "财务表现",
-          "eventGroup": "融资与并购",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "情境感知的缺失",
-          "displayTags": [],
-          "entityIds": [
-            "EN-11740cc8809aec7a",
-            "EN-7d3194f79e645c42"
           ]
         },
         {
@@ -308094,7 +307986,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-1fe7328d2c69693f"
+        "EV-ebd76d18d3f0ee7b"
       ],
       "viewpointIds": [],
       "classificationRefs": [],
@@ -308107,7 +307999,7 @@
         "deployments": [],
         "partnerships": [],
         "productsServices": [
-          "EV-1fe7328d2c69693f"
+          "EV-ebd76d18d3f0ee7b"
         ],
         "hardware": [],
         "organizationPeople": [],
@@ -308115,7 +308007,7 @@
       },
       "timeline": [
         {
-          "id": "EV-1fe7328d2c69693f",
+          "id": "EV-ebd76d18d3f0ee7b",
           "dataDate": "2026-07-31",
           "date": "2026-07-30",
           "eventType": "pricing_change",
@@ -308123,7 +308015,7 @@
           "eventGroup": "模型、产品与服务",
           "status": "announced",
           "statusLabel": "已公布",
-          "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
+          "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
           "displayTags": [
             {
               "dimensionId": "product_form",
@@ -308135,7 +308027,8 @@
           "entityIds": [
             "EN-2ee49ef51a776e2c",
             "EN-7d3194f79e645c42",
-            "EN-52fc33ae4d101a5d"
+            "EN-52fc33ae4d101a5d",
+            "EN-bbdefa2950f49882"
           ]
         }
       ],
@@ -323936,75 +323829,6 @@
       "viewpoints": []
     },
     {
-      "id": "EN-11740cc8809aec7a",
-      "name": "Situational Awareness",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c195952efffa9a60",
-        "EV-fc13165fbd0ef3de"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-30",
-      "lastSeen": "2026-07-31",
-      "relationIds": [],
-      "groupedEventIds": {
-        "fundingAcquisition": [
-          "EV-c195952efffa9a60"
-        ],
-        "deployments": [
-          "EV-fc13165fbd0ef3de"
-        ],
-        "partnerships": [],
-        "productsServices": [],
-        "hardware": [],
-        "organizationPeople": [],
-        "other": []
-      },
-      "timeline": [
-        {
-          "id": "EV-c195952efffa9a60",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-31",
-          "eventType": "financial_performance",
-          "eventTypeLabel": "财务表现",
-          "eventGroup": "融资与并购",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "情境感知的缺失",
-          "displayTags": [],
-          "entityIds": [
-            "EN-11740cc8809aec7a",
-            "EN-7d3194f79e645c42"
-          ]
-        },
-        {
-          "id": "EV-fc13165fbd0ef3de",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-30",
-          "eventType": "capital_investment",
-          "eventTypeLabel": "资本性投资",
-          "eventGroup": "融资与并购",
-          "status": "rumored",
-          "statusLabel": "rumored",
-          "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
-          "displayTags": [],
-          "entityIds": [
-            "EN-11740cc8809aec7a",
-            "EN-c70eca6b0f88f44d"
-          ]
-        }
-      ],
-      "viewpoints": []
-    },
-    {
       "id": "EN-51188f73e8dfbfee",
       "name": "SK 海力士宣布多年期技术",
       "entityType": "organization_candidate",
@@ -335218,10 +335042,14 @@
       "classificationRefs": [
         "TX-technology-agentic_execution"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17",
-      "relationIds": [],
+      "relationIds": [
+        "REL2-a2d037d3ca0eff3e"
+      ],
       "groupedEventIds": {
         "fundingAcquisition": [],
         "deployments": [],
@@ -336378,56 +336206,6 @@
             "EN-1f0dc5648bb54211",
             "EN-8f3b1956b11cf0d7",
             "EN-ed6457554e021732"
-          ]
-        }
-      ],
-      "viewpoints": []
-    },
-    {
-      "id": "EN-77d06a98251d0272",
-      "name": "WisdomTree Artificial Intelligence",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d7cba8d4a454aa93"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-29",
-      "lastSeen": "2026-07-31",
-      "relationIds": [],
-      "groupedEventIds": {
-        "fundingAcquisition": [],
-        "deployments": [
-          "EV-d7cba8d4a454aa93"
-        ],
-        "partnerships": [],
-        "productsServices": [],
-        "hardware": [],
-        "organizationPeople": [],
-        "other": []
-      },
-      "timeline": [
-        {
-          "id": "EV-d7cba8d4a454aa93",
-          "dataDate": "2026-07-31",
-          "date": "2026-07-29",
-          "eventType": "capital_investment",
-          "eventTypeLabel": "资本性投资",
-          "eventGroup": "融资与并购",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "AI 工厂供应链：WTAI 2026年7月再平衡的真正含义",
-          "displayTags": [],
-          "entityIds": [
-            "EN-77d06a98251d0272",
-            "EN-6aa383344bedc00c"
           ]
         }
       ],
@@ -340770,6 +340548,26 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-62f415d53b9e1307",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-688f8db7018da7d4",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-7c22f66cabb9a37c",
+        "CL-d5a4e0b10c930ed2"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-82d95dce19bccd53",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-febedfcafee9d610",
@@ -340821,6 +340619,26 @@
       ],
       "source_refs": [
         "SA-430830a640f17413"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-dceee7ada64357c1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-827b607311e6593e",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-9fea9adc5b3b6d08",
+        "CL-7c22f66cabb9a37c"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
       ],
       "data_date": "2026-07-24",
       "status": "verified"
@@ -340916,6 +340734,26 @@
       ],
       "source_refs": [
         "SA-3b29004038d52b63"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-899fe78a63eda569",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-068e7ccb7d4b07a6",
+      "object_type": "entity",
+      "event_id": "EV-e1e30a2a4a5232c6",
+      "claim_refs": [
+        "CL-34fddab81951af35",
+        "CL-8b238746e8f2c8ba",
+        "CL-3c62d52890307500"
+      ],
+      "source_refs": [
+        "SA-c75b1e326457605e"
       ],
       "data_date": "2026-07-23",
       "status": "verified"
@@ -342100,6 +341938,26 @@
         "SA-3dd83eb46f3e5def",
         "SA-feb8f2b64aa7f56f",
         "SA-cb9f35aa903e184f"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-a2d037d3ca0eff3e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-597d8c4afa5fe3d6",
+      "object_type": "entity",
+      "event_id": "EV-7c899d5decafc42f",
+      "claim_refs": [
+        "CL-4154aa4e461163c9",
+        "CL-a3cd2bba9a1d055b",
+        "CL-837c7d367f0c26ce"
+      ],
+      "source_refs": [
+        "SA-c532d10bfc903c0c"
       ],
       "data_date": "2026-07-17",
       "status": "verified"
@@ -346979,6 +346837,26 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-9795f8e6814470a6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-10fce287b4b1464c",
+      "object_type": "entity",
+      "event_id": "EV-a4f052325d0ef230",
+      "claim_refs": [
+        "CL-4c50bbc497deaee1",
+        "CL-25b9389df0e0f06f",
+        "CL-eece65ce191fb7c6"
+      ],
+      "source_refs": [
+        "SA-af9b5cefb039de38"
+      ],
+      "data_date": "2026-05-23",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-291fc8a11435360f",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-7d3194f79e645c42",
@@ -347056,7 +346934,7 @@
   "entityHistoryManifest": {
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.817Z",
+    "generatedAt": "2026-07-31T09:31:27.097Z",
     "coverage": {
       "startDate": "2017-09-07",
       "endDate": "2027-09-30",
@@ -347068,12 +346946,12 @@
       }
     },
     "counts": {
-      "entities": 1500,
-      "organizations": 998,
+      "entities": 1497,
+      "organizations": 995,
       "products": 441,
       "people": 61,
       "taxonomyNodes": 43,
-      "relationships": 345
+      "relationships": 350
     },
     "review": {
       "reviewed": 943,
@@ -347084,50 +346962,6 @@
     }
   },
   "fde": [
-    {
-      "id": "FDE-8506e8248e149161",
-      "eventId": "EV-16cfe946bbf69aa3",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-22",
-      "title": "宏利扩大与微软合作，加速企业AI治理与创新",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Manulife",
-      "vendor": "Microsoft",
-      "industry": "未披露",
-      "useCase": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continued transformation and responsible scaling of AI-enabled capabilities across its global operations."
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
-      "entityIds": [
-        "EN-b3f5e31ec86a08a9",
-        "EN-9fbf261b62c1d7c0"
-      ]
-    },
     {
       "id": "FDE-810578301bae6f25",
       "eventId": "EV-c8f3db31cb266b64",
@@ -347925,6 +347759,50 @@
       "entityIds": [
         "EN-5e9e4638fa2ec9a4",
         "EN-3ccbd9105a45d8fc"
+      ]
+    },
+    {
+      "id": "FDE-8506e8248e149161",
+      "eventId": "EV-16cfe946bbf69aa3",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-22",
+      "title": "宏利扩大与微软合作，加速企业AI治理与创新",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Manulife",
+      "vendor": "Microsoft",
+      "industry": "未披露",
+      "useCase": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continued transformation and responsible scaling of AI-enabled capabilities across its global operations."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
+      "entityIds": [
+        "EN-b3f5e31ec86a08a9",
+        "EN-9fbf261b62c1d7c0"
       ]
     },
     {
@@ -351310,61 +351188,6 @@
   ],
   "fdeDossiers": [
     {
-      "id": "FDED-8a793958c2c81d0d",
-      "implementationKey": "8a793958c2c81d0d",
-      "eventId": "EV-16cfe946bbf69aa3",
-      "eventIds": [
-        "EV-16cfe946bbf69aa3"
-      ],
-      "dataDate": "2026-07-31",
-      "date": "2026-07-22",
-      "title": "Manulife × Microsoft：with Microsoft to Accelerate Enterprise AI Governance and Innovation",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Manulife",
-      "vendor": "Microsoft",
-      "industry": "未披露",
-      "useCase": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
-      "workflow": "未披露",
-      "systems": [],
-      "outcomes": [],
-      "observationCount": 1,
-      "completeness": 0.5,
-      "completenessPercent": 50,
-      "missingFields": [
-        "industry",
-        "workflow",
-        "systems_integrated",
-        "reported_outcomes"
-      ],
-      "timeline": [
-        {
-          "observationId": "FDEO-1fa4aa8df0a750ef",
-          "type": "implementation_update",
-          "stage": "announced",
-          "date": "2026-07-22",
-          "dataDate": "2026-07-31",
-          "eventId": "EV-16cfe946bbf69aa3",
-          "eventTitle": "宏利扩大与微软合作，加速企业AI治理与创新",
-          "claimCount": 4,
-          "sourceCount": 1
-        }
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
-      "entityIds": [
-        "EN-b3f5e31ec86a08a9",
-        "EN-9fbf261b62c1d7c0"
-      ]
-    },
-    {
       "id": "FDED-dba1bca1d74a38ca",
       "implementationKey": "dba1bca1d74a38ca",
       "eventId": "EV-c8f3db31cb266b64",
@@ -353868,17 +353691,15 @@
       "snapshotId": "HWS-825c2169bb6387ae",
       "eventId": "EV-7a0f201debe99f2b",
       "eventIds": [
-        "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590"
+        "EV-7a0f201debe99f2b"
       ],
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
-      "title": "DeepMind / Gemini Robotics 2 / Gemini Robotics ER 2",
+      "title": "DeepMind / Gemini Robotics 2",
       "subject": "Google DeepMind",
       "productNames": [
         "DeepMind",
-        "Gemini Robotics 2",
-        "Gemini Robotics ER 2"
+        "Gemini Robotics 2"
       ],
       "hardwareType": "robot",
       "factTypes": [
@@ -353888,10 +353709,10 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-bb706705b10bf383"
+          "fact_ref": "HWF-85aa0e443edb43c2"
         }
       },
-      "factCount": 2,
+      "factCount": 1,
       "snapshotCount": 1,
       "changes": [],
       "capacityFacts": [],
@@ -353924,34 +353745,6 @@
             "SA-6436d40ab638ade0"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-bb706705b10bf383",
-          "fact_type": "product",
-          "observed_at": "2026-07-30T23:12:07.000Z",
-          "subject_entity_id": "EN-2b6e51bec93e86c1",
-          "subject_name": "Google DeepMind",
-          "product_entity_ids": [
-            "EN-4d09c69c19f5f67b",
-            "EN-364df82f85761d58"
-          ],
-          "product_names": [
-            "DeepMind",
-            "Gemini Robotics ER 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
-          "event_refs": [
-            "EV-8887fb45a0398590"
-          ],
-          "claim_ref": "CL-01047086f6bfac89",
-          "source_refs": [
-            "SA-c04e7cbf1504a155"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -353961,36 +353754,32 @@
           "dimensionName": "技术",
           "id": "on_device",
           "name": "端侧"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
       "entityIds": [
         "EN-2b6e51bec93e86c1",
         "EN-4d09c69c19f5f67b",
-        "EN-e1086f449d58de87",
-        "EN-364df82f85761d58"
+        "EN-e1086f449d58de87"
       ]
     },
     {
-      "id": "HWC-7c9238bfeb82f08f",
-      "snapshotKey": "7c9238bfeb82f08f",
-      "snapshotId": "HWS-1f77657dbe10c510",
-      "eventId": "EV-0d5a32aca724d30e",
+      "id": "HWC-c7d225e2691526e4",
+      "snapshotKey": "c7d225e2691526e4",
+      "snapshotId": "HWS-87b252b9f8c77325",
+      "eventId": "EV-60110525440fac47",
       "eventIds": [
-        "EV-0d5a32aca724d30e"
+        "EV-60110525440fac47"
       ],
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
-      "title": "Open",
-      "subject": "Open",
-      "productNames": [],
-      "hardwareType": "networking",
+      "title": "Gemini Robotics ER 2 / DeepMind",
+      "subject": "Google",
+      "productNames": [
+        "Gemini Robotics ER 2",
+        "DeepMind"
+      ],
+      "hardwareType": "robot",
       "factTypes": [
         "product"
       ],
@@ -353998,7 +353787,7 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-d46baffb1c5cd33a"
+          "fact_ref": "HWF-bb706705b10bf383"
         }
       },
       "factCount": 1,
@@ -354009,33 +353798,121 @@
       "specificationFacts": [
         {
           "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-d46baffb1c5cd33a",
+          "hardware_fact_id": "HWF-bb706705b10bf383",
           "fact_type": "product",
-          "observed_at": "2026-07-22T00:00:00.000Z",
-          "subject_entity_id": "EN-2348f99874421257",
-          "subject_name": "Open",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "networking",
+          "observed_at": "2026-07-30T00:00:00.000Z",
+          "subject_entity_id": "EN-bbdefa2950f49882",
+          "subject_name": "Google",
+          "product_entity_ids": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "product_names": [
+            "Gemini Robotics ER 2",
+            "DeepMind"
+          ],
+          "component_type": "robot",
           "metric_value": "",
           "unit": "",
-          "source_quote": "00:00:06 Nathan Lambert: Okay, welcome back to Interconnects. We’re doing our quarterly open model roundup, which is mostly us just making fun of or explaining, not making fun, why so many distillation takes are bad and understanding the state of where things stand. I think last Thursday was when Kimi K3 was released. I think we will see much much more in the near future. It seems pretty inevitable. Like over the weekend, Xi gave his speech where he directly committed to openness and open source as a strategy. It wasn’t a detailed layout state of affairs.",
+          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
           "event_refs": [
-            "EV-0d5a32aca724d30e"
+            "EV-60110525440fac47"
           ],
-          "claim_ref": "CL-cfed864aad877156",
+          "claim_ref": "CL-01047086f6bfac89",
           "source_refs": [
-            "SA-86a0bb3fbd4edf9c"
+            "SA-048a2e73225d3122",
+            "SA-c04e7cbf1504a155"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b"
+      ]
+    },
+    {
+      "id": "HWC-e06eaee2652e2537",
+      "snapshotKey": "e06eaee2652e2537",
+      "snapshotId": "HWS-9c27c0bd49616a1a",
+      "eventId": "EV-023fd03c675d940d",
+      "eventIds": [
+        "EV-023fd03c675d940d"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "llm-chat-completions-server",
+      "subject": "llm-chat-completions-server",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b9b6bddaf5ddf1dc"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-b9b6bddaf5ddf1dc",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T15:43:16.000Z",
+          "subject_entity_id": "EN-b161cee9ae7eba20",
+          "subject_name": "llm-chat-completions-server",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Release: llm-chat-completions-server 0.1a0",
+          "event_refs": [
+            "EV-023fd03c675d940d"
+          ],
+          "claim_ref": "CL-dbc7e23dba27fc95",
+          "source_refs": [
+            "SA-289ebd91873e4362"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
       "entityIds": [
-        "EN-2348f99874421257",
-        "EN-cbc62794911ff31b"
+        "EN-b161cee9ae7eba20"
       ]
     },
     {
@@ -354431,11 +354308,18 @@
       ],
       "specificationFacts": [],
       "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
       "entityIds": [
-        "EN-2348f99874421257",
-        "EN-cbc62794911ff31b"
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf"
       ]
     },
     {
@@ -355723,28 +355607,27 @@
       ],
       "raw_documents": 108,
       "original_sources": 94,
-      "valid_claims": 28,
-      "observations": 1,
-      "canonical_events": 12,
+      "valid_claims": 19,
+      "observations": 0,
+      "canonical_events": 8,
       "blocker_counts": {
-        "no_source_bounded_event": 29,
+        "no_source_bounded_event": 14,
         "no_source_bounded_claim": 1,
-        "non_event_or_index_title": 40,
+        "source_outside_daily_window": 54,
+        "non_event_or_index_title": 11,
         "research_or_report_container_not_event_source": 1,
-        "model_assist_source_outside_daily_window": 4,
-        "opinion_without_source_bounded_event": 1,
         "directory_page_not_event_source": 1,
+        "source_published_after_data_date": 1,
         "repository_page_requires_release_source": 6,
-        "multi_event_roundup_not_single_event_source": 1,
-        "event_not_ai_relevant": 2,
+        "event_not_ai_relevant": 1,
         "raw_source_quality_block": 9,
         "raw_document_not_auditable": 1
       },
       "rates": {
         "original_source_rate": 0.8703703703703703,
-        "valid_claim_rate": 0.25925925925925924,
-        "observation_rate": 0.03571428571428571,
-        "event_conversion_rate": 0.42857142857142855
+        "valid_claim_rate": 0.17592592592592593,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.42105263157894735
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/monitoring-funnel.json"
     },
@@ -355762,19 +355645,20 @@
       ],
       "raw_documents": 26,
       "original_sources": 13,
-      "valid_claims": 9,
-      "observations": 9,
-      "canonical_events": 3,
+      "valid_claims": 6,
+      "observations": 8,
+      "canonical_events": 2,
       "blocker_counts": {
-        "no_source_bounded_event": 6,
+        "source_outside_daily_window": 7,
         "research_or_report_container_not_event_source": 1,
-        "non_event_or_index_title": 5,
+        "non_event_or_index_title": 3,
+        "no_source_bounded_event": 2,
         "raw_source_quality_block": 10,
         "raw_document_not_auditable": 1
       },
       "rates": {
         "original_source_rate": 0.5,
-        "valid_claim_rate": 0.34615384615384615,
+        "valid_claim_rate": 0.23076923076923078,
         "observation_rate": 1,
         "event_conversion_rate": 0.3333333333333333
       },

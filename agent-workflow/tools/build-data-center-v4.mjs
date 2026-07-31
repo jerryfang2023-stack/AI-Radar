@@ -92,9 +92,11 @@ const LEAD_EVENT_RULES = [
 ];
 
 const HIGH_SPECIFICITY_EVENT_RULES = [
+  ["model_release", /\bGemini\s+Robotics\s+ER\s*2\b/iu],
   ["research_result", /\b(?:benchmark|strict grading|failures?)\b|(?:基准测试|评测研究)/iu],
   ["standard_specification", /(?:技术)?规范.{0,24}(?:发布|更新|生效)|(?:发布|更新).{0,30}(?:技术规范|开放规范|行业标准|技术标准|协议)/iu],
-  ["policy_regulation", /(?:发布|制定).{0,40}(?:合规指引|监管指引)|(?:AI|人工智能|生成合成内容).{0,40}(?:须|必须|应当).{0,30}(?:标识|披露)/iu],
+  ["policy_regulation", /(?:发布|制定).{0,40}(?:合规指引|监管指引)|(?:AI|人工智能|生成合成内容).{0,40}(?:须|必须|应当).{0,30}(?:标识|披露)|(?:AI|人工智能)法.{0,30}(?:立法|进程)|(?:立法|加快).{0,30}(?:AI|人工智能)法/iu],
+  ["security_incident", /\b(?:cybersecurity|security)\s+incidents?\b|网络安全事件/iu],
   ["financial_performance", /(?:营收|收入|利润|销售额|年度经常性收入).{0,50}(?:增长|达到|超(?:过|越)?|突破|同比|环比|报告|披露|减值)|\b(?:revenue|arr|annual recurring revenue|profit|earnings|sales)\b.{0,50}\b(?:grew|growth|reaches?|reached|increases?|increased|exceeds?|surpasses?)\b/iu]
 ];
 
@@ -113,7 +115,8 @@ const BOILERPLATE_TEXT = /^(?:most popular|loading the next article|error loadin
 const INFORMATIONAL_TITLE = /^(?:how\b|what\b|why\b|when\b|where\b|guide\b|cost\b|the cost\b)|\b(?:essential|complete|ultimate)\s+(?:guide|handbook)\b|\bcost to implement\b/iu;
 const TRUNCATED_OR_NON_EVENT_TITLE = /(?:…|\.\.\.)|^(?:show hn:|ask hn:|launch hn:|open[- ]source\b|github\b|youtube\b|ep\s+\d+\b|hype\b|you need\b|frontier ai labs\b|if you\b)|\b(?:roadmap|playbook|handbook)\b.*\b(?:engineer|engineering|deployment)\b/iu;
 const COMMUNITY_DISCOVERY_URL = /^https?:\/\/(?:www\.)?(?:facebook\.com\/groups\/|reddit\.com\/|news\.ycombinator\.com\/|linkedin\.com\/|youtube\.com\/|youtu\.be\/|podcasters\.spotify\.com\/|x\.com\/)/iu;
-const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|^\d{4}年\d{1,2}月\d+\s*家.{0,30}(?:融资|初创)|^(?:情境感知的缺失|the missing context awareness)$|\b(?:role explained|job opening|careers page|marketplace listing|case studies index|TLDR)\b|(?:真正含义|what .{0,40} means)$/iu;
+const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|^\d{4}年\d{1,2}月\d+\s*家.{0,30}(?:融资|初创)|^(?:情境感知的缺失|the missing context awareness)$|^(?:open\s+models?|AI\s+(?:industry|market))\s+recap\b|\b(?:role explained|job opening|careers page|marketplace listing|case studies index|TLDR)\b|(?:真正含义|what .{0,80}(?:means|is really saying))(?:\s*[|｜].*)?$/iu;
+const REVIEWED_RETAINED_SOURCE = /^https?:\/\/(?:www\.)?aifundingtracker\.com\/top-50-ai-startups\/?$/iu;
 const QUESTION_HEADLINE = /^(?:(?:can|could|will|would|is|are|do|does|did|should|has|have)\b|.{0,40}(?:能否|是否|会不会|可否)).*[?？]$/iu;
 const GENERIC_INDEX_TITLE = /^(?:newsroom|enterprise ai news)(?:\s*(?:[\\|｜:—-])\s*.*)?$|^funding breaking news and press releases(?:\s+from\s+.*)?$|^(?:新闻室(?:\s*[\\|｜:—-]\s*.*)?|企业\s*AI\s*新闻|商业新闻融资快讯与新闻稿)$/iu;
 const GENERIC_ROUNDUP_TITLE = /^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
@@ -143,11 +146,21 @@ const JUDGMENT_KEYS = new Set([
   "emerging_signal_score", "guanlan_relevance", "interview_priority"
 ]);
 
-function eventSourceEligibility(raw, artifact, title) {
+function eventSourceEligibility(raw, artifact, title, dataDate = "") {
   const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
   const extractionQuality = cleanString(raw.extraction_quality).toLocaleLowerCase();
   if (rawQcDecision === "block" || extractionQuality === "failed") {
     return { accepted: false, reason: "raw_source_quality_block" };
+  }
+  const publishedDate = cleanString(raw.published_at).slice(0, 10);
+  const captureDate = cleanString(dataDate).slice(0, 10);
+  if (/^\d{4}-\d{2}-\d{2}$/u.test(publishedDate) && /^\d{4}-\d{2}-\d{2}$/u.test(captureDate)) {
+    const ageDays = Math.floor(
+      (Date.parse(`${captureDate}T00:00:00.000Z`) - Date.parse(`${publishedDate}T00:00:00.000Z`))
+      / 86_400_000,
+    );
+    if (ageDays < 0) return { accepted: false, reason: "source_published_after_data_date" };
+    if (ageDays > 7) return { accepted: false, reason: "source_outside_daily_window" };
   }
   if (COMMUNITY_DISCOVERY_URL.test(artifact.source_url)) {
     return { accepted: false, reason: "community_source_requires_original_event_source" };
@@ -157,6 +170,7 @@ function eventSourceEligibility(raw, artifact, title) {
   }
   const titleIssue = publicEventSourceTitleIssue(title);
   if (titleIssue) return { accepted: false, reason: titleIssue };
+  const reviewedRetainedSource = REVIEWED_RETAINED_SOURCE.test(cleanString(artifact.source_url));
   const sourceLead = cleanString(raw.clean_text || raw.full_text).slice(0, 1400);
   if (/🤖.{0,120}💰.{0,120}(?:🎵|ElevenLabs)/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
@@ -208,7 +222,7 @@ function eventSourceEligibility(raw, artifact, title) {
   const genericForwardDeployedPage = /\bforward[- ]deployed\b.{0,80}\b(?:engineers?|engineering|role|service)\b/iu.test(title)
     && !/\b(?:launch(?:es|ed)?|introduc(?:es|ed)?|announc(?:es|ed)?|partner(?:s|ed)?)\b.{0,100}\bforward[- ]deployed\b/iu.test(title);
   if (TRUNCATED_OR_NON_EVENT_TITLE.test(title)
-      || GENERIC_NON_EVENT_TITLE.test(title)
+      || (!reviewedRetainedSource && GENERIC_NON_EVENT_TITLE.test(title))
       || /(?:复现.{0,40}界面|界面.{0,40}复现).{0,40}开源项目/iu.test(title)
       || genericForwardDeployedPage) {
     return { accepted: false, reason: "non_event_or_index_title" };
@@ -243,6 +257,33 @@ function modelAssistedEventEligibility(raw, title, eventType, dataDate = "") {
     }
   }
   return { accepted: true, reason: "" };
+}
+
+function normalizeModelEventClaim(claim, evidence) {
+  const quote = cleanString(evidence?.quote);
+  if (/\bSituational Awareness\b/iu.test(quote)
+      && /\b(?:sold|sell|bought|purchased|acquired)\b.{0,180}\bpublic stock portfolio\b|\bpublic stock portfolio\b.{0,180}\b(?:sold|sell|bought|purchased|acquired)\b/iu.test(quote)
+      && /\bCitadel\b/iu.test(quote)) {
+    return {
+      ...claim,
+      event_type: "acquisition",
+      subject: "Citadel",
+      object: "Situational Awareness public stock portfolio",
+    };
+  }
+  return claim;
+}
+
+function preferredModelClaim(claims, evidence) {
+  const normalized = (claims || []).map((claim) =>
+    normalizeModelEventClaim(claim, evidence?.[claim.evidence_index]));
+  return {
+    claims: normalized,
+    primary: normalized.find((claim) => (
+      claim.event_type === "acquisition"
+      && /\b(?:sold|sell|bought|purchased|acquired)\b/iu.test(cleanString(evidence?.[claim.evidence_index]?.quote))
+    )) || normalized.find((claim) => EVENT_RULES.some(([eventType]) => eventType === claim.event_type)),
+  };
 }
 
 const ORGANIZATION_ALIASES = [
@@ -1272,6 +1313,8 @@ function namedReleaseIdentity(value = "") {
     ["roblox-build", /(?:game[- ]creation|游戏创作|游戏创建).{0,40}\bBuild\b|\bBuild\b.{0,40}(?:game[- ]creation|游戏创作|游戏创建)/iu],
     ["kimi-k3", /\bKimi\b.{0,40}\bK3\b|\bK3\b.{0,40}\bKimi\b/iu],
     ["lyria-3-5", /\bLyria\s*3[.]5\b/iu],
+    ["gemini-robotics-er-2", /\bGemini\s+Robotics\s+ER\s*2\b/iu],
+    ["gpt-5-6-pricing", /\bGPT[-‑\s]?5[.]6\b.{0,100}\b(?:price|pricing|reduction|drop|cut|降价|定价)\b|\b(?:price|pricing|reduction|drop|cut|降价|定价)\b.{0,100}\bGPT[-‑\s]?5[.]6\b/iu],
     ["copilot-super-app", /\bCopilot\b.{0,60}(?:super app|超级应用)|(?:super app|超级应用).{0,60}\bCopilot\b/iu],
     ["onepassword-claude", /\b1Password\b.{0,80}\bClaude\b|\bClaude\b.{0,80}\b1Password\b/iu],
     ["japan-noetra-ai-infrastructure", /\bnational AI infrastructure\b|\bNoetra\b|\bRubin\b.{0,80}\brobots?\b|\brobots?\b.{0,80}\bRubin\b|27,500.{0,30}\bRubin\b|国家级\s*(?:人工智能|AI)\s*基础设施/iu]
@@ -1281,7 +1324,8 @@ function namedReleaseIdentity(value = "") {
 
 function canonicalNamedReleaseType(identity, fallback) {
   if (["grok-build", "lm-studio-bionic", "roblox-build", "copilot-super-app", "onepassword-claude"].includes(identity)) return "product_release";
-  if (["inkling", "kimi-k3", "lyria-3-5"].includes(identity)) return "model_release";
+  if (["inkling", "kimi-k3", "lyria-3-5", "gemini-robotics-er-2"].includes(identity)) return "model_release";
+  if (identity === "gpt-5-6-pricing") return "pricing_change";
   if (identity === "japan-noetra-ai-infrastructure") return "hardware_deployment";
   return fallback;
 }
@@ -1305,9 +1349,12 @@ function normalizedFundingMetric(value) {
 function clusterEvents(candidates) {
   const clusters = new Map();
   for (const candidate of candidates) {
-    const releaseIdentity = ["model_release", "product_release", "deployment", "hardware_product", "hardware_supply", "hardware_deployment"].includes(candidate.event_type)
-      ? namedReleaseIdentity(`${candidate.cluster_subject || ""} ${candidate.action} ${candidate.object}`)
-      : "";
+    const identityText = `${candidate.cluster_subject || ""} ${candidate.action} ${candidate.object}`;
+    const releaseIdentity = candidate.event_type === "pricing_change" && /\bGPT[-‑\s]?5[.]6\b/iu.test(identityText)
+      ? "gpt-5-6-pricing"
+      : ["model_release", "product_release", "deployment", "hardware_product", "hardware_supply", "hardware_deployment"].includes(candidate.event_type)
+        ? namedReleaseIdentity(identityText)
+        : "";
     const identity = releaseIdentity || (candidate.event_type === "funding" && candidate.metrics[0]
       ? normalizedFundingMetric(candidate.metrics[0])
       : cleanForCluster(candidate.object || candidate.action));
@@ -1365,7 +1412,7 @@ function forbiddenKeys(value, trail = "", out = []) {
   return out;
 }
 
-export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString()) {
+export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
   const sourceArtifacts = [];
   const rawDocuments = [];
   const claims = [];
@@ -1378,16 +1425,23 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   const rawInputsById = new Map();
   const matchers = taxonomyMatchers(taxonomy);
   const structuredMatchers = facetMatchers(taxonomy);
-  const modelAssist = readJson(path.join(modelAssistRoot, `${date}.json`), { candidates: [] });
+  const modelAssist = options.modelAssist || readJson(path.join(modelAssistRoot, `${date}.json`), { candidates: [] });
   const entityResolutionDecisions = readJson(path.join(modelAssistRoot, "entity-resolution-decisions.json"), { decisions: [] });
   const reviewedEntityAliases = new Map((entityResolutionDecisions.decisions || [])
     .filter((decision) => decision.resolution === "same_entity" && decision.candidate_name && decision.canonical_name)
     .map((decision) => [decision.candidate_name.toLocaleLowerCase(), decision.canonical_name]));
   const acceptedAssistByRaw = new Map();
+  const acceptedAssistBySource = new Map();
   for (const candidate of modelAssist.candidates || []) {
     if (candidate.status !== "accepted") continue;
-    if (!acceptedAssistByRaw.has(candidate.raw_id)) acceptedAssistByRaw.set(candidate.raw_id, []);
-    acceptedAssistByRaw.get(candidate.raw_id).push(candidate);
+    if (candidate.raw_id) {
+      if (!acceptedAssistByRaw.has(candidate.raw_id)) acceptedAssistByRaw.set(candidate.raw_id, []);
+      acceptedAssistByRaw.get(candidate.raw_id).push(candidate);
+    }
+    if (candidate.source_ref) {
+      if (!acceptedAssistBySource.has(candidate.source_ref)) acceptedAssistBySource.set(candidate.source_ref, []);
+      acceptedAssistBySource.get(candidate.source_ref).push(candidate);
+    }
   }
 
   const uniqueEntries = new Map();
@@ -1415,10 +1469,14 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const bodyClean = trimBoilerplate(bodyOriginal);
     const titleOriginal = cleanString(raw.title || raw.title_zh);
     const title = normalizeEventTitle(titleOriginal);
-    const sourceEligibility = eventSourceEligibility(raw, artifact, title);
+    const sourceEligibility = eventSourceEligibility(raw, artifact, title, date);
     const deterministicRule = sourceEligibility.accepted ? findEventRule(title, bodyClean.slice(0, 1200)) : null;
-    const modelClaimCandidate = (acceptedAssistByRaw.get(rawId) || []).find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
-    const proposedModelClaim = modelClaimCandidate?.proposal?.claims?.find((claim) => EVENT_RULES.some(([eventType]) => eventType === claim.event_type));
+    const modelClaimCandidate = [
+      ...(acceptedAssistByRaw.get(rawId) || []),
+      ...(acceptedAssistBySource.get(artifact.source_artifact_id) || []),
+    ].find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
+    const normalizedModelProposal = preferredModelClaim(modelClaimCandidate?.proposal?.claims, modelClaimCandidate?.evidence);
+    const proposedModelClaim = normalizedModelProposal.primary;
     const proposedModelEligibility = proposedModelClaim
       ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date)
       : { accepted: true, reason: "" };
@@ -1475,7 +1533,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       let spans = deterministicRule ? claimCandidates(bodyClean, title, rule, parsed.subject) : [];
       let eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
       if (!eventClaimRows.length && modelClaimCandidate) {
-        eventClaimRows = modelClaimCandidate.proposal.claims.flatMap((claim, index) => {
+        eventClaimRows = normalizedModelProposal.claims.flatMap((claim, index) => {
           if (claim.event_type !== rule.eventType) return [];
           const evidence = modelClaimCandidate.evidence?.[claim.evidence_index];
           if (!evidence || bodyClean.slice(evidence.start, evidence.end) !== evidence.quote) return [];

@@ -10,17 +10,20 @@ function englishConnectorCount(value = "") {
   return (String(value || "").match(/\b(?:the|and|to|for|with|from|into|across|after|before|as|at|by|were|was|are|is|its|this|that|new)\b/giu) || []).length;
 }
 
+const VERSIONED_TECHNICAL_SOURCE_TITLE = /^(?:@[a-z0-9._-]+\/)?[a-z][a-z0-9._-]{2,}\s+v?\d+(?:\.\d+[a-z0-9]*)+(?:[-+][a-z0-9.-]+)?$/iu;
+
 export function buildEventDisplayTitle({ rawDocument = null } = {}) {
   const originalTitle = text(rawDocument?.title_original);
   const translatedTitle = text(rawDocument?.title_zh);
-  const sourceBackedTitle = translatedTitle || (containsChinese(originalTitle) ? originalTitle : "");
+  const sourceBackedTitle = translatedTitle
+    || (containsChinese(originalTitle) || VERSIONED_TECHNICAL_SOURCE_TITLE.test(originalTitle) ? originalTitle : "");
   return isCompletePublicEventTitle(sourceBackedTitle) ? sourceBackedTitle : "";
 }
 
 export function isCompletePublicEventTitle(value = "") {
   const title = text(value);
   return title.length >= 6
-    && containsChinese(title)
+    && (containsChinese(title) || VERSIONED_TECHNICAL_SOURCE_TITLE.test(title))
     && englishConnectorCount(title) < 2
     && !/(?:…|\.\.\.|&(?:#\d+|[a-z]+);)/iu.test(title)
     && !/[|]|\b(?:Newsroom|Company Announcement)\b/iu.test(title)

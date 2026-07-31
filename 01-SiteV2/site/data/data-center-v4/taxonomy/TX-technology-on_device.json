@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-on_device",
@@ -3361,7 +3361,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3501,15 +3503,20 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -3533,7 +3540,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
+        "EV-60110525440fac47",
         "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
@@ -3562,6 +3569,7 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3746,8 +3754,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-4c750d338325c55f",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
+        "EV-ebd76d18d3f0ee7b",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -4739,6 +4747,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
@@ -4800,7 +4809,6 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -4953,7 +4961,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
-        "EV-fc13165fbd0ef3de",
+        "EV-94cb16144a8fcfdb",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -5288,9 +5296,7 @@
       "name": "DeepSeek",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "深度求索"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5300,7 +5306,6 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
-        "EV-fafc300c25e9b0a7",
         "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
@@ -5341,7 +5346,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-3dd90c2e1bf28b32",
@@ -5398,17 +5403,15 @@
       "snapshotId": "HWS-825c2169bb6387ae",
       "eventId": "EV-7a0f201debe99f2b",
       "eventIds": [
-        "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590"
+        "EV-7a0f201debe99f2b"
       ],
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
-      "title": "DeepMind / Gemini Robotics 2 / Gemini Robotics ER 2",
+      "title": "DeepMind / Gemini Robotics 2",
       "subject": "Google DeepMind",
       "productNames": [
         "DeepMind",
-        "Gemini Robotics 2",
-        "Gemini Robotics ER 2"
+        "Gemini Robotics 2"
       ],
       "hardwareType": "robot",
       "factTypes": [
@@ -5418,10 +5421,10 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-bb706705b10bf383"
+          "fact_ref": "HWF-85aa0e443edb43c2"
         }
       },
-      "factCount": 2,
+      "factCount": 1,
       "snapshotCount": 1,
       "changes": [],
       "capacityFacts": [],
@@ -5454,34 +5457,6 @@
             "SA-6436d40ab638ade0"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-bb706705b10bf383",
-          "fact_type": "product",
-          "observed_at": "2026-07-30T23:12:07.000Z",
-          "subject_entity_id": "EN-2b6e51bec93e86c1",
-          "subject_name": "Google DeepMind",
-          "product_entity_ids": [
-            "EN-4d09c69c19f5f67b",
-            "EN-364df82f85761d58"
-          ],
-          "product_names": [
-            "DeepMind",
-            "Gemini Robotics ER 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
-          "event_refs": [
-            "EV-8887fb45a0398590"
-          ],
-          "claim_ref": "CL-01047086f6bfac89",
-          "source_refs": [
-            "SA-c04e7cbf1504a155"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -5491,20 +5466,13 @@
           "dimensionName": "技术",
           "id": "on_device",
           "name": "端侧"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
       "entityIds": [
         "EN-2b6e51bec93e86c1",
         "EN-4d09c69c19f5f67b",
-        "EN-e1086f449d58de87",
-        "EN-364df82f85761d58"
+        "EN-e1086f449d58de87"
       ]
     },
     {

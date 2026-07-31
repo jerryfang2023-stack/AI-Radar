@@ -68,12 +68,16 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
     confidence: "high",
   }]);
   assert.equal("pool_routes" in intake.raw_documents[0].intake_diagnostics, false);
+  intake.raw_documents[0].title_original = "Example AI release";
+  intake.raw_documents[0].title_zh = "Example AI 产品发布";
 
   writeJson(sourceIntakePath(root, date), intake);
   assert.equal(readSourceIntake(root, date).payload.data_date, date);
   const loaded = loadSourceIntakeEntries(root, date);
   assert.equal(loaded.entries.length, 1);
   assert.equal(loaded.entries[0].raw.original_url, record.original_url);
+  assert.equal(loaded.entries[0].raw.title, intake.raw_documents[0].title_original);
+  assert.equal(loaded.entries[0].raw.title_zh, intake.raw_documents[0].title_zh);
   assert.equal(loaded.entries[0].intake_document.body_ref, intake.raw_documents[0].body_ref);
 });
 

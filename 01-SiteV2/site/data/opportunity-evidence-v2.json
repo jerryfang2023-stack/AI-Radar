@@ -8,102 +8,11 @@
     "activeDate": "2026-07-31",
     "generatedAt": "2026-07-31T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 857,
+    "evidenceCount": 852,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
   "evidence": [
-    {
-      "id": "EV-16cfe946bbf69aa3",
-      "event_id": "EV-16cfe946bbf69aa3",
-      "event_type": "partnership",
-      "publication_status": "verified",
-      "title": "宏利扩大与微软合作，加速企业AI治理与创新",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-07-31",
-      "event_time": "2026-07-22T00:00:00.000Z",
-      "sourceUrl": "https://www.prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
-      "sourceName": "keyword search / Exa",
-      "subject": "Manulife",
-      "sourceExcerpt": "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continued transformation and responsible scaling of AI-enabled capabilities across its global operations.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-b3f5e31ec86a08a9",
-          "canonical_name": "Manulife",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-12d65540caf6004c",
-        "CL-f2f54d330b3616da",
-        "CL-21bfa555af66ee9f",
-        "CL-aa8d7349a27fd9ca"
-      ],
-      "source_refs": [
-        "SA-e741e99b4c7179cf"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-f2f54d330b3616da",
-            "source_refs": [
-              "SA-e741e99b4c7179cf"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-f2f54d330b3616da",
-            "source_refs": [
-              "SA-e741e99b4c7179cf"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "partnership_integration",
-            "claim_ref": "CL-12d65540caf6004c",
-            "source_refs": [
-              "SA-e741e99b4c7179cf"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "partnership_integration"
-          ]
-        }
-      }
-    },
     {
       "id": "EV-492029b381c06283",
       "event_id": "EV-492029b381c06283",
@@ -485,148 +394,6 @@
       }
     },
     {
-      "id": "EV-901155ab700a7e8e",
-      "event_id": "EV-901155ab700a7e8e",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-07-31",
-      "event_time": "2026-07-20T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Natural",
-      "sourceExcerpt": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe",
-      "entity_refs": [
-        {
-          "entity_id": "EN-12765295db4f1e79",
-          "canonical_name": "Natural",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-3149f752d5e7671c",
-        "CL-23c1ac13b6980333",
-        "CL-25a837efe3a5630a",
-        "CL-926a00360bf00b41"
-      ],
-      "source_refs": [
-        "SA-879ede03ac329afc"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-3149f752d5e7671c",
-            "source_refs": [
-              "SA-879ede03ac329afc"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-d7cba8d4a454aa93",
-      "event_id": "EV-d7cba8d4a454aa93",
-      "event_type": "capital_investment",
-      "publication_status": "verified",
-      "title": "AI 工厂供应链：WTAI 2026年7月再平衡的真正含义",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-07-31",
-      "event_time": "2026-07-28T16:00:00.000Z",
-      "sourceUrl": "https://www.wisdomtree.com/us/insights/blog/the-ai-factory-supply-chain-what-wtai-s-july-2026-rebalance-is-really-saying",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "WisdomTree Artificial Intelligence",
-      "sourceExcerpt": "The single largest allocation move in WisdomTree Artificial Intelligence and Innovation Fund’s (WTAI) July 2026 rebalance is not into a new chip designer or a hot AI software name, but rather, it is into semiconductor capital equipment, the machines that manufacture chips.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-77d06a98251d0272",
-          "canonical_name": "WisdomTree Artificial Intelligence",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-6aa383344bedc00c",
-          "canonical_name": "Innovation Fund",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-ea59aa1d8fde4bcd",
-        "CL-e2ba14102e81a504",
-        "CL-1442634bac1cddba"
-      ],
-      "source_refs": [
-        "SA-022f568013c7a2bc"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "knowledge_base_qa",
-            "claim_ref": "CL-e2ba14102e81a504",
-            "source_refs": [
-              "SA-022f568013c7a2bc"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-ea59aa1d8fde4bcd",
-            "source_refs": [
-              "SA-022f568013c7a2bc"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "knowledge_base_qa"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-ea109db692b88079",
       "event_id": "EV-ea109db692b88079",
       "event_type": "funding",
@@ -710,7 +477,7 @@
       "event_id": "EV-023fd03c675d940d",
       "event_type": "product_release",
       "publication_status": "verified",
-      "title": "product_release 0.1a0",
+      "title": "llm-chat-completions-server 0.1a0",
       "category": "product-service",
       "categoryLabel": "产品",
       "date": "2026-07-31",
@@ -835,108 +602,6 @@
       }
     },
     {
-      "id": "EV-0d5a32aca724d30e",
-      "event_id": "EV-0d5a32aca724d30e",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-31",
-      "event_time": "2026-07-22T00:00:00.000Z",
-      "sourceUrl": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-      "sourceName": "Interconnects (Nathan Lambert)",
-      "subject": "Open",
-      "sourceExcerpt": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
-      "entity_refs": [
-        {
-          "entity_id": "EN-2348f99874421257",
-          "canonical_name": "Open",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-cbc62794911ff31b",
-          "canonical_name": "Amazon",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-1c7f0d16c69eabf2",
-        "CL-44ea7d9d1afb7002",
-        "CL-0745b402236ddd8b",
-        "CL-cfed864aad877156"
-      ],
-      "source_refs": [
-        "SA-86a0bb3fbd4edf9c"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-0745b402236ddd8b",
-            "source_refs": [
-              "SA-86a0bb3fbd4edf9c"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-0745b402236ddd8b",
-            "source_refs": [
-              "SA-86a0bb3fbd4edf9c"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [
-          {
-            "value_id": "open_source_commercial",
-            "claim_ref": "CL-cfed864aad877156",
-            "source_refs": [
-              "SA-86a0bb3fbd4edf9c"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-1c7f0d16c69eabf2",
-            "source_refs": [
-              "SA-86a0bb3fbd4edf9c"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [
-            "open_source_commercial"
-          ],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-136d9a760c24cd35",
       "event_id": "EV-136d9a760c24cd35",
       "event_type": "product_release",
@@ -1018,241 +683,6 @@
           ],
           "pain_or_constraint": [
             "api_cost_spike"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-1fe7328d2c69693f",
-      "event_id": "EV-1fe7328d2c69693f",
-      "event_type": "pricing_change",
-      "publication_status": "verified",
-      "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-31",
-      "event_time": "2026-07-30T00:00:00.000Z",
-      "sourceUrl": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model/",
-      "sourceName": "The Decoder AI News",
-      "subject": "OpenAI goes full China",
-      "sourceExcerpt": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
-      "entity_refs": [
-        {
-          "entity_id": "EN-2ee49ef51a776e2c",
-          "canonical_name": "OpenAI goes full China",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-52fc33ae4d101a5d",
-          "canonical_name": "GPT-5.6",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-5050faffd9df2eee",
-        "CL-07d7f19abe041255",
-        "CL-54b8bc5fd0920455",
-        "CL-55d415fa62b1617f"
-      ],
-      "source_refs": [
-        "SA-cd8f078f25e22723"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-5050faffd9df2eee",
-            "source_refs": [
-              "SA-cd8f078f25e22723"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-5050faffd9df2eee",
-            "source_refs": [
-              "SA-cd8f078f25e22723"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [
-          {
-            "value_id": "api",
-            "claim_ref": "CL-54b8bc5fd0920455",
-            "source_refs": [
-              "SA-cd8f078f25e22723"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "delivery_model": [
-          {
-            "value_id": "api_usage_based",
-            "claim_ref": "CL-54b8bc5fd0920455",
-            "source_refs": [
-              "SA-cd8f078f25e22723"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "pricing_change",
-            "claim_ref": "CL-5050faffd9df2eee",
-            "source_refs": [
-              "SA-cd8f078f25e22723"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "api_cost_spike"
-          ],
-          "product_form": [
-            "api"
-          ],
-          "delivery_model": [
-            "api_usage_based"
-          ],
-          "business_action": [
-            "pricing_change"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-2ef56a158898ae73",
-      "event_id": "EV-2ef56a158898ae73",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-31",
-      "event_time": "2026-07-31T01:34:22.000Z",
-      "sourceUrl": "https://www.ithome.com/0/983/947.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "Anthropic",
-      "sourceExcerpt": "Anthropic 表示，所有涉事模型均未部署正式发布时使用的标准安全措施，但都经过了特定的安全训练。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-bcdbaf0bb978c829",
-        "CL-33c2fad230baea4d",
-        "CL-e9d2567e291ccd1b",
-        "CL-57c43e210b454751"
-      ],
-      "source_refs": [
-        "SA-72c18127f23bf91a"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "it_security_team",
-            "claim_ref": "CL-33c2fad230baea4d",
-            "source_refs": [
-              "SA-72c18127f23bf91a"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "it_security",
-            "claim_ref": "CL-33c2fad230baea4d",
-            "source_refs": [
-              "SA-72c18127f23bf91a"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "specific_task": [
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-33c2fad230baea4d",
-            "source_refs": [
-              "SA-72c18127f23bf91a"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-33c2fad230baea4d",
-            "source_refs": [
-              "SA-72c18127f23bf91a"
-            ],
-            "provenance": "v4_facet_projection"
-          },
-          {
-            "value_id": "evaluation_gap",
-            "claim_ref": "CL-bcdbaf0bb978c829",
-            "source_refs": [
-              "SA-72c18127f23bf91a"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-bcdbaf0bb978c829",
-            "source_refs": [
-              "SA-72c18127f23bf91a"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "it_security_team"
-          ],
-          "team_or_function": [
-            "it_security"
-          ],
-          "specific_task": [
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance",
-            "evaluation_gap"
           ],
           "product_form": [],
           "delivery_model": [],
@@ -1520,66 +950,99 @@
       }
     },
     {
-      "id": "EV-4c750d338325c55f",
-      "event_id": "EV-4c750d338325c55f",
-      "event_type": "pricing_change",
+      "id": "EV-60110525440fac47",
+      "event_id": "EV-60110525440fac47",
+      "event_type": "model_release",
       "publication_status": "verified",
-      "title": "以GPT‑5.6推进性价比前沿",
+      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
       "category": "product-service",
       "categoryLabel": "产品",
       "date": "2026-07-31",
-      "event_time": "2026-07-30T23:58:42.000Z",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
-      "sourceName": "Simon Willison's Blog",
+      "event_time": "2026-07-30T00:00:00.000Z",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+      "sourceName": "Google DeepMind：Blog（RSS）",
       "subject": "Google",
-      "sourceExcerpt": "GPT-5.6 Terra got a 20% reduction",
+      "sourceExcerpt": "Gemini Robotics ER 2",
       "entity_refs": [
         {
           "entity_id": "EN-bbdefa2950f49882",
           "canonical_name": "Google",
           "entity_type": "organization_candidate",
           "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-364df82f85761d58",
+          "canonical_name": "Gemini Robotics ER 2",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-2b6e51bec93e86c1",
+          "canonical_name": "Google DeepMind",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-4d09c69c19f5f67b",
+          "canonical_name": "DeepMind",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
         }
       ],
       "claim_refs": [
-        "CL-52ca670292cf3907",
-        "CL-f6e15871d56fe83a",
-        "CL-6289b57fcf622e82"
+        "CL-14b57fbba0504c8a",
+        "CL-0d999506ade603ba",
+        "CL-7d1f3beb53e43800",
+        "CL-739d9308b67bd186",
+        "CL-ee762d7e5a860953",
+        "CL-a5a34bfaa5942382",
+        "CL-01047086f6bfac89",
+        "CL-15d28d35a4c35f99"
       ],
       "source_refs": [
-        "SA-4417e838b9699852"
+        "SA-048a2e73225d3122",
+        "SA-c04e7cbf1504a155"
       ],
       "application_assertions": {
         "buyer_or_user": [],
         "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-52ca670292cf3907",
-            "source_refs": [
-              "SA-4417e838b9699852"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
+        "specific_task": [],
         "pain_or_constraint": [
           {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-52ca670292cf3907",
+            "value_id": "latency_sensitive",
+            "claim_ref": "CL-739d9308b67bd186",
             "source_refs": [
-              "SA-4417e838b9699852"
+              "SA-048a2e73225d3122"
             ],
             "provenance": "exact_claim_rule"
           }
         ],
-        "product_form": [],
-        "delivery_model": [],
+        "product_form": [
+          {
+            "value_id": "api",
+            "claim_ref": "CL-739d9308b67bd186",
+            "source_refs": [
+              "SA-048a2e73225d3122"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "delivery_model": [
+          {
+            "value_id": "api_usage_based",
+            "claim_ref": "CL-739d9308b67bd186",
+            "source_refs": [
+              "SA-048a2e73225d3122"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
         "business_action": [
           {
-            "value_id": "pricing_change",
-            "claim_ref": "CL-52ca670292cf3907",
+            "value_id": "product_launch",
+            "claim_ref": "CL-14b57fbba0504c8a",
             "source_refs": [
-              "SA-4417e838b9699852"
+              "SA-048a2e73225d3122"
             ],
             "provenance": "event_type_rule"
           }
@@ -1589,16 +1052,18 @@
         "labels": {
           "buyer_or_user": [],
           "team_or_function": [],
-          "specific_task": [
-            "cost_monitoring"
-          ],
+          "specific_task": [],
           "pain_or_constraint": [
-            "api_cost_spike"
+            "latency_sensitive"
           ],
-          "product_form": [],
-          "delivery_model": [],
+          "product_form": [
+            "api"
+          ],
+          "delivery_model": [
+            "api_usage_based"
+          ],
           "business_action": [
-            "pricing_change"
+            "product_launch"
           ]
         }
       }
@@ -1678,127 +1143,92 @@
       }
     },
     {
-      "id": "EV-876cfe17574eb2c1",
-      "event_id": "EV-876cfe17574eb2c1",
-      "event_type": "model_release",
+      "id": "EV-94cb16144a8fcfdb",
+      "event_id": "EV-94cb16144a8fcfdb",
+      "event_type": "security_incident",
       "publication_status": "verified",
-      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
       "category": "product-service",
       "categoryLabel": "产品",
       "date": "2026-07-31",
-      "event_time": "2026-07-30T00:00:00.000Z",
-      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
-      "sourceName": "Google DeepMind：Blog（RSS）",
-      "subject": "Google",
-      "sourceExcerpt": "We are launching Gemini Robotics ER 2, a new model designed to act as a high-level brain for robots.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-364df82f85761d58",
-          "canonical_name": "Gemini Robotics ER 2",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-3059dd725fa8bc8b"
-      ],
-      "source_refs": [
-        "SA-048a2e73225d3122"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-3059dd725fa8bc8b",
-            "source_refs": [
-              "SA-048a2e73225d3122"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-8887fb45a0398590",
-      "event_id": "EV-8887fb45a0398590",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "谷歌 DeepMind 推出 Gemini Robotics ER 2，最强具身推理模型支持连续视频理解与多机器人协作",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-31",
-      "event_time": "2026-07-30T23:12:07.000Z",
-      "sourceUrl": "https://www.ithome.com/0/983/915.htm",
+      "event_time": "2026-07-31T01:34:22.000Z",
+      "sourceUrl": "https://www.ithome.com/0/983/947.htm",
       "sourceName": "IT之家（RSS）",
-      "subject": "Google DeepMind",
-      "sourceExcerpt": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
+      "subject": "Anthropic",
+      "sourceExcerpt": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件 - IT之家",
       "entity_refs": [
         {
-          "entity_id": "EN-2b6e51bec93e86c1",
-          "canonical_name": "Google DeepMind",
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
           "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-4d09c69c19f5f67b",
-          "canonical_name": "DeepMind",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-364df82f85761d58",
-          "canonical_name": "Gemini Robotics ER 2",
-          "entity_type": "product_candidate",
           "verification_status": "candidate"
         }
       ],
       "claim_refs": [
-        "CL-01047086f6bfac89",
-        "CL-3ee5e45b69f0ece1",
-        "CL-9438ab5914909eff",
-        "CL-ee762d7e5a860953"
+        "CL-33c2fad230baea4d",
+        "CL-e9d2567e291ccd1b",
+        "CL-57c43e210b454751"
       ],
       "source_refs": [
-        "SA-c04e7cbf1504a155"
+        "SA-72c18127f23bf91a"
       ],
       "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
+        "buyer_or_user": [
+          {
+            "value_id": "it_security_team",
+            "claim_ref": "CL-33c2fad230baea4d",
+            "source_refs": [
+              "SA-72c18127f23bf91a"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "it_security",
+            "claim_ref": "CL-33c2fad230baea4d",
+            "source_refs": [
+              "SA-72c18127f23bf91a"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "specific_task": [
+          {
+            "value_id": "permission_audit",
+            "claim_ref": "CL-33c2fad230baea4d",
+            "source_refs": [
+              "SA-72c18127f23bf91a"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "security_compliance",
+            "claim_ref": "CL-33c2fad230baea4d",
+            "source_refs": [
+              "SA-72c18127f23bf91a"
+            ],
+            "provenance": "v4_facet_projection"
+          },
+          {
+            "value_id": "evaluation_gap",
+            "claim_ref": "CL-33c2fad230baea4d",
+            "source_refs": [
+              "SA-72c18127f23bf91a"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
         "product_form": [],
         "delivery_model": [],
         "business_action": [
           {
-            "value_id": "product_launch",
-            "claim_ref": "CL-01047086f6bfac89",
+            "value_id": "failure_postmortem",
+            "claim_ref": "CL-33c2fad230baea4d",
             "source_refs": [
-              "SA-c04e7cbf1504a155"
+              "SA-72c18127f23bf91a"
             ],
             "provenance": "event_type_rule"
           }
@@ -1806,14 +1236,23 @@
       },
       "opportunitySignals": {
         "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
+          "buyer_or_user": [
+            "it_security_team"
+          ],
+          "team_or_function": [
+            "it_security"
+          ],
+          "specific_task": [
+            "permission_audit"
+          ],
+          "pain_or_constraint": [
+            "security_compliance",
+            "evaluation_gap"
+          ],
           "product_form": [],
           "delivery_model": [],
           "business_action": [
-            "product_launch"
+            "failure_postmortem"
           ]
         }
       }
@@ -1948,52 +1387,107 @@
       }
     },
     {
-      "id": "EV-d1b8110a05bf9b74",
-      "event_id": "EV-d1b8110a05bf9b74",
-      "event_type": "service_change",
+      "id": "EV-ebd76d18d3f0ee7b",
+      "event_id": "EV-ebd76d18d3f0ee7b",
+      "event_type": "pricing_change",
       "publication_status": "verified",
-      "title": "service_change system integrations with Anthropic",
+      "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
       "category": "product-service",
       "categoryLabel": "产品",
       "date": "2026-07-31",
-      "event_time": "2026-08-27T00:00:00.000Z",
-      "sourceUrl": "https://www.gsa.gov/artificial-intelligence",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "GSA",
-      "sourceExcerpt": "GSA will remove any system integrations with Anthropic by Aug. 27, 2026.",
+      "event_time": "2026-07-30T00:00:00.000Z",
+      "sourceUrl": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model/",
+      "sourceName": "The Decoder AI News",
+      "subject": "OpenAI goes full China",
+      "sourceExcerpt": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
       "entity_refs": [
         {
-          "entity_id": "EN-2caedd902ff4ed81",
-          "canonical_name": "GSA",
+          "entity_id": "EN-2ee49ef51a776e2c",
+          "canonical_name": "OpenAI goes full China",
           "entity_type": "organization_candidate",
           "verification_status": "candidate"
         },
         {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
+          "entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
           "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-52fc33ae4d101a5d",
+          "canonical_name": "GPT-5.6",
+          "entity_type": "product_candidate",
           "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
-        "CL-2e7b227bfeeeb3bd"
+        "CL-5050faffd9df2eee",
+        "CL-07d7f19abe041255",
+        "CL-54b8bc5fd0920455",
+        "CL-55d415fa62b1617f",
+        "CL-52ca670292cf3907",
+        "CL-f6e15871d56fe83a",
+        "CL-6289b57fcf622e82"
       ],
       "source_refs": [
-        "SA-425830c4654f6640"
+        "SA-cd8f078f25e22723",
+        "SA-4417e838b9699852"
       ],
       "application_assertions": {
         "buyer_or_user": [],
         "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
+        "specific_task": [
+          {
+            "value_id": "cost_monitoring",
+            "claim_ref": "CL-5050faffd9df2eee",
+            "source_refs": [
+              "SA-cd8f078f25e22723"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "api_cost_spike",
+            "claim_ref": "CL-5050faffd9df2eee",
+            "source_refs": [
+              "SA-cd8f078f25e22723"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [
+          {
+            "value_id": "api",
+            "claim_ref": "CL-54b8bc5fd0920455",
+            "source_refs": [
+              "SA-cd8f078f25e22723"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "delivery_model": [
+          {
+            "value_id": "api_usage_based",
+            "claim_ref": "CL-54b8bc5fd0920455",
+            "source_refs": [
+              "SA-cd8f078f25e22723"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
         "business_action": [
           {
-            "value_id": "product_launch",
-            "claim_ref": "CL-2e7b227bfeeeb3bd",
+            "value_id": "pricing_change",
+            "claim_ref": "CL-5050faffd9df2eee",
             "source_refs": [
-              "SA-425830c4654f6640"
+              "SA-cd8f078f25e22723"
             ],
             "provenance": "event_type_rule"
           }
@@ -2003,12 +1497,20 @@
         "labels": {
           "buyer_or_user": [],
           "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
+          "specific_task": [
+            "cost_monitoring"
+          ],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
+          "product_form": [
+            "api"
+          ],
+          "delivery_model": [
+            "api_usage_based"
+          ],
           "business_action": [
-            "product_launch"
+            "pricing_change"
           ]
         }
       }
@@ -2091,108 +1593,6 @@
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-fafc300c25e9b0a7",
-      "event_id": "EV-fafc300c25e9b0a7",
-      "event_type": "product_release",
-      "publication_status": "partial",
-      "title": "国家发改委：将加快《人工智能法》立法进程",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-31",
-      "event_time": "2026-07-31T02:48:12.000Z",
-      "sourceUrl": "https://www.ithome.com/0/983/974.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "DeepSeek",
-      "sourceExcerpt": "深度求索、月之暗面等本土企业先后发布参数规模达到“万亿”级别的开源大模型，国产大模型全球下载量突破 100 亿次。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_name": "DeepSeek",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-b5251b35f15bedc4",
-          "canonical_name": "Moonshot AI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-51c18824647efd0d",
-        "CL-6b887ab3e50ea3cb",
-        "CL-bc14941ffa5ea7e8",
-        "CL-4af1cad11e9245ed"
-      ],
-      "source_refs": [
-        "SA-811e93287fde93aa"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-6b887ab3e50ea3cb",
-            "source_refs": [
-              "SA-811e93287fde93aa"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-6b887ab3e50ea3cb",
-            "source_refs": [
-              "SA-811e93287fde93aa"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [
-          {
-            "value_id": "open_source_commercial",
-            "claim_ref": "CL-51c18824647efd0d",
-            "source_refs": [
-              "SA-811e93287fde93aa"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-51c18824647efd0d",
-            "source_refs": [
-              "SA-811e93287fde93aa"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [
-            "open_source_commercial"
-          ],
           "business_action": [
             "product_launch"
           ]
@@ -2710,6 +2110,97 @@
           "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-0d5a32aca724d30e",
+      "event_id": "EV-0d5a32aca724d30e",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-07-30",
+      "event_time": "2026-07-30T00:17:53.714Z",
+      "sourceUrl": "https://www.kimi.com/code/docs/en/kimi-code/models",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "subject": "Kimi K3-256k",
+      "sourceExcerpt": "Kimi Code currently offers two models—Kimi K3 and Kimi K2.7 Code—across four model IDs, selectable by model ID in clients or third-party tools. Model specs:",
+      "entity_refs": [
+        {
+          "entity_id": "EN-436364a46513cdf3",
+          "canonical_name": "Kimi K3-256k",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-e5904fa438fcd5bf",
+          "canonical_name": "K3-256k",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-a86d4f9743d74b61",
+        "CL-d11947b2b6e57046",
+        "CL-87f0da7939e6ed76",
+        "CL-da7451c803d6f1e1"
+      ],
+      "source_refs": [
+        "SA-8aeb607b684a4390"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-a86d4f9743d74b61",
+            "source_refs": [
+              "SA-8aeb607b684a4390"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [
+          {
+            "value_id": "developer_tool",
+            "claim_ref": "CL-da7451c803d6f1e1",
+            "source_refs": [
+              "SA-8aeb607b684a4390"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-a86d4f9743d74b61",
+            "source_refs": [
+              "SA-8aeb607b684a4390"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "internal_tool_building"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [
+            "developer_tool"
+          ],
           "delivery_model": [],
           "business_action": [
             "product_launch"
@@ -13055,6 +12546,97 @@
       }
     },
     {
+      "id": "EV-16cfe946bbf69aa3",
+      "event_id": "EV-16cfe946bbf69aa3",
+      "event_type": "partnership",
+      "publication_status": "verified",
+      "title": "宏利扩大与微软合作，加速企业AI治理与创新",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-07-26",
+      "event_time": "2026-07-22T00:00:00.000Z",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Manulife",
+      "sourceExcerpt": "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continued transformation and responsible scaling of AI-enabled capabilities across its global operations.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-b3f5e31ec86a08a9",
+          "canonical_name": "Manulife",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-f2a3e165daca6569",
+        "CL-81712acab9aa5dbe",
+        "CL-8906cc4c053fff2f",
+        "CL-8e42ac3f00a0b995"
+      ],
+      "source_refs": [
+        "SA-b008ee16fb3d8f73"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "permission_audit",
+            "claim_ref": "CL-81712acab9aa5dbe",
+            "source_refs": [
+              "SA-b008ee16fb3d8f73"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "security_compliance",
+            "claim_ref": "CL-81712acab9aa5dbe",
+            "source_refs": [
+              "SA-b008ee16fb3d8f73"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "partnership_integration",
+            "claim_ref": "CL-f2a3e165daca6569",
+            "source_refs": [
+              "SA-b008ee16fb3d8f73"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "permission_audit"
+          ],
+          "pain_or_constraint": [
+            "security_compliance"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "partnership_integration"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-2a71353a862e56b3",
       "event_id": "EV-2a71353a862e56b3",
       "event_type": "partnership",
@@ -22607,6 +22189,69 @@
           "product_form": [
             "workflow_automation"
           ],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-901155ab700a7e8e",
+      "event_id": "EV-901155ab700a7e8e",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Natural 完成 3000 万美元 A 轮融资，为 AI 智能体构建支付基础设施",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-07-23",
+      "event_time": "2026-07-20T00:00:00.000Z",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/natural-raises-30m-series-a-to-build-payments-infrastructure-for-ai-agents-302829855.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Natural",
+      "sourceExcerpt": "SAN FRANCISCO , July 20, 2026 /PRNewswire/ -- Natural today announced that it has raised a $30 million Series A led by Kirsten Green at Forerunner, with continued participation from all major investors. The round was raised when the company was 193 days old and brings Natural's total funding to more than $40 million.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-12765295db4f1e79",
+          "canonical_name": "Natural",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-b84d7eb1591994b1",
+        "CL-f49eb249bad5695a",
+        "CL-bdced9b11fdb453d",
+        "CL-26c1cddabfd73725"
+      ],
+      "source_refs": [
+        "SA-8f07476544e86768"
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-b84d7eb1591994b1",
+            "source_refs": [
+              "SA-8f07476544e86768"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
           "delivery_model": [],
           "business_action": [
             "funding_round"

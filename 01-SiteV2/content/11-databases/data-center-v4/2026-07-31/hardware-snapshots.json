@@ -7,13 +7,11 @@
     "subject_name": "Google DeepMind",
     "product_entity_ids": [
       "EN-4d09c69c19f5f67b",
-      "EN-e1086f449d58de87",
-      "EN-364df82f85761d58"
+      "EN-e1086f449d58de87"
     ],
     "product_names": [
       "DeepMind",
-      "Gemini Robotics 2",
-      "Gemini Robotics ER 2"
+      "Gemini Robotics 2"
     ],
     "component_types": [
       "robot"
@@ -22,24 +20,20 @@
       "product": {
         "metric_value": "",
         "unit": "",
-        "fact_ref": "HWF-bb706705b10bf383"
+        "fact_ref": "HWF-85aa0e443edb43c2"
       }
     },
     "fact_refs": [
-      "HWF-85aa0e443edb43c2",
-      "HWF-bb706705b10bf383"
+      "HWF-85aa0e443edb43c2"
     ],
     "claim_refs": [
-      "CL-824523486c4b7c42",
-      "CL-01047086f6bfac89"
+      "CL-824523486c4b7c42"
     ],
     "source_refs": [
-      "SA-6436d40ab638ade0",
-      "SA-c04e7cbf1504a155"
+      "SA-6436d40ab638ade0"
     ],
     "event_refs": [
-      "EV-7a0f201debe99f2b",
-      "EV-8887fb45a0398590"
+      "EV-7a0f201debe99f2b"
     ],
     "previous_snapshot_ref": "",
     "change_status": "initial"
@@ -134,6 +128,46 @@
     "change_status": "initial"
   },
   {
+    "hardware_snapshot_id": "HWS-87b252b9f8c77325",
+    "snapshot_key": "c7d225e2691526e4",
+    "as_of": "2026-07-31",
+    "subject_entity_id": "EN-bbdefa2950f49882",
+    "subject_name": "Google",
+    "product_entity_ids": [
+      "EN-364df82f85761d58",
+      "EN-4d09c69c19f5f67b"
+    ],
+    "product_names": [
+      "Gemini Robotics ER 2",
+      "DeepMind"
+    ],
+    "component_types": [
+      "robot"
+    ],
+    "latest_values": {
+      "product": {
+        "metric_value": "",
+        "unit": "",
+        "fact_ref": "HWF-bb706705b10bf383"
+      }
+    },
+    "fact_refs": [
+      "HWF-bb706705b10bf383"
+    ],
+    "claim_refs": [
+      "CL-01047086f6bfac89"
+    ],
+    "source_refs": [
+      "SA-048a2e73225d3122",
+      "SA-c04e7cbf1504a155"
+    ],
+    "event_refs": [
+      "EV-60110525440fac47"
+    ],
+    "previous_snapshot_ref": "",
+    "change_status": "initial"
+  },
+  {
     "hardware_snapshot_id": "HWS-9c27c0bd49616a1a",
     "snapshot_key": "e06eaee2652e2537",
     "as_of": "2026-07-31",
@@ -162,39 +196,6 @@
     ],
     "event_refs": [
       "EV-023fd03c675d940d"
-    ],
-    "previous_snapshot_ref": "",
-    "change_status": "initial"
-  },
-  {
-    "hardware_snapshot_id": "HWS-1f77657dbe10c510",
-    "snapshot_key": "7c9238bfeb82f08f",
-    "as_of": "2026-07-31",
-    "subject_entity_id": "EN-2348f99874421257",
-    "subject_name": "Open",
-    "product_entity_ids": [],
-    "product_names": [],
-    "component_types": [
-      "networking"
-    ],
-    "latest_values": {
-      "product": {
-        "metric_value": "",
-        "unit": "",
-        "fact_ref": "HWF-d46baffb1c5cd33a"
-      }
-    },
-    "fact_refs": [
-      "HWF-d46baffb1c5cd33a"
-    ],
-    "claim_refs": [
-      "CL-cfed864aad877156"
-    ],
-    "source_refs": [
-      "SA-86a0bb3fbd4edf9c"
-    ],
-    "event_refs": [
-      "EV-0d5a32aca724d30e"
     ],
     "previous_snapshot_ref": "",
     "change_status": "initial"

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-c70eca6b0f88f44d",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-81a37a2365624b42",
       "EV-136b2edc9b9f3be8",
       "EV-3fb827f44ea109de",
       "EV-d7a7244d620a2142",
@@ -82,7 +83,6 @@
       "EV-fe63a869fe4cee45",
       "EV-35be62272c77c556",
       "EV-c0a65877001ed413",
-      "EV-2ef56a158898ae73",
       "EV-6f433ccff3dce657",
       "EV-5f2acbfb8f54fd59",
       "EV-6aae550a6523a8fd",
@@ -235,7 +235,7 @@
       "EV-8115dd18f2812a29",
       "EV-cf496e0f8a56ca97",
       "EV-8cb5b0ed18c7cdd8",
-      "EV-fc13165fbd0ef3de",
+      "EV-94cb16144a8fcfdb",
       "EV-56b36a56d729c20d",
       "EV-741728825db1f14e",
       "EV-abb190c09b08067c",
@@ -398,6 +398,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-81a37a2365624b42",
         "EV-420a9ad09680d2dc",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
@@ -435,7 +436,6 @@
         "EV-ed8260ee9a7a80af"
       ],
       "deployments": [
-        "EV-fc13165fbd0ef3de",
         "EV-b150af93042566a6",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
@@ -481,7 +481,7 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
-        "EV-2ef56a158898ae73",
+        "EV-94cb16144a8fcfdb",
         "EV-6f433ccff3dce657",
         "EV-2cc379df19a83062",
         "EV-5f2acbfb8f54fd59",
@@ -675,6 +675,23 @@
     },
     "timeline": [
       {
+        "id": "EV-81a37a2365624b42",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-30",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c737e8142a927072",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
         "id": "EV-5d185ac33faedb68",
         "dataDate": "2026-07-31",
         "date": "2026-07-27",
@@ -691,12 +708,12 @@
         ]
       },
       {
-        "id": "EV-2ef56a158898ae73",
+        "id": "EV-94cb16144a8fcfdb",
         "dataDate": "2026-07-31",
         "date": "2026-07-31",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
         "status": "announced",
         "statusLabel": "已公布",
         "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
@@ -709,22 +726,6 @@
           }
         ],
         "entityIds": [
-          "EN-c70eca6b0f88f44d"
-        ]
-      },
-      {
-        "id": "EV-fc13165fbd0ef3de",
-        "dataDate": "2026-07-31",
-        "date": "2026-07-30",
-        "eventType": "capital_investment",
-        "eventTypeLabel": "资本性投资",
-        "eventGroup": "融资与并购",
-        "status": "rumored",
-        "statusLabel": "rumored",
-        "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
-        "displayTags": [],
-        "entityIds": [
-          "EN-11740cc8809aec7a",
           "EN-c70eca6b0f88f44d"
         ]
       },
@@ -6877,6 +6878,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -6951,7 +6953,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -7089,7 +7091,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -9018,7 +9019,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
-        "EV-fafc300c25e9b0a7",
+        "EV-60110525440fac47",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
         "EV-7a4d1e871dcd3b1f",
@@ -9438,7 +9439,8 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-6f7ac1823da81d2e",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
         "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
@@ -9456,7 +9458,6 @@
         "EN-24f5eb8d2e667579",
         "EN-43a340bb75b45f02",
         "EN-d2997fd4735a8795",
-        "EN-2b6e51bec93e86c1",
         "EN-c857d09db23e6822",
         "EN-5a4c2be958c0af72",
         "EN-ec99ce30dc2316d9",
@@ -9479,6 +9480,7 @@
         "EN-ba728f8ca730921f",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
+        "EN-6f7ac1823da81d2e",
         "EN-f65bb77682b83476",
         "EN-7c094d35e3b700c8",
         "EN-9a266f40d42cf217",
@@ -9845,7 +9847,6 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
-        "EV-2ef56a158898ae73",
         "EV-a4fe78df6ccd63c8",
         "EV-3eb44a239ebef4b0",
         "EV-5f2acbfb8f54fd59",
@@ -9880,6 +9881,7 @@
         "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7",
         "EV-a35a3871bf36fea2",
+        "EV-94cb16144a8fcfdb",
         "EV-dbda21182e61923b"
       ],
       "entityIds": [
@@ -9976,6 +9978,7 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
+        "EV-0d5a32aca724d30e",
         "EV-bfa090c78227abf8",
         "EV-0f440082086c02df",
         "EV-2634b786bde9fb8e",
@@ -10027,6 +10030,8 @@
         "EN-86ca9936019f1039",
         "EN-4094a2b7125c7564",
         "EN-8f71c4871a160172",
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf",
         "EN-76a9a8a6e2f1a47b",
         "EN-7ad3f3203e5d717e",
         "EN-275b0f4a4023d91c",
@@ -10078,7 +10083,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -10504,7 +10509,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-09-10",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -10521,6 +10526,7 @@
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-60110525440fac47",
         "EV-c4f8ef356373ab24",
         "EV-7f92b7e410ed08f1",
         "EV-b580e33cabfea980",
@@ -10553,6 +10559,8 @@
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
         "EN-b47de584b4515427",
         "EN-149ae7e9819a17a0",
         "EN-985e1a7c957148f9",
@@ -10589,7 +10597,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",

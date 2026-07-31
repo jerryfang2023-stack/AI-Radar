@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-use_case-robotics_automation",
@@ -34,8 +34,7 @@
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
       "EV-7a0f201debe99f2b",
-      "EV-8887fb45a0398590",
-      "EV-876cfe17574eb2c1",
+      "EV-60110525440fac47",
       "EV-6bac0bf442887889",
       "EV-c7e1e920e54bb364",
       "EV-f79713437230562f",
@@ -1831,107 +1830,7 @@
       "publisher": "MarkTechPost（RSS）"
     },
     {
-      "id": "EV-8887fb45a0398590",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "谷歌 DeepMind 推出 Gemini Robotics ER 2，最强具身推理模型支持连续视频理解与多机器人协作",
-      "originalTitle": "",
-      "subject": "谷歌 DeepMind",
-      "action": "推出 Gemini Robotics ER 2，最强具身推理模型",
-      "object": "支持连续视频理解与多机器人协作",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
-        }
-      ],
-      "entityIds": [
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-364df82f85761d58"
-      ],
-      "entityNames": [
-        "Google DeepMind",
-        "DeepMind",
-        "Gemini Robotics ER 2"
-      ],
-      "productName": "DeepMind",
-      "products": [
-        {
-          "name": "DeepMind",
-          "type": "模型",
-          "ownerNames": [
-            "Google DeepMind"
-          ]
-        },
-        {
-          "name": "Gemini Robotics ER 2",
-          "type": "模型",
-          "ownerNames": [
-            "Google DeepMind"
-          ]
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/983/915.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-876cfe17574eb2c1",
+      "id": "EV-60110525440fac47",
       "dataDate": "2026-07-31",
       "date": "2026-07-30",
       "updatedDate": "2026-07-31",
@@ -1943,14 +1842,33 @@
       "publicationStatus": "verified",
       "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
       "originalTitle": "",
-      "subject": "Google",
-      "action": "model_release",
-      "object": "Gemini Robotics ER 2",
+      "subject": "undisclosed_subject",
+      "action": "Gemini Robotics ER 2",
+      "object": "：用视频理解、任务编排与多机器人协作赋能机器人",
       "metrics": [],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
       "facets": {
         "product_form": [],
         "use_case": [
@@ -1967,6 +1885,24 @@
       },
       "classifications": [
         {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
           "dimensionId": "use_case",
           "id": "robotics_automation",
           "dimensionName": "应用场景",
@@ -1979,20 +1915,49 @@
           "id": "robotics_automation",
           "dimensionName": "应用场景",
           "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
         }
       ],
       "entityIds": [
         "EN-bbdefa2950f49882",
-        "EN-364df82f85761d58"
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b"
       ],
       "entityNames": [
         "Google",
-        "Gemini Robotics ER 2"
+        "Gemini Robotics ER 2",
+        "Google DeepMind",
+        "DeepMind"
       ],
       "productName": "Gemini Robotics ER 2",
       "products": [
         {
           "name": "Gemini Robotics ER 2",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "DeepMind",
           "type": "模型",
           "ownerNames": [
             "Google"
@@ -6090,8 +6055,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-4c750d338325c55f",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
+        "EV-ebd76d18d3f0ee7b",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -6477,7 +6442,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
+        "EV-60110525440fac47",
         "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
@@ -6506,6 +6471,7 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -6561,12 +6527,13 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-8887fb45a0398590",
-        "EV-876cfe17574eb2c1"
+        "EV-60110525440fac47"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
+        "TX-technology-embodied_ai",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
@@ -7191,7 +7158,6 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -7225,7 +7191,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-a1b0d8a938903dc7",
@@ -7630,6 +7596,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -7704,7 +7671,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -7842,7 +7809,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -8065,7 +8031,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -8205,15 +8173,20 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-30"
     }
   ],
   "fde": [
@@ -8540,17 +8513,15 @@
       "snapshotId": "HWS-825c2169bb6387ae",
       "eventId": "EV-7a0f201debe99f2b",
       "eventIds": [
-        "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590"
+        "EV-7a0f201debe99f2b"
       ],
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
-      "title": "DeepMind / Gemini Robotics 2 / Gemini Robotics ER 2",
+      "title": "DeepMind / Gemini Robotics 2",
       "subject": "Google DeepMind",
       "productNames": [
         "DeepMind",
-        "Gemini Robotics 2",
-        "Gemini Robotics ER 2"
+        "Gemini Robotics 2"
       ],
       "hardwareType": "robot",
       "factTypes": [
@@ -8560,10 +8531,10 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-bb706705b10bf383"
+          "fact_ref": "HWF-85aa0e443edb43c2"
         }
       },
-      "factCount": 2,
+      "factCount": 1,
       "snapshotCount": 1,
       "changes": [],
       "capacityFacts": [],
@@ -8596,31 +8567,82 @@
             "SA-6436d40ab638ade0"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        },
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-e1086f449d58de87"
+      ]
+    },
+    {
+      "id": "HWC-c7d225e2691526e4",
+      "snapshotKey": "c7d225e2691526e4",
+      "snapshotId": "HWS-87b252b9f8c77325",
+      "eventId": "EV-60110525440fac47",
+      "eventIds": [
+        "EV-60110525440fac47"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "Gemini Robotics ER 2 / DeepMind",
+      "subject": "Google",
+      "productNames": [
+        "Gemini Robotics ER 2",
+        "DeepMind"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-bb706705b10bf383"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
         {
           "data_date": "2026-07-31",
           "hardware_fact_id": "HWF-bb706705b10bf383",
           "fact_type": "product",
-          "observed_at": "2026-07-30T23:12:07.000Z",
-          "subject_entity_id": "EN-2b6e51bec93e86c1",
-          "subject_name": "Google DeepMind",
+          "observed_at": "2026-07-30T00:00:00.000Z",
+          "subject_entity_id": "EN-bbdefa2950f49882",
+          "subject_name": "Google",
           "product_entity_ids": [
-            "EN-4d09c69c19f5f67b",
-            "EN-364df82f85761d58"
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
           ],
           "product_names": [
-            "DeepMind",
-            "Gemini Robotics ER 2"
+            "Gemini Robotics ER 2",
+            "DeepMind"
           ],
           "component_type": "robot",
           "metric_value": "",
           "unit": "",
           "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
           "event_refs": [
-            "EV-8887fb45a0398590"
+            "EV-60110525440fac47"
           ],
           "claim_ref": "CL-01047086f6bfac89",
           "source_refs": [
+            "SA-048a2e73225d3122",
             "SA-c04e7cbf1504a155"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
@@ -8631,8 +8653,14 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
         },
         {
           "dimensionId": "technology",
@@ -8641,12 +8669,12 @@
           "name": "推理能力"
         }
       ],
-      "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
       "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-364df82f85761d58",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-e1086f449d58de87",
-        "EN-364df82f85761d58"
+        "EN-4d09c69c19f5f67b"
       ]
     },
     {

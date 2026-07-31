@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-e1086f449d58de87",
@@ -109,8 +109,7 @@
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
         "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-f79713437230562f",
@@ -331,17 +330,15 @@
       "snapshotId": "HWS-825c2169bb6387ae",
       "eventId": "EV-7a0f201debe99f2b",
       "eventIds": [
-        "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590"
+        "EV-7a0f201debe99f2b"
       ],
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
-      "title": "DeepMind / Gemini Robotics 2 / Gemini Robotics ER 2",
+      "title": "DeepMind / Gemini Robotics 2",
       "subject": "Google DeepMind",
       "productNames": [
         "DeepMind",
-        "Gemini Robotics 2",
-        "Gemini Robotics ER 2"
+        "Gemini Robotics 2"
       ],
       "hardwareType": "robot",
       "factTypes": [
@@ -351,10 +348,10 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-bb706705b10bf383"
+          "fact_ref": "HWF-85aa0e443edb43c2"
         }
       },
-      "factCount": 2,
+      "factCount": 1,
       "snapshotCount": 1,
       "changes": [],
       "capacityFacts": [],
@@ -387,34 +384,6 @@
             "SA-6436d40ab638ade0"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-bb706705b10bf383",
-          "fact_type": "product",
-          "observed_at": "2026-07-30T23:12:07.000Z",
-          "subject_entity_id": "EN-2b6e51bec93e86c1",
-          "subject_name": "Google DeepMind",
-          "product_entity_ids": [
-            "EN-4d09c69c19f5f67b",
-            "EN-364df82f85761d58"
-          ],
-          "product_names": [
-            "DeepMind",
-            "Gemini Robotics ER 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
-          "event_refs": [
-            "EV-8887fb45a0398590"
-          ],
-          "claim_ref": "CL-01047086f6bfac89",
-          "source_refs": [
-            "SA-c04e7cbf1504a155"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -424,20 +393,13 @@
           "dimensionName": "技术",
           "id": "on_device",
           "name": "端侧"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
       "entityIds": [
         "EN-2b6e51bec93e86c1",
         "EN-4d09c69c19f5f67b",
-        "EN-e1086f449d58de87",
-        "EN-364df82f85761d58"
+        "EN-e1086f449d58de87"
       ]
     }
   ]
