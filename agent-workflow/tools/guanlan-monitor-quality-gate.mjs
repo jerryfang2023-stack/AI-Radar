@@ -1,7 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import { readSourceIntake } from "./lib/source-intake-v1.mjs";
-import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -157,29 +156,14 @@ function structuredIntakeItems(intake = null) {
   if (!intake?.payload?.raw_documents) return [];
   return intake.payload.raw_documents.map((document) => {
     const diagnostics = document.intake_diagnostics || {};
-    const bodyFile = path.resolve(root, document.body_ref || "");
-    const privateEvidence = loadPrivateEvidenceRecord(
-      root,
-      document.body_ref,
-      document.content_hash,
-      { required: false },
-    );
-    const rawRecord = bodyFile.startsWith(`${path.resolve(root)}${path.sep}`) && fs.existsSync(bodyFile)
-      ? readJson(bodyFile, {})
-      : privateEvidence?.raw || {};
     return {
       title: document.title_original || document.title_zh || "",
-      routes: Array.isArray(rawRecord.pool_routes) ? rawRecord.pool_routes : [],
       sourceName: document.publisher || "",
       sourceUrl: document.source_url || "",
       acquisitionChannel: diagnostics.acquisition_channel || "",
-      sourceLevel: rawRecord.source_level || "",
-      acquisitionSourceLevel: rawRecord.acquisition_source_level || "",
       evidenceObjectType: diagnostics.evidence_object_type || "",
       evidenceStrength: normalizeEvidenceStrength(diagnostics.evidence_strength),
       evidenceObjectUsable: Boolean(diagnostics.evidence_object_usable),
-      eventEvidence: Boolean(rawRecord.event_evidence),
-      indexOnlyEvidence: Boolean(rawRecord.index_only_evidence),
       rawQcDecision: diagnostics.raw_qc_decision || "",
       rawQcDownstreamUse: diagnostics.raw_qc_downstream_use || "",
       hasFullText: Boolean(diagnostics.has_full_text),
@@ -187,26 +171,34 @@ function structuredIntakeItems(intake = null) {
       extractionMethod: document.capture_method || "",
       readabilityScore: Number(diagnostics.readability_score || 0),
       contentHash: document.content_hash || "",
-      fullTextHash: rawRecord.full_text_hash || "",
       keyExcerpts: JSON.stringify(diagnostics.key_excerpts || []),
-      sourceRole: rawRecord.source_role || "",
       originFetchStatus: diagnostics.origin_fetch_status || "",
-      keywordGroup: rawRecord.keyword_group || "",
       rawRef: document.raw_id || "",
       text: [
         document.title_original,
-        rawRecord.clean_text,
-        rawRecord.full_text,
         JSON.stringify(diagnostics.key_excerpts || []),
       ].filter(Boolean).join("\n"),
-      pooled: Boolean(diagnostics.pooled),
+      eligibleForV4Extraction: Boolean(diagnostics.eligible_for_v4_extraction),
     };
   });
 }
 
+export function isRoutedV4EvidenceItem(item = {}) {
+  return item.eligibleForV4Extraction === true
+    && item.evidenceObjectUsable === true
+    && ["allow", "allow_with_degradation"].includes(item.rawQcDecision)
+    && item.hasFullText === true
+    && item.originFetchStatus === "success";
+}
+
+export function isCoreV4EvidenceItem(item = {}) {
+  return isRoutedV4EvidenceItem(item)
+    && item.rawQcDecision === "allow"
+    && usableEvidenceStrengths.has(normalizeEvidenceStrength(item.evidenceStrength));
+}
+
 function isHomepageDirectoryCoreItem(item = {}) {
-  if (!item.routes?.includes("core_pool")) return false;
-  if (item.indexOnlyEvidence) return true;
+  if (!isCoreV4EvidenceItem(item)) return false;
   if (/official_index_or_directory|repo_readme_or_index|ecosystem_package_or_model_index/iu.test(item.evidenceObjectType || "")) return true;
   return false;
 }
@@ -245,11 +237,9 @@ function hasTextContamination(text = "") {
     || replacementCount / length > 0.003;
 }
 
-function isUsableCoreEvidenceItem(item = {}) {
-  if (!item.routes?.includes("core_pool")) return false;
-  if (item.rawQcDecision === "block") return false;
+export function isUsableCoreEvidenceItem(item = {}) {
+  if (!isCoreV4EvidenceItem(item)) return false;
   if (!usableEvidenceStrengths.has(normalizeEvidenceStrength(item.evidenceStrength))) return false;
-  if (item.indexOnlyEvidence) return false;
   if (hasTextContamination(item.text || item.keyExcerpts || "")) return false;
   if (/official_index_or_directory|repo_readme_or_index|ecosystem_package_or_model_index|marketplace_listing|search_result_or_tool_directory|low_quality_chinese_official_or_seo/iu.test(item.evidenceObjectType || "")) return false;
   return true;
@@ -394,19 +384,13 @@ export function runGuanlanMonitorQualityGate({
   const outsideCoreCount = themeDist["outside-core-exploration"] || 0;
   const poolImportanceCoverageValue = String(logBullets.pool_importance_coverage_gaps || "unknown").trim().toLowerCase();
   const poolCoverageGapFlag = poolImportanceCoverageValue !== "none";
-  const poolItems = intakeItems.filter((item) => item.pooled);
-  const poolRouteDist = poolItems.reduce((acc, item) => {
-    const routes = item.routes?.length ? item.routes : ["index_only"];
-    for (const route of routes) acc[route] = (acc[route] || 0) + 1;
-    return acc;
-  }, {});
-  const corePoolCount = poolRouteDist.core_pool || 0;
-  const routedPoolCount = poolItems.filter((item) =>
-    item.routes.some((route) => ["core_pool", "emerging_pool", "user_feedback_pool", "watchlist"].includes(route))
-  ).length;
-  const indexOnlyPoolCount = poolItems.filter((item) => item.routes.includes("index_only")).length;
-  const aihotIndexOnlyCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && item.routes.includes("index_only")).length;
-  const aihotCoreCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && item.routes.includes("core_pool")).length;
+  const poolItems = intakeItems.filter((item) => item.eligibleForV4Extraction);
+  const corePoolItems = poolItems.filter(isCoreV4EvidenceItem);
+  const corePoolCount = corePoolItems.length;
+  const routedPoolCount = poolItems.filter(isRoutedV4EvidenceItem).length;
+  const indexOnlyPoolCount = poolItems.filter((item) => !isRoutedV4EvidenceItem(item)).length;
+  const aihotIndexOnlyCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && !isRoutedV4EvidenceItem(item)).length;
+  const aihotCoreCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && isCoreV4EvidenceItem(item)).length;
   const aihotResolvedEvidenceItems = poolItems.filter((item) =>
     item.acquisitionChannel === "aihot" &&
     item.originFetchStatus === "success" &&
@@ -416,8 +400,7 @@ export function runGuanlanMonitorQualityGate({
     item.rawQcDecision === "allow"
   );
   const aihotResolvedEvidenceCount = aihotResolvedEvidenceItems.length;
-  const aihotResolvedCoreCount = aihotResolvedEvidenceItems.filter((item) => item.routes.includes("core_pool")).length;
-  const corePoolItems = poolItems.filter((item) => item.routes.includes("core_pool"));
+  const aihotResolvedCoreCount = aihotResolvedEvidenceItems.filter(isCoreV4EvidenceItem).length;
   const coreEvidenceStrengthDistribution = corePoolItems.reduce((acc, item) => {
     const tier = normalizeEvidenceStrength(item.evidenceStrength);
     acc[tier] = (acc[tier] || 0) + 1;

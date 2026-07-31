@@ -160,6 +160,7 @@ function reusableFailedRun(sameDateRuns) {
     "Collect source raw artifacts",
     "Run Daily Monitor with QC",
     "Confirm V4 source-intake handoff and dedupe state",
+    "Persist originals privately and enforce the public boundary",
   ];
   for (const run of sameDateRuns.filter((candidate) => candidate.conclusion === "failure")) {
     const view = runOptional("gh", [

@@ -6,6 +6,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
+import { isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -1387,6 +1388,7 @@ test("daily workflow stages only V4-native outputs after the pre-commit gate suc
 
 test("daily workflow resumes downstream failures without repeating accepted collection", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
 
   assert.match(workflow, /resume_run_id:/u);
   assert.match(workflow, /Restore accepted source intake from failed run/u);
@@ -1396,6 +1398,29 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
   assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
   assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?conclusion !== "success"/u);
+  assert.match(workflow, /const requiredSteps = \[[\s\S]*?Persist originals privately and enforce the public boundary/u);
+  assert.match(dispatcher, /const requiredSteps = \[[\s\S]*?Persist originals privately and enforce the public boundary/u);
+});
+
+test("source-intake gate replays V4 evidence eligibility without private Raw routing fields", () => {
+  const accepted = {
+    eligibleForV4Extraction: true,
+    evidenceObjectUsable: true,
+    evidenceStrength: "rich_evidence",
+    rawQcDecision: "allow",
+    hasFullText: true,
+    originFetchStatus: "success",
+    evidenceObjectType: "event",
+    text: "Acme released an AI workflow product.",
+  };
+  assert.equal(isRoutedV4EvidenceItem(accepted), true);
+  assert.equal(isCoreV4EvidenceItem(accepted), true);
+  assert.equal(isUsableCoreEvidenceItem(accepted), true);
+
+  assert.equal(isRoutedV4EvidenceItem({ ...accepted, eligibleForV4Extraction: false }), false);
+  assert.equal(isUsableCoreEvidenceItem({ ...accepted, evidenceObjectType: "official_index_or_directory" }), false);
+  assert.equal(isCoreV4EvidenceItem({ ...accepted, rawQcDecision: "allow_with_degradation" }), false);
+  assert.equal(isUsableCoreEvidenceItem({ ...accepted, rawQcDecision: "allow_with_degradation" }), false);
 });
 
 test("production-chain staleness ignores clean-checkout filesystem timestamp order", () => {
