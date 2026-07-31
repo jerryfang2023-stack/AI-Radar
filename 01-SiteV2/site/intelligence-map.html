@@ -64,16 +64,15 @@
     .report-link:focus-visible, .report-list a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
     .report-archives { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--soft-line); }
     .research-lanes { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--soft-line); }
+    .report-section-head { display: grid; grid-template-columns: max-content minmax(0, 1fr); align-items: baseline; gap: 4px 16px; }
     .research-lanes-head { margin-bottom: 20px; }
-    .research-lanes-head h2 { margin: 0; font-family: var(--serif); font-size: var(--gl-type-module-title-size, 28px); font-weight: var(--gl-weight-title, 600); line-height: var(--gl-type-module-title-line, 40px); }
-    .research-lanes-head p { margin: 4px 0 0; color: var(--muted); font-size: 14px; line-height: 24px; }
+    .report-section-head h2 { margin: 0; font-family: var(--serif); font-size: var(--gl-type-module-title-size, 28px); font-weight: var(--gl-weight-title, 600); line-height: var(--gl-type-module-title-line, 40px); }
+    .research-lanes-head p, .report-archives-head span { margin: 0; color: var(--muted); font-size: 14px; line-height: 24px; }
     .research-lane-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
     .research-lane-card { padding: 22px 22px 20px; border-top: 2px solid var(--blue); border-bottom: 1px solid var(--line); background: var(--surface); }
     .research-lane-card h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 20px; line-height: 30px; }
     .research-lane-card p { margin: 0 0 18px; color: var(--muted); font-size: 14px; line-height: 24px; }
-    .report-archives-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 24px; }
-    .report-archives-head h2 { margin: 0; font-family: var(--serif); font-size: var(--gl-type-module-title-size, 28px); font-weight: var(--gl-weight-title, 600); line-height: var(--gl-type-module-title-line, 40px); }
-    .report-archives-head span { color: var(--muted); font-size: 14px; line-height: 24px; }
+    .report-archives-head { margin-bottom: 24px; }
     .report-archive-grid { display: grid; gap: 30px; }
     .report-archive-group { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 24px; align-items: start; }
     .report-archive-group + .report-archive-group { padding-top: 30px; border-top: 1px solid var(--soft-line); }
@@ -100,8 +99,9 @@
       .research-lanes { margin-top: 36px; padding-top: 24px; }
       .research-lane-grid { grid-template-columns: 1fr; gap: 12px; }
       .research-lane-card { padding: 20px 18px 18px; }
-      .report-archives-head { display: grid; gap: 2px; margin-bottom: 18px; }
-      .report-archives-head h2 { font-size: 22px; line-height: 32px; }
+      .report-section-head { gap: 2px 12px; }
+      .report-section-head h2 { font-size: 22px; line-height: 32px; }
+      .report-archives-head { margin-bottom: 18px; }
       .report-archive-grid { gap: 24px; }
       .report-archive-group { grid-template-columns: 1fr; gap: 8px; }
       .report-archive-group + .report-archive-group { padding-top: 24px; }
@@ -154,7 +154,7 @@
           </article>
         </section>
         <section class="research-lanes" aria-labelledby="research-lanes-title">
-          <div class="research-lanes-head">
+          <div class="research-lanes-head report-section-head">
             <h2 id="research-lanes-title">专题研究</h2>
             <p>事实字段回到数据中心，研究判断只在应用中心组织和发布。</p>
           </div>
@@ -172,7 +172,7 @@
           </div>
         </section>
         <section class="report-archives" aria-labelledby="archive-title">
-          <div class="report-archives-head"><h2 id="archive-title">报告归档</h2><span>按时间回看月报与周报</span></div>
+          <div class="report-archives-head report-section-head"><h2 id="archive-title">报告归档</h2><span>按时间回看月报与周报</span></div>
           <div class="report-archive-grid">
             <section class="report-archive-group" aria-labelledby="weekly-archive-title">
               <h3 id="weekly-archive-title">周报</h3>

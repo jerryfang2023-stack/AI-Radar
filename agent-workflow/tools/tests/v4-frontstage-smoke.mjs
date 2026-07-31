@@ -170,6 +170,25 @@ async function main() {
               linkBottomDelta: Math.abs(linkBottoms[0] - linkBottoms[1]),
             };
           })(),
+          reportSectionHeadAlignment: (() => {
+            const heads = [...document.querySelectorAll(".report-section-head")];
+            if (!heads.length) return null;
+            const rows = heads.map((head) => {
+              const title = head.querySelector("h2")?.getBoundingClientRect();
+              const note = head.querySelector("p, span")?.getBoundingClientRect();
+              return {
+                titleTop: Math.round(title?.top || 0),
+                titleRight: Math.round(title?.right || 0),
+                noteTop: Math.round(note?.top || 0),
+                noteLeft: Math.round(note?.left || 0),
+                ok: Boolean(title && note)
+                  && note.top >= title.top - 1
+                  && note.top < title.bottom
+                  && note.left >= title.right,
+              };
+            });
+            return { count: rows.length, rows, ok: rows.length === 2 && rows.every((row) => row.ok) };
+          })(),
           eventMobileFilters: (() => {
             if (window.innerWidth > 780 || document.body.dataset.dcView !== "events") return null;
             const button = document.querySelector(".dc-toolbar > .dc-button");
@@ -222,6 +241,7 @@ async function main() {
           && page.url().includes(expected)
           && metrics.scrollWidth <= metrics.width + 1
           && (!metrics.reportFeatureAlignment || (metrics.reportFeatureAlignment.cardBottomDelta <= 1 && metrics.reportFeatureAlignment.linkBottomDelta <= 1))
+          && metrics.reportSectionHeadAlignment?.ok !== false
           && metrics.eventMobileFilters?.ok !== false
           && fundingDialog !== false
           && fundingProductFormFilter !== false

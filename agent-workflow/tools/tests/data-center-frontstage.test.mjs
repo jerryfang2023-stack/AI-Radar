@@ -304,6 +304,9 @@ test("Guanlan Research uses the focused two-center sidebar and owns research top
   assert.match(html, /企业 AI 落地/u);
   assert.doesNotMatch(html, /href="opportunity-map\.html"/u);
   assert.match(html, /class="report-feature-grid"/u);
+  assert.match(html, /class="research-lanes-head report-section-head"/u);
+  assert.match(html, /class="report-archives-head report-section-head"/u);
+  assert.match(html, /\.report-section-head \{ display: grid; grid-template-columns: max-content minmax\(0, 1fr\); align-items: baseline/u);
   assert.ok(weeklyFeaturePosition >= 0 && weeklyFeaturePosition < monthlyFeaturePosition);
   assert.match(html, /REPORTS-V1\.2\.0-research-hub/u);
   assert.match(html, /class="report-archive-grid"/u);
