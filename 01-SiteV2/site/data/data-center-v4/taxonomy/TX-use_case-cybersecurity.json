@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-use_case-cybersecurity",
@@ -32,7 +32,6 @@
       "EV-53f4f2a34b3ce1b4",
       "EV-b240fb11e65b018e",
       "EV-bd508dbe4205774f",
-      "EV-2ef56a158898ae73",
       "EV-a4fe78df6ccd63c8",
       "EV-3eb44a239ebef4b0",
       "EV-5f2acbfb8f54fd59",
@@ -67,6 +66,7 @@
       "EV-f1418d9e3b1413b7",
       "EV-2eabd03665cbdef7",
       "EV-a35a3871bf36fea2",
+      "EV-94cb16144a8fcfdb",
       "EV-dbda21182e61923b"
     ],
     "entityIds": [
@@ -1462,68 +1462,6 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=1330-1001176217en-1878JJNUD9H6E0K0LPGOSGE4ST",
       "publisher": "markets.ft.com"
-    },
-    {
-      "id": "EV-2ef56a158898ae73",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-      "originalTitle": "",
-      "subject": "undisclosed_subject",
-      "action": "product_release",
-      "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "cybersecurity",
-          "dimensionName": "应用场景",
-          "name": "网络安全"
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/983/947.htm",
-      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-a4fe78df6ccd63c8",
@@ -4450,6 +4388,70 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-94cb16144a8fcfdb",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "originalTitle": "",
+      "subject": "Anthropic：第三方评估环境配置失误，导致三起真实",
+      "action": "网络安全事件",
+      "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/947.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-dbda21182e61923b",
       "dataDate": "2026-07-28",
       "date": "2026-07-28",
@@ -4740,8 +4742,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-4c750d338325c55f",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
+        "EV-ebd76d18d3f0ee7b",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -5230,6 +5232,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -5304,7 +5307,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -5442,7 +5445,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -5582,6 +5584,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
@@ -5643,7 +5646,6 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -5796,7 +5798,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
-        "EV-fc13165fbd0ef3de",
+        "EV-94cb16144a8fcfdb",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -6134,7 +6136,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -6274,15 +6278,20 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-3ccbd9105a45d8fc",
@@ -6472,7 +6481,6 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
-        "EV-0d5a32aca724d30e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -6506,7 +6514,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-30397d0cfc1b0e29",
@@ -6578,7 +6586,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
+        "EV-60110525440fac47",
         "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
@@ -6607,6 +6615,7 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -6990,7 +6999,7 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-2ffbe4560e69992a",
         "EV-ae736eb124d7163a",
         "EV-ee9a1c99fe7054d6",

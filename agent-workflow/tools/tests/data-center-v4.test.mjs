@@ -6,6 +6,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
+import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
@@ -93,9 +94,24 @@ test("product-name-only mixed titles do not require artificial translation", () 
   assert.equal(sourceTitleNeedsChineseTranslation("Parloa triples valuation to $3 billion"), true);
 });
 
+test("a versioned technical source title is displayed exactly as published", () => {
+  const sourceTitle = "llm-chat-completions-server 0.1a0";
+  assert.equal(buildEventDisplayTitle({
+    rawDocument: {
+      title_original: sourceTitle,
+      title_zh: sourceTitle,
+    },
+  }), sourceTitle);
+});
+
 test("source title translation cannot omit explicit AI semantics", () => {
   assert.equal(titleTranslationLooksUsable("Bayer Uses AI to Cut Errors by 70%", "拜耳将错误减少 70%"), false);
   assert.equal(titleTranslationLooksUsable("Bayer Uses AI to Cut Errors by 70%", "拜耳利用 AI 将错误减少 70%"), true);
+});
+
+test("source title translation preserves the Situational Awareness organization name", () => {
+  assert.equal(titleTranslationLooksUsable("The loss of Situational Awareness", "情境感知的缺失"), false);
+  assert.equal(titleTranslationLooksUsable("The loss of Situational Awareness", "Situational Awareness 的失利"), true);
 });
 
 test("source title normalization removes a trailing publisher suffix", () => {
@@ -129,6 +145,18 @@ function entry(id, title, body, extra = {}) {
       extraction_method: "fixture",
       ...extra
     }
+  };
+}
+
+function acceptedModelCandidate(sourceEntry, claims, evidence) {
+  return {
+    candidate_id: `MAC-${sourceEntry.raw.raw_id}`,
+    task_type: "claim_extraction",
+    asset_id: `QA-${sourceEntry.raw.raw_id}`,
+    source_ref: sourceArtifact(sourceEntry.raw, sourceEntry.file).source_artifact_id,
+    status: "accepted",
+    proposal: { claims },
+    evidence,
   };
 }
 
@@ -185,6 +213,41 @@ test("duplicate funding sources cluster and preserve status conflict", () => {
   assert.equal(bundle.canonical_events[0].source_refs.length, 2);
   assert.equal(bundle.canonical_events[0].publication_status, "disputed");
   assert.equal(bundle.event_conflicts.length, 1);
+});
+
+test("portfolio-sale reporting becomes one acquisition event across source headlines", () => {
+  const techCrunchQuote = "Situational Awareness, an AI hedge fund, has sold the majority of its public stock portfolio to Ken Griffin's Citadel.";
+  const retainedQuote = "Situational Awareness continues to hold its private investment in Anthropic.";
+  const vergeQuote = "Situational Awareness, the AI hedge fund, has sold most of its entire public stock portfolio to Ken Griffin's Citadel.";
+  const techCrunch = entry("situational-techcrunch", "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares", `${retainedQuote}\n${techCrunchQuote}`, {
+    title_zh: "AI 对冲基金 Situational Awareness 可能已出售公开投资组合，但仍持有 Anthropic 股份",
+  });
+  const verge = entry("situational-verge", "The loss of Situational Awareness", vergeQuote, {
+    title_zh: "Situational Awareness 的失利",
+  });
+  const modelAssist = {
+    candidates: [
+      acceptedModelCandidate(techCrunch, [
+        { event_type: "capital_investment", subject: "Situational Awareness", object: "Anthropic shares", evidence_index: 0 },
+        { event_type: "acquisition", subject: "Citadel", object: "majority of Situational Awareness's public stock portfolio", evidence_index: 1 },
+      ], [
+        { start: 0, end: retainedQuote.length, quote: retainedQuote },
+        { start: retainedQuote.length + 1, end: retainedQuote.length + 1 + techCrunchQuote.length, quote: techCrunchQuote },
+      ]),
+      acceptedModelCandidate(verge, [
+        { event_type: "financial_performance", subject: "Situational Awareness", object: "public stock portfolio sold to Citadel", evidence_index: 0 },
+      ], [
+        { start: 0, end: vergeQuote.length, quote: vergeQuote },
+      ]),
+    ],
+  };
+
+  const bundle = buildBundle([techCrunch, verge], taxonomy, date, "2026-07-16T00:00:00.000Z", { modelAssist });
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_type, "acquisition");
+  assert.equal(bundle.canonical_events[0].source_refs.length, 2);
+  assert.equal(bundle.canonical_events[0].display_title_zh, techCrunch.raw.title_zh);
 });
 
 test("same URL snapshots use content-addressed source IDs and identical captures are deduplicated", () => {
@@ -743,7 +806,6 @@ test("index pages, question headlines, roundups, and reaction articles cannot be
 test("TLDR, listicle, and context-only titles cannot become commercial events", () => {
   const titles = [
     "Anthropic 开放权重，Kimi 发布 K3 权重，MAI Cyber 模型 TLDR",
-    "2026年7月50家顶级AI融资初创公司",
     "情境感知的缺失",
     "AI 工厂供应链再平衡的真正含义",
   ];
@@ -754,6 +816,41 @@ test("TLDR, listicle, and context-only titles cannot become commercial events", 
       title,
     ).accepted, false, title);
   }
+});
+
+test("the reviewed Top 50 AI funded startups source remains eligible", () => {
+  for (const title of [
+    "50 Top AI Funded Startups (July 2026)",
+    "2026年7月50家顶级AI融资初创公司",
+  ]) {
+    assert.equal(eventSourceEligibility(
+      { clean_text: "The ranked source contains dated company financing and IPO facts.", raw_qc_decision: "pass" },
+      { source_url: "https://aifundingtracker.com/top-50-ai-startups/" },
+      title,
+    ).accepted, true, title);
+  }
+});
+
+test("recap articles do not become model release events", () => {
+  const result = eventSourceEligibility(
+    { clean_text: "A discussion covering several previously released open models.", raw_qc_decision: "pass" },
+    { source_url: "https://www.interconnects.ai/p/open-models-recap" },
+    "Open models recap: more on Kimi K3, Qwen 3.8, distillation, and what's next",
+  );
+
+  assert.equal(result.accepted, false);
+  assert.equal(result.reason, "non_event_or_index_title");
+});
+
+test("analysis headlines about what a rebalance means stay out of commercial events", () => {
+  const result = eventSourceEligibility(
+    { clean_text: "An analysis of the portfolio implications of a monthly fund rebalance.", raw_qc_decision: "pass" },
+    { source_url: "https://www.wisdomtree.com/us/insights/blog/wtai-rebalance" },
+    "The AI Factory Supply Chain: What WTAI's July 2026 Rebalance Is Really Saying | WisdomTree",
+  );
+
+  assert.equal(result.accepted, false);
+  assert.equal(result.reason, "non_event_or_index_title");
 });
 
 test("research and report containers cannot promote incidental historical events", () => {
@@ -779,6 +876,34 @@ test("research and report containers cannot promote incidental historical events
     accepted: false,
     reason: "model_assist_source_outside_daily_window",
   });
+});
+
+test("deterministic events outside the seven-day daily window stay in QA", () => {
+  const bundle = buildBundle([
+    entry(
+      "stale-deterministic-funding",
+      "Natural raises $30M for AI agent payments",
+      "Natural raised $30 million in a Series A round for its AI agent payment platform.",
+      { published_at: "2026-07-20T00:00:00.000Z" },
+    ),
+  ], taxonomy, "2026-07-31", "2026-07-31T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "source_outside_daily_window"));
+});
+
+test("sources dated after the data day cannot become commercial events", () => {
+  const bundle = buildBundle([
+    entry(
+      "future-dated-service-change",
+      "GSA removes Anthropic integrations",
+      "GSA will remove its Anthropic system integrations by August 27.",
+      { published_at: "2026-08-27T00:00:00.000Z" },
+    ),
+  ], taxonomy, "2026-07-31", "2026-07-31T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "source_published_after_data_date"));
 });
 
 test("secondary rumor wording in the source lead requires primary confirmation", () => {
@@ -809,6 +934,33 @@ test("specific research, policy, standard, and financial facts outrank generic r
     "新规范取消握手并移除了会话 ID。",
     "standard_specification",
   ), "completed");
+});
+
+test("a disclosed cybersecurity incident is not classified as a product release", () => {
+  const bundle = buildBundle([
+    entry(
+      "anthropic-security-incident",
+      "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "Anthropic 发布公告，表示在 Claude 网络安全评估审查中发现了三起真实网络安全事件，原因是第三方评估环境配置失误。",
+    ),
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_type, "security_incident");
+});
+
+test("an announced AI lawmaking process is classified as policy regulation", () => {
+  const bundle = buildBundle([
+    entry(
+      "china-ai-law",
+      "国家发改委：将加快《人工智能法》立法进程",
+      "国家发展改革委表示将加快《人工智能法》的立法进程，统筹人工智能发展与安全。",
+    ),
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_type, "policy_regulation");
+  assert.equal(bundle.canonical_events[0].event_status, "planned");
 });
 
 test("an attributed completed financing is not downgraded to rumor", () => {
@@ -1524,4 +1676,55 @@ test("Noetra infrastructure sources merge and preserve disclosed chip capacity",
   assert.equal(bundle.hardware_records[0].supplier, "NVIDIA");
   assert.equal(bundle.hardware_records[0].customer, "Noetra");
   assert.equal(bundle.hardware_records[0].source_refs.length, 2);
+});
+
+test("Gemini Robotics ER 2 reports cluster into one model release", () => {
+  const bundle = buildBundle([
+    entry(
+      "gemini-er2-official",
+      "Gemini Robotics ER 2: Powering robotics with video understanding and multi-robot collaboration",
+      "Google DeepMind released the Gemini Robotics ER 2 model for video understanding and multi-robot collaboration.",
+      { title_zh: "Gemini Robotics ER 2：用视频理解与多机器人协作赋能机器人" },
+    ),
+    entry(
+      "gemini-er2-media",
+      "谷歌 DeepMind 推出 Gemini Robotics ER 2，支持连续视频理解与多机器人协作",
+      "谷歌 DeepMind 推出 Gemini Robotics ER 2 模型，支持连续视频理解与多机器人协作。",
+      { title_zh: "谷歌 DeepMind 推出 Gemini Robotics ER 2，支持连续视频理解与多机器人协作" },
+    ),
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_type, "model_release");
+  assert.equal(bundle.canonical_events[0].source_refs.length, 2);
+});
+
+test("GPT-5.6 price-cut reports cluster into one pricing event", () => {
+  const decoder = entry(
+    "gpt56-price-decoder",
+    "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
+    "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model. OpenAI cut GPT-5.6 Luna prices by 80 percent and GPT-5.6 Terra prices by 20 percent.",
+    { title_zh: "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%" },
+  );
+  const analysisQuote = "GPT-5.6 Terra price decreases by 20 percent and GPT-5.6 Luna price decreases by 80 percent.";
+  const analysis = entry(
+    "gpt56-price-analysis",
+    "Advancing the price-performance frontier with GPT-5.6",
+    analysisQuote,
+    { title_zh: "以 GPT-5.6 推进性价比前沿" },
+  );
+  const modelAssist = {
+    candidates: [
+      acceptedModelCandidate(analysis, [
+        { event_type: "pricing_change", subject: "OpenAI", object: "GPT-5.6 Luna and Terra prices", evidence_index: 0 },
+      ], [
+        { start: 0, end: analysisQuote.length, quote: analysisQuote },
+      ]),
+    ],
+  };
+  const bundle = buildBundle([decoder, analysis], taxonomy, date, "2026-07-16T00:00:00.000Z", { modelAssist });
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_type, "pricing_change");
+  assert.equal(bundle.canonical_events[0].source_refs.length, 2);
 });

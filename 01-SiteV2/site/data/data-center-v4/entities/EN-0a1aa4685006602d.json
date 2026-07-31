@@ -4,15 +4,15 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "entity": {
-    "id": "EN-2caedd902ff4ed81",
-    "name": "GSA",
+    "id": "EN-0a1aa4685006602d",
+    "name": "国家发改委",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -20,12 +20,14 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-1b74a6307ba10bb1"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-31",
+    "lastSeen": "2026-07-31",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -34,9 +36,27 @@
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-1b74a6307ba10bb1"
+      ]
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-1b74a6307ba10bb1",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-31",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "国家发改委：将加快《人工智能法》立法进程",
+        "displayTags": [],
+        "entityIds": [
+          "EN-0a1aa4685006602d"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

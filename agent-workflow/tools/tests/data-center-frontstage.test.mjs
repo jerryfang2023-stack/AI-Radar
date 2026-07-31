@@ -38,7 +38,7 @@ test("frontstage adapter builds real V4 data collections", () => {
   assert.ok(data.community.length > 0);
   assert.ok(data.viewpoints.length > 0);
   assert.ok(data.events.every((event) => event.id && event.title && event.date));
-  assert.ok(data.events.every((event) => /[\u3400-\u9fff]/u.test(event.title)));
+  assert.ok(data.events.every((event) => isCompletePublicEventTitle(event.title)));
   assert.ok(data.events.every((event) => Array.isArray(event.tags) && Array.isArray(event.sources)));
 });
 

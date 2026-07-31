@@ -11,28 +11,27 @@
     ],
     "raw_documents": 108,
     "original_sources": 94,
-    "valid_claims": 28,
-    "observations": 1,
-    "canonical_events": 12,
+    "valid_claims": 19,
+    "observations": 0,
+    "canonical_events": 8,
     "blocker_counts": {
-      "no_source_bounded_event": 29,
+      "no_source_bounded_event": 14,
       "no_source_bounded_claim": 1,
-      "non_event_or_index_title": 40,
+      "source_outside_daily_window": 54,
+      "non_event_or_index_title": 11,
       "research_or_report_container_not_event_source": 1,
-      "model_assist_source_outside_daily_window": 4,
-      "opinion_without_source_bounded_event": 1,
       "directory_page_not_event_source": 1,
+      "source_published_after_data_date": 1,
       "repository_page_requires_release_source": 6,
-      "multi_event_roundup_not_single_event_source": 1,
-      "event_not_ai_relevant": 2,
+      "event_not_ai_relevant": 1,
       "raw_source_quality_block": 9,
       "raw_document_not_auditable": 1
     },
     "rates": {
       "original_source_rate": 0.8703703703703703,
-      "valid_claim_rate": 0.25925925925925924,
-      "observation_rate": 0.03571428571428571,
-      "event_conversion_rate": 0.42857142857142855
+      "valid_claim_rate": 0.17592592592592593,
+      "observation_rate": 0,
+      "event_conversion_rate": 0.42105263157894735
     }
   },
   {
@@ -48,19 +47,20 @@
     ],
     "raw_documents": 26,
     "original_sources": 13,
-    "valid_claims": 9,
-    "observations": 9,
-    "canonical_events": 3,
+    "valid_claims": 6,
+    "observations": 8,
+    "canonical_events": 2,
     "blocker_counts": {
-      "no_source_bounded_event": 6,
+      "source_outside_daily_window": 7,
       "research_or_report_container_not_event_source": 1,
-      "non_event_or_index_title": 5,
+      "non_event_or_index_title": 3,
+      "no_source_bounded_event": 2,
       "raw_source_quality_block": 10,
       "raw_document_not_auditable": 1
     },
     "rates": {
       "original_source_rate": 0.5,
-      "valid_claim_rate": 0.34615384615384615,
+      "valid_claim_rate": 0.23076923076923078,
       "observation_rate": 1,
       "event_conversion_rate": 0.3333333333333333
     }

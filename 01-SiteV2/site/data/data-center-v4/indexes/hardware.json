@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "hardware": [
     {
@@ -2087,17 +2087,15 @@
       "snapshotId": "HWS-825c2169bb6387ae",
       "eventId": "EV-7a0f201debe99f2b",
       "eventIds": [
-        "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590"
+        "EV-7a0f201debe99f2b"
       ],
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
-      "title": "DeepMind / Gemini Robotics 2 / Gemini Robotics ER 2",
+      "title": "DeepMind / Gemini Robotics 2",
       "subject": "Google DeepMind",
       "productNames": [
         "DeepMind",
-        "Gemini Robotics 2",
-        "Gemini Robotics ER 2"
+        "Gemini Robotics 2"
       ],
       "hardwareType": "robot",
       "factTypes": [
@@ -2107,10 +2105,10 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-bb706705b10bf383"
+          "fact_ref": "HWF-85aa0e443edb43c2"
         }
       },
-      "factCount": 2,
+      "factCount": 1,
       "snapshotCount": 1,
       "changes": [],
       "capacityFacts": [],
@@ -2143,34 +2141,6 @@
             "SA-6436d40ab638ade0"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-bb706705b10bf383",
-          "fact_type": "product",
-          "observed_at": "2026-07-30T23:12:07.000Z",
-          "subject_entity_id": "EN-2b6e51bec93e86c1",
-          "subject_name": "Google DeepMind",
-          "product_entity_ids": [
-            "EN-4d09c69c19f5f67b",
-            "EN-364df82f85761d58"
-          ],
-          "product_names": [
-            "DeepMind",
-            "Gemini Robotics ER 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
-          "event_refs": [
-            "EV-8887fb45a0398590"
-          ],
-          "claim_ref": "CL-01047086f6bfac89",
-          "source_refs": [
-            "SA-c04e7cbf1504a155"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],
@@ -2180,36 +2150,32 @@
           "dimensionName": "技术",
           "id": "on_device",
           "name": "端侧"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "reasoning",
-          "name": "推理能力"
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
       "entityIds": [
         "EN-2b6e51bec93e86c1",
         "EN-4d09c69c19f5f67b",
-        "EN-e1086f449d58de87",
-        "EN-364df82f85761d58"
+        "EN-e1086f449d58de87"
       ]
     },
     {
-      "id": "HWC-7c9238bfeb82f08f",
-      "snapshotKey": "7c9238bfeb82f08f",
-      "snapshotId": "HWS-1f77657dbe10c510",
-      "eventId": "EV-0d5a32aca724d30e",
+      "id": "HWC-c7d225e2691526e4",
+      "snapshotKey": "c7d225e2691526e4",
+      "snapshotId": "HWS-87b252b9f8c77325",
+      "eventId": "EV-60110525440fac47",
       "eventIds": [
-        "EV-0d5a32aca724d30e"
+        "EV-60110525440fac47"
       ],
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
-      "title": "Open",
-      "subject": "Open",
-      "productNames": [],
-      "hardwareType": "networking",
+      "title": "Gemini Robotics ER 2 / DeepMind",
+      "subject": "Google",
+      "productNames": [
+        "Gemini Robotics ER 2",
+        "DeepMind"
+      ],
+      "hardwareType": "robot",
       "factTypes": [
         "product"
       ],
@@ -2217,7 +2183,7 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-d46baffb1c5cd33a"
+          "fact_ref": "HWF-bb706705b10bf383"
         }
       },
       "factCount": 1,
@@ -2228,33 +2194,121 @@
       "specificationFacts": [
         {
           "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-d46baffb1c5cd33a",
+          "hardware_fact_id": "HWF-bb706705b10bf383",
           "fact_type": "product",
-          "observed_at": "2026-07-22T00:00:00.000Z",
-          "subject_entity_id": "EN-2348f99874421257",
-          "subject_name": "Open",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "networking",
+          "observed_at": "2026-07-30T00:00:00.000Z",
+          "subject_entity_id": "EN-bbdefa2950f49882",
+          "subject_name": "Google",
+          "product_entity_ids": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "product_names": [
+            "Gemini Robotics ER 2",
+            "DeepMind"
+          ],
+          "component_type": "robot",
           "metric_value": "",
           "unit": "",
-          "source_quote": "00:00:06 Nathan Lambert: Okay, welcome back to Interconnects. We’re doing our quarterly open model roundup, which is mostly us just making fun of or explaining, not making fun, why so many distillation takes are bad and understanding the state of where things stand. I think last Thursday was when Kimi K3 was released. I think we will see much much more in the near future. It seems pretty inevitable. Like over the weekend, Xi gave his speech where he directly committed to openness and open source as a strategy. It wasn’t a detailed layout state of affairs.",
+          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
           "event_refs": [
-            "EV-0d5a32aca724d30e"
+            "EV-60110525440fac47"
           ],
-          "claim_ref": "CL-cfed864aad877156",
+          "claim_ref": "CL-01047086f6bfac89",
           "source_refs": [
-            "SA-86a0bb3fbd4edf9c"
+            "SA-048a2e73225d3122",
+            "SA-c04e7cbf1504a155"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-364df82f85761d58",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b"
+      ]
+    },
+    {
+      "id": "HWC-e06eaee2652e2537",
+      "snapshotKey": "e06eaee2652e2537",
+      "snapshotId": "HWS-9c27c0bd49616a1a",
+      "eventId": "EV-023fd03c675d940d",
+      "eventIds": [
+        "EV-023fd03c675d940d"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "llm-chat-completions-server",
+      "subject": "llm-chat-completions-server",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b9b6bddaf5ddf1dc"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-b9b6bddaf5ddf1dc",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T15:43:16.000Z",
+          "subject_entity_id": "EN-b161cee9ae7eba20",
+          "subject_name": "llm-chat-completions-server",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Release: llm-chat-completions-server 0.1a0",
+          "event_refs": [
+            "EV-023fd03c675d940d"
+          ],
+          "claim_ref": "CL-dbc7e23dba27fc95",
+          "source_refs": [
+            "SA-289ebd91873e4362"
           ],
           "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
         }
       ],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
       "entityIds": [
-        "EN-2348f99874421257",
-        "EN-cbc62794911ff31b"
+        "EN-b161cee9ae7eba20"
       ]
     },
     {
@@ -2650,11 +2704,18 @@
       ],
       "specificationFacts": [],
       "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
       "entityIds": [
-        "EN-2348f99874421257",
-        "EN-cbc62794911ff31b"
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf"
       ]
     },
     {
@@ -3943,19 +4004,20 @@
       ],
       "raw_documents": 26,
       "original_sources": 13,
-      "valid_claims": 9,
-      "observations": 9,
-      "canonical_events": 3,
+      "valid_claims": 6,
+      "observations": 8,
+      "canonical_events": 2,
       "blocker_counts": {
-        "no_source_bounded_event": 6,
+        "source_outside_daily_window": 7,
         "research_or_report_container_not_event_source": 1,
-        "non_event_or_index_title": 5,
+        "non_event_or_index_title": 3,
+        "no_source_bounded_event": 2,
         "raw_source_quality_block": 10,
         "raw_document_not_auditable": 1
       },
       "rates": {
         "original_source_rate": 0.5,
-        "valid_claim_rate": 0.34615384615384615,
+        "valid_claim_rate": 0.23076923076923078,
         "observation_rate": 1,
         "event_conversion_rate": 0.3333333333333333
       },

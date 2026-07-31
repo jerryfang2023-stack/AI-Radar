@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-07-31T08:47:38.651Z",
+    "generatedAt": "2026-07-31T09:31:52.117Z",
     "dateRange": {
       "start": "2026-07-25",
       "end": "2026-07-31"
@@ -30,16 +30,16 @@ window.WaveSightPipelineDashboard = {
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 86,
+        "accepted_claims": 70,
         "rejected_claims": 0,
-        "accepted": 86,
+        "accepted": 70,
         "rejected": 0,
         "pending_claims": 2,
-        "canonical_events": 31,
-        "entities": 47,
-        "relationships": 88,
-        "conflicts": 0,
-        "qa_queue": 259
+        "canonical_events": 23,
+        "entities": 38,
+        "relationships": 72,
+        "conflicts": 1,
+        "qa_queue": 262
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/manifest.json",
@@ -49,11 +49,11 @@ window.WaveSightPipelineDashboard = {
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "partial",
+      "status": "unknown",
       "counts": {
-        "opportunity_map": "passed",
-        "trend_radar": "passed",
-        "funding_insights": "passed",
+        "opportunity_map": "unknown",
+        "trend_radar": "unknown",
+        "funding_insights": "unknown",
         "fde_hardware_sync": "unknown"
       },
       "evidence": [
@@ -63,7 +63,7 @@ window.WaveSightPipelineDashboard = {
     {
       "id": "publication",
       "label": "发布",
-      "status": "waiting",
+      "status": "unknown",
       "counts": {
         "v4_bundle_ready": true
       },
@@ -78,12 +78,12 @@ window.WaveSightPipelineDashboard = {
     "shortLabel": "07.31",
     "discovered": 288,
     "captured": 288,
-    "claims": 88,
-    "events": 31,
-    "entities": 47,
-    "relationships": 88,
-    "conflicts": 0,
-    "qaQueue": 259,
+    "claims": 72,
+    "events": 23,
+    "entities": 38,
+    "relationships": 72,
+    "conflicts": 1,
+    "qaQueue": 262,
     "telemetryDate": "2026-07-31",
     "collection": {
       "discovered": 1,
@@ -92,29 +92,29 @@ window.WaveSightPipelineDashboard = {
       "raw_documents": 288
     },
     "factBuild": {
-      "accepted_claims": 86,
+      "accepted_claims": 70,
       "rejected_claims": 0,
-      "accepted": 86,
+      "accepted": 70,
       "rejected": 0,
       "pending_claims": 2,
-      "canonical_events": 31,
-      "entities": 47,
-      "relationships": 88,
-      "conflicts": 0,
-      "qa_queue": 259,
+      "canonical_events": 23,
+      "entities": 38,
+      "relationships": 72,
+      "conflicts": 1,
+      "qa_queue": 262,
       "qa_by_status": {
-        "review_optional": 236,
-        "open": 23
+        "review_optional": 241,
+        "open": 21
       }
     },
     "applicationProjection": {
-      "opportunity_map": "passed",
-      "trend_radar": "passed",
-      "funding_insights": "passed",
+      "opportunity_map": "unknown",
+      "trend_radar": "unknown",
+      "funding_insights": "unknown",
       "fde_hardware_sync": "unknown"
     },
     "publication": {
-      "status": "waiting"
+      "status": "unknown"
     }
   },
   "days": [
@@ -124,12 +124,12 @@ window.WaveSightPipelineDashboard = {
       "shortLabel": "07.31",
       "discovered": 288,
       "captured": 288,
-      "claims": 88,
-      "events": 31,
-      "entities": 47,
-      "relationships": 88,
-      "conflicts": 0,
-      "qaQueue": 259
+      "claims": 72,
+      "events": 23,
+      "entities": 38,
+      "relationships": 72,
+      "conflicts": 1,
+      "qaQueue": 262
     },
     {
       "date": "2026-07-30",
@@ -213,12 +213,12 @@ window.WaveSightPipelineDashboard = {
   "totals": {
     "discovered": 1139,
     "captured": 1139,
-    "claims": 859,
-    "events": 250,
-    "entities": 394,
-    "relationships": 859,
-    "conflicts": 0,
-    "qaQueue": 873
+    "claims": 843,
+    "events": 242,
+    "entities": 385,
+    "relationships": 843,
+    "conflicts": 1,
+    "qaQueue": 876
   },
   "v4Gate": {
     "status": "passed",
@@ -226,6 +226,7 @@ window.WaveSightPipelineDashboard = {
     "gate_date": "2026-07-31",
     "failures": [],
     "warnings": [
+      "No source-bounded FDE projection was produced.",
       "No source-bounded hardware projection was produced."
     ]
   },

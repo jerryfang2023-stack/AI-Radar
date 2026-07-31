@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-code_generation",
@@ -36,6 +36,7 @@
       "EV-4c0af31f1399ea8c",
       "EV-e1a4bc40db4a9d8f",
       "EV-d5f276ad6b2ac9de",
+      "EV-0d5a32aca724d30e",
       "EV-bfa090c78227abf8",
       "EV-0f440082086c02df",
       "EV-2634b786bde9fb8e",
@@ -87,6 +88,8 @@
       "EN-86ca9936019f1039",
       "EN-4094a2b7125c7564",
       "EN-8f71c4871a160172",
+      "EN-436364a46513cdf3",
+      "EN-e5904fa438fcd5bf",
       "EN-76a9a8a6e2f1a47b",
       "EN-7ad3f3203e5d717e",
       "EN-275b0f4a4023d91c",
@@ -138,7 +141,7 @@
       "HW-b1302168a9ab18e8"
     ],
     "firstSeen": "2026-03-30",
-    "lastSeen": "2026-07-29"
+    "lastSeen": "2026-07-30"
   },
   "events": [
     {
@@ -1822,6 +1825,76 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-30",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "Kimi K3-256k 发布",
+      "object": "：256k 上下文窗口与代码生成能力",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf"
+      ],
+      "entityNames": [
+        "Kimi K3-256k",
+        "K3-256k"
+      ],
+      "productName": "K3-256k",
+      "products": [
+        {
+          "name": "K3-256k",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-bfa090c78227abf8",
@@ -4482,7 +4555,9 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "微软"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4622,15 +4697,20 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802"
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-0cc3af265406c202",
@@ -4747,6 +4827,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
@@ -4808,7 +4889,6 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -4961,7 +5041,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
-        "EV-fc13165fbd0ef3de",
+        "EV-94cb16144a8fcfdb",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -5079,6 +5159,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-81a37a2365624b42",
         "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
@@ -5153,7 +5234,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-1fe7328d2c69693f",
+        "EV-ebd76d18d3f0ee7b",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -5291,7 +5372,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -5668,8 +5748,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-4c750d338325c55f",
-        "EV-876cfe17574eb2c1",
+        "EV-60110525440fac47",
+        "EV-ebd76d18d3f0ee7b",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -6256,6 +6336,48 @@
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-436364a46513cdf3",
+      "name": "Kimi K3-256k",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-30"
+    },
+    {
+      "id": "EN-e5904fa438fcd5bf",
+      "name": "K3-256k",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-30"
     },
     {
       "id": "EN-76a9a8a6e2f1a47b",
@@ -7010,7 +7132,6 @@
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
-        "EV-fafc300c25e9b0a7",
         "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
         "EV-56626f2604aa1e30",
@@ -7042,7 +7163,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-0db2d631b42da133",
@@ -7321,9 +7442,7 @@
       "name": "DeepSeek",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "深度求索"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -7333,7 +7452,6 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
-        "EV-fafc300c25e9b0a7",
         "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
@@ -7374,7 +7492,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-c27c48199bb1e14b",
@@ -7482,7 +7600,7 @@
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
         "EV-7a0f201debe99f2b",
-        "EV-8887fb45a0398590",
+        "EV-60110525440fac47",
         "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
@@ -7511,6 +7629,7 @@
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -8037,6 +8156,84 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-1e2465488c5a5d77",
+      "snapshotKey": "1e2465488c5a5d77",
+      "snapshotId": "HWS-97daa94104979156",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Kimi K3",
+      "subject": "Kimi K3",
+      "productNames": [
+        "Kimi K3"
+      ],
+      "hardwareType": "compute_cluster",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-35eaca87a98d223b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-35eaca87a98d223b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T08:38:20.000Z",
+          "subject_entity_id": "EN-aabd1a8a869c34a4",
+          "subject_name": "Kimi K3",
+          "product_entity_ids": [
+            "EN-607964040e4b62e0"
+          ],
+          "product_names": [
+            "Kimi K3"
+          ],
+          "component_type": "compute_cluster",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-2c626d78e65c2afc",
+          "source_refs": [
+            "SA-d37a791cf113478a",
+            "SA-4fedd07f0df44eb4",
+            "SA-8cff4a3f890c6d93",
+            "SA-89ca130f6dc317fe",
+            "SA-8cbf1980971c0828"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
+      "entityIds": [
+        "EN-436364a46513cdf3",
+        "EN-e5904fa438fcd5bf"
+      ]
+    },
     {
       "id": "HWC-bf5c25cc614ae3f3",
       "snapshotKey": "bf5c25cc614ae3f3",

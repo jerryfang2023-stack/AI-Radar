@@ -48,6 +48,14 @@ function sourceBoundedExcerpts(record = {}) {
     .filter((excerpt) => excerpt.text);
 }
 
+function applyIntakeTitleMetadata(raw = {}, document = {}) {
+  return {
+    ...raw,
+    title: clean(document.title_original) || clean(raw.title),
+    title_zh: clean(document.title_zh) || clean(raw.title_zh),
+  };
+}
+
 export function buildSourceIntake({ root, date, entries, generatedAt = new Date().toISOString() }) {
   if (!/^\d{4}-\d{2}-\d{2}$/u.test(String(date || ""))) {
     throw new Error(`Invalid source intake date: ${date || "missing"}`);
@@ -207,7 +215,7 @@ export function loadSourceIntakeEntries(root, date) {
       }
       if (fs.existsSync(file)) {
         const raw = JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
-        return { raw, file, intake_document: document };
+        return { raw: applyIntakeTitleMetadata(raw, document), file, intake_document: document };
       }
     }
     const privateEvidence = loadPrivateEvidenceRecord(root, bodyRef, document.content_hash, {
@@ -215,7 +223,7 @@ export function loadSourceIntakeEntries(root, date) {
       dataDate: date,
     });
     return {
-      raw: privateEvidence.raw,
+      raw: applyIntakeTitleMetadata(privateEvidence.raw, document),
       file: privateEvidence.logicalFile,
       evidence_entry: privateEvidence.entry,
       intake_document: document,

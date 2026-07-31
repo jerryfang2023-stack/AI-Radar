@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "generatedAt": "2026-07-31T09:31:27.139Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1742,
-    "quarantinedEventCount": 15
+    "eventCount": 1739,
+    "quarantinedEventCount": 13
   },
   "relationships": [
     {
@@ -690,6 +690,33 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-62f415d53b9e1307",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-688f8db7018da7d4",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-7c22f66cabb9a37c",
+        "CL-d5a4e0b10c930ed2"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "MAI-Voice-2-Flash",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 MAI-Voice-2-Flash",
+      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
+      "eventDate": "2026-07-24",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-82d95dce19bccd53",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-febedfcafee9d610",
@@ -764,6 +791,33 @@
       "title": "Anthropic 发布 Claude Code",
       "eventTitle": "Anthropic 发布 Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
       "eventDate": "2026-07-23",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-dceee7ada64357c1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-827b607311e6593e",
+      "object_type": "entity",
+      "event_id": "EV-82ae0ea3bfe336a1",
+      "claim_refs": [
+        "CL-5fced5cf18afc959",
+        "CL-9fea9adc5b3b6d08",
+        "CL-7c22f66cabb9a37c"
+      ],
+      "source_refs": [
+        "SA-f35e060050d33489"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "MAI-Image-2.5-Pro",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 MAI-Image-2.5-Pro",
+      "eventTitle": "微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览",
+      "eventDate": "2026-07-24",
       "sourceCount": 1
     },
     {
@@ -893,6 +947,33 @@
       "predicateLabel": "发布",
       "title": "Ushur 发布 Ushur Agentic Platform",
       "eventTitle": "Ushur 推出 Ushur 智能体平台：能完成任务的 AI 智能体",
+      "eventDate": "2026-07-22",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-899fe78a63eda569",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-068e7ccb7d4b07a6",
+      "object_type": "entity",
+      "event_id": "EV-e1e30a2a4a5232c6",
+      "claim_refs": [
+        "CL-34fddab81951af35",
+        "CL-8b238746e8f2c8ba",
+        "CL-3c62d52890307500"
+      ],
+      "source_refs": [
+        "SA-c75b1e326457605e"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "Copilot",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 Copilot",
+      "eventTitle": "微软 Win11 RP 预览版文件管理器新增 Copilot 按钮",
       "eventDate": "2026-07-22",
       "sourceCount": 1
     },
@@ -2499,6 +2580,33 @@
       "eventTitle": "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源",
       "eventDate": "2026-07-16",
       "sourceCount": 3
+    },
+    {
+      "relationship_id": "REL2-a2d037d3ca0eff3e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-597d8c4afa5fe3d6",
+      "object_type": "entity",
+      "event_id": "EV-7c899d5decafc42f",
+      "claim_refs": [
+        "CL-4154aa4e461163c9",
+        "CL-a3cd2bba9a1d055b",
+        "CL-837c7d367f0c26ce"
+      ],
+      "source_refs": [
+        "SA-c532d10bfc903c0c"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "Visual Studio Code 1.129",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 Visual Studio Code 1.129",
+      "eventTitle": "微软发布 Visual Studio Code 1.129 正式版更新，现代 UI 抢先看",
+      "eventDate": "2026-07-16",
+      "sourceCount": 1
     },
     {
       "relationship_id": "REL2-ca465b8d8d369d14",
@@ -9108,6 +9216,33 @@
       "title": "StepFun 发布 StepAudio 2.5 Realtime",
       "eventTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
       "eventDate": "2026-05-25",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-9795f8e6814470a6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9fbf261b62c1d7c0",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-10fce287b4b1464c",
+      "object_type": "entity",
+      "event_id": "EV-a4f052325d0ef230",
+      "claim_refs": [
+        "CL-4c50bbc497deaee1",
+        "CL-25b9389df0e0f06f",
+        "CL-eece65ce191fb7c6"
+      ],
+      "source_refs": [
+        "SA-af9b5cefb039de38"
+      ],
+      "data_date": "2026-05-23",
+      "status": "verified",
+      "subjectName": "Microsoft",
+      "objectName": "Fara1.5",
+      "predicateLabel": "发布",
+      "title": "Microsoft 发布 Fara1.5",
+      "eventTitle": "微软推出 Fara1.5 系列浏览器 AI 智能体模型，72% 任务成功率超 OpenAI Operator",
+      "eventDate": "2026-05-23",
       "sourceCount": 1
     },
     {

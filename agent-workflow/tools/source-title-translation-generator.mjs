@@ -268,6 +268,7 @@ export function titleTranslationLooksUsable(sourceTitle = "", translation = "") 
     ["Cursor", /\bCursor\b/iu],
     ["Perplexity", /\bPerplexity\b/iu],
     ["Fable", /\bFable\b/iu],
+    ["Situational Awareness", /\bSituational Awareness\b/iu],
   ];
   for (const [term, translatedPattern] of protectedTerms) {
     if (new RegExp(`\\b${term}\\b`, "iu").test(source) && !translatedPattern.test(value)) return false;
