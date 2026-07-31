@@ -353,14 +353,14 @@ jobs:
 
       - name: Persist originals privately and enforce the public boundary
         id: evidence-boundary
-        if: always() && steps.existing-assets.outputs.skip != 'true' && steps.persistent-assets-post-monitor.outcome == 'success'
+        if: always() && steps.existing-assets.outputs.skip != 'true' && (steps.monitor.outcome == 'success' || steps.resume-artifact.outputs.used == 'true')
         shell: bash
         run: |
           set -euo pipefail
           npm run assert:private-evidence-remote
           npm run backup:private-evidence
           npm run migrate:private-evidence
-          npm run assert:private-evidence-backup
+          npm run assert:private-evidence-backup -- --date="${RUN_DATE}"
           npm run assert:public-evidence-boundary
           git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name "github-actions[bot]"
           git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email "41898282+github-actions[bot]@users.noreply.github.com"

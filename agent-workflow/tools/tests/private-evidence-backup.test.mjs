@@ -21,6 +21,7 @@ test("private evidence backup assertion supports cloud runs without a local Vaul
 
   assert.match(assertion, /resolveGuanlanVaultRoot\(root, \{ required: false \}\)/u);
   assert.match(assertion, /vaultRoot && isInside\(vaultRoot, backupRoot\)/u);
+  assert.match(assertion, /private evidence backup is missing \$\{intakeEvidenceGaps\.length\} RawDocument content hash/u);
 });
 
 test("private evidence backup deduplicates bodies by content_hash and isolates historical sources", () => {
