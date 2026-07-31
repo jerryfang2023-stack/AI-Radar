@@ -13,6 +13,16 @@ function writeJson(file, value) {
   fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
+test("private evidence backup assertion supports cloud runs without a local Vault", () => {
+  const assertion = fs.readFileSync(
+    path.join(process.cwd(), "agent-workflow/tools/assert-private-evidence-backup.mjs"),
+    "utf8",
+  );
+
+  assert.match(assertion, /resolveGuanlanVaultRoot\(root, \{ required: false \}\)/u);
+  assert.match(assertion, /vaultRoot && isInside\(vaultRoot, backupRoot\)/u);
+});
+
 test("private evidence backup deduplicates bodies by content_hash and isolates historical sources", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-root-"));
   const backupRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-backup-"));

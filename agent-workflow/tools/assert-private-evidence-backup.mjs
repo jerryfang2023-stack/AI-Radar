@@ -7,7 +7,7 @@ import { resolvePrivateEvidenceBackupRoot } from "./private-evidence-backup-path
 
 const root = process.cwd();
 const backupRoot = resolvePrivateEvidenceBackupRoot(root);
-const vaultRoot = resolveGuanlanVaultRoot(root);
+const vaultRoot = resolveGuanlanVaultRoot(root, { required: false });
 const problems = [];
 
 function lines(file) {
@@ -20,7 +20,7 @@ function isInside(parent, candidate) {
   return relative === "" || (!relative.startsWith("..") && !path.isAbsolute(relative));
 }
 
-if (isInside(root, backupRoot) || isInside(vaultRoot, backupRoot)) {
+if (isInside(root, backupRoot) || (vaultRoot && isInside(vaultRoot, backupRoot))) {
   problems.push("private evidence backup is inside a production repository or the Guanlan Vault");
 }
 
