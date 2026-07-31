@@ -104,7 +104,10 @@ const manifestReady = isV4ManifestReady(manifest, date);
 const telemetryReady = isCollectionTelemetryReady(telemetry, date);
 const rawDocuments = intake?.payload?.raw_documents || [];
 const rawCount = rawDocuments.length;
-const poolCount = rawDocuments.filter((item) => item.intake_diagnostics?.pooled).length;
+const eligibleDocumentCount = Number(
+  intake?.payload?.counts?.eligible_documents
+  ?? rawDocuments.filter((item) => item.intake_diagnostics?.eligible_for_v4_extraction).length
+);
 const loggedRawCount = parseNumber(logText, "raw_count");
 const loggedPoolCount = parseNumber(logText, "pool_count");
 const qualityStatus = String(parseLineValue(gateText, "status")).toLowerCase();
@@ -159,7 +162,7 @@ if (
 }
 if (!rawCount) problems.push("structured source intake has no RawDocuments");
 if (loggedRawCount !== null && loggedRawCount !== rawCount) problems.push(`logged raw_count ${loggedRawCount} does not match structured intake ${rawCount}`);
-if (loggedPoolCount !== null && loggedPoolCount !== poolCount) problems.push(`logged pool_count ${loggedPoolCount} does not match structured intake ${poolCount}`);
+if (loggedPoolCount !== null && loggedPoolCount !== eligibleDocumentCount) problems.push(`logged pool_count ${loggedPoolCount} does not match structured intake eligible_documents ${eligibleDocumentCount}`);
 if (activeDuplicateCount) problems.push(`structured intake contains ${activeDuplicateCount} active historical duplicate marker(s)`);
 if (gateText && qualityStatus && qualityStatus !== "passed") problems.push(`monitor quality gate status is ${qualityStatus}`);
 if (stage !== "post-monitor" && finalQcText && /^block/u.test(finalQcDecision)) problems.push(`final monitor QC decision is ${finalQcDecision}`);
@@ -178,7 +181,7 @@ const report = [
   `- source_intake_version: ${intake?.payload?.schema_version || "missing"}`,
   `- source_artifact_count: ${intake?.payload?.source_artifacts?.length || 0}`,
   `- raw_document_count: ${rawCount}`,
-  `- pooled_document_count: ${poolCount}`,
+  `- eligible_document_count: ${eligibleDocumentCount}`,
   `- logged_raw_count: ${loggedRawCount ?? "missing"}`,
   `- logged_pool_count: ${loggedPoolCount ?? "missing"}`,
   `- active_historical_duplicate_count: ${activeDuplicateCount}`,
@@ -208,7 +211,7 @@ console.log(JSON.stringify({
   source_intake_version: intake?.payload?.schema_version || null,
   source_artifact_count: intake?.payload?.source_artifacts?.length || 0,
   raw_document_count: rawCount,
-  pooled_document_count: poolCount,
+  eligible_document_count: eligibleDocumentCount,
   logged_raw_count: loggedRawCount,
   logged_pool_count: loggedPoolCount,
   active_historical_duplicate_count: activeDuplicateCount,
