@@ -6,6 +6,11 @@ import { resolveGuanlanVaultRoot } from "./guanlan-vault-paths.mjs";
 import { resolvePrivateEvidenceBackupRoot } from "./private-evidence-backup-paths.mjs";
 
 const root = process.cwd();
+const args = new Map(process.argv.slice(2).map((arg) => {
+  const [key, ...rest] = arg.replace(/^--/u, "").split("=");
+  return [key, rest.join("=") || "true"];
+}));
+const date = String(args.get("date") || "").trim();
 const backupRoot = resolvePrivateEvidenceBackupRoot(root);
 const vaultRoot = resolveGuanlanVaultRoot(root, { required: false });
 const problems = [];
@@ -70,6 +75,7 @@ if (historical.length !== manifest.nonProductionHistoricalSources) {
 const objectRefs = new Set();
 const recordRefs = new Set();
 const snapshotRefs = new Set();
+const contentHashes = new Set();
 for (const line of catalog) {
   try {
     const entry = JSON.parse(line);
@@ -80,6 +86,7 @@ for (const line of catalog) {
     objectRefs.add(entry.object_ref);
     recordRefs.add(entry.record_ref);
     snapshotRefs.add(entry.snapshot_ref);
+    contentHashes.add(String(entry.content_hash).toLowerCase());
     if (entry.body_available && !fs.existsSync(path.join(backupRoot, entry.object_ref))) {
       problems.push(`private evidence object is missing: ${entry.object_ref}`);
     }
@@ -106,11 +113,35 @@ if (manifest.missingBodies !== 0) {
   problems.push(`private evidence backup has ${manifest.missingBodies} snapshot(s) without a body`);
 }
 
+let intakeEvidenceGaps = [];
+if (date) {
+  const intakeFile = path.join(
+    root,
+    "01-SiteV2/content/11-databases/data-center-v4/intake-v1",
+    `${date}.json`,
+  );
+  if (!fs.existsSync(intakeFile)) {
+    problems.push(`structured intake is missing for private evidence coverage: ${date}`);
+  } else {
+    const intake = JSON.parse(fs.readFileSync(intakeFile, "utf8").replace(/^\uFEFF/u, ""));
+    intakeEvidenceGaps = (intake.raw_documents || [])
+      .map((document) => String(document.content_hash || "").toLowerCase())
+      .filter((contentHash) => !contentHash || !contentHashes.has(contentHash));
+    if (intakeEvidenceGaps.length) {
+      problems.push(
+        `private evidence backup is missing ${intakeEvidenceGaps.length} RawDocument content hash(es) for ${date}`,
+      );
+    }
+  }
+}
+
 console.log(JSON.stringify({
   ok: problems.length === 0,
   backupRoot,
+  date: date || null,
   manifest,
   catalogEntries: catalog.length,
+  intakeEvidenceGaps: intakeEvidenceGaps.length,
   repositorySnapshotsWaitingForIngest: originalJsonFiles.length,
   historicalEntries: historical.length,
   problems,
