@@ -266,6 +266,7 @@ a {
   background: var(--gl-deep);
   color: #fffdf8;
   font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
   transition: transform .12s ease, background-color .16s ease;
 }
@@ -2612,6 +2613,33 @@ body[data-dc-view="community"] .dc-source-link:active {
   .dc-toolbar > .dc-select,
   .dc-toolbar > .dc-more {
     width: 100%;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar {
+    grid-template-columns: 112px minmax(0, 1fr);
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-button {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-select[name="type"],
+  body[data-dc-view="events"] .dc-toolbar > .dc-select[name="tag"] {
+    grid-column: 1 / -1;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar > .dc-more {
+    width: 112px;
+  }
+
+  body[data-dc-view="events"] .dc-toolbar .dc-filter-summary {
+    width: 100%;
+    min-width: 0;
+    padding-right: 24px;
+    padding-left: 12px;
+    white-space: nowrap;
   }
 
   .dc-more,
