@@ -1,6 +1,6 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-07-30T11:45:00.000Z",
+  "generated_at": "2026-07-31T07:55:00.000Z",
   "reviewer": "codex-current-entity-review",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
@@ -11,9 +11,9 @@
     "current_catalog_reviewed": 534,
     "supplemental_claim_entities": 9,
     "historical_decisions_retained": 342,
-    "reviewed": 878,
+    "reviewed": 879,
     "confirmed": 364,
-    "corrected": 171,
+    "corrected": 172,
     "merged": 107,
     "quarantined": 236
   },
@@ -29690,6 +29690,48 @@
       "reviewer": "codex-global-audit-repair",
       "reviewed_at": "2026-07-26T16:23:11.511Z",
       "error_patterns": []
+    },
+    {
+      "entity_id": "EN-8b7c1f34eb7baafe",
+      "current": {
+        "name": "Kunlun Tech",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "昆仑万维",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "Kunlun Tech"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-0a767d8c0e4818e3",
+          "CL-73737f0dde892b92",
+          "CL-409d8b5d058b217b"
+        ],
+        "secondary_sources": [
+          {
+            "source_id": "SA-a889218b821f5c99",
+            "source_url": "https://www.ithome.com/0/984/181.htm",
+            "quote": "昆仑万维今日宣布，Skywork 的整套智能硬件家族即将陆续登场。"
+          }
+        ]
+      },
+      "advisory_source": "china_market_entity_review",
+      "advisory_decision": "corrected",
+      "confidence": 0.95,
+      "rationale": "Accepted source-bounded claims identify 昆仑万维 as the organization announcing the Skywork hardware family. Use the Chinese market name as canonical and retain Kunlun Tech as an alias.",
+      "review_status": "accepted",
+      "reviewer": "codex-china-market-review",
+      "reviewed_at": "2026-07-31T07:55:00.000Z",
+      "error_patterns": [
+        "name_extraction_fragment"
+      ]
     }
   ]
 }
