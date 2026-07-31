@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 export const CHINA_MARKET_SOURCE_REGISTRY_VERSION = "CHINA-MARKET-SOURCE-REGISTRY-V1.0";
-export const CHINA_MARKET_MONITORING_VERSION = "CHINA-MARKET-MONITORING-V1.0";
+export const CHINA_MARKET_MONITORING_VERSION = "CHINA-MARKET-MONITORING-V1.1";
 export const CHINA_MARKET_ENTITY_ALIASES_VERSION = "CHINA-MARKET-ENTITY-ALIASES-V1.0";
 
 const DATABASE_DIR = path.join("01-SiteV2", "content", "11-databases");
@@ -110,6 +110,7 @@ export function validateChinaMarketMonitoring(payload) {
   assert(queries.length > 0, "China market monitoring has no search queries");
   assertUnique(queries, "query_id", "China market query");
   for (const query of queries) {
+    assert(query.enabled === undefined || typeof query.enabled === "boolean", `${query.query_id}: enabled must be boolean when present`);
     assert(clean(query.query), `${query.query_id}: query is required`);
     assert(clean(query.query_theme), `${query.query_id}: query_theme is required`);
     assert(Array.isArray(query.lanes) && query.lanes.length > 0, `${query.query_id}: lanes are required`);
@@ -178,7 +179,7 @@ export function mergeChinaMarketSources(baseSources = [], sourceRegistry = {}) {
 
 export function chinaMarketLaneQueries(monitoring = {}, lane) {
   return (monitoring.search_queries || [])
-    .filter((query) => query.lanes.includes(lane))
+    .filter((query) => query.enabled !== false && query.lanes.includes(lane))
     .map((query) => ({
       query: query.query,
       query_theme: query.query_theme,
@@ -222,13 +223,14 @@ export function selectChinaMarketIntakeDocuments(documents = []) {
 }
 
 export function chinaMarketMatch(item = {}, entityAliases = {}) {
+  const summary = clean(item.summary).replace(/\s*\/\s*query=[\s\S]*$/iu, "");
   const text = [
     item.title,
-    item.summary,
+    summary,
     item.source,
   ].map(clean).filter(Boolean).join("\n");
   const explicitMatch = text.match(
-    /中国市场|中国企业|中国公司|国内(?:市场|企业|厂商|大模型|人工智能)|国产(?:大模型|AI|芯片|算力)|国家网信办|工业和信息化部|工信部|政府采购|公共资源交易|生成式人工智能服务.*备案|算法备案|智算中心/iu
+    /中国市场|中国企业|中国公司|国内(?:市场|企业|厂商|大模型|人工智能)|国产(?:大模型|AI|芯片|算力)|国家网信办|工业和信息化部|工信部|生成式人工智能服务.*备案|算法备案|智算中心/iu
   );
   if (explicitMatch) {
     return { matched: true, basis: `explicit_market_term:${explicitMatch[0]}` };
@@ -239,13 +241,25 @@ export function chinaMarketMatch(item = {}, entityAliases = {}) {
       canonicalName: entity.canonicalName,
       alias,
     })))
-    .filter((entry) => /[\u3400-\u9fff]/u.test(entry.alias))
     .sort((a, b) => b.alias.length - a.alias.length);
-  const hit = aliases.find((entry) => text.includes(entry.alias));
+  const hit = aliases.find((entry) => {
+    if (/[\u3400-\u9fff]/u.test(entry.alias)) return text.includes(entry.alias);
+    const escaped = entry.alias.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+    return new RegExp(`(?:^|[^A-Za-z0-9])${escaped}(?:$|[^A-Za-z0-9])`, "iu").test(text);
+  });
   if (hit) {
     return { matched: true, basis: `china_entity:${hit.canonicalName}:${hit.alias}` };
   }
   return { matched: false, basis: "no_china_market_subject" };
+}
+
+export function chinaMarketBasisType(value = "") {
+  const basis = clean(value);
+  if (basis.startsWith("china_entity:")) return "actor_origin";
+  if (/国家网信办|工业和信息化部|工信部|备案|算法/u.test(basis)) return "regulatory_jurisdiction";
+  if (/落地|部署|客户案例|智算中心/u.test(basis)) return "deployment_location";
+  if (basis) return "event_market";
+  return "";
 }
 
 export function scopeChinaMarketItems(items = [], entityAliases = {}) {

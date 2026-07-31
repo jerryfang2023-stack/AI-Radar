@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is on the `V4.6.0-two-center-focus` repository release. The public website uses the `SITE-V4.4.0-two-center-focus` shell and keeps the existing V4 data-service baseline.
+WaveSight AI is on the `V4.6.1-china-market-scope` repository release. The public website uses the `SITE-V4.4.1-china-market-scope` shell and keeps the existing V4 data-service baseline.
 
 ## Current Positioning
 
@@ -21,7 +21,8 @@ WaveSight AI is on the `V4.6.0-two-center-focus` repository release. The public 
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
-- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.1.0-card-integrity`, Guanlan Research `REPORTS-V1.2.0-research-hub`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
+- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.1-china-market-filter`, Funding Insights `FUNDING-INSIGHT-V1.1.0-card-integrity`, Guanlan Research `REPORTS-V1.2.0-research-hub`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
+- China-market coverage runs inside the existing commercial-event intake and scheduler. It distinguishes registered source types without source weights, excludes procurement/tender lanes, and writes evidence-backed `market_scope` only when an accepted Raw/Event match has an explicit controlled basis.
 - Current person review contract: `PERSON-REVIEW-V1.1`; the original 37 person/account candidates remain fully reviewed (31 natural people public, 6 non-natural accounts quarantined), and 30 additional funding founders are public only after explicit source-backed review. The remaining funding person candidates stay outside the public Entity Index.
 - Current data versions: `SOURCE-INTAKE-V1.1`, `RAW-V4.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.

@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.6.0-two-center-focus |
-| Version name | WaveSight V4 Two-Center Focus |
-| Version layer | Minor |
+| Current version | V4.6.1-china-market-scope |
+| Version name | WaveSight V4 China Market Scope |
+| Version layer | Patch |
 | Release date | 2026-07-31 |
-| Last modified at | 2026-07-31T23:30:00+08:00 |
+| Last modified at | 2026-07-31T23:45:00+08:00 |
 | Product version | V4.6 |
 | Data center version | SITE-V4.0-data-center |
-| Main website version | SITE-V4.4.0-two-center-focus |
+| Main website version | SITE-V4.4.1-china-market-scope |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.0 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
@@ -39,7 +39,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Lens monitoring funnel | LENS-FUNNEL-V1.0 |
 | Guanlan Research column version | REPORTS-V1.2.0-research-hub |
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
-| Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
+| Trend Radar column version | TRADAR-V1.0.1-china-market-filter |
 | Funding Insights column version | FUNDING-INSIGHT-V1.1.0-card-integrity |
 | Data Center Raw contract | RAW-V4.0 |
 | Data Center structured source intake | SOURCE-INTAKE-V1.1 |
@@ -73,15 +73,15 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.8.0 V4 retirement governance |
-| Git tag | `v4.6.0-two-center-focus` |
+| Git tag | `v4.6.1-china-market-scope` |
 | Current entries | Data Center: Event Library / Community Intelligence / First-Line Viewpoints / Entity Library. Application Center: Trend Radar / Guanlan Research. Funding Insights is a research subroute; Opportunity Map is an unlisted internal lab; Dashboard is backend. |
 
 ## Current Product Baseline
 
-- WaveSight AI V4.6 keeps the private evidence repository and V4 factual contracts unchanged while focusing the public frontstage into four Data Center entries and two Application Center entries.
+- WaveSight AI V4.6.1 keeps the private evidence repository and V4 factual contracts unchanged while adding evidence-backed China-market scope to the existing two-center frontstage.
 - WaveSight AI is an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
-- SITE-V4.4.0 is the current public release. It preserves all V4 data and deep routes while removing FDE, AI Hardware, Relationship Map, Funding Insights, and Opportunity Map from primary navigation.
+- SITE-V4.4.1 is the current public release. It preserves the focused navigation and adds China-market filters to Event Library, Entity Library, and Trend Radar without introducing a new column.
 - ENTITY-V1.0 formalizes companies/organizations, products/models/services, and people with stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
 - PERSON-REVIEW-V1.1 preserves the original 37 person/account decisions (31 public natural people and 6 quarantined non-natural accounts) and adds 30 manually reviewed funding-founder profiles. Every added profile resolves to accepted funding cards plus source URL, content-hash, and exact-quote locators; application evidence cannot create a canonical event or formal relationship.
 - RELATION-V2.1 accepts only verified typed endpoints with an accepted event, Claim references, and SourceArtifact references; it adds explicit join, leave, and founding edges for people, and no Tag co-occurrence edges are allowed.
@@ -90,7 +90,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - First-Line Viewpoints is versioned as `FLV-V1.1.0-history-backfill` in this release. It materializes accepted committed morning snapshots into a historical dataset, merges current morning, historical morning, and afternoon intake by original URL, and admits only AI-relevant records with approved Chinese translation provenance and opinion tags. The morning RSS and afternoon local `follow-builders` lanes remain independent, and Obsidian person/date timeline sync remains idempotent.
 - Community Intelligence is versioned as `CINT-V1.0.2-publication-waiting-gate` in this release. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
 - Enterprise AI / FDE uses `FDE-V2.0`, projected only from accepted V4 Events, Claims, Entities, and Sources. It has no Card or Lens Pool dependency.
-- Commercial-event production collects independent source artifacts from `aihot`, `keyword`, `gdelt`, and `rss`, then builds structured V4 intake and canonical facts.
+- Commercial-event production collects independent source artifacts from `aihot`, `keyword`, `gdelt`, and `rss`, then builds structured V4 intake and canonical facts. China-market monitoring reuses this lane, applies source categories without weights or ranking bonuses, and excludes procurement/tender sources and queries.
 - First-Line Viewpoints uses the independent morning RSS and afternoon follow-builders lanes, projected into `data-center.html?view=viewpoints`.
 - Community Intelligence uses the logged-in collection route and is projected into `data-center.html?view=community`.
 - Builders content must not enter CanonicalEvent, Claim, RELATION-V2.1, or factual Trend Radar evidence.
@@ -104,7 +104,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Guanlan Research is versioned independently as `REPORTS-V1.2.0-research-hub`. It contains Monthly / Weekly reports and archives plus capital/funding and enterprise AI deployment topic entrances; the periodic rendering and evidence gates remain unchanged.
 - Opportunity Map is versioned independently as `OMAP-V2.0.0-v4-evidence`. It reads `opportunity-evidence-v2.json`, renders Entry Point Map and Product Pain Map from Claim-bound downstream assertions, and adds a small Direction Card layer. DeepSeek V4 Pro writes titles and editorial content from a bounded accepted Event/Claim/Source manifest; generated candidates stay review-only until reference, unsupported-number, judgment, counter-signal, and human-review gates pass. Direction Cards and opportunity assertions never enter V4 canonical data and are not automated recommendations.
 - Guanlan Research remains lane-independent under `REPORTS-V1.2.0-research-hub`; report content and rendering do not depend on Opportunity Map or Direction Card generation succeeding.
-- Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
+- Trend Radar is versioned independently as `TRADAR-V1.0.1-china-market-filter`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage and China-market scope filtering, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
 - Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.1.0-card-integrity`. It normalizes free-text rounds into stable codes and Chinese labels, keeps only explicitly current-round investors in the public investor field, moves historical or ambiguous investors into a separate evidence-backed collection, aggregates repeated company-and-round disclosures, and gives every card a structured investment thesis plus explicit customer-research status. Exact canonical entity matches link immediately; unresolved product and founder names enter an evidence-backed review queue and cannot mutate V4 entities automatically.
 - Skill Store `v1.8.0` migrates current source-intake, report, opportunity, agent, and audit instructions off retired V3 interfaces and extends retirement checks to governance and deployable data.
 - `guanlan-code-rule-auditor` v1.1.0 audits V4 facts, applications, operations, deployment, and the permanent V3-retirement boundary; a green runtime-only gate is no longer sufficient when current instructions or deployable files still reference retired inputs.
@@ -139,7 +139,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V2.0.0-v4-telemetry` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Reads `collection-telemetry-v1` and the V4 manifest/gate to separate collection, fact build, application projection, and publication. V3 assets are retired archive state and never health inputs. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
-| Event Library production | `SITE-V4.4.0-two-center-focus` | V4-native structured intake and canonical facts presented through the focused event entrance; FDE / hardware remain thematic projections | `SOURCE-INTAKE-V1`, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
+| Event Library production | `SITE-V4.4.1-china-market-scope` | V4-native structured intake and canonical facts presented through the focused event entrance with evidence-backed China-market filtering; FDE / hardware remain thematic projections | `SOURCE-INTAKE-V1`, China-market gate, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, external Guanlan Vault person timelines |
 | Person review | `PERSON-REVIEW-V1.1` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates, First-Line authors, accepted person/account decisions, and accepted funding-founder decisions | 61 public natural-person profiles (31 existing plus 30 reviewed founders), 6 quarantined non-natural accounts, preserved viewpoint and funding-card lineage |
 | Guanlan Research / 观澜研究 | `REPORTS-V1.2.0-research-hub` | Public Application Center hub owning accepted periodic reports, archives, and entrances to capital/funding and enterprise AI deployment research. | `.github/workflows/periodic-reports-pr.yml` + deterministic renderer + Funding Insights and Event Library topic routes | `intelligence-map.html`, report details, `funding-insights.html`, research topic links |
@@ -200,6 +200,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.6.1-china-market-scope` | Unified China-market intake / Raw and Event scope / Event Library / Entity Library / Trend Radar | 2026-07-31 | 2026-07-31T23:45:00+08:00 | V4.6.1-china-market-scope / SITE-V4.4.1-china-market-scope / TRADAR-V1.0.1-china-market-filter | source weights or ranking bonuses; procurement/tender intake; search-query metadata creating scope; unmatched records receiving empty scope placeholders; a new top-level China column | China-market source/intake gate + schema and migration tests + frontstage filter tests + Trend Radar evidence gate + version consistency + GitHub Pages deploy |
 | `v4.6.0-two-center-focus` | Shared sidebar / Data Center / Trend Radar / Guanlan Research / subordinate application routes / report details | 2026-07-31 | 2026-07-31T23:30:00+08:00 | V4.6.0-two-center-focus / SITE-V4.4.0-two-center-focus / REPORTS-V1.2.0-research-hub | FDE, AI Hardware, Relationship Map, Funding Insights, or Opportunity Map returning as primary sidebar entries; First-Line Viewpoints or Community Intelligence content changes; Funding Insights losing the research-parent state; Opportunity Map becoming indexable | focused navigation tests + generator regression + version consistency + code/rule audit + responsive smoke + GitHub Pages deploy |
 | `v4.5.2-founder-profiles` | Entity History people index / founder details / Funding Insights entity links / person review gate | 2026-07-30 | 2026-07-30T21:37:20+08:00 | V4.5.2-founder-profiles / PERSON-REVIEW-V1.1 / ENTITY-V1.0 / RELATION-V2.1 | unreviewed funding people entering the public index; application evidence creating canonical events or formal relationships; founder profiles without card and source locators; source cards retaining null IDs after review | founder review provenance gate + entity-history schema/integrity gate + full funding gate + V4 tests + code/rule audit + responsive smoke + GitHub Pages deploy |
 | `v4.5.1-funding-card-integrity` | Funding Insights schema / historical application bundles / frontstage aggregation / generator Skill | 2026-07-30 | 2026-07-30T20:34:59+08:00 | V4.5.1-funding-card-integrity / FUNDING-INSIGHT-V1.1.0-card-integrity / guanlan-funding-insight-generator v1.1.0 | free-text round variants; historical investors shown as current-round investors; duplicate company-and-round cards; unstructured investment theses; silent customer or entity-link gaps | 63-bundle schema and evidence gate + normalized-round gate + current-investor separation + company-round aggregation + entity-review queue completeness + funding tests + frontstage regression + responsive smoke + GitHub Pages deploy |

@@ -6,7 +6,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current release: WaveSight `V4.6.0-two-center-focus`; the public shell is `SITE-V4.4.0-two-center-focus`.
+- Current release: WaveSight `V4.6.1-china-market-scope`; the public shell is `SITE-V4.4.1-china-market-scope`.
 - Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 23-table `DATA-LAKE-V4.0` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
@@ -21,7 +21,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current AI Hardware fact/snapshot versions: HARDWARE-FACT-V1.0 / HARDWARE-SNAPSHOT-V1.0.
 - Current Guanlan Research column version: REPORTS-V1.2.0-research-hub.
 - Current Opportunity Map column version: OMAP-V2.0.0-v4-evidence.
-- Current Trend Radar column version: TRADAR-V1.0.0-factual-change-explorer.
+- Current Trend Radar column version: TRADAR-V1.0.1-china-market-filter.
 - Current Raw contract: RAW-V4.0. Full original bodies live only in the configured private evidence repository; public bundles retain `evidence://<content_hash>` locators and body-free metadata.
 - Current structured source-intake contract: SOURCE-INTAKE-V1.1.
 - Current canonical event contract: EVENT-V1.1.

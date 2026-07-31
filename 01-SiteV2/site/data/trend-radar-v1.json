@@ -1,7 +1,7 @@
 {
   "meta": {
     "schemaVersion": "TRADAR-DATA-V1",
-    "columnVersion": "TRADAR-V1.0.0-factual-change-explorer",
+    "columnVersion": "TRADAR-V1.0.1-china-market-filter",
     "siteVersion": "SITE-V4.2.0-entity-history",
     "eventVersion": "EVENT-V1.1",
     "entityVersion": "ENTITY-V1.0",
@@ -21,6 +21,12 @@
       "partnership",
       "product",
       "hardware"
+    ],
+    "marketScopeOptions": [
+      "actor_origin",
+      "event_market",
+      "regulatory_jurisdiction",
+      "deployment_location"
     ],
     "categoryLabels": {
       "financing": "融资与并购",
@@ -23743,6 +23749,9 @@
       ],
       "productNames": [],
       "classifications": [],
+      "marketScopes": [
+        "actor_origin"
+      ],
       "claimIds": [
         "CL-0a767d8c0e4818e3",
         "CL-73737f0dde892b92",
@@ -24091,6 +24100,9 @@
         }
       ],
       "classifications": [],
+      "marketScopes": [
+        "actor_origin"
+      ],
       "claimIds": [
         "CL-771e447ed8e81d31",
         "CL-78d2cea59a5d443d"

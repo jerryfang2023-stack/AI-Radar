@@ -17,7 +17,7 @@ import {
 } from "../render-periodic-report-pages.mjs";
 
 test("periodic renderer owns the report-center release version", () => {
-  assert.equal(SITE_VERSION, "SITE-V4.4.0-two-center-focus");
+  assert.equal(SITE_VERSION, "SITE-V4.4.1-china-market-scope");
   assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.2.0-research-hub");
 });
 

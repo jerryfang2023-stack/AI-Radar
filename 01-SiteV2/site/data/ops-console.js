@@ -787,7 +787,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SITE",
         "label": "Main website",
-        "value": "SITE-V4.4.0-two-center-focus"
+        "value": "SITE-V4.4.1-china-market-scope"
       },
       {
         "key": "OPS",
@@ -842,7 +842,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "TRADAR",
         "label": "Trend Radar",
-        "value": "TRADAR-V1.0.0-factual-change-explorer"
+        "value": "TRADAR-V1.0.1-china-market-filter"
       },
       {
         "key": "RAW",

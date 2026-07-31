@@ -11,7 +11,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 const kind = args.get("kind") || "weekly";
 const date = args.get("date") || "";
-export const SITE_VERSION = "SITE-V4.4.0-two-center-focus";
+export const SITE_VERSION = "SITE-V4.4.1-china-market-scope";
 export const REPORTS_CENTER_VERSION = "REPORTS-V1.2.0-research-hub";
 
 export function escapeHtml(value = "") {

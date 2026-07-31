@@ -145,6 +145,20 @@
   ].join("");
 
   const uniqueSorted = (items) => [...new Set(items.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), "zh-CN"));
+  const marketScopeOptions = [
+    { value: "cn_related", label: "中国相关" },
+    { value: "actor_origin", label: "中国主体" },
+    { value: "event_market", label: "中国市场" },
+    { value: "regulatory_jurisdiction", label: "中国监管" },
+    { value: "deployment_location", label: "中国落地" }
+  ];
+
+  function matchesMarketScope(item, selected) {
+    if (!selected) return true;
+    const scopes = item.marketScopes || item.marketScope?.china_market_basis || [];
+    if (selected === "cn_related") return item.chinaMarketMatch === true || item.marketScope?.china_market_match === true || scopes.length > 0;
+    return scopes.includes(selected);
+  }
 
   function setActiveNavigation() {
     document.querySelectorAll("[data-view-link]").forEach((link) => {
@@ -278,6 +292,7 @@
     const industry = params.get("industry") || "";
     const from = params.get("from") || "";
     const to = params.get("to") || "";
+    const region = params.get("region") || "";
     let items = [...collectionForView(data, targetView)];
 
     if (targetView === "events") {
@@ -317,6 +332,7 @@
         ], query)
         && (!type || item.eventGroup === type || item.eventType === type)
         && (!theme || themeEventIds.has(item.id))
+        && matchesMarketScope(item, region)
         && matchesTaxonomy(item, tag)
         && (!from || item.dataDate >= from)
         && (!to || item.dataDate <= to)
@@ -326,6 +342,7 @@
       items = items.filter((item) => (
         matchesQuery(item, ["name", "aliases", "companyNames", "type", "indexKind", "indexSub", "tags"], query)
         && (!type || item.indexType === type)
+        && matchesMarketScope(item, region)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
       ));
     } else if (targetView === "relations") {
@@ -380,11 +397,13 @@
     const selectedTag = params.get("tag") || "";
     const selectedPerson = params.get("person") || "";
     const selectedStage = params.get("stage") || "";
+    const selectedRegion = params.get("region") || "";
     const items = collectionForView(data, targetView);
     const allTags = uniqueSorted(items.flatMap((item) => normalizeTags(item.tags).map((tag) => tag.name)));
     const pieces = [];
 
     if (targetView === "events") {
+      pieces.push(`<select class="dc-select" name="region" aria-label="地域范围" data-auto-submit>${optionList(marketScopeOptions, selectedRegion, "全部地域")}</select>`);
       pieces.push(`<select class="dc-select" name="theme" aria-label="事件专题" data-auto-submit>${optionList([
         { value: "fde", label: "企业 AI / FDE" },
         { value: "hardware", label: "AI 硬件" }
@@ -395,6 +414,8 @@
         `${entry.dimensionName || "分类"} · ${entry.name}`
       ]));
       pieces.push(`<select class="dc-select" name="tag" aria-label="技术、场景与产品分类" data-auto-submit>${optionList([...classifications].map(([value, label]) => ({ value, label })).sort((a, b) => a.label.localeCompare(b.label, "zh-CN")), selectedTag, "技术 / 场景 / 产品")}</select>`);
+    } else if (targetView === "index") {
+      pieces.push(`<select class="dc-select" name="region" aria-label="地域范围" data-auto-submit>${optionList(marketScopeOptions, selectedRegion, "全部地域")}</select>`);
     } else if (targetView === "relations") {
       pieces.push(`<select class="dc-select" name="type" aria-label="关系类型" data-auto-submit>${optionList(uniqueSorted(items.map((item) => item.predicate).filter(Boolean)).map((value) => ({ value, label: items.find((item) => item.predicate === value)?.predicateLabel || value })), selectedType, "全部关系类型")}</select>`);
     } else if (targetView === "fde") {

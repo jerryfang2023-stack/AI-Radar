@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildFrontstageData as buildFreshFrontstageData, isCompletePublicEventTitle, sourceDateOnly } from "../../../01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs";
+import { buildEntityCollections, buildEventRecords, buildFrontstageData as buildFreshFrontstageData, isCompletePublicEventTitle, sourceDateOnly } from "../../../01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
@@ -40,6 +40,64 @@ test("frontstage adapter builds real V4 data collections", () => {
   assert.ok(data.events.every((event) => event.id && event.title && event.date));
   assert.ok(data.events.every((event) => isCompletePublicEventTitle(event.title)));
   assert.ok(data.events.every((event) => Array.isArray(event.tags) && Array.isArray(event.sources)));
+});
+
+test("frontstage projects China market scope to events and linked entities", () => {
+  const event = {
+    event_id: "EV-CN",
+    data_date: "2026-07-31",
+    event_type: "model_release",
+    event_status: "completed",
+    event_time: "2026-07-31T01:00:00.000Z",
+    disclosed_at: "2026-07-31T01:00:00.000Z",
+    display_title_zh: "DeepSeek 发布新推理模型",
+    entities: ["EN-CN"],
+    action: "发布",
+    object: "新推理模型",
+    metrics: [],
+    locations: [],
+    claim_refs: ["CL-CN"],
+    source_refs: ["SA-CN"],
+    conflicts: [],
+    missing_fields: [],
+    publication_status: "verified",
+    market_scope: {
+      market_region: "CN",
+      china_market_match: true,
+      china_market_basis: ["actor_origin"],
+      source_registry_ids: ["cn-deepseek-news"],
+      claim_refs: ["CL-CN"],
+    },
+  };
+  const records = buildEventRecords({
+    events: [event],
+    claims: [{ claim_id: "CL-CN", raw_id: "RAW-CN", subject: "DeepSeek", object: "新推理模型", source_quote: "DeepSeek 发布新推理模型。" }],
+    rawDocuments: [{ raw_id: "RAW-CN", title_original: "DeepSeek 发布新推理模型", title_zh: "DeepSeek 发布新推理模型" }],
+    sourceArtifacts: [{ source_artifact_id: "SA-CN", source_url: "https://api-docs.deepseek.com/news/" }],
+    entities: [{ entity_id: "EN-CN", canonical_name: "DeepSeek", entity_type: "organization_candidate", verification_status: "verified" }],
+    tagAssertions: [],
+    facetAssertions: [],
+    tagNames: new Map(),
+    facetNames: new Map(),
+  });
+  assert.deepEqual(records[0].marketScope, event.market_scope);
+
+  const collections = buildEntityCollections({
+    taxonomyNodes: [],
+    relationships: [],
+    profiles: [{
+      id: "EN-CN",
+      name: "DeepSeek",
+      entityType: "organization_candidate",
+      verificationStatus: "verified",
+      aliases: [],
+      classificationRefs: [],
+      eventIds: ["EV-CN"],
+      relatedEntityIds: [],
+      relationIds: [],
+    }],
+  }, new Map([["EV-CN", records[0]]]));
+  assert.deepEqual(collections.companies[0].marketScopes, ["actor_origin"]);
 });
 
 test("person index contains reviewed natural people while preserving all viewpoint records", () => {
@@ -370,6 +428,8 @@ test("event toolbar is wired to real query controls", () => {
   assert.match(css, /\.dc-button \{[\s\S]*white-space: nowrap/u);
   assert.match(script, /new FormData\(form\)/u);
   assert.match(script, /data-auto-submit/u);
+  assert.match(script, /name="region"/u);
+  assert.match(script, /matchesMarketScope/u);
   assert.match(script, /name="from"/u);
   assert.match(script, /name="to"/u);
   assert.match(script, /应用筛选/u);

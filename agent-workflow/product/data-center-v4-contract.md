@@ -35,6 +35,15 @@ Complete original bodies are stored only in the configured `PRIVATE-EVIDENCE-STO
 
 The public interface is defined by `data-center-v4.schema.json`. Stable identifiers are `source_artifact_id`, `raw_id`, `claim_id`, `entity_id`, `event_id`, and `tag_id`.
 
+## China-market scope
+
+- China-market collection reuses the unified daily `aihot`, keyword, GDELT, and RSS intake; it does not create a separate scheduled task.
+- Registered source types are descriptive only. No source weight, confidence bonus, ranking bonus, or source-tier algorithm is allowed.
+- Procurement and tender sources/queries remain disabled and `procurement_contract` events cannot enter this scope.
+- A matched RawDocument may carry `market_scope` with the source registry identity, source region, `market_region: "CN"`, and its explicit match basis.
+- A matched CanonicalEvent may carry `market_scope` with controlled bases (`actor_origin`, `event_market`, `regulatory_jurisdiction`, `deployment_location`), source registry references, and Claim references.
+- Unmatched RawDocuments, events, and entities omit the optional market-scope fields instead of receiving empty placeholders.
+
 ## Truth and evidence rules
 
 - A Claim must quote an exact span of the normalized private evidence body resolved through `RawDocument.body_ref`.

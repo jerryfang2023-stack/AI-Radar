@@ -273,6 +273,7 @@ export function buildEventRecords({ events, claims, rawDocuments, sourceArtifact
       object: event.object || "未披露",
       metrics: safeArray(event.metrics),
       locations: safeArray(event.locations),
+      ...(event.market_scope?.china_market_match ? { marketScope: event.market_scope } : {}),
       missingFields: safeArray(event.missing_fields),
       conflicts: safeArray(event.conflicts),
       tags: technicalTags,
@@ -560,7 +561,11 @@ export function buildEntityCollections(service, eventsById) {
     if (!productOwnerIds.has(relation.object_ref)) productOwnerIds.set(relation.object_ref, []);
     productOwnerIds.get(relation.object_ref).push(relation.subject_ref);
   }
-  const common = (profile) => ({
+  const common = (profile) => {
+    const marketScopes = unique((profile.eventIds || []).flatMap((id) => (
+      eventsById.get(id)?.marketScope?.china_market_basis || []
+    )));
+    return ({
     id: profile.id,
     name: profile.name,
     sourceType: profile.entityType,
@@ -571,6 +576,7 @@ export function buildEntityCollections(service, eventsById) {
     lastSeen: profile.lastSeen || "",
     relatedEntityIds: profile.relatedEntityIds || [],
     relationIds: profile.relationIds || [],
+    ...(marketScopes.length ? { marketScopes, chinaMarketMatch: true } : {}),
     ...(profile.organizationFamilyId ? {
       organizationFamilyId: profile.organizationFamilyId,
       organizationFamilyEntityIds: profile.organizationFamilyEntityIds || [],
@@ -579,7 +585,8 @@ export function buildEntityCollections(service, eventsById) {
       parentEntityName: profile.parentEntityName || "",
       hierarchyEvidence: profile.hierarchyEvidence || []
     } : {})
-  });
+    });
+  };
   const companies = service.profiles
     .filter((profile) => profile.entityType === "organization_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length)
     .map((profile) => ({

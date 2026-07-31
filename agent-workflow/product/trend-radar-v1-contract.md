@@ -1,6 +1,6 @@
 # Trend Radar V1 Contract
 
-Version: `TRADAR-V1.0.0-factual-change-explorer`
+Version: `TRADAR-V1.0.1-china-market-filter`
 
 Trend Radar is a downstream application projection of accepted Data Center V4 facts. It organizes factual changes by accepted batch date (`dataDate`) and never writes back to canonical data.
 
@@ -17,6 +17,8 @@ Trend Radar is a downstream application projection of accepted Data Center V4 fa
 - Month: factual event/category counts, equal-day comparison with the previous calendar month only when every comparison-window batch day is observed, new verified company/product entities with first-event IDs, financing disclosure coverage, classification distributions and a deployment index.
 
 Every computed record must carry resolvable event IDs. Every projected event must retain Claim IDs, SourceArtifact IDs and a source URL.
+
+The page may filter accepted events by the controlled China-market bases `actor_origin`, `event_market`, `regulatory_jurisdiction`, and `deployment_location`. The filter is descriptive and must not introduce source weights, rankings, recommendations, or procurement/tender intake.
 
 ## Boundaries
 

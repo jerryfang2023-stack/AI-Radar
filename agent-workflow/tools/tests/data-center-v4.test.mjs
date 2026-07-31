@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
@@ -1823,4 +1823,85 @@ test("GPT-5.6 price-cut reports cluster into one pricing event", () => {
   assert.equal(bundle.canonical_events.length, 1);
   assert.equal(bundle.canonical_events[0].event_type, "pricing_change");
   assert.equal(bundle.canonical_events[0].source_refs.length, 2);
+  assert.equal("market_scope" in bundle.canonical_events[0], false);
+});
+
+test("China market scope survives the canonical Raw and Event build", () => {
+  const source = entry(
+    "deepseek-cn-market-scope",
+    "DeepSeek releases a new reasoning model",
+    "DeepSeek released a new reasoning model through its official API documentation. The company published model access details, supported inputs, and release availability for developers.",
+    {
+      source_name: "DeepSeek official",
+      source_registry_id: "cn-deepseek-news",
+      source_region: "CN",
+      market_region: "CN",
+      china_market_match: true,
+      china_market_match_basis: "china_entity:DeepSeek:DeepSeek",
+      title_zh: "DeepSeek 发布新推理模型",
+    },
+  );
+  const bundle = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.deepEqual(bundle.raw_documents[0].market_scope, {
+    source_registry_id: "cn-deepseek-news",
+    source_region: "CN",
+    market_region: "CN",
+    china_market_match: true,
+    china_market_match_basis: "china_entity:DeepSeek:DeepSeek",
+  });
+  assert.deepEqual(bundle.canonical_events[0].market_scope, {
+    market_region: "CN",
+    china_market_match: true,
+    china_market_basis: ["actor_origin"],
+    source_registry_ids: ["cn-deepseek-news"],
+    claim_refs: bundle.canonical_events[0].claim_refs,
+  });
+});
+
+test("a Chinese competitor mention does not make a foreign actor a China-origin event", () => {
+  const source = entry(
+    "foreign-actor-china-comparison",
+    "OpenAI releases a reasoning model that outperforms DeepSeek",
+    "OpenAI released a reasoning model through its official API. The company reports that the model outperforms DeepSeek on a published reasoning benchmark.",
+  );
+  const bundle = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.raw_documents[0].market_scope?.china_market_match, true);
+  assert.equal("market_scope" in bundle.canonical_events[0], false);
+});
+
+test("an accepted bundle can receive China market scope without recollecting private evidence", () => {
+  const source = entry(
+    "deepseek-cn-market-migration",
+    "DeepSeek releases a new reasoning model",
+    "DeepSeek released a new reasoning model through its official API documentation. The company published model access details and release availability for developers.",
+    { title_zh: "DeepSeek 发布新推理模型" },
+  );
+  const bundle = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  for (const raw of bundle.raw_documents) delete raw.market_scope;
+  for (const event of bundle.canonical_events) delete event.market_scope;
+
+  const result = repairExistingChinaMarketScope(bundle, []);
+
+  assert.equal(result.raw_market_count, 1);
+  assert.equal(result.event_market_count, 1);
+  assert.deepEqual(bundle.canonical_events[0].market_scope.china_market_basis, ["actor_origin"]);
+});
+
+test("China market migration leaves unrelated Raw documents untouched", () => {
+  const source = entry(
+    "openai-unrelated-market-migration",
+    "OpenAI releases a new reasoning model",
+    "OpenAI released a new reasoning model through its official API documentation. The company published model access details and release availability for developers.",
+  );
+  const bundle = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  for (const raw of bundle.raw_documents) delete raw.market_scope;
+
+  const result = repairExistingChinaMarketScope(bundle, []);
+
+  assert.equal(result.raw_market_count, 0);
+  assert.equal(result.event_market_count, 0);
+  assert.equal("market_scope" in bundle.raw_documents[0], false);
+  assert.equal("market_scope" in bundle.canonical_events[0], false);
 });

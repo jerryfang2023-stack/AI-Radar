@@ -13,7 +13,7 @@ priority: current
 
 # Frontstage Page Contracts
 
-SITE-V4.4.0 is the only current public page system; ENTITY-V1.0 and RELATION-V2.1 remain its factual entity-history contracts. Public pages and subordinate routes use the V4 logo header and focused shared sidebar. Legacy V3 column URLs are redirects only. These page contracts do not define V4 canonical data truth.
+SITE-V4.4.1 is the only current public page system; ENTITY-V1.0 and RELATION-V2.1 remain its factual entity-history contracts. Public pages and subordinate routes use the V4 logo header and focused shared sidebar. Legacy V3 column URLs are redirects only. These page contracts do not define V4 canonical data truth.
 
 Read `context/version-ledger.md` first. This file defines what each current frontstage page must keep and what must not contaminate it.
 
@@ -32,24 +32,26 @@ Read `context/version-ledger.md` first. This file defines what each current fron
 
 The legacy Business Signals Card set and `compatibility_cards` projection are removed. No current page, projection, relationship, gate, operations task, schema, data-lake table, or Guanlan Vault projection may recreate or consume them.
 
+Event Library, Entity Library, and Trend Radar expose the same evidence-backed China-market scope. The scope uses controlled factual bases and Claim/source references only; it must not add navigation entries, source weights, ranking bonuses, or procurement/tender records. Unmatched records omit the optional scope field.
+
 ## Current Frontstage Versions
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V4.4.0-two-center-focus` | Focuses the public information architecture into four Data Center entries and two Application Center entries while preserving deep routes and data contracts. |
+| Main website | `SITE-V4.4.1-china-market-scope` | Keeps the focused two-center information architecture and adds evidence-backed China-market filters to existing data surfaces without adding navigation entries. |
 | Business Signals factual lane | `EVENT-V1.1` | SourceArtifact / RawDocument / Claim / CanonicalEvent production only; archived Cards and trend candidates are not daily inputs or public pages. |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Adds accepted committed morning history to the V4 projection while keeping current morning RSS and afternoon follow-builders production independent; original-URL dedupe, approved Chinese translation provenance, AI relevance, and opinion tags remain release gates. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
 | Enterprise AI / FDE lens | `EAI-V1.2.0-raw-card-ingestion-boundary` | Boss-facing implementation lens backed by the independent FDE Lens Pool; title translation and fact extraction belong to Raw/Card/FDE asset generation, not generic frontstage blocking; not a fourth Card type. |
 | Guanlan Research column | `REPORTS-V1.2.0-research-hub` | Owns periodic reports and archives plus capital/funding and enterprise AI deployment topic entrances; its publication gate remains independent from Opportunity Map generation. |
 | Opportunity Map column | `OMAP-V2.0.0-v4-evidence` | Owns the dedicated V4 evidence projection, two source-backed matrices, and human-reviewed Direction Cards with click-to-open Event, Claim, and Source evidence. |
-| Trend Radar column | `TRADAR-V1.0.0-factual-change-explorer` | Owns the accepted-event daily/weekly/monthly change projection, period controls, coverage disclosure, and evidence links without report prose or judgment. |
+| Trend Radar column | `TRADAR-V1.0.1-china-market-filter` | Adds China-market scope filtering to the accepted-event daily/weekly/monthly projection while preserving evidence links and factual-only boundaries. |
 | Funding Insights column | `FUNDING-INSIGHT-V1.1.0-card-integrity` | Owns normalized funding rounds, current-round investor separation, company-and-round aggregation, structured investment theses, explicit customer research status, evidence-bounded application judgments, automatic fail-closed publication, and governed entity-review candidates without mutating canonical facts. |
 | Person review | `PERSON-REVIEW-V1.1` | Admits reviewed natural people from canonical events, First-Line Viewpoints, or the accepted funding-founder ledger. Funding-only profiles expose funding cards and exact source locators but cannot create `RELATION-V2.1`; quarantined accounts and unreviewed funding candidates remain outside the public person index. |
 
 ## Navigation
 
-The approved SITE-V4.4 navigation has two sidebar groups:
+The approved SITE-V4.4.1 navigation has two sidebar groups:
 
 - Data Center: Event Library, Community Intelligence, First-Line Viewpoints, Entity Library.
 - Application Center: Trend Radar, Guanlan Research.

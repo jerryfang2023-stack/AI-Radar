@@ -30,7 +30,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
-- If an old rule conflicts with the current SITE-V4.4.0 public contract, rebuild or delete the old route instead of restoring V3 page content.
+- If an old rule conflicts with the current SITE-V4.4.1 public contract, rebuild or delete the old route instead of restoring V3 page content.
+- China-market coverage is a scope projection inside the existing V4 fact chain. Source categories are descriptive only: no source weights or ranking bonuses are permitted, and procurement/tender sources remain disabled for this scope.
 - First-Line Viewpoints and Community Intelligence keep their existing public content contracts. FDE / AI Hardware are Event Library themes, relationships are embedded in Entity Library detail, Funding Insights is a Guanlan Research topic route, and Opportunity Map is an unlisted internal lab.
 - Legacy V3 column URLs remain redirects only; no public page may load V3 navigation, V3 page assets, or the V3 desk JSON.
 

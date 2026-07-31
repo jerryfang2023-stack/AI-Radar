@@ -31,6 +31,9 @@ test("every projected event retains evidence lineage", () => {
     assert.ok(event.sourceIds.length > 0, event.id);
     assert.match(event.sourceUrl, /^https?:\/\//, event.id);
   }
+  const marketEvents = Object.values(data.events).filter((event) => event.marketScopes?.length);
+  assert.ok(marketEvents.length > 0);
+  assert.ok(marketEvents.every((event) => event.marketScopes.every((scope) => data.meta.marketScopeOptions.includes(scope))));
 });
 
 test("daily category counts resolve exactly to projected events", () => {
@@ -79,11 +82,12 @@ test("monthly comparisons use equal observed windows and new entities retain eve
 });
 
 test("page is a V4 application page with factual period controls", () => {
-  assert.match(page, /TRADAR-V1\.0\.0-factual-change-explorer/);
+  assert.match(page, /TRADAR-V1\.0\.1-china-market-filter/);
   assert.match(page, /<h1>变化雷达<\/h1>/);
   assert.match(page, /data-period="day"/);
   assert.match(page, /data-period="week"/);
   assert.match(page, /data-period="month"/);
+  assert.match(page, /data-market-scope/u);
   assert.match(page, /href="trend-radar\.html" aria-current="page"/);
   assert.match(page, /<header class="dc-header">/);
   assert.match(page, /data-nav-toggle>栏目<\/button>/u);
@@ -91,6 +95,8 @@ test("page is a V4 application page with factual period controls", () => {
   assert.doesNotMatch(page, /dc-brandbar|class="dc-shell"/);
   assert.match(sharedStyles, /\.dc-skip-link:focus-visible/);
   assert.match(client, /data\/trend-radar-v1\.json/);
+  assert.match(client, /marketScope/u);
+  assert.match(client, /scopedEventIds/u);
   assert.ok(Object.values(data.events).every((event) => event.detailUrl.startsWith("data-center.html?view=events")));
 });
 

@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-export const COLUMN_VERSION = "TRADAR-V1.0.0-factual-change-explorer";
+export const COLUMN_VERSION = "TRADAR-V1.0.1-china-market-filter";
 const ACCEPTED = new Set(["verified", "partial"]);
 const CATEGORY_ORDER = ["financing", "deployment", "partnership", "product", "hardware"];
 const CATEGORY_LABELS = {
@@ -123,6 +123,9 @@ export function buildTrendRadarData(root = defaultRoot) {
       entityNames: event.entityNames || [],
       productNames: event.products || [],
       classifications: event.classifications || [],
+      ...(event.marketScope?.china_market_basis?.length ? {
+        marketScopes: event.marketScope.china_market_basis,
+      } : {}),
       claimIds: (event.claims || []).map((claim) => claim.id),
       sourceIds: (event.sources || []).map((source) => source.id),
       sourceUrl: event.sourceUrl,
@@ -285,13 +288,14 @@ export function buildTrendRadarData(root = defaultRoot) {
       eventVersion: "EVENT-V1.1",
       entityVersion: input.meta.entityVersion,
       relationshipVersion: input.meta.relationshipVersion,
-      generatedAt: new Date().toISOString(),
+      generatedAt: process.env.WAVESIGHT_TREND_RADAR_GENERATED_AT || new Date().toISOString(),
       latestDataDate: input.meta.latestDataDate,
       timezone: "Asia/Shanghai",
       dateBasis: "dataDate",
       boundary: "accepted-canonical-events-only; no viewpoints, community, scores or recommendations",
       acceptedPublicationStates: [...ACCEPTED],
       categoryOrder: CATEGORY_ORDER,
+      marketScopeOptions: ["actor_origin", "event_market", "regulatory_jurisdiction", "deployment_location"],
       categoryLabels: CATEGORY_LABELS,
       sourceCounts: { events: eventList.length, entities: Object.keys(entities).length, relationships: verifiedRelationships.length },
     },

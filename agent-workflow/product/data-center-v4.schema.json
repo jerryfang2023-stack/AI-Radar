@@ -99,6 +99,18 @@
         "content_hash": { "type": "string" },
         "capture_method": { "type": "string" },
         "extraction_status": { "enum": ["accepted", "partial", "quarantined"] },
+        "market_scope": {
+          "type": "object",
+          "required": ["source_registry_id", "source_region", "market_region", "china_market_match", "china_market_match_basis"],
+          "properties": {
+            "source_registry_id": { "type": "string" },
+            "source_region": { "type": "string" },
+            "market_region": { "type": "string" },
+            "china_market_match": { "type": "boolean" },
+            "china_market_match_basis": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
         "source_update_history": { "type": "array" },
         "claim_ids": { "type": "array", "items": { "type": "string" } },
         "entity_mention_ids": { "type": "array", "items": { "type": "string" } },
@@ -174,6 +186,23 @@
         "missing_fields": { "type": "array", "items": { "type": "string" } },
         "update_history": { "type": "array" },
         "publication_status": { "enum": ["verified", "partial", "disputed", "quarantined", "withdrawn"] }
+        ,"market_scope": {
+          "type": "object",
+          "required": ["market_region", "china_market_match", "china_market_basis", "source_registry_ids", "claim_refs"],
+          "properties": {
+            "market_region": { "const": "CN" },
+            "china_market_match": { "const": true },
+            "china_market_basis": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "enum": ["actor_origin", "event_market", "regulatory_jurisdiction", "deployment_location"] }
+            },
+            "source_registry_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+            "claim_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        }
       },
       "additionalProperties": false
     },

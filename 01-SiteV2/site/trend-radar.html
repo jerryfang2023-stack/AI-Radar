@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="wavesight-version" content="SITE-V4.4.0-two-center-focus">
-  <meta name="wavesight-column-version" content="TRADAR-V1.0.0-factual-change-explorer">
+  <meta name="wavesight-version" content="SITE-V4.4.1-china-market-scope">
+  <meta name="wavesight-column-version" content="TRADAR-V1.0.1-china-market-filter">
   <title>变化雷达｜观澜 AI</title>
   <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/data-center-v4.css?v=20260719-trend-radar-responsive">
@@ -49,6 +49,7 @@
             <button type="button" data-period="month" aria-pressed="false">月变化</button>
           </div>
           <label class="tr-period-select"><span>观察期</span><select data-period-key aria-label="选择观察期"></select></label>
+          <label class="tr-period-select"><span>地域</span><select data-market-scope aria-label="选择地域范围"><option value="all">全部地域</option><option value="cn_related">中国相关</option><option value="actor_origin">中国主体</option><option value="event_market">中国市场</option><option value="regulatory_jurisdiction">中国监管</option><option value="deployment_location">中国落地</option></select></label>
         </div>
         <div class="tr-status" role="status" data-status>正在读取事实变化数据…</div>
         <section class="tr-content" data-content aria-live="polite"></section>

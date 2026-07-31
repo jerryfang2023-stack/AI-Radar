@@ -873,7 +873,7 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     const data = buildFundingInsightsFrontstage(tempRoot);
     const rebuilt = buildFundingInsightsFrontstage(tempRoot);
     assert.equal(data.cards.length, 1);
-    assert.equal(data.meta.site_version, "SITE-V4.4.0-two-center-focus");
+    assert.equal(data.meta.site_version, "SITE-V4.4.1-china-market-scope");
     assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
     assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");

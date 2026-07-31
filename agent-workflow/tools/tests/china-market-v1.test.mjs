@@ -19,7 +19,10 @@ test("China market source registry is source-only and adds no ranking fields", (
   const serialized = JSON.stringify(config.sourceRegistry);
   assert.equal(/"(?:source_level|source_weight|weight|score|priority|rank|trust_score|quality_score|confidence_score|boost|bonus|multiplier)"\s*:/iu.test(serialized), false);
   assert.equal(config.sourceRegistry.classification_policy.ranking_or_weighting, "forbidden");
-  assert.ok(config.sourceRegistry.sources.some((source) => source.source_category === "government_procurement"));
+  assert.equal(
+    config.sourceRegistry.sources.some((source) => source.source_category === "government_procurement" && source.enabled_default !== false),
+    false,
+  );
   assert.ok(config.sourceRegistry.sources.some((source) => source.source_category === "company_official"));
   assert.ok(config.sourceRegistry.sources.some((source) => source.interface_type === "rss"));
 });
@@ -39,7 +42,8 @@ test("China market queries preserve explicit collection paths and do not change 
   const config = loadChinaMarketConfig(root);
   const keyword = chinaMarketLaneQueries(config.monitoring, "keyword_search");
   const gdelt = chinaMarketLaneQueries(config.monitoring, "gdelt");
-  assert.ok(keyword.some((query) => query.search_paths.includes("procurement_marketplace")));
+  assert.equal(keyword.some((query) => query.search_paths.includes("procurement_marketplace")), false);
+  assert.equal(keyword.some((query) => query.query_theme === "china-procurement"), false);
   assert.ok(keyword.some((query) => query.search_paths.includes("official_original")));
   assert.ok(gdelt.some((query) => query.query_theme === "china-policy-regulation"));
   assert.equal(keyword.every((query) => query.market_region === "CN"), true);
@@ -74,6 +78,26 @@ test("China market scope is based on event content, not a Chinese publisher", ()
   assert.match(scoped.included[0].china_market_match_basis, /^china_entity:Tencent:/u);
   assert.equal(scoped.excluded.length, 1);
   assert.equal("market_region" in scoped.excluded[0], false);
+});
+
+test("China market scope ignores appended search-query metadata and recognizes English entity aliases", () => {
+  const config = loadChinaMarketConfig(root);
+  const scoped = scopeChinaMarketItems([
+    {
+      title: "OpenAI lowers global API prices",
+      summary: "OpenAI reduced prices worldwide / query=中国 AI 公司 融资 / intent=capital",
+      source: "量子位",
+    },
+    {
+      title: "DeepSeek releases a new reasoning model",
+      summary: "DeepSeek released the model through its official API documentation.",
+      source: "DeepSeek official",
+    },
+  ], config.entityAliases);
+
+  assert.deepEqual(scoped.included.map((item) => item.title), ["DeepSeek releases a new reasoning model"]);
+  assert.match(scoped.included[0].china_market_match_basis, /^china_entity:DeepSeek:/u);
+  assert.deepEqual(scoped.excluded.map((item) => item.title), ["OpenAI lowers global API prices"]);
 });
 
 test("China market intake selection reads only the CN subset from a unified daily intake", () => {

@@ -1,6 +1,6 @@
 ---
 name: guanlan-trend-radar-updater
-description: "Use when building, refreshing, auditing, or explaining the independent Trend Radar application at TRADAR-V1.0.0-factual-change-explorer. It projects accepted Data Center V4 events into daily changes, weekly structure changes, and monthly market snapshots with event/entity/source traceability. Do not use for report prose, opportunity scoring, trend candidates, viewpoints, community intelligence, recommendations, rankings, or canonical-data mutation."
+description: "Use when building, refreshing, auditing, or explaining the independent Trend Radar application at TRADAR-V1.0.1-china-market-filter. It projects accepted Data Center V4 events into daily changes, weekly structure changes, and monthly market snapshots with evidence-backed China-market filtering and event/entity/source traceability. Do not use for report prose, opportunity scoring, trend candidates, viewpoints, community intelligence, recommendations, rankings, or canonical-data mutation."
 metadata:
   guanlan:
     version: "1.0.0"

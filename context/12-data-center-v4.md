@@ -118,6 +118,11 @@ identity, source region, content market region, and the explicit China-match
 basis. `assert:china-market -- --date=<YYYY-MM-DD>` reads only the CN
 source/content subset from the unified intake; it does not treat the entire
 daily batch as China-specific and applies no source weights or ranking bonuses.
+Accepted non-procurement CanonicalEvents may project the controlled bases
+`actor_origin`, `event_market`, `regulatory_jurisdiction`, and
+`deployment_location`, together with Claim and source-registry references.
+Unmatched records omit the optional scope field; procurement and tender sources
+and queries remain disabled for this upgrade.
 
 For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.
 

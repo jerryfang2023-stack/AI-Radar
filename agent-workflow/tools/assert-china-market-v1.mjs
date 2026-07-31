@@ -49,12 +49,35 @@ if (date) {
     eventClaims.filter((link) => claimIds.has(link.claim_id)).map((link) => link.event_id),
   );
   const scopedEvents = events.filter((event) => eventIds.has(event.event_id));
+  const marketEvents = events.filter((event) => event.market_scope?.china_market_match === true);
+  const allowedBasis = new Set([
+    "actor_origin",
+    "event_market",
+    "regulatory_jurisdiction",
+    "deployment_location",
+  ]);
+  for (const event of marketEvents) {
+    if (event.event_type === "procurement_contract") {
+      throw new Error(`${event.event_id}: procurement event must not enter the China market scope`);
+    }
+    if (event.market_scope.market_region !== "CN") {
+      throw new Error(`${event.event_id}: China market event must declare market_region=CN`);
+    }
+    if (!event.market_scope.china_market_basis?.length
+        || event.market_scope.china_market_basis.some((basis) => !allowedBasis.has(basis))) {
+      throw new Error(`${event.event_id}: China market event has no controlled match basis`);
+    }
+    if (!event.market_scope.claim_refs?.length) {
+      throw new Error(`${event.event_id}: China market event has no Claim provenance`);
+    }
+  }
   facts.push(
     `date=${date}`,
     `source_documents=${selected.sourceDocuments.length}`,
     `market_documents=${selected.marketDocuments.length}`,
     `claims=${scopedClaims.length}`,
-    `canonical_events=${scopedEvents.length}`
+    `canonical_events=${scopedEvents.length}`,
+    `market_events=${marketEvents.length}`
   );
 }
 

@@ -1,5 +1,5 @@
 {
-  "schema_version": "CHINA-MARKET-MONITORING-V1.0",
+  "schema_version": "CHINA-MARKET-MONITORING-V1.1",
   "updated_at": "2026-07-31",
   "owner": "Data Center Source Ingestion",
   "market_region": "CN",
@@ -11,7 +11,7 @@
   "search_queries": [
     {
       "query_id": "cn-official-model-product",
-      "query": "(site:api-docs.deepseek.com/news OR site:qwenlm.github.io/blog OR site:hunyuan.tencent.com OR site:bigmodel.cn OR site:minimaxi.com) (大模型 OR 模型 OR 智能体) (发布 OR 上线 OR 开源 OR 更新)",
+      "query": "(site:api-docs.deepseek.com/news OR site:qwenlm.github.io/blog OR site:hunyuan.tencent.com OR site:qianfan.cloud.baidu.com OR site:huaweicloud.com/product/pangu OR site:volcengine.com/product/doubao OR site:bigmodel.cn OR site:platform.kimi.com OR site:minimaxi.com) (大模型 OR 模型 OR 智能体) (发布 OR 上线 OR 开源 OR 更新)",
       "query_theme": "china-official-product",
       "keyword_group": "china-official-product",
       "lanes": [
@@ -52,6 +52,7 @@
     },
     {
       "query_id": "cn-government-procurement",
+      "enabled": false,
       "query": "site:ccgp.gov.cn (人工智能 OR 大模型 OR 智能体 OR 智算) (中标 OR 成交 OR 招标 OR 采购)",
       "query_theme": "china-procurement",
       "keyword_group": "china-procurement",
@@ -66,6 +67,7 @@
     },
     {
       "query_id": "cn-public-resource-award",
+      "enabled": false,
       "query": "site:ggzy.gov.cn (人工智能 OR 大模型 OR 智能体 OR 智算中心) (中标 OR 成交 OR 招标 OR 合同)",
       "query_theme": "china-procurement",
       "keyword_group": "china-procurement",
@@ -139,7 +141,7 @@
     },
     {
       "query_id": "cn-ai-hardware",
-      "query": "中国 (AI 芯片 OR 人工智能芯片 OR 智算服务器 OR GPU 集群) (发布 OR 量产 OR 投产 OR 中标 OR 部署)",
+      "query": "中国 (AI 芯片 OR 人工智能芯片 OR 智算服务器 OR GPU 集群) (发布 OR 量产 OR 投产 OR 部署)",
       "query_theme": "china-ai-hardware",
       "keyword_group": "china-ai-hardware",
       "lanes": [
@@ -156,7 +158,7 @@
     },
     {
       "query_id": "cn-enterprise-ai-rollout",
-      "query": "中国企业 (大模型 OR AI 智能体) (生产上线 OR 规模化部署 OR 试点 OR 采购 OR 客户案例)",
+      "query": "中国企业 (大模型 OR AI 智能体) (生产上线 OR 规模化部署 OR 试点 OR 客户案例)",
       "query_theme": "china-enterprise-deployment",
       "keyword_group": "china-enterprise-deployment",
       "lanes": [

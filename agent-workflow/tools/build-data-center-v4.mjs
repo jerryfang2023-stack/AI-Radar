@@ -6,7 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { extractExplicitProductNames } from "../product/product-entity-normalizer.mjs";
 import { buildEventDisplayTitle, isCompletePublicEventTitle } from "./event-public-title.mjs";
-import { loadSourceIntakeEntries } from "./lib/source-intake-v1.mjs";
+import { loadSourceIntakeEntries, readSourceIntake } from "./lib/source-intake-v1.mjs";
 import {
   availablePrivateEvidenceDates,
   evidenceRef,
@@ -14,6 +14,8 @@ import {
 } from "./lib/private-evidence-store.mjs";
 import { normalizeEvidenceBody } from "./lib/evidence-body-normalizer.mjs";
 import {
+  chinaMarketBasisType,
+  chinaMarketMatch,
   chinaMarketOrganizationAliases,
   loadChinaMarketConfig,
 } from "./lib/china-market-v1.mjs";
@@ -1399,6 +1401,7 @@ function clusterEvents(candidates) {
     const base = items[0];
     const { event_candidate_id: _eventCandidateId, cluster_subject: _clusterSubject, ...canonicalBase } = base;
     const publication = conflictRows.length ? "disputed" : items.some((item) => item.publication_status === "verified") ? "verified" : base.publication_status;
+    const chinaMarketScopes = items.map((item) => item.market_scope).filter((scope) => scope?.china_market_match === true);
     canonicalEvents.push({
       ...canonicalBase,
       event_id: `EV-${hash(key)}`,
@@ -1410,7 +1413,16 @@ function clusterEvents(candidates) {
       source_refs: [...new Set(items.flatMap((item) => item.source_refs))],
       conflicts: conflictRows.map((row) => row.conflict_id),
       update_history: items.map((item) => ({ source_ref: item.source_refs[0], disclosed_at: item.disclosed_at, status: item.event_status })),
-      publication_status: publication
+      publication_status: publication,
+      ...(chinaMarketScopes.length ? {
+        market_scope: {
+          market_region: "CN",
+          china_market_match: true,
+          china_market_basis: [...new Set(chinaMarketScopes.flatMap((scope) => scope.china_market_basis || []))],
+          source_registry_ids: [...new Set(chinaMarketScopes.flatMap((scope) => scope.source_registry_ids || []))],
+          claim_refs: [...new Set(chinaMarketScopes.flatMap((scope) => scope.claim_refs || []))],
+        },
+      } : {}),
     });
   }
   return { canonicalEvents, conflicts };
@@ -1500,6 +1512,16 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       : null);
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
     const extractionStatus = !artifact.source_url || bodyClean.length < 20 || /\ufffd/gu.test(bodyClean) ? "quarantined" : bodyClean.length < 300 ? "partial" : "accepted";
+    const inferredChinaMarket = raw.china_market_match === true
+      ? { matched: true, basis: cleanString(raw.china_market_match_basis) }
+      : chinaMarketMatch({ title: titleOriginal, summary: bodyClean.slice(0, 4000), source: raw.source_name }, chinaMarketConfig.entityAliases);
+    const marketScope = inferredChinaMarket.matched ? {
+      source_registry_id: cleanString(raw.source_registry_id),
+      source_region: cleanString(raw.source_region),
+      market_region: "CN",
+      china_market_match: true,
+      china_market_match_basis: inferredChinaMarket.basis,
+    } : null;
     const doc = {
       schema_version: VERSION.raw,
       raw_id: rawId,
@@ -1520,6 +1542,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       content_hash: artifact.content_hash,
       capture_method: artifact.capture_method,
       extraction_status: extractionStatus,
+      ...(marketScope ? { market_scope: marketScope } : {}),
       source_update_history: raw.update_detected ? [{ detected_at: cleanString(raw.last_seen_at), previous_ref: cleanString(raw.duplicate_of) }] : [],
       claim_ids: [],
       entity_mention_ids: [],
@@ -1689,6 +1712,13 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         const eventTime = cleanString(raw.published_at);
         const disclosedAt = cleanString(raw.published_at || raw.collected_at);
         doc.event_candidate_ids.push(candidateId);
+        const rawMarketBasisType = chinaMarketBasisType(doc.market_scope?.china_market_match_basis);
+        const actorOriginMatch = rawMarketBasisType !== "actor_origin" || chinaMarketMatch({
+          title: parsed.subject,
+          summary: "",
+          source: "",
+        }, chinaMarketConfig.entityAliases).matched;
+        const marketBasisType = actorOriginMatch ? rawMarketBasisType : "";
         eventCandidates.push({
           event_candidate_id: candidateId,
           event_type: rule.eventType,
@@ -1711,7 +1741,16 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
             !disclosedAt ? "disclosed_at" : ""
           ].filter(Boolean),
           update_history: [],
-          publication_status: publicationStatus(status, cleanString(raw.source_role), eventClaimRows.length)
+          publication_status: publicationStatus(status, cleanString(raw.source_role), eventClaimRows.length),
+          ...(doc.market_scope?.china_market_match && marketBasisType && rule.eventType !== "procurement_contract" ? {
+            market_scope: {
+              market_region: "CN",
+              china_market_match: true,
+              china_market_basis: marketBasisType ? [marketBasisType] : [],
+              source_registry_ids: doc.market_scope.source_registry_id ? [doc.market_scope.source_registry_id] : [],
+              claim_refs: eventClaimRows.map((claim) => claim.claim_id),
+            },
+          } : {})
         });
       }
     }
@@ -1932,6 +1971,86 @@ export function repairExistingEntityLinks(bundle, generatedAt = new Date().toISO
   return { repaired_event_ids: repairedEventIds };
 }
 
+export function repairExistingChinaMarketScope(bundle, intakeDocuments = [], generatedAt = new Date().toISOString()) {
+  const claimsByRaw = new Map();
+  for (const claim of bundle.claims || []) {
+    if (!claimsByRaw.has(claim.raw_id)) claimsByRaw.set(claim.raw_id, []);
+    claimsByRaw.get(claim.raw_id).push(claim);
+  }
+  const intakeByRaw = new Map(intakeDocuments.map((document) => [document.raw_id, document]));
+  const rawBySource = new Map();
+  let rawMarketCount = 0;
+
+  for (const raw of bundle.raw_documents || []) {
+    const intakeScope = intakeByRaw.get(raw.raw_id)?.market_scope || {};
+    const existingScope = raw.market_scope || {};
+    const claimsText = (claimsByRaw.get(raw.raw_id) || []).map((claim) => claim.source_quote).join("\n");
+    const explicitMatch = intakeScope.china_market_match === true || existingScope.china_market_match === true;
+    const inferred = explicitMatch
+      ? {
+          matched: true,
+          basis: cleanString(intakeScope.china_market_match_basis || existingScope.china_market_match_basis),
+        }
+      : chinaMarketMatch({
+          title: raw.title_original || raw.title_zh,
+          summary: claimsText,
+          source: raw.publisher,
+        }, chinaMarketConfig.entityAliases);
+    if (inferred.matched) {
+      raw.market_scope = {
+        source_registry_id: cleanString(intakeScope.source_registry_id || existingScope.source_registry_id),
+        source_region: cleanString(intakeScope.source_region || existingScope.source_region),
+        market_region: "CN",
+        china_market_match: true,
+        china_market_match_basis: inferred.basis,
+      };
+      rawMarketCount += 1;
+    } else {
+      delete raw.market_scope;
+    }
+    rawBySource.set(raw.source_artifact_id, raw);
+  }
+
+  let eventMarketCount = 0;
+  for (const event of bundle.canonical_events || []) {
+    if (event.event_type === "procurement_contract") {
+      delete event.market_scope;
+      continue;
+    }
+    const eventClaimIds = new Set(event.claim_refs || []);
+    const scopes = (event.source_refs || [])
+      .map((sourceRef) => rawBySource.get(sourceRef))
+      .map((raw) => {
+        const scope = raw?.market_scope;
+        if (scope?.china_market_match !== true) return null;
+        if (chinaMarketBasisType(scope.china_market_match_basis) !== "actor_origin") return scope;
+        const claimSubjects = (claimsByRaw.get(raw.raw_id) || [])
+          .filter((claim) => eventClaimIds.has(claim.claim_id))
+          .map((claim) => claim.subject)
+          .join(" ");
+        return chinaMarketMatch({ title: claimSubjects, summary: "", source: "" }, chinaMarketConfig.entityAliases).matched
+          ? scope
+          : null;
+      })
+      .filter(Boolean);
+    if (!scopes.length) {
+      delete event.market_scope;
+      continue;
+    }
+    event.market_scope = {
+      market_region: "CN",
+      china_market_match: true,
+      china_market_basis: [...new Set(scopes.map((scope) => chinaMarketBasisType(scope.china_market_match_basis)).filter(Boolean))],
+      source_registry_ids: [...new Set(scopes.map((scope) => scope.source_registry_id).filter(Boolean))],
+      claim_refs: [...new Set(event.claim_refs || [])],
+    };
+    eventMarketCount += 1;
+  }
+
+  if (bundle.manifest) bundle.manifest.generated_at = generatedAt;
+  return { raw_market_count: rawMarketCount, event_market_count: eventMarketCount };
+}
+
 function loadExistingBundle(date) {
   const destination = path.join(outputRoot, date);
   const manifest = readJson(path.join(destination, "manifest.json"));
@@ -1975,6 +2094,14 @@ function main() {
   if (arg("repair-existing-entity-links") === "true") {
     const bundle = loadExistingBundle(date);
     const repair = repairExistingEntityLinks(bundle);
+    const destination = writeBundle(bundle, date);
+    console.log(JSON.stringify({ ok: true, date, output: rel(destination), ...repair, counts: bundle.manifest.counts }, null, 2));
+    return;
+  }
+  if (arg("repair-existing-china-market-scope") === "true") {
+    const bundle = loadExistingBundle(date);
+    const intake = readSourceIntake(root, date)?.payload;
+    const repair = repairExistingChinaMarketScope(bundle, intake?.raw_documents || []);
     const destination = writeBundle(bundle, date);
     console.log(JSON.stringify({ ok: true, date, output: rel(destination), ...repair, counts: bundle.manifest.counts }, null, 2));
     return;
