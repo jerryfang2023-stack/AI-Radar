@@ -13,7 +13,7 @@
   - `status`
 - `agent-workflow/reports/` may remain an operational archive, but future page generation must not depend on it as the only source.
 
-## Industry Reports Entry
+## Guanlan Research Entry
 
 - Keep weekly reports in the report-first area of `intelligence-map.html`.
 - Do not restore the retired relationship network or relation paths.
@@ -24,7 +24,7 @@
 
 ## Detail Page Structure
 
-- Use the accepted report title unchanged as the H1, browser title, and Industry Reports card title.
+- Use the accepted report title unchanged as the H1, browser title, and Guanlan Research card title.
 - Put the time-window selector on the H1 row when space allows.
 - Start with fast-scan editorial modules, not a methodology or data-scope section.
 - Put data scope and evidence boundaries near the end unless the user asks otherwise.
@@ -61,7 +61,7 @@ Use the content shape to choose modules:
 - `git diff --check`
 - `node agent-workflow/tools/frontstage-regression-gate.mjs`
 - Playwright smoke:
-  - Industry Reports desktop
+  - Guanlan Research desktop
   - weekly detail desktop
   - weekly detail mobile
 - Page assertions:
@@ -69,5 +69,5 @@ Use the content shape to choose modules:
   - time-window selector exists;
   - the current public website version from `context/version-ledger.md` and source meta exist after release;
   - no V3 topbar, V3 stylesheet, or retired column link exists;
-  - no Opportunity Map, Relation Paths, Trend Candidates, or History blocks on Industry Reports.
-  - Reports Center and weekly detail pages use `REPORTS-V1.0.0-periodic-report-center` and do not emit the Opportunity Map version.
+  - no Opportunity Map, Relation Paths, Trend Candidates, or History blocks on Guanlan Research.
+  - Guanlan Research and weekly detail pages use `REPORTS-V1.2.0-research-hub` and do not emit the Opportunity Map version.

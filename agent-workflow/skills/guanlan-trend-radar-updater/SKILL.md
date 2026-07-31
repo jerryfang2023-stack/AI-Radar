@@ -56,6 +56,6 @@ Build and maintain the independent factual-change application in the V4 Applicat
 - Importance, value, heat, maturity, score, direction, ranking, advice, recommendations or “representative” selection.
 - Currency aggregation across currencies.
 - Treating unobserved dates as zero activity.
-- Writing report prose or replacing Industry Reports.
+- Writing report prose or replacing Guanlan Research.
 
 See `examples/good-factual-change-set.md`, `examples/bad-judgment-change-set.md`, and `evals/trend-radar-updater-evals.md`.

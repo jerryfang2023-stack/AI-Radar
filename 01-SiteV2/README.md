@@ -1,13 +1,13 @@
 ---
 title: WaveSight 01-SiteV2
-date: 2026-07-30
+date: 2026-07-31
 status: current
 encoding: UTF-8
 ---
 
 # WaveSight 01-SiteV2
 
-This directory owns the SITE-V4.3 website, canonical source/data files, downstream application data, and frontstage build scripts. It is not an Obsidian vault.
+This directory owns the SITE-V4.4 two-center website, canonical source/data files, downstream application data, and frontstage build scripts. It is not an Obsidian vault.
 
 ## Production Boundaries
 

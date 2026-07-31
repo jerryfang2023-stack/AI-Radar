@@ -6,11 +6,11 @@
   <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <meta name="wavesight-version" content="SITE-V4.3.0-compatibility-retired">
-  <meta name="wavesight-column-version" content="REPORTS-V1.1.0-lane-independent">
+  <meta name="wavesight-version" content="SITE-V4.4.0-two-center-focus">
+  <meta name="wavesight-column-version" content="REPORTS-V1.2.0-research-hub">
   <meta name="weekly-report-source" content="01-SiteV2/content/12-applications/industry-reports/">
   <meta name="monthly-report-source" content="01-SiteV2/content/12-applications/industry-reports/monthly/">
-  <title>行业报告｜观澜 AI</title>
+  <title>观澜研究｜观澜 AI</title>
   <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/data-center-v4.css?v=20260718-application-center-split">
   <style>
@@ -63,6 +63,14 @@
     .report-link:hover::after { transform: translateX(4px); }
     .report-link:focus-visible, .report-list a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
     .report-archives { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--soft-line); }
+    .research-lanes { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--soft-line); }
+    .research-lanes-head { margin-bottom: 20px; }
+    .research-lanes-head h2 { margin: 0; font-family: var(--serif); font-size: var(--gl-type-module-title-size, 28px); font-weight: var(--gl-weight-title, 600); line-height: var(--gl-type-module-title-line, 40px); }
+    .research-lanes-head p { margin: 4px 0 0; color: var(--muted); font-size: 14px; line-height: 24px; }
+    .research-lane-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .research-lane-card { padding: 22px 22px 20px; border-top: 2px solid var(--blue); border-bottom: 1px solid var(--line); background: var(--surface); }
+    .research-lane-card h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 20px; line-height: 30px; }
+    .research-lane-card p { margin: 0 0 18px; color: var(--muted); font-size: 14px; line-height: 24px; }
     .report-archives-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 24px; }
     .report-archives-head h2 { margin: 0; font-family: var(--serif); font-size: var(--gl-type-module-title-size, 28px); font-weight: var(--gl-weight-title, 600); line-height: var(--gl-type-module-title-line, 40px); }
     .report-archives-head span { color: var(--muted); font-size: 14px; line-height: 24px; }
@@ -89,6 +97,9 @@
       .report-feature-card.is-weekly h2, .report-feature-card.is-monthly h2 { font-size: 18px; line-height: 28px; }
       .report-feature-card .report-summary { font-size: 13px; line-height: 22px; }
       .report-archives { margin-top: 40px; padding-top: 24px; }
+      .research-lanes { margin-top: 36px; padding-top: 24px; }
+      .research-lane-grid { grid-template-columns: 1fr; gap: 12px; }
+      .research-lane-card { padding: 20px 18px 18px; }
       .report-archives-head { display: grid; gap: 2px; margin-bottom: 18px; }
       .report-archives-head h2 { font-size: 22px; line-height: 32px; }
       .report-archive-grid { gap: 24px; }
@@ -110,23 +121,21 @@
       <nav aria-label="数据中心与应用中心">
         <section class="dc-nav-group" aria-labelledby="data-center-nav-title">
           <h2 id="data-center-nav-title">数据中心</h2>
-          <a href="data-center.html?view=events">商业事件</a><a href="data-center.html?view=fde">FDE 实施</a><a href="data-center.html?view=hardware">AI 硬件</a><a href="data-center.html?view=community">社群情报</a><a href="data-center.html?view=viewpoints">一线观点</a><a href="data-center.html?view=index">产业档案</a><a href="data-center.html?view=relations">关系图谱</a>
+          <a href="data-center.html?view=events">事件库</a><a href="data-center.html?view=community">社群情报</a><a href="data-center.html?view=viewpoints">一线观点</a><a href="data-center.html?view=index">实体库</a>
         </section>
         <section class="dc-nav-group dc-nav-apps" aria-labelledby="app-center-nav-title">
           <h2 id="app-center-nav-title">应用中心</h2>
           <a href="trend-radar.html">变化雷达</a>
-          <a href="funding-insights.html">融资透视</a>
-          <a href="opportunity-map.html">机会地图</a>
-          <a href="intelligence-map.html" aria-current="page">行业报告</a>
+          <a href="intelligence-map.html" aria-current="page">观澜研究</a>
         </section>
       </nav>
     </aside>
     <main class="dc-main dc-report-main" id="main-content" tabindex="-1">
       <div class="report-shell">
         <header class="report-page-head">
-          <div class="dc-page-head"><h1>行业报告</h1><span class="dc-page-description">月度结构判断与每周商业变化追踪</span></div>
+          <div class="dc-page-head"><h1>观澜研究</h1><span class="dc-page-description">基于数据中心事实形成的周期报告、资本研究与企业落地专题</span></div>
         </header>
-        <section class="report-feature-grid" aria-label="最新行业报告">
+        <section class="report-feature-grid" aria-label="最新观澜研究报告">
           <article class="report-feature-card is-weekly">
             <div>
               <div class="report-meta"><p class="report-label">最新周报</p><p class="report-date">2026.07.20 - 07.26</p></div>
@@ -143,6 +152,24 @@
             </div>
             <a class="report-link" href="monthly-business-structure-2026-06.html">打开月报</a>
           </article>
+        </section>
+        <section class="research-lanes" aria-labelledby="research-lanes-title">
+          <div class="research-lanes-head">
+            <h2 id="research-lanes-title">专题研究</h2>
+            <p>事实字段回到数据中心，研究判断只在应用中心组织和发布。</p>
+          </div>
+          <div class="research-lane-grid">
+            <article class="research-lane-card">
+              <h3>资本与融资</h3>
+              <p>从已验证融资事件出发，查看产品、客户、竞争与资本判断；该页面作为观澜研究的专题档案，不再占用一级导航。</p>
+              <a class="report-link" href="funding-insights.html">进入资本研究</a>
+            </article>
+            <article class="research-lane-card">
+              <h3>企业 AI 落地</h3>
+              <p>从事件库筛选部署与案例，沿公司、产品和来源证据回看真实交付；FDE 完整档案继续通过事件和实体详情进入。</p>
+              <a class="report-link" href="data-center.html?view=events&amp;theme=fde">查看 FDE 落地事实</a>
+            </article>
+          </div>
         </section>
         <section class="report-archives" aria-labelledby="archive-title">
           <div class="report-archives-head"><h2 id="archive-title">报告归档</h2><span>按时间回看月报与周报</span></div>

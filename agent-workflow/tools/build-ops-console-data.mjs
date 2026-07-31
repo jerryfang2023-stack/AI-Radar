@@ -238,7 +238,7 @@ function parseVersionLedger() {
     ["FDE", "Enterprise AI / FDE data contract"],
     ["EAI", "Enterprise AI compatibility lens version"],
     ["HARDWARE", "AI Hardware data version"],
-    ["REPORTS", "Reports Center column version"],
+    ["REPORTS", "Guanlan Research column version"],
     ["OMAP", "Opportunity Map column version"],
     ["TRADAR", "Trend Radar column version"],
     ["RAW", "Data Center Raw contract"],

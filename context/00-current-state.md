@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-07-30
+last_updated: 2026-07-31
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is on the `V4.5.2-founder-profiles` repository release. The public website remains on the `SITE-V4.3.0-compatibility-retired` shell and data-service baseline.
+WaveSight AI is on the `V4.6.0-two-center-focus` repository release. The public website uses the `SITE-V4.4.0-two-center-focus` shell and keeps the existing V4 data-service baseline.
 
 ## Current Positioning
 
@@ -21,7 +21,7 @@ WaveSight AI is on the `V4.5.2-founder-profiles` repository release. The public 
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - The current collection lane writes ephemeral source snapshots, copies complete bodies into the authoritative private evidence store, converts public V4 records to `evidence://<content_hash>` locators, and then removes the ephemeral public copies. `SOURCE-INTAKE-V1` remains the structured handoff.
-- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.1.0-card-integrity`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
+- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.1.0-card-integrity`, Guanlan Research `REPORTS-V1.2.0-research-hub`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person review contract: `PERSON-REVIEW-V1.1`; the original 37 person/account candidates remain fully reviewed (31 natural people public, 6 non-natural accounts quarantined), and 30 additional funding founders are public only after explicit source-backed review. The remaining funding person candidates stay outside the public Entity Index.
 - Current data versions: `SOURCE-INTAKE-V1.1`, `RAW-V4.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
@@ -33,11 +33,11 @@ WaveSight AI is on the `V4.5.2-founder-profiles` repository release. The public 
 
 | Entry | File | Role |
 |---|---|---|
-| Data Center | `01-SiteV2/site/data-center.html` | V4 public data layer for Commercial Events, FDE, AI hardware, community intelligence, first-line viewpoints, Industry Dossiers (`产业档案`), and an evidence-backed entity-centered one-hop Relationship Map (`关系图谱`) |
+| Data Center | `01-SiteV2/site/data-center.html` | Four-entry public data layer: Event Library, unchanged Community Intelligence, unchanged First-Line Viewpoints, and Entity Library. FDE and AI Hardware remain event themes; factual relationships remain embedded in entity details. |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Application-center factual explorer for accepted daily changes, weekly structure changes, monthly snapshots, and event/entity/source evidence links |
-| Funding Insights | `01-SiteV2/site/funding-insights.html` | Automatic application-layer research triggered by verified funding events, with explicit investors, products, customers, comparisons, capital judgment, funding history, and entity/direction cross-links |
-| Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 application-center entry for latest Monthly / Weekly reports and their archives |
-| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent application-center entry for the source-backed Entry Point Map, Product Pain Map, and human-reviewed Direction Cards, with click-to-open evidence modals |
+| Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Application-center research hub for latest Monthly / Weekly reports, capital and funding research, enterprise AI deployment topics, and archives |
+| Funding Insights | `01-SiteV2/site/funding-insights.html` | Guanlan Research capital topic subroute; retains the existing evidence-backed funding research product |
+| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Unlisted `noindex,nofollow` internal lab route retained for evidence-backed map experiments |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and person timeline |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
@@ -55,7 +55,7 @@ External sources
 -> Claim-native FDEObservation / HardwareFact and HardwareSnapshot
 -> JSON / JSONL / DuckDB data service
 -> downstream applications
--> downstream application projections, including Trend Radar and Industry Reports
+-> downstream application projections, including Trend Radar and Guanlan Research
 -> GitHub PR / merge
 -> GitHub Pages
 -> local Guanlan AI Vault refresh
@@ -69,7 +69,7 @@ Community Intelligence uses the logged-in scys.com / aipoju.com collection route
 
 The V3 column pages and old Reports page are retired as content surfaces and remain only as redirects into V4.
 
-Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, remove or rebuild them.
+Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.4.0, remove or rebuild them.
 
 ## Current Hard Rules
 
@@ -94,12 +94,12 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, 
 1. Run source capture and the V4 Raw / Claim / Event integrity chain.
 2. Run First-Line Viewpoints through its own builders data lane.
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
-4. Keep Trend Radar, Funding Insights, Opportunity Map and Industry Reports as downstream V4 applications and Dashboard as an independent backend; do not write their derived structures or judgments into V4 canonical data.
+4. Keep Trend Radar and Guanlan Research as the two public downstream V4 application entries and Dashboard as an independent backend. Funding Insights remains a research subroute; Opportunity Map remains an internal lab. Do not write any derived structures or judgments into V4 canonical data.
    - Trend Radar rebuilds after the V4 frontstage bundle, uses accepted `dataDate` facts only, exposes collection coverage, and links every structure back to events, entities, Claims, SourceArtifacts, and original sources.
    - Funding Insights runs after verified daily funding events. Secondary source capture and DeepSeek V4 Pro may enrich the application card, but every company, financing, investor, product, customer, comparison, and metric fact must quote a captured source exactly. `FUNDING-INSIGHT-V1.1` normalizes round labels, separates current-round investors from historical/ambiguous investors, aggregates repeated company-and-confident-round disclosures, and records structured investment-thesis and customer-research status on every card. Missing current-round investors block the card. Exact entity matches link immediately; unresolved products and founders enter an evidence-backed review queue. `PERSON-REVIEW-V1.1` may admit a manually reviewed founder profile with funding-card and source locators, but application evidence never creates a canonical event or `RELATION-V2.1`.
    - Opportunity Map updates from `opportunity-evidence-v2.json`, generated only from accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, and FacetAssertions, and publishes under `OMAP-V2.0.0-v4-evidence`; downstream application assertions bind accepted Claims and never enter V4 canonical tables. DeepSeek V4 Pro writes evidence-bounded Direction Card candidates, but only human-reviewed candidates may enter the public direction configuration.
-   - Weekly report generation is lane-independent under `REPORTS-V1.1.0-lane-independent`: Opportunity Map or direction-candidate failure is recorded as a warning and cannot block report content acceptance or page publication.
-   - Reports Center publishes under `REPORTS-V1.1.0-lane-independent`. Weekly and monthly accepted report Markdown comes from `01-SiteV2/content/12-applications/industry-reports/`; the external Guanlan AI Vault receives a readable copy after local sync.
+   - Weekly report generation remains lane-independent under `REPORTS-V1.2.0-research-hub`: Opportunity Map or direction-candidate failure is recorded as a warning and cannot block report content acceptance or page publication.
+   - Guanlan Research publishes under `REPORTS-V1.2.0-research-hub`. Weekly and monthly accepted report Markdown comes from `01-SiteV2/content/12-applications/industry-reports/`; capital research links to Funding Insights, and the external Guanlan AI Vault receives a readable copy after local sync.
    - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek Pro for report Markdown and, on weekly runs, separate Direction Card candidates. Report content passes its acceptance gate; Direction Card candidates remain review-only. HTML/navigation/version writing stays deterministic.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.

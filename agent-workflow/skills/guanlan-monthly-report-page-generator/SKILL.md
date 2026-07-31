@@ -1,18 +1,18 @@
 ---
 name: guanlan-monthly-report-page-generator
-description: Use when creating, updating, or repairing WaveSight AI monthly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/monthly/`. Applies to monthly report detail pages, Industry Reports monthly entries and wiring, Guanlan VI page styling, longform report layout, charts/tables/visual modules, and responsive local validation. Do not use for writing the monthly report judgment itself; use `guanlan-monthly-business-structure-report` first.
+description: Use when creating, updating, or repairing WaveSight AI monthly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/monthly/`. Applies to monthly report detail pages, Guanlan Research monthly entries and wiring, Guanlan VI page styling, longform report layout, charts/tables/visual modules, and responsive local validation. Do not use for writing the monthly report judgment itself; use `guanlan-monthly-business-structure-report` first.
 metadata:
   guanlan:
     version: "1.1.0"
-    column_version: "REPORTS-V1.0.0-periodic-report-center"
-    lane: "Reports Center"
+    column_version: "REPORTS-V1.2.0-research-hub"
+    lane: "Guanlan Research"
     status: "current sub-skill"
     order: 96
-    responsibility: "Generate and maintain monthly report frontstage pages from accepted monthly report Markdown under the independent Reports Center version."
-    upstream: "accepted monthly report Markdown, Reports Center page, Guanlan VI rules"
-    downstream: "monthly report detail page, Reports Center monthly entry, page styles, REPORTS version metadata"
+    responsibility: "Generate and maintain monthly report frontstage pages from accepted monthly report Markdown under Guanlan Research."
+    upstream: "accepted monthly report Markdown, Guanlan Research page, Guanlan VI rules"
+    downstream: "monthly report detail page, Guanlan Research monthly entry, page styles, REPORTS version metadata"
     gates: "content acceptance, content-source discipline, REPORTS version boundary, full-report rendering, Guanlan VI fit, table readability, responsive visual smoke, frontstage regression, skill self-iteration"
-    recent_learning: "Monthly detail pages must show the full report with rich visual reading structure; the content gate must pass before the deterministic renderer writes HTML; generated pages and report-center wiring use REPORTS-V1.0.0, while Opportunity Map remains an independent OMAP application."
+    recent_learning: "Monthly detail pages must show the full report with rich visual reading structure; the content gate must pass before the deterministic renderer writes HTML; generated pages and research-hub wiring use REPORTS-V1.2.0, while Opportunity Map remains an unlisted internal lab."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -21,7 +21,7 @@ metadata:
 
 ## Purpose
 
-Turn an accepted monthly report Markdown file into a WaveSight Reports Center reading experience. This skill handles page structure, report-center wiring, visual modules, table treatment, responsive validation, and iterative skill hygiene. It does not decide the monthly business judgment or own Opportunity Map.
+Turn an accepted monthly report Markdown file into a WaveSight Guanlan Research reading experience. This skill handles page structure, research-hub wiring, visual modules, table treatment, responsive validation, and iterative skill hygiene. It does not decide the monthly business judgment or own Opportunity Map.
 
 The periodic controller may invoke this skill only after the monthly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
 
@@ -45,7 +45,7 @@ Read only what the task needs:
 For detailed rules, load:
 
 - `references/page-generation-standards.md` before page work.
-- `MEMORY.md` before changing visible layout, tables, hero, Industry Reports entries, or appendix handling.
+- `MEMORY.md` before changing visible layout, tables, hero, Guanlan Research entries, or appendix handling.
 - `evals/monthly-report-page-generator-evals.md` before final validation.
 
 ## Workflow
@@ -58,14 +58,14 @@ For detailed rules, load:
    - Use the report title, date, month window, core judgment, section headings, tables, opportunity cards, and verification list.
    - Preserve the report's full argument structure. Do not reduce the page to a summary or landing page.
 
-3. Build or update Industry Reports wiring.
-   - Use `intelligence-map.html` as the only Industry Reports entrance; `reports.html` remains a compatibility redirect.
+3. Build or update Guanlan Research wiring.
+   - Use `intelligence-map.html` as the only Guanlan Research entrance; `reports.html` remains a compatibility redirect.
    - Show monthly and weekly reports as subcolumns in its report-first area.
-   - Keep Industry Reports links compact; avoid duplicate standalone buttons when the time selector already occupies the action area.
-   - Write `REPORTS-V1.0.0-periodic-report-center` into the landing page and monthly detail metadata. Never emit the Opportunity Map column version from this Skill.
+   - Keep Guanlan Research links compact; avoid duplicate standalone buttons when the time selector already occupies the action area.
+   - Write `REPORTS-V1.2.0-research-hub` into the landing page and monthly detail metadata. Never emit the Opportunity Map column version from this Skill.
 
 4. Build the monthly detail page.
-   - Use the same V4 logo header, Data Center / Application Center sidebar, and mobile sidebar behavior as the Data Center and Industry Reports pages.
+   - Use the same V4 logo header, Data Center / Application Center sidebar, and mobile sidebar behavior as the Data Center and Guanlan Research pages.
    - Use Guanlan VI: paper background, serif editorial headings, mono labels, blue/gold accents, restrained borders, and stable reading width.
    - Render the complete report with multiple formats: longform blocks, trend chains, charts, radar/bar visuals, opportunity matrices, designed tables, lists, and appendix.
    - Keep nonessential data-boundary and method notes compressed in the appendix.
@@ -79,10 +79,10 @@ For detailed rules, load:
 
 6. Validate locally.
    - Run syntax checks for touched JS if any.
-   - Use Playwright visual smoke on desktop and mobile for the detail page and Industry Reports entry.
+   - Use Playwright visual smoke on desktop and mobile for the detail page and Guanlan Research entry.
    - Run `node agent-workflow/tools/frontstage-regression-gate.mjs`.
    - Confirm no mobile horizontal overflow and no console errors.
-   - Confirm the Reports Center landing page and every generated monthly detail use the current REPORTS version from `context/version-ledger.md`.
+   - Confirm the Guanlan Research landing page and every generated monthly detail use the current REPORTS version from `context/version-ledger.md`.
 
 7. Self-iterate the skill.
    - If a user corrects a repeated monthly-page failure, update `MEMORY.md`, `evals/`, or `examples/` before adding long prose.
@@ -94,7 +94,7 @@ For detailed rules, load:
 - Do not expose backend-only fields unless they help reader judgment; compress method/data boundary notes into an appendix.
 - Do not use raw table grids without editorial styling.
 - Do not re-add user-deleted fields, helper copy, report-type subtitles, return buttons, hero stat cards, or unnecessary navigation unless explicitly requested.
-- Do not create a second report navigation or restore retired V3 navigation above the Industry Reports content.
+- Do not create a second report navigation or restore retired V3 navigation above the Guanlan Research content.
 - Do not restore `wavesight-nav.css`, `wavesight-topbar`, or links to the retired V3 column pages.
 - Do not restore the shared `IMAP-V2.1.0` metadata or write the Opportunity Map version into report pages.
 
@@ -104,7 +104,7 @@ When finished, report:
 
 - source monthly report file used;
 - pages and styles changed;
-- Industry Reports wiring changed;
+- Guanlan Research wiring changed;
 - validation performed;
 - skill memory/eval/example updates, if any;
 - remaining page-generation risk.

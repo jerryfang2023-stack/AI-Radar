@@ -4,7 +4,7 @@ description: Use when writing, revising, or auditing the WaveSight weekly AI bus
 metadata:
   guanlan:
     version: "1.2.0"
-    lane: "Industry Reports"
+    lane: "Guanlan Research"
     status: "downstream application"
     order: 90
     responsibility: "Generate the weekly judgment report from accepted V4 event evidence with independent O/C context."

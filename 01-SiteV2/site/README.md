@@ -1,18 +1,18 @@
-# WaveSight AI V4.1 Unified Frontstage
+# WaveSight AI V4.4 Two-Center Frontstage
 
 Status: current-site-workbench
-Updated: 2026-07-17
+Updated: 2026-07-31
 
 ## Positioning
 
-This directory contains the current WaveSight AI V4.1 public site and operations entry.
+This directory contains the current WaveSight AI V4.4 public site and operations entry.
 
 Current public frontstage:
 
-- Data Center: `data-center.html`
-- Industry Reports: `intelligence-map.html`
-- First-Line Viewpoints: `data-center.html?view=viewpoints`
-- Community Intelligence: `data-center.html?view=community`
+- Data Center: Event Library, Community Intelligence, First-Line Viewpoints, and Entity Library in `data-center.html`
+- Application Center: Trend Radar in `trend-radar.html` and Guanlan Research in `intelligence-map.html`
+- Funding Insights remains a Guanlan Research topic route.
+- Opportunity Map remains an unlisted `noindex,nofollow` internal lab route.
 - Legacy `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are redirects only.
 
 Current backend:

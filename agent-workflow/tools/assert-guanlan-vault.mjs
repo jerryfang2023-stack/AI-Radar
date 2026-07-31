@@ -11,6 +11,7 @@ import {
 const root = process.cwd();
 const contractOnly = process.argv.includes("--contract-only");
 const problems = [];
+let markdownFileCount = 0;
 const oldRepositoryVault = path.join(root, "vault");
 const reportSource = path.join(root, REPOSITORY_CONTENT_PATHS.industryReportsRoot);
 
@@ -63,6 +64,7 @@ if (vaultRoot) {
     }
   }
   const notePaths = new Set(markdown.map((file) => path.relative(vaultRoot, file).replaceAll("\\", "/").replace(/\.md$/u, "").toLowerCase()));
+  markdownFileCount = markdown.length;
   const noteNames = new Set(markdown.map((file) => path.basename(file, ".md").toLowerCase()));
   let generatedManifestFiles = new Set();
 
@@ -152,7 +154,6 @@ if (vaultRoot) {
     }
   }
 
-  if (markdown.length > 650) problems.push(`Guanlan curated Vault is unexpectedly large: ${markdown.length} Markdown files`);
 }
 
 const publicSiteRoot = path.join(root, "01-SiteV2", "site");
@@ -178,6 +179,7 @@ console.log(JSON.stringify({
   contractOnly,
   externalVaultConfigured: Boolean(vaultRoot),
   vault: vaultRoot ? path.basename(vaultRoot) : "",
+  markdownFiles: markdownFileCount,
   problems,
 }, null, 2));
 

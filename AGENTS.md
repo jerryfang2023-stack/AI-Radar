@@ -6,11 +6,11 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current release: WaveSight `V4.5.2-founder-profiles`; the public shell remains `SITE-V4.3.0-compatibility-retired`.
+- Current release: WaveSight `V4.6.0-two-center-focus`; the public shell is `SITE-V4.4.0-two-center-focus`.
 - Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
 - Current local automation: exactly seven Windows tasks; Final Closure owns the strict 23-table `DATA-LAKE-V4.0` refresh, and Hermes watchdog/heartbeat is one control-plane cycle.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
-- Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
+- Current frontstage: the Data Center, Trend Radar, Guanlan Research, and report detail pages. Funding Insights is a Guanlan Research topic route; Opportunity Map remains an unlisted internal lab route.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.1.0-history-backfill.
@@ -19,7 +19,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Enterprise AI / FDE observation version: FDE-OBSERVATION-V1.0.
 - Current AI Hardware data version: HARDWARE-V1.0.
 - Current AI Hardware fact/snapshot versions: HARDWARE-FACT-V1.0 / HARDWARE-SNAPSHOT-V1.0.
-- Current Reports Center column version: REPORTS-V1.1.0-lane-independent.
+- Current Guanlan Research column version: REPORTS-V1.2.0-research-hub.
 - Current Opportunity Map column version: OMAP-V2.0.0-v4-evidence.
 - Current Trend Radar column version: TRADAR-V1.0.0-factual-change-explorer.
 - Current Raw contract: RAW-V4.0. Full original bodies live only in the configured private evidence repository; public bundles retain `evidence://<content_hash>` locators and body-free metadata.
@@ -52,16 +52,15 @@ First-line viewpoints are a separate builders column. They are useful for readin
 
 | Entry | File | Role |
 |---|---|---|
-| Commercial Events / 商业事件 | `01-SiteV2/site/data-center.html?view=events` | source-traceable canonical commercial events |
-| Industry Reports / 行业报告 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports and report archives |
-| Opportunity Map / 机会地图 | `01-SiteV2/site/opportunity-map.html` | source-backed Entry Point Map, Product Pain Map, and human-reviewed Direction Cards with evidence modals |
+| Event Library / 事件库 | `01-SiteV2/site/data-center.html?view=events` | source-traceable canonical events, including FDE and AI Hardware thematic filters |
+| Entity Library / 实体库 | `01-SiteV2/site/data-center.html?view=index` | stable entities, histories, and embedded factual relationships |
 | Trend Radar / 变化雷达 | `01-SiteV2/site/trend-radar.html` | evidence-backed daily, weekly, and monthly factual change explorer |
-| Weekly AI Business Change Radar / 周报 | `01-SiteV2/site/weekly-ai-business-change-radar.html` | weekly report detail page, entered from Intelligence Map |
+| Guanlan Research / 观澜研究 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports, capital research, and enterprise AI deployment topics |
 | First-Line Viewpoints / 一线观点 | `01-SiteV2/site/data-center.html?view=viewpoints` | independent builders viewpoints |
 | Community Intelligence / 社群情报 | `01-SiteV2/site/data-center.html?view=community` | community-sourced cases, tool tactics, opportunities, and document links |
 | Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | operations backend |
 
-All public pages and report details use the V4 logo header and shared Data Center / Application Center sidebar.
+The public sidebar has four Data Center entries (事件库、社群情报、一线观点、实体库) and two Application Center entries (变化雷达、观澜研究). FDE, AI Hardware, relationships, and Funding Insights remain supported as thematic or subordinate routes rather than primary navigation. Opportunity Map is `noindex,nofollow` and unlisted.
 
 ## Retired Routes
 
@@ -69,7 +68,7 @@ All public pages and report details use the V4 logo header and shared Data Cente
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
-If an old page rule conflicts with SITE-V4.3.0, delete or rebuild it instead of preserving V3 public compatibility.
+If an old page rule conflicts with SITE-V4.4.0, delete or rebuild it instead of preserving V3 public compatibility.
 
 ## Current Context
 
@@ -79,13 +78,13 @@ If an old page rule conflicts with SITE-V4.3.0, delete or rebuild it instead of 
 | `context/00-current-state.md` | current project state |
 | `context/version-ledger.md` | version baseline and freeze points |
 | `context/frontstage-page-contracts.md` | frontstage page contracts |
-| `context/01-product-map.md` | SITE-V4.3 product structure and data flow |
+| `context/01-product-map.md` | SITE-V4.4 product structure and data flow |
 | `context/02-vi-style.md` | VI, typography, visual rules |
 | `context/04-qc-rules.md` | general quality gates |
 | `context/05-daily-monitoring.md` | retired V3 monitoring archive notice |
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | retired V3 archive notice |
-| `context/08-automation.md` | SITE-V4.3 GitHub / site / Guanlan Vault sync automation loop |
+| `context/08-automation.md` | SITE-V4.4 GitHub / site / Guanlan Vault sync automation loop |
 | `context/09-current-action-index.md` | current V4 action registry |
 | `context/10-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane liveness watchdog |

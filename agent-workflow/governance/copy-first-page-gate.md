@@ -22,7 +22,7 @@ encoding: UTF-8
 
 - 新增页面、栏目页、详情页、会员页、Admin 页面、首页模块。
 - 修改页面标题、栏目标题、卡片标题、CTA、说明文案、会员锁定态、空状态、提示语。
-- 修改 Data Center、Industry Reports、报告详情或 Dashboard 的前台展示文案。
+- 修改 Data Center、Guanlan Research、报告详情或 Dashboard 的前台展示文案。
 - 新增或调整页面内任何用户可见的中文、英文标签或按钮。
 
 以下情况可标注“不适用”：

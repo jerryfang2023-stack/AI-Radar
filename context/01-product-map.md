@@ -1,7 +1,7 @@
 ---
 status: current
 scope: product-map
-last_updated: 2026-07-30
+last_updated: 2026-07-31
 use_when:
   - product planning
   - page or navigation decisions
@@ -9,7 +9,7 @@ use_when:
 priority: current
 ---
 
-# 01 Product Map - SITE-V4.3 Compatibility Write Disabled
+# 01 Product Map - SITE-V4.4 Two-Center Focus
 
 ## Current Product Structure
 
@@ -26,26 +26,24 @@ priority: current
 | Relationship data | RELATION-V2 typed endpoints backed by event, Claim, and source references only | Active factual data layer |
 | Targeted Backfill | BACKFILL-V1 recurring company/product sweeps and explicit funding/deployment fact-gap tasks | Active internal operations layer |
 | Trend Radar | Accepted-event daily, weekly and monthly factual change projection with evidence links and coverage disclosure | Active downstream application; excluded from V4 core |
-| Opportunity outputs | V4 evidence-backed downstream interpretation, excluded from V4 core | Active downstream application |
+| Opportunity outputs | V4 evidence-backed downstream interpretation, excluded from V4 core | Internal lab; not public navigation |
+| Guanlan Research | Periodic reports plus capital/funding and enterprise AI deployment research topics | Active downstream application hub |
 | Dashboard | Production-chain, source traceability, data quality, version governance, Skill Store, and release status | Active backend |
 
 ## Current Navigation
 
 ```text
 Data Center
-|- Commercial Events
-|- First-Line Viewpoints
+|- Event Library
 |- Community Intelligence
-|- Industry Dossiers (Entity Index)
-`- Relationship Map (entity-centered one-hop factual graph)
+|- First-Line Viewpoints
+`- Entity Library
 Application Center
 |- Trend Radar
-|- Funding Insights
-|- Industry Reports
-`- Opportunity Map
+`- Guanlan Research
 ```
 
-The V4 Data Center and Industry Reports sidebar in `context/frontstage-page-contracts.md` is the only current public navigation contract. Dashboard remains an operations backend and is not part of public navigation.
+FDE and AI Hardware remain Event Library thematic views, while evidence-backed relationships are shown inside Entity Library details. Funding Insights remains a Guanlan Research topic route. Opportunity Map remains an unlisted internal lab route with `noindex,nofollow`. Dashboard remains an operations backend and is not part of public navigation.
 
 ## Asset Flow
 
@@ -59,7 +57,7 @@ Daily monitor / BACKFILL-V1 targeted discovery
 |-> FDEObservation -> implementation dossier / lifecycle
 `-> HardwareFact -> dated snapshot -> factual change timeline
 -> JSON / JSONL / DuckDB
--> Trend Radar / Funding Insights / Opportunity Map / Reports
+-> Trend Radar / Guanlan Research
 -> downstream AIP / insight / decision-support applications
 ```
 
@@ -98,4 +96,4 @@ These types are frozen history only. Current production does not generate Cards.
 
 ## Retired Outputs
 
-Legacy content-output routes, V2/V3 column pages, and old opinion sidebar logic are not current SITE-V4.3 public production goals.
+Legacy content-output routes, V2/V3 column pages, and old opinion sidebar logic are not current SITE-V4.4 public production goals.

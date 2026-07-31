@@ -128,7 +128,7 @@ Direction Cards are a reviewed downstream layer built after the two maps, not an
 
 ## Frontstage Presentation Rules
 
-The independent Opportunity Map page should present the two matrices as source-backed application surfaces, not as a compact Reports Center widget.
+The unlisted Opportunity Map internal lab should present the two matrices as source-backed application surfaces, not as a compact Guanlan Research widget.
 
 - The top-level section title should be `机会地图` / `Opportunity Map`.
 - Entry Point Map and Product Pain Map must be separate sections with their own Chinese and English subcolumn names.
@@ -137,7 +137,7 @@ The independent Opportunity Map page should present the two matrices as source-b
 - Map cells should open related Card evidence in a modal or equivalent detail layer.
 - Direction Cards should use one primary action, `查看方向`, which opens the hypothesis, unknowns, validation action, and original evidence.
 - Do not keep a persistent right-side "Cell Evidence" instruction panel on the page.
-- Relation Paths are retired and must not return to either Opportunity Map or Reports Center.
+- Relation Paths are retired and must not return to either Opportunity Map or Guanlan Research.
 - Keep the visual palette report-like and low saturation: warm paper background, dark blue actions, gold accents, and restrained status colors.
 ## Boundaries
 

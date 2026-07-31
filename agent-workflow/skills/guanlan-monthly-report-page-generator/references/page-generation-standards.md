@@ -68,7 +68,7 @@ Use tables when the reader needs comparison. Use cards or lists when the reader 
 
 ## Report Center Wiring
 
-- `intelligence-map.html` is the only Industry Reports entrance and leads with reports.
+- `intelligence-map.html` is the only Guanlan Research entrance and leads with reports.
 - `reports.html` is a compatibility redirect only.
 - Show monthly and weekly reports as separate subcolumns when both exist.
 - Time-window selectors should sit in the section head when relevant.

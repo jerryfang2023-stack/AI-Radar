@@ -1,6 +1,6 @@
 ---
 name: guanlan-typography-qc
-description: Audit WaveSight AI / Guanlan current V4 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, V4 sidebar/header typography, Data Center, Industry Reports, report details, Dashboard, cards, tables, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.
+description: Audit WaveSight AI / Guanlan current V4 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, V4 sidebar/header typography, Data Center, Guanlan Research, report details, Dashboard, cards, tables, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.
 metadata:
   guanlan:
     version: "1.0.1"
@@ -107,7 +107,7 @@ Homepage / shell entry:
 Current frontstage pages:
 
 - Data Center uses `01-SiteV2/site/data-center.html` for events, viewpoints, community, and index views.
-- Industry Reports uses `01-SiteV2/site/intelligence-map.html` and V4 weekly / monthly detail pages.
+- Guanlan Research uses `01-SiteV2/site/intelligence-map.html` and V4 weekly / monthly detail pages.
 - Dashboard uses `01-SiteV2/site/operations-console.html`.
 - All public Data Center and report pages must share the V4 logo header and Data Center / Application Center sidebar hierarchy.
 - Filters and tags must remain visually secondary.

@@ -4,7 +4,7 @@ description: Use when writing, revising, or auditing a WaveSight monthly busines
 metadata:
   guanlan:
     version: "0.3.0"
-    lane: "Industry Reports"
+    lane: "Guanlan Research"
     status: "downstream application"
     order: 95
     responsibility: "Write the monthly business-structure report from accepted V4 evidence."

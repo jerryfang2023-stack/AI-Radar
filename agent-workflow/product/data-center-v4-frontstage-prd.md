@@ -1,6 +1,6 @@
 # 观澜数据中心 V4 前台产品需求文档
 
-状态：已确认  
+状态：历史基线，当前导航由 `context/frontstage-page-contracts.md` 的 SITE-V4.4 契约取代
 版本：`SITE-V4.2.0-entity-history-prd-v1.3`
 日期：2026-07-16  
 适用范围：观澜内部只读网站的数据中心与应用中心  

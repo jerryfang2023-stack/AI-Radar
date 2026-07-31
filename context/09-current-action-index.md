@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v4-current-action-index
-last_updated: 2026-07-29
+last_updated: 2026-07-31
 priority: current
 ---
 
@@ -20,7 +20,7 @@ priority: current
 | Opportunity Map evidence | `OMAP-V2.0.0-v4-evidence` |
 | Trend Radar | `TRADAR-V1.0.0-factual-change-explorer` |
 | Funding Insights | `FUNDING-INSIGHT-V1.1.0-card-integrity` |
-| Weekly/monthly Reports | `REPORTS-V1.1.0-lane-independent` |
+| Guanlan Research / weekly and monthly reports | `REPORTS-V1.2.0-research-hub` |
 | Operations telemetry and health | `OPS-V2.0.0-v4-telemetry` |
 | First-Line Viewpoints | independent `O` lane |
 | Community Intelligence | independent `C` lane |

@@ -1,9 +1,9 @@
 # Current Quality Gates
 
 Status: current
-Updated: 2026-07-29
+Updated: 2026-07-31
 
-This governance note lists active `SITE-V4.3.0-compatibility-retired` checks. V3 compatibility writers, consumers, assets, and gates are absent.
+This governance note lists active `SITE-V4.4.0-two-center-focus` checks. V3 compatibility writers, consumers, assets, and gates are absent.
 
 ## General Completion Rule
 
