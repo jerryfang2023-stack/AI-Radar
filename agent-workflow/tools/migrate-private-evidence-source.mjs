@@ -157,6 +157,10 @@ function migrateBundleDirectory(directory, store) {
 }
 
 function main() {
+  const date = arg("date", "");
+  if (date && !/^\d{4}-\d{2}-\d{2}$/u.test(date)) {
+    throw new Error(`Invalid --date=${date}`);
+  }
   const deletePublicOriginals = arg("delete-public-originals", "false") === "true";
   const backupRoot = resolvePrivateEvidenceBackupRoot(root);
   buildPrivateEvidenceBackup({ root, backupRoot });
@@ -167,20 +171,23 @@ function main() {
   const intakeFiles = fs.existsSync(intakeRoot)
     ? fs.readdirSync(intakeRoot)
       .filter((name) => name.endsWith(".json"))
+      .filter((name) => !date || name === `${date}.json`)
       .map((name) => path.join(intakeRoot, name))
     : [];
   intakeFiles.forEach(migrateIntakeFile);
 
   const bundles = fs.readdirSync(dataCenterRoot, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
+    .filter((entry) => !date || entry.name === date)
     .map((entry) => migrateBundleDirectory(path.join(dataCenterRoot, entry.name), store))
     .filter(Boolean);
 
-  if (deletePublicOriginals && fs.existsSync(originalsRoot)) {
-    if (!safeInside(root, originalsRoot) || path.resolve(originalsRoot) === path.resolve(root)) {
-      throw new Error(`Refusing to delete unsafe public originals path: ${originalsRoot}`);
+  const publicOriginalsTarget = date ? path.join(originalsRoot, date) : originalsRoot;
+  if (deletePublicOriginals && fs.existsSync(publicOriginalsTarget)) {
+    if (!safeInside(root, publicOriginalsTarget) || path.resolve(publicOriginalsTarget) === path.resolve(root)) {
+      throw new Error(`Refusing to delete unsafe public originals path: ${publicOriginalsTarget}`);
     }
-    fs.rmSync(originalsRoot, { recursive: true, force: false });
+    fs.rmSync(publicOriginalsTarget, { recursive: true, force: false });
   }
 
   console.log(JSON.stringify({
@@ -192,7 +199,9 @@ function main() {
     bundle_dates: bundles.length,
     raw_documents: bundles.reduce((sum, bundle) => sum + bundle.raw_documents, 0),
     stripped_body_bytes: bundles.reduce((sum, bundle) => sum + bundle.stripped_body_bytes, 0),
-    public_originals_deleted: deletePublicOriginals && !fs.existsSync(originalsRoot),
+    scoped_date: date || "all",
+    public_originals_target: path.relative(root, publicOriginalsTarget).replaceAll("\\", "/"),
+    public_originals_deleted: deletePublicOriginals && !fs.existsSync(publicOriginalsTarget),
   }, null, 2));
 }
 

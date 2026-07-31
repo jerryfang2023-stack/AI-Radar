@@ -13,6 +13,10 @@ import {
   loadPrivateEvidenceEntries,
 } from "./lib/private-evidence-store.mjs";
 import { normalizeEvidenceBody } from "./lib/evidence-body-normalizer.mjs";
+import {
+  chinaMarketOrganizationAliases,
+  loadChinaMarketConfig,
+} from "./lib/china-market-v1.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +25,7 @@ const rawRoot = path.join(root, "01-SiteV2/content/01-raw/originals");
 const outputRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
 const modelAssistRoot = path.join(root, "01-SiteV2/content/11-databases/model-assist-v1");
 const taxonomyPath = path.join(root, "agent-workflow/product/tag-taxonomy-v4.json");
+const chinaMarketConfig = loadChinaMarketConfig(root);
 
 const VERSION = Object.freeze({
   product: "SITE-V4.0-data-center",
@@ -333,7 +338,8 @@ const ORGANIZATION_ALIASES = [
   ["xAI", ["SpaceXAI", "xAI"]],
   ["Xiaomi", ["Xiaomi", "小米"]],
   ["ZTE", ["ZTE", "中兴"]]
-].map(([canonicalName, aliases]) => ({ canonicalName, aliases }));
+].map(([canonicalName, aliases]) => ({ canonicalName, aliases }))
+  .concat(chinaMarketOrganizationAliases(chinaMarketConfig.entityAliases));
 
 function arg(name, fallback = "") {
   const prefix = `--${name}=`;

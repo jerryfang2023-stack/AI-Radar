@@ -6,6 +6,12 @@ import crypto from "node:crypto";
 import { resolveSourceTitleTranslation, sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
 import { buildSourceIntake, sourceIntakePath } from "./lib/source-intake-v1.mjs";
 import { selectImmutableSourceSnapshot } from "./lib/immutable-source-snapshot-v1.mjs";
+import {
+  chinaMarketLaneQueries,
+  loadChinaMarketConfig,
+  mergeChinaMarketSources,
+  scopeChinaMarketItems,
+} from "./lib/china-market-v1.mjs";
 
 const root = process.cwd();
 const execFileAsync = promisify(execFile);
@@ -63,8 +69,10 @@ if (args.has("help") || args.has("h")) {
       "  --rss-item-limit-per-source=8",
       "  --rss-max-age-days=30",
       "  --disable-tavily=true",
-      "  --source-only=aihot|keyword|gdelt|rss",
+      "  --source-only=aihot|keyword|gdelt|rss|china-rss",
       "  --use-source-artifacts=true",
+      "  --targeted-source-artifacts=true",
+      "  --market-region=CN",
       "  --source-artifact-dir=agent-workflow/reports/source-runs/YYYY-MM-DD",
       "  --title-translation-provider=auto|deepseek|none",
       "  --disable-title-translation=true",
@@ -96,6 +104,11 @@ const evidenceObjectFixtureMode = args.get("evidence-object-regression-fixtures"
 const querySelectionFixtureMode = args.get("query-selection-regression-fixtures") === "true";
 const rssIngestionFixtureMode = args.get("rss-ingestion-regression-fixtures") === "true";
 const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
+const targetedSourceArtifacts = args.get("targeted-source-artifacts") === "true";
+const targetMarketRegion = String(args.get("market-region") || "").trim().toUpperCase();
+if (targetMarketRegion && targetMarketRegion !== "CN") {
+  throw new Error(`Unsupported --market-region=${targetMarketRegion}; expected CN`);
+}
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
 const contentRoot = path.join(root, "01-SiteV2", "content");
@@ -152,6 +165,7 @@ const keywordMonitoring = readJson(keywordMonitoringPath, {
   theme_groups: [],
 });
 const sourceRegistry = readJson(sourceRegistryPath, { sources: [] });
+const chinaMarketConfig = loadChinaMarketConfig(root);
 const monitorQualityGate = readJson(monitorQualityGatePath, { hard_gates: {}, layered_search_requirements: {} });
 const monitorHardGates = monitorQualityGate.hard_gates || {};
 const monitorDiagnosticTargets = monitorQualityGate.diagnostic_targets || {};
@@ -224,7 +238,10 @@ const providerFallbackNotes = [];
 let anysearchDisabledForRun = false;
 let tavilyDisabledForRun = tavilyDisabledByConfig;
 const aTierMediaFallbackQuerySuffix = "(site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)";
-const registrySources = Array.isArray(sourceRegistry.sources) ? sourceRegistry.sources : [];
+const registrySources = mergeChinaMarketSources(
+  Array.isArray(sourceRegistry.sources) ? sourceRegistry.sources : [],
+  chinaMarketConfig.sourceRegistry
+);
 const registryHostRules = registrySources
   .filter((source) => source && source.enabled_default !== false)
   .map((source) => {
@@ -234,9 +251,13 @@ const registryHostRules = registrySources
     } catch {
       host = "";
     }
-    return { ...source, host };
+    const hosts = [...new Set([
+      host,
+      ...(Array.isArray(source.publisher_domains) ? source.publisher_domains : []),
+    ].map((value) => String(value || "").toLowerCase().replace(/^www\./u, "")).filter(Boolean))];
+    return { ...source, host, hosts };
   })
-  .filter((source) => source.host || source.name);
+  .filter((source) => source.hosts.length || source.name);
 const p0TermRules = (Array.isArray(keywordMonitoring.p0_core_tracks) ? keywordMonitoring.p0_core_tracks : [])
   .flatMap((group) => (Array.isArray(group.terms) ? group.terms : []).map((term) => ({
     term,
@@ -264,19 +285,19 @@ const broadRawEntryRules = (Array.isArray(rawEntryPolicy.broad_terms) ? rawEntry
 const rawEntryTermRules = [...themeTermRules, ...p0TermRules, ...p1TermRules, ...broadRawEntryRules];
 
 function laneQueries(lane, fallbackQueries) {
-  const queries = themeGroups.flatMap((group) =>
+  const configuredQueries = themeGroups.flatMap((group) =>
     ((group.lanes && Array.isArray(group.lanes[lane]) ? group.lanes[lane] : [])).map((query) => ({
       query,
       query_theme: group.id,
       keyword_group: group.id,
     }))
   );
-  if (queries.length) return queries;
-  return fallbackQueries.map((query) => ({
+  const baseQueries = configuredQueries.length ? configuredQueries : fallbackQueries.map((query) => ({
     query,
     query_theme: "uncategorized",
     keyword_group: "fallback-seed",
   }));
+  return [...baseQueries, ...chinaMarketLaneQueries(chinaMarketConfig.monitoring, lane)];
 }
 
 function themeLabel(themeId) {
@@ -820,13 +841,22 @@ function isDomesticVendorHost(host = "") {
 }
 
 function registryRuleFor(item = {}) {
+  const itemUrl = String(item.url || "");
   const host = urlHost(item.url || "").toLowerCase();
   const sourceText = `${item.source || ""} ${item.sourceName || ""}`.toLowerCase();
   if (!host && !sourceText) return null;
   return registryHostRules.find((rule) => {
-    const ruleHost = String(rule.host || "").toLowerCase();
+    const prefixes = Array.isArray(rule.match_url_prefixes) ? rule.match_url_prefixes : [];
+    if (prefixes.length) {
+      return prefixes.some((prefix) => itemUrl.toLowerCase().startsWith(String(prefix).toLowerCase()))
+        || (rule.name && sourceText.includes(String(rule.name).toLowerCase()));
+    }
+    const ruleHosts = Array.isArray(rule.hosts) ? rule.hosts : [rule.host];
     const ruleName = String(rule.name || "").toLowerCase();
-    if (ruleHost && (host === ruleHost || host.endsWith(`.${ruleHost}`) || ruleHost.endsWith(`.${host}`))) return true;
+    if (ruleHosts.some((ruleHostValue) => {
+      const ruleHost = String(ruleHostValue || "").toLowerCase();
+      return ruleHost && (host === ruleHost || host.endsWith(`.${ruleHost}`) || ruleHost.endsWith(`.${host}`));
+    })) return true;
     return ruleName && sourceText.includes(ruleName);
   }) || null;
 }
@@ -849,6 +879,15 @@ function classify(item) {
   const acquisitionSourceLevel = acquisitionSourceLevelFor(item);
   const researchStatus = researchStatusFor(item);
   const registryRule = registryRuleFor(item);
+
+  if (registryRule?.registry_scope === "china_market") {
+    return {
+      level: "ungraded",
+      type: registryRule.source_category || registryRule.source_type || "china_market_source",
+      acquisition_source_level: acquisitionSourceLevel,
+      research_status: researchStatus,
+    };
+  }
 
   if (isSocialDiscoverySource(item)) {
     return { level: "C", type: "operators", acquisition_source_level: "M", research_status: researchStatus };
@@ -2738,6 +2777,12 @@ async function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
     source_type: item.source_type || "unknown",
     source_level: item.source_level || "unknown",
     source_level_role: "traceability_only_not_value_score_or_core_gate",
+    source_registry_id: item.source_registry_id || "",
+    source_category: item.source_category || "",
+    source_region: item.source_region || "",
+    market_region: item.market_region || "",
+    china_market_match: Boolean(item.china_market_match),
+    china_market_match_basis: item.china_market_match_basis || "",
     evidence_object_type: gate.evidenceObjectType,
     evidence_object_usable: gate.evidenceObjectUsable,
     event_evidence: gate.eventEvidence,
@@ -3537,28 +3582,39 @@ function pathConfigById(id = "") {
 
 function selectQueriesForPath(allQueries, pathConfig) {
   const limit = Math.max(searchPathQueryLimit, 1);
+  const eligibleQueries = allQueries.filter((query) =>
+    !Array.isArray(query.search_paths)
+    || query.search_paths.length === 0
+    || query.search_paths.includes(pathConfig.id)
+  );
   if (pathConfig.id === "capital_startup") {
-    const fundingQueries = allQueries.filter((query) => /startup|seed|pre-seed|angel|funding|financing|raises?|series\s+[a-z]|venture|capital|融资|种子轮|天使轮/iu.test(query.query || ""));
+    const fundingQueries = eligibleQueries.filter((query) => /startup|seed|pre-seed|angel|funding|financing|raises?|series\s+[a-z]|venture|capital|融资|获投|投资|种子轮|天使轮/iu.test(query.query || ""));
     const dedicated = fundingQueries.filter((query) => /capital|funding/iu.test(query.query_theme || ""));
     const fallback = fundingQueries.filter((query) => !dedicated.includes(query));
     if (fundingQueries.length) return [...dedicated, ...fallback].slice(0, limit);
   }
   if (pathConfig.id === "industry_landing") {
-    const verticalQueries = allQueries.filter((query) => /vertical|industry|workflow|customer|adoption|finance|insurance|healthcare|legal|manufacturing|supply chain|public sector/iu.test(query.query || ""));
+    const verticalQueries = eligibleQueries.filter((query) => /vertical|industry|workflow|customer|adoption|finance|insurance|healthcare|legal|manufacturing|supply chain|public sector|客户|落地|部署|上线/iu.test(query.query || ""));
     if (verticalQueries.length) return verticalQueries.slice(0, limit);
   }
   if (pathConfig.lens === "fde") {
-    const fdeQueries = allQueries.filter((query) => pathConfig.selectionPattern.test(query.query || ""));
+    const fdeQueries = eligibleQueries.filter((query) =>
+      query.search_paths?.includes(pathConfig.id)
+      || pathConfig.selectionPattern.test(query.query || "")
+    );
     const dedicated = fdeQueries.filter((query) => query.query_theme === "enterprise-ai-implementation-signal");
     const fallback = fdeQueries.filter((query) => query.query_theme !== "enterprise-ai-implementation-signal");
     if (fdeQueries.length) return [...dedicated, ...fallback].slice(0, limit);
   }
   if (pathConfig.id === "procurement_marketplace") {
-    const procurementQueries = allQueries.filter((query) => /procurement|tender|contract award|purchasing agreement|public sector|production deployment/iu.test(query.query || ""));
+    const procurementQueries = eligibleQueries.filter((query) => /procurement|tender|contract award|purchasing agreement|public sector|production deployment|采购|招标|中标|成交|合同/iu.test(query.query || ""));
     if (procurementQueries.length) return procurementQueries.slice(0, limit);
   }
   if (pathConfig.lens === "hardware") {
-    const hardwareQueries = allQueries.filter((query) => pathConfig.selectionPattern.test(query.query || ""));
+    const hardwareQueries = eligibleQueries.filter((query) =>
+      query.search_paths?.includes(pathConfig.id)
+      || pathConfig.selectionPattern.test(query.query || "")
+    );
     const dedicated = hardwareQueries.filter((query) => /ai-hardware-/iu.test(query.query_theme || ""));
     const fallback = hardwareQueries.filter((query) => !/ai-hardware-/iu.test(query.query_theme || ""));
     if (hardwareQueries.length) {
@@ -3586,7 +3642,7 @@ function selectQueriesForPath(allQueries, pathConfig) {
     }
   }
   const byTheme = new Map();
-  for (const query of allQueries) {
+  for (const query of eligibleQueries) {
     if (!byTheme.has(query.query_theme)) byTheme.set(query.query_theme, []);
     byTheme.get(query.query_theme).push(query);
   }
@@ -3595,7 +3651,7 @@ function selectQueriesForPath(allQueries, pathConfig) {
     selected.push(...groupQueries.slice(0, 1));
     if (selected.length >= limit) break;
   }
-  for (const query of allQueries) {
+  for (const query of eligibleQueries) {
     if (selected.length >= limit) break;
     if (!selected.includes(query)) selected.push(query);
   }
@@ -3763,6 +3819,8 @@ function keywordSearchItem(result, queryConfig, pathConfig, extra = {}) {
     enterprise_ai_transformation_reason: enterpriseAiProfile.reason,
     query_theme: queryConfig.query_theme,
     keyword_group: queryConfig.keyword_group,
+    market_region: queryConfig.market_region || "",
+    china_market_query_id: queryConfig.china_market_query_id || "",
   };
 }
 
@@ -4313,6 +4371,8 @@ async function collectGDELT() {
           category: "news",
           query_theme: queryConfig.query_theme,
           keyword_group: queryConfig.keyword_group,
+          market_region: queryConfig.market_region || "",
+          china_market_query_id: queryConfig.china_market_query_id || "",
         });
       }
     } catch (error) {
@@ -4331,6 +4391,8 @@ async function collectGDELT() {
             category: "news",
             query_theme: queryConfig.query_theme,
             keyword_group: queryConfig.keyword_group,
+            market_region: queryConfig.market_region || "",
+            china_market_query_id: queryConfig.china_market_query_id || "",
           });
         }
       } catch (fallbackError) {
@@ -4382,9 +4444,11 @@ function selectRssSourceItems(entries = [], source = {}) {
   };
 }
 
-async function collectRSSFeeds() {
+async function collectRSSFeeds({ sourceRegion = "" } = {}) {
   const allSources = registrySources.filter(
-    (s) => s.interface_type === "rss" && s.enabled_default !== false
+    (s) => s.interface_type === "rss"
+      && s.enabled_default !== false
+      && (!sourceRegion || s.source_region === sourceRegion)
   );
   const sources = rssSourceLimit > 0 ? allSources.slice(0, rssSourceLimit) : allSources;
   if (!sources.length) return { items: [], failures: [], rss_source_count: 0 };
@@ -4474,6 +4538,9 @@ async function collectRSSFeeds() {
               rss_source_name: source.name,
               evidence_role: source.evidence_role || "",
               registry_source_type: source.source_type || "",
+              source_registry_id: source.source_id || "",
+              source_category: source.source_category || "",
+              source_region: source.source_region || "",
               query_theme: "",
               keyword_group: "",
             });
@@ -4512,6 +4579,9 @@ async function collectRSSFeeds() {
               rss_source_name: source.name,
               evidence_role: source.evidence_role || "",
               registry_source_type: source.source_type || "",
+              source_registry_id: source.source_id || "",
+              source_category: source.source_category || "",
+              source_region: source.source_region || "",
               query_theme: "",
               keyword_group: "",
             });
@@ -4534,6 +4604,10 @@ async function collectRSSFeeds() {
   }
 
   return { items, failures, diagnostics, rss_source_count: sources.length };
+}
+
+function collectChinaRSSFeeds() {
+  return collectRSSFeeds({ sourceRegion: "CN" });
 }
 
 /** Extract the text content of an XML element by tag name. */
@@ -4559,6 +4633,10 @@ const sourceOnlyCollectors = {
   rss: {
     label: "RSS feeds",
     collect: collectRSSFeeds,
+  },
+  "china-rss": {
+    label: "China market RSS feeds",
+    collect: collectChinaRSSFeeds,
   },
 };
 
@@ -4911,6 +4989,7 @@ function normalizeCandidates(items) {
     .filter((item) => item.carried_formal_card_source || shouldIncludeInRawCandidates(item))
     .map((item) => {
       const classified = classify(item);
+      const registryRule = registryRuleFor(item);
       const themed = assignTheme({
         ...item,
         title: cleanText(item.title, item.summary || item.url),
@@ -4920,6 +4999,10 @@ function normalizeCandidates(items) {
         source_type: classified.type,
         acquisition_source_level: classified.acquisition_source_level || "",
         research_status: classified.research_status || "not_research",
+        source_registry_id: item.source_registry_id || registryRule?.source_id || "",
+        source_category: item.source_category || registryRule?.source_category || "",
+        source_region: item.source_region || registryRule?.source_region || "",
+        market_region: item.market_region || registryRule?.market_region || "",
       });
       return {
         ...normalizeDeveloperKeywordGroup(themed),
@@ -5364,6 +5447,10 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     `anysearch_disabled_for_run: ${runMeta.anysearch_disabled_for_run ? "true" : "false"}`,
     `provider_fallback_notes: ${Array.isArray(runMeta.provider_fallback_notes) && runMeta.provider_fallback_notes.length ? runMeta.provider_fallback_notes.join("; ") : "none"}`,
     `source_artifacts_used: ${runMeta.source_artifacts_used ? "true" : "false"}`,
+    `targeted_source_artifacts: ${runMeta.targeted_source_artifacts ? "true" : "false"}`,
+    `target_market_region: ${runMeta.target_market_region || "none"}`,
+    `market_scope_included_count: ${runMeta.market_scope_included_count ?? items.length}`,
+    `market_scope_excluded_count: ${runMeta.market_scope_excluded_count ?? 0}`,
     `source_artifact_files: ${Array.isArray(runMeta.source_artifact_files) ? runMeta.source_artifact_files.join(", ") : ""}`,
     `historical_dedupe_enabled: ${runMeta.historical_dedupe_enabled ? "true" : "false"}`,
     `historical_raw_records_checked: ${runMeta.historical_raw_records_checked ?? 0}`,
@@ -5375,6 +5462,8 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     `social_discovery_count: ${items.filter(isSocialDiscoverySource).length}`,
     `keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `source_registry_config: ${rel(sourceRegistryPath)}`,
+    `china_market_source_registry_config: ${rel(chinaMarketConfig.sourceRegistryPath)}`,
+    `china_market_monitoring_config: ${rel(chinaMarketConfig.monitoringPath)}`,
     `pool_target: ${poolMinTarget}`,
     `pool_selection_buffer: ${poolSelectionBufferTarget}`,
     `routed_pool_target: ${routedPoolMinTarget}`,
@@ -5425,6 +5514,12 @@ async function makeRawFiles(items, failures, runMeta = {}) {
       `- 搜索路径：${record.search_path || "not_applicable"}`,
       `- 来源类型：${item.source_type}`,
       `- 追溯标签：${item.source_level}`,
+      `- source_registry_id: ${record.source_registry_id || "not_registered"}`,
+      `- source_category: ${record.source_category || "unknown"}`,
+      `- source_region: ${record.source_region || "unknown"}`,
+      `- market_region: ${record.market_region || "not_asserted"}`,
+      `- china_market_match: ${record.china_market_match}`,
+      `- china_market_match_basis: ${record.china_market_match_basis || "not_applicable"}`,
       `- evidence_object_type: ${record.evidence_object_type}`,
       `- evidence_object_usable: ${record.evidence_object_usable}`,
       `- event_evidence: ${record.event_evidence}`,
@@ -5468,6 +5563,12 @@ async function makeRawFiles(items, failures, runMeta = {}) {
       `source_type: ${record.source_type}`,
       `source_level: ${record.source_level}`,
       `source_level_role: ${record.source_level_role}`,
+      `source_registry_id: ${JSON.stringify(record.source_registry_id)}`,
+      `source_category: ${JSON.stringify(record.source_category)}`,
+      `source_region: ${JSON.stringify(record.source_region)}`,
+      `market_region: ${JSON.stringify(record.market_region)}`,
+      `china_market_match: ${record.china_market_match}`,
+      `china_market_match_basis: ${JSON.stringify(record.china_market_match_basis)}`,
       `evidence_object_type: ${record.evidence_object_type}`,
       `evidence_object_usable: ${record.evidence_object_usable}`,
       `event_evidence: ${record.event_evidence}`,
@@ -5886,6 +5987,8 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     "- evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.",
     `- raw_count_by_source_type: ${distributionText(byType)}`,
     `- source_registry_config: ${rel(sourceRegistryPath)}`,
+    `- china_market_source_registry_config: ${rel(chinaMarketConfig.sourceRegistryPath)}`,
+    `- china_market_monitoring_config: ${rel(chinaMarketConfig.monitoringPath)}`,
     `- raw_snapshot_status_distribution: ${distributionText(bySnapshotStatus)}`,
     "- core_original_evidence_count: pending; to be filled after important-card evidence review.",
     "- raw_snapshot_policy: Raw originals save clean text snapshots when fetchable; high-volatility sources keep available local text and must be rechecked before downstream use.",
@@ -5938,16 +6041,20 @@ async function main() {
   if (useSourceArtifacts) {
     sourceArtifacts = loadSourceArtifactItems();
     const hasAIHotDailyArtifact = sourceArtifacts.items.some(isAIHotDailySelected);
-    if (!hasAIHotDailyArtifact) {
+    if (!hasAIHotDailyArtifact && !targetedSourceArtifacts) {
       sourceArtifacts.failures.push("source-artifacts missing AI HOT daily candidates; live AI HOT fallback activated");
       aihot = await collectAIHot();
     }
   } else {
     aihot = await collectAIHot();
   }
-  const primaryItems = useSourceArtifacts
+  const discoveredPrimaryItems = useSourceArtifacts
     ? [...sourceArtifacts.items, ...aihot.items]
     : [...aihot.items];
+  let marketScope = targetMarketRegion === "CN"
+    ? scopeChinaMarketItems(discoveredPrimaryItems, chinaMarketConfig.entityAliases)
+    : { included: discoveredPrimaryItems, excluded: [] };
+  const primaryItems = marketScope.included;
   let keywordSearch = { items: [], failures: [] };
   let hn = { items: [], failures: [] };
   let gdelt = { items: [], failures: [] };
@@ -5969,7 +6076,11 @@ async function main() {
       collectGDELT(),
       collectRSSFeeds(),
     ]);
-    normalizedCandidatePool = normalizeCandidates([...primaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items, ...rss.items]);
+    const discoveredItems = [...discoveredPrimaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items, ...rss.items];
+    marketScope = targetMarketRegion === "CN"
+      ? scopeChinaMarketItems(discoveredItems, chinaMarketConfig.entityAliases)
+      : { included: discoveredItems, excluded: [] };
+    normalizedCandidatePool = normalizeCandidates(marketScope.included);
     normalizedItems = selectNormalizedCandidates(normalizedCandidatePool);
     coverageGaps = importanceCoverageGaps(normalizedItems);
   }
@@ -5977,7 +6088,9 @@ async function main() {
   let items = dryRun
     ? normalizedItems
     : await enrichSnapshotsAdaptively(normalizedCandidatePool);
-  items = await refillPoolImportanceGaps(items, failures);
+  if (!targetedSourceArtifacts) {
+    items = await refillPoolImportanceGaps(items, failures);
+  }
   coverageGaps = importanceCoverageGaps(items);
 
   if (!dryRun) {
@@ -6001,6 +6114,10 @@ async function main() {
       adaptive_raw_fetched_candidates: adaptiveRawFetchedCandidates,
       adaptive_raw_expansion_candidates: adaptiveRawExpansionCandidates,
       source_artifacts_used: useSourceArtifacts,
+      targeted_source_artifacts: targetedSourceArtifacts,
+      target_market_region: targetMarketRegion,
+      market_scope_included_count: marketScope.included.length,
+      market_scope_excluded_count: marketScope.excluded.length,
       source_artifact_files: sourceArtifacts.files,
       source_artifact_runs: sourceArtifacts.sourceRuns,
       anysearch_configured: Boolean(anysearchApiKey),
@@ -6029,6 +6146,10 @@ async function main() {
         aihot_rejected_by_raw_entry_rules: aihot.rejected_count,
         external_search_activated: searchActivated,
         source_artifacts_used: useSourceArtifacts,
+        targeted_source_artifacts: targetedSourceArtifacts,
+        target_market_region: targetMarketRegion,
+        market_scope_included_count: marketScope.included.length,
+        market_scope_excluded_count: marketScope.excluded.length,
         source_artifact_dir: useSourceArtifacts ? rel(sourceArtifactDir) : "",
         source_artifact_files: sourceArtifacts.files,
         source_artifact_runs: sourceArtifacts.sourceRuns,

@@ -1,0 +1,191 @@
+{
+  "schema_version": "CHINA-MARKET-MONITORING-V1.0",
+  "updated_at": "2026-07-31",
+  "owner": "Data Center Source Ingestion",
+  "market_region": "CN",
+  "source_registry_ref": "01-SiteV2/content/11-databases/china-market-source-registry-v1.json",
+  "policy": {
+    "rule": "查询只扩展中国 AI 市场召回，不改变任何候选项的分数、排序、事实门槛或发布门槛。",
+    "ranking_or_weighting": "forbidden"
+  },
+  "search_queries": [
+    {
+      "query_id": "cn-official-model-product",
+      "query": "(site:api-docs.deepseek.com/news OR site:qwenlm.github.io/blog OR site:hunyuan.tencent.com OR site:bigmodel.cn OR site:minimaxi.com) (大模型 OR 模型 OR 智能体) (发布 OR 上线 OR 开源 OR 更新)",
+      "query_theme": "china-official-product",
+      "keyword_group": "china-official-product",
+      "lanes": [
+        "keyword_search"
+      ],
+      "search_paths": [
+        "official_original"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-cloud-customer-case",
+      "query": "(site:aliyun.com OR site:cloud.tencent.com OR site:huaweicloud.com OR site:volcengine.com) (大模型 OR 智能体 OR 人工智能) (客户案例 OR 落地 OR 部署 OR 上线)",
+      "query_theme": "china-enterprise-deployment",
+      "keyword_group": "china-enterprise-deployment",
+      "lanes": [
+        "keyword_search"
+      ],
+      "search_paths": [
+        "industry_landing",
+        "fde_customer_case",
+        "fde_production_rollout"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-api-pricing",
+      "query": "(DeepSeek OR 通义千问 OR 腾讯混元 OR 智谱 OR Kimi OR MiniMax OR 豆包) (API OR 开放平台) (定价 OR 价格 OR 计费 OR 降价)",
+      "query_theme": "china-api-pricing",
+      "keyword_group": "china-api-pricing",
+      "lanes": [
+        "keyword_search"
+      ],
+      "search_paths": [
+        "official_original"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-government-procurement",
+      "query": "site:ccgp.gov.cn (人工智能 OR 大模型 OR 智能体 OR 智算) (中标 OR 成交 OR 招标 OR 采购)",
+      "query_theme": "china-procurement",
+      "keyword_group": "china-procurement",
+      "lanes": [
+        "keyword_search"
+      ],
+      "search_paths": [
+        "procurement_marketplace",
+        "fde_procurement_contract"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-public-resource-award",
+      "query": "site:ggzy.gov.cn (人工智能 OR 大模型 OR 智能体 OR 智算中心) (中标 OR 成交 OR 招标 OR 合同)",
+      "query_theme": "china-procurement",
+      "keyword_group": "china-procurement",
+      "lanes": [
+        "keyword_search"
+      ],
+      "search_paths": [
+        "procurement_marketplace",
+        "fde_procurement_contract"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-generative-ai-filing",
+      "query": "site:cac.gov.cn (生成式人工智能 OR 大模型 OR 算法) (备案 OR 公告 OR 管理办法)",
+      "query_theme": "china-policy-regulation",
+      "keyword_group": "china-policy-regulation",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "official_original",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-ai-industry-policy",
+      "query": "site:miit.gov.cn (人工智能 OR 大模型 OR 智算中心) (政策 OR 标准 OR 试点 OR 名单)",
+      "query_theme": "china-policy-regulation",
+      "keyword_group": "china-policy-regulation",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "official_original",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-listed-company-disclosure",
+      "query": "(site:cninfo.com.cn OR site:sse.com.cn OR site:szse.cn) (人工智能 OR 大模型 OR 智算) (公告 OR 投资 OR 合同 OR 营收)",
+      "query_theme": "china-listed-disclosure",
+      "keyword_group": "china-listed-disclosure",
+      "lanes": [
+        "keyword_search"
+      ],
+      "search_paths": [
+        "official_original",
+        "fde_earnings_disclosure"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-ai-startup-funding",
+      "query": "中国 AI 公司 (融资 OR 获投 OR 完成融资 OR 战略投资) (大模型 OR 智能体 OR 具身智能 OR AI 芯片)",
+      "query_theme": "china-startup-funding",
+      "keyword_group": "china-startup-funding",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "capital_startup",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-ai-hardware",
+      "query": "中国 (AI 芯片 OR 人工智能芯片 OR 智算服务器 OR GPU 集群) (发布 OR 量产 OR 投产 OR 中标 OR 部署)",
+      "query_theme": "china-ai-hardware",
+      "keyword_group": "china-ai-hardware",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "hardware_product_specs",
+        "hardware_capacity_fab",
+        "hardware_shipment_deployment",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-enterprise-ai-rollout",
+      "query": "中国企业 (大模型 OR AI 智能体) (生产上线 OR 规模化部署 OR 试点 OR 采购 OR 客户案例)",
+      "query_theme": "china-enterprise-deployment",
+      "keyword_group": "china-enterprise-deployment",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "industry_landing",
+        "fde_customer_case",
+        "fde_production_rollout",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    },
+    {
+      "query_id": "cn-local-government-project",
+      "query": "(人工智能产业园 OR 大模型项目 OR 智算中心) (签约 OR 落地 OR 开工 OR 投产) (市政府 OR 区政府 OR 管委会)",
+      "query_theme": "china-local-project",
+      "keyword_group": "china-local-project",
+      "lanes": [
+        "keyword_search",
+        "gdelt"
+      ],
+      "search_paths": [
+        "industry_landing",
+        "hardware_capex",
+        "a_media_gdelt"
+      ],
+      "market_region": "CN"
+    }
+  ]
+}
