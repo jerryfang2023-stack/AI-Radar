@@ -8,8 +8,9 @@ import {
   chinaMarketOrganizationAliases,
   loadChinaMarketConfig,
   mergeChinaMarketSources,
+  selectChinaMarketIntakeDocuments,
 } from "./lib/china-market-v1.mjs";
-import { loadSourceIntakeEntries } from "./lib/source-intake-v1.mjs";
+import { readSourceIntake } from "./lib/source-intake-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const date = process.argv.find((value) => value.startsWith("--date="))?.slice("--date=".length) || "";
@@ -21,32 +22,39 @@ const organizationAliases = chinaMarketOrganizationAliases(config.entityAliases)
 const facts = [];
 
 if (date) {
-  const intake = loadSourceIntakeEntries(root, date);
+  const intake = readSourceIntake(root, date);
   if (!intake) throw new Error(`China market intake is missing for ${date}`);
-  const invalidScope = intake.entries.filter(({ raw }) =>
-    raw.source_region !== "CN"
-    || raw.market_region !== "CN"
-    || raw.china_market_match !== true
-    || !raw.source_registry_id
-  );
-  if (invalidScope.length) {
-    throw new Error(`China market intake has ${invalidScope.length} record(s) without explicit source/market scope`);
+  const selected = selectChinaMarketIntakeDocuments(intake.payload.raw_documents);
+  if (selected.invalidSourceDocuments.length) {
+    throw new Error(`China market intake has ${selected.invalidSourceDocuments.length} CN source record(s) without a registry id`);
+  }
+  if (selected.invalidMarketDocuments.length) {
+    throw new Error(`China market intake has ${selected.invalidMarketDocuments.length} market record(s) without explicit CN match scope`);
+  }
+  if (!selected.sourceDocuments.length && !selected.marketDocuments.length) {
+    throw new Error(`China market intake has no traceable CN source or market records for ${date}`);
   }
 
   const batchRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4", date);
   const readBatch = (name) => JSON.parse(fs.readFileSync(path.join(batchRoot, name), "utf8").replace(/^\uFEFF/u, ""));
   const events = readBatch("canonical-events.json");
   const claims = readBatch("claims.json");
-  const rawIds = new Set(intake.entries.map(({ intake_document: document }) => document.raw_id));
-  const invalidClaims = claims.filter((claim) => !rawIds.has(claim.raw_id));
-  if (invalidClaims.length) {
-    throw new Error(`China market batch has ${invalidClaims.length} claim(s) outside the scoped intake`);
-  }
+  const eventClaims = readBatch("event-claims.json");
+  const rawIds = new Set(
+    [...selected.sourceDocuments, ...selected.marketDocuments].map((document) => document.raw_id),
+  );
+  const scopedClaims = claims.filter((claim) => rawIds.has(claim.raw_id));
+  const claimIds = new Set(scopedClaims.map((claim) => claim.claim_id));
+  const eventIds = new Set(
+    eventClaims.filter((link) => claimIds.has(link.claim_id)).map((link) => link.event_id),
+  );
+  const scopedEvents = events.filter((event) => eventIds.has(event.event_id));
   facts.push(
     `date=${date}`,
-    `intake_documents=${intake.entries.length}`,
-    `claims=${claims.length}`,
-    `canonical_events=${events.length}`
+    `source_documents=${selected.sourceDocuments.length}`,
+    `market_documents=${selected.marketDocuments.length}`,
+    `claims=${scopedClaims.length}`,
+    `canonical_events=${scopedEvents.length}`
   );
 }
 

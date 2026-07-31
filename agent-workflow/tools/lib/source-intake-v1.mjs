@@ -49,10 +49,16 @@ function sourceBoundedExcerpts(record = {}) {
 }
 
 function applyIntakeTitleMetadata(raw = {}, document = {}) {
+  const marketScope = document.market_scope || {};
   return {
     ...raw,
     title: clean(document.title_original) || clean(raw.title),
     title_zh: clean(document.title_zh) || clean(raw.title_zh),
+    source_registry_id: clean(marketScope.source_registry_id) || clean(raw.source_registry_id),
+    source_region: clean(marketScope.source_region) || clean(raw.source_region),
+    market_region: clean(marketScope.market_region) || clean(raw.market_region),
+    china_market_match: marketScope.china_market_match === true || raw.china_market_match === true,
+    china_market_match_basis: clean(marketScope.china_market_match_basis) || clean(raw.china_market_match_basis),
   };
 }
 
@@ -115,6 +121,13 @@ export function buildSourceIntake({ root, date, entries, generatedAt = new Date(
       content_hash: contentHash,
       capture_method: clean(record.extraction_method || record.fetch_status),
       extraction_status: extractionStatus(record),
+      market_scope: {
+        source_registry_id: clean(record.source_registry_id),
+        source_region: clean(record.source_region),
+        market_region: clean(record.market_region),
+        china_market_match: record.china_market_match === true,
+        china_market_match_basis: clean(record.china_market_match_basis),
+      },
       intake_diagnostics: {
         acquisition_channel: clean(record.acquisition_channel),
         search_path: clean(record.search_path),

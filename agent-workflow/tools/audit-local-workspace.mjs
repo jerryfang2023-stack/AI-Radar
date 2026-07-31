@@ -62,6 +62,10 @@ export function auditWorkspace({
     const worktreePath = path.resolve(entry.worktree);
     const branch = String(entry.branch || "").replace(/^refs\/heads\//u, "");
     const changes = git(worktreePath, ["status", "--porcelain"]).stdout.split(/\r?\n/u).filter(Boolean);
+    const ignoredFiles = git(
+      worktreePath,
+      ["status", "--porcelain", "--ignored", "--untracked-files=normal"],
+    ).stdout.split(/\r?\n/u).filter((line) => line.startsWith("!! "));
     const counts = branch
       ? git(primaryRoot, ["rev-list", "--left-right", "--count", `${comparisonRef}...${branch}`]).stdout.trim().split(/\s+/u).map(Number)
       : [0, 0];
@@ -75,6 +79,7 @@ export function auditWorkspace({
       && !primary
       && !current
       && changes.length === 0
+      && ignoredFiles.length === 0
       && fullyMerged
       && counts[1] === 0;
     return {
@@ -85,6 +90,7 @@ export function auditWorkspace({
       current,
       managed: managedPath,
       dirty_files: changes.length,
+      ignored_files: ignoredFiles.length,
       behind: counts[0],
       ahead: counts[1],
       fully_merged: fullyMerged,
@@ -94,6 +100,7 @@ export function auditWorkspace({
         primary && "primary_worktree",
         current && "current_worktree",
         changes.length > 0 && "dirty",
+        ignoredFiles.length > 0 && "ignored_files",
         !fullyMerged && "not_merged",
         counts[1] > 0 && "unique_commits",
       ].filter(Boolean),
@@ -111,19 +118,29 @@ export function auditWorkspace({
 
 function main() {
   const apply = process.argv.includes("--apply");
+  const target = argument("target");
+  if (apply && !target) {
+    throw new Error("--target is required with --apply");
+  }
   const report = auditWorkspace({
     repository: argument("repo", process.cwd()),
     managedRoot: argument("managed-root"),
   });
   const removed = [];
   if (apply) {
-    for (const worktree of report.worktrees.filter((item) => item.removable)) {
+    const resolvedTarget = path.resolve(target);
+    const selected = report.worktrees.filter(
+      (item) => normalized(item.path) === normalized(resolvedTarget),
+    );
+    if (selected.length !== 1) throw new Error(`--target is not a registered worktree: ${resolvedTarget}`);
+    for (const worktree of selected.filter((item) => item.removable)) {
       git(report.repository, ["worktree", "remove", "--", worktree.path]);
       removed.push(worktree.path);
     }
     git(report.repository, ["worktree", "prune"]);
   }
   report.apply = apply;
+  report.target = target ? path.resolve(target) : "";
   report.removed = removed;
   console.log(JSON.stringify(report, null, 2));
 }

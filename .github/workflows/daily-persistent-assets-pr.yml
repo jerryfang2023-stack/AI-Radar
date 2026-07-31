@@ -350,6 +350,7 @@ jobs:
             --date="${RUN_DATE}" \
             --stage=post-monitor \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-post-monitor-gate.log"
+          npm run assert:china-market -- --date="${RUN_DATE}"
 
       - name: Persist originals privately and enforce the public boundary
         id: evidence-boundary

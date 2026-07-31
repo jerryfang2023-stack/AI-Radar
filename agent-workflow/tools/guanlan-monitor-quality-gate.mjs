@@ -197,6 +197,21 @@ export function isCoreV4EvidenceItem(item = {}) {
     && usableEvidenceStrengths.has(normalizeEvidenceStrength(item.evidenceStrength));
 }
 
+export function coreRawQcViolationCounts(poolItems = []) {
+  const coreCandidates = poolItems.filter((item) => (
+    item.eligibleForV4Extraction === true
+    && item.evidenceObjectUsable === true
+    && item.rawQcDownstreamUse === "eligible_after_qc"
+    && item.hasFullText === true
+    && item.originFetchStatus === "success"
+    && usableEvidenceStrengths.has(normalizeEvidenceStrength(item.evidenceStrength))
+  ));
+  return {
+    blocked: coreCandidates.filter((item) => item.rawQcDecision === "block").length,
+    degraded: coreCandidates.filter((item) => item.rawQcDecision === "allow_with_degradation").length,
+  };
+}
+
 function isHomepageDirectoryCoreItem(item = {}) {
   if (!isCoreV4EvidenceItem(item)) return false;
   if (/official_index_or_directory|repo_readme_or_index|ecosystem_package_or_model_index/iu.test(item.evidenceObjectType || "")) return true;
@@ -413,8 +428,9 @@ export function runGuanlanMonitorQualityGate({
   const usableCoreEvidenceCount = corePoolItems.filter((item) => isUsableCoreEvidenceItem(item)).length;
   const homepageDirectoryCoreCount = poolItems.filter(isHomepageDirectoryCoreItem).length;
   const coreTextContaminationCount = corePoolItems.filter((item) => hasTextContamination(item.text || item.keyExcerpts || "")).length;
-  const coreRawQcBlockCount = corePoolItems.filter((item) => item.rawQcDecision === "block").length;
-  const coreRawQcDegradedCount = corePoolItems.filter((item) => item.rawQcDecision === "allow_with_degradation").length;
+  const coreRawQcViolations = coreRawQcViolationCounts(poolItems);
+  const coreRawQcBlockCount = coreRawQcViolations.blocked;
+  const coreRawQcDegradedCount = coreRawQcViolations.degraded;
   const coreLargeVendorCount = corePoolItems.filter((item) => isLargeVendorText(largeVendorIdentityText(item))).length;
   const coreNonLargeVendorCount = Math.max(0, corePoolCount - coreLargeVendorCount);
   const coreLargeVendorRatio = ratio(coreLargeVendorCount, corePoolCount);

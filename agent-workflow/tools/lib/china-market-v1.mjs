@@ -201,6 +201,26 @@ export function chinaMarketOrganizationAliases(entityAliases = {}) {
     }));
 }
 
+export function selectChinaMarketIntakeDocuments(documents = []) {
+  const sourceDocuments = documents.filter((document) => document.market_scope?.source_region === "CN");
+  const marketDocuments = documents.filter((document) => (
+    document.market_scope?.market_region === "CN"
+    || document.market_scope?.china_market_match === true
+  ));
+  return {
+    sourceDocuments,
+    marketDocuments,
+    invalidSourceDocuments: sourceDocuments.filter(
+      (document) => !clean(document.market_scope?.source_registry_id),
+    ),
+    invalidMarketDocuments: marketDocuments.filter((document) => (
+      document.market_scope?.market_region !== "CN"
+      || document.market_scope?.china_market_match !== true
+      || !clean(document.market_scope?.china_market_match_basis)
+    )),
+  };
+}
+
 export function chinaMarketMatch(item = {}, entityAliases = {}) {
   const text = [
     item.title,

@@ -146,8 +146,16 @@ const JUDGMENT_KEYS = new Set([
   "emerging_signal_score", "guanlan_relevance", "interview_priority"
 ]);
 
-const VERSIONED_DEVELOPER_PACKAGE_TITLE = /^[a-z][a-z0-9]*(?:[-_.][a-z0-9]+)*\s+v?0\.\d+(?:\.\d+)?(?:[-.]?(?:a|alpha|b|beta|rc|dev)\d*)?(?:\s+发布)?$/u;
-const VERSIONED_DEVELOPER_PACKAGE_LEAD = /^Release:\s*[a-z][a-z0-9]*(?:[-_.][a-z0-9]+)*\s+v?0\.\d+(?:\.\d+)?(?:[-.]?(?:a|alpha|b|beta|rc|dev)\d*)?\b/u;
+const DEVELOPER_PACKAGE_NAME = String.raw`(?:@[a-z0-9._-]+\/)?[a-z][a-z0-9]*(?:[-_.][a-z0-9]+)*`;
+const DEVELOPER_PACKAGE_VERSION = String.raw`v?\d+\.\d+(?:\.\d+)?(?:[-.]?(?:a|alpha|b|beta|rc|dev)\d*)?(?:[-+][a-z0-9.-]+)?`;
+const VERSIONED_DEVELOPER_PACKAGE_TITLE = new RegExp(
+  `^${DEVELOPER_PACKAGE_NAME}\\s+${DEVELOPER_PACKAGE_VERSION}(?:\\s+发布)?$`,
+  "iu",
+);
+const VERSIONED_DEVELOPER_PACKAGE_LEAD = new RegExp(
+  `^(?:Release\\s*[:：]\\s*|发布\\s*[:：]?\\s*)${DEVELOPER_PACKAGE_NAME}\\s+${DEVELOPER_PACKAGE_VERSION}\\b`,
+  "iu",
+);
 
 function eventSourceEligibility(raw, artifact, title, dataDate = "") {
   const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
