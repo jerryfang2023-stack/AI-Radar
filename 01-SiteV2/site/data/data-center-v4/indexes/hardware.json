@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T09:31:27.139Z",
+    "generatedAt": "2026-07-31T10:07:43.400Z",
     "latestDataDate": "2026-07-31",
     "currentDate": "2026-07-31",
-    "eventCount": 1739,
+    "eventCount": 1736,
     "quarantinedEventCount": 13
   },
   "hardware": [
@@ -2252,66 +2252,6 @@
       ]
     },
     {
-      "id": "HWC-e06eaee2652e2537",
-      "snapshotKey": "e06eaee2652e2537",
-      "snapshotId": "HWS-9c27c0bd49616a1a",
-      "eventId": "EV-023fd03c675d940d",
-      "eventIds": [
-        "EV-023fd03c675d940d"
-      ],
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "title": "llm-chat-completions-server",
-      "subject": "llm-chat-completions-server",
-      "productNames": [],
-      "hardwareType": "server",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-b9b6bddaf5ddf1dc"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-b9b6bddaf5ddf1dc",
-          "fact_type": "product",
-          "observed_at": "2026-07-30T15:43:16.000Z",
-          "subject_entity_id": "EN-b161cee9ae7eba20",
-          "subject_name": "llm-chat-completions-server",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "server",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Release: llm-chat-completions-server 0.1a0",
-          "event_refs": [
-            "EV-023fd03c675d940d"
-          ],
-          "claim_ref": "CL-dbc7e23dba27fc95",
-          "source_refs": [
-            "SA-289ebd91873e4362"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
-      "entityIds": [
-        "EN-b161cee9ae7eba20"
-      ]
-    },
-    {
       "id": "HWC-3683dc7749e573b7",
       "snapshotKey": "3683dc7749e573b7",
       "snapshotId": "HWS-2745b9f64d003dc6",
@@ -4005,7 +3945,7 @@
       "raw_documents": 26,
       "original_sources": 13,
       "valid_claims": 6,
-      "observations": 8,
+      "observations": 7,
       "canonical_events": 2,
       "blocker_counts": {
         "source_outside_daily_window": 7,

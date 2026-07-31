@@ -146,6 +146,9 @@ const JUDGMENT_KEYS = new Set([
   "emerging_signal_score", "guanlan_relevance", "interview_priority"
 ]);
 
+const VERSIONED_DEVELOPER_PACKAGE_TITLE = /^[a-z][a-z0-9]*(?:[-_.][a-z0-9]+)*\s+v?0\.\d+(?:\.\d+)?(?:[-.]?(?:a|alpha|b|beta|rc|dev)\d*)?(?:\s+发布)?$/u;
+const VERSIONED_DEVELOPER_PACKAGE_LEAD = /^Release:\s*[a-z][a-z0-9]*(?:[-_.][a-z0-9]+)*\s+v?0\.\d+(?:\.\d+)?(?:[-.]?(?:a|alpha|b|beta|rc|dev)\d*)?\b/u;
+
 function eventSourceEligibility(raw, artifact, title, dataDate = "") {
   const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
   const extractionQuality = cleanString(raw.extraction_quality).toLocaleLowerCase();
@@ -172,6 +175,10 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "") {
   if (titleIssue) return { accepted: false, reason: titleIssue };
   const reviewedRetainedSource = REVIEWED_RETAINED_SOURCE.test(cleanString(artifact.source_url));
   const sourceLead = cleanString(raw.clean_text || raw.full_text).slice(0, 1400);
+  if (VERSIONED_DEVELOPER_PACKAGE_TITLE.test(title)
+      && VERSIONED_DEVELOPER_PACKAGE_LEAD.test(sourceLead)) {
+    return { accepted: false, reason: "versioned_developer_package_not_commercial_event" };
+  }
   if (/🤖.{0,120}💰.{0,120}(?:🎵|ElevenLabs)/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
   }
