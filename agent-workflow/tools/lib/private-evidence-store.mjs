@@ -89,7 +89,7 @@ export function availablePrivateEvidenceDates(root) {
   return store ? [...store.byDate.keys()].filter(Boolean).sort() : [];
 }
 
-function resolveEntry(store, locator, contentHash = "", sourceUrl = "") {
+function resolveEntry(store, locator, contentHash = "", sourceUrl = "", dataDate = "") {
   const normalizedLocator = clean(locator).replaceAll("\\", "/");
   const normalizedHash = clean(contentHash).toLowerCase();
   const directSnapshot = store.bySnapshotRef.get(normalizedLocator);
@@ -100,14 +100,28 @@ function resolveEntry(store, locator, contentHash = "", sourceUrl = "") {
   ];
   if (!candidates.length) return null;
   const normalizedUrl = clean(sourceUrl).replace(/\/+$/u, "");
-  return candidates.find((entry) => clean(entry.source_url).replace(/\/+$/u, "") === normalizedUrl)
+  const normalizedDate = clean(dataDate);
+  const datedCandidates = normalizedDate
+    ? candidates.filter((entry) => clean(entry.data_date) === normalizedDate)
+    : [];
+  return datedCandidates.find(
+    (entry) => clean(entry.source_url).replace(/\/+$/u, "") === normalizedUrl,
+  )
+    || datedCandidates[0]
+    || candidates.find((entry) => clean(entry.source_url).replace(/\/+$/u, "") === normalizedUrl)
     || candidates[0];
 }
 
 export function loadPrivateEvidenceRecord(root, locator, contentHash = "", options = {}) {
   const store = loadPrivateEvidenceStore(root, { required: options.required !== false });
   if (!store) return null;
-  const entry = resolveEntry(store, locator, contentHash, options.sourceUrl);
+  const entry = resolveEntry(
+    store,
+    locator,
+    contentHash,
+    options.sourceUrl,
+    options.dataDate,
+  );
   if (!entry) {
     if (options.required === false) return null;
     throw new Error(`Private evidence locator is not cataloged: ${locator || contentHash || "missing"}`);

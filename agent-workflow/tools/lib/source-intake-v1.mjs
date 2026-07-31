@@ -155,6 +155,46 @@ export function readSourceIntake(root, date) {
   return { file, payload };
 }
 
+export function mergeSourceIntakes(...payloads) {
+  const intakes = payloads.filter(Boolean);
+  if (!intakes.length) throw new Error("At least one structured source intake is required");
+  const dataDate = clean(intakes[0].data_date);
+  const sourceArtifacts = new Map();
+  const rawDocuments = new Map();
+  for (const intake of intakes) {
+    if (intake.schema_version !== SOURCE_INTAKE_VERSION || clean(intake.data_date) !== dataDate) {
+      throw new Error("Structured source intakes must share the same version and data_date");
+    }
+    for (const artifact of intake.source_artifacts || []) {
+      sourceArtifacts.set(artifact.source_artifact_id, artifact);
+    }
+    for (const document of intake.raw_documents || []) {
+      rawDocuments.set(document.raw_id, document);
+    }
+  }
+  const mergedArtifacts = [...sourceArtifacts.values()];
+  const mergedDocuments = [...rawDocuments.values()];
+  for (const document of mergedDocuments) {
+    if (!sourceArtifacts.has(document.source_artifact_id)) {
+      throw new Error(`${document.raw_id}: merged intake references an unknown SourceArtifact`);
+    }
+  }
+  return {
+    schema_version: SOURCE_INTAKE_VERSION,
+    data_date: dataDate,
+    generated_at: intakes.at(-1).generated_at || new Date().toISOString(),
+    source_artifacts: mergedArtifacts,
+    raw_documents: mergedDocuments,
+    counts: {
+      source_artifacts: mergedArtifacts.length,
+      raw_documents: mergedDocuments.length,
+      eligible_documents: mergedDocuments.filter(
+        (item) => item.intake_diagnostics?.eligible_for_v4_extraction,
+      ).length,
+    },
+  };
+}
+
 export function loadSourceIntakeEntries(root, date) {
   const intake = readSourceIntake(root, date);
   if (!intake) return null;
@@ -172,6 +212,7 @@ export function loadSourceIntakeEntries(root, date) {
     }
     const privateEvidence = loadPrivateEvidenceRecord(root, bodyRef, document.content_hash, {
       sourceUrl: document.canonical_url || document.source_url,
+      dataDate: date,
     });
     return {
       raw: privateEvidence.raw,

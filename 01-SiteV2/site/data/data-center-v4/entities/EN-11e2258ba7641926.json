@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-11e2258ba7641926",
+    "name": "BER10",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a89a5b511c643be8"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-31",
+    "lastSeen": "2026-07-31",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-a89a5b511c643be8"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a89a5b511c643be8",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-31",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+        "displayTags": [],
+        "entityIds": [
+          "EN-11e2258ba7641926"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-a357e8f67fba3e5e",
+      "snapshotKey": "a357e8f67fba3e5e",
+      "snapshotId": "HWS-f8fc360cf0cad490",
+      "eventId": "EV-a89a5b511c643be8",
+      "eventIds": [
+        "EV-a89a5b511c643be8"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "BER10",
+      "subject": "欧洲 Openchip",
+      "productNames": [
+        "BER10"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "specification"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b5af98324037df27"
+        },
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a6d5315fe67e856c"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-3a6fd3f7ad0a6f5b",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺 - IT之家",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-e7d1af4422302fee",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-b5af98324037df27",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-07c9b9a7f5f22f85",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-a6d5315fe67e856c",
+          "fact_type": "specification",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 31 日消息，欧洲 RISC-V 指令集节能 AI /HPC 芯片企业 Openchip 西班牙当地时间 30 日公布了其基于亚 2 纳米 GAA 制程工艺的 BER10 处理器。",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-e1b57a5ae1e492ba",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/975.htm",
+      "entityIds": [
+        "EN-11e2258ba7641926"
+      ]
+    }
+  ]
+}

@@ -501,7 +501,9 @@ function buildHardwareCatalog(snapshotRows, factRows, eventsById) {
       sourceUrl: events.find((event) => event.sourceUrl)?.sourceUrl || "",
       entityIds: unique(events.flatMap((event) => event.entityIds || []))
     };
-  }).sort((a, b) => b.dataDate.localeCompare(a.dataDate) || a.title.localeCompare(b.title, "zh-CN"));
+  })
+    .filter((item) => item.factCount > 0 && item.sourceUrl)
+    .sort((a, b) => b.dataDate.localeCompare(a.dataDate) || a.title.localeCompare(b.title, "zh-CN"));
 }
 
 function buildCommunity(root) {

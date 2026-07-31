@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-cbc62794911ff31b",
@@ -33,6 +33,7 @@
       "EV-53f4f2a34b3ce1b4",
       "EV-ec2e421d0e18be9b",
       "EV-c0a65877001ed413",
+      "EV-0d5a32aca724d30e",
       "EV-303b418c63895ba6",
       "EV-30749250196dd507",
       "EV-43976be427aefb52",
@@ -66,7 +67,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2023-11-28",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-07-31",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -89,6 +90,7 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-0d5a32aca724d30e",
         "EV-30749250196dd507",
         "EV-8993e021ac17df4a",
         "EV-b93b5cc15823e9c3",
@@ -116,6 +118,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-0d5a32aca724d30e",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2348f99874421257",
+          "EN-cbc62794911ff31b"
+        ]
+      },
       {
         "id": "EV-84697d26f813b122",
         "dataDate": "2026-07-29",
@@ -847,6 +865,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-53253b5e23970958",
         "EV-57cf8e14d6994c1b",
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
@@ -1019,6 +1038,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-fafc300c25e9b0a7",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
         "EV-7a4d1e871dcd3b1f",
@@ -1255,6 +1275,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-65819e198c32566a",
         "EN-556c337c4f0b031e",
         "EN-4a1bc98a833e2bd7",
         "EN-2be663431f007250",
@@ -1437,6 +1458,7 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-6f7ac1823da81d2e",
         "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
@@ -1477,7 +1499,6 @@
         "EN-ba728f8ca730921f",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
-        "EN-6f7ac1823da81d2e",
         "EN-f65bb77682b83476",
         "EN-7c094d35e3b700c8",
         "EN-9a266f40d42cf217",
@@ -1844,6 +1865,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-2ef56a158898ae73",
         "EV-a4fe78df6ccd63c8",
         "EV-3eb44a239ebef4b0",
         "EV-5f2acbfb8f54fd59",
@@ -1946,7 +1968,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-use_case-robotics_automation",
@@ -1971,6 +1993,9 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-7a0f201debe99f2b",
+        "EV-8887fb45a0398590",
+        "EV-876cfe17574eb2c1",
         "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-f79713437230562f",
@@ -2028,6 +2053,9 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87",
+        "EN-364df82f85761d58",
         "EN-8d57f84bd1847b24",
         "EN-febedfcafee9d610",
         "EN-0bd85984211bd173",
@@ -2089,7 +2117,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -2137,6 +2165,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-3ec034d25ba6a710",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
         "EV-08f736f61f2b46f3",
@@ -2211,6 +2240,7 @@
         "EN-56ee86045cfb0ddd",
         "EN-cbc62794911ff31b",
         "EN-a614180064f7ef60",
+        "EN-1706429cbf67f1c9",
         "EN-c3983a4111660712",
         "EN-3a7bd3e2360a3d29",
         "EN-6c7575a43005188a"
@@ -2226,7 +2256,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -2677,6 +2707,140 @@
         "EN-cbc62794911ff31b",
         "EN-553d045569eaf2e5",
         "EN-8e28b4190af4d21c"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-7c9238bfeb82f08f",
+      "snapshotKey": "7c9238bfeb82f08f",
+      "snapshotId": "HWS-1f77657dbe10c510",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "Open",
+      "subject": "Open",
+      "productNames": [],
+      "hardwareType": "networking",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d46baffb1c5cd33a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-d46baffb1c5cd33a",
+          "fact_type": "product",
+          "observed_at": "2026-07-22T00:00:00.000Z",
+          "subject_entity_id": "EN-2348f99874421257",
+          "subject_name": "Open",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "00:00:06 Nathan Lambert: Okay, welcome back to Interconnects. We’re doing our quarterly open model roundup, which is mostly us just making fun of or explaining, not making fun, why so many distillation takes are bad and understanding the state of where things stand. I think last Thursday was when Kimi K3 was released. I think we will see much much more in the near future. It seems pretty inevitable. Like over the weekend, Xi gave his speech where he directly committed to openness and open source as a strategy. It wasn’t a detailed layout state of affairs.",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-cfed864aad877156",
+          "source_refs": [
+            "SA-86a0bb3fbd4edf9c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "entityIds": [
+        "EN-2348f99874421257",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "HWC-1e2465488c5a5d77",
+      "snapshotKey": "1e2465488c5a5d77",
+      "snapshotId": "HWS-97daa94104979156",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Kimi K3",
+      "subject": "Kimi K3",
+      "productNames": [
+        "Kimi K3"
+      ],
+      "hardwareType": "compute_cluster",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-35eaca87a98d223b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-35eaca87a98d223b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T08:38:20.000Z",
+          "subject_entity_id": "EN-aabd1a8a869c34a4",
+          "subject_name": "Kimi K3",
+          "product_entity_ids": [
+            "EN-607964040e4b62e0"
+          ],
+          "product_names": [
+            "Kimi K3"
+          ],
+          "component_type": "compute_cluster",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-2c626d78e65c2afc",
+          "source_refs": [
+            "SA-d37a791cf113478a",
+            "SA-4fedd07f0df44eb4",
+            "SA-8cff4a3f890c6d93",
+            "SA-89ca130f6dc317fe",
+            "SA-8cbf1980971c0828"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "entityIds": [
+        "EN-2348f99874421257",
+        "EN-cbc62794911ff31b"
       ]
     }
   ]

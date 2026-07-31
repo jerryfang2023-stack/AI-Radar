@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "hardware": [
     {
@@ -1853,6 +1853,411 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-3fe7a823934149e7",
+      "snapshotKey": "3fe7a823934149e7",
+      "snapshotId": "HWS-b3d3c6227609413d",
+      "eventId": "EV-443e093ab54d0228",
+      "eventIds": [
+        "EV-443e093ab54d0228"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "AI Rackscale Solution / Helios AI Rackscale Solution / AI Infrastructure Targets Inference",
+      "subject": "AMD",
+      "productNames": [
+        "AI Rackscale Solution",
+        "Helios AI Rackscale Solution",
+        "AI Infrastructure Targets Inference"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8f25699d27abb87f"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-d0204835fa977435",
+          "fact_type": "product",
+          "observed_at": "2026-07-27T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-d48c78cd64971f21",
+            "EN-8009238460836f4b",
+            "EN-c1afeb742df44d71"
+          ],
+          "product_names": [
+            "AI Rackscale Solution",
+            "Helios AI Rackscale Solution",
+            "AI Infrastructure Targets Inference"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "AMD has introduced the Helios AI Rackscale Solution, its latest AI infrastructure platform built around the AMD Instinct MI455X GPUs and 6th Gen AMD EPYC “Venice” processors, targeting hyperscale AI inference, enterprise AI and high-performance computing (HPC).",
+          "event_refs": [
+            "EV-443e093ab54d0228"
+          ],
+          "claim_ref": "CL-9a370139c36dce87",
+          "source_refs": [
+            "SA-53aeb784e096f6e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-8f25699d27abb87f",
+          "fact_type": "product",
+          "observed_at": "2026-07-27T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-d48c78cd64971f21",
+            "EN-8009238460836f4b",
+            "EN-c1afeb742df44d71"
+          ],
+          "product_names": [
+            "AI Rackscale Solution",
+            "Helios AI Rackscale Solution",
+            "AI Infrastructure Targets Inference"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "To simplify AI software development, the company has also introduced ROCm.ai, an AI-assisted GPU programming platform that integrates with coding tools such as Claude, Codex and Cursor.",
+          "event_refs": [
+            "EV-443e093ab54d0228"
+          ],
+          "claim_ref": "CL-6893cb9d42e1103c",
+          "source_refs": [
+            "SA-53aeb784e096f6e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://electronicsforu.com/news/new-ai-infrastructure-targets-inference",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-d48c78cd64971f21",
+        "EN-8009238460836f4b",
+        "EN-c1afeb742df44d71"
+      ]
+    },
+    {
+      "id": "HWC-a357e8f67fba3e5e",
+      "snapshotKey": "a357e8f67fba3e5e",
+      "snapshotId": "HWS-f8fc360cf0cad490",
+      "eventId": "EV-a89a5b511c643be8",
+      "eventIds": [
+        "EV-a89a5b511c643be8"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "BER10",
+      "subject": "欧洲 Openchip",
+      "productNames": [
+        "BER10"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "specification"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b5af98324037df27"
+        },
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a6d5315fe67e856c"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-3a6fd3f7ad0a6f5b",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺 - IT之家",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-e7d1af4422302fee",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-b5af98324037df27",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-07c9b9a7f5f22f85",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-a6d5315fe67e856c",
+          "fact_type": "specification",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 31 日消息，欧洲 RISC-V 指令集节能 AI /HPC 芯片企业 Openchip 西班牙当地时间 30 日公布了其基于亚 2 纳米 GAA 制程工艺的 BER10 处理器。",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-e1b57a5ae1e492ba",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/975.htm",
+      "entityIds": [
+        "EN-11e2258ba7641926"
+      ]
+    },
+    {
+      "id": "HWC-2fa9fc722d1d22f9",
+      "snapshotKey": "2fa9fc722d1d22f9",
+      "snapshotId": "HWS-825c2169bb6387ae",
+      "eventId": "EV-7a0f201debe99f2b",
+      "eventIds": [
+        "EV-7a0f201debe99f2b",
+        "EV-8887fb45a0398590"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "DeepMind / Gemini Robotics 2 / Gemini Robotics ER 2",
+      "subject": "Google DeepMind",
+      "productNames": [
+        "DeepMind",
+        "Gemini Robotics 2",
+        "Gemini Robotics ER 2"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-bb706705b10bf383"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-85aa0e443edb43c2",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T17:20:50.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-4d09c69c19f5f67b",
+            "EN-e1086f449d58de87"
+          ],
+          "product_names": [
+            "DeepMind",
+            "Gemini Robotics 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Google DeepMind has released Gemini Robotics 2 , the intelligence layer for its next generation of robots.",
+          "event_refs": [
+            "EV-7a0f201debe99f2b"
+          ],
+          "claim_ref": "CL-824523486c4b7c42",
+          "source_refs": [
+            "SA-6436d40ab638ade0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-bb706705b10bf383",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T23:12:07.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-4d09c69c19f5f67b",
+            "EN-364df82f85761d58"
+          ],
+          "product_names": [
+            "DeepMind",
+            "Gemini Robotics ER 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
+          "event_refs": [
+            "EV-8887fb45a0398590"
+          ],
+          "claim_ref": "CL-01047086f6bfac89",
+          "source_refs": [
+            "SA-c04e7cbf1504a155"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-e1086f449d58de87",
+        "EN-364df82f85761d58"
+      ]
+    },
+    {
+      "id": "HWC-7c9238bfeb82f08f",
+      "snapshotKey": "7c9238bfeb82f08f",
+      "snapshotId": "HWS-1f77657dbe10c510",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "Open",
+      "subject": "Open",
+      "productNames": [],
+      "hardwareType": "networking",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d46baffb1c5cd33a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-d46baffb1c5cd33a",
+          "fact_type": "product",
+          "observed_at": "2026-07-22T00:00:00.000Z",
+          "subject_entity_id": "EN-2348f99874421257",
+          "subject_name": "Open",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "00:00:06 Nathan Lambert: Okay, welcome back to Interconnects. We’re doing our quarterly open model roundup, which is mostly us just making fun of or explaining, not making fun, why so many distillation takes are bad and understanding the state of where things stand. I think last Thursday was when Kimi K3 was released. I think we will see much much more in the near future. It seems pretty inevitable. Like over the weekend, Xi gave his speech where he directly committed to openness and open source as a strategy. It wasn’t a detailed layout state of affairs.",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-cfed864aad877156",
+          "source_refs": [
+            "SA-86a0bb3fbd4edf9c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "entityIds": [
+        "EN-2348f99874421257",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
       "id": "HWC-3683dc7749e573b7",
       "snapshotKey": "3683dc7749e573b7",
       "snapshotId": "HWS-2745b9f64d003dc6",
@@ -2245,18 +2650,11 @@
       ],
       "specificationFacts": [],
       "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        }
-      ],
-      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
+      "tags": [],
+      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
       "entityIds": [
-        "EN-436364a46513cdf3",
-        "EN-e5904fa438fcd5bf"
+        "EN-2348f99874421257",
+        "EN-cbc62794911ff31b"
       ]
     },
     {
@@ -3531,6 +3929,161 @@
     }
   ],
   "events": [
+    {
+      "id": "EV-53253b5e23970958",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Okta 收购 AI 身份安全初创公司 Permiso Security，交易金额近 2 亿美元",
+      "originalTitle": "",
+      "subject": "Okta",
+      "action": "收购",
+      "object": "AI 身份安全初创公司 Permiso Security，交易金额近 2 亿美元",
+      "metrics": [
+        "$200 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-65819e198c32566a"
+      ],
+      "entityNames": [
+        "Okta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-e90bee514412d2ad",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Tiiny AI 完成数千万美元天使轮融资，云启资本加注",
+      "originalTitle": "",
+      "subject": "Tiiny AI",
+      "action": "完成数千万美元天使轮融资",
+      "object": "，云启资本加注",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-08ea130d339547ae"
+      ],
+      "entityNames": [
+        "Tiiny AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://elsewhere.news/zh/author-1779868954078/300tiiny-ai",
+      "publisher": "elsewhere：文章（RSS）"
+    },
+    {
+      "id": "EV-ea109db692b88079",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Dili 获 2170 万美元融资，用 AI 合规服务应对美国基建热潮",
+      "originalTitle": "",
+      "subject": "Dili 获 2170 万美元",
+      "action": "融资",
+      "object": "，用 AI 合规服务应对美国基建热潮",
+      "metrics": [
+        "$21.7M",
+        "$15 million",
+        "$6.7 million",
+        "$21.7 million"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-26997989b8425dac",
+        "EN-4515510d155bd24d"
+      ],
+      "entityNames": [
+        "Dili",
+        "On Thursday"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
     {
       "id": "EV-2dff88f85e3bce86",
       "dataDate": "2026-07-30",
@@ -5460,21 +6013,22 @@
     },
     {
       "id": "EV-901155ab700a7e8e",
-      "dataDate": "2026-07-23",
+      "dataDate": "2026-07-31",
       "date": "2026-07-20",
-      "updatedDate": "2026-07-23",
+      "updatedDate": "2026-07-31",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Natural 完成 3000 万美元 A 轮融资，为 AI 智能体构建支付基础设施",
-      "originalTitle": "Natural Raises $30M Series A to Build Payments Infrastructure for AI Agents",
+      "title": "Natural 融资3000万美元，重塑AI智能体支付，挑战Stripe",
+      "originalTitle": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe | TechCrunch",
       "subject": "Natural",
-      "action": "Raises",
-      "object": "$30M Series A to Build Payments Infrastructure for AI Agents",
+      "action": "raises",
+      "object": "$30M to reinvent payments for AI agents — and take on Stripe",
       "metrics": [
+        "$30M",
         "$30 million",
         "$40 million"
       ],
@@ -5520,8 +6074,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://prnewswire.com/news-releases/natural-raises-30m-series-a-to-build-payments-infrastructure-for-ai-agents-302829855.html",
-      "publisher": "prnewswire.com"
+      "sourceUrl": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-2069f6a931b8c9d6",
@@ -26023,6 +26577,71 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-492029b381c06283",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 部署 GPT-5.6 Sol 优化自身推理性能，端到端服务成本最多降低 20%",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "部署",
+      "object": "GPT-5.6 Sol 优化自身推理性能，端到端服务成本最多降低 20%",
+      "metrics": [
+        "20%",
+        "15%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/590.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-57944eebac69d510",
       "dataDate": "2026-07-29",
       "date": "2026-07-29",
@@ -38167,6 +38786,74 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-e8bc5b0eebef5813",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
+      "originalTitle": "",
+      "subject": "RadixArk 与 Google Cloud",
+      "action": "合作",
+      "object": "，将完整 SGLang 功能引入 TPU",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "developer",
+            "dimensionName": "目标用户",
+            "name": "开发者"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "id": "developer",
+          "dimensionName": "目标用户",
+          "name": "开发者"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "id": "developer",
+          "dimensionName": "目标用户",
+          "name": "开发者"
+        }
+      ],
+      "entityIds": [
+        "EN-ed0e0437548386ef",
+        "EN-d9b1d7819af92e77",
+        "EN-bbdefa2950f49882",
+        "EN-6c87e5496f592f3c"
+      ],
+      "entityNames": [
+        "RadixArk",
+        "Google Cloud",
+        "Google",
+        "SGLang"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://lmsys.org/blog/2026-07-30-sglang-google-tpu",
+      "publisher": "LMSYS：Blog（Chatbot Arena 团队）"
+    },
+    {
       "id": "EV-8540958262148517",
       "dataDate": "2026-07-30",
       "date": "2026-07-29",
@@ -38442,6 +39129,49 @@
       "publisher": "news.cognizant.com"
     },
     {
+      "id": "EV-5d185ac33faedb68",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-31",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cognizant 与 Anthropic 扩大合作，将 Claude 嵌入 Cognizant 行业平台，助力客户弥合 AI 承诺与业务成果之间的差距 - 2026年7月27日",
+      "originalTitle": "Cognizant and Anthropic expand partnership to embed Claude in Cognizant's industry platforms, helping clients close the gap between AI promise and business outcomes - Jul 27, 2026",
+      "subject": "Cognizant and Anthropic expand",
+      "action": "partnership",
+      "object": "to embed Claude in Cognizant's industry platforms, helping clients close the gap between AI promise and business outcomes - Jul 27, 2026",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-86f73dfe7bb6a9e6",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Cognizant",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.cognizant.com/2026-07-27-Cognizant-and-Anthropic-expand-partnership-to-embed-Claude-in-Cognizants-industry-platforms,-helping-clients-close-the-gap-between-AI-promise-and-business-outcomes",
+      "publisher": "news.cognizant.com"
+    },
+    {
       "id": "EV-3548f7a65113c8fd",
       "dataDate": "2026-07-28",
       "date": "2026-07-27",
@@ -38480,49 +39210,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://news.cognizant.com/2026-07-27-The-Andover-Companies-Selects-Cognizant-to-Modernize-Technology-and-Advance-AI-Driven-Innovation",
-      "publisher": "news.cognizant.com"
-    },
-    {
-      "id": "EV-5d185ac33faedb68",
-      "dataDate": "2026-07-28",
-      "date": "2026-07-27",
-      "updatedDate": "2026-07-28",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Cognizant 与 Anthropic 扩大合作，将 Claude 嵌入 Cognizant 行业平台，助力客户弥合 AI 承诺与业务成果之间的差距 - 2026年7月27日",
-      "originalTitle": "Cognizant and Anthropic expand partnership to embed Claude in Cognizant's industry platforms, helping clients close the gap between AI promise and business outcomes - Jul 27, 2026",
-      "subject": "Cognizant and Anthropic expand",
-      "action": "partnership",
-      "object": "to embed Claude in Cognizant's industry platforms, helping clients close the gap between AI promise and business outcomes - Jul 27, 2026",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-86f73dfe7bb6a9e6",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Cognizant",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://news.cognizant.com/2026-07-27-Cognizant-and-Anthropic-expand-partnership-to-embed-Claude-in-Cognizants-industry-platforms,-helping-clients-close-the-gap-between-AI-promise-and-business-outcomes",
       "publisher": "news.cognizant.com"
     },
     {
@@ -39624,9 +40311,9 @@
     },
     {
       "id": "EV-16cfe946bbf69aa3",
-      "dataDate": "2026-07-26",
+      "dataDate": "2026-07-31",
       "date": "2026-07-22",
-      "updatedDate": "2026-07-26",
+      "updatedDate": "2026-07-31",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -46176,21 +46863,173 @@
       "publisher": "markets.ft.com"
     },
     {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-07-30",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-30",
+      "id": "EV-2ef56a158898ae73",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "Anthropic：第三方评估环境配置失误，导致三起真实网络安全事件",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/947.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-385966c864fcda19",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "昆仑万维：AI 挂件、AI 戒指等 Skywork 整套智能硬件将陆续登场",
+      "originalTitle": "",
+      "subject": "昆仑万维：AI 挂件、AI 戒指等 Skywork 整套智能",
+      "action": "硬件将陆续登场",
+      "object": "昆仑万维：AI 挂件、AI 戒指等 Skywork 整套智能硬件将陆续登场",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8b7c1f34eb7baafe"
+      ],
+      "entityNames": [
+        "Kunlun Tech"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/181.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-4c750d338325c55f",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "pricing_change",
+      "eventTypeLabel": "定价变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "以GPT‑5.6推进性价比前沿",
+      "originalTitle": "Advancing the price-performance frontier with GPT‑5.6",
+      "subject": "GPT-5.6 Terra",
+      "action": "pricing_change",
+      "object": "20% price reduction",
+      "metrics": [
+        "20%",
+        "80%",
+        "$0.20",
+        "$1.20",
+        "$1.50"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://simonwillison.net/2026/Jul/30/luna-price-drop",
+      "publisher": "Simon Willison's Blog"
+    },
+    {
+      "id": "EV-7a0f201debe99f2b",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Kimi K3-256k 发布：256k 上下文窗口与代码生成能力",
+      "title": "Google DeepMind 发布 Gemini Robotics 2，包含三款实体 AI 模型用于全身控制、灵巧操作与多机器人协作",
       "originalTitle": "",
-      "subject": "undisclosed_subject",
-      "action": "Kimi K3-256k 发布",
-      "object": "：256k 上下文窗口与代码生成能力",
+      "subject": "Google DeepMind",
+      "action": "发布 Gemini Robotics 2，包含三款实体 AI 模型",
+      "object": "用于全身控制、灵巧操作与多机器人协作",
       "metrics": [],
       "locations": [],
       "missingFields": [],
@@ -46199,12 +47038,297 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
+          "id": "on_device",
+          "name": "端侧"
         }
       ],
       "facets": {
         "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-e1086f449d58de87"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "DeepMind",
+        "Gemini Robotics 2"
+      ],
+      "productName": "DeepMind",
+      "products": [
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "Gemini Robotics 2",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-8887fb45a0398590",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌 DeepMind 推出 Gemini Robotics ER 2，最强具身推理模型支持连续视频理解与多机器人协作",
+      "originalTitle": "",
+      "subject": "谷歌 DeepMind",
+      "action": "推出 Gemini Robotics ER 2，最强具身推理模型",
+      "object": "支持连续视频理解与多机器人协作",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-364df82f85761d58"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "DeepMind",
+        "Gemini Robotics ER 2"
+      ],
+      "productName": "DeepMind",
+      "products": [
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "Gemini Robotics ER 2",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/983/915.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a89a5b511c643be8",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+      "originalTitle": "",
+      "subject": "欧洲 Openchip",
+      "action": "发布",
+      "object": "BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+      "metrics": [],
+      "locations": [
+        "欧洲"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-11e2258ba7641926"
+      ],
+      "entityNames": [
+        "BER10"
+      ],
+      "productName": "BER10",
+      "products": [
+        {
+          "name": "BER10",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/983/975.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fafc300c25e9b0a7",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "国家发改委：将加快《人工智能法》立法进程",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "国家发改委：将加快《人工智能法》立法进程",
+      "metrics": [
+        "100 亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
@@ -46214,36 +47338,364 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
         }
       ],
       "displayTags": [
         {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
         }
       ],
       "entityIds": [
-        "EN-436364a46513cdf3",
-        "EN-e5904fa438fcd5bf"
+        "EN-6f7ac1823da81d2e",
+        "EN-b5251b35f15bedc4"
       ],
       "entityNames": [
-        "Kimi K3-256k",
-        "K3-256k"
+        "DeepSeek",
+        "Moonshot AI"
       ],
-      "productName": "K3-256k",
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/974.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-0707f3c487a36e55",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "领英新增“疑似AI垃圾内容”按钮",
+      "originalTitle": "LinkedIn actually adds a ‘seems like AI slop’ button",
+      "subject": "LinkedIn actually",
+      "action": "adds",
+      "object": "a ‘seems like AI slop’ button",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7f1242f01df53a9f",
+        "EN-71f39cfce757b65e"
+      ],
+      "entityNames": [
+        "LinkedIn actually",
+        "LinkedIn"
+      ],
+      "productName": "LinkedIn",
       "products": [
         {
-          "name": "K3-256k",
-          "type": "模型",
+          "name": "LinkedIn",
+          "type": "产品/服务",
           "ownerNames": []
         }
       ],
-      "sourceUrl": "https://kimi.com/code/docs/en/kimi-code/models",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-136d9a760c24cd35",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Friend重新推出AI智能体吊坠，配备可对话扬声器，价格翻倍",
+      "originalTitle": "Friend re-launches its AI pendant with a speaker that talks to you, for twice the price",
+      "subject": "Friend re-",
+      "action": "launches",
+      "object": "its AI pendant with a speaker that talks to you, for twice the price",
+      "metrics": [
+        "$1.8 million",
+        "$2.5 million",
+        "$120, ",
+        "$129 ",
+        "$249. T"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d40dcb418e8e68d4",
+        "EN-6360263ba9a29a9a"
+      ],
+      "entityNames": [
+        "Friend re",
+        "AI pendant"
+      ],
+      "productName": "AI pendant",
+      "products": [
+        {
+          "name": "AI pendant",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://theverge.com/gadgets/973163/friend-re-launches-its-ai-pendant-with-a-speaker-that-talks-to-you-for-twice-the-price",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-1fe7328d2c69693f",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "pricing_change",
+      "eventTypeLabel": "定价变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
+      "originalTitle": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
+      "subject": "OpenAI goes full China",
+      "action": "pricing mode with an 80 percent cut",
+      "object": "to its most affordable GPT-5.6 model",
+      "metrics": [
+        "$0.20 ",
+        "$1.20 ",
+        "$2 ",
+        "$12. "
+      ],
+      "locations": [
+        "China"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-2ee49ef51a776e2c",
+        "EN-7d3194f79e645c42",
+        "EN-52fc33ae4d101a5d"
+      ],
+      "entityNames": [
+        "OpenAI goes full China",
+        "OpenAI",
+        "GPT-5.6"
+      ],
+      "productName": "GPT-5.6",
+      "products": [
+        {
+          "name": "GPT-5.6",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-876cfe17574eb2c1",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "model_release",
+      "object": "Gemini Robotics ER 2",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-364df82f85761d58"
+      ],
+      "entityNames": [
+        "Google",
+        "Gemini Robotics ER 2"
+      ],
+      "productName": "Gemini Robotics ER 2",
+      "products": [
+        {
+          "name": "Gemini Robotics ER 2",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+      "publisher": "Google DeepMind：Blog（RSS）"
+    },
+    {
+      "id": "EV-f13c302dc067850b",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "腾讯开源 AngelSpec：面向推测解码草稿模型的统一训练框架",
+      "originalTitle": "",
+      "subject": "Tencent",
+      "action": "开源 AngelSpec：面向推测解码草稿模型",
+      "object": "的统一训练框架",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-53874092e000069b",
+        "EN-61f320eddeec12ee"
+      ],
+      "entityNames": [
+        "Tencent",
+        "腾讯",
+        "AngelSpec"
+      ],
+      "productName": "AngelSpec",
+      "products": [
+        {
+          "name": "AngelSpec",
+          "type": "模型",
+          "ownerNames": [
+            "Tencent"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/30/tencent-open-sources-angelspec-a-unified-training-framework-for-mtp-and-block-parallel-speculative-decoding-on-hy3-models",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-3ebf23c149dde19d",
@@ -47394,6 +48846,67 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-495f428446ecfb91",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Gemini API 托管智能体：3.6 Flash、钩子及更多功能",
+      "originalTitle": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+      "subject": "Gemini 3.6 Flash",
+      "action": "model_release",
+      "object": "default model for Managed Agents in Gemini API",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2de5a5dbfaabf151",
+        "EN-a6f1623a1e5232a6",
+        "EN-47367285d9fe3d8d"
+      ],
+      "entityNames": [
+        "Managed",
+        "Gemini API",
+        "API Managed"
+      ],
+      "productName": "Managed",
+      "products": [
+        {
+          "name": "Managed",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "Gemini API",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "API Managed",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
+      "publisher": "Google AI Blog"
+    },
+    {
       "id": "EV-1013855c203f8014",
       "dataDate": "2026-07-29",
       "date": "2026-07-28",
@@ -48507,9 +50020,7 @@
         {
           "name": "Cowork",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/277.htm",
@@ -48600,9 +50111,7 @@
         {
           "name": "CEO Dario Amodei",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/343.htm",
@@ -48775,6 +50284,127 @@
       "products": [],
       "sourceUrl": "https://marktechpost.com/2026/07/27/perplexity-releases-pplx",
       "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-443e093ab54d0228",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "新AI基础设施瞄准推理",
+      "originalTitle": "New AI Infrastructure Targets Inference",
+      "subject": "AMD",
+      "action": "product_release",
+      "object": "Helios AI Rackscale Solution",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-d48c78cd64971f21",
+        "EN-8009238460836f4b",
+        "EN-c1afeb742df44d71"
+      ],
+      "entityNames": [
+        "AMD",
+        "AI Rackscale Solution",
+        "Helios AI Rackscale Solution",
+        "AI Infrastructure Targets Inference"
+      ],
+      "productName": "AI Rackscale Solution",
+      "products": [
+        {
+          "name": "AI Rackscale Solution",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Helios AI Rackscale Solution",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Infrastructure Targets Inference",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://electronicsforu.com/news/new-ai-infrastructure-targets-inference",
+      "publisher": "electronicsforu.com"
     },
     {
       "id": "EV-c2f9aab818f9f882",
@@ -50775,16 +52405,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
@@ -50882,9 +52508,7 @@
         {
           "name": "Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/981/398.htm",
@@ -50940,14 +52564,14 @@
           "name": "Opus 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -51004,6 +52628,57 @@
       ],
       "sourceUrl": "https://ithome.com/0/981/426.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c7a6bf51c3723b39",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI Presence 销售配备工程师的企业级AI智能体",
+      "originalTitle": "OpenAI Presence sells enterprise AI agents with engineers attached",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI Presence",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-f65bb77682b83476"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Presence"
+      ],
+      "productName": "Presence",
+      "products": [
+        {
+          "name": "Presence",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/openai-presence-enterprise-ai-agents",
+      "publisher": "artificialintelligence-news.com"
     },
     {
       "id": "EV-670a5100977ac1e9",
@@ -51305,9 +52980,7 @@
         {
           "name": "Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5",
@@ -52431,14 +54104,14 @@
           "name": "Helios AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Helios",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -53744,23 +55417,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security plugin",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/22/anthropic-releases-claude-security-plugin-for-claude-code-in-beta-a-multi-agent-vulnerability-scanner-that-runs-in-your-terminal",
@@ -54322,6 +55989,52 @@
       "publisher": "Claude Code：GitHub Releases（RSS）"
     },
     {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
+      "originalTitle": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+      "subject": "Open",
+      "action": "models recap: more on Kimi K3",
+      "object": ", Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+      "metrics": [],
+      "locations": [
+        "US",
+        "China"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2348f99874421257",
+        "EN-cbc62794911ff31b"
+      ],
+      "entityNames": [
+        "Open",
+        "Amazon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "publisher": "Interconnects (Nathan Lambert)"
+    },
+    {
       "id": "EV-02015794e4c719d0",
       "dataDate": "2026-07-23",
       "date": "2026-07-22",
@@ -54564,9 +56277,7 @@
         {
           "name": "Economic Index",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/anthropic-economic-index-connector",
@@ -57293,23 +59004,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Fireside Chat",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jul/21/cat-and-thariq",
@@ -61420,7 +63125,7 @@
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -63071,16 +64776,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "EndConversation",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
@@ -64321,9 +66022,7 @@
         {
           "name": "Claude Code v2.1.212",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
@@ -66303,9 +68002,7 @@
         {
           "name": "Ode",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ode.com/press/anthropic-blackstone-and-hellman-friedman-introduce-ode-with-anthropic-an-enterprise-ai-services-firm",
@@ -68093,16 +69790,12 @@
         {
           "name": "Claude for Teachers",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/976/791.htm",
@@ -68602,16 +70295,12 @@
         {
           "name": "Claude for Teachers",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/claude-for-teachers",
@@ -69510,9 +71199,7 @@
         {
           "name": "Claude Code v2.1.208",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
@@ -71875,9 +73562,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/975/469.htm",
@@ -75273,7 +76958,7 @@
         }
       ],
       "sourceUrl": "https://supermicro.com/en/pressreleases/supermicro-simplifies-edge-ai-deployments-validated-kubernetes-appliances-red-hat",
-      "publisher": "Supermicro official press release"
+      "publisher": "supermicro.com"
     },
     {
       "id": "EV-155a9fb4982cbf22",
@@ -76134,9 +77819,7 @@
         {
           "name": "Claude Cowork",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
@@ -76691,7 +78374,7 @@
           "name": "ZCode",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -76914,9 +78597,7 @@
         {
           "name": "Claude Code v2.1.202",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
@@ -77100,16 +78781,12 @@
         {
           "name": "OpenScience",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI workbench",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/05/synthetic-sciences-releases-openscience-an-open-source-model-agnostic-ai-workbench-for-machine-learning-biology-physics-and-chemistry-research",
@@ -77651,9 +79328,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70",
@@ -77725,9 +79400,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/04/anthropic-launches-claude-science-beta",
@@ -78360,14 +80033,14 @@
           "name": "Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Cowork on Monday",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -78638,9 +80311,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/477.htm",
@@ -79447,9 +81118,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
@@ -79641,9 +81310,7 @@
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/242.htm",
@@ -79756,9 +81423,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/110.htm",
@@ -79887,9 +81552,7 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/claude-managed-agents",
@@ -80592,23 +82255,17 @@
         {
           "name": "MCP Connector",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "MCP Connector for",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/customers/smartsheet",
@@ -80698,9 +82355,7 @@
         {
           "name": "Claude Code v2.1.198",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
@@ -80936,9 +82591,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/claude-sonnet-5-continues-anthropics-pattern-of-hiding-price-increases-behind-unchanged-token-rates",
@@ -81217,9 +82870,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/971/118.htm",
@@ -81440,9 +83091,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-launches-claude-science-an-ai-workspace-built-specifically-for-researchers",
@@ -81514,16 +83163,12 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Science on Tuesday",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists",
@@ -81572,9 +83217,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/product/claude-science",
@@ -81768,9 +83411,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
@@ -82265,7 +83906,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -82522,9 +84163,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/970/809.htm",
@@ -82857,7 +84496,7 @@
           "name": "Claude",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "NVIDIA"
           ]
         }
       ],
@@ -83060,21 +84699,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -83687,14 +85326,14 @@
           "name": "Mythos-like",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         },
         {
           "name": "Asian AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         }
       ],
@@ -83823,9 +85462,7 @@
         {
           "name": "Mythos",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies",
@@ -84471,7 +86108,7 @@
           "name": "Akrites",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -84573,14 +86210,14 @@
           "name": "Claude Code v2.1.193",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         },
         {
           "name": "autoMode.classifyAllShell setting",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         }
       ],
@@ -85054,16 +86691,12 @@
         {
           "name": "Claude Cowork",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "SaaS Workflows",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://perplexityaimagazine.com/expert-insights/ai-agents-replacing-saas-workflows",
@@ -85112,9 +86745,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/building-effective-human-agent-teams",
@@ -86031,7 +87662,7 @@
           "name": "Claude Tag",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         }
       ],
@@ -86216,9 +87847,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/968/043.htm",
@@ -86510,9 +88139,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time",
@@ -86614,9 +88241,7 @@
         {
           "name": "Claude Code v2.1.187",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
@@ -87750,9 +89375,7 @@
         {
           "name": "Claude Code v2.1.186",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
@@ -90377,7 +92000,7 @@
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -90501,9 +92124,7 @@
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/966/453.htm",
@@ -90709,7 +92330,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Thinking Machines Lab"
           ]
         }
       ],
@@ -90826,7 +92447,7 @@
           "name": "Fable",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -91796,9 +93417,7 @@
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons",
@@ -91895,7 +93514,7 @@
           "name": "Claude Code v2.1.181",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Apple"
           ]
         }
       ],
@@ -92362,9 +93981,7 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/428.htm",
@@ -92710,16 +94327,12 @@
         {
           "name": "Claude for Small Business",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Wednesday the launch of Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners",
@@ -93954,14 +95567,14 @@
           "name": "Mythos AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         },
         {
           "name": "Mythos",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         }
       ],
@@ -95898,16 +97511,12 @@
         {
           "name": "Claude Code v2.1.176",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "footerLinksRegexes setting",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
@@ -96379,16 +97988,12 @@
         {
           "name": "Claude Code v2.1.174",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "wheelScrollAccelerationEnabled setting",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
@@ -98136,9 +99741,7 @@
         {
           "name": "ClaudeFable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/705.htm",
@@ -98409,23 +100012,17 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/10/anthropic-releases-claude-fable-5-and-claude-mythos-5-same-underlying-model-different-safeguards-new-mythos-class-tier",
@@ -98474,9 +100071,7 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/claude-fable-5-the-first-mythos-model-is-powerful-expensive-and-heavily-filtered",
@@ -98926,9 +100521,7 @@
         {
           "name": "Claude Code v2.1.170",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
@@ -99147,23 +100740,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/152.htm",
@@ -99214,9 +100801,7 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/whats-new-in-claude-managed-agents",
@@ -99309,23 +100894,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Fable 5 and Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science",
@@ -99397,9 +100976,7 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today",
@@ -99455,14 +101032,14 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Xiaomi"
           ]
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Xiaomi"
           ]
         }
       ],
@@ -99739,9 +101316,7 @@
         {
           "name": "Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/961/945.htm",
@@ -103582,9 +105157,7 @@
         {
           "name": "Introducing Claude Opus 4.8",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/claude-opus-4-8?ct=13057",
@@ -104577,9 +106150,7 @@
         {
           "name": "Claude Code v2.1.161",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
@@ -105128,7 +106699,7 @@
           "name": "Claude Code v2.1.160",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         }
       ],
@@ -107846,16 +109417,12 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Blog",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/new-in-claude-managed-agents",
@@ -108801,9 +110368,7 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -109294,6 +110859,165 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-c195952efffa9a60",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "情境感知的缺失",
+      "originalTitle": "The loss of Situational Awareness",
+      "subject": "Situational Awareness",
+      "action": "financial_performance",
+      "object": "public stock portfolio sold to Citadel",
+      "metrics": [
+        "$45 billion",
+        "$10 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-11740cc8809aec7a",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Situational Awareness",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-3ec034d25ba6a710",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "欧盟计划投资100亿欧元建设7座AI超级工厂，发力追赶中美",
+      "originalTitle": "",
+      "subject": "欧盟计划",
+      "action": "投资100亿欧元建设7座AI超级工厂",
+      "object": "，发力追赶中美",
+      "metrics": [
+        "100 亿",
+        "773.81 亿"
+      ],
+      "locations": [
+        "美国",
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-1706429cbf67f1c9"
+      ],
+      "entityNames": [
+        "European Union"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/814.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fc13165fbd0ef3de",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+      "originalTitle": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+      "subject": "Situational Awareness",
+      "action": "capital_investment",
+      "object": "Anthropic shares",
+      "metrics": [
+        "$5 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-11740cc8809aec7a",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Situational Awareness",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+      "publisher": "TechCrunch AI"
+    },
+    {
       "id": "EV-56b36a56d729c20d",
       "dataDate": "2026-07-30",
       "date": "2026-07-30",
@@ -109515,6 +111239,52 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/983/393.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d7cba8d4a454aa93",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-31",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 工厂供应链：WTAI 2026年7月再平衡的真正含义",
+      "originalTitle": "The AI Factory Supply Chain: What WTAI's July 2026 Rebalance Is Really Saying | WisdomTree",
+      "subject": "WisdomTree Artificial Intelligence and Innovation Fund",
+      "action": "capital_investment",
+      "object": "semiconductor capital equipment",
+      "metrics": [
+        "1.50%",
+        "1.00%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-77d06a98251d0272",
+        "EN-6aa383344bedc00c"
+      ],
+      "entityNames": [
+        "WisdomTree Artificial Intelligence",
+        "Innovation Fund"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://wisdomtree.com/us/insights/blog/the-ai-factory-supply-chain-what-wtai-s-july-2026-rebalance-is-really-saying",
+      "publisher": "wisdomtree.com"
     },
     {
       "id": "EV-20b82e2a2cb33a0e",
@@ -110609,6 +112379,47 @@
       ],
       "sourceUrl": "https://ithome.com/0/981/527.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-420a9ad09680d2dc",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-31",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026年7月50家顶级AI融资初创公司",
+      "originalTitle": "50 Top AI Funded Startups (July 2026)",
+      "subject": "Anthropic",
+      "action": "ipo_listing",
+      "object": "SEC",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aifundingtracker.com/top-50-ai-startups",
+      "publisher": "aifundingtracker.com"
     },
     {
       "id": "EV-3aefbdfa5df2fd6a",

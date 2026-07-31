@@ -2,9 +2,15 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
+import { pathToFileURL } from "node:url";
 import crypto from "node:crypto";
 import { resolveSourceTitleTranslation, sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
-import { buildSourceIntake, sourceIntakePath } from "./lib/source-intake-v1.mjs";
+import {
+  buildSourceIntake,
+  mergeSourceIntakes,
+  readSourceIntake,
+  sourceIntakePath,
+} from "./lib/source-intake-v1.mjs";
 import { selectImmutableSourceSnapshot } from "./lib/immutable-source-snapshot-v1.mjs";
 import {
   chinaMarketLaneQueries,
@@ -74,6 +80,7 @@ if (args.has("help") || args.has("h")) {
       "  --targeted-source-artifacts=true",
       "  --market-region=CN",
       "  --source-artifact-dir=agent-workflow/reports/source-runs/YYYY-MM-DD",
+      "  --merge-existing-intake=true",
       "  --title-translation-provider=auto|deepseek|none",
       "  --disable-title-translation=true",
       "  --dry-run=true",
@@ -105,6 +112,7 @@ const querySelectionFixtureMode = args.get("query-selection-regression-fixtures"
 const rssIngestionFixtureMode = args.get("rss-ingestion-regression-fixtures") === "true";
 const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
 const targetedSourceArtifacts = args.get("targeted-source-artifacts") === "true";
+const mergeExistingIntake = args.get("merge-existing-intake") === "true";
 const targetMarketRegion = String(args.get("market-region") || "").trim().toUpperCase();
 if (targetMarketRegion && targetMarketRegion !== "CN") {
   throw new Error(`Unsupported --market-region=${targetMarketRegion}; expected CN`);
@@ -2859,7 +2867,7 @@ async function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
   return record;
 }
 
-async function fetchSourceSnapshot(item) {
+export async function fetchSourceSnapshot(item) {
   const url = item.url || "";
   const summary = String(item.summary || "").trim();
   const fetchedAt = new Date().toISOString();
@@ -5753,17 +5761,29 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     });
   }
 
-  const structuredIntake = buildSourceIntake({ root, date, entries: intakeEntries });
+  const generatedIntake = buildSourceIntake({ root, date, entries: intakeEntries });
+  const existingIntake = mergeExistingIntake ? readSourceIntake(root, date)?.payload : null;
+  const structuredIntake = existingIntake
+    ? mergeSourceIntakes(existingIntake, generatedIntake)
+    : generatedIntake;
   writeFile(sourceIntakePath(root, date), `${JSON.stringify(structuredIntake, null, 2)}\n`);
+  const reportedRawCount = mergeExistingIntake
+    ? structuredIntake.counts.raw_documents
+    : items.length;
+  const rawCountLine = rawLines.findIndex((line) => line.startsWith("raw_count: "));
+  if (rawCountLine >= 0) rawLines[rawCountLine] = `raw_count: ${reportedRawCount}`;
 
   const poolItems = items.filter((item) => poolKeySet.has(poolKeyFor(item)));
+  const reportedPoolCount = mergeExistingIntake
+    ? structuredIntake.counts.eligible_documents
+    : poolItems.length;
   const aihotDailyPoolCount = poolItems.filter(isAIHotDailySelected).length;
   const poolLines = [
     "---",
     `date: ${date}`,
     "stage: pool",
     "status: guanlan-daily-monitor-pool",
-    `pool_count: ${poolItems.length}`,
+    `pool_count: ${reportedPoolCount}`,
     `aihot_daily_pool_count: ${aihotDailyPoolCount}`,
     `pool_target: ${poolMinTarget}`,
     `routed_pool_target: ${routedPoolMinTarget}`,
@@ -5962,7 +5982,7 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     `- evidence_object_type_distribution: ${distributionText(byEvidenceObjectType)}`,
     `- pool_route_distribution: ${distributionText(byPoolRoute)}`,
     `- pool_index_route_distribution: ${distributionText(byPoolIndexRoute)}`,
-    `- pool_index_count: ${poolItems.length}`,
+    `- pool_index_count: ${reportedPoolCount}`,
     `- pool_target: ${poolMinTarget}`,
     `- pool_selection_buffer: ${poolSelectionBufferTarget}`,
     `- routed_pool_count: ${routedPoolCount}`,
@@ -5979,7 +5999,7 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     `- pool_importance_coverage_gaps: ${coverageGapText(poolImportanceGaps)}`,
     `- daily_selected_change_card_theme_gate: default max 2 per theme; max 3 only when theme_day=true and daily log explains why.`,
     `- pool_theme_gate: diversify Pool; default max ${keywordMonitoring.policy?.structured_max_same_theme || 4} candidate items per theme unless theme_day=true.`,
-    `- pool_count: ${poolItems.length}`,
+    `- pool_count: ${reportedPoolCount}`,
     "- change_cluster_candidates: not_generated_by_monitor",
     "- heat_candidates: none",
     `- failed_sources: ${failures.length ? failures.join("; ") : "none"}`,
@@ -6204,19 +6224,21 @@ async function main() {
   );
 }
 
-(querySelectionFixtureMode
-  ? runQuerySelectionRegressionFixtures()
-  : rssIngestionFixtureMode
-  ? runRssIngestionRegressionFixtures()
-  : evidenceObjectFixtureMode
-  ? runEvidenceObjectRegressionFixtures()
-  : adaptiveRawFixtureMode
-  ? runAdaptiveRawRegressionFixtures()
-  : metadataFixtureMode
-    ? runMetadataRegressionFixtures()
-    : sourceOnlyMode
-      ? runSourceOnly()
-      : main()).catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {
+  (querySelectionFixtureMode
+    ? runQuerySelectionRegressionFixtures()
+    : rssIngestionFixtureMode
+    ? runRssIngestionRegressionFixtures()
+    : evidenceObjectFixtureMode
+    ? runEvidenceObjectRegressionFixtures()
+    : adaptiveRawFixtureMode
+    ? runAdaptiveRawRegressionFixtures()
+    : metadataFixtureMode
+      ? runMetadataRegressionFixtures()
+      : sourceOnlyMode
+        ? runSourceOnly()
+        : main()).catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}

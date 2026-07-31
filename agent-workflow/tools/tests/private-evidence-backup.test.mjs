@@ -7,6 +7,10 @@ import {
   buildPrivateEvidenceBackup,
   ingestPrivateEvidenceRecords,
 } from "../lib/private-evidence-backup.mjs";
+import {
+  evidenceRef,
+  loadPrivateEvidenceRecord,
+} from "../lib/private-evidence-store.mjs";
 
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -145,4 +149,44 @@ test("private evidence backup ingests research bodies without embedding them in 
     metadata,
     /"(?:body_clean|body_original|clean_text|full_text|markdown_snapshot)"\s*:/u,
   );
+});
+
+test("private evidence lookup prefers the requested date for repeated content", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-date-root-"));
+  const backupRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-date-backup-"));
+  const body = "The same source body was captured on two production dates.";
+  const contentHash = "repeated-content-hash";
+  const sourceUrl = "https://example.test/release";
+
+  for (const [date, originalUrl] of [
+    ["2026-07-30", sourceUrl],
+    ["2026-07-31", `${sourceUrl}/`],
+  ]) {
+    const file = path.join(
+      root,
+      `01-SiteV2/content/01-raw/originals/${date}/release.json`,
+    );
+    writeJson(file, {
+      original_url: originalUrl,
+      canonical_url: sourceUrl,
+      content_hash: contentHash,
+      clean_text: body,
+      collected_at: `${date}T01:00:00.000Z`,
+    });
+  }
+  writeJson(path.join(root, ".evidence-backup.json"), { backupRoot });
+  buildPrivateEvidenceBackup({
+    root,
+    backupRoot,
+    generatedAt: "2026-07-31T02:00:00.000Z",
+  });
+
+  const loaded = loadPrivateEvidenceRecord(
+    root,
+    evidenceRef(contentHash),
+    contentHash,
+    { sourceUrl, dataDate: "2026-07-31" },
+  );
+  assert.equal(loaded.entry.data_date, "2026-07-31");
+  assert.equal(loaded.metadata.original_url, `${sourceUrl}/`);
 });

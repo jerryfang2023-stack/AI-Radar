@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "node": {
     "id": "TX-industry-manufacturing",
@@ -56,6 +56,7 @@
       "EV-6ce6b9c9780b97d9",
       "EV-dd62847548bb6ae3",
       "EV-8993e021ac17df4a",
+      "EV-3ec034d25ba6a710",
       "EV-eae8f316bc05820b",
       "EV-cd7e18de453152dd",
       "EV-08f736f61f2b46f3",
@@ -130,6 +131,7 @@
       "EN-56ee86045cfb0ddd",
       "EN-cbc62794911ff31b",
       "EN-a614180064f7ef60",
+      "EN-1706429cbf67f1c9",
       "EN-c3983a4111660712",
       "EN-3a7bd3e2360a3d29",
       "EN-6c7575a43005188a"
@@ -145,7 +147,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-12-02",
-    "lastSeen": "2026-07-28"
+    "lastSeen": "2026-07-31"
   },
   "events": [
     {
@@ -4376,6 +4378,74 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-3ec034d25ba6a710",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-30",
+      "updatedDate": "2026-07-31",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "欧盟计划投资100亿欧元建设7座AI超级工厂，发力追赶中美",
+      "originalTitle": "",
+      "subject": "欧盟计划",
+      "action": "投资100亿欧元建设7座AI超级工厂",
+      "object": "，发力追赶中美",
+      "metrics": [
+        "100 亿",
+        "773.81 亿"
+      ],
+      "locations": [
+        "美国",
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-1706429cbf67f1c9"
+      ],
+      "entityNames": [
+        "European Union"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/983/814.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-eae8f316bc05820b",
       "dataDate": "2026-07-28",
       "date": "2026-07-27",
@@ -4983,6 +5053,7 @@
         "TX-technology-fine_tuning",
         "TX-use_case-research_science",
         "TX-technology-open_weights",
+        "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
@@ -4991,8 +5062,7 @@
         "TX-technology-human_in_loop",
         "TX-technology-speech_audio",
         "TX-technology-distillation",
-        "TX-technology-image_generation",
-        "TX-technology-inference_optimization"
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
@@ -5371,6 +5441,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -5523,6 +5594,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-fc13165fbd0ef3de",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -5530,6 +5602,7 @@
         "EV-d46aa5935d9bb672",
         "EV-a61345459e796a19",
         "EV-0eef30387327e73f",
+        "EV-420a9ad09680d2dc",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
         "EV-7b2a272a891f54d1",
@@ -5626,7 +5699,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -5695,6 +5768,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
@@ -5737,6 +5811,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1fe7328d2c69693f",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -5753,6 +5828,7 @@
         "EV-272c5c798bc95d9d",
         "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
+        "EV-c7a6bf51c3723b39",
         "EV-5ec22cf9a1fb59d4",
         "EV-b0dec1e885a601fe",
         "EV-243e73016576fa43",
@@ -5873,6 +5949,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -5946,6 +6023,7 @@
         "TX-use_case-research_science",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
+        "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -5976,7 +6054,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-b9b0702726f5be1c",
@@ -6300,6 +6378,7 @@
         "EV-b334f46b11a68045",
         "EV-fe644da028a13217",
         "EV-75b9b997e9c7e5d1",
+        "EV-443e093ab54d0228",
         "EV-b8893d112f761a30",
         "EV-f79713437230562f",
         "EV-ca819cdf9008f342",
@@ -6330,7 +6409,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-449777124b1466a8",
@@ -6380,9 +6459,7 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -6522,20 +6599,15 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -6737,9 +6809,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -6764,6 +6834,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-e8bc5b0eebef5813",
         "EV-f55d16df5b5fecb2",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
@@ -6776,6 +6847,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-4c750d338325c55f",
+        "EV-876cfe17574eb2c1",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -6926,18 +6999,16 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
-        "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -6945,7 +7016,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-8d323d8bba783aa3",
@@ -6961,6 +7032,7 @@
       ],
       "eventIds": [
         "EV-ff1f6119de13fa19",
+        "EV-e8bc5b0eebef5813",
         "EV-b4b5d141dac164c2",
         "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381",
@@ -6980,12 +7052,12 @@
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422",
         "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422",
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-2fc9fff8ab7f35aa",
@@ -7088,8 +7160,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-3548f7a65113c8fd",
         "EV-5d185ac33faedb68",
+        "EV-3548f7a65113c8fd",
         "EV-f65a1b053e5dca70",
         "EV-d5f276ad6b2ac9de"
       ],
@@ -7102,7 +7174,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-df1970d2ada6b501",
@@ -7938,6 +8010,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
+        "EV-0d5a32aca724d30e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -7971,7 +8044,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-a614180064f7ef60",
@@ -7993,6 +8066,31 @@
       "relatedEntityIds": [],
       "firstSeen": "2025-12-02",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-1706429cbf67f1c9",
+      "name": "European Union",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "欧盟"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a9b7129f547eef64",
+        "EV-3ec034d25ba6a710",
+        "EV-c480dc8fac2afae0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-26",
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-c3983a4111660712",
