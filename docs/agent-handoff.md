@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-07-30
+date: 2026-07-31
 status: current
 encoding: UTF-8
 ---
@@ -12,9 +12,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current release: `V4.5.0-private-evidence-source`; public website and data-service shell `SITE-V4.3.0-compatibility-retired`.
+- Current release: `V4.6.0-two-center-focus`; public website shell `SITE-V4.4.0-two-center-focus`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
-- Current public frontstage: Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports.
+- Current public frontstage: Data Center (Event Library / Community Intelligence / First-Line Viewpoints / Entity Library) and Application Center (Trend Radar / Guanlan Research).
 - Current backend: Dashboard / operations console.
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.1-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.0-23-table`, rebuilt and gated by Final Closure.
@@ -26,13 +26,11 @@ This file keeps only the current handoff state needed by a new window. Historica
 
 | Entry | File |
 |---|---|
-| Commercial Events / FDE / AI Hardware | `01-SiteV2/site/data-center.html` |
-| Funding Insights | `01-SiteV2/site/funding-insights.html` |
-| Industry Reports | `01-SiteV2/site/intelligence-map.html` |
-| Opportunity Map | `01-SiteV2/site/opportunity-map.html` |
+| Event Library / Community Intelligence / First-Line Viewpoints / Entity Library | `01-SiteV2/site/data-center.html` |
+| Guanlan Research | `01-SiteV2/site/intelligence-map.html` |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` |
-| First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` |
-| Community Intelligence | `01-SiteV2/site/data-center.html?view=community` |
+| Funding Insights (research subroute) | `01-SiteV2/site/funding-insights.html` |
+| Opportunity Map (unlisted internal lab) | `01-SiteV2/site/opportunity-map.html` |
 | Dashboard | `01-SiteV2/site/operations-console.html` |
 
 ## Current Production Chain

@@ -202,14 +202,14 @@ test("data center page uses the official logo and sidebar navigation", () => {
 
   assert.match(html, /logo-wavesight-reference-horizontal\.svg/u);
   assert.match(html, /data-view-link="events"/u);
-  assert.match(html, /data-view-link="events">商业事件/u);
-  assert.match(html, /data-center\.html\?view=index" data-view-link="index">产业档案/u);
-  assert.match(html, /data-center\.html\?view=relations" data-view-link="relations">关系图谱/u);
+  assert.match(html, /data-view-link="events">事件库/u);
+  assert.match(html, /data-center\.html\?view=index" data-view-link="index">实体库/u);
+  assert.doesNotMatch(html, /data-view-link="fde"|data-view-link="hardware"|data-view-link="relations"/u);
   assert.ok(indexPosition > viewpointPosition);
   assert.match(html, />数据中心</u);
   assert.match(html, />应用中心</u);
-  assert.match(html, /href="intelligence-map\.html">行业报告</u);
-  assert.match(html, /href="opportunity-map\.html">机会地图</u);
+  assert.match(html, /href="intelligence-map\.html">观澜研究</u);
+  assert.doesNotMatch(html, /href="funding-insights\.html"|href="opportunity-map\.html"/u);
   assert.doesNotMatch(html, />报告中心<\/a>/u);
   assert.doesNotMatch(html, /data-center\.html\?view=companies/u);
   assert.doesNotMatch(html, /data-center\.html\?view=products/u);
@@ -281,7 +281,7 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.ok(data.intake.every((item) => item.laneCoverage.includes("afternoon-skill")));
 });
 
-test("industry reports uses the V4 sidebar and contains reports only", () => {
+test("Guanlan Research uses the focused two-center sidebar and owns research topics", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
   const viewpointPosition = html.indexOf("data-center.html?view=viewpoints");
   const indexPosition = html.indexOf("data-center.html?view=index");
@@ -293,16 +293,19 @@ test("industry reports uses the V4 sidebar and contains reports only", () => {
   assert.match(html, /http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate"/u);
   assert.match(html, /assets\/data-center-v4\.css/u);
   assert.match(html, /class="dc-sidebar"/u);
-  assert.match(html, /data-center\.html\?view=events">商业事件/u);
+  assert.match(html, /data-center\.html\?view=events">事件库/u);
   assert.ok(indexPosition > viewpointPosition);
   assert.doesNotMatch(html, /data-center\.html\?view=companies/u);
   assert.doesNotMatch(html, /data-center\.html\?view=products/u);
-  assert.match(html, /<title>行业报告｜观澜 AI<\/title>/u);
-  assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告</u);
-  assert.match(html, /href="opportunity-map\.html">机会地图/u);
+  assert.match(html, /<title>观澜研究｜观澜 AI<\/title>/u);
+  assert.match(html, /href="intelligence-map\.html" aria-current="page">观澜研究/u);
+  assert.match(html, /href="funding-insights\.html"/u);
+  assert.match(html, /资本与融资/u);
+  assert.match(html, /企业 AI 落地/u);
+  assert.doesNotMatch(html, /href="opportunity-map\.html"/u);
   assert.match(html, /class="report-feature-grid"/u);
   assert.ok(weeklyFeaturePosition >= 0 && weeklyFeaturePosition < monthlyFeaturePosition);
-  assert.match(html, /REPORTS-V1\.1\.0-lane-independent/u);
+  assert.match(html, /REPORTS-V1\.2\.0-research-hub/u);
   assert.match(html, /class="report-archive-grid"/u);
   assert.ok(weeklyArchivePosition >= 0 && weeklyArchivePosition < monthlyArchivePosition);
   assert.match(html, /最新月报/u);
@@ -316,12 +319,14 @@ test("industry reports uses the V4 sidebar and contains reports only", () => {
   assert.doesNotMatch(html, /class="wavesight-nav"/u);
 });
 
-test("opportunity map is an independent application-center column", () => {
+test("opportunity map remains a noindex internal lab route", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/opportunity-map.html"), "utf8");
 
   assert.match(html, /<title>机会地图｜观澜 AI<\/title>/u);
-  assert.match(html, /href="intelligence-map\.html">行业报告/u);
-  assert.match(html, /href="opportunity-map\.html" aria-current="page">机会地图/u);
+  assert.match(html, /href="intelligence-map\.html">观澜研究/u);
+  assert.match(html, /<meta name="robots" content="noindex, nofollow">/u);
+  assert.doesNotMatch(html, /href="opportunity-map\.html" aria-current="page"/u);
+  assert.doesNotMatch(html, /href="funding-insights\.html"/u);
   assert.match(html, /id="entry-map"/u);
   assert.match(html, /OMAP-V2\.0\.0-v4-evidence/u);
   assert.match(html, /id="pain-map"/u);
@@ -335,8 +340,24 @@ test("opportunity map is an independent application-center column", () => {
 test("event toolbar is wired to real query controls", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
   const css = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.css"), "utf8");
+  const fdeIndex = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/fde.json"), "utf8"));
+  const hardwareIndex = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/hardware.json"), "utf8"));
 
-  assert.match(script, /events: \{ title: "商业事件", description: "AI 行业商业事件数据库"/u);
+  assert.match(script, /events: \{ title: "事件库", description: "可追溯的 AI 行业事实事件，FDE 与 AI 硬件作为主题视图统一检索"/u);
+  assert.match(script, /name="theme" aria-label="事件专题"/u);
+  assert.match(script, /theme === "fde"[\s\S]*data\.fde[\s\S]*fdeDossiers[\s\S]*theme === "hardware"[\s\S]*data\.hardware[\s\S]*hardwareCatalog/u);
+  assert.match(script, /indexes\/events[\s\S]*indexes\/fde[\s\S]*indexes\/hardware/u);
+  assert.match(script, /fde: fdeData\.fde \|\| \[\][\s\S]*hardware: hardwareData\.hardware \|\| \[\]/u);
+  const fdeThemeEventIds = new Set([
+    ...fdeIndex.fde.map((item) => item.eventId),
+    ...fdeIndex.fdeDossiers.flatMap((item) => item.eventIds || []),
+  ]);
+  const hardwareThemeEventIds = new Set([
+    ...hardwareIndex.hardware.map((item) => item.eventId),
+    ...hardwareIndex.hardwareCatalog.flatMap((item) => item.eventIds || []),
+  ]);
+  assert.ok(fdeIndex.fde.every((item) => fdeThemeEventIds.has(item.eventId)));
+  assert.ok(hardwareIndex.hardware.every((item) => hardwareThemeEventIds.has(item.eventId)));
   assert.match(script, /全部商业事件类型/u);
   assert.doesNotMatch(script, /dc-chevron/u);
   assert.doesNotMatch(css, /\.dc-chevron/u);
@@ -427,7 +448,7 @@ test("FDE and hardware default to the current month while commercial events rema
   const fdeMonth = data.fde.filter((item) => item.dataDate.startsWith(`${currentMonth}-`)).length;
   const hardwareMonth = data.hardware.filter((item) => item.dataDate.startsWith(`${currentMonth}-`)).length;
 
-  assert.match(script, /targetView === "events" && !\["from", "to"\]/u);
+  assert.match(script, /targetView === "events"[\s\S]*!params\.get\("theme"\)[\s\S]*!\["from", "to"\]/u);
   assert.match(script, /function monthlyProjectionMode\(targetView = view\)/u);
   assert.match(script, /item\.dataDate\.startsWith\(`\$\{currentDataMonth\(data\)\}-`\)/u);
   assert.match(script, /数据月份/u);
@@ -455,10 +476,10 @@ test("commercial events prioritize financing and cases before products and other
   assert.match(script, /a\.index - b\.index/u);
 });
 
-test("industry dossiers and relationship map use the unified entity service", () => {
+test("entity library and embedded relationship views use the unified entity service", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
 
-  assert.match(script, /index: \{ title: "产业档案"/u);
+  assert.match(script, /index: \{ title: "实体库"/u);
   assert.match(script, /relations: \{ title: "关系图谱"/u);
   assert.match(script, /function entityIndexItems\(data\)/u);
   assert.match(script, /\.\.\.\(data\.companies \|\| \[\]\)\.map/u);

@@ -48,7 +48,7 @@ test("Opportunity Map projection reads accepted V4 evidence without Signal Cards
   ))));
   assert.equal(JSON.stringify(data).includes("evidence_card_ids"), false);
   assert.doesNotMatch(reportsHtml, /data\/v3-data-observation-desk\.json|data\/industry-reports-frontstage\.json/u);
-  assert.match(reportsHtml, /REPORTS-V1\.1\.0-lane-independent/u);
+  assert.match(reportsHtml, /REPORTS-V1\.2\.0-research-hub/u);
   assert.doesNotMatch(opportunityHtml, /data\/v3-data-observation-desk\.json/u);
   assert.match(opportunityHtml, /data\/opportunity-evidence-v2\.json/u);
   assert.match(opportunityHtml, /OMAP-V2\.0\.0-v4-evidence/u);
@@ -141,7 +141,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   for (const [file, target] of redirects) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
     assert.match(html, new RegExp(`url=${target.replace(/[?]/gu, "\\?")}`, "u"));
-    assert.match(html, /SITE-V4\.(?:2\.0-entity-history|3\.0-compatibility-retired)/u);
+    assert.match(html, /SITE-V4\.4\.0-two-center-focus/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar/u);
   }
 
@@ -150,24 +150,13 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   assert.ok(reportPages.length >= 2);
   for (const file of reportPages) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
-    const isHistoricalSnapshot = /-\d{4}-\d{2}(?:-\d{2})?\.html$/u.test(file);
-    assert.match(
-      html,
-      isHistoricalSnapshot
-        ? /SITE-V4\.2\.0-entity-history/u
-        : /SITE-V4\.3\.0-compatibility-retired/u,
-    );
-    assert.match(
-      html,
-      isHistoricalSnapshot
-        ? /REPORTS-V1\.0\.0-periodic-report-center/u
-        : /REPORTS-V1\.1\.0-lane-independent/u,
-    );
+    assert.match(html, /SITE-V4\.4\.0-two-center-focus/u);
+    assert.match(html, /REPORTS-V1\.2\.0-research-hub/u);
     assert.match(html, /assets\/data-center-v4\.css/u);
     assert.match(html, /class="dc-sidebar"/u);
-    assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告/u);
-    assert.match(html, /href="funding-insights\.html">融资透视/u);
-    assert.match(html, /href="opportunity-map\.html">机会地图/u);
+    assert.match(html, /href="intelligence-map\.html" aria-current="page">观澜研究/u);
+    assert.doesNotMatch(html, /href="funding-insights\.html">融资透视/u);
+    assert.doesNotMatch(html, /href="opportunity-map\.html">机会地图/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar|v3-data-observation\.html|follow-builders\.html|community-intelligence\.html/u);
     assert.doesNotMatch(html, /\[(?:E|O|C):[^\]]+\]|report-evidence-ref/u, `${file} must not expose internal evidence IDs`);
   }

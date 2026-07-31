@@ -18,4 +18,4 @@ Reject any output field or page copy containing opportunity score, heat, maturit
 
 ## Eval 5 — report separation
 
-The page provides filters, counts, comparisons and evidence links. It must not produce a long-form weekly/monthly report or own Industry Reports archives.
+The page provides filters, counts, comparisons and evidence links. It must not produce a long-form weekly/monthly report or own Guanlan Research archives.

@@ -873,7 +873,7 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     const data = buildFundingInsightsFrontstage(tempRoot);
     const rebuilt = buildFundingInsightsFrontstage(tempRoot);
     assert.equal(data.cards.length, 1);
-    assert.equal(data.meta.site_version, "SITE-V4.3.0-compatibility-retired");
+    assert.equal(data.meta.site_version, "SITE-V4.4.0-two-center-focus");
     assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
     assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");
@@ -900,9 +900,9 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/funding-insights.js"), "utf8");
   const styles = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/funding-insights.css"), "utf8");
   assert.match(html, /href="trend-radar\.html">变化雷达/u);
-  assert.match(html, /href="funding-insights\.html" aria-current="page">融资透视/u);
-  assert.match(html, /href="opportunity-map\.html">机会地图/u);
-  assert.match(html, /href="intelligence-map\.html">行业报告/u);
+  assert.match(html, /href="intelligence-map\.html" aria-current="page">观澜研究/u);
+  assert.doesNotMatch(html, /href="funding-insights\.html" aria-current="page">融资透视/u);
+  assert.doesNotMatch(html, /href="opportunity-map\.html">机会地图/u);
   assert.match(html, /assets\/funding-insights\.js/u);
   assert.match(html, /<span>产品方向<\/span>[\s\S]*<select name="product_form"><option value="">全部产品方向<\/option><\/select>/u);
   assert.doesNotMatch(html, /data-category-tabs|按赛道查看融资项目/u);

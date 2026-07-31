@@ -389,8 +389,8 @@ export function buildFundingEntityReviewQueue(cards = []) {
       ])).values()].slice(0, 3),
     }))
     .sort((left, right) => (
-      left.candidate_kind.localeCompare(right.candidate_kind)
-      || left.research_name.localeCompare(right.research_name)
+      left.candidate_kind.localeCompare(right.candidate_kind, "en")
+      || left.research_name.localeCompare(right.research_name, "en")
     ));
   return {
     meta: {

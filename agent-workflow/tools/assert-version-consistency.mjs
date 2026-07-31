@@ -35,13 +35,13 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  release: "V4.5.2-founder-profiles",
-  packageVersion: "4.5.2",
-  productVersion: "V4.5",
-  gitTag: "v4.5.2-founder-profiles",
-  site: "SITE-V4.3.0-compatibility-retired",
+  release: "V4.6.0-two-center-focus",
+  packageVersion: "4.6.0",
+  productVersion: "V4.6",
+  gitTag: "v4.6.0-two-center-focus",
+  site: "SITE-V4.4.0-two-center-focus",
   ops: "OPS-V2.0.0-v4-telemetry",
-  reports: "REPORTS-V1.1.0-lane-independent",
+  reports: "REPORTS-V1.2.0-research-hub",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   fundingInsights: "FUNDING-INSIGHT-V1.1.0-card-integrity",
@@ -58,7 +58,7 @@ const ledgerChecks = [
   ["Product version", expected.productVersion],
   ["Main website version", expected.site],
   ["Operations backend version", expected.ops],
-  ["Reports Center column version", expected.reports],
+  ["Guanlan Research column version", expected.reports],
   ["Opportunity Map column version", expected.opportunity],
   ["Trend Radar column version", expected.trendRadar],
   ["Funding Insights column version", expected.fundingInsights],
@@ -121,8 +121,8 @@ const historicalReportPages = fs.readdirSync(path.join(root, "01-SiteV2/site"))
   .map((name) => `01-SiteV2/site/${name}`);
 for (const file of historicalReportPages) {
   const html = read(file);
-  if (!/REPORTS-V1\.(?:0\.0-periodic-report-center|1\.0-lane-independent)/u.test(html)) {
-    fail(`${file} missing supported Reports Center version`);
+  if (!/REPORTS-V1\.(?:0\.0-periodic-report-center|1\.0-lane-independent|2\.0-research-hub)/u.test(html)) {
+    fail(`${file} missing supported Guanlan Research version`);
   }
   rejectText(file, expected.opportunity, "Opportunity Map column version");
 }
@@ -185,7 +185,7 @@ rejectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", "
 rejectText("agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", "current SITE-V3.4.5", "current V3 site claim");
 expectText("agent-workflow/product/column-tag-taxonomy-v1.json", '"canonical_fact_input": false');
 expectText("context/frontstage-page-contracts.md", expected.site, "current SITE version");
-expectText("context/project-memory.md", "SITE-V4.3.0", "current SITE major/minor version");
+expectText("context/project-memory.md", "SITE-V4.4.0", "current SITE major/minor version");
 rejectText("context/frontstage-page-contracts.md", "The legacy Business Signals Card set remains an internal compatibility dataset", "active Card compatibility contract");
 rejectText("context/project-memory.md", "Business Signals is an internal compatibility chain for Raw / Pool / Card", "active Raw/Pool/Card operating model");
 

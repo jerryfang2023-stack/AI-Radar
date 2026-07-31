@@ -1,18 +1,18 @@
 ---
 name: guanlan-weekly-report-page-generator
-description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
+description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/`. Applies to Guanlan Research weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
     version: "1.1.2"
-    column_version: "REPORTS-V1.0.0-periodic-report-center"
-    lane: "Reports Center"
+    column_version: "REPORTS-V1.2.0-research-hub"
+    lane: "Guanlan Research"
     status: "current sub-skill"
     order: 91
-    responsibility: "Generate and maintain weekly report frontstage pages from accepted content under the independent Reports Center version."
-    upstream: "accepted weekly report Markdown, Reports Center page, Guanlan VI rules"
-    downstream: "weekly report detail page, Reports Center weekly entry, page styles, REPORTS version metadata"
+    responsibility: "Generate and maintain weekly report frontstage pages from accepted content under Guanlan Research."
+    upstream: "accepted weekly report Markdown, Guanlan Research page, Guanlan VI rules"
+    downstream: "weekly report detail page, Guanlan Research weekly entry, page styles, REPORTS version metadata"
     gates: "content acceptance, content-source discipline, REPORTS version boundary, user preference memory, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
-    recent_learning: "Use the accepted evidence-bounded headline unchanged across the H1, browser title, and Reports Center card; the content gate must pass before the deterministic renderer writes HTML; generated report pages use REPORTS-V1.0.0 while Opportunity Map remains an independent OMAP application."
+    recent_learning: "Use the accepted evidence-bounded headline unchanged across the H1, browser title, and Guanlan Research card; the content gate must pass before the deterministic renderer writes HTML; generated report pages use REPORTS-V1.2.0 while Opportunity Map remains an unlisted internal lab."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -21,7 +21,7 @@ metadata:
 
 ## Purpose
 
-Turn accepted weekly report Markdown into a WaveSight Reports Center experience. This skill handles page structure, visual modules, report-center wiring, version metadata, and validation. It does not decide the weekly business judgment or own Opportunity Map.
+Turn accepted weekly report Markdown into a WaveSight Guanlan Research experience. This skill handles page structure, visual modules, research-hub wiring, version metadata, and validation. It does not decide the weekly business judgment or own Opportunity Map.
 
 The periodic controller may invoke this skill only after the weekly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
 
@@ -57,13 +57,13 @@ For detailed rules, load:
 2. Extract page fields.
    - Use frontmatter `title`, `date`, `week`, `window`, `slug`, and `content_type`.
    - Generate the visible title from the report content, not from a generic label such as “本周 AI 商业变化判断”.
-   - Preserve the time window as a selector on both the Industry Reports entry (`intelligence-map.html`) and detail page.
+   - Preserve the time window as a selector on both the Guanlan Research entry (`intelligence-map.html`) and detail page.
 
-3. Build the Industry Reports entry.
-   - Keep weekly reports in the Industry Reports area of `intelligence-map.html`.
+3. Build the Guanlan Research entry.
+   - Keep weekly reports in the report area of `intelligence-map.html`.
    - `reports.html` is a compatibility redirect only and must not become a second report center.
    - Do not push relation paths or decorative graph modules above the report-first entry.
-   - Do not restore Trend Candidates or History modules on the Industry Reports page.
+   - Do not restore Trend Candidates or History modules on the Guanlan Research page.
    - Show report counts as compact tags, not boxed KPI cards.
 
 4. Build the detail page.
@@ -75,8 +75,8 @@ For detailed rules, load:
    - Treat user-deleted elements as blocked unless the user explicitly reintroduces them.
 
 5. Update version metadata when releasing.
-   - Main site version lives in `meta[name="wavesight-version"]` and must match the current public website version in `context/version-ledger.md` (`SITE-V4.3.0-compatibility-retired` for this release).
-   - Reports Center column version lives in `meta[name="wavesight-column-version"]` and must be `REPORTS-V1.0.0-periodic-report-center` for this release.
+   - Main site version lives in `meta[name="wavesight-version"]` and must match `SITE-V4.4.0-two-center-focus`.
+   - Guanlan Research column version lives in `meta[name="wavesight-column-version"]` and must be `REPORTS-V1.2.0-research-hub`.
    - Weekly source path lives in `meta[name="weekly-report-source"]`.
    - Update `context/version-ledger.md` only for accepted release changes.
    - Never emit `OMAP-V2.0.0-v4-evidence` from weekly report pages; that version belongs only to Opportunity Map.
@@ -84,7 +84,7 @@ For detailed rules, load:
 6. Validate.
    - Run syntax checks for touched JS if any.
    - Run `node agent-workflow/tools/frontstage-regression-gate.mjs`.
-   - Use Playwright visual smoke on desktop and mobile for the Industry Reports entry and weekly detail page.
+   - Use Playwright visual smoke on desktop and mobile for the Guanlan Research entry and weekly detail page.
    - Check there are no `<table>` elements on the weekly detail page unless the user explicitly asks for a raw data appendix.
 
 ## Hard Rules

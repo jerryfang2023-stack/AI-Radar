@@ -8,7 +8,7 @@ Run these pass/fail checks when auditing WaveSight AI / Guanlan current V4 typog
    - Pass when the audit targets current V4 pages: `data-center.html`, `intelligence-map.html`, weekly / monthly report details, and `operations-console.html`. Compatibility redirect files are not typography baselines.
 
 2. `shared_v4_shell`
-   - Pass when Data Center, Industry Reports, and report details use the same V4 logo header and sidebar typography.
+   - Pass when Data Center, Guanlan Research, and report details use the same V4 logo header and sidebar typography.
 
 3. `no_retired_page_basis`
    - Pass when retired V2 pages or daily-observation / brief / trend-report modules are not used as current typography baselines.

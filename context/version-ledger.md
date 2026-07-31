@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-07-30
+last_updated: 2026-07-31
 use_when:
   - task startup
   - page change
@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.5.2-founder-profiles |
-| Version name | WaveSight V4 Reviewed Founder Profiles |
-| Version layer | Patch |
-| Release date | 2026-07-30 |
-| Last modified at | 2026-07-30T21:37:20+08:00 |
-| Product version | V4.5 |
+| Current version | V4.6.0-two-center-focus |
+| Version name | WaveSight V4 Two-Center Focus |
+| Version layer | Minor |
+| Release date | 2026-07-31 |
+| Last modified at | 2026-07-31T23:30:00+08:00 |
+| Product version | V4.6 |
 | Data center version | SITE-V4.0-data-center |
-| Main website version | SITE-V4.3.0-compatibility-retired |
+| Main website version | SITE-V4.4.0-two-center-focus |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.0 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
@@ -37,7 +37,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | AI Hardware fact contract | HARDWARE-FACT-V1.0 |
 | AI Hardware snapshot contract | HARDWARE-SNAPSHOT-V1.0 |
 | Lens monitoring funnel | LENS-FUNNEL-V1.0 |
-| Reports Center column version | REPORTS-V1.1.0-lane-independent |
+| Guanlan Research column version | REPORTS-V1.2.0-research-hub |
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
 | Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
 | Funding Insights column version | FUNDING-INSIGHT-V1.1.0-card-integrity |
@@ -73,15 +73,15 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.8.0 V4 retirement governance |
-| Git tag | `v4.5.2-founder-profiles` |
-| Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
+| Git tag | `v4.6.0-two-center-focus` |
+| Current entries | Data Center: Event Library / Community Intelligence / First-Line Viewpoints / Entity Library. Application Center: Trend Radar / Guanlan Research. Funding Insights is a research subroute; Opportunity Map is an unlisted internal lab; Dashboard is backend. |
 
 ## Current Product Baseline
 
-- WaveSight AI V4.5 makes the private evidence repository the sole complete-original store. Public RAW-V4 bundles, the 23-table data lake, the independent evidence-linked Vault, and the website contain only body-free metadata, exact Claims or selected excerpts, and traceable locators. The public frontstage remains SITE-V4.3.0.
+- WaveSight AI V4.6 keeps the private evidence repository and V4 factual contracts unchanged while focusing the public frontstage into four Data Center entries and two Application Center entries.
 - WaveSight AI is an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
-- SITE-V4.3.0 is the current public and data-service release. It preserves the V4 entity-history frontstage after removing all V3 compatibility writers, interfaces, payloads, and active documentation routes.
+- SITE-V4.4.0 is the current public release. It preserves all V4 data and deep routes while removing FDE, AI Hardware, Relationship Map, Funding Insights, and Opportunity Map from primary navigation.
 - ENTITY-V1.0 formalizes companies/organizations, products/models/services, and people with stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
 - PERSON-REVIEW-V1.1 preserves the original 37 person/account decisions (31 public natural people and 6 quarantined non-natural accounts) and adds 30 manually reviewed funding-founder profiles. Every added profile resolves to accepted funding cards plus source URL, content-hash, and exact-quote locators; application evidence cannot create a canonical event or formal relationship.
 - RELATION-V2.1 accepts only verified typed endpoints with an accepted event, Claim references, and SourceArtifact references; it adds explicit join, leave, and founding edges for people, and no Tag co-occurrence edges are allowed.
@@ -101,9 +101,9 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Hermes no longer performs daily production supervision. `HERMES-V4.0-control-plane-watchdog` runs once at 10:20, after the Closure timeout window, and checks only whether the morning, recovery, and closure controllers left readable reports. Routine failures use the neutral production incident registry and are owned by Closure/Codex.
 - Production failures must be repaired from the earliest failed gate or report. If same-date artifacts are sufficient, use targeted repair and publication instead of restarting the lane.
 - Opportunity Map reads the dedicated downstream V4 projection `opportunity-evidence-v2.json`; neither application-center page fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
-- Reports Center is versioned independently as `REPORTS-V1.1.0-lane-independent`. It contains Monthly / Weekly reports and archives; `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for source-ID-cited Markdown only, `assert-periodic-report-content.mjs` gates the content, and `render-periodic-report-pages.mjs` is the sole HTML/navigation/version writer under the monthly and weekly page-generator Skills. Opportunity Map failure is a non-blocking warning.
+- Guanlan Research is versioned independently as `REPORTS-V1.2.0-research-hub`. It contains Monthly / Weekly reports and archives plus capital/funding and enterprise AI deployment topic entrances; the periodic rendering and evidence gates remain unchanged.
 - Opportunity Map is versioned independently as `OMAP-V2.0.0-v4-evidence`. It reads `opportunity-evidence-v2.json`, renders Entry Point Map and Product Pain Map from Claim-bound downstream assertions, and adds a small Direction Card layer. DeepSeek V4 Pro writes titles and editorial content from a bounded accepted Event/Claim/Source manifest; generated candidates stay review-only until reference, unsupported-number, judgment, counter-signal, and human-review gates pass. Direction Cards and opportunity assertions never enter V4 canonical data and are not automated recommendations.
-- Reports Center is versioned as `REPORTS-V1.1.0-lane-independent`; report content and rendering no longer depend on Opportunity Map or Direction Card generation succeeding.
+- Guanlan Research remains lane-independent under `REPORTS-V1.2.0-research-hub`; report content and rendering do not depend on Opportunity Map or Direction Card generation succeeding.
 - Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
 - Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.1.0-card-integrity`. It normalizes free-text rounds into stable codes and Chinese labels, keeps only explicitly current-round investors in the public investor field, moves historical or ambiguous investors into a separate evidence-backed collection, aggregates repeated company-and-round disclosures, and gives every card a structured investment thesis plus explicit customer-research status. Exact canonical entity matches link immediately; unresolved product and founder names enter an evidence-backed review queue and cannot mutate V4 entities automatically.
 - Skill Store `v1.8.0` migrates current source-intake, report, opportunity, agent, and audit instructions off retired V3 interfaces and extends retirement checks to governance and deployable data.
@@ -120,11 +120,11 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Page | File | Current Role |
 |---|---|---|
-| Data Center | `01-SiteV2/site/data-center.html` | Unified V4 entry for Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, Industry Dossiers, and the entity-centered one-hop Relationship Map |
+| Data Center | `01-SiteV2/site/data-center.html` | Four public entries: Event Library, Community Intelligence, First-Line Viewpoints, and Entity Library. FDE / AI Hardware remain event themes; relationships remain embedded in entity details. |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent V4 Application Center entry for daily, weekly, and monthly evidence-backed factual change exploration |
-| Funding Insights | `01-SiteV2/site/funding-insights.html` | Independent V4 Application Center entry for auto-published, evidence-bounded funding research with explicit investors and company/product/customer/competition/entity links |
-| Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 sidebar application entry containing latest Monthly / Weekly reports and report archives |
-| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent V4 sidebar application entry containing source-backed Entry Point Map, Product Pain Map, human-reviewed Direction Cards, and click-to-open evidence modals |
+| Funding Insights | `01-SiteV2/site/funding-insights.html` | Guanlan Research capital-topic subroute retaining the evidence-bounded funding product |
+| Guanlan Research | `01-SiteV2/site/intelligence-map.html` | Public application hub containing periodic reports, archives, capital/funding research, and enterprise AI deployment topics |
+| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Unlisted `noindex,nofollow` internal lab route retaining source-backed maps and evidence modals |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and timelines in the V4 shell |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Logged-in community cases, AI tool tactics, opportunities, and document links in the V4 shell |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend |
@@ -139,11 +139,11 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V2.0.0-v4-telemetry` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Reads `collection-telemetry-v1` and the V4 manifest/gate to separate collection, fact build, application projection, and publication. V3 assets are retired archive state and never health inputs. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
-| Commercial Events production | `SITE-V4.3.0-compatibility-retired` | V4-native structured intake, canonical facts, application projections, and OPS; V3 interfaces and payloads are absent | `SOURCE-INTAKE-V1`, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
+| Event Library production | `SITE-V4.4.0-two-center-focus` | V4-native structured intake and canonical facts presented through the focused event entrance; FDE / hardware remain thematic projections | `SOURCE-INTAKE-V1`, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, external Guanlan Vault person timelines |
 | Person review | `PERSON-REVIEW-V1.1` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates, First-Line authors, accepted person/account decisions, and accepted funding-founder decisions | 61 public natural-person profiles (31 existing plus 30 reviewed founders), 6 quarantined non-natural accounts, preserved viewpoint and funding-card lineage |
-| Reports Center / 行业报告 | `REPORTS-V1.1.0-lane-independent` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation independently from Opportunity Map. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `01-SiteV2/content/12-applications/industry-reports/` |
-| Opportunity Map / 机会地图 | `OMAP-V2.0.0-v4-evidence` | Published as the second Application Center entry. Owns the dedicated downstream V4 evidence projection, two Claim-bound matrices, DeepSeek V4 Pro-drafted and human-reviewed Direction Cards, and evidence modal. | `opportunity-evidence-v2.json` + accepted CanonicalEvents / Claims / SourceArtifacts / Entities / FacetAssertions + DeepSeek candidate file + reviewed direction definitions | `opportunity-map.html`, `opportunity-evidence-v2.mjs`, `opportunity-direction-card-candidates.json`, `opportunity-direction-cards.json`, `build-industry-reports-frontstage.mjs`, opportunity radar updater Skill |
+| Guanlan Research / 观澜研究 | `REPORTS-V1.2.0-research-hub` | Public Application Center hub owning accepted periodic reports, archives, and entrances to capital/funding and enterprise AI deployment research. | `.github/workflows/periodic-reports-pr.yml` + deterministic renderer + Funding Insights and Event Library topic routes | `intelligence-map.html`, report details, `funding-insights.html`, research topic links |
+| Opportunity Map / 机会地图 | `OMAP-V2.0.0-v4-evidence` | Unlisted internal lab; retains the V4 evidence projection and human-reviewed Direction Cards without occupying public navigation. | `opportunity-evidence-v2.json` + accepted V4 evidence + reviewed direction definitions | `opportunity-map.html` with `noindex,nofollow` |
 
 ## Current Enterprise AI / FDE Version
 
@@ -158,7 +158,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | V4 factual production | `context/12-data-center-v4.md` |
 | V3 archive notice | `context/07-v3-intelligence-generation-rules.md` |
 | Product map | `context/01-product-map.md` |
-| V4.3 automation loop | `context/08-automation.md` |
+| V4.4 automation loop | `context/08-automation.md` |
 | VI / typography | `context/02-vi-style.md` |
 | Page contracts | `context/frontstage-page-contracts.md` |
 | Quality gates | `context/04-qc-rules.md` |
@@ -200,6 +200,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.6.0-two-center-focus` | Shared sidebar / Data Center / Trend Radar / Guanlan Research / subordinate application routes / report details | 2026-07-31 | 2026-07-31T23:30:00+08:00 | V4.6.0-two-center-focus / SITE-V4.4.0-two-center-focus / REPORTS-V1.2.0-research-hub | FDE, AI Hardware, Relationship Map, Funding Insights, or Opportunity Map returning as primary sidebar entries; First-Line Viewpoints or Community Intelligence content changes; Funding Insights losing the research-parent state; Opportunity Map becoming indexable | focused navigation tests + generator regression + version consistency + code/rule audit + responsive smoke + GitHub Pages deploy |
 | `v4.5.2-founder-profiles` | Entity History people index / founder details / Funding Insights entity links / person review gate | 2026-07-30 | 2026-07-30T21:37:20+08:00 | V4.5.2-founder-profiles / PERSON-REVIEW-V1.1 / ENTITY-V1.0 / RELATION-V2.1 | unreviewed funding people entering the public index; application evidence creating canonical events or formal relationships; founder profiles without card and source locators; source cards retaining null IDs after review | founder review provenance gate + entity-history schema/integrity gate + full funding gate + V4 tests + code/rule audit + responsive smoke + GitHub Pages deploy |
 | `v4.5.1-funding-card-integrity` | Funding Insights schema / historical application bundles / frontstage aggregation / generator Skill | 2026-07-30 | 2026-07-30T20:34:59+08:00 | V4.5.1-funding-card-integrity / FUNDING-INSIGHT-V1.1.0-card-integrity / guanlan-funding-insight-generator v1.1.0 | free-text round variants; historical investors shown as current-round investors; duplicate company-and-round cards; unstructured investment theses; silent customer or entity-link gaps | 63-bundle schema and evidence gate + normalized-round gate + current-investor separation + company-round aggregation + entity-review queue completeness + funding tests + frontstage regression + responsive smoke + GitHub Pages deploy |
 | `v4.5.0-private-evidence-source` | Private evidence store / RAW-V4 public bundles / Guanlan Vault / GitHub production workflows / V4 data lake | 2026-07-30 | 2026-07-30T23:55:00+08:00 | V4.5.0-private-evidence-source / RAW-V4.0 / PRIVATE-EVIDENCE-STORE-V2.0 / GUANLAN-VAULT-V1.2-private-evidence-linked | complete original bodies in the public repository, data lake, Vault, website, workflow artifacts, or public automation commits; repository snapshots treated as authoritative | private-store integrity + public evidence boundary + all-date V4 integrity + Vault evidence contract + 23-table data-lake gate + code/rule audit + GitHub Pages deploy |
@@ -261,13 +262,14 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| SITE-V4.4.0 / REPORTS-V1.2.0 | 2026-07-31T23:30:00+08:00 | Focuses the public sidebar into Event Library, Community Intelligence, First-Line Viewpoints, Entity Library, Trend Radar, and Guanlan Research. Preserves FDE/hardware as event themes, relationships in entity detail, Funding Insights as a research topic, and Opportunity Map as an unlisted internal lab. | current public presentation |
 | Funding Insights history / Skill Store v1.7.0 | 2026-07-26T23:24:49+08:00 | Adds the governed historical generator and converts 246 unique verified funding events through secondary search, DeepSeek V4 Pro, exact-quote and explicit-investor gates into 203 published application cards; 43 unresolved events remain fail-closed. | current application generation |
 | V4.2 governance audit / Skill Store v1.6.5 / guanlan-code-rule-auditor v1.0.2 | 2026-07-25T20:36:03+08:00 | Aligns current Skill mirrors and generated dashboard data, fixes retired Trend Candidate and Intelligence Map ownership wording in active supervision, and makes Pages verify rule and Skill governance before deployment. | current governance |
 | TAG-V4.0 | 2026-07-17T01:32:06+08:00 | Establishes Claim-backed AI technical tags and separate product, scenario, industry, deployment, audience, and evidence-backed Facets without using taxonomy as ranking or eligibility input. | current |
 | OMAP-V1.1.0-direction-cards | 2026-07-25T15:37:44+08:00 | Adds three human-reviewed Direction Cards to Opportunity Map. Each card states a falsifiable startup hypothesis, unknowns, a first validation action, and accepted Signal Card/original-source evidence without changing Trend Radar or Data Center canonical facts. | retired application interface |
 | OMAP-V2.0.0-v4-evidence | 2026-07-29T00:00:00+08:00 | Replaces Signal Card evidence with accepted V4 Event, Claim, Source, Entity, and Facet references. Downstream application assertions remain outside canonical tables and every assertion binds an accepted Claim. | current application |
-| REPORTS-V1.1.0-lane-independent | 2026-07-29T00:00:00+08:00 | Splits periodic report content/rendering from Opportunity Map and Direction Card generation; opportunity failures become non-blocking warnings. | current application |
-| `v4.2.3-relationship-map` | 2026-07-25T13:44:11+08:00 | Renames Entity Index and Relationship Index to Industry Dossiers and Relationship Map, adds an entity-centered one-hop graph, evidence detail rail, relationship timeline, 7/30-day change filters, and split Claim/source-backed relationship detail loading while preserving the V4 factual boundary. | current public presentation |
+| REPORTS-V1.1.0-lane-independent | 2026-07-29T00:00:00+08:00 | Splits periodic report content/rendering from Opportunity Map and Direction Card generation; opportunity failures become non-blocking warnings. | superseded by REPORTS-V1.2.0 |
+| `v4.2.3-relationship-map` | 2026-07-25T13:44:11+08:00 | Renames Entity Index and Relationship Index to Industry Dossiers and Relationship Map, adds an entity-centered one-hop graph, evidence detail rail, relationship timeline, 7/30-day change filters, and split Claim/source-backed relationship detail loading while preserving the V4 factual boundary. | superseded public presentation; deep route retained |
 | HERMES-V4.0-control-plane-watchdog | 2026-07-25T10:20:00+08:00 | Retires Hermes daily lane supervision and compatibility-Card inspection. Hermes now checks only whether the morning, recovery, and closure controllers left readable reports; routine failures use the neutral production incident registry and Closure/Codex repair path. | current automation governance |
 | V4.2 governance alignment / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 | 2026-07-18T17:19:02+08:00 | Aligns the current version ledger, dashboard, supervision, column Skills, taxonomy routing, and release gates while preserving SITE-V4.2.0 canonical data and 31 reviewed natural-person profiles. | current governance |
 | REPORTS-V1.0.0 / OMAP-V1.0.0 / Skill Store v1.6.2 | 2026-07-18T13:17:22+08:00 | Splits Reports Center and Opportunity Map into independently versioned Application Center columns. The report release owns gated Markdown-to-page generation through the monthly/weekly page-generator Skills; the map release owns the dedicated source-backed projection and two evidence-backed matrices. | retired application interfaces |

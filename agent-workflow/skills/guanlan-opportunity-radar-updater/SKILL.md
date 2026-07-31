@@ -1,16 +1,16 @@
 ---
 name: guanlan-opportunity-radar-updater
-description: "Use when updating, rebuilding, auditing, or explaining the independent Opportunity Map column at OMAP-V2.0.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to V4 Event/Claim/Source evidence projection, DeepSeek V4 Pro Direction Card candidate writing, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, human-reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, label-driven, merged into Industry Reports, or disconnected from original articles. Do not use for weekly/monthly report prose, Reports Center pages, trend candidates, Signal Card adapters, or old formal_tags aggregation."
+description: "Use when updating, rebuilding, auditing, or explaining the unlisted Opportunity Map internal lab at OMAP-V2.0.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to V4 Event/Claim/Source evidence projection, DeepSeek V4 Pro Direction Card candidate writing, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, human-reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, publicly navigated, merged into Guanlan Research, or disconnected from original articles. Do not use for weekly/monthly report prose, Guanlan Research pages, trend candidates, Signal Card adapters, or old formal_tags aggregation."
 metadata:
   guanlan:
     version: "1.4.1"
     lane: "Opportunity Map"
     status: "downstream application"
     order: 92
-    responsibility: "Own the independent source-backed Opportunity Map projection and frontstage: Entry Point Map, Product Pain Map, and reviewed Direction Cards."
+    responsibility: "Own the unlisted source-backed Opportunity Map internal lab: Entry Point Map, Product Pain Map, and reviewed Direction Cards."
     upstream: "Accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, FacetAssertions"
     downstream: "opportunity-map.html, opportunity-evidence-v2.json, opportunity-direction-cards.json, Claim-bound application assertions, evidence modal behavior, weekly opportunity radar notes"
-    gates: "OMAP version boundary, accepted Claim/Source refs, reviewed direction definitions, no Signal Card fallback, no old formal_tags aggregation, map-specific evidence thresholds, independent map page, no Relation Paths, evidence modal smoke, frontstage regression"
+    gates: "OMAP version boundary, accepted Claim/Source refs, reviewed direction definitions, no Signal Card fallback, no old formal_tags aggregation, map-specific evidence thresholds, noindex/nofollow internal-lab page, absent from public sidebar, no Relation Paths, evidence modal smoke, frontstage regression"
     recent_learning: "DeepSeek V4 Pro may write Direction Card titles and content, but generated candidates stay pending until evidence, unsupported numbers, judgment depth, and falsifiability pass gates plus human review."
     mirrored_in_skill_store: true
     memory_required: false
@@ -22,7 +22,7 @@ This is a downstream decision-support/page-compatibility skill. Opportunity maps
 
 ## Scope
 
-Use this skill to update the independent `01-SiteV2/site/opportunity-map.html` column's source-backed maps and reviewed Direction Cards:
+Use this skill to update the unlisted `01-SiteV2/site/opportunity-map.html` internal lab's source-backed maps and reviewed Direction Cards:
 
 - `Entry Point Map`: buyer or user x specific task.
 - `Product Pain Map`: pain or constraint x product form / delivery model.
@@ -78,8 +78,9 @@ This skill does not own an independent scheduled task. Its refresh completes bef
 8. Keep generated candidates in `opportunity-direction-card-candidates.json` with `pending_human_review`; DeepSeek output cannot publish or replace `opportunity-direction-cards.json` automatically.
 9. Human-review a maximum of a few Direction Cards. Reject unsupported numbers, absolute or promotional language, weak actor diversity, evidence mismatches, and category-name titles before promotion.
 10. Keep the two maps as separate sections on `opportunity-map.html`; Direction Cards are a third full-width section, not a new top-level navigation item and not a replacement for either map.
-11. Put cell and Direction Card evidence behind click-to-open detail, not in a permanent right-side "Cell Evidence" panel.
-12. Run syntax, Direction Card generation tests, and frontstage regression checks after data or page generation.
+11. Keep `<meta name="robots" content="noindex, nofollow">` and keep Opportunity Map absent from the six-entry public sidebar.
+12. Put cell and Direction Card evidence behind click-to-open detail, not in a permanent right-side "Cell Evidence" panel.
+13. Run syntax, Direction Card generation tests, and frontstage regression checks after data or page generation.
 
 ## Evidence Rules
 
@@ -142,11 +143,12 @@ Direction Cards require at least two accepted Events with explicit Claim and Sou
 Before finishing:
 
 1. Verify both maps and reviewed Direction Cards render only in `01-SiteV2/site/opportunity-map.html`, under `OMAP-V2.0.0-v4-evidence`.
-2. Verify Reports Center contains no opportunity matrices or OMAP metadata.
-3. Verify no `Relation Paths`, `Signal Candidates`, old time-clustering, or old tag-aggregation module returns.
-4. Verify the old map toggle buttons and persistent right-side evidence panel do not return.
-5. Verify retired relation-path or Signal Card data did not return and was not converted into application assertions.
-6. Verify every Direction Card resolves to at least two accepted Events with accepted Claim refs and original-source URLs, and that no Direction Card was generated from tag frequency alone.
-7. Verify candidate provenance is `deepseek-v4-pro`, generated candidates did not auto-publish, and reviewed cards expose both `judgment` and `counter_signal`.
-8. Run the most relevant syntax check for edited scripts.
-9. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.
+2. Verify Guanlan Research contains no opportunity matrices or OMAP metadata.
+3. Verify Opportunity Map has `noindex,nofollow` and is absent from every public sidebar.
+4. Verify no `Relation Paths`, `Signal Candidates`, old time-clustering, or old tag-aggregation module returns.
+5. Verify the old map toggle buttons and persistent right-side evidence panel do not return.
+6. Verify retired relation-path or Signal Card data did not return and was not converted into application assertions.
+7. Verify every Direction Card resolves to at least two accepted Events with accepted Claim refs and original-source URLs, and that no Direction Card was generated from tag frequency alone.
+8. Verify candidate provenance is `deepseek-v4-pro`, generated candidates did not auto-publish, and reviewed cards expose both `judgment` and `counter_signal`.
+9. Run the most relevant syntax check for edited scripts.
+10. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.

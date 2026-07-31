@@ -192,7 +192,7 @@ write(GUANLAN_VAULT_PATHS.home, `${yaml("观澜 AI")}# 观澜 AI
 
 | 资产 | 数量 |
 |---|---:|
-| 商业事件 | ${number(counts.events)} |
+| 事件 | ${number(counts.events)} |
 | 公司 | ${number(counts.companies)} |
 | 产品 | ${number(counts.products)} |
 | 人物 | ${number(counts.people)} |
@@ -208,7 +208,7 @@ write(GUANLAN_VAULT_PATHS.currentVersion, `${yaml("当前版本")}# 当前版本
 
 | 层 | 当前版本 |
 |---|---|
-| 站点 | SITE-V4.3.0 compatibility retired |
+| 站点 | SITE-V4.4.0 two-center focus |
 | 数据中心 | ${text(manifest.dataVersion)} |
 | 实体 | ${text(manifest.entityVersion)} |
 | 关系 | ${text(manifest.relationshipVersion)} |
@@ -218,6 +218,7 @@ write(GUANLAN_VAULT_PATHS.currentVersion, `${yaml("当前版本")}# 当前版本
 | Opportunity Map | ${text(opportunity.meta?.applicationVersion)} |
 | Trend Radar | ${text(trend.meta?.columnVersion)} |
 | Funding Insights | ${text(funding.meta?.column_version)} |
+| Guanlan Research | REPORTS-V1.2.0-research-hub |
 | OPS | ${text(ops.meta?.version)} |
 
 - 当前数据日：${text(manifest.currentDate)}
@@ -228,17 +229,17 @@ write(GUANLAN_VAULT_PATHS.productMap, `${yaml("产品地图")}# 产品地图
 
 ## 数据中心
 
-- [商业事件](${siteBase}/data-center.html?view=events)
-- [实体索引](${siteBase}/data-center.html?view=index)
-- [一线观点](${siteBase}/data-center.html?view=viewpoints)
+- [事件库](${siteBase}/data-center.html?view=events)
 - [社群情报](${siteBase}/data-center.html?view=community)
+- [一线观点](${siteBase}/data-center.html?view=viewpoints)
+- [实体库](${siteBase}/data-center.html?view=index)
 
 ## 应用中心
 
-- [行业报告](${siteBase}/intelligence-map.html)
-- [融资洞察](${siteBase}/funding-insights.html)
-- [机会地图](${siteBase}/opportunity-map.html)
 - [变化雷达](${siteBase}/trend-radar.html)
+- [观澜研究](${siteBase}/intelligence-map.html)
+
+融资洞察是观澜研究的资本专题；机会地图是未列入公开导航的内部实验室。
 
 ## 运营
 
@@ -310,22 +311,22 @@ ${listRows(latestCommunity, (item) => `- **${text(item.source || item.category)}
 
 write(GUANLAN_VAULT_PATHS.applicationCenterOverview, `${yaml("应用中心总览")}# 应用中心总览
 
-应用中心消费 V4 事实，但其报告、趋势、机会和资本判断不回写事实层。
+应用中心消费 V4 事实，但其研究、趋势、机会和资本判断不回写事实层。
 
-- [[行业报告]]
-- [[融资洞察]]
-- [[机会地图]]
-- [[变化雷达]]`);
+- [[变化雷达]]
+- [[行业报告|观澜研究]]
 
-write(GUANLAN_VAULT_PATHS.industryReports, `${yaml("行业报告")}# 行业报告
+融资洞察归入观澜研究的资本专题；机会地图保留为内部实验室。`);
+
+write(GUANLAN_VAULT_PATHS.industryReports, `${yaml("观澜研究")}# 观澜研究
 
 当前归档 ${reportFiles.length} 份。
 
 ${listRows(reportFiles, (file) => `- [[${file.replace(/\.md$/u, "")}|${path.basename(file, ".md")}]]`)}
 
-[打开线上报告中心](${siteBase}/intelligence-map.html)`);
+[打开观澜研究](${siteBase}/intelligence-map.html)`);
 
-write(GUANLAN_VAULT_PATHS.fundingInsights, `${yaml("融资洞察")}# 融资洞察
+write(GUANLAN_VAULT_PATHS.fundingInsights, `${yaml("观澜研究·资本与融资")}# 观澜研究·资本与融资
 
 - 已发布卡片：${number(funding.cards?.length)}
 - 最新日期：${text(funding.meta?.latest_date)}
@@ -335,14 +336,14 @@ ${listRows(latestFunding, (item) => `- **${text(item.date || item.published_at)}
 
 [打开融资洞察](${siteBase}/funding-insights.html)`);
 
-write(GUANLAN_VAULT_PATHS.opportunityMap, `${yaml("机会地图")}# 机会地图
+write(GUANLAN_VAULT_PATHS.opportunityMap, `${yaml("机会地图（内部实验室）")}# 机会地图（内部实验室）
 
 - 证据：${number(opportunity.evidence?.length)}
 - 已审方向卡：${number(opportunity.directionCards?.length)}
 - 活跃日期：${text(opportunity.meta?.activeDate)}
 - 版本：${text(opportunity.meta?.applicationVersion)}
 
-机会地图是应用层，不是 AI Startup Radar，也不进入 V4 事实表。
+机会地图是未列入公开导航且禁止搜索引擎索引的应用层实验室，不进入 V4 事实表。
 
 [打开机会地图](${siteBase}/opportunity-map.html)`);
 
@@ -373,15 +374,14 @@ write(GUANLAN_VAULT_PATHS.siteOperations, `${yaml("网站运营总台")}# 网站
 - Vault 是单向生成的本地控制面，不直接参加 GitHub Actions。
 - \`90-工作区\` 的人工笔记不会自动进入生产。
 - 需要发布的内容必须先进入仓库对应的 V4 数据、应用或报告路径并通过门禁。
-- 正式行业报告的仓库源位于 \`01-SiteV2/content/12-applications/industry-reports/\`。
+- 观澜研究的正式周期报告源位于 \`01-SiteV2/content/12-applications/industry-reports/\`。
 
 ## 网站入口
 
-- [商业事件](${siteBase}/data-center.html?view=events)
-- [行业报告](${siteBase}/intelligence-map.html)
-- [融资洞察](${siteBase}/funding-insights.html)
-- [机会地图](${siteBase}/opportunity-map.html)
+- [事件库](${siteBase}/data-center.html?view=events)
+- [实体库](${siteBase}/data-center.html?view=index)
 - [变化雷达](${siteBase}/trend-radar.html)
+- [观澜研究](${siteBase}/intelligence-map.html)
 - [OPS 仪表盘](${siteBase}/operations-console.html)`);
 
 write(GUANLAN_VAULT_PATHS.operations, `${yaml("运行状态")}# 运行状态
@@ -453,7 +453,7 @@ write(GUANLAN_VAULT_PATHS.contracts, `${yaml("当前契约")}# 当前契约
 | FDE | FDE-V2.0 |
 | Hardware | HARDWARE-V1.0 |
 | Tag | TAG-V4.0 |
-| Reports | REPORTS-V1.1.0-lane-independent |
+| Guanlan Research | REPORTS-V1.2.0-research-hub |
 | Opportunity Map | OMAP-V2.0.0-v4-evidence |
 | Trend Radar | TRADAR-V1.0.0-factual-change-explorer |`);
 

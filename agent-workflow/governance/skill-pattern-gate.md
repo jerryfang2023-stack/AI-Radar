@@ -1,6 +1,6 @@
-# V4.3 Skill Pattern Gate
+# V4.4 Skill Pattern Gate
 
-Date: 2026-07-29
+Date: 2026-07-31
 Status: current
 Owner: `workflow` / `product-commander`
 
@@ -56,10 +56,10 @@ Do not mark a task accepted when:
 - the reviewer also implemented the change and no independent review evidence is provided;
 - an external skill or repo is used without stating safety and adaptation boundaries.
 
-## 6. Current V4.3 Rules
+## 6. Current V4.4 Rules
 
 - Current version baseline comes from `context/version-ledger.md`.
-- Current frontstage entries are Commercial Events, Industry Reports, Opportunity Map, Trend Radar, Funding Insights, First-Line Viewpoints, and Community Intelligence.
+- Current public frontstage entries are Event Library, Community Intelligence, First-Line Viewpoints, Entity Library, Trend Radar, and Guanlan Research. Funding Insights is a research subroute; Opportunity Map is an unlisted internal lab.
 - Current backend entry is Dashboard / operations console.
 - V2 homepage, daily observation, business brief, trend-report prose, and Netlify deployment are retired.
 - `follow-builders`, AI HOT, HN, X, Reddit, search tools, and community sources are discovery or viewpoint routes. A fact requires separate original-source capture plus accepted V4 Claim/Event evidence.

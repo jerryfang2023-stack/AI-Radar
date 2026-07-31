@@ -8,7 +8,7 @@ Product Commander 是 WaveSight AI 的任务入口与调度节点。它把用户
 
 ## 当前基线
 
-- 当前产品阶段是 `SITE-V4.3.0-compatibility-retired`。
+- 当前产品阶段是 `SITE-V4.4.0-two-center-focus`。
 - V4 SourceArtifact、RawDocument、Claim、CanonicalEvent、Entity 和 RELATION-V2.1 是唯一现役事实链。
 - V3 资产已从工作树删除；历史审计必须使用显式 Git ref 和隔离 worktree，不能恢复兼容写入或公开数据。
 - 栏目能力优先沉淀为 Skill，不为每个栏目新增常驻 Agent。

@@ -1,5 +1,7 @@
 # Opportunity Map Design QA
 
+Historical snapshot: this QA records the 2026-07-18 layout. Opportunity Map is now an unlisted `noindex,nofollow` internal lab and no longer switches through public Application Center navigation.
+
 ## Scope
 
 - Source visual: `C:\Users\86186\.codex\generated_images\019f7363-fb69-7ae2-b698-82777384ad88\exec-22a6c4a2-4f6c-469f-b230-37bb6e6547ec.png`

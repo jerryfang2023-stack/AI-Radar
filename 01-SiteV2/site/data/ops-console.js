@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-07-31T09:31:52.570Z",
+    "generatedAt": "2026-07-31T11:11:14.013Z",
     "date": "2026-07-31",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -787,7 +787,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SITE",
         "label": "Main website",
-        "value": "SITE-V4.3.0-compatibility-retired"
+        "value": "SITE-V4.4.0-two-center-focus"
       },
       {
         "key": "OPS",
@@ -831,8 +831,8 @@ window.WaveSightOpsConsole = {
       },
       {
         "key": "REPORTS",
-        "label": "Reports Center",
-        "value": "REPORTS-V1.1.0-lane-independent"
+        "label": "Guanlan Research",
+        "value": "REPORTS-V1.2.0-research-hub"
       },
       {
         "key": "OMAP",

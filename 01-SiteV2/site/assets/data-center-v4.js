@@ -33,8 +33,8 @@
   ]);
 
   const viewConfig = {
-    events: { title: "商业事件", description: "AI 行业商业事件数据库", detail: "event", dataKey: "events", placeholder: "搜索商业事件标题、公司、产品或关键词" },
-    index: { title: "产业档案", description: "公司机构、产品模型与人物的证据化历史档案", placeholder: "搜索公司、产品、模型、人物或别名" },
+    events: { title: "事件库", description: "可追溯的 AI 行业事实事件，FDE 与 AI 硬件作为主题视图统一检索", detail: "event", dataKey: "events", placeholder: "搜索事件标题、公司、产品或关键词" },
+    index: { title: "实体库", description: "公司机构、产品模型与人物的证据化历史档案，事实关系内嵌于实体详情", placeholder: "搜索公司、产品、模型、人物或别名" },
     relations: { title: "关系图谱", description: "选择一个实体，查看由事件、原文 Claim 和来源共同验证的一跳商业关系", dataKey: "relationships", placeholder: "搜索公司、产品、模型或人物" },
     fde: { title: "FDE 实施", description: "实施档案、生命周期与事实完整度", detail: "fde", dataKey: "fdeDossiers", placeholder: "搜索客户、服务商、工作流、系统或场景" },
     hardware: { title: "AI 硬件", description: "产品规格目录、产能供应面板与变化时间线", detail: "hardware", dataKey: "hardwareCatalog", placeholder: "搜索产品、规格、产能、供应方或部署" },
@@ -168,7 +168,9 @@
   }
 
   function eventCurrentBatchMode(targetView = view) {
-    return targetView === "events" && !["from", "to"].some((key) => params.get(key));
+    return targetView === "events"
+      && !params.get("theme")
+      && !["from", "to"].some((key) => params.get(key));
   }
 
   function monthlyProjectionMode(targetView = view) {
@@ -269,6 +271,7 @@
   function filteredItems(data, targetView = view) {
     const query = (params.get("q") || "").trim();
     const type = params.get("type") || "";
+    const theme = params.get("theme") || "";
     const tag = params.get("tag") || "";
     const person = params.get("person") || "";
     const stage = params.get("stage") || "";
@@ -278,6 +281,19 @@
     let items = [...collectionForView(data, targetView)];
 
     if (targetView === "events") {
+      const themeEventIds = new Set(
+        theme === "fde"
+          ? [
+              ...(data.fde || []).map((item) => item.eventId),
+              ...(data.fdeDossiers || []).flatMap((item) => item.eventIds || []),
+            ]
+          : theme === "hardware"
+            ? [
+                ...(data.hardware || []).map((item) => item.eventId),
+                ...(data.hardwareCatalog || []).flatMap((item) => item.eventIds || []),
+              ]
+            : [],
+      );
       if (eventCurrentBatchMode()) items = items.filter((item) => item.dataDate === data.meta.currentDate);
       items = items.filter((item) => (
         matchesQuery(item, [
@@ -300,6 +316,7 @@
           "sourceExcerpt"
         ], query)
         && (!type || item.eventGroup === type || item.eventType === type)
+        && (!theme || themeEventIds.has(item.id))
         && matchesTaxonomy(item, tag)
         && (!from || item.dataDate >= from)
         && (!to || item.dataDate <= to)
@@ -359,6 +376,7 @@
 
   function toolbarFilters(data, targetView) {
     const selectedType = params.get("type") || "";
+    const selectedTheme = params.get("theme") || "";
     const selectedTag = params.get("tag") || "";
     const selectedPerson = params.get("person") || "";
     const selectedStage = params.get("stage") || "";
@@ -367,6 +385,10 @@
     const pieces = [];
 
     if (targetView === "events") {
+      pieces.push(`<select class="dc-select" name="theme" aria-label="事件专题" data-auto-submit>${optionList([
+        { value: "fde", label: "企业 AI / FDE" },
+        { value: "hardware", label: "AI 硬件" }
+      ], selectedTheme, "全部事件专题")}</select>`);
       pieces.push(`<select class="dc-select" name="type" aria-label="商业事件类型" data-auto-submit>${optionList(eventGroupOrder, selectedType, "全部商业事件类型")}</select>`);
       const classifications = new Map(items.flatMap((item) => normalizeTags(item.classifications)).map((entry) => [
         taxonomyToken(entry),
@@ -2193,7 +2215,26 @@
     }
     if (targetView === "fde" && detail === "fde") return { ...(await communityFetchJson(splitDataUrl("details/fde"))), companies: [], products: [], hardware: [], community: [], viewpoints: [] };
     if (targetView === "hardware" && detail === "hardware") return { ...(await communityFetchJson(splitDataUrl("details/hardware"))), companies: [], products: [], fde: [], community: [], viewpoints: [] };
-    if (targetView === "events" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/events"))), companies: [], products: [], people: [], taxonomyNodes: [], fde: [], hardware: [], community: [], viewpoints: [] };
+    if (targetView === "events" && !detail) {
+      const [eventData, fdeData, hardwareData] = await Promise.all([
+        communityFetchJson(splitDataUrl("indexes/events")),
+        communityFetchJson(splitDataUrl("indexes/fde")),
+        communityFetchJson(splitDataUrl("indexes/hardware")),
+      ]);
+      return {
+        ...eventData,
+        fdeDossiers: fdeData.fdeDossiers || [],
+        hardwareCatalog: hardwareData.hardwareCatalog || [],
+        companies: [],
+        products: [],
+        people: [],
+        taxonomyNodes: [],
+        fde: fdeData.fde || [],
+        hardware: hardwareData.hardware || [],
+        community: [],
+        viewpoints: [],
+      };
+    }
     if (targetView === "index" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/entities"))), events: [], fde: [], hardware: [], community: [], viewpoints: [] };
     if (targetView === "relations" && !detail) {
       const [relationshipData, entityData] = await Promise.all([
