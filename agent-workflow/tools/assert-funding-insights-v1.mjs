@@ -11,7 +11,9 @@ import {
   fundingEvidenceProofProblems,
   fundingInsightProblems,
   latestDataDate,
+  loadDailyBundle,
   readJson,
+  verifiedFundingEventCardCoverageProblems,
 } from "./funding-insight-v1-utils.mjs";
 
 const root = process.cwd();
@@ -218,6 +220,14 @@ function main() {
   const problems = results.flatMap((result) => result.problems.map(
     (problem) => `${path.basename(result.file)}:${problem}`,
   ));
+  const persistedCards = all
+    ? cards
+    : fs.readdirSync(path.dirname(input))
+      .filter((file) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(file))
+      .flatMap((file) => readJson(path.join(path.dirname(input), file), { cards: [] }).cards || []);
+  const currentEvents = loadDailyBundle(root, date).events;
+  problems.push(...verifiedFundingEventCardCoverageProblems(currentEvents, persistedCards)
+    .map((problem) => `${date}:${problem}`));
   if (all) {
     problems.push(...validateEntityReviewQueue(cards));
     problems.push(...validateEntityDecisions(cards));

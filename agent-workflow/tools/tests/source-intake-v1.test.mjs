@@ -161,3 +161,23 @@ test("source snapshots are reused immutably and content changes get a stable ver
   assert.equal(changedRepeated.reused, true);
   assert.equal(changedRepeated.jsonPath, changedSelection.jsonPath);
 });
+
+test("AI Funding Tracker insights are enabled in the daily RSS collection lane", () => {
+  const projectRoot = process.cwd();
+  const registry = JSON.parse(fs.readFileSync(
+    path.join(projectRoot, "01-SiteV2/content/11-databases/source-registry-v2.json"),
+    "utf8",
+  ));
+  const source = registry.sources.find((item) => item.source_id === "ai-funding-tracker-insights");
+  assert.ok(source, "AI Funding Tracker source must be registered");
+  assert.equal(source.endpoint_or_url, "https://aifundingtracker.com/feed/");
+  assert.equal(source.interface_type, "rss");
+  assert.equal(source.source_type, "funding");
+  assert.equal(source.enabled_default, true);
+
+  const workflow = fs.readFileSync(
+    path.join(projectRoot, ".github/workflows/daily-persistent-assets-pr.yml"),
+    "utf8",
+  );
+  assert.match(workflow, /\(aihot keyword gdelt rss\)/u);
+});
