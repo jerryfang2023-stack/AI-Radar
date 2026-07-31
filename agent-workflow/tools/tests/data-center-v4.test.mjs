@@ -104,6 +104,44 @@ test("a versioned technical source title is displayed exactly as published", () 
   }), sourceTitle);
 });
 
+test("a version-only developer package release does not become a commercial or hardware event", () => {
+  const quote = "Release: llm-chat-completions-server 0.1a0";
+  const source = entry(
+    "versioned-developer-package",
+    "llm-chat-completions-server 0.1a0",
+    `${quote}\nThis experimental utility supports OpenAI Chat Completion style requests where each incoming message extends the previous conversation. It is a small developer package published from a personal builder blog, not a company product launch or a physical server release.`,
+    { source_type: "builder" },
+  );
+  const bundle = buildBundle(
+    [source],
+    taxonomy,
+    date,
+    "2026-07-16T00:00:00.000Z",
+    {
+      modelAssist: {
+        candidates: [
+          acceptedModelCandidate(source, [{
+            event_type: "product_release",
+            subject: "llm-chat-completions-server",
+            object: "0.1a0",
+            evidence_index: 0,
+          }], [{
+            start: 0,
+            end: quote.length,
+            quote,
+          }]),
+        ],
+      },
+    },
+  );
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.equal(bundle.hardware_facts.length, 0);
+  assert.ok(bundle.qa_queue.some(
+    (item) => item.reason === "versioned_developer_package_not_commercial_event",
+  ));
+});
+
 test("source title translation cannot omit explicit AI semantics", () => {
   assert.equal(titleTranslationLooksUsable("Bayer Uses AI to Cut Errors by 70%", "拜耳将错误减少 70%"), false);
   assert.equal(titleTranslationLooksUsable("Bayer Uses AI to Cut Errors by 70%", "拜耳利用 AI 将错误减少 70%"), true);

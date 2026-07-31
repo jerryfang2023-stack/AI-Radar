@@ -8,7 +8,7 @@
     "activeDate": "2026-07-31",
     "generatedAt": "2026-07-31T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 852,
+    "evidenceCount": 851,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -468,66 +468,6 @@
           "delivery_model": [],
           "business_action": [
             "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-023fd03c675d940d",
-      "event_id": "EV-023fd03c675d940d",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "llm-chat-completions-server 0.1a0",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-07-31",
-      "event_time": "2026-07-30T15:43:16.000Z",
-      "sourceUrl": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything",
-      "sourceName": "Simon Willison's Blog",
-      "subject": "llm-chat-completions-server",
-      "sourceExcerpt": "Release: llm-chat-completions-server 0.1a0",
-      "entity_refs": [
-        {
-          "entity_id": "EN-b161cee9ae7eba20",
-          "canonical_name": "llm-chat-completions-server",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-dbc7e23dba27fc95"
-      ],
-      "source_refs": [
-        "SA-289ebd91873e4362"
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-dbc7e23dba27fc95",
-            "source_refs": [
-              "SA-289ebd91873e4362"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
           ]
         }
       }
