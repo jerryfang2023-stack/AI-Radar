@@ -1397,9 +1397,10 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(workflow, /cp -a "\$resume_dir\/\." \./u);
   assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
   assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
-  assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?conclusion !== "success"/u);
-  assert.match(workflow, /const requiredSteps = \[[\s\S]*?Persist originals privately and enforce the public boundary/u);
-  assert.match(dispatcher, /const requiredSteps = \[[\s\S]*?Persist originals privately and enforce the public boundary/u);
+  assert.match(workflow, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
+  assert.match(dispatcher, /const requiredSteps = \[\s*"Collect source raw artifacts",\s*"Run Daily Monitor with QC",\s*\]/u);
+  assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
+  assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?steps\.persistent-assets-post-monitor\.outcome == 'success'/u);
 });
 
 test("source-intake gate replays V4 evidence eligibility without private Raw routing fields", () => {
