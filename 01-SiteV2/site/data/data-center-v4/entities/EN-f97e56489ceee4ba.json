@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-f97e56489ceee4ba",
@@ -23,8 +23,8 @@
     ],
     "eventIds": [],
     "viewpointIds": [
-      "2082317452755751098",
-      "2082241164850364555",
+      "2082637967852806207",
+      "2082609662231502932",
       "2077928427936710901",
       "2077632589498913087",
       "2077630111499882637",
@@ -74,22 +74,22 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-07-30",
     "handle": "thsottiaux",
     "role": "Codex & ChatGPT OpenAI",
     "organization": "OpenAI",
     "viewpointTags": [
-      "AI 编程",
-      "AI Coding 观点",
-      "AI Coding",
+      "AI 基础设施",
+      "模型基础设施观点",
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
-      "AI 基础设施",
-      "模型基础设施观点",
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
       "企业工作流",
       "Builder 观点"
     ],
@@ -117,16 +117,16 @@
     "timeline": [],
     "viewpoints": [
       {
-        "id": "2082317452755751098",
-        "date": "2026-07-29",
-        "title": "Sol 的朋友们，大家好！我已重置所有 ChatGPT Work 和 Codex 用户的用量限制。同时，快速更新一下 GPT-5.6 Sol 的用量限制情况。过去几周，不少用户反馈 Sol 消耗 Codex 额度的速度超出预期。需要明确的是，我们并未削减任何订阅计划的用量。我们一直在深入排查问题，并已实施多项改进。因此，在 Sol 的常规使用中，您的用量预计可延长约 18%。部分用户从今天起应该就能看到更显著的改善。明天，我们还将恢复此前因调查而临时暂停的五小时限制。 以下是我们的发现： - GPT-5.6 Sol 更倾向于长时间工作、进行更多工具调用，并协调跨工具和子代理的复杂工作流。这使其在解决难题时表现更佳，但某些任务的消耗远超预期。 - 在相同推理强度下，Sol 比前代模型更“卖力”。Sol 的“高”模式可能比 GPT-5.5 的“高”模式消耗更多令牌。 - 程序化工具调用（也称代码模式）让 Sol 能更灵活地并行执行工具调用，或在等待时继续工作。但这导致每轮响应更多、缓存输入令牌增加，用量也高于预期。 - 当 Sol 等待工具调用完成或执行大量网络搜索时，这种情况尤为明显。我们已优化这两种场景的处理方式，并持续提升代码模式的效率。 - 影响分布极不均衡。中位数用户实际发现 Sol 的令牌效率相当高，而部分处理高难度任务的重度用户则遭遇用量快速消耗。我们在发布前过于关注平均和中位数用量，忽略了长尾场景可能大幅增加消耗的情况。 Sol 标志着 Codex 能力的重大飞跃，但能力与效率的提升未必同步，有些问题只有在用户大规模实际使用后才会显现。我们本应更早意识到这一点，并更坦诚地沟通。各位持续开拓前沿，我们也将不断优化效率，并及时分享进展。",
-        "sourceUrl": "https://x.com/thsottiaux/status/2082317452755751098"
+        "id": "2082637967852806207",
+        "date": "2026-07-30",
+        "title": "@ilanbigio 和 @sandersted 在调查和发文方面做得非常出色。看起来过程相当有趣。大家要好好保养自己的安全绳，你的模型会感谢你的。https://t.co/3Enah7xd4t",
+        "sourceUrl": "https://x.com/thsottiaux/status/2082637967852806207"
       },
       {
-        "id": "2082241164850364555",
-        "date": "2026-07-29",
-        "title": "更多开源好物。我们刚刚发布了用于查找、验证和修复代码中安全漏洞的CLI和TypeScript SDK。可扫描仓库、审查变更、追踪发现随时间的变化，并在CI中运行安全检查。https://t.co/nkfTbw8p7b",
-        "sourceUrl": "https://x.com/thsottiaux/status/2082241164850364555"
+        "id": "2082609662231502932",
+        "date": "2026-07-30",
+        "title": "原来GPT-5.6 Sol在ARC-AGI-3上确实是当前最优水平。只需调整两个设置。你只需允许它借助我们的规范压缩实现，在多个上下文窗口中进行推理和运算。https://t.co/wHjaNsvIv8",
+        "sourceUrl": "https://x.com/thsottiaux/status/2082609662231502932"
       },
       {
         "id": "2077928427936710901",

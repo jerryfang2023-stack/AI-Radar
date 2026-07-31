@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-2348f99874421257",
+    "name": "Open",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0d5a32aca724d30e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-22",
+    "lastSeen": "2026-07-31",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0d5a32aca724d30e",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "开源模型回顾：更多关于Kimi K3、Qwen 3.8、习近平WAIC演讲、蒸馏、开源与闭源差距及未来展望",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2348f99874421257",
+          "EN-cbc62794911ff31b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-7c9238bfeb82f08f",
+      "snapshotKey": "7c9238bfeb82f08f",
+      "snapshotId": "HWS-1f77657dbe10c510",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "Open",
+      "subject": "Open",
+      "productNames": [],
+      "hardwareType": "networking",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d46baffb1c5cd33a"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-d46baffb1c5cd33a",
+          "fact_type": "product",
+          "observed_at": "2026-07-22T00:00:00.000Z",
+          "subject_entity_id": "EN-2348f99874421257",
+          "subject_name": "Open",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "networking",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "00:00:06 Nathan Lambert: Okay, welcome back to Interconnects. We’re doing our quarterly open model roundup, which is mostly us just making fun of or explaining, not making fun, why so many distillation takes are bad and understanding the state of where things stand. I think last Thursday was when Kimi K3 was released. I think we will see much much more in the near future. It seems pretty inevitable. Like over the weekend, Xi gave his speech where he directly committed to openness and open source as a strategy. It wasn’t a detailed layout state of affairs.",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-cfed864aad877156",
+          "source_refs": [
+            "SA-86a0bb3fbd4edf9c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "entityIds": [
+        "EN-2348f99874421257",
+        "EN-cbc62794911ff31b"
+      ]
+    },
+    {
+      "id": "HWC-1e2465488c5a5d77",
+      "snapshotKey": "1e2465488c5a5d77",
+      "snapshotId": "HWS-97daa94104979156",
+      "eventId": "EV-0d5a32aca724d30e",
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Kimi K3",
+      "subject": "Kimi K3",
+      "productNames": [
+        "Kimi K3"
+      ],
+      "hardwareType": "compute_cluster",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-35eaca87a98d223b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-29",
+          "hardware_fact_id": "HWF-35eaca87a98d223b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-28T08:38:20.000Z",
+          "subject_entity_id": "EN-aabd1a8a869c34a4",
+          "subject_name": "Kimi K3",
+          "product_entity_ids": [
+            "EN-607964040e4b62e0"
+          ],
+          "product_names": [
+            "Kimi K3"
+          ],
+          "component_type": "compute_cluster",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "此次 Kimi K3 一经开源发布，昇腾即实现 0day 极速适配 ：在训练侧，基于 MindSpeed MM 在 Atlas 800 A3、Atlas 900 A3 SuperPoD 上完成减层训练基础功能适配，在算子、并行加速、显存优化等方面进行专项优化；在推理侧，通过 vLLM Ascend 与 SGLang 开源推理引擎实现快速部署，同时， 昇腾 950 超节点支持 FP8、MXFP8、MXFP4 等全系列数值精度格式 ，原生支持 Kimi K3 的 mxFP4 量化权重。",
+          "event_refs": [
+            "EV-0d5a32aca724d30e"
+          ],
+          "claim_ref": "CL-2c626d78e65c2afc",
+          "source_refs": [
+            "SA-d37a791cf113478a",
+            "SA-4fedd07f0df44eb4",
+            "SA-8cff4a3f890c6d93",
+            "SA-89ca130f6dc317fe",
+            "SA-8cbf1980971c0828"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+      "entityIds": [
+        "EN-2348f99874421257",
+        "EN-cbc62794911ff31b"
+      ]
+    }
+  ]
+}

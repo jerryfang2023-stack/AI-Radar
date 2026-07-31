@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-240389f4b730bad4",
@@ -34,6 +34,7 @@
       "EV-b334f46b11a68045",
       "EV-fe644da028a13217",
       "EV-75b9b997e9c7e5d1",
+      "EV-443e093ab54d0228",
       "EV-b8893d112f761a30",
       "EV-f79713437230562f",
       "EV-ca819cdf9008f342",
@@ -64,7 +65,7 @@
       "EN-630d75372b4d1eb5"
     ],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-07-31",
     "relationIds": [
       "REL2-94778ccfca07e1dd",
       "REL2-0f7e1be3ae6f4e69",
@@ -98,6 +99,7 @@
         "EV-75b9b997e9c7e5d1"
       ],
       "productsServices": [
+        "EV-443e093ab54d0228",
         "EV-2bbbe9f38c3d66f0",
         "EV-b8893d112f761a30",
         "EV-f79713437230562f",
@@ -115,6 +117,43 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-443e093ab54d0228",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-27",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "新AI基础设施瞄准推理",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-d48c78cd64971f21",
+          "EN-8009238460836f4b",
+          "EN-c1afeb742df44d71"
+        ]
+      },
       {
         "id": "EV-ad8e1754463695fd",
         "dataDate": "2026-07-29",
@@ -788,6 +827,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -940,6 +980,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-fc13165fbd0ef3de",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -947,6 +988,7 @@
         "EV-d46aa5935d9bb672",
         "EV-a61345459e796a19",
         "EV-0eef30387327e73f",
+        "EV-420a9ad09680d2dc",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
         "EV-7b2a272a891f54d1",
@@ -1043,7 +1085,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-147b4d06ea998b70",
@@ -1261,6 +1303,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-53253b5e23970958",
         "EV-57cf8e14d6994c1b",
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
@@ -1433,6 +1476,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-fafc300c25e9b0a7",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
         "EV-7a4d1e871dcd3b1f",
@@ -1669,6 +1713,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-65819e198c32566a",
         "EN-556c337c4f0b031e",
         "EN-4a1bc98a833e2bd7",
         "EN-2be663431f007250",
@@ -1851,6 +1896,7 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-6f7ac1823da81d2e",
         "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
@@ -1891,7 +1937,6 @@
         "EN-ba728f8ca730921f",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
-        "EN-6f7ac1823da81d2e",
         "EN-f65bb77682b83476",
         "EN-7c094d35e3b700c8",
         "EN-9a266f40d42cf217",
@@ -2182,6 +2227,9 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-7a0f201debe99f2b",
+        "EV-8887fb45a0398590",
+        "EV-876cfe17574eb2c1",
         "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-f79713437230562f",
@@ -2239,6 +2287,9 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87",
+        "EN-364df82f85761d58",
         "EN-8d57f84bd1847b24",
         "EN-febedfcafee9d610",
         "EN-0bd85984211bd173",
@@ -2300,7 +2351,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -2348,6 +2399,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-3ec034d25ba6a710",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
         "EV-08f736f61f2b46f3",
@@ -2422,6 +2474,7 @@
         "EN-56ee86045cfb0ddd",
         "EN-cbc62794911ff31b",
         "EN-a614180064f7ef60",
+        "EN-1706429cbf67f1c9",
         "EN-c3983a4111660712",
         "EN-3a7bd3e2360a3d29",
         "EN-6c7575a43005188a"
@@ -2437,7 +2490,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-industry-technology",
@@ -2532,6 +2585,7 @@
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
         "EV-bfa090c78227abf8",
+        "EV-443e093ab54d0228",
         "EV-0f440082086c02df",
         "EV-6ce069b1845f5a52",
         "EV-4f36e494d9281522",
@@ -2582,6 +2636,9 @@
         "EN-76a9a8a6e2f1a47b",
         "EN-047364b9be67f665",
         "EN-7ad3f3203e5d717e",
+        "EN-d48c78cd64971f21",
+        "EN-8009238460836f4b",
+        "EN-c1afeb742df44d71",
         "EN-275b0f4a4023d91c",
         "EN-18f0900d6c487f59",
         "EN-916a98f0fa2a39af",
@@ -2623,7 +2680,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -3079,6 +3136,111 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-3fe7a823934149e7",
+      "snapshotKey": "3fe7a823934149e7",
+      "snapshotId": "HWS-b3d3c6227609413d",
+      "eventId": "EV-443e093ab54d0228",
+      "eventIds": [
+        "EV-443e093ab54d0228"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "AI Rackscale Solution / Helios AI Rackscale Solution / AI Infrastructure Targets Inference",
+      "subject": "AMD",
+      "productNames": [
+        "AI Rackscale Solution",
+        "Helios AI Rackscale Solution",
+        "AI Infrastructure Targets Inference"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8f25699d27abb87f"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-d0204835fa977435",
+          "fact_type": "product",
+          "observed_at": "2026-07-27T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-d48c78cd64971f21",
+            "EN-8009238460836f4b",
+            "EN-c1afeb742df44d71"
+          ],
+          "product_names": [
+            "AI Rackscale Solution",
+            "Helios AI Rackscale Solution",
+            "AI Infrastructure Targets Inference"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "AMD has introduced the Helios AI Rackscale Solution, its latest AI infrastructure platform built around the AMD Instinct MI455X GPUs and 6th Gen AMD EPYC “Venice” processors, targeting hyperscale AI inference, enterprise AI and high-performance computing (HPC).",
+          "event_refs": [
+            "EV-443e093ab54d0228"
+          ],
+          "claim_ref": "CL-9a370139c36dce87",
+          "source_refs": [
+            "SA-53aeb784e096f6e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-8f25699d27abb87f",
+          "fact_type": "product",
+          "observed_at": "2026-07-27T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-d48c78cd64971f21",
+            "EN-8009238460836f4b",
+            "EN-c1afeb742df44d71"
+          ],
+          "product_names": [
+            "AI Rackscale Solution",
+            "Helios AI Rackscale Solution",
+            "AI Infrastructure Targets Inference"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "To simplify AI software development, the company has also introduced ROCm.ai, an AI-assisted GPU programming platform that integrates with coding tools such as Claude, Codex and Cursor.",
+          "event_refs": [
+            "EV-443e093ab54d0228"
+          ],
+          "claim_ref": "CL-6893cb9d42e1103c",
+          "source_refs": [
+            "SA-53aeb784e096f6e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://electronicsforu.com/news/new-ai-infrastructure-targets-inference",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-d48c78cd64971f21",
+        "EN-8009238460836f4b",
+        "EN-c1afeb742df44d71"
+      ]
+    },
     {
       "id": "HWC-5011ab43f9121e5e",
       "snapshotKey": "5011ab43f9121e5e",

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-52fc33ae4d101a5d",
@@ -24,6 +24,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-1fe7328d2c69693f",
       "EV-2ffbe4560e69992a",
       "EV-ae736eb124d7163a",
       "EV-ee9a1c99fe7054d6",
@@ -43,7 +44,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-20",
-    "lastSeen": "2026-07-13",
+    "lastSeen": "2026-07-31",
     "relationIds": [
       "REL2-6be506e2b049f516",
       "REL2-7ac7dc8cf5020f51",
@@ -57,6 +58,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-1fe7328d2c69693f",
         "EV-2ffbe4560e69992a",
         "EV-ae736eb124d7163a",
         "EV-ee9a1c99fe7054d6",
@@ -69,6 +71,30 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-1fe7328d2c69693f",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-30",
+        "eventType": "pricing_change",
+        "eventTypeLabel": "定价变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI全面进入中国定价模式，将其最实惠的GPT-5.6模型价格下调80%",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-2ee49ef51a776e2c",
+          "EN-7d3194f79e645c42",
+          "EN-52fc33ae4d101a5d"
+        ]
+      },
       {
         "id": "EV-2ffbe4560e69992a",
         "dataDate": "2026-07-13",
@@ -259,6 +285,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
@@ -301,6 +328,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1fe7328d2c69693f",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -317,6 +345,7 @@
         "EV-272c5c798bc95d9d",
         "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
+        "EV-c7a6bf51c3723b39",
         "EV-5ec22cf9a1fb59d4",
         "EV-b0dec1e885a601fe",
         "EV-243e73016576fa43",
@@ -437,6 +466,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -510,6 +540,7 @@
         "TX-use_case-research_science",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
+        "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -540,7 +571,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     }
   ],
   "relationships": [
@@ -672,6 +703,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-53253b5e23970958",
         "EV-57cf8e14d6994c1b",
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
@@ -844,6 +876,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-fafc300c25e9b0a7",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
         "EV-7a4d1e871dcd3b1f",
@@ -1080,6 +1113,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-65819e198c32566a",
         "EN-556c337c4f0b031e",
         "EN-4a1bc98a833e2bd7",
         "EN-2be663431f007250",
@@ -1262,6 +1296,7 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-6f7ac1823da81d2e",
         "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
@@ -1302,7 +1337,6 @@
         "EN-ba728f8ca730921f",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
-        "EN-6f7ac1823da81d2e",
         "EN-f65bb77682b83476",
         "EN-7c094d35e3b700c8",
         "EN-9a266f40d42cf217",
@@ -1592,6 +1626,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-2ef56a158898ae73",
         "EV-a4fe78df6ccd63c8",
         "EV-3eb44a239ebef4b0",
         "EV-5f2acbfb8f54fd59",
@@ -1694,7 +1729,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-technology-multimodal",
@@ -1710,6 +1745,7 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-fafc300c25e9b0a7",
         "EV-d1d36268ff74be0e",
         "EV-58457ebde013a438",
         "EV-6bac0bf442887889",
@@ -1758,6 +1794,7 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-6f7ac1823da81d2e",
         "EN-43a340bb75b45f02",
         "EN-5388bc10736a0eff",
         "EN-febedfcafee9d610",
@@ -1774,7 +1811,6 @@
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
-        "EN-6f7ac1823da81d2e",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
         "EN-96eebba49dbbf422",
@@ -1811,7 +1847,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-technology-long_context",

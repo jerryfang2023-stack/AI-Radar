@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-11740cc8809aec7a",
+    "name": "Situational Awareness",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c195952efffa9a60",
+      "EV-fc13165fbd0ef3de"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-30",
+    "lastSeen": "2026-07-31",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-c195952efffa9a60"
+      ],
+      "deployments": [
+        "EV-fc13165fbd0ef3de"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c195952efffa9a60",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-31",
+        "eventType": "financial_performance",
+        "eventTypeLabel": "财务表现",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "情境感知的缺失",
+        "displayTags": [],
+        "entityIds": [
+          "EN-11740cc8809aec7a",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-fc13165fbd0ef3de",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-30",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
+        "displayTags": [],
+        "entityIds": [
+          "EN-11740cc8809aec7a",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

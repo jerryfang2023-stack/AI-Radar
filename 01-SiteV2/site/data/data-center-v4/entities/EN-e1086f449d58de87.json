@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-e1086f449d58de87",
+    "name": "Gemini Robotics 2",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7a0f201debe99f2b"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-robotics_automation",
+      "TX-technology-on_device"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-31",
+    "lastSeen": "2026-07-31",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-7a0f201debe99f2b"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7a0f201debe99f2b",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-31",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google DeepMind 发布 Gemini Robotics 2，包含三款实体 AI 模型用于全身控制、灵巧操作与多机器人协作",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-e1086f449d58de87"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-eb881f5de456b59a",
+        "EV-fcf3c464260b6730",
+        "EV-869c9ea96c58873d",
+        "EV-9fa9822969d3c3fd",
+        "EV-cafe435ddd007821",
+        "EV-434dcf1813a84ead",
+        "EV-f059fd80d668c6bc",
+        "EV-e7b228c1b6b54c6a",
+        "EV-57d3b7aa1a2f0fda",
+        "EV-234ad54940674bf6",
+        "EV-8540958262148517",
+        "EV-f2551f5cc8e2715e",
+        "EV-5a9fe80f8e4ae066",
+        "EV-e4fec8a00b416d12",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-7a0f201debe99f2b",
+        "EV-8887fb45a0398590",
+        "EV-876cfe17574eb2c1",
+        "EV-6bac0bf442887889",
+        "EV-c7e1e920e54bb364",
+        "EV-f79713437230562f",
+        "EV-2bbbe9f38c3d66f0",
+        "EV-03d40407042d7986",
+        "EV-7f92b7e410ed08f1",
+        "EV-b76705cd8461925f",
+        "EV-03ab7d0b40d1e5b5",
+        "EV-d4278191ae11f198",
+        "EV-ed272c57e1513d3f",
+        "EV-6833305504174bb1",
+        "EV-73da0805f2a2705a",
+        "EV-345c8a2cc00fe8ca",
+        "EV-a69dd82a0512a294",
+        "EV-c844ddabb8528896",
+        "EV-c5a59cb4cc9d7e8e",
+        "EV-d1e8407177e11fdc",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-303b418c63895ba6",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-87d662ff5c6f05f4",
+        "EV-49751dfc7d2f6d6c",
+        "EV-66338f5fb682617e",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-c834a9d33a86373c",
+        "EV-24a536bc53a87050",
+        "EV-3f8ba5855b64dd1a",
+        "EV-7da59380bb30e76a",
+        "EV-67f32771d69084d6",
+        "EV-df3f5cf6bc985a9c",
+        "EV-1587a760d81451be",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-7ef08ef63597d47c",
+        "EN-4e0a97cb956fb1c6",
+        "EN-8f71c4871a160172",
+        "EN-b51b27d89f9ea747",
+        "EN-96eebba49dbbf422",
+        "EN-8d4321d936320802",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-3b39ea849059759f",
+        "EN-bbdefa2950f49882",
+        "EN-3cce50ffb12f1a69",
+        "EN-7f3b46226f059ca9",
+        "EN-2fef5ec9ee75cc2e",
+        "EN-3e14bbbb0445c2de",
+        "EN-7c5d04104b1d34e7",
+        "EN-72138e570e5103e2",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87",
+        "EN-364df82f85761d58",
+        "EN-8d57f84bd1847b24",
+        "EN-febedfcafee9d610",
+        "EN-0bd85984211bd173",
+        "EN-240389f4b730bad4",
+        "EN-8c9ab5b09bf138fc",
+        "EN-f53212e480f217e1",
+        "EN-593d0361124f348f",
+        "EN-843e746333671ab1",
+        "EN-a96df57737b74def",
+        "EN-e2c64fbbaf48eeb2",
+        "EN-68dce3237e10d795",
+        "EN-9b07ac3374166b76",
+        "EN-0e6e48aba1669631",
+        "EN-d77c36c05230024c",
+        "EN-be548deba4a093d7",
+        "EN-9c8ae69b84f21a2e",
+        "EN-f0da91960830b394",
+        "EN-505ff8a27618ef39",
+        "EN-c51e27d8efcff21f",
+        "EN-dbd6a2f6ddb95ca7",
+        "EN-954dc5d6516f127c",
+        "EN-e07654c7cc29acbd",
+        "EN-e3b1bf3dab957ffe",
+        "EN-cbc62794911ff31b",
+        "EN-a1b0d8a938903dc7",
+        "EN-29e1f755865493a8",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-4d8ee3ec190ebf35",
+        "EN-994f9b7ac2d11473",
+        "EN-30081094f2a8c83d",
+        "EN-4e7e886400fe6a83",
+        "EN-75fe8aaf5a7e3a7e",
+        "EN-6fcba5d96a4fadfd",
+        "EN-0d049cd1e9f619f9",
+        "EN-7f6333102da9e8bd",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-7d3194f79e645c42",
+        "EN-94ff75465b1afa65",
+        "EN-42375a8003f17c95",
+        "EN-171fa23d27b5894b",
+        "EN-80ea42a231357d12",
+        "EN-0a7411a215b0fa5b",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "fdeIds": [
+        "FDE-a9fc583eb4065d4d",
+        "FDE-dadf0e9572889d3d"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-8ec8f237534254df",
+        "HW-b13c3131fc20fe83",
+        "HW-155f566cfd988f5e",
+        "HW-cb9cc06cadda488b",
+        "HW-0ebffabe51a60966",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-a15da1b52d939967",
+        "EV-736404028b8ad33e",
+        "EV-d5c00f302e1f808c",
+        "EV-7263caa45bbf168e",
+        "EV-7a0f201debe99f2b",
+        "EV-79913a2e72f0269b",
+        "EV-a5efa57f3f744425",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-f7b60c0c63403f8c",
+        "EV-e28e134345ea5f99",
+        "EV-a736c6c64d106475",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0e2a68efc19bfbaa",
+        "EV-0597e07d7e73051a",
+        "EV-08f736f61f2b46f3",
+        "EV-02186ed7885f68fe",
+        "EV-8692dfde7c3ef5b5",
+        "EV-5613946bdd578a26",
+        "EV-848bdd13f319c516",
+        "EV-dd902b603e2e3dbc",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-a35b80cf9d171015",
+        "EN-48bebf25e5bd5aca",
+        "EN-dca6ec9510fc0176",
+        "EN-8147e6fed86d42c1",
+        "EN-968e2d5b08687bf4",
+        "EN-16fd849ce27f115b",
+        "EN-8d4321d936320802",
+        "EN-f5791343a13abc71",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87",
+        "EN-e21783b898b55a31",
+        "EN-7a2f2aafb073c74e",
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229",
+        "EN-bbdefa2950f49882",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b81c8201acfc7639",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
+        "EN-44a9bf3b11abea5c",
+        "EN-de6b71bf77ff4299",
+        "EN-c4ef31845ea79710",
+        "EN-96eebba49dbbf422",
+        "EN-ce635c4eabff5e4f",
+        "EN-f8ceb65dd1764cd4",
+        "EN-af3ceabbe048a291",
+        "EN-047364b9be67f665",
+        "EN-dd920a8cd166f486",
+        "EN-c70eca6b0f88f44d",
+        "EN-41dcc2d4951f337b",
+        "EN-1dc405a4cda895d0",
+        "EN-e07654c7cc29acbd",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-54ef981ab82586b5",
+        "EN-80d387ccb3289295",
+        "EN-0899bccb1b028521",
+        "EN-22797805eb45b722",
+        "EN-b7dac8ddfad3bea8",
+        "EN-6f7ac1823da81d2e",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-31"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-2fa9fc722d1d22f9",
+      "snapshotKey": "2fa9fc722d1d22f9",
+      "snapshotId": "HWS-825c2169bb6387ae",
+      "eventId": "EV-7a0f201debe99f2b",
+      "eventIds": [
+        "EV-7a0f201debe99f2b",
+        "EV-8887fb45a0398590"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "DeepMind / Gemini Robotics 2 / Gemini Robotics ER 2",
+      "subject": "Google DeepMind",
+      "productNames": [
+        "DeepMind",
+        "Gemini Robotics 2",
+        "Gemini Robotics ER 2"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-bb706705b10bf383"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-85aa0e443edb43c2",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T17:20:50.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-4d09c69c19f5f67b",
+            "EN-e1086f449d58de87"
+          ],
+          "product_names": [
+            "DeepMind",
+            "Gemini Robotics 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Google DeepMind has released Gemini Robotics 2 , the intelligence layer for its next generation of robots.",
+          "event_refs": [
+            "EV-7a0f201debe99f2b"
+          ],
+          "claim_ref": "CL-824523486c4b7c42",
+          "source_refs": [
+            "SA-6436d40ab638ade0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-bb706705b10bf383",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T23:12:07.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-4d09c69c19f5f67b",
+            "EN-364df82f85761d58"
+          ],
+          "product_names": [
+            "DeepMind",
+            "Gemini Robotics ER 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 31 日消息，谷歌 DeepMind 昨日（7 月 30 日）发布博文，宣布推出 Gemini Robotics ER 2 模型， 是其面向机器人的最强具身推理（embodied reasoning）模型。",
+          "event_refs": [
+            "EV-8887fb45a0398590"
+          ],
+          "claim_ref": "CL-01047086f6bfac89",
+          "source_refs": [
+            "SA-c04e7cbf1504a155"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-e1086f449d58de87",
+        "EN-364df82f85761d58"
+      ]
+    }
+  ]
+}

@@ -113,7 +113,7 @@ const BOILERPLATE_TEXT = /^(?:most popular|loading the next article|error loadin
 const INFORMATIONAL_TITLE = /^(?:how\b|what\b|why\b|when\b|where\b|guide\b|cost\b|the cost\b)|\b(?:essential|complete|ultimate)\s+(?:guide|handbook)\b|\bcost to implement\b/iu;
 const TRUNCATED_OR_NON_EVENT_TITLE = /(?:…|\.\.\.)|^(?:show hn:|ask hn:|launch hn:|open[- ]source\b|github\b|youtube\b|ep\s+\d+\b|hype\b|you need\b|frontier ai labs\b|if you\b)|\b(?:roadmap|playbook|handbook)\b.*\b(?:engineer|engineering|deployment)\b/iu;
 const COMMUNITY_DISCOVERY_URL = /^https?:\/\/(?:www\.)?(?:facebook\.com\/groups\/|reddit\.com\/|news\.ycombinator\.com\/|linkedin\.com\/|youtube\.com\/|youtu\.be\/|podcasters\.spotify\.com\/|x\.com\/)/iu;
-const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|\b(?:role explained|job opening|careers page|marketplace listing|case studies index)\b/iu;
+const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|^\d{4}年\d{1,2}月\d+\s*家.{0,30}(?:融资|初创)|^(?:情境感知的缺失|the missing context awareness)$|\b(?:role explained|job opening|careers page|marketplace listing|case studies index|TLDR)\b|(?:真正含义|what .{0,40} means)$/iu;
 const QUESTION_HEADLINE = /^(?:(?:can|could|will|would|is|are|do|does|did|should|has|have)\b|.{0,40}(?:能否|是否|会不会|可否)).*[?？]$/iu;
 const GENERIC_INDEX_TITLE = /^(?:newsroom|enterprise ai news)(?:\s*(?:[\\|｜:—-])\s*.*)?$|^funding breaking news and press releases(?:\s+from\s+.*)?$|^(?:新闻室(?:\s*[\\|｜:—-]\s*.*)?|企业\s*AI\s*新闻|商业新闻融资快讯与新闻稿)$/iu;
 const GENERIC_ROUNDUP_TITLE = /^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
@@ -225,11 +225,22 @@ function publicEventSourceTitleIssue(title) {
   return "";
 }
 
-function modelAssistedEventEligibility(raw, title, eventType) {
+function modelAssistedEventEligibility(raw, title, eventType, dataDate = "") {
   const sourceType = cleanString(raw.source_type).toLocaleLowerCase();
   if ((RESEARCH_CONTAINER_TITLE.test(title) || sourceType === "research")
       && !["research_result", "standard_specification"].includes(eventType)) {
     return { accepted: false, reason: "research_or_report_container_not_event_source" };
+  }
+  const publishedDate = cleanString(raw.published_at).slice(0, 10);
+  const captureDate = cleanString(dataDate).slice(0, 10);
+  if (/^\d{4}-\d{2}-\d{2}$/u.test(publishedDate) && /^\d{4}-\d{2}-\d{2}$/u.test(captureDate)) {
+    const ageDays = Math.floor(
+      (Date.parse(`${captureDate}T00:00:00.000Z`) - Date.parse(`${publishedDate}T00:00:00.000Z`))
+      / 86_400_000,
+    );
+    if (ageDays > 7) {
+      return { accepted: false, reason: "model_assist_source_outside_daily_window" };
+    }
   }
   return { accepted: true, reason: "" };
 }
@@ -1409,7 +1420,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const modelClaimCandidate = (acceptedAssistByRaw.get(rawId) || []).find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
     const proposedModelClaim = modelClaimCandidate?.proposal?.claims?.find((claim) => EVENT_RULES.some(([eventType]) => eventType === claim.event_type));
     const proposedModelEligibility = proposedModelClaim
-      ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type)
+      ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date)
       : { accepted: true, reason: "" };
     const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted
       ? { eventType: proposedModelClaim.event_type, pattern: /$^/u }

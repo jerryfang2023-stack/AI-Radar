@@ -7,6 +7,7 @@ import {
   buildSourceIntake,
   hasActiveHistoricalDuplicate,
   loadSourceIntakeEntries,
+  mergeSourceIntakes,
   readSourceIntake,
   SOURCE_INTAKE_VERSION,
   sourceIntakePath,
@@ -99,6 +100,39 @@ test("historical duplicate gate ignores provider hits already merged before Raw 
     duplicate_status: "duplicate",
     duplicate_of: "01-SiteV2/content/01-raw/originals/2026-07-29/source.json",
   }), true);
+});
+
+test("structured source intakes merge supplemental market sources without changing identity", () => {
+  const base = {
+    schema_version: SOURCE_INTAKE_VERSION,
+    data_date: "2026-07-31",
+    generated_at: "2026-07-31T01:00:00.000Z",
+    source_artifacts: [{ source_artifact_id: "SA-global" }],
+    raw_documents: [{
+      raw_id: "RAW-global",
+      source_artifact_id: "SA-global",
+      intake_diagnostics: { eligible_for_v4_extraction: true },
+    }],
+  };
+  const supplemental = {
+    schema_version: SOURCE_INTAKE_VERSION,
+    data_date: "2026-07-31",
+    generated_at: "2026-07-31T02:00:00.000Z",
+    source_artifacts: [{ source_artifact_id: "SA-cn" }],
+    raw_documents: [{
+      raw_id: "RAW-cn",
+      source_artifact_id: "SA-cn",
+      intake_diagnostics: { eligible_for_v4_extraction: false },
+    }],
+  };
+
+  const merged = mergeSourceIntakes(base, supplemental);
+  assert.deepEqual(merged.counts, {
+    source_artifacts: 2,
+    raw_documents: 2,
+    eligible_documents: 1,
+  });
+  assert.equal(merged.generated_at, supplemental.generated_at);
 });
 
 test("source snapshots are reused immutably and content changes get a stable versioned path", () => {

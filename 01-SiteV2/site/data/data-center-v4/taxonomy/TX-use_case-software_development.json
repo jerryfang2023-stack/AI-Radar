@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "node": {
     "id": "TX-use_case-software_development",
@@ -33,6 +33,7 @@
       "EV-75b9b997e9c7e5d1",
       "EV-b2e374d54b10b9af",
       "EV-bfa090c78227abf8",
+      "EV-443e093ab54d0228",
       "EV-0f440082086c02df",
       "EV-6ce069b1845f5a52",
       "EV-4f36e494d9281522",
@@ -83,6 +84,9 @@
       "EN-76a9a8a6e2f1a47b",
       "EN-047364b9be67f665",
       "EN-7ad3f3203e5d717e",
+      "EN-d48c78cd64971f21",
+      "EN-8009238460836f4b",
+      "EN-c1afeb742df44d71",
       "EN-275b0f4a4023d91c",
       "EN-18f0900d6c487f59",
       "EN-916a98f0fa2a39af",
@@ -124,7 +128,7 @@
       "HW-033a5b73cdc3f4be"
     ],
     "firstSeen": "2026-03-30",
-    "lastSeen": "2026-07-29"
+    "lastSeen": "2026-07-31"
   },
   "events": [
     {
@@ -1641,6 +1645,127 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-443e093ab54d0228",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "新AI基础设施瞄准推理",
+      "originalTitle": "New AI Infrastructure Targets Inference",
+      "subject": "AMD",
+      "action": "product_release",
+      "object": "Helios AI Rackscale Solution",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-d48c78cd64971f21",
+        "EN-8009238460836f4b",
+        "EN-c1afeb742df44d71"
+      ],
+      "entityNames": [
+        "AMD",
+        "AI Rackscale Solution",
+        "Helios AI Rackscale Solution",
+        "AI Infrastructure Targets Inference"
+      ],
+      "productName": "AI Rackscale Solution",
+      "products": [
+        {
+          "name": "AI Rackscale Solution",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Helios AI Rackscale Solution",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Infrastructure Targets Inference",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://electronicsforu.com/news/new-ai-infrastructure-targets-inference",
+      "publisher": "electronicsforu.com"
+    },
+    {
       "id": "EV-0f440082086c02df",
       "dataDate": "2026-07-26",
       "date": "2026-07-26",
@@ -2275,7 +2400,7 @@
           "name": "ZCode",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -2348,16 +2473,12 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Science on Tuesday",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists",
@@ -2588,9 +2709,7 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/428.htm",
@@ -3725,6 +3844,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-2ef56a158898ae73",
         "EV-6f433ccff3dce657",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -3877,6 +3997,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-fc13165fbd0ef3de",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-abb190c09b08067c",
@@ -3884,6 +4005,7 @@
         "EV-d46aa5935d9bb672",
         "EV-a61345459e796a19",
         "EV-0eef30387327e73f",
+        "EV-420a9ad09680d2dc",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
         "EV-7b2a272a891f54d1",
@@ -3980,7 +4102,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -4024,6 +4146,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-492029b381c06283",
         "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
@@ -4066,6 +4189,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1fe7328d2c69693f",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
         "EV-2aa470d66b93391d",
@@ -4082,6 +4206,7 @@
         "EV-272c5c798bc95d9d",
         "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
+        "EV-c7a6bf51c3723b39",
         "EV-5ec22cf9a1fb59d4",
         "EV-b0dec1e885a601fe",
         "EV-243e73016576fa43",
@@ -4202,6 +4327,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-c195952efffa9a60",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -4275,6 +4401,7 @@
         "TX-use_case-research_science",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
+        "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -4305,7 +4432,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-382635c9325bf327",
@@ -4617,9 +4744,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4644,6 +4769,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-e8bc5b0eebef5813",
         "EV-f55d16df5b5fecb2",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
@@ -4656,6 +4782,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-4c750d338325c55f",
+        "EV-876cfe17574eb2c1",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -4806,18 +4934,16 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
-        "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -4825,7 +4951,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-7d4e02d31a7eb0f8",
@@ -5055,6 +5181,7 @@
         "EV-b334f46b11a68045",
         "EV-fe644da028a13217",
         "EV-75b9b997e9c7e5d1",
+        "EV-443e093ab54d0228",
         "EV-b8893d112f761a30",
         "EV-f79713437230562f",
         "EV-ca819cdf9008f342",
@@ -5085,7 +5212,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-7c3482959a6cdd3f",
@@ -5274,9 +5401,7 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5416,20 +5541,15 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-76a9a8a6e2f1a47b",
@@ -5575,6 +5695,69 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-d48c78cd64971f21",
+      "name": "AI Rackscale Solution",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-443e093ab54d0228"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-27",
+      "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "EN-8009238460836f4b",
+      "name": "Helios AI Rackscale Solution",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-443e093ab54d0228"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-27",
+      "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "EN-c1afeb742df44d71",
+      "name": "AI Infrastructure Targets Inference",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-443e093ab54d0228"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-27",
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-275b0f4a4023d91c",
@@ -5985,6 +6168,7 @@
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
+        "EV-fafc300c25e9b0a7",
         "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
         "EV-56626f2604aa1e30",
@@ -6016,7 +6200,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-0db2d631b42da133",
@@ -6150,7 +6334,9 @@
       "name": "DeepSeek",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "深度求索"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -6160,6 +6346,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-fafc300c25e9b0a7",
         "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
@@ -6200,7 +6387,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-c27c48199bb1e14b",
@@ -6256,6 +6443,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
+        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -6270,6 +6458,8 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-7a0f201debe99f2b",
+        "EV-8887fb45a0398590",
         "EV-6b0106ef4a79df05",
         "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
@@ -6294,15 +6484,18 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-cybersecurity",
+        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
+        "TX-technology-reasoning",
         "TX-technology-speech_audio",
         "TX-use_case-content_creation",
         "TX-technology-image_generation"
@@ -6315,7 +6508,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "EN-085598c00f2aaccf",
@@ -6845,6 +7038,111 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-3fe7a823934149e7",
+      "snapshotKey": "3fe7a823934149e7",
+      "snapshotId": "HWS-b3d3c6227609413d",
+      "eventId": "EV-443e093ab54d0228",
+      "eventIds": [
+        "EV-443e093ab54d0228"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "AI Rackscale Solution / Helios AI Rackscale Solution / AI Infrastructure Targets Inference",
+      "subject": "AMD",
+      "productNames": [
+        "AI Rackscale Solution",
+        "Helios AI Rackscale Solution",
+        "AI Infrastructure Targets Inference"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8f25699d27abb87f"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-d0204835fa977435",
+          "fact_type": "product",
+          "observed_at": "2026-07-27T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-d48c78cd64971f21",
+            "EN-8009238460836f4b",
+            "EN-c1afeb742df44d71"
+          ],
+          "product_names": [
+            "AI Rackscale Solution",
+            "Helios AI Rackscale Solution",
+            "AI Infrastructure Targets Inference"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "AMD has introduced the Helios AI Rackscale Solution, its latest AI infrastructure platform built around the AMD Instinct MI455X GPUs and 6th Gen AMD EPYC “Venice” processors, targeting hyperscale AI inference, enterprise AI and high-performance computing (HPC).",
+          "event_refs": [
+            "EV-443e093ab54d0228"
+          ],
+          "claim_ref": "CL-9a370139c36dce87",
+          "source_refs": [
+            "SA-53aeb784e096f6e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-8f25699d27abb87f",
+          "fact_type": "product",
+          "observed_at": "2026-07-27T00:00:00.000Z",
+          "subject_entity_id": "EN-240389f4b730bad4",
+          "subject_name": "AMD",
+          "product_entity_ids": [
+            "EN-d48c78cd64971f21",
+            "EN-8009238460836f4b",
+            "EN-c1afeb742df44d71"
+          ],
+          "product_names": [
+            "AI Rackscale Solution",
+            "Helios AI Rackscale Solution",
+            "AI Infrastructure Targets Inference"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "To simplify AI software development, the company has also introduced ROCm.ai, an AI-assisted GPU programming platform that integrates with coding tools such as Claude, Codex and Cursor.",
+          "event_refs": [
+            "EV-443e093ab54d0228"
+          ],
+          "claim_ref": "CL-6893cb9d42e1103c",
+          "source_refs": [
+            "SA-53aeb784e096f6e5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://electronicsforu.com/news/new-ai-infrastructure-targets-inference",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-d48c78cd64971f21",
+        "EN-8009238460836f4b",
+        "EN-c1afeb742df44d71"
+      ]
+    },
     {
       "id": "HWC-bf5c25cc614ae3f3",
       "snapshotKey": "bf5c25cc614ae3f3",

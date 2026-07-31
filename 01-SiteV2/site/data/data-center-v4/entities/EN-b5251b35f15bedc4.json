@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T13:54:09.673Z",
-    "latestDataDate": "2026-07-30",
-    "currentDate": "2026-07-30",
-    "eventCount": 1717,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-31T08:45:07.859Z",
+    "latestDataDate": "2026-07-31",
+    "currentDate": "2026-07-31",
+    "eventCount": 1742,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-b5251b35f15bedc4",
@@ -29,6 +29,7 @@
       "EV-f55d16df5b5fecb2",
       "EV-eec1e6857f0e0b2b",
       "EV-fd21441fb6e143c3",
+      "EV-fafc300c25e9b0a7",
       "EV-653cbce2ccc79f8b",
       "EV-deaa5d80d1166e9f",
       "EV-56626f2604aa1e30",
@@ -60,7 +61,7 @@
       "EN-b57c95289680078c"
     ],
     "firstSeen": "2026-05-07",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-07-31",
     "relationIds": [
       "REL2-043910685537ede7",
       "REL2-6099c03394d4a343",
@@ -81,6 +82,7 @@
         "EV-fd21441fb6e143c3"
       ],
       "productsServices": [
+        "EV-fafc300c25e9b0a7",
         "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
         "EV-56626f2604aa1e30",
@@ -100,6 +102,41 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-fafc300c25e9b0a7",
+        "dataDate": "2026-07-31",
+        "date": "2026-07-31",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "国家发改委：将加快《人工智能法》立法进程",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态"
+          }
+        ],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-b5251b35f15bedc4"
+        ]
+      },
       {
         "id": "EV-653cbce2ccc79f8b",
         "dataDate": "2026-07-29",
@@ -724,6 +761,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-53253b5e23970958",
         "EV-57cf8e14d6994c1b",
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
@@ -896,6 +934,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-fafc300c25e9b0a7",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
         "EV-7a4d1e871dcd3b1f",
@@ -1132,6 +1171,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-65819e198c32566a",
         "EN-556c337c4f0b031e",
         "EN-4a1bc98a833e2bd7",
         "EN-2be663431f007250",
@@ -1314,6 +1354,7 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
+        "EN-6f7ac1823da81d2e",
         "EN-30397d0cfc1b0e29",
         "EN-6fcba5d96a4fadfd",
         "EN-449a66e865c071ec",
@@ -1354,7 +1395,6 @@
         "EN-ba728f8ca730921f",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
-        "EN-6f7ac1823da81d2e",
         "EN-f65bb77682b83476",
         "EN-7c094d35e3b700c8",
         "EN-9a266f40d42cf217",
@@ -1648,7 +1688,6 @@
         "EV-4c0af31f1399ea8c",
         "EV-e1a4bc40db4a9d8f",
         "EV-d5f276ad6b2ac9de",
-        "EV-0d5a32aca724d30e",
         "EV-bfa090c78227abf8",
         "EV-0f440082086c02df",
         "EV-2634b786bde9fb8e",
@@ -1700,8 +1739,6 @@
         "EN-86ca9936019f1039",
         "EN-4094a2b7125c7564",
         "EN-8f71c4871a160172",
-        "EN-436364a46513cdf3",
-        "EN-e5904fa438fcd5bf",
         "EN-76a9a8a6e2f1a47b",
         "EN-7ad3f3203e5d717e",
         "EN-275b0f4a4023d91c",
@@ -1753,7 +1790,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1778,6 +1815,7 @@
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
         "EV-bfa090c78227abf8",
+        "EV-443e093ab54d0228",
         "EV-0f440082086c02df",
         "EV-6ce069b1845f5a52",
         "EV-4f36e494d9281522",
@@ -1828,6 +1866,9 @@
         "EN-76a9a8a6e2f1a47b",
         "EN-047364b9be67f665",
         "EN-7ad3f3203e5d717e",
+        "EN-d48c78cd64971f21",
+        "EN-8009238460836f4b",
+        "EN-c1afeb742df44d71",
         "EN-275b0f4a4023d91c",
         "EN-18f0900d6c487f59",
         "EN-916a98f0fa2a39af",
@@ -1869,7 +1910,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-technology-multimodal",
@@ -1885,6 +1926,7 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-fafc300c25e9b0a7",
         "EV-d1d36268ff74be0e",
         "EV-58457ebde013a438",
         "EV-6bac0bf442887889",
@@ -1933,6 +1975,7 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-6f7ac1823da81d2e",
         "EN-43a340bb75b45f02",
         "EN-5388bc10736a0eff",
         "EN-febedfcafee9d610",
@@ -1949,7 +1992,6 @@
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
-        "EN-6f7ac1823da81d2e",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
         "EN-96eebba49dbbf422",
@@ -1986,7 +2028,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-technology-vision_language",

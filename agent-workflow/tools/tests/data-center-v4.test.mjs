@@ -740,6 +740,22 @@ test("index pages, question headlines, roundups, and reaction articles cannot be
   }
 });
 
+test("TLDR, listicle, and context-only titles cannot become commercial events", () => {
+  const titles = [
+    "Anthropic 开放权重，Kimi 发布 K3 权重，MAI Cyber 模型 TLDR",
+    "2026年7月50家顶级AI融资初创公司",
+    "情境感知的缺失",
+    "AI 工厂供应链再平衡的真正含义",
+  ];
+  for (const title of titles) {
+    assert.equal(eventSourceEligibility(
+      { clean_text: "Source text with a candidate event.", raw_qc_decision: "pass" },
+      { source_url: "https://example.com/source" },
+      title,
+    ).accepted, false, title);
+  }
+});
+
 test("research and report containers cannot promote incidental historical events", () => {
   assert.deepEqual(modelAssistedEventEligibility(
     { source_type: "web" },
@@ -754,6 +770,15 @@ test("research and report containers cannot promote incidental historical events
     "HANDBOOK.md 基准测试：长政策文档无法可靠约束AI智能体行为",
     "research_result",
   ).accepted, true);
+  assert.deepEqual(modelAssistedEventEligibility(
+    { source_type: "web", published_at: "2026-07-16T00:00:00.000Z" },
+    "Thinking Machines launched Inkling",
+    "model_release",
+    "2026-07-31",
+  ), {
+    accepted: false,
+    reason: "model_assist_source_outside_daily_window",
+  });
 });
 
 test("secondary rumor wording in the source lead requires primary confirmation", () => {
