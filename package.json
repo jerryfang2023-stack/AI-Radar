@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "npm run test:data-center && npm run test:data-center-site",
+    "test": "npm run test:workspace && npm run test:data-center && npm run test:data-center-site",
+    "test:workspace": "node --test agent-workflow/tools/tests/local-workspace-audit.test.mjs",
+    "audit:workspace": "node agent-workflow/tools/audit-local-workspace.mjs --json",
+    "cleanup:workspace": "node agent-workflow/tools/audit-local-workspace.mjs --apply --json",
     "record:action": "node agent-workflow/tools/record-action-run.mjs",
     "summarize:actions": "node agent-workflow/tools/write-action-retrospective.mjs",
     "collect:community-intelligence": "node 01-SiteV2/site/scripts/collect-community-intelligence.mjs",
