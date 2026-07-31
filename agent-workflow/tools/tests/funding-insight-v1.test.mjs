@@ -364,6 +364,13 @@ test("每个已验证融资商业事件都必须被一张有效融资卡覆盖",
     verifiedFundingEventCardCoverageProblems([verified], [invalid]),
     ["EV-1:verified_funding_event_without_valid_card"],
   );
+  const evidenceTampered = validCard();
+  evidenceTampered.company.evidence_refs[0].quote = "tampered quote";
+  assert.deepEqual(
+    verifiedFundingEventCardCoverageProblems([verified], [evidenceTampered]),
+    ["EV-1:verified_funding_event_without_valid_card"],
+    "coverage must reject cards whose evidence hashes no longer match",
+  );
 });
 
 test("融资卡聚合的全部来源事件都视为已完成，不重复调度", () => {

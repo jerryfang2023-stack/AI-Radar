@@ -1,35 +1,52 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T03:22:16.437Z",
-  "date": "2026-07-30",
-  "action": "Repair clean-checkout Data Center staleness check",
+  "generated_at": "2026-07-31T10:42:19.102Z",
+  "date": "2026-07-31",
+  "action": "Audit and repair today's V4 development",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual",
+  "trigger": "user-request",
   "status": "success",
-  "summary": "Only compare filesystem ordering when relevant production paths are changed in the worktree, preventing a clean pull from appearing stale",
+  "summary": "Audited today's China market, funding, event eligibility, quality gate, and workspace cleanup changes and repaired five systemic defects",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/assert-daily-production-chain.mjs",
-    "agent-workflow/tools/tests/data-center-v4.test.mjs"
+    "agent-workflow/tools/funding-insight-v1-utils.mjs",
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/assert-china-market-v1.mjs",
+    "agent-workflow/tools/guanlan-monitor-quality-gate.mjs",
+    "agent-workflow/tools/audit-local-workspace.mjs",
+    ".github/workflows/daily-persistent-assets-pr.yml"
   ],
   "outputs": [],
   "checks": [
-    "test:data-center 150 passed",
-    "exact pre-commit gate passed on merged 2026-07-30 assets",
-    "git diff --check"
+    "test:data-center 191 pass",
+    "test:workspace 7 pass",
+    "test:data-center-site 99 pass",
+    "assert:funding-insights:full 226 cards",
+    "assert:china-market dated pass",
+    "policy and version gates pass"
   ],
   "issues": [
-    "Git checkout write order made a healthy committed manifest look older than raw snapshots"
+    "funding card coverage skipped evidence proof",
+    "developer package filter only covered 0.x",
+    "China gate read entire unified intake",
+    "Raw QC core metrics were tautological",
+    "workspace cleanup ignored ignored files and batch targets"
   ],
   "risks": [
-    "Dirty in-progress production paths still use ordering checks and remain release-blocking"
+    "China content market coverage is still zero for 2026-07-31"
   ],
   "lessons": [
-    "Filesystem mtimes are not production chronology on a clean checkout"
+    "Persist source and market scope in unified Intake",
+    "Validate evidence proof in coverage gates",
+    "Destructive cleanup requires one explicit target"
   ],
   "reusable_rules": [
-    "Do not trigger recollection from clean-checkout timestamp order"
+    "No source weights or ranking",
+    "Original source title only",
+    "no editorial headline",
+    "CN gate selects subset",
+    "not entire batch"
   ],
   "retired_flags": [],
   "notes": []

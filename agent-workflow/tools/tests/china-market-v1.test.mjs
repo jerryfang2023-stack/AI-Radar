@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
@@ -7,6 +8,7 @@ import {
   chinaMarketOrganizationAliases,
   loadChinaMarketConfig,
   mergeChinaMarketSources,
+  selectChinaMarketIntakeDocuments,
   scopeChinaMarketItems,
 } from "../lib/china-market-v1.mjs";
 
@@ -72,4 +74,55 @@ test("China market scope is based on event content, not a Chinese publisher", ()
   assert.match(scoped.included[0].china_market_match_basis, /^china_entity:Tencent:/u);
   assert.equal(scoped.excluded.length, 1);
   assert.equal("market_region" in scoped.excluded[0], false);
+});
+
+test("China market intake selection reads only the CN subset from a unified daily intake", () => {
+  const selected = selectChinaMarketIntakeDocuments([
+    {
+      raw_id: "RAW-global",
+      market_scope: {
+        source_registry_id: "",
+        source_region: "",
+        market_region: "",
+        china_market_match: false,
+        china_market_match_basis: "",
+      },
+    },
+    {
+      raw_id: "RAW-cn-source",
+      market_scope: {
+        source_registry_id: "cn-ithome-rss",
+        source_region: "CN",
+        market_region: "",
+        china_market_match: false,
+        china_market_match_basis: "",
+      },
+    },
+    {
+      raw_id: "RAW-cn-market",
+      market_scope: {
+        source_registry_id: "cn-company-official",
+        source_region: "CN",
+        market_region: "CN",
+        china_market_match: true,
+        china_market_match_basis: "china_entity:Example",
+      },
+    },
+  ]);
+
+  assert.deepEqual(selected.sourceDocuments.map((item) => item.raw_id), ["RAW-cn-source", "RAW-cn-market"]);
+  assert.deepEqual(selected.marketDocuments.map((item) => item.raw_id), ["RAW-cn-market"]);
+  assert.deepEqual(selected.invalidSourceDocuments, []);
+  assert.deepEqual(selected.invalidMarketDocuments, []);
+});
+
+test("the daily post-monitor handoff runs the dated China market gate", () => {
+  const workflow = fs.readFileSync(
+    path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"),
+    "utf8",
+  );
+  assert.match(
+    workflow,
+    /Confirm V4 source-intake handoff[\s\S]*npm run assert:china-market -- --date="\$\{RUN_DATE\}"/u,
+  );
 });

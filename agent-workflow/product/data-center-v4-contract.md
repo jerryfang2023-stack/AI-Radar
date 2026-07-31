@@ -39,7 +39,7 @@ The public interface is defined by `data-center-v4.schema.json`. Stable identifi
 
 - A Claim must quote an exact span of the normalized private evidence body resolved through `RawDocument.body_ref`.
 - A CanonicalEvent must reference at least one Claim and one SourceArtifact.
-- `CanonicalEvent.display_title_zh` must be the exact `RawDocument.title_zh` associated with one of the event's sources, or the unchanged `title_original` when that source title is already Chinese. Event-field summaries and generated editorial headlines are not valid title fallbacks.
+- `CanonicalEvent.display_title_zh` must be the exact `RawDocument.title_zh` associated with one of the event's sources, or the unchanged `title_original` when that source title is already Chinese or is itself a versioned technical title. Event-field summaries and generated editorial headlines are not valid title fallbacks. A versioned technical title remains subject to event-source eligibility and cannot turn a developer-package release into a commercial event.
 - CanonicalEvent eligibility requires source-bounded evidence that AI is the direct subject of the event. AI-themed publishers, feeds, discovery labels, queries, navigation text, and incidental page mentions do not qualify a record.
 - Generic vertical-industry “智慧 / 大模型” publicity without an identifiable AI-industry actor, product identity, market action, or reusable technical release is routed to QA rather than normalized as a CanonicalEvent.
 - Administrative support notices centered on 模型券、算力券、数据券、补贴申领或兑付平台 are routed to QA unless the source separately discloses a concrete AI product transaction, procurement contract, financing, or customer deployment event.

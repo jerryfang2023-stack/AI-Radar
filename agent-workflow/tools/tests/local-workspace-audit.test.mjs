@@ -61,6 +61,7 @@ test("apply removes only a clean merged worktree inside the managed root", (t) =
     `--repo=${repository}`,
     `--managed-root=${managedRoot}`,
     "--apply",
+    `--target=${worktree}`,
     "--json",
   ], { cwd: projectRoot, encoding: "utf8", windowsHide: true });
 
@@ -82,6 +83,7 @@ test("apply refuses to remove a dirty managed worktree", (t) => {
     `--repo=${repository}`,
     `--managed-root=${managedRoot}`,
     "--apply",
+    `--target=${worktree}`,
     "--json",
   ], { cwd: projectRoot, encoding: "utf8", windowsHide: true });
 
@@ -105,6 +107,7 @@ test("audit invoked inside a linked worktree still identifies the primary reposi
     `--repo=${worktree}`,
     `--managed-root=${managedRoot}`,
     "--apply",
+    `--target=${worktree}`,
     "--json",
   ], { cwd: worktree, encoding: "utf8", windowsHide: true });
 
@@ -133,6 +136,7 @@ test("apply preserves a clean managed worktree with unique commits", (t) => {
     `--repo=${repository}`,
     `--managed-root=${managedRoot}`,
     "--apply",
+    `--target=${worktree}`,
     "--json",
   ], { cwd: projectRoot, encoding: "utf8", windowsHide: true });
 
@@ -144,4 +148,51 @@ test("apply preserves a clean managed worktree with unique commits", (t) => {
   assert.ok(candidate.blockers.includes("unique_commits"));
   assert.deepEqual(report.removed, []);
   assert.equal(fs.existsSync(path.join(worktree, "result.md")), true);
+});
+
+test("apply requires one explicit worktree target", (t) => {
+  const { sandbox, repository, managedRoot } = createRepository();
+  t.after(() => fs.rmSync(sandbox, { recursive: true, force: true }));
+  const worktree = path.join(managedRoot, "completed-task");
+  git(repository, ["worktree", "add", "-b", "completed-task", worktree, "main"]);
+
+  const result = spawnSync(process.execPath, [
+    runner,
+    `--repo=${repository}`,
+    `--managed-root=${managedRoot}`,
+    "--apply",
+    "--json",
+  ], { cwd: projectRoot, encoding: "utf8", windowsHide: true });
+
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /--target is required/u);
+  assert.equal(fs.existsSync(worktree), true);
+});
+
+test("ignored files prevent worktree removal", (t) => {
+  const { sandbox, repository, managedRoot } = createRepository();
+  t.after(() => fs.rmSync(sandbox, { recursive: true, force: true }));
+  fs.writeFileSync(path.join(repository, ".gitignore"), ".env\n", "utf8");
+  git(repository, ["add", ".gitignore"]);
+  git(repository, ["commit", "-m", "ignore local env"]);
+  const worktree = path.join(managedRoot, "completed-task");
+  git(repository, ["worktree", "add", "-b", "completed-task", worktree, "main"]);
+  fs.writeFileSync(path.join(worktree, ".env"), "SECRET=preserve-me\n", "utf8");
+
+  const result = spawnSync(process.execPath, [
+    runner,
+    `--repo=${repository}`,
+    `--managed-root=${managedRoot}`,
+    "--apply",
+    `--target=${worktree}`,
+    "--json",
+  ], { cwd: projectRoot, encoding: "utf8", windowsHide: true });
+
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  const report = JSON.parse(result.stdout);
+  const candidate = report.worktrees.find((item) => item.path === worktree);
+  assert.equal(candidate.removable, false);
+  assert.ok(candidate.blockers.includes("ignored_files"));
+  assert.deepEqual(report.removed, []);
+  assert.equal(fs.readFileSync(path.join(worktree, ".env"), "utf8"), "SECRET=preserve-me\n");
 });

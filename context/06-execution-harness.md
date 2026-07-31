@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v4-execution-harness
-last_updated: 2026-07-29
+last_updated: 2026-07-31
 priority: current
 ---
 
@@ -56,3 +56,22 @@ npm run assert:versions
 
 The release is not ready if removing all active V3 paths breaks collection,
 V4 build, application projection, supervision, or publication.
+
+## Local worktree hygiene
+
+Use `npm run audit:workspace -- --repo=<primary-repository>` for a read-only
+inventory of linked worktrees. The report protects the primary and current
+worktrees and lists dirty files, ignored files, merge state, and unique commits.
+
+Removal is always one target at a time:
+
+```powershell
+npm run cleanup:workspace -- --repo=<primary-repository> --target=<absolute-worktree-path>
+```
+
+The cleanup command removes only a registered worktree inside the managed
+`_worktrees/<repository>` root when it is clean, contains no ignored local
+files, is fully merged, and has no commits ahead of `origin/main` (or `main`
+when the remote ref is unavailable). It never removes the primary worktree,
+the current worktree, an external worktree, or a target with recoverable local
+state.
