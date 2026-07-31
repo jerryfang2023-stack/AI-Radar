@@ -1,0 +1,451 @@
+{
+  "schema_version": "CHINA-MARKET-SOURCE-REGISTRY-V1.0",
+  "updated_at": "2026-07-31",
+  "owner": "Data Center Source Ingestion",
+  "market_region": "CN",
+  "purpose": "中国 AI 市场来源注册表。仅记录来源身份、来源类别与采集接口，不表达来源等级、可信权重、价值排序或算法加成。",
+  "classification_policy": {
+    "rule": "来源类别只用于区分发布主体和采集边界；任何来源都必须经过现有 SourceArtifact -> RawDocument -> Claim -> CanonicalEvent 事实链。",
+    "ranking_or_weighting": "forbidden",
+    "allowed_use": [
+      "source_identity",
+      "source_category_filter",
+      "collection_routing",
+      "provenance_trace"
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "cn-cac",
+      "name": "国家互联网信息办公室",
+      "source_category": "government_regulator",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.cac.gov.cn/",
+      "publisher_domains": [
+        "cac.gov.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "generative_ai_filing",
+        "algorithm_filing",
+        "policy_regulation"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-miit",
+      "name": "工业和信息化部",
+      "source_category": "government_regulator",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.miit.gov.cn/",
+      "publisher_domains": [
+        "miit.gov.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "policy_regulation",
+        "industry_policy",
+        "standard_specification"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-ccgp",
+      "name": "中国政府采购网",
+      "source_category": "government_procurement",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.ccgp.gov.cn/",
+      "publisher_domains": [
+        "ccgp.gov.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "tender",
+        "award",
+        "procurement_contract"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-ggzy",
+      "name": "全国公共资源交易平台",
+      "source_category": "government_procurement",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.ggzy.gov.cn/",
+      "publisher_domains": [
+        "ggzy.gov.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "tender",
+        "award",
+        "procurement_contract"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-sse-disclosure",
+      "name": "上海证券交易所上市公司公告",
+      "source_category": "listed_company_disclosure",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/",
+      "publisher_domains": [
+        "sse.com.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "listed_company_announcement",
+        "capital_investment",
+        "financial_performance"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-szse-disclosure",
+      "name": "深圳证券交易所上市公司公告",
+      "source_category": "listed_company_disclosure",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.szse.cn/disclosure/listed/notice/index.html",
+      "publisher_domains": [
+        "szse.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "listed_company_announcement",
+        "capital_investment",
+        "financial_performance"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-cninfo-disclosure",
+      "name": "巨潮资讯",
+      "source_category": "listed_company_disclosure",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.cninfo.com.cn/",
+      "publisher_domains": [
+        "cninfo.com.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "listed_company_announcement",
+        "capital_investment",
+        "financial_performance"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-caict",
+      "name": "中国信息通信研究院",
+      "source_category": "research_institution",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.caict.ac.cn/",
+      "publisher_domains": [
+        "caict.ac.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "industry_report",
+        "standard_specification",
+        "policy_research"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-deepseek-news",
+      "name": "DeepSeek 官方动态",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://api-docs.deepseek.com/news/",
+      "publisher_domains": [
+        "api-docs.deepseek.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "model_release",
+        "api_update",
+        "pricing_change"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-qwen-blog",
+      "name": "通义千问官方博客",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://qwenlm.github.io/blog/",
+      "publisher_domains": [
+        "qwenlm.github.io"
+      ],
+      "language": "mixed",
+      "collection_scope": [
+        "model_release",
+        "product_release",
+        "research_result"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-tencent-hunyuan",
+      "name": "腾讯混元",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://hunyuan.tencent.com/",
+      "publisher_domains": [
+        "hunyuan.tencent.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "model_release",
+        "product_release",
+        "developer_platform"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-baidu-qianfan",
+      "name": "百度智能云千帆",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://qianfan.cloud.baidu.com/",
+      "publisher_domains": [
+        "qianfan.cloud.baidu.com",
+        "cloud.baidu.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "product_release",
+        "api_update",
+        "customer_case"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-huawei-pangu",
+      "name": "华为云盘古大模型",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.huaweicloud.com/product/pangu.html",
+      "publisher_domains": [
+        "huaweicloud.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "product_release",
+        "industry_solution",
+        "customer_case"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-volcengine-doubao",
+      "name": "火山引擎豆包大模型",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.volcengine.com/product/doubao",
+      "publisher_domains": [
+        "volcengine.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "model_release",
+        "product_release",
+        "customer_case",
+        "pricing_change"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-zhipu-bigmodel",
+      "name": "智谱开放平台",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.bigmodel.cn/",
+      "publisher_domains": [
+        "bigmodel.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "model_release",
+        "product_release",
+        "api_update"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-moonshot-kimi",
+      "name": "Kimi 开放平台",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://platform.kimi.com/docs/overview",
+      "publisher_domains": [
+        "platform.kimi.com",
+        "moonshot.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "model_release",
+        "product_release",
+        "api_update"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-minimax",
+      "name": "MiniMax 官方网站",
+      "source_category": "company_official",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.minimaxi.com/",
+      "publisher_domains": [
+        "minimaxi.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "model_release",
+        "product_release",
+        "api_update"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-modelscope",
+      "name": "魔搭社区",
+      "source_category": "developer_community",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://modelscope.cn/headlines",
+      "publisher_domains": [
+        "modelscope.cn"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "open_source_release",
+        "developer_ecosystem",
+        "model_release"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-deepseek-v3-releases",
+      "name": "DeepSeek-V3 GitHub Releases",
+      "source_category": "company_official",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://github.com/deepseek-ai/DeepSeek-V3/releases.atom",
+      "match_url_prefixes": [
+        "https://github.com/deepseek-ai/DeepSeek-V3/"
+      ],
+      "publisher_domains": [
+        "github.com"
+      ],
+      "language": "mixed",
+      "collection_scope": [
+        "model_release",
+        "open_source_release"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-qwen3-releases",
+      "name": "Qwen3 GitHub Releases",
+      "source_category": "company_official",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://github.com/QwenLM/Qwen3/releases.atom",
+      "match_url_prefixes": [
+        "https://github.com/QwenLM/Qwen3/"
+      ],
+      "publisher_domains": [
+        "github.com"
+      ],
+      "language": "mixed",
+      "collection_scope": [
+        "model_release",
+        "open_source_release"
+      ],
+      "enabled_default": false
+    },
+    {
+      "source_id": "cn-ithome-rss",
+      "name": "IT之家",
+      "source_category": "industry_media",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://www.ithome.com/rss/",
+      "publisher_domains": [
+        "ithome.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "industry_news",
+        "product_release",
+        "hardware"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-qbitai-rss",
+      "name": "量子位",
+      "source_category": "industry_media",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://www.qbitai.com/feed",
+      "publisher_domains": [
+        "qbitai.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "industry_news",
+        "model_release",
+        "startup_funding"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-36kr-rss",
+      "name": "36氪",
+      "source_category": "industry_media",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://36kr.com/feed",
+      "publisher_domains": [
+        "36kr.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "startup_funding",
+        "company_strategy",
+        "industry_news"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-sspai-rss",
+      "name": "少数派",
+      "source_category": "industry_media",
+      "interface_type": "rss",
+      "endpoint_or_url": "https://sspai.com/feed",
+      "publisher_domains": [
+        "sspai.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "product_experience",
+        "developer_tool",
+        "industry_news"
+      ],
+      "enabled_default": true
+    },
+    {
+      "source_id": "cn-jiqizhixin",
+      "name": "机器之心",
+      "source_category": "industry_media",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.jiqizhixin.com/",
+      "publisher_domains": [
+        "jiqizhixin.com"
+      ],
+      "language": "zh-CN",
+      "collection_scope": [
+        "industry_news",
+        "research_result",
+        "model_release"
+      ],
+      "enabled_default": true
+    }
+  ]
+}
