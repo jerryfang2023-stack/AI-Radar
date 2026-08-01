@@ -1,6 +1,6 @@
 interface:
-  display_name: "Funding Insight Generator"
-  short_description: "Build evidence-bounded funding research cards."
-  default_prompt: "Use $guanlan-funding-insight-generator to turn verified funding events into secondary-researched, DeepSeek-generated Funding Insight cards."
+  display_name: "Guanlan Funding Insight Generator"
+  short_description: "Build evidence-bounded funding research cards"
+  default_prompt: "Use $guanlan-funding-insight-generator to research verified funding events and produce fail-closed application cards."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

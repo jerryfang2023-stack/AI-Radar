@@ -6,6 +6,19 @@ import path from "node:path";
 export const RULE_FILES = ["SKILL.md", "MEMORY.md"];
 export const RULE_DIRS = ["agents", "evals", "examples", "references"];
 export const SKIP_DIRS = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", ".cache", "dist", "build"]);
+export const GUANLAN_PROMPT_CONTRACT = "GPT-5.6-SKILL-V1.0";
+
+const MOJIBAKE_PATTERN = /(?:\uFFFD|\u9225|\u942d\u30e8\u7611|\u74a7\u52ea\u9a87|\u6d93\u20ac|\u6de7roduct|\u6e1epresentative|\u6ec4\u6e70|\u935b\?|\u935f\u55d5\u7b1f|\u9359\u6a3a\u5bf2|\u9352\u3086\u67c7|\u6ae4\u93b1|\u6fb6\u0444\u0101|\u9368\u5b27)/u;
+const SECTION_PATTERNS = {
+  inputs: /^##\s+(?:Required Reads|Required Sources|Inputs|Input|Scope)\s*$/imu,
+  workflow: /^##\s+(?:Workflow|Execution|Method|Current flow)\s*$/imu,
+  boundaries: /^##\s+(?:Boundary|Boundaries|Rules|Policy|Hard Rules|Prohibited|Stop Rules|Constraints|Evidence Boundary|Evidence Rules|Lane Boundaries)\s*$/imu,
+  output: /^##\s+(?:Output|Outputs|Output Format|Reporting|Findings)\s*$/imu,
+  completion: /^##\s+(?:Done When|Completion Contract|Validation|Verification|Pass Criteria)\s*$/imu,
+};
+const ASK_OR_STOP_PATTERN = /\b(?:ask|stop|quarantine|reject|pause|fail(?:ed|ure)?)\b|leave[^\n]{0,80}\bempty\b|route[^\n]{0,80}\bQA\b/iu;
+const AUTHORIZATION_PATTERN = /authoriz|approval|owning[^\n]{0,50}workflow|do not[^\n]{0,60}(?:publish|commit|push|deploy|write outside)|(?:publication|deployment|external (?:model )?call)[^\n]{0,60}(?:require|only|allowed)/iu;
+const NON_INFERENCE_PATTERN = /\b(?:do not|never|must not|cannot)\b|leave[^\n]{0,80}\bempty\b|only from|only when/iu;
 
 export function defaultPaths(root = process.cwd()) {
   return {
@@ -15,6 +28,7 @@ export function defaultPaths(root = process.cwd()) {
     repoRuntimeSkillDir: path.join(root, ".agents", "skills"),
     registryPath: path.join(root, "agent-workflow", "skills", "skill-registry.md"),
     versionPath: path.join(root, "agent-workflow", "skills", "skill-store-version.json"),
+    promptEvalPath: path.join(root, "agent-workflow", "skills", "skill-trigger-evals.json"),
   };
 }
 
@@ -251,6 +265,113 @@ export function isCurrentLike(status = "") {
   return /current|supporting|governance/i.test(status);
 }
 
+export function isActiveGovernedSkill(status = "") {
+  return Boolean(String(status || "").trim()) && !/retired|dormant|candidate|deprecated|archived/i.test(status);
+}
+
+function skillBody(content = "") {
+  return String(content).replace(/^\uFEFF?---\r?\n[\s\S]*?\r?\n---\r?\n?/u, "");
+}
+
+export function evaluateSkillPromptContract(skill) {
+  const errors = [];
+  const skillText = readText(skill.skillPath).replace(/\r\n/gu, "\n");
+  const body = skillBody(skillText);
+  const description = String(skill.frontmatter?.description || parseFrontmatter(skillText).description || "").trim();
+
+  if (!/^Use when\b/iu.test(description)) {
+    errors.push("description must front-load the trigger with 'Use when'");
+  }
+  if (!/\bDo not use\b/iu.test(description)) {
+    errors.push("description must name an adjacent or unsupported 'Do not use' case");
+  }
+  if (MOJIBAKE_PATTERN.test(skillText)) errors.push("SKILL.md contains likely mojibake or replacement text");
+
+  for (const [section, pattern] of Object.entries(SECTION_PATTERNS)) {
+    if (!pattern.test(body)) errors.push(`prompt contract missing ${section} section`);
+  }
+  if (!NON_INFERENCE_PATTERN.test(body)) errors.push("prompt contract needs an explicit non-inference boundary");
+  if (!ASK_OR_STOP_PATTERN.test(body)) errors.push("prompt contract needs explicit ask-or-stop behavior");
+  if (!AUTHORIZATION_PATTERN.test(body)) errors.push("prompt contract needs an explicit action or authorization boundary");
+
+  return errors;
+}
+
+function openAiInterfaceField(openAiYaml, field) {
+  const lines = String(openAiYaml || "").replace(/\r\n/gu, "\n").split("\n");
+  let inInterface = false;
+  for (const line of lines) {
+    if (/^interface:\s*$/u.test(line)) {
+      inInterface = true;
+      continue;
+    }
+    if (inInterface && /^\S/u.test(line)) break;
+    if (!inInterface) continue;
+    const match = line.match(new RegExp(`^ {2}${field}:\\s*(.+?)\\s*$`, "u"));
+    if (!match) continue;
+    return match[1].replace(/^(["'])(.*)\1$/u, "$2");
+  }
+  return "";
+}
+
+export function evaluateSkillPromptEvalInventory(skills, promptEvalPath) {
+  const errors = [];
+  const inventory = readJson(promptEvalPath, null);
+  const activeNames = skills
+    .filter((skill) => isActiveGovernedSkill(skill.guanlan?.status))
+    .map((skill) => skill.name);
+  const requiredCases = ["direct", "indirect", "incomplete", "negative", "edge"];
+  if (!activeNames.length) return { errors, covered: 0, total: 0 };
+  if (!inventory || !Array.isArray(inventory.skills)) {
+    return { errors: ["skill-trigger-evals.json missing or invalid"], covered: 0, total: activeNames.length };
+  }
+  if (inventory.schema_version !== 1) {
+    errors.push("skill-trigger-evals.json schema_version must be 1");
+  }
+  if (inventory.prompt_contract !== GUANLAN_PROMPT_CONTRACT) {
+    errors.push(`skill-trigger-evals.json prompt_contract must be ${GUANLAN_PROMPT_CONTRACT}`);
+  }
+  const expectedCases = {
+    direct: "trigger",
+    indirect: "trigger",
+    incomplete: "trigger_and_resolve_or_ask",
+    negative: "do_not_trigger",
+    edge: "trigger_and_enforce_boundary",
+  };
+  for (const [key, expected] of Object.entries(expectedCases)) {
+    if (inventory.case_expectations?.[key] !== expected) {
+      errors.push(`skill-trigger-evals.json case_expectations.${key} must be ${expected}`);
+    }
+  }
+  const seen = new Set();
+  const rows = new Map();
+  for (const row of inventory.skills) {
+    const name = String(row?.skill || "").trim();
+    if (!name) {
+      errors.push("skill-trigger-evals.json contains a row without skill");
+      continue;
+    }
+    if (seen.has(name)) errors.push(`skill-trigger-evals.json duplicates ${name}`);
+    seen.add(name);
+    rows.set(name, row);
+  }
+  let covered = 0;
+  for (const name of activeNames) {
+    const row = rows.get(name);
+    if (!row) {
+      errors.push(`skill-trigger-evals.json missing ${name}`);
+      continue;
+    }
+    const missing = requiredCases.filter((key) => !String(row[key] || "").trim());
+    if (missing.length) errors.push(`skill-trigger-evals.json ${name} missing ${missing.join(", ")}`);
+    else covered += 1;
+  }
+  for (const name of rows.keys()) {
+    if (!activeNames.includes(name)) errors.push(`skill-trigger-evals.json has unmanaged skill ${name}`);
+  }
+  return { errors, covered, total: activeNames.length };
+}
+
 export function evaluateSkillSemantics(skill) {
   const errors = [];
   const skillText = readText(skill.skillPath).replace(/\r\n/gu, "\n");
@@ -261,9 +382,11 @@ export function evaluateSkillSemantics(skill) {
     errors.push("active rule assets still claim a RAW-V3 contract; use the current RawDocument/V4 contract");
   }
   if (/\uFFFD/u.test(ruleText)) errors.push("rule assets contain Unicode replacement characters");
+  if (MOJIBAKE_PATTERN.test(ruleText)) errors.push("rule assets contain likely mojibake or replacement text");
   if (skill.name === "follow-builders" && /OpenClaw|Telegram|Resend|crontab|CLAUDE_SKILL_DIR|~\/\.follow-builders/iu.test(skillText)) {
     errors.push("WaveSight follow-builders contains generic agent onboarding, delivery, or scheduler rules");
   }
+  errors.push(...evaluateSkillPromptContract(skill));
   return errors;
 }
 
@@ -276,10 +399,13 @@ export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
   const repoRuntimeSkillDir = paths.repoRuntimeSkillDir || path.join(paths.root || process.cwd(), ".agents", "skills");
   const requireCompatibilityStore = options.requireCompatibilityStore
     ?? process.env.GUANLAN_REQUIRE_SKILL_STORE === "1";
-  const currentSkills = skills.filter((skill) => isCurrentLike(skill.guanlan.status));
+  const currentSkills = skills.filter((skill) => isActiveGovernedSkill(skill.guanlan.status));
   const laneOwners = skills.filter((skill) => /lane owner/i.test(String(skill.guanlan.status || "")));
+  const promptEvalPath = paths.promptEvalPath || path.join(paths.projectSkillDir, "skill-trigger-evals.json");
+  const promptEvalResult = evaluateSkillPromptEvalInventory(skills, promptEvalPath);
 
   if (!skills.length) errors.push("No governed Guanlan skills found.");
+  errors.push(...promptEvalResult.errors);
   if (!/^\d+\.\d+\.\d+$/.test(String(version.version || ""))) {
     errors.push("skill-store-version.json version must be semver");
   }
@@ -295,10 +421,11 @@ export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
     for (const field of ["lane", "status", "responsibility", "upstream", "downstream", "gates"]) {
       if (!meta[field]) errors.push(`${prefix}: metadata.guanlan.${field} missing`);
     }
-    if (isCurrentLike(meta.status)) {
+    if (isActiveGovernedSkill(meta.status)) {
       if (!skill.evalFiles.length) errors.push(`${prefix}: current skill needs evals/`);
       if (!skill.exampleFiles.length) errors.push(`${prefix}: current skill needs examples/`);
       if (meta.memory_required === true && !skill.hasMemory) errors.push(`${prefix}: memory_required=true but MEMORY.md missing`);
+      if (!exists(openAiYamlPath)) errors.push(`${prefix}: active governed skill needs agents/openai.yaml`);
       for (const error of evaluateSkillSemantics(skill)) errors.push(`${prefix}: ${error}`);
     }
     if (exists(openAiYamlPath)) {
@@ -310,9 +437,16 @@ export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
           errors.push(`${prefix}: agents/openai.yaml interface.${field} missing`);
         }
       }
+      const defaultPrompt = openAiInterfaceField(openAiYaml, "default_prompt");
+      if (!new RegExp(`\\$${skill.name}(?:\\b|$)`, "u").test(defaultPrompt)) {
+        errors.push(`${prefix}: agents/openai.yaml interface.default_prompt must mention $${skill.name}`);
+      }
       if (/\uFFFD/u.test(openAiYaml)) errors.push(`${prefix}: agents/openai.yaml contains invalid replacement characters`);
       if (!/^policy:\s*$(?:\n|.)*^ {2}allow_implicit_invocation:\s*(?:true|false)\s*$/mu.test(openAiYaml)) {
         errors.push(`${prefix}: agents/openai.yaml must declare policy.allow_implicit_invocation as true or false`);
+      }
+      if (isActiveGovernedSkill(meta.status) && !/^ {2}allow_implicit_invocation:\s*true\s*$/mu.test(openAiYaml)) {
+        errors.push(`${prefix}: active governed Skill must allow implicit discovery for indirect trigger cases`);
       }
     }
     const runtime = compareSkill(skill.name, {
@@ -343,6 +477,11 @@ export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
 
   const evalReady = currentSkills.filter((skill) => skill.evalFiles.length).length;
   const exampleReady = currentSkills.filter((skill) => skill.exampleFiles.length).length;
+  const promptReady = currentSkills.filter((skill) => evaluateSkillPromptContract(skill).length === 0).length;
+  const openAiMetadataReady = currentSkills.filter((skill) => exists(path.join(skill.dir, "agents", "openai.yaml"))).length;
+  const implicitDiscoveryReady = currentSkills.filter((skill) => /^ {2}allow_implicit_invocation:\s*true\s*$/mu.test(
+    readText(path.join(skill.dir, "agents", "openai.yaml")),
+  )).length;
   const memoryMissing = currentSkills.filter((skill) => skill.guanlan.memory_required === true && !skill.hasMemory);
   const syncDrift = runtimeRows.filter((row) => row.state !== "synced");
   const compatibilitySyncDrift = compatibilityRows.filter((row) => row.state !== "synced");
@@ -365,6 +504,11 @@ export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
       compatibilityRequired: requireCompatibilityStore,
       evalCoverage: currentSkills.length ? Math.round(evalReady / currentSkills.length * 100) : 0,
       exampleCoverage: currentSkills.length ? Math.round(exampleReady / currentSkills.length * 100) : 0,
+      promptContract: GUANLAN_PROMPT_CONTRACT,
+      promptContractCoverage: currentSkills.length ? Math.round(promptReady / currentSkills.length * 100) : 0,
+      openAiMetadataCoverage: currentSkills.length ? Math.round(openAiMetadataReady / currentSkills.length * 100) : 0,
+      implicitDiscoveryCoverage: currentSkills.length ? Math.round(implicitDiscoveryReady / currentSkills.length * 100) : 0,
+      promptEvalInventoryCoverage: promptEvalResult.total ? Math.round(promptEvalResult.covered / promptEvalResult.total * 100) : 0,
       memoryRequiredMissing: memoryMissing.length,
     },
     sync: runtimeRows,

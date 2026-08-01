@@ -1,9 +1,9 @@
 ---
 name: follow-builders
-description: Use inside WaveSight to curate and publish source-linked AI builder viewpoints for the independent First-Line Viewpoints lane. Do not use for generic digest onboarding or delivery setup, and never create Business Signal Claims, CanonicalEvents, tags, facets, or relationships from commentary.
+description: Use when curating or publishing source-linked AI builder viewpoints inside WaveSight's independent First-Line Viewpoints lane. Do not use for generic digest onboarding, delivery setup, factual Claims, CanonicalEvents, tags, facets, or relationships from commentary.
 metadata:
   guanlan:
-    version: "2.0.0"
+    version: "2.1.0"
     lane: "First-Line Viewpoints"
     status: "supporting skill"
     order: 90
@@ -40,11 +40,16 @@ Read only the files needed for the current run:
 
 ## Boundaries
 
+- Local source inspection and draft generation are allowed for a requested Builder viewpoint task. Browser/account access, publication, PR/merge, deployment, and external Vault writes require the owning workflow or explicit authorization.
 - Commentary is perspective evidence, not Business Signal evidence. It must not directly create Claims, CanonicalEvents, `RELATION-V2.1`, technical tags, facets, rankings, or recommendations.
 - A business fact discovered here must be recaptured from its original source and pass the V4 source, Claim, event, and integrity chain.
 - Do not create or modify schedules, messaging channels, personal configuration, credentials, or home-directory files. Use the repository's existing 16:10 Windows task and publisher.
 - Do not lower evidence or count gates to make a run pass.
 - If same-date production is active, report `waiting`; if required evidence is absent or contaminated, stop that item and report the earliest failing stage.
+
+## Output
+
+Produce source-linked builder viewpoint records for the owned daily file and generated person-timeline projection, plus item counts and the earliest failed stage when incomplete.
 
 ## Validation
 
@@ -57,4 +62,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-fol
 
 The second command is the production publisher and may create a PR/merge when explicitly requested by the operating workflow. For a local audit, prefer the data gate alone.
 
-Done means every published item has source identity, original URL, source date, Chinese primary text, consistent counts, and remains isolated from factual V4 tables.
+## Done When
+
+Finish when every published item has source identity, original URL, source date, Chinese primary text, consistent counts, and remains isolated from factual V4 tables.

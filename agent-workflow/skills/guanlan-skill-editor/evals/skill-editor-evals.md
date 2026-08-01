@@ -9,3 +9,9 @@
 7. Pass when `metadata.guanlan.version` changes only with a clear upgrade reason.
 8. Fail when the registry is hand-edited instead of regenerated from skill metadata.
 9. Pass when Data Center V4 is the factual authority and any V3 rule is explicitly bounded as compatibility-only; fail when a skill, checklist, or health action calls V3.3 the current cross-system conflict authority.
+10. Pass when trigger metadata begins with the user goal and a concrete `Do not use` neighbor; fail when activation depends on body-only prose or a generic role label.
+11. Pass when inputs, workflow, non-inference/stop rules, output, and observable completion are present; fail when a successful command or generated file is treated as completion.
+12. Pass when safe authorized local work proceeds without repeated permission prompts while external, destructive, costly, credential, publication, and scope-expanding actions have one clear boundary.
+13. Pass when direct, indirect, incomplete, negative-trigger, and edge-case requests are represented in evals or the full audit matrix.
+14. Fail when ordinary domain Skills copy GPT-5.6 API parameters, Pro mode, caching, or reasoning settings without owning that API surface and a measured need.
+15. Pass when every active governed Skill has valid `agents/openai.yaml` and its `default_prompt` explicitly mentions `$skill-name`; fail on missing metadata or mojibake.

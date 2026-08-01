@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "prompt_contract": "GPT-5.6-SKILL-V1.0",
+  "case_expectations": {
+    "direct": "trigger",
+    "indirect": "trigger",
+    "incomplete": "trigger_and_resolve_or_ask",
+    "negative": "do_not_trigger",
+    "edge": "trigger_and_enforce_boundary"
+  },
+  "skills": [
+    {
+      "skill": "follow-builders",
+      "direct": "用 follow-builders 把这篇 Builder 访谈整理为一线观点文章。",
+      "indirect": "这期播客里有开发者对 Agent 工具链的亲历判断，值得沉淀到一线观点。",
+      "incomplete": "整理这位 Builder 的观点，但还没提供来源链接。",
+      "negative": "把社区传闻直接写成 Data Center 的规范化事实。",
+      "edge": "把译文里的公司名、模型名和数字改得更顺口，即使无法回查原文。"
+    },
+    {
+      "skill": "guanlan-ai-hardware-data-projection",
+      "direct": "从已验收 Claim 生成 AI 硬件事实和时间快照。",
+      "indirect": "同一加速卡在两个季度的供货与性能字段需要可追溯对比。",
+      "incomplete": "补一张芯片卡片，但没有说明组件或 Claim。",
+      "negative": "处理一条与硬件无关的通用诉讼新闻。",
+      "edge": "只有 SourceArtifact 没有规范化 Claim，也先生成硬件事实。"
+    },
+    {
+      "skill": "guanlan-code-rule-auditor",
+      "direct": "审计本次改动的代码、规则、Skill 和运行链路，输出证据化问题清单。",
+      "indirect": "连续失败可能来自规则互相矛盾或死路径，请定位根因。",
+      "incomplete": "审一下代码，但没有给固定比较点。",
+      "negative": "发现问题后自动修复、提交并推送。",
+      "edge": "搜索命中一段旧文字，直接把它定性为当前运行缺陷。"
+    },
+    {
+      "skill": "guanlan-community-intelligence-monitor",
+      "direct": "监督今天的社区情报采集、筛选与发布状态。",
+      "indirect": "同日数据已经健康，但发布 PR 还在排队，请判断真正阻塞点。",
+      "incomplete": "修复社区监测，没有指定日期。",
+      "negative": "把社区帖子直接提升为 canonical Claim。",
+      "edge": "Chrome 不可用时伪造社区帖子正文以保证日报不空。"
+    },
+    {
+      "skill": "guanlan-daily-monitor",
+      "direct": "运行 2026-08-01 每日监测源采集并产出不可变快照和 SOURCE-INTAKE-V1。",
+      "indirect": "今天的源快照缺失，请重建采集层并报告证据供应。",
+      "incomplete": "跑一下每日监测，但没有目标日期。",
+      "negative": "根据现有 intake 生成 Claim、事件、日报页面并部署。",
+      "edge": "下游页面构建失败，因此重新抓取所有来源覆盖现有 RawDocument。"
+    },
+    {
+      "skill": "guanlan-daily-monitor-qc",
+      "direct": "对今天的监测输入做语义质量审计并给出可行动问题。",
+      "indirect": "核心来源几乎全是主页和列表页，判断是否存在低质量输入。",
+      "incomplete": "对可疑 Core 来源做语义质量审核，但未说明日期或数据集。",
+      "negative": "把 QC 结果作为发布必须通过的强制门禁。",
+      "edge": "一个页面展示问题触发整条采集和规范化链路重跑。"
+    },
+    {
+      "skill": "guanlan-data-center-supervisor",
+      "direct": "修复 2026-08-01 Data Center V4 全链路并运行完整性门禁。",
+      "indirect": "今天事件库发生断链，请定位最早责任阶段并修复。",
+      "incomplete": "修复 Data Center，但没有给日期或失败证据。",
+      "negative": "调整周报详情页的字体和间距。",
+      "edge": "为了通过门禁，直接补写一个没有来源的 Claim。"
+    },
+    {
+      "skill": "guanlan-data-integrity-gate",
+      "direct": "运行 Data Center 完整性门禁并输出阻断项和证据。",
+      "indirect": "事件能显示但无法回溯 Claim 和 SourceArtifact，请验证引用链。",
+      "incomplete": "检查数据是否正常，但没有给目标范围。",
+      "negative": "重新抓取每日监测来源。",
+      "edge": "当前数据不通过时临时降低门禁阈值让发布继续。"
+    },
+    {
+      "skill": "guanlan-event-normalizer",
+      "direct": "把已采集 RawDocument 规范化为 Claim 和 Event。",
+      "indirect": "多篇来源描述同一事件且部分字段冲突，需要去重并保留证据。",
+      "incomplete": "规范化这条消息，但主体身份不明确。",
+      "negative": "按商业价值给机会卡排序。",
+      "edge": "来源只写了‘AI 有重大突破’，仍生成精确实体和金额。"
+    },
+    {
+      "skill": "guanlan-fde-data-projection",
+      "direct": "从已验收 Claim 构建 FDE 观察和公司档案。",
+      "indirect": "集成交付、现场工程与客户成功字段散落在多条 Claim 中，需要可追溯投影。",
+      "incomplete": "补一个 FDE 案例，但没有提供 Claim ID。",
+      "negative": "根据模糊描述推断客户 ROI 和合同金额。",
+      "edge": "只有 Event 没有精确 Claim，也直接补齐商业成效字段。"
+    },
+    {
+      "skill": "guanlan-first-line-viewpoints-monitor",
+      "direct": "监督指定日期的一线观点采集、构建和发布链路。",
+      "indirect": "RSS 已更新但站点仍显示旧观点，请定位产物或发布阻塞。",
+      "incomplete": "修复一线观点，没有给日期。",
+      "negative": "采集并整理 Reddit 社区讨论。",
+      "edge": "报告文件存在但有效观点数为零，仍判定任务成功。"
+    },
+    {
+      "skill": "guanlan-funding-insight-generator",
+      "direct": "从规范化融资事件生成本周融资洞察卡。",
+      "indirect": "投资方字段混入顾问和合作方，需要依据 Claim 修正。",
+      "incomplete": "回填融资卡，但没有时间范围或历史回填授权。",
+      "negative": "创建新的 canonical 公司实体和来源事实。",
+      "edge": "只有搜索摘要没有正文，也生成精确轮次和融资金额。"
+    },
+    {
+      "skill": "guanlan-monitor-quality-gate",
+      "direct": "运行源输入质量预检，判断采集证据是否足以进入规范化。",
+      "indirect": "抓取任务成功但有效正文供应很低，请识别输入层问题。",
+      "incomplete": "运行硬证据供应门禁，但没有指定日期。",
+      "negative": "验证 canonical 标签是否符合 taxonomy。",
+      "edge": "一个外部 provider 暂时不可用，但已有证据健康，仍将全链路判为失败。"
+    },
+    {
+      "skill": "guanlan-monthly-business-structure-report",
+      "direct": "基于已验收数据撰写上月商业结构报告。",
+      "indirect": "这份月报的结构性判断缺少 Claim 引用，请审计并修订。",
+      "incomplete": "写月报，但没有指定月份。",
+      "negative": "生成周报或渲染月报 HTML 页面。",
+      "edge": "用一篇文章概括整个月的行业趋势，不披露样本限制。"
+    },
+    {
+      "skill": "guanlan-monthly-report-page-generator",
+      "direct": "把已验收月报 Markdown 渲染为站点页面并做视觉验证。",
+      "indirect": "月报内容已验收，但移动端表格溢出，需要修复页面呈现。",
+      "incomplete": "生成月报页面，但没有已验收源报告。",
+      "negative": "替作者补写月度商业判断和结论。",
+      "edge": "未经确认恢复之前明确删除的页面模块。"
+    },
+    {
+      "skill": "guanlan-opportunity-radar-updater",
+      "direct": "基于当前窗口的已验收证据重建机会地图和机会卡。",
+      "indirect": "机会矩阵中的多个单元格无法回溯来源，请修复证据连接。",
+      "incomplete": "更新机会雷达，但没有指定观察窗口。",
+      "negative": "修改公共导航或撰写日报正文。",
+      "edge": "发现一个新候选后未经审核直接发布为正式机会。"
+    },
+    {
+      "skill": "guanlan-skill-editor",
+      "direct": "按 GPT-5.6 最新提示词规范审计并更新观澜 Skill。",
+      "indirect": "同类任务持续失败，请把根因固化为可测试的 Skill 约束。",
+      "incomplete": "优化 Skill，但没有目标 Skill 或失败证据。",
+      "negative": "运行生产任务、推送代码并部署站点。",
+      "edge": "把 Responses API 的 reasoning、verbosity 等字段机械写进普通 SKILL.md。"
+    },
+    {
+      "skill": "guanlan-source-ingestion",
+      "direct": "采集并修复指定来源的 RawDocument，保留正文和来源证据。",
+      "indirect": "RawDocument 被摘要或导航文本污染，请修复源输入层。",
+      "incomplete": "采集这个 URL，但没有给目标日期。",
+      "negative": "判断事件重要性并生成商业结论。",
+      "edge": "来源正文缺失时凭搜索摘要编造正文以完成采集。"
+    },
+    {
+      "skill": "guanlan-taxonomy-governor",
+      "direct": "审计并分配当前事件的规范标签和 facets。",
+      "indirect": "旧标签别名仍出现在数据中，需要迁移到当前 taxonomy。",
+      "incomplete": "新增一个标签，但没有使用证据或定义。",
+      "negative": "按重要性给事件排序并选头条。",
+      "edge": "只有整页主题，没有精确 Claim，也给记录贴上细粒度实体标签。"
+    },
+    {
+      "skill": "guanlan-trend-radar-updater",
+      "direct": "重建指定日、周、月窗口的趋势雷达数据。",
+      "indirect": "趋势图缺少覆盖率与观察窗口披露，请修复聚合产物。",
+      "incomplete": "更新趋势，但没有指定周期。",
+      "negative": "撰写趋势判断、商业建议或投资推荐。",
+      "edge": "没有观测数据的日期按零值填充并据此判断下降趋势。"
+    },
+    {
+      "skill": "guanlan-typography-qc",
+      "direct": "检查指定页面的字体层级、密度和响应式排版。",
+      "indirect": "详情页 H1 过大并挤压首屏，请给出最小排版修复。",
+      "incomplete": "检查排版，但没有页面或截图。",
+      "negative": "审核数据正确性并重写业务文案。",
+      "edge": "视觉任务没有截图或渲染证据，也直接判定通过。"
+    },
+    {
+      "skill": "guanlan-weekly-business-change-radar",
+      "direct": "基于已验收证据撰写上一完整周的商业变化雷达。",
+      "indirect": "周报里有一个判断没有 Claim 支撑，请定位并改为证据化表达。",
+      "incomplete": "写周报，但目标周不明确。",
+      "negative": "把周报 Markdown 渲染为 HTML 页面。",
+      "edge": "把 Observation 或 Candidate 当作已确认事实写进结论。"
+    },
+    {
+      "skill": "guanlan-weekly-report-page-generator",
+      "direct": "把已验收周报 Markdown 渲染为站点页面并验证桌面与移动端。",
+      "indirect": "周报内容已通过，但线上页面仍是旧版本，请定位构建或发布问题。",
+      "incomplete": "生成周报页，但没有已验收源文件。",
+      "negative": "替报告作者生成商业判断和趋势结论。",
+      "edge": "内容门禁失败时仍渲染并发布页面。"
+    }
+  ]
+}

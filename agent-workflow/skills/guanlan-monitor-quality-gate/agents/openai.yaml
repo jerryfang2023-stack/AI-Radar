@@ -1,6 +1,6 @@
 interface:
-  display_name: "观澜监测预闸门"
-  short_description: "运行每日监测脚本评分、一次定向补采和 QC 交接。"
-  default_prompt: "Use $guanlan-monitor-quality-gate to evaluate one Guanlan daily-monitor run, allow at most one targeted refill when a documented threshold fails, block provider recollection or result padding, generate the quality report, and hand off to $guanlan-daily-monitor-qc."
+  display_name: "Guanlan Monitor Quality Gate"
+  short_description: "Decide whether captured evidence can enter the V4 build"
+  default_prompt: "Use $guanlan-monitor-quality-gate to evaluate one structured source-intake run without repeating collection or adding blockers."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

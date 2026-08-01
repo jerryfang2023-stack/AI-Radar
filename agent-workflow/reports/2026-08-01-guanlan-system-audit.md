@@ -15,7 +15,7 @@ The recurring daily-monitoring failure was not one defect. It was a chain of fou
 
 ## Skill audit
 
-All 23 governed skills were checked for trigger scope, current contract alignment, ownership overlap, eval/example coverage, mirror consistency, and semantic prompt debt.
+All 23 governed skills received an initial semantic scan for trigger scope, current contract alignment, ownership overlap, eval/example coverage, mirror consistency, and obvious prompt debt. This pass did not yet certify every Skill against a uniform GPT-5.6 prompt contract; that full normalization is recorded separately in `2026-08-01-guanlan-skill-gpt-5p6-audit.md`.
 
 - `follow-builders`: replaced a 520-line generic OpenClaw/Telegram/email/cron onboarding prompt with a repository-specific First-Line Viewpoints procedure. Scheduling and delivery remain owned by WaveSight scripts.
 - `guanlan-source-ingestion`: moved active responsibility and eval wording from the retired raw label to the current `RAW-V4.0` / RawDocument contract.
@@ -24,7 +24,7 @@ All 23 governed skills were checked for trigger scope, current contract alignmen
 - `guanlan-skill-editor`: current V4 and automation context now precede retired-history context.
 - The other 18 skills were semantically aligned and retained without speculative rewrites.
 
-Skill Store is now `v1.9.0`. The gate additionally rejects stale raw contracts, Unicode replacement characters, and generic Follow Builders scheduler onboarding. Prompt length remains a review signal rather than an arbitrary blocking quota. These changes follow OpenAI's GPT-5.6 prompting guidance: state rules once, keep success and autonomy boundaries explicit, reduce over-prescription, and encode recurring failures in evals. Source: [OpenAI latest model guide](https://developers.openai.com/api/docs/guides/latest-model).
+Skill Store `v1.9.0` added the first semantic drift checks for stale raw contracts, Unicode replacement characters, and generic Follow Builders scheduler onboarding. It substantially rewrote `follow-builders` but made only narrow wording changes to four other Skills; the other 18 were retained. Treat it as the precursor to, not completion of, the later `v2.0.0` GPT-5.6 prompt-contract audit.
 
 ## Tags and facets
 

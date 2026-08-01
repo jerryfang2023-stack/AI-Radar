@@ -1,6 +1,6 @@
 interface:
-  display_name: "Trend Radar Updater"
-  short_description: "Build factual daily, weekly, and monthly AI change views."
-  default_prompt: "Rebuild and audit Trend Radar from accepted Data Center V4 events with complete event, entity, Claim, SourceArtifact, and source-link traceability."
+  display_name: "Guanlan Trend Radar Updater"
+  short_description: "Build factual daily weekly and monthly change views"
+  default_prompt: "Use $guanlan-trend-radar-updater to rebuild or audit factual change views from accepted Data Center V4 evidence."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

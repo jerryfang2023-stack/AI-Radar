@@ -1,0 +1,6 @@
+interface:
+  display_name: "Guanlan Data Integrity Gate"
+  short_description: "Block invalid or non-traceable V4 factual data"
+  default_prompt: "Use $guanlan-data-integrity-gate to identify the earliest failing V4 integrity contract and verify the repaired bundle."
+policy:
+  allow_implicit_invocation: true

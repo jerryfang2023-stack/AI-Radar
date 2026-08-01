@@ -7,6 +7,8 @@ import test from "node:test";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import {
   evaluateSkillOps,
+  evaluateSkillPromptContract,
+  evaluateSkillPromptEvalInventory,
   evaluateSkillSemantics,
   readGovernedSkills,
   renderRegistryMarkdown,
@@ -33,9 +35,52 @@ test("semantic gate rejects stale contracts and generic scheduler onboarding", (
   const skillPath = path.join(fixture, "SKILL.md");
   fs.writeFileSync(skillPath, "# Follow Builders\nUse RAW-V3 with OpenClaw cron and Telegram.\n", "utf8");
   const errors = evaluateSkillSemantics({ name: "follow-builders", dir: fixture, skillPath });
-  assert.equal(errors.length, 2);
+  assert.ok(errors.length >= 2);
   assert.match(errors.join("\n"), /RAW-V3/u);
   assert.match(errors.join("\n"), /generic agent onboarding/u);
+});
+
+test("GPT-5.6 prompt contract requires trigger, boundary, workflow, output, and completion", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-prompt-contract-"));
+  const skillPath = path.join(fixture, "SKILL.md");
+  fs.writeFileSync(skillPath, `---
+name: alpha
+description: Run alpha work.
+---
+
+# Alpha
+
+## Workflow
+
+Run it.
+`, "utf8");
+  const errors = evaluateSkillPromptContract({ name: "alpha", dir: fixture, skillPath });
+  assert.match(errors.join("\n"), /front-load the trigger/u);
+  assert.match(errors.join("\n"), /Do not use/u);
+  assert.match(errors.join("\n"), /missing inputs/u);
+  assert.match(errors.join("\n"), /missing boundaries/u);
+  assert.match(errors.join("\n"), /missing output/u);
+  assert.match(errors.join("\n"), /missing completion/u);
+});
+
+test("GPT-5.6 trigger eval inventory covers direct, indirect, incomplete, negative, and edge cases", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-trigger-evals-"));
+  const file = path.join(fixture, "skill-trigger-evals.json");
+  fs.writeFileSync(file, JSON.stringify({
+    schema_version: 1,
+    prompt_contract: "GPT-5.6-SKILL-V1.0",
+    case_expectations: {
+      direct: "trigger",
+      indirect: "trigger",
+      incomplete: "trigger_and_resolve_or_ask",
+      negative: "do_not_trigger",
+      edge: "trigger_and_enforce_boundary",
+    },
+    skills: [{ skill: "alpha", direct: "d", indirect: "i", incomplete: "q", negative: "n" }],
+  }), "utf8");
+  const result = evaluateSkillPromptEvalInventory([{ name: "alpha", guanlan: { status: "governance" } }], file);
+  assert.equal(result.covered, 0);
+  assert.match(result.errors.join("\n"), /alpha missing edge/u);
 });
 
 test("GitHub Pages materializes repo runtime Skills before validating governance", () => {
@@ -95,10 +140,11 @@ test("default Skill Ops gate requires repo runtime but not the private compatibi
   const storeDir = path.join(fixture, "empty-private-store");
   const registryPath = path.join(projectSkillDir, "skill-registry.md");
   const versionPath = path.join(projectSkillDir, "skill-store-version.json");
+  const promptEvalPath = path.join(projectSkillDir, "skill-trigger-evals.json");
   const skillDir = path.join(projectSkillDir, "alpha");
   const skill = `---
 name: alpha
-description: Test repository runtime authority.
+description: Use when testing repository runtime authority. Do not use for production work.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -112,14 +158,56 @@ metadata:
     mirrored_in_skill_store: true
     memory_required: false
 ---
+
+# Alpha
+
+## Inputs
+
+Use the fixture.
+
+## Workflow
+
+Validate the fixture.
+
+## Boundaries
+
+Stop if the fixture is absent. Do not touch or publish production without authorization.
+
+## Output
+
+Return the fixture result.
+
+## Done When
+
+Finish when the fixture passes.
 `;
   fs.mkdirSync(path.join(skillDir, "evals"), { recursive: true });
   fs.mkdirSync(path.join(skillDir, "examples"), { recursive: true });
+  fs.mkdirSync(path.join(skillDir, "agents"), { recursive: true });
   fs.mkdirSync(storeDir, { recursive: true });
   fs.writeFileSync(path.join(skillDir, "SKILL.md"), skill, "utf8");
   fs.writeFileSync(path.join(skillDir, "evals", "one.md"), "pass", "utf8");
   fs.writeFileSync(path.join(skillDir, "examples", "one.md"), "pass", "utf8");
+  fs.writeFileSync(path.join(skillDir, "agents", "openai.yaml"), `interface:
+  display_name: "Alpha"
+  short_description: "Test repository runtime authority"
+  default_prompt: "Use $alpha to validate the repository runtime fixture."
+policy:
+  allow_implicit_invocation: true
+`, "utf8");
   fs.writeFileSync(versionPath, JSON.stringify({ version: "1.0.0" }), "utf8");
+  fs.writeFileSync(promptEvalPath, JSON.stringify({
+    schema_version: 1,
+    prompt_contract: "GPT-5.6-SKILL-V1.0",
+    case_expectations: {
+      direct: "trigger",
+      indirect: "trigger",
+      incomplete: "trigger_and_resolve_or_ask",
+      negative: "do_not_trigger",
+      edge: "trigger_and_enforce_boundary",
+    },
+    skills: [{ skill: "alpha", direct: "d", indirect: "i", incomplete: "q", negative: "n", edge: "e" }],
+  }), "utf8");
   fs.cpSync(skillDir, path.join(repoRuntimeSkillDir, "alpha"), { recursive: true });
   fs.writeFileSync(registryPath, renderRegistryMarkdown(readGovernedSkills(projectSkillDir)), "utf8");
 
@@ -130,6 +218,7 @@ metadata:
     storeDir,
     registryPath,
     versionPath,
+    promptEvalPath,
   };
   const defaultResult = evaluateSkillOps(paths);
   const strictCompatibilityResult = evaluateSkillOps(paths, { requireCompatibilityStore: true });
@@ -139,6 +228,33 @@ metadata:
   assert.equal(defaultResult.summary.compatibilitySyncDrift, 1);
   assert.equal(strictCompatibilityResult.ok, false);
   assert.match(strictCompatibilityResult.errors.join("\n"), /compatibility \.skill-store sync state is project-only/u);
+
+  for (const root of [skillDir, path.join(repoRuntimeSkillDir, "alpha")]) {
+    const openAiYaml = path.join(root, "agents", "openai.yaml");
+    fs.writeFileSync(openAiYaml, fs.readFileSync(openAiYaml, "utf8")
+      .replace('short_description: "Test repository runtime authority"', 'short_description: "Test $alpha repository runtime authority"')
+      .replace('default_prompt: "Use $alpha to validate the repository runtime fixture."', 'default_prompt: "Validate the repository runtime fixture."'), "utf8");
+  }
+  const defaultPromptResult = evaluateSkillOps(paths);
+  assert.equal(defaultPromptResult.ok, false);
+  assert.match(defaultPromptResult.errors.join("\n"), /interface\.default_prompt must mention \$alpha/u);
+  for (const root of [skillDir, path.join(repoRuntimeSkillDir, "alpha")]) {
+    const openAiYaml = path.join(root, "agents", "openai.yaml");
+    fs.writeFileSync(openAiYaml, fs.readFileSync(openAiYaml, "utf8")
+      .replace('short_description: "Test $alpha repository runtime authority"', 'short_description: "Test repository runtime authority"')
+      .replace('default_prompt: "Validate the repository runtime fixture."', 'default_prompt: "Use $alpha to validate the repository runtime fixture."'), "utf8");
+  }
+
+  for (const root of [skillDir, path.join(repoRuntimeSkillDir, "alpha")]) {
+    const openAiYaml = path.join(root, "agents", "openai.yaml");
+    fs.writeFileSync(openAiYaml, fs.readFileSync(openAiYaml, "utf8").replace(
+      "allow_implicit_invocation: true",
+      "allow_implicit_invocation: false",
+    ), "utf8");
+  }
+  const implicitDiscoveryResult = evaluateSkillOps(paths);
+  assert.equal(implicitDiscoveryResult.ok, false);
+  assert.match(implicitDiscoveryResult.errors.join("\n"), /must allow implicit discovery/u);
 
   fs.rmSync(path.join(repoRuntimeSkillDir, "alpha"), { recursive: true, force: true });
   const missingRuntimeResult = evaluateSkillOps(paths);

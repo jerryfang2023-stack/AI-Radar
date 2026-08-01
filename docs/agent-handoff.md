@@ -20,6 +20,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current machine-serving projection: `DATA-LAKE-V4.0-23-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
+- Current Skill governance: Skill Store `v2.0.0`, with all 23 active governed Skills certified against `GPT-5.6-SKILL-V1.0`; use `npm run check:skill-ops` for the read-only release gate.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
 ## Current Entries

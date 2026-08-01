@@ -1,9 +1,9 @@
 ---
 name: guanlan-monitor-quality-gate
-description: Run or repair the structured source-intake pre-gate before the Data Center V4 build. It validates captured SourceArtifact/RawDocument supply after one monitor attempt. It does not validate CanonicalEvents, tags, projections, commercial value, or page quality.
+description: Use when running or repairing the structured source-intake pre-gate before the Data Center V4 build after one monitor attempt. Do not use to validate CanonicalEvents, tags, projections, commercial value, or page quality.
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.3.0"
     lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 50
@@ -71,19 +71,24 @@ Keep these visible without converting them into release blockers:
 ## Execution
 
 ```powershell
-node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=1 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=900000
+node agent-workflow/tools/guanlan-monitor-quality-gate.mjs --date=<YYYY-MM-DD>
 ```
 
-The wrapper runs once. On failure it writes the exact hard gate and exits for targeted repair. It must not recollect all source artifacts automatically.
+Run this gate against the existing immutable snapshots and `SOURCE-INTAKE-V1`. Do not call `run-guanlan-daily-monitor-with-qc.mjs` from a gate-only task: that wrapper starts a new monitor attempt. Thresholds and diagnostic references come from `source-intake-gate-v1.json`; do not duplicate them in the command. On failure, report the exact hard gate and exit for targeted repair.
+
+## Boundaries
+
+- Run local inspection and the documented gate within an authorized monitoring or repair task.
+- Do not start publication, mutate downstream V4/application data, add new thresholds, or repeat collection to make a score pass.
+- Ask only when the date or intended repair scope is genuinely ambiguous and cannot be resolved from the active automation state.
 
 ## Outputs
 
 ```text
 agent-workflow/reports/<date>-guanlan-monitor-quality-gate.md
-agent-workflow/reports/<date>-guanlan-daily-monitor-quality-loop.md
 ```
 
-Use `passed` or `failed` for the evidence-supply result. Optional `guanlan-daily-monitor-qc` audits may add semantic findings, but their presence or freshness is not a release prerequisite.
+Use `passed` or `failed` for the evidence-supply result. A pre-existing `<date>-guanlan-daily-monitor-quality-loop.md` belongs to the monitor wrapper and is optional upstream context, not output or completion evidence for this gate-only run. Optional `guanlan-daily-monitor-qc` audits may add semantic findings, but their presence or freshness is not a release prerequisite.
 
 ## Verification
 
@@ -92,3 +97,7 @@ node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs
 node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
 node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
 ```
+
+## Done When
+
+Finish when the intake decision is supported by immutable evidence, every hard failure names its deficient bucket and earliest owner, diagnostics remain non-blocking, and no unnecessary recollection was started.

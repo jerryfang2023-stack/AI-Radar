@@ -1,6 +1,6 @@
 interface:
-  display_name: "观澜周度商业雷达"
-  short_description: "从 Signals / Opinions / Community 三方数据生成周度 AI 商业变化判断报告。"
-  default_prompt: "请从本周通过门禁的 V4 CanonicalEvents 与独立的一线观点、社群材料中，按 E/O/C 证据边界生成周度 AI 商业变化雷达报告。事实只能引用 E；O/C 仅用于解释和需求观察；禁止读取 V3 Desk、Signal Cards 或旧 graph。"
+  display_name: "Guanlan Weekly Business Change Radar"
+  short_description: "Write evidence-bounded weekly business-change reports"
+  default_prompt: "Use $guanlan-weekly-business-change-radar to write or audit the previous complete week from the bounded E/O/C manifest."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

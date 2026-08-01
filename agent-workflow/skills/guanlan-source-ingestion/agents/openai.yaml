@@ -1,0 +1,6 @@
+interface:
+  display_name: "Guanlan Source Ingestion"
+  short_description: "Capture immutable sources and judgment-free RawDocuments"
+  default_prompt: "Use $guanlan-source-ingestion to capture or repair SourceArtifact and RawDocument records with complete provenance."
+policy:
+  allow_implicit_invocation: true

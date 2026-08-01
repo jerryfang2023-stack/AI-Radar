@@ -3,7 +3,7 @@ name: guanlan-first-line-viewpoints-monitor
 description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Guanlan Vault person timelines, publication closure, and production-incident repair. Do not use to create Claims, CanonicalEvents, RELATION-V2.1 facts, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.1.3"
+    version: "1.2.0"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
@@ -160,6 +160,7 @@ If the report shows healthy feed/archive counts but a publish failure, repair th
 - Do not let the afternoon skill lane block the morning public page when the RSS page-data gate is healthy.
 - Do not let historical snapshots bypass current translation, source, AI-relevance, opinion-tag, or original-URL gates.
 - Do not treat the afternoon archive as a substitute source for missing committed morning history.
+- Local inspection, builds, and gates are safe within an authorized supervision or repair task. Branch pushes, PRs, merges, Pages checks, and Vault writes run only when the user or owning production workflow authorizes publication/sync.
 
 ## Reporting
 
@@ -175,3 +176,7 @@ When finishing, report:
 - prevention artifact added or not needed;
 - production incident status;
 - commit / PR / deployment status when relevant.
+
+## Done When
+
+Finish when the requested current/history/afternoon route has internally consistent nonzero counts, provenance and translation gates pass, the V4 projection is verified, publication state is classified accurately, and recurring failures have prevention evidence. Do not claim lane success from a file's existence or one successful subprocess.

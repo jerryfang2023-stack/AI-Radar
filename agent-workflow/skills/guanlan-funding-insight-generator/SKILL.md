@@ -3,7 +3,7 @@ name: guanlan-funding-insight-generator
 description: "Use when generating, backfilling, repairing, auditing, or explaining the Funding Insights column from verified Data Center V4 funding events. Covers secondary web research with Tavily and Exa, captured-source evidence, DeepSeek V4 Pro card writing, explicit-investor and exact-quote gates, historical event deduplication, application-layer entity links, frontstage projection, and automatic fail-closed publication. Do not use to create canonical funding facts, mutate the entity registry, publish search snippets, or treat model output as evidence."
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.2.0"
     lane: "Funding Insights"
     status: "current downstream application"
     order: 91
@@ -73,6 +73,11 @@ Funding Insights is a downstream application. Keep its research, comparisons, ca
 - Comparisons and capital judgment are downstream analysis, not factual RELATION-V2 edges.
 - Missing investor disclosure is a hard publication failure.
 - Automatic publication means deterministic gate passage; it does not mean model output bypasses validation.
+- Dry runs, local inspection, and deterministic gates are safe within an authorized funding task. Search/model calls may incur external usage and run only through the requested generator/backfill workflow; publication, canonical mutation, and ambiguous entity decisions require their owning workflow or explicit review.
+
+## Output
+
+Produce evidence-bounded Funding Insight application bundles, aggregated public cards, blocked-event reasons, separated historical investors, and an evidence-backed entity review queue. Report unique-event ownership and external calls avoided by deduplication.
 
 ## Validation
 
@@ -84,3 +89,7 @@ Before finishing:
 4. Confirm public card count equals the number of unique company-and-confident-round groups plus ungrouped ambiguous disclosures, not raw duplicate occurrences.
 5. Confirm current-round investors exclude every historical or round-ambiguous investor and every unresolved product/person exact match is in the evidence-backed review queue.
 6. Run the full 63-bundle gate, funding tests, frontstage regression, and a desktop/mobile smoke when page structure changed.
+
+## Done When
+
+Finish when each accepted card owns one unique funding event/company-round group, every factual object has captured exact-quote evidence, investor and entity boundaries pass, blocked items remain unpublished with problem codes, and all affected schema/frontstage gates pass.

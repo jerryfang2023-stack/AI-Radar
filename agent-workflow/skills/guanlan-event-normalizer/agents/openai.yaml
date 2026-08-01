@@ -1,0 +1,6 @@
+interface:
+  display_name: "Guanlan Event Normalizer"
+  short_description: "Build exact-span Claims and source-linked events"
+  default_prompt: "Use $guanlan-event-normalizer to normalize accepted RawDocuments into Claims, Entities, events, conflicts, and QA records."
+policy:
+  allow_implicit_invocation: true

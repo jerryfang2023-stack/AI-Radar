@@ -1,6 +1,6 @@
 interface:
-  display_name: "Guanlan Monthly Report Page"
-  short_description: "Generate monthly report frontstage pages from accepted monthly report Markdown."
-  default_prompt: "Generate or update a WaveSight AI monthly report page from `01-SiteV2/content/12-applications/industry-reports/monthly/`, wire it into the report center, and validate the local frontstage."
+  display_name: "Guanlan Monthly Report Page Generator"
+  short_description: "Render accepted monthly reports for Guanlan Research"
+  default_prompt: "Use $guanlan-monthly-report-page-generator to render the full accepted monthly report and verify responsive Research wiring."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

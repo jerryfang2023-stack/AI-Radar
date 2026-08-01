@@ -1,6 +1,6 @@
 interface:
-  display_name: "观澜字体质检"
-  short_description: "Audit WaveSight page typography and hierarchy rules."
-  default_prompt: "Use $guanlan-typography-qc to audit a WaveSight AI page for typography hierarchy and position-level font rules."
+  display_name: "Guanlan Typography QC"
+  short_description: "Audit V4 typography hierarchy and token discipline"
+  default_prompt: "Use $guanlan-typography-qc to audit the requested WaveSight pages and return concrete token-mapped typography fixes."
 policy:
   allow_implicit_invocation: true

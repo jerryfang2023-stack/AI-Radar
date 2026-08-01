@@ -3,7 +3,7 @@ name: guanlan-monthly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI monthly report frontstage pages from `01-SiteV2/content/12-applications/industry-reports/monthly/`. Applies to monthly report detail pages, Guanlan Research monthly entries and wiring, Guanlan VI page styling, longform report layout, charts/tables/visual modules, and responsive local validation. Do not use for writing the monthly report judgment itself; use `guanlan-monthly-business-structure-report` first.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.2.0"
     column_version: "REPORTS-V1.2.0-research-hub"
     lane: "Guanlan Research"
     status: "current sub-skill"
@@ -54,17 +54,22 @@ For detailed rules, load:
    - Use the monthly report Markdown under `01-SiteV2/content/12-applications/industry-reports/monthly/`.
    - If no accepted monthly report exists, stop and use `guanlan-monthly-business-structure-report` first.
 
-2. Extract page fields.
+2. Run the content gate and deterministic writer.
+   - Run `node agent-workflow/tools/assert-periodic-report-content.mjs --kind=monthly --date=YYYY-MM-DD --window-start=YYYY-MM-DD --window-end=YYYY-MM-DD`.
+   - Only after it passes, run `node agent-workflow/tools/render-periodic-report-pages.mjs --kind=monthly --date=YYYY-MM-DD`.
+   - Inspect and adjust the renderer or shared styles when repair is needed; do not hand-maintain generated report HTML.
+
+3. Verify extracted page fields.
    - Use the report title, date, month window, core judgment, section headings, tables, opportunity cards, and verification list.
    - Preserve the report's full argument structure. Do not reduce the page to a summary or landing page.
 
-3. Build or update Guanlan Research wiring.
+4. Verify the generated Guanlan Research wiring.
    - Use `intelligence-map.html` as the only Guanlan Research entrance; `reports.html` remains a compatibility redirect.
    - Show monthly and weekly reports as subcolumns in its report-first area.
    - Keep Guanlan Research links compact; avoid duplicate standalone buttons when the time selector already occupies the action area.
    - Write `REPORTS-V1.2.0-research-hub` into the landing page and monthly detail metadata. Never emit the Opportunity Map column version from this Skill.
 
-4. Build the monthly detail page.
+5. Verify the generated monthly detail page.
    - Use the same V4 logo header, Data Center / Application Center sidebar, and mobile sidebar behavior as the Data Center and Guanlan Research pages.
    - Use Guanlan VI: paper background, serif editorial headings, mono labels, blue/gold accents, restrained borders, and stable reading width.
    - Render the complete report with multiple formats: longform blocks, trend chains, charts, radar/bar visuals, opportunity matrices, designed tables, lists, and appendix.
@@ -73,20 +78,20 @@ For detailed rules, load:
    - Keep the hero clean: do not add report-type helper subtitles, explanatory deck copy, or meta notes when the title and core statement already carry the page context.
    - On desktop, give the monthly title enough width and tune typography so the accepted title can stay on one line when practical; allow natural wrapping on mobile.
 
-5. Treat tables as editorial modules.
+6. Treat tables as editorial modules.
    - Style every table for reading: clear header weight, emphasized first column, light row bands, restrained borders, status color where useful, and mobile card conversion.
    - Do not leave raw Markdown-table styling on monthly detail pages.
 
-6. Validate locally.
+7. Validate locally.
    - Run syntax checks for touched JS if any.
    - Use Playwright visual smoke on desktop and mobile for the detail page and Guanlan Research entry.
    - Run `node agent-workflow/tools/frontstage-regression-gate.mjs`.
    - Confirm no mobile horizontal overflow and no console errors.
    - Confirm the Guanlan Research landing page and every generated monthly detail use the current REPORTS version from `context/version-ledger.md`.
 
-7. Self-iterate the skill.
-   - If a user corrects a repeated monthly-page failure, update `MEMORY.md`, `evals/`, or `examples/` before adding long prose.
-   - After skill edits, run skill validation, sync `.skill-store`, and rebuild `agent-workflow/skills/skill-registry.md`.
+8. Encode repeated failures only when Skill maintenance is in scope.
+   - If a user corrects a repeated monthly-page failure and requests durable prevention, update the smallest relevant `MEMORY.md`, eval, or example.
+   - Do not expand a page task into Skill or compatibility-store edits without that authorization.
 
 ## Hard Rules
 
@@ -97,6 +102,7 @@ For detailed rules, load:
 - Do not create a second report navigation or restore retired V3 navigation above the Guanlan Research content.
 - Do not restore `wavesight-nav.css`, `wavesight-topbar`, or links to the retired V3 column pages.
 - Do not restore the shared `IMAP-V2.1.0` metadata or write the Opportunity Map version into report pages.
+- Local rendering and visual checks are safe within an authorized page task. Commit, PR, merge, deployment, or reintroducing user-deleted UI requires the requested release workflow or explicit approval.
 
 ## Output
 
@@ -108,3 +114,7 @@ When finished, report:
 - validation performed;
 - skill memory/eval/example updates, if any;
 - remaining page-generation risk.
+
+## Done When
+
+Finish when the full accepted monthly argument is rendered through the deterministic writer, Research wiring/version metadata are current, tables and longform modules remain readable on desktop/mobile, no retired UI returns, and content, syntax, visual, and frontstage checks pass.

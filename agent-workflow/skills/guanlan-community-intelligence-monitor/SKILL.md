@@ -3,7 +3,7 @@ name: guanlan-community-intelligence-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI Community Intelligence lane at CINT-V1.0.2-publication-waiting-gate. Covers local logged-in collection, archive generation, community data gate, local publish handoff, Waiting-vs-Problem publication checks, GitHub publish PR, production-incident closure, and lane-specific self-improvement. Do not use to create Claims, CanonicalEvents, RELATION-V2.1 rows, or First-Line Viewpoints.
 metadata:
   guanlan:
-    version: "1.0.7"
+    version: "1.1.0"
     lane: "Community Intelligence"
     status: "current lane owner"
     order: 30
@@ -52,18 +52,18 @@ For regression prevention, read `evals/community-intelligence-monitor-evals.md`.
 
 ## Workflow
 
-0. After local collection and before archive generation, run `npm run translate:community-intelligence -- --date=<YYYY-MM-DD>`. English title, summary, and excerpt fields use DeepSeek Flash by default and Pro for long text or quality retry. Preserve `*Original`, model provenance, and `translationSourceHash`; failed translation blocks publication.
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
-2. Check Daily Closure and the production incident registry for the Community Intelligence lane.
-3. Confirm whether local collection ran and whether the local Chrome / login state was available.
-4. Validate community data with `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>`.
-5. Confirm archive outputs and daily snapshots exist.
-6. Publish only validated community-owned files through the community automation PR route.
-7. Treat local collection success without PR / merge / Pages publication as incomplete publication.
-8. When same-date data, archive, and gate are healthy, report open PRs or queued / in-progress publish workflows under Waiting, not Problems.
-9. Add or tighten evals before adding long prose when a failure recurs.
-10. Close production incidents only after validation and prevention are recorded.
-11. Reject any English primary field, stale source hash, missing DeepSeek model provenance, or translated record whose original was discarded.
+2. Confirm whether local collection ran and whether the local Chrome/login state was available.
+3. After collection and before archive generation, run `npm run translate:community-intelligence -- --date=<YYYY-MM-DD>`. Preserve `*Original`, model provenance, and `translationSourceHash`; failed translation blocks publication.
+4. Check Daily Closure and the production incident registry for the lane.
+5. Validate community data with `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>`.
+6. Confirm archive outputs and daily snapshots exist.
+7. Publish only validated community-owned files through the community automation PR route when publication is authorized.
+8. Treat local collection success without PR/merge/Pages publication as incomplete publication.
+9. When same-date data, archive, and gate are healthy, report open PRs or queued/in-progress workflows under Waiting, not Problems.
+10. Reject any English primary field, stale source hash, missing DeepSeek provenance, or translated record whose original was discarded.
+11. Add or tighten evals before adding long prose when a failure recurs.
+12. Close production incidents only after validation and prevention are recorded.
 
 ## Failure Router
 
@@ -79,15 +79,6 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 | Publication waiting | Same-date local data, archive, and gate are healthy, and a same-date PR is open or publish workflow is queued / in progress | Report Waiting and recheck; do not create a production incident or rerun collection. |
 | Published but not deployed | PR merged but Pages is not updated yet | Wait for Pages or inspect GitHub Pages workflow; local collection is already complete. |
 
-## 2026-06-08 To 2026-06-14 Review Lessons
-
-- 2026-06-08 had no current Community Intelligence supervision artifact. Treat this as a coverage gap from the V3.3.2 rollout, not as a content failure.
-- 2026-06-09 to 2026-06-12 passed the community data gate when local collection, archive, and publish checks were run.
-- 2026-06-13 failed morning supervision because the report saw 2026-06-12 data and no same-date publish run; the later local task produced 61 items / 58 links, passed the gate, opened PR #46, and merged commit `1bdabf15`.
-- 2026-06-13 also exposed a publish-workflow classification problem: early manual GitHub runs failed before local same-date files were available or during PR/auto-merge handling. These are publish-stage failures, not evidence that community sources were scarce.
-- 2026-06-14 early failure was a pre-window false positive at 03:17 Asia/Shanghai. Current supervision waits for the 08:45 local check and 09:15 consolidated recovery unless an explicit local collector failure log already exists. The 08:30 task later produced same-date data, passed the gate, opened PR #66, and merged commit `9869b4e3`.
-- Weekend data volume was not the blocker this week: Saturday and Sunday still produced 61+ items and 57+ links, far above the 12 item / 3 link floors. Weekend handling should therefore keep normal gates and focus on local-run/publish sequencing.
-
 ## Faster Morning Path
 
 The preferred before-10:00 path is:
@@ -99,13 +90,6 @@ The preferred before-10:00 path is:
 5. Daily Problem Watchdog records failed publish workflows to the production incident registry and never retries the browser collector in GitHub.
 6. 09:50 closure confirms PR merge and Pages. If Pages is still queued / in progress, report waiting rather than local failure.
 
-## 2026-06-30 Publication Waiting Rule
-
-- Same-date local data, daily snapshot, selected keywords, links, and `assert:community-intelligence` passing are enough to mark collection healthy.
-- An open same-date Community Intelligence PR or queued / in-progress publish workflow after healthy local data is a Waiting state, not a Problem.
-- Waiting-only publication state must not create production incidents.
-- If a later same-date PR merges and Pages succeeds, resolve stale production incidents without recollecting.
-
 ## Lane Boundaries
 
 - Community posts are leads, not verified commercial-event facts.
@@ -113,6 +97,7 @@ The preferred before-10:00 path is:
 - Do not write First-Line Viewpoints data.
 - Do not expect GitHub Actions to run the logged-in local collector; GitHub can only publish already-generated validated community files.
 - Do not force local browser state, credentials, or uncommitted workspace sync.
+- Local inspection, translation, archive builds, and gates are safe within an authorized supervision/repair task. Browser collection, Vault writes, branch pushes, PRs, merges, and deployment run only through the owning task/workflow or explicit user authorization.
 
 ## Reporting
 
@@ -127,3 +112,7 @@ When finishing, report:
 - files changed;
 - prevention artifact added or not needed;
 - production incident status.
+
+## Done When
+
+Finish when same-date collection, translation provenance, archive and data gates are verified; publication is accurately classified as complete, waiting, or failed at one owning stage; no unverified community material crossed into factual V4 data; and recurring failures have prevention evidence.

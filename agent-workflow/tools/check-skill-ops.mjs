@@ -72,6 +72,11 @@ if (jsonMode) {
   console.log(`Compatibility mirror drift: ${result.summary.compatibilitySyncDrift} (${requireCompatibilityStore ? "required" : "informational"})`);
   console.log(`Eval coverage: ${result.summary.evalCoverage}%`);
   console.log(`Example coverage: ${result.summary.exampleCoverage}%`);
+  console.log(`Prompt contract: ${result.summary.promptContract}`);
+  console.log(`Prompt contract coverage: ${result.summary.promptContractCoverage}%`);
+  console.log(`OpenAI metadata coverage: ${result.summary.openAiMetadataCoverage}%`);
+  console.log(`Implicit discovery coverage: ${result.summary.implicitDiscoveryCoverage}%`);
+  console.log(`Trigger eval inventory coverage: ${result.summary.promptEvalInventoryCoverage}%`);
   console.log(`Dashboard contract: ${result.summary.dashboardState}`);
   console.log(`Dashboard skills: ${result.summary.dashboardSkills}`);
   console.log(`Local Skill discovery: ${result.summary.discoveryState} (${result.summary.discoveredSkills} discovered, ${result.summary.enabledSkills} enabled, ${result.summary.disabledSkills} disabled)`);
