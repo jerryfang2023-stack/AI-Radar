@@ -69,7 +69,7 @@ function validateBundle(inputFile, validate) {
     }
   }
   for (const queueItem of data.queue || []) {
-    if (!["auto_published", "blocked", "pending"].includes(queueItem.status)) {
+    if (!["auto_published", "blocked", "pending", "deduplicated"].includes(queueItem.status)) {
       problems.push(`${queueItem.event_id || "unknown"}:queue_status_invalid`);
     }
     if (queueItem.status === "auto_published" && !seenEvents.has(queueItem.event_id)) {
@@ -226,7 +226,8 @@ function main() {
       .filter((file) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(file))
       .flatMap((file) => readJson(path.join(path.dirname(input), file), { cards: [] }).cards || []);
   const currentEvents = loadDailyBundle(root, date).events;
-  problems.push(...verifiedFundingEventCardCoverageProblems(currentEvents, persistedCards)
+  const currentQueue = results.find((result) => result.data?.meta?.date === date)?.data?.queue || [];
+  problems.push(...verifiedFundingEventCardCoverageProblems(currentEvents, persistedCards, currentQueue)
     .map((problem) => `${date}:${problem}`));
   if (all) {
     problems.push(...validateEntityReviewQueue(cards));

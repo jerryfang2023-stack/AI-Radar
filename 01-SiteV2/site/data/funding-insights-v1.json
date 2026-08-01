@@ -5,8 +5,8 @@
     "site_version": "SITE-V4.4.1-china-market-scope",
     "column_version": "FUNDING-INSIGHT-V1.1.0-card-integrity",
     "latest_date": "2026-08-01",
-    "generated_at": "2026-08-01T04:17:50.218Z",
-    "card_count": 214,
+    "generated_at": "2026-08-01T06:19:22.056Z",
+    "card_count": 216,
     "duplicate_rounds_removed": 6,
     "automatic_publication": true
   },
@@ -19643,6 +19643,875 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.1",
+      "funding_insight_id": "FI-741d31b9c33af539",
+      "triggered_by_event_id": "EV-c84b6d7338f87990",
+      "as_of_date": "2026-07-21",
+      "company": {
+        "entity_id": "EN-05cd4b807503b0f2",
+        "name": "Neo Security Inc.",
+        "full_name": "Neo Security Inc.",
+        "website": "www.neo.ai",
+        "summary": "Neo Security 是一家代理软件控制公司，为现代 AI 驱动型企业构建安全控制层。其平台为 SecOps 团队提供清单、态势情报、归因和策略控制，以管理和保护整个组织中的 AI 智能体、AI 赋能应用、浏览器、身份以及传统软件。",
+        "headquarters": "Boston",
+        "founders": [
+          {
+            "name": "Nicholas Warner",
+            "role": "Co-Founder and Chief Executive",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bf4ecd2fae97f0b",
+                "quote": "Co-founder and Chief Executive Nicholas Warner",
+                "source_content_hash": "84b7d83dc85df604",
+                "quote_hash": "d461d172aa7793b01d2734c737c0803bc7a276d9301bd851d7057b6093b073b3"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shlomi Salem",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b1c606a5a9c590db",
+                "quote": "Co-Founder Shlomi Salem previously led detection engineering at SentinelOne",
+                "source_content_hash": "404876ab72ba2bb8",
+                "quote_hash": "63f0b79a1344a48ab9beb35a298baebd671fb2b3f10383accba8163eddba8eb4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Eran Shirazi",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b1c606a5a9c590db",
+                "quote": "Co-Founder Eran Shirazi previously co-founded customer experience company EasySend",
+                "source_content_hash": "404876ab72ba2bb8",
+                "quote_hash": "03d6cdf8aed3036eb3d474dcdbb2862244728f0c7ecf77e34065fad695c0320f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b1c606a5a9c590db",
+            "quote": "Neo, the Agentic Software Control company, today emerged from stealth with $100M in funding",
+            "source_content_hash": "404876ab72ba2bb8",
+            "quote_hash": "04294a430c8f84986e0499a2ac1383e923bfea7b9ef35d1db0c73b8652a5ca2c"
+          }
+        ]
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$100 million",
+        "total_raised": "$100 million",
+        "announced_at": "2026-07-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bf4ecd2fae97f0b",
+                "quote": "The round was led by top tier venture capitalists in Andreessen Horowitz and Bessemer Venture Partners",
+                "source_content_hash": "84b7d83dc85df604",
+                "quote_hash": "d1fe57231340d34141578bd91b6fad2932c756dd2f08970a620426a916547fc2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bf4ecd2fae97f0b",
+                "quote": "The round was led by top tier venture capitalists in Andreessen Horowitz and Bessemer Venture Partners",
+                "source_content_hash": "84b7d83dc85df604",
+                "quote_hash": "d1fe57231340d34141578bd91b6fad2932c756dd2f08970a620426a916547fc2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Craft Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bf4ecd2fae97f0b",
+                "quote": "and saw participation from Craft Ventures and Merlin Ventures",
+                "source_content_hash": "84b7d83dc85df604",
+                "quote_hash": "88e87cc4460f3a0c9e2720c1412935b514260a4bee11ef70302e250559e827a9"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Merlin Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bf4ecd2fae97f0b",
+                "quote": "and saw participation from Craft Ventures and Merlin Ventures",
+                "source_content_hash": "84b7d83dc85df604",
+                "quote_hash": "88e87cc4460f3a0c9e2720c1412935b514260a4bee11ef70302e250559e827a9"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1bf4ecd2fae97f0b",
+            "quote": "Neo Security bags $100M to build the secure control layer for enterprise AI agents",
+            "source_content_hash": "84b7d83dc85df604",
+            "quote_hash": "c031c26d6745148a3ca48901039b32dfe31e73d603a4555455b02de50c8ef83d"
+          },
+          {
+            "source_id": "FISRC-b1c606a5a9c590db",
+            "quote": "Neo, the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures.",
+            "source_content_hash": "404876ab72ba2bb8",
+            "quote_hash": "c9463a3ff117b88adf033e21ab803ea2ec6ebfd6bd221f1396740da8303c2341"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-c84b6d7338f87990",
+            "round_original": "Series B",
+            "amount": "$100 million",
+            "announced_at": "2026-07-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bf4ecd2fae97f0b",
+                "quote": "Neo Security bags $100M to build the secure control layer for enterprise AI agents",
+                "source_content_hash": "84b7d83dc85df604",
+                "quote_hash": "c031c26d6745148a3ca48901039b32dfe31e73d603a4555455b02de50c8ef83d"
+              },
+              {
+                "source_id": "FISRC-b1c606a5a9c590db",
+                "quote": "Neo, the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures.",
+                "source_content_hash": "404876ab72ba2bb8",
+                "quote_hash": "c9463a3ff117b88adf033e21ab803ea2ec6ebfd6bd221f1396740da8303c2341"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Neo Platform",
+          "description": "一个实时控制层，为 SecOps 团队提供跨企业的代理软件清单、能力与风险情报、实时归因、细粒度软件控制以及原生执行能力，以管理和保护 AI 智能体、AI 赋能应用、浏览器、身份及传统软件。",
+          "target_customers": "企业安全运营（SecOps）团队",
+          "features": [
+            "Neoverse 驱动的软件清单",
+            "能力与风险情报",
+            "实时归因",
+            "细粒度软件控制",
+            "原生执行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bf4ecd2fae97f0b",
+              "quote": "Neo aims to provide security operations teams with the inventory, posture intelligence, attribution and policy controls needed to manage and secure AI agents across entire organizations.",
+              "source_content_hash": "84b7d83dc85df604",
+              "quote_hash": "b84ea776c64ea27b3ce61af7e8116614ff30f2ee4b960ef964ffdde4d7433763"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "2025年具备代理功能的企业应用比例",
+          "value": "5%",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bf4ecd2fae97f0b",
+              "quote": "As per Gartner Inc., just 5% of enterprise applications had agentic features at the end of last year",
+              "source_content_hash": "84b7d83dc85df604",
+              "quote_hash": "84b7485d895cba6fe021e23f89effdc0e292d7ba3abbea98bdbf4e9cba2869e2"
+            }
+          ]
+        },
+        {
+          "label": "2026年底预计具备代理功能的企业应用比例",
+          "value": "40%",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bf4ecd2fae97f0b",
+              "quote": "but more than 40% will by the end of 2026",
+              "source_content_hash": "84b7d83dc85df604",
+              "quote_hash": "d84c63657b685d06ccc06c00c0471746f9abfcd5dc3fa9678b2430e0eae6b3b0"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：企业软件从确定性、可预测的行为模式向具备推理、自主行动和工具调用能力的代理化软件的根本性转变，将催生一个全新的安全控制层品类。本轮 1 亿美元融资的估值逻辑建立在三个已验证信号之上：一是 Gartner 预测具备代理功能的企业应用比例将从 2025 年的 5% 飙升至 2026 年底的 40%，表明攻击面正在快速且不可逆地扩大；二是现有安全架构（EDR、DLP、零信任等）基于“用户活动即人类活动”的假设，无法区分人类操作与 AI 智能体以继承身份执行的操作，存在结构性盲区；三是创始团队来自 SentinelOne、Wiz、Palo Alto Networks 等已成功构建并规模化企业安全平台的公司，具备品类定义和上市经验。投资判断的证据边界限于本轮融资公告中投资机构的公开声明和 Gartner 的行业预测数据，尚未包含客户数量、收入或产品市场验证的具体指标。",
+        "validated_signals": [
+          "Gartner 预测具备代理功能的企业应用比例将从 2025 年的 5% 飙升至 2026 年底的 40%，表明代理化软件的攻击面正在快速扩大。",
+          "现有安全架构基于“用户活动即人类活动”的假设，无法区分人类操作与 AI 智能体以继承身份执行的操作，存在结构性安全盲区。",
+          "创始团队来自 SentinelOne、Wiz、Palo Alto Networks，曾构建并规模化企业安全平台，具备品类定义和上市经验。"
+        ],
+        "risks": [
+          "产品仍处于早期阶段，刚从隐身模式中推出，尚未披露任何客户名称或收入数据，产品市场匹配度未经大规模验证。",
+          "代理软件安全是一个新兴品类，市场教育成本高，企业采购预算和优先级可能尚未明确，销售周期可能较长。",
+          "网络安全巨头（如 Palo Alto Networks、CrowdStrike 等）可能通过自研或收购进入代理软件安全领域，构成竞争威胁。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 安全 / 代理软件控制",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：企业软件从确定性、可预测的行为模式向具备推理、自主行动和工具调用能力的代理化软件的根本性转变，将催生一个全新的安全控制层品类。本轮 1 亿美元融资的估值逻辑建立在三个已验证信号之上：一是 Gartner 预测具备代理功能的企业应用比例将从 2025 年的 5% 飙升至 2026 年底的 40%，表明攻击面正在快速且不可逆地扩大；二是现有安全架构（EDR、DLP、零信任等）基于“用户活动即人类活动”的假设，无法区分人类操作与 AI 智能体以继承身份执行的操作，存在结构性盲区；三是创始团队来自 SentinelOne、Wiz、Palo Alto Networks 等已成功构建并规模化企业安全平台的公司，具备品类定义和上市经验。投资判断的证据边界限于本轮融资公告中投资机构的公开声明和 Gartner 的行业预测数据，尚未包含客户数量、收入或产品市场验证的具体指标。",
+          "evidence_signals": [
+            "Gartner 预测具备代理功能的企业应用比例将从 2025 年的 5% 飙升至 2026 年底的 40%，表明代理化软件的攻击面正在快速扩大。",
+            "现有安全架构基于“用户活动即人类活动”的假设，无法区分人类操作与 AI 智能体以继承身份执行的操作，存在结构性安全盲区。",
+            "创始团队来自 SentinelOne、Wiz、Palo Alto Networks，曾构建并规模化企业安全平台，具备品类定义和上市经验。"
+          ],
+          "risks": [
+            "产品仍处于早期阶段，刚从隐身模式中推出，尚未披露任何客户名称或收入数据，产品市场匹配度未经大规模验证。",
+            "代理软件安全是一个新兴品类，市场教育成本高，企业采购预算和优先级可能尚未明确，销售周期可能较长。",
+            "网络安全巨头（如 Palo Alto Networks、CrowdStrike 等）可能通过自研或收购进入代理软件安全领域，构成竞争威胁。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-02",
+          "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Neo Platform",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nicholas Warner",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shlomi Salem",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Eran Shirazi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Craft Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Merlin Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c84b6d7338f87990",
+          "date": "2026-07-20",
+          "title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
+          "amount": "$100 million",
+          "source_refs": [
+            "SA-9b48b6a5edef63e5"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-1bf4ecd2fae97f0b",
+          "source_url": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
+          "title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-21T01:25:35.749Z",
+          "content_hash": "84b7d83dc85df604",
+          "source_artifact_id": "SA-9b48b6a5edef63e5",
+          "raw_id": "RAW-c9c7fcdfeefec194"
+        },
+        {
+          "source_id": "FISRC-b1c606a5a9c590db",
+          "source_url": "https://www.neo.ai/news/neo-launches-100m/",
+          "title": "Neo Launches With $100M for AI Software Security",
+          "publisher": "neo.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-01T06:13:12.328Z",
+          "content_hash": "404876ab72ba2bb8",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.2",
+        "generated_at": "2026-08-01T06:13:57.563Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-01T06:13:57.563Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Neo Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Eran Shirazi",
+            "Nicholas Warner",
+            "Shlomi Salem"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-c84b6d7338f87990"
+      ],
+      "aggregation": {
+        "key": "EN-05cd4b807503b0f2|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      },
+      "application_category": {
+        "dimension": "product_form",
+        "id": "security_product",
+        "name": "AI 安全产品"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-05cd4b807503b0f2",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-c84b6d7338f87990",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "funding_insight_id": "FI-c706cbd83381f803",
+      "triggered_by_event_id": "EV-d7a7244d620a2142",
+      "as_of_date": "2026-07-21",
+      "company": {
+        "entity_id": "EN-a0c0caae05f5e70a",
+        "name": "Infinity",
+        "full_name": "Infinity",
+        "website": "",
+        "summary": "Infinity是一家AI基础设施公司，致力于构建替代CUDA的内核软件，使各类AI芯片能更高效地运行AI模型，从而削弱Nvidia的软件生态优势。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Jeremy Nixon",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe9df758c254a64e",
+                "quote": "Infinity was launched last year by Jeremy Nixon, once a researcher at Google Brain and creator of the hacker network community AGI House.",
+                "source_content_hash": "4a51e7afa2172353",
+                "quote_hash": "1fe488f6878986181828b1baff52568ecf187b8f47e6379e6aa208545d5e0540"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "26",
+          "observed_at": "2026-07-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe9df758c254a64e",
+              "quote": "Right now, Infinity has 26 employees, including those in design, operations, and engineering.",
+              "source_content_hash": "4a51e7afa2172353",
+              "quote_hash": "98589fbad20e2c7e3716ead2610a6acb04f6ca82692d9c17098e01b275d62782"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fe9df758c254a64e",
+            "quote": "AI infrastructure company Infinity announced a $15 million raise at a $100 million valuation on Monday from investors including Touring Capital, Principal VC, and researchers from companies such as OpenAI and Anthropic.",
+            "source_content_hash": "4a51e7afa2172353",
+            "quote_hash": "c2583bae161f96669cd9b681b0c36835933d84d199bf5cf2d9be81a044aa1466"
+          },
+          {
+            "source_id": "FISRC-6c3fedd74de5cc87",
+            "quote": "Infinity is an AI infrastructure company focused on inference, the runtime layer used to serve deployed models after training.",
+            "source_content_hash": "bfc10e4994be2dee",
+            "quote_hash": "1613b96cb2947a48ee37c29a06319ff34a0b6344eea0eb63be8895a4a38ec4e1"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$15M",
+        "total_raised": "$15M",
+        "announced_at": "2026-07-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Touring Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8b7c6346d6bc0dc2",
+                "quote": "Infinity raised $15 million led by Touring Capital, with individual participation from researchers at both OpenAI and Anthropic",
+                "source_content_hash": "8be554bde193bcd0",
+                "quote_hash": "7e50de0b07f998b3024aacc3f9685795d8043627165eb42ef328331019e0da97"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Principal VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe9df758c254a64e",
+                "quote": "investors including Touring Capital, Principal VC, and researchers from companies such as OpenAI and Anthropic.",
+                "source_content_hash": "4a51e7afa2172353",
+                "quote_hash": "e9a74fcd638618c0ae2b7da37f095c3d06221cfd6c7eb4427965a79cc898eb3e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "OpenAI研究人员（个人身份）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe9df758c254a64e",
+                "quote": "researchers from companies such as OpenAI and Anthropic.",
+                "source_content_hash": "4a51e7afa2172353",
+                "quote_hash": "6f44617f1e338587dcc2601ff9312e4c6f3bb6037a64636059d3c8e8db6e2a01"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anthropic研究人员（个人身份）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe9df758c254a64e",
+                "quote": "researchers from companies such as OpenAI and Anthropic.",
+                "source_content_hash": "4a51e7afa2172353",
+                "quote_hash": "6f44617f1e338587dcc2601ff9312e4c6f3bb6037a64636059d3c8e8db6e2a01"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fe9df758c254a64e",
+            "quote": "Infinity announced a $15 million raise at a $100 million valuation on Monday from investors including Touring Capital, Principal VC, and researchers from companies such as OpenAI and Anthropic.",
+            "source_content_hash": "4a51e7afa2172353",
+            "quote_hash": "314350d57ae97f197cc91467549a1b6fbbdb2879ecf36182301ea7ff532633de"
+          },
+          {
+            "source_id": "FISRC-8b7c6346d6bc0dc2",
+            "quote": "Infinity raised $15 million led by Touring Capital, with individual participation from researchers at both OpenAI and Anthropic",
+            "source_content_hash": "8be554bde193bcd0",
+            "quote_hash": "7e50de0b07f998b3024aacc3f9685795d8043627165eb42ef328331019e0da97"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d7a7244d620a2142",
+            "round_original": "种子轮",
+            "amount": "$15M",
+            "announced_at": "2026-07-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe9df758c254a64e",
+                "quote": "Infinity announced a $15 million raise at a $100 million valuation on Monday from investors including Touring Capital, Principal VC, and researchers from companies such as OpenAI and Anthropic.",
+                "source_content_hash": "4a51e7afa2172353",
+                "quote_hash": "314350d57ae97f197cc91467549a1b6fbbdb2879ecf36182301ea7ff532633de"
+              },
+              {
+                "source_id": "FISRC-8b7c6346d6bc0dc2",
+                "quote": "Infinity raised $15 million led by Touring Capital, with individual participation from researchers at both OpenAI and Anthropic",
+                "source_content_hash": "8be554bde193bcd0",
+                "quote_hash": "7e50de0b07f998b3024aacc3f9685795d8043627165eb42ef328331019e0da97"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Ignition",
+          "description": "一个AI研究代理，旨在为Nvidia替代芯片自动编写、测试、调试和优化AI推理所需的底层代码，并能持续自我优化以适应不同芯片架构。",
+          "target_customers": "AI芯片制造商和大型云服务公司",
+          "features": [
+            "自动编写底层推理代码",
+            "自动测试、调试和基准测试硬件性能",
+            "根据性能反馈自动重写代码以持续优化",
+            "适应不同芯片架构，不受专有设计限制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe9df758c254a64e",
+              "quote": "Infinity’s AI research agent Ignition is intended to write the low-level code needed for AI inference on Nvidia-alternative chips. It tests, debugs, and measures how fast the hardware performs with the code, and automatically rewrites the code if needed to improve performance. The system is self-optimizing, meaning it continuously learns and improves itself. It also adapts to different chip architectures, regardless of proprietary designs, Nixon says.",
+              "source_content_hash": "4a51e7afa2172353",
+              "quote_hash": "bd566dac87969bb5032d39172ca30d42476af8e28925992d51604f33e74be7e8"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "D-Matrix",
+          "industry": "AI芯片制造",
+          "use_case": "利用Infinity的软件栈为其AI芯片提供CUDA级别的软件支持，以运行AI模型。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe9df758c254a64e",
+              "quote": "Customers include the AI chip maker (and would-be Nvidia challenger) D-Matrix, and Infinity is in talks with other big chip and cloud companies, Nixon said.",
+              "source_content_hash": "4a51e7afa2172353",
+              "quote_hash": "b9aa97af7b07e48fe7e3ade129a3cfa09a7231e97652774f7a46e001222bba2c"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Weka",
+          "product": "存储平台（缓存预计算模型令牌）",
+          "scenario": "通过存储层缓存100%的模型预计算令牌来减少GPU负载，以优化推理成本。",
+          "target_customer": "运行大规模AI模型的企业",
+          "funding_summary": "",
+          "core_difference": "Infinity从底层内核软件层面构建通用推理库，使AI模型能在多种芯片上运行；Weka则从存储层切入，通过缓存预计算令牌来降低GPU负载。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8b7c6346d6bc0dc2",
+              "quote": "this same week, storage company Weka launched a platform that caches 100% of a model's pre-calculated tokens specifically to reduce GPU load",
+              "source_content_hash": "8be554bde193bcd0",
+              "quote_hash": "64105c0cbaddc2b375fd31c3cfe0a6d7b02c1f85635f0679b88dcb386c2f440f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "$100M",
+          "observed_at": "2026-07-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe9df758c254a64e",
+              "quote": "Infinity announced a $15 million raise at a $100 million valuation",
+              "source_content_hash": "4a51e7afa2172353",
+              "quote_hash": "f0b8e54b7f33b56fec7359c704eda68d12fb6f4e0679959b50b922c174af017f"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "26",
+          "observed_at": "2026-07-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe9df758c254a64e",
+              "quote": "Right now, Infinity has 26 employees, including those in design, operations, and engineering.",
+              "source_content_hash": "4a51e7afa2172353",
+              "quote_hash": "98589fbad20e2c7e3716ead2610a6acb04f6ca82692d9c17098e01b275d62782"
+            }
+          ]
+        },
+        {
+          "label": "优化效率提升",
+          "value": "将原本需要数月或数年的手动优化过程缩短至数小时或数天",
+          "observed_at": "2026-07-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe9df758c254a64e",
+              "quote": "In one case study , the startup found the agent works much faster than a human alone, reducing what could have been a years- or months-long process to hours or days.",
+              "source_content_hash": "4a51e7afa2172353",
+              "quote_hash": "de988055b7049432e3573b0e9ce1771dd182357583ec7df17de4440e0c397d92"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Jeremy Nixon",
+          "quote": "AI systems can actually be a meta technology.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe9df758c254a64e",
+              "quote": "he was obsessed with the idea of “automated invention” — the belief that “AI systems can actually be a meta technology.”",
+              "source_content_hash": "4a51e7afa2172353",
+              "quote_hash": "b2aa2c6d53f458f2211209d34453c2b188cb177e3c4f11b50e4c16cdb32fc698"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是打破Nvidia CUDA生态锁定的“芯片无关”推理软件层。本轮融资的已验证信号包括：1）已获得AI芯片公司D-Matrix作为客户，并正与其他大型芯片和云公司洽谈，显示了初步的市场需求；2）其AI代理Ignition在案例中能将数月/年的手动优化工作缩短至数小时/天，验证了其自动化技术的效率潜力；3）来自OpenAI和Anthropic等前沿AI实验室的研究人员以个人身份参与投资，构成了难以伪造的技术可信度背书。判断的证据边界在于，这些信号目前仅来自公司单方面披露和一篇媒体报道，缺乏第三方客户证言和规模化部署的公开数据。",
+        "validated_signals": [
+          "已签约AI芯片制造商D-Matrix作为客户，并正与其他大型芯片和云公司洽谈。",
+          "内部案例研究显示，其AI代理Ignition能将原本需数月或数年的手动优化工作缩短至数小时或数天。",
+          "来自OpenAI和Anthropic的研究人员以个人身份参与本轮投资，提供了技术可信度信号。"
+        ],
+        "risks": [
+          "竞争激烈且巨头环伺：推理优化是AI基础设施领域竞争最激烈的赛道之一，Google等前沿实验室自身就在通过模型层更新（如Gemini 3.6 Flash）免费提供大幅成本优化，这可能削弱第三方优化方案的商业价值。",
+          "技术护城河与独立性存疑：Infinity的技术可能被大型AI实验室吸收并整合到其自有技术栈中，其作为独立公司的长期防御性尚未得到验证。"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "AI基础设施/推理优化",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是打破Nvidia CUDA生态锁定的“芯片无关”推理软件层。本轮融资的已验证信号包括：1）已获得AI芯片公司D-Matrix作为客户，并正与其他大型芯片和云公司洽谈，显示了初步的市场需求；2）其AI代理Ignition在案例中能将数月/年的手动优化工作缩短至数小时/天，验证了其自动化技术的效率潜力；3）来自OpenAI和Anthropic等前沿AI实验室的研究人员以个人身份参与投资，构成了难以伪造的技术可信度背书。判断的证据边界在于，这些信号目前仅来自公司单方面披露和一篇媒体报道，缺乏第三方客户证言和规模化部署的公开数据。",
+          "evidence_signals": [
+            "已签约AI芯片制造商D-Matrix作为客户，并正与其他大型芯片和云公司洽谈。",
+            "内部案例研究显示，其AI代理Ignition能将原本需数月或数年的手动优化工作缩短至数小时或数天。",
+            "来自OpenAI和Anthropic的研究人员以个人身份参与本轮投资，提供了技术可信度信号。"
+          ],
+          "risks": [
+            "竞争激烈且巨头环伺：推理优化是AI基础设施领域竞争最激烈的赛道之一，Google等前沿实验室自身就在通过模型层更新（如Gemini 3.6 Flash）免费提供大幅成本优化，这可能削弱第三方优化方案的商业价值。",
+            "技术护城河与独立性存疑：Infinity的技术可能被大型AI实验室吸收并整合到其自有技术栈中，其作为独立公司的长期防御性尚未得到验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        },
+        "related_direction": {
+          "id": "DIR-20260725-01",
+          "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ignition",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jeremy Nixon",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Touring Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Principal VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "OpenAI研究人员（个人身份）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anthropic研究人员（个人身份）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "D-Matrix",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Weka",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d7a7244d620a2142",
+          "date": "2026-07-20",
+          "title": "推理初创公司Infinity获Touring Capital、OpenAI及Anthropic研究人员投资1500万美元",
+          "amount": "$15M",
+          "source_refs": [
+            "SA-d0ebae49db2b1883"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fe9df758c254a64e",
+          "source_url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
+          "title": "推理初创公司Infinity获Touring Capital、OpenAI及Anthropic研究人员投资1500万美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-21T01:25:37.772Z",
+          "content_hash": "4a51e7afa2172353",
+          "source_artifact_id": "SA-d0ebae49db2b1883",
+          "raw_id": "RAW-4d7d45e389285db0"
+        },
+        {
+          "source_id": "FISRC-6c3fedd74de5cc87",
+          "source_url": "https://aifunding.me/companies/infinity",
+          "title": "Infinity — $15M Raised | 1 Round | AI Funding",
+          "publisher": "aifunding.me",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-01T06:10:15.805Z",
+          "content_hash": "bfc10e4994be2dee",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8b7c6346d6bc0dc2",
+          "source_url": "https://valueaddvc.com/pulse/infinity-15m-inference-touring-capital-2026",
+          "title": "Inference Startup Infinity Raises $15M From OpenAI, Anthropic Researchers | Value Add Pulse",
+          "publisher": "valueaddvc.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-01T06:10:17.125Z",
+          "content_hash": "8be554bde193bcd0",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.2",
+        "generated_at": "2026-08-01T06:11:00.909Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-01T06:11:00.909Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 1,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Ignition"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Jeremy Nixon"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-d7a7244d620a2142"
+      ],
+      "aggregation": {
+        "key": "EN-a0c0caae05f5e70a|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      },
+      "application_category": {
+        "dimension": "product_form",
+        "id": "chip_accelerator",
+        "name": "芯片与加速器"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-a0c0caae05f5e70a",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-d7a7244d620a2142",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.1",
       "funding_insight_id": "FI-e248db193daff590",
       "triggered_by_event_id": "EV-439ba8d5f2f575c4",
       "as_of_date": "2026-07-21",
@@ -22916,7 +23785,7 @@
       "as_of_date": "2026-07-20",
       "company": {
         "entity_id": "EN-b1d07f1a647ba7fb",
-        "name": "Workflow automation startup Parabola",
+        "name": "Parabola",
         "full_name": "Parabola",
         "website": "https://parabola.io/",
         "summary": "Parabola 是一家总部位于旧金山的初创公司，利用人工智能帮助加快后台流程，特别是在物流和电子商务领域。其平台应用 AI 自动化各种工作流，使非技术用户能够处理文档标准化、分类和数据分析等任务。",
@@ -43822,7 +44691,7 @@
       "as_of_date": "2026-07-10",
       "company": {
         "entity_id": "EN-2e3e41eef734616d",
-        "name": "Data center infrastructure startup TensorWave",
+        "name": "TensorWave",
         "full_name": "TensorWave Inc.",
         "website": "https://tensorwave.com/",
         "summary": "TensorWave是一家基于云的人工智能基础设施初创公司，专门提供由AMD Instinct加速器驱动的AI云服务，用于AI训练和推理，旨在打破英伟达在AI芯片领域的垄断。",
@@ -63097,7 +63966,7 @@
       "as_of_date": "2026-07-02",
       "company": {
         "entity_id": "EN-cfd62617fdedfdf4",
-        "name": "Agentic infrastructure startup Seltz",
+        "name": "Seltz",
         "full_name": "Seltz Inc.",
         "website": "https://seltz.ai/",
         "summary": "Seltz 是一家智能体基础设施初创公司，构建专为 AI 代理优化的网络搜索基础设施。公司拥有完整的搜索技术栈，包括爬虫、索引、检索模型和排序系统，旨在为 AI 代理提供结构化、可引用的机器可读结果，而非传统的链接列表。",
@@ -79595,7 +80464,7 @@
       "as_of_date": "2026-06-26",
       "company": {
         "entity_id": "EN-44355566aea5df6f",
-        "name": "Agentic AI startup Quash",
+        "name": "Quash",
         "full_name": "Quash",
         "website": "https://quashbugs.com/",
         "summary": "Quash是一家总部位于班加罗尔的AI初创公司，通过自主QA智能体彻底改变移动应用测试，实现从发现Bug到修复Bug的整个测试流程自动化，从而消除对人工测试人员的需求。",
@@ -137236,7 +138105,7 @@
       "as_of_date": "2026-05-22",
       "company": {
         "entity_id": "EN-883be863cc6562bb",
-        "name": "European AI chip startup Axelera",
+        "name": "Axelera",
         "full_name": "Axelera AI",
         "website": "https://axelera.ai/",
         "summary": "Axelera AI 是一家欧洲 AI 半导体公司，为边缘计算和数据中心应用开发下一代 AI 加速硬件。其边缘优先架构旨在解决 AI 在能耗和散热方面的关键限制，提供高性能 AI 推理解决方案。",

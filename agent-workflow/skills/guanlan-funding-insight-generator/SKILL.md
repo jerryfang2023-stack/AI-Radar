@@ -32,14 +32,14 @@ Funding Insights is a downstream application. Keep its research, comparisons, ca
 
 ## Workflow
 
-1. Select only `event_type=funding`, `publication_status=verified` CanonicalEvents with an approved Chinese display title and a resolvable subject-company entity.
+1. Select only `event_type=funding`, `publication_status=verified` CanonicalEvents with an approved Chinese display title and a resolvable subject-company entity. Daily automatic historical admission is limited to financing sources published within the preceding three calendar months; older sources require an explicit targeted-backfill instruction and `--allow-historical-funding=true` during the Event rebuild.
 2. For historical work, dry-run the range first:
 
    ```powershell
    npm run backfill:funding-insights -- --from=YYYY-MM-DD --to=YYYY-MM-DD
    ```
 
-   The backfill owner chooses one source bundle for every unique `event_id`, preferring the occurrence with more accepted source and Claim references, fewer missing fields, then the newer bundle. Never pay for duplicate research on repeated event IDs.
+   The backfill owner chooses one source bundle for every unique `event_id`, preferring the occurrence with more accepted source and Claim references, fewer missing fields, then the newer bundle. The generator also checks all persisted date bundles and records `deduplicated` instead of invoking search or DeepSeek when the event ID or canonical company-plus-normalized-round key already has a valid card. Never pay for duplicate research on repeated financing.
 3. Generate cards:
 
    ```powershell

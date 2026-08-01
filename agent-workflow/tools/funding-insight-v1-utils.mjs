@@ -290,6 +290,7 @@ export function normalizeFundingInsightCard(inputCard = {}, entityIndex = {}, de
   ])];
   card.company = {
     ...(card.company || {}),
+    name: descriptiveCompanyTail(card.company?.name) || card.company?.name,
     founders,
   };
   card.financing = {
@@ -548,9 +549,8 @@ function subjectCandidate(entity, index, eventText) {
     return lexical + subjectSignalScore(eventText.raw, name);
   });
   const bestScore = Math.max(0, ...scores);
-  const bestName = names[scores.indexOf(bestScore)];
   return {
-    entity: inferredName && bestName === inferredName
+    entity: inferredName
       ? { ...entity, canonical_name: inferredName }
       : entity,
     index,
@@ -897,7 +897,7 @@ export function fundingInsightProblems(card = {}) {
   return [...new Set(problems)];
 }
 
-export function verifiedFundingEventCardCoverageProblems(events = [], cards = []) {
+export function verifiedFundingEventCardCoverageProblems(events = [], cards = [], queue = []) {
   const coveredEventIds = new Set(
     cards
       .filter((card) => (
@@ -907,6 +907,9 @@ export function verifiedFundingEventCardCoverageProblems(events = [], cards = []
       .flatMap((card) => card.source_event_ids || [card.triggered_by_event_id])
       .filter(Boolean),
   );
+  for (const item of queue) {
+    if (item.status === "deduplicated" && item.event_id) coveredEventIds.add(item.event_id);
+  }
   return [...new Set(
     events
       .filter((event) => event.event_type === "funding")

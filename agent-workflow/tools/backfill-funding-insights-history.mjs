@@ -168,7 +168,7 @@ function reportForSelection(selection) {
     .filter(([, item]) => item.status === "blocked")
     .map(([eventId, item]) => ({ event_id: eventId, problems: item.problems }));
   const pending = [...statusByEvent.entries()]
-    .filter(([, item]) => item.status !== "auto_published" && item.status !== "blocked")
+    .filter(([, item]) => !["auto_published", "blocked", "deduplicated"].includes(item.status))
     .map(([eventId, item]) => ({ event_id: eventId, problems: item.problems }));
   return {
     schema_version: "FUNDING-INSIGHT-HISTORICAL-BACKFILL-V1.0",
@@ -180,6 +180,7 @@ function reportForSelection(selection) {
       selected_events: selection.selected_event_count,
       duplicate_occurrences_removed: selection.duplicate_occurrences_removed,
       auto_published: [...statusByEvent.values()].filter((item) => item.status === "auto_published").length,
+      deduplicated: [...statusByEvent.values()].filter((item) => item.status === "deduplicated").length,
       blocked: blocked.length,
       pending: pending.length,
     },

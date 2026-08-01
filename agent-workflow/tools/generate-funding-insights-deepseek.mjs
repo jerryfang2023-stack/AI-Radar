@@ -14,6 +14,7 @@ import {
   latestDataDate,
   loadDailyBundle,
   normalizeFundingInsightCard,
+  normalizeFundingRound,
   readJson,
   referencedSourceIds,
   researchPayloadProblems,
@@ -42,6 +43,51 @@ const concurrency = Math.max(1, Math.min(4, Number(args.get("concurrency") || 2)
 const output = path.resolve(args.get("output")
   || path.join(root, "01-SiteV2/content/12-applications/funding-insights", `${date}.json`));
 const model = deepSeekModels().pro;
+
+export function selectFundingEventsForGeneration(events = [], {
+  currentCards = [],
+  publishedCards = [],
+  force: forceGeneration = false,
+  eventAggregationKey = () => "",
+} = {}) {
+  if (forceGeneration) return { pending: [...events], reused: [], deduplicated: [] };
+  const currentEventIds = new Set(currentCards.map((card) => card.triggered_by_event_id).filter(Boolean));
+  const publishedEventIds = new Set(publishedCards
+    .flatMap((card) => card.source_event_ids || [card.triggered_by_event_id])
+    .filter(Boolean));
+  const publishedAggregationKeys = new Set(publishedCards.map((card) => (
+    card.aggregation?.key
+    || `${card.company?.entity_id || clean(card.company?.name).toLowerCase()}|${normalizeFundingRound(card.financing?.round_original || card.financing?.round).code}`
+  )).filter(Boolean));
+  return events.reduce((selection, event) => {
+    const aggregationKey = eventAggregationKey(event);
+    if (currentEventIds.has(event.event_id)) selection.reused.push(event);
+    else if (publishedEventIds.has(event.event_id)
+      || (aggregationKey && publishedAggregationKeys.has(aggregationKey))) selection.deduplicated.push(event);
+    else selection.pending.push(event);
+    return selection;
+  }, { pending: [], reused: [], deduplicated: [] });
+}
+
+export function fundingEventAggregationKey(event, bundle, entityIndex = {}) {
+  const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims);
+  if (!company?.entity_id) return "";
+  const claimById = new Map(bundle.claims.map((claim) => [claim.claim_id, claim]));
+  const roundEvidence = [
+    event.object,
+    event.display_title_zh,
+    ...(event.claim_refs || []).map((claimId) => claimById.get(claimId)?.source_quote),
+  ].filter(Boolean).join(" ");
+  return `${company.entity_id}|${normalizeFundingRound(roundEvidence).code}`;
+}
+
+function publishedFundingCards(projectRoot) {
+  const bundleRoot = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights");
+  if (!fs.existsSync(bundleRoot)) return [];
+  return fs.readdirSync(bundleRoot)
+    .filter((file) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(file))
+    .flatMap((file) => readJson(path.join(bundleRoot, file), { cards: [] }).cards || []);
+}
 
 function decodeHtml(value = "") {
   const named = new Map([
@@ -657,7 +703,13 @@ async function main() {
   if (limit) {
     selectedEvents = selectedEvents.slice(0, limit);
   }
-  const pending = selectedEvents.filter((event) => force || !existingByEvent.has(event.event_id));
+  const generationSelection = selectFundingEventsForGeneration(selectedEvents, {
+    currentCards: [...existingByEvent.values()],
+    publishedCards: publishedFundingCards(root),
+    force,
+    eventAggregationKey: (event) => fundingEventAggregationKey(event, bundle, entityIndex),
+  });
+  const pending = generationSelection.pending;
   if (!write) {
     console.log(JSON.stringify({
       ok: true,
@@ -667,7 +719,8 @@ async function main() {
       funding_events: events.length,
       selected_events: selectedEvents.length,
       selected_only: selectedOnly,
-      reused: selectedEvents.length - pending.length,
+      reused: generationSelection.reused.length,
+      deduplicated: generationSelection.deduplicated.length,
       pending: pending.length,
       providers: {
         tavily: Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true",
@@ -696,6 +749,17 @@ async function main() {
     else if (force) existingByEvent.delete(result.event_id);
   }
   const queueByEvent = new Map((existing.queue || []).map((item) => [item.event_id, item]));
+  for (const event of generationSelection.deduplicated) {
+    queueByEvent.set(event.event_id, {
+      event_id: event.event_id,
+      company_name: "",
+      status: "deduplicated",
+      problems: [],
+      queries: [],
+      attempts: [],
+      updated_at: new Date().toISOString(),
+    });
+  }
   for (const result of results) {
     queueByEvent.set(result.event_id, {
       event_id: result.event_id,
@@ -726,7 +790,7 @@ async function main() {
       schema_version: FUNDING_INSIGHT_VERSION,
       date,
       generated_at: new Date().toISOString(),
-      trigger: "verified_daily_funding_events",
+      trigger: "verified_funding_events_with_three_month_backfill",
       research_provider: "tavily+exa+deepseek",
       model,
       human_review_required: false,
@@ -736,6 +800,7 @@ async function main() {
         auto_published: cards.length,
         blocked: queue.filter((item) => item.status === "blocked").length,
         pending: queue.filter((item) => item.status === "pending").length,
+        deduplicated: queue.filter((item) => item.status === "deduplicated").length,
       },
     },
     cards,
@@ -746,7 +811,8 @@ async function main() {
     ok: true,
     mode: "write",
     output: path.relative(root, output).replace(/\\/gu, "/"),
-    reused: selectedEvents.length - pending.length,
+    reused: generationSelection.reused.length,
+    deduplicated: generationSelection.deduplicated.length,
     processed: pending.length,
     counts: value.meta.counts,
   }, null, 2));
