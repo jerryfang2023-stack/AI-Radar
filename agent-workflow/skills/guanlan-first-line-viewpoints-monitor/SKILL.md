@@ -3,7 +3,7 @@ name: guanlan-first-line-viewpoints-monitor
 description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Guanlan Vault person timelines, publication closure, and production-incident repair. Do not use to create Claims, CanonicalEvents, RELATION-V2.1 facts, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.2.1"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
@@ -55,7 +55,7 @@ For implementation detail, read:
 - `agent-workflow/tools/assert-follow-builders-data.mjs`
 - `agent-workflow/tools/backfill-first-line-viewpoints-history.mjs`
 - `agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs`
-- `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs`
+- `agent-workflow/tools/build-guanlan-vault.mjs`
 - `01-SiteV2/site/scripts/build-follow-builders-page-data.mjs`
 - `01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs`
 

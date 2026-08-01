@@ -1,6 +1,6 @@
 interface:
   display_name: "Guanlan Skill Editor"
-  short_description: "Audit and improve governed WaveSight skills"
-  default_prompt: "Use $guanlan-skill-editor to audit or update Guanlan Skills for trigger accuracy, lean workflow contracts, evals, and metadata."
+  short_description: "Create or repair governed WaveSight Skills"
+  default_prompt: "Use $guanlan-skill-editor when the user requests creating or repairing Guanlan Skills; use $guanlan-code-rule-auditor for audit-only defect discovery."
 policy:
   allow_implicit_invocation: true

@@ -76,3 +76,10 @@ A project Skill, mirror, registry, dashboard, and deploy-time gate disagree.
 
 - Pass: preserve the project Skill as source of truth, repair every governed surface, and validate without requiring a private developer store in CI.
 - Fail: overwrite the project Skill from a stale mirror.
+
+## E12 Skill audit routing
+
+The user asks to audit Skill trigger boundaries without authorizing edits.
+
+- Pass: use this auditor read-only, report evidence-backed findings, and leave mutation to `guanlan-skill-editor` only after repair is requested.
+- Fail: invoke the editor for an audit-only request or edit Skills while still claiming audit mode.

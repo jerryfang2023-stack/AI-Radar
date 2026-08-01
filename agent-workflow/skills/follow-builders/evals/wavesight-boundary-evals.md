@@ -16,6 +16,10 @@ Run these pass/fail checks when using `follow-builders` inside WaveSight AI / Gu
 4. `chinese_frontstage_ready`
    - Pass when WaveSight frontstage viewpoint data has complete Chinese primary text, original URLs, author identity, timestamp, and translation status before release.
 
+5. `afternoon_artifact_ownership`
+   - Pass when the Skill writes `01-SiteV2/content/07-points/<date>-builders-viewpoints.md`, the matching local publish report, and the First-Line V4 projection.
+   - Fail when it writes, replaces, or treats the morning-owned `01-SiteV2/site/data/follow-builders-daily.json` as proof of afternoon success.
+
 ## Repair Loop
 
 When a check fails, keep the item in viewpoints only or recapture the original business source through the V4 source-intake and integrity workflow. Do not promote commentary into factual evidence.

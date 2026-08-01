@@ -3,7 +3,7 @@ name: guanlan-data-center-supervisor
 description: Use when supervising, running, repairing, or changing the WaveSight Data Center V4 factual data lane. Covers SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, ENTITY-V1 history profiles, RELATION-V2 factual links, BACKFILL-V1 targeted historical collection, TAG-V4 assertions, FDE and hardware projections, database materialization, historical reprojection, and integrity gates. Do not use for page design, opportunity judgment, trend judgment, recommendations, or legacy Card editorial work.
 metadata:
   guanlan:
-    version: "1.3.0"
+    version: "1.3.1"
     lane: "Data Center"
     status: "current lane owner"
     order: 5
@@ -31,7 +31,7 @@ Read `agent-workflow/product/data-center-v4-contract.md`, the relevant schema, t
 5. Only when the user request or owning production workflow authorizes an external model call, run `npm run generate:model-assist -- --date=YYYY-MM-DD --write=true` and `npm run assert:model-assist -- --date=YYYY-MM-DD`, then rebuild V4 and rerun `npm run assert:data-center -- --date=YYYY-MM-DD`. DeepSeek Pro may propose exact-span Claim, FDE, hardware, entity-resolution, and QA candidates. Otherwise keep the accepted deterministic build.
 6. Claim, FDE, and hardware candidates auto-promote only after source-hash, exact-span, protected-number, and task-contract gates pass. Entity resolution and QA repair always require `npm run review:model-assist` with an explicit reviewer.
 7. For a Data Center-only repair, run `node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip`, `node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip`, `npm run build:data-center-site`, `npm run materialize:entity-history`, and `npm run assert:entity-history`. Run the broader `npm run sync:data-center` only when the owning release workflow also authorizes rebuilding Trend Radar, Funding Insights, and Opportunity Map.
-8. For an explicit historical reprojection, run `npm run backfill:entity-history` and preserve declared coverage gaps. Keep legacy page output isolated as compatibility data.
+8. For an explicit historical reprojection, run `npm run backfill:entity-history` and preserve declared coverage gaps. Rebuild only current V4-native outputs; do not restore, retain, or emit legacy page JSON, compatibility Cards, mappings, or compatibility interfaces.
 9. Run `npm run build:targeted-backfill` and `npm run assert:targeted-backfill` when maintaining company, product, funding, or deployment coverage. A fact-gap task closes only after the responsible canonical rebuild removes the gap.
 
 ## Boundary

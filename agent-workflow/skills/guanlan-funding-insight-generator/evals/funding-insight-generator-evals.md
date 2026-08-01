@@ -9,7 +9,8 @@
 4. `captured_exact_quote`
    - Pass when every evidence quote is a substring of a captured source body.
 5. `explicit_investors`
-   - Pass when a missing or unnamed investor blocks publication.
+   - Pass when current-round investors are explicitly named, or when an explicitly undisclosed round publishes only with an empty investor list, `investor_disclosure_status=not_disclosed`, and the retained `investors_missing` risk marker.
+   - Fail when a generic category is converted into an institution, or when missing investor data publishes without the complete non-disclosure exception.
 6. `two_cited_sources`
    - Pass when every published card cites at least two captured sources.
 7. `deepseek_provenance`

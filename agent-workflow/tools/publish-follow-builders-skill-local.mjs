@@ -281,7 +281,7 @@ function main() {
 
   run("node", ["--check", "agent-workflow/tools/generate-builders-viewpoints-from-follow-builders-skill.mjs"]);
   run("node", ["agent-workflow/tools/generate-builders-viewpoints-from-follow-builders-skill.mjs", `--date=${date}`]);
-  run("node", ["agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs"]);
+  run("node", ["agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs", "--require-morning=false", "--require-afternoon=true"]);
 
   if (!fs.existsSync(outputFile)) {
     throw new Error(`Builders viewpoints file was not generated: ${outputFile}`);

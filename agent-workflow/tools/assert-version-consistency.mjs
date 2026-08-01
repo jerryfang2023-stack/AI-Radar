@@ -46,7 +46,7 @@ const expected = {
   trendRadar: "TRADAR-V1.0.1-china-market-filter",
   fundingInsights: "FUNDING-INSIGHT-V1.1.0-card-integrity",
   person: "PERSON-REVIEW-V1.1",
-  skillStore: "v2.0.0 GPT-5.6 prompt-contract governance",
+  skillStore: "v2.0.1 GPT-5.6 full-audit corrections",
   vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",
   dataLake: "DATA-LAKE-V4.0-23-table",
   privateEvidence: "PRIVATE-EVIDENCE-STORE-V2.0",
@@ -65,20 +65,20 @@ const ledgerChecks = [
   ["Person-account review contract", expected.person],
   ["Weekly report page-generator Skill", "guanlan-weekly-report-page-generator v1.2.0"],
   ["Monthly report page-generator Skill", "guanlan-monthly-report-page-generator v1.2.0"],
-  ["Data Center supervisor Skill", "guanlan-data-center-supervisor v1.3.0"],
+  ["Data Center supervisor Skill", "guanlan-data-center-supervisor v1.3.1"],
   ["Opportunity Map updater Skill", "guanlan-opportunity-radar-updater v1.5.0"],
   ["Trend Radar updater Skill", "guanlan-trend-radar-updater v1.1.0"],
-  ["Funding Insight generator Skill", "guanlan-funding-insight-generator v1.2.0"],
-  ["First-Line Viewpoints monitor Skill", "guanlan-first-line-viewpoints-monitor v1.2.0"],
+  ["Funding Insight generator Skill", "guanlan-funding-insight-generator v1.2.1"],
+  ["First-Line Viewpoints monitor Skill", "guanlan-first-line-viewpoints-monitor v1.2.1"],
   ["Community Intelligence monitor Skill", "guanlan-community-intelligence-monitor v1.1.0"],
-  ["Follow-builders support Skill", "follow-builders v2.1.0"],
+  ["Follow-builders support Skill", "follow-builders v2.1.1"],
   ["Weekly business-change content Skill", "guanlan-weekly-business-change-radar v1.3.0"],
   ["Monthly business-structure content Skill", "guanlan-monthly-business-structure-report v1.0.0"],
   ["Daily source monitor Skill", "guanlan-daily-monitor v1.3.0"],
   ["Source-intake quality gate Skill", "guanlan-monitor-quality-gate v1.3.0"],
   ["Source-intake QC Skill", "guanlan-daily-monitor-qc v1.3.0"],
-  ["Skill governance editor", "guanlan-skill-editor v2.0.0"],
-  ["Code and rule auditor", "guanlan-code-rule-auditor v1.2.0"],
+  ["Skill governance editor", "guanlan-skill-editor v2.0.1"],
+  ["Code and rule auditor", "guanlan-code-rule-auditor v1.2.1"],
   ["Skill Store version", expected.skillStore],
   ["Local Obsidian knowledge base", expected.vault],
   ["Data lake contract", expected.dataLake],
@@ -89,6 +89,10 @@ const ledgerChecks = [
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
 }
+expectText("AGENTS.md", "Current Skill Store version: `v2.0.1`");
+expectText(".agents/README.md", "Skill Store version: `v2.0.1`");
+expectText("docs/agent-handoff.md", "Current Skill governance: Skill Store `v2.0.1`");
+expectText("context/version-ledger.md", "`guanlan-code-rule-auditor` v1.2.1 audits V4 facts");
 const packageVersion = readJson("package.json").version;
 const packageLockVersion = readJson("package-lock.json").version;
 if (packageVersion !== expected.packageVersion) fail(`package.json expected ${expected.packageVersion}, found ${packageVersion || "missing"}`);
@@ -163,15 +167,16 @@ if (founderReview.summary?.accepted_founder_profiles !== 30 || founderReview.dec
 }
 
 const skillVersions = [
-  ["agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md", 'version: "1.3.0"'],
+  ["agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md", 'version: "1.3.1"'],
   ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", 'version: "1.5.0"'],
-  ["agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md", 'version: "1.2.0"'],
+  ["agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md", 'version: "1.2.1"'],
   ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.1.0"'],
-  ["agent-workflow/skills/follow-builders/SKILL.md", 'version: "2.1.0"'],
+  ["agent-workflow/skills/follow-builders/SKILL.md", 'version: "2.1.1"'],
+  ["agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md", 'version: "1.2.1"'],
   ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.2.0"'],
   ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "1.0.0"'],
-  ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "2.0.0"'],
-  ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", 'version: "1.2.0"'],
+  ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "2.0.1"'],
+  ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", 'version: "1.2.1"'],
   ["agent-workflow/skills/guanlan-weekly-business-change-radar/SKILL.md", 'version: "1.3.0"'],
   ["agent-workflow/skills/guanlan-daily-monitor/SKILL.md", 'version: "1.3.0"'],
   ["agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md", 'version: "1.3.0"'],

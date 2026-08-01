@@ -3,7 +3,7 @@ name: guanlan-funding-insight-generator
 description: "Use when generating, backfilling, repairing, auditing, or explaining the Funding Insights column from verified Data Center V4 funding events. Covers secondary web research with Tavily and Exa, captured-source evidence, DeepSeek V4 Pro card writing, explicit-investor and exact-quote gates, historical event deduplication, application-layer entity links, frontstage projection, and automatic fail-closed publication. Do not use to create canonical funding facts, mutate the entity registry, publish search snippets, or treat model output as evidence."
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.2.1"
     lane: "Funding Insights"
     status: "current downstream application"
     order: 91
@@ -51,7 +51,7 @@ Funding Insights is a downstream application. Keep its research, comparisons, ca
 4. Search each subject company through both configured providers. Capture original page text; search titles, snippets, provider answers, and URLs are discovery metadata only.
 5. Send the verified CanonicalEvent plus captured source bodies to `deepseek-v4-pro`. Require every factual object to cite an exact continuous quote contained in one captured body. `financing.investors` contains only investors explicitly tied to the current round; historical or ambiguous investors belong in `other_round_investors`.
 6. Normalize the financing round into `round_code` plus a canonical Chinese `round`, preserve `round_original`, build the structured investment thesis and customer research status, and resolve product/founder links by canonical exact match or an accepted same-type mapping in `entity-link-decisions.json`.
-7. Block publication when current-round investors are unnamed or missing, historical investors remain in the current-round field, fewer than two cited captured sources remain, required company/product/financing facts lack exact quotes, reader-facing narrative is not Chinese, or schema/model provenance fails.
+7. Block publication when current-round investors are unnamed or missing unless the source explicitly does not disclose investors. That bounded exception requires an empty `financing.investors` list, `investor_disclosure_status=not_disclosed`, and the retained `investors_missing` risk marker. Also block when historical investors remain in the current-round field, fewer than two cited captured sources remain, required company/product/financing facts lack exact quotes, reader-facing narrative is not Chinese, or schema/model provenance fails.
 8. Build and validate the public projection:
 
    ```powershell
@@ -71,7 +71,7 @@ Funding Insights is a downstream application. Keep its research, comparisons, ca
 - Unresolved product and founder names must appear in `entity-review-queue.json` with evidence. Reviewed aliases can be mapped only to an existing same-type canonical V4 entity through `entity-link-decisions.json`; neither file is authority to create a canonical entity.
 - Public cards aggregate repeated disclosures for the same canonical company and normalized round code, including undisclosed, multi-round, and other categories, while preserving every source event and disclosure.
 - Comparisons and capital judgment are downstream analysis, not factual RELATION-V2 edges.
-- Missing investor disclosure is a hard publication failure.
+- Missing investor data is a hard publication failure unless the captured source explicitly establishes non-disclosure and the card uses the empty-list/status/risk-marker exception defined above. Generic investor categories never become named institutions.
 - Automatic publication means deterministic gate passage; it does not mean model output bypasses validation.
 - Dry runs, local inspection, and deterministic gates are safe within an authorized funding task. Search/model calls may incur external usage and run only through the requested generator/backfill workflow; publication, canonical mutation, and ambiguous entity decisions require their owning workflow or explicit review.
 
