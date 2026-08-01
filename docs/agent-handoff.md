@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-07-31
+date: 2026-08-01
 status: current
 encoding: UTF-8
 ---
@@ -12,11 +12,11 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current release: `V4.6.0-two-center-focus`; public website shell `SITE-V4.4.0-two-center-focus`.
+- Current release: `V4.6.1-china-market-scope`; public website shell `SITE-V4.4.1-china-market-scope`.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
 - Current public frontstage: Data Center (Event Library / Community Intelligence / First-Line Viewpoints / Entity Library) and Application Center (Trend Radar / Guanlan Research).
 - Current backend: Dashboard / operations console.
-- Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.1-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
+- Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
 - Current machine-serving projection: `DATA-LAKE-V4.0-23-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.

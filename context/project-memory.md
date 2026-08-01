@@ -33,6 +33,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - If an old rule conflicts with the current SITE-V4.4.1 public contract, rebuild or delete the old route instead of restoring V3 page content.
 - China-market coverage is a scope projection inside the existing V4 fact chain. Source categories are descriptive only: no source weights or ranking bonuses are permitted, and procurement/tender sources remain disabled for this scope.
 - First-Line Viewpoints and Community Intelligence keep their existing public content contracts. FDE / AI Hardware are Event Library themes, relationships are embedded in Entity Library detail, Funding Insights is a Guanlan Research topic route, and Opportunity Map is an unlisted internal lab.
+- DeepSeek is the sole production source-title translation provider. Formal translation-registry entries must retain `deepseek_title_translation` plus a non-empty model identifier; manual-reviewed, MyMemory, business-rule, and missing-provenance entries are not approved publication translations.
+- A verified funding event may publish without named investors only when captured evidence confirms the financing but discloses investors solely by generic category. The card must keep an empty investor list, set `investor_disclosure_status=not_disclosed`, retain the `investors_missing` risk marker, and never materialize the generic category as an institution.
 - Legacy V3 column URLs remain redirects only; no public page may load V3 navigation, V3 page assets, or the V3 desk JSON.
 
 ## Operating Model
