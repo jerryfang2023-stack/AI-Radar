@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-01T03:06:32.191Z",
+    "generatedAt": "2026-08-01T03:21:51.081Z",
     "dateRange": {
       "start": "2026-07-26",
       "end": "2026-08-01"
@@ -51,7 +51,7 @@ window.WaveSightPipelineDashboard = {
       "label": "应用投影",
       "status": "partial",
       "counts": {
-        "opportunity_map": "failed",
+        "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "failed",
         "fde_hardware_sync": "unknown"
@@ -108,7 +108,7 @@ window.WaveSightPipelineDashboard = {
       }
     },
     "applicationProjection": {
-      "opportunity_map": "failed",
+      "opportunity_map": "passed",
       "trend_radar": "passed",
       "funding_insights": "failed",
       "fde_hardware_sync": "unknown"
@@ -225,9 +225,7 @@ window.WaveSightPipelineDashboard = {
     "manifest_date": "2026-08-01",
     "gate_date": "2026-08-01",
     "failures": [],
-    "warnings": [
-      "No source-bounded FDE projection was produced."
-    ]
+    "warnings": []
   },
   "compatibility": {
     "status": "retired_archive",

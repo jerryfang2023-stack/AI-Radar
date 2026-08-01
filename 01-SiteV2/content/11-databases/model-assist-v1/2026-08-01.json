@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-08-01T03:04:24.353Z",
+  "generated_at": "2026-08-01T03:20:15.948Z",
   "data_date": "2026-08-01",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 249,
@@ -19,7 +19,7 @@
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "BER10",
-        "rationale": "The candidate canonical_name is BER10. The source text explicitly mentions 'BER10 处理器' and describes it as a processor announced by Openchip, confirming the candidate mention refers to this entity.",
+        "rationale": "The candidate canonical_name is BER10. The source text explicitly mentions 'BER10 处理器' and describes it as a processor announced by Openchip, confirming the candidate mention refers to this product.",
         "candidate_name": "BER10"
       },
       "evidence": [
@@ -51,7 +51,7 @@
           "detail": "invalid_same_entity_target"
         }
       ],
-      "generated_at": "2026-08-01T03:03:50.857Z"
+      "generated_at": "2026-08-01T03:19:29.560Z"
     },
     {
       "candidate_id": "MAC-062b870bccb8f54c",
@@ -90,7 +90,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:30.661Z"
+      "generated_at": "2026-08-01T03:19:20.525Z"
     },
     {
       "candidate_id": "MAC-0f1c194d260b3668",
@@ -181,7 +181,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:19.943Z"
+      "generated_at": "2026-08-01T03:19:13.624Z"
     },
     {
       "candidate_id": "MAC-18241e226d0e057b",
@@ -220,7 +220,55 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:15.206Z"
+      "generated_at": "2026-08-01T03:19:11.295Z"
+    },
+    {
+      "candidate_id": "MAC-19a1e3557816a635",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-cfe6926406f30a15",
+      "raw_id": "RAW-f35c00a7a9cb1d10",
+      "source_ref": "SA-c900c6b1ccf7a29f",
+      "source_hash": "1f0354601beef612",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Gemini Enterprise Agent",
+        "rationale": "The candidate canonical_name is 'Gemini Enterprise Agent', but the SOURCE_TEXT consistently refers to the product as 'Agent Platform' or 'Gemini Enterprise Agent Platform' (e.g., in the title). The exact phrase 'Gemini Enterprise Agent' does not appear in the text, and no VERIFIED_ALTERNATIVES are provided to confirm a match. The text describes a platform with evaluation services, not a standalone agent product.",
+        "candidate_name": "Gemini Enterprise Agent"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 74,
+          "quote": "Agent and Model Evaluations in Gemini Enterprise Agent Platform are now GA"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:19:57.263Z"
     },
     {
       "candidate_id": "MAC-1b430a79264e927f",
@@ -284,7 +332,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "GPT-5.6",
-        "rationale": "The candidate canonical_name is 'GPT-5.6', but the source text refers to 'GPT-5.6 Luna', 'GPT-5.6 Sol', and 'GPT-5.6' as a model family with distinct variants. The quote shows 'GPT-5.6 Luna' is a specific model within the GPT-5.6 family, not the exact entity 'GPT-5.6' itself. No VERIFIED_ALTERNATIVES exist to match.",
+        "rationale": "The candidate canonical_name is 'GPT-5.6', but the source text refers to 'GPT-5.6 Luna' and 'GPT-5.6 Sol' as distinct model variants within the GPT-5.6 family. The quote shows Luna is a specific model, not the umbrella GPT-5.6 entity. No VERIFIED_ALTERNATIVES exist to match.",
         "candidate_name": "GPT-5.6"
       },
       "evidence": [
@@ -316,7 +364,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:03:58.324Z"
+      "generated_at": "2026-08-01T03:19:34.975Z"
     },
     {
       "candidate_id": "MAC-1fbb09d8689fa52c",
@@ -364,30 +412,30 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:08.532Z"
+      "generated_at": "2026-08-01T03:19:45.575Z"
     },
     {
-      "candidate_id": "MAC-2739caac6b73cf08",
+      "candidate_id": "MAC-2081f45ee9d39711",
       "task_type": "entity_resolution",
-      "asset_id": "EN-a5ba7c1a2375f0d4",
-      "raw_id": "RAW-ca85424b5a9f0feb",
-      "source_ref": "SA-ae4d1bcf62ffcbf3",
-      "source_hash": "fcdf12c3763b78d1",
+      "asset_id": "EN-80015fe8be0a9322",
+      "raw_id": "RAW-f35c00a7a9cb1d10",
+      "source_ref": "SA-c900c6b1ccf7a29f",
+      "source_hash": "1f0354601beef612",
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "prompt_version": "model-assist-2026-07-18.2",
-      "status": "rejected",
+      "status": "requires_review",
       "proposal": {
-        "decision": "distinct_entity",
-        "canonical_name": "Earth AI",
-        "rationale": "The candidate canonical_name 'Earth AI' does not match any VERIFIED_ALTERNATIVES (list is empty). The source text describes a feature within Google Earth that uses an AI image generator called 'Nano Banana 2', but never refers to this feature as 'Earth AI'. The quote refers to 'its Earth AI feature' in the title, but the body text describes it as an 'AI image generation feature on Google Earth'. Without an exact match in VERIFIED_ALTERNATIVES, and because the candidate name is not explicitly used in the source as a proper noun for the feature, it cannot be confirmed as the same entity.",
-        "candidate_name": "Earth AI"
+        "decision": "unknown",
+        "canonical_name": "Model Evaluations",
+        "rationale": "The candidate canonical_name is 'Model Evaluations'. The SOURCE_TEXT refers to 'Agent and model evaluations' as a feature within the 'Gemini Enterprise Agent Platform'. There are no VERIFIED_ALTERNATIVES provided to match against, and the exact string 'Model Evaluations' does not appear as a standalone product name in the text. Without a verified alternative to confirm identity, the relationship cannot be established.",
+        "candidate_name": "Model Evaluations"
       },
       "evidence": [
         {
-          "start": 58,
-          "end": 159,
-          "quote": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation"
+          "start": 335,
+          "end": 408,
+          "quote": "Agent and model evaluations in Agent Platform are now generally available"
         }
       ],
       "gate_results": [
@@ -403,8 +451,8 @@
         },
         {
           "gate": "protected_facts",
-          "status": "failed",
-          "detail": "unsupported_numeric_fact:2"
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
         },
         {
           "gate": "task_contract",
@@ -412,7 +460,103 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:14.385Z"
+      "generated_at": "2026-08-01T03:19:43.088Z"
+    },
+    {
+      "candidate_id": "MAC-256e25813f1b67ca",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c737e8142a927072",
+      "raw_id": "RAW-5634f4c8aa7781df",
+      "source_ref": "SA-1c64b7fd7a109d47",
+      "source_hash": "ba7eb009c2aaf899",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Citadel",
+        "rationale": "The candidate entity 'Citadel' refers to Ken Griffin's hedge fund that purchased assets from Situational Awareness. The only verified alternative is 'OpenAI', which is a different organization mentioned as a former employer of the hedge fund founder. The quote shows Citadel acting as a buyer in a transaction, which is a distinct entity from OpenAI.",
+        "candidate_name": "Citadel"
+      },
+      "evidence": [
+        {
+          "start": 580,
+          "end": 863,
+          "quote": "Situational Awareness, the hedge fund started by a 24-year-old former OpenAI employee that focuses on artificial intelligence bets, has sold most or all, depending on who’s reporting, of its entire public stock portfolio to Ken Griffin’s Citadel after several bad weeks for AI stocks"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:19:52.021Z"
+    },
+    {
+      "candidate_id": "MAC-2739caac6b73cf08",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a5ba7c1a2375f0d4",
+      "raw_id": "RAW-ca85424b5a9f0feb",
+      "source_ref": "SA-ae4d1bcf62ffcbf3",
+      "source_hash": "fcdf12c3763b78d1",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Earth AI",
+        "rationale": "The candidate canonical_name 'Earth AI' does not match any VERIFIED_ALTERNATIVES (list is empty). The source text describes a feature within Google Earth that uses an AI image generator called 'Nano Banana 2', but it never refers to this feature by the name 'Earth AI'. The quote shows the feature is a component of Google Earth, not a standalone product with that name.",
+        "candidate_name": "Earth AI"
+      },
+      "evidence": [
+        {
+          "start": 160,
+          "end": 354,
+          "quote": "Google rolled out a new feature on Thursday that allowed users to deploy Nano Banana 2, its AI image generator, to create fabricated images inside its satellite imagery mapping app Google Earth."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:19:48.704Z"
     },
     {
       "candidate_id": "MAC-28266d39a43d88de",
@@ -451,7 +595,55 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:26.860Z"
+      "generated_at": "2026-08-01T03:19:18.419Z"
+    },
+    {
+      "candidate_id": "MAC-28f160801eaeddef",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a26b96f81a1be10e",
+      "raw_id": "RAW-a9ea512df6890d5d",
+      "source_ref": "SA-529f5785cbf17d34",
+      "source_hash": "e44355b8debc269d",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "全态感知",
+        "rationale": "VERIFIED_ALTERNATIVES contains only OpenAI. The candidate '全态感知' is an AI hedge fund founded by a former OpenAI researcher, but the source text describes it as a distinct organization, not an alias for OpenAI. The relationship is founder/former employer, not entity identity.",
+        "candidate_name": "全态感知"
+      },
+      "evidence": [
+        {
+          "start": 29,
+          "end": 122,
+          "quote": "前 OpenAI 研究员利奥波德 · 阿申布伦纳（Leopold Aschenbrenner）创立的 AI 对冲基金“全态感知”（Situational Awareness）出现严重危机"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:19:48.668Z"
     },
     {
       "candidate_id": "MAC-2967f3be431ead1b",
@@ -469,7 +661,7 @@
           {
             "event_type": "policy_regulation",
             "subject": "One Big Beautiful Bill Act",
-            "object": "Qualified Small Business Stock tax exclusion rules",
+            "object": "Qualified Small Business Stock (QSBS) tax exclusion rules",
             "evidence_index": 0
           },
           {
@@ -525,7 +717,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:03:46.677Z"
+      "generated_at": "2026-08-01T03:19:26.154Z"
     },
     {
       "candidate_id": "MAC-30509e13c406c3e4",
@@ -564,7 +756,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:18.670Z"
+      "generated_at": "2026-08-01T03:19:13.546Z"
     },
     {
       "candidate_id": "MAC-329905687b5d9ff0",
@@ -580,7 +772,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "Google Earth",
-        "rationale": "The candidate 'Google Earth' is a specific product/application, while the verified alternative 'Google' refers to the parent company. The source text distinguishes between the two, referring to 'Google Earth' as a tool with features and 'Google' as the company making decisions. They are not the same entity.",
+        "rationale": "The candidate 'Google Earth' is a product or feature, while the verified alternative 'Google' is the parent company. The source text distinguishes between the two, referring to 'Google Earth' as a tool and 'Google' as the company that makes decisions about it. A product-to-company relationship is not entity identity.",
         "candidate_name": "Google Earth"
       },
       "evidence": [
@@ -612,7 +804,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:15.146Z"
+      "generated_at": "2026-08-01T03:19:51.412Z"
     },
     {
       "candidate_id": "MAC-35aab792ecde85ad",
@@ -714,7 +906,206 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:16.249Z"
+      "generated_at": "2026-08-01T03:19:11.063Z"
+    },
+    {
+      "candidate_id": "MAC-3d4d6421c82c5d96",
+      "task_type": "fde_enrichment",
+      "asset_id": "FDE-d1333c4e772841f2",
+      "raw_id": "RAW-6c53ead6bd40ab57",
+      "source_ref": "SA-2d1e1d250b52afe5",
+      "source_hash": "34cfd7fef9edf2f6",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "fields": [
+          {
+            "field": "vendor",
+            "value": "Axe Compute Inc",
+            "evidence_index": 0
+          },
+          {
+            "field": "delivery_model",
+            "value": "single-tenant, production-scale AI cluster, designed and operated by Axe Compute",
+            "evidence_index": 1
+          },
+          {
+            "field": "reported_need",
+            "value": "demanding workloads such as real-time inference, ongoing model fine-tuning, and high-throughput data pipelines",
+            "evidence_index": 2
+          },
+          {
+            "field": "systems_integrated",
+            "value": [
+              "NVIDIA Blackwell B300 GPU cluster"
+            ],
+            "evidence_index": 3
+          },
+          {
+            "field": "reported_delivery_components",
+            "value": [
+              "Axe Compute Build program"
+            ],
+            "evidence_index": 4
+          },
+          {
+            "field": "reported_outcomes",
+            "value": [
+              "lifts the company's 2026 signed contracted value to more than $3 billion",
+              "tied to more than $534 million in expected customer prepayments over the next 30 days",
+              "boosting annual run rate to over $696 million"
+            ],
+            "evidence_index": 5
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 857,
+          "end": 905,
+          "quote": "Axe Compute Inc ( (AGPU) ) has issued an update."
+        },
+        {
+          "start": 1130,
+          "end": 1335,
+          "quote": "The single-tenant, production-scale AI cluster, designed and operated by Axe Compute, targets demanding workloads such as real-time inference, ongoing model fine-tuning, and high-throughput data pipelines."
+        },
+        {
+          "start": 1216,
+          "end": 1334,
+          "quote": "targets demanding workloads such as real-time inference, ongoing model fine-tuning, and high-throughput data pipelines"
+        },
+        {
+          "start": 1015,
+          "end": 1090,
+          "quote": "a massive, dedicated NVIDIA Blackwell B300 GPU cluster in the United States"
+        },
+        {
+          "start": 1008,
+          "end": 1128,
+          "quote": "deploy a massive, dedicated NVIDIA Blackwell B300 GPU cluster in the United States through its Axe Compute Build program"
+        },
+        {
+          "start": 1386,
+          "end": 1863,
+          "quote": "lifts the company’s 2026 signed contracted value to more than $3 billion and is tied to more than $534 million in expected customer prepayments over the next 30 days, covering much of the related GPU and infrastructure capex. Axe Compute plans to combine these prepayments with project-level financing, with Build deployments beginning to generate monthly revenue this quarter and further activations in the fourth quarter of 2026, boosting annual run rate to over $696 million"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:20:08.602Z"
+    },
+    {
+      "candidate_id": "MAC-3da0f4d7b07b0142",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-cbc62794911ff31b",
+      "raw_id": "RAW-24ae8c0b68aa498d",
+      "source_ref": "SA-6833cb669b52e3c3",
+      "source_hash": "2c8407080ba388c4",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Amazon",
+        "rationale": "The candidate entity is 'Amazon' and the verified alternative is 'OpenAI'. The source text describes Amazon as an investor in OpenAI, establishing a relationship of investor/investee, not identity. The quote confirms Amazon invested in OpenAI, meaning they are distinct organizations.",
+        "candidate_name": "Amazon"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:19:54.458Z"
+    },
+    {
+      "candidate_id": "MAC-3f203da58af45437",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-2e334bb8de4eac34",
+      "raw_id": "RAW-cd81c97e8fb60343",
+      "source_ref": "SA-f748b4f82619548e",
+      "source_hash": "e7ff3f6841e97c43",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "丘脑智能",
+        "rationale": "丘脑智能是一家做多模态长记忆的创业公司，其业务是提供独立的记忆层基础设施（MemAura记忆基座），客户包括陪伴硬件和垂类Agent场景。VERIFIED_ALTERNATIVES中的DeepSeek、Alibaba、Tencent均为基模厂商或大型科技公司，且文中明确提到基模厂商与记忆公司应各有分工（如“基模厂商和记忆公司应该各有分工”），并提及DeepSeek V4作为基模的例子。因此，丘脑智能与这些已核实实体是不同组织，不存在同一实体关系。",
+        "candidate_name": "丘脑智能"
+      },
+      "evidence": [
+        {
+          "start": 2965,
+          "end": 2980,
+          "quote": "基模厂商和记忆公司应该各有分工"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:4"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:19:34.294Z"
     },
     {
       "candidate_id": "MAC-40da4a9dcb441f37",
@@ -809,7 +1200,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:03:53.673Z"
+      "generated_at": "2026-08-01T03:19:32.327Z"
     },
     {
       "candidate_id": "MAC-451dfea322dde832",
@@ -897,9 +1288,9 @@
       "prompt_version": "model-assist-2026-07-18.2",
       "status": "requires_review",
       "proposal": {
-        "decision": "unknown",
+        "decision": "distinct_entity",
         "canonical_name": "Axe Compute",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The source text refers to 'Axe Compute Inc' and 'Axe Compute', which align with the candidate name, but without any verified alternatives, identity cannot be confirmed or denied.",
+        "rationale": "The candidate entity Axe Compute is a neocloud AI infrastructure platform, while the verified alternative SpaceX is an aerospace manufacturer and space transportation company. The source text mentions SpaceX only in an unrelated trending article headline, and no quote proves Axe Compute refers to SpaceX.",
         "candidate_name": "Axe Compute"
       },
       "evidence": [
@@ -931,7 +1322,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:03:58.558Z"
+      "generated_at": "2026-08-01T03:19:37.390Z"
     },
     {
       "candidate_id": "MAC-4f11b724e84bc1c5",
@@ -970,7 +1361,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:18.682Z"
+      "generated_at": "2026-08-01T03:19:12.302Z"
     },
     {
       "candidate_id": "MAC-564f5dd2ea233bf7",
@@ -986,7 +1377,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "ARC-AGI-3",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The source text confirms the candidate name 'ARC-AGI-3' is mentioned, but without a verified alternative, identity cannot be confirmed as same_entity.",
+        "rationale": "VERIFIED_ALTERNATIVES is empty, so there is no existing verified entity to match against. The source text confirms the candidate name 'ARC-AGI-3' is used, but without a verified alternative, identity cannot be confirmed as same_entity.",
         "candidate_name": "ARC-AGI-3"
       },
       "evidence": [
@@ -1018,7 +1409,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:10.866Z"
+      "generated_at": "2026-08-01T03:19:45.658Z"
     },
     {
       "candidate_id": "MAC-5eaf66433ebb24d3",
@@ -1108,7 +1499,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "DeepSeek-V4-Flash",
-        "rationale": "The candidate 'DeepSeek-V4-Flash' is a specific API product version released by the organization 'DeepSeek' (深度求索). The source text states '深度求索（DeepSeek）...宣布 DeepSeek-V4-Flash 正式版 API 上线公测', establishing a publisher/product relationship rather than identity with the verified entity 'DeepSeek'. The candidate does not exactly match any verified alternative canonical name or alias.",
+        "rationale": "The candidate 'DeepSeek-V4-Flash' is a specific API product version, while the verified alternative 'DeepSeek' (深度求索) is the organization that developed and published it. The source text states '深度求索（DeepSeek）...宣布 DeepSeek-V4-Flash 正式版 API 上线公测', establishing a publisher-product relationship, not entity identity.",
         "candidate_name": "DeepSeek-V4-Flash"
       },
       "evidence": [
@@ -1140,7 +1531,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:19.553Z"
+      "generated_at": "2026-08-01T03:19:59.725Z"
     },
     {
       "candidate_id": "MAC-60769bb1fc525baa",
@@ -1179,7 +1570,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:26.217Z"
+      "generated_at": "2026-08-01T03:19:17.257Z"
     },
     {
       "candidate_id": "MAC-674d3a4707cec035",
@@ -1218,7 +1609,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:34.546Z"
+      "generated_at": "2026-08-01T03:19:21.433Z"
     },
     {
       "candidate_id": "MAC-6810f6294a6b374a",
@@ -1331,7 +1722,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:40.535Z"
+      "generated_at": "2026-08-01T03:19:23.523Z"
     },
     {
       "candidate_id": "MAC-6e0e034bf3edb345",
@@ -1370,7 +1761,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:39.458Z"
+      "generated_at": "2026-08-01T03:19:22.816Z"
     },
     {
       "candidate_id": "MAC-6e32392ff56a9777",
@@ -1409,7 +1800,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:17.423Z"
+      "generated_at": "2026-08-01T03:19:12.346Z"
     },
     {
       "candidate_id": "MAC-74f60b12d4997fa6",
@@ -1425,28 +1816,18 @@
       "proposal": {
         "fields": [
           {
-            "field": "compute_layer",
-            "value": "vision-language-action model",
-            "evidence_index": 0
-          },
-          {
-            "field": "manufacturing_stage",
+            "field": "process_node",
             "value": "early access",
-            "evidence_index": 1
+            "evidence_index": 0
           },
           {
             "field": "supplier",
             "value": "Google DeepMind",
-            "evidence_index": 2
+            "evidence_index": 1
           }
         ]
       },
       "evidence": [
-        {
-          "start": 199,
-          "end": 321,
-          "quote": "Google Deepmind has introduced Gemini Robotics 2, which it calls its most advanced vision-language-action (VLA) model yet."
-        },
         {
           "start": 773,
           "end": 833,
@@ -1454,8 +1835,8 @@
         },
         {
           "start": 199,
-          "end": 247,
-          "quote": "Google Deepmind has introduced Gemini Robotics 2"
+          "end": 321,
+          "quote": "Google Deepmind has introduced Gemini Robotics 2, which it calls its most advanced vision-language-action (VLA) model yet."
         }
       ],
       "gate_results": [
@@ -1480,7 +1861,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:20.591Z"
+      "generated_at": "2026-08-01T03:20:01.566Z"
     },
     {
       "candidate_id": "MAC-77456f708519e02c",
@@ -1496,7 +1877,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "LinkedIn",
-        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there is no reference set to confirm whether the candidate entity matches an existing verified entity. The source text discusses LinkedIn as a platform introducing a new feature, but without alternatives, identity cannot be confirmed or denied.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there is no reference set to confirm whether the candidate entity matches an existing verified entity. The source text discusses LinkedIn as a platform introducing a new feature, but without verified alternatives, identity cannot be confirmed or denied.",
         "candidate_name": "LinkedIn"
       },
       "evidence": [
@@ -1528,7 +1909,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:02.156Z"
+      "generated_at": "2026-08-01T03:19:37.684Z"
     },
     {
       "candidate_id": "MAC-7f2dfb15af50765c",
@@ -1544,14 +1925,14 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "国家发改委",
-        "rationale": "The candidate '国家发改委' refers to a government regulatory body that is proposing legislation, while the verified alternatives 'DeepSeek' and 'Moonshot AI' are private AI companies mentioned as examples of domestic innovation. The source text distinguishes between the regulator and the regulated entities, so they are distinct.",
+        "rationale": "The candidate entity '国家发改委' refers to a government body (国家发展改革委) that is a publisher or legislative driver of AI regulation. The verified alternatives 'DeepSeek' and 'Moonshot AI' are AI companies mentioned as examples of domestic innovation. A relationship such as regulator vs. regulated entity does not constitute entity identity.",
         "candidate_name": "国家发改委"
       },
       "evidence": [
         {
-          "start": 90,
+          "start": 16,
           "end": 126,
-          "quote": "深度求索、月之暗面等本土企业先后发布参数规模达到“万亿”级别的开源大模型"
+          "quote": "国家发展改革委政策研究室主任、新闻发言人蒋毅在今天（31 日）的新闻发布会上表示，上半年，我国人工智能自主创新步伐加快，在全产业链、多环节实现突破。深度求索、月之暗面等本土企业先后发布参数规模达到“万亿”级别的开源大模型"
         }
       ],
       "gate_results": [
@@ -1576,7 +1957,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:03:50.513Z"
+      "generated_at": "2026-08-01T03:19:29.515Z"
     },
     {
       "candidate_id": "MAC-82537a99afbebd6a",
@@ -1592,7 +1973,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "LinkedIn actually",
-        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there are no verified entities to match against. The candidate name 'LinkedIn actually' appears to be derived from the article title, but without verified alternatives, identity cannot be confirmed or denied.",
+        "rationale": "No VERIFIED_ALTERNATIVES list was provided, so there is nothing to match against. The candidate name 'LinkedIn actually' appears to be derived from the article title, but the source text refers to the platform as 'LinkedIn' throughout. Without verified alternatives, entity identity cannot be confirmed or denied.",
         "candidate_name": "LinkedIn actually"
       },
       "evidence": [
@@ -1624,7 +2005,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:05.006Z"
+      "generated_at": "2026-08-01T03:19:40.245Z"
     },
     {
       "candidate_id": "MAC-83673851643de6c7",
@@ -1737,7 +2118,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:19.787Z"
+      "generated_at": "2026-08-01T03:19:14.937Z"
     },
     {
       "candidate_id": "MAC-9022cfa2d6b06bd7",
@@ -1776,7 +2157,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:22.220Z"
+      "generated_at": "2026-08-01T03:19:16.292Z"
     },
     {
       "candidate_id": "MAC-9d548b6c977e598c",
@@ -1792,7 +2173,7 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "July 2026 Latest Updates",
-        "rationale": "The candidate canonical_name 'July 2026 Latest Updates' appears to be a title or heading for a collection of release notes, while the SOURCE_TEXT describes the GPT‑5.6 model family, its capabilities, and efficiency optimizations. The source does not contain any quote that proves the candidate mention refers to a verified alternative entity, and no VERIFIED_ALTERNATIVES were provided for matching.",
+        "rationale": "The candidate canonical_name 'July 2026 Latest Updates' appears to be a title or heading for a collection of release notes. The SOURCE_TEXT is a blog post detailing the efficiency design of the GPT‑5.6 model family. The content of the post does not describe or refer to an entity named 'July 2026 Latest Updates'; instead, the title in the SOURCE_TEXT is 'OpenAI Release Notes - July 2026 Latest Updates - Releasebot', which is the title of the document containing the post, not the subject of the post itself. Therefore, the candidate does not refer to the same entity as the content of the source.",
         "candidate_name": "July 2026 Latest Updates"
       },
       "evidence": [
@@ -1824,7 +2205,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:03:48.019Z"
+      "generated_at": "2026-08-01T03:19:27.372Z"
     },
     {
       "candidate_id": "MAC-9e3d1a540ef0ef93",
@@ -1863,7 +2244,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:38.209Z"
+      "generated_at": "2026-08-01T03:19:22.577Z"
     },
     {
       "candidate_id": "MAC-9f1ad6265d0f5aeb",
@@ -1887,7 +2268,7 @@
           {
             "event_type": "pricing_change",
             "subject": "DeepSeek-V4-Flash-0731",
-            "object": "$0.14/million input and $0.27/million output pricing",
+            "object": "$0.14/million input and $0.27/million output",
             "evidence_index": 1
           },
           {
@@ -1937,7 +2318,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:03:25.051Z"
+      "generated_at": "2026-08-01T03:19:19.276Z"
     },
     {
       "candidate_id": "MAC-a67a9c7a6c64887e",
@@ -1976,7 +2357,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:29.576Z"
+      "generated_at": "2026-08-01T03:19:20.447Z"
     },
     {
       "candidate_id": "MAC-a7bee4fcfc364acd",
@@ -2015,7 +2396,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:21.057Z"
+      "generated_at": "2026-08-01T03:19:14.633Z"
     },
     {
       "candidate_id": "MAC-a834a8fcf80ef8a5",
@@ -2054,7 +2435,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:37.247Z"
+      "generated_at": "2026-08-01T03:19:21.818Z"
     },
     {
       "candidate_id": "MAC-b4ed3a1e98da2b56",
@@ -2070,7 +2451,7 @@
       "proposal": {
         "decision": "unknown",
         "canonical_name": "Gemini Robotics 2",
-        "rationale": "No VERIFIED_ALTERNATIVES were provided, so it is impossible to determine whether the candidate entity matches an existing verified entity. The source text confirms the existence of 'Gemini Robotics 2' as a product introduced by Google Deepmind.",
+        "rationale": "No VERIFIED_ALTERNATIVES were provided, so there is no basis to confirm whether the candidate entity matches any verified entity.",
         "candidate_name": "Gemini Robotics 2"
       },
       "evidence": [
@@ -2102,7 +2483,55 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:17.571Z"
+      "generated_at": "2026-08-01T03:19:56.420Z"
+    },
+    {
+      "candidate_id": "MAC-b6ea3ef81a81cad5",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c8d65b5463695c98",
+      "raw_id": "RAW-657a3c1d25e711a4",
+      "source_ref": "SA-77ebcf67645e18d5",
+      "source_hash": "b304cf8f3fcb33d9",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "慕尼黑地方法院",
+        "rationale": "VERIFIED_ALTERNATIVES列表为空，无法确认该候选实体是否与任何已验证实体匹配。SOURCE_TEXT中提及的“德国慕尼黑地方法院”与候选名称一致，但缺乏已验证实体进行比对。",
+        "candidate_name": "慕尼黑地方法院"
+      },
+      "evidence": [
+        {
+          "start": 23,
+          "end": 38,
+          "quote": "德国慕尼黑地方法院周五作出裁决"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-08-01T03:19:54.229Z"
     },
     {
       "candidate_id": "MAC-b8f09384b91baa7f",
@@ -2118,14 +2547,14 @@
       "proposal": {
         "decision": "same_entity",
         "canonical_name": "GPT-5.6 Sol",
-        "rationale": "VERIFIED_ALTERNATIVES is empty, so there are no verified alternatives to match against. However, the candidate canonical_name 'GPT-5.6 Sol' appears verbatim multiple times in SOURCE_TEXT, and the quote confirms the entity is the same model being discussed.",
+        "rationale": "The candidate canonical_name 'GPT-5.6 Sol' exactly matches the entity name used throughout SOURCE_TEXT, and the quote confirms the candidate mention refers to this model.",
         "candidate_name": "GPT-5.6 Sol"
       },
       "evidence": [
         {
-          "start": 54,
-          "end": 88,
-          "quote": "GPT-5.6 Sol 模型的 ARC-AGI-3 提高了 188%"
+          "start": 1038,
+          "end": 1193,
+          "quote": "GPT-5.6 Sol 在 ARC-AGI-3 的得分为 13.3%；在启用推理保留（inference preservation）和上下文压缩（context compression）后， GPT-5.6 Sol 在 Token 输出数量降低至六分之一的同时，得分达到 38.3%，成绩增长 188.42%。"
         }
       ],
       "gate_results": [
@@ -2150,7 +2579,7 @@
           "detail": "invalid_same_entity_target"
         }
       ],
-      "generated_at": "2026-08-01T03:04:01.816Z"
+      "generated_at": "2026-08-01T03:19:40.019Z"
     },
     {
       "candidate_id": "MAC-bf0991b6b5018163",
@@ -2314,14 +2743,14 @@
       "proposal": {
         "decision": "distinct_entity",
         "canonical_name": "谷歌地球 AI 生图功能",
-        "rationale": "The candidate refers to a specific AI image generation feature within Google Earth that was launched and quickly removed. The verified alternative 'Google' (谷歌) is the company that developed and operates Google Earth, but the candidate is a feature of a product, not the company itself. The quote shows the feature is part of Google Earth and uses a Gemini model, but it is not synonymous with the company Google.",
+        "rationale": "The candidate refers to a specific AI image generation feature within Google Earth that was launched and quickly removed. The verified alternative 'Google' (谷歌) is the company that developed and operates Google Earth, but the candidate is a product feature, not the corporate entity itself. The quote shows the feature is part of Google Earth, not Google the company.",
         "candidate_name": "谷歌地球 AI 生图功能"
       },
       "evidence": [
         {
           "start": 303,
-          "end": 417,
-          "quote": "谷歌为 Google Earth（谷歌地球）加入 AI 图像编辑功能后， 不到 24 小时便紧急下线 。这一功能调用 Gemini 旗下 Nano Banana 2 图像模型，用户只需输入文字指令，便可修改谷歌地球中的地点影像。"
+          "end": 355,
+          "quote": "谷歌为 Google Earth（谷歌地球）加入 AI 图像编辑功能后， 不到 24 小时便紧急下线 。"
         }
       ],
       "gate_results": [
@@ -2346,7 +2775,7 @@
           "detail": "task contract passed"
         }
       ],
-      "generated_at": "2026-08-01T03:04:07.621Z"
+      "generated_at": "2026-08-01T03:19:43.145Z"
     },
     {
       "candidate_id": "MAC-f87a7970299b7f43",
@@ -2385,7 +2814,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:28.412Z"
+      "generated_at": "2026-08-01T03:19:19.541Z"
     },
     {
       "candidate_id": "MAC-ffc476f0651c2ef8",
@@ -2424,7 +2853,7 @@
           "detail": "missing_claim_proposal"
         }
       ],
-      "generated_at": "2026-08-01T03:03:21.168Z"
+      "generated_at": "2026-08-01T03:19:15.569Z"
     }
   ]
 }

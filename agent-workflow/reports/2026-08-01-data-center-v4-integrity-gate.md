@@ -4,12 +4,12 @@
 - canonical_events: 28
 - claims: 83
 - tag_assertions: 6
-- facet_assertions: 12
-- fde_records: 0
-- fde_observations: 0
+- facet_assertions: 13
+- fde_records: 1
+- fde_observations: 1
 - hardware_records: 1
-- hardware_facts: 7
-- hardware_snapshots: 4
+- hardware_facts: 8
+- hardware_snapshots: 5
 - event_source_traceability: 100.0%
 - event_claim_traceability: 100.0%
 - ai_industry_scope_coverage: 100.0%
@@ -26,4 +26,4 @@
 
 ## Warnings
 
-- No source-bounded FDE projection was produced.
+- none

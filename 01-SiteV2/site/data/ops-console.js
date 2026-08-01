@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-01T03:06:32.215Z",
+    "generatedAt": "2026-08-01T03:21:51.118Z",
     "date": "2026-08-01",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -504,7 +504,7 @@ window.WaveSightOpsConsole = {
         "label": "应用投影",
         "status": "partial",
         "counts": {
-          "opportunity_map": "failed",
+          "opportunity_map": "passed",
           "trend_radar": "passed",
           "funding_insights": "failed",
           "fde_hardware_sync": "unknown"
@@ -553,7 +553,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-01T03:06:32.191Z"
+        "detail": "2026-08-01T03:21:51.081Z"
       },
       {
         "label": "Daily Supervision",
@@ -568,7 +568,7 @@ window.WaveSightOpsConsole = {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
         "data_date": "2026-08-01",
-        "generated_at": "2026-08-01T03:06:32.162Z",
+        "generated_at": "2026-08-01T03:21:51.040Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -600,12 +600,10 @@ window.WaveSightOpsConsole = {
         "manifest_date": "2026-08-01",
         "gate_date": "2026-08-01",
         "failures": [],
-        "warnings": [
-          "No source-bounded FDE projection was produced."
-        ]
+        "warnings": []
       },
       "applicationProjection": {
-        "opportunity_map": "failed",
+        "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "failed",
         "fde_hardware_sync": "unknown"
@@ -623,7 +621,7 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-01T03:06:32.191Z",
+      "generatedAt": "2026-08-01T03:21:51.081Z",
       "dateRange": {
         "start": "2026-07-26",
         "end": "2026-08-01"
@@ -667,7 +665,7 @@ window.WaveSightOpsConsole = {
         }
       },
       "applicationProjection": {
-        "opportunity_map": "failed",
+        "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "failed",
         "fde_hardware_sync": "unknown"

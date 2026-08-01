@@ -6,7 +6,7 @@
     "eventVersion": "EVENT-V1.1",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:04:34.798Z",
+    "generatedAt": "2026-08-01T03:20:28.993Z",
     "latestDataDate": "2026-08-01",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -36,14 +36,14 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 1697,
+      "events": 1698,
       "entities": 594,
       "relationships": 354
     }
   },
   "events": {
-    "EV-5226ef8b5a5481dd": {
-      "id": "EV-5226ef8b5a5481dd",
+    "EV-00514c4ffc2e3cd3": {
+      "id": "EV-00514c4ffc2e3cd3",
       "dataDate": "2026-08-01",
       "occurrenceDate": "2026-08-01",
       "eventType": "funding",
@@ -56,7 +56,7 @@
         "EN-9c8ae69b84f21a2e"
       ],
       "entityNames": [
-        "国内唯一做多模态长记忆的公司",
+        "丘脑智能",
         "Alibaba",
         "Tencent"
       ],
@@ -79,8 +79,8 @@
       ],
       "sourceUrl": "https://36kr.com/p/3919386961177985?f=rss",
       "publisher": "36氪",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5226ef8b5a5481dd"
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-00514c4ffc2e3cd3"
     },
     "EV-792e2a2b3e98399f": {
       "id": "EV-792e2a2b3e98399f",
@@ -488,48 +488,6 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-a9a8f673cb666d49"
     },
-    "EV-faf8db3567f108e2": {
-      "id": "EV-faf8db3567f108e2",
-      "dataDate": "2026-08-01",
-      "occurrenceDate": "2026-07-27",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
-      "entityIds": [],
-      "entityNames": [
-        "Axe Compute"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "compute_system",
-          "dimensionName": "产品形态",
-          "name": "计算系统"
-        }
-      ],
-      "claimIds": [
-        "CL-76ddadb920b1ec3f",
-        "CL-bad6032f732a9363",
-        "CL-2e6a0951e680517f",
-        "CL-6da6b09a098bb0b6"
-      ],
-      "sourceIds": [
-        "SA-2d1e1d250b52afe5"
-      ],
-      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
-      "publisher": "theglobeandmail.com",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-faf8db3567f108e2"
-    },
     "EV-33b3cf34f8ff7bd8": {
       "id": "EV-33b3cf34f8ff7bd8",
       "dataDate": "2026-07-29",
@@ -559,6 +517,42 @@
       "publisher": "globenewswire.com",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-33b3cf34f8ff7bd8"
+    },
+    "EV-faf8db3567f108e2": {
+      "id": "EV-faf8db3567f108e2",
+      "dataDate": "2026-07-29",
+      "occurrenceDate": "2026-07-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
+      "entityIds": [],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        }
+      ],
+      "claimIds": [
+        "CL-26870ef1004baa7c",
+        "CL-a8506ee08b5addcb",
+        "CL-21802cf1f33d32cd",
+        "CL-7cc575266f86b93c"
+      ],
+      "sourceIds": [
+        "SA-392b9e6867dafc43"
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
+      "publisher": "globenewswire.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-faf8db3567f108e2"
     },
     "EV-eb881f5de456b59a": {
       "id": "EV-eb881f5de456b59a",
@@ -12602,6 +12596,48 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-e3fe8993f46d5e12"
+    },
+    "EV-c3b96b789b5bcafd": {
+      "id": "EV-c3b96b789b5bcafd",
+      "dataDate": "2026-08-01",
+      "occurrenceDate": "2026-07-27",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "publicationStatus": "verified",
+      "category": "partnership",
+      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
+      "entityIds": [],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        }
+      ],
+      "claimIds": [
+        "CL-76ddadb920b1ec3f",
+        "CL-bad6032f732a9363",
+        "CL-d3c18f5aee2e041b",
+        "CL-46c2d0180df59c2b"
+      ],
+      "sourceIds": [
+        "SA-2d1e1d250b52afe5"
+      ],
+      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
+      "publisher": "theglobeandmail.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-c3b96b789b5bcafd"
     },
     "EV-6048ddbf55f372ea": {
       "id": "EV-6048ddbf55f372ea",
@@ -75278,16 +75314,16 @@
         "2026-08-01": {
           "key": "2026-08-01",
           "counts": {
-            "financing": 5,
+            "financing": 4,
             "deployment": 1,
-            "partnership": 0,
+            "partnership": 1,
             "product": 12,
             "hardware": 1
           },
           "eventIds": [
+            "EV-00514c4ffc2e3cd3",
             "EV-0707f3c487a36e55",
             "EV-35df5cc7eacdade7",
-            "EV-5226ef8b5a5481dd",
             "EV-7752b9d64fdfe1df",
             "EV-792e2a2b3e98399f",
             "EV-7fdffebf867b2bd7",
@@ -75297,13 +75333,13 @@
             "EV-a89a5b511c643be8",
             "EV-b27f2e417d779e5f",
             "EV-b4f38d8bff12727b",
+            "EV-c3b96b789b5bcafd",
             "EV-d9d415868b74485c",
             "EV-df3bc4ed1e6325d9",
             "EV-eb12fb9dd08e5aad",
             "EV-ebd76d18d3f0ee7b",
             "EV-ec966b509327cbac",
-            "EV-f01a57b8fbd2518e",
-            "EV-faf8db3567f108e2"
+            "EV-f01a57b8fbd2518e"
           ],
           "otherCount": 6,
           "totalAccepted": 25,
@@ -75374,7 +75410,7 @@
         "2026-07-29": {
           "key": "2026-07-29",
           "counts": {
-            "financing": 7,
+            "financing": 8,
             "deployment": 6,
             "partnership": 5,
             "product": 17,
@@ -75416,10 +75452,11 @@
             "EV-d1d36268ff74be0e",
             "EV-d86b79f7663f35e7",
             "EV-dda9429d76897a3d",
-            "EV-e34e2d79df7412a7"
+            "EV-e34e2d79df7412a7",
+            "EV-faf8db3567f108e2"
           ],
           "otherCount": 3,
-          "totalAccepted": 39,
+          "totalAccepted": 40,
           "coverage": "数据中心于 2026-07-29 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-28": {
@@ -77886,12 +77923,12 @@
           "counts": {
             "financing": 32,
             "deployment": 13,
-            "partnership": 27,
+            "partnership": 28,
             "product": 76,
             "hardware": 4
           },
-          "totalAccepted": 181,
-          "trackedCount": 152,
+          "totalAccepted": 182,
+          "trackedCount": 153,
           "otherCount": 29,
           "activeEntities": [
             {
@@ -78050,7 +78087,7 @@
             {
               "entityId": "EN-047364b9be67f665",
               "eventIds": [
-                "EV-5226ef8b5a5481dd",
+                "EV-00514c4ffc2e3cd3",
                 "EV-2d9fde7bc0cd7a22",
                 "EV-bfa090c78227abf8"
               ],
@@ -78086,7 +78123,7 @@
             {
               "entityId": "EN-9c8ae69b84f21a2e",
               "eventIds": [
-                "EV-5226ef8b5a5481dd",
+                "EV-00514c4ffc2e3cd3",
                 "EV-f13c302dc067850b"
               ],
               "categoryCount": 2
@@ -78558,6 +78595,17 @@
               "eventId": "EV-7a0f201debe99f2b"
             },
             {
+              "entityId": "EN-9c8ae69b84f21a2e",
+              "classification": {
+                "dimensionId": "technology",
+                "dimensionName": "技术",
+                "id": "embodied_ai",
+                "name": "具身智能"
+              },
+              "dataDate": "2026-08-01",
+              "eventId": "EV-00514c4ffc2e3cd3"
+            },
+            {
               "entityId": "EN-7d3194f79e645c42",
               "classification": {
                 "dimensionId": "industry",
@@ -78578,17 +78626,6 @@
               },
               "dataDate": "2026-08-01",
               "eventId": "EV-35df5cc7eacdade7"
-            },
-            {
-              "entityId": "EN-9c8ae69b84f21a2e",
-              "classification": {
-                "dimensionId": "technology",
-                "dimensionName": "技术",
-                "id": "embodied_ai",
-                "name": "具身智能"
-              },
-              "dataDate": "2026-08-01",
-              "eventId": "EV-5226ef8b5a5481dd"
             },
             {
               "entityId": "EN-52fc33ae4d101a5d",
@@ -95248,9 +95285,9 @@
             "2026-08-01"
           ],
           "counts": {
-            "financing": 5,
+            "financing": 4,
             "deployment": 1,
-            "partnership": 0,
+            "partnership": 1,
             "product": 12,
             "hardware": 1
           },
@@ -95270,9 +95307,9 @@
             "hardware": 1
           },
           "deltas": {
-            "financing": 2,
+            "financing": 1,
             "deployment": -3,
-            "partnership": -2,
+            "partnership": -1,
             "product": -10,
             "hardware": 0
           },
@@ -95283,11 +95320,10 @@
           "newProducts": [],
           "financing": {
             "eventIds": [
-              "EV-5226ef8b5a5481dd",
+              "EV-00514c4ffc2e3cd3",
               "EV-792e2a2b3e98399f",
               "EV-81a37a2365624b42",
-              "EV-b4f38d8bff12727b",
-              "EV-faf8db3567f108e2"
+              "EV-b4f38d8bff12727b"
             ],
             "disclosedMetricCount": 2
           },
@@ -95297,7 +95333,7 @@
                 "id": "embodied_ai",
                 "name": "具身智能",
                 "eventIds": [
-                  "EV-5226ef8b5a5481dd",
+                  "EV-00514c4ffc2e3cd3",
                   "EV-eb12fb9dd08e5aad"
                 ],
                 "count": 2
@@ -95375,7 +95411,7 @@
             "2026-07-31"
           ],
           "counts": {
-            "financing": 173,
+            "financing": 174,
             "deployment": 82,
             "partnership": 103,
             "product": 490,
@@ -95398,8 +95434,8 @@
             "product": null,
             "hardware": null
           },
-          "totalAccepted": 1015,
-          "trackedCount": 899,
+          "totalAccepted": 1016,
+          "trackedCount": 900,
           "otherCount": 116,
           "newCompanies": [
             {
@@ -97074,6 +97110,7 @@
               "EV-976c03b6664d3a3b",
               "EV-a9a8f673cb666d49",
               "EV-cded77b1de2db61a",
+              "EV-faf8db3567f108e2",
               "EV-1196b80b537957f2",
               "EV-3fb827f44ea109de",
               "EV-6bb83280a2116f24",
@@ -97233,7 +97270,7 @@
               "EV-b91f6a01f119155c",
               "EV-ee7ba401d0af0d94"
             ],
-            "disclosedMetricCount": 154
+            "disclosedMetricCount": 155
           },
           "distributions": {
             "technology": [

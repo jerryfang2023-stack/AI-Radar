@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "generatedAt": "2026-08-01T03:20:21.845Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
-    "eventCount": 1757,
+    "eventCount": 1758,
     "quarantinedEventCount": 14
   },
   "eventTypes": {
@@ -114,7 +114,7 @@
   },
   "events": [
     {
-      "id": "EV-5226ef8b5a5481dd",
+      "id": "EV-00514c4ffc2e3cd3",
       "dataDate": "2026-08-01",
       "date": "2026-08-01",
       "updatedDate": "2026-08-01",
@@ -129,7 +129,9 @@
       "subject": "国内唯一做多模态长记忆的公司，",
       "action": "融资",
       "object": "数千万，押注主动智能｜涌现新项目",
-      "metrics": [],
+      "metrics": [
+        "数千万元"
+      ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -165,12 +167,12 @@
         }
       ],
       "entityIds": [
-        "EN-3a92b20f5236dc99",
+        "EN-2e334bb8de4eac34",
         "EN-047364b9be67f665",
         "EN-9c8ae69b84f21a2e"
       ],
       "entityNames": [
-        "国内唯一做多模态长记忆的公司",
+        "丘脑智能",
         "Alibaba",
         "Tencent"
       ],
@@ -939,90 +941,6 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-faf8db3567f108e2",
-      "dataDate": "2026-08-01",
-      "date": "2026-07-27",
-      "updatedDate": "2026-08-01",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
-      "originalTitle": "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
-      "subject": "Axe Compute",
-      "action": "secures",
-      "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
-      "metrics": [
-        "$1.5B",
-        "70%",
-        "$0.99"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "chip_accelerator",
-            "dimensionName": "产品形态",
-            "name": "芯片与加速器"
-          },
-          {
-            "dimensionId": "product_form",
-            "id": "compute_system",
-            "dimensionName": "产品形态",
-            "name": "计算系统"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "compute_system",
-          "dimensionName": "产品形态",
-          "name": "计算系统"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "compute_system",
-          "dimensionName": "产品形态",
-          "name": "计算系统"
-        }
-      ],
-      "entityIds": [
-        "EN-54dfb14dcddad637"
-      ],
-      "entityNames": [
-        "Axe Compute"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
-      "publisher": "theglobeandmail.com"
-    },
-    {
       "id": "EV-33b3cf34f8ff7bd8",
       "dataDate": "2026-07-29",
       "date": "2026-07-27",
@@ -1073,6 +991,77 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
+      "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-faf8db3567f108e2",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
+      "originalTitle": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
+      "subject": "Axe Compute",
+      "action": "Secures",
+      "object": "$1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
+      "metrics": [
+        "$1.5 Billion",
+        "$3 Billion",
+        "$3 billion",
+        "$1.3 Billion",
+        "$1.5 billion",
+        "$696 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "data_infrastructure",
+          "dimensionName": "产品形态",
+          "name": "数据与模型基础设施"
+        }
+      ],
+      "entityIds": [
+        "EN-54dfb14dcddad637"
+      ],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
       "publisher": "globenewswire.com"
     },
     {
@@ -23692,6 +23681,91 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/982/299.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c3b96b789b5bcafd",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-27",
+      "updatedDate": "2026-08-01",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
+      "originalTitle": "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
+      "subject": "Axe Compute",
+      "action": "secures",
+      "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
+      "metrics": [
+        "$1.5B",
+        "$3 billion",
+        "$534 million",
+        "$696 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        }
+      ],
+      "entityIds": [
+        "EN-54dfb14dcddad637"
+      ],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
+      "publisher": "theglobeandmail.com"
     },
     {
       "id": "EV-6048ddbf55f372ea",

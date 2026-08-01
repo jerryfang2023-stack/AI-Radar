@@ -1,16 +1,23 @@
 {
   "schema_version": "model-assist-2026-07-18.2",
-  "generated_at": "2026-08-01T03:04:24.353Z",
+  "generated_at": "2026-08-01T03:20:15.950Z",
   "dates": [
     "2026-08-01"
   ],
   "raw_documents_scanned": 249,
-  "scanned_jobs": 49,
+  "scanned_jobs": 48,
   "reuse_existing": false,
   "reused_jobs": 0,
   "regated_existing": 0,
   "offset": 0,
-  "selected_jobs": 49,
-  "completed": 49,
-  "failures": []
+  "selected_jobs": 48,
+  "completed": 47,
+  "failures": [
+    {
+      "date": "2026-08-01",
+      "task_type": "qa_repair",
+      "asset_id": "QA-bfee4d7375f51ad8",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    }
+  ]
 }

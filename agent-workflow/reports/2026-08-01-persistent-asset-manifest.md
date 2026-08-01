@@ -1,6 +1,6 @@
 # 2026-08-01 Data Center V4 Asset Manifest
 
-- generated_at: 2026-08-01T11:06:32+08:00
+- generated_at: 2026-08-01T11:21:51+08:00
 - workflow_mode: business_signals_pr
 - monitor: restored
 - resumed_from_run: 30680146512
