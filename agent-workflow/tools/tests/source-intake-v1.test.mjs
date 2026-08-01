@@ -53,6 +53,8 @@ test("resumed source intake restores reviewed Chinese source-title translations"
       "utf8",
     ));
     assert.equal(repairedIntake.raw_documents[0].title_zh, translated);
+    assert.equal(repairedIntake.raw_documents[0].title_translation_status, "translated");
+    assert.equal(repairedIntake.raw_documents[0].title_translation_method, "source_title_translation_db");
     const row = JSON.parse(fs.readFileSync(sourceIndex, "utf8").trim());
     assert.equal(row.title_zh, translated);
     assert.equal(row.title_translation_method, "source_title_translation_db");

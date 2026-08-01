@@ -43,6 +43,9 @@ export function normalizeSourceIntakeTitles(root, date) {
     const translated = translations.get(titleTranslationKey(original)) || "";
     if (!titleTranslationLooksUsable(original, translated)) continue;
     raw.title_zh = translated;
+    raw.title_translation_status = "translated";
+    raw.title_translation_method = "source_title_translation_db";
+    raw.title_translation_model = "";
     repairedByTitle.set(original, translated);
   }
 
