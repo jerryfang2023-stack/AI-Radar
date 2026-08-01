@@ -254,6 +254,7 @@ jobs:
           trap 'rm -rf -- "$resume_dir"' EXIT
           gh run download "$resume_run_id" --name "$artifact_name" --dir "$resume_dir"
           cp -a "$resume_dir/." .
+          node agent-workflow/tools/normalize-china-market-intake.mjs --date="${RUN_DATE}"
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=post-monitor

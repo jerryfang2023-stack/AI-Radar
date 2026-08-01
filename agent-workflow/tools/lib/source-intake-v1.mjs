@@ -10,6 +10,25 @@ export function hasActiveHistoricalDuplicate(record = {}) {
   return clean(record.duplicate_status) === "duplicate";
 }
 
+export function normalizeSourceIntakeMarketScopes(intake = {}) {
+  let changed = 0;
+  const rawDocuments = (intake.raw_documents || []).map((document) => {
+    const marketScope = document.market_scope;
+    if (!marketScope || marketScope.china_market_match === true || clean(marketScope.market_region) !== "CN") {
+      return document;
+    }
+    changed += 1;
+    return {
+      ...document,
+      market_scope: {
+        ...marketScope,
+        market_region: "",
+      },
+    };
+  });
+  return { payload: { ...intake, raw_documents: rawDocuments }, changed };
+}
+
 function hash(value, length = 16) {
   return crypto.createHash("sha256").update(String(value || ""), "utf8").digest("hex").slice(0, length);
 }
@@ -124,7 +143,7 @@ export function buildSourceIntake({ root, date, entries, generatedAt = new Date(
       market_scope: {
         source_registry_id: clean(record.source_registry_id),
         source_region: clean(record.source_region),
-        market_region: clean(record.market_region),
+        market_region: record.china_market_match === true ? clean(record.market_region) : "",
         china_market_match: record.china_market_match === true,
         china_market_match_basis: clean(record.china_market_match_basis),
       },
