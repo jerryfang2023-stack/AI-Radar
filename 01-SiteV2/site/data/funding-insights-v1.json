@@ -3,7 +3,7 @@
     "schema_version": "FUNDING-INSIGHT-FRONTSTAGE-V1.1",
     "funding_insight_version": "FUNDING-INSIGHT-V1.1",
     "site_version": "SITE-V4.4.1-china-market-scope",
-    "column_version": "FUNDING-INSIGHT-V1.1.0-card-integrity",
+    "column_version": "FUNDING-INSIGHT-V1.1.1-primary-product-form",
     "latest_date": "2026-08-01",
     "generated_at": "2026-08-01T06:19:22.056Z",
     "card_count": 216,
@@ -93,6 +93,11 @@
         "dimension": "product_form",
         "id": "compute_system",
         "name": "计算系统"
+      },
+      {
+        "dimension": "product_form",
+        "id": "compute_service",
+        "name": "算力云与算力服务"
       }
     ],
     "directions": [
@@ -516,7 +521,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2e334bb8de4eac34",
@@ -1121,7 +1128,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-26997989b8425dac",
@@ -1776,7 +1785,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-12765295db4f1e79",
@@ -2353,8 +2364,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "id": "ai_application",
+        "name": "AI 应用",
+        "method": "manual_review",
+        "decision_id": "PF-202607-049"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-f9075cc99990820a",
@@ -2893,7 +2906,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-556c337c4f0b031e",
@@ -3661,7 +3676,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_application",
-        "name": "AI 应用"
+        "name": "AI 应用",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-770ef1d2b6e24172",
@@ -3992,7 +4009,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b80e0af617d0f8ff",
@@ -4709,7 +4728,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-050"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7035f6607ad2d162",
@@ -5344,7 +5365,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-047"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2be663431f007250",
@@ -5835,8 +5858,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "compute_system",
-        "name": "计算系统"
+        "id": "data_infrastructure",
+        "name": "数据与模型基础设施",
+        "method": "manual_review",
+        "decision_id": "PF-202607-048"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-0b01f10e87d13e75",
@@ -7007,8 +7032,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "robot",
-        "name": "机器人"
+        "id": "model",
+        "name": "模型",
+        "method": "manual_review",
+        "decision_id": "PF-202607-046"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a83a3af1a4866fd5",
@@ -8030,7 +8057,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "manual_review",
+        "decision_id": "PF-202607-045"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-382635c9325bf327",
@@ -8673,7 +8702,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-834cc12fc35adde7",
@@ -9375,7 +9406,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c71496986d06e3f2",
@@ -10194,7 +10227,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-9cb45a27a2808c01",
@@ -10787,7 +10822,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "manual_review",
+        "decision_id": "PF-202607-044"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-53b69ef92c836777",
@@ -11418,7 +11455,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "manual_review",
+        "decision_id": "PF-202607-043"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7ef08ef63597d47c",
@@ -12222,8 +12261,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "developer_tool",
-        "name": "开发者工具"
+        "id": "data_infrastructure",
+        "name": "数据与模型基础设施",
+        "method": "manual_review",
+        "decision_id": "PF-202607-042"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-9007bd372bab6334",
@@ -12867,7 +12908,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-040"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7f67f2f8692510cf",
@@ -13582,7 +13625,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "manual_review",
+        "decision_id": "PF-202607-041"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-5b3767eb23d5e4ed",
@@ -14072,7 +14117,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-df30a48992da7fe8",
@@ -14877,7 +14924,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "manual_review",
+        "decision_id": "PF-202607-039"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-57b8b5990c299db8",
@@ -15601,7 +15650,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a56c2fbccb257dba",
@@ -16123,7 +16174,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-14ce7672aaca7a68",
@@ -16657,7 +16710,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-0f3360879e746531",
@@ -17269,7 +17324,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_device",
-        "name": "AI 设备"
+        "name": "AI 设备",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-094b7ade939cad4d",
@@ -17913,8 +17970,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "developer_tool",
-        "name": "开发者工具"
+        "id": "enterprise_platform",
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-038"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-80f681ea74fb8ccc",
@@ -18476,7 +18535,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "manual_review",
+        "decision_id": "PF-202607-036"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-73ef176d9f12809e",
@@ -19078,7 +19139,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "manual_review",
+        "decision_id": "PF-202607-037"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-fa373257792c6b9b",
@@ -19632,7 +19695,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-098a40b4499d7512",
@@ -20040,7 +20105,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-05cd4b807503b0f2",
@@ -20501,7 +20568,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a0c0caae05f5e70a",
@@ -21268,7 +21337,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-035"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b0a914ead94a88da",
@@ -21925,7 +21996,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-95fb1fa9a88b393c",
@@ -22654,7 +22727,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-034"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b0bc23fa8e20c543",
@@ -23250,7 +23325,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e5dcb6b25180d1d6",
@@ -23769,7 +23846,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c08f86842ff2c908",
@@ -24656,7 +24735,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b1d07f1a647ba7fb",
@@ -25134,8 +25215,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "id": "compute_service",
+        "name": "算力云与算力服务",
+        "method": "manual_review",
+        "decision_id": "PF-202607-033"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-fdecfc27f301da9c",
@@ -25618,7 +25701,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-5437fc10a23832bb",
@@ -26342,7 +26427,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "manual_review",
+        "decision_id": "PF-202607-032"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e647c818ac38b6ca",
@@ -26859,7 +26946,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_application",
-        "name": "AI 应用"
+        "name": "AI 应用",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-9a1b3d418cbbdf96",
@@ -27723,7 +27812,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2dc010636b9dce91",
@@ -28301,7 +28392,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-028"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-522656609ff15589",
@@ -28801,8 +28894,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "model",
-        "name": "模型"
+        "id": "enterprise_platform",
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-031"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a5d2ae286d0d9e45",
@@ -29601,7 +29696,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-366289432b214eda",
@@ -30395,8 +30492,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "id": "ai_application",
+        "name": "AI 应用",
+        "method": "manual_review",
+        "decision_id": "PF-202607-030"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-cfd90af8403941bf",
@@ -30952,7 +31051,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-814669895ed30dff",
@@ -31559,7 +31660,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "manual_review",
+        "decision_id": "PF-202607-029"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-636396f02b6571e4",
@@ -32212,7 +32315,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "manual_review",
+        "decision_id": "PF-202607-029"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-636396f02b6571e4",
@@ -32859,7 +32964,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_device",
-        "name": "AI 设备"
+        "name": "AI 设备",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2a920347dfcf07a7",
@@ -33666,8 +33773,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "compute_system",
-        "name": "计算系统"
+        "id": "data_infrastructure",
+        "name": "数据与模型基础设施",
+        "method": "manual_review",
+        "decision_id": "PF-202607-027"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-0caee180da9d0f3f",
@@ -34528,7 +34637,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b0532e1af75cc4ab",
@@ -35188,7 +35299,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "manual_review",
+        "decision_id": "PF-202607-026"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-df877645404747cb",
@@ -35755,7 +35868,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "manual_review",
+        "decision_id": "PF-202607-025"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-026c3bd4be5b91f3",
@@ -36477,7 +36592,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ae1eae1d76e5b7c8",
@@ -36996,7 +37113,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "api_service",
-        "name": "API / 模型服务"
+        "name": "API / 模型服务",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-37a54e5c414654d8",
@@ -37381,7 +37500,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_application",
-        "name": "AI 应用"
+        "name": "AI 应用",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7706c3c94d5f9b59",
@@ -38165,7 +38286,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-92dd63c8e5c77e8a",
@@ -38597,7 +38720,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2dcd958b2064843f",
@@ -39084,7 +39209,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "manual_review",
+        "decision_id": "PF-202607-024"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-cf9488537f777c1a",
@@ -39565,8 +39692,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "developer_tool",
-        "name": "开发者工具"
+        "id": "ai_application",
+        "name": "AI 应用",
+        "method": "manual_review",
+        "decision_id": "PF-202607-023"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-3eee4f30151db45a",
@@ -40156,7 +40285,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-4e0a97cb956fb1c6",
@@ -40927,7 +41058,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_application",
-        "name": "AI 应用"
+        "name": "AI 应用",
+        "method": "manual_review",
+        "decision_id": "PF-202607-022"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ee00b93bf0631b3e",
@@ -41347,8 +41480,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "robot",
-        "name": "机器人"
+        "id": "ai_application",
+        "name": "AI 应用",
+        "method": "manual_review",
+        "decision_id": "PF-202607-021"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-50e2a4156631df49",
@@ -42239,7 +42374,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-478cc1059b738832",
@@ -43452,8 +43589,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "id": "compute_system",
+        "name": "计算系统",
+        "method": "manual_review",
+        "decision_id": "PF-202607-020"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8d4321d936320802",
@@ -44037,7 +44176,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "manual_review",
+        "decision_id": "PF-202607-010"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-d3d151f3f8e7f9ed",
@@ -44675,7 +44816,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "manual_review",
+        "decision_id": "PF-202607-017"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8d4321d936320802",
@@ -45180,8 +45323,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "id": "compute_service",
+        "name": "算力云与算力服务",
+        "method": "manual_review",
+        "decision_id": "PF-202607-019"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2e3e41eef734616d",
@@ -45631,7 +45776,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "manual_review",
+        "decision_id": "PF-202607-018"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-70e7e370d5a50ea1",
@@ -46360,7 +46507,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "manual_review",
+        "decision_id": "PF-202607-016"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-6907a22fafe13a63",
@@ -47079,7 +47228,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_application",
-        "name": "AI 应用"
+        "name": "AI 应用",
+        "method": "manual_review",
+        "decision_id": "PF-202607-012"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c71a83adf3de3f40",
@@ -48075,7 +48226,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-013"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-712dffae168fe622",
@@ -48564,7 +48717,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-64bdeb7efae18e1b",
@@ -49360,7 +49515,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "manual_review",
+        "decision_id": "PF-202607-014"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ed9980025e312ded",
@@ -49982,7 +50139,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-10905d25fc373f32",
@@ -50507,7 +50666,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a2183526e5130b45",
@@ -51030,7 +51191,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-5afd6103effc8a64",
@@ -51508,8 +51671,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "id": "model",
+        "name": "模型",
+        "method": "manual_review",
+        "decision_id": "PF-202607-015"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7209ec6f68ac0bcd",
@@ -52198,7 +52363,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-733859c1fc6b9331",
@@ -52908,8 +53075,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "compute_system",
-        "name": "计算系统"
+        "id": "compute_service",
+        "name": "算力云与算力服务",
+        "method": "manual_review",
+        "decision_id": "PF-202607-011"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-816bab802b34b308",
@@ -53676,7 +53845,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7a814849bc288dc0",
@@ -54336,8 +54507,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "compute_system",
-        "name": "计算系统"
+        "id": "enterprise_platform",
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-009"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-830cefea8ed73a00",
@@ -54829,7 +55002,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-18b4bbfd60f4137e",
@@ -55399,7 +55574,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-caaa8e02be54cfc9",
@@ -56043,7 +56220,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-86c49cd0980883a3",
@@ -56883,7 +57062,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a736e4d4ef0af078",
@@ -57800,7 +57981,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "manual_review",
+        "decision_id": "PF-202607-006"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-dc758ebb8ad248f8",
@@ -58163,7 +58346,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-008"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-612370f44fcdeae0",
@@ -58997,7 +59182,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "manual_review",
+        "decision_id": "PF-202607-007"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-0995103010d39563",
@@ -59717,7 +59904,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "manual_review",
+        "decision_id": "PF-202607-005"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-4ca9544527138c33",
@@ -60227,7 +60416,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",
-        "name": "计算系统"
+        "name": "计算系统",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-d1a61df8d3146e48",
@@ -60949,8 +61140,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "developer_tool",
-        "name": "开发者工具"
+        "id": "model",
+        "name": "模型",
+        "method": "manual_review",
+        "decision_id": "PF-202607-004"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b06631033a981321",
@@ -61816,7 +62009,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c70eca6b0f88f44d",
@@ -62239,7 +62434,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-0cc3af265406c202",
@@ -62629,7 +62826,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-d387c8c96239d383",
@@ -63199,7 +63398,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "manual_review",
+        "decision_id": "PF-202607-003"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7106dbc04a08ce3a",
@@ -63949,8 +64150,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "security_product",
-        "name": "AI 安全产品"
+        "id": "ai_application",
+        "name": "AI 应用",
+        "method": "manual_review",
+        "decision_id": "PF-202607-002"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-858b4458c482f7d2",
@@ -64700,7 +64903,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "api_service",
-        "name": "API / 模型服务"
+        "name": "API / 模型服务",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-cfd62617fdedfdf4",
@@ -65688,8 +65893,10 @@
       },
       "application_category": {
         "dimension": "product_form",
-        "id": "model",
-        "name": "模型"
+        "id": "data_infrastructure",
+        "name": "数据与模型基础设施",
+        "method": "manual_review",
+        "decision_id": "PF-202607-001"
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-450dcf23e621ff10",
@@ -66177,7 +66384,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-4dd5b6e2bf3bfd4f",
@@ -67160,7 +67369,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-9cb45a27a2808c01",
@@ -68135,7 +68346,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8044aae1f86875d9",
@@ -68747,7 +68960,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-1bd14cd1a58c5708",
@@ -69253,7 +69468,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ccfc5e062828b145",
@@ -69775,7 +69992,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-d1fa538179ba6371",
@@ -70233,7 +70452,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-19a5848a577315c5",
@@ -70811,7 +71032,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-f346eaca864441f9",
@@ -71291,7 +71514,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-4728b0c37dc84206",
@@ -72028,7 +72253,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-d2d165dff04ba225",
@@ -72550,7 +72777,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-15516525ca2aa1a4",
@@ -73096,7 +73325,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e5cc9e38970eacb5",
@@ -73725,7 +73956,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e69f64149edae6b1",
@@ -74786,7 +75019,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-6f7ac1823da81d2e",
@@ -75446,7 +75681,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",
-        "name": "计算系统"
+        "name": "计算系统",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-88ab1e5d793701f9",
@@ -76103,7 +76340,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-6b5df3bd8bb0c67d",
@@ -76598,7 +76837,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",
-        "name": "计算系统"
+        "name": "计算系统",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-34bdfa9bfd563edb",
@@ -77297,7 +77538,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "api_service",
-        "name": "API / 模型服务"
+        "name": "API / 模型服务",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e23228440ca5340f",
@@ -77952,7 +78195,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-03abf933127f01f3",
@@ -78595,7 +78840,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_application",
-        "name": "AI 应用"
+        "name": "AI 应用",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-641a309108850fc9",
@@ -79388,7 +79635,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-dc8a5a5bf80909de",
@@ -79823,7 +80072,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-6ea730515425a60f",
@@ -80448,7 +80699,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-81755fe5ba7860e7",
@@ -81134,7 +81387,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-44355566aea5df6f",
@@ -81489,7 +81744,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-72badbbdbf521cec",
@@ -82140,7 +82397,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-f3d05a0f6248941d",
@@ -82668,7 +82927,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ab447173a7f5af44",
@@ -83747,7 +84008,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2f88f41306209dd7",
@@ -84278,7 +84541,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-577d8adaee97497b",
@@ -84831,7 +85096,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-f96246b78ef26d59",
@@ -85654,7 +85921,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",
-        "name": "计算系统"
+        "name": "计算系统",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-0b79cf2de0ee6b8e",
@@ -86141,7 +86410,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-aa06a7dba2266341",
@@ -86906,7 +87177,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c945929c3683ffb0",
@@ -87380,7 +87653,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e19b20530b205aa9",
@@ -87895,7 +88170,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-4abc3bd0f9e75c63",
@@ -88351,7 +88628,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7bcfaaf82306c01d",
@@ -89129,7 +89408,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_application",
-        "name": "AI 应用"
+        "name": "AI 应用",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-05f6ecf01ac4ebec",
@@ -89888,7 +90169,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-d6386c59a6bcfcb1",
@@ -90607,7 +90890,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-bf0e59763d382462",
@@ -91174,7 +91459,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c0cd6e83b6dd78a5",
@@ -91631,7 +91918,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-d74c69db63e4763f",
@@ -92094,7 +92383,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e781481ff5ffe530",
@@ -92850,7 +93141,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ef2bee7868007cd4",
@@ -93710,7 +94003,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-cbc62794911ff31b",
@@ -94311,7 +94606,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-da454b02b4700b1f",
@@ -94863,7 +95160,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8311b78e7ece59dd",
@@ -95376,7 +95675,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b4835ed157e04983",
@@ -95820,7 +96121,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a8ef01283d653e46",
@@ -96699,7 +97002,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ee1e31ffef7dbe64",
@@ -97366,7 +97671,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-15c785fe4bcb86f5",
@@ -97944,7 +98251,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7011e12e346d3d22",
@@ -98542,7 +98851,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",
-        "name": "计算系统"
+        "name": "计算系统",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c04bd5ebd10ab696",
@@ -99063,7 +99374,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8e3070c2f39507a8",
@@ -100228,7 +100541,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ac32f27ba7a1346f",
@@ -100924,7 +101239,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "ai_device",
-        "name": "AI 设备"
+        "name": "AI 设备",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-245f1e177c5169cb",
@@ -101418,7 +101735,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8bb4f88fd3cf9b29",
@@ -102534,7 +102853,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-4479ee1b529c5e82",
@@ -103094,7 +103415,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-693b1c2b5c9e35f4",
@@ -103791,7 +104114,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a9aff9e0737a5d4a",
@@ -105171,7 +105496,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c04bd5ebd10ab696",
@@ -105886,7 +106213,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-3032646694ad17bb",
@@ -106522,7 +106851,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-1c5483264189feef",
@@ -107073,7 +107404,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a972bc1b3220493e",
@@ -107863,7 +108196,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b314f58f5f506fd2",
@@ -108259,7 +108594,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8d3aa1a6f227d714",
@@ -108951,7 +109288,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-a7dd4a797cf9990b",
@@ -109748,7 +110087,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ef292e56955a1c10",
@@ -110686,7 +111027,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-befc92b3a019d04c",
@@ -111469,7 +111812,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-348445124d405d5a",
@@ -112067,7 +112412,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-20b5af8f2c749bf8",
@@ -112708,7 +113055,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "robot",
-        "name": "机器人"
+        "name": "机器人",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b5251b35f15bedc4",
@@ -113943,7 +114292,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-481243d2f2a235c1",
@@ -114490,7 +114841,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b10da733dff99be1",
@@ -115053,7 +115406,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-049b3253f4a8e2eb",
@@ -115713,7 +116068,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7f871cbf905f6e0c",
@@ -116187,7 +116544,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-67e05af6c6502566",
@@ -116647,7 +117006,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-5c178682f5573d29",
@@ -117195,7 +117556,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-b4a139ced5659a4e",
@@ -117878,7 +118241,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-2b81d85809794782",
@@ -118336,7 +118701,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",
-        "name": "计算系统"
+        "name": "计算系统",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-07c370b082ffd370",
@@ -119069,7 +119436,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e3ce9cc5efa9354c",
@@ -119654,7 +120023,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-58b507456c52c9b3",
@@ -120537,7 +120908,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e78bdebae031095b",
@@ -120986,7 +121359,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",
-        "name": "计算系统"
+        "name": "计算系统",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-bbdefa2950f49882",
@@ -121500,7 +121875,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-29e1a488361f12d3",
@@ -122023,7 +122400,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8e8cc11d1475231b",
@@ -122480,7 +122859,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-48bebf25e5bd5aca",
@@ -123035,7 +123416,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7ea76c82c786a5e1",
@@ -123746,7 +124129,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-835fb9db44937917",
@@ -124282,7 +124667,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-eaa1c24270a0d057",
@@ -124959,7 +125346,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-6c425df9139ab70a",
@@ -125571,7 +125960,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-f30ad7677baf7ea2",
@@ -126378,7 +126769,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "model",
-        "name": "模型"
+        "name": "模型",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c70eca6b0f88f44d",
@@ -127013,7 +127406,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-52f1bab72d488823",
@@ -127910,7 +128305,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-53b69ef92c836777",
@@ -128977,7 +129374,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c70eca6b0f88f44d",
@@ -129917,7 +130316,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ce65fa41b16c33ff",
@@ -130579,7 +130980,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8dab79468baaa8b0",
@@ -130983,7 +131386,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "security_product",
-        "name": "AI 安全产品"
+        "name": "AI 安全产品",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-1050efc9e13624b2",
@@ -131548,7 +131953,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-7d4e02d31a7eb0f8",
@@ -132281,7 +132688,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-08ff6997681fad41",
@@ -132896,7 +133305,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "developer_tool",
-        "name": "开发者工具"
+        "name": "开发者工具",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-3e665817a41133c2",
@@ -133257,7 +133668,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-c8a41fd9300cfe54",
@@ -133921,7 +134334,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8da5eafb322ee86e",
@@ -134500,7 +134915,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-8dfa7ee544d661eb",
@@ -134969,7 +135386,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-4458e908dd9a5440",
@@ -135437,7 +135856,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-240389f4b730bad4",
@@ -135996,7 +136417,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-749f7b0c42646853",
@@ -136537,7 +136960,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-afff1ef2d34b618e",
@@ -137126,7 +137551,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-da41c71b4dbc3956",
@@ -137551,7 +137978,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-ee04228c5c6d8b08",
@@ -138089,7 +138518,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-eafe895eb8119e6e",
@@ -138696,7 +139127,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "chip_accelerator",
-        "name": "芯片与加速器"
+        "name": "芯片与加速器",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-883be863cc6562bb",
@@ -139496,7 +139929,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "data_infrastructure",
-        "name": "数据与模型基础设施"
+        "name": "数据与模型基础设施",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-e4540a7c8404b1be",
@@ -140300,7 +140735,9 @@
       "application_category": {
         "dimension": "product_form",
         "id": "enterprise_platform",
-        "name": "企业 AI 平台"
+        "name": "企业 AI 平台",
+        "method": "legacy_heuristic",
+        "decision_id": ""
       },
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-f5cfcb570b7edac2",

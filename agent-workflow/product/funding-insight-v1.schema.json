@@ -215,6 +215,22 @@
         "validated_signals": { "type": "array", "items": { "type": "string" } },
         "risks": { "type": "array", "minItems": 1, "items": { "type": "string" } },
         "related_direction_id": { "type": "string" },
+        "product_form_id": {
+          "enum": [
+            "model",
+            "api_service",
+            "developer_tool",
+            "ai_application",
+            "enterprise_platform",
+            "data_infrastructure",
+            "security_product",
+            "ai_device",
+            "robot",
+            "chip_accelerator",
+            "compute_system",
+            "compute_service"
+          ]
+        },
         "sector": { "type": "string", "minLength": 1 }
       },
       "additionalProperties": false

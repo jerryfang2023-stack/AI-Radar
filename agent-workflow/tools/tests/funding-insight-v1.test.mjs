@@ -28,7 +28,9 @@ import {
   aggregateFundingRoundCards,
   buildFundingInsightsFrontstage,
   dedupeFundingRounds,
+  fundingProductFormDecision,
   fundingProductFormId,
+  productFormDecisionMap,
 } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
@@ -146,6 +148,7 @@ function validCard() {
     quotes: [],
     analysis: {
       sector: "企业 AI",
+      product_form_id: "enterprise_platform",
       investment_rationale: [],
       capital_judgment: "资本押注的是可重复交付，而不是通用聊天入口。",
       validated_signals: ["已经形成企业工作流产品"],
@@ -686,6 +689,7 @@ test("DeepSeek 研究结果必须逐项引用已抓取来源原文", () => {
       validated_signals: ["已经形成企业工作流产品"],
       risks: ["交付周期"],
       related_direction_id: "DIR-1",
+      product_form_id: "enterprise_platform",
       sector: "企业人工智能",
     },
   };
@@ -720,6 +724,7 @@ test("DeepSeek 可用未披露状态表达只有泛称、没有具体名称的�
       validated_signals: ["已完成种子轮融资"],
       risks: ["具体投资机构未披露"],
       related_direction_id: "",
+      product_form_id: "ai_application",
       sector: "工业人工智能",
     },
   };
@@ -760,6 +765,7 @@ test("机构投资理由必须来自本轮投资方并保留原文证据", () =>
       validated_signals: ["已有工作流产品"],
       risks: ["交付周期仍待规模化验证"],
       related_direction_id: "DIR-1",
+      product_form_id: "enterprise_platform",
       sector: "企业人工智能",
     },
   };
@@ -979,6 +985,8 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
       dimension: "product_form",
       id: "enterprise_platform",
       name: "企业 AI 平台",
+      method: "card_explicit",
+      decision_id: "",
     });
     assert.deepEqual(data.filters.product_forms, [{
       dimension: "product_form",
@@ -1040,16 +1048,57 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
 
 test("融资透视产品方向使用受控应用层分类，不把自由文本赛道当作 TAG-V4 标签", () => {
   const chip = validCard();
+  delete chip.analysis.product_form_id;
   chip.analysis.sector = "AI 推理芯片 / 半导体硬件";
   assert.equal(fundingProductFormId(chip), "chip_accelerator");
 
   const agentPlatform = validCard();
+  delete agentPlatform.analysis.product_form_id;
   agentPlatform.analysis.sector = "企业 AI 智能体平台";
   assert.equal(fundingProductFormId(agentPlatform), "enterprise_platform");
 
   const application = validCard();
+  delete application.analysis.product_form_id;
   application.analysis.sector = "餐饮科技 / AI 虚拟礼宾";
   application.company.summary = "";
   application.products = [];
   assert.equal(fundingProductFormId(application), "ai_application");
+});
+
+test("融资透视主产品形态优先使用卡片显式判断和人工复核，不再由关键词抢占", () => {
+  const card = validCard();
+  card.analysis.product_form_id = "data_infrastructure";
+  const manual = new Map([["EV-1", {
+    decision_id: "PF-TEST",
+    product_form_id: "model",
+  }]]);
+  assert.deepEqual(fundingProductFormDecision(card, manual), {
+    id: "data_infrastructure",
+    method: "card_explicit",
+    decision_id: "",
+  });
+
+  delete card.analysis.product_form_id;
+  assert.deepEqual(fundingProductFormDecision(card, manual), {
+    id: "model",
+    method: "manual_review",
+    decision_id: "PF-TEST",
+  });
+});
+
+test("七月50个融资案例的人工产品形态复核表完整并覆盖已知误分", () => {
+  const productForms = new Map(JSON.parse(fs.readFileSync(
+    path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"),
+    "utf8",
+  )).facets.find((facet) => facet.id === "product_form").values.map((value) => [value.id, value.name]));
+  const decisions = productFormDecisionMap(root, productForms);
+  const ledger = JSON.parse(fs.readFileSync(
+    path.join(root, "01-SiteV2/content/12-applications/funding-insights/product-form-decisions.json"),
+    "utf8",
+  ));
+  assert.equal(ledger.decisions.length, 50);
+  assert.equal(decisions.get("EV-20d762872664fddb").product_form_id, "data_infrastructure");
+  assert.equal(decisions.get("EV-f6a72cddbda748b3").product_form_id, "enterprise_platform");
+  assert.equal(decisions.get("EV-cded77b1de2db61a").product_form_id, "model");
+  assert.equal(decisions.get("EV-6e516b6e68def9cf").product_form_id, "compute_service");
 });

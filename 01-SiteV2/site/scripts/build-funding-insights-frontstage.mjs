@@ -28,13 +28,40 @@ const PRODUCT_FORM_RULES = [
   ["enterprise_platform", /(?:企业|工作流|智能体|自动化|销售|营销|客服|供应链|采购|投标|法律|合规|金融|保险|医疗|教育|政府|建筑|工业|制药)/iu],
 ];
 
-export function fundingProductFormId(card) {
+function legacyFundingProductFormId(card) {
   const searchText = [
     card.analysis?.sector,
     card.company?.summary,
     ...(card.products || []).flatMap((item) => [item.name, item.description]),
   ].filter(Boolean).join(" ");
   return PRODUCT_FORM_RULES.find(([, pattern]) => pattern.test(searchText))?.[0] || "ai_application";
+}
+
+export function fundingProductFormDecision(card, manualDecisions = new Map()) {
+  const explicitId = String(card.analysis?.product_form_id || "").trim();
+  if (explicitId) return { id: explicitId, method: "card_explicit", decision_id: "" };
+
+  const eventIds = [...new Set([
+    card.triggered_by_event_id,
+    ...(card.source_event_ids || []),
+  ].filter(Boolean))];
+  const matches = eventIds.map((eventId) => manualDecisions.get(eventId)).filter(Boolean);
+  const productFormIds = [...new Set(matches.map((item) => item.product_form_id))];
+  if (productFormIds.length > 1) {
+    throw new Error(`Conflicting product-form decisions for ${eventIds.join(", ")}`);
+  }
+  if (matches.length) {
+    return {
+      id: matches[0].product_form_id,
+      method: "manual_review",
+      decision_id: matches[0].decision_id,
+    };
+  }
+  return { id: legacyFundingProductFormId(card), method: "legacy_heuristic", decision_id: "" };
+}
+
+export function fundingProductFormId(card, manualDecisions = new Map()) {
+  return fundingProductFormDecision(card, manualDecisions).id;
 }
 
 function listBundles(projectRoot) {
@@ -58,6 +85,41 @@ function productFormNames(projectRoot) {
   return new Map((productForm?.values || [])
     .filter((value) => value.status === "active")
     .map((value) => [value.id, value.name]));
+}
+
+export function productFormDecisionMap(projectRoot, productForms = productFormNames(projectRoot)) {
+  const file = path.join(
+    projectRoot,
+    "01-SiteV2/content/12-applications/funding-insights/product-form-decisions.json",
+  );
+  if (!fs.existsSync(file)) return new Map();
+  const ledger = readJson(file, {});
+  const decisions = ledger.decisions || [];
+  if (ledger.meta?.decision_count !== decisions.length) {
+    throw new Error("Funding product-form decision count does not match metadata");
+  }
+  const decisionIds = new Set();
+  const byEventId = new Map();
+  for (const decision of decisions) {
+    if (!decision.decision_id || decisionIds.has(decision.decision_id)) {
+      throw new Error(`Duplicate or missing product-form decision id: ${decision.decision_id || "missing"}`);
+    }
+    decisionIds.add(decision.decision_id);
+    if (!productForms.has(decision.product_form_id)) {
+      throw new Error(`Unknown product_form in ${decision.decision_id}: ${decision.product_form_id}`);
+    }
+    if (!decision.company_name || !decision.rationale) {
+      throw new Error(`Missing company_name or rationale in ${decision.decision_id}`);
+    }
+    if (!Array.isArray(decision.event_ids) || !decision.event_ids.length) {
+      throw new Error(`Missing event_ids in ${decision.decision_id}`);
+    }
+    for (const eventId of decision.event_ids) {
+      if (byEventId.has(eventId)) throw new Error(`Duplicate product-form event decision: ${eventId}`);
+      byEventId.set(eventId, decision);
+    }
+  }
+  return byEventId;
 }
 
 function normalizedListKey(value = "") {
@@ -162,6 +224,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
   const bundles = listBundles(projectRoot);
   const directions = directionById(projectRoot);
   const productForms = productFormNames(projectRoot);
+  const productFormDecisions = productFormDecisionMap(projectRoot, productForms);
   const entityIndex = readJson(path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
   const entityDecisions = readJson(
     path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
@@ -187,7 +250,8 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
         || String(right.published_at || "").localeCompare(String(left.published_at || ""));
     })
     .map((card) => {
-      const productFormId = fundingProductFormId(card);
+      const productFormDecision = fundingProductFormDecision(card, productFormDecisions);
+      const productFormId = productFormDecision.id;
       const productFormName = productForms.get(productFormId);
       if (!productFormName) throw new Error(`Unknown TAG-V4 product_form value: ${productFormId}`);
       return {
@@ -196,6 +260,8 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
           dimension: "product_form",
           id: productFormId,
           name: productFormName,
+          method: productFormDecision.method,
+          decision_id: productFormDecision.decision_id,
         },
         analysis: {
           ...card.analysis,
@@ -225,7 +291,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
       funding_insight_version: FUNDING_INSIGHT_VERSION,
       site_version: "SITE-V4.4.1-china-market-scope",
-      column_version: "FUNDING-INSIGHT-V1.1.0-card-integrity",
+      column_version: "FUNDING-INSIGHT-V1.1.1-primary-product-form",
       latest_date: latestDate,
       generated_at: generatedAt,
       card_count: cards.length,

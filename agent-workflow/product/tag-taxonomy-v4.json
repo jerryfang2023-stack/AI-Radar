@@ -304,19 +304,21 @@
     {
       "id": "product_form",
       "name": "产品形态",
-      "definition": "来源明确披露的 AI 产品或服务形态。",
+      "definition": "来源明确披露、且公司主要面向客户或用户提供的 AI 产品或服务形态。主分类按核心对外供给判断，不以底层技术、功能卖点、目标行业或未来应用场景代替。",
+      "selection_rule": "每家公司只选择一个主要产品形态：先判断客户实际购买或用户直接使用的核心供给，再判断交付界面；采用某项模型、芯片、机器人或安全技术，不等于公司属于该产品形态。",
       "values": [
-        {"id": "model", "name": "模型", "includes": ["AI model", "AI models", "language model", "language models", "foundation model", "foundation models", "frontier models", "open-source model", "大模型", "基础模型", "模型发布"], "excludes": ["business model", "商业模式"], "status": "active"},
-        {"id": "api_service", "name": "API / 模型服务", "includes": ["AI API", "model API", "API service", "模型 API", "模型服务"], "excludes": ["API integration only"], "status": "active"},
-        {"id": "developer_tool", "name": "开发者工具", "includes": ["developer tool", "coding tool", "IDE extension", "CLI tool", "开发者工具", "编程工具", "代码工具"], "excludes": [], "status": "active"},
-        {"id": "ai_application", "name": "AI 应用", "includes": ["AI app", "AI application", "AI assistant", "AI chatbot", "Anthropic chatbot", "AI 应用", "AI 助手", "AI 聊天机器人", "智能助手"], "excludes": ["job application"], "status": "active"},
-        {"id": "enterprise_platform", "name": "企业 AI 平台", "includes": ["enterprise AI platform", "AI platform", "AI platforms", "agent platform", "workflow platform", "企业 AI 平台", "AI 平台", "智能体平台", "工作流平台"], "excludes": [], "status": "active"},
-        {"id": "data_infrastructure", "name": "数据与模型基础设施", "includes": ["AI infrastructure", "artificial intelligence infrastructure", "inference platform", "model platform", "vector database", "AI 基础设施", "人工智能基础设施", "推理平台", "模型平台", "向量数据库"], "excludes": ["physical infrastructure unrelated to AI"], "status": "active"},
-        {"id": "security_product", "name": "AI 安全产品", "includes": ["AI security product", "AI security platform", "agent security", "AI 安全产品", "AI 安全平台", "智能体安全"], "excludes": ["security policy only"], "status": "active"},
-        {"id": "ai_device", "name": "AI 设备", "includes": ["AI device", "AI hardware product", "AI PC", "AI phone", "AI glasses", "AI 设备", "AI 智能硬件", "AI 手机", "AI 眼镜"], "excludes": ["component only"], "status": "active"},
-        {"id": "robot", "name": "机器人", "includes": ["AI robot", "humanoid robot", "personal robot", "AI 机器人", "人形机器人", "个人机器人"], "excludes": ["software bot"], "status": "active"},
-        {"id": "chip_accelerator", "name": "芯片与加速器", "includes": ["AI chip", "GPU", "NPU", "AI accelerator", "AI 芯片", "人工智能芯片", "AI 加速器"], "excludes": ["potato chips"], "status": "active"},
-        {"id": "compute_system", "name": "计算系统", "includes": ["AI server", "AI computer", "AI computing module", "Jetson Thor", "GPU cluster", "AI data center", "AI 服务器", "AI 计算机", "AI 算力模组", "GPU 集群", "AI 数据中心"], "excludes": ["generic computer"], "status": "active"}
+        {"id": "model", "name": "模型", "definition": "公司主要对外提供基础模型、专用模型或以模型能力本身为核心的研究系统。仅在产品中使用自研模型不属于此类。", "includes": ["AI model", "AI models", "language model", "language models", "foundation model", "foundation models", "frontier models", "open-source model", "大模型", "基础模型", "模型发布"], "excludes": ["business model", "商业模式"], "status": "active"},
+        {"id": "api_service", "name": "API / 模型服务", "definition": "公司主要通过 API 或托管模型端点向开发者提供能力，API 是主要购买和交付界面。", "includes": ["AI API", "model API", "API service", "模型 API", "模型服务"], "excludes": ["API integration only"], "status": "active"},
+        {"id": "developer_tool", "name": "开发者工具", "definition": "公司主要提供软件、设计或 AI 系统开发生命周期中的工具、IDE、测试、代码审查或构建环境。", "includes": ["developer tool", "coding tool", "IDE extension", "CLI tool", "开发者工具", "编程工具", "代码工具"], "excludes": [], "status": "active"},
+        {"id": "ai_application", "name": "AI 应用", "definition": "用户直接使用、完成一项明确任务的成品应用，包括面向企业的垂直应用；仅因客户是企业，不归入企业 AI 平台。", "includes": ["AI app", "AI application", "AI assistant", "AI chatbot", "Anthropic chatbot", "AI 应用", "AI 助手", "AI 聊天机器人", "智能助手"], "excludes": ["job application"], "status": "active"},
+        {"id": "enterprise_platform", "name": "企业 AI 平台", "definition": "公司主要提供可覆盖多流程、可编排或可扩展的企业级平台、操作系统或控制平面，而不是单一任务的垂直应用。", "includes": ["enterprise AI platform", "AI platform", "AI platforms", "agent platform", "workflow platform", "企业 AI 平台", "AI 平台", "智能体平台", "工作流平台"], "excludes": [], "status": "active"},
+        {"id": "data_infrastructure", "name": "数据与模型基础设施", "definition": "公司主要提供模型训练、推理、记忆、路由、压缩、评估或数据供给的软件基础设施，不直接出售底层算力容量。", "includes": ["AI infrastructure", "artificial intelligence infrastructure", "inference platform", "model platform", "vector database", "AI 基础设施", "人工智能基础设施", "推理平台", "模型平台", "向量数据库"], "excludes": ["physical infrastructure unrelated to AI"], "status": "active"},
+        {"id": "security_product", "name": "AI 安全产品", "definition": "安全、身份、治理、检测或防护本身是公司主要出售的产品；隐私只是通用 AI 产品的功能卖点时不属于此类。", "includes": ["AI security product", "AI security platform", "agent security", "AI 安全产品", "AI 安全平台", "智能体安全"], "excludes": ["security policy only"], "status": "active"},
+        {"id": "ai_device", "name": "AI 设备", "definition": "公司主要提供用户直接使用的 AI 硬件设备，而不是芯片、服务器或数据中心部件。", "includes": ["AI device", "AI hardware product", "AI PC", "AI phone", "AI glasses", "AI 设备", "AI 智能硬件", "AI 手机", "AI 眼镜"], "excludes": ["component only"], "status": "active"},
+        {"id": "robot", "name": "机器人", "definition": "公司主要提供能够作用于物理世界的机器人或具身系统；软件智能体和未来机器人应用不属于此类。", "includes": ["AI robot", "humanoid robot", "personal robot", "AI 机器人", "人形机器人", "个人机器人"], "excludes": ["software bot"], "status": "active"},
+        {"id": "chip_accelerator", "name": "芯片与加速器", "definition": "公司主要提供芯片、加速器、半导体 IP 或关键芯片部件，不包括仅租用这些芯片提供云服务的公司。", "includes": ["AI chip", "GPU", "NPU", "AI accelerator", "AI 芯片", "人工智能芯片", "AI 加速器"], "excludes": ["potato chips"], "status": "active"},
+        {"id": "compute_system", "name": "计算系统", "definition": "公司主要提供服务器、机架、集群、数据中心或网络系统等实体计算系统，不包括按云端容量或推理调用收费的服务。", "includes": ["AI server", "AI computer", "AI computing module", "Jetson Thor", "GPU cluster", "AI data center", "AI 服务器", "AI 计算机", "AI 算力模组", "GPU 集群", "AI 数据中心"], "excludes": ["generic computer"], "status": "active"},
+        {"id": "compute_service", "name": "算力云与算力服务", "definition": "公司主要通过云端提供 GPU、训练或推理容量，客户购买的是托管算力、专用容量或推理云服务。", "includes": ["AI cloud", "GPU cloud", "inference cloud", "neocloud", "算力云", "GPU 云", "推理云", "新云服务"], "excludes": ["software-only inference platform", "physical compute system sale"], "status": "active"}
       ]
     },
     {

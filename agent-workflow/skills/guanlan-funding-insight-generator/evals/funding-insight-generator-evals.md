@@ -21,3 +21,10 @@
    - Pass when blocked queue entries are absent from the frontstage card list.
 10. `historical_resume`
     - Pass when a rerun reuses accepted cards and retries only missing or blocked events unless forced.
+11. `primary_product_form`
+    - Pass when a new card explicitly selects one active product form from what customers buy or users directly use.
+    - Fail when a company is classified by an enabling model or chip, a privacy feature, a target industry, or a future robot use case.
+12. `reviewed_product_form_precedence`
+    - Pass when card-explicit classification wins first, a governed historical decision wins second, and the keyword classifier is used only when neither exists.
+13. `compute_layer_separation`
+    - Pass when hosted GPU or inference capacity is `compute_service`, physical compute/network systems are `compute_system`, and model-serving or optimization software is `data_infrastructure`.

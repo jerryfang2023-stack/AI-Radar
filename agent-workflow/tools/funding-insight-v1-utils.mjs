@@ -5,9 +5,23 @@ import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.1";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.1";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.2";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.3";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
+export const FUNDING_PRODUCT_FORM_IDS = new Set([
+  "model",
+  "api_service",
+  "developer_tool",
+  "ai_application",
+  "enterprise_platform",
+  "data_infrastructure",
+  "security_product",
+  "ai_device",
+  "robot",
+  "chip_accelerator",
+  "compute_system",
+  "compute_service",
+]);
 
 export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
@@ -809,6 +823,10 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
   }
   if (!clean(payload?.analysis?.capital_judgment)) problems.push("capital_judgment_missing");
   else if (!containsChinese(payload.analysis.capital_judgment)) problems.push("capital_judgment_not_chinese");
+  if (!clean(payload?.analysis?.product_form_id)) problems.push("product_form_id_missing");
+  else if (!FUNDING_PRODUCT_FORM_IDS.has(clean(payload.analysis.product_form_id))) {
+    problems.push("product_form_id_unknown");
+  }
   if (!Array.isArray(payload?.analysis?.risks) || !payload.analysis.risks.length) problems.push("risks_missing");
   else if (payload.analysis.risks.some((risk) => !containsChinese(risk))) problems.push("risks_not_chinese");
   if (!containsChinese(payload?.analysis?.sector)) problems.push("sector_not_chinese");
@@ -859,6 +877,9 @@ export function fundingInsightProblems(card = {}) {
   if (!Array.isArray(card.funding_history)) problems.push("funding_history_missing");
   if (!card.analysis?.capital_judgment) problems.push("capital_judgment_missing");
   if (!containsChinese(card.analysis?.capital_judgment) || !containsChinese(card.analysis?.sector)) problems.push("analysis_not_chinese");
+  if (card.analysis?.product_form_id && !FUNDING_PRODUCT_FORM_IDS.has(clean(card.analysis.product_form_id))) {
+    problems.push("product_form_id_unknown");
+  }
   if (!Array.isArray(card.analysis?.investment_rationale)) problems.push("investment_rationale_missing");
   if ((card.analysis?.investment_rationale || []).some((item) => (
     !item.institution || !item.rationale || !item.quote || !item.evidence_refs?.length

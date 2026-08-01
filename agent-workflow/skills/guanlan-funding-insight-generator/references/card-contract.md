@@ -16,6 +16,7 @@
 - Normalized financing round code and Chinese label, original round text, amount, announced date when disclosed, all explicitly named current-round investors, and evidence.
 - At least one source-backed product or service.
 - Chinese application-layer analysis: sector, capital judgment, validated signals, and at least one risk.
+- One explicit `analysis.product_form_id` chosen from active `product_form` Facets by the product or service customers buy or users directly use, not by an enabling technology, feature, industry, or future application.
 - DeepSeek provider/model/prompt provenance.
 - A structured investment thesis and explicit customer-research status on every card.
 - A passed `FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1`.
@@ -33,9 +34,18 @@ Block the card when:
 - fewer than two cited captured sources survive sanitation;
 - required reader-facing narrative is not Chinese;
 - a Direction Card identifier does not exist;
+- a newly generated card omits `analysis.product_form_id` or uses an unknown product form;
 - JSON, schema, or automatic-publication validation fails.
 
 Blocked queue entries remain operational diagnostics and never enter `funding-insights-v1.json`.
+
+## Primary product form
+
+- Use one primary product form per card.
+- Prefer the card's explicit `analysis.product_form_id`.
+- For audited historical cards, use `product-form-decisions.json` and retain its decision identifier in the public projection.
+- Use the keyword classifier only for historical cards that have neither an explicit value nor a reviewed decision.
+- `compute_service` means hosted GPU, training, or inference capacity; `compute_system` means physical servers, racks, clusters, data centers, or network systems; `data_infrastructure` means the software layer for training, inference, memory, routing, compression, evaluation, or data delivery.
 
 ## Historical ownership
 
