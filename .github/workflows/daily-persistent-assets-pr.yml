@@ -252,9 +252,14 @@ jobs:
 
           resume_dir="$(mktemp -d)"
           trap 'rm -rf -- "$resume_dir"' EXIT
-          gh run download "$resume_run_id" --name "$artifact_name" --dir "$resume_dir"
-          cp -a "$resume_dir/." .
+          translation_db="01-SiteV2/content/11-databases/source-title-translations.json"
+          cp "$translation_db" "$resume_dir/source-title-translations-main.json"
+          mkdir -p "$resume_dir/artifact"
+          gh run download "$resume_run_id" --name "$artifact_name" --dir "$resume_dir/artifact"
+          cp -a "$resume_dir/artifact/." .
+          cp "$resume_dir/source-title-translations-main.json" "$translation_db"
           node agent-workflow/tools/normalize-china-market-intake.mjs --date="${RUN_DATE}"
+          node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=post-monitor
@@ -510,6 +515,7 @@ jobs:
             --stage=pre-commit \
             --block-stale=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pre-commit-gate.log"
+          npm run assert:source-titles
 
       - name: Write persistent asset manifest
         id: persistent-manifest
