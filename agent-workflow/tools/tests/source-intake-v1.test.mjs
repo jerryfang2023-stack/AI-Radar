@@ -14,11 +14,52 @@ import {
   sourceIntakePath,
 } from "../lib/source-intake-v1.mjs";
 import { selectImmutableSourceSnapshot } from "../lib/immutable-source-snapshot-v1.mjs";
+import { normalizeSourceIntakeTitles } from "../normalize-source-intake-titles.mjs";
 
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, `${JSON.stringify(value)}\n`, "utf8");
 }
+
+test("resumed source intake restores reviewed Chinese source-title translations", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-title-resume-"));
+  const date = "2026-08-01";
+  const original = "Example removes its AI feature one day after launch";
+  const translated = "Example 在上线一天后撤下其 AI 功能";
+  try {
+    writeJson(path.join(root, "01-SiteV2/content/11-databases/source-title-translations.json"), {
+      version: "source-title-translations-v1",
+      translations: [{
+        sourceTitle: original,
+        zhTitle: translated,
+        generatedBy: "manual_reviewed_source_title_translation",
+      }],
+    });
+    writeJson(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`), {
+      raw_documents: [{ title_original: original, title_zh: "" }],
+    });
+    const sourceIndex = path.join(root, "01-SiteV2/content/01-raw/source-index.jsonl");
+    fs.mkdirSync(path.dirname(sourceIndex), { recursive: true });
+    fs.writeFileSync(sourceIndex, `${JSON.stringify({ data_date: date, title_original: original, title_zh: "" })}\n`, "utf8");
+
+    assert.deepEqual(normalizeSourceIntakeTitles(root, date), {
+      date,
+      repaired_documents: 1,
+      repaired_source_index_rows: 1,
+      intake_file: `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`,
+    });
+    const repairedIntake = JSON.parse(fs.readFileSync(
+      path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`),
+      "utf8",
+    ));
+    assert.equal(repairedIntake.raw_documents[0].title_zh, translated);
+    const row = JSON.parse(fs.readFileSync(sourceIndex, "utf8").trim());
+    assert.equal(row.title_zh, translated);
+    assert.equal(row.title_translation_method, "source_title_translation_db");
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
 
 test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body references", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-intake-"));

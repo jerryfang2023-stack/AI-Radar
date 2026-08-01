@@ -156,6 +156,14 @@ test("the daily post-monitor handoff runs the dated China market gate", () => {
   );
   assert.match(
     workflow,
+    /Restore accepted source intake[\s\S]*source-title-translations-main\.json[\s\S]*normalize-source-intake-titles\.mjs --date="\$\{RUN_DATE\}"/u,
+  );
+  assert.match(
+    workflow,
     /Run Data Center V4 integrity gate[\s\S]*npm run assert:china-market -- --date="\$\{RUN_DATE\}" --stage=bundle/u,
+  );
+  assert.match(
+    workflow,
+    /Confirm site data freshness[\s\S]*npm run assert:source-titles/u,
   );
 });
