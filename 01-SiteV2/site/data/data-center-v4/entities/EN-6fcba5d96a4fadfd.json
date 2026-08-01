@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-6fcba5d96a4fadfd",
@@ -23,6 +23,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-792e2a2b3e98399f",
       "EV-3daefecd0453631a",
       "EV-edcb66d0401cfb8f",
       "EV-5d581d112fdbd464",
@@ -62,17 +63,20 @@
       "TX-technology-tool_use"
     ],
     "relatedEntityIds": [
+      "EN-e78bdebae031095b",
       "EN-c4bc2d00a42f220f",
       "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-08-01",
     "relationIds": [
+      "REL2-30051dc5d7668662",
       "REL2-e0b4c492d7f56ad2",
       "REL2-6e6899469cc60402"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-792e2a2b3e98399f",
         "EV-3daefecd0453631a",
         "EV-edcb66d0401cfb8f",
         "EV-5d581d112fdbd464",
@@ -111,6 +115,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-792e2a2b3e98399f",
+        "dataDate": "2026-08-01",
+        "date": "2026-07-31",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SpaceX 称 xAI 未获许可的涡轮机还需一年才能全部移除",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-6fcba5d96a4fadfd"
+        ]
+      },
       {
         "id": "EV-721215fba1addc6c",
         "dataDate": "2026-07-29",
@@ -703,6 +723,46 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-e78bdebae031095b",
+      "name": "SpaceX",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-792e2a2b3e98399f",
+        "EV-f669ee8fd74b8269",
+        "EV-e9b020a1b5f1af14",
+        "EV-3daefecd0453631a",
+        "EV-bb6bc8194a3a50c1",
+        "EV-edcb66d0401cfb8f",
+        "EV-03f661e8dcdf1b58",
+        "EV-ef7346378fcf9746",
+        "EV-4da18f97771852a9",
+        "EV-f949fd95df58d42d",
+        "EV-fcbd97e1f30c95e3",
+        "EV-5012364af7480121",
+        "EV-8a91e14f37d32b4d",
+        "EV-31782f0824ae1db1",
+        "EV-3c51bcb5e99d2b68",
+        "EV-8973f8148205ed35",
+        "EV-ecfc552af7344d65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-08-01"
+    },
+    {
       "id": "EN-c4bc2d00a42f220f",
       "name": "Grok Build",
       "entityType": "product_candidate",
@@ -750,6 +810,24 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-30051dc5d7668662",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e78bdebae031095b",
+      "subject_type": "entity",
+      "predicate": "acquires",
+      "object_ref": "EN-6fcba5d96a4fadfd",
+      "object_type": "entity",
+      "event_id": "EV-792e2a2b3e98399f",
+      "claim_refs": [
+        "CL-3c2aac2dae19ef58"
+      ],
+      "source_refs": [
+        "SA-08460f4c69d75995"
+      ],
+      "data_date": "2026-08-01",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-e0b4c492d7f56ad2",
       "relationship_version": "RELATION-V2.1",
@@ -1725,6 +1803,7 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
         "EV-6bac0bf442887889",
@@ -1841,6 +1920,7 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-eb5bba1ad6c016b0",
         "HW-b13c3131fc20fe83",
         "HW-155f566cfd988f5e",
         "HW-cb9cc06cadda488b",
@@ -1848,7 +1928,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "TX-technology-code_generation",
@@ -2029,6 +2109,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-0e9f000dd04fe04c",
         "EV-3ec034d25ba6a710",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
@@ -2120,7 +2201,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "TX-use_case-software_development",

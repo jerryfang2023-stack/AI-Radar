@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-7839fb10a8f14c70",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-35df5cc7eacdade7",
       "EV-3b7b9040dd2c2a89",
       "EV-a68475d82ec939b5",
       "EV-167f50a6f3134bd5",
@@ -36,14 +37,16 @@
     "classificationRefs": [
       "TX-technology-agentic_execution",
       "TX-use_case-cybersecurity",
-      "TX-technology-guardrails_safety"
+      "TX-technology-guardrails_safety",
+      "TX-industry-media_entertainment"
     ],
     "relatedEntityIds": [
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-28",
-    "lastSeen": "2026-07-24",
+    "lastSeen": "2026-08-01",
     "relationIds": [
+      "REL2-a74cf8f1891100be",
       "REL2-3a1dd102da0a9eae",
       "REL2-f3929ca395b55ae2",
       "REL2-46c40082d4466c44",
@@ -54,6 +57,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-35df5cc7eacdade7",
         "EV-3b7b9040dd2c2a89",
         "EV-30749250196dd507",
         "EV-a68475d82ec939b5",
@@ -70,6 +74,30 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-35df5cc7eacdade7",
+        "dataDate": "2026-08-01",
+        "date": "2026-07-31",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 两项改进让 GPT-5.6 Sol 在 ARC-AGI-3 提分 188%",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-7839fb10a8f14c70",
+          "EN-991f07e5aedd3445"
+        ]
+      },
       {
         "id": "EV-3b7b9040dd2c2a89",
         "dataDate": "2026-07-24",
@@ -348,6 +376,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-7752b9d64fdfe1df",
+        "EV-b27f2e417d779e5f",
+        "EV-d9d415868b74485c",
+        "EV-35df5cc7eacdade7",
         "EV-ebd76d18d3f0ee7b",
         "EV-8803f626b5df5ab0",
         "EV-6f433ccff3dce657",
@@ -486,6 +518,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-7c263093f5e663c9",
+        "EV-b4f38d8bff12727b",
         "EV-56b36a56d729c20d",
         "EV-741728825db1f14e",
         "EV-bce258f8f915ff5f",
@@ -535,6 +569,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-use_case-cybersecurity",
@@ -546,7 +581,6 @@
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
@@ -561,16 +595,17 @@
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
+        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
+        "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
         "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
-        "EN-7839fb10a8f14c70",
         "EN-74692028630429c7",
         "EN-c70eca6b0f88f44d",
         "EN-52fc33ae4d101a5d",
@@ -590,10 +625,31 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-a74cf8f1891100be",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7839fb10a8f14c70",
+      "object_type": "entity",
+      "event_id": "EV-35df5cc7eacdade7",
+      "claim_refs": [
+        "CL-028bb6da0b96a634",
+        "CL-7e7cd06b78a41507",
+        "CL-c2301161188e76c5",
+        "CL-c2ca145def6f425c"
+      ],
+      "source_refs": [
+        "SA-83ac1a6aef855608"
+      ],
+      "data_date": "2026-08-01",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-3a1dd102da0a9eae",
       "relationship_version": "RELATION-V2.1",
@@ -1748,6 +1804,68 @@
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "TX-industry-media_entertainment",
+      "name": "媒体与娱乐",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "media_entertainment",
+      "eventIds": [
+        "EV-2d6d2dc0ead4be10",
+        "EV-afcd5426f5c01dc7",
+        "EV-6c361125c3f50bb6",
+        "EV-35df5cc7eacdade7",
+        "EV-c9dda33325d18ba3",
+        "EV-aad2b98b8f25d64b",
+        "EV-d633676a4a7d89a3",
+        "EV-07a5533c18e5a74e",
+        "EV-0edb0a592ca1fd67",
+        "EV-7e52d691a0553667",
+        "EV-49751dfc7d2f6d6c",
+        "EV-83acf26a011ef213",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9",
+        "EV-ba98573b0dadde75"
+      ],
+      "entityIds": [
+        "EN-3db1f560db626918",
+        "EN-bfc698cb0f9b4d72",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b81c8201acfc7639",
+        "EN-23929c7dca3eb576",
+        "EN-5388bc10736a0eff",
+        "EN-7d3194f79e645c42",
+        "EN-7839fb10a8f14c70",
+        "EN-991f07e5aedd3445",
+        "EN-24f5eb8d2e667579",
+        "EN-f0edcf96f6fa2ccb",
+        "EN-d36e5a1a7a3c45ce",
+        "EN-397e5a2983130593",
+        "EN-dd172e183ec20177",
+        "EN-754c490bd199c21a",
+        "EN-7a3ecc54829211df",
+        "EN-ea3bd73e2b506e00",
+        "EN-72e28a6aa6b39c76",
+        "EN-96eebba49dbbf422",
+        "EN-bbdefa2950f49882",
+        "EN-2df4d39c248116dc",
+        "EN-30081094f2a8c83d",
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-d56aa2f9908f566a",
+        "EN-c1eb8e913000a8eb",
+        "EN-0be477336d3e1a8d",
+        "EN-1dc405a4cda895d0",
+        "EN-1c27324f013705cb"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-08-01"
     }
   ],
   "fde": [],

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-11e2258ba7641926",
@@ -27,7 +27,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-31",
-    "lastSeen": "2026-07-31",
+    "lastSeen": "2026-08-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -43,7 +43,7 @@
     "timeline": [
       {
         "id": "EV-a89a5b511c643be8",
-        "dataDate": "2026-07-31",
+        "dataDate": "2026-08-01",
         "date": "2026-07-31",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -68,13 +68,13 @@
     {
       "id": "HWC-a357e8f67fba3e5e",
       "snapshotKey": "a357e8f67fba3e5e",
-      "snapshotId": "HWS-f8fc360cf0cad490",
+      "snapshotId": "HWS-db7129c39ed78b01",
       "eventId": "EV-a89a5b511c643be8",
       "eventIds": [
         "EV-a89a5b511c643be8"
       ],
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
       "title": "BER10",
       "subject": "欧洲 Openchip",
       "productNames": [
@@ -89,23 +89,34 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-b5af98324037df27"
+          "fact_ref": "HWF-ba248110db48f6fa"
         },
         "specification": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-a6d5315fe67e856c"
+          "fact_ref": "HWF-0bfb9a2bbff6836e"
         }
       },
       "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-01",
+          "previousDate": "2026-07-31",
+          "snapshotId": "HWS-db7129c39ed78b01",
+          "previousSnapshotId": "HWS-f8fc360cf0cad490",
+          "changedFacts": [
+            "product",
+            "specification"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-3a6fd3f7ad0a6f5b",
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-5794c8231e80e7ba",
           "fact_type": "product",
           "observed_at": "2026-07-31T02:54:33.000Z",
           "subject_entity_id": "",
@@ -123,15 +134,15 @@
           "event_refs": [
             "EV-a89a5b511c643be8"
           ],
-          "claim_ref": "CL-e7d1af4422302fee",
+          "claim_ref": "CL-d542fbf1ac6ed903",
           "source_refs": [
             "SA-13464a616525640d"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
         },
         {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-b5af98324037df27",
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-ba248110db48f6fa",
           "fact_type": "product",
           "observed_at": "2026-07-31T02:54:33.000Z",
           "subject_entity_id": "",
@@ -149,15 +160,15 @@
           "event_refs": [
             "EV-a89a5b511c643be8"
           ],
-          "claim_ref": "CL-07c9b9a7f5f22f85",
+          "claim_ref": "CL-b286042c4421615d",
           "source_refs": [
             "SA-13464a616525640d"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
         },
         {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-a6d5315fe67e856c",
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-0bfb9a2bbff6836e",
           "fact_type": "specification",
           "observed_at": "2026-07-31T02:54:33.000Z",
           "subject_entity_id": "",
@@ -175,11 +186,11 @@
           "event_refs": [
             "EV-a89a5b511c643be8"
           ],
-          "claim_ref": "CL-e1b57a5ae1e492ba",
+          "claim_ref": "CL-bb984d9850ef70ac",
           "source_refs": [
             "SA-13464a616525640d"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
         }
       ],
       "capexFacts": [],

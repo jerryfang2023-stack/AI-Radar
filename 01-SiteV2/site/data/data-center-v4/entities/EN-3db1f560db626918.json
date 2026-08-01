@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-3db1f560db626918",
@@ -40,8 +40,8 @@
       "TX-use_case-software_development",
       "TX-technology-mixture_of_experts",
       "TX-technology-model_context_protocol",
-      "TX-industry-media_entertainment",
-      "TX-technology-image_generation"
+      "TX-technology-image_generation",
+      "TX-industry-media_entertainment"
     ],
     "relatedEntityIds": [
       "EN-309e1850e39b13ff",
@@ -399,10 +399,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
-        "TX-industry-manufacturing",
-        "TX-technology-embodied_ai"
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [
         "EN-3db1f560db626918"
@@ -1824,6 +1824,46 @@
       "lastSeen": "2026-07-30"
     },
     {
+      "id": "TX-technology-image_generation",
+      "name": "图像生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "image_generation",
+      "eventIds": [
+        "EV-fd329b4350f404ef",
+        "EV-82ae0ea3bfe336a1",
+        "EV-1a241bcb4fad886c",
+        "EV-a442b55d0bac5651",
+        "EV-dce5de62b2e4b752",
+        "EV-41baa43cf05d4288",
+        "EV-568d2aeab5234e48"
+      ],
+      "entityIds": [
+        "EN-b97e07c31e87f7d0",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-827b607311e6593e",
+        "EN-688f8db7018da7d4",
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-52e3d014f9a275ea",
+        "EN-834ab0b6e4492d23",
+        "EN-01f1074bb52ff605",
+        "EN-ea3bd73e2b506e00",
+        "EN-96eebba49dbbf422",
+        "EN-534e99d81da1c54d",
+        "EN-d85ad5e8ff8e2889",
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-3db1f560db626918",
+        "EN-d56aa2f9908f566a"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-08-01"
+    },
+    {
       "id": "TX-industry-media_entertainment",
       "name": "媒体与娱乐",
       "nodeType": "industry",
@@ -1833,6 +1873,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-afcd5426f5c01dc7",
         "EV-6c361125c3f50bb6",
+        "EV-35df5cc7eacdade7",
         "EV-c9dda33325d18ba3",
         "EV-aad2b98b8f25d64b",
         "EV-d633676a4a7d89a3",
@@ -1853,6 +1894,9 @@
         "EN-b81c8201acfc7639",
         "EN-23929c7dca3eb576",
         "EN-5388bc10736a0eff",
+        "EN-7d3194f79e645c42",
+        "EN-7839fb10a8f14c70",
+        "EN-991f07e5aedd3445",
         "EN-24f5eb8d2e667579",
         "EN-f0edcf96f6fa2ccb",
         "EN-d36e5a1a7a3c45ce",
@@ -1879,45 +1923,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-06-07",
-      "lastSeen": "2026-07-29"
-    },
-    {
-      "id": "TX-technology-image_generation",
-      "name": "图像生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "image_generation",
-      "eventIds": [
-        "EV-82ae0ea3bfe336a1",
-        "EV-1a241bcb4fad886c",
-        "EV-a442b55d0bac5651",
-        "EV-dce5de62b2e4b752",
-        "EV-41baa43cf05d4288",
-        "EV-568d2aeab5234e48"
-      ],
-      "entityIds": [
-        "EN-9fbf261b62c1d7c0",
-        "EN-827b607311e6593e",
-        "EN-688f8db7018da7d4",
-        "EN-bae152c4560df38c",
-        "EN-047364b9be67f665",
-        "EN-52e3d014f9a275ea",
-        "EN-bbdefa2950f49882",
-        "EN-834ab0b6e4492d23",
-        "EN-01f1074bb52ff605",
-        "EN-ea3bd73e2b506e00",
-        "EN-96eebba49dbbf422",
-        "EN-534e99d81da1c54d",
-        "EN-d85ad5e8ff8e2889",
-        "EN-2b6e51bec93e86c1",
-        "EN-8d4321d936320802",
-        "EN-3db1f560db626918",
-        "EN-d56aa2f9908f566a"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-08-01"
     }
   ],
   "fde": [],

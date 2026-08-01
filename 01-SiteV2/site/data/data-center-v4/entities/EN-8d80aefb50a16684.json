@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
+  },
+  "entity": {
+    "id": "EN-8d80aefb50a16684",
+    "name": "DeepSeek-V4-Flash-0731",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f01a57b8fbd2518e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-31",
+    "lastSeen": "2026-08-01",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f01a57b8fbd2518e"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f01a57b8fbd2518e",
+        "dataDate": "2026-08-01",
+        "date": "2026-07-31",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "DeepSeek 发布 DeepSeek-V4-Flash-0731，智能体与编程能力大幅提升",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-8d80aefb50a16684"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-2b98a40612d24843",
+      "snapshotKey": "2b98a40612d24843",
+      "snapshotId": "HWS-808cc8161a483041",
+      "eventId": "EV-f01a57b8fbd2518e",
+      "eventIds": [
+        "EV-f01a57b8fbd2518e"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "DeepSeek-V4-Flash-0731",
+      "subject": "DeepSeek",
+      "productNames": [
+        "DeepSeek-V4-Flash-0731"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-67efaf0cd0e0b5a4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-67efaf0cd0e0b5a4",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-31T00:00:00.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [
+            "EN-8d80aefb50a16684"
+          ],
+          "product_names": [
+            "DeepSeek-V4-Flash-0731"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The checkpoint ships with the DSpark speculative decoding module attached, matching the structure of DeepSeek-V4-Flash-DSpark . Hugging Face reports 304B parameters for the repo, which includes that draft module on top of the 284B base.",
+          "event_refs": [
+            "EV-f01a57b8fbd2518e"
+          ],
+          "claim_ref": "CL-a13357f572d3a30a",
+          "source_refs": [
+            "SA-e5d239e4d6ee00d2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-8d80aefb50a16684"
+      ]
+    }
+  ]
+}

@@ -4,18 +4,20 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-6f7ac1823da81d2e",
     "name": "DeepSeek",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "深度求索"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -25,6 +27,9 @@
       "EV-d4d7b019ff0015df",
       "EV-27b69ea604475b72",
       "EV-f8c3a83d883c9b22",
+      "EV-b27f2e417d779e5f",
+      "EV-8f2787ceb5224cc9",
+      "EV-f01a57b8fbd2518e",
       "EV-5b193a038ab4ea22",
       "EV-2fea1664807824ce",
       "EV-70cbf25f7ec2cc3a",
@@ -65,7 +70,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-25",
+    "lastSeen": "2026-08-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -79,6 +84,9 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-b27f2e417d779e5f",
+        "EV-8f2787ceb5224cc9",
+        "EV-f01a57b8fbd2518e",
         "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
@@ -106,6 +114,62 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-b27f2e417d779e5f",
+        "dataDate": "2026-08-01",
+        "date": "2026-08-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "DeepSeek-V4-Flash 正式版跑分报告：约 98% 缓存命中折扣打造 AI 极致性价比",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f61ff5cf8e1cc88d",
+          "EN-6f7ac1823da81d2e",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-8f2787ceb5224cc9",
+        "dataDate": "2026-08-01",
+        "date": "2026-07-31",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-b5251b35f15bedc4"
+        ]
+      },
+      {
+        "id": "EV-f01a57b8fbd2518e",
+        "dataDate": "2026-08-01",
+        "date": "2026-07-31",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "DeepSeek 发布 DeepSeek-V4-Flash-0731，智能体与编程能力大幅提升",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6f7ac1823da81d2e",
+          "EN-8d80aefb50a16684"
+        ]
+      },
       {
         "id": "EV-3aefbdfa5df2fd6a",
         "dataDate": "2026-07-25",
@@ -1976,6 +2040,7 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-ec966b509327cbac",
         "EV-d1d36268ff74be0e",
         "EV-58457ebde013a438",
         "EV-6bac0bf442887889",
@@ -2024,6 +2089,7 @@
         "EN-3a7bd3e2360a3d29",
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
+        "EN-e1517be14d06cdb7",
         "EN-43a340bb75b45f02",
         "EN-5388bc10736a0eff",
         "EN-febedfcafee9d610",
@@ -2057,7 +2123,6 @@
         "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
-        "EN-e1517be14d06cdb7",
         "EN-cf81a61e4eaef17c",
         "EN-4f5d0b82a300f296",
         "EN-2b96ed840c07482a",
@@ -2077,7 +2142,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -2598,6 +2663,134 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-9adbfc5062ed77fa",
+      "snapshotKey": "9adbfc5062ed77fa",
+      "snapshotId": "HWS-98b0cf2dd7258ea2",
+      "eventId": "EV-8f2787ceb5224cc9",
+      "eventIds": [
+        "EV-8f2787ceb5224cc9"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "DeepSeek",
+      "subject": "DeepSeek",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "100",
+          "unit": "亿",
+          "fact_ref": "HWF-bf3dd2b3a100b343"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-bf3dd2b3a100b343",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T06:38:54.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "100",
+          "unit": "亿",
+          "source_quote": "二是模型能力跃升，深度求索、月之暗面等本土企业先后发布多个万亿级参数开源大模型， 国产大模型全球总下载量突破 100 亿次 ，国产模型与国产算力芯片加速适配。",
+          "event_refs": [
+            "EV-8f2787ceb5224cc9"
+          ],
+          "claim_ref": "CL-fa74440341c640b0",
+          "source_refs": [
+            "SA-3f27658bd8e8b3fb"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/984/130.htm",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-b5251b35f15bedc4"
+      ]
+    },
+    {
+      "id": "HWC-2b98a40612d24843",
+      "snapshotKey": "2b98a40612d24843",
+      "snapshotId": "HWS-808cc8161a483041",
+      "eventId": "EV-f01a57b8fbd2518e",
+      "eventIds": [
+        "EV-f01a57b8fbd2518e"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "DeepSeek-V4-Flash-0731",
+      "subject": "DeepSeek",
+      "productNames": [
+        "DeepSeek-V4-Flash-0731"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-67efaf0cd0e0b5a4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-67efaf0cd0e0b5a4",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-31T00:00:00.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [
+            "EN-8d80aefb50a16684"
+          ],
+          "product_names": [
+            "DeepSeek-V4-Flash-0731"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The checkpoint ships with the DSpark speculative decoding module attached, matching the structure of DeepSeek-V4-Flash-DSpark . Hugging Face reports 304B parameters for the repo, which includes that draft module on top of the 284B base.",
+          "event_refs": [
+            "EV-f01a57b8fbd2518e"
+          ],
+          "claim_ref": "CL-a13357f572d3a30a",
+          "source_refs": [
+            "SA-e5d239e4d6ee00d2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-8d80aefb50a16684"
+      ]
+    },
     {
       "id": "HWC-a9264795464705fa",
       "snapshotKey": "a9264795464705fa",

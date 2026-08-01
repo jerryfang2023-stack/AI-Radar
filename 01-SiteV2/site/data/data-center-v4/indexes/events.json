@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "eventTypes": {
     "model_release": {
@@ -114,6 +114,158 @@
   },
   "events": [
     {
+      "id": "EV-5226ef8b5a5481dd",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目",
+      "originalTitle": "",
+      "subject": "国内唯一做多模态长记忆的公司，",
+      "action": "融资",
+      "object": "数千万，押注主动智能｜涌现新项目",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-3a92b20f5236dc99",
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "国内唯一做多模态长记忆的公司",
+        "Alibaba",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://36kr.com/p/3919386961177985?f=rss",
+      "publisher": "36氪"
+    },
+    {
+      "id": "EV-792e2a2b3e98399f",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SpaceX 称 xAI 未获许可的涡轮机还需一年才能全部移除",
+      "originalTitle": "",
+      "subject": "SpaceX",
+      "action": "acquisition",
+      "object": "xAI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "entityNames": [
+        "SpaceX",
+        "xAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-81a37a2365624b42",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Situational Awareness 的失利",
+      "originalTitle": "The loss of Situational Awareness",
+      "subject": "Citadel",
+      "action": "acquisition",
+      "object": "Situational Awareness public stock portfolio",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c737e8142a927072",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Citadel",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-53253b5e23970958",
       "dataDate": "2026-07-31",
       "date": "2026-07-30",
@@ -176,53 +328,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m",
       "publisher": "TechCrunch：AI（RSS）"
-    },
-    {
-      "id": "EV-81a37a2365624b42",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-31",
-      "eventType": "acquisition",
-      "eventTypeLabel": "并购",
-      "eventGroup": "融资与并购",
-      "status": "rumored",
-      "statusLabel": "rumored",
-      "publicationStatus": "disputed",
-      "title": "AI对冲基金Situational Awareness可能已出售其公开投资组合，但仍持有Anthropic股份。",
-      "originalTitle": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
-      "subject": "Citadel",
-      "action": "acquisition",
-      "object": "Situational Awareness public stock portfolio",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [
-        "CF-81a37a2365624b42"
-      ],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-c737e8142a927072",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "Citadel",
-        "OpenAI",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
-      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-e90bee514412d2ad",
@@ -834,6 +939,90 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-faf8db3567f108e2",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-27",
+      "updatedDate": "2026-08-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Axe Compute 获得 15 亿美元 AI GPU 集群交易",
+      "originalTitle": "Axe Compute secures $1.5B AI GPU cluster deal - The Globe and Mail",
+      "subject": "Axe Compute",
+      "action": "secures",
+      "object": "$1.5B AI GPU cluster deal - The Globe and Mail",
+      "metrics": [
+        "$1.5B",
+        "70%",
+        "$0.99"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        }
+      ],
+      "entityIds": [
+        "EN-54dfb14dcddad637"
+      ],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
+      "publisher": "theglobeandmail.com"
+    },
+    {
       "id": "EV-33b3cf34f8ff7bd8",
       "dataDate": "2026-07-29",
       "date": "2026-07-27",
@@ -884,77 +1073,6 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
-      "publisher": "globenewswire.com"
-    },
-    {
-      "id": "EV-faf8db3567f108e2",
-      "dataDate": "2026-07-29",
-      "date": "2026-07-27",
-      "updatedDate": "2026-07-29",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
-      "originalTitle": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
-      "subject": "Axe Compute",
-      "action": "Secures",
-      "object": "$1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
-      "metrics": [
-        "$1.5 Billion",
-        "$3 Billion",
-        "$3 billion",
-        "$1.3 Billion",
-        "$1.5 billion",
-        "$696 million"
-      ],
-      "locations": [
-        "US"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        }
-      ],
-      "entityIds": [
-        "EN-54dfb14dcddad637"
-      ],
-      "entityNames": [
-        "Axe Compute"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
       "publisher": "globenewswire.com"
     },
     {
@@ -22807,6 +22925,115 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-a4b7cd533b0b34dc",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "谷歌地球 AI 生图功能上线不到一天即下架，可无限制生成\"灾难\"图片",
+      "originalTitle": "",
+      "subject": "谷歌地球 AI 生图功能",
+      "action": "上线",
+      "object": "不到一天即下架，可无限制生成\"灾难\"图片",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-80bfdb50ee025168",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "谷歌地球 AI 生图功能",
+        "Google",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/415.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fd329b4350f404ef",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "withdrawn",
+      "statusLabel": "已撤回",
+      "publicationStatus": "withdrawn",
+      "title": "Google Earth 上线又火速撤回 Nano Banana 2 卫星图像 AI 修改功能",
+      "originalTitle": "",
+      "subject": "Google Earth",
+      "action": "上线",
+      "object": "又火速撤回 Nano Banana 2 卫星图像 AI 修改功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "entityIds": [
+        "EN-b97e07c31e87f7d0",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google Earth",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images",
+      "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
       "id": "EV-492029b381c06283",
       "dataDate": "2026-07-31",
       "date": "2026-07-30",
@@ -43093,6 +43320,735 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-7752b9d64fdfe1df",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 宣布其 AI 模型触达全球超 10 亿活跃用户和 200 万家企业",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 宣布其 AI 模型触达全球超 10 亿活跃用户和 200 万家企业",
+      "metrics": [
+        "10 亿",
+        "200 万",
+        "50%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/446.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-7fdffebf867b2bd7",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "浙江省经济信息中心",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "浙江省经济信息中心",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-1dbebd7a454f090f"
+        ]
+      },
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-4dbe391b8fcf977a"
+      ],
+      "entityNames": [
+        "ZTE"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://zjic.zj.gov.cn/ywdh/szfg/202607/t20260721_24162665.shtml",
+      "publisher": "zjic.zj.gov.cn"
+    },
+    {
+      "id": "EV-b27f2e417d779e5f",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "DeepSeek-V4-Flash 正式版跑分报告：约 98% 缓存命中折扣打造 AI 极致性价比",
+      "originalTitle": "",
+      "subject": "DeepSeek-V4-Flash",
+      "action": "product_release",
+      "object": "DeepSeek-V4-Flash 正式版跑分报告：约 98% 缓存命中折扣打造 AI 极致性价比",
+      "metrics": [
+        "80%",
+        "60%"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-cdc5e4dbe8b67b5f",
+          "CL-84439d44c8884cbc",
+          "CL-7290ed4ef54b8239",
+          "CL-cb8e53b14fa52862"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-f61ff5cf8e1cc88d",
+        "EN-6f7ac1823da81d2e",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "DeepSeek-V4-Flash",
+        "DeepSeek",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/417.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-d9d415868b74485c",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 发布说明 — 2026年7月最新更新 — Releasebot",
+      "originalTitle": "OpenAI Release Notes - July 2026 Latest Updates - Releasebot",
+      "subject": "OpenAI",
+      "action": "Release",
+      "object": "Notes - July 2026 Latest Updates - Releasebot",
+      "metrics": [
+        "20%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-0a15fc47ded3ca7d"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "July 2026 Latest Updates"
+      ],
+      "productName": "July 2026 Latest Updates",
+      "products": [
+        {
+          "name": "July 2026 Latest Updates",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://releasebot.io/updates/openai",
+      "publisher": "releasebot.io"
+    },
+    {
+      "id": "EV-35df5cc7eacdade7",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 两项改进让 GPT-5.6 Sol 在 ARC-AGI-3 提分 188%",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 两项改进让 GPT-5.6 Sol 在 ARC-AGI-3 提分 188%",
+      "metrics": [
+        "188%",
+        "7.8%",
+        "0.4%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-7839fb10a8f14c70",
+        "EN-991f07e5aedd3445"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "GPT-5.6 Sol",
+        "ARC-AGI-3"
+      ],
+      "productName": "GPT-5.6 Sol",
+      "products": [
+        {
+          "name": "GPT-5.6 Sol",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        },
+        {
+          "name": "ARC-AGI-3",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/984/208.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-8f2787ceb5224cc9",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
+      "metrics": [
+        "100 亿",
+        "12 万",
+        "30%"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-fa74440341c640b0",
+          "CL-8d1be0f2e6e82b7d",
+          "CL-1ee6b6e357e06cef",
+          "CL-b0aae9ec8130bdc1"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-b5251b35f15bedc4"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "Moonshot AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/130.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a89a5b511c643be8",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+      "originalTitle": "",
+      "subject": "欧洲 Openchip",
+      "action": "发布",
+      "object": "BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+      "metrics": [],
+      "locations": [
+        "欧洲"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-11e2258ba7641926"
+      ],
+      "entityNames": [
+        "BER10"
+      ],
+      "productName": "BER10",
+      "products": [
+        {
+          "name": "BER10",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/983/975.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-df3bc4ed1e6325d9",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Gemini Enterprise Agent Platform 的 Agent 与模型评测服务正式 GA",
+      "originalTitle": "",
+      "subject": "Gemini Enterprise Agent Platform",
+      "action": "product_release",
+      "object": "Agent and Model Evaluations service",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "entityIds": [
+        "EN-80015fe8be0a9322",
+        "EN-cfe6926406f30a15"
+      ],
+      "entityNames": [
+        "Model Evaluations",
+        "Gemini Enterprise Agent"
+      ],
+      "productName": "Model Evaluations",
+      "products": [
+        {
+          "name": "Model Evaluations",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Gemini Enterprise Agent",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://developers.googleblog.com/agent-and-model-evaluations-in-gemini-enterprise-agent-platform-are-now-ga",
+      "publisher": "Google Developers Blog（RSS）"
+    },
+    {
+      "id": "EV-eb12fb9dd08e5aad",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌DeepMind发布Gemini Robotics 2，为从桌面机械臂到人形机器人的各种形态机器人提供动力",
+      "originalTitle": "Google Deepmind unveils Gemini Robotics 2 to power robots of all shapes from tabletop arms to humanoids",
+      "subject": "Google Deepmind",
+      "action": "unveils Gemini Robotics 2 to power robots",
+      "object": "of all shapes from tabletop arms to humanoids",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "Gemini Robotics 2"
+      ],
+      "productName": "Gemini Robotics 2",
+      "products": [
+        {
+          "name": "Gemini Robotics 2",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/google-deepmind-unveils-gemini-robotics-2-to-power-robots-of-all-shapes-from-tabletop-arms-to-humanoids",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-ec966b509327cbac",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "视频后期，危！MiniMax H3手绘即特效，多模态的「Coding时刻」来了",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "视频后期，危！MiniMax H3手绘即特效，多模态的「Coding时刻」来了",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "MiniMax"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/07/464277.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-f01a57b8fbd2518e",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "DeepSeek 发布 DeepSeek-V4-Flash-0731，智能体与编程能力大幅提升",
+      "originalTitle": "",
+      "subject": "DeepSeek",
+      "action": "发布",
+      "object": "DeepSeek-V4-Flash-0731，智能体与编程能力大幅提升",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-4188bbb19886c694",
+          "CL-2ef8a2ee90500823",
+          "CL-a13357f572d3a30a",
+          "CL-52304de5caf3aec8"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-8d80aefb50a16684"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "DeepSeek-V4-Flash-0731"
+      ],
+      "productName": "DeepSeek-V4-Flash-0731",
+      "products": [
+        {
+          "name": "DeepSeek-V4-Flash-0731",
+          "type": "产品/服务",
+          "ownerNames": [
+            "DeepSeek"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-385966c864fcda19",
       "dataDate": "2026-07-31",
       "date": "2026-07-31",
@@ -43268,59 +44224,10 @@
       "publisher": "MarkTechPost（RSS）"
     },
     {
-      "id": "EV-a89a5b511c643be8",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
-      "originalTitle": "",
-      "subject": "欧洲 Openchip",
-      "action": "发布",
-      "object": "BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
-      "metrics": [],
-      "locations": [
-        "欧洲"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-11e2258ba7641926"
-      ],
-      "entityNames": [
-        "BER10"
-      ],
-      "productName": "BER10",
-      "products": [
-        {
-          "name": "BER10",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/983/975.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
       "id": "EV-0707f3c487a36e55",
-      "dataDate": "2026-07-31",
+      "dataDate": "2026-08-01",
       "date": "2026-07-30",
-      "updatedDate": "2026-07-31",
+      "updatedDate": "2026-08-01",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -43364,6 +44271,94 @@
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
       "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-ebd76d18d3f0ee7b",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-30",
+      "updatedDate": "2026-08-01",
+      "eventType": "pricing_change",
+      "eventTypeLabel": "定价变更",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
+      "originalTitle": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
+      "subject": "OpenAI goes full China",
+      "action": "pricing mode with an 80 percent cut",
+      "object": "to its most affordable GPT-5.6 model",
+      "metrics": [
+        "$0.20 ",
+        "$1.20 ",
+        "$2 ",
+        "$12. ",
+        "20%",
+        "80%",
+        "$0.20",
+        "$1.20",
+        "$1.50"
+      ],
+      "locations": [
+        "China"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-2ee49ef51a776e2c",
+        "EN-7d3194f79e645c42",
+        "EN-52fc33ae4d101a5d",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "OpenAI goes full China",
+        "OpenAI",
+        "GPT-5.6",
+        "Google"
+      ],
+      "productName": "GPT-5.6",
+      "products": [
+        {
+          "name": "GPT-5.6",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-136d9a760c24cd35",
@@ -43557,94 +44552,6 @@
       ],
       "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
       "publisher": "Google DeepMind：Blog（RSS）"
-    },
-    {
-      "id": "EV-ebd76d18d3f0ee7b",
-      "dataDate": "2026-07-31",
-      "date": "2026-07-30",
-      "updatedDate": "2026-07-31",
-      "eventType": "pricing_change",
-      "eventTypeLabel": "定价变更",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI 采用“中国式定价”，将最便宜的 GPT-5.6 模型降价 80%",
-      "originalTitle": "OpenAI goes full China pricing mode with an 80 percent cut to its most affordable GPT-5.6 model",
-      "subject": "OpenAI goes full China",
-      "action": "pricing mode with an 80 percent cut",
-      "object": "to its most affordable GPT-5.6 model",
-      "metrics": [
-        "$0.20 ",
-        "$1.20 ",
-        "$2 ",
-        "$12. ",
-        "20%",
-        "80%",
-        "$0.20",
-        "$1.20",
-        "$1.50"
-      ],
-      "locations": [
-        "China"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        }
-      ],
-      "entityIds": [
-        "EN-2ee49ef51a776e2c",
-        "EN-7d3194f79e645c42",
-        "EN-52fc33ae4d101a5d",
-        "EN-bbdefa2950f49882"
-      ],
-      "entityNames": [
-        "OpenAI goes full China",
-        "OpenAI",
-        "GPT-5.6",
-        "Google"
-      ],
-      "productName": "GPT-5.6",
-      "products": [
-        {
-          "name": "GPT-5.6",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        }
-      ],
-      "sourceUrl": "https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model",
-      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-f13c302dc067850b",
@@ -74930,16 +75837,12 @@
         {
           "name": "AZ3 Pro",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Amazon"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Panos Panay",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Amazon"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/889.htm",
@@ -80737,21 +81640,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Google"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Google"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Google"
           ]
         }
       ],
@@ -87177,9 +88080,7 @@
         {
           "name": "Continuum",
           "type": "产品/服务",
-          "ownerNames": [
-            "Amazon"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps",
@@ -88037,9 +88938,7 @@
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Amazon"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care",
@@ -88652,7 +89551,7 @@
           "name": "Jio Call",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Google"
           ]
         }
       ],
@@ -93635,21 +94534,21 @@
           "name": "One-Stop Shop",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Intel"
           ]
         },
         {
           "name": "PYMNTS.com",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Intel"
           ]
         },
         {
           "name": "AI Agent Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Intel"
           ]
         }
       ],
@@ -94124,9 +95023,7 @@
         {
           "name": "Agent Marketplace",
           "type": "产品/服务",
-          "ownerNames": [
-            "Amazon"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://joineta.org/blog/aws-agent-marketplace-whats-coming-and-why-it-matters",
@@ -97094,7 +97991,7 @@
           "name": "Bedrock",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "OpenAI"
           ]
         }
       ],
@@ -101347,14 +102244,14 @@
           "name": "One-Stop Shop",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Intel"
           ]
         },
         {
           "name": "AI Agent Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Intel"
           ]
         }
       ],
@@ -106215,7 +107112,7 @@
           "name": "AI Factories",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "NVIDIA"
           ]
         }
       ],
@@ -106734,9 +107631,7 @@
         {
           "name": "AWS Trainium2",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Amazon"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2023/11/28/amazon-unveils-new-chips-for-training-and-running-ai-models",
@@ -106817,10 +107712,208 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-0e9f000dd04fe04c",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Reddit 对 SerpApi 的 DMCA 诉讼获法官支持，未因 Google 败诉而撤销",
+      "originalTitle": "",
+      "subject": "Reddit 对 SerpApi 的 DMCA",
+      "action": "诉讼",
+      "object": "获法官支持，未因 Google 败诉而撤销",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/reddit-keeps-weird-dmca-lawsuit-against-web-scraper-alive-despite-googles-loss",
+      "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
+      "id": "EV-7c263093f5e663c9",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "前OpenAI研究员利奥波德AI对冲基金\"全态感知\"高杠杆爆仓，规模从450亿美元缩水至100亿美元",
+      "originalTitle": "",
+      "subject": "全态感知",
+      "action": "financial_performance",
+      "object": "规模从 450 亿美元缩水至约 100 亿美元",
+      "metrics": [
+        "450 亿",
+        "3044.2 亿",
+        "100 亿",
+        "676.49 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-a26b96f81a1be10e"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "全态感知"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/420.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b4f38d8bff12727b",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "亚马逊提前兑现对 OpenAI 投资 500 亿美元承诺，当前持股约 5%",
+      "originalTitle": "",
+      "subject": "Amazon",
+      "action": "capital_investment",
+      "object": "OpenAI",
+      "metrics": [
+        "350 亿",
+        "500 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-cbc62794911ff31b",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Amazon",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/449.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-d639c920e443006c",
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-01",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "兰开斯特乡村走读学校就AI生成同学裸照事件请求驳回诉讼",
+      "originalTitle": "",
+      "subject": "兰开斯特乡村走读学校就AI生成同学裸照事件请求驳回",
+      "action": "诉讼",
+      "object": "兰开斯特乡村走读学校就AI生成同学裸照事件请求驳回诉讼",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/high-school-defends-staying-silent-while-boys-made-ai-nudes-of-59-classmates",
+      "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
       "id": "EV-1b74a6307ba10bb1",
-      "dataDate": "2026-07-31",
+      "dataDate": "2026-08-01",
       "date": "2026-07-31",
-      "updatedDate": "2026-07-31",
+      "updatedDate": "2026-08-01",
       "eventType": "policy_regulation",
       "eventTypeLabel": "政策监管",
       "eventGroup": "组织、政策与法律",
@@ -106836,6 +107929,21 @@
       "locations": [
         "中国"
       ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-4a4e021553d08b38",
+          "CL-a0559973b4c1b131",
+          "CL-cf938f4258065ae3"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -106858,6 +107966,160 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/983/974.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-51b9ec04d49a7aec",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SIGGRAPH时间检验奖揭晓：这项研究，提前十年押中了物理AI",
+      "originalTitle": "",
+      "subject": "Taku Komura",
+      "action": "organization_people",
+      "object": "香港大学计算机科学系教授",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-40211552683d0c07"
+        ]
+      },
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/07/464328.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-79700941eb0af140",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "德国法院裁定 AI 音乐生成公司 Suno 侵犯版权，需支付赔偿金",
+      "originalTitle": "",
+      "subject": "慕尼黑地方法院",
+      "action": "lawsuit_settlement",
+      "object": "Suno",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频"
+        }
+      ],
+      "entityIds": [
+        "EN-c8d65b5463695c98"
+      ],
+      "entityNames": [
+        "慕尼黑地方法院"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/984/382.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fc0665835f4105e2",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "lawsuit_settlement",
+      "eventTypeLabel": "诉讼与和解",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "耶鲁AI作弊争议如何演变成13项联邦诉讼",
+      "originalTitle": "",
+      "subject": "耶鲁AI作弊争议如何演变成13项联邦",
+      "action": "诉讼",
+      "object": "耶鲁AI作弊争议如何演变成13项联邦诉讼",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/how-a-yale-ai-cheating-dispute-became-a-13-count-federal-lawsuit",
+      "publisher": "Ars Technica：AI（RSS）"
     },
     {
       "id": "EV-94cb16144a8fcfdb",

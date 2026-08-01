@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-d56aa2f9908f566a",
@@ -28,8 +28,8 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-mixture_of_experts",
-      "TX-industry-media_entertainment",
-      "TX-technology-image_generation"
+      "TX-technology-image_generation",
+      "TX-industry-media_entertainment"
     ],
     "relatedEntityIds": [
       "EN-2b6e51bec93e86c1",
@@ -39,6 +39,7 @@
     "lastSeen": "2026-06-11",
     "relationIds": [
       "REL2-1bac7c6922a7a98b",
+      "REL2-44ebd8a7378accce",
       "REL2-d205049958061bb1",
       "REL2-d38107a2fe8bacd9"
     ],
@@ -156,7 +157,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -171,6 +171,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
         "EV-6b0106ef4a79df05",
@@ -195,24 +196,24 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
+        "TX-technology-image_generation",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-reasoning",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation",
-        "TX-technology-image_generation"
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -222,14 +223,16 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -246,6 +249,8 @@
         "EV-4a162c41bb82f325",
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
+        "EV-a4b7cd533b0b34dc",
+        "EV-fd329b4350f404ef",
         "EV-57944eebac69d510",
         "EV-38232fed5e0cfdd6",
         "EV-e7b228c1b6b54c6a",
@@ -267,8 +272,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
-        "EV-60110525440fac47",
         "EV-ebd76d18d3f0ee7b",
+        "EV-60110525440fac47",
         "EV-3ebf23c149dde19d",
         "EV-6b0106ef4a79df05",
         "EV-a4fe78df6ccd63c8",
@@ -369,6 +374,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-0e9f000dd04fe04c",
         "EV-5bfcc506994f103f",
         "EV-909cf18b467d6fdf",
         "EV-89bdda008227fb6b",
@@ -390,6 +396,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_service",
         "TX-use_case-cybersecurity",
@@ -401,7 +408,6 @@
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-technology-mixture_of_experts",
@@ -410,25 +416,27 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
+        "TX-technology-image_generation",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation",
-        "TX-technology-image_generation"
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
         "EN-8d323d8bba783aa3",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -436,7 +444,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     }
   ],
   "relationships": [
@@ -456,6 +464,27 @@
       ],
       "source_refs": [
         "SA-87ccc3513174eaba"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
       ],
       "data_date": "2026-06-11",
       "status": "verified"
@@ -551,6 +580,46 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "TX-technology-image_generation",
+      "name": "图像生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "image_generation",
+      "eventIds": [
+        "EV-fd329b4350f404ef",
+        "EV-82ae0ea3bfe336a1",
+        "EV-1a241bcb4fad886c",
+        "EV-a442b55d0bac5651",
+        "EV-dce5de62b2e4b752",
+        "EV-41baa43cf05d4288",
+        "EV-568d2aeab5234e48"
+      ],
+      "entityIds": [
+        "EN-b97e07c31e87f7d0",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-827b607311e6593e",
+        "EN-688f8db7018da7d4",
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-52e3d014f9a275ea",
+        "EN-834ab0b6e4492d23",
+        "EN-01f1074bb52ff605",
+        "EN-ea3bd73e2b506e00",
+        "EN-96eebba49dbbf422",
+        "EN-534e99d81da1c54d",
+        "EN-d85ad5e8ff8e2889",
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-3db1f560db626918",
+        "EN-d56aa2f9908f566a"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-08-01"
+    },
+    {
       "id": "TX-industry-media_entertainment",
       "name": "媒体与娱乐",
       "nodeType": "industry",
@@ -560,6 +629,7 @@
         "EV-2d6d2dc0ead4be10",
         "EV-afcd5426f5c01dc7",
         "EV-6c361125c3f50bb6",
+        "EV-35df5cc7eacdade7",
         "EV-c9dda33325d18ba3",
         "EV-aad2b98b8f25d64b",
         "EV-d633676a4a7d89a3",
@@ -580,6 +650,9 @@
         "EN-b81c8201acfc7639",
         "EN-23929c7dca3eb576",
         "EN-5388bc10736a0eff",
+        "EN-7d3194f79e645c42",
+        "EN-7839fb10a8f14c70",
+        "EN-991f07e5aedd3445",
         "EN-24f5eb8d2e667579",
         "EN-f0edcf96f6fa2ccb",
         "EN-d36e5a1a7a3c45ce",
@@ -606,45 +679,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-06-07",
-      "lastSeen": "2026-07-29"
-    },
-    {
-      "id": "TX-technology-image_generation",
-      "name": "图像生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "image_generation",
-      "eventIds": [
-        "EV-82ae0ea3bfe336a1",
-        "EV-1a241bcb4fad886c",
-        "EV-a442b55d0bac5651",
-        "EV-dce5de62b2e4b752",
-        "EV-41baa43cf05d4288",
-        "EV-568d2aeab5234e48"
-      ],
-      "entityIds": [
-        "EN-9fbf261b62c1d7c0",
-        "EN-827b607311e6593e",
-        "EN-688f8db7018da7d4",
-        "EN-bae152c4560df38c",
-        "EN-047364b9be67f665",
-        "EN-52e3d014f9a275ea",
-        "EN-bbdefa2950f49882",
-        "EN-834ab0b6e4492d23",
-        "EN-01f1074bb52ff605",
-        "EN-ea3bd73e2b506e00",
-        "EN-96eebba49dbbf422",
-        "EN-534e99d81da1c54d",
-        "EN-d85ad5e8ff8e2889",
-        "EN-2b6e51bec93e86c1",
-        "EN-8d4321d936320802",
-        "EN-3db1f560db626918",
-        "EN-d56aa2f9908f566a"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-08-01"
     }
   ],
   "fde": [],

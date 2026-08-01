@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-cbc62794911ff31b",
@@ -51,6 +51,7 @@
       "EV-7f9631d793292d07",
       "EV-8993e021ac17df4a",
       "EV-67a69ab5b20da3c1",
+      "EV-b4f38d8bff12727b",
       "EV-1b92b6c835ce240c",
       "EV-933294dfb2d19a67"
     ],
@@ -66,7 +67,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2023-11-28",
-    "lastSeen": "2026-07-29",
+    "lastSeen": "2026-08-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -77,6 +78,7 @@
         "EV-02548003157849bb"
       ],
       "deployments": [
+        "EV-b4f38d8bff12727b",
         "EV-84697d26f813b122",
         "EV-4e5c6267b3237dac"
       ],
@@ -116,6 +118,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b4f38d8bff12727b",
+        "dataDate": "2026-08-01",
+        "date": "2026-08-01",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "亚马逊提前兑现对 OpenAI 投资 500 亿美元承诺，当前持股约 5%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-cbc62794911ff31b",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-84697d26f813b122",
         "dataDate": "2026-07-29",
@@ -1976,6 +1994,7 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-eb12fb9dd08e5aad",
         "EV-7a0f201debe99f2b",
         "EV-60110525440fac47",
         "EV-6bac0bf442887889",
@@ -2092,6 +2111,7 @@
       "hardwareIds": [
         "HW-ceb55d9bc637c1d3",
         "HW-8ec8f237534254df",
+        "HW-eb5bba1ad6c016b0",
         "HW-b13c3131fc20fe83",
         "HW-155f566cfd988f5e",
         "HW-cb9cc06cadda488b",
@@ -2099,7 +2119,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -2147,6 +2167,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-0e9f000dd04fe04c",
         "EV-3ec034d25ba6a710",
         "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
@@ -2238,7 +2259,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-01"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
