@@ -21,6 +21,7 @@ import {
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
+import { selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
 import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import {
@@ -31,6 +32,30 @@ import {
 } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+
+test("funding generation skips event IDs already published in another date bundle", () => {
+  const selection = selectFundingEventsForGeneration([
+    { event_id: "EV-NEW" },
+    { event_id: "EV-CURRENT" },
+    { event_id: "EV-HISTORICAL-DUPLICATE" },
+    { event_id: "EV-COMPANY-ROUND-DUPLICATE", aggregation_key: "EN-HARK|series_a" },
+  ], {
+    currentCards: [{ triggered_by_event_id: "EV-CURRENT" }],
+    publishedCards: [
+      { triggered_by_event_id: "EV-CURRENT" },
+      { triggered_by_event_id: "EV-HISTORICAL-DUPLICATE" },
+      { triggered_by_event_id: "EV-HARK-ORIGINAL", aggregation: { key: "EN-HARK|series_a" } },
+    ],
+    eventAggregationKey: (event) => event.aggregation_key || "",
+  });
+
+  assert.deepEqual(selection.pending.map((event) => event.event_id), ["EV-NEW"]);
+  assert.deepEqual(selection.reused.map((event) => event.event_id), ["EV-CURRENT"]);
+  assert.deepEqual(selection.deduplicated.map((event) => event.event_id), [
+    "EV-HISTORICAL-DUPLICATE",
+    "EV-COMPANY-ROUND-DUPLICATE",
+  ]);
+});
 
 function evidence(sourceId = "SRC-1", quote = "Acme raised $20 million led by Northstar Ventures.") {
   return [{ source_id: sourceId, quote }];
@@ -369,6 +394,10 @@ test("每个已验证融资商业事件都必须被一张有效融资卡覆盖",
     verifiedFundingEventCardCoverageProblems([verified, disputed], [validCard()]),
     [],
   );
+  assert.deepEqual(
+    verifiedFundingEventCardCoverageProblems([verified], [], [{ event_id: "EV-1", status: "deduplicated" }]),
+    [],
+  );
   const invalid = validCard();
   invalid.financing.investors = [];
   assert.deepEqual(
@@ -470,6 +499,7 @@ test("没有融资事件时生成器无需搜索或模型密钥也会写出可�
       auto_published: 0,
       blocked: 0,
       pending: 0,
+      deduplicated: 0,
     });
     assert.deepEqual(output.cards, []);
     assert.deepEqual(output.queue, []);
@@ -588,6 +618,31 @@ test("融资主体可从带英文描述前缀的规范实体名中恢复公司�
   const company = subjectCompanyForEvent(event, entities);
   assert.equal(company?.entity_id, "EN-PATHWORK");
   assert.equal(company?.canonical_name, "Pathwork");
+});
+
+test("descriptive startup prefixes never leak into the Funding Insight company name", () => {
+  const company = subjectCompanyForEvent({
+    display_title_zh: "Inference startup Infinity raises $15M",
+    action: "raises",
+    object: "$15M",
+    metrics: ["$15M"],
+    entities: ["EN-INFINITY"],
+  }, [{
+    entity_id: "EN-INFINITY",
+    entity_type: "organization_candidate",
+    canonical_name: "Inference startup Infinity",
+  }]);
+
+  assert.equal(company?.canonical_name, "Infinity");
+  const normalized = normalizeFundingInsightCard({
+    ...validCard(),
+    company: {
+      ...validCard().company,
+      name: "Inference startup Infinity",
+      full_name: "Infinity",
+    },
+  });
+  assert.equal(normalized.company.name, "Infinity");
 });
 
 test("融资主体没有强主语信号时保持阻断", () => {

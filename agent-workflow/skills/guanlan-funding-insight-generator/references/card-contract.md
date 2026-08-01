@@ -39,6 +39,8 @@ Blocked queue entries remain operational diagnostics and never enter `funding-in
 
 ## Historical ownership
 
+Automatic historical admission covers verified financing sources published within the preceding three calendar months. Older financing remains in QA unless an explicit targeted-backfill instruction enables it. Before research, the generator checks every persisted Funding Insight bundle and skips financing already covered by a valid card's event ID or canonical company-plus-normalized-round key.
+
 The same CanonicalEvent can appear in multiple daily bundles. Assign it once for historical generation:
 
 1. prefer more `source_refs`;

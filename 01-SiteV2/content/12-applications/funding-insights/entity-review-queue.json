@@ -2,9 +2,9 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.1",
-    "candidate_count": 702,
-    "product_candidates": 303,
-    "person_candidates": 399,
+    "candidate_count": 706,
+    "product_candidates": 305,
+    "person_candidates": 401,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -2894,15 +2894,24 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
+        "EN-05cd4b807503b0f2",
         "EN-73ef176d9f12809e"
       ],
       "funding_insight_ids": [
+        "FI-741d31b9c33af539",
         "FI-bc962e05b6cfb149"
       ],
       "source_event_ids": [
-        "EV-2069f6a931b8c9d6"
+        "EV-2069f6a931b8c9d6",
+        "EV-c84b6d7338f87990"
       ],
       "evidence_refs": [
+        {
+          "source_id": "FISRC-b1c606a5a9c590db",
+          "quote": "Co-Founder Eran Shirazi previously co-founded customer experience company EasySend",
+          "source_content_hash": "404876ab72ba2bb8",
+          "quote_hash": "03d6cdf8aed3036eb3d474dcdbb2862244728f0c7ecf77e34065fad695c0320f"
+        },
         {
           "source_id": "FISRC-40dacc7619402f63",
           "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi.",
@@ -4120,6 +4129,30 @@
           "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra.",
           "source_content_hash": "78c1fee941fb6b34",
           "quote_hash": "efe82d5f58b08ab46379402c26e6cc25553dc5c854d062e7a2602ae1c5bc87ad"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-769729fb692b7b09",
+      "candidate_kind": "person",
+      "research_name": "Jeremy Nixon",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-a0c0caae05f5e70a"
+      ],
+      "funding_insight_ids": [
+        "FI-c706cbd83381f803"
+      ],
+      "source_event_ids": [
+        "EV-d7a7244d620a2142"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fe9df758c254a64e",
+          "quote": "Infinity was launched last year by Jeremy Nixon, once a researcher at Google Brain and creator of the hacker network community AGI House.",
+          "source_content_hash": "4a51e7afa2172353",
+          "quote_hash": "1fe488f6878986181828b1baff52568ecf187b8f47e6379e6aa208545d5e0540"
         }
       ]
     },
@@ -6110,6 +6143,30 @@
           "quote": "Both Kyutai and Gradium were co-founded by Neil Zeghidour, a researcher who previously worked at Google Brain, DeepMind, and Facebook.",
           "source_content_hash": "84b42b7082dca9a3",
           "quote_hash": "926a574f0971804ac183f710687e5fae2fac34a1b80f9539eeac85466f41d7ed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-48725b8a00cee24e",
+      "candidate_kind": "person",
+      "research_name": "Nicholas Warner",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-05cd4b807503b0f2"
+      ],
+      "funding_insight_ids": [
+        "FI-741d31b9c33af539"
+      ],
+      "source_event_ids": [
+        "EV-c84b6d7338f87990"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1bf4ecd2fae97f0b",
+          "quote": "Co-founder and Chief Executive Nicholas Warner",
+          "source_content_hash": "84b7d83dc85df604",
+          "quote_hash": "d461d172aa7793b01d2734c737c0803bc7a276d9301bd851d7057b6093b073b3"
         }
       ]
     },
@@ -8136,15 +8193,24 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
+        "EN-05cd4b807503b0f2",
         "EN-73ef176d9f12809e"
       ],
       "funding_insight_ids": [
+        "FI-741d31b9c33af539",
         "FI-bc962e05b6cfb149"
       ],
       "source_event_ids": [
-        "EV-2069f6a931b8c9d6"
+        "EV-2069f6a931b8c9d6",
+        "EV-c84b6d7338f87990"
       ],
       "evidence_refs": [
+        {
+          "source_id": "FISRC-b1c606a5a9c590db",
+          "quote": "Co-Founder Shlomi Salem previously led detection engineering at SentinelOne",
+          "source_content_hash": "404876ab72ba2bb8",
+          "quote_hash": "63f0b79a1344a48ab9beb35a298baebd671fb2b3f10383accba8163eddba8eb4"
+        },
         {
           "source_id": "FISRC-40dacc7619402f63",
           "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi.",
@@ -13851,6 +13917,30 @@
       ]
     },
     {
+      "candidate_id": "FIER-9298c624a80d8056",
+      "candidate_kind": "product",
+      "research_name": "Ignition",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-a0c0caae05f5e70a"
+      ],
+      "funding_insight_ids": [
+        "FI-c706cbd83381f803"
+      ],
+      "source_event_ids": [
+        "EV-d7a7244d620a2142"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fe9df758c254a64e",
+          "quote": "Infinity’s AI research agent Ignition is intended to write the low-level code needed for AI inference on Nvidia-alternative chips. It tests, debugs, and measures how fast the hardware performs with the code, and automatically rewrites the code if needed to improve performance. The system is self-optimizing, meaning it continuously learns and improves itself. It also adapts to different chip architectures, regardless of proprietary designs, Nixon says.",
+          "source_content_hash": "4a51e7afa2172353",
+          "quote_hash": "bd566dac87969bb5032d39172ca30d42476af8e28925992d51604f33e74be7e8"
+        }
+      ]
+    },
+    {
       "candidate_id": "FIER-0b1a5c2eab8cf4da",
       "candidate_kind": "product",
       "research_name": "Illoca Tracing Paper™",
@@ -14831,6 +14921,30 @@
           "quote": "NAVI's small models process financial data, transactions, loan applications, billing, and workflows in real time—spotting risks, ensuring policy adherence, and providing clear, actionable insights.",
           "source_content_hash": "4a2effa07de9aaa4",
           "quote_hash": "ba868bb123991849c886a43d559eda71809913d34d7c73cfe9edc14ab422cadd"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-217b7aa275421ecc",
+      "candidate_kind": "product",
+      "research_name": "Neo Platform",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-05cd4b807503b0f2"
+      ],
+      "funding_insight_ids": [
+        "FI-741d31b9c33af539"
+      ],
+      "source_event_ids": [
+        "EV-c84b6d7338f87990"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1bf4ecd2fae97f0b",
+          "quote": "Neo aims to provide security operations teams with the inventory, posture intelligence, attribution and policy controls needed to manage and secure AI agents across entire organizations.",
+          "source_content_hash": "84b7d83dc85df604",
+          "quote_hash": "b84ea776c64ea27b3ce61af7e8116614ff30f2ee4b960ef964ffdde4d7433763"
         }
       ]
     },

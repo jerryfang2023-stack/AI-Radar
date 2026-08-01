@@ -986,18 +986,44 @@ test("research and report containers cannot promote incidental historical events
   });
 });
 
-test("deterministic events outside the seven-day daily window stay in QA", () => {
+test("model-assisted funding can use the three-month backfill window", () => {
+  assert.deepEqual(modelAssistedEventEligibility(
+    { source_type: "web", published_at: "2026-05-01T00:00:00.000Z" },
+    "Natural completed financing for its AI agent platform",
+    "funding",
+    "2026-08-01",
+  ), {
+    accepted: true,
+    reason: "",
+  });
+});
+
+test("verified funding sources within the three-month backfill window become canonical events", () => {
   const bundle = buildBundle([
     entry(
-      "stale-deterministic-funding",
+      "historical-funding-within-window",
       "Natural raises $30M for AI agent payments",
       "Natural raised $30 million in a Series A round for its AI agent payment platform.",
-      { published_at: "2026-07-20T00:00:00.000Z" },
+      { published_at: "2026-05-01T00:00:00.000Z" },
     ),
-  ], taxonomy, "2026-07-31", "2026-07-31T00:00:00.000Z");
+  ], taxonomy, "2026-08-01", "2026-08-01T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_type, "funding");
+});
+
+test("funding sources older than three months stay in QA by default", () => {
+  const bundle = buildBundle([
+    entry(
+      "historical-funding-outside-window",
+      "Natural raises $30M for AI agent payments",
+      "Natural raised $30 million in a Series A round for its AI agent payment platform.",
+      { published_at: "2026-04-30T00:00:00.000Z" },
+    ),
+  ], taxonomy, "2026-08-01", "2026-08-01T00:00:00.000Z");
 
   assert.equal(bundle.canonical_events.length, 0);
-  assert.ok(bundle.qa_queue.some((item) => item.reason === "source_outside_daily_window"));
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "source_outside_funding_backfill_window"));
 });
 
 test("sources dated after the data day cannot become commercial events", () => {

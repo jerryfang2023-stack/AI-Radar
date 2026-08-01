@@ -159,7 +159,16 @@ const VERSIONED_DEVELOPER_PACKAGE_LEAD = new RegExp(
   "iu",
 );
 
-function eventSourceEligibility(raw, artifact, title, dataDate = "") {
+function subtractCalendarMonths(dateText, months) {
+  const [year, month, day] = dateText.split("-").map(Number);
+  const targetMonth = month - 1 - months;
+  const targetYear = year + Math.floor(targetMonth / 12);
+  const normalizedMonth = ((targetMonth % 12) + 12) % 12;
+  const lastDay = new Date(Date.UTC(targetYear, normalizedMonth + 1, 0)).getUTCDate();
+  return `${targetYear}-${String(normalizedMonth + 1).padStart(2, "0")}-${String(Math.min(day, lastDay)).padStart(2, "0")}`;
+}
+
+function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {}) {
   const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
   const extractionQuality = cleanString(raw.extraction_quality).toLocaleLowerCase();
   if (rawQcDecision === "block" || extractionQuality === "failed") {
@@ -173,7 +182,19 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "") {
       / 86_400_000,
     );
     if (ageDays < 0) return { accepted: false, reason: "source_published_after_data_date" };
-    if (ageDays > 7) return { accepted: false, reason: "source_outside_daily_window" };
+    if (ageDays > 7) {
+      const fundingBackfillAllowed = options.eventType === "funding"
+        && (options.allowHistoricalFunding === true
+          || publishedDate >= subtractCalendarMonths(captureDate, 3));
+      if (!fundingBackfillAllowed) {
+        return {
+          accepted: false,
+          reason: options.eventType === "funding"
+            ? "source_outside_funding_backfill_window"
+            : "source_outside_daily_window",
+        };
+      }
+    }
   }
   if (COMMUNITY_DISCOVERY_URL.test(artifact.source_url)) {
     return { accepted: false, reason: "community_source_requires_original_event_source" };
@@ -256,7 +277,7 @@ function publicEventSourceTitleIssue(title) {
   return "";
 }
 
-function modelAssistedEventEligibility(raw, title, eventType, dataDate = "") {
+function modelAssistedEventEligibility(raw, title, eventType, dataDate = "", options = {}) {
   const sourceType = cleanString(raw.source_type).toLocaleLowerCase();
   if ((RESEARCH_CONTAINER_TITLE.test(title) || sourceType === "research")
       && !["research_result", "standard_specification"].includes(eventType)) {
@@ -270,7 +291,17 @@ function modelAssistedEventEligibility(raw, title, eventType, dataDate = "") {
       / 86_400_000,
     );
     if (ageDays > 7) {
-      return { accepted: false, reason: "model_assist_source_outside_daily_window" };
+      const fundingBackfillAllowed = eventType === "funding"
+        && (options.allowHistoricalFunding === true
+          || publishedDate >= subtractCalendarMonths(captureDate, 3));
+      if (!fundingBackfillAllowed) {
+        return {
+          accepted: false,
+          reason: eventType === "funding"
+            ? "model_assist_source_outside_funding_backfill_window"
+            : "model_assist_source_outside_daily_window",
+        };
+      }
     }
   }
   return { accepted: true, reason: "" };
@@ -1507,16 +1538,22 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const bodyClean = trimBoilerplate(bodyOriginal);
     const titleOriginal = cleanString(raw.title || raw.title_zh);
     const title = normalizeEventTitle(titleOriginal);
-    const sourceEligibility = eventSourceEligibility(raw, artifact, title, date);
-    const deterministicRule = sourceEligibility.accepted ? findEventRule(title, bodyClean.slice(0, 1200)) : null;
+    const candidateDeterministicRule = findEventRule(title, bodyClean.slice(0, 1200));
     const modelClaimCandidate = [
       ...(acceptedAssistByRaw.get(rawId) || []),
       ...(acceptedAssistBySource.get(artifact.source_artifact_id) || []),
     ].find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
     const normalizedModelProposal = preferredModelClaim(modelClaimCandidate?.proposal?.claims, modelClaimCandidate?.evidence);
     const proposedModelClaim = normalizedModelProposal.primary;
+    const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
+      eventType: candidateDeterministicRule?.eventType || proposedModelClaim?.event_type || "",
+      allowHistoricalFunding: options.allowHistoricalFunding === true,
+    });
+    const deterministicRule = sourceEligibility.accepted ? candidateDeterministicRule : null;
     const proposedModelEligibility = proposedModelClaim
-      ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date)
+      ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date, {
+          allowHistoricalFunding: options.allowHistoricalFunding === true,
+        })
       : { accepted: true, reason: "" };
     const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted
       ? { eventType: proposedModelClaim.event_type, pattern: /$^/u }
@@ -2119,7 +2156,9 @@ function main() {
   }
   const taxonomy = readJson(taxonomyPath);
   if (taxonomy.taxonomy_version !== VERSION.tag) throw new Error(`Expected ${VERSION.tag}, received ${taxonomy.taxonomy_version}`);
-  const bundle = buildBundle(loadRawEntries(date), taxonomy, date);
+  const bundle = buildBundle(loadRawEntries(date), taxonomy, date, new Date().toISOString(), {
+    allowHistoricalFunding: arg("allow-historical-funding") === "true",
+  });
   const destination = writeBundle(bundle, date);
   console.log(JSON.stringify({ ok: true, date, output: rel(destination), counts: bundle.manifest.counts, forbidden_field_hits: bundle.manifest.forbidden_field_hits }, null, 2));
 }
