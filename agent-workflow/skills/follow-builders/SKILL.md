@@ -3,13 +3,13 @@ name: follow-builders
 description: Use when curating or publishing source-linked AI builder viewpoints inside WaveSight's independent First-Line Viewpoints lane. Do not use for generic digest onboarding, delivery setup, factual Claims, CanonicalEvents, tags, facets, or relationships from commentary.
 metadata:
   guanlan:
-    version: "2.1.0"
+    version: "2.1.1"
     lane: "First-Line Viewpoints"
     status: "supporting skill"
     order: 90
     responsibility: "Curate source-linked builder commentary for the repository-owned First-Line Viewpoints lane."
     upstream: "approved builder posts, podcast transcripts, and repository lane inputs"
-    downstream: "follow-builders daily data and Guanlan person timelines"
+    downstream: "afternoon builders-viewpoints Markdown, First-Line V4 projection, local publish report, and Guanlan person timelines"
     gates: "source URL, identity, date, Chinese text, lane isolation, publication count"
     recent_learning: "Repository schedules and publishers own execution; this skill supplies judgment and boundary rules only."
     mirrored_in_skill_store: true
@@ -35,8 +35,8 @@ Read only the files needed for the current run:
 2. Separate the speaker's view from verifiable facts. Preserve uncertainty, attribution, and the original link.
 3. Write concise Chinese primary text without inventing titles, roles, metrics, dates, or product claims. Keep the original wording when translation could change factual tokens.
 4. Deduplicate by source ID or canonical URL. Use the source publication date, not the collection date, for person timelines.
-5. Route output only to `01-SiteV2/site/data/follow-builders-daily.json` and the generated Guanlan person timeline projection.
-6. Run the repository publisher and lane gate. A successful process exit is insufficient when item counts, source fields, or final supervision fail.
+5. Route the afternoon Skill output only to `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`. The morning RSS route exclusively owns `01-SiteV2/site/data/follow-builders-daily.json`; never create, replace, or validate that morning file from this Skill.
+6. Run the repository publisher, rebuild `01-SiteV2/site/data/first-line-viewpoints-v4.json`, and require the matching `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`. A successful process exit is insufficient when the Markdown/report counts differ, the V4 projection omits accepted items, or final supervision fails.
 
 ## Boundaries
 
@@ -49,18 +49,19 @@ Read only the files needed for the current run:
 
 ## Output
 
-Produce source-linked builder viewpoint records for the owned daily file and generated person-timeline projection, plus item counts and the earliest failed stage when incomplete.
+Produce the source-linked afternoon builders-viewpoints Markdown, its V4/person-timeline projections, and the matching durable publish report. Include item counts and the earliest failed stage when incomplete.
 
 ## Validation
 
 Run the smallest applicable checks:
 
 ```powershell
-node agent-workflow/tools/assert-follow-builders-data.mjs --date=<YYYY-MM-DD>
-powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1 -Merge
+powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1
+node 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs
+node agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs --require-morning=false --require-afternoon=true
 ```
 
-The second command is the production publisher and may create a PR/merge when explicitly requested by the operating workflow. For a local audit, prefer the data gate alone.
+The local publisher runs with `--merge=false` unless `-Merge` is supplied. Only an explicitly authorized operating workflow may rerun it with `-Merge` to create a PR and merge. Inspect the exact-date afternoon Markdown/report pair and do not use the morning `assert-follow-builders-data.mjs` result as evidence that the afternoon Skill succeeded.
 
 ## Done When
 

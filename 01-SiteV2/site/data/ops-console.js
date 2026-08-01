@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-01T09:49:36.572Z",
+    "generatedAt": "2026-08-01T10:19:54.737Z",
     "date": "2026-08-01",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -874,7 +874,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SKILL",
         "label": "Skill Store",
-        "value": "v2.0.0 GPT-5.6 prompt-contract governance"
+        "value": "v2.0.1 GPT-5.6 full-audit corrections"
       }
     ],
     "principles": [

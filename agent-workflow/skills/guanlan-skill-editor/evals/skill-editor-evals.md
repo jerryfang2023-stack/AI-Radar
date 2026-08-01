@@ -15,3 +15,4 @@
 13. Pass when direct, indirect, incomplete, negative-trigger, and edge-case requests are represented in evals or the full audit matrix.
 14. Fail when ordinary domain Skills copy GPT-5.6 API parameters, Pro mode, caching, or reasoning settings without owning that API surface and a measured need.
 15. Pass when every active governed Skill has valid `agents/openai.yaml` and its `default_prompt` explicitly mentions `$skill-name`; fail on missing metadata or mojibake.
+16. Pass when “只审计 Skill 触发边界” routes to `guanlan-code-rule-auditor`, while “审计并修复这些 Skill” uses the auditor for findings and this editor for the authorized mutation; fail when both Skills claim the audit-only request.

@@ -144,6 +144,7 @@ test("current contracts and Skills cannot route work back to V3 assets", () => {
     ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", /data\/v3-data-observation-desk\.json|intelligence-graph-index\.json|compatibility Cards/u],
     ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", /The current Card files|data\/v3-data-observation-desk\.json|promoted through Raw \/ Pool \/ Card/u],
     ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", /V3 internal Card|qualified Signal Cards|Card-backed relationship graph/u],
+    ["agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md", /legacy page output isolated as compatibility data|preserve compatibility (?:Cards|data|interfaces)/iu],
     ["agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md", /business-signals-gate-v3\.json|legacy Raw\/Pool supply/u],
     ["agent-workflow/skills/guanlan-monitor-quality-gate/references/scorecard.md", /Card generation|Raw\/Pool\/Core targets/u],
     ["agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md", /Card\/editorial\/frontstage gates|Raw\/Pool\/Core targets/u],

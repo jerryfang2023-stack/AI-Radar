@@ -1,13 +1,13 @@
 ---
 name: guanlan-skill-editor
-description: Use when auditing, creating, updating, or cleaning WaveSight/Guanlan skills, trigger metadata, workflows, evals, examples, references, memory, UI metadata, or conflicts. Do not use to run production lanes, change product data, publish, deploy, or add model/API settings unrelated to a measured Skill failure.
+description: Use when the user requests creating, updating, repairing, or cleaning WaveSight/Guanlan Skills, trigger metadata, workflows, evals, examples, references, memory, UI metadata, or conflicts. Do not use for an audit-only request with no mutation authorization; route read-only defect discovery to guanlan-code-rule-auditor.
 metadata:
   guanlan:
-    version: "2.0.0"
+    version: "2.0.1"
     lane: "Skill system"
     status: "governance"
     order: 110
-    responsibility: "Audit, create, update, and clean Guanlan skills."
+    responsibility: "Create, update, repair, and clean Guanlan Skills after mutation is requested."
     upstream: "current context, target skills, incidents"
     downstream: "skill edits, evals, examples, memory"
     gates: "trigger clarity, stale rule removal, eval coverage, memory hygiene"

@@ -10,6 +10,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
   return [key, rest.join("=") || "true"];
 }));
 const requireAfternoon = args.get("require-afternoon") !== "false";
+const requireMorning = args.get("require-morning") !== "false";
 const approvedTranslationMethods = new Set(["deepseek_translation", "manual_reviewed_translation", "source_chinese"]);
 
 function readJson(file) {
@@ -41,27 +42,27 @@ const builders = Array.isArray(data.builders) ? data.builders : [];
 const morning = meta.lanes?.morning || {};
 const afternoon = meta.lanes?.afternoon || {};
 
-if (morning.id !== "morning-rss") problems.push("morning-rss lane metadata is missing");
+if (requireMorning && morning.id !== "morning-rss") problems.push("morning-rss lane metadata is missing");
 if (afternoon.id !== "afternoon-skill") problems.push("afternoon-skill lane metadata is missing");
-if (!morning.dataFile) problems.push("morning lane dataFile is missing");
-if (!morning.historyFile) problems.push("morning lane historyFile is missing");
+if (requireMorning && !morning.dataFile) problems.push("morning lane dataFile is missing");
+if (requireMorning && !morning.historyFile) problems.push("morning lane historyFile is missing");
 if (requireAfternoon && !afternoon.dataFile) problems.push("afternoon lane dataFile is missing");
-if (remarks.length === 0) problems.push("published remarks are empty");
-if (morningIntake.length === 0) problems.push("morning intake is empty");
-if (builders.length === 0) problems.push("builder index is empty");
+if (requireMorning && remarks.length === 0) problems.push("published remarks are empty");
+if (requireMorning && morningIntake.length === 0) problems.push("morning intake is empty");
+if (requireMorning && builders.length === 0) problems.push("builder index is empty");
 if (requireAfternoon && intake.length === 0) problems.push("afternoon intake is empty");
-if (Number(morning.collected) !== morningIntake.length) problems.push(`morning collected ${morning.collected} does not match intake ${morningIntake.length}`);
-if (Number(morning.published) !== remarks.length) problems.push(`morning published ${morning.published} does not match published remarks ${remarks.length}`);
+if (requireMorning && Number(morning.collected) !== morningIntake.length) problems.push(`morning collected ${morning.collected} does not match intake ${morningIntake.length}`);
+if (requireMorning && Number(morning.published) !== remarks.length) problems.push(`morning published ${morning.published} does not match published remarks ${remarks.length}`);
 if (Number(afternoon.declaredCount) !== intake.length) problems.push(`afternoon declared count ${afternoon.declaredCount} does not match intake ${intake.length}`);
 if (Number(stats.afternoonIntake) !== intake.length) problems.push(`stats.afternoonIntake ${stats.afternoonIntake} does not match intake ${intake.length}`);
-if (Number(stats.morningIntake) !== morningIntake.length) problems.push(`stats.morningIntake ${stats.morningIntake} does not match morning intake ${morningIntake.length}`);
-if (Number(stats.morningPublished) !== remarks.length) problems.push(`stats.morningPublished ${stats.morningPublished} does not match published remarks ${remarks.length}`);
-if (Number(stats.currentMorningPublished || 0) + Number(stats.historicalPublished || 0) !== remarks.length) problems.push("current and historical published counts do not match published remarks");
+if (requireMorning && Number(stats.morningIntake) !== morningIntake.length) problems.push(`stats.morningIntake ${stats.morningIntake} does not match morning intake ${morningIntake.length}`);
+if (requireMorning && Number(stats.morningPublished) !== remarks.length) problems.push(`stats.morningPublished ${stats.morningPublished} does not match published remarks ${remarks.length}`);
+if (requireMorning && Number(stats.currentMorningPublished || 0) + Number(stats.historicalPublished || 0) !== remarks.length) problems.push("current and historical published counts do not match published remarks");
 if (Number(stats.dualCovered) !== intake.filter((item) => item.coveredByMorning).length) problems.push("dualCovered count does not match afternoon overlap");
 if (Number(stats.intakeOnly) !== intake.filter((item) => !item.coveredByMorning).length) problems.push("intakeOnly count does not match afternoon-only intake");
 
 const remarkUrls = new Set();
-for (const [index, item] of remarks.entries()) {
+for (const [index, item] of (requireMorning ? remarks : []).entries()) {
   const prefix = `remark[${index}]`;
   if (!item.url) problems.push(`${prefix} missing original URL`);
   else if (remarkUrls.has(item.url)) problems.push(`${prefix} duplicate URL`);
@@ -85,7 +86,7 @@ for (const [index, item] of remarks.entries()) {
   if (item.publicationStatus !== "published") problems.push(`${prefix} publicationStatus must be published`);
 }
 
-for (const [index, item] of morningIntake.entries()) {
+for (const [index, item] of (requireMorning ? morningIntake : []).entries()) {
   const prefix = `morningIntake[${index}]`;
   if (!item.url) problems.push(`${prefix} missing original URL`);
   if (!["published", "intake_only_non_ai", "intake_only_gate_failed"].includes(item.publicationStatus)) problems.push(`${prefix} has invalid publicationStatus`);
@@ -116,6 +117,7 @@ console.log(JSON.stringify({
   dualCovered: Number(stats.dualCovered || 0),
   intakeOnly: Number(stats.intakeOnly || 0),
   requireAfternoon,
+  requireMorning,
   dataFile: path.relative(root, dataFile).replace(/\\/gu, "/")
 }, null, 2));
 

@@ -4,7 +4,7 @@
 
 All 23 active governed Skills now satisfy `GPT-5.6-SKILL-V1.0`. The contract applies the Skill-relevant parts of OpenAI's current [Model guidance](https://developers.openai.com/api/docs/guides/latest-model): lean trigger metadata, explicit domain context and constraints, one clear autonomy boundary, observable success criteria, and representative validation. API-only settings such as reasoning effort, Pro mode, persisted reasoning, prompt caching, and Programmatic Tool Calling were deliberately not copied into ordinary domain Skills.
 
-Skill Store version: `v2.0.0`.
+Skill Store version: `v2.0.1`.
 
 ## Contract
 
@@ -85,8 +85,22 @@ Two read-only blind reviews tested trigger routing and executable contracts with
 ## Validation Result
 
 - OpenAI `quick_validate.py`: 23/23 Skills valid.
-- Skill Ops: 23/23 tests passed; prompt contract, trigger-eval inventory, implicit discovery, examples, evals, and OpenAI metadata all report 100% coverage. Semantic routing and boundary behavior were separately checked by the read-only blind forward tests above.
+- Skill Ops: 25/25 tests passed after the corrective release and review hardening; prompt contract, trigger-eval inventory, implicit discovery, examples, evals, and OpenAI metadata all report 100% coverage. Semantic routing and boundary behavior were separately checked by the read-only blind forward tests above.
 - Runtime mirrors: 23/23 repo Skills and 23/23 compatibility-store Skills synchronized with zero drift.
 - Operations/runtime regression: 10/10 tests passed; custom-agent preflight passed for three configs; 22/22 model-routing cases validated.
 - Data Center and site core: 60/60 tests passed; the deployment `frontstage-regression-gate` passed with zero issues.
 - The optional browser smoke found one existing mobile filter-width mismatch after the legacy `v3-data-observation` redirect. No HTML, CSS, or frontstage logic changed in this audit, so it is recorded as unrelated follow-up rather than mixed into the Skill patch.
+
+## Full Re-audit and Corrective Release
+
+The user-requested re-audit pinned `main` at `99a5bec46de0701ef9ca56826e0fd22a6dce22ab` and checked three surfaces: 23 governed project Skills end to end, all 163 Skill Store dashboard contracts, and all 231 locally discovered Skill manifests. Static gates initially passed, but an independent read-only forward audit still found five actionable contract defects. This distinction is intentional: inventory completeness and lint coverage do not replace representative execution-path review.
+
+The corrective release fixes:
+
+1. `follow-builders` now owns the afternoon `07-points/<date>-builders-viewpoints.md`, V4 projection, and exact-date publish report; it is forbidden from writing or validating the morning-owned `follow-builders-daily.json`.
+2. Funding Insights now matches the executable bounded exception for explicitly undisclosed investors: empty investor list, `investor_disclosure_status=not_disclosed`, and retained `investors_missing` risk marker.
+3. Data Center historical reprojection now forbids legacy page JSON, compatibility Cards, mappings, and interfaces, with explicit retirement-gate coverage.
+4. First-Line Viewpoints now points to the current `build-guanlan-vault.mjs` implementation instead of a deleted timeline-sync script.
+5. Read-only Skill defect discovery belongs to `guanlan-code-rule-auditor`; requested Skill creation or repair belongs to `guanlan-skill-editor`. Cross-Skill boundary evals specify the split without presenting inventory coverage as a model-routing score.
+
+Post-repair evidence: 23/23 governed Skills pass with 25/25 Skill Ops tests, including a real afternoon-only gate fixture that fails under the combined morning requirement and passes under the owning afternoon route. Funding Insights 36/36, Operations 10/10, Data Center/site core 60/60, compatibility retirement and no-active-V3 gates passed, all 23 repository and compatibility mirrors have zero drift, all 23 official `quick_validate.py` checks pass, the 163-Skill dashboard contract passes, and local discovery reports 231 manifests with zero invalid or duplicate enabled names.

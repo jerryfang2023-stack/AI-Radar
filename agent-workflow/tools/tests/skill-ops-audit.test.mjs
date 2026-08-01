@@ -40,6 +40,63 @@ test("semantic gate rejects stale contracts and generic scheduler onboarding", (
   assert.match(errors.join("\n"), /generic agent onboarding/u);
 });
 
+test("governed Skill text contracts declare current lane ownership and routing boundaries", () => {
+  const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), "utf8");
+  const followBuilders = read("agent-workflow/skills/follow-builders/SKILL.md");
+  const funding = read("agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md");
+  const supervisor = read("agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md");
+  const firstLine = read("agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md");
+  const auditor = read("agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md");
+  const editor = read("agent-workflow/skills/guanlan-skill-editor/SKILL.md");
+
+  assert.match(followBuilders, /07-points\/<YYYY-MM-DD>-builders-viewpoints\.md/u);
+  assert.match(followBuilders, /morning RSS route exclusively owns `01-SiteV2\/site\/data\/follow-builders-daily\.json`/u);
+  assert.match(funding, /investor_disclosure_status=not_disclosed[\s\S]*investors_missing/u);
+  assert.doesNotMatch(supervisor, /legacy page output isolated as compatibility data/iu);
+  assert.match(supervisor, /do not restore, retain, or emit legacy page JSON/u);
+  assert.match(firstLine, /agent-workflow\/tools\/build-guanlan-vault\.mjs/u);
+  assert.doesNotMatch(firstLine, /sync-follow-builders-to-opinion-timelines\.mjs/u);
+  assert.equal(fs.existsSync(path.join(root, "agent-workflow/tools/build-guanlan-vault.mjs")), true);
+  assert.match(auditor, /read-only defect audit/u);
+  assert.match(editor, /Do not use for an audit-only request/u);
+});
+
+test("afternoon First-Line gate passes independently of missing morning data", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-afternoon-gate-"));
+  const dataDir = path.join(fixture, "01-SiteV2", "site", "data");
+  fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(path.join(dataDir, "first-line-viewpoints-v4.json"), `${JSON.stringify({
+    meta: {
+      lanes: {
+        afternoon: { id: "afternoon-skill", dataFile: "07-points/fixture.md", declaredCount: 1 },
+      },
+    },
+    stats: { afternoonIntake: 1, dualCovered: 0, intakeOnly: 1 },
+    remarks: [],
+    morningIntake: [],
+    builders: [],
+    intake: [{ url: "https://example.com/builder", laneCoverage: ["afternoon-skill"], coveredByMorning: false }],
+  }, null, 2)}\n`, "utf8");
+
+  const gate = path.join(root, "agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs");
+  const afternoonOnly = spawnSync(process.execPath, [gate, "--require-morning=false", "--require-afternoon=true"], {
+    cwd: fixture,
+    encoding: "utf8",
+  });
+  const combined = spawnSync(process.execPath, [gate, "--require-afternoon=true"], {
+    cwd: fixture,
+    encoding: "utf8",
+  });
+
+  assert.equal(afternoonOnly.status, 0, afternoonOnly.stdout || afternoonOnly.stderr);
+  assert.equal(combined.status, 1);
+  assert.match(combined.stdout, /morning-rss lane metadata is missing|morning intake is empty/u);
+  assert.match(
+    fs.readFileSync(path.join(root, "agent-workflow/tools/publish-follow-builders-skill-local.mjs"), "utf8"),
+    /assert-first-line-viewpoints-v4-data\.mjs", "--require-morning=false", "--require-afternoon=true"/u,
+  );
+});
+
 test("GPT-5.6 prompt contract requires trigger, boundary, workflow, output, and completion", () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-prompt-contract-"));
   const skillPath = path.join(fixture, "SKILL.md");

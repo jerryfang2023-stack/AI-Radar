@@ -1,9 +1,9 @@
 ---
 name: guanlan-code-rule-auditor
-description: Use when auditing WaveSight AI code, rules, skills, scripts, GitHub Actions, gates, or data-flow logic for defects, contradictions, dead paths, migration failures, and unnecessary complexity. Covers the V4 factual core, downstream applications, operations, deployment, and the permanent V3-retirement boundary. Do not use it to run daily production, edit same-day production data, auto-fix findings, push, or deploy.
+description: Use when performing a read-only defect audit of WaveSight AI code, rules, skills, scripts, GitHub Actions, gates, or data-flow logic for contradictions, dead paths, migration failures, and unnecessary complexity. Covers the V4 factual core, downstream applications, operations, deployment, and the permanent V3-retirement boundary. Do not use when the request is to create, update, or repair a Skill; route that mutation to guanlan-skill-editor after findings are accepted.
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.2.1"
     lane: "Code and rule audit"
     status: "governance"
     order: 115
