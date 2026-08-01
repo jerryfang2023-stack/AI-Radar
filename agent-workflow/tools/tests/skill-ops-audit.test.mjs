@@ -7,6 +7,7 @@ import test from "node:test";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import {
   evaluateSkillOps,
+  evaluateSkillSemantics,
   readGovernedSkills,
   renderRegistryMarkdown,
 } from "../lib/guanlan-skill-ops.mjs";
@@ -26,6 +27,16 @@ const selfCheckPolicy = path.join(root, "agent-workflow", "tools", "lib", "daily
 const skillStorePaths = path.join(root, "agent-workflow", "tools", "lib", "skill-store-paths.mjs");
 const communityWorkflow = path.join(root, ".github", "workflows", "daily-community-intelligence-pr.yml");
 const pagesWorkflow = path.join(root, ".github", "workflows", "github-pages.yml");
+
+test("semantic gate rejects stale contracts and generic scheduler onboarding", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-semantics-"));
+  const skillPath = path.join(fixture, "SKILL.md");
+  fs.writeFileSync(skillPath, "# Follow Builders\nUse RAW-V3 with OpenClaw cron and Telegram.\n", "utf8");
+  const errors = evaluateSkillSemantics({ name: "follow-builders", dir: fixture, skillPath });
+  assert.equal(errors.length, 2);
+  assert.match(errors.join("\n"), /RAW-V3/u);
+  assert.match(errors.join("\n"), /generic agent onboarding/u);
+});
 
 test("GitHub Pages materializes repo runtime Skills before validating governance", () => {
   const workflow = fs.readFileSync(pagesWorkflow, "utf8");

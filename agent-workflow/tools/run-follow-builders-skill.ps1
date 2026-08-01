@@ -1,5 +1,6 @@
 param(
   [string]$RepoPath = "",
+  [string]$RuntimePath = "",
   [switch]$Merge
 )
 
@@ -18,6 +19,9 @@ function Resolve-RepoPath {
 }
 
 $repo = Resolve-RepoPath -InputPath $RepoPath
+if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
+$RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
+New-Item -ItemType Directory -Path $RuntimePath -Force | Out-Null
 $publisher = Join-Path $repo "agent-workflow\tools\publish-follow-builders-skill-local.mjs"
 $supervisor = Join-Path $repo "agent-workflow\tools\write-daily-supervision-report.mjs"
 
@@ -42,9 +46,9 @@ try {
 }
 finally {
   try {
-    & node $supervisor "--force-afternoon-window=true"
+    & node $supervisor "--force-afternoon-window=true" "--output-dir=$RuntimePath"
     $supervisionExitCode = $LASTEXITCODE
-    $latestReport = Join-Path $repo "agent-workflow\reports\daily-supervision-report-latest.json"
+    $latestReport = Join-Path $RuntimePath "daily-supervision-report-latest.json"
     if (Test-Path -LiteralPath $latestReport) {
       $supervision = Get-Content -Raw -LiteralPath $latestReport | ConvertFrom-Json
       $skillLane = $supervision.lanes | Where-Object { $_.id -eq "follow_builders_skill" } | Select-Object -First 1

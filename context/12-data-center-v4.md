@@ -57,6 +57,13 @@ Private evidence objects and exact Claim spans are the evidence layer. Public Ra
 - Targeted backfill schema: `agent-workflow/product/targeted-backfill-v1.schema.json`
 - Tag taxonomy: `agent-workflow/product/tag-taxonomy-v4.json`
 
+Technical tag and facet matching is Claim-bound and sentence-local: an exclusion
+may suppress only the evidence sentence where it occurs, not an independent
+sentence in the same Claim quote. Coverage is descriptive, never a quota or
+publication gate. Reproject all accepted historical Claims with
+`npm run reproject:tag-taxonomy`, then run `npm run audit:tag-taxonomy` and the V4
+integrity gates.
+
 ## Rules
 
 - Every Claim quotes an exact span of the normalized body loaded from its private `evidence://<content_hash>` object.

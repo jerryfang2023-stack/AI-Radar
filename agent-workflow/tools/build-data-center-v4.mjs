@@ -896,6 +896,13 @@ function matchesDefinition(text, matcher) {
     && !matcher.exclusions.some((pattern) => pattern.test(text));
 }
 
+function evidenceSegments(text) {
+  return String(text || "")
+    .split(/(?<=[!?。！？;；])\s*|\.(?=\s)\s*|(?<!\d)\.(?=[A-Z]|\p{Script=Han})|\n+/u)
+    .map(normalizeSpace)
+    .filter(Boolean);
+}
+
 function textSupportsEventObject(claim, evidenceText = claim.source_quote) {
   const object = normalizeSpace(claim.object).toLocaleLowerCase();
   const quote = normalizeSpace(evidenceText).toLocaleLowerCase();
@@ -914,7 +921,7 @@ function textSupportsEventObject(claim, evidenceText = claim.source_quote) {
 function tagAssertionsForClaim(claim, matchers) {
   const out = [];
   for (const matcher of matchers) {
-    if (!matchesDefinition(claim.source_quote, matcher)) continue;
+    if (!evidenceSegments(claim.source_quote).some((segment) => matchesDefinition(segment, matcher))) continue;
     out.push({
       asset_id: claim.claim_id,
       tag_id: matcher.definition.id,
@@ -932,8 +939,7 @@ function tagAssertionsForClaim(claim, matchers) {
 function facetAssertionsForClaim(claim, matchers) {
   const out = [];
   for (const matcher of matchers) {
-    const evidenceSegments = claim.source_quote.split(/(?<=[.!?。！？;；])\s+|\n+/u).filter(Boolean);
-    const matchedSegments = evidenceSegments.filter((segment) => matchesDefinition(segment, matcher));
+    const matchedSegments = evidenceSegments(claim.source_quote).filter((segment) => matchesDefinition(segment, matcher));
     if (!matchedSegments.length) continue;
     if (matcher.facet.id === "product_form"
         && claim.claim_type !== "funding"
@@ -2183,5 +2189,9 @@ export {
   publicEventSourceTitleIssue,
   modelAssistedEventEligibility,
   forbiddenKeys,
-  sourceArtifact
+  sourceArtifact,
+  taxonomyMatchers,
+  facetMatchers,
+  tagAssertionsForClaim,
+  facetAssertionsForClaim,
 };

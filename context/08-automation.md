@@ -66,6 +66,14 @@ self-repair handoff, the expired agent-review trial, the separate heartbeat
 publisher, and the three local periodic duplicates must be absent. GitHub
 Actions owns weekly and monthly schedules.
 
+Controller, supervision, self-check, and Codex handoff reports from Windows tasks
+are runtime state, not repository assets. The installer passes
+`--runtime-dir=%LOCALAPPDATA%\WaveSight\runtime`; local task execution must not
+dirty `agent-workflow/reports`. Closure runs the self-check once and hands that
+same report to Codex. When repair is necessary, Codex receives a clean isolated
+worktree based on `origin/main`, so unrelated local edits are preserved and never
+treated as repair input.
+
 Final Closure also rebuilds and gates the local V4 JSONL/DuckDB serving layer.
 This refresh is part of the existing task and must not be installed as a
 separate scheduled task or Startup loop.

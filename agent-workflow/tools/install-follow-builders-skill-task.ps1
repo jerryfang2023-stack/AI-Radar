@@ -2,6 +2,7 @@ param(
   [string]$RepoPath = "",
   [string]$TaskName = "WaveSight Follow-Builders Skill Daily",
   [string]$At = "16:10",
+  [string]$RuntimePath = "",
   [switch]$NoMerge,
   [switch]$RunOnceNow
 )
@@ -30,7 +31,11 @@ if (-not (Test-Path -LiteralPath $runScript)) {
 $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::InvariantCulture)
 $quotedScript = '"' + $runScript + '"'
 $quotedRepo = '"' + $repo + '"'
-$argument = "-NoProfile -ExecutionPolicy Bypass -File $quotedScript -RepoPath $quotedRepo"
+if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
+$RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
+New-Item -ItemType Directory -Path $RuntimePath -Force | Out-Null
+$quotedRuntime = '"' + $RuntimePath + '"'
+$argument = "-NoProfile -ExecutionPolicy Bypass -File $quotedScript -RepoPath $quotedRepo -RuntimePath $quotedRuntime"
 
 if (-not $NoMerge) {
   $argument = $argument + " -Merge"
@@ -61,6 +66,7 @@ Write-Host "Repository: $repo"
 Write-Host "Schedule: daily at $At"
 Write-Host "Runner: $runScript"
 Write-Host "Merge after success: $(-not $NoMerge)"
+Write-Host "Runtime reports: $RuntimePath"
 
 if ($RunOnceNow) {
   Start-ScheduledTask -TaskName $TaskName

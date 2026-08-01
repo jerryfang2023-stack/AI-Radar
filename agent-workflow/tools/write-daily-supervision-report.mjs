@@ -14,6 +14,7 @@ const args = new Map(
     return [key, rest.join("=") || "true"];
   })
 );
+const outputDir = path.resolve(root, args.get("output-dir") || path.join("agent-workflow", "reports"));
 
 const date = args.get("date") || shanghaiDate();
 const githubMode = args.get("github") || "auto";
@@ -1119,18 +1120,18 @@ function repairRequest(lane) {
   return [
     `lane: ${lane.id}`,
     `failed_gate: ${repairGate(lane)}`,
-    `report_path: agent-workflow/reports/${date}-daily-supervision-report.md`,
+    `report_path: ${path.join(outputDir, `${date}-daily-supervision-report.md`)}`,
     `data_generated: ${repairDataGenerated(lane)}`,
     `needed_action: ${repairNeededAction(lane)}`,
   ].join("\n");
 }
 
 function writeReports(payload) {
-  fs.mkdirSync(reportsDir, { recursive: true });
-  const jsonPath = path.join(reportsDir, `${date}-daily-supervision-report.json`);
-  const mdPath = path.join(reportsDir, `${date}-daily-supervision-report.md`);
-  const latestJsonPath = path.join(reportsDir, "daily-supervision-report-latest.json");
-  const latestMdPath = path.join(reportsDir, "daily-supervision-report-latest.md");
+  fs.mkdirSync(outputDir, { recursive: true });
+  const jsonPath = path.join(outputDir, `${date}-daily-supervision-report.json`);
+  const mdPath = path.join(outputDir, `${date}-daily-supervision-report.md`);
+  const latestJsonPath = path.join(outputDir, "daily-supervision-report-latest.json");
+  const latestMdPath = path.join(outputDir, "daily-supervision-report-latest.md");
 
   const tableRows = payload.lanes.map((lane) => (
     `| ${lane.label} | ${lane.schedule} | ${lane.status} | ${lane.problems.length} | ${lane.waiting?.length || 0} | ${lane.warnings.length} |`

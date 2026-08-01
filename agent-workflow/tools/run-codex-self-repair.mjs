@@ -5,13 +5,13 @@ import { spawnSync } from "node:child_process";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 
 const root = process.cwd();
-const reportsDir = path.join(root, "agent-workflow", "reports");
 const args = new Map(
   process.argv.slice(2).map((arg) => {
     const [key, ...rest] = arg.replace(/^--/u, "").split("=");
     return [key, rest.join("=") || "true"];
   })
 );
+const reportsDir = path.resolve(root, args.get("runtime-dir") || path.join("agent-workflow", "reports"));
 
 const date = args.get("date") || shanghaiDate();
 const repairMode = args.get("repair") || "safe";
@@ -20,10 +20,8 @@ const taskMode = args.get("scheduled-task") || "auto";
 const invokeMode = String(args.get("invoke") || "off").toLowerCase();
 const maxTasks = Number.parseInt(args.get("max-tasks") || "1", 10);
 const codexCommand = args.get("codex-command") || "codex";
-const codexLastMessagePath = `agent-workflow/reports/${date}-codex-self-repair-last-message.md`;
-const defaultCodexArgs = `exec --sandbox danger-full-access --ask-for-approval never --output-last-message "${codexLastMessagePath}" --cd . -`;
-const codexArgs = parseArgList(args.get("codex-args") || defaultCodexArgs);
-const allowDirty = ["true", "1", "yes", "on"].includes(String(args.get("allow-dirty") || "").toLowerCase());
+const codexLastMessagePath = path.join(reportsDir, `${date}-codex-self-repair-last-message.md`);
+const reuseSelfCheck = ["true", "1", "yes", "on"].includes(String(args.get("reuse-self-check") || "").toLowerCase());
 const allowSkillStoreSync = ["true", "1", "yes", "on"].includes(String(args.get("allow-skill-store-sync") || "").toLowerCase());
 
 function shanghaiDate(value = new Date()) {
@@ -80,6 +78,29 @@ function parseArgList(value) {
   return result;
 }
 
+function enforceRepairWorktree(argsList, repairPath) {
+  const result = [];
+  let replaced = false;
+  for (let index = 0; index < argsList.length; index += 1) {
+    const value = argsList[index];
+    if (value === "--cd") {
+      result.push("--cd", repairPath);
+      index += 1;
+      replaced = true;
+    } else if (value.startsWith("--cd=")) {
+      result.push(`--cd=${repairPath}`);
+      replaced = true;
+    } else {
+      result.push(value);
+    }
+  }
+  if (!replaced) {
+    const inputIndex = result.lastIndexOf("-");
+    result.splice(inputIndex >= 0 ? inputIndex : result.length, 0, "--cd", repairPath);
+  }
+  return result;
+}
+
 function runCommand(label, command, argsList, options = {}) {
   const startedAt = new Date().toISOString();
   const result = spawnSync(command, argsList, {
@@ -109,19 +130,48 @@ function runDailySelfCheck() {
     `--repair=${repairMode}`,
     `--github=${githubMode}`,
     `--scheduled-task=${taskMode}`,
+    `--runtime-dir=${reportsDir}`,
   ];
   if (allowSkillStoreSync) commandArgs.push("--allow-skill-store-sync=true");
   return runCommand("daily self-check", process.execPath, commandArgs, { timeoutMs: 240000 });
 }
 
-function gitStatus() {
-  const result = runCommand("git status", "git", ["status", "--porcelain"], { timeoutMs: 30000 });
+function reusedSelfCheckCommand() {
   return {
-    ok: result.ok,
-    dirty: Boolean(result.stdout),
-    status: result.stdout,
-    command: result,
+    label: "reuse daily self-check",
+    command: `reuse ${path.join(reportsDir, `${date}-daily-self-check.json`)}`,
+    ok: true,
+    status: 0,
+    error: "",
+    stdout: "",
+    stderr: "",
+    started_at: new Date().toISOString(),
+    finished_at: new Date().toISOString(),
   };
+}
+
+function prepareRepairWorktree() {
+  const repairRoot = path.resolve(
+    args.get("repair-worktree")
+      || path.join(process.env.LOCALAPPDATA || path.dirname(root), "WaveSight", "repair-worktrees", date),
+  );
+  const branch = `automation/codex-self-repair-${date}`;
+  if (fs.existsSync(path.join(repairRoot, ".git"))) {
+    const status = runCommand("inspect repair worktree", "git", ["-C", repairRoot, "status", "--porcelain"], { timeoutMs: 30000 });
+    if (!status.ok || status.stdout) {
+      return { ok: false, path: repairRoot, branch, command: status, reason: status.stdout ? "Existing repair worktree is dirty." : "Could not inspect repair worktree." };
+    }
+    return { ok: true, path: repairRoot, branch, command: status };
+  }
+  fs.mkdirSync(path.dirname(repairRoot), { recursive: true });
+  const fetch = runCommand("fetch repair base", "git", ["fetch", "origin", "main"], { timeoutMs: 120000 });
+  if (!fetch.ok) return { ok: false, path: repairRoot, branch, command: fetch, reason: "Could not fetch origin/main." };
+  const branchExists = runCommand("inspect repair branch", "git", ["show-ref", "--verify", "--quiet", `refs/heads/${branch}`], { timeoutMs: 30000 });
+  const worktreeArgs = branchExists.ok
+    ? ["worktree", "add", repairRoot, branch]
+    : ["worktree", "add", "-b", branch, repairRoot, "origin/main"];
+  const created = runCommand("create isolated repair worktree", "git", worktreeArgs, { timeoutMs: 120000 });
+  return { ok: created.ok, path: repairRoot, branch, command: created, reason: created.ok ? "" : "Could not create isolated repair worktree." };
 }
 
 function selectedTasks(selfCheckReport) {
@@ -131,8 +181,8 @@ function selectedTasks(selfCheckReport) {
 }
 
 function buildPrompt(selfCheckReport, tasks, promptPath) {
-  const dailySelfCheckMd = `agent-workflow/reports/${date}-daily-self-check.md`;
-  const dailySupervisionMd = `agent-workflow/reports/${date}-daily-supervision-report.md`;
+  const dailySelfCheckMd = path.join(reportsDir, `${date}-daily-self-check.md`);
+  const dailySupervisionMd = path.join(reportsDir, `${date}-daily-supervision-report.md`);
   const taskLines = tasks.map((task, index) => {
     const failedGate = task.failed_gate ? `\n- failed_gate: ${task.failed_gate}` : "";
     return [
@@ -153,13 +203,12 @@ function buildPrompt(selfCheckReport, tasks, promptPath) {
     "",
     "Goal: repair the unresolved daily monitoring problem(s) from the non-Hermes self-check, using the smallest safe code/rule/gate change and the smallest relevant validation.",
     "",
-    "Required routing:",
+    "Context:",
     "",
     "1. Read `AGENTS.md` first.",
     "2. Read the current task context in `context/08-automation.md` and the linked report files.",
     `3. Read \`${dailySelfCheckMd}\` and \`${dailySupervisionMd}\`.`,
-    "4. Do not use the legacy Hermes inbox as the repair queue for this run.",
-    "5. Work only on the task(s) below unless a directly required dependency blocks them.",
+    "4. Work only on the task(s) below unless a directly required dependency blocks them.",
     "",
     "Hard boundaries:",
     "",
@@ -171,9 +220,9 @@ function buildPrompt(selfCheckReport, tasks, promptPath) {
     "- If a same-date workflow is queued or in progress, classify it as waiting instead of missing data.",
     "- If code changes are made, run the exact failed gate or the smallest relevant validation.",
     "",
-    "Branch / PR path:",
+    "Completion:",
     "",
-    `- If edits are needed and the worktree is clean, create or reuse \`automation/codex-self-repair-${date}\`.`,
+    `- This run starts in isolated branch \`automation/codex-self-repair-${date}\`; do not switch branches.`,
     "- Stage only files required for the repair and prevention artifact.",
     "- Commit after validation passes.",
     "- Push the branch and open or update a PR when `gh` credentials permit it.",
@@ -246,7 +295,7 @@ function writeReport(payload) {
 }
 
 function main() {
-  const selfCheckCommand = runDailySelfCheck();
+  const selfCheckCommand = reuseSelfCheck ? reusedSelfCheckCommand() : runDailySelfCheck();
   const selfCheckJsonPath = path.join(reportsDir, `${date}-daily-self-check.json`);
   const selfCheckReport = readJson(selfCheckJsonPath, null);
   const tasks = selectedTasks(selfCheckReport);
@@ -264,14 +313,13 @@ function main() {
   } else if (!tasks.length) {
     status = "no_action";
   } else if (["on", "true", "1", "yes"].includes(invokeMode)) {
-    const git = gitStatus();
-    if (!git.ok) {
-      status = "blocked_git_status";
-      blockReason = git.command.stderr || git.command.error || "Could not read git status.";
-    } else if (git.dirty && !allowDirty) {
-      status = "blocked_dirty_worktree";
-      blockReason = "Working tree is dirty. Re-run with --allow-dirty=true only when the dirty diff is expected.";
+    const repairWorktree = prepareRepairWorktree();
+    if (!repairWorktree.ok) {
+      status = "blocked_repair_worktree";
+      blockReason = `${repairWorktree.reason} ${repairWorktree.command?.stderr || repairWorktree.command?.error || ""}`.trim();
     } else {
+      const defaultCodexArgs = `exec --sandbox danger-full-access --ask-for-approval never --output-last-message "${codexLastMessagePath}" --cd "${repairWorktree.path}" -`;
+      const codexArgs = enforceRepairWorktree(parseArgList(args.get("codex-args") || defaultCodexArgs), repairWorktree.path);
       codexInvocation = runCommand("codex self repair", codexCommand, codexArgs, {
         input: prompt,
         timeoutMs: Number.parseInt(args.get("codex-timeout-ms") || "1800000", 10),
@@ -294,7 +342,7 @@ function main() {
     prompt: rel(promptPath),
     tasks,
     self_check_command: selfCheckCommand,
-    codex_command: [codexCommand, ...codexArgs].join(" "),
+    codex_command: codexCommand,
     codex_last_message: codexLastMessagePath,
     codex_invocation: codexInvocation,
     block_reason: blockReason,

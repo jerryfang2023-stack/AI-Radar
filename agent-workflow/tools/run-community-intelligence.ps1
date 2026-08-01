@@ -3,6 +3,7 @@
   [string]$CdpUrl = "http://127.0.0.1:9333",
   [string]$ChromePath = "",
   [string]$ChromeProfilePath = "",
+  [string]$RuntimePath = "",
   [switch]$SkipBrowserStart,
   [int]$MaxAttempts = 1,
   [int]$RetryDelaySeconds = 300,
@@ -161,7 +162,8 @@ function Get-BeijingDate {
 }
 
 $repo = Resolve-RepoPath -InputPath $RepoPath
-$logDir = Join-Path $repo "agent-workflow\reports\community-intelligence"
+if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
+$logDir = Join-Path ([IO.Path]::GetFullPath($RuntimePath)) "community-intelligence"
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null
 $script:LogFile = Join-Path $logDir ("community-intelligence-" + (Get-Date -Format "yyyyMMdd") + ".log")
 

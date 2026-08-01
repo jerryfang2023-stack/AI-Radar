@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
@@ -14,6 +14,34 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
+
+test("technical tag exclusions are scoped to the matching evidence sentence", () => {
+  const claim = {
+    claim_id: "CL-tag-segment",
+    source_quote: "The company launched AI agent 0.5 with ROCm.ai.Support remains available from a human agent。智能体可以执行任务；人工代理负责支持。",
+    source_span: { start: 0, end: 89 },
+  };
+  const tags = tagAssertionsForClaim(claim, taxonomyMatchers(taxonomy));
+  assert.equal(tags.some((item) => item.tag_id === "agentic_execution"), true);
+
+  const excluded = tagAssertionsForClaim({
+    ...claim,
+    claim_id: "CL-tag-excluded",
+    source_quote: "A human agent handles every request.",
+  }, taxonomyMatchers(taxonomy));
+  assert.equal(excluded.some((item) => item.tag_id === "agentic_execution"), false);
+});
+
+test("facet matching does not treat trailing retrieval metadata as event evidence", () => {
+  const facets = facetAssertionsForClaim({
+    claim_id: "CL-facet-metadata",
+    claim_type: "partnership",
+    object: "Across AI",
+    source_quote: "SK Group and NVIDIA Expand Strategic Partnership Across AI. / query=edge AI device customer deployment manufacturing / intent=find_customer_case",
+    source_span: { start: 0, end: 142 },
+  }, facetMatchers(taxonomy));
+  assert.equal(facets.some((item) => item.value_id === "ai_device"), false);
+});
 
 test("DeepSeek V4 translates source titles through its chat completion endpoint", async (t) => {
   const originalFetch = globalThis.fetch;

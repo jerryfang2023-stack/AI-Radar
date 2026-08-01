@@ -3,6 +3,7 @@ param(
   [string]$TaskName = "WaveSight Hermes Control Plane Watchdog",
   [string]$At = "10:20",
   [string]$GitHubRepository = "jerryfang2023-stack/AI-Radar",
+  [string]$RuntimePath = "",
   [switch]$RunOnceNow
 )
 
@@ -34,9 +35,12 @@ $runner = Join-Path $repo "agent-workflow\tools\run-hermes-control-plane-cycle.m
 if (-not (Test-Path -LiteralPath $runner)) { throw "Hermes control-plane cycle runner not found: $runner" }
 $nodeExecutable = Resolve-NodeExecutable
 $ghExecutable = (Get-Command gh.exe -ErrorAction Stop).Source
+if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
+$RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
+New-Item -ItemType Directory -Path $RuntimePath -Force | Out-Null
 
 $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::InvariantCulture)
-$argument = '"' + $runner + '" "--repo=' + $GitHubRepository + '" "--gh-executable=' + $ghExecutable + '"'
+$argument = '"' + $runner + '" "--repo=' + $GitHubRepository + '" "--gh-executable=' + $ghExecutable + '" "--reports-dir=' + $RuntimePath + '"'
 $action = New-ScheduledTaskAction -Execute $nodeExecutable -Argument $argument -WorkingDirectory $repo
 $trigger = New-ScheduledTaskTrigger -Daily -At $time
 $settings = New-ScheduledTaskSettingsSet `
@@ -67,6 +71,7 @@ Write-Host "Repository: $repo"
 Write-Host "Schedule: daily at $At"
 Write-Host "GitHub repository: $GitHubRepository"
 Write-Host "Node executable: $nodeExecutable"
+Write-Host "Runtime reports: $RuntimePath"
 
 if ($RunOnceNow) {
   Start-ScheduledTask -TaskName $TaskName

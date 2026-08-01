@@ -3,11 +3,11 @@ name: guanlan-source-ingestion
 description: Use when collecting or repairing Data Center V4 SourceArtifact and RawDocument records, including targeted-backfill candidate capture, body cleaning, provenance, snapshots, hashes, dates, language, and capture diagnostics. Do not use for event interpretation, commercial scoring, page copy, or recommendations.
 metadata:
   guanlan:
-    version: "1.1.1"
+    version: "1.2.0"
     lane: "Data Center"
     status: "current sub-skill"
     order: 10
-    responsibility: "Produce immutable SourceArtifact and judgment-free RAW-V3 documents."
+    responsibility: "Produce immutable SourceArtifact and judgment-free RAW-V4 documents."
     upstream: "external sources and source discovery artifacts"
     downstream: "RawDocument, Claim and Entity extraction"
     gates: "source provenance, snapshot traceability, body cleanliness, capture integrity"
@@ -18,7 +18,7 @@ metadata:
 
 # Guanlan Source Ingestion
 
-Read `context/12-data-center-v4.md` and the RAW-V3 schema.
+Read `context/12-data-center-v4.md` and the current RawDocument contract.
 
 1. Preserve source URL, original text, snapshots, timestamps, hashes, and extraction diagnostics.
 2. Remove navigation, recommendations, footer, search snippets, and template text from `body_clean` while preserving `body_original`.

@@ -31,7 +31,7 @@
 - No current source may claim that retired payloads live in the working tree or archive.
 - Historical reports and immutable published HTML may describe prior V3 behavior.
 - Old route redirects may remain only when they load no V3 content or data.
-- `RAW-V3.0` is a current RawDocument contract version and is not itself a compatibility interface.
+- RawDocument is governed by the current Data Center V4 contract. Historical pre-V4 raw labels are not authority for active code or rules.
 
 ## 5. Security and integrity
 

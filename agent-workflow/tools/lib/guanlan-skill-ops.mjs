@@ -251,6 +251,22 @@ export function isCurrentLike(status = "") {
   return /current|supporting|governance/i.test(status);
 }
 
+export function evaluateSkillSemantics(skill) {
+  const errors = [];
+  const skillText = readText(skill.skillPath).replace(/\r\n/gu, "\n");
+  const ruleText = collectRuleFiles(skill.dir)
+    .map((file) => readText(path.join(skill.dir, file)))
+    .join("\n");
+  if (/RAW[-‑ ]?V3(?:\.0)?/iu.test(ruleText)) {
+    errors.push("active rule assets still claim a RAW-V3 contract; use the current RawDocument/V4 contract");
+  }
+  if (/\uFFFD/u.test(ruleText)) errors.push("rule assets contain Unicode replacement characters");
+  if (skill.name === "follow-builders" && /OpenClaw|Telegram|Resend|crontab|CLAUDE_SKILL_DIR|~\/\.follow-builders/iu.test(skillText)) {
+    errors.push("WaveSight follow-builders contains generic agent onboarding, delivery, or scheduler rules");
+  }
+  return errors;
+}
+
 export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
   const skills = readGovernedSkills(paths.projectSkillDir);
   const version = readSkillStoreVersion(paths);
@@ -283,6 +299,7 @@ export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
       if (!skill.evalFiles.length) errors.push(`${prefix}: current skill needs evals/`);
       if (!skill.exampleFiles.length) errors.push(`${prefix}: current skill needs examples/`);
       if (meta.memory_required === true && !skill.hasMemory) errors.push(`${prefix}: memory_required=true but MEMORY.md missing`);
+      for (const error of evaluateSkillSemantics(skill)) errors.push(`${prefix}: ${error}`);
     }
     if (exists(openAiYamlPath)) {
       const openAiYaml = readText(openAiYamlPath).replace(/\r\n/g, "\n");

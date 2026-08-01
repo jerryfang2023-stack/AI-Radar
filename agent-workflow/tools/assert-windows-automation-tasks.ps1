@@ -1,5 +1,6 @@
 param(
-  [string]$RepoPath = ""
+  [string]$RepoPath = "",
+  [string]$RuntimePath = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -11,6 +12,8 @@ function Resolve-RepoPath {
 }
 
 $repo = Resolve-RepoPath -InputPath $RepoPath
+if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
+$RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
 $expected = @(
   [pscustomobject]@{ Name = "WaveSight Morning Production Dispatch"; Time = "08:10"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=morning" },
   [pscustomobject]@{ Name = "WaveSight Community Intelligence Daily"; Time = "08:30"; Runner = "run-community-intelligence.ps1"; Arguments = "-PublishAfterSuccess" },
@@ -43,6 +46,7 @@ foreach ($task in $tasks) {
   if ($action.WorkingDirectory -ne $repo) { $issues.Add("Task working directory mismatch: $($task.TaskName)") }
   if ($actionText -notlike "*$($contract.Runner)*") { $issues.Add("Task runner mismatch: $($task.TaskName)") }
   if ($actionText -notlike "*$($contract.Arguments)*") { $issues.Add("Task arguments mismatch: $($task.TaskName)") }
+  if ($actionText -notlike "*$RuntimePath*") { $issues.Add("Task runtime path mismatch: $($task.TaskName)") }
   if ($actionText -match "\\wiki\\.*\\01-WaveSight") { $issues.Add("Task still references the retired AI hotspot vault: $($task.TaskName)") }
 }
 

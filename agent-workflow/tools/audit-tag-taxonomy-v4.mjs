@@ -32,8 +32,10 @@ function main() {
   const tagCounts = new Map();
   const facetCounts = new Map();
   const eventClaimRefs = new Map();
+  const eventIds = new Set();
   const claimTags = new Map();
   const claimFacets = new Map();
+  const eventTags = new Map();
   let tagAssertions = 0;
   let facetAssertions = 0;
   let events = 0;
@@ -46,7 +48,10 @@ function main() {
     events += eventRows.length;
     tagAssertions += tagRows.length;
     facetAssertions += facetRows.length;
-    for (const event of eventRows) eventClaimRefs.set(`${date}:${event.event_id}`, event.claim_refs || []);
+    for (const event of eventRows) {
+      eventIds.add(event.event_id);
+      eventClaimRefs.set(`${date}:${event.event_id}`, event.claim_refs || []);
+    }
     for (const item of tagRows) {
       increment(tagCounts, item.tag_id);
       if (!claimTags.has(item.evidence_ref)) claimTags.set(item.evidence_ref, new Set());
@@ -66,33 +71,42 @@ function main() {
   const activeFacetValues = taxonomy.facets.flatMap((facet) => facet.values.filter((item) => item.status === "active").map((item) => `${facet.id}.${item.id}`));
   const unusedTags = activeTags.filter((id) => !tagCounts.has(id));
   const unusedFacetValues = activeFacetValues.filter((id) => !facetCounts.has(id));
-  const dominantTag = [...tagCounts.entries()].sort((a, b) => b[1] - a[1])[0] || ["", 0];
+  for (const [eventId, refs] of eventClaimRefs) {
+    eventTags.set(eventId, new Set(refs.flatMap((id) => [...(claimTags.get(id) || [])])));
+  }
+  const tagEventCounts = new Map();
+  for (const tags of eventTags.values()) for (const tag of tags) increment(tagEventCounts, tag);
+  const taggedClaimCount = claimTags.size;
+  const facetedClaimCount = claimFacets.size;
+  const dominantTag = [...tagEventCounts.entries()].sort((a, b) => b[1] - a[1])[0] || ["", 0];
   const warnings = [];
-  if (tagAssertions && dominantTag[1] / tagAssertions > 0.75) warnings.push(`technical tag concentration is high: ${dominantTag[0]} ${(dominantTag[1] / tagAssertions * 100).toFixed(1)}%`);
-  if (classifiedEvents / Math.max(events, 1) < 0.4) warnings.push(`classified event coverage is below 40%: ${(classifiedEvents / Math.max(events, 1) * 100).toFixed(1)}%`);
+  if (technicalTaggedEvents && dominantTag[1] / technicalTaggedEvents > 0.75) warnings.push(`technical tag event concentration is high: ${dominantTag[0]} ${(dominantTag[1] / technicalTaggedEvents * 100).toFixed(1)}%`);
 
   const lines = [
-    "# TAG-V4.0 Migration and Coverage Report",
+    "# TAG-V4.0 Reprojection and Coverage Audit",
     "",
     `- generated_at: ${new Date().toISOString()}`,
     `- taxonomy_status: ${validation.ok ? "passed" : "failed"}`,
     `- dates: ${dates().join(", ")}`,
-    `- canonical_events: ${events}`,
+    `- canonical_event_rows: ${events}`,
+    `- unique_canonical_events: ${eventIds.size}`,
     `- technical_tag_assertions: ${tagAssertions}`,
     `- facet_assertions: ${facetAssertions}`,
+    `- claims_with_technical_tags: ${taggedClaimCount}`,
+    `- claims_with_structured_facets: ${facetedClaimCount}`,
     `- classified_event_coverage: ${(classifiedEvents / Math.max(events, 1) * 100).toFixed(1)}%`,
     `- technical_tag_event_coverage: ${(technicalTaggedEvents / Math.max(events, 1) * 100).toFixed(1)}%`,
     `- structured_facet_event_coverage: ${(facetedEvents / Math.max(events, 1) * 100).toFixed(1)}%`,
     "",
     "## Technical Tag Distribution",
     "",
-    ...([...tagCounts.entries()].sort((a, b) => b[1] - a[1]).map(([id, count]) => `- ${id}: ${count}`)),
+    ...([...tagEventCounts.entries()].sort((a, b) => b[1] - a[1]).map(([id, count]) => `- ${id}: ${count} events (${tagCounts.get(id) || 0} claim assertions)`)),
     "",
     "## Structured Facet Distribution",
     "",
     ...([...facetCounts.entries()].sort((a, b) => b[1] - a[1]).map(([id, count]) => `- ${id}: ${count}`)),
     "",
-    "## Unused Active Definitions",
+    "## Unused Active Definitions (Review Candidates)",
     "",
     `- technical_tags: ${unusedTags.join(", ") || "none"}`,
     `- facet_values: ${unusedFacetValues.join(", ") || "none"}`,
@@ -107,8 +121,11 @@ function main() {
     ok: validation.ok,
     taxonomy: validation.counts,
     events,
+    uniqueEvents: eventIds.size,
     tagAssertions,
     facetAssertions,
+    taggedClaimCount,
+    facetedClaimCount,
     classifiedEventCoverage: classifiedEvents / Math.max(events, 1),
     technicalTagEventCoverage: technicalTaggedEvents / Math.max(events, 1),
     structuredFacetEventCoverage: facetedEvents / Math.max(events, 1),
