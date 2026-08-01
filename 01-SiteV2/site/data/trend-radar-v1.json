@@ -6,7 +6,7 @@
     "eventVersion": "EVENT-V1.1",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:20:28.993Z",
+    "generatedAt": "2026-08-01T03:40:23.795Z",
     "latestDataDate": "2026-08-01",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -36,7 +36,7 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 1698,
+      "events": 1699,
       "entities": 594,
       "relationships": 354
     }
@@ -24175,6 +24175,53 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-a89a5b511c643be8"
+    },
+    "EV-cf4da5583e9311d7": {
+      "id": "EV-cf4da5583e9311d7",
+      "dataDate": "2026-08-01",
+      "occurrenceDate": "2026-07-31",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "Google Earth 上线一天后撤下其 AI 功能，因该功能可能传播虚假信息而受到批评",
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google",
+        "Earth AI"
+      ],
+      "productNames": [
+        {
+          "name": "Earth AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "claimIds": [
+        "CL-e32e287239d328cc",
+        "CL-84b77f2de804838f",
+        "CL-210c86e447ef079a",
+        "CL-8f3505fa94017f58"
+      ],
+      "sourceIds": [
+        "SA-ae4d1bcf62ffcbf3"
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation",
+      "publisher": "TechCrunch AI",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-cf4da5583e9311d7"
     },
     "EV-df3bc4ed1e6325d9": {
       "id": "EV-df3bc4ed1e6325d9",
@@ -75317,7 +75364,7 @@
             "financing": 4,
             "deployment": 1,
             "partnership": 1,
-            "product": 12,
+            "product": 13,
             "hardware": 1
           },
           "eventIds": [
@@ -75334,6 +75381,7 @@
             "EV-b27f2e417d779e5f",
             "EV-b4f38d8bff12727b",
             "EV-c3b96b789b5bcafd",
+            "EV-cf4da5583e9311d7",
             "EV-d9d415868b74485c",
             "EV-df3bc4ed1e6325d9",
             "EV-eb12fb9dd08e5aad",
@@ -75342,7 +75390,7 @@
             "EV-f01a57b8fbd2518e"
           ],
           "otherCount": 6,
-          "totalAccepted": 25,
+          "totalAccepted": 26,
           "coverage": "数据中心于 2026-08-01 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-31": {
@@ -77924,11 +77972,11 @@
             "financing": 32,
             "deployment": 13,
             "partnership": 28,
-            "product": 76,
+            "product": 77,
             "hardware": 4
           },
-          "totalAccepted": 182,
-          "trackedCount": 153,
+          "totalAccepted": 183,
+          "trackedCount": 154,
           "otherCount": 29,
           "activeEntities": [
             {
@@ -78012,6 +78060,7 @@
               "entityId": "EN-bbdefa2950f49882",
               "eventIds": [
                 "EV-a4b7cd533b0b34dc",
+                "EV-cf4da5583e9311d7",
                 "EV-ebd76d18d3f0ee7b",
                 "EV-60110525440fac47",
                 "EV-e8bc5b0eebef5813",
@@ -95288,7 +95337,7 @@
             "financing": 4,
             "deployment": 1,
             "partnership": 1,
-            "product": 12,
+            "product": 13,
             "hardware": 1
           },
           "previousMonth": "2026-07",
@@ -95310,11 +95359,11 @@
             "financing": 1,
             "deployment": -3,
             "partnership": -1,
-            "product": -10,
+            "product": -9,
             "hardware": 0
           },
-          "totalAccepted": 25,
-          "trackedCount": 19,
+          "totalAccepted": 26,
+          "trackedCount": 20,
           "otherCount": 6,
           "newCompanies": [],
           "newProducts": [],
@@ -95343,6 +95392,14 @@
                 "name": "多模态",
                 "eventIds": [
                   "EV-ec966b509327cbac"
+                ],
+                "count": 1
+              },
+              {
+                "id": "image_generation",
+                "name": "图像生成",
+                "eventIds": [
+                  "EV-cf4da5583e9311d7"
                 ],
                 "count": 1
               }

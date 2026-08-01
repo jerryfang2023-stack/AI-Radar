@@ -34,33 +34,41 @@ export function normalizeSourceIntakeTitles(root, date) {
   const sourceIndexFile = path.join(root, "01-SiteV2/content/01-raw/source-index.jsonl");
   const intake = readJson(intakeFile);
   const translations = loadSourceTitleTranslations(translationFile);
-  const repairedByTitle = new Map();
+  const approvedByTitle = new Map();
+  let intakeRepairs = 0;
 
   for (const raw of intake.raw_documents || []) {
     const original = String(raw.title_original || "").trim();
-    if (!sourceTitleNeedsChineseTranslation(original)
-        || titleTranslationLooksUsable(original, raw.title_zh || "")) continue;
+    if (!sourceTitleNeedsChineseTranslation(original)) continue;
     const translated = translations.get(titleTranslationKey(original)) || "";
     if (!titleTranslationLooksUsable(original, translated)) continue;
+    approvedByTitle.set(original, translated);
+    if (titleTranslationLooksUsable(original, raw.title_zh || "")) continue;
     raw.title_zh = translated;
     raw.title_translation_status = "translated";
     raw.title_translation_method = "source_title_translation_db";
     raw.title_translation_model = "";
-    repairedByTitle.set(original, translated);
+    intakeRepairs += 1;
   }
 
-  if (repairedByTitle.size) writeJson(intakeFile, intake);
+  if (intakeRepairs) writeJson(intakeFile, intake);
 
   let sourceIndexRepairs = 0;
-  if (repairedByTitle.size && fs.existsSync(sourceIndexFile)) {
+  if (approvedByTitle.size && fs.existsSync(sourceIndexFile)) {
     const rows = fs.readFileSync(sourceIndexFile, "utf8")
       .split(/\r?\n/u)
       .filter(Boolean)
       .map((line) => JSON.parse(line.replace(/^\uFEFF/u, "")));
     for (const row of rows) {
       if (String(row.data_date || "") !== date) continue;
-      const translated = repairedByTitle.get(String(row.title_original || "").trim());
+      const original = String(row.title_original || "").trim();
+      const translated = approvedByTitle.get(original);
       if (!translated) continue;
+      const method = String(row.title_translation_method || "").trim();
+      const provenanceFailed = row.title_translation_status !== "translated"
+        || !method
+        || /failed|disabled|needs|missing/iu.test(method);
+      if (titleTranslationLooksUsable(original, row.title_zh || "") && !provenanceFailed) continue;
       row.title_zh = translated;
       row.title_translation_status = "translated";
       row.title_translation_method = "source_title_translation_db";
@@ -72,7 +80,7 @@ export function normalizeSourceIntakeTitles(root, date) {
 
   return {
     date,
-    repaired_documents: repairedByTitle.size,
+    repaired_documents: intakeRepairs,
     repaired_source_index_rows: sourceIndexRepairs,
     intake_file: path.relative(root, intakeFile).replace(/\\/gu, "/"),
   };

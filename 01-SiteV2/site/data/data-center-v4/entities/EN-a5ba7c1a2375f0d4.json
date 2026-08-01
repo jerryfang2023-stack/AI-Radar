@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:20:21.845Z",
+    "generatedAt": "2026-08-01T03:40:16.685Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
-    "eventCount": 1758,
-    "quarantinedEventCount": 14
+    "eventCount": 1759,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-a5ba7c1a2375f0d4",
@@ -20,28 +20,101 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-cf4da5583e9311d7"
+    ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-technology-image_generation"
+    ],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-31",
+    "lastSeen": "2026-08-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-cf4da5583e9311d7"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-cf4da5583e9311d7",
+        "dataDate": "2026-08-01",
+        "date": "2026-07-31",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Google Earth 上线一天后撤下其 AI 功能，因该功能可能传播虚假信息而受到批评",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "image_generation",
+            "name": "图像生成"
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-a5ba7c1a2375f0d4"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-image_generation",
+      "name": "图像生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "image_generation",
+      "eventIds": [
+        "EV-fd329b4350f404ef",
+        "EV-cf4da5583e9311d7",
+        "EV-82ae0ea3bfe336a1",
+        "EV-1a241bcb4fad886c",
+        "EV-a442b55d0bac5651",
+        "EV-dce5de62b2e4b752",
+        "EV-41baa43cf05d4288",
+        "EV-568d2aeab5234e48"
+      ],
+      "entityIds": [
+        "EN-b97e07c31e87f7d0",
+        "EN-bbdefa2950f49882",
+        "EN-a5ba7c1a2375f0d4",
+        "EN-9fbf261b62c1d7c0",
+        "EN-827b607311e6593e",
+        "EN-688f8db7018da7d4",
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-52e3d014f9a275ea",
+        "EN-834ab0b6e4492d23",
+        "EN-01f1074bb52ff605",
+        "EN-ea3bd73e2b506e00",
+        "EN-96eebba49dbbf422",
+        "EN-534e99d81da1c54d",
+        "EN-d85ad5e8ff8e2889",
+        "EN-2b6e51bec93e86c1",
+        "EN-8d4321d936320802",
+        "EN-3db1f560db626918",
+        "EN-d56aa2f9908f566a"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-08-01"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:20:21.845Z",
+    "generatedAt": "2026-08-01T03:40:16.685Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
-    "eventCount": 1758,
-    "quarantinedEventCount": 14
+    "eventCount": 1759,
+    "quarantinedEventCount": 13
   },
   "fde": [
     {
@@ -25,7 +25,11 @@
       "useCase": "$1.5B AI GPU cluster deal - The Globe and Mail",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
-      "outcomes": [],
+      "outcomes": [
+        "lifts the company's 2026 signed contracted value to more than $3 billion",
+        "tied to more than $534 million in expected customer prepayments over the next 30 days",
+        "boosting annual run rate to over $696 million"
+      ],
       "metrics": [
         "$1.5B",
         "$1.5B",
@@ -45,8 +49,7 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
+        "reported_delivery_components"
       ],
       "tags": [],
       "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
@@ -4297,16 +4300,19 @@
       "useCase": "$1.5B AI GPU cluster deal - The Globe and Mail",
       "workflow": "未披露",
       "systems": [],
-      "outcomes": [],
+      "outcomes": [
+        "lifts the company's 2026 signed contracted value to more than $3 billion",
+        "tied to more than $534 million in expected customer prepayments over the next 30 days",
+        "boosting annual run rate to over $696 million"
+      ],
       "observationCount": 1,
-      "completeness": 0.375,
-      "completenessPercent": 38,
+      "completeness": 0.5,
+      "completenessPercent": 50,
       "missingFields": [
         "vendor",
         "industry",
         "workflow",
-        "systems_integrated",
-        "reported_outcomes"
+        "systems_integrated"
       ],
       "timeline": [
         {
@@ -48470,6 +48476,78 @@
       ],
       "sourceUrl": "https://ithome.com/0/983/975.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-cf4da5583e9311d7",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Google Earth 上线一天后撤下其 AI 功能，因该功能可能传播虚假信息而受到批评",
+      "originalTitle": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation",
+      "subject": "Google nixes its Earth AI feature one day after",
+      "action": "launch",
+      "object": ", amid criticism it would spread misinformation",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-a5ba7c1a2375f0d4"
+      ],
+      "entityNames": [
+        "Google",
+        "Earth AI"
+      ],
+      "productName": "Earth AI",
+      "products": [
+        {
+          "name": "Earth AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-df3bc4ed1e6325d9",
