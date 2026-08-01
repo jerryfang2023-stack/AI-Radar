@@ -9,6 +9,13 @@ scope: Signals + First-Line Viewpoints + Community Intelligence
 status: published
 version: v3.3-merged
 method: S×O×C 三方交叉验证 + 趋势链五步法 + 100分机会评分
+taxonomy_version: TAG-V4.1
+technical_tag_ids: []
+market_category_ids: []
+market_subcategory_ids: []
+product_form_ids: []
+use_case_ids: []
+industry_ids: []
 ---
 
 # 别再问买哪个 AI 工具：下一轮机会是重做业务流程

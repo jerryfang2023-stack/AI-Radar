@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-28",
     "generated_at": "2026-07-26T15:14:57.834Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-3d0c1f24bc33a340",
       "triggered_by_event_id": "EV-d4d7b019ff0015df",
       "as_of_date": "2026-06-28",
@@ -477,7 +478,19 @@
             "地缘政治风险加剧：国家AI产业投资基金的参与强化了DeepSeek作为中国战略资产的属性，可能加速西方市场的禁令和限制，进一步压缩其海外商业空间。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -708,7 +721,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:41:50.578Z"
+        "generated_at": "2026-07-26T14:41:50.578Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d4d7b019ff0015df",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -749,7 +770,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-01b70d8acfeaf371",
       "triggered_by_event_id": "EV-7817dc69d5228cbb",
       "as_of_date": "2026-06-28",
@@ -1159,7 +1180,39 @@
             "Wiz、Palo Alto Networks、Okta等安全与身份巨头正在构建自身的智能体治理能力，Runlayer的“中立跨供应商管控层”定位可能面临被巨头吸收或挤压的风险，部分早期治理工具已被质疑为“合规表演”。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "security_operations",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1319,7 +1372,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:40:35.803Z"
+        "generated_at": "2026-07-26T14:40:35.803Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7817dc69d5228cbb",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1361,7 +1422,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-3310a7b9d0359c9d",
       "triggered_by_event_id": "EV-79a0bbe8b8623b28",
       "as_of_date": "2026-06-28",
@@ -1799,7 +1860,24 @@
             "液态神经网络在通用文本、图像生成等主流生成式 AI 任务上的实际表现尚未得到大规模验证，其与 GPT 等成熟模型的竞争力存疑。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [
+          "data_analysis",
+          "research_discovery"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1964,7 +2042,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:40:33.359Z"
+        "generated_at": "2026-07-26T14:40:33.359Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-79a0bbe8b8623b28",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2007,7 +2093,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-7d220ce89ea2b3c9",
       "triggered_by_event_id": "EV-52bf48005db3461a",
       "as_of_date": "2026-06-28",
@@ -2407,7 +2493,22 @@
             "仓库自动化赛道竞争极度激烈，Locus Robotics和6 River Systems等对手已占据较大市场份额，Robust.AI的差异化优势可能被快速模仿。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "product_form_id": "robotic_system",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "logistics_supply_chain",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2606,7 +2707,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:40:24.843Z"
+        "generated_at": "2026-07-26T14:40:24.843Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-52bf48005db3461a",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

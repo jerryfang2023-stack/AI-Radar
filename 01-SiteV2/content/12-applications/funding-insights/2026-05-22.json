@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-05-22",
     "generated_at": "2026-07-26T15:07:33.332Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-f4b4741489974d88",
       "triggered_by_event_id": "EV-59882383f82f215d",
       "as_of_date": "2026-05-22",
@@ -426,7 +427,24 @@
             "Europa芯片计划于2026年6月前推出，Titania芯片预计2027年推出，产品路线图的按时交付是维持增长势头的关键。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "product_form_id": "chip_accelerator",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "aerospace_defense",
+          "telecommunications",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -569,7 +587,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:07:33.248Z"
+        "generated_at": "2026-07-26T15:07:33.248Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-59882383f82f215d",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -611,7 +637,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-66cbf5e15d2306ff",
       "triggered_by_event_id": "EV-c5643983538c6513",
       "as_of_date": "2026-05-22",
@@ -968,7 +994,20 @@
             "市场竞争激烈，面临从初创公司到 OpenAI、Anthropic 等模型厂商以及微软、AWS 等云提供商的全面竞争，Sycamore 需要在巨头环伺中证明其独立平台的价值。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1143,7 +1182,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:12:35.591Z"
+        "generated_at": "2026-07-26T14:12:35.591Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c5643983538c6513",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1183,7 +1230,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-f963f997b1209180",
       "triggered_by_event_id": "EV-3b40ec144e5db22c",
       "as_of_date": "2026-05-22",
@@ -1714,7 +1761,37 @@
             "公司尚未实现盈利，当前高估值依赖于 AI 基础设施需求持续高速增长的预期，若企业 AI 采用速度放缓，估值可能承压。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "product_form_id": "ai_infrastructure_software",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1924,7 +2001,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:10:55.314Z"
+        "generated_at": "2026-07-26T14:10:55.314Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-3b40ec144e5db22c",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1966,7 +2051,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-bd3ea9a7f8f67164",
       "triggered_by_event_id": "EV-c46e427fedbf518d",
       "as_of_date": "2026-05-22",
@@ -2311,7 +2396,37 @@
             "Atlassian 等 Trace 所依赖的工作场所生产力服务商正在推出自有智能体，可能形成竞争替代"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2448,7 +2563,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:10:16.719Z"
+        "generated_at": "2026-07-26T14:10:16.719Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c46e427fedbf518d",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2487,7 +2610,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-cbfbc5f84ea80cb4",
       "triggered_by_event_id": "EV-a84ec4216d3ded6d",
       "as_of_date": "2026-05-22",
@@ -2762,7 +2885,29 @@
             "高度依赖本地化部署团队的模式可能导致规模化边际成本居高不下，与SaaS模式追求的边际成本递减逻辑相悖，在人员从350人扩张至900人的过程中，管理复杂度和人力成本将急剧上升。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "customer_support",
+          "sales",
+          "marketing",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "professional_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2855,7 +3000,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:09:48.837Z"
+        "generated_at": "2026-07-26T14:09:48.837Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-a84ec4216d3ded6d",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1759,
+    "quarantinedEventCount": 13
+  },
+  "node": {
+    "id": "TX-use_case-hr_workforce",
+    "name": "人力与员工体验",
+    "nodeType": "use_case",
+    "typeLabel": "应用场景",
+    "valueId": "hr_workforce",
+    "eventIds": [
+      "EV-9781e67076f4e06b",
+      "EV-536b7d289e7209c1"
+    ],
+    "entityIds": [
+      "EN-61b6bf408b3b086e",
+      "EN-6d51d80daa73eb4a",
+      "EN-9e51ca48d5ecf16f",
+      "EN-a7bea92dbcc37521"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-06-09",
+    "lastSeen": "2026-07-10"
+  },
+  "events": [
+    {
+      "id": "EV-9781e67076f4e06b",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-10",
+      "updatedDate": "2026-07-10",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "德国AI劳动力管理初创公司Sherpa获220万美元种子轮融资 - Tech.eu",
+      "originalTitle": "German AI workforce management startup Sherpa raises $2.2M pre-seed - Tech.eu",
+      "subject": "German AI workforce management startup Sherpa",
+      "action": "raises",
+      "object": "$2.2M pre-seed - Tech.eu",
+      "metrics": [
+        "$2.2M",
+        "$2.2 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_software_platform",
+            "dimensionName": "产品形态",
+            "name": "企业软件平台"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "hr_workforce",
+            "dimensionName": "应用场景",
+            "name": "人力与员工体验"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "hr_workforce",
+          "dimensionName": "应用场景",
+          "name": "人力与员工体验"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_software_platform",
+          "dimensionName": "产品形态",
+          "name": "企业软件平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_software_platform",
+          "dimensionName": "产品形态",
+          "name": "企业软件平台"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "hr_workforce",
+          "dimensionName": "应用场景",
+          "name": "人力与员工体验"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/07/09/german-ai-workforce-management-startup-sherpa-raises-22m-pre-seed",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-536b7d289e7209c1",
+      "dataDate": "2026-06-15",
+      "date": "2026-06-09",
+      "updatedDate": "2026-06-15",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Atomicwork 推出首个受监管的企业IT人工智能劳动力",
+      "originalTitle": "Atomicwork Launches the First Governed AI Workforce for Enterprise IT",
+      "subject": "Atomicwork",
+      "action": "Launches",
+      "object": "the First Governed AI Workforce for Enterprise IT",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "hr_workforce",
+            "dimensionName": "应用场景",
+            "name": "人力与员工体验"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "hr_workforce",
+          "dimensionName": "应用场景",
+          "name": "人力与员工体验"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "hr_workforce",
+          "dimensionName": "应用场景",
+          "name": "人力与员工体验"
+        }
+      ],
+      "entityIds": [
+        "EN-61b6bf408b3b086e",
+        "EN-6d51d80daa73eb4a",
+        "EN-9e51ca48d5ecf16f",
+        "EN-a7bea92dbcc37521"
+      ],
+      "entityNames": [
+        "Atomicwork",
+        "AI Workforce",
+        "First Governed AI Workforce",
+        "AI workforce management"
+      ],
+      "productName": "AI Workforce",
+      "products": [
+        {
+          "name": "AI Workforce",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "First Governed AI Workforce",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI workforce management",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/atomicwork-launches-the-first-governed-ai-workforce-for-enterprise-it-302795475.html",
+      "publisher": "prnewswire.com"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-61b6bf408b3b086e",
+      "name": "Atomicwork",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-536b7d289e7209c1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-hr_workforce"
+      ],
+      "relatedEntityIds": [
+        "EN-6d51d80daa73eb4a"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-15"
+    },
+    {
+      "id": "EN-6d51d80daa73eb4a",
+      "name": "AI Workforce",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-536b7d289e7209c1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-hr_workforce"
+      ],
+      "relatedEntityIds": [
+        "EN-61b6bf408b3b086e"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-15"
+    },
+    {
+      "id": "EN-9e51ca48d5ecf16f",
+      "name": "AI Workforce Platform",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "First Governed AI Workforce"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-536b7d289e7209c1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-hr_workforce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-15"
+    },
+    {
+      "id": "EN-a7bea92dbcc37521",
+      "name": "AI workforce management",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-536b7d289e7209c1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-hr_workforce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-15"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

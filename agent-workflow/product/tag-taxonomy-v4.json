@@ -1,7 +1,7 @@
 {
-  "taxonomy_version": "TAG-V4.0",
+  "taxonomy_version": "TAG-V4.1",
   "status": "current",
-  "positioning": "AI data-center classification system. Technical tags describe cross-cutting AI semantics; product, scenario, industry, deployment and audience are structured facets.",
+  "positioning": "AI data-center classification system. CB Insights AI 100 2026 governs the AI market hierarchy; technical capabilities, product form, use case, industry, deployment and audience remain separate evidence-backed dimensions.",
   "assignment_contract": {
     "source": "accepted_claim_only",
     "evidence_ref_required": true,
@@ -15,12 +15,13 @@
     "automatic_creation": false,
     "minimum_independent_claims": 3,
     "manual_approval_allowed": true,
-    "manual_approval_ref": "user-approved AI data-center taxonomy rebuild 2026-07-17",
+    "manual_approval_ref": "user-approved mature-platform taxonomy migration 2026-08-02",
     "required_fields": ["id", "name", "definition", "parent", "aliases", "includes", "excludes", "status"]
   },
   "deprecation_contract": {
     "new_assertions_blocked": true,
-    "historical_assertions_preserved": true,
+    "historical_assertions_preserved": false,
+    "historical_assertions_reprojected": true,
     "replacement_id_required_when_renamed": true
   },
   "structured_dimension_policy": {
@@ -28,6 +29,9 @@
     "source": "source_artifact_field",
     "entity": "entity_table",
     "geography": "canonical_event_field",
+    "ai_market_category": "reviewed_company_or_funding_card_field",
+    "ai_market_subcategory": "reviewed_company_or_funding_card_field",
+    "ai_market_application": "reviewed_company_or_funding_card_field",
     "product_form": "facet_assertion",
     "use_case": "facet_assertion",
     "industry": "facet_assertion",
@@ -304,17 +308,75 @@
     {
       "id": "ai_market_category",
       "name": "AI 市场类别",
-      "definition": "按公司核心对外供给划分的 AI 市场母分类，用于投融资市场地图。采用 CB Insights AI 100 的三类框架，不替代产品形态、行业、应用场景或技术标签。",
-      "selection_rule": "每家公司只选择一个主要市场类别：AI 基础设施提供模型、数据、开发训练、运行或计算底座；通用型 AI 服务跨行业职能或大众任务；行业型 AI 深入一个明确垂直行业。",
+      "assignment_mode": "reviewed_company_only",
+      "definition": "按公司核心对外供给划分的 AI 市场母分类，用于投融资市场地图。采用 CB Insights AI 100 2026 的四类框架，不替代产品形态、行业、应用场景或技术标签。",
+      "selection_rule": "每家公司只选择一个主要市场类别：先判断是否直接作用于物理世界，再判断是否向其他 AI 产品提供基础设施；其余产品按跨行业企业职能或单一行业专用工作流区分。",
       "reference_framework": {
-        "name": "CB Insights AI 100 category framework",
-        "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2025/",
-        "adopted_levels": ["AI Infrastructure", "Horizontal AI", "Vertical AI"]
+        "name": "CB Insights AI 100 2026 category framework",
+        "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
+        "adopted_levels": ["Infrastructure & compute", "Enterprise applications", "Industry applications", "Physical AI"]
       },
       "values": [
-        {"id": "ai_infrastructure", "name": "AI 基础设施", "definition": "向其他 AI 产品提供计算、芯片、数据、模型、训练、部署、推理、评估、安全或编排底座。", "includes": ["AI Infrastructure", "AI 基础设施"], "excludes": ["end-user application"], "status": "active"},
-        {"id": "horizontal_ai", "name": "通用型 AI", "definition": "跨多个行业复用、面向通用职能或大众任务的 AI 产品，包括开发、销售、运营、创作、协作和通用助手。", "includes": ["Horizontal AI", "cross-industry AI", "通用型 AI", "跨行业 AI"], "excludes": ["single-industry application", "infrastructure only"], "status": "active"},
-        {"id": "vertical_ai", "name": "行业型 AI", "definition": "围绕一个明确行业的专业数据、流程、监管或物理环境构建的 AI 产品。", "includes": ["Vertical AI", "industry-specific AI", "行业型 AI", "垂直行业 AI"], "excludes": ["cross-industry function", "infrastructure only"], "status": "active"}
+        {"id": "infrastructure_compute", "name": "基础设施与算力", "definition": "向其他 AI 产品提供数据、模型、开发部署、硬件算力、可观测、评估、安全或路由底座。", "includes": ["Infrastructure & compute", "AI infrastructure", "AI 基础设施", "基础设施与算力"], "excludes": ["end-user application", "终端应用"], "status": "active"},
+        {"id": "enterprise_applications", "name": "企业级应用", "definition": "跨行业服务客户支持、安全、人力、营销、生产力、销售或软件开发等企业职能的 AI 产品。", "includes": ["Enterprise applications", "enterprise AI application", "企业级应用", "企业 AI 应用"], "excludes": ["single-industry application", "基础设施"], "status": "active"},
+        {"id": "industry_applications", "name": "行业应用", "definition": "围绕一个明确行业的专业数据、合规要求和工作流构建的 AI 产品。", "includes": ["Industry applications", "industry-specific AI", "vertical AI", "行业应用", "垂直行业 AI"], "excludes": ["cross-industry function", "基础设施"], "status": "active"},
+        {"id": "physical_ai", "name": "Physical AI", "definition": "通过机器人、车辆、自主机器或具身系统感知环境、决策并作用于物理世界的 AI 产品。", "includes": ["Physical AI", "embodied AI", "autonomous machines", "物理 AI", "具身智能"], "excludes": ["software agent only", "纯软件智能体"], "status": "active"}
+      ]
+    },
+    {
+      "id": "ai_market_subcategory",
+      "name": "AI 市场子类",
+      "assignment_mode": "reviewed_company_only",
+      "definition": "CB Insights AI 100 2026 在一级市场类别之下使用的子类。每家公司只在所属一级类别下选择一个主要子类。",
+      "selection_rule": "基础设施按 Data、Development & deployment、Hardware & computing、Observability & evaluation 划分；企业级和行业应用按公开业务职能或行业子类划分；Physical AI 不强制套用软件子类。",
+      "reference_framework": {
+        "name": "CB Insights AI 100 2026 category definitions",
+        "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/"
+      },
+      "values": [
+        {"id": "data", "name": "数据", "definition": "生成、整理、存储或检索 AI 训练与运行数据。", "includes": ["AI data infrastructure", "synthetic data", "data preparation", "vector database", "AI 数据基础设施", "合成数据", "数据准备", "向量数据库"], "excludes": ["business analytics only"], "status": "active"},
+        {"id": "development_deployment", "name": "开发与部署", "definition": "构建、训练、部署或商业化模型和 AI 应用。", "includes": ["Development & deployment", "AI development", "model deployment", "AI 开发与部署", "模型部署"], "excludes": ["end-user software development task only"], "status": "active"},
+        {"id": "hardware_computing", "name": "硬件与算力", "definition": "训练和运行 AI 工作负载所需的芯片、服务器与计算基础设施。", "includes": ["Hardware & computing", "AI computing infrastructure", "AI chip", "AI 硬件与算力", "AI 芯片"], "excludes": ["consumer device only"], "status": "active"},
+        {"id": "observability_evaluation", "name": "可观测与评估", "definition": "监控、评估、保护和改进生产环境中的模型与智能体。", "includes": ["Observability & evaluation", "AI observability", "model evaluation", "AI 可观测与评估", "模型评估"], "excludes": ["generic business monitoring"], "status": "active"},
+        {"id": "customer_support", "name": "客户支持", "definition": "自动处理客户咨询或辅助人工客服。", "includes": ["Customer support", "customer service AI", "客户支持", "智能客服"], "excludes": ["internal IT support"], "status": "active"},
+        {"id": "cyber_physical_security", "name": "网络与物理安全", "definition": "检测、预防和响应数字或物理威胁、漏洞与攻击。", "includes": ["Cyber & physical security", "AI cybersecurity", "AI 网络安全", "AI 物理安全"], "excludes": ["model and agent security infrastructure"], "status": "active"},
+        {"id": "hr", "name": "人力资源", "definition": "招聘、劳动力管理和员工体验工作流。", "includes": ["HR AI", "workforce management AI", "AI 人力资源", "员工体验平台"], "excludes": ["AI employee product metaphor"], "status": "active"},
+        {"id": "marketing", "name": "营销", "definition": "跨渠道生成、个性化和优化营销内容与活动。", "includes": ["AI marketing", "marketing automation AI", "AI 营销", "营销自动化"], "excludes": ["sales workflow only"], "status": "active"},
+        {"id": "productivity_enterprise_workflows", "name": "生产力与企业工作流", "definition": "处理重复业务流程并编排多步骤企业运营。", "includes": ["Productivity & enterprise workflows", "enterprise workflow AI", "生产力与企业工作流", "企业工作流 AI"], "excludes": ["single-industry workflow"], "status": "active"},
+        {"id": "sales", "name": "销售", "definition": "识别潜在客户、自动触达并加速收入工作流。", "includes": ["AI sales", "sales automation AI", "AI 销售", "销售自动化"], "excludes": ["marketing only"], "status": "active"},
+        {"id": "software_development_coding", "name": "软件开发与编程工具", "definition": "辅助代码生成、调试、测试和软件开发工作流。", "includes": ["Software development & coding tools", "AI coding tool", "AI 软件开发工具", "AI 编程工具"], "excludes": ["AI infrastructure development platform"], "status": "active"},
+        {"id": "financial_services", "name": "金融服务", "definition": "服务银行、保险、投资、风险、合规或金融流程。", "includes": ["Financial services AI", "AI banking", "AI insurance", "金融服务 AI", "保险科技"], "excludes": ["funding round"], "status": "active"},
+        {"id": "healthcare_life_sciences", "name": "医疗与生命科学", "definition": "服务临床照护、药物发现、蛋白质工程或生物数据分析。", "includes": ["Healthcare & life sciences AI", "clinical AI", "drug discovery AI", "医疗 AI", "生命科学 AI"], "excludes": ["employee health benefit only"], "status": "active"},
+        {"id": "industrials", "name": "工业", "definition": "优化工程、制造、建筑、能源、物流或其他工业环境的专业工作流。", "includes": ["Industrial AI", "AI manufacturing", "AI engineering", "工业 AI", "制造业 AI"], "excludes": ["generic enterprise operations"], "status": "active"},
+        {"id": "legal", "name": "法律", "definition": "服务法律研究、文档分析、合同管理和法律工作流。", "includes": ["Legal AI", "legal research AI", "AI 法律", "法律科技"], "excludes": ["general compliance without legal workflow"], "status": "active"},
+        {"id": "consumer_retail", "name": "消费与零售", "definition": "直接服务消费者或帮助零售商优化购物体验。", "includes": ["Consumer & retail AI", "consumer AI app", "retail AI", "消费 AI", "零售 AI"], "excludes": ["enterprise buyer only"], "status": "active"}
+      ]
+    },
+    {
+      "id": "ai_market_application",
+      "name": "AI 市场细分",
+      "assignment_mode": "reviewed_company_only",
+      "definition": "CB Insights AI 100 2026 在基础设施子类之下公开的具体 Application。该维度允许缺省，不用最接近的词强行补齐。",
+      "selection_rule": "只有核心供给与公开 Application 定义直接相符时才选择；Physical AI、企业级应用和行业应用不强制填写本维度。",
+      "reference_framework": {
+        "name": "CB Insights AI 100 2026 infrastructure applications",
+        "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/"
+      },
+      "values": [
+        {"id": "synthetic_data", "name": "合成数据", "definition": "生成用于训练或微调模型的人工数据集。", "includes": ["synthetic data", "artificial training data", "合成数据", "人工训练数据"], "excludes": ["synthetic media only"], "status": "active"},
+        {"id": "data_preparation_curation", "name": "数据准备与整理", "definition": "清洗、转换、标注和组织 AI 训练部署数据。", "includes": ["data preparation", "data curation", "data labeling", "数据准备", "数据整理", "数据标注"], "excludes": ["business data analysis"], "status": "active"},
+        {"id": "vector_databases", "name": "向量数据库", "definition": "存储和检索高维嵌入的数据库。", "includes": ["vector database", "vector store", "向量数据库", "向量存储"], "excludes": [], "status": "active"},
+        {"id": "models", "name": "模型", "definition": "作为 AI 应用核心智能层的基础模型或专用模型。", "includes": ["foundation model", "specialized AI model", "基础模型", "专用 AI 模型"], "excludes": ["business model"], "status": "active"},
+        {"id": "ai_development_orchestration", "name": "AI 开发与编排", "definition": "帮助开发者构建、管理和协调模型、智能体与多步骤工作流。", "includes": ["AI development & orchestration", "agent orchestration platform", "AI 开发与编排", "智能体编排平台"], "excludes": ["end-user workflow only"], "status": "active"},
+        {"id": "model_deployment", "name": "模型部署", "definition": "高效、稳定地托管和服务模型。", "includes": ["model deployment", "model serving", "inference platform", "模型部署", "模型服务", "推理平台"], "excludes": ["physical server sale"], "status": "active"},
+        {"id": "monetization", "name": "商业化工具", "definition": "帮助开发者和公司对模型、API 与智能体服务计费和收款。", "includes": ["AI monetization", "API monetization", "agent payments", "AI 商业化", "API 计费", "智能体支付"], "excludes": ["general fintech application"], "status": "active"},
+        {"id": "chips", "name": "芯片", "definition": "加速 AI 训练或推理的定制硅与关键芯片部件。", "includes": ["AI chip", "AI accelerator", "NPU", "AI 芯片", "AI 加速器"], "excludes": ["chip cloud only"], "status": "active"},
+        {"id": "servers", "name": "服务器", "definition": "为 AI 计算配置和优化的服务器、机架与集群系统。", "includes": ["AI server", "AI rack", "GPU server", "AI 服务器", "AI 机架"], "excludes": ["serverless software"], "status": "active"},
+        {"id": "computing_infrastructure", "name": "计算基础设施", "definition": "支持 AI 工作负载分配和处理的云、网络、数据中心与计算容量。", "includes": ["computing infrastructure", "GPU cloud", "AI data center", "计算基础设施", "GPU 云", "AI 数据中心"], "excludes": ["model software only"], "status": "active"},
+        {"id": "ai_observability_governance", "name": "AI 可观测与治理", "definition": "监控模型行为、执行合规并保持 AI 系统可见性。", "includes": ["AI observability", "AI governance", "AI 可观测", "AI 治理"], "excludes": ["general corporate governance"], "status": "active"},
+        {"id": "model_agent_security", "name": "模型与智能体安全", "definition": "保护模型和自主智能体免受攻击、滥用与越权。", "includes": ["model security", "agent security", "模型安全", "智能体安全"], "excludes": ["AI-powered email security application"], "status": "active"},
+        {"id": "fine_tuning", "name": "模型微调", "definition": "使用目标训练适配基础模型到特定任务或领域。", "includes": ["fine-tuning platform", "model fine-tuning", "模型微调平台", "模型微调"], "excludes": ["fine tune a workflow"], "status": "active"},
+        {"id": "llm_benchmarking_routing", "name": "模型评测与路由", "definition": "评估模型表现并把请求路由到合适模型。", "includes": ["LLM benchmarking", "model routing", "模型评测", "模型路由"], "excludes": ["network routing only"], "status": "active"}
       ]
     },
     {
@@ -324,17 +386,17 @@
       "selection_rule": "每家公司只选择一个主要产品形态：先判断客户实际购买或用户直接使用的核心供给，再判断交付界面；采用某项模型、芯片、机器人或安全技术，不等于公司属于该产品形态。",
       "values": [
         {"id": "model", "name": "模型", "definition": "公司主要对外提供基础模型、专用模型或以模型能力本身为核心的研究系统。仅在产品中使用自研模型不属于此类。", "includes": ["AI model", "AI models", "language model", "language models", "foundation model", "foundation models", "frontier models", "open-source model", "大模型", "基础模型", "模型发布"], "excludes": ["business model", "商业模式"], "status": "active"},
-        {"id": "api_service", "name": "API / 模型服务", "definition": "公司主要通过 API 或托管模型端点向开发者提供能力，API 是主要购买和交付界面。", "includes": ["AI API", "model API", "API service", "模型 API", "模型服务"], "excludes": ["API integration only"], "status": "active"},
+        {"id": "model_api_service", "name": "模型 API 服务", "definition": "公司主要通过 API 或托管模型端点向开发者提供模型能力，API 是主要购买和交付界面。", "includes": ["AI API", "model API", "API service", "hosted model endpoint", "模型 API", "模型服务"], "excludes": ["API integration only"], "status": "active"},
         {"id": "developer_tool", "name": "开发者工具", "definition": "公司主要提供软件、设计或 AI 系统开发生命周期中的工具、IDE、测试、代码审查或构建环境。", "includes": ["developer tool", "coding tool", "IDE extension", "CLI tool", "开发者工具", "编程工具", "代码工具"], "excludes": [], "status": "active"},
-        {"id": "ai_application", "name": "AI 应用", "definition": "用户直接使用、完成一项明确任务的成品应用，包括面向企业的垂直应用；仅因客户是企业，不归入企业 AI 平台。", "includes": ["AI app", "AI application", "AI assistant", "AI chatbot", "Anthropic chatbot", "AI 应用", "AI 助手", "AI 聊天机器人", "智能助手"], "excludes": ["job application"], "status": "active"},
-        {"id": "enterprise_platform", "name": "企业 AI 平台", "definition": "公司主要提供可覆盖多流程、可编排或可扩展的企业级平台、操作系统或控制平面，而不是单一任务的垂直应用。", "includes": ["enterprise AI platform", "AI platform", "AI platforms", "agent platform", "workflow platform", "企业 AI 平台", "AI 平台", "智能体平台", "工作流平台"], "excludes": [], "status": "active"},
-        {"id": "data_infrastructure", "name": "数据与模型基础设施", "definition": "公司主要提供模型训练、推理、记忆、路由、压缩、评估或数据供给的软件基础设施，不直接出售底层算力容量。", "includes": ["AI infrastructure", "artificial intelligence infrastructure", "inference platform", "model platform", "vector database", "AI 基础设施", "人工智能基础设施", "推理平台", "模型平台", "向量数据库"], "excludes": ["physical infrastructure unrelated to AI"], "status": "active"},
-        {"id": "security_product", "name": "AI 安全产品", "definition": "安全、身份、治理、检测或防护本身是公司主要出售的产品；隐私只是通用 AI 产品的功能卖点时不属于此类。", "includes": ["AI security product", "AI security platform", "agent security", "AI 安全产品", "AI 安全平台", "智能体安全"], "excludes": ["security policy only"], "status": "active"},
+        {"id": "end_user_application", "name": "终端 AI 应用", "definition": "用户直接使用、完成一项明确任务的成品应用，包括面向企业的垂直应用；仅因客户是企业，不归入企业软件平台。", "includes": ["AI app", "AI application", "AI assistant", "AI chatbot", "Anthropic chatbot", "AI 应用", "AI 助手", "AI 聊天机器人", "智能助手"], "excludes": ["job application"], "status": "active"},
+        {"id": "enterprise_software_platform", "name": "企业软件平台", "definition": "公司主要提供可覆盖多流程、可编排或可扩展的企业级软件平台、操作系统或控制平面，而不是单一任务应用。", "includes": ["enterprise AI platform", "AI platform", "AI platforms", "agent platform", "workflow platform", "企业 AI 平台", "AI 平台", "智能体平台", "工作流平台"], "excludes": ["hardware platform only"], "status": "active"},
+        {"id": "ai_infrastructure_software", "name": "AI 基础设施软件", "definition": "公司主要提供模型训练、推理、记忆、路由、压缩、评估或数据供给的软件基础设施，不直接出售底层算力容量。", "includes": ["AI infrastructure software", "inference platform", "model platform", "vector database", "AI 基础设施软件", "推理平台", "模型平台", "向量数据库"], "excludes": ["physical infrastructure unrelated to AI", "end-user application"], "status": "active"},
+        {"id": "security_software", "name": "安全软件", "definition": "安全、身份、治理、检测或防护本身是公司主要出售的软件产品；隐私只是通用 AI 产品的功能卖点时不属于此类。", "includes": ["AI security product", "AI security platform", "agent security", "AI 安全产品", "AI 安全平台", "智能体安全"], "excludes": ["security policy only"], "status": "active"},
         {"id": "ai_device", "name": "AI 设备", "definition": "公司主要提供用户直接使用的 AI 硬件设备，而不是芯片、服务器或数据中心部件。", "includes": ["AI device", "AI hardware product", "AI PC", "AI phone", "AI glasses", "AI 设备", "AI 智能硬件", "AI 手机", "AI 眼镜"], "excludes": ["component only"], "status": "active"},
-        {"id": "robot", "name": "机器人", "definition": "公司主要提供能够作用于物理世界的机器人或具身系统；软件智能体和未来机器人应用不属于此类。", "includes": ["AI robot", "humanoid robot", "personal robot", "AI 机器人", "人形机器人", "个人机器人"], "excludes": ["software bot"], "status": "active"},
+        {"id": "robotic_system", "name": "机器人系统", "definition": "公司主要提供能够作用于物理世界的机器人或具身系统；软件智能体和未来机器人应用不属于此类。", "includes": ["AI robot", "humanoid robot", "personal robot", "robotic system", "AI 机器人", "人形机器人", "个人机器人", "机器人系统"], "excludes": ["software bot"], "status": "active"},
         {"id": "chip_accelerator", "name": "芯片与加速器", "definition": "公司主要提供芯片、加速器、半导体 IP 或关键芯片部件，不包括仅租用这些芯片提供云服务的公司。", "includes": ["AI chip", "GPU", "NPU", "AI accelerator", "AI 芯片", "人工智能芯片", "AI 加速器"], "excludes": ["potato chips"], "status": "active"},
-        {"id": "compute_system", "name": "计算系统", "definition": "公司主要提供服务器、机架、集群、数据中心或网络系统等实体计算系统，不包括按云端容量或推理调用收费的服务。", "includes": ["AI server", "AI computer", "AI computing module", "Jetson Thor", "GPU cluster", "AI data center", "AI 服务器", "AI 计算机", "AI 算力模组", "GPU 集群", "AI 数据中心"], "excludes": ["generic computer"], "status": "active"},
-        {"id": "compute_service", "name": "算力云与算力服务", "definition": "公司主要通过云端提供 GPU、训练或推理容量，客户购买的是托管算力、专用容量或推理云服务。", "includes": ["AI cloud", "GPU cloud", "inference cloud", "neocloud", "算力云", "GPU 云", "推理云", "新云服务"], "excludes": ["software-only inference platform", "physical compute system sale"], "status": "active"}
+        {"id": "ai_compute_system", "name": "AI 计算系统", "definition": "公司主要提供服务器、机架、集群、数据中心或网络系统等实体计算系统，不包括按云端容量或推理调用收费的服务。", "includes": ["AI server", "AI computer", "AI computing module", "Jetson Thor", "GPU cluster", "AI data center", "AI 服务器", "AI 计算机", "AI 算力模组", "GPU 集群", "AI 数据中心"], "excludes": ["generic computer"], "status": "active"},
+        {"id": "compute_cloud_service", "name": "算力云服务", "definition": "公司主要通过云端提供 GPU、训练或推理容量，客户购买的是托管算力、专用容量或推理云服务。", "includes": ["AI cloud", "GPU cloud", "inference cloud", "neocloud", "算力云", "GPU 云", "推理云", "新云服务"], "excludes": ["software-only inference platform", "physical compute system sale"], "status": "active"}
       ]
     },
     {
@@ -343,24 +405,34 @@
       "definition": "来源明确披露的用户任务、业务流程或专业工作场景。",
       "values": [
         {"id": "software_development", "name": "软件开发", "includes": ["software development", "code generation", "coding agent", "developer workflow", "软件开发", "代码生成", "编程智能体", "开发流程"], "excludes": [], "status": "active"},
-        {"id": "customer_service", "name": "客户服务", "includes": ["customer service", "customer support", "contact center", "客服", "客户支持", "呼叫中心"], "excludes": [], "status": "active"},
-        {"id": "sales_marketing", "name": "销售与营销", "includes": ["sales workflow", "sales assistant", "marketing content", "account research", "销售流程", "销售助手", "营销内容", "账户研究"], "excludes": [], "status": "active"},
+        {"id": "customer_support", "name": "客户支持", "includes": ["customer service", "customer support", "contact center", "客服", "客户支持", "呼叫中心"], "excludes": [], "status": "active"},
+        {"id": "sales", "name": "销售", "includes": ["sales workflow", "sales assistant", "sales outreach", "account research", "销售流程", "销售助手", "销售触达", "账户研究"], "excludes": ["fundraising sales"], "status": "active"},
+        {"id": "marketing", "name": "营销", "includes": ["marketing workflow", "marketing content", "campaign optimization", "营销流程", "营销内容", "营销活动优化"], "excludes": ["sales workflow only"], "status": "active"},
         {"id": "content_creation", "name": "内容创作", "includes": ["content creation", "creative workflow", "video creation", "image creation", "music generation", "内容创作", "创意工作流", "视频创作", "图像创作", "音乐生成"], "excludes": [], "status": "active"},
         {"id": "knowledge_search", "name": "知识与搜索", "includes": ["enterprise search", "knowledge management", "knowledge base", "research assistant", "企业搜索", "知识管理", "知识库", "研究助手"], "excludes": [], "status": "active"},
         {"id": "data_analysis", "name": "数据分析", "includes": ["data analysis", "analytics assistant", "business intelligence", "financial model", "deep research", "数据分析", "分析助手", "商业智能", "财务模型", "深度研究"], "excludes": [], "status": "active"},
-        {"id": "research_science", "name": "科研与发现", "includes": ["scientific discovery", "drug discovery", "research workflow", "科研发现", "药物发现", "研究流程"], "excludes": [], "status": "active"},
+        {"id": "research_discovery", "name": "科研与发现", "includes": ["scientific discovery", "drug discovery", "research workflow", "科研发现", "药物发现", "研究流程"], "excludes": [], "status": "active"},
         {"id": "education_learning", "name": "教育与学习", "includes": ["education workflow", "learning assistant", "AI tutor", "teaching assistant", "classroom learning", "教育场景", "学习助手", "AI 导师", "教学助手", "课堂学习"], "excludes": ["company education background"], "status": "active"},
-        {"id": "cybersecurity", "name": "网络安全", "includes": ["cybersecurity", "security operations", "threat detection", "安全运营", "威胁检测", "网络安全"], "excludes": ["physical security"], "status": "active"},
-        {"id": "enterprise_operations", "name": "企业运营自动化", "includes": ["business process automation", "workflow automation", "enterprise operations", "流程自动化", "工作流自动化", "企业运营"], "excludes": ["industrial machine automation"], "status": "active"},
-        {"id": "robotics_automation", "name": "机器人与物理自动化", "includes": ["robotics", "robot control", "warehouse robot", "industrial robot", "机器人", "机器人控制", "仓储机器人", "工业机器人"], "excludes": ["software bot", "chatbot", "聊天机器人", "软件机器人"], "status": "active"}
+        {"id": "security_operations", "name": "安全运营", "includes": ["cybersecurity", "security operations", "threat detection", "安全运营", "威胁检测", "网络安全"], "excludes": ["physical security"], "status": "active"},
+        {"id": "productivity_enterprise_workflows", "name": "生产力与企业工作流", "includes": ["business process automation", "workflow automation", "enterprise operations", "enterprise productivity", "流程自动化", "工作流自动化", "企业运营", "企业生产力"], "excludes": ["industrial machine automation"], "status": "active"},
+        {"id": "physical_automation", "name": "物理自动化", "includes": ["robotics", "robot control", "warehouse robot", "industrial robot", "机器人", "机器人控制", "仓储机器人", "工业机器人"], "excludes": ["software bot", "chatbot", "聊天机器人", "软件机器人"], "status": "active"},
+        {"id": "hr_workforce", "name": "人力与员工体验", "includes": ["human resources workflow", "workforce management", "employee experience", "人力资源流程", "劳动力管理", "员工体验"], "excludes": ["AI employee product metaphor"], "status": "active"},
+        {"id": "finance_accounting", "name": "财务与会计", "includes": ["finance workflow", "accounting automation", "accounts receivable", "billing automation", "财务流程", "会计自动化", "应收账款", "计费自动化"], "excludes": ["funding round"], "status": "active"},
+        {"id": "legal_compliance", "name": "法律与合规", "includes": ["legal workflow", "regulatory compliance", "contract review", "法律流程", "监管合规", "合同审查"], "excludes": ["generic policy compliance"], "status": "active"},
+        {"id": "procurement_supply_chain", "name": "采购与供应链", "includes": ["procurement workflow", "supply chain operations", "tender management", "采购流程", "供应链运营", "投标管理"], "excludes": ["funding procurement"], "status": "active"},
+        {"id": "design_engineering", "name": "设计与工程", "includes": ["engineering design", "CAD workflow", "architectural design", "设计工程", "CAD 工作流", "建筑设计"], "excludes": ["graphic content creation only"], "status": "active"}
       ]
     },
     {
       "id": "industry",
       "name": "行业",
-      "definition": "来源明确披露的采用方或事件所处行业。",
+      "definition": "来源明确披露的采用方或事件所处行业。使用 Crunchbase 2026 行业组词汇作外部对照；AI、软件、数据等技术属性不作为客户行业默认值。",
+      "selection_rule": "只有来源明确出现采用方、客户或专业工作流所属行业时才赋值；跨行业产品不填写虚构的默认行业。",
+      "reference_framework": {
+        "name": "Crunchbase Glossary of Industries",
+        "url": "https://support.crunchbase.com/hc/en-us/articles/27690673553555-Glossary-of-Industries"
+      },
       "values": [
-        {"id": "technology", "name": "科技与软件", "includes": ["software company", "technology company", "developer platform", "软件公司", "科技公司", "开发者平台"], "excludes": [], "status": "active"},
         {"id": "financial_services", "name": "金融服务", "includes": ["banking", "insurance", "financial services", "investment firm", "银行", "保险", "金融服务", "投资机构"], "excludes": ["funding round"], "status": "active"},
         {"id": "healthcare_life_sciences", "name": "医疗与生命科学", "includes": ["healthcare", "hospital", "pharma", "drug discovery", "医疗", "医院", "制药", "药物发现"], "excludes": [], "status": "active"},
         {"id": "retail_ecommerce", "name": "零售与电商", "includes": ["retail", "e-commerce", "ecommerce", "merchant", "零售", "电商", "商家"], "excludes": [], "status": "active"},
@@ -370,8 +442,14 @@
         {"id": "government_public_sector", "name": "政府与公共部门", "includes": ["government agency", "public sector", "municipality", "政府机构", "公共部门", "市政府"], "excludes": ["government policy without adopter"], "status": "active"},
         {"id": "energy_utilities", "name": "能源与公用事业", "includes": ["energy company", "utility company", "power grid", "oil and gas", "能源公司", "公用事业", "电网", "石油天然气"], "excludes": [], "status": "active"},
         {"id": "telecommunications", "name": "电信", "includes": ["telecom operator", "telecommunications", "mobile carrier", "电信运营商", "通信行业", "移动运营商"], "excludes": [], "status": "active"},
-        {"id": "automotive_transportation", "name": "汽车与交通", "includes": ["automotive", "vehicle manufacturer", "transportation", "汽车行业", "整车厂", "交通运输"], "excludes": [], "status": "active"},
-        {"id": "professional_services", "name": "专业服务", "includes": ["consulting firm", "law firm", "accounting firm", "咨询公司", "律师事务所", "会计师事务所"], "excludes": [], "status": "active"}
+        {"id": "automotive_transportation", "name": "汽车与交通", "includes": ["automotive", "vehicle manufacturer", "transportation", "汽车行业", "整车厂", "交通运输"], "excludes": ["logistics workflow only"], "status": "active"},
+        {"id": "professional_services", "name": "专业服务", "includes": ["consulting firm", "accounting firm", "advisory services", "咨询公司", "会计师事务所", "专业顾问服务"], "excludes": ["law firm"], "status": "active"},
+        {"id": "construction_real_estate", "name": "建筑与房地产", "includes": ["construction industry", "architecture firm", "real estate developer", "AEC industry", "建筑行业", "建筑事务所", "房地产开发商", "AEC 行业"], "excludes": ["software architecture"], "status": "active"},
+        {"id": "food_hospitality", "name": "餐饮与酒店", "includes": ["restaurant", "hospitality industry", "hotel operator", "餐厅", "餐饮行业", "酒店运营商"], "excludes": ["data restaurant example"], "status": "active"},
+        {"id": "aerospace_defense", "name": "航空航天与国防", "includes": ["aerospace", "defense industry", "national security", "space industry", "航空航天", "国防工业", "国家安全", "航天行业"], "excludes": ["cybersecurity for commercial customers only"], "status": "active"},
+        {"id": "agriculture", "name": "农业", "includes": ["agriculture", "farming", "agritech", "农业", "农场", "农业科技"], "excludes": [], "status": "active"},
+        {"id": "logistics_supply_chain", "name": "物流与供应链", "includes": ["logistics company", "supply chain industry", "freight operator", "物流公司", "供应链行业", "货运运营商"], "excludes": ["internal procurement only"], "status": "active"},
+        {"id": "legal_services", "name": "法律服务", "includes": ["law firm", "legal services", "legal department", "律师事务所", "法律服务", "法务部门"], "excludes": ["generic regulatory compliance"], "status": "active"}
       ]
     },
     {
@@ -392,10 +470,12 @@
       "definition": "来源明确披露的主要使用者或采购者类型。",
       "values": [
         {"id": "developer", "name": "开发者", "includes": ["for developers", "developer users", "developer community", "面向开发者", "开发者用户", "开发者社区"], "excludes": [], "status": "active"},
-        {"id": "enterprise", "name": "企业用户", "includes": ["enterprise customers", "business users", "for enterprises", "企业客户", "企业用户", "面向企业"], "excludes": [], "status": "active"},
+        {"id": "business_user", "name": "企业用户", "includes": ["enterprise customers", "business users", "for enterprises", "企业客户", "企业用户", "面向企业"], "excludes": [], "status": "active"},
         {"id": "consumer", "name": "个人用户", "includes": ["consumers", "personal users", "individual users", "消费者", "个人用户", "普通用户"], "excludes": [], "status": "active"},
-        {"id": "government", "name": "政府用户", "includes": ["government customers", "public-sector users", "政府客户", "公共部门用户"], "excludes": [], "status": "active"},
-        {"id": "researcher_education", "name": "研究与教育用户", "includes": ["for researchers", "for teachers", "for students", "academic users", "面向研究人员", "面向教师", "面向学生", "科研用户", "教育用户"], "excludes": ["company researcher title only"], "status": "active"}
+        {"id": "public_sector_user", "name": "公共部门用户", "includes": ["government customers", "public-sector users", "政府客户", "公共部门用户"], "excludes": [], "status": "active"},
+        {"id": "researcher", "name": "研究人员", "includes": ["for researchers", "research users", "academic researchers", "面向研究人员", "科研用户", "学术研究人员"], "excludes": ["company researcher title only"], "status": "active"},
+        {"id": "educator", "name": "教师", "includes": ["for teachers", "educator users", "teaching staff", "面向教师", "教师用户", "教学人员"], "excludes": ["company training staff"], "status": "active"},
+        {"id": "student", "name": "学生", "includes": ["for students", "student users", "learners", "面向学生", "学生用户", "学习者"], "excludes": ["student founder biography"], "status": "active"}
       ]
     }
   ]

@@ -13,6 +13,13 @@ scope: Business Signals + Weekly Reports + Community Intelligence + First-Line V
 status: draft
 version: v0.2-merged
 method: 产业结构变化诊断 + 趋势裁决 + 机会地图
+taxonomy_version: TAG-V4.1
+technical_tag_ids: []
+market_category_ids: []
+market_subcategory_ids: []
+product_form_ids: []
+use_case_ids: []
+industry_ids: []
 ---
 
 # 企业真正采购的不是模型能力，而是流程结果与交付责任

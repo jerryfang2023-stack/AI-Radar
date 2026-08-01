@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -58,10 +58,11 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
-      "TX-use_case-customer_service",
-      "TX-use_case-cybersecurity",
-      "TX-use_case-robotics_automation",
+      "TX-use_case-customer_support",
+      "TX-use_case-security_operations",
+      "TX-use_case-physical_automation",
       "TX-industry-manufacturing",
+      "TX-industry-aerospace_defense",
       "TX-industry-healthcare_life_sciences",
       "TX-industry-retail_ecommerce"
     ],
@@ -243,9 +244,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           },
           {
             "dimensionId": "technology",
@@ -285,9 +286,9 @@
           },
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "entityIds": [
@@ -583,9 +584,15 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "aerospace_defense",
+            "dimensionName": "行业",
+            "name": "航空航天与国防"
           }
         ],
         "entityIds": [
@@ -696,9 +703,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "customer_service",
+            "id": "customer_support",
             "dimensionName": "应用场景",
-            "name": "客户服务"
+            "name": "客户支持"
           },
           {
             "dimensionId": "technology",
@@ -839,7 +846,7 @@
           },
           {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           }
@@ -1768,11 +1775,11 @@
       "lastSeen": "2027-09-30"
     },
     {
-      "id": "TX-use_case-customer_service",
-      "name": "客户服务",
+      "id": "TX-use_case-customer_support",
+      "name": "客户支持",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "customer_service",
+      "valueId": "customer_support",
       "eventIds": [
         "EV-57cf8e14d6994c1b",
         "EV-2315aada5ad36397",
@@ -1845,11 +1852,11 @@
       "lastSeen": "2026-07-30"
     },
     {
-      "id": "TX-use_case-cybersecurity",
-      "name": "网络安全",
+      "id": "TX-use_case-security_operations",
+      "name": "安全运营",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "cybersecurity",
+      "valueId": "security_operations",
       "eventIds": [
         "EV-976c03b6664d3a3b",
         "EV-9ddcfd9f61c25158",
@@ -1972,11 +1979,11 @@
       "lastSeen": "2026-07-31"
     },
     {
-      "id": "TX-use_case-robotics_automation",
-      "name": "机器人与物理自动化",
+      "id": "TX-use_case-physical_automation",
+      "name": "物理自动化",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "robotics_automation",
+      "valueId": "physical_automation",
       "eventIds": [
         "EV-eb881f5de456b59a",
         "EV-fcf3c464260b6730",
@@ -2260,6 +2267,40 @@
       ],
       "firstSeen": "2025-12-02",
       "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "TX-industry-aerospace_defense",
+      "name": "航空航天与国防",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "aerospace_defense",
+      "eventIds": [
+        "EV-14cc7f194f3e5af8",
+        "EV-056bb8c683ef60a4",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-491e7b4b506ab3e3",
+        "EV-eeb05e9a870efd97",
+        "EV-a35a3871bf36fea2",
+        "EV-ef823877347ff40f",
+        "EV-e1ebf7d63e058a39"
+      ],
+      "entityIds": [
+        "EN-9b5bd1ff5a1d7f49",
+        "EN-7d3194f79e645c42",
+        "EN-f95d5af831e91b94",
+        "EN-96eebba49dbbf422",
+        "EN-c70eca6b0f88f44d",
+        "EN-cbc62794911ff31b",
+        "EN-9f15bb7e29e191eb",
+        "EN-1a8141d5b3fef420",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",

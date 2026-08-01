@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -136,7 +136,14 @@
         "status": "announced",
         "statusLabel": "已公布",
         "title": "Mistral AI：法国AI公司走Palantir路线，估值约231.5亿美元",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_cloud_service",
+            "dimensionName": "产品形态",
+            "name": "算力云服务"
+          }
+        ],
         "entityIds": [
           "EN-c04bd5ebd10ab696"
         ]
@@ -291,7 +298,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-cybersecurity",
+        "TX-use_case-security_operations",
         "TX-industry-automotive_transportation"
       ],
       "relatedEntityIds": [

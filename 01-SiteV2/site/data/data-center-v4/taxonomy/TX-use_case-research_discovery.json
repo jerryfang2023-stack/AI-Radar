@@ -4,18 +4,18 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
     "quarantinedEventCount": 13
   },
   "node": {
-    "id": "TX-use_case-research_science",
+    "id": "TX-use_case-research_discovery",
     "name": "科研与发现",
     "nodeType": "use_case",
     "typeLabel": "应用场景",
-    "valueId": "research_science",
+    "valueId": "research_discovery",
     "eventIds": [
       "EV-1ac32035d5e425e1",
       "EV-11b2293769081d4c",
@@ -63,11 +63,14 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "research_science",
+            "id": "research_discovery",
             "dimensionName": "应用场景",
             "name": "科研与发现"
           }
@@ -79,7 +82,7 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         }
@@ -87,7 +90,7 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         }
@@ -125,11 +128,14 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "research_science",
+            "id": "research_discovery",
             "dimensionName": "应用场景",
             "name": "科研与发现"
           }
@@ -148,7 +154,7 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         },
@@ -162,7 +168,7 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         },
@@ -217,11 +223,14 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "research_science",
+            "id": "research_discovery",
             "dimensionName": "应用场景",
             "name": "科研与发现"
           }
@@ -246,7 +255,7 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         },
@@ -260,7 +269,7 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         },
@@ -315,11 +324,14 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "research_science",
+            "id": "research_discovery",
             "dimensionName": "应用场景",
             "name": "科研与发现"
           }
@@ -331,7 +343,7 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         }
@@ -339,7 +351,7 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         }
@@ -379,6 +391,9 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -390,7 +405,7 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "research_science",
+            "id": "research_discovery",
             "dimensionName": "应用场景",
             "name": "科研与发现"
           }
@@ -415,7 +430,7 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         },
@@ -435,7 +450,7 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "research_science",
+          "id": "research_discovery",
           "dimensionName": "应用场景",
           "name": "科研与发现"
         },
@@ -506,8 +521,8 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -515,7 +530,7 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-image_generation",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
@@ -549,7 +564,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-research_science"
+        "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-21",
@@ -709,27 +724,27 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
+        "TX-industry-agriculture",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-human_in_loop",
@@ -782,7 +797,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-research_science"
+        "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-21",
@@ -804,7 +819,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-research_science"
+        "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-07",
@@ -1091,26 +1106,27 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
-        "TX-industry-professional_services",
+        "TX-industry-legal_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
+        "TX-industry-professional_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",

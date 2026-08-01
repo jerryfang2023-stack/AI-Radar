@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-26",
     "generated_at": "2026-07-27T05:17:13.725Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 1,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-a20fd9d5406fb9b6",
       "triggered_by_event_id": "EV-cab0d2efad362cf7",
       "as_of_date": "2026-06-26",
@@ -436,7 +437,19 @@
             "AI 智能体在复杂企业环境中的可靠性尚未被大规模验证，其宣称的“10 倍效率提升”在应对高度定制化、遗留系统集成和严格安全要求时可能显著打折。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "product_form_id": "developer_tool",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -583,7 +596,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:39:24.542Z"
+        "generated_at": "2026-07-26T14:39:24.542Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-cab0d2efad362cf7",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -626,7 +647,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-c77b134f91a370a2",
       "triggered_by_event_id": "EV-7951af05be21dc7c",
       "as_of_date": "2026-06-26",
@@ -1078,7 +1099,19 @@
             "公司截至2024年3月仅1名员工，团队规模和执行能力尚未得到验证，产品开发和市场推广面临资源约束。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "software_development_coding",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1251,7 +1284,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:38:30.766Z"
+        "generated_at": "2026-07-26T14:38:30.766Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7951af05be21dc7c",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1295,7 +1336,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-dec627e13347a261",
       "triggered_by_event_id": "EV-6484904c176aa016",
       "as_of_date": "2026-06-26",
@@ -1515,7 +1556,19 @@
             "来源未披露任何营收、客户数量、留存率或付费转化等量化业务指标，Pre-Seed阶段产品市场匹配度尚未被规模化验证"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "sales",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "sales"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1594,7 +1647,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:38:13.368Z"
+        "generated_at": "2026-07-26T14:38:13.368Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-6484904c176aa016",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1633,7 +1694,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-adb73b37b79b4dc7",
       "triggered_by_event_id": "EV-7283de3f3a76d22b",
       "as_of_date": "2026-06-26",
@@ -2161,7 +2222,20 @@
             "从模拟到现实的迁移能否在复杂工业场景、多变光照和地面条件下大规模成立，仍是一个未被回答的开放性问题，缺乏公开基准测试验证。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ]
       },
       "entity_links": [
         {
@@ -2364,7 +2438,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:37:48.126Z"
+        "generated_at": "2026-07-26T14:37:48.126Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7283de3f3a76d22b",
+          "confidence": 0.92,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2409,7 +2491,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-c4f144aa04022fea",
       "triggered_by_event_id": "EV-ceb23160ad25e497",
       "as_of_date": "2026-06-26",
@@ -2700,7 +2782,20 @@
             "数据本地化虽是合规优势，但也可能限制跨区域扩展的灵活性"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "product_form_id": "developer_tool",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "public_sector_user"
+        ]
       },
       "entity_links": [
         {
@@ -2788,7 +2883,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:37:19.215Z"
+        "generated_at": "2026-07-26T14:37:19.215Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-ceb23160ad25e497",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

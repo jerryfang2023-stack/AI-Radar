@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-07-25",
     "generated_at": "2026-07-27T10:26:48.053Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-4960bd099ebc8b70",
       "triggered_by_event_id": "EV-136b2edc9b9f3be8",
       "as_of_date": "2026-07-25",
@@ -613,7 +614,21 @@
             "HTML/CSS渲染引擎的差异化优势可能被现有竞品通过功能更新追赶，技术护城河的持久性有待验证。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "software_development_coding",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "software_development",
+          "design_engineering"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -864,7 +879,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-27T10:26:47.980Z"
+        "generated_at": "2026-07-27T10:26:47.980Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-136b2edc9b9f3be8",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -903,7 +926,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-f3044a2b4363e0fd",
       "triggered_by_event_id": "EV-acdeebead5324344",
       "as_of_date": "2026-07-25",
@@ -1328,7 +1351,19 @@
             "企业采用独立审查平台需要额外集成成本，而内置审查功能的AI编码工具可提供更低摩擦的体验"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "software_development_coding",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1560,7 +1595,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:03:24.649Z"
+        "generated_at": "2026-07-26T15:03:24.649Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-acdeebead5324344",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1601,7 +1644,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-19d2c5144ad69c90",
       "triggered_by_event_id": "EV-d10684a6f16afe10",
       "as_of_date": "2026-07-25",
@@ -1897,7 +1940,19 @@
             "产品仍处于早期阶段，尚未与 VS Code 等主流开发环境深度集成，用户体验存在未解决问题，且完整的“智能体编码循环”目标仍属愿景阶段。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "software_development_coding",
+        "market_application_id": "",
+        "product_form_id": "developer_tool",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2032,7 +2087,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:02:34.061Z"
+        "generated_at": "2026-07-26T15:02:34.061Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d10684a6f16afe10",
+          "confidence": 0.94,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2074,7 +2137,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-3c01d00486bca8e1",
       "triggered_by_event_id": "EV-bffc68e7bb4d598b",
       "as_of_date": "2026-07-25",
@@ -2491,7 +2554,21 @@
             "现有合规巨头（如ACA Group、Smarsh）正在其客户已使用的记录系统中添加AI功能，Hadrius面临在达到记录系统地位之前，被现有厂商的“足够好”的AI功能所挤压的风险。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "financial_services",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "legal_compliance"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2659,7 +2736,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:02:20.968Z"
+        "generated_at": "2026-07-26T15:02:20.968Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-bffc68e7bb4d598b",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

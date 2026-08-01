@@ -15,90 +15,20 @@ import {
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
-const PRODUCT_FORM_RULES = [
-  ["chip_accelerator", /(?:芯片|半导体|加速器|ASIC|GPU\s*IP|EDA)/iu],
-  ["compute_system", /(?:算力|推理云|新云|Neocloud|数据中心|GPU\s*集群|计算系统)/iu],
-  ["robot", /(?:机器人|具身|Physical\s*AI|物理\s*AI|仓库自动化)/iu],
-  ["ai_device", /(?:AI\s*设备|AI\s*硬件|消费硬件|智能硬件|家居设计)/iu],
-  ["security_product", /(?:AI\s*安全|智能体安全|安全与治理|网络安全|邮件安全|身份与访问|隐私增强)/iu],
-  ["developer_tool", /(?:开发者|编程|编码|代码|软件开发|软件交付|IDE|低代码|无代码|CAD|设计工具)/iu],
-  ["model", /(?:基础模型|大模型|前沿模型|世界模型|视觉推理|语音.*模型|模型与能力)/iu],
-  ["api_service", /(?:\bAPI\b|模型服务)/iu],
-  ["data_infrastructure", /(?:AI\s*基础设施|人工智能基础设施|推理优化|模型路由|模型推理|MLOps|数据平台|网络基础设施|记忆与成本)/iu],
-  ["enterprise_platform", /(?:企业|工作流|智能体|自动化|销售|营销|客服|供应链|采购|投标|法律|合规|金融|保险|医疗|教育|政府|建筑|工业|制药)/iu],
-];
-
-const INFRASTRUCTURE_PRODUCT_FORMS = new Set([
-  "model",
-  "api_service",
-  "data_infrastructure",
-  "chip_accelerator",
-  "compute_system",
-  "compute_service",
-]);
-
-function legacyFundingProductFormId(card) {
-  const searchText = [
-    card.analysis?.sector,
-    card.company?.summary,
-    ...(card.products || []).flatMap((item) => [item.name, item.description]),
-  ].filter(Boolean).join(" ");
-  return PRODUCT_FORM_RULES.find(([, pattern]) => pattern.test(searchText))?.[0] || "ai_application";
-}
-
-export function fundingProductFormDecision(card, manualDecisions = new Map()) {
+export function fundingProductFormDecision(card) {
   const explicitId = String(card.analysis?.product_form_id || "").trim();
   if (explicitId) return { id: explicitId, method: "card_explicit", decision_id: "" };
-
-  const eventIds = [...new Set([
-    card.triggered_by_event_id,
-    ...(card.source_event_ids || []),
-  ].filter(Boolean))];
-  const matches = eventIds.map((eventId) => manualDecisions.get(eventId)).filter(Boolean);
-  const productFormIds = [...new Set(matches.map((item) => item.product_form_id))];
-  if (productFormIds.length > 1) {
-    throw new Error(`Conflicting product-form decisions for ${eventIds.join(", ")}`);
-  }
-  if (matches.length) {
-    return {
-      id: matches[0].product_form_id,
-      method: "manual_review",
-      decision_id: matches[0].decision_id,
-    };
-  }
-  return { id: legacyFundingProductFormId(card), method: "legacy_heuristic", decision_id: "" };
+  throw new Error(`Funding card is missing explicit product_form_id: ${card.triggered_by_event_id || "unknown"}`);
 }
 
-export function fundingProductFormId(card, manualDecisions = new Map()) {
-  return fundingProductFormDecision(card, manualDecisions).id;
+export function fundingProductFormId(card) {
+  return fundingProductFormDecision(card).id;
 }
 
-export function fundingMarketCategoryDecision(card, manualDecisions = new Map(), productFormId = "") {
+export function fundingMarketCategoryDecision(card) {
   const explicitId = String(card.analysis?.market_category_id || "").trim();
   if (explicitId) return { id: explicitId, method: "card_explicit", decision_id: "" };
-  const eventIds = [...new Set([
-    card.triggered_by_event_id,
-    ...(card.source_event_ids || []),
-  ].filter(Boolean))];
-  const matches = eventIds.map((eventId) => manualDecisions.get(eventId)).filter(Boolean);
-  const categoryIds = [...new Set(matches.map((item) => item.market_category_id))];
-  if (categoryIds.length > 1) {
-    throw new Error(`Conflicting market-category decisions for ${eventIds.join(", ")}`);
-  }
-  if (matches.length) {
-    return {
-      id: matches[0].market_category_id,
-      method: "manual_review",
-      decision_id: matches[0].decision_id,
-    };
-  }
-  if (INFRASTRUCTURE_PRODUCT_FORMS.has(productFormId)) {
-    return { id: "ai_infrastructure", method: "product_form_fallback", decision_id: "" };
-  }
-  if (productFormId === "robot") {
-    return { id: "vertical_ai", method: "product_form_fallback", decision_id: "" };
-  }
-  return { id: "horizontal_ai", method: "product_form_fallback", decision_id: "" };
+  throw new Error(`Funding card is missing explicit market_category_id: ${card.triggered_by_event_id || "unknown"}`);
 }
 
 function listBundles(projectRoot) {
@@ -126,48 +56,6 @@ function facetValueNames(projectRoot, facetId) {
 
 function productFormNames(projectRoot) {
   return facetValueNames(projectRoot, "product_form");
-}
-
-export function productFormDecisionMap(
-  projectRoot,
-  productForms = productFormNames(projectRoot),
-  marketCategories = facetValueNames(projectRoot, "ai_market_category"),
-) {
-  const file = path.join(
-    projectRoot,
-    "01-SiteV2/content/12-applications/funding-insights/product-form-decisions.json",
-  );
-  if (!fs.existsSync(file)) return new Map();
-  const ledger = readJson(file, {});
-  const decisions = ledger.decisions || [];
-  if (ledger.meta?.decision_count !== decisions.length) {
-    throw new Error("Funding product-form decision count does not match metadata");
-  }
-  const decisionIds = new Set();
-  const byEventId = new Map();
-  for (const decision of decisions) {
-    if (!decision.decision_id || decisionIds.has(decision.decision_id)) {
-      throw new Error(`Duplicate or missing product-form decision id: ${decision.decision_id || "missing"}`);
-    }
-    decisionIds.add(decision.decision_id);
-    if (!productForms.has(decision.product_form_id)) {
-      throw new Error(`Unknown product_form in ${decision.decision_id}: ${decision.product_form_id}`);
-    }
-    if (!marketCategories.has(decision.market_category_id)) {
-      throw new Error(`Unknown market_category in ${decision.decision_id}: ${decision.market_category_id}`);
-    }
-    if (!decision.company_name || !decision.rationale) {
-      throw new Error(`Missing company_name or rationale in ${decision.decision_id}`);
-    }
-    if (!Array.isArray(decision.event_ids) || !decision.event_ids.length) {
-      throw new Error(`Missing event_ids in ${decision.decision_id}`);
-    }
-    for (const eventId of decision.event_ids) {
-      if (byEventId.has(eventId)) throw new Error(`Duplicate product-form event decision: ${eventId}`);
-      byEventId.set(eventId, decision);
-    }
-  }
-  return byEventId;
 }
 
 function normalizedListKey(value = "") {
@@ -280,7 +168,8 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
   const directions = directionById(projectRoot);
   const productForms = productFormNames(projectRoot);
   const marketCategories = facetValueNames(projectRoot, "ai_market_category");
-  const productFormDecisions = productFormDecisionMap(projectRoot, productForms, marketCategories);
+  const marketSubcategories = facetValueNames(projectRoot, "ai_market_subcategory");
+  const marketApplications = facetValueNames(projectRoot, "ai_market_application");
   const entityIndex = readJson(path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
   const entityDecisions = readJson(
     path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
@@ -315,18 +204,24 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
         || String(right.published_at || "").localeCompare(String(left.published_at || ""));
     })
     .map((card) => {
-      const productFormDecision = fundingProductFormDecision(card, productFormDecisions);
+      const productFormDecision = fundingProductFormDecision(card);
       const productFormId = productFormDecision.id;
       const productFormName = productForms.get(productFormId);
       if (!productFormName) throw new Error(`Unknown TAG-V4 product_form value: ${productFormId}`);
-      const marketCategoryDecision = fundingMarketCategoryDecision(
-        card,
-        productFormDecisions,
-        productFormId,
-      );
+      const marketCategoryDecision = fundingMarketCategoryDecision(card);
       const marketCategoryName = marketCategories.get(marketCategoryDecision.id);
       if (!marketCategoryName) {
         throw new Error(`Unknown TAG-V4 ai_market_category value: ${marketCategoryDecision.id}`);
+      }
+      const marketSubcategoryId = String(card.analysis?.market_subcategory_id || "").trim();
+      const marketApplicationId = String(card.analysis?.market_application_id || "").trim();
+      const marketSubcategoryName = marketSubcategoryId ? marketSubcategories.get(marketSubcategoryId) : "";
+      const marketApplicationName = marketApplicationId ? marketApplications.get(marketApplicationId) : "";
+      if (marketSubcategoryId && !marketSubcategoryName) {
+        throw new Error(`Unknown TAG-V4 ai_market_subcategory value: ${marketSubcategoryId}`);
+      }
+      if (marketApplicationId && !marketApplicationName) {
+        throw new Error(`Unknown TAG-V4 ai_market_application value: ${marketApplicationId}`);
       }
       return {
         ...card,
@@ -344,6 +239,18 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
           method: marketCategoryDecision.method,
           decision_id: marketCategoryDecision.decision_id,
         },
+        market_subcategory: marketSubcategoryId ? {
+          dimension: "ai_market_subcategory",
+          id: marketSubcategoryId,
+          name: marketSubcategoryName,
+          method: "card_explicit",
+        } : null,
+        market_application: marketApplicationId ? {
+          dimension: "ai_market_application",
+          id: marketApplicationId,
+          name: marketApplicationName,
+          method: "card_explicit",
+        } : null,
         analysis: {
           ...card.analysis,
           related_direction: directions.get(card.analysis?.related_direction_id) || null,
@@ -370,26 +277,34 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
   const marketCategoryFilters = [...marketCategories.entries()]
     .filter(([id]) => cards.some((card) => card.market_category?.id === id))
     .map(([id, name]) => ({ dimension: "ai_market_category", id, name }));
+  const marketSubcategoryFilters = [...marketSubcategories.entries()]
+    .filter(([id]) => cards.some((card) => card.market_subcategory?.id === id))
+    .map(([id, name]) => ({ dimension: "ai_market_subcategory", id, name }));
+  const marketApplicationFilters = [...marketApplications.entries()]
+    .filter(([id]) => cards.some((card) => card.market_application?.id === id))
+    .map(([id, name]) => ({ dimension: "ai_market_application", id, name }));
   return {
     meta: {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
       funding_insight_version: FUNDING_INSIGHT_VERSION,
       site_version: "SITE-V4.4.1-china-market-scope",
-      column_version: "FUNDING-INSIGHT-V1.2.0-market-category",
+      column_version: "FUNDING-INSIGHT-V1.3.0-cb-2026-hierarchy",
       latest_date: latestDate,
       generated_at: generatedAt,
       card_count: cards.length,
       duplicate_rounds_removed: cardByEvent.size - cards.length,
       automatic_publication: true,
       market_category_framework: {
-        name: "CB Insights AI 100",
-        url: "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2025/",
-        categories: ["AI Infrastructure", "Horizontal AI", "Vertical AI"],
+        name: "CB Insights AI 100 2026",
+        url: "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
+        categories: ["Infrastructure & compute", "Enterprise applications", "Industry applications", "Physical AI"],
       },
     },
     filters: {
       rounds: [...new Set(cards.map((card) => card.financing.round).filter(Boolean))].sort(),
       market_categories: marketCategoryFilters,
+      market_subcategories: marketSubcategoryFilters,
+      market_applications: marketApplicationFilters,
       product_forms: productFormFilters,
       directions: [...new Map(cards
         .map((card) => card.analysis?.related_direction)

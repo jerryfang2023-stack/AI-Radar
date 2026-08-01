@@ -178,7 +178,7 @@ export function buildFundingFounderReview({ cards = [], pendingPersonCount = 0 }
     schema_version: FOUNDER_REVIEW_SCHEMA_VERSION,
     review_version: PERSON_REVIEW_VERSION,
     reviewed_at: REVIEWED_AT,
-    scope: "Evidence-backed natural-person founder profiles referenced by published FUNDING-INSIGHT-V1.1 cards",
+    scope: "Evidence-backed natural-person founder profiles referenced by published FUNDING-INSIGHT-V1.2 cards",
     selection_rule: "Manual first batch: explicit founder/co-founder source language, accepted funding card, stable natural-person identity; no inferred canonical relationship.",
     summary: {
       pending_person_candidates: pendingPersonCount,

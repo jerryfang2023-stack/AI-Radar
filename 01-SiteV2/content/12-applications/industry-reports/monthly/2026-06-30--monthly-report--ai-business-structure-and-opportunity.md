@@ -11,6 +11,13 @@ content_type: monthly-report
 slug: ai-business-structure-opportunity-monthly
 status: published
 version: v1.0
+taxonomy_version: TAG-V4.1
+technical_tag_ids: []
+market_category_ids: []
+market_subcategory_ids: []
+product_form_ids: []
+use_case_ids: []
+industry_ids: []
 ---
 
 # 企业真正采购的不是模型能力，而是流程结果与交付责任

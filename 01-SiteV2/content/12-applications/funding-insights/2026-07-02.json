@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-07-02",
     "generated_at": "2026-07-26T15:14:58.984Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-a04737ee8d57173c",
       "triggered_by_event_id": "EV-20d762872664fddb",
       "as_of_date": "2026-07-02",
@@ -655,7 +656,17 @@
             "13 人团队和 8 个月的公司历史意味着企业级规模部署、安全合规和客户支持能力尚未得到验证"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -945,7 +956,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:44:34.665Z"
+        "generated_at": "2026-07-26T14:44:34.665Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-20d762872664fddb",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -990,7 +1009,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-224d487b06cad138",
       "triggered_by_event_id": "EV-4f7462a365561bb5",
       "as_of_date": "2026-07-02",
@@ -1493,7 +1512,27 @@
             "收入模式风险：部分收入依赖于VVV代币的经济模型（质押、销毁），这引入了传统SaaS公司所没有的波动性和会计复杂性。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model_api_service",
+        "use_case_ids": [
+          "content_creation",
+          "knowledge_search",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "media_entertainment",
+          "education",
+          "professional_services"
+        ],
+        "target_user_ids": [
+          "consumer",
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1685,7 +1724,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:42:57.003Z"
+        "generated_at": "2026-07-26T14:42:57.003Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-4f7462a365561bb5",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1727,7 +1774,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-0429a6418b0774c6",
       "triggered_by_event_id": "EV-2bb63a3015195f9b",
       "as_of_date": "2026-07-02",
@@ -2224,7 +2271,19 @@
             "基准测试非独立评估：89%准确率和延迟数据来自自有基准测试，缺乏第三方验证，可能无法反映真实生产环境表现"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "data_preparation_curation",
+        "product_form_id": "model_api_service",
+        "use_case_ids": [
+          "knowledge_search"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2422,7 +2481,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:42:55.022Z"
+        "generated_at": "2026-07-26T14:42:55.022Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-2bb63a3015195f9b",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2460,7 +2527,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-1f79f2b772f139dd",
       "triggered_by_event_id": "EV-7b7f0cdf219434f6",
       "as_of_date": "2026-07-02",
@@ -2761,7 +2828,20 @@
             "长期竞争风险来自 CrowdStrike 和 Palo Alto Networks 等 EDR 巨头，它们可能构建原生的 AIDR 能力，挤压 Manifold 的市场空间。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "product_form_id": "security_software",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2889,7 +2969,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:42:43.119Z"
+        "generated_at": "2026-07-26T14:42:43.119Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7b7f0cdf219434f6",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

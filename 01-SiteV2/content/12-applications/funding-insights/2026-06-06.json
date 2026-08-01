@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-06",
     "generated_at": "2026-07-27T05:15:26.385Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 3,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-dcf52fdf41da5d16",
       "triggered_by_event_id": "EV-618e5729145025e4",
       "as_of_date": "2026-06-06",
@@ -369,7 +370,19 @@
             "Entire 目前仅发布了一个开源 CLI 工具，其核心的 git 兼容数据库、通用语义推理层和 AI 原生用户界面等平台组件尚未交付，产品愿景与当前可交付成果之间存在巨大差距。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "product_form_id": "developer_tool",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -511,7 +524,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:27:16.321Z"
+        "generated_at": "2026-07-26T14:27:16.321Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-618e5729145025e4",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -549,7 +570,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-8ecbb1a794fc8870",
       "triggered_by_event_id": "EV-386c205c8bbf537d",
       "as_of_date": "2026-06-06",
@@ -1046,7 +1067,21 @@
             "平台托管社区贡献模型存在恶意代码执行的安全风险，可能影响企业客户信任"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "product_form_id": "ai_infrastructure_software",
+        "use_case_ids": [
+          "software_development",
+          "research_discovery"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ]
       },
       "entity_links": [
         {
@@ -1221,7 +1256,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:26:23.702Z"
+        "generated_at": "2026-07-26T14:26:23.702Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-386c205c8bbf537d",
+          "confidence": 0.96,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1265,7 +1308,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-21706f7253ef0a36",
       "triggered_by_event_id": "EV-e579af588ad8cf64",
       "as_of_date": "2026-06-06",
@@ -1699,7 +1742,25 @@
             "来源未披露任何营收或付费客户数据，商业化验证仍处于早期阶段。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "data_preparation_curation",
+        "product_form_id": "ai_infrastructure_software",
+        "use_case_ids": [
+          "data_analysis",
+          "knowledge_search"
+        ],
+        "industry_ids": [
+          "government_public_sector",
+          "energy_utilities",
+          "agriculture"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1891,7 +1952,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:26:06.137Z"
+        "generated_at": "2026-07-26T14:26:06.137Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-e579af588ad8cf64",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1934,7 +2003,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-5d6f8b305204eb55",
       "triggered_by_event_id": "EV-29eea3f4a8fcd6f5",
       "as_of_date": "2026-06-06",
@@ -2210,7 +2279,17 @@
             "GPU 匹配市场的竞争激烈，CoreWeave、Lambda Labs 等对手已获得更大规模融资并建立先发优势，Inference.ai 的 400 万美元种子轮资金在算力采购和基础设施建设上可能捉襟见肘。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "product_form_id": "compute_cloud_service",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2336,7 +2415,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:25:11.302Z"
+        "generated_at": "2026-07-26T14:25:11.302Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-29eea3f4a8fcd6f5",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2378,7 +2465,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-f96d2a4594d9329f",
       "triggered_by_event_id": "EV-9e678b626c2a5c83",
       "as_of_date": "2026-06-06",
@@ -2660,7 +2747,23 @@
             "平台依赖现有电子邮件和 ERP 系统，若企业升级或更换底层系统可能影响集成稳定性"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "procurement_supply_chain",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "logistics_supply_chain",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2781,7 +2884,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:24:41.589Z"
+        "generated_at": "2026-07-26T14:24:41.589Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-9e678b626c2a5c83",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-10",
     "generated_at": "2026-07-26T15:10:56.895Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-420f1cdc03225574",
       "triggered_by_event_id": "EV-dd78b63f18dba410",
       "as_of_date": "2026-06-10",
@@ -424,7 +425,24 @@
             "企业采购流程高度复杂且依赖人为判断，智能体在异常处理、战略谈判和合规风险上的可靠性尚未经过完整经济周期验证。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "procurement_supply_chain",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "retail_ecommerce",
+          "professional_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -559,7 +577,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:10:56.817Z"
+        "generated_at": "2026-07-26T15:10:56.817Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-dd78b63f18dba410",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -599,7 +625,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-dac348b622e87b82",
       "triggered_by_event_id": "EV-f1a605a25af30dc5",
       "as_of_date": "2026-06-10",
@@ -1110,7 +1136,20 @@
             "7 人团队在竞争激烈的企业软件市场中，面临大型现有厂商快速添加类似安全层的压力，其护栏在大规模部署中防止数据泄露的实际效果尚未得到广泛验证。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "product_form_id": "ai_infrastructure_software",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1325,7 +1364,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:28:30.095Z"
+        "generated_at": "2026-07-26T14:28:30.095Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-f1a605a25af30dc5",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

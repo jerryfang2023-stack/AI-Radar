@@ -9,6 +9,13 @@ scope: Signals + First-Line Viewpoints + Community Intelligence
 status: published
 version: v3.4.3-report-center
 method: SxOxC cross-check + trend-chain five-step method + 100-point opportunity scoring
+taxonomy_version: TAG-V4.1
+technical_tag_ids: []
+market_category_ids: []
+market_subcategory_ids: []
+product_form_ids: []
+use_case_ids: []
+industry_ids: []
 ---
 
 # Agent 已进入科研、采购和支付，企业却先追问成本与责任

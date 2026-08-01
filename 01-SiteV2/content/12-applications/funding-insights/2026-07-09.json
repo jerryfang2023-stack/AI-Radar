@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-07-09",
     "generated_at": "2026-07-26T15:19:19.282Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-47f51070cf7333d0",
       "triggered_by_event_id": "EV-a8dc5c859946f336",
       "as_of_date": "2026-07-09",
@@ -499,7 +500,17 @@
             "来源未披露任何营收或订单金额，110亿美元估值缺乏可验证的财务数据支撑，存在估值泡沫风险。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "product_form_id": "chip_accelerator",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -692,7 +703,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:19:19.219Z"
+        "generated_at": "2026-07-26T15:19:19.219Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-a8dc5c859946f336",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -733,7 +752,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-f95063bd40499843",
       "triggered_by_event_id": "EV-f2143ba3124a2105",
       "as_of_date": "2026-07-09",
@@ -1075,7 +1094,20 @@
             "平台依赖用户输入的数据质量，若源数据不可靠，AI 输出结果也会是“垃圾”，这限制了其在关键任务中的自主性。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "customer_support"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1203,7 +1235,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:50:52.650Z"
+        "generated_at": "2026-07-26T14:50:52.650Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-f2143ba3124a2105",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1244,7 +1284,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-74754abd6491becb",
       "triggered_by_event_id": "EV-0dfcd1e634de755b",
       "as_of_date": "2026-07-09",
@@ -1595,7 +1635,21 @@
             "市场竞争激烈，面临传统OCR厂商、UiPath等大型公司以及Rossum AI、Hyperscience等初创公司的竞争，UiPath等公司虽目前聚焦结构化数据，但可能向非结构化数据领域拓展。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "finance_accounting",
+          "procurement_supply_chain"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1709,7 +1763,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:50:38.516Z"
+        "generated_at": "2026-07-26T14:50:38.516Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-0dfcd1e634de755b",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1750,7 +1812,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-2296e5e800f2670f",
       "triggered_by_event_id": "EV-4e1d2d6105d09d24",
       "as_of_date": "2026-07-09",
@@ -2265,7 +2327,24 @@
             "美国市场对非英伟达芯片存在'英伟达优先'的采购偏好，客户获取成本可能高于预期"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "product_form_id": "chip_accelerator",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation",
+          "logistics_supply_chain"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2490,7 +2569,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:50:37.897Z"
+        "generated_at": "2026-07-26T14:50:37.897Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-4e1d2d6105d09d24",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2532,7 +2619,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-72e9c40754b39a75",
       "triggered_by_event_id": "EV-d642ec7a9ca5eb0f",
       "as_of_date": "2026-07-09",
@@ -3012,7 +3099,21 @@
             "Alta 的快速增长可能依赖于早期采用者的红利，其 800% 的收入增长率在更大规模下难以持续，且尚未有公开数据验证其客户留存率和单位经济模型。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "sales",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "sales",
+          "marketing",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -3206,7 +3307,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:50:00.311Z"
+        "generated_at": "2026-07-26T14:50:00.311Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d642ec7a9ca5eb0f",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -3247,7 +3356,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-c5472acd7427b7e0",
       "triggered_by_event_id": "EV-d9cc588fb41a7e67",
       "as_of_date": "2026-07-09",
@@ -3890,7 +3999,22 @@
             "当资产管理客户同时成为股东时，存在利益冲突问题——这些机构既是法律服务的买方又是服务提供方的股东"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "legal",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "legal_compliance"
+        ],
+        "industry_ids": [
+          "legal_services",
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -4185,7 +4309,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:49:30.374Z"
+        "generated_at": "2026-07-26T14:49:30.374Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d9cc588fb41a7e67",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -4226,7 +4358,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-1fd24df5ecb12af2",
       "triggered_by_event_id": "EV-0a62954694db4143",
       "as_of_date": "2026-07-09",
@@ -4711,7 +4843,22 @@
             "竞争加剧：Slang.ai、ConverseNow、SoundHound AI等同类公司以及大型餐厅技术平台均在增加自动化功能，差异化窗口可能收窄。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "consumer_retail",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "customer_support",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "food_hospitality"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -4891,7 +5038,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:49:15.468Z"
+        "generated_at": "2026-07-26T14:49:15.468Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-0a62954694db4143",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -4931,7 +5086,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-957a58002186a396",
       "triggered_by_event_id": "EV-86ca5af11ee4d275",
       "as_of_date": "2026-07-09",
@@ -5333,7 +5488,22 @@
             "面临 PatSnap、IPRally、HarveyAI 等竞争对手，以及 Thomson Reuters 旗下 Casetext 的潜在内部竞争。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "legal",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "legal_compliance",
+          "content_creation"
+        ],
+        "industry_ids": [
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -5494,7 +5664,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:48:05.832Z"
+        "generated_at": "2026-07-26T14:48:05.832Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-86ca5af11ee4d275",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -5536,7 +5714,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-0999f8df1caf6c00",
       "triggered_by_event_id": "EV-1a6def173f4d7c94",
       "as_of_date": "2026-07-09",
@@ -5850,7 +6028,23 @@
             "客户中标率提升数据仅来自公司自报，缺乏独立第三方验证，存在选择性披露风险。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "legal",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "legal_compliance",
+          "procurement_supply_chain"
+        ],
+        "industry_ids": [
+          "legal_services",
+          "government_public_sector"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -5967,7 +6161,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:48:01.519Z"
+        "generated_at": "2026-07-26T14:48:01.519Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-1a6def173f4d7c94",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -6008,7 +6210,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-ac28426caf929eda",
       "triggered_by_event_id": "EV-6e79974732a5db6b",
       "as_of_date": "2026-07-09",
@@ -6283,7 +6485,21 @@
             "公司目前尚未产生任何收入，产品仍处于封闭测试阶段，商业化前景存在不确定性。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "researcher",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -6430,7 +6646,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:47:05.247Z"
+        "generated_at": "2026-07-26T14:47:05.247Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-6e79974732a5db6b",
+          "confidence": 0.98,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

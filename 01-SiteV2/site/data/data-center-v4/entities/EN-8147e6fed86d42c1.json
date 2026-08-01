@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -42,8 +42,8 @@
     "classificationRefs": [
       "TX-technology-embodied_ai",
       "TX-technology-agentic_execution",
-      "TX-use_case-customer_service",
-      "TX-use_case-robotics_automation",
+      "TX-use_case-customer_support",
+      "TX-use_case-physical_automation",
       "TX-industry-manufacturing",
       "TX-industry-healthcare_life_sciences",
       "TX-industry-retail_ecommerce",
@@ -94,14 +94,7 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Axe Compute 获得超过13亿美元全球AI基础设施客户合同",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          }
-        ],
+        "displayTags": [],
         "entityIds": [
           "EN-54dfb14dcddad637",
           "EN-8147e6fed86d42c1"
@@ -292,9 +285,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
           },
           {
             "dimensionId": "product_form",
@@ -338,9 +331,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "customer_service",
+            "id": "customer_support",
             "dimensionName": "应用场景",
-            "name": "客户服务"
+            "name": "客户支持"
           },
           {
             "dimensionId": "technology",
@@ -415,9 +408,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           },
           {
             "dimensionId": "technology",
@@ -469,9 +462,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "data_infrastructure",
+            "id": "ai_infrastructure_software",
             "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
+            "name": "AI 基础设施软件"
           },
           {
             "dimensionId": "product_form",
@@ -487,7 +480,7 @@
           },
           {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           },
@@ -1514,11 +1507,11 @@
       "lastSeen": "2027-09-30"
     },
     {
-      "id": "TX-use_case-customer_service",
-      "name": "客户服务",
+      "id": "TX-use_case-customer_support",
+      "name": "客户支持",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "customer_service",
+      "valueId": "customer_support",
       "eventIds": [
         "EV-57cf8e14d6994c1b",
         "EV-2315aada5ad36397",
@@ -1591,11 +1584,11 @@
       "lastSeen": "2026-07-30"
     },
     {
-      "id": "TX-use_case-robotics_automation",
-      "name": "机器人与物理自动化",
+      "id": "TX-use_case-physical_automation",
+      "name": "物理自动化",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "robotics_automation",
+      "valueId": "physical_automation",
       "eventIds": [
         "EV-eb881f5de456b59a",
         "EV-fcf3c464260b6730",

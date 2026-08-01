@@ -31,7 +31,6 @@ import {
   fundingMarketCategoryDecision,
   fundingProductFormDecision,
   fundingProductFormId,
-  productFormDecisionMap,
 } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
@@ -148,9 +147,15 @@ function validCard() {
     metrics: [],
     quotes: [],
     analysis: {
+      taxonomy_version: "TAG-V4.1",
       sector: "企业 AI",
-      product_form_id: "enterprise_platform",
-      market_category_id: "horizontal_ai",
+      product_form_id: "enterprise_software_platform",
+      market_category_id: "enterprise_applications",
+      market_subcategory_id: "productivity_enterprise_workflows",
+      market_application_id: "",
+      use_case_ids: ["productivity_enterprise_workflows"],
+      industry_ids: [],
+      target_user_ids: ["business_user"],
       investment_rationale: [],
       capital_judgment: "资本押注的是可重复交付，而不是通用聊天入口。",
       validated_signals: ["已经形成企业工作流产品"],
@@ -691,8 +696,14 @@ test("DeepSeek 研究结果必须逐项引用已抓取来源原文", () => {
       validated_signals: ["已经形成企业工作流产品"],
       risks: ["交付周期"],
       related_direction_id: "DIR-1",
-      product_form_id: "enterprise_platform",
-      market_category_id: "horizontal_ai",
+      taxonomy_version: "TAG-V4.1",
+      product_form_id: "enterprise_software_platform",
+      market_category_id: "enterprise_applications",
+      market_subcategory_id: "productivity_enterprise_workflows",
+      market_application_id: "",
+      use_case_ids: ["productivity_enterprise_workflows"],
+      industry_ids: [],
+      target_user_ids: ["business_user"],
       sector: "企业人工智能",
     },
   };
@@ -727,8 +738,14 @@ test("DeepSeek 可用未披露状态表达只有泛称、没有具体名称的�
       validated_signals: ["已完成种子轮融资"],
       risks: ["具体投资机构未披露"],
       related_direction_id: "",
-      product_form_id: "ai_application",
-      market_category_id: "vertical_ai",
+      taxonomy_version: "TAG-V4.1",
+      product_form_id: "end_user_application",
+      market_category_id: "industry_applications",
+      market_subcategory_id: "industrials",
+      market_application_id: "",
+      use_case_ids: ["physical_automation"],
+      industry_ids: ["manufacturing"],
+      target_user_ids: ["business_user"],
       sector: "工业人工智能",
     },
   };
@@ -769,8 +786,14 @@ test("机构投资理由必须来自本轮投资方并保留原文证据", () =>
       validated_signals: ["已有工作流产品"],
       risks: ["交付周期仍待规模化验证"],
       related_direction_id: "DIR-1",
-      product_form_id: "enterprise_platform",
-      market_category_id: "horizontal_ai",
+      taxonomy_version: "TAG-V4.1",
+      product_form_id: "enterprise_software_platform",
+      market_category_id: "enterprise_applications",
+      market_subcategory_id: "productivity_enterprise_workflows",
+      market_application_id: "",
+      use_case_ids: ["productivity_enterprise_workflows"],
+      industry_ids: [],
+      target_user_ids: ["business_user"],
       sector: "企业人工智能",
     },
   };
@@ -1053,11 +1076,19 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
       facets: [
         {
           id: "product_form",
-          values: [{ id: "enterprise_platform", name: "企业 AI 平台", status: "active" }],
+          values: [{ id: "enterprise_software_platform", name: "企业软件平台", status: "active" }],
         },
         {
           id: "ai_market_category",
-          values: [{ id: "horizontal_ai", name: "通用型 AI", status: "active" }],
+          values: [{ id: "enterprise_applications", name: "企业级应用", status: "active" }],
+        },
+        {
+          id: "ai_market_subcategory",
+          values: [{ id: "productivity_enterprise_workflows", name: "生产力与企业工作流", status: "active" }],
+        },
+        {
+          id: "ai_market_application",
+          values: [{ id: "models", name: "模型", status: "active" }],
         },
       ],
     }));
@@ -1070,27 +1101,27 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");
     assert.deepEqual(data.cards[0].product_form, {
       dimension: "product_form",
-      id: "enterprise_platform",
-      name: "企业 AI 平台",
+      id: "enterprise_software_platform",
+      name: "企业软件平台",
       method: "card_explicit",
       decision_id: "",
     });
     assert.deepEqual(data.cards[0].market_category, {
       dimension: "ai_market_category",
-      id: "horizontal_ai",
-      name: "通用型 AI",
+      id: "enterprise_applications",
+      name: "企业级应用",
       method: "card_explicit",
       decision_id: "",
     });
     assert.deepEqual(data.filters.market_categories, [{
       dimension: "ai_market_category",
-      id: "horizontal_ai",
-      name: "通用型 AI",
+      id: "enterprise_applications",
+      name: "企业级应用",
     }]);
     assert.deepEqual(data.filters.product_forms, [{
       dimension: "product_form",
-      id: "enterprise_platform",
-      name: "企业 AI 平台",
+      id: "enterprise_software_platform",
+      name: "企业软件平台",
     }]);
     assert.match(data.cards[0].links.company, /detail=entity&id=EN-1/u);
     assert.match(data.cards[0].links.relation_map, /view=relations&entity=EN-1/u);
@@ -1147,82 +1178,48 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
 
 test("融资透视产品方向使用受控应用层分类，不把自由文本赛道当作 TAG-V4 标签", () => {
   const chip = validCard();
-  delete chip.analysis.product_form_id;
+  chip.analysis.product_form_id = "chip_accelerator";
   chip.analysis.sector = "AI 推理芯片 / 半导体硬件";
   assert.equal(fundingProductFormId(chip), "chip_accelerator");
-
-  const agentPlatform = validCard();
-  delete agentPlatform.analysis.product_form_id;
-  agentPlatform.analysis.sector = "企业 AI 智能体平台";
-  assert.equal(fundingProductFormId(agentPlatform), "enterprise_platform");
-
-  const application = validCard();
-  delete application.analysis.product_form_id;
-  application.analysis.sector = "餐饮科技 / AI 虚拟礼宾";
-  application.company.summary = "";
-  application.products = [];
-  assert.equal(fundingProductFormId(application), "ai_application");
+  delete chip.analysis.product_form_id;
+  assert.throws(() => fundingProductFormId(chip), /missing explicit product_form_id/u);
 });
 
-test("融资透视主产品形态优先使用卡片显式判断和人工复核，不再由关键词抢占", () => {
+test("融资透视主产品形态必须来自源卡显式判断，缺失时前台失败关闭", () => {
   const card = validCard();
-  card.analysis.product_form_id = "data_infrastructure";
-  const manual = new Map([["EV-1", {
-    decision_id: "PF-TEST",
-    product_form_id: "model",
-  }]]);
-  assert.deepEqual(fundingProductFormDecision(card, manual), {
-    id: "data_infrastructure",
+  card.analysis.product_form_id = "ai_infrastructure_software";
+  assert.deepEqual(fundingProductFormDecision(card), {
+    id: "ai_infrastructure_software",
     method: "card_explicit",
     decision_id: "",
   });
 
   delete card.analysis.product_form_id;
-  assert.deepEqual(fundingProductFormDecision(card, manual), {
-    id: "model",
-    method: "manual_review",
-    decision_id: "PF-TEST",
-  });
+  assert.throws(() => fundingProductFormDecision(card), /missing explicit product_form_id/u);
 });
 
-test("融资透视市场母分类优先使用卡片显式判断和人工复核", () => {
+test("融资透视市场母分类必须来自源卡显式判断，缺失时前台失败关闭", () => {
   const card = validCard();
-  const manual = new Map([["EV-1", {
-    decision_id: "PF-TEST",
-    market_category_id: "vertical_ai",
-  }]]);
-  assert.deepEqual(fundingMarketCategoryDecision(card, manual, "enterprise_platform"), {
-    id: "horizontal_ai",
+  assert.deepEqual(fundingMarketCategoryDecision(card), {
+    id: "enterprise_applications",
     method: "card_explicit",
     decision_id: "",
   });
   delete card.analysis.market_category_id;
-  assert.deepEqual(fundingMarketCategoryDecision(card, manual, "enterprise_platform"), {
-    id: "vertical_ai",
-    method: "manual_review",
-    decision_id: "PF-TEST",
-  });
+  assert.throws(() => fundingMarketCategoryDecision(card), /missing explicit market_category_id/u);
 });
 
-test("七月50个来源案例去重为49家公司并完成双层分类复核", () => {
-  const productForms = new Map(JSON.parse(fs.readFileSync(
-    path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"),
-    "utf8",
-  )).facets.find((facet) => facet.id === "product_form").values.map((value) => [value.id, value.name]));
-  const decisions = productFormDecisionMap(root, productForms);
+test("全部历史融资事件都有 CB 2026 层级与产品形态复核决定", () => {
   const ledger = JSON.parse(fs.readFileSync(
-    path.join(root, "01-SiteV2/content/12-applications/funding-insights/product-form-decisions.json"),
+    path.join(root, "01-SiteV2/content/12-applications/funding-insights/taxonomy-decisions-v4-1.json"),
     "utf8",
   ));
-  assert.equal(ledger.decisions.length, 49);
-  assert.equal(ledger.meta.source_event_count, 52);
-  assert.equal(decisions.get("EV-81bd541510a530f0").decision_id, "PF-202607-005");
-  assert.equal(decisions.get("EV-439ba8d5f2f575c4").decision_id, "PF-202607-005");
-  assert.equal(decisions.get("EV-20d762872664fddb").product_form_id, "data_infrastructure");
-  assert.equal(decisions.get("EV-20d762872664fddb").market_category_id, "ai_infrastructure");
-  assert.equal(decisions.get("EV-f6a72cddbda748b3").product_form_id, "enterprise_platform");
-  assert.equal(decisions.get("EV-f6a72cddbda748b3").market_category_id, "horizontal_ai");
+  const decisions = new Map(ledger.decisions.map((decision) => [decision.event_id, decision]));
+  assert.equal(ledger.meta.taxonomy_version, "TAG-V4.1");
+  assert.equal(ledger.decisions.length, ledger.meta.decision_count);
+  assert.ok(ledger.decisions.length >= 220);
+  assert.equal(decisions.get("EV-20d762872664fddb").market_category_id, "infrastructure_compute");
   assert.equal(decisions.get("EV-cded77b1de2db61a").product_form_id, "model");
-  assert.equal(decisions.get("EV-6e516b6e68def9cf").product_form_id, "compute_service");
-  assert.equal(decisions.get("EV-bffc68e7bb4d598b").market_category_id, "vertical_ai");
+  assert.equal(decisions.get("EV-6e516b6e68def9cf").product_form_id, "compute_cloud_service");
+  assert.equal(decisions.get("EV-bffc68e7bb4d598b").market_category_id, "industry_applications");
 });

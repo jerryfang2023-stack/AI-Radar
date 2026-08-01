@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-07-17",
     "generated_at": "2026-07-26T15:19:20.287Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-36f291122b857b51",
       "triggered_by_event_id": "EV-02882e6f5e1902c6",
       "as_of_date": "2026-07-17",
@@ -418,7 +419,21 @@
             "旗舰产品细节尚未公布，目前仅依赖 Dune 这一实验性产品的有限反馈，产品市场匹配度存在高度不确定性。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "consumer_retail",
+        "market_application_id": "",
+        "product_form_id": "ai_device",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "retail_ecommerce"
+        ],
+        "target_user_ids": [
+          "consumer"
+        ]
       },
       "entity_links": [
         {
@@ -607,7 +622,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:55:58.056Z"
+        "generated_at": "2026-07-26T14:55:58.056Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-02882e6f5e1902c6",
+          "confidence": 0.84,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -648,7 +671,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-4fe22455c813c207",
       "triggered_by_event_id": "EV-6f092cfc7a064d64",
       "as_of_date": "2026-07-17",
@@ -1012,7 +1035,20 @@
             "视觉推理领域的前沿实验室（如DeepMind、OpenAI等）正在快速推进，Elorian离开大厂后可能面临技术进度落后的风险"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ]
       },
       "entity_links": [
         {
@@ -1154,7 +1190,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:55:45.024Z"
+        "generated_at": "2026-07-26T14:55:45.024Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-6f092cfc7a064d64",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1194,7 +1238,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-4e6e70433b57ddcf",
       "triggered_by_event_id": "EV-4eaf3aabecae6016",
       "as_of_date": "2026-07-17",
@@ -1701,7 +1745,19 @@
             "硬件循环风险：Nvidia同时作为芯片供应商和投资方，可能放大需求信号，真实需求需待独立审计数据验证"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "model_deployment",
+        "product_form_id": "compute_cloud_service",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1945,7 +2001,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:55:34.655Z"
+        "generated_at": "2026-07-26T14:55:34.655Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-4eaf3aabecae6016",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

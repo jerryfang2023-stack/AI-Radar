@@ -51,7 +51,7 @@
         "hardware_fact_version": { "const": "HARDWARE-FACT-V1.0" },
         "hardware_snapshot_version": { "const": "HARDWARE-SNAPSHOT-V1.0" },
         "monitoring_funnel_version": { "const": "LENS-FUNNEL-V1.0" },
-        "tag_version": { "const": "TAG-V4.0" },
+        "tag_version": { "const": "TAG-V4.1" },
         "date": { "type": "string", "format": "date" },
         "generated_at": { "type": "string" },
         "source_of_truth": { "type": "string" },
@@ -216,7 +216,7 @@
         "source_span": { "$ref": "#/$defs/sourceSpan" },
         "assignment_method": { "enum": ["rule", "model", "manual"] },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
-        "taxonomy_version": { "const": "TAG-V4.0" },
+        "taxonomy_version": { "const": "TAG-V4.1" },
         "status": { "enum": ["active", "review", "rejected", "deprecated"] }
       },
       "additionalProperties": false
@@ -232,7 +232,7 @@
         "source_span": { "$ref": "#/$defs/sourceSpan" },
         "assignment_method": { "enum": ["rule", "model", "manual"] },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
-        "taxonomy_version": { "const": "TAG-V4.0" },
+        "taxonomy_version": { "const": "TAG-V4.1" },
         "status": { "enum": ["active", "review", "rejected", "deprecated"] }
       },
       "additionalProperties": false

@@ -9,6 +9,13 @@ scope: Signals + First-Line Viewpoints + Community Intelligence
 status: published
 version: v3.3-merged
 method: SxOxC cross-check + trend-chain five-step method + 100-point opportunity scoring
+taxonomy_version: TAG-V4.1
+technical_tag_ids: []
+market_category_ids: []
+market_subcategory_ids: []
+product_form_ids: []
+use_case_ids: []
+industry_ids: []
 ---
 
 # 企业不缺 Agent，缺的是能把它接进流程并对结果负责的人

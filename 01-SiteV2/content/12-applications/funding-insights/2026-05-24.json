@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-05-24",
     "generated_at": "2026-07-26T15:07:46.757Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-1126ce996b25f212",
       "triggered_by_event_id": "EV-cbc0b7a7d21a29e2",
       "as_of_date": "2026-05-24",
@@ -516,7 +517,20 @@
             "计费与收入自动化市场竞争激烈，存在Zuora、Chargebee、Maxio等成熟替代方案，Zenskar的差异化需持续验证"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "finance_accounting",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -693,7 +707,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:07:46.683Z"
+        "generated_at": "2026-07-26T15:07:46.683Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-cbc0b7a7d21a29e2",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -734,7 +756,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-7899b9025c1d198d",
       "triggered_by_event_id": "EV-cfbd2bed57ba4644",
       "as_of_date": "2026-05-24",
@@ -1201,7 +1223,22 @@
             "应收账款涉及SOX合规、收入确认和客户支付数据，AI智能体直接写入总账的治理和审计能力尚未经过监管机构或大规模审计检验"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "finance_accounting",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1336,7 +1373,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:07:35.564Z"
+        "generated_at": "2026-07-26T15:07:35.564Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-cfbd2bed57ba4644",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1379,7 +1424,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-7061bf1fb99b60ef",
       "triggered_by_event_id": "EV-474d5a8ffca11ed9",
       "as_of_date": "2026-05-24",
@@ -1724,7 +1769,20 @@
             "企业销售材料的自动化对上下文准确性要求极高，任何事实性错误都可能导致投标失败或合规风险，产品从 70-80% 的通过率提升至完全可信赖仍需大量工程和领域适配工作。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "sales",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "sales",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1885,7 +1943,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:19:13.113Z"
+        "generated_at": "2026-07-26T14:19:13.113Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-474d5a8ffca11ed9",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1927,7 +1993,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-756ef43f08c8f540",
       "triggered_by_event_id": "EV-61546e58c0e669e7",
       "as_of_date": "2026-05-24",
@@ -2151,7 +2217,20 @@
             "公司仍处于极早期，产品市场匹配的广度、企业客户付费意愿的规模以及对抗性攻击技术的持续演进，都是尚未被验证的假设。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
+        "product_form_id": "security_software",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2272,7 +2351,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:18:36.463Z"
+        "generated_at": "2026-07-26T14:18:36.463Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-61546e58c0e669e7",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2314,7 +2401,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-c41c916238fdf7ac",
       "triggered_by_event_id": "EV-44a4e92c03a31ab1",
       "as_of_date": "2026-05-24",
@@ -2935,7 +3022,25 @@
             "部分团队在 Viktor 上的花费已超过一名初级员工，若 AI 代理未能持续交付与成本匹配的产出，客户可能重新评估订阅价值"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "knowledge_search",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "professional_services",
+          "retail_ecommerce",
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -3196,7 +3301,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:18:34.009Z"
+        "generated_at": "2026-07-26T14:18:34.009Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-44a4e92c03a31ab1",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -3237,7 +3350,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-8478addb443b9e38",
       "triggered_by_event_id": "EV-7add33b4c74dbf1a",
       "as_of_date": "2026-05-24",
@@ -3632,7 +3745,21 @@
             "Sycamore进入的是一个竞争极度激烈的市场，面临从小型初创公司到OpenAI、Anthropic等顶级模型制造商，以及微软Azure、AWS等云巨头的全方位竞争，市场尚未实现但被广泛预期为巨大。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -3795,7 +3922,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:17:23.694Z"
+        "generated_at": "2026-07-26T14:17:23.694Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7add33b4c74dbf1a",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

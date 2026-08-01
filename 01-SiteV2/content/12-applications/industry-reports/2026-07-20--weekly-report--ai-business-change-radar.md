@@ -8,6 +8,13 @@ slug: weekly-2026-w29
 status: published
 model_provider: deepseek
 model: deepseek-v4-pro
+taxonomy_version: TAG-V4.1
+technical_tag_ids: ["agentic_execution","code_generation","distillation","fine_tuning","guardrails_safety","long_context","mixture_of_experts","multimodal","on_device","open_weights"]
+market_category_ids: ["infrastructure_compute"]
+market_subcategory_ids: ["development_deployment"]
+product_form_ids: ["ai_compute_system","ai_infrastructure_software","chip_accelerator","compute_cloud_service","end_user_application","model"]
+use_case_ids: ["data_analysis","security_operations","software_development"]
+industry_ids: ["aerospace_defense","media_entertainment"]
 ---
 
 Signals: 297 | Opinions: 104 | Community: 156

@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -24,7 +24,9 @@
       "EV-01b003fbae67ae91"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-industry-agriculture"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
     "lastSeen": "2026-06-19",
@@ -53,10 +55,10 @@
         "title": "AI Hub 联合设计计划：初创企业加速器试点",
         "displayTags": [
           {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
+            "dimensionId": "industry",
+            "id": "agriculture",
+            "dimensionName": "行业",
+            "name": "农业"
           }
         ],
         "entityIds": [
@@ -69,7 +71,31 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-agriculture",
+      "name": "农业",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "agriculture",
+      "eventIds": [
+        "EV-01b003fbae67ae91",
+        "EV-0f0b2013927ce156",
+        "EV-1add9dad81afe82a"
+      ],
+      "entityIds": [
+        "EN-0bd36bfd4d80867c",
+        "EN-2a920347dfcf07a7",
+        "EN-cc70f504af53013a",
+        "EN-8d4321d936320802",
+        "EN-963cd73004547f84"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-19",
+      "lastSeen": "2026-07-26"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

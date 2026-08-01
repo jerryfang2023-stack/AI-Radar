@@ -9,3 +9,6 @@
 7. Pass when frozen V3 Card tag-shape observations remain non-blocking compatibility diagnostics while current TAG-V4 assertions are blocked by the Data Center V4 integrity gate.
 8. Fail when market layer, product form, industry, use case, or technology are flattened into peer values of one user-facing classification.
 9. Pass when an adopted external framework records its source, exact adopted levels, and dimension boundary.
+10. Fail when a Funding Insight source card lacks an explicit reviewed market category, subcategory where applicable, or product form and the public builder guesses one from keywords.
+11. Fail when a world model, simulation model, or future robotics plan is classified as Physical AI without evidence of a current robot, vehicle, or autonomous machine product acting in the physical world.
+12. Fail when a generic `technology` or `software` value is used as the customer's industry in an AI-only corpus.

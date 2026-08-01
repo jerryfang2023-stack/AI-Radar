@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-25",
     "generated_at": "2026-07-27T05:19:02.439Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 2,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-364250d18b87c657",
       "triggered_by_event_id": "EV-dd3217aad32e6891",
       "as_of_date": "2026-06-25",
@@ -733,7 +734,21 @@
             "向屋顶、汽车服务、物业管理等邻近垂直领域的扩展面临不同工作流和客户需求，产品适配和销售效率存在不确定性。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "customer_support",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "customer_support",
+          "sales",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1037,7 +1052,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:39:54.562Z"
+        "generated_at": "2026-07-26T14:39:54.562Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-dd3217aad32e6891",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1080,7 +1103,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-4041c7c8f29c57d1",
       "triggered_by_event_id": "EV-a7e14985b924b464",
       "as_of_date": "2026-06-25",
@@ -1448,7 +1471,21 @@
             "公司2022财年的年度营收仅为8.4万美元，尽管近期增长迅速，但其绝对收入规模仍然较小，未来能否持续高速增长并实现规模化盈利有待验证。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "consumer_retail",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "education"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1555,7 +1592,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:38:49.903Z"
+        "generated_at": "2026-07-26T14:38:49.903Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-a7e14985b924b464",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1597,7 +1642,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-256d9398b7fed31d",
       "triggered_by_event_id": "EV-9fc8916c19c19f99",
       "as_of_date": "2026-06-25",
@@ -1925,7 +1970,38 @@
             "AI 语音智能体市场竞争激烈，存在 Bland AI、Synthflow 等多个定位不同的竞争对手，telli 需持续强化其在“高吞吐量外呼”这一细分场景的差异化优势，避免陷入同质化竞争。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "sales",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "customer_support",
+          "sales"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2091,7 +2167,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:38:05.416Z"
+        "generated_at": "2026-07-26T14:38:05.416Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-9fc8916c19c19f99",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2133,7 +2217,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-27fc384f20a37812",
       "triggered_by_event_id": "EV-f487788f3d44f288",
       "as_of_date": "2026-06-25",
@@ -2594,7 +2678,23 @@
             "语音 AI 初创市场竞争激烈，Artera、EliseAI、Tennr 等均已获得大额融资，可能挤压定价空间和客户获取成本"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "customer_support",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "consumer"
+        ]
       },
       "entity_links": [
         {
@@ -2724,7 +2824,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:37:52.124Z"
+        "generated_at": "2026-07-26T14:37:52.124Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-f487788f3d44f288",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2767,7 +2875,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-9c3c3a2fb0eee6ff",
       "triggered_by_event_id": "EV-ad0589423b3aa1ce",
       "as_of_date": "2026-06-25",
@@ -3103,7 +3211,22 @@
             "采购流程深度依赖企业现有ERP和遗留系统，数据集成和标准化难度可能随着客户规模扩大而急剧增加，限制规模化速度。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "procurement_supply_chain",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -3249,7 +3372,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:36:52.343Z"
+        "generated_at": "2026-07-26T14:36:52.343Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-ad0589423b3aa1ce",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

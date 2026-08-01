@@ -11,13 +11,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-984bd742aa6bfb4d",
     "dimension_id": "target_user",
-    "value_id": "enterprise",
+    "value_id": "business_user",
     "evidence_ref": "CL-984bd742aa6bfb4d",
     "source_span": {
       "raw_id": "RAW-1095cb5a4eddf0c0",
@@ -26,7 +26,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -41,13 +41,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-a8fde21783f12a2c",
     "dimension_id": "target_user",
-    "value_id": "enterprise",
+    "value_id": "business_user",
     "evidence_ref": "CL-a8fde21783f12a2c",
     "source_span": {
       "raw_id": "RAW-1095cb5a4eddf0c0",
@@ -56,28 +56,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-245355925d177ced",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-245355925d177ced",
-    "source_span": {
-      "raw_id": "RAW-01e4d8a5e8974a43",
-      "start": 74,
-      "end": 185
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-822cea60c869f7d2",
     "dimension_id": "target_user",
-    "value_id": "enterprise",
+    "value_id": "business_user",
     "evidence_ref": "CL-822cea60c869f7d2",
     "source_span": {
       "raw_id": "RAW-01e4d8a5e8974a43",
@@ -86,7 +71,37 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-57ed0bec96d075d4",
+    "dimension_id": "product_form",
+    "value_id": "compute_cloud_service",
+    "evidence_ref": "CL-57ed0bec96d075d4",
+    "source_span": {
+      "raw_id": "RAW-6d35d1730d2ff881",
+      "start": 48,
+      "end": 103
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.1",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-3ce00d540bcdd10e",
+    "dimension_id": "product_form",
+    "value_id": "compute_cloud_service",
+    "evidence_ref": "CL-3ce00d540bcdd10e",
+    "source_span": {
+      "raw_id": "RAW-6d35d1730d2ff881",
+      "start": 192,
+      "end": 670
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   }
 ]

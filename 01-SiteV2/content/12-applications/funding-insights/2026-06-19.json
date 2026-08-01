@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-19",
     "generated_at": "2026-07-26T15:12:25.005Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-3401bf6e360a5213",
       "triggered_by_event_id": "EV-c85011ca6a0389bf",
       "as_of_date": "2026-06-19",
@@ -387,7 +388,20 @@
             "客户集中度风险：目前披露的具名客户仅四家，且 80% 客户位于欧洲，全球市场拓展尚未得到验证。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "product_form_id": "security_software",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -524,7 +538,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:34:43.751Z"
+        "generated_at": "2026-07-26T14:34:43.751Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c85011ca6a0389bf",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -568,7 +590,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-9cbc09818a9be1c5",
       "triggered_by_event_id": "EV-39717cdbada984d7",
       "as_of_date": "2026-06-19",
@@ -833,7 +855,20 @@
             "API 网关厂商和身份厂商等既有基础设施巨头可能通过收购或自研进入同一市场，利用现有客户关系形成挤压"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
+        "product_form_id": "security_software",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -967,7 +1002,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:33:56.718Z"
+        "generated_at": "2026-07-26T14:33:56.718Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-39717cdbada984d7",
+          "confidence": 0.96,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1008,7 +1051,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-11044f281187f580",
       "triggered_by_event_id": "EV-2083b9eda52a3f76",
       "as_of_date": "2026-06-19",
@@ -1528,7 +1571,24 @@
             "采购流程涉及大量非结构化数据和例外情况，AI智能体在处理边缘案例时的可靠性尚未在大规模、多行业场景中得到充分验证，可能限制其从当前数十家客户向更广泛市场扩展的速度。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "procurement_supply_chain",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "retail_ecommerce",
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1705,7 +1765,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:33:34.742Z"
+        "generated_at": "2026-07-26T14:33:34.742Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-2083b9eda52a3f76",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1747,7 +1815,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-97486ca269f0dadf",
       "triggered_by_event_id": "EV-917a390341b9fce6",
       "as_of_date": "2026-06-19",
@@ -2007,7 +2075,22 @@
             "产品仍处于研究预览阶段，尚无公开的付费客户数量或经常性收入数据，商业化验证不足"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "financial_services",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "finance_accounting",
+          "legal_compliance"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2150,7 +2233,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:33:13.107Z"
+        "generated_at": "2026-07-26T14:33:13.107Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-917a390341b9fce6",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

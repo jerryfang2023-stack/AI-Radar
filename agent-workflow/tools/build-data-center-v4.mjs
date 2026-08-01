@@ -39,7 +39,7 @@ const VERSION = Object.freeze({
   hardwareFact: "HARDWARE-FACT-V1.0",
   hardwareSnapshot: "HARDWARE-SNAPSHOT-V1.0",
   monitoringFunnel: "LENS-FUNNEL-V1.0",
-  tag: "TAG-V4.0"
+  tag: "TAG-V4.1"
 });
 
 const EVENT_RULES = [
@@ -883,7 +883,9 @@ function taxonomyMatchers(taxonomy) {
 }
 
 function facetMatchers(taxonomy) {
-  return taxonomy.facets.flatMap((facet) => facet.values
+  return taxonomy.facets
+    .filter((facet) => facet.assignment_mode !== "reviewed_company_only")
+    .flatMap((facet) => facet.values
     .filter((value) => value.status === "active")
     .map((value) => ({
       ...definitionMatcher(value),

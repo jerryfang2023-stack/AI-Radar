@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -25,7 +25,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-agentic_execution"
+      "TX-technology-agentic_execution",
+      "TX-use_case-legal_compliance"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-28",
@@ -56,9 +57,15 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "legal_compliance",
+            "dimensionName": "应用场景",
+            "name": "法律与合规"
           },
           {
             "dimensionId": "technology",
@@ -985,6 +992,24 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
+    },
+    {
+      "id": "TX-use_case-legal_compliance",
+      "name": "法律与合规",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "legal_compliance",
+      "eventIds": [
+        "EV-c5bebc78fa35d074",
+        "EV-aa7cf8ee6c875f08"
+      ],
+      "entityIds": [
+        "EN-4e358c403850a88a"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-21",
+      "lastSeen": "2026-07-28"
     }
   ],
   "fde": [],

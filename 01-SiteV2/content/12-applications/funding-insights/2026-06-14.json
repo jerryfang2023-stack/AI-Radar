@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-14",
     "generated_at": "2026-07-26T15:10:47.378Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-0c23a160cd811687",
       "triggered_by_event_id": "EV-5762fe51987bc5ff",
       "as_of_date": "2026-06-14",
@@ -798,7 +799,19 @@
             "4.92 亿美元 ARR 中，订阅制产品 Windsurf 与按用量计费的 Devin 的收入占比未公开，可能导致对核心智能体业务价值的误判。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "software_development_coding",
+        "market_application_id": "",
+        "product_form_id": "developer_tool",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1123,7 +1136,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:30:05.942Z"
+        "generated_at": "2026-07-26T14:30:05.942Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-5762fe51987bc5ff",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1166,7 +1187,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-51f9b7b07ecf0ffe",
       "triggered_by_event_id": "EV-44c9a50b99c76a70",
       "as_of_date": "2026-06-14",
@@ -1620,7 +1641,20 @@
             "消费AI硬件品类存在高失败率先例：Humane AI Pin和Rabbit R1等产品均以失败告终，Hark可能重复该品类的错误。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [
+          "research_discovery"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "consumer"
+        ]
       },
       "entity_links": [
         {
@@ -1804,7 +1838,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:29:37.961Z"
+        "generated_at": "2026-07-26T14:29:37.961Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-44c9a50b99c76a70",
+          "confidence": 0.96,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

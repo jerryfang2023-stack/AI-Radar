@@ -155,7 +155,7 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
   if (bundle.manifest.hardware_fact_version !== "HARDWARE-FACT-V1.0") failures.push("manifest hardware_fact_version mismatch");
   if (bundle.manifest.hardware_snapshot_version !== "HARDWARE-SNAPSHOT-V1.0") failures.push("manifest hardware_snapshot_version mismatch");
   if (bundle.manifest.monitoring_funnel_version !== "LENS-FUNNEL-V1.0") failures.push("manifest monitoring_funnel_version mismatch");
-  if (bundle.manifest.tag_version !== "TAG-V4.0") failures.push("manifest tag_version mismatch");
+  if (bundle.manifest.tag_version !== "TAG-V4.1") failures.push("manifest tag_version mismatch");
 
   const forbidden = forbiddenKeys(Object.fromEntries(Object.entries(bundle).filter(([name]) => name !== "manifest")));
   if (forbidden.length) failures.push(`forbidden judgment fields: ${forbidden.slice(0, 20).join(", ")}`);
@@ -241,7 +241,7 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
     if (!claim) failures.push(`${assertion.asset_id}: tag evidence_ref does not resolve`);
     if (assertion.asset_id !== assertion.evidence_ref) failures.push(`${assertion.asset_id}: tag asset must be the accepted claim`);
     if (claim && JSON.stringify(assertion.source_span) !== JSON.stringify(claim.source_span)) failures.push(`${assertion.asset_id}: tag source_span differs from claim span`);
-    if (assertion.taxonomy_version !== "TAG-V4.0") failures.push(`${assertion.asset_id}: tag taxonomy_version mismatch`);
+    if (assertion.taxonomy_version !== "TAG-V4.1") failures.push(`${assertion.asset_id}: tag taxonomy_version mismatch`);
   }
 
   for (const assertion of bundle.facet_assertions) {
@@ -251,7 +251,7 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
     if (!claim) failures.push(`${assertion.asset_id}: facet evidence_ref does not resolve`);
     if (assertion.asset_id !== assertion.evidence_ref) failures.push(`${assertion.asset_id}: facet asset must be the accepted claim`);
     if (claim && JSON.stringify(assertion.source_span) !== JSON.stringify(claim.source_span)) failures.push(`${assertion.asset_id}: facet source_span differs from claim span`);
-    if (assertion.taxonomy_version !== "TAG-V4.0") failures.push(`${assertion.asset_id}: facet taxonomy_version mismatch`);
+    if (assertion.taxonomy_version !== "TAG-V4.1") failures.push(`${assertion.asset_id}: facet taxonomy_version mismatch`);
   }
 
   for (const relationship of bundle.relationships) {

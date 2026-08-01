@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -24,7 +24,9 @@
       "EV-eeb05e9a870efd97"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-industry-aerospace_defense"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-08",
     "lastSeen": "2026-06-08",
@@ -57,6 +59,12 @@
             "id": "model",
             "dimensionName": "产品形态",
             "name": "模型"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "aerospace_defense",
+            "dimensionName": "行业",
+            "name": "航空航天与国防"
           }
         ],
         "entityIds": [
@@ -68,7 +76,42 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-aerospace_defense",
+      "name": "航空航天与国防",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "aerospace_defense",
+      "eventIds": [
+        "EV-14cc7f194f3e5af8",
+        "EV-056bb8c683ef60a4",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-491e7b4b506ab3e3",
+        "EV-eeb05e9a870efd97",
+        "EV-a35a3871bf36fea2",
+        "EV-ef823877347ff40f",
+        "EV-e1ebf7d63e058a39"
+      ],
+      "entityIds": [
+        "EN-9b5bd1ff5a1d7f49",
+        "EN-7d3194f79e645c42",
+        "EN-f95d5af831e91b94",
+        "EN-96eebba49dbbf422",
+        "EN-c70eca6b0f88f44d",
+        "EN-cbc62794911ff31b",
+        "EN-9f15bb7e29e191eb",
+        "EN-1a8141d5b3fef420",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-06",
+      "lastSeen": "2026-07-24"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

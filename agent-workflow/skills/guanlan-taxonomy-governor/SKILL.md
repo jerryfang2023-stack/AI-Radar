@@ -3,7 +3,7 @@ name: guanlan-taxonomy-governor
 description: Use when creating, assigning, auditing, migrating, aliasing, or deprecating TAG-V4 technical semantic tags, structured Facets, TagAssertions, and FacetAssertions. Do not use technical tags for event type, source, company, geography, industry, product form, use case, deployment, audience, evidence type, eligibility, ranking, relationship direction, opportunity, or trend judgment.
 metadata:
   guanlan:
-    version: "2.2.0"
+    version: "2.3.0"
     lane: "Data Center Taxonomy"
     status: "current sub-skill"
     order: 60
@@ -28,7 +28,7 @@ Read `agent-workflow/product/tag-taxonomy-v4.json`.
 2. Keep event type, source, entity, geography, industry, use case, product form, deployment model, target user, function, workflow, deployment stage, and evidence type as structured fields or Facets.
 3. Store all supported assertions; UI truncation is not a data rule.
 4. Assign product form, use case, industry, deployment model, and target user through `FacetAssertion`, never by adding them to technical Tags.
-5. Keep AI market category separate from product form. For Funding Insights, use the adopted CB Insights AI Infrastructure / Horizontal AI / Vertical AI framework as the first level and product form as a second-level descriptor.
+5. Keep AI market hierarchy separate from product form. For Funding Insights, use the adopted CB Insights AI 100 2026 hierarchy: Infrastructure & compute, Enterprise applications, Industry applications, or Physical AI; then use the framework's governed subcategory and infrastructure application where applicable. Product form remains an independent descriptor.
 6. Reject unknown, deprecated, default, unsupported, conflicting, excluded, or over-broad assignments.
 7. Tags and Facets cannot admit, rank, score, relate, or validate events.
 

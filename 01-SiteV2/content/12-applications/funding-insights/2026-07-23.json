@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-07-23",
     "generated_at": "2026-07-27T05:24:04.760Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 3,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-46ef94d914cd2bbb",
       "triggered_by_event_id": "EV-c7ba7b093a1a3b94",
       "as_of_date": "2026-07-23",
@@ -396,7 +397,22 @@
             "过度依赖政府与国内财团：资金来源和产业生态高度集中于日本国内，缺乏国际资本和全球科技巨头的深度参与，可能限制其全球竞争力和技术开放性。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ]
       },
       "entity_links": [
         {
@@ -498,7 +514,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:05:14.387Z"
+        "generated_at": "2026-07-26T15:05:14.387Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-c7ba7b093a1a3b94",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -538,7 +562,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-3f06ebd6979e8366",
       "triggered_by_event_id": "EV-901155ab700a7e8e",
       "as_of_date": "2026-07-23",
@@ -1166,7 +1190,17 @@
             "Stripe 已与 OpenAI 合作推出 Agentic Commerce Protocol，并联合 Mastercard 和 Visa 推动智能体支付标准，Natural 面临来自拥有庞大商户网络和开发者生态的巨头的直接竞争，其先发优势窗口可能很窄。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "monetization",
+        "product_form_id": "ai_infrastructure_software",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1423,7 +1457,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:03:17.032Z"
+        "generated_at": "2026-07-26T15:03:17.032Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-901155ab700a7e8e",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1467,7 +1509,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-f281c9debf3bb41c",
       "triggered_by_event_id": "EV-eb4858e820bf9435",
       "as_of_date": "2026-07-23",
@@ -1859,7 +1901,22 @@
             "创始人过往创业项目因高利率等宏观因素关闭，当前项目同样面临房地产市场波动的风险。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "consumer_retail",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "construction_real_estate"
+        ],
+        "target_user_ids": [
+          "consumer",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2025,7 +2082,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:02:28.192Z"
+        "generated_at": "2026-07-26T15:02:28.192Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-eb4858e820bf9435",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2065,7 +2130,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-d0ba841c66fa21b6",
       "triggered_by_event_id": "EV-0b6cfbf67ba2da31",
       "as_of_date": "2026-07-23",
@@ -2528,7 +2593,19 @@
             "公司未披露本轮融资估值，缺乏公开市场对其商业化和增长潜力的独立定价信号。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "procurement_supply_chain"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2651,7 +2728,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:02:26.509Z"
+        "generated_at": "2026-07-26T15:02:26.509Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-0b6cfbf67ba2da31",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2693,7 +2778,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-33720a6e75d508b6",
       "triggered_by_event_id": "EV-754e83c2d19005fe",
       "as_of_date": "2026-07-23",
@@ -3216,7 +3301,24 @@
             "保守的欧洲工业企业在AI采用上决策缓慢，目前最佳客户来自家族控制企业，市场拓展存在结构性阻力"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "aerospace_defense",
+          "logistics_supply_chain"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -3395,7 +3497,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:01:06.100Z"
+        "generated_at": "2026-07-26T15:01:06.100Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-754e83c2d19005fe",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

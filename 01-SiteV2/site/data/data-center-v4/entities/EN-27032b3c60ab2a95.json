@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -26,7 +26,8 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
-      "TX-industry-healthcare_life_sciences"
+      "TX-industry-healthcare_life_sciences",
+      "TX-use_case-procurement_supply_chain"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-02",
@@ -55,6 +56,12 @@
         "statusLabel": "计划中",
         "title": "休斯顿卫理公会医院将在全企业部署Midstream Health的AI智能体财务行动平台",
         "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "procurement_supply_chain",
+            "dimensionName": "应用场景",
+            "name": "采购与供应链"
+          },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
@@ -1101,6 +1108,35 @@
       ],
       "firstSeen": "2026-01-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "TX-use_case-procurement_supply_chain",
+      "name": "采购与供应链",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "procurement_supply_chain",
+      "eventIds": [
+        "EV-1a6def173f4d7c94",
+        "EV-95754eabe46fe4c3",
+        "EV-4db890779221bd9a",
+        "EV-6617850e0b014051",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-64bdeb7efae18e1b",
+        "EN-509428149b870c6f",
+        "EN-27032b3c60ab2a95",
+        "EN-96eebba49dbbf422",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-19"
     }
   ],
   "fde": [],

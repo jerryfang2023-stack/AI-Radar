@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-07-15",
     "generated_at": "2026-07-27T05:21:45.784Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 1,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-813b364f86679f0d",
       "triggered_by_event_id": "EV-df789745fb926bfd",
       "as_of_date": "2026-07-15",
@@ -245,7 +246,21 @@
             "市场已存在Ditto、Date Drop等多个类似方向的竞品，但均未突破主流市场，Overtone面临激烈的同质化竞争和用户获取挑战。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "consumer_retail",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "content_creation"
+        ],
+        "industry_ids": [
+          "media_entertainment"
+        ],
+        "target_user_ids": [
+          "consumer"
+        ]
       },
       "entity_links": [
         {
@@ -349,7 +364,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:54:21.201Z"
+        "generated_at": "2026-07-26T14:54:21.201Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-df789745fb926bfd",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -389,7 +412,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-2330a54f10e6b143",
       "triggered_by_event_id": "EV-305ec93673f4f12e",
       "as_of_date": "2026-07-15",
@@ -923,7 +946,26 @@
             "与Palantir等市值超3000亿美元的既有巨头竞争，后者已深度嵌入北约政府客户，Valarian的替代性定位可能面临采购惯性和锁定效应的阻力"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "model_deployment",
+        "product_form_id": "ai_infrastructure_software",
+        "use_case_ids": [
+          "security_operations",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "government_public_sector",
+          "financial_services",
+          "healthcare_life_sciences",
+          "aerospace_defense"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "public_sector_user"
+        ]
       },
       "entity_links": [
         {
@@ -1117,7 +1159,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:53:31.366Z"
+        "generated_at": "2026-07-26T14:53:31.366Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-305ec93673f4f12e",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1159,7 +1209,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-44ac76bc6d931f0d",
       "triggered_by_event_id": "EV-e31a6bf3c0a979f8",
       "as_of_date": "2026-07-15",
@@ -1426,7 +1476,37 @@
             "市场拥挤，ServiceNow 等大型厂商通过收购已具备自动化 IT 票证解决能力，且拥有内置的系统连接优势。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1533,7 +1613,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:53:27.889Z"
+        "generated_at": "2026-07-26T14:53:27.889Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-e31a6bf3c0a979f8",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1574,7 +1662,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-a268ddc643dc983b",
       "triggered_by_event_id": "EV-2dff32c1b6f813e4",
       "as_of_date": "2026-07-15",
@@ -1868,7 +1956,25 @@
             "公司尚未交付芯片粒样品（预计2027年），其宣称的50%成本和时间节省尚未被第三方量产验证，存在执行风险。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "product_form_id": "chip_accelerator",
+        "use_case_ids": [
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation",
+          "aerospace_defense",
+          "telecommunications",
+          "energy_utilities"
+        ],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2006,7 +2112,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:53:17.392Z"
+        "generated_at": "2026-07-26T14:53:17.392Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-2dff32c1b6f813e4",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

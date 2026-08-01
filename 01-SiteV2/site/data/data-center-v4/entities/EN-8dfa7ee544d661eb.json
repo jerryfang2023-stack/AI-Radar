@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -24,7 +24,9 @@
       "EV-59f4561c5243eb98"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-use_case-design_engineering"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-23",
     "lastSeen": "2026-05-23",
@@ -51,7 +53,14 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Illoca 获1300万美元种子轮融资，由Bessemer Venture领投",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "design_engineering",
+            "dimensionName": "应用场景",
+            "name": "设计与工程"
+          }
+        ],
         "entityIds": [
           "EN-8dfa7ee544d661eb",
           "EN-96eebba49dbbf422"
@@ -62,7 +71,28 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-design_engineering",
+      "name": "设计与工程",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "design_engineering",
+      "eventIds": [
+        "EV-4596181c26d7f672",
+        "EV-59f4561c5243eb98"
+      ],
+      "entityIds": [
+        "EN-4458e908dd9a5440",
+        "EN-8dfa7ee544d661eb",
+        "EN-96eebba49dbbf422"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-05-23"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

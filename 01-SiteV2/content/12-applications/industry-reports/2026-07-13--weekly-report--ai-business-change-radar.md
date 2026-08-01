@@ -6,6 +6,13 @@ window: 2026-07-06 to 2026-07-12
 content_type: weekly-report
 slug: ai-business-change-radar
 status: published
+taxonomy_version: TAG-V4.1
+technical_tag_ids: []
+market_category_ids: []
+market_subcategory_ids: []
+product_form_ids: []
+use_case_ids: []
+industry_ids: []
 ---
 
 # AI Coding 越便宜，软件需求反而越多：真正稀缺的是交付责任

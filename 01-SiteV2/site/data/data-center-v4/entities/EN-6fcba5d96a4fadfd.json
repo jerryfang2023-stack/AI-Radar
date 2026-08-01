@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -54,11 +54,11 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
-      "TX-use_case-robotics_automation",
+      "TX-use_case-physical_automation",
       "TX-technology-code_generation",
       "TX-industry-manufacturing",
       "TX-use_case-software_development",
-      "TX-use_case-enterprise_operations",
+      "TX-use_case-productivity_enterprise_workflows",
       "TX-technology-long_context",
       "TX-technology-tool_use"
     ],
@@ -196,9 +196,9 @@
           },
           {
             "dimensionId": "use_case",
-            "id": "enterprise_operations",
+            "id": "productivity_enterprise_workflows",
             "dimensionName": "应用场景",
-            "name": "企业运营自动化"
+            "name": "生产力与企业工作流"
           },
           {
             "dimensionId": "technology",
@@ -328,9 +328,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "ai_application",
+            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "AI 应用"
+            "name": "终端 AI 应用"
           }
         ],
         "entityIds": [
@@ -472,9 +472,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "entityIds": [
@@ -587,14 +587,8 @@
         "title": "AethexAI 获 300 万美元种子轮融资，助力非洲和中东企业级语音 AI 规模化",
         "displayTags": [
           {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          },
-          {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           }
@@ -618,9 +612,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "ai_application",
+            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "AI 应用"
+            "name": "终端 AI 应用"
           }
         ],
         "entityIds": [
@@ -639,14 +633,8 @@
         "title": "前高盛与Meta创始人筹集300万美元，打造全球科技巨头忽视的语音AI基础设施",
         "displayTags": [
           {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          },
-          {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           }
@@ -1781,11 +1769,11 @@
       "lastSeen": "2027-09-30"
     },
     {
-      "id": "TX-use_case-robotics_automation",
-      "name": "机器人与物理自动化",
+      "id": "TX-use_case-physical_automation",
+      "name": "物理自动化",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "robotics_automation",
+      "valueId": "physical_automation",
       "eventIds": [
         "EV-eb881f5de456b59a",
         "EV-fcf3c464260b6730",
@@ -2324,11 +2312,11 @@
       "lastSeen": "2026-07-31"
     },
     {
-      "id": "TX-use_case-enterprise_operations",
-      "name": "企业运营自动化",
+      "id": "TX-use_case-productivity_enterprise_workflows",
+      "name": "生产力与企业工作流",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "enterprise_operations",
+      "valueId": "productivity_enterprise_workflows",
       "eventIds": [
         "EV-f6a72cddbda748b3",
         "EV-6e06cfa28f76a76f",
@@ -2346,6 +2334,7 @@
         "EV-57d3b7aa1a2f0fda",
         "EV-5b193a038ab4ea22",
         "EV-3a7128e2d7ff149e",
+        "EV-333851b077b606c8",
         "EV-779b733110003284",
         "EV-6364cfadff0d1d30",
         "EV-f50752717e2a8536"
@@ -2378,6 +2367,8 @@
         "EN-f65bb77682b83476",
         "EN-e395d03e988d30a9",
         "EN-0dba03107c52ed3e",
+        "EN-047364b9be67f665",
+        "EN-09c344df70df9660",
         "EN-51a5b811990f2a2a",
         "EN-89e28a570dce8b18",
         "EN-3673c8b4dba7409e",

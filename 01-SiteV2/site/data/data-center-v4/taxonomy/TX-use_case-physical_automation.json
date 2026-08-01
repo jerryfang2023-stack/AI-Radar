@@ -4,18 +4,18 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
     "quarantinedEventCount": 13
   },
   "node": {
-    "id": "TX-use_case-robotics_automation",
-    "name": "机器人与物理自动化",
+    "id": "TX-use_case-physical_automation",
+    "name": "物理自动化",
     "nodeType": "use_case",
     "typeLabel": "应用场景",
-    "valueId": "robotics_automation",
+    "valueId": "physical_automation",
     "eventIds": [
       "EV-eb881f5de456b59a",
       "EV-fcf3c464260b6730",
@@ -188,6 +188,9 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -199,9 +202,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -217,9 +220,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
@@ -231,9 +234,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [],
@@ -275,13 +278,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -297,17 +303,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -351,13 +357,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -367,17 +376,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -431,26 +440,29 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "enterprise_operations",
+            "id": "productivity_enterprise_workflows",
             "dimensionName": "应用场景",
-            "name": "企业运营自动化"
+            "name": "生产力与企业工作流"
           },
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -466,41 +478,41 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "enterprise_platform",
+          "id": "enterprise_software_platform",
           "dimensionName": "产品形态",
-          "name": "企业 AI 平台"
+          "name": "企业软件平台"
         },
         {
           "dimensionId": "use_case",
-          "id": "enterprise_operations",
+          "id": "productivity_enterprise_workflows",
           "dimensionName": "应用场景",
-          "name": "企业运营自动化"
+          "name": "生产力与企业工作流"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "enterprise_platform",
+          "id": "enterprise_software_platform",
           "dimensionName": "产品形态",
-          "name": "企业 AI 平台"
+          "name": "企业软件平台"
         },
         {
           "dimensionId": "use_case",
-          "id": "enterprise_operations",
+          "id": "productivity_enterprise_workflows",
           "dimensionName": "应用场景",
-          "name": "企业运营自动化"
+          "name": "生产力与企业工作流"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -567,18 +579,15 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
             "id": "model",
             "dimensionName": "产品形态",
             "name": "模型"
-          },
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
           },
           {
             "dimensionId": "product_form",
@@ -590,9 +599,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -639,9 +648,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -654,12 +663,6 @@
           "id": "model",
           "dimensionName": "产品形态",
           "name": "模型"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
         },
         {
           "dimensionId": "product_form",
@@ -695,21 +698,15 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
-          "dimensionId": "product_form",
           "id": "chip_accelerator",
           "dimensionName": "产品形态",
           "name": "芯片与加速器"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -789,13 +786,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -812,9 +812,9 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -826,9 +826,9 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -878,20 +878,23 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -901,29 +904,29 @@
       "classifications": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [],
@@ -957,20 +960,23 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -980,29 +986,29 @@
       "classifications": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -1040,19 +1046,22 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           },
           {
             "dimensionId": "use_case",
-            "id": "enterprise_operations",
+            "id": "productivity_enterprise_workflows",
             "dimensionName": "应用场景",
-            "name": "企业运营自动化"
+            "name": "生产力与企业工作流"
           }
         ],
         "industry": [],
@@ -1062,29 +1071,29 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "use_case",
-          "id": "enterprise_operations",
+          "id": "productivity_enterprise_workflows",
           "dimensionName": "应用场景",
-          "name": "企业运营自动化"
+          "name": "生产力与企业工作流"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "use_case",
-          "id": "enterprise_operations",
+          "id": "productivity_enterprise_workflows",
           "dimensionName": "应用场景",
-          "name": "企业运营自动化"
+          "name": "生产力与企业工作流"
         }
       ],
       "entityIds": [
@@ -1137,20 +1146,23 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "compute_system",
+            "id": "ai_compute_system",
             "dimensionName": "产品形态",
-            "name": "计算系统"
+            "name": "AI 计算系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -1172,29 +1184,29 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "product_form",
-          "id": "compute_system",
+          "id": "ai_compute_system",
           "dimensionName": "产品形态",
-          "name": "计算系统"
+          "name": "AI 计算系统"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "compute_system",
+          "id": "ai_compute_system",
           "dimensionName": "产品形态",
-          "name": "计算系统"
+          "name": "AI 计算系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -1242,13 +1254,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -1258,17 +1273,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -1308,20 +1323,23 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -1331,29 +1349,29 @@
       "classifications": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -1393,13 +1411,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -1409,17 +1430,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -1462,13 +1483,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -1485,9 +1509,9 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -1499,9 +1523,9 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -1547,13 +1571,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -1570,9 +1597,9 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -1584,9 +1611,9 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -1635,13 +1662,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -1664,9 +1694,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -1678,9 +1708,9 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -1741,13 +1771,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -1763,17 +1796,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -1832,13 +1865,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -1861,9 +1897,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "deployment_model",
@@ -1875,9 +1911,9 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -1963,13 +1999,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -1997,17 +2036,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -2095,13 +2134,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -2123,17 +2165,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -2194,6 +2236,9 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -2205,9 +2250,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -2229,9 +2274,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
@@ -2243,9 +2288,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -2295,20 +2340,23 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -2318,29 +2366,29 @@
       "classifications": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -2376,52 +2424,36 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "technology",
-            "dimensionName": "行业",
-            "name": "科技与软件"
-          }
-        ],
+        "industry": [],
         "deployment_model": [],
         "target_user": []
       },
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "technology",
-          "dimensionName": "行业",
-          "name": "科技与软件"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "technology",
-          "dimensionName": "行业",
-          "name": "科技与软件"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -2485,13 +2517,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -2513,17 +2548,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -2586,13 +2621,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -2621,17 +2659,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -2696,6 +2734,9 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -2707,9 +2748,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -2731,9 +2772,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
@@ -2745,9 +2786,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -2804,6 +2845,9 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -2813,17 +2857,17 @@
           },
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -2845,15 +2889,15 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
@@ -2865,15 +2909,15 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -2936,13 +2980,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -2964,17 +3011,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -3041,13 +3088,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3069,17 +3119,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -3135,13 +3185,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3151,17 +3204,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -3201,13 +3254,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3217,17 +3273,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -3278,20 +3334,23 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3307,29 +3366,29 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -3373,13 +3432,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3389,17 +3451,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -3435,13 +3497,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3451,17 +3516,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -3512,13 +3577,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3534,17 +3602,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -3598,13 +3666,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -3614,17 +3685,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -3677,6 +3748,9 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -3686,17 +3760,17 @@
           },
           {
             "dimensionId": "product_form",
-            "id": "data_infrastructure",
+            "id": "ai_infrastructure_software",
             "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
+            "name": "AI 基础设施软件"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -3719,9 +3793,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -3737,9 +3811,9 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "data_infrastructure",
+          "id": "ai_infrastructure_software",
           "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
+          "name": "AI 基础设施软件"
         }
       ],
       "displayTags": [
@@ -3751,15 +3825,15 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "data_infrastructure",
+          "id": "ai_infrastructure_software",
           "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
+          "name": "AI 基础设施软件"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -3843,13 +3917,10 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          },
           {
             "dimensionId": "product_form",
             "id": "model",
@@ -3860,9 +3931,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -3902,12 +3973,6 @@
           "name": "多模态"
         },
         {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
           "dimensionId": "industry",
           "id": "healthcare_life_sciences",
           "dimensionName": "行业",
@@ -3933,18 +3998,12 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
         {
           "dimensionId": "product_form",
           "id": "model",
@@ -3953,9 +4012,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -4029,6 +4088,9 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -4040,9 +4102,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4052,9 +4114,9 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "product_form",
@@ -4072,9 +4134,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -4151,6 +4213,9 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -4162,9 +4227,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4180,9 +4245,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "product_form",
@@ -4200,9 +4265,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -4256,13 +4321,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4272,17 +4340,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -4332,13 +4400,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4348,17 +4419,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -4411,20 +4482,23 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -4447,15 +4521,15 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "industry",
@@ -4467,15 +4541,15 @@
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -4538,20 +4612,23 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4567,29 +4644,29 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -4643,13 +4720,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4659,17 +4739,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -4720,12 +4800,15 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           },
           {
             "dimensionId": "product_form",
@@ -4737,9 +4820,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4749,15 +4832,15 @@
       "classifications": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "product_form",
@@ -4769,9 +4852,9 @@
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "product_form",
@@ -4781,9 +4864,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -4832,20 +4915,23 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "robot",
+            "id": "robotic_system",
             "dimensionName": "产品形态",
-            "name": "机器人"
+            "name": "机器人系统"
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -4861,29 +4947,29 @@
         },
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "robot",
+          "id": "robotic_system",
           "dimensionName": "产品形态",
-          "name": "机器人"
+          "name": "机器人系统"
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -4934,13 +5020,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [
@@ -4970,9 +5059,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "target_user",
@@ -4990,9 +5079,9 @@
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -5069,13 +5158,16 @@
         }
       ],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -5091,17 +5183,17 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         },
         {
           "dimensionId": "technology",
@@ -5139,6 +5231,9 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
           {
             "dimensionId": "product_form",
@@ -5150,9 +5245,9 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -5168,9 +5263,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
@@ -5182,9 +5277,9 @@
         },
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -5234,13 +5329,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -5250,17 +5348,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -5302,13 +5400,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -5318,17 +5419,17 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [
@@ -5369,20 +5470,16 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          }
-        ],
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "industry": [],
@@ -5391,30 +5488,18 @@
       },
       "classifications": [
         {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "displayTags": [
         {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
           "dimensionId": "use_case",
-          "id": "robotics_automation",
+          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
+          "name": "物理自动化"
         }
       ],
       "entityIds": [],
@@ -5442,7 +5527,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-21",
@@ -5463,7 +5548,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
@@ -5500,9 +5585,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-long_context",
@@ -5531,8 +5615,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-physical_automation",
+        "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -5688,24 +5772,27 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
-        "TX-industry-professional_services",
+        "TX-use_case-procurement_supply_chain",
+        "TX-industry-legal_services",
         "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-industry-professional_services",
         "TX-technology-fine_tuning",
+        "TX-use_case-design_engineering",
         "TX-technology-image_generation",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
@@ -5874,27 +5961,27 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
+        "TX-industry-agriculture",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-human_in_loop",
@@ -5946,7 +6033,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -5977,7 +6064,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -6011,7 +6098,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
@@ -6046,7 +6133,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
         "TX-technology-on_device"
       ],
@@ -6078,7 +6165,7 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
@@ -6100,7 +6187,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-30",
@@ -6280,17 +6367,17 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
+        "TX-industry-aerospace_defense",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -6343,8 +6430,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-physical_automation",
+        "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
@@ -6365,7 +6452,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
@@ -6386,7 +6473,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
@@ -6407,7 +6494,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-26",
@@ -6428,7 +6515,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-22",
@@ -6449,7 +6536,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -6472,7 +6559,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -6511,8 +6598,8 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
@@ -6569,8 +6656,8 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -6578,7 +6665,7 @@
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-image_generation",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
@@ -6613,7 +6700,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-on_device"
       ],
       "relatedEntityIds": [],
@@ -6637,7 +6724,7 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
@@ -6666,7 +6753,7 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -6692,7 +6779,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -6719,7 +6806,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -6768,9 +6855,8 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-open_weights",
         "TX-technology-human_in_loop"
@@ -6800,8 +6886,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-industry-technology"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -6822,8 +6907,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-industry-technology"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -6844,7 +6928,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -6868,7 +6952,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -6892,7 +6976,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-20",
@@ -6913,7 +6997,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [
         "EN-68dce3237e10d795"
@@ -6936,7 +7020,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [
         "EN-e2c64fbbaf48eeb2"
@@ -6960,7 +7044,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
@@ -6981,7 +7065,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
@@ -7006,7 +7090,7 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -7067,7 +7151,7 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-long_context",
@@ -7099,7 +7183,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -7123,7 +7207,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
@@ -7146,7 +7230,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
@@ -7176,7 +7260,7 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [
@@ -7205,7 +7289,7 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-technology-on_device"
       ],
@@ -7231,7 +7315,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -7289,10 +7373,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
+        "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce"
       ],
@@ -7316,7 +7401,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
@@ -7339,7 +7424,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-16",
@@ -7360,7 +7445,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -7396,7 +7481,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
@@ -7425,7 +7510,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -7449,7 +7534,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-11",
@@ -7470,7 +7555,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-11",
@@ -7491,7 +7576,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -7513,7 +7598,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [],
@@ -7535,7 +7620,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [
@@ -7559,7 +7644,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-21",
@@ -7609,11 +7694,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-long_context",
         "TX-technology-tool_use"
       ],
@@ -7640,7 +7725,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-19",
@@ -7663,7 +7748,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
@@ -7685,7 +7770,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
@@ -7975,26 +8060,27 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
-        "TX-industry-professional_services",
+        "TX-industry-legal_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
+        "TX-industry-professional_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",
@@ -8047,7 +8133,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
@@ -8071,7 +8157,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
@@ -8092,7 +8178,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
@@ -8115,7 +8201,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
@@ -8136,7 +8222,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-06",
@@ -8263,23 +8349,24 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
+        "TX-use_case-procurement_supply_chain",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-industry-professional_services",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",

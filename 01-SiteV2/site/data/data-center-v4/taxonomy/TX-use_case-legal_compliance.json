@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1759,
+    "quarantinedEventCount": 13
+  },
+  "node": {
+    "id": "TX-use_case-legal_compliance",
+    "name": "法律与合规",
+    "nodeType": "use_case",
+    "typeLabel": "应用场景",
+    "valueId": "legal_compliance",
+    "eventIds": [
+      "EV-c5bebc78fa35d074",
+      "EV-aa7cf8ee6c875f08"
+    ],
+    "entityIds": [
+      "EN-4e358c403850a88a"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-06-21",
+    "lastSeen": "2026-07-28"
+  },
+  "events": [
+    {
+      "id": "EV-c5bebc78fa35d074",
+      "dataDate": "2026-06-21",
+      "date": "2026-06-21",
+      "updatedDate": "2026-06-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "21岁MIT辍学生以3亿美元估值融资3200万美元，由Insight领投",
+      "originalTitle": "21-year-old MIT dropouts raise $32M at $300M valuation led by Insight",
+      "subject": "21-year-old MIT dropouts",
+      "action": "raise",
+      "object": "$32M at $300M valuation led by Insight",
+      "metrics": [
+        "$32M",
+        "$300M",
+        "$3 million",
+        "$32 million",
+        "$300 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "legal_compliance",
+            "dimensionName": "应用场景",
+            "name": "法律与合规"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "legal_compliance",
+          "dimensionName": "应用场景",
+          "name": "法律与合规"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "legal_compliance",
+          "dimensionName": "应用场景",
+          "name": "法律与合规"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2025/07/22/21-year-old-mit-dropouts-raise-32m-at-300m-valuation-led-by-insight",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-aa7cf8ee6c875f08",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-28",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cognizant 扩大与诺华长期合作，以AI智能体变革全球IT运营",
+      "originalTitle": "Cognizant Expands Long-Standing Partnership with Novartis to Transform Global IT Operations with Agentic AI",
+      "subject": "Cognizant Expands Long-Standing",
+      "action": "Partnership",
+      "object": "with Novartis to Transform Global IT Operations with Agentic AI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_software_platform",
+            "dimensionName": "产品形态",
+            "name": "企业软件平台"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "legal_compliance",
+            "dimensionName": "应用场景",
+            "name": "法律与合规"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "legal_compliance",
+          "dimensionName": "应用场景",
+          "name": "法律与合规"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_software_platform",
+          "dimensionName": "产品形态",
+          "name": "企业软件平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_software_platform",
+          "dimensionName": "产品形态",
+          "name": "企业软件平台"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "legal_compliance",
+          "dimensionName": "应用场景",
+          "name": "法律与合规"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-4e358c403850a88a"
+      ],
+      "entityNames": [
+        "Cognizant Expands Long-Standing"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.cognizant.com/2026-07-27-Cognizant-Expands-Long-Standing-Partnership-with-Novartis-to-Transform-Global-IT-Operations-with-Agentic-AI",
+      "publisher": "news.cognizant.com"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-4e358c403850a88a",
+      "name": "Cognizant Expands Long-Standing",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-aa7cf8ee6c875f08"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-legal_compliance"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-28"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

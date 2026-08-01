@@ -68,7 +68,9 @@ function main() {
   const technicalTaggedEvents = [...eventClaimRefs.values()].filter((refs) => refs.some((id) => claimTags.has(id))).length;
   const facetedEvents = [...eventClaimRefs.values()].filter((refs) => refs.some((id) => claimFacets.has(id))).length;
   const activeTags = taxonomy.tags.filter((item) => item.status === "active").map((item) => item.id);
-  const activeFacetValues = taxonomy.facets.flatMap((facet) => facet.values.filter((item) => item.status === "active").map((item) => `${facet.id}.${item.id}`));
+  const activeFacetValues = taxonomy.facets
+    .filter((facet) => facet.assignment_mode !== "reviewed_company_only")
+    .flatMap((facet) => facet.values.filter((item) => item.status === "active").map((item) => `${facet.id}.${item.id}`));
   const unusedTags = activeTags.filter((id) => !tagCounts.has(id));
   const unusedFacetValues = activeFacetValues.filter((id) => !facetCounts.has(id));
   for (const [eventId, refs] of eventClaimRefs) {
@@ -83,7 +85,7 @@ function main() {
   if (technicalTaggedEvents && dominantTag[1] / technicalTaggedEvents > 0.75) warnings.push(`technical tag event concentration is high: ${dominantTag[0]} ${(dominantTag[1] / technicalTaggedEvents * 100).toFixed(1)}%`);
 
   const lines = [
-    "# TAG-V4.0 Reprojection and Coverage Audit",
+    "# TAG-V4.1 Reprojection and Coverage Audit",
     "",
     `- generated_at: ${new Date().toISOString()}`,
     `- taxonomy_status: ${validation.ok ? "passed" : "failed"}`,

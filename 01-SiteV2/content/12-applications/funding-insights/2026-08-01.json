@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-08-01",
     "generated_at": "2026-08-01T04:17:50.218Z",
     "trigger": "verified_daily_funding_events",
@@ -13,11 +13,12 @@
       "auto_published": 1,
       "blocked": 0,
       "pending": 0
-    }
+    },
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-77dc755d73d7a45c",
       "triggered_by_event_id": "EV-00514c4ffc2e3cd3",
       "as_of_date": "2026-08-01",
@@ -307,7 +308,20 @@
             "基模厂商未来可能内化记忆能力，存在被上游整合的风险"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "product_form_id": "model_api_service",
+        "use_case_ids": [
+          "knowledge_search",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -379,7 +393,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.2",
-        "generated_at": "2026-08-01T04:17:50.175Z"
+        "generated_at": "2026-08-01T04:17:50.175Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-00514c4ffc2e3cd3",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

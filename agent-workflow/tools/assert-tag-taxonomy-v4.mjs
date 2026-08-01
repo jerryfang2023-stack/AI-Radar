@@ -10,15 +10,41 @@ const taxonomyPath = path.join(root, "agent-workflow/product/tag-taxonomy-v4.jso
 const STRUCTURED_DIMENSIONS = new Set([
   "event_type", "source_type", "geography", "region", "entity", "company", "customer",
   "industry", "organization_function", "function", "workflow", "use_case", "product_form",
-  "deployment_model", "deployment_stage", "target_user", "evidence_type"
+  "deployment_model", "deployment_stage", "target_user", "evidence_type",
+  "ai_market_category", "ai_market_subcategory", "ai_market_application",
 ]);
 const REQUIRED_FACETS = new Set([
   "ai_market_category",
+  "ai_market_subcategory",
+  "ai_market_application",
   "product_form",
   "use_case",
   "industry",
   "deployment_model",
   "target_user",
+]);
+const REMOVED_FACET_VALUES = new Set([
+  "ai_market_category.ai_infrastructure",
+  "ai_market_category.horizontal_ai",
+  "ai_market_category.vertical_ai",
+  "product_form.api_service",
+  "product_form.ai_application",
+  "product_form.enterprise_platform",
+  "product_form.data_infrastructure",
+  "product_form.security_product",
+  "product_form.robot",
+  "product_form.compute_system",
+  "product_form.compute_service",
+  "use_case.customer_service",
+  "use_case.sales_marketing",
+  "use_case.research_science",
+  "use_case.cybersecurity",
+  "use_case.enterprise_operations",
+  "use_case.robotics_automation",
+  "industry.technology",
+  "target_user.enterprise",
+  "target_user.government",
+  "target_user.researcher_education",
 ]);
 
 function normalize(value) {
@@ -41,7 +67,7 @@ function validateTerms(owner, definition, failures) {
 
 export function validateTaxonomy(taxonomy) {
   const failures = [];
-  if (taxonomy.taxonomy_version !== "TAG-V4.0") failures.push("taxonomy_version must be TAG-V4.0");
+  if (taxonomy.taxonomy_version !== "TAG-V4.1") failures.push("taxonomy_version must be TAG-V4.1");
   if (taxonomy.assignment_contract?.source !== "accepted_claim_only") failures.push("assignment source must be accepted_claim_only");
   if (taxonomy.assignment_contract?.evidence_ref_required !== true || taxonomy.assignment_contract?.source_span_required !== true) failures.push("evidence_ref and source_span must be required");
   if (taxonomy.assignment_contract?.ranking_input !== false || taxonomy.assignment_contract?.eligibility_input !== false) failures.push("taxonomy cannot be a ranking or eligibility input");
@@ -88,6 +114,7 @@ export function validateTaxonomy(taxonomy) {
     for (const value of facet.values || []) {
       facetValueCount += 1;
       if (!/^[a-z][a-z0-9_]*$/u.test(value.id || "")) failures.push(`${facet.id}: invalid value id ${value.id || "missing"}`);
+      if (REMOVED_FACET_VALUES.has(`${facet.id}.${value.id}`)) failures.push(`${facet.id}.${value.id}: removed V4.0 value cannot remain active`);
       if (valueIds.has(value.id)) failures.push(`${facet.id}: duplicate value id ${value.id}`);
       valueIds.add(value.id);
       const name = normalize(value.name);
@@ -99,6 +126,16 @@ export function validateTaxonomy(taxonomy) {
     if (!valueIds.size) failures.push(`${facet.id}: at least one value is required`);
   }
   for (const required of REQUIRED_FACETS) if (!facetIds.has(required)) failures.push(`required facet missing: ${required}`);
+  const marketFacets = new Map((taxonomy.facets || []).map((facet) => [facet.id, facet]));
+  for (const facetId of ["ai_market_category", "ai_market_subcategory", "ai_market_application"]) {
+    const framework = marketFacets.get(facetId)?.reference_framework;
+    if (!framework?.url?.includes("cbinsights.com/research/report/artificial-intelligence-top-startups-2026")) {
+      failures.push(`${facetId}: CB Insights AI 100 2026 reference is required`);
+    }
+  }
+  if (!marketFacets.get("industry")?.reference_framework?.url?.includes("support.crunchbase.com")) {
+    failures.push("industry: Crunchbase industry reference is required");
+  }
 
   return {
     ok: failures.length === 0,

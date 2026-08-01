@@ -24,14 +24,17 @@
 11. `primary_product_form`
     - Pass when a new card explicitly selects one active product form from what customers buy or users directly use.
     - Fail when a company is classified by an enabling model or chip, a privacy feature, a target industry, or a future robot use case.
-12. `reviewed_product_form_precedence`
-    - Pass when card-explicit classification wins first, a governed historical decision wins second, and the keyword classifier is used only when neither exists.
+12. `source_classification_required`
+    - Pass when every generated and migrated source card persists its explicit governed classification.
+    - Fail when the public builder guesses a missing classification from keywords, sector text, product form, or a compatibility ledger.
 13. `compute_layer_separation`
-   - Pass when hosted GPU or inference capacity is `compute_service`, physical compute/network systems are `compute_system`, and model-serving or optimization software is `data_infrastructure`.
+   - Pass when hosted GPU or inference capacity is `compute_cloud_service`, physical compute/network systems are `ai_compute_system`, and model-serving or optimization software is `ai_infrastructure_software`.
 14. `standard_market_category`
-   - Pass when the public first level is exactly AI Infrastructure, Horizontal AI, or Vertical AI, following the CB Insights AI 100 core-offering framework.
+   - Pass when the public first level is exactly Infrastructure & compute, Enterprise applications, Industry applications, or Physical AI, following CB Insights AI 100 2026.
    - Fail when product forms such as model, cloud service, enterprise platform, or application are displayed as peer market categories.
 15. `two_level_classification`
-   - Pass when market category answers where the company sits in the AI market and product form separately answers what customers buy or users use.
+   - Pass when category/subcategory/application answer where the company sits in the external market hierarchy and product form separately answers what customers buy or users use.
 16. `reviewed_company_round_merge`
    - Pass when accepted organization aliases are applied before company-round aggregation, source events are preserved, and Team Aligned Inc. / Aligned produces one Series B card.
+17. `physical_ai_boundary`
+   - Fail when a world model, simulation model, or future robotics plan is classified as Physical AI without evidence of a current robot, vehicle, or autonomous machine product.

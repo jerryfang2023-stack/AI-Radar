@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -27,7 +27,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-use_case-cybersecurity"
+      "TX-use_case-security_operations"
     ],
     "relatedEntityIds": [
       "EN-bbdefa2950f49882"
@@ -62,9 +62,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           }
         ],
         "entityIds": [
@@ -251,17 +251,17 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
+        "TX-industry-aerospace_defense",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -324,11 +324,11 @@
   ],
   "taxonomyNodes": [
     {
-      "id": "TX-use_case-cybersecurity",
-      "name": "网络安全",
+      "id": "TX-use_case-security_operations",
+      "name": "安全运营",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "cybersecurity",
+      "valueId": "security_operations",
       "eventIds": [
         "EV-976c03b6664d3a3b",
         "EV-9ddcfd9f61c25158",

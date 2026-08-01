@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -26,8 +26,7 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
-      "TX-industry-technology",
-      "TX-use_case-enterprise_operations"
+      "TX-use_case-productivity_enterprise_workflows"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
@@ -58,21 +57,15 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "enterprise_operations",
+            "id": "productivity_enterprise_workflows",
             "dimensionName": "应用场景",
-            "name": "企业运营自动化"
+            "name": "生产力与企业工作流"
           },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "technology",
-            "dimensionName": "行业",
-            "name": "科技与软件"
           }
         ],
         "entityIds": [
@@ -997,81 +990,11 @@
       "lastSeen": "2027-09-30"
     },
     {
-      "id": "TX-industry-technology",
-      "name": "科技与软件",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "technology",
-      "eventIds": [
-        "EV-136b2edc9b9f3be8",
-        "EV-cf6e7a2edad82c6f",
-        "EV-e1e0a38da122caed",
-        "EV-b563d5cf0f12119e",
-        "EV-220be2fe413b8cfa",
-        "EV-ebe9ed3158df619b",
-        "EV-6cb8979f92cf74ce",
-        "EV-618e5729145025e4",
-        "EV-2ca230a3dec71ba6",
-        "EV-ed388875bc004add",
-        "EV-8abf5adc3e72fbb8",
-        "EV-afcefb5d86a2db45",
-        "EV-2bbbe9f38c3d66f0",
-        "EV-9852a10590030da9",
-        "EV-ba89f9414be0b041",
-        "EV-42f0dcfbb70ce73e",
-        "EV-97fecfb2f20f582f",
-        "EV-0eef30387327e73f",
-        "EV-bf8086947a2639d4"
-      ],
-      "entityIds": [
-        "EN-ab9b29074a980e4b",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
-        "EN-382635c9325bf327",
-        "EN-3db1f560db626918",
-        "EN-8f71c4871a160172",
-        "EN-7f871cbf905f6e0c",
-        "EN-3c567a300232d3bb",
-        "EN-10535ca23448d8bb",
-        "EN-96eebba49dbbf422",
-        "EN-4de4a07ad031569c",
-        "EN-abb32701117d50a9",
-        "EN-bbdefa2950f49882",
-        "EN-b4a139ced5659a4e",
-        "EN-0decbc3b45f73b2b",
-        "EN-45cbca5f78f1ef44",
-        "EN-fc77f762a5c2afc1",
-        "EN-1e0c30e583ebb8be",
-        "EN-8d4321d936320802",
-        "EN-28d0bd981118a907",
-        "EN-9fbf261b62c1d7c0",
-        "EN-6fa4c159cb389f0f",
-        "EN-240389f4b730bad4",
-        "EN-8c9ab5b09bf138fc",
-        "EN-f53212e480f217e1",
-        "EN-ba728f8ca730921f",
-        "EN-71f3ed83fd5a3ed9",
-        "EN-e3c189c04bf15baf",
-        "EN-3c6d89173e6636d7",
-        "EN-31f61ed3e6e210c5",
-        "EN-ea3bd73e2b506e00",
-        "EN-916a98f0fa2a39af"
-      ],
-      "fdeIds": [
-        "FDE-d08fed45110ab44b"
-      ],
-      "hardwareIds": [
-        "HW-e11208b1ddb2dc49"
-      ],
-      "firstSeen": "2026-02-10",
-      "lastSeen": "2026-07-29"
-    },
-    {
-      "id": "TX-use_case-enterprise_operations",
-      "name": "企业运营自动化",
+      "id": "TX-use_case-productivity_enterprise_workflows",
+      "name": "生产力与企业工作流",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "enterprise_operations",
+      "valueId": "productivity_enterprise_workflows",
       "eventIds": [
         "EV-f6a72cddbda748b3",
         "EV-6e06cfa28f76a76f",
@@ -1089,6 +1012,7 @@
         "EV-57d3b7aa1a2f0fda",
         "EV-5b193a038ab4ea22",
         "EV-3a7128e2d7ff149e",
+        "EV-333851b077b606c8",
         "EV-779b733110003284",
         "EV-6364cfadff0d1d30",
         "EV-f50752717e2a8536"
@@ -1121,6 +1045,8 @@
         "EN-f65bb77682b83476",
         "EN-e395d03e988d30a9",
         "EN-0dba03107c52ed3e",
+        "EN-047364b9be67f665",
+        "EN-09c344df70df9660",
         "EN-51a5b811990f2a2a",
         "EN-89e28a570dce8b18",
         "EN-3673c8b4dba7409e",

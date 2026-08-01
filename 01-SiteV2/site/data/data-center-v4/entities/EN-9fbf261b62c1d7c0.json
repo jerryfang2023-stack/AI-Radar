@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -131,23 +131,24 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
-      "TX-use_case-customer_service",
-      "TX-use_case-cybersecurity",
-      "TX-use_case-robotics_automation",
+      "TX-use_case-customer_support",
+      "TX-use_case-security_operations",
+      "TX-use_case-physical_automation",
       "TX-technology-code_generation",
       "TX-industry-manufacturing",
       "TX-technology-computer_use",
-      "TX-industry-technology",
       "TX-use_case-software_development",
       "TX-industry-financial_services",
       "TX-industry-healthcare_life_sciences",
-      "TX-use_case-enterprise_operations",
+      "TX-use_case-productivity_enterprise_workflows",
       "TX-industry-retail_ecommerce",
       "TX-industry-automotive_transportation",
+      "TX-use_case-procurement_supply_chain",
       "TX-technology-long_context",
       "TX-technology-mixture_of_experts",
       "TX-use_case-data_analysis",
       "TX-technology-on_device",
+      "TX-industry-professional_services",
       "TX-technology-open_weights",
       "TX-technology-model_context_protocol",
       "TX-technology-image_generation",
@@ -326,7 +327,7 @@
           },
           {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           },
@@ -371,9 +372,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
           },
           {
             "dimensionId": "technology",
@@ -401,9 +402,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "enterprise_operations",
+            "id": "productivity_enterprise_workflows",
             "dimensionName": "应用场景",
-            "name": "企业运营自动化"
+            "name": "生产力与企业工作流"
           },
           {
             "dimensionId": "technology",
@@ -482,9 +483,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           },
           {
             "dimensionId": "technology",
@@ -533,9 +534,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           }
         ],
         "entityIds": [
@@ -603,9 +604,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           },
           {
             "dimensionId": "technology",
@@ -634,9 +635,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           },
           {
             "dimensionId": "technology",
@@ -665,9 +666,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           }
         ],
         "entityIds": [
@@ -689,9 +690,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           },
           {
             "dimensionId": "technology",
@@ -975,9 +976,9 @@
           },
           {
             "dimensionId": "product_form",
-            "id": "ai_application",
+            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "AI 应用"
+            "name": "终端 AI 应用"
           }
         ],
         "entityIds": [
@@ -1093,14 +1094,7 @@
         "status": "announced",
         "statusLabel": "已公布",
         "title": "微软与Mistral达成数十亿美元协议，在欧洲共建AI基础设施",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          }
-        ],
+        "displayTags": [],
         "entityIds": [
           "EN-9fbf261b62c1d7c0",
           "EN-bd52a4943ae83155"
@@ -1134,9 +1128,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           }
         ],
         "entityIds": [
@@ -1276,9 +1270,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           }
         ],
         "entityIds": [
@@ -1472,9 +1466,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "customer_service",
+            "id": "customer_support",
             "dimensionName": "应用场景",
-            "name": "客户服务"
+            "name": "客户支持"
           },
           {
             "dimensionId": "technology",
@@ -1603,9 +1597,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           },
           {
             "dimensionId": "industry",
@@ -1700,9 +1694,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "robotics_automation",
+            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
+            "name": "物理自动化"
           }
         ],
         "entityIds": [
@@ -1798,9 +1792,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           }
         ],
         "entityIds": [
@@ -1825,7 +1819,7 @@
         "displayTags": [
           {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           }
@@ -2009,9 +2003,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "ai_application",
+            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "AI 应用"
+            "name": "终端 AI 应用"
           },
           {
             "dimensionId": "technology",
@@ -2271,9 +2265,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "ai_application",
+            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "AI 应用"
+            "name": "终端 AI 应用"
           },
           {
             "dimensionId": "technology",
@@ -2338,9 +2332,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
           },
           {
             "dimensionId": "technology",
@@ -2385,9 +2379,9 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
           }
         ],
         "entityIds": [
@@ -2449,9 +2443,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "customer_service",
+            "id": "customer_support",
             "dimensionName": "应用场景",
-            "name": "客户服务"
+            "name": "客户支持"
           }
         ],
         "entityIds": [
@@ -2631,21 +2625,15 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "customer_service",
+            "id": "customer_support",
             "dimensionName": "应用场景",
-            "name": "客户服务"
+            "name": "客户支持"
           },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "technology",
-            "dimensionName": "行业",
-            "name": "科技与软件"
           },
           {
             "dimensionId": "industry",
@@ -2743,7 +2731,7 @@
           },
           {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           }
@@ -2769,9 +2757,15 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "procurement_supply_chain",
+            "dimensionName": "应用场景",
+            "name": "采购与供应链"
           },
           {
             "dimensionId": "industry",
@@ -2796,6 +2790,12 @@
             "id": "telecommunications",
             "dimensionName": "行业",
             "name": "电信"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "professional_services",
+            "dimensionName": "行业",
+            "name": "专业服务"
           }
         ],
         "entityIds": [
@@ -2897,7 +2897,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-cybersecurity",
+        "TX-use_case-security_operations",
         "TX-industry-automotive_transportation"
       ],
       "relatedEntityIds": [
@@ -3236,26 +3236,27 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_support",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-retail_ecommerce",
-        "TX-industry-professional_services",
+        "TX-industry-legal_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
+        "TX-industry-professional_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",
@@ -3491,27 +3492,27 @@
       "classificationRefs": [
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-security_operations",
+        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
+        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
+        "TX-industry-agriculture",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-human_in_loop",
@@ -4739,11 +4740,11 @@
       "lastSeen": "2027-09-30"
     },
     {
-      "id": "TX-use_case-customer_service",
-      "name": "客户服务",
+      "id": "TX-use_case-customer_support",
+      "name": "客户支持",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "customer_service",
+      "valueId": "customer_support",
       "eventIds": [
         "EV-57cf8e14d6994c1b",
         "EV-2315aada5ad36397",
@@ -4816,11 +4817,11 @@
       "lastSeen": "2026-07-30"
     },
     {
-      "id": "TX-use_case-cybersecurity",
-      "name": "网络安全",
+      "id": "TX-use_case-security_operations",
+      "name": "安全运营",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "cybersecurity",
+      "valueId": "security_operations",
       "eventIds": [
         "EV-976c03b6664d3a3b",
         "EV-9ddcfd9f61c25158",
@@ -4943,11 +4944,11 @@
       "lastSeen": "2026-07-31"
     },
     {
-      "id": "TX-use_case-robotics_automation",
-      "name": "机器人与物理自动化",
+      "id": "TX-use_case-physical_automation",
+      "name": "物理自动化",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "robotics_automation",
+      "valueId": "physical_automation",
       "eventIds": [
         "EV-eb881f5de456b59a",
         "EV-fcf3c464260b6730",
@@ -5399,76 +5400,6 @@
       "lastSeen": "2026-07-27"
     },
     {
-      "id": "TX-industry-technology",
-      "name": "科技与软件",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "technology",
-      "eventIds": [
-        "EV-136b2edc9b9f3be8",
-        "EV-cf6e7a2edad82c6f",
-        "EV-e1e0a38da122caed",
-        "EV-b563d5cf0f12119e",
-        "EV-220be2fe413b8cfa",
-        "EV-ebe9ed3158df619b",
-        "EV-6cb8979f92cf74ce",
-        "EV-618e5729145025e4",
-        "EV-2ca230a3dec71ba6",
-        "EV-ed388875bc004add",
-        "EV-8abf5adc3e72fbb8",
-        "EV-afcefb5d86a2db45",
-        "EV-2bbbe9f38c3d66f0",
-        "EV-9852a10590030da9",
-        "EV-ba89f9414be0b041",
-        "EV-42f0dcfbb70ce73e",
-        "EV-97fecfb2f20f582f",
-        "EV-0eef30387327e73f",
-        "EV-bf8086947a2639d4"
-      ],
-      "entityIds": [
-        "EN-ab9b29074a980e4b",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
-        "EN-382635c9325bf327",
-        "EN-3db1f560db626918",
-        "EN-8f71c4871a160172",
-        "EN-7f871cbf905f6e0c",
-        "EN-3c567a300232d3bb",
-        "EN-10535ca23448d8bb",
-        "EN-96eebba49dbbf422",
-        "EN-4de4a07ad031569c",
-        "EN-abb32701117d50a9",
-        "EN-bbdefa2950f49882",
-        "EN-b4a139ced5659a4e",
-        "EN-0decbc3b45f73b2b",
-        "EN-45cbca5f78f1ef44",
-        "EN-fc77f762a5c2afc1",
-        "EN-1e0c30e583ebb8be",
-        "EN-8d4321d936320802",
-        "EN-28d0bd981118a907",
-        "EN-9fbf261b62c1d7c0",
-        "EN-6fa4c159cb389f0f",
-        "EN-240389f4b730bad4",
-        "EN-8c9ab5b09bf138fc",
-        "EN-f53212e480f217e1",
-        "EN-ba728f8ca730921f",
-        "EN-71f3ed83fd5a3ed9",
-        "EN-e3c189c04bf15baf",
-        "EN-3c6d89173e6636d7",
-        "EN-31f61ed3e6e210c5",
-        "EN-ea3bd73e2b506e00",
-        "EN-916a98f0fa2a39af"
-      ],
-      "fdeIds": [
-        "FDE-d08fed45110ab44b"
-      ],
-      "hardwareIds": [
-        "HW-e11208b1ddb2dc49"
-      ],
-      "firstSeen": "2026-02-10",
-      "lastSeen": "2026-07-29"
-    },
-    {
       "id": "TX-use_case-software_development",
       "name": "软件开发",
       "nodeType": "use_case",
@@ -5801,11 +5732,11 @@
       "lastSeen": "2026-07-29"
     },
     {
-      "id": "TX-use_case-enterprise_operations",
-      "name": "企业运营自动化",
+      "id": "TX-use_case-productivity_enterprise_workflows",
+      "name": "生产力与企业工作流",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "enterprise_operations",
+      "valueId": "productivity_enterprise_workflows",
       "eventIds": [
         "EV-f6a72cddbda748b3",
         "EV-6e06cfa28f76a76f",
@@ -5823,6 +5754,7 @@
         "EV-57d3b7aa1a2f0fda",
         "EV-5b193a038ab4ea22",
         "EV-3a7128e2d7ff149e",
+        "EV-333851b077b606c8",
         "EV-779b733110003284",
         "EV-6364cfadff0d1d30",
         "EV-f50752717e2a8536"
@@ -5855,6 +5787,8 @@
         "EN-f65bb77682b83476",
         "EN-e395d03e988d30a9",
         "EN-0dba03107c52ed3e",
+        "EN-047364b9be67f665",
+        "EN-09c344df70df9660",
         "EN-51a5b811990f2a2a",
         "EN-89e28a570dce8b18",
         "EN-3673c8b4dba7409e",
@@ -5992,6 +5926,35 @@
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-use_case-procurement_supply_chain",
+      "name": "采购与供应链",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "procurement_supply_chain",
+      "eventIds": [
+        "EV-1a6def173f4d7c94",
+        "EV-95754eabe46fe4c3",
+        "EV-4db890779221bd9a",
+        "EV-6617850e0b014051",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-64bdeb7efae18e1b",
+        "EN-509428149b870c6f",
+        "EN-27032b3c60ab2a95",
+        "EN-96eebba49dbbf422",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-19"
     },
     {
       "id": "TX-technology-long_context",
@@ -6239,6 +6202,34 @@
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-31"
+    },
+    {
+      "id": "TX-industry-professional_services",
+      "name": "专业服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "professional_services",
+      "eventIds": [
+        "EV-e1e0a38da122caed",
+        "EV-39717cdbada984d7",
+        "EV-7954fd5a6b8b76d0",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-d74c69db63e4763f",
+        "EN-96eebba49dbbf422",
+        "EN-6cb00ecd8bc15956",
+        "EN-7d3194f79e645c42",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-06-29"
     },
     {
       "id": "TX-technology-open_weights",

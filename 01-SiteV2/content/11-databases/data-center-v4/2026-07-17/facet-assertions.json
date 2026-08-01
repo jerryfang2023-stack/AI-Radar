@@ -2,7 +2,7 @@
   {
     "asset_id": "CL-e3dd6a94b5d8895d",
     "dimension_id": "target_user",
-    "value_id": "enterprise",
+    "value_id": "business_user",
     "evidence_ref": "CL-e3dd6a94b5d8895d",
     "source_span": {
       "raw_id": "RAW-406dba161368019e",
@@ -11,7 +11,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -26,13 +26,28 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
+    "status": "active"
+  },
+  {
+    "asset_id": "CL-6cf4df9622b22ac9",
+    "dimension_id": "industry",
+    "value_id": "aerospace_defense",
+    "evidence_ref": "CL-6cf4df9622b22ac9",
+    "source_span": {
+      "raw_id": "RAW-9847673e1243f904",
+      "start": 3670,
+      "end": 4141
+    },
+    "assignment_method": "rule",
+    "confidence": 0.88,
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-fecdda8b0bd16e09",
     "dimension_id": "product_form",
-    "value_id": "enterprise_platform",
+    "value_id": "enterprise_software_platform",
     "evidence_ref": "CL-fecdda8b0bd16e09",
     "source_span": {
       "raw_id": "RAW-9847673e1243f904",
@@ -41,22 +56,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-d4ce1379babd44d9",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-d4ce1379babd44d9",
-    "source_span": {
-      "raw_id": "RAW-ed68247091f3c8c5",
-      "start": 36,
-      "end": 110
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -71,7 +71,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -86,37 +86,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-b997ce030a8347c0",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-b997ce030a8347c0",
-    "source_span": {
-      "raw_id": "RAW-a059af63a72b038c",
-      "start": 27,
-      "end": 126
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-1b8f7d5f592ddb54",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-1b8f7d5f592ddb54",
-    "source_span": {
-      "raw_id": "RAW-a059af63a72b038c",
-      "start": 767,
-      "end": 1233
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -131,7 +101,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -146,7 +116,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -161,7 +131,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -176,13 +146,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-e6939afbba62a8bd",
     "dimension_id": "use_case",
-    "value_id": "robotics_automation",
+    "value_id": "physical_automation",
     "evidence_ref": "CL-e6939afbba62a8bd",
     "source_span": {
       "raw_id": "RAW-a059af63a72b038c",
@@ -191,7 +161,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -206,7 +176,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -221,7 +191,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -236,7 +206,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -251,22 +221,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-ce346da4c89c45c7",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-ce346da4c89c45c7",
-    "source_span": {
-      "raw_id": "RAW-685f1b1f18dbe714",
-      "start": 0,
-      "end": 99
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -281,7 +236,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -296,7 +251,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -311,7 +266,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -326,22 +281,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-ec2cedfe1a8f890f",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-ec2cedfe1a8f890f",
-    "source_span": {
-      "raw_id": "RAW-685f1b1f18dbe714",
-      "start": 2371,
-      "end": 2760
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -356,7 +296,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -371,7 +311,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -386,7 +326,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -401,13 +341,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-95b16607973402a0",
     "dimension_id": "use_case",
-    "value_id": "cybersecurity",
+    "value_id": "security_operations",
     "evidence_ref": "CL-95b16607973402a0",
     "source_span": {
       "raw_id": "RAW-fdd74a67dd007d1c",
@@ -416,7 +356,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -431,7 +371,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -446,7 +386,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -461,13 +401,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-906ad145aac5aff4",
     "dimension_id": "product_form",
-    "value_id": "ai_application",
+    "value_id": "end_user_application",
     "evidence_ref": "CL-906ad145aac5aff4",
     "source_span": {
       "raw_id": "RAW-535555c5ddb4604b",
@@ -476,7 +416,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -491,7 +431,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -506,52 +446,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-5eaac8da145a72c3",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-5eaac8da145a72c3",
-    "source_span": {
-      "raw_id": "RAW-0d357cd10dfab7ee",
-      "start": 0,
-      "end": 38
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-bbc6ad54b856c021",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-bbc6ad54b856c021",
-    "source_span": {
-      "raw_id": "RAW-0d357cd10dfab7ee",
-      "start": 204,
-      "end": 235
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
-    "status": "active"
-  },
-  {
-    "asset_id": "CL-bbd9d103a53babb9",
-    "dimension_id": "product_form",
-    "value_id": "data_infrastructure",
-    "evidence_ref": "CL-bbd9d103a53babb9",
-    "source_span": {
-      "raw_id": "RAW-0d357cd10dfab7ee",
-      "start": 286,
-      "end": 350
-    },
-    "assignment_method": "rule",
-    "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -566,7 +461,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -581,7 +476,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -596,7 +491,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -611,7 +506,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -626,13 +521,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-204f372b3698c48d",
     "dimension_id": "product_form",
-    "value_id": "api_service",
+    "value_id": "model_api_service",
     "evidence_ref": "CL-204f372b3698c48d",
     "source_span": {
       "raw_id": "RAW-43918c7710f0cc3a",
@@ -641,7 +536,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -656,13 +551,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-50cb6a72e93afb7e",
     "dimension_id": "product_form",
-    "value_id": "api_service",
+    "value_id": "model_api_service",
     "evidence_ref": "CL-50cb6a72e93afb7e",
     "source_span": {
       "raw_id": "RAW-43918c7710f0cc3a",
@@ -671,7 +566,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -686,7 +581,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -701,13 +596,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-836568d2dfd7d91e",
     "dimension_id": "product_form",
-    "value_id": "ai_application",
+    "value_id": "end_user_application",
     "evidence_ref": "CL-836568d2dfd7d91e",
     "source_span": {
       "raw_id": "RAW-2869903672b8a990",
@@ -716,7 +611,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -731,13 +626,13 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
     "asset_id": "CL-0bfa8ec706d787bd",
     "dimension_id": "product_form",
-    "value_id": "ai_application",
+    "value_id": "end_user_application",
     "evidence_ref": "CL-0bfa8ec706d787bd",
     "source_span": {
       "raw_id": "RAW-2869903672b8a990",
@@ -746,7 +641,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -761,7 +656,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -776,7 +671,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -791,7 +686,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   },
   {
@@ -806,7 +701,7 @@
     },
     "assignment_method": "rule",
     "confidence": 0.88,
-    "taxonomy_version": "TAG-V4.0",
+    "taxonomy_version": "TAG-V4.1",
     "status": "active"
   }
 ]

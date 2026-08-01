@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -24,7 +24,9 @@
       "EV-0a62954694db4143"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-industry-food_hospitality"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-09",
     "lastSeen": "2026-07-09",
@@ -51,7 +53,14 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "food_hospitality",
+            "dimensionName": "行业",
+            "name": "餐饮与酒店"
+          }
+        ],
         "entityIds": [
           "EN-c71a83adf3de3f40"
         ]
@@ -61,7 +70,27 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-food_hospitality",
+      "name": "餐饮与酒店",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "food_hospitality",
+      "eventIds": [
+        "EV-0a62954694db4143",
+        "EV-f5a50f1fed72fec3"
+      ],
+      "entityIds": [
+        "EN-c71a83adf3de3f40",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-21",
+      "lastSeen": "2026-07-09"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

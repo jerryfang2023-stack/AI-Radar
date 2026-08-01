@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-07-14",
     "generated_at": "2026-07-27T05:24:41.418Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 3,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-a3b0e6ba9c45f3fc",
       "triggered_by_event_id": "EV-7a85e21802efd8b2",
       "as_of_date": "2026-07-14",
@@ -343,7 +344,23 @@
             "来源未披露任何收入、付费客户数或企业合同数据，商业化验证仍处于早期阶段，高估值缺乏营收支撑"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "software_development",
+          "knowledge_search",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "consumer"
+        ]
       },
       "entity_links": [
         {
@@ -442,7 +459,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 2,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-27T05:22:52.695Z"
+        "generated_at": "2026-07-27T05:22:52.695Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7a85e21802efd8b2",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -483,7 +508,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-90716f36aa32be3e",
       "triggered_by_event_id": "EV-23ae55daa341be06",
       "as_of_date": "2026-07-14",
@@ -751,7 +776,20 @@
             "AI智能体在生成公式时可能产生幻觉，即使小错误也可能在财务模型中级联放大，导致重大错误"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "data_analysis"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -846,7 +884,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:22:14.801Z"
+        "generated_at": "2026-07-26T15:22:14.801Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-23ae55daa341be06",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -887,7 +933,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-045337bcade573a4",
       "triggered_by_event_id": "EV-fab81bddb815267b",
       "as_of_date": "2026-07-14",
@@ -1371,7 +1417,21 @@
             "OpenAI、Anthropic和Google等基础模型实验室可能在12-18个月内将生成式UI作为一项功能推出，从而挤压Monogram的独立生存空间。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "end_user_application",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "content_creation"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "consumer"
+        ]
       },
       "entity_links": [
         {
@@ -1602,7 +1662,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:54:47.905Z"
+        "generated_at": "2026-07-26T14:54:47.905Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-fab81bddb815267b",
+          "confidence": 0.8,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1644,7 +1712,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-79011763f8506d71",
       "triggered_by_event_id": "EV-869c9ea96c58873d",
       "as_of_date": "2026-07-14",
@@ -2029,7 +2097,22 @@
             "从少数几条试点产线扩展到数千个异构工厂，需要解决边缘案例、安全认证以及与发那科、ABB、库卡等不同品牌硬件的集成问题，并克服制造商的风险规避心理。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "product_form_id": "robotic_system",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "automotive_transportation",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -2178,7 +2261,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:53:45.860Z"
+        "generated_at": "2026-07-26T14:53:45.860Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-869c9ea96c58873d",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2220,7 +2311,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-941760709039dd07",
       "triggered_by_event_id": "EV-80e54c9a390da293",
       "as_of_date": "2026-07-14",
@@ -2538,7 +2629,23 @@
             "切换成本极高：迁移至Sohu需使用Etched专有编译器重建生产推理栈，完全不兼容CUDA、vLLM或TensorRT-LLM生态。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "product_form_id": "chip_accelerator",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation",
+          "logistics_supply_chain"
+        ],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2774,7 +2881,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:52:04.193Z"
+        "generated_at": "2026-07-26T14:52:04.193Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-80e54c9a390da293",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

@@ -4,7 +4,7 @@
 版本：`SITE-V4.2.0-entity-history-prd-v1.3`
 日期：2026-07-16  
 适用范围：观澜内部只读网站的数据中心与应用中心  
-上游事实标准：`SITE-V4.0-data-center`、`RAW-V4.0`、`EVENT-V1.1`、`FDE-V2.0`、`HARDWARE-V1.0`、`TAG-V4.0`
+上游事实标准：`SITE-V4.0-data-center`、`RAW-V4.0`、`EVENT-V1.1`、`FDE-V2.0`、`HARDWARE-V1.0`、`TAG-V4.1`
 
 ## 1. Problem Statement
 
@@ -336,7 +336,7 @@ AI 硬件详情展示：
 
 Tag 只用于结构化描述、筛选和关联：
 
-- 每个技术 Tag 必须符合 `TAG-V4.0` 并具有 Claim 事实依据；产品形态、应用场景、行业、部署形态和目标用户使用独立 FacetAssertion，不进入技术 Tag 命名空间；
+- 每个技术 Tag 必须符合 `TAG-V4.1` 并具有 Claim 事实依据；产品形态、应用场景、行业、部署形态和目标用户使用独立 FacetAssertion，不进入技术 Tag 命名空间；
 - 列表最多显示两个 Tag；
 - 详情最多显示五个核心 Tag；
 - Tag 不决定入库、真伪、关系方向或排序；

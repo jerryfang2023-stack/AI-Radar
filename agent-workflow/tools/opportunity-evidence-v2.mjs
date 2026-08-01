@@ -65,15 +65,20 @@ const facetMappings = {
   },
   use_case: {
     software_development: [["specific_task", "internal_tool_building"]],
-    customer_service: [
+    customer_support: [
       ["buyer_or_user", "customer_support_team"],
       ["team_or_function", "customer_support"],
       ["specific_task", "customer_ticket_triage"],
     ],
-    sales_marketing: [
+    sales: [
       ["buyer_or_user", "sales_team"],
       ["team_or_function", "sales"],
       ["specific_task", "sales_lead_research"],
+    ],
+    marketing: [
+      ["buyer_or_user", "sales_team"],
+      ["team_or_function", "sales"],
+      ["specific_task", "content_workflow"],
     ],
     content_creation: [
       ["buyer_or_user", "content_team"],
@@ -82,7 +87,7 @@ const facetMappings = {
     ],
     knowledge_search: [["specific_task", "knowledge_base_qa"]],
     data_analysis: [["specific_task", "data_analysis_query"]],
-    cybersecurity: [
+    security_operations: [
       ["buyer_or_user", "it_security_team"],
       ["team_or_function", "it_security"],
       ["specific_task", "permission_audit"],
@@ -91,8 +96,8 @@ const facetMappings = {
   },
   product_form: {
     developer_tool: [["product_form", "developer_tool"]],
-    api_service: [["product_form", "api"]],
-    enterprise_platform: [["product_form", "workflow_automation"]],
+    model_api_service: [["product_form", "api"]],
+    enterprise_software_platform: [["product_form", "workflow_automation"]],
   },
 };
 const claimRules = [

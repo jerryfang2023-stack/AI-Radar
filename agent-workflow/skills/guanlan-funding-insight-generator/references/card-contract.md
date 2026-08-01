@@ -17,7 +17,9 @@
 - At least one source-backed product or service.
 - Chinese application-layer analysis: sector, capital judgment, validated signals, and at least one risk.
 - One explicit `analysis.product_form_id` chosen from active `product_form` Facets by the product or service customers buy or users directly use, not by an enabling technology, feature, industry, or future application.
-- One explicit `analysis.market_category_id` chosen from the CB Insights AI 100 mother-category framework: AI Infrastructure, Horizontal AI, or Vertical AI. This is the public first level; product form remains the second level.
+- `analysis.taxonomy_version=TAG-V4.1` plus one explicit market category from CB Insights AI 100 2026: Infrastructure & compute, Enterprise applications, Industry applications, or Physical AI.
+- One explicit governed market subcategory except for Physical AI, and one explicit infrastructure application for Infrastructure & compute. Product form remains independent from this hierarchy.
+- Supported `use_case_ids`, `industry_ids`, and at least one `target_user_id`; never add a technology/software industry default.
 - DeepSeek provider/model/prompt provenance.
 - A structured investment thesis and explicit customer-research status on every card.
 - A passed `FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1`.
@@ -37,6 +39,8 @@ Block the card when:
 - a Direction Card identifier does not exist;
 - a newly generated card omits `analysis.product_form_id` or uses an unknown product form;
 - a newly generated card omits `analysis.market_category_id` or uses an unknown market category;
+- a newly generated card omits the governed market subcategory/application required by its category, or its hierarchy is inconsistent;
+- the source card omits its taxonomy version, supported use cases, industries, or target users;
 - JSON, schema, or automatic-publication validation fails.
 
 Blocked queue entries remain operational diagnostics and never enter `funding-insights-v1.json`.
@@ -45,16 +49,17 @@ Blocked queue entries remain operational diagnostics and never enter `funding-in
 
 - Use one primary product form per card.
 - Prefer the card's explicit `analysis.product_form_id`.
-- For audited historical cards, use `product-form-decisions.json` and retain its decision identifier in the public projection.
-- Use the keyword classifier only for historical cards that have neither an explicit value nor a reviewed decision.
-- `compute_service` means hosted GPU, training, or inference capacity; `compute_system` means physical servers, racks, clusters, data centers, or network systems; `data_infrastructure` means the software layer for training, inference, memory, routing, compression, evaluation, or data delivery.
+- Historical migration decisions live in `taxonomy-decisions-v4-1.json`; after migration every source card must hold the explicit value.
+- The public builder must fail closed when a source card lacks a governed classification. Keyword and product-form fallback classifiers are forbidden.
+- `compute_cloud_service` means hosted GPU, training, or inference capacity; `ai_compute_system` means physical servers, racks, clusters, data centers, or network systems; `ai_infrastructure_software` means the software layer for training, inference, memory, routing, compression, evaluation, or data delivery.
 
 ## AI market category
 
-- Adopt the public CB Insights AI 100 framework: `ai_infrastructure`, `horizontal_ai`, and `vertical_ai`.
-- Use `ai_infrastructure` when the company supplies models, data, training, deployment, inference, security, orchestration, compute, chips, or hardware to other AI products.
-- Use `horizontal_ai` when the product serves a reusable cross-industry function or general user task.
-- Use `vertical_ai` when the product is built around one industry's professional data, workflow, regulation, or physical environment.
+- Adopt CB Insights AI 100 2026: `infrastructure_compute`, `enterprise_applications`, `industry_applications`, and `physical_ai`.
+- Use `infrastructure_compute` when the company supplies data, models, development/deployment, hardware/compute, observability/evaluation, or security infrastructure to builders of other AI products.
+- Use `enterprise_applications` when the product serves a reusable cross-industry business function.
+- Use `industry_applications` when the product is built around one industry's professional data, workflow, or regulation.
+- Use `physical_ai` only when the current product is a robot, vehicle, or autonomous machine that senses, decides, and acts in the physical world. A world model or future embodiment plan is not enough.
 - Never infer the market category from B2B/B2C, SaaS/API, software/hardware, or the word “platform”. Those are different dimensions.
 
 ## Historical ownership

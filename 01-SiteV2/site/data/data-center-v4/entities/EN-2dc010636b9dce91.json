@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -37,11 +37,13 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
-      "TX-use_case-cybersecurity",
+      "TX-use_case-security_operations",
       "TX-industry-manufacturing",
       "TX-industry-healthcare_life_sciences",
-      "TX-use_case-enterprise_operations",
+      "TX-use_case-productivity_enterprise_workflows",
       "TX-industry-retail_ecommerce",
+      "TX-use_case-procurement_supply_chain",
+      "TX-industry-professional_services",
       "TX-industry-telecommunications"
     ],
     "relatedEntityIds": [
@@ -106,9 +108,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "enterprise_operations",
+            "id": "productivity_enterprise_workflows",
             "dimensionName": "应用场景",
-            "name": "企业运营自动化"
+            "name": "生产力与企业工作流"
           },
           {
             "dimensionId": "technology",
@@ -157,9 +159,9 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           }
         ],
         "entityIds": [
@@ -246,7 +248,7 @@
           },
           {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           }
@@ -277,27 +279,21 @@
           },
           {
             "dimensionId": "product_form",
-            "id": "ai_application",
+            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "AI 应用"
+            "name": "终端 AI 应用"
           },
           {
             "dimensionId": "product_form",
-            "id": "data_infrastructure",
+            "id": "security_software",
             "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          },
-          {
-            "dimensionId": "product_form",
-            "id": "security_product",
-            "dimensionName": "产品形态",
-            "name": "AI 安全产品"
+            "name": "安全软件"
           },
           {
             "dimensionId": "use_case",
-            "id": "cybersecurity",
+            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "网络安全"
+            "name": "安全运营"
           },
           {
             "dimensionId": "deployment_model",
@@ -378,9 +374,15 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "procurement_supply_chain",
+            "dimensionName": "应用场景",
+            "name": "采购与供应链"
           },
           {
             "dimensionId": "industry",
@@ -405,6 +407,12 @@
             "id": "telecommunications",
             "dimensionName": "行业",
             "name": "电信"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "professional_services",
+            "dimensionName": "行业",
+            "name": "专业服务"
           }
         ],
         "entityIds": [
@@ -1379,11 +1387,11 @@
       "lastSeen": "2027-09-30"
     },
     {
-      "id": "TX-use_case-cybersecurity",
-      "name": "网络安全",
+      "id": "TX-use_case-security_operations",
+      "name": "安全运营",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "cybersecurity",
+      "valueId": "security_operations",
       "eventIds": [
         "EV-976c03b6664d3a3b",
         "EV-9ddcfd9f61c25158",
@@ -1761,11 +1769,11 @@
       "lastSeen": "2026-07-29"
     },
     {
-      "id": "TX-use_case-enterprise_operations",
-      "name": "企业运营自动化",
+      "id": "TX-use_case-productivity_enterprise_workflows",
+      "name": "生产力与企业工作流",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
-      "valueId": "enterprise_operations",
+      "valueId": "productivity_enterprise_workflows",
       "eventIds": [
         "EV-f6a72cddbda748b3",
         "EV-6e06cfa28f76a76f",
@@ -1783,6 +1791,7 @@
         "EV-57d3b7aa1a2f0fda",
         "EV-5b193a038ab4ea22",
         "EV-3a7128e2d7ff149e",
+        "EV-333851b077b606c8",
         "EV-779b733110003284",
         "EV-6364cfadff0d1d30",
         "EV-f50752717e2a8536"
@@ -1815,6 +1824,8 @@
         "EN-f65bb77682b83476",
         "EN-e395d03e988d30a9",
         "EN-0dba03107c52ed3e",
+        "EN-047364b9be67f665",
+        "EN-09c344df70df9660",
         "EN-51a5b811990f2a2a",
         "EN-89e28a570dce8b18",
         "EN-3673c8b4dba7409e",
@@ -1918,6 +1929,63 @@
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "TX-use_case-procurement_supply_chain",
+      "name": "采购与供应链",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "procurement_supply_chain",
+      "eventIds": [
+        "EV-1a6def173f4d7c94",
+        "EV-95754eabe46fe4c3",
+        "EV-4db890779221bd9a",
+        "EV-6617850e0b014051",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-64bdeb7efae18e1b",
+        "EN-509428149b870c6f",
+        "EN-27032b3c60ab2a95",
+        "EN-96eebba49dbbf422",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "TX-industry-professional_services",
+      "name": "专业服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "professional_services",
+      "eventIds": [
+        "EV-e1e0a38da122caed",
+        "EV-39717cdbada984d7",
+        "EV-7954fd5a6b8b76d0",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-d74c69db63e4763f",
+        "EN-96eebba49dbbf422",
+        "EN-6cb00ecd8bc15956",
+        "EN-7d3194f79e645c42",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-06-29"
     },
     {
       "id": "TX-industry-telecommunications",

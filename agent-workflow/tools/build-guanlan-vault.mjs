@@ -214,7 +214,7 @@ write(GUANLAN_VAULT_PATHS.currentVersion, `${yaml("当前版本")}# 当前版本
 | 关系 | ${text(manifest.relationshipVersion)} |
 | Raw | RAW-V4.0 |
 | Event | EVENT-V1.1 |
-| Tags | TAG-V4.0 |
+| Tags | TAG-V4.1 |
 | Opportunity Map | ${text(opportunity.meta?.applicationVersion)} |
 | Trend Radar | ${text(trend.meta?.columnVersion)} |
 | Funding Insights | ${text(funding.meta?.column_version)} |
@@ -452,7 +452,7 @@ write(GUANLAN_VAULT_PATHS.contracts, `${yaml("当前契约")}# 当前契约
 | Backfill | BACKFILL-V1.0 |
 | FDE | FDE-V2.0 |
 | Hardware | HARDWARE-V1.0 |
-| Tag | TAG-V4.0 |
+| Tag | TAG-V4.1 |
 | Guanlan Research | REPORTS-V1.2.0-research-hub |
 | Opportunity Map | OMAP-V2.0.0-v4-evidence |
 | Trend Radar | TRADAR-V1.0.1-china-market-filter |`);

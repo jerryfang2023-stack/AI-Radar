@@ -3,30 +3,93 @@ import fs from "node:fs";
 import path from "node:path";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
-export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.1";
-export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.2";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.4";
+export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.2";
+export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.3";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.5";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
 export const FUNDING_PRODUCT_FORM_IDS = new Set([
   "model",
-  "api_service",
+  "model_api_service",
   "developer_tool",
-  "ai_application",
-  "enterprise_platform",
-  "data_infrastructure",
-  "security_product",
+  "end_user_application",
+  "enterprise_software_platform",
+  "ai_infrastructure_software",
+  "security_software",
   "ai_device",
-  "robot",
+  "robotic_system",
   "chip_accelerator",
-  "compute_system",
-  "compute_service",
+  "ai_compute_system",
+  "compute_cloud_service",
 ]);
 export const FUNDING_MARKET_CATEGORY_IDS = new Set([
-  "ai_infrastructure",
-  "horizontal_ai",
-  "vertical_ai",
+  "infrastructure_compute",
+  "enterprise_applications",
+  "industry_applications",
+  "physical_ai",
 ]);
+export const FUNDING_MARKET_SUBCATEGORY_IDS = new Set([
+  "", "data", "development_deployment", "hardware_computing", "observability_evaluation",
+  "customer_support", "cyber_physical_security", "hr", "marketing", "productivity_enterprise_workflows",
+  "sales", "software_development_coding", "financial_services", "healthcare_life_sciences",
+  "industrials", "legal", "consumer_retail",
+]);
+export const FUNDING_MARKET_APPLICATION_IDS = new Set([
+  "", "synthetic_data", "data_preparation_curation", "vector_databases", "models",
+  "ai_development_orchestration", "model_deployment", "monetization", "chips", "servers",
+  "computing_infrastructure", "ai_observability_governance", "model_agent_security", "fine_tuning",
+  "llm_benchmarking_routing",
+]);
+export const FUNDING_USE_CASE_IDS = new Set([
+  "software_development", "customer_support", "sales", "marketing", "content_creation",
+  "knowledge_search", "data_analysis", "research_discovery", "education_learning", "security_operations",
+  "productivity_enterprise_workflows", "physical_automation", "hr_workforce", "finance_accounting",
+  "legal_compliance", "procurement_supply_chain", "design_engineering",
+]);
+export const FUNDING_INDUSTRY_IDS = new Set([
+  "financial_services", "healthcare_life_sciences", "retail_ecommerce", "manufacturing",
+  "media_entertainment", "education", "government_public_sector", "energy_utilities",
+  "telecommunications", "automotive_transportation", "professional_services",
+  "construction_real_estate", "food_hospitality", "aerospace_defense", "agriculture",
+  "logistics_supply_chain", "legal_services",
+]);
+export const FUNDING_TARGET_USER_IDS = new Set([
+  "developer", "business_user", "consumer", "public_sector_user", "researcher", "educator", "student",
+]);
+export const FUNDING_MARKET_SUBCATEGORY_PARENTS = new Map([
+  ...["data", "development_deployment", "hardware_computing", "observability_evaluation"].map((id) => [id, "infrastructure_compute"]),
+  ...["customer_support", "cyber_physical_security", "hr", "marketing", "productivity_enterprise_workflows", "sales", "software_development_coding"].map((id) => [id, "enterprise_applications"]),
+  ...["financial_services", "healthcare_life_sciences", "industrials", "legal", "consumer_retail"].map((id) => [id, "industry_applications"]),
+]);
+export const FUNDING_MARKET_APPLICATION_PARENTS = new Map([
+  ...["synthetic_data", "data_preparation_curation", "vector_databases"].map((id) => [id, "data"]),
+  ...["models", "ai_development_orchestration", "model_deployment", "monetization"].map((id) => [id, "development_deployment"]),
+  ...["chips", "servers", "computing_infrastructure"].map((id) => [id, "hardware_computing"]),
+  ...["ai_observability_governance", "model_agent_security", "fine_tuning", "llm_benchmarking_routing"].map((id) => [id, "observability_evaluation"]),
+]);
+
+function unknownListValues(value, allowed) {
+  if (!Array.isArray(value)) return ["not_array"];
+  return [...new Set(value.filter((item) => !allowed.has(clean(item))))];
+}
+
+function marketHierarchyProblems(analysis = {}) {
+  const category = clean(analysis.market_category_id);
+  const subcategory = clean(analysis.market_subcategory_id);
+  const application = clean(analysis.market_application_id);
+  const problems = [];
+  if (category === "physical_ai") {
+    if (subcategory || application) problems.push("physical_ai_hierarchy_not_empty");
+    if (clean(analysis.product_form_id) !== "robotic_system") problems.push("physical_ai_product_form_mismatch");
+    return problems;
+  }
+  if (clean(analysis.product_form_id) === "robotic_system") problems.push("robotic_system_market_category_mismatch");
+  if (FUNDING_MARKET_SUBCATEGORY_PARENTS.get(subcategory) !== category) problems.push("market_subcategory_parent_mismatch");
+  if (category === "infrastructure_compute") {
+    if (FUNDING_MARKET_APPLICATION_PARENTS.get(application) !== subcategory) problems.push("market_application_parent_mismatch");
+  } else if (application) problems.push("market_application_not_infrastructure");
+  return problems;
+}
 
 export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
@@ -888,6 +951,29 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
   else if (!FUNDING_MARKET_CATEGORY_IDS.has(clean(payload.analysis.market_category_id))) {
     problems.push("market_category_id_unknown");
   }
+  if (payload?.analysis?.taxonomy_version !== "TAG-V4.1") problems.push("taxonomy_version_invalid");
+  if (!FUNDING_MARKET_SUBCATEGORY_IDS.has(clean(payload?.analysis?.market_subcategory_id))) {
+    problems.push("market_subcategory_id_unknown");
+  }
+  if (!FUNDING_MARKET_APPLICATION_IDS.has(clean(payload?.analysis?.market_application_id))) {
+    problems.push("market_application_id_unknown");
+  }
+  if (clean(payload?.analysis?.market_category_id) !== "physical_ai" && !clean(payload?.analysis?.market_subcategory_id)) {
+    problems.push("market_subcategory_id_missing");
+  }
+  if (clean(payload?.analysis?.market_category_id) === "infrastructure_compute" && !clean(payload?.analysis?.market_application_id)) {
+    problems.push("market_application_id_missing");
+  }
+  problems.push(...marketHierarchyProblems(payload?.analysis));
+  for (const [field, allowed] of [
+    ["use_case_ids", FUNDING_USE_CASE_IDS],
+    ["industry_ids", FUNDING_INDUSTRY_IDS],
+    ["target_user_ids", FUNDING_TARGET_USER_IDS],
+  ]) {
+    const unknown = unknownListValues(payload?.analysis?.[field], allowed);
+    if (unknown.length) problems.push(`${field}_${unknown[0] === "not_array" ? "missing" : "unknown"}`);
+  }
+  if (!payload?.analysis?.target_user_ids?.length) problems.push("target_user_ids_empty");
   if (!Array.isArray(payload?.analysis?.risks) || !payload.analysis.risks.length) problems.push("risks_missing");
   else if (payload.analysis.risks.some((risk) => !containsChinese(risk))) problems.push("risks_not_chinese");
   if (!containsChinese(payload?.analysis?.sector)) problems.push("sector_not_chinese");
@@ -944,6 +1030,25 @@ export function fundingInsightProblems(card = {}) {
   if (card.analysis?.market_category_id && !FUNDING_MARKET_CATEGORY_IDS.has(clean(card.analysis.market_category_id))) {
     problems.push("market_category_id_unknown");
   }
+  if (card.analysis?.taxonomy_version !== "TAG-V4.1") problems.push("taxonomy_version_invalid");
+  if (!FUNDING_MARKET_SUBCATEGORY_IDS.has(clean(card.analysis?.market_subcategory_id))) problems.push("market_subcategory_id_unknown");
+  if (!FUNDING_MARKET_APPLICATION_IDS.has(clean(card.analysis?.market_application_id))) problems.push("market_application_id_unknown");
+  if (clean(card.analysis?.market_category_id) !== "physical_ai" && !clean(card.analysis?.market_subcategory_id)) {
+    problems.push("market_subcategory_id_missing");
+  }
+  if (clean(card.analysis?.market_category_id) === "infrastructure_compute" && !clean(card.analysis?.market_application_id)) {
+    problems.push("market_application_id_missing");
+  }
+  problems.push(...marketHierarchyProblems(card.analysis));
+  for (const [field, allowed] of [
+    ["use_case_ids", FUNDING_USE_CASE_IDS],
+    ["industry_ids", FUNDING_INDUSTRY_IDS],
+    ["target_user_ids", FUNDING_TARGET_USER_IDS],
+  ]) {
+    const unknown = unknownListValues(card.analysis?.[field], allowed);
+    if (unknown.length) problems.push(`${field}_${unknown[0] === "not_array" ? "missing" : "unknown"}`);
+  }
+  if (!card.analysis?.target_user_ids?.length) problems.push("target_user_ids_empty");
   if (!Array.isArray(card.analysis?.investment_rationale)) problems.push("investment_rationale_missing");
   if ((card.analysis?.investment_rationale || []).some((item) => (
     !item.institution || !item.rationale || !item.quote || !item.evidence_refs?.length

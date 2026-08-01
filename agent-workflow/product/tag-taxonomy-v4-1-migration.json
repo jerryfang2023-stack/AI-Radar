@@ -1,0 +1,81 @@
+{
+  "from_version": "TAG-V4.0",
+  "to_version": "TAG-V4.1",
+  "approved_at": "2026-08-02",
+  "approval_basis": "User requested replacement of the home-grown flat taxonomy with mature foreign AI-data-platform frameworks and historical reprojection.",
+  "external_frameworks": [
+    {
+      "name": "CB Insights AI 100 2026",
+      "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
+      "scope": ["ai_market_category", "ai_market_subcategory", "ai_market_application"]
+    },
+    {
+      "name": "Dealroom AI sector profile",
+      "url": "https://dealroom.co/sectors/ai/",
+      "scope": ["market-segment cross-check"]
+    },
+    {
+      "name": "Crunchbase Glossary of Industries",
+      "url": "https://support.crunchbase.com/hc/en-us/articles/27690673553555-Glossary-of-Industries",
+      "scope": ["industry vocabulary cross-check"]
+    }
+  ],
+  "migration_policy": "Remove superseded active IDs after every historical source card and Claim assertion is reclassified. Do not keep compatibility aliases in public data. Ambiguous splits require evidence-backed review rather than nearest-label substitution.",
+  "market_category_actions": [
+    {"from": "ai_infrastructure", "action": "replace", "to": "infrastructure_compute"},
+    {"from": "horizontal_ai", "action": "split", "to_candidates": ["enterprise_applications", "industry_applications"], "review_rule": "General consumer products use industry_applications with consumer_retail; cross-industry business functions use enterprise_applications."},
+    {"from": "vertical_ai", "action": "split", "to_candidates": ["industry_applications", "physical_ai"], "review_rule": "Products acting through robots, vehicles or autonomous machines use physical_ai; other single-industry products use industry_applications."}
+  ],
+  "facet_value_actions": {
+    "product_form": [
+      {"from": "model", "action": "keep", "to": "model"},
+      {"from": "api_service", "action": "replace", "to": "model_api_service"},
+      {"from": "developer_tool", "action": "keep", "to": "developer_tool"},
+      {"from": "ai_application", "action": "replace", "to": "end_user_application"},
+      {"from": "enterprise_platform", "action": "replace", "to": "enterprise_software_platform"},
+      {"from": "data_infrastructure", "action": "replace", "to": "ai_infrastructure_software"},
+      {"from": "security_product", "action": "replace", "to": "security_software"},
+      {"from": "ai_device", "action": "keep", "to": "ai_device"},
+      {"from": "robot", "action": "replace", "to": "robotic_system"},
+      {"from": "chip_accelerator", "action": "keep", "to": "chip_accelerator"},
+      {"from": "compute_system", "action": "replace", "to": "ai_compute_system"},
+      {"from": "compute_service", "action": "replace", "to": "compute_cloud_service"}
+    ],
+    "use_case": [
+      {"from": "software_development", "action": "keep", "to": "software_development"},
+      {"from": "customer_service", "action": "replace", "to": "customer_support"},
+      {"from": "sales_marketing", "action": "split", "to_candidates": ["sales", "marketing"]},
+      {"from": "content_creation", "action": "keep", "to": "content_creation"},
+      {"from": "knowledge_search", "action": "keep", "to": "knowledge_search"},
+      {"from": "data_analysis", "action": "keep", "to": "data_analysis"},
+      {"from": "research_science", "action": "replace", "to": "research_discovery"},
+      {"from": "education_learning", "action": "keep", "to": "education_learning"},
+      {"from": "cybersecurity", "action": "replace", "to": "security_operations"},
+      {"from": "enterprise_operations", "action": "replace", "to": "productivity_enterprise_workflows"},
+      {"from": "robotics_automation", "action": "replace", "to": "physical_automation"}
+    ],
+    "industry": [
+      {"from": "technology", "action": "delete", "reason": "Technology is a product attribute in an AI-only corpus, not evidence of the customer's industry."},
+      {"from": "financial_services", "action": "keep", "to": "financial_services"},
+      {"from": "healthcare_life_sciences", "action": "keep", "to": "healthcare_life_sciences"},
+      {"from": "retail_ecommerce", "action": "keep", "to": "retail_ecommerce"},
+      {"from": "manufacturing", "action": "keep", "to": "manufacturing"},
+      {"from": "media_entertainment", "action": "keep", "to": "media_entertainment"},
+      {"from": "education", "action": "keep", "to": "education"},
+      {"from": "government_public_sector", "action": "keep", "to": "government_public_sector"},
+      {"from": "energy_utilities", "action": "keep", "to": "energy_utilities"},
+      {"from": "telecommunications", "action": "keep", "to": "telecommunications"},
+      {"from": "automotive_transportation", "action": "keep", "to": "automotive_transportation"},
+      {"from": "professional_services", "action": "keep", "to": "professional_services"}
+    ],
+    "target_user": [
+      {"from": "developer", "action": "keep", "to": "developer"},
+      {"from": "enterprise", "action": "replace", "to": "business_user"},
+      {"from": "consumer", "action": "keep", "to": "consumer"},
+      {"from": "government", "action": "replace", "to": "public_sector_user"},
+      {"from": "researcher_education", "action": "split", "to_candidates": ["researcher", "educator", "student"]}
+    ]
+  },
+  "new_facets": ["ai_market_subcategory", "ai_market_application"],
+  "public_compatibility_policy": "No V4.0 category or renamed Facet ID may appear in source cards, article taxonomy metadata, generated site data, filters, or URLs after migration."
+}

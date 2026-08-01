@@ -42,6 +42,8 @@
       card.analysis?.capital_judgment,
       card.analysis?.sector,
       card.market_category?.name,
+      card.market_subcategory?.name,
+      card.market_application?.name,
       card.product_form?.name,
     ].join(" ").toLowerCase();
   }
@@ -50,11 +52,13 @@
     const query = String(form.elements.namedItem("query").value || "").trim().toLowerCase();
     const round = form.elements.namedItem("round").value;
     const marketCategory = form.elements.namedItem("market_category").value;
+    const marketSubcategory = form.elements.namedItem("market_subcategory").value;
     state.filtered = state.cards.filter((card) => (
       (!state.companyId || card.company?.entity_id === state.companyId)
       && (!query || cardSearchText(card).includes(query))
       && (!round || card.financing?.round === round)
       && (!marketCategory || card.market_category?.id === marketCategory)
+      && (!marketSubcategory || card.market_subcategory?.id === marketSubcategory)
     ));
     if (!state.filtered.length) {
       list.innerHTML = '<div class="fi-empty">当前筛选条件下暂无融资透视</div>';
@@ -68,7 +72,7 @@
         <article class="fi-card">
           <header class="fi-card-head">
             <div class="fi-card-meta">
-              <span>${escapeHtml(card.market_category?.name || "AI 市场")} · ${escapeHtml(card.product_form?.name || "产品形态未分类")}</span>
+              <span>${escapeHtml([card.market_category?.name, card.market_subcategory?.name, card.market_application?.name].filter(Boolean).join(" · ") || "AI 市场")} · ${escapeHtml(card.product_form?.name || "产品形态未分类")}</span>
               <time>收录于 ${escapeHtml(card.as_of_date || card.financing?.announced_at)}</time>
             </div>
             <div class="fi-card-title-row">
@@ -398,6 +402,7 @@
     $("[data-latest-date]").textContent = data.meta?.latest_date ? `更新于 ${data.meta.latest_date}` : "暂无更新";
     fillSelect("round", data.filters?.rounds || []);
     fillSelect("market_category", data.filters?.market_categories || []);
+    fillSelect("market_subcategory", data.filters?.market_subcategories || []);
     form.addEventListener("input", render);
     form.addEventListener("change", render);
     $("[data-dialog-close]").addEventListener("click", closeDetail);

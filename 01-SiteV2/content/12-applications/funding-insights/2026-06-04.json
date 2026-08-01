@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-04",
     "generated_at": "2026-07-26T15:09:21.287Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-06d78a3e69ce2cb4",
       "triggered_by_event_id": "EV-ef7346378fcf9746",
       "as_of_date": "2026-06-04",
@@ -610,7 +611,25 @@
             "政府合同集中度极高，政治关系变化可能使数十亿美元的NSSL、HLS和星盾合同面临审查或取消风险。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "product_form_id": "robotic_system",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "aerospace_defense",
+          "telecommunications",
+          "logistics_supply_chain"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "consumer",
+          "public_sector_user"
+        ]
       },
       "entity_links": [
         {
@@ -844,7 +863,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:23:52.382Z"
+        "generated_at": "2026-07-26T14:23:52.382Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-ef7346378fcf9746",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -887,7 +914,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-1fc454ab2d4f544f",
       "triggered_by_event_id": "EV-fdfd4bf00571bb35",
       "as_of_date": "2026-06-04",
@@ -1225,7 +1252,24 @@
             "Witness AI 定位为独立平台，但其CEO明确表示不希望被收购，而要与CrowdStrike、Splunk、Okta等曾经的独立安全巨头比肩。在AI安全市场早期，独立厂商面临被云平台（AWS、Google）或模型厂商（OpenAI）通过内置功能挤压的风险，能否在巨头觉醒前建立足够的护城河尚不确定。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "model_agent_security",
+        "product_form_id": "security_software",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "government_public_sector"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1353,7 +1397,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:23:26.916Z"
+        "generated_at": "2026-07-26T14:23:26.916Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-fdfd4bf00571bb35",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1393,7 +1445,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-439dd52a236a8ca5",
       "triggered_by_event_id": "EV-dbbe3fd637be213f",
       "as_of_date": "2026-06-04",
@@ -1613,7 +1665,18 @@
             "未来五年全球承诺的 AI 支出高达近 8 万亿美元，公共市场是否有足够容量长期吸收如此庞大的融资需求尚不确定。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "product_form_id": "ai_compute_system",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -1789,7 +1852,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:22:51.269Z"
+        "generated_at": "2026-07-26T14:22:51.269Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-dbbe3fd637be213f",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1828,7 +1899,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-f620e518e71fb8b2",
       "triggered_by_event_id": "EV-736404028b8ad33e",
       "as_of_date": "2026-06-04",
@@ -2083,7 +2154,17 @@
             "AI 推理市场竞争激烈，大型云服务商（如 AWS, Azure, GCP）和新兴初创公司均在提供类似的优化推理服务，FriendliAI 面临被替代或价格战的风险。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "model_deployment",
+        "product_form_id": "ai_infrastructure_software",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2228,7 +2309,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:22:32.976Z"
+        "generated_at": "2026-07-26T14:22:32.976Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-736404028b8ad33e",
+          "confidence": 0.95,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -2268,7 +2357,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-aaf38fcf7063d61c",
       "triggered_by_event_id": "EV-88f4ee8cd57bdf42",
       "as_of_date": "2026-06-04",
@@ -2584,7 +2673,24 @@
             "语音 AI 基础设施市场竞争激烈，传统联络中心厂商、电话平台和超大规模云厂商可能通过捆绑语音代理功能进行反击，侵蚀 Vapi 的差异化空间"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "customer_support",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "customer_support",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "professional_services"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "developer"
+        ]
       },
       "entity_links": [
         {
@@ -2724,7 +2830,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:22:17.486Z"
+        "generated_at": "2026-07-26T14:22:17.486Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-88f4ee8cd57bdf42",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

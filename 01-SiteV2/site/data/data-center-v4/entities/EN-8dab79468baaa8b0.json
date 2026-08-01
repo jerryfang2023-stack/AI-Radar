@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -25,7 +25,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-agentic_execution"
+      "TX-technology-agentic_execution",
+      "TX-use_case-finance_accounting"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-24",
@@ -54,6 +55,12 @@
         "statusLabel": "已公布",
         "title": "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步",
         "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "finance_accounting",
+            "dimensionName": "应用场景",
+            "name": "财务与会计"
+          },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
@@ -979,6 +986,23 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
+    },
+    {
+      "id": "TX-use_case-finance_accounting",
+      "name": "财务与会计",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "finance_accounting",
+      "eventIds": [
+        "EV-cfbd2bed57ba4644"
+      ],
+      "entityIds": [
+        "EN-8dab79468baaa8b0"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-05-24"
     }
   ],
   "fde": [],

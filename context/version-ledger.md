@@ -59,7 +59,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center supervisor Skill | guanlan-data-center-supervisor v1.3.1 |
 | Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.5.0 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.1.0 |
-| Funding Insight generator Skill | guanlan-funding-insight-generator v1.4.0 |
+| Funding Insight generator Skill | guanlan-funding-insight-generator v1.5.0 |
 | First-Line Viewpoints monitor Skill | guanlan-first-line-viewpoints-monitor v1.2.1 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.1.0 |
 | Follow-builders support Skill | follow-builders v2.1.1 |

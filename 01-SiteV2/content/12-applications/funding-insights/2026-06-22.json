@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-06-22",
     "generated_at": "2026-07-26T15:14:57.594Z",
     "trigger": "verified_daily_funding_events",
@@ -14,11 +14,12 @@
       "blocked": 0,
       "pending": 0
     },
-    "normalization_contract": "company_and_normalized_round"
+    "normalization_contract": "company_and_normalized_round",
+    "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-a329e296c3d1ffea",
       "triggered_by_event_id": "EV-9486e14e99499e3b",
       "as_of_date": "2026-06-22",
@@ -529,7 +530,22 @@
             "公司估值在13个月内从18亿美元跃升至42.6亿美元，若Helios首飞或Golden Dome项目出现延迟，高估值可能难以维持。"
           ],
           "institutional_rationale_status": "not_disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "product_form_id": "robotic_system",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "aerospace_defense"
+        ],
+        "target_user_ids": [
+          "public_sector_user",
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -744,7 +760,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:14:57.519Z"
+        "generated_at": "2026-07-26T15:14:57.519Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-9486e14e99499e3b",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -782,7 +806,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-2bc0875969d87844",
       "triggered_by_event_id": "EV-60f9204b84882857",
       "as_of_date": "2026-06-22",
@@ -1081,7 +1105,21 @@
             "试点仅覆盖单一子系统，尚未证明在完整核心平台或跨行业场景中的可复制性，劳动力削减幅度区间过宽（35%-98%），实际效果存在不确定性"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "observability_evaluation",
+        "market_application_id": "ai_observability_governance",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "security_operations"
+        ],
+        "industry_ids": [
+          "financial_services"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1181,7 +1219,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:34:23.491Z"
+        "generated_at": "2026-07-26T14:34:23.491Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-60f9204b84882857",
+          "confidence": 0.9,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1221,7 +1267,7 @@
       }
     },
     {
-      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-8077351721f9c4e3",
       "triggered_by_event_id": "EV-14a666fc27d73a80",
       "as_of_date": "2026-06-22",
@@ -1538,7 +1584,21 @@
             "公司仅有 8 名员工，且刚从隐身模式中浮出水面，缺乏公开的客户名单和商业牵引力证据，产品市场契合度尚未被大规模验证。"
           ],
           "institutional_rationale_status": "disclosed"
-        }
+        },
+        "taxonomy_version": "TAG-V4.1",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "product_form_id": "enterprise_software_platform",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "knowledge_search",
+          "content_creation"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ]
       },
       "entity_links": [
         {
@@ -1676,7 +1736,15 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:34:14.130Z"
+        "generated_at": "2026-07-26T14:34:14.130Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-14a666fc27d73a80",
+          "confidence": 0.85,
+          "needs_review": false
+        }
       },
       "auto_publish_gate": {
         "passed": true,

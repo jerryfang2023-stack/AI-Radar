@@ -4,7 +4,7 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:40:16.685Z",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
     "eventCount": 1759,
@@ -36,7 +36,10 @@
       "TX-industry-manufacturing",
       "TX-industry-healthcare_life_sciences",
       "TX-industry-retail_ecommerce",
-      "TX-industry-telecommunications"
+      "TX-use_case-procurement_supply_chain",
+      "TX-industry-professional_services",
+      "TX-industry-telecommunications",
+      "TX-industry-agriculture"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-01",
@@ -128,10 +131,10 @@
         "title": "AI Hub 联合设计计划：初创企业加速器试点",
         "displayTags": [
           {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
+            "dimensionId": "industry",
+            "id": "agriculture",
+            "dimensionName": "行业",
+            "name": "农业"
           }
         ],
         "entityIds": [
@@ -198,7 +201,7 @@
           },
           {
             "dimensionId": "target_user",
-            "id": "enterprise",
+            "id": "business_user",
             "dimensionName": "目标用户",
             "name": "企业用户"
           }
@@ -221,9 +224,15 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_platform",
+            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
+            "name": "企业软件平台"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "procurement_supply_chain",
+            "dimensionName": "应用场景",
+            "name": "采购与供应链"
           },
           {
             "dimensionId": "industry",
@@ -248,6 +257,12 @@
             "id": "telecommunications",
             "dimensionName": "行业",
             "name": "电信"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "professional_services",
+            "dimensionName": "行业",
+            "name": "专业服务"
           }
         ],
         "entityIds": [
@@ -1520,6 +1535,63 @@
       "lastSeen": "2026-07-29"
     },
     {
+      "id": "TX-use_case-procurement_supply_chain",
+      "name": "采购与供应链",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "procurement_supply_chain",
+      "eventIds": [
+        "EV-1a6def173f4d7c94",
+        "EV-95754eabe46fe4c3",
+        "EV-4db890779221bd9a",
+        "EV-6617850e0b014051",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-64bdeb7efae18e1b",
+        "EN-509428149b870c6f",
+        "EN-27032b3c60ab2a95",
+        "EN-96eebba49dbbf422",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "TX-industry-professional_services",
+      "name": "专业服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "professional_services",
+      "eventIds": [
+        "EV-e1e0a38da122caed",
+        "EV-39717cdbada984d7",
+        "EV-7954fd5a6b8b76d0",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "entityIds": [
+        "EN-d74c69db63e4763f",
+        "EN-96eebba49dbbf422",
+        "EN-6cb00ecd8bc15956",
+        "EN-7d3194f79e645c42",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-06-29"
+    },
+    {
       "id": "TX-industry-telecommunications",
       "name": "电信",
       "nodeType": "industry",
@@ -1553,6 +1625,29 @@
       ],
       "firstSeen": "2026-05-20",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-industry-agriculture",
+      "name": "农业",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "agriculture",
+      "eventIds": [
+        "EV-01b003fbae67ae91",
+        "EV-0f0b2013927ce156",
+        "EV-1add9dad81afe82a"
+      ],
+      "entityIds": [
+        "EN-0bd36bfd4d80867c",
+        "EN-2a920347dfcf07a7",
+        "EN-cc70f504af53013a",
+        "EN-8d4321d936320802",
+        "EN-963cd73004547f84"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-19",
+      "lastSeen": "2026-07-26"
     }
   ],
   "fde": [

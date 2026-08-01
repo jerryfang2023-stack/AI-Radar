@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-08-01T18:22:29.379Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1759,
+    "quarantinedEventCount": 13
+  },
+  "node": {
+    "id": "TX-use_case-finance_accounting",
+    "name": "财务与会计",
+    "nodeType": "use_case",
+    "typeLabel": "应用场景",
+    "valueId": "finance_accounting",
+    "eventIds": [
+      "EV-cfbd2bed57ba4644"
+    ],
+    "entityIds": [
+      "EN-8dab79468baaa8b0"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-05-24",
+    "lastSeen": "2026-05-24"
+  },
+  "events": [
+    {
+      "id": "EV-cfbd2bed57ba4644",
+      "dataDate": "2026-05-24",
+      "date": "2026-05-24",
+      "updatedDate": "2026-05-24",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步",
+      "originalTitle": "Exclusive: Fazeshift Scores $17M As Investors Bet On AI-Powered Finance Ops, Starting With Accounts Receivable",
+      "subject": "Fazeshift",
+      "action": "funding",
+      "object": "$17 million Series A funding round",
+      "metrics": [
+        "$17 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "finance_accounting",
+            "dimensionName": "应用场景",
+            "name": "财务与会计"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "finance_accounting",
+          "dimensionName": "应用场景",
+          "name": "财务与会计"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "finance_accounting",
+          "dimensionName": "应用场景",
+          "name": "财务与会计"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-8dab79468baaa8b0"
+      ],
+      "entityNames": [
+        "Fazeshift"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding",
+      "publisher": "news.crunchbase.com"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-8dab79468baaa8b0",
+      "name": "Fazeshift",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cfbd2bed57ba4644"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-finance_accounting"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-05-24"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}
