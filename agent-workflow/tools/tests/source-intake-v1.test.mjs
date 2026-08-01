@@ -15,13 +15,14 @@ import {
 } from "../lib/source-intake-v1.mjs";
 import { selectImmutableSourceSnapshot } from "../lib/immutable-source-snapshot-v1.mjs";
 import { normalizeSourceIntakeTitles } from "../normalize-source-intake-titles.mjs";
+import { regenerateSourceTitleTranslations } from "../regenerate-source-title-translations-deepseek.mjs";
 
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, `${JSON.stringify(value)}\n`, "utf8");
 }
 
-test("resumed source intake restores reviewed Chinese source-title translations", () => {
+test("resumed source intake restores DeepSeek Chinese source-title translations", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-title-resume-"));
   const date = "2026-08-01";
   const original = "Example removes its AI feature one day after launch";
@@ -32,7 +33,8 @@ test("resumed source intake restores reviewed Chinese source-title translations"
       translations: [{
         sourceTitle: original,
         zhTitle: translated,
-        generatedBy: "manual_reviewed_source_title_translation",
+        generatedBy: "deepseek_title_translation",
+        generatedModel: "deepseek-v4-flash",
       }],
     });
     writeJson(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`), {
@@ -79,6 +81,38 @@ test("resumed source intake restores reviewed Chinese source-title translations"
     const provenanceRepairedRow = JSON.parse(fs.readFileSync(sourceIndex, "utf8").trim());
     assert.equal(provenanceRepairedRow.title_translation_status, "translated");
     assert.equal(provenanceRepairedRow.title_translation_method, "source_title_translation_db");
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("manual source-title entries are atomically regenerated with DeepSeek provenance", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-title-regenerate-"));
+  const file = path.join(root, "source-title-translations.json");
+  const sourceTitle = "Example launches a new AI platform for enterprise teams";
+  try {
+    writeJson(file, {
+      version: "source-title-translations-v1",
+      translations: [{
+        sourceTitle,
+        zhTitle: "Example 为企业团队推出新 AI 平台",
+        generatedBy: "manual_reviewed_source_title_translation",
+      }],
+    });
+    const result = await regenerateSourceTitleTranslations({
+      file,
+      write: true,
+      generator: async () => ({
+        titleZh: "Example 为企业团队推出全新 AI 平台",
+        status: "translated",
+        method: "deepseek_title_translation",
+        model: "deepseek-v4-flash",
+      }),
+    });
+    assert.deepEqual(result, { eligible: 1, regenerated: 1, written: true });
+    const entry = JSON.parse(fs.readFileSync(file, "utf8")).translations[0];
+    assert.equal(entry.generatedBy, "deepseek_title_translation");
+    assert.equal(entry.generatedModel, "deepseek-v4-flash");
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }

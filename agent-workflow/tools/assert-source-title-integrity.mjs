@@ -4,13 +4,17 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   generatedTitleTranslationLooksUsable,
+  loadSourceTitleTranslations,
   sourceTitleNeedsChineseTranslation,
   titleTranslationLooksUsable,
+  titleTranslationKey,
 } from "./source-title-translation-generator.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
 const sourceIndexFile = path.join(root, "01-SiteV2", "content", "01-raw", "source-index.jsonl");
+const translationFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
+const approvedTranslations = loadSourceTitleTranslations(translationFile);
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
@@ -70,9 +74,9 @@ for (const rawId of targetRawIds) {
     String(entry.source_url || "").replace(/\/+$/u, "") === rawUrl
   )) || locatorCandidates.find((entry) => entry.title_translation_method) || locatorCandidates[0] || {};
   const method = String(raw.title_translation_method || locator.title_translation_method || "").trim();
-  const translationLooksUsable = ["manual_reviewed_source_title_translation", "source_title_translation_db"].includes(method)
+  const translationLooksUsable = approvedTranslations.has(titleTranslationKey(original))
     ? titleTranslationLooksUsable(original, chinese)
-    : generatedTitleTranslationLooksUsable(original, chinese);
+    : method === "deepseek_title_translation" && generatedTitleTranslationLooksUsable(original, chinese);
   if (sourceTitleNeedsChineseTranslation(original) && !translationLooksUsable) {
     violations.push({
       type: "raw_title_invalid",

@@ -2,9 +2,9 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.1",
-    "candidate_count": 700,
-    "product_candidates": 302,
-    "person_candidates": 398,
+    "candidate_count": 702,
+    "product_candidates": 303,
+    "person_candidates": 399,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -10097,6 +10097,30 @@
       ]
     },
     {
+      "candidate_id": "FIER-39c88c6500f2da69",
+      "candidate_kind": "person",
+      "research_name": "张源",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2e334bb8de4eac34"
+      ],
+      "funding_insight_ids": [
+        "FI-77dc755d73d7a45c"
+      ],
+      "source_event_ids": [
+        "EV-00514c4ffc2e3cd3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a7b9a96043b1f3e8",
+          "quote": "丘脑智能创立于2025年11月，创始人兼CEO张源毕业于北京大学，是电子与经济双学科背景，曾在一家自动驾驶公司担任COO，也有过创投行业、具身智能的工作经历。",
+          "source_content_hash": "e7ff3f6841e97c43",
+          "quote_hash": "8e81b41011721acc7b56255c6add355c4756ad1b86c18222ee52435f632a3a8a"
+        }
+      ]
+    },
+    {
       "candidate_id": "FIER-0a2c3048ac411611",
       "candidate_kind": "person",
       "research_name": "杨植麟",
@@ -14495,6 +14519,42 @@
           "quote": "The model-agnostic system works across OpenAI, Anthropic, and open-source LLMs",
           "source_content_hash": "97eb910e7aa80bf2",
           "quote_hash": "3bdf99fa8a2806ce7683e5f4e64e3ab7997aabdcf455700b1c9af14bf118db1b"
+        }
+      ]
+    },
+    {
+      "candidate_id": "FIER-806a6dcdb0bc7796",
+      "candidate_kind": "product",
+      "research_name": "MemAura",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2e334bb8de4eac34"
+      ],
+      "funding_insight_ids": [
+        "FI-77dc755d73d7a45c"
+      ],
+      "source_event_ids": [
+        "EV-00514c4ffc2e3cd3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a7b9a96043b1f3e8",
+          "quote": "丘脑智能在6月上线了一个名为 MemAura 的记忆基座，向客户提供ADK（智能体开发包）和API（应用程序编程接口）的服务。",
+          "source_content_hash": "e7ff3f6841e97c43",
+          "quote_hash": "95ddf8588a2306f5c27b07fc409a86f023f360ebf5550b60b298ab27a75f55e5"
+        },
+        {
+          "source_id": "FISRC-a7b9a96043b1f3e8",
+          "quote": "MemAura能支持长记忆的积累和快速的记忆调用，采用高效的上下文机制，还能有效降低推理成本。",
+          "source_content_hash": "e7ff3f6841e97c43",
+          "quote_hash": "513fd5379c14a612b7cef90441bb5c6e059b7f1cc9d63af587c691c0ea08e653"
+        },
+        {
+          "source_id": "FISRC-a7b9a96043b1f3e8",
+          "quote": "输入侧Token综合消耗降低40%-49%，记忆检索延迟控制在400毫秒以内，端到端首次回答可做到1秒以内，综合准确率可以达到80%以上。",
+          "source_content_hash": "e7ff3f6841e97c43",
+          "quote_hash": "bbba5ea65a81bf06d3f6bb33c148a2916bd1d6c1f35c761a29ca03104924ae30"
         }
       ]
     },
