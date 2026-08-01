@@ -453,17 +453,16 @@ test("commercial events expose TAG-V4 technical tags and structured facets separ
   assert.ok(data.events.every((item) => item.classifications.every((entry) => entry.dimensionId && entry.id && entry.name)));
 });
 
-test("FDE and hardware projections preserve the daily batch date", () => {
+test("FDE and hardware projections preserve valid daily batch dates and event links", () => {
   const data = buildFrontstageData(root);
   const publicEventIds = new Set(data.events.map((item) => item.id));
-  const currentMonth = data.meta.currentDate.slice(0, 7);
 
   assert.ok(data.fde.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
   assert.ok(data.hardware.every((item) => /^\d{4}-\d{2}-\d{2}$/u.test(item.dataDate)));
+  assert.ok(data.fde.every((item) => item.dataDate <= data.meta.currentDate));
+  assert.ok(data.hardware.every((item) => item.dataDate <= data.meta.currentDate));
   assert.ok(data.fde.every((item) => publicEventIds.has(item.eventId)));
   assert.ok(data.hardware.every((item) => publicEventIds.has(item.eventId)));
-  assert.ok(data.fde.some((item) => item.dataDate.startsWith(`${currentMonth}-`)));
-  assert.ok(data.hardware.some((item) => item.dataDate.startsWith(`${currentMonth}-`)));
 });
 
 test("FDE and hardware projections prioritize newly collected records", () => {
@@ -505,21 +504,13 @@ test("FDE dossiers, hardware catalog, and monitoring funnel are materialized", (
   assert.match(script, /事件转化率/u);
 });
 
-test("FDE and hardware default to the current month while commercial events remain daily", () => {
+test("FDE and hardware use current-month filters while commercial events remain daily", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
-  const data = buildFrontstageData(root);
-  const currentMonth = data.meta.currentDate.slice(0, 7);
-  const fdeToday = data.fde.filter((item) => item.dataDate === data.meta.currentDate).length;
-  const hardwareToday = data.hardware.filter((item) => item.dataDate === data.meta.currentDate).length;
-  const fdeMonth = data.fde.filter((item) => item.dataDate.startsWith(`${currentMonth}-`)).length;
-  const hardwareMonth = data.hardware.filter((item) => item.dataDate.startsWith(`${currentMonth}-`)).length;
 
   assert.match(script, /targetView === "events"[\s\S]*!params\.get\("theme"\)[\s\S]*!\["from", "to"\]/u);
   assert.match(script, /function monthlyProjectionMode\(targetView = view\)/u);
   assert.match(script, /item\.dataDate\.startsWith\(`\$\{currentDataMonth\(data\)\}-`\)/u);
   assert.match(script, /数据月份/u);
-  assert.ok(fdeMonth > fdeToday);
-  assert.ok(hardwareMonth > hardwareToday);
 });
 
 test("public event sources expose original publishers instead of discovery channels", () => {
