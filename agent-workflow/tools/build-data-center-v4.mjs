@@ -513,6 +513,12 @@ function findEventRule(title, lead = "") {
   if (/\bBristol Myers Squibb\b.{0,120}\bAI Factory\b.{0,120}\bVera Rubin\b/iu.test(title)) {
     return { eventType: "hardware_deployment", pattern: /\b(?:Building|DGX|deploy|Vera Rubin)\b/iu };
   }
+  if (
+    /\b(?:secures?|secured|signs?|signed)\b.{0,100}\b(?:AI|GPU|accelerator|cluster|infrastructure)\b.{0,80}\b(?:deal|contract|agreement)\b/iu.test(title)
+    && !/\b(?:funding|financing|investment|series|seed|round)\b/iu.test(title)
+  ) {
+    return { eventType: "procurement_contract", pattern: /\b(?:secures?|secured|signs?|signed)\b/iu };
+  }
   for (const [eventType, pattern] of HIGH_SPECIFICITY_EVENT_RULES) {
     if (pattern.test(title)) return { eventType, pattern };
   }
@@ -622,7 +628,7 @@ function cleanOrganizationCandidate(value) {
     .replace(/[，,:：].*$/u, "")
     .replace(/(?:将|拟|正寻求|计划|宣布)$/u, "")
     .trim();
-  if (/^(?:\d+|数十|多名|员工|出版商|作者|研究员|私募巨头|我国首个|一图看懂|澳大利亚|中国|美国|日本|印度|欧洲)/u.test(candidate)) return "";
+  if (/^(?:\d+|数十|多名|员工|出版商|作者|研究员|私募巨头|我国首个|一图看懂|澳大利亚|中国|国内|美国|日本|印度|欧洲)/u.test(candidate)) return "";
   if (/(?:发布|推出|上线|融资|获投|起诉|诉讼|回应|呼吁|提议|加入|离职|成立|中标|增长|模型|手表|平台|工作台|方案|服务|指南|报告)/u.test(candidate)) return "";
   if (/\b(?:employees?|researchers?|publishers?|authors?|founder|guide|model|platform|service|report|cost|forward|didn['’]t)\b/iu.test(candidate)) return "";
   if (/\.(?:md|json|ya?ml|toml|txt|csv|js|mjs|ts|py)\b/iu.test(candidate)) return "";
@@ -656,12 +662,13 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
       .replace(/\s+(?:raises?|raised|secures?|secured|closes?|closed|announces?|announced)\b.*$/iu, "")
       .replace(/\s+,/gu, ",")
       .trim();
+    const chineseCandidate = containsChinese(candidate);
     if (!candidate
         || candidate.length < 2
         || candidate.length > 80
         || /^(?:the company|company|startup|firm|platform|provider)$/iu.test(candidate)
-        || !/[A-Za-z]/u.test(candidate)
-        || !/^[A-Z0-9]/u.test(candidate)) return;
+        || (chineseCandidate && /^(?:中国|国内|全球|业内|一家|这家|该公司)/u.test(candidate))
+        || (!chineseCandidate && (!/[A-Za-z]/u.test(candidate) || !/^[A-Z0-9]/u.test(candidate)))) return;
     const index = exactAliasIndex(claimEvidence, candidate);
     if (index < 0) return;
     candidates.push({
@@ -678,7 +685,11 @@ function fundingClaimOrganizationMentions(eventClaims, claimEvidence) {
     const lead = quote.match(
       /^([A-Z0-9][A-Za-z0-9.&'/-]*(?:\s+[A-Z0-9][A-Za-z0-9.&'/-]*){0,5}(?:,\s*(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Corporation|Limited))?)(?=\s*(?:,|has\b|have\b|raises?\b|raised\b|secures?\b|secured\b|closes?\b|closed\b|announces?\b|announced\b))/u
     )?.[1];
+    const chineseLead = quote.match(
+      /^(?:近日[，,\s]*)?([\p{Script=Han}A-Za-z0-9·（）()&.-]{2,24}?)(?=(?:已)?(?:完成|获得|获|宣布).{0,24}(?:融资|投资|募资))/u,
+    )?.[1];
     if (lead) addCandidate(lead);
+    if (chineseLead) addCandidate(chineseLead);
     addCandidate(claim.subject);
   }
   return candidates;
@@ -750,7 +761,7 @@ function sentenceSpans(body) {
 }
 
 function metricValues(text) {
-  return [...text.matchAll(/(?:[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|m|b|t|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗))/giu)]
+  return [...text.matchAll(/(?:[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|m|b|t|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
     .map((match) => match[0]).slice(0, 12);
 }
 
