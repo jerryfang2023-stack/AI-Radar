@@ -275,6 +275,7 @@ export function scopeChinaMarketItems(items = [], entityAliases = {}) {
     if (match.matched) {
       included.push({ ...scoped, market_region: "CN" });
     } else {
+      delete scoped.market_region;
       excluded.push(scoped);
     }
   }
