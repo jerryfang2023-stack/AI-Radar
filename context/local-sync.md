@@ -26,7 +26,7 @@ The generated directory map is:
 - `60-知识资产/`
 - `90-工作区/`
 
-The refresh reconstructs current readable projections and curated knowledge assets from repository sources. It does not rebuild or overwrite frontstage JSON, raw snapshots, canonical bundles, code or tests. Files under `90-工作区/` are not production inputs.
+The refresh reconstructs current readable projections and curated knowledge assets from repository sources. When private evidence is configured, it may normalize public evidence locators and metadata in V4 source/intake records, but it never restores complete bodies to the repository. It preserves an existing `body_length` when the private catalog cannot supply one. Files under `90-工作区/` are not production inputs.
 
 The refresh also writes managed evidence fields to every published knowledge
 asset, generates high-value source citation cards, and maintains the
@@ -37,7 +37,10 @@ When `.evidence-backup.json` or `GUANLAN_EVIDENCE_BACKUP_ROOT` is configured,
 the same command refreshes and audits a physically separate private evidence
 backup. The backup keeps one body per `content_hash` and isolates
 non-production historical sources in its own migration manifest outside V4
-automatic discovery.
+automatic discovery. Before public metadata migration, sync verifies that the
+backup covers the manifest's production date. Missing current bodies stop the
+sync instead of silently producing zero-length evidence metadata or a
+misleading successful Vault refresh.
 
 ## Automation
 
