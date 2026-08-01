@@ -12,7 +12,14 @@ const STRUCTURED_DIMENSIONS = new Set([
   "industry", "organization_function", "function", "workflow", "use_case", "product_form",
   "deployment_model", "deployment_stage", "target_user", "evidence_type"
 ]);
-const REQUIRED_FACETS = new Set(["product_form", "use_case", "industry", "deployment_model", "target_user"]);
+const REQUIRED_FACETS = new Set([
+  "ai_market_category",
+  "product_form",
+  "use_case",
+  "industry",
+  "deployment_model",
+  "target_user",
+]);
 
 function normalize(value) {
   return String(value || "").trim().toLocaleLowerCase();

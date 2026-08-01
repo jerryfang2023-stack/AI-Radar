@@ -17,6 +17,7 @@
 - At least one source-backed product or service.
 - Chinese application-layer analysis: sector, capital judgment, validated signals, and at least one risk.
 - One explicit `analysis.product_form_id` chosen from active `product_form` Facets by the product or service customers buy or users directly use, not by an enabling technology, feature, industry, or future application.
+- One explicit `analysis.market_category_id` chosen from the CB Insights AI 100 mother-category framework: AI Infrastructure, Horizontal AI, or Vertical AI. This is the public first level; product form remains the second level.
 - DeepSeek provider/model/prompt provenance.
 - A structured investment thesis and explicit customer-research status on every card.
 - A passed `FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1`.
@@ -35,6 +36,7 @@ Block the card when:
 - required reader-facing narrative is not Chinese;
 - a Direction Card identifier does not exist;
 - a newly generated card omits `analysis.product_form_id` or uses an unknown product form;
+- a newly generated card omits `analysis.market_category_id` or uses an unknown market category;
 - JSON, schema, or automatic-publication validation fails.
 
 Blocked queue entries remain operational diagnostics and never enter `funding-insights-v1.json`.
@@ -46,6 +48,14 @@ Blocked queue entries remain operational diagnostics and never enter `funding-in
 - For audited historical cards, use `product-form-decisions.json` and retain its decision identifier in the public projection.
 - Use the keyword classifier only for historical cards that have neither an explicit value nor a reviewed decision.
 - `compute_service` means hosted GPU, training, or inference capacity; `compute_system` means physical servers, racks, clusters, data centers, or network systems; `data_infrastructure` means the software layer for training, inference, memory, routing, compression, evaluation, or data delivery.
+
+## AI market category
+
+- Adopt the public CB Insights AI 100 framework: `ai_infrastructure`, `horizontal_ai`, and `vertical_ai`.
+- Use `ai_infrastructure` when the company supplies models, data, training, deployment, inference, security, orchestration, compute, chips, or hardware to other AI products.
+- Use `horizontal_ai` when the product serves a reusable cross-industry function or general user task.
+- Use `vertical_ai` when the product is built around one industry's professional data, workflow, regulation, or physical environment.
+- Never infer the market category from B2B/B2C, SaaS/API, software/hardware, or the word “platform”. Those are different dimensions.
 
 ## Historical ownership
 
@@ -59,6 +69,7 @@ The same CanonicalEvent can appear in multiple daily bundles. Assign it once for
 4. then prefer the newer data bundle.
 
 The combined frontstage projection first deduplicates by `triggered_by_event_id`, then aggregates every repeated disclosure by canonical company and normalized round code, including undisclosed, multi-round, and other categories. Every merged card preserves all source event IDs and disclosure rows.
+Apply accepted organization corrections and merges from `company-identity-decisions.json` before computing the company-and-round key. The application decision preserves canonical event IDs and does not rewrite Data Center V4.
 
 ## Entity-link boundary
 

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
+    "updated_at": "2026-08-02T00:00:00+08:00",
+    "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
+  },
+  "decisions": [
+    {
+      "entity_id": "EN-b0a914ead94a88da",
+      "current": {
+        "name": "Aligned",
+        "catalog_type": "company"
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "Aligned",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-02",
+      "evidence": {
+        "source_url": "https://alignedup.com/terms/",
+        "quote": "Team Aligned, Inc. (\"Aligned\", \"us\", \"our\", or \"we\"), a company incorporated in the State of Delaware"
+      },
+      "rationale": "Aligned是对外品牌名，作为融资透视统一展示名。"
+    },
+    {
+      "entity_id": "EN-4ca9544527138c33",
+      "current": {
+        "name": "Team Aligned Inc.",
+        "catalog_type": "company"
+      },
+      "action": "merge",
+      "merge_into_entity_id": "EN-b0a914ead94a88da",
+      "canonical": {
+        "name": "Aligned",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-08-02",
+      "evidence": {
+        "source_url": "https://alignedup.com/terms/",
+        "quote": "Team Aligned, Inc. (\"Aligned\", \"us\", \"our\", or \"we\"), a company incorporated in the State of Delaware"
+      },
+      "rationale": "公司官方条款明确Team Aligned, Inc.简称Aligned；两条事件披露同一笔6000万美元B轮融资，前台应按同一公司与轮次聚合。"
+    }
+  ]
+}

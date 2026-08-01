@@ -28,6 +28,15 @@ const PRODUCT_FORM_RULES = [
   ["enterprise_platform", /(?:企业|工作流|智能体|自动化|销售|营销|客服|供应链|采购|投标|法律|合规|金融|保险|医疗|教育|政府|建筑|工业|制药)/iu],
 ];
 
+const INFRASTRUCTURE_PRODUCT_FORMS = new Set([
+  "model",
+  "api_service",
+  "data_infrastructure",
+  "chip_accelerator",
+  "compute_system",
+  "compute_service",
+]);
+
 function legacyFundingProductFormId(card) {
   const searchText = [
     card.analysis?.sector,
@@ -64,6 +73,34 @@ export function fundingProductFormId(card, manualDecisions = new Map()) {
   return fundingProductFormDecision(card, manualDecisions).id;
 }
 
+export function fundingMarketCategoryDecision(card, manualDecisions = new Map(), productFormId = "") {
+  const explicitId = String(card.analysis?.market_category_id || "").trim();
+  if (explicitId) return { id: explicitId, method: "card_explicit", decision_id: "" };
+  const eventIds = [...new Set([
+    card.triggered_by_event_id,
+    ...(card.source_event_ids || []),
+  ].filter(Boolean))];
+  const matches = eventIds.map((eventId) => manualDecisions.get(eventId)).filter(Boolean);
+  const categoryIds = [...new Set(matches.map((item) => item.market_category_id))];
+  if (categoryIds.length > 1) {
+    throw new Error(`Conflicting market-category decisions for ${eventIds.join(", ")}`);
+  }
+  if (matches.length) {
+    return {
+      id: matches[0].market_category_id,
+      method: "manual_review",
+      decision_id: matches[0].decision_id,
+    };
+  }
+  if (INFRASTRUCTURE_PRODUCT_FORMS.has(productFormId)) {
+    return { id: "ai_infrastructure", method: "product_form_fallback", decision_id: "" };
+  }
+  if (productFormId === "robot") {
+    return { id: "vertical_ai", method: "product_form_fallback", decision_id: "" };
+  }
+  return { id: "horizontal_ai", method: "product_form_fallback", decision_id: "" };
+}
+
 function listBundles(projectRoot) {
   const dir = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights");
   if (!fs.existsSync(dir)) return [];
@@ -79,15 +116,23 @@ function directionById(projectRoot) {
   return new Map((data.directionCards || []).map((card) => [card.id, { id: card.id, title: card.title }]));
 }
 
-function productFormNames(projectRoot) {
+function facetValueNames(projectRoot, facetId) {
   const taxonomy = readJson(path.join(projectRoot, "agent-workflow/product/tag-taxonomy-v4.json"), {});
-  const productForm = (taxonomy.facets || []).find((facet) => facet.id === "product_form");
-  return new Map((productForm?.values || [])
+  const facet = (taxonomy.facets || []).find((item) => item.id === facetId);
+  return new Map((facet?.values || [])
     .filter((value) => value.status === "active")
     .map((value) => [value.id, value.name]));
 }
 
-export function productFormDecisionMap(projectRoot, productForms = productFormNames(projectRoot)) {
+function productFormNames(projectRoot) {
+  return facetValueNames(projectRoot, "product_form");
+}
+
+export function productFormDecisionMap(
+  projectRoot,
+  productForms = productFormNames(projectRoot),
+  marketCategories = facetValueNames(projectRoot, "ai_market_category"),
+) {
   const file = path.join(
     projectRoot,
     "01-SiteV2/content/12-applications/funding-insights/product-form-decisions.json",
@@ -107,6 +152,9 @@ export function productFormDecisionMap(projectRoot, productForms = productFormNa
     decisionIds.add(decision.decision_id);
     if (!productForms.has(decision.product_form_id)) {
       throw new Error(`Unknown product_form in ${decision.decision_id}: ${decision.product_form_id}`);
+    }
+    if (!marketCategories.has(decision.market_category_id)) {
+      throw new Error(`Unknown market_category in ${decision.decision_id}: ${decision.market_category_id}`);
     }
     if (!decision.company_name || !decision.rationale) {
       throw new Error(`Missing company_name or rationale in ${decision.decision_id}`);
@@ -144,7 +192,7 @@ function aggregationKey(card) {
   return `${companyKey}|${round.code}`;
 }
 
-function mergeFundingCardGroup(group, entityIndex, entityDecisions) {
+function mergeFundingCardGroup(group, entityIndex, entityDecisions, companyIdentityReview) {
   const base = structuredClone(group[0]);
   const sourceEventIds = uniqueObjects(
     group.flatMap((card) => card.source_event_ids || [card.triggered_by_event_id]),
@@ -200,20 +248,27 @@ function mergeFundingCardGroup(group, entityIndex, entityDecisions) {
     event_count: sourceEventIds.length,
     strategy: "company_and_normalized_round",
   };
-  return normalizeFundingInsightCard(base, entityIndex, entityDecisions);
+  return normalizeFundingInsightCard(base, entityIndex, entityDecisions, companyIdentityReview);
 }
 
-export function aggregateFundingRoundCards(inputCards = [], entityIndex = {}, entityDecisions = {}) {
+export function aggregateFundingRoundCards(
+  inputCards = [],
+  entityIndex = {},
+  entityDecisions = {},
+  companyIdentityReview = {},
+) {
   const groups = new Map();
   const cards = [...inputCards]
     .sort((left, right) => String(right.published_at || "").localeCompare(String(left.published_at || "")))
-    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions));
+    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview));
   for (const card of cards) {
     const key = aggregationKey(card);
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(card);
   }
-  return [...groups.values()].map((group) => mergeFundingCardGroup(group, entityIndex, entityDecisions));
+  return [...groups.values()].map((group) => (
+    mergeFundingCardGroup(group, entityIndex, entityDecisions, companyIdentityReview)
+  ));
 }
 
 export function dedupeFundingRounds(inputCards = []) {
@@ -224,12 +279,17 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
   const bundles = listBundles(projectRoot);
   const directions = directionById(projectRoot);
   const productForms = productFormNames(projectRoot);
-  const productFormDecisions = productFormDecisionMap(projectRoot, productForms);
+  const marketCategories = facetValueNames(projectRoot, "ai_market_category");
+  const productFormDecisions = productFormDecisionMap(projectRoot, productForms, marketCategories);
   const entityIndex = readJson(path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
   const entityDecisions = readJson(
     path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
     {},
   );
+  const companyIdentityReview = readJson(path.join(
+    projectRoot,
+    "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json",
+  ), {});
   const relationshipEntityIds = new Set([
     ...(entityIndex.companies || []),
     ...(entityIndex.products || []),
@@ -243,7 +303,12 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       if (!current || card.published_at > current.published_at) cardByEvent.set(card.triggered_by_event_id, card);
     }
   }
-  const cards = aggregateFundingRoundCards([...cardByEvent.values()], entityIndex, entityDecisions)
+  const cards = aggregateFundingRoundCards(
+    [...cardByEvent.values()],
+    entityIndex,
+    entityDecisions,
+    companyIdentityReview,
+  )
     .sort((left, right) => {
       return String(right.as_of_date || "").localeCompare(String(left.as_of_date || ""))
         || String(right.financing?.announced_at || "").localeCompare(String(left.financing?.announced_at || ""))
@@ -254,14 +319,30 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       const productFormId = productFormDecision.id;
       const productFormName = productForms.get(productFormId);
       if (!productFormName) throw new Error(`Unknown TAG-V4 product_form value: ${productFormId}`);
+      const marketCategoryDecision = fundingMarketCategoryDecision(
+        card,
+        productFormDecisions,
+        productFormId,
+      );
+      const marketCategoryName = marketCategories.get(marketCategoryDecision.id);
+      if (!marketCategoryName) {
+        throw new Error(`Unknown TAG-V4 ai_market_category value: ${marketCategoryDecision.id}`);
+      }
       return {
         ...card,
-        application_category: {
+        product_form: {
           dimension: "product_form",
           id: productFormId,
           name: productFormName,
           method: productFormDecision.method,
           decision_id: productFormDecision.decision_id,
+        },
+        market_category: {
+          dimension: "ai_market_category",
+          id: marketCategoryDecision.id,
+          name: marketCategoryName,
+          method: marketCategoryDecision.method,
+          decision_id: marketCategoryDecision.decision_id,
         },
         analysis: {
           ...card.analysis,
@@ -282,24 +363,33 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
     ...bundles.map((bundle) => bundle.meta?.generated_at || ""),
     ...cards.map((card) => card.published_at || ""),
   ].filter(Boolean).sort().at(-1) || "";
-  const usedProductFormIds = new Set(cards.map((card) => card.application_category?.id).filter(Boolean));
+  const usedProductFormIds = new Set(cards.map((card) => card.product_form?.id).filter(Boolean));
   const productFormFilters = [...productForms.entries()]
     .filter(([id]) => usedProductFormIds.has(id))
     .map(([id, name]) => ({ dimension: "product_form", id, name }));
+  const marketCategoryFilters = [...marketCategories.entries()]
+    .filter(([id]) => cards.some((card) => card.market_category?.id === id))
+    .map(([id, name]) => ({ dimension: "ai_market_category", id, name }));
   return {
     meta: {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
       funding_insight_version: FUNDING_INSIGHT_VERSION,
       site_version: "SITE-V4.4.1-china-market-scope",
-      column_version: "FUNDING-INSIGHT-V1.1.1-primary-product-form",
+      column_version: "FUNDING-INSIGHT-V1.2.0-market-category",
       latest_date: latestDate,
       generated_at: generatedAt,
       card_count: cards.length,
       duplicate_rounds_removed: cardByEvent.size - cards.length,
       automatic_publication: true,
+      market_category_framework: {
+        name: "CB Insights AI 100",
+        url: "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2025/",
+        categories: ["AI Infrastructure", "Horizontal AI", "Vertical AI"],
+      },
     },
     filters: {
       rounds: [...new Set(cards.map((card) => card.financing.round).filter(Boolean))].sort(),
+      market_categories: marketCategoryFilters,
       product_forms: productFormFilters,
       directions: [...new Map(cards
         .map((card) => card.analysis?.related_direction)
@@ -321,9 +411,18 @@ export function writeFundingInsightsFrontstage(projectRoot = root) {
     path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/entity-link-decisions.json"),
     {},
   );
+  const companyIdentityReview = readJson(path.join(
+    projectRoot,
+    "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json",
+  ), {});
   const entityReviewQueue = buildFundingEntityReviewQueue(listBundles(projectRoot)
     .flatMap((bundle) => bundle.cards || [])
-    .map((card) => normalizeFundingInsightCard(card, entityIndex, entityDecisions)));
+    .map((card) => normalizeFundingInsightCard(
+      card,
+      entityIndex,
+      entityDecisions,
+      companyIdentityReview,
+    )));
   const entityReviewOutput = path.join(
     projectRoot,
     "01-SiteV2/content/12-applications/funding-insights/entity-review-queue.json",

@@ -7,3 +7,5 @@
 5. Fail when a definition matches one of its explicit exclusion terms.
 6. Fail when Tags or Facets influence eligibility, value, ranking, relationship direction or truth.
 7. Pass when frozen V3 Card tag-shape observations remain non-blocking compatibility diagnostics while current TAG-V4 assertions are blocked by the Data Center V4 integrity gate.
+8. Fail when market layer, product form, industry, use case, or technology are flattened into peer values of one user-facing classification.
+9. Pass when an adopted external framework records its source, exact adopted levels, and dimension boundary.

@@ -41,19 +41,20 @@
       ...(card.comparisons || []).map((item) => item.name),
       card.analysis?.capital_judgment,
       card.analysis?.sector,
-      card.application_category?.name,
+      card.market_category?.name,
+      card.product_form?.name,
     ].join(" ").toLowerCase();
   }
 
   function render() {
     const query = String(form.elements.namedItem("query").value || "").trim().toLowerCase();
     const round = form.elements.namedItem("round").value;
-    const productForm = form.elements.namedItem("product_form").value;
+    const marketCategory = form.elements.namedItem("market_category").value;
     state.filtered = state.cards.filter((card) => (
       (!state.companyId || card.company?.entity_id === state.companyId)
       && (!query || cardSearchText(card).includes(query))
       && (!round || card.financing?.round === round)
-      && (!productForm || card.application_category?.id === productForm)
+      && (!marketCategory || card.market_category?.id === marketCategory)
     ));
     if (!state.filtered.length) {
       list.innerHTML = '<div class="fi-empty">当前筛选条件下暂无融资透视</div>';
@@ -67,7 +68,7 @@
         <article class="fi-card">
           <header class="fi-card-head">
             <div class="fi-card-meta">
-              <span>${escapeHtml(card.application_category?.name || card.analysis?.sector || "AI 应用")}</span>
+              <span>${escapeHtml(card.market_category?.name || "AI 市场")} · ${escapeHtml(card.product_form?.name || "产品形态未分类")}</span>
               <time>收录于 ${escapeHtml(card.as_of_date || card.financing?.announced_at)}</time>
             </div>
             <div class="fi-card-title-row">
@@ -396,7 +397,7 @@
     }
     $("[data-latest-date]").textContent = data.meta?.latest_date ? `更新于 ${data.meta.latest_date}` : "暂无更新";
     fillSelect("round", data.filters?.rounds || []);
-    fillSelect("product_form", data.filters?.product_forms || []);
+    fillSelect("market_category", data.filters?.market_categories || []);
     form.addEventListener("input", render);
     form.addEventListener("change", render);
     $("[data-dialog-close]").addEventListener("click", closeDetail);

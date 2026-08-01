@@ -231,6 +231,13 @@
             "compute_service"
           ]
         },
+        "market_category_id": {
+          "enum": [
+            "ai_infrastructure",
+            "horizontal_ai",
+            "vertical_ai"
+          ]
+        },
         "sector": { "type": "string", "minLength": 1 }
       },
       "additionalProperties": false

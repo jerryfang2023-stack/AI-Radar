@@ -4,8 +4,8 @@ import path from "node:path";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.1";
-export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.1";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.3";
+export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.2";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.4";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
 export const FUNDING_PRODUCT_FORM_IDS = new Set([
@@ -21,6 +21,11 @@ export const FUNDING_PRODUCT_FORM_IDS = new Set([
   "chip_accelerator",
   "compute_system",
   "compute_service",
+]);
+export const FUNDING_MARKET_CATEGORY_IDS = new Set([
+  "ai_infrastructure",
+  "horizontal_ai",
+  "vertical_ai",
 ]);
 
 export function clean(value = "") {
@@ -182,6 +187,48 @@ export function acceptedFundingEntityDecisions(entityIndex = {}, decisionFile = 
   return accepted;
 }
 
+export function acceptedFundingCompanyIdentityDecisions(reviewFile = {}) {
+  const accepted = new Map();
+  const reviewDecisions = reviewFile.decisions || [];
+  const decisions = new Map();
+  for (const decision of reviewDecisions) {
+    if (decision.review_status !== "accepted") continue;
+    if (!decision.entity_id || decisions.has(decision.entity_id)) {
+      throw new Error(`Duplicate or missing funding company identity decision: ${decision.entity_id || "missing"}`);
+    }
+    if (!new Set(["correct", "merge"]).has(decision.action)) {
+      throw new Error(`Unknown funding company identity action for ${decision.entity_id}: ${decision.action || "missing"}`);
+    }
+    if (decision.current?.catalog_type !== "company" || decision.canonical?.catalog_type !== "company") {
+      throw new Error(`Funding company identity decision must resolve company entities: ${decision.entity_id}`);
+    }
+    if (!clean(decision.current?.name) || !clean(decision.canonical?.name)) {
+      throw new Error(`Funding company identity decision is missing a company name: ${decision.entity_id}`);
+    }
+    if (!clean(decision.evidence?.source_url) || !clean(decision.evidence?.quote) || !clean(decision.rationale)) {
+      throw new Error(`Funding company identity decision is missing evidence or rationale: ${decision.entity_id}`);
+    }
+    if (decision.action === "merge" && !clean(decision.merge_into_entity_id)) {
+      throw new Error(`Funding company identity merge target is missing: ${decision.entity_id}`);
+    }
+    decisions.set(decision.entity_id, decision);
+  }
+  for (const decision of decisions.values()) {
+    const target = decision.action === "merge" ? decisions.get(decision.merge_into_entity_id) : decision;
+    if (!target) {
+      throw new Error(`Funding company identity merge target is not accepted: ${decision.merge_into_entity_id}`);
+    }
+    if (decision.action === "merge" && clean(target.canonical?.name) !== clean(decision.canonical?.name)) {
+      throw new Error(`Funding company identity canonical name mismatch: ${decision.entity_id}`);
+    }
+    accepted.set(decision.entity_id, {
+      id: decision.action === "merge" ? decision.merge_into_entity_id : decision.entity_id,
+      name: target.canonical.name,
+    });
+  }
+  return accepted;
+}
+
 function resolvedFundingEntity(name, kind, resolver, acceptedDecisions) {
   const allowed = kind === "product" ? ["产品/服务"] : kind === "person" ? ["人物"] : ["公司/机构"];
   return resolver(name, allowed)
@@ -258,10 +305,18 @@ export function fundingEvidenceProofProblems(card = {}) {
   return [...new Set(problems)];
 }
 
-export function normalizeFundingInsightCard(inputCard = {}, entityIndex = {}, decisionFile = {}) {
+export function normalizeFundingInsightCard(
+  inputCard = {},
+  entityIndex = {},
+  decisionFile = {},
+  companyIdentityReview = {},
+) {
   const card = structuredClone(inputCard);
   const resolve = entityResolver(entityIndex);
   const acceptedDecisions = acceptedFundingEntityDecisions(entityIndex, decisionFile);
+  const reviewedCompanies = acceptedFundingCompanyIdentityDecisions(companyIdentityReview);
+  const resolvedCompany = reviewedCompanies.get(card.company?.entity_id)
+    || resolvedFundingEntity(card.company?.name, "organization", resolve, acceptedDecisions);
   const storedOriginalRound = clean(card.financing?.round_original);
   const storedRound = clean(card.financing?.round);
   const normalizedOriginalRound = normalizeFundingRound(storedOriginalRound);
@@ -304,7 +359,9 @@ export function normalizeFundingInsightCard(inputCard = {}, entityIndex = {}, de
   ])];
   card.company = {
     ...(card.company || {}),
-    name: descriptiveCompanyTail(card.company?.name) || card.company?.name,
+    entity_id: resolvedCompany?.id || card.company?.entity_id,
+    name: resolvedCompany?.name || descriptiveCompanyTail(card.company?.name) || card.company?.name,
+    full_name: card.company?.full_name || card.company?.name,
     founders,
   };
   card.financing = {
@@ -827,6 +884,10 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
   else if (!FUNDING_PRODUCT_FORM_IDS.has(clean(payload.analysis.product_form_id))) {
     problems.push("product_form_id_unknown");
   }
+  if (!clean(payload?.analysis?.market_category_id)) problems.push("market_category_id_missing");
+  else if (!FUNDING_MARKET_CATEGORY_IDS.has(clean(payload.analysis.market_category_id))) {
+    problems.push("market_category_id_unknown");
+  }
   if (!Array.isArray(payload?.analysis?.risks) || !payload.analysis.risks.length) problems.push("risks_missing");
   else if (payload.analysis.risks.some((risk) => !containsChinese(risk))) problems.push("risks_not_chinese");
   if (!containsChinese(payload?.analysis?.sector)) problems.push("sector_not_chinese");
@@ -879,6 +940,9 @@ export function fundingInsightProblems(card = {}) {
   if (!containsChinese(card.analysis?.capital_judgment) || !containsChinese(card.analysis?.sector)) problems.push("analysis_not_chinese");
   if (card.analysis?.product_form_id && !FUNDING_PRODUCT_FORM_IDS.has(clean(card.analysis.product_form_id))) {
     problems.push("product_form_id_unknown");
+  }
+  if (card.analysis?.market_category_id && !FUNDING_MARKET_CATEGORY_IDS.has(clean(card.analysis.market_category_id))) {
+    problems.push("market_category_id_unknown");
   }
   if (!Array.isArray(card.analysis?.investment_rationale)) problems.push("investment_rationale_missing");
   if ((card.analysis?.investment_rationale || []).some((item) => (

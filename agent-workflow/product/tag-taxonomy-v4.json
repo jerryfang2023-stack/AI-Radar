@@ -302,6 +302,22 @@
   ],
   "facets": [
     {
+      "id": "ai_market_category",
+      "name": "AI 市场类别",
+      "definition": "按公司核心对外供给划分的 AI 市场母分类，用于投融资市场地图。采用 CB Insights AI 100 的三类框架，不替代产品形态、行业、应用场景或技术标签。",
+      "selection_rule": "每家公司只选择一个主要市场类别：AI 基础设施提供模型、数据、开发训练、运行或计算底座；通用型 AI 服务跨行业职能或大众任务；行业型 AI 深入一个明确垂直行业。",
+      "reference_framework": {
+        "name": "CB Insights AI 100 category framework",
+        "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2025/",
+        "adopted_levels": ["AI Infrastructure", "Horizontal AI", "Vertical AI"]
+      },
+      "values": [
+        {"id": "ai_infrastructure", "name": "AI 基础设施", "definition": "向其他 AI 产品提供计算、芯片、数据、模型、训练、部署、推理、评估、安全或编排底座。", "includes": ["AI Infrastructure", "AI 基础设施"], "excludes": ["end-user application"], "status": "active"},
+        {"id": "horizontal_ai", "name": "通用型 AI", "definition": "跨多个行业复用、面向通用职能或大众任务的 AI 产品，包括开发、销售、运营、创作、协作和通用助手。", "includes": ["Horizontal AI", "cross-industry AI", "通用型 AI", "跨行业 AI"], "excludes": ["single-industry application", "infrastructure only"], "status": "active"},
+        {"id": "vertical_ai", "name": "行业型 AI", "definition": "围绕一个明确行业的专业数据、流程、监管或物理环境构建的 AI 产品。", "includes": ["Vertical AI", "industry-specific AI", "行业型 AI", "垂直行业 AI"], "excludes": ["cross-industry function", "infrastructure only"], "status": "active"}
+      ]
+    },
+    {
       "id": "product_form",
       "name": "产品形态",
       "definition": "来源明确披露、且公司主要面向客户或用户提供的 AI 产品或服务形态。主分类按核心对外供给判断，不以底层技术、功能卖点、目标行业或未来应用场景代替。",

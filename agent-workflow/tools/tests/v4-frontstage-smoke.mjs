@@ -93,22 +93,22 @@ async function main() {
         const response = await page.goto(`${baseUrl}/${route}`, { waitUntil: "networkidle" });
         await page.waitForTimeout(250);
         let fundingDialog = null;
-        let fundingProductFormFilter = null;
+        let fundingMarketCategoryFilter = null;
         let founderProfile = null;
         if (route === "funding-insights.html") {
-          const productFormSelect = page.locator('select[name="product_form"]');
-          const productFormOptions = await productFormSelect.locator("option").evaluateAll((options) => options
+          const marketCategorySelect = page.locator('select[name="market_category"]');
+          const marketCategoryOptions = await marketCategorySelect.locator("option").evaluateAll((options) => options
             .map((option) => ({ value: option.value, label: option.textContent?.trim() || "" }))
             .filter((option) => option.value));
-          if (productFormOptions.length) {
-            const selected = productFormOptions[0];
-            await productFormSelect.selectOption(selected.value);
+          if (marketCategoryOptions.length) {
+            const selected = marketCategoryOptions[0];
+            await marketCategorySelect.selectOption(selected.value);
             const visibleCategories = await page.locator(".fi-card-meta span:first-child").allTextContents();
-            fundingProductFormFilter = visibleCategories.length > 0
-              && visibleCategories.every((label) => label.trim() === selected.label);
-            await productFormSelect.selectOption("");
+            fundingMarketCategoryFilter = visibleCategories.length > 0
+              && visibleCategories.every((label) => label.trim().startsWith(`${selected.label} ·`));
+            await marketCategorySelect.selectOption("");
           } else {
-            fundingProductFormFilter = false;
+            fundingMarketCategoryFilter = false;
           }
           const firstCard = page.locator("[data-open-id]").first();
           if (await firstCard.count()) {
@@ -244,7 +244,7 @@ async function main() {
           && metrics.reportSectionHeadAlignment?.ok !== false
           && metrics.eventMobileFilters?.ok !== false
           && fundingDialog !== false
-          && fundingProductFormFilter !== false
+          && fundingMarketCategoryFilter !== false
           && founderProfile !== false
           && errors.length === 0;
         results.push({
@@ -254,7 +254,7 @@ async function main() {
           status: response?.status(),
           ...metrics,
           fundingDialog,
-          fundingProductFormFilter,
+          fundingMarketCategoryFilter,
           founderProfile,
           errors,
           ok,

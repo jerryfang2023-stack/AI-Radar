@@ -28,6 +28,7 @@ import {
   aggregateFundingRoundCards,
   buildFundingInsightsFrontstage,
   dedupeFundingRounds,
+  fundingMarketCategoryDecision,
   fundingProductFormDecision,
   fundingProductFormId,
   productFormDecisionMap,
@@ -149,6 +150,7 @@ function validCard() {
     analysis: {
       sector: "企业 AI",
       product_form_id: "enterprise_platform",
+      market_category_id: "horizontal_ai",
       investment_rationale: [],
       capital_judgment: "资本押注的是可重复交付，而不是通用聊天入口。",
       validated_signals: ["已经形成企业工作流产品"],
@@ -690,6 +692,7 @@ test("DeepSeek 研究结果必须逐项引用已抓取来源原文", () => {
       risks: ["交付周期"],
       related_direction_id: "DIR-1",
       product_form_id: "enterprise_platform",
+      market_category_id: "horizontal_ai",
       sector: "企业人工智能",
     },
   };
@@ -725,6 +728,7 @@ test("DeepSeek 可用未披露状态表达只有泛称、没有具体名称的�
       risks: ["具体投资机构未披露"],
       related_direction_id: "",
       product_form_id: "ai_application",
+      market_category_id: "vertical_ai",
       sector: "工业人工智能",
     },
   };
@@ -766,6 +770,7 @@ test("机构投资理由必须来自本轮投资方并保留原文证据", () =>
       risks: ["交付周期仍待规模化验证"],
       related_direction_id: "DIR-1",
       product_form_id: "enterprise_platform",
+      market_category_id: "horizontal_ai",
       sector: "企业人工智能",
     },
   };
@@ -862,6 +867,82 @@ test("同一公司与规范轮次聚合为一张卡并保留全部事件和研�
   assert.equal(cards[0].aggregation.event_count, 2);
   assert.deepEqual(cards[0].customers.map((item) => item.name), ["Customer One"]);
   assert.deepEqual(cards[0].products.map((item) => item.name).sort(), ["Acme Agent", "Acme Studio"]);
+});
+
+test("经审核的公司别名合并会让同一融资轮次跨实体 ID 聚合", () => {
+  const branded = validCard();
+  branded.company.entity_id = "EN-aligned-brand";
+  branded.company.name = "Aligned";
+  branded.triggered_by_event_id = "EV-aligned-brand";
+  const legal = validCard();
+  legal.funding_insight_id = "FI-aligned-legal";
+  legal.company.entity_id = "EN-aligned-legal";
+  legal.company.name = "Team Aligned Inc.";
+  legal.triggered_by_event_id = "EV-aligned-legal";
+  const identityReview = {
+    decisions: [
+      {
+        entity_id: "EN-aligned-brand",
+        current: { name: "Aligned", catalog_type: "company" },
+        canonical: { catalog_type: "company", name: "Aligned" },
+        action: "correct",
+        merge_into_entity_id: "",
+        review_status: "accepted",
+        evidence: { source_url: "https://aligned.example/terms", quote: "Team Aligned, Inc. (Aligned)" },
+        rationale: "瀹樻柟鏉℃纭鍝佺墝涓庢硶寰嬪疄浣撱€?",
+      },
+      {
+        entity_id: "EN-aligned-legal",
+        current: { name: "Team Aligned Inc.", catalog_type: "company" },
+        canonical: { catalog_type: "company", name: "Aligned" },
+        action: "merge",
+        merge_into_entity_id: "EN-aligned-brand",
+        review_status: "accepted",
+        evidence: { source_url: "https://aligned.example/terms", quote: "Team Aligned, Inc. (Aligned)" },
+        rationale: "瀹樻柟鏉℃纭涓轰竴瀹跺叕鍙搞€?",
+      },
+    ],
+  };
+  const cards = aggregateFundingRoundCards([branded, legal], {}, {}, identityReview);
+  assert.equal(cards.length, 1);
+  assert.equal(cards[0].company.entity_id, "EN-aligned-brand");
+  assert.equal(cards[0].company.name, "Aligned");
+  assert.deepEqual(cards[0].source_event_ids.sort(), ["EV-aligned-brand", "EV-aligned-legal"]);
+});
+
+test("company identity decisions require evidence and an accepted merge target", () => {
+  const invalidEvidence = {
+    decisions: [{
+      entity_id: "EN-aligned-brand",
+      current: { name: "Aligned", catalog_type: "company" },
+      canonical: { name: "Aligned", catalog_type: "company" },
+      action: "correct",
+      merge_into_entity_id: "",
+      review_status: "accepted",
+      evidence: {},
+      rationale: "",
+    }],
+  };
+  assert.throws(
+    () => aggregateFundingRoundCards([validCard()], {}, {}, invalidEvidence),
+    /missing evidence or rationale/u,
+  );
+
+  const missingTarget = structuredClone(invalidEvidence);
+  missingTarget.decisions[0] = {
+    ...missingTarget.decisions[0],
+    entity_id: "EN-aligned-legal",
+    current: { name: "Team Aligned Inc.", catalog_type: "company" },
+    canonical: { name: "Aligned", catalog_type: "company" },
+    action: "merge",
+    merge_into_entity_id: "EN-aligned-brand",
+    evidence: { source_url: "https://aligned.example/terms", quote: "Team Aligned, Inc. (Aligned)" },
+    rationale: "瀹樻柟鏉℃纭涓轰竴瀹跺叕鍙搞€?",
+  };
+  assert.throws(
+    () => aggregateFundingRoundCards([validCard()], {}, {}, missingTarget),
+    /merge target is not accepted/u,
+  );
 });
 
 test("未披露和多轮融资也严格按公司与规范轮次聚合", () => {
@@ -969,10 +1050,16 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
       people: [],
     }));
     fs.writeFileSync(path.join(productDir, "tag-taxonomy-v4.json"), JSON.stringify({
-      facets: [{
-        id: "product_form",
-        values: [{ id: "enterprise_platform", name: "企业 AI 平台", status: "active" }],
-      }],
+      facets: [
+        {
+          id: "product_form",
+          values: [{ id: "enterprise_platform", name: "企业 AI 平台", status: "active" }],
+        },
+        {
+          id: "ai_market_category",
+          values: [{ id: "horizontal_ai", name: "通用型 AI", status: "active" }],
+        },
+      ],
     }));
     const data = buildFundingInsightsFrontstage(tempRoot);
     const rebuilt = buildFundingInsightsFrontstage(tempRoot);
@@ -981,13 +1068,25 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
     assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");
-    assert.deepEqual(data.cards[0].application_category, {
+    assert.deepEqual(data.cards[0].product_form, {
       dimension: "product_form",
       id: "enterprise_platform",
       name: "企业 AI 平台",
       method: "card_explicit",
       decision_id: "",
     });
+    assert.deepEqual(data.cards[0].market_category, {
+      dimension: "ai_market_category",
+      id: "horizontal_ai",
+      name: "通用型 AI",
+      method: "card_explicit",
+      decision_id: "",
+    });
+    assert.deepEqual(data.filters.market_categories, [{
+      dimension: "ai_market_category",
+      id: "horizontal_ai",
+      name: "通用型 AI",
+    }]);
     assert.deepEqual(data.filters.product_forms, [{
       dimension: "product_form",
       id: "enterprise_platform",
@@ -1010,12 +1109,12 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
   assert.doesNotMatch(html, /href="funding-insights\.html" aria-current="page">融资透视/u);
   assert.doesNotMatch(html, /href="opportunity-map\.html">机会地图/u);
   assert.match(html, /assets\/funding-insights\.js/u);
-  assert.match(html, /<span>产品方向<\/span>[\s\S]*<select name="product_form"><option value="">全部产品方向<\/option><\/select>/u);
+  assert.match(html, /<span>AI 市场类别<\/span>[\s\S]*<select name="market_category"><option value="">全部类别<\/option><\/select>/u);
   assert.doesNotMatch(html, /data-category-tabs|按赛道查看融资项目/u);
   assert.doesNotMatch(html, /data-status|fi-status/u);
-  assert.match(html, /<form class="fi-controls"[\s\S]*name="query"[\s\S]*name="round"[\s\S]*name="product_form"[\s\S]*<\/form>/u);
-  assert.match(script, /fillSelect\("product_form", data\.filters\?\.product_forms \|\| \[\]\)/u);
-  assert.match(script, /card\.application_category\?\.id === productForm/u);
+  assert.match(html, /<form class="fi-controls"[\s\S]*name="query"[\s\S]*name="round"[\s\S]*name="market_category"[\s\S]*<\/form>/u);
+  assert.match(script, /fillSelect\("market_category", data\.filters\?\.market_categories \|\| \[\]\)/u);
+  assert.match(script, /card\.market_category\?\.id === marketCategory/u);
   assert.match(script, /收录于 \$\{escapeHtml\(card\.as_of_date/u);
   assert.match(script, /融资 \$\{escapeHtml\(card\.financing\?\.announced_at[\s\S]*· 收录/u);
   const cardTemplate = script.slice(
@@ -1086,7 +1185,26 @@ test("融资透视主产品形态优先使用卡片显式判断和人工复核�
   });
 });
 
-test("七月50个融资案例的人工产品形态复核表完整并覆盖已知误分", () => {
+test("融资透视市场母分类优先使用卡片显式判断和人工复核", () => {
+  const card = validCard();
+  const manual = new Map([["EV-1", {
+    decision_id: "PF-TEST",
+    market_category_id: "vertical_ai",
+  }]]);
+  assert.deepEqual(fundingMarketCategoryDecision(card, manual, "enterprise_platform"), {
+    id: "horizontal_ai",
+    method: "card_explicit",
+    decision_id: "",
+  });
+  delete card.analysis.market_category_id;
+  assert.deepEqual(fundingMarketCategoryDecision(card, manual, "enterprise_platform"), {
+    id: "vertical_ai",
+    method: "manual_review",
+    decision_id: "PF-TEST",
+  });
+});
+
+test("七月50个来源案例去重为49家公司并完成双层分类复核", () => {
   const productForms = new Map(JSON.parse(fs.readFileSync(
     path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"),
     "utf8",
@@ -1096,9 +1214,15 @@ test("七月50个融资案例的人工产品形态复核表完整并覆盖已知
     path.join(root, "01-SiteV2/content/12-applications/funding-insights/product-form-decisions.json"),
     "utf8",
   ));
-  assert.equal(ledger.decisions.length, 50);
+  assert.equal(ledger.decisions.length, 49);
+  assert.equal(ledger.meta.source_event_count, 52);
+  assert.equal(decisions.get("EV-81bd541510a530f0").decision_id, "PF-202607-005");
+  assert.equal(decisions.get("EV-439ba8d5f2f575c4").decision_id, "PF-202607-005");
   assert.equal(decisions.get("EV-20d762872664fddb").product_form_id, "data_infrastructure");
+  assert.equal(decisions.get("EV-20d762872664fddb").market_category_id, "ai_infrastructure");
   assert.equal(decisions.get("EV-f6a72cddbda748b3").product_form_id, "enterprise_platform");
+  assert.equal(decisions.get("EV-f6a72cddbda748b3").market_category_id, "horizontal_ai");
   assert.equal(decisions.get("EV-cded77b1de2db61a").product_form_id, "model");
   assert.equal(decisions.get("EV-6e516b6e68def9cf").product_form_id, "compute_service");
+  assert.equal(decisions.get("EV-bffc68e7bb4d598b").market_category_id, "vertical_ai");
 });
