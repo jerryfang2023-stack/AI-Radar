@@ -131,7 +131,8 @@ function migrateBundleDirectory(directory, store) {
     raw.schema_version = "RAW-V4.0";
     raw.body_ref = evidenceRef(raw.content_hash);
     raw.body_length = body.length
-      || Number(store.byContentHash.get(String(raw.content_hash || "").toLowerCase())?.[0]?.body_length || 0);
+      || Number(store.byContentHash.get(String(raw.content_hash || "").toLowerCase())?.[0]?.body_length || 0)
+      || Number(raw.body_length || 0);
     raw.body_storage = "private_evidence_store";
     delete raw.body_original;
     delete raw.body_clean;

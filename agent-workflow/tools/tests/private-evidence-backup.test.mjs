@@ -28,6 +28,22 @@ test("private evidence backup assertion supports cloud runs without a local Vaul
   assert.match(assertion, /private evidence backup is missing \$\{intakeEvidenceGaps\.length\} RawDocument content hash/u);
 });
 
+test("Vault sync blocks incomplete production evidence and preserves known body lengths", () => {
+  const sync = fs.readFileSync(
+    path.join(process.cwd(), "agent-workflow/tools/sync-guanlan-vault.mjs"),
+    "utf8",
+  );
+  const migrate = fs.readFileSync(
+    path.join(process.cwd(), "agent-workflow/tools/migrate-private-evidence-source.mjs"),
+    "utf8",
+  );
+
+  const scopedAssertion = sync.indexOf("`--date=${productionDate}`");
+  const migration = sync.indexOf('"agent-workflow/tools/migrate-private-evidence-source.mjs"');
+  assert.ok(scopedAssertion >= 0 && scopedAssertion < migration);
+  assert.match(migrate, /Number\(raw\.body_length \|\| 0\)/u);
+});
+
 test("private evidence backup deduplicates bodies by content_hash and isolates historical sources", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-root-"));
   const backupRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-private-evidence-backup-"));
