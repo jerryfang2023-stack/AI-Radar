@@ -28,7 +28,10 @@ export function evidenceRef(contentHash) {
 }
 
 export function loadPrivateEvidenceStore(root, options = {}) {
-  const backupRoot = resolvePrivateEvidenceBackupRoot(root, { required: options.required !== false });
+  const backupRoot = resolvePrivateEvidenceBackupRoot(root, {
+    required: options.required !== false,
+    backupRoot: options.backupRoot,
+  });
   if (!backupRoot) return null;
   const manifestFile = path.join(backupRoot, "manifest.json");
   const catalogFile = path.join(backupRoot, "catalog.jsonl");
@@ -113,7 +116,10 @@ function resolveEntry(store, locator, contentHash = "", sourceUrl = "", dataDate
 }
 
 export function loadPrivateEvidenceRecord(root, locator, contentHash = "", options = {}) {
-  const store = loadPrivateEvidenceStore(root, { required: options.required !== false });
+  const store = loadPrivateEvidenceStore(root, {
+    required: options.required !== false,
+    backupRoot: options.backupRoot,
+  });
   if (!store) return null;
   const entry = resolveEntry(
     store,

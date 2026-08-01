@@ -185,7 +185,7 @@ test("private evidence lookup prefers the requested date for repeated content", 
     root,
     evidenceRef(contentHash),
     contentHash,
-    { sourceUrl, dataDate: "2026-07-31" },
+    { sourceUrl, dataDate: "2026-07-31", backupRoot },
   );
   assert.equal(loaded.entry.data_date, "2026-07-31");
   assert.equal(loaded.metadata.original_url, `${sourceUrl}/`);
