@@ -672,6 +672,38 @@ test("funding organization is recovered from accepted Claim evidence when the ti
   assert.ok(event.entities.includes(organization.entity_id));
 });
 
+test("Chinese funding organization and qualitative amount are recovered from accepted Claim evidence", () => {
+  const bundle = buildBundle([
+    entry(
+      "claim-led-chinese-funding-company",
+      "国内唯一做多模态长记忆的公司，融资数千万，押注主动智能",
+      "近日，丘脑智能已完成数千万元种子轮融资，投资方包括深圳一线基金和产业资本，本轮融资主要用于技术研发以及人才队伍补充。",
+      { language: "zh" },
+    ),
+  ], taxonomy, date, "2026-08-01T00:00:00.000Z");
+  const event = bundle.canonical_events[0];
+  const organization = bundle.entities.find((entity) => entity.canonical_name === "丘脑智能");
+
+  assert.equal(event.event_type, "funding");
+  assert.ok(organization);
+  assert.ok(event.entities.includes(organization.entity_id));
+  assert.ok(!bundle.entities.some((entity) => entity.canonical_name === "国内唯一做多模态长记忆的公司"));
+  assert.ok(event.metrics.includes("数千万元"));
+});
+
+test("a secured AI infrastructure contract with a dollar value is not funding", () => {
+  const bundle = buildBundle([
+    entry(
+      "axe-compute-cluster-contract",
+      "Axe Compute secures $1.5B AI GPU cluster deal",
+      "Axe Compute secured a five-year $1.5 billion dedicated AI infrastructure contract.",
+    ),
+  ], taxonomy, date, "2026-08-01T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "procurement_contract");
+  assert.ok(bundle.claims.every((claim) => claim.claim_type !== "funding"));
+});
+
 test("entity-link repair preserves an accepted bundle while restoring missing organizations", () => {
   const bundle = buildBundle([
     entry(

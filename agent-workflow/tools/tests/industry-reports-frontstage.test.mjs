@@ -141,7 +141,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   for (const [file, target] of redirects) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
     assert.match(html, new RegExp(`url=${target.replace(/[?]/gu, "\\?")}`, "u"));
-    assert.match(html, /SITE-V4\.4\.0-two-center-focus/u);
+    assert.match(html, /SITE-V4\.4\.1-china-market-scope/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar/u);
   }
 
@@ -150,7 +150,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   assert.ok(reportPages.length >= 2);
   for (const file of reportPages) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
-    assert.match(html, /SITE-V4\.4\.0-two-center-focus/u);
+    assert.match(html, /SITE-V4\.4\.1-china-market-scope/u);
     assert.match(html, /REPORTS-V1\.2\.0-research-hub/u);
     assert.match(html, /assets\/data-center-v4\.css/u);
     assert.match(html, /class="dc-sidebar"/u);
