@@ -62,17 +62,17 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Funding Insight generator Skill | guanlan-funding-insight-generator v1.1.0 |
 | First-Line Viewpoints monitor Skill | guanlan-first-line-viewpoints-monitor v1.1.3 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.7 |
-| Follow-builders support Skill | follow-builders v1.0.1 |
+| Follow-builders support Skill | follow-builders v2.0.0 |
 | Weekly business-change content Skill | guanlan-weekly-business-change-radar v1.2.0 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.3.0 |
 | Daily source monitor Skill | guanlan-daily-monitor v1.2.1 |
 | Source-intake quality gate Skill | guanlan-monitor-quality-gate v1.2.0 |
 | Source-intake QC Skill | guanlan-daily-monitor-qc v1.2.0 |
-| Skill governance editor | guanlan-skill-editor v1.0.2 |
+| Skill governance editor | guanlan-skill-editor v1.1.0 |
 | Code and rule auditor | guanlan-code-rule-auditor v1.1.0 |
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
-| Skill Store version | v1.8.0 V4 retirement governance |
+| Skill Store version | v1.9.0 V4 semantic governance |
 | Git tag | `v4.6.1-china-market-scope` |
 | Current entries | Data Center: Event Library / Community Intelligence / First-Line Viewpoints / Entity Library. Application Center: Trend Radar / Guanlan Research. Funding Insights is a research subroute; Opportunity Map is an unlisted internal lab; Dashboard is backend. |
 
@@ -106,14 +106,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Guanlan Research remains lane-independent under `REPORTS-V1.2.0-research-hub`; report content and rendering do not depend on Opportunity Map or Direction Card generation succeeding.
 - Trend Radar is versioned independently as `TRADAR-V1.0.1-china-market-filter`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage and China-market scope filtering, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
 - Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.1.0-card-integrity`. It normalizes free-text rounds into stable codes and Chinese labels, keeps only explicitly current-round investors in the public investor field, moves historical or ambiguous investors into a separate evidence-backed collection, aggregates repeated company-and-round disclosures, and gives every card a structured investment thesis plus explicit customer-research status. Verified financing with only generic investor categories may publish with an empty investor list only when it declares `investor_disclosure_status=not_disclosed` and retains the `investors_missing` risk marker; generic categories never become institutions. Exact canonical entity matches link immediately; unresolved product and founder names enter an evidence-backed review queue and cannot mutate V4 entities automatically.
-- Skill Store `v1.8.0` migrates current source-intake, report, opportunity, agent, and audit instructions off retired V3 interfaces and extends retirement checks to governance and deployable data.
+- Skill Store `v1.9.0` aligns active skills with current V4 and seven-task automation contracts, removes generic Follow Builders onboarding/scheduler rules, and gates stale raw contracts and oversized core instructions.
 - `guanlan-code-rule-auditor` v1.1.0 audits V4 facts, applications, operations, deployment, and the permanent V3-retirement boundary; a green runtime-only gate is no longer sufficient when current instructions or deployable files still reference retired inputs.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - No internal V3 compatibility data remains. Opportunity Map, historical analytics, Guanlan Vault projections, and operations read V4-native data only.
 - Current V4 lane skills must encode recurring failures in gates or evals.
 - Daily supervision and Codex handoff are routed through the consolidated Closure controller. Retired Hermes inbox items and dated May/June run reports are recoverable through Git history only.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v1.8.0`. Current Skill metadata, evals, registry entries, mirrors, and dashboard enforce the V4 retirement boundary while preserving Data Center V4 and independent application lanes.
+- Skill Store governance is versioned separately as `v1.9.0`. Current Skill metadata, evals, registry entries, mirrors, and dashboard enforce V4 semantic and seven-task automation boundaries while preserving independent application lanes.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages

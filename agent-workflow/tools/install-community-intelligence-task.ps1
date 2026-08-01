@@ -3,6 +3,7 @@ param(
   [string]$TaskName = "WaveSight Community Intelligence Daily",
   [string]$At = "08:30",
   [string]$CdpUrl = "http://127.0.0.1:9333",
+  [string]$RuntimePath = "",
   [int]$MaxAttempts = 2,
   [int]$RetryDelaySeconds = 300,
   [switch]$NoPublishAfterSuccess,
@@ -34,7 +35,11 @@ $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::Invari
 $quotedScript = '"' + $runScript + '"'
 $quotedRepo = '"' + $repo + '"'
 $quotedCdpUrl = '"' + $CdpUrl + '"'
-$argument = "-NoProfile -ExecutionPolicy Bypass -File $quotedScript -RepoPath $quotedRepo -CdpUrl $quotedCdpUrl -MaxAttempts $MaxAttempts -RetryDelaySeconds $RetryDelaySeconds"
+if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
+$RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
+New-Item -ItemType Directory -Path $RuntimePath -Force | Out-Null
+$quotedRuntime = '"' + $RuntimePath + '"'
+$argument = "-NoProfile -ExecutionPolicy Bypass -File $quotedScript -RepoPath $quotedRepo -CdpUrl $quotedCdpUrl -RuntimePath $quotedRuntime -MaxAttempts $MaxAttempts -RetryDelaySeconds $RetryDelaySeconds"
 
 if (-not $NoPublishAfterSuccess) {
   $argument = $argument + " -PublishAfterSuccess"
@@ -64,6 +69,7 @@ Write-Host "Runner: $runScript"
 Write-Host "Max attempts: $MaxAttempts"
 Write-Host "Retry delay seconds: $RetryDelaySeconds"
 Write-Host "Publish after success: $(-not $NoPublishAfterSuccess)"
+Write-Host "Runtime reports: $RuntimePath"
 
 if ($RunOnceNow) {
   Start-ScheduledTask -TaskName $TaskName

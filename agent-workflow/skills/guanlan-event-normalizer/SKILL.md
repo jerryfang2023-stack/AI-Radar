@@ -3,12 +3,12 @@ name: guanlan-event-normalizer
 description: Use when extracting exact-span Claims and candidate Entities, classifying EVENT-V1 event type and disclosed status, clustering duplicate events, or recording source conflicts. Do not use for trend, opportunity, importance, advice, page ranking, or tag inference from full pages.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.1.0"
     lane: "Data Center"
     status: "current sub-skill"
     order: 20
     responsibility: "Convert auditable RawDocuments into source-linked Claims, Entities and CanonicalEvents."
-    upstream: "accepted and partial RAW-V3 documents"
+    upstream: "accepted and partial RawDocument records"
     downstream: "CanonicalEvent, relationships, tags and domain projections"
     gates: "exact source spans, event enum, disclosed status, dedupe, conflict preservation"
     recent_learning: "A source channel labeled AI does not make an event AI-industry data; eligibility must be proved by the title or accepted Claims."

@@ -1,85 +1,88 @@
-# TAG-V4.0 Migration and Coverage Report
+# TAG-V4.0 Reprojection and Coverage Audit
 
-- generated_at: 2026-07-18T09:28:11.332Z
+- generated_at: 2026-08-01T07:05:54.523Z
 - taxonomy_status: passed
-- dates: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, 2026-05-23, 2026-05-24, 2026-05-25, 2026-06-01, 2026-06-02, 2026-06-03, 2026-06-04, 2026-06-05, 2026-06-06, 2026-06-07, 2026-06-08, 2026-06-09, 2026-06-10, 2026-06-11, 2026-06-12, 2026-06-13, 2026-06-14, 2026-06-15, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-21, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-28, 2026-06-29, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-04, 2026-07-05, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-12, 2026-07-13, 2026-07-14, 2026-07-15, 2026-07-16, 2026-07-17, 2026-07-18
-- canonical_events: 1320
-- technical_tag_assertions: 918
-- facet_assertions: 952
-- classified_event_coverage: 55.2%
-- technical_tag_event_coverage: 35.5%
-- structured_facet_event_coverage: 35.9%
+- dates: 2026-05-17, 2026-05-18, 2026-05-19, 2026-05-20, 2026-05-21, 2026-05-22, 2026-05-23, 2026-05-24, 2026-05-25, 2026-06-01, 2026-06-02, 2026-06-03, 2026-06-04, 2026-06-05, 2026-06-06, 2026-06-07, 2026-06-08, 2026-06-09, 2026-06-10, 2026-06-11, 2026-06-12, 2026-06-13, 2026-06-14, 2026-06-15, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-21, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-28, 2026-06-29, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-04, 2026-07-05, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-12, 2026-07-13, 2026-07-14, 2026-07-15, 2026-07-16, 2026-07-17, 2026-07-18, 2026-07-19, 2026-07-20, 2026-07-21, 2026-07-22, 2026-07-23, 2026-07-24, 2026-07-25, 2026-07-26, 2026-07-27, 2026-07-28, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01
+- canonical_event_rows: 1871
+- unique_canonical_events: 1772
+- technical_tag_assertions: 1287
+- facet_assertions: 1399
+- claims_with_technical_tags: 1180
+- claims_with_structured_facets: 1175
+- classified_event_coverage: 56.3%
+- technical_tag_event_coverage: 34.8%
+- structured_facet_event_coverage: 37.7%
 
 ## Technical Tag Distribution
 
-- agentic_execution: 612
-- code_generation: 59
-- multimodal: 40
-- on_device: 33
-- embodied_ai: 23
-- long_context: 15
-- video_generation: 13
-- model_context_protocol: 12
-- fine_tuning: 12
-- tool_use: 12
-- guardrails_safety: 12
-- open_weights: 11
-- reasoning: 10
-- retrieval_augmented_generation: 10
-- mixture_of_experts: 10
-- computer_use: 8
-- speech_audio: 8
-- vision_language: 8
-- image_generation: 4
-- distillation: 3
-- human_in_loop: 1
-- inference_optimization: 1
-- quantization: 1
+- agentic_execution: 450 events (820 claim assertions)
+- code_generation: 46 events (74 claim assertions)
+- multimodal: 42 events (60 claim assertions)
+- embodied_ai: 29 events (43 claim assertions)
+- on_device: 27 events (39 claim assertions)
+- open_weights: 25 events (43 claim assertions)
+- long_context: 23 events (26 claim assertions)
+- model_context_protocol: 17 events (17 claim assertions)
+- tool_use: 15 events (15 claim assertions)
+- speech_audio: 13 events (17 claim assertions)
+- mixture_of_experts: 13 events (14 claim assertions)
+- guardrails_safety: 12 events (17 claim assertions)
+- video_generation: 11 events (17 claim assertions)
+- reasoning: 10 events (16 claim assertions)
+- retrieval_augmented_generation: 10 events (10 claim assertions)
+- fine_tuning: 10 events (13 claim assertions)
+- computer_use: 8 events (10 claim assertions)
+- vision_language: 8 events (9 claim assertions)
+- image_generation: 8 events (11 claim assertions)
+- distillation: 8 events (10 claim assertions)
+- human_in_loop: 3 events (3 claim assertions)
+- inference_optimization: 2 events (2 claim assertions)
+- quantization: 1 events (1 claim assertions)
 
 ## Structured Facet Distribution
 
-- product_form.model: 155
-- product_form.chip_accelerator: 68
-- use_case.robotics_automation: 60
-- product_form.enterprise_platform: 57
-- product_form.data_infrastructure: 54
-- industry.manufacturing: 51
-- industry.healthcare_life_sciences: 50
-- target_user.enterprise: 41
-- use_case.cybersecurity: 40
-- product_form.ai_application: 39
-- deployment_model.edge_device: 32
-- use_case.software_development: 31
-- industry.financial_services: 29
-- industry.retail_ecommerce: 22
-- use_case.enterprise_operations: 22
-- industry.media_entertainment: 20
-- use_case.customer_service: 17
-- target_user.consumer: 14
-- product_form.ai_device: 14
-- industry.technology: 12
-- product_form.compute_system: 12
-- product_form.robot: 11
+- product_form.model: 226
+- product_form.chip_accelerator: 115
+- use_case.robotics_automation: 111
+- industry.manufacturing: 90
+- product_form.enterprise_platform: 77
+- use_case.cybersecurity: 73
+- product_form.data_infrastructure: 72
+- industry.healthcare_life_sciences: 61
+- industry.financial_services: 50
+- product_form.ai_application: 49
+- target_user.enterprise: 48
+- use_case.software_development: 45
+- deployment_model.edge_device: 38
+- use_case.customer_service: 34
+- industry.retail_ecommerce: 34
+- product_form.compute_system: 28
+- use_case.enterprise_operations: 25
+- industry.media_entertainment: 24
+- industry.technology: 21
+- product_form.ai_device: 19
+- target_user.consumer: 17
+- use_case.data_analysis: 15
+- product_form.robot: 15
+- target_user.developer: 11
+- deployment_model.cloud: 11
 - target_user.researcher_education: 10
-- deployment_model.cloud: 9
+- industry.professional_services: 10
+- use_case.content_creation: 9
 - product_form.developer_tool: 9
-- target_user.developer: 8
 - use_case.knowledge_search: 8
-- industry.professional_services: 8
 - deployment_model.on_premise: 7
-- use_case.data_analysis: 7
+- industry.government_public_sector: 7
 - industry.telecommunications: 6
-- product_form.api_service: 5
+- product_form.api_service: 6
+- use_case.research_science: 5
 - industry.automotive_transportation: 5
-- use_case.research_science: 4
-- use_case.content_creation: 4
-- industry.government_public_sector: 4
-- product_form.security_product: 3
+- product_form.security_product: 4
 - deployment_model.hybrid: 2
 - deployment_model.embedded: 1
 - industry.education: 1
 
-## Unused Active Definitions
+## Unused Active Definitions (Review Candidates)
 
 - technical_tags: memory_system
 - facet_values: use_case.sales_marketing, use_case.education_learning, industry.energy_utilities, target_user.government

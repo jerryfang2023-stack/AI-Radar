@@ -4,6 +4,7 @@ param(
   [string]$RecoveryAt = "09:15",
   [string]$ClosureAt = "09:50",
   [string]$FinalClosureAt = "16:45",
+  [string]$RuntimePath = "",
   [Alias("DisableLegacyTasks")]
   [bool]$RemoveLegacyTasks = $true,
   [switch]$RunMorningNow
@@ -39,11 +40,13 @@ function Register-ControllerTask {
     [string]$Phase,
     [string]$Runner,
     [string]$NodeExecutable,
-    [string]$WorkingDirectory
+    [string]$WorkingDirectory,
+    [string]$RuntimeDirectory
   )
   $time = [DateTime]::ParseExact($At, "HH:mm", [Globalization.CultureInfo]::InvariantCulture)
   $argument = '"' + $Runner + '" --phase=' + $Phase
   if ($Phase -eq "closure") { $argument += " --invoke-codex=true" }
+  $argument += ' --runtime-dir="' + $RuntimeDirectory + '"'
   $action = New-ScheduledTaskAction -Execute $NodeExecutable -Argument $argument -WorkingDirectory $WorkingDirectory
   $trigger = New-ScheduledTaskTrigger -Daily -At $time
   $settings = New-ScheduledTaskSettingsSet `
@@ -66,11 +69,14 @@ $repo = Resolve-RepoPath -InputPath $RepoPath
 $runner = Join-Path $repo "agent-workflow\tools\run-daily-automation-controller.mjs"
 if (-not (Test-Path -LiteralPath $runner)) { throw "Controller runner not found: $runner" }
 $nodeExecutable = Resolve-NodeExecutable
+if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
+$RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
+New-Item -ItemType Directory -Path $RuntimePath -Force | Out-Null
 
-Register-ControllerTask -Name "WaveSight Morning Production Dispatch" -At $MorningAt -Phase "morning" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
-Register-ControllerTask -Name "WaveSight Daily Recovery Controller" -At $RecoveryAt -Phase "recovery" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
-Register-ControllerTask -Name "WaveSight Daily Automation Closure" -At $ClosureAt -Phase "closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
-Register-ControllerTask -Name "WaveSight Daily Final Closure" -At $FinalClosureAt -Phase "final-closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
+Register-ControllerTask -Name "WaveSight Morning Production Dispatch" -At $MorningAt -Phase "morning" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
+Register-ControllerTask -Name "WaveSight Daily Recovery Controller" -At $RecoveryAt -Phase "recovery" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
+Register-ControllerTask -Name "WaveSight Daily Automation Closure" -At $ClosureAt -Phase "closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
+Register-ControllerTask -Name "WaveSight Daily Final Closure" -At $FinalClosureAt -Phase "final-closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo -RuntimeDirectory $RuntimePath
 
 if ($RemoveLegacyTasks) {
   @(
@@ -88,6 +94,7 @@ if ($RemoveLegacyTasks) {
 
 Write-Host "Community Intelligence 08:30 and Follow-Builders 16:10 tasks remain independent; final closure runs at $FinalClosureAt."
 Write-Host "Node executable: $nodeExecutable"
+Write-Host "Runtime reports: $RuntimePath"
 if ($RunMorningNow) {
   Start-ScheduledTask -TaskName "WaveSight Morning Production Dispatch"
   Write-Host "Started morning controller once now."

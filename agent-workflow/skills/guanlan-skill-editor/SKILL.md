@@ -3,7 +3,7 @@ name: guanlan-skill-editor
 description: Use when auditing, creating, updating, or cleaning WaveSight AI / Guanlan skills. Applies to Guanlan skill trigger descriptions, stale V2 rule removal, eval coverage, MEMORY.md hygiene, examples/references structure, conflicts between skills, and periodic skill self-improvement after real production incidents.
 metadata:
   guanlan:
-    version: "1.0.2"
+    version: "1.1.0"
     lane: "Skill system"
     status: "governance"
     order: 110
@@ -34,7 +34,8 @@ Read only what is needed:
 
 For Guanlan system truth, prefer the project context files over old reports:
 
-- `context/07-v3-intelligence-generation-rules.md`
+- `context/12-data-center-v4.md`
+- `context/08-automation.md`
 - `context/frontstage-page-contracts.md`
 - `context/05-daily-monitoring.md`
 

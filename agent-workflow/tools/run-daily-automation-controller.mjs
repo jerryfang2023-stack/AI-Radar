@@ -5,13 +5,13 @@ import { spawnSync } from "node:child_process";
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 
 const root = process.cwd();
-const reportsDir = path.join(root, "agent-workflow", "reports");
 const args = new Map(
   process.argv.slice(2).map((arg) => {
     const [key, ...rest] = arg.replace(/^--/u, "").split("=");
     return [key, rest.join("=") || "true"];
   }),
 );
+const reportsDir = path.resolve(root, args.get("runtime-dir") || path.join("agent-workflow", "reports"));
 
 const phase = args.get("phase") || "morning";
 const date = args.get("date") || shanghaiDate();
@@ -171,6 +171,7 @@ function closure() {
     "agent-workflow/tools/run-daily-self-check.mjs",
     `--date=${date}`,
     "--repair=safe",
+    `--runtime-dir=${reportsDir}`,
   ], 300_000);
   const codex = run("Codex targeted repair handoff", process.execPath, [
     "agent-workflow/tools/run-codex-self-repair.mjs",
@@ -178,12 +179,35 @@ function closure() {
     "--repair=safe",
     `--invoke=${invokeCodex ? "on" : "off"}`,
     "--codex-command=codex",
+    `--runtime-dir=${reportsDir}`,
+    "--reuse-self-check=true",
   ], 900_000);
+  const selfCheckPayload = (() => {
+    try {
+      return JSON.parse(fs.readFileSync(path.join(reportsDir, `${date}-daily-self-check.json`), "utf8"));
+    } catch {
+      return null;
+    }
+  })();
+  const supervisionPayload = (() => {
+    try {
+      return JSON.parse(fs.readFileSync(path.join(reportsDir, `${date}-daily-supervision-report.json`), "utf8"));
+    } catch {
+      return null;
+    }
+  })();
+  const businessWaiting = supervisionPayload?.lanes?.some((lane) => lane.id === "business_signals" && lane.status === "waiting");
+  const waiting = selfCheck.ok && (selfCheckPayload?.status === "waiting" || businessWaiting);
+  const coverageAction = waiting && !coverage.ok
+    ? { ...coverage, ok: true, observed_ok: false, resolution: "same_date_production_waiting" }
+    : coverage;
+  const ok = coverageAction.ok && selfCheck.ok && codex.ok;
   return {
-    ok: coverage.ok && selfCheck.ok && codex.ok,
-    status: coverage.ok && selfCheck.ok && codex.ok ? "closed" : "repair_required",
-    actions: [coverage, selfCheck, codex],
-    notes: [],
+    ok,
+    healthOk: !waiting && Boolean(selfCheckPayload?.ok) && coverage.ok,
+    status: ok ? waiting ? "waiting" : "closed" : "repair_required",
+    actions: [coverageAction, selfCheck, codex],
+    notes: waiting ? ["Same-date production is active; Closure recorded waiting instead of a false missing-data failure."] : [],
   };
 }
 
@@ -200,17 +224,20 @@ function finalClosure() {
     `--date=${date}`,
     "--hermes=off",
     "--force-afternoon-window=true",
+    `--output-dir=${reportsDir}`,
     ...(dryRun ? ["--github=false", "--scheduled-task=false"] : []),
   ], 300_000);
   const evidenceSupply = run("Evidence supply health", process.execPath, [
     "agent-workflow/tools/write-evidence-supply-health-report.mjs",
     `--date=${date}`,
+    `--output-dir=${reportsDir}`,
   ]);
   const recurringIncidents = run("Recurring issue repair tasks", process.execPath, [
     "agent-workflow/tools/write-recurring-production-incidents.mjs",
     `--date=${date}`,
     "--days=7",
     "--threshold=2",
+    `--reports-dir=${reportsDir}`,
   ]);
   const supervisionPayload = (() => {
     try {

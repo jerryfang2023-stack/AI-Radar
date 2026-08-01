@@ -50,13 +50,23 @@ function slug(value = "") {
     .slice(0, 48) || "recurring-issue";
 }
 
-export function collectRecurringIssues(root, endDate, days = 7, threshold = 2) {
-  const reportsDir = path.join(root, "agent-workflow", "reports");
+export function collectRecurringIssues(root, endDate, days = 7, threshold = 2, reportsDir = path.join(root, "agent-workflow", "reports")) {
+  const trackedReportsDir = path.join(root, "agent-workflow", "reports");
+  const reportDirs = [...new Set([
+    ...(Array.isArray(reportsDir) ? reportsDir : [reportsDir]),
+    trackedReportsDir,
+  ].map((dir) => path.resolve(dir)))];
   const dates = Array.from({ length: days }, (_, index) => addDays(endDate, index - days + 1));
   const occurrences = new Map();
 
   for (const date of dates) {
-    const report = readJson(path.join(reportsDir, `${date}-daily-supervision-report.json`));
+    const reportFile = reportDirs
+      .map((dir) => path.join(dir, `${date}-daily-supervision-report.json`))
+      .find((file) => fs.existsSync(file));
+    const report = reportFile ? readJson(reportFile) : null;
+    const reportLocator = reportFile?.startsWith(`${root}${path.sep}`)
+      ? path.relative(root, reportFile).replace(/\\/gu, "/")
+      : reportFile ? `runtime://daily-supervision/${date}` : "";
     for (const lane of report?.lanes || []) {
       for (const [kind, values] of [["problem", lane.problems || []], ["warning", lane.warnings || []]]) {
         for (const value of values) {
@@ -71,7 +81,7 @@ export function collectRecurringIssues(root, endDate, days = 7, threshold = 2) {
             report_paths: [],
           };
           item.dates.push(date);
-          item.report_paths.push(`agent-workflow/reports/${date}-daily-supervision-report.json`);
+          item.report_paths.push(reportLocator);
           occurrences.set(key, item);
         }
       }
@@ -149,9 +159,10 @@ export function writeRecurringIncidents(root, endDate, issues) {
 function main() {
   const root = process.cwd();
   const date = args.get("date") || shanghaiDate();
+  const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
   const days = Math.max(2, Number(args.get("days") || 7));
   const threshold = Math.max(2, Number(args.get("threshold") || 2));
-  const issues = collectRecurringIssues(root, date, days, threshold);
+  const issues = collectRecurringIssues(root, date, days, threshold, reportsDir);
   const files = writeRecurringIncidents(root, date, issues);
   console.log(JSON.stringify({
     ok: true,

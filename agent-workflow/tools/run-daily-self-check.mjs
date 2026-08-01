@@ -6,13 +6,13 @@ import { shouldRebuildSkillStore, shouldSyncSkillStore } from "./lib/daily-self-
 import { formatRecordedCommand } from "./lib/report-command.mjs";
 
 const root = process.cwd();
-const reportsDir = path.join(root, "agent-workflow", "reports");
 const args = new Map(
   process.argv.slice(2).map((arg) => {
     const [key, ...rest] = arg.replace(/^--/u, "").split("=");
     return [key, rest.join("=") || "true"];
   })
 );
+const reportsDir = path.resolve(root, args.get("runtime-dir") || path.join("agent-workflow", "reports"));
 
 const date = args.get("date") || shanghaiDate();
 const repairMode = args.get("repair") || "off";
@@ -84,6 +84,7 @@ function runSupervision() {
     `--github=${githubMode}`,
     `--scheduled-task=${taskMode}`,
     "--hermes=off",
+    `--output-dir=${reportsDir}`,
   ], 120000);
   const reportPath = path.join(reportsDir, `${date}-daily-supervision-report.json`);
   return {
@@ -192,10 +193,10 @@ function unresolvedRepairTasks(report, repairAttempts) {
       lane,
       severity: laneIssues.some((issue) => issue.severity === "manual_required") ? "manual_required" : "failed",
       failed_gate: failedGates.join("; "),
-      report_path: `agent-workflow/reports/${date}-daily-supervision-report.md`,
+      report_path: path.join(reportsDir, `${date}-daily-supervision-report.md`),
       instruction: [
         "Read AGENTS.md and current context rules.",
-        `Read agent-workflow/reports/${date}-daily-supervision-report.md.`,
+        `Read ${path.join(reportsDir, `${date}-daily-supervision-report.md`)}.`,
         failedGates.length ? `Inspect failed gate/report: ${failedGates.join("; ")}.` : "Inspect the lane evidence in the supervision report.",
         `Resolve these issue(s): ${laneIssues.map((issue) => issue.message).join(" | ")}.`,
         "Classify the earliest responsible stage.",
@@ -211,7 +212,7 @@ function unresolvedRepairTasks(report, repairAttempts) {
       lane: "self_repair",
       severity: "manual_required",
       failed_gate: attempt.label,
-      report_path: `agent-workflow/reports/${date}-daily-self-check.md`,
+      report_path: path.join(reportsDir, `${date}-daily-self-check.md`),
       instruction: `Self-repair command failed: ${attempt.command}. Inspect stdout/stderr in the self-check report and repair the smallest failing path.`,
     });
   }
