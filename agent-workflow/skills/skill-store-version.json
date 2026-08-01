@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "name": "Guanlan Skill Store",
-  "version": "1.9.0",
+  "version": "2.0.0",
   "release_date": "2026-08-01",
-  "stage": "V4 semantic governance",
-  "scope": "Aligns active skills with current RawDocument and automation contracts, removes generic Follow Builders scheduler onboarding, and adds semantic drift gates for stale contracts without imposing a prompt-length quota.",
+  "stage": "GPT-5.6 prompt-contract governance",
+  "scope": "Certifies all active governed skills against GPT-5.6-aligned trigger, input, workflow, boundary, output, completion, eval, and UI-metadata contracts while preserving WaveSight V4 domain ownership and avoiding model/API prompt cargo culting.",
   "upgrade_policy": {
     "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
     "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",

@@ -3,7 +3,7 @@ name: guanlan-weekly-business-change-radar
 description: Use when writing, revising, or auditing the WaveSight weekly AI business change report from accepted V4 CanonicalEvents plus separately namespaced First-Line Viewpoints and Community Intelligence. The report may make downstream judgments, but every factual statement must cite accepted V4 evidence. Do not use for canonical fact creation, Opportunity Map generation, or HTML rendering.
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.3.0"
     lane: "Guanlan Research"
     status: "downstream application"
     order: 90
@@ -50,6 +50,14 @@ V3 Desk, Signal Cards, old graph data, legacy mappings, and historical weekly HT
 - `assert-periodic-report-content.mjs` must pass before deterministic page rendering.
 - Opportunity direction candidates run as an independent task; their failure cannot block report content acceptance.
 
+## Workflow
+
+1. Resolve the previous complete Monday-Sunday window and build the bounded E/O/C manifest.
+2. Verify counts, IDs, factual E provenance, and O/C namespace separation before drafting.
+3. Draft the nine-section report with evidence-bounded judgments and explicit unknowns.
+4. Run the content gate; repair unsupported statements in Markdown without mutating canonical inputs.
+5. Hand accepted Markdown to the page generator. Keep rendering and deployment outside this skill.
+
 ## Evidence contract
 
 - Every concrete statement cites a valid `[E:event_id]`, `[O:viewpoint_id]`, or `[C:community_id]`.
@@ -75,6 +83,12 @@ Produce nine numbered sections:
 
 Opportunity scores and actions are downstream research judgments. Label them as such and never write them into V4 canonical tables.
 
+## Boundaries
+
+- Local manifest inspection, Markdown editing, and content validation are allowed within an authorized report task.
+- Do not invent IDs, facts, counts, or certainty; stop unsupported statements or mark them for verification.
+- Do not publish, render HTML, modify canonical data, or let Opportunity Map availability decide report acceptance.
+
 ## Headline contract
 
 Use one evidence-bounded judgment with a concrete consequence for budget, procurement, cost, delivery, responsibility, results, or risk. Do not use a generic report label, a table-of-contents title, or unsupported certainty.
@@ -97,3 +111,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 ```
 
 Confirm the current report pipeline contains no V3 dataset path and does not modify canonical bundles.
+
+## Done When
+
+Finish when the exact weekly window and counts are disclosed, every concrete statement resolves to the bounded manifest, O/C remain contextual, the required structure and verification list are complete, and the report content gate passes before rendering.

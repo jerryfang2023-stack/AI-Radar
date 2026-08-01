@@ -1,6 +1,6 @@
 interface:
   display_name: "Guanlan First-Line Viewpoints Monitor"
-  short_description: "Supervise current and historical First-Line Viewpoints data and the V4 projection."
-  default_prompt: "Supervise FLV-V1.1.0-history-backfill for the active date: validate current builders data, committed history provenance, and the merged V4 projection; keep afternoon intake independent, treat Guanlan Vault timelines as a downstream local projection, and record prevention for recurring failures."
+  short_description: "Supervise current and historical viewpoint publication"
+  default_prompt: "Use $guanlan-first-line-viewpoints-monitor to validate the requested First-Line Viewpoints route, publication state, and prevention evidence."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

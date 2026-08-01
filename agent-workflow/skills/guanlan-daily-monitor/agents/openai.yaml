@@ -1,6 +1,6 @@
 interface:
   display_name: "Guanlan Daily Monitor"
-  short_description: "Capture current WaveSight source artifacts for Data Center V4 and compatibility inputs."
-  default_prompt: "Run or repair the WaveSight source-capture layer for the active date, preserve source artifacts for Data Center V4, and hand accepted inputs to the responsible quality gate; do not generate canonical facts, Cards, or frontstage copy."
+  short_description: "Capture daily immutable source evidence for V4"
+  default_prompt: "Use $guanlan-daily-monitor to run or repair one bounded source-capture attempt and route failures to their earliest owner."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

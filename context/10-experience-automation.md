@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v4-experience-automation
-last_updated: 2026-07-31
+last_updated: 2026-08-01
 use_when:
   - record development action
   - summarize execution lessons
@@ -59,6 +59,8 @@ Read-only Skill Ops check used by daily supervision. It includes the dashboard s
 ```powershell
 npm run check:skill-ops
 ```
+
+The current gate certifies all 23 active governed Skills against `GPT-5.6-SKILL-V1.0`. It verifies positive and negative trigger metadata, scoped inputs, imperative workflow, non-inference and authorization boundaries, output/completion contracts, valid `agents/openai.yaml`, and complete five-case trigger-eval inventory. Inventory coverage proves the test set is complete; it does not claim that a model executed every prompt successfully.
 
 On a configured development machine, this check also audits effective local Skill discovery and requires the dashboard to match the discovered, enabled, and reversibly disabled counts. In CI or deploy environments without the developer-local Codex config and private store, it still validates project manifests and the committed dashboard contract without treating missing personal state as a dependency.
 

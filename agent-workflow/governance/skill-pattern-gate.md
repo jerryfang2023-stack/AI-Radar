@@ -10,7 +10,7 @@ This file turns reusable Agent Skill patterns into a dispatch gate for WaveSight
 
 It does not add long-running agents and does not allow temporary agents to replace stable process roles. It exists so each dispatched task states both who owns the work and which execution pattern should be used.
 
-New dispatches must name at least one Skill Pattern. Complex tasks may combine patterns, but the order and hard stops must be explicit.
+Use a Skill Pattern when a task is complex, high-risk, multi-stage, or benefits from a reusable output contract. Simple single-step work does not need pattern ceremony. Complex tasks may combine patterns, but the order and hard stops must be explicit.
 
 ## 2. Patterns
 
@@ -47,9 +47,9 @@ Reviewer:
 
 ## 5. Hard Gates
 
-Do not mark a task accepted when:
+Do not mark a pattern-governed task accepted when:
 
-- the dispatch lacks a Skill Pattern;
+- a complex/high-risk dispatch that relies on patterns omits the selected pattern, order, or hard stops;
 - a page task skips the current page contracts or VI rules;
 - an automation task lacks pipeline stages or fallback behavior;
 - a closeout only says the work is complete without evidence;

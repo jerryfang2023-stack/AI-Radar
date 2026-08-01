@@ -3,7 +3,7 @@ name: guanlan-monthly-business-structure-report
 description: Use when writing, revising, or auditing a WaveSight monthly business-structure report from accepted V4 CanonicalEvents and separately namespaced viewpoint/community context. The report may adjudicate structure and downstream opportunities, but factual claims must resolve to accepted V4 evidence. Do not use for weekly reports, page rendering, or canonical fact creation.
 metadata:
   guanlan:
-    version: "0.3.0"
+    version: "1.0.0"
     lane: "Guanlan Research"
     status: "downstream application"
     order: 95
@@ -52,6 +52,17 @@ accepted monthly V4 evidence
 
 Do not create a trend from one article, one opinion, one funding event, or one demo.
 
+## Execution
+
+For the resolved previous complete calendar month, provide the report date and exact window:
+
+```powershell
+node agent-workflow/tools/generate-periodic-report-deepseek.mjs --kind=monthly --date=YYYY-MM-DD --window-start=YYYY-MM-DD --window-end=YYYY-MM-DD
+node agent-workflow/tools/assert-periodic-report-content.mjs --kind=monthly --date=YYYY-MM-DD --window-start=YYYY-MM-DD --window-end=YYYY-MM-DD
+```
+
+The first command is an external model call and is allowed only when report generation is in scope. On content-gate failure, repair the Markdown or evidence manifest; do not render a page.
+
 ## Output
 
 ```text
@@ -81,3 +92,7 @@ Use `status: draft` until `assert-periodic-report-content.mjs` passes. DeepSeek 
 - At least one weak trend is downgraded or removed.
 - Every next-month condition is observable.
 - Content gate passes before page generation.
+
+## Done When
+
+Finish when the previous calendar month is complete, every factual statement resolves to accepted E evidence, O/C and downstream context remain labeled, weak trends are downgraded, verification conditions are observable, and the content gate passes before page generation.

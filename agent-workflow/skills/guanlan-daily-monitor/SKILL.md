@@ -1,9 +1,9 @@
 ---
 name: guanlan-daily-monitor
-description: Use when running or repairing the daily source-capture implementation that writes immutable snapshots and SOURCE-INTAKE-V1 for Data Center V4. It does not own Claims, CanonicalEvents, tags, projections, pages, judgment, or recommendations, and it must not create V3 Raw/Pool Markdown or Signal Cards.
+description: Use when running or repairing the daily source-capture implementation that writes immutable snapshots and SOURCE-INTAKE-V1 for Data Center V4. Do not use for Claims, CanonicalEvents, tags, projections, pages, judgment, recommendations, V3 Raw/Pool Markdown, or Signal Cards.
 metadata:
   guanlan:
-    version: "1.2.1"
+    version: "1.3.0"
     lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 40
@@ -45,10 +45,10 @@ Internal collector fields such as `pool_count` or `core_pool` are selection diag
 ## Execution
 
 ```powershell
-node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=1 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=900000
+node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD>
 ```
 
-The production policy permits one monitor attempt and at most one targeted refill for a failed hard evidence-supply bucket. Provider or volume diagnostics cannot trigger a full recollection.
+The wrapper reads collection limits and diagnostics from the current source-intake configuration. The production policy permits one monitor attempt and at most one separately owned targeted refill for a failed hard evidence-supply bucket. Provider or volume diagnostics cannot trigger a full recollection.
 
 ## Rules
 
@@ -56,7 +56,7 @@ The production policy permits one monitor attempt and at most one targeted refil
 - Split FDE discovery across customer cases, procurement/contracts, customer earnings disclosures, and production rollouts.
 - Split hardware discovery across products/specifications, OEM/ODM, capacity/fabs, supply agreements, shipments/deployments, and capex.
 - Preserve original URL, readable text or fallback boundary, extraction diagnostics, content hash, excerpts, and missing information.
-- Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO, and navigation pages discovery-only unless they contain a dated concrete event.
+- Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO, and navigation pages discovery-only. Resolve any dated event found there to its original article or announcement before factual intake.
 - Normalize publication dates and filter stale archives.
 - Use same-attempt adaptive expansion only from already collected candidates.
 - Do not stage First-Line Viewpoints, Community Intelligence, canonical facts, application projections, or frontstage data.
@@ -64,6 +64,7 @@ The production policy permits one monitor attempt and at most one targeted refil
 
 ## Failure routing
 
+- Network collection and source-artifact writes run only when the request or owning daily automation authorizes a monitor attempt. Publication and downstream mutation remain separately owned.
 - Capture or source-intake failure: stop once, name the deficient bucket, and hand off targeted repair.
 - Provider unavailable with healthy combined evidence: continue with a diagnostic.
 - Claim/Event, application, frontstage, PR, Pages, or local-sync failure: repair that downstream owner; do not recollect sources.
@@ -84,3 +85,7 @@ node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
 node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
 npm run assert:no-active-v3
 ```
+
+## Done When
+
+Finish when the requested attempt has durable snapshots and structured intake, the evidence-supply gate has a clear result, any failure is routed to its earliest owner, and no downstream or retired artifacts were written. Do not claim full publication success from source capture alone.

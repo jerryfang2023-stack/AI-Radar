@@ -3,7 +3,7 @@ name: guanlan-code-rule-auditor
 description: Use when auditing WaveSight AI code, rules, skills, scripts, GitHub Actions, gates, or data-flow logic for defects, contradictions, dead paths, migration failures, and unnecessary complexity. Covers the V4 factual core, downstream applications, operations, deployment, and the permanent V3-retirement boundary. Do not use it to run daily production, edit same-day production data, auto-fix findings, push, or deploy.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.2.0"
     lane: "Code and rule audit"
     status: "governance"
     order: 115
@@ -100,3 +100,7 @@ Return:
 4. GitHub workflow ownership assessment;
 5. minimal repair sequence by earliest owner;
 6. validation plan and unresolved runtime evidence.
+
+## Done When
+
+Finish when the pinned execution chain and evidence are sufficient to distinguish confirmed defects, design risks, historical mentions, and unknowns; every finding names its earliest owner and smallest validation; and no mutation or external action occurred unless the user separately authorized repair.

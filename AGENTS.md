@@ -30,6 +30,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current factual relationship contract: RELATION-V2.1.
 - Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.0.
+- Current Skill Store version: `v2.0.0`; all 23 active governed Skills follow `GPT-5.6-SKILL-V1.0`, include `agents/openai.yaml`, and have five-case trigger-eval inventory coverage.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` documents frozen V3 history only; it is not a production route.
 - V2 website pages and old four-column output rules are retired.

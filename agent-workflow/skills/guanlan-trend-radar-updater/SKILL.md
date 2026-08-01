@@ -3,7 +3,7 @@ name: guanlan-trend-radar-updater
 description: "Use when building, refreshing, auditing, or explaining the independent Trend Radar application at TRADAR-V1.0.1-china-market-filter. It projects accepted Data Center V4 events into daily changes, weekly structure changes, and monthly market snapshots with evidence-backed China-market filtering and event/entity/source traceability. Do not use for report prose, opportunity scoring, trend candidates, viewpoints, community intelligence, recommendations, rankings, or canonical-data mutation."
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.1.0"
     lane: "Trend Radar"
     status: "downstream factual application"
     order: 91
@@ -40,6 +40,7 @@ Build and maintain the independent factual-change application in the V4 Applicat
 
 ## Rules
 
+- Resolve both period and key from the request or active artifact. Ask when either remains materially ambiguous; stop when the requested window has no observed accepted dates rather than filling it with zeroes.
 - Use `dataDate` as the accepted-batch date. Keep occurrence date separate.
 - Accept only `verified` and `partial` canonical events.
 - Preserve Claim IDs, SourceArtifact IDs and original source URL on every event.
@@ -52,6 +53,7 @@ Build and maintain the independent factual-change application in the V4 Applicat
 
 ## Prohibited
 
+- Local deterministic aggregation and gates are allowed for a requested Trend Radar update. External model calls, publication, deployment, and canonical-data mutation require their owning workflow or explicit authorization.
 - First-Line Viewpoints, Community Intelligence, V3 Cards, trend candidates or opportunity signals as factual inputs.
 - Importance, value, heat, maturity, score, direction, ranking, advice, recommendations or “representative” selection.
 - Currency aggregation across currencies.
@@ -59,3 +61,11 @@ Build and maintain the independent factual-change application in the V4 Applicat
 - Writing report prose or replacing Guanlan Research.
 
 See `examples/good-factual-change-set.md`, `examples/bad-judgment-change-set.md`, and `evals/trend-radar-updater-evals.md`.
+
+## Output
+
+Produce the factual `trend-radar-v1.json` projection and its frontstage view with exact period counts, coverage disclosure, and event/entity/Claim/source links. Report changed inputs, validation results, and unresolved coverage gaps.
+
+## Done When
+
+Finish when the requested day/week/month views are rebuilt from accepted V4 inputs, counts and evidence links reconcile, sparse windows are disclosed rather than scored, generated JSON is not hand-patched, and the Trend Radar plus prepared site gates pass.

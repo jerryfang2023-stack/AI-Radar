@@ -4,9 +4,19 @@ Use this checklist for full audits. Each item is pass/fail.
 
 ## Trigger Boundary
 
+- The description front-loads `Use when` so truncated discovery metadata retains the user goal.
 - The description names the concrete tasks that should trigger the skill.
-- The description names important exclusions when adjacent skills exist.
+- The description names at least one important `Do not use` exclusion.
 - The body does not rely on a "when to use" section that is absent from metadata.
+
+## GPT-5.6 Execution Contract
+
+- Inputs or required supporting reads are explicit and scoped.
+- The workflow is imperative and preserves appropriate degrees of freedom.
+- Facts that must not be inferred and item/workflow stop conditions are explicit.
+- Safe authorized local actions are distinguished once from external, destructive, costly, credential, publication, or scope-expanding actions.
+- Output and observable completion criteria are explicit; a successful command alone is insufficient.
+- API-only model controls are absent unless this Skill owns that API surface.
 
 ## Current Rule Alignment
 
@@ -25,6 +35,7 @@ Use this checklist for full audits. Each item is pass/fail.
 ## Eval Coverage
 
 - The skill has pass/fail checks for its most common failure modes.
+- Representative coverage includes direct, indirect, incomplete, negative-trigger, and edge-case requests.
 - Evals check observable artifacts, not vibes or numeric self-scores.
 - Evals include recent production failures where relevant.
 - The repair loop says what to rerun after a failure.
@@ -52,4 +63,5 @@ Use this checklist for full audits. Each item is pass/fail.
 
 - YAML frontmatter has `name` and `description`; governed Guanlan skills also keep the validator-approved `metadata.guanlan` version, lane, responsibility, boundary, gate, and mirror fields.
 - The skill folder validates with `quick_validate.py`.
-- `agents/openai.yaml` matches the current skill purpose if present.
+- `agents/openai.yaml` exists, matches the current Skill purpose, contains no encoding damage, and its default prompt mentions `$skill-name`.
+- The repository GPT-5.6 Skill prompt-contract gate passes for every active governed Skill.

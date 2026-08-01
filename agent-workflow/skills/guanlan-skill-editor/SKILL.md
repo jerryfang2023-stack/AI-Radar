@@ -1,9 +1,9 @@
 ---
 name: guanlan-skill-editor
-description: Use when auditing, creating, updating, or cleaning WaveSight AI / Guanlan skills. Applies to Guanlan skill trigger descriptions, stale V2 rule removal, eval coverage, MEMORY.md hygiene, examples/references structure, conflicts between skills, and periodic skill self-improvement after real production incidents.
+description: Use when auditing, creating, updating, or cleaning WaveSight/Guanlan skills, trigger metadata, workflows, evals, examples, references, memory, UI metadata, or conflicts. Do not use to run production lanes, change product data, publish, deploy, or add model/API settings unrelated to a measured Skill failure.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "2.0.0"
     lane: "Skill system"
     status: "governance"
     order: 110
@@ -29,8 +29,9 @@ Read only what is needed:
 1. Target skill `SKILL.md`.
 2. Target skill `evals/`, `examples/`, `references/`, and `MEMORY.md` if present.
 3. `references/audit-checklist.md` when doing a full audit.
-4. `references/memory-policy.md` when editing memory.
-5. `examples/good-skill-update.md` and `examples/bad-long-prose-rule.md` when deciding whether to add evals, examples, memory, or long prose.
+4. `references/gpt-5p6-prompt-contract.md` when creating, substantially revising, or certifying a Skill.
+5. `references/memory-policy.md` when editing memory.
+6. `examples/good-skill-update.md` and `examples/bad-long-prose-rule.md` when deciding whether to add evals, examples, memory, or long prose.
 
 For Guanlan system truth, prefer the project context files over old reports:
 
@@ -41,17 +42,20 @@ For Guanlan system truth, prefer the project context files over old reports:
 
 ## Workflow
 
-1. Identify the target skill and its neighbors.
-2. Check the description first. It must say exactly when to trigger and when not to trigger.
-3. Remove stale V2, daily-observation, business-brief, publiccopy, cardcopy, or copy-style execution rules unless the skill is explicitly about retired history.
-4. Ensure the skill has a small core workflow and uses progressive disclosure:
+1. Identify the target user goal, concrete direct/indirect trigger examples, incomplete-input behavior, neighboring skills, and unsupported actions.
+2. Check the description first. Front-load `Use when`, state one concise `Do not use` boundary, and keep detailed procedure out of metadata.
+3. Define explicit inputs/supporting reads, an imperative workflow, facts that must not be inferred, when to ask/stop, output, and observable completion criteria.
+4. Keep autonomy proportional: allow safe in-scope local inspection/edits/tests for change requests; require the owning workflow or explicit authorization for external, destructive, costly, credential, publication, or scope-expanding actions. State this policy once.
+5. Remove stale V2/V3 execution rules unless the skill is explicitly about bounded retirement history.
+6. Keep the core workflow lean and use progressive disclosure:
    - keep stable procedure in `SKILL.md`;
    - move detailed rules to `references/`;
    - move examples to `examples/`;
    - move pass/fail checks to `evals/`.
-5. Add or update pass/fail evals before adding long prose.
-6. Add memory only for durable lessons from real failures.
-7. Validate the skill folder.
+7. Add or update representative direct, indirect, incomplete, negative-trigger, and edge-case evals before adding long prose.
+8. Add memory only for durable lessons from real failures.
+9. Create or refresh `agents/openai.yaml`; its default prompt must mention `$skill-name`, and implicit invocation must reflect side-effect risk.
+10. Validate and sync the repository runtime mirror, then rebuild the registry/dashboard. Sync the user-level compatibility `.skill-store` only when the request or owning repair workflow explicitly includes that external mirror. Record changed versus intentionally unchanged behavior.
 
 ## Editing Rules
 
@@ -61,6 +65,14 @@ For Guanlan system truth, prefer the project context files over old reports:
 - Do not preserve retired V2 or V3 public-page rules when they conflict with current V4 truth or an explicitly documented V3 compatibility boundary.
 - Prefer concrete pass/fail checks over vague quality scores.
 - Keep machine/debug labels out of user-facing frontstage guidance.
+
+## Boundaries
+
+- Preserve project-required `metadata.guanlan` even though the portable Skill minimum is `name` plus `description`; it is the source for WaveSight registry and governance tooling.
+- Do not add GPT-5.6 model names, reasoning effort, Pro mode, caching, or API request fields to ordinary domain Skills unless the Skill actually owns that API surface and a measured failure requires it.
+- Do not rewrite a working domain contract wholesale merely to standardize headings. Make each edit traceable to trigger accuracy, current truth, autonomy, output, completion, or a tested failure.
+- Editing and local validation are allowed when the user requests Skill changes. Publication, deployment, destructive cleanup, credentials, or unrelated production repair remain separately owned.
+- Writing outside the repository, including the compatibility `.skill-store`, requires explicit scope even when the contents are a mirror.
 
 ## Output
 
@@ -72,3 +84,7 @@ When finished, report:
 - examples or references added;
 - memory entries added, updated, or skipped;
 - remaining conflicts or follow-up risks.
+
+## Done When
+
+Finish when every in-scope Skill has accurate trigger metadata, focused inputs/workflow/boundaries/output/completion, representative eval coverage, valid UI metadata, no stale or duplicated rule debt, all authorized runtime mirrors synchronized, and passing governance checks. A prose review without executable gates or artifact evidence is incomplete.

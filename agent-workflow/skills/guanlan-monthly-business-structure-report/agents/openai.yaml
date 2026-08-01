@@ -1,6 +1,6 @@
 interface:
-  display_name: "Guanlan Monthly Business Structure Report"
-  short_description: "Write monthly AI business structure and opportunity reports."
-  default_prompt: "Write a monthly WaveSight AI business structure and opportunity report from Business Signals, weekly reports, Community Intelligence, First-Line Viewpoints, and Intelligence Map evidence."
+  display_name: "Guanlan Monthly Structure Report"
+  short_description: "Write evidence-bounded monthly structure reports"
+  default_prompt: "Use $guanlan-monthly-business-structure-report to write or audit the previous complete month from accepted E/O/C evidence."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

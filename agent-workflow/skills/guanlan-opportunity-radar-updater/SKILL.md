@@ -1,9 +1,9 @@
 ---
 name: guanlan-opportunity-radar-updater
-description: "Use when updating, rebuilding, auditing, or explaining the unlisted Opportunity Map internal lab at OMAP-V2.0.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to V4 Event/Claim/Source evidence projection, DeepSeek V4 Pro Direction Card candidate writing, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, human-reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, publicly navigated, merged into Guanlan Research, or disconnected from original articles. Do not use for weekly/monthly report prose, Guanlan Research pages, trend candidates, Signal Card adapters, or old formal_tags aggregation."
+description: "Use when updating, rebuilding, auditing, or explaining the unlisted OMAP-V2.0.0 Opportunity Map, including source-backed Entry Point/Product Pain maps and human-reviewed Direction Cards. Do not use for weekly/monthly report prose, Guanlan Research pages, canonical-data mutation, trend candidates, Signal Card adapters, public navigation, or old formal_tags aggregation."
 metadata:
   guanlan:
-    version: "1.4.1"
+    version: "1.5.0"
     lane: "Opportunity Map"
     status: "downstream application"
     order: 92
@@ -82,6 +82,8 @@ This skill does not own an independent scheduled task. Its refresh completes bef
 12. Put cell and Direction Card evidence behind click-to-open detail, not in a permanent right-side "Cell Evidence" panel.
 13. Run syntax, Direction Card generation tests, and frontstage regression checks after data or page generation.
 
+External model calls and human-review promotion run only when the user or owning weekly workflow authorizes them. Local evidence inspection, deterministic projection, and read-only gates are safe within an authorized update/audit task. Publishing, navigation changes, or automatic candidate promotion are outside this skill.
+
 ## Evidence Rules
 
 Allowed evidence:
@@ -138,6 +140,10 @@ When a cell is highlighted, include at least one Event ID, Claim ref, Source ref
 
 Direction Cards require at least two accepted Events with explicit Claim and Source references and should prefer multiple actors or evidence forms. A single funding event, product launch, broad topic label, or model-generated aggregation cannot publish a Direction Card.
 
+## Output
+
+Produce Claim-bound application assertions, the two evidence-backed map projections, pending Direction Card candidates, explicitly reviewed Direction Cards, and click-to-open evidence details. Report blank/unsupported cells and review rejections rather than filling them.
+
 ## Validation
 
 Before finishing:
@@ -152,3 +158,7 @@ Before finishing:
 8. Verify candidate provenance is `deepseek-v4-pro`, generated candidates did not auto-publish, and reviewed cards expose both `judgment` and `counter_signal`.
 9. Run the most relevant syntax check for edited scripts.
 10. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.
+
+## Done When
+
+Finish when both maps resolve to accepted Claim/source evidence, unsupported cells stay blank, candidates remain pending until explicit review, reviewed cards meet provenance/falsifiability gates, the route remains unlisted/noindex, and the applicable syntax and frontstage checks pass.

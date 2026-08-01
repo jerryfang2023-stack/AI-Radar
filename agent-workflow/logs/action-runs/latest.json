@@ -1,52 +1,53 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-31T10:42:19.102Z",
-  "date": "2026-07-31",
-  "action": "Audit and repair today's V4 development",
-  "action_status": "unregistered",
+  "generated_at": "2026-08-01T09:52:22.873Z",
+  "date": "2026-08-01",
+  "action": "GPT-5.6 Guanlan Skill governance audit",
+  "action_status": "current",
   "record_level": "required",
   "trigger": "user-request",
   "status": "success",
-  "summary": "Audited today's China market, funding, event eligibility, quality gate, and workspace cleanup changes and repaired five systemic defects",
+  "summary": "Completed full 23-Skill prompt-contract, execution-boundary, monitoring, taxonomy, rule, and workspace audit.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/funding-insight-v1-utils.mjs",
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/assert-china-market-v1.mjs",
-    "agent-workflow/tools/guanlan-monitor-quality-gate.mjs",
-    "agent-workflow/tools/audit-local-workspace.mjs",
-    ".github/workflows/daily-persistent-assets-pr.yml"
+    "agent-workflow/skills/",
+    "agent-workflow/tools/lib/guanlan-skill-ops.mjs",
+    "agent-workflow/tools/tests/skill-ops-audit.test.mjs",
+    "agent-workflow/governance/skill-pattern-gate.md",
+    "context/version-ledger.md",
+    "AGENTS.md"
   ],
-  "outputs": [],
+  "outputs": [
+    "agent-workflow/reports/2026-08-01-guanlan-skill-gpt-5p6-audit.md",
+    "agent-workflow/skills/skill-trigger-evals.json",
+    "01-SiteV2/site/data/local-skill-store-data.js"
+  ],
   "checks": [
-    "test:data-center 191 pass",
-    "test:workspace 7 pass",
-    "test:data-center-site 99 pass",
-    "assert:funding-insights:full 226 cards",
-    "assert:china-market dated pass",
-    "policy and version gates pass"
+    "official quick_validate 23/23",
+    "skill ops tests 23/23",
+    "Data Center core tests 60/60",
+    "OPS tests 10/10",
+    "frontstage regression passed",
+    "version and current-rule gates passed",
+    "repo and compatibility mirrors zero drift"
   ],
   "issues": [
-    "funding card coverage skipped evidence proof",
-    "developer package filter only covered 0.x",
-    "China gate read entire unified intake",
-    "Raw QC core metrics were tautological",
-    "workspace cleanup ignored ignored files and batch targets"
+    "daily collection and gate ownership overlapped",
+    "Skill trigger and completion boundaries were inconsistent",
+    "governance coverage metric overstated inventory as execution"
   ],
   "risks": [
-    "China content market coverage is still zero for 2026-07-31"
+    "legacy redirect mobile filter-width smoke has one pre-existing unrelated issue"
   ],
   "lessons": [
-    "Persist source and market scope in unified Intake",
-    "Validate evidence proof in coverage gates",
-    "Destructive cleanup requires one explicit target"
+    "separate collection from read-only quality gates",
+    "name inventory completeness separately from model execution",
+    "encode ambiguity and authorization boundaries in both Skills and lint"
   ],
   "reusable_rules": [
-    "No source weights or ranking",
-    "Original source title only",
-    "no editorial headline",
-    "CN gate selects subset",
-    "not entire batch"
+    "same-date accepted collection is immutable reusable input",
+    "downstream repair must not recollect",
+    "trigger eval inventory is not a model routing score"
   ],
   "retired_flags": [],
   "notes": []

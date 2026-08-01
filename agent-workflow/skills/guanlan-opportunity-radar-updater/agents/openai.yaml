@@ -1,6 +1,6 @@
 interface:
-  display_name: "Opportunity Radar Updater"
-  short_description: "Update opportunity maps and reviewed Direction Cards."
-  default_prompt: "Update Opportunity Map from source-backed opportunity signals, use DeepSeek V4 Pro for Direction Card candidate titles and content, then enforce evidence and human-review gates before publication."
+  display_name: "Guanlan Opportunity Radar Updater"
+  short_description: "Build source-backed maps and reviewed Direction Cards"
+  default_prompt: "Use $guanlan-opportunity-radar-updater to rebuild the unlisted evidence-backed maps and review Direction Card candidates."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true
