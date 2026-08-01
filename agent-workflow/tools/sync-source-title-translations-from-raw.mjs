@@ -17,7 +17,7 @@ const updates = fs.readdirSync(rawDirectory, { withFileTypes: true })
   .flatMap((entry) => {
     const payload = JSON.parse(fs.readFileSync(path.join(rawDirectory, entry.name), "utf8").replace(/^\uFEFF/u, ""));
     if (payload.title_translation_status !== "translated"
-      || !["deepseek_title_translation", "manual_reviewed_source_title_translation"].includes(payload.title_translation_method)
+      || payload.title_translation_method !== "deepseek_title_translation"
       || !payload.title
       || !payload.title_zh) return [];
     return [{

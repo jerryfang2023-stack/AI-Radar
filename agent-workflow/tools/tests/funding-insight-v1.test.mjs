@@ -163,6 +163,17 @@ test("自动发布门禁要求明确投资方及产品证据", () => {
   assert.ok(fundingInsightProblems(card).includes("investors_missing"));
 });
 
+test("已确认融资但具体投资方未披露时保留风险标记并允许发布", () => {
+  const card = validCard();
+  card.financing.investors = [];
+  card.financing.investor_disclosure_status = "not_disclosed";
+  const normalized = normalizeFundingInsightCard(card);
+  assert.equal(normalized.financing.investor_disclosure_status, "not_disclosed");
+  assert.ok(normalized.financing.risk_markers.includes("investors_missing"));
+  assert.ok(normalized.analysis.risks.some((risk) => risk.includes("具体投资方未披露")));
+  assert.deepEqual(fundingInsightProblems(normalized), []);
+});
+
 test("融资轮次统一为稳定代码和中文展示名，同时保留原始写法", () => {
   assert.deepEqual(normalizeFundingRound("Series A"), {
     code: "series_a",
@@ -626,6 +637,38 @@ test("DeepSeek 研究结果必须逐项引用已抓取来源原文", () => {
   assert.deepEqual(researchPayloadProblems(payload, [source, productSource], ["DIR-1"]), []);
   payload.financing.investors[0].evidence_refs[0].quote = "source does not contain this";
   assert.ok(researchPayloadProblems(payload, [source, productSource], ["DIR-1"]).includes("investor_1_evidence_1_quote_mismatch"));
+});
+
+test("DeepSeek 可用未披露状态表达只有泛称、没有具体名称的投资方", () => {
+  const fundingSource = {
+    source_id: "SRC-1",
+    body_clean: "丘脑智能已完成数千万元种子轮融资，投资方包括深圳一线基金和产业资本。",
+  };
+  const productSource = {
+    source_id: "SRC-2",
+    body_clean: "丘脑智能研发面向工业场景的人工智能产品。",
+  };
+  const payload = {
+    company: { full_name: "丘脑智能", summary: "面向工业场景的人工智能公司", evidence_refs: evidence("SRC-2", productSource.body_clean) },
+    financing: {
+      round: "种子轮",
+      amount: "数千万元",
+      investor_disclosure_status: "not_disclosed",
+      evidence_refs: evidence("SRC-1", fundingSource.body_clean),
+      investors: [],
+    },
+    products: [{ name: "丘脑智能工业 AI", description: "面向工业场景的人工智能产品", evidence_refs: evidence("SRC-2", productSource.body_clean) }],
+    customers: [], comparisons: [], metrics: [],
+    analysis: {
+      investment_rationale: [],
+      capital_judgment: "资本押注工业人工智能产品的研发与交付能力。",
+      validated_signals: ["已完成种子轮融资"],
+      risks: ["具体投资机构未披露"],
+      related_direction_id: "",
+      sector: "工业人工智能",
+    },
+  };
+  assert.deepEqual(researchPayloadProblems(payload, [fundingSource, productSource], []), []);
 });
 
 test("机构投资理由必须来自本轮投资方并保留原文证据", () => {

@@ -7,6 +7,7 @@ export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.1";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.1";
 export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.2";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
+export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
 
 export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
@@ -278,6 +279,15 @@ export function normalizeFundingInsightCard(inputCard = {}, entityIndex = {}, de
   const currentInvestorNames = new Set(currentInvestors.map((item) => normalizedName(item.name)));
   const investmentRationale = (card.analysis?.investment_rationale || [])
     .filter((item) => currentInvestorNames.has(normalizedName(item.institution)));
+  const investorDisclosureStatus = currentInvestors.length
+    ? "disclosed"
+    : clean(card.financing?.investor_disclosure_status) === "not_disclosed"
+      ? "not_disclosed"
+      : "unknown";
+  const investorRiskMarkers = [...new Set([
+    ...(card.financing?.risk_markers || []),
+    ...(investorDisclosureStatus === "not_disclosed" ? ["investors_missing"] : []),
+  ])];
   card.company = {
     ...(card.company || {}),
     founders,
@@ -288,6 +298,8 @@ export function normalizeFundingInsightCard(inputCard = {}, entityIndex = {}, de
     round_code: round.code,
     round_original: round.original,
     investors: currentInvestors,
+    investor_disclosure_status: investorDisclosureStatus,
+    risk_markers: investorRiskMarkers,
     other_round_investors: otherInvestors,
     disclosures: card.financing?.disclosures?.length
       ? card.financing.disclosures
@@ -309,6 +321,10 @@ export function normalizeFundingInsightCard(inputCard = {}, entityIndex = {}, de
   };
   card.analysis = {
     ...(card.analysis || {}),
+    risks: [...new Set([
+      ...(card.analysis?.risks || []),
+      ...(investorDisclosureStatus === "not_disclosed" ? [INVESTORS_MISSING_RISK] : []),
+    ])],
     investment_rationale: investmentRationale,
     investment_thesis: {
       statement: clean(card.analysis?.capital_judgment),
@@ -720,7 +736,9 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
   if (!clean(payload?.financing?.amount)) problems.push("funding_amount_missing");
   problems.push(...evidenceProblems(payload?.financing?.evidence_refs, sourceById, "financing_evidence"));
   if (!Array.isArray(payload?.financing?.investors) || !payload.financing.investors.length) {
-    problems.push("investors_missing");
+    if (clean(payload?.financing?.investor_disclosure_status) !== "not_disclosed") {
+      problems.push("investors_missing");
+    }
   } else {
     for (const [index, investor] of payload.financing.investors.entries()) {
       if (!clean(investor?.name)) problems.push(`investor_${index + 1}_name_missing`);
@@ -813,7 +831,17 @@ export function fundingInsightProblems(card = {}) {
   if (card.financing?.round_code !== round.code || card.financing?.round !== round.label) {
     problems.push("funding_round_not_normalized");
   }
-  if (!Array.isArray(card.financing?.investors) || !card.financing.investors.length) problems.push("investors_missing");
+  if (!Array.isArray(card.financing?.investors) || !card.financing.investors.length) {
+    if (card.financing?.investor_disclosure_status !== "not_disclosed") problems.push("investors_missing");
+    if (!(card.financing?.risk_markers || []).includes("investors_missing")) {
+      problems.push("investors_missing_risk_marker_missing");
+    }
+  } else if (
+    card.financing?.investor_disclosure_status
+    && card.financing.investor_disclosure_status !== "disclosed"
+  ) {
+    problems.push("investor_disclosure_status_invalid");
+  }
   if ((card.financing?.investors || []).some((investor) => !investor.name || !investor.evidence_refs?.length)) {
     problems.push("investor_detail_incomplete");
   }

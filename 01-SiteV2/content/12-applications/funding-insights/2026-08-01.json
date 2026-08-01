@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.1",
+    "date": "2026-08-01",
+    "generated_at": "2026-08-01T04:17:50.218Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 1,
+      "auto_published": 1,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.1",
+      "funding_insight_id": "FI-77dc755d73d7a45c",
+      "triggered_by_event_id": "EV-00514c4ffc2e3cd3",
+      "as_of_date": "2026-08-01",
+      "company": {
+        "entity_id": "EN-2e334bb8de4eac34",
+        "name": "丘脑智能",
+        "full_name": "丘脑智能",
+        "website": "",
+        "summary": "丘脑智能是一家专注于多模态长记忆技术的AI公司，致力于打造连接基础模型与用户的记忆基础设施。公司通过原生多模态记忆基座，押注AI从通用走向个性化，最终走向主动智能。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "张源",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7b9a96043b1f3e8",
+                "quote": "丘脑智能创立于2025年11月，创始人兼CEO张源毕业于北京大学，是电子与经济双学科背景，曾在一家自动驾驶公司担任COO，也有过创投行业、具身智能的工作经历。",
+                "source_content_hash": "e7ff3f6841e97c43",
+                "quote_hash": "8e81b41011721acc7b56255c6add355c4756ad1b86c18222ee52435f632a3a8a"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a7b9a96043b1f3e8",
+            "quote": "国内唯一做多模态长记忆的公司——丘脑智能，推出原生多模态记忆基座，押注AI从通用走向个性化，最终走向主动智能。",
+            "source_content_hash": "e7ff3f6841e97c43",
+            "quote_hash": "149ba1a585efc64acfd7f448d549141e8d0c7db11e970b8f6b12b898f36353eb"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "数千万元",
+        "total_raised": "数千万元",
+        "announced_at": "2026-07-28",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a7b9a96043b1f3e8",
+            "quote": "近日，丘脑智能已完成数千万元种子轮融资，投资方包括深圳一线基金和产业资本，本轮融资主要用于技术研发以及人才队伍补充。",
+            "source_content_hash": "e7ff3f6841e97c43",
+            "quote_hash": "67812a8c2d35318e14fe033acf798c69b4a5e2915fc46fe55d9eca23bc5461fb"
+          },
+          {
+            "source_id": "FISRC-6f821089b9c25f5f",
+            "quote": "近日，丘脑智能获得数千万元种子轮融资，由一线人民币基金及产业资本联合投资，用于推进 AI 记忆技术研发和产业化落地。",
+            "source_content_hash": "f9dcb7113d94ab95",
+            "quote_hash": "9770fcf66997cadf71dde40940bab10019b7d291dbada2de96d2ce6ad018b3fd"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-00514c4ffc2e3cd3",
+            "round_original": "种子轮",
+            "amount": "数千万元",
+            "announced_at": "2026-07-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a7b9a96043b1f3e8",
+                "quote": "近日，丘脑智能已完成数千万元种子轮融资，投资方包括深圳一线基金和产业资本，本轮融资主要用于技术研发以及人才队伍补充。",
+                "source_content_hash": "e7ff3f6841e97c43",
+                "quote_hash": "67812a8c2d35318e14fe033acf798c69b4a5e2915fc46fe55d9eca23bc5461fb"
+              },
+              {
+                "source_id": "FISRC-6f821089b9c25f5f",
+                "quote": "近日，丘脑智能获得数千万元种子轮融资，由一线人民币基金及产业资本联合投资，用于推进 AI 记忆技术研发和产业化落地。",
+                "source_content_hash": "f9dcb7113d94ab95",
+                "quote_hash": "9770fcf66997cadf71dde40940bab10019b7d291dbada2de96d2ce6ad018b3fd"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "MemAura",
+          "description": "一个原生多模态记忆基座，向客户提供ADK（智能体开发包）和API（应用程序编程接口）服务。它采用仿生记忆处理机制，支持长记忆积累与快速调用，通过高效的上下文机制降低推理成本。",
+          "target_customers": "陪伴硬件（如陪伴机器人）、垂类Agent场景（如AI客服、数字员工）",
+          "features": [
+            "输入侧Token综合消耗降低40%-49%",
+            "记忆检索延迟控制在400毫秒以内",
+            "端到端首次回答可做到1秒以内",
+            "综合准确率可以达到80%以上",
+            "采用冷热存储策略",
+            "对隐私与非隐私记忆进行分区隔离"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "丘脑智能在6月上线了一个名为 MemAura 的记忆基座，向客户提供ADK（智能体开发包）和API（应用程序编程接口）的服务。",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "95ddf8588a2306f5c27b07fc409a86f023f360ebf5550b60b298ab27a75f55e5"
+            },
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "MemAura能支持长记忆的积累和快速的记忆调用，采用高效的上下文机制，还能有效降低推理成本。",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "513fd5379c14a612b7cef90441bb5c6e059b7f1cc9d63af587c691c0ea08e653"
+            },
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "输入侧Token综合消耗降低40%-49%，记忆检索延迟控制在400毫秒以内，端到端首次回答可做到1秒以内，综合准确率可以达到80%以上。",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "bbba5ea65a81bf06d3f6bb33c148a2916bd1d6c1f35c761a29ca03104924ae30"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "输入侧Token综合消耗降低",
+          "value": "40%-49%",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "输入侧Token综合消耗降低40%-49%",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "bff4998b8699e9c5387d276e428a01810e681412f1266917dbd3149d61504dee"
+            }
+          ]
+        },
+        {
+          "label": "记忆检索延迟",
+          "value": "400毫秒以内",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "记忆检索延迟控制在400毫秒以内",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "cac2bba97ed7656ee619b5a892cc3ae9e0383d438310d3e8d2012c34321fd1e2"
+            }
+          ]
+        },
+        {
+          "label": "端到端首次回答时间",
+          "value": "1秒以内",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "端到端首次回答可做到1秒以内",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "7ec3bad283b45ba50a295b3848d96f5710689f12c000677876e2bae5eea8e8ef"
+            }
+          ]
+        },
+        {
+          "label": "综合准确率",
+          "value": "80%以上",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "综合准确率可以达到80%以上",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "b2294f66f61e0919cf9828cea053d9f94be33c2a84074774d6b36db0fe36dee3"
+            }
+          ]
+        },
+        {
+          "label": "响应速度",
+          "value": "200～400毫秒",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f821089b9c25f5f",
+              "quote": "目前我们的响应速度稳定在 200～400 毫秒区间。",
+              "source_content_hash": "f9dcb7113d94ab95",
+              "quote_hash": "830a280de10c2847219b7b42c35621bafdf1ba6b21abd36f27b3a6925693b56b"
+            }
+          ]
+        },
+        {
+          "label": "大模型输入环节Token消耗减少",
+          "value": "约40%",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f821089b9c25f5f",
+              "quote": "在实际商业应用中，我们能够在大模型输入环节减少约 40% 的 Token 消耗。",
+              "source_content_hash": "f9dcb7113d94ab95",
+              "quote_hash": "199f4299be23f46dd881521e4dc2133a7f10b5105e9bbe6c0d209979a9e674f7"
+            }
+          ]
+        },
+        {
+          "label": "存储极限（不考虑遗忘）",
+          "value": "1570天",
+          "observed_at": "2026-02-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e3ff1abe8dc706c5",
+              "quote": "我们做过极限测试，用了1000万的向量边的约束，测了存储极限，不考虑遗忘的情况下是1570天。",
+              "source_content_hash": "e3024d542dbd763c",
+              "quote_hash": "98029e04e8293e22eaacf35f41bce0eb157d6a599ba976b97ccc432bb9f4193e"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "张源",
+          "quote": "记忆层一定会作为独立的基础设施长期存在。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "记忆层一定会作为独立的基础设施长期存在。",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "bbaaf7e30279dc86bda2f5b526e1e241e60e1c69c7dc675512e78491a5511941"
+            }
+          ]
+        },
+        {
+          "speaker": "张源",
+          "quote": "Memory的核心，不是存储，而是决策。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "Memory的核心，不是存储，而是决策。",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "226963df28393a238e1d08a7db8221c692ff6b29d016ffc0de68c5b247c8babc"
+            }
+          ]
+        },
+        {
+          "speaker": "张源",
+          "quote": "AI需要和物理世界有一个映射的锚点，这个锚点必须是时间。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a7b9a96043b1f3e8",
+              "quote": "AI需要和物理世界有一个映射的锚点，这个锚点必须是时间。",
+              "source_content_hash": "e7ff3f6841e97c43",
+              "quote_hash": "537f14b240b6e6357d9377eb87862e4733eabae06d7b30c5c616c44efe341a7b"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“记忆层作为独立基础设施”的长期存在性。本轮融资发生在公司产品MemAura上线并公布性能指标（Token消耗降低40%-49%，延迟400ms以内）之后，这些已验证的技术指标构成了融资的支撑信号。同时，公司联合英伟达、港科大等机构发布了全球首个多模态长记忆Benchmark MEMLENS，从学术层面证明了基模与记忆企业应各有分工，为“记忆层独立存在”的叙事提供了证据。但投资方仅披露为“深圳一线基金和产业资本”，未具名，表明该轮融资可能尚未形成广泛的机构共识，或投资方仍在观察商业化进展。",
+        "validated_signals": [
+          "产品MemAura已上线，提供ADK和API服务",
+          "输入侧Token综合消耗降低40%-49%，记忆检索延迟控制在400毫秒以内",
+          "联合英伟达、港科大、港中文发布全球首个多模态长记忆Benchmark MEMLENS并开源",
+          "已获得陪伴硬件、AI客服、数字员工等领域的客户"
+        ],
+        "risks": [
+          "投资方未披露具体名称，仅以“深圳一线基金和产业资本”泛称，市场验证信号较弱",
+          "Memory赛道极新，行业共识2025年底才在学术界形成，商业化路径和客户付费意愿尚未被大规模验证",
+          "基模厂商未来可能内化记忆能力，存在被上游整合的风险",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI基础设施（多模态长记忆）",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“记忆层作为独立基础设施”的长期存在性。本轮融资发生在公司产品MemAura上线并公布性能指标（Token消耗降低40%-49%，延迟400ms以内）之后，这些已验证的技术指标构成了融资的支撑信号。同时，公司联合英伟达、港科大等机构发布了全球首个多模态长记忆Benchmark MEMLENS，从学术层面证明了基模与记忆企业应各有分工，为“记忆层独立存在”的叙事提供了证据。但投资方仅披露为“深圳一线基金和产业资本”，未具名，表明该轮融资可能尚未形成广泛的机构共识，或投资方仍在观察商业化进展。",
+          "evidence_signals": [
+            "产品MemAura已上线，提供ADK和API服务",
+            "输入侧Token综合消耗降低40%-49%，记忆检索延迟控制在400毫秒以内",
+            "联合英伟达、港科大、港中文发布全球首个多模态长记忆Benchmark MEMLENS并开源",
+            "已获得陪伴硬件、AI客服、数字员工等领域的客户"
+          ],
+          "risks": [
+            "投资方未披露具体名称，仅以“深圳一线基金和产业资本”泛称，市场验证信号较弱",
+            "Memory赛道极新，行业共识2025年底才在学术界形成，商业化路径和客户付费意愿尚未被大规模验证",
+            "基模厂商未来可能内化记忆能力，存在被上游整合的风险"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MemAura",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张源",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-00514c4ffc2e3cd3",
+          "date": "2026-08-01",
+          "title": "国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目",
+          "amount": "数千万元",
+          "source_refs": [
+            "SA-f748b4f82619548e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a7b9a96043b1f3e8",
+          "source_url": "https://36kr.com/p/3919386961177985?f=rss",
+          "title": "国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目",
+          "publisher": "36氪",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-01T02:41:10.447Z",
+          "content_hash": "e7ff3f6841e97c43",
+          "source_artifact_id": "SA-f748b4f82619548e",
+          "raw_id": "RAW-cd81c97e8fb60343"
+        },
+        {
+          "source_id": "FISRC-6f821089b9c25f5f",
+          "source_url": "https://news.qq.com/rain/a/20260728A0AQX700",
+          "title": "丘脑智能完成数千万元种子轮融资，打造连接模型与用户的多模态长记忆丨对话创始人张源_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-01T04:17:09.110Z",
+          "content_hash": "f9dcb7113d94ab95",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e3ff1abe8dc706c5",
+          "source_url": "https://news.qq.com/rain/a/20260203A02IMF00",
+          "title": "对话丘脑智能：当AI memory理解了“时间”，下一个抖音就要出现了_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-01T04:17:10.718Z",
+          "content_hash": "e3024d542dbd763c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.2",
+        "generated_at": "2026-08-01T04:17:50.175Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-01T04:17:50.175Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "MemAura"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "张源"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-00514c4ffc2e3cd3"
+      ],
+      "aggregation": {
+        "key": "EN-2e334bb8de4eac34|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-00514c4ffc2e3cd3",
+      "company_name": "丘脑智能",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目\" funding company investors product",
+        "\"丘脑智能\" \"数千万元\" funding investors round",
+        "\"丘脑智能\" product customers case study",
+        "\"丘脑智能\" \"国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目\" competitors product use case",
+        "\"丘脑智能\" \"数千万元\" investor quote why invested",
+        "\"丘脑智能\" \"数千万元\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"丘脑智能\" \"数千万元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"丘脑智能\" \"数千万元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"丘脑智能\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"丘脑智能\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"丘脑智能\" \"国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"丘脑智能\" \"国内唯一做多模态长记忆的公司，融资数千万，押注主动智能｜涌现新项目\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"丘脑智能\" \"数千万元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"丘脑智能\" \"数千万元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"丘脑智能\" \"数千万元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"丘脑智能\" \"数千万元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-01T04:17:50.217Z"
+    }
+  ]
+}

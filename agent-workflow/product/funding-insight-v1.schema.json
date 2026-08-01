@@ -75,9 +75,14 @@
         "amount": { "type": "string", "minLength": 1 },
         "total_raised": { "type": "string" },
         "announced_at": { "type": "string" },
+        "investor_disclosure_status": { "enum": ["disclosed", "not_disclosed", "unknown"] },
+        "risk_markers": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string" }
+        },
         "investors": {
           "type": "array",
-          "minItems": 1,
           "items": {
             "type": "object",
             "required": ["name", "role", "entity_id", "evidence_refs"],

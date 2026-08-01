@@ -29,6 +29,7 @@ try {
   assert.equal(result.method, "deepseek_title_translation");
   assert.equal(sourceTitleFactsPreserved(sourceTitle, result.titleZh), true);
   assert.equal(isApprovedSourceTitleTranslation({ generatedBy: result.method }), true);
+  assert.equal(isApprovedSourceTitleTranslation({ generatedBy: "manual_reviewed_source_title_translation" }), false);
   assert.equal(isApprovedSourceTitleTranslation({ generatedBy: "business-rule_title_translation" }), false);
   assert.equal(isApprovedSourceTitleTranslation({ generatedBy: "mymemory_title_translation" }), false);
   upsertSourceTitleTranslation(translationFile, { sourceTitle, zhTitle: result.titleZh, method: result.method, model: result.model });

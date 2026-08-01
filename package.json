@@ -58,6 +58,7 @@
     "review:model-assist:queue": "node agent-workflow/tools/review-model-assist-queue.mjs",
     "backfill:data-center": "node agent-workflow/tools/backfill-data-center-v4.mjs",
     "backfill:source-titles": "node agent-workflow/tools/backfill-source-title-translations.mjs",
+    "regenerate:source-titles:deepseek": "node agent-workflow/tools/regenerate-source-title-translations-deepseek.mjs",
     "assert:source-titles": "node agent-workflow/tools/assert-source-title-integrity.mjs",
     "build:data-center-site": "node 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs",
     "materialize:entity-history": "node agent-workflow/tools/materialize-entity-history-v1.mjs",

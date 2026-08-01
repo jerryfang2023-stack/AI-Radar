@@ -8,7 +8,6 @@ export function hasCjk(value = "") {
 
 const approvedTranslationMethods = new Set([
   "deepseek_title_translation",
-  "manual_reviewed_source_title_translation",
 ]);
 
 export function isApprovedSourceTitleTranslation(entry = {}) {
@@ -188,7 +187,16 @@ function normalizeDateTokens(value) {
 
 function normalizeChineseQuantifiers(value) {
   return String(value || "")
+    .replace(/第([一二三四五六七八九十])(?=区|代|季|部|期|轮|版)/gu, (_, number) => `第${{ 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 }[number]}`)
     .replace(/([一二三四五六七八九十])(?=(?:年|个月|月|周|天|小时|分钟|倍|大))/gu, (match) => ({ 一: "1", 二: "2", 三: "3", 四: "4", 五: "5", 六: "6", 七: "7", 八: "8", 九: "9", 十: "10" }[match]));
+}
+
+function normalizeEnglishQuantifiers(value) {
+  const numbers = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+  return String(value || "").replace(
+    /\b(one|two|three|four|five|six|seven|eight|nine|ten)[-\s]+(?=years?|months?|weeks?|days?|hours?)/giu,
+    (_, number) => `${numbers[number.toLowerCase()]} `,
+  );
 }
 
 function normalizeComparableScales(value) {
@@ -212,7 +220,7 @@ function normalizeComparableScales(value) {
 
 export function comparableNumericFacts(value = "", spans = []) {
   const remainder = withoutSpans(value, spans);
-  const normalized = normalizeComparableScales(normalizeChineseQuantifiers(normalizeDateTokens(remainder)))
+  const normalized = normalizeComparableScales(normalizeEnglishQuantifiers(normalizeChineseQuantifiers(normalizeDateTokens(remainder))))
     .replace(/(\d[\d,]*(?:\.\d+)?)\s*lakh\b/giu, (_, number) => `${Number(number.replace(/,/gu, "")) * 100} k`);
   return [...normalized.matchAll(/(\d[\d,]*(?:\.\d+)?)\s*(k|m|b|万|亿)?(?![A-Za-z])/giu)].map((match) => {
     const number = Number(match[1].replace(/,/gu, ""));
@@ -365,12 +373,20 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
   model = process.env.DEEPSEEK_TITLE_TRANSLATION_MODEL || deepSeekModels().flash,
   timeoutMs = 12000,
 } = {}) {
+  const repairProtectedTerms = (value = "") => {
+    let repaired = value;
+    if (/\bSituational Awareness\b/iu.test(sourceTitle) && !/\bSituational Awareness\b/iu.test(repaired)) {
+      repaired = repaired.replace(/态势感知|情境感知|情景意识/gu, "Situational Awareness");
+    }
+    return repaired;
+  };
   const messages = (retryInstruction = "") => [
     {
       role: "system",
       content: [
         "Translate business-news source titles into concise Simplified Chinese.",
         "Preserve company names, product names, funding amounts, round names, dates, and named customers exactly.",
+        "Preserve protected product or work names such as Situational Awareness exactly in English.",
         "Never calculate, round, change, omit, or add any number or monetary amount.",
         "Keep numbered phrases such as Day 1, Q1, and model versions with their original digits; do not rewrite Day 1 as 首日.",
         "Translate AI agent as AI 智能体. Remove publisher and website suffixes such as Company Announcement, FT.com, TechCrunch, or PYMNTS.com.",
@@ -390,24 +406,24 @@ async function translateTitleWithDeepSeek(sourceTitle = "", {
       ].filter(Boolean).join("\n\n"),
     },
   ];
-  const first = stripGeneratorNoise(await deepSeekChatCompletion({
+  const first = repairProtectedTerms(stripGeneratorNoise(await deepSeekChatCompletion({
     apiKey,
     baseUrl,
     model,
     timeoutMs,
-    maxTokens: 120,
+    maxTokens: 600,
     messages: messages(),
-  }));
+  })));
   if (generatedTitleTranslationLooksUsable(sourceTitle, first)) return { text: first, model };
   const retryModel = deepSeekModels().pro;
-  const retry = stripGeneratorNoise(await deepSeekChatCompletion({
+  const retry = repairProtectedTerms(stripGeneratorNoise(await deepSeekChatCompletion({
     apiKey,
     baseUrl,
     model: retryModel,
     timeoutMs: Math.max(timeoutMs, 30000),
-    maxTokens: 120,
+    maxTokens: 800,
     messages: messages("A previous translation was rejected. Preserve every amount, date, quarter, version, and count. If an amount such as $12.5 has no unit, keep the literal $12.5 and never infer million or billion. Keep tokens such as Q1 and model versions semantically exact."),
-  }));
+  })));
   return { text: retry, model: retryModel };
 }
 
