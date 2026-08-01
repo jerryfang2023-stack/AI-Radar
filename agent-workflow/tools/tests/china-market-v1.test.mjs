@@ -71,6 +71,7 @@ test("China market scope is based on event content, not a Chinese publisher", ()
     {
       title: "GPT-5.6 reduces global API prices",
       source: "量子位",
+      market_region: "CN",
     },
   ], config.entityAliases);
   assert.equal(scoped.included.length, 1);
