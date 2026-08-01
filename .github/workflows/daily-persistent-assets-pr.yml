@@ -515,6 +515,7 @@ jobs:
             --stage=pre-commit \
             --block-stale=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pre-commit-gate.log"
+          node agent-workflow/tools/normalize-source-intake-titles.mjs --date="${RUN_DATE}"
           npm run assert:source-titles
 
       - name: Write persistent asset manifest

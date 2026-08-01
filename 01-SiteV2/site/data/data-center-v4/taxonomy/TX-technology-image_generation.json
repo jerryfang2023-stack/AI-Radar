@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:20:21.845Z",
+    "generatedAt": "2026-08-01T03:40:16.685Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
-    "eventCount": 1758,
-    "quarantinedEventCount": 14
+    "eventCount": 1759,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-technology-image_generation",
@@ -18,6 +18,7 @@
     "valueId": "image_generation",
     "eventIds": [
       "EV-fd329b4350f404ef",
+      "EV-cf4da5583e9311d7",
       "EV-82ae0ea3bfe336a1",
       "EV-1a241bcb4fad886c",
       "EV-a442b55d0bac5651",
@@ -28,6 +29,7 @@
     "entityIds": [
       "EN-b97e07c31e87f7d0",
       "EN-bbdefa2950f49882",
+      "EN-a5ba7c1a2375f0d4",
       "EN-9fbf261b62c1d7c0",
       "EN-827b607311e6593e",
       "EN-688f8db7018da7d4",
@@ -114,6 +116,78 @@
       "products": [],
       "sourceUrl": "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images",
       "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
+      "id": "EV-cf4da5583e9311d7",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "updatedDate": "2026-08-01",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Google Earth 上线一天后撤下其 AI 功能，因该功能可能传播虚假信息而受到批评",
+      "originalTitle": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation",
+      "subject": "Google nixes its Earth AI feature one day after",
+      "action": "launch",
+      "object": ", amid criticism it would spread misinformation",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成"
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-a5ba7c1a2375f0d4"
+      ],
+      "entityNames": [
+        "Google",
+        "Earth AI"
+      ],
+      "productName": "Earth AI",
+      "products": [
+        {
+          "name": "Earth AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation",
+      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-82ae0ea3bfe336a1",
@@ -793,6 +867,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-cf4da5583e9311d7",
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
         "EV-3ebf23c149dde19d",
@@ -965,6 +1040,27 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
+      "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "EN-a5ba7c1a2375f0d4",
+      "name": "Earth AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cf4da5583e9311d7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-31",
       "lastSeen": "2026-08-01"
     },
     {

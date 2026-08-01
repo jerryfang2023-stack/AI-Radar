@@ -40,7 +40,11 @@ test("resumed source intake restores reviewed Chinese source-title translations"
     });
     const sourceIndex = path.join(root, "01-SiteV2/content/01-raw/source-index.jsonl");
     fs.mkdirSync(path.dirname(sourceIndex), { recursive: true });
-    fs.writeFileSync(sourceIndex, `${JSON.stringify({ data_date: date, title_original: original, title_zh: "" })}\n`, "utf8");
+    fs.writeFileSync(sourceIndex, `${JSON.stringify({
+      data_date: date,
+      title_original: original,
+      title_zh: "",
+    })}\n`, "utf8");
 
     assert.deepEqual(normalizeSourceIntakeTitles(root, date), {
       date,
@@ -58,6 +62,23 @@ test("resumed source intake restores reviewed Chinese source-title translations"
     const row = JSON.parse(fs.readFileSync(sourceIndex, "utf8").trim());
     assert.equal(row.title_zh, translated);
     assert.equal(row.title_translation_method, "source_title_translation_db");
+
+    fs.writeFileSync(sourceIndex, `${JSON.stringify({
+      data_date: date,
+      title_original: original,
+      title_zh: translated,
+      title_translation_status: "needs_ingestion_translation",
+      title_translation_method: "title_translation_generator_failed",
+    })}\n`, "utf8");
+    assert.deepEqual(normalizeSourceIntakeTitles(root, date), {
+      date,
+      repaired_documents: 0,
+      repaired_source_index_rows: 1,
+      intake_file: `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`,
+    });
+    const provenanceRepairedRow = JSON.parse(fs.readFileSync(sourceIndex, "utf8").trim());
+    assert.equal(provenanceRepairedRow.title_translation_status, "translated");
+    assert.equal(provenanceRepairedRow.title_translation_method, "source_title_translation_db");
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }

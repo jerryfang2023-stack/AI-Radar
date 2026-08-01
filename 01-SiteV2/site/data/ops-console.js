@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-01T03:21:51.118Z",
+    "generatedAt": "2026-08-01T03:41:50.854Z",
     "date": "2026-08-01",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -425,7 +425,7 @@ window.WaveSightOpsConsole = {
           },
           {
             "label": "QA",
-            "value": 221
+            "value": 220
           }
         ]
       },
@@ -492,7 +492,7 @@ window.WaveSightOpsConsole = {
           "entities": 35,
           "relationships": 83,
           "conflicts": 0,
-          "qa_queue": 221
+          "qa_queue": 220
         },
         "evidence": [
           "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/manifest.json",
@@ -553,7 +553,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-08-01T03:21:51.081Z"
+        "detail": "2026-08-01T03:41:50.817Z"
       },
       {
         "label": "Daily Supervision",
@@ -568,7 +568,7 @@ window.WaveSightOpsConsole = {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V2.0.0-v4-telemetry",
         "data_date": "2026-08-01",
-        "generated_at": "2026-08-01T03:21:51.040Z",
+        "generated_at": "2026-08-01T03:41:50.773Z",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -589,10 +589,10 @@ window.WaveSightOpsConsole = {
         "entities": 35,
         "relationships": 83,
         "conflicts": 0,
-        "qa_queue": 221,
+        "qa_queue": 220,
         "qa_by_status": {
           "review_optional": 198,
-          "open": 23
+          "open": 22
         }
       },
       "v4Gate": {
@@ -621,7 +621,7 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V2.0.0-v4-telemetry",
-      "generatedAt": "2026-08-01T03:21:51.081Z",
+      "generatedAt": "2026-08-01T03:41:50.817Z",
       "dateRange": {
         "start": "2026-07-26",
         "end": "2026-08-01"
@@ -640,7 +640,7 @@ window.WaveSightOpsConsole = {
       "entities": 35,
       "relationships": 83,
       "conflicts": 0,
-      "qaQueue": 221,
+      "qaQueue": 220,
       "telemetryDate": "2026-08-01",
       "collection": {
         "discovered": 290,
@@ -658,10 +658,10 @@ window.WaveSightOpsConsole = {
         "entities": 35,
         "relationships": 83,
         "conflicts": 0,
-        "qa_queue": 221,
+        "qa_queue": 220,
         "qa_by_status": {
           "review_optional": 198,
-          "open": 23
+          "open": 22
         }
       },
       "applicationProjection": {
@@ -682,7 +682,7 @@ window.WaveSightOpsConsole = {
       "entities": 365,
       "relationships": 803,
       "conflicts": 1,
-      "qaQueue": 967
+      "qaQueue": 966
     },
     "days": [
       {
@@ -696,7 +696,7 @@ window.WaveSightOpsConsole = {
         "entities": 35,
         "relationships": 83,
         "conflicts": 0,
-        "qaQueue": 221
+        "qaQueue": 220
       },
       {
         "date": "2026-07-31",
