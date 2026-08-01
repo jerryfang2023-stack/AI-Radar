@@ -4,13 +4,48 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-31T10:07:43.400Z",
-    "latestDataDate": "2026-07-31",
-    "currentDate": "2026-07-31",
-    "eventCount": 1736,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "latestDataDate": "2026-08-01",
+    "currentDate": "2026-08-01",
+    "eventCount": 1757,
+    "quarantinedEventCount": 14
   },
   "hardware": [
+    {
+      "id": "HW-eb5bba1ad6c016b0",
+      "eventId": "EV-eb12fb9dd08e5aad",
+      "dataDate": "2026-08-01",
+      "date": "2026-07-31",
+      "title": "谷歌DeepMind发布Gemini Robotics 2，为从桌面机械臂到人形机器人的各种形态机器人提供动力",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "vision-language-action model",
+      "supplier": "Google DeepMind",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/google-deepmind-unveils-gemini-robotics-2-to-power-robots-of-all-shapes-from-tabletop-arms-to-humanoids",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-07-31",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87"
+      ]
+    },
     {
       "id": "HW-b0c753b9501f996e",
       "eventId": "EV-0a4e9b2eca953036",
@@ -1853,6 +1888,369 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-a357e8f67fba3e5e",
+      "snapshotKey": "a357e8f67fba3e5e",
+      "snapshotId": "HWS-db7129c39ed78b01",
+      "eventId": "EV-a89a5b511c643be8",
+      "eventIds": [
+        "EV-a89a5b511c643be8"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "BER10",
+      "subject": "欧洲 Openchip",
+      "productNames": [
+        "BER10"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "specification"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ba248110db48f6fa"
+        },
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-0bfb9a2bbff6836e"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-01",
+          "previousDate": "2026-07-31",
+          "snapshotId": "HWS-db7129c39ed78b01",
+          "previousSnapshotId": "HWS-f8fc360cf0cad490",
+          "changedFacts": [
+            "product",
+            "specification"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-5794c8231e80e7ba",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺 - IT之家",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-d542fbf1ac6ed903",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-ba248110db48f6fa",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-b286042c4421615d",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-0bfb9a2bbff6836e",
+          "fact_type": "specification",
+          "observed_at": "2026-07-31T02:54:33.000Z",
+          "subject_entity_id": "",
+          "subject_name": "欧洲 Openchip",
+          "product_entity_ids": [
+            "EN-11e2258ba7641926"
+          ],
+          "product_names": [
+            "BER10"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 31 日消息，欧洲 RISC-V 指令集节能 AI /HPC 芯片企业 Openchip 西班牙当地时间 30 日公布了其基于亚 2 纳米 GAA 制程工艺的 BER10 处理器。",
+          "event_refs": [
+            "EV-a89a5b511c643be8"
+          ],
+          "claim_ref": "CL-bb984d9850ef70ac",
+          "source_refs": [
+            "SA-13464a616525640d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/975.htm",
+      "entityIds": [
+        "EN-11e2258ba7641926"
+      ]
+    },
+    {
+      "id": "HWC-9adbfc5062ed77fa",
+      "snapshotKey": "9adbfc5062ed77fa",
+      "snapshotId": "HWS-98b0cf2dd7258ea2",
+      "eventId": "EV-8f2787ceb5224cc9",
+      "eventIds": [
+        "EV-8f2787ceb5224cc9"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "DeepSeek",
+      "subject": "DeepSeek",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "100",
+          "unit": "亿",
+          "fact_ref": "HWF-bf3dd2b3a100b343"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-bf3dd2b3a100b343",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T06:38:54.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "100",
+          "unit": "亿",
+          "source_quote": "二是模型能力跃升，深度求索、月之暗面等本土企业先后发布多个万亿级参数开源大模型， 国产大模型全球总下载量突破 100 亿次 ，国产模型与国产算力芯片加速适配。",
+          "event_refs": [
+            "EV-8f2787ceb5224cc9"
+          ],
+          "claim_ref": "CL-fa74440341c640b0",
+          "source_refs": [
+            "SA-3f27658bd8e8b3fb"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/984/130.htm",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-b5251b35f15bedc4"
+      ]
+    },
+    {
+      "id": "HWC-2b98a40612d24843",
+      "snapshotKey": "2b98a40612d24843",
+      "snapshotId": "HWS-808cc8161a483041",
+      "eventId": "EV-f01a57b8fbd2518e",
+      "eventIds": [
+        "EV-f01a57b8fbd2518e"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "DeepSeek-V4-Flash-0731",
+      "subject": "DeepSeek",
+      "productNames": [
+        "DeepSeek-V4-Flash-0731"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-67efaf0cd0e0b5a4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-67efaf0cd0e0b5a4",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-31T00:00:00.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [
+            "EN-8d80aefb50a16684"
+          ],
+          "product_names": [
+            "DeepSeek-V4-Flash-0731"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The checkpoint ships with the DSpark speculative decoding module attached, matching the structure of DeepSeek-V4-Flash-DSpark . Hugging Face reports 304B parameters for the repo, which includes that draft module on top of the 284B base.",
+          "event_refs": [
+            "EV-f01a57b8fbd2518e"
+          ],
+          "claim_ref": "CL-a13357f572d3a30a",
+          "source_refs": [
+            "SA-e5d239e4d6ee00d2"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-8d80aefb50a16684"
+      ]
+    },
+    {
+      "id": "HWC-157ac314541955fe",
+      "snapshotKey": "157ac314541955fe",
+      "snapshotId": "HWS-43557e7cb29b8fc7",
+      "eventId": "EV-eb12fb9dd08e5aad",
+      "eventIds": [
+        "EV-eb12fb9dd08e5aad"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "Gemini Robotics 2",
+      "subject": "Google DeepMind",
+      "productNames": [
+        "Gemini Robotics 2"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-85361fa6fe7d7cd2"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-0713a8b577588d4e",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T00:00:00.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-e1086f449d58de87"
+          ],
+          "product_names": [
+            "Gemini Robotics 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Google Deepmind unveils Gemini Robotics 2 to power robots of all shapes from tabletop arms to humanoids",
+          "event_refs": [
+            "EV-eb12fb9dd08e5aad"
+          ],
+          "claim_ref": "CL-da70d6a8e40a64db",
+          "source_refs": [
+            "SA-fa41bf79373c44e1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-85361fa6fe7d7cd2",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T00:00:00.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-e1086f449d58de87"
+          ],
+          "product_names": [
+            "Gemini Robotics 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Google Deepmind has introduced Gemini Robotics 2, which it calls its most advanced vision-language-action (VLA) model yet. VLA models combine image recognition, language processing, and action control to help robots operate in physical environments. Deepmind says the model can control systems ranging from tabletop arms to full-body humanoid robots.",
+          "event_refs": [
+            "EV-eb12fb9dd08e5aad"
+          ],
+          "claim_ref": "CL-969d916e74dcfd8b",
+          "source_refs": [
+            "SA-fa41bf79373c44e1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/google-deepmind-unveils-gemini-robotics-2-to-power-robots-of-all-shapes-from-tabletop-arms-to-humanoids",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87"
+      ]
+    },
+    {
       "id": "HWC-3fe7a823934149e7",
       "snapshotKey": "3fe7a823934149e7",
       "snapshotId": "HWS-b3d3c6227609413d",
@@ -1955,130 +2353,6 @@
         "EN-d48c78cd64971f21",
         "EN-8009238460836f4b",
         "EN-c1afeb742df44d71"
-      ]
-    },
-    {
-      "id": "HWC-a357e8f67fba3e5e",
-      "snapshotKey": "a357e8f67fba3e5e",
-      "snapshotId": "HWS-f8fc360cf0cad490",
-      "eventId": "EV-a89a5b511c643be8",
-      "eventIds": [
-        "EV-a89a5b511c643be8"
-      ],
-      "dataDate": "2026-07-31",
-      "date": "2026-07-31",
-      "title": "BER10",
-      "subject": "欧洲 Openchip",
-      "productNames": [
-        "BER10"
-      ],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product",
-        "specification"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-b5af98324037df27"
-        },
-        "specification": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-a6d5315fe67e856c"
-        }
-      },
-      "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-3a6fd3f7ad0a6f5b",
-          "fact_type": "product",
-          "observed_at": "2026-07-31T02:54:33.000Z",
-          "subject_entity_id": "",
-          "subject_name": "欧洲 Openchip",
-          "product_entity_ids": [
-            "EN-11e2258ba7641926"
-          ],
-          "product_names": [
-            "BER10"
-          ],
-          "component_type": "semiconductor",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺 - IT之家",
-          "event_refs": [
-            "EV-a89a5b511c643be8"
-          ],
-          "claim_ref": "CL-e7d1af4422302fee",
-          "source_refs": [
-            "SA-13464a616525640d"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-b5af98324037df27",
-          "fact_type": "product",
-          "observed_at": "2026-07-31T02:54:33.000Z",
-          "subject_entity_id": "",
-          "subject_name": "欧洲 Openchip",
-          "product_entity_ids": [
-            "EN-11e2258ba7641926"
-          ],
-          "product_names": [
-            "BER10"
-          ],
-          "component_type": "semiconductor",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "欧洲 Openchip 发布 BER10 处理器：RISC-V 指令集，亚 2 纳米 GAA 工艺",
-          "event_refs": [
-            "EV-a89a5b511c643be8"
-          ],
-          "claim_ref": "CL-07c9b9a7f5f22f85",
-          "source_refs": [
-            "SA-13464a616525640d"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-07-31",
-          "hardware_fact_id": "HWF-a6d5315fe67e856c",
-          "fact_type": "specification",
-          "observed_at": "2026-07-31T02:54:33.000Z",
-          "subject_entity_id": "",
-          "subject_name": "欧洲 Openchip",
-          "product_entity_ids": [
-            "EN-11e2258ba7641926"
-          ],
-          "product_names": [
-            "BER10"
-          ],
-          "component_type": "semiconductor",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 7 月 31 日消息，欧洲 RISC-V 指令集节能 AI /HPC 芯片企业 Openchip 西班牙当地时间 30 日公布了其基于亚 2 纳米 GAA 制程工艺的 BER10 处理器。",
-          "event_refs": [
-            "EV-a89a5b511c643be8"
-          ],
-          "claim_ref": "CL-e1b57a5ae1e492ba",
-          "source_refs": [
-            "SA-13464a616525640d"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/983/975.htm",
-      "entityIds": [
-        "EN-11e2258ba7641926"
       ]
     },
     {
@@ -3931,37 +4205,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-07-31",
-      "funnel_id": "LF-9ec015682c68431f",
+      "data_date": "2026-08-01",
+      "funnel_id": "LF-ca243f400121eaf5",
       "lens": "hardware",
-      "date": "2026-07-31",
+      "date": "2026-08-01",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
         "hardware_product_specs",
-        "hardware_shipment_deployment",
-        "hardware_supply_agreement"
+        "hardware_shipment_deployment"
       ],
       "raw_documents": 26,
-      "original_sources": 13,
-      "valid_claims": 6,
+      "original_sources": 24,
+      "valid_claims": 9,
       "observations": 7,
-      "canonical_events": 2,
+      "canonical_events": 3,
       "blocker_counts": {
-        "source_outside_daily_window": 7,
-        "research_or_report_container_not_event_source": 1,
-        "non_event_or_index_title": 3,
-        "no_source_bounded_event": 2,
-        "raw_source_quality_block": 10,
-        "raw_document_not_auditable": 1
+        "source_outside_daily_window": 14,
+        "non_event_or_index_title": 1,
+        "no_source_bounded_event": 3,
+        "repository_page_requires_release_source": 1,
+        "rumor_requires_primary_confirmation": 1,
+        "raw_source_quality_block": 2
       },
       "rates": {
-        "original_source_rate": 0.5,
-        "valid_claim_rate": 0.23076923076923078,
-        "observation_rate": 1,
+        "original_source_rate": 0.9230769230769231,
+        "valid_claim_rate": 0.34615384615384615,
+        "observation_rate": 0.7777777777777778,
         "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/monitoring-funnel.json"
     }
   ]
 }
