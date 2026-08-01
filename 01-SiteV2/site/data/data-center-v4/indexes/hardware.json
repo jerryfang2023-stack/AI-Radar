@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T03:04:29.802Z",
+    "generatedAt": "2026-08-01T03:20:21.845Z",
     "latestDataDate": "2026-08-01",
     "currentDate": "2026-08-01",
-    "eventCount": 1757,
+    "eventCount": 1758,
     "quarantinedEventCount": 14
   },
   "hardware": [
@@ -1887,6 +1887,66 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-6446b330bfd7a612",
+      "snapshotKey": "6446b330bfd7a612",
+      "snapshotId": "HWS-392b4439e7981d07",
+      "eventId": "EV-c3b96b789b5bcafd",
+      "eventIds": [
+        "EV-c3b96b789b5bcafd"
+      ],
+      "dataDate": "2026-08-01",
+      "date": "2026-08-01",
+      "title": "Axe Compute",
+      "subject": "Axe Compute",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "capex"
+      ],
+      "latestValues": {
+        "capex": {
+          "metric_value": "3",
+          "unit": "$billion",
+          "fact_ref": "HWF-867d3cfe683d07e0"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [],
+      "capexFacts": [
+        {
+          "data_date": "2026-08-01",
+          "hardware_fact_id": "HWF-867d3cfe683d07e0",
+          "fact_type": "capex",
+          "observed_at": "2026-07-27T00:00:00.000Z",
+          "subject_entity_id": "EN-54dfb14dcddad637",
+          "subject_name": "Axe Compute",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "3",
+          "unit": "$billion",
+          "source_quote": "The deal, together with earlier Build agreements, lifts the company’s 2026 signed contracted value to more than $3 billion and is tied to more than $534 million in expected customer prepayments over the next 30 days, covering much of the related GPU and infrastructure capex. Axe Compute plans to combine these prepayments with project-level financing, with Build deployments beginning to generate monthly revenue this quarter and further activations in the fourth quarter of 2026, boosting annual run rate to over $696 million and reducing reliance on equity financing while creating future redeployment options for owned GPU capacity.",
+          "event_refs": [
+            "EV-c3b96b789b5bcafd"
+          ],
+          "claim_ref": "CL-d3c18f5aee2e041b",
+          "source_refs": [
+            "SA-2d1e1d250b52afe5"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://theglobeandmail.com/investing/markets/markets-news/Tipranks/3500767/axe-compute-secures-1-5b-ai-gpu-cluster-deal",
+      "entityIds": [
+        "EN-54dfb14dcddad637"
+      ]
+    },
     {
       "id": "HWC-a357e8f67fba3e5e",
       "snapshotKey": "a357e8f67fba3e5e",
@@ -4218,7 +4278,7 @@
       "raw_documents": 26,
       "original_sources": 24,
       "valid_claims": 9,
-      "observations": 7,
+      "observations": 8,
       "canonical_events": 3,
       "blocker_counts": {
         "source_outside_daily_window": 14,
@@ -4231,7 +4291,7 @@
       "rates": {
         "original_source_rate": 0.9230769230769231,
         "valid_claim_rate": 0.34615384615384615,
-        "observation_rate": 0.7777777777777778,
+        "observation_rate": 0.8888888888888888,
         "event_conversion_rate": 0.3333333333333333
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/monitoring-funnel.json"
