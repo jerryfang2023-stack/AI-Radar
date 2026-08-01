@@ -8,6 +8,7 @@ import {
   hasActiveHistoricalDuplicate,
   loadSourceIntakeEntries,
   mergeSourceIntakes,
+  normalizeSourceIntakeMarketScopes,
   readSourceIntake,
   SOURCE_INTAKE_VERSION,
   sourceIntakePath,
@@ -105,6 +106,37 @@ test("SOURCE-INTAKE-V1 rejects body references outside the repository", () => {
     raw_documents: [{ raw_id: "RAW-1", body_ref: path.join(outside, "source.json") }],
   });
   assert.throws(() => loadSourceIntakeEntries(root, date), /does not resolve inside the repository/u);
+});
+
+test("SOURCE-INTAKE-V1 clears query-only CN scope from unmatched restored documents", () => {
+  const normalized = normalizeSourceIntakeMarketScopes({
+    raw_documents: [
+      {
+        raw_id: "RAW-unmatched",
+        market_scope: {
+          source_registry_id: "",
+          source_region: "",
+          market_region: "CN",
+          china_market_match: false,
+          china_market_match_basis: "",
+        },
+      },
+      {
+        raw_id: "RAW-matched",
+        market_scope: {
+          source_registry_id: "cn-example",
+          source_region: "CN",
+          market_region: "CN",
+          china_market_match: true,
+          china_market_match_basis: "china_entity:Example",
+        },
+      },
+    ],
+  });
+
+  assert.equal(normalized.changed, 1);
+  assert.equal(normalized.payload.raw_documents[0].market_scope.market_region, "");
+  assert.equal(normalized.payload.raw_documents[1].market_scope.market_region, "CN");
 });
 
 test("historical duplicate gate ignores provider hits already merged before Raw selection", () => {
