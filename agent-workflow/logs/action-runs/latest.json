@@ -1,45 +1,29 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-02T05:00:20.335Z",
+  "generated_at": "2026-08-02T05:04:34.669Z",
   "date": "2026-08-02",
   "action": "Operations telemetry and health",
   "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Restored 2026-08-02 First-Line Viewpoints, corrected FDE/hardware and publication telemetry, and closed recurring incidents.",
+  "summary": "Expanded the mobile event-theme filter to full width after the frontstage smoke gate found an undersized control.",
   "contexts": [],
   "changed_files": [
-    ".github/workflows/daily-persistent-assets-pr.yml",
-    ".github/workflows/daily-production-chain-dry-run.yml",
-    "agent-workflow/tools/finalize-ops-publication-for-pages.mjs",
-    "agent-workflow/tools/tests/collection-telemetry-v1.test.mjs",
-    "01-SiteV2/site/data/collection-telemetry-v1.json",
-    "01-SiteV2/site/data/pipeline-dashboard.json",
-    "01-SiteV2/site/data/ops-console.json"
+    "01-SiteV2/site/assets/data-center-v4.css"
   ],
-  "outputs": [
-    "First-Line Viewpoints PR 534",
-    "Pages deployment 30733283145"
-  ],
+  "outputs": [],
   "checks": [
-    "npm test",
-    "collection telemetry tests",
-    "2026-08-02 daily supervision"
+    "npm run test:v4-frontstage-smoke"
   ],
   "issues": [
-    "missed morning First-Line RSS run",
-    "FDE and hardware telemetry remained unknown",
-    "deployment finalizer left nested publication status waiting"
+    "mobile event topic selector failed the minimum-width interaction gate"
   ],
   "risks": [],
   "lessons": [
-    "projection telemetry must use the materialization step outcome",
-    "Pages finalization must update every nested publication view"
+    "mobile filter additions must be included in the full-width event toolbar selector set"
   ],
-  "reusable_rules": [
-    "independent First-Line recovery must not rerun accepted V4 facts"
-  ],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }
