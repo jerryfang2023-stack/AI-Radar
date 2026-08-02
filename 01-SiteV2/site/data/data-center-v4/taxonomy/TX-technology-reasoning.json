@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -31,12 +32,11 @@
     "entityIds": [
       "EN-b5738c169b693bee",
       "EN-8d4321d936320802",
-      "EN-96eebba49dbbf422",
       "EN-4d748ebd71af03a7",
       "EN-bbdefa2950f49882",
       "EN-916a98f0fa2a39af",
       "EN-364df82f85761d58",
-      "EN-2b6e51bec93e86c1",
+      "EN-4d09c69c19f5f67b",
       "EN-d30e5ffc0ba9150b",
       "EN-8989aada6eb4a4c3",
       "EN-a8100d425f663eac",
@@ -88,13 +88,55 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -104,9 +146,30 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业软件平台"
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-b5738c169b693bee",
+              "EN-8d4321d936320802",
+              "EN-4d748ebd71af03a7",
+              "EN-bbdefa2950f49882",
+              "EN-916a98f0fa2a39af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-b5738c169b693bee",
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -119,39 +182,165 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "enterprise_software_platform",
-          "dimensionName": "产品形态",
-          "name": "企业软件平台"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "enterprise_software_platform",
-          "dimensionName": "产品形态",
-          "name": "企业软件平台"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -200,19 +389,49 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
-          "name": "具身智能"
+          "name": "具身智能",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -223,9 +442,38 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "物理自动化"
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-364df82f85761d58"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-bbdefa2950f49882",
+              "EN-364df82f85761d58"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-364df82f85761d58",
+              "EN-4d09c69c19f5f67b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -237,51 +485,145 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
-          "name": "具身智能"
+          "name": "具身智能",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "物理自动化"
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "physical_automation",
           "dimensionName": "应用场景",
-          "name": "物理自动化"
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
-          "name": "具身智能"
+          "name": "具身智能",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -344,7 +686,37 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-d30e5ffc0ba9150b",
+            "EN-8989aada6eb4a4c3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-d30e5ffc0ba9150b",
+            "EN-8989aada6eb4a4c3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-d30e5ffc0ba9150b",
+            "EN-8989aada6eb4a4c3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -354,9 +726,15 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-d30e5ffc0ba9150b",
+              "EN-8989aada6eb4a4c3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -369,27 +747,51 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-d30e5ffc0ba9150b",
+            "EN-8989aada6eb4a4c3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-d30e5ffc0ba9150b",
+            "EN-8989aada6eb4a4c3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-d30e5ffc0ba9150b",
+            "EN-8989aada6eb4a4c3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-d30e5ffc0ba9150b",
+            "EN-8989aada6eb4a4c3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -436,7 +838,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-a8100d425f663eac",
+            "EN-c0d023c66edfc877"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -454,7 +862,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-a8100d425f663eac",
+            "EN-c0d023c66edfc877"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -462,7 +876,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-a8100d425f663eac",
+            "EN-c0d023c66edfc877"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -511,25 +931,61 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "tool_use",
-          "name": "工具调用"
+          "name": "工具调用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -547,25 +1003,49 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "tool_use",
-          "name": "工具调用"
+          "name": "工具调用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -573,25 +1053,49 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "tool_use",
-          "name": "工具调用"
+          "name": "工具调用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -644,25 +1148,49 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -672,15 +1200,27 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model_api_service",
             "dimensionName": "产品形态",
-            "name": "模型 API 服务"
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00",
+              "EN-e3863f813fe47240"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "product_form",
-            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "终端 AI 应用"
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00",
+              "EN-e3863f813fe47240"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -693,75 +1233,147 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
+          "dimensionName": "产品形态",
           "id": "model_api_service",
-          "dimensionName": "产品形态",
-          "name": "模型 API 服务"
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "end_user_application",
           "dimensionName": "产品形态",
-          "name": "终端 AI 应用"
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model_api_service",
           "dimensionName": "产品形态",
-          "name": "模型 API 服务"
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "end_user_application",
           "dimensionName": "产品形态",
-          "name": "终端 AI 应用"
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -814,13 +1426,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -831,9 +1453,14 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "security_operations",
             "dimensionName": "应用场景",
-            "name": "安全运营"
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -845,39 +1472,69 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "security_operations",
           "dimensionName": "应用场景",
-          "name": "安全运营"
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "security_operations",
           "dimensionName": "应用场景",
-          "name": "安全运营"
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -916,7 +1573,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-1cd41545564777ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -926,9 +1588,14 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "chip_accelerator",
             "dimensionName": "产品形态",
-            "name": "芯片与加速器"
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-1cd41545564777ce"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -941,27 +1608,47 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-1cd41545564777ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "chip_accelerator",
           "dimensionName": "产品形态",
-          "name": "芯片与加速器"
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-1cd41545564777ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "chip_accelerator",
           "dimensionName": "产品形态",
-          "name": "芯片与加速器"
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-1cd41545564777ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-1cd41545564777ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1012,7 +1699,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0",
+            "EN-1f8a924e62194552"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1030,7 +1723,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0",
+            "EN-1f8a924e62194552"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1038,7 +1737,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0",
+            "EN-1f8a924e62194552"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1091,13 +1796,45 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9bc22dcabf7f45b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9bc22dcabf7f45b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9bc22dcabf7f45b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1115,13 +1852,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9bc22dcabf7f45b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1129,13 +1876,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-9bc22dcabf7f45b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1187,7 +1944,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-product_form-security_software",
+        "TX-deployment_model-on_premise",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
@@ -1348,34 +2110,48 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-multimodal",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
         "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_application-chips",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-technology-multimodal",
+        "TX-product_form-security_software",
+        "TX-industry-telecommunications",
+        "TX-industry-logistics_supply_chain",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
-        "TX-technology-retrieval_augmented_generation",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
-        "TX-technology-image_generation",
-        "TX-technology-inference_optimization",
-        "TX-technology-guardrails_safety",
-        "TX-industry-telecommunications",
-        "TX-industry-media_entertainment",
-        "TX-industry-agriculture",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
-        "TX-technology-speech_audio",
-        "TX-technology-distillation"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
@@ -1407,191 +2183,6 @@
       "lastSeen": "2026-07-28"
     },
     {
-      "id": "EN-96eebba49dbbf422",
-      "name": "Intel",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ccbf97fdf4dc11d0",
-        "EV-2069f6a931b8c9d6",
-        "EV-02882e6f5e1902c6",
-        "EV-f6a72cddbda748b3",
-        "EV-4eaf3aabecae6016",
-        "EV-640c5ea9f4fa2780",
-        "EV-6e516b6e68def9cf",
-        "EV-86ca5af11ee4d275",
-        "EV-a8dc5c859946f336",
-        "EV-d9cc588fb41a7e67",
-        "EV-463cb26b5e03c7f7",
-        "EV-232ab5bcbaf6552d",
-        "EV-48075ca70a5458ec",
-        "EV-7b1c734882fa1ea6",
-        "EV-b3c7c4bff17063d8",
-        "EV-12a42b0aabee236f",
-        "EV-81bd541510a530f0",
-        "EV-2bb63a3015195f9b",
-        "EV-4e7a32c9ee893918",
-        "EV-d4e44892226be468",
-        "EV-921c843ad32c993c",
-        "EV-2bea8d8046a9b325",
-        "EV-5f5f252c6a826599",
-        "EV-9fa9822969d3c3fd",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-14a666fc27d73a80",
-        "EV-9de19f01ac4771fa",
-        "EV-39717cdbada984d7",
-        "EV-044b917005a8f611",
-        "EV-dc442b91a69fcc5a",
-        "EV-02548003157849bb",
-        "EV-c0d19b8641a7a36c",
-        "EV-ee0662b75588987e",
-        "EV-c3b8772c06a25dbc",
-        "EV-b1138bccf5ccd86c",
-        "EV-e941c32639167c23",
-        "EV-e8d1de5c77f32b9c",
-        "EV-6a7f9d990732e4e2",
-        "EV-bc4ac955cd26b969",
-        "EV-88f4ee8cd57bdf42",
-        "EV-ef7346378fcf9746",
-        "EV-86489eda802ffc19",
-        "EV-220be2fe413b8cfa",
-        "EV-ebe9ed3158df619b",
-        "EV-6cb8979f92cf74ce",
-        "EV-7add33b4c74dbf1a",
-        "EV-3b1613cedea7dad4",
-        "EV-59f4561c5243eb98",
-        "EV-467d1a701d21327d",
-        "EV-c5643983538c6513",
-        "EV-b85139b8fba1a5c5",
-        "EV-c4303801ea8c54dc",
-        "EV-0b6cfbf67ba2da31",
-        "EV-8b0f056571d68269",
-        "EV-4b545e310ded2baa",
-        "EV-b4eb99a878be9bb2",
-        "EV-cfb7c4b4b765f53b",
-        "EV-4dd25589d834060d",
-        "EV-6617850e0b014051",
-        "EV-c81cb21337a9bb98",
-        "EV-2f9a87bd46248fe8",
-        "EV-056bb8c683ef60a4",
-        "EV-b4b5d141dac164c2",
-        "EV-6e4dd5111dfaae9c",
-        "EV-36a9e4e908249381",
-        "EV-181b425d2a600cad",
-        "EV-2c87c8ea47cbd1b6",
-        "EV-48015ed51ec9be9f",
-        "EV-b7bcc18d70ed4f13",
-        "EV-bb9ba11acf104db1",
-        "EV-2fd730d0ad452334",
-        "EV-b95539d17772a4ce",
-        "EV-f63462e34ea40699",
-        "EV-26183a56cf9ed63c",
-        "EV-97747aee0cafd9f3",
-        "EV-8e01849c05b50355",
-        "EV-4faa2bcf2e42e60c",
-        "EV-45be473baf6dfa4c",
-        "EV-1ba939d8baf43207",
-        "EV-941ba9ebdc43f20c",
-        "EV-92d28aef0c4b0a8a",
-        "EV-c2800c1c5a3f568f",
-        "EV-d4ddee1b39cced77",
-        "EV-025778b83c1b2ca9",
-        "EV-dce5de62b2e4b752",
-        "EV-57565fc2e7502c59",
-        "EV-2ffbe4560e69992a",
-        "EV-e42e55d1e11a2ba2",
-        "EV-41baa43cf05d4288",
-        "EV-6af1e74358025628",
-        "EV-701417bcd9b57095",
-        "EV-3847d883688587ba",
-        "EV-3a7128e2d7ff149e",
-        "EV-40390136762c64d3",
-        "EV-53f881da31630a04",
-        "EV-dfbc2f02003c7595",
-        "EV-0edb0a592ca1fd67",
-        "EV-578a9db1fe952d0a",
-        "EV-a70d5cf3ee6d6d64",
-        "EV-f784003febc1d9eb",
-        "EV-7e52d691a0553667",
-        "EV-37cdd2fae39aaa2e",
-        "EV-3d1c01d3d1b0bba4",
-        "EV-644337db309a1c82",
-        "EV-9ae9aa86e51e64a2",
-        "EV-be19904753c9c486",
-        "EV-832fa2db95cfea6e",
-        "EV-e28e134345ea5f99",
-        "EV-4e55361d8324dd49",
-        "EV-97a8d86baa7fffc4",
-        "EV-f89ba2b487d4abf1",
-        "EV-5a1422a9929c582e",
-        "EV-8361a47c70ecd243",
-        "EV-bff418b2959f58fb",
-        "EV-c5b8faec223a4caf",
-        "EV-da062d02015f99fb",
-        "EV-9eb3693cc65fbca9",
-        "EV-57597c92f7b183a9",
-        "EV-5493c61bcbe58aa2",
-        "EV-84b423077bf8dac8",
-        "EV-ae89898e7aa4a4d6",
-        "EV-0cb98302768c2e0a",
-        "EV-6ce6b9c9780b97d9",
-        "EV-dd62847548bb6ae3",
-        "EV-34929bdd016dc8d6",
-        "EV-0fd8bb718db1118c",
-        "EV-067f57f6e6ffa6ce",
-        "EV-edb1ddb3a091ada4",
-        "EV-022d1f3160d94048",
-        "EV-9705a8de3c2e9653",
-        "EV-6fba63ca5f1e51c7",
-        "EV-8b4f7844af234ed8",
-        "EV-e8e47f4bb528e107",
-        "EV-8654cc0faeb02d14"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-automotive_transportation",
-        "TX-use_case-procurement_supply_chain",
-        "TX-industry-legal_services",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-industry-professional_services",
-        "TX-technology-fine_tuning",
-        "TX-use_case-design_engineering",
-        "TX-technology-image_generation",
-        "TX-industry-government_public_sector",
-        "TX-industry-telecommunications",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning"
-      ],
-      "relatedEntityIds": [
-        "EN-8d323d8bba783aa3",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-28"
-    },
-    {
       "id": "EN-4d748ebd71af03a7",
       "name": "Accenture",
       "entityType": "organization_candidate",
@@ -1615,6 +2206,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-reasoning"
       ],
@@ -1796,33 +2388,43 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
         "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-security_software",
         "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
+        "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-8d323d8bba783aa3",
@@ -1875,8 +2477,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
+        "TX-deployment_model-hybrid",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-model_context_protocol",
         "TX-technology-tool_use",
@@ -1905,87 +2510,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-30",
       "lastSeen": "2026-07-31"
-    },
-    {
-      "id": "EN-2b6e51bec93e86c1",
-      "name": "Google DeepMind",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "DeepMind"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6f092cfc7a064d64",
-        "EV-d4e44892226be468",
-        "EV-1ac32035d5e425e1",
-        "EV-19ebde6e2de35fc9",
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-d961d3ad02f6ae14",
-        "EV-eb12fb9dd08e5aad",
-        "EV-7a0f201debe99f2b",
-        "EV-60110525440fac47",
-        "EV-6b0106ef4a79df05",
-        "EV-5f2acbfb8f54fd59",
-        "EV-59229486408edb05",
-        "EV-6654f62015eff8e3",
-        "EV-7c6a9f4ee4829976",
-        "EV-93c6ccf23cc422cb",
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-011eeba13ebcc9a8",
-        "EV-8eed6489ab514823",
-        "EV-3ef3e18df61a00d8",
-        "EV-568d2aeab5234e48",
-        "EV-f68e00bb9fd49fac",
-        "EV-d46aa5935d9bb672",
-        "EV-3e9a0d1be6de5096",
-        "EV-e96aba142e46eba1",
-        "EV-d49da50484ba781f",
-        "EV-81e297ea6f8fde3b",
-        "EV-68edd592c36dccd3"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-technology-vision_language",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_discovery",
-        "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
-        "TX-technology-reasoning",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [
-        "EN-18f0900d6c487f59",
-        "EN-92af3ce2fb97edf3",
-        "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
-      ],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-d30e5ffc0ba9150b",
@@ -2002,6 +2533,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
@@ -2025,6 +2557,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
@@ -2163,20 +2696,22 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-model_api_service",
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
         "TX-industry-manufacturing",
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-technology-computer_use",
-        "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-industry-aerospace_defense",
+        "TX-product_form-developer_tool",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-guardrails_safety",
-        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-distillation"
@@ -2210,7 +2745,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model_api_service",
         "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-technology-tool_use",
@@ -2501,37 +3038,42 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
         "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-industry-financial_services",
+        "TX-industry-professional_services",
         "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-use_case-research_discovery",
         "TX-industry-legal_services",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-industry-professional_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-7839fb10a8f14c70",
@@ -2575,6 +3117,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
@@ -2702,30 +3245,33 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
         "TX-industry-automotive_transportation",
-        "TX-use_case-procurement_supply_chain",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
         "TX-industry-professional_services",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-procurement_supply_chain",
+        "TX-technology-mixture_of_experts",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-industry-telecommunications",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -2780,7 +3326,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
@@ -2829,13 +3374,55 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802",
+            "EN-4d748ebd71af03a7",
+            "EN-bbdefa2950f49882",
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-b5738c169b693bee",
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://economictimes.indiatimes.com/tech/artificial-intelligence/servicenow-nvidia-expand-partnership-launch-new-ai-agent/articleshow/120999550.cms",
@@ -2874,7 +3461,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-1cd41545564777ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://ithome.com/0/966/901.htm",
@@ -2956,19 +3548,49 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
-          "name": "具身智能"
+          "name": "具身智能",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-364df82f85761d58"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力",
+          "entityIds": [
+            "EN-364df82f85761d58",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",

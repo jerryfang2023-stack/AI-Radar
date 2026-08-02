@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -51,7 +52,92 @@
         "status": "announced",
         "statusLabel": "已公布",
         "title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-0b01f10e87d13e75"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5586e6ab5158094c",
+            "fundingInsightId": "FI-9812ec69e97e0357"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-0b01f10e87d13e75"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-055c268d812fa8c7",
+            "fundingInsightId": "FI-9812ec69e97e0357"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_deployment",
+            "name": "模型部署",
+            "entityIds": [
+              "EN-0b01f10e87d13e75"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-660703b8f7a64ec0",
+            "fundingInsightId": "FI-9812ec69e97e0357"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-0b01f10e87d13e75"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e83ac3d74b750d50",
+            "fundingInsightId": "FI-9812ec69e97e0357"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-0b01f10e87d13e75"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a185589ab0cb2b9c",
+            "fundingInsightId": "FI-9812ec69e97e0357"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-0b01f10e87d13e75"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-da58e4284c707845",
+            "fundingInsightId": "FI-9812ec69e97e0357"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-0b01f10e87d13e75"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8b82c13e4b0a92cc",
+            "fundingInsightId": "FI-9812ec69e97e0357"
+          }
+        ],
         "entityIds": [
           "EN-0b01f10e87d13e75",
           "EN-345117ffb34269c4"

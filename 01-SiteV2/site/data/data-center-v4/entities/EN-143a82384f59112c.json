@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -24,7 +25,9 @@
       "EV-ac8f8581cd1ca75d"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-target_user-consumer"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-11",
     "lastSeen": "2026-07-12",
@@ -54,9 +57,15 @@
         "displayTags": [
           {
             "dimensionId": "target_user",
-            "id": "consumer",
             "dimensionName": "目标用户",
-            "name": "个人用户"
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-143a82384f59112c",
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -69,7 +78,79 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-target_user-consumer",
+      "name": "个人用户",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "consumer",
+      "eventIds": [
+        "EV-2dff88f85e3bce86",
+        "EV-f1553722b4ce43af",
+        "EV-02882e6f5e1902c6",
+        "EV-ecc12e5ec883b7e7",
+        "EV-7a85e21802efd8b2",
+        "EV-52115fee0e716170",
+        "EV-4f7462a365561bb5",
+        "EV-fab81bddb815267b",
+        "EV-d4e44892226be468",
+        "EV-f487788f3d44f288",
+        "EV-44c9a50b99c76a70",
+        "EV-ef7346378fcf9746",
+        "EV-e12b17260d19c5ff",
+        "EV-eb4858e820bf9435",
+        "EV-a1aea4a04b9e51c7",
+        "EV-777eb5b7783b71fb",
+        "EV-4c949b6aac6d26e7",
+        "EV-385dc1ac09a211bd",
+        "EV-ac8f8581cd1ca75d",
+        "EV-113899096a32165a",
+        "EV-be19904753c9c486",
+        "EV-c108e7cc2df7faf4",
+        "EV-83acf26a011ef213",
+        "EV-c7a2774b07554f5d",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-32a5af8d5ef80073"
+      ],
+      "entityIds": [
+        "EN-770ef1d2b6e24172",
+        "EN-b80e0af617d0f8ff",
+        "EN-2a920347dfcf07a7",
+        "EN-7706c3c94d5f9b59",
+        "EN-3eee4f30151db45a",
+        "EN-24af08c2634cb45a",
+        "EN-858b4458c482f7d2",
+        "EN-ee00b93bf0631b3e",
+        "EN-8044aae1f86875d9",
+        "EN-f3d05a0f6248941d",
+        "EN-245f1e177c5169cb",
+        "EN-e78bdebae031095b",
+        "EN-f30ad7677baf7ea2",
+        "EN-094b7ade939cad4d",
+        "EN-fb54e9062429a937",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-3f726694f178ed7a",
+        "EN-143a82384f59112c",
+        "EN-2d0943142ffe9b0f",
+        "EN-8a96f1a807787797",
+        "EN-28d79881d0386305",
+        "EN-3a13916345b60fad",
+        "EN-b59c577ed73536c6",
+        "EN-9f15bb7e29e191eb",
+        "EN-50537dab76505dfc"
+      ],
+      "fdeIds": [
+        "FDE-3d5eb0bc571f55bf"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-07-30"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

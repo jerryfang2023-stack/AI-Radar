@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -56,9 +57,16 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业软件平台"
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-d9b1d7819af92e77",
+              "EN-bbdefa2950f49882",
+              "EN-cfe6926406f30a15"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [

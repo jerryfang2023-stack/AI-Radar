@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -51,7 +52,152 @@
         "status": "rumored",
         "statusLabel": "rumored",
         "title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-760000b1862d12e8",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6cbff26c935fc2dd",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_deployment",
+            "name": "模型部署",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a1d3055026df0a12",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4611c8df01bdeae9",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-49a715907c47ecc6",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-94b0bdb5fafe003d",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fc4728c7199127d6",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bdd0b4a1ec8518b4",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "government_public_sector",
+            "name": "政府与公共部门",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e8c09e9618cdb433",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6f753fdb978b84d5",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4ff297e56cbc0461",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-92dd63c8e5c77e8a"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f7b59bff1af65b35",
+            "fundingInsightId": "FI-2330a54f10e6b143"
+          }
+        ],
         "entityIds": [
           "EN-b3236b5f6270c351",
           "EN-92dd63c8e5c77e8a",

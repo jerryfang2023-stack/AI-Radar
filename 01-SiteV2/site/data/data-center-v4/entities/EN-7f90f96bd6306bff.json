@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -58,7 +59,12 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "tool_use",
-            "name": "工具调用"
+            "name": "工具调用",
+            "entityIds": [
+              "EN-7f90f96bd6306bff"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -96,31 +102,23 @@
       "entityIds": [
         "EN-7f90f96bd6306bff",
         "EN-d8cb1acd1b39854a",
-        "EN-5388bc10736a0eff",
+        "EN-f1649339197f76d6",
         "EN-2abf8289b2f2113f",
-        "EN-91901356a63794df",
         "EN-81baf57e05f11276",
-        "EN-c0e7614761147db1",
         "EN-e9dd8f4bd697492b",
-        "EN-c70eca6b0f88f44d",
-        "EN-cb4754c48f8023d0",
+        "EN-3a9b395103419892",
         "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
         "EN-085598c00f2aaccf",
-        "EN-9418d9e3d1e469cf",
+        "EN-cb4754c48f8023d0",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
-        "EN-7d3194f79e645c42",
-        "EN-96eebba49dbbf422",
-        "EN-52fc33ae4d101a5d",
-        "EN-2c063f604e634100",
+        "EN-c70eca6b0f88f44d",
         "EN-916a98f0fa2a39af",
         "EN-d6d6e4e33c59b45e",
         "EN-3a7bd3e2360a3d29",
         "EN-41dcc2d4951f337b",
-        "EN-6fcba5d96a4fadfd",
-        "EN-ce635c4eabff5e4f",
-        "EN-c4bc2d00a42f220f"
+        "EN-630dc133336bc266"
       ],
       "fdeIds": [],
       "hardwareIds": [],

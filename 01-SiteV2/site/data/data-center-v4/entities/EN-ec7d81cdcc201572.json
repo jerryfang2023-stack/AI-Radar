@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -58,7 +59,12 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "distillation",
-            "name": "模型蒸馏"
+            "name": "模型蒸馏",
+            "entityIds": [
+              "EN-ec7d81cdcc201572"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -88,11 +94,8 @@
       ],
       "entityIds": [
         "EN-cc70f504af53013a",
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
         "EN-ea3bd73e2b506e00",
-        "EN-827b607311e6593e",
-        "EN-688f8db7018da7d4",
+        "EN-9fbf261b62c1d7c0",
         "EN-ec7d81cdcc201572",
         "EN-c70eca6b0f88f44d",
         "EN-cb4754c48f8023d0"

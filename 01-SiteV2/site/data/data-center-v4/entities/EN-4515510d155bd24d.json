@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -51,7 +52,104 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Dili 获 2170 万美元融资，用 AI 合规服务应对美国基建热潮",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9b56e1f3b7f14887",
+            "fundingInsightId": "FI-983265e643cf598c"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5b92557d635b1df0",
+            "fundingInsightId": "FI-983265e643cf598c"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5ba76294ae36a987",
+            "fundingInsightId": "FI-983265e643cf598c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "legal_compliance",
+            "name": "法律与合规",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-310ee4fd2ed65dba",
+            "fundingInsightId": "FI-983265e643cf598c"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3049225c736579be",
+            "fundingInsightId": "FI-983265e643cf598c"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "construction_real_estate",
+            "name": "建筑与房地产",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a735a44564f985b9",
+            "fundingInsightId": "FI-983265e643cf598c"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6d6d2e7d8bb41d27",
+            "fundingInsightId": "FI-983265e643cf598c"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-26997989b8425dac"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cae40a44850f38be",
+            "fundingInsightId": "FI-983265e643cf598c"
+          }
+        ],
         "entityIds": [
           "EN-26997989b8425dac",
           "EN-4515510d155bd24d"

@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -58,7 +59,12 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "model_context_protocol",
-            "name": "MCP"
+            "name": "MCP",
+            "entityIds": [
+              "EN-caf559f7830b566f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -100,24 +106,21 @@
       "entityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-e6483498af8bd2cd",
+        "EN-b60e6df651264e14",
         "EN-08b6a35be337edce",
         "EN-9fbf261b62c1d7c0",
         "EN-d2f4e09cb01afa3c",
         "EN-e473f24d4325d51a",
-        "EN-33a6331aaa822714",
         "EN-7d3194f79e645c42",
         "EN-178e3a5167e8e1d5",
-        "EN-3db1f560db626918",
-        "EN-2b78da3dc866654e",
-        "EN-af53dbc3e443f7a9",
+        "EN-bd2bfbea5911ec7a",
         "EN-916a98f0fa2a39af",
         "EN-d6d6e4e33c59b45e",
         "EN-caf559f7830b566f",
         "EN-7d1507284a5757ca",
-        "EN-761a66c29a55bc53",
         "EN-3aa7606e6aa345a3",
         "EN-bbdefa2950f49882",
-        "EN-e69f64149edae6b1",
+        "EN-fdb2cc367267ac57",
         "EN-f90aec90acf3dc85",
         "EN-5504f88c63fe766d"
       ],

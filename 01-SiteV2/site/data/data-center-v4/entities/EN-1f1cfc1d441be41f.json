@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -58,7 +59,13 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "embodied_ai",
-            "name": "具身智能"
+            "name": "具身智能",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d",
+              "EN-1f1cfc1d441be41f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -79,7 +86,6 @@
       "typeLabel": "技术",
       "valueId": "embodied_ai",
       "eventIds": [
-        "EV-00514c4ffc2e3cd3",
         "EV-fcf3c464260b6730",
         "EV-43b56d49df9a73a2",
         "EV-5bfbab92b22b68f1",
@@ -109,47 +115,36 @@
         "EV-08f736f61f2b46f3"
       ],
       "entityIds": [
-        "EN-2e334bb8de4eac34",
-        "EN-047364b9be67f665",
-        "EN-9c8ae69b84f21a2e",
         "EN-7ef08ef63597d47c",
         "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-80d387ccb3289295",
         "EN-240389f4b730bad4",
-        "EN-54119b996a352cba",
         "EN-c70eca6b0f88f44d",
         "EN-1f1cfc1d441be41f",
-        "EN-aa75c47729b4a292",
-        "EN-8147e6fed86d42c1",
-        "EN-96eebba49dbbf422",
         "EN-2b6e51bec93e86c1",
         "EN-e1086f449d58de87",
         "EN-364df82f85761d58",
         "EN-b47de584b4515427",
+        "EN-4cbf88b0da5d15f8",
         "EN-149ae7e9819a17a0",
-        "EN-985e1a7c957148f9",
         "EN-02865db849986974",
         "EN-8d57f84bd1847b24",
-        "EN-be548deba4a093d7",
-        "EN-4dbe391b8fcf977a",
         "EN-0e6e48aba1669631",
-        "EN-954dc5d6516f127c",
         "EN-e07654c7cc29acbd",
         "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
-        "EN-7a3ecc54829211df",
         "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
         "EN-67f2d22514622d1b",
         "EN-7f6333102da9e8bd",
         "EN-89e3f0711b76932c",
         "EN-e9830c30bc572802",
-        "EN-d3c20bd565303d39",
         "EN-5e1fcba4c9f1cf69",
         "EN-7d3194f79e645c42",
-        "EN-94ff75465b1afa65"
+        "EN-94ff75465b1afa65",
+        "EN-80d387ccb3289295"
       ],
       "fdeIds": [
         "FDE-becc5964d9b5f86c",
@@ -203,7 +198,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
-          "name": "具身智能"
+          "name": "具身智能",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-1f1cfc1d441be41f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-1f1cfc1d441be41f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://anthropic.com/news/ust-claude",

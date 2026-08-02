@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -54,9 +55,16 @@
         "displayTags": [
           {
             "dimensionId": "deployment_model",
-            "id": "cloud",
             "dimensionName": "部署形态",
-            "name": "云端"
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-d9b1d7819af92e77",
+              "EN-bbdefa2950f49882",
+              "EN-96eebba49dbbf422"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [

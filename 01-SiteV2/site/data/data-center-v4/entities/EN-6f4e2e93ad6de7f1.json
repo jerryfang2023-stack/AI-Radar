@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -24,7 +25,9 @@
       "EV-7fb25ff3d853c314"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-deployment_model-cloud"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-30",
     "lastSeen": "2026-07-01",
@@ -54,9 +57,31 @@
         "displayTags": [
           {
             "dimensionId": "deployment_model",
-            "id": "cloud",
             "dimensionName": "部署形态",
-            "name": "云端"
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-6f4e2e93ad6de7f1",
+              "EN-c70eca6b0f88f44d",
+              "EN-729324072d368379"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-6f4e2e93ad6de7f1",
+              "EN-c70eca6b0f88f44d",
+              "EN-8d4321d936320802",
+              "EN-9fbf261b62c1d7c0",
+              "EN-729324072d368379"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -72,7 +97,48 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-deployment_model-cloud",
+      "name": "云端",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "cloud",
+      "eventIds": [
+        "EV-4118202ed0f91895",
+        "EV-4fba2b2f1ac10a79",
+        "EV-b4b5d141dac164c2",
+        "EV-fec9e1b9ae2955ee",
+        "EV-c0d8138d8cab5135",
+        "EV-7fb25ff3d853c314",
+        "EV-20cdbe59ba2a1359",
+        "EV-309ea4fc27a66485"
+      ],
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-c7d7af20b6ab853d",
+        "EN-d9b1d7819af92e77",
+        "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422",
+        "EN-2613d360c34cdc8c",
+        "EN-842fcb5e60989a03",
+        "EN-6f4e2e93ad6de7f1",
+        "EN-c70eca6b0f88f44d",
+        "EN-729324072d368379",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-4f5d0b82a300f296",
+        "EN-2b96ed840c07482a",
+        "EN-e1517be14d06cdb7",
+        "EN-cf81a61e4eaef17c",
+        "EN-ab9e3beebd83960d"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-07-21"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

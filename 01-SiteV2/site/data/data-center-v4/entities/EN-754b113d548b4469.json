@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -25,7 +26,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-retrieval_augmented_generation"
+      "TX-technology-retrieval_augmented_generation",
+      "TX-deployment_model-on_premise"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-08",
@@ -58,13 +60,23 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "retrieval_augmented_generation",
-            "name": "RAG"
+            "name": "RAG",
+            "entityIds": [
+              "EN-754b113d548b4469"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "deployment_model",
-            "id": "on_premise",
             "dimensionName": "部署形态",
-            "name": "本地部署"
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-754b113d548b4469"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -98,7 +110,6 @@
       "entityIds": [
         "EN-a9aff9e0737a5d4a",
         "EN-2f265a693b2897f1",
-        "EN-8d4321d936320802",
         "EN-aa15d891a32a51b8",
         "EN-754b113d548b4469",
         "EN-ae4ea495016fb286",
@@ -106,13 +117,12 @@
         "EN-d6d6e4e33c59b45e",
         "EN-2d87f3d38782aa14",
         "EN-bbdefa2950f49882",
-        "EN-b5251b35f15bedc4",
         "EN-0db2d631b42da133",
         "EN-3eee4f30151db45a",
-        "EN-2b6e51bec93e86c1",
-        "EN-c18179b68329b054",
         "EN-35e36dc1a5213fa3",
         "EN-bdfecbcd7dbf76d2",
+        "EN-cfe6926406f30a15",
+        "EN-e3db3da2b7dc6057",
         "EN-4d803c223cec4cc4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d"
@@ -121,6 +131,45 @@
       "hardwareIds": [],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "TX-deployment_model-on_premise",
+      "name": "本地部署",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "on_premise",
+      "eventIds": [
+        "EV-0e84a2f49d765ce3",
+        "EV-7263caa45bbf168e",
+        "EV-c0d8138d8cab5135",
+        "EV-3011ea85c51a3ee0",
+        "EV-7309586168387ad8",
+        "EV-a06011da69abcc3d",
+        "EV-f1912ab7c46288f3"
+      ],
+      "entityIds": [
+        "EN-634561e92b7593c3",
+        "EN-7f871cbf905f6e0c",
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802",
+        "EN-b5738c169b693bee",
+        "EN-2dc010636b9dce91",
+        "EN-16fd849ce27f115b",
+        "EN-f5791343a13abc71",
+        "EN-842fcb5e60989a03",
+        "EN-754b113d548b4469",
+        "EN-9fbf261b62c1d7c0",
+        "EN-b3e3bce83d29e787",
+        "EN-f4bec299df3f4f27",
+        "EN-5f5fcd8701ab30c0",
+        "EN-977d20414b3b8be9"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-ecc6755da7bbbbcd"
+      ],
+      "firstSeen": "2025-09-26",
+      "lastSeen": "2026-07-17"
     }
   ],
   "fde": [],

@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1770,
+    "quarantinedEventCount": 14
+  },
+  "node": {
+    "id": "TX-target_user-student",
+    "name": "学生",
+    "nodeType": "target_user",
+    "typeLabel": "目标用户",
+    "valueId": "student",
+    "eventIds": [
+      "EV-8eb0acb180b7ad9d"
+    ],
+    "entityIds": [
+      "EN-53b69ef92c836777"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-06-01",
+    "lastSeen": "2026-06-01"
+  },
+  "events": [
+    {
+      "id": "EV-8eb0acb180b7ad9d",
+      "dataDate": "2026-06-01",
+      "date": "2026-06-01",
+      "updatedDate": "2026-06-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026年顶级AI智能体初创公司（融资与估值）",
+      "originalTitle": "Top AI Agent Startups 2026 (Funding & Valuation)",
+      "subject": "Replit",
+      "action": "funding",
+      "object": "$400M funding round",
+      "metrics": [
+        "$400M",
+        "$80M",
+        "$605M",
+        "$350M"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e9e6f284c4f59032",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "software_development_coding",
+            "name": "软件开发与编程工具",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c7134102766e0cf6",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-55aa65b53d59e76a",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0b67786983704d20",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9fcaa81f33853df9",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9b3eddd22ee121d9",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "educator",
+            "name": "教师",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f5d6bb08aff77762",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-53b69ef92c836777"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-29cafbba824ac0c4",
+            "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e9e6f284c4f59032",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "software_development_coding",
+          "name": "软件开发与编程工具",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c7134102766e0cf6",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-55aa65b53d59e76a",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9fcaa81f33853df9",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9b3eddd22ee121d9",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "educator",
+          "name": "教师",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f5d6bb08aff77762",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-29cafbba824ac0c4",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0b67786983704d20",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e9e6f284c4f59032",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "software_development_coding",
+          "name": "软件开发与编程工具",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c7134102766e0cf6",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-55aa65b53d59e76a",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0b67786983704d20",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9fcaa81f33853df9",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9b3eddd22ee121d9",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "educator",
+          "name": "教师",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f5d6bb08aff77762",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-53b69ef92c836777"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-29cafbba824ac0c4",
+          "fundingInsightId": "FI-e2a0ce1fc3805eb7"
+        }
+      ],
+      "entityIds": [
+        "EN-53b69ef92c836777"
+      ],
+      "entityNames": [
+        "Replit"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://aifundingtracker.com/top-ai-agent-startups",
+      "publisher": "aifundingtracker.com"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-53b69ef92c836777",
+      "name": "Replit",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8eb0acb180b7ad9d",
+        "EV-b31602193dbf4e08"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-developer",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-software_development_coding",
+        "TX-use_case-software_development",
+        "TX-target_user-educator",
+        "TX-target_user-student"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2023-04-27",
+      "lastSeen": "2026-07-27"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

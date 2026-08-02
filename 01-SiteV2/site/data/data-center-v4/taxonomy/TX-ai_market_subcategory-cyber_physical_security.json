@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1770,
+    "quarantinedEventCount": 14
+  },
+  "node": {
+    "id": "TX-ai_market_subcategory-cyber_physical_security",
+    "name": "网络与物理安全",
+    "nodeType": "ai_market_subcategory",
+    "typeLabel": "AI 市场子类",
+    "valueId": "cyber_physical_security",
+    "eventIds": [
+      "EV-9b81b0dd09a046ab"
+    ],
+    "entityIds": [
+      "EN-57b8b5990c299db8"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-07-24"
+  },
+  "events": [
+    {
+      "id": "EV-9b81b0dd09a046ab",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-24",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
+      "originalTitle": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
+      "subject": "AegisAI",
+      "action": "funding",
+      "object": "$36 million Series A",
+      "metrics": [
+        "$36 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-57b8b5990c299db8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-590d56d1484af0c9",
+            "fundingInsightId": "FI-efb7c752e7a0f57f"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "cyber_physical_security",
+            "name": "网络与物理安全",
+            "entityIds": [
+              "EN-57b8b5990c299db8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2cc852f9d9cc68eb",
+            "fundingInsightId": "FI-efb7c752e7a0f57f"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-57b8b5990c299db8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4757b3a274f73ad7",
+            "fundingInsightId": "FI-efb7c752e7a0f57f"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-57b8b5990c299db8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d4591ee3b1e8d239",
+            "fundingInsightId": "FI-efb7c752e7a0f57f"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-57b8b5990c299db8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-539210903739acb6",
+            "fundingInsightId": "FI-efb7c752e7a0f57f"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-590d56d1484af0c9",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "cyber_physical_security",
+          "name": "网络与物理安全",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2cc852f9d9cc68eb",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4757b3a274f73ad7",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-539210903739acb6",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d4591ee3b1e8d239",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-590d56d1484af0c9",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "cyber_physical_security",
+          "name": "网络与物理安全",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2cc852f9d9cc68eb",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4757b3a274f73ad7",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d4591ee3b1e8d239",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-57b8b5990c299db8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-539210903739acb6",
+          "fundingInsightId": "FI-efb7c752e7a0f57f"
+        }
+      ],
+      "entityIds": [
+        "EN-57b8b5990c299db8",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "AegisAI",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing",
+      "publisher": "TechCrunch AI"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-57b8b5990c299db8",
+      "name": "AegisAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9b81b0dd09a046ab"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-use_case-security_operations",
+        "TX-ai_market_subcategory-cyber_physical_security",
+        "TX-product_form-security_software"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-24"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -24,9 +25,7 @@
       "EV-1ff169120ed385f6"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-industry-telecommunications"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-15",
     "lastSeen": "2026-07-16",
@@ -56,9 +55,14 @@
         "displayTags": [
           {
             "dimensionId": "industry",
-            "id": "telecommunications",
             "dimensionName": "行业",
-            "name": "电信"
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-6461cd2cb824a554"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -73,43 +77,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-industry-telecommunications",
-      "name": "电信",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "telecommunications",
-      "eventIds": [
-        "EV-cafe435ddd007821",
-        "EV-6b51b1b6fe22c540",
-        "EV-1ff169120ed385f6",
-        "EV-6ce6b9c9780b97d9"
-      ],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
-        "EN-0f3360879e746531",
-        "EN-80d387ccb3289295",
-        "EN-e3b1bf3dab957ffe",
-        "EN-2ab6d53e717a0e0d",
-        "EN-f0fa30cd90f406c8",
-        "EN-6461cd2cb824a554",
-        "EN-61cce404a45c3545",
-        "EN-2a920347dfcf07a7",
-        "EN-96eebba49dbbf422",
-        "EN-9fbf261b62c1d7c0",
-        "EN-2dc010636b9dce91",
-        "EN-23b979df49741c93"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-ceb55d9bc637c1d3"
-      ],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-18"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

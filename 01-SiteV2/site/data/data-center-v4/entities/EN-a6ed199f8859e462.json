@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -24,9 +25,7 @@
       "EV-78277c678f01e540"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-use_case-customer_support"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-01",
     "lastSeen": "2026-07-01",
@@ -56,9 +55,14 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "customer_support",
             "dimensionName": "应用场景",
-            "name": "客户支持"
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-c47b618e17c75f06"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -72,85 +76,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-use_case-customer_support",
-      "name": "客户支持",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "customer_support",
-      "eventIds": [
-        "EV-57cf8e14d6994c1b",
-        "EV-2315aada5ad36397",
-        "EV-64fb6d791e19d10a",
-        "EV-f020dd198aa2f952",
-        "EV-a9d0bb672c5ec0ab",
-        "EV-88f4ee8cd57bdf42",
-        "EV-b85139b8fba1a5c5",
-        "EV-1196b80b537957f2",
-        "EV-eb61ddca7f36f55c",
-        "EV-9ff0c57323ed8318",
-        "EV-4b545e310ded2baa",
-        "EV-e869f17214557633",
-        "EV-051d1924db7ba65d",
-        "EV-8abf5adc3e72fbb8",
-        "EV-3fb492fb45980541",
-        "EV-2a71353a862e56b3",
-        "EV-05a87b578967c83e",
-        "EV-670a5100977ac1e9",
-        "EV-78277c678f01e540",
-        "EV-11a8e196deb21300",
-        "EV-6364cfadff0d1d30",
-        "EV-94d9c8d5ac1e10de"
-      ],
-      "entityIds": [
-        "EN-556c337c4f0b031e",
-        "EN-b76754bb5e10534b",
-        "EN-dca6ec9510fc0176",
-        "EN-3ccbd9105a45d8fc",
-        "EN-8147e6fed86d42c1",
-        "EN-29e1a488361f12d3",
-        "EN-96eebba49dbbf422",
-        "EN-9fbf261b62c1d7c0",
-        "EN-28d0bd981118a907",
-        "EN-91776f01fce0c960",
-        "EN-5e9e4638fa2ec9a4",
-        "EN-d3565d297d476f10",
-        "EN-3474e24464fc25a7",
-        "EN-1bf93b12e68cac56",
-        "EN-b9776d7ddf459c9a",
-        "EN-bbdefa2950f49882",
-        "EN-7d3194f79e645c42",
-        "EN-88e2cce43eeadb36",
-        "EN-c70eca6b0f88f44d",
-        "EN-19e41212c0556603",
-        "EN-76a5d97e81b562c4",
-        "EN-4c3a380e1f998775",
-        "EN-c47b618e17c75f06",
-        "EN-21d8ce5988925f81",
-        "EN-a6ed199f8859e462",
-        "EN-34da56029403e6f7",
-        "EN-89e28a570dce8b18",
-        "EN-3673c8b4dba7409e",
-        "EN-7b80ed96beed8c0a",
-        "EN-7d1507284a5757ca",
-        "EN-cbc62794911ff31b",
-        "EN-dba61afed18c85d6"
-      ],
-      "fdeIds": [
-        "FDE-34d87868ff636016",
-        "FDE-d57aceb85d7bcd3e",
-        "FDE-e79a238725a98c06",
-        "FDE-3e499215265a81d5",
-        "FDE-bab34e14939e664d",
-        "FDE-d08fed45110ab44b",
-        "FDE-3665b073634d4b9d"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2019-03-11",
-      "lastSeen": "2026-07-30"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

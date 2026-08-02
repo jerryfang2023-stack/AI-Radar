@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -38,24 +39,21 @@
     "entityIds": [
       "EN-c70eca6b0f88f44d",
       "EN-e6483498af8bd2cd",
+      "EN-b60e6df651264e14",
       "EN-08b6a35be337edce",
       "EN-9fbf261b62c1d7c0",
       "EN-d2f4e09cb01afa3c",
       "EN-e473f24d4325d51a",
-      "EN-33a6331aaa822714",
       "EN-7d3194f79e645c42",
       "EN-178e3a5167e8e1d5",
-      "EN-3db1f560db626918",
-      "EN-2b78da3dc866654e",
-      "EN-af53dbc3e443f7a9",
+      "EN-bd2bfbea5911ec7a",
       "EN-916a98f0fa2a39af",
       "EN-d6d6e4e33c59b45e",
       "EN-caf559f7830b566f",
       "EN-7d1507284a5757ca",
-      "EN-761a66c29a55bc53",
       "EN-3aa7606e6aa345a3",
       "EN-bbdefa2950f49882",
-      "EN-e69f64149edae6b1",
+      "EN-fdb2cc367267ac57",
       "EN-f90aec90acf3dc85",
       "EN-5504f88c63fe766d"
     ],
@@ -90,7 +88,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -108,7 +111,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -116,7 +124,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -157,13 +170,37 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -181,13 +218,19 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -195,13 +238,19 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [],
@@ -236,13 +285,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e6483498af8bd2cd",
+            "EN-b60e6df651264e14"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-e6483498af8bd2cd",
+            "EN-b60e6df651264e14"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -260,13 +321,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e6483498af8bd2cd",
+            "EN-b60e6df651264e14"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-e6483498af8bd2cd",
+            "EN-b60e6df651264e14"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -274,13 +347,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e6483498af8bd2cd",
+            "EN-b60e6df651264e14"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-e6483498af8bd2cd",
+            "EN-b60e6df651264e14"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -329,13 +414,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-08b6a35be337edce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-08b6a35be337edce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-08b6a35be337edce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -353,13 +459,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-08b6a35be337edce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-08b6a35be337edce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -367,13 +483,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-08b6a35be337edce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-08b6a35be337edce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -416,7 +542,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0",
+            "EN-d2f4e09cb01afa3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -434,7 +566,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0",
+            "EN-d2f4e09cb01afa3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -442,7 +580,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0",
+            "EN-d2f4e09cb01afa3c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -495,13 +639,35 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e473f24d4325d51a",
+            "EN-33a6331aaa822714"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e473f24d4325d51a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-e473f24d4325d51a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -519,13 +685,35 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e473f24d4325d51a",
+            "EN-33a6331aaa822714"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e473f24d4325d51a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-e473f24d4325d51a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -533,13 +721,35 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e473f24d4325d51a",
+            "EN-33a6331aaa822714"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e473f24d4325d51a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-e473f24d4325d51a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -607,7 +817,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-7d3194f79e645c42",
+            "EN-178e3a5167e8e1d5",
+            "EN-bd2bfbea5911ec7a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -625,7 +842,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-7d3194f79e645c42",
+            "EN-178e3a5167e8e1d5",
+            "EN-bd2bfbea5911ec7a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -633,7 +857,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-7d3194f79e645c42",
+            "EN-178e3a5167e8e1d5",
+            "EN-bd2bfbea5911ec7a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -688,19 +919,37 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "tool_use",
-          "name": "工具调用"
+          "name": "工具调用",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "retrieval_augmented_generation",
-          "name": "RAG"
+          "name": "RAG",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -718,19 +967,37 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "tool_use",
-          "name": "工具调用"
+          "name": "工具调用",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "retrieval_augmented_generation",
-          "name": "RAG"
+          "name": "RAG",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -738,19 +1005,37 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "tool_use",
-          "name": "工具调用"
+          "name": "工具调用",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "retrieval_augmented_generation",
-          "name": "RAG"
+          "name": "RAG",
+          "entityIds": [
+            "EN-916a98f0fa2a39af",
+            "EN-d6d6e4e33c59b45e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -799,7 +1084,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-caf559f7830b566f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -817,7 +1107,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-caf559f7830b566f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -825,7 +1120,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-caf559f7830b566f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -868,13 +1168,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -888,9 +1209,14 @@
         "target_user": [
           {
             "dimensionId": "target_user",
-            "id": "business_user",
             "dimensionName": "目标用户",
-            "name": "企业用户"
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-7d1507284a5757ca"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ]
       },
@@ -899,19 +1225,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "target_user",
-          "id": "business_user",
           "dimensionName": "目标用户",
-          "name": "企业用户"
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -919,19 +1260,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "target_user",
-          "id": "business_user",
           "dimensionName": "目标用户",
-          "name": "企业用户"
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-7d1507284a5757ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -980,7 +1336,10 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -998,7 +1357,10 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1006,7 +1368,10 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [],
@@ -1041,13 +1406,39 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1065,13 +1456,39 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1079,13 +1496,39 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-3aa7606e6aa345a3",
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1131,13 +1574,35 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1147,9 +1612,14 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "security_software",
             "dimensionName": "产品形态",
-            "name": "安全软件"
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-fdb2cc367267ac57"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -1162,39 +1632,93 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "security_software",
-          "dimensionName": "产品形态",
-          "name": "安全软件"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "security_software",
-          "dimensionName": "产品形态",
-          "name": "安全软件"
+          "name": "MCP",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-fdb2cc367267ac57"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1243,7 +1767,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1261,7 +1790,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1269,7 +1803,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1311,13 +1850,56 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1329,9 +1911,14 @@
         "industry": [
           {
             "dimensionId": "industry",
-            "id": "financial_services",
             "dimensionName": "行业",
-            "name": "金融服务"
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-f90aec90acf3dc85"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "deployment_model": [],
@@ -1342,19 +1929,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
-          "id": "financial_services",
           "dimensionName": "行业",
-          "name": "金融服务"
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1362,19 +1964,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
-          "id": "financial_services",
           "dimensionName": "行业",
-          "name": "金融服务"
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-f90aec90acf3dc85"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1421,7 +2038,10 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1431,27 +2051,36 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
         "industry": [
           {
             "dimensionId": "industry",
-            "id": "legal_services",
             "dimensionName": "行业",
-            "name": "法律服务"
+            "id": "legal_services",
+            "name": "法律服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "deployment_model": [],
         "target_user": [
           {
             "dimensionId": "target_user",
-            "id": "business_user",
             "dimensionName": "目标用户",
-            "name": "企业用户"
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ]
       },
@@ -1460,51 +2089,75 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "target_user",
-          "id": "business_user",
           "dimensionName": "目标用户",
-          "name": "企业用户"
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
-          "id": "legal_services",
           "dimensionName": "行业",
-          "name": "法律服务"
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "target_user",
-          "id": "business_user",
           "dimensionName": "目标用户",
-          "name": "企业用户"
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
-          "id": "legal_services",
           "dimensionName": "行业",
-          "name": "法律服务"
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [],
@@ -1541,13 +2194,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-5504f88c63fe766d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-5504f88c63fe766d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1565,13 +2228,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-5504f88c63fe766d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-5504f88c63fe766d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1579,13 +2252,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-5504f88c63fe766d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "model_context_protocol",
-          "name": "MCP"
+          "name": "MCP",
+          "entityIds": [
+            "EN-5504f88c63fe766d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1876,33 +2559,48 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-education",
+        "TX-target_user-consumer",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
+        "TX-target_user-educator",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-human_in_loop",
-        "TX-technology-distillation",
-        "TX-industry-education"
+        "TX-technology-distillation"
       ],
       "relatedEntityIds": [
         "EN-5a4c2be958c0af72",
@@ -2099,30 +2797,33 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
         "TX-industry-automotive_transportation",
-        "TX-use_case-procurement_supply_chain",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
         "TX-industry-professional_services",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-procurement_supply_chain",
+        "TX-technology-mixture_of_experts",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-industry-telecommunications",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -2158,6 +2859,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
         "TX-technology-model_context_protocol"
       ],
       "relatedEntityIds": [
@@ -2186,32 +2888,6 @@
       ],
       "relatedEntityIds": [
         "EN-33a6331aaa822714"
-      ],
-      "firstSeen": "2026-06-30",
-      "lastSeen": "2026-06-30"
-    },
-    {
-      "id": "EN-33a6331aaa822714",
-      "name": "Autonomous Service Workforce",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Unveils Autonomous"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-48a7437742aff5c5"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-model_context_protocol"
-      ],
-      "relatedEntityIds": [
-        "EN-e473f24d4325d51a"
       ],
       "firstSeen": "2026-06-30",
       "lastSeen": "2026-06-30"
@@ -2495,37 +3171,42 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
         "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-industry-financial_services",
+        "TX-industry-professional_services",
         "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-use_case-research_discovery",
         "TX-industry-legal_services",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-industry-professional_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-7839fb10a8f14c70",
@@ -2576,95 +3257,6 @@
       "lastSeen": "2026-06-25"
     },
     {
-      "id": "EN-3db1f560db626918",
-      "name": "Canva",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-136b2edc9b9f3be8",
-        "EV-2d6d2dc0ead4be10",
-        "EV-6aabfaa0c7c7f838",
-        "EV-ad111bcc8e2bd103",
-        "EV-8fbe211e9d4bae03",
-        "EV-f05783f745bc7c2c",
-        "EV-34b0f4cfd513fbde",
-        "EV-a0d3853dd41c8ef6",
-        "EV-266aff97294156f6",
-        "EV-568d2aeab5234e48"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-model_context_protocol",
-        "TX-technology-image_generation",
-        "TX-industry-media_entertainment"
-      ],
-      "relatedEntityIds": [
-        "EN-309e1850e39b13ff",
-        "EN-954dc5d6516f127c"
-      ],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-25"
-    },
-    {
-      "id": "EN-2b78da3dc866654e",
-      "name": "Spotify",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-20dea13a4e6100ea",
-        "EV-113899096a32165a",
-        "EV-a0d3853dd41c8ef6",
-        "EV-dad8c827d14f2799"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-model_context_protocol",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-12",
-      "lastSeen": "2026-07-15"
-    },
-    {
-      "id": "EN-af53dbc3e443f7a9",
-      "name": "AgentKit",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a0d3853dd41c8ef6",
-        "EV-7f979d0a01e6dffa"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-model_context_protocol"
-      ],
-      "relatedEntityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "firstSeen": "2026-06-18",
-      "lastSeen": "2026-06-25"
-    },
-    {
       "id": "EN-916a98f0fa2a39af",
       "name": "IBM",
       "entityType": "organization_candidate",
@@ -2693,8 +3285,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
+        "TX-deployment_model-hybrid",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-model_context_protocol",
         "TX-technology-tool_use",
@@ -2773,6 +3368,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support",
         "TX-technology-model_context_protocol"
       ],
@@ -2782,34 +3378,6 @@
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-22"
-    },
-    {
-      "id": "EN-761a66c29a55bc53",
-      "name": "AI Agent Marketplace",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "One-Stop Shop"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-4e55361d8324dd49",
-        "EV-1035aa9cbde79b2f",
-        "EV-84b423077bf8dac8"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-model_context_protocol"
-      ],
-      "relatedEntityIds": [
-        "EN-7d1507284a5757ca"
-      ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-06-13"
     },
     {
       "id": "EN-3aa7606e6aa345a3",
@@ -3005,33 +3573,43 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
         "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-security_software",
         "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
+        "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-8d323d8bba783aa3",
@@ -3054,31 +3632,6 @@
       ],
       "firstSeen": "2025-10-09",
       "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "EN-e69f64149edae6b1",
-      "name": "Runlayer",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "MCP AI"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-7817dc69d5228cbb",
-        "EV-8cb5b0ed18c7cdd8"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-model_context_protocol"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2025-11-17",
-      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-f90aec90acf3dc85",

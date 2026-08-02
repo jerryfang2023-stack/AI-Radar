@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -56,9 +57,14 @@
         "displayTags": [
           {
             "dimensionId": "industry",
-            "id": "media_entertainment",
             "dimensionName": "行业",
-            "name": "媒体与娱乐"
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-bfc698cb0f9b4d72"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -81,6 +87,20 @@
       "typeLabel": "行业",
       "valueId": "media_entertainment",
       "eventIds": [
+        "EV-2dff88f85e3bce86",
+        "EV-e31a6bf3c0a979f8",
+        "EV-ecc12e5ec883b7e7",
+        "EV-4f7462a365561bb5",
+        "EV-7817dc69d5228cbb",
+        "EV-561e2028a6212b99",
+        "EV-9fc8916c19c19f99",
+        "EV-11b5192fc54c0aa0",
+        "EV-15bbdd37c516309a",
+        "EV-affa49966121461c",
+        "EV-b0ed8d5a37784214",
+        "EV-e12b17260d19c5ff",
+        "EV-3b40ec144e5db22c",
+        "EV-c46e427fedbf518d",
         "EV-2d6d2dc0ead4be10",
         "EV-afcd5426f5c01dc7",
         "EV-6c361125c3f50bb6",
@@ -98,32 +118,37 @@
         "EV-ba98573b0dadde75"
       ],
       "entityIds": [
+        "EN-770ef1d2b6e24172",
+        "EN-2dcd958b2064843f",
+        "EN-7706c3c94d5f9b59",
+        "EN-858b4458c482f7d2",
+        "EN-e69f64149edae6b1",
+        "EN-19a5848a577315c5",
+        "EN-f96246b78ef26d59",
+        "EN-bf0e59763d382462",
+        "EN-52f1bab72d488823",
+        "EN-835fb9db44937917",
+        "EN-7ea76c82c786a5e1",
+        "EN-f30ad7677baf7ea2",
+        "EN-e4540a7c8404b1be",
+        "EN-eafe895eb8119e6e",
         "EN-3db1f560db626918",
         "EN-bfc698cb0f9b4d72",
-        "EN-9c8ae69b84f21a2e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-b81c8201acfc7639",
         "EN-23929c7dca3eb576",
-        "EN-5388bc10736a0eff",
         "EN-7d3194f79e645c42",
-        "EN-7839fb10a8f14c70",
-        "EN-991f07e5aedd3445",
         "EN-24f5eb8d2e667579",
-        "EN-f0edcf96f6fa2ccb",
         "EN-d36e5a1a7a3c45ce",
-        "EN-397e5a2983130593",
         "EN-dd172e183ec20177",
         "EN-754c490bd199c21a",
-        "EN-7a3ecc54829211df",
         "EN-ea3bd73e2b506e00",
         "EN-72e28a6aa6b39c76",
-        "EN-96eebba49dbbf422",
-        "EN-bbdefa2950f49882",
         "EN-2df4d39c248116dc",
         "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
         "EN-2b6e51bec93e86c1",
         "EN-8d4321d936320802",
         "EN-d56aa2f9908f566a",
+        "EN-4d09c69c19f5f67b",
         "EN-c1eb8e913000a8eb",
         "EN-0be477336d3e1a8d",
         "EN-1dc405a4cda895d0",
@@ -133,7 +158,7 @@
       "hardwareIds": [
         "HW-dca442211b264bbe"
       ],
-      "firstSeen": "2026-06-07",
+      "firstSeen": "2026-05-22",
       "lastSeen": "2026-08-01"
     }
   ],

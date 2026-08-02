@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -25,8 +26,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-speech_audio",
-      "TX-use_case-content_creation"
+      "TX-use_case-content_creation",
+      "TX-technology-speech_audio"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-21",
@@ -57,15 +58,25 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "content_creation",
             "dimensionName": "应用场景",
-            "name": "内容创作"
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-f8bebacc033880dd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "speech_audio",
-            "name": "语音与音频"
+            "name": "语音与音频",
+            "entityIds": [
+              "EN-f8bebacc033880dd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -78,6 +89,58 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
+    {
+      "id": "TX-use_case-content_creation",
+      "name": "内容创作",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "content_creation",
+      "eventIds": [
+        "EV-2dff88f85e3bce86",
+        "EV-64fb6d791e19d10a",
+        "EV-ecc12e5ec883b7e7",
+        "EV-86ca5af11ee4d275",
+        "EV-4f7462a365561bb5",
+        "EV-fab81bddb815267b",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-14a666fc27d73a80",
+        "EV-e3382d1c1d7db751",
+        "EV-affa49966121461c",
+        "EV-e12b17260d19c5ff",
+        "EV-6b0106ef4a79df05",
+        "EV-1de38866b4b92754",
+        "EV-99e5df844a1bd670",
+        "EV-0933cc40b4fe5f21",
+        "EV-3bd84e75aa7f18b3",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-770ef1d2b6e24172",
+        "EN-b0532e1af75cc4ab",
+        "EN-7706c3c94d5f9b59",
+        "EN-10905d25fc373f32",
+        "EN-858b4458c482f7d2",
+        "EN-ee00b93bf0631b3e",
+        "EN-f346eaca864441f9",
+        "EN-4abc3bd0f9e75c63",
+        "EN-ee1e31ffef7dbe64",
+        "EN-835fb9db44937917",
+        "EN-f30ad7677baf7ea2",
+        "EN-7ad34701224a4d2d",
+        "EN-bbdefa2950f49882",
+        "EN-ba8a9b6ce159cd8c",
+        "EN-e93e29634540a290",
+        "EN-afe83c198e329ef2",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-8104520f6e69796d",
+        "EN-f8bebacc033880dd",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-30"
+    },
     {
       "id": "TX-technology-speech_audio",
       "name": "语音与音频",
@@ -99,26 +162,23 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
-        "EN-bbdefa2950f49882",
         "EN-7ad34701224a4d2d",
-        "EN-2b6e51bec93e86c1",
+        "EN-bbdefa2950f49882",
         "EN-ba8a9b6ce159cd8c",
         "EN-916a98f0fa2a39af",
         "EN-047364b9be67f665",
         "EN-ec1c8f558ff61e34",
         "EN-0b0c3b228202ab0a",
         "EN-bae152c4560df38c",
-        "EN-3a7bd3e2360a3d29",
-        "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-0aa590cbbdb3835a",
         "EN-2b78da3dc866654e",
+        "EN-3a7bd3e2360a3d29",
         "EN-8d4321d936320802",
         "EN-12ab68e37d104d27",
-        "EN-8395dc051feafc4c",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
         "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb",
-        "EN-2c348893efb2316e",
         "EN-ed501d3e2d977553",
         "EN-c8d65b5463695c98",
         "EN-f8bebacc033880dd",
@@ -128,38 +188,6 @@
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-08-01"
-    },
-    {
-      "id": "TX-use_case-content_creation",
-      "name": "内容创作",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "content_creation",
-      "eventIds": [
-        "EV-6b0106ef4a79df05",
-        "EV-1de38866b4b92754",
-        "EV-99e5df844a1bd670",
-        "EV-0933cc40b4fe5f21",
-        "EV-3bd84e75aa7f18b3",
-        "EV-631dce4dc135d01b"
-      ],
-      "entityIds": [
-        "EN-bbdefa2950f49882",
-        "EN-7ad34701224a4d2d",
-        "EN-2b6e51bec93e86c1",
-        "EN-ba8a9b6ce159cd8c",
-        "EN-e93e29634540a290",
-        "EN-3a7bd3e2360a3d29",
-        "EN-e0bab6f6c58bfe4e",
-        "EN-afe83c198e329ef2",
-        "EN-8104520f6e69796d",
-        "EN-f8bebacc033880dd",
-        "EN-b2968d9ba72f4818"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-30"
     }
   ],
   "fde": [],

@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -26,9 +27,7 @@
       "EV-536b7d289e7209c1"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-use_case-hr_workforce"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-09",
     "lastSeen": "2026-06-15",
@@ -58,9 +57,16 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "hr_workforce",
             "dimensionName": "应用场景",
-            "name": "人力与员工体验"
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [
+              "EN-61b6bf408b3b086e",
+              "EN-6d51d80daa73eb4a",
+              "EN-a7bea92dbcc37521"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -75,29 +81,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-use_case-hr_workforce",
-      "name": "人力与员工体验",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "hr_workforce",
-      "eventIds": [
-        "EV-9781e67076f4e06b",
-        "EV-536b7d289e7209c1"
-      ],
-      "entityIds": [
-        "EN-61b6bf408b3b086e",
-        "EN-6d51d80daa73eb4a",
-        "EN-9e51ca48d5ecf16f",
-        "EN-a7bea92dbcc37521"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-10"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

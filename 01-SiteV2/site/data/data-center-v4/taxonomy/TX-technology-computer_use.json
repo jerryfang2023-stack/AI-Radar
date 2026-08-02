@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -25,17 +26,15 @@
       "EV-a4f052325d0ef230"
     ],
     "entityIds": [
-      "EN-9fbf261b62c1d7c0",
-      "EN-7d3194f79e645c42",
+      "EN-9d4cbc0ceab2c56a",
       "EN-ea3bd73e2b506e00",
-      "EN-96eebba49dbbf422",
       "EN-e3863f813fe47240",
       "EN-047364b9be67f665",
-      "EN-09c344df70df9660",
       "EN-bbdefa2950f49882",
+      "EN-b8174ff7d1b7aada",
       "EN-3aa38718f0399af9",
       "EN-e16fc821f34228d1",
-      "EN-16fe95bd48dbf178",
+      "EN-7d3194f79e645c42",
       "EN-10fce287b4b1464c"
     ],
     "fdeIds": [],
@@ -74,7 +73,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-9d4cbc0ceab2c56a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -92,7 +96,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-9d4cbc0ceab2c56a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -100,7 +109,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-9d4cbc0ceab2c56a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -147,25 +161,49 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -175,15 +213,27 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model_api_service",
             "dimensionName": "产品形态",
-            "name": "模型 API 服务"
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00",
+              "EN-e3863f813fe47240"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "product_form",
-            "id": "end_user_application",
             "dimensionName": "产品形态",
-            "name": "终端 AI 应用"
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00",
+              "EN-e3863f813fe47240"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -196,75 +246,147 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
+          "dimensionName": "产品形态",
           "id": "model_api_service",
-          "dimensionName": "产品形态",
-          "name": "模型 API 服务"
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "end_user_application",
           "dimensionName": "产品形态",
-          "name": "终端 AI 应用"
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model_api_service",
           "dimensionName": "产品形态",
-          "name": "模型 API 服务"
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "end_user_application",
           "dimensionName": "产品形态",
-          "name": "终端 AI 应用"
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "reasoning",
-          "name": "推理能力"
+          "name": "推理能力",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00",
+            "EN-e3863f813fe47240"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -315,13 +437,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-09c344df70df9660"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -332,15 +464,26 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "data_analysis",
             "dimensionName": "应用场景",
-            "name": "数据分析"
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "use_case",
-            "id": "productivity_enterprise_workflows",
             "dimensionName": "应用场景",
-            "name": "生产力与企业工作流"
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-09c344df70df9660",
+              "EN-1725c58362aadc2a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -348,9 +491,15 @@
         "target_user": [
           {
             "dimensionId": "target_user",
-            "id": "business_user",
             "dimensionName": "目标用户",
-            "name": "企业用户"
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-09c344df70df9660",
+              "EN-1725c58362aadc2a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ]
       },
@@ -359,63 +508,117 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-09c344df70df9660"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
+          "dimensionName": "应用场景",
           "id": "data_analysis",
-          "dimensionName": "应用场景",
-          "name": "数据分析"
+          "name": "数据分析",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "productivity_enterprise_workflows",
           "dimensionName": "应用场景",
-          "name": "生产力与企业工作流"
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-09c344df70df9660",
+            "EN-1725c58362aadc2a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "target_user",
-          "id": "business_user",
           "dimensionName": "目标用户",
-          "name": "企业用户"
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-09c344df70df9660",
+            "EN-1725c58362aadc2a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "data_analysis",
           "dimensionName": "应用场景",
-          "name": "数据分析"
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "productivity_enterprise_workflows",
           "dimensionName": "应用场景",
-          "name": "生产力与企业工作流"
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-09c344df70df9660",
+            "EN-1725c58362aadc2a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-09c344df70df9660"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "target_user",
-          "id": "business_user",
           "dimensionName": "目标用户",
-          "name": "企业用户"
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-09c344df70df9660",
+            "EN-1725c58362aadc2a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -473,7 +676,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-b8174ff7d1b7aada",
+            "EN-3aa38718f0399af9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -491,7 +701,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-b8174ff7d1b7aada",
+            "EN-3aa38718f0399af9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -499,7 +716,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-b8174ff7d1b7aada",
+            "EN-3aa38718f0399af9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -561,13 +785,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -578,9 +823,14 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "data_analysis",
             "dimensionName": "应用场景",
-            "name": "数据分析"
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-e16fc821f34228d1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -592,39 +842,69 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "data_analysis",
           "dimensionName": "应用场景",
-          "name": "数据分析"
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "data_analysis",
           "dimensionName": "应用场景",
-          "name": "数据分析"
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-e16fc821f34228d1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -680,13 +960,33 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-10fce287b4b1464c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42",
+            "EN-10fce287b4b1464c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -704,13 +1004,33 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-10fce287b4b1464c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42",
+            "EN-10fce287b4b1464c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -718,13 +1038,33 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-10fce287b4b1464c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "computer_use",
-          "name": "计算机操作"
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42",
+            "EN-10fce287b4b1464c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -757,167 +1097,536 @@
   ],
   "entities": [
     {
-      "id": "EN-9fbf261b62c1d7c0",
-      "name": "Microsoft",
+      "id": "EN-ea3bd73e2b506e00",
+      "name": "Meta",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5df885dbd24b6d00",
+        "EV-dcbe916c6138e5cb",
+        "EV-427081ec574b43bb",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-fb817fb0a5e63323",
+        "EV-917a390341b9fce6",
+        "EV-3f8f6a578be79988",
+        "EV-467d1a701d21327d",
+        "EV-acdeebead5324344",
+        "EV-cded77b1de2db61a",
+        "EV-a4b7cd533b0b34dc",
+        "EV-8805e96b4fb544dd",
+        "EV-c3f617e75d303f59",
+        "EV-bc9abd502c002102",
+        "EV-9efcf6480f6c6f48",
+        "EV-cf76f090a1a20a36",
+        "EV-43301de739fe560e",
+        "EV-5bc7efca0bc7fec0",
+        "EV-fdc4c26edadb4cea",
+        "EV-702276a31f123374",
+        "EV-fbc316f83b63a543",
+        "EV-1ba939d8baf43207",
+        "EV-5b193a038ab4ea22",
+        "EV-655018b9820c7940",
+        "EV-828698c8779bb522",
+        "EV-938eebe85a688ff1",
+        "EV-a37b9d9fb85e460f",
+        "EV-cf176636839e45be",
+        "EV-8540be15175c65da",
+        "EV-9496f90f3e808992",
+        "EV-dce5de62b2e4b752",
+        "EV-2ffbe4560e69992a",
+        "EV-60bc38fbf2bbb1ea",
+        "EV-ae736eb124d7163a",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-40390136762c64d3",
+        "EV-07a5533c18e5a74e",
+        "EV-56b9643b245a5ff4",
+        "EV-0edb0a592ca1fd67",
+        "EV-20ffa968bcbc4729",
+        "EV-7e52d691a0553667",
+        "EV-f34eec5df7f5bcb7",
+        "EV-c996e56f7f4bdc49",
+        "EV-b60df35d168fe6b7",
+        "EV-c846e768dad05441",
+        "EV-604f18edb827ea7b",
+        "EV-cea99e5d7f93d56a",
+        "EV-29f130674dbbb59e",
+        "EV-c98d4ee7764d51b2",
+        "EV-657837763764c869",
+        "EV-0eef30387327e73f",
+        "EV-89bdda008227fb6b",
+        "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
+        "EV-02b07069713d9a1c",
+        "EV-322796d9761a0824",
+        "EV-2d56dec8dfeb2b56",
+        "EV-618e2e96fac28f06",
+        "EV-47694f247d24b044",
+        "EV-0d6433da1f8d256a",
+        "EV-8fcecabca2e92b40"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-model_api_service",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
+        "TX-industry-manufacturing",
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
+        "TX-technology-computer_use",
+        "TX-technology-multimodal",
+        "TX-product_form-developer_tool",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-open_weights",
+        "TX-technology-image_generation",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-distillation"
+      ],
+      "relatedEntityIds": [
+        "EN-af54bb0c9a39eb30",
+        "EN-62503b0d3dcfd096",
+        "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
+        "EN-d85ad5e8ff8e2889",
+        "EN-a2fa009495c3bb3a",
+        "EN-2ba325ce6f8e3dc9",
+        "EN-e71558a14e7ed6ab"
+      ],
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-08-02"
+    },
+    {
+      "id": "EN-e3863f813fe47240",
+      "name": "Muse Spark 1.1",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9496f90f3e808992",
+        "EV-e42e55d1e11a2ba2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model_api_service",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-technology-computer_use",
+        "TX-technology-multimodal",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-13"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "阿里巴巴",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "微软"
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-2a78dd5feb40a78a",
-        "EV-97854226b6f43a95",
-        "EV-86ca5af11ee4d275",
-        "EV-52115fee0e716170",
-        "EV-20d762872664fddb",
-        "EV-88f4ee8cd57bdf42",
-        "EV-44a4e92c03a31ab1",
-        "EV-7585b033d4005977",
-        "EV-57944eebac69d510",
-        "EV-306ac8217c66dc81",
-        "EV-005a017a310d1fdd",
-        "EV-e09efcd49776cb95",
-        "EV-883d3b5f6d30eb48",
-        "EV-fa66f00e9d4b20c2",
-        "EV-f31feb5ed41be8f2",
-        "EV-4fba2b2f1ac10a79",
-        "EV-bcb74b02448b7d78",
-        "EV-47a16db069ed320e",
-        "EV-381b79897d896995",
-        "EV-d756f05478303505",
-        "EV-7263caa45bbf168e",
-        "EV-8abf5adc3e72fbb8",
-        "EV-6272444f30281858",
-        "EV-f55d16df5b5fecb2",
-        "EV-16cfe946bbf69aa3",
-        "EV-eec1e6857f0e0b2b",
-        "EV-6acfb15c012ddf6d",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b833b29d904b39ac",
-        "EV-9dab7fa55702e561",
-        "EV-b2e374d54b10b9af",
-        "EV-4763b46821ab746e",
-        "EV-58c1cc3749294649",
-        "EV-c0a65877001ed413",
-        "EV-bd508dbe4205774f",
-        "EV-4c949b6aac6d26e7",
-        "EV-7a4d1e871dcd3b1f",
-        "EV-3eb44a239ebef4b0",
-        "EV-272aea63d4e50349",
-        "EV-5f2acbfb8f54fd59",
-        "EV-6aae550a6523a8fd",
-        "EV-c9216f0145c3ef2b",
-        "EV-395884a4c090103c",
-        "EV-272c5c798bc95d9d",
-        "EV-5bc7efca0bc7fec0",
-        "EV-702276a31f123374",
-        "EV-37ff2485172cab0b",
-        "EV-82ae0ea3bfe336a1",
-        "EV-243e73016576fa43",
-        "EV-563843979fb55b9b",
-        "EV-6c81f03e885f10af",
-        "EV-e1e30a2a4a5232c6",
-        "EV-cd067fa6f39fe828",
-        "EV-1e611bcabcb049e9",
-        "EV-118317b7f92e5e16",
-        "EV-c4723445b11bb275",
-        "EV-7963d8c78531f12d",
-        "EV-7c899d5decafc42f",
-        "EV-b920999c64aa9ef6",
-        "EV-33292a33d0f4d599",
-        "EV-b3a050d576cea2f2",
-        "EV-fdcc4ff01b49053e",
-        "EV-cadcc94249dea81d",
-        "EV-dae42c1daf8ba2f8",
-        "EV-b862692915ae70bb",
-        "EV-51aed98773a9fca1",
-        "EV-cc3b92fe233953cf",
-        "EV-0370a17f0ef39c3e",
-        "EV-578a9db1fe952d0a",
-        "EV-b93b5cc15823e9c3",
-        "EV-7309586168387ad8",
-        "EV-8aead769e84de342",
-        "EV-7fb25ff3d853c314",
-        "EV-3acf607a02706fa8",
-        "EV-4ee99f92b011d16f",
-        "EV-9009adaed650ddde",
-        "EV-8a26b85b4f432525",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-10aac036228b3c6b",
-        "EV-8495af729cd05f62",
-        "EV-e28e134345ea5f99",
-        "EV-f7484ad16a6d1876",
-        "EV-d2d1834222ab32d3",
-        "EV-04c2ffd7f6b10126",
-        "EV-922de7a46f447efa",
-        "EV-1f61330a3f828179",
-        "EV-523e5de44cc464fb",
-        "EV-ae89898e7aa4a4d6",
-        "EV-d596f111808bd55b",
+        "EV-00514c4ffc2e3cd3",
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-2d9fde7bc0cd7a22",
+        "EV-c2b613b5a2fb1135",
+        "EV-ef2cd6bd912a6ed8",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-bfa090c78227abf8",
+        "EV-2e1352039c487bb0",
+        "EV-b4aa08aef57bdb0f",
+        "EV-1a241bcb4fad886c",
+        "EV-6654f62015eff8e3",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
+        "EV-b43f22d8bc7fec3f",
+        "EV-b888d3eb5f192649",
+        "EV-f388f7ae2debeae8",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
         "EV-a4f052325d0ef230",
-        "EV-6ce6b9c9780b97d9",
-        "EV-741728825db1f14e",
-        "EV-89bdda008227fb6b",
-        "EV-62df953d81def866",
-        "EV-1b92b6c835ce240c",
-        "EV-3da14e3743571e92",
-        "EV-d9a78a839d6c628f",
-        "EV-1587a760d81451be",
-        "EV-33e7429a7bc94840",
-        "EV-022d1f3160d94048",
-        "EV-933294dfb2d19a67",
-        "EV-7580a050ca19a8ae"
+        "EV-8692dfde7c3ef5b5",
+        "EV-710b145230faa692"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-automotive_transportation",
-        "TX-use_case-procurement_supply_chain",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
+        "TX-technology-multimodal",
+        "TX-product_form-ai_device",
         "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-industry-professional_services",
         "TX-technology-open_weights",
-        "TX-technology-model_context_protocol",
-        "TX-technology-image_generation",
-        "TX-industry-telecommunications",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
-        "TX-technology-distillation"
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
-        "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
-        "EN-d2f4e09cb01afa3c",
-        "EN-7d3194f79e645c42",
-        "EN-38945a66b4806b11",
-        "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-52e3d014f9a275ea",
+        "EN-0b0c3b228202ab0a",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
+        "EN-d65d81c60c0c47c4"
       ],
-      "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-30"
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-01",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
+    },
+    {
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9b81b0dd09a046ab",
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
+        "EV-2bb63a3015195f9b",
+        "EV-43b56d49df9a73a2",
+        "EV-0e84a2f49d765ce3",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-5762fe51987bc5ff",
+        "EV-6cb8979f92cf74ce",
+        "EV-a4b7cd533b0b34dc",
+        "EV-fd329b4350f404ef",
+        "EV-57944eebac69d510",
+        "EV-38232fed5e0cfdd6",
+        "EV-e7b228c1b6b54c6a",
+        "EV-cf76f090a1a20a36",
+        "EV-ff1f6119de13fa19",
+        "EV-cec235426920c522",
+        "EV-051d1924db7ba65d",
+        "EV-777eb5b7783b71fb",
+        "EV-e8bc5b0eebef5813",
+        "EV-f55d16df5b5fecb2",
+        "EV-5a9fe80f8e4ae066",
+        "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
+        "EV-36a9e4e908249381",
+        "EV-98496cc86bacb1e0",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-d1a3f5c8045e548d",
+        "EV-f949fd95df58d42d",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
+        "EV-cf4da5583e9311d7",
+        "EV-ebd76d18d3f0ee7b",
+        "EV-60110525440fac47",
+        "EV-3ebf23c149dde19d",
+        "EV-6b0106ef4a79df05",
+        "EV-a4fe78df6ccd63c8",
+        "EV-395884a4c090103c",
+        "EV-6f26809c0ae960a8",
+        "EV-33e98b8bbd0a11b1",
+        "EV-2634b786bde9fb8e",
+        "EV-6aabfaa0c7c7f838",
+        "EV-c914ac00a35d7cf0",
+        "EV-c9d7b46d167df2d1",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
+        "EV-f3cc0845ce442e6b",
+        "EV-636c0bb7661201cc",
+        "EV-fe4eeb733d1682ed",
+        "EV-a255cfc0dab44564",
+        "EV-98a80b75b27d9f3b",
+        "EV-29e069ac093f0e34",
+        "EV-62feeb8f8791c63c",
+        "EV-8fbe211e9d4bae03",
+        "EV-04efb4eecbb8125f",
+        "EV-6359c9f6c2609a38",
+        "EV-a442b55d0bac5651",
+        "EV-49d9029bdcf87db4",
+        "EV-c2d784ef0a5376f8",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
+        "EV-f05783f745bc7c2c",
+        "EV-2cd95ab95d0f2ad9",
+        "EV-52508b70ccd2cc0b",
+        "EV-71226eeff6dc7c42",
+        "EV-d12aa40eff40c97e",
+        "EV-9254af7aaedaafbe",
+        "EV-04ee2bc4ac888358",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
+        "EV-2059f42c7b2aff44",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
+        "EV-b8bba030747fd3b6",
+        "EV-8aead769e84de342",
+        "EV-982a92fc86f1d20c",
+        "EV-eddb4330fed15762",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-5012364af7480121",
+        "EV-3acf607a02706fa8",
+        "EV-44ae3e7fda9320dc",
+        "EV-abf0990dcaceb1ce",
+        "EV-d5cc9a50a9b88d2b",
+        "EV-6225d18316f90a0d",
+        "EV-b860d46fee913f27",
+        "EV-011eeba13ebcc9a8",
+        "EV-8a26b85b4f432525",
+        "EV-3f23ddb47fc652a4",
+        "EV-a886a800f06ab9d6",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-43a5b874a66b42b3",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
+        "EV-54c329f4c8e4227b",
+        "EV-c3cbf5d7f860c693",
+        "EV-009105cbcf82a638",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-b4f3dcac8cc230d9",
+        "EV-d2d1834222ab32d3",
+        "EV-8eed6489ab514823",
+        "EV-22b8d155ce027905",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-0ad758b04b9b5313",
+        "EV-c08837795f9e16d2",
+        "EV-4a3cb762183581cd",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-a591b0c96f79de45",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
+        "EV-a4f052325d0ef230",
+        "EV-cb3cb11ff13f6069",
+        "EV-8115dd18f2812a29",
+        "EV-0e9f000dd04fe04c",
+        "EV-5bfcc506994f103f",
+        "EV-909cf18b467d6fdf",
+        "EV-89bdda008227fb6b",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-848bdd13f319c516",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-1b92b6c835ce240c",
+        "EV-8925c94e9a1c5f03",
+        "EV-6950bb00a0913038",
+        "EV-392894a7cc673b9e",
+        "EV-ad269fada2269f35",
+        "EV-6fba63ca5f1e51c7",
+        "EV-1df9b606627460f7",
+        "EV-7580a050ca19a8ae",
+        "EV-39460c022e56badd",
+        "EV-ecfc552af7344d65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-technology-computer_use",
+        "TX-use_case-software_development",
+        "TX-product_form-security_software",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-deployment_model-on_premise",
+        "TX-technology-model_context_protocol",
+        "TX-technology-image_generation",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-8d323d8bba783aa3",
+        "EN-18f0900d6c487f59",
+        "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
+        "EN-40f98159922ab514",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
+        "EN-2998f8b13f4fd72e",
+        "EN-b5c336c0dd1ff29c",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-bdfecbcd7dbf76d2"
+      ],
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-08-02"
+    },
+    {
+      "id": "EN-3aa38718f0399af9",
+      "name": "Computer Use",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6225d18316f90a0d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-25",
+      "lastSeen": "2026-06-26"
+    },
+    {
+      "id": "EN-e16fc821f34228d1",
+      "name": "阿里云",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Alibaba Cloud",
+        "Cloud Intelligence Group"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b43f22d8bc7fec3f",
+        "EV-215f938a46d0b126",
+        "EV-c54172bf4e0c1068"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-technology-computer_use",
+        "TX-use_case-data_analysis"
+      ],
+      "relatedEntityIds": [
+        "EN-16fe95bd48dbf178"
+      ],
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-07-21",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "parentEntityId": "EN-047364b9be67f665",
+      "organizationRole": "business_unit",
+      "hierarchyEvidence": [
+        {
+          "sourceId": "SRC-alibaba-cloud-arm-official",
+          "sourceUrl": "https://www.alibabagroup.com/en-US/document-1491224164130881536",
+          "quote": "Alibaba Cloud, the cloud computing and data intelligence arm of Alibaba Group"
+        }
+      ],
+      "organizationFamilyEntityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "parentEntityName": "阿里巴巴"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -1198,37 +1907,42 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
         "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-industry-financial_services",
+        "TX-industry-professional_services",
         "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-use_case-research_discovery",
         "TX-industry-legal_services",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-industry-professional_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-7839fb10a8f14c70",
@@ -1256,763 +1970,6 @@
       ],
       "firstSeen": "2022-10-01",
       "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "EN-ea3bd73e2b506e00",
-      "name": "Meta",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5df885dbd24b6d00",
-        "EV-dcbe916c6138e5cb",
-        "EV-427081ec574b43bb",
-        "EV-e41fc65eb014893f",
-        "EV-974a6b7d0e0efef2",
-        "EV-fb817fb0a5e63323",
-        "EV-917a390341b9fce6",
-        "EV-3f8f6a578be79988",
-        "EV-467d1a701d21327d",
-        "EV-acdeebead5324344",
-        "EV-cded77b1de2db61a",
-        "EV-a4b7cd533b0b34dc",
-        "EV-8805e96b4fb544dd",
-        "EV-c3f617e75d303f59",
-        "EV-bc9abd502c002102",
-        "EV-9efcf6480f6c6f48",
-        "EV-cf76f090a1a20a36",
-        "EV-43301de739fe560e",
-        "EV-5bc7efca0bc7fec0",
-        "EV-fdc4c26edadb4cea",
-        "EV-702276a31f123374",
-        "EV-fbc316f83b63a543",
-        "EV-1ba939d8baf43207",
-        "EV-5b193a038ab4ea22",
-        "EV-655018b9820c7940",
-        "EV-828698c8779bb522",
-        "EV-938eebe85a688ff1",
-        "EV-a37b9d9fb85e460f",
-        "EV-cf176636839e45be",
-        "EV-8540be15175c65da",
-        "EV-9496f90f3e808992",
-        "EV-dce5de62b2e4b752",
-        "EV-2ffbe4560e69992a",
-        "EV-60bc38fbf2bbb1ea",
-        "EV-ae736eb124d7163a",
-        "EV-e42e55d1e11a2ba2",
-        "EV-41baa43cf05d4288",
-        "EV-40390136762c64d3",
-        "EV-07a5533c18e5a74e",
-        "EV-56b9643b245a5ff4",
-        "EV-0edb0a592ca1fd67",
-        "EV-20ffa968bcbc4729",
-        "EV-7e52d691a0553667",
-        "EV-f34eec5df7f5bcb7",
-        "EV-c996e56f7f4bdc49",
-        "EV-b60df35d168fe6b7",
-        "EV-c846e768dad05441",
-        "EV-604f18edb827ea7b",
-        "EV-cea99e5d7f93d56a",
-        "EV-29f130674dbbb59e",
-        "EV-c98d4ee7764d51b2",
-        "EV-657837763764c869",
-        "EV-0eef30387327e73f",
-        "EV-89bdda008227fb6b",
-        "EV-ef823877347ff40f",
-        "EV-04cf95633b564f9a",
-        "EV-02b07069713d9a1c",
-        "EV-322796d9761a0824",
-        "EV-2d56dec8dfeb2b56",
-        "EV-618e2e96fac28f06",
-        "EV-47694f247d24b044",
-        "EV-0d6433da1f8d256a",
-        "EV-8fcecabca2e92b40"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-aerospace_defense",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-open_weights",
-        "TX-technology-image_generation",
-        "TX-technology-guardrails_safety",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-distillation"
-      ],
-      "relatedEntityIds": [
-        "EN-af54bb0c9a39eb30",
-        "EN-62503b0d3dcfd096",
-        "EN-e3863f813fe47240",
-        "EN-9c8ae69b84f21a2e",
-        "EN-d85ad5e8ff8e2889",
-        "EN-a2fa009495c3bb3a",
-        "EN-2ba325ce6f8e3dc9",
-        "EN-e71558a14e7ed6ab"
-      ],
-      "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "EN-96eebba49dbbf422",
-      "name": "Intel",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ccbf97fdf4dc11d0",
-        "EV-2069f6a931b8c9d6",
-        "EV-02882e6f5e1902c6",
-        "EV-f6a72cddbda748b3",
-        "EV-4eaf3aabecae6016",
-        "EV-640c5ea9f4fa2780",
-        "EV-6e516b6e68def9cf",
-        "EV-86ca5af11ee4d275",
-        "EV-a8dc5c859946f336",
-        "EV-d9cc588fb41a7e67",
-        "EV-463cb26b5e03c7f7",
-        "EV-232ab5bcbaf6552d",
-        "EV-48075ca70a5458ec",
-        "EV-7b1c734882fa1ea6",
-        "EV-b3c7c4bff17063d8",
-        "EV-12a42b0aabee236f",
-        "EV-81bd541510a530f0",
-        "EV-2bb63a3015195f9b",
-        "EV-4e7a32c9ee893918",
-        "EV-d4e44892226be468",
-        "EV-921c843ad32c993c",
-        "EV-2bea8d8046a9b325",
-        "EV-5f5f252c6a826599",
-        "EV-9fa9822969d3c3fd",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-14a666fc27d73a80",
-        "EV-9de19f01ac4771fa",
-        "EV-39717cdbada984d7",
-        "EV-044b917005a8f611",
-        "EV-dc442b91a69fcc5a",
-        "EV-02548003157849bb",
-        "EV-c0d19b8641a7a36c",
-        "EV-ee0662b75588987e",
-        "EV-c3b8772c06a25dbc",
-        "EV-b1138bccf5ccd86c",
-        "EV-e941c32639167c23",
-        "EV-e8d1de5c77f32b9c",
-        "EV-6a7f9d990732e4e2",
-        "EV-bc4ac955cd26b969",
-        "EV-88f4ee8cd57bdf42",
-        "EV-ef7346378fcf9746",
-        "EV-86489eda802ffc19",
-        "EV-220be2fe413b8cfa",
-        "EV-ebe9ed3158df619b",
-        "EV-6cb8979f92cf74ce",
-        "EV-7add33b4c74dbf1a",
-        "EV-3b1613cedea7dad4",
-        "EV-59f4561c5243eb98",
-        "EV-467d1a701d21327d",
-        "EV-c5643983538c6513",
-        "EV-b85139b8fba1a5c5",
-        "EV-c4303801ea8c54dc",
-        "EV-0b6cfbf67ba2da31",
-        "EV-8b0f056571d68269",
-        "EV-4b545e310ded2baa",
-        "EV-b4eb99a878be9bb2",
-        "EV-cfb7c4b4b765f53b",
-        "EV-4dd25589d834060d",
-        "EV-6617850e0b014051",
-        "EV-c81cb21337a9bb98",
-        "EV-2f9a87bd46248fe8",
-        "EV-056bb8c683ef60a4",
-        "EV-b4b5d141dac164c2",
-        "EV-6e4dd5111dfaae9c",
-        "EV-36a9e4e908249381",
-        "EV-181b425d2a600cad",
-        "EV-2c87c8ea47cbd1b6",
-        "EV-48015ed51ec9be9f",
-        "EV-b7bcc18d70ed4f13",
-        "EV-bb9ba11acf104db1",
-        "EV-2fd730d0ad452334",
-        "EV-b95539d17772a4ce",
-        "EV-f63462e34ea40699",
-        "EV-26183a56cf9ed63c",
-        "EV-97747aee0cafd9f3",
-        "EV-8e01849c05b50355",
-        "EV-4faa2bcf2e42e60c",
-        "EV-45be473baf6dfa4c",
-        "EV-1ba939d8baf43207",
-        "EV-941ba9ebdc43f20c",
-        "EV-92d28aef0c4b0a8a",
-        "EV-c2800c1c5a3f568f",
-        "EV-d4ddee1b39cced77",
-        "EV-025778b83c1b2ca9",
-        "EV-dce5de62b2e4b752",
-        "EV-57565fc2e7502c59",
-        "EV-2ffbe4560e69992a",
-        "EV-e42e55d1e11a2ba2",
-        "EV-41baa43cf05d4288",
-        "EV-6af1e74358025628",
-        "EV-701417bcd9b57095",
-        "EV-3847d883688587ba",
-        "EV-3a7128e2d7ff149e",
-        "EV-40390136762c64d3",
-        "EV-53f881da31630a04",
-        "EV-dfbc2f02003c7595",
-        "EV-0edb0a592ca1fd67",
-        "EV-578a9db1fe952d0a",
-        "EV-a70d5cf3ee6d6d64",
-        "EV-f784003febc1d9eb",
-        "EV-7e52d691a0553667",
-        "EV-37cdd2fae39aaa2e",
-        "EV-3d1c01d3d1b0bba4",
-        "EV-644337db309a1c82",
-        "EV-9ae9aa86e51e64a2",
-        "EV-be19904753c9c486",
-        "EV-832fa2db95cfea6e",
-        "EV-e28e134345ea5f99",
-        "EV-4e55361d8324dd49",
-        "EV-97a8d86baa7fffc4",
-        "EV-f89ba2b487d4abf1",
-        "EV-5a1422a9929c582e",
-        "EV-8361a47c70ecd243",
-        "EV-bff418b2959f58fb",
-        "EV-c5b8faec223a4caf",
-        "EV-da062d02015f99fb",
-        "EV-9eb3693cc65fbca9",
-        "EV-57597c92f7b183a9",
-        "EV-5493c61bcbe58aa2",
-        "EV-84b423077bf8dac8",
-        "EV-ae89898e7aa4a4d6",
-        "EV-0cb98302768c2e0a",
-        "EV-6ce6b9c9780b97d9",
-        "EV-dd62847548bb6ae3",
-        "EV-34929bdd016dc8d6",
-        "EV-0fd8bb718db1118c",
-        "EV-067f57f6e6ffa6ce",
-        "EV-edb1ddb3a091ada4",
-        "EV-022d1f3160d94048",
-        "EV-9705a8de3c2e9653",
-        "EV-6fba63ca5f1e51c7",
-        "EV-8b4f7844af234ed8",
-        "EV-e8e47f4bb528e107",
-        "EV-8654cc0faeb02d14"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-automotive_transportation",
-        "TX-use_case-procurement_supply_chain",
-        "TX-industry-legal_services",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-industry-professional_services",
-        "TX-technology-fine_tuning",
-        "TX-use_case-design_engineering",
-        "TX-technology-image_generation",
-        "TX-industry-government_public_sector",
-        "TX-industry-telecommunications",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning"
-      ],
-      "relatedEntityIds": [
-        "EN-8d323d8bba783aa3",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-28"
-    },
-    {
-      "id": "EN-e3863f813fe47240",
-      "name": "Muse Spark 1.1",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-9496f90f3e808992",
-        "EV-e42e55d1e11a2ba2"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-computer_use",
-        "TX-technology-multimodal",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning"
-      ],
-      "relatedEntityIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
-      "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-13"
-    },
-    {
-      "id": "EN-047364b9be67f665",
-      "name": "阿里巴巴",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Alibaba",
-        "Alibaba Group",
-        "阿里"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-00514c4ffc2e3cd3",
-        "EV-43b7f45e9bd7ec9b",
-        "EV-3d93d1da8cb64462",
-        "EV-2d9fde7bc0cd7a22",
-        "EV-c2b613b5a2fb1135",
-        "EV-ef2cd6bd912a6ed8",
-        "EV-4740121f428e4bda",
-        "EV-a354af52772334fd",
-        "EV-c0f87b8c5208cd75",
-        "EV-53f08daddd011dbb",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-2a833330267cb2df",
-        "EV-bfa090c78227abf8",
-        "EV-2e1352039c487bb0",
-        "EV-b4aa08aef57bdb0f",
-        "EV-1a241bcb4fad886c",
-        "EV-6654f62015eff8e3",
-        "EV-8b67e7ac8e61cc1e",
-        "EV-989631c550d89726",
-        "EV-94ad4a217508e6e0",
-        "EV-b43f22d8bc7fec3f",
-        "EV-b888d3eb5f192649",
-        "EV-f388f7ae2debeae8",
-        "EV-d08935b06ed9e7bb",
-        "EV-215f938a46d0b126",
-        "EV-ac1b82f6e6261012",
-        "EV-6fbbbfcdcec81df4",
-        "EV-82e68f59d8584e4e",
-        "EV-fd8ecce5de2f667d",
-        "EV-f6ac2938949f74ec",
-        "EV-363fe72da52bdb86",
-        "EV-83c841a4c42cfdea",
-        "EV-3167e6eed75597e9",
-        "EV-ad2e4fe6a149d95d",
-        "EV-76aa77f5a2e7c661",
-        "EV-77662aa9bef9efbe",
-        "EV-c7f274c3aadece12",
-        "EV-333851b077b606c8",
-        "EV-6712f8ac1f00fe85",
-        "EV-c54172bf4e0c1068",
-        "EV-473f852b374d8b1c",
-        "EV-197aac95e60671f7",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-bbc34d7bc9c02b6f",
-        "EV-a4f413441613beac",
-        "EV-c11ee0da38376254",
-        "EV-657837763764c869",
-        "EV-a4f052325d0ef230",
-        "EV-8692dfde7c3ef5b5",
-        "EV-710b145230faa692"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-52e3d014f9a275ea",
-        "EN-0b0c3b228202ab0a",
-        "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
-        "EN-3c2a3673eabc9a46",
-        "EN-d65d81c60c0c47c4"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-01",
-      "organizationFamilyId": "EN-047364b9be67f665",
-      "organizationRole": "group",
-      "organizationFamilyEntityIds": [
-        "EN-e16fc821f34228d1"
-      ],
-      "parentEntityName": ""
-    },
-    {
-      "id": "EN-09c344df70df9660",
-      "name": "QoderWork",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-333851b077b606c8"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-computer_use",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-use_case-data_analysis"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-02",
-      "lastSeen": "2026-07-03"
-    },
-    {
-      "id": "EN-bbdefa2950f49882",
-      "name": "Google",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-9b81b0dd09a046ab",
-        "EV-e41fc65eb014893f",
-        "EV-dfddbb260b3d1c77",
-        "EV-78a11d309c3d4e97",
-        "EV-2bb63a3015195f9b",
-        "EV-43b56d49df9a73a2",
-        "EV-0e84a2f49d765ce3",
-        "EV-dbbe3fd637be213f",
-        "EV-4a162c41bb82f325",
-        "EV-5762fe51987bc5ff",
-        "EV-6cb8979f92cf74ce",
-        "EV-a4b7cd533b0b34dc",
-        "EV-fd329b4350f404ef",
-        "EV-57944eebac69d510",
-        "EV-38232fed5e0cfdd6",
-        "EV-e7b228c1b6b54c6a",
-        "EV-cf76f090a1a20a36",
-        "EV-ff1f6119de13fa19",
-        "EV-cec235426920c522",
-        "EV-051d1924db7ba65d",
-        "EV-777eb5b7783b71fb",
-        "EV-e8bc5b0eebef5813",
-        "EV-f55d16df5b5fecb2",
-        "EV-5a9fe80f8e4ae066",
-        "EV-b4b5d141dac164c2",
-        "EV-6e4dd5111dfaae9c",
-        "EV-36a9e4e908249381",
-        "EV-98496cc86bacb1e0",
-        "EV-ef6464cf7f764835",
-        "EV-b95539d17772a4ce",
-        "EV-d1a3f5c8045e548d",
-        "EV-f949fd95df58d42d",
-        "EV-97747aee0cafd9f3",
-        "EV-c0a65877001ed413",
-        "EV-cf4da5583e9311d7",
-        "EV-ebd76d18d3f0ee7b",
-        "EV-60110525440fac47",
-        "EV-3ebf23c149dde19d",
-        "EV-6b0106ef4a79df05",
-        "EV-a4fe78df6ccd63c8",
-        "EV-395884a4c090103c",
-        "EV-6f26809c0ae960a8",
-        "EV-33e98b8bbd0a11b1",
-        "EV-2634b786bde9fb8e",
-        "EV-6aabfaa0c7c7f838",
-        "EV-c914ac00a35d7cf0",
-        "EV-c9d7b46d167df2d1",
-        "EV-5b193a038ab4ea22",
-        "EV-969923b0b978a660",
-        "EV-6ce069b1845f5a52",
-        "EV-597b8257a97b3d02",
-        "EV-5aaa4c6697606274",
-        "EV-834e65247c2d4a3b",
-        "EV-cc974e0031c69715",
-        "EV-cd067fa6f39fe828",
-        "EV-dc3a5509a690a6b0",
-        "EV-f3cc0845ce442e6b",
-        "EV-636c0bb7661201cc",
-        "EV-fe4eeb733d1682ed",
-        "EV-a255cfc0dab44564",
-        "EV-98a80b75b27d9f3b",
-        "EV-29e069ac093f0e34",
-        "EV-62feeb8f8791c63c",
-        "EV-8fbe211e9d4bae03",
-        "EV-04efb4eecbb8125f",
-        "EV-6359c9f6c2609a38",
-        "EV-a442b55d0bac5651",
-        "EV-49d9029bdcf87db4",
-        "EV-c2d784ef0a5376f8",
-        "EV-967239f907803753",
-        "EV-ac8f8581cd1ca75d",
-        "EV-f05783f745bc7c2c",
-        "EV-2cd95ab95d0f2ad9",
-        "EV-52508b70ccd2cc0b",
-        "EV-71226eeff6dc7c42",
-        "EV-d12aa40eff40c97e",
-        "EV-9254af7aaedaafbe",
-        "EV-04ee2bc4ac888358",
-        "EV-96c8ce4ee89adb84",
-        "EV-caec65aef89d3b4a",
-        "EV-cabc88e1d09dec80",
-        "EV-cc3b92fe233953cf",
-        "EV-0edb0a592ca1fd67",
-        "EV-2059f42c7b2aff44",
-        "EV-77662aa9bef9efbe",
-        "EV-7e52d691a0553667",
-        "EV-b8bba030747fd3b6",
-        "EV-8aead769e84de342",
-        "EV-982a92fc86f1d20c",
-        "EV-eddb4330fed15762",
-        "EV-2298304e18dbf493",
-        "EV-89b644ff05e6b93b",
-        "EV-9c4b862020202f6c",
-        "EV-d8c69ed782b73a34",
-        "EV-5012364af7480121",
-        "EV-3acf607a02706fa8",
-        "EV-44ae3e7fda9320dc",
-        "EV-abf0990dcaceb1ce",
-        "EV-d5cc9a50a9b88d2b",
-        "EV-6225d18316f90a0d",
-        "EV-b860d46fee913f27",
-        "EV-011eeba13ebcc9a8",
-        "EV-8a26b85b4f432525",
-        "EV-3f23ddb47fc652a4",
-        "EV-a886a800f06ab9d6",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-43a5b874a66b42b3",
-        "EV-c108e7cc2df7faf4",
-        "EV-916bcaee6266e0d0",
-        "EV-54c329f4c8e4227b",
-        "EV-c3cbf5d7f860c693",
-        "EV-009105cbcf82a638",
-        "EV-99e5df844a1bd670",
-        "EV-1b03e5dff76a50a1",
-        "EV-51dfd0d541380500",
-        "EV-ab3586268ebfab38",
-        "EV-b4f3dcac8cc230d9",
-        "EV-d2d1834222ab32d3",
-        "EV-8eed6489ab514823",
-        "EV-22b8d155ce027905",
-        "EV-3ef3e18df61a00d8",
-        "EV-4bb5b24400e49ea4",
-        "EV-0ad758b04b9b5313",
-        "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-5a1422a9929c582e",
-        "EV-bff418b2959f58fb",
-        "EV-a591b0c96f79de45",
-        "EV-5493c61bcbe58aa2",
-        "EV-cac9d9f31ef675ce",
-        "EV-dab4d3f2059e8880",
-        "EV-342799d4e68e7416",
-        "EV-d53cd33e8f541a65",
-        "EV-a4f052325d0ef230",
-        "EV-cb3cb11ff13f6069",
-        "EV-8115dd18f2812a29",
-        "EV-0e9f000dd04fe04c",
-        "EV-5bfcc506994f103f",
-        "EV-909cf18b467d6fdf",
-        "EV-89bdda008227fb6b",
-        "EV-ef823877347ff40f",
-        "EV-3e9a0d1be6de5096",
-        "EV-848bdd13f319c516",
-        "EV-8cd7665e40729256",
-        "EV-2d56dec8dfeb2b56",
-        "EV-1b92b6c835ce240c",
-        "EV-8925c94e9a1c5f03",
-        "EV-6950bb00a0913038",
-        "EV-392894a7cc673b9e",
-        "EV-ad269fada2269f35",
-        "EV-6fba63ca5f1e51c7",
-        "EV-1df9b606627460f7",
-        "EV-7580a050ca19a8ae",
-        "EV-39460c022e56badd",
-        "EV-ecfc552af7344d65"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-model_context_protocol",
-        "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [
-        "EN-8d323d8bba783aa3",
-        "EN-18f0900d6c487f59",
-        "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
-        "EN-81e577740888ca6d",
-        "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
-        "EN-40f98159922ab514",
-        "EN-9ff1a58a589bc318",
-        "EN-01f1074bb52ff605",
-        "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
-        "EN-2998f8b13f4fd72e",
-        "EN-b5c336c0dd1ff29c",
-        "EN-d56aa2f9908f566a",
-        "EN-4baef0e41cbd7ae2",
-        "EN-bdfecbcd7dbf76d2"
-      ],
-      "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "EN-3aa38718f0399af9",
-      "name": "Computer Use",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6225d18316f90a0d"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-25",
-      "lastSeen": "2026-06-26"
-    },
-    {
-      "id": "EN-e16fc821f34228d1",
-      "name": "阿里云",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Alibaba Cloud",
-        "Cloud Intelligence Group"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b43f22d8bc7fec3f",
-        "EV-215f938a46d0b126",
-        "EV-c54172bf4e0c1068"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-computer_use",
-        "TX-use_case-data_analysis"
-      ],
-      "relatedEntityIds": [
-        "EN-16fe95bd48dbf178"
-      ],
-      "firstSeen": "2026-06-24",
-      "lastSeen": "2026-07-21",
-      "organizationFamilyId": "EN-047364b9be67f665",
-      "parentEntityId": "EN-047364b9be67f665",
-      "organizationRole": "business_unit",
-      "hierarchyEvidence": [
-        {
-          "sourceId": "SRC-alibaba-cloud-arm-official",
-          "sourceUrl": "https://www.alibabagroup.com/en-US/document-1491224164130881536",
-          "quote": "Alibaba Cloud, the cloud computing and data intelligence arm of Alibaba Group"
-        }
-      ],
-      "organizationFamilyEntityIds": [
-        "EN-047364b9be67f665"
-      ],
-      "parentEntityName": "阿里巴巴"
-    },
-    {
-      "id": "EN-16fe95bd48dbf178",
-      "name": "峰谷 Token",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c54172bf4e0c1068"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-computer_use",
-        "TX-use_case-data_analysis"
-      ],
-      "relatedEntityIds": [
-        "EN-e16fc821f34228d1"
-      ],
-      "firstSeen": "2026-06-24",
-      "lastSeen": "2026-06-25"
     },
     {
       "id": "EN-10fce287b4b1464c",

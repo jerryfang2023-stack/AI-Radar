@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -24,9 +25,7 @@
       "EV-0259aae5ef9e83cd"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-vision_language"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [
       "EN-7117fa8d72fb99b9"
     ],
@@ -60,15 +59,25 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-7117fa8d72fb99b9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "vision_language",
-            "name": "视觉语言"
+            "name": "视觉语言",
+            "entityIds": [
+              "EN-7117fa8d72fb99b9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -95,6 +104,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [
@@ -126,42 +136,7 @@
       "status": "verified"
     }
   ],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-vision_language",
-      "name": "视觉语言",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "vision_language",
-      "eventIds": [
-        "EV-6f092cfc7a064d64",
-        "EV-03ab7d0b40d1e5b5",
-        "EV-ba89f9414be0b041",
-        "EV-c5a59cb4cc9d7e8e",
-        "EV-0259aae5ef9e83cd",
-        "EV-27fef7b87ee871ae",
-        "EV-74b965de27bc0515"
-      ],
-      "entityIds": [
-        "EN-e647c818ac38b6ca",
-        "EN-2b6e51bec93e86c1",
-        "EN-593d0361124f348f",
-        "EN-843e746333671ab1",
-        "EN-3c6d89173e6636d7",
-        "EN-9c8ae69b84f21a2e",
-        "EN-f0da91960830b394",
-        "EN-505ff8a27618ef39",
-        "EN-7117fa8d72fb99b9",
-        "EN-24dcf762a3ebce39",
-        "EN-b5251b35f15bedc4",
-        "EN-d831f1170590ddb1"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-06",
-      "lastSeen": "2026-07-22"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

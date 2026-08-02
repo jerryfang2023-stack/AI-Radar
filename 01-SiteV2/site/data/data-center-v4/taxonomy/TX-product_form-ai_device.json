@@ -1,0 +1,1986 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1770,
+    "quarantinedEventCount": 14
+  },
+  "node": {
+    "id": "TX-product_form-ai_device",
+    "name": "AI 设备",
+    "nodeType": "product_form",
+    "typeLabel": "产品形态",
+    "valueId": "ai_device",
+    "eventIds": [
+      "EV-02882e6f5e1902c6",
+      "EV-a9810b47e0408a05",
+      "EV-b93102125cc062e3",
+      "EV-a6b4fa32cce7c483",
+      "EV-2ffc3377977da114",
+      "EV-02015794e4c719d0",
+      "EV-4e8f6e91e4451ba1",
+      "EV-82e68f59d8584e4e",
+      "EV-f6ac2938949f74ec",
+      "EV-98dd0db65ab955f7",
+      "EV-7256017056b81bbe",
+      "EV-9e35de25113a9269"
+    ],
+    "entityIds": [
+      "EN-2a920347dfcf07a7",
+      "EN-193d220b421d776e",
+      "EN-b81c8201acfc7639",
+      "EN-88e2cce43eeadb36",
+      "EN-5fdd673ed1fcff1d",
+      "EN-8f5edf98060f12af",
+      "EN-ae0facccf0a3723a",
+      "EN-977ccda4c4cfcc27",
+      "EN-047364b9be67f665",
+      "EN-4e3da39e54ff3137",
+      "EN-a7baed72c308ce88",
+      "EN-7ff4fb5ddc1f4700"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [
+      "HW-073f0034b9be13b2"
+    ],
+    "firstSeen": "2026-06-12",
+    "lastSeen": "2026-07-26"
+  },
+  "events": [
+    {
+      "id": "EV-02882e6f5e1902c6",
+      "dataDate": "2026-07-22",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前Ultrahuman高管创办的AI硬件初创公司Aina获550万美元种子轮融资",
+      "originalTitle": "Ex-Ultrahuman Executive's AI Hardware Startup Aina Raises $5.5 Million in Seed Funding - Entrepreneur India - Entrepreneur India",
+      "subject": "Ex-Ultrahuman Executive's AI Hardware Startup Aina",
+      "action": "Raises",
+      "object": "$5.5 Million in Seed Funding - Entrepreneur India - Entrepreneur India",
+      "metrics": [
+        "$5.5 million"
+      ],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-2a920347dfcf07a7"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-24e34a467f6828cf",
+            "fundingInsightId": "FI-36f291122b857b51"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "consumer_retail",
+            "name": "消费与零售",
+            "entityIds": [
+              "EN-2a920347dfcf07a7"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-31409652823b8553",
+            "fundingInsightId": "FI-36f291122b857b51"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-2a920347dfcf07a7"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-994c5a754c086b42",
+            "fundingInsightId": "FI-36f291122b857b51"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-2a920347dfcf07a7"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a579baacc3503a61",
+            "fundingInsightId": "FI-36f291122b857b51"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-2a920347dfcf07a7"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c034b8a7558dbdf4",
+            "fundingInsightId": "FI-36f291122b857b51"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-2a920347dfcf07a7"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f7670ae1d7326e58",
+            "fundingInsightId": "FI-36f291122b857b51"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-24e34a467f6828cf",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "consumer_retail",
+          "name": "消费与零售",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-31409652823b8553",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c034b8a7558dbdf4",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-994c5a754c086b42",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f7670ae1d7326e58",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a579baacc3503a61",
+          "fundingInsightId": "FI-36f291122b857b51"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-24e34a467f6828cf",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "consumer_retail",
+          "name": "消费与零售",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-31409652823b8553",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-994c5a754c086b42",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a579baacc3503a61",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c034b8a7558dbdf4",
+          "fundingInsightId": "FI-36f291122b857b51"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-2a920347dfcf07a7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f7670ae1d7326e58",
+          "fundingInsightId": "FI-36f291122b857b51"
+        }
+      ],
+      "entityIds": [
+        "EN-2a920347dfcf07a7",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Aina",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://india.entrepreneur.com/business-news/ex-ultrahuman-executives-ai-hardware-startup-aina-raises-5-5-million-in-seed-funding",
+      "publisher": "india.entrepreneur.com"
+    },
+    {
+      "id": "EV-a9810b47e0408a05",
+      "dataDate": "2026-07-02",
+      "date": "2026-07-02",
+      "updatedDate": "2026-07-02",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "originalTitle": "",
+      "subject": "华为联合上海电信",
+      "action": "落地",
+      "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "metrics": [
+        "1Gb"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-193d220b421d776e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-193d220b421d776e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-193d220b421d776e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-193d220b421d776e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-193d220b421d776e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-193d220b421d776e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639"
+      ],
+      "entityNames": [
+        "华为联合上海电信",
+        "Huawei"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/971/407.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b93102125cc062e3",
+      "dataDate": "2026-06-13",
+      "date": "2026-06-12",
+      "updatedDate": "2026-06-13",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "华为 AI 眼镜 × 小艺看世界官宣 8 月上线，辅助视障用户探索世界",
+      "originalTitle": "",
+      "subject": "华为 AI 眼镜 × 小艺看世界官宣 8 月",
+      "action": "上线",
+      "object": "，辅助视障用户探索世界",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-b81c8201acfc7639"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-b81c8201acfc7639"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-b81c8201acfc7639"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b81c8201acfc7639"
+      ],
+      "entityNames": [
+        "Huawei"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/963/535.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a6b4fa32cce7c483",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，接入小红书 Agent",
+      "originalTitle": "",
+      "subject": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，",
+      "action": "接入",
+      "object": "小红书 Agent",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/500.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-2ffc3377977da114",
+      "dataDate": "2026-07-07",
+      "date": "2026-07-07",
+      "updatedDate": "2026-07-07",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "支付宝AI开放平台上线，商家可通过\"阿宝\"接入多端智能终端",
+      "originalTitle": "",
+      "subject": "支付宝AI开放平台上线，商家可通过\"阿宝\"",
+      "action": "接入",
+      "object": "多端智能终端",
+      "metrics": [
+        "10 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-88e2cce43eeadb36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-88e2cce43eeadb36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-88e2cce43eeadb36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-88e2cce43eeadb36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-88e2cce43eeadb36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-88e2cce43eeadb36"
+      ],
+      "entityNames": [
+        "Alipay"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/973/375.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-02015794e4c719d0",
+      "dataDate": "2026-07-23",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-23",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "三星首款 AI 眼镜 Galaxy Glasses 亮相：搭载骁龙 AR1 Gen1 芯片，满电续航 9 小时",
+      "originalTitle": "",
+      "subject": "三星",
+      "action": "product_release",
+      "object": "Galaxy Glasses",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-5fdd673ed1fcff1d",
+              "EN-8f5edf98060f12af"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-5fdd673ed1fcff1d",
+            "EN-8f5edf98060f12af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-5fdd673ed1fcff1d",
+            "EN-8f5edf98060f12af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-968e2d5b08687bf4",
+        "EN-5fdd673ed1fcff1d",
+        "EN-8f5edf98060f12af"
+      ],
+      "entityNames": [
+        "Samsung",
+        "三星",
+        "Galaxy Glasses"
+      ],
+      "productName": "Galaxy Glasses",
+      "products": [
+        {
+          "name": "Galaxy Glasses",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Samsung"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/980/323.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4e8f6e91e4451ba1",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "updatedDate": "2026-07-19",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX",
+      "originalTitle": "",
+      "subject": "社交平台 Soul",
+      "action": "推出 AI 智能硬件",
+      "object": "B Soul，搭载多模态大模型 SoulX",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-ae0facccf0a3723a",
+              "EN-977ccda4c4cfcc27"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-ae0facccf0a3723a",
+            "EN-977ccda4c4cfcc27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-ae0facccf0a3723a",
+            "EN-977ccda4c4cfcc27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ae0facccf0a3723a",
+        "EN-977ccda4c4cfcc27"
+      ],
+      "entityNames": [
+        "Soul",
+        "B Soul"
+      ],
+      "productName": "B Soul",
+      "products": [
+        {
+          "name": "B Soul",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "Soul"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/563.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-82e68f59d8584e4e",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "阿里千问 AI 眼镜将升级为智能体眼镜，联合 Bose 打造首款 AI 智能体耳机",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-047364b9be67f665"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-047364b9be67f665"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/978/215.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f6ac2938949f74ec",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "阿里千问首款 AI 智能体耳机将在 WAIC 亮相",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "阿里千问首款 AI 智能体耳机将在 WAIC 亮相",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-88e2cce43eeadb36",
+        "EN-ef8ef0d64526209a"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Alipay",
+        "Gaode"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/558.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-98dd0db65ab955f7",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026",
+      "originalTitle": "",
+      "subject": "交友应用 Soul 将",
+      "action": "推出首款便携式 AI 智能硬件",
+      "object": "，搭载自研大模型 SoulX 亮相 WAIC 2026",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-4e3da39e54ff3137",
+              "EN-ae0facccf0a3723a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-4e3da39e54ff3137",
+              "EN-ae0facccf0a3723a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-4e3da39e54ff3137",
+            "EN-ae0facccf0a3723a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-4e3da39e54ff3137",
+            "EN-ae0facccf0a3723a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-4e3da39e54ff3137",
+            "EN-ae0facccf0a3723a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-4e3da39e54ff3137",
+            "EN-ae0facccf0a3723a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4e3da39e54ff3137",
+        "EN-ae0facccf0a3723a"
+      ],
+      "entityNames": [
+        "交友应用 Soul",
+        "Soul"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/175.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-7256017056b81bbe",
+      "dataDate": "2026-07-12",
+      "date": "2026-07-12",
+      "updatedDate": "2026-07-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "努比亚倪飞谈 AI 智能体手机：下半场从\"功能叠加\"走向\"原生智能体\"",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "努比亚倪飞谈 AI 智能体手机：下半场从\"功能叠加\"走向\"原生智能体\"",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a"
+      ],
+      "entityNames": [
+        "Nubia",
+        "ZTE"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/975/662.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-9e35de25113a9269",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-09",
+      "updatedDate": "2026-07-10",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "腾讯云发布 Agent Bucket，为亿级智能体提供原生独立云空间",
+      "originalTitle": "",
+      "subject": "腾讯云",
+      "action": "发布",
+      "object": "Agent Bucket，为亿级智能体提供原生独立云空间",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-a7baed72c308ce88",
+            "EN-7ff4fb5ddc1f4700"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-a7baed72c308ce88",
+              "EN-7ff4fb5ddc1f4700"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-a7baed72c308ce88",
+            "EN-7ff4fb5ddc1f4700"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-a7baed72c308ce88",
+            "EN-7ff4fb5ddc1f4700"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-a7baed72c308ce88",
+            "EN-7ff4fb5ddc1f4700"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-a7baed72c308ce88",
+            "EN-7ff4fb5ddc1f4700"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a7baed72c308ce88",
+        "EN-9c8ae69b84f21a2e",
+        "EN-7ff4fb5ddc1f4700"
+      ],
+      "entityNames": [
+        "腾讯云",
+        "Tencent",
+        "Agent Bucket"
+      ],
+      "productName": "Agent Bucket",
+      "products": [
+        {
+          "name": "Agent Bucket",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/974/504.htm",
+      "publisher": "IT之家（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-2a920347dfcf07a7",
+      "name": "Aina",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02882e6f5e1902c6",
+        "EV-7e1624d7df300713",
+        "EV-3902d8bd5da40a20",
+        "EV-01b003fbae67ae91",
+        "EV-2f9a87bd46248fe8",
+        "EV-860b90c017deaa59",
+        "EV-6ce6b9c9780b97d9",
+        "EV-ad269fada2269f35"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_category-industry_applications",
+        "TX-target_user-consumer",
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-01",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-193d220b421d776e",
+      "name": "华为联合上海电信",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a9810b47e0408a05"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-02",
+      "lastSeen": "2026-07-02"
+    },
+    {
+      "id": "EN-b81c8201acfc7639",
+      "name": "华为",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Huawei"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-e3fe8993f46d5e12",
+        "EV-9563aa162529aab0",
+        "EV-b726a9cda7beae64",
+        "EV-a9810b47e0408a05",
+        "EV-afcd5426f5c01dc7",
+        "EV-26d2874c6ce028d6",
+        "EV-b93102125cc062e3",
+        "EV-6c361125c3f50bb6",
+        "EV-3126fb08491de669",
+        "EV-c710c75d9c823a49",
+        "EV-b8bc579bfa5797a2",
+        "EV-8a9b12665a3e40a0",
+        "EV-2d5746e41f96c3c2",
+        "EV-26c1248692fdcc10",
+        "EV-20cdbe59ba2a1359",
+        "EV-3c51bcb5e99d2b68",
+        "EV-2ce9542169b5dfda",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-product_form-ai_device",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-0c2f714483c404ad",
+        "EN-eec6044eb8e4941a",
+        "EN-24381ecb01753c1b"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-88e2cce43eeadb36",
+      "name": "Alipay",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "支付宝"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-584212d254d882bc",
+        "EV-02686922dd82c4aa",
+        "EV-3fb492fb45980541",
+        "EV-2ffc3377977da114",
+        "EV-3126fb08491de669",
+        "EV-7d09b00182b08c3f",
+        "EV-f6ac2938949f74ec",
+        "EV-2c1fc2143d7d4a6a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-07",
+      "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "EN-5fdd673ed1fcff1d",
+      "name": "三星",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a89bf7c0c4203ce2",
+        "EV-02015794e4c719d0",
+        "EV-9b29acd28643e9d1",
+        "EV-5271985bba70f3d1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-8f5edf98060f12af",
+      "name": "Galaxy Glasses",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02015794e4c719d0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [
+        "EN-968e2d5b08687bf4"
+      ],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "阿里巴巴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-00514c4ffc2e3cd3",
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-2d9fde7bc0cd7a22",
+        "EV-c2b613b5a2fb1135",
+        "EV-ef2cd6bd912a6ed8",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-bfa090c78227abf8",
+        "EV-2e1352039c487bb0",
+        "EV-b4aa08aef57bdb0f",
+        "EV-1a241bcb4fad886c",
+        "EV-6654f62015eff8e3",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
+        "EV-b43f22d8bc7fec3f",
+        "EV-b888d3eb5f192649",
+        "EV-f388f7ae2debeae8",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-8692dfde7c3ef5b5",
+        "EV-710b145230faa692"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-computer_use",
+        "TX-technology-multimodal",
+        "TX-product_form-ai_device",
+        "TX-use_case-data_analysis",
+        "TX-technology-open_weights",
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
+        "EN-0b0c3b228202ab0a",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-08-01",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
+    },
+    {
+      "id": "EN-4e3da39e54ff3137",
+      "name": "交友应用 Soul",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-98dd0db65ab955f7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-a7baed72c308ce88",
+      "name": "腾讯云",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-59fb7ba1fd6ac55e",
+        "EV-9e35de25113a9269"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [
+        "EN-dd24c3b82a636110",
+        "EN-7ff4fb5ddc1f4700"
+      ],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "EN-7ff4fb5ddc1f4700",
+      "name": "Agent Bucket",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9e35de25113a9269"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [
+        "EN-a7baed72c308ce88"
+      ],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-10"
+    }
+  ],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-073f0034b9be13b2",
+      "eventId": "EV-4e8f6e91e4451ba1",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-18",
+      "title": "社交平台 Soul 推出 AI 智能硬件 B Soul，搭载多模态大模型 SoulX",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Soul",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/978/563.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-18",
+      "entityIds": [
+        "EN-ae0facccf0a3723a",
+        "EN-977ccda4c4cfcc27"
+      ]
+    }
+  ]
+}

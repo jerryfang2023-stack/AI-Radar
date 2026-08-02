@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -58,9 +59,26 @@
         "displayTags": [
           {
             "dimensionId": "product_form",
-            "id": "chip_accelerator",
             "dimensionName": "产品形态",
-            "name": "芯片与加速器"
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-b34aa8e97b2c2454",
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-b34aa8e97b2c2454"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -87,7 +105,9 @@
         "EV-e2db9c4e7c16ae7a"
       ],
       "viewpointIds": [],
-      "classificationRefs": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator"
+      ],
       "relatedEntityIds": [
         "EN-85852fd45706e894"
       ],

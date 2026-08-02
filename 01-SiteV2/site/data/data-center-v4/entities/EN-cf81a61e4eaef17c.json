@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -27,7 +28,8 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-multimodal"
+      "TX-technology-multimodal",
+      "TX-deployment_model-cloud"
     ],
     "relatedEntityIds": [
       "EN-e1517be14d06cdb7"
@@ -68,7 +70,14 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "multimodal",
-            "name": "多模态"
+            "name": "多模态",
+            "entityIds": [
+              "EN-1730144d4e269a62",
+              "EN-e1517be14d06cdb7",
+              "EN-cf81a61e4eaef17c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -92,13 +101,42 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "multimodal",
-            "name": "多模态"
+            "name": "多模态",
+            "entityIds": [
+              "EN-2b96ed840c07482a",
+              "EN-e1517be14d06cdb7",
+              "EN-cf81a61e4eaef17c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-4f5d0b82a300f296",
+              "EN-2b96ed840c07482a",
+              "EN-e1517be14d06cdb7",
+              "EN-cf81a61e4eaef17c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "deployment_model",
-            "id": "cloud",
             "dimensionName": "部署形态",
-            "name": "云端"
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-4f5d0b82a300f296",
+              "EN-2b96ed840c07482a",
+              "EN-e1517be14d06cdb7",
+              "EN-cf81a61e4eaef17c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -151,6 +189,7 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-technology-multimodal",
+        "TX-deployment_model-cloud",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
@@ -272,23 +311,15 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
-        "EN-9c8ae69b84f21a2e",
-        "EN-5d7b7e77768bfdfc",
         "EN-95b0632f1b292fa7",
         "EN-7d3194f79e645c42",
         "EN-8d4321d936320802",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-80d387ccb3289295",
         "EN-193d220b421d776e",
         "EN-b81c8201acfc7639",
         "EN-7df09a7717ef2feb",
-        "EN-3a7bd3e2360a3d29",
-        "EN-50537dab76505dfc",
-        "EN-b5251b35f15bedc4",
         "EN-e1517be14d06cdb7",
-        "EN-43a340bb75b45f02",
-        "EN-5388bc10736a0eff",
         "EN-febedfcafee9d610",
         "EN-0bd85984211bd173",
         "EN-8d57f84bd1847b24",
@@ -306,31 +337,25 @@
         "EN-6f7ac1823da81d2e",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
-        "EN-96eebba49dbbf422",
-        "EN-52fc33ae4d101a5d",
         "EN-de6b71bf77ff4299",
         "EN-c4ef31845ea79710",
-        "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
         "EN-2b6e51bec93e86c1",
-        "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
-        "EN-0e008e2c06144ec8",
-        "EN-bbdefa2950f49882",
-        "EN-e0bab6f6c58bfe4e",
+        "EN-4d09c69c19f5f67b",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
         "EN-cf81a61e4eaef17c",
-        "EN-4f5d0b82a300f296",
         "EN-2b96ed840c07482a",
+        "EN-4f5d0b82a300f296",
         "EN-9a6ee79873b1fb7b",
-        "EN-3f726694f178ed7a",
         "EN-047364b9be67f665",
         "EN-d65d81c60c0c47c4",
         "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb",
+        "EN-b5251b35f15bedc4",
         "EN-d831f1170590ddb1",
-        "EN-3dd90c2e1bf28b32"
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
       ],
       "fdeIds": [
         "FDE-0ef4045e28c345f8"
@@ -340,6 +365,46 @@
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "TX-deployment_model-cloud",
+      "name": "云端",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "cloud",
+      "eventIds": [
+        "EV-4118202ed0f91895",
+        "EV-4fba2b2f1ac10a79",
+        "EV-b4b5d141dac164c2",
+        "EV-fec9e1b9ae2955ee",
+        "EV-c0d8138d8cab5135",
+        "EV-7fb25ff3d853c314",
+        "EV-20cdbe59ba2a1359",
+        "EV-309ea4fc27a66485"
+      ],
+      "entityIds": [
+        "EN-0b79cf2de0ee6b8e",
+        "EN-c7d7af20b6ab853d",
+        "EN-d9b1d7819af92e77",
+        "EN-bbdefa2950f49882",
+        "EN-96eebba49dbbf422",
+        "EN-2613d360c34cdc8c",
+        "EN-842fcb5e60989a03",
+        "EN-6f4e2e93ad6de7f1",
+        "EN-c70eca6b0f88f44d",
+        "EN-729324072d368379",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-4f5d0b82a300f296",
+        "EN-2b96ed840c07482a",
+        "EN-e1517be14d06cdb7",
+        "EN-cf81a61e4eaef17c",
+        "EN-ab9e3beebd83960d"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-07-21"
     }
   ],
   "fde": [],

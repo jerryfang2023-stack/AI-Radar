@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -17,21 +18,372 @@
     "typeLabel": "应用场景",
     "valueId": "hr_workforce",
     "eventIds": [
+      "EV-2a78dd5feb40a78a",
       "EV-9781e67076f4e06b",
+      "EV-7e1624d7df300713",
       "EV-536b7d289e7209c1"
     ],
     "entityIds": [
+      "EN-2be663431f007250",
+      "EN-049b3253f4a8e2eb",
       "EN-61b6bf408b3b086e",
       "EN-6d51d80daa73eb4a",
-      "EN-9e51ca48d5ecf16f",
       "EN-a7bea92dbcc37521"
     ],
     "fdeIds": [],
     "hardwareIds": [],
-    "firstSeen": "2026-06-09",
-    "lastSeen": "2026-07-10"
+    "firstSeen": "2026-06-08",
+    "lastSeen": "2026-07-29"
   },
   "events": [
+    {
+      "id": "EV-2a78dd5feb40a78a",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Harmony 获 3400 万美元融资，以 AI 重塑员工体验",
+      "originalTitle": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI",
+      "subject": "Harmony",
+      "action": "Raises",
+      "object": "$34 Million to Reinvent Employee Experience Powered by AI",
+      "metrics": [
+        "$34M",
+        "$500M",
+        "$34 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2be663431f007250",
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-2be663431f007250"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-08e215b4a558df14",
+            "fundingInsightId": "FI-9f71fd64de900bbd"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-2be663431f007250"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f3b41e7560217e40",
+            "fundingInsightId": "FI-9f71fd64de900bbd"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-2be663431f007250"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-eda2b18096a24685",
+            "fundingInsightId": "FI-9f71fd64de900bbd"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-4a1bc98a833e2bd7",
+              "EN-2be663431f007250"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [
+              "EN-2be663431f007250"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-659c31fb40a11f16",
+            "fundingInsightId": "FI-9f71fd64de900bbd"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-2be663431f007250"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3d160246c6fd2687",
+            "fundingInsightId": "FI-9f71fd64de900bbd"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-2be663431f007250"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4f4ed78febb7849c",
+            "fundingInsightId": "FI-9f71fd64de900bbd"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-08e215b4a558df14",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f3b41e7560217e40",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-eda2b18096a24685",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4f4ed78febb7849c",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-659c31fb40a11f16",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3d160246c6fd2687",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2be663431f007250",
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-4a1bc98a833e2bd7",
+            "EN-2be663431f007250"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-08e215b4a558df14",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f3b41e7560217e40",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "end_user_application",
+          "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-eda2b18096a24685",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-4a1bc98a833e2bd7",
+            "EN-2be663431f007250"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-659c31fb40a11f16",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3d160246c6fd2687",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2be663431f007250",
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4f4ed78febb7849c",
+          "fundingInsightId": "FI-9f71fd64de900bbd"
+        }
+      ],
+      "entityIds": [
+        "EN-4a1bc98a833e2bd7",
+        "EN-2be663431f007250",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "NEW YORK CITY",
+        "Harmony",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://accessnewswire.com/newsroom/en/computers-technology-and-internet/harmony-raises-34-million-to-reinvent-employee-experience-powered-1193998",
+      "publisher": "accessnewswire.com"
+    },
     {
       "id": "EV-9781e67076f4e06b",
       "dataDate": "2026-07-10",
@@ -63,7 +415,10 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -73,17 +428,23 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "enterprise_software_platform",
             "dimensionName": "产品形态",
-            "name": "企业软件平台"
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "hr_workforce",
             "dimensionName": "应用场景",
-            "name": "人力与员工体验"
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -95,39 +456,57 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "hr_workforce",
           "dimensionName": "应用场景",
-          "name": "人力与员工体验"
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "enterprise_software_platform",
           "dimensionName": "产品形态",
-          "name": "企业软件平台"
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "enterprise_software_platform",
           "dimensionName": "产品形态",
-          "name": "企业软件平台"
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "hr_workforce",
           "dimensionName": "应用场景",
-          "name": "人力与员工体验"
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [],
@@ -136,6 +515,320 @@
       "products": [],
       "sourceUrl": "https://tech.eu/2026/07/09/german-ai-workforce-management-startup-sherpa-raises-22m-pre-seed",
       "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-7e1624d7df300713",
+      "dataDate": "2026-06-08",
+      "date": "2026-06-08",
+      "updatedDate": "2026-06-08",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
+      "originalTitle": "Factorial Raises $150M Series D, Reaches $2.5 Billion Valuation to Become One of the Most Valuable AI Scale-Ups in Europe",
+      "subject": "Factorial",
+      "action": "Raises",
+      "object": "$150M Series D, Reaches $2.5 Billion Valuation to Become One of the Most Valuable AI Scale-Ups in Europe",
+      "metrics": [
+        "$150M",
+        "$2.5 billion",
+        "$150 million",
+        "$540 million",
+        "$700 million",
+        "$540M"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-049b3253f4a8e2eb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8981fbab10668449",
+            "fundingInsightId": "FI-086e1c90449a4ba4"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hr",
+            "name": "人力资源",
+            "entityIds": [
+              "EN-049b3253f4a8e2eb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-21e4fafe07291c7e",
+            "fundingInsightId": "FI-086e1c90449a4ba4"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-049b3253f4a8e2eb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4eb31f16a59c3d00",
+            "fundingInsightId": "FI-086e1c90449a4ba4"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [
+              "EN-049b3253f4a8e2eb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-888b67ebaf0af71b",
+            "fundingInsightId": "FI-086e1c90449a4ba4"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-049b3253f4a8e2eb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f44a5fea2353b854",
+            "fundingInsightId": "FI-086e1c90449a4ba4"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-049b3253f4a8e2eb"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-546c67ac03744a11",
+            "fundingInsightId": "FI-086e1c90449a4ba4"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8981fbab10668449",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hr",
+          "name": "人力资源",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-21e4fafe07291c7e",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4eb31f16a59c3d00",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-546c67ac03744a11",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-888b67ebaf0af71b",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f44a5fea2353b854",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8981fbab10668449",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hr",
+          "name": "人力资源",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-21e4fafe07291c7e",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4eb31f16a59c3d00",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-888b67ebaf0af71b",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f44a5fea2353b854",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-049b3253f4a8e2eb"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-546c67ac03744a11",
+          "fundingInsightId": "FI-086e1c90449a4ba4"
+        }
+      ],
+      "entityIds": [
+        "EN-049b3253f4a8e2eb",
+        "EN-2a920347dfcf07a7"
+      ],
+      "entityNames": [
+        "Factorial",
+        "Aina"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+      "publisher": "prnewswire.com"
     },
     {
       "id": "EV-536b7d289e7209c1",
@@ -166,9 +859,16 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "hr_workforce",
             "dimensionName": "应用场景",
-            "name": "人力与员工体验"
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [
+              "EN-61b6bf408b3b086e",
+              "EN-6d51d80daa73eb4a",
+              "EN-a7bea92dbcc37521"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -178,17 +878,31 @@
       "classifications": [
         {
           "dimensionId": "use_case",
-          "id": "hr_workforce",
           "dimensionName": "应用场景",
-          "name": "人力与员工体验"
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-61b6bf408b3b086e",
+            "EN-6d51d80daa73eb4a",
+            "EN-a7bea92dbcc37521"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "hr_workforce",
           "dimensionName": "应用场景",
-          "name": "人力与员工体验"
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-61b6bf408b3b086e",
+            "EN-6d51d80daa73eb4a",
+            "EN-a7bea92dbcc37521"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -226,6 +940,61 @@
     }
   ],
   "entities": [
+    {
+      "id": "EN-2be663431f007250",
+      "name": "Harmony",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2a78dd5feb40a78a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-hr_workforce",
+        "TX-product_form-enterprise_software_platform"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-049b3253f4a8e2eb",
+      "name": "Factorial",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7e1624d7df300713"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-use_case-hr_workforce",
+        "TX-product_form-enterprise_software_platform",
+        "TX-ai_market_subcategory-hr"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-08",
+      "lastSeen": "2026-06-08"
+    },
     {
       "id": "EN-61b6bf408b3b086e",
       "name": "Atomicwork",
@@ -269,29 +1038,6 @@
       "relatedEntityIds": [
         "EN-61b6bf408b3b086e"
       ],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-06-15"
-    },
-    {
-      "id": "EN-9e51ca48d5ecf16f",
-      "name": "AI Workforce Platform",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "First Governed AI Workforce"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-536b7d289e7209c1"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-hr_workforce"
-      ],
-      "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-15"
     },

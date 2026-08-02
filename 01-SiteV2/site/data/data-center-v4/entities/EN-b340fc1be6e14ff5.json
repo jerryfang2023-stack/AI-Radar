@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -51,7 +52,80 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-7706c3c94d5f9b59"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-866a5bb0d801d06b",
+            "fundingInsightId": "FI-813b364f86679f0d"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "consumer_retail",
+            "name": "消费与零售",
+            "entityIds": [
+              "EN-7706c3c94d5f9b59"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-98aae49a7dfa239b",
+            "fundingInsightId": "FI-813b364f86679f0d"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-7706c3c94d5f9b59"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e14d18ea35eedf75",
+            "fundingInsightId": "FI-813b364f86679f0d"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-7706c3c94d5f9b59"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-93bc557b355f8f83",
+            "fundingInsightId": "FI-813b364f86679f0d"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-7706c3c94d5f9b59"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5eb2ca6a535d3a20",
+            "fundingInsightId": "FI-813b364f86679f0d"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-7706c3c94d5f9b59"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7548973307957485",
+            "fundingInsightId": "FI-813b364f86679f0d"
+          }
+        ],
         "entityIds": [
           "EN-b340fc1be6e14ff5",
           "EN-7706c3c94d5f9b59"

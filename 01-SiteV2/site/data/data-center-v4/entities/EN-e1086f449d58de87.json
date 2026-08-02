@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -27,8 +28,7 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-use_case-physical_automation",
-      "TX-technology-embodied_ai",
-      "TX-technology-on_device"
+      "TX-technology-embodied_ai"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-31",
@@ -61,15 +61,27 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "物理自动化"
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-e1086f449d58de87"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "embodied_ai",
-            "name": "具身智能"
+            "name": "具身智能",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-e1086f449d58de87"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -90,21 +102,52 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "physical_automation",
             "dimensionName": "应用场景",
-            "name": "物理自动化"
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b",
+              "EN-e1086f449d58de87"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "on_device",
-            "name": "端侧"
+            "name": "端侧",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "deployment_model",
-            "id": "edge_device",
             "dimensionName": "部署形态",
-            "name": "边缘与端侧"
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -127,9 +170,18 @@
       "eventIds": [
         "EV-e9e30789854cd180",
         "EV-eb881f5de456b59a",
+        "EV-c7ba7b093a1a3b94",
         "EV-fcf3c464260b6730",
+        "EV-4e1d2d6105d09d24",
         "EV-869c9ea96c58873d",
+        "EV-80e54c9a390da293",
+        "EV-52bf48005db3461a",
         "EV-9fa9822969d3c3fd",
+        "EV-236cbc2d64f0c455",
+        "EV-9486e14e99499e3b",
+        "EV-ef7346378fcf9746",
+        "EV-59882383f82f215d",
+        "EV-cded77b1de2db61a",
         "EV-cafe435ddd007821",
         "EV-434dcf1813a84ead",
         "EV-f059fd80d668c6bc",
@@ -182,71 +234,65 @@
       ],
       "entityIds": [
         "EN-b73a9d7b59c9b674",
-        "EN-7ef08ef63597d47c",
-        "EN-4e0a97cb956fb1c6",
-        "EN-8f71c4871a160172",
-        "EN-b51b27d89f9ea747",
-        "EN-96eebba49dbbf422",
-        "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-80d387ccb3289295",
-        "EN-6f21a653c48f4f19",
-        "EN-4dbe391b8fcf977a",
+        "EN-7ef08ef63597d47c",
+        "EN-ed9980025e312ded",
+        "EN-4e0a97cb956fb1c6",
+        "EN-8d4321d936320802",
+        "EN-6b5df3bd8bb0c67d",
+        "EN-b51b27d89f9ea747",
+        "EN-05f6ecf01ac4ebec",
+        "EN-e78bdebae031095b",
+        "EN-883be863cc6562bb",
+        "EN-a83a3af1a4866fd5",
+        "EN-59ae856cd788d0f5",
         "EN-3b39ea849059759f",
-        "EN-bbdefa2950f49882",
         "EN-3cce50ffb12f1a69",
-        "EN-7f3b46226f059ca9",
-        "EN-2fef5ec9ee75cc2e",
         "EN-3e14bbbb0445c2de",
         "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
-        "EN-aa75c47729b4a292",
-        "EN-8147e6fed86d42c1",
         "EN-2b6e51bec93e86c1",
         "EN-e1086f449d58de87",
+        "EN-4d09c69c19f5f67b",
         "EN-364df82f85761d58",
+        "EN-bbdefa2950f49882",
         "EN-8d57f84bd1847b24",
         "EN-febedfcafee9d610",
         "EN-0bd85984211bd173",
         "EN-240389f4b730bad4",
-        "EN-8c9ab5b09bf138fc",
-        "EN-f53212e480f217e1",
+        "EN-4cbf88b0da5d15f8",
         "EN-593d0361124f348f",
         "EN-843e746333671ab1",
         "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
         "EN-68dce3237e10d795",
-        "EN-9b07ac3374166b76",
         "EN-0e6e48aba1669631",
         "EN-d77c36c05230024c",
         "EN-be548deba4a093d7",
-        "EN-9c8ae69b84f21a2e",
+        "EN-53874092e000069b",
         "EN-f0da91960830b394",
-        "EN-505ff8a27618ef39",
         "EN-c51e27d8efcff21f",
         "EN-dbd6a2f6ddb95ca7",
-        "EN-954dc5d6516f127c",
         "EN-e07654c7cc29acbd",
         "EN-e3b1bf3dab957ffe",
-        "EN-cbc62794911ff31b",
-        "EN-a1b0d8a938903dc7",
         "EN-29e1f755865493a8",
+        "EN-cbc62794911ff31b",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
         "EN-8afd897b5b887b06",
         "EN-4d8ee3ec190ebf35",
+        "EN-920510199770f4d6",
         "EN-994f9b7ac2d11473",
         "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
         "EN-4e7e886400fe6a83",
         "EN-75fe8aaf5a7e3a7e",
-        "EN-6fcba5d96a4fadfd",
+        "EN-7d5f17368c04f04c",
         "EN-0d049cd1e9f619f9",
         "EN-7f6333102da9e8bd",
         "EN-5e1fcba4c9f1cf69",
         "EN-7d3194f79e645c42",
-        "EN-94ff75465b1afa65",
         "EN-42375a8003f17c95",
         "EN-171fa23d27b5894b",
         "EN-80ea42a231357d12",
@@ -267,7 +313,7 @@
         "HW-0ebffabe51a60966",
         "HW-dca442211b264bbe"
       ],
-      "firstSeen": "2026-05-24",
+      "firstSeen": "2026-03-13",
       "lastSeen": "2026-08-02"
     },
     {
@@ -277,7 +323,6 @@
       "typeLabel": "技术",
       "valueId": "embodied_ai",
       "eventIds": [
-        "EV-00514c4ffc2e3cd3",
         "EV-fcf3c464260b6730",
         "EV-43b56d49df9a73a2",
         "EV-5bfbab92b22b68f1",
@@ -307,47 +352,36 @@
         "EV-08f736f61f2b46f3"
       ],
       "entityIds": [
-        "EN-2e334bb8de4eac34",
-        "EN-047364b9be67f665",
-        "EN-9c8ae69b84f21a2e",
         "EN-7ef08ef63597d47c",
         "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
         "EN-59ae856cd788d0f5",
         "EN-0f3360879e746531",
-        "EN-80d387ccb3289295",
         "EN-240389f4b730bad4",
-        "EN-54119b996a352cba",
         "EN-c70eca6b0f88f44d",
         "EN-1f1cfc1d441be41f",
-        "EN-aa75c47729b4a292",
-        "EN-8147e6fed86d42c1",
-        "EN-96eebba49dbbf422",
         "EN-2b6e51bec93e86c1",
         "EN-e1086f449d58de87",
         "EN-364df82f85761d58",
         "EN-b47de584b4515427",
+        "EN-4cbf88b0da5d15f8",
         "EN-149ae7e9819a17a0",
-        "EN-985e1a7c957148f9",
         "EN-02865db849986974",
         "EN-8d57f84bd1847b24",
-        "EN-be548deba4a093d7",
-        "EN-4dbe391b8fcf977a",
         "EN-0e6e48aba1669631",
-        "EN-954dc5d6516f127c",
         "EN-e07654c7cc29acbd",
         "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
-        "EN-7a3ecc54829211df",
         "EN-30081094f2a8c83d",
+        "EN-d558e1de958b9d05",
         "EN-67f2d22514622d1b",
         "EN-7f6333102da9e8bd",
         "EN-89e3f0711b76932c",
         "EN-e9830c30bc572802",
-        "EN-d3c20bd565303d39",
         "EN-5e1fcba4c9f1cf69",
         "EN-7d3194f79e645c42",
-        "EN-94ff75465b1afa65"
+        "EN-94ff75465b1afa65",
+        "EN-80d387ccb3289295"
       ],
       "fdeIds": [
         "FDE-becc5964d9b5f86c",
@@ -363,93 +397,6 @@
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "TX-technology-on_device",
-      "name": "端侧",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "on_device",
-      "eventIds": [
-        "EV-a15da1b52d939967",
-        "EV-736404028b8ad33e",
-        "EV-d5c00f302e1f808c",
-        "EV-7263caa45bbf168e",
-        "EV-7a0f201debe99f2b",
-        "EV-79913a2e72f0269b",
-        "EV-a5efa57f3f744425",
-        "EV-04efb4eecbb8125f",
-        "EV-8a9b12665a3e40a0",
-        "EV-712bb6241160c4c5",
-        "EV-f7b60c0c63403f8c",
-        "EV-e28e134345ea5f99",
-        "EV-a736c6c64d106475",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-c5b8faec223a4caf",
-        "EV-4026c95d4c01b96e",
-        "EV-0e2a68efc19bfbaa",
-        "EV-0597e07d7e73051a",
-        "EV-08f736f61f2b46f3",
-        "EV-02186ed7885f68fe",
-        "EV-8692dfde7c3ef5b5",
-        "EV-5613946bdd578a26",
-        "EV-848bdd13f319c516",
-        "EV-dd902b603e2e3dbc",
-        "EV-7d4b4b8d4e3599d4",
-        "EV-f4876d2e1a20d87b"
-      ],
-      "entityIds": [
-        "EN-a35b80cf9d171015",
-        "EN-48bebf25e5bd5aca",
-        "EN-dca6ec9510fc0176",
-        "EN-8147e6fed86d42c1",
-        "EN-968e2d5b08687bf4",
-        "EN-16fd849ce27f115b",
-        "EN-8d4321d936320802",
-        "EN-f5791343a13abc71",
-        "EN-9fbf261b62c1d7c0",
-        "EN-2b6e51bec93e86c1",
-        "EN-e1086f449d58de87",
-        "EN-e21783b898b55a31",
-        "EN-7a2f2aafb073c74e",
-        "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
-        "EN-bbdefa2950f49882",
-        "EN-1229af0aa3b0305e",
-        "EN-81e577740888ca6d",
-        "EN-3a7bd3e2360a3d29",
-        "EN-b81c8201acfc7639",
-        "EN-c608c4787821de1b",
-        "EN-6f21a653c48f4f19",
-        "EN-12a81529bba89666",
-        "EN-2c348893efb2316e",
-        "EN-44a9bf3b11abea5c",
-        "EN-de6b71bf77ff4299",
-        "EN-c4ef31845ea79710",
-        "EN-96eebba49dbbf422",
-        "EN-ce635c4eabff5e4f",
-        "EN-f8ceb65dd1764cd4",
-        "EN-af3ceabbe048a291",
-        "EN-047364b9be67f665",
-        "EN-dd920a8cd166f486",
-        "EN-c70eca6b0f88f44d",
-        "EN-41dcc2d4951f337b",
-        "EN-1dc405a4cda895d0",
-        "EN-e07654c7cc29acbd",
-        "EN-c3ce0cc92b48bbd6",
-        "EN-54ef981ab82586b5",
-        "EN-80d387ccb3289295",
-        "EN-0899bccb1b028521",
-        "EN-22797805eb45b722",
-        "EN-b7dac8ddfad3bea8",
-        "EN-6f7ac1823da81d2e",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-31"
     }
   ],
   "fde": [],
@@ -478,7 +425,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
-          "name": "具身智能"
+          "name": "具身智能",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-e1086f449d58de87"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-deepmind-unveils-gemini-robotics-2-to-power-robots-of-all-shapes-from-tabletop-arms-to-humanoids",
@@ -592,7 +545,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "embodied_ai",
-          "name": "具身智能"
+          "name": "具身智能",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-e1086f449d58de87"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://the-decoder.com/google-deepmind-unveils-gemini-robotics-2-to-power-robots-of-all-shapes-from-tabletop-arms-to-humanoids",
@@ -669,7 +628,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "on_device",
-          "name": "端侧"
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",

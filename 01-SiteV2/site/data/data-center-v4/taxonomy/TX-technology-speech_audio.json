@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -31,26 +32,23 @@
       "EV-631dce4dc135d01b"
     ],
     "entityIds": [
-      "EN-bbdefa2950f49882",
       "EN-7ad34701224a4d2d",
-      "EN-2b6e51bec93e86c1",
+      "EN-bbdefa2950f49882",
       "EN-ba8a9b6ce159cd8c",
       "EN-916a98f0fa2a39af",
       "EN-047364b9be67f665",
       "EN-ec1c8f558ff61e34",
       "EN-0b0c3b228202ab0a",
       "EN-bae152c4560df38c",
-      "EN-3a7bd3e2360a3d29",
-      "EN-e0bab6f6c58bfe4e",
       "EN-afe83c198e329ef2",
       "EN-0aa590cbbdb3835a",
       "EN-2b78da3dc866654e",
+      "EN-3a7bd3e2360a3d29",
       "EN-8d4321d936320802",
       "EN-12ab68e37d104d27",
-      "EN-8395dc051feafc4c",
+      "EN-2b6e51bec93e86c1",
+      "EN-4d09c69c19f5f67b",
       "EN-085598c00f2aaccf",
-      "EN-a3c3b987b09fc1bb",
-      "EN-2c348893efb2316e",
       "EN-ed501d3e2d977553",
       "EN-c8d65b5463695c98",
       "EN-f8bebacc033880dd",
@@ -87,7 +85,36 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-7ad34701224a4d2d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-7ad34701224a4d2d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-7ad34701224a4d2d",
+            "EN-ba8a9b6ce159cd8c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -98,9 +125,27 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "content_creation",
             "dimensionName": "应用场景",
-            "name": "内容创作"
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-7ad34701224a4d2d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-bbdefa2950f49882",
+              "EN-7ad34701224a4d2d",
+              "EN-ba8a9b6ce159cd8c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -112,27 +157,99 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "content_creation",
-          "dimensionName": "应用场景",
-          "name": "内容创作"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "content_creation",
-          "dimensionName": "应用场景",
-          "name": "内容创作"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-7ad34701224a4d2d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-7ad34701224a4d2d",
+            "EN-ba8a9b6ce159cd8c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-7ad34701224a4d2d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-7ad34701224a4d2d",
+            "EN-ba8a9b6ce159cd8c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-7ad34701224a4d2d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-7ad34701224a4d2d",
+            "EN-ba8a9b6ce159cd8c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-7ad34701224a4d2d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-7ad34701224a4d2d",
+            "EN-ba8a9b6ce159cd8c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -204,7 +321,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -222,7 +344,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -230,7 +357,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-916a98f0fa2a39af"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -269,7 +401,26 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-047364b9be67f665",
+            "EN-ec1c8f558ff61e34",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ec1c8f558ff61e34",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -287,7 +438,26 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-047364b9be67f665",
+            "EN-ec1c8f558ff61e34",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ec1c8f558ff61e34",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -295,7 +465,26 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-047364b9be67f665",
+            "EN-ec1c8f558ff61e34",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ec1c8f558ff61e34",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -346,7 +535,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bae152c4560df38c",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -356,9 +551,15 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bae152c4560df38c",
+              "EN-0b0c3b228202ab0a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -371,27 +572,51 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bae152c4560df38c",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bae152c4560df38c",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bae152c4560df38c",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-bae152c4560df38c",
+            "EN-0b0c3b228202ab0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -442,13 +667,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -458,17 +693,49 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-afe83c198e329ef2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-e0bab6f6c58bfe4e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "content_creation",
             "dimensionName": "应用场景",
-            "name": "内容创作"
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-afe83c198e329ef2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-e0bab6f6c58bfe4e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -480,51 +747,135 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "content_creation",
           "dimensionName": "应用场景",
-          "name": "内容创作"
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e0bab6f6c58bfe4e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-e0bab6f6c58bfe4e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-e0bab6f6c58bfe4e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "content_creation",
           "dimensionName": "应用场景",
-          "name": "内容创作"
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-e0bab6f6c58bfe4e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-afe83c198e329ef2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -584,7 +935,27 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-0aa590cbbdb3835a",
+            "EN-2b78da3dc866654e",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-0aa590cbbdb3835a",
+            "EN-2b78da3dc866654e",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -602,7 +973,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-0aa590cbbdb3835a",
+            "EN-2b78da3dc866654e",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -610,7 +988,14 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-0aa590cbbdb3835a",
+            "EN-2b78da3dc866654e",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -653,13 +1038,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -677,13 +1074,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -691,13 +1100,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -748,19 +1169,53 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "code_generation",
-          "name": "代码生成"
+          "name": "代码生成",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -771,9 +1226,16 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "software_development",
             "dimensionName": "应用场景",
-            "name": "软件开发"
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b",
+              "EN-085598c00f2aaccf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -785,51 +1247,107 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "code_generation",
-          "name": "代码生成"
+          "name": "代码生成",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "software_development",
           "dimensionName": "应用场景",
-          "name": "软件开发"
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "software_development",
           "dimensionName": "应用场景",
-          "name": "软件开发"
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "multimodal",
-          "name": "多模态"
+          "name": "多模态",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "code_generation",
-          "name": "代码生成"
+          "name": "代码生成",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-085598c00f2aaccf"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -896,7 +1414,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ed501d3e2d977553"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -914,7 +1437,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ed501d3e2d977553"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -922,7 +1450,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-ed501d3e2d977553"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -971,7 +1504,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-c8d65b5463695c98"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -989,7 +1527,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-c8d65b5463695c98"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -997,7 +1540,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-c8d65b5463695c98"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1040,7 +1588,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-f8bebacc033880dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1051,9 +1604,14 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "content_creation",
             "dimensionName": "应用场景",
-            "name": "内容创作"
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-f8bebacc033880dd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -1065,27 +1623,47 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-f8bebacc033880dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "content_creation",
           "dimensionName": "应用场景",
-          "name": "内容创作"
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-f8bebacc033880dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "content_creation",
           "dimensionName": "应用场景",
-          "name": "内容创作"
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-f8bebacc033880dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-f8bebacc033880dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1130,7 +1708,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-b2968d9ba72f4818"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1141,9 +1724,14 @@
         "use_case": [
           {
             "dimensionId": "use_case",
-            "id": "content_creation",
             "dimensionName": "应用场景",
-            "name": "内容创作"
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-b2968d9ba72f4818"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "industry": [],
@@ -1155,27 +1743,47 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-b2968d9ba72f4818"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
-          "id": "content_creation",
           "dimensionName": "应用场景",
-          "name": "内容创作"
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-b2968d9ba72f4818"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "use_case",
-          "id": "content_creation",
           "dimensionName": "应用场景",
-          "name": "内容创作"
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-b2968d9ba72f4818"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-b2968d9ba72f4818"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1191,6 +1799,28 @@
     }
   ],
   "entities": [
+    {
+      "id": "EN-7ad34701224a4d2d",
+      "name": "Lyria 3.5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6b0106ef4a79df05"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-30",
+      "lastSeen": "2026-07-30"
+    },
     {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
@@ -1363,33 +1993,43 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
         "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-security_software",
         "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
+        "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-8d323d8bba783aa3",
@@ -1414,102 +2054,6 @@
       "lastSeen": "2026-08-02"
     },
     {
-      "id": "EN-7ad34701224a4d2d",
-      "name": "Lyria 3.5",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6b0106ef4a79df05"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-30",
-      "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "EN-2b6e51bec93e86c1",
-      "name": "Google DeepMind",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "DeepMind"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6f092cfc7a064d64",
-        "EV-d4e44892226be468",
-        "EV-1ac32035d5e425e1",
-        "EV-19ebde6e2de35fc9",
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-d961d3ad02f6ae14",
-        "EV-eb12fb9dd08e5aad",
-        "EV-7a0f201debe99f2b",
-        "EV-60110525440fac47",
-        "EV-6b0106ef4a79df05",
-        "EV-5f2acbfb8f54fd59",
-        "EV-59229486408edb05",
-        "EV-6654f62015eff8e3",
-        "EV-7c6a9f4ee4829976",
-        "EV-93c6ccf23cc422cb",
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-011eeba13ebcc9a8",
-        "EV-8eed6489ab514823",
-        "EV-3ef3e18df61a00d8",
-        "EV-568d2aeab5234e48",
-        "EV-f68e00bb9fd49fac",
-        "EV-d46aa5935d9bb672",
-        "EV-3e9a0d1be6de5096",
-        "EV-e96aba142e46eba1",
-        "EV-d49da50484ba781f",
-        "EV-81e297ea6f8fde3b",
-        "EV-68edd592c36dccd3"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-technology-vision_language",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_discovery",
-        "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
-        "TX-technology-reasoning",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [
-        "EN-18f0900d6c487f59",
-        "EN-92af3ce2fb97edf3",
-        "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
-      ],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-02"
-    },
-    {
       "id": "EN-ba8a9b6ce159cd8c",
       "name": "Flow Music",
       "entityType": "product_candidate",
@@ -1524,8 +2068,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-30",
@@ -1560,8 +2104,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
+        "TX-product_form-model",
         "TX-use_case-software_development",
+        "TX-deployment_model-hybrid",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-model_context_protocol",
         "TX-technology-tool_use",
@@ -1642,18 +2189,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-technology-computer_use",
-        "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-ai_device",
         "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-image_generation",
         "TX-technology-video_generation",
         "TX-technology-speech_audio"
       ],
@@ -1713,6 +2254,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
@@ -1738,12 +2280,82 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-image_generation",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-afe83c198e329ef2",
+      "name": "Pixel",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-99e5df844a1bd670"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-content_creation",
+        "TX-product_form-model",
+        "TX-technology-multimodal",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-06-17"
+    },
+    {
+      "id": "EN-0aa590cbbdb3835a",
+      "name": "可检测 AI 音乐",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dad8c827d14f2799"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-06-12"
+    },
+    {
+      "id": "EN-2b78da3dc866654e",
+      "name": "Spotify",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-20dea13a4e6100ea",
+        "EV-113899096a32165a",
+        "EV-a0d3853dd41c8ef6",
+        "EV-dad8c827d14f2799"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
@@ -1835,21 +2447,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
         "TX-industry-manufacturing",
-        "TX-technology-multimodal",
-        "TX-industry-aerospace_defense",
-        "TX-industry-retail_ecommerce",
+        "TX-product_form-model",
         "TX-industry-food_hospitality",
-        "TX-technology-long_context",
         "TX-technology-on_device",
-        "TX-technology-fine_tuning",
-        "TX-industry-media_entertainment",
+        "TX-deployment_model-edge_device",
         "TX-technology-tool_use",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation",
-        "TX-technology-quantization"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-e463d05a14e8697f",
@@ -1862,98 +2467,6 @@
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-26"
-    },
-    {
-      "id": "EN-e0bab6f6c58bfe4e",
-      "name": "Android 17",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-99e5df844a1bd670"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-17",
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "id": "EN-afe83c198e329ef2",
-      "name": "Pixel",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-99e5df844a1bd670"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-17",
-      "lastSeen": "2026-06-17"
-    },
-    {
-      "id": "EN-0aa590cbbdb3835a",
-      "name": "可检测 AI 音乐",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-dad8c827d14f2799"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-12",
-      "lastSeen": "2026-06-12"
-    },
-    {
-      "id": "EN-2b78da3dc866654e",
-      "name": "Spotify",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-20dea13a4e6100ea",
-        "EV-113899096a32165a",
-        "EV-a0d3853dd41c8ef6",
-        "EV-dad8c827d14f2799"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-model_context_protocol",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-12",
-      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -2107,34 +2620,48 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-multimodal",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
         "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_application-chips",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-technology-multimodal",
+        "TX-product_form-security_software",
+        "TX-industry-telecommunications",
+        "TX-industry-logistics_supply_chain",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
-        "TX-technology-retrieval_augmented_generation",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
-        "TX-technology-image_generation",
-        "TX-technology-inference_optimization",
-        "TX-technology-guardrails_safety",
-        "TX-industry-telecommunications",
-        "TX-industry-media_entertainment",
-        "TX-industry-agriculture",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
-        "TX-technology-speech_audio",
-        "TX-technology-distillation"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
@@ -2190,31 +2717,78 @@
       "lastSeen": "2026-06-06"
     },
     {
-      "id": "EN-8395dc051feafc4c",
-      "name": "Nemotron",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "DeepMind"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-c2800c1c5a3f568f",
-        "EV-2258329f33d413cf",
-        "EV-4bf0e4043c3562f2"
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-19ebde6e2de35fc9",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-eb12fb9dd08e5aad",
+        "EV-7a0f201debe99f2b",
+        "EV-60110525440fac47",
+        "EV-6b0106ef4a79df05",
+        "EV-5f2acbfb8f54fd59",
+        "EV-59229486408edb05",
+        "EV-6654f62015eff8e3",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-011eeba13ebcc9a8",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-d46aa5935d9bb672",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-d49da50484ba781f",
+        "EV-81e297ea6f8fde3b",
+        "EV-68edd592c36dccd3"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
-        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-use_case-research_discovery",
+        "TX-technology-vision_language",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-technology-image_generation",
+        "TX-technology-video_generation",
         "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
-        "EN-8d4321d936320802"
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
       ],
-      "firstSeen": "2026-06-05",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-085598c00f2aaccf",
@@ -2232,6 +2806,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -2243,69 +2818,6 @@
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-a3c3b987b09fc1bb",
-      "name": "Gemma 4 12B",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Gemma 4 12"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-f68e00bb9fd49fac"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-2b6e51bec93e86c1"
-      ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-06-04"
-    },
-    {
-      "id": "EN-2c348893efb2316e",
-      "name": "StepFun",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "阶跃星辰"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-584212d254d882bc",
-        "EV-ca223f2a929b67a2",
-        "EV-2c1fc2143d7d4a6a",
-        "EV-3edf153477310ffc",
-        "EV-6824e76c4aa69a71",
-        "EV-ee363e679d12329c",
-        "EV-712bb6241160c4c5",
-        "EV-d99037f2ed8db897"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-on_device",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-44a9bf3b11abea5c",
-        "EN-ed501d3e2d977553"
-      ],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-20"
     },
     {
       "id": "EN-ed501d3e2d977553",
@@ -2366,8 +2878,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-21",
@@ -2388,8 +2900,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
+        "TX-use_case-content_creation",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-04",

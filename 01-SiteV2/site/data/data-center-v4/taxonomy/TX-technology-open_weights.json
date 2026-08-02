@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -40,36 +41,25 @@
       "EN-c70eca6b0f88f44d",
       "EN-8d4321d936320802",
       "EN-9fbf261b62c1d7c0",
-      "EN-bbdefa2950f49882",
       "EN-b5251b35f15bedc4",
       "EN-88ab1e5d793701f9",
       "EN-c3e64a321c2caaf7",
       "EN-6fa4c159cb389f0f",
-      "EN-6b61eab266a42eb0",
       "EN-845153a713bc1643",
       "EN-ca231d0c3ae59041",
       "EN-cc70f504af53013a",
       "EN-ea3bd73e2b506e00",
-      "EN-d9352ce019e77ab3",
       "EN-bc1fc5140040180e",
       "EN-0d1e478de2157d48",
-      "EN-6f7ac1823da81d2e",
+      "EN-4546b5bdff2ea8ed",
       "EN-047364b9be67f665",
       "EN-0f553f48551aef83",
       "EN-d41ebd9f02722fc8",
       "EN-10556ee2cee94c72",
-      "EN-f8c237773fe24a98",
-      "EN-307eacb628358e7b",
-      "EN-2b5e92d1908d42f6",
-      "EN-3ae50afab3e392b8",
       "EN-b3e3bce83d29e787",
-      "EN-8950d72f381130ac",
       "EN-f7a386a451b79627",
       "EN-12ab68e37d104d27",
-      "EN-8395dc051feafc4c",
-      "EN-7f871cbf905f6e0c",
-      "EN-c608c4787821de1b",
-      "EN-9c8ae69b84f21a2e"
+      "EN-6ac6ad44bb9995ca"
     ],
     "fdeIds": [
       "FDE-a8fea104d63ff671"
@@ -110,89 +100,387 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-240389f4b730bad4",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bbf045f7165aed94",
+            "fundingInsightId": "FI-e3285dae836c1fb5"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e24834eaacb762c3",
+            "fundingInsightId": "FI-e3285dae836c1fb5"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_deployment",
+            "name": "模型部署",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e131ee71c16d8b54",
+            "fundingInsightId": "FI-e3285dae836c1fb5"
+          }
+        ],
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "ai_infrastructure_software",
             "dimensionName": "产品形态",
-            "name": "AI 基础设施软件"
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-39141fce83aae33a",
+            "fundingInsightId": "FI-e3285dae836c1fb5"
           },
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-240389f4b730bad4",
+              "EN-7d3194f79e645c42",
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
-        "use_case": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4b276bc3b7461775",
+            "fundingInsightId": "FI-e3285dae836c1fb5"
+          }
+        ],
         "industry": [],
         "deployment_model": [],
         "target_user": [
           {
             "dimensionId": "target_user",
-            "id": "developer",
             "dimensionName": "目标用户",
-            "name": "开发者"
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-240389f4b730bad4"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-564adcd20301bf4b",
+            "fundingInsightId": "FI-e3285dae836c1fb5"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-240389f4b730bad4",
+              "EN-7d3194f79e645c42",
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ]
       },
       "classifications": [
         {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_deployment",
+          "name": "模型部署",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e131ee71c16d8b54",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bbf045f7165aed94",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e24834eaacb762c3",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
         },
         {
           "dimensionId": "product_form",
-          "id": "ai_infrastructure_software",
           "dimensionName": "产品形态",
-          "name": "AI 基础设施软件"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-39141fce83aae33a",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
         },
         {
           "dimensionId": "target_user",
-          "id": "developer",
           "dimensionName": "目标用户",
-          "name": "开发者"
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-564adcd20301bf4b",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b276bc3b7461775",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-240389f4b730bad4",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-240389f4b730bad4",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-240389f4b730bad4",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
-          "dimensionId": "product_form",
-          "id": "ai_infrastructure_software",
-          "dimensionName": "产品形态",
-          "name": "AI 基础设施软件"
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bbf045f7165aed94",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e24834eaacb762c3",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_deployment",
+          "name": "模型部署",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e131ee71c16d8b54",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-39141fce83aae33a",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-240389f4b730bad4",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b276bc3b7461775",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-240389f4b730bad4",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "target_user",
-          "id": "developer",
           "dimensionName": "目标用户",
-          "name": "开发者"
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-240389f4b730bad4"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-564adcd20301bf4b",
+          "fundingInsightId": "FI-e3285dae836c1fb5"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-240389f4b730bad4",
+            "EN-7d3194f79e645c42",
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -237,7 +525,40 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-b5251b35f15bedc4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -255,7 +576,27 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-b5251b35f15bedc4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -263,7 +604,27 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-b5251b35f15bedc4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -312,7 +673,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-88ab1e5d793701f9",
+            "EN-c3e64a321c2caaf7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-88ab1e5d793701f9",
+            "EN-c3e64a321c2caaf7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -322,9 +701,15 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-88ab1e5d793701f9",
+              "EN-c3e64a321c2caaf7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -337,27 +722,51 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-88ab1e5d793701f9",
+            "EN-c3e64a321c2caaf7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-88ab1e5d793701f9",
+            "EN-c3e64a321c2caaf7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-88ab1e5d793701f9",
+            "EN-c3e64a321c2caaf7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-88ab1e5d793701f9",
+            "EN-c3e64a321c2caaf7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -406,7 +815,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-6fa4c159cb389f0f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-6fa4c159cb389f0f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -424,7 +851,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-6fa4c159cb389f0f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -432,7 +865,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d",
+            "EN-6fa4c159cb389f0f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -483,7 +922,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-845153a713bc1643",
+            "EN-ca231d0c3ae59041"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -501,7 +946,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-845153a713bc1643",
+            "EN-ca231d0c3ae59041"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -509,7 +960,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-845153a713bc1643",
+            "EN-ca231d0c3ae59041"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -563,13 +1020,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "distillation",
-          "name": "模型蒸馏"
+          "name": "模型蒸馏",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -581,15 +1048,25 @@
         "industry": [
           {
             "dimensionId": "industry",
-            "id": "healthcare_life_sciences",
             "dimensionName": "行业",
-            "name": "医疗与生命科学"
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-cc70f504af53013a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "industry",
-            "id": "agriculture",
             "dimensionName": "行业",
-            "name": "农业"
+            "id": "agriculture",
+            "name": "农业",
+            "entityIds": [
+              "EN-cc70f504af53013a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "deployment_model": [],
@@ -600,25 +1077,45 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "distillation",
-          "name": "模型蒸馏"
+          "name": "模型蒸馏",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
+          "dimensionName": "行业",
           "id": "healthcare_life_sciences",
-          "dimensionName": "行业",
-          "name": "医疗与生命科学"
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
-          "id": "agriculture",
           "dimensionName": "行业",
-          "name": "农业"
+          "id": "agriculture",
+          "name": "农业",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -626,25 +1123,45 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "distillation",
-          "name": "模型蒸馏"
+          "name": "模型蒸馏",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
+          "dimensionName": "行业",
           "id": "healthcare_life_sciences",
-          "dimensionName": "行业",
-          "name": "医疗与生命科学"
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "industry",
-          "id": "agriculture",
           "dimensionName": "行业",
-          "name": "农业"
+          "id": "agriculture",
+          "name": "农业",
+          "entityIds": [
+            "EN-cc70f504af53013a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -689,13 +1206,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "distillation",
-          "name": "模型蒸馏"
+          "name": "模型蒸馏",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -713,13 +1240,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "distillation",
-          "name": "模型蒸馏"
+          "name": "模型蒸馏",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -727,13 +1264,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "distillation",
-          "name": "模型蒸馏"
+          "name": "模型蒸馏",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -776,13 +1323,23 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -792,9 +1349,15 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-d9352ce019e77ab3",
+              "EN-bc1fc5140040180e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -807,39 +1370,71 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-d9352ce019e77ab3",
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-d9352ce019e77ab3",
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -900,25 +1495,53 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "mixture_of_experts",
-          "name": "混合专家模型"
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -936,25 +1559,53 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "mixture_of_experts",
-          "name": "混合专家模型"
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -962,25 +1613,53 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "mixture_of_experts",
-          "name": "混合专家模型"
+          "name": "混合专家模型",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-0d1e478de2157d48",
+            "EN-8d4321d936320802",
+            "EN-4546b5bdff2ea8ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1033,7 +1712,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-047364b9be67f665",
+            "EN-0f553f48551aef83"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1051,7 +1736,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-047364b9be67f665",
+            "EN-0f553f48551aef83"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1059,7 +1750,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-047364b9be67f665",
+            "EN-0f553f48551aef83"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1117,13 +1814,73 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "fine_tuning",
-          "name": "模型微调"
+          "name": "模型微调",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1141,13 +1898,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "fine_tuning",
-          "name": "模型微调"
+          "name": "模型微调",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1155,13 +1924,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "fine_tuning",
-          "name": "模型微调"
+          "name": "模型微调",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8",
+            "EN-10556ee2cee94c72"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1230,7 +2011,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1240,9 +2026,14 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "model",
             "dimensionName": "产品形态",
-            "name": "模型"
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-3ae50afab3e392b8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -1255,27 +2046,47 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3ae50afab3e392b8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "model",
           "dimensionName": "产品形态",
-          "name": "模型"
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3ae50afab3e392b8"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1324,7 +2135,12 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-b3e3bce83d29e787"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1334,9 +2150,14 @@
         "product_form": [
           {
             "dimensionId": "product_form",
-            "id": "chip_accelerator",
             "dimensionName": "产品形态",
-            "name": "芯片与加速器"
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-b3e3bce83d29e787"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "use_case": [],
@@ -1344,9 +2165,14 @@
         "deployment_model": [
           {
             "dimensionId": "deployment_model",
-            "id": "on_premise",
             "dimensionName": "部署形态",
-            "name": "本地部署"
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-b3e3bce83d29e787"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "target_user": []
@@ -1356,39 +2182,69 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-b3e3bce83d29e787"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "product_form",
-          "id": "chip_accelerator",
           "dimensionName": "产品形态",
-          "name": "芯片与加速器"
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-b3e3bce83d29e787"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "deployment_model",
-          "id": "on_premise",
           "dimensionName": "部署形态",
-          "name": "本地部署"
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-b3e3bce83d29e787"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
         {
           "dimensionId": "product_form",
-          "id": "chip_accelerator",
           "dimensionName": "产品形态",
-          "name": "芯片与加速器"
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-b3e3bce83d29e787"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-b3e3bce83d29e787"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "deployment_model",
-          "id": "on_premise",
           "dimensionName": "部署形态",
-          "name": "本地部署"
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-b3e3bce83d29e787"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1449,7 +2305,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-f7a386a451b79627",
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1467,7 +2329,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-f7a386a451b79627",
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1475,7 +2343,13 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-f7a386a451b79627",
+            "EN-bc1fc5140040180e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1522,13 +2396,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1546,13 +2432,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1560,13 +2458,25 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "speech_audio",
-          "name": "语音与音频"
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-12ab68e37d104d27"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1619,19 +2529,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "facets": {
@@ -1649,19 +2574,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -1669,19 +2609,34 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "agentic_execution",
-          "name": "智能体"
+          "name": "智能体",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "long_context",
-          "name": "长上下文"
+          "name": "长上下文",
+          "entityIds": [
+            "EN-6ac6ad44bb9995ca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -1751,11 +2706,21 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-developer",
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-ai_market_application-model_deployment",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
         "TX-use_case-software_development",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
         "TX-technology-open_weights",
         "TX-technology-human_in_loop"
       ],
@@ -2048,37 +3013,42 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
         "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-industry-financial_services",
+        "TX-industry-professional_services",
         "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-use_case-research_discovery",
         "TX-industry-legal_services",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-industry-professional_services",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-7839fb10a8f14c70",
@@ -2382,33 +3352,48 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-education",
+        "TX-target_user-consumer",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
+        "TX-target_user-educator",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-human_in_loop",
-        "TX-technology-distillation",
-        "TX-industry-education"
+        "TX-technology-distillation"
       ],
       "relatedEntityIds": [
         "EN-5a4c2be958c0af72",
@@ -2591,34 +3576,48 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-multimodal",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
         "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_application-chips",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-technology-multimodal",
+        "TX-product_form-security_software",
+        "TX-industry-telecommunications",
+        "TX-industry-logistics_supply_chain",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
-        "TX-technology-retrieval_augmented_generation",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise",
         "TX-technology-fine_tuning",
-        "TX-use_case-research_discovery",
         "TX-technology-open_weights",
-        "TX-technology-image_generation",
-        "TX-technology-inference_optimization",
-        "TX-technology-guardrails_safety",
-        "TX-industry-telecommunications",
-        "TX-industry-media_entertainment",
-        "TX-industry-agriculture",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
-        "TX-technology-speech_audio",
-        "TX-technology-distillation"
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
@@ -2770,30 +3769,33 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
         "TX-industry-automotive_transportation",
-        "TX-use_case-procurement_supply_chain",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
         "TX-industry-professional_services",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-procurement_supply_chain",
+        "TX-technology-mixture_of_experts",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-industry-telecommunications",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -2811,228 +3813,6 @@
       ],
       "firstSeen": "2026-02-13",
       "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "EN-bbdefa2950f49882",
-      "name": "Google",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-9b81b0dd09a046ab",
-        "EV-e41fc65eb014893f",
-        "EV-dfddbb260b3d1c77",
-        "EV-78a11d309c3d4e97",
-        "EV-2bb63a3015195f9b",
-        "EV-43b56d49df9a73a2",
-        "EV-0e84a2f49d765ce3",
-        "EV-dbbe3fd637be213f",
-        "EV-4a162c41bb82f325",
-        "EV-5762fe51987bc5ff",
-        "EV-6cb8979f92cf74ce",
-        "EV-a4b7cd533b0b34dc",
-        "EV-fd329b4350f404ef",
-        "EV-57944eebac69d510",
-        "EV-38232fed5e0cfdd6",
-        "EV-e7b228c1b6b54c6a",
-        "EV-cf76f090a1a20a36",
-        "EV-ff1f6119de13fa19",
-        "EV-cec235426920c522",
-        "EV-051d1924db7ba65d",
-        "EV-777eb5b7783b71fb",
-        "EV-e8bc5b0eebef5813",
-        "EV-f55d16df5b5fecb2",
-        "EV-5a9fe80f8e4ae066",
-        "EV-b4b5d141dac164c2",
-        "EV-6e4dd5111dfaae9c",
-        "EV-36a9e4e908249381",
-        "EV-98496cc86bacb1e0",
-        "EV-ef6464cf7f764835",
-        "EV-b95539d17772a4ce",
-        "EV-d1a3f5c8045e548d",
-        "EV-f949fd95df58d42d",
-        "EV-97747aee0cafd9f3",
-        "EV-c0a65877001ed413",
-        "EV-cf4da5583e9311d7",
-        "EV-ebd76d18d3f0ee7b",
-        "EV-60110525440fac47",
-        "EV-3ebf23c149dde19d",
-        "EV-6b0106ef4a79df05",
-        "EV-a4fe78df6ccd63c8",
-        "EV-395884a4c090103c",
-        "EV-6f26809c0ae960a8",
-        "EV-33e98b8bbd0a11b1",
-        "EV-2634b786bde9fb8e",
-        "EV-6aabfaa0c7c7f838",
-        "EV-c914ac00a35d7cf0",
-        "EV-c9d7b46d167df2d1",
-        "EV-5b193a038ab4ea22",
-        "EV-969923b0b978a660",
-        "EV-6ce069b1845f5a52",
-        "EV-597b8257a97b3d02",
-        "EV-5aaa4c6697606274",
-        "EV-834e65247c2d4a3b",
-        "EV-cc974e0031c69715",
-        "EV-cd067fa6f39fe828",
-        "EV-dc3a5509a690a6b0",
-        "EV-f3cc0845ce442e6b",
-        "EV-636c0bb7661201cc",
-        "EV-fe4eeb733d1682ed",
-        "EV-a255cfc0dab44564",
-        "EV-98a80b75b27d9f3b",
-        "EV-29e069ac093f0e34",
-        "EV-62feeb8f8791c63c",
-        "EV-8fbe211e9d4bae03",
-        "EV-04efb4eecbb8125f",
-        "EV-6359c9f6c2609a38",
-        "EV-a442b55d0bac5651",
-        "EV-49d9029bdcf87db4",
-        "EV-c2d784ef0a5376f8",
-        "EV-967239f907803753",
-        "EV-ac8f8581cd1ca75d",
-        "EV-f05783f745bc7c2c",
-        "EV-2cd95ab95d0f2ad9",
-        "EV-52508b70ccd2cc0b",
-        "EV-71226eeff6dc7c42",
-        "EV-d12aa40eff40c97e",
-        "EV-9254af7aaedaafbe",
-        "EV-04ee2bc4ac888358",
-        "EV-96c8ce4ee89adb84",
-        "EV-caec65aef89d3b4a",
-        "EV-cabc88e1d09dec80",
-        "EV-cc3b92fe233953cf",
-        "EV-0edb0a592ca1fd67",
-        "EV-2059f42c7b2aff44",
-        "EV-77662aa9bef9efbe",
-        "EV-7e52d691a0553667",
-        "EV-b8bba030747fd3b6",
-        "EV-8aead769e84de342",
-        "EV-982a92fc86f1d20c",
-        "EV-eddb4330fed15762",
-        "EV-2298304e18dbf493",
-        "EV-89b644ff05e6b93b",
-        "EV-9c4b862020202f6c",
-        "EV-d8c69ed782b73a34",
-        "EV-5012364af7480121",
-        "EV-3acf607a02706fa8",
-        "EV-44ae3e7fda9320dc",
-        "EV-abf0990dcaceb1ce",
-        "EV-d5cc9a50a9b88d2b",
-        "EV-6225d18316f90a0d",
-        "EV-b860d46fee913f27",
-        "EV-011eeba13ebcc9a8",
-        "EV-8a26b85b4f432525",
-        "EV-3f23ddb47fc652a4",
-        "EV-a886a800f06ab9d6",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-43a5b874a66b42b3",
-        "EV-c108e7cc2df7faf4",
-        "EV-916bcaee6266e0d0",
-        "EV-54c329f4c8e4227b",
-        "EV-c3cbf5d7f860c693",
-        "EV-009105cbcf82a638",
-        "EV-99e5df844a1bd670",
-        "EV-1b03e5dff76a50a1",
-        "EV-51dfd0d541380500",
-        "EV-ab3586268ebfab38",
-        "EV-b4f3dcac8cc230d9",
-        "EV-d2d1834222ab32d3",
-        "EV-8eed6489ab514823",
-        "EV-22b8d155ce027905",
-        "EV-3ef3e18df61a00d8",
-        "EV-4bb5b24400e49ea4",
-        "EV-0ad758b04b9b5313",
-        "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-5a1422a9929c582e",
-        "EV-bff418b2959f58fb",
-        "EV-a591b0c96f79de45",
-        "EV-5493c61bcbe58aa2",
-        "EV-cac9d9f31ef675ce",
-        "EV-dab4d3f2059e8880",
-        "EV-342799d4e68e7416",
-        "EV-d53cd33e8f541a65",
-        "EV-a4f052325d0ef230",
-        "EV-cb3cb11ff13f6069",
-        "EV-8115dd18f2812a29",
-        "EV-0e9f000dd04fe04c",
-        "EV-5bfcc506994f103f",
-        "EV-909cf18b467d6fdf",
-        "EV-89bdda008227fb6b",
-        "EV-ef823877347ff40f",
-        "EV-3e9a0d1be6de5096",
-        "EV-848bdd13f319c516",
-        "EV-8cd7665e40729256",
-        "EV-2d56dec8dfeb2b56",
-        "EV-1b92b6c835ce240c",
-        "EV-8925c94e9a1c5f03",
-        "EV-6950bb00a0913038",
-        "EV-392894a7cc673b9e",
-        "EV-ad269fada2269f35",
-        "EV-6fba63ca5f1e51c7",
-        "EV-1df9b606627460f7",
-        "EV-7580a050ca19a8ae",
-        "EV-39460c022e56badd",
-        "EV-ecfc552af7344d65"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-model_context_protocol",
-        "TX-technology-image_generation",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-speech_audio",
-        "TX-use_case-content_creation"
-      ],
-      "relatedEntityIds": [
-        "EN-8d323d8bba783aa3",
-        "EN-18f0900d6c487f59",
-        "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
-        "EN-81e577740888ca6d",
-        "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
-        "EN-40f98159922ab514",
-        "EN-9ff1a58a589bc318",
-        "EN-01f1074bb52ff605",
-        "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
-        "EN-2998f8b13f4fd72e",
-        "EN-b5c336c0dd1ff29c",
-        "EN-d56aa2f9908f566a",
-        "EN-4baef0e41cbd7ae2",
-        "EN-bdfecbcd7dbf76d2"
-      ],
-      "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-b5251b35f15bedc4",
@@ -3070,13 +3850,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-developer",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
-        "TX-technology-long_context",
-        "TX-technology-retrieval_augmented_generation",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [
@@ -3104,6 +3887,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-developer",
+        "TX-target_user-business_user",
+        "TX-industry-financial_services",
+        "TX-product_form-model",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
@@ -3126,6 +3919,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
@@ -3152,27 +3946,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-28",
       "lastSeen": "2026-07-28"
-    },
-    {
-      "id": "EN-6b61eab266a42eb0",
-      "name": "快手KwaiKAT",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ca18725115b61bd3"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-26",
-      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-845153a713bc1643",
@@ -3232,8 +4005,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
-        "TX-technology-open_weights",
         "TX-industry-agriculture",
+        "TX-technology-open_weights",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [],
@@ -3317,20 +4090,22 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-model_api_service",
         "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
         "TX-industry-manufacturing",
+        "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-technology-computer_use",
-        "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-industry-aerospace_defense",
+        "TX-product_form-developer_tool",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-technology-guardrails_safety",
-        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-distillation"
@@ -3347,33 +4122,6 @@
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "EN-d9352ce019e77ab3",
-      "name": "Hugging Face",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-fe519605ebb69aaf",
-        "EV-7c836c34e7cf36ee",
-        "EV-ae1e2769aff82965",
-        "EV-9eb3693cc65fbca9",
-        "EV-39460c022e56badd"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-security_operations",
-        "TX-technology-long_context",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-08",
-      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-bc1fc5140040180e",
@@ -3395,6 +4143,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-technology-long_context",
         "TX-technology-open_weights"
       ],
@@ -3429,67 +4178,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "EN-6f7ac1823da81d2e",
-      "name": "DeepSeek",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-87432dbb99cd6033",
-        "EV-d4d7b019ff0015df",
-        "EV-27b69ea604475b72",
-        "EV-f8c3a83d883c9b22",
-        "EV-6374a712070b1f8c",
-        "EV-b27f2e417d779e5f",
-        "EV-8f2787ceb5224cc9",
-        "EV-f01a57b8fbd2518e",
-        "EV-5b193a038ab4ea22",
-        "EV-2fea1664807824ce",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-4e54b77583b0a83e",
-        "EV-f8ba1728de6a4899",
-        "EV-caec65aef89d3b4a",
-        "EV-57e6392fe3bb69cd",
-        "EV-eddb4330fed15762",
-        "EV-2aca9a810ea65555",
-        "EV-a498b12f3fa2197e",
-        "EV-d064939235825765",
-        "EV-6af31d42885e0361",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-4dfd7233c8c69b0b",
-        "EV-657837763764c869",
-        "EV-388a53fe918389b0",
-        "EV-3aefbdfa5df2fd6a",
-        "EV-c14e5185fd6bbe30",
-        "EV-48e17a3ba4b73550",
-        "EV-848bdd13f319c516",
-        "EV-86537be17d50ff20",
-        "EV-b6970cb396a7b1ed"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-quantization"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -3559,18 +4247,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-technology-computer_use",
-        "TX-use_case-software_development",
         "TX-technology-multimodal",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-ai_device",
         "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-image_generation",
         "TX-technology-video_generation",
         "TX-technology-speech_audio"
       ],
@@ -3607,6 +4289,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-model",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [],
@@ -3664,95 +4348,6 @@
       "lastSeen": "2026-07-15"
     },
     {
-      "id": "EN-f8c237773fe24a98",
-      "name": "Self-Serve Inference Deployments",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b84035029a63e52e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-15"
-    },
-    {
-      "id": "EN-307eacb628358e7b",
-      "name": "Serverless Fine-Tuning and Self-Serve Inference Deployments",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b84035029a63e52e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-15"
-    },
-    {
-      "id": "EN-2b5e92d1908d42f6",
-      "name": "Serverless Fine-Tuning",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b84035029a63e52e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-15"
-    },
-    {
-      "id": "EN-3ae50afab3e392b8",
-      "name": "Nemotron-Labs-TwoTower",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-3028dfadf94c8f4c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-04"
-    },
-    {
       "id": "EN-b3e3bce83d29e787",
       "name": "Upbound",
       "entityType": "organization_candidate",
@@ -3767,35 +4362,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-deployment_model-on_premise",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [
         "EN-8950d72f381130ac"
-      ],
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-06-29"
-    },
-    {
-      "id": "EN-8950d72f381130ac",
-      "name": "Modelplane",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Launches Modelplane"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a06011da69abcc3d"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [
-        "EN-b3e3bce83d29e787"
       ],
       "firstSeen": "2026-06-23",
       "lastSeen": "2026-06-29"
@@ -3846,174 +4418,6 @@
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-06-06"
-    },
-    {
-      "id": "EN-8395dc051feafc4c",
-      "name": "Nemotron",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c2800c1c5a3f568f",
-        "EV-2258329f33d413cf",
-        "EV-4bf0e4043c3562f2"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-open_weights",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-06-05",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-7f871cbf905f6e0c",
-      "name": "OpenRouter",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-cf6e7a2edad82c6f",
-        "EV-0e84a2f49d765ce3",
-        "EV-caec65aef89d3b4a",
-        "EV-ab3586268ebfab38",
-        "EV-86537be17d50ff20"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-security_operations",
-        "TX-technology-long_context",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [
-        "EN-779965438dd9e7a7"
-      ],
-      "firstSeen": "2026-06-08",
-      "lastSeen": "2026-07-19"
-    },
-    {
-      "id": "EN-c608c4787821de1b",
-      "name": "Xiaomi",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "小米"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-53f08daddd011dbb",
-        "EV-3353bd96728c99e2",
-        "EV-8a9b12665a3e40a0",
-        "EV-28145c97a7237d6d",
-        "EV-c6629f97e4bb1aa8",
-        "EV-564f3df8d487ca6f",
-        "EV-634ce5b42f6d32f6",
-        "EV-f5dd192f6d4e04a3",
-        "EV-3aefbdfa5df2fd6a",
-        "EV-8692dfde7c3ef5b5",
-        "EV-86537be17d50ff20",
-        "EV-dd902b603e2e3dbc"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-technology-multimodal",
-        "TX-technology-long_context",
-        "TX-technology-on_device",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [
-        "EN-101a515191c6be9e",
-        "EN-ddf9916b459b6d77"
-      ],
-      "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-25"
-    },
-    {
-      "id": "EN-9c8ae69b84f21a2e",
-      "name": "腾讯",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Tencent"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-00514c4ffc2e3cd3",
-        "EV-d3054a8a2b62a503",
-        "EV-87432dbb99cd6033",
-        "EV-427081ec574b43bb",
-        "EV-acaf06b262d9c3db",
-        "EV-27b69ea604475b72",
-        "EV-da9bb2c98c1ce8cd",
-        "EV-afcd5426f5c01dc7",
-        "EV-619e33abf3f9bfbf",
-        "EV-be2f6bfcad93c42f",
-        "EV-c7b81290859057b0",
-        "EV-f13c302dc067850b",
-        "EV-c710c75d9c823a49",
-        "EV-59fb7ba1fd6ac55e",
-        "EV-aa25937649956e62",
-        "EV-86ab9c2f1416e9d8",
-        "EV-c5a59cb4cc9d7e8e",
-        "EV-e193a3848673e3ba",
-        "EV-3167e6eed75597e9",
-        "EV-9e35de25113a9269",
-        "EV-ad2e4fe6a149d95d",
-        "EV-c2f5b59db9912018",
-        "EV-57e6392fe3bb69cd",
-        "EV-1a073cd22d1bfa59",
-        "EV-a498b12f3fa2197e",
-        "EV-c11ee0da38376254",
-        "EV-6a6ff349579765ad",
-        "EV-7ff24ae733821395",
-        "EV-86537be17d50ff20",
-        "EV-6b7917bd7edd4bde",
-        "EV-e70b2c66b996d138",
-        "EV-8b4f7844af234ed8",
-        "EV-fc8b280e83232d6f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
-        "TX-technology-vision_language",
-        "TX-technology-long_context",
-        "TX-technology-open_weights",
-        "TX-industry-media_entertainment"
-      ],
-      "relatedEntityIds": [
-        "EN-a1adb91065c5a347",
-        "EN-f0da91960830b394",
-        "EN-ea3bd73e2b506e00",
-        "EN-be1a3c9420d88ea5",
-        "EN-30a63b26b06e096e"
-      ],
-      "firstSeen": "2026-05-18",
-      "lastSeen": "2026-08-01"
     }
   ],
   "fde": [
@@ -4052,7 +4456,40 @@
           "dimensionId": "technology",
           "dimensionName": "技术",
           "id": "open_weights",
-          "name": "开放权重"
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-b5251b35f15bedc4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-9fbf261b62c1d7c0",
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",

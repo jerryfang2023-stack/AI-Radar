@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -56,9 +57,14 @@
         "displayTags": [
           {
             "dimensionId": "industry",
-            "id": "agriculture",
             "dimensionName": "行业",
-            "name": "农业"
+            "id": "agriculture",
+            "name": "农业",
+            "entityIds": [
+              "EN-963cd73004547f84"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -78,20 +84,34 @@
       "typeLabel": "行业",
       "valueId": "agriculture",
       "eventIds": [
+        "EV-e31a6bf3c0a979f8",
+        "EV-7817dc69d5228cbb",
+        "EV-561e2028a6212b99",
+        "EV-9fc8916c19c19f99",
+        "EV-e579af588ad8cf64",
+        "EV-b0ed8d5a37784214",
+        "EV-3b40ec144e5db22c",
+        "EV-c46e427fedbf518d",
         "EV-01b003fbae67ae91",
         "EV-0f0b2013927ce156",
         "EV-1add9dad81afe82a"
       ],
       "entityIds": [
+        "EN-2dcd958b2064843f",
+        "EN-e69f64149edae6b1",
+        "EN-19a5848a577315c5",
+        "EN-f96246b78ef26d59",
+        "EN-2b81d85809794782",
+        "EN-7ea76c82c786a5e1",
+        "EN-e4540a7c8404b1be",
+        "EN-eafe895eb8119e6e",
         "EN-0bd36bfd4d80867c",
-        "EN-2a920347dfcf07a7",
         "EN-cc70f504af53013a",
-        "EN-8d4321d936320802",
         "EN-963cd73004547f84"
       ],
       "fdeIds": [],
       "hardwareIds": [],
-      "firstSeen": "2026-06-19",
+      "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-26"
     }
   ],

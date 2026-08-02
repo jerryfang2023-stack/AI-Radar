@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -26,7 +27,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-industry-education"
+      "TX-target_user-educator"
     ],
     "relatedEntityIds": [
       "EN-c70eca6b0f88f44d"
@@ -63,15 +64,27 @@
         "displayTags": [
           {
             "dimensionId": "target_user",
-            "id": "educator",
             "dimensionName": "目标用户",
-            "name": "教师"
+            "id": "educator",
+            "name": "教师",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d",
+              "EN-ef11a801c5bd3673",
+              "EN-729324072d368379"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "industry",
-            "id": "education",
             "dimensionName": "行业",
-            "name": "教育"
+            "id": "education",
+            "name": "教育",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -93,9 +106,16 @@
         "displayTags": [
           {
             "dimensionId": "target_user",
-            "id": "educator",
             "dimensionName": "目标用户",
-            "name": "教师"
+            "id": "educator",
+            "name": "教师",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d",
+              "EN-ef11a801c5bd3673",
+              "EN-729324072d368379"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -383,33 +403,48 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution",
-        "TX-use_case-customer_support",
-        "TX-use_case-security_operations",
-        "TX-technology-code_generation",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-aerospace_defense",
-        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-education",
+        "TX-target_user-consumer",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-fine_tuning",
+        "TX-target_user-educator",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-human_in_loop",
-        "TX-technology-distillation",
-        "TX-industry-education"
+        "TX-technology-distillation"
       ],
       "relatedEntityIds": [
         "EN-5a4c2be958c0af72",
@@ -482,22 +517,25 @@
   ],
   "taxonomyNodes": [
     {
-      "id": "TX-industry-education",
-      "name": "教育",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "education",
+      "id": "TX-target_user-educator",
+      "name": "教师",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "educator",
       "eventIds": [
-        "EV-84226288807f817b"
+        "EV-8eb0acb180b7ad9d",
+        "EV-84226288807f817b",
+        "EV-0347414d81e7f02e"
       ],
       "entityIds": [
+        "EN-53b69ef92c836777",
         "EN-c70eca6b0f88f44d",
         "EN-ef11a801c5bd3673",
         "EN-729324072d368379"
       ],
       "fdeIds": [],
       "hardwareIds": [],
-      "firstSeen": "2026-07-15",
+      "firstSeen": "2026-06-01",
       "lastSeen": "2026-07-15"
     }
   ],

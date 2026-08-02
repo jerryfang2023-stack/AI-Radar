@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -51,11 +52,85 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "推理初创公司Infinity获Touring Capital、OpenAI及Anthropic研究人员投资1500万美元",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-53982b85c02841f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3083a4b4c6229bdd",
+            "fundingInsightId": "FI-c706cbd83381f803"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-53982b85c02841f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3d6285b6a72bd65d",
+            "fundingInsightId": "FI-c706cbd83381f803"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "ai_development_orchestration",
+            "name": "AI 开发与编排",
+            "entityIds": [
+              "EN-53982b85c02841f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fb807dac823ac306",
+            "fundingInsightId": "FI-c706cbd83381f803"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "developer_tool",
+            "name": "开发者工具",
+            "entityIds": [
+              "EN-53982b85c02841f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-700f3aebb0080615",
+            "fundingInsightId": "FI-c706cbd83381f803"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-53982b85c02841f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-10e0b0752a79bdc1",
+            "fundingInsightId": "FI-c706cbd83381f803"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-53982b85c02841f2"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-062d3ab16f3f195b",
+            "fundingInsightId": "FI-c706cbd83381f803"
+          }
+        ],
         "entityIds": [
           "EN-a0c0caae05f5e70a",
           "EN-7d3194f79e645c42",
-          "EN-c70eca6b0f88f44d"
+          "EN-c70eca6b0f88f44d",
+          "EN-53982b85c02841f2"
         ]
       }
     ],

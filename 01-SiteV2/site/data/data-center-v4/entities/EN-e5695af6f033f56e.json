@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -56,9 +57,15 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "knowledge_search",
             "dimensionName": "应用场景",
-            "name": "知识与搜索"
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-e5695af6f033f56e",
+              "EN-d1ad14d4ad57d207"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -79,24 +86,55 @@
       "typeLabel": "应用场景",
       "valueId": "knowledge_search",
       "eventIds": [
+        "EV-00514c4ffc2e3cd3",
+        "EV-2dff88f85e3bce86",
+        "EV-0d4e656aa51f9a46",
+        "EV-4da1a7c4d527eb69",
+        "EV-7a85e21802efd8b2",
+        "EV-2bb63a3015195f9b",
+        "EV-4f7462a365561bb5",
+        "EV-f54ec32c67e9447c",
+        "EV-14a666fc27d73a80",
+        "EV-e3382d1c1d7db751",
+        "EV-30466ebe86779a64",
+        "EV-b348083270be6c65",
+        "EV-85506f9f86779a6d",
+        "EV-4c247b02485de09b",
+        "EV-e579af588ad8cf64",
+        "EV-44a4e92c03a31ab1",
         "EV-b925f50b55d3aa00",
         "EV-702ed039940800fb",
         "EV-26c1248692fdcc10",
         "EV-ae4561a4a9ebe17f"
       ],
       "entityIds": [
+        "EN-2e334bb8de4eac34",
+        "EN-770ef1d2b6e24172",
+        "EN-2dc010636b9dce91",
+        "EN-ae1eae1d76e5b7c8",
+        "EN-3eee4f30151db45a",
+        "EN-cfd62617fdedfdf4",
+        "EN-858b4458c482f7d2",
+        "EN-e23228440ca5340f",
+        "EN-4abc3bd0f9e75c63",
+        "EN-ee1e31ffef7dbe64",
+        "EN-a9aff9e0737a5d4a",
+        "EN-1c5483264189feef",
+        "EN-c04bd5ebd10ab696",
+        "EN-b10da733dff99be1",
+        "EN-2b81d85809794782",
+        "EN-ce65fa41b16c33ff",
         "EN-e5695af6f033f56e",
         "EN-d1ad14d4ad57d207",
-        "EN-3f726694f178ed7a",
         "EN-45e0ade11fed1e44",
-        "EN-d8fbfdb6a8143da8",
-        "EN-b81c8201acfc7639",
+        "EN-82eaaba81d9dcc54",
+        "EN-b42e5eda1d1a3720",
         "EN-9a6ee79873b1fb7b"
       ],
       "fdeIds": [],
       "hardwareIds": [],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-08-01"
     }
   ],
   "fde": [],

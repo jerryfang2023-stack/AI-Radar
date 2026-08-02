@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -28,7 +29,6 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-model_context_protocol",
       "TX-technology-speech_audio"
     ],
     "relatedEntityIds": [],
@@ -79,9 +79,14 @@
         "displayTags": [
           {
             "dimensionId": "target_user",
-            "id": "consumer",
             "dimensionName": "目标用户",
-            "name": "个人用户"
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-2d0943142ffe9b0f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -105,7 +110,14 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "model_context_protocol",
-            "name": "MCP"
+            "name": "MCP",
+            "entityIds": [
+              "EN-7d3194f79e645c42",
+              "EN-178e3a5167e8e1d5",
+              "EN-bd2bfbea5911ec7a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -131,7 +143,14 @@
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "speech_audio",
-            "name": "语音与音频"
+            "name": "语音与音频",
+            "entityIds": [
+              "EN-0aa590cbbdb3835a",
+              "EN-2b78da3dc866654e",
+              "EN-3a7bd3e2360a3d29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -146,60 +165,6 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
-    {
-      "id": "TX-technology-model_context_protocol",
-      "name": "MCP",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "model_context_protocol",
-      "eventIds": [
-        "EV-ed8260ee9a7a80af",
-        "EV-a2c13c14efec9218",
-        "EV-49fcb200a72f0024",
-        "EV-33292a33d0f4d599",
-        "EV-b3a050d576cea2f2",
-        "EV-48a7437742aff5c5",
-        "EV-a0d3853dd41c8ef6",
-        "EV-7449d239223d4928",
-        "EV-266aff97294156f6",
-        "EV-1035aa9cbde79b2f",
-        "EV-fd3d52afb49f026b",
-        "EV-8115dd18f2812a29",
-        "EV-8cb5b0ed18c7cdd8",
-        "EV-2cc379df19a83062",
-        "EV-8b36007d0b5f377f",
-        "EV-ff374e781601bfc7",
-        "EV-9c41acd6ef6df77f"
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-e6483498af8bd2cd",
-        "EN-08b6a35be337edce",
-        "EN-9fbf261b62c1d7c0",
-        "EN-d2f4e09cb01afa3c",
-        "EN-e473f24d4325d51a",
-        "EN-33a6331aaa822714",
-        "EN-7d3194f79e645c42",
-        "EN-178e3a5167e8e1d5",
-        "EN-3db1f560db626918",
-        "EN-2b78da3dc866654e",
-        "EN-af53dbc3e443f7a9",
-        "EN-916a98f0fa2a39af",
-        "EN-d6d6e4e33c59b45e",
-        "EN-caf559f7830b566f",
-        "EN-7d1507284a5757ca",
-        "EN-761a66c29a55bc53",
-        "EN-3aa7606e6aa345a3",
-        "EN-bbdefa2950f49882",
-        "EN-e69f64149edae6b1",
-        "EN-f90aec90acf3dc85",
-        "EN-5504f88c63fe766d"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2025-11-17",
-      "lastSeen": "2026-07-30"
-    },
     {
       "id": "TX-technology-speech_audio",
       "name": "语音与音频",
@@ -221,26 +186,23 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
-        "EN-bbdefa2950f49882",
         "EN-7ad34701224a4d2d",
-        "EN-2b6e51bec93e86c1",
+        "EN-bbdefa2950f49882",
         "EN-ba8a9b6ce159cd8c",
         "EN-916a98f0fa2a39af",
         "EN-047364b9be67f665",
         "EN-ec1c8f558ff61e34",
         "EN-0b0c3b228202ab0a",
         "EN-bae152c4560df38c",
-        "EN-3a7bd3e2360a3d29",
-        "EN-e0bab6f6c58bfe4e",
         "EN-afe83c198e329ef2",
         "EN-0aa590cbbdb3835a",
         "EN-2b78da3dc866654e",
+        "EN-3a7bd3e2360a3d29",
         "EN-8d4321d936320802",
         "EN-12ab68e37d104d27",
-        "EN-8395dc051feafc4c",
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
         "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb",
-        "EN-2c348893efb2316e",
         "EN-ed501d3e2d977553",
         "EN-c8d65b5463695c98",
         "EN-f8bebacc033880dd",

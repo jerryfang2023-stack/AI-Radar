@@ -1,0 +1,804 @@
+[
+  {
+    "reviewed_classification_id": "REC-b9206d2d64366908",
+    "event_id": "EV-0e84a2f49d765ce3",
+    "decision_event_id": "EV-0e84a2f49d765ce3",
+    "entity_id": "EN-7f871cbf905f6e0c",
+    "company_name": "OpenRouter",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-2e5005ab43ef0057",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-0e84a2f49d765ce3",
+    "dimension_id": "ai_market_application",
+    "value_id": "model_deployment",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "edf0b4ebdee733596fea30320a0bacee4aa0b835c93c6d0bad8e4b650030a724"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "60851747c2b46d1a786ad179e2f90de1ec0ce82f93d7d4e4c4ef421eee2fb880"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports.",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "5361c414c2f281801687cba8c8413d0e573cb30f77a45a86aa45cb9d4af5b856"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "e9fdb1f22fa6c417fb731211bd14313e4cf210f74409d966f80a0b068d593df4"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.95,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-3cb6e33a0933f4bd",
+    "event_id": "EV-0e84a2f49d765ce3",
+    "decision_event_id": "EV-0e84a2f49d765ce3",
+    "entity_id": "EN-7f871cbf905f6e0c",
+    "company_name": "OpenRouter",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-2e5005ab43ef0057",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-0e84a2f49d765ce3",
+    "dimension_id": "ai_market_category",
+    "value_id": "infrastructure_compute",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "edf0b4ebdee733596fea30320a0bacee4aa0b835c93c6d0bad8e4b650030a724"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "60851747c2b46d1a786ad179e2f90de1ec0ce82f93d7d4e4c4ef421eee2fb880"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports.",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "5361c414c2f281801687cba8c8413d0e573cb30f77a45a86aa45cb9d4af5b856"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "e9fdb1f22fa6c417fb731211bd14313e4cf210f74409d966f80a0b068d593df4"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.95,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-7a12f188aa58300c",
+    "event_id": "EV-0e84a2f49d765ce3",
+    "decision_event_id": "EV-0e84a2f49d765ce3",
+    "entity_id": "EN-7f871cbf905f6e0c",
+    "company_name": "OpenRouter",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-2e5005ab43ef0057",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-0e84a2f49d765ce3",
+    "dimension_id": "ai_market_subcategory",
+    "value_id": "development_deployment",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "edf0b4ebdee733596fea30320a0bacee4aa0b835c93c6d0bad8e4b650030a724"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "60851747c2b46d1a786ad179e2f90de1ec0ce82f93d7d4e4c4ef421eee2fb880"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports.",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "5361c414c2f281801687cba8c8413d0e573cb30f77a45a86aa45cb9d4af5b856"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "e9fdb1f22fa6c417fb731211bd14313e4cf210f74409d966f80a0b068d593df4"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.95,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-9b07c5190ecb4537",
+    "event_id": "EV-0e84a2f49d765ce3",
+    "decision_event_id": "EV-0e84a2f49d765ce3",
+    "entity_id": "EN-7f871cbf905f6e0c",
+    "company_name": "OpenRouter",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-2e5005ab43ef0057",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-0e84a2f49d765ce3",
+    "dimension_id": "product_form",
+    "value_id": "model_api_service",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "edf0b4ebdee733596fea30320a0bacee4aa0b835c93c6d0bad8e4b650030a724"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "60851747c2b46d1a786ad179e2f90de1ec0ce82f93d7d4e4c4ef421eee2fb880"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports.",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "5361c414c2f281801687cba8c8413d0e573cb30f77a45a86aa45cb9d4af5b856"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "e9fdb1f22fa6c417fb731211bd14313e4cf210f74409d966f80a0b068d593df4"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.95,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-548fd47de33dcda5",
+    "event_id": "EV-0e84a2f49d765ce3",
+    "decision_event_id": "EV-0e84a2f49d765ce3",
+    "entity_id": "EN-7f871cbf905f6e0c",
+    "company_name": "OpenRouter",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-2e5005ab43ef0057",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-0e84a2f49d765ce3",
+    "dimension_id": "target_user",
+    "value_id": "developer",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "edf0b4ebdee733596fea30320a0bacee4aa0b835c93c6d0bad8e4b650030a724"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "60851747c2b46d1a786ad179e2f90de1ec0ce82f93d7d4e4c4ef421eee2fb880"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports.",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "5361c414c2f281801687cba8c8413d0e573cb30f77a45a86aa45cb9d4af5b856"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "e9fdb1f22fa6c417fb731211bd14313e4cf210f74409d966f80a0b068d593df4"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.95,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-e0b2b899a815deda",
+    "event_id": "EV-0e84a2f49d765ce3",
+    "decision_event_id": "EV-0e84a2f49d765ce3",
+    "entity_id": "EN-7f871cbf905f6e0c",
+    "company_name": "OpenRouter",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-2e5005ab43ef0057",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-0e84a2f49d765ce3",
+    "dimension_id": "use_case",
+    "value_id": "software_development",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "OpenRouter, the New York-based AI infrastructure startup that lets developers route a single API call across 400-plus large language models",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "edf0b4ebdee733596fea30320a0bacee4aa0b835c93c6d0bad8e4b650030a724"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "OpenRouter is that layer. We sit between agents and model providers, handling the routing, reliability, cost optimization, and compliance that production AI demands.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "60851747c2b46d1a786ad179e2f90de1ec0ce82f93d7d4e4c4ef421eee2fb880"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "quote": "Developers who want to call Anthropic Claude, Google Gemini, OpenAI GPT, xAI Grok, and DeepSeek's models would ordinarily manage five separate API integrations, five billing accounts, and five sets of rate limits. OpenRouter collapses that complexity: developers point their application at one endpoint, pay one bill, and let the platform handle routing, failover, and optimization across all 400-plus models it supports.",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote_hash": "5361c414c2f281801687cba8c8413d0e573cb30f77a45a86aa45cb9d4af5b856"
+      },
+      {
+        "source_id": "FISRC-7e6bd43593b15d6f",
+        "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+        "quote": "Multimodal inference : Beyond text, OpenRouter now supports image , audio , speech , transcription , embedding , and video models. Enterprise controls : Workspaces , spend management, guardrails , and zero-data-retention policies for organizations deploying AI at scale. Intelligent routing : Provider-level failover, cost and latency optimization, and quality-aware routing that goes beyond simple load balancing.",
+        "source_content_hash": "7ee685953a9cdbd1",
+        "quote_hash": "e9fdb1f22fa6c417fb731211bd14313e4cf210f74409d966f80a0b068d593df4"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.95,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-8981fbab10668449",
+    "event_id": "EV-7e1624d7df300713",
+    "decision_event_id": "EV-7e1624d7df300713",
+    "entity_id": "EN-049b3253f4a8e2eb",
+    "company_name": "Factorial",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-086e1c90449a4ba4",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-7e1624d7df300713",
+    "dimension_id": "ai_market_category",
+    "value_id": "enterprise_applications",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "Factorial, Europe's leading AI Workforce Operations Platform",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "efa8ede25d635055169d56f0ce3aa98a59f85dc565970b36556fe09fc75d3218"
+      },
+      {
+        "source_id": "FISRC-fbc6b3dd930eeb9c",
+        "source_url": "https://factorialhr.com/blog/factorial-raises-150m-series-d-becoming-most-valuable-ai-scale-ups-europe/",
+        "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform",
+        "source_content_hash": "d437065d32388373",
+        "quote_hash": "51fd6b6ee1d9654cbfe478774262426dcbb29864a34cd82d87d9d2c2133d44ab"
+      },
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves.",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "ea1a1f9c381d37d06c1138225ce4178a3f77f156b7054f234ad7f69ff291bd35"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-21e4fafe07291c7e",
+    "event_id": "EV-7e1624d7df300713",
+    "decision_event_id": "EV-7e1624d7df300713",
+    "entity_id": "EN-049b3253f4a8e2eb",
+    "company_name": "Factorial",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-086e1c90449a4ba4",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-7e1624d7df300713",
+    "dimension_id": "ai_market_subcategory",
+    "value_id": "hr",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "Factorial, Europe's leading AI Workforce Operations Platform",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "efa8ede25d635055169d56f0ce3aa98a59f85dc565970b36556fe09fc75d3218"
+      },
+      {
+        "source_id": "FISRC-fbc6b3dd930eeb9c",
+        "source_url": "https://factorialhr.com/blog/factorial-raises-150m-series-d-becoming-most-valuable-ai-scale-ups-europe/",
+        "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform",
+        "source_content_hash": "d437065d32388373",
+        "quote_hash": "51fd6b6ee1d9654cbfe478774262426dcbb29864a34cd82d87d9d2c2133d44ab"
+      },
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves.",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "ea1a1f9c381d37d06c1138225ce4178a3f77f156b7054f234ad7f69ff291bd35"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-4eb31f16a59c3d00",
+    "event_id": "EV-7e1624d7df300713",
+    "decision_event_id": "EV-7e1624d7df300713",
+    "entity_id": "EN-049b3253f4a8e2eb",
+    "company_name": "Factorial",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-086e1c90449a4ba4",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-7e1624d7df300713",
+    "dimension_id": "product_form",
+    "value_id": "enterprise_software_platform",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "Factorial, Europe's leading AI Workforce Operations Platform",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "efa8ede25d635055169d56f0ce3aa98a59f85dc565970b36556fe09fc75d3218"
+      },
+      {
+        "source_id": "FISRC-fbc6b3dd930eeb9c",
+        "source_url": "https://factorialhr.com/blog/factorial-raises-150m-series-d-becoming-most-valuable-ai-scale-ups-europe/",
+        "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform",
+        "source_content_hash": "d437065d32388373",
+        "quote_hash": "51fd6b6ee1d9654cbfe478774262426dcbb29864a34cd82d87d9d2c2133d44ab"
+      },
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves.",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "ea1a1f9c381d37d06c1138225ce4178a3f77f156b7054f234ad7f69ff291bd35"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-546c67ac03744a11",
+    "event_id": "EV-7e1624d7df300713",
+    "decision_event_id": "EV-7e1624d7df300713",
+    "entity_id": "EN-049b3253f4a8e2eb",
+    "company_name": "Factorial",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-086e1c90449a4ba4",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-7e1624d7df300713",
+    "dimension_id": "target_user",
+    "value_id": "business_user",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "Factorial, Europe's leading AI Workforce Operations Platform",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "efa8ede25d635055169d56f0ce3aa98a59f85dc565970b36556fe09fc75d3218"
+      },
+      {
+        "source_id": "FISRC-fbc6b3dd930eeb9c",
+        "source_url": "https://factorialhr.com/blog/factorial-raises-150m-series-d-becoming-most-valuable-ai-scale-ups-europe/",
+        "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform",
+        "source_content_hash": "d437065d32388373",
+        "quote_hash": "51fd6b6ee1d9654cbfe478774262426dcbb29864a34cd82d87d9d2c2133d44ab"
+      },
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves.",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "ea1a1f9c381d37d06c1138225ce4178a3f77f156b7054f234ad7f69ff291bd35"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-888b67ebaf0af71b",
+    "event_id": "EV-7e1624d7df300713",
+    "decision_event_id": "EV-7e1624d7df300713",
+    "entity_id": "EN-049b3253f4a8e2eb",
+    "company_name": "Factorial",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-086e1c90449a4ba4",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-7e1624d7df300713",
+    "dimension_id": "use_case",
+    "value_id": "hr_workforce",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "Factorial, Europe's leading AI Workforce Operations Platform",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "efa8ede25d635055169d56f0ce3aa98a59f85dc565970b36556fe09fc75d3218"
+      },
+      {
+        "source_id": "FISRC-fbc6b3dd930eeb9c",
+        "source_url": "https://factorialhr.com/blog/factorial-raises-150m-series-d-becoming-most-valuable-ai-scale-ups-europe/",
+        "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform",
+        "source_content_hash": "d437065d32388373",
+        "quote_hash": "51fd6b6ee1d9654cbfe478774262426dcbb29864a34cd82d87d9d2c2133d44ab"
+      },
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves.",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "ea1a1f9c381d37d06c1138225ce4178a3f77f156b7054f234ad7f69ff291bd35"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-f44a5fea2353b854",
+    "event_id": "EV-7e1624d7df300713",
+    "decision_event_id": "EV-7e1624d7df300713",
+    "entity_id": "EN-049b3253f4a8e2eb",
+    "company_name": "Factorial",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-086e1c90449a4ba4",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-7e1624d7df300713",
+    "dimension_id": "use_case",
+    "value_id": "productivity_enterprise_workflows",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "Factorial, Europe's leading AI Workforce Operations Platform",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "efa8ede25d635055169d56f0ce3aa98a59f85dc565970b36556fe09fc75d3218"
+      },
+      {
+        "source_id": "FISRC-fbc6b3dd930eeb9c",
+        "source_url": "https://factorialhr.com/blog/factorial-raises-150m-series-d-becoming-most-valuable-ai-scale-ups-europe/",
+        "quote": "transitioning from a traditional software as a service model into an AI Workforce Operations Platform",
+        "source_content_hash": "d437065d32388373",
+        "quote_hash": "51fd6b6ee1d9654cbfe478774262426dcbb29864a34cd82d87d9d2c2133d44ab"
+      },
+      {
+        "source_id": "FISRC-e9a8d571db654fd4",
+        "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
+        "quote": "At the center of that architecture is Factorial One, the platform's unified workspace, built around a deliberately simple two-agent model. One agent represents the organisation, holding and applying the policies a company defines across HR, finance and IT. The other represents the individual employee, multiplying what each person can do within those policies, drafting work, surfacing what they need, and executing tasks on their behalf with full accountability to the person it serves.",
+        "source_content_hash": "11af7531d19b66f0",
+        "quote_hash": "ea1a1f9c381d37d06c1138225ce4178a3f77f156b7054f234ad7f69ff291bd35"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.9,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-92a53e581f7a8892",
+    "event_id": "EV-e8d1de5c77f32b9c",
+    "decision_event_id": "EV-e8d1de5c77f32b9c",
+    "entity_id": "EN-67e05af6c6502566",
+    "company_name": "Graphon AI",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-1c8cdad540bbac47",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-e8d1de5c77f32b9c",
+    "dimension_id": "ai_market_application",
+    "value_id": "data_preparation_curation",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-cde1ec652771f171",
+        "source_url": "https://startuprise.io/graphon-ai-raises-8-3m-in-seed-funding/",
+        "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+        "source_content_hash": "facb0c84a664f360",
+        "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
+      },
+      {
+        "source_id": "FISRC-4c5668270b4cb456",
+        "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+        "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+        "source_content_hash": "d4c067cbdae72c67",
+        "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+        "source_content_hash": "941bad55959a928e",
+        "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.85,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-0669920834676fe8",
+    "event_id": "EV-e8d1de5c77f32b9c",
+    "decision_event_id": "EV-e8d1de5c77f32b9c",
+    "entity_id": "EN-67e05af6c6502566",
+    "company_name": "Graphon AI",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-1c8cdad540bbac47",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-e8d1de5c77f32b9c",
+    "dimension_id": "ai_market_category",
+    "value_id": "infrastructure_compute",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-cde1ec652771f171",
+        "source_url": "https://startuprise.io/graphon-ai-raises-8-3m-in-seed-funding/",
+        "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+        "source_content_hash": "facb0c84a664f360",
+        "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
+      },
+      {
+        "source_id": "FISRC-4c5668270b4cb456",
+        "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+        "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+        "source_content_hash": "d4c067cbdae72c67",
+        "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+        "source_content_hash": "941bad55959a928e",
+        "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.85,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-e564f539be63b7a7",
+    "event_id": "EV-e8d1de5c77f32b9c",
+    "decision_event_id": "EV-e8d1de5c77f32b9c",
+    "entity_id": "EN-67e05af6c6502566",
+    "company_name": "Graphon AI",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-1c8cdad540bbac47",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-e8d1de5c77f32b9c",
+    "dimension_id": "ai_market_subcategory",
+    "value_id": "data",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-cde1ec652771f171",
+        "source_url": "https://startuprise.io/graphon-ai-raises-8-3m-in-seed-funding/",
+        "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+        "source_content_hash": "facb0c84a664f360",
+        "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
+      },
+      {
+        "source_id": "FISRC-4c5668270b4cb456",
+        "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+        "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+        "source_content_hash": "d4c067cbdae72c67",
+        "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+        "source_content_hash": "941bad55959a928e",
+        "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.85,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-4398868ca7d5258d",
+    "event_id": "EV-e8d1de5c77f32b9c",
+    "decision_event_id": "EV-e8d1de5c77f32b9c",
+    "entity_id": "EN-67e05af6c6502566",
+    "company_name": "Graphon AI",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-1c8cdad540bbac47",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-e8d1de5c77f32b9c",
+    "dimension_id": "product_form",
+    "value_id": "ai_infrastructure_software",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-cde1ec652771f171",
+        "source_url": "https://startuprise.io/graphon-ai-raises-8-3m-in-seed-funding/",
+        "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+        "source_content_hash": "facb0c84a664f360",
+        "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
+      },
+      {
+        "source_id": "FISRC-4c5668270b4cb456",
+        "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+        "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+        "source_content_hash": "d4c067cbdae72c67",
+        "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+        "source_content_hash": "941bad55959a928e",
+        "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.85,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-4a0d3f3366523c93",
+    "event_id": "EV-e8d1de5c77f32b9c",
+    "decision_event_id": "EV-e8d1de5c77f32b9c",
+    "entity_id": "EN-67e05af6c6502566",
+    "company_name": "Graphon AI",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-1c8cdad540bbac47",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-e8d1de5c77f32b9c",
+    "dimension_id": "target_user",
+    "value_id": "business_user",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-cde1ec652771f171",
+        "source_url": "https://startuprise.io/graphon-ai-raises-8-3m-in-seed-funding/",
+        "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+        "source_content_hash": "facb0c84a664f360",
+        "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
+      },
+      {
+        "source_id": "FISRC-4c5668270b4cb456",
+        "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+        "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+        "source_content_hash": "d4c067cbdae72c67",
+        "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+        "source_content_hash": "941bad55959a928e",
+        "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.85,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-4f5d1f51ba79a501",
+    "event_id": "EV-e8d1de5c77f32b9c",
+    "decision_event_id": "EV-e8d1de5c77f32b9c",
+    "entity_id": "EN-67e05af6c6502566",
+    "company_name": "Graphon AI",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-1c8cdad540bbac47",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-e8d1de5c77f32b9c",
+    "dimension_id": "target_user",
+    "value_id": "developer",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-cde1ec652771f171",
+        "source_url": "https://startuprise.io/graphon-ai-raises-8-3m-in-seed-funding/",
+        "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+        "source_content_hash": "facb0c84a664f360",
+        "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
+      },
+      {
+        "source_id": "FISRC-4c5668270b4cb456",
+        "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+        "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+        "source_content_hash": "d4c067cbdae72c67",
+        "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+        "source_content_hash": "941bad55959a928e",
+        "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.85,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  },
+  {
+    "reviewed_classification_id": "REC-189be2161f18afd4",
+    "event_id": "EV-e8d1de5c77f32b9c",
+    "decision_event_id": "EV-e8d1de5c77f32b9c",
+    "entity_id": "EN-67e05af6c6502566",
+    "company_name": "Graphon AI",
+    "company_resolution": "declared_entity_exact",
+    "funding_insight_id": "FI-1c8cdad540bbac47",
+    "decision_ref": "taxonomy-decisions-v4-1.json#EV-e8d1de5c77f32b9c",
+    "dimension_id": "use_case",
+    "value_id": "data_analysis",
+    "evidence_refs": [
+      {
+        "source_id": "FISRC-cde1ec652771f171",
+        "source_url": "https://startuprise.io/graphon-ai-raises-8-3m-in-seed-funding/",
+        "quote": "Graphon AI, a San Francisco, CA-based developer of a pre-model intelligence and relational representation layer for enterprise AI",
+        "source_content_hash": "facb0c84a664f360",
+        "quote_hash": "55878c55ed20e441336a3e61fe05011c939ea6d8173c93ee4a1313621e0e8320"
+      },
+      {
+        "source_id": "FISRC-4c5668270b4cb456",
+        "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+        "quote": "Graphon.ai is building the pre-model intelligence layer for enterprise AI. By transforming raw multimodal data into persistent relational memory, Graphon enables foundation models to reason over connected systems instead of isolated token sequences.",
+        "source_content_hash": "d4c067cbdae72c67",
+        "quote_hash": "73c176da91510b184b6b34a4a0e4cad219a86d2040ddaa4a24b634b73276443f"
+      },
+      {
+        "source_id": "FISRC-9c4c0f115d1f38be",
+        "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
+        "quote": "Using graphon functions, a mathematical framework that extends the academic concept into a software layer, the system ingests multimodal data and automatically discovers relational structure across it, producing what the company calls persistent relational memory.",
+        "source_content_hash": "941bad55959a928e",
+        "quote_hash": "a42d20d6421b4336ef47e56cf117c940f8b7cbf78bb18003d74e88680e13cd9f"
+      }
+    ],
+    "assignment_method": "reviewed_funding_insight",
+    "confidence": 0.85,
+    "taxonomy_version": "TAG-V4.1",
+    "review_status": "accepted",
+    "status": "active"
+  }
+]

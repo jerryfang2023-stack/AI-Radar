@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -51,7 +52,116 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "SpaceX 寻求 750 亿美元 IPO，创历史记录，为 AI 与发射业务融资",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-be9c6c922263ac51",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-095a5bd38169d01f",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2604bfd750620312",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-940a2d64126a7143",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "logistics_supply_chain",
+            "name": "物流与供应链",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d4d8d43343c3d3cc",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-09350130f627f47b",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9127020158b6c016",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-57e7b1277e296793",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-e78bdebae031095b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-95d1dbd84495a32e",
+            "fundingInsightId": "FI-06d78a3e69ce2cb4"
+          }
+        ],
         "entityIds": [
           "EN-e78bdebae031095b",
           "EN-e46194227b89a1a8",

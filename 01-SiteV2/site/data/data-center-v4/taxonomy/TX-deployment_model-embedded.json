@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1770,
+    "quarantinedEventCount": 14
+  },
+  "node": {
+    "id": "TX-deployment_model-embedded",
+    "name": "嵌入式",
+    "nodeType": "deployment_model",
+    "typeLabel": "部署形态",
+    "valueId": "embedded",
+    "eventIds": [
+      "EV-778ae7684a4d782e"
+    ],
+    "entityIds": [
+      "EN-25690754dd14bd1b"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-07-10",
+    "lastSeen": "2026-07-10"
+  },
+  "events": [
+    {
+      "id": "EV-778ae7684a4d782e",
+      "dataDate": "2026-07-10",
+      "date": "2026-07-10",
+      "updatedDate": "2026-07-10",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "从AI试点到自主借贷：L&T金融的企业AI之旅",
+      "originalTitle": "From AI pilots to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer",
+      "subject": "From AI",
+      "action": "pilots",
+      "object": "to autonomous lending: Inside L&T Finance's enterprise AI journey - Express Computer",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-25690754dd14bd1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-25690754dd14bd1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "embedded",
+            "name": "嵌入式",
+            "entityIds": [
+              "EN-25690754dd14bd1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-25690754dd14bd1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-25690754dd14bd1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "embedded",
+          "name": "嵌入式",
+          "entityIds": [
+            "EN-25690754dd14bd1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-25690754dd14bd1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-25690754dd14bd1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "embedded",
+          "name": "嵌入式",
+          "entityIds": [
+            "EN-25690754dd14bd1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-25690754dd14bd1b"
+      ],
+      "entityNames": [
+        "From AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://expresscomputer.in/amp/exclusives/from-ai-pilots-to-autonomous-lending-inside-lt-finances-enterprise-ai-journey/136627",
+      "publisher": "expresscomputer.in"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-25690754dd14bd1b",
+      "name": "From AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-778ae7684a4d782e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-deployment_model-embedded"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-10"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

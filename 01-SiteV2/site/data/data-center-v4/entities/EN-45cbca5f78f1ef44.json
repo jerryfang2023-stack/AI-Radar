@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -62,7 +63,80 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
-        "displayTags": [],
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-b4a139ced5659a4e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bcd45d52b4d3ce35",
+            "fundingInsightId": "FI-dcf52fdf41da5d16"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-b4a139ced5659a4e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-73e40aecfb19b412",
+            "fundingInsightId": "FI-dcf52fdf41da5d16"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "ai_development_orchestration",
+            "name": "AI 开发与编排",
+            "entityIds": [
+              "EN-b4a139ced5659a4e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d8134da641d5dd2e",
+            "fundingInsightId": "FI-dcf52fdf41da5d16"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "developer_tool",
+            "name": "开发者工具",
+            "entityIds": [
+              "EN-b4a139ced5659a4e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4fdfd4d3d0bb55a1",
+            "fundingInsightId": "FI-dcf52fdf41da5d16"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-b4a139ced5659a4e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-09705f12da3f6a0a",
+            "fundingInsightId": "FI-dcf52fdf41da5d16"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-b4a139ced5659a4e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2b6079175b1db8ef",
+            "fundingInsightId": "FI-dcf52fdf41da5d16"
+          }
+        ],
         "entityIds": [
           "EN-b4a139ced5659a4e",
           "EN-0decbc3b45f73b2b",

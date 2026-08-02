@@ -1,0 +1,6845 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1770,
+    "quarantinedEventCount": 14
+  },
+  "node": {
+    "id": "TX-deployment_model-edge_device",
+    "name": "边缘与端侧",
+    "nodeType": "deployment_model",
+    "typeLabel": "部署形态",
+    "valueId": "edge_device",
+    "eventIds": [
+      "EV-a15da1b52d939967",
+      "EV-736404028b8ad33e",
+      "EV-d5c00f302e1f808c",
+      "EV-7263caa45bbf168e",
+      "EV-7a0f201debe99f2b",
+      "EV-79913a2e72f0269b",
+      "EV-a5efa57f3f744425",
+      "EV-04efb4eecbb8125f",
+      "EV-8a9b12665a3e40a0",
+      "EV-712bb6241160c4c5",
+      "EV-f7b60c0c63403f8c",
+      "EV-e28e134345ea5f99",
+      "EV-a736c6c64d106475",
+      "EV-4e6dc3ec2b3f0bd6",
+      "EV-c5b8faec223a4caf",
+      "EV-0e2a68efc19bfbaa",
+      "EV-0597e07d7e73051a",
+      "EV-08f736f61f2b46f3",
+      "EV-02186ed7885f68fe",
+      "EV-8692dfde7c3ef5b5",
+      "EV-5613946bdd578a26",
+      "EV-848bdd13f319c516",
+      "EV-dd902b603e2e3dbc",
+      "EV-7d4b4b8d4e3599d4",
+      "EV-f4876d2e1a20d87b"
+    ],
+    "entityIds": [
+      "EN-a35b80cf9d171015",
+      "EN-48bebf25e5bd5aca",
+      "EN-968e2d5b08687bf4",
+      "EN-16fd849ce27f115b",
+      "EN-f5791343a13abc71",
+      "EN-2b6e51bec93e86c1",
+      "EN-4d09c69c19f5f67b",
+      "EN-e21783b898b55a31",
+      "EN-3309b3b14807f39a",
+      "EN-61a405a731497229",
+      "EN-bbdefa2950f49882",
+      "EN-992eafe973f69075",
+      "EN-1229af0aa3b0305e",
+      "EN-3a7bd3e2360a3d29",
+      "EN-8147e6fed86d42c1",
+      "EN-12a81529bba89666",
+      "EN-44a9bf3b11abea5c",
+      "EN-de6b71bf77ff4299",
+      "EN-c4ef31845ea79710",
+      "EN-dd920a8cd166f486",
+      "EN-c70eca6b0f88f44d",
+      "EN-41dcc2d4951f337b",
+      "EN-8d4321d936320802",
+      "EN-e07654c7cc29acbd",
+      "EN-c3ce0cc92b48bbd6",
+      "EN-54ef981ab82586b5",
+      "EN-80d387ccb3289295",
+      "EN-b7dac8ddfad3bea8",
+      "EN-6f7ac1823da81d2e",
+      "EN-3dd90c2e1bf28b32",
+      "EN-5d7b7e77768bfdfc"
+    ],
+    "fdeIds": [],
+    "hardwareIds": [],
+    "firstSeen": "2026-05-25",
+    "lastSeen": "2026-07-31"
+  },
+  "events": [
+    {
+      "id": "EV-a15da1b52d939967",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-24",
+      "updatedDate": "2026-06-25",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "高通官宣将收购 AI 软件栈企业 Modular，交易预计 2026H2 完成",
+      "originalTitle": "",
+      "subject": "高通官宣将",
+      "action": "收购",
+      "object": "AI 软件栈企业 Modular，交易预计 2026H2 完成",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-a35b80cf9d171015"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-a35b80cf9d171015"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-a35b80cf9d171015"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-a35b80cf9d171015"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-a35b80cf9d171015"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-a35b80cf9d171015"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a35b80cf9d171015"
+      ],
+      "entityNames": [
+        "高通官宣"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/968/184.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-736404028b8ad33e",
+      "dataDate": "2026-06-04",
+      "date": "2026-06-04",
+      "updatedDate": "2026-06-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "FriendliAI 获 2000 万美元融资，重新定义 AI 推理",
+      "originalTitle": "FriendliAI Secures $20M to Redefine AI Inference",
+      "subject": "FriendliAI",
+      "action": "Secures",
+      "object": "$20M to Redefine AI Inference",
+      "metrics": [
+        "$20M",
+        "$20 million",
+        "90%"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4b01a004031b3e83",
+            "fundingInsightId": "FI-f620e518e71fb8b2"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3f407aea48f4e545",
+            "fundingInsightId": "FI-f620e518e71fb8b2"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "model_deployment",
+            "name": "模型部署",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b67ba0c7c01e21dd",
+            "fundingInsightId": "FI-f620e518e71fb8b2"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-97640ba0b9f8606c",
+            "fundingInsightId": "FI-f620e518e71fb8b2"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4e831661da1ae5db",
+            "fundingInsightId": "FI-f620e518e71fb8b2"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-48bebf25e5bd5aca",
+              "EN-dca6ec9510fc0176"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_deployment",
+          "name": "模型部署",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b67ba0c7c01e21dd",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b01a004031b3e83",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3f407aea48f4e545",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-97640ba0b9f8606c",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4e831661da1ae5db",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca",
+            "EN-dca6ec9510fc0176"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b01a004031b3e83",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3f407aea48f4e545",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "model_deployment",
+          "name": "模型部署",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b67ba0c7c01e21dd",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-97640ba0b9f8606c",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4e831661da1ae5db",
+          "fundingInsightId": "FI-f620e518e71fb8b2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca",
+            "EN-dca6ec9510fc0176"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-48bebf25e5bd5aca"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-48bebf25e5bd5aca",
+        "EN-dca6ec9510fc0176",
+        "EN-b0532e1af75cc4ab",
+        "EN-8147e6fed86d42c1"
+      ],
+      "entityNames": [
+        "FriendliAI",
+        "Sierra",
+        "Rime",
+        "OPPO"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://friendli.ai/blog/friendliai-raises-20m-in-seed-extension-round",
+      "publisher": "friendli.ai"
+    },
+    {
+      "id": "EV-d5c00f302e1f808c",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-24",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "面壁智能 MiniCPM 端侧大模型登陆三星 Galaxy Z Fold8 系列，国产端侧模型首次进入国际旗舰产品线",
+      "originalTitle": "",
+      "subject": "面壁智能 MiniCPM 系列端侧大模型",
+      "action": "deployment",
+      "object": "三星 Galaxy Z Fold8 系列",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-968e2d5b08687bf4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-968e2d5b08687bf4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-968e2d5b08687bf4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-968e2d5b08687bf4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-968e2d5b08687bf4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-968e2d5b08687bf4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-968e2d5b08687bf4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-968e2d5b08687bf4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-968e2d5b08687bf4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-968e2d5b08687bf4"
+      ],
+      "entityNames": [
+        "Samsung"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/980/730.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-7263caa45bbf168e",
+      "dataDate": "2026-06-03",
+      "date": "2026-06-03",
+      "updatedDate": "2026-06-03",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整部署栈，Fairwater 工厂提前上线",
+      "originalTitle": "",
+      "subject": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整",
+      "action": "部署",
+      "object": "栈，Fairwater 工厂提前上线",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-16fd849ce27f115b",
+              "EN-f5791343a13abc71"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-16fd849ce27f115b",
+              "EN-f5791343a13abc71"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-16fd849ce27f115b",
+              "EN-f5791343a13abc71"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-16fd849ce27f115b",
+            "EN-f5791343a13abc71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-16fd849ce27f115b",
+        "EN-8d4321d936320802",
+        "EN-f5791343a13abc71",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "从端侧到云端统一加速",
+        "NVIDIA",
+        "微软展示 AI 智能体完整",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/959/026.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-7a0f201debe99f2b",
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "updatedDate": "2026-07-31",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google DeepMind 发布 Gemini Robotics 2，包含三款实体 AI 模型用于全身控制、灵巧操作与多机器人协作",
+      "originalTitle": "",
+      "subject": "Google DeepMind",
+      "action": "发布 Gemini Robotics 2，包含三款实体 AI 模型",
+      "object": "用于全身控制、灵巧操作与多机器人协作",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b",
+              "EN-e1086f449d58de87"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-2b6e51bec93e86c1",
+              "EN-4d09c69c19f5f67b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-e1086f449d58de87"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b",
+            "EN-e1086f449d58de87"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-e1086f449d58de87"
+      ],
+      "entityNames": [
+        "Google DeepMind",
+        "DeepMind",
+        "Gemini Robotics 2"
+      ],
+      "productName": "DeepMind",
+      "products": [
+        {
+          "name": "DeepMind",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        },
+        {
+          "name": "Gemini Robotics 2",
+          "type": "模型",
+          "ownerNames": [
+            "Google DeepMind"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-79913a2e72f0269b",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "VITURE 发布 Auto Immersive 3D 技术，实现安卓系统实时 3D 立体化",
+      "originalTitle": "",
+      "subject": "VITURE",
+      "action": "发布",
+      "object": "Auto Immersive 3D 技术，实现安卓系统实时 3D 立体化",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e21783b898b55a31"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-e21783b898b55a31"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e21783b898b55a31"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-e21783b898b55a31"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-e21783b898b55a31"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-e21783b898b55a31"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e21783b898b55a31",
+        "EN-b6fe9abdb194022b",
+        "EN-7a2f2aafb073c74e"
+      ],
+      "entityNames": [
+        "VITURE",
+        "Auto Immersive",
+        "Auto Immersive 3"
+      ],
+      "productName": "Auto Immersive",
+      "products": [
+        {
+          "name": "Auto Immersive",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Auto Immersive 3",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/931.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a5efa57f3f744425",
+      "dataDate": "2026-07-20",
+      "date": "2026-07-19",
+      "updatedDate": "2026-07-20",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "面壁智能发布端侧模型 MiniCPM5-2B，AA-Index 榜单 4B 以下性能第一",
+      "originalTitle": "",
+      "subject": "面壁智能",
+      "action": "发布端侧模型",
+      "object": "MiniCPM5-2B，AA-Index 榜单 4B 以下性能第一",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3309b3b14807f39a",
+              "EN-61a405a731497229"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229"
+      ],
+      "entityNames": [
+        "面壁智能",
+        "MiniCPM5-2B"
+      ],
+      "productName": "MiniCPM5-2B",
+      "products": [
+        {
+          "name": "MiniCPM5-2B",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/796.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-04efb4eecbb8125f",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google 发布 LiteRT.js：通过 WebGPU 在浏览器中运行 .tflite 模型的 JavaScript 绑定",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "发布 LiteRT.js：通过 WebGPU 在浏览器中运行 .tflite 模型",
+      "object": "的 JavaScript 绑定",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-992eafe973f69075",
+            "EN-1229af0aa3b0305e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-bbdefa2950f49882",
+              "EN-992eafe973f69075",
+              "EN-1229af0aa3b0305e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-992eafe973f69075",
+            "EN-1229af0aa3b0305e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-992eafe973f69075",
+            "EN-1229af0aa3b0305e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-992eafe973f69075",
+            "EN-1229af0aa3b0305e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-bbdefa2950f49882",
+            "EN-992eafe973f69075",
+            "EN-1229af0aa3b0305e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d"
+      ],
+      "entityNames": [
+        "Google",
+        "JavaScript",
+        "LiteRT.js",
+        "SensorFM"
+      ],
+      "productName": "JavaScript",
+      "products": [
+        {
+          "name": "JavaScript",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "LiteRT.js",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "SensorFM",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/15/google-releases-litert-js-a-javascript-binding-of-litert-that-runs-tflite-models-in-browsers-via-webgpu",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-8a9b12665a3e40a0",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-8147e6fed86d42c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29",
+              "EN-8147e6fed86d42c1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-12a81529bba89666"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29",
+              "EN-8147e6fed86d42c1"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-12a81529bba89666"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-8147e6fed86d42c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-8147e6fed86d42c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-8147e6fed86d42c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-8147e6fed86d42c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-8147e6fed86d42c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-8147e6fed86d42c1"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-12a81529bba89666"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b81c8201acfc7639",
+        "EN-8147e6fed86d42c1",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-12a81529bba89666"
+      ],
+      "entityNames": [
+        "Samsung",
+        "Apple",
+        "Huawei",
+        "OPPO",
+        "Xiaomi",
+        "Nubia",
+        "MiniCPM"
+      ],
+      "productName": "MiniCPM",
+      "products": [
+        {
+          "name": "MiniCPM",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Samsung"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/977/217.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-712bb6241160c4c5",
+      "dataDate": "2026-07-12",
+      "date": "2026-07-12",
+      "updatedDate": "2026-07-12",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "originalTitle": "",
+      "subject": "阶跃星辰",
+      "action": "发布 Step Edge 端侧模型",
+      "object": "全家桶",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-44a9bf3b11abea5c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-44a9bf3b11abea5c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-44a9bf3b11abea5c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-2c348893efb2316e",
+        "EN-44a9bf3b11abea5c"
+      ],
+      "entityNames": [
+        "StepFun",
+        "Step Edge"
+      ],
+      "productName": "Step Edge",
+      "products": [
+        {
+          "name": "Step Edge",
+          "type": "模型",
+          "ownerNames": [
+            "StepFun"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/681.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f7b60c0c63403f8c",
+      "dataDate": "2026-07-11",
+      "date": "2026-07-10",
+      "updatedDate": "2026-07-11",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "originalTitle": "",
+      "subject": "加速进化",
+      "action": "发布",
+      "object": "Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+      "metrics": [
+        "2070TFLOPS",
+        "128GB"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-de6b71bf77ff4299",
+              "EN-c4ef31845ea79710"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-de6b71bf77ff4299",
+        "EN-8d4321d936320802",
+        "EN-c4ef31845ea79710"
+      ],
+      "entityNames": [
+        "加速进化",
+        "NVIDIA",
+        "Booster T2"
+      ],
+      "productName": "Booster T2",
+      "products": [
+        {
+          "name": "Booster T2",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-e28e134345ea5f99",
+      "dataDate": "2026-06-16",
+      "date": "2026-06-16",
+      "updatedDate": "2026-06-16",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软推Intelligent Terminal：Win11终端集成AI智能体",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "微软推Intelligent Terminal：Win11终端集成AI智能体",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce635c4eabff5e4f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce635c4eabff5e4f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ce635c4eabff5e4f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-96eebba49dbbf422",
+        "EN-ce635c4eabff5e4f",
+        "EN-f8ceb65dd1764cd4"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "Intel",
+        "Shell",
+        "Intelligent Terminal"
+      ],
+      "productName": "Intelligent Terminal",
+      "products": [
+        {
+          "name": "Intelligent Terminal",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/964/690.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a736c6c64d106475",
+      "dataDate": "2026-06-13",
+      "date": "2026-06-12",
+      "updatedDate": "2026-06-13",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起，端侧模型门槛更高",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "苹果 Siri AI 仅限较新设备：iPhone 15 Pro 起，端侧模型门槛更高",
+      "metrics": [
+        "12GB"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-af3ceabbe048a291"
+      ],
+      "entityNames": [
+        "Apple",
+        "Siri AI"
+      ],
+      "productName": "Siri AI",
+      "products": [
+        {
+          "name": "Siri AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/963/722.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4e6dc3ec2b3f0bd6",
+      "dataDate": "2026-06-12",
+      "date": "2026-06-11",
+      "updatedDate": "2026-06-12",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "苹果 CoreAI 端侧 AI 引擎测试：小模型解码速度是 MLX 的 2.47 倍，大模型性能持平",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-dd920a8cd166f486"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-dd920a8cd166f486"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-dd920a8cd166f486"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-047364b9be67f665",
+        "EN-dd920a8cd166f486"
+      ],
+      "entityNames": [
+        "Apple",
+        "Alibaba",
+        "CoreAI"
+      ],
+      "productName": "CoreAI",
+      "products": [
+        {
+          "name": "CoreAI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/962/857.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c5b8faec223a4caf",
+      "dataDate": "2026-06-09",
+      "date": "2026-06-09",
+      "updatedDate": "2026-06-09",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包",
+      "originalTitle": "",
+      "subject": "Claude 支持 Apple Foundation Models 框架，",
+      "action": "推出",
+      "object": "新 Swift 包",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29",
+              "EN-41dcc2d4951f337b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29",
+              "EN-c70eca6b0f88f44d",
+              "EN-41dcc2d4951f337b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29",
+            "EN-c70eca6b0f88f44d",
+            "EN-41dcc2d4951f337b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29",
+        "EN-c70eca6b0f88f44d",
+        "EN-96eebba49dbbf422",
+        "EN-41dcc2d4951f337b"
+      ],
+      "entityNames": [
+        "Apple",
+        "Anthropic",
+        "Intel",
+        "Foundation"
+      ],
+      "productName": "Foundation",
+      "products": [
+        {
+          "name": "Foundation",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        }
+      ],
+      "sourceUrl": "https://claude.com/blog/claude-for-foundation-models",
+      "publisher": "Claude：Blog（网页）"
+    },
+    {
+      "id": "EV-0e2a68efc19bfbaa",
+      "dataDate": "2026-07-22",
+      "date": "2026-05-31",
+      "updatedDate": "2026-07-22",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 发布 Cosmos 3 Edge：40 亿参数开放世界模型，可在设备端推理并生成机器人动作",
+      "originalTitle": "",
+      "subject": "NVIDIA",
+      "action": "发布 Cosmos 3 Edge：40 亿参数开放世界模型",
+      "object": "，可在设备端推理并生成机器人动作",
+      "metrics": [],
+      "locations": [
+        "Japan"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-8d4321d936320802",
+              "EN-e07654c7cc29acbd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-e07654c7cc29acbd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-e07654c7cc29acbd"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Cosmos 3 Edge"
+      ],
+      "productName": "Cosmos 3 Edge",
+      "products": [
+        {
+          "name": "Cosmos 3 Edge",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/21/nvidia-releases-cosmos-3-edge-a-4b-parameter-open-world-model-that-reasons-and-generates-robot-actions-on-device",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-0597e07d7e73051a",
+      "dataDate": "2026-05-25",
+      "date": "2026-05-25",
+      "updatedDate": "2026-05-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "面壁智能联合清华等开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型 BitCPM-CANN",
+      "originalTitle": "",
+      "subject": "面壁智能联合清华等",
+      "action": "开源中国首个基于华为昇腾训练的 1.58-bit 端侧大模型",
+      "object": "BitCPM-CANN",
+      "metrics": [],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c3ce0cc92b48bbd6",
+              "EN-54ef981ab82586b5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-c3ce0cc92b48bbd6",
+              "EN-54ef981ab82586b5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-c3ce0cc92b48bbd6",
+            "EN-54ef981ab82586b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c3ce0cc92b48bbd6",
+        "EN-b81c8201acfc7639",
+        "EN-54ef981ab82586b5"
+      ],
+      "entityNames": [
+        "面壁智能联合清华等",
+        "Huawei",
+        "BitCPM-CANN"
+      ],
+      "productName": "BitCPM-CANN",
+      "products": [
+        {
+          "name": "BitCPM-CANN",
+          "type": "模型",
+          "ownerNames": [
+            "Huawei"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/954/759.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-08f736f61f2b46f3",
+      "dataDate": "2026-07-18",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-18",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 将机器人 AI 引入设备端，日本顶级制造商加入 Cosmos 联盟",
+      "originalTitle": "NVIDIA Brings Robot AI On-Device as Japan's Top Manufacturers Join Cosmos Coalition",
+      "subject": "NVIDIA Brings Robot AI On-Device as Japan's Top Manufacturers",
+      "action": "Join",
+      "object": "Cosmos Coalition",
+      "metrics": [
+        "65 billion"
+      ],
+      "locations": [
+        "Japan"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-8d4321d936320802",
+              "EN-80d387ccb3289295"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-8d4321d936320802",
+              "EN-80d387ccb3289295"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-8d4321d936320802",
+              "EN-80d387ccb3289295"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-8d4321d936320802",
+            "EN-80d387ccb3289295"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-80d387ccb3289295"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "SoftBank"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techtimes.com/articles/320801/20260717/nvidia-brings-robot-ai-device-japans-top-manufacturers-join-cosmos-coalition.htm",
+      "publisher": "techtimes.com"
+    },
+    {
+      "id": "EV-02186ed7885f68fe",
+      "dataDate": "2026-07-17",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-17",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "三星\"盖乐世 AI\"通过大模型服务备案，合作方为百度智能云",
+      "originalTitle": "",
+      "subject": "三星\"盖乐世 AI\"通过大模型服务",
+      "action": "备案",
+      "object": "，合作方为百度智能云",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-968e2d5b08687bf4",
+        "EN-0899bccb1b028521"
+      ],
+      "entityNames": [
+        "Samsung",
+        "Baidu AI Cloud"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/464.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-8692dfde7c3ef5b5",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-16",
+      "eventType": "certification_compliance",
+      "eventTypeLabel": "认证合规",
+      "eventGroup": "组织、政策与法律",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "苹果 Apple 智能通过备案，阿里千问将集成至国行 iPhone；小米开源具身通用模型 Xiaomi-Robotics-U0",
+      "originalTitle": "",
+      "subject": "Apple 智能",
+      "action": "certification_compliance",
+      "object": "手机端侧生成式人工智能服务备案",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b7dac8ddfad3bea8",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-b7dac8ddfad3bea8",
+              "EN-3a7bd3e2360a3d29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b7dac8ddfad3bea8",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-b7dac8ddfad3bea8",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-b7dac8ddfad3bea8",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-b7dac8ddfad3bea8",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-22797805eb45b722",
+        "EN-b7dac8ddfad3bea8",
+        "EN-3a7bd3e2360a3d29",
+        "EN-047364b9be67f665",
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "苹果 Apple 智能通过备案",
+        "Apple 智能",
+        "Apple",
+        "Alibaba",
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/275.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-5613946bdd578a26",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "网信部门公布 7 款手机端侧生成式 AI 服务备案，Apple 智能在列",
+      "originalTitle": "",
+      "subject": "网信部门公布 7 款手机端侧生成式 AI 服务",
+      "action": "备案",
+      "object": "，Apple 智能在列",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/080.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-848bdd13f319c516",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "DeepSeek IPO 计划 📈，Kalshi 计算市场 ⚡，Bonsai 手机模型 📱",
+      "originalTitle": "DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱",
+      "subject": "DeepSeek",
+      "action": "IPO",
+      "object": "plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-6f7ac1823da81d2e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-6f7ac1823da81d2e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tldr.tech/ai/2026-07-15",
+      "publisher": "TLDR AI Newsletter"
+    },
+    {
+      "id": "EV-dd902b603e2e3dbc",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案",
+      "originalTitle": "",
+      "subject": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型",
+      "action": "备案",
+      "object": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-3dd90c2e1bf28b32",
+              "EN-5d7b7e77768bfdfc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3dd90c2e1bf28b32",
+              "EN-5d7b7e77768bfdfc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3dd90c2e1bf28b32",
+              "EN-5d7b7e77768bfdfc",
+              "EN-3a7bd3e2360a3d29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3dd90c2e1bf28b32",
+            "EN-5d7b7e77768bfdfc",
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3dd90c2e1bf28b32",
+        "EN-c608c4787821de1b",
+        "EN-5d7b7e77768bfdfc",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "小米 MiMo 完成大语言",
+        "Xiaomi",
+        "多模态",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/116.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-7d4b4b8d4e3599d4",
+      "dataDate": "2026-07-13",
+      "date": "2026-07-12",
+      "updatedDate": "2026-07-13",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "苹果失败的自动驾驶汽车项目留下了强大的AI芯片遗产",
+      "originalTitle": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "subject": "Apple’s failed self-driving car program",
+      "action": "left",
+      "object": "a legacy of powerful AI chips",
+      "metrics": [
+        "1.5TB"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-3a7bd3e2360a3d29"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-3a7bd3e2360a3d29"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-f4876d2e1a20d87b",
+      "dataDate": "2026-06-16",
+      "date": "2026-06-16",
+      "updatedDate": "2026-06-16",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop 加入 AI 功能",
+      "originalTitle": "",
+      "subject": "Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop",
+      "action": "加入",
+      "object": "AI 功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/964/624.htm",
+      "publisher": "IT之家（RSS）"
+    }
+  ],
+  "entities": [
+    {
+      "id": "EN-a35b80cf9d171015",
+      "name": "高通官宣",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a15da1b52d939967"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-25"
+    },
+    {
+      "id": "EN-48bebf25e5bd5aca",
+      "name": "FriendliAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-736404028b8ad33e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-developer",
+        "TX-target_user-business_user",
+        "TX-ai_market_application-model_deployment",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-06-04"
+    },
+    {
+      "id": "EN-968e2d5b08687bf4",
+      "name": "Samsung",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "三星"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a89bf7c0c4203ce2",
+        "EV-48075ca70a5458ec",
+        "EV-b3c7c4bff17063d8",
+        "EV-79a0bbe8b8623b28",
+        "EV-614fb5bb3cfc2519",
+        "EV-59882383f82f215d",
+        "EV-212aa5b375abf8a7",
+        "EV-d5c00f302e1f808c",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-286574206caa37ab",
+        "EV-ef6464cf7f764835",
+        "EV-935640fc8fb69e26",
+        "EV-02015794e4c719d0",
+        "EV-a37b9d9fb85e460f",
+        "EV-8a9b12665a3e40a0",
+        "EV-415261e2efce3bf8",
+        "EV-9ca7db66f8f10b63",
+        "EV-9b29acd28643e9d1",
+        "EV-20dcacae656a9eb8",
+        "EV-b9da0f17dc8eb908",
+        "EV-02186ed7885f68fe",
+        "EV-44a492c1688949cf",
+        "EV-1b92b6c835ce240c",
+        "EV-3b3af6df1ca6c880",
+        "EV-c544ddd798dfcd51",
+        "EV-5271985bba70f3d1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-8f5edf98060f12af",
+        "EN-c70eca6b0f88f44d",
+        "EN-d84c1d1c315bc2f8"
+      ],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-16fd849ce27f115b",
+      "name": "从端侧到云端统一加速",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7263caa45bbf168e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-on_premise"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03"
+    },
+    {
+      "id": "EN-f5791343a13abc71",
+      "name": "微软展示 AI 智能体完整",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7263caa45bbf168e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-on_premise"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03"
+    },
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-19ebde6e2de35fc9",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-eb12fb9dd08e5aad",
+        "EV-7a0f201debe99f2b",
+        "EV-60110525440fac47",
+        "EV-6b0106ef4a79df05",
+        "EV-5f2acbfb8f54fd59",
+        "EV-59229486408edb05",
+        "EV-6654f62015eff8e3",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-011eeba13ebcc9a8",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-d46aa5935d9bb672",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-d49da50484ba781f",
+        "EV-81e297ea6f8fde3b",
+        "EV-68edd592c36dccd3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
+        "TX-industry-media_entertainment",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-use_case-research_discovery",
+        "TX-technology-vision_language",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-technology-image_generation",
+        "TX-technology-video_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-08-02"
+    },
+    {
+      "id": "EN-e21783b898b55a31",
+      "name": "VITURE",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-79913a2e72f0269b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-7a2f2aafb073c74e"
+      ],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "EN-3309b3b14807f39a",
+      "name": "面壁智能",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a5efa57f3f744425"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-61a405a731497229"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-61a405a731497229",
+      "name": "MiniCPM5-2B",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a5efa57f3f744425"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-3309b3b14807f39a"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9b81b0dd09a046ab",
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
+        "EV-2bb63a3015195f9b",
+        "EV-43b56d49df9a73a2",
+        "EV-0e84a2f49d765ce3",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-5762fe51987bc5ff",
+        "EV-6cb8979f92cf74ce",
+        "EV-a4b7cd533b0b34dc",
+        "EV-fd329b4350f404ef",
+        "EV-57944eebac69d510",
+        "EV-38232fed5e0cfdd6",
+        "EV-e7b228c1b6b54c6a",
+        "EV-cf76f090a1a20a36",
+        "EV-ff1f6119de13fa19",
+        "EV-cec235426920c522",
+        "EV-051d1924db7ba65d",
+        "EV-777eb5b7783b71fb",
+        "EV-e8bc5b0eebef5813",
+        "EV-f55d16df5b5fecb2",
+        "EV-5a9fe80f8e4ae066",
+        "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
+        "EV-36a9e4e908249381",
+        "EV-98496cc86bacb1e0",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-d1a3f5c8045e548d",
+        "EV-f949fd95df58d42d",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
+        "EV-cf4da5583e9311d7",
+        "EV-ebd76d18d3f0ee7b",
+        "EV-60110525440fac47",
+        "EV-3ebf23c149dde19d",
+        "EV-6b0106ef4a79df05",
+        "EV-a4fe78df6ccd63c8",
+        "EV-395884a4c090103c",
+        "EV-6f26809c0ae960a8",
+        "EV-33e98b8bbd0a11b1",
+        "EV-2634b786bde9fb8e",
+        "EV-6aabfaa0c7c7f838",
+        "EV-c914ac00a35d7cf0",
+        "EV-c9d7b46d167df2d1",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
+        "EV-f3cc0845ce442e6b",
+        "EV-636c0bb7661201cc",
+        "EV-fe4eeb733d1682ed",
+        "EV-a255cfc0dab44564",
+        "EV-98a80b75b27d9f3b",
+        "EV-29e069ac093f0e34",
+        "EV-62feeb8f8791c63c",
+        "EV-8fbe211e9d4bae03",
+        "EV-04efb4eecbb8125f",
+        "EV-6359c9f6c2609a38",
+        "EV-a442b55d0bac5651",
+        "EV-49d9029bdcf87db4",
+        "EV-c2d784ef0a5376f8",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
+        "EV-f05783f745bc7c2c",
+        "EV-2cd95ab95d0f2ad9",
+        "EV-52508b70ccd2cc0b",
+        "EV-71226eeff6dc7c42",
+        "EV-d12aa40eff40c97e",
+        "EV-9254af7aaedaafbe",
+        "EV-04ee2bc4ac888358",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
+        "EV-2059f42c7b2aff44",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
+        "EV-b8bba030747fd3b6",
+        "EV-8aead769e84de342",
+        "EV-982a92fc86f1d20c",
+        "EV-eddb4330fed15762",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-5012364af7480121",
+        "EV-3acf607a02706fa8",
+        "EV-44ae3e7fda9320dc",
+        "EV-abf0990dcaceb1ce",
+        "EV-d5cc9a50a9b88d2b",
+        "EV-6225d18316f90a0d",
+        "EV-b860d46fee913f27",
+        "EV-011eeba13ebcc9a8",
+        "EV-8a26b85b4f432525",
+        "EV-3f23ddb47fc652a4",
+        "EV-a886a800f06ab9d6",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-43a5b874a66b42b3",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
+        "EV-54c329f4c8e4227b",
+        "EV-c3cbf5d7f860c693",
+        "EV-009105cbcf82a638",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-b4f3dcac8cc230d9",
+        "EV-d2d1834222ab32d3",
+        "EV-8eed6489ab514823",
+        "EV-22b8d155ce027905",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-0ad758b04b9b5313",
+        "EV-c08837795f9e16d2",
+        "EV-4a3cb762183581cd",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-a591b0c96f79de45",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
+        "EV-a4f052325d0ef230",
+        "EV-cb3cb11ff13f6069",
+        "EV-8115dd18f2812a29",
+        "EV-0e9f000dd04fe04c",
+        "EV-5bfcc506994f103f",
+        "EV-909cf18b467d6fdf",
+        "EV-89bdda008227fb6b",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-848bdd13f319c516",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-1b92b6c835ce240c",
+        "EV-8925c94e9a1c5f03",
+        "EV-6950bb00a0913038",
+        "EV-392894a7cc673b9e",
+        "EV-ad269fada2269f35",
+        "EV-6fba63ca5f1e51c7",
+        "EV-1df9b606627460f7",
+        "EV-7580a050ca19a8ae",
+        "EV-39460c022e56badd",
+        "EV-ecfc552af7344d65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-technology-computer_use",
+        "TX-use_case-software_development",
+        "TX-product_form-security_software",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-deployment_model-on_premise",
+        "TX-technology-model_context_protocol",
+        "TX-technology-image_generation",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-8d323d8bba783aa3",
+        "EN-18f0900d6c487f59",
+        "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
+        "EN-40f98159922ab514",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
+        "EN-2998f8b13f4fd72e",
+        "EN-b5c336c0dd1ff29c",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-bdfecbcd7dbf76d2"
+      ],
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-08-02"
+    },
+    {
+      "id": "EN-1229af0aa3b0305e",
+      "name": "LiteRT.js",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "JavaScript"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-04efb4eecbb8125f",
+        "EV-52508b70ccd2cc0b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-3a7bd3e2360a3d29",
+      "name": "Apple",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "苹果"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-bf46d8d6d7d6e90a",
+        "EV-53f08daddd011dbb",
+        "EV-b726a9cda7beae64",
+        "EV-afcd5426f5c01dc7",
+        "EV-f5a50f1fed72fec3",
+        "EV-d116b0aa5bb292e2",
+        "EV-e857f9d1c1478c70",
+        "EV-fd21441fb6e143c3",
+        "EV-db7cb473fe7e9e3c",
+        "EV-118317b7f92e5e16",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-8a9b12665a3e40a0",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-37b8aab7efececce",
+        "EV-ffe99cf8446a9d14",
+        "EV-967239f907803753",
+        "EV-113899096a32165a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-64b1c2eb3de15e82",
+        "EV-8aead769e84de342",
+        "EV-192fd3be9dda93a7",
+        "EV-abf0990dcaceb1ce",
+        "EV-89930fa8d1db98eb",
+        "EV-60c27ec9b857f5c2",
+        "EV-eeb687002cac5f4e",
+        "EV-99e5df844a1bd670",
+        "EV-0b2bfd57923cedd3",
+        "EV-3c51bcb5e99d2b68",
+        "EV-a736c6c64d106475",
+        "EV-dad8c827d14f2799",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-634ce5b42f6d32f6",
+        "EV-85373b8ec9148127",
+        "EV-1ae8027c085679e9",
+        "EV-21c749570133c786",
+        "EV-52e1ac21c25a0a09",
+        "EV-591542ccc2de5be8",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-9f338c4815cc65f3",
+        "EV-9f9bc7ffe6228281",
+        "EV-a5ba3797b38df125",
+        "EV-a9fe726c4ea2a17b",
+        "EV-bff418b2959f58fb",
+        "EV-c5b8faec223a4caf",
+        "EV-d40a1a873015ac98",
+        "EV-da062d02015f99fb",
+        "EV-ebef81764102ee7c",
+        "EV-f6611268f119a172",
+        "EV-342799d4e68e7416",
+        "EV-d40d5c9625f296db",
+        "EV-2f7e6d3a68bbf08f",
+        "EV-ef823877347ff40f",
+        "EV-5cd10de5c12916f0",
+        "EV-8692dfde7c3ef5b5",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-946569cccbd9222f",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-7d4b4b8d4e3599d4",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475",
+        "EV-1b92b6c835ce240c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
+        "TX-industry-food_hospitality",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-technology-tool_use",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
+        "EN-7df09a7717ef2feb",
+        "EN-0502bb9ed34980aa",
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
+      ],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "EN-8147e6fed86d42c1",
+      "name": "OPPO",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b53c30df8b86da5b",
+        "EV-f020dd198aa2f952",
+        "EV-736404028b8ad33e",
+        "EV-53f08daddd011dbb",
+        "EV-0592458e094f26cc",
+        "EV-33b218942b1deab7",
+        "EV-afd0332ad8f5f05b",
+        "EV-02686922dd82c4aa",
+        "EV-2fd730d0ad452334",
+        "EV-4faa2bcf2e42e60c",
+        "EV-7d09b00182b08c3f",
+        "EV-8a9b12665a3e40a0",
+        "EV-cfa8c754627747a1",
+        "EV-0d862d59b05361cc",
+        "EV-dab4d3f2059e8880",
+        "EV-33fba8931cca96d5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-04-28",
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-12a81529bba89666",
+      "name": "MiniCPM",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8a9b12665a3e40a0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-44a9bf3b11abea5c",
+      "name": "Step Edge",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-712bb6241160c4c5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-2c348893efb2316e"
+      ],
+      "firstSeen": "2026-07-12",
+      "lastSeen": "2026-07-12"
+    },
+    {
+      "id": "EN-de6b71bf77ff4299",
+      "name": "加速进化",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f7b60c0c63403f8c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-11"
+    },
+    {
+      "id": "EN-c4ef31845ea79710",
+      "name": "Booster T2",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f7b60c0c63403f8c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-07-11"
+    },
+    {
+      "id": "EN-dd920a8cd166f486",
+      "name": "CoreAI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4e6dc3ec2b3f0bd6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-06-12"
+    },
+    {
+      "id": "EN-c70eca6b0f88f44d",
+      "name": "Anthropic",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de",
+        "EV-d7a7244d620a2142",
+        "EV-fbb105be35c21eb4",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-fb817fb0a5e63323",
+        "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
+        "EV-4b8064b1139e1724",
+        "EV-80e54c9a390da293",
+        "EV-d4e44892226be468",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-edcb66d0401cfb8f",
+        "EV-8861a42a8679562a",
+        "EV-bc4ac955cd26b969",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-31df816db86db282",
+        "EV-d9270ae7b862212b",
+        "EV-5762fe51987bc5ff",
+        "EV-cbc0b7a7d21a29e2",
+        "EV-1abf0d076d30ec6d",
+        "EV-f247eff115e840af",
+        "EV-ed8260ee9a7a80af",
+        "EV-c3f617e75d303f59",
+        "EV-b150af93042566a6",
+        "EV-0e3f748f87f5892a",
+        "EV-8a2d8ebbd700c787",
+        "EV-e7e2dfbc41a639d2",
+        "EV-2c16aa6254de4496",
+        "EV-47a16db069ed320e",
+        "EV-fe601e081c090971",
+        "EV-d1e2a7c6d314612c",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-c81cb21337a9bb98",
+        "EV-3a704c40204ecfd9",
+        "EV-94e0afb44c320c99",
+        "EV-777eb5b7783b71fb",
+        "EV-5d185ac33faedb68",
+        "EV-8f1b01897707b941",
+        "EV-f55d16df5b5fecb2",
+        "EV-f65a1b053e5dca70",
+        "EV-75b9b997e9c7e5d1",
+        "EV-eec1e6857f0e0b2b",
+        "EV-7f2811d2272cf4a3",
+        "EV-d010133e168aee90",
+        "EV-6415a58637893b34",
+        "EV-2a71353a862e56b3",
+        "EV-4515377aa6311bf1",
+        "EV-ef6464cf7f764835",
+        "EV-bb9ba11acf104db1",
+        "EV-a16be3cb9dad7cfe",
+        "EV-f949fd95df58d42d",
+        "EV-9884a0317e1e6ae7",
+        "EV-b240fb11e65b018e",
+        "EV-bad301e14b034fbd",
+        "EV-45ee75a45f2ca5ee",
+        "EV-8e01849c05b50355",
+        "EV-fe63a869fe4cee45",
+        "EV-35be62272c77c556",
+        "EV-c0a65877001ed413",
+        "EV-6f433ccff3dce657",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-ab93c7a2f4178e93",
+        "EV-afcefb5d86a2db45",
+        "EV-2ee06634c0ce9f30",
+        "EV-395884a4c090103c",
+        "EV-6035ab78ed393335",
+        "EV-6f2b7d7bc72b1ed4",
+        "EV-272c5c798bc95d9d",
+        "EV-0e616f9e775a77dc",
+        "EV-c59d80939faf17cc",
+        "EV-c9aba59ba04c9fc8",
+        "EV-32fb6014149bafdd",
+        "EV-243e73016576fa43",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-6aabfaa0c7c7f838",
+        "EV-ad111bcc8e2bd103",
+        "EV-ae9f1e2cf5a28be4",
+        "EV-fbc316f83b63a543",
+        "EV-3e449c3e9ad6a9e1",
+        "EV-5b193a038ab4ea22",
+        "EV-604cffac28a0af69",
+        "EV-071c72225b8aaf80",
+        "EV-8121a1ecdf168d8a",
+        "EV-cd067fa6f39fe828",
+        "EV-4f36e494d9281522",
+        "EV-83a8ac8a2554b60c",
+        "EV-debecca007e547d2",
+        "EV-7963d8c78531f12d",
+        "EV-a8a8f26c5128d894",
+        "EV-51645a3b1e730105",
+        "EV-7c899d5decafc42f",
+        "EV-c2800c1c5a3f568f",
+        "EV-d9da7dea91725a1c",
+        "EV-1c2723ad61d192bd",
+        "EV-84226288807f817b",
+        "EV-0347414d81e7f02e",
+        "EV-712473b23a2a11a0",
+        "EV-2bd337245c920bc8",
+        "EV-302018f2e960a8bf",
+        "EV-025778b83c1b2ca9",
+        "EV-969ed3078d10f0c9",
+        "EV-b920999c64aa9ef6",
+        "EV-730a2f95a698a96d",
+        "EV-cf317dd1579a01bb",
+        "EV-fcbd97e1f30c95e3",
+        "EV-ee9a1c99fe7054d6",
+        "EV-fdcc4ff01b49053e",
+        "EV-3e55e1cd1d54f6ef",
+        "EV-cadcc94249dea81d",
+        "EV-d60e53c8a70c656e",
+        "EV-dae42c1daf8ba2f8",
+        "EV-92fbbeb840a98e97",
+        "EV-caec65aef89d3b4a",
+        "EV-70efbfcaadcdb259",
+        "EV-e130583e34ab9d4c",
+        "EV-a2476148e8f1eec4",
+        "EV-598888cce208de5c",
+        "EV-d40a4e1b7a53cabe",
+        "EV-51aed98773a9fca1",
+        "EV-9f04529a3a216060",
+        "EV-c12f0ae399078a56",
+        "EV-cc3b92fe233953cf",
+        "EV-2059f42c7b2aff44",
+        "EV-578a9db1fe952d0a",
+        "EV-8b5801b69eb1781b",
+        "EV-b93b5cc15823e9c3",
+        "EV-f784003febc1d9eb",
+        "EV-20ffa968bcbc4729",
+        "EV-71aeb7cb4d89926b",
+        "EV-77662aa9bef9efbe",
+        "EV-8f0c63ed7bb153dc",
+        "EV-9c0552732b34f278",
+        "EV-bf6f67c47c6b0d7c",
+        "EV-2399e1055b0ab507",
+        "EV-9ca7db66f8f10b63",
+        "EV-0df617a9a5ac727e",
+        "EV-63fdf001c22a0ed4",
+        "EV-2f81b0d48d128f5c",
+        "EV-8aead769e84de342",
+        "EV-d2c370511e9e55fe",
+        "EV-eddb4330fed15762",
+        "EV-01212a5ad9db6a20",
+        "EV-13e06fc12cc3fb7c",
+        "EV-1662a98c563d3dce",
+        "EV-3b5cb867fdaba28f",
+        "EV-3b77f14fea21485e",
+        "EV-9c4b862020202f6c",
+        "EV-ff748f8529cd80e7",
+        "EV-7fb25ff3d853c314",
+        "EV-918fc324de3117bd",
+        "EV-3acf607a02706fa8",
+        "EV-a4b72879f3d73ea4",
+        "EV-1ec24a430911185c",
+        "EV-860b90c017deaa59",
+        "EV-13f0b515194f3245",
+        "EV-192fd3be9dda93a7",
+        "EV-445db243814e88d0",
+        "EV-abf0990dcaceb1ce",
+        "EV-2740cdc5243d5c47",
+        "EV-46b9ae8e68164b93",
+        "EV-3ff2a155035d01e7",
+        "EV-644337db309a1c82",
+        "EV-b796ba14c4eba861",
+        "EV-7e6e0470ea99a6eb",
+        "EV-cb08f263d23e6c00",
+        "EV-482df8a8ef264238",
+        "EV-8a26b85b4f432525",
+        "EV-9536c76cee278fcb",
+        "EV-9e04edd969c977a1",
+        "EV-2aca9a810ea65555",
+        "EV-ceb7d70f0043eb81",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-491e7b4b506ab3e3",
+        "EV-93da4b8cebf54e9f",
+        "EV-f0caa4082916d619",
+        "EV-574998b1638a3f4f",
+        "EV-534dc9add1c0cc35",
+        "EV-60c27ec9b857f5c2",
+        "EV-cec69087dc8992e0",
+        "EV-7d0605aa7edf5e50",
+        "EV-ab3586268ebfab38",
+        "EV-832fa2db95cfea6e",
+        "EV-461b38cb8f56b067",
+        "EV-57f083a39393d841",
+        "EV-a695ff8c1cff8c64",
+        "EV-689538e8159887de",
+        "EV-68fcce7fde89e5d7",
+        "EV-7133e378762edda5",
+        "EV-b0145ffd99b55e66",
+        "EV-c7a2774b07554f5d",
+        "EV-c82c5ce2e2c39359",
+        "EV-e09bff5515b1896b",
+        "EV-f1418d9e3b1413b7",
+        "EV-f5dd192f6d4e04a3",
+        "EV-2eabd03665cbdef7",
+        "EV-c5b8faec223a4caf",
+        "EV-ad1444d8653b37ae",
+        "EV-03a6077b5d3f4475",
+        "EV-dbeae330706b53ca",
+        "EV-7f9631d793292d07",
+        "EV-abaf05e513f88a4f",
+        "EV-631197767a45d34c",
+        "EV-ce291577f61b8543",
+        "EV-773ffcc6e1df56fa",
+        "EV-2923b35d936d9f4e",
+        "EV-8115dd18f2812a29",
+        "EV-cf496e0f8a56ca97",
+        "EV-8cb5b0ed18c7cdd8",
+        "EV-94cb16144a8fcfdb",
+        "EV-56b36a56d729c20d",
+        "EV-741728825db1f14e",
+        "EV-abb190c09b08067c",
+        "EV-2cc379df19a83062",
+        "EV-d46aa5935d9bb672",
+        "EV-a61345459e796a19",
+        "EV-0eef30387327e73f",
+        "EV-420a9ad09680d2dc",
+        "EV-ae9142b65fa86975",
+        "EV-d709599eddf5db04",
+        "EV-7b2a272a891f54d1",
+        "EV-89bdda008227fb6b",
+        "EV-33fba8931cca96d5",
+        "EV-22c88b4ff8c7d8d8",
+        "EV-bf8086947a2639d4",
+        "EV-61053b02542f0fcc",
+        "EV-e6a7926fdb42b95a",
+        "EV-0990915063eb75a0",
+        "EV-2d56dec8dfeb2b56",
+        "EV-e1fa30136e2e12f1",
+        "EV-62df953d81def866",
+        "EV-933294dfb2d19a67",
+        "EV-0e7bfa49eb4ae5b2",
+        "EV-d49da50484ba781f",
+        "EV-0c541092e3ba6dac",
+        "EV-b75b87a4f86a8aaa",
+        "EV-9705a8de3c2e9653",
+        "EV-ed3baeeb5137137f",
+        "EV-81e297ea6f8fde3b",
+        "EV-68edd592c36dccd3",
+        "EV-ad269fada2269f35",
+        "EV-710b145230faa692",
+        "EV-32a5af8d5ef80073",
+        "EV-5e4db66a00cb2158",
+        "EV-77ddb45e31018552",
+        "EV-143af8b89b984bff",
+        "EV-7580a050ca19a8ae",
+        "EV-a381531dd3abef18",
+        "EV-d8be3852cb83a361",
+        "EV-366c3fce7982b83b",
+        "EV-8973f8148205ed35",
+        "EV-65a4b47d1cca0a7a",
+        "EV-e8e47f4bb528e107",
+        "EV-01f196f98ece4eb2",
+        "EV-ecfc552af7344d65",
+        "EV-8654cc0faeb02d14"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-education",
+        "TX-target_user-consumer",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-aerospace_defense",
+        "TX-target_user-researcher",
+        "TX-technology-embodied_ai",
+        "TX-use_case-data_analysis",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-industry-government_public_sector",
+        "TX-industry-legal_services",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-target_user-educator",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-human_in_loop",
+        "TX-technology-distillation"
+      ],
+      "relatedEntityIds": [
+        "EN-5a4c2be958c0af72",
+        "EN-163fa867e7ef6ee6",
+        "EN-9f15bb7e29e191eb",
+        "EN-fa12a0c13e906f43",
+        "EN-cb4754c48f8023d0",
+        "EN-830abc32d2a443c5",
+        "EN-240389f4b730bad4",
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
+        "EN-729324072d368379",
+        "EN-ef11a801c5bd3673",
+        "EN-fab30471ea65d627",
+        "EN-3a13916345b60fad",
+        "EN-968e2d5b08687bf4",
+        "EN-2c063f604e634100",
+        "EN-d0a0acb9a5ef0560",
+        "EN-e65e0f2695fa259d",
+        "EN-e4ffb7bd879b89da",
+        "EN-c8185a1a8a6595ad",
+        "EN-96eebba49dbbf422",
+        "EN-b8c236d640d6a5fb",
+        "EN-d8494bb34d6ddc43",
+        "EN-b59c577ed73536c6",
+        "EN-da20c5952dba19d8"
+      ],
+      "firstSeen": "2025-09-04",
+      "lastSeen": "2026-08-02"
+    },
+    {
+      "id": "EN-41dcc2d4951f337b",
+      "name": "Foundation Models framework",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Foundation"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c5b8faec223a4caf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-09"
+    },
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "英伟达"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-da1655ecfaf35feb",
+        "EV-e3792591090281c6",
+        "EV-8b7cbb66a33a945d",
+        "EV-4eaf3aabecae6016",
+        "EV-87432dbb99cd6033",
+        "EV-6e516b6e68def9cf",
+        "EV-e41fc65eb014893f",
+        "EV-463cb26b5e03c7f7",
+        "EV-13ec78dfdbca678b",
+        "EV-040fc355bc12a750",
+        "EV-7abd8ec418f1e7f3",
+        "EV-80e54c9a390da293",
+        "EV-4118202ed0f91895",
+        "EV-236cbc2d64f0c455",
+        "EV-a00763037a94d512",
+        "EV-0e84a2f49d765ce3",
+        "EV-467d1a701d21327d",
+        "EV-87b7a16e70770a36",
+        "EV-e09efcd49776cb95",
+        "EV-c2fe5030e8c71d8a",
+        "EV-c3f617e75d303f59",
+        "EV-b4f69c41e23c7ce0",
+        "EV-11b2293769081d4c",
+        "EV-883d3b5f6d30eb48",
+        "EV-0d08cee88fe18483",
+        "EV-cafe435ddd007821",
+        "EV-ed388875bc004add",
+        "EV-bc9abd502c002102",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-cf76f090a1a20a36",
+        "EV-4da18f97771852a9",
+        "EV-f84301feb2b7ae1e",
+        "EV-57d3b7aa1a2f0fda",
+        "EV-79c3f4f7cb2f2c86",
+        "EV-7263caa45bbf168e",
+        "EV-234ad54940674bf6",
+        "EV-6272444f30281858",
+        "EV-92be9fa58b1ee19f",
+        "EV-f55d16df5b5fecb2",
+        "EV-06526dd6cb2157f4",
+        "EV-98aa6402a8e256db",
+        "EV-6beed07120c6c6d0",
+        "EV-0d424ee04b1860ce",
+        "EV-91a444ff3955ad91",
+        "EV-e4fec8a00b416d12",
+        "EV-8c526681b74e2762",
+        "EV-5b16886442234f81",
+        "EV-80f4e7972384ace8",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-f4ead1a54e596bf8",
+        "EV-436bf00fedf6288d",
+        "EV-4faa2bcf2e42e60c",
+        "EV-58c1cc3749294649",
+        "EV-2ee06634c0ce9f30",
+        "EV-afb3bceddc36a696",
+        "EV-c4f8ef356373ab24",
+        "EV-272c5c798bc95d9d",
+        "EV-0f0b2013927ce156",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-7f92b7e410ed08f1",
+        "EV-87f052d24396fdbc",
+        "EV-18df881cc436b3cb",
+        "EV-828698c8779bb522",
+        "EV-2fea1664807824ce",
+        "EV-3ba971c5939b0f04",
+        "EV-cb3a8846bc4f8aca",
+        "EV-48977fd72d2fcfb8",
+        "EV-a37b9d9fb85e460f",
+        "EV-65666f7be5ac5ca2",
+        "EV-118317b7f92e5e16",
+        "EV-950237c6b3eb6343",
+        "EV-941ba9ebdc43f20c",
+        "EV-29e069ac093f0e34",
+        "EV-6b51b1b6fe22c540",
+        "EV-c2800c1c5a3f568f",
+        "EV-303b418c63895ba6",
+        "EV-d4ddee1b39cced77",
+        "EV-1ff169120ed385f6",
+        "EV-47d14d0aa4d4414e",
+        "EV-f7b60c0c63403f8c",
+        "EV-6139380f3362803b",
+        "EV-96c8ce4ee89adb84",
+        "EV-53f881da31630a04",
+        "EV-6a2f3e9a22edff64",
+        "EV-f784003febc1d9eb",
+        "EV-3028dfadf94c8f4c",
+        "EV-587c18cb1837c74f",
+        "EV-53564b1f0fd2214b",
+        "EV-7fb25ff3d853c314",
+        "EV-3acf607a02706fa8",
+        "EV-8a91e14f37d32b4d",
+        "EV-31782f0824ae1db1",
+        "EV-13f0b515194f3245",
+        "EV-5d50eb202b478bd4",
+        "EV-be69ef6fcae83890",
+        "EV-e2db9c4e7c16ae7a",
+        "EV-66338f5fb682617e",
+        "EV-b7ba9acba80a852e",
+        "EV-1a1fb68ba4d6a377",
+        "EV-bac5824e594f1831",
+        "EV-625904809a9b14b8",
+        "EV-4bb5b24400e49ea4",
+        "EV-568d2aeab5234e48",
+        "EV-b986a633cca27df9",
+        "EV-57597c92f7b183a9",
+        "EV-2258329f33d413cf",
+        "EV-4bf0e4043c3562f2",
+        "EV-309ea4fc27a66485",
+        "EV-fa1b1efd77f36d56",
+        "EV-62a2246aa3df0438",
+        "EV-4026c95d4c01b96e",
+        "EV-631197767a45d34c",
+        "EV-66b510b948ad4ba4",
+        "EV-67f32771d69084d6",
+        "EV-aa63303570154a9b",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-0e2a68efc19bfbaa",
+        "EV-02b19ffbe883ee2e",
+        "EV-8993e021ac17df4a",
+        "EV-34929bdd016dc8d6",
+        "EV-eae8f316bc05820b",
+        "EV-cd7e18de453152dd",
+        "EV-89bdda008227fb6b",
+        "EV-89f9216de5b559ac",
+        "EV-c14e5185fd6bbe30",
+        "EV-08f736f61f2b46f3",
+        "EV-2c7d13d234147817",
+        "EV-710b145230faa692",
+        "EV-0b49d637d7c07ce0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-physical_automation",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model_api_service",
+        "TX-target_user-developer",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-industry-media_entertainment",
+        "TX-industry-automotive_transportation",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_support",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-ai_market_application-chips",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-technology-multimodal",
+        "TX-product_form-security_software",
+        "TX-industry-telecommunications",
+        "TX-industry-logistics_supply_chain",
+        "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
+        "TX-product_form-compute_cloud_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
+        "EN-e07654c7cc29acbd",
+        "EN-52c2f30b6bda5898",
+        "EN-683d8d597da71192",
+        "EN-aa15d891a32a51b8",
+        "EN-0f3360879e746531",
+        "EN-a1b0d8a938903dc7",
+        "EN-956b7280912ef1cc",
+        "EN-4a639cb888a15d75",
+        "EN-8d323d8bba783aa3",
+        "EN-b5738c169b693bee",
+        "EN-51fd7dc086fcb858",
+        "EN-9e193e1ec8d75d41",
+        "EN-3ae50afab3e392b8",
+        "EN-4e7e886400fe6a83",
+        "EN-1dc405a4cda895d0",
+        "EN-12ab68e37d104d27",
+        "EN-8395dc051feafc4c",
+        "EN-a3266ab9e10d6105",
+        "EN-9fbf261b62c1d7c0",
+        "EN-11ef7b03c79c9bbd",
+        "EN-9bc22dcabf7f45b3",
+        "EN-171fa23d27b5894b"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-e07654c7cc29acbd",
+      "name": "Cosmos 3 Edge",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-65666f7be5ac5ca2",
+        "EV-941ba9ebdc43f20c",
+        "EV-d4ddee1b39cced77",
+        "EV-0e2a68efc19bfbaa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-embodied_ai",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-c3ce0cc92b48bbd6",
+      "name": "面壁智能联合清华等",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-05-25"
+    },
+    {
+      "id": "EN-54ef981ab82586b5",
+      "name": "BitCPM-CANN",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-05-25"
+    },
+    {
+      "id": "EN-80d387ccb3289295",
+      "name": "SoftBank",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "软银"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1a6688afdfd108ef",
+        "EV-cafe435ddd007821",
+        "EV-a37b9d9fb85e460f",
+        "EV-08f736f61f2b46f3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-product_form-model",
+        "TX-industry-telecommunications",
+        "TX-technology-embodied_ai",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-22"
+    },
+    {
+      "id": "EN-b7dac8ddfad3bea8",
+      "name": "Apple 智能",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8692dfde7c3ef5b5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-6f7ac1823da81d2e",
+      "name": "DeepSeek",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-d4d7b019ff0015df",
+        "EV-27b69ea604475b72",
+        "EV-f8c3a83d883c9b22",
+        "EV-6374a712070b1f8c",
+        "EV-b27f2e417d779e5f",
+        "EV-8f2787ceb5224cc9",
+        "EV-f01a57b8fbd2518e",
+        "EV-5b193a038ab4ea22",
+        "EV-2fea1664807824ce",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-4e54b77583b0a83e",
+        "EV-f8ba1728de6a4899",
+        "EV-caec65aef89d3b4a",
+        "EV-57e6392fe3bb69cd",
+        "EV-eddb4330fed15762",
+        "EV-2aca9a810ea65555",
+        "EV-a498b12f3fa2197e",
+        "EV-d064939235825765",
+        "EV-6af31d42885e0361",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-4dfd7233c8c69b0b",
+        "EV-657837763764c869",
+        "EV-388a53fe918389b0",
+        "EV-3aefbdfa5df2fd6a",
+        "EV-c14e5185fd6bbe30",
+        "EV-48e17a3ba4b73550",
+        "EV-848bdd13f319c516",
+        "EV-86537be17d50ff20",
+        "EV-b6970cb396a7b1ed"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-target_user-developer",
+        "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-product_form-model",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-target_user-researcher",
+        "TX-use_case-research_discovery",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-08-02"
+    },
+    {
+      "id": "EN-3dd90c2e1bf28b32",
+      "name": "小米 MiMo 完成大语言",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-multimodal",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-5d7b7e77768bfdfc",
+      "name": "多模态",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d3054a8a2b62a503",
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-multimodal",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-25"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-2fa9fc722d1d22f9",
+      "snapshotKey": "2fa9fc722d1d22f9",
+      "snapshotId": "HWS-825c2169bb6387ae",
+      "eventId": "EV-7a0f201debe99f2b",
+      "eventIds": [
+        "EV-7a0f201debe99f2b"
+      ],
+      "dataDate": "2026-07-31",
+      "date": "2026-07-31",
+      "title": "DeepMind / Gemini Robotics 2",
+      "subject": "Google DeepMind",
+      "productNames": [
+        "DeepMind",
+        "Gemini Robotics 2"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-85aa0e443edb43c2"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-31",
+          "hardware_fact_id": "HWF-85aa0e443edb43c2",
+          "fact_type": "product",
+          "observed_at": "2026-07-30T17:20:50.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-4d09c69c19f5f67b",
+            "EN-e1086f449d58de87"
+          ],
+          "product_names": [
+            "DeepMind",
+            "Gemini Robotics 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Google DeepMind has released Gemini Robotics 2 , the intelligence layer for its next generation of robots.",
+          "event_refs": [
+            "EV-7a0f201debe99f2b"
+          ],
+          "claim_ref": "CL-824523486c4b7c42",
+          "source_refs": [
+            "SA-6436d40ab638ade0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-31/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-2b6e51bec93e86c1",
+            "EN-4d09c69c19f5f67b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-4d09c69c19f5f67b",
+        "EN-e1086f449d58de87"
+      ]
+    },
+    {
+      "id": "HWC-dd5f617ef36258ae",
+      "snapshotKey": "dd5f617ef36258ae",
+      "snapshotId": "HWS-d31e74740359648b",
+      "eventId": "EV-a5efa57f3f744425",
+      "eventIds": [
+        "EV-a5efa57f3f744425"
+      ],
+      "dataDate": "2026-07-20",
+      "date": "2026-07-20",
+      "title": "MiniCPM5-2B",
+      "subject": "面壁智能",
+      "productNames": [
+        "MiniCPM5-2B"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-59b4016918d24007"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-a12c65a0b4a2e547"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-a12c65a0b4a2e547",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-19T13:40:52.000Z",
+          "subject_entity_id": "EN-3309b3b14807f39a",
+          "subject_name": "面壁智能",
+          "product_entity_ids": [
+            "EN-61a405a731497229"
+          ],
+          "product_names": [
+            "MiniCPM5-2B"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "官方表示， 在不久的将来，MiniCPM5-2B 将正式开源 ，开发者可通过 Hugging Face、魔搭等平台获取模型权重，同时可获取针对各芯片平台的适配镜像与部署指南。",
+          "event_refs": [
+            "EV-a5efa57f3f744425"
+          ],
+          "claim_ref": "CL-0ed1fe63ba15c030",
+          "source_refs": [
+            "SA-7d10310c2b856ddd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-20",
+          "hardware_fact_id": "HWF-59b4016918d24007",
+          "fact_type": "product",
+          "observed_at": "2026-07-19T13:40:52.000Z",
+          "subject_entity_id": "EN-3309b3b14807f39a",
+          "subject_name": "面壁智能",
+          "product_entity_ids": [
+            "EN-61a405a731497229"
+          ],
+          "product_names": [
+            "MiniCPM5-2B"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 7 月 19 日消息，面壁智能今日联合 OpenBMB 在 2026 世界人工智能大会上发布了最新端侧模型 MiniCPM5-2B ，并完成多款芯片适配。",
+          "event_refs": [
+            "EV-a5efa57f3f744425"
+          ],
+          "claim_ref": "CL-f2fa513ae091829e",
+          "source_refs": [
+            "SA-7d10310c2b856ddd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-3309b3b14807f39a",
+            "EN-61a405a731497229"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/978/796.htm",
+      "entityIds": [
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229"
+      ]
+    },
+    {
+      "id": "HWC-a69a19ffe8796885",
+      "snapshotKey": "a69a19ffe8796885",
+      "snapshotId": "HWS-4f9ce8922bd11dc4",
+      "eventId": "EV-f7b60c0c63403f8c",
+      "eventIds": [
+        "EV-f7b60c0c63403f8c"
+      ],
+      "dataDate": "2026-07-11",
+      "date": "2026-07-11",
+      "title": "Booster T2",
+      "subject": "加速进化",
+      "productNames": [
+        "Booster T2"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "fact_ref": "HWF-77eabea35e1e8f34"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-07-11",
+          "hardware_fact_id": "HWF-90ddff6f76b8199a",
+          "fact_type": "product",
+          "observed_at": "2026-07-10T12:49:35.000Z",
+          "subject_entity_id": "EN-de6b71bf77ff4299",
+          "subject_name": "加速进化",
+          "product_entity_ids": [
+            "EN-c4ef31845ea79710"
+          ],
+          "product_names": [
+            "Booster T2"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "source_quote": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力 - IT之家",
+          "event_refs": [
+            "EV-f7b60c0c63403f8c"
+          ],
+          "claim_ref": "CL-7044c3e5ee3cf9e0",
+          "source_refs": [
+            "SA-c09c2ef108e2cf71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-11/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-07-11",
+          "hardware_fact_id": "HWF-77eabea35e1e8f34",
+          "fact_type": "product",
+          "observed_at": "2026-07-10T12:49:35.000Z",
+          "subject_entity_id": "EN-de6b71bf77ff4299",
+          "subject_name": "加速进化",
+          "product_entity_ids": [
+            "EN-c4ef31845ea79710"
+          ],
+          "product_names": [
+            "Booster T2"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "2070",
+          "unit": "TFLOPS",
+          "source_quote": "加速进化发布 Booster T2 具身开发旗舰平台：搭载英伟达 Thor 芯片，2070TFLOPS 算力",
+          "event_refs": [
+            "EV-f7b60c0c63403f8c"
+          ],
+          "claim_ref": "CL-f2bc8db4d7c0babc",
+          "source_refs": [
+            "SA-c09c2ef108e2cf71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-07-11/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "inference_optimization",
+          "name": "推理优化",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-de6b71bf77ff4299",
+            "EN-c4ef31845ea79710"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/975/340.htm",
+      "entityIds": [
+        "EN-de6b71bf77ff4299",
+        "EN-8d4321d936320802",
+        "EN-c4ef31845ea79710"
+      ]
+    }
+  ]
+}

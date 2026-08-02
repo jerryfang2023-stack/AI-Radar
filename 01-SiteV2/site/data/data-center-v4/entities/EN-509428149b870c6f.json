@@ -4,10 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-02T00:45:06.334Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1769,
+    "eventCount": 1770,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -56,9 +57,14 @@
         "displayTags": [
           {
             "dimensionId": "use_case",
-            "id": "procurement_supply_chain",
             "dimensionName": "应用场景",
-            "name": "采购与供应链"
+            "id": "procurement_supply_chain",
+            "name": "采购与供应链",
+            "entityIds": [
+              "EN-509428149b870c6f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
@@ -78,27 +84,52 @@
       "typeLabel": "应用场景",
       "valueId": "procurement_supply_chain",
       "eventIds": [
+        "EV-dcbe916c6138e5cb",
+        "EV-0dfcd1e634de755b",
         "EV-1a6def173f4d7c94",
+        "EV-63236c15166b71e0",
+        "EV-232ab5bcbaf6552d",
+        "EV-ad0589423b3aa1ce",
+        "EV-2083b9eda52a3f76",
+        "EV-dd78b63f18dba410",
+        "EV-9e678b626c2a5c83",
+        "EV-e0ecb5f81a273447",
+        "EV-a3ba586cbc57b5fd",
+        "EV-0b6cfbf67ba2da31",
+        "EV-7585b033d4005977",
         "EV-95754eabe46fe4c3",
         "EV-4db890779221bd9a",
         "EV-6617850e0b014051",
         "EV-6ce6b9c9780b97d9"
       ],
       "entityIds": [
+        "EN-814669895ed30dff",
+        "EN-5afd6103effc8a64",
         "EN-64bdeb7efae18e1b",
+        "EN-d6386c59a6bcfcb1",
+        "EN-c945929c3683ffb0",
+        "EN-ab447173a7f5af44",
+        "EN-ef2bee7868007cd4",
+        "EN-20b5af8f2c749bf8",
+        "EN-5c178682f5573d29",
+        "EN-afff1ef2d34b618e",
+        "EN-7035f6607ad2d162",
+        "EN-80f681ea74fb8ccc",
+        "EN-15516525ca2aa1a4",
         "EN-509428149b870c6f",
         "EN-27032b3c60ab2a95",
         "EN-96eebba49dbbf422",
         "EN-61cce404a45c3545",
-        "EN-2a920347dfcf07a7",
         "EN-9fbf261b62c1d7c0",
         "EN-2dc010636b9dce91",
-        "EN-23b979df49741c93"
+        "EN-23b979df49741c93",
+        "EN-02072c80a8386e8d",
+        "EN-2eb073b22916de55"
       ],
       "fdeIds": [],
       "hardwareIds": [],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-19"
+      "firstSeen": "2026-02-13",
+      "lastSeen": "2026-07-30"
     }
   ],
   "fde": [],
