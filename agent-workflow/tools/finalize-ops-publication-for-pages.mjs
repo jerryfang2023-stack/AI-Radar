@@ -68,6 +68,14 @@ export function finalizeOpsPublicationData({
   };
   ops.quality = {
     ...ops.quality,
+    pipelineMeta: {
+      ...ops.quality?.pipelineMeta,
+      deployment: evidence,
+    },
+    latest: {
+      ...ops.quality?.latest,
+      publication: evidence,
+    },
     telemetry: {
       ...ops.quality?.telemetry,
       publication: evidence,

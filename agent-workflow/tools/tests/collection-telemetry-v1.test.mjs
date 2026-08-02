@@ -94,10 +94,14 @@ test("application projection is not passed while any projection outcome is unkno
 
 test("daily workflow keeps OPS telemetry independent and does not write a local Vault in GitHub Actions", () => {
   const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  const dryRunWorkflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-production-chain-dry-run.yml"), "utf8");
   const opsBlock = workflow.match(/- name: Sync operations data after V4 production[\s\S]*?(?=\n\s+- name:)/u)?.[0] || "";
+  const dryRunOpsBlock = dryRunWorkflow.match(/- name: Build operations data after V4 materialization[\s\S]*?(?=\n\s+- name:)/u)?.[0] || "";
   assert.doesNotMatch(workflow, /Sync FDE and AI hardware Obsidian archives|sync-(?:enterprise-ai-fde|ai-hardware)-to-obsidian/u);
   assert.match(opsBlock, /build-collection-telemetry-v1\.mjs/u);
   assert.match(opsBlock, /steps\.data-center-v4-materialize\.outcome == 'success'/u);
+  assert.match(opsBlock, /--lenses="\$\{\{ steps\.data-center-v4-materialize\.outcome \}\}"/u);
+  assert.match(dryRunOpsBlock, /--lenses="\$\{\{ steps\.data-center-v4-materialize\.outcome \}\}"/u);
   assert.doesNotMatch(opsBlock, /if:.*business-frontstage-gate/u);
 });
 
@@ -142,6 +146,8 @@ test("Pages artifact finalization marks publication passed with deployment evide
     meta: {},
     tasks: { stages },
     quality: {
+      pipelineMeta: {},
+      latest: { publication: { status: "waiting" } },
       telemetry: {
         publication: { status: "waiting" },
         compatibility: {
@@ -175,6 +181,8 @@ test("Pages artifact finalization marks publication passed with deployment evide
   });
   assert.equal(pipeline.latest.publication.commit, "abc123");
   assert.equal(ops.tasks.stages[0].status, "passed");
+  assert.equal(ops.quality.pipelineMeta.deployment.commit, "abc123");
+  assert.equal(ops.quality.latest.publication.commit, "abc123");
   assert.deepEqual(ops.quality.telemetry.compatibility, {
     status: "retired_archive",
     production_write: "disabled",

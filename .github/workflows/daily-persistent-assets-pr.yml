@@ -496,7 +496,7 @@ jobs:
             --opportunity="${{ steps.opportunity-map-v4.outcome }}" \
             --trend="${{ steps.trend-radar-projection.outcome }}" \
             --funding="${{ steps.funding-insights.outcome }}" \
-            --lenses=local_projection \
+            --lenses="${{ steps.data-center-v4-materialize.outcome }}" \
             --publication=waiting \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-collection-telemetry.log"
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs \
