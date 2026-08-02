@@ -37,6 +37,7 @@ test("Opportunity Map projection reads accepted V4 evidence without Signal Cards
   assert.ok(data.evidence.every((card) => Object.values(card.application_assertions).flat()
     .every((item) => card.claim_refs.includes(item.claim_ref) && item.source_refs.every((id) => card.source_refs.includes(id)))));
   assert.ok(data.evidence.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));
+  assert.ok(data.evidence.every((card) => card.taxonomy_version === "TAG-V4.1" && Array.isArray(card.classifications)));
   assert.equal(data.directionCards.length, 2);
   assert.ok(data.directionCards.every((card) => card.judgment && card.counterSignal));
   assert.ok(data.directionCards.every((card) => card.evidenceCount >= 2));
@@ -52,6 +53,8 @@ test("Opportunity Map projection reads accepted V4 evidence without Signal Cards
   assert.doesNotMatch(opportunityHtml, /data\/v3-data-observation-desk\.json/u);
   assert.match(opportunityHtml, /data\/opportunity-evidence-v2\.json/u);
   assert.match(opportunityHtml, /OMAP-V2\.0\.0-v4-evidence/u);
+  assert.match(opportunityHtml, /card\.classifications/u);
+  assert.match(opportunityHtml, /model_api_service/u);
   assert.match(opportunityHtml, /data-direction-cards|查看方向|创业假设/u);
   assert.doesNotMatch(opportunityHtml, /data-map-toggle|Cell Evidence|Relation Paths/u);
 });

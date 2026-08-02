@@ -43,7 +43,8 @@ const expected = {
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.2.0-research-hub",
   opportunity: "OMAP-V2.0.0-v4-evidence",
-  trendRadar: "TRADAR-V1.0.1-china-market-filter",
+  trendRadar: "TRADAR-V1.1.0-tag-v4-1",
+  taxonomy: "TAG-V4.1",
   fundingInsights: "FUNDING-INSIGHT-V1.2.0-market-category",
   person: "PERSON-REVIEW-V1.1",
   skillStore: "v2.0.1 GPT-5.6 full-audit corrections",
@@ -61,6 +62,7 @@ const ledgerChecks = [
   ["Guanlan Research column version", expected.reports],
   ["Opportunity Map column version", expected.opportunity],
   ["Trend Radar column version", expected.trendRadar],
+  ["Tag taxonomy version", expected.taxonomy],
   ["Funding Insights column version", expected.fundingInsights],
   ["Person-account review contract", expected.person],
   ["Weekly report page-generator Skill", "guanlan-weekly-report-page-generator v1.2.0"],
@@ -90,6 +92,15 @@ for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
 }
 expectText("AGENTS.md", "Current Skill Store version: `v2.0.1`");
+expectText("AGENTS.md", `Current tag taxonomy version: ${expected.taxonomy}`);
+expectText("context/00-current-state.md", expected.taxonomy);
+expectText("context/12-data-center-v4.md", expected.taxonomy);
+const dataCenterSchema = readJson("agent-workflow/product/data-center-v4.schema.json");
+if (dataCenterSchema.$defs?.tagAssertion?.properties?.taxonomy_version?.const !== expected.taxonomy
+  || dataCenterSchema.$defs?.facetAssertion?.properties?.taxonomy_version?.const !== expected.taxonomy
+  || dataCenterSchema.$defs?.reviewedEventClassification?.properties?.taxonomy_version?.const !== expected.taxonomy) {
+  fail("Data Center schema taxonomy version does not match the version ledger");
+}
 expectText(".agents/README.md", "Skill Store version: `v2.0.1`");
 expectText("docs/agent-handoff.md", "Current Skill governance: Skill Store `v2.0.1`");
 expectText("context/version-ledger.md", "`guanlan-code-rule-auditor` v1.2.1 audits V4 facts");

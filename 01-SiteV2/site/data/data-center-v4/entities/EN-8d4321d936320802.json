@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -172,38 +172,26 @@
       "TX-product_form-model_api_service",
       "TX-target_user-developer",
       "TX-technology-agentic_execution",
-      "TX-product_form-end_user_application",
       "TX-target_user-business_user",
-      "TX-industry-media_entertainment",
       "TX-industry-automotive_transportation",
       "TX-industry-manufacturing",
       "TX-use_case-customer_support",
-      "TX-product_form-enterprise_software_platform",
       "TX-use_case-security_operations",
       "TX-product_form-ai_infrastructure_software",
       "TX-product_form-model",
-      "TX-technology-code_generation",
       "TX-ai_market_application-chips",
       "TX-ai_market_subcategory-hardware_computing",
       "TX-technology-multimodal",
-      "TX-product_form-security_software",
-      "TX-industry-telecommunications",
       "TX-industry-logistics_supply_chain",
       "TX-product_form-robotic_system",
       "TX-technology-embodied_ai",
-      "TX-product_form-compute_cloud_service",
       "TX-industry-healthcare_life_sciences",
       "TX-use_case-research_discovery",
-      "TX-technology-long_context",
       "TX-technology-mixture_of_experts",
       "TX-technology-on_device",
       "TX-deployment_model-edge_device",
       "TX-deployment_model-cloud",
-      "TX-deployment_model-on_premise",
-      "TX-technology-fine_tuning",
       "TX-technology-open_weights",
-      "TX-technology-tool_use",
-      "TX-technology-reasoning",
       "TX-technology-speech_audio"
     ],
     "relatedEntityIds": [
@@ -466,14 +454,7 @@
             "dimensionName": "应用场景",
             "id": "security_operations",
             "name": "安全运营",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-2dc010636b9dce91",
-              "EN-916a98f0fa2a39af",
-              "EN-9fbf261b62c1d7c0",
-              "EN-3ccbd9105a45d8fc",
-              "EN-b5738c169b693bee"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -503,10 +484,7 @@
             "dimensionName": "产品形态",
             "id": "chip_accelerator",
             "name": "芯片与加速器",
-            "entityIds": [
-              "EN-4f7a84e78c03b14b",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -533,24 +511,7 @@
             "dimensionName": "技术",
             "id": "open_weights",
             "name": "开放权重",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-9fbf261b62c1d7c0",
-              "EN-7d3194f79e645c42"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-9fbf261b62c1d7c0",
-              "EN-b5251b35f15bedc4"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -627,8 +588,7 @@
             "id": "embodied_ai",
             "name": "具身智能",
             "entityIds": [
-              "EN-b47de584b4515427",
-              "EN-8d4321d936320802"
+              "EN-b47de584b4515427"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -656,8 +616,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-c3983a4111660712",
-              "EN-8d4321d936320802"
+              "EN-c3983a4111660712"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -726,18 +685,6 @@
             "provenance": "reviewed_funding_insight",
             "reviewRef": "REC-1c9aa6c5525e88f4",
             "fundingInsightId": "FI-630989a4e13b10d0"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-9cb45a27a2808c01",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
           },
           {
             "dimensionId": "target_user",
@@ -835,10 +782,7 @@
             "dimensionName": "行业",
             "id": "manufacturing",
             "name": "制造业",
-            "entityIds": [
-              "EN-bb74959cf87dec17",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -938,10 +882,7 @@
             "dimensionName": "行业",
             "id": "manufacturing",
             "name": "制造业",
-            "entityIds": [
-              "EN-43664b1263361b29",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -1088,21 +1029,7 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-240389f4b730bad4",
-              "EN-45c52af0feb0f285"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-240389f4b730bad4",
-              "EN-8d4321d936320802",
-              "EN-45c52af0feb0f285"
+              "EN-240389f4b730bad4"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1113,8 +1040,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-240389f4b730bad4",
-              "EN-e1517be14d06cdb7"
+              "EN-240389f4b730bad4"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1125,8 +1051,7 @@
             "id": "human_in_loop",
             "name": "人在回路",
             "entityIds": [
-              "EN-240389f4b730bad4",
-              "EN-e1517be14d06cdb7"
+              "EN-240389f4b730bad4"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1208,8 +1133,7 @@
             "id": "physical_automation",
             "name": "物理自动化",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-4cbf88b0da5d15f8"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1220,8 +1144,7 @@
             "id": "embodied_ai",
             "name": "具身智能",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-4cbf88b0da5d15f8"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1232,8 +1155,7 @@
             "id": "healthcare_life_sciences",
             "name": "医疗与生命科学",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-4cbf88b0da5d15f8"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1277,11 +1199,7 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-a9776b12a97fe2d9",
-              "EN-c70eca6b0f88f44d",
-              "EN-ea3bd73e2b506e00",
-              "EN-7d3194f79e645c42",
-              "EN-8d4321d936320802"
+              "EN-a9776b12a97fe2d9"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1379,13 +1297,7 @@
             "dimensionName": "产品形态",
             "id": "chip_accelerator",
             "name": "芯片与加速器",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d",
-              "EN-ea3bd73e2b506e00",
-              "EN-bbdefa2950f49882",
-              "EN-373ac021a2c0bb2c",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -1640,8 +1552,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-99f9ebbef37fcec5",
-              "EN-8d4321d936320802"
+              "EN-99f9ebbef37fcec5"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1669,9 +1580,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-0d1e478de2157d48",
-              "EN-8d4321d936320802",
-              "EN-4546b5bdff2ea8ed"
+              "EN-0d1e478de2157d48"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1682,9 +1591,7 @@
             "id": "long_context",
             "name": "长上下文",
             "entityIds": [
-              "EN-0d1e478de2157d48",
-              "EN-8d4321d936320802",
-              "EN-4546b5bdff2ea8ed"
+              "EN-0d1e478de2157d48"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1695,9 +1602,7 @@
             "id": "mixture_of_experts",
             "name": "混合专家模型",
             "entityIds": [
-              "EN-0d1e478de2157d48",
-              "EN-8d4321d936320802",
-              "EN-4546b5bdff2ea8ed"
+              "EN-0d1e478de2157d48"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1708,9 +1613,7 @@
             "id": "open_weights",
             "name": "开放权重",
             "entityIds": [
-              "EN-0d1e478de2157d48",
-              "EN-8d4321d936320802",
-              "EN-4546b5bdff2ea8ed"
+              "EN-0d1e478de2157d48"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1831,10 +1734,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-3bc9f78028bc2dba",
-              "EN-8d4321d936320802",
-              "EN-ea3bd73e2b506e00",
-              "EN-50e756052d0a9ac3"
+              "EN-3bc9f78028bc2dba"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1888,20 +1788,7 @@
             "id": "physical_automation",
             "name": "物理自动化",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-e07654c7cc29acbd"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "embodied_ai",
-            "name": "具身智能",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-e07654c7cc29acbd"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1923,8 +1810,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-e07654c7cc29acbd"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1954,8 +1840,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-e07654c7cc29acbd"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1966,8 +1851,7 @@
             "id": "on_device",
             "name": "端侧",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-e07654c7cc29acbd"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -1978,8 +1862,7 @@
             "id": "edge_device",
             "name": "边缘与端侧",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-e07654c7cc29acbd"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -2040,11 +1923,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-d7aba0f660c463d8",
-              "EN-8d4321d936320802",
-              "EN-e58ee91f1d57df05",
-              "EN-3fd1b8ed094cd712",
-              "EN-8f451ae7730ddb67"
+              "EN-d7aba0f660c463d8"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -2213,10 +2092,7 @@
             "dimensionName": "产品形态",
             "id": "chip_accelerator",
             "name": "芯片与加速器",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-4c66141fde69a497"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -2305,8 +2181,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-366289432b214eda",
-              "EN-8d4321d936320802"
+              "EN-366289432b214eda"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -2345,11 +2220,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-0f3360879e746531"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2358,10 +2229,7 @@
             "dimensionName": "产品形态",
             "id": "chip_accelerator",
             "name": "芯片与加速器",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2370,23 +2238,7 @@
             "dimensionName": "应用场景",
             "id": "physical_automation",
             "name": "物理自动化",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-0f3360879e746531"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2395,11 +2247,7 @@
             "dimensionName": "技术",
             "id": "multimodal",
             "name": "多模态",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-0f3360879e746531"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2408,23 +2256,7 @@
             "dimensionName": "技术",
             "id": "embodied_ai",
             "name": "具身智能",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-0f3360879e746531"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "embodied_ai",
-            "name": "具身智能",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2433,23 +2265,7 @@
             "dimensionName": "行业",
             "id": "manufacturing",
             "name": "制造业",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-0f3360879e746531"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2469,11 +2285,7 @@
             "dimensionName": "行业",
             "id": "healthcare_life_sciences",
             "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-0f3360879e746531"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2482,23 +2294,7 @@
             "dimensionName": "行业",
             "id": "telecommunications",
             "name": "电信",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-0f3360879e746531"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "healthcare_life_sciences",
-            "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2507,23 +2303,7 @@
             "dimensionName": "行业",
             "id": "automotive_transportation",
             "name": "汽车与交通",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "telecommunications",
-            "name": "电信",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-59ae856cd788d0f5",
-              "EN-80d387ccb3289295"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -2620,18 +2400,6 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-cbc62794911ff31b",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
               "EN-cbc62794911ff31b"
             ],
             "provenance": "claim_assertion",
@@ -2643,8 +2411,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-cbc62794911ff31b",
-              "EN-8d4321d936320802"
+              "EN-cbc62794911ff31b"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -2672,10 +2439,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-80d387ccb3289295"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2695,10 +2459,7 @@
             "dimensionName": "技术",
             "id": "on_device",
             "name": "端侧",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-80d387ccb3289295"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2707,10 +2468,7 @@
             "dimensionName": "技术",
             "id": "embodied_ai",
             "name": "具身智能",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-80d387ccb3289295"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2741,10 +2499,7 @@
             "dimensionName": "行业",
             "id": "manufacturing",
             "name": "制造业",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-80d387ccb3289295"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2753,10 +2508,7 @@
             "dimensionName": "部署形态",
             "id": "edge_device",
             "name": "边缘与端侧",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-80d387ccb3289295"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -2873,8 +2625,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-0f3360879e746531",
-              "EN-8d4321d936320802"
+              "EN-0f3360879e746531"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -2902,9 +2653,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-bbdefa2950f49882",
-              "EN-8d4321d936320802",
-              "EN-085598c00f2aaccf"
+              "EN-bbdefa2950f49882"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -2915,9 +2664,7 @@
             "id": "tool_use",
             "name": "工具调用",
             "entityIds": [
-              "EN-bbdefa2950f49882",
-              "EN-8d4321d936320802",
-              "EN-085598c00f2aaccf"
+              "EN-bbdefa2950f49882"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -2945,10 +2692,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2957,10 +2701,7 @@
             "dimensionName": "应用场景",
             "id": "physical_automation",
             "name": "物理自动化",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2969,11 +2710,7 @@
             "dimensionName": "技术",
             "id": "embodied_ai",
             "name": "具身智能",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802",
-              "EN-0f3360879e746531"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -2982,22 +2719,7 @@
             "dimensionName": "技术",
             "id": "multimodal",
             "name": "多模态",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "embodied_ai",
-            "name": "具身智能",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3006,11 +2728,7 @@
             "dimensionName": "行业",
             "id": "healthcare_life_sciences",
             "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802",
-              "EN-0f3360879e746531"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3019,11 +2737,7 @@
             "dimensionName": "行业",
             "id": "manufacturing",
             "name": "制造业",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802",
-              "EN-0f3360879e746531"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3032,23 +2746,7 @@
             "dimensionName": "行业",
             "id": "telecommunications",
             "name": "电信",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802",
-              "EN-0f3360879e746531"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "manufacturing",
-            "name": "制造业",
-            "entityIds": [
-              "EN-e3b1bf3dab957ffe",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -3075,11 +2773,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-ac123e56b0168ec2",
-              "EN-8d4321d936320802",
-              "EN-8395dc051feafc4c"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3088,11 +2782,7 @@
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体",
-            "entityIds": [
-              "EN-ac123e56b0168ec2",
-              "EN-8d4321d936320802",
-              "EN-8395dc051feafc4c"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3150,30 +2840,6 @@
             "name": "芯片与加速器",
             "entityIds": [
               "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-29e1f755865493a8"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "physical_automation",
-            "name": "物理自动化",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-cbc62794911ff31b"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3345,10 +3011,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-c70eca6b0f88f44d"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3357,10 +3020,7 @@
             "dimensionName": "产品形态",
             "id": "chip_accelerator",
             "name": "芯片与加速器",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-c70eca6b0f88f44d"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3381,10 +3041,7 @@
             "dimensionName": "技术",
             "id": "long_context",
             "name": "长上下文",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-c70eca6b0f88f44d"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3393,10 +3050,7 @@
             "dimensionName": "技术",
             "id": "mixture_of_experts",
             "name": "混合专家模型",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-c70eca6b0f88f44d"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -3453,10 +3107,7 @@
             "dimensionName": "行业",
             "id": "manufacturing",
             "name": "制造业",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-c70eca6b0f88f44d"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -3500,34 +3151,7 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-4a639cb888a15d75",
-              "EN-8d4321d936320802",
-              "EN-65b3aa2f527deeef",
-              "EN-a2413f7c5095f988",
-              "EN-c165c006a5968443"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
               "EN-4a639cb888a15d75"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-4a639cb888a15d75",
-              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3538,24 +3162,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-4a639cb888a15d75",
-              "EN-8d4321d936320802",
-              "EN-65b3aa2f527deeef",
-              "EN-a2413f7c5095f988"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-4a639cb888a15d75",
-              "EN-8d4321d936320802",
-              "EN-65b3aa2f527deeef",
-              "EN-a2413f7c5095f988"
+              "EN-4a639cb888a15d75"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3566,8 +3173,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-4a639cb888a15d75",
-              "EN-8d4321d936320802"
+              "EN-4a639cb888a15d75"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3578,8 +3184,7 @@
             "id": "fine_tuning",
             "name": "模型微调",
             "entityIds": [
-              "EN-4a639cb888a15d75",
-              "EN-8d4321d936320802"
+              "EN-4a639cb888a15d75"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3710,8 +3315,7 @@
             "id": "multimodal",
             "name": "多模态",
             "entityIds": [
-              "EN-de6b71bf77ff4299",
-              "EN-c4ef31845ea79710"
+              "EN-de6b71bf77ff4299"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3722,8 +3326,7 @@
             "id": "inference_optimization",
             "name": "推理优化",
             "entityIds": [
-              "EN-de6b71bf77ff4299",
-              "EN-c4ef31845ea79710"
+              "EN-de6b71bf77ff4299"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3734,8 +3337,7 @@
             "id": "on_device",
             "name": "端侧",
             "entityIds": [
-              "EN-de6b71bf77ff4299",
-              "EN-c4ef31845ea79710"
+              "EN-de6b71bf77ff4299"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3746,8 +3348,7 @@
             "id": "edge_device",
             "name": "边缘与端侧",
             "entityIds": [
-              "EN-de6b71bf77ff4299",
-              "EN-c4ef31845ea79710"
+              "EN-de6b71bf77ff4299"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3824,8 +3425,7 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-2e3e41eef734616d",
-              "EN-8d4321d936320802"
+              "EN-2e3e41eef734616d"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -3993,8 +3593,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802"
+              "EN-b5738c169b693bee"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -4103,30 +3702,6 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-816bab802b34b308",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-816bab802b34b308",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
               "EN-816bab802b34b308"
             ],
             "provenance": "claim_assertion",
@@ -4184,9 +3759,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-9e193e1ec8d75d41",
-              "EN-51fd7dc086fcb858"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -4197,8 +3770,7 @@
             "id": "multimodal",
             "name": "多模态",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-51fd7dc086fcb858"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -4209,8 +3781,7 @@
             "id": "mixture_of_experts",
             "name": "混合专家模型",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-51fd7dc086fcb858"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -4288,20 +3859,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-dc758ebb8ad248f8",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-dc758ebb8ad248f8",
-              "EN-8d4321d936320802"
+              "EN-dc758ebb8ad248f8"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -4536,12 +4094,7 @@
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-cb4754c48f8023d0",
-              "EN-761c4b9294ee43a7",
-              "EN-3969dd578ebf6c65"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -4550,12 +4103,7 @@
             "dimensionName": "技术",
             "id": "code_generation",
             "name": "代码生成",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-cb4754c48f8023d0",
-              "EN-761c4b9294ee43a7",
-              "EN-3969dd578ebf6c65"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -4625,8 +4173,7 @@
             "id": "enterprise_software_platform",
             "name": "企业软件平台",
             "entityIds": [
-              "EN-1da46c494dfdd8d3",
-              "EN-e3a80a99bb5fa250"
+              "EN-1da46c494dfdd8d3"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -4654,10 +4201,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d",
-              "EN-7d3194f79e645c42"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -4721,24 +4265,7 @@
             "id": "cloud",
             "name": "云端",
             "entityIds": [
-              "EN-6f4e2e93ad6de7f1",
-              "EN-c70eca6b0f88f44d",
-              "EN-729324072d368379"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "cloud",
-            "name": "云端",
-            "entityIds": [
-              "EN-6f4e2e93ad6de7f1",
-              "EN-c70eca6b0f88f44d",
-              "EN-8d4321d936320802",
-              "EN-9fbf261b62c1d7c0",
-              "EN-729324072d368379"
+              "EN-6f4e2e93ad6de7f1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -4873,25 +4400,7 @@
             "dimensionName": "产品形态",
             "id": "enterprise_software_platform",
             "name": "企业软件平台",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802",
-              "EN-4d748ebd71af03a7",
-              "EN-bbdefa2950f49882",
-              "EN-916a98f0fa2a39af"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "enterprise_software_platform",
-            "name": "企业软件平台",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -4900,13 +4409,7 @@
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802",
-              "EN-4d748ebd71af03a7",
-              "EN-bbdefa2950f49882",
-              "EN-916a98f0fa2a39af"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -4915,37 +4418,7 @@
             "dimensionName": "技术",
             "id": "reasoning",
             "name": "推理能力",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802",
-              "EN-4d748ebd71af03a7",
-              "EN-bbdefa2950f49882",
-              "EN-916a98f0fa2a39af"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "reasoning",
-            "name": "推理能力",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -4975,10 +4448,7 @@
             "dimensionName": "产品形态",
             "id": "enterprise_software_platform",
             "name": "企业软件平台",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -4987,10 +4457,7 @@
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体",
-            "entityIds": [
-              "EN-b5738c169b693bee",
-              "EN-8d4321d936320802"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -5018,10 +4485,7 @@
             "id": "ai_compute_system",
             "name": "AI 计算系统",
             "entityIds": [
-              "EN-98502f8f7e5e64cd",
-              "EN-8d4321d936320802",
-              "EN-a1b0d8a938903dc7",
-              "EN-cb29f2627d5408e0"
+              "EN-98502f8f7e5e64cd"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5167,18 +4631,6 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-b34aa8e97b2c2454",
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
               "EN-b34aa8e97b2c2454"
             ],
             "provenance": "claim_assertion",
@@ -5252,8 +4704,7 @@
             "id": "robotic_system",
             "name": "机器人系统",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-4e7e886400fe6a83"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5275,8 +4726,7 @@
             "id": "physical_automation",
             "name": "物理自动化",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-4e7e886400fe6a83"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5644,10 +5094,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-8d4321d936320802",
-              "EN-d56aa2f9908f566a",
-              "EN-4d09c69c19f5f67b"
+              "EN-2b6e51bec93e86c1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5658,23 +5105,7 @@
             "id": "chip_accelerator",
             "name": "芯片与加速器",
             "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-8d4321d936320802",
-              "EN-d56aa2f9908f566a",
-              "EN-4d09c69c19f5f67b"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-d56aa2f9908f566a",
-              "EN-4d09c69c19f5f67b"
+              "EN-2b6e51bec93e86c1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5685,9 +5116,7 @@
             "id": "image_generation",
             "name": "图像生成",
             "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-d56aa2f9908f566a",
-              "EN-4d09c69c19f5f67b"
+              "EN-2b6e51bec93e86c1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5698,10 +5127,7 @@
             "id": "mixture_of_experts",
             "name": "混合专家模型",
             "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-8d4321d936320802",
-              "EN-d56aa2f9908f566a",
-              "EN-4d09c69c19f5f67b"
+              "EN-2b6e51bec93e86c1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5712,10 +5138,7 @@
             "id": "media_entertainment",
             "name": "媒体与娱乐",
             "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-8d4321d936320802",
-              "EN-d56aa2f9908f566a",
-              "EN-4d09c69c19f5f67b"
+              "EN-2b6e51bec93e86c1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5793,24 +5216,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-634561e92b7593c3",
-              "EN-7f871cbf905f6e0c"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-634561e92b7593c3",
-              "EN-7f871cbf905f6e0c",
-              "EN-bbdefa2950f49882",
-              "EN-8d4321d936320802",
-              "EN-b5738c169b693bee",
-              "EN-2dc010636b9dce91"
+              "EN-634561e92b7593c3"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5821,12 +5227,7 @@
             "id": "end_user_application",
             "name": "终端 AI 应用",
             "entityIds": [
-              "EN-634561e92b7593c3",
-              "EN-7f871cbf905f6e0c",
-              "EN-bbdefa2950f49882",
-              "EN-8d4321d936320802",
-              "EN-b5738c169b693bee",
-              "EN-2dc010636b9dce91"
+              "EN-634561e92b7593c3"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5837,12 +5238,7 @@
             "id": "security_software",
             "name": "安全软件",
             "entityIds": [
-              "EN-634561e92b7593c3",
-              "EN-7f871cbf905f6e0c",
-              "EN-bbdefa2950f49882",
-              "EN-8d4321d936320802",
-              "EN-b5738c169b693bee",
-              "EN-2dc010636b9dce91"
+              "EN-634561e92b7593c3"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5865,12 +5261,7 @@
             "id": "security_operations",
             "name": "安全运营",
             "entityIds": [
-              "EN-634561e92b7593c3",
-              "EN-7f871cbf905f6e0c",
-              "EN-bbdefa2950f49882",
-              "EN-8d4321d936320802",
-              "EN-b5738c169b693bee",
-              "EN-2dc010636b9dce91"
+              "EN-634561e92b7593c3"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -5893,12 +5284,7 @@
             "id": "on_premise",
             "name": "本地部署",
             "entityIds": [
-              "EN-634561e92b7593c3",
-              "EN-7f871cbf905f6e0c",
-              "EN-bbdefa2950f49882",
-              "EN-8d4321d936320802",
-              "EN-b5738c169b693bee",
-              "EN-2dc010636b9dce91"
+              "EN-634561e92b7593c3"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6028,12 +5414,7 @@
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-c1eb8e913000a8eb",
-              "EN-0be477336d3e1a8d",
-              "EN-1dc405a4cda895d0"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6042,12 +5423,7 @@
             "dimensionName": "行业",
             "id": "media_entertainment",
             "name": "媒体与娱乐",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-c1eb8e913000a8eb",
-              "EN-0be477336d3e1a8d",
-              "EN-1dc405a4cda895d0"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -6075,11 +5451,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ebe5ed2fc0df64de",
-              "EN-202ac21492470b79"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6088,11 +5460,7 @@
             "dimensionName": "产品形态",
             "id": "model_api_service",
             "name": "模型 API 服务",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ebe5ed2fc0df64de",
-              "EN-202ac21492470b79"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6101,11 +5469,7 @@
             "dimensionName": "产品形态",
             "id": "ai_infrastructure_software",
             "name": "AI 基础设施软件",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ebe5ed2fc0df64de",
-              "EN-202ac21492470b79"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6114,11 +5478,7 @@
             "dimensionName": "技术",
             "id": "mixture_of_experts",
             "name": "混合专家模型",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ebe5ed2fc0df64de",
-              "EN-202ac21492470b79"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6127,10 +5487,7 @@
             "dimensionName": "行业",
             "id": "healthcare_life_sciences",
             "name": "医疗与生命科学",
-            "entityIds": [
-              "EN-ebe5ed2fc0df64de",
-              "EN-202ac21492470b79"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -6158,8 +5515,7 @@
             "id": "speech_audio",
             "name": "语音与音频",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-12ab68e37d104d27"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6170,8 +5526,7 @@
             "id": "open_weights",
             "name": "开放权重",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-12ab68e37d104d27"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6288,10 +5643,7 @@
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体",
-            "entityIds": [
-              "EN-16fd849ce27f115b",
-              "EN-f5791343a13abc71"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6300,10 +5652,7 @@
             "dimensionName": "技术",
             "id": "on_device",
             "name": "端侧",
-            "entityIds": [
-              "EN-16fd849ce27f115b",
-              "EN-f5791343a13abc71"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6312,10 +5661,7 @@
             "dimensionName": "行业",
             "id": "manufacturing",
             "name": "制造业",
-            "entityIds": [
-              "EN-16fd849ce27f115b",
-              "EN-f5791343a13abc71"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6324,10 +5670,7 @@
             "dimensionName": "部署形态",
             "id": "edge_device",
             "name": "边缘与端侧",
-            "entityIds": [
-              "EN-16fd849ce27f115b",
-              "EN-f5791343a13abc71"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6336,10 +5679,7 @@
             "dimensionName": "部署形态",
             "id": "on_premise",
             "name": "本地部署",
-            "entityIds": [
-              "EN-16fd849ce27f115b",
-              "EN-f5791343a13abc71"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -6367,11 +5707,7 @@
             "dimensionName": "技术",
             "id": "agentic_execution",
             "name": "智能体",
-            "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-6e5cd2567d3ae58a",
-              "EN-9fbf261b62c1d7c0"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -6400,8 +5736,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ab9e3beebd83960d"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6412,8 +5747,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ab9e3beebd83960d"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6424,8 +5758,7 @@
             "id": "cloud",
             "name": "云端",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ab9e3beebd83960d"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6436,8 +5769,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-8d4321d936320802",
-              "EN-ab9e3beebd83960d"
+              "EN-8d4321d936320802"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6573,8 +5905,7 @@
             "id": "agentic_execution",
             "name": "智能体",
             "entityIds": [
-              "EN-8941d14fe851d732",
-              "EN-11ef7b03c79c9bbd"
+              "EN-8941d14fe851d732"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6633,10 +5964,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-42375a8003f17c95",
-              "EN-171fa23d27b5894b"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -6645,10 +5973,7 @@
             "dimensionName": "应用场景",
             "id": "physical_automation",
             "name": "物理自动化",
-            "entityIds": [
-              "EN-42375a8003f17c95",
-              "EN-171fa23d27b5894b"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -6758,10 +6083,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-cd35ca6b5c3cf23c",
-              "EN-8d4321d936320802",
-              "EN-7d3194f79e645c42",
-              "EN-ea3bd73e2b506e00"
+              "EN-cd35ca6b5c3cf23c"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -6772,10 +6094,7 @@
             "id": "manufacturing",
             "name": "制造业",
             "entityIds": [
-              "EN-cd35ca6b5c3cf23c",
-              "EN-8d4321d936320802",
-              "EN-7d3194f79e645c42",
-              "EN-ea3bd73e2b506e00"
+              "EN-cd35ca6b5c3cf23c"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -7074,41 +6393,26 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-industry-education",
         "TX-target_user-consumer",
-        "TX-industry-manufacturing",
-        "TX-industry-financial_services",
         "TX-use_case-customer_support",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
-        "TX-technology-embodied_ai",
         "TX-use_case-data_analysis",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-deployment_model-cloud",
-        "TX-technology-retrieval_augmented_generation",
         "TX-target_user-educator",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -7178,14 +6482,7 @@
         "EV-0e2a68efc19bfbaa"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-embodied_ai",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7286,11 +6583,7 @@
         "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-product_form-model",
-        "TX-technology-multimodal",
-        "TX-industry-telecommunications",
-        "TX-target_user-researcher",
-        "TX-technology-embodied_ai",
-        "TX-industry-healthcare_life_sciences"
+        "TX-target_user-researcher"
       ],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
@@ -7313,9 +6606,7 @@
         "EV-5d50eb202b478bd4"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-ai_compute_system"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7407,9 +6698,7 @@
         "EV-51dfd0d541380500"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-enterprise_software_platform"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
         "EN-96eebba49dbbf422",
@@ -7443,14 +6732,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
-        "TX-product_form-model",
-        "TX-product_form-security_software",
-        "TX-deployment_model-on_premise",
-        "TX-technology-reasoning"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
@@ -7472,11 +6754,7 @@
         "EV-53f881da31630a04"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-multimodal",
-        "TX-technology-mixture_of_experts"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7497,9 +6775,7 @@
         "EV-53f881da31630a04"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7545,7 +6821,6 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-product_form-robotic_system",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [
@@ -7571,10 +6846,7 @@
         "EV-4026c95d4c01b96e"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-media_entertainment"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7595,10 +6867,7 @@
         "EV-2258329f33d413cf"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-open_weights",
-        "TX-technology-speech_audio"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7621,10 +6890,7 @@
         "EV-4bf0e4043c3562f2"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-product_form-model"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7773,34 +7039,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-target_user-consumer",
-        "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
-        "TX-industry-financial_services",
-        "TX-use_case-customer_support",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
-        "TX-product_form-model",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-industry-professional_services",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-telecommunications",
         "TX-use_case-data_analysis",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-procurement_supply_chain",
         "TX-technology-mixture_of_experts",
-        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
-        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-technology-reasoning",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -7833,9 +7081,7 @@
         "EV-631197767a45d34c"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -7879,10 +7125,7 @@
         "EV-67f32771d69084d6"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-product_form-model"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -8667,98 +7910,62 @@
       "entityIds": [
         "EN-54dfb14dcddad637",
         "EN-9cb45a27a2808c01",
-        "EN-8d4321d936320802",
         "EN-cf9488537f777c1a",
         "EN-4c3788aad4bebf2f",
         "EN-d3d151f3f8e7f9ed",
         "EN-79c60968d2c48711",
-        "EN-026836921a4d049c",
         "EN-2e3e41eef734616d",
         "EN-70e7e370d5a50ea1",
         "EN-ed9980025e312ded",
         "EN-6907a22fafe13a63",
         "EN-816bab802b34b308",
         "EN-7a814849bc288dc0",
-        "EN-968e2d5b08687bf4",
         "EN-dc758ebb8ad248f8",
         "EN-86c49cd0980883a3",
         "EN-a736e4d4ef0af078",
         "EN-d1a61df8d3146e48",
-        "EN-c70eca6b0f88f44d",
+        "EN-8d4321d936320802",
         "EN-48bebf25e5bd5aca",
         "EN-8da5eafb322ee86e",
         "EN-883be863cc6562bb",
-        "EN-53453cfb48a75dde",
         "EN-3711098f35d71cb9",
         "EN-a9776b12a97fe2d9",
-        "EN-ea3bd73e2b506e00",
-        "EN-7d3194f79e645c42",
-        "EN-6d57b22ebbd2bd90",
-        "EN-59ae856cd788d0f5",
         "EN-5e757c7fc575c41e",
         "EN-b9e93f925b8d42c8",
-        "EN-4f7a84e78c03b14b",
-        "EN-2f4436342c46decc",
-        "EN-240389f4b730bad4",
         "EN-f95d5af831e91b94",
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
-        "EN-373ac021a2c0bb2c",
         "EN-0281afdb2d56c1e6",
-        "EN-1aea1d505ca03758",
         "EN-36b1dbc8da066a19",
-        "EN-7a03939835d5eee2",
-        "EN-3e134fc2d861146f",
+        "EN-240389f4b730bad4",
         "EN-c857d09db23e6822",
-        "EN-eab9999c377924ae",
         "EN-d7e81f6e7d39f00f",
-        "EN-45c52af0feb0f285",
         "EN-0f553f48551aef83",
-        "EN-3feb1417824fbc34",
-        "EN-1728124bda619b0f",
-        "EN-275b0f4a4023d91c",
         "EN-a89151ba4b5ac0f2",
         "EN-e95cf508b2bef361",
-        "EN-0b706b4b95ba647c",
         "EN-509f226edbb9f410",
         "EN-7d48744f8d0f0657",
-        "EN-4c66141fde69a497",
         "EN-5398729239788ca5",
         "EN-6c82c31832e9c3e9",
-        "EN-b4dac50c116e179d",
-        "EN-34083473c73ff542",
-        "EN-636fa9664f878a4d",
-        "EN-6c87e5496f592f3c",
-        "EN-64c4e740f32911e8",
         "EN-c13e2f4a44bb01ed",
         "EN-6a0e50443436fe1d",
         "EN-96eebba49dbbf422",
         "EN-852e6af714d40a8f",
-        "EN-f53afc9370d87317",
+        "EN-c70eca6b0f88f44d",
         "EN-042e9398f2cc8902",
+        "EN-7d3194f79e645c42",
         "EN-b3e3bce83d29e787",
         "EN-b34aa8e97b2c2454",
         "EN-1cd41545564777ce",
         "EN-e482463e2656ed1c",
-        "EN-5f3c568f90d87caf",
         "EN-89e3f0711b76932c",
-        "EN-e9830c30bc572802",
         "EN-2b6e51bec93e86c1",
-        "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b",
         "EN-412b57e712039032",
-        "EN-c27c48199bb1e14b",
-        "EN-da20c5952dba19d8",
         "EN-16f9e91ad20e6467",
         "EN-d5c876a36e02b120",
-        "EN-6f7ac1823da81d2e",
         "EN-cbc62794911ff31b",
-        "EN-4a639cb888a15d75",
-        "EN-65b3aa2f527deeef",
-        "EN-a2413f7c5095f988",
-        "EN-c165c006a5968443",
-        "EN-bbdefa2950f49882"
+        "EN-4a639cb888a15d75"
       ],
       "fdeIds": [
         "FDE-d1333c4e772841f2",
@@ -8815,19 +8022,12 @@
         "EN-54dfb14dcddad637",
         "EN-0995103010d39563",
         "EN-bbdefa2950f49882",
-        "EN-e6f146354586d556",
-        "EN-ee1e31ffef7dbe64",
         "EN-772c171be4bf6551",
         "EN-8d4321d936320802",
         "EN-240389f4b730bad4",
         "EN-bb144c85d7f4652d",
         "EN-d7e81f6e7d39f00f",
-        "EN-3feb1417824fbc34",
-        "EN-1728124bda619b0f",
-        "EN-275b0f4a4023d91c",
         "EN-98502f8f7e5e64cd",
-        "EN-a1b0d8a938903dc7",
-        "EN-cb29f2627d5408e0",
         "EN-a89a94ff38d4dc95"
       ],
       "fdeIds": [
@@ -8930,59 +8130,33 @@
         "EN-e78bdebae031095b",
         "EN-883be863cc6562bb",
         "EN-a83a3af1a4866fd5",
-        "EN-59ae856cd788d0f5",
         "EN-3b39ea849059759f",
         "EN-3cce50ffb12f1a69",
         "EN-3e14bbbb0445c2de",
         "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
         "EN-2b6e51bec93e86c1",
-        "EN-e1086f449d58de87",
-        "EN-4d09c69c19f5f67b",
         "EN-364df82f85761d58",
-        "EN-bbdefa2950f49882",
         "EN-8d57f84bd1847b24",
         "EN-febedfcafee9d610",
-        "EN-0bd85984211bd173",
         "EN-240389f4b730bad4",
-        "EN-4cbf88b0da5d15f8",
         "EN-593d0361124f348f",
-        "EN-843e746333671ab1",
         "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
-        "EN-68dce3237e10d795",
         "EN-0e6e48aba1669631",
         "EN-d77c36c05230024c",
         "EN-be548deba4a093d7",
-        "EN-53874092e000069b",
-        "EN-f0da91960830b394",
         "EN-c51e27d8efcff21f",
-        "EN-dbd6a2f6ddb95ca7",
-        "EN-e07654c7cc29acbd",
-        "EN-e3b1bf3dab957ffe",
-        "EN-29e1f755865493a8",
-        "EN-cbc62794911ff31b",
         "EN-522d3edeb64a7ca4",
-        "EN-c608c4787821de1b",
-        "EN-101a515191c6be9e",
         "EN-8afd897b5b887b06",
-        "EN-4d8ee3ec190ebf35",
         "EN-920510199770f4d6",
-        "EN-994f9b7ac2d11473",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-4e7e886400fe6a83",
-        "EN-75fe8aaf5a7e3a7e",
-        "EN-7d5f17368c04f04c",
         "EN-0d049cd1e9f619f9",
         "EN-7f6333102da9e8bd",
         "EN-5e1fcba4c9f1cf69",
-        "EN-7d3194f79e645c42",
-        "EN-42375a8003f17c95",
-        "EN-171fa23d27b5894b",
         "EN-80ea42a231357d12",
-        "EN-0a7411a215b0fa5b",
-        "EN-9fbf261b62c1d7c0"
+        "EN-0a7411a215b0fa5b"
       ],
       "fdeIds": [
         "FDE-a9fc583eb4065d4d",
@@ -9053,10 +8227,8 @@
         "EN-ee1e31ffef7dbe64",
         "EN-245f1e177c5169cb",
         "EN-c04bd5ebd10ab696",
-        "EN-8d3aa1a6f227d714",
         "EN-b5251b35f15bedc4",
         "EN-7011e12e346d3d22",
-        "EN-481243d2f2a235c1",
         "EN-a83a3af1a4866fd5"
       ],
       "fdeIds": [],
@@ -9262,16 +8434,14 @@
         "EN-4479ee1b529c5e82",
         "EN-3032646694ad17bb",
         "EN-c04bd5ebd10ab696",
-        "EN-8d3aa1a6f227d714",
         "EN-befc92b3a019d04c",
         "EN-ef292e56955a1c10",
         "EN-a7dd4a797cf9990b",
-        "EN-348445124d405d5a",
         "EN-b5251b35f15bedc4",
         "EN-7f871cbf905f6e0c",
         "EN-67e05af6c6502566",
         "EN-07c370b082ffd370",
-        "EN-e3ce9cc5efa9354c",
+        "EN-d9352ce019e77ab3",
         "EN-2b81d85809794782",
         "EN-7011e12e346d3d22",
         "EN-48bebf25e5bd5aca",
@@ -9279,15 +8449,13 @@
         "EN-8e8cc11d1475231b",
         "EN-52f1bab72d488823",
         "EN-6c425df9139ab70a",
-        "EN-240389f4b730bad4",
+        "EN-ce31f92c521b7b08",
         "EN-8da5eafb322ee86e",
         "EN-e4540a7c8404b1be",
         "EN-883be863cc6562bb",
         "EN-da41c71b4dbc3956",
-        "EN-481243d2f2a235c1",
-        "EN-8e3070c2f39507a8",
         "EN-a83a3af1a4866fd5",
-        "EN-b4a139ced5659a4e"
+        "EN-0decbc3b45f73b2b"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -9399,22 +8567,19 @@
         "EN-245f1e177c5169cb",
         "EN-3032646694ad17bb",
         "EN-c04bd5ebd10ab696",
-        "EN-8d3aa1a6f227d714",
         "EN-befc92b3a019d04c",
         "EN-a7dd4a797cf9990b",
         "EN-b5251b35f15bedc4",
         "EN-7f871cbf905f6e0c",
-        "EN-e3ce9cc5efa9354c",
+        "EN-d9352ce019e77ab3",
         "EN-7011e12e346d3d22",
         "EN-48bebf25e5bd5aca",
         "EN-52f1bab72d488823",
         "EN-6c425df9139ab70a",
-        "EN-240389f4b730bad4",
+        "EN-ce31f92c521b7b08",
         "EN-e4540a7c8404b1be",
-        "EN-481243d2f2a235c1",
-        "EN-8e3070c2f39507a8",
         "EN-a83a3af1a4866fd5",
-        "EN-b4a139ced5659a4e"
+        "EN-0decbc3b45f73b2b"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -9457,12 +8622,7 @@
         "EN-858b4458c482f7d2",
         "EN-e23228440ca5340f",
         "EN-7011e12e346d3d22",
-        "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
-        "EN-3a13916345b60fad",
-        "EN-779965438dd9e7a7",
-        "EN-ebe5ed2fc0df64de",
-        "EN-202ac21492470b79"
+        "EN-ea3bd73e2b506e00"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -9696,16 +8856,14 @@
         "EN-4479ee1b529c5e82",
         "EN-3032646694ad17bb",
         "EN-c04bd5ebd10ab696",
-        "EN-8d3aa1a6f227d714",
         "EN-befc92b3a019d04c",
         "EN-ef292e56955a1c10",
         "EN-a7dd4a797cf9990b",
-        "EN-348445124d405d5a",
         "EN-b5251b35f15bedc4",
         "EN-7f871cbf905f6e0c",
         "EN-67e05af6c6502566",
         "EN-07c370b082ffd370",
-        "EN-e3ce9cc5efa9354c",
+        "EN-d9352ce019e77ab3",
         "EN-2b81d85809794782",
         "EN-7011e12e346d3d22",
         "EN-48bebf25e5bd5aca",
@@ -9718,35 +8876,24 @@
         "EN-ac32f27ba7a1346f",
         "EN-c8a41fd9300cfe54",
         "EN-3e665817a41133c2",
-        "EN-240389f4b730bad4",
-        "EN-7d3194f79e645c42",
+        "EN-ce31f92c521b7b08",
         "EN-8da5eafb322ee86e",
         "EN-e4540a7c8404b1be",
         "EN-883be863cc6562bb",
         "EN-ee04228c5c6d8b08",
         "EN-da41c71b4dbc3956",
-        "EN-481243d2f2a235c1",
-        "EN-8e3070c2f39507a8",
         "EN-5b3767eb23d5e4ed",
         "EN-a83a3af1a4866fd5",
-        "EN-b4a139ced5659a4e",
+        "EN-0decbc3b45f73b2b",
         "EN-636396f02b6571e4",
         "EN-c08f86842ff2c908",
         "EN-df30a48992da7fe8",
-        "EN-ed0e0437548386ef",
-        "EN-d9b1d7819af92e77",
-        "EN-6c87e5496f592f3c",
         "EN-e9b7b590a01726a5",
-        "EN-8ea8e910804157f1",
         "EN-b0126946c556dc47",
-        "EN-3fe9141f6d2e3e7f",
         "EN-0e6e9f1ba413b8d1",
-        "EN-a250ebc1862540b0",
-        "EN-2998f8b13f4fd72e",
         "EN-6e898ad0522fca30",
         "EN-5e1fcba4c9f1cf69",
-        "EN-50537dab76505dfc",
-        "EN-45b5216872656eb3"
+        "EN-50537dab76505dfc"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -10177,10 +9324,6 @@
         "EN-f9075cc99990820a",
         "EN-556c337c4f0b031e",
         "EN-2be663431f007250",
-        "EN-9fbf261b62c1d7c0",
-        "EN-ab9b29074a980e4b",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
         "EN-382635c9325bf327",
         "EN-7f67f2f8692510cf",
         "EN-12765295db4f1e79",
@@ -10192,23 +9335,18 @@
         "EN-95fb1fa9a88b393c",
         "EN-cfd90af8403941bf",
         "EN-366289432b214eda",
-        "EN-8d4321d936320802",
         "EN-fdcd4ec7d0546e95",
-        "EN-9c8ae69b84f21a2e",
         "EN-45a46e581e91ce79",
-        "EN-ea3bd73e2b506e00",
         "EN-4d748ebd71af03a7",
         "EN-3afbf365c56b769d",
         "EN-7a9c94a8c201bcc2",
         "EN-d6386c59a6bcfcb1",
         "EN-19313d8b24774cbf",
-        "EN-478cc1059b738832",
         "EN-712dffae168fe622",
         "EN-733859c1fc6b9331",
         "EN-7a814849bc288dc0",
         "EN-7692c3ad3540bb80",
         "EN-14ce7672aaca7a68",
-        "EN-047364b9be67f665",
         "EN-cd84b3822a32503d",
         "EN-caaa8e02be54cfc9",
         "EN-612370f44fcdeae0",
@@ -10224,7 +9362,6 @@
         "EN-44355566aea5df6f",
         "EN-19a5848a577315c5",
         "EN-d1fa538179ba6371",
-        "EN-96eebba49dbbf422",
         "EN-b9b0702726f5be1c",
         "EN-332ca661b9b8defe",
         "EN-b51b27d89f9ea747",
@@ -10235,15 +9372,12 @@
         "EN-37a54e5c414654d8",
         "EN-e19b20530b205aa9",
         "EN-4abc3bd0f9e75c63",
-        "EN-3ccbd9105a45d8fc",
         "EN-ef2bee7868007cd4",
         "EN-d74c69db63e4763f",
-        "EN-58b507456c52c9b3",
-        "EN-348445124d405d5a",
         "EN-e781481ff5ffe530",
         "EN-c0cd6e83b6dd78a5",
         "EN-da454b02b4700b1f",
-        "EN-c9173cc80ae1d619",
+        "EN-3ccbd9105a45d8fc",
         "EN-a9aff9e0737a5d4a",
         "EN-1c5483264189feef",
         "EN-4479ee1b529c5e82",
@@ -10251,19 +9385,16 @@
         "EN-b314f58f5f506fd2",
         "EN-befc92b3a019d04c",
         "EN-20b5af8f2c749bf8",
+        "EN-348445124d405d5a",
         "EN-b10da733dff99be1",
         "EN-049b3253f4a8e2eb",
         "EN-10fd89e7d8a1c7c4",
         "EN-52f1bab72d488823",
-        "EN-3c567a300232d3bb",
-        "EN-10535ca23448d8bb",
         "EN-4de4a07ad031569c",
         "EN-38a3c50b7c1f9635",
         "EN-7d4e02d31a7eb0f8",
         "EN-abb32701117d50a9",
-        "EN-bbdefa2950f49882",
         "EN-3e665817a41133c2",
-        "EN-2dc010636b9dce91",
         "EN-864e7f949b17c9b1",
         "EN-08ff6997681fad41",
         "EN-8dab79468baaa8b0",
@@ -10281,27 +9412,29 @@
         "EN-df30a48992da7fe8",
         "EN-76a9a8a6e2f1a47b",
         "EN-ebfeb2f51b9eaf40",
+        "EN-047364b9be67f665",
+        "EN-7d3194f79e645c42",
         "EN-df3b29befa02cd17",
+        "EN-9fbf261b62c1d7c0",
         "EN-48b85dc3fd54f74d",
+        "EN-9c8ae69b84f21a2e",
         "EN-d3565d297d476f10",
         "EN-30e363d3e8c59f2c",
         "EN-3474e24464fc25a7",
         "EN-75857a45899985be",
         "EN-27032b3c60ab2a95",
         "EN-5a08fbb37039e825",
+        "EN-ea3bd73e2b506e00",
         "EN-866e1f18c9370d5d",
-        "EN-b5738c169b693bee",
         "EN-b0532e1af75cc4ab",
         "EN-be972f28adbc6e84",
         "EN-cd65acdabcbbd55c",
-        "EN-2fc9fff8ab7f35aa",
-        "EN-8efebac68a48c369",
         "EN-f08875eb906a300c",
         "EN-44512ea2b55bf535",
         "EN-d8cb1acd1b39854a",
+        "EN-96eebba49dbbf422",
         "EN-e759968ca9278b8d",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
+        "EN-8d4321d936320802",
         "EN-28d0bd981118a907",
         "EN-46c2fbc29021c389",
         "EN-916a98f0fa2a39af",
@@ -10310,283 +9443,136 @@
         "EN-82a31e57d3a2fa17",
         "EN-4e358c403850a88a",
         "EN-543ed2ff052fe0cd",
-        "EN-b3f5e31ec86a08a9",
-        "EN-c55f528b3a23dc5b",
         "EN-ceef9085ddc3348c",
-        "EN-d9b1d7819af92e77",
         "EN-8147e6fed86d42c1",
-        "EN-86f73dfe7bb6a9e6",
-        "EN-86ca9936019f1039",
-        "EN-4094a2b7125c7564",
         "EN-5bc1ca2813bf4c23",
-        "EN-c3e4cc183d345262",
+        "EN-b5738c169b693bee",
         "EN-e274048227f164dc",
-        "EN-344bff8b2788383a",
-        "EN-6d97420e453a529c",
-        "EN-160077a1c92d0095",
-        "EN-af7ddda9aad50840",
         "EN-7df09a7717ef2feb",
         "EN-ea87a2bd84296f73",
-        "EN-cbc62794911ff31b",
-        "EN-cdeb84b161f500bf",
-        "EN-fe596100f029516c",
         "EN-a08cc489f1c7c830",
-        "EN-f48a4090493d2b5e",
-        "EN-f9ae78c09ff308f9",
-        "EN-ce635c4eabff5e4f",
-        "EN-6e5cd2567d3ae58a",
-        "EN-f67676350b89f220",
-        "EN-cd496aee616b7e9b",
         "EN-f4bec299df3f4f27",
-        "EN-373ac021a2c0bb2c",
-        "EN-c13e2f4a44bb01ed",
-        "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
-        "EN-364df82f85761d58",
         "EN-30397d0cfc1b0e29",
         "EN-07035a20899a7cd7",
-        "EN-7ad3f3203e5d717e",
-        "EN-0d4bbb73ac4c7513",
-        "EN-50ba7ff15827787b",
-        "EN-607964040e4b62e0",
         "EN-45d780f82c9247fc",
-        "EN-8f3b1956b11cf0d7",
         "EN-e9b7b590a01726a5",
-        "EN-8ea8e910804157f1",
         "EN-24f5eb8d2e667579",
         "EN-d2997fd4735a8795",
+        "EN-0d4bbb73ac4c7513",
         "EN-c857d09db23e6822",
-        "EN-5a4c2be958c0af72",
         "EN-ec99ce30dc2316d9",
         "EN-b59adf2d806d3013",
         "EN-cd6362472aea60ef",
         "EN-8d57f84bd1847b24",
         "EN-3149ad548669e717",
-        "EN-0631a6a6c0e2cbb0",
-        "EN-ffb1e7dbfba5bd22",
         "EN-c0fced8f2483e9f5",
-        "EN-2f88ddfd544ee6f1",
-        "EN-833940e4d17c9df3",
         "EN-240389f4b730bad4",
-        "EN-e1517be14d06cdb7",
         "EN-f1649339197f76d6",
         "EN-a7baed72c308ce88",
-        "EN-dd24c3b82a636110",
         "EN-ba728f8ca730921f",
-        "EN-cb3cddd8f161d840",
-        "EN-e3c189c04bf15baf",
-        "EN-f65bb77682b83476",
         "EN-7c094d35e3b700c8",
-        "EN-9a266f40d42cf217",
         "EN-0d1e478de2157d48",
-        "EN-4546b5bdff2ea8ed",
+        "EN-bbdefa2950f49882",
         "EN-52c2f30b6bda5898",
         "EN-2a2aa0512b8ea131",
-        "EN-87683d905745fb89",
         "EN-49f756463ad9dcfb",
         "EN-149e96efddc48168",
-        "EN-62503b0d3dcfd096",
         "EN-09d3eb0b07daf955",
-        "EN-a1adb91065c5a347",
-        "EN-6f216f2ea5b7a13e",
-        "EN-18f0900d6c487f59",
         "EN-e16fc821f34228d1",
         "EN-dd758281d0c70e60",
         "EN-6f21a653c48f4f19",
         "EN-2c348893efb2316e",
         "EN-2abf8289b2f2113f",
-        "EN-91901356a63794df",
         "EN-be548deba4a093d7",
-        "EN-92ec1124e1de6f54",
         "EN-02865db849986974",
         "EN-0a64d5a41e885455",
-        "EN-8b0aea25404131b5",
-        "EN-0e3c625f3930d7b7",
         "EN-aa15d891a32a51b8",
         "EN-eaaf22a384c26014",
         "EN-3f726694f178ed7a",
         "EN-3a9b395103419892",
         "EN-b0126946c556dc47",
-        "EN-3fe9141f6d2e3e7f",
         "EN-597d8c4afa5fe3d6",
         "EN-ac123e56b0168ec2",
-        "EN-8395dc051feafc4c",
         "EN-cb4754c48f8023d0",
         "EN-820a72d1d4b51ae7",
         "EN-e6483498af8bd2cd",
-        "EN-b60e6df651264e14",
         "EN-842fcb5e60989a03",
-        "EN-5f6367300dabc238",
         "EN-e93e29634540a290",
-        "EN-dc6c28a2123e8efb",
         "EN-45e0ade11fed1e44",
         "EN-7dd7122ad9bf240f",
         "EN-0078ec52880eaa14",
-        "EN-240a52e3b5823aeb",
-        "EN-a6f83207fb0bf2aa",
-        "EN-26a060957221fd5d",
-        "EN-34083473c73ff542",
-        "EN-636fa9664f878a4d",
-        "EN-6c87e5496f592f3c",
-        "EN-64c4e740f32911e8",
-        "EN-b644c0a9d493976a",
         "EN-8b619895a83e35c8",
         "EN-cb7124bb7e591ac6",
         "EN-738e22f0acab814c",
-        "EN-7099a2200559e508",
         "EN-fa373257792c6b9b",
-        "EN-1c6392c229ed9069",
         "EN-1622bc43a3da8171",
         "EN-08b6a35be337edce",
-        "EN-e3863f813fe47240",
-        "EN-6a50fbf0b970c03a",
         "EN-3db1f560db626918",
-        "EN-309e1850e39b13ff",
-        "EN-7839fb10a8f14c70",
         "EN-b9776d7ddf459c9a",
-        "EN-8d82b0feb1f5da72",
-        "EN-1bf93b12e68cac56",
-        "EN-242e21e3dc6869a9",
-        "EN-ffc6caa049c23d48",
-        "EN-151013fb8438c046",
-        "EN-536c4035ba0c7047",
-        "EN-7ff4fb5ddc1f4700",
         "EN-a4105d5dca667827",
-        "EN-408b79480c97ebdc",
         "EN-210a6aeaed360009",
-        "EN-a33d30b5f34bdff5",
         "EN-e395d03e988d30a9",
-        "EN-d85ad5e8ff8e2889",
-        "EN-a2fa009495c3bb3a",
         "EN-1c3cb68d25565c1c",
-        "EN-654d595fda8963b5",
         "EN-c0803e19540a3203",
-        "EN-a18162bf7228289d",
-        "EN-c141d2237427f30d",
-        "EN-a9f74d68b2b7c964",
-        "EN-e8fc8b3e92a8dc5a",
-        "EN-761c4b9294ee43a7",
-        "EN-3969dd578ebf6c65",
+        "EN-c70eca6b0f88f44d",
         "EN-5388bc10736a0eff",
         "EN-42f0b44cc91cc5e0",
-        "EN-94caa859c22071b1",
         "EN-09c344df70df9660",
         "EN-c31a277efac23f52",
         "EN-307557d99a7eb726",
-        "EN-557203e8cc173124",
-        "EN-2ba325ce6f8e3dc9",
         "EN-96a4bc2602655473",
-        "EN-2c063f604e634100",
         "EN-4adc2faea521b1f1",
         "EN-e473f24d4325d51a",
-        "EN-33a6331aaa822714",
         "EN-1dc7e9837d60c55d",
-        "EN-a42d5d95234db6c4",
-        "EN-9e5d9b729e161734",
-        "EN-52fc33ae4d101a5d",
+        "EN-2dc010636b9dce91",
         "EN-042e9398f2cc8902",
         "EN-34da56029403e6f7",
-        "EN-dca6ec9510fc0176",
-        "EN-623fbff8d5179d4e",
-        "EN-fef851474e3c4311",
-        "EN-19018cddd8946526",
         "EN-51a5b811990f2a2a",
-        "EN-e65e0f2695fa259d",
         "EN-ae4ea495016fb286",
         "EN-0666a703033ebd1b",
-        "EN-30a63b26b06e096e",
-        "EN-fdc6b157616f12a8",
-        "EN-d4c633f24b48fcc4",
         "EN-46a4eebd20d881ec",
         "EN-bc1fc5140040180e",
         "EN-f19600b9e18f7f27",
-        "EN-478e0ad4e0940af0",
         "EN-27b78f50b2d3d969",
-        "EN-1b0a2528912919f4",
-        "EN-5c5f862c2a5059df",
-        "EN-3137a20f5252af53",
         "EN-7d1507284a5757ca",
         "EN-8a96f1a807787797",
         "EN-3a13916345b60fad",
         "EN-28d79881d0386305",
         "EN-0fc990954c0aea17",
         "EN-4c7e597df9980037",
-        "EN-d4c56709df757c56",
         "EN-716f0a8b380bb7d0",
-        "EN-ddc6bcfaf931295c",
-        "EN-576c367dfd7686e8",
         "EN-5e18acda295236e9",
-        "EN-e97edd12a2b8befa",
-        "EN-af53dbc3e443f7a9",
         "EN-3fb921805aa44727",
-        "EN-d2f4e09cb01afa3c",
         "EN-3a7bd3e2360a3d29",
         "EN-0502bb9ed34980aa",
-        "EN-7ec0224e483d913b",
         "EN-2d87f3d38782aa14",
-        "EN-0db2d631b42da133",
-        "EN-6f7ac1823da81d2e",
-        "EN-a8109a87003a555b",
         "EN-3631487f282864b7",
-        "EN-c38c7d20347bd908",
-        "EN-2f00e6c060e01051",
-        "EN-5ab8fde232c3c298",
+        "EN-ce635c4eabff5e4f",
         "EN-b81c8201acfc7639",
         "EN-82eaaba81d9dcc54",
-        "EN-b42e5eda1d1a3720",
         "EN-ef6aa1a04b3f52ab",
-        "EN-efd004603fda1d53",
-        "EN-761a66c29a55bc53",
         "EN-b5251b35f15bedc4",
-        "EN-dba61afed18c85d6",
         "EN-3eee4f30151db45a",
-        "EN-2b6e51bec93e86c1",
-        "EN-4540952d4d9138db",
-        "EN-b937d305ea1f064f",
         "EN-8a6a6c7694a73ebd",
         "EN-72e8088a05b38ae3",
-        "EN-833cd615d86b73ca",
         "EN-50537dab76505dfc",
-        "EN-1acf3a98930680ec",
         "EN-35e36dc1a5213fa3",
-        "EN-bdfecbcd7dbf76d2",
-        "EN-cfe6926406f30a15",
-        "EN-e3db3da2b7dc6057",
-        "EN-c1eb8e913000a8eb",
-        "EN-0be477336d3e1a8d",
-        "EN-1dc405a4cda895d0",
         "EN-73209317ae64f32b",
         "EN-31f61ed3e6e210c5",
         "EN-11cf7e437e02b626",
-        "EN-e75a2e5083aa0089",
         "EN-6d766cee0782bfaf",
         "EN-e956b4e6d9c37fa7",
-        "EN-67c6738648b7e247",
         "EN-f37c26d92e90eb90",
-        "EN-ab9e3beebd83960d",
-        "EN-1ecf93c539fcffca",
         "EN-8941d14fe851d732",
-        "EN-11ef7b03c79c9bbd",
-        "EN-e07654c7cc29acbd",
         "EN-10fce287b4b1464c",
-        "EN-b9db1ff13ae8496e",
-        "EN-7b8cb35de7ad047a",
         "EN-a29bf111a9414273",
-        "EN-6348e609b1b0cc04",
-        "EN-dc8f378cdda239cd",
-        "EN-e99987e5c504a796",
         "EN-ec6b03fc92dcfc89",
-        "EN-552088238720cb6f",
-        "EN-c0d6535a9383cb62",
         "EN-3aa7606e6aa345a3",
         "EN-4d803c223cec4cc4",
-        "EN-467f67b2ed0f9a54",
         "EN-fa5bbac1048b9190",
-        "EN-a39230f0613145dc",
-        "EN-5f59f157b0f3c885",
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
-        "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",
@@ -10595,12 +9581,9 @@
         "EN-e19d91fff0a190fc",
         "EN-5504f88c63fe766d",
         "EN-11c47c7a5668d5af",
-        "EN-6fcba5d96a4fadfd",
         "EN-81baf57e05f11276",
         "EN-3b2c084424198ca4",
-        "EN-e72901462ebe4458",
-        "EN-a52f1da2224ffd03",
-        "EN-22d9e9f0b17223fe"
+        "EN-e72901462ebe4458"
       ],
       "fdeIds": [
         "FDE-e32500a9c4f90e91",
@@ -10652,185 +9635,6 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
-    },
-    {
-      "id": "TX-product_form-end_user_application",
-      "name": "终端 AI 应用",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "end_user_application",
-      "eventIds": [
-        "EV-ea109db692b88079",
-        "EV-39b075c62ba4e927",
-        "EV-57cf8e14d6994c1b",
-        "EV-f1553722b4ce43af",
-        "EV-2a78dd5feb40a78a",
-        "EV-1da2e46e39a57d33",
-        "EV-ecc12e5ec883b7e7",
-        "EV-7a85e21802efd8b2",
-        "EV-0a62954694db4143",
-        "EV-1a6def173f4d7c94",
-        "EV-86ca5af11ee4d275",
-        "EV-d642ec7a9ca5eb0f",
-        "EV-f2143ba3124a2105",
-        "EV-232ab5bcbaf6552d",
-        "EV-81bd541510a530f0",
-        "EV-fab81bddb815267b",
-        "EV-d4e44892226be468",
-        "EV-7951af05be21dc7c",
-        "EV-9fc8916c19c19f99",
-        "EV-ad0589423b3aa1ce",
-        "EV-f487788f3d44f288",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-9486e14e99499e3b",
-        "EV-40d196865997025c",
-        "EV-b348083270be6c65",
-        "EV-0e84a2f49d765ce3",
-        "EV-affa49966121461c",
-        "EV-b0ed8d5a37784214",
-        "EV-e12b17260d19c5ff",
-        "EV-e4b3a19529576778",
-        "EV-8eb0acb180b7ad9d",
-        "EV-eb4858e820bf9435",
-        "EV-44a4e92c03a31ab1",
-        "EV-474d5a8ffca11ed9",
-        "EV-cfbd2bed57ba4644",
-        "EV-4596181c26d7f672",
-        "EV-59f4561c5243eb98",
-        "EV-c0921550f102695d",
-        "EV-e0ecb5f81a273447",
-        "EV-c46e427fedbf518d",
-        "EV-dd3217aad32e6891",
-        "EV-986ac3a819d23388",
-        "EV-23ae55daa341be06",
-        "EV-b31602193dbf4e08",
-        "EV-1196b80b537957f2",
-        "EV-b9a1cba0b59a5354",
-        "EV-7a48a67bab77cb73",
-        "EV-cfb7c4b4b765f53b",
-        "EV-3acfc96d99c32cf0",
-        "EV-777eb5b7783b71fb",
-        "EV-eec1e6857f0e0b2b",
-        "EV-05a87b578967c83e",
-        "EV-0609f4badfe84803",
-        "EV-604cffac28a0af69",
-        "EV-51645a3b1e730105",
-        "EV-f6ac2938949f74ec",
-        "EV-967239f907803753",
-        "EV-e42e55d1e11a2ba2",
-        "EV-41baa43cf05d4288",
-        "EV-3e55e1cd1d54f6ef",
-        "EV-07a5533c18e5a74e",
-        "EV-0edb0a592ca1fd67",
-        "EV-8aead769e84de342",
-        "EV-c846e768dad05441",
-        "EV-03e7df67a4156fd8",
-        "EV-bf20e6670dc67e8d",
-        "EV-8495af729cd05f62",
-        "EV-c3cbf5d7f860c693",
-        "EV-83acf26a011ef213",
-        "EV-5caf7f83664b1a2c",
-        "EV-ed58c2c69290ee4c",
-        "EV-c98d4ee7764d51b2",
-        "EV-342799d4e68e7416",
-        "EV-6a6ff349579765ad",
-        "EV-909cf18b467d6fdf",
-        "EV-9578242a4df20721",
-        "EV-618e2e96fac28f06"
-      ],
-      "entityIds": [
-        "EN-26997989b8425dac",
-        "EN-f9075cc99990820a",
-        "EN-556c337c4f0b031e",
-        "EN-b80e0af617d0f8ff",
-        "EN-2be663431f007250",
-        "EN-cfd90af8403941bf",
-        "EN-7706c3c94d5f9b59",
-        "EN-3eee4f30151db45a",
-        "EN-c71a83adf3de3f40",
-        "EN-64bdeb7efae18e1b",
-        "EN-10905d25fc373f32",
-        "EN-478cc1059b738832",
-        "EN-a2183526e5130b45",
-        "EN-c945929c3683ffb0",
-        "EN-4ca9544527138c33",
-        "EN-ee00b93bf0631b3e",
-        "EN-8044aae1f86875d9",
-        "EN-44355566aea5df6f",
-        "EN-f96246b78ef26d59",
-        "EN-ab447173a7f5af44",
-        "EN-f3d05a0f6248941d",
-        "EN-f346eaca864441f9",
-        "EN-05f6ecf01ac4ebec",
-        "EN-8bb4f88fd3cf9b29",
-        "EN-1c5483264189feef",
-        "EN-634561e92b7593c3",
-        "EN-7f871cbf905f6e0c",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-b5738c169b693bee",
-        "EN-2dc010636b9dce91",
-        "EN-835fb9db44937917",
-        "EN-7ea76c82c786a5e1",
-        "EN-f30ad7677baf7ea2",
-        "EN-eaa1c24270a0d057",
-        "EN-53b69ef92c836777",
-        "EN-094b7ade939cad4d",
-        "EN-ce65fa41b16c33ff",
-        "EN-7d4e02d31a7eb0f8",
-        "EN-8dab79468baaa8b0",
-        "EN-4458e908dd9a5440",
-        "EN-8dfa7ee544d661eb",
-        "EN-749f7b0c42646853",
-        "EN-afff1ef2d34b618e",
-        "EN-eafe895eb8119e6e",
-        "EN-2f88f41306209dd7",
-        "EN-c189daf477a2d4ca",
-        "EN-50e2a4156631df49",
-        "EN-91776f01fce0c960",
-        "EN-e6f146354586d556",
-        "EN-ee1e31ffef7dbe64",
-        "EN-bc76f4b93d8c1ca6",
-        "EN-75857a45899985be",
-        "EN-6ed315afcff06aac",
-        "EN-fb54e9062429a937",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-19e41212c0556603",
-        "EN-76dc4156f3e14597",
-        "EN-fd13ae012c0a7a54",
-        "EN-d58fc8daf00e9bc3",
-        "EN-fb3aef5cc2687cc7",
-        "EN-83d512876997e675",
-        "EN-3a7bd3e2360a3d29",
-        "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
-        "EN-534e99d81da1c54d",
-        "EN-210a6aeaed360009",
-        "EN-a33d30b5f34bdff5",
-        "EN-72e28a6aa6b39c76",
-        "EN-307557d99a7eb726",
-        "EN-042e9398f2cc8902",
-        "EN-26e93d81a9553eab",
-        "EN-3fb921805aa44727",
-        "EN-9fbf261b62c1d7c0",
-        "EN-d2f4e09cb01afa3c",
-        "EN-6470c8584a9d35d3",
-        "EN-4e721fae5963494d",
-        "EN-6fcba5d96a4fadfd",
-        "EN-53874092e000069b",
-        "EN-160b93ba38ba1ecd"
-      ],
-      "fdeIds": [
-        "FDE-802c377126f36fc5",
-        "FDE-3d5eb0bc571f55bf",
-        "FDE-3665b073634d4b9d"
-      ],
-      "hardwareIds": [
-        "HW-c5a22adcc66136ed"
-      ],
-      "firstSeen": "2019-03-11",
-      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-target_user-business_user",
@@ -11040,8 +9844,6 @@
         "EN-366289432b214eda",
         "EN-a5d2ae286d0d9e45",
         "EN-026c3bd4be5b91f3",
-        "EN-b0532e1af75cc4ab",
-        "EN-dca6ec9510fc0176",
         "EN-df877645404747cb",
         "EN-e5dcb6b25180d1d6",
         "EN-2dcd958b2064843f",
@@ -11069,7 +9871,7 @@
         "EN-caaa8e02be54cfc9",
         "EN-612370f44fcdeae0",
         "EN-d1a61df8d3146e48",
-        "EN-4ca9544527138c33",
+        "EN-b0a914ead94a88da",
         "EN-d2d165dff04ba225",
         "EN-693b1c2b5c9e35f4",
         "EN-c70eca6b0f88f44d",
@@ -11077,7 +9879,6 @@
         "EN-1050efc9e13624b2",
         "EN-7106dbc04a08ce3a",
         "EN-4dd5b6e2bf3bfd4f",
-        "EN-b0a914ead94a88da",
         "EN-858b4458c482f7d2",
         "EN-ee00b93bf0631b3e",
         "EN-1bd14cd1a58c5708",
@@ -11114,7 +9915,6 @@
         "EN-a972bc1b3220493e",
         "EN-ef292e56955a1c10",
         "EN-20b5af8f2c749bf8",
-        "EN-348445124d405d5a",
         "EN-b10da733dff99be1",
         "EN-049b3253f4a8e2eb",
         "EN-67e05af6c6502566",
@@ -11151,7 +9951,7 @@
         "EN-eafe895eb8119e6e",
         "EN-da41c71b4dbc3956",
         "EN-f5cfcb570b7edac2",
-        "EN-481243d2f2a235c1",
+        "EN-b5251b35f15bedc4",
         "EN-2f88f41306209dd7",
         "EN-7035f6607ad2d162",
         "EN-80f681ea74fb8ccc",
@@ -11163,26 +9963,18 @@
         "EN-50e2a4156631df49",
         "EN-b1d07f1a647ba7fb",
         "EN-3474e24464fc25a7",
-        "EN-090e5412541f063f",
-        "EN-ea3bd73e2b506e00",
-        "EN-7d3194f79e645c42",
-        "EN-de5a1adf4fedcce1",
         "EN-9fbf261b62c1d7c0",
         "EN-a7baed72c308ce88",
         "EN-3f726694f178ed7a",
         "EN-a4105d5dca667827",
         "EN-49f756463ad9dcfb",
-        "EN-a9f74d68b2b7c964",
-        "EN-e8fc8b3e92a8dc5a",
-        "EN-09c344df70df9660",
-        "EN-1725c58362aadc2a",
+        "EN-047364b9be67f665",
         "EN-27b78f50b2d3d969",
         "EN-8a96f1a807787797",
+        "EN-7d3194f79e645c42",
         "EN-7d1507284a5757ca",
         "EN-d5c876a36e02b120",
-        "EN-6f7ac1823da81d2e",
         "EN-ce31f92c521b7b08",
-        "EN-f19600b9e18f7f27",
         "EN-74bec9be9c8f2e09"
       ],
       "fdeIds": [
@@ -11195,87 +9987,6 @@
       ],
       "firstSeen": "2023-06-28",
       "lastSeen": "2026-07-31"
-    },
-    {
-      "id": "TX-industry-media_entertainment",
-      "name": "媒体与娱乐",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "media_entertainment",
-      "eventIds": [
-        "EV-2dff88f85e3bce86",
-        "EV-e31a6bf3c0a979f8",
-        "EV-ecc12e5ec883b7e7",
-        "EV-4f7462a365561bb5",
-        "EV-7817dc69d5228cbb",
-        "EV-561e2028a6212b99",
-        "EV-9fc8916c19c19f99",
-        "EV-11b5192fc54c0aa0",
-        "EV-15bbdd37c516309a",
-        "EV-affa49966121461c",
-        "EV-b0ed8d5a37784214",
-        "EV-e12b17260d19c5ff",
-        "EV-3b40ec144e5db22c",
-        "EV-c46e427fedbf518d",
-        "EV-2d6d2dc0ead4be10",
-        "EV-afcd5426f5c01dc7",
-        "EV-6c361125c3f50bb6",
-        "EV-35df5cc7eacdade7",
-        "EV-c9dda33325d18ba3",
-        "EV-aad2b98b8f25d64b",
-        "EV-d633676a4a7d89a3",
-        "EV-07a5533c18e5a74e",
-        "EV-0edb0a592ca1fd67",
-        "EV-7e52d691a0553667",
-        "EV-49751dfc7d2f6d6c",
-        "EV-83acf26a011ef213",
-        "EV-568d2aeab5234e48",
-        "EV-b986a633cca27df9",
-        "EV-ba98573b0dadde75"
-      ],
-      "entityIds": [
-        "EN-770ef1d2b6e24172",
-        "EN-2dcd958b2064843f",
-        "EN-7706c3c94d5f9b59",
-        "EN-858b4458c482f7d2",
-        "EN-e69f64149edae6b1",
-        "EN-19a5848a577315c5",
-        "EN-f96246b78ef26d59",
-        "EN-bf0e59763d382462",
-        "EN-52f1bab72d488823",
-        "EN-835fb9db44937917",
-        "EN-7ea76c82c786a5e1",
-        "EN-f30ad7677baf7ea2",
-        "EN-e4540a7c8404b1be",
-        "EN-eafe895eb8119e6e",
-        "EN-3db1f560db626918",
-        "EN-bfc698cb0f9b4d72",
-        "EN-23929c7dca3eb576",
-        "EN-7d3194f79e645c42",
-        "EN-24f5eb8d2e667579",
-        "EN-d36e5a1a7a3c45ce",
-        "EN-dd172e183ec20177",
-        "EN-754c490bd199c21a",
-        "EN-ea3bd73e2b506e00",
-        "EN-72e28a6aa6b39c76",
-        "EN-2df4d39c248116dc",
-        "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
-        "EN-2b6e51bec93e86c1",
-        "EN-8d4321d936320802",
-        "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b",
-        "EN-c1eb8e913000a8eb",
-        "EN-0be477336d3e1a8d",
-        "EN-1dc405a4cda895d0",
-        "EN-1c27324f013705cb"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-dca442211b264bbe"
-      ],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-08-01"
     },
     {
       "id": "TX-industry-automotive_transportation",
@@ -11325,15 +10036,9 @@
         "EN-bf0e59763d382462",
         "EN-cbc62794911ff31b",
         "EN-c04bd5ebd10ab696",
-        "EN-f2476f180c07c1c6",
         "EN-7ea76c82c786a5e1",
         "EN-e4540a7c8404b1be",
-        "EN-eafe895eb8119e6e",
-        "EN-59ae856cd788d0f5",
-        "EN-a23572554f6c861e",
-        "EN-8652f6cd9088f1fa",
-        "EN-fb2a436a76aa9fde",
-        "EN-9fbf261b62c1d7c0"
+        "EN-eafe895eb8119e6e"
       ],
       "fdeIds": [],
       "hardwareIds": [
@@ -11447,7 +10152,6 @@
         "EN-d387c8c96239d383",
         "EN-7106dbc04a08ce3a",
         "EN-8d4321d936320802",
-        "EN-c70eca6b0f88f44d",
         "EN-1bd14cd1a58c5708",
         "EN-6b5df3bd8bb0c67d",
         "EN-e69f64149edae6b1",
@@ -11463,11 +10167,7 @@
         "EN-f30ad7677baf7ea2",
         "EN-e4540a7c8404b1be",
         "EN-cd35ca6b5c3cf23c",
-        "EN-7d3194f79e645c42",
-        "EN-ea3bd73e2b506e00",
         "EN-883be863cc6562bb",
-        "EN-968e2d5b08687bf4",
-        "EN-53453cfb48a75dde",
         "EN-ee04228c5c6d8b08",
         "EN-eafe895eb8119e6e",
         "EN-a83a3af1a4866fd5",
@@ -11480,43 +10180,19 @@
         "EN-99f9ebbef37fcec5",
         "EN-59ae856cd788d0f5",
         "EN-be972f28adbc6e84",
-        "EN-bbdefa2950f49882",
-        "EN-2fc9fff8ab7f35aa",
-        "EN-8efebac68a48c369",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
         "EN-2b1bf2dbb57b6603",
-        "EN-86f73dfe7bb6a9e6",
-        "EN-df1970d2ada6b501",
-        "EN-43664b1263361b29",
-        "EN-bb74959cf87dec17",
         "EN-222f930b87524636",
         "EN-72138e570e5103e2",
         "EN-51188f73e8dfbfee",
         "EN-3bc9f78028bc2dba",
-        "EN-50e756052d0a9ac3",
         "EN-2abf8289b2f2113f",
-        "EN-91901356a63794df",
-        "EN-e07654c7cc29acbd",
-        "EN-e3b1bf3dab957ffe",
-        "EN-74beb25bdfe7bdd1",
         "EN-d7aba0f660c463d8",
-        "EN-e58ee91f1d57df05",
-        "EN-3fd1b8ed094cd712",
-        "EN-8f451ae7730ddb67",
-        "EN-ab9e3beebd83960d",
         "EN-61cce404a45c3545",
-        "EN-2dc010636b9dce91",
-        "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
-        "EN-9dde0c2d375060f6",
         "EN-cbc62794911ff31b",
+        "EN-bbdefa2950f49882",
         "EN-1706429cbf67f1c9",
         "EN-c3983a4111660712",
-        "EN-80d387ccb3289295",
-        "EN-3a7bd3e2360a3d29",
         "EN-6c7575a43005188a"
       ],
       "fdeIds": [
@@ -11581,8 +10257,6 @@
         "EN-b76754bb5e10534b",
         "EN-a56c2fbccb257dba",
         "EN-cfd90af8403941bf",
-        "EN-b0532e1af75cc4ab",
-        "EN-dca6ec9510fc0176",
         "EN-8d4321d936320802",
         "EN-c71a83adf3de3f40",
         "EN-a2183526e5130b45",
@@ -11591,6 +10265,7 @@
         "EN-f3d05a0f6248941d",
         "EN-3ccbd9105a45d8fc",
         "EN-a972bc1b3220493e",
+        "EN-dca6ec9510fc0176",
         "EN-7011e12e346d3d22",
         "EN-29e1a488361f12d3",
         "EN-7ea76c82c786a5e1",
@@ -11602,9 +10277,7 @@
         "EN-5e9e4638fa2ec9a4",
         "EN-d3565d297d476f10",
         "EN-3474e24464fc25a7",
-        "EN-1bf93b12e68cac56",
         "EN-b9776d7ddf459c9a",
-        "EN-9fbf261b62c1d7c0",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
         "EN-19e41212c0556603",
@@ -11612,10 +10285,7 @@
         "EN-c47b618e17c75f06",
         "EN-34da56029403e6f7",
         "EN-89e28a570dce8b18",
-        "EN-3673c8b4dba7409e",
-        "EN-7d1507284a5757ca",
-        "EN-cbc62794911ff31b",
-        "EN-dba61afed18c85d6"
+        "EN-7d1507284a5757ca"
       ],
       "fdeIds": [
         "FDE-34d87868ff636016",
@@ -11629,263 +10299,6 @@
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
       "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "TX-product_form-enterprise_software_platform",
-      "name": "企业软件平台",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "enterprise_software_platform",
-      "eventIds": [
-        "EV-2a78dd5feb40a78a",
-        "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
-        "EV-bffc68e7bb4d598b",
-        "EV-a64fab2ce6bc6c4c",
-        "EV-ccbf97fdf4dc11d0",
-        "EV-754e83c2d19005fe",
-        "EV-6be89ebfbf8de6be",
-        "EV-b29878fdf79f2ac5",
-        "EV-c64e6836b9cd2b17",
-        "EV-8b7cbb66a33a945d",
-        "EV-f6a72cddbda748b3",
-        "EV-1a6688afdfd108ef",
-        "EV-8bdb2829d0ed29fc",
-        "EV-34a077ec20c91cea",
-        "EV-e31a6bf3c0a979f8",
-        "EV-dcbe916c6138e5cb",
-        "EV-9781e67076f4e06b",
-        "EV-8cf189b07a257c1c",
-        "EV-0dfcd1e634de755b",
-        "EV-1a6def173f4d7c94",
-        "EV-63236c15166b71e0",
-        "EV-d9cc588fb41a7e67",
-        "EV-18304fc17b31148e",
-        "EV-0f520c9e5b1ea1d2",
-        "EV-6e06cfa28f76a76f",
-        "EV-e61effb7ada8508f",
-        "EV-dfddbb260b3d1c77",
-        "EV-0ade039d36e077ae",
-        "EV-f0fee44c1dfdcb09",
-        "EV-9300044a58395552",
-        "EV-439ba8d5f2f575c4",
-        "EV-aa33ca051f3a7f78",
-        "EV-1306e17cf1f3553e",
-        "EV-2b15f160de3c7ddf",
-        "EV-7817dc69d5228cbb",
-        "EV-6484904c176aa016",
-        "EV-9fa9822969d3c3fd",
-        "EV-a7e14985b924b464",
-        "EV-da064f736e880e30",
-        "EV-14a666fc27d73a80",
-        "EV-60f9204b84882857",
-        "EV-11b5192fc54c0aa0",
-        "EV-2083b9eda52a3f76",
-        "EV-917a390341b9fce6",
-        "EV-8c2fdaad276818b0",
-        "EV-fb5d2ae875255804",
-        "EV-b695dedc9acda5dc",
-        "EV-a42e51959c627554",
-        "EV-c0d19b8641a7a36c",
-        "EV-b1138bccf5ccd86c",
-        "EV-dd78b63f18dba410",
-        "EV-4c247b02485de09b",
-        "EV-7e1624d7df300713",
-        "EV-9e678b626c2a5c83",
-        "EV-88f4ee8cd57bdf42",
-        "EV-479eb3f55eda442e",
-        "EV-d292329c0ec64c8f",
-        "EV-a7dfdd426fe2a74d",
-        "EV-3f8f6a578be79988",
-        "EV-7add33b4c74dbf1a",
-        "EV-cbc0b7a7d21a29e2",
-        "EV-a84ec4216d3ded6d",
-        "EV-c5643983538c6513",
-        "EV-c8928410f6c145eb",
-        "EV-dd3217aad32e6891",
-        "EV-acdeebead5324344",
-        "EV-a3ba586cbc57b5fd",
-        "EV-0b6cfbf67ba2da31",
-        "EV-7585b033d4005977",
-        "EV-8b0f056571d68269",
-        "EV-286846e21412f3c7",
-        "EV-4eb0556b8c72d410",
-        "EV-12ca2aae7bfcd080",
-        "EV-acf1bcb321414706",
-        "EV-1196b80b537957f2",
-        "EV-fa46e5177d548bad",
-        "EV-4b545e310ded2baa",
-        "EV-778ae7684a4d782e",
-        "EV-aa7cf8ee6c875f08",
-        "EV-2c87c8ea47cbd1b6",
-        "EV-48015ed51ec9be9f",
-        "EV-2fd730d0ad452334",
-        "EV-b95539d17772a4ce",
-        "EV-f63462e34ea40699",
-        "EV-05a87b578967c83e",
-        "EV-df3bc4ed1e6325d9",
-        "EV-670a5100977ac1e9",
-        "EV-955b5810b3fca4c7",
-        "EV-4cb7e4c371fb252e",
-        "EV-82b39e10391d0f3c",
-        "EV-9254af7aaedaafbe",
-        "EV-04ee2bc4ac888358",
-        "EV-701417bcd9b57095",
-        "EV-3a7128e2d7ff149e",
-        "EV-d60e53c8a70c656e",
-        "EV-ad2e4fe6a149d95d",
-        "EV-07a5533c18e5a74e",
-        "EV-587c18cb1837c74f",
-        "EV-b8bba030747fd3b6",
-        "EV-f50752717e2a8536",
-        "EV-a886a800f06ab9d6",
-        "EV-7f979d0a01e6dffa",
-        "EV-f7484ad16a6d1876",
-        "EV-d064939235825765",
-        "EV-8eed6489ab514823",
-        "EV-a591b0c96f79de45",
-        "EV-25f9e4686e2c58c9",
-        "EV-6ce6b9c9780b97d9",
-        "EV-ef823877347ff40f",
-        "EV-2d56dec8dfeb2b56",
-        "EV-7580a050ca19a8ae"
-      ],
-      "entityIds": [
-        "EN-4a1bc98a833e2bd7",
-        "EN-2be663431f007250",
-        "EN-382635c9325bf327",
-        "EN-7f67f2f8692510cf",
-        "EN-a56c2fbccb257dba",
-        "EN-160077a1c92d0095",
-        "EN-834cc12fc35adde7",
-        "EN-522656609ff15589",
-        "EN-b0bc23fa8e20c543",
-        "EN-95fb1fa9a88b393c",
-        "EN-366289432b214eda",
-        "EN-a5d2ae286d0d9e45",
-        "EN-026c3bd4be5b91f3",
-        "EN-39f1654a4fd3c7d7",
-        "EN-e5dcb6b25180d1d6",
-        "EN-2dcd958b2064843f",
-        "EN-814669895ed30dff",
-        "EN-3afbf365c56b769d",
-        "EN-5afd6103effc8a64",
-        "EN-64bdeb7efae18e1b",
-        "EN-d6386c59a6bcfcb1",
-        "EN-712dffae168fe622",
-        "EN-478cc1059b738832",
-        "EN-733859c1fc6b9331",
-        "EN-caaa8e02be54cfc9",
-        "EN-612370f44fcdeae0",
-        "EN-d2d165dff04ba225",
-        "EN-693b1c2b5c9e35f4",
-        "EN-0cc3af265406c202",
-        "EN-7106dbc04a08ce3a",
-        "EN-b0a914ead94a88da",
-        "EN-1bd14cd1a58c5708",
-        "EN-7d3194f79e645c42",
-        "EN-4728b0c37dc84206",
-        "EN-03abf933127f01f3",
-        "EN-e69f64149edae6b1",
-        "EN-72badbbdbf521cec",
-        "EN-b51b27d89f9ea747",
-        "EN-577d8adaee97497b",
-        "EN-85759b57e5dd2ccb",
-        "EN-4abc3bd0f9e75c63",
-        "EN-7bcfaaf82306c01d",
-        "EN-bf0e59763d382462",
-        "EN-ef2bee7868007cd4",
-        "EN-e781481ff5ffe530",
-        "EN-8311b78e7ece59dd",
-        "EN-c9173cc80ae1d619",
-        "EN-3ccbd9105a45d8fc",
-        "EN-4479ee1b529c5e82",
-        "EN-b314f58f5f506fd2",
-        "EN-a972bc1b3220493e",
-        "EN-20b5af8f2c749bf8",
-        "EN-b10da733dff99be1",
-        "EN-049b3253f4a8e2eb",
-        "EN-5c178682f5573d29",
-        "EN-29e1a488361f12d3",
-        "EN-2f265a693b2897f1",
-        "EN-c04bd5ebd10ab696",
-        "EN-6c425df9139ab70a",
-        "EN-c8a41fd9300cfe54",
-        "EN-3e665817a41133c2",
-        "EN-08ff6997681fad41",
-        "EN-ee04228c5c6d8b08",
-        "EN-da41c71b4dbc3956",
-        "EN-f5cfcb570b7edac2",
-        "EN-2f88f41306209dd7",
-        "EN-5b3767eb23d5e4ed",
-        "EN-7035f6607ad2d162",
-        "EN-80f681ea74fb8ccc",
-        "EN-15516525ca2aa1a4",
-        "EN-e5cc9e38970eacb5",
-        "EN-636396f02b6571e4",
-        "EN-098a40b4499d7512",
-        "EN-b1d07f1a647ba7fb",
-        "EN-91776f01fce0c960",
-        "EN-5d11926dd637b275",
-        "EN-b5738c169b693bee",
-        "EN-d3565d297d476f10",
-        "EN-25690754dd14bd1b",
-        "EN-4e358c403850a88a",
-        "EN-4d748ebd71af03a7",
-        "EN-c3e4cc183d345262",
-        "EN-c890cfa67d1da908",
-        "EN-8d4321d936320802",
-        "EN-bbdefa2950f49882",
-        "EN-916a98f0fa2a39af",
-        "EN-19e41212c0556603",
-        "EN-dca6ec9510fc0176",
-        "EN-80015fe8be0a9322",
-        "EN-cfe6926406f30a15",
-        "EN-76a5d97e81b562c4",
-        "EN-4c3a380e1f998775",
-        "EN-b81c5ec5cca9ee79",
-        "EN-512b07739a861ba4",
-        "EN-c21867c45d603d0b",
-        "EN-1169c45fdc06f0ac",
-        "EN-8d323d8bba783aa3",
-        "EN-a4105d5dca667827",
-        "EN-408b79480c97ebdc",
-        "EN-e395d03e988d30a9",
-        "EN-c70eca6b0f88f44d",
-        "EN-e65e0f2695fa259d",
-        "EN-ea3bd73e2b506e00",
-        "EN-1da46c494dfdd8d3",
-        "EN-e3a80a99bb5fa250",
-        "EN-9ff1a58a589bc318",
-        "EN-ae4ea495016fb286",
-        "EN-d9b1d7819af92e77",
-        "EN-2f00e6c060e01051",
-        "EN-9fbf261b62c1d7c0",
-        "EN-dfc0fdff7af68ed2",
-        "EN-f5b119e89624f88e",
-        "EN-3eee4f30151db45a",
-        "EN-35e36dc1a5213fa3",
-        "EN-bdfecbcd7dbf76d2",
-        "EN-e3db3da2b7dc6057",
-        "EN-73209317ae64f32b",
-        "EN-61cce404a45c3545",
-        "EN-2dc010636b9dce91",
-        "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55"
-      ],
-      "fdeIds": [
-        "FDE-ebcbdf2b14d4c291",
-        "FDE-e79a238725a98c06",
-        "FDE-560b710961006374",
-        "FDE-faf3a8cfcafef981",
-        "FDE-a1c35f8b9ea1d489",
-        "FDE-ef39df7f58226836",
-        "FDE-3665b073634d4b9d"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-01"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -11967,8 +10380,6 @@
         "EV-dbda21182e61923b"
       ],
       "entityIds": [
-        "EN-63885fe05a1e6c58",
-        "EN-3f0aebcc27f443e2",
         "EN-57b8b5990c299db8",
         "EN-73ef176d9f12809e",
         "EN-05cd4b807503b0f2",
@@ -11988,49 +10399,25 @@
         "EN-58b507456c52c9b3",
         "EN-c0cd6e83b6dd78a5",
         "EN-da454b02b4700b1f",
-        "EN-348445124d405d5a",
         "EN-634561e92b7593c3",
-        "EN-7f871cbf905f6e0c",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-b5738c169b693bee",
-        "EN-2dc010636b9dce91",
         "EN-8e8cc11d1475231b",
         "EN-ddadc7e89f7cd629",
         "EN-7d3194f79e645c42",
         "EN-449777124b1466a8",
         "EN-c70eca6b0f88f44d",
-        "EN-916a98f0fa2a39af",
-        "EN-9fbf261b62c1d7c0",
-        "EN-3ccbd9105a45d8fc",
-        "EN-a23572554f6c861e",
-        "EN-8652f6cd9088f1fa",
-        "EN-fb2a436a76aa9fde",
+        "EN-8d4321d936320802",
         "EN-ea87a2bd84296f73",
-        "EN-4094a2b7125c7564",
         "EN-30397d0cfc1b0e29",
+        "EN-9fbf261b62c1d7c0",
         "EN-0d4bbb73ac4c7513",
         "EN-e73b79a0b10f8cdb",
-        "EN-2ca3f7d58fdda0f5",
+        "EN-bbdefa2950f49882",
         "EN-ac123e56b0168ec2",
-        "EN-d5b8915a8c232010",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-18f0900d6c487f59",
-        "EN-31055a8d9856fce4",
-        "EN-204d4b18c9d78e88",
-        "EN-7839fb10a8f14c70",
-        "EN-52fc33ae4d101a5d",
         "EN-c4941bfc97ac7c2d",
         "EN-03b974cdbd22fe32",
-        "EN-b50e6e7659f1018e",
         "EN-8de7e44229714152",
-        "EN-db68703d8d719bd0",
-        "EN-c8185a1a8a6595ad",
         "EN-ced86039c0ad6a7c",
-        "EN-3a13916345b60fad",
-        "EN-b59c577ed73536c6",
-        "EN-9f15bb7e29e191eb",
         "EN-842a7da99bd249d4",
         "EN-0cc659a9f57c2493",
         "EN-52d25a9e30ba94f1"
@@ -12100,24 +10487,18 @@
         "EN-a9aff9e0737a5d4a",
         "EN-3032646694ad17bb",
         "EN-ef292e56955a1c10",
-        "EN-348445124d405d5a",
+        "EN-58b507456c52c9b3",
         "EN-67e05af6c6502566",
-        "EN-e3ce9cc5efa9354c",
+        "EN-d9352ce019e77ab3",
         "EN-2b81d85809794782",
         "EN-48bebf25e5bd5aca",
-        "EN-240389f4b730bad4",
         "EN-e4540a7c8404b1be",
         "EN-8e3070c2f39507a8",
         "EN-88e2cce43eeadb36",
         "EN-f4bec299df3f4f27",
-        "EN-373ac021a2c0bb2c",
         "EN-8d4321d936320802",
         "EN-42a64c68a4a98ad5",
-        "EN-ebe5ed2fc0df64de",
-        "EN-202ac21492470b79",
         "EN-d5c876a36e02b120",
-        "EN-6f7ac1823da81d2e",
-        "EN-7d3194f79e645c42",
         "EN-ce31f92c521b7b08"
       ],
       "fdeIds": [
@@ -12322,11 +10703,6 @@
         "EN-b0532e1af75cc4ab",
         "EN-8d4321d936320802",
         "EN-7209ec6f68ac0bcd",
-        "EN-8c178e7cfa1b29f9",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
-        "EN-717399fcba3c79be",
-        "EN-ea3bd73e2b506e00",
         "EN-dc758ebb8ad248f8",
         "EN-b06631033a981321",
         "EN-450dcf23e621ff10",
@@ -12338,33 +10714,20 @@
         "EN-4abc3bd0f9e75c63",
         "EN-cbc62794911ff31b",
         "EN-11507a0e2f5e69d5",
-        "EN-e78bdebae031095b",
-        "EN-6fcba5d96a4fadfd",
         "EN-ee1e31ffef7dbe64",
         "EN-e5b0bf1bf239d3ec",
-        "EN-916a98f0fa2a39af",
         "EN-245f1e177c5169cb",
         "EN-3032646694ad17bb",
         "EN-c04bd5ebd10ab696",
-        "EN-8d3aa1a6f227d714",
+        "EN-c70eca6b0f88f44d",
         "EN-b5251b35f15bedc4",
         "EN-634561e92b7593c3",
-        "EN-bbdefa2950f49882",
-        "EN-b5738c169b693bee",
-        "EN-2dc010636b9dce91",
         "EN-2f265a693b2897f1",
-        "EN-240389f4b730bad4",
         "EN-8da5eafb322ee86e",
         "EN-cd35ca6b5c3cf23c",
         "EN-883be863cc6562bb",
-        "EN-968e2d5b08687bf4",
-        "EN-53453cfb48a75dde",
-        "EN-481243d2f2a235c1",
         "EN-a83a3af1a4866fd5",
-        "EN-95b0632f1b292fa7",
-        "EN-e6f146354586d556",
-        "EN-6d57b22ebbd2bd90",
-        "EN-59ae856cd788d0f5",
+        "EN-968e2d5b08687bf4",
         "EN-b81c8201acfc7639",
         "EN-23929c7dca3eb576",
         "EN-bc8a00f7f6fb535f",
@@ -12373,128 +10736,66 @@
         "EN-3e52637ec683b555",
         "EN-7df09a7717ef2feb",
         "EN-2ee49ef51a776e2c",
-        "EN-c3e64a321c2caaf7",
         "EN-a89151ba4b5ac0f2",
         "EN-febedfcafee9d610",
-        "EN-0bd85984211bd173",
         "EN-d30e5ffc0ba9150b",
-        "EN-8989aada6eb4a4c3",
+        "EN-7d3194f79e645c42",
         "EN-0f553f48551aef83",
         "EN-a7b54a780af509be",
         "EN-ae679821f0649c15",
-        "EN-d9352ce019e77ab3",
-        "EN-bc1fc5140040180e",
         "EN-e73b79a0b10f8cdb",
-        "EN-2ca3f7d58fdda0f5",
+        "EN-bbdefa2950f49882",
         "EN-593d0361124f348f",
-        "EN-843e746333671ab1",
         "EN-bae152c4560df38c",
-        "EN-52e3d014f9a275ea",
         "EN-e16fc821f34228d1",
         "EN-99ab66e520f71a9b",
-        "EN-0b0c3b228202ab0a",
         "EN-9c8ae69b84f21a2e",
         "EN-7d48744f8d0f0657",
+        "EN-6fcba5d96a4fadfd",
         "EN-165753d8649b9122",
         "EN-3c6d89173e6636d7",
-        "EN-085598c00f2aaccf",
-        "EN-d58fc8daf00e9bc3",
-        "EN-fb3aef5cc2687cc7",
-        "EN-e3b1bf3dab957ffe",
         "EN-f0edcf96f6fa2ccb",
-        "EN-d36e5a1a7a3c45ce",
-        "EN-dd172e183ec20177",
-        "EN-ac123e56b0168ec2",
-        "EN-8395dc051feafc4c",
-        "EN-eb4e7bf788bcb164",
-        "EN-774e4ec967bc4280",
         "EN-522d3edeb64a7ca4",
-        "EN-c608c4787821de1b",
-        "EN-101a515191c6be9e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-8147e6fed86d42c1",
         "EN-12a81529bba89666",
-        "EN-4e3da39e54ff3137",
-        "EN-ae0facccf0a3723a",
         "EN-ebf9032e4009b3d9",
-        "EN-27aaa410b20647e0",
-        "EN-aaf5dd513fc95bd5",
         "EN-6416272bf06ab3ec",
-        "EN-8fc4d0cdb7b45668",
         "EN-44a9bf3b11abea5c",
         "EN-35e36dc1a5213fa3",
-        "EN-81e577740888ca6d",
-        "EN-e3db3da2b7dc6057",
-        "EN-9e193e1ec8d75d41",
-        "EN-51fd7dc086fcb858",
-        "EN-0d4ab5f8db6e89bc",
-        "EN-50fbf46e6eff93e5",
         "EN-3ae50afab3e392b8",
-        "EN-0874d2a9a463699b",
-        "EN-2c063f604e634100",
+        "EN-e78bdebae031095b",
         "EN-cd6362472aea60ef",
-        "EN-8992f4a61a19a74b",
         "EN-03b974cdbd22fe32",
-        "EN-b50e6e7659f1018e",
         "EN-ae4ea495016fb286",
-        "EN-373ac021a2c0bb2c",
         "EN-137ef33b0c4f41e0",
         "EN-c39551756f4e2d96",
         "EN-a759ee8f6d212de8",
         "EN-a93bc1dfeb147c54",
-        "EN-86acdf589a6723d5",
         "EN-7fe3b39d3a47a6eb",
-        "EN-a25f979f2efd630f",
-        "EN-9fbf261b62c1d7c0",
         "EN-0e60756957d49b6b",
-        "EN-34ec8666daf7b665",
         "EN-0d049cd1e9f619f9",
         "EN-67f2d22514622d1b",
         "EN-afe83c198e329ef2",
         "EN-e0bab6f6c58bfe4e",
-        "EN-3a13916345b60fad",
-        "EN-779965438dd9e7a7",
         "EN-d3c20bd565303d39",
         "EN-67e934ddce36a503",
         "EN-7117fa8d72fb99b9",
-        "EN-23bc2a854bc0cfb0",
-        "EN-2cfed21b7a971267",
+        "EN-481243d2f2a235c1",
         "EN-dd920a8cd166f486",
         "EN-2b6e51bec93e86c1",
-        "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b",
         "EN-6e898ad0522fca30",
+        "EN-c608c4787821de1b",
         "EN-412b57e712039032",
-        "EN-c27c48199bb1e14b",
-        "EN-b59c577ed73536c6",
         "EN-50537dab76505dfc",
-        "EN-41dcc2d4951f337b",
         "EN-7f6333102da9e8bd",
         "EN-1a8141d5b3fef420",
-        "EN-ebe5ed2fc0df64de",
-        "EN-202ac21492470b79",
         "EN-e956b4e6d9c37fa7",
-        "EN-67c6738648b7e247",
-        "EN-ab9e3beebd83960d",
-        "EN-42375a8003f17c95",
-        "EN-171fa23d27b5894b",
         "EN-d5c876a36e02b120",
         "EN-c3ce0cc92b48bbd6",
-        "EN-54ef981ab82586b5",
         "EN-720effadfd3cf8c3",
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
-        "EN-65b3aa2f527deeef",
-        "EN-a2413f7c5095f988",
-        "EN-65c9b6f61b2502b0",
-        "EN-1ad3d4263b03cdf5",
-        "EN-4906a49adc5c472b",
-        "EN-8631ef491b6a9786",
         "EN-2d559a898cc329c8",
-        "EN-80d387ccb3289295",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc",
         "EN-783ef849d8a6ffe6",
         "EN-1c27324f013705cb",
         "EN-c9fd53f3265ef997"
@@ -12519,125 +10820,6 @@
       ],
       "firstSeen": "2022-10-01",
       "lastSeen": "2026-08-01"
-    },
-    {
-      "id": "TX-technology-code_generation",
-      "name": "代码生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "code_generation",
-      "eventIds": [
-        "EV-f669ee8fd74b8269",
-        "EV-1a6688afdfd108ef",
-        "EV-15cc72d7c78cad3d",
-        "EV-52115fee0e716170",
-        "EV-f0fee44c1dfdcb09",
-        "EV-9300044a58395552",
-        "EV-3daefecd0453631a",
-        "EV-bb6bc8194a3a50c1",
-        "EV-edcb66d0401cfb8f",
-        "EV-ee0662b75588987e",
-        "EV-c0ec0c026233bea5",
-        "EV-03f661e8dcdf1b58",
-        "EV-5762fe51987bc5ff",
-        "EV-acdeebead5324344",
-        "EV-dda9429d76897a3d",
-        "EV-2d6d2dc0ead4be10",
-        "EV-4c0af31f1399ea8c",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-d5f276ad6b2ac9de",
-        "EV-0d5a32aca724d30e",
-        "EV-bfa090c78227abf8",
-        "EV-0f440082086c02df",
-        "EV-2634b786bde9fb8e",
-        "EV-6ce069b1845f5a52",
-        "EV-4f36e494d9281522",
-        "EV-c237f5dc53f0a923",
-        "EV-74dfbd82b47dc626",
-        "EV-0dbc7b904378f713",
-        "EV-578a9db1fe952d0a",
-        "EV-f784003febc1d9eb",
-        "EV-53288fcf18e677e6",
-        "EV-cec69087dc8992e0",
-        "EV-1b03e5dff76a50a1",
-        "EV-2d5746e41f96c3c2",
-        "EV-1e0871947289ab6e",
-        "EV-564f3df8d487ca6f",
-        "EV-6af31d42885e0361",
-        "EV-e9a86c47da229331",
-        "EV-f68e00bb9fd49fac",
-        "EV-d53cd33e8f541a65",
-        "EV-773ffcc6e1df56fa",
-        "EV-cfce55156a2ed7d2",
-        "EV-86a748e312284d0d",
-        "EV-4900ddf0686f4bbc"
-      ],
-      "entityIds": [
-        "EN-b317ecf666cdb012",
-        "EN-e78bdebae031095b",
-        "EN-026c3bd4be5b91f3",
-        "EN-3ccbd9105a45d8fc",
-        "EN-24af08c2634cb45a",
-        "EN-0cc3af265406c202",
-        "EN-7106dbc04a08ce3a",
-        "EN-7d3194f79e645c42",
-        "EN-a7dd4a797cf9990b",
-        "EN-ac32f27ba7a1346f",
-        "EN-c70eca6b0f88f44d",
-        "EN-bbdefa2950f49882",
-        "EN-5b3767eb23d5e4ed",
-        "EN-95b0632f1b292fa7",
-        "EN-3db1f560db626918",
-        "EN-86f73dfe7bb6a9e6",
-        "EN-86ca9936019f1039",
-        "EN-4094a2b7125c7564",
-        "EN-e5904fa438fcd5bf",
-        "EN-76a9a8a6e2f1a47b",
-        "EN-7ad3f3203e5d717e",
-        "EN-d1ad14d4ad57d207",
-        "EN-1076719c4826c477",
-        "EN-9fbf261b62c1d7c0",
-        "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-cb4754c48f8023d0",
-        "EN-761c4b9294ee43a7",
-        "EN-3969dd578ebf6c65",
-        "EN-4adc2faea521b1f1",
-        "EN-c857d09db23e6822",
-        "EN-7ec0224e483d913b",
-        "EN-2d87f3d38782aa14",
-        "EN-b5251b35f15bedc4",
-        "EN-0db2d631b42da133",
-        "EN-b81c8201acfc7639",
-        "EN-8bcef51236d613cd",
-        "EN-993599624a199fe0",
-        "EN-ddf9916b459b6d77",
-        "EN-3aca03b9bb50f158",
-        "EN-412b57e712039032",
-        "EN-ce635c4eabff5e4f",
-        "EN-b57c95289680078c",
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-085598c00f2aaccf",
-        "EN-630dc133336bc266",
-        "EN-c4bc2d00a42f220f",
-        "EN-6fcba5d96a4fadfd",
-        "EN-46a4eebd20d881ec",
-        "EN-ba1269449ab76537",
-        "EN-f19600b9e18f7f27",
-        "EN-e759968ca9278b8d",
-        "EN-0030f5adc7a3f4d7"
-      ],
-      "fdeIds": [
-        "FDE-0ef4045e28c345f8",
-        "FDE-a68ccf61a21e22ce",
-        "FDE-467e0bd030c922df"
-      ],
-      "hardwareIds": [
-        "HW-b1302168a9ab18e8"
-      ],
-      "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-30"
     },
     {
       "id": "TX-ai_market_application-chips",
@@ -12796,51 +10978,28 @@
         "EV-6b7917bd7edd4bde"
       ],
       "entityIds": [
-        "EN-95b0632f1b292fa7",
-        "EN-7d3194f79e645c42",
-        "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
-        "EN-0f3360879e746531",
         "EN-193d220b421d776e",
         "EN-b81c8201acfc7639",
         "EN-7df09a7717ef2feb",
         "EN-e1517be14d06cdb7",
         "EN-febedfcafee9d610",
-        "EN-0bd85984211bd173",
         "EN-8d57f84bd1847b24",
         "EN-a89151ba4b5ac0f2",
         "EN-be548deba4a093d7",
-        "EN-92ec1124e1de6f54",
         "EN-3c6d89173e6636d7",
-        "EN-e3b1bf3dab957ffe",
-        "EN-8f71c4871a160172",
-        "EN-78624f0a98e78301",
         "EN-4b078b39d2fcacc7",
         "EN-522d3edeb64a7ca4",
-        "EN-c608c4787821de1b",
-        "EN-101a515191c6be9e",
         "EN-6f7ac1823da81d2e",
         "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
         "EN-de6b71bf77ff4299",
-        "EN-c4ef31845ea79710",
-        "EN-51fd7dc086fcb858",
+        "EN-8d4321d936320802",
+        "EN-7d3194f79e645c42",
         "EN-2b6e51bec93e86c1",
-        "EN-7ed9c9e7c260ed06",
-        "EN-4d09c69c19f5f67b",
         "EN-afe83c198e329ef2",
         "EN-1730144d4e269a62",
-        "EN-cf81a61e4eaef17c",
-        "EN-2b96ed840c07482a",
-        "EN-4f5d0b82a300f296",
         "EN-9a6ee79873b1fb7b",
         "EN-047364b9be67f665",
-        "EN-d65d81c60c0c47c4",
-        "EN-085598c00f2aaccf",
-        "EN-b5251b35f15bedc4",
-        "EN-d831f1170590ddb1",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc"
+        "EN-b5251b35f15bedc4"
       ],
       "fdeIds": [
         "FDE-0ef4045e28c345f8"
@@ -12850,116 +11009,6 @@
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-08-01"
-    },
-    {
-      "id": "TX-product_form-security_software",
-      "name": "安全软件",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "security_software",
-      "eventIds": [
-        "EV-9b81b0dd09a046ab",
-        "EV-2069f6a931b8c9d6",
-        "EV-c84b6d7338f87990",
-        "EV-6aee7474fe69bb7d",
-        "EV-9046a75f19913ca5",
-        "EV-61546e58c0e669e7",
-        "EV-7b7f0cdf219434f6",
-        "EV-39717cdbada984d7",
-        "EV-6ae3594aadfcd3d8",
-        "EV-c85011ca6a0389bf",
-        "EV-8bbc23e53e799d9d",
-        "EV-0e84a2f49d765ce3",
-        "EV-fdfd4bf00571bb35",
-        "EV-8cb5b0ed18c7cdd8"
-      ],
-      "entityIds": [
-        "EN-57b8b5990c299db8",
-        "EN-73ef176d9f12809e",
-        "EN-05cd4b807503b0f2",
-        "EN-5437fc10a23832bb",
-        "EN-df877645404747cb",
-        "EN-1050efc9e13624b2",
-        "EN-4dd5b6e2bf3bfd4f",
-        "EN-d74c69db63e4763f",
-        "EN-58b507456c52c9b3",
-        "EN-348445124d405d5a",
-        "EN-c0cd6e83b6dd78a5",
-        "EN-da454b02b4700b1f",
-        "EN-634561e92b7593c3",
-        "EN-7f871cbf905f6e0c",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-b5738c169b693bee",
-        "EN-2dc010636b9dce91",
-        "EN-8e8cc11d1475231b",
-        "EN-fdb2cc367267ac57"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2025-11-17",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "TX-industry-telecommunications",
-      "name": "电信",
-      "nodeType": "industry",
-      "typeLabel": "行业",
-      "valueId": "telecommunications",
-      "eventIds": [
-        "EV-a64fab2ce6bc6c4c",
-        "EV-b678e91bc60fb0f0",
-        "EV-e31a6bf3c0a979f8",
-        "EV-b2d94511e4b4dfc8",
-        "EV-7817dc69d5228cbb",
-        "EV-561e2028a6212b99",
-        "EV-9fc8916c19c19f99",
-        "EV-044b917005a8f611",
-        "EV-5d581d112fdbd464",
-        "EV-ef7346378fcf9746",
-        "EV-b0ed8d5a37784214",
-        "EV-3b40ec144e5db22c",
-        "EV-59882383f82f215d",
-        "EV-c46e427fedbf518d",
-        "EV-cafe435ddd007821",
-        "EV-6b51b1b6fe22c540",
-        "EV-1ff169120ed385f6",
-        "EV-6ce6b9c9780b97d9"
-      ],
-      "entityIds": [
-        "EN-a56c2fbccb257dba",
-        "EN-9a1b3d418cbbdf96",
-        "EN-2dcd958b2064843f",
-        "EN-cf9488537f777c1a",
-        "EN-e69f64149edae6b1",
-        "EN-19a5848a577315c5",
-        "EN-f96246b78ef26d59",
-        "EN-b4835ed157e04983",
-        "EN-7011e12e346d3d22",
-        "EN-e78bdebae031095b",
-        "EN-7ea76c82c786a5e1",
-        "EN-e4540a7c8404b1be",
-        "EN-883be863cc6562bb",
-        "EN-eafe895eb8119e6e",
-        "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
-        "EN-0f3360879e746531",
-        "EN-80d387ccb3289295",
-        "EN-e3b1bf3dab957ffe",
-        "EN-6461cd2cb824a554",
-        "EN-61cce404a45c3545",
-        "EN-9fbf261b62c1d7c0",
-        "EN-2dc010636b9dce91",
-        "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-ceb55d9bc637c1d3"
-      ],
-      "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-24"
     },
     {
       "id": "TX-industry-logistics_supply_chain",
@@ -13043,12 +11092,9 @@
         "EN-3e14bbbb0445c2de",
         "EN-240389f4b730bad4",
         "EN-593d0361124f348f",
-        "EN-843e746333671ab1",
         "EN-0e6e48aba1669631",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-8d4321d936320802",
-        "EN-4e7e886400fe6a83",
         "EN-0d049cd1e9f619f9",
         "EN-7f6333102da9e8bd"
       ],
@@ -13100,33 +11146,18 @@
         "EN-7ef08ef63597d47c",
         "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
-        "EN-0f3360879e746531",
         "EN-240389f4b730bad4",
-        "EN-c70eca6b0f88f44d",
-        "EN-1f1cfc1d441be41f",
         "EN-2b6e51bec93e86c1",
-        "EN-e1086f449d58de87",
-        "EN-364df82f85761d58",
         "EN-b47de584b4515427",
-        "EN-4cbf88b0da5d15f8",
         "EN-149ae7e9819a17a0",
         "EN-02865db849986974",
-        "EN-8d57f84bd1847b24",
         "EN-0e6e48aba1669631",
-        "EN-e07654c7cc29acbd",
-        "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
         "EN-30081094f2a8c83d",
-        "EN-d558e1de958b9d05",
         "EN-67f2d22514622d1b",
         "EN-7f6333102da9e8bd",
         "EN-89e3f0711b76932c",
-        "EN-e9830c30bc572802",
-        "EN-5e1fcba4c9f1cf69",
-        "EN-7d3194f79e645c42",
-        "EN-94ff75465b1afa65",
-        "EN-80d387ccb3289295"
+        "EN-5e1fcba4c9f1cf69"
       ],
       "fdeIds": [
         "FDE-becc5964d9b5f86c",
@@ -13142,63 +11173,6 @@
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-08-02"
-    },
-    {
-      "id": "TX-product_form-compute_cloud_service",
-      "name": "算力云服务",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "compute_cloud_service",
-      "eventIds": [
-        "EV-e3792591090281c6",
-        "EV-4eaf3aabecae6016",
-        "EV-6e516b6e68def9cf",
-        "EV-13ec78dfdbca678b",
-        "EV-53acea531ac371d6",
-        "EV-7b1c734882fa1ea6",
-        "EV-327ba605bd9e8307",
-        "EV-24265c0f0fa45343",
-        "EV-4118202ed0f91895",
-        "EV-29eea3f4a8fcd6f5",
-        "EV-1abf0d076d30ec6d",
-        "EV-6011ab83ebd290bd",
-        "EV-f2750a3d66e06fe7",
-        "EV-826c8088c4adf591",
-        "EV-0ec219a94317215f",
-        "EV-5493c61bcbe58aa2",
-        "EV-4b44f5eafecf4922",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-fdecfc27f301da9c",
-        "EN-0caee180da9d0f3f",
-        "EN-2e3e41eef734616d",
-        "EN-816bab802b34b308",
-        "EN-8d4321d936320802",
-        "EN-18b4bbfd60f4137e",
-        "EN-830cefea8ed73a00",
-        "EN-d1a61df8d3146e48",
-        "EN-c04bd5ebd10ab696",
-        "EN-0b79cf2de0ee6b8e",
-        "EN-07c370b082ffd370",
-        "EN-240389f4b730bad4",
-        "EN-8e3070c2f39507a8",
-        "EN-8f5ef31ed5125786",
-        "EN-ebf9032e4009b3d9",
-        "EN-27aaa410b20647e0",
-        "EN-aaf5dd513fc95bd5",
-        "EN-042e9398f2cc8902",
-        "EN-9d07f526fab9cfe9",
-        "EN-bbdefa2950f49882",
-        "EN-2aae0de3f5530f08",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-04-30",
-      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -13263,7 +11237,6 @@
         "EN-2dcd958b2064843f",
         "EN-92dd63c8e5c77e8a",
         "EN-4c3788aad4bebf2f",
-        "EN-cf9488537f777c1a",
         "EN-caaa8e02be54cfc9",
         "EN-1bd14cd1a58c5708",
         "EN-88ab1e5d793701f9",
@@ -13283,44 +11256,26 @@
         "EN-ee04228c5c6d8b08",
         "EN-eafe895eb8119e6e",
         "EN-a83a3af1a4866fd5",
-        "EN-ea3bd73e2b506e00",
         "EN-e5cc9e38970eacb5",
         "EN-023e881577ad3ab1",
         "EN-b81c8201acfc7639",
-        "EN-8d4321d936320802",
-        "EN-59ae856cd788d0f5",
-        "EN-0f3360879e746531",
         "EN-27032b3c60ab2a95",
-        "EN-43381465c2b7d64e",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
         "EN-28d0bd981118a907",
         "EN-8d291c7017252b07",
         "EN-2f4f5c040cf915b8",
         "EN-a7d324a4b53ea387",
-        "EN-4d748ebd71af03a7",
-        "EN-c3e4cc183d345262",
         "EN-ab877737b6081bd1",
+        "EN-8d4321d936320802",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
         "EN-cc70f504af53013a",
-        "EN-4cbf88b0da5d15f8",
-        "EN-e3b1bf3dab957ffe",
         "EN-a93bc1dfeb147c54",
-        "EN-86acdf589a6723d5",
-        "EN-ebe5ed2fc0df64de",
-        "EN-202ac21492470b79",
         "EN-61cce404a45c3545",
-        "EN-9fbf261b62c1d7c0",
-        "EN-2dc010636b9dce91",
-        "EN-23b979df49741c93",
-        "EN-02072c80a8386e8d",
-        "EN-2eb073b22916de55",
         "EN-4a639cb888a15d75",
-        "EN-9dde0c2d375060f6",
         "EN-b21a23767d4d35a9",
-        "EN-a19ad969c84178e9",
-        "EN-9eb42ffb4942bcc2"
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
+        "EN-a19ad969c84178e9"
       ],
       "fdeIds": [
         "FDE-0ee0fe3baa3f1364",
@@ -13381,8 +11336,7 @@
         "EN-6f7ac1823da81d2e",
         "EN-245f1e177c5169cb",
         "EN-1c5483264189feef",
-        "EN-8d3aa1a6f227d714",
-        "EN-e3ce9cc5efa9354c",
+        "EN-d9352ce019e77ab3",
         "EN-2b6e51bec93e86c1",
         "EN-a83a3af1a4866fd5",
         "EN-023e881577ad3ab1",
@@ -13392,60 +11346,6 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-29"
-    },
-    {
-      "id": "TX-technology-long_context",
-      "name": "长上下文",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "long_context",
-      "eventIds": [
-        "EV-80e54c9a390da293",
-        "EV-fd21441fb6e143c3",
-        "EV-7a4d1e871dcd3b1f",
-        "EV-653cbce2ccc79f8b",
-        "EV-0e616f9e775a77dc",
-        "EV-fe519605ebb69aaf",
-        "EV-2fea1664807824ce",
-        "EV-86ab9c2f1416e9d8",
-        "EV-a5efa57f3f744425",
-        "EV-70e3f88cb06a856c",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-70efbfcaadcdb259",
-        "EV-0c06df62702d26ab",
-        "EV-534dc9add1c0cc35",
-        "EV-57f083a39393d841",
-        "EV-86537be17d50ff20"
-      ],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-c70eca6b0f88f44d",
-        "EN-7df09a7717ef2feb",
-        "EN-50ba7ff15827787b",
-        "EN-607964040e4b62e0",
-        "EN-cb4754c48f8023d0",
-        "EN-bf8951127ecb940e",
-        "EN-bc1fc5140040180e",
-        "EN-0d1e478de2157d48",
-        "EN-4546b5bdff2ea8ed",
-        "EN-9c8ae69b84f21a2e",
-        "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
-        "EN-7d3194f79e645c42",
-        "EN-8f71c4871a160172",
-        "EN-78624f0a98e78301",
-        "EN-4b078b39d2fcacc7",
-        "EN-7dd7122ad9bf240f",
-        "EN-1d79127e9d90e89b",
-        "EN-bc77259c5d2eb341",
-        "EN-52fc33ae4d101a5d",
-        "EN-3153ebda601cdb79",
-        "EN-6ac6ad44bb9995ca"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-12",
       "lastSeen": "2026-07-29"
     },
     {
@@ -13467,25 +11367,14 @@
         "EV-57597c92f7b183a9"
       ],
       "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-c70eca6b0f88f44d",
         "EN-9fbf261b62c1d7c0",
-        "EN-0d4bbb73ac4c7513",
         "EN-0d1e478de2157d48",
-        "EN-4546b5bdff2ea8ed",
-        "EN-78624f0a98e78301",
         "EN-4b078b39d2fcacc7",
-        "EN-51fd7dc086fcb858",
+        "EN-8d4321d936320802",
         "EN-bbf9aece05291ea4",
-        "EN-bbdefa2950f49882",
-        "EN-d56aa2f9908f566a",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-6e898ad0522fca30",
-        "EN-72e8088a05b38ae3",
-        "EN-833cd615d86b73ca",
-        "EN-ebe5ed2fc0df64de",
-        "EN-202ac21492470b79"
+        "EN-72e8088a05b38ae3"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -13530,34 +11419,19 @@
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-968e2d5b08687bf4",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-e21783b898b55a31",
         "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
         "EN-bbdefa2950f49882",
-        "EN-992eafe973f69075",
-        "EN-1229af0aa3b0305e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-8147e6fed86d42c1",
         "EN-12a81529bba89666",
         "EN-44a9bf3b11abea5c",
         "EN-de6b71bf77ff4299",
-        "EN-c4ef31845ea79710",
+        "EN-3a7bd3e2360a3d29",
         "EN-dd920a8cd166f486",
-        "EN-c70eca6b0f88f44d",
-        "EN-41dcc2d4951f337b",
         "EN-8d4321d936320802",
-        "EN-e07654c7cc29acbd",
         "EN-c3ce0cc92b48bbd6",
-        "EN-54ef981ab82586b5",
-        "EN-80d387ccb3289295",
         "EN-b7dac8ddfad3bea8",
-        "EN-6f7ac1823da81d2e",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc"
+        "EN-6f7ac1823da81d2e"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -13601,34 +11475,19 @@
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-968e2d5b08687bf4",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
         "EN-e21783b898b55a31",
         "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
         "EN-bbdefa2950f49882",
-        "EN-992eafe973f69075",
-        "EN-1229af0aa3b0305e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-8147e6fed86d42c1",
         "EN-12a81529bba89666",
         "EN-44a9bf3b11abea5c",
         "EN-de6b71bf77ff4299",
-        "EN-c4ef31845ea79710",
+        "EN-3a7bd3e2360a3d29",
         "EN-dd920a8cd166f486",
-        "EN-c70eca6b0f88f44d",
-        "EN-41dcc2d4951f337b",
         "EN-8d4321d936320802",
-        "EN-e07654c7cc29acbd",
         "EN-c3ce0cc92b48bbd6",
-        "EN-54ef981ab82586b5",
-        "EN-80d387ccb3289295",
         "EN-b7dac8ddfad3bea8",
-        "EN-6f7ac1823da81d2e",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc"
+        "EN-6f7ac1823da81d2e"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -13654,102 +11513,15 @@
       "entityIds": [
         "EN-0b79cf2de0ee6b8e",
         "EN-c7d7af20b6ab853d",
-        "EN-d9b1d7819af92e77",
-        "EN-bbdefa2950f49882",
-        "EN-96eebba49dbbf422",
         "EN-2613d360c34cdc8c",
         "EN-842fcb5e60989a03",
         "EN-6f4e2e93ad6de7f1",
-        "EN-c70eca6b0f88f44d",
-        "EN-729324072d368379",
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-4f5d0b82a300f296",
-        "EN-2b96ed840c07482a",
-        "EN-e1517be14d06cdb7",
-        "EN-cf81a61e4eaef17c",
-        "EN-ab9e3beebd83960d"
+        "EN-8d4321d936320802"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-03",
       "lastSeen": "2026-07-21"
-    },
-    {
-      "id": "TX-deployment_model-on_premise",
-      "name": "本地部署",
-      "nodeType": "deployment_model",
-      "typeLabel": "部署形态",
-      "valueId": "on_premise",
-      "eventIds": [
-        "EV-0e84a2f49d765ce3",
-        "EV-7263caa45bbf168e",
-        "EV-c0d8138d8cab5135",
-        "EV-3011ea85c51a3ee0",
-        "EV-7309586168387ad8",
-        "EV-a06011da69abcc3d",
-        "EV-f1912ab7c46288f3"
-      ],
-      "entityIds": [
-        "EN-634561e92b7593c3",
-        "EN-7f871cbf905f6e0c",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-b5738c169b693bee",
-        "EN-2dc010636b9dce91",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
-        "EN-842fcb5e60989a03",
-        "EN-754b113d548b4469",
-        "EN-9fbf261b62c1d7c0",
-        "EN-b3e3bce83d29e787",
-        "EN-f4bec299df3f4f27",
-        "EN-5f5fcd8701ab30c0",
-        "EN-977d20414b3b8be9"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-ecc6755da7bbbbcd"
-      ],
-      "firstSeen": "2025-09-26",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "TX-technology-fine_tuning",
-      "name": "模型微调",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "fine_tuning",
-      "eventIds": [
-        "EV-479eb3f55eda442e",
-        "EV-1de38866b4b92754",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-8b9e4428074bde60",
-        "EV-b84035029a63e52e",
-        "EV-77662aa9bef9efbe",
-        "EV-b73c7096546b82e8",
-        "EV-34929bdd016dc8d6"
-      ],
-      "entityIds": [
-        "EN-2f265a693b2897f1",
-        "EN-e93e29634540a290",
-        "EN-7dd7122ad9bf240f",
-        "EN-95b0632f1b292fa7",
-        "EN-d41ebd9f02722fc8",
-        "EN-10556ee2cee94c72",
-        "EN-ad1b7e4bc3a5c870",
-        "EN-7d3194f79e645c42",
-        "EN-8f71c4871a160172",
-        "EN-f696d5fb767e377c",
-        "EN-4a639cb888a15d75",
-        "EN-8d4321d936320802"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-25ce41fab12d9ef2"
-      ],
-      "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-16"
     },
     {
       "id": "TX-technology-open_weights",
@@ -13776,29 +11548,18 @@
         "EV-86537be17d50ff20"
       ],
       "entityIds": [
-        "EN-240389f4b730bad4",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-b5251b35f15bedc4",
         "EN-88ab1e5d793701f9",
-        "EN-c3e64a321c2caaf7",
-        "EN-6fa4c159cb389f0f",
-        "EN-845153a713bc1643",
-        "EN-ca231d0c3ae59041",
+        "EN-c70eca6b0f88f44d",
+        "EN-6b61eab266a42eb0",
         "EN-cc70f504af53013a",
         "EN-ea3bd73e2b506e00",
         "EN-bc1fc5140040180e",
         "EN-0d1e478de2157d48",
-        "EN-4546b5bdff2ea8ed",
         "EN-047364b9be67f665",
-        "EN-0f553f48551aef83",
         "EN-d41ebd9f02722fc8",
-        "EN-10556ee2cee94c72",
+        "EN-8d4321d936320802",
         "EN-b3e3bce83d29e787",
         "EN-f7a386a451b79627",
-        "EN-12ab68e37d104d27",
         "EN-6ac6ad44bb9995ca"
       ],
       "fdeIds": [
@@ -13807,101 +11568,6 @@
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "TX-technology-tool_use",
-      "name": "工具调用",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "tool_use",
-      "eventIds": [
-        "EV-baa76a4f03b84980",
-        "EV-97fdf068afbbe555",
-        "EV-09e1eafc857c79fd",
-        "EV-19bcfc6d7c1612cb",
-        "EV-0a9617a5118564db",
-        "EV-a8a8f26c5128d894",
-        "EV-29e069ac093f0e34",
-        "EV-3433ad1746695875",
-        "EV-9496f90f3e808992",
-        "EV-2ffbe4560e69992a",
-        "EV-9c4b862020202f6c",
-        "EV-7449d239223d4928",
-        "EV-c5b8faec223a4caf",
-        "EV-d53cd33e8f541a65"
-      ],
-      "entityIds": [
-        "EN-7f90f96bd6306bff",
-        "EN-d8cb1acd1b39854a",
-        "EN-f1649339197f76d6",
-        "EN-2abf8289b2f2113f",
-        "EN-81baf57e05f11276",
-        "EN-e9dd8f4bd697492b",
-        "EN-3a9b395103419892",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-085598c00f2aaccf",
-        "EN-cb4754c48f8023d0",
-        "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
-        "EN-c70eca6b0f88f44d",
-        "EN-916a98f0fa2a39af",
-        "EN-d6d6e4e33c59b45e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-41dcc2d4951f337b",
-        "EN-630dc133336bc266"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "TX-technology-reasoning",
-      "name": "推理能力",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "reasoning",
-      "eventIds": [
-        "EV-b95539d17772a4ce",
-        "EV-60110525440fac47",
-        "EV-6f1729f6968b72c9",
-        "EV-314b1d80bc4aa50d",
-        "EV-9496f90f3e808992",
-        "EV-e42e55d1e11a2ba2",
-        "EV-d07906b648eec63f",
-        "EV-3f23ddb47fc652a4",
-        "EV-ae89898e7aa4a4d6",
-        "EV-aa63303570154a9b"
-      ],
-      "entityIds": [
-        "EN-b5738c169b693bee",
-        "EN-8d4321d936320802",
-        "EN-4d748ebd71af03a7",
-        "EN-bbdefa2950f49882",
-        "EN-916a98f0fa2a39af",
-        "EN-364df82f85761d58",
-        "EN-4d09c69c19f5f67b",
-        "EN-d30e5ffc0ba9150b",
-        "EN-8989aada6eb4a4c3",
-        "EN-a8100d425f663eac",
-        "EN-c0d023c66edfc877",
-        "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
-        "EN-7d3194f79e645c42",
-        "EN-1cd41545564777ce",
-        "EN-9fbf261b62c1d7c0",
-        "EN-1f8a924e62194552",
-        "EN-9bc22dcabf7f45b3"
-      ],
-      "fdeIds": [
-        "FDE-a1c35f8b9ea1d489"
-      ],
-      "hardwareIds": [
-        "HW-94ca08e08e6e52fe"
-      ],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-31"
     },
     {
       "id": "TX-technology-speech_audio",
@@ -13925,22 +11591,12 @@
       ],
       "entityIds": [
         "EN-7ad34701224a4d2d",
-        "EN-bbdefa2950f49882",
-        "EN-ba8a9b6ce159cd8c",
         "EN-916a98f0fa2a39af",
-        "EN-047364b9be67f665",
         "EN-ec1c8f558ff61e34",
-        "EN-0b0c3b228202ab0a",
         "EN-bae152c4560df38c",
         "EN-afe83c198e329ef2",
-        "EN-0aa590cbbdb3835a",
-        "EN-2b78da3dc866654e",
-        "EN-3a7bd3e2360a3d29",
         "EN-8d4321d936320802",
-        "EN-12ab68e37d104d27",
         "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-085598c00f2aaccf",
         "EN-ed501d3e2d977553",
         "EN-c8d65b5463695c98",
         "EN-f8bebacc033880dd",
@@ -13989,11 +11645,7 @@
           "dimensionName": "技术",
           "id": "open_weights",
           "name": "开放权重",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-9fbf261b62c1d7c0",
-            "EN-7d3194f79e645c42"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14002,11 +11654,7 @@
           "dimensionName": "技术",
           "id": "open_weights",
           "name": "开放权重",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-9fbf261b62c1d7c0",
-            "EN-b5251b35f15bedc4"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14015,11 +11663,7 @@
           "dimensionName": "技术",
           "id": "open_weights",
           "name": "开放权重",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-9fbf261b62c1d7c0",
-            "EN-7d3194f79e645c42"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -14270,13 +11914,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-b5738c169b693bee",
-            "EN-8d4321d936320802",
-            "EN-4d748ebd71af03a7",
-            "EN-bbdefa2950f49882",
-            "EN-916a98f0fa2a39af"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14285,13 +11923,7 @@
           "dimensionName": "技术",
           "id": "reasoning",
           "name": "推理能力",
-          "entityIds": [
-            "EN-b5738c169b693bee",
-            "EN-8d4321d936320802",
-            "EN-4d748ebd71af03a7",
-            "EN-bbdefa2950f49882",
-            "EN-916a98f0fa2a39af"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14300,10 +11932,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-b5738c169b693bee",
-            "EN-8d4321d936320802"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14312,10 +11941,7 @@
           "dimensionName": "技术",
           "id": "reasoning",
           "name": "推理能力",
-          "entityIds": [
-            "EN-b5738c169b693bee",
-            "EN-8d4321d936320802"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -14370,10 +11996,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-b5738c169b693bee",
-            "EN-8d4321d936320802"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -14456,11 +12079,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-6e5cd2567d3ae58a",
-            "EN-9fbf261b62c1d7c0"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14469,11 +12088,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-6e5cd2567d3ae58a",
-            "EN-9fbf261b62c1d7c0"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14482,11 +12097,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-6e5cd2567d3ae58a",
-            "EN-9fbf261b62c1d7c0"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -14777,11 +12388,7 @@
           "dimensionName": "技术",
           "id": "multimodal",
           "name": "多模态",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-59ae856cd788d0f5",
-            "EN-0f3360879e746531"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14790,11 +12397,7 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-59ae856cd788d0f5",
-            "EN-0f3360879e746531"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14803,11 +12406,7 @@
           "dimensionName": "技术",
           "id": "multimodal",
           "name": "多模态",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-59ae856cd788d0f5",
-            "EN-0f3360879e746531"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14816,11 +12415,7 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-59ae856cd788d0f5",
-            "EN-0f3360879e746531"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14829,10 +12424,7 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-59ae856cd788d0f5"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14841,11 +12433,7 @@
           "dimensionName": "技术",
           "id": "multimodal",
           "name": "多模态",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-59ae856cd788d0f5",
-            "EN-0f3360879e746531"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -14854,11 +12442,7 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能",
-          "entityIds": [
-            "EN-8d4321d936320802",
-            "EN-59ae856cd788d0f5",
-            "EN-0f3360879e746531"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -14987,8 +12571,7 @@
           "id": "agentic_execution",
           "name": "智能体",
           "entityIds": [
-            "EN-4a639cb888a15d75",
-            "EN-8d4321d936320802"
+            "EN-4a639cb888a15d75"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -14999,8 +12582,7 @@
           "id": "fine_tuning",
           "name": "模型微调",
           "entityIds": [
-            "EN-4a639cb888a15d75",
-            "EN-8d4321d936320802"
+            "EN-4a639cb888a15d75"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -15389,8 +12971,7 @@
           "id": "multimodal",
           "name": "多模态",
           "entityIds": [
-            "EN-de6b71bf77ff4299",
-            "EN-c4ef31845ea79710"
+            "EN-de6b71bf77ff4299"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -15401,8 +12982,7 @@
           "id": "inference_optimization",
           "name": "推理优化",
           "entityIds": [
-            "EN-de6b71bf77ff4299",
-            "EN-c4ef31845ea79710"
+            "EN-de6b71bf77ff4299"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -15413,8 +12993,7 @@
           "id": "on_device",
           "name": "端侧",
           "entityIds": [
-            "EN-de6b71bf77ff4299",
-            "EN-c4ef31845ea79710"
+            "EN-de6b71bf77ff4299"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""

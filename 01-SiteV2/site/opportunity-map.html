@@ -424,13 +424,13 @@
       { label:"成本 / 稳定性", values:["api_cost_spike","latency_sensitive","deployment_failure"] },
     ];
     const painCols = [
-      { label:"API / SDK", values:["api","api_usage_based"] },
+      { label:"API / SDK", values:["model_api_service","api","api_usage_based"] },
       { label:"开发工具", values:["developer_tool","browser_or_desktop_tool"] },
-      { label:"Agent 工作台", values:["agent_workbench"] },
-      { label:"Copilot", values:["copilot"] },
-      { label:"流程自动化", values:["workflow_automation","vertical_saas"] },
+      { label:"Agent 工作台", values:["enterprise_software_platform","agent_workbench"] },
+      { label:"Copilot", values:["end_user_application","copilot"] },
+      { label:"流程自动化", values:["enterprise_software_platform","workflow_automation","vertical_saas"] },
       { label:"FDE / 托管", values:["fde_service","fde_delivery","managed_service","project_based_service"] },
-      { label:"评测平台", values:["evaluation_platform","model_gateway"] },
+      { label:"评测平台", values:["ai_infrastructure_software","evaluation_platform","model_gateway"] },
     ];
     const strongActions = new Set(["customer_deployment","procurement_signal","pricing_change","funding_round","partnership_integration","acquisition"]);
     const launchActions = new Set(["product_launch","open_source_release","research_benchmark"]);
@@ -449,7 +449,12 @@
     const daysBetween = (later, earlier) => Math.floor((new Date(`${later}T00:00:00`) - new Date(`${earlier}T00:00:00`)) / 86400000);
     function vals(card, field) {
       const raw = card.opportunitySignals?.labels?.[field] || card.opportunitySignals?.[field] || card.opportunitySignals?.[field.replace(/_([a-z])/g, (_, c) => c.toUpperCase())] || [];
-      return Array.isArray(raw) ? raw.map((x) => x.id || x).filter(Boolean) : [];
+      const taxonomy = (card.classifications || [])
+        .filter((item) => (item.dimension_id || item.dimensionId) === field)
+        .map((item) => item.value_id || item.id)
+        .filter(Boolean);
+      const legacy = Array.isArray(raw) ? raw.map((x) => x.id || x).filter(Boolean) : [];
+      return uniq([...taxonomy, ...legacy]);
     }
     function hasAny(card, fields, values) { const wanted = new Set(values); return fields.some((f) => vals(card, f).some((v) => wanted.has(v))); }
     function hasVal(card, field, values) { return hasAny(card, [field], values); }

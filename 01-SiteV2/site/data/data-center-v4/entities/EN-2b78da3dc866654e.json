@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -28,9 +28,7 @@
       "EV-dad8c827d14f2799"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-speech_audio"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-12",
     "lastSeen": "2026-07-15",
@@ -111,11 +109,7 @@
             "dimensionName": "技术",
             "id": "model_context_protocol",
             "name": "MCP",
-            "entityIds": [
-              "EN-7d3194f79e645c42",
-              "EN-178e3a5167e8e1d5",
-              "EN-bd2bfbea5911ec7a"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -144,11 +138,7 @@
             "dimensionName": "技术",
             "id": "speech_audio",
             "name": "语音与音频",
-            "entityIds": [
-              "EN-0aa590cbbdb3835a",
-              "EN-2b78da3dc866654e",
-              "EN-3a7bd3e2360a3d29"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -164,56 +154,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-speech_audio",
-      "name": "语音与音频",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "speech_audio",
-      "eventIds": [
-        "EV-6b0106ef4a79df05",
-        "EV-9fb08b68f301eb88",
-        "EV-94ad4a217508e6e0",
-        "EV-f388f7ae2debeae8",
-        "EV-99e5df844a1bd670",
-        "EV-dad8c827d14f2799",
-        "EV-2258329f33d413cf",
-        "EV-f68e00bb9fd49fac",
-        "EV-d99037f2ed8db897",
-        "EV-79700941eb0af140",
-        "EV-3bd84e75aa7f18b3",
-        "EV-631dce4dc135d01b"
-      ],
-      "entityIds": [
-        "EN-7ad34701224a4d2d",
-        "EN-bbdefa2950f49882",
-        "EN-ba8a9b6ce159cd8c",
-        "EN-916a98f0fa2a39af",
-        "EN-047364b9be67f665",
-        "EN-ec1c8f558ff61e34",
-        "EN-0b0c3b228202ab0a",
-        "EN-bae152c4560df38c",
-        "EN-afe83c198e329ef2",
-        "EN-0aa590cbbdb3835a",
-        "EN-2b78da3dc866654e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-8d4321d936320802",
-        "EN-12ab68e37d104d27",
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-085598c00f2aaccf",
-        "EN-ed501d3e2d977553",
-        "EN-c8d65b5463695c98",
-        "EN-f8bebacc033880dd",
-        "EN-b2968d9ba72f4818"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-01"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

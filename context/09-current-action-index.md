@@ -14,11 +14,11 @@ priority: current
 | Immutable source capture and structured intake | `SOURCE-INTAKE-V1.1` |
 | Claim/Event normalization and canonical build | `RAW-V4.0`, `EVENT-V1.1` |
 | Entity history and factual relations | `ENTITY-V1.0`, `RELATION-V2.1` |
-| Taxonomy/facets | `TAG-V4.0` |
+| Taxonomy/facets | `TAG-V4.1` |
 | Enterprise implementation projection | `FDE-V2.0` |
 | Hardware projection | `HARDWARE-V1.0` |
 | Opportunity Map evidence | `OMAP-V2.0.0-v4-evidence` |
-| Trend Radar | `TRADAR-V1.0.1-china-market-filter` |
+| Trend Radar | `TRADAR-V1.1.0-tag-v4-1` |
 | Funding Insights | `FUNDING-INSIGHT-V1.2.0-market-category` |
 | Guanlan Research / weekly and monthly reports | `REPORTS-V1.2.0-research-hub` |
 | Operations telemetry and health | `OPS-V2.0.0-v4-telemetry` |

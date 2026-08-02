@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -30,7 +30,6 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-image_generation",
       "TX-technology-video_generation"
     ],
     "relatedEntityIds": [
@@ -76,10 +75,7 @@
             "id": "image_generation",
             "name": "图像生成",
             "entityIds": [
-              "EN-bbdefa2950f49882",
-              "EN-834ab0b6e4492d23",
-              "EN-01f1074bb52ff605",
-              "EN-dd782f5241cd7e50"
+              "EN-bbdefa2950f49882"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -108,9 +104,7 @@
             "id": "multimodal",
             "name": "多模态",
             "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-7ed9c9e7c260ed06",
-              "EN-4d09c69c19f5f67b"
+              "EN-2b6e51bec93e86c1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -121,9 +115,7 @@
             "id": "video_generation",
             "name": "视频生成",
             "entityIds": [
-              "EN-2b6e51bec93e86c1",
-              "EN-7ed9c9e7c260ed06",
-              "EN-4d09c69c19f5f67b"
+              "EN-2b6e51bec93e86c1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -386,17 +378,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-ai_compute_system",
-        "TX-use_case-physical_automation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-target_user-business_user",
-        "TX-target_user-consumer",
-        "TX-use_case-content_creation",
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
@@ -406,23 +393,14 @@
         "TX-ai_market_subcategory-hardware_computing",
         "TX-technology-computer_use",
         "TX-use_case-software_development",
-        "TX-product_form-security_software",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-deployment_model-cloud",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-deployment_model-on_premise",
-        "TX-technology-model_context_protocol",
         "TX-technology-image_generation",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-speech_audio"
+        "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
         "EN-8d323d8bba783aa3",
@@ -509,43 +487,6 @@
   ],
   "taxonomyNodes": [
     {
-      "id": "TX-technology-image_generation",
-      "name": "图像生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "image_generation",
-      "eventIds": [
-        "EV-fd329b4350f404ef",
-        "EV-cf4da5583e9311d7",
-        "EV-82ae0ea3bfe336a1",
-        "EV-1a241bcb4fad886c",
-        "EV-a442b55d0bac5651",
-        "EV-dce5de62b2e4b752",
-        "EV-41baa43cf05d4288",
-        "EV-568d2aeab5234e48"
-      ],
-      "entityIds": [
-        "EN-b97e07c31e87f7d0",
-        "EN-bbdefa2950f49882",
-        "EN-a5ba7c1a2375f0d4",
-        "EN-9fbf261b62c1d7c0",
-        "EN-bae152c4560df38c",
-        "EN-52e3d014f9a275ea",
-        "EN-834ab0b6e4492d23",
-        "EN-01f1074bb52ff605",
-        "EN-dd782f5241cd7e50",
-        "EN-ea3bd73e2b506e00",
-        "EN-534e99d81da1c54d",
-        "EN-2b6e51bec93e86c1",
-        "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-02"
-    },
-    {
       "id": "TX-technology-video_generation",
       "name": "视频生成",
       "nodeType": "technology",
@@ -568,21 +509,11 @@
         "EN-d747d6f5125b6bee",
         "EN-b81c8201acfc7639",
         "EN-c9e6168149dd7cf6",
-        "EN-92af3ce2fb97edf3",
-        "EN-4d09c69c19f5f67b",
-        "EN-3092ffb33792fe70",
-        "EN-94e7575ad6ff0db8",
         "EN-ec1c8f558ff61e34",
-        "EN-d83624eb3ab9192e",
-        "EN-925a688403e10965",
         "EN-047364b9be67f665",
         "EN-2b6e51bec93e86c1",
-        "EN-7ed9c9e7c260ed06",
         "EN-01f1074bb52ff605",
-        "EN-47c1e53c427aafb4",
-        "EN-2daac3672aeafcbd",
-        "EN-e9857f381893dd05",
-        "EN-4f96127fdacbb405"
+        "EN-47c1e53c427aafb4"
       ],
       "fdeIds": [],
       "hardwareIds": [],

@@ -17,3 +17,6 @@
 15. Pass when all 222 reviewed Funding Insight decisions produce evidence-backed `ReviewedEventClassification` rows that resolve to 222 canonical events and one target company per decision.
 16. Fail when a reviewed classification fabricates a Claim span, omits exact research evidence, or loses its decision-to-canonical-event lineage.
 17. Fail when Data Center, Funding Insights, Trend Radar, Opportunity Evidence, or entity profiles use a retired value, a different taxonomy version, or classifications inconsistent with the reviewed decision ledger.
+18. Fail when the same event classification has different target-entity sets in Data Center, Trend Radar, and Opportunity Evidence, or when a consumer silently drops or adds an event/entity/dimension/value/provenance tuple.
+19. Fail when a reviewed company classification reuses founder biography, investor history, or other secondary-party evidence, even if the classification value itself came from a human-reviewed decision.
+20. Pass when Opportunity Map grouping reads TAG-V4.1 classification dimensions where they overlap the map axes and keeps opportunity-specific assertions separate.

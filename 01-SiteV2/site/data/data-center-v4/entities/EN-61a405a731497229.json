@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -25,11 +25,7 @@
       "EV-a5efa57f3f744425"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-long_context",
-      "TX-technology-on_device",
-      "TX-deployment_model-edge_device"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [
       "EN-3309b3b14807f39a"
     ],
@@ -67,8 +63,7 @@
             "id": "on_device",
             "name": "端侧",
             "entityIds": [
-              "EN-3309b3b14807f39a",
-              "EN-61a405a731497229"
+              "EN-3309b3b14807f39a"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -79,8 +74,7 @@
             "id": "long_context",
             "name": "长上下文",
             "entityIds": [
-              "EN-3309b3b14807f39a",
-              "EN-61a405a731497229"
+              "EN-3309b3b14807f39a"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -91,8 +85,7 @@
             "id": "edge_device",
             "name": "边缘与端侧",
             "entityIds": [
-              "EN-3309b3b14807f39a",
-              "EN-61a405a731497229"
+              "EN-3309b3b14807f39a"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -155,205 +148,7 @@
       "status": "verified"
     }
   ],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-long_context",
-      "name": "长上下文",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "long_context",
-      "eventIds": [
-        "EV-80e54c9a390da293",
-        "EV-fd21441fb6e143c3",
-        "EV-7a4d1e871dcd3b1f",
-        "EV-653cbce2ccc79f8b",
-        "EV-0e616f9e775a77dc",
-        "EV-fe519605ebb69aaf",
-        "EV-2fea1664807824ce",
-        "EV-86ab9c2f1416e9d8",
-        "EV-a5efa57f3f744425",
-        "EV-70e3f88cb06a856c",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-70efbfcaadcdb259",
-        "EV-0c06df62702d26ab",
-        "EV-534dc9add1c0cc35",
-        "EV-57f083a39393d841",
-        "EV-86537be17d50ff20"
-      ],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-c70eca6b0f88f44d",
-        "EN-7df09a7717ef2feb",
-        "EN-50ba7ff15827787b",
-        "EN-607964040e4b62e0",
-        "EN-cb4754c48f8023d0",
-        "EN-bf8951127ecb940e",
-        "EN-bc1fc5140040180e",
-        "EN-0d1e478de2157d48",
-        "EN-4546b5bdff2ea8ed",
-        "EN-9c8ae69b84f21a2e",
-        "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
-        "EN-7d3194f79e645c42",
-        "EN-8f71c4871a160172",
-        "EN-78624f0a98e78301",
-        "EN-4b078b39d2fcacc7",
-        "EN-7dd7122ad9bf240f",
-        "EN-1d79127e9d90e89b",
-        "EN-bc77259c5d2eb341",
-        "EN-52fc33ae4d101a5d",
-        "EN-3153ebda601cdb79",
-        "EN-6ac6ad44bb9995ca"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-12",
-      "lastSeen": "2026-07-29"
-    },
-    {
-      "id": "TX-technology-on_device",
-      "name": "端侧",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "on_device",
-      "eventIds": [
-        "EV-a15da1b52d939967",
-        "EV-736404028b8ad33e",
-        "EV-d5c00f302e1f808c",
-        "EV-7263caa45bbf168e",
-        "EV-7a0f201debe99f2b",
-        "EV-79913a2e72f0269b",
-        "EV-a5efa57f3f744425",
-        "EV-04efb4eecbb8125f",
-        "EV-8a9b12665a3e40a0",
-        "EV-712bb6241160c4c5",
-        "EV-f7b60c0c63403f8c",
-        "EV-e28e134345ea5f99",
-        "EV-a736c6c64d106475",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-c5b8faec223a4caf",
-        "EV-4026c95d4c01b96e",
-        "EV-0e2a68efc19bfbaa",
-        "EV-0597e07d7e73051a",
-        "EV-08f736f61f2b46f3",
-        "EV-02186ed7885f68fe",
-        "EV-8692dfde7c3ef5b5",
-        "EV-5613946bdd578a26",
-        "EV-848bdd13f319c516",
-        "EV-dd902b603e2e3dbc",
-        "EV-7d4b4b8d4e3599d4",
-        "EV-f4876d2e1a20d87b"
-      ],
-      "entityIds": [
-        "EN-a35b80cf9d171015",
-        "EN-48bebf25e5bd5aca",
-        "EN-968e2d5b08687bf4",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-e21783b898b55a31",
-        "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
-        "EN-bbdefa2950f49882",
-        "EN-992eafe973f69075",
-        "EN-1229af0aa3b0305e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-8147e6fed86d42c1",
-        "EN-12a81529bba89666",
-        "EN-44a9bf3b11abea5c",
-        "EN-de6b71bf77ff4299",
-        "EN-c4ef31845ea79710",
-        "EN-dd920a8cd166f486",
-        "EN-c70eca6b0f88f44d",
-        "EN-41dcc2d4951f337b",
-        "EN-8d4321d936320802",
-        "EN-e07654c7cc29acbd",
-        "EN-c3ce0cc92b48bbd6",
-        "EN-54ef981ab82586b5",
-        "EN-80d387ccb3289295",
-        "EN-b7dac8ddfad3bea8",
-        "EN-6f7ac1823da81d2e",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-31"
-    },
-    {
-      "id": "TX-deployment_model-edge_device",
-      "name": "边缘与端侧",
-      "nodeType": "deployment_model",
-      "typeLabel": "部署形态",
-      "valueId": "edge_device",
-      "eventIds": [
-        "EV-a15da1b52d939967",
-        "EV-736404028b8ad33e",
-        "EV-d5c00f302e1f808c",
-        "EV-7263caa45bbf168e",
-        "EV-7a0f201debe99f2b",
-        "EV-79913a2e72f0269b",
-        "EV-a5efa57f3f744425",
-        "EV-04efb4eecbb8125f",
-        "EV-8a9b12665a3e40a0",
-        "EV-712bb6241160c4c5",
-        "EV-f7b60c0c63403f8c",
-        "EV-e28e134345ea5f99",
-        "EV-a736c6c64d106475",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-c5b8faec223a4caf",
-        "EV-0e2a68efc19bfbaa",
-        "EV-0597e07d7e73051a",
-        "EV-08f736f61f2b46f3",
-        "EV-02186ed7885f68fe",
-        "EV-8692dfde7c3ef5b5",
-        "EV-5613946bdd578a26",
-        "EV-848bdd13f319c516",
-        "EV-dd902b603e2e3dbc",
-        "EV-7d4b4b8d4e3599d4",
-        "EV-f4876d2e1a20d87b"
-      ],
-      "entityIds": [
-        "EN-a35b80cf9d171015",
-        "EN-48bebf25e5bd5aca",
-        "EN-968e2d5b08687bf4",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
-        "EN-2b6e51bec93e86c1",
-        "EN-4d09c69c19f5f67b",
-        "EN-e21783b898b55a31",
-        "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
-        "EN-bbdefa2950f49882",
-        "EN-992eafe973f69075",
-        "EN-1229af0aa3b0305e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-8147e6fed86d42c1",
-        "EN-12a81529bba89666",
-        "EN-44a9bf3b11abea5c",
-        "EN-de6b71bf77ff4299",
-        "EN-c4ef31845ea79710",
-        "EN-dd920a8cd166f486",
-        "EN-c70eca6b0f88f44d",
-        "EN-41dcc2d4951f337b",
-        "EN-8d4321d936320802",
-        "EN-e07654c7cc29acbd",
-        "EN-c3ce0cc92b48bbd6",
-        "EN-54ef981ab82586b5",
-        "EN-80d387ccb3289295",
-        "EN-b7dac8ddfad3bea8",
-        "EN-6f7ac1823da81d2e",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-31"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
@@ -457,8 +252,7 @@
           "id": "on_device",
           "name": "端侧",
           "entityIds": [
-            "EN-3309b3b14807f39a",
-            "EN-61a405a731497229"
+            "EN-3309b3b14807f39a"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -469,8 +263,7 @@
           "id": "long_context",
           "name": "长上下文",
           "entityIds": [
-            "EN-3309b3b14807f39a",
-            "EN-61a405a731497229"
+            "EN-3309b3b14807f39a"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""

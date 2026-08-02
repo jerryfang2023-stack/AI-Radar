@@ -1,6 +1,6 @@
 # Trend Radar V1 Contract
 
-Version: `TRADAR-V1.0.1-china-market-filter`
+Version: `TRADAR-V1.1.0-tag-v4-1`
 
 Trend Radar is a downstream application projection of accepted Data Center V4 facts. It organizes factual changes by accepted batch date (`dataDate`) and never writes back to canonical data.
 

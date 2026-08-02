@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -27,9 +27,7 @@
       "EV-f1912ab7c46288f3"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-deployment_model-on_premise"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [
       "EN-f4bec299df3f4f27"
     ],
@@ -67,9 +65,7 @@
             "id": "on_premise",
             "name": "本地部署",
             "entityIds": [
-              "EN-f4bec299df3f4f27",
-              "EN-5f5fcd8701ab30c0",
-              "EN-977d20414b3b8be9"
+              "EN-f4bec299df3f4f27"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -141,47 +137,7 @@
       "status": "verified"
     }
   ],
-  "taxonomyNodes": [
-    {
-      "id": "TX-deployment_model-on_premise",
-      "name": "本地部署",
-      "nodeType": "deployment_model",
-      "typeLabel": "部署形态",
-      "valueId": "on_premise",
-      "eventIds": [
-        "EV-0e84a2f49d765ce3",
-        "EV-7263caa45bbf168e",
-        "EV-c0d8138d8cab5135",
-        "EV-3011ea85c51a3ee0",
-        "EV-7309586168387ad8",
-        "EV-a06011da69abcc3d",
-        "EV-f1912ab7c46288f3"
-      ],
-      "entityIds": [
-        "EN-634561e92b7593c3",
-        "EN-7f871cbf905f6e0c",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-b5738c169b693bee",
-        "EN-2dc010636b9dce91",
-        "EN-16fd849ce27f115b",
-        "EN-f5791343a13abc71",
-        "EN-842fcb5e60989a03",
-        "EN-754b113d548b4469",
-        "EN-9fbf261b62c1d7c0",
-        "EN-b3e3bce83d29e787",
-        "EN-f4bec299df3f4f27",
-        "EN-5f5fcd8701ab30c0",
-        "EN-977d20414b3b8be9"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-ecc6755da7bbbbcd"
-      ],
-      "firstSeen": "2025-09-26",
-      "lastSeen": "2026-07-17"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": [
     {

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -25,9 +25,7 @@
       "EV-6225d18316f90a0d"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-computer_use"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-25",
     "lastSeen": "2026-06-26",
@@ -61,9 +59,7 @@
             "id": "computer_use",
             "name": "计算机操作",
             "entityIds": [
-              "EN-bbdefa2950f49882",
-              "EN-b8174ff7d1b7aada",
-              "EN-3aa38718f0399af9"
+              "EN-bbdefa2950f49882"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -79,39 +75,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-computer_use",
-      "name": "计算机操作",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "computer_use",
-      "eventIds": [
-        "EV-97854226b6f43a95",
-        "EV-e42e55d1e11a2ba2",
-        "EV-333851b077b606c8",
-        "EV-6225d18316f90a0d",
-        "EV-c54172bf4e0c1068",
-        "EV-a4f052325d0ef230"
-      ],
-      "entityIds": [
-        "EN-9d4cbc0ceab2c56a",
-        "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
-        "EN-047364b9be67f665",
-        "EN-bbdefa2950f49882",
-        "EN-b8174ff7d1b7aada",
-        "EN-3aa38718f0399af9",
-        "EN-e16fc821f34228d1",
-        "EN-7d3194f79e645c42",
-        "EN-10fce287b4b1464c"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-27"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

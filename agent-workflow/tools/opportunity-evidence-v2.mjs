@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { classificationEntityIds } from "../product/classification-entity-scope.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const defaultRoot = path.resolve(__dirname, "../..");
@@ -284,24 +285,6 @@ function buildEvidenceRecords(root, options = {}) {
     const reviewed = [...aggregate.reviewed.values()]
       .filter((item) => item.event_id === event.event_id && item.status === "active");
     const classifications = [
-      ...tags.map((item) => ({
-        dimension_id: "technology",
-        dimension_name: "技术",
-        value_id: item.tag_id,
-        value_name: technologyNames.get(item.tag_id) || item.tag_id,
-        entity_ids: [],
-        provenance: "claim_assertion",
-        assertion_ref: item.assertion_id || "",
-      })),
-      ...facets.map((item) => ({
-        dimension_id: item.dimension_id,
-        dimension_name: facetNames.get(item.dimension_id)?.name || item.dimension_id,
-        value_id: item.value_id,
-        value_name: facetNames.get(item.dimension_id)?.values.get(item.value_id) || item.value_id,
-        entity_ids: [],
-        provenance: "claim_assertion",
-        assertion_ref: item.assertion_id || "",
-      })),
       ...reviewed.map((item) => ({
         dimension_id: item.dimension_id,
         dimension_name: facetNames.get(item.dimension_id)?.name || item.dimension_id,
@@ -310,6 +293,30 @@ function buildEvidenceRecords(root, options = {}) {
         entity_ids: [item.entity_id],
         provenance: "reviewed_funding_insight",
         assertion_ref: item.reviewed_classification_id,
+      })),
+      ...tags.map((item) => ({
+        dimension_id: "technology",
+        dimension_name: "技术",
+        value_id: item.tag_id,
+        value_name: technologyNames.get(item.tag_id) || item.tag_id,
+        entity_ids: classificationEntityIds(
+          claims.filter((claim) => claim.claim_id === (item.evidence_ref || item.asset_id)),
+          entities,
+        ),
+        provenance: "claim_assertion",
+        assertion_ref: item.assertion_id || "",
+      })),
+      ...facets.map((item) => ({
+        dimension_id: item.dimension_id,
+        dimension_name: facetNames.get(item.dimension_id)?.name || item.dimension_id,
+        value_id: item.value_id,
+        value_name: facetNames.get(item.dimension_id)?.values.get(item.value_id) || item.value_id,
+        entity_ids: classificationEntityIds(
+          claims.filter((claim) => claim.claim_id === (item.evidence_ref || item.asset_id)),
+          entities,
+        ),
+        provenance: "claim_assertion",
+        assertion_ref: item.assertion_id || "",
       })),
     ].filter((item, index, list) => list.findIndex((candidate) => (
       candidate.dimension_id === item.dimension_id

@@ -7,8 +7,8 @@
     "taxonomy_version": "TAG-V4.1",
     "latest_date": "2026-08-02",
     "generated_at": "2026-08-02T00:23:44.516Z",
-    "card_count": 213,
-    "duplicate_rounds_removed": 9,
+    "card_count": 212,
+    "duplicate_rounds_removed": 10,
     "automatic_publication": true,
     "market_category_framework": {
       "name": "CB Insights AI 100 2026",
@@ -70974,8 +70974,8 @@
       "triggered_by_event_id": "EV-d4e44892226be468",
       "as_of_date": "2026-06-30",
       "company": {
-        "entity_id": "EN-8044aae1f86875d9",
-        "name": "How",
+        "entity_id": "EN-7d3194f79e645c42",
+        "name": "OpenAI",
         "full_name": "OpenAI",
         "website": "",
         "summary": "OpenAI是一家全球领先的人工智能研究与应用公司，旗下核心产品ChatGPT拥有超过9亿周活跃用户，月收入达20亿美元。公司正从模型层向基础设施、消费级应用和企业级平台全栈扩张，构建统一的AI超级应用。",
@@ -71949,7 +71949,7 @@
         "EV-d4e44892226be468"
       ],
       "aggregation": {
-        "key": "EN-8044aae1f86875d9|series_f",
+        "key": "EN-7d3194f79e645c42|series_f",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       },
@@ -71975,8 +71975,8 @@
       },
       "market_application": null,
       "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-8044aae1f86875d9",
-        "relation_map": "",
+        "company": "data-center.html?view=index&detail=entity&id=EN-7d3194f79e645c42",
+        "relation_map": "data-center.html?view=relations&entity=EN-7d3194f79e645c42",
         "funding_event": "data-center.html?view=events&detail=event&id=EV-d4e44892226be468",
         "direction": "opportunity-map.html#direction-cards"
       }
@@ -104428,566 +104428,6 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.2",
-      "funding_insight_id": "FI-2292727d2e0b8d81",
-      "triggered_by_event_id": "EV-6011ab83ebd290bd",
-      "as_of_date": "2026-06-15",
-      "company": {
-        "entity_id": "EN-ce31f92c521b7b08",
-        "name": "Featherless.ai",
-        "full_name": "Featherless.ai",
-        "website": "https://featherless.ai",
-        "summary": "Featherless.ai 是一个无服务器推理平台，为企业提供中立层，支持超过30,000个开源模型，旨在减少对专有云和硬件生态的依赖。",
-        "headquarters": "San Francisco, California, USA",
-        "founders": [
-          {
-            "name": "Eugene Cheah",
-            "role": "CEO and co-founder",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "Eugene Cheah, CEO and co-founder of Featherless.ai",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "2c10f523a1693718662a5550754d3d27e70c83decab1d0796b543ecd3e7c83de"
-              }
-            ],
-            "entity_id": "EN-6e1641eb6cc4e98f"
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-2abdb8003508dda6",
-            "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding",
-            "source_content_hash": "7b38f6d68d7f8881",
-            "quote_hash": "928560a85a8ead55eca71fb3cbe1978621720651719a7b7fe7f81077e80a1263"
-          },
-          {
-            "source_id": "FISRC-be4736fbc4a3d804",
-            "quote": "2024 San Francisco, California, USA",
-            "source_content_hash": "446653710d989883",
-            "quote_hash": "a8915e4b2558f48ae5978994016453774d08052a31dc00352032e54fe5bf6525"
-          }
-        ]
-      },
-      "financing": {
-        "round": "A轮",
-        "amount": "$20 million",
-        "total_raised": "$20 million",
-        "announced_at": "2026-04-30",
-        "investors": [
-          {
-            "name": "AMD Ventures",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "The round was co-led by AMD Ventures and Airbus Ventures",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "f041365034fe85e104a9a233f26272bdbd019c8b3bbedcce5183fc51e4eb0bfd"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Airbus Ventures",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "The round was co-led by AMD Ventures and Airbus Ventures",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "f041365034fe85e104a9a233f26272bdbd019c8b3bbedcce5183fc51e4eb0bfd"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "BMW i Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Kickstart Ventures",
-            "role": "本轮参投；种子轮投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
-              },
-              {
-                "source_id": "FISRC-1afbc2de05f08056",
-                "quote": "Joan Yao, General Partner at Kickstart Ventures, also said the firm backed Featherless.ai at seed because of their technical edge in inference",
-                "source_content_hash": "84d2adfa2c1db4c4",
-                "quote_hash": "4328b7e7f0b278cac1585876deed8168aa494544d7f523c44d12c43e0e742802"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Panache Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Wavemaker Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-2abdb8003508dda6",
-            "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding",
-            "source_content_hash": "7b38f6d68d7f8881",
-            "quote_hash": "928560a85a8ead55eca71fb3cbe1978621720651719a7b7fe7f81077e80a1263"
-          },
-          {
-            "source_id": "FISRC-d2c065a50fa67868",
-            "quote": "Today, we're announcing a $20 million Series A financing round",
-            "source_content_hash": "e848ef24a67bf0b4",
-            "quote_hash": "3fdf1e3dc29c0e62a32e43a16f9e0f49b08886c177819e78bb4e5c5cf27b49a3"
-          }
-        ],
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "other_round_investors": [],
-        "disclosures": [
-          {
-            "event_id": "EV-6011ab83ebd290bd",
-            "round_original": "Series A",
-            "amount": "$20 million",
-            "announced_at": "2026-04-30",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "928560a85a8ead55eca71fb3cbe1978621720651719a7b7fe7f81077e80a1263"
-              },
-              {
-                "source_id": "FISRC-d2c065a50fa67868",
-                "quote": "Today, we're announcing a $20 million Series A financing round",
-                "source_content_hash": "e848ef24a67bf0b4",
-                "quote_hash": "3fdf1e3dc29c0e62a32e43a16f9e0f49b08886c177819e78bb4e5c5cf27b49a3"
-              }
-            ]
-          }
-        ],
-        "investor_disclosure_status": "disclosed",
-        "risk_markers": []
-      },
-      "products": [
-        {
-          "name": "Featherless.ai Serverless Inference Platform",
-          "description": "一个无服务器推理平台，为企业提供生产就绪的替代方案，支持超过30,000个开源模型，涵盖语言、视觉和音频，使开发者能够即时部署生产级AI。",
-          "target_customers": "企业开发者",
-          "features": [
-            "支持超过30,000个开源模型",
-            "无服务器推理",
-            "硬件中立层",
-            "模型热切换（五秒内）",
-            "开源智能体运行时"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "Featherless.ai is a serverless inference platform. Its goal is to make all AI models available for serverless inference. It offers a production-ready alternative to proprietary compute environments.",
-              "source_content_hash": "7b38f6d68d7f8881",
-              "quote_hash": "5fb0506491f97d447a8773d659288c74504e4c244643f619d93c0fd6f0a38e27"
-            },
-            {
-              "source_id": "FISRC-c229f715d145c1e1",
-              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU",
-              "source_content_hash": "f5b6c7dcb4aad736",
-              "quote_hash": "69cf48387750c2fa92737f9358f9cc1d8178e7cb2b58b83c4a75659d0bc3b777"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "支持的开放模型数量",
-          "value": "30,000+",
-          "observed_at": "2026-04-30",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2abdb8003508dda6",
-              "quote": "Featherless.ai supports over 30,000 open models across language, vision, and audio",
-              "source_content_hash": "7b38f6d68d7f8881",
-              "quote_hash": "9270ea4fd86fe8002b02a7a5eb5c12db0d5fe1b9350a2a66cd28e23024075c5c"
-            }
-          ]
-        },
-        {
-          "label": "模型热切换时间",
-          "value": "5秒以内",
-          "observed_at": "2026-05-12",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-c229f715d145c1e1",
-              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU",
-              "source_content_hash": "f5b6c7dcb4aad736",
-              "quote_hash": "69cf48387750c2fa92737f9358f9cc1d8178e7cb2b58b83c4a75659d0bc3b777"
-            }
-          ]
-        }
-      ],
-      "quotes": [],
-      "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "AMD Ventures",
-            "speaker": "Sagi Paz",
-            "speaker_role": "Head of AMD Ventures",
-            "rationale": "认为Featherless.ai处于AI行业发展的关键新阶段前沿，通过为开源AI提供坚实基础，帮助扩大访问并支持更具竞争力和多样化的生态系统。",
-            "quote": "Featherless.ai is at the forefront of a critical new phase in the development of the AI industry. By providing a strong foundation for open-source AI, it helps expand access and supports a more competitive and diverse ecosystem.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "Featherless.ai is at the forefront of a critical new phase in the development of the AI industry. By providing a strong foundation for open-source AI, it helps expand access and supports a more competitive and diverse ecosystem. We are delighted to support Featherless.ai on their journey.",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "543fd9fe05925b66f2b28bca354f980843901685d6f09b98974737d2564a6974"
-              }
-            ]
-          },
-          {
-            "institution": "BMW i Ventures",
-            "speaker": "Kasper Sage",
-            "speaker_role": "Managing Partner at BMW i Ventures",
-            "rationale": "认为随着AI采用加速，企业希望对性能、成本和数据驻留拥有更多控制权，而Featherless.ai正在使领先的开源模型实现规模化生产就绪，使用多样化模型是未来企业AI用例的关键。",
-            "quote": "As AI adoption accelerates, enterprises want more control over performance, cost, and where their data lives. Featherless.ai is making leading open models production-ready at scale. Being able to use a variety of different models is key for future enterprise AI use cases.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2abdb8003508dda6",
-                "quote": "As AI adoption accelerates, enterprises want more control over performance, cost, and where their data lives. Featherless.ai is making leading open models production-ready at scale. Being able to use a variety of different models is key for future enterprise AI use cases.",
-                "source_content_hash": "7b38f6d68d7f8881",
-                "quote_hash": "2604f6ca59e79137a98215f6bdfc78567548ccbdd17f48a84c644be925274d66"
-              }
-            ]
-          },
-          {
-            "institution": "Airbus Ventures",
-            "speaker": "Abby Hitchcock",
-            "speaker_role": "Principal at Airbus Ventures",
-            "rationale": "认为下一阶段AI采用将由数百万个专业化微调模型驱动，关键挑战是能够可靠且经济高效地大规模服务这些模型，Featherless.ai通过秒级模型加载和高GPU利用率解决了这一问题。",
-            "quote": "the next phase of AI adoption will be driven by millions of specialised, fine-tuned models rather than a few general-purpose systems. She said the key challenge is not the availability of such models, but the ability to serve them reliably and cost-effectively at scale. Featherless.ai has addressed this by enabling models to load within seconds while maintaining high GPU utilization",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1afbc2de05f08056",
-                "quote": "the next phase of AI adoption will be driven by millions of specialised, fine-tuned models rather than a few general-purpose systems. She said the key challenge is not the availability of such models, but the ability to serve them reliably and cost-effectively at scale. Featherless.ai has addressed this by enabling models to load within seconds while maintaining high GPU utilization",
-                "source_content_hash": "84d2adfa2c1db4c4",
-                "quote_hash": "10b64f903d25a1b45c6853ff205dc1315418804331bc31c3d1a4227f5c287f67"
-              }
-            ]
-          },
-          {
-            "institution": "Panache Ventures",
-            "speaker": "Prashant Matta",
-            "speaker_role": "Managing Partner at Panache Ventures",
-            "rationale": "认为Featherless.ai将实用创新与多元化AI生态的更广泛使命相结合，并警告行业面临被单一国家少数参与者主导的风险，Featherless.ai提供了替代发展路径。",
-            "quote": "Featherless.ai combines practical innovation with a broader mission to diversify the AI ecosystem. He warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1afbc2de05f08056",
-                "quote": "Prashant Matta, Managing Partner at Panache Ventures, said Featherless.ai combines practical innovation with a broader mission to diversify the AI ecosystem. He warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development.",
-                "source_content_hash": "84d2adfa2c1db4c4",
-                "quote_hash": "49da474b1ab0e22abcce3c7515314d3b718a2bf10969371384ad6cd0223acced"
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "资本押注的核心变量是企业对AI主权和供应商锁定的规避需求，以及从单一通用模型向多模型专业化部署的范式转移。本轮2000万美元A轮融资由AMD Ventures和Airbus Ventures联合领投，多家产业资本参与，验证了以下信号：平台已支持超过30,000个开源模型，是Hugging Face生态中增长最快的推理合作伙伴；创始团队创建了RWKV开源架构，具备底层技术权威；通过AMD ROCm战略合作实现了硬件多样性，提供可审计的专有硬件替代方案。估值未在来源中披露。",
-        "validated_signals": [
-          "平台支持超过30,000个开源模型，涵盖语言、视觉和音频",
-          "是Hugging Face生态中增长最快的推理合作伙伴",
-          "创始团队创建了RWKV开源架构，挑战Transformer主导地位",
-          "与AMD达成战略合作，确保开源模型在AMD ROCm上原生运行",
-          "种子轮投资方Kickstart Ventures和Airbus Ventures在本轮继续加注"
-        ],
-        "risks": [
-          "超大规模云厂商可能通过价格战削弱中立推理平台的成本优势，来源中CEO Cheah承认超大规模厂商压低定价是威胁之一",
-          "开源模型质量参差不齐，尤其在低资源语言和多语言场景下存在性能差距，来源中Cheah承认'不会声称完美的对等性，这在当前领域状态下是不诚实的'"
-        ],
-        "related_direction_id": "DIR-20260725-01",
-        "sector": "AI基础设施与开源模型推理平台",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是企业对AI主权和供应商锁定的规避需求，以及从单一通用模型向多模型专业化部署的范式转移。本轮2000万美元A轮融资由AMD Ventures和Airbus Ventures联合领投，多家产业资本参与，验证了以下信号：平台已支持超过30,000个开源模型，是Hugging Face生态中增长最快的推理合作伙伴；创始团队创建了RWKV开源架构，具备底层技术权威；通过AMD ROCm战略合作实现了硬件多样性，提供可审计的专有硬件替代方案。估值未在来源中披露。",
-          "evidence_signals": [
-            "平台支持超过30,000个开源模型，涵盖语言、视觉和音频",
-            "是Hugging Face生态中增长最快的推理合作伙伴",
-            "创始团队创建了RWKV开源架构，挑战Transformer主导地位",
-            "与AMD达成战略合作，确保开源模型在AMD ROCm上原生运行",
-            "种子轮投资方Kickstart Ventures和Airbus Ventures在本轮继续加注"
-          ],
-          "risks": [
-            "超大规模云厂商可能通过价格战削弱中立推理平台的成本优势，来源中CEO Cheah承认超大规模厂商压低定价是威胁之一",
-            "开源模型质量参差不齐，尤其在低资源语言和多语言场景下存在性能差距，来源中Cheah承认'不会声称完美的对等性，这在当前领域状态下是不诚实的'"
-          ],
-          "institutional_rationale_status": "disclosed"
-        },
-        "taxonomy_version": "TAG-V4.1",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "development_deployment",
-        "market_application_id": "model_deployment",
-        "product_form_id": "compute_cloud_service",
-        "use_case_ids": [],
-        "industry_ids": [],
-        "target_user_ids": [
-          "developer"
-        ],
-        "related_direction": {
-          "id": "DIR-20260725-01",
-          "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Featherless.ai Serverless Inference Platform",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Eugene Cheah",
-          "canonical_entity_id": "EN-6e1641eb6cc4e98f",
-          "canonical_name": "Eugene Cheah"
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "AMD Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Airbus Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "BMW i Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Kickstart Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Panache Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Wavemaker Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-6011ab83ebd290bd",
-          "date": "2026-04-30",
-          "title": "Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台",
-          "amount": "$20M",
-          "source_refs": [
-            "SA-9f769741c55d16d8"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-2abdb8003508dda6",
-          "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
-          "title": "Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台",
-          "publisher": "keyword search / Exa",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-06-15T07:56:14.446Z",
-          "content_hash": "7b38f6d68d7f8881",
-          "source_artifact_id": "SA-9f769741c55d16d8",
-          "raw_id": "RAW-6bc56a4bf90072eb"
-        },
-        {
-          "source_id": "FISRC-1afbc2de05f08056",
-          "source_url": "https://technode.global/2026/05/01/singapore-co-founded-ai-firm-featherless-ai-raises-20m-series-a-funding/",
-          "title": "Singapore co-founded AI firm Featherless.ai raises $20M funding co-led by AMD Ventures, Airbus Ventures - TNGlobal",
-          "publisher": "technode.global",
-          "source_class": "independent",
-          "capture_method": "exa_captured_content",
-          "captured_at": "2026-07-26T14:29:33.211Z",
-          "content_hash": "84d2adfa2c1db4c4",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-be4736fbc4a3d804",
-          "source_url": "https://www.startuphub.ai/investment_rounds/featherlessai-funding-round-2026",
-          "title": "Featherless.ai Funding Round · $20M raised · (2026) | StartupHub.ai | StartupHub.ai",
-          "publisher": "startuphub.ai",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T14:29:48.821Z",
-          "content_hash": "446653710d989883",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-d2c065a50fa67868",
-          "source_url": "https://featherless.ai/blog/series-a",
-          "title": "Featherless Raises $20M Series A to Power Open-Source AI Infrastructure - Featherless",
-          "publisher": "featherless.ai",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T14:29:51.555Z",
-          "content_hash": "e848ef24a67bf0b4",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-c229f715d145c1e1",
-          "source_url": "https://creationsforu.com/featherless-ai-wants-to-make-ai-model-switching-as-easy-as-streaming-netflix/",
-          "title": "Featherless.ai wants to make AI model switching as easy as streaming Netflix – Creationsforu",
-          "publisher": "creationsforu.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T14:29:54.552Z",
-          "content_hash": "f5b6c7dcb4aad736",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T14:30:25.594Z",
-        "taxonomy_classification": {
-          "taxonomy_version": "TAG-V4.1",
-          "method": "deepseek_evidence_review",
-          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
-          "decision_event_id": "EV-6011ab83ebd290bd",
-          "confidence": 0.92,
-          "needs_review": false
-        }
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-07-26T14:30:25.594Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 5
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Featherless.ai Serverless Inference Platform"
-          ]
-        },
-        "founders": {
-          "linked": 1,
-          "total": 1,
-          "unresolved_names": []
-        }
-      },
-      "source_event_ids": [
-        "EV-6011ab83ebd290bd"
-      ],
-      "aggregation": {
-        "key": "EN-ce31f92c521b7b08|series_a",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      },
-      "product_form": {
-        "dimension": "product_form",
-        "id": "compute_cloud_service",
-        "name": "算力云服务",
-        "method": "card_explicit",
-        "decision_id": ""
-      },
-      "market_category": {
-        "dimension": "ai_market_category",
-        "id": "infrastructure_compute",
-        "name": "基础设施与算力",
-        "method": "card_explicit",
-        "decision_id": ""
-      },
-      "market_subcategory": {
-        "dimension": "ai_market_subcategory",
-        "id": "development_deployment",
-        "name": "开发与部署",
-        "method": "card_explicit"
-      },
-      "market_application": {
-        "dimension": "ai_market_application",
-        "id": "model_deployment",
-        "name": "模型部署",
-        "method": "card_explicit"
-      },
-      "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-ce31f92c521b7b08",
-        "relation_map": "data-center.html?view=relations&entity=EN-ce31f92c521b7b08",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-6011ab83ebd290bd",
-        "direction": "opportunity-map.html#direction-cards"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.2",
       "funding_insight_id": "FI-0c23a160cd811687",
       "triggered_by_event_id": "EV-5762fe51987bc5ff",
       "as_of_date": "2026-06-14",
@@ -114233,8 +113673,8 @@
       "triggered_by_event_id": "EV-8861a42a8679562a",
       "as_of_date": "2026-06-11",
       "company": {
-        "entity_id": "EN-8d3aa1a6f227d714",
-        "name": "Apollo",
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic",
         "full_name": "Anthropic",
         "website": "",
         "summary": "Anthropic 是一家前沿 AI 实验室，正在通过 Broadcom 的 AI XPV 平台大规模扩展其计算基础设施，以支持下一代模型的训练与推理。",
@@ -114628,7 +114068,7 @@
         "EV-8861a42a8679562a"
       ],
       "aggregation": {
-        "key": "EN-8d3aa1a6f227d714|infrastructure",
+        "key": "EN-c70eca6b0f88f44d|infrastructure",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       },
@@ -114659,8 +114099,8 @@
         "method": "card_explicit"
       },
       "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-8d3aa1a6f227d714",
-        "relation_map": "",
+        "company": "data-center.html?view=index&detail=entity&id=EN-c70eca6b0f88f44d",
+        "relation_map": "data-center.html?view=relations&entity=EN-c70eca6b0f88f44d",
         "funding_event": "data-center.html?view=events&detail=event&id=EV-8861a42a8679562a",
         "direction": ""
       }
@@ -123484,8 +122924,8 @@
       "triggered_by_event_id": "EV-618e5729145025e4",
       "as_of_date": "2026-06-06",
       "company": {
-        "entity_id": "EN-b4a139ced5659a4e",
-        "name": "Former GitHub",
+        "entity_id": "EN-0decbc3b45f73b2b",
+        "name": "Entire",
         "full_name": "Entire Inc.",
         "website": "https://entire.io",
         "summary": "Entire 是一家由前 GitHub CEO Thomas Dohmke 创立的远程优先的全球分布式组织，旨在为 AI 时代构建下一代开发者平台，专注于人类与 AI 智能体的协作。",
@@ -124030,7 +123470,7 @@
         "EV-618e5729145025e4"
       ],
       "aggregation": {
-        "key": "EN-b4a139ced5659a4e|seed",
+        "key": "EN-0decbc3b45f73b2b|seed",
         "event_count": 1,
         "strategy": "company_and_normalized_round"
       },
@@ -124061,8 +123501,8 @@
         "method": "card_explicit"
       },
       "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-b4a139ced5659a4e",
-        "relation_map": "",
+        "company": "data-center.html?view=index&detail=entity&id=EN-0decbc3b45f73b2b",
+        "relation_map": "data-center.html?view=relations&entity=EN-0decbc3b45f73b2b",
         "funding_event": "data-center.html?view=events&detail=event&id=EV-618e5729145025e4",
         "direction": "opportunity-map.html#direction-cards"
       }
@@ -142373,8 +141813,8 @@
       "triggered_by_event_id": "EV-1abf0d076d30ec6d",
       "as_of_date": "2026-05-23",
       "company": {
-        "entity_id": "EN-240389f4b730bad4",
-        "name": "AMD",
+        "entity_id": "EN-ce31f92c521b7b08",
+        "name": "Featherless.ai",
         "full_name": "Featherless.ai",
         "website": "featherless.ai",
         "summary": "Featherless.ai 是一家成立于2023年的无服务器推理平台，专注于开源AI。它通过热交换技术在5秒内按需加载模型，提供固定月费的定价模式，旨在成为不绑定特定硬件或云厂商的中立基础设施层。",
@@ -142490,6 +141930,51 @@
               }
             ],
             "entity_id": null
+          },
+          {
+            "name": "BMW i Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2abdb8003508dda6",
+                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kickstart Ventures",
+            "role": "本轮参投；种子轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2abdb8003508dda6",
+                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
+              },
+              {
+                "source_id": "FISRC-1afbc2de05f08056",
+                "quote": "Joan Yao, General Partner at Kickstart Ventures, also said the firm backed Featherless.ai at seed because of their technical edge in inference",
+                "source_content_hash": "84d2adfa2c1db4c4",
+                "quote_hash": "4328b7e7f0b278cac1585876deed8168aa494544d7f523c44d12c43e0e742802"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Wavemaker Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2abdb8003508dda6",
+                "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
+              }
+            ],
+            "entity_id": null
           }
         ],
         "evidence_refs": [
@@ -142515,6 +142000,26 @@
                 "quote": "Featherless.ai, a serverless inference platform specializing in open-source AI, announced it closed $20 million in Series A funding on April 30.",
                 "source_content_hash": "74386c769f34a6e8",
                 "quote_hash": "6b8152cbf0a0afc394dd0c78d8eb0283e77e12ba1d1d3fe1e12e061019841e66"
+              }
+            ]
+          },
+          {
+            "event_id": "EV-6011ab83ebd290bd",
+            "round_original": "Series A",
+            "amount": "$20 million",
+            "announced_at": "2026-04-30",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2abdb8003508dda6",
+                "quote": "Featherless.ai , a platform for running open-source AI, has secured $20 million in Series A funding",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "928560a85a8ead55eca71fb3cbe1978621720651719a7b7fe7f81077e80a1263"
+              },
+              {
+                "source_id": "FISRC-d2c065a50fa67868",
+                "quote": "Today, we're announcing a $20 million Series A financing round",
+                "source_content_hash": "e848ef24a67bf0b4",
+                "quote_hash": "3fdf1e3dc29c0e62a32e43a16f9e0f49b08886c177819e78bb4e5c5cf27b49a3"
               }
             ]
           }
@@ -142544,6 +142049,33 @@
               "quote": "We have the entire catalogue of 30,000 models available online.",
               "source_content_hash": "415a2b10b75139c0",
               "quote_hash": "a5364072e188b2290338e8c659e22d8a4546631bca9e0d080ba989fa52aebd8f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Featherless.ai Serverless Inference Platform",
+          "description": "一个无服务器推理平台，为企业提供生产就绪的替代方案，支持超过30,000个开源模型，涵盖语言、视觉和音频，使开发者能够即时部署生产级AI。",
+          "target_customers": "企业开发者",
+          "features": [
+            "支持超过30,000个开源模型",
+            "无服务器推理",
+            "硬件中立层",
+            "模型热切换（五秒内）",
+            "开源智能体运行时"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2abdb8003508dda6",
+              "quote": "Featherless.ai is a serverless inference platform. Its goal is to make all AI models available for serverless inference. It offers a production-ready alternative to proprietary compute environments.",
+              "source_content_hash": "7b38f6d68d7f8881",
+              "quote_hash": "5fb0506491f97d447a8773d659288c74504e4c244643f619d93c0fd6f0a38e27"
+            },
+            {
+              "source_id": "FISRC-c229f715d145c1e1",
+              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU",
+              "source_content_hash": "f5b6c7dcb4aad736",
+              "quote_hash": "69cf48387750c2fa92737f9358f9cc1d8178e7cb2b58b83c4a75659d0bc3b777"
             }
           ],
           "entity_id": null
@@ -142588,6 +142120,32 @@
               "quote": "Panache also participated in Featherless’s $5-million USD seed round in March 2025",
               "source_content_hash": "74386c769f34a6e8",
               "quote_hash": "70f003012c80310c3cb1e274f01931527485f6e74e5e6d0e5a8c52c50d01654d"
+            }
+          ]
+        },
+        {
+          "label": "支持的开放模型数量",
+          "value": "30,000+",
+          "observed_at": "2026-04-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2abdb8003508dda6",
+              "quote": "Featherless.ai supports over 30,000 open models across language, vision, and audio",
+              "source_content_hash": "7b38f6d68d7f8881",
+              "quote_hash": "9270ea4fd86fe8002b02a7a5eb5c12db0d5fe1b9350a2a66cd28e23024075c5c"
+            }
+          ]
+        },
+        {
+          "label": "模型热切换时间",
+          "value": "5秒以内",
+          "observed_at": "2026-05-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c229f715d145c1e1",
+              "quote": "hot-swapping models in under five seconds, compared with the typical 30 minutes on a GPU",
+              "source_content_hash": "f5b6c7dcb4aad736",
+              "quote_hash": "69cf48387750c2fa92737f9358f9cc1d8178e7cb2b58b83c4a75659d0bc3b777"
             }
           ]
         }
@@ -142649,17 +142207,69 @@
                 "quote_hash": "6568d678ae2c505b7b731d77dee307262ba1aaf378fe0f5359a1fa3a7ad8c1f5"
               }
             ]
+          },
+          {
+            "institution": "BMW i Ventures",
+            "speaker": "Kasper Sage",
+            "speaker_role": "Managing Partner at BMW i Ventures",
+            "rationale": "认为随着AI采用加速，企业希望对性能、成本和数据驻留拥有更多控制权，而Featherless.ai正在使领先的开源模型实现规模化生产就绪，使用多样化模型是未来企业AI用例的关键。",
+            "quote": "As AI adoption accelerates, enterprises want more control over performance, cost, and where their data lives. Featherless.ai is making leading open models production-ready at scale. Being able to use a variety of different models is key for future enterprise AI use cases.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2abdb8003508dda6",
+                "quote": "As AI adoption accelerates, enterprises want more control over performance, cost, and where their data lives. Featherless.ai is making leading open models production-ready at scale. Being able to use a variety of different models is key for future enterprise AI use cases.",
+                "source_content_hash": "7b38f6d68d7f8881",
+                "quote_hash": "2604f6ca59e79137a98215f6bdfc78567548ccbdd17f48a84c644be925274d66"
+              }
+            ]
+          },
+          {
+            "institution": "Airbus Ventures",
+            "speaker": "Abby Hitchcock",
+            "speaker_role": "Principal at Airbus Ventures",
+            "rationale": "认为下一阶段AI采用将由数百万个专业化微调模型驱动，关键挑战是能够可靠且经济高效地大规模服务这些模型，Featherless.ai通过秒级模型加载和高GPU利用率解决了这一问题。",
+            "quote": "the next phase of AI adoption will be driven by millions of specialised, fine-tuned models rather than a few general-purpose systems. She said the key challenge is not the availability of such models, but the ability to serve them reliably and cost-effectively at scale. Featherless.ai has addressed this by enabling models to load within seconds while maintaining high GPU utilization",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1afbc2de05f08056",
+                "quote": "the next phase of AI adoption will be driven by millions of specialised, fine-tuned models rather than a few general-purpose systems. She said the key challenge is not the availability of such models, but the ability to serve them reliably and cost-effectively at scale. Featherless.ai has addressed this by enabling models to load within seconds while maintaining high GPU utilization",
+                "source_content_hash": "84d2adfa2c1db4c4",
+                "quote_hash": "10b64f903d25a1b45c6853ff205dc1315418804331bc31c3d1a4227f5c287f67"
+              }
+            ]
+          },
+          {
+            "institution": "Panache Ventures",
+            "speaker": "Prashant Matta",
+            "speaker_role": "Managing Partner at Panache Ventures",
+            "rationale": "认为Featherless.ai将实用创新与多元化AI生态的更广泛使命相结合，并警告行业面临被单一国家少数参与者主导的风险，Featherless.ai提供了替代发展路径。",
+            "quote": "Featherless.ai combines practical innovation with a broader mission to diversify the AI ecosystem. He warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1afbc2de05f08056",
+                "quote": "Prashant Matta, Managing Partner at Panache Ventures, said Featherless.ai combines practical innovation with a broader mission to diversify the AI ecosystem. He warned that the industry risks being dominated by a small number of players from a single country, adding that platforms like Featherless.ai offer an alternative path for development.",
+                "source_content_hash": "84d2adfa2c1db4c4",
+                "quote_hash": "49da474b1ab0e22abcce3c7515314d3b718a2bf10969371384ad6cd0223acced"
+              }
+            ]
           }
         ],
         "capital_judgment": "资本押注的核心变量是开源模型推理的“中立基础设施层”。本轮融资验证的信号包括：1）企业市场对AI主权和数据控制的需求从“是否可行”转向“由谁控制”；2）通过热交换技术实现的全目录模型访问和固定费率定价，在技术上和商业上构成了对现有推理提供商的差异化壁垒。判断的证据边界在于，这些信号目前主要来自公司创始人的陈述和投资方的战略表态，尚未有公开的规模化客户数据或第三方性能基准测试来验证其成本优势和技术稳定性。",
         "validated_signals": [
           "企业市场对AI主权和数据控制的需求明确，尤其在非美国市场。",
           "热交换技术实现了对超过30,000个模型的快速访问，构成了技术差异化。",
-          "固定费率定价模式为使用小众和定制模型的企业提供了成本可预测性。"
+          "固定费率定价模式为使用小众和定制模型的企业提供了成本可预测性。",
+          "平台支持超过30,000个开源模型，涵盖语言、视觉和音频",
+          "是Hugging Face生态中增长最快的推理合作伙伴",
+          "创始团队创建了RWKV开源架构，挑战Transformer主导地位",
+          "与AMD达成战略合作，确保开源模型在AMD ROCm上原生运行",
+          "种子轮投资方Kickstart Ventures和Airbus Ventures在本轮继续加注"
         ],
         "risks": [
           "无服务器架构在处理大规模并发请求时可能面临“冷启动”和延迟问题，其性能是否足以满足关键任务应用仍有待验证。",
-          "开源模型的优势依赖于模型本身的质量，如果闭源模型性能大幅领先，基础设施层的价值可能会被削弱。"
+          "开源模型的优势依赖于模型本身的质量，如果闭源模型性能大幅领先，基础设施层的价值可能会被削弱。",
+          "超大规模云厂商可能通过价格战削弱中立推理平台的成本优势，来源中CEO Cheah承认超大规模厂商压低定价是威胁之一",
+          "开源模型质量参差不齐，尤其在低资源语言和多语言场景下存在性能差距，来源中Cheah承认'不会声称完美的对等性，这在当前领域状态下是不诚实的'"
         ],
         "related_direction_id": "DIR-20260725-01",
         "sector": "AI基础设施 / 开源模型推理",
@@ -142668,11 +142278,18 @@
           "evidence_signals": [
             "企业市场对AI主权和数据控制的需求明确，尤其在非美国市场。",
             "热交换技术实现了对超过30,000个模型的快速访问，构成了技术差异化。",
-            "固定费率定价模式为使用小众和定制模型的企业提供了成本可预测性。"
+            "固定费率定价模式为使用小众和定制模型的企业提供了成本可预测性。",
+            "平台支持超过30,000个开源模型，涵盖语言、视觉和音频",
+            "是Hugging Face生态中增长最快的推理合作伙伴",
+            "创始团队创建了RWKV开源架构，挑战Transformer主导地位",
+            "与AMD达成战略合作，确保开源模型在AMD ROCm上原生运行",
+            "种子轮投资方Kickstart Ventures和Airbus Ventures在本轮继续加注"
           ],
           "risks": [
             "无服务器架构在处理大规模并发请求时可能面临“冷启动”和延迟问题，其性能是否足以满足关键任务应用仍有待验证。",
-            "开源模型的优势依赖于模型本身的质量，如果闭源模型性能大幅领先，基础设施层的价值可能会被削弱。"
+            "开源模型的优势依赖于模型本身的质量，如果闭源模型性能大幅领先，基础设施层的价值可能会被削弱。",
+            "超大规模云厂商可能通过价格战削弱中立推理平台的成本优势，来源中CEO Cheah承认超大规模厂商压低定价是威胁之一",
+            "开源模型质量参差不齐，尤其在低资源语言和多语言场景下存在性能差距，来源中Cheah承认'不会声称完美的对等性，这在当前领域状态下是不诚实的'"
           ],
           "institutional_rationale_status": "disclosed"
         },
@@ -142698,6 +142315,13 @@
           "relation_type": "product_of",
           "target_kind": "product",
           "research_name": "Featherless 无服务器推理平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Featherless.ai Serverless Inference Platform",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
@@ -142742,6 +142366,27 @@
           "research_name": "Panache Ventures",
           "canonical_entity_id": null,
           "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BMW i Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kickstart Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Wavemaker Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
         }
       ],
       "funding_history": [
@@ -142762,6 +142407,15 @@
           "amount": "$20M",
           "source_refs": [
             "SA-83b92b4b4df84ab0"
+          ]
+        },
+        {
+          "event_id": "EV-6011ab83ebd290bd",
+          "date": "2026-04-30",
+          "title": "Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台",
+          "amount": "$20M",
+          "source_refs": [
+            "SA-9f769741c55d16d8"
           ]
         }
       ],
@@ -142787,6 +142441,66 @@
           "capture_method": "direct_fetch",
           "captured_at": "2026-07-26T15:07:07.702Z",
           "content_hash": "74386c769f34a6e8",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-2abdb8003508dda6",
+          "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
+          "title": "Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-15T07:56:14.446Z",
+          "content_hash": "7b38f6d68d7f8881",
+          "source_artifact_id": "SA-9f769741c55d16d8",
+          "raw_id": "RAW-6bc56a4bf90072eb"
+        },
+        {
+          "source_id": "FISRC-1afbc2de05f08056",
+          "source_url": "https://technode.global/2026/05/01/singapore-co-founded-ai-firm-featherless-ai-raises-20m-series-a-funding/",
+          "title": "Singapore co-founded AI firm Featherless.ai raises $20M funding co-led by AMD Ventures, Airbus Ventures - TNGlobal",
+          "publisher": "technode.global",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:29:33.211Z",
+          "content_hash": "84d2adfa2c1db4c4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-be4736fbc4a3d804",
+          "source_url": "https://www.startuphub.ai/investment_rounds/featherlessai-funding-round-2026",
+          "title": "Featherless.ai Funding Round · $20M raised · (2026) | StartupHub.ai | StartupHub.ai",
+          "publisher": "startuphub.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:48.821Z",
+          "content_hash": "446653710d989883",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d2c065a50fa67868",
+          "source_url": "https://featherless.ai/blog/series-a",
+          "title": "Featherless Raises $20M Series A to Power Open-Source AI Infrastructure - Featherless",
+          "publisher": "featherless.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:51.555Z",
+          "content_hash": "e848ef24a67bf0b4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c229f715d145c1e1",
+          "source_url": "https://creationsforu.com/featherless-ai-wants-to-make-ai-model-switching-as-easy-as-streaming-netflix/",
+          "title": "Featherless.ai wants to make AI model switching as easy as streaming Netflix – Creationsforu",
+          "publisher": "creationsforu.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:54.552Z",
+          "content_hash": "f5b6c7dcb4aad736",
           "source_artifact_id": null,
           "raw_id": null
         }
@@ -142816,14 +142530,15 @@
       "customer_research": {
         "status": "no_verified_customer_found",
         "verified_customer_count": 0,
-        "searched_source_count": 2
+        "searched_source_count": 7
       },
       "entity_link_coverage": {
         "products": {
           "linked": 0,
-          "total": 1,
+          "total": 2,
           "unresolved_names": [
-            "Featherless 无服务器推理平台"
+            "Featherless 无服务器推理平台",
+            "Featherless.ai Serverless Inference Platform"
           ]
         },
         "founders": {
@@ -142836,11 +142551,12 @@
         }
       },
       "source_event_ids": [
-        "EV-1abf0d076d30ec6d"
+        "EV-1abf0d076d30ec6d",
+        "EV-6011ab83ebd290bd"
       ],
       "aggregation": {
-        "key": "EN-240389f4b730bad4|series_a",
-        "event_count": 1,
+        "key": "EN-ce31f92c521b7b08|series_a",
+        "event_count": 2,
         "strategy": "company_and_normalized_round"
       },
       "product_form": {
@@ -142870,8 +142586,8 @@
         "method": "card_explicit"
       },
       "links": {
-        "company": "data-center.html?view=index&detail=entity&id=EN-240389f4b730bad4",
-        "relation_map": "data-center.html?view=relations&entity=EN-240389f4b730bad4",
+        "company": "data-center.html?view=index&detail=entity&id=EN-ce31f92c521b7b08",
+        "relation_map": "data-center.html?view=relations&entity=EN-ce31f92c521b7b08",
         "funding_event": "data-center.html?view=events&detail=event&id=EV-1abf0d076d30ec6d",
         "direction": "opportunity-map.html#direction-cards"
       }

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -57,7 +57,6 @@
       "EN-eafe895eb8119e6e",
       "EN-7035f6607ad2d162",
       "EN-9599cd200c6527a7",
-      "EN-e6f146354586d556",
       "EN-c70eca6b0f88f44d",
       "EN-06b5472c16feae4c",
       "EN-e395d03e988d30a9"
@@ -10157,10 +10156,7 @@
             "dimensionName": "产品形态",
             "id": "ai_compute_system",
             "name": "AI 计算系统",
-            "entityIds": [
-              "EN-e6f146354586d556",
-              "EN-ee1e31ffef7dbe64"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -10169,10 +10165,7 @@
             "dimensionName": "产品形态",
             "id": "model",
             "name": "模型",
-            "entityIds": [
-              "EN-e6f146354586d556",
-              "EN-ee1e31ffef7dbe64"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           },
@@ -10181,10 +10174,7 @@
             "dimensionName": "产品形态",
             "id": "end_user_application",
             "name": "终端 AI 应用",
-            "entityIds": [
-              "EN-e6f146354586d556",
-              "EN-ee1e31ffef7dbe64"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -10196,10 +10186,7 @@
             "dimensionName": "行业",
             "id": "government_public_sector",
             "name": "政府与公共部门",
-            "entityIds": [
-              "EN-e6f146354586d556",
-              "EN-ee1e31ffef7dbe64"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -10213,10 +10200,7 @@
           "dimensionName": "产品形态",
           "id": "ai_compute_system",
           "name": "AI 计算系统",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -10225,10 +10209,7 @@
           "dimensionName": "产品形态",
           "id": "model",
           "name": "模型",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -10237,10 +10218,7 @@
           "dimensionName": "产品形态",
           "id": "end_user_application",
           "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -10249,10 +10227,7 @@
           "dimensionName": "行业",
           "id": "government_public_sector",
           "name": "政府与公共部门",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -10263,10 +10238,7 @@
           "dimensionName": "产品形态",
           "id": "ai_compute_system",
           "name": "AI 计算系统",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -10275,10 +10247,7 @@
           "dimensionName": "产品形态",
           "id": "model",
           "name": "模型",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -10287,10 +10256,7 @@
           "dimensionName": "产品形态",
           "id": "end_user_application",
           "name": "终端 AI 应用",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -10299,10 +10265,7 @@
           "dimensionName": "行业",
           "id": "government_public_sector",
           "name": "政府与公共部门",
-          "entityIds": [
-            "EN-e6f146354586d556",
-            "EN-ee1e31ffef7dbe64"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -11190,13 +11153,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-knowledge_search",
-        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-use_case-content_creation",
         "TX-industry-financial_services",
@@ -11813,41 +11774,26 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-industry-education",
         "TX-target_user-consumer",
-        "TX-industry-manufacturing",
-        "TX-industry-financial_services",
         "TX-use_case-customer_support",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
-        "TX-technology-embodied_ai",
         "TX-use_case-data_analysis",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-deployment_model-cloud",
-        "TX-technology-retrieval_augmented_generation",
         "TX-target_user-educator",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [

@@ -48,7 +48,7 @@ Private evidence objects and exact Claim spans are the evidence layer. Public Ra
 - Hardware fact: `HARDWARE-FACT-V1.0`
 - Hardware snapshot: `HARDWARE-SNAPSHOT-V1.0`
 - Lens monitoring funnel: `LENS-FUNNEL-V1.0`
-- Tags and facets: `TAG-V4.0`
+- Tags and facets: `TAG-V4.1`
 - Contract: `agent-workflow/product/data-center-v4-contract.md`
 - JSON Schema: `agent-workflow/product/data-center-v4.schema.json`
 - Entity history contract: `agent-workflow/product/entity-history-v1-contract.md`
@@ -104,7 +104,7 @@ npm run assert:entity-history
 ## V4 data-lake contract
 
 `data-lake/tables/` is a rebuildable machine-serving projection with exactly
-23 JSONL tables. `npm run sync:data-lake` deletes JSONL files outside the V4
+24 JSONL tables. `npm run sync:data-lake` deletes JSONL files outside the V4
 allowlist, rebuilds DuckDB from zero, writes `data-lake/manifest.json`, and runs
 `npm run assert:data-lake-v4`.
 

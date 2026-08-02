@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildEntityCollections, buildEventRecords, buildFrontstageData as buildFreshFrontstageData, isCompletePublicEventTitle, sourceDateOnly } from "../../../01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs";
+import { classificationEntityIds } from "../../product/classification-entity-scope.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
@@ -98,6 +99,19 @@ test("frontstage projects China market scope to events and linked entities", () 
     }],
   }, new Map([["EV-CN", records[0]]]));
   assert.deepEqual(collections.companies[0].marketScopes, ["actor_origin"]);
+});
+
+test("classification scope prefers the Claim subject and never copies a company tag to investors", () => {
+  const startup = { entity_id: "EN-STARTUP", canonical_name: "Example AI", entity_type: "organization_candidate" };
+  const investor = { entity_id: "EN-INVESTOR", canonical_name: "Example Capital", entity_type: "organization_candidate" };
+  const claim = {
+    claim_id: "CL-SCOPE",
+    subject: "Example AI",
+    source_quote: "Example Capital invested in Example AI, which builds model deployment software.",
+  };
+
+  assert.deepEqual(classificationEntityIds([claim], [startup, investor]), [startup.entity_id]);
+  assert.deepEqual(classificationEntityIds([{ ...claim, subject: "" }], [startup, investor]), []);
 });
 
 test("person index contains reviewed natural people while preserving all viewpoint records", () => {

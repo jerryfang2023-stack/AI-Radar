@@ -21,7 +21,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current AI Hardware fact/snapshot versions: HARDWARE-FACT-V1.0 / HARDWARE-SNAPSHOT-V1.0.
 - Current Guanlan Research column version: REPORTS-V1.2.0-research-hub.
 - Current Opportunity Map column version: OMAP-V2.0.0-v4-evidence.
-- Current Trend Radar column version: TRADAR-V1.0.1-china-market-filter.
+- Current Trend Radar column version: TRADAR-V1.1.0-tag-v4-1.
 - Current Raw contract: RAW-V4.0. Full original bodies live only in the configured private evidence repository; public bundles retain `evidence://<content_hash>` locators and body-free metadata.
 - Current structured source-intake contract: SOURCE-INTAKE-V1.1.
 - Current canonical event contract: EVENT-V1.1.
@@ -29,7 +29,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current person review contract: PERSON-REVIEW-V1.1.
 - Current factual relationship contract: RELATION-V2.1.
 - Current targeted historical collection contract: BACKFILL-V1.0.
-- Current tag taxonomy version: TAG-V4.0.
+- Current tag taxonomy version: TAG-V4.1.
 - Current Skill Store version: `v2.0.1`; all 23 active governed Skills follow `GPT-5.6-SKILL-V1.0`, include `agents/openai.yaml`, and have five-case trigger-eval inventory coverage.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` documents frozen V3 history only; it is not a production route.

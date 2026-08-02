@@ -4,18 +4,14 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { taxonomyEvidenceSegmentRelevant } from "./build-data-center-v4.mjs";
+import { acceptedFundingCompanyIdentityDecisions } from "./funding-insight-v1-utils.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const dataCenterRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
 const fundingRoot = path.join(root, "01-SiteV2/content/12-applications/funding-insights");
 const decisionFile = path.join(fundingRoot, "taxonomy-decisions-v4-1.json");
 const outputName = "reviewed-event-classifications.json";
-const canonicalEventAliases = new Map([
-  ["EV-5f3ccb941a2fe5d7", "EV-2a78dd5feb40a78a"],
-  ["EV-df789745fb926bfd", "EV-ecc12e5ec883b7e7"],
-  ["EV-2dff32c1b6f813e4", "EV-b2d94511e4b4dfc8"],
-  ["EV-305ec93673f4f12e", "EV-82e77abb1a77f81c"],
-]);
 
 function readJson(file, fallback = null) {
   if (!fs.existsSync(file)) return fallback;
@@ -81,12 +77,13 @@ function dimensionRows(decision) {
   ].filter(([, value]) => clean(value));
 }
 
-function evidenceForCard(card) {
+function evidenceForCard(card, dimensionId) {
   const sourceById = new Map((card.research_sources || []).map((source) => [source.source_id, source]));
-  const refs = [
-    ...(card.company?.evidence_refs || []),
-    ...(card.products || []).flatMap((product) => product.evidence_refs || []),
-  ];
+  const productRefs = (card.products || []).flatMap((product) => product.evidence_refs || []);
+  const customerRefs = (card.customers || []).flatMap((customer) => customer.evidence_refs || []);
+  const refs = ["use_case", "industry"].includes(dimensionId)
+    ? [...customerRefs, ...productRefs]
+    : [...productRefs, ...customerRefs];
   return uniqueBy(refs.map((ref) => {
     const source = sourceById.get(ref.source_id) || {};
     return {
@@ -96,9 +93,16 @@ function evidenceForCard(card) {
       source_content_hash: clean(ref.source_content_hash || source.content_hash),
       quote_hash: clean(ref.quote_hash),
     };
-  }).filter((ref) => ref.source_id && ref.source_url && ref.quote && ref.source_content_hash && ref.quote_hash), (ref) => (
+  }).filter((ref) => (
+    ref.source_id
+    && ref.source_url
+    && ref.quote
+    && ref.source_content_hash
+    && ref.quote_hash
+    && taxonomyEvidenceSegmentRelevant(ref.quote)
+  )), (ref) => (
     `${ref.source_id}|${ref.quote_hash}`
-  )).slice(0, 4);
+  )).slice(0, 2);
 }
 
 function resolveReviewedCompany(card, entitiesById, entityIdByName) {
@@ -120,7 +124,14 @@ function resolveReviewedCompany(card, entitiesById, entityIdByName) {
   };
 }
 
-export function buildReviewedEventClassifications({ decisions, cards, events, entities }) {
+export function buildReviewedEventClassifications({
+  decisions,
+  cards,
+  events,
+  entities,
+  canonicalEntities = [],
+  companyIdentityReview = {},
+}) {
   const eventById = new Map(events.map((event) => [event.event_id, event]));
   const entitiesById = new Map(entities.map((entity) => [entity.entity_id, entity]));
   const entityIdByName = new Map();
@@ -132,6 +143,9 @@ export function buildReviewedEventClassifications({ decisions, cards, events, en
   }
   const cardByEvent = new Map();
   for (const card of cards) {
+    if (card.triggered_by_event_id) cardByEvent.set(card.triggered_by_event_id, card);
+  }
+  for (const card of cards) {
     for (const eventId of new Set([
       card.triggered_by_event_id,
       ...(card.source_event_ids || []),
@@ -141,16 +155,39 @@ export function buildReviewedEventClassifications({ decisions, cards, events, en
     }
   }
   const rows = [];
-  for (const decision of decisions) {
-    const canonicalEventId = canonicalEventAliases.get(decision.event_id) || decision.event_id;
+  const reviewedCompanies = acceptedFundingCompanyIdentityDecisions(companyIdentityReview);
+  const canonicalEntityByName = new Map();
+  for (const entity of canonicalEntities) for (const value of [entity.name, ...(entity.aliases || [])]) {
+    const key = nameKey(value);
+    if (key && !canonicalEntityByName.has(key)) canonicalEntityByName.set(key, entity);
+  }
+  for (const [decisionIndex, decision] of decisions.entries()) {
+    const canonicalEventId = decision.canonical_event_id || decision.event_id;
     const event = eventById.get(canonicalEventId);
     if (!event) throw new Error(`Reviewed taxonomy decision has no canonical event: ${decision.event_id}`);
     const card = cardByEvent.get(decision.event_id);
     if (!card) throw new Error(`Reviewed taxonomy decision has no Funding Insight card: ${decision.event_id}`);
-    const evidenceRefs = evidenceForCard(card);
-    if (!evidenceRefs.length) throw new Error(`Reviewed taxonomy decision has no exact research evidence: ${decision.event_id}`);
-    const company = resolveReviewedCompany(card, entitiesById, entityIdByName);
+    const reviewedCompany = reviewedCompanies.get(card.company?.entity_id);
+    const canonicalEntity = canonicalEntityByName.get(nameKey(card.company?.full_name))
+      || canonicalEntityByName.get(nameKey(card.company?.name));
+    const company = canonicalEntity
+      ? {
+        entity_id: canonicalEntity.id,
+        company_name: canonicalEntity.name,
+        resolution: "canonical_entity_profile_exact",
+      }
+      : reviewedCompany
+      ? {
+        entity_id: reviewedCompany.id,
+        company_name: reviewedCompany.name,
+        resolution: "reviewed_company_identity",
+      }
+      : resolveReviewedCompany(card, entitiesById, entityIdByName);
     for (const [dimensionId, valueId] of dimensionRows(decision)) {
+      const evidenceRefs = evidenceForCard(card, dimensionId);
+      if (!evidenceRefs.length) {
+        throw new Error(`Reviewed taxonomy decision has no target-company evidence for ${dimensionId}: ${decision.event_id}`);
+      }
       rows.push({
         reviewed_classification_id: `REC-${hash(`${canonicalEventId}|${company.entity_id}|${dimensionId}|${valueId}`)}`,
         event_id: canonicalEventId,
@@ -159,7 +196,7 @@ export function buildReviewedEventClassifications({ decisions, cards, events, en
         company_name: company.company_name,
         company_resolution: company.resolution,
         funding_insight_id: card.funding_insight_id,
-        decision_ref: `taxonomy-decisions-v4-1.json#${decision.event_id}`,
+        decision_ref: `taxonomy-decisions-v4-1.json#/decisions/${decisionIndex}`,
         dimension_id: dimensionId,
         value_id: valueId,
         evidence_refs: evidenceRefs,
@@ -196,6 +233,8 @@ export function projectFundingTaxonomy(rootDir = root) {
     cards: fundingCards(),
     events,
     entities,
+    canonicalEntities: readJson(path.join(rootDir, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), { companies: [] }).companies || [],
+    companyIdentityReview: readJson(path.join(fundingRoot, "company-identity-decisions.json"), {}),
   });
   const byDate = new Map(bundles.map((bundle) => [bundle.date, []]));
   for (const row of rows) {

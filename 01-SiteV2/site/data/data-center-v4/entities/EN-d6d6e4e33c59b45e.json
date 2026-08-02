@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -25,11 +25,7 @@
       "EV-7449d239223d4928"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-retrieval_augmented_generation",
-      "TX-technology-model_context_protocol",
-      "TX-technology-tool_use"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-23",
     "lastSeen": "2026-06-24",
@@ -63,8 +59,7 @@
             "id": "tool_use",
             "name": "工具调用",
             "entityIds": [
-              "EN-916a98f0fa2a39af",
-              "EN-d6d6e4e33c59b45e"
+              "EN-916a98f0fa2a39af"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -75,8 +70,7 @@
             "id": "model_context_protocol",
             "name": "MCP",
             "entityIds": [
-              "EN-916a98f0fa2a39af",
-              "EN-d6d6e4e33c59b45e"
+              "EN-916a98f0fa2a39af"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -87,8 +81,7 @@
             "id": "retrieval_augmented_generation",
             "name": "RAG",
             "entityIds": [
-              "EN-916a98f0fa2a39af",
-              "EN-d6d6e4e33c59b45e"
+              "EN-916a98f0fa2a39af"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -104,150 +97,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-retrieval_augmented_generation",
-      "name": "RAG",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "retrieval_augmented_generation",
-      "eventIds": [
-        "EV-30466ebe86779a64",
-        "EV-479eb3f55eda442e",
-        "EV-950237c6b3eb6343",
-        "EV-3011ea85c51a3ee0",
-        "EV-f50752717e2a8536",
-        "EV-7449d239223d4928",
-        "EV-1b03e5dff76a50a1",
-        "EV-8eed6489ab514823",
-        "EV-a591b0c96f79de45",
-        "EV-cf496e0f8a56ca97"
-      ],
-      "entityIds": [
-        "EN-a9aff9e0737a5d4a",
-        "EN-2f265a693b2897f1",
-        "EN-aa15d891a32a51b8",
-        "EN-754b113d548b4469",
-        "EN-ae4ea495016fb286",
-        "EN-916a98f0fa2a39af",
-        "EN-d6d6e4e33c59b45e",
-        "EN-2d87f3d38782aa14",
-        "EN-bbdefa2950f49882",
-        "EN-0db2d631b42da133",
-        "EN-3eee4f30151db45a",
-        "EN-35e36dc1a5213fa3",
-        "EN-bdfecbcd7dbf76d2",
-        "EN-cfe6926406f30a15",
-        "EN-e3db3da2b7dc6057",
-        "EN-4d803c223cec4cc4",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-18"
-    },
-    {
-      "id": "TX-technology-model_context_protocol",
-      "name": "MCP",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "model_context_protocol",
-      "eventIds": [
-        "EV-ed8260ee9a7a80af",
-        "EV-a2c13c14efec9218",
-        "EV-49fcb200a72f0024",
-        "EV-33292a33d0f4d599",
-        "EV-b3a050d576cea2f2",
-        "EV-48a7437742aff5c5",
-        "EV-a0d3853dd41c8ef6",
-        "EV-7449d239223d4928",
-        "EV-266aff97294156f6",
-        "EV-1035aa9cbde79b2f",
-        "EV-fd3d52afb49f026b",
-        "EV-8115dd18f2812a29",
-        "EV-8cb5b0ed18c7cdd8",
-        "EV-2cc379df19a83062",
-        "EV-8b36007d0b5f377f",
-        "EV-ff374e781601bfc7",
-        "EV-9c41acd6ef6df77f"
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-e6483498af8bd2cd",
-        "EN-b60e6df651264e14",
-        "EN-08b6a35be337edce",
-        "EN-9fbf261b62c1d7c0",
-        "EN-d2f4e09cb01afa3c",
-        "EN-e473f24d4325d51a",
-        "EN-7d3194f79e645c42",
-        "EN-178e3a5167e8e1d5",
-        "EN-bd2bfbea5911ec7a",
-        "EN-916a98f0fa2a39af",
-        "EN-d6d6e4e33c59b45e",
-        "EN-caf559f7830b566f",
-        "EN-7d1507284a5757ca",
-        "EN-3aa7606e6aa345a3",
-        "EN-bbdefa2950f49882",
-        "EN-fdb2cc367267ac57",
-        "EN-f90aec90acf3dc85",
-        "EN-5504f88c63fe766d"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2025-11-17",
-      "lastSeen": "2026-07-30"
-    },
-    {
-      "id": "TX-technology-tool_use",
-      "name": "工具调用",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "tool_use",
-      "eventIds": [
-        "EV-baa76a4f03b84980",
-        "EV-97fdf068afbbe555",
-        "EV-09e1eafc857c79fd",
-        "EV-19bcfc6d7c1612cb",
-        "EV-0a9617a5118564db",
-        "EV-a8a8f26c5128d894",
-        "EV-29e069ac093f0e34",
-        "EV-3433ad1746695875",
-        "EV-9496f90f3e808992",
-        "EV-2ffbe4560e69992a",
-        "EV-9c4b862020202f6c",
-        "EV-7449d239223d4928",
-        "EV-c5b8faec223a4caf",
-        "EV-d53cd33e8f541a65"
-      ],
-      "entityIds": [
-        "EN-7f90f96bd6306bff",
-        "EN-d8cb1acd1b39854a",
-        "EN-f1649339197f76d6",
-        "EN-2abf8289b2f2113f",
-        "EN-81baf57e05f11276",
-        "EN-e9dd8f4bd697492b",
-        "EN-3a9b395103419892",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-085598c00f2aaccf",
-        "EN-cb4754c48f8023d0",
-        "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
-        "EN-c70eca6b0f88f44d",
-        "EN-916a98f0fa2a39af",
-        "EN-d6d6e4e33c59b45e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-41dcc2d4951f337b",
-        "EN-630dc133336bc266"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-24"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

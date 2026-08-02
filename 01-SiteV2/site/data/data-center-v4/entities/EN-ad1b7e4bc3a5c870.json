@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -25,9 +25,7 @@
       "EV-77662aa9bef9efbe"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-fine_tuning"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-03",
     "lastSeen": "2026-07-04",
@@ -60,11 +58,7 @@
             "dimensionName": "技术",
             "id": "fine_tuning",
             "name": "模型微调",
-            "entityIds": [
-              "EN-ad1b7e4bc3a5c870",
-              "EN-7d3194f79e645c42",
-              "EN-8f71c4871a160172"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -83,45 +77,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-fine_tuning",
-      "name": "模型微调",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "fine_tuning",
-      "eventIds": [
-        "EV-479eb3f55eda442e",
-        "EV-1de38866b4b92754",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-8b9e4428074bde60",
-        "EV-b84035029a63e52e",
-        "EV-77662aa9bef9efbe",
-        "EV-b73c7096546b82e8",
-        "EV-34929bdd016dc8d6"
-      ],
-      "entityIds": [
-        "EN-2f265a693b2897f1",
-        "EN-e93e29634540a290",
-        "EN-7dd7122ad9bf240f",
-        "EN-95b0632f1b292fa7",
-        "EN-d41ebd9f02722fc8",
-        "EN-10556ee2cee94c72",
-        "EN-ad1b7e4bc3a5c870",
-        "EN-7d3194f79e645c42",
-        "EN-8f71c4871a160172",
-        "EN-f696d5fb767e377c",
-        "EN-4a639cb888a15d75",
-        "EN-8d4321d936320802"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-25ce41fab12d9ef2"
-      ],
-      "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-16"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -31,10 +31,7 @@
       "EV-e09bff5515b1896b"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-deployment_model-cloud",
-      "TX-target_user-educator"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [
       "EN-c70eca6b0f88f44d"
     ],
@@ -82,9 +79,7 @@
             "id": "educator",
             "name": "教师",
             "entityIds": [
-              "EN-c70eca6b0f88f44d",
-              "EN-ef11a801c5bd3673",
-              "EN-729324072d368379"
+              "EN-c70eca6b0f88f44d"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -124,9 +119,7 @@
             "id": "educator",
             "name": "教师",
             "entityIds": [
-              "EN-c70eca6b0f88f44d",
-              "EN-ef11a801c5bd3673",
-              "EN-729324072d368379"
+              "EN-c70eca6b0f88f44d"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -189,24 +182,7 @@
             "id": "cloud",
             "name": "云端",
             "entityIds": [
-              "EN-6f4e2e93ad6de7f1",
-              "EN-c70eca6b0f88f44d",
-              "EN-729324072d368379"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "cloud",
-            "name": "云端",
-            "entityIds": [
-              "EN-6f4e2e93ad6de7f1",
-              "EN-c70eca6b0f88f44d",
-              "EN-8d4321d936320802",
-              "EN-9fbf261b62c1d7c0",
-              "EN-729324072d368379"
+              "EN-6f4e2e93ad6de7f1"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -255,9 +231,7 @@
             "id": "model",
             "name": "模型",
             "entityIds": [
-              "EN-c70eca6b0f88f44d",
-              "EN-3a13916345b60fad",
-              "EN-b59c577ed73536c6"
+              "EN-c70eca6b0f88f44d"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -268,8 +242,7 @@
             "id": "data_analysis",
             "name": "数据分析",
             "entityIds": [
-              "EN-c70eca6b0f88f44d",
-              "EN-b59c577ed73536c6"
+              "EN-c70eca6b0f88f44d"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -568,41 +541,26 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
         "TX-industry-education",
         "TX-target_user-consumer",
-        "TX-industry-manufacturing",
-        "TX-industry-financial_services",
         "TX-use_case-customer_support",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-product_form-model",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-aerospace_defense",
         "TX-target_user-researcher",
-        "TX-technology-embodied_ai",
         "TX-use_case-data_analysis",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-industry-government_public_sector",
         "TX-industry-legal_services",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-deployment_model-cloud",
-        "TX-technology-retrieval_augmented_generation",
         "TX-target_user-educator",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -736,70 +694,7 @@
       "status": "verified"
     }
   ],
-  "taxonomyNodes": [
-    {
-      "id": "TX-deployment_model-cloud",
-      "name": "云端",
-      "nodeType": "deployment_model",
-      "typeLabel": "部署形态",
-      "valueId": "cloud",
-      "eventIds": [
-        "EV-4118202ed0f91895",
-        "EV-4fba2b2f1ac10a79",
-        "EV-b4b5d141dac164c2",
-        "EV-fec9e1b9ae2955ee",
-        "EV-c0d8138d8cab5135",
-        "EV-7fb25ff3d853c314",
-        "EV-20cdbe59ba2a1359",
-        "EV-309ea4fc27a66485"
-      ],
-      "entityIds": [
-        "EN-0b79cf2de0ee6b8e",
-        "EN-c7d7af20b6ab853d",
-        "EN-d9b1d7819af92e77",
-        "EN-bbdefa2950f49882",
-        "EN-96eebba49dbbf422",
-        "EN-2613d360c34cdc8c",
-        "EN-842fcb5e60989a03",
-        "EN-6f4e2e93ad6de7f1",
-        "EN-c70eca6b0f88f44d",
-        "EN-729324072d368379",
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-4f5d0b82a300f296",
-        "EN-2b96ed840c07482a",
-        "EN-e1517be14d06cdb7",
-        "EN-cf81a61e4eaef17c",
-        "EN-ab9e3beebd83960d"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-03",
-      "lastSeen": "2026-07-21"
-    },
-    {
-      "id": "TX-target_user-educator",
-      "name": "教师",
-      "nodeType": "target_user",
-      "typeLabel": "目标用户",
-      "valueId": "educator",
-      "eventIds": [
-        "EV-8eb0acb180b7ad9d",
-        "EV-84226288807f817b",
-        "EV-0347414d81e7f02e"
-      ],
-      "entityIds": [
-        "EN-53b69ef92c836777",
-        "EN-c70eca6b0f88f44d",
-        "EN-ef11a801c5bd3673",
-        "EN-729324072d368379"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-15"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

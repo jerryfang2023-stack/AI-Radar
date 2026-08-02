@@ -82,7 +82,7 @@ test("monthly comparisons use equal observed windows and new entities retain eve
 });
 
 test("page is a V4 application page with factual period controls", () => {
-  assert.match(page, /TRADAR-V1\.0\.1-china-market-filter/);
+  assert.match(page, /TRADAR-V1\.1\.0-tag-v4-1/);
   assert.match(page, /<h1>变化雷达<\/h1>/);
   assert.match(page, /data-period="day"/);
   assert.match(page, /data-period="week"/);

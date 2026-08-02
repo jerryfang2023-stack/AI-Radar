@@ -9,6 +9,7 @@ import {
   mergeEntityReviewDecisionSets
 } from "../../../agent-workflow/product/entity-history-v1.mjs";
 import { productEntityDisplayType } from "../../../agent-workflow/product/product-entity-normalizer.mjs";
+import { classificationEntityIds } from "../../../agent-workflow/product/classification-entity-scope.mjs";
 import { isCompletePublicEventTitle as isCompleteDataTitle } from "../../../agent-workflow/tools/event-public-title.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -238,21 +239,10 @@ export function buildEventRecords({
     const eventEntities = allEntityIds
       .map((id) => entityById.get(id) || reviewedEntities.find((item) => item.entity_id === id))
       .filter(Boolean);
-    const scopedEntityIds = (claimIds = []) => {
-      const scopedClaims = claimIds.map((id) => claimsById.get(id)).filter(Boolean);
-      const claimText = scopedClaims.map((claim) => `${claim.subject || ""} ${claim.source_quote || ""}`).join(" ");
-      const mentioned = eventEntities
-        .filter((entity) => exactMentionPositions(claimText, entity.canonical_name).length > 0)
-        .map((entity) => entity.entity_id);
-      if (mentioned.length) return unique(mentioned);
-      const subjects = unique(scopedClaims.map((claim) => compactText(claim.subject || "", 180)));
-      const exactSubjects = eventEntities
-        .filter((entity) => subjects.some((subject) => subject.toLocaleLowerCase() === entity.canonical_name.toLocaleLowerCase()))
-        .map((entity) => entity.entity_id);
-      if (exactSubjects.length) return unique(exactSubjects);
-      const organizations = eventEntities.filter((entity) => entity.entity_type === "organization_candidate");
-      return organizations.length === 1 ? [organizations[0].entity_id] : [];
-    };
+    const scopedEntityIds = (claimIds = []) => classificationEntityIds(
+      claimIds.map((id) => claimsById.get(id)).filter(Boolean),
+      eventEntities,
+    );
     const technicalTags = safeArray(event.claim_refs)
       .flatMap((claimId) => (tagsByClaim.get(claimId) || []).map((assertion) => ({
         dimensionId: "technology",

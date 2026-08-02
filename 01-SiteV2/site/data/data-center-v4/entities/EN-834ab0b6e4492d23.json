@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -26,9 +26,7 @@
       "EV-c2d784ef0a5376f8"
     ],
     "viewpointIds": [],
-    "classificationRefs": [
-      "TX-technology-image_generation"
-    ],
+    "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-14",
     "lastSeen": "2026-07-15",
@@ -63,10 +61,7 @@
             "id": "image_generation",
             "name": "图像生成",
             "entityIds": [
-              "EN-bbdefa2950f49882",
-              "EN-834ab0b6e4492d23",
-              "EN-01f1074bb52ff605",
-              "EN-dd782f5241cd7e50"
+              "EN-bbdefa2950f49882"
             ],
             "provenance": "claim_assertion",
             "assertionId": ""
@@ -100,45 +95,7 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [
-    {
-      "id": "TX-technology-image_generation",
-      "name": "图像生成",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "image_generation",
-      "eventIds": [
-        "EV-fd329b4350f404ef",
-        "EV-cf4da5583e9311d7",
-        "EV-82ae0ea3bfe336a1",
-        "EV-1a241bcb4fad886c",
-        "EV-a442b55d0bac5651",
-        "EV-dce5de62b2e4b752",
-        "EV-41baa43cf05d4288",
-        "EV-568d2aeab5234e48"
-      ],
-      "entityIds": [
-        "EN-b97e07c31e87f7d0",
-        "EN-bbdefa2950f49882",
-        "EN-a5ba7c1a2375f0d4",
-        "EN-9fbf261b62c1d7c0",
-        "EN-bae152c4560df38c",
-        "EN-52e3d014f9a275ea",
-        "EN-834ab0b6e4492d23",
-        "EN-01f1074bb52ff605",
-        "EN-dd782f5241cd7e50",
-        "EN-ea3bd73e2b506e00",
-        "EN-534e99d81da1c54d",
-        "EN-2b6e51bec93e86c1",
-        "EN-d56aa2f9908f566a",
-        "EN-4d09c69c19f5f67b"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-02"
-    }
-  ],
+  "taxonomyNodes": [],
   "fde": [],
   "hardware": []
 }

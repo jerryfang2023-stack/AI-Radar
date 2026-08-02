@@ -455,7 +455,7 @@ write(GUANLAN_VAULT_PATHS.contracts, `${yaml("当前契约")}# 当前契约
 | Tag | TAG-V4.1 |
 | Guanlan Research | REPORTS-V1.2.0-research-hub |
 | Opportunity Map | OMAP-V2.0.0-v4-evidence |
-| Trend Radar | TRADAR-V1.0.1-china-market-filter |`);
+| Trend Radar | TRADAR-V1.1.0-tag-v4-1 |`);
 
 const fdeAssetFiles = (fdeDetails.fde || []).map((item) => {
   const relativePath = `${GUANLAN_VAULT_PATHS.fdeArchive}/${filename(item.date || item.dataDate)}--${filename(item.customer || item.vendor || item.title)}--${filename(item.id)}.md`;

@@ -14,7 +14,8 @@ The V4 fact chain is:
 
 ```text
 SourceArtifact -> RawDocument -> Claim / Entity
-               -> CanonicalEvent -> FDERecord / HardwareRecord publication projections
+               -> CanonicalEvent -> ReviewedEventClassification
+                                -> FDERecord / HardwareRecord publication projections
                -> FDEObservation / HardwareFact -> HardwareSnapshot
                -> database / exports
 ```
@@ -29,7 +30,7 @@ Daily canonical bundles are written to:
 01-SiteV2/content/11-databases/data-center-v4/<YYYY-MM-DD>/
 ```
 
-Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, FDE observations, hardware records, hardware facts, hardware snapshots, monitoring-funnel rows, a QA queue, and a manifest. V3 Cards, legacy mappings, and `compatibility_cards` are not part of the V4 interface.
+Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, reviewed event classifications, FDE records, FDE observations, hardware records, hardware facts, hardware snapshots, monitoring-funnel rows, a QA queue, and a manifest. V3 Cards, legacy mappings, and `compatibility_cards` are not part of the V4 interface.
 
 Complete original bodies are stored only in the configured `PRIVATE-EVIDENCE-STORE-V2.0` repository. Public RawDocuments contain body-free metadata, body length, and an `evidence://<content_hash>` locator. The public source index, Guanlan AI Vault, data lake, and website must not contain complete source bodies.
 
@@ -61,6 +62,7 @@ The public interface is defined by `data-center-v4.schema.json`. Stable identifi
 - A TagAssertion must reference a Claim and its exact source span.
 - Technical Tags describe cross-cutting AI technology semantics only. Product form, use case, industry, deployment model, and target user are stored as evidence-backed FacetAssertions.
 - A FacetAssertion must reference the same accepted Claim and exact source span that supports the structured value.
+- A ReviewedEventClassification must identify one reviewed target entity, retain its decision lineage and exact research evidence, and must not fabricate a Claim or reuse founder, investor, or other secondary-party context as company evidence.
 - Source pages, search snippets, navigation, publisher names, query text, legacy scores, and legacy summaries cannot independently create facts or tags.
 
 ## Core exclusions

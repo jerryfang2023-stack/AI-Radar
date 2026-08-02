@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T00:51:29.602Z",
+    "generatedAt": "2026-08-02T01:48:35.176Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
     "eventCount": 1770,
@@ -1683,10 +1683,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-58b507456c52c9b3",
-            "EN-348445124d405d5a"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -1752,10 +1749,7 @@
             "dimensionName": "产品形态",
             "id": "security_software",
             "name": "安全软件",
-            "entityIds": [
-              "EN-58b507456c52c9b3",
-              "EN-348445124d405d5a"
-            ],
+            "entityIds": [],
             "provenance": "claim_assertion",
             "assertionId": ""
           }
@@ -1893,10 +1887,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-58b507456c52c9b3",
-            "EN-348445124d405d5a"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -1905,10 +1896,7 @@
           "dimensionName": "产品形态",
           "id": "security_software",
           "name": "安全软件",
-          "entityIds": [
-            "EN-58b507456c52c9b3",
-            "EN-348445124d405d5a"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
@@ -1967,10 +1955,7 @@
           "dimensionName": "产品形态",
           "id": "security_software",
           "name": "安全软件",
-          "entityIds": [
-            "EN-58b507456c52c9b3",
-            "EN-348445124d405d5a"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -1991,10 +1976,7 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体",
-          "entityIds": [
-            "EN-58b507456c52c9b3",
-            "EN-348445124d405d5a"
-          ],
+          "entityIds": [],
           "provenance": "claim_assertion",
           "assertionId": ""
         },
@@ -3093,21 +3075,23 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6ae3594aadfcd3d8"
+        "EV-6ae3594aadfcd3d8",
+        "EV-f1a605a25af30dc5"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
+        "TX-ai_market_application-ai_observability_governance",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-use_case-security_operations",
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-security_software",
         "TX-ai_market_application-model_agent_security"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-06-19",
+      "firstSeen": "2026-06-10",
       "lastSeen": "2026-06-19"
     },
     {
