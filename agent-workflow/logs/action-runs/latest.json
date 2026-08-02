@@ -1,58 +1,44 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-01T10:20:16.335Z",
-  "date": "2026-08-01",
-  "action": "GPT-5.6 Guanlan Skill governance audit",
+  "generated_at": "2026-08-02T05:00:20.335Z",
+  "date": "2026-08-02",
+  "action": "Operations telemetry and health",
   "action_status": "current",
   "record_level": "required",
-  "trigger": "user-request",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Closed the full Skill audit and both review axes, including independent afternoon gate execution and all current version surfaces.",
+  "summary": "Restored 2026-08-02 First-Line Viewpoints, corrected FDE/hardware and publication telemetry, and closed recurring incidents.",
   "contexts": [],
   "changed_files": [
-    "AGENTS.md",
-    ".agents/README.md",
-    "docs/agent-handoff.md",
-    "agent-workflow/skills/",
-    "agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs",
-    "agent-workflow/tools/publish-follow-builders-skill-local.mjs",
-    "agent-workflow/tools/tests/skill-ops-audit.test.mjs",
-    "agent-workflow/tools/tests/compatibility-retired.test.mjs",
-    "agent-workflow/tools/assert-version-consistency.mjs",
-    "01-SiteV2/site/data/",
-    "context/version-ledger.md"
-  ],
-  "outputs": [
-    "agent-workflow/reports/2026-08-01-guanlan-skill-gpt-5p6-audit.md",
-    "01-SiteV2/site/data/local-skill-store-data.js",
+    ".github/workflows/daily-persistent-assets-pr.yml",
+    ".github/workflows/daily-production-chain-dry-run.yml",
+    "agent-workflow/tools/finalize-ops-publication-for-pages.mjs",
+    "agent-workflow/tools/tests/collection-telemetry-v1.test.mjs",
+    "01-SiteV2/site/data/collection-telemetry-v1.json",
+    "01-SiteV2/site/data/pipeline-dashboard.json",
     "01-SiteV2/site/data/ops-console.json"
   ],
+  "outputs": [
+    "First-Line Viewpoints PR 534",
+    "Pages deployment 30733283145"
+  ],
   "checks": [
-    "official quick_validate 23/23",
-    "Skill Ops 25/25",
-    "afternoon-only execution fixture passed",
-    "Funding Insights 36/36",
-    "Data Center core 60/60",
-    "Operations 10/10",
-    "frontstage regression passed",
-    "version and retirement gates passed",
-    "231 local manifests valid"
+    "npm test",
+    "collection telemetry tests",
+    "2026-08-02 daily supervision"
   ],
   "issues": [
-    "afternoon Builder publisher was still coupled to morning gate",
-    "three current routing surfaces retained Skill Store v2.0.0",
-    "version gate omitted active instruction surfaces"
+    "missed morning First-Line RSS run",
+    "FDE and hardware telemetry remained unknown",
+    "deployment finalizer left nested publication status waiting"
   ],
   "risks": [],
   "lessons": [
-    "lane independence must be tested with the neighboring lane absent",
-    "version gates must cover active agent and handoff surfaces",
-    "text contract tests must be labeled separately from execution fixtures"
+    "projection telemetry must use the materialization step outcome",
+    "Pages finalization must update every nested publication view"
   ],
   "reusable_rules": [
-    "afternoon publisher invokes V4 assertion with require-morning false",
-    "current Skill Store version is asserted in AGENTS handoff and runtime README",
-    "behavioral fixtures must fail under the old combined gate"
+    "independent First-Line recovery must not rerun accepted V4 facts"
   ],
   "retired_flags": [],
   "notes": []
