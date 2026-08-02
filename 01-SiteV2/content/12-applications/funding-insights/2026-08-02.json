@@ -2,20 +2,1001 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.2",
     "date": "2026-08-02",
-    "generated_at": "2026-08-02T00:23:44.516Z",
+    "generated_at": "2026-08-02T06:11:34.986Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 0,
-      "auto_published": 0,
+      "funding_events": 2,
+      "auto_published": 1,
       "blocked": 0,
       "pending": 0,
-      "deduplicated": 0
-    }
+      "deduplicated": 1
+    },
+    "taxonomy_version": "TAG-V4.1"
   },
-  "cards": [],
-  "queue": []
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.2",
+      "funding_insight_id": "FI-12926d5682fee68e",
+      "triggered_by_event_id": "EV-914ca1cbc6359ce5",
+      "as_of_date": "2026-08-02",
+      "company": {
+        "entity_id": "EN-65e9e514ecf0d270",
+        "name": "Smallest.ai",
+        "full_name": "Smallest.ai",
+        "website": "https://smallest.ai/",
+        "summary": "Smallest.ai 是一家总部位于旧金山的基础AI研究实验室，为全球企业构建下一代实时语音AI基础设施。公司通过其Voice 4.0平台和Hydra异步架构，致力于让AI语音交互像人类对话一样自然、即时且可规模化。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Sudarshan Kamath",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1284a14893cb26a9",
+                "quote": "Sudarshan Kamath, founder and CEO of Smallest.ai",
+                "source_content_hash": "6b55dc3b9b331355",
+                "quote_hash": "d14f30c79e23aef0a5b7ff3d1faf053d6b6ddc899eb1deefccd2c5bb415caea0"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "近60人",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "The company has nearly 60 employees",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "4ed8af3941ec7939d91136dbf4a0034b987cbe6a042259acb62ee648d25a9b5c"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1284a14893cb26a9",
+            "quote": "Smallest.ai , a San Francisco-based foundational AI research lab building the next generation of real-time voice AI infrastructure for enterprises",
+            "source_content_hash": "6b55dc3b9b331355",
+            "quote_hash": "300073b0e6324f8e003db5af3bc0531eebbe617708f42f2266d4aab43c2f7ef0"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "1300万美元",
+        "total_raised": "超过2100万美元",
+        "announced_at": "2026-08-01",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Seligman Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1284a14893cb26a9",
+                "quote": "a $13 million Series A led by Seligman Ventures",
+                "source_content_hash": "6b55dc3b9b331355",
+                "quote_hash": "747ce6a44058bda0a67d5764ad79c100c426d9682f0df73df84993bbfd464f2b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sierra Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1284a14893cb26a9",
+                "quote": "with participation from Sierra Ventures and 3one4 Capital",
+                "source_content_hash": "6b55dc3b9b331355",
+                "quote_hash": "f7f475c0198484fc0d7ece56d46694f108005522689038285c178d41d041c7e7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "3one4 Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1284a14893cb26a9",
+                "quote": "with participation from Sierra Ventures and 3one4 Capital",
+                "source_content_hash": "6b55dc3b9b331355",
+                "quote_hash": "f7f475c0198484fc0d7ece56d46694f108005522689038285c178d41d041c7e7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Better Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6b1944359351ee14",
+                "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
+                "source_content_hash": "1c3c95f48ad6c543",
+                "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Upsparks Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6b1944359351ee14",
+                "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
+                "source_content_hash": "1c3c95f48ad6c543",
+                "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Schema Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6b1944359351ee14",
+                "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
+                "source_content_hash": "1c3c95f48ad6c543",
+                "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tiny VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6b1944359351ee14",
+                "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
+                "source_content_hash": "1c3c95f48ad6c543",
+                "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DeVC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6b1944359351ee14",
+                "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
+                "source_content_hash": "1c3c95f48ad6c543",
+                "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mission Street Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6b1944359351ee14",
+                "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
+                "source_content_hash": "1c3c95f48ad6c543",
+                "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Sierra Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-30eaf94a55c202d8",
+                "quote": "Smallest.AI has raised $8M in a Seed funding led by Sierra Ventures",
+                "source_content_hash": "d024bfd1efaf6d3e",
+                "quote_hash": "83cabeb02009179374488269f18ffacb966dba1f807c04a4792775b166ce5e7b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "3one4 Capital",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-30eaf94a55c202d8",
+                "quote": "with 3one4 Capital and Better Capital participating",
+                "source_content_hash": "d024bfd1efaf6d3e",
+                "quote_hash": "5d5aad7fcded66830bdae4cc4f0a666f9603e5e98df892d7aa2435e00d256abe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Better Capital",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-30eaf94a55c202d8",
+                "quote": "with 3one4 Capital and Better Capital participating",
+                "source_content_hash": "d024bfd1efaf6d3e",
+                "quote_hash": "5d5aad7fcded66830bdae4cc4f0a666f9603e5e98df892d7aa2435e00d256abe"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1284a14893cb26a9",
+            "quote": "Smallest.ai raised a $13 million Series A, taking total funding past $21 million",
+            "source_content_hash": "6b55dc3b9b331355",
+            "quote_hash": "8fb363cb33dd1a0854e1d2c15e34cebf4fb292775ea42034550b382c6e2538b9"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-914ca1cbc6359ce5",
+            "round_original": "A轮",
+            "amount": "1300万美元",
+            "announced_at": "2026-08-01",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1284a14893cb26a9",
+                "quote": "Smallest.ai raised a $13 million Series A, taking total funding past $21 million",
+                "source_content_hash": "6b55dc3b9b331355",
+                "quote_hash": "8fb363cb33dd1a0854e1d2c15e34cebf4fb292775ea42034550b382c6e2538b9"
+              }
+            ]
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Hydra",
+          "description": "Smallest.ai的语音到语音模型，基于异步智能设计，能够并行执行多项任务，实现实时对话流、对话中工具调用、自然打断和显著更低的延迟。",
+          "target_customers": "管理大规模语音运营的企业，如金融服务、医疗、联络中心和业务流程外包领域的组织。",
+          "features": [
+            "异步并行处理",
+            "实时对话流",
+            "对话中工具调用",
+            "自然打断",
+            "低延迟"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "At the center of Voice 4.0 is Hydra, Smallest.ai’s speech-to-speech model designed around asynchronous intelligence. Rather than waiting for one process to finish before starting another, Hydra performs multiple tasks in parallel, enabling real-time conversational flow, mid-conversation tool use, natural interruptions, and significantly lower latency.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "901401bafd010a8a5b9d85558367f9f15fa5254df1f0b6d3c6214bb608de4fad"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Pulse STT Pro",
+          "description": "企业级语音转文本模型，支持38种语言，结合低延迟转录与说话人分离、情绪检测、语码转换、降噪以及内置的PII和PCI数据脱敏功能。",
+          "target_customers": "需要大规模部署语音AI的企业客户。",
+          "features": [
+            "支持38种语言",
+            "说话人分离",
+            "情绪检测",
+            "语码转换",
+            "降噪",
+            "PII和PCI数据脱敏"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Built for enterprise-scale deployments, Pulse STT Pro supports 38 languages and combines low-latency transcription with capabilities such as speaker diarization, emotion detection, code-switching, noise reduction, and built-in PII and PCI redaction.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "1294c884c4907f712c79daf0b8780c913a51a00d3f276c7401d0c77febe02de9"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lightning V3.1",
+          "description": "文本转语音模型，在Artificial Analysis基准测试中，在速度、质量和成本效益方面排名靠前。",
+          "target_customers": "企业客户",
+          "features": [
+            "高速文本转语音",
+            "高质量语音生成",
+            "成本效益高"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Smallest.ai’s broader platform includes Pulse STT Pro and Lightning V3.1, which rank among the top voice AI models on Artificial Analysis for speed, quality, and cost efficiency.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "84b2b68bfc4a2752819d65e8b596a5dd58308ae8a84636d1c15d126c21718956"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "RingCentral",
+          "industry": "电信",
+          "use_case": "自动化企业语音工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Smallest.ai currently works with organizations managing large-scale voice operations, including RingCentral, Truecaller, Readymode, Piramal, Kogta, Pocket, and others.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "b6d6e31d0ca5b0758ec0a6d2c39be6bb5d196ffbba94e6d2d14305930ea6b9ec"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Truecaller",
+          "industry": "电信",
+          "use_case": "自动化企业语音工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Smallest.ai currently works with organizations managing large-scale voice operations, including RingCentral, Truecaller, Readymode, Piramal, Kogta, Pocket, and others.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "b6d6e31d0ca5b0758ec0a6d2c39be6bb5d196ffbba94e6d2d14305930ea6b9ec"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Readymode",
+          "industry": "电信",
+          "use_case": "自动化企业语音工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Smallest.ai currently works with organizations managing large-scale voice operations, including RingCentral, Truecaller, Readymode, Piramal, Kogta, Pocket, and others.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "b6d6e31d0ca5b0758ec0a6d2c39be6bb5d196ffbba94e6d2d14305930ea6b9ec"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Piramal",
+          "industry": "金融服务",
+          "use_case": "自动化企业语音工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Smallest.ai currently works with organizations managing large-scale voice operations, including RingCentral, Truecaller, Readymode, Piramal, Kogta, Pocket, and others.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "b6d6e31d0ca5b0758ec0a6d2c39be6bb5d196ffbba94e6d2d14305930ea6b9ec"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kogta",
+          "industry": "金融服务",
+          "use_case": "自动化企业语音工作流",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Smallest.ai currently works with organizations managing large-scale voice operations, including RingCentral, Truecaller, Readymode, Piramal, Kogta, Pocket, and others.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "b6d6e31d0ca5b0758ec0a6d2c39be6bb5d196ffbba94e6d2d14305930ea6b9ec"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "ElevenLabs",
+          "product": "agentic voice AI platform",
+          "scenario": "语音AI平台",
+          "target_customer": "企业",
+          "funding_summary": "2026年2月融资5亿美元",
+          "core_difference": "ElevenLabs 融资规模远超 Smallest.ai，但 Smallest.ai 强调其通过异步架构（Hydra）实现并行处理，提供垂直整合堆栈，而非常见的链式拼接方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6f77c86a3bd2f25",
+              "quote": "But by far and away the best-funded voice AI startup is ElevenLabs Inc., which raised $500 million in February to build out its agentic voice AI platform.",
+              "source_content_hash": "761c316212c24c4e",
+              "quote_hash": "535127dc9212e0a6823e7d3a7a0f690652446e8e321deb77cf05b0138848e78e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Fish Audio",
+          "product": "open-source platform for training and fine-tuning speech models",
+          "scenario": "语音模型训练与微调平台",
+          "target_customer": "开发者",
+          "funding_summary": "融资5200万美元",
+          "core_difference": "Fish Audio 提供开源平台供开发者训练和微调语音模型，而 Smallest.ai 提供面向企业的垂直整合实时语音AI基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d6f77c86a3bd2f25",
+              "quote": "Earlier this week, a rival called Fish Audio raked in $52 million from investors to expand adoption of its open-source platform that developers can use to train and fine-tune speech models.",
+              "source_content_hash": "761c316212c24c4e",
+              "quote_hash": "c56bf0d1c3c567cca33d9b13e4db1deaf2447fe57412c59a30b53fff48fb9f38"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Five9",
+          "product": "Voice AI Agents",
+          "scenario": "联络中心语音AI",
+          "target_customer": "联络中心",
+          "funding_summary": "",
+          "core_difference": "Five9 的 Voice AI Agents 将低延迟流式传输、安全工具调用和多智能体编排整合在一个平台中，而 Smallest.ai 的核心差异在于其异步并行处理架构（Voice 4.0/Hydra）。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6b1944359351ee14",
+              "quote": "Five9's Voice AI Agents, launched in June, combine low-latency streaming, secure tool calling and multi-agent orchestration in one platform.",
+              "source_content_hash": "1c3c95f48ad6c543",
+              "quote_hash": "8ad7bb96a470c6a27f1d7a5151b9984cbaa6c45cf81f8dbe2a4ae572fcf59bfa"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "客户支持成本降低",
+          "value": "高达80%",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Customers use Smallest.ai to automate enterprise voice workflows, reducing support costs by up to 80%",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "b71ac6cf60029d670e0cdef0783596bd059b57beba9be1807d8bf8aa394610cc"
+            }
+          ]
+        },
+        {
+          "label": "客服人员生产力提升",
+          "value": "高达10倍",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "while improving agent productivity by as much as 10x",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "a40dec5a6625c0f64422e908c3d19fe669b13bc18815f7ff2a916ef18349b360"
+            }
+          ]
+        },
+        {
+          "label": "全球语音AI市场规模（2024年）",
+          "value": "24亿美元",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Industry forecasts expect the global Voice AI market to grow from $2.4 billion in 2024 to $47.5 billion by 2034",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "2076af867c812711bfd258cb343be1ca87862de026a01a106fc192fa5fe417ce"
+            }
+          ]
+        },
+        {
+          "label": "全球语音AI市场规模预测（2034年）",
+          "value": "475亿美元",
+          "observed_at": "2034",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Industry forecasts expect the global Voice AI market to grow from $2.4 billion in 2024 to $47.5 billion by 2034",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "2076af867c812711bfd258cb343be1ca87862de026a01a106fc192fa5fe417ce"
+            }
+          ]
+        },
+        {
+          "label": "当前AI驱动的全球语音交互占比",
+          "value": "不足1%",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "less than 1% of today’s global voice interactions are powered by AI",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "f690e964f5108fbe4ea5de8087cec29126caad45499f9b26a2883d22b8cdc6c7"
+            }
+          ]
+        },
+        {
+          "label": "Pulse STT Pro支持语言数",
+          "value": "38种",
+          "observed_at": "2026-08-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "Pulse STT Pro supports 38 languages",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "d03489298a5c08f30e514c1ea94f1c75e7280be3ce3d8e53b71e0b31d7b0394c"
+            }
+          ]
+        },
+        {
+          "label": "Lightning V3.1 自然度胜率 (对比OpenAI gpt-4o-mini-tts)",
+          "value": "约76%",
+          "observed_at": "2026-07-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6b1944359351ee14",
+              "quote": "a roughly 76% naturalness win rate against OpenAI's gpt-4o-mini-tts under its stated evaluation methodology",
+              "source_content_hash": "1c3c95f48ad6c543",
+              "quote_hash": "0340b5ac5882c3bd3471ce3808f4d1ae626cede1f33335b490f68f4083367043"
+            }
+          ]
+        },
+        {
+          "label": "Lightning V3.1 平均意见分",
+          "value": "3.89",
+          "observed_at": "2026-07-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6b1944359351ee14",
+              "quote": "The company reported a mean-opinion score of 3.89",
+              "source_content_hash": "1c3c95f48ad6c543",
+              "quote_hash": "4a7b877cc8c04a305a2ed92c1a3cf12f910646a717e21dfc9865cce99c7284b8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Sudarshan Kamath",
+          "quote": "The industry has focused on making models larger when the real challenge is architectural. Humans don’t wait for someone to finish speaking before they begin thinking. We listen, think, and respond simultaneously. Voice AI needs to work the same way. That’s why we built Smallest.ai around a real-time architecture that processes speech as it arrives, enabling faster, more natural conversations without sacrificing intelligence. By rethinking the stack instead of simply scaling models, we’re reducing latency to the point where voice interactions feel genuinely human.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1284a14893cb26a9",
+              "quote": "The industry has focused on making models larger when the real challenge is architectural. Humans don’t wait for someone to finish speaking before they begin thinking. We listen, think, and respond simultaneously. Voice AI needs to work the same way. That’s why we built Smallest.ai around a real-time architecture that processes speech as it arrives, enabling faster, more natural conversations without sacrificing intelligence. By rethinking the stack instead of simply scaling models, we’re reducing latency to the point where voice interactions feel genuinely human.",
+              "source_content_hash": "6b55dc3b9b331355",
+              "quote_hash": "5880a61048ccfa78c3aee06e4e71c4cda234840d860ec3e6fe6d28bc4703e20d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“架构重构”而非“模型规模扩展”。在语音AI市场从24亿美元向475亿美元扩张的预期下，当前不足1%的AI语音交互渗透率意味着巨大的市场空白。Smallest.ai 通过 Hydra 异步架构实现并行处理，解决了传统链式方案的高延迟和生硬体验，其已验证信号包括：已获得 RingCentral、Truecaller 等大型企业客户，宣称可降低80%支持成本并提升10倍客服效率，且其模型在 Artificial Analysis 基准测试中排名领先。然而，其融资规模（总计2100万美元）远低于 ElevenLabs（5亿美元）等竞争对手，在巨头林立的语音AI赛道中，资源差距可能限制其市场扩张速度。",
+        "validated_signals": [
+          "已签约 RingCentral、Truecaller、Readymode、Piramal、Kogta 等大型企业客户",
+          "宣称可降低客户支持成本高达80%，提升客服人员生产力高达10倍",
+          "Pulse STT Pro 和 Lightning V3.1 在 Artificial Analysis 基准测试中排名领先",
+          "Lightning V3.1 在自然度上对比 OpenAI 的 gpt-4o-mini-tts 取得约76%的胜率"
+        ],
+        "risks": [
+          "融资规模（总计2100万美元）远低于 ElevenLabs（5亿美元）等主要竞争对手，可能面临资源劣势。",
+          "语音AI市场竞争激烈，技术迭代快，存在被大厂或新进入者超越的风险。",
+          "企业级部署对可靠性、合规性和治理要求极高，产品成熟度和规模化能力有待进一步验证。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业级实时语音AI基础设施",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是“架构重构”而非“模型规模扩展”。在语音AI市场从24亿美元向475亿美元扩张的预期下，当前不足1%的AI语音交互渗透率意味着巨大的市场空白。Smallest.ai 通过 Hydra 异步架构实现并行处理，解决了传统链式方案的高延迟和生硬体验，其已验证信号包括：已获得 RingCentral、Truecaller 等大型企业客户，宣称可降低80%支持成本并提升10倍客服效率，且其模型在 Artificial Analysis 基准测试中排名领先。然而，其融资规模（总计2100万美元）远低于 ElevenLabs（5亿美元）等竞争对手，在巨头林立的语音AI赛道中，资源差距可能限制其市场扩张速度。",
+          "evidence_signals": [
+            "已签约 RingCentral、Truecaller、Readymode、Piramal、Kogta 等大型企业客户",
+            "宣称可降低客户支持成本高达80%，提升客服人员生产力高达10倍",
+            "Pulse STT Pro 和 Lightning V3.1 在 Artificial Analysis 基准测试中排名领先",
+            "Lightning V3.1 在自然度上对比 OpenAI 的 gpt-4o-mini-tts 取得约76%的胜率"
+          ],
+          "risks": [
+            "融资规模（总计2100万美元）远低于 ElevenLabs（5亿美元）等主要竞争对手，可能面临资源劣势。",
+            "语音AI市场竞争激烈，技术迭代快，存在被大厂或新进入者超越的风险。",
+            "企业级部署对可靠性、合规性和治理要求极高，产品成熟度和规模化能力有待进一步验证。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hydra",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Pulse STT Pro",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Lightning V3.1",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sudarshan Kamath",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Seligman Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sierra Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "3one4 Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Better Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Upsparks Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Schema Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tiny VC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DeVC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mission Street Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Sierra Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "3one4 Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Better Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "RingCentral",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Truecaller",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Readymode",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Piramal",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Kogta",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "ElevenLabs",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Fish Audio",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Five9",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-914ca1cbc6359ce5",
+          "date": "2026-08-01",
+          "title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+          "amount": "$13 million",
+          "source_refs": [
+            "SA-76b1451b563345ba"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-1284a14893cb26a9",
+          "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
+          "title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-08-02T00:20:17.956Z",
+          "content_hash": "6b55dc3b9b331355",
+          "source_artifact_id": "SA-76b1451b563345ba",
+          "raw_id": "RAW-d86228d40c7114a7"
+        },
+        {
+          "source_id": "FISRC-6b1944359351ee14",
+          "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
+          "title": "Smallest.ai Raises $13M For Real-Time Enterprise Voice AI",
+          "publisher": "cmswire.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-08-02T06:10:19.538Z",
+          "content_hash": "1c3c95f48ad6c543",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d6f77c86a3bd2f25",
+          "source_url": "https://siliconangle.com/2026/07/30/smallest-ai-raises-13m-accelerate-development-asynchronous-voice-ai-architecture/",
+          "title": "Smallest.ai raises $13M to accelerate the development of its asynchronous voice AI architecture - SiliconANGLE",
+          "publisher": "siliconangle.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-08-02T06:10:20.627Z",
+          "content_hash": "761c316212c24c4e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-30eaf94a55c202d8",
+          "source_url": "https://www.youtube.com/watch?v=rDCdmFfxvVk&vl=en-US",
+          "title": "Smallest.AI Announces $8 million Fund Raise in Seed Funding ...",
+          "publisher": "youtube.com",
+          "source_class": "independent",
+          "capture_method": "tavily_captured_content",
+          "captured_at": "2026-08-02T06:10:31.704Z",
+          "content_hash": "d024bfd1efaf6d3e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.5",
+        "generated_at": "2026-08-02T06:11:34.865Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-914ca1cbc6359ce5",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-08-02T06:11:34.865Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Hydra",
+            "Lightning V3.1",
+            "Pulse STT Pro"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Sudarshan Kamath"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-914ca1cbc6359ce5"
+      ],
+      "aggregation": {
+        "key": "EN-65e9e514ecf0d270|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-914ca1cbc6359ce5",
+      "company_name": "Smallest.ai",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Smallest.ai Expands Enterprise Voice AI With New Funding - The Catalyst\" funding company investors product",
+        "\"Smallest.ai\" \"$13 million\" funding investors round",
+        "\"Smallest.ai\" product customers case study",
+        "\"Smallest.ai\" \"Smallest.ai Expands Enterprise Voice AI With New Funding - The Catalyst\" competitors product use case",
+        "\"Smallest.ai\" \"$13 million\" investor quote why invested",
+        "\"Smallest.ai\" \"$13 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Smallest.ai Expands Enterprise Voice AI With New Funding - The Catalyst\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Smallest.ai Expands Enterprise Voice AI With New Funding - The Catalyst\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Smallest.ai\" \"$13 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Smallest.ai\" \"$13 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Smallest.ai\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Smallest.ai\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Smallest.ai\" \"Smallest.ai Expands Enterprise Voice AI With New Funding - The Catalyst\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Smallest.ai\" \"Smallest.ai Expands Enterprise Voice AI With New Funding - The Catalyst\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Smallest.ai\" \"$13 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Smallest.ai\" \"$13 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Smallest.ai\" \"$13 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Smallest.ai\" \"$13 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-08-02T06:11:34.985Z"
+    },
+    {
+      "event_id": "EV-9ed6a759555d7e77",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-08-02T06:03:01.468Z"
+    }
+  ]
 }

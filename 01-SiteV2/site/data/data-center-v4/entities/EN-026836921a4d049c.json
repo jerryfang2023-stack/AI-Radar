@@ -5,15 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-026836921a4d049c",
-    "name": "SK Hynix",
+    "name": "SK hynix",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -22,19 +22,22 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-43b7f45e9bd7ec9b"
+      "EV-43b7f45e9bd7ec9b",
+      "EV-a644b20d68e0b31a"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-11",
-    "lastSeen": "2026-07-11",
+    "lastSeen": "2026-08-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-43b7f45e9bd7ec9b"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-a644b20d68e0b31a"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -42,6 +45,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a644b20d68e0b31a",
+        "dataDate": "2026-08-02",
+        "date": "2026-08-02",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SK海力士加速AI内存扩张，清州封装厂获批",
+        "displayTags": [],
+        "entityIds": [
+          "EN-026836921a4d049c"
+        ]
+      },
       {
         "id": "EV-43b7f45e9bd7ec9b",
         "dataDate": "2026-07-11",

@@ -5,13 +5,57 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "fde": [
+    {
+      "id": "FDE-5ea7f3d69a03d417",
+      "eventId": "EV-a86b04e679044c45",
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "title": "HIVE 与 Bell 和 Cohere 达成 2.2 亿美元 AI 基础设施交易",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "HIVE",
+      "industry": "未披露",
+      "useCase": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "HIVE disclosed that the agreement is valued at approximately $220 million and involves the deployment of 2,304 NVIDIA Grace Blackwell GPUs. Once the project is in service, HIVE expects the deal to generate about $70 million in contracted annual recurring revenue, lifting its contracted HPC revenue target to more than $100 million."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$220 million",
+        "$220M",
+        "$220 million",
+        "$70 million",
+        "$100 million"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "entityIds": [
+        "EN-7640da40298286a6",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "FDE-d1333c4e772841f2",
       "eventId": "EV-c3b96b789b5bcafd",
@@ -5051,6 +5095,54 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-2031d5cfafe367fa",
+      "implementationKey": "2031d5cfafe367fa",
+      "eventId": "EV-a86b04e679044c45",
+      "eventIds": [
+        "EV-a86b04e679044c45"
+      ],
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "title": "HIVE × HIVE：HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HIVE",
+      "vendor": "HIVE",
+      "industry": "未披露",
+      "useCase": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-1094a1c2cc46d6a8",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-02",
+          "dataDate": "2026-08-02",
+          "eventId": "EV-a86b04e679044c45",
+          "eventTitle": "HIVE 与 Bell 和 Cohere 达成 2.2 亿美元 AI 基础设施交易",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "entityIds": [
+        "EN-7640da40298286a6",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
       "id": "FDED-1d94a963bdb80b04",
       "implementationKey": "1d94a963bdb80b04",
       "eventId": "EV-c3b96b789b5bcafd",
@@ -5599,12 +5691,12 @@
       ],
       "raw_documents": 99,
       "original_sources": 91,
-      "valid_claims": 13,
-      "observations": 0,
-      "canonical_events": 4,
+      "valid_claims": 23,
+      "observations": 1,
+      "canonical_events": 9,
       "blocker_counts": {
         "source_outside_daily_window": 55,
-        "no_source_bounded_event": 23,
+        "no_source_bounded_event": 18,
         "non_event_or_index_title": 8,
         "source_published_after_data_date": 1,
         "opinion_without_source_bounded_event": 1,
@@ -5613,9 +5705,9 @@
       },
       "rates": {
         "original_source_rate": 0.9191919191919192,
-        "valid_claim_rate": 0.13131313131313133,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.3076923076923077
+        "valid_claim_rate": 0.23232323232323232,
+        "observation_rate": 0.043478260869565216,
+        "event_conversion_rate": 0.391304347826087
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/monitoring-funnel.json"
     }

@@ -4,9 +4,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { deepSeekJsonCompletion, deepSeekModels, sourceTextHash } from "./deepseek-translation-client.mjs";
 import {
+  FUNDING_INDUSTRY_IDS,
   FUNDING_INSIGHT_GATE_VERSION,
   FUNDING_INSIGHT_PROMPT_VERSION,
   FUNDING_INSIGHT_VERSION,
+  FUNDING_TARGET_USER_IDS,
+  FUNDING_USE_CASE_IDS,
   clean,
   ensureCanonicalFundingEvidence,
   entityResolver,
@@ -366,7 +369,7 @@ function directionManifest() {
   return (readJson(file, {})?.directionCards || []).map((card) => ({ id: card.id, title: card.title }));
 }
 
-function promptFor(event, company, sources, directions) {
+export function promptFor(event, company, sources, directions) {
   const sourceText = sources.map((source) => [
     `SOURCE_ID: ${source.source_id}`,
     `SOURCE_URL: ${source.source_url}`,
@@ -388,6 +391,9 @@ function promptFor(event, company, sources, directions) {
     "analysis.taxonomy_version固定为TAG-V4.1。analysis.market_category_id采用CB Insights AI 100 2026四类框架：infrastructure_compute、enterprise_applications、industry_applications、physical_ai。只有当前产品是实际作用于物理世界的机器人、车辆或自主机器时才用physical_ai；世界模型或未来机器人计划不算。基础模型、数据、开发部署、芯片算力、可观测评估和模型安全属于infrastructure_compute。跨行业企业职能属于enterprise_applications；围绕单一行业专业数据、监管或工作流的产品属于industry_applications。",
     "analysis.market_subcategory_id必须与市场母类一致：基础设施与算力使用data、development_deployment、hardware_computing或observability_evaluation；企业级应用使用customer_support、cyber_physical_security、hr、marketing、productivity_enterprise_workflows、sales或software_development_coding；行业应用使用financial_services、healthcare_life_sciences、industrials、legal或consumer_retail；Physical AI留空。基础设施与算力还必须填写analysis.market_application_id，允许值为synthetic_data、data_preparation_curation、vector_databases、models、ai_development_orchestration、model_deployment、monetization、chips、servers、computing_infrastructure、ai_observability_governance、model_agent_security、fine_tuning、llm_benchmarking_routing；其他母类留空。",
     "analysis.use_case_ids、industry_ids和target_user_ids只在来源支持时填写。industry_ids不得把technology或software当成默认行业；target_user_ids至少一项。",
+    `analysis.use_case_ids only accepts these exact IDs: ${JSON.stringify([...FUNDING_USE_CASE_IDS])}.`,
+    `analysis.industry_ids only accepts these exact IDs: ${JSON.stringify([...FUNDING_INDUSTRY_IDS])}. Use [] when no industry is source-supported.`,
+    `analysis.target_user_ids only accepts these exact IDs and must contain at least one item: ${JSON.stringify([...FUNDING_TARGET_USER_IDS])}.`,
     "related_direction_id只能从DIRECTION_OPTIONS选择；没有合适方向时返回空字符串。",
     "返回一个JSON对象，不要代码围栏。Schema:",
     "Whole-card evidence rule: cite at least two distinct SOURCE_ID values. Prefer the canonical funding source plus a captured company, investor, or credible independent source. Never add an irrelevant citation merely to reach two sources.",

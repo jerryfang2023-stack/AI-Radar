@@ -5,20 +5,18 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-5388bc10736a0eff",
     "name": "ByteDance",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [
-      "字节跳动"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -27,6 +25,7 @@
       "EV-97fdf068afbbe555",
       "EV-47a84a0f1a85c29c",
       "EV-6c361125c3f50bb6",
+      "EV-c157bdbedac35fa3",
       "EV-d1d36268ff74be0e",
       "EV-8734f7217e78c861",
       "EV-ee363e679d12329c",
@@ -46,14 +45,10 @@
     "classificationRefs": [
       "TX-technology-agentic_execution"
     ],
-    "relatedEntityIds": [
-      "EN-4f96127fdacbb405"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-07-30",
-    "relationIds": [
-      "REL2-fc89e0f24571bef8"
-    ],
+    "lastSeen": "2026-08-02",
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
@@ -63,6 +58,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-c157bdbedac35fa3",
         "EV-d1d36268ff74be0e",
         "EV-8734f7217e78c861",
         "EV-ee363e679d12329c",
@@ -84,6 +80,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c157bdbedac35fa3",
+        "dataDate": "2026-08-02",
+        "date": "2026-08-01",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "字节跳动Seedance 2.5生成带内置音频的30秒视频片段",
+        "displayTags": [],
+        "entityIds": [
+          "EN-5388bc10736a0eff",
+          "EN-a1bd86e3549f6243"
+        ]
+      },
       {
         "id": "EV-666f2f4b5756c679",
         "dataDate": "2026-07-30",
@@ -541,51 +553,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-4f96127fdacbb405",
-      "name": "Seedance 2.0 Mini",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-887d47bb477e2142"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-5388bc10736a0eff"
-      ],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-06-16"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-fc89e0f24571bef8",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-5388bc10736a0eff",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-4f96127fdacbb405",
-      "object_type": "entity",
-      "event_id": "EV-887d47bb477e2142",
-      "claim_refs": [
-        "CL-4b2d508b68827b34",
-        "CL-28b3c29eaf8f9f1c",
-        "CL-687c5027592b39c5"
-      ],
-      "source_refs": [
-        "SA-56c9538d50ed21ed"
-      ],
-      "data_date": "2026-06-16",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-agentic_execution",
@@ -594,6 +563,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-9ed6a759555d7e77",
         "EV-53253b5e23970958",
         "EV-39b075c62ba4e927",
         "EV-57cf8e14d6994c1b",
@@ -695,6 +665,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-fd825cd7f7997fc8",
         "EV-57944eebac69d510",
         "EV-2d9fde7bc0cd7a22",
         "EV-910ebb509f1d437b",
@@ -1007,10 +978,10 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-2be663431f007250",
         "EN-65819e198c32566a",
         "EN-f9075cc99990820a",
         "EN-556c337c4f0b031e",
-        "EN-2be663431f007250",
         "EN-382635c9325bf327",
         "EN-7f67f2f8692510cf",
         "EN-12765295db4f1e79",
@@ -1097,6 +1068,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-6b182ca786385b1e",
         "EN-76a9a8a6e2f1a47b",
         "EN-ebfeb2f51b9eaf40",
         "EN-047364b9be67f665",

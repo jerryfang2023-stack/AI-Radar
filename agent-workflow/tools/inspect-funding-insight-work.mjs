@@ -33,6 +33,9 @@ export function inspectFundingInsightWork(projectRoot = root, requestedDate = ""
           if (eventId) acceptedEventIds.add(eventId);
         }
       }
+      for (const item of application.queue || []) {
+        if (item.status === "deduplicated" && item.event_id) acceptedEventIds.add(item.event_id);
+      }
     }
   }
   const eligibleEvents = [...new Map(bundle.events

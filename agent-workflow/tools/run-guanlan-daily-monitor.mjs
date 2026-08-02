@@ -2944,10 +2944,10 @@ export async function fetchSourceSnapshot(item) {
       };
     }
     const fullText = extracted.full_text || "";
-    const sourcePublishedAt = preferredPublishedAt(metadataPublishedAt, publishedAtFromCapturedText(fullText));
     const extractedText = extracted.text || (fullText ? fullText.slice(0, 18000).trim() : "");
     const metaFallback = extracted.fallback_meta_text || "";
     const text = extractedText || metaFallback || summary || compactSnippet(bodyText, 4000);
+    const sourcePublishedAt = preferredPublishedAt(metadataPublishedAt, publishedAtFromCapturedText(fullText || text));
     const lowReadableBody = !extractedText && response.ok && (metaFallback || text);
     const status = response.ok
       ? (extractedText ? `fetched-readable-text-${extracted.method}` : (lowReadableBody ? "summary-only-low-readable-body" : "summary-only-no-readable-body"))
@@ -2988,6 +2988,7 @@ export async function fetchSourceSnapshot(item) {
       extraction_method: "fetch_failed_summary_fallback",
       readability_score: 0,
       extractor_diagnostics: { method: "fetch_failed_summary_fallback", error_type: blocked ? "blocked" : timeout ? "timeout" : "fetch_failed" },
+      published_at: publishedAtFromCapturedText(text),
       error: formattedError,
     };
   }

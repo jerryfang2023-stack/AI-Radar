@@ -524,6 +524,8 @@ function documentType(raw) {
 }
 
 function findEventRule(title, lead = "") {
+  const eventText = `${title}\n${lead}`;
+  const eventEvidenceText = `${title}\n${lead.replace(/\s+\/\s+query=[\s\S]*$/iu, "")}`;
   if (INFORMATIONAL_TITLE.test(title)
       && !/\b(?:rais(?:e|es|ed|ing)|funding|financing|seed|series)\b.{0,100}[$€£¥]\s?\d|[$€£¥]\s?\d.{0,100}\b(?:funding|financing|seed|series|valuation)\b/iu.test(`${title}\n${lead}`)) return null;
   if (TRUNCATED_OR_NON_EVENT_TITLE.test(title)) return null;
@@ -545,10 +547,16 @@ function findEventRule(title, lead = "") {
     return { eventType: "hardware_deployment", pattern: /\b(?:Building|DGX|deploy|Vera Rubin)\b/iu };
   }
   if (
-    /\b(?:secures?|secured|signs?|signed)\b.{0,100}\b(?:AI|GPU|accelerator|cluster|infrastructure)\b.{0,80}\b(?:deal|contract|agreement)\b/iu.test(title)
-    && !/\b(?:funding|financing|investment|series|seed|round)\b/iu.test(title)
+    /\b(?:secures?|secured|signs?|signed)\b.{0,220}\b(?:AI|GPU|accelerator|cluster|infrastructure)\b.{0,120}\b(?:deal|contract|agreement)\b/iu.test(eventEvidenceText)
+    && !/\b(?:funding|financing|investment|series|seed|round)\b/iu.test(eventEvidenceText)
   ) {
     return { eventType: "procurement_contract", pattern: /\b(?:secures?|secured|signs?|signed)\b/iu };
+  }
+  if (
+    /\b(?:lands?|awarded?|designated)\b.{0,140}\b(?:AI|agentic|technology)\b.{0,100}\b(?:mandate|project|contract)\b/iu.test(eventEvidenceText)
+    || /\bdesignated\b.{0,160}\bprincipal agency\b.{0,220}\b(?:project|initiative|budget|state)\b/iu.test(eventEvidenceText)
+  ) {
+    return { eventType: "procurement_contract", pattern: /\b(?:lands?|awarded?|designated)\b/iu };
   }
   for (const [eventType, pattern] of HIGH_SPECIFICITY_EVENT_RULES) {
     if (pattern.test(title)) return { eventType, pattern };

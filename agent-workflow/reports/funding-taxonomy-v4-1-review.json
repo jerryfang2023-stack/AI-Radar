@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-01T18:17:07.754Z",
+    "generated_at": "2026-08-02T06:24:12.431Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 222,
-    "input_hash": "b806e59da40409c9",
-    "override_count": 15,
-    "needs_review_count": 3,
-    "low_confidence_count": 2
+    "decision_count": 223,
+    "input_hash": "e6a537a0ae2ae96e",
+    "override_count": 17,
+    "needs_review_count": 0,
+    "low_confidence_count": 0
   },
   "decisions": [
     {
@@ -251,8 +251,8 @@
         "consumer"
       ],
       "confidence": 0.84,
-      "needs_review": true,
-      "rationale": "Aina 当前产品是用户操作的上下文感知硬件界面，不是自主作用于物理环境的机器人、车辆或机器；在 CB 2026 目录中暂归 Consumer & retail，并保留复核标记。"
+      "needs_review": false,
+      "rationale": "Aina 当前产品是用户操作的上下文感知硬件界面，不是自主作用于物理环境的机器人、车辆或机器；按 CB 2026 的 Consumer & retail 应用归类。"
     },
     {
       "event_id": "EV-3d93d1da8cb64462",
@@ -1643,6 +1643,7 @@
     },
     {
       "event_id": "EV-5f3ccb941a2fe5d7",
+      "canonical_event_id": "EV-2a78dd5feb40a78a",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
       "market_application_id": "",
@@ -1700,6 +1701,7 @@
     },
     {
       "event_id": "EV-df789745fb926bfd",
+      "canonical_event_id": "EV-ecc12e5ec883b7e7",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "consumer_retail",
       "market_application_id": "",
@@ -2561,15 +2563,19 @@
       "market_application_id": "",
       "product_form_id": "end_user_application",
       "use_case_ids": [
+        "software_development",
+        "knowledge_search",
         "productivity_enterprise_workflows"
       ],
       "industry_ids": [],
       "target_user_ids": [
-        "business_user"
+        "developer",
+        "business_user",
+        "consumer"
       ],
-      "confidence": 0.7,
-      "needs_review": true,
-      "rationale": "Hermes is an open-source agent with built-in skills for task automation and chat-based interaction, fitting enterprise productivity workflows. It is an end-user application, not a physical AI system. Industry is not specified, so left empty. Target users are likely business users, but confidence is moderate due to limited evidence."
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "本次卡片的明确对外产品是可本地或云端使用的 Hermes 智能体，用户直接用它搜索、编程和自动执行任务，因此按跨行业生产力应用而非模型基础设施归类。"
     },
     {
       "event_id": "EV-236cbc2d64f0c455",
@@ -3204,20 +3210,22 @@
     },
     {
       "event_id": "EV-6e79974732a5db6b",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
       "product_form_id": "model",
       "use_case_ids": [
-        "productivity_enterprise_workflows"
+        "research_discovery"
       ],
       "industry_ids": [],
       "target_user_ids": [
+        "developer",
+        "researcher",
         "business_user"
       ],
-      "confidence": 0.7,
-      "needs_review": true,
-      "rationale": "Reka builds generative AI models (Yasa) that can be personalized to proprietary data and applications, fitting enterprise productivity workflows. No specific industry or use case beyond enterprise workflows is mentioned, so target is business users. Physical AI is not indicated."
+      "confidence": 0.98,
+      "needs_review": false,
+      "rationale": "Reka 的核心对外供给是 Yasa 等生成式多模态模型；用企业私有数据个性化是模型能力和交付方式，不应把模型公司归为企业工作流应用。"
     },
     {
       "event_id": "EV-15bbdd37c516309a",
@@ -3909,6 +3917,7 @@
     },
     {
       "event_id": "EV-2dff32c1b6f813e4",
+      "canonical_event_id": "EV-b2d94511e4b4dfc8",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "hardware_computing",
       "market_application_id": "chips",
@@ -3955,6 +3964,7 @@
     },
     {
       "event_id": "EV-305ec93673f4f12e",
+      "canonical_event_id": "EV-82e77abb1a77f81c",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
       "market_application_id": "model_deployment",
@@ -4327,6 +4337,23 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Zenskar 提供 AI 原生计费与收入自动化平台，面向财务团队优化订单到现金流程，属于跨行业的企业业务功能，不涉及物理 AI 或基础设施层，因此归入企业应用-生产力工作流。"
+    },
+    {
+      "event_id": "EV-914ca1cbc6359ce5",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Company provides real-time voice AI infrastructure for enterprises, fitting enterprise applications and productivity workflows. No specific industry focus evident, so industry_ids left empty."
     }
   ],
   "inputs": [
@@ -4351,8 +4378,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4395,8 +4422,8 @@
         "财新传媒"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4430,8 +4457,8 @@
         "Adam Ghetti (Adapter CEO)"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4473,8 +4500,8 @@
         "Lokker"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -4511,8 +4538,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4554,8 +4581,8 @@
         "RW Dake"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -4592,8 +4619,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -4621,8 +4648,8 @@
         "多家构建智能体工作流的公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4660,8 +4687,8 @@
         "Browser Use"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4697,8 +4724,8 @@
         "SoftBank"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4721,8 +4748,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -4750,8 +4777,8 @@
         "首个试点客户"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4780,8 +4807,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -4815,8 +4842,8 @@
         "Impossible Finance"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -4847,8 +4874,8 @@
         "Onebeat"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -4873,8 +4900,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -4904,8 +4931,8 @@
         "Sabio Group"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -4935,8 +4962,8 @@
         "Sabio Group"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -4972,33 +4999,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
-      }
-    },
-    {
-      "event_id": "EV-1abf0d076d30ec6d",
-      "funding_insight_id": "FI-e3285dae836c1fb5",
-      "company_name": "AMD",
-      "company_full_name": "Featherless.ai",
-      "website": "featherless.ai",
-      "current_sector": "AI基础设施 / 开源模型推理",
-      "company_evidence_quotes": [
-        "The company is Singapore co-founded and San Francisco-based, with a global team spanning Canada, Europe, Australia, and the US."
-      ],
-      "products": [
-        {
-          "name": "Featherless 无服务器推理平台",
-          "evidence_quotes": [
-            "The startup stands out with a hot-swapping technique that loads models into GPU memory on demand in under five seconds and releases them when idle. This enables a flat-rate pricing model, offering fixed monthly capacity instead of per-token billing.",
-            "We have the entire catalogue of 30,000 models available online."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5024,8 +5026,8 @@
         "Nabla"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5054,8 +5056,8 @@
         "HPE"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5086,8 +5088,8 @@
         "Charm Industrial"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5122,8 +5124,8 @@
         "Advolve"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5154,14 +5156,14 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
       "event_id": "EV-8861a42a8679562a",
       "funding_insight_id": "FI-2c7e9c7109babb35",
-      "company_name": "Apollo",
+      "company_name": "Anthropic",
       "company_full_name": "Anthropic",
       "website": "",
       "current_sector": "AI 基础设施融资",
@@ -5180,8 +5182,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5210,8 +5212,8 @@
         "LangChain"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5238,8 +5240,8 @@
         "未披露"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5266,8 +5268,8 @@
         "未披露"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5294,8 +5296,8 @@
         "一家纽约证券交易所上市的航运公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5334,8 +5336,8 @@
         "John Muir Health"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5362,8 +5364,8 @@
         "Fanatics"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5402,8 +5404,8 @@
         "Goettl"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -5438,8 +5440,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5482,8 +5484,8 @@
         "Google DeepMind"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5508,8 +5510,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5537,8 +5539,8 @@
         "一家财富100强客户"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -5568,8 +5570,8 @@
         "Endeavor Health"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5598,8 +5600,8 @@
         "一家制造商"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -5637,8 +5639,8 @@
         "U.S. Navy"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -5664,8 +5666,8 @@
         "一家领先的包装公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5696,8 +5698,8 @@
         "Toyo Engineering"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5725,8 +5727,8 @@
         "Faire"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -5763,8 +5765,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5790,8 +5792,8 @@
         "Moreh"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5834,8 +5836,8 @@
         "Mastercard"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5860,8 +5862,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -5892,8 +5894,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5917,8 +5919,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -5945,8 +5947,8 @@
         "Footprint"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -5977,8 +5979,8 @@
         "某美国十大太阳能开发商（未具名）"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -6005,8 +6007,8 @@
         "一家大型财产与意外险保险公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6036,8 +6038,8 @@
         "开发商"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -6066,8 +6068,8 @@
         "Lindy"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6098,8 +6100,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6122,8 +6124,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6148,8 +6150,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6180,8 +6182,8 @@
         "某美国酒店公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6209,8 +6211,8 @@
         "South Loop Venture Capital"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6239,8 +6241,8 @@
         "Bank Leumi"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6263,8 +6265,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6288,8 +6290,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6314,8 +6316,34 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-618e5729145025e4",
+      "funding_insight_id": "FI-dcf52fdf41da5d16",
+      "company_name": "Entire",
+      "company_full_name": "Entire Inc.",
+      "website": "https://entire.io",
+      "current_sector": "开发者工具",
+      "company_evidence_quotes": [
+        "Former GitHub CEO Thomas Dohmke today announced the launch of Entire , a new developer platform designed for human-agent collaboration",
+        "Entire has 15 employees and operates as a fully remote company, with team members who previously built developer tools at GitHub and Atlassian."
+      ],
+      "products": [
+        {
+          "name": "Checkpoints",
+          "evidence_quotes": [
+            "Entire is releasing its first open-source product today: Checkpoints , a new CLI tool that automatically captures AI agent context*— reasoning, prompts, and decisions —*on every Git commit.",
+            "With Checkpoints , every agent-generated commit is paired with a structured checkpoint that records the full session context, including transcripts, prompts, developers can review history, navigate agent context, and search the record of code produced by agents through an AI contribution graph."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6346,8 +6374,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6379,8 +6407,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6424,8 +6452,8 @@
         "DroneStar AI"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6449,8 +6477,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6488,8 +6516,33 @@
         "Sigma Computing"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-1abf0d076d30ec6d",
+      "funding_insight_id": "FI-e3285dae836c1fb5",
+      "company_name": "Featherless.ai",
+      "company_full_name": "Featherless.ai",
+      "website": "featherless.ai",
+      "current_sector": "AI基础设施 / 开源模型推理",
+      "company_evidence_quotes": [
+        "The company is Singapore co-founded and San Francisco-based, with a global team spanning Canada, Europe, Australia, and the US."
+      ],
+      "products": [
+        {
+          "name": "Featherless 无服务器推理平台",
+          "evidence_quotes": [
+            "The startup stands out with a hot-swapping technique that loads models into GPU memory on demand in under five seconds and releases them when idle. This enables a flat-rate pricing model, offering fixed monthly capacity instead of per-token billing.",
+            "We have the entire catalogue of 30,000 models available online."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6514,8 +6567,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6550,8 +6603,8 @@
         "Hiscox"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -6579,8 +6632,8 @@
         "Harvey"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6608,8 +6661,8 @@
         "R/GA"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6637,8 +6690,8 @@
         "Subarquitectura"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -6663,34 +6716,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
-      }
-    },
-    {
-      "event_id": "EV-618e5729145025e4",
-      "funding_insight_id": "FI-dcf52fdf41da5d16",
-      "company_name": "Former GitHub",
-      "company_full_name": "Entire Inc.",
-      "website": "https://entire.io",
-      "current_sector": "开发者工具",
-      "company_evidence_quotes": [
-        "Former GitHub CEO Thomas Dohmke today announced the launch of Entire , a new developer platform designed for human-agent collaboration",
-        "Entire has 15 employees and operates as a fully remote company, with team members who previously built developer tools at GitHub and Atlassian."
-      ],
-      "products": [
-        {
-          "name": "Checkpoints",
-          "evidence_quotes": [
-            "Entire is releasing its first open-source product today: Checkpoints , a new CLI tool that automatically captures AI agent context*— reasoning, prompts, and decisions —*on every Git commit.",
-            "With Checkpoints , every agent-generated commit is paired with a structured checkpoint that records the full session context, including transcripts, prompts, developers can review history, navigate agent context, and search the record of code produced by agents through an AI contribution graph."
-          ]
-        }
-      ],
-      "customer_names": [],
-      "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6717,8 +6744,8 @@
         "Anthropic"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6746,8 +6773,8 @@
         "NextDay AI"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6777,8 +6804,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -6804,8 +6831,8 @@
         "未具名企业客户"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6830,8 +6857,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6871,8 +6898,8 @@
         "未具名的游戏、模拟和机器人领域合作伙伴"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6908,8 +6935,8 @@
         "Microsoft"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6939,8 +6966,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6964,8 +6991,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -6992,8 +7019,8 @@
         "top 10 U.S. construction companies"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -7020,8 +7047,8 @@
         "Stash"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7048,8 +7075,8 @@
         "Csenge Advisory Group"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7076,8 +7103,8 @@
         "Fresenius"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7108,8 +7135,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7135,8 +7162,8 @@
         "n8n"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7159,8 +7186,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7195,8 +7222,8 @@
         "DHL"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7220,8 +7247,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7246,8 +7273,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7275,44 +7302,8 @@
         "Bella Vista Bistro"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
-      }
-    },
-    {
-      "event_id": "EV-d4e44892226be468",
-      "funding_insight_id": "FI-98468ca82a2ccdd4",
-      "company_name": "How",
-      "company_full_name": "OpenAI",
-      "website": "",
-      "current_sector": "人工智能基础模型与全栈平台",
-      "company_evidence_quotes": [
-        "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
-        "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025."
-      ],
-      "products": [
-        {
-          "name": "ChatGPT",
-          "evidence_quotes": [
-            "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers.",
-            "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
-          ]
-        },
-        {
-          "name": "Codex",
-          "evidence_quotes": [
-            "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent."
-          ]
-        }
-      ],
-      "customer_names": [
-        "Walmart",
-        "Snowflake",
-        "Accenture"
-      ],
-      "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7354,8 +7345,8 @@
         "Kustomer"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7382,8 +7373,8 @@
         "Kajima Corporation"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7408,8 +7399,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7436,8 +7427,8 @@
         "美国国家侦察局"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -7461,8 +7452,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7494,8 +7485,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7521,8 +7512,8 @@
         "D-Matrix"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7553,8 +7544,8 @@
         "Radwell International"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7579,8 +7570,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7608,8 +7599,8 @@
         "Better"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7633,8 +7624,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7666,8 +7657,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7698,8 +7689,8 @@
         "Walmart"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7730,8 +7721,8 @@
         "Walmart"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7755,8 +7746,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7788,8 +7779,8 @@
         "未披露具体名称"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7815,8 +7806,8 @@
         "一家大型金融服务公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -7840,8 +7831,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7870,8 +7861,8 @@
         "AWS Agent SDK"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7911,8 +7902,8 @@
         "France Travail"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7936,8 +7927,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7962,8 +7953,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -7988,8 +7979,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8021,8 +8012,8 @@
         "Cursor"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8048,8 +8039,8 @@
         "一家财富500强汽车公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -8089,8 +8080,8 @@
         "Telefónica"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8118,8 +8109,8 @@
         "StepStone"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8149,8 +8140,8 @@
         "United Nations"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8182,8 +8173,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -8210,8 +8201,8 @@
         "Suzano International"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8248,8 +8239,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8272,8 +8263,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8296,8 +8287,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8328,8 +8319,8 @@
         "Suno"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8359,8 +8350,8 @@
         "Hewlett Packard Enterprise"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8387,8 +8378,8 @@
         "Proximus Global"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8413,8 +8404,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8439,8 +8430,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8468,8 +8459,8 @@
         "Bain Capital"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -8504,8 +8495,8 @@
         "Bain Capital"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -8532,8 +8523,8 @@
         "Phoenix Insurance"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -8558,8 +8549,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8598,8 +8589,8 @@
         "新云基础设施提供商（Neocloud运营商）"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8623,8 +8614,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8651,8 +8642,8 @@
         "Renault"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8682,8 +8673,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8708,8 +8699,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8739,8 +8730,44 @@
         "University of California, San Diego"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-d4e44892226be468",
+      "funding_insight_id": "FI-98468ca82a2ccdd4",
+      "company_name": "OpenAI",
+      "company_full_name": "OpenAI",
+      "website": "",
+      "current_sector": "人工智能基础模型与全栈平台",
+      "company_evidence_quotes": [
+        "OpenAI just closed a $122 billion funding round at an $852 billion valuation.",
+        "ChatGPT now surpasses 900 million weekly active users, generating $2 billion in monthly revenue as of 2025."
+      ],
+      "products": [
+        {
+          "name": "ChatGPT",
+          "evidence_quotes": [
+            "ChatGPT now serves more than 900 million weekly active users and over 50 million subscribers.",
+            "ChatGPT Agent shipped with Walmart integration for agentic shopping. Users browse, compare, and buy inside ChatGPT."
+          ]
+        },
+        {
+          "name": "Codex",
+          "evidence_quotes": [
+            "Codex now ships as a plugin inside Claude Code, Anthropic's coding agent."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Walmart",
+        "Snowflake",
+        "Accenture"
+      ],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8770,8 +8797,8 @@
         "Webflow"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8810,8 +8837,8 @@
         "Intercontinental Exchange Inc. (ICE)"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8838,8 +8865,8 @@
         "Coca-Cola"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -8866,8 +8893,8 @@
         "Runtype"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8908,8 +8935,8 @@
         "Tenstorrent"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8947,8 +8974,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -8979,8 +9006,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9022,8 +9049,8 @@
         "招聘人员"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9061,8 +9088,8 @@
         "Quartr"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9090,8 +9117,8 @@
         "Lovable"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9133,8 +9160,8 @@
         "Life Quotes"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -9170,8 +9197,8 @@
         "Kry"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9200,8 +9227,8 @@
         "Flix"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9230,8 +9257,8 @@
         "Chime"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9260,8 +9287,8 @@
         "Chime"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9297,8 +9324,8 @@
         "Net Health"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9333,8 +9360,8 @@
         "Parasail"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9361,8 +9388,8 @@
         "Flapping Airplanes"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9387,8 +9414,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9418,8 +9445,8 @@
         "Del-Air"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -9448,8 +9475,8 @@
         "一家中型承包商"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -9474,8 +9501,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -9504,8 +9531,8 @@
         "Monday.com"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9543,8 +9570,8 @@
         "AM Intelligence Labs"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9584,8 +9611,8 @@
         "AM Intelligence Labs (AMI Labs)"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9615,8 +9642,8 @@
         "LeadDesk"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9656,8 +9683,8 @@
         "xAI"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9682,8 +9709,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9706,8 +9733,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9737,8 +9764,8 @@
         "Send Payments"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9772,8 +9799,8 @@
         "Unstructured.io"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9810,8 +9837,8 @@
         "Duolingo"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9842,8 +9869,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -9868,8 +9895,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9904,8 +9931,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9940,8 +9967,8 @@
         "ShipLab"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -9968,8 +9995,8 @@
         "Gusto"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -9994,8 +10021,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10023,8 +10050,8 @@
         "Decagon"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10060,8 +10087,8 @@
         "Jack and Jill"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10104,8 +10131,8 @@
         "IDFC First Bank"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10138,8 +10165,8 @@
         "Genesys"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10172,8 +10199,8 @@
         "一家基础模型实验室（未具名）"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10203,8 +10230,8 @@
         "Ergeon"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10229,8 +10256,50 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-914ca1cbc6359ce5",
+      "funding_insight_id": "FI-12926d5682fee68e",
+      "company_name": "Smallest.ai",
+      "company_full_name": "Smallest.ai",
+      "website": "https://smallest.ai/",
+      "current_sector": "企业级实时语音AI基础设施",
+      "company_evidence_quotes": [
+        "Smallest.ai , a San Francisco-based foundational AI research lab building the next generation of real-time voice AI infrastructure for enterprises"
+      ],
+      "products": [
+        {
+          "name": "Hydra",
+          "evidence_quotes": [
+            "At the center of Voice 4.0 is Hydra, Smallest.ai’s speech-to-speech model designed around asynchronous intelligence. Rather than waiting for one process to finish before starting another, Hydra performs multiple tasks in parallel, enabling real-time conversational flow, mid-conversation tool use, natural interruptions, and significantly lower latency."
+          ]
+        },
+        {
+          "name": "Pulse STT Pro",
+          "evidence_quotes": [
+            "Built for enterprise-scale deployments, Pulse STT Pro supports 38 languages and combines low-latency transcription with capabilities such as speaker diarization, emotion detection, code-switching, noise reduction, and built-in PII and PCI redaction."
+          ]
+        },
+        {
+          "name": "Lightning V3.1",
+          "evidence_quotes": [
+            "Smallest.ai’s broader platform includes Pulse STT Pro and Lightning V3.1, which rank among the top voice AI models on Artificial Analysis for speed, quality, and cost efficiency."
+          ]
+        }
+      ],
+      "customer_names": [
+        "RingCentral",
+        "Truecaller",
+        "Readymode",
+        "Piramal",
+        "Kogta"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10260,8 +10329,8 @@
         "HG"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -10300,8 +10369,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -10325,8 +10394,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10352,8 +10421,8 @@
         "Syska Hennessy Group"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -10378,8 +10447,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10406,8 +10475,8 @@
         "未具名财富 500 强公司"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10436,8 +10505,8 @@
         "WordPress"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10463,8 +10532,8 @@
         "Sky"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10502,8 +10571,8 @@
         "Netflix"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10528,8 +10597,8 @@
         "10 家设计合作伙伴企业"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10558,8 +10627,8 @@
         "Podium Education"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10584,8 +10653,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10612,8 +10681,8 @@
         "Duke University Health System"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10637,8 +10706,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10662,8 +10731,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10701,8 +10770,8 @@
         "Woven Planet (Toyota subsidiary)"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10734,8 +10803,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10763,8 +10832,8 @@
         "Intuit"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10795,8 +10864,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "model_api_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10824,8 +10893,8 @@
         "a landscaping business"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10852,8 +10921,8 @@
         "Tivly"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10889,8 +10958,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -10919,8 +10988,8 @@
         "Riskified"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10944,8 +11013,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "security_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10969,8 +11038,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11000,8 +11069,8 @@
         "Ruggable"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11026,8 +11095,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "developer_tool",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11052,8 +11121,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -11078,8 +11147,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -11109,8 +11178,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11140,8 +11209,8 @@
         "Vaillant"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11180,8 +11249,8 @@
       ],
       "customer_names": [],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -11211,8 +11280,8 @@
         "Vertice"
       ],
       "current_classification": {
-        "product_form_id": "",
-        "market_category_id": ""
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     }
   ]

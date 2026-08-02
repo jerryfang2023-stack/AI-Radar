@@ -357,7 +357,14 @@ function applyDecisions(ledger) {
 
 const inputs = loadEventInputs();
 let ledger = readJson(decisionPath, null);
-if (!ledger || !Array.isArray(ledger.decisions) || args.get("refresh") === "true") {
+const ledgerEventIds = new Set((ledger?.decisions || []).map((decision) => decision.event_id));
+const incrementalInputs = inputs.filter((input) => !ledgerEventIds.has(input.event_id));
+if (
+  !ledger
+  || !Array.isArray(ledger.decisions)
+  || args.get("refresh") === "true"
+  || (write && incrementalInputs.length)
+) {
   const inputHash = sourceTextHash(JSON.stringify(inputs));
   const overrideLedger = readJson(overridePath, { decisions: [] });
   const overrides = (overrideLedger.decisions || []).map(normalizeDecision);
@@ -369,11 +376,13 @@ if (!ledger || !Array.isArray(ledger.decisions) || args.get("refresh") === "true
   const cached = checkpoint.prompt_version === promptVersion && checkpoint.input_hash === inputHash
     ? (checkpoint.decisions || []).map(normalizeDecision)
     : [];
-  const accumulated = new Map([...cached, ...overrides].map((decision) => [decision.event_id, decision]));
+  const incremental = args.get("refresh") !== "true" && Array.isArray(ledger?.decisions);
+  const existing = incremental ? ledger.decisions : [];
+  const accumulated = new Map([...existing, ...cached, ...overrides].map((decision) => [decision.event_id, decision]));
   const missingInputs = inputs.filter((input) => !accumulated.has(input.event_id));
   const batches = [];
   for (let index = 0; index < missingInputs.length; index += batchSize) batches.push(missingInputs.slice(index, index + batchSize));
-  const models = new Set(checkpoint.models || []);
+  const models = new Set([...(ledger?.meta?.models || []), ...(checkpoint.models || [])]);
   const results = await runPool(batches, (result) => {
     models.add(result.model);
     for (const decision of result.payload.decisions.map(normalizeDecision)) accumulated.set(decision.event_id, decision);
@@ -384,7 +393,9 @@ if (!ledger || !Array.isArray(ledger.decisions) || args.get("refresh") === "true
       decisions: [...accumulated.values()].sort((a, b) => a.event_id.localeCompare(b.event_id)),
     });
   });
-  const decisions = inputs.map((input) => accumulated.get(input.event_id));
+  const decisions = incremental
+    ? [...existing, ...missingInputs.map((input) => accumulated.get(input.event_id))]
+    : inputs.map((input) => accumulated.get(input.event_id));
   const byEvent = new Map(decisions.map((decision) => [decision.event_id, decision]));
   const problems = inputs.flatMap((input) => decisionProblems(byEvent.get(input.event_id), input.event_id));
   if (problems.length) throw new Error(`funding_taxonomy_decisions_invalid:${problems.join("|")}`);

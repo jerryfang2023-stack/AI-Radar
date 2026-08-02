@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "node": {
     "id": "TX-product_form-compute_cloud_service",
@@ -30,6 +30,7 @@
       "EV-29eea3f4a8fcd6f5",
       "EV-1abf0d076d30ec6d",
       "EV-6011ab83ebd290bd",
+      "EV-a86b04e679044c45",
       "EV-f2750a3d66e06fe7",
       "EV-826c8088c4adf591",
       "EV-0ec219a94317215f",
@@ -49,18 +50,21 @@
       "EN-0b79cf2de0ee6b8e",
       "EN-07c370b082ffd370",
       "EN-ce31f92c521b7b08",
+      "EN-7640da40298286a6",
       "EN-8f5ef31ed5125786",
       "EN-ebf9032e4009b3d9",
       "EN-042e9398f2cc8902",
       "EN-9d07f526fab9cfe9",
       "EN-a89a94ff38d4dc95"
     ],
-    "fdeIds": [],
+    "fdeIds": [
+      "FDE-5ea7f3d69a03d417"
+    ],
     "hardwareIds": [
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-07-23"
+    "lastSeen": "2026-08-02"
   },
   "events": [
     {
@@ -3312,6 +3316,162 @@
       "publisher": "tech.eu"
     },
     {
+      "id": "EV-a86b04e679044c45",
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "updatedDate": "2026-08-02",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "HIVE 与 Bell 和 Cohere 达成 2.2 亿美元 AI 基础设施交易",
+      "originalTitle": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "subject": "HIVE",
+      "action": "procurement_contract",
+      "object": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "metrics": [
+        "$220 million",
+        "$220M",
+        "$70 million",
+        "$100 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-7640da40298286a6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-7640da40298286a6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "public_sector_user",
+            "name": "公共部门用户",
+            "entityIds": [
+              "EN-7640da40298286a6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7640da40298286a6",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "HIVE",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "publisher": "bitrss.com"
+    },
+    {
       "id": "EV-f2750a3d66e06fe7",
       "dataDate": "2026-07-19",
       "date": "2026-07-16",
@@ -4094,10 +4254,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
@@ -4120,10 +4280,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_subcategory-hardware_computing",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
@@ -4173,9 +4333,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-target_user-business_user",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
@@ -4199,13 +4359,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-business_user",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_subcategory-hardware_computing",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-computing_infrastructure"
       ],
@@ -4238,20 +4398,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
         "TX-use_case-knowledge_search",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
         "TX-industry-energy_utilities",
-        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-use_case-design_engineering",
         "TX-industry-financial_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-industry-aerospace_defense",
@@ -4334,10 +4494,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
-        "TX-target_user-business_user",
         "TX-ai_market_application-model_deployment",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
@@ -4347,6 +4507,29 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-04-30",
       "lastSeen": "2026-06-15"
+    },
+    {
+      "id": "EN-7640da40298286a6",
+      "name": "HIVE",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a86b04e679044c45"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-compute_cloud_service",
+        "TX-target_user-public_sector_user"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-02",
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-8f5ef31ed5125786",
@@ -4408,9 +4591,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
+        "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service"
       ],
       "relatedEntityIds": [
@@ -4456,15 +4639,60 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
       "lastSeen": "2026-07-23"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-5ea7f3d69a03d417",
+      "eventId": "EV-a86b04e679044c45",
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "title": "HIVE 与 Bell 和 Cohere 达成 2.2 亿美元 AI 基础设施交易",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "HIVE",
+      "industry": "未披露",
+      "useCase": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "HIVE disclosed that the agreement is valued at approximately $220 million and involves the deployment of 2,304 NVIDIA Grace Blackwell GPUs. Once the project is in service, HIVE expects the deal to generate about $70 million in contracted annual recurring revenue, lifting its contracted HPC revenue target to more than $100 million."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$220 million",
+        "$220M",
+        "$220 million",
+        "$70 million",
+        "$100 million"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "entityIds": [
+        "EN-7640da40298286a6",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ],
   "hardware": [
     {
       "id": "HW-9a39a7f449362f96",
@@ -4491,6 +4719,119 @@
       "sourceDate": "2026-07-08",
       "entityIds": [
         "EN-a89a94ff38d4dc95"
+      ]
+    }
+  ],
+  "fdeDossiers": [
+    {
+      "id": "FDED-2031d5cfafe367fa",
+      "implementationKey": "2031d5cfafe367fa",
+      "eventId": "EV-a86b04e679044c45",
+      "eventIds": [
+        "EV-a86b04e679044c45"
+      ],
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "title": "HIVE × HIVE：HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HIVE",
+      "vendor": "HIVE",
+      "industry": "未披露",
+      "useCase": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-1094a1c2cc46d6a8",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-08-02",
+          "dataDate": "2026-08-02",
+          "eventId": "EV-a86b04e679044c45",
+          "eventTitle": "HIVE 与 Bell 和 Cohere 达成 2.2 亿美元 AI 基础设施交易",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "entityIds": [
+        "EN-7640da40298286a6",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-9190f76a937551cc",
+      "snapshotKey": "9190f76a937551cc",
+      "snapshotId": "HWS-b978b3868814d57b",
+      "eventId": "EV-a86b04e679044c45",
+      "eventIds": [
+        "EV-a86b04e679044c45"
+      ],
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "title": "HIVE",
+      "subject": "HIVE",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "220",
+          "unit": "$million",
+          "fact_ref": "HWF-b3aa651e55cc4f35"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-02",
+          "hardware_fact_id": "HWF-b3aa651e55cc4f35",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-02T00:20:26.468Z",
+          "subject_entity_id": "EN-7640da40298286a6",
+          "subject_name": "HIVE",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "220",
+          "unit": "$million",
+          "source_quote": "HIVE disclosed that the agreement is valued at approximately $220 million and involves the deployment of 2,304 NVIDIA Grace Blackwell GPUs. Once the project is in service, HIVE expects the deal to generate about $70 million in contracted annual recurring revenue, lifting its contracted HPC revenue target to more than $100 million.",
+          "event_refs": [
+            "EV-a86b04e679044c45"
+          ],
+          "claim_ref": "CL-10039d6cfcde167e",
+          "source_refs": [
+            "SA-44b54212e5b5fa0f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "entityIds": [
+        "EN-7640da40298286a6",
+        "EN-8d4321d936320802"
       ]
     }
   ]

@@ -1,5 +1,221 @@
 [
   {
+    "claim_id": "CL-d16698fb7df2e3c7",
+    "raw_id": "RAW-733f4483eb117731",
+    "claim_type": "capital_investment",
+    "subject": "SK hynix",
+    "predicate": "capital_investment",
+    "object": "P&T7 advanced packaging plant in Cheongju",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8e55149ee4534f6b"
+    },
+    "source_span": {
+      "raw_id": "RAW-733f4483eb117731",
+      "start": 599,
+      "end": 697
+    },
+    "source_quote": "SK hynix has secured approval to raise investment in its P&T7 advanced packaging plant in Cheongju",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3fee13bf993bb8e0",
+    "raw_id": "RAW-5bfa5a3f9fdd14e4",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 8.1 (Production Branch)",
+    "predicate": "product_release",
+    "object": "GPU Driver 595.71.05, NVIDIA Virtual GPU Manager 595.71.03, vGPU for Compute Guest Driver, NVIDIA Run:ai 2.25, NVIDIA DOCA 3.4.0, Kubernetes operators, NVIDIA Container Toolkit 1.19.1, Base Command Manager 11.33.1",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9790e48d7a68a71f"
+    },
+    "source_span": {
+      "raw_id": "RAW-5bfa5a3f9fdd14e4",
+      "start": 558,
+      "end": 1064
+    },
+    "source_quote": "Infrastructure 8.1 (Production Branch) - Released May 2026, this Production Branch (PB) includes GPU Driver 595.71.05, NVIDIA Virtual GPU Manager 595.71.03 and vGPU for Compute Guest Driver (Linux 595.71.05 / Windows 596.36), NVIDIA Run:ai 2.25 (self-hosted) plus NVIDIA Run:ai SaaS, NVIDIA DOCA 3.4.0, and updated Kubernetes operators (GPU Operator 26.3.3, Network Operator 26.4.0, DPU Operator (DPF) 26.4.0, NIM Operator 3.1.1) along with NVIDIA Container Toolkit 1.19.1 and Base Command Manager 11.33.1.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8719bf4a1c707b23",
+    "raw_id": "RAW-5bfa5a3f9fdd14e4",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 7.7 (LTSB)",
+    "predicate": "product_release",
+    "object": "GPU Driver 580.173.02, NVIDIA Virtual GPU Manager 580.159.01, vGPU for Compute Guest Driver, NVIDIA Run:ai 2.25, NVIDIA DOCA 3.4.0, Kubernetes operators, NVIDIA Container Toolkit 1.19.1, Base Command Manager 11.33.1",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-9790e48d7a68a71f"
+    },
+    "source_span": {
+      "raw_id": "RAW-5bfa5a3f9fdd14e4",
+      "start": 1094,
+      "end": 1624
+    },
+    "source_quote": "Infrastructure 7.7 (LTSB) is now available - Released July 2026, this Long-Term Support Branch (LTSB) update includes GPU Driver 580.173.02, NVIDIA Virtual GPU Manager 580.159.01 and vGPU for Compute Guest Driver (Linux 580.173.02 / Windows 582.70), NVIDIA Run:ai 2.25 (self-hosted) plus NVIDIA Run:ai SaaS, NVIDIA DOCA 3.4.0, and updated Kubernetes operators (GPU Operator 26.3.3, Network Operator 26.4.0, DPU Operator (DPF) 26.4.0, NIM Operator 3.1.1) along with NVIDIA Container Toolkit 1.19.1 and Base Command Manager 11.33.1.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-545632e93f6664ec",
+    "raw_id": "RAW-d86228d40c7114a7",
+    "claim_type": "funding",
+    "subject": "Smallest.ai",
+    "predicate": "funding",
+    "object": "$13 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b2e4d9325c5b00d3"
+    },
+    "source_span": {
+      "raw_id": "RAW-d86228d40c7114a7",
+      "start": 161,
+      "end": 295
+    },
+    "source_quote": "Smallest.ai raised a $13 million Series A, taking total funding past $21 million to expand its real-time enterprise voice AI platform.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-16ed377f06b0f7a5",
+    "raw_id": "RAW-d86228d40c7114a7",
+    "claim_type": "funding",
+    "subject": "Smallest.ai",
+    "predicate": "funding",
+    "object": "$21 million total funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-b2e4d9325c5b00d3"
+    },
+    "source_span": {
+      "raw_id": "RAW-d86228d40c7114a7",
+      "start": 311,
+      "end": 650
+    },
+    "source_quote": "Smallest.ai , a San Francisco-based foundational AI research lab building the next generation of real-time voice AI infrastructure for enterprises, today announced it has surpassed $21 million in total funding following the close of a $13 million Series A led by Seligman Ventures with participation from Sierra Ventures and 3one4 Capital.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1735bf609304cba6",
+    "raw_id": "RAW-bfdc5f1792d285f3",
+    "claim_type": "deployment",
+    "subject": "Visionbay.ai",
+    "predicate": "deployment",
+    "object": "5-megawatt AI cluster built using Nvidia's HGX B300 systems",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-32757295c061e6d2"
+    },
+    "source_span": {
+      "raw_id": "RAW-bfdc5f1792d285f3",
+      "start": 385,
+      "end": 616
+    },
+    "source_quote": "Hon Hai Precision Industry Co. said Friday that its subsidiary Visionbay.ai has begun commercial operations of a 5-megawatt AI cluster built using Nvidia's HGX B300 systems, with more than 90 percent of its capacity already in use.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d6a25b86abded48c",
+    "raw_id": "RAW-46804a5c62e4f17e",
+    "claim_type": "procurement_contract",
+    "subject": "HIVE",
+    "predicate": "procurement_contract",
+    "object": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-46804a5c62e4f17e",
+      "start": 811,
+      "end": 926
+    },
+    "source_quote": "HIVE’s BUZZ HPC has signed a three-year GPU cloud contract worth about $220 million with Bell AI Fabric for Cohere.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5de98d55113ff034",
+    "raw_id": "RAW-46804a5c62e4f17e",
+    "claim_type": "procurement_contract",
+    "subject": "HIVE",
+    "predicate": "procurement_contract",
+    "object": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-46804a5c62e4f17e",
+      "start": 0,
+      "end": 59
+    },
+    "source_quote": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7004befe7a921e36",
+    "raw_id": "RAW-46804a5c62e4f17e",
+    "claim_type": "procurement_contract",
+    "subject": "HIVE",
+    "predicate": "procurement_contract",
+    "object": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-46804a5c62e4f17e",
+      "start": 96,
+      "end": 463
+    },
+    "source_quote": "Canadian Bitcoin miner HIVE Digital Technologies is pushing deeper into artificial intelligence infrastructure, signing a three-year GPU cloud contract intended to support AI startup Cohere and its enterprise and government customers. The company says its BUZZ HPC arm will provide high-performance computing capacity at a Bell Canada data center in British Columbia.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-10039d6cfcde167e",
+    "raw_id": "RAW-46804a5c62e4f17e",
+    "claim_type": "procurement_contract",
+    "subject": "HIVE",
+    "predicate": "procurement_contract",
+    "object": "HIVE Wins $220M AI Infrastructure Deal With Bell and Cohere - BitRss - Crypto World News",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-46804a5c62e4f17e",
+      "start": 464,
+      "end": 796
+    },
+    "source_quote": "HIVE disclosed that the agreement is valued at approximately $220 million and involves the deployment of 2,304 NVIDIA Grace Blackwell GPUs. Once the project is in service, HIVE expects the deal to generate about $70 million in contracted annual recurring revenue, lifting its contracted HPC revenue target to more than $100 million.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-fcf6ff2e668c290d",
     "raw_id": "RAW-a5c8172b97c7ff98",
     "claim_type": "product_release",
@@ -163,6 +379,112 @@
       "end": 840
     },
     "source_quote": "WASHINGTON — Today, the U.S. General Services Administration (GSA) announced a new OneGov offering with CORAS, a provider of secure agentic AI, to accelerate AI adoption across federal agencies and equip them to automate manual, repetitive tasks that tie up staff and delay mission goals.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b2cdabb6a2e54599",
+    "raw_id": "RAW-2cbaae5a06ac40e8",
+    "claim_type": "funding",
+    "subject": "Harmony",
+    "predicate": "funding",
+    "object": "$34 million in seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9fd7c58286e76b80"
+    },
+    "source_span": {
+      "raw_id": "RAW-2cbaae5a06ac40e8",
+      "start": 6,
+      "end": 157
+    },
+    "source_quote": "Harmony raised $34 million in seed funding led by Lightspeed Venture Partners to embed AI agents inside Slack and Microsoft Teams for employee support.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a26b29e711c0cf89",
+    "raw_id": "RAW-c487973cf6b021a1",
+    "claim_type": "procurement_contract",
+    "subject": "NC AI",
+    "predicate": "procurement_contract",
+    "object": "Korea's $34M Agentic Enterprise Mandate With Gabia as Live Testbed",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c487973cf6b021a1",
+      "start": 0,
+      "end": 78
+    },
+    "source_quote": "NC AI Lands Korea’s $34M Agentic Enterprise Mandate With Gabia as Live Testbed",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e8fab33381d0adb5",
+    "raw_id": "RAW-c487973cf6b021a1",
+    "claim_type": "procurement_contract",
+    "subject": "NC AI",
+    "predicate": "procurement_contract",
+    "object": "Korea's $34M Agentic Enterprise Mandate With Gabia as Live Testbed",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c487973cf6b021a1",
+      "start": 630,
+      "end": 1251
+    },
+    "source_quote": "The Ministry of Science and ICT (MSIT) and its program administration arm, the Institute for Information and Communications Technology Planning and Evaluation (IITP), designated NC AI as the principal agency for the \"Real-World Proactive Action-Type Agentic AI Technology Development Project\" on July 30. The four-year initiative runs through 2029, carries a total budget of ₩49.375 billion (approximately $34 million USD), of which ₩39.5 billion (approximately $27 million USD) comes from the state, and is built around a consortium that includes enterprise cloud provider Gabia, Korea University, and Yonsei University.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-de1a68594c066009",
+    "raw_id": "RAW-c487973cf6b021a1",
+    "claim_type": "procurement_contract",
+    "subject": "NC AI",
+    "predicate": "procurement_contract",
+    "object": "Korea's $34M Agentic Enterprise Mandate With Gabia as Live Testbed",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c487973cf6b021a1",
+      "start": 79,
+      "end": 281
+    },
+    "source_quote": "Enterprise agentic AI’s most common failure mode — building in isolated sandboxes rather than live production environments — is the exact problem South Korea’s government is funding NC AI and Gabia’s...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ae8b19d2c7b3d9e",
+    "raw_id": "RAW-c487973cf6b021a1",
+    "claim_type": "procurement_contract",
+    "subject": "NC AI",
+    "predicate": "procurement_contract",
+    "object": "Korea's $34M Agentic Enterprise Mandate With Gabia as Live Testbed",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c487973cf6b021a1",
+      "start": 282,
+      "end": 629
+    },
+    "source_quote": "South Korea's government handed NCSoft's AI subsidiary a ₩49.375 billion ($34 million USD) enterprise AI mandate last week &mdash; not because NC AI has built the most impressive agentic system on a benchmark, but because its proposal is designed around the problem that kills most enterprise agentic AI projects before they ever reach production.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -501,6 +823,72 @@
     "source_quote": "企业可以用采访和发布会表达愿景，但收购意味着资本、人才和组织资源的真实配置。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-67a3a18d52e2b661",
+    "raw_id": "RAW-b236452633164da6",
+    "claim_type": "financial_performance",
+    "subject": "全态感知",
+    "predicate": "financial_performance",
+    "object": "规模从 450 亿美元缩水至约 100 亿美元",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2347260ad5d0d136"
+    },
+    "source_span": {
+      "raw_id": "RAW-b236452633164da6",
+      "start": 29,
+      "end": 197
+    },
+    "source_quote": "前 OpenAI 研究员利奥波德 · 阿申布伦纳（Leopold Aschenbrenner）创立的 AI 对冲基金“全态感知”（Situational Awareness）出现严重危机，规模从 450 亿美元 （IT之家注：现汇率约合 3044.2 亿元人民币） 缩水至约 100 亿美元 （现汇率约合 676.49 亿元人民币） 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-c36d101cec31a7e8",
+    "raw_id": "RAW-3ac707504712e3d1",
+    "claim_type": "organization_restructuring",
+    "subject": "世界人工智能合作组织",
+    "predicate": "organization_restructuring",
+    "object": "创始成员国",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-adbeeb92e0ad90a2"
+    },
+    "source_span": {
+      "raw_id": "RAW-3ac707504712e3d1",
+      "start": 579,
+      "end": 640
+    },
+    "source_quote": "7 月 16 日，来自亚洲、非洲、拉美和欧洲的 29 个国家签署《关于成立世界人工智能合作组织的协定》 ，成为创始成员国。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1bc8ca53e5d9f771",
+    "raw_id": "RAW-3ac707504712e3d1",
+    "claim_type": "organization_restructuring",
+    "subject": "中国政府",
+    "predicate": "organization_restructuring",
+    "object": "世界人工智能合作组织",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2,
+      "model_candidate_id": "MAC-adbeeb92e0ad90a2"
+    },
+    "source_span": {
+      "raw_id": "RAW-3ac707504712e3d1",
+      "start": 708,
+      "end": 745
+    },
+    "source_quote": "2025 年 7 月 26 日， 中国政府倡议成立世界人工智能合作组织 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -987,6 +1375,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-6bbbb97410ea8594",
+    "raw_id": "RAW-9db15a3e08c4cf9c",
+    "claim_type": "acquisition",
+    "subject": "Citadel",
+    "predicate": "acquisition",
+    "object": "Situational Awareness public stock portfolio",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5b7060d2a8502640"
+    },
+    "source_span": {
+      "raw_id": "RAW-9db15a3e08c4cf9c",
+      "start": 580,
+      "end": 863
+    },
+    "source_quote": "Situational Awareness, the hedge fund started by a 24-year-old former OpenAI employee that focuses on artificial intelligence bets, has sold most or all, depending on who’s reporting, of its entire public stock portfolio to Ken Griffin’s Citadel after several bad weeks for AI stocks",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-2e286f037c6441ef",
     "raw_id": "RAW-85329032d569ec7b",
     "claim_type": "policy_regulation",
@@ -1094,12 +1504,12 @@
   {
     "claim_id": "CL-045376f2e9f9c492",
     "raw_id": "RAW-3d2eed986b2db9d4",
-    "claim_type": "funding",
+    "claim_type": "procurement_contract",
     "subject": "Axe Compute",
-    "predicate": "funding",
+    "predicate": "procurement_contract",
     "object": "$1.5 Billion Five-Year Dedicated AI",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "announced",
       "sequence": 1
     },
     "source_span": {
@@ -1173,6 +1583,28 @@
     "source_quote": "广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-98c5da6789faff03",
+    "raw_id": "RAW-4646c1368f73a678",
+    "claim_type": "model_release",
+    "subject": "ByteDance",
+    "predicate": "model_release",
+    "object": "Seedance 2.5",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f0f5017e58421ec2"
+    },
+    "source_span": {
+      "raw_id": "RAW-4646c1368f73a678",
+      "start": 154,
+      "end": 227
+    },
+    "source_quote": "ByteDance has released Seedance 2.5, a new version of its AI video model.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

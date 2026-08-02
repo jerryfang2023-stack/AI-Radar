@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "hardware": [
     {
@@ -21,7 +21,7 @@
       "hardwareType": "robot",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
+      "computeLayer": "vision-language-action (VLA) model",
       "supplier": "Google DeepMind",
       "customer": "未披露",
       "processNode": "未披露",
@@ -2111,6 +2111,67 @@
       "entityIds": [
         "EN-2b6e51bec93e86c1",
         "EN-e1086f449d58de87"
+      ]
+    },
+    {
+      "id": "HWC-9190f76a937551cc",
+      "snapshotKey": "9190f76a937551cc",
+      "snapshotId": "HWS-b978b3868814d57b",
+      "eventId": "EV-a86b04e679044c45",
+      "eventIds": [
+        "EV-a86b04e679044c45"
+      ],
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "title": "HIVE",
+      "subject": "HIVE",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "220",
+          "unit": "$million",
+          "fact_ref": "HWF-b3aa651e55cc4f35"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-02",
+          "hardware_fact_id": "HWF-b3aa651e55cc4f35",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-02T00:20:26.468Z",
+          "subject_entity_id": "EN-7640da40298286a6",
+          "subject_name": "HIVE",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "220",
+          "unit": "$million",
+          "source_quote": "HIVE disclosed that the agreement is valued at approximately $220 million and involves the deployment of 2,304 NVIDIA Grace Blackwell GPUs. Once the project is in service, HIVE expects the deal to generate about $70 million in contracted annual recurring revenue, lifting its contracted HPC revenue target to more than $100 million.",
+          "event_refs": [
+            "EV-a86b04e679044c45"
+          ],
+          "claim_ref": "CL-10039d6cfcde167e",
+          "source_refs": [
+            "SA-44b54212e5b5fa0f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "entityIds": [
+        "EN-7640da40298286a6",
+        "EN-8d4321d936320802"
       ]
     },
     {
@@ -4497,13 +4558,13 @@
       "raw_documents": 19,
       "original_sources": 15,
       "valid_claims": 1,
-      "observations": 3,
+      "observations": 6,
       "canonical_events": 1,
       "blocker_counts": {
         "source_outside_daily_window": 9,
         "rumor_requires_primary_confirmation": 2,
         "source_outside_funding_backfill_window": 1,
-        "no_source_bounded_event": 2,
+        "no_source_bounded_event": 1,
         "raw_source_quality_block": 4
       },
       "rates": {

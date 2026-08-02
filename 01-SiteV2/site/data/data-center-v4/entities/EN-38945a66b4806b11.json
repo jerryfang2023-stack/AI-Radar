@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-38945a66b4806b11",
@@ -71,14 +71,13 @@
       "name": "Microsoft",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-9ed6a759555d7e77",
         "EV-2a78dd5feb40a78a",
         "EV-97854226b6f43a95",
         "EV-86ca5af11ee4d275",
@@ -186,8 +185,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
         "TX-target_user-consumer",
         "TX-industry-manufacturing",
         "TX-use_case-security_operations",
@@ -199,20 +198,15 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
+        "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-30"
+      "lastSeen": "2026-08-02"
     }
   ],
   "relationships": [

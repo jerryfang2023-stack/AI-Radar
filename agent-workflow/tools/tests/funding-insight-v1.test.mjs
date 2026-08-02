@@ -6,7 +6,10 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import {
+  FUNDING_INDUSTRY_IDS,
   FUNDING_INSIGHT_VERSION,
+  FUNDING_TARGET_USER_IDS,
+  FUNDING_USE_CASE_IDS,
   buildFundingEntityReviewQueue,
   ensureCanonicalFundingEvidence,
   entityResolver,
@@ -21,7 +24,7 @@ import {
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
-import { selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
+import { promptFor, selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
 import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import {
@@ -34,6 +37,18 @@ import {
 } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+
+test("funding research prompt enumerates every governed taxonomy list ID", () => {
+  const prompt = promptFor(
+    { event_id: "EV-1", display_title_zh: "示例融资", event_time: "2026-08-01", action: "融资", object: "A 轮", metrics: ["$10M"] },
+    { entity_id: "EN-1", canonical_name: "Acme" },
+    [{ source_id: "SRC-1", source_url: "https://example.test", source_class: "canonical_event_source", title: "Acme funding", body_clean: "Acme raised $10 million." }],
+    [],
+  );
+  for (const id of [...FUNDING_USE_CASE_IDS, ...FUNDING_INDUSTRY_IDS, ...FUNDING_TARGET_USER_IDS]) {
+    assert.match(prompt, new RegExp(`\\b${id}\\b`, "u"));
+  }
+});
 
 test("funding generation skips event IDs already published in another date bundle", () => {
   const selection = selectFundingEventsForGeneration([
@@ -378,6 +393,15 @@ test("融资卡工作检查器只调度尚未发布的已验证融资事件", ()
     const repair = inspectFundingInsightWork(projectRoot, "2026-07-26");
     assert.equal(repair.needs_generation, true);
     assert.deepEqual(repair.pending_event_ids, ["EV-1"]);
+
+    fs.writeFileSync(output, `${JSON.stringify({
+      cards: [],
+      queue: [{ event_id: "EV-1", status: "deduplicated" }],
+    })}\n`, "utf8");
+    const deduplicated = inspectFundingInsightWork(projectRoot, "2026-07-26");
+    assert.equal(deduplicated.needs_generation, false);
+    assert.equal(deduplicated.auto_published, 1);
+    assert.deepEqual(deduplicated.pending_event_ids, []);
   } finally {
     fs.rmSync(projectRoot, { recursive: true, force: true });
   }
@@ -528,6 +552,14 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
     path.join(root, "agent-workflow/tools/assert-funding-insights-v1.mjs"),
     "utf8",
   );
+  const taxonomyClassifier = fs.readFileSync(
+    path.join(root, "agent-workflow/tools/classify-funding-taxonomy-v4-1.mjs"),
+    "utf8",
+  );
+  const taxonomyConsistencyGate = fs.readFileSync(
+    path.join(root, "agent-workflow/tools/assert-taxonomy-consistency-v4-1.mjs"),
+    "utf8",
+  );
   assert.match(workflow, /workflow_run:[\s\S]*WaveSight Business Signals PR/u);
   assert.match(workflow, /inspect-funding-insight-work\.mjs/u);
   assert.match(workflow, /TAVILY_DISABLED: "false"/u);
@@ -553,6 +585,13 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
     /verifiedFundingEventCardCoverageProblems/u,
     "the publication gate must reject a verified funding event without a valid funding card",
   );
+  assert.match(
+    taxonomyClassifier,
+    /write && incrementalInputs\.length[\s\S]*const incremental = args\.get\("refresh"\) !== "true"[\s\S]*\.\.\.existing, \.\.\.missingInputs\.map/u,
+    "the taxonomy classifier must append new funding-card decisions without reclassifying history",
+  );
+  assert.match(taxonomyConsistencyGate, /reviewedByDecisionEvent\.size !== decisionEventIds\.size/u);
+  assert.doesNotMatch(taxonomyConsistencyGate, /reviewed funding coverage must be \d+/u);
   const fundingJob = workflow.slice(workflow.indexOf("  funding-insights-pr:"));
   assert.doesNotMatch(fundingJob, /steps\.run-date\.outputs\.date/u);
 });

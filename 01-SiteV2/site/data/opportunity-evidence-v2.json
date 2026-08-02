@@ -9,11 +9,79 @@
     "activeDate": "2026-08-02",
     "generatedAt": "2026-08-02T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 836,
+    "evidenceCount": 845,
     "directionCardCount": 2,
     "sourceAdapter": "data-center-v4-canonical"
   },
   "evidence": [
+    {
+      "id": "EV-1bb68bb234c0dc36",
+      "event_id": "EV-1bb68bb234c0dc36",
+      "event_type": "deployment",
+      "publication_status": "verified",
+      "title": "鸿海子公司启动5MW AI集群商业运营",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-02",
+      "event_time": "2026-07-31T09:25:00.000Z",
+      "sourceUrl": "https://focustaiwan.tw/sci-tech/202607310015",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Visionbay.ai",
+      "sourceExcerpt": "Hon Hai Precision Industry Co. said Friday that its subsidiary Visionbay.ai has begun commercial operations of a 5-megawatt AI cluster built using Nvidia's HGX B300 systems, with more than 90 percent of its capacity already in use.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-259ee01c05211cf9",
+          "canonical_name": "Visionbay.ai",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-1735bf609304cba6"
+      ],
+      "source_refs": [
+        "SA-97e5a9ddd5803afa"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "customer_deployment",
+            "claim_ref": "CL-1735bf609304cba6",
+            "source_refs": [
+              "SA-97e5a9ddd5803afa"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "customer_deployment"
+          ]
+        }
+      }
+    },
     {
       "id": "EV-5d185ac33faedb68",
       "event_id": "EV-5d185ac33faedb68",
@@ -103,6 +171,79 @@
           "delivery_model": [],
           "business_action": [
             "partnership_integration"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-6543befe60fcbd5a",
+      "event_id": "EV-6543befe60fcbd5a",
+      "event_type": "procurement_contract",
+      "publication_status": "partial",
+      "title": "Axe Compute 获得15亿美元五年期专用AI",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-02",
+      "event_time": "2026-07-27T00:00:00.000Z",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Axe Compute",
+      "sourceExcerpt": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI # Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value July 27, 2026 08:30 ET | Source: Axe Compute Inc Axe Compute Inc --- - Five‑year, $1.5 billion B300 clu... / query=AI server startup funding GPU cluster customers / intent=find_startups / path=hardware_shipment_deployment",
+      "entity_refs": [
+        {
+          "entity_id": "EN-54dfb14dcddad637",
+          "canonical_name": "Axe Compute",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-045376f2e9f9c492"
+      ],
+      "source_refs": [
+        "SA-aded6a9205672ced"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "data_analysis_query",
+            "claim_ref": "CL-045376f2e9f9c492",
+            "source_refs": [
+              "SA-aded6a9205672ced"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-045376f2e9f9c492",
+            "source_refs": [
+              "SA-aded6a9205672ced"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "data_analysis_query"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
           ]
         }
       }
@@ -452,6 +593,199 @@
       }
     },
     {
+      "id": "EV-a86b04e679044c45",
+      "event_id": "EV-a86b04e679044c45",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "HIVE 与 Bell 和 Cohere 达成 2.2 亿美元 AI 基础设施交易",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-02",
+      "event_time": "",
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "HIVE",
+      "sourceExcerpt": "HIVE’s BUZZ HPC has signed a three-year GPU cloud contract worth about $220 million with Bell AI Fabric for Cohere.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-7640da40298286a6",
+          "canonical_name": "HIVE",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-d6a25b86abded48c",
+        "CL-5de98d55113ff034",
+        "CL-7004befe7a921e36",
+        "CL-10039d6cfcde167e"
+      ],
+      "source_refs": [
+        "SA-44b54212e5b5fa0f"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "compute_cloud_service",
+          "value_name": "算力云服务",
+          "entity_ids": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "public_sector_user",
+          "value_name": "公共部门用户",
+          "entity_ids": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-d6a25b86abded48c",
+            "source_refs": [
+              "SA-44b54212e5b5fa0f"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-fd825cd7f7997fc8",
+      "event_id": "EV-fd825cd7f7997fc8",
+      "event_type": "procurement_contract",
+      "publication_status": "verified",
+      "title": "NC AI 获韩国3400万美元企业级智能体项目，Gabia 作为实际测试平台",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-08-02",
+      "event_time": "2026-08-01T17:31:36.000Z",
+      "sourceUrl": "https://www.techtimes.com/articles/322608/20260801/nc-ai-lands-koreas-34m-agentic-enterprise-mandate-gabia-live-testbed.htm",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "NC AI",
+      "sourceExcerpt": "NC AI Lands Korea’s $34M Agentic Enterprise Mandate With Gabia as Live Testbed",
+      "entity_refs": [
+        {
+          "entity_id": "EN-6b182ca786385b1e",
+          "canonical_name": "NC AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-a26b29e711c0cf89",
+        "CL-e8fab33381d0adb5",
+        "CL-de1a68594c066009",
+        "CL-0ae8b19d2c7b3d9e"
+      ],
+      "source_refs": [
+        "SA-5fb11bdff5bb0aaa"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-6b182ca786385b1e"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [
+          {
+            "value_id": "evaluation_gap",
+            "claim_ref": "CL-e8fab33381d0adb5",
+            "source_refs": [
+              "SA-5fb11bdff5bb0aaa"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "procurement_signal",
+            "claim_ref": "CL-a26b29e711c0cf89",
+            "source_refs": [
+              "SA-5fb11bdff5bb0aaa"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [
+            "evaluation_gap"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "procurement_signal"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-4f9f6ea05a1f889a",
       "event_id": "EV-4f9f6ea05a1f889a",
       "event_type": "funding",
@@ -460,7 +794,7 @@
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-08-02",
-      "event_time": "",
+      "event_time": "2026-08-01T20:00:23.000Z",
       "sourceUrl": "https://www.startupresearcher.com/news/strattum-raises-3-2m-pre-seed-to-build-corporate-ai-brains",
       "sourceName": "keyword search / Anysearch",
       "subject": "Strattum",
@@ -556,56 +890,96 @@
       }
     },
     {
-      "id": "EV-faf8db3567f108e2",
-      "event_id": "EV-faf8db3567f108e2",
+      "id": "EV-914ca1cbc6359ce5",
+      "event_id": "EV-914ca1cbc6359ce5",
       "event_type": "funding",
-      "publication_status": "partial",
-      "title": "Axe Compute 获得15亿美元五年期专用AI",
+      "publication_status": "verified",
+      "title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
       "category": "funding",
       "categoryLabel": "融资",
       "date": "2026-08-02",
-      "event_time": "",
-      "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
+      "event_time": "2026-08-01T00:00:00.000Z",
+      "sourceUrl": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
       "sourceName": "keyword search / Anysearch",
-      "subject": "Axe Compute",
-      "sourceExcerpt": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI # Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value July 27, 2026 08:30 ET | Source: Axe Compute Inc Axe Compute Inc --- - Five‑year, $1.5 billion B300 clu... / query=AI server startup funding GPU cluster customers / intent=find_startups / path=hardware_shipment_deployment",
+      "subject": "Smallest.ai",
+      "sourceExcerpt": "Smallest.ai raised a $13 million Series A, taking total funding past $21 million to expand its real-time enterprise voice AI platform.",
       "entity_refs": [
         {
-          "entity_id": "EN-54dfb14dcddad637",
-          "canonical_name": "Axe Compute",
+          "entity_id": "EN-65e9e514ecf0d270",
+          "canonical_name": "Smallest.ai",
           "entity_type": "organization_candidate",
           "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-dca6ec9510fc0176",
+          "canonical_name": "Sierra",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
-        "CL-045376f2e9f9c492"
+        "CL-545632e93f6664ec",
+        "CL-16ed377f06b0f7a5"
       ],
       "source_refs": [
-        "SA-aded6a9205672ced"
+        "SA-76b1451b563345ba"
       ],
       "taxonomy_version": "TAG-V4.1",
       "classifications": [
         {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "chip_accelerator",
-          "value_name": "芯片与加速器",
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
           "entity_ids": [
-            "EN-54dfb14dcddad637"
+            "EN-65e9e514ecf0d270"
           ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-063b857a8efa10d3"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-65e9e514ecf0d270"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-1b7b03b52d8cc428"
         },
         {
           "dimension_id": "product_form",
           "dimension_name": "产品形态",
-          "value_id": "ai_compute_system",
-          "value_name": "AI 计算系统",
+          "value_id": "enterprise_software_platform",
+          "value_name": "企业软件平台",
           "entity_ids": [
-            "EN-54dfb14dcddad637"
+            "EN-65e9e514ecf0d270"
           ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-640012f173de9e14"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-65e9e514ecf0d270"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-880ff27e401a5a2a"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-65e9e514ecf0d270"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-2209e4d224520b54"
         }
       ],
       "application_assertions": {
@@ -613,23 +987,41 @@
         "team_or_function": [],
         "specific_task": [
           {
-            "value_id": "data_analysis_query",
-            "claim_ref": "CL-045376f2e9f9c492",
+            "value_id": "knowledge_base_qa",
+            "claim_ref": "CL-16ed377f06b0f7a5",
             "source_refs": [
-              "SA-aded6a9205672ced"
+              "SA-76b1451b563345ba"
             ],
             "provenance": "exact_claim_rule"
           }
         ],
-        "pain_or_constraint": [],
-        "product_form": [],
+        "pain_or_constraint": [
+          {
+            "value_id": "latency_sensitive",
+            "claim_ref": "CL-545632e93f6664ec",
+            "source_refs": [
+              "SA-76b1451b563345ba"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [
+          {
+            "value_id": "workflow_automation",
+            "claim_ref": "CL-545632e93f6664ec",
+            "source_refs": [
+              "SA-76b1451b563345ba"
+            ],
+            "provenance": "v4_facet_projection"
+          }
+        ],
         "delivery_model": [],
         "business_action": [
           {
             "value_id": "funding_round",
-            "claim_ref": "CL-045376f2e9f9c492",
+            "claim_ref": "CL-545632e93f6664ec",
             "source_refs": [
-              "SA-aded6a9205672ced"
+              "SA-76b1451b563345ba"
             ],
             "provenance": "event_type_rule"
           }
@@ -640,8 +1032,154 @@
           "buyer_or_user": [],
           "team_or_function": [],
           "specific_task": [
-            "data_analysis_query"
+            "knowledge_base_qa"
           ],
+          "pain_or_constraint": [
+            "latency_sensitive"
+          ],
+          "product_form": [
+            "workflow_automation"
+          ],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-9ed6a759555d7e77",
+      "event_id": "EV-9ed6a759555d7e77",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Harmony 获 3400 万美元种子轮融资，用于在 Slack 和 Teams 中部署 AI 智能体",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-02",
+      "event_time": "2026-08-01T13:54:23.000Z",
+      "sourceUrl": "https://aiweekly.co/alerts/harmony-lands-34m-seed-for-ai-agents-inside-slack-and-teams",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Harmony",
+      "sourceExcerpt": "Harmony raised $34 million in seed funding led by Lightspeed Venture Partners to embed AI agents inside Slack and Microsoft Teams for employee support.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-2be663431f007250",
+          "canonical_name": "Harmony",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-b2cdabb6a2e54599"
+      ],
+      "source_refs": [
+        "SA-e6c722e0bef682c9"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体执行",
+          "entity_ids": [
+            "EN-2be663431f007250"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-b2cdabb6a2e54599",
+            "source_refs": [
+              "SA-e6c722e0bef682c9"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-a644b20d68e0b31a",
+      "event_id": "EV-a644b20d68e0b31a",
+      "event_type": "capital_investment",
+      "publication_status": "verified",
+      "title": "SK海力士加速AI内存扩张，清州封装厂获批",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-08-02",
+      "event_time": "2026-08-01T17:38:11.000Z",
+      "sourceUrl": "https://noah-news.com/sk-hynix-accelerates-ai-memory-expansion-with-new-cheongju-packaging-plant-appro/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "SK hynix",
+      "sourceExcerpt": "SK hynix has secured approval to raise investment in its P&T7 advanced packaging plant in Cheongju",
+      "entity_refs": [
+        {
+          "entity_id": "EN-026836921a4d049c",
+          "canonical_name": "SK hynix",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-d16698fb7df2e3c7"
+      ],
+      "source_refs": [
+        "SA-3f4efef97aa7bdb6"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-d16698fb7df2e3c7",
+            "source_refs": [
+              "SA-3f4efef97aa7bdb6"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
@@ -1032,6 +1570,74 @@
       }
     },
     {
+      "id": "EV-c157bdbedac35fa3",
+      "event_id": "EV-c157bdbedac35fa3",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "字节跳动Seedance 2.5生成带内置音频的30秒视频片段",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-02",
+      "event_time": "2026-08-01T13:33:41.000Z",
+      "sourceUrl": "https://the-decoder.com/bytedances-seedance-2-5-generates-30-second-video-clips-with-built-in-audio/",
+      "sourceName": "The Decoder AI News",
+      "subject": "ByteDance",
+      "sourceExcerpt": "ByteDance has released Seedance 2.5, a new version of its AI video model.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-5388bc10736a0eff",
+          "canonical_name": "ByteDance",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-a1bd86e3549f6243",
+          "canonical_name": "Seedance 2.5",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-98c5da6789faff03"
+      ],
+      "source_refs": [
+        "SA-0f1577d5a5464ca1"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-98c5da6789faff03",
+            "source_refs": [
+              "SA-0f1577d5a5464ca1"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-cf4da5583e9311d7",
       "event_id": "EV-cf4da5583e9311d7",
       "event_type": "product_release",
@@ -1095,6 +1701,98 @@
             "claim_ref": "CL-b6ad8194c03174aa",
             "source_refs": [
               "SA-04d41f23e2787b78"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-eaec68a02bfa3db0",
+      "event_id": "EV-eaec68a02bfa3db0",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "product_release GPU Driver 595.71.05, NVIDIA Virtual GPU Manager 595.71.03, vGPU for Compute Guest Driver, NVIDIA Run:ai 2.25, NVIDIA DOCA 3.4.0, Kubernetes operators, NVIDIA Container Toolkit 1.19.1, Base Command Manager 11.33.1",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-08-02",
+      "event_time": "",
+      "sourceUrl": "https://docs.nvidia.com/ai-enterprise/index.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "NVIDIA",
+      "sourceExcerpt": "Infrastructure 8.1 (Production Branch) - Released May 2026, this Production Branch (PB) includes GPU Driver 595.71.05, NVIDIA Virtual GPU Manager 595.71.03 and vGPU for Compute Guest Driver (Linux 595.71.05 / Windows 596.36), NVIDIA Run:ai 2.25 (self-hosted) plus NVIDIA Run:ai SaaS, NVIDIA DOCA 3.4.0, and updated Kubernetes operators (GPU Operator 26.3.3, Network Operator 26.4.0, DPU Operator (DPF) 26.4.0, NIM Operator 3.1.1) along with NVIDIA Container Toolkit 1.19.1 and Base Command Manager 11.33.1.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-0cef4501a280ca24",
+          "canonical_name": "GPU Driver 595.71.05",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-3fee13bf993bb8e0",
+        "CL-8719bf4a1c707b23"
+      ],
+      "source_refs": [
+        "SA-5b5a3e6894201597"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "deployment_model",
+          "dimension_name": "部署形态",
+          "value_id": "on_premise",
+          "value_name": "本地部署",
+          "entity_ids": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-3fee13bf993bb8e0",
+            "source_refs": [
+              "SA-5b5a3e6894201597"
             ],
             "provenance": "event_type_rule"
           }
@@ -8628,6 +9326,71 @@
             "claim_ref": "CL-718d02f63ce96f31",
             "source_refs": [
               "SA-103784e9d07ae76d"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-faf8db3567f108e2",
+      "event_id": "EV-faf8db3567f108e2",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-07-29",
+      "event_time": "2026-07-27T00:00:00.000Z",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Axe Compute",
+      "sourceExcerpt": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value",
+      "entity_refs": [
+        {
+          "entity_id": "EN-54dfb14dcddad637",
+          "canonical_name": "Axe Compute",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-26870ef1004baa7c",
+        "CL-a8506ee08b5addcb",
+        "CL-21802cf1f33d32cd",
+        "CL-7cc575266f86b93c"
+      ],
+      "source_refs": [
+        "SA-392b9e6867dafc43"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-26870ef1004baa7c",
+            "source_refs": [
+              "SA-392b9e6867dafc43"
             ],
             "provenance": "event_type_rule"
           }

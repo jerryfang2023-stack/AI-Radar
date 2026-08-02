@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-dca6ec9510fc0176",
@@ -22,6 +22,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-914ca1cbc6359ce5",
       "EV-64fb6d791e19d10a",
       "EV-a9d0bb672c5ec0ab",
       "EV-736404028b8ad33e",
@@ -34,10 +35,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-03-04",
-    "lastSeen": "2026-07-18",
+    "lastSeen": "2026-08-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-914ca1cbc6359ce5",
         "EV-64fb6d791e19d10a",
         "EV-a9d0bb672c5ec0ab",
         "EV-736404028b8ad33e"
@@ -54,6 +56,83 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-914ca1cbc6359ce5",
+        "dataDate": "2026-08-02",
+        "date": "2026-08-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-65e9e514ecf0d270"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-063b857a8efa10d3",
+            "fundingInsightId": "FI-12926d5682fee68e"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-65e9e514ecf0d270"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1b7b03b52d8cc428",
+            "fundingInsightId": "FI-12926d5682fee68e"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-65e9e514ecf0d270"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-640012f173de9e14",
+            "fundingInsightId": "FI-12926d5682fee68e"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-65e9e514ecf0d270"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2209e4d224520b54",
+            "fundingInsightId": "FI-12926d5682fee68e"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-65e9e514ecf0d270"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-880ff27e401a5a2a",
+            "fundingInsightId": "FI-12926d5682fee68e"
+          }
+        ],
+        "entityIds": [
+          "EN-65e9e514ecf0d270",
+          "EN-dca6ec9510fc0176"
+        ]
+      },
       {
         "id": "EV-05a87b578967c83e",
         "dataDate": "2026-07-18",

@@ -73,6 +73,7 @@ function applyIntakeTitleMetadata(raw = {}, document = {}) {
     ...raw,
     title: clean(document.title_original) || clean(raw.title),
     title_zh: clean(document.title_zh) || clean(raw.title_zh),
+    published_at: clean(document.published_at) || clean(raw.published_at),
     source_registry_id: clean(marketScope.source_registry_id) || clean(raw.source_registry_id),
     source_region: clean(marketScope.source_region) || clean(raw.source_region),
     market_region: clean(marketScope.market_region) || clean(raw.market_region),

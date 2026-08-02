@@ -7,7 +7,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:53.635Z",
+    "generatedAt": "2026-08-02T06:26:57.878Z",
     "latestDataDate": "2026-08-02",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -37,9 +37,9 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 1710,
+      "events": 1719,
       "entities": 598,
-      "relationships": 354
+      "relationships": 339
     }
   },
   "events": {
@@ -69,54 +69,137 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-4f9f6ea05a1f889a"
     },
-    "EV-faf8db3567f108e2": {
-      "id": "EV-faf8db3567f108e2",
+    "EV-914ca1cbc6359ce5": {
+      "id": "EV-914ca1cbc6359ce5",
       "dataDate": "2026-08-02",
-      "occurrenceDate": "2026-08-02",
+      "occurrenceDate": "2026-08-01",
       "eventType": "funding",
       "eventTypeLabel": "融资",
-      "publicationStatus": "partial",
+      "publicationStatus": "verified",
       "category": "financing",
-      "title": "Axe Compute 获得15亿美元五年期专用AI",
-      "entityIds": [],
+      "title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
+      "entityIds": [
+        "EN-dca6ec9510fc0176"
+      ],
       "entityNames": [
-        "Axe Compute"
+        "Smallest.ai",
+        "Sierra"
       ],
       "productNames": [],
       "classifications": [
         {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
           "entityIds": [
-            "EN-54dfb14dcddad637"
+            "EN-65e9e514ecf0d270"
           ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-063b857a8efa10d3",
+          "fundingInsightId": "FI-12926d5682fee68e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-65e9e514ecf0d270"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1b7b03b52d8cc428",
+          "fundingInsightId": "FI-12926d5682fee68e"
         },
         {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
-          "id": "ai_compute_system",
-          "name": "AI 计算系统",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
           "entityIds": [
-            "EN-54dfb14dcddad637"
+            "EN-65e9e514ecf0d270"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-640012f173de9e14",
+          "fundingInsightId": "FI-12926d5682fee68e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-65e9e514ecf0d270"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-880ff27e401a5a2a",
+          "fundingInsightId": "FI-12926d5682fee68e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-65e9e514ecf0d270"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2209e4d224520b54",
+          "fundingInsightId": "FI-12926d5682fee68e"
+        }
+      ],
+      "claimIds": [
+        "CL-545632e93f6664ec",
+        "CL-16ed377f06b0f7a5"
+      ],
+      "sourceIds": [
+        "SA-76b1451b563345ba"
+      ],
+      "sourceUrl": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding",
+      "publisher": "thecatalystonline.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-914ca1cbc6359ce5"
+    },
+    "EV-9ed6a759555d7e77": {
+      "id": "EV-9ed6a759555d7e77",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-08-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "Harmony 获 3400 万美元种子轮融资，用于在 Slack 和 Teams 中部署 AI 智能体",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Harmony",
+        "Microsoft"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-2be663431f007250"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
       "claimIds": [
-        "CL-045376f2e9f9c492"
+        "CL-b2cdabb6a2e54599"
       ],
       "sourceIds": [
-        "SA-aded6a9205672ced"
+        "SA-e6c722e0bef682c9"
       ],
-      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
-      "publisher": "globenewswire.com",
+      "sourceUrl": "https://aiweekly.co/alerts/harmony-lands-34m-seed-for-ai-agents-inside-slack-and-teams",
+      "publisher": "aiweekly.co",
       "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-faf8db3567f108e2"
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-9ed6a759555d7e77"
     },
     "EV-e9e30789854cd180": {
       "id": "EV-e9e30789854cd180",
@@ -277,6 +360,35 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-00514c4ffc2e3cd3"
     },
+    "EV-81a37a2365624b42": {
+      "id": "EV-81a37a2365624b42",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-07-31",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "失去Situational Awareness",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Citadel",
+        "OpenAI"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-6bbbb97410ea8594"
+      ],
+      "sourceIds": [
+        "SA-1c64b7fd7a109d47"
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
+      "publisher": "The Verge AI",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-81a37a2365624b42"
+    },
     "EV-792e2a2b3e98399f": {
       "id": "EV-792e2a2b3e98399f",
       "dataDate": "2026-08-01",
@@ -306,35 +418,6 @@
       "publisher": "TechCrunch：AI（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-792e2a2b3e98399f"
-    },
-    "EV-81a37a2365624b42": {
-      "id": "EV-81a37a2365624b42",
-      "dataDate": "2026-08-01",
-      "occurrenceDate": "2026-07-31",
-      "eventType": "acquisition",
-      "eventTypeLabel": "并购",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "Situational Awareness 的失利",
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "Citadel",
-        "OpenAI"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-d0e683a6a34cfe5b"
-      ],
-      "sourceIds": [
-        "SA-1c64b7fd7a109d47"
-      ],
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
-      "publisher": "The Verge AI",
-      "metricDisclosed": false,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-81a37a2365624b42"
     },
     "EV-53253b5e23970958": {
       "id": "EV-53253b5e23970958",
@@ -1399,6 +1482,35 @@
       "publisher": "globenewswire.com",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-33b3cf34f8ff7bd8"
+    },
+    "EV-faf8db3567f108e2": {
+      "id": "EV-faf8db3567f108e2",
+      "dataDate": "2026-07-29",
+      "occurrenceDate": "2026-07-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
+      "entityIds": [],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-26870ef1004baa7c",
+        "CL-a8506ee08b5addcb",
+        "CL-21802cf1f33d32cd",
+        "CL-7cc575266f86b93c"
+      ],
+      "sourceIds": [
+        "SA-392b9e6867dafc43"
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
+      "publisher": "globenewswire.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-faf8db3567f108e2"
     },
     "EV-eb881f5de456b59a": {
       "id": "EV-eb881f5de456b59a",
@@ -33151,6 +33263,113 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-1196b80b537957f2"
     },
+    "EV-a86b04e679044c45": {
+      "id": "EV-a86b04e679044c45",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-08-02",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "publicationStatus": "verified",
+      "category": "partnership",
+      "title": "HIVE 与 Bell 和 Cohere 达成 2.2 亿美元 AI 基础设施交易",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "HIVE",
+        "NVIDIA"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-7640da40298286a6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-d6a25b86abded48c",
+        "CL-5de98d55113ff034",
+        "CL-7004befe7a921e36",
+        "CL-10039d6cfcde167e"
+      ],
+      "sourceIds": [
+        "SA-44b54212e5b5fa0f"
+      ],
+      "sourceUrl": "https://bitrss.com/hive-wins-220m-ai-infrastructure-deal-with-bell-and-cohere-222684",
+      "publisher": "bitrss.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-a86b04e679044c45"
+    },
+    "EV-fd825cd7f7997fc8": {
+      "id": "EV-fd825cd7f7997fc8",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-08-02",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "publicationStatus": "verified",
+      "category": "partnership",
+      "title": "NC AI 获韩国3400万美元企业级智能体项目，Gabia 作为实际测试平台",
+      "entityIds": [],
+      "entityNames": [
+        "NC AI"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6b182ca786385b1e"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-a26b29e711c0cf89",
+        "CL-e8fab33381d0adb5",
+        "CL-de1a68594c066009",
+        "CL-0ae8b19d2c7b3d9e"
+      ],
+      "sourceIds": [
+        "SA-5fb11bdff5bb0aaa"
+      ],
+      "sourceUrl": "https://techtimes.com/articles/322608/20260801/nc-ai-lands-koreas-34m-agentic-enterprise-mandate-gabia-live-testbed.htm",
+      "publisher": "techtimes.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-fd825cd7f7997fc8"
+    },
     "EV-a4b7cd533b0b34dc": {
       "id": "EV-a4b7cd533b0b34dc",
       "dataDate": "2026-08-02",
@@ -33183,6 +33402,35 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-a4b7cd533b0b34dc"
+    },
+    "EV-1bb68bb234c0dc36": {
+      "id": "EV-1bb68bb234c0dc36",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-07-31",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "publicationStatus": "verified",
+      "category": "deployment",
+      "title": "鸿海子公司启动5MW AI集群商业运营",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Visionbay.ai",
+        "NVIDIA"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-1735bf609304cba6"
+      ],
+      "sourceIds": [
+        "SA-97e5a9ddd5803afa"
+      ],
+      "sourceUrl": "https://focustaiwan.tw/sci-tech/202607310015",
+      "publisher": "focustaiwan.tw",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-1bb68bb234c0dc36"
     },
     "EV-492029b381c06283": {
       "id": "EV-492029b381c06283",
@@ -33582,6 +33830,32 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-e3fe8993f46d5e12"
+    },
+    "EV-6543befe60fcbd5a": {
+      "id": "EV-6543befe60fcbd5a",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-07-27",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "publicationStatus": "partial",
+      "category": "partnership",
+      "title": "Axe Compute 获得15亿美元五年期专用AI",
+      "entityIds": [],
+      "entityNames": [
+        "Axe Compute"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-045376f2e9f9c492"
+      ],
+      "sourceIds": [
+        "SA-aded6a9205672ced"
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
+      "publisher": "globenewswire.com",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-6543befe60fcbd5a"
     },
     "EV-c3b96b789b5bcafd": {
       "id": "EV-c3b96b789b5bcafd",
@@ -46435,6 +46709,46 @@
       "publisher": "IT之家（RSS）",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-b27f2e417d779e5f"
+    },
+    "EV-c157bdbedac35fa3": {
+      "id": "EV-c157bdbedac35fa3",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-08-01",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "字节跳动Seedance 2.5生成带内置音频的30秒视频片段",
+      "entityIds": [
+        "EN-5388bc10736a0eff"
+      ],
+      "entityNames": [
+        "ByteDance",
+        "Seedance 2.5"
+      ],
+      "productNames": [
+        {
+          "name": "Seedance 2.5",
+          "type": "模型",
+          "ownerNames": [
+            "ByteDance"
+          ]
+        }
+      ],
+      "classifications": [],
+      "marketScopes": [
+        "actor_origin"
+      ],
+      "claimIds": [
+        "CL-98c5da6789faff03"
+      ],
+      "sourceIds": [
+        "SA-0f1577d5a5464ca1"
+      ],
+      "sourceUrl": "https://the-decoder.com/bytedances-seedance-2-5-generates-30-second-video-clips-with-built-in-audio",
+      "publisher": "The Decoder AI News",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-c157bdbedac35fa3"
     },
     "EV-7752b9d64fdfe1df": {
       "id": "EV-7752b9d64fdfe1df",
@@ -90816,6 +91130,32 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-6eec30dc1c4f67d5"
     },
+    "EV-a644b20d68e0b31a": {
+      "id": "EV-a644b20d68e0b31a",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-08-02",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "SK海力士加速AI内存扩张，清州封装厂获批",
+      "entityIds": [],
+      "entityNames": [
+        "SK hynix"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-d16698fb7df2e3c7"
+      ],
+      "sourceIds": [
+        "SA-3f4efef97aa7bdb6"
+      ],
+      "sourceUrl": "https://noah-news.com/sk-hynix-accelerates-ai-memory-expansion-with-new-cheongju-packaging-plant-appro",
+      "publisher": "noah-news.com",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-a644b20d68e0b31a"
+    },
     "EV-cc80acf85eec6a3b": {
       "id": "EV-cc80acf85eec6a3b",
       "dataDate": "2026-08-02",
@@ -90859,6 +91199,33 @@
       "publisher": "cac.gov.cn",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-cc80acf85eec6a3b"
+    },
+    "EV-dc7ae55e1d2259de": {
+      "id": "EV-dc7ae55e1d2259de",
+      "dataDate": "2026-08-02",
+      "occurrenceDate": "2026-08-01",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "publicationStatus": "partial",
+      "category": "other",
+      "title": "我国在联合国举行2026世界人工智能大会吹风会：将秉持开源开放谋划全球治理",
+      "entityIds": [],
+      "entityNames": [
+        "世界人工智能合作组织"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-c36d101cec31a7e8",
+        "CL-1bc8ca53e5d9f771"
+      ],
+      "sourceIds": [
+        "SA-c36a95356264b5f3"
+      ],
+      "sourceUrl": "https://ithome.com/0/984/612.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-dc7ae55e1d2259de"
     },
     "EV-0e9f000dd04fe04c": {
       "id": "EV-0e9f000dd04fe04c",
@@ -103115,35 +103482,43 @@
         "2026-08-02": {
           "key": "2026-08-02",
           "counts": {
-            "financing": 3,
-            "deployment": 1,
-            "partnership": 3,
-            "product": 5,
+            "financing": 6,
+            "deployment": 2,
+            "partnership": 6,
+            "product": 6,
             "hardware": 1
           },
           "eventIds": [
+            "EV-1bb68bb234c0dc36",
             "EV-4f9f6ea05a1f889a",
             "EV-5d185ac33faedb68",
             "EV-6374a712070b1f8c",
+            "EV-6543befe60fcbd5a",
             "EV-76e7dc691b68fa04",
+            "EV-81a37a2365624b42",
             "EV-8f1b01897707b941",
+            "EV-914ca1cbc6359ce5",
+            "EV-9ed6a759555d7e77",
             "EV-a3e674dce15e7188",
             "EV-a4b7cd533b0b34dc",
+            "EV-a644b20d68e0b31a",
+            "EV-a86b04e679044c45",
             "EV-b27f2e417d779e5f",
+            "EV-c157bdbedac35fa3",
             "EV-cf4da5583e9311d7",
             "EV-e9e30789854cd180",
             "EV-eb12fb9dd08e5aad",
             "EV-f3e0915e13bcc5a1",
-            "EV-faf8db3567f108e2"
+            "EV-fd825cd7f7997fc8"
           ],
-          "otherCount": 3,
-          "totalAccepted": 16,
+          "otherCount": 4,
+          "totalAccepted": 25,
           "coverage": "数据中心于 2026-08-02 接受的事件；事件发生日期可能不同。"
         },
         "2026-08-01": {
           "key": "2026-08-01",
           "counts": {
-            "financing": 4,
+            "financing": 3,
             "deployment": 0,
             "partnership": 1,
             "product": 11,
@@ -103156,7 +103531,6 @@
             "EV-7752b9d64fdfe1df",
             "EV-792e2a2b3e98399f",
             "EV-7fdffebf867b2bd7",
-            "EV-81a37a2365624b42",
             "EV-8f2787ceb5224cc9",
             "EV-a89a5b511c643be8",
             "EV-b4f38d8bff12727b",
@@ -103168,7 +103542,7 @@
             "EV-f01a57b8fbd2518e"
           ],
           "otherCount": 6,
-          "totalAccepted": 22,
+          "totalAccepted": 21,
           "coverage": "数据中心于 2026-08-01 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-31": {
@@ -103236,7 +103610,7 @@
         "2026-07-29": {
           "key": "2026-07-29",
           "counts": {
-            "financing": 7,
+            "financing": 8,
             "deployment": 6,
             "partnership": 5,
             "product": 17,
@@ -103278,10 +103652,11 @@
             "EV-d1d36268ff74be0e",
             "EV-d86b79f7663f35e7",
             "EV-dda9429d76897a3d",
-            "EV-e34e2d79df7412a7"
+            "EV-e34e2d79df7412a7",
+            "EV-faf8db3567f108e2"
           ],
           "otherCount": 3,
-          "totalAccepted": 39,
+          "totalAccepted": 40,
           "coverage": "数据中心于 2026-07-29 接受的事件；事件发生日期可能不同。"
         },
         "2026-07-28": {
@@ -105747,23 +106122,23 @@
             "2026-08-02"
           ],
           "counts": {
-            "financing": 35,
-            "deployment": 13,
-            "partnership": 30,
-            "product": 80,
+            "financing": 38,
+            "deployment": 14,
+            "partnership": 33,
+            "product": 81,
             "hardware": 4
           },
-          "totalAccepted": 194,
-          "trackedCount": 162,
-          "otherCount": 32,
+          "totalAccepted": 203,
+          "trackedCount": 170,
+          "otherCount": 33,
           "activeEntities": [
             {
               "entityId": "EN-7d3194f79e645c42",
               "eventIds": [
+                "EV-81a37a2365624b42",
                 "EV-a3e674dce15e7188",
                 "EV-35df5cc7eacdade7",
                 "EV-7752b9d64fdfe1df",
-                "EV-81a37a2365624b42",
                 "EV-b4f38d8bff12727b",
                 "EV-d9d415868b74485c",
                 "EV-ebd76d18d3f0ee7b",
@@ -105818,6 +106193,7 @@
             {
               "entityId": "EN-9fbf261b62c1d7c0",
               "eventIds": [
+                "EV-9ed6a759555d7e77",
                 "EV-4c949b6aac6d26e7",
                 "EV-2a78dd5feb40a78a",
                 "EV-3eb44a239ebef4b0",
@@ -105836,6 +106212,25 @@
               "categoryCount": 4
             },
             {
+              "entityId": "EN-8d4321d936320802",
+              "eventIds": [
+                "EV-1bb68bb234c0dc36",
+                "EV-a86b04e679044c45",
+                "EV-6272444f30281858",
+                "EV-87b7a16e70770a36",
+                "EV-92be9fa58b1ee19f",
+                "EV-afb3bceddc36a696",
+                "EV-c4f8ef356373ab24",
+                "EV-f55d16df5b5fecb2",
+                "EV-06526dd6cb2157f4",
+                "EV-0d424ee04b1860ce",
+                "EV-98aa6402a8e256db",
+                "EV-cd7e18de453152dd",
+                "EV-da1655ecfaf35feb"
+              ],
+              "categoryCount": 4
+            },
+            {
               "entityId": "EN-bbdefa2950f49882",
               "eventIds": [
                 "EV-a4b7cd533b0b34dc",
@@ -105850,23 +106245,6 @@
                 "EV-395884a4c090103c",
                 "EV-6f26809c0ae960a8",
                 "EV-f55d16df5b5fecb2"
-              ],
-              "categoryCount": 3
-            },
-            {
-              "entityId": "EN-8d4321d936320802",
-              "eventIds": [
-                "EV-6272444f30281858",
-                "EV-87b7a16e70770a36",
-                "EV-92be9fa58b1ee19f",
-                "EV-afb3bceddc36a696",
-                "EV-c4f8ef356373ab24",
-                "EV-f55d16df5b5fecb2",
-                "EV-06526dd6cb2157f4",
-                "EV-0d424ee04b1860ce",
-                "EV-98aa6402a8e256db",
-                "EV-cd7e18de453152dd",
-                "EV-da1655ecfaf35feb"
               ],
               "categoryCount": 3
             },
@@ -105999,6 +106377,7 @@
             }
           ],
           "deploymentEventIds": [
+            "EV-1bb68bb234c0dc36",
             "EV-a4b7cd533b0b34dc",
             "EV-492029b381c06283",
             "EV-2d9fde7bc0cd7a22",
@@ -120624,10 +121003,10 @@
             "2026-08-02"
           ],
           "counts": {
-            "financing": 7,
-            "deployment": 1,
-            "partnership": 4,
-            "product": 16,
+            "financing": 9,
+            "deployment": 2,
+            "partnership": 7,
+            "product": 17,
             "hardware": 1
           },
           "previousMonth": "2026-07",
@@ -120647,28 +121026,30 @@
             "hardware": 1
           },
           "deltas": {
-            "financing": -1,
-            "deployment": -8,
-            "partnership": 1,
-            "product": -19,
+            "financing": 1,
+            "deployment": -7,
+            "partnership": 4,
+            "product": -18,
             "hardware": 0
           },
-          "totalAccepted": 38,
-          "trackedCount": 29,
-          "otherCount": 9,
+          "totalAccepted": 46,
+          "trackedCount": 36,
+          "otherCount": 10,
           "newCompanies": [],
           "newProducts": [],
           "financing": {
             "eventIds": [
               "EV-4f9f6ea05a1f889a",
+              "EV-81a37a2365624b42",
+              "EV-914ca1cbc6359ce5",
+              "EV-9ed6a759555d7e77",
+              "EV-a644b20d68e0b31a",
               "EV-e9e30789854cd180",
-              "EV-faf8db3567f108e2",
               "EV-00514c4ffc2e3cd3",
               "EV-792e2a2b3e98399f",
-              "EV-81a37a2365624b42",
               "EV-b4f38d8bff12727b"
             ],
-            "disclosedMetricCount": 4
+            "disclosedMetricCount": 5
           },
           "distributions": {
             "marketCategory": [
@@ -120679,6 +121060,14 @@
                   "EV-00514c4ffc2e3cd3"
                 ],
                 "count": 1
+              },
+              {
+                "id": "enterprise_applications",
+                "name": "企业级应用",
+                "eventIds": [
+                  "EV-914ca1cbc6359ce5"
+                ],
+                "count": 1
               }
             ],
             "marketSubcategory": [
@@ -120687,6 +121076,14 @@
                 "name": "开发与部署",
                 "eventIds": [
                   "EV-00514c4ffc2e3cd3"
+                ],
+                "count": 1
+              },
+              {
+                "id": "productivity_enterprise_workflows",
+                "name": "生产力与企业工作流",
+                "eventIds": [
+                  "EV-914ca1cbc6359ce5"
                 ],
                 "count": 1
               }
@@ -120712,19 +121109,19 @@
                 "count": 2
               },
               {
-                "id": "chip_accelerator",
-                "name": "芯片与加速器",
+                "id": "enterprise_software_platform",
+                "name": "企业软件平台",
                 "eventIds": [
-                  "EV-faf8db3567f108e2",
-                  "EV-c3b96b789b5bcafd"
+                  "EV-914ca1cbc6359ce5",
+                  "EV-df3bc4ed1e6325d9"
                 ],
                 "count": 2
               },
               {
-                "id": "ai_compute_system",
-                "name": "AI 计算系统",
+                "id": "chip_accelerator",
+                "name": "芯片与加速器",
                 "eventIds": [
-                  "EV-faf8db3567f108e2",
+                  "EV-a86b04e679044c45",
                   "EV-c3b96b789b5bcafd"
                 ],
                 "count": 2
@@ -120738,10 +121135,18 @@
                 "count": 1
               },
               {
-                "id": "enterprise_software_platform",
-                "name": "企业软件平台",
+                "id": "compute_cloud_service",
+                "name": "算力云服务",
                 "eventIds": [
-                  "EV-df3bc4ed1e6325d9"
+                  "EV-a86b04e679044c45"
+                ],
+                "count": 1
+              },
+              {
+                "id": "ai_compute_system",
+                "name": "AI 计算系统",
+                "eventIds": [
+                  "EV-c3b96b789b5bcafd"
                 ],
                 "count": 1
               }
@@ -120752,9 +121157,11 @@
                 "name": "智能体",
                 "eventIds": [
                   "EV-76e7dc691b68fa04",
-                  "EV-f3e0915e13bcc5a1"
+                  "EV-9ed6a759555d7e77",
+                  "EV-f3e0915e13bcc5a1",
+                  "EV-fd825cd7f7997fc8"
                 ],
-                "count": 2
+                "count": 4
               },
               {
                 "id": "multimodal",
@@ -120787,9 +121194,10 @@
                 "name": "生产力与企业工作流",
                 "eventIds": [
                   "EV-76e7dc691b68fa04",
+                  "EV-914ca1cbc6359ce5",
                   "EV-00514c4ffc2e3cd3"
                 ],
-                "count": 2
+                "count": 3
               },
               {
                 "id": "physical_automation",
@@ -120837,10 +121245,26 @@
             ],
             "targetUser": [
               {
+                "id": "public_sector_user",
+                "name": "公共部门用户",
+                "eventIds": [
+                  "EV-a86b04e679044c45"
+                ],
+                "count": 1
+              },
+              {
                 "id": "developer",
                 "name": "开发者",
                 "eventIds": [
                   "EV-00514c4ffc2e3cd3"
+                ],
+                "count": 1
+              },
+              {
+                "id": "business_user",
+                "name": "企业用户",
+                "eventIds": [
+                  "EV-914ca1cbc6359ce5"
                 ],
                 "count": 1
               }
@@ -120848,6 +121272,7 @@
             "deploymentModel": []
           },
           "deploymentEventIds": [
+            "EV-1bb68bb234c0dc36",
             "EV-a4b7cd533b0b34dc"
           ],
           "coverage": "按数据中心接受日期汇总；分类分布按唯一事件计数，未观测日期不得解释为零活动。"
@@ -120890,7 +121315,7 @@
             "2026-07-31"
           ],
           "counts": {
-            "financing": 174,
+            "financing": 175,
             "deployment": 82,
             "partnership": 102,
             "product": 490,
@@ -120913,8 +121338,8 @@
             "product": null,
             "hardware": null
           },
-          "totalAccepted": 1015,
-          "trackedCount": 899,
+          "totalAccepted": 1016,
+          "trackedCount": 900,
           "otherCount": 116,
           "newCompanies": [
             {
@@ -122608,6 +123033,7 @@
               "EV-976c03b6664d3a3b",
               "EV-a9a8f673cb666d49",
               "EV-cded77b1de2db61a",
+              "EV-faf8db3567f108e2",
               "EV-1196b80b537957f2",
               "EV-3fb827f44ea109de",
               "EV-6bb83280a2116f24",
@@ -122767,7 +123193,7 @@
               "EV-b91f6a01f119155c",
               "EV-ee7ba401d0af0d94"
             ],
-            "disclosedMetricCount": 155
+            "disclosedMetricCount": 156
           },
           "distributions": {
             "marketCategory": [

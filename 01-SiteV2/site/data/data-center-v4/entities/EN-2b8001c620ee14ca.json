@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-2b8001c620ee14ca",
@@ -24,6 +24,7 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "2083230295206121807",
       "2076783865528516971",
       "2074258147015897357",
       "2073920959011074292",
@@ -39,17 +40,17 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-14",
-    "lastSeen": "2026-07-14",
+    "lastSeen": "2026-08-01",
     "handle": "thenanyu",
     "role": "head of product linear",
     "organization": "Linear",
     "viewpointTags": [
-      "AI 编程",
-      "AI Coding 观点",
-      "AI Coding",
       "Agent",
       "Agent 工作流观点",
       "Agentic AI",
+      "AI 编程",
+      "AI Coding 观点",
+      "AI Coding",
       "AI 基础设施",
       "模型基础设施观点"
     ],
@@ -76,6 +77,12 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "2083230295206121807",
+        "date": "2026-08-01",
+        "title": "Linear 中最常见的循环是这种变体（问题 > 代理 > PR > 发布），大约 30% 的缺陷会完整走完这个流程。但实际操作中有一些细微之处——指令应要求代理深入调查问题的根本原因，并使用 Datadog 和 Sentry MCP 收集更多证据。只有在高度确定的情况下才应尝试提供修复方案，否则会消耗大量 token。如果在研究过程中认为更多证据会有帮助，比如请报告者提供复现步骤等，代理应在问题上留言请求。代理也需要被教导遵循良好实践，就像人一样！",
+        "sourceUrl": "https://x.com/thenanyu/status/2083230295206121807"
+      },
       {
         "id": "2076783865528516971",
         "date": "2026-07-14",

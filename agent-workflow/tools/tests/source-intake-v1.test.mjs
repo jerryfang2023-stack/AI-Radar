@@ -130,6 +130,7 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
     title: "Example AI release",
     clean_text: "Example released a dated AI product for enterprise users with source-bounded facts.",
     content_hash: "content-hash-1",
+    published_at: "2026-07-28T12:00:00.000Z",
     collected_at: "2026-07-29T01:00:00.000Z",
     source_registry_id: "cn-example-official",
     source_region: "CN",
@@ -189,6 +190,7 @@ test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body refer
   assert.equal(loaded.entries[0].raw.original_url, record.original_url);
   assert.equal(loaded.entries[0].raw.title, intake.raw_documents[0].title_original);
   assert.equal(loaded.entries[0].raw.title_zh, intake.raw_documents[0].title_zh);
+  assert.equal(loaded.entries[0].raw.published_at, record.published_at);
   assert.equal(loaded.entries[0].intake_document.body_ref, intake.raw_documents[0].body_ref);
 });
 

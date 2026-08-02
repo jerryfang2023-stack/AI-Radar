@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "node": {
     "id": "TX-product_form-ai_compute_system",
@@ -18,7 +18,6 @@
     "typeLabel": "产品形态",
     "valueId": "ai_compute_system",
     "eventIds": [
-      "EV-faf8db3567f108e2",
       "EV-f282ab8740ff0096",
       "EV-7abd8ec418f1e7f3",
       "EV-dbbe3fd637be213f",
@@ -35,9 +34,9 @@
       "EV-a67071a8550cb1be"
     ],
     "entityIds": [
-      "EN-54dfb14dcddad637",
       "EN-0995103010d39563",
       "EN-bbdefa2950f49882",
+      "EN-54dfb14dcddad637",
       "EN-772c171be4bf6551",
       "EN-8d4321d936320802",
       "EN-240389f4b730bad4",
@@ -60,128 +59,9 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-02"
+    "lastSeen": "2026-08-01"
   },
   "events": [
-    {
-      "id": "EV-faf8db3567f108e2",
-      "dataDate": "2026-08-02",
-      "date": "2026-08-02",
-      "updatedDate": "2026-08-02",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "partial",
-      "title": "Axe Compute 获得15亿美元五年期专用AI",
-      "originalTitle": "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI",
-      "subject": "Axe Compute",
-      "action": "Secures",
-      "object": "$1.5 Billion Five-Year Dedicated AI",
-      "metrics": [
-        "$1.5 Billion",
-        "$3 Billion",
-        "$1.5 billion"
-      ],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-54dfb14dcddad637"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "ai_compute_system",
-            "name": "AI 计算系统",
-            "entityIds": [
-              "EN-54dfb14dcddad637"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-54dfb14dcddad637"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "ai_compute_system",
-          "name": "AI 计算系统",
-          "entityIds": [
-            "EN-54dfb14dcddad637"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-54dfb14dcddad637"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "ai_compute_system",
-          "name": "AI 计算系统",
-          "entityIds": [
-            "EN-54dfb14dcddad637"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-54dfb14dcddad637"
-      ],
-      "entityNames": [
-        "Axe Compute"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://globenewswire.com/news-release/2026/07/27/3333519/37244/en/Axe-Compute-Secures-1-5-Billion-Five-Year-Dedicated-AI-Infrastructure-Contract-Surpassing-3-Billion-in-2026-Signed-Contracted-Value.html",
-      "publisher": "globenewswire.com"
-    },
     {
       "id": "EV-f282ab8740ff0096",
       "dataDate": "2026-07-16",
@@ -2098,30 +1978,6 @@
   ],
   "entities": [
     {
-      "id": "EN-54dfb14dcddad637",
-      "name": "Axe Compute",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-faf8db3567f108e2",
-        "EV-b53c30df8b86da5b",
-        "EV-c3b96b789b5bcafd"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-ai_compute_system"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-08-02"
-    },
-    {
       "id": "EN-0995103010d39563",
       "name": "Positron",
       "entityType": "organization_candidate",
@@ -2136,11 +1992,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-ai_market_application-chips",
-        "TX-ai_market_subcategory-hardware_computing"
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
@@ -2318,15 +2174,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-technology-code_generation",
@@ -2336,6 +2191,7 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
+        "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -2365,6 +2221,31 @@
       "lastSeen": "2026-08-02"
     },
     {
+      "id": "EN-54dfb14dcddad637",
+      "name": "Axe Compute",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-faf8db3567f108e2",
+        "EV-b53c30df8b86da5b",
+        "EV-6543befe60fcbd5a",
+        "EV-c3b96b789b5bcafd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-08-02"
+    },
+    {
       "id": "EN-772c171be4bf6551",
       "name": "Elice Group",
       "entityType": "organization_candidate",
@@ -2390,9 +2271,7 @@
       "name": "NVIDIA",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "英伟达"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2415,6 +2294,8 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-a86b04e679044c45",
+        "EV-1bb68bb234c0dc36",
         "EV-87b7a16e70770a36",
         "EV-e09efcd49776cb95",
         "EV-c2fe5030e8c71d8a",
@@ -2537,16 +2418,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-ai_compute_system",
+        "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model_api_service",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
-        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-manufacturing",
         "TX-use_case-customer_support",
@@ -2555,12 +2434,14 @@
         "TX-product_form-model",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
+        "TX-product_form-chip_accelerator",
         "TX-technology-multimodal",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-robotic_system",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
+        "TX-product_form-ai_compute_system",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -2570,32 +2451,24 @@
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d",
-        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
-        "EN-52c2f30b6bda5898",
         "EN-683d8d597da71192",
-        "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
-        "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
         "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
-        "EN-3ae50afab3e392b8",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
-        "EN-9fbf261b62c1d7c0",
-        "EN-11ef7b03c79c9bbd",
-        "EN-9bc22dcabf7f45b3",
-        "EN-171fa23d27b5894b"
+        "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -2635,14 +2508,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-ai_compute_system",
-        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
         "TX-product_form-robotic_system",
         "TX-technology-embodied_ai",
+        "TX-product_form-ai_compute_system",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
@@ -2714,8 +2587,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",

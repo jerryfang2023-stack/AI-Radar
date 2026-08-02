@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-01T18:17:07.754Z",
+    "generated_at": "2026-08-02T06:24:12.431Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 222,
-    "input_hash": "b806e59da40409c9",
+    "decision_count": 223,
+    "input_hash": "e6a537a0ae2ae96e",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
@@ -4337,6 +4337,23 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Zenskar 提供 AI 原生计费与收入自动化平台，面向财务团队优化订单到现金流程，属于跨行业的企业业务功能，不涉及物理 AI 或基础设施层，因此归入企业应用-生产力工作流。"
+    },
+    {
+      "event_id": "EV-914ca1cbc6359ce5",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Company provides real-time voice AI infrastructure for enterprises, fitting enterprise applications and productivity workflows. No specific industry focus evident, so industry_ids left empty."
     }
   ]
 }

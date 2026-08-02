@@ -1,5 +1,73 @@
 [
   {
+    "hardware_fact_id": "HWF-4821699855dbf9fc",
+    "fact_type": "product",
+    "observed_at": "2026-08-02T00:20:09.003Z",
+    "subject_entity_id": "EN-8d4321d936320802",
+    "subject_name": "NVIDIA",
+    "product_entity_ids": [
+      "EN-0cef4501a280ca24"
+    ],
+    "product_names": [
+      "GPU Driver 595.71.05"
+    ],
+    "component_type": "gpu",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "Infrastructure 8.1 (Production Branch) - Released May 2026, this Production Branch (PB) includes GPU Driver 595.71.05, NVIDIA Virtual GPU Manager 595.71.03 and vGPU for Compute Guest Driver (Linux 595.71.05 / Windows 596.36), NVIDIA Run:ai 2.25 (self-hosted) plus NVIDIA Run:ai SaaS, NVIDIA DOCA 3.4.0, and updated Kubernetes operators (GPU Operator 26.3.3, Network Operator 26.4.0, DPU Operator (DPF) 26.4.0, NIM Operator 3.1.1) along with NVIDIA Container Toolkit 1.19.1 and Base Command Manager 11.33.1.",
+    "event_refs": [
+      "EV-eaec68a02bfa3db0"
+    ],
+    "claim_ref": "CL-3fee13bf993bb8e0",
+    "source_refs": [
+      "SA-5b5a3e6894201597"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-29eeb89babf2f86b",
+    "fact_type": "product",
+    "observed_at": "2026-08-02T00:20:09.003Z",
+    "subject_entity_id": "EN-8d4321d936320802",
+    "subject_name": "NVIDIA",
+    "product_entity_ids": [
+      "EN-0cef4501a280ca24"
+    ],
+    "product_names": [
+      "GPU Driver 595.71.05"
+    ],
+    "component_type": "gpu",
+    "metric_value": "",
+    "unit": "",
+    "source_quote": "Infrastructure 7.7 (LTSB) is now available - Released July 2026, this Long-Term Support Branch (LTSB) update includes GPU Driver 580.173.02, NVIDIA Virtual GPU Manager 580.159.01 and vGPU for Compute Guest Driver (Linux 580.173.02 / Windows 582.70), NVIDIA Run:ai 2.25 (self-hosted) plus NVIDIA Run:ai SaaS, NVIDIA DOCA 3.4.0, and updated Kubernetes operators (GPU Operator 26.3.3, Network Operator 26.4.0, DPU Operator (DPF) 26.4.0, NIM Operator 3.1.1) along with NVIDIA Container Toolkit 1.19.1 and Base Command Manager 11.33.1.",
+    "event_refs": [
+      "EV-eaec68a02bfa3db0"
+    ],
+    "claim_ref": "CL-8719bf4a1c707b23",
+    "source_refs": [
+      "SA-5b5a3e6894201597"
+    ]
+  },
+  {
+    "hardware_fact_id": "HWF-b3aa651e55cc4f35",
+    "fact_type": "shipment_deployment",
+    "observed_at": "2026-08-02T00:20:26.468Z",
+    "subject_entity_id": "EN-7640da40298286a6",
+    "subject_name": "HIVE",
+    "product_entity_ids": [],
+    "product_names": [],
+    "component_type": "gpu",
+    "metric_value": "220",
+    "unit": "$million",
+    "source_quote": "HIVE disclosed that the agreement is valued at approximately $220 million and involves the deployment of 2,304 NVIDIA Grace Blackwell GPUs. Once the project is in service, HIVE expects the deal to generate about $70 million in contracted annual recurring revenue, lifting its contracted HPC revenue target to more than $100 million.",
+    "event_refs": [
+      "EV-a86b04e679044c45"
+    ],
+    "claim_ref": "CL-10039d6cfcde167e",
+    "source_refs": [
+      "SA-44b54212e5b5fa0f"
+    ]
+  },
+  {
     "hardware_fact_id": "HWF-6c8bbc526cc52480",
     "fact_type": "product",
     "observed_at": "2026-07-30T00:00:00.000Z",

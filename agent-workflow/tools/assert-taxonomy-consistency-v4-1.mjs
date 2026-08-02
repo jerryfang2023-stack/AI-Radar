@@ -198,8 +198,12 @@ export function taxonomyConsistencyProblems(rootDir = root) {
       if (left !== right) failures.push(`${decision.event_id}: card ${field} drift`);
     }
   }
-  if ((ledger.decisions || []).length !== 222 || reviewedByDecisionEvent.size !== 222) {
-    failures.push(`reviewed funding coverage must be 222 decisions/events, received ${(ledger.decisions || []).length}/${reviewedByDecisionEvent.size}`);
+  const decisionEventIds = new Set((ledger.decisions || []).map((decision) => decision.event_id));
+  for (const eventId of reviewedByDecisionEvent.keys()) {
+    if (!decisionEventIds.has(eventId)) failures.push(`${eventId}: reviewed classification has no taxonomy decision`);
+  }
+  if (reviewedByDecisionEvent.size !== decisionEventIds.size) {
+    failures.push(`reviewed funding coverage mismatch: ${decisionEventIds.size} decisions/${reviewedByDecisionEvent.size} events`);
   }
 
   const claims = new Map(datedFiles("claims.json", rootDir).flatMap((file) => readJson(file, [])).map((item) => [item.claim_id, item]));
@@ -303,5 +307,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     console.error(JSON.stringify({ ok: false, count: failures.length, failures: failures.slice(0, 100) }, null, 2));
     process.exit(1);
   }
-  console.log(JSON.stringify({ ok: true, taxonomy_version: "TAG-V4.1", reviewed_funding_events: 222 }, null, 2));
+  const ledger = readJson(path.join(root, "01-SiteV2/content/12-applications/funding-insights/taxonomy-decisions-v4-1.json"), { decisions: [] });
+  console.log(JSON.stringify({
+    ok: true,
+    taxonomy_version: "TAG-V4.1",
+    reviewed_funding_events: (ledger.decisions || []).length,
+  }, null, 2));
 }

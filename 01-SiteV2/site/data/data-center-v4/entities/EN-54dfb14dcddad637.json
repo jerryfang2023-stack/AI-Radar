@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-54dfb14dcddad637",
@@ -24,6 +24,7 @@
     "eventIds": [
       "EV-faf8db3567f108e2",
       "EV-b53c30df8b86da5b",
+      "EV-6543befe60fcbd5a",
       "EV-c3b96b789b5bcafd"
     ],
     "viewpointIds": [],
@@ -41,6 +42,7 @@
         "EV-b53c30df8b86da5b"
       ],
       "deployments": [
+        "EV-6543befe60fcbd5a",
         "EV-c3b96b789b5bcafd"
       ],
       "partnerships": [],
@@ -51,39 +53,16 @@
     },
     "timeline": [
       {
-        "id": "EV-faf8db3567f108e2",
+        "id": "EV-6543befe60fcbd5a",
         "dataDate": "2026-08-02",
-        "date": "2026-08-02",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
+        "date": "2026-07-27",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
         "title": "Axe Compute 获得15亿美元五年期专用AI",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-54dfb14dcddad637"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "ai_compute_system",
-            "name": "AI 计算系统",
-            "entityIds": [
-              "EN-54dfb14dcddad637"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "displayTags": [],
         "entityIds": [
           "EN-54dfb14dcddad637"
         ]
@@ -127,6 +106,21 @@
         ]
       },
       {
+        "id": "EV-faf8db3567f108e2",
+        "dataDate": "2026-07-29",
+        "date": "2026-07-27",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-54dfb14dcddad637"
+        ]
+      },
+      {
         "id": "EV-b53c30df8b86da5b",
         "dataDate": "2026-07-23",
         "date": "2026-07-22",
@@ -155,7 +149,6 @@
       "typeLabel": "产品形态",
       "valueId": "chip_accelerator",
       "eventIds": [
-        "EV-faf8db3567f108e2",
         "EV-da1655ecfaf35feb",
         "EV-f49eff6b3c5ed835",
         "EV-f282ab8740ff0096",
@@ -178,6 +171,7 @@
         "EV-736404028b8ad33e",
         "EV-70a994b9339f92e7",
         "EV-59882383f82f215d",
+        "EV-a86b04e679044c45",
         "EV-c3b96b789b5bcafd",
         "EV-e09efcd49776cb95",
         "EV-c3f617e75d303f59",
@@ -237,7 +231,6 @@
         "EV-bca0d9aca07bcb4a"
       ],
       "entityIds": [
-        "EN-54dfb14dcddad637",
         "EN-9cb45a27a2808c01",
         "EN-cf9488537f777c1a",
         "EN-4c3788aad4bebf2f",
@@ -257,6 +250,8 @@
         "EN-48bebf25e5bd5aca",
         "EN-8da5eafb322ee86e",
         "EN-883be863cc6562bb",
+        "EN-7640da40298286a6",
+        "EN-54dfb14dcddad637",
         "EN-3711098f35d71cb9",
         "EN-a9776b12a97fe2d9",
         "EN-5e757c7fc575c41e",
@@ -297,6 +292,7 @@
         "EN-4a639cb888a15d75"
       ],
       "fdeIds": [
+        "FDE-5ea7f3d69a03d417",
         "FDE-d1333c4e772841f2",
         "FDE-a0230755529d6fae",
         "FDE-08f12caedc3b2f13"
@@ -331,7 +327,6 @@
       "typeLabel": "产品形态",
       "valueId": "ai_compute_system",
       "eventIds": [
-        "EV-faf8db3567f108e2",
         "EV-f282ab8740ff0096",
         "EV-7abd8ec418f1e7f3",
         "EV-dbbe3fd637be213f",
@@ -348,9 +343,9 @@
         "EV-a67071a8550cb1be"
       ],
       "entityIds": [
-        "EN-54dfb14dcddad637",
         "EN-0995103010d39563",
         "EN-bbdefa2950f49882",
+        "EN-54dfb14dcddad637",
         "EN-772c171be4bf6551",
         "EN-8d4321d936320802",
         "EN-240389f4b730bad4",
@@ -373,7 +368,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-01"
     }
   ],
   "fde": [

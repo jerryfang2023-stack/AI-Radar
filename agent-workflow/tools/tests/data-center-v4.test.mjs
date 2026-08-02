@@ -749,6 +749,32 @@ test("a secured AI infrastructure contract with a dollar value is not funding", 
   assert.ok(bundle.claims.every((claim) => claim.claim_type !== "funding"));
 });
 
+test("a truncated secured-infrastructure title still uses the captured contract lead", () => {
+  const bundle = buildBundle([
+    entry(
+      "axe-compute-truncated-contract",
+      "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI",
+      "Axe Compute Secures $1.5 Billion Five-Year Dedicated AI Infrastructure Contract, Surpassing $3 Billion in 2026 Signed Contracted Value. / query=AI server startup funding GPU cluster customers",
+    ),
+  ], taxonomy, date, "2026-08-01T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "procurement_contract");
+  assert.ok(bundle.claims.every((claim) => claim.claim_type !== "funding"));
+});
+
+test("a state-funded agentic AI mandate is a project contract rather than company financing", () => {
+  const bundle = buildBundle([
+    entry(
+      "nc-ai-state-project",
+      "NC AI Lands Korea's $34M Agentic Enterprise Mandate With Gabia as Live Testbed",
+      "The Ministry of Science and ICT designated NC AI as the principal agency for the Real-World Proactive Action-Type Agentic AI Technology Development Project. The four-year initiative carries a total state budget of $34 million.",
+    ),
+  ], taxonomy, date, "2026-08-01T17:31:36.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "procurement_contract");
+  assert.ok(bundle.claims.every((claim) => claim.claim_type !== "funding"));
+});
+
 test("entity-link repair preserves an accepted bundle while restoring missing organizations", () => {
   const bundle = buildBundle([
     entry(

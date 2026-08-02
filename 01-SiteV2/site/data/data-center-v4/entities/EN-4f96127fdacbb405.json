@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T01:48:35.176Z",
+    "generatedAt": "2026-08-02T06:26:49.223Z",
     "latestDataDate": "2026-08-02",
     "currentDate": "2026-08-02",
-    "eventCount": 1770,
-    "quarantinedEventCount": 14
+    "eventCount": 1779,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-4f96127fdacbb405",
@@ -26,14 +26,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-5388bc10736a0eff"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-16",
     "lastSeen": "2026-06-16",
-    "relationIds": [
-      "REL2-fc89e0f24571bef8"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -77,71 +73,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-5388bc10736a0eff",
-      "name": "ByteDance",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "字节跳动"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-97fdf068afbbe555",
-        "EV-47a84a0f1a85c29c",
-        "EV-6c361125c3f50bb6",
-        "EV-d1d36268ff74be0e",
-        "EV-8734f7217e78c861",
-        "EV-ee363e679d12329c",
-        "EV-ad2e4fe6a149d95d",
-        "EV-76aa77f5a2e7c661",
-        "EV-0e42803078b1c6be",
-        "EV-620f5ebfb6ac81ac",
-        "EV-90e206ff43a3b9d1",
-        "EV-c7404765df94a3b4",
-        "EV-e03b324b7e297e6b",
-        "EV-887d47bb477e2142",
-        "EV-631197767a45d34c",
-        "EV-666f2f4b5756c679",
-        "EV-8fef3537ed4c1e48"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution"
-      ],
-      "relatedEntityIds": [
-        "EN-4f96127fdacbb405"
-      ],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-30"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-fc89e0f24571bef8",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-5388bc10736a0eff",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-4f96127fdacbb405",
-      "object_type": "entity",
-      "event_id": "EV-887d47bb477e2142",
-      "claim_refs": [
-        "CL-4b2d508b68827b34",
-        "CL-28b3c29eaf8f9f1c",
-        "CL-687c5027592b39c5"
-      ],
-      "source_refs": [
-        "SA-56c9538d50ed21ed"
-      ],
-      "data_date": "2026-06-16",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []
