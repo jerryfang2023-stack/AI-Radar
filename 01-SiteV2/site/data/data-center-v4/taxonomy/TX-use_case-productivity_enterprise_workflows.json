@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T18:22:29.379Z",
-    "latestDataDate": "2026-08-01",
-    "currentDate": "2026-08-01",
-    "eventCount": 1759,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1769,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-use_case-productivity_enterprise_workflows",
@@ -31,6 +31,7 @@
       "EV-acf1bcb321414706",
       "EV-57944eebac69d510",
       "EV-57d3b7aa1a2f0fda",
+      "EV-76e7dc691b68fa04",
       "EV-5b193a038ab4ea22",
       "EV-3a7128e2d7ff149e",
       "EV-333851b077b606c8",
@@ -60,6 +61,7 @@
       "EN-9fbf261b62c1d7c0",
       "EN-3cce50ffb12f1a69",
       "EN-8d4321d936320802",
+      "EN-82a31e57d3a2fa17",
       "EN-6fcba5d96a4fadfd",
       "EN-ea3bd73e2b506e00",
       "EN-6f7ac1823da81d2e",
@@ -80,7 +82,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-07-29"
+    "lastSeen": "2026-08-02"
   },
   "events": [
     {
@@ -1404,6 +1406,94 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-76e7dc691b68fa04",
+      "dataDate": "2026-08-02",
+      "date": "2026-07-28",
+      "updatedDate": "2026-08-02",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GSA宣布通过OneGov达成CORAS合作，扩大联邦AI接入并节省高达80%的成本",
+      "originalTitle": "GSA Announces CORAS Partnership Through OneGov, Expanding Federal AI Access and Delivering Cost Savings of up to 80% | GSA",
+      "subject": "GSA Announces CORAS",
+      "action": "Partnership",
+      "object": "Through OneGov, Expanding Federal AI Access and Delivering Cost Savings of up to 80% | GSA",
+      "metrics": [
+        "80%"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "productivity_enterprise_workflows",
+            "dimensionName": "应用场景",
+            "name": "生产力与企业工作流"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "productivity_enterprise_workflows",
+          "dimensionName": "应用场景",
+          "name": "生产力与企业工作流"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "productivity_enterprise_workflows",
+          "dimensionName": "应用场景",
+          "name": "生产力与企业工作流"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-82a31e57d3a2fa17"
+      ],
+      "entityNames": [
+        "GSA Announces CORAS"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://gsa.gov/about-gsa/newsroom/news-releases/gsa-announces-coras-partnership-through-onegov-07282026",
+      "publisher": "gsa.gov"
+    },
+    {
       "id": "EV-5b193a038ab4ea22",
       "dataDate": "2026-07-23",
       "date": "2026-07-22",
@@ -2338,11 +2428,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -2505,8 +2595,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-a3e674dce15e7188",
         "EV-7752b9d64fdfe1df",
-        "EV-b27f2e417d779e5f",
         "EV-d9d415868b74485c",
         "EV-35df5cc7eacdade7",
         "EV-ebd76d18d3f0ee7b",
@@ -2698,11 +2788,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -2755,7 +2845,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -2808,6 +2898,7 @@
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
         "EV-5d185ac33faedb68",
+        "EV-8f1b01897707b941",
         "EV-f55d16df5b5fecb2",
         "EV-f65a1b053e5dca70",
         "EV-75b9b997e9c7e5d1",
@@ -3086,7 +3177,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -3260,11 +3351,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -3308,7 +3399,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-4728b0c37dc84206",
@@ -3368,8 +3459,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
@@ -3718,10 +3809,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -3935,10 +4026,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
@@ -3994,6 +4085,28 @@
       "lastSeen": "2026-07-28"
     },
     {
+      "id": "EN-82a31e57d3a2fa17",
+      "name": "GSA Announces CORAS",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-76e7dc691b68fa04"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-productivity_enterprise_workflows"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-08-02"
+    },
+    {
       "id": "EN-6fcba5d96a4fadfd",
       "name": "xAI",
       "entityType": "organization_candidate",
@@ -4029,6 +4142,7 @@
         "EV-ed58c2c69290ee4c",
         "EV-631197767a45d34c",
         "EV-d53cd33e8f541a65",
+        "EV-02abf1e35f1c33e1",
         "EV-11a3893cb86fef69",
         "EV-9578242a4df20721",
         "EV-8cd571951f62b2c8",
@@ -4036,8 +4150,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
@@ -4051,7 +4165,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -4159,16 +4273,14 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-6f7ac1823da81d2e",
       "name": "DeepSeek",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "深度求索"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4178,6 +4290,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-6374a712070b1f8c",
         "EV-b27f2e417d779e5f",
         "EV-8f2787ceb5224cc9",
         "EV-f01a57b8fbd2518e",
@@ -4221,7 +4334,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-f65bb77682b83476",

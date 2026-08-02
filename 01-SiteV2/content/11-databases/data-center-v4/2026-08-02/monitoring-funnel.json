@@ -1,0 +1,62 @@
+[
+  {
+    "funnel_id": "LF-0e0e5099673d45c3",
+    "lens": "fde",
+    "date": "2026-08-02",
+    "monitoring_paths": [
+      "fde_customer_case",
+      "fde_earnings_disclosure",
+      "fde_procurement_contract",
+      "fde_production_rollout"
+    ],
+    "raw_documents": 99,
+    "original_sources": 91,
+    "valid_claims": 13,
+    "observations": 0,
+    "canonical_events": 4,
+    "blocker_counts": {
+      "source_outside_daily_window": 55,
+      "no_source_bounded_event": 23,
+      "non_event_or_index_title": 8,
+      "source_published_after_data_date": 1,
+      "opinion_without_source_bounded_event": 1,
+      "community_source_requires_original_event_source": 1,
+      "raw_source_quality_block": 6
+    },
+    "rates": {
+      "original_source_rate": 0.9191919191919192,
+      "valid_claim_rate": 0.13131313131313133,
+      "observation_rate": 0,
+      "event_conversion_rate": 0.3076923076923077
+    }
+  },
+  {
+    "funnel_id": "LF-4ae46788e72e5b7b",
+    "lens": "hardware",
+    "date": "2026-08-02",
+    "monitoring_paths": [
+      "hardware_capacity_fab",
+      "hardware_oem_odm",
+      "hardware_product_specs",
+      "hardware_shipment_deployment"
+    ],
+    "raw_documents": 19,
+    "original_sources": 15,
+    "valid_claims": 1,
+    "observations": 3,
+    "canonical_events": 1,
+    "blocker_counts": {
+      "source_outside_daily_window": 9,
+      "rumor_requires_primary_confirmation": 2,
+      "source_outside_funding_backfill_window": 1,
+      "no_source_bounded_event": 2,
+      "raw_source_quality_block": 4
+    },
+    "rates": {
+      "original_source_rate": 0.7894736842105263,
+      "valid_claim_rate": 0.05263157894736842,
+      "observation_rate": 1,
+      "event_conversion_rate": 1
+    }
+  }
+]

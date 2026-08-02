@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T18:22:29.379Z",
-    "latestDataDate": "2026-08-01",
-    "currentDate": "2026-08-01",
-    "eventCount": 1759,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1769,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-technology-agentic_execution",
@@ -159,6 +159,7 @@
       "EV-01df8e489a34893b",
       "EV-afd0332ad8f5f05b",
       "EV-cab03fca079f62e6",
+      "EV-76e7dc691b68fa04",
       "EV-aa7cf8ee6c875f08",
       "EV-dc56b5ae3009f6f5",
       "EV-16cfe946bbf69aa3",
@@ -190,6 +191,7 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-f3e0915e13bcc5a1",
       "EV-60110525440fac47",
       "EV-4c949b6aac6d26e7",
       "EV-a4fe78df6ccd63c8",
@@ -573,6 +575,7 @@
       "EN-916a98f0fa2a39af",
       "EN-8d291c7017252b07",
       "EN-f8048254c29fa79e",
+      "EN-82a31e57d3a2fa17",
       "EN-4e358c403850a88a",
       "EN-543ed2ff052fe0cd",
       "EN-b3f5e31ec86a08a9",
@@ -12657,6 +12660,94 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-76e7dc691b68fa04",
+      "dataDate": "2026-08-02",
+      "date": "2026-07-28",
+      "updatedDate": "2026-08-02",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GSA宣布通过OneGov达成CORAS合作，扩大联邦AI接入并节省高达80%的成本",
+      "originalTitle": "GSA Announces CORAS Partnership Through OneGov, Expanding Federal AI Access and Delivering Cost Savings of up to 80% | GSA",
+      "subject": "GSA Announces CORAS",
+      "action": "Partnership",
+      "object": "Through OneGov, Expanding Federal AI Access and Delivering Cost Savings of up to 80% | GSA",
+      "metrics": [
+        "80%"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "productivity_enterprise_workflows",
+            "dimensionName": "应用场景",
+            "name": "生产力与企业工作流"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "productivity_enterprise_workflows",
+          "dimensionName": "应用场景",
+          "name": "生产力与企业工作流"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "productivity_enterprise_workflows",
+          "dimensionName": "应用场景",
+          "name": "生产力与企业工作流"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-82a31e57d3a2fa17"
+      ],
+      "entityNames": [
+        "GSA Announces CORAS"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://gsa.gov/about-gsa/newsroom/news-releases/gsa-announces-coras-partnership-through-onegov-07282026",
+      "publisher": "gsa.gov"
+    },
+    {
       "id": "EV-aa7cf8ee6c875f08",
       "dataDate": "2026-07-28",
       "date": "2026-07-28",
@@ -15410,6 +15501,69 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-f3e0915e13bcc5a1",
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "updatedDate": "2026-08-02",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "datasette-apps 0.2a0 发布：新增 app_debug（） 与 app_list（） 工具",
+      "originalTitle": "",
+      "subject": "datasette-apps 0.2a0",
+      "action": "发布",
+      "object": "：新增 app_debug（） 与 app_list（） 工具",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://simonwillison.net/2026/Aug/1/datasette-apps",
+      "publisher": "Simon Willison 博客"
+    },
+    {
       "id": "EV-60110525440fac47",
       "dataDate": "2026-07-31",
       "date": "2026-07-30",
@@ -16949,7 +17103,9 @@
         {
           "name": "Cowork",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/277.htm",
@@ -17975,14 +18131,14 @@
           "name": "Helios AI",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Helios",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -21609,7 +21765,9 @@
         {
           "name": "Claude Code v2.1.212",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
@@ -25925,14 +26083,14 @@
           "name": "Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Cowork on Monday",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -27068,7 +27226,9 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
@@ -27183,7 +27343,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         }
       ],
@@ -27395,21 +27555,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         }
       ],
@@ -28231,12 +28391,16 @@
         {
           "name": "Claude Cowork",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "SaaS Workflows",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://perplexityaimagazine.com/expert-insights/ai-agents-replacing-saas-workflows",
@@ -29582,7 +29746,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Thinking Machines Lab"
+            "Anthropic"
           ]
         }
       ],
@@ -30478,7 +30642,9 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/428.htm",
@@ -32171,17 +32337,23 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Mythos",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/10/anthropic-releases-claude-fable-5-and-claude-mythos-5-same-underlying-model-different-safeguards-new-mythos-class-tier",
@@ -35660,7 +35832,9 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -37347,10 +37521,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -37463,6 +37637,7 @@
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
         "EV-5d185ac33faedb68",
+        "EV-8f1b01897707b941",
         "EV-f55d16df5b5fecb2",
         "EV-f65a1b053e5dca70",
         "EV-75b9b997e9c7e5d1",
@@ -37741,7 +37916,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -37829,8 +38004,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-a3e674dce15e7188",
         "EV-7752b9d64fdfe1df",
-        "EV-b27f2e417d779e5f",
         "EV-d9d415868b74485c",
         "EV-35df5cc7eacdade7",
         "EV-ebd76d18d3f0ee7b",
@@ -38022,11 +38197,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -38079,7 +38254,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-382635c9325bf327",
@@ -38173,8 +38348,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -38400,11 +38575,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -38764,10 +38939,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
@@ -38892,9 +39067,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-long_context",
@@ -39038,7 +39213,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -39769,11 +39944,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -39817,7 +39992,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-4dd5b6e2bf3bfd4f",
@@ -40054,8 +40229,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
@@ -40485,10 +40660,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
@@ -41660,10 +41835,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
@@ -42260,6 +42435,28 @@
       "lastSeen": "2027-09-30"
     },
     {
+      "id": "EN-82a31e57d3a2fa17",
+      "name": "GSA Announces CORAS",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-76e7dc691b68fa04"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-productivity_enterprise_workflows"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-08-02"
+    },
+    {
       "id": "EN-4e358c403850a88a",
       "name": "Cognizant Expands Long-Standing",
       "entityType": "organization_candidate",
@@ -42445,7 +42642,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-86ca9936019f1039",
@@ -42746,6 +42943,7 @@
         "EV-f55d16df5b5fecb2",
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
+        "EV-6374a712070b1f8c",
         "EV-8f2787ceb5224cc9",
         "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
@@ -42778,7 +42976,7 @@
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-ea87a2bd84296f73",
@@ -43181,9 +43379,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
@@ -43235,10 +43433,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -43262,7 +43460,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-30397d0cfc1b0e29",
@@ -43322,6 +43520,7 @@
         "EV-ed58c2c69290ee4c",
         "EV-631197767a45d34c",
         "EV-d53cd33e8f541a65",
+        "EV-02abf1e35f1c33e1",
         "EV-11a3893cb86fef69",
         "EV-9578242a4df20721",
         "EV-8cd571951f62b2c8",
@@ -43329,8 +43528,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
@@ -43344,7 +43543,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-449a66e865c071ec",
@@ -43830,9 +44029,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -44057,9 +44256,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-technology-open_weights",
@@ -44263,9 +44462,7 @@
       "name": "DeepSeek",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "深度求索"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -44275,6 +44472,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-6374a712070b1f8c",
         "EV-b27f2e417d779e5f",
         "EV-8f2787ceb5224cc9",
         "EV-f01a57b8fbd2518e",
@@ -44318,7 +44516,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-f65bb77682b83476",
@@ -44716,8 +44914,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-technology-on_device"
       ],
@@ -44875,9 +45073,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -45348,9 +45546,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-technology-on_device"
       ],
@@ -45981,9 +46179,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
@@ -46060,9 +46258,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [
@@ -49301,8 +49499,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
