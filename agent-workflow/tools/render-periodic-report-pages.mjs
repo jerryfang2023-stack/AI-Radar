@@ -246,15 +246,43 @@ function labelledItem(value = "") {
   return plain ? { label: plain[1], text: plain[2] } : { label: "", text };
 }
 
+function tableCells(line = "") {
+  return String(line).trim().replace(/^\||\|$/gu, "").split("|").map((cell) => cell.trim());
+}
+
+function isTableDivider(line = "") {
+  const cells = tableCells(line);
+  return cells.length > 0 && cells.every((cell) => /^:?-{3,}:?$/u.test(cell));
+}
+
+function renderMarkdownTable(headerLine, rowLines) {
+  const headers = tableCells(headerLine);
+  return `<div class="weekly-report-table-wrap"><table class="weekly-report-table"><thead><tr>${headers.map((header) => `<th scope="col">${inline(header)}</th>`).join("")}</tr></thead><tbody>${rowLines.map((line) => `<tr>${tableCells(line).map((cell, index) => `<td data-label="${escapeHtml(plainText(headers[index] || "字段"))}">${inline(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+}
+
 function renderSimpleLines(lines, { lead = false } = {}) {
   const html = [];
   let list = [];
+  const prepared = nonempty(lines);
   const flushList = () => {
     if (!list.length) return;
     html.push(`<ul>${list.map((item) => `<li>${inline(item)}</li>`).join("")}</ul>`);
     list = [];
   };
-  for (const raw of nonempty(lines)) {
+  for (let index = 0; index < prepared.length; index += 1) {
+    const raw = prepared[index];
+    if (/^\|.*\|$/u.test(raw) && isTableDivider(prepared[index + 1])) {
+      flushList();
+      const rows = [];
+      index += 2;
+      while (index < prepared.length && /^\|.*\|$/u.test(prepared[index])) {
+        rows.push(prepared[index]);
+        index += 1;
+      }
+      index -= 1;
+      html.push(renderMarkdownTable(raw, rows));
+      continue;
+    }
     const bullet = raw.match(/^\s*(?:[-*]|\d+[.)])\s+(.+)$/u);
     const subheading = raw.match(/^###\s+(.+)$/u) || raw.match(/^\*\*([^*]+)\*\*[：:]?$/u);
     if (bullet) {
@@ -292,6 +320,7 @@ function renderTrends(section) {
   const groups = parseGroups(section.lines, [
     /^###\s+(\d+)[.)、]?\s*(.+)$/u,
     /^(\d+)[.)]\s+\*\*(.+?)\*\*\s*(.*)$/u,
+    /^\*\*(裁决[一二三四五六七八九十\d]+)[：:]\s*(.+)\*\*$/u,
   ]);
   if (!groups.length) return renderSimpleLines(section.lines);
   return `<div class="weekly-trend-stack">${groups.map((group, index) => {
@@ -299,6 +328,23 @@ function renderTrends(section) {
     const title = signal ? group.title.slice(0, signal.index).trim() : group.title;
     return `<article class="weekly-trend-card"><span class="weekly-trend-rank">${String(group.marker || index + 1).padStart(2, "0")}</span><div class="weekly-trend-body"><div class="weekly-trend-head"><h3>${inline(title)}</h3>${signal || group.suffix ? `<span>${inline(signal?.[1] || group.suffix)}</span>` : ""}</div>${renderSimpleLines(group.lines)}</div></article>`;
   }).join("")}</div>`;
+}
+
+function renderEditorialGroups(section, patterns) {
+  const groups = parseGroups(section.lines, patterns);
+  if (!groups.length) return renderSimpleLines(section.lines);
+  return `<div class="weekly-trend-stack">${groups.map((group, index) => {
+    const heading = group.suffix ? `${group.title}：${group.suffix}` : group.title;
+    return `<article class="weekly-trend-card"><span class="weekly-trend-rank">${escapeHtml(String(group.marker || index + 1).replace(/[.、]$/u, ""))}</span><div class="weekly-trend-body"><div class="weekly-trend-head"><h3>${inline(heading)}</h3></div>${renderSimpleLines(group.lines)}</div></article>`;
+  }).join("")}</div>`;
+}
+
+function renderStructureJudgments(section) {
+  return renderEditorialGroups(section, [/^\*\*(\d+)[.、]\s*([^：:]+)[：:]\s*(.+)\*\*$/u]);
+}
+
+function renderContradictions(section) {
+  return renderEditorialGroups(section, [/^\*\*((?:矛盾|反证)[一二三四五六七八九十\d]*)[：:]\s*(.+)\*\*$/u]);
 }
 
 function renderChains(section) {
@@ -334,6 +380,8 @@ function renderImpacts(section) {
 
 function opportunityHeading(value) {
   const text = value.replace(/^###\s+/u, "").replace(/^\*\*|\*\*$/gu, "").trim();
+  const scored = text.match(/^(机会(?:卡)?\s*[一二三四五六七八九十\d]+)[：:]\s*(.*?)（机会评分[：:]\s*(-?\d+\s*\/\s*100)）$/u);
+  if (scored) return { label: scored[1], title: scored[2], score: scored[3] };
   const match = text.match(/^(机会(?:卡)?\s*[一二三四五六七八九十\d]+)[：:]\s*(.*?)(?:[，,]\s*(-?\d+\s*\/\s*100))?$/u);
   return match ? { label: match[1], title: match[2], score: match[3] || "" } : { label: "机会", title: text, score: "" };
 }
@@ -348,16 +396,20 @@ function renderOpportunities(section) {
     const heading = opportunityHeading(group.title);
     const metadata = [];
     const scores = [];
+    const prose = [];
     let inScores = false;
     for (const line of group.lines) {
-      if (!/^\s*[-*]\s+/u.test(line)) continue;
+      if (!/^\s*[-*]\s+/u.test(line)) {
+        prose.push(line);
+        continue;
+      }
       const item = labelledItem(line);
       if (/^评分$/u.test(item.label)) { inScores = true; continue; }
       if (inScores) scores.push(item);
       else metadata.push(item);
     }
     const total = scores.find((item) => item.label === "总分")?.text.match(/-?\d+\s*\/\s*100/u)?.[0] || heading.score;
-    return `<article class="weekly-opportunity-card"><div class="weekly-opportunity-head"><div><span>${inline(heading.label)}</span><h3>${inline(heading.title)}</h3></div>${total ? `<strong>${inline(total)}</strong>` : ""}</div><dl class="weekly-opportunity-meta">${metadata.map((item) => `<div><dt>${inline(item.label || "要点")}</dt><dd>${inline(item.text)}</dd></div>`).join("")}</dl>${scores.length ? `<div class="weekly-score-list" aria-label="机会评分">${scores.filter((item) => item.label !== "总分").map((item) => { const score = item.text.match(/(-?\d+)\s*\/\s*(\d+)/u); const width = score ? Math.max(0, Math.min(100, Math.round(Math.abs(Number(score[1])) / Number(score[2]) * 100))) : 0; const note = score ? item.text.slice((score.index || 0) + score[0].length).replace(/^[（(]|[）)]$/gu, "").trim() : ""; return `<div><span>${inline(item.label)}</span><i style="--score:${width}%;"></i><b>${inline(score?.[1] || item.text)}</b><em>${inline(note)}</em></div>`; }).join("")}</div>` : ""}</article>`;
+    return `<article class="weekly-opportunity-card"><div class="weekly-opportunity-head"><div><span>${inline(heading.label)}</span><h3>${inline(heading.title)}</h3></div>${total ? `<strong>${inline(total)}</strong>` : ""}</div>${prose.length ? `<div class="weekly-opportunity-prose">${renderSimpleLines(prose)}</div>` : ""}${metadata.length ? `<dl class="weekly-opportunity-meta">${metadata.map((item) => `<div><dt>${inline(item.label || "要点")}</dt><dd>${inline(item.text)}</dd></div>`).join("")}</dl>` : ""}${scores.length ? `<div class="weekly-score-list" aria-label="机会评分">${scores.filter((item) => item.label !== "总分").map((item) => { const score = item.text.match(/(-?\d+)\s*\/\s*(\d+)/u); const width = score ? Math.max(0, Math.min(100, Math.round(Math.abs(Number(score[1])) / Number(score[2]) * 100))) : 0; const note = score ? item.text.slice((score.index || 0) + score[0].length).replace(/^[（(]|[）)]$/gu, "").trim() : ""; return `<div><span>${inline(item.label)}</span><i style="--score:${width}%;"></i><b>${inline(score?.[1] || item.text)}</b><em>${inline(note)}</em></div>`; }).join("")}</div>` : ""}</article>`;
   }).join("")}</div>`;
 }
 
@@ -397,19 +449,21 @@ function renderActions(section) {
   return actions.length ? `<div class="weekly-action-grid">${actions.map((action) => `<article class="weekly-action-item"><h3>${inline(action.label)}</h3>${action.lines.map((line) => `<p>${inline(line)}</p>`).join("")}</article>`).join("")}</div>` : renderSimpleLines(section.lines);
 }
 
-function renderSection(section) {
-  const renderers = { "2": renderTrends, "3": renderChains, "4": renderImpacts, "5": renderOpportunities, "6": renderContrarian, "7": renderWatchlist, "8": renderActions };
+function renderSection(section, reportKind = "weekly") {
+  const renderers = reportKind === "monthly"
+    ? { "2": renderStructureJudgments, "3": renderTrends, "4": (item) => renderSimpleLines(item.lines), "5": renderOpportunities, "6": renderContradictions, "7": renderWatchlist, "8": (item) => renderSimpleLines(item.lines, { lead: true }) }
+    : { "2": renderTrends, "3": renderChains, "4": renderImpacts, "5": renderOpportunities, "6": renderContrarian, "7": renderWatchlist, "8": renderActions };
   const content = section.number === "1" ? renderSimpleLines(section.lines, { lead: true }) : (renderers[section.number]?.(section) || renderSimpleLines(section.lines));
   const label = section.number === "0" ? "Evidence" : String(section.number).padStart(2, "0");
   return `<section class="weekly-report-section${section.number === "0" ? " weekly-report-method" : ""}" id="section-${section.number}" aria-labelledby="section-${section.number}-title"><p class="weekly-report-section-label">${label}</p><h2 id="section-${section.number}-title">${inline(section.title)}</h2>${content}</section>`;
 }
 
-export function renderBody(markdown, { evidenceSources } = {}) {
+export function renderBody(markdown, { evidenceSources, reportKind = kind } = {}) {
   const previousEvidenceSources = activeEvidenceSources;
   if (evidenceSources) activeEvidenceSources = evidenceSources;
   try {
     const sections = parseReportSections(markdown);
-    return [...sections.filter((section) => section.number !== "0"), ...sections.filter((section) => section.number === "0")].map(renderSection).join("\n");
+    return [...sections.filter((section) => section.number !== "0"), ...sections.filter((section) => section.number === "0")].map((section) => renderSection(section, reportKind)).join("\n");
   } finally {
     activeEvidenceSources = previousEvidenceSources;
   }
@@ -466,9 +520,9 @@ function shell(metadata, content, markdown) {
 <meta name="wavesight-version" content="${SITE_VERSION}"><meta name="wavesight-column-version" content="${REPORTS_CENTER_VERSION}">
 <meta name="${sourceMetaName}" content="${escapeHtml(metadata.source)}"><title>${escapeHtml(metadata.title)}｜观澜 AI</title>
 <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/data-center-v4.css"><link rel="stylesheet" href="assets/weekly-report.css"></head>
-<body class="weekly-report-page dc-report-page"><header class="dc-header"><a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心"><img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI"></a><button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button></header>
+<body class="weekly-report-page ${kind === "monthly" ? "monthly-report-page " : ""}dc-report-page"><header class="dc-header"><a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心"><img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI"></a><button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button></header>
 <div class="dc-layout"><aside class="dc-sidebar" id="dc-sidebar" data-sidebar><nav aria-label="数据中心与应用中心"><section class="dc-nav-group"><h2>数据中心</h2><a href="data-center.html?view=events">事件库</a><a href="data-center.html?view=community">社群情报</a><a href="data-center.html?view=viewpoints">一线观点</a><a href="data-center.html?view=index">实体库</a></section><section class="dc-nav-group dc-nav-apps"><h2>应用中心</h2><a href="trend-radar.html">变化雷达</a><a href="intelligence-map.html" aria-current="page">观澜研究</a></section></nav></aside>
-<main class="weekly-report-shell dc-main dc-report-detail-main" id="main-content"><section class="weekly-report-hero" aria-labelledby="weekly-report-title"><div><p class="weekly-report-kicker">${kind === "weekly" ? "Weekly Business Radar" : "Monthly Business Report"}</p><div class="weekly-report-title-row"><h1 id="weekly-report-title">${escapeHtml(metadata.title)}</h1>${renderReportSelector(metadata)}</div></div></section>${kind === "weekly" ? `${renderFastRead(markdown)}${renderActionPanel(markdown)}` : ""}<div class="weekly-report-layout">${renderRail(markdown)}<article class="weekly-report-reader" aria-label="${typeLabel}正文">${content}</article></div></main></div><script src="assets/v4-report-shell.js"></script><script>(()=>{const selector=document.querySelector("[data-periodic-report-selector]");selector?.addEventListener("change",()=>{if(selector.value)window.location.assign(selector.value);});})();</script></body></html>\n`;
+<main class="weekly-report-shell dc-main dc-report-detail-main" id="main-content"><section class="weekly-report-hero" aria-labelledby="weekly-report-title"><div>${kind === "weekly" ? '<p class="weekly-report-kicker">Weekly Business Radar</p>' : ""}<div class="weekly-report-title-row"><h1 id="weekly-report-title">${escapeHtml(metadata.title)}</h1>${renderReportSelector(metadata)}</div></div></section>${kind === "weekly" ? `${renderFastRead(markdown)}${renderActionPanel(markdown)}` : ""}<div class="weekly-report-layout">${renderRail(markdown)}<article class="weekly-report-reader" aria-label="${typeLabel}正文">${content}</article></div></main></div><script src="assets/v4-report-shell.js"></script><script>(()=>{const selector=document.querySelector("[data-periodic-report-selector]");selector?.addEventListener("change",()=>{if(selector.value)window.location.assign(selector.value);});})();</script></body></html>\n`;
 }
 
 function promote(text) {
