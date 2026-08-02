@@ -79,12 +79,12 @@ function prompt(manifest) {
   ].join("\n\n");
 }
 
-function normalizeEvidenceReferences(payload, allowedIds) {
+function normalizeEvidenceReferences(payload, evidenceKinds) {
   for (const section of payload?.sections || []) {
-    section.content = String(section.content || "").replace(/\[E:([^\]]+)\]/gu, (citation, id) => {
-      if (allowedIds.has(id)) return citation;
-      const canonicalId = `EV-${id}`;
-      return allowedIds.has(canonicalId) ? `[E:${canonicalId}]` : citation;
+    section.content = String(section.content || "").replace(/\[(E|O|C):([^\]]+)\]/gu, (citation, _kind, id) => {
+      const canonicalId = evidenceKinds.has(id) ? id : `EV-${id}`;
+      const canonicalKind = evidenceKinds.get(canonicalId);
+      return canonicalKind ? `[${canonicalKind}:${canonicalId}]` : citation;
     });
   }
 }
@@ -117,17 +117,19 @@ function validateWeeklySections(payload) {
   return problems;
 }
 
-function validateReport(payload, allowedIds, sectionCount) {
+function validateReport(payload, evidenceKinds, sectionCount) {
   const problems = [];
-  normalizeEvidenceReferences(payload, allowedIds);
+  normalizeEvidenceReferences(payload, evidenceKinds);
   if (!payload?.title || !Array.isArray(payload?.sections) || payload.sections.length !== sectionCount) problems.push("report_shape_invalid");
   problems.push(...periodicReportTitleProblems(payload?.title));
   for (let index = 0; index < sectionCount; index += 1) {
     const section = payload?.sections?.[index];
     if (section?.number !== index || !section?.title || !section?.content) problems.push(`section_${index}_invalid`);
   }
-  const references = [...JSON.stringify(payload).matchAll(/\[(?:E|O|C):([^\]]+)\]/gu)].map((match) => match[1]);
-  for (const id of references) if (!allowedIds.has(id)) problems.push(`unknown_evidence_id:${id}`);
+  const references = [...JSON.stringify(payload).matchAll(/\[(E|O|C):([^\]]+)\]/gu)].map((match) => ({ kind: match[1], id: match[2] }));
+  for (const reference of references) {
+    if (evidenceKinds.get(reference.id) !== reference.kind) problems.push(`unknown_evidence_reference:${reference.kind}:${reference.id}`);
+  }
   if (!references.length) problems.push("missing_evidence_references");
   if (kind === "weekly") problems.push(...validateWeeklySections(payload));
   return [...new Set(problems)];
@@ -136,14 +138,19 @@ function validateReport(payload, allowedIds, sectionCount) {
 async function main() {
   if (!new Set(["weekly", "monthly"]).has(kind) || !date || !windowStart || !windowEnd) throw new Error("kind, date, window-start, and window-end are required");
   const manifest = evidenceManifest();
-  const allowedIds = new Set([...manifest.events, ...manifest.opinions, ...manifest.community].map((item) => item.id));
+  const evidenceKinds = new Map([
+    ...manifest.events.map((item) => [item.id, "E"]),
+    ...manifest.opinions.map((item) => [item.id, "O"]),
+    ...manifest.community.map((item) => [item.id, "C"]),
+  ]);
+  const allowedIds = new Set(evidenceKinds.keys());
   const sectionCount = kind === "weekly" ? 9 : 8;
   const result = await deepSeekJsonCompletion({
     model: deepSeekModels().pro,
     messages: [{ role: "user", content: prompt(manifest) }],
     maxTokens: 7000,
     timeoutMs: 180000,
-    validate: (payload) => validateReport(payload, allowedIds, sectionCount),
+    validate: (payload) => validateReport(payload, evidenceKinds, sectionCount),
   });
   const frontmatter = kind === "weekly"
     ? ["---", `title: "${result.payload.title.replaceAll('"', "'")}"`, `date: ${date}`, `week: ${isoWeek(windowEnd)}`, `window: ${windowStart} to ${windowEnd}`, "content_type: weekly-report", `slug: weekly-${isoWeek(windowEnd).toLowerCase()}`, "status: draft", "model_provider: deepseek", `model: ${result.model}`, "---"]

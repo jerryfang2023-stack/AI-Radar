@@ -104,6 +104,50 @@ test("recent weekly reports render as editorial modules with evidence last", () 
   }
 });
 
+test("monthly reports preserve prose and render editorial tables for mobile", () => {
+  const markdown = [
+    "## 0. 数据边界",
+    "",
+    "边界说明。",
+    "",
+    "## 1. 本月核心结论",
+    "",
+    "交付责任成为稀缺资源。",
+    "",
+    "## 2. 结构判断",
+    "",
+    "**1. 部署层：从卖工具转向卖结果**",
+    "",
+    "结果定价开始出现。",
+    "",
+    "## 3. 趋势裁决",
+    "",
+    "**裁决一：交付能力升级**",
+    "",
+    "仍需验证续约。",
+    "",
+    "## 4. 证据完整性",
+    "",
+    "| 趋势链 | 完整性 | 裁决 |",
+    "|---|---|---|",
+    "| 部署交付 | 基本完整 | 升级 |",
+    "",
+    "## 5. 下游机会假设（机会地图）",
+    "",
+    "**机会一：部署服务（机会评分：85/100）**",
+    "",
+    "这段机会正文必须完整保留。",
+  ].join("\n");
+  const html = renderBody(markdown, { reportKind: "monthly" });
+  assert.match(html, /weekly-trend-stack/u);
+  assert.match(html, /<table class="weekly-report-table">/u);
+  assert.match(html, /data-label="趋势链"/u);
+  assert.match(html, /weekly-opportunity-prose/u);
+  assert.match(html, /这段机会正文必须完整保留/u);
+  assert.ok(html.indexOf('id="section-0"') > html.indexOf('id="section-5"'));
+  assert.doesNotMatch(html, /^\|[-:| ]+\|/mu);
+});
+
 test("report center feature cards always match the latest published sources", () => {
   const root = process.cwd();
   const html = fs.readFileSync(path.join(root, "01-SiteV2", "site", "intelligence-map.html"), "utf8");
