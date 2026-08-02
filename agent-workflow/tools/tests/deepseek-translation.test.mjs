@@ -7,7 +7,15 @@ import {
   translateOpinionWithDeepSeek,
 } from "../deepseek-translation-client.mjs";
 import { translateOpinionText } from "../opinion-translation-utils.mjs";
-import { sourceTitleFactsPreserved } from "../source-title-translation-generator.mjs";
+import {
+  sourceTitleFactsPreserved,
+  sourceTitleNeedsChineseTranslation,
+} from "../source-title-translation-generator.mjs";
+
+test("standalone protected product names do not require artificial translation", () => {
+  assert.equal(sourceTitleNeedsChineseTranslation("NVIDIA AI Enterprise"), false);
+  assert.equal(sourceTitleNeedsChineseTranslation("NVIDIA AI Enterprise launches a new release"), true);
+});
 
 test("routes short text to Flash and long multi-paragraph text to Pro", () => {
   const env = { DEEPSEEK_FLASH_MODEL: "flash", DEEPSEEK_PRO_MODEL: "pro" };

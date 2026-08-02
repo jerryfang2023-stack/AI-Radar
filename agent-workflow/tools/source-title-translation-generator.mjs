@@ -17,6 +17,7 @@ export function isApprovedSourceTitleTranslation(entry = {}) {
 export function sourceTitleNeedsChineseTranslation(value = "") {
   const text = String(value || "").trim();
   if (!text) return false;
+  if (/^NVIDIA AI Enterprise$/iu.test(text)) return false;
   const hanCount = (text.match(/[\u4e00-\u9fff]/gu) || []).length;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
   const hasChineseEventAction = /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采购|采用|收购|获批|关停|开放|扩展|发布会)/u.test(text);
