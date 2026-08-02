@@ -12253,28 +12253,30 @@
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "quarantine",
+      "action": "confirm",
       "merge_into_entity_id": "",
       "canonical": {
         "name": "Rime",
-        "catalog_type": "other",
+        "catalog_type": "company",
         "company_names": []
       },
       "evidence": {
-        "claim_refs": [],
+        "claim_refs": [
+          "CL-e5380c45c7c01a26",
+          "CL-dd06fe883e213eae",
+          "CL-0420551287d29690",
+          "CL-f4a47b77373dcd46"
+        ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "insufficient_evidence",
-      "confidence": 0,
-      "rationale": "所有提供的证据均关于Prime Intellect的融资事件，未提及Rime，无法验证Rime是否为一个公司实体。",
+      "advisory_source": "funding_taxonomy_review",
+      "advisory_decision": "confirmed",
+      "confidence": 0.95,
+      "rationale": "复核后的融资事件和公司研究证据均明确指向语音 AI 公司 Rime；此前隔离决定使用了错配的 Prime Intellect 证据，现予纠正。",
       "review_status": "accepted",
-      "reviewer": "codex-global-audit-repair",
-      "reviewed_at": "2026-07-26T16:15:07.309Z",
-      "error_patterns": [
-        "generic_or_non_entity",
-        "insufficient_claim_evidence"
-      ]
+      "reviewer": "codex-funding-taxonomy-repair",
+      "reviewed_at": "2026-08-02T00:00:00.000Z",
+      "error_patterns": []
     },
     {
       "entity_id": "EN-8d74f5e9f7d95104",
@@ -29732,6 +29734,99 @@
       "error_patterns": [
         "name_extraction_fragment"
       ]
+    },
+    {
+      "entity_id": "EN-53982b85c02841f2",
+      "current": {
+        "name": "Infinity",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "Infinity",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-c9743e9d5f9d1d14",
+          "CL-f99d19a771e1d0c2",
+          "CL-ae5eaeea7b43c214",
+          "CL-48ae22e8f33dd794"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "funding_taxonomy_review",
+      "advisory_decision": "confirmed",
+      "confidence": 0.95,
+      "rationale": "融资事件与公司研究证据明确将 Infinity 识别为本轮被投公司。",
+      "review_status": "accepted",
+      "reviewer": "codex-funding-taxonomy-repair",
+      "reviewed_at": "2026-08-02T00:00:00.000Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-f9075cc99990820a",
+      "current": {
+        "name": "P-1 AI, Inc.",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "P-1 AI, Inc.",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-fd851e83627a98a0"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "funding_taxonomy_review",
+      "advisory_decision": "confirmed",
+      "confidence": 0.95,
+      "rationale": "已接受的原文证据明确将 P-1 AI, Inc. 识别为完成 5000 万美元 A 轮融资的公司。",
+      "review_status": "accepted",
+      "reviewer": "codex-funding-taxonomy-repair",
+      "reviewed_at": "2026-08-02T00:00:00.000Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-c189daf477a2d4ca",
+      "current": {
+        "name": "Pathwork",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "Pathwork",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-b8fa94a170e05ffe",
+          "CL-11fc093eae05b913",
+          "CL-f2780eb40b6c69f4",
+          "CL-88ac1643d9f0bfcc"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "funding_taxonomy_review",
+      "advisory_decision": "confirmed",
+      "confidence": 0.95,
+      "rationale": "融资事件与公司研究证据明确将 Pathwork 识别为本轮被投公司。",
+      "review_status": "accepted",
+      "reviewer": "codex-funding-taxonomy-repair",
+      "reviewed_at": "2026-08-02T00:00:00.000Z",
+      "error_patterns": []
     }
   ]
 }

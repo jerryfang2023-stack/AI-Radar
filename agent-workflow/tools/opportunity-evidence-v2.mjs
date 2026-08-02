@@ -180,7 +180,7 @@ function dailyDirectories(root, asOf = "", windowDays = 30) {
 function aggregateV4(root, options = {}) {
   const { activeDate, directories } = dailyDirectories(root, options.asOf, options.windowDays || 30);
   const maps = Object.fromEntries([
-    "events", "claims", "sources", "entities", "rawDocuments", "facets",
+    "events", "claims", "sources", "entities", "rawDocuments", "facets", "tags", "reviewed",
   ].map((name) => [name, new Map()]));
   for (const { date, dir } of directories) {
     for (const event of readJson(path.join(dir, "canonical-events.json"))) {
@@ -192,6 +192,12 @@ function aggregateV4(root, options = {}) {
     for (const raw of readJson(path.join(dir, "raw-documents.json"))) maps.rawDocuments.set(raw.raw_id, raw);
     for (const facet of readJson(path.join(dir, "facet-assertions.json"))) {
       maps.facets.set(`${facet.asset_id}|${facet.dimension_id}|${facet.value_id}`, facet);
+    }
+    for (const tag of readJson(path.join(dir, "tag-assertions.json"))) {
+      maps.tags.set(`${tag.asset_id}|${tag.tag_id}`, tag);
+    }
+    for (const classification of readJson(path.join(dir, "reviewed-event-classifications.json"))) {
+      maps.reviewed.set(classification.reviewed_classification_id, classification);
     }
   }
   return { activeDate, ...maps };
@@ -244,6 +250,15 @@ function applicationAssertions(event, claims, facets, rawDocuments, publicSource
 
 function buildEvidenceRecords(root, options = {}) {
   const aggregate = aggregateV4(root, options);
+  const taxonomy = readJson(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), { tags: [], facets: [] });
+  const technologyNames = new Map((taxonomy.tags || []).map((item) => [item.id, item.name || item.id]));
+  const facetNames = new Map((taxonomy.facets || []).map((facet) => [
+    facet.id,
+    {
+      name: facet.name || facet.id,
+      values: new Map((facet.values || []).map((item) => [item.id, item.name || item.id])),
+    },
+  ]));
   const records = [];
   for (const event of aggregate.events.values()) {
     const category = eventCategory.get(event.event_type);
@@ -263,6 +278,44 @@ function buildEvidenceRecords(root, options = {}) {
     const facets = [...aggregate.facets.values()]
       .filter((facet) => claims.some((claim) => claim.claim_id === facet.evidence_ref || claim.claim_id === facet.asset_id))
       .filter((facet) => facet.status === "active");
+    const tags = [...aggregate.tags.values()]
+      .filter((tag) => claims.some((claim) => claim.claim_id === tag.evidence_ref || claim.claim_id === tag.asset_id))
+      .filter((tag) => tag.status === "active");
+    const reviewed = [...aggregate.reviewed.values()]
+      .filter((item) => item.event_id === event.event_id && item.status === "active");
+    const classifications = [
+      ...tags.map((item) => ({
+        dimension_id: "technology",
+        dimension_name: "技术",
+        value_id: item.tag_id,
+        value_name: technologyNames.get(item.tag_id) || item.tag_id,
+        entity_ids: [],
+        provenance: "claim_assertion",
+        assertion_ref: item.assertion_id || "",
+      })),
+      ...facets.map((item) => ({
+        dimension_id: item.dimension_id,
+        dimension_name: facetNames.get(item.dimension_id)?.name || item.dimension_id,
+        value_id: item.value_id,
+        value_name: facetNames.get(item.dimension_id)?.values.get(item.value_id) || item.value_id,
+        entity_ids: [],
+        provenance: "claim_assertion",
+        assertion_ref: item.assertion_id || "",
+      })),
+      ...reviewed.map((item) => ({
+        dimension_id: item.dimension_id,
+        dimension_name: facetNames.get(item.dimension_id)?.name || item.dimension_id,
+        value_id: item.value_id,
+        value_name: facetNames.get(item.dimension_id)?.values.get(item.value_id) || item.value_id,
+        entity_ids: [item.entity_id],
+        provenance: "reviewed_funding_insight",
+        assertion_ref: item.reviewed_classification_id,
+      })),
+    ].filter((item, index, list) => list.findIndex((candidate) => (
+      candidate.dimension_id === item.dimension_id
+      && candidate.value_id === item.value_id
+      && candidate.entity_ids.join("|") === item.entity_ids.join("|")
+    )) === index);
     const assertions = applicationAssertions(
       event,
       claims,
@@ -296,6 +349,8 @@ function buildEvidenceRecords(root, options = {}) {
       })),
       claim_refs: claims.map((claim) => claim.claim_id),
       source_refs: publicSources.map((source) => source.source_artifact_id),
+      taxonomy_version: "TAG-V4.1",
+      classifications,
       application_assertions: assertions,
       opportunitySignals: {
         labels: Object.fromEntries(mapFields.map((field) => [
@@ -392,6 +447,7 @@ export function buildOpportunityEvidenceData(
       applicationVersion: "OMAP-V2.0.0-v4-evidence",
       opportunityMapVersion: "OMAP-V2.0.0-v4-evidence",
       directionCardVersion: "DIRECTION-CARD-V2.0-v4-evidence",
+      taxonomyVersion: "TAG-V4.1",
       activeDate,
       generatedAt: activeDate ? `${activeDate}T00:00:00.000Z` : "",
       windowDays,
@@ -408,11 +464,13 @@ export function opportunityEvidenceProblems(data = {}) {
   const problems = [];
   if (data.meta?.schemaVersion !== "OPPORTUNITY-EVIDENCE-V2.0") problems.push("schema_version_invalid");
   if (data.meta?.sourceAdapter !== "data-center-v4-canonical") problems.push("source_adapter_invalid");
+  if (data.meta?.taxonomyVersion !== "TAG-V4.1") problems.push("taxonomy_version_invalid");
   if (!Array.isArray(data.evidence) || !data.evidence.length) problems.push("evidence_missing");
   for (const item of data.evidence || []) {
     if (!item.event_id || !item.title || !item.date) problems.push(`${item.event_id || "unknown"}:identity_missing`);
     if (!item.claim_refs?.length || !item.source_refs?.length) problems.push(`${item.event_id}:evidence_refs_missing`);
     if (!item.sourceUrl || !item.sourceExcerpt) problems.push(`${item.event_id}:public_source_missing`);
+    if (item.taxonomy_version !== "TAG-V4.1" || !Array.isArray(item.classifications)) problems.push(`${item.event_id}:taxonomy_missing`);
     for (const field of mapFields) {
       for (const assertion of item.application_assertions?.[field] || []) {
         if (!assertion.claim_ref || !assertion.source_refs?.length) {

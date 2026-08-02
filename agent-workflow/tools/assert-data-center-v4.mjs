@@ -2,6 +2,7 @@
 
 import fs from "fs";
 import path from "path";
+import crypto from "node:crypto";
 import { fileURLToPath } from "url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
@@ -110,7 +111,7 @@ export function readBundle(date) {
   const names = [
     "manifest", "source-artifacts", "raw-documents", "claims", "entities", "entity-mentions",
     "canonical-events", "event-sources", "event-claims", "event-conflicts", "relationships", "tag-assertions",
-    "facet-assertions", "fde-records", "fde-observations", "hardware-records", "hardware-facts",
+    "facet-assertions", "reviewed-event-classifications", "fde-records", "fde-observations", "hardware-records", "hardware-facts",
     "hardware-snapshots", "monitoring-funnel", "qa-queue", "legacy-asset-mappings"
   ];
   return Object.fromEntries(names.flatMap((name) => {
@@ -254,6 +255,22 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
     if (assertion.taxonomy_version !== "TAG-V4.1") failures.push(`${assertion.asset_id}: facet taxonomy_version mismatch`);
   }
 
+  const reviewedEventClassifications = bundle.reviewed_event_classifications || [];
+  failures.push(...duplicateIds(reviewedEventClassifications, "reviewed_classification_id", "reviewed_event_classifications"));
+  for (const assertion of reviewedEventClassifications) {
+    if (!eventById.has(assertion.event_id)) failures.push(`${assertion.reviewed_classification_id}: reviewed event_id does not resolve`);
+    if (!facetValues.has(assertion.dimension_id)) failures.push(`${assertion.reviewed_classification_id}: unknown reviewed facet ${assertion.dimension_id}`);
+    else if (!facetValues.get(assertion.dimension_id).has(assertion.value_id)) failures.push(`${assertion.reviewed_classification_id}: unknown reviewed facet value ${assertion.dimension_id}.${assertion.value_id}`);
+    if (assertion.taxonomy_version !== "TAG-V4.1") failures.push(`${assertion.reviewed_classification_id}: reviewed taxonomy_version mismatch`);
+    if (assertion.assignment_method !== "reviewed_funding_insight" || assertion.review_status !== "accepted") {
+      failures.push(`${assertion.reviewed_classification_id}: reviewed classification lacks accepted review provenance`);
+    }
+    for (const evidence of assertion.evidence_refs || []) {
+      const quoteHash = crypto.createHash("sha256").update(String(evidence.quote || "")).digest("hex");
+      if (quoteHash !== evidence.quote_hash) failures.push(`${assertion.reviewed_classification_id}: reviewed evidence quote hash mismatch`);
+    }
+  }
+
   for (const relationship of bundle.relationships) {
     if (!eventById.has(relationship.event_id)) failures.push(`${relationship.relationship_id}: relationship event_id does not resolve`);
     if (!claimById.has(relationship.claim_ref)) failures.push(`${relationship.relationship_id}: relationship claim_ref does not resolve`);
@@ -329,8 +346,8 @@ export function evaluateBundle(bundle, taxonomy, options = {}) {
       canonical_event_claim_traceability: bundle.canonical_events.length ? bundle.canonical_events.filter((event) => event.claim_refs.length).length / bundle.canonical_events.length : 1,
       ai_industry_scope_coverage: bundle.canonical_events.length ? aiIndustryEventCount / bundle.canonical_events.length : 1,
       tag_evidence_coverage: bundle.tag_assertions.length ? bundle.tag_assertions.filter((item) => item.evidence_ref && item.source_span).length / bundle.tag_assertions.length : 1,
-      facet_evidence_coverage: bundle.facet_assertions.length ? bundle.facet_assertions.filter((item) => item.evidence_ref && item.source_span).length / bundle.facet_assertions.length : 1
-      ,
+      facet_evidence_coverage: bundle.facet_assertions.length ? bundle.facet_assertions.filter((item) => item.evidence_ref && item.source_span).length / bundle.facet_assertions.length : 1,
+      reviewed_classification_evidence_coverage: reviewedEventClassifications.length ? reviewedEventClassifications.filter((item) => item.evidence_refs?.length && item.decision_ref).length / reviewedEventClassifications.length : 1,
       fde_observation_traceability: bundle.fde_observations.length ? bundle.fde_observations.filter((item) => item.claim_refs.length && item.source_refs.length).length / bundle.fde_observations.length : 1,
       hardware_fact_traceability: bundle.hardware_facts.length ? bundle.hardware_facts.filter((item) => item.claim_ref && item.source_refs.length).length / bundle.hardware_facts.length : 1
     }
@@ -447,6 +464,7 @@ function markdownReport(date, result) {
     `- claims: ${result.counts.claims}`,
     `- tag_assertions: ${result.counts.tag_assertions}`,
     `- facet_assertions: ${result.counts.facet_assertions}`,
+    `- reviewed_event_classifications: ${result.counts.reviewed_event_classifications || 0}`,
     `- fde_records: ${result.counts.fde_records}`,
     `- fde_observations: ${result.counts.fde_observations}`,
     `- hardware_records: ${result.counts.hardware_records}`,
@@ -457,6 +475,7 @@ function markdownReport(date, result) {
     `- ai_industry_scope_coverage: ${(result.metrics.ai_industry_scope_coverage * 100).toFixed(1)}%`,
     `- tag_evidence_coverage: ${(result.metrics.tag_evidence_coverage * 100).toFixed(1)}%`,
     `- facet_evidence_coverage: ${(result.metrics.facet_evidence_coverage * 100).toFixed(1)}%`,
+    `- reviewed_classification_evidence_coverage: ${(result.metrics.reviewed_classification_evidence_coverage * 100).toFixed(1)}%`,
     `- fde_observation_traceability: ${(result.metrics.fde_observation_traceability * 100).toFixed(1)}%`,
     `- hardware_fact_traceability: ${(result.metrics.hardware_fact_traceability * 100).toFixed(1)}%`,
     `- current_raw_snapshot_coverage: ${((result.metrics.current_raw_snapshot_coverage ?? 1) * 100).toFixed(1)}%`,

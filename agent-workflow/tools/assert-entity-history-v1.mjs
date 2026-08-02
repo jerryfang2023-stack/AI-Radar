@@ -47,7 +47,17 @@ function evaluate(data) {
   if ((data.people || []).some((item) => !item.viewpointIds?.length && !item.eventIds?.length && !item.fundingInsightIds?.length)) {
     problems.push("public people contain no event, viewpoint, or reviewed funding lineage");
   }
-  if (nodes.some((item) => !["technology", "use_case", "industry"].includes(item.nodeType))) problems.push("taxonomy index contains a non-approved dimension");
+  if (nodes.some((item) => ![
+    "ai_market_category",
+    "ai_market_subcategory",
+    "ai_market_application",
+    "product_form",
+    "technology",
+    "use_case",
+    "industry",
+    "target_user",
+    "deployment_model",
+  ].includes(item.nodeType))) problems.push("taxonomy index contains a non-approved dimension");
 
   for (const profile of profiles) {
     if (!/^EN-[a-f0-9]{16}$/u.test(profile.id)) problems.push(`invalid entity id ${profile.id}`);

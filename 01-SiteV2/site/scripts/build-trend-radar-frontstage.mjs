@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-export const COLUMN_VERSION = "TRADAR-V1.0.1-china-market-filter";
+export const COLUMN_VERSION = "TRADAR-V1.1.0-tag-v4-1";
 const ACCEPTED = new Set(["verified", "partial"]);
 const CATEGORY_ORDER = ["financing", "deployment", "partnership", "product", "hardware"];
 const CATEGORY_LABELS = {
@@ -165,7 +165,7 @@ export function buildTrendRadarData(root = defaultRoot) {
   const firstClassificationSeen = new Map();
   for (const event of [...eventList].filter((item) => item.category !== "other").sort((a, b) => a.dataDate.localeCompare(b.dataDate) || a.id.localeCompare(b.id))) {
     for (const classification of event.classifications) {
-      for (const entityId of event.entityIds) {
+      for (const entityId of (classification.entityIds || []).filter((id) => verifiedEntities.has(id))) {
         const pairKey = `${entityId}|${classification.dimensionId}|${classification.id}`;
         if (!firstClassificationSeen.has(pairKey)) {
           firstClassificationSeen.set(pairKey, { entityId, classification, dataDate: event.dataDate, eventId: event.id });
@@ -267,9 +267,15 @@ export function buildTrendRadarData(root = defaultRoot) {
         disclosedMetricCount: financingEvents.filter((event) => event.metricDisclosed).length,
       },
       distributions: {
+        marketCategory: classificationDistribution(tracked, "ai_market_category"),
+        marketSubcategory: classificationDistribution(tracked, "ai_market_subcategory"),
+        marketApplication: classificationDistribution(tracked, "ai_market_application"),
+        productForm: classificationDistribution(tracked, "product_form"),
         technology: classificationDistribution(tracked, "technology"),
         useCase: classificationDistribution(tracked, "use_case"),
         industry: classificationDistribution(tracked, "industry"),
+        targetUser: classificationDistribution(tracked, "target_user"),
+        deploymentModel: classificationDistribution(tracked, "deployment_model"),
       },
       deploymentEventIds: tracked.filter((event) => event.category === "deployment" || event.eventType === "hardware_deployment").map((event) => event.id),
       coverage: "按数据中心接受日期汇总；分类分布按唯一事件计数，未观测日期不得解释为零活动。",
@@ -288,6 +294,7 @@ export function buildTrendRadarData(root = defaultRoot) {
       eventVersion: "EVENT-V1.1",
       entityVersion: input.meta.entityVersion,
       relationshipVersion: input.meta.relationshipVersion,
+      taxonomyVersion: "TAG-V4.1",
       generatedAt: process.env.WAVESIGHT_TREND_RADAR_GENERATED_AT || new Date().toISOString(),
       latestDataDate: input.meta.latestDataDate,
       timezone: "Asia/Shanghai",

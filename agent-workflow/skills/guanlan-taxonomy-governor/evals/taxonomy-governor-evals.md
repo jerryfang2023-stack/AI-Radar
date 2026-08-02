@@ -12,3 +12,8 @@
 10. Fail when a Funding Insight source card lacks an explicit reviewed market category, subcategory where applicable, or product form and the public builder guesses one from keywords.
 11. Fail when a world model, simulation model, or future robotics plan is classified as Physical AI without evidence of a current robot, vehicle, or autonomous machine product acting in the physical world.
 12. Fail when a generic `technology` or `software` value is used as the customer's industry in an AI-only corpus.
+13. Fail when a founder's former employer, work history, or an investor's background assigns a business classification to the funded company.
+14. Fail when an event-level classification is copied to every linked entity instead of the exact target entity supported by evidence.
+15. Pass when all 222 reviewed Funding Insight decisions produce evidence-backed `ReviewedEventClassification` rows that resolve to 222 canonical events and one target company per decision.
+16. Fail when a reviewed classification fabricates a Claim span, omits exact research evidence, or loses its decision-to-canonical-event lineage.
+17. Fail when Data Center, Funding Insights, Trend Radar, Opportunity Evidence, or entity profiles use a retired value, a different taxonomy version, or classifications inconsistent with the reviewed decision ledger.

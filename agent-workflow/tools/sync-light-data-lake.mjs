@@ -229,6 +229,7 @@ function main() {
     relationships: collectDataCenterRows("relationships", "relationship_id"),
     tag_assertions: collectDataCenterRows("tag-assertions"),
     facet_assertions: collectDataCenterRows("facet-assertions"),
+    reviewed_event_classifications: collectDataCenterRows("reviewed-event-classifications", "reviewed_classification_id"),
     fde_records: collectDataCenterRows("fde-records", "fde_id"),
     fde_observations: collectDataCenterRows("fde-observations", "observation_id"),
     hardware_records: collectDataCenterRows("hardware-records", "hardware_record_id"),

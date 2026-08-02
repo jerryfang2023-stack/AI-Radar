@@ -48,7 +48,7 @@ const expected = {
   person: "PERSON-REVIEW-V1.1",
   skillStore: "v2.0.1 GPT-5.6 full-audit corrections",
   vault: "GUANLAN-VAULT-V1.2-private-evidence-linked (external)",
-  dataLake: "DATA-LAKE-V4.0-23-table",
+  dataLake: "DATA-LAKE-V4.1-24-table",
   privateEvidence: "PRIVATE-EVIDENCE-STORE-V2.0",
   windowsAutomation: "WINDOWS-AUTOMATION-V1.0-seven-task",
 };

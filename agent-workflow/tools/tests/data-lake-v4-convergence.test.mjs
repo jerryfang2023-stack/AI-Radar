@@ -21,6 +21,7 @@ const expectedTables = [
   "relationships",
   "tag_assertions",
   "facet_assertions",
+  "reviewed_event_classifications",
   "fde_records",
   "fde_observations",
   "hardware_records",
@@ -43,7 +44,7 @@ function createLake() {
   }
   fs.writeFileSync(path.join(lakeDir, "manifest.json"), `${JSON.stringify({
     schema_version: "DATA-LAKE-MANIFEST-V1",
-    contract_version: "DATA-LAKE-V4.0",
+    contract_version: "DATA-LAKE-V4.1",
     generated_at: "2026-07-30T00:00:00.000Z",
     git_commit: "a".repeat(40),
     table_count: expectedTables.length,
@@ -69,7 +70,7 @@ test("V4 data-lake gate rejects a stale compatibility JSONL table", () => {
   assert.match(JSON.stringify(output.issues), /signal_cards/u);
 });
 
-test("V4 data-lake gate accepts the exact 23-table JSONL contract", () => {
+test("V4 data-lake gate accepts the exact 24-table JSONL contract", () => {
   const { lakeDir } = createLake();
 
   const result = spawnSync(process.execPath, [
@@ -81,12 +82,12 @@ test("V4 data-lake gate accepts the exact 23-table JSONL contract", () => {
   assert.equal(result.status, 0, result.stderr);
   const output = JSON.parse(result.stdout);
   assert.equal(output.ok, true);
-  assert.equal(output.expected_table_count, 23);
-  assert.equal(output.jsonl_table_count, 23);
+  assert.equal(output.expected_table_count, 24);
+  assert.equal(output.jsonl_table_count, 24);
   assert.deepEqual(output.issues, []);
 });
 
-test("V4 data-lake sync removes stale JSONL and writes a traceable 23-table manifest", () => {
+test("V4 data-lake sync removes stale JSONL and writes a traceable 24-table manifest", () => {
   const lakeDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-data-lake-sync-"));
   const tablesDir = path.join(lakeDir, "tables");
   fs.mkdirSync(tablesDir, { recursive: true });
@@ -116,8 +117,8 @@ test("V4 data-lake sync removes stale JSONL and writes a traceable 23-table mani
   assert.deepEqual(actualTables, [...expectedTables].sort());
   const manifest = JSON.parse(fs.readFileSync(path.join(lakeDir, "manifest.json"), "utf8"));
   assert.equal(manifest.schema_version, "DATA-LAKE-MANIFEST-V1");
-  assert.equal(manifest.contract_version, "DATA-LAKE-V4.0");
-  assert.equal(manifest.table_count, 23);
+  assert.equal(manifest.contract_version, "DATA-LAKE-V4.1");
+  assert.equal(manifest.table_count, 24);
   assert.match(manifest.generated_at, /^\d{4}-\d{2}-\d{2}T/u);
   assert.match(manifest.git_commit, /^[0-9a-f]{40}$/u);
   assert.deepEqual(manifest.tables.map((item) => item.name).sort(), [...expectedTables].sort());

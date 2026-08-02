@@ -289,6 +289,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       funding_insight_version: FUNDING_INSIGHT_VERSION,
       site_version: "SITE-V4.4.1-china-market-scope",
       column_version: "FUNDING-INSIGHT-V1.3.0-cb-2026-hierarchy",
+      taxonomy_version: "TAG-V4.1",
       latest_date: latestDate,
       generated_at: generatedAt,
       card_count: cards.length,

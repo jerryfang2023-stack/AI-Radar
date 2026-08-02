@@ -898,6 +898,15 @@ function matchesDefinition(text, matcher) {
     && !matcher.exclusions.some((pattern) => pattern.test(text));
 }
 
+const SECONDARY_PARTY_TAXONOMY_CONTEXT = /(?:\b(?:founder|co-founder|investor|backer|portfolio)\b|创始人|联合创始人|投资方|投资机构|领投|参投|股东).{0,120}(?:\b(?:previously|formerly|worked|career|background|invested|portfolio)\b|毕业|曾任|曾在|任职|履历|工作经历|投资|从业)/iu;
+const BIOGRAPHY_TAXONOMY_CONTEXT = /(?:毕业于|曾任|曾在.{0,60}(?:担任|任职|工作)|工作经历|职业经历|从业经历|previously\s+(?:worked|served)|formerly\s+(?:worked|served))/iu;
+
+function taxonomyEvidenceSegmentRelevant(segment = "") {
+  const text = normalizeSpace(segment);
+  if (!text) return false;
+  return !SECONDARY_PARTY_TAXONOMY_CONTEXT.test(text) && !BIOGRAPHY_TAXONOMY_CONTEXT.test(text);
+}
+
 function evidenceSegments(text) {
   return String(text || "")
     .split(/(?<=[!?。！？;；])\s*|\.(?=\s)\s*|(?<!\d)\.(?=[A-Z]|\p{Script=Han})|\n+/u)
@@ -923,7 +932,7 @@ function textSupportsEventObject(claim, evidenceText = claim.source_quote) {
 function tagAssertionsForClaim(claim, matchers) {
   const out = [];
   for (const matcher of matchers) {
-    if (!evidenceSegments(claim.source_quote).some((segment) => matchesDefinition(segment, matcher))) continue;
+    if (!evidenceSegments(claim.source_quote).some((segment) => taxonomyEvidenceSegmentRelevant(segment) && matchesDefinition(segment, matcher))) continue;
     out.push({
       asset_id: claim.claim_id,
       tag_id: matcher.definition.id,
@@ -941,7 +950,7 @@ function tagAssertionsForClaim(claim, matchers) {
 function facetAssertionsForClaim(claim, matchers) {
   const out = [];
   for (const matcher of matchers) {
-    const matchedSegments = evidenceSegments(claim.source_quote).filter((segment) => matchesDefinition(segment, matcher));
+    const matchedSegments = evidenceSegments(claim.source_quote).filter((segment) => taxonomyEvidenceSegmentRelevant(segment) && matchesDefinition(segment, matcher));
     if (!matchedSegments.length) continue;
     if (matcher.facet.id === "product_form"
         && claim.claim_type !== "funding"
@@ -1920,6 +1929,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     event_conflicts: clustered.conflicts.filter((conflict) => acceptedEventIds.has(conflict.event_id)),
     tag_assertions: tagAssertions,
     facet_assertions: facetAssertions,
+    reviewed_event_classifications: [],
     fde_records: fdeRecords,
     fde_observations: fdeObservations,
     hardware_records: hardwareRecords,
@@ -2196,4 +2206,5 @@ export {
   facetMatchers,
   tagAssertionsForClaim,
   facetAssertionsForClaim,
+  taxonomyEvidenceSegmentRelevant,
 };

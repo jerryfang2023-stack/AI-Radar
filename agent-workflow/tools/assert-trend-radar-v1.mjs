@@ -15,7 +15,8 @@ const setEquals = (left, right) => left.length === right.length && [...left].sor
 const categoryCounts = (events) => Object.fromEntries((data.meta.categoryOrder || []).map((category) => [category, events.filter((event) => event.category === category).length]));
 
 if (data.meta?.schemaVersion !== "TRADAR-DATA-V1") fail("schemaVersion must be TRADAR-DATA-V1");
-if (data.meta?.columnVersion !== "TRADAR-V1.0.1-china-market-filter") fail("columnVersion mismatch");
+if (data.meta?.columnVersion !== "TRADAR-V1.1.0-tag-v4-1") fail("columnVersion mismatch");
+if (data.meta?.taxonomyVersion !== "TAG-V4.1") fail("taxonomyVersion mismatch");
 if (data.meta?.siteVersion !== "SITE-V4.2.0-entity-history") fail("siteVersion mismatch");
 if (data.meta?.dateBasis !== "dataDate") fail("date basis must be dataDate");
 if (data.periods?.day?.defaultKey !== data.meta?.latestDataDate) fail("default day must match latestDataDate");

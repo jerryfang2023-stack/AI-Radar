@@ -17,7 +17,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - Current public frontstage: Data Center (Event Library / Community Intelligence / First-Line Viewpoints / Entity Library) and Application Center (Trend Radar / Guanlan Research).
 - Current backend: Dashboard / operations console.
 - Current human-readable knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`), split into system state, Data Center, Application Center, Operations, contracts, knowledge assets, and workspace.
-- Current machine-serving projection: `DATA-LAKE-V4.0-23-table`, rebuilt and gated by Final Closure.
+- Current machine-serving projection: `DATA-LAKE-V4.1-24-table`, rebuilt and gated by Final Closure.
 - Current private evidence source: `PRIVATE-EVIDENCE-STORE-V2.0`, authoritative, content-addressed, and outside the public repository/Vault. Public RAW-V4 data and the Vault store evidence locators, not complete original bodies.
 - Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
 - Current Skill governance: Skill Store `v2.0.1`, with all 23 active governed Skills certified against `GPT-5.6-SKILL-V1.0`; use `npm run check:skill-ops` for the read-only release gate.

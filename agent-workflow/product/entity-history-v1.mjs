@@ -34,7 +34,17 @@ const EVENT_GROUPS = {
   security_incident: "productsServices"
 };
 
-const INDEXED_DIMENSIONS = new Set(["technology", "use_case", "industry"]);
+const INDEXED_DIMENSIONS = new Set([
+  "ai_market_category",
+  "ai_market_subcategory",
+  "ai_market_application",
+  "product_form",
+  "technology",
+  "use_case",
+  "industry",
+  "target_user",
+  "deployment_model"
+]);
 const NON_ORGANIZATION_ALIAS_NAMES = new Set([
   "Amazon Bedrock",
   "Apple Intelligence",
@@ -643,7 +653,7 @@ function buildTaxonomyNodes(events, fdeRecords, hardwareRecords) {
         lastSeen: ""
       };
       node.eventIds.push(event.id);
-      node.entityIds.push(...(event.entityIds || []));
+      node.entityIds.push(...(classification.entityIds || []));
       node.fdeIds.push(...fdeRecords.filter((item) => item.eventId === event.id).map((item) => item.id));
       node.hardwareIds.push(...hardwareRecords.filter((item) => item.eventId === event.id).map((item) => item.id));
       const dates = [node.firstSeen, event.dataDate, event.date].map(dateOnly).filter(Boolean);

@@ -26,7 +26,7 @@ WaveSight AI is on the `V4.6.1-china-market-scope` repository release. The publi
 - Current person review contract: `PERSON-REVIEW-V1.1`; the original 37 person/account candidates remain fully reviewed (31 natural people public, 6 non-natural accounts quarantined), and 30 additional funding founders are public only after explicit source-backed review. The remaining funding person candidates stay outside the public Entity Index.
 - Current data versions: `SOURCE-INTAKE-V1.1`, `RAW-V4.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `FDE-OBSERVATION-V1.0`, `HARDWARE-V1.0`, `HARDWARE-FACT-V1.0`, `HARDWARE-SNAPSHOT-V1.0`, `LENS-FUNNEL-V1.0`, `TAG-V4.0`.
 - Current local knowledge-base version: `GUANLAN-VAULT-V1.2-private-evidence-linked`. The Guanlan AI Vault is physically independent from the repository and stores citation cards and traceable links only.
-- Current data-lake contract: `DATA-LAKE-V4.0-23-table`; JSONL and DuckDB must expose exactly the same 23-table V4 allowlist.
+- Current data-lake contract: `DATA-LAKE-V4.1-24-table`; JSONL and DuckDB must expose exactly the same 24-table V4 allowlist, including reviewed event classifications.
 - Current private evidence store: `PRIVATE-EVIDENCE-STORE-V2.0`; it is the sole complete-original store, deduplicates bodies by `content_hash`, and is physically outside the public repository and Vault. Public V4 data, the Vault, and the website never retain complete bodies.
 - Current Windows automation contract: seven tasks. Final Closure owns data-lake refresh; Hermes watchdog and heartbeat publication run as one control-plane task.
 

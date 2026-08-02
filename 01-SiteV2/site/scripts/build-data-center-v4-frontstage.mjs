@@ -97,6 +97,7 @@ function requireMaterializedTables(tables) {
     "entities.jsonl",
     "tag_assertions.jsonl",
     "facet_assertions.jsonl",
+    "reviewed_event_classifications.jsonl",
     "fde_records.jsonl",
     "fde_observations.jsonl",
     "hardware_records.jsonl",
@@ -174,28 +175,42 @@ function safeArray(value) {
   return Array.isArray(value) ? value : [];
 }
 
-export function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, entities, tagAssertions, facetAssertions, tagNames, facetNames }) {
+export function buildEventRecords({
+  events,
+  claims,
+  rawDocuments,
+  sourceArtifacts,
+  entities,
+  tagAssertions,
+  facetAssertions,
+  reviewedEventClassifications = [],
+  tagNames,
+  facetNames
+}) {
   const claimsById = new Map(claims.map((item) => [item.claim_id, item]));
   const rawById = new Map(rawDocuments.map((item) => [item.raw_id, item]));
   const sourceById = new Map(sourceArtifacts.map((item) => [item.source_artifact_id, item]));
   const entityById = new Map(entities.map((item) => [item.entity_id, item]));
   const tagsByClaim = new Map();
   const facetsByClaim = new Map();
+  const reviewedByEvent = new Map();
 
   for (const assertion of tagAssertions) {
     if (assertion.status && assertion.status !== "active") continue;
     const claimId = assertion.asset_id || assertion.evidence_ref;
     if (!tagsByClaim.has(claimId)) tagsByClaim.set(claimId, []);
-    tagsByClaim.get(claimId).push(assertion.tag_id);
+    tagsByClaim.get(claimId).push(assertion);
   }
   for (const assertion of facetAssertions) {
     if (assertion.status && assertion.status !== "active") continue;
     const claimId = assertion.asset_id || assertion.evidence_ref;
     if (!facetsByClaim.has(claimId)) facetsByClaim.set(claimId, []);
-    facetsByClaim.get(claimId).push({
-      dimensionId: assertion.dimension_id,
-      id: assertion.value_id
-    });
+    facetsByClaim.get(claimId).push(assertion);
+  }
+  for (const classification of reviewedEventClassifications) {
+    if (classification.status && classification.status !== "active") continue;
+    if (!reviewedByEvent.has(classification.event_id)) reviewedByEvent.set(classification.event_id, []);
+    reviewedByEvent.get(classification.event_id).push(classification);
   }
 
   return events.map((event) => {
@@ -209,23 +224,71 @@ export function buildEventRecords({ events, claims, rawDocuments, sourceArtifact
       || null;
     const sources = safeArray(event.source_refs).map((id) => sourceById.get(id)).filter(Boolean);
     const primarySource = sources[0] || null;
-    const assertedTagIds = unique(safeArray(event.claim_refs).flatMap((id) => tagsByClaim.get(id) || []));
-    const assertedFacets = safeArray(event.claim_refs)
-      .flatMap((id) => facetsByClaim.get(id) || [])
-      .filter((item, index, list) => list.findIndex((entry) => entry.dimensionId === item.dimensionId && entry.id === item.id) === index)
-      .map((item) => ({
-        ...item,
-        dimensionName: facetNames.get(item.dimensionId)?.name || item.dimensionId,
-        name: facetNames.get(item.dimensionId)?.values.get(item.id) || item.id
-      }));
-    const technicalTags = assertedTagIds.map((id) => ({
-      dimensionId: "technology",
-      dimensionName: "技术",
-      id,
-      name: tagNames.get(id) || id
+    const eventReviewed = reviewedByEvent.get(event.event_id) || [];
+    const reviewedEntities = eventReviewed.map((item) => ({
+      entity_id: item.entity_id,
+      canonical_name: item.company_name,
+      entity_type: "organization_candidate",
+      verification_status: "verified"
     }));
-    const classifications = [...technicalTags, ...assertedFacets];
-    const eventEntities = safeArray(event.entities).map((id) => entityById.get(id)).filter(Boolean);
+    const allEntityIds = unique([
+      ...safeArray(event.entities),
+      ...reviewedEntities.map((item) => item.entity_id)
+    ]);
+    const eventEntities = allEntityIds
+      .map((id) => entityById.get(id) || reviewedEntities.find((item) => item.entity_id === id))
+      .filter(Boolean);
+    const scopedEntityIds = (claimIds = []) => {
+      const scopedClaims = claimIds.map((id) => claimsById.get(id)).filter(Boolean);
+      const claimText = scopedClaims.map((claim) => `${claim.subject || ""} ${claim.source_quote || ""}`).join(" ");
+      const mentioned = eventEntities
+        .filter((entity) => exactMentionPositions(claimText, entity.canonical_name).length > 0)
+        .map((entity) => entity.entity_id);
+      if (mentioned.length) return unique(mentioned);
+      const subjects = unique(scopedClaims.map((claim) => compactText(claim.subject || "", 180)));
+      const exactSubjects = eventEntities
+        .filter((entity) => subjects.some((subject) => subject.toLocaleLowerCase() === entity.canonical_name.toLocaleLowerCase()))
+        .map((entity) => entity.entity_id);
+      if (exactSubjects.length) return unique(exactSubjects);
+      const organizations = eventEntities.filter((entity) => entity.entity_type === "organization_candidate");
+      return organizations.length === 1 ? [organizations[0].entity_id] : [];
+    };
+    const technicalTags = safeArray(event.claim_refs)
+      .flatMap((claimId) => (tagsByClaim.get(claimId) || []).map((assertion) => ({
+        dimensionId: "technology",
+        dimensionName: "技术",
+        id: assertion.tag_id,
+        name: tagNames.get(assertion.tag_id) || assertion.tag_id,
+        entityIds: scopedEntityIds([claimId]),
+        provenance: "claim_assertion",
+        assertionId: assertion.assertion_id || ""
+      })));
+    const assertedFacets = safeArray(event.claim_refs)
+      .flatMap((claimId) => (facetsByClaim.get(claimId) || []).map((assertion) => ({
+        dimensionId: assertion.dimension_id,
+        dimensionName: facetNames.get(assertion.dimension_id)?.name || assertion.dimension_id,
+        id: assertion.value_id,
+        name: facetNames.get(assertion.dimension_id)?.values.get(assertion.value_id) || assertion.value_id,
+        entityIds: scopedEntityIds([claimId]),
+        provenance: "claim_assertion",
+        assertionId: assertion.assertion_id || ""
+      })));
+    const reviewedFacets = eventReviewed.map((item) => ({
+      dimensionId: item.dimension_id,
+      dimensionName: facetNames.get(item.dimension_id)?.name || item.dimension_id,
+      id: item.value_id,
+      name: facetNames.get(item.dimension_id)?.values.get(item.value_id) || item.value_id,
+      entityIds: [item.entity_id],
+      provenance: "reviewed_funding_insight",
+      reviewRef: item.reviewed_classification_id,
+      fundingInsightId: item.funding_insight_id
+    }));
+    const classifications = [...reviewedFacets, ...technicalTags, ...assertedFacets]
+      .filter((item, index, list) => list.findIndex((entry) => (
+        entry.dimensionId === item.dimensionId
+        && entry.id === item.id
+        && safeArray(entry.entityIds).join("|") === safeArray(item.entityIds).join("|")
+      )) === index);
     const organizationEntities = eventEntities.filter((entity) => entity.entity_type === "organization_candidate" && entity.verification_status === "verified");
     const productEntities = eventEntities.filter((entity) => entity.entity_type === "product_candidate");
     const label = eventTypeLabels[event.event_type] || { exact: event.event_type, group: event.event_type };
@@ -279,16 +342,26 @@ export function buildEventRecords({ events, claims, rawDocuments, sourceArtifact
       tags: technicalTags,
       facets: Object.fromEntries([...facetNames.keys()].map((dimensionId) => [
         dimensionId,
-        assertedFacets.filter((item) => item.dimensionId === dimensionId)
+        classifications.filter((item) => item.dimensionId === dimensionId)
       ])),
       classifications,
       displayTags: [
-        ...assertedFacets.filter((item) => item.dimensionId === "product_form"),
-        ...assertedFacets.filter((item) => item.dimensionId === "use_case"),
-        ...technicalTags,
-        ...assertedFacets.filter((item) => !["product_form", "use_case"].includes(item.dimensionId))
+        ...classifications.filter((item) => item.dimensionId === "ai_market_category"),
+        ...classifications.filter((item) => item.dimensionId === "ai_market_subcategory"),
+        ...classifications.filter((item) => item.dimensionId === "ai_market_application"),
+        ...classifications.filter((item) => item.dimensionId === "product_form"),
+        ...classifications.filter((item) => item.dimensionId === "use_case"),
+        ...classifications.filter((item) => item.dimensionId === "technology"),
+        ...classifications.filter((item) => ![
+          "ai_market_category",
+          "ai_market_subcategory",
+          "ai_market_application",
+          "product_form",
+          "use_case",
+          "technology"
+        ].includes(item.dimensionId))
       ],
-      entityIds: safeArray(event.entities),
+      entityIds: allEntityIds,
       entityNames: eventEntities.map((item) => item.canonical_name),
       productName: products[0]?.name || "",
       products,
@@ -646,14 +719,17 @@ export function buildFrontstageData(root = defaultRoot) {
     }
   ]));
 
+  const reviewedEventClassifications = readJsonl(path.join(tables, "reviewed_event_classifications.jsonl"));
+  const sourceEntityRows = readJsonl(path.join(tables, "entities.jsonl"));
   const allEventRecords = buildEventRecords({
     events: readJsonl(path.join(tables, "canonical_events.jsonl")),
     claims: readJsonl(path.join(tables, "claims.jsonl")),
     rawDocuments: readJsonl(path.join(tables, "raw_documents.jsonl")),
     sourceArtifacts: readJsonl(path.join(tables, "source_artifacts.jsonl")),
-    entities: readJsonl(path.join(tables, "entities.jsonl")),
+    entities: sourceEntityRows,
     tagAssertions: readJsonl(path.join(tables, "tag_assertions.jsonl")),
     facetAssertions: readJsonl(path.join(tables, "facet_assertions.jsonl")),
+    reviewedEventClassifications,
     tagNames,
     facetNames
   });
@@ -661,7 +737,25 @@ export function buildFrontstageData(root = defaultRoot) {
   const eventRecords = allEventRecords.filter((item) => isCompletePublicEventTitle(item.title));
   const latestDataDate = eventRecords.map((item) => item.dataDate).filter(Boolean).sort().at(-1) || "";
   const currentDate = latestDataDate;
-  const entityRows = readJsonl(path.join(tables, "entities.jsonl"));
+  const entityRows = [...sourceEntityRows];
+  const existingEntityIds = new Set(entityRows.map((item) => item.entity_id));
+  for (const row of reviewedEventClassifications) {
+    if (existingEntityIds.has(row.entity_id)) continue;
+    entityRows.push({
+      schema_version: "4.0.0",
+      entity_id: row.entity_id,
+      entity_type: "organization_candidate",
+      canonical_name: row.company_name,
+      aliases: [],
+      mention_refs: [],
+      first_seen: "",
+      last_seen: "",
+      confidence: row.confidence || 1,
+      verification_status: "verified",
+      merged_into: ""
+    });
+    existingEntityIds.add(row.entity_id);
+  }
   const eventsById = new Map(eventRecords.map((item) => [item.id, item]));
   const fde = buildFdeRecords(readJsonl(path.join(tables, "fde_records.jsonl")), eventsById);
   const fdeDossiers = buildFdeDossiers(readJsonl(path.join(tables, "fde_observations.jsonl")), eventsById);
@@ -694,6 +788,7 @@ export function buildFrontstageData(root = defaultRoot) {
       dataVersion: "SITE-V4.0-data-center",
       entityVersion: entityHistory.manifest.entityVersion,
       relationshipVersion: entityHistory.manifest.relationshipVersion,
+      taxonomyVersion: "TAG-V4.1",
       generatedAt: process.env.WAVESIGHT_FRONTSTAGE_GENERATED_AT || new Date().toISOString(),
       latestDataDate,
       currentDate,

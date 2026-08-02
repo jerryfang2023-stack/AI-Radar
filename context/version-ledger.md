@@ -49,7 +49,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Factual relationship contract | RELATION-V2.1 |
 | Targeted historical collection contract | BACKFILL-V1.0 |
 | Local Obsidian knowledge base | GUANLAN-VAULT-V1.2-private-evidence-linked (external) |
-| Data lake contract | DATA-LAKE-V4.0-23-table |
+| Data lake contract | DATA-LAKE-V4.1-24-table |
 | Private evidence store | PRIVATE-EVIDENCE-STORE-V2.0 |
 | Local Windows automation | WINDOWS-AUTOMATION-V1.0-seven-task |
 | Weekly Report content source | `01-SiteV2/content/12-applications/industry-reports/` |

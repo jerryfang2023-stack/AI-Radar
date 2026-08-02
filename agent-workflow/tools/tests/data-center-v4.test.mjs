@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, eventStatus, facetAssertionsForClaim, facetMatchers, findEventRule, modelAssistedEventEligibility, normalizeEventTitle, publicEventSourceTitleIssue, repairExistingChinaMarketScope, repairExistingEntityLinks, sourceArtifact, tagAssertionsForClaim, taxonomyEvidenceSegmentRelevant, taxonomyMatchers, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { buildEventDisplayTitle } from "../event-public-title.mjs";
 import { coreRawQcViolationCounts, isCoreV4EvidenceItem, isRoutedV4EvidenceItem, isUsableCoreEvidenceItem } from "../guanlan-monitor-quality-gate.mjs";
@@ -30,6 +30,23 @@ test("technical tag exclusions are scoped to the matching evidence sentence", ()
     source_quote: "A human agent handles every request.",
   }, taxonomyMatchers(taxonomy));
   assert.equal(excluded.some((item) => item.tag_id === "agentic_execution"), false);
+});
+
+test("founder biographies and investor backgrounds cannot classify the funded company", () => {
+  const biography = "创始人曾在一家自动驾驶公司担任COO，也有过具身智能的工作经历。";
+  assert.equal(taxonomyEvidenceSegmentRelevant(biography), false);
+  const biographyTags = tagAssertionsForClaim({
+    claim_id: "CL-founder-biography",
+    claim_type: "funding",
+    source_quote: biography,
+    source_span: { raw_id: "RAW-1", start: 0, end: biography.length },
+  }, taxonomyMatchers(taxonomy));
+  assert.equal(biographyTags.some((item) => item.tag_id === "embodied_ai"), false);
+
+  const investor = "The investor previously backed several robotics and embodied AI startups.";
+  assert.equal(taxonomyEvidenceSegmentRelevant(investor), false);
+  const company = "Acme builds embodied AI software for autonomous warehouse robots.";
+  assert.equal(taxonomyEvidenceSegmentRelevant(company), true);
 });
 
 test("facet matching does not treat trailing retrieval metadata as event evidence", () => {
@@ -1491,6 +1508,7 @@ test("generated bundle passes the V4 integrity gate", () => {
     relationships: bundle.relationships,
     tag_assertions: bundle.tag_assertions,
     facet_assertions: bundle.facet_assertions,
+    reviewed_event_classifications: bundle.reviewed_event_classifications,
     fde_records: bundle.fde_records,
     fde_observations: bundle.fde_observations,
     hardware_records: bundle.hardware_records,

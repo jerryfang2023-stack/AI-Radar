@@ -94,9 +94,9 @@
       "type": "object",
       "required": ["id", "name", "nodeType", "typeLabel", "valueId", "eventIds", "entityIds", "fdeIds", "hardwareIds", "firstSeen", "lastSeen"],
       "properties": {
-        "id": { "type": "string", "pattern": "^TX-(technology|use_case|industry)-" },
+        "id": { "type": "string", "pattern": "^TX-(ai_market_category|ai_market_subcategory|ai_market_application|product_form|technology|use_case|industry|target_user|deployment_model)-" },
         "name": { "type": "string", "minLength": 1 },
-        "nodeType": { "enum": ["technology", "use_case", "industry"] },
+        "nodeType": { "enum": ["ai_market_category", "ai_market_subcategory", "ai_market_application", "product_form", "technology", "use_case", "industry", "target_user", "deployment_model"] },
         "typeLabel": { "type": "string" },
         "valueId": { "type": "string" },
         "eventIds": { "type": "array", "items": { "type": "string" } },
