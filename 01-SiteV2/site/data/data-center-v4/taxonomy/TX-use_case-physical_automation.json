@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T18:22:29.379Z",
-    "latestDataDate": "2026-08-01",
-    "currentDate": "2026-08-01",
-    "eventCount": 1759,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1769,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-use_case-physical_automation",
@@ -17,6 +17,7 @@
     "typeLabel": "应用场景",
     "valueId": "physical_automation",
     "eventIds": [
+      "EV-e9e30789854cd180",
       "EV-eb881f5de456b59a",
       "EV-fcf3c464260b6730",
       "EV-869c9ea96c58873d",
@@ -72,6 +73,7 @@
       "EV-ad64347138da72bb"
     ],
     "entityIds": [
+      "EN-b73a9d7b59c9b674",
       "EN-7ef08ef63597d47c",
       "EN-4e0a97cb956fb1c6",
       "EN-8f71c4871a160172",
@@ -158,9 +160,74 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-08-01"
+    "lastSeen": "2026-08-02"
   },
   "events": [
+    {
+      "id": "EV-e9e30789854cd180",
+      "dataDate": "2026-08-02",
+      "date": "2026-08-01",
+      "updatedDate": "2026-08-02",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "李飞飞World Labs收购SceniX，物理AI训练正从“采数据”走向“造世界”",
+      "originalTitle": "",
+      "subject": "李飞飞World Labs",
+      "action": "收购",
+      "object": "SceniX，物理AI训练正从“采数据”走向“造世界”",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "physical_automation",
+            "dimensionName": "应用场景",
+            "name": "物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "physical_automation",
+          "dimensionName": "应用场景",
+          "name": "物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "physical_automation",
+          "dimensionName": "应用场景",
+          "name": "物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-b73a9d7b59c9b674"
+      ],
+      "entityNames": [
+        "李飞飞World Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/08/464532.html",
+      "publisher": "量子位"
+    },
     {
       "id": "EV-eb881f5de456b59a",
       "dataDate": "2026-07-28",
@@ -1744,9 +1811,9 @@
     },
     {
       "id": "EV-eb12fb9dd08e5aad",
-      "dataDate": "2026-08-01",
+      "dataDate": "2026-08-02",
       "date": "2026-07-31",
-      "updatedDate": "2026-08-01",
+      "updatedDate": "2026-08-02",
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "eventGroup": "AI 硬件",
@@ -5512,6 +5579,27 @@
   ],
   "entities": [
     {
+      "id": "EN-b73a9d7b59c9b674",
+      "name": "李飞飞World Labs",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e9e30789854cd180"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-01",
+      "lastSeen": "2026-08-02"
+    },
+    {
       "id": "EN-7ef08ef63597d47c",
       "name": "Gritt",
       "entityType": "organization_candidate",
@@ -5526,8 +5614,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-21",
@@ -5584,8 +5672,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -5614,8 +5702,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
@@ -5770,11 +5858,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -5959,10 +6047,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
@@ -6032,8 +6120,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -6063,8 +6151,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -6097,8 +6185,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
@@ -6132,8 +6220,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
         "TX-technology-on_device"
       ],
@@ -6163,9 +6251,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
@@ -6365,11 +6453,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -6413,7 +6501,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-3cce50ffb12f1a69",
@@ -6558,8 +6646,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -6596,10 +6684,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
@@ -6654,10 +6742,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -6681,7 +6769,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-e1086f449d58de87",
@@ -6699,13 +6787,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-technology-on_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-31",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-364df82f85761d58",
@@ -6722,9 +6810,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-reasoning"
       ],
       "relatedEntityIds": [],
@@ -6751,9 +6839,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -6853,9 +6941,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-technology-open_weights",
@@ -7043,8 +7131,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
@@ -7088,9 +7176,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [
@@ -7149,9 +7237,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-long_context",
@@ -7258,9 +7346,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [
@@ -7287,9 +7375,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-technology-on_device"
       ],
@@ -7314,8 +7402,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -7372,10 +7460,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",
@@ -7480,8 +7568,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-long_context",
@@ -7597,8 +7685,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [],
@@ -7686,6 +7774,7 @@
         "EV-ed58c2c69290ee4c",
         "EV-631197767a45d34c",
         "EV-d53cd33e8f541a65",
+        "EV-02abf1e35f1c33e1",
         "EV-11a3893cb86fef69",
         "EV-9578242a4df20721",
         "EV-8cd571951f62b2c8",
@@ -7693,8 +7782,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
@@ -7708,7 +7797,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-0d049cd1e9f619f9",
@@ -7747,8 +7836,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-use_case-physical_automation"
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
@@ -7769,8 +7858,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
@@ -7865,8 +7954,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-a3e674dce15e7188",
         "EV-7752b9d64fdfe1df",
-        "EV-b27f2e417d779e5f",
         "EV-d9d415868b74485c",
         "EV-35df5cc7eacdade7",
         "EV-ebd76d18d3f0ee7b",
@@ -8058,11 +8147,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -8115,7 +8204,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-94ff75465b1afa65",
@@ -8132,8 +8221,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
@@ -8348,10 +8437,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -8485,7 +8574,7 @@
     {
       "id": "HW-eb5bba1ad6c016b0",
       "eventId": "EV-eb12fb9dd08e5aad",
-      "dataDate": "2026-08-01",
+      "dataDate": "2026-08-02",
       "date": "2026-07-31",
       "title": "谷歌DeepMind发布Gemini Robotics 2，为从桌面机械臂到人形机器人的各种形态机器人提供动力",
       "hardwareType": "robot",
@@ -8494,7 +8583,7 @@
       "computeLayer": "未披露",
       "supplier": "Google DeepMind",
       "customer": "未披露",
-      "processNode": "early access",
+      "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
       "site": "未披露",
@@ -8748,13 +8837,13 @@
     {
       "id": "HWC-157ac314541955fe",
       "snapshotKey": "157ac314541955fe",
-      "snapshotId": "HWS-43557e7cb29b8fc7",
+      "snapshotId": "HWS-1a95b19ed967cb4f",
       "eventId": "EV-eb12fb9dd08e5aad",
       "eventIds": [
         "EV-eb12fb9dd08e5aad"
       ],
-      "dataDate": "2026-08-01",
-      "date": "2026-08-01",
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
       "title": "Gemini Robotics 2",
       "subject": "Google DeepMind",
       "productNames": [
@@ -8768,18 +8857,28 @@
         "product": {
           "metric_value": "",
           "unit": "",
-          "fact_ref": "HWF-85361fa6fe7d7cd2"
+          "fact_ref": "HWF-b556c75c92f5f11f"
         }
       },
       "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-02",
+          "previousDate": "2026-08-01",
+          "snapshotId": "HWS-1a95b19ed967cb4f",
+          "previousSnapshotId": "HWS-43557e7cb29b8fc7",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
       "capacityFacts": [],
       "supplyFacts": [],
       "specificationFacts": [
         {
-          "data_date": "2026-08-01",
-          "hardware_fact_id": "HWF-0713a8b577588d4e",
+          "data_date": "2026-08-02",
+          "hardware_fact_id": "HWF-5ed41798a22aeb7a",
           "fact_type": "product",
           "observed_at": "2026-07-31T00:00:00.000Z",
           "subject_entity_id": "EN-2b6e51bec93e86c1",
@@ -8797,15 +8896,15 @@
           "event_refs": [
             "EV-eb12fb9dd08e5aad"
           ],
-          "claim_ref": "CL-da70d6a8e40a64db",
+          "claim_ref": "CL-807da3fa13bb0957",
           "source_refs": [
             "SA-fa41bf79373c44e1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/hardware-facts.json"
         },
         {
-          "data_date": "2026-08-01",
-          "hardware_fact_id": "HWF-85361fa6fe7d7cd2",
+          "data_date": "2026-08-02",
+          "hardware_fact_id": "HWF-b556c75c92f5f11f",
           "fact_type": "product",
           "observed_at": "2026-07-31T00:00:00.000Z",
           "subject_entity_id": "EN-2b6e51bec93e86c1",
@@ -8823,11 +8922,11 @@
           "event_refs": [
             "EV-eb12fb9dd08e5aad"
           ],
-          "claim_ref": "CL-969d916e74dcfd8b",
+          "claim_ref": "CL-98935c78388b7423",
           "source_refs": [
             "SA-fa41bf79373c44e1"
           ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/hardware-facts.json"
         }
       ],
       "capexFacts": [],

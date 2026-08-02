@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-08-01T03:41:50.817Z",
+    "generatedAt": "2026-08-02T00:23:47.379Z",
     "dateRange": {
-      "start": "2026-07-26",
-      "end": "2026-08-01"
+      "start": "2026-07-27",
+      "end": "2026-08-02"
     },
     "source": "Data Center V4 manifest + collection-telemetry-v1",
     "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
@@ -16,13 +16,13 @@
       "status": "passed",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 249,
+        "capture_succeeded": 227,
         "capture_failed": 0,
-        "raw_documents": 249
+        "raw_documents": 227
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/manifest.json",
-        "agent-workflow/reports/2026-08-01-guanlan-daily-monitor-log.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/manifest.json",
+        "agent-workflow/reports/2026-08-02-guanlan-daily-monitor-log.md"
       ]
     },
     {
@@ -30,20 +30,20 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 82,
+        "accepted_claims": 60,
         "rejected_claims": 0,
-        "accepted": 82,
+        "accepted": 60,
         "rejected": 0,
-        "pending_claims": 1,
-        "canonical_events": 28,
-        "entities": 35,
-        "relationships": 83,
+        "pending_claims": 0,
+        "canonical_events": 17,
+        "entities": 23,
+        "relationships": 60,
         "conflicts": 0,
-        "qa_queue": 220
+        "qa_queue": 211
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/manifest.json",
-        "agent-workflow/reports/2026-08-01-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/manifest.json",
+        "agent-workflow/reports/2026-08-02-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -53,11 +53,11 @@
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
+        "funding_insights": "passed",
         "fde_hardware_sync": "unknown"
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-01-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-02-persistent-asset-manifest.json"
       ]
     },
     {
@@ -68,49 +68,49 @@
         "v4_bundle_ready": true
       },
       "evidence": [
-        "agent-workflow/reports/2026-08-01-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-08-02-persistent-asset-manifest.json"
       ]
     }
   ],
   "latest": {
-    "date": "2026-08-01",
-    "label": "2026.08.01",
-    "shortLabel": "08.01",
-    "discovered": 249,
-    "captured": 249,
-    "claims": 83,
-    "events": 28,
-    "entities": 35,
-    "relationships": 83,
+    "date": "2026-08-02",
+    "label": "2026.08.02",
+    "shortLabel": "08.02",
+    "discovered": 227,
+    "captured": 227,
+    "claims": 60,
+    "events": 17,
+    "entities": 23,
+    "relationships": 60,
     "conflicts": 0,
-    "qaQueue": 220,
-    "telemetryDate": "2026-08-01",
+    "qaQueue": 211,
+    "telemetryDate": "2026-08-02",
     "collection": {
       "discovered": 290,
-      "capture_succeeded": 249,
+      "capture_succeeded": 227,
       "capture_failed": 0,
-      "raw_documents": 249
+      "raw_documents": 227
     },
     "factBuild": {
-      "accepted_claims": 82,
+      "accepted_claims": 60,
       "rejected_claims": 0,
-      "accepted": 82,
+      "accepted": 60,
       "rejected": 0,
-      "pending_claims": 1,
-      "canonical_events": 28,
-      "entities": 35,
-      "relationships": 83,
+      "pending_claims": 0,
+      "canonical_events": 17,
+      "entities": 23,
+      "relationships": 60,
       "conflicts": 0,
-      "qa_queue": 220,
+      "qa_queue": 211,
       "qa_by_status": {
-        "review_optional": 198,
-        "open": 22
+        "review_optional": 206,
+        "open": 5
       }
     },
     "applicationProjection": {
       "opportunity_map": "passed",
       "trend_radar": "passed",
-      "funding_insights": "failed",
+      "funding_insights": "passed",
       "fde_hardware_sync": "unknown"
     },
     "publication": {
@@ -118,6 +118,19 @@
     }
   },
   "days": [
+    {
+      "date": "2026-08-02",
+      "label": "2026.08.02",
+      "shortLabel": "08.02",
+      "discovered": 227,
+      "captured": 227,
+      "claims": 60,
+      "events": 17,
+      "entities": 23,
+      "relationships": 60,
+      "conflicts": 0,
+      "qaQueue": 211
+    },
     {
       "date": "2026-08-01",
       "label": "2026.08.01",
@@ -195,37 +208,26 @@
       "relationships": 81,
       "conflicts": 0,
       "qaQueue": 50
-    },
-    {
-      "date": "2026-07-26",
-      "label": "2026.07.26",
-      "shortLabel": "07.26",
-      "discovered": 121,
-      "captured": 121,
-      "claims": 142,
-      "events": 42,
-      "entities": 59,
-      "relationships": 142,
-      "conflicts": 0,
-      "qaQueue": 77
     }
   ],
   "totals": {
-    "discovered": 1225,
-    "captured": 1225,
-    "claims": 803,
-    "events": 241,
-    "entities": 365,
-    "relationships": 803,
+    "discovered": 1331,
+    "captured": 1331,
+    "claims": 721,
+    "events": 216,
+    "entities": 329,
+    "relationships": 721,
     "conflicts": 1,
-    "qaQueue": 966
+    "qaQueue": 1100
   },
   "v4Gate": {
     "status": "passed",
-    "manifest_date": "2026-08-01",
-    "gate_date": "2026-08-01",
+    "manifest_date": "2026-08-02",
+    "gate_date": "2026-08-02",
     "failures": [],
-    "warnings": []
+    "warnings": [
+      "No source-bounded FDE projection was produced."
+    ]
   },
   "compatibility": {
     "status": "retired_archive",

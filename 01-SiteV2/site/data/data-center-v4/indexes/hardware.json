@@ -4,17 +4,17 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T18:22:29.379Z",
-    "latestDataDate": "2026-08-01",
-    "currentDate": "2026-08-01",
-    "eventCount": 1759,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1769,
+    "quarantinedEventCount": 14
   },
   "hardware": [
     {
       "id": "HW-eb5bba1ad6c016b0",
       "eventId": "EV-eb12fb9dd08e5aad",
-      "dataDate": "2026-08-01",
+      "dataDate": "2026-08-02",
       "date": "2026-07-31",
       "title": "谷歌DeepMind发布Gemini Robotics 2，为从桌面机械臂到人形机器人的各种形态机器人提供动力",
       "hardwareType": "robot",
@@ -23,7 +23,7 @@
       "computeLayer": "未披露",
       "supplier": "Google DeepMind",
       "customer": "未披露",
-      "processNode": "early access",
+      "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
       "site": "未披露",
@@ -1888,6 +1888,116 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-157ac314541955fe",
+      "snapshotKey": "157ac314541955fe",
+      "snapshotId": "HWS-1a95b19ed967cb4f",
+      "eventId": "EV-eb12fb9dd08e5aad",
+      "eventIds": [
+        "EV-eb12fb9dd08e5aad"
+      ],
+      "dataDate": "2026-08-02",
+      "date": "2026-08-02",
+      "title": "Gemini Robotics 2",
+      "subject": "Google DeepMind",
+      "productNames": [
+        "Gemini Robotics 2"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b556c75c92f5f11f"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-08-02",
+          "previousDate": "2026-08-01",
+          "snapshotId": "HWS-1a95b19ed967cb4f",
+          "previousSnapshotId": "HWS-43557e7cb29b8fc7",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-02",
+          "hardware_fact_id": "HWF-5ed41798a22aeb7a",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T00:00:00.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-e1086f449d58de87"
+          ],
+          "product_names": [
+            "Gemini Robotics 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Google Deepmind unveils Gemini Robotics 2 to power robots of all shapes from tabletop arms to humanoids",
+          "event_refs": [
+            "EV-eb12fb9dd08e5aad"
+          ],
+          "claim_ref": "CL-807da3fa13bb0957",
+          "source_refs": [
+            "SA-fa41bf79373c44e1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-02",
+          "hardware_fact_id": "HWF-b556c75c92f5f11f",
+          "fact_type": "product",
+          "observed_at": "2026-07-31T00:00:00.000Z",
+          "subject_entity_id": "EN-2b6e51bec93e86c1",
+          "subject_name": "Google DeepMind",
+          "product_entity_ids": [
+            "EN-e1086f449d58de87"
+          ],
+          "product_names": [
+            "Gemini Robotics 2"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Google Deepmind has introduced Gemini Robotics 2, which it calls its most advanced vision-language-action (VLA) model yet. VLA models combine image recognition, language processing, and action control to help robots operate in physical environments. Deepmind says the model can control systems ranging from tabletop arms to full-body humanoid robots.",
+          "event_refs": [
+            "EV-eb12fb9dd08e5aad"
+          ],
+          "claim_ref": "CL-98935c78388b7423",
+          "source_refs": [
+            "SA-fa41bf79373c44e1"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/google-deepmind-unveils-gemini-robotics-2-to-power-robots-of-all-shapes-from-tabletop-arms-to-humanoids",
+      "entityIds": [
+        "EN-2b6e51bec93e86c1",
+        "EN-e1086f449d58de87"
+      ]
+    },
+    {
       "id": "HWC-6446b330bfd7a612",
       "snapshotKey": "6446b330bfd7a612",
       "snapshotId": "HWS-392b4439e7981d07",
@@ -2208,106 +2318,6 @@
       "entityIds": [
         "EN-6f7ac1823da81d2e",
         "EN-8d80aefb50a16684"
-      ]
-    },
-    {
-      "id": "HWC-157ac314541955fe",
-      "snapshotKey": "157ac314541955fe",
-      "snapshotId": "HWS-43557e7cb29b8fc7",
-      "eventId": "EV-eb12fb9dd08e5aad",
-      "eventIds": [
-        "EV-eb12fb9dd08e5aad"
-      ],
-      "dataDate": "2026-08-01",
-      "date": "2026-08-01",
-      "title": "Gemini Robotics 2",
-      "subject": "Google DeepMind",
-      "productNames": [
-        "Gemini Robotics 2"
-      ],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-85361fa6fe7d7cd2"
-        }
-      },
-      "factCount": 2,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-01",
-          "hardware_fact_id": "HWF-0713a8b577588d4e",
-          "fact_type": "product",
-          "observed_at": "2026-07-31T00:00:00.000Z",
-          "subject_entity_id": "EN-2b6e51bec93e86c1",
-          "subject_name": "Google DeepMind",
-          "product_entity_ids": [
-            "EN-e1086f449d58de87"
-          ],
-          "product_names": [
-            "Gemini Robotics 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Google Deepmind unveils Gemini Robotics 2 to power robots of all shapes from tabletop arms to humanoids",
-          "event_refs": [
-            "EV-eb12fb9dd08e5aad"
-          ],
-          "claim_ref": "CL-da70d6a8e40a64db",
-          "source_refs": [
-            "SA-fa41bf79373c44e1"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-01",
-          "hardware_fact_id": "HWF-85361fa6fe7d7cd2",
-          "fact_type": "product",
-          "observed_at": "2026-07-31T00:00:00.000Z",
-          "subject_entity_id": "EN-2b6e51bec93e86c1",
-          "subject_name": "Google DeepMind",
-          "product_entity_ids": [
-            "EN-e1086f449d58de87"
-          ],
-          "product_names": [
-            "Gemini Robotics 2"
-          ],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "Google Deepmind has introduced Gemini Robotics 2, which it calls its most advanced vision-language-action (VLA) model yet. VLA models combine image recognition, language processing, and action control to help robots operate in physical environments. Deepmind says the model can control systems ranging from tabletop arms to full-body humanoid robots.",
-          "event_refs": [
-            "EV-eb12fb9dd08e5aad"
-          ],
-          "claim_ref": "CL-969d916e74dcfd8b",
-          "source_refs": [
-            "SA-fa41bf79373c44e1"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        }
-      ],
-      "sourceUrl": "https://the-decoder.com/google-deepmind-unveils-gemini-robotics-2-to-power-robots-of-all-shapes-from-tabletop-arms-to-humanoids",
-      "entityIds": [
-        "EN-2b6e51bec93e86c1",
-        "EN-e1086f449d58de87"
       ]
     },
     {
@@ -4265,36 +4275,35 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-01",
-      "funnel_id": "LF-ca243f400121eaf5",
+      "data_date": "2026-08-02",
+      "funnel_id": "LF-4ae46788e72e5b7b",
       "lens": "hardware",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_capex",
+        "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment"
       ],
-      "raw_documents": 26,
-      "original_sources": 24,
-      "valid_claims": 9,
-      "observations": 8,
-      "canonical_events": 3,
+      "raw_documents": 19,
+      "original_sources": 15,
+      "valid_claims": 1,
+      "observations": 3,
+      "canonical_events": 1,
       "blocker_counts": {
-        "source_outside_daily_window": 14,
-        "non_event_or_index_title": 1,
-        "no_source_bounded_event": 3,
-        "repository_page_requires_release_source": 1,
-        "rumor_requires_primary_confirmation": 1,
-        "raw_source_quality_block": 2
+        "source_outside_daily_window": 9,
+        "rumor_requires_primary_confirmation": 2,
+        "source_outside_funding_backfill_window": 1,
+        "no_source_bounded_event": 2,
+        "raw_source_quality_block": 4
       },
       "rates": {
-        "original_source_rate": 0.9230769230769231,
-        "valid_claim_rate": 0.34615384615384615,
-        "observation_rate": 0.8888888888888888,
-        "event_conversion_rate": 0.3333333333333333
+        "original_source_rate": 0.7894736842105263,
+        "valid_claim_rate": 0.05263157894736842,
+        "observation_rate": 1,
+        "event_conversion_rate": 1
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/monitoring-funnel.json"
     }
   ]
 }

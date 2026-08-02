@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T18:22:29.379Z",
-    "latestDataDate": "2026-08-01",
-    "currentDate": "2026-08-01",
-    "eventCount": 1759,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1769,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-industry-manufacturing",
@@ -35,6 +35,7 @@
       "EV-ff1f6119de13fa19",
       "EV-4dd25589d834060d",
       "EV-7263caa45bbf168e",
+      "EV-8f1b01897707b941",
       "EV-f65a1b053e5dca70",
       "EV-06526dd6cb2157f4",
       "EV-6beed07120c6c6d0",
@@ -98,6 +99,7 @@
       "EN-8efebac68a48c369",
       "EN-16fd849ce27f115b",
       "EN-f5791343a13abc71",
+      "EN-2b1bf2dbb57b6603",
       "EN-86f73dfe7bb6a9e6",
       "EN-df1970d2ada6b501",
       "EN-a23ce6a4e25da9aa",
@@ -148,7 +150,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2025-12-02",
-    "lastSeen": "2026-08-01"
+    "lastSeen": "2026-08-02"
   },
   "events": [
     {
@@ -2207,6 +2209,91 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/959/026.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-8f1b01897707b941",
+      "dataDate": "2026-08-02",
+      "date": "2026-07-27",
+      "updatedDate": "2026-08-02",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "扩展与 Cognizant 的合作关系",
+      "originalTitle": "Expanding our partnership with Cognizant | Anthropic \\ Anthropic",
+      "subject": "Expanding our",
+      "action": "partnership",
+      "object": "with Cognizant | Anthropic \\ Anthropic",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-2b1bf2dbb57b6603",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Expanding our",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://anthropic.com/news/cognizant-anthropic",
+      "publisher": "anthropic.com"
     },
     {
       "id": "EV-f65a1b053e5dca70",
@@ -5182,10 +5269,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
@@ -5413,11 +5500,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -5570,6 +5657,7 @@
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
         "EV-5d185ac33faedb68",
+        "EV-8f1b01897707b941",
         "EV-f55d16df5b5fecb2",
         "EV-f65a1b053e5dca70",
         "EV-75b9b997e9c7e5d1",
@@ -5848,7 +5936,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-1bd14cd1a58c5708",
@@ -5961,8 +6049,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-a3e674dce15e7188",
         "EV-7752b9d64fdfe1df",
-        "EV-b27f2e417d779e5f",
         "EV-d9d415868b74485c",
         "EV-35df5cc7eacdade7",
         "EV-ebd76d18d3f0ee7b",
@@ -6154,11 +6242,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -6211,7 +6299,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-b9b0702726f5be1c",
@@ -6362,7 +6450,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-883be863cc6562bb",
@@ -6550,9 +6638,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-technology-open_weights",
@@ -6731,10 +6819,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -6810,6 +6898,7 @@
         "EV-ed58c2c69290ee4c",
         "EV-631197767a45d34c",
         "EV-d53cd33e8f541a65",
+        "EV-02abf1e35f1c33e1",
         "EV-11a3893cb86fef69",
         "EV-9578242a4df20721",
         "EV-8cd571951f62b2c8",
@@ -6817,8 +6906,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-use_case-software_development",
@@ -6832,7 +6921,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-99f9ebbef37fcec5",
@@ -6870,8 +6959,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -6901,8 +6990,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -6935,8 +7024,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
@@ -7143,11 +7232,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-technology-code_generation",
         "TX-industry-manufacturing",
         "TX-technology-computer_use",
@@ -7191,7 +7280,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-8d323d8bba783aa3",
@@ -7325,6 +7414,28 @@
       "lastSeen": "2026-06-03"
     },
     {
+      "id": "EN-2b1bf2dbb57b6603",
+      "name": "Expanding our",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8f1b01897707b941"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-27",
+      "lastSeen": "2026-08-02"
+    },
+    {
       "id": "EN-86f73dfe7bb6a9e6",
       "name": "Cognizant",
       "entityType": "organization_candidate",
@@ -7349,7 +7460,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-02"
     },
     {
       "id": "EN-df1970d2ada6b501",
@@ -7561,8 +7672,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -7599,10 +7710,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
@@ -7732,9 +7843,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [
@@ -7761,9 +7872,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-technology-on_device"
       ],
@@ -7788,8 +7899,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
         "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
         "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
@@ -8218,10 +8329,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-technology-agentic_execution",
         "TX-use_case-customer_support",
         "TX-use_case-security_operations",
-        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-industry-aerospace_defense",
         "TX-industry-healthcare_life_sciences",

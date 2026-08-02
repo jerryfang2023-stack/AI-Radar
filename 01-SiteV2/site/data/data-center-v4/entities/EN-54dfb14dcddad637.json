@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-01T18:22:29.379Z",
-    "latestDataDate": "2026-08-01",
-    "currentDate": "2026-08-01",
-    "eventCount": 1759,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-08-02T00:23:36.191Z",
+    "latestDataDate": "2026-08-02",
+    "currentDate": "2026-08-02",
+    "eventCount": 1769,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-54dfb14dcddad637",
@@ -29,7 +29,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-22",
-    "lastSeen": "2026-08-01",
+    "lastSeen": "2026-08-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -46,6 +46,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-faf8db3567f108e2",
+        "dataDate": "2026-08-02",
+        "date": "2026-08-02",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Axe Compute 获得15亿美元五年期专用AI",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_compute_system",
+            "dimensionName": "产品形态",
+            "name": "AI 计算系统"
+          }
+        ],
+        "entityIds": [
+          "EN-54dfb14dcddad637"
+        ]
+      },
       {
         "id": "EV-c3b96b789b5bcafd",
         "dataDate": "2026-08-01",
@@ -70,21 +98,6 @@
             "name": "AI 计算系统"
           }
         ],
-        "entityIds": [
-          "EN-54dfb14dcddad637"
-        ]
-      },
-      {
-        "id": "EV-faf8db3567f108e2",
-        "dataDate": "2026-07-29",
-        "date": "2026-07-27",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Axe Compute 签署五年期 15 亿美元专用 AI 基础设施合同，2026 年已签合同总值超过 30 亿美元",
-        "displayTags": [],
         "entityIds": [
           "EN-54dfb14dcddad637"
         ]
