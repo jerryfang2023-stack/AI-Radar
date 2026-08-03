@@ -65,6 +65,17 @@ function Get-CdpPort {
   }
 }
 
+function Resolve-CommunityProfilePath {
+  param(
+    [string]$Repo,
+    [string]$ProfilePath
+  )
+  if ($ProfilePath) {
+    return [IO.Path]::GetFullPath($ProfilePath)
+  }
+  return [IO.Path]::GetFullPath((Join-Path $Repo ".codex-browser-profile\community-scan"))
+}
+
 function Test-CdpEndpoint {
   param([string]$Url)
   try {
@@ -89,10 +100,7 @@ function Start-CommunityChrome {
   }
 
   $port = Get-CdpPort -Url $Url
-  $profile = $ProfilePath
-  if (-not $profile) {
-    $profile = Join-Path $Repo ".codex-browser-profile\community-scan"
-  }
+  $profile = Resolve-CommunityProfilePath -Repo $Repo -ProfilePath $ProfilePath
 
   New-Item -ItemType Directory -Force -Path $profile | Out-Null
   Write-LogLine "Starting Chrome for community intelligence on CDP port $port."
@@ -119,6 +127,44 @@ function Start-CommunityChrome {
   throw "Chrome CDP endpoint did not become ready: $Url"
 }
 
+function Stop-DedicatedCommunityChrome {
+  param(
+    [string]$Repo,
+    [string]$Url,
+    [string]$ProfilePath
+  )
+
+  $port = Get-CdpPort -Url $Url
+  $profile = Resolve-CommunityProfilePath -Repo $Repo -ProfilePath $ProfilePath
+  $profileLower = $profile.ToLowerInvariant()
+  $matching = Get-CimInstance Win32_Process -Filter "Name='chrome.exe'" | Where-Object {
+    $_.CommandLine -and $_.CommandLine.ToLowerInvariant().Contains($profileLower)
+  }
+  $roots = $matching | Where-Object {
+    $_.CommandLine -match "--remote-debugging-port=$port" -and $_.CommandLine -notmatch "--type="
+  }
+  if (-not $roots) {
+    Write-LogLine "No dedicated Community Chrome root process was found for restart."
+    return
+  }
+
+  foreach ($process in $roots) {
+    Write-LogLine "Stopping unresponsive dedicated Community Chrome PID $($process.ProcessId)."
+    Stop-Process -Id $process.ProcessId -Force -ErrorAction SilentlyContinue
+  }
+  for ($attempt = 1; $attempt -le 10; $attempt++) {
+    Start-Sleep -Milliseconds 500
+    if (-not (Test-CdpEndpoint -Url $Url)) { break }
+  }
+
+  $remaining = Get-CimInstance Win32_Process -Filter "Name='chrome.exe'" | Where-Object {
+    $_.CommandLine -and $_.CommandLine.ToLowerInvariant().Contains($profileLower)
+  }
+  foreach ($process in $remaining) {
+    Stop-Process -Id $process.ProcessId -Force -ErrorAction SilentlyContinue
+  }
+}
+
 function Invoke-NpmStep {
   param(
     [string]$Name,
@@ -132,10 +178,11 @@ function Invoke-NpmStep {
     Write-LogLine ("[$Name] " + $line)
   }
   if ($exitCode -ne 0) {
-    if (($output -join "`n") -match "COMMUNITY_LOGIN_REQUIRED") {
+    $detail = $output -join "`n"
+    if ($detail -match "COMMUNITY_LOGIN_REQUIRED") {
       throw ('COMMUNITY_LOGIN_REQUIRED: login expired. Open the dedicated Community Intelligence Chrome profile, complete login/QR verification, then rerun the local task.')
     }
-    throw ($Name + ' failed with exit code ' + $exitCode + '.')
+    throw ($Name + ' failed with exit code ' + $exitCode + ".`n" + $detail)
   }
 }
 
@@ -235,6 +282,16 @@ try {
         break
       }
       if ($attempt -lt $attemptLimit) {
+        if ($lastError -match "connectOverCDP[\s\S]*Timeout") {
+          if ($SkipBrowserStart) {
+            Write-LogLine "Unresponsive CDP session detected, but automatic browser restart is disabled."
+          } else {
+            Write-LogLine "Unresponsive CDP session detected; restarting the dedicated Community Chrome before retry."
+            Stop-DedicatedCommunityChrome -Repo $repo -Url $CdpUrl -ProfilePath $ChromeProfilePath
+            Write-LogLine "Retrying immediately after the dedicated browser restart."
+            continue
+          }
+        }
         Write-LogLine "Waiting $RetryDelaySeconds seconds before retry."
         Start-Sleep -Seconds $RetryDelaySeconds
       }

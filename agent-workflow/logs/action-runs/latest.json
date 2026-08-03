@@ -1,36 +1,39 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-03T01:58:49.698Z",
+  "generated_at": "2026-08-03T02:17:55.420Z",
   "date": "2026-08-03",
-  "action": "daily-persistent-assets-pr",
+  "action": "community-intelligence",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "workflow-repair",
-  "status": "partial",
-  "summary": "Normalized spaced dash variants in source-title translation keys so resumed 2026-08-03 intake reuses an approved translation and passes source-title integrity.",
+  "trigger": "scheduled-repair",
+  "status": "success",
+  "summary": "Restarted the unresponsive dedicated Community Chrome; collected and published 39 items and 80 links; added automatic CDP-timeout self-healing for future scheduled retries.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/source-title-translation-generator.mjs",
-    "agent-workflow/tools/tests/source-intake-v1.test.mjs"
+    "agent-workflow/tools/run-community-intelligence.ps1",
+    "agent-workflow/tools/tests/daily-automation-runtime.test.mjs"
   ],
-  "outputs": [],
+  "outputs": [
+    "PR #540",
+    "2026-08-03 community data"
+  ],
   "checks": [
-    "node --test agent-workflow/tools/tests/source-intake-v1.test.mjs agent-workflow/tools/tests/data-center-v4.test.mjs (131 passed)"
+    "Community gate passed with 39 items and 80 links",
+    "PowerShell parser passed",
+    "16 targeted tests passed",
+    "PR #540 merged"
   ],
   "issues": [
-    "The captured source title used an em dash while the approved translation used a hyphen",
-    "producing raw_title_invalid at the pre-commit gate."
+    "Chrome HTTP CDP health check passed while the CDP WebSocket session stopped responding."
   ],
   "risks": [
-    "Only spaced separator dashes are normalized to avoid collapsing hyphens inside words."
+    "Restart is restricted to Chrome processes using the dedicated community profile and configured debugging port."
   ],
   "lessons": [
-    "Normalize publisher separators before translation cache lookup."
+    "HTTP CDP availability alone does not prove Playwright session responsiveness."
   ],
   "reusable_rules": [
-    "Treat spaced hyphen",
-    "en dash",
-    "and em dash as the same source-title translation-key separator."
+    "On connectOverCDP timeout restart only the dedicated community browser and retry immediately."
   ],
   "retired_flags": [],
   "notes": []

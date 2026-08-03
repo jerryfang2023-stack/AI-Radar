@@ -17,6 +17,15 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(read("run-follow-builders-skill.ps1"), /--output-dir=\$RuntimePath/u);
 });
 
+test("community collection restarts only its dedicated Chrome after a CDP timeout", () => {
+  const runner = read("run-community-intelligence.ps1");
+  assert.match(runner, /function Stop-DedicatedCommunityChrome/u);
+  assert.match(runner, /\.codex-browser-profile\\community-scan/u);
+  assert.match(runner, /connectOverCDP\[\\s\\S\]\*Timeout[^]*Stop-DedicatedCommunityChrome/u);
+  assert.match(runner, /Retrying immediately after the dedicated browser restart/u);
+  assert.match(runner, /CommandLine\.ToLowerInvariant\(\)\.Contains\(\$profileLower\)/u);
+});
+
 test("closure reuses its self-check instead of running it twice", () => {
   const controller = read("run-daily-automation-controller.mjs");
   const repair = read("run-codex-self-repair.mjs");
