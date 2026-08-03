@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:01:14.913Z",
+    "generatedAt": "2026-08-03T07:17:08.673Z",
     "latestDataDate": "2026-08-03",
     "currentDate": "2026-08-03",
     "eventCount": 1816,
@@ -276965,21 +276965,34 @@
       "id": "EN-cd6362472aea60ef",
       "name": "美团",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "Meituan"
+      ],
       "tags": [
         "智能体",
         "模型"
       ],
       "eventIds": [
+        "EV-cec68369662236fd",
         "EV-bd81083dbb6eab3e",
         "EV-50853632f4b54972"
       ],
-      "firstSeen": "2026-06-30",
-      "lastSeen": "2026-07-28",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-03",
+      "relatedEntityIds": [
+        "EN-8992f4a61a19a74b"
+      ],
+      "relationIds": [
+        "REL2-a95d865ecb2fbc95"
+      ],
+      "marketScopes": [
+        "actor_origin"
+      ],
+      "chinaMarketMatch": true,
       "type": "公司/机构",
-      "productIds": []
+      "productIds": [
+        "EN-8992f4a61a19a74b"
+      ]
     },
     {
       "id": "EN-3309b3b14807f39a",
@@ -280571,34 +280584,6 @@
       "relationIds": [],
       "type": "公司/机构",
       "productIds": []
-    },
-    {
-      "id": "EN-db36e7bd45191ce4",
-      "name": "Meituan",
-      "sourceType": "organization_candidate",
-      "aliases": [
-        "美团"
-      ],
-      "tags": [],
-      "eventIds": [
-        "EV-cec68369662236fd"
-      ],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-03",
-      "relatedEntityIds": [
-        "EN-8992f4a61a19a74b"
-      ],
-      "relationIds": [
-        "REL2-1bf216d440716d0b"
-      ],
-      "marketScopes": [
-        "actor_origin"
-      ],
-      "chinaMarketMatch": true,
-      "type": "公司/机构",
-      "productIds": [
-        "EN-8992f4a61a19a74b"
-      ]
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -289263,19 +289248,19 @@
       "firstSeen": "2026-06-30",
       "lastSeen": "2026-07-01",
       "relatedEntityIds": [
-        "EN-db36e7bd45191ce4"
+        "EN-cd6362472aea60ef"
       ],
       "relationIds": [
-        "REL2-1bf216d440716d0b"
+        "REL2-a95d865ecb2fbc95"
       ],
       "legacyIds": [
         "PD-30910fe7497c5c"
       ],
       "companyIds": [
-        "EN-db36e7bd45191ce4"
+        "EN-cd6362472aea60ef"
       ],
       "companyNames": [
-        "Meituan"
+        "美团"
       ],
       "type": "模型"
     },
@@ -305327,7 +305312,7 @@
             "EN-b1c5e73e1471e806",
             "EN-047364b9be67f665",
             "EN-6e17ad315d52ee36",
-            "EN-db36e7bd45191ce4",
+            "EN-cd6362472aea60ef",
             "EN-8dc72a4672894e0f"
           ]
         },
@@ -317786,12 +317771,15 @@
       "name": "美团",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Meituan"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-cec68369662236fd",
         "EV-bd81083dbb6eab3e",
         "EV-50853632f4b54972"
       ],
@@ -317800,12 +317788,18 @@
         "TX-technology-agentic_execution",
         "TX-product_form-model"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-30",
-      "lastSeen": "2026-07-28",
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-8992f4a61a19a74b"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-03",
+      "relationIds": [
+        "REL2-a95d865ecb2fbc95"
+      ],
       "groupedEventIds": {
-        "fundingAcquisition": [],
+        "fundingAcquisition": [
+          "EV-cec68369662236fd"
+        ],
         "deployments": [],
         "partnerships": [],
         "productsServices": [
@@ -317817,6 +317811,133 @@
         "other": []
       },
       "timeline": [
+        {
+          "id": "EV-cec68369662236fd",
+          "dataDate": "2026-08-03",
+          "date": "2026-01-12",
+          "eventType": "funding",
+          "eventTypeLabel": "融资",
+          "eventGroup": "融资与并购",
+          "status": "completed",
+          "statusLabel": "已完成",
+          "title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+          "displayTags": [
+            {
+              "dimensionId": "ai_market_category",
+              "dimensionName": "AI 市场类别",
+              "id": "physical_ai",
+              "name": "Physical AI",
+              "entityIds": [
+                "EN-8dc72a4672894e0f"
+              ],
+              "provenance": "reviewed_funding_insight",
+              "reviewRef": "REC-1f3c3e4ce59f5811",
+              "fundingInsightId": "FI-567a6b518e3e5624"
+            },
+            {
+              "dimensionId": "product_form",
+              "dimensionName": "产品形态",
+              "id": "robotic_system",
+              "name": "机器人系统",
+              "entityIds": [
+                "EN-8dc72a4672894e0f"
+              ],
+              "provenance": "reviewed_funding_insight",
+              "reviewRef": "REC-4f70510bf6d71181",
+              "fundingInsightId": "FI-567a6b518e3e5624"
+            },
+            {
+              "dimensionId": "use_case",
+              "dimensionName": "应用场景",
+              "id": "physical_automation",
+              "name": "物理自动化",
+              "entityIds": [
+                "EN-8dc72a4672894e0f"
+              ],
+              "provenance": "reviewed_funding_insight",
+              "reviewRef": "REC-64121abae6fc16bb",
+              "fundingInsightId": "FI-567a6b518e3e5624"
+            },
+            {
+              "dimensionId": "use_case",
+              "dimensionName": "应用场景",
+              "id": "physical_automation",
+              "name": "物理自动化",
+              "entityIds": [
+                "EN-9a1a3ee1f50745c6"
+              ],
+              "provenance": "claim_assertion",
+              "assertionId": ""
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "embodied_ai",
+              "name": "具身智能",
+              "entityIds": [
+                "EN-9a1a3ee1f50745c6"
+              ],
+              "provenance": "claim_assertion",
+              "assertionId": ""
+            },
+            {
+              "dimensionId": "industry",
+              "dimensionName": "行业",
+              "id": "manufacturing",
+              "name": "制造业",
+              "entityIds": [
+                "EN-8dc72a4672894e0f"
+              ],
+              "provenance": "reviewed_funding_insight",
+              "reviewRef": "REC-386d7ef120246b39",
+              "fundingInsightId": "FI-567a6b518e3e5624"
+            },
+            {
+              "dimensionId": "industry",
+              "dimensionName": "行业",
+              "id": "retail_ecommerce",
+              "name": "零售与电商",
+              "entityIds": [
+                "EN-8dc72a4672894e0f"
+              ],
+              "provenance": "reviewed_funding_insight",
+              "reviewRef": "REC-0b4ed73ecbf75376",
+              "fundingInsightId": "FI-567a6b518e3e5624"
+            },
+            {
+              "dimensionId": "target_user",
+              "dimensionName": "目标用户",
+              "id": "business_user",
+              "name": "企业用户",
+              "entityIds": [
+                "EN-8dc72a4672894e0f"
+              ],
+              "provenance": "reviewed_funding_insight",
+              "reviewRef": "REC-42f1dbe5a2226ca1",
+              "fundingInsightId": "FI-567a6b518e3e5624"
+            },
+            {
+              "dimensionId": "target_user",
+              "dimensionName": "目标用户",
+              "id": "developer",
+              "name": "开发者",
+              "entityIds": [
+                "EN-8dc72a4672894e0f"
+              ],
+              "provenance": "reviewed_funding_insight",
+              "reviewRef": "REC-9cad65e2b68b47f4",
+              "fundingInsightId": "FI-567a6b518e3e5624"
+            }
+          ],
+          "entityIds": [
+            "EN-9a1a3ee1f50745c6",
+            "EN-b1c5e73e1471e806",
+            "EN-047364b9be67f665",
+            "EN-6e17ad315d52ee36",
+            "EN-cd6362472aea60ef",
+            "EN-8dc72a4672894e0f"
+          ]
+        },
         {
           "id": "EV-bd81083dbb6eab3e",
           "dataDate": "2026-07-28",
@@ -318029,7 +318150,7 @@
             "EN-b1c5e73e1471e806",
             "EN-047364b9be67f665",
             "EN-6e17ad315d52ee36",
-            "EN-db36e7bd45191ce4",
+            "EN-cd6362472aea60ef",
             "EN-8dc72a4672894e0f"
           ]
         }
@@ -331735,7 +331856,7 @@
             "EN-b1c5e73e1471e806",
             "EN-047364b9be67f665",
             "EN-6e17ad315d52ee36",
-            "EN-db36e7bd45191ce4",
+            "EN-cd6362472aea60ef",
             "EN-8dc72a4672894e0f"
           ]
         }
@@ -331899,7 +332020,7 @@
             "EN-b1c5e73e1471e806",
             "EN-047364b9be67f665",
             "EN-6e17ad315d52ee36",
-            "EN-db36e7bd45191ce4",
+            "EN-cd6362472aea60ef",
             "EN-8dc72a4672894e0f"
           ]
         }
@@ -332226,7 +332347,7 @@
             "EN-b1c5e73e1471e806",
             "EN-047364b9be67f665",
             "EN-6e17ad315d52ee36",
-            "EN-db36e7bd45191ce4",
+            "EN-cd6362472aea60ef",
             "EN-8dc72a4672894e0f"
           ]
         }
@@ -428856,12 +428977,12 @@
       "viewpointIds": [],
       "classificationRefs": [],
       "relatedEntityIds": [
-        "EN-db36e7bd45191ce4"
+        "EN-cd6362472aea60ef"
       ],
       "firstSeen": "2026-06-30",
       "lastSeen": "2026-07-01",
       "relationIds": [
-        "REL2-1bf216d440716d0b"
+        "REL2-a95d865ecb2fbc95"
       ],
       "groupedEventIds": {
         "fundingAcquisition": [],
@@ -431719,203 +431840,6 @@
           ],
           "entityIds": [
             "EN-74bec9be9c8f2e09"
-          ]
-        }
-      ],
-      "viewpoints": []
-    },
-    {
-      "id": "EN-db36e7bd45191ce4",
-      "name": "Meituan",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "美团"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-cec68369662236fd"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-8992f4a61a19a74b"
-      ],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-03",
-      "relationIds": [
-        "REL2-1bf216d440716d0b"
-      ],
-      "groupedEventIds": {
-        "fundingAcquisition": [
-          "EV-cec68369662236fd"
-        ],
-        "deployments": [],
-        "partnerships": [],
-        "productsServices": [
-          "EV-50853632f4b54972"
-        ],
-        "hardware": [],
-        "organizationPeople": [],
-        "other": []
-      },
-      "timeline": [
-        {
-          "id": "EV-cec68369662236fd",
-          "dataDate": "2026-08-03",
-          "date": "2026-01-12",
-          "eventType": "funding",
-          "eventTypeLabel": "融资",
-          "eventGroup": "融资与并购",
-          "status": "completed",
-          "statusLabel": "已完成",
-          "title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
-          "displayTags": [
-            {
-              "dimensionId": "ai_market_category",
-              "dimensionName": "AI 市场类别",
-              "id": "physical_ai",
-              "name": "Physical AI",
-              "entityIds": [
-                "EN-8dc72a4672894e0f"
-              ],
-              "provenance": "reviewed_funding_insight",
-              "reviewRef": "REC-1f3c3e4ce59f5811",
-              "fundingInsightId": "FI-567a6b518e3e5624"
-            },
-            {
-              "dimensionId": "product_form",
-              "dimensionName": "产品形态",
-              "id": "robotic_system",
-              "name": "机器人系统",
-              "entityIds": [
-                "EN-8dc72a4672894e0f"
-              ],
-              "provenance": "reviewed_funding_insight",
-              "reviewRef": "REC-4f70510bf6d71181",
-              "fundingInsightId": "FI-567a6b518e3e5624"
-            },
-            {
-              "dimensionId": "use_case",
-              "dimensionName": "应用场景",
-              "id": "physical_automation",
-              "name": "物理自动化",
-              "entityIds": [
-                "EN-8dc72a4672894e0f"
-              ],
-              "provenance": "reviewed_funding_insight",
-              "reviewRef": "REC-64121abae6fc16bb",
-              "fundingInsightId": "FI-567a6b518e3e5624"
-            },
-            {
-              "dimensionId": "use_case",
-              "dimensionName": "应用场景",
-              "id": "physical_automation",
-              "name": "物理自动化",
-              "entityIds": [
-                "EN-9a1a3ee1f50745c6"
-              ],
-              "provenance": "claim_assertion",
-              "assertionId": ""
-            },
-            {
-              "dimensionId": "technology",
-              "dimensionName": "技术",
-              "id": "embodied_ai",
-              "name": "具身智能",
-              "entityIds": [
-                "EN-9a1a3ee1f50745c6"
-              ],
-              "provenance": "claim_assertion",
-              "assertionId": ""
-            },
-            {
-              "dimensionId": "industry",
-              "dimensionName": "行业",
-              "id": "manufacturing",
-              "name": "制造业",
-              "entityIds": [
-                "EN-8dc72a4672894e0f"
-              ],
-              "provenance": "reviewed_funding_insight",
-              "reviewRef": "REC-386d7ef120246b39",
-              "fundingInsightId": "FI-567a6b518e3e5624"
-            },
-            {
-              "dimensionId": "industry",
-              "dimensionName": "行业",
-              "id": "retail_ecommerce",
-              "name": "零售与电商",
-              "entityIds": [
-                "EN-8dc72a4672894e0f"
-              ],
-              "provenance": "reviewed_funding_insight",
-              "reviewRef": "REC-0b4ed73ecbf75376",
-              "fundingInsightId": "FI-567a6b518e3e5624"
-            },
-            {
-              "dimensionId": "target_user",
-              "dimensionName": "目标用户",
-              "id": "business_user",
-              "name": "企业用户",
-              "entityIds": [
-                "EN-8dc72a4672894e0f"
-              ],
-              "provenance": "reviewed_funding_insight",
-              "reviewRef": "REC-42f1dbe5a2226ca1",
-              "fundingInsightId": "FI-567a6b518e3e5624"
-            },
-            {
-              "dimensionId": "target_user",
-              "dimensionName": "目标用户",
-              "id": "developer",
-              "name": "开发者",
-              "entityIds": [
-                "EN-8dc72a4672894e0f"
-              ],
-              "provenance": "reviewed_funding_insight",
-              "reviewRef": "REC-9cad65e2b68b47f4",
-              "fundingInsightId": "FI-567a6b518e3e5624"
-            }
-          ],
-          "entityIds": [
-            "EN-9a1a3ee1f50745c6",
-            "EN-b1c5e73e1471e806",
-            "EN-047364b9be67f665",
-            "EN-6e17ad315d52ee36",
-            "EN-db36e7bd45191ce4",
-            "EN-8dc72a4672894e0f"
-          ]
-        },
-        {
-          "id": "EV-50853632f4b54972",
-          "dataDate": "2026-07-01",
-          "date": "2026-06-30",
-          "eventType": "model_release",
-          "eventTypeLabel": "模型发布",
-          "eventGroup": "模型、产品与服务",
-          "status": "completed",
-          "statusLabel": "已完成",
-          "title": "美团发布万亿参数大模型 LongCat-2.0，五万卡国产算力训练并开源",
-          "displayTags": [
-            {
-              "dimensionId": "product_form",
-              "dimensionName": "产品形态",
-              "id": "model",
-              "name": "模型",
-              "entityIds": [
-                "EN-cd6362472aea60ef"
-              ],
-              "provenance": "claim_assertion",
-              "assertionId": ""
-            }
-          ],
-          "entityIds": [
-            "EN-cd6362472aea60ef",
-            "EN-8992f4a61a19a74b"
           ]
         }
       ],
@@ -521000,26 +520924,6 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-1bf216d440716d0b",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-db36e7bd45191ce4",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-8992f4a61a19a74b",
-      "object_type": "entity",
-      "event_id": "EV-50853632f4b54972",
-      "claim_refs": [
-        "CL-bdc51ac046a759bd",
-        "CL-3918c79bf6fe9714",
-        "CL-8a0fd635b5b314bd"
-      ],
-      "source_refs": [
-        "SA-bbfba84596a3fcc1"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-3a68b920abaf8848",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c47b618e17c75f06",
@@ -521112,6 +521016,26 @@
       ],
       "source_refs": [
         "SA-ddd5b344fc8bbc1e"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-a95d865ecb2fbc95",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-cd6362472aea60ef",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8992f4a61a19a74b",
+      "object_type": "entity",
+      "event_id": "EV-50853632f4b54972",
+      "claim_refs": [
+        "CL-bdc51ac046a759bd",
+        "CL-3918c79bf6fe9714",
+        "CL-8a0fd635b5b314bd"
+      ],
+      "source_refs": [
+        "SA-bbfba84596a3fcc1"
       ],
       "data_date": "2026-07-01",
       "status": "verified"
@@ -524170,7 +524094,7 @@
   "entityHistoryManifest": {
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-08-03T07:01:14.873Z",
+    "generatedAt": "2026-08-03T07:17:08.622Z",
     "coverage": {
       "startDate": "2017-09-07",
       "endDate": "2027-09-30",
@@ -524183,18 +524107,18 @@
       }
     },
     "counts": {
-      "entities": 1581,
-      "organizations": 1068,
+      "entities": 1580,
+      "organizations": 1067,
       "products": 452,
       "people": 61,
       "taxonomyNodes": 111,
       "relationships": 346
     },
     "review": {
-      "reviewed": 946,
+      "reviewed": 959,
       "confirmed": 422,
-      "corrected": 176,
-      "merged": 107,
+      "corrected": 188,
+      "merged": 108,
       "quarantined": 241
     }
   },

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T07:01:14.913Z",
+    "generatedAt": "2026-08-03T07:17:08.673Z",
     "latestDataDate": "2026-08-03",
     "currentDate": "2026-08-03",
     "eventCount": 1816,
@@ -13,7 +13,7 @@
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-08-03T07:01:14.873Z",
+      "generatedAt": "2026-08-03T07:17:08.622Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2027-09-30",
@@ -26,18 +26,18 @@
         }
       },
       "counts": {
-        "entities": 1581,
-        "organizations": 1068,
+        "entities": 1580,
+        "organizations": 1067,
         "products": 452,
         "people": 61,
         "taxonomyNodes": 111,
         "relationships": 346
       },
       "review": {
-        "reviewed": 946,
+        "reviewed": 959,
         "confirmed": 422,
-        "corrected": 176,
-        "merged": 107,
+        "corrected": 188,
+        "merged": 108,
         "quarantined": 241
       }
     }
@@ -667,21 +667,34 @@
       "id": "EN-cd6362472aea60ef",
       "name": "美团",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "Meituan"
+      ],
       "tags": [
         "智能体",
         "模型"
       ],
       "eventIds": [
+        "EV-cec68369662236fd",
         "EV-bd81083dbb6eab3e",
         "EV-50853632f4b54972"
       ],
-      "firstSeen": "2026-06-30",
-      "lastSeen": "2026-07-28",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-03",
+      "relatedEntityIds": [
+        "EN-8992f4a61a19a74b"
+      ],
+      "relationIds": [
+        "REL2-a95d865ecb2fbc95"
+      ],
+      "marketScopes": [
+        "actor_origin"
+      ],
+      "chinaMarketMatch": true,
       "type": "公司/机构",
-      "productIds": []
+      "productIds": [
+        "EN-8992f4a61a19a74b"
+      ]
     },
     {
       "id": "EN-3309b3b14807f39a",
@@ -4273,34 +4286,6 @@
       "relationIds": [],
       "type": "公司/机构",
       "productIds": []
-    },
-    {
-      "id": "EN-db36e7bd45191ce4",
-      "name": "Meituan",
-      "sourceType": "organization_candidate",
-      "aliases": [
-        "美团"
-      ],
-      "tags": [],
-      "eventIds": [
-        "EV-cec68369662236fd"
-      ],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-08-03",
-      "relatedEntityIds": [
-        "EN-8992f4a61a19a74b"
-      ],
-      "relationIds": [
-        "REL2-1bf216d440716d0b"
-      ],
-      "marketScopes": [
-        "actor_origin"
-      ],
-      "chinaMarketMatch": true,
-      "type": "公司/机构",
-      "productIds": [
-        "EN-8992f4a61a19a74b"
-      ]
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -12965,19 +12950,19 @@
       "firstSeen": "2026-06-30",
       "lastSeen": "2026-07-01",
       "relatedEntityIds": [
-        "EN-db36e7bd45191ce4"
+        "EN-cd6362472aea60ef"
       ],
       "relationIds": [
-        "REL2-1bf216d440716d0b"
+        "REL2-a95d865ecb2fbc95"
       ],
       "legacyIds": [
         "PD-30910fe7497c5c"
       ],
       "companyIds": [
-        "EN-db36e7bd45191ce4"
+        "EN-cd6362472aea60ef"
       ],
       "companyNames": [
-        "Meituan"
+        "美团"
       ],
       "type": "模型"
     },

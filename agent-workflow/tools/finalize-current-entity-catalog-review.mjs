@@ -35,6 +35,13 @@ const explicitAcceptedDecisionIds = new Set([
 ]);
 const organizationIdentityOverrides = [
   {
+    entity_id: "EN-db36e7bd45191ce4",
+    merge_into_entity_id: "EN-cd6362472aea60ef",
+    canonical_name: "美团",
+    aliases: ["Meituan"],
+    rationale: "accepted Claim 中的 Meituan/美团为同一投资机构，合并到既有已复核的美团稳定实体。"
+  },
+  {
     entity_id: "EN-8d323d8bba783aa3",
     canonical_name: "Google Cloud",
     aliases: ["Cloud"],
@@ -395,6 +402,110 @@ function supplementalClaimEntities(claimsById) {
       company_names: ["智云"],
       claim_refs: ["CL-aaca441f759f3259"],
       rationale: "accepted Claim 精确写明智云宣布推出 WEEBILL 5，补全产品发布归属。"
+    },
+    {
+      entity_id: "EN-cb1041ddf6123c37",
+      name: "灵初智能",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-2c17b75ff741d331"],
+      rationale: "accepted Claim 明确记载灵初智能完成天使轮及 Pre-A 轮融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-aef5bb4e898f303c",
+      name: "奇点逃逸",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-5fcba6542eae3789"],
+      rationale: "accepted Claim 明确记载奇点逃逸完成种子轮融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-1032f7a4df33f629",
+      name: "千寻智能",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-d9149e7f67c6c714"],
+      rationale: "accepted Claim 明确记载千寻智能完成融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-5aacd10b5dbfa7b7",
+      name: "穹彻智能",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-37f57d97a50c8e40"],
+      rationale: "accepted Claim 明确记载穹彻智能完成新一轮融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-cecdd8369134f75e",
+      name: "容芯致远",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-a2ec8ca9e40e5fea"],
+      rationale: "accepted Claim 同时给出容芯致远简称与公司全称并记载融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-39ba5f9dcab4e98a",
+      name: "它石智航",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-80178beced6ca9ef"],
+      rationale: "accepted Claim 明确记载它石智航完成 Pre-A 轮融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-4731aa5b66658c7f",
+      name: "无界动力",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-cdb93470c7ca548d"],
+      rationale: "accepted Claim 明确称无界动力为通用具身智能机器人公司并记载融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-c5456c9421743002",
+      name: "银河通用",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-97df5504b3d53660"],
+      rationale: "accepted Claim 明确记载银河通用正式宣布完成融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-8dc72a4672894e0f",
+      name: "自变量机器人",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-e3699315f67b5802"],
+      rationale: "accepted Claim 明确称自变量机器人为通用具身智能企业并记载融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-db36e7bd45191ce4",
+      name: "美团",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-ccb68271b324b577"],
+      rationale: "accepted Claim 明确记载美团为自变量机器人的战略投资方；该候选后续合并到既有美团实体。"
+    },
+    {
+      entity_id: "EN-4bd78d9884b2d958",
+      name: "Parabola",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-1eea7133d11e218e"],
+      rationale: "accepted Claim 明确称 Parabola 为初创公司并记载 B 轮融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-6998e3957b261cf2",
+      name: "Quash",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-9faf823cc40bad94"],
+      rationale: "accepted Claim 明确称 Quash 为 AI 初创公司并记载融资，确认其为公司实体。"
+    },
+    {
+      entity_id: "EN-3c1ae4e6276005e7",
+      name: "TensorWave Inc.",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: ["CL-b55ffa6a004d3eb5"],
+      rationale: "accepted Claim 明确称 TensorWave Inc. 为 AI 基础设施初创公司并记载 B 轮融资，确认其为公司实体。"
     }
   ];
   return rows.map((row) => {
