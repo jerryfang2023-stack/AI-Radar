@@ -970,6 +970,7 @@ test("index pages, question headlines, roundups, and reaction articles cannot be
     ["智能体AI能否让美国制造业回归？", "question_headline_not_event_specific"],
     ["AI巨头斥资数十亿美元布局企业部署", "multi_event_roundup_not_single_event_source"],
     ["Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier", "multi_event_roundup_not_single_event_source"],
+    ["最新开源模型盘点（#23）：Laguna S2.1、Inkling 与 Kimi K3 展现开源模型在帕累托前沿的价值", "multi_event_roundup_not_single_event_source"],
     ["OpenAI 总裁布罗克曼回应苹果诉讼：无意窃取商业机密", "reaction_or_commentary_not_new_event"],
   ];
 
