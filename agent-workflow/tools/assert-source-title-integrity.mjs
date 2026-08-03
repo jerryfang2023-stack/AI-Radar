@@ -9,6 +9,7 @@ import {
   titleTranslationLooksUsable,
   titleTranslationKey,
 } from "./source-title-translation-generator.mjs";
+import { buildEventDisplayTitle } from "./event-public-title.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
@@ -52,7 +53,7 @@ for (const date of dates) {
       const rawId = rawBySourceArtifact.get(ref);
       if (rawId) eventTargetRawIds.add(rawId);
     }
-    const allowed = new Set(sources.map((raw) => String(raw.title_zh || raw.title_original || raw.title || "").trim()).filter(Boolean));
+    const allowed = new Set(sources.map((raw) => buildEventDisplayTitle({ rawDocument: raw })).filter(Boolean));
     eventChecks.push({ date, event, allowed });
   }
 }
