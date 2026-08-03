@@ -21,13 +21,6 @@
     "source_ref": "SA-a9ccff46a85c21e5"
   },
   {
-    "qa_id": "QA-60b4f9803525814c",
-    "asset_id": "RAW-ca19c763d92f8fb9",
-    "reason": "no_source_bounded_claim",
-    "status": "review_optional",
-    "source_ref": "SA-b35427ef3f34cb5b"
-  },
-  {
     "qa_id": "QA-e061ab90e2145e2d",
     "asset_id": "RAW-10b6291d97e11acc",
     "reason": "source_outside_daily_window",
@@ -89,13 +82,6 @@
     "reason": "source_outside_daily_window",
     "status": "review_optional",
     "source_ref": "SA-3a791c4703a54105"
-  },
-  {
-    "qa_id": "QA-2d6a05430ceb651f",
-    "asset_id": "RAW-62ea9a777887ef60",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-5c166bbb90a4065f"
   },
   {
     "qa_id": "QA-7a789e4136a75578",
@@ -448,11 +434,11 @@
     "source_ref": "SA-c65480786c6ca4cd"
   },
   {
-    "qa_id": "QA-2e146959544d319a",
-    "asset_id": "RAW-4020fccb9a2e4d36",
-    "reason": "no_source_bounded_event",
+    "qa_id": "QA-fb9ea8a0b59ee818",
+    "asset_id": "RAW-f57395b410903341",
+    "reason": "multi_event_roundup_not_single_event_source",
     "status": "review_optional",
-    "source_ref": "SA-264f00311be69136"
+    "source_ref": "SA-2f1b03c671427c36"
   },
   {
     "qa_id": "QA-4767d8848f1e4033",
@@ -719,13 +705,6 @@
     "reason": "no_source_bounded_event",
     "status": "review_optional",
     "source_ref": "SA-7738a96835c2dfa8"
-  },
-  {
-    "qa_id": "QA-c3e971c5c59b9b01",
-    "asset_id": "RAW-166fe9ba8d1b636b",
-    "reason": "no_source_bounded_event",
-    "status": "review_optional",
-    "source_ref": "SA-50dee51df53a47d9"
   },
   {
     "qa_id": "QA-6a9dc78779d49799",
@@ -1169,9 +1148,9 @@
     "source_ref": "SA-9bbd2f82c2c34047"
   },
   {
-    "qa_id": "QA-5e5697eed9775682",
+    "qa_id": "QA-0e24c4de06ef1f5c",
     "asset_id": "RAW-e90bc022ca690df9",
-    "reason": "no_source_bounded_event",
+    "reason": "event_not_ai_relevant",
     "status": "review_optional",
     "source_ref": "SA-6653bcfb7229a9e1"
   },
@@ -1407,24 +1386,10 @@
     "source_ref": "SA-eb9fc497599008cc"
   },
   {
-    "qa_id": "QA-20bfc9dd92d9cd26",
-    "asset_id": "EV-9e0d09ca5543e6f2",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-2f1b03c671427c36"
-  },
-  {
-    "qa_id": "QA-80167923448437d2",
-    "asset_id": "EV-dc35d54f273196f0",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-7c458c79f63a4117"
-  },
-  {
-    "qa_id": "QA-21efd5f9e723839e",
-    "asset_id": "EV-b7f140a7aebe7971",
-    "reason": "public_event_title_incomplete",
-    "status": "open",
-    "source_ref": "SA-594380e694b9d0e7"
+    "qa_id": "QA-ad24ba3ac2f8979b",
+    "asset_id": "RAW-63acd83d62650fca",
+    "reason": "rumor_requires_primary_confirmation",
+    "status": "review_optional",
+    "source_ref": "SA-78fc78a388d884ce"
   }
 ]

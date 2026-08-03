@@ -39,7 +39,7 @@ npm run assert:data-lake-v4
 The 16:45 `WaveSight Daily Final Closure` task owns the local refresh. There is
 no independent data-lake scheduled task or Startup loop.
 
-Before every sync, JSONL files outside the 23-table V4 allowlist are deleted.
+Before every sync, JSONL files outside the 24-table V4 allowlist are deleted.
 The manifest records the contract version, generation time, Git commit, table
 names, row counts, removed stale tables, and DuckDB state.
 
@@ -58,6 +58,7 @@ V4 canonical serving tables:
 | `relationships` | Source-backed subject/predicate/object rows linked to events and Claims |
 | `tag_assertions` | TAG-V4 evidence-backed technical semantic assertions |
 | `facet_assertions` | TAG-V4 evidence-backed product, scenario, industry, deployment, and target-user classifications |
+| `reviewed_event_classifications` | Reviewed Funding Insights taxonomy decisions projected back to their canonical events and target entities |
 | `fde_records` | FDE-V2 source-bounded implementation projections |
 | `fde_observations` | Claim-native FDE observations |
 | `hardware_records` | HARDWARE-V1 source-bounded hardware projections |
@@ -68,7 +69,7 @@ V4 canonical serving tables:
 | `entity_relationships` | Materialized factual relationship service |
 | `qa_queue` | Quarantined, partial, or no-event review records |
 
-The table set must be exactly 23. `card`, `pool`, `compatibility`, and legacy
+The table set must be exactly 24. `card`, `pool`, `compatibility`, and legacy
 mapping tables are forbidden.
 
 ## Example Queries

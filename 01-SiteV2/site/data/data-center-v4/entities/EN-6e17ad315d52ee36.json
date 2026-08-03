@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-03T07:01:14.913Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1816,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-6e17ad315d52ee36",
+    "name": "美团罕见“会师”",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-cec68369662236fd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-01-12",
+    "lastSeen": "2026-08-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-cec68369662236fd"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-cec68369662236fd",
+        "dataDate": "2026-08-03",
+        "date": "2026-01-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1f3c3e4ce59f5811",
+            "fundingInsightId": "FI-567a6b518e3e5624"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4f70510bf6d71181",
+            "fundingInsightId": "FI-567a6b518e3e5624"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-64121abae6fc16bb",
+            "fundingInsightId": "FI-567a6b518e3e5624"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-9a1a3ee1f50745c6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-9a1a3ee1f50745c6"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-386d7ef120246b39",
+            "fundingInsightId": "FI-567a6b518e3e5624"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0b4ed73ecbf75376",
+            "fundingInsightId": "FI-567a6b518e3e5624"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-42f1dbe5a2226ca1",
+            "fundingInsightId": "FI-567a6b518e3e5624"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-8dc72a4672894e0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9cad65e2b68b47f4",
+            "fundingInsightId": "FI-567a6b518e3e5624"
+          }
+        ],
+        "entityIds": [
+          "EN-9a1a3ee1f50745c6",
+          "EN-b1c5e73e1471e806",
+          "EN-047364b9be67f665",
+          "EN-6e17ad315d52ee36",
+          "EN-db36e7bd45191ce4",
+          "EN-8dc72a4672894e0f"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -151,6 +151,19 @@ function normalizeHierarchyFields(decision = {}) {
   return decision;
 }
 
+function normalizeControlledListFields(decision = {}) {
+  for (const [field, ids] of [
+    ["use_case_ids", allowed.useCase],
+    ["industry_ids", allowed.industry],
+    ["target_user_ids", allowed.targetUser],
+  ]) {
+    if (Array.isArray(decision[field])) {
+      decision[field] = uniqueStrings(decision[field]).filter((value) => ids.has(value));
+    }
+  }
+  return decision;
+}
+
 function decisionProblems(decision, expectedEventId = "") {
   const problems = [];
   if (clean(decision?.event_id) !== expectedEventId) problems.push(`event_id:${expectedEventId}`);
@@ -235,6 +248,7 @@ async function classifySingleStrict(item) {
       const decisions = Array.isArray(payload?.decisions) ? payload.decisions : [];
       if (decisions.length !== 1) return [`decision_count:${decisions.length}/1`];
       normalizeHierarchyFields(decisions[0]);
+      normalizeControlledListFields(decisions[0]);
       return decisionProblems(decisions[0], item.event_id);
     },
   });
@@ -256,6 +270,7 @@ async function classifyBatch(items) {
         const problems = decisions.length === items.length ? [] : [`decision_count:${decisions.length}/${items.length}`];
         for (const [index, item] of items.entries()) {
           normalizeHierarchyFields(decisions[index]);
+          normalizeControlledListFields(decisions[index]);
           problems.push(...decisionProblems(decisions[index], item.event_id));
         }
         return problems;
@@ -295,7 +310,8 @@ async function runPool(batches, onResult = () => {}) {
 
 function normalizeDecision(decision) {
   normalizeHierarchyFields(decision);
-  return {
+  normalizeControlledListFields(decision);
+  const normalized = {
     event_id: clean(decision.event_id),
     market_category_id: clean(decision.market_category_id),
     market_subcategory_id: clean(decision.market_subcategory_id),
@@ -308,6 +324,11 @@ function normalizeDecision(decision) {
     needs_review: decision.needs_review === true,
     rationale: clean(decision.rationale),
   };
+  const canonicalEventId = clean(decision.canonical_event_id);
+  if (canonicalEventId && canonicalEventId !== normalized.event_id) {
+    normalized.canonical_event_id = canonicalEventId;
+  }
+  return normalized;
 }
 
 function applyDecisions(ledger) {
@@ -393,9 +414,7 @@ if (
       decisions: [...accumulated.values()].sort((a, b) => a.event_id.localeCompare(b.event_id)),
     });
   });
-  const decisions = incremental
-    ? [...existing, ...missingInputs.map((input) => accumulated.get(input.event_id))]
-    : inputs.map((input) => accumulated.get(input.event_id));
+  const decisions = inputs.map((input) => accumulated.get(input.event_id));
   const byEvent = new Map(decisions.map((decision) => [decision.event_id, decision]));
   const problems = inputs.flatMap((input) => decisionProblems(byEvent.get(input.event_id), input.event_id));
   if (problems.length) throw new Error(`funding_taxonomy_decisions_invalid:${problems.join("|")}`);

@@ -5,18 +5,182 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-02T06:24:12.431Z",
+    "generated_at": "2026-08-03T06:49:54.658Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 223,
-    "input_hash": "e6a537a0ae2ae96e",
+    "decision_count": 241,
+    "input_hash": "341961d21631f561",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
   },
   "decisions": [
+    {
+      "event_id": "EV-7a44a47bf36780d2",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "software_development",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "financial_services",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "壁仞科技 develops GPGPU chips (壁砺系列) and a software platform for AI training/inference, fitting infrastructure_compute / hardware_computing / chips. The product_form_id is chip_accelerator. Use cases include software_development (AI development platform) and research_discovery (training large models). Industries served include telecommunications (中国移动/中国电信), financial_services (平安集团), and manufacturing (robotics/industrial edge inference). Target users are developers and business users deploying AI compute."
+    },
+    {
+      "event_id": "EV-e9d06e8a06aa7318",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "knowledge_search",
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences",
+        "government_public_sector"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "昆仑元AI提供GPT-Station算力终端、Agent Computer和Pad等硬件设备，搭载自研AI操作系统和模型，面向政企和医疗场景提供即开即用的高性能计算能力，属于硬件/计算基础设施，而非仅模型或软件平台。"
+    },
+    {
+      "event_id": "EV-d3fcd1ea4d9baf47",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "证据显示公司产品为全尺寸人形机器人、家庭协作机器人及已进入家庭的具身智能机器人，直接感知、决策并作用于物理世界，符合Physical AI定义。产品形态为机器人系统，面向家庭消费者，用例为物理自动化。"
+    },
+    {
+      "event_id": "EV-a909450a2d1a1fe1",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司打造通用操作智能体，推出端到端强化学习具身模型并实现长程任务，产品直接控制机器人在物理世界执行操作，符合Physical AI定义。产品形式为机器人系统而非纯软件工具链。"
+    },
+    {
+      "event_id": "EV-b5dd10300e34f2d3",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "content_creation",
+        "education_learning"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品为面向消费者的AI潮玩硬件，提供情感陪伴，属于跨行业消费级应用，非基础设施也非物理AI，归入企业应用下的消费者零售子类。"
+    },
+    {
+      "event_id": "EV-dc35d54f273196f0",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品Nexus是团队协作操作系统，统一人、Agent、任务、知识、工具的组织状态，属于跨行业的企业生产力与工作流场景，无特定行业数据或物理世界执行，因此归入enterprise_applications > productivity_enterprise_workflows。"
+    },
+    {
+      "event_id": "EV-60d58e2a1f5733f8",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司定位机器人通用大脑，但产品Moz和小墨机器人在零售和产线中实际执行物理操作，满足感知-决策-行动闭环，属于Physical AI。"
+    },
+    {
+      "event_id": "EV-56da7cceeebc8bcf",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "developer_tool",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain",
+        "healthcare_life_sciences",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "穹彻智能的核心产品是机器人具身大脑（Noematrix Brain）和工具链，提供基础模型、原子技能、软件框架及开发者工具，属于为机器人开发者提供模型和开发部署基础设施，而非直接销售在物理世界自主行动的完整机器人系统，因此归入infrastructure_compute而非physical_ai。"
+    },
     {
       "event_id": "EV-00514c4ffc2e3cd3",
       "market_category_id": "infrastructure_compute",
@@ -36,6 +200,137 @@
       "rationale": "丘脑智能提供多模态记忆基座MemAura，以ADK和API形式供开发者调用，属于为其他AI产品构建者提供模型基础设施，符合infrastructure_compute > development_deployment > models。"
     },
     {
+      "event_id": "EV-44ec7c229995ca3c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "software_development",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "容芯致远提供以GPU为核心的AGC智算架构和K系列算力产品，属于硬件计算基础设施，为AI模型训练和推理提供算力支撑，而非面向特定行业应用或企业业务功能，因此归入infrastructure_compute下的硬件计算子类。"
+    },
+    {
+      "event_id": "EV-ee38c30c00b2a754",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "如身机器人的齐家Q1养老机器人具备在物理世界中感知、决策和行动的能力，可完成起身、递水、喂饭、载人移动等任务，直接作用于物理环境，符合physical_ai定义，而非仅为其他机器人提供基础设施。"
+    },
+    {
+      "event_id": "EV-1188b1585b835fe1",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司发布通用具身大模型AWE3.0并搭载于A1机器人，在真实工业线束作业中实现物理操作，符合Physical AI“感知-决策-行动”闭环。产品形态为机器人系统，应用于制造业与汽车行业，目标用户为企业。"
+    },
+    {
+      "event_id": "EV-876baa523eb93c4f",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "food_hospitality"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司专注通用具身智能机器人，第二代机器人K15已批量投产并交付客户，涉及制造与连锁咖啡品牌，明确在物理世界执行操作，归入Physical AI。"
+    },
+    {
+      "event_id": "EV-be59d9048dd1b6a0",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "construction_real_estate"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司打造通用机器人大脑并落地智能焊接机器人，已在重工、钢结构焊接场景量产交付，属于物理世界感知与行动，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-d2409770301edc83",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 1,
+      "needs_review": false,
+      "rationale": "银河通用研发并部署Galbot S1工业重载机器人和银河太空舱零售机器人，产品直接感知、决策并作用于物理世界，符合Physical AI定义。"
+    },
+    {
       "event_id": "EV-c5d7d88d1aef8edb",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
@@ -53,6 +348,47 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "月之暗面核心产品为Kimi系列大模型，开源发布并成为全球开发者底层能力，属于模型基础设施，归入infrastructure_compute > development_deployment > models。"
+    },
+    {
+      "event_id": "EV-af8e95dbe06ac083",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 1,
+      "needs_review": false,
+      "rationale": "智平方的AlphaBot 2和智魔方均为具身智能机器人及服务空间，在物理环境中执行操作任务，属于Physical AI。"
+    },
+    {
+      "event_id": "EV-cec68369662236fd",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 1,
+      "needs_review": false,
+      "rationale": "自变量机器人提供WALL-A操作大模型和量子2号机器人，直接输出动作指令控制物理设备，属于Physical AI。"
     },
     {
       "event_id": "EV-4da1a7c4d527eb69",
@@ -363,23 +699,6 @@
       "rationale": "Odyssey ML 当前出售的是生成交互式仿真的世界模型；自动驾驶和机器人是应用方向，公司没有交付机器人、车辆或自主机器。"
     },
     {
-      "event_id": "EV-1abf0d076d30ec6d",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "development_deployment",
-      "market_application_id": "model_deployment",
-      "product_form_id": "compute_cloud_service",
-      "use_case_ids": [
-        "software_development"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "Featherless.ai 提供无服务器模型推理平台，按需加载模型，属于为 AI 构建者提供部署基础设施。"
-    },
-    {
       "event_id": "EV-cded77b1de2db61a",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
@@ -548,6 +867,27 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品为横向平台，提供确定性护栏、治理和可观测性，属于为AI构建者提供安全与治理基础设施，而非面向单一行业或物理世界。"
+    },
+    {
+      "event_id": "EV-24823de8fb76ac31",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "procurement_supply_chain"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Arrakis为工业公司提供AI操作系统，对接采购、物流、运营系统，客户为航运公司，明确围绕工业/供应链行业工作流，非通用企业应用，故归入industry_applications > industrials。"
     },
     {
       "event_id": "EV-754e83c2d19005fe",
@@ -1183,6 +1523,23 @@
       "rationale": "与 EV-0ade039d36e077ae 为同一公司，证据显示其平台模型无关、持续基准测试并支持多用例工作流，属于为 AI 构建者提供开发部署基础设施，因此归入 infrastructure_compute > development_deployment > ai_development_orchestration。"
     },
     {
+      "event_id": "EV-618e5729145025e4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "developer_tool",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Entire 发布开源CLI工具Checkpoints，捕获AI代理上下文辅助开发者审查，属于为AI构建者提供的开发编排基础设施。"
+    },
+    {
       "event_id": "EV-ad75efcb12a07793",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "hardware_computing",
@@ -1271,6 +1628,23 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Fazeshift uses AI agents to automate accounts receivable (AR) workflows including cash application, collections, and billing. This aligns with enterprise applications for productivity/enterprise workflows (finance/accounting focus). The product is an end-user application for business users in financial services. No physical AI component is present."
+    },
+    {
+      "event_id": "EV-1abf0d076d30ec6d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Featherless.ai 提供无服务器模型推理平台，按需加载模型，属于为 AI 构建者提供部署基础设施。"
     },
     {
       "event_id": "EV-6011ab83ebd290bd",
@@ -1381,23 +1755,6 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "Sycamore 构建智能体编排层处理编码到后端基础设施，属于跨行业的企业生产力工作流，未限定单一行业或物理AI。"
-    },
-    {
-      "event_id": "EV-618e5729145025e4",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "development_deployment",
-      "market_application_id": "ai_development_orchestration",
-      "product_form_id": "developer_tool",
-      "use_case_ids": [
-        "software_development"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "Entire 发布开源CLI工具Checkpoints，捕获AI代理上下文辅助开发者审查，属于为AI构建者提供的开发编排基础设施。"
     },
     {
       "event_id": "EV-70a994b9339f92e7",
@@ -1759,25 +2116,6 @@
       "rationale": "产品专为餐厅管理电话、预订、外卖等餐饮行业特有工作流，属于围绕单一行业（餐饮/零售）的行业应用，而非跨行业企业功能。"
     },
     {
-      "event_id": "EV-d4e44892226be468",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "end_user_application",
-      "use_case_ids": [
-        "productivity_enterprise_workflows"
-      ],
-      "industry_ids": [
-        "retail_ecommerce"
-      ],
-      "target_user_ids": [
-        "consumer"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "ChatGPT is a general-purpose AI assistant used by consumers and businesses. The Walmart integration and agentic shopping indicate productivity/enterprise workflows and retail e-commerce. The tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly from ALLOWED_HIERARCHY_TUPLES."
-    },
-    {
       "event_id": "EV-386c205c8bbf537d",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
@@ -1942,6 +2280,25 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "Orchestrator连接ERP、PLM等系统自动化复杂工作流，面向企业和工业运营，属于跨职能企业应用。"
+    },
+    {
+      "event_id": "EV-74967394aed730ce",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Jedify构建企业上下文图谱，为AI应用提供数据基础，属于基础设施中的数据准备与治理，而非直接面向终端业务的应用。"
     },
     {
       "event_id": "EV-e7dcecaed5a0ee5b",
@@ -2690,6 +3047,25 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Onyx 提供面向工作场所的 AI 研究代理，直接服务于企业用户的知识搜索与研究需求，属于跨行业的生产力工作流应用，而非基础设施或单一行业应用。"
+    },
+    {
+      "event_id": "EV-d4e44892226be468",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "ChatGPT is a general-purpose AI assistant used by consumers and businesses. The Walmart integration and agentic shopping indicate productivity/enterprise workflows and retail e-commerce. The tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly from ALLOWED_HIERARCHY_TUPLES."
     },
     {
       "event_id": "EV-0e84a2f49d765ce3",
@@ -3549,6 +3925,23 @@
       "rationale": "SigmanticAI 为半导体工程提供 AI 原生硬件开发助手，自动化 RTL 设计流程，聚焦半导体这一特定工业领域的专业数据和工作流，符合 industry_applications 下的 industrials 子类。"
     },
     {
+      "event_id": "EV-914ca1cbc6359ce5",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Company provides real-time voice AI infrastructure for enterprises, fitting enterprise applications and productivity workflows. No specific industry focus evident, so industry_ids left empty."
+    },
+    {
       "event_id": "EV-86ca5af11ee4d275",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "legal",
@@ -4337,23 +4730,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Zenskar 提供 AI 原生计费与收入自动化平台，面向财务团队优化订单到现金流程，属于跨行业的企业业务功能，不涉及物理 AI 或基础设施层，因此归入企业应用-生产力工作流。"
-    },
-    {
-      "event_id": "EV-914ca1cbc6359ce5",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "productivity_enterprise_workflows"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "business_user"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "Company provides real-time voice AI infrastructure for enterprises, fitting enterprise applications and productivity workflows. No specific industry focus evident, so industry_ids left empty."
     }
   ]
 }

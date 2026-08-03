@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "generatedAt": "2026-08-03T07:01:14.913Z",
     "latestDataDate": "2026-08-03",
     "currentDate": "2026-08-03",
-    "eventCount": 1796,
-    "quarantinedEventCount": 18
+    "eventCount": 1816,
+    "quarantinedEventCount": 15
   },
   "relationships": [
     {
@@ -4946,6 +4946,33 @@
       "sourceCount": 1
     },
     {
+      "relationship_id": "REL2-1bf216d440716d0b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-db36e7bd45191ce4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8992f4a61a19a74b",
+      "object_type": "entity",
+      "event_id": "EV-50853632f4b54972",
+      "claim_refs": [
+        "CL-bdc51ac046a759bd",
+        "CL-3918c79bf6fe9714",
+        "CL-8a0fd635b5b314bd"
+      ],
+      "source_refs": [
+        "SA-bbfba84596a3fcc1"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified",
+      "subjectName": "Meituan",
+      "objectName": "LongCat-2.0",
+      "predicateLabel": "发布",
+      "title": "Meituan 发布 LongCat-2.0",
+      "eventTitle": "美团发布万亿参数大模型 LongCat-2.0，五万卡国产算力训练并开源",
+      "eventDate": "2026-06-30",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-3a68b920abaf8848",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c47b618e17c75f06",
@@ -5075,33 +5102,6 @@
       "title": "Anthropic 发布 Claude Science",
       "eventTitle": "Anthropic 推出 Claude Science 科学家 AI 工作台",
       "eventDate": "2026-07-01",
-      "sourceCount": 1
-    },
-    {
-      "relationship_id": "REL2-a95d865ecb2fbc95",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-cd6362472aea60ef",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-8992f4a61a19a74b",
-      "object_type": "entity",
-      "event_id": "EV-50853632f4b54972",
-      "claim_refs": [
-        "CL-bdc51ac046a759bd",
-        "CL-3918c79bf6fe9714",
-        "CL-8a0fd635b5b314bd"
-      ],
-      "source_refs": [
-        "SA-bbfba84596a3fcc1"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified",
-      "subjectName": "美团",
-      "objectName": "LongCat-2.0",
-      "predicateLabel": "发布",
-      "title": "美团 发布 LongCat-2.0",
-      "eventTitle": "美团发布万亿参数大模型 LongCat-2.0，五万卡国产算力训练并开源",
-      "eventDate": "2026-06-30",
       "sourceCount": 1
     },
     {
@@ -6531,6 +6531,33 @@
       "predicateLabel": "发布",
       "title": "Anthropic 发布 Fable 5",
       "eventTitle": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\"",
+      "eventDate": "2026-06-19",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-1c06a5ff07ecb52b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c5456c9421743002",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0d049cd1e9f619f9",
+      "object_type": "entity",
+      "event_id": "EV-c834a9d33a86373c",
+      "claim_refs": [
+        "CL-2d9c0183892f925c",
+        "CL-8a246deb4a52a8fa",
+        "CL-3166c56a9815c0ee"
+      ],
+      "source_refs": [
+        "SA-bf9858d74ff31a54"
+      ],
+      "data_date": "2026-06-20",
+      "status": "verified",
+      "subjectName": "银河通用",
+      "objectName": "AstraBrain-WBC 0.5",
+      "predicateLabel": "发布",
+      "title": "银河通用 发布 AstraBrain-WBC 0.5",
+      "eventTitle": "全球首个人形机器人通用小脑 GPT 模型：银河通用发布 AstraBrain-WBC 0.5",
       "eventDate": "2026-06-19",
       "sourceCount": 1
     },

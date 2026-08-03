@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-03T07:01:14.913Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1816,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-42f34ac1fcb8d44f",
+    "name": "千寻智能30天",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-60d58e2a1f5733f8"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-embodied_ai"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-04-07",
+    "lastSeen": "2026-08-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-60d58e2a1f5733f8"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-60d58e2a1f5733f8",
+        "dataDate": "2026-08-03",
+        "date": "2026-04-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-1032f7a4df33f629"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-459fd22b1f8ae831",
+            "fundingInsightId": "FI-09d0d946c9b056dd"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-1032f7a4df33f629"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-056b2c4719c0c79d",
+            "fundingInsightId": "FI-09d0d946c9b056dd"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-1032f7a4df33f629"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-48aa860b3e0649fb",
+            "fundingInsightId": "FI-09d0d946c9b056dd"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-42f34ac1fcb8d44f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-1032f7a4df33f629"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a54ced2bf30b7119",
+            "fundingInsightId": "FI-09d0d946c9b056dd"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-1032f7a4df33f629"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-09f0031aeba69002",
+            "fundingInsightId": "FI-09d0d946c9b056dd"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-1032f7a4df33f629"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fe558671f8673c61",
+            "fundingInsightId": "FI-09d0d946c9b056dd"
+          }
+        ],
+        "entityIds": [
+          "EN-42f34ac1fcb8d44f",
+          "EN-1032f7a4df33f629",
+          "EN-5329543b43765e11"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-embodied_ai",
+      "name": "具身智能",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "embodied_ai",
+      "eventIds": [
+        "EV-fcf3c464260b6730",
+        "EV-ee38c30c00b2a754",
+        "EV-d3fcd1ea4d9baf47",
+        "EV-43b56d49df9a73a2",
+        "EV-1188b1585b835fe1",
+        "EV-60d58e2a1f5733f8",
+        "EV-a909450a2d1a1fe1",
+        "EV-d2409770301edc83",
+        "EV-876baa523eb93c4f",
+        "EV-cec68369662236fd",
+        "EV-5bfbab92b22b68f1",
+        "EV-cafe435ddd007821",
+        "EV-234ad54940674bf6",
+        "EV-b40ba79822469bc0",
+        "EV-acb2087779a8ea3c",
+        "EV-6415a58637893b34",
+        "EV-4faa2bcf2e42e60c",
+        "EV-eb12fb9dd08e5aad",
+        "EV-60110525440fac47",
+        "EV-c4f8ef356373ab24",
+        "EV-7f92b7e410ed08f1",
+        "EV-b580e33cabfea980",
+        "EV-4cb7e4c371fb252e",
+        "EV-2499dc922663af7e",
+        "EV-345c8a2cc00fe8ca",
+        "EV-82b39e10391d0f3c",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-d633676a4a7d89a3",
+        "EV-6a2f3e9a22edff64",
+        "EV-49751dfc7d2f6d6c",
+        "EV-197aac95e60671f7",
+        "EV-24a536bc53a87050",
+        "EV-e2d4132c671e3d41",
+        "EV-3f8ba5855b64dd1a",
+        "EV-08f736f61f2b46f3"
+      ],
+      "entityIds": [
+        "EN-7ef08ef63597d47c",
+        "EN-2b60b46911fc1640",
+        "EN-634537cdabd4e325",
+        "EN-bbdefa2950f49882",
+        "EN-4f34468a2f780cf5",
+        "EN-42f34ac1fcb8d44f",
+        "EN-d816a2902f879e1e",
+        "EN-4213e49804834ead",
+        "EN-2d939f5af4c3da33",
+        "EN-9a1a3ee1f50745c6",
+        "EN-8d4321d936320802",
+        "EN-85f0c155e340fb63",
+        "EN-240389f4b730bad4",
+        "EN-2b6e51bec93e86c1",
+        "EN-b47de584b4515427",
+        "EN-149ae7e9819a17a0",
+        "EN-02865db849986974",
+        "EN-0e6e48aba1669631",
+        "EN-754c490bd199c21a",
+        "EN-30081094f2a8c83d",
+        "EN-67f2d22514622d1b",
+        "EN-7f6333102da9e8bd",
+        "EN-89e3f0711b76932c",
+        "EN-5e1fcba4c9f1cf69"
+      ],
+      "fdeIds": [
+        "FDE-becc5964d9b5f86c",
+        "FDE-dadf0e9572889d3d",
+        "FDE-a85c538af1b093ed"
+      ],
+      "hardwareIds": [
+        "HW-ceb55d9bc637c1d3",
+        "HW-eb5bba1ad6c016b0",
+        "HW-155f566cfd988f5e",
+        "HW-dca442211b264bbe",
+        "HW-1450585d9cd5879f"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-03"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

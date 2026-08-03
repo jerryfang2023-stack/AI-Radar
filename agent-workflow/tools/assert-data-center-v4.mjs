@@ -7,6 +7,7 @@ import { fileURLToPath } from "url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { eventAiRelevanceEvidence, forbiddenKeys, publicEventSourceTitleIssue } from "./build-data-center-v4.mjs";
+import { buildEventDisplayTitle } from "./event-public-title.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
 
@@ -40,9 +41,7 @@ function normalize(value) {
 }
 
 function sourceBackedPublicTitle(raw = {}) {
-  const translatedTitle = normalize(raw.title_zh);
-  const originalTitle = normalize(raw.title_original);
-  return translatedTitle || (/[\u3400-\u9fff]/u.test(originalTitle) ? originalTitle : "");
+  return buildEventDisplayTitle({ rawDocument: raw });
 }
 
 function normalizeUrl(value) {

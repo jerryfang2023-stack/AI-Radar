@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "generatedAt": "2026-08-03T07:01:14.913Z",
     "latestDataDate": "2026-08-03",
     "currentDate": "2026-08-03",
-    "eventCount": 1796,
-    "quarantinedEventCount": 18
+    "eventCount": 1816,
+    "quarantinedEventCount": 15
   },
   "node": {
     "id": "TX-technology-computer_use",
@@ -1174,6 +1174,8 @@
         "EV-00514c4ffc2e3cd3",
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-56da7cceeebc8bcf",
+        "EV-cec68369662236fd",
         "EV-2d9fde7bc0cd7a22",
         "EV-c2b613b5a2fb1135",
         "EV-ef2cd6bd912a6ed8",
@@ -1227,10 +1229,10 @@
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
+        "TX-use_case-data_analysis",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-product_form-ai_device",
-        "TX-use_case-data_analysis",
         "TX-technology-open_weights",
         "TX-technology-video_generation"
       ],
@@ -1242,8 +1244,8 @@
         "EN-3c2a3673eabc9a46",
         "EN-d65d81c60c0c47c4"
       ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-08-01",
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-08-03",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -1425,20 +1427,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-developer",
-        "TX-product_form-end_user_application",
-        "TX-industry-manufacturing",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-financial_services",
+        "TX-industry-manufacturing",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-software_development",
+        "TX-product_form-enterprise_software_platform",
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
         "TX-use_case-security_operations",
         "TX-product_form-model",
         "TX-technology-code_generation",
-        "TX-ai_market_subcategory-hardware_computing",
         "TX-technology-computer_use",
-        "TX-use_case-software_development",
         "TX-industry-retail_ecommerce",
         "TX-industry-aerospace_defense",
         "TX-technology-embodied_ai",
@@ -1493,9 +1495,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-data_analysis",
         "TX-product_form-model",
-        "TX-technology-computer_use",
-        "TX-use_case-data_analysis"
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
         "EN-16fe95bd48dbf178"

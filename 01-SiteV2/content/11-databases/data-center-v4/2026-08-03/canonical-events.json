@@ -1,5 +1,40 @@
 [
   {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-08-02T10:32:56.125Z",
+    "disclosed_at": "2026-08-02T10:32:56.125Z",
+    "entities": [
+      "EN-969c2ea726c030a1",
+      "EN-834cc12fc35adde7",
+      "EN-f87e57673b408d79"
+    ],
+    "action": "raises",
+    "object": "$8 million for AI agent runtime security - RuntimeWire",
+    "metrics": [
+      "$8 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-68cb0a445b108a83"
+    ],
+    "source_refs": [
+      "SA-b35427ef3f34cb5b"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b35427ef3f34cb5b",
+        "disclosed_at": "2026-08-02T10:32:56.125Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-24823de8fb76ac31",
+    "display_title_zh": "Arrakis 为 AI 智能体运行时安全筹集 800 万美元"
+  },
+  {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "2026-08-01T00:00:00.000Z",
@@ -42,6 +77,39 @@
     "publication_status": "verified",
     "event_id": "EV-ab1b780e6e543b42",
     "display_title_zh": "GreenCore Solutions Corp. (GSC) 推出 -- 代理合作伙伴计划 (APP) -- 面向代理快消品客户的 AI 智能体"
+  },
+  {
+    "event_type": "partnership",
+    "event_status": "announced",
+    "event_time": "",
+    "disclosed_at": "2026-08-03T00:20:03.221Z",
+    "entities": [
+      "EN-d41ebd9f02722fc8"
+    ],
+    "action": "partnership",
+    "object": "Aalo Atomics",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-d44a234a47dcb6dd"
+    ],
+    "source_refs": [
+      "SA-5c166bbb90a4065f"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "event_time"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-5c166bbb90a4065f",
+        "disclosed_at": "2026-08-03T00:20:03.221Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-1e6f73c188a9e946",
+    "display_title_zh": "能源优先的AI工厂公司"
   },
   {
     "event_type": "funding",
@@ -302,38 +370,32 @@
     "display_title_zh": "Cognizant 与 Anthropic 扩大合作，将 Claude 嵌入 Cognizant 行业平台，助力客户弥合 AI 承诺与业务成果之间的差距 - 2026年7月27日"
   },
   {
-    "event_type": "funding",
-    "event_status": "completed",
-    "event_time": "",
-    "disclosed_at": "2026-08-03T00:20:42.321Z",
+    "event_type": "policy_regulation",
+    "event_status": "announced",
+    "event_time": "2026-08-02T04:07:23.000Z",
+    "disclosed_at": "2026-08-02T04:07:23.000Z",
     "entities": [
-      "EN-2ee5255402144aa8",
-      "EN-b81c8201acfc7639"
+      "EN-254adf18a3c03bab"
     ],
-    "action": "融资",
-    "object": "硬科技投向标|英特尔发布AI芯片及首款AI PC处理器 “华为天才”稚晖君再获6亿元融资",
+    "action": "policy_regulation",
+    "object": "《关于支持人工智能 OPC 创新发展的行动方案》",
     "metrics": [],
     "locations": [],
     "claim_refs": [
-      "CL-ca93c03bcd4cef45",
-      "CL-faa9843ad3567615",
-      "CL-db3cb72b8170e870",
-      "CL-cd92cd03eeefbcbc"
+      "CL-b63f8ec26977875a",
+      "CL-c363b88204aada1f",
+      "CL-234ad253db5100e8"
     ],
     "source_refs": [
-      "SA-2f1b03c671427c36"
+      "SA-264f00311be69136"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "object",
-      "event_time",
-      "display_title_zh"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
-        "source_ref": "SA-2f1b03c671427c36",
-        "disclosed_at": "2026-08-03T00:20:42.321Z",
-        "status": "completed"
+        "source_ref": "SA-264f00311be69136",
+        "disclosed_at": "2026-08-02T04:07:23.000Z",
+        "status": "announced"
       }
     ],
     "publication_status": "verified",
@@ -343,16 +405,17 @@
       "china_market_basis": [
         "regulatory_jurisdiction"
       ],
-      "source_registry_ids": [],
+      "source_registry_ids": [
+        "cn-ithome-rss"
+      ],
       "claim_refs": [
-        "CL-ca93c03bcd4cef45",
-        "CL-faa9843ad3567615",
-        "CL-db3cb72b8170e870",
-        "CL-cd92cd03eeefbcbc"
+        "CL-b63f8ec26977875a",
+        "CL-c363b88204aada1f",
+        "CL-234ad253db5100e8"
       ]
     },
-    "event_id": "EV-9e0d09ca5543e6f2",
-    "display_title_zh": ""
+    "event_id": "EV-01febaf81877df52",
+    "display_title_zh": "山东印发行动方案：力争3年内集聚万名人工智能OPC创新人才"
   },
   {
     "event_type": "acquisition",
@@ -514,7 +577,8 @@
     "disclosed_at": "2026-08-03T00:19:45.000Z",
     "entities": [
       "EN-e6f19fa7a6b52367",
-      "EN-b888b9bfd6b78d16"
+      "EN-b888b9bfd6b78d16",
+      "EN-aef5bb4e898f303c"
     ],
     "action": "融资",
     "object": "| 36氪首发",
@@ -529,9 +593,7 @@
       "SA-7c458c79f63a4117"
     ],
     "conflicts": [],
-    "missing_fields": [
-      "display_title_zh"
-    ],
+    "missing_fields": [],
     "update_history": [
       {
         "source_ref": "SA-7c458c79f63a4117",
@@ -541,7 +603,7 @@
     ],
     "publication_status": "verified",
     "event_id": "EV-dc35d54f273196f0",
-    "display_title_zh": ""
+    "display_title_zh": "让Agent在协作中自进化，清华00后博士获千万元融资"
   },
   {
     "event_type": "product_release",
@@ -736,6 +798,38 @@
     "display_title_zh": "启元机器人宣布与暴雪《魔兽世界》合作，推出限定\"鱼人定制款\"Q1"
   },
   {
+    "event_type": "deployment",
+    "event_status": "announced",
+    "event_time": "2026-08-02T06:42:44.000Z",
+    "disclosed_at": "2026-08-02T06:42:44.000Z",
+    "entities": [
+      "EN-6f7ac1823da81d2e"
+    ],
+    "action": "deployment",
+    "object": "长三角（嘉兴）Token 运营中心",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-aa8b5e12502decca",
+      "CL-4db5f5b5a60576f5"
+    ],
+    "source_refs": [
+      "SA-50dee51df53a47d9"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-50dee51df53a47d9",
+        "disclosed_at": "2026-08-02T06:42:44.000Z",
+        "status": "announced"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-3664fd6826c319bb",
+    "display_title_zh": "长三角（嘉兴）Token 运营中心启动，DeepSeek、千问等 100 余款大模型可选"
+  },
+  {
     "event_type": "product_release",
     "event_status": "announced",
     "event_time": "2026-08-02T06:12:51.000Z",
@@ -812,8 +906,7 @@
     "conflicts": [],
     "missing_fields": [
       "entities",
-      "event_time",
-      "display_title_zh"
+      "event_time"
     ],
     "update_history": [
       {
@@ -836,7 +929,7 @@
       ]
     },
     "event_id": "EV-b7f140a7aebe7971",
-    "display_title_zh": ""
+    "display_title_zh": "存算一体·后摩智能科技有限公司"
   },
   {
     "event_type": "funding",
@@ -1094,5 +1187,705 @@
     },
     "event_id": "EV-3badd98afb847643",
     "display_title_zh": "国家互联网信息办公室关于发布生成式人工智能服务已备案信息的公告"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-01-12T21:19:00.000+08:00",
+    "disclosed_at": "2026-01-12T21:19:00.000+08:00",
+    "entities": [
+      "EN-9a1a3ee1f50745c6",
+      "EN-b1c5e73e1471e806",
+      "EN-047364b9be67f665",
+      "EN-6e17ad315d52ee36",
+      "EN-db36e7bd45191ce4",
+      "EN-8dc72a4672894e0f"
+    ],
+    "action": "融资",
+    "object": "2026年具身智能竞争转向",
+    "metrics": [
+      "10亿",
+      "30亿"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-fed9aed82d31f547",
+      "CL-d482e1b741061df1",
+      "CL-e3699315f67b5802",
+      "CL-ccb68271b324b577"
+    ],
+    "source_refs": [
+      "SA-64b73dc6cf3cffb7"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-64b73dc6cf3cffb7",
+        "disclosed_at": "2026-01-12T21:19:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-fed9aed82d31f547",
+        "CL-d482e1b741061df1",
+        "CL-e3699315f67b5802",
+        "CL-ccb68271b324b577"
+      ]
+    },
+    "event_id": "EV-cec68369662236fd",
+    "display_title_zh": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-02-23T21:20:00.000+08:00",
+    "disclosed_at": "2026-02-23T21:20:00.000+08:00",
+    "entities": [
+      "EN-ce22f929f4a17467"
+    ],
+    "action": "完成10亿元B轮融资",
+    "object": "估值超过百亿元",
+    "metrics": [
+      "10亿"
+    ],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-8e39bc2baf7673a7",
+      "CL-c1637d4dd3ce8b37",
+      "CL-879aca68c0787300",
+      "CL-a11a3e3ef43020ca"
+    ],
+    "source_refs": [
+      "SA-bf52de71359c72dd"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-bf52de71359c72dd",
+        "disclosed_at": "2026-02-23T21:20:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-8e39bc2baf7673a7",
+        "CL-c1637d4dd3ce8b37",
+        "CL-879aca68c0787300",
+        "CL-a11a3e3ef43020ca"
+      ]
+    },
+    "event_id": "EV-af8e95dbe06ac083",
+    "display_title_zh": "智平方完成10亿元B轮融资 估值超过百亿元"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-03-02T00:00:00.000+08:00",
+    "disclosed_at": "2026-03-02T00:00:00.000+08:00",
+    "entities": [
+      "EN-4213e49804834ead",
+      "EN-c5456c9421743002",
+      "EN-4044ae887bf4d27e"
+    ],
+    "action": "融资",
+    "object": "诞生！银河通用再融25亿 国家大基金首投具身智能",
+    "metrics": [
+      "3亿",
+      "50亿",
+      "25亿"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-b585dc66dde5cb20",
+      "CL-8da08a2696772ee0",
+      "CL-6f0c412c6a740266",
+      "CL-97df5504b3d53660"
+    ],
+    "source_refs": [
+      "SA-de5cbc6fd2dfbe65"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-de5cbc6fd2dfbe65",
+        "disclosed_at": "2026-03-02T00:00:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-d2409770301edc83",
+    "display_title_zh": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-03-10T12:08:00.000+08:00",
+    "disclosed_at": "2026-03-10T12:08:00.000+08:00",
+    "entities": [
+      "EN-d816a2902f879e1e",
+      "EN-cb1041ddf6123c37"
+    ],
+    "action": "完成20亿融资",
+    "object": "，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "metrics": [
+      "20亿"
+    ],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-07c801f8d960b247",
+      "CL-1f8e2a3fd7eb450f",
+      "CL-c9d8d434c970b2cd",
+      "CL-2c17b75ff741d331"
+    ],
+    "source_refs": [
+      "SA-bee9309fa7819b3a"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-bee9309fa7819b3a",
+        "disclosed_at": "2026-03-10T12:08:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-07c801f8d960b247",
+        "CL-1f8e2a3fd7eb450f",
+        "CL-c9d8d434c970b2cd",
+        "CL-2c17b75ff741d331"
+      ]
+    },
+    "event_id": "EV-a909450a2d1a1fe1",
+    "display_title_zh": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-04-07T20:53:35.000+08:00",
+    "disclosed_at": "2026-04-07T20:53:35.000+08:00",
+    "entities": [
+      "EN-42f34ac1fcb8d44f",
+      "EN-1032f7a4df33f629",
+      "EN-5329543b43765e11"
+    ],
+    "action": "融资",
+    "object": "30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+    "metrics": [
+      "30亿",
+      "10亿"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-311443310bfb88c0",
+      "CL-1356ab6b0cf285e6",
+      "CL-d9149e7f67c6c714",
+      "CL-330a37a7edbed616"
+    ],
+    "source_refs": [
+      "SA-2700e1f4ef659568"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-2700e1f4ef659568",
+        "disclosed_at": "2026-04-07T20:53:35.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-311443310bfb88c0",
+        "CL-1356ab6b0cf285e6",
+        "CL-d9149e7f67c6c714",
+        "CL-330a37a7edbed616"
+      ]
+    },
+    "event_id": "EV-60d58e2a1f5733f8",
+    "display_title_zh": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-04-17T07:39:00.000+08:00",
+    "disclosed_at": "2026-04-17T07:39:00.000+08:00",
+    "entities": [
+      "EN-4f34468a2f780cf5",
+      "EN-39ba5f9dcab4e98a"
+    ],
+    "action": "融资",
+    "object": "再创纪录 _ 东方财富网",
+    "metrics": [
+      "4.5亿",
+      "30亿",
+      "15亿"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-4f0ed515351ba8ec",
+      "CL-80178beced6ca9ef",
+      "CL-53500eb46107fc5a",
+      "CL-a5220486f61d3472"
+    ],
+    "source_refs": [
+      "SA-356906245fae74c9"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-356906245fae74c9",
+        "disclosed_at": "2026-04-17T07:39:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-1188b1585b835fe1",
+    "display_title_zh": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-05-08T09:30:00.000+08:00",
+    "disclosed_at": "2026-05-08T09:30:00.000+08:00",
+    "entities": [
+      "EN-5fa106430bd221f8",
+      "EN-849c5db8e457e8c3",
+      "EN-cecdd8369134f75e"
+    ],
+    "action": "完成数亿元天使轮融资",
+    "object": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-1f5215edce349edc",
+      "CL-a8350c8043b211f1",
+      "CL-a2ec8ca9e40e5fea"
+    ],
+    "source_refs": [
+      "SA-36b990f47bb63e6b"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-36b990f47bb63e6b",
+        "disclosed_at": "2026-05-08T09:30:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-1f5215edce349edc",
+        "CL-a8350c8043b211f1",
+        "CL-a2ec8ca9e40e5fea"
+      ]
+    },
+    "event_id": "EV-44ec7c229995ca3c",
+    "display_title_zh": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-06-08T00:00:00.000+08:00",
+    "disclosed_at": "2026-06-08T00:00:00.000+08:00",
+    "entities": [
+      "EN-4e4b333252f207fd"
+    ],
+    "action": "完成新一轮战略轮融资",
+    "object": "景嘉微战略入股",
+    "metrics": [],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-85b1441f711de7e5",
+      "CL-14de04b67445ddc3",
+      "CL-9b1fd8e1fd2a9235"
+    ],
+    "source_refs": [
+      "SA-9d63754768cf8895"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-9d63754768cf8895",
+        "disclosed_at": "2026-06-08T00:00:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-85b1441f711de7e5",
+        "CL-14de04b67445ddc3",
+        "CL-9b1fd8e1fd2a9235"
+      ]
+    },
+    "event_id": "EV-e9d06e8a06aa7318",
+    "display_title_zh": "昆仑元AI完成新一轮战略轮融资 景嘉微战略入股"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-06-18T00:00:00.000+08:00",
+    "disclosed_at": "2026-06-18T00:00:00.000+08:00",
+    "entities": [
+      "EN-b2685d21b7d2a3a4",
+      "EN-5aacd10b5dbfa7b7",
+      "EN-047364b9be67f665"
+    ],
+    "action": "完成新一轮融资",
+    "object": "，锡创投加码人工智能“大脑”赛道",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-2f6fe4014a8b9612",
+      "CL-37f57d97a50c8e40",
+      "CL-05c5aa6d77ab3f93"
+    ],
+    "source_refs": [
+      "SA-2b02c25067fb131b"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-2b02c25067fb131b",
+        "disclosed_at": "2026-06-18T00:00:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-2f6fe4014a8b9612",
+        "CL-37f57d97a50c8e40",
+        "CL-05c5aa6d77ab3f93"
+      ]
+    },
+    "event_id": "EV-56da7cceeebc8bcf",
+    "display_title_zh": "穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-02T00:00:00.000+08:00",
+    "disclosed_at": "2026-07-02T00:00:00.000+08:00",
+    "entities": [
+      "EN-634537cdabd4e325"
+    ],
+    "action": "完成近5亿元Pre-A轮融资",
+    "object": "机器人订单逾3万台",
+    "metrics": [
+      "5亿",
+      "3万"
+    ],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-53a85bd51638ce4e",
+      "CL-4b67057baaf0762f",
+      "CL-5d0e22e3f602e7d4"
+    ],
+    "source_refs": [
+      "SA-f073af2e97f7d912"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-f073af2e97f7d912",
+        "disclosed_at": "2026-07-02T00:00:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-53a85bd51638ce4e",
+        "CL-4b67057baaf0762f",
+        "CL-5d0e22e3f602e7d4"
+      ]
+    },
+    "event_id": "EV-d3fcd1ea4d9baf47",
+    "display_title_zh": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-03T00:00:00.000+08:00",
+    "disclosed_at": "2026-07-03T00:00:00.000+08:00",
+    "entities": [
+      "EN-2b60b46911fc1640"
+    ],
+    "action": "完成亿元级融资",
+    "object": "具身智能企业加速场景化突破",
+    "metrics": [],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-1f04ab782700f5e2",
+      "CL-f064b7e4a3067f61",
+      "CL-84026dfc9ea29665",
+      "CL-18cd262af5b4ed1c"
+    ],
+    "source_refs": [
+      "SA-358bedbe365498da"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-358bedbe365498da",
+        "disclosed_at": "2026-07-03T00:00:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-1f04ab782700f5e2",
+        "CL-f064b7e4a3067f61",
+        "CL-84026dfc9ea29665",
+        "CL-18cd262af5b4ed1c"
+      ]
+    },
+    "event_id": "EV-ee38c30c00b2a754",
+    "display_title_zh": "如身机器人完成亿元级融资 具身智能企业加速场景化突破"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-13T17:05:05.000+08:00",
+    "disclosed_at": "2026-07-13T17:05:05.000+08:00",
+    "entities": [
+      "EN-e22521e7de65d819",
+      "EN-1623ad4636ba76e6",
+      "EN-ec9cdb934efe9bf3"
+    ],
+    "action": "完成亿元级Pre-A轮融资",
+    "object": "，加速AI潮玩全球化布局",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-3b3f879f1ff4722d",
+      "CL-b0402c265e2c17ba",
+      "CL-c71f990c4ad007ab",
+      "CL-6d470b856a1901ec"
+    ],
+    "source_refs": [
+      "SA-f85afa8805bbed75"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-f85afa8805bbed75",
+        "disclosed_at": "2026-07-13T17:05:05.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-3b3f879f1ff4722d",
+        "CL-b0402c265e2c17ba",
+        "CL-c71f990c4ad007ab",
+        "CL-6d470b856a1901ec"
+      ]
+    },
+    "event_id": "EV-b5dd10300e34f2d3",
+    "display_title_zh": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-05-09T15:52:00.000+08:00",
+    "disclosed_at": "2026-05-09T15:52:00.000+08:00",
+    "entities": [
+      "EN-7d0445227e7dde72",
+      "EN-c608c4787821de1b"
+    ],
+    "action": "完成数亿元B+轮融资",
+    "object": "小雨智造完成数亿元B+轮融资",
+    "metrics": [],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-b4d9323e05e20845",
+      "CL-3f905b8419af14c4",
+      "CL-2017b4d05648bb4e",
+      "CL-e9d317b9482f8f85"
+    ],
+    "source_refs": [
+      "SA-a6059bfb9d07169b"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-a6059bfb9d07169b",
+        "disclosed_at": "2026-05-09T15:52:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-b4d9323e05e20845",
+        "CL-3f905b8419af14c4",
+        "CL-2017b4d05648bb4e",
+        "CL-e9d317b9482f8f85"
+      ]
+    },
+    "event_id": "EV-be59d9048dd1b6a0",
+    "display_title_zh": "小雨智造完成数亿元B+轮融资"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-02-14T11:08:00.000+08:00",
+    "disclosed_at": "2026-02-14T11:08:00.000+08:00",
+    "entities": [
+      "EN-4731aa5b66658c7f",
+      "EN-2d939f5af4c3da33",
+      "EN-a89151ba4b5ac0f2"
+    ],
+    "action": "完成超2亿元天使+轮融资",
+    "object": "无界动力宣布完成超2亿元天使+轮融资",
+    "metrics": [
+      "2亿",
+      "8亿"
+    ],
+    "locations": [
+      "中国"
+    ],
+    "claim_refs": [
+      "CL-cdb93470c7ca548d",
+      "CL-6461244f101ee6a9",
+      "CL-7de880dc49ba2957",
+      "CL-458d683cb2b76848"
+    ],
+    "source_refs": [
+      "SA-3c2d629b5fef6b0f"
+    ],
+    "conflicts": [],
+    "missing_fields": [
+      "object"
+    ],
+    "update_history": [
+      {
+        "source_ref": "SA-3c2d629b5fef6b0f",
+        "disclosed_at": "2026-02-14T11:08:00.000+08:00",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "market_scope": {
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_basis": [
+        "actor_origin"
+      ],
+      "source_registry_ids": [],
+      "claim_refs": [
+        "CL-cdb93470c7ca548d",
+        "CL-6461244f101ee6a9",
+        "CL-7de880dc49ba2957",
+        "CL-458d683cb2b76848"
+      ]
+    },
+    "event_id": "EV-876baa523eb93c4f",
+    "display_title_zh": "无界动力宣布完成超2亿元天使+轮融资"
   }
 ]

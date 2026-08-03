@@ -1,5 +1,27 @@
 [
   {
+    "claim_id": "CL-68cb0a445b108a83",
+    "raw_id": "RAW-ca19c763d92f8fb9",
+    "claim_type": "funding",
+    "subject": "Arrakis Security",
+    "predicate": "funding",
+    "object": "$8 million seed round",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-919dd5f4bb91755e"
+    },
+    "source_span": {
+      "raw_id": "RAW-ca19c763d92f8fb9",
+      "start": 206,
+      "end": 310
+    },
+    "source_quote": "Tal Baron , Omer Efrat and Ron Shani disclosed an $8 million seed round for Arrakis Security on August 2",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-34eef70ad9f2e773",
     "raw_id": "RAW-4a059c0bf0577734",
     "claim_type": "product_release",
@@ -81,6 +103,28 @@
     "source_quote": "APP runs on the protocols SAP, Google, and Microsoft standardized on for agentic commerce — MCP and A2A — through four MCP servers: the Catalog MCP (the CPG Knowledge Graph, live at mcp.cpgknowledgegraph.ai), the Procurement MCP (the retail grocery gate, with a human command on every purchase order via GSC Navigator), the Telemetry MCP (per-client agent traffic and transactions), and the Partner MCP (each agency's own agent card and endpoint — the agency itself, discoverable in the agent economy under its own brand). Buying agents meet the program on its dedicated machine surface, gsc-agency.io — an AI Agent surface, not a website for humans.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d44a234a47dcb6dd",
+    "raw_id": "RAW-62ea9a777887ef60",
+    "claim_type": "partnership",
+    "subject": "Crusoe",
+    "predicate": "partnership",
+    "object": "Aalo Atomics",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9bddd0ecb2c922fd"
+    },
+    "source_span": {
+      "raw_id": "RAW-62ea9a777887ef60",
+      "start": 3817,
+      "end": 3923
+    },
+    "source_quote": "Crusoe and Aalo Atomics form strategic partnership with goal of deploying first nuclear-powered AI factory",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -672,87 +716,69 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-ca93c03bcd4cef45",
-    "raw_id": "RAW-f57395b410903341",
-    "claim_type": "funding",
-    "subject": "硬科技投向标|英特尔发布AI芯片及首款AI PC处理器 “华为天才”稚晖君再获6亿元",
-    "predicate": "funding",
-    "object": "《科创板日报》12月17日讯 本周（12月11日至12月16日），硬科技领域投融资重要消息包括：中央经济工作会议：加快推动人工智能发展；工信部：推动人工智能、人形机器人等前沿技术研发和应用推广；奇瑞：正在积极准备上市，其他信息不准确。",
+    "claim_id": "CL-b63f8ec26977875a",
+    "raw_id": "RAW-4020fccb9a2e4d36",
+    "claim_type": "policy_regulation",
+    "subject": "山东省工业和信息化厅等12部门",
+    "predicate": "policy_regulation",
+    "object": "《关于支持人工智能 OPC 创新发展的行动方案》",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-dbd935ec9b494b5d"
     },
     "source_span": {
-      "raw_id": "RAW-f57395b410903341",
-      "start": 0,
-      "end": 117
+      "raw_id": "RAW-4020fccb9a2e4d36",
+      "start": 15,
+      "end": 58
     },
-    "source_quote": "《科创板日报》12月17日讯 本周（12月11日至12月16日），硬科技领域投融资重要消息包括：中央经济工作会议：加快推动人工智能发展；工信部：推动人工智能、人形机器人等前沿技术研发和应用推广；奇瑞：正在积极准备上市，其他信息不准确。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
+    "source_quote": "山东省工信厅等 12 部门近日联合印发《关于支持人工智能 OPC 创新发展的行动方案》",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-faa9843ad3567615",
-    "raw_id": "RAW-f57395b410903341",
-    "claim_type": "funding",
-    "subject": "硬科技投向标|英特尔发布AI芯片及首款AI PC处理器 “华为天才”稚晖君再获6亿元",
-    "predicate": "funding",
-    "object": "国办：促进互联网、大数据、人工智能和内外贸相关产业深度融合",
+    "claim_id": "CL-c363b88204aada1f",
+    "raw_id": "RAW-4020fccb9a2e4d36",
+    "claim_type": "policy_regulation",
+    "subject": "《关于支持人工智能 OPC 创新发展的行动方案》",
+    "predicate": "policy_regulation",
+    "object": "力争3年内集聚万名优秀人工智能OPC创新人才",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-dbd935ec9b494b5d"
     },
     "source_span": {
-      "raw_id": "RAW-f57395b410903341",
-      "start": 123,
-      "end": 152
+      "raw_id": "RAW-4020fccb9a2e4d36",
+      "start": 126,
+      "end": 191
     },
-    "source_quote": "国办：促进互联网、大数据、人工智能和内外贸相关产业深度融合",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
+    "source_quote": "力争 3 年内，建成百个定位清晰、功能完善的特色载体，培育千家技术领先、成长性强的创业主体，集聚万名优秀人工智能 OPC 创新人才",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-db3cb72b8170e870",
-    "raw_id": "RAW-f57395b410903341",
-    "claim_type": "funding",
-    "subject": "硬科技投向标|英特尔发布AI芯片及首款AI PC处理器 “华为天才”稚晖君再获6亿元",
-    "predicate": "funding",
-    "object": "国务院办公厅印发《关于加快内外贸一体化发展的若干措施》，其中提出，在重点领域培育壮大一批内外贸融合发展产业集群。",
+    "claim_id": "CL-234ad253db5100e8",
+    "raw_id": "RAW-4020fccb9a2e4d36",
+    "claim_type": "policy_regulation",
+    "subject": "《关于支持人工智能 OPC 创新发展的行动方案》",
+    "predicate": "policy_regulation",
+    "object": "支持济南、青岛、烟台等市打造人工智能OPC特色园区",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-dbd935ec9b494b5d"
     },
     "source_span": {
-      "raw_id": "RAW-f57395b410903341",
-      "start": 153,
-      "end": 209
+      "raw_id": "RAW-4020fccb9a2e4d36",
+      "start": 192,
+      "end": 274
     },
-    "source_quote": "国务院办公厅印发《关于加快内外贸一体化发展的若干措施》，其中提出，在重点领域培育壮大一批内外贸融合发展产业集群。",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-cd92cd03eeefbcbc",
-    "raw_id": "RAW-f57395b410903341",
-    "claim_type": "funding",
-    "subject": "硬科技投向标|英特尔发布AI芯片及首款AI PC处理器 “华为天才”稚晖君再获6亿元",
-    "predicate": "funding",
-    "object": "英特尔发布AI芯片及首款AI PC处理器",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 4
-    },
-    "source_span": {
-      "raw_id": "RAW-f57395b410903341",
-      "start": 3002,
-      "end": 3022
-    },
-    "source_quote": "英特尔发布AI芯片及首款AI PC处理器",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
+    "source_quote": "支持济南、青岛、烟台等市结合产业禀赋，统筹规划存量资源与新增空间，依托数字经济产业园、广告产业园、网络视听产业园、双创孵化中心等，打造一批人工智能 OPC 特色园区",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1554,6 +1580,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-aa8b5e12502decca",
+    "raw_id": "RAW-166fe9ba8d1b636b",
+    "claim_type": "deployment",
+    "subject": "长三角（嘉兴）Token 运营中心",
+    "predicate": "deployment",
+    "object": "长三角（嘉兴）Token 运营中心",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3ae0baa75ae37b4e"
+    },
+    "source_span": {
+      "raw_id": "RAW-166fe9ba8d1b636b",
+      "start": 366,
+      "end": 394
+    },
+    "source_quote": "长三角（嘉兴）Token 运营中心现已在浙江嘉兴正式启动",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4db5f5b5a60576f5",
+    "raw_id": "RAW-166fe9ba8d1b636b",
+    "claim_type": "deployment",
+    "subject": "长三角（嘉兴）Token 运营中心门户网站",
+    "predicate": "deployment",
+    "object": "长三角（嘉兴）Token 运营中心门户网站",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3ae0baa75ae37b4e"
+    },
+    "source_span": {
+      "raw_id": "RAW-166fe9ba8d1b636b",
+      "start": 419,
+      "end": 447
+    },
+    "source_quote": "长三角（嘉兴）Token 运营中心门户网站在当日同步上线",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-8feaf315f97ba12b",
     "raw_id": "RAW-14164bee927e6005",
     "claim_type": "product_release",
@@ -2011,6 +2081,1098 @@
       "end": 260
     },
     "source_quote": "附件1： 生成式人工智能服务已备案信息（2024年4月）",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fed9aed82d31f547",
+    "raw_id": "RAW-6bbfd26bedd3e642",
+    "claim_type": "funding",
+    "subject": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元",
+    "predicate": "funding",
+    "object": "2026年具身智能竞争转向",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6bbfd26bedd3e642",
+      "start": 0,
+      "end": 51
+    },
+    "source_quote": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向 | 每日经济新闻",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d482e1b741061df1",
+    "raw_id": "RAW-6bbfd26bedd3e642",
+    "claim_type": "funding",
+    "subject": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元",
+    "predicate": "funding",
+    "object": "2026年具身智能竞争转向",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6bbfd26bedd3e642",
+      "start": 52,
+      "end": 94
+    },
+    "source_quote": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e3699315f67b5802",
+    "raw_id": "RAW-6bbfd26bedd3e642",
+    "claim_type": "funding",
+    "subject": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元",
+    "predicate": "funding",
+    "object": "2026年具身智能竞争转向",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6bbfd26bedd3e642",
+      "start": 138,
+      "end": 188
+    },
+    "source_quote": "1月12日，通用具身智能企业自变量机器人完成10亿元A++轮融资，由字节跳动领投，多家机构联合投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ccb68271b324b577",
+    "raw_id": "RAW-6bbfd26bedd3e642",
+    "claim_type": "funding",
+    "subject": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元",
+    "predicate": "funding",
+    "object": "2026年具身智能竞争转向",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-6bbfd26bedd3e642",
+      "start": 188,
+      "end": 228
+    },
+    "source_quote": "自变量机器人成立两年多融资总额达约30亿元，获阿里、美团、字节三家巨头战略投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8e39bc2baf7673a7",
+    "raw_id": "RAW-30da77b24dd81f48",
+    "claim_type": "funding",
+    "subject": "智平方",
+    "predicate": "funding",
+    "object": "估值超过百亿元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-30da77b24dd81f48",
+      "start": 0,
+      "end": 35
+    },
+    "source_quote": "智平方完成10亿元B轮融资 估值超过百亿元|B轮融资_新浪财经_新浪网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c1637d4dd3ce8b37",
+    "raw_id": "RAW-30da77b24dd81f48",
+    "claim_type": "funding",
+    "subject": "智平方",
+    "predicate": "funding",
+    "object": "估值超过百亿元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-30da77b24dd81f48",
+      "start": 190,
+      "end": 211
+    },
+    "source_quote": "智平方完成10亿元B轮融资 估值超过百亿元",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-879aca68c0787300",
+    "raw_id": "RAW-30da77b24dd81f48",
+    "claim_type": "funding",
+    "subject": "智平方",
+    "predicate": "funding",
+    "object": "估值超过百亿元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-30da77b24dd81f48",
+      "start": 212,
+      "end": 233
+    },
+    "source_quote": "智平方完成10亿元B轮融资 估值超过百亿元",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a11a3e3ef43020ca",
+    "raw_id": "RAW-30da77b24dd81f48",
+    "claim_type": "funding",
+    "subject": "智平方",
+    "predicate": "funding",
+    "object": "估值超过百亿元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-30da77b24dd81f48",
+      "start": 298,
+      "end": 372
+    },
+    "source_quote": "上证报中国证券网讯（记者 孙小程）2月23日，智平方（AI² Robotics）宣布完成B轮融资，融资规模超10亿元人民币，公司估值正式超过百亿元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b585dc66dde5cb20",
+    "raw_id": "RAW-8dc769a656dc33fb",
+    "claim_type": "funding",
+    "subject": "开年最大",
+    "predicate": "funding",
+    "object": "诞生！银河通用再融25亿 国家大基金首投具身智能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8dc769a656dc33fb",
+      "start": 163,
+      "end": 186
+    },
+    "source_quote": "①在2025年底，银河通用完成超3亿美元融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8da08a2696772ee0",
+    "raw_id": "RAW-8dc769a656dc33fb",
+    "claim_type": "funding",
+    "subject": "开年最大",
+    "predicate": "funding",
+    "object": "诞生！银河通用再融25亿 国家大基金首投具身智能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8dc769a656dc33fb",
+      "start": 186,
+      "end": 209
+    },
+    "source_quote": "加上本次融资银河通用累计已斩获近50亿元融资；",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6f0c412c6a740266",
+    "raw_id": "RAW-8dc769a656dc33fb",
+    "claim_type": "funding",
+    "subject": "开年最大",
+    "predicate": "funding",
+    "object": "诞生！银河通用再融25亿 国家大基金首投具身智能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8dc769a656dc33fb",
+      "start": 286,
+      "end": 325
+    },
+    "source_quote": "《科创板日报》3月2日（记者 李明明） 2026开年具身智能赛道最大融资诞生。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-97df5504b3d53660",
+    "raw_id": "RAW-8dc769a656dc33fb",
+    "claim_type": "funding",
+    "subject": "开年最大",
+    "predicate": "funding",
+    "object": "诞生！银河通用再融25亿 国家大基金首投具身智能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8dc769a656dc33fb",
+      "start": 326,
+      "end": 388
+    },
+    "source_quote": "《科创板日报》记者获悉，具身智能赛道迎来大额融资——银河通用正式宣布完成新一轮25亿元融资，创下近年来行业单笔融资规模之最。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-07c801f8d960b247",
+    "raw_id": "RAW-a6da5d00cf824904",
+    "claim_type": "funding",
+    "subject": "灵初智能已",
+    "predicate": "funding",
+    "object": "，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a6da5d00cf824904",
+      "start": 0,
+      "end": 52
+    },
+    "source_quote": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易__财经头条",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1f8e2a3fd7eb450f",
+    "raw_id": "RAW-a6da5d00cf824904",
+    "claim_type": "funding",
+    "subject": "灵初智能已",
+    "predicate": "funding",
+    "object": "，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a6da5d00cf824904",
+      "start": 150,
+      "end": 196
+    },
+    "source_quote": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c9d8d434c970b2cd",
+    "raw_id": "RAW-a6da5d00cf824904",
+    "claim_type": "funding",
+    "subject": "灵初智能已",
+    "predicate": "funding",
+    "object": "，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a6da5d00cf824904",
+      "start": 197,
+      "end": 243
+    },
+    "source_quote": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2c17b75ff741d331",
+    "raw_id": "RAW-a6da5d00cf824904",
+    "claim_type": "funding",
+    "subject": "灵初智能已",
+    "predicate": "funding",
+    "object": "，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a6da5d00cf824904",
+      "start": 309,
+      "end": 339
+    },
+    "source_quote": "灵初智能已完成 天使轮及Pre-A轮 共计 20亿元 融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-311443310bfb88c0",
+    "raw_id": "RAW-835a3793d8325718",
+    "claim_type": "funding",
+    "subject": "千寻智能30天",
+    "predicate": "funding",
+    "object": "30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-835a3793d8325718",
+      "start": 0,
+      "end": 26
+    },
+    "source_quote": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1356ab6b0cf285e6",
+    "raw_id": "RAW-835a3793d8325718",
+    "claim_type": "funding",
+    "subject": "千寻智能30天",
+    "predicate": "funding",
+    "object": "30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-835a3793d8325718",
+      "start": 157,
+      "end": 183
+    },
+    "source_quote": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d9149e7f67c6c714",
+    "raw_id": "RAW-835a3793d8325718",
+    "claim_type": "funding",
+    "subject": "千寻智能30天",
+    "predicate": "funding",
+    "object": "30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-835a3793d8325718",
+      "start": 229,
+      "end": 262
+    },
+    "source_quote": "4月7日千寻智能宣布完成10亿元融资，由顺为资本、云锋基金等领投。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-330a37a7edbed616",
+    "raw_id": "RAW-835a3793d8325718",
+    "claim_type": "funding",
+    "subject": "千寻智能30天",
+    "predicate": "funding",
+    "object": "30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-835a3793d8325718",
+      "start": 317,
+      "end": 380
+    },
+    "source_quote": "当前具身智能受资本追捧，赛道融资纪录不断刷新，企业上市进程提速，大厂纷纷下场押注，短期将助力千寻智能发展，长期将推动行业洗牌。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4f0ed515351ba8ec",
+    "raw_id": "RAW-0b85460871c185cb",
+    "claim_type": "funding",
+    "subject": "高瓴红杉联手！具身智能赛道",
+    "predicate": "funding",
+    "object": "再创纪录 _ 东方财富网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0b85460871c185cb",
+      "start": 7,
+      "end": 27
+    },
+    "source_quote": "具身智能赛道融资再创纪录 _ 东方财富网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-80178beced6ca9ef",
+    "raw_id": "RAW-0b85460871c185cb",
+    "claim_type": "funding",
+    "subject": "高瓴红杉联手！具身智能赛道",
+    "predicate": "funding",
+    "object": "再创纪录 _ 东方财富网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0b85460871c185cb",
+      "start": 379,
+      "end": 416
+    },
+    "source_quote": "4月16日，它石智航宣布完成超4.5亿美金（约30亿元）Pre-A轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-53500eb46107fc5a",
+    "raw_id": "RAW-0b85460871c185cb",
+    "claim_type": "funding",
+    "subject": "高瓴红杉联手！具身智能赛道",
+    "predicate": "funding",
+    "object": "再创纪录 _ 东方财富网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0b85460871c185cb",
+      "start": 416,
+      "end": 451
+    },
+    "source_quote": "一笔融资超30亿元，这创下国内具身智能产业有史以来最高的单轮融资纪录。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a5220486f61d3472",
+    "raw_id": "RAW-0b85460871c185cb",
+    "claim_type": "funding",
+    "subject": "高瓴红杉联手！具身智能赛道",
+    "predicate": "funding",
+    "object": "再创纪录 _ 东方财富网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0b85460871c185cb",
+      "start": 711,
+      "end": 734
+    },
+    "source_quote": "同日，极佳视界宣布已完成近15亿元B1轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1f5215edce349edc",
+    "raw_id": "RAW-3d6ec7be310fc987",
+    "claim_type": "funding",
+    "subject": "打造高性能国产AGI算力底座，容芯致远",
+    "predicate": "funding",
+    "object": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3d6ec7be310fc987",
+      "start": 12,
+      "end": 41
+    },
+    "source_quote": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a8350c8043b211f1",
+    "raw_id": "RAW-3d6ec7be310fc987",
+    "claim_type": "funding",
+    "subject": "打造高性能国产AGI算力底座，容芯致远",
+    "predicate": "funding",
+    "object": "· 容芯致远近日完成数亿元天使轮融资，由北京绿色能源和低碳产业基金与赛富投资基金领投。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3d6ec7be310fc987",
+      "start": 171,
+      "end": 214
+    },
+    "source_quote": "· 容芯致远近日完成数亿元天使轮融资，由北京绿色能源和低碳产业基金与赛富投资基金领投。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a2ec8ca9e40e5fea",
+    "raw_id": "RAW-3d6ec7be310fc987",
+    "claim_type": "funding",
+    "subject": "打造高性能国产AGI算力底座，容芯致远",
+    "predicate": "funding",
+    "object": "投资界（ID：pedaily2012）5月8日消息，近日，北京容芯致远科技有限公司（以下简称“容芯致远”） 宣布 完成数亿元天使轮融资。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3d6ec7be310fc987",
+      "start": 389,
+      "end": 457
+    },
+    "source_quote": "投资界（ID：pedaily2012）5月8日消息，近日，北京容芯致远科技有限公司（以下简称“容芯致远”） 宣布 完成数亿元天使轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-85b1441f711de7e5",
+    "raw_id": "RAW-73e4fd9fc762f2d4",
+    "claim_type": "funding",
+    "subject": "昆仑元AI",
+    "predicate": "funding",
+    "object": "景嘉微战略入股",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-73e4fd9fc762f2d4",
+      "start": 0,
+      "end": 33
+    },
+    "source_quote": "昆仑元AI完成新一轮战略轮融资 景嘉微战略入股 - 中国金融信息网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-14de04b67445ddc3",
+    "raw_id": "RAW-73e4fd9fc762f2d4",
+    "claim_type": "funding",
+    "subject": "昆仑元AI",
+    "predicate": "funding",
+    "object": "景嘉微战略入股",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-73e4fd9fc762f2d4",
+      "start": 366,
+      "end": 389
+    },
+    "source_quote": "昆仑元AI完成新一轮战略轮融资 景嘉微战略入股",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9b1fd8e1fd2a9235",
+    "raw_id": "RAW-73e4fd9fc762f2d4",
+    "claim_type": "funding",
+    "subject": "昆仑元AI",
+    "predicate": "funding",
+    "object": "景嘉微战略入股",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-73e4fd9fc762f2d4",
+      "start": 507,
+      "end": 580
+    },
+    "source_quote": "新华财经北京6月8日电 湖南昆仑元人工智能应用软件有限公司（KunlunMeta，以下简称“昆仑元AI”）于6月7日正式宣布完成新一轮战略轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2f6fe4014a8b9612",
+    "raw_id": "RAW-14135bb9911fccff",
+    "claim_type": "funding",
+    "subject": "锡创动态 | 穹彻智能",
+    "predicate": "funding",
+    "object": "，锡创投加码人工智能“大脑”赛道",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-14135bb9911fccff",
+      "start": 0,
+      "end": 52
+    },
+    "source_quote": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道-锡创投-无锡市创新投资集团有限公司",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-37f57d97a50c8e40",
+    "raw_id": "RAW-14135bb9911fccff",
+    "claim_type": "funding",
+    "subject": "锡创动态 | 穹彻智能",
+    "predicate": "funding",
+    "object": "，锡创投加码人工智能“大脑”赛道",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-14135bb9911fccff",
+      "start": 323,
+      "end": 357
+    },
+    "source_quote": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-05c5aa6d77ab3f93",
+    "raw_id": "RAW-14135bb9911fccff",
+    "claim_type": "funding",
+    "subject": "锡创动态 | 穹彻智能",
+    "predicate": "funding",
+    "object": "，锡创投加码人工智能“大脑”赛道",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-14135bb9911fccff",
+      "start": 653,
+      "end": 701
+    },
+    "source_quote": "截至目前，穹彻智能已累计完成7轮融资，历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-53a85bd51638ce4e",
+    "raw_id": "RAW-181ee2a0368674ad",
+    "claim_type": "funding",
+    "subject": "乐享科技",
+    "predicate": "funding",
+    "object": "机器人订单逾3万台",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-181ee2a0368674ad",
+      "start": 0,
+      "end": 38
+    },
+    "source_quote": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台 - 中国金融信息网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4b67057baaf0762f",
+    "raw_id": "RAW-181ee2a0368674ad",
+    "claim_type": "funding",
+    "subject": "乐享科技",
+    "predicate": "funding",
+    "object": "机器人订单逾3万台",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-181ee2a0368674ad",
+      "start": 371,
+      "end": 399
+    },
+    "source_quote": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5d0e22e3f602e7d4",
+    "raw_id": "RAW-181ee2a0368674ad",
+    "claim_type": "funding",
+    "subject": "乐享科技",
+    "predicate": "funding",
+    "object": "机器人订单逾3万台",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-181ee2a0368674ad",
+      "start": 493,
+      "end": 582
+    },
+    "source_quote": "新华财经上海7月2日电（记者高少华）家庭具身智能厂商苏州乐享智能科技有限公司（下称“乐享科技”）2日宣布完成近5亿元Pre-A轮融资，并发布家庭具身智能品牌“元点Zeroth”。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1f04ab782700f5e2",
+    "raw_id": "RAW-6428bdce98708cbc",
+    "claim_type": "funding",
+    "subject": "如身机器人",
+    "predicate": "funding",
+    "object": "具身智能企业加速场景化突破",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6428bdce98708cbc",
+      "start": 0,
+      "end": 36
+    },
+    "source_quote": "如身机器人完成亿元级融资 具身智能企业加速场景化突破 - 中国金融信息网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f064b7e4a3067f61",
+    "raw_id": "RAW-6428bdce98708cbc",
+    "claim_type": "funding",
+    "subject": "如身机器人",
+    "predicate": "funding",
+    "object": "具身智能企业加速场景化突破",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6428bdce98708cbc",
+      "start": 369,
+      "end": 395
+    },
+    "source_quote": "如身机器人完成亿元级融资 具身智能企业加速场景化突破",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-84026dfc9ea29665",
+    "raw_id": "RAW-6428bdce98708cbc",
+    "claim_type": "funding",
+    "subject": "如身机器人",
+    "predicate": "funding",
+    "object": "具身智能企业加速场景化突破",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6428bdce98708cbc",
+      "start": 420,
+      "end": 488
+    },
+    "source_quote": "7月3日，上海如身机器人科技有限公司宣布，已于近期完成亿元级Pre-A轮融资，资金将主要用于加速具身智能在养老机构与居家场景的应用部署。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-18cd262af5b4ed1c",
+    "raw_id": "RAW-6428bdce98708cbc",
+    "claim_type": "funding",
+    "subject": "如身机器人",
+    "predicate": "funding",
+    "object": "具身智能企业加速场景化突破",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-6428bdce98708cbc",
+      "start": 540,
+      "end": 581
+    },
+    "source_quote": "7月3日，上海如身 机器人 科技有限公司宣布，已于近期完成亿元级Pre-A轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3b3f879f1ff4722d",
+    "raw_id": "RAW-73b9b9814afc7e31",
+    "claim_type": "funding",
+    "subject": "珞博智能",
+    "predicate": "funding",
+    "object": "，加速AI潮玩全球化布局",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-73b9b9814afc7e31",
+      "start": 0,
+      "end": 35
+    },
+    "source_quote": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局 | 每经网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0402c265e2c17ba",
+    "raw_id": "RAW-73b9b9814afc7e31",
+    "claim_type": "funding",
+    "subject": "珞博智能",
+    "predicate": "funding",
+    "object": "，加速AI潮玩全球化布局",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-73b9b9814afc7e31",
+      "start": 139,
+      "end": 168
+    },
+    "source_quote": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c71f990c4ad007ab",
+    "raw_id": "RAW-73b9b9814afc7e31",
+    "claim_type": "funding",
+    "subject": "珞博智能",
+    "predicate": "funding",
+    "object": "，加速AI潮玩全球化布局",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-73b9b9814afc7e31",
+      "start": 196,
+      "end": 235
+    },
+    "source_quote": "AI潮玩品牌珞博智能2026年初完成亿元级Pre-A轮融资，由华映资本等领投。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d470b856a1901ec",
+    "raw_id": "RAW-73b9b9814afc7e31",
+    "claim_type": "funding",
+    "subject": "珞博智能",
+    "predicate": "funding",
+    "object": "，加速AI潮玩全球化布局",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-73b9b9814afc7e31",
+      "start": 318,
+      "end": 367
+    },
+    "source_quote": "近日，AI潮玩品牌珞博智能（Robopoet）正式宣布已于2026年初完成亿元级Pre-A轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b4d9323e05e20845",
+    "raw_id": "RAW-662df1bd13934135",
+    "claim_type": "funding",
+    "subject": "小雨智造",
+    "predicate": "funding",
+    "object": "小雨智造完成数亿元B+轮融资|融资_新浪财经_新浪网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-662df1bd13934135",
+      "start": 0,
+      "end": 26
+    },
+    "source_quote": "小雨智造完成数亿元B+轮融资|融资_新浪财经_新浪网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3f905b8419af14c4",
+    "raw_id": "RAW-662df1bd13934135",
+    "claim_type": "funding",
+    "subject": "小雨智造",
+    "predicate": "funding",
+    "object": "上证报中国证券网讯（记者 刘暄）北京小雨智造科技有限公司（下称“小雨智造”）5月9日宣布完成数亿元B+轮融资。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-662df1bd13934135",
+      "start": 293,
+      "end": 348
+    },
+    "source_quote": "上证报中国证券网讯（记者 刘暄）北京小雨智造科技有限公司（下称“小雨智造”）5月9日宣布完成数亿元B+轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2017b4d05648bb4e",
+    "raw_id": "RAW-662df1bd13934135",
+    "claim_type": "funding",
+    "subject": "小雨智造",
+    "predicate": "funding",
+    "object": "本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资，老股东华业天成、贵州科创天使基金共同跟投，滴滴、小米联合创始人黎万强持续追加投资，庚辛资本作为独家财务顾问并进行投资。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-662df1bd13934135",
+      "start": 348,
+      "end": 438
+    },
+    "source_quote": "本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资，老股东华业天成、贵州科创天使基金共同跟投，滴滴、小米联合创始人黎万强持续追加投资，庚辛资本作为独家财务顾问并进行投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e9d317b9482f8f85",
+    "raw_id": "RAW-662df1bd13934135",
+    "claim_type": "funding",
+    "subject": "小雨智造",
+    "predicate": "funding",
+    "object": "据了解，继B轮华业天成领投后，小雨智造再度获得产业资本密集加码，投资方阵营已横跨消费电子、汽车、船舶、建筑四大产业门类，工业具身智能的产业生态版图进一步成型。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-662df1bd13934135",
+      "start": 439,
+      "end": 518
+    },
+    "source_quote": "据了解，继B轮华业天成领投后，小雨智造再度获得产业资本密集加码，投资方阵营已横跨消费电子、汽车、船舶、建筑四大产业门类，工业具身智能的产业生态版图进一步成型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cdb93470c7ca548d",
+    "raw_id": "RAW-fa4ab187acfbb56d",
+    "claim_type": "funding",
+    "subject": "无界动力宣布",
+    "predicate": "funding",
+    "object": "2月14日，通用具身智能机器人公司无界动力宣布完成超2亿元天使+轮融资，老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-fa4ab187acfbb56d",
+      "start": 55,
+      "end": 163
+    },
+    "source_quote": "2月14日，通用具身智能机器人公司无界动力宣布完成超2亿元天使+轮融资，老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6461244f101ee6a9",
+    "raw_id": "RAW-fa4ab187acfbb56d",
+    "claim_type": "funding",
+    "subject": "无界动力宣布",
+    "predicate": "funding",
+    "object": "与此同时，第三轮融资已接近完成，累计融资额将达8亿元。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-fa4ab187acfbb56d",
+      "start": 163,
+      "end": 190
+    },
+    "source_quote": "与此同时，第三轮融资已接近完成，累计融资额将达8亿元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7de880dc49ba2957",
+    "raw_id": "RAW-fa4ab187acfbb56d",
+    "claim_type": "funding",
+    "subject": "无界动力宣布",
+    "predicate": "funding",
+    "object": "无界动力表示，融资所获资金将用于加速机器人通用大脑和硬件本体的研发，推动产品在海内外客户场景中的规模化部署。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-fa4ab187acfbb56d",
+      "start": 191,
+      "end": 245
+    },
+    "source_quote": "无界动力表示，融资所获资金将用于加速机器人通用大脑和硬件本体的研发，推动产品在海内外客户场景中的规模化部署。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-458d683cb2b76848",
+    "raw_id": "RAW-fa4ab187acfbb56d",
+    "claim_type": "funding",
+    "subject": "无界动力宣布",
+    "predicate": "funding",
+    "object": "目前，无界动力自研的首代机器人平台已进入客户场景实际应用，并与多家国内外头部企业达成战略级合作，同时已顺利完成第一阶段交付验证，同步启动在海外市场的部署落地。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-fa4ab187acfbb56d",
+      "start": 245,
+      "end": 324
+    },
+    "source_quote": "目前，无界动力自研的首代机器人平台已进入客户场景实际应用，并与多家国内外头部企业达成战略级合作，同时已顺利完成第一阶段交付验证，同步启动在海外市场的部署落地。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

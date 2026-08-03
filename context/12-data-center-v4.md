@@ -145,6 +145,8 @@ npm run manage:targeted-backfill -- --action=next
 
 Search queries, result snippets, candidates, and no-findings runs cannot create facts. A candidate must return through SourceArtifact -> RawDocument -> exact-span Claim and the responsible Event/FDE build and gate. A missing event type in an entity timeline is not proof that an event occurred.
 
+`capture-targeted-backfill-sources.mjs` may append accepted captures to the existing same-date `SOURCE-INTAKE-V1.1` bundle with `--merge-intake=true`. The merged record must retain canonical extraction diagnostics, applicable China-market scope fields, and the private evidence locator; complete source bodies must be archived to the private evidence repository and removed from the public working tree before the V4 build.
+
 The daily Event build has one bounded historical-admission exception: a verified company financing source may enter the canonical chain when its publication date is within the preceding three calendar months, even when it is outside the seven-day daily source window. Financing older than that remains in QA unless the operator explicitly passes `--allow-historical-funding=true` for a targeted backfill. Funding Insight generation then skips events already covered by any persisted card's event ID or canonical company-plus-normalized-round key before invoking search or DeepSeek.
 
 The entity-history manifest reports accepted data-batch counts by month. Sparse months remain visible and are not converted into synthetic daily tasks.
