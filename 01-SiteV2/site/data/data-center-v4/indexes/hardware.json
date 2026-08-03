@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "generatedAt": "2026-08-03T07:01:14.913Z",
     "latestDataDate": "2026-08-03",
     "currentDate": "2026-08-03",
-    "eventCount": 1796,
-    "quarantinedEventCount": 18
+    "eventCount": 1816,
+    "quarantinedEventCount": 15
   },
   "hardware": [
     {
@@ -2144,6 +2144,270 @@
       ]
     },
     {
+      "id": "HWC-f9f990a3d8deb26a",
+      "snapshotKey": "f9f990a3d8deb26a",
+      "snapshotId": "HWS-360420c6352a51a7",
+      "eventId": "EV-dc35d54f273196f0",
+      "eventIds": [
+        "EV-dc35d54f273196f0"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "让Agent在协作中自进化",
+      "subject": "让Agent在协作中自进化",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-9868ee26037f6c1f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-9868ee26037f6c1f",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-03T00:19:45.000Z",
+          "subject_entity_id": "EN-e6f19fa7a6b52367",
+          "subject_name": "让Agent在协作中自进化",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "奇点逃逸创始人兼CEO薛传奕，本科、博士阶段均在清华大学就读，研究方向覆盖强化学习与多智能体，曾以第一作者身份在NeurIPS、CJA等学术会议和期刊发表论文；在商汤、鉴智机器人实习期间，参与自动驾驶算法研发与实车部署。",
+          "event_refs": [
+            "EV-dc35d54f273196f0"
+          ],
+          "claim_ref": "CL-52e205275ec01007",
+          "source_refs": [
+            "SA-7c458c79f63a4117"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-e6f19fa7a6b52367"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://36kr.com/p/3919025939246727?f=rss",
+      "entityIds": [
+        "EN-e6f19fa7a6b52367",
+        "EN-b888b9bfd6b78d16",
+        "EN-aef5bb4e898f303c"
+      ]
+    },
+    {
+      "id": "HWC-f033e0044d1f69f2",
+      "snapshotKey": "f033e0044d1f69f2",
+      "snapshotId": "HWS-a30d9d2914fd7256",
+      "eventId": "EV-ee38c30c00b2a754",
+      "eventIds": [
+        "EV-ee38c30c00b2a754"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "如身机器人",
+      "subject": "如身机器人",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ff453289d55d6af6"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-ff453289d55d6af6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-07-03T00:00:00.000+08:00",
+          "subject_entity_id": "EN-2b60b46911fc1640",
+          "subject_name": "如身机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "7月3日，上海如身机器人科技有限公司宣布，已于近期完成亿元级Pre-A轮融资，资金将主要用于加速具身智能在养老机构与居家场景的应用部署。",
+          "event_refs": [
+            "EV-ee38c30c00b2a754"
+          ],
+          "claim_ref": "CL-84026dfc9ea29665",
+          "source_refs": [
+            "SA-358bedbe365498da"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-2b60b46911fc1640"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-2b60b46911fc1640"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-2b60b46911fc1640"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.cnfin.com/gs-lb/detail/20260703/4435436_1.html",
+      "entityIds": [
+        "EN-2b60b46911fc1640"
+      ]
+    },
+    {
+      "id": "HWC-95549ab5a3755efb",
+      "snapshotKey": "95549ab5a3755efb",
+      "snapshotId": "HWS-431ab7deea5223d0",
+      "eventId": "EV-876baa523eb93c4f",
+      "eventIds": [
+        "EV-876baa523eb93c4f"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "无界动力",
+      "subject": "无界动力",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-dea23385aacbaa74"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-48f662091d3c3521",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-02-14T11:08:00.000+08:00",
+          "subject_entity_id": "EN-4731aa5b66658c7f",
+          "subject_name": "无界动力",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "无界动力表示，融资所获资金将用于加速机器人通用大脑和硬件本体的研发，推动产品在海内外客户场景中的规模化部署。",
+          "event_refs": [
+            "EV-876baa523eb93c4f"
+          ],
+          "claim_ref": "CL-7de880dc49ba2957",
+          "source_refs": [
+            "SA-3c2d629b5fef6b0f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-dea23385aacbaa74",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-02-14T11:08:00.000+08:00",
+          "subject_entity_id": "EN-4731aa5b66658c7f",
+          "subject_name": "无界动力",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "目前，无界动力自研的首代机器人平台已进入客户场景实际应用，并与多家国内外头部企业达成战略级合作，同时已顺利完成第一阶段交付验证，同步启动在海外市场的部署落地。",
+          "event_refs": [
+            "EV-876baa523eb93c4f"
+          ],
+          "claim_ref": "CL-458d683cb2b76848",
+          "source_refs": [
+            "SA-3c2d629b5fef6b0f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-2d939f5af4c3da33"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+      "entityIds": [
+        "EN-4731aa5b66658c7f",
+        "EN-2d939f5af4c3da33",
+        "EN-a89151ba4b5ac0f2"
+      ]
+    },
+    {
       "id": "HWC-f9ce7e8019f87b4d",
       "snapshotKey": "f9ce7e8019f87b4d",
       "snapshotId": "HWS-382d281710158461",
@@ -2307,6 +2571,64 @@
       "entityIds": [
         "EN-adb4b0aa1de289f9"
       ]
+    },
+    {
+      "id": "HWC-ac2b7dc465bffaf8",
+      "snapshotKey": "ac2b7dc465bffaf8",
+      "snapshotId": "HWS-176181425d3d8130",
+      "eventId": "EV-b7f140a7aebe7971",
+      "eventIds": [
+        "EV-b7f140a7aebe7971"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "undisclosed_subject",
+      "subject": "undisclosed_subject",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d568f783075071a9"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-d568f783075071a9",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T00:20:51.576Z",
+          "subject_entity_id": "",
+          "subject_name": "undisclosed_subject",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "07月 端边大模型芯片M50及系列硬件正式发布",
+          "event_refs": [
+            "EV-b7f140a7aebe7971"
+          ],
+          "claim_ref": "CL-ea95b17348413fa4",
+          "source_refs": [
+            "SA-594380e694b9d0e7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://houmoai.com/AboutUs.html",
+      "entityIds": []
     },
     {
       "id": "HWC-157ac314541955fe",
@@ -4866,21 +5188,22 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 20,
-      "original_sources": 16,
-      "valid_claims": 17,
-      "observations": 10,
-      "canonical_events": 5,
+      "raw_documents": 26,
+      "original_sources": 22,
+      "valid_claims": 34,
+      "observations": 12,
+      "canonical_events": 10,
       "blocker_counts": {
         "source_outside_daily_window": 8,
         "non_event_or_index_title": 2,
         "no_source_bounded_event": 1,
+        "multi_event_roundup_not_single_event_source": 1,
         "raw_source_quality_block": 4
       },
       "rates": {
-        "original_source_rate": 0.8,
-        "valid_claim_rate": 0.85,
-        "observation_rate": 0.5882352941176471,
+        "original_source_rate": 0.8461538461538461,
+        "valid_claim_rate": 1,
+        "observation_rate": 0.35294117647058826,
         "event_conversion_rate": 0.29411764705882354
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/monitoring-funnel.json"

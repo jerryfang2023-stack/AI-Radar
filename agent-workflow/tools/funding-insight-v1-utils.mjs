@@ -379,6 +379,7 @@ export function normalizeFundingInsightCard(
   const acceptedDecisions = acceptedFundingEntityDecisions(entityIndex, decisionFile);
   const reviewedCompanies = acceptedFundingCompanyIdentityDecisions(companyIdentityReview);
   const resolvedCompany = reviewedCompanies.get(card.company?.entity_id)
+    || resolvedFundingEntity(card.company?.full_name, "organization", resolve, acceptedDecisions)
     || resolvedFundingEntity(card.company?.name, "organization", resolve, acceptedDecisions);
   const storedOriginalRound = clean(card.financing?.round_original);
   const storedRound = clean(card.financing?.round);
@@ -651,16 +652,16 @@ function subjectSignalScore(text = "", name = "") {
   const escaped = needle.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
   let score = 0;
   if (new RegExp(`(?:^|[\\s:：|｜—-])${escaped}`, "iu").test(haystack)) score += 20;
-  if (new RegExp(`${escaped}.{0,24}(?:获|完成|宣布|融资|筹集|募资|估值|ipo|raises?|raised|funding|series|seed|round)`, "iu").test(haystack)) {
+  if (new RegExp(`${escaped}[^|]{0,24}(?:获|获得|完成|宣布|融资|再融|筹集|募资|估值|ipo|raises?|raised|funding|series|seed|round)`, "iu").test(haystack)) {
     score += 45;
   }
-  if (new RegExp(`(?:投资|领投|back(?:ed)?|invest(?:s|ed|ment)?).{0,36}${escaped}`, "iu").test(haystack)) {
+  if (new RegExp(`(?:投资|领投|跟投|参投|back(?:ed)?|invest(?:s|ed|ment)?)[^|]{0,36}${escaped}`, "iu").test(haystack)) {
     score += 55;
   }
-  if (new RegExp(`${escaped}.{0,12}(?:投资|领投|back(?:ed)?|invest(?:s|ed|ment)?)`, "iu").test(haystack)) {
+  if (new RegExp(`${escaped}[^|]{0,12}(?:投资|领投|跟投|参投|back(?:ed)?|invest(?:s|ed|ment)?)`, "iu").test(haystack)) {
     score -= 35;
   }
-  if (new RegExp(`(?:获|得到|backed by).{0,36}${escaped}.{0,16}(?:支持|背书|backing)`, "iu").test(haystack)) {
+  if (new RegExp(`(?:获|获得|得到|backed by)[^|]{0,36}${escaped}[^|]{0,16}(?:支持|背书|backing)`, "iu").test(haystack)) {
     score -= 60;
   }
   return score;
@@ -682,7 +683,9 @@ function subjectCandidate(entity, index, eventText) {
     const lexical = eventText.normalized.includes(normalized) ? Math.min(30, normalized.length) : 0;
     return lexical + subjectSignalScore(eventText.raw, name);
   });
-  const bestScore = Math.max(0, ...scores);
+  const fragmentPenalty = /[：，、“”"'!！?？|｜]|(?:融资|估值|累计|完成|宣布|再融|获\s*\d)|(?:已|将|再)$/u.test(clean(canonicalName)) ? 80 : 0;
+  const verificationBonus = entity.verification_status === "verified" ? 60 : 0;
+  const bestScore = Math.max(0, ...scores) + verificationBonus - fragmentPenalty;
   return {
     entity: inferredName
       ? { ...entity, canonical_name: inferredName }
@@ -757,6 +760,70 @@ export function evidenceProblems(evidenceRefs = [], sourceById = new Map(), pref
   return problems;
 }
 
+function exactInvestorEvidence(name = "", sources = []) {
+  const investorName = clean(name);
+  if (!investorName) return [];
+  const escaped = investorName.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  const relation = new RegExp(
+    `(?:由|投资方|投资人).{0,220}${escaped}.{0,100}(?:领投|跟投|参投|共同投资|入股)|${escaped}.{0,120}(?:领投|跟投|参投|共同投资|入股)`,
+    "iu",
+  );
+  for (const source of sources) {
+    const body = String(source?.body_clean || "");
+    let from = 0;
+    while (from < body.length) {
+      const index = body.indexOf(investorName, from);
+      if (index < 0) break;
+      const start = Math.max(
+        body.lastIndexOf("。", index - 1),
+        body.lastIndexOf("！", index - 1),
+        body.lastIndexOf("？", index - 1),
+        body.lastIndexOf("\n", index - 1),
+      ) + 1;
+      const ends = ["。", "！", "？", "\n"]
+        .map((marker) => body.indexOf(marker, index + investorName.length))
+        .filter((value) => value >= 0);
+      const end = ends.length ? Math.min(...ends) + 1 : Math.min(body.length, index + investorName.length + 240);
+      const quote = body.slice(start, end).trim();
+      if (quote.length <= 500 && relation.test(quote)) {
+        return [{ source_id: source.source_id, quote }];
+      }
+      from = index + investorName.length;
+    }
+  }
+  return [];
+}
+
+export function ensureNamedCompanyEvidence(payload = {}, company = {}, sources = []) {
+  if (!payload.company || payload.company.evidence_refs?.length) return payload;
+  const names = [...new Set([payload.company.full_name, company.canonical_name]
+    .map(clean)
+    .filter(Boolean))];
+  for (const source of sources) {
+    const body = String(source?.body_clean || "");
+    for (const name of names) {
+      const index = body.indexOf(name);
+      if (index < 0) continue;
+      const start = Math.max(
+        body.lastIndexOf("。", index - 1),
+        body.lastIndexOf("！", index - 1),
+        body.lastIndexOf("？", index - 1),
+        body.lastIndexOf("\n", index - 1),
+      ) + 1;
+      const ends = ["。", "！", "？", "\n"]
+        .map((marker) => body.indexOf(marker, index + name.length))
+        .filter((value) => value >= 0);
+      const end = ends.length ? Math.min(...ends) + 1 : Math.min(body.length, index + name.length + 240);
+      const quote = body.slice(start, end).trim();
+      if (quote && quote.length <= 500 && /(?:公司|企业|融资|机器人|人工智能|AI|模型|平台|产品)/iu.test(quote)) {
+        payload.company.evidence_refs = [{ source_id: source.source_id, quote }];
+        return payload;
+      }
+    }
+  }
+  return payload;
+}
+
 export function sanitizeResearchPayload(payload = {}, sources = []) {
   const sanitized = structuredClone(payload);
   const sourceById = new Map(sources.map((source) => [source.source_id, source]));
@@ -769,10 +836,16 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
   if (sanitized.financing) {
     sanitized.financing.evidence_refs = cleanRefs(sanitized.financing.evidence_refs);
     sanitized.financing.investors = (sanitized.financing.investors || [])
-      .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+      .map((item) => {
+        const evidenceRefs = cleanRefs(item.evidence_refs);
+        return { ...item, evidence_refs: evidenceRefs.length ? evidenceRefs : exactInvestorEvidence(item.name, sources) };
+      })
       .filter((item) => clean(item.name) && item.evidence_refs.length);
     sanitized.financing.other_round_investors = (sanitized.financing.other_round_investors || [])
-      .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+      .map((item) => {
+        const evidenceRefs = cleanRefs(item.evidence_refs);
+        return { ...item, evidence_refs: evidenceRefs.length ? evidenceRefs : exactInvestorEvidence(item.name, sources) };
+      })
       .filter((item) => clean(item.name) && item.evidence_refs.length);
   }
   sanitized.products = (sanitized.products || [])
@@ -805,6 +878,29 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
     .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
     .filter((item) => clean(item.speaker) && clean(item.quote) && item.evidence_refs.length);
   if (sanitized.analysis) {
+    for (const [field, allowed] of [
+      ["use_case_ids", FUNDING_USE_CASE_IDS],
+      ["industry_ids", FUNDING_INDUSTRY_IDS],
+      ["target_user_ids", FUNDING_TARGET_USER_IDS],
+    ]) {
+      if (Array.isArray(sanitized.analysis[field])) {
+        sanitized.analysis[field] = [...new Set(sanitized.analysis[field]
+          .map(clean)
+          .filter((value) => allowed.has(value)))];
+      }
+    }
+    const marketCategory = clean(sanitized.analysis.market_category_id);
+    const marketApplication = clean(sanitized.analysis.market_application_id);
+    const applicationParent = FUNDING_MARKET_APPLICATION_PARENTS.get(marketApplication);
+    if (marketCategory === "infrastructure_compute" && applicationParent) {
+      sanitized.analysis.market_subcategory_id = applicationParent;
+    } else if (marketCategory !== "infrastructure_compute") {
+      sanitized.analysis.market_application_id = "";
+    }
+    if (marketCategory === "physical_ai") {
+      sanitized.analysis.market_subcategory_id = "";
+      sanitized.analysis.market_application_id = "";
+    }
     const investorNames = new Set((sanitized.financing?.investors || [])
       .map((item) => clean(item.name).toLowerCase())
       .filter(Boolean));

@@ -5,18 +5,182 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-08-02T06:24:12.431Z",
+    "generated_at": "2026-08-03T06:49:54.658Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 223,
-    "input_hash": "e6a537a0ae2ae96e",
+    "decision_count": 241,
+    "input_hash": "341961d21631f561",
     "override_count": 17,
     "needs_review_count": 0,
     "low_confidence_count": 0
   },
   "decisions": [
+    {
+      "event_id": "EV-7a44a47bf36780d2",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "software_development",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "telecommunications",
+        "financial_services",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "壁仞科技 develops GPGPU chips (壁砺系列) and a software platform for AI training/inference, fitting infrastructure_compute / hardware_computing / chips. The product_form_id is chip_accelerator. Use cases include software_development (AI development platform) and research_discovery (training large models). Industries served include telecommunications (中国移动/中国电信), financial_services (平安集团), and manufacturing (robotics/industrial edge inference). Target users are developers and business users deploying AI compute."
+    },
+    {
+      "event_id": "EV-e9d06e8a06aa7318",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "knowledge_search",
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences",
+        "government_public_sector"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "昆仑元AI提供GPT-Station算力终端、Agent Computer和Pad等硬件设备，搭载自研AI操作系统和模型，面向政企和医疗场景提供即开即用的高性能计算能力，属于硬件/计算基础设施，而非仅模型或软件平台。"
+    },
+    {
+      "event_id": "EV-d3fcd1ea4d9baf47",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "证据显示公司产品为全尺寸人形机器人、家庭协作机器人及已进入家庭的具身智能机器人，直接感知、决策并作用于物理世界，符合Physical AI定义。产品形态为机器人系统，面向家庭消费者，用例为物理自动化。"
+    },
+    {
+      "event_id": "EV-a909450a2d1a1fe1",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司打造通用操作智能体，推出端到端强化学习具身模型并实现长程任务，产品直接控制机器人在物理世界执行操作，符合Physical AI定义。产品形式为机器人系统而非纯软件工具链。"
+    },
+    {
+      "event_id": "EV-b5dd10300e34f2d3",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "content_creation",
+        "education_learning"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品为面向消费者的AI潮玩硬件，提供情感陪伴，属于跨行业消费级应用，非基础设施也非物理AI，归入企业应用下的消费者零售子类。"
+    },
+    {
+      "event_id": "EV-dc35d54f273196f0",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品Nexus是团队协作操作系统，统一人、Agent、任务、知识、工具的组织状态，属于跨行业的企业生产力与工作流场景，无特定行业数据或物理世界执行，因此归入enterprise_applications > productivity_enterprise_workflows。"
+    },
+    {
+      "event_id": "EV-60d58e2a1f5733f8",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司定位机器人通用大脑，但产品Moz和小墨机器人在零售和产线中实际执行物理操作，满足感知-决策-行动闭环，属于Physical AI。"
+    },
+    {
+      "event_id": "EV-56da7cceeebc8bcf",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "developer_tool",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain",
+        "healthcare_life_sciences",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "穹彻智能的核心产品是机器人具身大脑（Noematrix Brain）和工具链，提供基础模型、原子技能、软件框架及开发者工具，属于为机器人开发者提供模型和开发部署基础设施，而非直接销售在物理世界自主行动的完整机器人系统，因此归入infrastructure_compute而非physical_ai。"
+    },
     {
       "event_id": "EV-00514c4ffc2e3cd3",
       "market_category_id": "infrastructure_compute",
@@ -36,6 +200,137 @@
       "rationale": "丘脑智能提供多模态记忆基座MemAura，以ADK和API形式供开发者调用，属于为其他AI产品构建者提供模型基础设施，符合infrastructure_compute > development_deployment > models。"
     },
     {
+      "event_id": "EV-44ec7c229995ca3c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_compute_system",
+      "use_case_ids": [
+        "software_development",
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "容芯致远提供以GPU为核心的AGC智算架构和K系列算力产品，属于硬件计算基础设施，为AI模型训练和推理提供算力支撑，而非面向特定行业应用或企业业务功能，因此归入infrastructure_compute下的硬件计算子类。"
+    },
+    {
+      "event_id": "EV-ee38c30c00b2a754",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "如身机器人的齐家Q1养老机器人具备在物理世界中感知、决策和行动的能力，可完成起身、递水、喂饭、载人移动等任务，直接作用于物理环境，符合physical_ai定义，而非仅为其他机器人提供基础设施。"
+    },
+    {
+      "event_id": "EV-1188b1585b835fe1",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司发布通用具身大模型AWE3.0并搭载于A1机器人，在真实工业线束作业中实现物理操作，符合Physical AI“感知-决策-行动”闭环。产品形态为机器人系统，应用于制造业与汽车行业，目标用户为企业。"
+    },
+    {
+      "event_id": "EV-876baa523eb93c4f",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "food_hospitality"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司专注通用具身智能机器人，第二代机器人K15已批量投产并交付客户，涉及制造与连锁咖啡品牌，明确在物理世界执行操作，归入Physical AI。"
+    },
+    {
+      "event_id": "EV-be59d9048dd1b6a0",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "construction_real_estate"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.95,
+      "needs_review": false,
+      "rationale": "公司打造通用机器人大脑并落地智能焊接机器人，已在重工、钢结构焊接场景量产交付，属于物理世界感知与行动，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-d2409770301edc83",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 1,
+      "needs_review": false,
+      "rationale": "银河通用研发并部署Galbot S1工业重载机器人和银河太空舱零售机器人，产品直接感知、决策并作用于物理世界，符合Physical AI定义。"
+    },
+    {
       "event_id": "EV-c5d7d88d1aef8edb",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
@@ -53,6 +348,47 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "月之暗面核心产品为Kimi系列大模型，开源发布并成为全球开发者底层能力，属于模型基础设施，归入infrastructure_compute > development_deployment > models。"
+    },
+    {
+      "event_id": "EV-af8e95dbe06ac083",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 1,
+      "needs_review": false,
+      "rationale": "智平方的AlphaBot 2和智魔方均为具身智能机器人及服务空间，在物理环境中执行操作任务，属于Physical AI。"
+    },
+    {
+      "event_id": "EV-cec68369662236fd",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 1,
+      "needs_review": false,
+      "rationale": "自变量机器人提供WALL-A操作大模型和量子2号机器人，直接输出动作指令控制物理设备，属于Physical AI。"
     },
     {
       "event_id": "EV-4da1a7c4d527eb69",
@@ -363,23 +699,6 @@
       "rationale": "Odyssey ML 当前出售的是生成交互式仿真的世界模型；自动驾驶和机器人是应用方向，公司没有交付机器人、车辆或自主机器。"
     },
     {
-      "event_id": "EV-1abf0d076d30ec6d",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "development_deployment",
-      "market_application_id": "model_deployment",
-      "product_form_id": "compute_cloud_service",
-      "use_case_ids": [
-        "software_development"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "Featherless.ai 提供无服务器模型推理平台，按需加载模型，属于为 AI 构建者提供部署基础设施。"
-    },
-    {
       "event_id": "EV-cded77b1de2db61a",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
@@ -548,6 +867,27 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品为横向平台，提供确定性护栏、治理和可观测性，属于为AI构建者提供安全与治理基础设施，而非面向单一行业或物理世界。"
+    },
+    {
+      "event_id": "EV-24823de8fb76ac31",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "procurement_supply_chain"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "Arrakis为工业公司提供AI操作系统，对接采购、物流、运营系统，客户为航运公司，明确围绕工业/供应链行业工作流，非通用企业应用，故归入industry_applications > industrials。"
     },
     {
       "event_id": "EV-754e83c2d19005fe",
@@ -1183,6 +1523,23 @@
       "rationale": "与 EV-0ade039d36e077ae 为同一公司，证据显示其平台模型无关、持续基准测试并支持多用例工作流，属于为 AI 构建者提供开发部署基础设施，因此归入 infrastructure_compute > development_deployment > ai_development_orchestration。"
     },
     {
+      "event_id": "EV-618e5729145025e4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "developer_tool",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Entire 发布开源CLI工具Checkpoints，捕获AI代理上下文辅助开发者审查，属于为AI构建者提供的开发编排基础设施。"
+    },
+    {
       "event_id": "EV-ad75efcb12a07793",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "hardware_computing",
@@ -1271,6 +1628,23 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Fazeshift uses AI agents to automate accounts receivable (AR) workflows including cash application, collections, and billing. This aligns with enterprise applications for productivity/enterprise workflows (finance/accounting focus). The product is an end-user application for business users in financial services. No physical AI component is present."
+    },
+    {
+      "event_id": "EV-1abf0d076d30ec6d",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "model_deployment",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Featherless.ai 提供无服务器模型推理平台，按需加载模型，属于为 AI 构建者提供部署基础设施。"
     },
     {
       "event_id": "EV-6011ab83ebd290bd",
@@ -1381,23 +1755,6 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "Sycamore 构建智能体编排层处理编码到后端基础设施，属于跨行业的企业生产力工作流，未限定单一行业或物理AI。"
-    },
-    {
-      "event_id": "EV-618e5729145025e4",
-      "market_category_id": "infrastructure_compute",
-      "market_subcategory_id": "development_deployment",
-      "market_application_id": "ai_development_orchestration",
-      "product_form_id": "developer_tool",
-      "use_case_ids": [
-        "software_development"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "developer"
-      ],
-      "confidence": 0.9,
-      "needs_review": false,
-      "rationale": "Entire 发布开源CLI工具Checkpoints，捕获AI代理上下文辅助开发者审查，属于为AI构建者提供的开发编排基础设施。"
     },
     {
       "event_id": "EV-70a994b9339f92e7",
@@ -1643,7 +2000,6 @@
     },
     {
       "event_id": "EV-5f3ccb941a2fe5d7",
-      "canonical_event_id": "EV-2a78dd5feb40a78a",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
       "market_application_id": "",
@@ -1701,7 +2057,6 @@
     },
     {
       "event_id": "EV-df789745fb926bfd",
-      "canonical_event_id": "EV-ecc12e5ec883b7e7",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "consumer_retail",
       "market_application_id": "",
@@ -1757,25 +2112,6 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品专为餐厅管理电话、预订、外卖等餐饮行业特有工作流，属于围绕单一行业（餐饮/零售）的行业应用，而非跨行业企业功能。"
-    },
-    {
-      "event_id": "EV-d4e44892226be468",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "end_user_application",
-      "use_case_ids": [
-        "productivity_enterprise_workflows"
-      ],
-      "industry_ids": [
-        "retail_ecommerce"
-      ],
-      "target_user_ids": [
-        "consumer"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "ChatGPT is a general-purpose AI assistant used by consumers and businesses. The Walmart integration and agentic shopping indicate productivity/enterprise workflows and retail e-commerce. The tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly from ALLOWED_HIERARCHY_TUPLES."
     },
     {
       "event_id": "EV-386c205c8bbf537d",
@@ -1942,6 +2278,25 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "Orchestrator连接ERP、PLM等系统自动化复杂工作流，面向企业和工业运营，属于跨职能企业应用。"
+    },
+    {
+      "event_id": "EV-74967394aed730ce",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Jedify构建企业上下文图谱，为AI应用提供数据基础，属于基础设施中的数据准备与治理，而非直接面向终端业务的应用。"
     },
     {
       "event_id": "EV-e7dcecaed5a0ee5b",
@@ -2690,6 +3045,25 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Onyx 提供面向工作场所的 AI 研究代理，直接服务于企业用户的知识搜索与研究需求，属于跨行业的生产力工作流应用，而非基础设施或单一行业应用。"
+    },
+    {
+      "event_id": "EV-d4e44892226be468",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "ChatGPT is a general-purpose AI assistant used by consumers and businesses. The Walmart integration and agentic shopping indicate productivity/enterprise workflows and retail e-commerce. The tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is copied exactly from ALLOWED_HIERARCHY_TUPLES."
     },
     {
       "event_id": "EV-0e84a2f49d765ce3",
@@ -3549,6 +3923,23 @@
       "rationale": "SigmanticAI 为半导体工程提供 AI 原生硬件开发助手，自动化 RTL 设计流程，聚焦半导体这一特定工业领域的专业数据和工作流，符合 industry_applications 下的 industrials 子类。"
     },
     {
+      "event_id": "EV-914ca1cbc6359ce5",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Company provides real-time voice AI infrastructure for enterprises, fitting enterprise applications and productivity workflows. No specific industry focus evident, so industry_ids left empty."
+    },
+    {
       "event_id": "EV-86ca5af11ee4d275",
       "market_category_id": "industry_applications",
       "market_subcategory_id": "legal",
@@ -3917,7 +4308,6 @@
     },
     {
       "event_id": "EV-2dff32c1b6f813e4",
-      "canonical_event_id": "EV-b2d94511e4b4dfc8",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "hardware_computing",
       "market_application_id": "chips",
@@ -3964,7 +4354,6 @@
     },
     {
       "event_id": "EV-305ec93673f4f12e",
-      "canonical_event_id": "EV-82e77abb1a77f81c",
       "market_category_id": "infrastructure_compute",
       "market_subcategory_id": "development_deployment",
       "market_application_id": "model_deployment",
@@ -4337,26 +4726,284 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Zenskar 提供 AI 原生计费与收入自动化平台，面向财务团队优化订单到现金流程，属于跨行业的企业业务功能，不涉及物理 AI 或基础设施层，因此归入企业应用-生产力工作流。"
-    },
-    {
-      "event_id": "EV-914ca1cbc6359ce5",
-      "market_category_id": "enterprise_applications",
-      "market_subcategory_id": "productivity_enterprise_workflows",
-      "market_application_id": "",
-      "product_form_id": "enterprise_software_platform",
-      "use_case_ids": [
-        "productivity_enterprise_workflows"
-      ],
-      "industry_ids": [],
-      "target_user_ids": [
-        "business_user"
-      ],
-      "confidence": 0.85,
-      "needs_review": false,
-      "rationale": "Company provides real-time voice AI infrastructure for enterprises, fitting enterprise applications and productivity workflows. No specific industry focus evident, so industry_ids left empty."
     }
   ],
   "inputs": [
+    {
+      "event_id": "EV-7a44a47bf36780d2",
+      "funding_insight_id": "FI-2cf3052d26bca65b",
+      "company_name": "壁仞科技",
+      "company_full_name": "上海壁仞科技股份有限公司",
+      "website": "birentech.com",
+      "current_sector": "半导体与集成电路",
+      "company_evidence_quotes": [
+        "壁仞科技致力于开发原创性的通用计算体系，建立高效的软硬件平台，同时在智能计算领域提供一体化的解决方案。从发展路径上，壁仞科技将首先聚焦云端通用智能计算，逐步在人工智能训练和推理、图形渲染、高性能通用计算等多个领域赶超现有解决方案，实现国产高端通用智能计算芯片的突破。"
+      ],
+      "products": [
+        {
+          "name": "壁砺系列通用GPU算力产品",
+          "evidence_quotes": [
+            "壁仞科技的壁砺系列通用GPU算力产品为该智算中心提供了算力支撑",
+            "壁仞已开发出 壁砺106、壁砺110 两款芯片。壁砺106用于训练和推理，支持虚拟化和硬件安全引擎；壁砺110用于边缘推理，能效优化，适用于工控、机器人等场景。"
+          ]
+        },
+        {
+          "name": "BIRENSUPA软件平台",
+          "evidence_quotes": [
+            "另一块产品是自研 BIRENSUPA软件平台 ，搭建于其GPGPU之上，用于开发AI应用程序。"
+          ]
+        },
+        {
+          "name": "异构GPU协同训练方案HGCT",
+          "evidence_quotes": [
+            "壁仞科技首次公布了异构GPU协同训练方案，这是中国首个三种异构芯片混训技术，支持3种及以上异构GPU混合训练同一个大模型（壁仞GPU+英伟达GPU+其他国产芯片）。",
+            "壁仞科技首次公布其自主原创的异构GPU协同训练方案HGCT，异构协同 通信 效率大于98%、端到端训练效率90-95%"
+          ]
+        }
+      ],
+      "customer_names": [
+        "中国移动",
+        "中国电信",
+        "平安集团",
+        "商汤科技"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-e9d06e8a06aa7318",
+      "funding_insight_id": "FI-becfe4a1ce0f6353",
+      "company_name": "昆仑元AI",
+      "company_full_name": "湖南昆仑元人工智能应用软件有限公司",
+      "website": "",
+      "current_sector": "人工智能基础设施",
+      "company_evidence_quotes": [
+        "湖南昆仑元人工智能应用软件有限公司（KunlunMeta，以下简称“昆仑元AI”）",
+        "昆仑元定位为“成为AGI时代的‘基础构建者’与‘生态加速器’”，聚焦政企私有化AI平台、全模态基础模型与AI原生算力终端三大高增长赛道。"
+      ],
+      "products": [
+        {
+          "name": "GPT-Station",
+          "evidence_quotes": [
+            "基于GPT-Station的AI+应用，面向OPC （One Person Company）及中小型团队提供即开即用的高性能计算能力。",
+            "搭载昆仑元自研的Gpt-Station全栈式AI操作系统为医疗机构提供开箱即用的智能体服务，预装优化的多模态AI模型，并内置权威医学知识库与专业算法工具，整合报告解读、辅助诊断与患者管理全场景功能。"
+          ]
+        },
+        {
+          "name": "昆仑元Agent Computer",
+          "evidence_quotes": [
+            "昆仑元Agent Computer搭载AMD锐龙AI Max+ 395处理器，126TOPS算力搭配128GB统一内存，可单机运行Qwen3.5-35B等大模型",
+            "预集成了昆仑元自研的端云一体安全计算框架专利技术，端侧本地处理处理敏感医疗数据"
+          ]
+        },
+        {
+          "name": "昆仑元Pad",
+          "evidence_quotes": [
+            "集移动工作站与旗舰平板属性于一体，轻薄的机身搭配高色域高刷屏，支持语音、触控等多模态交互，即使在无网络环境下也可运行轻量化AI诊断模型。",
+            "内置50 TOPS NPU算力，在无网络环境下也可运行轻量化AI诊断模型"
+          ]
+        }
+      ],
+      "customer_names": [
+        "谊安医疗"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-d3fcd1ea4d9baf47",
+      "funding_insight_id": "FI-a82e27d4fcaec369",
+      "company_name": "乐享科技",
+      "company_full_name": "苏州乐享智能科技有限公司",
+      "website": "",
+      "current_sector": "家庭具身智能",
+      "company_evidence_quotes": [
+        "家庭具身智能厂商苏州乐享智能科技有限公司（下称“乐享科技”）2日宣布完成近5亿元Pre-A轮融资"
+      ],
+      "products": [
+        {
+          "name": "元点Zeroth Jupiter",
+          "evidence_quotes": [
+            "全尺寸人形 机器人 Jupiter，目标是打造长期进入家庭、以伙伴形式存在的通用智能 机器人"
+          ]
+        },
+        {
+          "name": "元点Zeroth N1",
+          "evidence_quotes": [
+            "家庭协作 机器人 N1，以异构机械臂方案、轻量化设计，探索率先进入家庭场景的协作 机器人 产品"
+          ]
+        },
+        {
+          "name": "元点Zeroth M1",
+          "evidence_quotes": [
+            "M1更作为全球首个进入家庭的具身智能机器人，也在近期成为了全球首个接入OpenClaw（小龙虾）的人形机器人"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-a909450a2d1a1fe1",
+      "funding_insight_id": "FI-3f25f4eeace952fb",
+      "company_name": "灵初智能",
+      "company_full_name": "灵初智能",
+      "website": "https://www.psibot.ai/",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "灵初智能推进基于强化学习算法的机器人技能集训练、场景化的数据生成及采集、端到端解决方案的研发及落地，打造通用操作智能体。"
+      ],
+      "products": [
+        {
+          "name": "端到端VLA模型软件工具链",
+          "evidence_quotes": [
+            "公司以端到端VLA模型为核心构建软件工具链",
+            "灵初智能成功推出了行业内首个端到端强化学习具身模型 Psi R0、R0.5及R1，成为行业内率先实现长程任务的具身模型研发企业"
+          ]
+        },
+        {
+          "name": "Psi-SynEngine具身数采引擎",
+          "evidence_quotes": [
+            "通过自研Psi-SynEngine具身数采引擎，高效获取真实交互数据，显著降低采集成本。",
+            "通过手套采集数据的综合成本，可以降至真机遥操作方案的十分之一左右。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-b5dd10300e34f2d3",
+      "funding_insight_id": "FI-f839913295f10b32",
+      "company_name": "珞博智能",
+      "company_full_name": "上海珞博智能科技有限公司",
+      "website": "",
+      "current_sector": "AI潮玩与情感陪伴智能硬件",
+      "company_evidence_quotes": [
+        "珞博智能成立于2024年，聚焦 AI 潮玩赛道，打造以AI 大模型技术为核心的新一代情感陪伴智能硬件。旗下首款产品Fuzozo芙崽自2025年7月国内上市以来，市场表现持续领跑行业。"
+      ],
+      "products": [
+        {
+          "name": "Fuzozo芙崽",
+          "evidence_quotes": [
+            "芙崽是一款以AI大模型技术为核心，专注于为Z世代人群提供情感陪伴的AI 养成系潮玩，具备毛绒包挂的形态，方便随身携带，通过多模态交互与类宠物养成玩法，与用户建立长期情感羁绊。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-dc35d54f273196f0",
+      "funding_insight_id": "FI-71477abee5aab07d",
+      "company_name": "奇点逃逸",
+      "company_full_name": "奇点逃逸",
+      "website": "",
+      "current_sector": "企业服务",
+      "company_evidence_quotes": [
+        "近日奇点逃逸完成千万级种子轮融资",
+        "2026年8月，北京人工智能企业奇点逃逸宣布完成千万级种子轮融资。"
+      ],
+      "products": [
+        {
+          "name": "Nexus",
+          "evidence_quotes": [
+            "其正在研发AI原生团队协作操作系统Nexus，让人、Agent、任务、知识和工具基于同一份组织状态持续协作，并让系统从每一次协作中有证据地变强。",
+            "Nexus 跳出传统会话式产品架构，以 统一组织状态 为核心底层。平台将人、Agent、任务、知识资产、外部工具统一建模，所有协作主体共享同一份事实基准、任务依赖、进度状态与执行溯源记录。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-60d58e2a1f5733f8",
+      "funding_insight_id": "FI-09d0d946c9b056dd",
+      "company_name": "千寻智能",
+      "company_full_name": "千寻智能",
+      "website": "",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "千寻智能成立于2024年1月，核心定位为“机器人通用大脑构建者”，并非传统硬件制造商。主要业务方向为通用具身大模型研发。"
+      ],
+      "products": [
+        {
+          "name": "Moz机器人（墨子）",
+          "evidence_quotes": [
+            "自研的Moz机器人已全面接入京东MALL智慧零售场景，在高精度的咖啡制作任务中，不仅实现了真机的稳定作业，也在真实的商业环境中跑通了“数据采集与模型迭代”闭环。",
+            "“墨子”（Moz）机器人入驻京东零售场景，提供商品讲解、操作演示及咖啡制作等服务，完成零售场景落地验证。"
+          ]
+        },
+        {
+          "name": "小墨机器人",
+          "evidence_quotes": [
+            "2025年底，千寻智能“小墨”机器人在宁德时代中州基地电池产线落地，负责EOL（生产线终端测试）与DCR（直流内阻测试）工序的高压测试插头插接。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "京东",
+        "宁德时代"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-56da7cceeebc8bcf",
+      "funding_insight_id": "FI-f7366e3e4d37fc9d",
+      "company_name": "穹彻智能",
+      "company_full_name": "上海穹彻智能科技有限公司",
+      "website": "https://www.noematrix.ai",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "穹彻智能完成Pre-A轮融资获数亿元，助力人工智能走进真实世界 2024年9月6日 9月6日，具身智能领域初创公司穹彻智能（Noematrix，上海穹彻智能科技有限公司）宣布完成累计数亿元人民币的天使轮和Pre-A轮两轮融资。"
+      ],
+      "products": [
+        {
+          "name": "Noematrix Brain",
+          "evidence_quotes": [
+            "通用机器人智能大脑 Noematrix Brain 提供机器人具身智能相关的基础模型、原子技能、软件框架及开发者工具，助力实现更多通用智能机器人应用",
+            "作为穹彻智能的核心产品的穹彻具身大脑（Noematrix Brain），目前已具备指令推理分解、任务规划、物体分类、环境感知、自主导航和通用技能操作的全闭环能力。"
+          ]
+        },
+        {
+          "name": "Noematrix Toolchain",
+          "evidence_quotes": [
+            "具身工具链 Noematrix Toolchain 一站式具身工具链，实现具身机器人从数据采集、数据管理、模型训练、功能部署的闭环能力"
+          ]
+        },
+        {
+          "name": "CoMiner",
+          "evidence_quotes": [
+            "穹彻智能提出了无需脱产的“生产伴随”式数据采集方式，并研发了相应的数采系统。",
+            "CoMiner 伴随式数据采集套件"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
     {
       "event_id": "EV-00514c4ffc2e3cd3",
       "funding_insight_id": "FI-77dc755d73d7a45c",
@@ -4380,6 +5027,219 @@
       "current_classification": {
         "product_form_id": "model_api_service",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-44ec7c229995ca3c",
+      "funding_insight_id": "FI-62c011680db975f7",
+      "company_name": "容芯致远",
+      "company_full_name": "北京容芯致远科技有限公司",
+      "website": "",
+      "current_sector": "AI算力基础设施",
+      "company_evidence_quotes": [
+        "容芯致远成立于2024年，致力于通过计算机体系架构的改变，在AI时代将过去以CPU为中心构建的计算机架构体系，改变为以GPU为中心的全新架构,致力于成为真正实现“小芯片、大聚合“的AI算力供应商, 为通用人工智能（AGI）的普及与技术迭代提供高性能、高质量、高性价比的国产算力支撑。"
+      ],
+      "products": [
+        {
+          "name": "AGC智算产品",
+          "evidence_quotes": [
+            "其全栈自研的软硬件K系列产品已获得了北京市颠覆式创新大奖。近期，其AGC系列新品也将发布。",
+            "容芯致远于2024年成立之初就提出全球首创‌AGC智算架构‌——以GPU为核心重构计算机系统，突破传统AI计算中“成本、效率、灵活性难以兼得”的行业困局，实现GPU热插拔、GPU-RAID高可用、GPU节能延寿等三大技术突破"
+          ]
+        },
+        {
+          "name": "K20",
+          "evidence_quotes": [
+            "旗舰机型K20支持20卡GPU集群，通过张量并行优化技术实现DeepSeek 671B全量模型单机满血运行，大幅降低硬件投入与运维复杂度"
+          ]
+        },
+        {
+          "name": "K2",
+          "evidence_quotes": [
+            "场景化产品K2采用双卡静音设计，搭载预置推理环境并支持RAG检索，为企业提供即用型AI算力终端。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_compute_system",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-ee38c30c00b2a754",
+      "funding_insight_id": "FI-31c4a4d69230cf20",
+      "company_name": "如身机器人",
+      "company_full_name": "上海如身机器人科技有限公司",
+      "website": "",
+      "current_sector": "具身智能与智慧康养机器人",
+      "company_evidence_quotes": [
+        "上海如身机器人科技有限公司宣布，已于近期完成亿元级Pre-A轮融资",
+        "如身机器人成立于2023年6月，是一家聚焦智慧康养场景的具身智能机器人公司"
+      ],
+      "products": [
+        {
+          "name": "齐家Q1",
+          "evidence_quotes": [
+            "公司核心产品“齐家Q1”养老机器人面向半失能、失能及独居老人，具备生活照料、移动辅助、情感陪伴与健康守护等功能，支持“操作形态”与“轮椅形态”一键切换，可完成起身、递水、喂饭、载人移动等高频任务",
+            "全向移动底盘、高精度力控机械臂、多模态交互大模型及双边力反馈遥操作技术，使其在卧室、卫生间等复杂环境中动作柔和、安全可靠"
+          ]
+        },
+        {
+          "name": "格物系列",
+          "evidence_quotes": [
+            "这是全球首款覆盖手部、上肢与下肢全关节的居家康复产品，曾荣获 IF 设计大奖并入选德国国家设计博物馆。该机器人不仅支持全关节康复训练，还支持远程康复处方下发与康复数据采集。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "福寿康鹏海养护院"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-1188b1585b835fe1",
+      "funding_insight_id": "FI-c38cf5a3a40c30f2",
+      "company_name": "它石智航",
+      "company_full_name": "它石智航",
+      "website": "",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "公司成立于2025年2月，团队来自头部硬件大厂，创始人陈亦伦背景突出",
+        "它石智航是一家专注于通用具身智能技术研发与产业化落地的前沿科技企业， 成立仅一年时间，估值便领跑行业第一梯队，成为具身智能领域的标杆型企业。"
+      ],
+      "products": [
+        {
+          "name": "AWE3.0通用具身大模型",
+          "evidence_quotes": [
+            "它石智航同样在模型领域进行重点布局，其于近日发布通用具身大模型AWE3.0，该模型既延续了全身端到端学习、动态时空推理等核心优势，又凭借它石智航全新自研的全视角通感决策OSD（Omni-Sense Decision）摆脱视角依赖，让机器人在未见新视角下的任务成功率提升3倍。",
+            "今年3月，公司发布全球首个能真正落地干活的通用具身大模型AWE3.0，搭载视触觉世界模型OmniVTA，赋予机器人对物理世界的深度感知与理解能力"
+          ]
+        },
+        {
+          "name": "A1通用机器人",
+          "evidence_quotes": [
+            "搭载了AWE通用具身大模型的A1机器人挑战场景1:1复刻真实工业线束作业环境，成功获得了吉尼斯世界纪录™称号——\"机器人在一小时内装配亚毫米级线束最多次数（Most sub-millimeter wire harness assembled by a robot in one hour）\"",
+            "它石的机器人在插拔线束环节，可以做到人工70%—80%的水平，但因为人工做这项工作很容易疲累、出错，而机器人可以长时间工作，因此他们认为已经可以替代人工。"
+          ]
+        },
+        {
+          "name": "SenseHub数采套件",
+          "evidence_quotes": [
+            "它石智航搭建了Human-centric数据采集范式和SenseHub数采设备，规模采集真实数据，并开源了全球首个真实世界多模态数据集",
+            "SenseHub数采套件是一套以人为中心的一体化数采套件，非常轻便，劳动者在不影响日常工作的情况下同步完成数据收集 。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "苏州某汽车制造工厂",
+        "天海汽车电子集团股份有限公司"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-876baa523eb93c4f",
+      "funding_insight_id": "FI-1e51649b5063a864",
+      "company_name": "无界动力",
+      "company_full_name": "无界动力（北京）技术研发有限公司",
+      "website": "",
+      "current_sector": "具身智能机器人",
+      "company_evidence_quotes": [
+        "无界动力2025年创立于北京，专注于通用具身智能机器人核心技术研发与产业化应用，聚焦于构建机器人“通用大脑”与“操作智能”。"
+      ],
+      "products": [
+        {
+          "name": "第二代机器人K15",
+          "evidence_quotes": [
+            "随着第二代机器人 K15 已开启批量投产，无界动力即将全面进入面向全球的交付周期。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "远景科技",
+        "ZF LIFETEC",
+        "欧摩威集团",
+        "国内外知名连锁咖啡品牌"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-be59d9048dd1b6a0",
+      "funding_insight_id": "FI-ca07008ee604703d",
+      "company_name": "小雨智造",
+      "company_full_name": "北京小雨智造科技有限公司",
+      "website": "",
+      "current_sector": "工业具身智能",
+      "company_evidence_quotes": [
+        "小雨智造成立于 2023 年，总部位于北京海淀区，是一家通用人工智能机器人研发科技公司。",
+        "小雨智造致力于打造“一脑多形”的通用机器人大脑及工业应用产品，首先聚焦于智能焊接场景，产品已被多家战略客户应用，已达量产交付阶段。"
+      ],
+      "products": [
+        {
+          "name": "Xiaoyu Brain",
+          "evidence_quotes": [
+            "小雨智造核心产品为自主研发的通用机器人大脑「Xiaoyu Brain」，可使机器人能够在工业环境中执行多种任务，核心优势在于「高精度、高鲁棒性、高泛化性」。"
+          ]
+        },
+        {
+          "name": "智能焊接机器人",
+          "evidence_quotes": [
+            "双方明确，将围绕“具身智能+钢结构焊接”领域，在未来1年内共同推进1000台级具身智能焊接机器人的规模化应用"
+          ]
+        }
+      ],
+      "customer_names": [
+        "唐山松下",
+        "某重工龙头企业"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-d2409770301edc83",
+      "funding_insight_id": "FI-e661b87a377fd997",
+      "company_name": "银河通用",
+      "company_full_name": "银河通用机器人",
+      "website": "",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "银河通用成立于2023年5月，由北大教授王鹤带领团队创立，公司专注于具身智能大模型与通用机器人研发，采用仿真数据驱动技术路线，已推出Galbot G1等产品，并在工业制造、零售等领域实现规模化应用。"
+      ],
+      "products": [
+        {
+          "name": "Galbot S1",
+          "evidence_quotes": [
+            "其推出的行业首个工业重载机器人Galbot S1，针对工业制造场景的负载痛点，双臂最大负载达50公斤，产品达到工规级别，可在粉尘、震动、温差等复杂工况下持续稳定运行。该产品搭载具身搬运模型并可自主实现换电，填补了具身智能工业级应用空白。"
+          ]
+        },
+        {
+          "name": "银河太空舱",
+          "evidence_quotes": [
+            "银河通用推出的全球首创人形机器人完全自主运营的智慧零售解决方案“银河太空舱”，已在全国20多个城市、数十个核心商圈与地标落地了100家零售店。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "宁德时代",
+        "德国博世",
+        "丰田汽车",
+        "上汽集团",
+        "北汽集团"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -4424,6 +5284,87 @@
       "current_classification": {
         "product_form_id": "model",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-af8e95dbe06ac083",
+      "funding_insight_id": "FI-3da519dabfb33915",
+      "company_name": "智平方",
+      "company_full_name": "智平方（AI² Robotics）",
+      "website": "",
+      "current_sector": "具身智能机器人",
+      "company_evidence_quotes": [
+        "智平方成立于2023年，是一家专注于具身智能 机器人 研发与生产的科技企业",
+        "生产力型通用智能机器人公司智平方（AI² Robotics）"
+      ],
+      "products": [
+        {
+          "name": "AlphaBot 2（爱宝2）",
+          "evidence_quotes": [
+            "最新AlphaBot 2采用轮式双臂结构，核心部件无故障运行时间超5万小时，达到工业级可靠性标准",
+            "主力产品 ：AlphaBot 2（爱宝 2）— 轮式双臂仿人型通用智能机器人"
+          ]
+        },
+        {
+          "name": "智魔方（ZhiCube）",
+          "evidence_quotes": [
+            "智平方2025年底推出全球首个模块化具身智能服务空间“智魔方”，已陆续在北京、深圳、上海、无锡、常州等城市常态化运营",
+            "产品形态 ：模块化具身智能服务空间（约 10㎡），由 AlphaBot 2 搭载 GOVLA 人机协作模型驱动"
+          ]
+        }
+      ],
+      "customer_names": [
+        "惠科股份",
+        "东风柳汽",
+        "华熙生物",
+        "吉利晶能微电子",
+        "西子联合"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-cec68369662236fd",
+      "funding_insight_id": "FI-567a6b518e3e5624",
+      "company_name": "自变量机器人",
+      "company_full_name": "自变量机器人",
+      "website": "https://x2robot.com",
+      "current_sector": "具身智能",
+      "company_evidence_quotes": [
+        "通用具身智能企业自变量机器人",
+        "自变量机器人成立于2023年12月，主要聚焦于“通用具身大模型”的研发，为机器人提供通用大模型底座。"
+      ],
+      "products": [
+        {
+          "name": "WALL-A 操作大模型",
+          "evidence_quotes": [
+            "自变量机器人自研的WALL-A模型采用了VLA与世界模型深度融合的架构。该模型以机器人的视觉、触觉、语音等感知信息为输入，直接输出机器人动作指令。",
+            "自变量自主研发「WALL-A」系列 VLA （Vision-Language-Action）操作大模型， 构建统一的认知与行动框架。"
+          ]
+        },
+        {
+          "name": "量子2号（Quanta X2）",
+          "evidence_quotes": [
+            "量子 2 号 新一代通用轮式仿人形机器人 定义机器人物理交互新范式 以统一大模型为核心 打造跨场景、多形态的智能执行平台",
+            "今年 8 月，自变量发布了全自研轮式双臂仿人形机器人“量子 2 号（Quanta X2）。"
+          ]
+        },
+        {
+          "name": "Wall-OSS",
+          "evidence_quotes": [
+            "自变量开源其面向开发者的具身基础模型：「Wall-OSS」，并公开相关训练代码，便于全球开发者们在自有本体上快速微调和实际应用。",
+            "2025年9月，自变量机器人还开源了端到端具身基础模型WALL-OSS，以推动技术普及。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "58同城"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -5270,6 +6211,33 @@
       "current_classification": {
         "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-24823de8fb76ac31",
+      "funding_insight_id": "FI-a2760f4caf3da86e",
+      "company_name": "Arrakis",
+      "company_full_name": "Arrakis",
+      "website": "",
+      "current_sector": "工业AI",
+      "company_evidence_quotes": [
+        "Arrakis, a London startup, has come out of stealth mode after raising $38 million in funding over the past six months."
+      ],
+      "products": [
+        {
+          "name": "AI operating system for industrial companies",
+          "evidence_quotes": [
+            "The startup places engineers on-site and uses a platform that works with clients’ current procurement, logistics, and operational systems.",
+            "Arrakis is model-agnostic by design—a stance Quintanilla said resonates with executives worried about being locked in to a single AI model provider"
+          ]
+        }
+      ],
+      "customer_names": [
+        "一家未具名的纽约上市航运公司"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -7572,6 +8540,35 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-74967394aed730ce",
+      "funding_insight_id": "FI-752bd270da5a6609",
+      "company_name": "Jedify",
+      "company_full_name": "Jedify",
+      "website": "https://jedify.com/",
+      "current_sector": "企业AI基础设施",
+      "company_evidence_quotes": [
+        "Jedify is the autonomous context graph for enterprise AI, powering modern agentic applications and workflows with connected enterprise context."
+      ],
+      "products": [
+        {
+          "name": "Jedify Context Graph",
+          "evidence_quotes": [
+            "Jedify's platform autonomously builds a customer-specific context graph, powered by its patent-pending Semantic Fusion™ technology"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Kiteworks",
+        "Exodigo",
+        "Openweb",
+        "SoundCloud"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {

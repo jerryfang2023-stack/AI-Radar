@@ -17,7 +17,12 @@ export function buildEventDisplayTitle({ rawDocument = null } = {}) {
   const translatedTitle = text(rawDocument?.title_zh);
   const sourceBackedTitle = translatedTitle
     || (containsChinese(originalTitle) || VERSIONED_TECHNICAL_SOURCE_TITLE.test(originalTitle) ? originalTitle : "");
-  return isCompletePublicEventTitle(sourceBackedTitle) ? sourceBackedTitle : "";
+  if (isCompletePublicEventTitle(sourceBackedTitle)) return sourceBackedTitle;
+  return sourceBackedTitle
+    .split("|")
+    .map(text)
+    .filter(isCompletePublicEventTitle)
+    .sort((left, right) => right.length - left.length)[0] || "";
 }
 
 export function isCompletePublicEventTitle(value = "") {

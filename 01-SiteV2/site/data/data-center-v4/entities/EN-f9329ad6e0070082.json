@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "generatedAt": "2026-08-03T07:01:14.913Z",
     "latestDataDate": "2026-08-03",
     "currentDate": "2026-08-03",
-    "eventCount": 1796,
-    "quarantinedEventCount": 18
+    "eventCount": 1816,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-f9329ad6e0070082",
@@ -59,10 +59,10 @@
             "id": "enterprise_applications",
             "name": "企业级应用",
             "entityIds": [
-              "EN-b1d07f1a647ba7fb"
+              "EN-4bd78d9884b2d958"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-763f5861f5b5aa88",
+            "reviewRef": "REC-e8d99ed5d90fe1d6",
             "fundingInsightId": "FI-413e2eb33855c065"
           },
           {
@@ -71,10 +71,10 @@
             "id": "productivity_enterprise_workflows",
             "name": "生产力与企业工作流",
             "entityIds": [
-              "EN-b1d07f1a647ba7fb"
+              "EN-4bd78d9884b2d958"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-572a677f2b305bca",
+            "reviewRef": "REC-f30b6364e0a81559",
             "fundingInsightId": "FI-413e2eb33855c065"
           },
           {
@@ -83,10 +83,10 @@
             "id": "enterprise_software_platform",
             "name": "企业软件平台",
             "entityIds": [
-              "EN-b1d07f1a647ba7fb"
+              "EN-4bd78d9884b2d958"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-e34bbe7f45408cae",
+            "reviewRef": "REC-44eeed42897546f5",
             "fundingInsightId": "FI-413e2eb33855c065"
           },
           {
@@ -95,10 +95,22 @@
             "id": "data_analysis",
             "name": "数据分析",
             "entityIds": [
-              "EN-b1d07f1a647ba7fb"
+              "EN-4bd78d9884b2d958"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-1cefcfbe79a22a3d",
+            "reviewRef": "REC-3d211331a76e3fe3",
+            "fundingInsightId": "FI-413e2eb33855c065"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-4bd78d9884b2d958"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f9d0090f1fee121c",
             "fundingInsightId": "FI-413e2eb33855c065"
           },
           {
@@ -109,9 +121,8 @@
             "entityIds": [
               "EN-b1d07f1a647ba7fb"
             ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-99e736254503d2e2",
-            "fundingInsightId": "FI-413e2eb33855c065"
+            "provenance": "claim_assertion",
+            "assertionId": ""
           },
           {
             "dimensionId": "industry",
@@ -119,10 +130,34 @@
             "id": "logistics_supply_chain",
             "name": "物流与供应链",
             "entityIds": [
-              "EN-b1d07f1a647ba7fb"
+              "EN-4bd78d9884b2d958"
             ],
             "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b833e563cd823fd1",
+            "reviewRef": "REC-31cd9b6b2e6b2eee",
+            "fundingInsightId": "FI-413e2eb33855c065"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-4bd78d9884b2d958"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a0c7b9530db62e17",
+            "fundingInsightId": "FI-413e2eb33855c065"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-4bd78d9884b2d958"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8647a800e273f28d",
             "fundingInsightId": "FI-413e2eb33855c065"
           },
           {
@@ -133,26 +168,14 @@
             "entityIds": [
               "EN-b1d07f1a647ba7fb"
             ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-cf11a29191feb6d9",
-            "fundingInsightId": "FI-413e2eb33855c065"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-b1d07f1a647ba7fb"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-67f4eaa0b0fbc255",
-            "fundingInsightId": "FI-413e2eb33855c065"
+            "provenance": "claim_assertion",
+            "assertionId": ""
           }
         ],
         "entityIds": [
           "EN-b1d07f1a647ba7fb",
-          "EN-f9329ad6e0070082"
+          "EN-f9329ad6e0070082",
+          "EN-4bd78d9884b2d958"
         ]
       }
     ],

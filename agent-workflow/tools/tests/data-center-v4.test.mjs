@@ -149,6 +149,21 @@ test("a versioned technical source title is displayed exactly as published", () 
   }), sourceTitle);
 });
 
+test("publisher decorations are removed from pipe-delimited Chinese source titles", () => {
+  assert.equal(buildEventDisplayTitle({
+    rawDocument: {
+      title_original: "灵初智能已完成20亿融资，获国家队资本投资 | 华兴交易",
+      title_zh: "灵初智能已完成20亿融资，获国家队资本投资 | 华兴交易",
+    },
+  }), "灵初智能已完成20亿融资，获国家队资本投资");
+  assert.equal(buildEventDisplayTitle({
+    rawDocument: {
+      title_original: "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能大脑赛道",
+      title_zh: "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能大脑赛道",
+    },
+  }), "穹彻智能完成新一轮融资，锡创投加码人工智能大脑赛道");
+});
+
 test("a version-only developer package release does not become a commercial or hardware event", () => {
   const quote = "Release: llm-chat-completions-server 0.1a0";
   const source = entry(
@@ -962,6 +977,10 @@ test("superseded roundups and secondary event sources remain outside canonical e
 });
 
 test("index pages, question headlines, roundups, and reaction articles cannot become commercial events", () => {
+  assert.equal(
+    publicEventSourceTitleIssue("硬科技投向标|英特尔发布AI芯片 华为天才再获6亿元融资"),
+    "multi_event_roundup_not_single_event_source",
+  );
   const cases = [
     ["新闻室 \\ Anthropic", "index_or_listing_page_not_event_source"],
     ["企业AI新闻", "index_or_listing_page_not_event_source"],
@@ -1494,6 +1513,13 @@ test("AI relevance evaluator distinguishes industry facts from generic AI wordin
     claims: ["Samsung SDS launched an enterprise AI agent platform for customers."],
     entityNames: ["Samsung SDS"],
     eventType: "product_release"
+  }).accepted, true);
+
+  assert.equal(eventAiRelevanceEvidence({
+    title: "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+    claims: ["北京容芯致远科技有限公司宣布完成数亿元天使轮融资。"],
+    entityNames: ["北京容芯致远科技有限公司"],
+    eventType: "funding"
   }).accepted, true);
 
   assert.equal(eventAiRelevanceEvidence({

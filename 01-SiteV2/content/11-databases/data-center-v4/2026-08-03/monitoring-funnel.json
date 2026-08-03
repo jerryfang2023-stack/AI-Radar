@@ -11,14 +11,13 @@
     ],
     "raw_documents": 108,
     "original_sources": 98,
-    "valid_claims": 34,
+    "valid_claims": 35,
     "observations": 1,
-    "canonical_events": 10,
+    "canonical_events": 11,
     "blocker_counts": {
       "multi_event_roundup_not_single_event_source": 1,
       "no_source_bounded_event": 19,
       "source_outside_daily_window": 54,
-      "no_source_bounded_claim": 1,
       "non_event_or_index_title": 10,
       "repository_page_requires_release_source": 4,
       "opinion_without_source_bounded_event": 1,
@@ -27,9 +26,9 @@
     },
     "rates": {
       "original_source_rate": 0.9074074074074074,
-      "valid_claim_rate": 0.3148148148148148,
-      "observation_rate": 0.029411764705882353,
-      "event_conversion_rate": 0.29411764705882354
+      "valid_claim_rate": 0.32407407407407407,
+      "observation_rate": 0.02857142857142857,
+      "event_conversion_rate": 0.3142857142857143
     }
   },
   {
@@ -43,21 +42,22 @@
       "hardware_shipment_deployment",
       "hardware_supply_agreement"
     ],
-    "raw_documents": 20,
-    "original_sources": 16,
-    "valid_claims": 17,
-    "observations": 10,
-    "canonical_events": 5,
+    "raw_documents": 26,
+    "original_sources": 22,
+    "valid_claims": 34,
+    "observations": 12,
+    "canonical_events": 10,
     "blocker_counts": {
       "source_outside_daily_window": 8,
       "non_event_or_index_title": 2,
       "no_source_bounded_event": 1,
+      "multi_event_roundup_not_single_event_source": 1,
       "raw_source_quality_block": 4
     },
     "rates": {
-      "original_source_rate": 0.8,
-      "valid_claim_rate": 0.85,
-      "observation_rate": 0.5882352941176471,
+      "original_source_rate": 0.8461538461538461,
+      "valid_claim_rate": 1,
+      "observation_rate": 0.35294117647058826,
       "event_conversion_rate": 0.29411764705882354
     }
   }

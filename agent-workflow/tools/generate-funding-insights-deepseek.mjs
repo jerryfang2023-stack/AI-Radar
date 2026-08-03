@@ -12,6 +12,7 @@ import {
   FUNDING_USE_CASE_IDS,
   clean,
   ensureCanonicalFundingEvidence,
+  ensureNamedCompanyEvidence,
   entityResolver,
   fundingInsightProblems,
   latestDataDate,
@@ -388,6 +389,7 @@ export function promptFor(event, company, sources, directions) {
     "analysis.investment_rationale只收录本轮投资机构或其投资人的公开原话。institution必须与financing.investors中的机构名一致；speaker和speaker_role写公开归属；rationale用中文概括机构为何投资；quote逐字复制机构或投资人原文。没有机构原话时返回空数组，不得用公司创始人、媒体或模型判断冒充。",
     "analysis.capital_judgment必须回答资本押注的核心变量、当前估值或融资所依赖的已验证信号，以及判断的证据边界；不得使用“知名机构参与表明看好”“商业化前景广阔”等空泛模板。validated_signals只写来源已验证的业务信号。risks至少一项，用于约束资本判断，不单独扩展成问题清单。",
     "analysis.product_form_id必须选择公司主要面向客户或用户提供的一种核心产品形态。先判断客户实际购买或用户直接使用什么，再判断交付界面；不得因为产品采用某种模型、芯片、机器人或安全技术，或者计划进入某个行业，就把底层技术或未来场景当成主分类。允许值：model、model_api_service、developer_tool、end_user_application、enterprise_software_platform、ai_infrastructure_software、security_software、ai_device、robotic_system、chip_accelerator、ai_compute_system、compute_cloud_service。",
+    "若具身智能公司的当前核心交付是VLA模型、软件栈或工具链，而不是完整机器人本体，product_form_id应使用model或ai_infrastructure_software，market_category_id应使用infrastructure_compute；只有交付完整机器人、车辆或自主机器系统时才使用robotic_system与physical_ai。",
     "analysis.taxonomy_version固定为TAG-V4.1。analysis.market_category_id采用CB Insights AI 100 2026四类框架：infrastructure_compute、enterprise_applications、industry_applications、physical_ai。只有当前产品是实际作用于物理世界的机器人、车辆或自主机器时才用physical_ai；世界模型或未来机器人计划不算。基础模型、数据、开发部署、芯片算力、可观测评估和模型安全属于infrastructure_compute。跨行业企业职能属于enterprise_applications；围绕单一行业专业数据、监管或工作流的产品属于industry_applications。",
     "analysis.market_subcategory_id必须与市场母类一致：基础设施与算力使用data、development_deployment、hardware_computing或observability_evaluation；企业级应用使用customer_support、cyber_physical_security、hr、marketing、productivity_enterprise_workflows、sales或software_development_coding；行业应用使用financial_services、healthcare_life_sciences、industrials、legal或consumer_retail；Physical AI留空。基础设施与算力还必须填写analysis.market_application_id，允许值为synthetic_data、data_preparation_curation、vector_databases、models、ai_development_orchestration、model_deployment、monetization、chips、servers、computing_infrastructure、ai_observability_governance、model_agent_security、fine_tuning、llm_benchmarking_routing；其他母类留空。",
     "analysis.use_case_ids、industry_ids和target_user_ids只在来源支持时填写。industry_ids不得把technology或software当成默认行业；target_user_ids至少一项。",
@@ -641,11 +643,13 @@ async function processEvent(bundle, event, entityIndex, entityDecisions) {
       timeoutMs: 180000,
       validate: (payload) => {
         acceptedPayload = sanitizeResearchPayload(payload, research.sources);
+        ensureNamedCompanyEvidence(acceptedPayload, company, research.sources);
         ensureCanonicalFundingEvidence(acceptedPayload, bundle, event, research.sources);
         return researchPayloadProblems(acceptedPayload, research.sources, directions.map((item) => item.id));
       },
     });
     const payload = acceptedPayload || sanitizeResearchPayload(result.payload, research.sources);
+    ensureNamedCompanyEvidence(payload, company, research.sources);
     ensureCanonicalFundingEvidence(payload, bundle, event, research.sources);
     return {
       event_id: event.event_id,
@@ -764,7 +768,7 @@ async function main() {
     : [];
   for (const result of results) {
     if (result.card) existingByEvent.set(result.event_id, result.card);
-    else if (force) existingByEvent.delete(result.event_id);
+    else if (force && existingByEvent.has(result.event_id)) result.retained_existing = true;
   }
   const queueByEvent = new Map((existing.queue || []).map((item) => [item.event_id, item]));
   for (const event of generationSelection.deduplicated) {
@@ -779,6 +783,7 @@ async function main() {
     });
   }
   for (const result of results) {
+    if (result.retained_existing) continue;
     queueByEvent.set(result.event_id, {
       event_id: result.event_id,
       company_name: result.company_name || "",

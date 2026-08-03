@@ -110,9 +110,17 @@
     "capture_method": "main",
     "extraction_status": "accepted",
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": [],
+    "claim_ids": [
+      "CL-68cb0a445b108a83"
+    ],
+    "entity_mention_ids": [
+      "EM-56dcb1ce96cf9f58",
+      "EM-0f265683066c8384",
+      "EM-93d78962dfc6f3a4"
+    ],
+    "event_candidate_ids": [
+      "EC-389d15309d0e8e20"
+    ],
     "body_ref": "evidence://895c7d4909879605",
     "body_length": 5604,
     "body_storage": "private_evidence_store"
@@ -424,9 +432,15 @@
       "china_market_match_basis": "china_entity:DeepSeek:DeepSeek"
     },
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": [],
+    "claim_ids": [
+      "CL-d44a234a47dcb6dd"
+    ],
+    "entity_mention_ids": [
+      "EM-826834e1b92e7e8b"
+    ],
+    "event_candidate_ids": [
+      "EC-2099e0ce12db0f15"
+    ],
     "body_ref": "evidence://0db85f5486d184d3",
     "body_length": 17287,
     "body_storage": "private_evidence_store"
@@ -2026,9 +2040,17 @@
       "china_market_match_basis": "explicit_market_term:工业和信息化部"
     },
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": [],
+    "claim_ids": [
+      "CL-b63f8ec26977875a",
+      "CL-c363b88204aada1f",
+      "CL-234ad253db5100e8"
+    ],
+    "entity_mention_ids": [
+      "EM-96914a24c8a337f1"
+    ],
+    "event_candidate_ids": [
+      "EC-ceda68a11d18f971"
+    ],
     "body_ref": "evidence://369e970376bab6b7",
     "body_length": 4221,
     "body_storage": "private_evidence_store"
@@ -2059,19 +2081,9 @@
       "china_market_match_basis": "explicit_market_term:工信部"
     },
     "source_update_history": [],
-    "claim_ids": [
-      "CL-ca93c03bcd4cef45",
-      "CL-faa9843ad3567615",
-      "CL-db3cb72b8170e870",
-      "CL-cd92cd03eeefbcbc"
-    ],
-    "entity_mention_ids": [
-      "EM-5b4842665398ad9d",
-      "EM-7c965dad2047c109"
-    ],
-    "event_candidate_ids": [
-      "EC-6538e0e662f2ea32"
-    ],
+    "claim_ids": [],
+    "entity_mention_ids": [],
+    "event_candidate_ids": [],
     "body_ref": "evidence://93bb70368623af6f",
     "body_length": 3289,
     "body_storage": "private_evidence_store"
@@ -3105,6 +3117,13 @@
     "content_hash": "ef1aa49772b166b7",
     "capture_method": "content-container",
     "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "cn-36kr-rss",
+      "source_region": "CN",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:奇点逃逸:奇点逃逸"
+    },
     "source_update_history": [],
     "claim_ids": [
       "CL-5fcba6542eae3789",
@@ -3113,7 +3132,8 @@
     ],
     "entity_mention_ids": [
       "EM-2cef48fa7fe9bace",
-      "EM-97ee8e4ff058024d"
+      "EM-97ee8e4ff058024d",
+      "EM-5056630554b0fffb"
     ],
     "event_candidate_ids": [
       "EC-d7f26fe2e4af403e"
@@ -3462,9 +3482,16 @@
       "china_market_match_basis": "china_entity:DeepSeek:DeepSeek"
     },
     "source_update_history": [],
-    "claim_ids": [],
-    "entity_mention_ids": [],
-    "event_candidate_ids": [],
+    "claim_ids": [
+      "CL-aa8b5e12502decca",
+      "CL-4db5f5b5a60576f5"
+    ],
+    "entity_mention_ids": [
+      "EM-bbb07a2c5d80cbff"
+    ],
+    "event_candidate_ids": [
+      "EC-16868e1ed975e3e8"
+    ],
     "body_ref": "evidence://7a6a7412e478130a",
     "body_length": 781,
     "body_storage": "private_evidence_store"
@@ -6349,6 +6376,643 @@
     "event_candidate_ids": [],
     "body_ref": "evidence://7cbedd0495f01855",
     "body_length": 769,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-6bbfd26bedd3e642",
+    "source_artifact_id": "SA-64b73dc6cf3cffb7",
+    "source_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
+    "canonical_url": "https://m.nbd.com.cn/articles/2026-01-12/4216995.html",
+    "publisher": "每日经济新闻",
+    "author": "",
+    "published_at": "2026-01-12T21:19:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+    "title_zh": "字节、阿里、美团罕见“会师”：自变量机器人获10亿元融资 2026年具身智能竞争转向",
+    "content_hash": "38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:自变量机器人:自变量机器人"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-fed9aed82d31f547",
+      "CL-d482e1b741061df1",
+      "CL-e3699315f67b5802",
+      "CL-ccb68271b324b577"
+    ],
+    "entity_mention_ids": [
+      "EM-1cceae43c38bd7c3",
+      "EM-b2f7885d11e62aac",
+      "EM-917eae5fb8b3964f",
+      "EM-806fe191f066cacb",
+      "EM-80adb7c37cf51918",
+      "EM-6c6f49ddea3e7670"
+    ],
+    "event_candidate_ids": [
+      "EC-1d0f89e2daaeb9cf"
+    ],
+    "body_ref": "evidence://38abb37ae3fb027b28279c50b427ec6700f8fc1e8868df66e1d0b918549335b7",
+    "body_length": 2593,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-30da77b24dd81f48",
+    "source_artifact_id": "SA-bf52de71359c72dd",
+    "source_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",
+    "canonical_url": "https://finance.sina.com.cn/roll/2026-02-23/doc-inhnvivh9606202.shtml",
+    "publisher": "上海证券报",
+    "author": "",
+    "published_at": "2026-02-23T21:20:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "智平方完成10亿元B轮融资 估值超过百亿元",
+    "title_zh": "智平方完成10亿元B轮融资 估值超过百亿元",
+    "content_hash": "bcf31d071eff97490661a4e4005556a546c54ea1def4b5f9be8250f3287409ea",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:智平方:智平方"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-8e39bc2baf7673a7",
+      "CL-c1637d4dd3ce8b37",
+      "CL-879aca68c0787300",
+      "CL-a11a3e3ef43020ca"
+    ],
+    "entity_mention_ids": [
+      "EM-a5e1db9b54e51b9b"
+    ],
+    "event_candidate_ids": [
+      "EC-115150df224e54a5"
+    ],
+    "body_ref": "evidence://bcf31d071eff97490661a4e4005556a546c54ea1def4b5f9be8250f3287409ea",
+    "body_length": 2634,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-8dc769a656dc33fb",
+    "source_artifact_id": "SA-de5cbc6fd2dfbe65",
+    "source_url": "https://www.cls.cn/detail/2300238",
+    "canonical_url": "https://www.cls.cn/detail/2300238",
+    "publisher": "科创板日报",
+    "author": "",
+    "published_at": "2026-03-02T00:00:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
+    "title_zh": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
+    "content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:银河通用:银河通用"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-b585dc66dde5cb20",
+      "CL-8da08a2696772ee0",
+      "CL-6f0c412c6a740266",
+      "CL-97df5504b3d53660"
+    ],
+    "entity_mention_ids": [
+      "EM-2a961be33c9931c7",
+      "EM-233e927a17a6482c",
+      "EM-a40914d7e2dbdcc0"
+    ],
+    "event_candidate_ids": [
+      "EC-834d27cff42a0ca2"
+    ],
+    "body_ref": "evidence://b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
+    "body_length": 2955,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-a6da5d00cf824904",
+    "source_artifact_id": "SA-bee9309fa7819b3a",
+    "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
+    "canonical_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
+    "publisher": "华兴资本",
+    "author": "",
+    "published_at": "2026-03-10T12:08:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "title_zh": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+    "content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:灵初智能:灵初智能"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-07c801f8d960b247",
+      "CL-1f8e2a3fd7eb450f",
+      "CL-c9d8d434c970b2cd",
+      "CL-2c17b75ff741d331"
+    ],
+    "entity_mention_ids": [
+      "EM-377f2037886786bf",
+      "EM-30f5cab5f112a88f"
+    ],
+    "event_candidate_ids": [
+      "EC-98cf4991383dfe60"
+    ],
+    "body_ref": "evidence://20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
+    "body_length": 4143,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-835a3793d8325718",
+    "source_artifact_id": "SA-2700e1f4ef659568",
+    "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
+    "canonical_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
+    "publisher": "每日经济新闻",
+    "author": "",
+    "published_at": "2026-04-07T20:53:35.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+    "title_zh": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
+    "content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:千寻智能:千寻智能"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-311443310bfb88c0",
+      "CL-1356ab6b0cf285e6",
+      "CL-d9149e7f67c6c714",
+      "CL-330a37a7edbed616"
+    ],
+    "entity_mention_ids": [
+      "EM-554d3abeccf73416",
+      "EM-e4709d9ae97a1827",
+      "EM-364182370dbc6d9e"
+    ],
+    "event_candidate_ids": [
+      "EC-8058b908edfca7f0"
+    ],
+    "body_ref": "evidence://4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
+    "body_length": 2766,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-0b85460871c185cb",
+    "source_artifact_id": "SA-356906245fae74c9",
+    "source_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+    "canonical_url": "https://finance.eastmoney.com/a/202604163707925484.html",
+    "publisher": "上海证券报",
+    "author": "",
+    "published_at": "2026-04-17T07:39:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+    "title_zh": "高瓴红杉联手！具身智能赛道融资再创纪录 _ 东方财富网",
+    "content_hash": "7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:它石智航:它石智航"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-4f0ed515351ba8ec",
+      "CL-80178beced6ca9ef",
+      "CL-53500eb46107fc5a",
+      "CL-a5220486f61d3472"
+    ],
+    "entity_mention_ids": [
+      "EM-bba5759cf8c77632",
+      "EM-b012523aaedb9caf"
+    ],
+    "event_candidate_ids": [
+      "EC-027cddc1a9e08112"
+    ],
+    "body_ref": "evidence://7ad7cb41bab5db47a30383b2b2ad0bbfd7c682101da392d211490fd63e3c6cd2",
+    "body_length": 2544,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-3d6ec7be310fc987",
+    "source_artifact_id": "SA-36b990f47bb63e6b",
+    "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+    "canonical_url": "https://news.pedaily.cn/202605/563553.shtml",
+    "publisher": "投资界",
+    "author": "",
+    "published_at": "2026-05-08T09:30:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+    "title_zh": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+    "content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+    "capture_method": "http-fetch:article",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:容芯致远:容芯致远"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-1f5215edce349edc",
+      "CL-a8350c8043b211f1",
+      "CL-a2ec8ca9e40e5fea"
+    ],
+    "entity_mention_ids": [
+      "EM-c53e5cfaebfb7139",
+      "EM-2b95ebe3a8989de1",
+      "EM-48d7a48bd5c8d9bf"
+    ],
+    "event_candidate_ids": [
+      "EC-1c9d24d1a712b6ad"
+    ],
+    "body_ref": "evidence://ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+    "body_length": 2385,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-73e4fd9fc762f2d4",
+    "source_artifact_id": "SA-9d63754768cf8895",
+    "source_url": "https://www.cnfin.com/gs-lb/detail/20260608/4423270_1.html",
+    "canonical_url": "https://www.cnfin.com/gs-lb/detail/20260608/4423270_1.html",
+    "publisher": "新华财经",
+    "author": "",
+    "published_at": "2026-06-08T00:00:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "昆仑元AI完成新一轮战略轮融资 景嘉微战略入股",
+    "title_zh": "昆仑元AI完成新一轮战略轮融资 景嘉微战略入股",
+    "content_hash": "203ac1834df29607fac20b9a6a9729f1b72a9b5b5811428645ff75458081451b",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:昆仑元AI:昆仑元AI"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-85b1441f711de7e5",
+      "CL-14de04b67445ddc3",
+      "CL-9b1fd8e1fd2a9235"
+    ],
+    "entity_mention_ids": [
+      "EM-dd829607294c03c7"
+    ],
+    "event_candidate_ids": [
+      "EC-448d64668e84f106"
+    ],
+    "body_ref": "evidence://203ac1834df29607fac20b9a6a9729f1b72a9b5b5811428645ff75458081451b",
+    "body_length": 2598,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-14135bb9911fccff",
+    "source_artifact_id": "SA-2b02c25067fb131b",
+    "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+    "canonical_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+    "publisher": "无锡市创新投资集团有限公司",
+    "author": "",
+    "published_at": "2026-06-18T00:00:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+    "title_zh": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+    "content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:穹彻智能:穹彻智能"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-2f6fe4014a8b9612",
+      "CL-37f57d97a50c8e40",
+      "CL-05c5aa6d77ab3f93"
+    ],
+    "entity_mention_ids": [
+      "EM-09d5ef6bf2452558",
+      "EM-051048e6872055dd",
+      "EM-a478f1aab56c1a66"
+    ],
+    "event_candidate_ids": [
+      "EC-53221123e766178c"
+    ],
+    "body_ref": "evidence://6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+    "body_length": 1621,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-181ee2a0368674ad",
+    "source_artifact_id": "SA-f073af2e97f7d912",
+    "source_url": "https://www.cnfin.com/gs-lb/detail/20260702/4434609_1.html",
+    "canonical_url": "https://www.cnfin.com/gs-lb/detail/20260702/4434609_1.html",
+    "publisher": "新华财经",
+    "author": "",
+    "published_at": "2026-07-02T00:00:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台",
+    "title_zh": "乐享科技完成近5亿元Pre-A轮融资 机器人订单逾3万台",
+    "content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:乐享科技:乐享科技"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-53a85bd51638ce4e",
+      "CL-4b67057baaf0762f",
+      "CL-5d0e22e3f602e7d4"
+    ],
+    "entity_mention_ids": [
+      "EM-88b9cb46dade93e9"
+    ],
+    "event_candidate_ids": [
+      "EC-e6e40d20de27063d"
+    ],
+    "body_ref": "evidence://62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
+    "body_length": 2130,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-6428bdce98708cbc",
+    "source_artifact_id": "SA-358bedbe365498da",
+    "source_url": "https://www.cnfin.com/gs-lb/detail/20260703/4435436_1.html",
+    "canonical_url": "https://www.cnfin.com/gs-lb/detail/20260703/4435436_1.html",
+    "publisher": "新华财经",
+    "author": "",
+    "published_at": "2026-07-03T00:00:00.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "如身机器人完成亿元级融资 具身智能企业加速场景化突破",
+    "title_zh": "如身机器人完成亿元级融资 具身智能企业加速场景化突破",
+    "content_hash": "4f23d147a6cacb224a3e8ce9b4ede69250ec696549bbd703bc355b9f081065d3",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:如身机器人:如身机器人"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-1f04ab782700f5e2",
+      "CL-f064b7e4a3067f61",
+      "CL-84026dfc9ea29665",
+      "CL-18cd262af5b4ed1c"
+    ],
+    "entity_mention_ids": [
+      "EM-77c1a4c161d31748"
+    ],
+    "event_candidate_ids": [
+      "EC-b1db019c08a3d3c5"
+    ],
+    "body_ref": "evidence://4f23d147a6cacb224a3e8ce9b4ede69250ec696549bbd703bc355b9f081065d3",
+    "body_length": 2166,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-73b9b9814afc7e31",
+    "source_artifact_id": "SA-f85afa8805bbed75",
+    "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+    "canonical_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+    "publisher": "每日经济新闻",
+    "author": "",
+    "published_at": "2026-07-13T17:05:05.000+08:00",
+    "updated_at": "2026-08-03T08:30:00.000+08:00",
+    "captured_at": "2026-08-03T08:30:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+    "title_zh": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
+    "content_hash": "b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:珞博智能:珞博智能"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-3b3f879f1ff4722d",
+      "CL-b0402c265e2c17ba",
+      "CL-c71f990c4ad007ab",
+      "CL-6d470b856a1901ec"
+    ],
+    "entity_mention_ids": [
+      "EM-0ad88b7316628443",
+      "EM-ce856156b7d8c1cf",
+      "EM-727948af2cc788e5"
+    ],
+    "event_candidate_ids": [
+      "EC-8487446d4eed56b0"
+    ],
+    "body_ref": "evidence://b3192b7c4dbd09ca7637f881c0267ff2db33b0e18c79b5c129c34233a6ef5443",
+    "body_length": 1875,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-63acd83d62650fca",
+    "source_artifact_id": "SA-78fc78a388d884ce",
+    "source_url": "https://news.pedaily.cn/202602/561044.shtml",
+    "canonical_url": "https://news.pedaily.cn/202602/561044.shtml",
+    "publisher": "投资界",
+    "author": "",
+    "published_at": "2026-02-14T10:00:00.000+08:00",
+    "updated_at": "2026-08-03T08:35:00.000+08:00",
+    "captured_at": "2026-08-03T08:35:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "无界动力完成超2亿元天使+轮融资",
+    "title_zh": "无界动力完成超2亿元天使+轮融资",
+    "content_hash": "169ed4badea0043ee37e927d69b00e27bd1854e6fefbec3733a33648763f1e31",
+    "capture_method": "http-fetch:article",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:无界动力:无界动力"
+    },
+    "source_update_history": [],
+    "claim_ids": [],
+    "entity_mention_ids": [],
+    "event_candidate_ids": [],
+    "body_ref": "evidence://169ed4badea0043ee37e927d69b00e27bd1854e6fefbec3733a33648763f1e31",
+    "body_length": 1152,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-662df1bd13934135",
+    "source_artifact_id": "SA-a6059bfb9d07169b",
+    "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
+    "canonical_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
+    "publisher": "上海证券报",
+    "author": "",
+    "published_at": "2026-05-09T15:52:00.000+08:00",
+    "updated_at": "2026-08-03T08:35:00.000+08:00",
+    "captured_at": "2026-08-03T08:35:00.000+08:00",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "小雨智造完成数亿元B+轮融资",
+    "title_zh": "小雨智造完成数亿元B+轮融资",
+    "content_hash": "320a14d704f62a2d42fda843b83e1e1542fcc79e50110842dd13af84440e9b2b",
+    "capture_method": "http-fetch:body-visible-text",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:小雨智造:小雨智造"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-b4d9323e05e20845",
+      "CL-3f905b8419af14c4",
+      "CL-2017b4d05648bb4e",
+      "CL-e9d317b9482f8f85"
+    ],
+    "entity_mention_ids": [
+      "EM-808fefa0014cfd5a",
+      "EM-1d5e2942002cde30"
+    ],
+    "event_candidate_ids": [
+      "EC-44b05aa4d3e54842"
+    ],
+    "body_ref": "evidence://320a14d704f62a2d42fda843b83e1e1542fcc79e50110842dd13af84440e9b2b",
+    "body_length": 2944,
+    "body_storage": "private_evidence_store"
+  },
+  {
+    "schema_version": "RAW-V4.0",
+    "raw_id": "RAW-fa4ab187acfbb56d",
+    "source_artifact_id": "SA-3c2d629b5fef6b0f",
+    "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+    "canonical_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+    "publisher": "中证金牛座",
+    "author": "",
+    "published_at": "2026-02-14T11:08:00.000+08:00",
+    "updated_at": "2026-08-03T05:26:16.728Z",
+    "captured_at": "2026-08-03T05:26:16.728Z",
+    "language": "zh",
+    "document_type": "article",
+    "title_original": "无界动力宣布完成超2亿元天使+轮融资",
+    "title_zh": "无界动力宣布完成超2亿元天使+轮融资",
+    "content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+    "capture_method": "http-fetch:article",
+    "extraction_status": "accepted",
+    "market_scope": {
+      "source_registry_id": "",
+      "source_region": "",
+      "market_region": "CN",
+      "china_market_match": true,
+      "china_market_match_basis": "china_entity:无界动力:无界动力"
+    },
+    "source_update_history": [],
+    "claim_ids": [
+      "CL-cdb93470c7ca548d",
+      "CL-6461244f101ee6a9",
+      "CL-7de880dc49ba2957",
+      "CL-458d683cb2b76848"
+    ],
+    "entity_mention_ids": [
+      "EM-6ad1b7b0c465d43d",
+      "EM-0c4d6f97621e70d8",
+      "EM-91b74919a98140b8"
+    ],
+    "event_candidate_ids": [
+      "EC-3a0b6f977f9ca8b6"
+    ],
+    "body_ref": "evidence://f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+    "body_length": 497,
     "body_storage": "private_evidence_store"
   }
 ]

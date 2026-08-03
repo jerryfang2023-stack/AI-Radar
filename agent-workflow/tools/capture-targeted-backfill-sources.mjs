@@ -4,6 +4,12 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  buildSourceIntake,
+  mergeSourceIntakes,
+  readSourceIntake,
+  sourceIntakePath,
+} from "./lib/source-intake-v1.mjs";
 import { resolveSourceTitleTranslation } from "./source-title-translation-generator.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -206,6 +212,7 @@ const requestedTasks = new Set(arg("task", "").split(",").map((value) => value.t
 const selectedSources = (payload.sources || []).filter((source) => !requestedTasks.size || requestedTasks.has(source.task_id));
 const results = [];
 const failures = [];
+const capturedEntries = [];
 
 for (const source of selectedSources) {
   try {
@@ -259,12 +266,31 @@ for (const source of selectedSources) {
       content_hash: contentHash,
       full_text_hash: contentHash,
       raw_qc_decision: "pass",
+      raw_qc_downstream_use: "canonical_extraction_candidate",
+      acquisition_channel: "targeted-backfill",
+      evidence_object_type: "supporting_article",
+      evidence_object_usable: true,
+      evidence_strength: source.source_level === "official" ? "original_source" : "source_class_a",
+      has_full_text: true,
+      origin_fetch_status: "fetched",
+      source_registry_id: source.source_registry_id || "",
+      source_region: source.source_region || "",
+      market_region: source.market_region || "",
+      china_market_match: source.china_market_match === true,
+      china_market_match_basis: source.china_market_match_basis || "",
       targeted_backfill_task_id: source.task_id,
     };
 
     fs.mkdirSync(directory, { recursive: true });
     fs.writeFileSync(markdownFile, markdownSnapshot(source, sourceTitle, translation.titleZh, collectedAt, capturedText), "utf8");
     fs.writeFileSync(jsonFile, `${JSON.stringify(raw, null, 2)}\n`, "utf8");
+    capturedEntries.push({
+      date: source.batch_date,
+      record: raw,
+      jsonPath: jsonFile,
+      markdownPath: markdownFile,
+      pooled: true,
+    });
     results.push({
       task_id: source.task_id,
       batch_date: source.batch_date,
@@ -283,5 +309,33 @@ for (const source of selectedSources) {
   }
 }
 
-console.log(JSON.stringify({ ok: failures.length === 0, captured: results.length, failed: failures.length, results, failures }, null, 2));
+const mergedIntakes = [];
+if (arg("merge-intake", "false") === "true") {
+  const dates = [...new Set(capturedEntries.map((entry) => entry.date))];
+  for (const date of dates) {
+    const entries = capturedEntries.filter((entry) => entry.date === date);
+    const supplemental = buildSourceIntake({ root, date, entries, generatedAt: collectedAt });
+    const current = readSourceIntake(root, date);
+    const merged = current ? mergeSourceIntakes(current.payload, supplemental) : supplemental;
+    const intakeFile = sourceIntakePath(root, date);
+    fs.mkdirSync(path.dirname(intakeFile), { recursive: true });
+    fs.writeFileSync(intakeFile, `${JSON.stringify(merged, null, 2)}\n`, "utf8");
+    mergedIntakes.push({
+      date,
+      intake_file: rel(intakeFile),
+      added_source_artifacts: supplemental.counts.source_artifacts,
+      added_raw_documents: supplemental.counts.raw_documents,
+      total_raw_documents: merged.counts.raw_documents,
+    });
+  }
+}
+
+console.log(JSON.stringify({
+  ok: failures.length === 0,
+  captured: results.length,
+  failed: failures.length,
+  merged_intakes: mergedIntakes,
+  results,
+  failures,
+}, null, 2));
 if (failures.length) process.exitCode = 2;

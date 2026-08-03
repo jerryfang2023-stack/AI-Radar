@@ -12,6 +12,7 @@ import {
   FUNDING_USE_CASE_IDS,
   buildFundingEntityReviewQueue,
   ensureCanonicalFundingEvidence,
+  ensureNamedCompanyEvidence,
   entityResolver,
   fundingEvidenceProofProblems,
   fundingInsightProblems,
@@ -587,8 +588,13 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   );
   assert.match(
     taxonomyClassifier,
-    /write && incrementalInputs\.length[\s\S]*const incremental = args\.get\("refresh"\) !== "true"[\s\S]*\.\.\.existing, \.\.\.missingInputs\.map/u,
-    "the taxonomy classifier must append new funding-card decisions without reclassifying history",
+    /write && incrementalInputs\.length[\s\S]*const incremental = args\.get\("refresh"\) !== "true"[\s\S]*const decisions = inputs\.map\(\(input\) => accumulated\.get\(input\.event_id\)\)/u,
+    "the taxonomy classifier must rebuild the ledger from existing, checkpointed, and new decisions without reclassifying history",
+  );
+  assert.match(
+    taxonomyClassifier,
+    /canonicalEventId = clean\(decision\.canonical_event_id\)[\s\S]*normalized\.canonical_event_id = canonicalEventId/u,
+    "incremental taxonomy normalization must preserve reviewed canonical-event mappings",
   );
   assert.match(taxonomyConsistencyGate, /reviewedByDecisionEvent\.size !== decisionEventIds\.size/u);
   assert.doesNotMatch(taxonomyConsistencyGate, /reviewed funding coverage must be \d+/u);
@@ -651,6 +657,68 @@ test("融资主体可从事件 Claim 证据解析，避免在二次搜索前误�
   assert.equal(subjectCompanyForEvent(event, entities, {}, claims)?.entity_id, "EN-P1");
 });
 
+test("Chinese funding titles resolve the company entity instead of a headline fragment", () => {
+  const cases = [
+    {
+      title: "字节、阿里、美团罕见会师：自变量机器人获10亿元融资",
+      expected: "EN-ZIBIANLIANG",
+      entities: [
+        { entity_id: "EN-FRAGMENT", entity_type: "organization_candidate", canonical_name: "字节、阿里、美团罕见会师：自变量机器人获10亿元" },
+        { entity_id: "EN-ZIBIANLIANG", entity_type: "organization_candidate", canonical_name: "自变量机器人" },
+      ],
+    },
+    {
+      title: "开年最大融资诞生！银河通用再融25亿",
+      expected: "EN-GALBOT",
+      entities: [
+        { entity_id: "EN-GENERIC", entity_type: "organization_candidate", canonical_name: "开年最大", verification_status: "candidate" },
+        { entity_id: "EN-FRAGMENT", entity_type: "organization_candidate", canonical_name: "加上本次融资银河通用累计已斩", verification_status: "candidate" },
+        { entity_id: "EN-GALBOT", entity_type: "organization_candidate", canonical_name: "银河通用", verification_status: "verified" },
+      ],
+    },
+    {
+      title: "灵初智能已完成20亿融资",
+      expected: "EN-LINGCHU",
+      entities: [
+        { entity_id: "EN-FRAGMENT", entity_type: "organization_candidate", canonical_name: "灵初智能已" },
+        { entity_id: "EN-LINGCHU", entity_type: "organization_candidate", canonical_name: "灵初智能" },
+      ],
+    },
+    {
+      title: "穹彻智能完成新一轮融资，锡创投加码人工智能大脑赛道",
+      expected: "EN-NOEMATRIX",
+      entities: [
+        { entity_id: "EN-FRAGMENT", entity_type: "organization_candidate", canonical_name: "锡创动态 | 穹彻智能", verification_status: "candidate" },
+        { entity_id: "EN-NOEMATRIX", entity_type: "organization_candidate", canonical_name: "穹彻智能", verification_status: "verified" },
+      ],
+    },
+    {
+      title: "让Agent在协作中自进化，清华00后博士获千万元融资",
+      expected: "EN-SINGULARITY",
+      entities: [
+        { entity_id: "EN-FRAGMENT", entity_type: "organization_candidate", canonical_name: "让Agent在协作中自进化", verification_status: "candidate" },
+        { entity_id: "EN-SINGULARITY", entity_type: "organization_candidate", canonical_name: "奇点逃逸", verification_status: "verified" },
+      ],
+      claims: [{
+        claim_id: "CL-SINGULARITY",
+        subject: "让Agent在协作中自进化",
+        source_quote: "近日奇点逃逸完成千万级种子轮融资。",
+      }],
+    },
+  ];
+  for (const item of cases) {
+    const event = {
+      display_title_zh: item.title,
+      action: "完成融资",
+      object: "本轮融资",
+      metrics: ["10亿元"],
+      entities: item.entities.map((entity) => entity.entity_id),
+      claim_refs: (item.claims || []).map((claim) => claim.claim_id),
+    };
+    assert.equal(subjectCompanyForEvent(event, item.entities, {}, item.claims || [])?.entity_id, item.expected);
+  }
+});
+
 test("融资主体可从带英文描述前缀的规范实体名中恢复公司名", () => {
   const entities = [{
     entity_id: "EN-PATHWORK",
@@ -692,6 +760,28 @@ test("descriptive startup prefixes never leak into the Funding Insight company n
     },
   });
   assert.equal(normalized.company.name, "Infinity");
+});
+
+test("company normalization relinks a descriptive entity to the exact full-name entity", () => {
+  const normalized = normalizeFundingInsightCard({
+    ...validCard(),
+    company: {
+      ...validCard().company,
+      entity_id: "EN-DESCRIPTIVE",
+      name: "European AI chip startup Axelera",
+      full_name: "Axelera AI",
+    },
+  }, {
+    companies: [{
+      id: "EN-AXELERA",
+      name: "Axelera AI",
+      aliases: [],
+      type: "公司/机构",
+    }],
+  });
+
+  assert.equal(normalized.company.entity_id, "EN-AXELERA");
+  assert.equal(normalized.company.name, "Axelera AI");
 });
 
 test("融资主体没有强主语信号时保持阻断", () => {
@@ -749,6 +839,72 @@ test("DeepSeek 研究结果必须逐项引用已抓取来源原文", () => {
   assert.deepEqual(researchPayloadProblems(payload, [source, productSource], ["DIR-1"]), []);
   payload.financing.investors[0].evidence_refs[0].quote = "source does not contain this";
   assert.ok(researchPayloadProblems(payload, [source, productSource], ["DIR-1"]).includes("investor_1_evidence_1_quote_mismatch"));
+});
+
+test("named investors recover an exact financing sentence when the model quote is not verbatim", () => {
+  const body = "昆仑元AI宣布完成战略轮融资。本轮融资由长沙景美集成电路设计有限公司独家领投，投资金额人民币5000万元。";
+  const payload = {
+    financing: {
+      evidence_refs: [],
+      investors: [{
+        name: "长沙景美集成电路设计有限公司",
+        role: "本轮独家领投",
+        evidence_refs: [{ source_id: "SRC-1", quote: "景美独家领投5000万元" }],
+      }],
+      other_round_investors: [],
+    },
+    products: [], customers: [], comparisons: [], metrics: [], quotes: [],
+  };
+  const sanitized = sanitizeResearchPayload(payload, [{ source_id: "SRC-1", body_clean: body }]);
+  assert.deepEqual(sanitized.financing.investors[0].evidence_refs, [{
+    source_id: "SRC-1",
+    quote: "本轮融资由长沙景美集成电路设计有限公司独家领投，投资金额人民币5000万元。",
+  }]);
+});
+
+test("company evidence recovers an exact source sentence from the canonical company name", () => {
+  const payload = { company: { full_name: "穹彻智能科技有限公司", evidence_refs: [] } };
+  ensureNamedCompanyEvidence(payload, { canonical_name: "穹彻智能" }, [{
+    source_id: "SRC-1",
+    body_clean: "锡创动态。穹彻智能完成新一轮融资，专注具身智能大脑研发。",
+  }]);
+  assert.deepEqual(payload.company.evidence_refs, [{
+    source_id: "SRC-1",
+    quote: "穹彻智能完成新一轮融资，专注具身智能大脑研发。",
+  }]);
+});
+
+test("optional controlled taxonomy arrays discard unknown model values", () => {
+  const payload = {
+    financing: { investors: [], other_round_investors: [] },
+    products: [], customers: [], comparisons: [], metrics: [], quotes: [],
+    analysis: {
+      use_case_ids: ["physical_automation", "invented_use_case"],
+      industry_ids: ["retail_ecommerce", "robotics"],
+      target_user_ids: ["consumer", "home_owner"],
+      investment_rationale: [],
+    },
+  };
+  const sanitized = sanitizeResearchPayload(payload, []);
+  assert.deepEqual(sanitized.analysis.use_case_ids, ["physical_automation"]);
+  assert.deepEqual(sanitized.analysis.industry_ids, ["retail_ecommerce"]);
+  assert.deepEqual(sanitized.analysis.target_user_ids, ["consumer"]);
+});
+
+test("infrastructure application IDs restore their unique parent subcategory", () => {
+  const payload = {
+    financing: { investors: [], other_round_investors: [] },
+    products: [], customers: [], comparisons: [], metrics: [], quotes: [],
+    analysis: {
+      market_category_id: "infrastructure_compute",
+      market_subcategory_id: "hardware_computing",
+      market_application_id: "models",
+      use_case_ids: [], industry_ids: [], target_user_ids: [], investment_rationale: [],
+    },
+  };
+  const sanitized = sanitizeResearchPayload(payload, []);
+  assert.equal(sanitized.analysis.market_subcategory_id, "development_deployment");
+  assert.equal(sanitized.analysis.market_application_id, "models");
 });
 
 test("DeepSeek 可用未披露状态表达只有泛称、没有具体名称的投资方", () => {
