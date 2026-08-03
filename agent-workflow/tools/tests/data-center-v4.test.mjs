@@ -969,6 +969,7 @@ test("index pages, question headlines, roundups, and reaction articles cannot be
     ["Funding Breaking News and Press Releases from Business Wire", "index_or_listing_page_not_event_source"],
     ["智能体AI能否让美国制造业回归？", "question_headline_not_event_specific"],
     ["AI巨头斥资数十亿美元布局企业部署", "multi_event_roundup_not_single_event_source"],
+    ["Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier", "multi_event_roundup_not_single_event_source"],
     ["OpenAI 总裁布罗克曼回应苹果诉讼：无意窃取商业机密", "reaction_or_commentary_not_new_event"],
   ];
 
@@ -1987,6 +1988,19 @@ test("China market scope survives the canonical Raw and Event build", () => {
     source_registry_ids: ["cn-deepseek-news"],
     claim_refs: bundle.canonical_events[0].claim_refs,
   });
+});
+
+test("Biren aliases resolve to the reviewed stable company identity", () => {
+  const source = entry(
+    "biren-stable-identity",
+    "Biren Technology raises $700 million for AI chip development",
+    "Biren Technology raised $700 million in a completed financing round for AI chip development. The company said the capital will support its GPU product roadmap and commercial deployment.",
+  );
+  const bundle = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  const biren = bundle.entities.find((entity) => entity.canonical_name === "壁仞科技");
+
+  assert.equal(biren?.entity_id, "EN-721eb3fd31f8e1f6");
+  assert.equal(bundle.entities.some((entity) => entity.canonical_name === "Biren Technology"), false);
 });
 
 test("a Chinese competitor mention does not make a foreign actor a China-origin event", () => {

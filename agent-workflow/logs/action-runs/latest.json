@@ -1,29 +1,48 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-02T05:04:34.669Z",
-  "date": "2026-08-02",
-  "action": "Operations telemetry and health",
-  "action_status": "current",
+  "generated_at": "2026-08-03T01:40:02.887Z",
+  "date": "2026-08-03",
+  "action": "Repair daily column publication",
+  "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Expanded the mobile event-theme filter to full width after the frontstage smoke gate found an undersized control.",
-  "contexts": [],
+  "summary": "Blocked multi-model roundups from overwriting a reviewed release event, aligned Biren aliases to the reviewed entity, preferred verified aliases over funding candidates, and refreshed the First-Line Viewpoints adapter.",
+  "contexts": [
+    "context/11-hermes-daily-supervision-instructions.md",
+    "context/10-experience-automation.md"
+  ],
   "changed_files": [
-    "01-SiteV2/site/assets/data-center-v4.css"
+    "01-SiteV2/content/11-databases/china-market-entity-aliases-v1.json",
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/tests/data-center-v4.test.mjs",
+    "agent-workflow/tools/tests/china-market-v1.test.mjs",
+    "01-SiteV2/site/data/data-center-v4-frontstage.json"
   ],
   "outputs": [],
   "checks": [
-    "npm run test:v4-frontstage-smoke"
+    "128 Data Center and China-market tests passed",
+    "62 Data Center site core tests passed",
+    "Community Intelligence gate passed",
+    "Follow Builders gate passed",
+    "First-Line Viewpoints gate passed",
+    "China market bundle gate passed"
   ],
   "issues": [
-    "mobile event topic selector failed the minimum-width interaction gate"
+    "Business Signals failed Data Center V4 materialization twice",
+    "First-Line Viewpoints and Data Center adapter counts diverged"
   ],
-  "risks": [],
+  "risks": [
+    "2026-08-03 production still requires a successful GitHub workflow rerun"
+  ],
   "lessons": [
-    "mobile filter additions must be included in the full-width event toolbar selector set"
+    "Roundup titles must not enter single-event clustering",
+    "Verified aliases must outrank extracted funding candidates"
   ],
-  "reusable_rules": [],
+  "reusable_rules": [
+    "Reject numbered multi-model roundup titles",
+    "Deduplicate identical organization mentions in favor of verified aliases"
+  ],
   "retired_flags": [],
   "notes": []
 }
