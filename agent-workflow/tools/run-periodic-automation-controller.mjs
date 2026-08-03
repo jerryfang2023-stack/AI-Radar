@@ -252,7 +252,20 @@ function main() {
     ? workerRun(phase === "weekly-report" ? "weekly" : "monthly")
     : phase === "weekly-health" ? weeklyHealth() : isolatedReportRun(phase === "weekly-report" ? "weekly" : "monthly");
   const report = writeControllerReport(result);
-  console.log(JSON.stringify({ ok: result.ok, status: result.status, phase, date, branch: result.branch || "", report: rel(report.jsonPath) }, null, 2));
+  const diagnostics = result.ok
+    ? []
+    : (result.actions || [])
+      .filter((item) => !item.ok)
+      .map((item) => ({ label: item.label, status: item.status, stdout: item.stdout, stderr: item.stderr }));
+  console.log(JSON.stringify({
+    ok: result.ok,
+    status: result.status,
+    phase,
+    date,
+    branch: result.branch || "",
+    report: rel(report.jsonPath),
+    ...(diagnostics.length ? { diagnostics } : {}),
+  }, null, 2));
   if (!result.ok) process.exit(1);
 }
 

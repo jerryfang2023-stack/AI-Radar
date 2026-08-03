@@ -16,6 +16,10 @@ const date = args.get("date") || "";
 const windowStart = args.get("window-start") || "";
 const windowEnd = args.get("window-end") || "";
 const ACCEPTED_EVENT_STATES = new Set(["verified", "partial"]);
+const configuredReportTimeoutMs = Number(process.env.DEEPSEEK_PERIODIC_REPORT_TIMEOUT_MS || 300000);
+const reportTimeoutMs = Number.isFinite(configuredReportTimeoutMs) && configuredReportTimeoutMs > 0
+  ? Math.max(180000, configuredReportTimeoutMs)
+  : 300000;
 
 function readJson(file, fallback = null) {
   try { return JSON.parse(fs.readFileSync(file, "utf8")); } catch { return fallback; }
@@ -151,7 +155,7 @@ async function main() {
     model: deepSeekModels().pro,
     messages: [{ role: "user", content: prompt(manifest) }],
     maxTokens: 7000,
-    timeoutMs: 180000,
+    timeoutMs: reportTimeoutMs,
     validate: (payload) => validateReport(payload, evidenceKinds, sectionCount),
   });
   const frontmatter = kind === "weekly"

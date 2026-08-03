@@ -1,39 +1,36 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-03T02:17:55.420Z",
+  "generated_at": "2026-08-03T02:35:26.953Z",
   "date": "2026-08-03",
-  "action": "community-intelligence",
+  "action": "weekly-report",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "scheduled-repair",
-  "status": "success",
-  "summary": "Restarted the unresponsive dedicated Community Chrome; collected and published 39 items and 80 links; added automatic CDP-timeout self-healing for future scheduled retries.",
+  "trigger": "workflow-repair",
+  "status": "partial",
+  "summary": "Raised the periodic report DeepSeek timeout from 180 to 300 seconds after two cloud runs failed at the timeout boundary while the exact local request completed in 80 seconds; added failed child diagnostics to controller output.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/run-community-intelligence.ps1",
+    "agent-workflow/tools/generate-periodic-report-deepseek.mjs",
+    "agent-workflow/tools/run-periodic-automation-controller.mjs",
     "agent-workflow/tools/tests/daily-automation-runtime.test.mjs"
   ],
-  "outputs": [
-    "PR #540",
-    "2026-08-03 community data"
-  ],
+  "outputs": [],
   "checks": [
-    "Community gate passed with 39 items and 80 links",
-    "PowerShell parser passed",
+    "Exact local weekly generation succeeded with 219 signals and 33 opinions and 186 community items",
     "16 targeted tests passed",
-    "PR #540 merged"
+    "controller dry run resolved 2026-07-27 through 2026-08-02"
   ],
   "issues": [
-    "Chrome HTTP CDP health check passed while the CDP WebSocket session stopped responding."
+    "Cloud weekly generation failed twice after about 190 seconds with content_generation_failed."
   ],
   "risks": [
-    "Restart is restricted to Chrome processes using the dedicated community profile and configured debugging port."
+    "The workflow can now wait up to five minutes for the report model while remaining inside its 45-minute job limit."
   ],
   "lessons": [
-    "HTTP CDP availability alone does not prove Playwright session responsiveness."
+    "Cloud model latency can exceed local latency and failures must retain child stderr."
   ],
   "reusable_rules": [
-    "On connectOverCDP timeout restart only the dedicated community browser and retry immediately."
+    "Use a five-minute report-generation timeout and print failed action diagnostics."
   ],
   "retired_flags": [],
   "notes": []

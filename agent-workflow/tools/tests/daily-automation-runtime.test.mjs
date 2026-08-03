@@ -38,6 +38,15 @@ test("closure reuses its self-check instead of running it twice", () => {
   assert.match(controller, /write-recurring-production-incidents\.mjs[^]*--reports-dir=/u);
 });
 
+test("periodic reports tolerate slower cloud generation and expose failed child diagnostics", () => {
+  const generator = read("generate-periodic-report-deepseek.mjs");
+  const controller = read("run-periodic-automation-controller.mjs");
+  assert.match(generator, /DEEPSEEK_PERIODIC_REPORT_TIMEOUT_MS \|\| 300000/u);
+  assert.match(generator, /timeoutMs: reportTimeoutMs/u);
+  assert.match(controller, /filter\(\(item\) => !item\.ok\)/u);
+  assert.match(controller, /\{ label: item\.label, status: item\.status, stdout: item\.stdout, stderr: item\.stderr \}/u);
+});
+
 test("Codex repair runs from a clean isolated worktree", () => {
   const repair = read("run-codex-self-repair.mjs");
   assert.match(repair, /\["worktree", "add", "-b", branch, repairRoot, "origin\/main"\]/u);
