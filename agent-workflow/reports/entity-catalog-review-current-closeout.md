@@ -1,14 +1,14 @@
 # Current Entity Catalog Review Closeout
 
-- Generated: 2026-07-26T16:23:11.511Z
+- Generated: 2026-08-03T07:15:00.000Z
 - Current catalog reviewed: 533
-- Claim-backed entities added: 8
-- Historical decisions retained: 342
-- Total explicit decisions: 876
-- Confirmed: 363
-- Corrected: 170
-- Merged: 107
-- Quarantined: 236
+- Claim-backed entities added: 22
+- Historical decisions retained: 347
+- Total explicit decisions: 895
+- Confirmed: 368
+- Corrected: 184
+- Merged: 108
+- Quarantined: 235
 
 ## Current corrections and merges
 
@@ -19,16 +19,26 @@
 | 阿里云 | 阿里云 | company | correct |  |
 | 华为 | 华为 | company | merge |  |
 | Huawei | 华为 | company | correct |  |
+| 灵初智能 | 灵初智能 | company | correct |  |
+| 美团 | 美团 | company | merge |  |
 | 努比亚 | 努比亚 | company | merge |  |
 | Nubia | 努比亚 | company | correct |  |
 | 诺基亚 | 诺基亚 | company | correct |  |
 | 诺基亚 | 诺基亚 | company | merge |  |
+| 奇点逃逸 | 奇点逃逸 | company | correct |  |
+| 千寻智能 | 千寻智能 | company | correct |  |
+| 穹彻智能 | 穹彻智能 | company | correct |  |
+| 容芯致远 | 容芯致远 | company | correct |  |
 | 商汤 | 商汤科技 | company | merge |  |
 | 商汤科技 | 商汤科技 | company | correct |  |
+| 它石智航 | 它石智航 | company | correct |  |
 | 腾讯 | 腾讯 | company | merge |  |
 | 腾讯 | 腾讯 | company | correct |  |
+| 无界动力 | 无界动力 | company | correct |  |
+| 银河通用 | 银河通用 | company | correct |  |
 | 智谱AI | 智谱AI | company | correct |  |
 | 智谱 | 智谱AI | company | merge |  |
+| 自变量机器人 | 自变量机器人 | company | correct |  |
 | BrainCo 强脑科技 | BrainCo 强脑科技 | company | correct |  |
 | Entire | Entire | company | correct |  |
 | Featherless.ai | Featherless.ai | company | correct |  |
@@ -39,7 +49,11 @@
 | LaunchDarkly | LaunchDarkly | company | correct |  |
 | LM Studio | LM Studio | company | correct |  |
 | OpenBMB | OpenBMB | company | correct |  |
+| Parabola | Parabola | company | correct |  |
+| Quash | Quash | company | correct |  |
 | Red Hat | Red Hat | company | correct |  |
+| TensorWave Inc. | TensorWave Inc. | company | correct |  |
+| The Home Depot | The Home Depot | company | correct |  |
 | SpaceXAI | xAI | company | merge |  |
 | SpaceXAI | xAI | company | merge |  |
 | xAI | xAI | company | correct |  |
