@@ -5,13 +5,41 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T06:26:49.223Z",
-    "latestDataDate": "2026-08-02",
-    "currentDate": "2026-08-02",
-    "eventCount": 1779,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
   },
   "hardware": [
+    {
+      "id": "HW-df8fb3396e493a21",
+      "eventId": "EV-64178e5d858f5e25",
+      "dataDate": "2026-08-03",
+      "date": "2026-08-01",
+      "title": "百时美施贵宝在NVIDIA Vera Rubin上构建生命科学行业最先进的AI工厂 - Future Tech Markets",
+      "hardwareType": "compute_cluster",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "Bristol Myers Squibb",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://futuretechmarkets.com/markets/bristol-myers-squibb-building-life-science-industry-s-most-advanced-ai-factory-on-nvidia-vera-rubin-16",
+      "sourceName": "futuretechmarkets.com",
+      "sourceDate": "2026-08-01",
+      "entityIds": [
+        "EN-99f9ebbef37fcec5",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HW-eb5bba1ad6c016b0",
       "eventId": "EV-eb12fb9dd08e5aad",
@@ -1998,6 +2026,288 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-8eb9e3e3cf6ea367",
+      "snapshotKey": "8eb9e3e3cf6ea367",
+      "snapshotId": "HWS-12dc4775928bb24b",
+      "eventId": "EV-b40ba79822469bc0",
+      "eventIds": [
+        "EV-b40ba79822469bc0"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "启元机器人",
+      "subject": "启元机器人",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b9abe4e7e221d517"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-d7968ea4e7f9b569",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人 - IT之家",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-820a454684276421",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-3d3f98fda91aaf6b",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-46137d43b05cd905",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-b9abe4e7e221d517",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T08:30:31.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 2 日消息，上纬新材料科技股份有限公司（上纬新材）旗下消费级具身智能品牌“启元机器人”在 2026 年度 ChinaJoy 期间官宣与暴雪《魔兽世界》进行合作，推出活动限定“鱼人定制款”启元 Q1。",
+          "event_refs": [
+            "EV-b40ba79822469bc0"
+          ],
+          "claim_ref": "CL-8f334a11526d331d",
+          "source_refs": [
+            "SA-ef4ab2531521893b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-85f0c155e340fb63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/984/758.htm",
+      "entityIds": [
+        "EN-85f0c155e340fb63",
+        "EN-0f09eb70713e0871"
+      ]
+    },
+    {
+      "id": "HWC-f9ce7e8019f87b4d",
+      "snapshotKey": "f9ce7e8019f87b4d",
+      "snapshotId": "HWS-382d281710158461",
+      "eventId": "EV-7a44a47bf36780d2",
+      "eventIds": [
+        "EV-7a44a47bf36780d2"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "已累计",
+      "subject": "已累计",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b8b618179d22fd12"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-b8b618179d22fd12",
+          "fact_type": "product",
+          "observed_at": "2026-08-03T00:20:51.578Z",
+          "subject_entity_id": "EN-b3a88b3e12ba162d",
+          "subject_name": "已累计",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "2022年8月，壁仞科技在成立三年后发布了首款通用GPU芯片BR100系列，包括BR104和BR100两大产品。",
+          "event_refs": [
+            "EV-7a44a47bf36780d2"
+          ],
+          "claim_ref": "CL-4c5bd4a14f213b0e",
+          "source_refs": [
+            "SA-9e245d9c6509da9f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://cls.cn/detail/1797038",
+      "entityIds": [
+        "EN-b3a88b3e12ba162d",
+        "EN-721eb3fd31f8e1f6"
+      ]
+    },
+    {
+      "id": "HWC-8a14701399222eed",
+      "snapshotKey": "8a14701399222eed",
+      "snapshotId": "HWS-636d17ef714033a3",
+      "eventId": "EV-140aab677738351f",
+      "eventIds": [
+        "EV-140aab677738351f"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "Majestic Labs",
+      "subject": "Majestic Labs",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-2f95b8eba8e9cc1e"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-7fae02622265fa46",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T02:06:47.000Z",
+          "subject_entity_id": "EN-adb4b0aa1de289f9",
+          "subject_name": "Majestic Labs",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "8",
+          "unit": "TB",
+          "source_quote": "初创公司 Majestic 推出 AI 服务器“普罗米修斯”，可选配 8TB-128TB LPDDR6 内存 - IT之家",
+          "event_refs": [
+            "EV-140aab677738351f"
+          ],
+          "claim_ref": "CL-faf345884789dd41",
+          "source_refs": [
+            "SA-e3c8fad991c2b368"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-f796be4e2c90f66a",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T02:06:47.000Z",
+          "subject_entity_id": "EN-adb4b0aa1de289f9",
+          "subject_name": "Majestic Labs",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "8",
+          "unit": "TB",
+          "source_quote": "初创公司 Majestic 推出 AI 服务器“普罗米修斯”，可选配 8TB-128TB LPDDR6 内存",
+          "event_refs": [
+            "EV-140aab677738351f"
+          ],
+          "claim_ref": "CL-64732a94f2b46175",
+          "source_refs": [
+            "SA-e3c8fad991c2b368"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-2f95b8eba8e9cc1e",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T02:06:47.000Z",
+          "subject_entity_id": "EN-adb4b0aa1de289f9",
+          "subject_name": "Majestic Labs",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 2 日消息，据科技媒体 TechRadar 今天报道，初创公司 Majestic Labs 最近宣布推出 Prometheus（普罗米修斯） AI 服务器。",
+          "event_refs": [
+            "EV-140aab677738351f"
+          ],
+          "claim_ref": "CL-b9397bf81adb300f",
+          "source_refs": [
+            "SA-e3c8fad991c2b368"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/984/671.htm",
+      "entityIds": [
+        "EN-adb4b0aa1de289f9"
+      ]
+    },
     {
       "id": "HWC-157ac314541955fe",
       "snapshotKey": "157ac314541955fe",
@@ -4545,35 +4855,35 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-08-02",
-      "funnel_id": "LF-4ae46788e72e5b7b",
+      "data_date": "2026-08-03",
+      "funnel_id": "LF-d6cb1d485073e15d",
       "lens": "hardware",
-      "date": "2026-08-02",
+      "date": "2026-08-03",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_oem_odm",
         "hardware_product_specs",
-        "hardware_shipment_deployment"
+        "hardware_shipment_deployment",
+        "hardware_supply_agreement"
       ],
-      "raw_documents": 19,
-      "original_sources": 15,
-      "valid_claims": 1,
-      "observations": 6,
-      "canonical_events": 1,
+      "raw_documents": 20,
+      "original_sources": 16,
+      "valid_claims": 17,
+      "observations": 10,
+      "canonical_events": 5,
       "blocker_counts": {
-        "source_outside_daily_window": 9,
-        "rumor_requires_primary_confirmation": 2,
-        "source_outside_funding_backfill_window": 1,
+        "source_outside_daily_window": 8,
+        "non_event_or_index_title": 2,
         "no_source_bounded_event": 1,
         "raw_source_quality_block": 4
       },
       "rates": {
-        "original_source_rate": 0.7894736842105263,
-        "valid_claim_rate": 0.05263157894736842,
-        "observation_rate": 1,
-        "event_conversion_rate": 1
+        "original_source_rate": 0.8,
+        "valid_claim_rate": 0.85,
+        "observation_rate": 0.5882352941176471,
+        "event_conversion_rate": 0.29411764705882354
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-02/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/monitoring-funnel.json"
     }
   ]
 }

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-08-02T06:26:49.223Z",
-    "latestDataDate": "2026-08-02",
-    "currentDate": "2026-08-02",
-    "eventCount": 1779,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
   },
   "entity": {
     "id": "EN-bbdefa2950f49882",
@@ -58,6 +58,8 @@
       "EV-f949fd95df58d42d",
       "EV-97747aee0cafd9f3",
       "EV-c0a65877001ed413",
+      "EV-5e85bc91a6924760",
+      "EV-ab1b780e6e543b42",
       "EV-cf4da5583e9311d7",
       "EV-ebd76d18d3f0ee7b",
       "EV-60110525440fac47",
@@ -208,6 +210,7 @@
       "TX-technology-tool_use"
     ],
     "relatedEntityIds": [
+      "EN-307557d99a7eb726",
       "EN-8d323d8bba783aa3",
       "EN-18f0900d6c487f59",
       "EN-a85d5a9b4a77d59b",
@@ -227,8 +230,9 @@
       "EN-bdfecbcd7dbf76d2"
     ],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-08-02",
+    "lastSeen": "2026-08-03",
     "relationIds": [
+      "REL2-a675a7f7bd02161e",
       "REL2-f6e62982e0b3d7d6",
       "REL2-a5a15f09d4da8135",
       "REL2-066894debed9bb20",
@@ -306,6 +310,8 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-5e85bc91a6924760",
+        "EV-ab1b780e6e543b42",
         "EV-cf4da5583e9311d7",
         "EV-ebd76d18d3f0ee7b",
         "EV-60110525440fac47",
@@ -436,25 +442,90 @@
     },
     "timeline": [
       {
-        "id": "EV-a4b7cd533b0b34dc",
-        "dataDate": "2026-08-02",
-        "date": "2026-08-01",
-        "eventType": "deployment",
-        "eventTypeLabel": "部署",
-        "eventGroup": "部署与案例",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "谷歌地球 AI 生图功能上线不到一天即下架，可无限制生成\"灾难\"图片",
-        "displayTags": [],
+        "id": "EV-5e85bc91a6924760",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-02",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌 Gemini Spark 智能体向全球更多用户开放，支持订机票、整理收件箱",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-307557d99a7eb726"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "entityIds": [
-          "EN-80bfdb50ee025168",
           "EN-bbdefa2950f49882",
-          "EN-ea3bd73e2b506e00"
+          "EN-307557d99a7eb726"
+        ]
+      },
+      {
+        "id": "EV-ab1b780e6e543b42",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-01",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "GreenCore Solutions Corp. (GSC) 推出 -- 代理合作伙伴计划 (APP) -- 面向代理快消品客户的 AI 智能体",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-d0cdc9650aa64450"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-d0cdc9650aa64450"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d0cdc9650aa64450",
+          "EN-9fbf261b62c1d7c0",
+          "EN-bbdefa2950f49882",
+          "EN-9481854d4b3de511",
+          "EN-079e02f095976cad",
+          "EN-b3d87dc46afd1a3d"
         ]
       },
       {
         "id": "EV-cf4da5583e9311d7",
-        "dataDate": "2026-08-02",
+        "dataDate": "2026-08-03",
         "date": "2026-07-31",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
@@ -478,6 +549,23 @@
         "entityIds": [
           "EN-bbdefa2950f49882",
           "EN-a5ba7c1a2375f0d4"
+        ]
+      },
+      {
+        "id": "EV-a4b7cd533b0b34dc",
+        "dataDate": "2026-08-02",
+        "date": "2026-08-01",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "谷歌地球 AI 生图功能上线不到一天即下架，可无限制生成\"灾难\"图片",
+        "displayTags": [],
+        "entityIds": [
+          "EN-80bfdb50ee025168",
+          "EN-bbdefa2950f49882",
+          "EN-ea3bd73e2b506e00"
         ]
       },
       {
@@ -5591,6 +5679,32 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-307557d99a7eb726",
+      "name": "Gemini Spark",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5e85bc91a6924760",
+        "EV-8aead769e84de342",
+        "EV-982a92fc86f1d20c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-08-03"
+    },
+    {
       "id": "EN-8d323d8bba783aa3",
       "name": "Google Cloud",
       "entityType": "organization_candidate",
@@ -5999,6 +6113,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-a675a7f7bd02161e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-307557d99a7eb726",
+      "object_type": "entity",
+      "event_id": "EV-5e85bc91a6924760",
+      "claim_refs": [
+        "CL-e195d7727b181bec",
+        "CL-39ec4a2b7d6bd317",
+        "CL-f2323adffd6b687f",
+        "CL-0bc77417b3b9ac0e"
+      ],
+      "source_refs": [
+        "SA-409f38aff93df4c5"
+      ],
+      "data_date": "2026-08-03",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-f6e62982e0b3d7d6",
       "relationship_version": "RELATION-V2.1",
@@ -6584,10 +6719,10 @@
         "EV-914ca1cbc6359ce5",
         "EV-2a78dd5feb40a78a",
         "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
         "EV-a64fab2ce6bc6c4c",
         "EV-ccbf97fdf4dc11d0",
+        "EV-3fb827f44ea109de",
         "EV-754e83c2d19005fe",
         "EV-6be89ebfbf8de6be",
         "EV-b29878fdf79f2ac5",
@@ -6804,7 +6939,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-target_user-business_user",
@@ -6821,10 +6956,10 @@
         "EV-2a78dd5feb40a78a",
         "EV-33b3cf34f8ff7bd8",
         "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
         "EV-9b81b0dd09a046ab",
         "EV-a64fab2ce6bc6c4c",
+        "EV-3fb827f44ea109de",
         "EV-754e83c2d19005fe",
         "EV-fcf3c464260b6730",
         "EV-2069f6a931b8c9d6",
@@ -6970,6 +7105,7 @@
         "EV-43301de739fe560e",
         "EV-7f2811d2272cf4a3",
         "EV-c0a65877001ed413",
+        "EV-890ffd351486b884",
         "EV-4c949b6aac6d26e7",
         "EV-59fb7ba1fd6ac55e",
         "EV-385dc1ac09a211bd",
@@ -7135,6 +7271,7 @@
         "EN-50e2a4156631df49",
         "EN-b1d07f1a647ba7fb",
         "EN-3474e24464fc25a7",
+        "EN-a899a3dde1d51caf",
         "EN-9fbf261b62c1d7c0",
         "EN-a7baed72c308ce88",
         "EN-3f726694f178ed7a",
@@ -7158,7 +7295,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -7174,8 +7311,8 @@
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
         "EV-136b2edc9b9f3be8",
-        "EV-3fb827f44ea109de",
         "EV-bffc68e7bb4d598b",
+        "EV-3fb827f44ea109de",
         "EV-901155ab700a7e8e",
         "EV-2069f6a931b8c9d6",
         "EV-c84b6d7338f87990",
@@ -7269,6 +7406,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-acddfa62aabb004f",
         "EV-fd825cd7f7997fc8",
         "EV-57944eebac69d510",
         "EV-2d9fde7bc0cd7a22",
@@ -7289,7 +7427,6 @@
         "EV-9efcf6480f6c6f48",
         "EV-bc99fb915c25ace4",
         "EV-6ef10e278f3c25a9",
-        "EV-acddfa62aabb004f",
         "EV-eb2b4ee2c8cb0daa",
         "EV-e869f17214557633",
         "EV-046caa2b3d6fbdde",
@@ -7344,7 +7481,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-dc75a3b8c63ed706",
+        "EV-5e85bc91a6924760",
         "EV-f3e0915e13bcc5a1",
+        "EV-ab1b780e6e543b42",
         "EV-60110525440fac47",
         "EV-4c949b6aac6d26e7",
         "EV-a4fe78df6ccd63c8",
@@ -7716,6 +7856,9 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-bbdefa2950f49882",
+        "EN-307557d99a7eb726",
+        "EN-d0cdc9650aa64450",
         "EN-30397d0cfc1b0e29",
         "EN-07035a20899a7cd7",
         "EN-45d780f82c9247fc",
@@ -7736,7 +7879,6 @@
         "EN-ba728f8ca730921f",
         "EN-7c094d35e3b700c8",
         "EN-0d1e478de2157d48",
-        "EN-bbdefa2950f49882",
         "EN-52c2f30b6bda5898",
         "EN-2a2aa0512b8ea131",
         "EN-49f756463ad9dcfb",
@@ -7783,7 +7925,6 @@
         "EN-42f0b44cc91cc5e0",
         "EN-09c344df70df9660",
         "EN-c31a277efac23f52",
-        "EN-307557d99a7eb726",
         "EN-96a4bc2602655473",
         "EN-4adc2faea521b1f1",
         "EN-e473f24d4325d51a",
@@ -7849,6 +7990,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-13bbc5471db90438",
         "FDE-e32500a9c4f90e91",
         "FDE-b44bbcf1ee8caad0",
         "FDE-e79a238725a98c06",
@@ -7857,7 +7999,6 @@
         "FDE-8c57145ddc067b7d",
         "FDE-33ed0bdb7b19e3d1",
         "FDE-5c2969f5c749383b",
-        "FDE-13bbc5471db90438",
         "FDE-bf7ee7f3e62e9a3b",
         "FDE-3e499215265a81d5",
         "FDE-62f660a9a90bc3f6",
@@ -8394,7 +8535,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-product_form-end_user_application",
@@ -8606,6 +8747,7 @@
         "EV-cded77b1de2db61a",
         "EV-7585b033d4005977",
         "EV-4eb0556b8c72d410",
+        "EV-64178e5d858f5e25",
         "EV-67212040ee9cd7c8",
         "EV-7012e774379b9c11",
         "EV-b4f69c41e23c7ce0",
@@ -8685,11 +8827,11 @@
         "EN-a83a3af1a4866fd5",
         "EN-15516525ca2aa1a4",
         "EN-098a40b4499d7512",
+        "EN-99f9ebbef37fcec5",
         "EN-240389f4b730bad4",
         "EN-449777124b1466a8",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
-        "EN-99f9ebbef37fcec5",
         "EN-59ae856cd788d0f5",
         "EN-be972f28adbc6e84",
         "EN-2b1bf2dbb57b6603",
@@ -8713,12 +8855,13 @@
         "FDE-6e17403b5cdb72b0"
       ],
       "hardwareIds": [
+        "HW-df8fb3396e493a21",
         "HW-3a780bcd6e5bab6a",
         "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-industry-financial_services",
@@ -9056,6 +9199,7 @@
         "EV-2fd730d0ad452334",
         "EV-9f6d481a09b063ee",
         "EV-fd21441fb6e143c3",
+        "EV-96198b8644eb94d9",
         "EV-8f2787ceb5224cc9",
         "EV-ebd76d18d3f0ee7b",
         "EV-acf3df526813ed37",
@@ -9161,6 +9305,8 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-447152f02b3ae0ee",
+        "EV-94db92599d064963",
         "EV-ff374e781601bfc7",
         "EV-dbda21182e61923b",
         "EV-3aefbdfa5df2fd6a",
@@ -9273,6 +9419,7 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-af84cfb6c1bb0e98",
         "EN-2d559a898cc329c8",
         "EN-783ef849d8a6ffe6",
         "EN-1c27324f013705cb",
@@ -9297,7 +9444,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-technology-code_generation",
@@ -9642,7 +9789,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-07-31"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -9683,6 +9830,7 @@
         "EV-02686922dd82c4aa",
         "EV-99a0cb6bac516bdd",
         "EV-2ffc3377977da114",
+        "EV-ab1b780e6e543b42",
         "EV-047b90521b1e5903",
         "EV-26ed882216bda8b9",
         "EV-d12aa40eff40c97e",
@@ -9723,6 +9871,7 @@
         "EN-fb54e9062429a937",
         "EN-e274048227f164dc",
         "EN-88e2cce43eeadb36",
+        "EN-d0cdc9650aa64450",
         "EN-ee7978d5f78778c6",
         "EN-a5401322acafcd3f",
         "EN-bbdefa2950f49882",
@@ -9740,7 +9889,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-industry-aerospace_defense",
@@ -9816,6 +9965,7 @@
         "EV-5bfbab92b22b68f1",
         "EV-cafe435ddd007821",
         "EV-234ad54940674bf6",
+        "EV-b40ba79822469bc0",
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
@@ -9843,6 +9993,7 @@
         "EN-7ef08ef63597d47c",
         "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
+        "EN-85f0c155e340fb63",
         "EN-240389f4b730bad4",
         "EN-2b6e51bec93e86c1",
         "EN-b47de584b4515427",
@@ -9869,7 +10020,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-product_form-ai_compute_system",
@@ -9888,6 +10039,7 @@
         "EV-ad8e1754463695fd",
         "EV-5b16886442234f81",
         "EV-451a70d4374c2818",
+        "EV-140aab677738351f",
         "EV-1dc482e2fe2f10bc",
         "EV-7bc2e6744a92c81f",
         "EV-5d50eb202b478bd4",
@@ -9901,6 +10053,7 @@
         "EN-8d4321d936320802",
         "EN-240389f4b730bad4",
         "EN-bb144c85d7f4652d",
+        "EN-adb4b0aa1de289f9",
         "EN-d7e81f6e7d39f00f",
         "EN-98502f8f7e5e64cd",
         "EN-a89a94ff38d4dc95"
@@ -9919,7 +10072,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",
@@ -10095,7 +10248,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": "TX-technology-tool_use",

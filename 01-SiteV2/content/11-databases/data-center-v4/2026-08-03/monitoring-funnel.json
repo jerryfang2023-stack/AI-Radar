@@ -1,0 +1,64 @@
+[
+  {
+    "funnel_id": "LF-e0cbea6fc8b9a816",
+    "lens": "fde",
+    "date": "2026-08-03",
+    "monitoring_paths": [
+      "fde_customer_case",
+      "fde_earnings_disclosure",
+      "fde_procurement_contract",
+      "fde_production_rollout"
+    ],
+    "raw_documents": 108,
+    "original_sources": 98,
+    "valid_claims": 34,
+    "observations": 1,
+    "canonical_events": 10,
+    "blocker_counts": {
+      "multi_event_roundup_not_single_event_source": 1,
+      "no_source_bounded_event": 19,
+      "source_outside_daily_window": 54,
+      "no_source_bounded_claim": 1,
+      "non_event_or_index_title": 10,
+      "repository_page_requires_release_source": 4,
+      "opinion_without_source_bounded_event": 1,
+      "community_source_requires_original_event_source": 1,
+      "raw_source_quality_block": 7
+    },
+    "rates": {
+      "original_source_rate": 0.9074074074074074,
+      "valid_claim_rate": 0.3148148148148148,
+      "observation_rate": 0.029411764705882353,
+      "event_conversion_rate": 0.29411764705882354
+    }
+  },
+  {
+    "funnel_id": "LF-d6cb1d485073e15d",
+    "lens": "hardware",
+    "date": "2026-08-03",
+    "monitoring_paths": [
+      "hardware_capacity_fab",
+      "hardware_oem_odm",
+      "hardware_product_specs",
+      "hardware_shipment_deployment",
+      "hardware_supply_agreement"
+    ],
+    "raw_documents": 20,
+    "original_sources": 16,
+    "valid_claims": 17,
+    "observations": 10,
+    "canonical_events": 5,
+    "blocker_counts": {
+      "source_outside_daily_window": 8,
+      "non_event_or_index_title": 2,
+      "no_source_bounded_event": 1,
+      "raw_source_quality_block": 4
+    },
+    "rates": {
+      "original_source_rate": 0.8,
+      "valid_claim_rate": 0.85,
+      "observation_rate": 0.5882352941176471,
+      "event_conversion_rate": 0.29411764705882354
+    }
+  }
+]

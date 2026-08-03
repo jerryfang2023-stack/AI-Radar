@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-08-03T02:04:50.067Z",
+    "latestDataDate": "2026-08-03",
+    "currentDate": "2026-08-03",
+    "eventCount": 1796,
+    "quarantinedEventCount": 18
+  },
+  "entity": {
+    "id": "EN-adb4b0aa1de289f9",
+    "name": "Majestic Labs",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-140aab677738351f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-product_form-ai_compute_system"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-02",
+    "lastSeen": "2026-08-03",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-140aab677738351f"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-140aab677738351f",
+        "dataDate": "2026-08-03",
+        "date": "2026-08-02",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Majestic Labs 推出\"普罗米修斯\"AI 服务器，可选配 8TB-128TB LPDDR6 内存",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-adb4b0aa1de289f9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-adb4b0aa1de289f9"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-product_form-ai_compute_system",
+      "name": "AI 计算系统",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_compute_system",
+      "eventIds": [
+        "EV-f282ab8740ff0096",
+        "EV-7abd8ec418f1e7f3",
+        "EV-dbbe3fd637be213f",
+        "EV-c3b96b789b5bcafd",
+        "EV-b9a1cba0b59a5354",
+        "EV-ebdc37429f89b55a",
+        "EV-234ad54940674bf6",
+        "EV-ad8e1754463695fd",
+        "EV-5b16886442234f81",
+        "EV-451a70d4374c2818",
+        "EV-140aab677738351f",
+        "EV-1dc482e2fe2f10bc",
+        "EV-7bc2e6744a92c81f",
+        "EV-5d50eb202b478bd4",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-0995103010d39563",
+        "EN-bbdefa2950f49882",
+        "EN-54dfb14dcddad637",
+        "EN-772c171be4bf6551",
+        "EN-8d4321d936320802",
+        "EN-240389f4b730bad4",
+        "EN-bb144c85d7f4652d",
+        "EN-adb4b0aa1de289f9",
+        "EN-d7e81f6e7d39f00f",
+        "EN-98502f8f7e5e64cd",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-d1333c4e772841f2",
+        "FDE-dadf0e9572889d3d",
+        "FDE-856a0ed89c848048",
+        "FDE-b366647aabd8f450"
+      ],
+      "hardwareIds": [
+        "HW-c5a22adcc66136ed",
+        "HW-a7207541fe11bd3b",
+        "HW-fda4fe26e7e80468",
+        "HW-fceac179a4df80f5",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-08-03"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8a14701399222eed",
+      "snapshotKey": "8a14701399222eed",
+      "snapshotId": "HWS-636d17ef714033a3",
+      "eventId": "EV-140aab677738351f",
+      "eventIds": [
+        "EV-140aab677738351f"
+      ],
+      "dataDate": "2026-08-03",
+      "date": "2026-08-03",
+      "title": "Majestic Labs",
+      "subject": "Majestic Labs",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-2f95b8eba8e9cc1e"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-7fae02622265fa46",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T02:06:47.000Z",
+          "subject_entity_id": "EN-adb4b0aa1de289f9",
+          "subject_name": "Majestic Labs",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "8",
+          "unit": "TB",
+          "source_quote": "初创公司 Majestic 推出 AI 服务器“普罗米修斯”，可选配 8TB-128TB LPDDR6 内存 - IT之家",
+          "event_refs": [
+            "EV-140aab677738351f"
+          ],
+          "claim_ref": "CL-faf345884789dd41",
+          "source_refs": [
+            "SA-e3c8fad991c2b368"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-f796be4e2c90f66a",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T02:06:47.000Z",
+          "subject_entity_id": "EN-adb4b0aa1de289f9",
+          "subject_name": "Majestic Labs",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "8",
+          "unit": "TB",
+          "source_quote": "初创公司 Majestic 推出 AI 服务器“普罗米修斯”，可选配 8TB-128TB LPDDR6 内存",
+          "event_refs": [
+            "EV-140aab677738351f"
+          ],
+          "claim_ref": "CL-64732a94f2b46175",
+          "source_refs": [
+            "SA-e3c8fad991c2b368"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-08-03",
+          "hardware_fact_id": "HWF-2f95b8eba8e9cc1e",
+          "fact_type": "product",
+          "observed_at": "2026-08-02T02:06:47.000Z",
+          "subject_entity_id": "EN-adb4b0aa1de289f9",
+          "subject_name": "Majestic Labs",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 8 月 2 日消息，据科技媒体 TechRadar 今天报道，初创公司 Majestic Labs 最近宣布推出 Prometheus（普罗米修斯） AI 服务器。",
+          "event_refs": [
+            "EV-140aab677738351f"
+          ],
+          "claim_ref": "CL-b9397bf81adb300f",
+          "source_refs": [
+            "SA-e3c8fad991c2b368"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/984/671.htm",
+      "entityIds": [
+        "EN-adb4b0aa1de289f9"
+      ]
+    }
+  ]
+}
